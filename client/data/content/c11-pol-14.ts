@@ -620,249 +620,244 @@ export const c11Pol14HtmlSolutions = `
 /* -------------------------------------------------------------------------- */
 
 export const c11Pol14Mcqs = [
-  // --- TIER 1: EASY / RECALL (Q1 to Q8) ---
   {
-    id: "c11-pol-14-mcq-1",
-    question: "Who authored the famous philosophical text 'A Theory of Justice' in 1971?",
-    options: [
-      "A):   Robert Nozick",
-      "B):   John Rawls",
+    "id": "c11-pol-14-mcq-1",
+    "question": "Who authored the famous philosophical text 'A Theory of Justice' in 1971?",
+    "options": [
+      "A):   John Rawls",
+      "B):   Robert Nozick",
       "C):   Immanuel Kant",
       "D):   Friedrich Hayek"
     ],
-    correctAnswer: "B",
-    explanation: "American political philosopher John Rawls authored 'A Theory of Justice' in 1971, which redefined modern distributive justice as fairness."
+    "correctAnswer": "A",
+    "explanation": "American political philosopher John Rawls authored 'A Theory of Justice' in 1971, which redefined modern distributive justice as fairness."
   },
   {
-    id: "c11-pol-14-mcq-2",
-    question: "Which ancient Greek philosopher wrote 'The Republic' and analyzed justice as social harmony?",
-    options: [
-      "A):   Plato",
-      "B):   Aristotle",
+    "id": "c11-pol-14-mcq-2",
+    "question": "Which ancient Greek philosopher wrote 'The Republic' and analyzed justice as social harmony?",
+    "options": [
+      "A):   Aristotle",
+      "B):   Plato",
       "C):   Socrates",
       "D):   Thucydides"
     ],
-    correctAnswer: "A",
-    explanation: "Plato wrote 'The Republic', exploring the nature of justice in the individual soul and the ideal city-state."
+    "correctAnswer": "B",
+    "explanation": "Plato wrote 'The Republic', exploring the nature of justice in the individual soul and the ideal city-state."
   },
   {
-    id: "c11-pol-14-mcq-3",
-    question: "The thought experiment formulated by John Rawls where individuals choose rules of justice without knowing their social status is called:",
-    options: [
+    "id": "c11-pol-14-mcq-3",
+    "question": "The thought experiment formulated by John Rawls where individuals choose rules of justice without knowing their social status is called:",
+    "options": [
       "A):   State of Nature",
-      "B):   Veil of Ignorance",
-      "C):   Social Contract",
+      "B):   Social Contract",
+      "C):   Veil of Ignorance",
       "D):   Categorical Imperative"
     ],
-    correctAnswer: "B",
-    explanation: "The 'Veil of Ignorance' is Rawls' thought experiment where individuals in the Original Position choose principles of justice without knowing their own future identity."
+    "correctAnswer": "C",
+    "explanation": "The 'Veil of Ignorance' is Rawls' thought experiment where individuals in the Original Position choose principles of justice without knowing their own future identity."
   },
   {
-    id: "c11-pol-14-mcq-4",
-    question: "Which principle of justice requires that rewards and wages should correspond to the scale of effort, skill, training, and risk?",
-    options: [
+    "id": "c11-pol-14-mcq-4",
+    "question": "Which principle of justice requires that rewards and wages should correspond to the scale of effort, skill, training, and risk?",
+    "options": [
       "A):   Equal Treatment for Equals",
-      "B):   Proportionate Justice",
+      "B):   Natural Justice",
       "C):   Recognition of Special Needs",
-      "D):   Natural Justice"
+      "D):   Proportionate Justice"
     ],
-    correctAnswer: "B",
-    explanation: "Proportionate justice demands that compensation and rewards be proportional to the effort, specialized training, and risk involved in an occupation."
+    "correctAnswer": "D",
+    "explanation": "Proportionate justice demands that compensation and rewards be proportional to the effort, specialized training, and risk involved in an occupation."
   },
   {
-    id: "c11-pol-14-mcq-5",
-    question: "The Mandal Commission was established in India to identify and recommend reservations for which group?",
-    options: [
-      "A):   Religious minorities",
-      "B):   Other Backward Classes (OBCs)",
+    "id": "c11-pol-14-mcq-5",
+    "question": "The Mandal Commission was established in India to identify and recommend reservations for which group?",
+    "options": [
+      "A):   Other Backward Classes (OBCs)",
+      "B):   Religious minorities",
       "C):   Non-Resident Indians",
       "D):   Armed forces veterans"
     ],
-    correctAnswer: "B",
-    explanation: "The Second Backward Classes Commission (Mandal Commission) was appointed in 1979 under B.P. Mandal to identify socially and educationally backward classes (OBCs)."
+    "correctAnswer": "A",
+    "explanation": "The Second Backward Classes Commission (Mandal Commission) was appointed in 1979 under B.P. Mandal to identify socially and educationally backward classes (OBCs)."
   },
   {
-    id: "c11-pol-14-mcq-6",
-    question: "Which Indian socialist leader formulated the concept of 'Vishesh Avsar' (Special Opportunities) for backward classes, women, and minorities?",
-    options: [
-      "A):   Dr. Rammanohar Lohia",
-      "B):   Jayaprakash Narayan",
+    "id": "c11-pol-14-mcq-6",
+    "question": "Which Indian socialist leader formulated the concept of 'Vishesh Avsar' (Special Opportunities) for backward classes, women, and minorities?",
+    "options": [
+      "A):   Jayaprakash Narayan",
+      "B):   Dr. Rammanohar Lohia",
       "C):   Acharya Narendra Deva",
       "D):   E.M.S. Namboodiripad"
     ],
-    correctAnswer: "A",
-    explanation: "Dr. Rammanohar Lohia pioneered the doctrine of 'Vishesh Avsar' (Special Opportunities), demanding 60% reservations for marginalized social groups."
+    "correctAnswer": "B",
+    "explanation": "Dr. Rammanohar Lohia pioneered the doctrine of 'Vishesh Avsar' (Special Opportunities), demanding 60% reservations for marginalized social groups."
   },
   {
-    id: "c11-pol-14-mcq-7",
-    question: "In ancient Indian philosophy, justice and righteous moral conduct were most closely associated with the concept of:",
-    options: [
+    "id": "c11-pol-14-mcq-7",
+    "question": "In ancient Indian philosophy, justice and righteous moral conduct were most closely associated with the concept of:",
+    "options": [
       "A):   Artha",
-      "B):   Dharma",
-      "C):   Kama",
+      "B):   Kama",
+      "C):   Dharma",
       "D):   Moksha"
     ],
-    correctAnswer: "B",
-    explanation: "In ancient Indian thought, Dharma embodied cosmic justice, moral righteousness, societal duty, and ethical governance."
+    "correctAnswer": "C",
+    "explanation": "In ancient Indian thought, Dharma embodied cosmic justice, moral righteousness, societal duty, and ethical governance."
   },
   {
-    id: "c11-pol-14-mcq-8",
-    question: "What percentage of reservation was recommended by the Mandal Commission for Other Backward Classes (OBCs) in central government jobs?",
-    options: [
+    "id": "c11-pol-14-mcq-8",
+    "question": "What percentage of reservation was recommended by the Mandal Commission for Other Backward Classes (OBCs) in central government jobs?",
+    "options": [
       "A):   10 percent",
       "B):   15 percent",
-      "C):   27 percent",
-      "D):   33 percent"
+      "C):   33 percent",
+      "D):   27 percent"
     ],
-    correctAnswer: "C",
-    explanation: "The Mandal Commission recommended 27% reservation for OBCs, which was accepted and implemented by Prime Minister V.P. Singh's government in 1990."
+    "correctAnswer": "D",
+    "explanation": "The Mandal Commission recommended 27% reservation for OBCs, which was accepted and implemented by Prime Minister V.P. Singh's government in 1990."
   },
-
-  // --- TIER 2: MODERATE / CONCEPTUAL (Q9 to Q15) ---
   {
-    id: "c11-pol-14-mcq-9",
-    question: "Why would rational individuals behind John Rawls' 'Veil of Ignorance' choose the Maximin strategy?",
-    options: [
-      "A):   Because they are all naturally greedy",
-      "B):   Because not knowing their future identity, they rationally fear ending up in the worst-off position and want that position to be as well-off as possible",
+    "id": "c11-pol-14-mcq-9",
+    "question": "Why would rational individuals behind John Rawls' 'Veil of Ignorance' choose the Maximin strategy?",
+    "options": [
+      "A):   Because not knowing their future identity, they rationally fear ending up in the worst-off position and want that position to be as well-off as possible",
+      "B):   Because they are all naturally greedy",
       "C):   Because the government forces them to do so",
       "D):   Because they want to eliminate all laws"
     ],
-    correctAnswer: "B",
-    explanation: "Under total uncertainty behind the Veil of Ignorance, a rational person assumes the worst-case scenario and chooses principles that protect the most vulnerable."
+    "correctAnswer": "A",
+    "explanation": "Under total uncertainty behind the Veil of Ignorance, a rational person assumes the worst-case scenario and chooses principles that protect the most vulnerable."
   },
   {
-    id: "c11-pol-14-mcq-10",
-    question: "John Rawls' 'Difference Principle' allows social and economic inequalities ONLY IF:",
-    options: [
+    "id": "c11-pol-14-mcq-10",
+    "question": "John Rawls' 'Difference Principle' allows social and economic inequalities ONLY IF:",
+    "options": [
       "A):   They benefit only the ruling monarch",
       "B):   They work to the greatest benefit of the least advantaged members of society",
       "C):   They are approved by a military council",
       "D):   They eliminate all private businesses"
     ],
-    correctAnswer: "B",
-    explanation: "Rawls' Difference Principle permits inequalities (like higher salaries for doctors) only if such incentives end up improving the condition of the least advantaged."
+    "correctAnswer": "B",
+    "explanation": "Rawls' Difference Principle permits inequalities (like higher salaries for doctors) only if such incentives end up improving the condition of the least advantaged."
   },
   {
-    id: "c11-pol-14-mcq-11",
-    question: "Providing free braille textbooks to visually impaired students is an example of which principle of justice?",
-    options: [
+    "id": "c11-pol-14-mcq-11",
+    "question": "Providing free braille textbooks to visually impaired students is an example of which principle of justice?",
+    "options": [
       "A):   Proportionate Justice",
-      "B):   Recognition of Special Needs",
-      "C):   Laissez-faire competition",
+      "B):   Laissez-faire competition",
+      "C):   Recognition of Special Needs",
       "D):   Retributive justice"
     ],
-    correctAnswer: "B",
-    explanation: "Providing assistive braille books recognizes the special physical needs of visually impaired students to enable them to participate equally."
+    "correctAnswer": "C",
+    "explanation": "Providing assistive braille books recognizes the special physical needs of visually impaired students to enable them to participate equally."
   },
   {
-    id: "c11-pol-14-mcq-12",
-    question: "What is the primary argument of Free Market advocates regarding justice?",
-    options: [
+    "id": "c11-pol-14-mcq-12",
+    "question": "What is the primary argument of Free Market advocates regarding justice?",
+    "options": [
       "A):   All prices should be fixed by religious priests",
-      "B):   Free competition and voluntary exchange in the market naturally reward efficiency, talent, and consumer satisfaction",
+      "B):   Wages should be completely abolished",
       "C):   The state should own all factories and farms",
-      "D):   Wages should be completely abolished"
+      "D):   Free competition and voluntary exchange in the market naturally reward efficiency, talent, and consumer satisfaction"
     ],
-    correctAnswer: "B",
-    explanation: "Free-market proponents argue that open market exchange without state intervention is fair because it rewards individual productivity and talent."
+    "correctAnswer": "D",
+    "explanation": "Free-market proponents argue that open market exchange without state intervention is fair because it rewards individual productivity and talent."
   },
   {
-    id: "c11-pol-14-mcq-13",
-    question: "Which of the following represents an example of 'Structural Injustice'?",
-    options: [
-      "A):   A student catching a seasonal cold before an exam",
-      "B):   Generations of landless Dalit families being denied education and trapped in hereditary manual scavenging due to caste barriers",
+    "id": "c11-pol-14-mcq-13",
+    "question": "Which of the following represents an example of 'Structural Injustice'?",
+    "options": [
+      "A):   Generations of landless Dalit families being denied education and trapped in hereditary manual scavenging due to caste barriers",
+      "B):   A student catching a seasonal cold before an exam",
       "C):   An athlete twisting an ankle during a race",
       "D):   A private company closing down due to bankruptcy"
     ],
-    correctAnswer: "B",
-    explanation: "Structural injustice refers to institutionalized, systemic societal barriers (like hereditary caste oppression) that block marginalized groups over generations."
+    "correctAnswer": "A",
+    "explanation": "Structural injustice refers to institutionalized, systemic societal barriers (like hereditary caste oppression) that block marginalized groups over generations."
   },
   {
-    id: "c11-pol-14-mcq-14",
-    question: "In Plato's 'The Republic', who argued that 'Justice is the interest of the stronger'?",
-    options: [
+    "id": "c11-pol-14-mcq-14",
+    "question": "In Plato's 'The Republic', who argued that 'Justice is the interest of the stronger'?",
+    "options": [
       "A):   Socrates",
       "B):   Thrasymachus",
       "C):   Glaucon",
       "D):   Polemarchus"
     ],
-    correctAnswer: "B",
-    explanation: "The Sophist Thrasymachus cynically argued that justice is nothing other than the advantage of the stronger ('might makes right'), which Socrates refuted."
+    "correctAnswer": "B",
+    "explanation": "The Sophist Thrasymachus cynically argued that justice is nothing other than the advantage of the stronger ('might makes right'), which Socrates refuted."
   },
   {
-    id: "c11-pol-14-mcq-15",
-    question: "Why is a Welfare State considered essential for achieving social justice in a developing nation like India?",
-    options: [
+    "id": "c11-pol-14-mcq-15",
+    "question": "Why is a Welfare State considered essential for achieving social justice in a developing nation like India?",
+    "options": [
       "A):   Because it abolishes the parliament",
-      "B):   Because it guarantees essential goods (food, primary education, healthcare) as basic human rights, protecting those who cannot afford market prices",
-      "C):   Because it stops all technological innovation",
+      "B):   Because it stops all technological innovation",
+      "C):   Because it guarantees essential goods (food, primary education, healthcare) as basic human rights, protecting those who cannot afford market prices",
       "D):   Because it bans international trade"
     ],
-    correctAnswer: "B",
-    explanation: "A welfare state intervenes to ensure that life-saving goods like basic food, health, and schooling are provided to all citizens, regardless of poverty."
+    "correctAnswer": "C",
+    "explanation": "A welfare state intervenes to ensure that life-saving goods like basic food, health, and schooling are provided to all citizens, regardless of poverty."
   },
-
-  // --- TIER 3: ADVANCE / ANALYTICAL (Q16 to Q20) ---
   {
-    id: "c11-pol-14-mcq-16",
-    question: "How did John Rawls reconcile individual liberty with socio-economic redistribution?",
-    options: [
-      "A):   By giving absolute priority to basic civil liberties while requiring economic inequalities to benefit the worst-off",
+    "id": "c11-pol-14-mcq-16",
+    "question": "How did John Rawls reconcile individual liberty with socio-economic redistribution?",
+    "options": [
+      "A):   By forcing all citizens to have identical incomes",
       "B):   By completely banning all freedom of speech",
       "C):   By establishing a military dictatorship",
-      "D):   By forcing all citizens to have identical incomes"
+      "D):   By giving absolute priority to basic civil liberties while requiring economic inequalities to benefit the worst-off"
     ],
-    correctAnswer: "A",
-    explanation: "Rawls established the 'lexical priority' of equal basic liberties (First Principle) over economic redistribution (Second Principle), harmonizing liberty with welfare."
+    "correctAnswer": "D",
+    "explanation": "Rawls established the 'lexical priority' of equal basic liberties (First Principle) over economic redistribution (Second Principle), harmonizing liberty with welfare."
   },
   {
-    id: "c11-pol-14-mcq-17",
-    question: "Which of the following scenarios demonstrates a conflict between 'Equal Treatment for Equals' and 'Recognition of Special Needs'?",
-    options: [
-      "A):   Charging everyone the same toll fee on a public expressway",
-      "B):   Fixing a single common examination cut-off mark for candidates from elite urban schools and candidates from remote rural tribal schools",
+    "id": "c11-pol-14-mcq-17",
+    "question": "Which of the following scenarios demonstrates a conflict between 'Equal Treatment for Equals' and 'Recognition of Special Needs'?",
+    "options": [
+      "A):   Fixing a single common examination cut-off mark for candidates from elite urban schools and candidates from remote rural tribal schools",
+      "B):   Charging everyone the same toll fee on a public expressway",
       "C):   Arresting a criminal caught stealing property",
       "D):   Providing equal voting rights to all adult citizens"
     ],
-    correctAnswer: "B",
-    explanation: "A single common cut-off treats unequals equally, ignoring the special developmental deficits of rural tribal students and causing injustice."
+    "correctAnswer": "A",
+    "explanation": "A single common cut-off treats unequals equally, ignoring the special developmental deficits of rural tribal students and causing injustice."
   },
   {
-    id: "c11-pol-14-mcq-18",
-    question: "What is meant by the Latin legal maxim 'Suum Cuique Tribuere'?",
-    options: [
+    "id": "c11-pol-14-mcq-18",
+    "question": "What is meant by the Latin legal maxim 'Suum Cuique Tribuere'?",
+    "options": [
       "A):   To the victor belong the spoils",
       "B):   To render to each person their due",
       "C):   Let the buyer beware",
       "D):   Law is the command of the sovereign"
     ],
-    correctAnswer: "B",
-    explanation: "'Suum Cuique Tribuere' is the foundational Roman jurisprudence definition of justice, meaning 'to render to each person that which is their due'."
+    "correctAnswer": "B",
+    "explanation": "'Suum Cuique Tribuere' is the foundational Roman jurisprudence definition of justice, meaning 'to render to each person that which is their due'."
   },
   {
-    id: "c11-pol-14-mcq-19",
-    question: "How did Dr. B.R. Ambedkar view the relationship between political justice and social justice in the Constituent Assembly?",
-    options: [
+    "id": "c11-pol-14-mcq-19",
+    "question": "How did Dr. B.R. Ambedkar view the relationship between political justice and social justice in the Constituent Assembly?",
+    "options": [
       "A):   He believed political justice was sufficient and social justice was unnecessary",
-      "B):   He warned that political justice ('one man, one vote') would crumble if social justice ('one man, one value') was not established",
-      "C):   He opposed universal adult franchise",
+      "B):   He opposed universal adult franchise",
+      "C):   He warned that political justice ('one man, one vote') would crumble if social justice ('one man, one value') was not established",
       "D):   He argued that justice belongs only to upper castes"
     ],
-    correctAnswer: "B",
-    explanation: "Dr. Ambedkar warned that granting political equality without dismantling social and economic caste inequality would produce an unsustainable contradiction."
+    "correctAnswer": "C",
+    "explanation": "Dr. Ambedkar warned that granting political equality without dismantling social and economic caste inequality would produce an unsustainable contradiction."
   },
   {
-    id: "c11-pol-14-mcq-20",
-    question: "Why did Dr. Rammanohar Lohia argue that formal competitive meritocracy in India reinforces caste inequality?",
-    options: [
+    "id": "c11-pol-14-mcq-20",
+    "question": "Why did Dr. Rammanohar Lohia argue that formal competitive meritocracy in India reinforces caste inequality?",
+    "options": [
       "A):   Because he hated all examinations",
-      "B):   Because thousands of years of accumulated cultural, educational, and social capital gave high castes an overwhelming unfair advantage in competitive exams",
+      "B):   Because he wanted to abolish all universities",
       "C):   Because competitive exams are conducted only in Latin",
-      "D):   Because he wanted to abolish all universities"
+      "D):   Because thousands of years of accumulated cultural, educational, and social capital gave high castes an overwhelming unfair advantage in competitive exams"
     ],
-    correctAnswer: "B",
-    explanation: "Lohia argued that historical caste privilege endowed upper castes with familial education and resources, turning so-called 'neutral merit' into hereditary privilege."
+    "correctAnswer": "D",
+    "explanation": "Lohia argued that historical caste privilege endowed upper castes with familial education and resources, turning so-called 'neutral merit' into hereditary privilege."
   }
 ];

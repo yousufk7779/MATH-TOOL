@@ -441,250 +441,245 @@ export interface MCQ {
   explanation: string;
 }
 
-export const c11Pol5Mcqs: MCQ[] = [
-  // Tier 1: Direct Recall (Easy)
+export const c11Pol5Mcqs = [
   {
-    id: "c11-pol-5-mcq-1",
-    question: "Under Article 79 of the Indian Constitution, the Parliament of the Union consists of:",
-    options: [
-      "A):   Lok Sabha and Rajya Sabha only",
-      "B):   The President, Lok Sabha, and Rajya Sabha",
+    "id": "c11-pol-5-mcq-1",
+    "question": "Under Article 79 of the Indian Constitution, the Parliament of the Union consists of:",
+    "options": [
+      "A):   The President, Lok Sabha, and Rajya Sabha",
+      "B):   Lok Sabha and Rajya Sabha only",
       "C):   Prime Minister, Lok Sabha, and Rajya Sabha",
-      "D):   Lok Sabha, Rajya Sabha, and the Supreme Court",
+      "D):   Lok Sabha, Rajya Sabha, and the Supreme Court"
     ],
-    correctAnswer: "b",
-    explanation: "Article 79 states that Parliament consists of the President and two Houses known respectively as the Council of States (Rajya Sabha) and the House of the People (Lok Sabha).",
+    "correctAnswer": "A",
+    "explanation": "Article 79 states that Parliament consists of the President and two Houses known respectively as the Council of States (Rajya Sabha) and the House of the People (Lok Sabha)."
   },
   {
-    id: "c11-pol-5-mcq-2",
-    question: "How many members are nominated by the President to the Rajya Sabha for their expertise in literature, science, art, and social service?",
-    options: [
+    "id": "c11-pol-5-mcq-2",
+    "question": "How many members are nominated by the President to the Rajya Sabha for their expertise in literature, science, art, and social service?",
+    "options": [
       "A):   2 members",
-      "B):   10 members",
-      "C):   12 members",
-      "D):   15 members",
+      "B):   12 members",
+      "C):   10 members",
+      "D):   15 members"
     ],
-    correctAnswer: "c",
-    explanation: "Under Article 80(1)(a), the President nominates 12 members to the Rajya Sabha from among persons having special knowledge or practical experience in literature, science, art, and social service.",
+    "correctAnswer": "B",
+    "explanation": "Under Article 80(1)(a), the President nominates 12 members to the Rajya Sabha from among persons having special knowledge or practical experience in literature, science, art, and social service."
   },
   {
-    id: "c11-pol-5-mcq-3",
-    question: "Who among the following is the ex-officio Chairman of the Rajya Sabha?",
-    options: [
+    "id": "c11-pol-5-mcq-3",
+    "question": "Who among the following is the ex-officio Chairman of the Rajya Sabha?",
+    "options": [
       "A):   The Prime Minister",
       "B):   The Chief Justice of India",
       "C):   The Vice-President of India",
-      "D):   The Speaker of Lok Sabha",
+      "D):   The Speaker of Lok Sabha"
     ],
-    correctAnswer: "c",
-    explanation: "Article 64 provides that the Vice-President of India is the ex-officio Chairman of the Council of States (Rajya Sabha).",
+    "correctAnswer": "C",
+    "explanation": "Article 64 provides that the Vice-President of India is the ex-officio Chairman of the Council of States (Rajya Sabha)."
   },
   {
-    id: "c11-pol-5-mcq-4",
-    question: "What is the maximum period for which the Rajya Sabha can detain or delay a Money Bill passed by the Lok Sabha?",
-    options: [
-      "A):   14 days",
+    "id": "c11-pol-5-mcq-4",
+    "question": "What is the maximum period for which the Rajya Sabha can detain or delay a Money Bill passed by the Lok Sabha?",
+    "options": [
+      "A):   6 months",
       "B):   1 month",
       "C):   3 months",
-      "D):   6 months",
+      "D):   14 days"
     ],
-    correctAnswer: "a",
-    explanation: "Under Article 109, the Rajya Sabha must return a Money Bill within 14 days, with or without recommendations. Otherwise, it is deemed to have been passed by both Houses.",
+    "correctAnswer": "D",
+    "explanation": "Under Article 109, the Rajya Sabha must return a Money Bill within 14 days, with or without recommendations. Otherwise, it is deemed to have been passed by both Houses."
   },
   {
-    id: "c11-pol-5-mcq-5",
-    question: "Which of the following motions can be moved ONLY in the Lok Sabha to test the survival of the Government?",
-    options: [
-      "A):   Calling Attention Motion",
-      "B):   No-Confidence Motion",
+    "id": "c11-pol-5-mcq-5",
+    "question": "Which of the following motions can be moved ONLY in the Lok Sabha to test the survival of the Government?",
+    "options": [
+      "A):   No-Confidence Motion",
+      "B):   Calling Attention Motion",
       "C):   Privilege Motion",
-      "D):   Adjournment Motion",
+      "D):   Adjournment Motion"
     ],
-    correctAnswer: "b",
-    explanation: "Because the Council of Ministers is collectively responsible strictly to the Lok Sabha (Article 75(3)), a No-Confidence Motion can only be introduced and voted upon in the Lok Sabha.",
+    "correctAnswer": "A",
+    "explanation": "Because the Council of Ministers is collectively responsible strictly to the Lok Sabha (Article 75(3)), a No-Confidence Motion can only be introduced and voted upon in the Lok Sabha."
   },
   {
-    id: "c11-pol-5-mcq-6",
-    question: "Which Constitutional Schedule contains the provisions relating to the disqualification of legislators on grounds of defection?",
-    options: [
+    "id": "c11-pol-5-mcq-6",
+    "question": "Which Constitutional Schedule contains the provisions relating to the disqualification of legislators on grounds of defection?",
+    "options": [
       "A):   Seventh Schedule",
-      "B):   Eighth Schedule",
+      "B):   Tenth Schedule",
       "C):   Ninth Schedule",
-      "D):   Tenth Schedule",
+      "D):   Eighth Schedule"
     ],
-    correctAnswer: "d",
-    explanation: "The Tenth Schedule, added by the 52nd Constitutional Amendment Act of 1985, contains the Anti-Defection Law.",
+    "correctAnswer": "B",
+    "explanation": "The Tenth Schedule, added by the 52nd Constitutional Amendment Act of 1985, contains the Anti-Defection Law."
   },
   {
-    id: "c11-pol-5-mcq-7",
-    question: "Who presides over a Joint Sitting of both Houses of Parliament summoned under Article 108?",
-    options: [
+    "id": "c11-pol-5-mcq-7",
+    "question": "Who presides over a Joint Sitting of both Houses of Parliament summoned under Article 108?",
+    "options": [
       "A):   The President of India",
       "B):   The Chairman of Rajya Sabha",
       "C):   The Speaker of Lok Sabha",
-      "D):   The Union Law Minister",
+      "D):   The Union Law Minister"
     ],
-    correctAnswer: "c",
-    explanation: "Under Article 118(4), a Joint Sitting of Parliament is presided over by the Speaker of the Lok Sabha.",
+    "correctAnswer": "C",
+    "explanation": "Under Article 118(4), a Joint Sitting of Parliament is presided over by the Speaker of the Lok Sabha."
   },
   {
-    id: "c11-pol-5-mcq-8",
-    question: "Under the 91st Constitutional Amendment Act (2003), what is the maximum permissible size of the Council of Ministers?",
-    options: [
+    "id": "c11-pol-5-mcq-8",
+    "question": "Under the 91st Constitutional Amendment Act (2003), what is the maximum permissible size of the Council of Ministers?",
+    "options": [
       "A):   10% of total Lok Sabha / Assembly members",
-      "B):   15% of total Lok Sabha / Assembly members",
+      "B):   50 ministers at the Centre",
       "C):   20% of total Lok Sabha / Assembly members",
-      "D):   50 ministers at the Centre",
+      "D):   15% of total Lok Sabha / Assembly members"
     ],
-    correctAnswer: "b",
-    explanation: "The 91st Amendment capped the size of the Council of Ministers at 15% of the total strength of the Lok Sabha (or State Assembly).",
+    "correctAnswer": "D",
+    "explanation": "The 91st Amendment capped the size of the Council of Ministers at 15% of the total strength of the Lok Sabha (or State Assembly)."
   },
-
-  // Tier 2: Conceptual & Comparative (Moderate)
   {
-    id: "c11-pol-5-mcq-9",
-    question: "Under Article 249, the Rajya Sabha can authorize Parliament to legislate on a State List subject by passing a resolution with what majority?",
-    options: [
-      "A):   Simple majority of total membership",
-      "B):   Two-thirds majority of members present and voting",
+    "id": "c11-pol-5-mcq-9",
+    "question": "Under Article 249, the Rajya Sabha can authorize Parliament to legislate on a State List subject by passing a resolution with what majority?",
+    "options": [
+      "A):   Two-thirds majority of members present and voting",
+      "B):   Simple majority of total membership",
       "C):   Absolute majority of total membership",
-      "D):   Unanimous consent of all states",
+      "D):   Unanimous consent of all states"
     ],
-    correctAnswer: "b",
-    explanation: "Article 249 requires a resolution supported by not less than two-thirds of members present and voting in the Rajya Sabha to empower Parliament to legislate on a State List subject for one year.",
+    "correctAnswer": "A",
+    "explanation": "Article 249 requires a resolution supported by not less than two-thirds of members present and voting in the Rajya Sabha to empower Parliament to legislate on a State List subject for one year."
   },
   {
-    id: "c11-pol-5-mcq-10",
-    question: "Why can there NEVER be a Joint Sitting of Parliament in case of a deadlock over a Constitutional Amendment Bill?",
-    options: [
+    "id": "c11-pol-5-mcq-10",
+    "question": "Why can there NEVER be a Joint Sitting of Parliament in case of a deadlock over a Constitutional Amendment Bill?",
+    "options": [
       "A):   Because the Supreme Court forbids it",
       "B):   Because Article 368 requires that a Constitutional Amendment Bill must be passed by each House separately by special majority",
       "C):   Because the President cannot summon MPs for amendment discussions",
-      "D):   Because Rajya Sabha has no power to vote on constitutional amendments",
+      "D):   Because Rajya Sabha has no power to vote on constitutional amendments"
     ],
-    correctAnswer: "b",
-    explanation: "Article 368 mandates that every Constitutional Amendment Bill must be passed by each House separately by a special majority (2/3rd present and voting + majority of total membership); no joint sitting is permissible.",
+    "correctAnswer": "B",
+    "explanation": "Article 368 mandates that every Constitutional Amendment Bill must be passed by each House separately by a special majority (2/3rd present and voting + majority of total membership); no joint sitting is permissible."
   },
   {
-    id: "c11-pol-5-mcq-11",
-    question: "What is 'Zero Hour' in Indian parliamentary proceedings?",
-    options: [
+    "id": "c11-pol-5-mcq-11",
+    "question": "What is 'Zero Hour' in Indian parliamentary proceedings?",
+    "options": [
       "A):   The time when parliament takes a lunch recess",
-      "B):   An informal procedural device starting at 12 noon where MPs raise matters of urgent public importance without prior notice",
-      "C):   The hour when the budget is presented",
-      "D):   The hour when the Prime Minister addresses the nation",
+      "B):   The hour when the budget is presented",
+      "C):   An informal procedural device starting at 12 noon where MPs raise matters of urgent public importance without prior notice",
+      "D):   The hour when the Prime Minister addresses the nation"
     ],
-    correctAnswer: "b",
-    explanation: "Zero Hour is an Indian parliamentary innovation starting around 12:00 noon where MPs raise urgent issues without the standard 10-day advance notice required for regular questions.",
+    "correctAnswer": "C",
+    "explanation": "Zero Hour is an Indian parliamentary innovation starting around 12:00 noon where MPs raise urgent issues without the standard 10-day advance notice required for regular questions."
   },
   {
-    id: "c11-pol-5-mcq-12",
-    question: "Under the Tenth Schedule, who is the constitutional authority empowered to decide questions of disqualification of an MP on grounds of defection?",
-    options: [
+    "id": "c11-pol-5-mcq-12",
+    "question": "Under the Tenth Schedule, who is the constitutional authority empowered to decide questions of disqualification of an MP on grounds of defection?",
+    "options": [
       "A):   The Supreme Court of India directly",
       "B):   The Election Commission of India",
-      "C):   The Speaker of Lok Sabha or Chairman of Rajya Sabha",
-      "D):   The President of India",
+      "C):   The President of India",
+      "D):   The Speaker of Lok Sabha or Chairman of Rajya Sabha"
     ],
-    correctAnswer: "c",
-    explanation: "Disqualification petitions under the Tenth Schedule are decided by the Speaker (in Lok Sabha) or the Chairman (in Rajya Sabha).",
+    "correctAnswer": "D",
+    "explanation": "Disqualification petitions under the Tenth Schedule are decided by the Speaker (in Lok Sabha) or the Chairman (in Rajya Sabha)."
   },
   {
-    id: "c11-pol-5-mcq-13",
-    question: "Which landmark judgment of the Supreme Court affirmed that the decision of the Speaker under the Tenth Schedule is subject to Judicial Review?",
-    options: [
-      "A):   Kesavananda Bharati Case (1973)",
-      "B):   Kihoto Hollohan v. Zachillhu (1992)",
+    "id": "c11-pol-5-mcq-13",
+    "question": "Which landmark judgment of the Supreme Court affirmed that the decision of the Speaker under the Tenth Schedule is subject to Judicial Review?",
+    "options": [
+      "A):   Kihoto Hollohan v. Zachillhu (1992)",
+      "B):   Kesavananda Bharati Case (1973)",
       "C):   Minerva Mills Case (1980)",
-      "D):   Golaknath Case (1967)",
+      "D):   Golaknath Case (1967)"
     ],
-    correctAnswer: "b",
-    explanation: "In Kihoto Hollohan v. Zachillhu (1992), the Supreme Court ruled that while deciding defection petitions, the Speaker functions as a tribunal, making the order subject to judicial review.",
+    "correctAnswer": "A",
+    "explanation": "In Kihoto Hollohan v. Zachillhu (1992), the Supreme Court ruled that while deciding defection petitions, the Speaker functions as a tribunal, making the order subject to judicial review."
   },
   {
-    id: "c11-pol-5-mcq-14",
-    question: "Which of the following committees of Parliament conducts a post-mortem audit on government expenditure based on the CAG report?",
-    options: [
+    "id": "c11-pol-5-mcq-14",
+    "question": "Which of the following committees of Parliament conducts a post-mortem audit on government expenditure based on the CAG report?",
+    "options": [
       "A):   Estimates Committee",
       "B):   Public Accounts Committee (PAC)",
       "C):   Committee on Public Undertakings",
-      "D):   Rules Committee",
+      "D):   Rules Committee"
     ],
-    correctAnswer: "b",
-    explanation: "The Public Accounts Committee (PAC), traditionally headed by a prominent opposition leader, scrutinizes the appropriation accounts and the CAG audit report.",
+    "correctAnswer": "B",
+    "explanation": "The Public Accounts Committee (PAC), traditionally headed by a prominent opposition leader, scrutinizes the appropriation accounts and the CAG audit report."
   },
   {
-    id: "c11-pol-5-mcq-15",
-    question: "Under Article 312 of the Constitution, which House of Parliament has the exclusive power to initiate the creation of new All-India Services?",
-    options: [
+    "id": "c11-pol-5-mcq-15",
+    "question": "Under Article 312 of the Constitution, which House of Parliament has the exclusive power to initiate the creation of new All-India Services?",
+    "options": [
       "A):   Lok Sabha alone",
-      "B):   Rajya Sabha alone",
-      "C):   Both Houses jointly",
-      "D):   State Legislative Assemblies",
+      "B):   Both Houses jointly",
+      "C):   Rajya Sabha alone",
+      "D):   State Legislative Assemblies"
     ],
-    correctAnswer: "b",
-    explanation: "Under Article 312, only the Rajya Sabha can initiate the creation of new All-India Services by passing a resolution supported by a 2/3rd majority of members present and voting.",
+    "correctAnswer": "C",
+    "explanation": "Under Article 312, only the Rajya Sabha can initiate the creation of new All-India Services by passing a resolution supported by a 2/3rd majority of members present and voting."
   },
-
-  // Tier 3: Analytical & Multi-Statement (Advance)
   {
-    id: "c11-pol-5-mcq-16",
-    question: "Consider the following statements regarding the legislative procedure for an ordinary bill:\n1. An ordinary bill can be introduced in either House of Parliament.\n2. A deadlocked ordinary bill can be resolved through a Joint Sitting under Article 108.\n3. The President can exercise a suspensive veto on an ordinary bill by returning it for reconsideration.\nWhich of the statements given above are CORRECT?",
-    options: [
+    "id": "c11-pol-5-mcq-16",
+    "question": "Consider the following statements regarding the legislative procedure for an ordinary bill:\n1. An ordinary bill can be introduced in either House of Parliament.\n2. A deadlocked ordinary bill can be resolved through a Joint Sitting under Article 108.\n3. The President can exercise a suspensive veto on an ordinary bill by returning it for reconsideration.\nWhich of the statements given above are CORRECT?",
+    "options": [
       "A):   1 and 2 only",
       "B):   2 and 3 only",
       "C):   1 and 3 only",
-      "D):   1, 2, and 3",
+      "D):   1, 2, and 3"
     ],
-    correctAnswer: "d",
-    explanation: "All three statements are correct. An ordinary bill can originate in either house, deadlocks can trigger a joint sitting, and the President has suspensive veto power under Article 111.",
+    "correctAnswer": "D",
+    "explanation": "All three statements are correct. An ordinary bill can originate in either house, deadlocks can trigger a joint sitting, and the President has suspensive veto power under Article 111."
   },
   {
-    id: "c11-pol-5-mcq-17",
-    question: "Which of the following exceptions was REMOVED from the Tenth Schedule by the 91st Constitutional Amendment Act (2003)?",
-    options: [
-      "A):   The exemption granted to a Speaker when elected to the chair",
-      "B):   The exemption granted to a defection if one-third of the party members split together",
+    "id": "c11-pol-5-mcq-17",
+    "question": "Which of the following exceptions was REMOVED from the Tenth Schedule by the 91st Constitutional Amendment Act (2003)?",
+    "options": [
+      "A):   The exemption granted to a defection if one-third of the party members split together",
+      "B):   The exemption granted to a Speaker when elected to the chair",
       "C):   The exemption granted to a two-thirds merger with another party",
-      "D):   The exemption for independent members",
+      "D):   The exemption for independent members"
     ],
-    correctAnswer: "b",
-    explanation: "The 91st Amendment deleted paragraph 3 of the Tenth Schedule, which had previously exempted a split of one-third of legislators from disqualification.",
+    "correctAnswer": "A",
+    "explanation": "The 91st Amendment deleted paragraph 3 of the Tenth Schedule, which had previously exempted a split of one-third of legislators from disqualification."
   },
   {
-    id: "c11-pol-5-mcq-18",
-    question: "Assertion (A): The Lok Sabha exercises ultimate supremacy over the Rajya Sabha in financial and budgetary matters.\nReason (R): Money Bills can only originate in the Lok Sabha, and the Rajya Sabha has no power to amend or reject them, holding only a 14-day delaying capacity.",
-    options: [
-      "A):   Both A and R are true, and R is the correct explanation of A",
-      "B):   Both A and R are true, but R is NOT the correct explanation of A",
+    "id": "c11-pol-5-mcq-18",
+    "question": "Assertion (A): The Lok Sabha exercises ultimate supremacy over the Rajya Sabha in financial and budgetary matters.\nReason (R): Money Bills can only originate in the Lok Sabha, and the Rajya Sabha has no power to amend or reject them, holding only a 14-day delaying capacity.",
+    "options": [
+      "A):   Both A and R are true, but R is NOT the correct explanation of A",
+      "B):   Both A and R are true, and R is the correct explanation of A",
       "C):   A is true, but R is false",
-      "D):   A is false, but R is true",
+      "D):   A is false, but R is true"
     ],
-    correctAnswer: "a",
-    explanation: "Both statements are true and R correctly explains A. The Lok Sabha represents the direct sovereign will of taxpayers, giving it financial supremacy under Articles 109 and 110.",
+    "correctAnswer": "B",
+    "explanation": "Both statements are true and R correctly explains A. The Lok Sabha represents the direct sovereign will of taxpayers, giving it financial supremacy under Articles 109 and 110."
   },
   {
-    id: "c11-pol-5-mcq-19",
-    question: "Match List-I (Parliamentary Term) with List-II (Description):\n(p) Starred Question &mdash; (1) Requires written answer, no follow-ups\n(q) Unstarred Question &mdash; (2) Oral answer given, allows supplementary questions\n(r) Quorum &mdash; (3) Minimum 1/10th members required to conduct business\n(s) Guillotine &mdash; (4) Putting all pending budget demands to vote without debate\nChoose the correct code:",
-    options: [
-      "A):   p-2, q-1, r-3, s-4",
+    "id": "c11-pol-5-mcq-19",
+    "question": "Match List-I (Parliamentary Term) with List-II (Description):\n(p) Starred Question &mdash; (1) Requires written answer, no follow-ups\n(q) Unstarred Question &mdash; (2) Oral answer given, allows supplementary questions\n(r) Quorum &mdash; (3) Minimum 1/10th members required to conduct business\n(s) Guillotine &mdash; (4) Putting all pending budget demands to vote without debate\nChoose the correct code:",
+    "options": [
+      "A):   p-2, q-3, r-1, s-4",
       "B):   p-1, q-2, r-4, s-3",
-      "C):   p-2, q-3, r-1, s-4",
-      "D):   p-4, q-1, r-3, s-2",
+      "C):   p-2, q-1, r-3, s-4",
+      "D):   p-4, q-1, r-3, s-2"
     ],
-    correctAnswer: "a",
-    explanation: "Starred question requires oral answers with follow-ups (2), Unstarred question requires written answers (1), Quorum is 1/10th (3), and Guillotine wraps up budget debate on deadline (4).",
+    "correctAnswer": "C",
+    "explanation": "Starred question requires oral answers with follow-ups (2), Unstarred question requires written answers (1), Quorum is 1/10th (3), and Guillotine wraps up budget debate on deadline (4)."
   },
   {
-    id: "c11-pol-5-mcq-20",
-    question: "Which of the following occurs if a member of a State Legislative Assembly votes contrary to the party whip on a legislative bill without prior permission?",
-    options: [
+    "id": "c11-pol-5-mcq-20",
+    "question": "Which of the following occurs if a member of a State Legislative Assembly votes contrary to the party whip on a legislative bill without prior permission?",
+    "options": [
       "A):   The member is immediately sent to prison for contempt of court",
-      "B):   The member is disqualified from membership under the Tenth Schedule, subject to condonation by the party within 15 days",
+      "B):   The Governor dissolves the assembly automatically",
       "C):   The member's vote is invalidated, but they keep their legislative seat",
-      "D):   The Governor dissolves the assembly automatically",
+      "D):   The member is disqualified from membership under the Tenth Schedule, subject to condonation by the party within 15 days"
     ],
-    correctAnswer: "b",
-    explanation: "Defying a party whip on a vote invites disqualification under paragraph 2(1)(b) of the Tenth Schedule, unless condoned by the political party within 15 days.",
-  },
+    "correctAnswer": "D",
+    "explanation": "Defying a party whip on a vote invites disqualification under paragraph 2(1)(b) of the Tenth Schedule, unless condoned by the political party within 15 days."
+  }
 ];

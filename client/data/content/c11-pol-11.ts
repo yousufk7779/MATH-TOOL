@@ -460,249 +460,244 @@ export const c11Pol11HtmlSolutions = `
 /* -------------------------------------------------------------------------- */
 
 export const c11Pol11Mcqs = [
-  // --- TIER 1: EASY / RECALL (Q1 to Q8) ---
   {
-    id: "c11-pol-11-mcq-1",
-    question: "Who famously stated that 'Man is by nature a political animal'?",
-    options: [
-      "A):   Plato",
-      "B):   Aristotle",
+    "id": "c11-pol-11-mcq-1",
+    "question": "Who famously stated that 'Man is by nature a political animal'?",
+    "options": [
+      "A):   Aristotle",
+      "B):   Plato",
       "C):   Niccolo Machiavelli",
       "D):   John Locke"
     ],
-    correctAnswer: "B",
-    explanation: "Aristotle famously asserted in his treatise 'Politics' that man is by nature a political animal (Zoon Politikon) who can only find complete human flourishing in a community."
+    "correctAnswer": "A",
+    "explanation": "Aristotle famously asserted in his treatise 'Politics' that man is by nature a political animal (Zoon Politikon) who can only find complete human flourishing in a community."
   },
   {
-    id: "c11-pol-11-mcq-2",
-    question: "The word 'Politics' is derived from which ancient Greek word meaning city-state?",
-    options: [
-      "A):   Polis",
-      "B):   Demos",
+    "id": "c11-pol-11-mcq-2",
+    "question": "The word 'Politics' is derived from which ancient Greek word meaning city-state?",
+    "options": [
+      "A):   Demos",
+      "B):   Polis",
       "C):   Kratos",
       "D):   Res Publica"
     ],
-    correctAnswer: "A",
-    explanation: "Politics comes from the ancient Greek word 'Polis', which referred to the self-governing city-state of ancient Greece."
+    "correctAnswer": "B",
+    "explanation": "Politics comes from the ancient Greek word 'Polis', which referred to the self-governing city-state of ancient Greece."
   },
   {
-    id: "c11-pol-11-mcq-3",
-    question: "Which ancient Greek philosopher wrote 'The Republic' and examined the concept of Justice?",
-    options: [
+    "id": "c11-pol-11-mcq-3",
+    "question": "Which ancient Greek philosopher wrote 'The Republic' and examined the concept of Justice?",
+    "options": [
       "A):   Socrates",
-      "B):   Plato",
-      "C):   Aristotle",
+      "B):   Aristotle",
+      "C):   Plato",
       "D):   Herodotus"
     ],
-    correctAnswer: "B",
-    explanation: "Plato wrote 'The Republic', in which he engaged in dialogues (primarily through Socrates) on the nature of Justice and the ideal state."
+    "correctAnswer": "C",
+    "explanation": "Plato wrote 'The Republic', in which he engaged in dialogues (primarily through Socrates) on the nature of Justice and the ideal state."
   },
   {
-    id: "c11-pol-11-mcq-4",
-    question: "Who wrote the political treatise 'Hind Swaraj' in 1909?",
-    options: [
+    "id": "c11-pol-11-mcq-4",
+    "question": "Who wrote the political treatise 'Hind Swaraj' in 1909?",
+    "options": [
       "A):   Jawaharlal Nehru",
-      "B):   Mahatma Gandhi",
+      "B):   Subhas Chandra Bose",
       "C):   Bal Gangadhar Tilak",
-      "D):   Subhas Chandra Bose"
+      "D):   Mahatma Gandhi"
     ],
-    correctAnswer: "B",
-    explanation: "Mahatma Gandhi authored 'Hind Swaraj' in 1909, outlining his philosophy of moral self-rule, passive resistance (Satyagraha), and critique of modern industrial civilization."
+    "correctAnswer": "D",
+    "explanation": "Mahatma Gandhi authored 'Hind Swaraj' in 1909, outlining his philosophy of moral self-rule, passive resistance (Satyagraha), and critique of modern industrial civilization."
   },
   {
-    id: "c11-pol-11-mcq-5",
-    question: "The slogan 'The Personal is Political' is most famously associated with which political school of thought?",
-    options: [
-      "A):   Liberalism",
-      "B):   Feminism",
+    "id": "c11-pol-11-mcq-5",
+    "question": "The slogan 'The Personal is Political' is most famously associated with which political school of thought?",
+    "options": [
+      "A):   Feminism",
+      "B):   Liberalism",
       "C):   Fascism",
       "D):   Conservatism"
     ],
-    correctAnswer: "B",
-    explanation: "'The Personal is Political' was popularized by second-wave feminist political theory to highlight that gender power dynamics exist inside domestic family life."
+    "correctAnswer": "A",
+    "explanation": "'The Personal is Political' was popularized by second-wave feminist political theory to highlight that gender power dynamics exist inside domestic family life."
   },
   {
-    id: "c11-pol-11-mcq-6",
-    question: "Who authored the famous autobiography 'Long Walk to Freedom' describing the struggle against Apartheid?",
-    options: [
+    "id": "c11-pol-11-mcq-6",
+    "question": "Who authored the famous autobiography 'Long Walk to Freedom' describing the struggle against Apartheid?",
+    "options": [
       "A):   Martin Luther King Jr.",
       "B):   Nelson Mandela",
       "C):   Desmond Tutu",
       "D):   Kwame Nkrumah"
     ],
-    correctAnswer: "B",
-    explanation: "Nelson Mandela, the iconic anti-apartheid leader and first Black President of democratic South Africa, authored 'Long Walk to Freedom'."
+    "correctAnswer": "B",
+    "explanation": "Nelson Mandela, the iconic anti-apartheid leader and first Black President of democratic South Africa, authored 'Long Walk to Freedom'."
   },
   {
-    id: "c11-pol-11-mcq-7",
-    question: "Which thinker argued that all human history is the history of class struggle between the exploiters and the exploited?",
-    options: [
-      "A):   Karl Marx",
+    "id": "c11-pol-11-mcq-7",
+    "question": "Which thinker argued that all human history is the history of class struggle between the exploiters and the exploited?",
+    "options": [
+      "A):   Adam Smith",
       "B):   Max Weber",
-      "C):   Adam Smith",
+      "C):   Karl Marx",
       "D):   John Stuart Mill"
     ],
-    correctAnswer: "A",
-    explanation: "Karl Marx, along with Friedrich Engels, declared in the Communist Manifesto (1848) that 'The history of all hitherto existing society is the history of class struggles.'"
+    "correctAnswer": "C",
+    "explanation": "Karl Marx, along with Friedrich Engels, declared in the Communist Manifesto (1848) that 'The history of all hitherto existing society is the history of class struggles.'"
   },
   {
-    id: "c11-pol-11-mcq-8",
-    question: "Who wrote the essay 'Freedom from Fear', highlighting fear as the root of corrupt and authoritarian rule?",
-    options: [
-      "A):   Aung San Suu Kyi",
+    "id": "c11-pol-11-mcq-8",
+    "question": "Who wrote the essay 'Freedom from Fear', highlighting fear as the root of corrupt and authoritarian rule?",
+    "options": [
+      "A):   Sirimavo Bandaranaike",
       "B):   Malala Yousafzai",
       "C):   Benazir Bhutto",
-      "D):   Sirimavo Bandaranaike"
+      "D):   Aung San Suu Kyi"
     ],
-    correctAnswer: "A",
-    explanation: "Burmese pro-democracy leader Aung San Suu Kyi wrote 'Freedom from Fear', stating that it is not power that corrupts, but fear &mdash; fear of losing power and fear of the scourge of power."
+    "correctAnswer": "D",
+    "explanation": "Burmese pro-democracy leader Aung San Suu Kyi wrote 'Freedom from Fear', stating that it is not power that corrupts, but fear &mdash; fear of losing power and fear of the scourge of power."
   },
-
-  // --- TIER 2: MODERATE / CONCEPTUAL (Q9 to Q15) ---
   {
-    id: "c11-pol-11-mcq-9",
-    question: "Why do political arguments require 'reasoning' rather than mere opinion?",
-    options: [
-      "A):   Because opinions are always illegal in a democracy",
-      "B):   Because reasoning requires individuals to justify their claims through universal principles of fairness accessible to all citizens",
+    "id": "c11-pol-11-mcq-9",
+    "question": "Why do political arguments require 'reasoning' rather than mere opinion?",
+    "options": [
+      "A):   Because reasoning requires individuals to justify their claims through universal principles of fairness accessible to all citizens",
+      "B):   Because opinions are always illegal in a democracy",
       "C):   Because only politicians are allowed to have opinions",
       "D):   Because reasoning guarantees that everyone will think identically"
     ],
-    correctAnswer: "B",
-    explanation: "Reasoning elevates debate from subjective prejudice to public reason, demanding arguments grounded in universal moral standards and logic that others can rationally accept."
+    "correctAnswer": "A",
+    "explanation": "Reasoning elevates debate from subjective prejudice to public reason, demanding arguments grounded in universal moral standards and logic that others can rationally accept."
   },
   {
-    id: "c11-pol-11-mcq-10",
-    question: "Which of the following demonstrates that politics operates in the seemingly 'non-political' domain of the workplace?",
-    options: [
+    "id": "c11-pol-11-mcq-10",
+    "question": "Which of the following demonstrates that politics operates in the seemingly 'non-political' domain of the workplace?",
+    "options": [
       "A):   The physical architecture of the building",
       "B):   Wage negotiations, hierarchical management, and the right to form trade unions",
       "C):   The lunch menu in the company canteen",
       "D):   The color of the office computers"
     ],
-    correctAnswer: "B",
-    explanation: "Workplace hierarchy, wage negotiations, and unionization involve power relations and resource allocation, making them fundamentally political dynamics."
+    "correctAnswer": "B",
+    "explanation": "Workplace hierarchy, wage negotiations, and unionization involve power relations and resource allocation, making them fundamentally political dynamics."
   },
   {
-    id: "c11-pol-11-mcq-11",
-    question: "The Socratic method of dialogue is characterized by:",
-    options: [
+    "id": "c11-pol-11-mcq-11",
+    "question": "The Socratic method of dialogue is characterized by:",
+    "options": [
       "A):   Delivering uninterrupted four-hour monologues",
-      "B):   Systematic questioning and interrogation of accepted assumptions to reveal contradictions",
-      "C):   Conducting secret opinion polls",
+      "B):   Conducting secret opinion polls",
+      "C):   Systematic questioning and interrogation of accepted assumptions to reveal contradictions",
       "D):   Enforcing censorship on uneducated citizens"
     ],
-    correctAnswer: "B",
-    explanation: "Socrates used dialectical questioning, challenging interlocutors to define their terms and exposing underlying contradictions to arrive at rational clarity."
+    "correctAnswer": "C",
+    "explanation": "Socrates used dialectical questioning, challenging interlocutors to define their terms and exposing underlying contradictions to arrive at rational clarity."
   },
   {
-    id: "c11-pol-11-mcq-12",
-    question: "Which Enlightenment thinker wrote 'The Social Contract' and famously declared that 'Man is born free, and everywhere he is in chains'?",
-    options: [
+    "id": "c11-pol-11-mcq-12",
+    "question": "Which Enlightenment thinker wrote 'The Social Contract' and famously declared that 'Man is born free, and everywhere he is in chains'?",
+    "options": [
       "A):   Thomas Hobbes",
-      "B):   Jean-Jacques Rousseau",
+      "B):   Baron de Montesquieu",
       "C):   Voltaire",
-      "D):   Baron de Montesquieu"
+      "D):   Jean-Jacques Rousseau"
     ],
-    correctAnswer: "B",
-    explanation: "Jean-Jacques Rousseau opened his celebrated work 'The Social Contract' (1762) with this famous line, advocating for direct democracy and popular sovereignty."
+    "correctAnswer": "D",
+    "explanation": "Jean-Jacques Rousseau opened his celebrated work 'The Social Contract' (1762) with this famous line, advocating for direct democracy and popular sovereignty."
   },
   {
-    id: "c11-pol-11-mcq-13",
-    question: "How does Political Theory help ordinary citizens in a democratic nation?",
-    options: [
-      "A):   It teaches them how to evade taxes legally",
-      "B):   It helps them vote critically, analyze government policies, and distinguish genuine public interest from political propaganda",
+    "id": "c11-pol-11-mcq-13",
+    "question": "How does Political Theory help ordinary citizens in a democratic nation?",
+    "options": [
+      "A):   It helps them vote critically, analyze government policies, and distinguish genuine public interest from political propaganda",
+      "B):   It teaches them how to evade taxes legally",
       "C):   It guarantees them a government job",
       "D):   It trains them to join the military"
     ],
-    correctAnswer: "B",
-    explanation: "Political theory cultivates critical thinking, helping citizens evaluate political claims, understand their constitutional rights, and participate meaningfully in democratic governance."
+    "correctAnswer": "A",
+    "explanation": "Political theory cultivates critical thinking, helping citizens evaluate political claims, understand their constitutional rights, and participate meaningfully in democratic governance."
   },
   {
-    id: "c11-pol-11-mcq-14",
-    question: "Dr. B.R. Ambedkar argued that political democracy in India is unsustainable without:",
-    options: [
+    "id": "c11-pol-11-mcq-14",
+    "question": "Dr. B.R. Ambedkar argued that political democracy in India is unsustainable without:",
+    "options": [
       "A):   A massive military build-up",
       "B):   Social Democracy, characterized by the eradication of caste hierarchies and substantive equality",
       "C):   Restricting voting rights to university graduates",
       "D):   Adopting a hereditary monarchy"
     ],
-    correctAnswer: "B",
-    explanation: "Dr. Ambedkar maintained that political democracy ('one person, one vote') would collapse if society continued to deny social democracy ('one person, one value') through caste inequality."
+    "correctAnswer": "B",
+    "explanation": "Dr. Ambedkar maintained that political democracy ('one person, one vote') would collapse if society continued to deny social democracy ('one person, one value') through caste inequality."
   },
   {
-    id: "c11-pol-11-mcq-15",
-    question: "Which ancient Indian text on statecraft and political realism was authored by Kautilya (Chanakya)?",
-    options: [
+    "id": "c11-pol-11-mcq-15",
+    "question": "Which ancient Indian text on statecraft and political realism was authored by Kautilya (Chanakya)?",
+    "options": [
       "A):   Manusmriti",
-      "B):   Arthashastra",
-      "C):   Abhijnanasakuntalam",
+      "B):   Abhijnanasakuntalam",
+      "C):   Arthashastra",
       "D):   Panchatantra"
     ],
-    correctAnswer: "B",
-    explanation: "Kautilya wrote the 'Arthashastra', a master treatise on political realism, espionage, statecraft, taxation, and military strategy in ancient India."
+    "correctAnswer": "C",
+    "explanation": "Kautilya wrote the 'Arthashastra', a master treatise on political realism, espionage, statecraft, taxation, and military strategy in ancient India."
   },
-
-  // --- TIER 3: ADVANCE / ANALYTICAL (Q16 to Q20) ---
   {
-    id: "c11-pol-11-mcq-16",
-    question: "What is the primary difference between Political Science and Political Theory?",
-    options: [
+    "id": "c11-pol-11-mcq-16",
+    "question": "What is the primary difference between Political Science and Political Theory?",
+    "options": [
       "A):   Political science only studies international wars, while political theory studies municipal laws",
-      "B):   Political science empirically analyzes how political institutions actually function, while political theory evaluates the normative values and ideals (what ought to be) behind those institutions",
+      "B):   Political theory is studied only in dictatorships",
       "C):   There is no difference between them",
-      "D):   Political theory is studied only in dictatorships"
+      "D):   Political science empirically analyzes how political institutions actually function, while political theory evaluates the normative values and ideals (what ought to be) behind those institutions"
     ],
-    correctAnswer: "B",
-    explanation: "Political science deals with empirical study (facts, data, institutions), whereas political theory focuses on normative questions (values, justice, ethics, and ideals)."
+    "correctAnswer": "D",
+    "explanation": "Political science deals with empirical study (facts, data, institutions), whereas political theory focuses on normative questions (values, justice, ethics, and ideals)."
   },
   {
-    id: "c11-pol-11-mcq-17",
-    question: "In political theory, what does 'Reasonable Disagreement' imply?",
-    options: [
-      "A):   That one side is always completely evil and must be suppressed",
-      "B):   That sincere, rational citizens can arrive at different moral conclusions on complex issues, necessitating mutual toleration and democratic dialogue",
+    "id": "c11-pol-11-mcq-17",
+    "question": "In political theory, what does 'Reasonable Disagreement' imply?",
+    "options": [
+      "A):   That sincere, rational citizens can arrive at different moral conclusions on complex issues, necessitating mutual toleration and democratic dialogue",
+      "B):   That one side is always completely evil and must be suppressed",
       "C):   That democracy has completely failed",
       "D):   That courts should dissolve parliament immediately"
     ],
-    correctAnswer: "B",
-    explanation: "Reasonable disagreement acknowledges that even when people think rationally and in good faith, differing life experiences and values lead to diverse viewpoints that democracy must peacefully accommodate."
+    "correctAnswer": "A",
+    "explanation": "Reasonable disagreement acknowledges that even when people think rationally and in good faith, differing life experiences and values lead to diverse viewpoints that democracy must peacefully accommodate."
   },
   {
-    id: "c11-pol-11-mcq-18",
-    question: "Which 17th-century English philosopher argued that all individuals possess inalienable 'Natural Rights' to Life, Liberty, and Property?",
-    options: [
+    "id": "c11-pol-11-mcq-18",
+    "question": "Which 17th-century English philosopher argued that all individuals possess inalienable 'Natural Rights' to Life, Liberty, and Property?",
+    "options": [
       "A):   Thomas Hobbes",
       "B):   John Locke",
       "C):   Edmund Burke",
       "D):   Jeremy Bentham"
     ],
-    correctAnswer: "B",
-    explanation: "John Locke formulated the theory of natural rights (Life, Liberty, Property), which heavily inspired the American Declaration of Independence and modern human rights doctrine."
+    "correctAnswer": "B",
+    "explanation": "John Locke formulated the theory of natural rights (Life, Liberty, Property), which heavily inspired the American Declaration of Independence and modern human rights doctrine."
   },
   {
-    id: "c11-pol-11-mcq-19",
-    question: "Why does political theory argue that 'Equality' does not simply mean identical treatment for all individuals?",
-    options: [
+    "id": "c11-pol-11-mcq-19",
+    "question": "Why does political theory argue that 'Equality' does not simply mean identical treatment for all individuals?",
+    "options": [
       "A):   Because some individuals are genetically superior to others",
-      "B):   Because treating deeply unequal groups identically (e.g., able-bodied vs disabled, or historically oppressed vs privileged) perpetuates and worsens inequality",
-      "C):   Because the Constitution forbids equality",
+      "B):   Because the Constitution forbids equality",
+      "C):   Because treating deeply unequal groups identically (e.g., able-bodied vs disabled, or historically oppressed vs privileged) perpetuates and worsens inequality",
       "D):   Because only rich people deserve special rights"
     ],
-    correctAnswer: "B",
-    explanation: "True equality (substantive equality) requires treating likes alike, and providing reasonable accommodations or affirmative action to those who are socially or physically disadvantaged."
+    "correctAnswer": "C",
+    "explanation": "True equality (substantive equality) requires treating likes alike, and providing reasonable accommodations or affirmative action to those who are socially or physically disadvantaged."
   },
   {
-    id: "c11-pol-11-mcq-20",
-    question: "Which concept formulated by German philosopher Jürgen Habermas emphasizes that political decisions gain true legitimacy through open, uncoerced deliberation among citizens?",
-    options: [
+    "id": "c11-pol-11-mcq-20",
+    "question": "Which concept formulated by German philosopher Jürgen Habermas emphasizes that political decisions gain true legitimacy through open, uncoerced deliberation among citizens?",
+    "options": [
       "A):   Will to Power",
-      "B):   Communicative Action and Deliberative Democracy",
+      "B):   Dictatorship of the Proletariat",
       "C):   Iron Law of Oligarchy",
-      "D):   Dictatorship of the Proletariat"
+      "D):   Communicative Action and Deliberative Democracy"
     ],
-    correctAnswer: "B",
-    explanation: "Jürgen Habermas's theory of 'Communicative Action' argues that democratic legitimacy arises when decisions are produced through rational, uncoerced public discourse among equal citizens."
+    "correctAnswer": "D",
+    "explanation": "Jürgen Habermas's theory of 'Communicative Action' argues that democratic legitimacy arises when decisions are produced through rational, uncoerced public discourse among equal citizens."
   }
 ];

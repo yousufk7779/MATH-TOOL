@@ -409,250 +409,245 @@ export interface MCQ {
   explanation: string;
 }
 
-export const c11Pol4Mcqs: MCQ[] = [
-  // Tier 1: Direct Recall (Easy)
+export const c11Pol4Mcqs = [
   {
-    id: "c11-pol-4-mcq-1",
-    question: "Under which Article of the Constitution is the executive power of the Union vested in the President of India?",
-    options: [
-      "A):   Article 52",
-      "B):   Article 53",
+    "id": "c11-pol-4-mcq-1",
+    "question": "Under which Article of the Constitution is the executive power of the Union vested in the President of India?",
+    "options": [
+      "A):   Article 53",
+      "B):   Article 52",
       "C):   Article 74",
-      "D):   Article 75",
+      "D):   Article 75"
     ],
-    correctAnswer: "b",
-    explanation: "Article 53 states that the executive power of the Union shall be vested in the President and exercised either directly or through subordinate officers.",
+    "correctAnswer": "A",
+    "explanation": "Article 53 states that the executive power of the Union shall be vested in the President and exercised either directly or through subordinate officers."
   },
   {
-    id: "c11-pol-4-mcq-2",
-    question: "Which Article mandates that there shall be a Council of Ministers with the Prime Minister at the head to 'aid and advise' the President?",
-    options: [
-      "A):   Article 74(1)",
-      "B):   Article 75(3)",
+    "id": "c11-pol-4-mcq-2",
+    "question": "Which Article mandates that there shall be a Council of Ministers with the Prime Minister at the head to 'aid and advise' the President?",
+    "options": [
+      "A):   Article 75(3)",
+      "B):   Article 74(1)",
       "C):   Article 78",
-      "D):   Article 76",
+      "D):   Article 76"
     ],
-    correctAnswer: "a",
-    explanation: "Article 74(1) establishes that there shall be a Council of Ministers headed by the Prime Minister to aid and advise the President, whose advice is binding.",
+    "correctAnswer": "B",
+    "explanation": "Article 74(1) establishes that there shall be a Council of Ministers headed by the Prime Minister to aid and advise the President, whose advice is binding."
   },
   {
-    id: "c11-pol-4-mcq-3",
-    question: "According to Article 75(3), to which House of Parliament is the Council of Ministers collectively responsible?",
-    options: [
+    "id": "c11-pol-4-mcq-3",
+    "question": "According to Article 75(3), to which House of Parliament is the Council of Ministers collectively responsible?",
+    "options": [
       "A):   Rajya Sabha only",
-      "B):   Lok Sabha only",
-      "C):   Both Houses of Parliament jointly",
-      "D):   The Supreme Court of India",
+      "B):   Both Houses of Parliament jointly",
+      "C):   Lok Sabha only",
+      "D):   The Supreme Court of India"
     ],
-    correctAnswer: "b",
-    explanation: "Article 75(3) specifically provides that the Council of Ministers shall be collectively responsible to the House of the People (Lok Sabha).",
+    "correctAnswer": "C",
+    "explanation": "Article 75(3) specifically provides that the Council of Ministers shall be collectively responsible to the House of the People (Lok Sabha)."
   },
   {
-    id: "c11-pol-4-mcq-4",
-    question: "Which Constitutional Amendment enabled the President to send back ministerial advice once for reconsideration?",
-    options: [
+    "id": "c11-pol-4-mcq-4",
+    "question": "Which Constitutional Amendment enabled the President to send back ministerial advice once for reconsideration?",
+    "options": [
       "A):   42nd Amendment Act (1976)",
-      "B):   44th Amendment Act (1978)",
+      "B):   86th Amendment Act (2002)",
       "C):   52nd Amendment Act (1985)",
-      "D):   86th Amendment Act (2002)",
+      "D):   44th Amendment Act (1978)"
     ],
-    correctAnswer: "b",
-    explanation: "The 44th Amendment Act (1978) amended Article 74, enabling the President to require the Council of Ministers to reconsider its advice once.",
+    "correctAnswer": "D",
+    "explanation": "The 44th Amendment Act (1978) amended Article 74, enabling the President to require the Council of Ministers to reconsider its advice once."
   },
   {
-    id: "c11-pol-4-mcq-5",
-    question: "What is the maximum period for which a person who is not a member of Parliament can remain a Union Minister or Prime Minister?",
-    options: [
-      "A):   3 months",
-      "B):   6 months",
+    "id": "c11-pol-4-mcq-5",
+    "question": "What is the maximum period for which a person who is not a member of Parliament can remain a Union Minister or Prime Minister?",
+    "options": [
+      "A):   6 months",
+      "B):   3 months",
       "C):   1 year",
-      "D):   5 years",
+      "D):   5 years"
     ],
-    correctAnswer: "b",
-    explanation: "Under Article 75(5), a minister who for any period of six consecutive months is not a member of either House of Parliament ceases to be a minister.",
+    "correctAnswer": "A",
+    "explanation": "Under Article 75(5), a minister who for any period of six consecutive months is not a member of either House of Parliament ceases to be a minister."
   },
   {
-    id: "c11-pol-4-mcq-6",
-    question: "Who among the following Presidents famously exercised a 'Pocket Veto' on the Indian Post Office (Amendment) Bill in 1986?",
-    options: [
+    "id": "c11-pol-4-mcq-6",
+    "question": "Who among the following Presidents famously exercised a 'Pocket Veto' on the Indian Post Office (Amendment) Bill in 1986?",
+    "options": [
       "A):   Dr. Rajendra Prasad",
-      "B):   Dr. S. Radhakrishnan",
-      "C):   Giani Zail Singh",
-      "D):   Dr. A.P.J. Abdul Kalam",
+      "B):   Giani Zail Singh",
+      "C):   Dr. S. Radhakrishnan",
+      "D):   Dr. A.P.J. Abdul Kalam"
     ],
-    correctAnswer: "c",
-    explanation: "President Giani Zail Singh exercised a pocket veto in 1986 by keeping the Indian Post Office (Amendment) Bill indefinitely on his desk without signing or returning it.",
+    "correctAnswer": "B",
+    "explanation": "President Giani Zail Singh exercised a pocket veto in 1986 by keeping the Indian Post Office (Amendment) Bill indefinitely on his desk without signing or returning it."
   },
   {
-    id: "c11-pol-4-mcq-7",
-    question: "Under which Article is it the constitutional duty of the Prime Minister to furnish administrative information to the President?",
-    options: [
+    "id": "c11-pol-4-mcq-7",
+    "question": "Under which Article is it the constitutional duty of the Prime Minister to furnish administrative information to the President?",
+    "options": [
       "A):   Article 74",
       "B):   Article 75",
       "C):   Article 78",
-      "D):   Article 80",
+      "D):   Article 80"
     ],
-    correctAnswer: "c",
-    explanation: "Article 78 defines the duties of the Prime Minister to communicate to the President all decisions of the Council of Ministers and legislative proposals.",
+    "correctAnswer": "C",
+    "explanation": "Article 78 defines the duties of the Prime Minister to communicate to the President all decisions of the Council of Ministers and legislative proposals."
   },
   {
-    id: "c11-pol-4-mcq-8",
-    question: "How long does a State Governor hold office under Article 156 of the Indian Constitution?",
-    options: [
+    "id": "c11-pol-4-mcq-8",
+    "question": "How long does a State Governor hold office under Article 156 of the Indian Constitution?",
+    "options": [
       "A):   A fixed term of 6 years without removal",
-      "B):   During the pleasure of the President",
+      "B):   Until the age of 70 years",
       "C):   Until the Chief Minister stays in power",
-      "D):   Until the age of 70 years",
+      "D):   During the pleasure of the President"
     ],
-    correctAnswer: "b",
-    explanation: "Article 156(1) states that the Governor shall hold office during the pleasure of the President, meaning they can be recalled or removed by the Centre at any time.",
+    "correctAnswer": "D",
+    "explanation": "Article 156(1) states that the Governor shall hold office during the pleasure of the President, meaning they can be recalled or removed by the Centre at any time."
   },
-
-  // Tier 2: Conceptual & Comparative (Moderate)
   {
-    id: "c11-pol-4-mcq-9",
-    question: "Why did Dr. B.R. Ambedkar advocate a Parliamentary executive over a Presidential executive for independent India?",
-    options: [
-      "A):   Because the presidential system is illegal under international law",
-      "B):   Because the parliamentary system provides daily assessment and continuous accountability to the legislature",
+    "id": "c11-pol-4-mcq-9",
+    "question": "Why did Dr. B.R. Ambedkar advocate a Parliamentary executive over a Presidential executive for independent India?",
+    "options": [
+      "A):   Because the parliamentary system provides daily assessment and continuous accountability to the legislature",
+      "B):   Because the presidential system is illegal under international law",
       "C):   Because British officers forced India to adopt it",
-      "D):   Because presidential systems do not have any courts",
+      "D):   Because presidential systems do not have any courts"
     ],
-    correctAnswer: "b",
-    explanation: "Dr. Ambedkar highlighted that while the presidential system offers stability, the parliamentary system offers more daily assessment and continuous accountability to the legislature.",
+    "correctAnswer": "A",
+    "explanation": "Dr. Ambedkar highlighted that while the presidential system offers stability, the parliamentary system offers more daily assessment and continuous accountability to the legislature."
   },
   {
-    id: "c11-pol-4-mcq-10",
-    question: "What occurs automatically if the Prime Minister of India resigns or passes away while in office?",
-    options: [
+    "id": "c11-pol-4-mcq-10",
+    "question": "What occurs automatically if the Prime Minister of India resigns or passes away while in office?",
+    "options": [
       "A):   The senior-most minister automatically becomes Prime Minister",
       "B):   The entire Council of Ministers stands dissolved automatically",
       "C):   The President takes over direct permanent governing power",
-      "D):   General elections must be declared within 24 hours",
+      "D):   General elections must be declared within 24 hours"
     ],
-    correctAnswer: "b",
-    explanation: "Because the Prime Minister is the keystone of the cabinet arch, their resignation or demise automatically dissolves the entire Council of Ministers.",
+    "correctAnswer": "B",
+    "explanation": "Because the Prime Minister is the keystone of the cabinet arch, their resignation or demise automatically dissolves the entire Council of Ministers."
   },
   {
-    id: "c11-pol-4-mcq-11",
-    question: "Which of the following describes a 'Semi-Presidential' executive system?",
-    options: [
+    "id": "c11-pol-4-mcq-11",
+    "question": "Which of the following describes a 'Semi-Presidential' executive system?",
+    "options": [
       "A):   An executive where the monarch has total dictatorial powers",
-      "B):   A system with both a directly elected President with significant powers and a Prime Minister responsible to parliament (e.g. France)",
-      "C):   A system where elections are held every 10 years",
-      "D):   A system where only civil servants make policies",
+      "B):   A system where elections are held every 10 years",
+      "C):   A system with both a directly elected President with significant powers and a Prime Minister responsible to parliament (e.g. France)",
+      "D):   A system where only civil servants make policies"
     ],
-    correctAnswer: "b",
-    explanation: "In a semi-presidential system (like France or Russia), there is a directly elected President alongside a Prime Minister and cabinet who are responsible to parliament.",
+    "correctAnswer": "C",
+    "explanation": "In a semi-presidential system (like France or Russia), there is a directly elected President alongside a Prime Minister and cabinet who are responsible to parliament."
   },
   {
-    id: "c11-pol-4-mcq-12",
-    question: "Under Article 200, which of the following actions can a Governor take on a bill passed by the state legislature?",
-    options: [
-      "A):   Give assent, withhold assent, return for reconsideration, or reserve it for the President",
+    "id": "c11-pol-4-mcq-12",
+    "question": "Under Article 200, which of the following actions can a Governor take on a bill passed by the state legislature?",
+    "options": [
+      "A):   Enact the bill as a central law directly",
       "B):   Dismiss the legislature immediately",
       "C):   Send the bill to the United Nations",
-      "D):   Enact the bill as a central law directly",
+      "D):   Give assent, withhold assent, return for reconsideration, or reserve it for the President"
     ],
-    correctAnswer: "a",
-    explanation: "Under Article 200, the Governor may assent to the bill, withhold assent, return it for reconsideration (if not a Money Bill), or reserve it for the President's consideration.",
+    "correctAnswer": "D",
+    "explanation": "Under Article 200, the Governor may assent to the bill, withhold assent, return it for reconsideration (if not a Money Bill), or reserve it for the President's consideration."
   },
   {
-    id: "c11-pol-4-mcq-13",
-    question: "In which of the following situations does the President of India exercise real independent discretion?",
-    options: [
-      "A):   In declaring war without consulting the cabinet",
-      "B):   In appointing the Prime Minister when no single party commands a clear majority in a hung parliament",
+    "id": "c11-pol-4-mcq-13",
+    "question": "In which of the following situations does the President of India exercise real independent discretion?",
+    "options": [
+      "A):   In appointing the Prime Minister when no single party commands a clear majority in a hung parliament",
+      "B):   In declaring war without consulting the cabinet",
       "C):   In rejecting a Money Bill passed by Parliament",
-      "D):   In appointing Supreme Court judges without any consultation",
+      "D):   In appointing Supreme Court judges without any consultation"
     ],
-    correctAnswer: "b",
-    explanation: "In a hung parliament with no clear majority, the President exercises genuine discretion to select the leader most likely to command majority confidence.",
+    "correctAnswer": "A",
+    "explanation": "In a hung parliament with no clear majority, the President exercises genuine discretion to select the leader most likely to command majority confidence."
   },
   {
-    id: "c11-pol-4-mcq-14",
-    question: "Which constitutional principle requires all ministers to publicly support all cabinet decisions or resign if they disagree?",
-    options: [
+    "id": "c11-pol-4-mcq-14",
+    "question": "Which constitutional principle requires all ministers to publicly support all cabinet decisions or resign if they disagree?",
+    "options": [
       "A):   Separation of Powers",
       "B):   Cabinet Solidarity and Collective Responsibility",
       "C):   Judicial Immunity",
-      "D):   Federal Primacy",
+      "D):   Federal Primacy"
     ],
-    correctAnswer: "b",
-    explanation: "Collective responsibility requires cabinet solidarity: every minister must defend cabinet decisions publicly; if a minister disagrees, they are obligated to resign.",
+    "correctAnswer": "B",
+    "explanation": "Collective responsibility requires cabinet solidarity: every minister must defend cabinet decisions publicly; if a minister disagrees, they are obligated to resign."
   },
   {
-    id: "c11-pol-4-mcq-15",
-    question: "Who among the following served as Prime Minister of India while being a member of the Rajya Sabha at the time of appointment?",
-    options: [
+    "id": "c11-pol-4-mcq-15",
+    "question": "Who among the following served as Prime Minister of India while being a member of the Rajya Sabha at the time of appointment?",
+    "options": [
       "A):   Lal Bahadur Shastri",
-      "B):   Dr. Manmohan Singh",
-      "C):   Atal Bihari Vajpayee",
-      "D):   Rajiv Gandhi",
+      "B):   Atal Bihari Vajpayee",
+      "C):   Dr. Manmohan Singh",
+      "D):   Rajiv Gandhi"
     ],
-    correctAnswer: "b",
-    explanation: "Dr. Manmohan Singh (in 2004 and 2009) and Indira Gandhi (in 1966) were members of the Rajya Sabha when appointed Prime Minister.",
+    "correctAnswer": "C",
+    "explanation": "Dr. Manmohan Singh (in 2004 and 2009) and Indira Gandhi (in 1966) were members of the Rajya Sabha when appointed Prime Minister."
   },
-
-  // Tier 3: Analytical & Multi-Statement (Advance)
   {
-    id: "c11-pol-4-mcq-16",
-    question: "Consider the following statements regarding the Governor of a State:\n1. The Governor is elected by the members of the State Legislative Assembly.\n2. The Governor holds office during the pleasure of the President.\n3. The Governor has explicit discretionary powers under Article 163.\nWhich of the statements given above are CORRECT?",
-    options: [
+    "id": "c11-pol-4-mcq-16",
+    "question": "Consider the following statements regarding the Governor of a State:\n1. The Governor is elected by the members of the State Legislative Assembly.\n2. The Governor holds office during the pleasure of the President.\n3. The Governor has explicit discretionary powers under Article 163.\nWhich of the statements given above are CORRECT?",
+    "options": [
       "A):   1 and 2 only",
-      "B):   2 and 3 only",
+      "B):   1, 2, and 3",
       "C):   1 and 3 only",
-      "D):   1, 2, and 3",
+      "D):   2 and 3 only"
     ],
-    correctAnswer: "b",
-    explanation: "Statement 1 is incorrect because the Governor is appointed by the President, not elected by MLAs. Statements 2 and 3 are correct under Articles 156 and 163.",
+    "correctAnswer": "D",
+    "explanation": "Statement 1 is incorrect because the Governor is appointed by the President, not elected by MLAs. Statements 2 and 3 are correct under Articles 156 and 163."
   },
   {
-    id: "c11-pol-4-mcq-17",
-    question: "Which of the following is a key feature distinguishing the Permanent Executive from the Political Executive?",
-    options: [
-      "A):   Permanent executives are directly elected by voters in general elections",
-      "B):   Permanent executives provide expert administrative continuity and serve until retirement regardless of political change",
+    "id": "c11-pol-4-mcq-17",
+    "question": "Which of the following is a key feature distinguishing the Permanent Executive from the Political Executive?",
+    "options": [
+      "A):   Permanent executives provide expert administrative continuity and serve until retirement regardless of political change",
+      "B):   Permanent executives are directly elected by voters in general elections",
       "C):   Permanent executives formulate all political party manifestos",
-      "D):   Permanent executives must resign whenever a new Prime Minister takes office",
+      "D):   Permanent executives must resign whenever a new Prime Minister takes office"
     ],
-    correctAnswer: "b",
-    explanation: "The Permanent Executive (civil services) is appointed through competitive merit examinations and remains in office across political changes, ensuring administrative continuity.",
+    "correctAnswer": "A",
+    "explanation": "The Permanent Executive (civil services) is appointed through competitive merit examinations and remains in office across political changes, ensuring administrative continuity."
   },
   {
-    id: "c11-pol-4-mcq-18",
-    question: "Assertion (A): The President of India cannot dismiss a Prime Minister who commands the confidence of the Lok Sabha.\nReason (R): Under Article 74, the President is constitutionally bound to act in accordance with the aid and advice of the Council of Ministers headed by the Prime Minister.",
-    options: [
-      "A):   Both A and R are true, and R is the correct explanation of A",
-      "B):   Both A and R are true, but R is NOT the correct explanation of A",
+    "id": "c11-pol-4-mcq-18",
+    "question": "Assertion (A): The President of India cannot dismiss a Prime Minister who commands the confidence of the Lok Sabha.\nReason (R): Under Article 74, the President is constitutionally bound to act in accordance with the aid and advice of the Council of Ministers headed by the Prime Minister.",
+    "options": [
+      "A):   Both A and R are true, but R is NOT the correct explanation of A",
+      "B):   Both A and R are true, and R is the correct explanation of A",
       "C):   A is true, but R is false",
-      "D):   A is false, but R is true",
+      "D):   A is false, but R is true"
     ],
-    correctAnswer: "a",
-    explanation: "Both statements are true. As long as the Prime Minister enjoys majority support in the Lok Sabha, their advice binds the President, and they cannot be arbitrarily dismissed.",
+    "correctAnswer": "B",
+    "explanation": "Both statements are true. As long as the Prime Minister enjoys majority support in the Lok Sabha, their advice binds the President, and they cannot be arbitrarily dismissed."
   },
   {
-    id: "c11-pol-4-mcq-19",
-    question: "Match List-I (Executive Type) with List-II (Country Example):\n(p) Presidential Executive &mdash; (1) France / Russia\n(q) Parliamentary Executive &mdash; (2) United States of America\n(r) Semi-Presidential Executive &mdash; (3) India / United Kingdom\nChoose the correct code:",
-    options: [
-      "A):   p-2, q-3, r-1",
+    "id": "c11-pol-4-mcq-19",
+    "question": "Match List-I (Executive Type) with List-II (Country Example):\n(p) Presidential Executive &mdash; (1) France / Russia\n(q) Parliamentary Executive &mdash; (2) United States of America\n(r) Semi-Presidential Executive &mdash; (3) India / United Kingdom\nChoose the correct code:",
+    "options": [
+      "A):   p-3, q-2, r-1",
       "B):   p-1, q-2, r-3",
-      "C):   p-3, q-2, r-1",
-      "D):   p-2, q-1, r-3",
+      "C):   p-2, q-3, r-1",
+      "D):   p-2, q-1, r-3"
     ],
-    correctAnswer: "a",
-    explanation: "Presidential is USA (2), Parliamentary is India/UK (3), and Semi-Presidential is France/Russia (1).",
+    "correctAnswer": "C",
+    "explanation": "Presidential is USA (2), Parliamentary is India/UK (3), and Semi-Presidential is France/Russia (1)."
   },
   {
-    id: "c11-pol-4-mcq-20",
-    question: "Which landmark judgment of the Supreme Court held that the power to impose President's Rule under Article 356 is subject to judicial review and the floor test is the only valid method to determine legislative majority?",
-    options: [
+    "id": "c11-pol-4-mcq-20",
+    "question": "Which landmark judgment of the Supreme Court held that the power to impose President's Rule under Article 356 is subject to judicial review and the floor test is the only valid method to determine legislative majority?",
+    "options": [
       "A):   Kesavananda Bharati Case (1973)",
-      "B):   S.R. Bommai v. Union of India (1994)",
+      "B):   Golaknath Case (1967)",
       "C):   Minerva Mills Case (1980)",
-      "D):   Golaknath Case (1967)",
+      "D):   S.R. Bommai v. Union of India (1994)"
     ],
-    correctAnswer: "b",
-    explanation: "In S.R. Bommai v. Union of India (1994), the Supreme Court ruled that Article 356 is subject to judicial review and that the floor of the Assembly is the sole forum to test majority support.",
-  },
+    "correctAnswer": "D",
+    "explanation": "In S.R. Bommai v. Union of India (1994), the Supreme Court ruled that Article 356 is subject to judicial review and that the floor of the Assembly is the sole forum to test majority support."
+  }
 ];

@@ -517,243 +517,243 @@ export const c11Pol15HtmlSolutions = `
 
 export const c11Pol15Mcqs = [
   {
-    id: "c11-pol-15-mcq-1",
-    question: "Who among the following political theorists famously stated that 'A state is known by the rights that it maintains'?",
-    options: [
-      "A):   John Locke",
-      "B):   Harold J. Laski",
+    "id": "c11-pol-15-mcq-1",
+    "question": "Who among the following political theorists famously stated that 'A state is known by the rights that it maintains'?",
+    "options": [
+      "A):   Harold J. Laski",
+      "B):   John Locke",
       "C):   Thomas Hobbes",
       "D):   Karl Marx"
     ],
-    correctAnswer: "B",
-    explanation: "Harold J. Laski in 'A Grammar of Politics' (1925) emphasized that the ethical benchmark and legitimacy of a state lie in the rights it protects."
+    "correctAnswer": "A",
+    "explanation": "Harold J. Laski in 'A Grammar of Politics' (1925) emphasized that the ethical benchmark and legitimacy of a state lie in the rights it protects."
   },
   {
-    id: "c11-pol-15-mcq-2",
-    question: "Which of the following is NOT one of the three natural rights identified by John Locke?",
-    options: [
+    "id": "c11-pol-15-mcq-2",
+    "question": "Which of the following is NOT one of the three natural rights identified by John Locke?",
+    "options": [
       "A):   Right to Life",
-      "B):   Right to Liberty",
+      "B):   Right to Employment",
       "C):   Right to Estate (Property)",
-      "D):   Right to Employment"
+      "D):   Right to Liberty"
     ],
-    correctAnswer: "D",
-    explanation: "John Locke's classical 17th-century triad of natural rights consisted of Life, Liberty, and Estate (Property). Right to employment is a modern socio-economic right."
+    "correctAnswer": "B",
+    "explanation": "John Locke's classical 17th-century triad of natural rights consisted of Life, Liberty, and Estate (Property). Right to employment is a modern socio-economic right."
   },
   {
-    id: "c11-pol-15-mcq-3",
-    question: "On which date did the United Nations General Assembly adopt the Universal Declaration of Human Rights (UDHR)?",
-    options: [
+    "id": "c11-pol-15-mcq-3",
+    "question": "On which date did the United Nations General Assembly adopt the Universal Declaration of Human Rights (UDHR)?",
+    "options": [
       "A):   24 October 1945",
       "B):   15 August 1947",
       "C):   10 December 1948",
       "D):   26 January 1950"
     ],
-    correctAnswer: "C",
-    explanation: "The UDHR was proclaimed by the UN General Assembly in Paris on 10 December 1948, celebrated worldwide as International Human Rights Day."
+    "correctAnswer": "C",
+    "explanation": "The UDHR was proclaimed by the UN General Assembly in Paris on 10 December 1948, celebrated worldwide as International Human Rights Day."
   },
   {
-    id: "c11-pol-15-mcq-4",
-    question: "How is an individual 'Right' distinguished from a mere 'Claim'?",
-    options: [
+    "id": "c11-pol-15-mcq-4",
+    "question": "How is an individual 'Right' distinguished from a mere 'Claim'?",
+    "options": [
       "A):   A right is supported by military force, while a claim is unarmed",
-      "B):   A right is a morally justified, universally applicable claim recognized by society and enforced by law",
+      "B):   There is no difference between a right and a claim",
       "C):   A right is claimed only by wealthy citizens, while a claim is made by the poor",
-      "D):   There is no difference between a right and a claim"
+      "D):   A right is a morally justified, universally applicable claim recognized by society and enforced by law"
     ],
-    correctAnswer: "B",
-    explanation: "A claim is merely a subjective demand; it becomes a right only when it is morally defensible, serves common well-being, and is legally enforced."
+    "correctAnswer": "D",
+    "explanation": "A claim is merely a subjective demand; it becomes a right only when it is morally defensible, serves common well-being, and is legally enforced."
   },
   {
-    id: "c11-pol-15-mcq-5",
-    question: "Which philosophical principle of Immanuel Kant provides the moral foundation for universal human rights?",
-    options: [
+    "id": "c11-pol-15-mcq-5",
+    "question": "Which philosophical principle of Immanuel Kant provides the moral foundation for universal human rights?",
+    "options": [
       "A):   Treat humanity always as an end and never merely as a means",
       "B):   Might is right in international affairs",
       "C):   Greatest happiness of the greatest number",
       "D):   Survival of the fittest"
     ],
-    correctAnswer: "A",
-    explanation: "Kant's moral law states that every human being possesses intrinsic dignity and must be treated as an end in themselves, not as a tool for others."
+    "correctAnswer": "A",
+    "explanation": "Kant's moral law states that every human being possesses intrinsic dignity and must be treated as an end in themselves, not as a tool for others."
   },
   {
-    id: "c11-pol-15-mcq-6",
-    question: "Which of the following belongs strictly to the category of 'Political Rights'?",
-    options: [
+    "id": "c11-pol-15-mcq-6",
+    "question": "Which of the following belongs strictly to the category of 'Political Rights'?",
+    "options": [
       "A):   Right to primary medical treatment",
       "B):   Right to vote and contest elections",
       "C):   Right to fair wages for factory labor",
       "D):   Right to clean air and water"
     ],
-    correctAnswer: "B",
-    explanation: "Political rights are entitlements enabling citizens to participate in governing the state, such as voting, contesting office, and forming political parties."
+    "correctAnswer": "B",
+    "explanation": "Political rights are entitlements enabling citizens to participate in governing the state, such as voting, contesting office, and forming political parties."
   },
   {
-    id: "c11-pol-15-mcq-7",
-    question: "What is the primary function of Civil Rights in a democratic society?",
-    options: [
+    "id": "c11-pol-15-mcq-7",
+    "question": "What is the primary function of Civil Rights in a democratic society?",
+    "options": [
       "A):   To guarantee government jobs to all graduates",
-      "B):   To protect individual bodily security, personal liberty, and freedom of expression from arbitrary state interference",
-      "C):   To declare martial law during protests",
+      "B):   To declare martial law during protests",
+      "C):   To protect individual bodily security, personal liberty, and freedom of expression from arbitrary state interference",
       "D):   To collect taxes efficiently"
     ],
-    correctAnswer: "B",
-    explanation: "Civil rights (liberties) shield the individual's private sphere, body, speech, and conscience from arbitrary state intrusion."
+    "correctAnswer": "C",
+    "explanation": "Civil rights (liberties) shield the individual's private sphere, body, speech, and conscience from arbitrary state intrusion."
   },
   {
-    id: "c11-pol-15-mcq-8",
-    question: "Why did 19th and 20th-century political theorists demand Socio-Economic Rights alongside Civil-Political rights?",
-    options: [
-      "A):   Because voting and free speech cannot be meaningfully exercised by a person dying of starvation and illiteracy",
+    "id": "c11-pol-15-mcq-8",
+    "question": "Why did 19th and 20th-century political theorists demand Socio-Economic Rights alongside Civil-Political rights?",
+    "options": [
+      "A):   To abolish elections",
       "B):   Because civil rights are completely useless",
       "C):   To eliminate all private businesses",
-      "D):   To abolish elections"
+      "D):   Because voting and free speech cannot be meaningfully exercised by a person dying of starvation and illiteracy"
     ],
-    correctAnswer: "A",
-    explanation: "Without basic economic security, food, and education, formal political liberties like voting or publishing articles remain inaccessible to the destitute."
+    "correctAnswer": "D",
+    "explanation": "Without basic economic security, food, and education, formal political liberties like voting or publishing articles remain inaccessible to the destitute."
   },
   {
-    id: "c11-pol-15-mcq-9",
-    question: "What is J.S. Mill's 'Harm Principle' primarily used for?",
-    options: [
-      "A):   To justify total military dictatorship",
-      "B):   To determine the only legitimate boundary where society or the state can restrain individual liberty",
+    "id": "c11-pol-15-mcq-9",
+    "question": "What is J.S. Mill's 'Harm Principle' primarily used for?",
+    "options": [
+      "A):   To determine the only legitimate boundary where society or the state can restrain individual liberty",
+      "B):   To justify total military dictatorship",
       "C):   To encourage violent revolutions",
       "D):   To abolish all criminal laws"
     ],
-    correctAnswer: "B",
-    explanation: "Mill asserted that individual freedom can only be curtailed if an action inflicts demonstrable physical harm on others."
+    "correctAnswer": "A",
+    "explanation": "Mill asserted that individual freedom can only be curtailed if an action inflicts demonstrable physical harm on others."
   },
   {
-    id: "c11-pol-15-mcq-10",
-    question: "When an individual right clashes with a community's traditional cultural code, which principle takes supremacy in a constitutional democracy?",
-    options: [
+    "id": "c11-pol-15-mcq-10",
+    "question": "When an individual right clashes with a community's traditional cultural code, which principle takes supremacy in a constitutional democracy?",
+    "options": [
       "A):   The community elders' decree is always final and binding",
       "B):   Inviolable human dignity, bodily safety, and non-discrimination of the individual take supremacy",
       "C):   The individual must be expelled from the nation",
       "D):   No resolution is possible"
     ],
-    correctAnswer: "B",
-    explanation: "Constitutional democracy holds that harmful practices (e.g., honor killings or untouchability) cannot be protected under community traditions."
+    "correctAnswer": "B",
+    "explanation": "Constitutional democracy holds that harmful practices (e.g., honor killings or untouchability) cannot be protected under community traditions."
   },
   {
-    id: "c11-pol-15-mcq-11",
-    question: "In what way does the State act as the chief 'ENABLER' of rights?",
-    options: [
+    "id": "c11-pol-15-mcq-11",
+    "question": "In what way does the State act as the chief 'ENABLER' of rights?",
+    "options": [
       "A):   By imposing heavy fines on reading books",
-      "B):   By codifying rights in a constitution, maintaining rule of law, and providing judicial writ remedies",
-      "C):   By dissolving parliament during election years",
+      "B):   By dissolving parliament during election years",
+      "C):   By codifying rights in a constitution, maintaining rule of law, and providing judicial writ remedies",
       "D):   By appointing military generals as judges"
     ],
-    correctAnswer: "B",
-    explanation: "The state enables rights by enacting constitutional guarantees, enforcing laws through police, and providing independent courts for remedies."
+    "correctAnswer": "C",
+    "explanation": "The state enables rights by enacting constitutional guarantees, enforcing laws through police, and providing independent courts for remedies."
   },
   {
-    id: "c11-pol-15-mcq-12",
-    question: "In what way does the State frequently act as an 'OBSTRUCTOR' of rights?",
-    options: [
+    "id": "c11-pol-15-mcq-12",
+    "question": "In what way does the State frequently act as an 'OBSTRUCTOR' of rights?",
+    "options": [
       "A):   By constructing schools and universities",
-      "B):   By using draconian preventive detention laws, censorship, and surveillance to crush political dissent",
+      "B):   By providing free midday meals in schools",
       "C):   By holding regular free elections",
-      "D):   By providing free midday meals in schools"
+      "D):   By using draconian preventive detention laws, censorship, and surveillance to crush political dissent"
     ],
-    correctAnswer: "B",
-    explanation: "States obstruct rights when governments abuse coercive security laws, wiretapping, and police detention to suppress democratic opposition."
+    "correctAnswer": "D",
+    "explanation": "States obstruct rights when governments abuse coercive security laws, wiretapping, and police detention to suppress democratic opposition."
   },
   {
-    id: "c11-pol-15-mcq-13",
-    question: "Which of the following is considered an 'Emerging / New Generation Right' in the 21st century?",
-    options: [
-      "A):   Right to vote in parliamentary elections",
+    "id": "c11-pol-15-mcq-13",
+    "question": "Which of the following is considered an 'Emerging / New Generation Right' in the 21st century?",
+    "options": [
+      "A):   Right to digital privacy and protection of personal data",
       "B):   Right to trial by jury",
-      "C):   Right to digital privacy and protection of personal data",
+      "C):   Right to vote in parliamentary elections",
       "D):   Right to bear ancient arms"
     ],
-    correctAnswer: "C",
-    explanation: "With the digital revolution, the right to privacy, data autonomy, and protection against algorithm surveillance has emerged as a crucial new right."
+    "correctAnswer": "A",
+    "explanation": "With the digital revolution, the right to privacy, data autonomy, and protection against algorithm surveillance has emerged as a crucial new right."
   },
   {
-    id: "c11-pol-15-mcq-14",
-    question: "In the landmark Justice K.S. Puttaswamy v. Union of India (2017) judgment, the Supreme Court of India declared which right as a Fundamental Right under Article 21?",
-    options: [
+    "id": "c11-pol-15-mcq-14",
+    "question": "In the landmark Justice K.S. Puttaswamy v. Union of India (2017) judgment, the Supreme Court of India declared which right as a Fundamental Right under Article 21?",
+    "options": [
       "A):   Right to strike work indefinitely",
       "B):   Right to Privacy",
       "C):   Right to refuse payment of taxes",
       "D):   Right to dual citizenship"
     ],
-    correctAnswer: "B",
-    explanation: "A nine-judge bench unanimously ruled that the Right to Privacy is an intrinsic part of the Right to Life and Personal Liberty under Article 21."
+    "correctAnswer": "B",
+    "explanation": "A nine-judge bench unanimously ruled that the Right to Privacy is an intrinsic part of the Right to Life and Personal Liberty under Article 21."
   },
   {
-    id: "c11-pol-15-mcq-15",
-    question: "What does the phrase 'Rights and duties are correlative' mean?",
-    options: [
+    "id": "c11-pol-15-mcq-15",
+    "question": "What does the phrase 'Rights and duties are correlative' mean?",
+    "options": [
       "A):   Citizens only have rights, while the government only has duties",
-      "B):   Every right held by an individual implies a corresponding duty to respect the identical rights of others",
-      "C):   Duties are only for soldiers and police officers",
+      "B):   Duties are only for soldiers and police officers",
+      "C):   Every right held by an individual implies a corresponding duty to respect the identical rights of others",
       "D):   Rights can exist without any laws or duties"
     ],
-    correctAnswer: "B",
-    explanation: "Rights and duties are interdependent; my right to speech requires that I respect your right to speak without violent disruption."
+    "correctAnswer": "C",
+    "explanation": "Rights and duties are interdependent; my right to speech requires that I respect your right to speak without violent disruption."
   },
   {
-    id: "c11-pol-15-mcq-16",
-    question: "Which Constitutional Amendment added Fundamental Duties (Article 51A) to the Indian Constitution?",
-    options: [
-      "A):   42nd Amendment Act, 1976",
+    "id": "c11-pol-15-mcq-16",
+    "question": "Which Constitutional Amendment added Fundamental Duties (Article 51A) to the Indian Constitution?",
+    "options": [
+      "A):   73rd Amendment Act, 1992",
       "B):   44th Amendment Act, 1978",
       "C):   1st Amendment Act, 1951",
-      "D):   73rd Amendment Act, 1992"
+      "D):   42nd Amendment Act, 1976"
     ],
-    correctAnswer: "A",
-    explanation: "The 42nd Amendment Act (1976) introduced Part IVA and Article 51A containing 10 Fundamental Duties on the recommendation of the Swaran Singh Committee."
+    "correctAnswer": "D",
+    "explanation": "The 42nd Amendment Act (1976) introduced Part IVA and Article 51A containing 10 Fundamental Duties on the recommendation of the Swaran Singh Committee."
   },
   {
-    id: "c11-pol-15-mcq-17",
-    question: "Why can a smoker NOT claim the 'right' to smoke inside an enclosed public bus?",
-    options: [
-      "A):   Because bus tickets are too expensive",
-      "B):   Because second-hand smoke directly harms the health of fellow passengers, violating their right to health",
+    "id": "c11-pol-15-mcq-17",
+    "question": "Why can a smoker NOT claim the 'right' to smoke inside an enclosed public bus?",
+    "options": [
+      "A):   Because second-hand smoke directly harms the health of fellow passengers, violating their right to health",
+      "B):   Because bus tickets are too expensive",
       "C):   Because buses are only for drivers",
       "D):   Because matches are prohibited in cities"
     ],
-    correctAnswer: "B",
-    explanation: "An individual desire that directly harms the health and safety of others cannot be recognized as a right under the Harm Principle."
+    "correctAnswer": "A",
+    "explanation": "An individual desire that directly harms the health and safety of others cannot be recognized as a right under the Harm Principle."
   },
   {
-    id: "c11-pol-15-mcq-18",
-    question: "What is the famous democratic maxim regarding the need for citizens to protect their rights from state overreach?",
-    options: [
+    "id": "c11-pol-15-mcq-18",
+    "question": "What is the famous democratic maxim regarding the need for citizens to protect their rights from state overreach?",
+    "options": [
       "A):   Ignorance is bliss",
       "B):   Eternal vigilance is the price of liberty",
       "C):   Silence is golden in politics",
       "D):   Trust the government blindly"
     ],
-    correctAnswer: "B",
-    explanation: "'Eternal vigilance is the price of liberty' reminds citizens that without constant alertness, governments will inevitably erode human rights."
+    "correctAnswer": "B",
+    "explanation": "'Eternal vigilance is the price of liberty' reminds citizens that without constant alertness, governments will inevitably erode human rights."
   },
   {
-    id: "c11-pol-15-mcq-19",
-    question: "Cultural rights of linguistic and religious minorities are guaranteed in the Indian Constitution under which Articles?",
-    options: [
+    "id": "c11-pol-15-mcq-19",
+    "question": "Cultural rights of linguistic and religious minorities are guaranteed in the Indian Constitution under which Articles?",
+    "options": [
       "A):   Articles 14 and 15",
-      "B):   Articles 29 and 30",
-      "C):   Articles 32 and 226",
+      "B):   Articles 32 and 226",
+      "C):   Articles 29 and 30",
       "D):   Articles 352 and 356"
     ],
-    correctAnswer: "B",
-    explanation: "Articles 29 and 30 guarantee the right of minorities to conserve their culture, language, and script, and establish educational institutions."
+    "correctAnswer": "C",
+    "explanation": "Articles 29 and 30 guarantee the right of minorities to conserve their culture, language, and script, and establish educational institutions."
   },
   {
-    id: "c11-pol-15-mcq-20",
-    question: "Which of the following conditions is an example of an 'unjustified claim'?",
-    options: [
+    "id": "c11-pol-15-mcq-20",
+    "question": "Which of the following conditions is an example of an 'unjustified claim'?",
+    "options": [
       "A):   Demanding equal pay for equal work",
-      "B):   Demanding the freedom to practice untouchability based on caste customs",
+      "B):   Demanding clean drinking water in villages",
       "C):   Demanding access to public schools without religious discrimination",
-      "D):   Demanding clean drinking water in villages"
+      "D):   Demanding the freedom to practice untouchability based on caste customs"
     ],
-    correctAnswer: "B",
-    explanation: "Untouchability violates basic human dignity and equality, and is prohibited by law (Article 17); it can never be claimed as a right."
+    "correctAnswer": "D",
+    "explanation": "Untouchability violates basic human dignity and equality, and is prohibited by law (Article 17); it can never be claimed as a right."
   }
 ];

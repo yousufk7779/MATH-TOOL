@@ -533,250 +533,245 @@ export interface MCQ {
   explanation: string;
 }
 
-export const c11Pol3Mcqs: MCQ[] = [
-  // Tier 1: Direct Recall (Easy)
+export const c11Pol3Mcqs = [
   {
-    id: "c11-pol-3-mcq-1",
-    question: "Which electoral system is used in India for electing members to the Lok Sabha and State Legislative Assemblies?",
-    options: [
-      "A):   Proportional Representation by Party List",
-      "B):   First-Past-The-Post (FPTP) System",
+    "id": "c11-pol-3-mcq-1",
+    "question": "Which electoral system is used in India for electing members to the Lok Sabha and State Legislative Assemblies?",
+    "options": [
+      "A):   First-Past-The-Post (FPTP) System",
+      "B):   Proportional Representation by Party List",
       "C):   Single Transferable Vote System",
-      "D):   Alternative Vote System",
+      "D):   Alternative Vote System"
     ],
-    correctAnswer: "b",
-    explanation: "India utilizes the First-Past-The-Post (FPTP) / plurality system for general elections to the Lok Sabha and State Legislative Assemblies (Vidhan Sabhas).",
+    "correctAnswer": "A",
+    "explanation": "India utilizes the First-Past-The-Post (FPTP) / plurality system for general elections to the Lok Sabha and State Legislative Assemblies (Vidhan Sabhas)."
   },
   {
-    id: "c11-pol-3-mcq-2",
-    question: "Which Article of the Indian Constitution establishes the Election Commission of India as an autonomous constitutional body?",
-    options: [
+    "id": "c11-pol-3-mcq-2",
+    "question": "Which Article of the Indian Constitution establishes the Election Commission of India as an autonomous constitutional body?",
+    "options": [
       "A):   Article 280",
       "B):   Article 324",
       "C):   Article 352",
-      "D):   Article 368",
+      "D):   Article 368"
     ],
-    correctAnswer: "b",
-    explanation: "Article 324 vests the superintendence, direction, and control of all parliamentary, assembly, presidential, and vice-presidential elections in the Election Commission.",
+    "correctAnswer": "B",
+    "explanation": "Article 324 vests the superintendence, direction, and control of all parliamentary, assembly, presidential, and vice-presidential elections in the Election Commission."
   },
   {
-    id: "c11-pol-3-mcq-3",
-    question: "Which Constitutional Amendment lowered the voting age in India from 21 years to 18 years?",
-    options: [
+    "id": "c11-pol-3-mcq-3",
+    "question": "Which Constitutional Amendment lowered the voting age in India from 21 years to 18 years?",
+    "options": [
       "A):   42nd Amendment Act (1976)",
       "B):   44th Amendment Act (1978)",
       "C):   61st Amendment Act (1988)",
-      "D):   73rd Amendment Act (1992)",
+      "D):   73rd Amendment Act (1992)"
     ],
-    correctAnswer: "c",
-    explanation: "The 61st Constitutional Amendment Act of 1988 (implemented in 1989) amended Article 326 to reduce the minimum voting age from 21 to 18 years.",
+    "correctAnswer": "C",
+    "explanation": "The 61st Constitutional Amendment Act of 1988 (implemented in 1989) amended Article 326 to reduce the minimum voting age from 21 to 18 years."
   },
   {
-    id: "c11-pol-3-mcq-4",
-    question: "How many seats are currently reserved for Scheduled Castes (SC) in the Lok Sabha?",
-    options: [
+    "id": "c11-pol-3-mcq-4",
+    "question": "How many seats are currently reserved for Scheduled Castes (SC) in the Lok Sabha?",
+    "options": [
       "A):   47 seats",
-      "B):   84 seats",
+      "B):   65 seats",
       "C):   100 seats",
-      "D):   65 seats",
+      "D):   84 seats"
     ],
-    correctAnswer: "b",
-    explanation: "Out of 543 elected Lok Sabha constituencies, exactly 84 seats are reserved for Scheduled Castes (SC) and 47 seats are reserved for Scheduled Tribes (ST).",
+    "correctAnswer": "D",
+    "explanation": "Out of 543 elected Lok Sabha constituencies, exactly 84 seats are reserved for Scheduled Castes (SC) and 47 seats are reserved for Scheduled Tribes (ST)."
   },
   {
-    id: "c11-pol-3-mcq-5",
-    question: "Which independent commission is entrusted with drawing and fixing the territorial boundaries of electoral constituencies across India?",
-    options: [
-      "A):   Planning Commission",
-      "B):   Delimitation Commission",
+    "id": "c11-pol-3-mcq-5",
+    "question": "Which independent commission is entrusted with drawing and fixing the territorial boundaries of electoral constituencies across India?",
+    "options": [
+      "A):   Delimitation Commission",
+      "B):   Planning Commission",
       "C):   Finance Commission",
-      "D):   Law Commission",
+      "D):   Law Commission"
     ],
-    correctAnswer: "b",
-    explanation: "The Delimitation Commission, appointed under an Act of Parliament and headed by a retired Supreme Court judge, fixes and redraws constituency boundaries based on decennial census data.",
+    "correctAnswer": "A",
+    "explanation": "The Delimitation Commission, appointed under an Act of Parliament and headed by a retired Supreme Court judge, fixes and redraws constituency boundaries based on decennial census data."
   },
   {
-    id: "c11-pol-3-mcq-6",
-    question: "Which electoral system is utilized in India for electing the President, Vice-President, and members of the Rajya Sabha?",
-    options: [
+    "id": "c11-pol-3-mcq-6",
+    "question": "Which electoral system is utilized in India for electing the President, Vice-President, and members of the Rajya Sabha?",
+    "options": [
       "A):   First-Past-The-Post System",
       "B):   Proportional Representation by Single Transferable Vote (PR-STV)",
       "C):   Direct Universal Adult Suffrage",
-      "D):   Party List System",
+      "D):   Party List System"
     ],
-    correctAnswer: "b",
-    explanation: "The Proportional Representation by Single Transferable Vote (PR-STV) system is used for electing the President, Vice-President, and Rajya Sabha members.",
+    "correctAnswer": "B",
+    "explanation": "The Proportional Representation by Single Transferable Vote (PR-STV) system is used for electing the President, Vice-President, and Rajya Sabha members."
   },
   {
-    id: "c11-pol-3-mcq-7",
-    question: "Who heads the multi-member Election Commission of India?",
-    options: [
+    "id": "c11-pol-3-mcq-7",
+    "question": "Who heads the multi-member Election Commission of India?",
+    "options": [
       "A):   Chief Justice of India",
-      "B):   Chief Election Commissioner (CEC)",
-      "C):   Union Law Minister",
-      "D):   Cabinet Secretary",
+      "B):   Union Law Minister",
+      "C):   Chief Election Commissioner (CEC)",
+      "D):   Cabinet Secretary"
     ],
-    correctAnswer: "b",
-    explanation: "The Election Commission of India is headed by the Chief Election Commissioner (CEC), assisted by two Election Commissioners.",
+    "correctAnswer": "C",
+    "explanation": "The Election Commission of India is headed by the Chief Election Commissioner (CEC), assisted by two Election Commissioners."
   },
   {
-    id: "c11-pol-3-mcq-8",
-    question: "The 106th Constitutional Amendment Act (2023) provides what percentage of reservation for women in the Lok Sabha and State Legislative Assemblies?",
-    options: [
+    "id": "c11-pol-3-mcq-8",
+    "question": "The 106th Constitutional Amendment Act (2023) provides what percentage of reservation for women in the Lok Sabha and State Legislative Assemblies?",
+    "options": [
       "A):   25%",
-      "B):   33% (One-third)",
+      "B):   20%",
       "C):   50%",
-      "D):   20%",
+      "D):   33% (One-third)"
     ],
-    correctAnswer: "b",
-    explanation: "The 106th Amendment Act, known as the Nari Shakti Vandan Adhiniyam, provides 33% (one-third) reservation for women in Lok Sabha and State Assemblies.",
+    "correctAnswer": "D",
+    "explanation": "The 106th Amendment Act, known as the Nari Shakti Vandan Adhiniyam, provides 33% (one-third) reservation for women in Lok Sabha and State Assemblies."
   },
-
-  // Tier 2: Conceptual & Comparative (Moderate)
   {
-    id: "c11-pol-3-mcq-9",
-    question: "In a First-Past-The-Post (FPTP) election with four candidates polling 32%, 28%, 22%, and 18% of the total votes respectively, who is declared the winner?",
-    options: [
-      "A):   Nobody, because no candidate crossed the 50% absolute majority mark",
-      "B):   The candidate who secured 32% of the votes",
+    "id": "c11-pol-3-mcq-9",
+    "question": "In a First-Past-The-Post (FPTP) election with four candidates polling 32%, 28%, 22%, and 18% of the total votes respectively, who is declared the winner?",
+    "options": [
+      "A):   The candidate who secured 32% of the votes",
+      "B):   Nobody, because no candidate crossed the 50% absolute majority mark",
       "C):   A re-election must be conducted between the top two candidates",
-      "D):   The candidate who secured 28% of the votes",
+      "D):   The candidate who secured 28% of the votes"
     ],
-    correctAnswer: "b",
-    explanation: "Under the FPTP system, the candidate polling the highest number of votes (simple plurality) wins the constituency, even without securing an absolute majority (50% + 1).",
+    "correctAnswer": "A",
+    "explanation": "Under the FPTP system, the candidate polling the highest number of votes (simple plurality) wins the constituency, even without securing an absolute majority (50% + 1)."
   },
   {
-    id: "c11-pol-3-mcq-10",
-    question: "What is the crucial difference between 'Separate Electorates' and 'Reserved Constituencies'?",
-    options: [
-      "A):   In separate electorates, only community members vote; in reserved constituencies, all citizens vote together for a candidate from the reserved community",
-      "B):   Separate electorates are used for Lok Sabha, while reserved constituencies are used for Rajya Sabha",
+    "id": "c11-pol-3-mcq-10",
+    "question": "What is the crucial difference between 'Separate Electorates' and 'Reserved Constituencies'?",
+    "options": [
+      "A):   Separate electorates are used for Lok Sabha, while reserved constituencies are used for Rajya Sabha",
+      "B):   In separate electorates, only community members vote; in reserved constituencies, all citizens vote together for a candidate from the reserved community",
       "C):   Reserved constituencies allow only upper caste candidates to contest",
-      "D):   There is no legal or constitutional difference between the two",
+      "D):   There is no legal or constitutional difference between the two"
     ],
-    correctAnswer: "a",
-    explanation: "In separate electorates (used under British colonial rule), only voters of a specific community vote for candidates of that faith. In reserved constituencies (joint electorate), all voters vote together, but only candidates belonging to SC/ST can contest.",
+    "correctAnswer": "B",
+    "explanation": "In separate electorates (used under British colonial rule), only voters of a specific community vote for candidates of that faith. In reserved constituencies (joint electorate), all voters vote together, but only candidates belonging to SC/ST can contest."
   },
   {
-    id: "c11-pol-3-mcq-11",
-    question: "Why did the Constituent Assembly prefer the FPTP system over Proportional Representation for Lok Sabha elections in India?",
-    options: [
+    "id": "c11-pol-3-mcq-11",
+    "question": "Why did the Constituent Assembly prefer the FPTP system over Proportional Representation for Lok Sabha elections in India?",
+    "options": [
       "A):   Because FPTP was too complicated for British rulers to understand",
-      "B):   Because FPTP offered simplicity, clear local representative accountability, and executive stability in a newly independent nation",
-      "C):   Because the United Nations mandated the use of FPTP",
-      "D):   Because Proportional Representation is illegal under international law",
+      "B):   Because the United Nations mandated the use of FPTP",
+      "C):   Because FPTP offered simplicity, clear local representative accountability, and executive stability in a newly independent nation",
+      "D):   Because Proportional Representation is illegal under international law"
     ],
-    correctAnswer: "b",
-    explanation: "The framers chose FPTP because it was simple for a newly enfranchised rural electorate, created a direct link between voters and their local MP/MLA, and produced stable governments.",
+    "correctAnswer": "C",
+    "explanation": "The framers chose FPTP because it was simple for a newly enfranchised rural electorate, created a direct link between voters and their local MP/MLA, and produced stable governments."
   },
   {
-    id: "c11-pol-3-mcq-12",
-    question: "What is the primary function of the Model Code of Conduct (MCC) enforced during general elections?",
-    options: [
+    "id": "c11-pol-3-mcq-12",
+    "question": "What is the primary function of the Model Code of Conduct (MCC) enforced during general elections?",
+    "options": [
       "A):   To fix the price of food grains during elections",
-      "B):   To maintain a level playing field, prevent hate speech, and prohibit ruling parties from misusing government machinery",
+      "B):   To force all citizens to vote for the ruling party",
       "C):   To determine which citizens are eligible to run for Prime Minister",
-      "D):   To force all citizens to vote for the ruling party",
+      "D):   To maintain a level playing field, prevent hate speech, and prohibit ruling parties from misusing government machinery"
     ],
-    correctAnswer: "b",
-    explanation: "The Model Code of Conduct ensures that elections are conducted fairly by preventing ruling parties from misusing official resources and prohibiting communal or corrupt campaign tactics.",
+    "correctAnswer": "D",
+    "explanation": "The Model Code of Conduct ensures that elections are conducted fairly by preventing ruling parties from misusing official resources and prohibiting communal or corrupt campaign tactics."
   },
   {
-    id: "c11-pol-3-mcq-13",
-    question: "The formula used to determine the quota of votes required for victory in the Rajya Sabha Single Transferable Vote election is known as:",
-    options: [
-      "A):   Hare Quota",
-      "B):   Droop Quota",
+    "id": "c11-pol-3-mcq-13",
+    "question": "The formula used to determine the quota of votes required for victory in the Rajya Sabha Single Transferable Vote election is known as:",
+    "options": [
+      "A):   Droop Quota",
+      "B):   Hare Quota",
       "C):   D'Hondt Method",
-      "D):   Sainte-Laguë Method",
+      "D):   Sainte-Laguë Method"
     ],
-    correctAnswer: "b",
-    explanation: "The quota formula: [Total Votes Polled / (Number of Seats to be filled + 1)] + 1, is known as the Droop Quota, ensuring mathematical certainty in candidate election.",
+    "correctAnswer": "A",
+    "explanation": "The quota formula: [Total Votes Polled / (Number of Seats to be filled + 1)] + 1, is known as the Droop Quota, ensuring mathematical certainty in candidate election."
   },
   {
-    id: "c11-pol-3-mcq-14",
-    question: "Which Article of the Constitution guarantees that there shall be only ONE general electoral roll for every constituency and prohibits exclusion on grounds of religion, race, caste, or sex?",
-    options: [
+    "id": "c11-pol-3-mcq-14",
+    "question": "Which Article of the Constitution guarantees that there shall be only ONE general electoral roll for every constituency and prohibits exclusion on grounds of religion, race, caste, or sex?",
+    "options": [
       "A):   Article 324",
       "B):   Article 325",
       "C):   Article 326",
-      "D):   Article 328",
+      "D):   Article 328"
     ],
-    correctAnswer: "b",
-    explanation: "Article 325 mandates a single common electoral roll for every parliamentary and assembly constituency, prohibiting separate rolls based on religion, race, caste, or sex.",
+    "correctAnswer": "B",
+    "explanation": "Article 325 mandates a single common electoral roll for every parliamentary and assembly constituency, prohibiting separate rolls based on religion, race, caste, or sex."
   },
   {
-    id: "c11-pol-3-mcq-15",
-    question: "What happens to the surplus votes of a candidate who secures more than the required quota in a Single Transferable Vote (STV) election?",
-    options: [
+    "id": "c11-pol-3-mcq-15",
+    "question": "What happens to the surplus votes of a candidate who secures more than the required quota in a Single Transferable Vote (STV) election?",
+    "options": [
       "A):   The surplus votes are permanently discarded",
-      "B):   The surplus votes are transferred to remaining candidates based on second preferences",
-      "C):   The candidate is allowed to select another MP directly",
-      "D):   The election is cancelled",
+      "B):   The candidate is allowed to select another MP directly",
+      "C):   The surplus votes are transferred to remaining candidates based on second preferences",
+      "D):   The election is cancelled"
     ],
-    correctAnswer: "b",
-    explanation: "Under STV, surplus votes beyond the required quota are transferred to other contesting candidates in accordance with the subsequent preferences marked on the ballot papers.",
+    "correctAnswer": "C",
+    "explanation": "Under STV, surplus votes beyond the required quota are transferred to other contesting candidates in accordance with the subsequent preferences marked on the ballot papers."
   },
-
-  // Tier 3: Analytical & Multi-Statement (Advance)
   {
-    id: "c11-pol-3-mcq-16",
-    question: "Consider the following statements regarding the Election Commission of India (ECI):\n1. The CEC and the two Election Commissioners have equal decision-making powers.\n2. In case of difference of opinion, the matter is decided by majority vote.\n3. The Election Commissioners can be removed by the President at any time without any consultation.\nWhich of the statements given above are CORRECT?",
-    options: [
-      "A):   1 and 2 only",
+    "id": "c11-pol-3-mcq-16",
+    "question": "Consider the following statements regarding the Election Commission of India (ECI):\n1. The CEC and the two Election Commissioners have equal decision-making powers.\n2. In case of difference of opinion, the matter is decided by majority vote.\n3. The Election Commissioners can be removed by the President at any time without any consultation.\nWhich of the statements given above are CORRECT?",
+    "options": [
+      "A):   1, 2, and 3",
       "B):   2 and 3 only",
       "C):   1 and 3 only",
-      "D):   1, 2, and 3",
+      "D):   1 and 2 only"
     ],
-    correctAnswer: "a",
-    explanation: "Statements 1 and 2 are correct. Statement 3 is incorrect because an Election Commissioner can only be removed on the recommendation of the Chief Election Commissioner.",
+    "correctAnswer": "D",
+    "explanation": "Statements 1 and 2 are correct. Statement 3 is incorrect because an Election Commissioner can only be removed on the recommendation of the Chief Election Commissioner."
   },
   {
-    id: "c11-pol-3-mcq-17",
-    question: "Which of the following is a recognized structural limitation or drawback of the First-Past-The-Post (FPTP) system?",
-    options: [
-      "A):   It always leads to fragmented coalition governments and endless re-elections",
-      "B):   A political party can win a massive majority of parliamentary seats even with a minority of popular votes",
+    "id": "c11-pol-3-mcq-17",
+    "question": "Which of the following is a recognized structural limitation or drawback of the First-Past-The-Post (FPTP) system?",
+    "options": [
+      "A):   A political party can win a massive majority of parliamentary seats even with a minority of popular votes",
+      "B):   It always leads to fragmented coalition governments and endless re-elections",
       "C):   Voters find it impossible to identify their local constituency representative",
-      "D):   It completely bans the participation of independent candidates",
+      "D):   It completely bans the participation of independent candidates"
     ],
-    correctAnswer: "b",
-    explanation: "The major criticism of FPTP is the vote-seat distortion: a party winning 35–45% of popular votes often wins 60–70% of seats, leaving large segments of voters feeling unrepresented.",
+    "correctAnswer": "A",
+    "explanation": "The major criticism of FPTP is the vote-seat distortion: a party winning 35–45% of popular votes often wins 60–70% of seats, leaving large segments of voters feeling unrepresented."
   },
   {
-    id: "c11-pol-3-mcq-18",
-    question: "Assertion (A): The adoption of Universal Adult Franchise in India in 1950 was described by contemporary Western observers as a radical democratic experiment.\nReason (R): Most Western democracies had granted voting rights gradually over centuries, whereas India enfranchised its entire adult population simultaneously despite widespread poverty and illiteracy.",
-    options: [
-      "A):   Both A and R are true, and R is the correct explanation of A",
-      "B):   Both A and R are true, but R is NOT the correct explanation of A",
+    "id": "c11-pol-3-mcq-18",
+    "question": "Assertion (A): The adoption of Universal Adult Franchise in India in 1950 was described by contemporary Western observers as a radical democratic experiment.\nReason (R): Most Western democracies had granted voting rights gradually over centuries, whereas India enfranchised its entire adult population simultaneously despite widespread poverty and illiteracy.",
+    "options": [
+      "A):   Both A and R are true, but R is NOT the correct explanation of A",
+      "B):   Both A and R are true, and R is the correct explanation of A",
       "C):   A is true, but R is false",
-      "D):   A is false, but R is true",
+      "D):   A is false, but R is true"
     ],
-    correctAnswer: "a",
-    explanation: "Both statements are true. India bypassed property and literacy tests, granting universal voting rights in 1950, whereas Western nations took centuries to grant full suffrage to women and working classes.",
+    "correctAnswer": "B",
+    "explanation": "Both statements are true. India bypassed property and literacy tests, granting universal voting rights in 1950, whereas Western nations took centuries to grant full suffrage to women and working classes."
   },
   {
-    id: "c11-pol-3-mcq-19",
-    question: "Match List-I (Electoral System Feature) with List-II (Characteristics / Examples):\n(p) FPTP &mdash; (1) Israel and Netherlands list voting\n(q) PR-STV &mdash; (2) Single-member constituency with simple plurality\n(r) Reserved Constituency &mdash; (3) Rajya Sabha and Presidential election\n(s) Nationwide Party List &mdash; (4) Joint electorate with SC/ST candidatures\nChoose the correct code:",
-    options: [
-      "A):   p-2, q-3, r-4, s-1",
+    "id": "c11-pol-3-mcq-19",
+    "question": "Match List-I (Electoral System Feature) with List-II (Characteristics / Examples):\n(p) FPTP &mdash; (1) Israel and Netherlands list voting\n(q) PR-STV &mdash; (2) Single-member constituency with simple plurality\n(r) Reserved Constituency &mdash; (3) Rajya Sabha and Presidential election\n(s) Nationwide Party List &mdash; (4) Joint electorate with SC/ST candidatures\nChoose the correct code:",
+    "options": [
+      "A):   p-2, q-4, r-3, s-1",
       "B):   p-1, q-2, r-3, s-4",
-      "C):   p-2, q-4, r-3, s-1",
-      "D):   p-3, q-2, r-4, s-1",
+      "C):   p-2, q-3, r-4, s-1",
+      "D):   p-3, q-2, r-4, s-1"
     ],
-    correctAnswer: "a",
-    explanation: "FPTP corresponds to single-member plurality (2), PR-STV is used in Rajya Sabha (3), Reserved Constituency uses joint electorate with SC/ST candidatures (4), and Nationwide Party List is used in Israel/Netherlands (1).",
+    "correctAnswer": "C",
+    "explanation": "FPTP corresponds to single-member plurality (2), PR-STV is used in Rajya Sabha (3), Reserved Constituency uses joint electorate with SC/ST candidatures (4), and Nationwide Party List is used in Israel/Netherlands (1)."
   },
   {
-    id: "c11-pol-3-mcq-20",
-    question: "Which of the following bodies advises the President or Governor on the disqualification of sitting legislators on grounds other than the Tenth Schedule (Anti-Defection Law)?",
-    options: [
+    "id": "c11-pol-3-mcq-20",
+    "question": "Which of the following bodies advises the President or Governor on the disqualification of sitting legislators on grounds other than the Tenth Schedule (Anti-Defection Law)?",
+    "options": [
       "A):   Supreme Court of India",
       "B):   Union Cabinet",
-      "C):   Election Commission of India",
-      "D):   Comptroller and Auditor General",
+      "C):   Comptroller and Auditor General",
+      "D):   Election Commission of India"
     ],
-    correctAnswer: "c",
-    explanation: "Under Articles 103 (for MPs) and 192 (for MLAs), the President or Governor must obtain the opinion of the Election Commission of India and act according to that opinion.",
-  },
+    "correctAnswer": "D",
+    "explanation": "Under Articles 103 (for MPs) and 192 (for MLAs), the President or Governor must obtain the opinion of the Election Commission of India and act according to that opinion."
+  }
 ];

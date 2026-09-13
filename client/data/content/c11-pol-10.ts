@@ -364,189 +364,184 @@ export const c11Pol10HtmlSolutions = `
 /* -------------------------------------------------------------------------- */
 
 export const c11Pol10Mcqs = [
-  // --- TIER 1: EASY / RECALL (Q1 to Q5) ---
   {
-    id: "c11-pol-10-mcq-1",
-    question: "Which Article of the Indian Constitution prescribes the procedure for constitutional amendments?",
-    options: [
-      "A):   Article 352",
+    "id": "c11-pol-10-mcq-1",
+    "question": "Which Article of the Indian Constitution prescribes the procedure for constitutional amendments?",
+    "options": [
+      "A):   Article 368",
       "B):   Article 356",
-      "C):   Article 368",
+      "C):   Article 352",
       "D):   Article 370"
     ],
-    correctAnswer: "C",
-    explanation: "Article 368 in Part XX of the Constitution deals exclusively with the constituent powers and procedures of Parliament to amend the Constitution."
+    "correctAnswer": "A",
+    "explanation": "Article 368 in Part XX of the Constitution deals exclusively with the constituent powers and procedures of Parliament to amend the Constitution."
   },
   {
-    id: "c11-pol-10-mcq-2",
-    question: "In which landmark case did the Supreme Court propound the 'Basic Structure Doctrine'?",
-    options: [
+    "id": "c11-pol-10-mcq-2",
+    "question": "In which landmark case did the Supreme Court propound the 'Basic Structure Doctrine'?",
+    "options": [
       "A):   Golaknath v. State of Punjab (1967)",
       "B):   Kesavananda Bharati v. State of Kerala (1973)",
       "C):   Minerva Mills v. Union of India (1980)",
       "D):   Maneka Gandhi v. Union of India (1978)"
     ],
-    correctAnswer: "B",
-    explanation: "In Kesavananda Bharati (1973), a 13-judge bench ruled that Parliament's amending power under Article 368 cannot alter or destroy the Basic Structure of the Constitution."
+    "correctAnswer": "B",
+    "explanation": "In Kesavananda Bharati (1973), a 13-judge bench ruled that Parliament's amending power under Article 368 cannot alter or destroy the Basic Structure of the Constitution."
   },
   {
-    id: "c11-pol-10-mcq-3",
-    question: "Which Constitutional Amendment is popularly known as the 'Mini-Constitution'?",
-    options: [
+    "id": "c11-pol-10-mcq-3",
+    "question": "Which Constitutional Amendment is popularly known as the 'Mini-Constitution'?",
+    "options": [
       "A):   24th Amendment Act, 1971",
-      "B):   42nd Amendment Act, 1976",
-      "C):   44th Amendment Act, 1978",
+      "B):   44th Amendment Act, 1978",
+      "C):   42nd Amendment Act, 1976",
       "D):   73rd Amendment Act, 1992"
     ],
-    correctAnswer: "B",
-    explanation: "The 42nd Amendment Act (1976) enacted during the Emergency made massive changes across the Preamble, Fundamental Rights, Directive Principles, and Seventh Schedule, earning the title 'Mini-Constitution'."
+    "correctAnswer": "C",
+    "explanation": "The 42nd Amendment Act (1976) enacted during the Emergency made massive changes across the Preamble, Fundamental Rights, Directive Principles, and Seventh Schedule, earning the title 'Mini-Constitution'."
   },
   {
-    id: "c11-pol-10-mcq-4",
-    question: "The 61st Constitutional Amendment Act, 1988 reduced the voting age from 21 years to:",
-    options: [
+    "id": "c11-pol-10-mcq-4",
+    "question": "The 61st Constitutional Amendment Act, 1988 reduced the voting age from 21 years to:",
+    "options": [
       "A):   16 years",
-      "B):   18 years",
+      "B):   20 years",
       "C):   19 years",
-      "D):   20 years"
+      "D):   18 years"
     ],
-    correctAnswer: "B",
-    explanation: "The 61st Amendment lowered the voting age for Lok Sabha and State Legislative Assembly elections from 21 to 18 years under Article 326."
+    "correctAnswer": "D",
+    "explanation": "The 61st Amendment lowered the voting age for Lok Sabha and State Legislative Assembly elections from 21 to 18 years under Article 326."
   },
   {
-    id: "c11-pol-10-mcq-5",
-    question: "Under the 44th Constitutional Amendment Act, 1978, the Right to Property was removed from Fundamental Rights and made a legal right under:",
-    options: [
-      "A):   Article 21A",
+    "id": "c11-pol-10-mcq-5",
+    "question": "Under the 44th Constitutional Amendment Act, 1978, the Right to Property was removed from Fundamental Rights and made a legal right under:",
+    "options": [
+      "A):   Article 300A",
       "B):   Article 51A",
-      "C):   Article 300A",
+      "C):   Article 21A",
       "D):   Article 312"
     ],
-    correctAnswer: "C",
-    explanation: "The 44th Amendment deleted the Right to Property from Part III and inserted it as a simple legal/constitutional right under Article 300A in Part XII."
+    "correctAnswer": "A",
+    "explanation": "The 44th Amendment deleted the Right to Property from Part III and inserted it as a simple legal/constitutional right under Article 300A in Part XII."
   },
-
-  // --- TIER 2: MODERATE / CONCEPTUAL (Q6 to Q10) ---
   {
-    id: "c11-pol-10-mcq-6",
-    question: "Amending federal provisions of the Constitution (e.g., election of the President, Seventh Schedule) requires:",
-    options: [
+    "id": "c11-pol-10-mcq-6",
+    "question": "Amending federal provisions of the Constitution (e.g., election of the President, Seventh Schedule) requires:",
+    "options": [
       "A):   A simple majority of Parliament only",
       "B):   Special majority of Parliament and ratification by at least half of the State Legislatures",
       "C):   Unanimous consent of all 28 State Assemblies",
       "D):   A national referendum of all citizens"
     ],
-    correctAnswer: "B",
-    explanation: "Federal provisions require a special majority of Parliament (2/3rd present & voting + >50% total strength) and ratification by resolutions passed by at least 50% of the State Legislatures."
+    "correctAnswer": "B",
+    "explanation": "Federal provisions require a special majority of Parliament (2/3rd present & voting + >50% total strength) and ratification by resolutions passed by at least 50% of the State Legislatures."
   },
   {
-    id: "c11-pol-10-mcq-7",
-    question: "Which Constitutional Amendment introduced the Anti-Defection Law by inserting the Tenth Schedule?",
-    options: [
+    "id": "c11-pol-10-mcq-7",
+    "question": "Which Constitutional Amendment introduced the Anti-Defection Law by inserting the Tenth Schedule?",
+    "options": [
       "A):   44th Amendment Act, 1978",
-      "B):   52nd Amendment Act, 1985",
-      "C):   69th Amendment Act, 1991",
+      "B):   69th Amendment Act, 1991",
+      "C):   52nd Amendment Act, 1985",
       "D):   91st Amendment Act, 2003"
     ],
-    correctAnswer: "B",
-    explanation: "The 52nd Constitutional Amendment Act, 1985 added the Tenth Schedule, penalizing legislators for unprincipled political party defections."
+    "correctAnswer": "C",
+    "explanation": "The 52nd Constitutional Amendment Act, 1985 added the Tenth Schedule, penalizing legislators for unprincipled political party defections."
   },
   {
-    id: "c11-pol-10-mcq-8",
-    question: "Under Article 3, Parliament can alter the area, boundaries, or name of an existing state through:",
-    options: [
-      "A):   A simple majority of Parliament like an ordinary law",
+    "id": "c11-pol-10-mcq-8",
+    "question": "Under Article 3, Parliament can alter the area, boundaries, or name of an existing state through:",
+    "options": [
+      "A):   A constitutional amendment ratified by two-thirds of all states",
       "B):   Special majority under Article 368",
       "C):   Mandatory written consent of the concerned State Governor",
-      "D):   A constitutional amendment ratified by two-thirds of all states"
+      "D):   A simple majority of Parliament like an ordinary law"
     ],
-    correctAnswer: "A",
-    explanation: "The Supreme Court has clarified that laws enacted under Articles 2 and 3 for the creation or reorganization of states require only a simple majority of Parliament and are not deemed amendments under Article 368."
+    "correctAnswer": "D",
+    "explanation": "The Supreme Court has clarified that laws enacted under Articles 2 and 3 for the creation or reorganization of states require only a simple majority of Parliament and are not deemed amendments under Article 368."
   },
   {
-    id: "c11-pol-10-mcq-9",
-    question: "Which words were added to the Preamble of the Indian Constitution by the 42nd Amendment Act, 1976?",
-    options: [
-      "A):   Sovereign, Democratic, Republic",
-      "B):   Socialist, Secular, Integrity",
+    "id": "c11-pol-10-mcq-9",
+    "question": "Which words were added to the Preamble of the Indian Constitution by the 42nd Amendment Act, 1976?",
+    "options": [
+      "A):   Socialist, Secular, Integrity",
+      "B):   Sovereign, Democratic, Republic",
       "C):   Liberty, Equality, Fraternity",
       "D):   Justice, Dignity, Unity"
     ],
-    correctAnswer: "B",
-    explanation: "The 42nd Amendment Act, 1976 amended the Preamble by adding the words 'Socialist', 'Secular', and 'and Integrity'."
+    "correctAnswer": "A",
+    "explanation": "The 42nd Amendment Act, 1976 amended the Preamble by adding the words 'Socialist', 'Secular', and 'and Integrity'."
   },
   {
-    id: "c11-pol-10-mcq-10",
-    question: "The 86th Constitutional Amendment Act, 2002 inserted which new Article making elementary education a Fundamental Right?",
-    options: [
+    "id": "c11-pol-10-mcq-10",
+    "question": "The 86th Constitutional Amendment Act, 2002 inserted which new Article making elementary education a Fundamental Right?",
+    "options": [
       "A):   Article 19A",
       "B):   Article 21A",
       "C):   Article 31A",
       "D):   Article 45A"
     ],
-    correctAnswer: "B",
-    explanation: "The 86th Amendment inserted Article 21A, providing free and compulsory education for all children between the ages of 6 and 14 as a Fundamental Right."
+    "correctAnswer": "B",
+    "explanation": "The 86th Amendment inserted Article 21A, providing free and compulsory education for all children between the ages of 6 and 14 as a Fundamental Right."
   },
-
-  // --- TIER 3: ADVANCE / ANALYTICAL (Q11 to Q15) ---
   {
-    id: "c11-pol-10-mcq-11",
-    question: "In the Minerva Mills case (1980), what crucial principle regarding Article 368 did the Supreme Court re-affirm?",
-    options: [
+    "id": "c11-pol-10-mcq-11",
+    "question": "In the Minerva Mills case (1980), what crucial principle regarding Article 368 did the Supreme Court re-affirm?",
+    "options": [
       "A):   Parliament can abolish judicial review completely",
-      "B):   A limited amending power is itself a basic feature of the Constitution, and Parliament cannot convert this limited power into an unlimited power",
-      "C):   Fundamental Rights are completely subordinate to ordinary laws",
+      "B):   Fundamental Rights are completely subordinate to ordinary laws",
+      "C):   A limited amending power is itself a basic feature of the Constitution, and Parliament cannot convert this limited power into an unlimited power",
       "D):   Constitutional amendments can never be challenged in any court"
     ],
-    correctAnswer: "B",
-    explanation: "The Supreme Court struck down Section 55 of the 42nd Amendment in Minerva Mills (1980), ruling that a limited amending power is part of the Basic Structure, so Parliament cannot grant itself unlimited power."
+    "correctAnswer": "C",
+    "explanation": "The Supreme Court struck down Section 55 of the 42nd Amendment in Minerva Mills (1980), ruling that a limited amending power is part of the Basic Structure, so Parliament cannot grant itself unlimited power."
   },
   {
-    id: "c11-pol-10-mcq-12",
-    question: "Which of the following is NOT a feature of the 'Basic Structure' of the Indian Constitution as declared by the Supreme Court?",
-    options: [
+    "id": "c11-pol-10-mcq-12",
+    "question": "Which of the following is NOT a feature of the 'Basic Structure' of the Indian Constitution as declared by the Supreme Court?",
+    "options": [
       "A):   Supremacy of the Constitution",
       "B):   Federal character of the polity",
-      "C):   Absolute and uncontrolled constituent power of Parliament to amend any section without judicial review",
-      "D):   Rule of Law and Judicial Review"
+      "C):   Rule of Law and Judicial Review",
+      "D):   Absolute and uncontrolled constituent power of Parliament to amend any section without judicial review"
     ],
-    correctAnswer: "C",
-    explanation: "Absolute and uncontrolled power of Parliament is the opposite of the Basic Structure doctrine. Judicial review, federalism, supremacy of the Constitution, and rule of law are established basic features."
+    "correctAnswer": "D",
+    "explanation": "Absolute and uncontrolled power of Parliament is the opposite of the Basic Structure doctrine. Judicial review, federalism, supremacy of the Constitution, and rule of law are established basic features."
   },
   {
-    id: "c11-pol-10-mcq-13",
-    question: "The historic 106th Constitutional Amendment Act, 2023 (Nari Shakti Vandan Adhiniyam) provides for:",
-    options: [
-      "A):   50% reservation for women in village panchayats",
-      "B):   One-third (33%) reservation for women in the Lok Sabha and State Legislative Assemblies",
+    "id": "c11-pol-10-mcq-13",
+    "question": "The historic 106th Constitutional Amendment Act, 2023 (Nari Shakti Vandan Adhiniyam) provides for:",
+    "options": [
+      "A):   One-third (33%) reservation for women in the Lok Sabha and State Legislative Assemblies",
+      "B):   50% reservation for women in village panchayats",
       "C):   Reservation for women in the Union Council of Ministers",
       "D):   Direct election of the President of India by female voters"
     ],
-    correctAnswer: "B",
-    explanation: "The 106th Amendment Act, 2023 reserves 33% (one-third) of seats for women in the Lok Sabha, State Legislative Assemblies, and the Legislative Assembly of the National Capital Territory of Delhi."
+    "correctAnswer": "A",
+    "explanation": "The 106th Amendment Act, 2023 reserves 33% (one-third) of seats for women in the Lok Sabha, State Legislative Assemblies, and the Legislative Assembly of the National Capital Territory of Delhi."
   },
   {
-    id: "c11-pol-10-mcq-14",
-    question: "Why is the Indian Constitution considered a masterly blend of 'Rigidity and Flexibility'?",
-    options: [
+    "id": "c11-pol-10-mcq-14",
+    "question": "Why is the Indian Constitution considered a masterly blend of 'Rigidity and Flexibility'?",
+    "options": [
       "A):   Because it can only be amended by a military decree",
       "B):   Because ordinary administrative matters can be amended easily by a simple majority, while foundational federal provisions require strict special majorities and state ratification",
       "C):   Because it is completely unwritten like the British Constitution",
       "D):   Because the President can unilaterally change any clause at will"
     ],
-    correctAnswer: "B",
-    explanation: "It avoids the ultra-rigidity of the US Constitution and the hyper-flexibility of the unwritten British Constitution by providing three distinct amendment avenues depending on the importance of the provision."
+    "correctAnswer": "B",
+    "explanation": "It avoids the ultra-rigidity of the US Constitution and the hyper-flexibility of the unwritten British Constitution by providing three distinct amendment avenues depending on the importance of the provision."
   },
   {
-    id: "c11-pol-10-mcq-15",
-    question: "In which landmark judgment did a 9-judge Constitution Bench unanimously declare the 'Right to Privacy' to be an intrinsic part of the Right to Life and Personal Liberty under Article 21?",
-    options: [
+    "id": "c11-pol-10-mcq-15",
+    "question": "In which landmark judgment did a 9-judge Constitution Bench unanimously declare the 'Right to Privacy' to be an intrinsic part of the Right to Life and Personal Liberty under Article 21?",
+    "options": [
       "A):   A.K. Gopalan v. State of Madras (1950)",
-      "B):   Justice K.S. Puttaswamy v. Union of India (2017)",
-      "C):   Shayara Bano v. Union of India (2017)",
+      "B):   Shayara Bano v. Union of India (2017)",
+      "C):   Justice K.S. Puttaswamy v. Union of India (2017)",
       "D):   Navtej Singh Johar v. Union of India (2018)"
     ],
-    correctAnswer: "B",
-    explanation: "In Justice K.S. Puttaswamy (2017), the Supreme Court held that the Right to Privacy is a fundamental right protected under Article 21, demonstrating how judicial interpretation keeps the Constitution living and modern."
+    "correctAnswer": "C",
+    "explanation": "In Justice K.S. Puttaswamy (2017), the Supreme Court held that the Right to Privacy is a fundamental right protected under Article 21, demonstrating how judicial interpretation keeps the Constitution living and modern."
   }
 ];

@@ -514,249 +514,244 @@ export const c11Pol8HtmlSolutions = `
 /* -------------------------------------------------------------------------- */
 
 export const c11Pol8Mcqs = [
-  // --- TIER 1: EASY / RECALL (Q1 to Q8) ---
   {
-    id: "c11-pol-8-mcq-1",
-    question: "Which Article of the Directive Principles of State Policy initially directed the State to organize village panchayats?",
-    options: [
-      "A):   Article 38",
-      "B):   Article 40",
+    "id": "c11-pol-8-mcq-1",
+    "question": "Which Article of the Directive Principles of State Policy initially directed the State to organize village panchayats?",
+    "options": [
+      "A):   Article 40",
+      "B):   Article 38",
       "C):   Article 45",
       "D):   Article 50"
     ],
-    correctAnswer: "B",
-    explanation: "Article 40 in Part IV directs: 'The State shall take steps to organise village panchayats and endow them with such powers and authority as may be necessary to enable them to function as units of self-government.'"
+    "correctAnswer": "A",
+    "explanation": "Article 40 in Part IV directs: 'The State shall take steps to organise village panchayats and endow them with such powers and authority as may be necessary to enable them to function as units of self-government.'"
   },
   {
-    id: "c11-pol-8-mcq-2",
-    question: "Which Constitutional Amendment Act accorded constitutional status to Rural Local Governments (Panchayati Raj)?",
-    options: [
+    "id": "c11-pol-8-mcq-2",
+    "question": "Which Constitutional Amendment Act accorded constitutional status to Rural Local Governments (Panchayati Raj)?",
+    "options": [
       "A):   42nd Amendment Act, 1976",
       "B):   73rd Amendment Act, 1992",
       "C):   74th Amendment Act, 1992",
       "D):   86th Amendment Act, 2002"
     ],
-    correctAnswer: "B",
-    explanation: "The 73rd Constitutional Amendment Act, 1992 added Part IX and the Eleventh Schedule, establishing constitutional status for Panchayati Raj Institutions."
+    "correctAnswer": "B",
+    "explanation": "The 73rd Constitutional Amendment Act, 1992 added Part IX and the Eleventh Schedule, establishing constitutional status for Panchayati Raj Institutions."
   },
   {
-    id: "c11-pol-8-mcq-3",
-    question: "How many functional subjects are listed in the Eleventh Schedule for Panchayats?",
-    options: [
+    "id": "c11-pol-8-mcq-3",
+    "question": "How many functional subjects are listed in the Eleventh Schedule for Panchayats?",
+    "options": [
       "A):   18 subjects",
       "B):   21 subjects",
       "C):   29 subjects",
       "D):   33 subjects"
     ],
-    correctAnswer: "C",
-    explanation: "The Eleventh Schedule (Article 243G) contains 29 functional subjects devolved to Panchayati Raj Institutions."
+    "correctAnswer": "C",
+    "explanation": "The Eleventh Schedule (Article 243G) contains 29 functional subjects devolved to Panchayati Raj Institutions."
   },
   {
-    id: "c11-pol-8-mcq-4",
-    question: "What is the minimum constitutional reservation mandated for women in Panchayats and Municipalities?",
-    options: [
+    "id": "c11-pol-8-mcq-4",
+    "question": "What is the minimum constitutional reservation mandated for women in Panchayats and Municipalities?",
+    "options": [
       "A):   25 percent",
-      "B):   One-third (33 percent)",
+      "B):   10 percent",
       "C):   50 percent",
-      "D):   10 percent"
+      "D):   One-third (33 percent)"
     ],
-    correctAnswer: "B",
-    explanation: "Articles 243D and 243T mandate that not less than one-third (33%) of total seats and chairperson positions must be reserved for women."
+    "correctAnswer": "D",
+    "explanation": "Articles 243D and 243T mandate that not less than one-third (33%) of total seats and chairperson positions must be reserved for women."
   },
   {
-    id: "c11-pol-8-mcq-5",
-    question: "What is the fixed constitutional tenure of Panchayats and Municipalities under the 73rd and 74th Amendments?",
-    options: [
-      "A):   3 years",
+    "id": "c11-pol-8-mcq-5",
+    "question": "What is the fixed constitutional tenure of Panchayats and Municipalities under the 73rd and 74th Amendments?",
+    "options": [
+      "A):   5 years",
       "B):   4 years",
-      "C):   5 years",
+      "C):   3 years",
       "D):   6 years"
     ],
-    correctAnswer: "C",
-    explanation: "Articles 243E and 243U guarantee a fixed 5-year tenure from the date of the first meeting, and elections must be held within 6 months if dissolved early."
+    "correctAnswer": "A",
+    "explanation": "Articles 243E and 243U guarantee a fixed 5-year tenure from the date of the first meeting, and elections must be held within 6 months if dissolved early."
   },
   {
-    id: "c11-pol-8-mcq-6",
-    question: "Which state in India was the very first to inaugurate Panchayati Raj on October 2, 1959?",
-    options: [
+    "id": "c11-pol-8-mcq-6",
+    "question": "Which state in India was the very first to inaugurate Panchayati Raj on October 2, 1959?",
+    "options": [
       "A):   Andhra Pradesh",
       "B):   Rajasthan",
       "C):   Gujarat",
       "D):   Uttar Pradesh"
     ],
-    correctAnswer: "B",
-    explanation: "Prime Minister Jawaharlal Nehru inaugurated India's first Panchayati Raj system at Nagaur, Rajasthan on Gandhi Jayanti (October 2, 1959)."
+    "correctAnswer": "B",
+    "explanation": "Prime Minister Jawaharlal Nehru inaugurated India's first Panchayati Raj system at Nagaur, Rajasthan on Gandhi Jayanti (October 2, 1959)."
   },
   {
-    id: "c11-pol-8-mcq-7",
-    question: "Under the 73rd Amendment, who constitutes the membership of the Gram Sabha (Article 243A)?",
-    options: [
+    "id": "c11-pol-8-mcq-7",
+    "question": "Under the 73rd Amendment, who constitutes the membership of the Gram Sabha (Article 243A)?",
+    "options": [
       "A):   Only village elders and land owners",
-      "B):   All adult residents registered as electors in the village electoral rolls",
-      "C):   Elected members of the Gram Panchayat only",
+      "B):   Elected members of the Gram Panchayat only",
+      "C):   All adult residents registered as electors in the village electoral rolls",
       "D):   The village Sarpanch and government officials"
     ],
-    correctAnswer: "B",
-    explanation: "Article 243A defines the Gram Sabha as a body consisting of all persons registered in the electoral rolls relating to a village comprised within the area of the Panchayat."
+    "correctAnswer": "C",
+    "explanation": "Article 243A defines the Gram Sabha as a body consisting of all persons registered in the electoral rolls relating to a village comprised within the area of the Panchayat."
   },
   {
-    id: "c11-pol-8-mcq-8",
-    question: "Which committee first strongly recommended constitutional recognition and protection for Panchayati Raj Institutions in 1986?",
-    options: [
+    "id": "c11-pol-8-mcq-8",
+    "question": "Which committee first strongly recommended constitutional recognition and protection for Panchayati Raj Institutions in 1986?",
+    "options": [
       "A):   Balwant Rai Mehta Committee",
       "B):   Ashok Mehta Committee",
-      "C):   L.M. Singhvi Committee",
-      "D):   Sarkaria Commission"
+      "C):   Sarkaria Commission",
+      "D):   L.M. Singhvi Committee"
     ],
-    correctAnswer: "C",
-    explanation: "The L.M. Singhvi Committee (1986) appointed by Rajiv Gandhi's government was the first to decisively recommend constitutional status for Panchayats."
+    "correctAnswer": "D",
+    "explanation": "The L.M. Singhvi Committee (1986) appointed by Rajiv Gandhi's government was the first to decisively recommend constitutional status for Panchayats."
   },
-
-  // --- TIER 2: MODERATE / CONCEPTUAL (Q9 to Q15) ---
   {
-    id: "c11-pol-8-mcq-9",
-    question: "Which Constitutional Amendment Act governs Urban Local Governments (Nagarpalikas / Municipalities)?",
-    options: [
-      "A):   71st Amendment Act",
+    "id": "c11-pol-8-mcq-9",
+    "question": "Which Constitutional Amendment Act governs Urban Local Governments (Nagarpalikas / Municipalities)?",
+    "options": [
+      "A):   74th Amendment Act, 1992",
       "B):   72nd Amendment Act",
-      "C):   74th Amendment Act, 1992",
+      "C):   71st Amendment Act",
       "D):   77th Amendment Act"
     ],
-    correctAnswer: "C",
-    explanation: "The 74th Constitutional Amendment Act, 1992 inserted Part IX-A and the Twelfth Schedule (18 subjects), granting constitutional status to urban local bodies."
+    "correctAnswer": "A",
+    "explanation": "The 74th Constitutional Amendment Act, 1992 inserted Part IX-A and the Twelfth Schedule (18 subjects), granting constitutional status to urban local bodies."
   },
   {
-    id: "c11-pol-8-mcq-10",
-    question: "Under Article 243B, which state category is exempted from establishing the intermediate (block) tier of Panchayats?",
-    options: [
+    "id": "c11-pol-8-mcq-10",
+    "question": "Under Article 243B, which state category is exempted from establishing the intermediate (block) tier of Panchayats?",
+    "options": [
       "A):   States with a tribal population above 50%",
       "B):   States having a population not exceeding twenty lakhs",
       "C):   States having a total geographical area under 10,000 sq km",
       "D):   Hilly and border states"
     ],
-    correctAnswer: "B",
-    explanation: "Article 243B(2) provides that Panchayats at the intermediate level may not be constituted in a State having a population not exceeding twenty lakhs."
+    "correctAnswer": "B",
+    "explanation": "Article 243B(2) provides that Panchayats at the intermediate level may not be constituted in a State having a population not exceeding twenty lakhs."
   },
   {
-    id: "c11-pol-8-mcq-11",
-    question: "Who conducts the elections to Panchayati Raj Institutions and Urban Municipalities?",
-    options: [
+    "id": "c11-pol-8-mcq-11",
+    "question": "Who conducts the elections to Panchayati Raj Institutions and Urban Municipalities?",
+    "options": [
       "A):   Election Commission of India",
-      "B):   State Election Commission",
-      "C):   District Magistrate / Collector",
+      "B):   District Magistrate / Collector",
+      "C):   State Election Commission",
       "D):   Union Ministry of Panchayati Raj"
     ],
-    correctAnswer: "B",
-    explanation: "Under Articles 243K and 243ZA, the State Election Commission (an independent constitutional authority) conducts and supervises all local body elections."
+    "correctAnswer": "C",
+    "explanation": "Under Articles 243K and 243ZA, the State Election Commission (an independent constitutional authority) conducts and supervises all local body elections."
   },
   {
-    id: "c11-pol-8-mcq-12",
-    question: "What is the executive head structure of a Municipal Corporation (Mahanagar Palika)?",
-    options: [
+    "id": "c11-pol-8-mcq-12",
+    "question": "What is the executive head structure of a Municipal Corporation (Mahanagar Palika)?",
+    "options": [
       "A):   The Mayor exercises absolute executive power",
-      "B):   An IAS-cadre Municipal Commissioner appointed by the State exercises executive authority, while the elected Mayor is the political head",
+      "B):   The local Member of Parliament acts as municipal chief executive",
       "C):   The Governor directly runs the municipal administration",
-      "D):   The local Member of Parliament acts as municipal chief executive"
+      "D):   An IAS-cadre Municipal Commissioner appointed by the State exercises executive authority, while the elected Mayor is the political head"
     ],
-    correctAnswer: "B",
-    explanation: "In a Municipal Corporation, the elected Mayor is the decorative/political head, whereas the executive administration is headed by an IAS-cadre Municipal Commissioner appointed by the State."
+    "correctAnswer": "D",
+    "explanation": "In a Municipal Corporation, the elected Mayor is the decorative/political head, whereas the executive administration is headed by an IAS-cadre Municipal Commissioner appointed by the State."
   },
   {
-    id: "c11-pol-8-mcq-13",
-    question: "Which of the following is celebrated nationwide as 'National Panchayati Raj Day' to mark the enforcement of the 73rd Amendment?",
-    options: [
-      "A):   January 26",
-      "B):   April 24",
+    "id": "c11-pol-8-mcq-13",
+    "question": "Which of the following is celebrated nationwide as 'National Panchayati Raj Day' to mark the enforcement of the 73rd Amendment?",
+    "options": [
+      "A):   April 24",
+      "B):   January 26",
       "C):   June 1",
       "D):   October 2"
     ],
-    correctAnswer: "B",
-    explanation: "April 24 is celebrated annually as National Panchayati Raj Day because the 73rd Constitutional Amendment came into official effect on April 24, 1993."
+    "correctAnswer": "A",
+    "explanation": "April 24 is celebrated annually as National Panchayati Raj Day because the 73rd Constitutional Amendment came into official effect on April 24, 1993."
   },
   {
-    id: "c11-pol-8-mcq-14",
-    question: "The Balwant Rai Mehta Committee (1957) originally recommended which institutional structure for rural local governance?",
-    options: [
+    "id": "c11-pol-8-mcq-14",
+    "question": "The Balwant Rai Mehta Committee (1957) originally recommended which institutional structure for rural local governance?",
+    "options": [
       "A):   Two-tier system",
       "B):   Three-tier system",
       "C):   Single-tier village council",
       "D):   Four-tier administrative pyramid"
     ],
-    correctAnswer: "B",
-    explanation: "The Balwant Rai Mehta Committee recommended a 3-tier structure: Gram Panchayat (village), Panchayat Samiti (block), and Zila Parishad (district)."
+    "correctAnswer": "B",
+    "explanation": "The Balwant Rai Mehta Committee recommended a 3-tier structure: Gram Panchayat (village), Panchayat Samiti (block), and Zila Parishad (district)."
   },
   {
-    id: "c11-pol-8-mcq-15",
-    question: "Under Article 243S, Wards Committees are mandatorily constituted in municipalities having a population of:",
-    options: [
+    "id": "c11-pol-8-mcq-15",
+    "question": "Under Article 243S, Wards Committees are mandatorily constituted in municipalities having a population of:",
+    "options": [
       "A):   Fifty thousand or more",
       "B):   One lakh or more",
       "C):   Three lakhs or more",
       "D):   Ten lakhs or more"
     ],
-    correctAnswer: "C",
-    explanation: "Article 243S mandates the constitution of Wards Committees in all municipalities having a population of three lakhs (3,00,000) or more."
+    "correctAnswer": "C",
+    "explanation": "Article 243S mandates the constitution of Wards Committees in all municipalities having a population of three lakhs (3,00,000) or more."
   },
-
-  // --- TIER 3: ADVANCE / ANALYTICAL (Q16 to Q20) ---
   {
-    id: "c11-pol-8-mcq-16",
-    question: "What was Dr. B.R. Ambedkar's primary constitutional apprehension regarding village panchayats during the Constituent Assembly debates?",
-    options: [
+    "id": "c11-pol-8-mcq-16",
+    "question": "What was Dr. B.R. Ambedkar's primary constitutional apprehension regarding village panchayats during the Constituent Assembly debates?",
+    "options": [
       "A):   He believed villages were too expensive to administer",
-      "B):   He feared upper-caste feudal elites would use village dominance to oppress Scheduled Castes without central safeguards",
+      "B):   He wanted all governance to be controlled solely by the military",
       "C):   He thought villages lacked adequate agricultural land",
-      "D):   He wanted all governance to be controlled solely by the military"
+      "D):   He feared upper-caste feudal elites would use village dominance to oppress Scheduled Castes without central safeguards"
     ],
-    correctAnswer: "B",
-    explanation: "Dr. Ambedkar feared that entrenched feudal caste hierarchies in Indian villages would perpetuate caste oppression against Dalits if local bodies were endowed with unmonitored power."
+    "correctAnswer": "D",
+    "explanation": "Dr. Ambedkar feared that entrenched feudal caste hierarchies in Indian villages would perpetuate caste oppression against Dalits if local bodies were endowed with unmonitored power."
   },
   {
-    id: "c11-pol-8-mcq-17",
-    question: "Which landmark Act was passed in 1996 to extend the provisions of Part IX of the Constitution to Fifth Schedule tribal areas?",
-    options: [
-      "A):   Forest Rights Act (FRA)",
-      "B):   Panchayats (Extension to Scheduled Areas) Act (PESA)",
+    "id": "c11-pol-8-mcq-17",
+    "question": "Which landmark Act was passed in 1996 to extend the provisions of Part IX of the Constitution to Fifth Schedule tribal areas?",
+    "options": [
+      "A):   Panchayats (Extension to Scheduled Areas) Act (PESA)",
+      "B):   Forest Rights Act (FRA)",
       "C):   Right to Fair Compensation in Land Acquisition Act",
       "D):   Tribal Advisory Council Act"
     ],
-    correctAnswer: "B",
-    explanation: "The PESA Act of 1996 extended Panchayati Raj to Fifth Schedule tribal areas across 10 states, granting Gram Sabhas special powers over minor forest produce, land alienation, and customary dispute resolution."
+    "correctAnswer": "A",
+    "explanation": "The PESA Act of 1996 extended Panchayati Raj to Fifth Schedule tribal areas across 10 states, granting Gram Sabhas special powers over minor forest produce, land alienation, and customary dispute resolution."
   },
   {
-    id: "c11-pol-8-mcq-18",
-    question: "Which constitutional body is established under Article 243ZD to consolidate developmental plans prepared by Panchayats and Municipalities at the district level?",
-    options: [
+    "id": "c11-pol-8-mcq-18",
+    "question": "Which constitutional body is established under Article 243ZD to consolidate developmental plans prepared by Panchayats and Municipalities at the district level?",
+    "options": [
       "A):   State Planning Board",
       "B):   District Planning Committee (DPC)",
       "C):   Zila Vikas Board",
       "D):   Regional Development Authority"
     ],
-    correctAnswer: "B",
-    explanation: "Article 243ZD mandates the creation of a District Planning Committee (DPC) in every district to consolidate draft plans prepared by Panchayats and Municipalities into a unified district development plan."
+    "correctAnswer": "B",
+    "explanation": "Article 243ZD mandates the creation of a District Planning Committee (DPC) in every district to consolidate draft plans prepared by Panchayats and Municipalities into a unified district development plan."
   },
   {
-    id: "c11-pol-8-mcq-19",
-    question: "What is meant by the '3 Fs' challenge widely cited as the major handicap of local self-governments in contemporary India?",
-    options: [
+    "id": "c11-pol-8-mcq-19",
+    "question": "What is meant by the '3 Fs' challenge widely cited as the major handicap of local self-governments in contemporary India?",
+    "options": [
       "A):   Farming, Forests, and Fisheries",
-      "B):   Funds, Functions, and Functionaries",
-      "C):   Freedom, Fairness, and Flexibility",
+      "B):   Freedom, Fairness, and Flexibility",
+      "C):   Funds, Functions, and Functionaries",
       "D):   Franchise, Federalism, and Fraternity"
     ],
-    correctAnswer: "B",
-    explanation: "The '3 Fs' deficit refers to the inadequacy of Funds (lack of revenue powers), Functions (failure of states to genuinely devolve 29/18 subjects), and Functionaries (scarcity of dedicated administrative/technical staff)."
+    "correctAnswer": "C",
+    "explanation": "The '3 Fs' deficit refers to the inadequacy of Funds (lack of revenue powers), Functions (failure of states to genuinely devolve 29/18 subjects), and Functionaries (scarcity of dedicated administrative/technical staff)."
   },
   {
-    id: "c11-pol-8-mcq-20",
-    question: "The term 'Sarpanch Pati' in the context of Panchayati Raj refers to:",
-    options: [
+    "id": "c11-pol-8-mcq-20",
+    "question": "The term 'Sarpanch Pati' in the context of Panchayati Raj refers to:",
+    "options": [
       "A):   A legally recognized deputy to the village Sarpanch",
-      "B):   The patriarchal practice where male relatives/husbands exercise de facto authority on behalf of elected female representatives",
+      "B):   A traditional title bestowed upon the seniormost panchayat member",
       "C):   A specialized government auditor for village welfare schemes",
-      "D):   A traditional title bestowed upon the seniormost panchayat member"
+      "D):   The patriarchal practice where male relatives/husbands exercise de facto authority on behalf of elected female representatives"
     ],
-    correctAnswer: "B",
-    explanation: "'Sarpanch Pati' describes the informal patriarchal dynamic where husbands or male family members attempt to wield real decision-making power on behalf of elected women sarpanches, though this practice is declining with increasing female literacy and experience."
+    "correctAnswer": "D",
+    "explanation": "'Sarpanch Pati' describes the informal patriarchal dynamic where husbands or male family members attempt to wield real decision-making power on behalf of elected women sarpanches, though this practice is declining with increasing female literacy and experience."
   }
 ];

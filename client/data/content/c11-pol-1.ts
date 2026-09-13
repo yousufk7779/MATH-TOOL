@@ -493,250 +493,245 @@ export interface MCQ {
   explanation: string;
 }
 
-export const c11Pol1Mcqs: MCQ[] = [
-  // Tier 1: Direct Recall (Easy)
+export const c11Pol1Mcqs = [
   {
-    id: "c11-pol-1-mcq-1",
-    question: "When did the Constituent Assembly of India hold its very first meeting?",
-    options: [
-      "A):   15 August 1947",
-      "B):   9 December 1946",
+    "id": "c11-pol-1-mcq-1",
+    "question": "When did the Constituent Assembly of India hold its very first meeting?",
+    "options": [
+      "A):   9 December 1946",
+      "B):   15 August 1947",
       "C):   26 November 1949",
-      "D):   26 January 1950",
+      "D):   26 January 1950"
     ],
-    correctAnswer: "b",
-    explanation: "The Constituent Assembly met for the first time on 9 December 1946 in the Constitution Hall (now Central Hall of Parliament, New Delhi), with Dr. Sachchidananda Sinha serving as temporary Chairman.",
+    "correctAnswer": "A",
+    "explanation": "The Constituent Assembly met for the first time on 9 December 1946 in the Constitution Hall (now Central Hall of Parliament, New Delhi), with Dr. Sachchidananda Sinha serving as temporary Chairman."
   },
   {
-    id: "c11-pol-1-mcq-2",
-    question: "Who among the following was elected as the permanent President of the Constituent Assembly on 11 December 1946?",
-    options: [
+    "id": "c11-pol-1-mcq-2",
+    "question": "Who among the following was elected as the permanent President of the Constituent Assembly on 11 December 1946?",
+    "options": [
       "A):   Dr. B.R. Ambedkar",
-      "B):   Pandit Jawaharlal Nehru",
-      "C):   Dr. Rajendra Prasad",
-      "D):   Sardar Vallabhbhai Patel",
+      "B):   Dr. Rajendra Prasad",
+      "C):   Pandit Jawaharlal Nehru",
+      "D):   Sardar Vallabhbhai Patel"
     ],
-    correctAnswer: "c",
-    explanation: "Dr. Rajendra Prasad was elected as the permanent President of the Constituent Assembly on 11 December 1946, while Dr. B.R. Ambedkar chaired the Drafting Committee.",
+    "correctAnswer": "B",
+    "explanation": "Dr. Rajendra Prasad was elected as the permanent President of the Constituent Assembly on 11 December 1946, while Dr. B.R. Ambedkar chaired the Drafting Committee."
   },
   {
-    id: "c11-pol-1-mcq-3",
-    question: "Who was appointed as the Chairman of the Drafting Committee of the Constituent Assembly on 29 August 1947?",
-    options: [
-      "A):   Dr. B.R. Ambedkar",
+    "id": "c11-pol-1-mcq-3",
+    "question": "Who was appointed as the Chairman of the Drafting Committee of the Constituent Assembly on 29 August 1947?",
+    "options": [
+      "A):   K.M. Munshi",
       "B):   Sir B.N. Rau",
-      "C):   K.M. Munshi",
-      "D):   Alladi Krishnaswamy Iyer",
-    ],
-    correctAnswer: "a",
-    explanation: "Dr. B.R. Ambedkar was appointed Chairman of the 7-member Drafting Committee, earning him the title of the 'Chief Architect of the Indian Constitution'.",
-  },
-  {
-    id: "c11-pol-1-mcq-4",
-    question: "The historic 'Objectives Resolution' which outlined the foundational ideals of the Indian Constitution was moved by:",
-    options: [
-      "A):   Mahatma Gandhi",
-      "B):   Pandit Jawaharlal Nehru",
       "C):   Dr. B.R. Ambedkar",
-      "D):   Maulana Abul Kalam Azad",
+      "D):   Alladi Krishnaswamy Iyer"
     ],
-    correctAnswer: "b",
-    explanation: "Pandit Jawaharlal Nehru introduced the historic Objectives Resolution in the Constituent Assembly on 13 December 1946, which later inspired the Preamble.",
+    "correctAnswer": "C",
+    "explanation": "Dr. B.R. Ambedkar was appointed Chairman of the 7-member Drafting Committee, earning him the title of the 'Chief Architect of the Indian Constitution'."
   },
   {
-    id: "c11-pol-1-mcq-5",
-    question: "The Directive Principles of State Policy (DPSP) in the Indian Constitution were borrowed from which country's constitution?",
-    options: [
-      "A):   United States",
-      "B):   Ireland",
+    "id": "c11-pol-1-mcq-4",
+    "question": "The historic 'Objectives Resolution' which outlined the foundational ideals of the Indian Constitution was moved by:",
+    "options": [
+      "A):   Mahatma Gandhi",
+      "B):   Maulana Abul Kalam Azad",
+      "C):   Dr. B.R. Ambedkar",
+      "D):   Pandit Jawaharlal Nehru"
+    ],
+    "correctAnswer": "D",
+    "explanation": "Pandit Jawaharlal Nehru introduced the historic Objectives Resolution in the Constituent Assembly on 13 December 1946, which later inspired the Preamble."
+  },
+  {
+    "id": "c11-pol-1-mcq-5",
+    "question": "The Directive Principles of State Policy (DPSP) in the Indian Constitution were borrowed from which country's constitution?",
+    "options": [
+      "A):   Ireland",
+      "B):   United States",
       "C):   United Kingdom",
-      "D):   Canada",
+      "D):   Canada"
     ],
-    correctAnswer: "b",
-    explanation: "The Directive Principles of State Policy (Part IV of the Constitution) were borrowed from the Irish Constitution (which had adopted them from the Spanish Constitution).",
+    "correctAnswer": "A",
+    "explanation": "The Directive Principles of State Policy (Part IV of the Constitution) were borrowed from the Irish Constitution (which had adopted them from the Spanish Constitution)."
   },
   {
-    id: "c11-pol-1-mcq-6",
-    question: "Which of the following constitutional provisions was passed by the Constituent Assembly without virtually any debate or opposition?",
-    options: [
+    "id": "c11-pol-1-mcq-6",
+    "question": "Which of the following constitutional provisions was passed by the Constituent Assembly without virtually any debate or opposition?",
+    "options": [
       "A):   Federal power distribution",
       "B):   Universal Adult Franchise",
       "C):   National language status of Hindi",
-      "D):   Right to Property",
+      "D):   Right to Property"
     ],
-    correctAnswer: "b",
-    explanation: "Universal Adult Franchise (granting every adult citizen the right to vote irrespective of gender, caste, or wealth) was the only major provision enacted without debate.",
+    "correctAnswer": "B",
+    "explanation": "Universal Adult Franchise (granting every adult citizen the right to vote irrespective of gender, caste, or wealth) was the only major provision enacted without debate."
   },
   {
-    id: "c11-pol-1-mcq-7",
-    question: "How many members actually signed the Constitution of India when it was adopted on 26 November 1949?",
-    options: [
+    "id": "c11-pol-1-mcq-7",
+    "question": "How many members actually signed the Constitution of India when it was adopted on 26 November 1949?",
+    "options": [
       "A):   389 members",
       "B):   299 members",
       "C):   284 members",
-      "D):   250 members",
+      "D):   250 members"
     ],
-    correctAnswer: "c",
-    explanation: "Out of the post-partition membership of 299, exactly 284 members were physically present in the Assembly on 26 November 1949 to sign the original handwritten Constitution.",
+    "correctAnswer": "C",
+    "explanation": "Out of the post-partition membership of 299, exactly 284 members were physically present in the Assembly on 26 November 1949 to sign the original handwritten Constitution."
   },
   {
-    id: "c11-pol-1-mcq-8",
-    question: "The power of Judicial Review and the charter of Fundamental Rights were borrowed primarily from the constitution of:",
-    options: [
+    "id": "c11-pol-1-mcq-8",
+    "question": "The power of Judicial Review and the charter of Fundamental Rights were borrowed primarily from the constitution of:",
+    "options": [
       "A):   Great Britain",
       "B):   Canada",
-      "C):   United States",
-      "D):   Australia",
+      "C):   Australia",
+      "D):   United States"
     ],
-    correctAnswer: "c",
-    explanation: "The concept of an independent judiciary armed with Judicial Review and the enforceable Bill of Fundamental Rights were borrowed from the United States Constitution.",
+    "correctAnswer": "D",
+    "explanation": "The concept of an independent judiciary armed with Judicial Review and the enforceable Bill of Fundamental Rights were borrowed from the United States Constitution."
   },
-
-  // Tier 2: Conceptual & Comparative (Moderate)
   {
-    id: "c11-pol-1-mcq-9",
-    question: "What was the initial total strength of the Constituent Assembly under the Cabinet Mission Plan before the partition of India?",
-    options: [
-      "A):   299 members",
-      "B):   389 members",
+    "id": "c11-pol-1-mcq-9",
+    "question": "What was the initial total strength of the Constituent Assembly under the Cabinet Mission Plan before the partition of India?",
+    "options": [
+      "A):   389 members",
+      "B):   299 members",
       "C):   420 members",
-      "D):   350 members",
+      "D):   350 members"
     ],
-    correctAnswer: "b",
-    explanation: "Under the Cabinet Mission Plan of 1946, the initial strength was 389 (292 elected from British provinces, 93 nominated by princely states, and 4 from Chief Commissioner provinces).",
+    "correctAnswer": "A",
+    "explanation": "Under the Cabinet Mission Plan of 1946, the initial strength was 389 (292 elected from British provinces, 93 nominated by princely states, and 4 from Chief Commissioner provinces)."
   },
   {
-    id: "c11-pol-1-mcq-10",
-    question: "Why did the members of the Constituent Assembly abandon the concept of a weak centre with limited powers after August 1947?",
-    options: [
+    "id": "c11-pol-1-mcq-10",
+    "question": "Why did the members of the Constituent Assembly abandon the concept of a weak centre with limited powers after August 1947?",
+    "options": [
       "A):   British rulers ordered them to change it",
       "B):   Partition highlighted the grave danger of national fragmentation, requiring a powerful Union Centre",
       "C):   The Supreme Court demanded a unitary constitution",
-      "D):   Princely states refused to join a federation",
+      "D):   Princely states refused to join a federation"
     ],
-    correctAnswer: "b",
-    explanation: "The horrors of Partition and the risk of balkanization with 565 princely states proved that only a strong Union Centre could safeguard national sovereignty and maintain law and order.",
+    "correctAnswer": "B",
+    "explanation": "The horrors of Partition and the risk of balkanization with 565 princely states proved that only a strong Union Centre could safeguard national sovereignty and maintain law and order."
   },
   {
-    id: "c11-pol-1-mcq-11",
-    question: "The concept of a 'Quasi-Federal' system (a federation with a strong centralizing tilt and residuary powers with the Centre) was adapted from:",
-    options: [
-      "A):   Canada",
+    "id": "c11-pol-1-mcq-11",
+    "question": "The concept of a 'Quasi-Federal' system (a federation with a strong centralizing tilt and residuary powers with the Centre) was adapted from:",
+    "options": [
+      "A):   Australia",
       "B):   United States",
-      "C):   Australia",
-      "D):   South Africa",
+      "C):   Canada",
+      "D):   South Africa"
     ],
-    correctAnswer: "a",
-    explanation: "The Indian federal framework &mdash; a union of states with a strong Centre and residuary powers vested in the national parliament &mdash; was inspired by the Canadian model.",
+    "correctAnswer": "C",
+    "explanation": "The Indian federal framework &mdash; a union of states with a strong Centre and residuary powers vested in the national parliament &mdash; was inspired by the Canadian model."
   },
   {
-    id: "c11-pol-1-mcq-12",
-    question: "Which of the following bodies served as the constitutional advisor to the Constituent Assembly?",
-    options: [
+    "id": "c11-pol-1-mcq-12",
+    "question": "Which of the following bodies served as the constitutional advisor to the Constituent Assembly?",
+    "options": [
       "A):   Dr. B.R. Ambedkar",
-      "B):   Sir B.N. Rau",
+      "B):   S.N. Mukherjee",
       "C):   H.V.R. Iengar",
-      "D):   S.N. Mukherjee",
+      "D):   Sir B.N. Rau"
     ],
-    correctAnswer: "b",
-    explanation: "Sir Benegal Narsing Rau (B.N. Rau), an eminent jurist who later served on the International Court of Justice, was appointed as the Constitutional Advisor to the Assembly.",
+    "correctAnswer": "D",
+    "explanation": "Sir Benegal Narsing Rau (B.N. Rau), an eminent jurist who later served on the International Court of Justice, was appointed as the Constitutional Advisor to the Assembly."
   },
   {
-    id: "c11-pol-1-mcq-13",
-    question: "The electoral mechanism used to elect members of the Constituent Assembly from the Provincial Legislative Assemblies was:",
-    options: [
-      "A):   Direct election through adult suffrage",
-      "B):   Proportional representation by means of the single transferable vote",
+    "id": "c11-pol-1-mcq-13",
+    "question": "The electoral mechanism used to elect members of the Constituent Assembly from the Provincial Legislative Assemblies was:",
+    "options": [
+      "A):   Proportional representation by means of the single transferable vote",
+      "B):   Direct election through adult suffrage",
       "C):   First-Past-the-Post system by general voters",
-      "D):   Nomination by the Viceroy of India",
+      "D):   Nomination by the Viceroy of India"
     ],
-    correctAnswer: "b",
-    explanation: "Provincial legislators elected the Assembly members through proportional representation by means of the single transferable vote (STV), ensuring representation across communities.",
+    "correctAnswer": "A",
+    "explanation": "Provincial legislators elected the Assembly members through proportional representation by means of the single transferable vote (STV), ensuring representation across communities."
   },
   {
-    id: "c11-pol-1-mcq-14",
-    question: "The ideals of 'Liberty, Equality, and Fraternity' enshrined in the Preamble of the Indian Constitution were inspired by:",
-    options: [
+    "id": "c11-pol-1-mcq-14",
+    "question": "The ideals of 'Liberty, Equality, and Fraternity' enshrined in the Preamble of the Indian Constitution were inspired by:",
+    "options": [
       "A):   The American Revolution (1776)",
-      "B):   The Russian Bolshevik Revolution (1917)",
-      "C):   The French Revolution (1789)",
-      "D):   The Irish Independence Movement (1922)",
+      "B):   The French Revolution (1789)",
+      "C):   The Russian Bolshevik Revolution (1917)",
+      "D):   The Irish Independence Movement (1922)"
     ],
-    correctAnswer: "c",
-    explanation: "The trinitarian ideals of Liberty, Equality, and Fraternity emerged from the French Revolution of 1789 and were adopted into the Preamble as core moral values.",
+    "correctAnswer": "B",
+    "explanation": "The trinitarian ideals of Liberty, Equality, and Fraternity emerged from the French Revolution of 1789 and were adopted into the Preamble as core moral values."
   },
   {
-    id: "c11-pol-1-mcq-15",
-    question: "The major structural and administrative framework of the Constitution, comprising nearly 60-70% of its provisions, was drawn from:",
-    options: [
-      "A):   Government of India Act 1935",
+    "id": "c11-pol-1-mcq-15",
+    "question": "The major structural and administrative framework of the Constitution, comprising nearly 60-70% of its provisions, was drawn from:",
+    "options": [
+      "A):   Nehru Report of 1928",
       "B):   Indian Independence Act 1947",
-      "C):   Nehru Report of 1928",
-      "D):   Government of India Act 1919",
+      "C):   Government of India Act 1935",
+      "D):   Government of India Act 1919"
     ],
-    correctAnswer: "a",
-    explanation: "The Government of India Act 1935 provided the administrative machinery, federal lists, office of governor, emergency provisions, and judicial structure.",
+    "correctAnswer": "C",
+    "explanation": "The Government of India Act 1935 provided the administrative machinery, federal lists, office of governor, emergency provisions, and judicial structure."
   },
-
-  // Tier 3: Analytical & Multi-Statement (Advance)
   {
-    id: "c11-pol-1-mcq-16",
-    question: "Which of the following is NOT one of the core functions of a constitution in a democratic society?",
-    options: [
+    "id": "c11-pol-1-mcq-16",
+    "question": "Which of the following is NOT one of the core functions of a constitution in a democratic society?",
+    "options": [
       "A):   Providing basic rules to allow minimal coordination among citizens",
       "B):   Specifying who has the power to take decisions in society",
-      "C):   Ensuring that a single political party remains permanently in power to avoid chaos",
-      "D):   Limiting what a government can impose upon its citizens",
+      "C):   Limiting what a government can impose upon its citizens",
+      "D):   Ensuring that a single political party remains permanently in power to avoid chaos"
     ],
-    correctAnswer: "c",
-    explanation: "A democratic constitution never guarantees permanent power to any party. Instead, it limits government power, ensures periodic free elections, and guarantees fundamental rights.",
+    "correctAnswer": "D",
+    "explanation": "A democratic constitution never guarantees permanent power to any party. Instead, it limits government power, ensures periodic free elections, and guarantees fundamental rights."
   },
   {
-    id: "c11-pol-1-mcq-17",
-    question: "Consider the following statements regarding the Constituent Assembly of India:\n1. It was directly elected by all adult citizens of British India.\n2. Following the partition of India, its membership was reduced to 299.\n3. The Muslim League boycotted the initial meetings of the Assembly.\nWhich of the statements given above are CORRECT?",
-    options: [
-      "A):   1 and 2 only",
-      "B):   2 and 3 only",
+    "id": "c11-pol-1-mcq-17",
+    "question": "Consider the following statements regarding the Constituent Assembly of India:\n1. It was directly elected by all adult citizens of British India.\n2. Following the partition of India, its membership was reduced to 299.\n3. The Muslim League boycotted the initial meetings of the Assembly.\nWhich of the statements given above are CORRECT?",
+    "options": [
+      "A):   2 and 3 only",
+      "B):   1 and 2 only",
       "C):   1 and 3 only",
-      "D):   1, 2, and 3",
+      "D):   1, 2, and 3"
     ],
-    correctAnswer: "b",
-    explanation: "Statement 1 is incorrect because the Assembly was indirectly elected by provincial legislators elected under the 1935 Act, not by direct universal adult suffrage. Statements 2 and 3 are correct.",
+    "correctAnswer": "A",
+    "explanation": "Statement 1 is incorrect because the Assembly was indirectly elected by provincial legislators elected under the 1935 Act, not by direct universal adult suffrage. Statements 2 and 3 are correct."
   },
   {
-    id: "c11-pol-1-mcq-18",
-    question: "Why did the Constituent Assembly decide to abolish separate electorates which had existed under British rule since 1909?",
-    options: [
+    "id": "c11-pol-1-mcq-18",
+    "question": "Why did the Constituent Assembly decide to abolish separate electorates which had existed under British rule since 1909?",
+    "options": [
       "A):   To deny political representation to minority groups",
       "B):   Because separate electorates had fostered communal polarization that culminated in Partition",
       "C):   Because the United Nations passed a resolution banning them",
-      "D):   Because the British government requested their removal",
+      "D):   Because the British government requested their removal"
     ],
-    correctAnswer: "b",
-    explanation: "The framers recognized that separate electorates were a divide-and-rule colonial instrument that fragmented the nation along religious lines, making joint electorates essential for national unity.",
+    "correctAnswer": "B",
+    "explanation": "The framers recognized that separate electorates were a divide-and-rule colonial instrument that fragmented the nation along religious lines, making joint electorates essential for national unity."
   },
   {
-    id: "c11-pol-1-mcq-19",
-    question: "Match List-I (Source) with List-II (Borrowed Feature):\n(p) Australia &mdash; (1) Concurrent List &amp; Joint Sitting\n(q) South Africa &mdash; (2) Constitutional Amendment Procedure\n(r) Ireland &mdash; (3) Directive Principles of State Policy\n(s) United Kingdom &mdash; (4) Parliamentary Executive &amp; FPTP\nChoose the correct code:",
-    options: [
-      "A):   p-1, q-2, r-3, s-4",
+    "id": "c11-pol-1-mcq-19",
+    "question": "Match List-I (Source) with List-II (Borrowed Feature):\n(p) Australia &mdash; (1) Concurrent List &amp; Joint Sitting\n(q) South Africa &mdash; (2) Constitutional Amendment Procedure\n(r) Ireland &mdash; (3) Directive Principles of State Policy\n(s) United Kingdom &mdash; (4) Parliamentary Executive &amp; FPTP\nChoose the correct code:",
+    "options": [
+      "A):   p-4, q-3, r-2, s-1",
       "B):   p-2, q-1, r-4, s-3",
-      "C):   p-4, q-3, r-2, s-1",
-      "D):   p-1, q-3, r-2, s-4",
+      "C):   p-1, q-2, r-3, s-4",
+      "D):   p-1, q-3, r-2, s-4"
     ],
-    correctAnswer: "a",
-    explanation: "All matches are correctly aligned: Australia (Concurrent List), South Africa (Amendment Procedure), Ireland (DPSPs), and UK (Parliamentary Executive & FPTP).",
+    "correctAnswer": "C",
+    "explanation": "All matches are correctly aligned: Australia (Concurrent List), South Africa (Amendment Procedure), Ireland (DPSPs), and UK (Parliamentary Executive & FPTP)."
   },
   {
-    id: "c11-pol-1-mcq-20",
-    question: "Assertion (A): The Indian Constitution is characterized as a living document rather than a rigid, unchangeable artifact.\nReason (R): It balances rigidity and flexibility under Article 368, enabling adaptation to evolving socio-economic conditions while preserving its basic structure.",
-    options: [
-      "A):   Both A and R are true, and R is the correct explanation of A",
+    "id": "c11-pol-1-mcq-20",
+    "question": "Assertion (A): The Indian Constitution is characterized as a living document rather than a rigid, unchangeable artifact.\nReason (R): It balances rigidity and flexibility under Article 368, enabling adaptation to evolving socio-economic conditions while preserving its basic structure.",
+    "options": [
+      "A):   A is false, but R is true",
       "B):   Both A and R are true, but R is NOT the correct explanation of A",
       "C):   A is true, but R is false",
-      "D):   A is false, but R is true",
+      "D):   Both A and R are true, and R is the correct explanation of A"
     ],
-    correctAnswer: "a",
-    explanation: "Both statements are correct. The Constitution is a living document because its balanced amendment design under Article 368 allows it to grow and adapt to contemporary needs without subverting fundamental democratic ideals.",
-  },
+    "correctAnswer": "D",
+    "explanation": "Both statements are correct. The Constitution is a living document because its balanced amendment design under Article 368 allows it to grow and adapt to contemporary needs without subverting fundamental democratic ideals."
+  }
 ];

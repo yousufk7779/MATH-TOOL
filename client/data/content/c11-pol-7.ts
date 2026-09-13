@@ -668,249 +668,244 @@ export const c11Pol7HtmlSolutions = `
 /* -------------------------------------------------------------------------- */
 
 export const c11Pol7Mcqs = [
-  // --- TIER 1: EASY / RECALL (Q1 to Q8) ---
   {
-    id: "c11-pol-7-mcq-1",
-    question: "Article 1 of the Indian Constitution officially describes India as a:",
-    options: [
-      "A):   Federation of Independent States",
-      "B):   Union of States",
+    "id": "c11-pol-7-mcq-1",
+    "question": "Article 1 of the Indian Constitution officially describes India as a:",
+    "options": [
+      "A):   Union of States",
+      "B):   Federation of Independent States",
       "C):   Confederation of Autonomous Regions",
       "D):   Unitary Sovereign Republic"
     ],
-    correctAnswer: "B",
-    explanation: "Article 1(1) states: 'India, that is Bharat, shall be a Union of States', deliberately chosen by Dr. Ambedkar to emphasize that the union is indestructible and no state can secede."
+    "correctAnswer": "A",
+    "explanation": "Article 1(1) states: 'India, that is Bharat, shall be a Union of States', deliberately chosen by Dr. Ambedkar to emphasize that the union is indestructible and no state can secede."
   },
   {
-    id: "c11-pol-7-mcq-2",
-    question: "Which Schedule of the Indian Constitution delineates the tripartite division of legislative powers between the Union and the States?",
-    options: [
+    "id": "c11-pol-7-mcq-2",
+    "question": "Which Schedule of the Indian Constitution delineates the tripartite division of legislative powers between the Union and the States?",
+    "options": [
       "A):   Fifth Schedule",
       "B):   Seventh Schedule",
       "C):   Ninth Schedule",
       "D):   Eleventh Schedule"
     ],
-    correctAnswer: "B",
-    explanation: "The Seventh Schedule (Article 246) contains the Union List (List I), State List (List II), and Concurrent List (List III)."
+    "correctAnswer": "B",
+    "explanation": "The Seventh Schedule (Article 246) contains the Union List (List I), State List (List II), and Concurrent List (List III)."
   },
   {
-    id: "c11-pol-7-mcq-3",
-    question: "Which of the following is a classic example of a 'Coming Together' federation?",
-    options: [
+    "id": "c11-pol-7-mcq-3",
+    "question": "Which of the following is a classic example of a 'Coming Together' federation?",
+    "options": [
       "A):   India",
       "B):   Spain",
       "C):   United States of America",
       "D):   Belgium"
     ],
-    correctAnswer: "C",
-    explanation: "The USA is a classical 'Coming Together' federation where independent sovereign colonies voluntarily united to form a central government while retaining equal state powers."
+    "correctAnswer": "C",
+    "explanation": "The USA is a classical 'Coming Together' federation where independent sovereign colonies voluntarily united to form a central government while retaining equal state powers."
   },
   {
-    id: "c11-pol-7-mcq-4",
-    question: "Under which Article of the Constitution are Residuary Powers vested exclusively in the Union Parliament?",
-    options: [
+    "id": "c11-pol-7-mcq-4",
+    "question": "Under which Article of the Constitution are Residuary Powers vested exclusively in the Union Parliament?",
+    "options": [
       "A):   Article 245",
-      "B):   Article 248",
+      "B):   Article 368",
       "C):   Article 256",
-      "D):   Article 368"
+      "D):   Article 248"
     ],
-    correctAnswer: "B",
-    explanation: "Article 248 vests exclusive residuary legislative powers (subjects not listed in any of the three lists of the 7th Schedule) in the Union Parliament."
+    "correctAnswer": "D",
+    "explanation": "Article 248 vests exclusive residuary legislative powers (subjects not listed in any of the three lists of the 7th Schedule) in the Union Parliament."
   },
   {
-    id: "c11-pol-7-mcq-5",
-    question: "Which subject from the following list belongs exclusively to the State List?",
-    options: [
-      "A):   Atomic Energy",
-      "B):   Police and Public Order",
+    "id": "c11-pol-7-mcq-5",
+    "question": "Which subject from the following list belongs exclusively to the State List?",
+    "options": [
+      "A):   Police and Public Order",
+      "B):   Atomic Energy",
       "C):   Foreign Affairs",
       "D):   Banking and Currency"
     ],
-    correctAnswer: "B",
-    explanation: "Police, public order, public health, and prisons belong exclusively to the State List (List II) of the Seventh Schedule."
+    "correctAnswer": "A",
+    "explanation": "Police, public order, public health, and prisons belong exclusively to the State List (List II) of the Seventh Schedule."
   },
   {
-    id: "c11-pol-7-mcq-6",
-    question: "Which constitutional jurist famously described the Indian federal system as 'Quasi-Federal'?",
-    options: [
+    "id": "c11-pol-7-mcq-6",
+    "question": "Which constitutional jurist famously described the Indian federal system as 'Quasi-Federal'?",
+    "options": [
       "A):   Granville Austin",
       "B):   K.C. Wheare",
       "C):   Ivor Jennings",
       "D):   A.V. Dicey"
     ],
-    correctAnswer: "B",
-    explanation: "Prof. K.C. Wheare coined the term 'quasi-federal' for India, characterizing it as a unitary state with subsidiary federal features rather than a federal state with subsidiary unitary features."
+    "correctAnswer": "B",
+    "explanation": "Prof. K.C. Wheare coined the term 'quasi-federal' for India, characterizing it as a unitary state with subsidiary federal features rather than a federal state with subsidiary unitary features."
   },
   {
-    id: "c11-pol-7-mcq-7",
-    question: "Under Article 3 of the Constitution, who possesses the unilateral power to alter the boundaries or name of any State?",
-    options: [
+    "id": "c11-pol-7-mcq-7",
+    "question": "Under Article 3 of the Constitution, who possesses the unilateral power to alter the boundaries or name of any State?",
+    "options": [
       "A):   The State Legislative Assembly concerned",
       "B):   The Supreme Court of India",
       "C):   The Union Parliament",
       "D):   The Inter-State Council"
     ],
-    correctAnswer: "C",
-    explanation: "Article 3 empowers the Union Parliament to form new states, alter areas, boundaries, or names of existing states by a simple majority without the mandatory consent of the state legislature."
+    "correctAnswer": "C",
+    "explanation": "Article 3 empowers the Union Parliament to form new states, alter areas, boundaries, or names of existing states by a simple majority without the mandatory consent of the state legislature."
   },
   {
-    id: "c11-pol-7-mcq-8",
-    question: "Which constitutional body is tasked under Article 280 with recommending the division of tax revenues between the Centre and the States?",
-    options: [
+    "id": "c11-pol-7-mcq-8",
+    "question": "Which constitutional body is tasked under Article 280 with recommending the division of tax revenues between the Centre and the States?",
+    "options": [
       "A):   NITI Aayog",
       "B):   GST Council",
-      "C):   Finance Commission",
-      "D):   Inter-State Council"
+      "C):   Inter-State Council",
+      "D):   Finance Commission"
     ],
-    correctAnswer: "C",
-    explanation: "The Finance Commission is constituted every five years by the President under Article 280 to recommend principles for vertical and horizontal tax devolution."
+    "correctAnswer": "D",
+    "explanation": "The Finance Commission is constituted every five years by the President under Article 280 to recommend principles for vertical and horizontal tax devolution."
   },
-
-  // --- TIER 2: MODERATE / CONCEPTUAL (Q9 to Q15) ---
   {
-    id: "c11-pol-7-mcq-9",
-    question: "Under Article 254, what happens when a State law conflicts with a Central law on a subject in the Concurrent List?",
-    options: [
-      "A):   The State law always prevails within that State",
-      "B):   The Union law prevails and the State law is void to the extent of repugnancy",
+    "id": "c11-pol-7-mcq-9",
+    "question": "Under Article 254, what happens when a State law conflicts with a Central law on a subject in the Concurrent List?",
+    "options": [
+      "A):   The Union law prevails and the State law is void to the extent of repugnancy",
+      "B):   The State law always prevails within that State",
       "C):   Both laws are automatically struck down by the High Court",
       "D):   The Governor decides which law shall take effect"
     ],
-    correctAnswer: "B",
-    explanation: "Article 254 establishes Union supremacy: if a State enactment on the Concurrent List conflicts with a Parliamentary enactment, the Parliamentary law prevails unless the State law received Presidential assent."
+    "correctAnswer": "A",
+    "explanation": "Article 254 establishes Union supremacy: if a State enactment on the Concurrent List conflicts with a Parliamentary enactment, the Parliamentary law prevails unless the State law received Presidential assent."
   },
   {
-    id: "c11-pol-7-mcq-10",
-    question: "Which landmark Supreme Court judgment declared that 'Federalism' is an inviolable Basic Structure of the Indian Constitution?",
-    options: [
+    "id": "c11-pol-7-mcq-10",
+    "question": "Which landmark Supreme Court judgment declared that 'Federalism' is an inviolable Basic Structure of the Indian Constitution?",
+    "options": [
       "A):   Golaknath v. State of Punjab (1967)",
       "B):   S.R. Bommai v. Union of India (1994)",
       "C):   Minerva Mills v. Union of India (1980)",
       "D):   Maneka Gandhi v. Union of India (1978)"
     ],
-    correctAnswer: "B",
-    explanation: "In S.R. Bommai (1994), a 9-judge bench ruled that federalism is part of the Basic Structure of the Constitution and subjected proclamations under Article 356 to strict judicial review."
+    "correctAnswer": "B",
+    "explanation": "In S.R. Bommai (1994), a 9-judge bench ruled that federalism is part of the Basic Structure of the Constitution and subjected proclamations under Article 356 to strict judicial review."
   },
   {
-    id: "c11-pol-7-mcq-11",
-    question: "Under Article 249, the Rajya Sabha can empower Parliament to legislate on a State List subject if it passes a resolution by:",
-    options: [
+    "id": "c11-pol-7-mcq-11",
+    "question": "Under Article 249, the Rajya Sabha can empower Parliament to legislate on a State List subject if it passes a resolution by:",
+    "options": [
       "A):   Simple majority of total membership",
-      "B):   Two-thirds majority of members present and voting",
-      "C):   Absolute majority with approval of half the States",
+      "B):   Absolute majority with approval of half the States",
+      "C):   Two-thirds majority of members present and voting",
       "D):   Three-fourths majority of total strength"
     ],
-    correctAnswer: "B",
-    explanation: "Article 249 requires a resolution supported by at least 2/3rd of the Rajya Sabha members present and voting declaring that legislation on a State subject is necessary in the national interest."
+    "correctAnswer": "C",
+    "explanation": "Article 249 requires a resolution supported by at least 2/3rd of the Rajya Sabha members present and voting declaring that legislation on a State subject is necessary in the national interest."
   },
   {
-    id: "c11-pol-7-mcq-12",
-    question: "Which of the following special articles provides extraordinary protections to the State of Nagaland regarding customary laws and land ownership?",
-    options: [
+    "id": "c11-pol-7-mcq-12",
+    "question": "Which of the following special articles provides extraordinary protections to the State of Nagaland regarding customary laws and land ownership?",
+    "options": [
       "A):   Article 371",
-      "B):   Article 371A",
+      "B):   Article 371-J",
       "C):   Article 371F",
-      "D):   Article 371-J"
+      "D):   Article 371A"
     ],
-    correctAnswer: "B",
-    explanation: "Article 371A explicitly shields Naga customary law, religious practices, and land ownership from any parliamentary act unless approved by the Nagaland Legislative Assembly."
+    "correctAnswer": "D",
+    "explanation": "Article 371A explicitly shields Naga customary law, religious practices, and land ownership from any parliamentary act unless approved by the Nagaland Legislative Assembly."
   },
   {
-    id: "c11-pol-7-mcq-13",
-    question: "Which constitutional amendment transferred five subjects &mdash; Education, Forests, Weights & Measures, Protection of Wild Animals, and Administration of Justice &mdash; from the State List to the Concurrent List?",
-    options: [
-      "A):   24th Constitutional Amendment Act, 1971",
-      "B):   42nd Constitutional Amendment Act, 1976",
+    "id": "c11-pol-7-mcq-13",
+    "question": "Which constitutional amendment transferred five subjects &mdash; Education, Forests, Weights & Measures, Protection of Wild Animals, and Administration of Justice &mdash; from the State List to the Concurrent List?",
+    "options": [
+      "A):   42nd Constitutional Amendment Act, 1976",
+      "B):   24th Constitutional Amendment Act, 1971",
       "C):   44th Constitutional Amendment Act, 1978",
       "D):   73rd Constitutional Amendment Act, 1992"
     ],
-    correctAnswer: "B",
-    explanation: "The 42nd Amendment Act (1976) transferred five vital subjects (including Education and Forests) from the State List to the Concurrent List."
+    "correctAnswer": "A",
+    "explanation": "The 42nd Amendment Act (1976) transferred five vital subjects (including Education and Forests) from the State List to the Concurrent List."
   },
   {
-    id: "c11-pol-7-mcq-14",
-    question: "Under Article 262, what authority does Parliament possess regarding inter-state river water disputes?",
-    options: [
-      "A):   It can create dedicated tribunals and bar the jurisdiction of the Supreme Court",
-      "B):   It can unilaterally nationalize all interstate rivers",
+    "id": "c11-pol-7-mcq-14",
+    "question": "Under Article 262, what authority does Parliament possess regarding inter-state river water disputes?",
+    "options": [
+      "A):   It can unilaterally nationalize all interstate rivers",
+      "B):   It can create dedicated tribunals and bar the jurisdiction of the Supreme Court",
       "C):   It can direct the President to dissolve the downstream state assembly",
       "D):   It can transfer all river basins to the Union List permanently"
     ],
-    correctAnswer: "A",
-    explanation: "Article 262 empowers Parliament to provide for the adjudication of river disputes through specialized tribunals and explicitly exclude the jurisdiction of all courts, including the Supreme Court."
+    "correctAnswer": "B",
+    "explanation": "Article 262 empowers Parliament to provide for the adjudication of river disputes through specialized tribunals and explicitly exclude the jurisdiction of all courts, including the Supreme Court."
   },
   {
-    id: "c11-pol-7-mcq-15",
-    question: "Which committee/commission on Centre-State relations was set up by the Tamil Nadu Government in 1969 to recommend state autonomy?",
-    options: [
+    "id": "c11-pol-7-mcq-15",
+    "question": "Which committee/commission on Centre-State relations was set up by the Tamil Nadu Government in 1969 to recommend state autonomy?",
+    "options": [
       "A):   Sarkaria Commission",
       "B):   Punchhi Commission",
       "C):   Rajamannar Committee",
       "D):   Kothari Commission"
     ],
-    correctAnswer: "C",
-    explanation: "The DMK government in Tamil Nadu set up the P.V. Rajamannar Committee in 1969 to examine Centre-State relations and suggest constitutional amendments for state autonomy."
+    "correctAnswer": "C",
+    "explanation": "The DMK government in Tamil Nadu set up the P.V. Rajamannar Committee in 1969 to examine Centre-State relations and suggest constitutional amendments for state autonomy."
   },
-
-  // --- TIER 3: ADVANCE / ANALYTICAL (Q16 to Q20) ---
   {
-    id: "c11-pol-7-mcq-16",
-    question: "The Sixth Schedule of the Indian Constitution provides for Autonomous District Councils (ADCs) in which four North-Eastern states?",
-    options: [
+    "id": "c11-pol-7-mcq-16",
+    "question": "The Sixth Schedule of the Indian Constitution provides for Autonomous District Councils (ADCs) in which four North-Eastern states?",
+    "options": [
       "A):   Nagaland, Manipur, Mizoram, and Arunachal Pradesh",
-      "B):   Assam, Meghalaya, Tripura, and Mizoram",
+      "B):   Manipur, Meghalaya, Assam, and Nagaland",
       "C):   Sikkim, Assam, Nagaland, and Tripura",
-      "D):   Manipur, Meghalaya, Assam, and Nagaland"
+      "D):   Assam, Meghalaya, Tripura, and Mizoram"
     ],
-    correctAnswer: "B",
-    explanation: "The Sixth Schedule applies specifically to the tribal areas of Assam, Meghalaya, Tripura, and Mizoram (popularly remembered by the acronym AMTM), establishing Autonomous District Councils."
+    "correctAnswer": "D",
+    "explanation": "The Sixth Schedule applies specifically to the tribal areas of Assam, Meghalaya, Tripura, and Mizoram (popularly remembered by the acronym AMTM), establishing Autonomous District Councils."
   },
   {
-    id: "c11-pol-7-mcq-17",
-    question: "In what way does the Indian federal system fundamentally differ from the federal model of the United States of America?",
-    options: [
-      "A):   India possesses a written constitution, whereas the USA does not",
-      "B):   India has a single integrated judiciary and single citizenship, whereas the USA has dual courts and dual citizenship",
+    "id": "c11-pol-7-mcq-17",
+    "question": "In what way does the Indian federal system fundamentally differ from the federal model of the United States of America?",
+    "options": [
+      "A):   India has a single integrated judiciary and single citizenship, whereas the USA has dual courts and dual citizenship",
+      "B):   India possesses a written constitution, whereas the USA does not",
       "C):   In India, states possess residuary powers, whereas in the USA, the federal government does",
       "D):   The USA has a bicameral legislature, whereas the Indian Parliament is unicameral"
     ],
-    correctAnswer: "B",
-    explanation: "In the USA, citizens hold dual citizenship (state and national) and there is a dual court system. India has single uniform citizenship and a single integrated judicial pyramid."
+    "correctAnswer": "A",
+    "explanation": "In the USA, citizens hold dual citizenship (state and national) and there is a dual court system. India has single uniform citizenship and a single integrated judicial pyramid."
   },
   {
-    id: "c11-pol-7-mcq-18",
-    question: "Under Article 253 of the Constitution, what power does Parliament possess regarding the State List?",
-    options: [
+    "id": "c11-pol-7-mcq-18",
+    "question": "Under Article 253 of the Constitution, what power does Parliament possess regarding the State List?",
+    "options": [
       "A):   Parliament cannot touch the State List under any circumstance",
       "B):   Parliament can legislate on any State List matter to implement international treaties or agreements",
       "C):   Parliament requires the unanimous consent of all 28 states before signing a treaty",
       "D):   Parliament can only make advisory recommendations to state assemblies"
     ],
-    correctAnswer: "B",
-    explanation: "Article 253 empowers Parliament to enact any law for the whole or any part of India for implementing any international treaty, agreement, or convention, notwithstanding that the matter falls in the State List."
+    "correctAnswer": "B",
+    "explanation": "Article 253 empowers Parliament to enact any law for the whole or any part of India for implementing any international treaty, agreement, or convention, notwithstanding that the matter falls in the State List."
   },
   {
-    id: "c11-pol-7-mcq-19",
-    question: "Which of the following bodies is the constitutional centerpiece of modern Cooperative Federalism for indirect taxation in India?",
-    options: [
+    "id": "c11-pol-7-mcq-19",
+    "question": "Which of the following bodies is the constitutional centerpiece of modern Cooperative Federalism for indirect taxation in India?",
+    "options": [
       "A):   Planning Commission",
       "B):   NITI Aayog Governing Council",
       "C):   GST Council (Article 279A)",
       "D):   National Development Council"
     ],
-    correctAnswer: "C",
-    explanation: "The GST Council, created under Article 279A by the 101st Amendment (2016), exemplifies cooperative federalism where the Centre and States hold weighted voting rights and decisions require a 75% majority."
+    "correctAnswer": "C",
+    "explanation": "The GST Council, created under Article 279A by the 101st Amendment (2016), exemplifies cooperative federalism where the Centre and States hold weighted voting rights and decisions require a 75% majority."
   },
   {
-    id: "c11-pol-7-mcq-20",
-    question: "The Justice M.M. Punchhi Commission (2007&ndash;2010) recommended which of the following reforms regarding Article 356?",
-    options: [
+    "id": "c11-pol-7-mcq-20",
+    "question": "The Justice M.M. Punchhi Commission (2007&ndash;2010) recommended which of the following reforms regarding Article 356?",
+    "options": [
       "A):   Total abolition of Article 356 from the Constitution",
-      "B):   Incorporation of 'localizing emergency' provisions so that only troubled districts are brought under central rule instead of the entire state",
+      "B):   Making Article 356 non-justiciable under any condition",
       "C):   Transferring the power of Article 356 solely to State Governors",
-      "D):   Making Article 356 non-justiciable under any condition"
+      "D):   Incorporation of 'localizing emergency' provisions so that only troubled districts are brought under central rule instead of the entire state"
     ],
-    correctAnswer: "B",
-    explanation: "The Punchhi Commission recommended 'localized emergency' under Articles 355 and 356, allowing the Centre to intervene in specific troubled areas/districts for up to 3 months without toppling the entire elected state government."
+    "correctAnswer": "D",
+    "explanation": "The Punchhi Commission recommended 'localized emergency' under Articles 355 and 356, allowing the Centre to intervene in specific troubled areas/districts for up to 3 months without toppling the entire elected state government."
   }
 ];

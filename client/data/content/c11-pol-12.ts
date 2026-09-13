@@ -643,249 +643,244 @@ export const c11Pol12HtmlSolutions = `
 /* -------------------------------------------------------------------------- */
 
 export const c11Pol12Mcqs = [
-  // --- TIER 1: EASY / RECALL (Q1 to Q8) ---
   {
-    id: "c11-pol-12-mcq-1",
-    question: "Who authored the famous philosophical essay 'On Liberty' in 1859?",
-    options: [
-      "A):   Jeremy Bentham",
-      "B):   John Stuart Mill",
+    "id": "c11-pol-12-mcq-1",
+    "question": "Who authored the famous philosophical essay 'On Liberty' in 1859?",
+    "options": [
+      "A):   John Stuart Mill",
+      "B):   Jeremy Bentham",
       "C):   John Locke",
       "D):   Thomas Hobbes"
     ],
-    correctAnswer: "B",
-    explanation: "John Stuart Mill authored 'On Liberty' (1859), in which he formulated the celebrated 'Harm Principle' and defended freedom of speech."
+    "correctAnswer": "A",
+    "explanation": "John Stuart Mill authored 'On Liberty' (1859), in which he formulated the celebrated 'Harm Principle' and defended freedom of speech."
   },
   {
-    id: "c11-pol-12-mcq-2",
-    question: "Which political philosopher formulated the distinction between 'Negative Liberty' and 'Positive Liberty' in his 1958 lecture?",
-    options: [
-      "A):   Isaiah Berlin",
-      "B):   Karl Marx",
+    "id": "c11-pol-12-mcq-2",
+    "question": "Which political philosopher formulated the distinction between 'Negative Liberty' and 'Positive Liberty' in his 1958 lecture?",
+    "options": [
+      "A):   Karl Marx",
+      "B):   Isaiah Berlin",
       "C):   Friedrich Hayek",
       "D):   Jean-Jacques Rousseau"
     ],
-    correctAnswer: "A",
-    explanation: "Sir Isaiah Berlin delivered his historic lecture 'Two Concepts of Liberty' in 1958, clearly distinguishing between Negative Liberty ('freedom from') and Positive Liberty ('freedom to')."
+    "correctAnswer": "B",
+    "explanation": "Sir Isaiah Berlin delivered his historic lecture 'Two Concepts of Liberty' in 1958, clearly distinguishing between Negative Liberty ('freedom from') and Positive Liberty ('freedom to')."
   },
   {
-    id: "c11-pol-12-mcq-3",
-    question: "How many years did Nelson Mandela spend imprisoned, mostly on Robben Island, during his struggle against Apartheid?",
-    options: [
+    "id": "c11-pol-12-mcq-3",
+    "question": "How many years did Nelson Mandela spend imprisoned, mostly on Robben Island, during his struggle against Apartheid?",
+    "options": [
       "A):   14 years",
       "B):   21 years",
       "C):   28 years",
       "D):   35 years"
     ],
-    correctAnswer: "C",
-    explanation: "Nelson Mandela spent 28 years in prison (from 1962 to 1990), enduring grueling isolation on Robben Island for the liberation of his people."
+    "correctAnswer": "C",
+    "explanation": "Nelson Mandela spent 28 years in prison (from 1962 to 1990), enduring grueling isolation on Robben Island for the liberation of his people."
   },
   {
-    id: "c11-pol-12-mcq-4",
-    question: "Which Indian leader famously proclaimed: 'Swaraj is my birthright and I shall have it'?",
-    options: [
+    "id": "c11-pol-12-mcq-4",
+    "question": "Which Indian leader famously proclaimed: 'Swaraj is my birthright and I shall have it'?",
+    "options": [
       "A):   Mahatma Gandhi",
-      "B):   Bal Gangadhar Tilak",
+      "B):   Lala Lajpat Rai",
       "C):   Subhas Chandra Bose",
-      "D):   Lala Lajpat Rai"
+      "D):   Bal Gangadhar Tilak"
     ],
-    correctAnswer: "B",
-    explanation: "Lokmanya Bal Gangadhar Tilak made this iconic declaration, making Swaraj the rallying cry of the Indian National Movement."
+    "correctAnswer": "D",
+    "explanation": "Lokmanya Bal Gangadhar Tilak made this iconic declaration, making Swaraj the rallying cry of the Indian National Movement."
   },
   {
-    id: "c11-pol-12-mcq-5",
-    question: "According to J.S. Mill, what are 'Self-Regarding Actions'?",
-    options: [
-      "A):   Actions that physically harm one's neighbors",
-      "B):   Actions whose consequences affect only the individual actor themselves",
+    "id": "c11-pol-12-mcq-5",
+    "question": "According to J.S. Mill, what are 'Self-Regarding Actions'?",
+    "options": [
+      "A):   Actions whose consequences affect only the individual actor themselves",
+      "B):   Actions that physically harm one's neighbors",
       "C):   Actions carried out exclusively by military personnel",
       "D):   Actions that violate national tax laws"
     ],
-    correctAnswer: "B",
-    explanation: "Self-regarding actions are personal choices (dress, diet, private worship, reading) that affect only the individual, over which the state has zero right of interference."
+    "correctAnswer": "A",
+    "explanation": "Self-regarding actions are personal choices (dress, diet, private worship, reading) that affect only the individual, over which the state has zero right of interference."
   },
   {
-    id: "c11-pol-12-mcq-6",
-    question: "Under the Indian Constitution, which Article guarantees the Fundamental Right to Freedom of Speech and Expression?",
-    options: [
+    "id": "c11-pol-12-mcq-6",
+    "question": "Under the Indian Constitution, which Article guarantees the Fundamental Right to Freedom of Speech and Expression?",
+    "options": [
       "A):   Article 14",
       "B):   Article 19(1)(a)",
       "C):   Article 21",
       "D):   Article 25"
     ],
-    correctAnswer: "B",
-    explanation: "Article 19(1)(a) guarantees to all citizens the fundamental right to freedom of speech and expression."
+    "correctAnswer": "B",
+    "explanation": "Article 19(1)(a) guarantees to all citizens the fundamental right to freedom of speech and expression."
   },
   {
-    id: "c11-pol-12-mcq-7",
-    question: "What is the primary concern of 'Negative Liberty'?",
-    options: [
+    "id": "c11-pol-12-mcq-7",
+    "question": "What is the primary concern of 'Negative Liberty'?",
+    "options": [
       "A):   Providing free meals and state employment to everyone",
-      "B):   Defining an area of non-interference free from external human coercion",
-      "C):   Abolishing all private property",
+      "B):   Abolishing all private property",
+      "C):   Defining an area of non-interference free from external human coercion",
       "D):   Enforcing compulsory military service"
     ],
-    correctAnswer: "B",
-    explanation: "Negative liberty is concerned with the area within which an individual can act without being obstructed or coerced by the State or other people ('freedom from')."
+    "correctAnswer": "C",
+    "explanation": "Negative liberty is concerned with the area within which an individual can act without being obstructed or coerced by the State or other people ('freedom from')."
   },
   {
-    id: "c11-pol-12-mcq-8",
-    question: "Aung San Suu Kyi's concept of freedom is centrally expounded in her book titled:",
-    options: [
+    "id": "c11-pol-12-mcq-8",
+    "question": "Aung San Suu Kyi's concept of freedom is centrally expounded in her book titled:",
+    "options": [
       "A):   The Rebel",
-      "B):   Freedom from Fear",
+      "B):   The Road to Serfdom",
       "C):   Open Society",
-      "D):   The Road to Serfdom"
+      "D):   Freedom from Fear"
     ],
-    correctAnswer: "B",
-    explanation: "Aung San Suu Kyi wrote 'Freedom from Fear', arguing that internal fear of persecution is the psychological foundation of tyrannical power."
+    "correctAnswer": "D",
+    "explanation": "Aung San Suu Kyi wrote 'Freedom from Fear', arguing that internal fear of persecution is the psychological foundation of tyrannical power."
   },
-
-  // --- TIER 2: MODERATE / CONCEPTUAL (Q9 to Q15) ---
   {
-    id: "c11-pol-12-mcq-9",
-    question: "Under J.S. Mill's Harm Principle, when is the State legitimately justified in coercing an individual?",
-    options: [
-      "A):   Whenever the individual makes an unconventional moral lifestyle choice",
-      "B):   Only to prevent serious, demonstrable harm to other members of society",
+    "id": "c11-pol-12-mcq-9",
+    "question": "Under J.S. Mill's Harm Principle, when is the State legitimately justified in coercing an individual?",
+    "options": [
+      "A):   Only to prevent serious, demonstrable harm to other members of society",
+      "B):   Whenever the individual makes an unconventional moral lifestyle choice",
       "C):   Whenever the majority of citizens vote against that person's religion",
       "D):   To force an adult citizen to exercise daily for their own physical health"
     ],
-    correctAnswer: "B",
-    explanation: "Mill stated that the sole purpose for which state power can be rightfully exercised over an individual against their will is to prevent harm to others."
+    "correctAnswer": "A",
+    "explanation": "Mill stated that the sole purpose for which state power can be rightfully exercised over an individual against their will is to prevent harm to others."
   },
   {
-    id: "c11-pol-12-mcq-10",
-    question: "Which of the following is an example of an 'Other-Regarding Action'?",
-    options: [
+    "id": "c11-pol-12-mcq-10",
+    "question": "Which of the following is an example of an 'Other-Regarding Action'?",
+    "options": [
       "A):   Choosing to wear traditional clothes at home",
       "B):   Drinking alcohol at home and then driving recklessly on a public highway",
       "C):   Reading a banned philosophy book privately in one's bedroom",
       "D):   Choosing to eat vegetarian food"
     ],
-    correctAnswer: "B",
-    explanation: "Reckless driving endangers the lives of innocent pedestrians and other motorists, directly causing other-regarding harm that justifies police intervention."
+    "correctAnswer": "B",
+    "explanation": "Reckless driving endangers the lives of innocent pedestrians and other motorists, directly causing other-regarding harm that justifies police intervention."
   },
   {
-    id: "c11-pol-12-mcq-11",
-    question: "How does 'Positive Liberty' fundamentally differ from 'Negative Liberty'?",
-    options: [
+    "id": "c11-pol-12-mcq-11",
+    "question": "How does 'Positive Liberty' fundamentally differ from 'Negative Liberty'?",
+    "options": [
       "A):   Positive liberty rejects democracy completely",
-      "B):   Positive liberty focuses on providing the real material capabilities, education, and social conditions for self-realization ('freedom to')",
-      "C):   Positive liberty exists only in ancient Greece",
+      "B):   Positive liberty exists only in ancient Greece",
+      "C):   Positive liberty focuses on providing the real material capabilities, education, and social conditions for self-realization ('freedom to')",
       "D):   Positive liberty means freedom to commit any crime"
     ],
-    correctAnswer: "B",
-    explanation: "Positive liberty focuses on enabling conditions &mdash; the real ability, education, and resources a person needs to become master of their life and achieve self-development."
+    "correctAnswer": "C",
+    "explanation": "Positive liberty focuses on enabling conditions &mdash; the real ability, education, and resources a person needs to become master of their life and achieve self-development."
   },
   {
-    id: "c11-pol-12-mcq-12",
-    question: "Why did J.S. Mill argue that even false opinions should not be suppressed by society?",
-    options: [
+    "id": "c11-pol-12-mcq-12",
+    "question": "Why did J.S. Mill argue that even false opinions should not be suppressed by society?",
+    "options": [
       "A):   Because all lies are actually true",
-      "B):   Because truth emerges only through open conflict with error, and unexamined truths turn into dead dogma",
+      "B):   Because he wanted to abolish all courts",
       "C):   Because the government has no money to print books",
-      "D):   Because he wanted to abolish all courts"
+      "D):   Because truth emerges only through open conflict with error, and unexamined truths turn into dead dogma"
     ],
-    correctAnswer: "B",
-    explanation: "Mill argued that truth sharpens its rational basis when challenged by error; without dissent, accepted truths become lifeless dogmas accepted on blind faith."
+    "correctAnswer": "D",
+    "explanation": "Mill argued that truth sharpens its rational basis when challenged by error; without dissent, accepted truths become lifeless dogmas accepted on blind faith."
   },
   {
-    id: "c11-pol-12-mcq-13",
-    question: "Under Article 19(2) of the Indian Constitution, restrictions on speech are valid ONLY IF they are:",
-    options: [
-      "A):   Approved personally by the Prime Minister without judicial scrutiny",
-      "B):   Reasonable and strictly grounded in the eight constitutional grounds specified in the Article",
+    "id": "c11-pol-12-mcq-13",
+    "question": "Under Article 19(2) of the Indian Constitution, restrictions on speech are valid ONLY IF they are:",
+    "options": [
+      "A):   Reasonable and strictly grounded in the eight constitutional grounds specified in the Article",
+      "B):   Approved personally by the Prime Minister without judicial scrutiny",
       "C):   Passed by a local police officer orally",
       "D):   Demanded by at least ten thousand protesters"
     ],
-    correctAnswer: "B",
-    explanation: "Restrictions on free speech must be 'reasonable' (proportionate, non-arbitrary, and justifiable before a court) and fall strictly within the 8 grounds enumerated in Article 19(2)."
+    "correctAnswer": "A",
+    "explanation": "Restrictions on free speech must be 'reasonable' (proportionate, non-arbitrary, and justifiable before a court) and fall strictly within the 8 grounds enumerated in Article 19(2)."
   },
   {
-    id: "c11-pol-12-mcq-14",
-    question: "Mahatma Gandhi's conception of 'Swaraj' emphasized which dimension beyond political independence?",
-    options: [
+    "id": "c11-pol-12-mcq-14",
+    "question": "Mahatma Gandhi's conception of 'Swaraj' emphasized which dimension beyond political independence?",
+    "options": [
       "A):   Building atomic weapons",
       "B):   Moral self-mastery, ethical living, and decentralization of power",
       "C):   Conquering neighboring territories",
       "D):   Adopting Western industrial consumerism"
     ],
-    correctAnswer: "B",
-    explanation: "In 'Hind Swaraj', Gandhi explained that Swaraj means self-rule &mdash; mastery over one's senses and passions, moral integrity, and village self-reliance."
+    "correctAnswer": "B",
+    "explanation": "In 'Hind Swaraj', Gandhi explained that Swaraj means self-rule &mdash; mastery over one's senses and passions, moral integrity, and village self-reliance."
   },
   {
-    id: "c11-pol-12-mcq-15",
-    question: "Nobel laureate Amartya Sen's 'Capabilities Approach' argues that real freedom requires:",
-    options: [
+    "id": "c11-pol-12-mcq-15",
+    "question": "Nobel laureate Amartya Sen's 'Capabilities Approach' argues that real freedom requires:",
+    "options": [
       "A):   The complete absence of all government laws",
-      "B):   Substantive opportunities, health, literacy, and resources to achieve what one has reason to value",
-      "C):   Giving all power to corporations",
+      "B):   Giving all power to corporations",
+      "C):   Substantive opportunities, health, literacy, and resources to achieve what one has reason to value",
       "D):   Abolishing all taxes"
     ],
-    correctAnswer: "B",
-    explanation: "Amartya Sen argues that substantive freedom depends on an individual's real 'capabilities' &mdash; having health, nutrition, and education to lead a flourishing life."
+    "correctAnswer": "C",
+    "explanation": "Amartya Sen argues that substantive freedom depends on an individual's real 'capabilities' &mdash; having health, nutrition, and education to lead a flourishing life."
   },
-
-  // --- TIER 3: ADVANCE / ANALYTICAL (Q16 to Q20) ---
   {
-    id: "c11-pol-12-mcq-16",
-    question: "In liberal political theory, what is the crucial difference between causing 'Harm' and causing 'Mere Offence'?",
-    options: [
+    "id": "c11-pol-12-mcq-16",
+    "question": "In liberal political theory, what is the crucial difference between causing 'Harm' and causing 'Mere Offence'?",
+    "options": [
       "A):   There is no difference; causing offence is always treated as murder",
-      "B):   'Harm' involves tangible, demonstrable injury to person or property justifying legal coercion, whereas 'offence' involves subjective hurt feelings which society must tolerate",
+      "B):   'Harm' applies only to corporations, while 'offence' applies to animals",
       "C):   Only religious priests can distinguish between them",
-      "D):   'Harm' applies only to corporations, while 'offence' applies to animals"
+      "D):   'Harm' involves tangible, demonstrable injury to person or property justifying legal coercion, whereas 'offence' involves subjective hurt feelings which society must tolerate"
     ],
-    correctAnswer: "B",
-    explanation: "Harm involves tangible injury (assault, fraud, pollution) warranting legal punishment. Mere offence involves subjective dislike or hurt sensibilities, which free societies must tolerate."
+    "correctAnswer": "D",
+    "explanation": "Harm involves tangible injury (assault, fraud, pollution) warranting legal punishment. Mere offence involves subjective dislike or hurt sensibilities, which free societies must tolerate."
   },
   {
-    id: "c11-pol-12-mcq-17",
-    question: "What danger does political theory associate with the misuse of 'Positive Liberty'?",
-    options: [
+    "id": "c11-pol-12-mcq-17",
+    "question": "What danger does political theory associate with the misuse of 'Positive Liberty'?",
+    "options": [
       "A):   It can lead to authoritarian regimes claiming to know the 'real' or 'higher' interest of citizens better than citizens themselves",
       "B):   It creates too many universities",
       "C):   It reduces government spending on healthcare",
       "D):   It eliminates all political parties"
     ],
-    correctAnswer: "A",
-    explanation: "Isaiah Berlin warned that positive liberty can be twisted by totalitarian dictators who claim to force people to be free ('forcing them to realize their higher rational self')."
+    "correctAnswer": "A",
+    "explanation": "Isaiah Berlin warned that positive liberty can be twisted by totalitarian dictators who claim to force people to be free ('forcing them to realize their higher rational self')."
   },
   {
-    id: "c11-pol-12-mcq-18",
-    question: "In the landmark case S. Rangarajan v. P. Jagjivan Ram (1989), what vital standard did the Supreme Court establish regarding censorship?",
-    options: [
+    "id": "c11-pol-12-mcq-18",
+    "question": "In the landmark case S. Rangarajan v. P. Jagjivan Ram (1989), what vital standard did the Supreme Court establish regarding censorship?",
+    "options": [
       "A):   Films must be banned whenever any religious group threatens protests",
       "B):   Freedom of expression cannot be suppressed unless the speech is akin to 'a spark in a powder keg', posing proximate and imminent danger",
       "C):   All political criticism of the ruling party must be banned",
       "D):   Censorship powers belong solely to the military"
     ],
-    correctAnswer: "B",
-    explanation: "The Supreme Court ruled that speech cannot be throttled by the state merely due to hostile protests; the threat must be proximate, direct, and like a spark in a powder keg."
+    "correctAnswer": "B",
+    "explanation": "The Supreme Court ruled that speech cannot be throttled by the state merely due to hostile protests; the threat must be proximate, direct, and like a spark in a powder keg."
   },
   {
-    id: "c11-pol-12-mcq-19",
-    question: "Why did 17th-century philosopher Thomas Hobbes believe that absolute unconstrained liberty was disastrous?",
-    options: [
+    "id": "c11-pol-12-mcq-19",
+    "question": "Why did 17th-century philosopher Thomas Hobbes believe that absolute unconstrained liberty was disastrous?",
+    "options": [
       "A):   Because it makes food taste bad",
-      "B):   Because in a state of nature without sovereign laws, human life becomes 'solitary, poor, nasty, brutish, and short' due to perpetual war of all against all",
-      "C):   Because it leads to too much wealth",
+      "B):   Because it leads to too much wealth",
+      "C):   Because in a state of nature without sovereign laws, human life becomes 'solitary, poor, nasty, brutish, and short' due to perpetual war of all against all",
       "D):   Because he preferred democracy over all other systems"
     ],
-    correctAnswer: "B",
-    explanation: "In 'Leviathan' (1651), Hobbes famously warned that unrestricted natural liberty leads to a perpetual war of all against all, making legal constraints necessary for peace."
+    "correctAnswer": "C",
+    "explanation": "In 'Leviathan' (1651), Hobbes famously warned that unrestricted natural liberty leads to a perpetual war of all against all, making legal constraints necessary for peace."
   },
   {
-    id: "c11-pol-12-mcq-20",
-    question: "Which of the following scenarios represents a violation of 'Negative Liberty'?",
-    options: [
+    "id": "c11-pol-12-mcq-20",
+    "question": "Which of the following scenarios represents a violation of 'Negative Liberty'?",
+    "options": [
       "A):   A poor person being unable to afford a ticket to a private concert",
-      "B):   The police illegally detaining a peaceful anti-corruption protester without a warrant",
+      "B):   A company choosing not to hire an unqualified applicant",
       "C):   A student failing a competitive examination due to lack of preparation",
-      "D):   A company choosing not to hire an unqualified applicant"
+      "D):   The police illegally detaining a peaceful anti-corruption protester without a warrant"
     ],
-    correctAnswer: "B",
-    explanation: "Negative liberty is directly violated when an individual is physically coerced, detained, or obstructed from acting by the coercive power of the State or other persons."
+    "correctAnswer": "D",
+    "explanation": "Negative liberty is directly violated when an individual is physically coerced, detained, or obstructed from acting by the coercive power of the State or other persons."
   }
 ];

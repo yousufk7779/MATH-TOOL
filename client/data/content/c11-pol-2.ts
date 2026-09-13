@@ -582,250 +582,245 @@ export interface MCQ {
   explanation: string;
 }
 
-export const c11Pol2Mcqs: MCQ[] = [
-  // Tier 1: Direct Recall (Easy)
+export const c11Pol2Mcqs = [
   {
-    id: "c11-pol-2-mcq-1",
-    question: "In which Part of the Indian Constitution are Fundamental Rights incorporated?",
-    options: [
-      "A):   Part II",
-      "B):   Part III",
+    "id": "c11-pol-2-mcq-1",
+    "question": "In which Part of the Indian Constitution are Fundamental Rights incorporated?",
+    "options": [
+      "A):   Part III",
+      "B):   Part II",
       "C):   Part IV",
-      "D):   Part IV-A",
+      "D):   Part IV-A"
     ],
-    correctAnswer: "b",
-    explanation: "Fundamental Rights are enshrined in Part III of the Constitution (Articles 12 to 35), often referred to as the 'Magna Carta of India'.",
+    "correctAnswer": "A",
+    "explanation": "Fundamental Rights are enshrined in Part III of the Constitution (Articles 12 to 35), often referred to as the 'Magna Carta of India'."
   },
   {
-    id: "c11-pol-2-mcq-2",
-    question: "Which Constitutional Amendment deleted the Right to Property from the list of Fundamental Rights?",
-    options: [
+    "id": "c11-pol-2-mcq-2",
+    "question": "Which Constitutional Amendment deleted the Right to Property from the list of Fundamental Rights?",
+    "options": [
       "A):   42nd Amendment Act (1976)",
       "B):   44th Amendment Act (1978)",
       "C):   86th Amendment Act (2002)",
-      "D):   73rd Amendment Act (1992)",
+      "D):   73rd Amendment Act (1992)"
     ],
-    correctAnswer: "b",
-    explanation: "The 44th Constitutional Amendment Act of 1978 deleted the Right to Property from Part III and placed it as an ordinary legal right under Article 300A in Part XII.",
+    "correctAnswer": "B",
+    "explanation": "The 44th Constitutional Amendment Act of 1978 deleted the Right to Property from Part III and placed it as an ordinary legal right under Article 300A in Part XII."
   },
   {
-    id: "c11-pol-2-mcq-3",
-    question: "Which of the following Articles of the Constitution abolishes 'Untouchability' and forbids its practice in all forms?",
-    options: [
+    "id": "c11-pol-2-mcq-3",
+    "question": "Which of the following Articles of the Constitution abolishes 'Untouchability' and forbids its practice in all forms?",
+    "options": [
       "A):   Article 14",
       "B):   Article 15",
       "C):   Article 17",
-      "D):   Article 18",
+      "D):   Article 18"
     ],
-    correctAnswer: "c",
-    explanation: "Article 17 of the Indian Constitution specifically abolishes 'Untouchability' and declares its practice in any form as a legally punishable offence.",
+    "correctAnswer": "C",
+    "explanation": "Article 17 of the Indian Constitution specifically abolishes 'Untouchability' and declares its practice in any form as a legally punishable offence."
   },
   {
-    id: "c11-pol-2-mcq-4",
-    question: "Which Article of the Constitution was hailed by Dr. B.R. Ambedkar as the 'heart and soul of the Constitution'?",
-    options: [
+    "id": "c11-pol-2-mcq-4",
+    "question": "Which Article of the Constitution was hailed by Dr. B.R. Ambedkar as the 'heart and soul of the Constitution'?",
+    "options": [
       "A):   Article 19",
       "B):   Article 21",
-      "C):   Article 32",
-      "D):   Article 14",
+      "C):   Article 14",
+      "D):   Article 32"
     ],
-    correctAnswer: "c",
-    explanation: "Article 32 (Right to Constitutional Remedies) was termed the 'heart and soul' by Dr. Ambedkar because it enables citizens to petition the Supreme Court directly to enforce their rights.",
+    "correctAnswer": "D",
+    "explanation": "Article 32 (Right to Constitutional Remedies) was termed the 'heart and soul' by Dr. Ambedkar because it enables citizens to petition the Supreme Court directly to enforce their rights."
   },
   {
-    id: "c11-pol-2-mcq-5",
-    question: "Which prerogative writ literally translates from Latin as 'to have the body'?",
-    options: [
-      "A):   Mandamus",
-      "B):   Habeas Corpus",
+    "id": "c11-pol-2-mcq-5",
+    "question": "Which prerogative writ literally translates from Latin as 'to have the body'?",
+    "options": [
+      "A):   Habeas Corpus",
+      "B):   Mandamus",
       "C):   Certiorari",
-      "D):   Quo-Warranto",
+      "D):   Quo-Warranto"
     ],
-    correctAnswer: "b",
-    explanation: "Habeas Corpus literally means 'to have the body'. It is issued to produce an illegally detained person before the court and set them free if detention lacks lawful justification.",
+    "correctAnswer": "A",
+    "explanation": "Habeas Corpus literally means 'to have the body'. It is issued to produce an illegally detained person before the court and set them free if detention lacks lawful justification."
   },
   {
-    id: "c11-pol-2-mcq-6",
-    question: "Under which Article did the 86th Constitutional Amendment Act, 2002 insert the Fundamental Right to Education for children aged 6 to 14?",
-    options: [
+    "id": "c11-pol-2-mcq-6",
+    "question": "Under which Article did the 86th Constitutional Amendment Act, 2002 insert the Fundamental Right to Education for children aged 6 to 14?",
+    "options": [
       "A):   Article 19A",
       "B):   Article 21A",
       "C):   Article 45",
-      "D):   Article 51A",
+      "D):   Article 51A"
     ],
-    correctAnswer: "b",
-    explanation: "Article 21A was inserted by the 86th Amendment in 2002, making free and compulsory education for all children between 6 and 14 years a Fundamental Right.",
+    "correctAnswer": "B",
+    "explanation": "Article 21A was inserted by the 86th Amendment in 2002, making free and compulsory education for all children between 6 and 14 years a Fundamental Right."
   },
   {
-    id: "c11-pol-2-mcq-7",
-    question: "Fundamental Duties were added to the Constitution on the recommendation of which committee?",
-    options: [
+    "id": "c11-pol-2-mcq-7",
+    "question": "Fundamental Duties were added to the Constitution on the recommendation of which committee?",
+    "options": [
       "A):   Sarkaria Commission",
-      "B):   Swaran Singh Committee",
-      "C):   Kothari Commission",
-      "D):   Verma Committee",
+      "B):   Kothari Commission",
+      "C):   Swaran Singh Committee",
+      "D):   Verma Committee"
     ],
-    correctAnswer: "b",
-    explanation: "The Swaran Singh Committee recommended incorporating Fundamental Duties in 1976, which resulted in the enactment of the 42nd Constitutional Amendment Act.",
+    "correctAnswer": "C",
+    "explanation": "The Swaran Singh Committee recommended incorporating Fundamental Duties in 1976, which resulted in the enactment of the 42nd Constitutional Amendment Act."
   },
   {
-    id: "c11-pol-2-mcq-8",
-    question: "How many Fundamental Duties are currently listed under Article 51A of the Indian Constitution?",
-    options: [
+    "id": "c11-pol-2-mcq-8",
+    "question": "How many Fundamental Duties are currently listed under Article 51A of the Indian Constitution?",
+    "options": [
       "A):   10 Duties",
-      "B):   11 Duties",
+      "B):   9 Duties",
       "C):   12 Duties",
-      "D):   9 Duties",
+      "D):   11 Duties"
     ],
-    correctAnswer: "b",
-    explanation: "Originally, 10 duties were added by the 42nd Amendment in 1976. The 11th duty (duty of parents to provide educational opportunities to children aged 6–14) was added in 2002.",
+    "correctAnswer": "D",
+    "explanation": "Originally, 10 duties were added by the 42nd Amendment in 1976. The 11th duty (duty of parents to provide educational opportunities to children aged 6–14) was added in 2002."
   },
-
-  // Tier 2: Conceptual & Comparative (Moderate)
   {
-    id: "c11-pol-2-mcq-9",
-    question: "Which of the following is an accurate distinction between an ordinary legal right and a Fundamental Right?",
-    options: [
+    "id": "c11-pol-2-mcq-9",
+    "question": "Which of the following is an accurate distinction between an ordinary legal right and a Fundamental Right?",
+    "options": [
       "A):   Ordinary rights can be altered by simple legislative statute, while Fundamental Rights are protected by the Constitution and require special amendment",
       "B):   Ordinary rights are protected by the Supreme Court directly under Article 32",
       "C):   Fundamental Rights can be abolished anytime by the Prime Minister",
-      "D):   Ordinary rights apply only to foreigners while Fundamental Rights apply only to citizens",
+      "D):   Ordinary rights apply only to foreigners while Fundamental Rights apply only to citizens"
     ],
-    correctAnswer: "a",
-    explanation: "Ordinary legal rights can be amended or repealed through ordinary legislation passed by a simple majority, whereas Fundamental Rights can only be amended under Article 368 subject to the Basic Structure.",
+    "correctAnswer": "A",
+    "explanation": "Ordinary legal rights can be amended or repealed through ordinary legislation passed by a simple majority, whereas Fundamental Rights can only be amended under Article 368 subject to the Basic Structure."
   },
   {
-    id: "c11-pol-2-mcq-10",
-    question: "Which landmark judgment of the Supreme Court introduced the test of 'just, fair, and reasonable' procedure into Article 21, overruling the restrictive Gopalan doctrine?",
-    options: [
+    "id": "c11-pol-2-mcq-10",
+    "question": "Which landmark judgment of the Supreme Court introduced the test of 'just, fair, and reasonable' procedure into Article 21, overruling the restrictive Gopalan doctrine?",
+    "options": [
       "A):   Shankari Prasad Case (1951)",
-      "B):   Golaknath Case (1967)",
-      "C):   Maneka Gandhi v. Union of India (1978)",
-      "D):   Minerva Mills Case (1980)",
+      "B):   Maneka Gandhi v. Union of India (1978)",
+      "C):   Golaknath Case (1967)",
+      "D):   Minerva Mills Case (1980)"
     ],
-    correctAnswer: "c",
-    explanation: "In Maneka Gandhi v. Union of India (1978), the Supreme Court held that the 'procedure established by law' under Article 21 must be just, fair, and reasonable, embedding substantive due process into Indian law.",
+    "correctAnswer": "B",
+    "explanation": "In Maneka Gandhi v. Union of India (1978), the Supreme Court held that the 'procedure established by law' under Article 21 must be just, fair, and reasonable, embedding substantive due process into Indian law."
   },
   {
-    id: "c11-pol-2-mcq-11",
-    question: "The writ of 'Quo-Warranto' is issued by constitutional courts for which of the following purposes?",
-    options: [
+    "id": "c11-pol-2-mcq-11",
+    "question": "The writ of 'Quo-Warranto' is issued by constitutional courts for which of the following purposes?",
+    "options": [
       "A):   To release a person from unlawful police detention",
       "B):   To compel a public official to perform a mandatory duty",
       "C):   To prevent a person from unlawfully holding or usurping a public office",
-      "D):   To quash an order passed by a lower court without jurisdiction",
+      "D):   To quash an order passed by a lower court without jurisdiction"
     ],
-    correctAnswer: "c",
-    explanation: "Quo-Warranto literally means 'by what authority'. It is issued to prevent an individual from holding a public office to which they are not legally entitled.",
+    "correctAnswer": "C",
+    "explanation": "Quo-Warranto literally means 'by what authority'. It is issued to prevent an individual from holding a public office to which they are not legally entitled."
   },
   {
-    id: "c11-pol-2-mcq-12",
-    question: "What is the maximum initial period for which a person can be kept under Preventive Detention without the approval of an Advisory Board?",
-    options: [
+    "id": "c11-pol-2-mcq-12",
+    "question": "What is the maximum initial period for which a person can be kept under Preventive Detention without the approval of an Advisory Board?",
+    "options": [
       "A):   1 month",
-      "B):   3 months",
+      "B):   1 year",
       "C):   6 months",
-      "D):   1 year",
+      "D):   3 months"
     ],
-    correctAnswer: "b",
-    explanation: "Under Article 22, a person cannot be detained under preventive detention for more than 3 months unless an independent Advisory Board approves the extension.",
+    "correctAnswer": "D",
+    "explanation": "Under Article 22, a person cannot be detained under preventive detention for more than 3 months unless an independent Advisory Board approves the extension."
   },
   {
-    id: "c11-pol-2-mcq-13",
-    question: "Which of the following constitutional provisions prohibits human trafficking and forced unpaid labor ('begar')?",
-    options: [
+    "id": "c11-pol-2-mcq-13",
+    "question": "Which of the following constitutional provisions prohibits human trafficking and forced unpaid labor ('begar')?",
+    "options": [
       "A):   Article 23",
       "B):   Article 24",
       "C):   Article 21",
-      "D):   Article 25",
+      "D):   Article 25"
     ],
-    correctAnswer: "a",
-    explanation: "Article 23 prohibits traffic in human beings, begar, and other similar forms of forced labor, making any contravention punishable by law.",
+    "correctAnswer": "A",
+    "explanation": "Article 23 prohibits traffic in human beings, begar, and other similar forms of forced labor, making any contravention punishable by law."
   },
   {
-    id: "c11-pol-2-mcq-14",
-    question: "Under Article 30 of the Constitution, which of the following categories of minorities are granted the right to establish and administer educational institutions?",
-    options: [
+    "id": "c11-pol-2-mcq-14",
+    "question": "Under Article 30 of the Constitution, which of the following categories of minorities are granted the right to establish and administer educational institutions?",
+    "options": [
       "A):   Linguistic and Caste minorities",
       "B):   Religious and Linguistic minorities",
       "C):   Regional and Cultural minorities",
-      "D):   Economic and Social minorities",
+      "D):   Economic and Social minorities"
     ],
-    correctAnswer: "b",
-    explanation: "Article 30 explicitly mentions two categories of minorities: Religious minorities and Linguistic minorities.",
+    "correctAnswer": "B",
+    "explanation": "Article 30 explicitly mentions two categories of minorities: Religious minorities and Linguistic minorities."
   },
   {
-    id: "c11-pol-2-mcq-15",
-    question: "Which Supreme Court decision unanimously declared the 'Right to Privacy' as an intrinsic part of the Right to Life under Article 21?",
-    options: [
+    "id": "c11-pol-2-mcq-15",
+    "question": "Which Supreme Court decision unanimously declared the 'Right to Privacy' as an intrinsic part of the Right to Life under Article 21?",
+    "options": [
       "A):   Navtej Singh Johar Case (2018)",
-      "B):   Justice K.S. Puttaswamy v. Union of India (2017)",
-      "C):   Shayara Bano Case (2017)",
-      "D):   Indra Sawhney Case (1992)",
+      "B):   Shayara Bano Case (2017)",
+      "C):   Justice K.S. Puttaswamy v. Union of India (2017)",
+      "D):   Indra Sawhney Case (1992)"
     ],
-    correctAnswer: "b",
-    explanation: "In Justice K.S. Puttaswamy v. Union of India (2017), a 9-judge constitutional bench unanimously held that privacy is a protected Fundamental Right under Article 21.",
+    "correctAnswer": "C",
+    "explanation": "In Justice K.S. Puttaswamy v. Union of India (2017), a 9-judge constitutional bench unanimously held that privacy is a protected Fundamental Right under Article 21."
   },
-
-  // Tier 3: Analytical & Multi-Statement (Advance)
   {
-    id: "c11-pol-2-mcq-16",
-    question: "Consider the following statements regarding Public Interest Litigation (PIL) in India:\n1. It relaxed the traditional rule of 'locus standi'.\n2. It allows any public-spirited individual or organization to file petitions for disadvantaged groups.\n3. The Supreme Court cannot accept letters or postcards as PIL petitions.\nWhich of the statements given above are CORRECT?",
-    options: [
-      "A):   1 and 2 only",
+    "id": "c11-pol-2-mcq-16",
+    "question": "Consider the following statements regarding Public Interest Litigation (PIL) in India:\n1. It relaxed the traditional rule of 'locus standi'.\n2. It allows any public-spirited individual or organization to file petitions for disadvantaged groups.\n3. The Supreme Court cannot accept letters or postcards as PIL petitions.\nWhich of the statements given above are CORRECT?",
+    "options": [
+      "A):   1, 2, and 3",
       "B):   2 and 3 only",
       "C):   1 and 3 only",
-      "D):   1, 2, and 3",
+      "D):   1 and 2 only"
     ],
-    correctAnswer: "a",
-    explanation: "Statements 1 and 2 are correct. Statement 3 is incorrect because under epistolary jurisdiction, the constitutional courts have frequently accepted letters and postcards as valid PILs.",
+    "correctAnswer": "D",
+    "explanation": "Statements 1 and 2 are correct. Statement 3 is incorrect because under epistolary jurisdiction, the constitutional courts have frequently accepted letters and postcards as valid PILs."
   },
   {
-    id: "c11-pol-2-mcq-17",
-    question: "The 'Golden Triangle' of the Indian Constitution refers to the mutual harmonious relationship between which three Articles?",
-    options: [
-      "A):   Articles 12, 13, and 14",
-      "B):   Articles 14, 19, and 21",
+    "id": "c11-pol-2-mcq-17",
+    "question": "The 'Golden Triangle' of the Indian Constitution refers to the mutual harmonious relationship between which three Articles?",
+    "options": [
+      "A):   Articles 14, 19, and 21",
+      "B):   Articles 12, 13, and 14",
       "C):   Articles 19, 20, and 21",
-      "D):   Articles 25, 26, and 27",
+      "D):   Articles 25, 26, and 27"
     ],
-    correctAnswer: "b",
-    explanation: "Articles 14 (Equality), 19 (Six Freedoms), and 21 (Life and Liberty) are known as the 'Golden Triangle'. A law restricting freedom must satisfy all three tests simultaneously.",
+    "correctAnswer": "A",
+    "explanation": "Articles 14 (Equality), 19 (Six Freedoms), and 21 (Life and Liberty) are known as the 'Golden Triangle'. A law restricting freedom must satisfy all three tests simultaneously."
   },
   {
-    id: "c11-pol-2-mcq-18",
-    question: "Which of the following is NOT a Fundamental Duty listed in Article 51A?",
-    options: [
+    "id": "c11-pol-2-mcq-18",
+    "question": "Which of the following is NOT a Fundamental Duty listed in Article 51A?",
+    "options": [
       "A):   To develop scientific temper, humanism, and spirit of inquiry",
       "B):   To vote in general elections without taking any money or gifts",
       "C):   To protect and improve the natural environment, including forests and rivers",
-      "D):   To renounce practices derogatory to the dignity of women",
+      "D):   To renounce practices derogatory to the dignity of women"
     ],
-    correctAnswer: "b",
-    explanation: "Voting in general elections is a civic responsibility and democratic right, but it was not included as a formal Fundamental Duty in Article 51A.",
+    "correctAnswer": "B",
+    "explanation": "Voting in general elections is a civic responsibility and democratic right, but it was not included as a formal Fundamental Duty in Article 51A."
   },
   {
-    id: "c11-pol-2-mcq-19",
-    question: "Match List-I (Prerogative Writ) with List-II (Literal Meaning / Judicial Objective):\n(p) Mandamus &mdash; (1) Quashing an order passed without jurisdiction\n(q) Certiorari &mdash; (2) Command to perform an obligatory public duty\n(r) Prohibition &mdash; (3) Restraining a lower court from exceeding jurisdiction\n(s) Habeas Corpus &mdash; (4) Securing release from unlawful confinement\nChoose the correct code:",
-    options: [
-      "A):   p-2, q-1, r-3, s-4",
+    "id": "c11-pol-2-mcq-19",
+    "question": "Match List-I (Prerogative Writ) with List-II (Literal Meaning / Judicial Objective):\n(p) Mandamus &mdash; (1) Quashing an order passed without jurisdiction\n(q) Certiorari &mdash; (2) Command to perform an obligatory public duty\n(r) Prohibition &mdash; (3) Restraining a lower court from exceeding jurisdiction\n(s) Habeas Corpus &mdash; (4) Securing release from unlawful confinement\nChoose the correct code:",
+    "options": [
+      "A):   p-2, q-3, r-1, s-4",
       "B):   p-1, q-2, r-4, s-3",
-      "C):   p-2, q-3, r-1, s-4",
-      "D):   p-4, q-1, r-3, s-2",
+      "C):   p-2, q-1, r-3, s-4",
+      "D):   p-4, q-1, r-3, s-2"
     ],
-    correctAnswer: "a",
-    explanation: "Mandamus means 'we command' (perform duty: 2), Certiorari means 'to be certified' (quash order: 1), Prohibition means 'to forbid' (restrain: 3), and Habeas Corpus means 'to have the body' (release: 4).",
+    "correctAnswer": "C",
+    "explanation": "Mandamus means 'we command' (perform duty: 2), Certiorari means 'to be certified' (quash order: 1), Prohibition means 'to forbid' (restrain: 3), and Habeas Corpus means 'to have the body' (release: 4)."
   },
   {
-    id: "c11-pol-2-mcq-20",
-    question: "Assertion (A): The Right to Property was removed from the list of Fundamental Rights in 1978.\nReason (R): Property rights were repeatedly invoked by landlords to obstruct socialist land reforms and progressive wealth distribution laws.",
-    options: [
-      "A):   Both A and R are true, and R is the correct explanation of A",
+    "id": "c11-pol-2-mcq-20",
+    "question": "Assertion (A): The Right to Property was removed from the list of Fundamental Rights in 1978.\nReason (R): Property rights were repeatedly invoked by landlords to obstruct socialist land reforms and progressive wealth distribution laws.",
+    "options": [
+      "A):   A is false, but R is true",
       "B):   Both A and R are true, but R is NOT the correct explanation of A",
       "C):   A is true, but R is false",
-      "D):   A is false, but R is true",
+      "D):   Both A and R are true, and R is the correct explanation of A"
     ],
-    correctAnswer: "a",
-    explanation: "Both statements are true. Feudal landlords continuously used Article 19(1)(f) and Article 31 to stall Zamindari abolition and agrarian reforms, leading to the 44th Amendment removing it from Part III.",
-  },
+    "correctAnswer": "D",
+    "explanation": "Both statements are true. Feudal landlords continuously used Article 19(1)(f) and Article 31 to stall Zamindari abolition and agrarian reforms, leading to the 44th Amendment removing it from Part III."
+  }
 ];

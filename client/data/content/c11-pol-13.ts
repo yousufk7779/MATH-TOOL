@@ -635,249 +635,244 @@ export const c11Pol13HtmlSolutions = `
 /* -------------------------------------------------------------------------- */
 
 export const c11Pol13Mcqs = [
-  // --- TIER 1: EASY / RECALL (Q1 to Q8) ---
   {
-    id: "c11-pol-13-mcq-1",
-    question: "Does the concept of Equality mean that all human beings should be treated identically in every respect?",
-    options: [
-      "A):   Yes, everyone must have identical jobs, clothes, and salaries",
-      "B):   No, equality means equal moral dignity, non-discrimination, and equal opportunities",
+    "id": "c11-pol-13-mcq-1",
+    "question": "Does the concept of Equality mean that all human beings should be treated identically in every respect?",
+    "options": [
+      "A):   No, equality means equal moral dignity, non-discrimination, and equal opportunities",
+      "B):   Yes, everyone must have identical jobs, clothes, and salaries",
       "C):   Yes, everyone must be forced to have the same height and weight",
       "D):   Yes, all individual differences must be banned by law"
     ],
-    correctAnswer: "B",
-    explanation: "Equality does not mean mechanical sameness; it means equal moral worth, equal human dignity, and non-discriminatory opportunities for all."
+    "correctAnswer": "A",
+    "explanation": "Equality does not mean mechanical sameness; it means equal moral worth, equal human dignity, and non-discriminatory opportunities for all."
   },
   {
-    id: "c11-pol-13-mcq-2",
-    question: "Which 18th-century philosopher declared that every human being is an 'end in themselves' possessing intrinsic moral dignity?",
-    options: [
-      "A):   Immanuel Kant",
-      "B):   Thomas Hobbes",
+    "id": "c11-pol-13-mcq-2",
+    "question": "Which 18th-century philosopher declared that every human being is an 'end in themselves' possessing intrinsic moral dignity?",
+    "options": [
+      "A):   Thomas Hobbes",
+      "B):   Immanuel Kant",
       "C):   Jeremy Bentham",
       "D):   Machiavelli"
     ],
-    correctAnswer: "A",
-    explanation: "Immanuel Kant formulated the categorical imperative that human beings have intrinsic worth and must always be treated as ends, never as mere means."
+    "correctAnswer": "B",
+    "explanation": "Immanuel Kant formulated the categorical imperative that human beings have intrinsic worth and must always be treated as ends, never as mere means."
   },
   {
-    id: "c11-pol-13-mcq-3",
-    question: "Which of the following is a classic example of a 'Socially Produced Inequality'?",
-    options: [
+    "id": "c11-pol-13-mcq-3",
+    "question": "Which of the following is a classic example of a 'Socially Produced Inequality'?",
+    "options": [
       "A):   Differences in musical or artistic talent",
       "B):   Differences in athletic stamina",
       "C):   Caste untouchability and racial apartheid",
       "D):   Differences in physical height"
     ],
-    correctAnswer: "C",
-    explanation: "Caste untouchability, racial apartheid, and gender subjugation are artificial hierarchies produced, institutionalized, and enforced by society."
+    "correctAnswer": "C",
+    "explanation": "Caste untouchability, racial apartheid, and gender subjugation are artificial hierarchies produced, institutionalized, and enforced by society."
   },
   {
-    id: "c11-pol-13-mcq-4",
-    question: "Which Article of the Indian Constitution guarantees 'Equality before the law and equal protection of the laws'?",
-    options: [
-      "A):   Article 14",
+    "id": "c11-pol-13-mcq-4",
+    "question": "Which Article of the Indian Constitution guarantees 'Equality before the law and equal protection of the laws'?",
+    "options": [
+      "A):   Article 32",
       "B):   Article 19",
       "C):   Article 21",
-      "D):   Article 32"
+      "D):   Article 14"
     ],
-    correctAnswer: "A",
-    explanation: "Article 14 of the Constitution establishes the fundamental right to Equality before the law and equal protection of the laws within the territory of India."
+    "correctAnswer": "D",
+    "explanation": "Article 14 of the Constitution establishes the fundamental right to Equality before the law and equal protection of the laws within the territory of India."
   },
   {
-    id: "c11-pol-13-mcq-5",
-    question: "Which Article of the Constitution completely abolishes the historic practice of 'Untouchability'?",
-    options: [
-      "A):   Article 15",
+    "id": "c11-pol-13-mcq-5",
+    "question": "Which Article of the Constitution completely abolishes the historic practice of 'Untouchability'?",
+    "options": [
+      "A):   Article 17",
       "B):   Article 16",
-      "C):   Article 17",
+      "C):   Article 15",
       "D):   Article 18"
     ],
-    correctAnswer: "C",
-    explanation: "Article 17 abolishes 'Untouchability' and forbids its practice in any form, making its enforcement a punishable criminal offense."
+    "correctAnswer": "A",
+    "explanation": "Article 17 abolishes 'Untouchability' and forbids its practice in any form, making its enforcement a punishable criminal offense."
   },
   {
-    id: "c11-pol-13-mcq-6",
-    question: "Who authored the famous 1936 treatise 'Annihilation of Caste'?",
-    options: [
+    "id": "c11-pol-13-mcq-6",
+    "question": "Who authored the famous 1936 treatise 'Annihilation of Caste'?",
+    "options": [
       "A):   Mahatma Gandhi",
       "B):   Dr. B.R. Ambedkar",
       "C):   Jyotirao Phule",
       "D):   Periyar E.V. Ramasamy"
     ],
-    correctAnswer: "B",
-    explanation: "Dr. B.R. Ambedkar authored 'Annihilation of Caste' in 1936, providing an uncompromising critique of the caste system as a division of labourers."
+    "correctAnswer": "B",
+    "explanation": "Dr. B.R. Ambedkar authored 'Annihilation of Caste' in 1936, providing an uncompromising critique of the caste system as a division of labourers."
   },
   {
-    id: "c11-pol-13-mcq-7",
-    question: "Universal Adult Suffrage ('one person, one vote, one value') is the primary foundation of which dimension of equality?",
-    options: [
+    "id": "c11-pol-13-mcq-7",
+    "question": "Universal Adult Suffrage ('one person, one vote, one value') is the primary foundation of which dimension of equality?",
+    "options": [
       "A):   Economic Equality",
-      "B):   Political Equality",
-      "C):   Natural Equality",
+      "B):   Natural Equality",
+      "C):   Political Equality",
       "D):   Biological Equality"
     ],
-    correctAnswer: "B",
-    explanation: "Universal adult franchise under Article 326 establishes formal Political Equality, granting every citizen equal voting power regardless of wealth or status."
+    "correctAnswer": "C",
+    "explanation": "Universal adult franchise under Article 326 establishes formal Political Equality, granting every citizen equal voting power regardless of wealth or status."
   },
   {
-    id: "c11-pol-13-mcq-8",
-    question: "What does 'Equality of Opportunity' primarily demand?",
-    options: [
+    "id": "c11-pol-13-mcq-8",
+    "question": "What does 'Equality of Opportunity' primarily demand?",
+    "options": [
       "A):   That everyone must receive an identical final score on exams",
-      "B):   That everyone must have an equal, non-discriminatory starting line and fair access to education and jobs",
+      "B):   That no person is allowed to work harder than others",
       "C):   That all private wealth must be confiscated immediately",
-      "D):   That no person is allowed to work harder than others"
+      "D):   That everyone must have an equal, non-discriminatory starting line and fair access to education and jobs"
     ],
-    correctAnswer: "B",
-    explanation: "Equality of opportunity demands that no person's life chances should be blocked by discrimination based on race, caste, gender, or religion at the starting line."
+    "correctAnswer": "D",
+    "explanation": "Equality of opportunity demands that no person's life chances should be blocked by discrimination based on race, caste, gender, or religion at the starting line."
   },
-
-  // --- TIER 2: MODERATE / CONCEPTUAL (Q9 to Q15) ---
   {
-    id: "c11-pol-13-mcq-9",
-    question: "Why does political theory argue that 'treating unequals equally' only worsens inequality?",
-    options: [
-      "A):   Because laws should always favor the wealthy",
-      "B):   Because applying identical neutral standards to individuals with vast historical or physical disadvantages perpetuates their disadvantage",
+    "id": "c11-pol-13-mcq-9",
+    "question": "Why does political theory argue that 'treating unequals equally' only worsens inequality?",
+    "options": [
+      "A):   Because applying identical neutral standards to individuals with vast historical or physical disadvantages perpetuates their disadvantage",
+      "B):   Because laws should always favor the wealthy",
       "C):   Because democracy forbids fairness",
       "D):   Because tests should be abolished completely"
     ],
-    correctAnswer: "B",
-    explanation: "Treating unequals equally freezes structural disadvantages; a student in a remote village without electricity cannot compete fairly with an elite urban student without affirmative support."
+    "correctAnswer": "A",
+    "explanation": "Treating unequals equally freezes structural disadvantages; a student in a remote village without electricity cannot compete fairly with an elite urban student without affirmative support."
   },
   {
-    id: "c11-pol-13-mcq-10",
-    question: "Which of the following is an example of justified 'Differential Treatment' to realize substantive equality?",
-    options: [
+    "id": "c11-pol-13-mcq-10",
+    "question": "Which of the following is an example of justified 'Differential Treatment' to realize substantive equality?",
+    "options": [
       "A):   Denying women the right to enter universities",
       "B):   Building wheelchair ramps and providing reserved seats for disabled citizens",
       "C):   Allowing landlords to evict tenants without notice",
       "D):   Charging higher taxes only on marginalized castes"
     ],
-    correctAnswer: "B",
-    explanation: "Wheelchair ramps and reservations for disabled persons are differential treatments designed to ensure genuine, equal access and participation."
+    "correctAnswer": "B",
+    "explanation": "Wheelchair ramps and reservations for disabled persons are differential treatments designed to ensure genuine, equal access and participation."
   },
   {
-    id: "c11-pol-13-mcq-11",
-    question: "How did Dr. B.R. Ambedkar characterize the relationship between Liberty, Equality, and Fraternity?",
-    options: [
+    "id": "c11-pol-13-mcq-11",
+    "question": "How did Dr. B.R. Ambedkar characterize the relationship between Liberty, Equality, and Fraternity?",
+    "options": [
       "A):   As mutually destructive forces",
-      "B):   As an indivisible trinity where one cannot exist without the other",
-      "C):   As concepts applicable only in European countries",
+      "B):   As concepts applicable only in European countries",
+      "C):   As an indivisible trinity where one cannot exist without the other",
       "D):   As minor suggestions for the military"
     ],
-    correctAnswer: "B",
-    explanation: "Ambedkar famously insisted that Liberty, Equality, and Fraternity form an indivisible union: without equality, liberty produces the supremacy of the few; without liberty, equality kills individual initiative."
+    "correctAnswer": "C",
+    "explanation": "Ambedkar famously insisted that Liberty, Equality, and Fraternity form an indivisible union: without equality, liberty produces the supremacy of the few; without liberty, equality kills individual initiative."
   },
   {
-    id: "c11-pol-13-mcq-12",
-    question: "Which Articles of the Indian Constitution specifically provide constitutional protection for affirmative action / reservations in education and public employment?",
-    options: [
-      "A):   Articles 15(4) and 16(4)",
+    "id": "c11-pol-13-mcq-12",
+    "question": "Which Articles of the Indian Constitution specifically provide constitutional protection for affirmative action / reservations in education and public employment?",
+    "options": [
+      "A):   Articles 32 and 226",
       "B):   Articles 20 and 22",
       "C):   Articles 25 and 28",
-      "D):   Articles 32 and 226"
+      "D):   Articles 15(4) and 16(4)"
     ],
-    correctAnswer: "A",
-    explanation: "Articles 15(4) and 16(4) enable the State to make special provisions and reservations for the advancement of socially and educationally backward classes and SCs/STs."
+    "correctAnswer": "D",
+    "explanation": "Articles 15(4) and 16(4) enable the State to make special provisions and reservations for the advancement of socially and educationally backward classes and SCs/STs."
   },
   {
-    id: "c11-pol-13-mcq-13",
-    question: "What is the primary socialist critique of the liberal concept of 'Equality of Opportunity'?",
-    options: [
-      "A):   Socialists believe competition is the best way to run schools",
-      "B):   Socialists argue that fair competition is impossible when the capitalist class monopolizes economic wealth and means of production",
+    "id": "c11-pol-13-mcq-13",
+    "question": "What is the primary socialist critique of the liberal concept of 'Equality of Opportunity'?",
+    "options": [
+      "A):   Socialists argue that fair competition is impossible when the capitalist class monopolizes economic wealth and means of production",
+      "B):   Socialists believe competition is the best way to run schools",
       "C):   Socialists believe everyone should earn identical salaries in every profession",
       "D):   Socialists oppose free public healthcare"
     ],
-    correctAnswer: "B",
-    explanation: "Socialists point out that under capitalism, vast hereditary wealth advantages make a truly 'equal starting line' an empty illusion for working-class children."
+    "correctAnswer": "A",
+    "explanation": "Socialists point out that under capitalism, vast hereditary wealth advantages make a truly 'equal starting line' an empty illusion for working-class children."
   },
   {
-    id: "c11-pol-13-mcq-14",
-    question: "Economic equality in modern democratic political theory means:",
-    options: [
+    "id": "c11-pol-13-mcq-14",
+    "question": "Economic equality in modern democratic political theory means:",
+    "options": [
       "A):   Complete mathematical equality of wealth for every single citizen",
       "B):   Eradicating extreme destitution, guaranteeing basic human needs, and curbing grotesque oligarchic concentration of wealth",
       "C):   Abolishing all banks and currency",
       "D):   Making it illegal to earn more than ten rupees a day"
     ],
-    correctAnswer: "B",
-    explanation: "Economic equality does not mean identical incomes, but ensuring that everyone has a decent standard of life (food, health, housing) while preventing extreme wealth monopolies."
+    "correctAnswer": "B",
+    "explanation": "Economic equality does not mean identical incomes, but ensuring that everyone has a decent standard of life (food, health, housing) while preventing extreme wealth monopolies."
   },
   {
-    id: "c11-pol-13-mcq-15",
-    question: "Feminist political theorists challenge which conventional assumption regarding equality?",
-    options: [
+    "id": "c11-pol-13-mcq-15",
+    "question": "Feminist political theorists challenge which conventional assumption regarding equality?",
+    "options": [
       "A):   That women should never be educated",
-      "B):   That the private domestic sphere of the family is free from power inequalities and division of labor",
-      "C):   That only men should work in agriculture",
+      "B):   That only men should work in agriculture",
+      "C):   That the private domestic sphere of the family is free from power inequalities and division of labor",
       "D):   That women do not need voting rights"
     ],
-    correctAnswer: "B",
-    explanation: "Feminists showed that the private domestic sphere is deeply unequal, with women performing unpaid domestic labor and being excluded from financial decision-making."
+    "correctAnswer": "C",
+    "explanation": "Feminists showed that the private domestic sphere is deeply unequal, with women performing unpaid domestic labor and being excluded from financial decision-making."
   },
-
-  // --- TIER 3: ADVANCE / ANALYTICAL (Q16 to Q20) ---
   {
-    id: "c11-pol-13-mcq-16",
-    question: "Why did 19th-century social reformers have to actively deconstruct claims of 'Natural' inequality?",
-    options: [
+    "id": "c11-pol-13-mcq-16",
+    "question": "Why did 19th-century social reformers have to actively deconstruct claims of 'Natural' inequality?",
+    "options": [
       "A):   Because natural science had proved that all humans are identical clones",
-      "B):   Because dominant castes, colonizers, and patriarchal rulers historically defended artificial social privileges by falsely claiming they were divinely or naturally ordained",
+      "B):   Because they wanted to eliminate all biological studies",
       "C):   Because the British Queen ordered it",
-      "D):   Because they wanted to eliminate all biological studies"
+      "D):   Because dominant castes, colonizers, and patriarchal rulers historically defended artificial social privileges by falsely claiming they were divinely or naturally ordained"
     ],
-    correctAnswer: "B",
-    explanation: "Dominant groups frequently legitimized caste oppression, slavery, and female subjugation by claiming they were 'natural' or divinely sanctioned, which reformers exposed as self-serving myths."
+    "correctAnswer": "D",
+    "explanation": "Dominant groups frequently legitimized caste oppression, slavery, and female subjugation by claiming they were 'natural' or divinely sanctioned, which reformers exposed as self-serving myths."
   },
   {
-    id: "c11-pol-13-mcq-17",
-    question: "In the context of affirmative action, what is meant by the 'Level Playing Field' argument?",
-    options: [
-      "A):   Building cricket stadiums in every village",
-      "B):   Providing compensatory assistance to historically disadvantaged communities so that they can compete on genuine terms of parity with privileged groups",
+    "id": "c11-pol-13-mcq-17",
+    "question": "In the context of affirmative action, what is meant by the 'Level Playing Field' argument?",
+    "options": [
+      "A):   Providing compensatory assistance to historically disadvantaged communities so that they can compete on genuine terms of parity with privileged groups",
+      "B):   Building cricket stadiums in every village",
       "C):   Banning all private businesses",
       "D):   Lowering the passing marks to zero for all students"
     ],
-    correctAnswer: "B",
-    explanation: "A level playing field recognizes that historical oppression (like caste untouchability) disabled certain groups, requiring affirmative action to create genuine equality of competition."
+    "correctAnswer": "A",
+    "explanation": "A level playing field recognizes that historical oppression (like caste untouchability) disabled certain groups, requiring affirmative action to create genuine equality of competition."
   },
   {
-    id: "c11-pol-13-mcq-18",
-    question: "How does 'Formal Equality' differ from 'Substantive Equality'?",
-    options: [
+    "id": "c11-pol-13-mcq-18",
+    "question": "How does 'Formal Equality' differ from 'Substantive Equality'?",
+    "options": [
       "A):   Formal equality exists only on paper in dictatorships",
       "B):   Formal equality prohibits legal discrimination (treating likes alike), while substantive equality takes positive steps (affirmative action) to achieve real, fair outcomes in life",
       "C):   Substantive equality applies only to corporations",
       "D):   There is no difference between them"
     ],
-    correctAnswer: "B",
-    explanation: "Formal equality removes legal barriers (Article 14), while substantive equality recognizes real-world social disadvantages and provides affirmative action (Articles 15(4) and 16(4))."
+    "correctAnswer": "B",
+    "explanation": "Formal equality removes legal barriers (Article 14), while substantive equality recognizes real-world social disadvantages and provides affirmative action (Articles 15(4) and 16(4))."
   },
   {
-    id: "c11-pol-13-mcq-19",
-    question: "Which of the following scenarios violates the principle of 'Equality before Law'?",
-    options: [
+    "id": "c11-pol-13-mcq-19",
+    "question": "Which of the following scenarios violates the principle of 'Equality before Law'?",
+    "options": [
       "A):   A wealthy industrialist and an ordinary citizen receiving the exact same legal penalty for committing tax fraud",
-      "B):   A government minister being granted complete legal immunity from prosecution for taking bribes, while an ordinary clerk is imprisoned for the same offense",
-      "C):   Providing free legal aid to an impoverished defendant who cannot afford a lawyer",
+      "B):   Providing free legal aid to an impoverished defendant who cannot afford a lawyer",
+      "C):   A government minister being granted complete legal immunity from prosecution for taking bribes, while an ordinary clerk is imprisoned for the same offense",
       "D):   Reserving seats on public buses for elderly and pregnant passengers"
     ],
-    correctAnswer: "B",
-    explanation: "Equality before the law (Article 14) means no individual &mdash; regardless of wealth or political rank &mdash; is above the law or immune from legal justice."
+    "correctAnswer": "C",
+    "explanation": "Equality before the law (Article 14) means no individual &mdash; regardless of wealth or political rank &mdash; is above the law or immune from legal justice."
   },
   {
-    id: "c11-pol-13-mcq-20",
-    question: "In his famous 1949 speech, Dr. B.R. Ambedkar stated: 'In politics we will have equality, and in social and economic life we will have inequality.' What warning did he issue regarding this contradiction?",
-    options: [
+    "id": "c11-pol-13-mcq-20",
+    "question": "In his famous 1949 speech, Dr. B.R. Ambedkar stated: 'In politics we will have equality, and in social and economic life we will have inequality.' What warning did he issue regarding this contradiction?",
+    "options": [
       "A):   That inequality should be preserved forever",
-      "B):   That unless this contradiction is resolved at the earliest possible moment, those who suffer from inequality will blow up the structure of political democracy",
+      "B):   That India should become a monarchy",
       "C):   That elections should be cancelled immediately",
-      "D):   That India should become a monarchy"
+      "D):   That unless this contradiction is resolved at the earliest possible moment, those who suffer from inequality will blow up the structure of political democracy"
     ],
-    correctAnswer: "B",
-    explanation: "Dr. Ambedkar warned that persistent social and economic inequality would tear apart the fragile edifice of political democracy if not urgently remedied."
+    "correctAnswer": "D",
+    "explanation": "Dr. Ambedkar warned that persistent social and economic inequality would tear apart the fragile edifice of political democracy if not urgently remedied."
   }
 ];

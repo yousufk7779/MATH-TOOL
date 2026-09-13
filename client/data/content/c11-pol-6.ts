@@ -404,250 +404,245 @@ export interface MCQ {
   explanation: string;
 }
 
-export const c11Pol6Mcqs: MCQ[] = [
-  // Tier 1: Direct Recall (Easy)
+export const c11Pol6Mcqs = [
   {
-    id: "c11-pol-6-mcq-1",
-    question: "Under which Article of the Constitution is the Supreme Court of India established?",
-    options: [
+    "id": "c11-pol-6-mcq-1",
+    "question": "Under which Article of the Constitution is the Supreme Court of India established?",
+    "options": [
       "A):   Article 124",
       "B):   Article 143",
       "C):   Article 214",
-      "D):   Article 226",
+      "D):   Article 226"
     ],
-    correctAnswer: "a",
-    explanation: "Article 124(1) of the Indian Constitution establishes the Supreme Court of India, consisting of a Chief Justice of India and other judges.",
+    "correctAnswer": "A",
+    "explanation": "Article 124(1) of the Indian Constitution establishes the Supreme Court of India, consisting of a Chief Justice of India and other judges."
   },
   {
-    id: "c11-pol-6-mcq-2",
-    question: "What is the retirement age of a Judge of the Supreme Court of India?",
-    options: [
+    "id": "c11-pol-6-mcq-2",
+    "question": "What is the retirement age of a Judge of the Supreme Court of India?",
+    "options": [
       "A):   60 years",
-      "B):   62 years",
-      "C):   65 years",
-      "D):   70 years",
+      "B):   65 years",
+      "C):   62 years",
+      "D):   70 years"
     ],
-    correctAnswer: "c",
-    explanation: "A Judge of the Supreme Court holds office until attaining the age of 65 years, while a High Court judge retires at 62 years.",
+    "correctAnswer": "B",
+    "explanation": "A Judge of the Supreme Court holds office until attaining the age of 65 years, while a High Court judge retires at 62 years."
   },
   {
-    id: "c11-pol-6-mcq-3",
-    question: "Under which Article can an aggrieved citizen approach the Supreme Court directly for the enforcement of Fundamental Rights?",
-    options: [
+    "id": "c11-pol-6-mcq-3",
+    "question": "Under which Article can an aggrieved citizen approach the Supreme Court directly for the enforcement of Fundamental Rights?",
+    "options": [
       "A):   Article 14",
-      "B):   Article 32",
-      "C):   Article 136",
-      "D):   Article 226",
+      "B):   Article 136",
+      "C):   Article 32",
+      "D):   Article 226"
     ],
-    correctAnswer: "b",
-    explanation: "Article 32 gives citizens the fundamental right to petition the Supreme Court directly for the enforcement of Fundamental Rights through prerogative writs.",
+    "correctAnswer": "C",
+    "explanation": "Article 32 gives citizens the fundamental right to petition the Supreme Court directly for the enforcement of Fundamental Rights through prerogative writs."
   },
   {
-    id: "c11-pol-6-mcq-4",
-    question: "Under Article 143, who is empowered to seek the Advisory Opinion of the Supreme Court on questions of public importance?",
-    options: [
+    "id": "c11-pol-6-mcq-4",
+    "question": "Under Article 143, who is empowered to seek the Advisory Opinion of the Supreme Court on questions of public importance?",
+    "options": [
       "A):   The Prime Minister",
-      "B):   The President of India",
+      "B):   The Union Law Minister",
       "C):   The Speaker of Lok Sabha",
-      "D):   The Union Law Minister",
+      "D):   The President of India"
     ],
-    correctAnswer: "b",
-    explanation: "Article 143 authorizes the President of India to refer any question of law or fact of public importance to the Supreme Court for its consultative advisory opinion.",
+    "correctAnswer": "D",
+    "explanation": "Article 143 authorizes the President of India to refer any question of law or fact of public importance to the Supreme Court for its consultative advisory opinion."
   },
   {
-    id: "c11-pol-6-mcq-5",
-    question: "Disputes between the Government of India and one or more States fall under which jurisdiction of the Supreme Court?",
-    options: [
-      "A):   Appellate Jurisdiction",
+    "id": "c11-pol-6-mcq-5",
+    "question": "Disputes between the Government of India and one or more States fall under which jurisdiction of the Supreme Court?",
+    "options": [
+      "A):   Original Jurisdiction (Article 131)",
       "B):   Advisory Jurisdiction",
-      "C):   Original Jurisdiction (Article 131)",
-      "D):   Review Jurisdiction",
+      "C):   Appellate Jurisdiction",
+      "D):   Review Jurisdiction"
     ],
-    correctAnswer: "c",
-    explanation: "Under Article 131, federal disputes between the Centre and States or between two or more States fall exclusively within the Original Jurisdiction of the Supreme Court.",
+    "correctAnswer": "A",
+    "explanation": "Under Article 131, federal disputes between the Centre and States or between two or more States fall exclusively within the Original Jurisdiction of the Supreme Court."
   },
   {
-    id: "c11-pol-6-mcq-6",
-    question: "Which landmark constitutional case established that judicial review is part of the 'Basic Structure' of the Constitution?",
-    options: [
+    "id": "c11-pol-6-mcq-6",
+    "question": "Which landmark constitutional case established that judicial review is part of the 'Basic Structure' of the Constitution?",
+    "options": [
       "A):   Golaknath Case (1967)",
       "B):   Kesavananda Bharati v. State of Kerala (1973)",
       "C):   Minerva Mills Case (1980)",
-      "D):   Shankari Prasad Case (1951)",
+      "D):   Shankari Prasad Case (1951)"
     ],
-    correctAnswer: "b",
-    explanation: "In Kesavananda Bharati (1973), the Supreme Court enunciated the Basic Structure doctrine, affirming that judicial review cannot be curtailed or abolished by Parliament.",
+    "correctAnswer": "B",
+    "explanation": "In Kesavananda Bharati (1973), the Supreme Court enunciated the Basic Structure doctrine, affirming that judicial review cannot be curtailed or abolished by Parliament."
   },
   {
-    id: "c11-pol-6-mcq-7",
-    question: "Who among the following judges is globally celebrated for pioneering Public Interest Litigation (PIL) in India?",
-    options: [
-      "A):   Justice P.N. Bhagwati",
+    "id": "c11-pol-6-mcq-7",
+    "question": "Who among the following judges is globally celebrated for pioneering Public Interest Litigation (PIL) in India?",
+    "options": [
+      "A):   Justice H.J. Kania",
       "B):   Justice A.N. Ray",
-      "C):   Justice H.J. Kania",
-      "D):   Justice M. Patanjali Sastri",
+      "C):   Justice P.N. Bhagwati",
+      "D):   Justice M. Patanjali Sastri"
     ],
-    correctAnswer: "a",
-    explanation: "Justice P.N. Bhagwati (along with Justice V.R. Krishna Iyer) pioneered Public Interest Litigation in the late 1970s, transforming access to justice for the poor.",
+    "correctAnswer": "C",
+    "explanation": "Justice P.N. Bhagwati (along with Justice V.R. Krishna Iyer) pioneered Public Interest Litigation in the late 1970s, transforming access to justice for the poor."
   },
   {
-    id: "c11-pol-6-mcq-8",
-    question: "How many senior-most judges, in addition to the Chief Justice of India, constitute the Collegium for Supreme Court appointments under the Third Judges Case (1998)?",
-    options: [
+    "id": "c11-pol-6-mcq-8",
+    "question": "How many senior-most judges, in addition to the Chief Justice of India, constitute the Collegium for Supreme Court appointments under the Third Judges Case (1998)?",
+    "options": [
       "A):   2 senior-most judges",
       "B):   3 senior-most judges",
-      "C):   4 senior-most judges",
-      "D):   5 senior-most judges",
+      "C):   5 senior-most judges",
+      "D):   4 senior-most judges"
     ],
-    correctAnswer: "c",
-    explanation: "Under the Third Judges Case (1998), the Supreme Court Collegium consists of the Chief Justice of India and four senior-most judges of the Supreme Court.",
+    "correctAnswer": "D",
+    "explanation": "Under the Third Judges Case (1998), the Supreme Court Collegium consists of the Chief Justice of India and four senior-most judges of the Supreme Court."
   },
-
-  // Tier 2: Conceptual & Comparative (Moderate)
   {
-    id: "c11-pol-6-mcq-9",
-    question: "Why is the writ jurisdiction of a High Court under Article 226 described as wider than that of the Supreme Court under Article 32?",
-    options: [
-      "A):   Because High Courts can punish foreign citizens while the Supreme Court cannot",
-      "B):   Because the Supreme Court can issue writs only for Fundamental Rights, while High Courts can issue writs for Fundamental Rights as well as ordinary legal rights",
+    "id": "c11-pol-6-mcq-9",
+    "question": "Why is the writ jurisdiction of a High Court under Article 226 described as wider than that of the Supreme Court under Article 32?",
+    "options": [
+      "A):   Because the Supreme Court can issue writs only for Fundamental Rights, while High Courts can issue writs for Fundamental Rights as well as ordinary legal rights",
+      "B):   Because High Courts can punish foreign citizens while the Supreme Court cannot",
       "C):   Because High Court judges have longer tenures than Supreme Court judges",
-      "D):   Because High Courts do not follow the Constitution",
+      "D):   Because High Courts do not follow the Constitution"
     ],
-    correctAnswer: "b",
-    explanation: "Article 32 is limited strictly to the enforcement of Fundamental Rights, whereas Article 226 empowers High Courts to issue writs for Fundamental Rights and 'any other purpose' (ordinary legal rights).",
+    "correctAnswer": "A",
+    "explanation": "Article 32 is limited strictly to the enforcement of Fundamental Rights, whereas Article 226 empowers High Courts to issue writs for Fundamental Rights and 'any other purpose' (ordinary legal rights)."
   },
   {
-    id: "c11-pol-6-mcq-10",
-    question: "What does it mean that the Supreme Court of India is a 'Court of Record' under Article 129?",
-    options: [
+    "id": "c11-pol-6-mcq-10",
+    "question": "What does it mean that the Supreme Court of India is a 'Court of Record' under Article 129?",
+    "options": [
       "A):   It must record all audio conversations of political leaders",
       "B):   Its judgments possess evidentiary value, serve as binding precedents on all lower courts, and it has the power to punish for its contempt",
       "C):   It must publish a newspaper daily",
-      "D):   Its records are destroyed every 10 years",
+      "D):   Its records are destroyed every 10 years"
     ],
-    correctAnswer: "b",
-    explanation: "As a Court of Record (Article 129), its decisions are recognized as authoritative legal precedents in all Indian courts, and it possesses the power to punish for contempt of court.",
+    "correctAnswer": "B",
+    "explanation": "As a Court of Record (Article 129), its decisions are recognized as authoritative legal precedents in all Indian courts, and it possesses the power to punish for contempt of court."
   },
   {
-    id: "c11-pol-6-mcq-11",
-    question: "Which of the following describes the meaning of 'Special Leave Petition' (SLP) under Article 136?",
-    options: [
+    "id": "c11-pol-6-mcq-11",
+    "question": "Which of the following describes the meaning of 'Special Leave Petition' (SLP) under Article 136?",
+    "options": [
       "A):   Permission granted to judges to go on foreign vacation",
-      "B):   Extraordinary discretionary power of the Supreme Court to grant leave to appeal against any judgment or order passed by any court or tribunal in India",
-      "C):   A petition to grant bail to cabinet ministers only",
-      "D):   A petition filed to create a new state in India",
+      "B):   A petition to grant bail to cabinet ministers only",
+      "C):   Extraordinary discretionary power of the Supreme Court to grant leave to appeal against any judgment or order passed by any court or tribunal in India",
+      "D):   A petition filed to create a new state in India"
     ],
-    correctAnswer: "b",
-    explanation: "Under Article 136, the Supreme Court has extraordinary residual discretion to grant special leave to appeal from any judgment, decree, or order of any court or tribunal in India.",
+    "correctAnswer": "C",
+    "explanation": "Under Article 136, the Supreme Court has extraordinary residual discretion to grant special leave to appeal from any judgment, decree, or order of any court or tribunal in India."
   },
   {
-    id: "c11-pol-6-mcq-12",
-    question: "What was the primary constitutional reason why the Supreme Court struck down the National Judicial Appointments Commission (NJAC) Act in 2015?",
-    options: [
+    "id": "c11-pol-6-mcq-12",
+    "question": "What was the primary constitutional reason why the Supreme Court struck down the National Judicial Appointments Commission (NJAC) Act in 2015?",
+    "options": [
       "A):   Because the President refused to sign the bill",
-      "B):   Because it gave executive ministers a role in appointments, violating judicial independence which is part of the Basic Structure",
+      "B):   Because the law was passed without a quorum",
       "C):   Because Parliament does not have the power to amend the Constitution",
-      "D):   Because the law was passed without a quorum",
+      "D):   Because it gave executive ministers a role in appointments, violating judicial independence which is part of the Basic Structure"
     ],
-    correctAnswer: "b",
-    explanation: "In the Fourth Judges Case (2015), the Supreme Court struck down NJAC, holding that executive presence in judicial appointments compromises judicial independence and violates the Basic Structure.",
+    "correctAnswer": "D",
+    "explanation": "In the Fourth Judges Case (2015), the Supreme Court struck down NJAC, holding that executive presence in judicial appointments compromises judicial independence and violates the Basic Structure."
   },
   {
-    id: "c11-pol-6-mcq-13",
-    question: "In which PIL case did the Supreme Court order the immediate release of thousands of undertrial prisoners who had spent years in jail awaiting trial?",
-    options: [
-      "A):   Bandhua Mukti Morcha Case (1984)",
-      "B):   Hussainara Khatoon v. Home Secretary, State of Bihar (1979)",
+    "id": "c11-pol-6-mcq-13",
+    "question": "In which PIL case did the Supreme Court order the immediate release of thousands of undertrial prisoners who had spent years in jail awaiting trial?",
+    "options": [
+      "A):   Hussainara Khatoon v. Home Secretary, State of Bihar (1979)",
+      "B):   Bandhua Mukti Morcha Case (1984)",
       "C):   Olga Tellis Case (1985)",
-      "D):   Vishaka Case (1997)",
+      "D):   Vishaka Case (1997)"
     ],
-    correctAnswer: "b",
-    explanation: "In Hussainara Khatoon (1979), a PIL led to the historic release of over 40,000 undertrials and established the Right to a Speedy Trial under Article 21.",
+    "correctAnswer": "A",
+    "explanation": "In Hussainara Khatoon (1979), a PIL led to the historic release of over 40,000 undertrials and established the Right to a Speedy Trial under Article 21."
   },
   {
-    id: "c11-pol-6-mcq-14",
-    question: "Why are the salaries and pensions of Supreme Court judges 'charged' on the Consolidated Fund of India?",
-    options: [
+    "id": "c11-pol-6-mcq-14",
+    "question": "Why are the salaries and pensions of Supreme Court judges 'charged' on the Consolidated Fund of India?",
+    "options": [
       "A):   To hide their incomes from the Income Tax department",
       "B):   To ensure that their salaries are not subject to annual voting in Parliament, guaranteeing financial independence from political majorities",
       "C):   Because judges are paid directly by the World Bank",
-      "D):   To prevent judges from retiring",
+      "D):   To prevent judges from retiring"
     ],
-    correctAnswer: "b",
-    explanation: "Salaries charged on the Consolidated Fund cannot be voted upon or reduced by Parliament, insulating judges from financial pressure by the ruling government.",
+    "correctAnswer": "B",
+    "explanation": "Salaries charged on the Consolidated Fund cannot be voted upon or reduced by Parliament, insulating judges from financial pressure by the ruling government."
   },
   {
-    id: "c11-pol-6-mcq-15",
-    question: "What is the legal effect of the Supreme Court's Advisory Opinion under Article 143?",
-    options: [
+    "id": "c11-pol-6-mcq-15",
+    "question": "What is the legal effect of the Supreme Court's Advisory Opinion under Article 143?",
+    "options": [
       "A):   It is automatically binding on the President and Prime Minister",
-      "B):   It is consultative in nature and not legally binding on the President",
-      "C):   It becomes an Act of Parliament within 24 hours",
-      "D):   It dissolves the Council of Ministers automatically",
+      "B):   It becomes an Act of Parliament within 24 hours",
+      "C):   It is consultative in nature and not legally binding on the President",
+      "D):   It dissolves the Council of Ministers automatically"
     ],
-    correctAnswer: "b",
-    explanation: "Advisory jurisdiction under Article 143 is purely consultative; the President is not legally bound to accept or implement the Supreme Court's advice.",
+    "correctAnswer": "C",
+    "explanation": "Advisory jurisdiction under Article 143 is purely consultative; the President is not legally bound to accept or implement the Supreme Court's advice."
   },
-
-  // Tier 3: Analytical & Multi-Statement (Advance)
   {
-    id: "c11-pol-6-mcq-16",
-    question: "Consider the following statements regarding the impeachment of a Supreme Court Judge under Article 124(4):\n1. A judge can be removed on grounds of 'proven misbehavior or incapacity'.\n2. The motion must be passed by a simple majority in Lok Sabha only.\n3. Both Houses must pass the address with a special majority in the same session.\nWhich of the statements given above are CORRECT?",
-    options: [
+    "id": "c11-pol-6-mcq-16",
+    "question": "Consider the following statements regarding the impeachment of a Supreme Court Judge under Article 124(4):\n1. A judge can be removed on grounds of 'proven misbehavior or incapacity'.\n2. The motion must be passed by a simple majority in Lok Sabha only.\n3. Both Houses must pass the address with a special majority in the same session.\nWhich of the statements given above are CORRECT?",
+    "options": [
       "A):   1 and 2 only",
-      "B):   1 and 3 only",
+      "B):   1, 2, and 3",
       "C):   2 and 3 only",
-      "D):   1, 2, and 3",
+      "D):   1 and 3 only"
     ],
-    correctAnswer: "b",
-    explanation: "Statements 1 and 3 are correct. Statement 2 is incorrect because removal requires a special majority in BOTH Houses of Parliament (absolute majority of total membership + 2/3rd present and voting).",
+    "correctAnswer": "D",
+    "explanation": "Statements 1 and 3 are correct. Statement 2 is incorrect because removal requires a special majority in BOTH Houses of Parliament (absolute majority of total membership + 2/3rd present and voting)."
   },
   {
-    id: "c11-pol-6-mcq-17",
-    question: "Which of the following is a primary criticism of 'Judicial Overreach' in India?",
-    options: [
-      "A):   It prevents the police from arresting criminals",
-      "B):   Judges venture into executive policy-making and resource allocation for which they lack technical competence and democratic accountability",
+    "id": "c11-pol-6-mcq-17",
+    "question": "Which of the following is a primary criticism of 'Judicial Overreach' in India?",
+    "options": [
+      "A):   Judges venture into executive policy-making and resource allocation for which they lack technical competence and democratic accountability",
+      "B):   It prevents the police from arresting criminals",
       "C):   It causes the dissolution of High Courts",
-      "D):   It makes the Supreme Court subservient to the military",
+      "D):   It makes the Supreme Court subservient to the military"
     ],
-    correctAnswer: "b",
-    explanation: "Judicial overreach is criticized because judges are non-elected and lack administrative expertise and public budgets, leading to friction with the executive when running day-to-day administration.",
+    "correctAnswer": "A",
+    "explanation": "Judicial overreach is criticized because judges are non-elected and lack administrative expertise and public budgets, leading to friction with the executive when running day-to-day administration."
   },
   {
-    id: "c11-pol-6-mcq-18",
-    question: "Assertion (A): Retired judges of the Supreme Court are barred from pleading or acting in any court within India.\nReason (R): This constitutional prohibition prevents judges from currying favor with prospective litigants or the government while in office in anticipation of future legal practice.",
-    options: [
-      "A):   Both A and R are true, and R is the correct explanation of A",
-      "B):   Both A and R are true, but R is NOT the correct explanation of A",
+    "id": "c11-pol-6-mcq-18",
+    "question": "Assertion (A): Retired judges of the Supreme Court are barred from pleading or acting in any court within India.\nReason (R): This constitutional prohibition prevents judges from currying favor with prospective litigants or the government while in office in anticipation of future legal practice.",
+    "options": [
+      "A):   Both A and R are true, but R is NOT the correct explanation of A",
+      "B):   Both A and R are true, and R is the correct explanation of A",
       "C):   A is true, but R is false",
-      "D):   A is false, but R is true",
+      "D):   A is false, but R is true"
     ],
-    correctAnswer: "a",
-    explanation: "Both statements are true and R correctly explains A. Article 124(7) bars retired SC judges from legal practice to preserve judicial integrity and prevent post-retirement bias.",
+    "correctAnswer": "B",
+    "explanation": "Both statements are true and R correctly explains A. Article 124(7) bars retired SC judges from legal practice to preserve judicial integrity and prevent post-retirement bias."
   },
   {
-    id: "c11-pol-6-mcq-19",
-    question: "Match List-I (Jurisdiction / Power) with List-II (Constitutional Article):\n(p) Original Jurisdiction of Supreme Court &mdash; (1) Article 143\n(q) Advisory Jurisdiction &mdash; (2) Article 131\n(r) Writ Jurisdiction of High Courts &mdash; (3) Article 226\n(s) Special Leave Petition (SLP) &mdash; (4) Article 136\nChoose the correct code:",
-    options: [
-      "A):   p-2, q-1, r-3, s-4",
+    "id": "c11-pol-6-mcq-19",
+    "question": "Match List-I (Jurisdiction / Power) with List-II (Constitutional Article):\n(p) Original Jurisdiction of Supreme Court &mdash; (1) Article 143\n(q) Advisory Jurisdiction &mdash; (2) Article 131\n(r) Writ Jurisdiction of High Courts &mdash; (3) Article 226\n(s) Special Leave Petition (SLP) &mdash; (4) Article 136\nChoose the correct code:",
+    "options": [
+      "A):   p-2, q-3, r-1, s-4",
       "B):   p-1, q-2, r-4, s-3",
-      "C):   p-2, q-3, r-1, s-4",
-      "D):   p-4, q-1, r-3, s-2",
+      "C):   p-2, q-1, r-3, s-4",
+      "D):   p-4, q-1, r-3, s-2"
     ],
-    correctAnswer: "a",
-    explanation: "Original Jurisdiction is Art 131 (2), Advisory is Art 143 (1), High Court Writs is Art 226 (3), and Special Leave Petition is Art 136 (4).",
+    "correctAnswer": "C",
+    "explanation": "Original Jurisdiction is Art 131 (2), Advisory is Art 143 (1), High Court Writs is Art 226 (3), and Special Leave Petition is Art 136 (4)."
   },
   {
-    id: "c11-pol-6-mcq-20",
-    question: "In which landmark case did the Supreme Court formulate the 'Vishaka Guidelines' to prevent sexual harassment of women at workplaces?",
-    options: [
+    "id": "c11-pol-6-mcq-20",
+    "question": "In which landmark case did the Supreme Court formulate the 'Vishaka Guidelines' to prevent sexual harassment of women at workplaces?",
+    "options": [
       "A):   Shayara Bano Case (2017)",
-      "B):   Vishaka v. State of Rajasthan (1997)",
+      "B):   Minerva Mills Case (1980)",
       "C):   Navtej Singh Johar Case (2018)",
-      "D):   Minerva Mills Case (1980)",
+      "D):   Vishaka v. State of Rajasthan (1997)"
     ],
-    correctAnswer: "b",
-    explanation: "In Vishaka v. State of Rajasthan (1997), a public interest petition led the Supreme Court to lay down binding guidelines against sexual harassment at the workplace based on Articles 14, 19, and 21.",
-  },
+    "correctAnswer": "D",
+    "explanation": "In Vishaka v. State of Rajasthan (1997), a public interest petition led the Supreme Court to lay down binding guidelines against sexual harassment at the workplace based on Articles 14, 19, and 21."
+  }
 ];

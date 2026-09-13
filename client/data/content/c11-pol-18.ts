@@ -657,243 +657,243 @@ export const c11Pol18HtmlSolutions = `
 
 export const c11Pol18Mcqs = [
   {
-    id: "c11-pol-18-mcq-1",
-    question: "Who among the following British writers originally coined the term 'Secularism' in 1851?",
-    options: [
+    "id": "c11-pol-18-mcq-1",
+    "question": "Who among the following British writers originally coined the term 'Secularism' in 1851?",
+    "options": [
       "A):   George Jacob Holyoake",
       "B):   John Stuart Mill",
       "C):   Jeremy Bentham",
       "D):   Harold Laski"
     ],
-    correctAnswer: "A",
-    explanation: "British secularist George Jacob Holyoake coined the term 'secularism' in 1851 to describe a social order separate from religion, without actively opposing it."
+    "correctAnswer": "A",
+    "explanation": "British secularist George Jacob Holyoake coined the term 'secularism' in 1851 to describe a social order separate from religion, without actively opposing it."
   },
   {
-    id: "c11-pol-18-mcq-2",
-    question: "What are the two distinct dimensions of religious domination that secularism combats?",
-    options: [
+    "id": "c11-pol-18-mcq-2",
+    "question": "What are the two distinct dimensions of religious domination that secularism combats?",
+    "options": [
       "A):   Inter-state wars and civil wars",
       "B):   Inter-religious domination (between religions) and Intra-religious domination (within a religion)",
       "C):   Capitalism and Socialism",
       "D):   Monarchy and Feudalism"
     ],
-    correctAnswer: "B",
-    explanation: "Secularism opposes both inter-religious domination (majority oppressing minorities) and intra-religious domination (hierarchical oppression within a religion)."
+    "correctAnswer": "B",
+    "explanation": "Secularism opposes both inter-religious domination (majority oppressing minorities) and intra-religious domination (hierarchical oppression within a religion)."
   },
   {
-    id: "c11-pol-18-mcq-3",
-    question: "Which of the following is an example of 'Intra-Religious Domination'?",
-    options: [
+    "id": "c11-pol-18-mcq-3",
+    "question": "Which of the following is an example of 'Intra-Religious Domination'?",
+    "options": [
       "A):   A riot between two different religious groups",
-      "B):   Caste-based untouchability and denial of temple entry to Dalits within Hinduism",
-      "C):   A war between two nations",
+      "B):   A war between two nations",
+      "C):   Caste-based untouchability and denial of temple entry to Dalits within Hinduism",
       "D):   Charging highway tolls on transport vehicles"
     ],
-    correctAnswer: "B",
-    explanation: "Caste untouchability and gender discrimination within a religious community are classic examples of intra-religious domination."
+    "correctAnswer": "C",
+    "explanation": "Caste untouchability and gender discrimination within a religious community are classic examples of intra-religious domination."
   },
   {
-    id: "c11-pol-18-mcq-4",
-    question: "Which of the following best defines a 'Theocratic State'?",
-    options: [
+    "id": "c11-pol-18-mcq-4",
+    "question": "Which of the following best defines a 'Theocratic State'?",
+    "options": [
       "A):   A state where all citizens are forced to be atheists",
-      "B):   A state governed directly by religious clerics or divine scriptural law with an official state religion",
+      "B):   A state with a federal structure",
       "C):   A state with no constitution",
-      "D):   A state with a federal structure"
+      "D):   A state governed directly by religious clerics or divine scriptural law with an official state religion"
     ],
-    correctAnswer: "B",
-    explanation: "A theocracy is governed by religious authority according to sacred religious doctrine, denying equal rights to non-believers (e.g., Vatican City, Iran)."
+    "correctAnswer": "D",
+    "explanation": "A theocracy is governed by religious authority according to sacred religious doctrine, denying equal rights to non-believers (e.g., Vatican City, Iran)."
   },
   {
-    id: "c11-pol-18-mcq-5",
-    question: "Who coined the phrase 'Wall of Separation between Church and State' in the context of Western secularism?",
-    options: [
-      "A):   George Washington",
-      "B):   Thomas Jefferson",
+    "id": "c11-pol-18-mcq-5",
+    "question": "Who coined the phrase 'Wall of Separation between Church and State' in the context of Western secularism?",
+    "options": [
+      "A):   Thomas Jefferson",
+      "B):   George Washington",
       "C):   Abraham Lincoln",
       "D):   Woodrow Wilson"
     ],
-    correctAnswer: "B",
-    explanation: "Thomas Jefferson in his 1802 letter to the Danbury Baptists famously articulated that the First Amendment built a 'wall of separation between church and state'."
+    "correctAnswer": "A",
+    "explanation": "Thomas Jefferson in his 1802 letter to the Danbury Baptists famously articulated that the First Amendment built a 'wall of separation between church and state'."
   },
   {
-    id: "c11-pol-18-mcq-6",
-    question: "Which political philosopher formulated the concept of 'Principled Distance' to explain the unique nature of Indian secularism?",
-    options: [
+    "id": "c11-pol-18-mcq-6",
+    "question": "Which political philosopher formulated the concept of 'Principled Distance' to explain the unique nature of Indian secularism?",
+    "options": [
       "A):   Amartya Sen",
       "B):   Rajeev Bhargava",
       "C):   Pratap Bhanu Mehta",
       "D):   Ramachandra Guha"
     ],
-    correctAnswer: "B",
-    explanation: "Professor Rajeev Bhargava conceptualized 'Principled Distance' to describe how the Indian state intervenes in religion when justice demands and withdraws when it doesn't."
+    "correctAnswer": "B",
+    "explanation": "Professor Rajeev Bhargava conceptualized 'Principled Distance' to describe how the Indian state intervenes in religion when justice demands and withdraws when it doesn't."
   },
   {
-    id: "c11-pol-18-mcq-7",
-    question: "Which Constitutional Amendment formally added the word 'SECULAR' to the Preamble of the Indian Constitution?",
-    options: [
+    "id": "c11-pol-18-mcq-7",
+    "question": "Which Constitutional Amendment formally added the word 'SECULAR' to the Preamble of the Indian Constitution?",
+    "options": [
       "A):   44th Amendment Act, 1978",
-      "B):   42nd Amendment Act, 1976",
-      "C):   1st Amendment Act, 1951",
+      "B):   1st Amendment Act, 1951",
+      "C):   42nd Amendment Act, 1976",
       "D):   86th Amendment Act, 2002"
     ],
-    correctAnswer: "B",
-    explanation: "The 42nd Constitutional Amendment Act of 1976 inserted the words 'SECULAR' and 'SOCIALIST' into the Preamble."
+    "correctAnswer": "C",
+    "explanation": "The 42nd Constitutional Amendment Act of 1976 inserted the words 'SECULAR' and 'SOCIALIST' into the Preamble."
   },
   {
-    id: "c11-pol-18-mcq-8",
-    question: "In which landmark judgment did a nine-judge bench of the Supreme Court declare Secularism to be part of the 'Basic Structure' of the Indian Constitution?",
-    options: [
+    "id": "c11-pol-18-mcq-8",
+    "question": "In which landmark judgment did a nine-judge bench of the Supreme Court declare Secularism to be part of the 'Basic Structure' of the Indian Constitution?",
+    "options": [
       "A):   Kesavananda Bharati case (1973)",
-      "B):   S.R. Bommai v. Union of India (1994)",
+      "B):   Golaknath case (1967)",
       "C):   Minerva Mills case (1980)",
-      "D):   Golaknath case (1967)"
+      "D):   S.R. Bommai v. Union of India (1994)"
     ],
-    correctAnswer: "B",
-    explanation: "In S.R. Bommai v. Union of India (1994), the Supreme Court held that secularism is an inviolable basic feature of the Indian Constitution."
+    "correctAnswer": "D",
+    "explanation": "In S.R. Bommai v. Union of India (1994), the Supreme Court held that secularism is an inviolable basic feature of the Indian Constitution."
   },
   {
-    id: "c11-pol-18-mcq-9",
-    question: "Under the Western model of secularism, how does the state handle religious reform?",
-    options: [
-      "A):   The state actively bans all outdated religious customs",
-      "B):   The state maintains strict non-interference and cannot intervene in religion even for progressive social reform",
+    "id": "c11-pol-18-mcq-9",
+    "question": "Under the Western model of secularism, how does the state handle religious reform?",
+    "options": [
+      "A):   The state maintains strict non-interference and cannot intervene in religion even for progressive social reform",
+      "B):   The state actively bans all outdated religious customs",
       "C):   The state appoints all church bishops",
       "D):   The state merges church and courts"
     ],
-    correctAnswer: "B",
-    explanation: "Under the strict Western wall of separation, the state cannot interfere in internal religious customs, even if they are socially regressive."
+    "correctAnswer": "A",
+    "explanation": "Under the strict Western wall of separation, the state cannot interfere in internal religious customs, even if they are socially regressive."
   },
   {
-    id: "c11-pol-18-mcq-10",
-    question: "How did the Indian state intervene in religion to eradicate a grave form of intra-religious oppression under Article 17?",
-    options: [
+    "id": "c11-pol-18-mcq-10",
+    "question": "How did the Indian state intervene in religion to eradicate a grave form of intra-religious oppression under Article 17?",
+    "options": [
       "A):   By abolishing Zamindari landholdings",
       "B):   By completely abolishing and criminalizing the practice of 'Untouchability'",
       "C):   By creating public sector banks",
       "D):   By nationalizing airlines"
     ],
-    correctAnswer: "B",
-    explanation: "Article 17 abolished untouchability, demonstrating Indian secularism's commitment to reforming oppressive intra-religious social practices."
+    "correctAnswer": "B",
+    "explanation": "Article 17 abolished untouchability, demonstrating Indian secularism's commitment to reforming oppressive intra-religious social practices."
   },
   {
-    id: "c11-pol-18-mcq-11",
-    question: "Which articles of the Indian Constitution guarantee Freedom of Religion to all individuals?",
-    options: [
+    "id": "c11-pol-18-mcq-11",
+    "question": "Which articles of the Indian Constitution guarantee Freedom of Religion to all individuals?",
+    "options": [
       "A):   Articles 14 to 18",
-      "B):   Articles 25 to 28",
-      "C):   Articles 32 to 35",
+      "B):   Articles 32 to 35",
+      "C):   Articles 25 to 28",
       "D):   Articles 36 to 51"
     ],
-    correctAnswer: "B",
-    explanation: "Articles 25 through 28 protect freedom of conscience, the right to profess, practice, and propagate religion, and manage religious affairs."
+    "correctAnswer": "C",
+    "explanation": "Articles 25 through 28 protect freedom of conscience, the right to profess, practice, and propagate religion, and manage religious affairs."
   },
   {
-    id: "c11-pol-18-mcq-12",
-    question: "What right do Articles 29 and 30 of the Indian Constitution confer upon religious and linguistic minorities?",
-    options: [
+    "id": "c11-pol-18-mcq-12",
+    "question": "What right do Articles 29 and 30 of the Indian Constitution confer upon religious and linguistic minorities?",
+    "options": [
       "A):   Exemption from paying all income taxes",
-      "B):   The right to conserve their distinct language, script, or culture, and establish educational institutions of their choice",
+      "B):   The right to print their own currency",
       "C):   The right to declare martial law in their areas",
-      "D):   The right to print their own currency"
+      "D):   The right to conserve their distinct language, script, or culture, and establish educational institutions of their choice"
     ],
-    correctAnswer: "B",
-    explanation: "Articles 29 and 30 guarantee cultural and educational rights to linguistic and religious minorities to protect them from assimilation."
+    "correctAnswer": "D",
+    "explanation": "Articles 29 and 30 guarantee cultural and educational rights to linguistic and religious minorities to protect them from assimilation."
   },
   {
-    id: "c11-pol-18-mcq-13",
-    question: "Why does the Indian model of secularism provide financial grant-in-aid to religious minority educational institutions?",
-    options: [
-      "A):   Because the constitution forces all schools to teach scripture",
-      "B):   To ensure that cultural minorities have equal opportunity to maintain their heritage without financial deprivation",
+    "id": "c11-pol-18-mcq-13",
+    "question": "Why does the Indian model of secularism provide financial grant-in-aid to religious minority educational institutions?",
+    "options": [
+      "A):   To ensure that cultural minorities have equal opportunity to maintain their heritage without financial deprivation",
+      "B):   Because the constitution forces all schools to teach scripture",
       "C):   Because minority schools do not charge fees",
       "D):   To convert students to minority religions"
     ],
-    correctAnswer: "B",
-    explanation: "State aid to minority educational institutions ensures substantive equality and empowers cultural minorities to preserve their educational institutions."
+    "correctAnswer": "A",
+    "explanation": "State aid to minority educational institutions ensures substantive equality and empowers cultural minorities to preserve their educational institutions."
   },
   {
-    id: "c11-pol-18-mcq-14",
-    question: "What did Emperor Ashoka's 12th Major Rock Edict proclaim regarding religious harmony?",
-    options: [
+    "id": "c11-pol-18-mcq-14",
+    "question": "What did Emperor Ashoka's 12th Major Rock Edict proclaim regarding religious harmony?",
+    "options": [
       "A):   That only Buddhism should be practiced throughout the empire",
       "B):   That honoring other people's faiths strengthens one's own faith, whereas disparaging others harms one's own faith",
       "C):   That all religious books must be destroyed",
       "D):   That monks must fight wars"
     ],
-    correctAnswer: "B",
-    explanation: "Ashoka's 12th Rock Edict is one of humanity's earliest declarations of secular tolerance: respecting other faiths enhances one's own religion."
+    "correctAnswer": "B",
+    "explanation": "Ashoka's 12th Rock Edict is one of humanity's earliest declarations of secular tolerance: respecting other faiths enhances one's own religion."
   },
   {
-    id: "c11-pol-18-mcq-15",
-    question: "Why is the criticism that 'Secularism is Anti-Religious' incorrect in the Indian context?",
-    options: [
+    "id": "c11-pol-18-mcq-15",
+    "question": "Why is the criticism that 'Secularism is Anti-Religious' incorrect in the Indian context?",
+    "options": [
       "A):   Because all politicians are priests",
-      "B):   Because Indian secularism protects the freedom of all faiths (*Sarva Dharma Sambhava*) and opposes only bigotry and coercion",
-      "C):   Because the Constitution established Hinduism as the state religion",
+      "B):   Because the Constitution established Hinduism as the state religion",
+      "C):   Because Indian secularism protects the freedom of all faiths (*Sarva Dharma Sambhava*) and opposes only bigotry and coercion",
       "D):   Because atheism is illegal in India"
     ],
-    correctAnswer: "B",
-    explanation: "Indian secularism is not atheistic; it actively protects religious freedom and festivals for all faiths while curbing communal hate."
+    "correctAnswer": "C",
+    "explanation": "Indian secularism is not atheistic; it actively protects religious freedom and festivals for all faiths while curbing communal hate."
   },
   {
-    id: "c11-pol-18-mcq-16",
-    question: "In Turkey, how did Mustafa Kemal Ataturk implement secularism in the 1920s?",
-    options: [
+    "id": "c11-pol-18-mcq-16",
+    "question": "In Turkey, how did Mustafa Kemal Ataturk implement secularism in the 1920s?",
+    "options": [
       "A):   By declaring Turkey an Islamic theocracy",
-      "B):   By aggressively modernizing and secularizing the state, abolishing the Caliphate, banning traditional religious attire, and adopting the Latin alphabet",
+      "B):   By merging church and military",
       "C):   By holding daily plebiscites",
-      "D):   By merging church and military"
+      "D):   By aggressively modernizing and secularizing the state, abolishing the Caliphate, banning traditional religious attire, and adopting the Latin alphabet"
     ],
-    correctAnswer: "B",
-    explanation: "Ataturk implemented aggressive, state-enforced Western secularism in Turkey, abolishing the Caliphate, religious courts, and traditional dress."
+    "correctAnswer": "D",
+    "explanation": "Ataturk implemented aggressive, state-enforced Western secularism in Turkey, abolishing the Caliphate, religious courts, and traditional dress."
   },
   {
-    id: "c11-pol-18-mcq-17",
-    question: "Which high-level committee's 2006 report empirically proved that religious minorities in India face deep socio-economic deficits rather than 'appeasement'?",
-    options: [
-      "A):   Sarkaria Commission",
-      "B):   Justice Rajindar Sachar Committee",
+    "id": "c11-pol-18-mcq-17",
+    "question": "Which high-level committee's 2006 report empirically proved that religious minorities in India face deep socio-economic deficits rather than 'appeasement'?",
+    "options": [
+      "A):   Justice Rajindar Sachar Committee",
+      "B):   Sarkaria Commission",
       "C):   Kothari Commission",
       "D):   Mandal Commission"
     ],
-    correctAnswer: "B",
-    explanation: "The Sachar Committee Report (2006) revealed the socio-economic and educational backwardness of Indian Muslims, disproving the myth of appeasement."
+    "correctAnswer": "A",
+    "explanation": "The Sachar Committee Report (2006) revealed the socio-economic and educational backwardness of Indian Muslims, disproving the myth of appeasement."
   },
   {
-    id: "c11-pol-18-mcq-18",
-    question: "Which Article of the Indian Constitution prohibits the state from compelling any citizen to pay taxes for the promotion of any particular religion?",
-    options: [
+    "id": "c11-pol-18-mcq-18",
+    "question": "Which Article of the Indian Constitution prohibits the state from compelling any citizen to pay taxes for the promotion of any particular religion?",
+    "options": [
       "A):   Article 21",
       "B):   Article 27",
       "C):   Article 32",
       "D):   Article 19"
     ],
-    correctAnswer: "B",
-    explanation: "Article 27 prohibits the levying of taxes where the proceeds are specifically appropriated for promoting or maintaining any particular religion."
+    "correctAnswer": "B",
+    "explanation": "Article 27 prohibits the levying of taxes where the proceeds are specifically appropriated for promoting or maintaining any particular religion."
   },
   {
-    id: "c11-pol-18-mcq-19",
-    question: "How does the Indian Constitution deal with religious instruction in state-run schools under Article 28?",
-    options: [
+    "id": "c11-pol-18-mcq-19",
+    "question": "How does the Indian Constitution deal with religious instruction in state-run schools under Article 28?",
+    "options": [
       "A):   It mandates daily scriptural tests",
-      "B):   It completely prohibits religious instruction in educational institutions wholly maintained out of state funds",
-      "C):   It permits only Latin prayers",
+      "B):   It permits only Latin prayers",
+      "C):   It completely prohibits religious instruction in educational institutions wholly maintained out of state funds",
       "D):   It requires military hymns"
     ],
-    correctAnswer: "B",
-    explanation: "Article 28(1) strictly provides that no religious instruction shall be provided in any educational institution wholly maintained out of state funds."
+    "correctAnswer": "C",
+    "explanation": "Article 28(1) strictly provides that no religious instruction shall be provided in any educational institution wholly maintained out of state funds."
   },
   {
-    id: "c11-pol-18-mcq-20",
-    question: "Why is Indian secularism described as 'principled' rather than opportunistic?",
-    options: [
+    "id": "c11-pol-18-mcq-20",
+    "question": "Why is Indian secularism described as 'principled' rather than opportunistic?",
+    "options": [
       "A):   Because it is written in English",
-      "B):   Because state intervention or non-interference is guided by fundamental constitutional values of equality, liberty, and human dignity rather than vote-bank calculations",
+      "B):   Because judges are appointed for life",
       "C):   Because it changes with every election",
-      "D):   Because judges are appointed for life"
+      "D):   Because state intervention or non-interference is guided by fundamental constitutional values of equality, liberty, and human dignity rather than vote-bank calculations"
     ],
-    correctAnswer: "B",
-    explanation: "It is 'principled' because state action is judged strictly by whether it defends core constitutional values like human dignity, justice, and non-domination."
+    "correctAnswer": "D",
+    "explanation": "It is 'principled' because state action is judged strictly by whether it defends core constitutional values like human dignity, justice, and non-domination."
   }
 ];

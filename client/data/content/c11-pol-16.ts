@@ -475,243 +475,243 @@ export const c11Pol16HtmlSolutions = `
 
 export const c11Pol16Mcqs = [
   {
-    id: "c11-pol-16-mcq-1",
-    question: "Which British sociologist formulated the influential theory that citizenship developed through Civil, Political, and Social rights?",
-    options: [
-      "A):   Karl Marx",
-      "B):   T.H. Marshall",
+    "id": "c11-pol-16-mcq-1",
+    "question": "Which British sociologist formulated the influential theory that citizenship developed through Civil, Political, and Social rights?",
+    "options": [
+      "A):   T.H. Marshall",
+      "B):   Karl Marx",
       "C):   Max Weber",
       "D):   Anthony Giddens"
     ],
-    correctAnswer: "B",
-    explanation: "T.H. Marshall in his 1950 seminal work 'Citizenship and Social Class' traced the expansion of rights across the 18th, 19th, and 20th centuries."
+    "correctAnswer": "A",
+    "explanation": "T.H. Marshall in his 1950 seminal work 'Citizenship and Social Class' traced the expansion of rights across the 18th, 19th, and 20th centuries."
   },
   {
-    id: "c11-pol-16-mcq-2",
-    question: "What does 'Full and Equal Membership' of a political community imply for citizenship?",
-    options: [
+    "id": "c11-pol-16-mcq-2",
+    "question": "What does 'Full and Equal Membership' of a political community imply for citizenship?",
+    "options": [
       "A):   Only billionaires have the right to vote",
       "B):   All citizens enjoy equal constitutional rights without discrimination based on caste, religion, or gender",
       "C):   Citizens are forced to speak only one language",
       "D):   Foreign tourists have the right to contest parliamentary elections"
     ],
-    correctAnswer: "B",
-    explanation: "Full and equal membership ensures that every citizen stands as a political equal before the law, with identical rights and civic entitlements."
+    "correctAnswer": "B",
+    "explanation": "Full and equal membership ensures that every citizen stands as a political equal before the law, with identical rights and civic entitlements."
   },
   {
-    id: "c11-pol-16-mcq-3",
-    question: "Which of the following rights is strictly RESERVED for Indian citizens and NOT available to foreigners (aliens)?",
-    options: [
+    "id": "c11-pol-16-mcq-3",
+    "question": "Which of the following rights is strictly RESERVED for Indian citizens and NOT available to foreigners (aliens)?",
+    "options": [
       "A):   Right to life and personal liberty (Article 21)",
-      "B):   Right to vote in Lok Sabha and Vidhan Sabha elections",
-      "C):   Protection against double jeopardy (Article 20)",
+      "B):   Protection against double jeopardy (Article 20)",
+      "C):   Right to vote in Lok Sabha and Vidhan Sabha elections",
       "D):   Freedom of conscience and religion (Article 25)"
     ],
-    correctAnswer: "B",
-    explanation: "Political rights such as voting in legislative elections and contesting public office are strictly reserved for citizens under the Indian Constitution."
+    "correctAnswer": "C",
+    "explanation": "Political rights such as voting in legislative elections and contesting public office are strictly reserved for citizens under the Indian Constitution."
   },
   {
-    id: "c11-pol-16-mcq-4",
-    question: "The legal doctrine of 'Jus Soli' grants citizenship on the basis of which criteria?",
-    options: [
+    "id": "c11-pol-16-mcq-4",
+    "question": "The legal doctrine of 'Jus Soli' grants citizenship on the basis of which criteria?",
+    "options": [
       "A):   The ancestral bloodline of the parents",
-      "B):   The place of birth within the national territory of the state",
+      "B):   The university degrees held by the individual",
       "C):   The amount of taxes paid by the applicant",
-      "D):   The university degrees held by the individual"
+      "D):   The place of birth within the national territory of the state"
     ],
-    correctAnswer: "B",
-    explanation: "'Jus Soli' (Right of Soil) grants citizenship automatically to any child born on the physical territory of the state."
+    "correctAnswer": "D",
+    "explanation": "'Jus Soli' (Right of Soil) grants citizenship automatically to any child born on the physical territory of the state."
   },
   {
-    id: "c11-pol-16-mcq-5",
-    question: "The legal doctrine of 'Jus Sanguinis' grants citizenship on the basis of:",
-    options: [
+    "id": "c11-pol-16-mcq-5",
+    "question": "The legal doctrine of 'Jus Sanguinis' grants citizenship on the basis of:",
+    "options": [
       "A):   Blood relation / descent from citizen parents",
       "B):   Purchasing agricultural land",
       "C):   Marrying a foreign diplomat",
       "D):   Continuous residence in a hotel"
     ],
-    correctAnswer: "A",
-    explanation: "'Jus Sanguinis' (Right of Blood) confers citizenship through ancestral lineage or the citizenship of one's parents."
+    "correctAnswer": "A",
+    "explanation": "'Jus Sanguinis' (Right of Blood) confers citizenship through ancestral lineage or the citizenship of one's parents."
   },
   {
-    id: "c11-pol-16-mcq-6",
-    question: "In which landmark 1985 judgment did the Supreme Court of India rule that the Right to Livelihood is an integral part of the Right to Life for pavement dwellers?",
-    options: [
+    "id": "c11-pol-16-mcq-6",
+    "question": "In which landmark 1985 judgment did the Supreme Court of India rule that the Right to Livelihood is an integral part of the Right to Life for pavement dwellers?",
+    "options": [
       "A):   Kesavananda Bharati v. State of Kerala",
       "B):   Olga Tellis v. Bombay Municipal Corporation",
       "C):   Maneka Gandhi v. Union of India",
       "D):   Golaknath v. State of Punjab"
     ],
-    correctAnswer: "B",
-    explanation: "In the Olga Tellis case (1985), the Supreme Court ruled that pavement and slum dwellers cannot be evicted without alternative rehabilitation as it destroys their livelihood."
+    "correctAnswer": "B",
+    "explanation": "In the Olga Tellis case (1985), the Supreme Court ruled that pavement and slum dwellers cannot be evicted without alternative rehabilitation as it destroys their livelihood."
   },
   {
-    id: "c11-pol-16-mcq-7",
-    question: "What type of citizenship does the Constitution of India establish for all its citizens?",
-    options: [
+    "id": "c11-pol-16-mcq-7",
+    "question": "What type of citizenship does the Constitution of India establish for all its citizens?",
+    "options": [
       "A):   Dual citizenship (separate state and national citizenship)",
-      "B):   Single citizenship for the entire Union of India",
-      "C):   Triple citizenship",
+      "B):   Triple citizenship",
+      "C):   Single citizenship for the entire Union of India",
       "D):   No official citizenship"
     ],
-    correctAnswer: "B",
-    explanation: "Unlike the United States (which has federal and state citizenship), India established a Single Citizenship to foster national integration."
+    "correctAnswer": "C",
+    "explanation": "Unlike the United States (which has federal and state citizenship), India established a Single Citizenship to foster national integration."
   },
   {
-    id: "c11-pol-16-mcq-8",
-    question: "Which articles of the Indian Constitution deal with Citizenship at the commencement of the Constitution?",
-    options: [
+    "id": "c11-pol-16-mcq-8",
+    "question": "Which articles of the Indian Constitution deal with Citizenship at the commencement of the Constitution?",
+    "options": [
       "A):   Articles 1 to 4",
-      "B):   Articles 5 to 11 (Part II)",
+      "B):   Articles 36 to 51 (Part IV)",
       "C):   Articles 12 to 35 (Part III)",
-      "D):   Articles 36 to 51 (Part IV)"
+      "D):   Articles 5 to 11 (Part II)"
     ],
-    correctAnswer: "B",
-    explanation: "Part II (Articles 5 through 11) of the Indian Constitution governs citizenship provisions and empowers Parliament to regulate citizenship by law."
+    "correctAnswer": "D",
+    "explanation": "Part II (Articles 5 through 11) of the Indian Constitution governs citizenship provisions and empowers Parliament to regulate citizenship by law."
   },
   {
-    id: "c11-pol-16-mcq-9",
-    question: "What was the system of institutionalized racial segregation and denial of citizenship rights to the Black majority in South Africa called?",
-    options: [
+    "id": "c11-pol-16-mcq-9",
+    "question": "What was the system of institutionalized racial segregation and denial of citizenship rights to the Black majority in South Africa called?",
+    "options": [
       "A):   Apartheid",
       "B):   Holocaust",
       "C):   Feudalism",
       "D):   Fascism"
     ],
-    correctAnswer: "A",
-    explanation: "Apartheid (1948–1994) in South Africa stripped the Black majority of citizenship rights and forced them into segregated homelands (Bantustans)."
+    "correctAnswer": "A",
+    "explanation": "Apartheid (1948–1994) in South Africa stripped the Black majority of citizenship rights and forced them into segregated homelands (Bantustans)."
   },
   {
-    id: "c11-pol-16-mcq-10",
-    question: "Which political philosopher described stateless refugees as being deprived of 'the right to have rights'?",
-    options: [
-      "A):   Hannah Arendt",
-      "B):   Jean-Jacques Rousseau",
+    "id": "c11-pol-16-mcq-10",
+    "question": "Which political philosopher described stateless refugees as being deprived of 'the right to have rights'?",
+    "options": [
+      "A):   Jean-Jacques Rousseau",
+      "B):   Hannah Arendt",
       "C):   Niccolo Machiavelli",
       "D):   John Stuart Mill"
     ],
-    correctAnswer: "A",
-    explanation: "Hannah Arendt in 'The Origins of Totalitarianism' observed that when people lose national citizenship, they are deprived of 'the right to have rights'."
+    "correctAnswer": "B",
+    "explanation": "Hannah Arendt in 'The Origins of Totalitarianism' observed that when people lose national citizenship, they are deprived of 'the right to have rights'."
   },
   {
-    id: "c11-pol-16-mcq-11",
-    question: "Which fundamental right under the Indian Constitution guarantees the freedom to move freely and reside anywhere in India, contradicting the 'Sons of the Soil' ideology?",
-    options: [
-      "A):   Article 19(1)(d) and (e)",
+    "id": "c11-pol-16-mcq-11",
+    "question": "Which fundamental right under the Indian Constitution guarantees the freedom to move freely and reside anywhere in India, contradicting the 'Sons of the Soil' ideology?",
+    "options": [
+      "A):   Article 30",
       "B):   Article 25",
-      "C):   Article 30",
+      "C):   Article 19(1)(d) and (e)",
       "D):   Article 17"
     ],
-    correctAnswer: "A",
-    explanation: "Article 19(1)(d) and (e) guarantees the right of every citizen to move freely throughout India and reside/settle in any part of its territory."
+    "correctAnswer": "C",
+    "explanation": "Article 19(1)(d) and (e) guarantees the right of every citizen to move freely throughout India and reside/settle in any part of its territory."
   },
   {
-    id: "c11-pol-16-mcq-12",
-    question: "What is the primary characteristic of an 'Ethno-Cultural' model of citizenship?",
-    options: [
+    "id": "c11-pol-16-mcq-12",
+    "question": "What is the primary characteristic of an 'Ethno-Cultural' model of citizenship?",
+    "options": [
       "A):   Citizenship is granted only on passing an engineering examination",
-      "B):   Citizenship is defined strictly by shared ancestral blood, race, or a single dominant religion",
+      "B):   Citizenship changes every five years",
       "C):   Citizenship is open equally to all human beings without border controls",
-      "D):   Citizenship changes every five years"
+      "D):   Citizenship is defined strictly by shared ancestral blood, race, or a single dominant religion"
     ],
-    correctAnswer: "B",
-    explanation: "Ethno-cultural citizenship defines belonging based on blood, common ethnicity, or religion, frequently excluding or marginalizing minorities."
+    "correctAnswer": "D",
+    "explanation": "Ethno-cultural citizenship defines belonging based on blood, common ethnicity, or religion, frequently excluding or marginalizing minorities."
   },
   {
-    id: "c11-pol-16-mcq-13",
-    question: "Why was the 'Democratic Civic' model of citizenship adopted by the makers of the Indian Constitution?",
-    options: [
-      "A):   Because India was a homogeneous society with only one religion and language",
-      "B):   To unite a diverse, pluralistic, multi-religious, and multi-linguistic society under equal constitutional rights",
+    "id": "c11-pol-16-mcq-13",
+    "question": "Why was the 'Democratic Civic' model of citizenship adopted by the makers of the Indian Constitution?",
+    "options": [
+      "A):   To unite a diverse, pluralistic, multi-religious, and multi-linguistic society under equal constitutional rights",
+      "B):   Because India was a homogeneous society with only one religion and language",
       "C):   Because the British forced them to adopt it",
       "D):   To ban all regional languages"
     ],
-    correctAnswer: "B",
-    explanation: "India chose the civic democratic model so that members of all religious, linguistic, and cultural communities enjoy equal citizenship under the Constitution."
+    "correctAnswer": "A",
+    "explanation": "India chose the civic democratic model so that members of all religious, linguistic, and cultural communities enjoy equal citizenship under the Constitution."
   },
   {
-    id: "c11-pol-16-mcq-14",
-    question: "What is 'Differentiated Citizenship' as proposed by political theorist Iris Marion Young?",
-    options: [
-      "A):   Granting special group rights and affirmative measures to historically disadvantaged minorities to achieve substantive equality",
-      "B):   Depriving poor people of the right to vote",
+    "id": "c11-pol-16-mcq-14",
+    "question": "What is 'Differentiated Citizenship' as proposed by political theorist Iris Marion Young?",
+    "options": [
+      "A):   Depriving poor people of the right to vote",
+      "B):   Granting special group rights and affirmative measures to historically disadvantaged minorities to achieve substantive equality",
       "C):   Issuing different colored passports based on wealth",
       "D):   Abolishing all courts"
     ],
-    correctAnswer: "A",
-    explanation: "Differentiated citizenship argues that identical treatment of unequals perpetuates injustice; disadvantaged groups require special protections to attain real equality."
+    "correctAnswer": "B",
+    "explanation": "Differentiated citizenship argues that identical treatment of unequals perpetuates injustice; disadvantaged groups require special protections to attain real equality."
   },
   {
-    id: "c11-pol-16-mcq-15",
-    question: "Which of the following is a primary argument IN FAVOR of Global Citizenship?",
-    options: [
+    "id": "c11-pol-16-mcq-15",
+    "question": "Which of the following is a primary argument IN FAVOR of Global Citizenship?",
+    "options": [
       "A):   All countries have identical tax rates",
-      "B):   Crucial planetary crises like climate change, pandemics, and environmental degradation cross national boundaries and require global solidarity",
-      "C):   Every person speaks the same language",
+      "B):   Every person speaks the same language",
+      "C):   Crucial planetary crises like climate change, pandemics, and environmental degradation cross national boundaries and require global solidarity",
       "D):   Nation-states have ceased to exist"
     ],
-    correctAnswer: "B",
-    explanation: "Global challenges like global warming, pandemics, and refugee crises cannot be solved by nation-states in isolation and demand transnational cooperation."
+    "correctAnswer": "C",
+    "explanation": "Global challenges like global warming, pandemics, and refugee crises cannot be solved by nation-states in isolation and demand transnational cooperation."
   },
   {
-    id: "c11-pol-16-mcq-16",
-    question: "What is the MAIN obstacle preventing formal, legal Global Citizenship today?",
-    options: [
+    "id": "c11-pol-16-mcq-16",
+    "question": "What is the MAIN obstacle preventing formal, legal Global Citizenship today?",
+    "options": [
       "A):   There is no internet in most countries",
-      "B):   The absence of a sovereign world government, global courts, and international enforcement mechanisms to guarantee rights",
+      "B):   The United Nations has been abolished",
       "C):   Nobody wants to travel abroad",
-      "D):   The United Nations has been abolished"
+      "D):   The absence of a sovereign world government, global courts, and international enforcement mechanisms to guarantee rights"
     ],
-    correctAnswer: "B",
-    explanation: "Real citizenship requires an enforcing state authority. Without a world government or global police, legal global citizenship cannot exist."
+    "correctAnswer": "D",
+    "explanation": "Real citizenship requires an enforcing state authority. Without a world government or global police, legal global citizenship cannot exist."
   },
   {
-    id: "c11-pol-16-mcq-17",
-    question: "In ancient Athens (Greece), who among the following were EXCLUDED from citizenship?",
-    options: [
+    "id": "c11-pol-16-mcq-17",
+    "question": "In ancient Athens (Greece), who among the following were EXCLUDED from citizenship?",
+    "options": [
       "A):   Women, slaves, and resident foreigners (metics)",
       "B):   Soldiers and poets",
       "C):   Philosophers alone",
       "D):   No one was excluded"
     ],
-    correctAnswer: "A",
-    explanation: "Athenian democracy was limited to free adult male property owners; women, slaves, and metics (foreigners) had zero citizenship rights."
+    "correctAnswer": "A",
+    "explanation": "Athenian democracy was limited to free adult male property owners; women, slaves, and metics (foreigners) had zero citizenship rights."
   },
   {
-    id: "c11-pol-16-mcq-18",
-    question: "Which country was the first to grant voting rights (suffrage) to all adult women in 1893?",
-    options: [
+    "id": "c11-pol-16-mcq-18",
+    "question": "Which country was the first to grant voting rights (suffrage) to all adult women in 1893?",
+    "options": [
       "A):   United States",
-      "B):   United Kingdom",
-      "C):   New Zealand",
+      "B):   New Zealand",
+      "C):   United Kingdom",
       "D):   Switzerland"
     ],
-    correctAnswer: "C",
-    explanation: "New Zealand became the first self-governing country in the world to grant all adult women the right to vote in parliamentary elections in 1893."
+    "correctAnswer": "B",
+    "explanation": "New Zealand became the first self-governing country in the world to grant all adult women the right to vote in parliamentary elections in 1893."
   },
   {
-    id: "c11-pol-16-mcq-19",
-    question: "What happens if an Indian citizen voluntarily acquires the citizenship of another foreign country?",
-    options: [
-      "A):   They automatically lose their Indian citizenship under Article 9",
+    "id": "c11-pol-16-mcq-19",
+    "question": "What happens if an Indian citizen voluntarily acquires the citizenship of another foreign country?",
+    "options": [
+      "A):   They retain both citizenships permanently",
       "B):   They become the President of India",
-      "C):   They retain both citizenships permanently",
+      "C):   They automatically lose their Indian citizenship under Article 9",
       "D):   They receive a monthly pension from the UN"
     ],
-    correctAnswer: "A",
-    explanation: "Under Article 9 of the Indian Constitution, an Indian citizen who voluntarily acquires citizenship of a foreign country ceases to be a citizen of India."
+    "correctAnswer": "C",
+    "explanation": "Under Article 9 of the Indian Constitution, an Indian citizen who voluntarily acquires citizenship of a foreign country ceases to be a citizen of India."
   },
   {
-    id: "c11-pol-16-mcq-20",
-    question: "How does Global Citizenship best function in the contemporary international order?",
-    options: [
+    "id": "c11-pol-16-mcq-20",
+    "question": "How does Global Citizenship best function in the contemporary international order?",
+    "options": [
       "A):   As an official legal passport replacing national identity",
-      "B):   As an ethical and moral compass urging individuals to act with global responsibility alongside national citizenship",
+      "B):   As a system of international taxation",
       "C):   As a scheme to abolish national armies immediately",
-      "D):   As a system of international taxation"
+      "D):   As an ethical and moral compass urging individuals to act with global responsibility alongside national citizenship"
     ],
-    correctAnswer: "B",
-    explanation: "Global citizenship functions as an ethical framework promoting humanitarian empathy, planetary stewardship, and peace alongside national citizenship."
+    "correctAnswer": "D",
+    "explanation": "Global citizenship functions as an ethical framework promoting humanitarian empathy, planetary stewardship, and peace alongside national citizenship."
   }
 ];

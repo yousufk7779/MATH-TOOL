@@ -488,243 +488,243 @@ export const c11Pol17HtmlSolutions = `
 
 export const c11Pol17Mcqs = [
   {
-    id: "c11-pol-17-mcq-1",
-    question: "Who authored the famous book 'Imagined Communities' (1983), conceptualizing nations as socially constructed imagined communities?",
-    options: [
+    "id": "c11-pol-17-mcq-1",
+    "question": "Who authored the famous book 'Imagined Communities' (1983), conceptualizing nations as socially constructed imagined communities?",
+    "options": [
       "A):   Benedict Anderson",
       "B):   Ernest Gellner",
       "C):   Eric Hobsbawm",
       "D):   Harold Laski"
     ],
-    correctAnswer: "A",
-    explanation: "Benedict Anderson in 'Imagined Communities' (1983) defined the nation as an imagined political community that is both inherently limited and sovereign."
+    "correctAnswer": "A",
+    "explanation": "Benedict Anderson in 'Imagined Communities' (1983) defined the nation as an imagined political community that is both inherently limited and sovereign."
   },
   {
-    id: "c11-pol-17-mcq-2",
-    question: "Which 19th-century French philosopher famously described a nation's existence as a 'daily plebiscite'?",
-    options: [
+    "id": "c11-pol-17-mcq-2",
+    "question": "Which 19th-century French philosopher famously described a nation's existence as a 'daily plebiscite'?",
+    "options": [
       "A):   Jean-Jacques Rousseau",
       "B):   Ernest Renan",
       "C):   Voltaire",
       "D):   Montesquieu"
     ],
-    correctAnswer: "B",
-    explanation: "Ernest Renan in his 1882 lecture 'What is a Nation?' stated that a nation's existence is a daily plebiscite based on shared memories and consent to live together."
+    "correctAnswer": "B",
+    "explanation": "Ernest Renan in his 1882 lecture 'What is a Nation?' stated that a nation's existence is a daily plebiscite based on shared memories and consent to live together."
   },
   {
-    id: "c11-pol-17-mcq-3",
-    question: "Which of the following is NOT an essential characteristic that defines a Nation?",
-    options: [
+    "id": "c11-pol-17-mcq-3",
+    "question": "Which of the following is NOT an essential characteristic that defines a Nation?",
+    "options": [
       "A):   Shared historical memory",
       "B):   Attachment to a common territory",
       "C):   A single identical religion practiced by all citizens",
       "D):   Shared political ideals and aspirations"
     ],
-    correctAnswer: "C",
-    explanation: "A nation does not require a single religion. Diverse multi-religious countries like India, Canada, and the United States flourish as unified nations."
+    "correctAnswer": "C",
+    "explanation": "A nation does not require a single religion. Diverse multi-religious countries like India, Canada, and the United States flourish as unified nations."
   },
   {
-    id: "c11-pol-17-mcq-4",
-    question: "The unification of which two European countries in the 19th century was the prime historical example of the 'One Nation, One State' movement?",
-    options: [
-      "A):   Germany and Italy",
+    "id": "c11-pol-17-mcq-4",
+    "question": "The unification of which two European countries in the 19th century was the prime historical example of the 'One Nation, One State' movement?",
+    "options": [
+      "A):   Greece and Turkey",
       "B):   Spain and Portugal",
       "C):   Sweden and Norway",
-      "D):   Greece and Turkey"
+      "D):   Germany and Italy"
     ],
-    correctAnswer: "A",
-    explanation: "The unification of Germany (under Bismarck) and Italy (under Cavour and Garibaldi) embodied the 19th-century ideal of 'One Nation, One State'."
+    "correctAnswer": "D",
+    "explanation": "The unification of Germany (under Bismarck) and Italy (under Cavour and Garibaldi) embodied the 19th-century ideal of 'One Nation, One State'."
   },
   {
-    id: "c11-pol-17-mcq-5",
-    question: "Which US President championed the 'Right to National Self-Determination' in his famous Fourteen Points at the end of World War I?",
-    options: [
-      "A):   Franklin D. Roosevelt",
-      "B):   Woodrow Wilson",
+    "id": "c11-pol-17-mcq-5",
+    "question": "Which US President championed the 'Right to National Self-Determination' in his famous Fourteen Points at the end of World War I?",
+    "options": [
+      "A):   Woodrow Wilson",
+      "B):   Franklin D. Roosevelt",
       "C):   Theodore Roosevelt",
       "D):   Abraham Lincoln"
     ],
-    correctAnswer: "B",
-    explanation: "President Woodrow Wilson articulated the principle of national self-determination in his 1918 Fourteen Points to rebuild post-WWI Europe."
+    "correctAnswer": "A",
+    "explanation": "President Woodrow Wilson articulated the principle of national self-determination in his 1918 Fourteen Points to rebuild post-WWI Europe."
   },
   {
-    id: "c11-pol-17-mcq-6",
-    question: "The tragic Partition of India in 1947 was the catastrophic outcome of which ideology?",
-    options: [
+    "id": "c11-pol-17-mcq-6",
+    "question": "The tragic Partition of India in 1947 was the catastrophic outcome of which ideology?",
+    "options": [
       "A):   Democratic Socialism",
       "B):   Exclusive religious nationalism (The Two-Nation Theory)",
       "C):   Universal Humanism",
       "D):   Federalism"
     ],
-    correctAnswer: "B",
-    explanation: "The Two-Nation Theory asserted that Hindus and Muslims formed two separate nations, leading to the violent Partition and mass displacement in 1947."
+    "correctAnswer": "B",
+    "explanation": "The Two-Nation Theory asserted that Hindus and Muslims formed two separate nations, leading to the violent Partition and mass displacement in 1947."
   },
   {
-    id: "c11-pol-17-mcq-7",
-    question: "The Kurds are historically cited as a prominent example of:",
-    options: [
+    "id": "c11-pol-17-mcq-7",
+    "question": "The Kurds are historically cited as a prominent example of:",
+    "options": [
       "A):   A nation with three sovereign empires",
-      "B):   A stateless nation dispersed across multiple sovereign states without their own independent state",
-      "C):   A colonial power in North America",
+      "B):   A colonial power in North America",
+      "C):   A stateless nation dispersed across multiple sovereign states without their own independent state",
       "D):   An island country in the Pacific"
     ],
-    correctAnswer: "B",
-    explanation: "The Kurds are a distinct nation of over 30 million people living across Turkey, Iraq, Iran, and Syria without an independent sovereign state."
+    "correctAnswer": "C",
+    "explanation": "The Kurds are a distinct nation of over 30 million people living across Turkey, Iraq, Iran, and Syria without an independent sovereign state."
   },
   {
-    id: "c11-pol-17-mcq-8",
-    question: "Why did Rabindranath Tagore express deep opposition to aggressive nationalism?",
-    options: [
+    "id": "c11-pol-17-mcq-8",
+    "question": "Why did Rabindranath Tagore express deep opposition to aggressive nationalism?",
+    "options": [
       "A):   He wanted India to remain a British colony permanently",
-      "B):   He believed aggressive nationalism crushes human conscience, idolizes the state, and fosters international hostility",
+      "B):   He supported military dictatorship",
       "C):   He disliked Indian poetry",
-      "D):   He supported military dictatorship"
+      "D):   He believed aggressive nationalism crushes human conscience, idolizes the state, and fosters international hostility"
     ],
-    correctAnswer: "B",
-    explanation: "Tagore warned that aggressive patriotism places the power of the nation above universal human morality and breeds hatred of others."
+    "correctAnswer": "D",
+    "explanation": "Tagore warned that aggressive patriotism places the power of the nation above universal human morality and breeds hatred of others."
   },
   {
-    id: "c11-pol-17-mcq-9",
-    question: "What is the primary difference between a 'Nation' and a 'State'?",
-    options: [
-      "A):   A nation always has a larger army than a state",
-      "B):   A nation is a socio-psychological community of identity, while a state is a sovereign legal-political institution",
+    "id": "c11-pol-17-mcq-9",
+    "question": "What is the primary difference between a 'Nation' and a 'State'?",
+    "options": [
+      "A):   A nation is a socio-psychological community of identity, while a state is a sovereign legal-political institution",
+      "B):   A nation always has a larger army than a state",
       "C):   A state has no territory, whereas a nation owns all land",
       "D):   There is no difference between a nation and a state"
     ],
-    correctAnswer: "B",
-    explanation: "A nation is an identity-based psychological and cultural community, while a state is a legal-political entity possessing sovereign power."
+    "correctAnswer": "A",
+    "explanation": "A nation is an identity-based psychological and cultural community, while a state is a legal-political entity possessing sovereign power."
   },
   {
-    id: "c11-pol-17-mcq-10",
-    question: "Which of the following countries is a prominent example of a 'Multinational State' containing distinct historical nations?",
-    options: [
-      "A):   The United Kingdom (comprising England, Scotland, Wales, and Northern Ireland)",
-      "B):   Vatican City",
+    "id": "c11-pol-17-mcq-10",
+    "question": "Which of the following countries is a prominent example of a 'Multinational State' containing distinct historical nations?",
+    "options": [
+      "A):   Vatican City",
+      "B):   The United Kingdom (comprising England, Scotland, Wales, and Northern Ireland)",
       "C):   Monaco",
       "D):   San Marino"
     ],
-    correctAnswer: "A",
-    explanation: "The UK is a classic multinational state bringing together England, Scotland, Wales, and Northern Ireland under a single sovereign parliament."
+    "correctAnswer": "B",
+    "explanation": "The UK is a classic multinational state bringing together England, Scotland, Wales, and Northern Ireland under a single sovereign parliament."
   },
   {
-    id: "c11-pol-17-mcq-11",
-    question: "What is the phenomenon of a country breaking up into multiple smaller, hostile sovereign states called?",
-    options: [
+    "id": "c11-pol-17-mcq-11",
+    "question": "What is the phenomenon of a country breaking up into multiple smaller, hostile sovereign states called?",
+    "options": [
       "A):   Globalization",
-      "B):   Balkanization",
-      "C):   Industrialization",
+      "B):   Industrialization",
+      "C):   Balkanization",
       "D):   Secularization"
     ],
-    correctAnswer: "B",
-    explanation: "'Balkanization' refers to the fragmentation of a region or state into smaller, mutually hostile political units, named after the Balkan Peninsula."
+    "correctAnswer": "C",
+    "explanation": "'Balkanization' refers to the fragmentation of a region or state into smaller, mutually hostile political units, named after the Balkan Peninsula."
   },
   {
-    id: "c11-pol-17-mcq-12",
-    question: "How did Canada resolve the self-determination demands of its French-speaking province of Quebec?",
-    options: [
+    "id": "c11-pol-17-mcq-12",
+    "question": "How did Canada resolve the self-determination demands of its French-speaking province of Quebec?",
+    "options": [
       "A):   By imposing military martial law permanently",
-      "B):   By recognizing Quebec as a distinct society with extensive provincial autonomy and holding democratic referendums",
+      "B):   By banning the French language",
       "C):   By expelling all French speakers",
-      "D):   By banning the French language"
+      "D):   By recognizing Quebec as a distinct society with extensive provincial autonomy and holding democratic referendums"
     ],
-    correctAnswer: "B",
-    explanation: "Canada resolved Quebec's aspirations through federal devolution, bilingualism, recognizing Quebec as a distinct society, and democratic referendums."
+    "correctAnswer": "D",
+    "explanation": "Canada resolved Quebec's aspirations through federal devolution, bilingualism, recognizing Quebec as a distinct society, and democratic referendums."
   },
   {
-    id: "c11-pol-17-mcq-13",
-    question: "In India, which constitutional mechanism grants special regional autonomy to tribal communities in the North-Eastern states?",
-    options: [
+    "id": "c11-pol-17-mcq-13",
+    "question": "In India, which constitutional mechanism grants special regional autonomy to tribal communities in the North-Eastern states?",
+    "options": [
       "A):   The Sixth Schedule (Autonomous District Councils)",
       "B):   The Seventh Schedule",
       "C):   Article 356 (President's Rule)",
       "D):   Article 360 (Financial Emergency)"
     ],
-    correctAnswer: "A",
-    explanation: "The Sixth Schedule provides for Autonomous District Councils in Assam, Meghalaya, Tripura, and Mizoram to protect tribal customary laws and autonomy."
+    "correctAnswer": "A",
+    "explanation": "The Sixth Schedule provides for Autonomous District Councils in Assam, Meghalaya, Tripura, and Mizoram to protect tribal customary laws and autonomy."
   },
   {
-    id: "c11-pol-17-mcq-14",
-    question: "What does 'Chauvinism' or 'Jingoism' in nationalism mean?",
-    options: [
+    "id": "c11-pol-17-mcq-14",
+    "question": "What does 'Chauvinism' or 'Jingoism' in nationalism mean?",
+    "options": [
       "A):   A desire to promote global disarmament",
       "B):   An uncritical, militant, and boastful belief in the superiority of one's own nation accompanied by hostility toward others",
       "C):   Writing constitutional preambles",
       "D):   Studying political science in schools"
     ],
-    correctAnswer: "B",
-    explanation: "Jingoism and chauvinism denote extreme, belligerent, and aggressive nationalism that looks down upon other nations and suppresses internal dissent."
+    "correctAnswer": "B",
+    "explanation": "Jingoism and chauvinism denote extreme, belligerent, and aggressive nationalism that looks down upon other nations and suppresses internal dissent."
   },
   {
-    id: "c11-pol-17-mcq-15",
-    question: "Which of the following demands by a government on its citizens is ILLEGITIMATE in a constitutional democracy?",
-    options: [
+    "id": "c11-pol-17-mcq-15",
+    "question": "Which of the following demands by a government on its citizens is ILLEGITIMATE in a constitutional democracy?",
+    "options": [
       "A):   Demanding payment of lawful income tax",
       "B):   Demanding compulsory military training during national defense emergencies",
       "C):   Demanding that all citizens surrender their right to criticize government policies under pain of treason charges",
       "D):   Demanding adherence to road traffic safety rules"
     ],
-    correctAnswer: "C",
-    explanation: "In a democracy, the right to criticize government policies is a fundamental civil liberty; suppressing it as 'anti-national' is authoritarian."
+    "correctAnswer": "C",
+    "explanation": "In a democracy, the right to criticize government policies is a fundamental civil liberty; suppressing it as 'anti-national' is authoritarian."
   },
   {
-    id: "c11-pol-17-mcq-16",
-    question: "Switzerland is a peaceful and united nation despite having how many official languages?",
-    options: [
+    "id": "c11-pol-17-mcq-16",
+    "question": "Switzerland is a peaceful and united nation despite having how many official languages?",
+    "options": [
       "A):   One",
-      "B):   Four (German, French, Italian, Romansh)",
+      "B):   None",
       "C):   Ten",
-      "D):   None"
+      "D):   Four (German, French, Italian, Romansh)"
     ],
-    correctAnswer: "B",
-    explanation: "Switzerland has four national languages, proving that linguistic homogeneity is not a prerequisite for a cohesive national identity."
+    "correctAnswer": "D",
+    "explanation": "Switzerland has four national languages, proving that linguistic homogeneity is not a prerequisite for a cohesive national identity."
   },
   {
-    id: "c11-pol-17-mcq-17",
-    question: "What was the main reason behind the collapse of the Austro-Hungarian and Ottoman empires in 1918?",
-    options: [
-      "A):   Massive earthquakes",
-      "B):   Surging nationalist movements demanding self-determination by diverse ethnic nationalities within these empires",
+    "id": "c11-pol-17-mcq-17",
+    "question": "What was the main reason behind the collapse of the Austro-Hungarian and Ottoman empires in 1918?",
+    "options": [
+      "A):   Surging nationalist movements demanding self-determination by diverse ethnic nationalities within these empires",
+      "B):   Massive earthquakes",
       "C):   Lack of agricultural land",
       "D):   Conversion to capitalism"
     ],
-    correctAnswer: "B",
-    explanation: "Diverse linguistic and ethnic communities within the Austro-Hungarian and Ottoman empires demanded self-determination, dismantling the multi-ethnic empires."
+    "correctAnswer": "A",
+    "explanation": "Diverse linguistic and ethnic communities within the Austro-Hungarian and Ottoman empires demanded self-determination, dismantling the multi-ethnic empires."
   },
   {
-    id: "c11-pol-17-mcq-18",
-    question: "What is 'Civic Nationalism' as opposed to 'Ethnic Nationalism'?",
-    options: [
+    "id": "c11-pol-17-mcq-18",
+    "question": "What is 'Civic Nationalism' as opposed to 'Ethnic Nationalism'?",
+    "options": [
       "A):   Nationalism based only on ancient tribal rituals",
       "B):   Nationalism based on shared democratic values, political equality, and equal constitutional citizenship regardless of race or religion",
       "C):   Nationalism that bans all private property",
       "D):   Nationalism that exists only in village panchayats"
     ],
-    correctAnswer: "B",
-    explanation: "Civic nationalism defines nationhood by adherence to political principles, constitutional rights, and inclusive citizenship for all residents."
+    "correctAnswer": "B",
+    "explanation": "Civic nationalism defines nationhood by adherence to political principles, constitutional rights, and inclusive citizenship for all residents."
   },
   {
-    id: "c11-pol-17-mcq-19",
-    question: "In the 1990s, the violent disintegration of which European country illustrated the tragic consequences of extreme ethnic nationalism?",
-    options: [
-      "A):   Yugoslavia",
+    "id": "c11-pol-17-mcq-19",
+    "question": "In the 1990s, the violent disintegration of which European country illustrated the tragic consequences of extreme ethnic nationalism?",
+    "options": [
+      "A):   Portugal",
       "B):   Switzerland",
-      "C):   Portugal",
+      "C):   Yugoslavia",
       "D):   Norway"
     ],
-    correctAnswer: "A",
-    explanation: "The collapse of Yugoslavia sparked brutal ethnic conflicts, genocides, and wars between Serbs, Croats, and Bosniaks in the 1990s."
+    "correctAnswer": "C",
+    "explanation": "The collapse of Yugoslavia sparked brutal ethnic conflicts, genocides, and wars between Serbs, Croats, and Bosniaks in the 1990s."
   },
   {
-    id: "c11-pol-17-mcq-20",
-    question: "How does Indian nationalism differ from European models of nationalism?",
-    options: [
+    "id": "c11-pol-17-mcq-20",
+    "question": "How does Indian nationalism differ from European models of nationalism?",
+    "options": [
       "A):   Indian nationalism is based strictly on a single religion",
-      "B):   Indian nationalism is composite, inclusive, and pluralistic, recognizing unity in diversity rather than enforcing cultural uniformity",
+      "B):   Indian nationalism rejects the concept of a constitution",
       "C):   Indian nationalism requires all citizens to wear the same clothes",
-      "D):   Indian nationalism rejects the concept of a constitution"
+      "D):   Indian nationalism is composite, inclusive, and pluralistic, recognizing unity in diversity rather than enforcing cultural uniformity"
     ],
-    correctAnswer: "B",
-    explanation: "Indian nationalism was forged during the anti-colonial freedom struggle as a composite, pluralistic identity embracing diverse languages, faiths, and cultures."
+    "correctAnswer": "D",
+    "explanation": "Indian nationalism was forged during the anti-colonial freedom struggle as a composite, pluralistic identity embracing diverse languages, faiths, and cultures."
   }
 ];

@@ -397,189 +397,184 @@ export const c11Pol9HtmlSolutions = `
 /* -------------------------------------------------------------------------- */
 
 export const c11Pol9Mcqs = [
-  // --- TIER 1: EASY / RECALL (Q1 to Q5) ---
   {
-    id: "c11-pol-9-mcq-1",
-    question: "Who moved the historic 'Objectives Resolution' in the Constituent Assembly on December 13, 1946?",
-    options: [
-      "A):   Dr. B.R. Ambedkar",
-      "B):   Jawaharlal Nehru",
+    "id": "c11-pol-9-mcq-1",
+    "question": "Who moved the historic 'Objectives Resolution' in the Constituent Assembly on December 13, 1946?",
+    "options": [
+      "A):   Jawaharlal Nehru",
+      "B):   Dr. B.R. Ambedkar",
       "C):   Dr. Rajendra Prasad",
       "D):   Sardar Vallabhbhai Patel"
     ],
-    correctAnswer: "B",
-    explanation: "Jawaharlal Nehru moved the Objectives Resolution on December 13, 1946, outlining the philosophical commitments that later formed the Preamble of the Constitution."
+    "correctAnswer": "A",
+    "explanation": "Jawaharlal Nehru moved the Objectives Resolution on December 13, 1946, outlining the philosophical commitments that later formed the Preamble of the Constitution."
   },
   {
-    id: "c11-pol-9-mcq-2",
-    question: "Which Article of the Indian Constitution completely abolished the practice of 'Untouchability'?",
-    options: [
+    "id": "c11-pol-9-mcq-2",
+    "question": "Which Article of the Indian Constitution completely abolished the practice of 'Untouchability'?",
+    "options": [
       "A):   Article 14",
-      "B):   Article 15",
-      "C):   Article 17",
+      "B):   Article 17",
+      "C):   Article 15",
       "D):   Article 19"
     ],
-    correctAnswer: "C",
-    explanation: "Article 17 explicitly abolished 'Untouchability' and forbade its practice in any form, representing a moral repudiation of caste discrimination."
+    "correctAnswer": "B",
+    "explanation": "Article 17 explicitly abolished 'Untouchability' and forbade its practice in any form, representing a moral repudiation of caste discrimination."
   },
   {
-    id: "c11-pol-9-mcq-3",
-    question: "Which Article guarantees Universal Adult Suffrage, granting every adult citizen the right to vote without property or literacy qualifications?",
-    options: [
+    "id": "c11-pol-9-mcq-3",
+    "question": "Which Article guarantees Universal Adult Suffrage, granting every adult citizen the right to vote without property or literacy qualifications?",
+    "options": [
       "A):   Article 324",
-      "B):   Article 326",
-      "C):   Article 330",
+      "B):   Article 330",
+      "C):   Article 326",
       "D):   Article 368"
     ],
-    correctAnswer: "B",
-    explanation: "Article 326 establishes Universal Adult Suffrage, providing equal political voting dignity to all citizens who are not less than 18 years of age."
+    "correctAnswer": "C",
+    "explanation": "Article 326 establishes Universal Adult Suffrage, providing equal political voting dignity to all citizens who are not less than 18 years of age."
   },
   {
-    id: "c11-pol-9-mcq-4",
-    question: "Which thinker famously warned in the Constituent Assembly that India was entering a 'life of contradictions' on January 26, 1950?",
-    options: [
+    "id": "c11-pol-9-mcq-4",
+    "question": "Which thinker famously warned in the Constituent Assembly that India was entering a 'life of contradictions' on January 26, 1950?",
+    "options": [
       "A):   Mahatma Gandhi",
-      "B):   Dr. B.R. Ambedkar",
+      "B):   K.M. Munshi",
       "C):   Maulana Abul Kalam Azad",
-      "D):   K.M. Munshi"
+      "D):   Dr. B.R. Ambedkar"
     ],
-    correctAnswer: "B",
-    explanation: "Dr. B.R. Ambedkar made this iconic speech on November 25, 1949, pointing out the contradiction between political equality and social-economic inequality."
+    "correctAnswer": "D",
+    "explanation": "Dr. B.R. Ambedkar made this iconic speech on November 25, 1949, pointing out the contradiction between political equality and social-economic inequality."
   },
   {
-    id: "c11-pol-9-mcq-5",
-    question: "Which Article of the Constitution commits the Indian State to the promotion of international peace and security?",
-    options: [
-      "A):   Article 40",
+    "id": "c11-pol-9-mcq-5",
+    "question": "Which Article of the Constitution commits the Indian State to the promotion of international peace and security?",
+    "options": [
+      "A):   Article 51",
       "B):   Article 45",
-      "C):   Article 51",
+      "C):   Article 40",
       "D):   Article 51A"
     ],
-    correctAnswer: "C",
-    explanation: "Article 51 of the Directive Principles of State Policy directs the State to promote international peace, security, honorable international relations, and peaceful settlement of international disputes."
+    "correctAnswer": "A",
+    "explanation": "Article 51 of the Directive Principles of State Policy directs the State to promote international peace, security, honorable international relations, and peaceful settlement of international disputes."
   },
-
-  // --- TIER 2: MODERATE / CONCEPTUAL (Q6 to Q10) ---
   {
-    id: "c11-pol-9-mcq-6",
-    question: "The concept of 'Principled Distance' in Indian secularism means:",
-    options: [
+    "id": "c11-pol-9-mcq-6",
+    "question": "The concept of 'Principled Distance' in Indian secularism means:",
+    "options": [
       "A):   The State maintains a complete and rigid wall of separation from religion",
-      "B):   The State promotes one majority religion while tolerating minorities",
-      "C):   The State treats all religions with equal respect while retaining authority to intervene for social justice and reform",
+      "B):   The State treats all religions with equal respect while retaining authority to intervene for social justice and reform",
+      "C):   The State promotes one majority religion while tolerating minorities",
       "D):   The State bans all public expressions of religion"
     ],
-    correctAnswer: "C",
-    explanation: "'Principled Distance' allows the Indian State to maintain equal respect for all religions while actively intervening to reform regressive customs (like untouchability and gender injustice)."
+    "correctAnswer": "B",
+    "explanation": "'Principled Distance' allows the Indian State to maintain equal respect for all religions while actively intervening to reform regressive customs (like untouchability and gender injustice)."
   },
   {
-    id: "c11-pol-9-mcq-7",
-    question: "Which early 19th-century Indian reformer laid the intellectual foundation for civil liberties, press freedom, and gender justice in modern Indian thought?",
-    options: [
+    "id": "c11-pol-9-mcq-7",
+    "question": "Which early 19th-century Indian reformer laid the intellectual foundation for civil liberties, press freedom, and gender justice in modern Indian thought?",
+    "options": [
       "A):   Swami Vivekananda",
-      "B):   Raja Ram Mohan Roy",
-      "C):   Bal Gangadhar Tilak",
+      "B):   Bal Gangadhar Tilak",
+      "C):   Raja Ram Mohan Roy",
       "D):   Dadabhai Naoroji"
     ],
-    correctAnswer: "B",
-    explanation: "Raja Ram Mohan Roy was a pioneer of Indian liberalism, championing freedom of the press and successfully fighting for the abolition of Sati (1829)."
+    "correctAnswer": "C",
+    "explanation": "Raja Ram Mohan Roy was a pioneer of Indian liberalism, championing freedom of the press and successfully fighting for the abolition of Sati (1829)."
   },
   {
-    id: "c11-pol-9-mcq-8",
-    question: "Articles 29 and 30 of the Constitution protect which of the following rights?",
-    options: [
+    "id": "c11-pol-9-mcq-8",
+    "question": "Articles 29 and 30 of the Constitution protect which of the following rights?",
+    "options": [
       "A):   Right to Property",
-      "B):   Cultural and Educational Rights of Minorities",
+      "B):   Right to Form Trade Unions",
       "C):   Emergency Powers of the President",
-      "D):   Right to Form Trade Unions"
+      "D):   Cultural and Educational Rights of Minorities"
     ],
-    correctAnswer: "B",
-    explanation: "Articles 29 and 30 philosophically protect group and community rights, allowing religious and linguistic minorities to preserve their culture and administer educational institutions."
+    "correctAnswer": "D",
+    "explanation": "Articles 29 and 30 philosophically protect group and community rights, allowing religious and linguistic minorities to preserve their culture and administer educational institutions."
   },
   {
-    id: "c11-pol-9-mcq-9",
-    question: "What does 'Constitutional Morality' primarily demand from governing majorities?",
-    options: [
-      "A):   Enforcing majoritarian rule without checking minority opinions",
-      "B):   Paramount reverence for constitutional forms, self-restraint, and respect for institutional norms",
+    "id": "c11-pol-9-mcq-9",
+    "question": "What does 'Constitutional Morality' primarily demand from governing majorities?",
+    "options": [
+      "A):   Paramount reverence for constitutional forms, self-restraint, and respect for institutional norms",
+      "B):   Enforcing majoritarian rule without checking minority opinions",
       "C):   Suspension of judicial review during general elections",
       "D):   Strict obedience to religious dogmas"
     ],
-    correctAnswer: "B",
-    explanation: "Constitutional morality, as expounded by Dr. Ambedkar, requires self-restraint, commitment to constitutional values, and protection of minority rights against mob passions."
+    "correctAnswer": "A",
+    "explanation": "Constitutional morality, as expounded by Dr. Ambedkar, requires self-restraint, commitment to constitutional values, and protection of minority rights against mob passions."
   },
   {
-    id: "c11-pol-9-mcq-10",
-    question: "How does the Indian concept of 'Substantive Equality' differ from classical formal equality?",
-    options: [
+    "id": "c11-pol-9-mcq-10",
+    "question": "How does the Indian concept of 'Substantive Equality' differ from classical formal equality?",
+    "options": [
       "A):   Substantive equality completely rejects the rule of law",
       "B):   Substantive equality recognizes historical disadvantages and endorses affirmative action and reservations for the oppressed",
       "C):   Substantive equality gives voting rights only to property owners",
       "D):   Substantive equality treats all individuals identically regardless of their past social deprivation"
     ],
-    correctAnswer: "B",
-    explanation: "Substantive equality goes beyond formal legal neutrality by proactively providing affirmative action (reservations) under Articles 15(4) and 16(4) to remedy centuries of caste oppression."
+    "correctAnswer": "B",
+    "explanation": "Substantive equality goes beyond formal legal neutrality by proactively providing affirmative action (reservations) under Articles 15(4) and 16(4) to remedy centuries of caste oppression."
   },
-
-  // --- TIER 3: ADVANCE / ANALYTICAL (Q11 to Q15) ---
   {
-    id: "c11-pol-9-mcq-11",
-    question: "Why did the framers of the Indian Constitution reject the classical Western model of strict secularism?",
-    options: [
+    "id": "c11-pol-9-mcq-11",
+    "question": "Why did the framers of the Indian Constitution reject the classical Western model of strict secularism?",
+    "options": [
       "A):   They wanted India to be an explicitly theocratic Hindu state",
-      "B):   Strict separation would have prevented the state from banning deeply entrenched oppressive religious customs like untouchability and child marriage",
-      "C):   They believed religion was more important than the Constitution",
+      "B):   They believed religion was more important than the Constitution",
+      "C):   Strict separation would have prevented the state from banning deeply entrenched oppressive religious customs like untouchability and child marriage",
       "D):   Western nations prohibited India from adopting their model"
     ],
-    correctAnswer: "B",
-    explanation: "Under strict Western secularism, the state cannot interfere in religious affairs. India rejected this because state intervention was essential to outlaw untouchability, child marriage, and reform personal laws."
+    "correctAnswer": "C",
+    "explanation": "Under strict Western secularism, the state cannot interfere in religious affairs. India rejected this because state intervention was essential to outlaw untouchability, child marriage, and reform personal laws."
   },
   {
-    id: "c11-pol-9-mcq-12",
-    question: "Which of the following was a major criticism leveled against the Indian Constitution during its drafting?",
-    options: [
+    "id": "c11-pol-9-mcq-12",
+    "question": "Which of the following was a major criticism leveled against the Indian Constitution during its drafting?",
+    "options": [
       "A):   That it was too short and contained no fundamental rights",
-      "B):   That it was bulky, overly detailed, and an un-Indian 'carbon copy' of Western statutes",
+      "B):   That it dissolved all state boundaries permanently",
       "C):   That it gave absolute veto power to the military",
-      "D):   That it dissolved all state boundaries permanently"
+      "D):   That it was bulky, overly detailed, and an un-Indian 'carbon copy' of Western statutes"
     ],
-    correctAnswer: "B",
-    explanation: "Critics alleged that the Constitution was an un-Indian, unwieldy, and bulky document borrowing extensively from the Government of India Act 1935 and Western constitutions."
+    "correctAnswer": "D",
+    "explanation": "Critics alleged that the Constitution was an un-Indian, unwieldy, and bulky document borrowing extensively from the Government of India Act 1935 and Western constitutions."
   },
   {
-    id: "c11-pol-9-mcq-13",
-    question: "How did Dr. B.R. Ambedkar respond to the criticism that the Indian Constitution was heavily borrowed from foreign sources?",
-    options: [
-      "A):   He claimed that no provisions were borrowed",
-      "B):   He asserted that the fundamental principles of political philosophy are common to all humanity and there is nothing to be ashamed of in borrowing good principles",
+    "id": "c11-pol-9-mcq-13",
+    "question": "How did Dr. B.R. Ambedkar respond to the criticism that the Indian Constitution was heavily borrowed from foreign sources?",
+    "options": [
+      "A):   He asserted that the fundamental principles of political philosophy are common to all humanity and there is nothing to be ashamed of in borrowing good principles",
+      "B):   He claimed that no provisions were borrowed",
       "C):   He promised to delete all borrowed sections within five years",
       "D):   He argued that the Constitution was strictly based on ancient feudal codes"
     ],
-    correctAnswer: "B",
-    explanation: "Dr. Ambedkar famously defended borrowing in the Constituent Assembly, stating that political ideas are common human heritage and the only new thing could be removing flaws and adapting them to Indian realities."
+    "correctAnswer": "A",
+    "explanation": "Dr. Ambedkar famously defended borrowing in the Constituent Assembly, stating that political ideas are common human heritage and the only new thing could be removing flaws and adapting them to Indian realities."
   },
   {
-    id: "c11-pol-9-mcq-14",
-    question: "In what way does the Indian Constitution philosophically treat the relationship between the Individual and the Community?",
-    options: [
+    "id": "c11-pol-9-mcq-14",
+    "question": "In what way does the Indian Constitution philosophically treat the relationship between the Individual and the Community?",
+    "options": [
       "A):   It completely subordinates individual freedom to community decisions",
-      "B):   It only recognizes the individual and bans all community organizations",
-      "C):   It treats the individual as the fundamental moral unit while recognizing that group cultural rights are vital for individual dignity",
+      "B):   It treats the individual as the fundamental moral unit while recognizing that group cultural rights are vital for individual dignity",
+      "C):   It only recognizes the individual and bans all community organizations",
       "D):   It considers castes as the only recognized units of the Republic"
     ],
-    correctAnswer: "C",
-    explanation: "The Indian Constitution upholds individual liberty as supreme (Arts. 19, 21), while also recognizing that an individual's identity is rooted in community life, hence protecting minority cultural rights (Arts. 29, 30)."
+    "correctAnswer": "B",
+    "explanation": "The Indian Constitution upholds individual liberty as supreme (Arts. 19, 21), while also recognizing that an individual's identity is rooted in community life, hence protecting minority cultural rights (Arts. 29, 30)."
   },
   {
-    id: "c11-pol-9-mcq-15",
-    question: "The indivisible trinity of 'Liberty, Equality, and Fraternity' in Indian constitutional philosophy was strongly championed by:",
-    options: [
+    "id": "c11-pol-9-mcq-15",
+    "question": "The indivisible trinity of 'Liberty, Equality, and Fraternity' in Indian constitutional philosophy was strongly championed by:",
+    "options": [
       "A):   Lord Mountbatten",
-      "B):   Dr. B.R. Ambedkar",
-      "C):   Lord Ripon",
+      "B):   Lord Ripon",
+      "C):   Dr. B.R. Ambedkar",
       "D):   Sir Benegal Narsing Rau"
     ],
-    correctAnswer: "B",
-    explanation: "Dr. B.R. Ambedkar insisted that Liberty, Equality, and Fraternity form an indivisible union: 'Without equality, liberty would produce the supremacy of the few over the many. Without liberty, equality would kill individual initiative.'"
+    "correctAnswer": "C",
+    "explanation": "Dr. B.R. Ambedkar insisted that Liberty, Equality, and Fraternity form an indivisible union: 'Without equality, liberty would produce the supremacy of the few over the many. Without liberty, equality would kill individual initiative.'"
   }
 ];
