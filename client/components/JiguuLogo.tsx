@@ -28,7 +28,7 @@ export const JiguuLogo = memo(function JiguuLogo({
   const params = route.params as any;
 
   const isClass12 =
-    route.name === "Class12" ||
+    route.name.startsWith("Class12") ||
     params?.className === "Class 12" ||
     (typeof params?.subject === "string" &&
       params.subject.includes("Class 12")) ||
@@ -36,7 +36,7 @@ export const JiguuLogo = memo(function JiguuLogo({
       (params.chapterId.startsWith("c12-") || params.chapterId.includes("-c12-")));
 
   const isClass11 =
-    route.name === "Class11" ||
+    route.name.startsWith("Class11") ||
     params?.className === "Class 11" ||
     (typeof params?.subject === "string" &&
       params.subject.includes("Class 11")) ||

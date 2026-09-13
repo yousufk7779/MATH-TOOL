@@ -2214,6 +2214,403 @@ for (let i = 1; i <= 18; i++) {
   };
 }
 
+// Initialize Class 11 English (Hornbill, Snapshots, Writing & Grammar)
+const c11EngHornbill = [
+  { id: "c11-eng-h1", number: 1, title: "The Portrait of a Lady", author: "Khushwant Singh", type: "Prose", color: "#E91E63" },
+  { id: "c11-eng-h2", number: 2, title: "A Photograph", author: "Shirley Toulson", type: "Poem", color: "#9C27B0" },
+  { id: "c11-eng-h3", number: 3, title: "We're Not Afraid to Die... If We Can All Be Together", author: "Gordon Cook & Alan East", type: "Prose", color: "#2196F3" },
+  { id: "c11-eng-h4", number: 4, title: "Discovering Tut: The Saga Continues", author: "A.R. Williams", type: "Prose", color: "#FF9800" },
+  { id: "c11-eng-h5", number: 5, title: "The Laburnum Top", author: "Ted Hughes", type: "Poem", color: "#FBC02D" },
+  { id: "c11-eng-h6", number: 6, title: "The Voice of the Rain", author: "Walt Whitman", type: "Poem", color: "#00BCD4" },
+  { id: "c11-eng-h7", number: 7, title: "The Ailing Planet: The Green Movement's Role", author: "Nani Palkhivala", type: "Prose", color: "#4CAF50" },
+  { id: "c11-eng-h8", number: 8, title: "Childhood", author: "Markus Natten", type: "Poem", color: "#E040FB" },
+  { id: "c11-eng-h9", number: 9, title: "The Adventure", author: "Jayant Narlikar", type: "Prose", color: "#3F51B5" },
+  { id: "c11-eng-h10", number: 10, title: "Silk Road", author: "Nick Middleton", type: "Prose", color: "#8D6E63" },
+  { id: "c11-eng-h11", number: 11, title: "Father to Son", author: "Elizabeth Jennings", type: "Poem", color: "#FF5722" },
+];
+
+c11EngHornbill.forEach((item) => {
+  chapterContents[item.id] = {
+    id: item.id,
+    number: item.number,
+    title: item.title,
+    isHtmlView: true,
+    htmlOverview: `
+      <div style="padding: 14px; color: #F8FAFC; text-align: justify; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+        <div style="display: inline-block; background: ${item.color}22; border: 1px solid ${item.color}; border-radius: 6px; padding: 4px 10px; margin-bottom: 12px;">
+          <span style="color: ${item.color}; font-size: 12px; font-weight: 800; letter-spacing: 0.5px;">HORNBILL • ${item.type.toUpperCase()} • BY ${item.author.toUpperCase()}</span>
+        </div>
+        <h2 style="color: ${item.color}; font-size: 22px; font-weight: 800; border-bottom: 2px solid ${item.color}; padding-bottom: 8px; margin-bottom: 16px;">
+          ${item.title}
+        </h2>
+        <p style="font-size: 15px; line-height: 1.7; color: #CBD5E1;">
+          Comprehensive literary analysis, character sketches, poetic devices, board exam solutions, and interactive quiz for <b>${item.title}</b> are loading.
+        </p>
+      </div>
+    `,
+    htmlExercises: {
+      "ex-c11-eng": `
+        <div style="padding: 14px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.75; font-size: 16px;">
+          <div style="background: rgba(233, 30, 99, 0.15); border-left: 5px solid ${item.color}; padding: 10px 16px; border-radius: 4px; margin: 15px 0 20px 0;">
+            <h2 style="color: ${item.color}; font-weight: bold; margin: 0; font-size: 18px;">
+              BOARD EXAMINATION QUESTIONS &amp; ANSWERS &bull; ${item.title.toUpperCase()}
+            </h2>
+            <span style="color: #CBD5E1; font-size: 13.5px;">Extract-Based &bull; Short Answers (3M) &bull; Long Answers (6M) &bull; NCERT Solutions</span>
+          </div>
+          <p style="color: #CBD5E1;">Full exam solutions for ${item.title} are loading.</p>
+        </div>
+      `,
+    },
+    exercises: [
+      {
+        id: "ex-c11-eng",
+        name: "Q & A",
+        questions: [],
+      },
+    ],
+    mcqs: Array.from({ length: 20 }, (_, idx) => ({
+      id: `${item.id}-mcq-${idx + 1}`,
+      question: `${item.title} - Question ${idx + 1}`,
+      options: [
+        `A):   Option 1 for ${item.title}`,
+        `B):   Option 2 for ${item.title}`,
+        `C):   Option 3 for ${item.title}`,
+        `D):   Option 4 for ${item.title}`,
+      ],
+      correctAnswer: ["a", "b", "c", "d"][idx % 4],
+      explanation: `Detailed explanation for ${item.title} Question ${idx + 1}.`,
+    })),
+    introduction: item.title,
+  };
+});
+
+const c11EngSnapshots = [
+  { id: "c11-eng-s1", number: 1, title: "The Summer of the Beautiful White Horse", author: "William Saroyan", type: "Story", color: "#00B0FF" },
+  { id: "c11-eng-s2", number: 2, title: "The Address", author: "Marga Minco", type: "Story", color: "#7C4DFF" },
+  { id: "c11-eng-s3", number: 3, title: "Mother's Day", author: "J.B. Priestley", type: "Play", color: "#FF4081" },
+  { id: "c11-eng-s4", number: 4, title: "Birth", author: "A.J. Cronin", type: "Story", color: "#00E676" },
+  { id: "c11-eng-s5", number: 5, title: "The Tale of Melon City", author: "Vikram Seth", type: "Poetic Narrative", color: "#FFAB00" },
+];
+
+c11EngSnapshots.forEach((item) => {
+  chapterContents[item.id] = {
+    id: item.id,
+    number: item.number,
+    title: item.title,
+    isHtmlView: true,
+    htmlOverview: `
+      <div style="padding: 14px; color: #F8FAFC; text-align: justify; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+        <div style="display: inline-block; background: ${item.color}22; border: 1px solid ${item.color}; border-radius: 6px; padding: 4px 10px; margin-bottom: 12px;">
+          <span style="color: ${item.color}; font-size: 12px; font-weight: 800; letter-spacing: 0.5px;">SNAPSHOTS • ${item.type.toUpperCase()} • BY ${item.author.toUpperCase()}</span>
+        </div>
+        <h2 style="color: ${item.color}; font-size: 22px; font-weight: 800; border-bottom: 2px solid ${item.color}; padding-bottom: 8px; margin-bottom: 16px;">
+          ${item.title}
+        </h2>
+        <p style="font-size: 15px; line-height: 1.7; color: #CBD5E1;">
+          Comprehensive supplementary story analysis, character motives, board questions, and interactive quiz for <b>${item.title}</b> are loading.
+        </p>
+      </div>
+    `,
+    htmlExercises: {
+      "ex-c11-eng": `
+        <div style="padding: 14px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.75; font-size: 16px;">
+          <div style="background: rgba(0, 176, 255, 0.15); border-left: 5px solid ${item.color}; padding: 10px 16px; border-radius: 4px; margin: 15px 0 20px 0;">
+            <h2 style="color: ${item.color}; font-weight: bold; margin: 0; font-size: 18px;">
+              BOARD EXAMINATION QUESTIONS &amp; ANSWERS &bull; ${item.title.toUpperCase()}
+            </h2>
+            <span style="color: #CBD5E1; font-size: 13.5px;">Short Answers (3M) &bull; Long Thematic Answers (6M) &bull; NCERT Supplementary Solutions</span>
+          </div>
+          <p style="color: #CBD5E1;">Full exam solutions for ${item.title} are loading.</p>
+        </div>
+      `,
+    },
+    exercises: [
+      {
+        id: "ex-c11-eng",
+        name: "Q & A",
+        questions: [],
+      },
+    ],
+    mcqs: Array.from({ length: 20 }, (_, idx) => ({
+      id: `${item.id}-mcq-${idx + 1}`,
+      question: `${item.title} - Question ${idx + 1}`,
+      options: [
+        `A):   Option 1 for ${item.title}`,
+        `B):   Option 2 for ${item.title}`,
+        `C):   Option 3 for ${item.title}`,
+        `D):   Option 4 for ${item.title}`,
+      ],
+      correctAnswer: ["a", "b", "c", "d"][idx % 4],
+      explanation: `Detailed explanation for ${item.title} Question ${idx + 1}.`,
+    })),
+    introduction: item.title,
+  };
+});
+
+const c11EngWriting = [
+  { id: "c11-eng-w1", number: 1, title: "Note-Making & Summarizing", marks: "10 Marks", section: "Reading Skills", color: "#FF512F" },
+  { id: "c11-eng-w2", number: 2, title: "Notice, Poster & Advertisement Writing", marks: "4 Marks", section: "Writing Skills", color: "#00C6FF" },
+  { id: "c11-eng-w3", number: 3, title: "Formal & Business Letter Writing", marks: "6 Marks", section: "Writing Skills", color: "#11998E" },
+  { id: "c11-eng-w4", number: 4, title: "Personal Email Writing", marks: "4 Marks", section: "Writing Skills", color: "#8E2DE2" },
+  { id: "c11-eng-w5", number: 5, title: "Article, Speech, Report & Debate Writing", marks: "8 Marks", section: "Writing Skills", color: "#FF8A65" },
+  { id: "c11-eng-w6", number: 6, title: "Grammar Error Correction Master Toolkit", marks: "8 Marks", section: "Grammar", color: "#FDC830" },
+];
+
+c11EngWriting.forEach((item) => {
+  chapterContents[item.id] = {
+    id: item.id,
+    number: item.number,
+    title: item.title,
+    isHtmlView: true,
+    htmlOverview: `
+      <div style="padding: 14px; color: #F8FAFC; text-align: justify; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+        <div style="display: inline-block; background: ${item.color}22; border: 1px solid ${item.color}; border-radius: 6px; padding: 4px 10px; margin-bottom: 12px;">
+          <span style="color: ${item.color}; font-size: 12px; font-weight: 800; letter-spacing: 0.5px;">${item.section.toUpperCase()} • ${item.marks.toUpperCase()}</span>
+        </div>
+        <h2 style="color: ${item.color}; font-size: 22px; font-weight: 800; border-bottom: 2px solid ${item.color}; padding-bottom: 8px; margin-bottom: 16px;">
+          ${item.title}
+        </h2>
+        <p style="font-size: 15px; line-height: 1.7; color: #CBD5E1;">
+          Master formats, board marking schemes, solved samples, and practice tests for <b>${item.title}</b> are loading.
+        </p>
+      </div>
+    `,
+    htmlExercises: {
+      "ex-c11-eng": `
+        <div style="padding: 14px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.75; font-size: 16px;">
+          <div style="background: rgba(243, 156, 18, 0.15); border-left: 5px solid ${item.color}; padding: 10px 16px; border-radius: 4px; margin: 15px 0 20px 0;">
+            <h2 style="color: ${item.color}; font-weight: bold; margin: 0; font-size: 18px;">
+              BOARD TOOLKIT &amp; PRACTICE &bull; ${item.title.toUpperCase()}
+            </h2>
+            <span style="color: #CBD5E1; font-size: 13.5px;">Official Marking Scheme &bull; Formats &bull; Solved Samples &bull; Practice Tests</span>
+          </div>
+          <p style="color: #CBD5E1;">Board formats and solved samples for ${item.title} are loading.</p>
+        </div>
+      `,
+    },
+    exercises: [
+      {
+        id: "ex-c11-eng",
+        name: "Q & A",
+        questions: [],
+      },
+    ],
+    mcqs: Array.from({ length: 20 }, (_, idx) => ({
+      id: `${item.id}-mcq-${idx + 1}`,
+      question: `${item.title} - Question ${idx + 1}`,
+      options: [
+        `A):   Option 1 for ${item.title}`,
+        `B):   Option 2 for ${item.title}`,
+        `C):   Option 3 for ${item.title}`,
+        `D):   Option 4 for ${item.title}`,
+      ],
+      correctAnswer: ["a", "b", "c", "d"][idx % 4],
+      explanation: `Detailed explanation for ${item.title} Question ${idx + 1}.`,
+    })),
+    introduction: item.title,
+  };
+});
+
+// Initialize Class 12 English (Flamingo, Vistas, Writing & Grammar)
+const c12EngFlamingo = [
+  { id: "c12-eng-f1", number: 1, title: "The Last Lesson", author: "Alphonse Daudet", type: "Prose", color: "#FF512F" },
+  { id: "c12-eng-f2", number: 2, title: "Lost Spring", author: "Anees Jung", type: "Prose", color: "#00C6FF" },
+  { id: "c12-eng-f3", number: 3, title: "Deep Water", author: "William Douglas", type: "Prose", color: "#11998E" },
+  { id: "c12-eng-f4", number: 4, title: "The Rattrap", author: "Selma Lagerlöf", type: "Prose", color: "#8E2DE2" },
+  { id: "c12-eng-f5", number: 5, title: "Indigo", author: "Louis Fischer", type: "Prose", color: "#FF8A65" },
+  { id: "c12-eng-f6", number: 6, title: "Poets and Pancakes", author: "Asokamitran", type: "Prose", color: "#FDC830" },
+  { id: "c12-eng-f7", number: 7, title: "The Interview (Part I & II)", author: "Christopher Silvester", type: "Prose", color: "#FF007F" },
+  { id: "c12-eng-f8", number: 8, title: "Going Places", author: "A.R. Barton", type: "Prose", color: "#29B6F6" },
+  { id: "c12-eng-f9", number: 9, title: "My Mother at Sixty-six", author: "Kamala Das", type: "Poem", color: "#E040FB" },
+  { id: "c12-eng-f10", number: 10, title: "Keeping Quiet", author: "Pablo Neruda", type: "Poem", color: "#00E5FF" },
+  { id: "c12-eng-f11", number: 11, title: "A Thing of Beauty", author: "John Keats", type: "Poem", color: "#00E676" },
+  { id: "c12-eng-f12", number: 12, title: "A Roadside Stand", author: "Robert Frost", type: "Poem", color: "#FF9100" },
+  { id: "c12-eng-f13", number: 13, title: "Aunt Jennifer's Tigers", author: "Adrienne Rich", type: "Poem", color: "#FF5252" },
+];
+
+c12EngFlamingo.forEach((item) => {
+  chapterContents[item.id] = {
+    id: item.id,
+    number: item.number,
+    title: item.title,
+    isHtmlView: true,
+    htmlOverview: `
+      <div style="padding: 14px; color: #F8FAFC; text-align: justify; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+        <div style="display: inline-block; background: ${item.color}22; border: 1px solid ${item.color}; border-radius: 6px; padding: 4px 10px; margin-bottom: 12px;">
+          <span style="color: ${item.color}; font-size: 12px; font-weight: 800; letter-spacing: 0.5px;">FLAMINGO • ${item.type.toUpperCase()} • BY ${item.author.toUpperCase()}</span>
+        </div>
+        <h2 style="color: ${item.color}; font-size: 22px; font-weight: 800; border-bottom: 2px solid ${item.color}; padding-bottom: 8px; margin-bottom: 16px;">
+          ${item.title}
+        </h2>
+        <p style="font-size: 15px; line-height: 1.7; color: #CBD5E1;">
+          Comprehensive literary analysis, character motives, poetic devices, board exam solutions, and interactive quiz for <b>${item.title}</b> are loading.
+        </p>
+      </div>
+    `,
+    htmlExercises: {
+      "ex-c12-eng": `
+        <div style="padding: 14px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.75; font-size: 16px;">
+          <div style="background: rgba(255, 65, 108, 0.15); border-left: 5px solid ${item.color}; padding: 10px 16px; border-radius: 4px; margin: 15px 0 20px 0;">
+            <h2 style="color: ${item.color}; font-weight: bold; margin: 0; font-size: 18px;">
+              BOARD EXAMINATION QUESTIONS &amp; ANSWERS &bull; ${item.title.toUpperCase()}
+            </h2>
+            <span style="color: #CBD5E1; font-size: 13.5px;">Extract-Based &bull; Short Answers (3M) &bull; Long Answers (6M) &bull; NCERT Solutions</span>
+          </div>
+          <p style="color: #CBD5E1;">Full exam solutions for ${item.title} are loading.</p>
+        </div>
+      `,
+    },
+    exercises: [
+      {
+        id: "ex-c12-eng",
+        name: "Q & A",
+        questions: [],
+      },
+    ],
+    mcqs: Array.from({ length: 20 }, (_, idx) => ({
+      id: `${item.id}-mcq-${idx + 1}`,
+      question: `${item.title} - Question ${idx + 1}`,
+      options: [
+        `A):   Option 1 for ${item.title}`,
+        `B):   Option 2 for ${item.title}`,
+        `C):   Option 3 for ${item.title}`,
+        `D):   Option 4 for ${item.title}`,
+      ],
+      correctAnswer: ["a", "b", "c", "d"][idx % 4],
+      explanation: `Detailed explanation for ${item.title} Question ${idx + 1}.`,
+    })),
+    introduction: item.title,
+  };
+});
+
+const c12EngVistas = [
+  { id: "c12-eng-v1", number: 1, title: "The Third Level", author: "Jack Finney", type: "Story", color: "#00B0FF" },
+  { id: "c12-eng-v2", number: 2, title: "The Tiger King", author: "Kalki", type: "Story", color: "#FF6D00" },
+  { id: "c12-eng-v3", number: 3, title: "Journey to The End of the Earth", author: "Tishani Doshi", type: "Travelogue", color: "#26C6DA" },
+  { id: "c12-eng-v4", number: 4, title: "The Enemy", author: "Pearl S. Buck", type: "Story", color: "#D50000" },
+  { id: "c12-eng-v5", number: 5, title: "On the Face of It", author: "Susan Hill", type: "Play", color: "#AB47BC" },
+  { id: "c12-eng-v6", number: 6, title: "Memories of Childhood", author: "Zitkala-Sa & Bama", type: "Narrative", color: "#64DD17" },
+];
+
+c12EngVistas.forEach((item) => {
+  chapterContents[item.id] = {
+    id: item.id,
+    number: item.number,
+    title: item.title,
+    isHtmlView: true,
+    htmlOverview: `
+      <div style="padding: 14px; color: #F8FAFC; text-align: justify; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+        <div style="display: inline-block; background: ${item.color}22; border: 1px solid ${item.color}; border-radius: 6px; padding: 4px 10px; margin-bottom: 12px;">
+          <span style="color: ${item.color}; font-size: 12px; font-weight: 800; letter-spacing: 0.5px;">VISTAS • ${item.type.toUpperCase()} • BY ${item.author.toUpperCase()}</span>
+        </div>
+        <h2 style="color: ${item.color}; font-size: 22px; font-weight: 800; border-bottom: 2px solid ${item.color}; padding-bottom: 8px; margin-bottom: 16px;">
+          ${item.title}
+        </h2>
+        <p style="font-size: 15px; line-height: 1.7; color: #CBD5E1;">
+          Comprehensive supplementary story analysis, character motives, board questions, and interactive quiz for <b>${item.title}</b> are loading.
+        </p>
+      </div>
+    `,
+    htmlExercises: {
+      "ex-c12-eng": `
+        <div style="padding: 14px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.75; font-size: 16px;">
+          <div style="background: rgba(71, 118, 230, 0.15); border-left: 5px solid ${item.color}; padding: 10px 16px; border-radius: 4px; margin: 15px 0 20px 0;">
+            <h2 style="color: ${item.color}; font-weight: bold; margin: 0; font-size: 18px;">
+              BOARD EXAMINATION QUESTIONS &amp; ANSWERS &bull; ${item.title.toUpperCase()}
+            </h2>
+            <span style="color: #CBD5E1; font-size: 13.5px;">Short Answers (3M) &bull; Long Answers (6M) &bull; NCERT Supplementary Solutions</span>
+          </div>
+          <p style="color: #CBD5E1;">Full exam solutions for ${item.title} are loading.</p>
+        </div>
+      `,
+    },
+    exercises: [
+      {
+        id: "ex-c12-eng",
+        name: "Q & A",
+        questions: [],
+      },
+    ],
+    mcqs: Array.from({ length: 20 }, (_, idx) => ({
+      id: `${item.id}-mcq-${idx + 1}`,
+      question: `${item.title} - Question ${idx + 1}`,
+      options: [
+        `A):   Option 1 for ${item.title}`,
+        `B):   Option 2 for ${item.title}`,
+        `C):   Option 3 for ${item.title}`,
+        `D):   Option 4 for ${item.title}`,
+      ],
+      correctAnswer: ["a", "b", "c", "d"][idx % 4],
+      explanation: `Detailed explanation for ${item.title} Question ${idx + 1}.`,
+    })),
+    introduction: item.title,
+  };
+});
+
+const c12EngWriting = [
+  { id: "c12-eng-w1", number: 1, title: "Note-Making & Summarizing", marks: "10 Marks", section: "Reading Skills", color: "#FF512F" },
+  { id: "c12-eng-w2", number: 2, title: "Advertisements & Invitations/Replies", marks: "4 Marks", section: "Writing Skills", color: "#00C6FF" },
+  { id: "c12-eng-w3", number: 3, title: "Formal & Business Letter Writing", marks: "6 Marks", section: "Writing Skills", color: "#11998E" },
+  { id: "c12-eng-w4", number: 4, title: "Resume & Cover Letter Writing", marks: "6 Marks", section: "Writing Skills", color: "#8E2DE2" },
+  { id: "c12-eng-w5", number: 5, title: "Article, Debate, Speech & Narrative Writing", marks: "6 Marks", section: "Writing Skills", color: "#FF8A65" },
+  { id: "c12-eng-w6", number: 6, title: "Grammar Editing Master Toolkit", marks: "8 Marks", section: "Grammar", color: "#FDC830" },
+];
+
+c12EngWriting.forEach((item) => {
+  chapterContents[item.id] = {
+    id: item.id,
+    number: item.number,
+    title: item.title,
+    isHtmlView: true,
+    htmlOverview: `
+      <div style="padding: 14px; color: #F8FAFC; text-align: justify; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+        <div style="display: inline-block; background: ${item.color}22; border: 1px solid ${item.color}; border-radius: 6px; padding: 4px 10px; margin-bottom: 12px;">
+          <span style="color: ${item.color}; font-size: 12px; font-weight: 800; letter-spacing: 0.5px;">${item.section.toUpperCase()} • ${item.marks.toUpperCase()}</span>
+        </div>
+        <h2 style="color: ${item.color}; font-size: 22px; font-weight: 800; border-bottom: 2px solid ${item.color}; padding-bottom: 8px; margin-bottom: 16px;">
+          ${item.title}
+        </h2>
+        <p style="font-size: 15px; line-height: 1.7; color: #CBD5E1;">
+          Master formats, board marking schemes, solved samples, and practice tests for <b>${item.title}</b> are loading.
+        </p>
+      </div>
+    `,
+    htmlExercises: {
+      "ex-c12-eng": `
+        <div style="padding: 14px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.75; font-size: 16px;">
+          <div style="background: rgba(243, 156, 18, 0.15); border-left: 5px solid ${item.color}; padding: 10px 16px; border-radius: 4px; margin: 15px 0 20px 0;">
+            <h2 style="color: ${item.color}; font-weight: bold; margin: 0; font-size: 18px;">
+              BOARD TOOLKIT &amp; PRACTICE &bull; ${item.title.toUpperCase()}
+            </h2>
+            <span style="color: #CBD5E1; font-size: 13.5px;">Official Marking Scheme &bull; Formats &bull; Solved Samples &bull; Practice Tests</span>
+          </div>
+          <p style="color: #CBD5E1;">Board formats and solved samples for ${item.title} are loading.</p>
+        </div>
+      `,
+    },
+    exercises: [
+      {
+        id: "ex-c12-eng",
+        name: "Q & A",
+        questions: [],
+      },
+    ],
+    mcqs: Array.from({ length: 20 }, (_, idx) => ({
+      id: `${item.id}-mcq-${idx + 1}`,
+      question: `${item.title} - Question ${idx + 1}`,
+      options: [
+        `A):   Option 1 for ${item.title}`,
+        `B):   Option 2 for ${item.title}`,
+        `C):   Option 3 for ${item.title}`,
+        `D):   Option 4 for ${item.title}`,
+      ],
+      correctAnswer: ["a", "b", "c", "d"][idx % 4],
+      explanation: `Detailed explanation for ${item.title} Question ${idx + 1}.`,
+    })),
+    introduction: item.title,
+  };
+});
+
 export const isChapterAvailable = (chapterId: string): boolean => {
   return !!chapterContents[chapterId];
 };

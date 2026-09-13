@@ -1022,9 +1022,10 @@ function SolutionScreen() {
     tab1Title = "Reference";
     tab2Title = "Solutions";
     if (
-      chapterId.match(/^c1[12]-(edu|pol|soc|his|psy)-/) ||
+      chapterId.match(/^c1[12]-(edu|pol|soc|his|psy|eng)-/) ||
       chapterId.includes("-edu-") ||
-      chapterId.includes("-arts-")
+      chapterId.includes("-arts-") ||
+      chapterId.includes("-eng-")
     ) {
       tab2Title = "Q & A";
     }

@@ -120,6 +120,36 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
       { id: "c11-pol-18", number: 18, name: "Secularism", color: "#E91E63", marks: "6 Marks", section: "Part B" },
     ],
   },
+  "Class 11 English": {
+    Hornbill: [
+      { id: "c11-eng-h1", number: 1, name: "The Portrait of a Lady", color: "#E91E63", marks: "Prose", section: "Prose" },
+      { id: "c11-eng-h2", number: 2, name: "A Photograph", color: "#9C27B0", marks: "Poem", section: "Poetry" },
+      { id: "c11-eng-h3", number: 3, name: "We're Not Afraid to Die... If We Can All Be Together", color: "#2196F3", marks: "Prose", section: "Prose" },
+      { id: "c11-eng-h4", number: 4, name: "Discovering Tut: The Saga Continues", color: "#FF9800", marks: "Prose", section: "Prose" },
+      { id: "c11-eng-h5", number: 5, name: "The Laburnum Top", color: "#FBC02D", marks: "Poem", section: "Poetry" },
+      { id: "c11-eng-h6", number: 6, name: "The Voice of the Rain", color: "#00BCD4", marks: "Poem", section: "Poetry" },
+      { id: "c11-eng-h7", number: 7, name: "The Ailing Planet: The Green Movement's Role", color: "#4CAF50", marks: "Prose", section: "Prose" },
+      { id: "c11-eng-h8", number: 8, name: "Childhood", color: "#E040FB", marks: "Poem", section: "Poetry" },
+      { id: "c11-eng-h9", number: 9, name: "The Adventure", color: "#3F51B5", marks: "Prose", section: "Prose" },
+      { id: "c11-eng-h10", number: 10, name: "Silk Road", color: "#8D6E63", marks: "Prose", section: "Prose" },
+      { id: "c11-eng-h11", number: 11, name: "Father to Son", color: "#FF5722", marks: "Poem", section: "Poetry" },
+    ],
+    Snapshots: [
+      { id: "c11-eng-s1", number: 1, name: "The Summer of the Beautiful White Horse", color: "#00B0FF", marks: "Story", section: "Supplementary" },
+      { id: "c11-eng-s2", number: 2, name: "The Address", color: "#7C4DFF", marks: "Story", section: "Supplementary" },
+      { id: "c11-eng-s3", number: 3, name: "Mother's Day", color: "#FF4081", marks: "Play", section: "Play" },
+      { id: "c11-eng-s4", number: 4, name: "Birth", color: "#00E676", marks: "Story", section: "Supplementary" },
+      { id: "c11-eng-s5", number: 5, name: "The Tale of Melon City", color: "#FFAB00", marks: "Poetic Story", section: "Poetic Narrative" },
+    ],
+    "Writing & Grammar": [
+      { id: "c11-eng-w1", number: 1, name: "Note-Making & Summarizing", color: "#FF512F", marks: "10 Marks", section: "Reading Skills" },
+      { id: "c11-eng-w2", number: 2, name: "Notice, Poster & Advertisement Writing", color: "#00C6FF", marks: "4 Marks", section: "Writing Skills" },
+      { id: "c11-eng-w3", number: 3, name: "Formal & Business Letter Writing", color: "#11998E", marks: "6 Marks", section: "Writing Skills" },
+      { id: "c11-eng-w4", number: 4, name: "Personal Email Writing", color: "#8E2DE2", marks: "4 Marks", section: "Writing Skills" },
+      { id: "c11-eng-w5", number: 5, name: "Article, Speech, Report & Debate Writing", color: "#FF8A65", marks: "8 Marks", section: "Writing Skills" },
+      { id: "c11-eng-w6", number: 6, name: "Grammar Error Correction Master Toolkit", color: "#FDC830", marks: "8 Marks", section: "Grammar" },
+    ],
+  },
   "Class 12 Arts": {
     Education: [
       { id: "c12-edu-1", number: 1, name: "Philosophical Foundations of Education", color: "#FF512F" },
@@ -150,6 +180,39 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
       { id: "c12-pol-13", number: 13, name: "Crisis of the Constitutional Order", color: "#D50000", marks: "4 Marks", section: "Part B" },
       { id: "c12-pol-14", number: 14, name: "Regional Aspirations and Conflicts", color: "#7C4DFF", marks: "6 Marks", section: "Part B" },
       { id: "c12-pol-15", number: 15, name: "Recent Developments in Indian Politics", color: "#00C853", marks: "7 Marks", section: "Part B" },
+    ],
+  },
+  "Class 12 English": {
+    Flamingo: [
+      { id: "c12-eng-f1", number: 1, name: "The Last Lesson", color: "#FF512F" },
+      { id: "c12-eng-f2", number: 2, name: "Lost Spring", color: "#00C6FF" },
+      { id: "c12-eng-f3", number: 3, name: "Deep Water", color: "#11998E" },
+      { id: "c12-eng-f4", number: 4, name: "The Rattrap", color: "#8E2DE2" },
+      { id: "c12-eng-f5", number: 5, name: "Indigo", color: "#FF8A65" },
+      { id: "c12-eng-f6", number: 6, name: "Poets and Pancakes", color: "#FDC830" },
+      { id: "c12-eng-f7", number: 7, name: "The Interview (Part I & II)", color: "#FF007F" },
+      { id: "c12-eng-f8", number: 8, name: "Going Places", color: "#29B6F6" },
+      { id: "c12-eng-f9", number: 9, name: "My Mother at Sixty-six", color: "#E040FB" },
+      { id: "c12-eng-f10", number: 10, name: "Keeping Quiet", color: "#00E5FF" },
+      { id: "c12-eng-f11", number: 11, name: "A Thing of Beauty", color: "#00E676" },
+      { id: "c12-eng-f12", number: 12, name: "A Roadside Stand", color: "#FF9100" },
+      { id: "c12-eng-f13", number: 13, name: "Aunt Jennifer's Tigers", color: "#FF5252" },
+    ],
+    Vistas: [
+      { id: "c12-eng-v1", number: 1, name: "The Third Level", color: "#00B0FF" },
+      { id: "c12-eng-v2", number: 2, name: "The Tiger King", color: "#FF6D00" },
+      { id: "c12-eng-v3", number: 3, name: "Journey to The End of the Earth", color: "#26C6DA" },
+      { id: "c12-eng-v4", number: 4, name: "The Enemy", color: "#D50000" },
+      { id: "c12-eng-v5", number: 5, name: "On the Face of It", color: "#AB47BC" },
+      { id: "c12-eng-v6", number: 6, name: "Memories of Childhood", color: "#64DD17" },
+    ],
+    "Writing & Grammar": [
+      { id: "c12-eng-w1", number: 1, name: "Note-Making & Summarizing", color: "#FF512F" },
+      { id: "c12-eng-w2", number: 2, name: "Advertisements & Invitations/Replies", color: "#00C6FF" },
+      { id: "c12-eng-w3", number: 3, name: "Formal & Business Letter Writing", color: "#11998E" },
+      { id: "c12-eng-w4", number: 4, name: "Resume & Cover Letter Writing", color: "#8E2DE2" },
+      { id: "c12-eng-w5", number: 5, name: "Article, Debate, Speech & Narrative Writing", color: "#FF8A65" },
+      { id: "c12-eng-w6", number: 6, name: "Grammar Editing Master Toolkit", color: "#FDC830" },
     ],
   },
   "Class 11 Science": {
@@ -1415,6 +1478,68 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
       gradientList[5], // Teal
     ];
     return sciGradients[(num - 1) % sciGradients.length];
+  }
+
+  if (chapterId.startsWith("c11-eng-")) {
+    const engGradients: Record<string, string[]> = {
+      "c11-eng-h1": ["#E91E63", "#C2185B"], // Deep Rose (The Portrait of a Lady)
+      "c11-eng-h2": ["#9C27B0", "#7B1FA2"], // Purple (A Photograph)
+      "c11-eng-h3": ["#2196F3", "#1976D2"], // Ocean Blue (We're Not Afraid to Die)
+      "c11-eng-h4": ["#FF9800", "#F57C00"], // Egyptian Gold (Discovering Tut)
+      "c11-eng-h5": ["#FBC02D", "#F57F17"], // Yellow/Gold (The Laburnum Top)
+      "c11-eng-h6": ["#00BCD4", "#0097A7"], // Rain Cyan (The Voice of the Rain)
+      "c11-eng-h7": ["#4CAF50", "#388E3C"], // Green Movement (The Ailing Planet)
+      "c11-eng-h8": ["#E040FB", "#AA00FF"], // Nostalgic Magenta (Childhood)
+      "c11-eng-h9": ["#3F51B5", "#303F9F"], // History Indigo (The Adventure)
+      "c11-eng-h10": ["#8D6E63", "#5D4037"], // Mountain Silk (Silk Road)
+      "c11-eng-h11": ["#FF5722", "#E64A19"], // Deep Sunset (Father to Son)
+      "c11-eng-s1": ["#00B0FF", "#0091EA"], // Electric Azure (Summer of Beautiful White Horse)
+      "c11-eng-s2": ["#7C4DFF", "#651FFF"], // Deep Violet (The Address)
+      "c11-eng-s3": ["#FF4081", "#F50057"], // Playful Pink (Mother's Day)
+      "c11-eng-s4": ["#00E676", "#00C853"], // Medical Life Green (Birth)
+      "c11-eng-s5": ["#FFAB00", "#FF6D00"], // Satirical Amber (The Tale of Melon City)
+      "c11-eng-w1": ["#FF512F", "#DD2476"], // Note-making
+      "c11-eng-w2": ["#00C6FF", "#0072FF"], // Notice & Poster
+      "c11-eng-w3": ["#11998E", "#38EF7D"], // Letters
+      "c11-eng-w4": ["#8E2DE2", "#4A00E0"], // Email
+      "c11-eng-w5": ["#FF8A65", "#FF3D00"], // Article & Speech
+      "c11-eng-w6": ["#FDC830", "#F37335"], // Grammar Toolkit
+    };
+    if (engGradients[chapterId]) return engGradients[chapterId];
+  }
+
+  if (chapterId.startsWith("c12-eng-")) {
+    const eng12Gradients: Record<string, string[]> = {
+      // Flamingo
+      "c12-eng-f1": ["#FF512F", "#DD2476"], // The Last Lesson
+      "c12-eng-f2": ["#00C6FF", "#0072FF"], // Lost Spring
+      "c12-eng-f3": ["#11998E", "#38EF7D"], // Deep Water
+      "c12-eng-f4": ["#8E2DE2", "#4A00E0"], // The Rattrap
+      "c12-eng-f5": ["#FF8A65", "#FF3D00"], // Indigo
+      "c12-eng-f6": ["#FDC830", "#F37335"], // Poets and Pancakes
+      "c12-eng-f7": ["#FF007F", "#7928CA"], // The Interview
+      "c12-eng-f8": ["#29B6F6", "#0288D1"], // Going Places
+      "c12-eng-f9": ["#E040FB", "#AA00FF"], // My Mother at Sixty-six
+      "c12-eng-f10": ["#00E5FF", "#00B0FF"], // Keeping Quiet
+      "c12-eng-f11": ["#00E676", "#00C853"], // A Thing of Beauty
+      "c12-eng-f12": ["#FF9100", "#FF5722"], // A Roadside Stand
+      "c12-eng-f13": ["#FF5252", "#D32F2F"], // Aunt Jennifer's Tigers
+      // Vistas
+      "c12-eng-v1": ["#00B0FF", "#0091EA"], // The Third Level
+      "c12-eng-v2": ["#FF6D00", "#E65100"], // The Tiger King
+      "c12-eng-v3": ["#26C6DA", "#00838F"], // Journey to The End of the Earth
+      "c12-eng-v4": ["#D50000", "#B71C1C"], // The Enemy
+      "c12-eng-v5": ["#AB47BC", "#7B1FA2"], // On the Face of It
+      "c12-eng-v6": ["#64DD17", "#33691E"], // Memories of Childhood
+      // Writing & Grammar
+      "c12-eng-w1": ["#FF512F", "#DD2476"], // Note-Making
+      "c12-eng-w2": ["#00C6FF", "#0072FF"], // Ads & Invitations
+      "c12-eng-w3": ["#11998E", "#38EF7D"], // Letters
+      "c12-eng-w4": ["#8E2DE2", "#4A00E0"], // Resume & Cover Letter
+      "c12-eng-w5": ["#FF8A65", "#FF3D00"], // Article & Debate
+      "c12-eng-w6": ["#FDC830", "#F37335"], // Grammar Toolkit
+    };
+    if (eng12Gradients[chapterId]) return eng12Gradients[chapterId];
   }
 
   return JiguuColors.primaryGradient;

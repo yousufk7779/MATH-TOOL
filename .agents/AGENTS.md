@@ -161,3 +161,25 @@ Full authoritative rules, chapter syllabus mapping (15 chapters across Part A an
    - **5, 6 & 7-Marks Chapters (All others)**: Exactly 25 questions (12 VSAT + 8 SAT 4M + 5 LAT 6M).
 4. **Interactive MCQs (Tab 3)**: 15 to 20 MCQs with green/red feedback and tiered difficulty.
 
+---
+
+## Class 11 & 12 English (Core / General English) Master Blueprint
+
+Full authoritative rules, JKBOSE & CBSE textbook alignments (Hornbill, Snapshots, Flamingo, Vistas), 3-Section Hub structure, and Literary Devices table standards are permanently recorded in:
+👉 `.agents/ENGLISH_CORE_BLUEPRINT.md`
+
+### Core English Directives:
+1. **3-Section Hub on English Main Screen**:
+   - **Section 1**: Main Textbook (*Hornbill* for Class 11, *Flamingo* for Class 12).
+   - **Section 2**: Supplementary Reader (*Snapshots* for Class 11, *Vistas* for Class 12).
+   - **Section 3**: Writing Skills, Grammar & Reading Comprehension Hub.
+2. **Literature Chapters (The 3-Tab Model)**:
+   - **Tab 1 (Overview & Appreciation)**: Author/Poet background, complete engaging summary, psychological character sketches, **Poetic & Literary Devices Master Table** (Metaphor, Simile, Personification, etc.), and Vocabulary Glossary.
+   - **Tab 2 (Board Solutions)**: Extract-based 1-mark questions, Short Answer (40-50 words, 3M), Long Thematic Answers (120-150 words, 5-6M), and NCERT exercise solutions.
+   - **Tab 3 (Interactive MCQs)**: 20 MCQs with Tiered progression (Recall -> Vocabulary/Poetic Device -> Analytical) with instant Green/Red feedback and Ultra HD gamified dashboard.
+3. **Writing Skills & Grammar Modules**:
+   - Exact Board Marking Scheme breakdown cards (Format 1M, Salutation 1M, Body 3M, Closing 1M).
+   - Golden Rule templates with 3 high-scoring solved samples per topic.
+   - Grammar Editing error-correction rules with solved passages.
+
+

@@ -69,7 +69,18 @@ function Class11Screen() {
             />
           </View>
 
-          {/* 4. EDUCATION BUTTON */}
+          {/* 4. ENGLISH BUTTON */}
+          <View style={styles.buttonWrapper}>
+            <ColorButton
+              testID="button-english"
+              title="ENGLISH"
+              icon="📖"
+              colors={["#ec008c", "#fc6767"]}
+              onPress={() => navigation.navigate("Class11English")}
+            />
+          </View>
+
+          {/* 5. EDUCATION BUTTON */}
           <View style={styles.buttonWrapper}>
             <ColorButton
               testID="button-education"
