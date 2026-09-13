@@ -58,7 +58,7 @@ function ChapterListScreen() {
             <View style={styles.sectionBanner}>
               <View style={[styles.sectionBadge, styles.badgePartA]}>
                 <ThemedText style={[styles.sectionBadgeText, styles.badgeTextPartA]}>
-                  PART A • 40 MARKS
+                  PART A
                 </ThemedText>
               </View>
               <ThemedText style={styles.sectionBannerTitle}>
@@ -71,7 +71,7 @@ function ChapterListScreen() {
             <View style={[styles.sectionBanner, styles.sectionBannerPartB]}>
               <View style={[styles.sectionBadge, styles.badgePartB]}>
                 <ThemedText style={[styles.sectionBadgeText, styles.badgeTextPartB]}>
-                  PART B • 40 MARKS
+                  PART B
                 </ThemedText>
               </View>
               <ThemedText style={styles.sectionBannerTitle}>
@@ -86,7 +86,6 @@ function ChapterListScreen() {
             name={item.name}
             colors={chapterGradient}
             isAvailable={available}
-            marks={item.marks}
             onPress={() => {
               console.log("Chapter clicked:", item.id);
               navigation.navigate("Solution", {
