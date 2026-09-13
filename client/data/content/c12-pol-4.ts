@@ -229,42 +229,90 @@ export const c12Pol4HtmlOverview = `
 
   <p>While the United Nations addresses political and security crises, the post-Cold War era has witnessed the ascendance of powerful economic regulatory bodies and transnational non-state actors that exert profound authority over the sovereign policies of developing nations.</p>
 
-  <!-- COMPARISON TABLE MATRIX: BRETTON WOODS & WTO -->
-  <div style="margin: 22px 0; background: rgba(15, 23, 42, 0.85); border: 1.5px solid #8E2DE2; border-radius: 10px; overflow: hidden;">
-    <div style="background: #8E2DE2; padding: 12px 16px;">
-      <h3 style="color: #FFFFFF; margin: 0; font-size: 16.5px; font-weight: bold;">⚖️ Master Matrix: Bretton Woods Institutions &amp; World Trade Organization</h3>
+  <!-- ULTRA HD VISUAL DIAGRAM: MASTER MATRIX (WHITE BACKGROUND) -->
+  <div style="background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(142, 45, 226, 0.4); border-radius: 10px; padding: 14px 16px; margin: 24px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.35); text-align: center;">
+    <div style="display: flex; justify-content: center; align-items: center; background: #FFFFFF; border-radius: 8px; padding: 12px; border: 1px solid rgba(255,255,255,0.1); margin: 0 auto; max-width: 440px;">
+      <svg viewBox="0 0 420 340" style="width: 100%; height: auto; max-width: 400px; display: block;" xmlns="http://www.w3.org/2000/svg">
+        <rect x="8" y="8" width="404" height="324" rx="10" fill="#FAF5FF" stroke="#D8B4FE" stroke-width="2"/>
+        <text x="210" y="29" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#4C1D95" text-anchor="middle">MASTER MATRIX: GLOBAL ECONOMIC INSTITUTIONS</text>
+        
+        <!-- Row 1: IMF -->
+        <rect x="18" y="42" width="384" height="84" rx="7" fill="#FFFFFF" stroke="#8E2DE2" stroke-width="1.5"/>
+        <rect x="18" y="42" width="384" height="23" rx="7" fill="#8E2DE2"/>
+        <text x="28" y="58" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF">IMF &bull; International Monetary Fund</text>
+        <text x="392" y="58" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#E9D5FF" text-anchor="end">Est. 1944 | Washington D.C.</text>
+        <text x="28" y="81" font-family="Arial, sans-serif" font-size="9" fill="#1E293B">&bull; <tspan font-weight="bold" fill="#581C87">Mandate:</tspan> Global financial stability &amp; emergency balance-of-payments bailouts.</text>
+        <text x="28" y="96" font-family="Arial, sans-serif" font-size="9" fill="#1E293B">&bull; <tspan font-weight="bold" fill="#581C87">Voting Structure:</tspan> Weighted by financial quotas. G7 nations control ~41%.</text>
+        <text x="28" y="112" font-family="Arial, sans-serif" font-size="9" fill="#DC2626">&bull; <tspan font-weight="bold">US Hegemony:</tspan> US holds 16.5% vote &mdash; de facto unilateral veto (85% required).</text>
+
+        <!-- Row 2: World Bank -->
+        <rect x="18" y="134" width="384" height="84" rx="7" fill="#FFFFFF" stroke="#0284C7" stroke-width="1.5"/>
+        <rect x="18" y="134" width="384" height="23" rx="7" fill="#0284C7"/>
+        <text x="28" y="150" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF">WORLD BANK &bull; IBRD &amp; IDA</text>
+        <text x="392" y="150" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#E0F2FE" text-anchor="end">Est. 1944 | Washington D.C.</text>
+        <text x="28" y="173" font-family="Arial, sans-serif" font-size="9" fill="#1E293B">&bull; <tspan font-weight="bold" fill="#0369A1">Mandate:</tspan> Long-term loans &amp; infrastructure funding for developing nations.</text>
+        <text x="28" y="188" font-family="Arial, sans-serif" font-size="9" fill="#1E293B">&bull; <tspan font-weight="bold" fill="#0369A1">Voting Structure:</tspan> Capital-weighted voting dominated by Western economies.</text>
+        <text x="28" y="204" font-family="Arial, sans-serif" font-size="9" fill="#0284C7">&bull; <tspan font-weight="bold">Tradition:</tspan> Bank President is always an American citizen nominated by US President.</text>
+
+        <!-- Row 3: WTO -->
+        <rect x="18" y="226" width="384" height="84" rx="7" fill="#FFFFFF" stroke="#0D9488" stroke-width="1.5"/>
+        <rect x="18" y="226" width="384" height="23" rx="7" fill="#0D9488"/>
+        <text x="28" y="242" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF">WTO &bull; World Trade Organization</text>
+        <text x="392" y="242" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#CCFBF1" text-anchor="end">Est. 1995 | Geneva, Switzerland</text>
+        <text x="28" y="265" font-family="Arial, sans-serif" font-size="9" fill="#1E293B">&bull; <tspan font-weight="bold" fill="#0F766E">Mandate:</tspan> Multilateral trade rules, lowering tariffs &amp; arbitrating trade disputes.</text>
+        <text x="28" y="280" font-family="Arial, sans-serif" font-size="9" fill="#1E293B">&bull; <tspan font-weight="bold" fill="#0F766E">Predecessor:</tspan> Replaced GATT (General Agreement on Tariffs and Trade).</text>
+        <text x="28" y="296" font-family="Arial, sans-serif" font-size="9" fill="#D97706">&bull; <tspan font-weight="bold">Deficit:</tspan> Formal consensus, but US, EU &amp; Japan dominate "Green Room" agendas.</text>
+
+        <text x="210" y="322" font-family="Arial, sans-serif" font-size="8.5" font-weight="bold" fill="#6B21A8" text-anchor="middle">Comparative Overview &bull; Bretton Woods Twins &amp; Multilateral Trading System</text>
+      </svg>
     </div>
-    <div style="overflow-x: auto;">
-      <table style="width: 100%; border-collapse: collapse; font-size: 14.5px; color: #E2E8F0; text-align: left;">
-        <thead>
-          <tr style="background: rgba(142, 45, 226, 0.2); border-bottom: 1px solid #8E2DE2;">
-            <th style="padding: 12px 14px; color: #D1C4E9;">Institution</th>
-            <th style="padding: 12px 14px; color: #D1C4E9;">Est. Year &amp; HQ</th>
-            <th style="padding: 12px 14px; color: #D1C4E9;">Core Mandate &amp; Role</th>
-            <th style="padding: 12px 14px; color: #D1C4E9;">Voting System &amp; Power Structure</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
-            <td style="padding: 12px 14px; font-weight: bold; color: #D1C4E9;">IMF (International Monetary Fund)</td>
-            <td style="padding: 12px 14px;">1944 (Bretton Woods)<br>Washington D.C.</td>
-            <td style="padding: 12px 14px;">Oversees international financial system, provides balance-of-payments crisis bailouts to stabilize currencies.</td>
-            <td style="padding: 12px 14px;"><b style="color: #8E2DE2;">Weighted Voting:</b> Based on quotas. G7 nations control ~41% of votes. US holds 16.5% voting share, conferring de facto veto over major decisions requiring 85% majority.</td>
-          </tr>
-          <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
-            <td style="padding: 12px 14px; font-weight: bold; color: #D1C4E9;">World Bank (IBRD &amp; IDA)</td>
-            <td style="padding: 12px 14px;">1944 (Bretton Woods)<br>Washington D.C.</td>
-            <td style="padding: 12px 14px;">Provides low-interest development loans, infrastructure funding, and technical assistance to developing and middle-income nations.</td>
-            <td style="padding: 12px 14px;"><b style="color: #8E2DE2;">Western Hegemony:</b> Voting power tied to capital contributions. By tradition, the World Bank President has always been an American citizen nominated by the US President.</td>
-          </tr>
-          <tr>
-            <td style="padding: 12px 14px; font-weight: bold; color: #D1C4E9;">WTO (World Trade Organization)</td>
-            <td style="padding: 12px 14px;">1995 (Marrakesh Agreement, replacing GATT)<br>Geneva, Switzerland</td>
-            <td style="padding: 12px 14px;">Sets global trade rules, settles commercial disputes, lowers cross-border tariffs on goods, services, and intellectual property (TRIPS).</td>
-            <td style="padding: 12px 14px;"><b style="color: #8E2DE2;">Formal Consensus:</b> Technically 1 member = 1 vote, but agenda and "Green Room" negotiations are dominated by the US, EU, and Japan, sidelining agricultural concerns of developing nations.</td>
-          </tr>
-        </tbody>
-      </table>
+    <div style="color: #CBD5E1; font-size: 14px; text-align: center; margin-top: 10px; line-height: 1.5; font-weight: 500;">
+      💡 Master Matrix: Comparative Overview of the IMF, World Bank, and WTO in Global Governance.
+    </div>
+  </div>
+
+  <!-- COMPACT MOBILE-RESPONSIVE CARDS -->
+  <div style="margin: 20px 0; display: flex; flex-direction: column; gap: 14px;">
+    <!-- IMF Card -->
+    <div style="background: rgba(15, 23, 42, 0.7); border: 1.5px solid #8E2DE2; border-left: 5px solid #8E2DE2; border-radius: 8px; padding: 14px 16px;">
+      <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; margin-bottom: 6px;">
+        <h4 style="color: #8E2DE2; margin: 0; font-size: 15.5px; font-weight: bold;">1. International Monetary Fund (IMF)</h4>
+        <span style="color: #D1C4E9; font-size: 12.5px; font-weight: 600;">Est. 1944 &bull; Washington D.C.</span>
+      </div>
+      <p style="margin: 0 0 6px 0; font-size: 13.5px; color: #F1F5F9; line-height: 1.6;">
+        <b style="color: #8E2DE2;">Core Mandate:</b> Oversees the global financial system, monitors exchange rates, and provides emergency financial bailouts to countries facing severe balance-of-payments crises.
+      </p>
+      <p style="margin: 0; font-size: 13.5px; color: #F1F5F9; line-height: 1.6;">
+        <b style="color: #8E2DE2;">Voting Power &amp; Hegemony:</b> Operates on <b>weighted voting</b> based on financial quotas. The G7 nations control ~41% of votes. The US alone holds a <b>16.5% voting share</b>, conferring a de facto unilateral veto over major decisions requiring an 85% majority.
+      </p>
+    </div>
+
+    <!-- World Bank Card -->
+    <div style="background: rgba(15, 23, 42, 0.7); border: 1.5px solid #0284C7; border-left: 5px solid #0284C7; border-radius: 8px; padding: 14px 16px;">
+      <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; margin-bottom: 6px;">
+        <h4 style="color: #38BDF8; margin: 0; font-size: 15.5px; font-weight: bold;">2. World Bank (IBRD &amp; IDA)</h4>
+        <span style="color: #BAE6FD; font-size: 12.5px; font-weight: 600;">Est. 1944 &bull; Washington D.C.</span>
+      </div>
+      <p style="margin: 0 0 6px 0; font-size: 13.5px; color: #F1F5F9; line-height: 1.6;">
+        <b style="color: #38BDF8;">Core Mandate:</b> Provides long-term, low-interest development loans, infrastructure financing, and technical assistance to middle- and low-income developing nations.
+      </p>
+      <p style="margin: 0; font-size: 13.5px; color: #F1F5F9; line-height: 1.6;">
+        <b style="color: #38BDF8;">Voting Power &amp; Hegemony:</b> Voting weight is tied to capital contributions. By unwritten diplomatic convention, the President of the World Bank is always an American citizen nominated by the US President.
+      </p>
+    </div>
+
+    <!-- WTO Card -->
+    <div style="background: rgba(15, 23, 42, 0.7); border: 1.5px solid #0D9488; border-left: 5px solid #0D9488; border-radius: 8px; padding: 14px 16px;">
+      <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; margin-bottom: 6px;">
+        <h4 style="color: #2DD4BF; margin: 0; font-size: 15.5px; font-weight: bold;">3. World Trade Organization (WTO)</h4>
+        <span style="color: #99F6E4; font-size: 12.5px; font-weight: 600;">Est. 1995 &bull; Geneva, Switzerland</span>
+      </div>
+      <p style="margin: 0 0 6px 0; font-size: 13.5px; color: #F1F5F9; line-height: 1.6;">
+        <b style="color: #2DD4BF;">Core Mandate:</b> Succeeded GATT under the 1994 Marrakesh Agreement. Establishes multilateral trade rules, settles interstate commercial disputes, and reduces international tariffs on goods, services, and IP (TRIPS).
+      </p>
+      <p style="margin: 0; font-size: 13.5px; color: #F1F5F9; line-height: 1.6;">
+        <b style="color: #2DD4BF;">Voting Power &amp; Hegemony:</b> Formally 1 state = 1 vote by consensus, but major trading powers (US, EU, Japan) dominate informal "Green Room" meetings, sidelining agricultural subsidies and concerns of developing countries.
+      </p>
     </div>
   </div>
 
