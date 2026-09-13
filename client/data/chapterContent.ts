@@ -36,6 +36,7 @@ import { c12Pol1HtmlOverview, c12Pol1HtmlSolutions, c12Pol1Mcqs } from "./conten
 import { c12Pol2HtmlOverview, c12Pol2HtmlSolutions, c12Pol2Mcqs } from "./content/c12-pol-2";
 import { c12Pol3HtmlOverview, c12Pol3HtmlSolutions, c12Pol3Mcqs } from "./content/c12-pol-3";
 import { c12Pol4HtmlOverview, c12Pol4HtmlSolutions, c12Pol4Mcqs } from "./content/c12-pol-4";
+import { c12Pol5HtmlOverview, c12Pol5HtmlSolutions, c12Pol5Mcqs } from "./content/c12-pol-5";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -2694,6 +2695,24 @@ if (ch12Pol4) {
   ];
   ch12Pol4.mcqs = c12Pol4Mcqs;
 }
+
+// Override Class 12 Political Science Chapter 5 (Security in Contemporary World)
+const ch12Pol5 = chapterContents["c12-pol-5"];
+if (ch12Pol5) {
+  ch12Pol5.htmlOverview = c12Pol5HtmlOverview;
+  ch12Pol5.htmlExercises = {
+    "ex-c12-qa": c12Pol5HtmlSolutions,
+  };
+  ch12Pol5.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Pol5.mcqs = c12Pol5Mcqs;
+}
+
 
 
 
