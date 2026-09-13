@@ -55,6 +55,7 @@ import { c11Pol5HtmlOverview, c11Pol5HtmlSolutions, c11Pol5Mcqs } from "./conten
 import { c11Pol6HtmlOverview, c11Pol6HtmlSolutions, c11Pol6Mcqs } from "./content/c11-pol-6";
 import { c11Pol7HtmlOverview, c11Pol7HtmlSolutions, c11Pol7Mcqs } from "./content/c11-pol-7";
 import { c11Pol8HtmlOverview, c11Pol8HtmlSolutions, c11Pol8Mcqs } from "./content/c11-pol-8";
+import { c11Pol9HtmlOverview, c11Pol9HtmlSolutions, c11Pol9Mcqs } from "./content/c11-pol-9";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -3181,6 +3182,23 @@ if (ch11Pol8) {
     },
   ];
   ch11Pol8.mcqs = c11Pol8Mcqs;
+}
+
+// Override Class 11 Political Science Chapter 9 (Political Philosophy of the Constitution)
+const ch11Pol9 = chapterContents["c11-pol-9"];
+if (ch11Pol9) {
+  ch11Pol9.htmlOverview = c11Pol9HtmlOverview;
+  ch11Pol9.htmlExercises = {
+    "ex-c11-qa": c11Pol9HtmlSolutions,
+  };
+  ch11Pol9.exercises = [
+    {
+      id: "ex-c11-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch11Pol9.mcqs = c11Pol9Mcqs;
 }
 
 
