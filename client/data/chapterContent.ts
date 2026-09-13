@@ -41,6 +41,7 @@ import { c12Pol6HtmlOverview, c12Pol6HtmlSolutions, c12Pol6Mcqs } from "./conten
 import { c12Pol7HtmlOverview, c12Pol7HtmlSolutions, c12Pol7Mcqs } from "./content/c12-pol-7";
 import { c12Pol8HtmlOverview, c12Pol8HtmlSolutions, c12Pol8Mcqs } from "./content/c12-pol-8";
 import { c12Pol9HtmlOverview, c12Pol9HtmlSolutions, c12Pol9Mcqs } from "./content/c12-pol-9";
+import { c12Pol10HtmlOverview, c12Pol10HtmlSolutions, c12Pol10Mcqs } from "./content/c12-pol-10";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -2784,6 +2785,24 @@ if (ch12Pol9) {
   ];
   ch12Pol9.mcqs = c12Pol9Mcqs;
 }
+
+// Override Class 12 Political Science Chapter 10 (Politics of Planned Development)
+const ch12Pol10 = chapterContents["c12-pol-10"];
+if (ch12Pol10) {
+  ch12Pol10.htmlOverview = c12Pol10HtmlOverview;
+  ch12Pol10.htmlExercises = {
+    "ex-c12-qa": c12Pol10HtmlSolutions,
+  };
+  ch12Pol10.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Pol10.mcqs = c12Pol10Mcqs;
+}
+
 
 
 
