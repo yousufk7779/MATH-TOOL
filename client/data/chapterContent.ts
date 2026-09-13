@@ -57,6 +57,7 @@ import { c11Pol7HtmlOverview, c11Pol7HtmlSolutions, c11Pol7Mcqs } from "./conten
 import { c11Pol8HtmlOverview, c11Pol8HtmlSolutions, c11Pol8Mcqs } from "./content/c11-pol-8";
 import { c11Pol9HtmlOverview, c11Pol9HtmlSolutions, c11Pol9Mcqs } from "./content/c11-pol-9";
 import { c11Pol10HtmlOverview, c11Pol10HtmlSolutions, c11Pol10Mcqs } from "./content/c11-pol-10";
+import { c11Pol11HtmlOverview, c11Pol11HtmlSolutions, c11Pol11Mcqs } from "./content/c11-pol-11";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -3217,6 +3218,23 @@ if (ch11Pol10) {
     },
   ];
   ch11Pol10.mcqs = c11Pol10Mcqs;
+}
+
+// Override Class 11 Political Science Chapter 11 (Introduction to Political Theory)
+const ch11Pol11 = chapterContents["c11-pol-11"];
+if (ch11Pol11) {
+  ch11Pol11.htmlOverview = c11Pol11HtmlOverview;
+  ch11Pol11.htmlExercises = {
+    "ex-c11-qa": c11Pol11HtmlSolutions,
+  };
+  ch11Pol11.exercises = [
+    {
+      id: "ex-c11-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch11Pol11.mcqs = c11Pol11Mcqs;
 }
 
 
