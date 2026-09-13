@@ -35,6 +35,7 @@ import { c12Edu8HtmlOverview, c12Edu8HtmlSolutions, c12Edu8Mcqs } from "./conten
 import { c12Pol1HtmlOverview, c12Pol1HtmlSolutions, c12Pol1Mcqs } from "./content/c12-pol-1";
 import { c12Pol2HtmlOverview, c12Pol2HtmlSolutions, c12Pol2Mcqs } from "./content/c12-pol-2";
 import { c12Pol3HtmlOverview, c12Pol3HtmlSolutions, c12Pol3Mcqs } from "./content/c12-pol-3";
+import { c12Pol4HtmlOverview, c12Pol4HtmlSolutions, c12Pol4Mcqs } from "./content/c12-pol-4";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -2676,6 +2677,24 @@ if (ch12Pol3) {
   ];
   ch12Pol3.mcqs = c12Pol3Mcqs;
 }
+
+// Override Class 12 Political Science Chapter 4 (International Organizations in a Unipolar World)
+const ch12Pol4 = chapterContents["c12-pol-4"];
+if (ch12Pol4) {
+  ch12Pol4.htmlOverview = c12Pol4HtmlOverview;
+  ch12Pol4.htmlExercises = {
+    "ex-c12-qa": c12Pol4HtmlSolutions,
+  };
+  ch12Pol4.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Pol4.mcqs = c12Pol4Mcqs;
+}
+
 
 
 
