@@ -62,6 +62,7 @@ import { c11Pol12HtmlOverview, c11Pol12HtmlSolutions, c11Pol12Mcqs } from "./con
 import { c11Pol13HtmlOverview, c11Pol13HtmlSolutions, c11Pol13Mcqs } from "./content/c11-pol-13";
 import { c11Pol14HtmlOverview, c11Pol14HtmlSolutions, c11Pol14Mcqs } from "./content/c11-pol-14";
 import { c11Pol15HtmlOverview, c11Pol15HtmlSolutions, c11Pol15Mcqs } from "./content/c11-pol-15";
+import { c11Pol16HtmlOverview, c11Pol16HtmlSolutions, c11Pol16Mcqs } from "./content/c11-pol-16";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -3307,6 +3308,23 @@ if (ch11Pol15) {
     },
   ];
   ch11Pol15.mcqs = c11Pol15Mcqs;
+}
+
+// Override Class 11 Political Science Chapter 16 (Citizenship)
+const ch11Pol16 = chapterContents["c11-pol-16"];
+if (ch11Pol16) {
+  ch11Pol16.htmlOverview = c11Pol16HtmlOverview;
+  ch11Pol16.htmlExercises = {
+    "ex-c11-qa": c11Pol16HtmlSolutions,
+  };
+  ch11Pol16.exercises = [
+    {
+      id: "ex-c11-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch11Pol16.mcqs = c11Pol16Mcqs;
 }
 
 
