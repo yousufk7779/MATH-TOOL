@@ -53,6 +53,7 @@ import { c11Pol3HtmlOverview, c11Pol3HtmlSolutions, c11Pol3Mcqs } from "./conten
 import { c11Pol4HtmlOverview, c11Pol4HtmlSolutions, c11Pol4Mcqs } from "./content/c11-pol-4";
 import { c11Pol5HtmlOverview, c11Pol5HtmlSolutions, c11Pol5Mcqs } from "./content/c11-pol-5";
 import { c11Pol6HtmlOverview, c11Pol6HtmlSolutions, c11Pol6Mcqs } from "./content/c11-pol-6";
+import { c11Pol7HtmlOverview, c11Pol7HtmlSolutions, c11Pol7Mcqs } from "./content/c11-pol-7";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -3145,6 +3146,23 @@ if (ch11Pol6) {
     },
   ];
   ch11Pol6.mcqs = c11Pol6Mcqs;
+}
+
+// Override Class 11 Political Science Chapter 7 (Federalism)
+const ch11Pol7 = chapterContents["c11-pol-7"];
+if (ch11Pol7) {
+  ch11Pol7.htmlOverview = c11Pol7HtmlOverview;
+  ch11Pol7.htmlExercises = {
+    "ex-c11-qa": c11Pol7HtmlSolutions,
+  };
+  ch11Pol7.exercises = [
+    {
+      id: "ex-c11-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch11Pol7.mcqs = c11Pol7Mcqs;
 }
 
 
