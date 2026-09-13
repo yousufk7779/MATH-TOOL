@@ -42,6 +42,7 @@ import { c12Pol7HtmlOverview, c12Pol7HtmlSolutions, c12Pol7Mcqs } from "./conten
 import { c12Pol8HtmlOverview, c12Pol8HtmlSolutions, c12Pol8Mcqs } from "./content/c12-pol-8";
 import { c12Pol9HtmlOverview, c12Pol9HtmlSolutions, c12Pol9Mcqs } from "./content/c12-pol-9";
 import { c12Pol10HtmlOverview, c12Pol10HtmlSolutions, c12Pol10Mcqs } from "./content/c12-pol-10";
+import { c12Pol11HtmlOverview, c12Pol11HtmlSolutions, c12Pol11Mcqs } from "./content/c12-pol-11";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -2802,6 +2803,24 @@ if (ch12Pol10) {
   ];
   ch12Pol10.mcqs = c12Pol10Mcqs;
 }
+
+// Override Class 12 Political Science Chapter 11 (India's External Relations)
+const ch12Pol11 = chapterContents["c12-pol-11"];
+if (ch12Pol11) {
+  ch12Pol11.htmlOverview = c12Pol11HtmlOverview;
+  ch12Pol11.htmlExercises = {
+    "ex-c12-qa": c12Pol11HtmlSolutions,
+  };
+  ch12Pol11.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Pol11.mcqs = c12Pol11Mcqs;
+}
+
 
 
 
