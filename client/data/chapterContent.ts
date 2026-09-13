@@ -39,6 +39,7 @@ import { c12Pol4HtmlOverview, c12Pol4HtmlSolutions, c12Pol4Mcqs } from "./conten
 import { c12Pol5HtmlOverview, c12Pol5HtmlSolutions, c12Pol5Mcqs } from "./content/c12-pol-5";
 import { c12Pol6HtmlOverview, c12Pol6HtmlSolutions, c12Pol6Mcqs } from "./content/c12-pol-6";
 import { c12Pol7HtmlOverview, c12Pol7HtmlSolutions, c12Pol7Mcqs } from "./content/c12-pol-7";
+import { c12Pol8HtmlOverview, c12Pol8HtmlSolutions, c12Pol8Mcqs } from "./content/c12-pol-8";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -2748,6 +2749,24 @@ if (ch12Pol7) {
   ];
   ch12Pol7.mcqs = c12Pol7Mcqs;
 }
+
+// Override Class 12 Political Science Chapter 8 (Nation-Building and Its Problems)
+const ch12Pol8 = chapterContents["c12-pol-8"];
+if (ch12Pol8) {
+  ch12Pol8.htmlOverview = c12Pol8HtmlOverview;
+  ch12Pol8.htmlExercises = {
+    "ex-c12-qa": c12Pol8HtmlSolutions,
+  };
+  ch12Pol8.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Pol8.mcqs = c12Pol8Mcqs;
+}
+
 
 
 
