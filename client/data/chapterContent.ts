@@ -64,6 +64,7 @@ import { c11Pol14HtmlOverview, c11Pol14HtmlSolutions, c11Pol14Mcqs } from "./con
 import { c11Pol15HtmlOverview, c11Pol15HtmlSolutions, c11Pol15Mcqs } from "./content/c11-pol-15";
 import { c11Pol16HtmlOverview, c11Pol16HtmlSolutions, c11Pol16Mcqs } from "./content/c11-pol-16";
 import { c11Pol17HtmlOverview, c11Pol17HtmlSolutions, c11Pol17Mcqs } from "./content/c11-pol-17";
+import { c11Pol18HtmlOverview, c11Pol18HtmlSolutions, c11Pol18Mcqs } from "./content/c11-pol-18";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -3343,6 +3344,23 @@ if (ch11Pol17) {
     },
   ];
   ch11Pol17.mcqs = c11Pol17Mcqs;
+}
+
+// Override Class 11 Political Science Chapter 18 (Secularism)
+const ch11Pol18 = chapterContents["c11-pol-18"];
+if (ch11Pol18) {
+  ch11Pol18.htmlOverview = c11Pol18HtmlOverview;
+  ch11Pol18.htmlExercises = {
+    "ex-c11-qa": c11Pol18HtmlSolutions,
+  };
+  ch11Pol18.exercises = [
+    {
+      id: "ex-c11-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch11Pol18.mcqs = c11Pol18Mcqs;
 }
 
 
