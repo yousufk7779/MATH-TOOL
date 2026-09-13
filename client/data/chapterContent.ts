@@ -48,6 +48,7 @@ import { c12Pol13HtmlOverview, c12Pol13HtmlSolutions, c12Pol13Mcqs } from "./con
 import { c12Pol14HtmlOverview, c12Pol14HtmlSolutions, c12Pol14Mcqs } from "./content/c12-pol-14";
 import { c12Pol15HtmlOverview, c12Pol15HtmlSolutions, c12Pol15Mcqs } from "./content/c12-pol-15";
 import { c11Pol1HtmlOverview, c11Pol1HtmlSolutions, c11Pol1Mcqs } from "./content/c11-pol-1";
+import { c11Pol2HtmlOverview, c11Pol2HtmlSolutions, c11Pol2Mcqs } from "./content/c11-pol-2";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -3056,6 +3057,24 @@ if (ch11Pol1) {
   ];
   ch11Pol1.mcqs = c11Pol1Mcqs;
 }
+
+// Override Class 11 Political Science Chapter 2 (Fundamental Rights)
+const ch11Pol2 = chapterContents["c11-pol-2"];
+if (ch11Pol2) {
+  ch11Pol2.htmlOverview = c11Pol2HtmlOverview;
+  ch11Pol2.htmlExercises = {
+    "ex-c11-qa": c11Pol2HtmlSolutions,
+  };
+  ch11Pol2.exercises = [
+    {
+      id: "ex-c11-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch11Pol2.mcqs = c11Pol2Mcqs;
+}
+
 
 
 
