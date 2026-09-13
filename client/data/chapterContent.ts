@@ -50,6 +50,7 @@ import { c12Pol15HtmlOverview, c12Pol15HtmlSolutions, c12Pol15Mcqs } from "./con
 import { c11Pol1HtmlOverview, c11Pol1HtmlSolutions, c11Pol1Mcqs } from "./content/c11-pol-1";
 import { c11Pol2HtmlOverview, c11Pol2HtmlSolutions, c11Pol2Mcqs } from "./content/c11-pol-2";
 import { c11Pol3HtmlOverview, c11Pol3HtmlSolutions, c11Pol3Mcqs } from "./content/c11-pol-3";
+import { c11Pol4HtmlOverview, c11Pol4HtmlSolutions, c11Pol4Mcqs } from "./content/c11-pol-4";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -3092,6 +3093,24 @@ if (ch11Pol3) {
   ];
   ch11Pol3.mcqs = c11Pol3Mcqs;
 }
+
+// Override Class 11 Political Science Chapter 4 (Executive in a Parliamentary System)
+const ch11Pol4 = chapterContents["c11-pol-4"];
+if (ch11Pol4) {
+  ch11Pol4.htmlOverview = c11Pol4HtmlOverview;
+  ch11Pol4.htmlExercises = {
+    "ex-c11-qa": c11Pol4HtmlSolutions,
+  };
+  ch11Pol4.exercises = [
+    {
+      id: "ex-c11-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch11Pol4.mcqs = c11Pol4Mcqs;
+}
+
 
 
 
