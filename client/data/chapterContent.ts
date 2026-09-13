@@ -63,6 +63,7 @@ import { c11Pol13HtmlOverview, c11Pol13HtmlSolutions, c11Pol13Mcqs } from "./con
 import { c11Pol14HtmlOverview, c11Pol14HtmlSolutions, c11Pol14Mcqs } from "./content/c11-pol-14";
 import { c11Pol15HtmlOverview, c11Pol15HtmlSolutions, c11Pol15Mcqs } from "./content/c11-pol-15";
 import { c11Pol16HtmlOverview, c11Pol16HtmlSolutions, c11Pol16Mcqs } from "./content/c11-pol-16";
+import { c11Pol17HtmlOverview, c11Pol17HtmlSolutions, c11Pol17Mcqs } from "./content/c11-pol-17";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -3325,6 +3326,23 @@ if (ch11Pol16) {
     },
   ];
   ch11Pol16.mcqs = c11Pol16Mcqs;
+}
+
+// Override Class 11 Political Science Chapter 17 (Nationalism)
+const ch11Pol17 = chapterContents["c11-pol-17"];
+if (ch11Pol17) {
+  ch11Pol17.htmlOverview = c11Pol17HtmlOverview;
+  ch11Pol17.htmlExercises = {
+    "ex-c11-qa": c11Pol17HtmlSolutions,
+  };
+  ch11Pol17.exercises = [
+    {
+      id: "ex-c11-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch11Pol17.mcqs = c11Pol17Mcqs;
 }
 
 
