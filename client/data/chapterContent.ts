@@ -51,6 +51,7 @@ import { c11Pol1HtmlOverview, c11Pol1HtmlSolutions, c11Pol1Mcqs } from "./conten
 import { c11Pol2HtmlOverview, c11Pol2HtmlSolutions, c11Pol2Mcqs } from "./content/c11-pol-2";
 import { c11Pol3HtmlOverview, c11Pol3HtmlSolutions, c11Pol3Mcqs } from "./content/c11-pol-3";
 import { c11Pol4HtmlOverview, c11Pol4HtmlSolutions, c11Pol4Mcqs } from "./content/c11-pol-4";
+import { c11Pol5HtmlOverview, c11Pol5HtmlSolutions, c11Pol5Mcqs } from "./content/c11-pol-5";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -3110,6 +3111,24 @@ if (ch11Pol4) {
   ];
   ch11Pol4.mcqs = c11Pol4Mcqs;
 }
+
+// Override Class 11 Political Science Chapter 5 (Legislature at the Central and State Level)
+const ch11Pol5 = chapterContents["c11-pol-5"];
+if (ch11Pol5) {
+  ch11Pol5.htmlOverview = c11Pol5HtmlOverview;
+  ch11Pol5.htmlExercises = {
+    "ex-c11-qa": c11Pol5HtmlSolutions,
+  };
+  ch11Pol5.exercises = [
+    {
+      id: "ex-c11-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch11Pol5.mcqs = c11Pol5Mcqs;
+}
+
 
 
 
