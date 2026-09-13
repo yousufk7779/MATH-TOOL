@@ -37,6 +37,7 @@ import { c12Pol2HtmlOverview, c12Pol2HtmlSolutions, c12Pol2Mcqs } from "./conten
 import { c12Pol3HtmlOverview, c12Pol3HtmlSolutions, c12Pol3Mcqs } from "./content/c12-pol-3";
 import { c12Pol4HtmlOverview, c12Pol4HtmlSolutions, c12Pol4Mcqs } from "./content/c12-pol-4";
 import { c12Pol5HtmlOverview, c12Pol5HtmlSolutions, c12Pol5Mcqs } from "./content/c12-pol-5";
+import { c12Pol6HtmlOverview, c12Pol6HtmlSolutions, c12Pol6Mcqs } from "./content/c12-pol-6";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -2712,6 +2713,24 @@ if (ch12Pol5) {
   ];
   ch12Pol5.mcqs = c12Pol5Mcqs;
 }
+
+// Override Class 12 Political Science Chapter 6 (Globalization and its Critics)
+const ch12Pol6 = chapterContents["c12-pol-6"];
+if (ch12Pol6) {
+  ch12Pol6.htmlOverview = c12Pol6HtmlOverview;
+  ch12Pol6.htmlExercises = {
+    "ex-c12-qa": c12Pol6HtmlSolutions,
+  };
+  ch12Pol6.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Pol6.mcqs = c12Pol6Mcqs;
+}
+
 
 
 
