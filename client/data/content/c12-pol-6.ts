@@ -390,249 +390,244 @@ export const c12Pol6HtmlSolutions = `
 /* -------------------------------------------------------------------------- */
 
 export const c12Pol6Mcqs = [
-  // Tier 1: Q1 to Q8 (Direct recall, basic concepts, events, years, terms)
   {
-    id: "c12-pol-6-mcq-1",
-    question: "At its most fundamental level, globalization deals with flows. Which of the following constitutes these flows?",
-    options: [
-      "A):   Flow of ideas and capital",
+    "id": "c12-pol-6-mcq-1",
+    "question": "At its most fundamental level, globalization deals with flows. Which of the following constitutes these flows?",
+    "options": [
+      "A):   All of the above",
       "B):   Flow of commodities",
       "C):   Flow of people across borders",
-      "D):   All of the above",
+      "D):   Flow of ideas and capital"
     ],
-    correctAnswer: "d",
-    explanation: "Globalization is a multidimensional process involving the cross-border flow of ideas, capital, commodities, technology, and people.",
+    "correctAnswer": "A",
+    "explanation": "Globalization is a multidimensional process involving the cross-border flow of ideas, capital, commodities, technology, and people."
   },
   {
-    id: "c12-pol-6-mcq-2",
-    question: "In which year did India adopt the New Economic Policy (NEP) based on Liberalization, Privatization, and Globalization?",
-    options: [
+    "id": "c12-pol-6-mcq-2",
+    "question": "In which year did India adopt the New Economic Policy (NEP) based on Liberalization, Privatization, and Globalization?",
+    "options": [
       "A):   1947",
-      "B):   1971",
-      "C):   1991",
-      "D):   2001",
+      "B):   1991",
+      "C):   1971",
+      "D):   2001"
     ],
-    correctAnswer: "c",
-    explanation: "India introduced the landmark New Economic Policy (LPG) in July 1991 under Prime Minister P.V. Narasimha Rao and Finance Minister Dr. Manmohan Singh.",
+    "correctAnswer": "B",
+    "explanation": "India introduced the landmark New Economic Policy (LPG) in July 1991 under Prime Minister P.V. Narasimha Rao and Finance Minister Dr. Manmohan Singh."
   },
   {
-    id: "c12-pol-6-mcq-3",
-    question: "What term describes the process whereby dominant Western consumerist culture spreads and threatens local native cultures?",
-    options: [
-      "A):   Cultural Homogenization",
+    "id": "c12-pol-6-mcq-3",
+    "question": "What term describes the process whereby dominant Western consumerist culture spreads and threatens local native cultures?",
+    "options": [
+      "A):   Autarky",
       "B):   Cultural Heterogenization",
-      "C):   Autarky",
-      "D):   Disarmament",
+      "C):   Cultural Homogenization",
+      "D):   Disarmament"
     ],
-    correctAnswer: "a",
-    explanation: "Cultural Homogenization refers to the imposition of a uniform global culture (often Americanized Western consumerism) that marginalizes indigenous traditions.",
+    "correctAnswer": "C",
+    "explanation": "Cultural Homogenization refers to the imposition of a uniform global culture (often Americanized Western consumerism) that marginalizes indigenous traditions."
   },
   {
-    id: "c12-pol-6-mcq-4",
-    question: "In which city was the first meeting of the World Social Forum (WSF) held in 2001?",
-    options: [
-      "A):   Porto Alegre, Brazil",
+    "id": "c12-pol-6-mcq-4",
+    "question": "In which city was the first meeting of the World Social Forum (WSF) held in 2001?",
+    "options": [
+      "A):   Mumbai, India",
       "B):   Davos, Switzerland",
       "C):   Seattle, USA",
-      "D):   Mumbai, India",
+      "D):   Porto Alegre, Brazil"
     ],
-    correctAnswer: "a",
-    explanation: "The inaugural meeting of the World Social Forum took place in Porto Alegre, Brazil in 2001 under the banner 'Another World is Possible'.",
+    "correctAnswer": "D",
+    "explanation": "The inaugural meeting of the World Social Forum took place in Porto Alegre, Brazil in 2001 under the banner 'Another World is Possible'."
   },
   {
-    id: "c12-pol-6-mcq-5",
-    question: "In which Indian city was the 4th World Social Forum (WSF) organized in 2004?",
-    options: [
-      "A):   New Delhi",
-      "B):   Mumbai",
+    "id": "c12-pol-6-mcq-5",
+    "question": "In which Indian city was the 4th World Social Forum (WSF) organized in 2004?",
+    "options": [
+      "A):   Mumbai",
+      "B):   New Delhi",
       "C):   Kolkata",
-      "D):   Bengaluru",
+      "D):   Bengaluru"
     ],
-    correctAnswer: "b",
-    explanation: "The historic 4th World Social Forum (WSF) was convened in Mumbai, India in January 2004.",
+    "correctAnswer": "A",
+    "explanation": "The historic 4th World Social Forum (WSF) was convened in Mumbai, India in January 2004."
   },
   {
-    id: "c12-pol-6-mcq-6",
-    question: "In 1999, massive anti-globalization protests occurred at which international meeting in Seattle, USA?",
-    options: [
+    "id": "c12-pol-6-mcq-6",
+    "question": "In 1999, massive anti-globalization protests occurred at which international meeting in Seattle, USA?",
+    "options": [
       "A):   G7 Summit",
       "B):   WTO Ministerial Conference",
       "C):   UN General Assembly",
-      "D):   World Bank Annual Meeting",
+      "D):   World Bank Annual Meeting"
     ],
-    correctAnswer: "b",
-    explanation: "The historic 1999 Seattle protests mobilized thousands of union workers, environmentalists, and students against the WTO Ministerial Conference.",
+    "correctAnswer": "B",
+    "explanation": "The historic 1999 Seattle protests mobilized thousands of union workers, environmentalists, and students against the WTO Ministerial Conference."
   },
   {
-    id: "c12-pol-6-mcq-7",
-    question: "What does the concept of 'Glocalization' signify?",
-    options: [
+    "id": "c12-pol-6-mcq-7",
+    "question": "What does the concept of 'Glocalization' signify?",
+    "options": [
       "A):   Total destruction of all local businesses",
-      "B):   The adaptation of global practices and products to suit local cultures",
-      "C):   Banning all foreign investments in developing states",
-      "D):   The establishment of a single world currency",
+      "B):   Banning all foreign investments in developing states",
+      "C):   The adaptation of global practices and products to suit local cultures",
+      "D):   The establishment of a single world currency"
     ],
-    correctAnswer: "b",
-    explanation: "Glocalization describes the creative modification of global products to conform to local traditions and tastes (e.g. McVeggie burgers in India).",
+    "correctAnswer": "C",
+    "explanation": "Glocalization describes the creative modification of global products to conform to local traditions and tastes (e.g. McVeggie burgers in India)."
   },
   {
-    id: "c12-pol-6-mcq-8",
-    question: "Which of the following is NOT a pillar of India's 1991 New Economic Policy?",
-    options: [
+    "id": "c12-pol-6-mcq-8",
+    "question": "Which of the following is NOT a pillar of India's 1991 New Economic Policy?",
+    "options": [
       "A):   Liberalization",
       "B):   Privatization",
-      "C):   Nationalization",
-      "D):   Globalization",
+      "C):   Globalization",
+      "D):   Nationalization"
     ],
-    correctAnswer: "c",
-    explanation: "The New Economic Policy (NEP) of 1991 is founded on LPG: Liberalization, Privatization, and Globalization. Nationalization was the policy of earlier decades.",
+    "correctAnswer": "D",
+    "explanation": "The New Economic Policy (NEP) of 1991 is founded on LPG: Liberalization, Privatization, and Globalization. Nationalization was the policy of earlier decades."
   },
-
-  // Tier 2: Q9 to Q15 (Concepts, consequences, welfare state retreat, bio-piracy)
   {
-    id: "c12-pol-6-mcq-9",
-    question: "How has economic globalization altered the role of the state in public welfare?",
-    options: [
-      "A):   The state has taken over all private agricultural lands",
-      "B):   The state has rolled back welfare activities and adopted a minimalist role",
+    "id": "c12-pol-6-mcq-9",
+    "question": "How has economic globalization altered the role of the state in public welfare?",
+    "options": [
+      "A):   The state has rolled back welfare activities and adopted a minimalist role",
+      "B):   The state has taken over all private agricultural lands",
       "C):   The state has banned all multinational corporations",
-      "D):   The state now provides free food and housing to all citizens unconditionally",
+      "D):   The state now provides free food and housing to all citizens unconditionally"
     ],
-    correctAnswer: "b",
-    explanation: "Under neoliberal globalization, the state withdraws from welfare and industrial production, becoming a minimalist state focused on law, order, and national defense.",
+    "correctAnswer": "A",
+    "explanation": "Under neoliberal globalization, the state withdraws from welfare and industrial production, becoming a minimalist state focused on law, order, and national defense."
   },
   {
-    id: "c12-pol-6-mcq-10",
-    question: "What is the primary asymmetry in contemporary economic globalization?",
-    options: [
-      "A):   Capital and goods move freely, but the movement of labor across borders is strictly restricted by developed nations",
-      "B):   Labor moves freely, but commodities are heavily taxed everywhere",
+    "id": "c12-pol-6-mcq-10",
+    "question": "What is the primary asymmetry in contemporary economic globalization?",
+    "options": [
+      "A):   Labor moves freely, but commodities are heavily taxed everywhere",
+      "B):   Capital and goods move freely, but the movement of labor across borders is strictly restricted by developed nations",
       "C):   Only African nations are permitted to trade on international stock exchanges",
-      "D):   All trade tariffs have been made illegal under international maritime law",
+      "D):   All trade tariffs have been made illegal under international maritime law"
     ],
-    correctAnswer: "a",
-    explanation: "Developed nations advocate for free movement of capital and goods, but enforce strict visa regimes that restrict the flow of labor from developing countries.",
+    "correctAnswer": "B",
+    "explanation": "Developed nations advocate for free movement of capital and goods, but enforce strict visa regimes that restrict the flow of labor from developing countries."
   },
   {
-    id: "c12-pol-6-mcq-11",
-    question: "Why did left-wing political groups and trade unions in India fiercely protest against globalization?",
-    options: [
+    "id": "c12-pol-6-mcq-11",
+    "question": "Why did left-wing political groups and trade unions in India fiercely protest against globalization?",
+    "options": [
       "A):   Because they wanted to increase foreign direct investment",
-      "B):   Because privatization and deregulation weaken worker protections and erode public social safety nets",
-      "C):   Because they opposed the expansion of railway lines in India",
-      "D):   Because the WTO mandated universal free university education",
+      "B):   Because they opposed the expansion of railway lines in India",
+      "C):   Because privatization and deregulation weaken worker protections and erode public social safety nets",
+      "D):   Because the WTO mandated universal free university education"
     ],
-    correctAnswer: "b",
-    explanation: "Leftist critics argue that globalization enriches corporate elites while dismantling labor rights, leading to privatization of PSUs and cuts to social subsidies.",
+    "correctAnswer": "C",
+    "explanation": "Leftist critics argue that globalization enriches corporate elites while dismantling labor rights, leading to privatization of PSUs and cuts to social subsidies."
   },
   {
-    id: "c12-pol-6-mcq-12",
-    question: "Which of the following is an example of cultural resistance to globalization in India?",
-    options: [
+    "id": "c12-pol-6-mcq-12",
+    "question": "Which of the following is an example of cultural resistance to globalization in India?",
+    "options": [
       "A):   Demand for high-speed fiber internet",
-      "B):   Protests by groups like Swadeshi Jagaran Manch against commercialized Western events like Valentine's Day",
+      "B):   Participation of Indian scientists in NASA research",
       "C):   Export of Indian handlooms to European markets",
-      "D):   Participation of Indian scientists in NASA research",
+      "D):   Protests by groups like Swadeshi Jagaran Manch against commercialized Western events like Valentine's Day"
     ],
-    correctAnswer: "b",
-    explanation: "Right-wing cultural groups in India resist Western cultural penetration, protesting events like Valentine's Day and the commercialization of native culture.",
+    "correctAnswer": "D",
+    "explanation": "Right-wing cultural groups in India resist Western cultural penetration, protesting events like Valentine's Day and the commercialization of native culture."
   },
   {
-    id: "c12-pol-6-mcq-13",
-    question: "What was the main rallying cry and motto adopted by the World Social Forum (WSF)?",
-    options: [
-      "A):   'Workers of the World, Unite'",
-      "B):   'Another World is Possible'",
+    "id": "c12-pol-6-mcq-13",
+    "question": "What was the main rallying cry and motto adopted by the World Social Forum (WSF)?",
+    "options": [
+      "A):   'Another World is Possible'",
+      "B):   'Workers of the World, Unite'",
       "C):   'Free Trade for All Nations'",
-      "D):   'Survival of the Fittest'",
+      "D):   'Survival of the Fittest'"
     ],
-    correctAnswer: "b",
-    explanation: "'Another World is Possible' is the official motto of the WSF, expressing resistance to neoliberal corporate globalization and seeking social justice.",
+    "correctAnswer": "A",
+    "explanation": "'Another World is Possible' is the official motto of the WSF, expressing resistance to neoliberal corporate globalization and seeking social justice."
   },
   {
-    id: "c12-pol-6-mcq-14",
-    question: "Foreign patents attempted on Indian Neem and Basmati Rice are classic examples of which phenomenon?",
-    options: [
-      "A):   Bio-piracy and exploitation of indigenous knowledge",
-      "B):   Cultural heterogenization",
+    "id": "c12-pol-6-mcq-14",
+    "question": "Foreign patents attempted on Indian Neem and Basmati Rice are classic examples of which phenomenon?",
+    "options": [
+      "A):   Cultural heterogenization",
+      "B):   Bio-piracy and exploitation of indigenous knowledge",
       "C):   Confidence Building Measures",
-      "D):   Disarmament verification",
+      "D):   Disarmament verification"
     ],
-    correctAnswer: "a",
-    explanation: "Bio-piracy refers to foreign multinational companies patenting indigenous biological resources and traditional medicinal knowledge without compensation.",
+    "correctAnswer": "B",
+    "explanation": "Bio-piracy refers to foreign multinational companies patenting indigenous biological resources and traditional medicinal knowledge without compensation."
   },
   {
-    id: "c12-pol-6-mcq-15",
-    question: "How has advanced information technology impacted state sovereignty during globalization?",
-    options: [
+    "id": "c12-pol-6-mcq-15",
+    "question": "How has advanced information technology impacted state sovereignty during globalization?",
+    "options": [
       "A):   It has completely abolished national governments",
-      "B):   It has enhanced state capacity to collect intelligence and govern more effectively",
-      "C):   It has forced all nations to adopt a single global constitution",
-      "D):   It has prohibited states from maintaining armies",
+      "B):   It has forced all nations to adopt a single global constitution",
+      "C):   It has enhanced state capacity to collect intelligence and govern more effectively",
+      "D):   It has prohibited states from maintaining armies"
     ],
-    correctAnswer: "b",
-    explanation: "Information technology provides states with advanced surveillance, big data, and administrative tools, enhancing their capacity to maintain domestic governance.",
+    "correctAnswer": "C",
+    "explanation": "Information technology provides states with advanced surveillance, big data, and administrative tools, enhancing their capacity to maintain domestic governance."
   },
-
-  // Tier 3: Q16 to Q20 (Analytical, Assertion-Reason, comparative questions)
   {
-    id: "c12-pol-6-mcq-16",
-    question: "Assertion (A): Globalization is a multidimensional concept that cannot be understood through economic lenses alone.\nReason (R): Globalization has equally powerful political and cultural manifestations that reshape state sovereignty and lifestyle habits.",
-    options: [
-      "A):   Both A and R are true, and R is the correct explanation of A",
+    "id": "c12-pol-6-mcq-16",
+    "question": "Assertion (A): Globalization is a multidimensional concept that cannot be understood through economic lenses alone.\nReason (R): Globalization has equally powerful political and cultural manifestations that reshape state sovereignty and lifestyle habits.",
+    "options": [
+      "A):   A is false, but R is true",
       "B):   Both A and R are true, but R is not the correct explanation of A",
       "C):   A is true, but R is false",
-      "D):   A is false, but R is true",
+      "D):   Both A and R are true, and R is the correct explanation of A"
     ],
-    correctAnswer: "a",
-    explanation: "Both statements are correct. Reducing globalization to mere economics ignores its profound impacts on the welfare functions of states and cultural identities.",
+    "correctAnswer": "D",
+    "explanation": "Both statements are correct. Reducing globalization to mere economics ignores its profound impacts on the welfare functions of states and cultural identities."
   },
   {
-    id: "c12-pol-6-mcq-17",
-    question: "Consider the following statements regarding the World Social Forum (WSF):\n1. It was established as an alternative platform to the elite World Economic Forum (WEF) in Davos.\n2. Its 4th edition was hosted in Mumbai, India in 2004.\nWhich of the statements is/are correct?",
-    options: [
-      "A):   1 only",
+    "id": "c12-pol-6-mcq-17",
+    "question": "Consider the following statements regarding the World Social Forum (WSF):\n1. It was established as an alternative platform to the elite World Economic Forum (WEF) in Davos.\n2. Its 4th edition was hosted in Mumbai, India in 2004.\nWhich of the statements is/are correct?",
+    "options": [
+      "A):   Both 1 and 2",
       "B):   2 only",
-      "C):   Both 1 and 2",
-      "D):   Neither 1 nor 2",
+      "C):   1 only",
+      "D):   Neither 1 nor 2"
     ],
-    correctAnswer: "c",
-    explanation: "Both statements are factually accurate. The WSF was launched in 2001 in Brazil as a counter to Davos, and its 4th session took place in Mumbai in 2004.",
+    "correctAnswer": "A",
+    "explanation": "Both statements are factually accurate. The WSF was launched in 2001 in Brazil as a counter to Davos, and its 4th session took place in Mumbai in 2004."
   },
   {
-    id: "c12-pol-6-mcq-18",
-    question: "Which of the following describes the cultural phenomenon of wearing blue jeans under a traditional Indian Khadi Kurta?",
-    options: [
+    "id": "c12-pol-6-mcq-18",
+    "question": "Which of the following describes the cultural phenomenon of wearing blue jeans under a traditional Indian Khadi Kurta?",
+    "options": [
       "A):   Cultural Homogenization",
       "B):   Cultural Heterogenization / Hybridization",
       "C):   Complete Westernization",
-      "D):   Economic Disinvestment",
+      "D):   Economic Disinvestment"
     ],
-    correctAnswer: "b",
-    explanation: "Combining jeans with a traditional kurta is a prime example of cultural heterogenization (hybridity), where external fashion is combined with domestic apparel.",
+    "correctAnswer": "B",
+    "explanation": "Combining jeans with a traditional kurta is a prime example of cultural heterogenization (hybridity), where external fashion is combined with domestic apparel."
   },
   {
-    id: "c12-pol-6-mcq-19",
-    question: "What was the immediate catalyst that compelled India to dismantle the License Raj and adopt the New Economic Policy in 1991?",
-    options: [
+    "id": "c12-pol-6-mcq-19",
+    "question": "What was the immediate catalyst that compelled India to dismantle the License Raj and adopt the New Economic Policy in 1991?",
+    "options": [
       "A):   The outbreak of World War III",
-      "B):   An acute balance-of-payments crisis where foreign exchange dropped to two weeks of imports",
-      "C):   A formal order issued by the United Nations General Assembly",
-      "D):   The total elimination of poverty across rural India",
+      "B):   A formal order issued by the United Nations General Assembly",
+      "C):   An acute balance-of-payments crisis where foreign exchange dropped to two weeks of imports",
+      "D):   The total elimination of poverty across rural India"
     ],
-    correctAnswer: "b",
-    explanation: "The severe 1991 balance-of-payments crisis forced India to seek an IMF loan and open its economy under the structural adjustment program (LPG).",
+    "correctAnswer": "C",
+    "explanation": "The severe 1991 balance-of-payments crisis forced India to seek an IMF loan and open its economy under the structural adjustment program (LPG)."
   },
   {
-    id: "c12-pol-6-mcq-20",
-    question: "Which ideological group criticizes globalization on the grounds that it destroys indigenous culture, traditional community values, and religious heritage?",
-    options: [
-      "A):   Right-wing cultural conservatives",
+    "id": "c12-pol-6-mcq-20",
+    "question": "Which ideological group criticizes globalization on the grounds that it destroys indigenous culture, traditional community values, and religious heritage?",
+    "options": [
+      "A):   Transnational software corporations",
       "B):   Marxist-Leninist trade unionists",
       "C):   Neoliberal corporate economists",
-      "D):   Transnational software corporations",
+      "D):   Right-wing cultural conservatives"
     ],
-    correctAnswer: "a",
-    explanation: "Right-wing critics focus on cultural protectionism, arguing that Western consumerism corrodes traditional family, community, and national values.",
-  },
+    "correctAnswer": "D",
+    "explanation": "Right-wing critics focus on cultural protectionism, arguing that Western consumerism corrodes traditional family, community, and national values."
+  }
 ];

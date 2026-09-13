@@ -696,249 +696,244 @@ export const c12Pol12HtmlSolutions = `
 /* -------------------------------------------------------------------------- */
 
 export const c12Pol12Mcqs = [
-  // Tier 1: Direct Recall, Terms & Personalities (Q1 to Q8)
   {
-    id: "c12-pol-12-mcq-1",
-    question: "Who succeeded Jawaharlal Nehru as the second Prime Minister of India in June 1964?",
-    options: [
-      "A):   Morarji Desai",
-      "B):   Lal Bahadur Shastri",
+    "id": "c12-pol-12-mcq-1",
+    "question": "Who succeeded Jawaharlal Nehru as the second Prime Minister of India in June 1964?",
+    "options": [
+      "A):   Lal Bahadur Shastri",
+      "B):   Morarji Desai",
       "C):   Gulzarilal Nanda",
       "D):   K. Kamaraj"
     ],
-    correctAnswer: "B",
-    explanation: "Lal Bahadur Shastri was unanimously chosen as the second Prime Minister of India in June 1964 following Nehru's demise."
+    "correctAnswer": "A",
+    "explanation": "Lal Bahadur Shastri was unanimously chosen as the second Prime Minister of India in June 1964 following Nehru's demise."
   },
   {
-    id: "c12-pol-12-mcq-2",
-    question: "Which iconic slogan was coined by Lal Bahadur Shastri during the 1965 Indo-Pak war?",
-    options: [
+    "id": "c12-pol-12-mcq-2",
+    "question": "Which iconic slogan was coined by Lal Bahadur Shastri during the 1965 Indo-Pak war?",
+    "options": [
       "A):   Garibi Hatao",
       "B):   Jai Jawan, Jai Kisan",
       "C):   Aaya Ram, Gaya Ram",
       "D):   Indira Hatao"
     ],
-    correctAnswer: "B",
-    explanation: "'Jai Jawan, Jai Kisan' was coined by Shastri to inspire soldiers defending borders and farmers working to overcome food shortages."
+    "correctAnswer": "B",
+    "explanation": "'Jai Jawan, Jai Kisan' was coined by Shastri to inspire soldiers defending borders and farmers working to overcome food shortages."
   },
   {
-    id: "c12-pol-12-mcq-3",
-    question: "Who coined the political term 'Non-Congressism' prior to the 1967 General Elections?",
-    options: [
+    "id": "c12-pol-12-mcq-3",
+    "question": "Who coined the political term 'Non-Congressism' prior to the 1967 General Elections?",
+    "options": [
       "A):   Jayaprakash Narayan",
-      "B):   Dr. Ram Manohar Lohia",
-      "C):   Chaudhary Charan Singh",
+      "B):   Chaudhary Charan Singh",
+      "C):   Dr. Ram Manohar Lohia",
       "D):   Acharya J.B. Kripalani"
     ],
-    correctAnswer: "B",
-    explanation: "Socialist leader Dr. Ram Manohar Lohia propounded 'Non-Congressism', arguing that all opposition parties must unite to defeat Congress."
+    "correctAnswer": "C",
+    "explanation": "Socialist leader Dr. Ram Manohar Lohia propounded 'Non-Congressism', arguing that all opposition parties must unite to defeat Congress."
   },
   {
-    id: "c12-pol-12-mcq-4",
-    question: "The infamous phrase 'Aaya Ram, Gaya Ram' originated in 1967 in which Indian state?",
-    options: [
+    "id": "c12-pol-12-mcq-4",
+    "question": "The infamous phrase 'Aaya Ram, Gaya Ram' originated in 1967 in which Indian state?",
+    "options": [
       "A):   Punjab",
       "B):   Uttar Pradesh",
-      "C):   Haryana",
-      "D):   Bihar"
+      "C):   Bihar",
+      "D):   Haryana"
     ],
-    correctAnswer: "C",
-    explanation: "It originated in Haryana when MLA Gaya Lal changed parties thrice in a single fortnight, epitomizing political defection."
+    "correctAnswer": "D",
+    "explanation": "It originated in Haryana when MLA Gaya Lal changed parties thrice in a single fortnight, epitomizing political defection."
   },
   {
-    id: "c12-pol-12-mcq-5",
-    question: "In the 1967 elections, which regional party secured a clear single-party majority in Madras (Tamil Nadu)?",
-    options: [
-      "A):   AIADMK",
-      "B):   Dravida Munnetra Kazhagam (DMK)",
+    "id": "c12-pol-12-mcq-5",
+    "question": "In the 1967 elections, which regional party secured a clear single-party majority in Madras (Tamil Nadu)?",
+    "options": [
+      "A):   Dravida Munnetra Kazhagam (DMK)",
+      "B):   AIADMK",
       "C):   Swatantra Party",
       "D):   Communist Party of India"
     ],
-    correctAnswer: "B",
-    explanation: "The DMK, led by C.N. Annadurai, swept Madras State with a full majority on an anti-Hindi platform, becoming the first non-Congress party to do so."
+    "correctAnswer": "A",
+    "explanation": "The DMK, led by C.N. Annadurai, swept Madras State with a full majority on an anti-Hindi platform, becoming the first non-Congress party to do so."
   },
   {
-    id: "c12-pol-12-mcq-6",
-    question: "Who was the independent presidential candidate supported by Indira Gandhi in the 1969 election?",
-    options: [
+    "id": "c12-pol-12-mcq-6",
+    "question": "Who was the independent presidential candidate supported by Indira Gandhi in the 1969 election?",
+    "options": [
       "A):   N. Sanjeeva Reddy",
-      "B):   Dr. Zakir Husain",
-      "C):   V.V. Giri",
+      "B):   V.V. Giri",
+      "C):   Dr. Zakir Husain",
       "D):   Fakhruddin Ali Ahmed"
     ],
-    correctAnswer: "C",
-    explanation: "Indira Gandhi encouraged Vice-President V.V. Giri to contest as an independent against the official Syndicate candidate N. Sanjeeva Reddy."
+    "correctAnswer": "B",
+    "explanation": "Indira Gandhi encouraged Vice-President V.V. Giri to contest as an independent against the official Syndicate candidate N. Sanjeeva Reddy."
   },
   {
-    id: "c12-pol-12-mcq-7",
-    question: "Which Constitutional Amendment Act officially and permanently abolished the Privy Purses of former rulers?",
-    options: [
+    "id": "c12-pol-12-mcq-7",
+    "question": "Which Constitutional Amendment Act officially and permanently abolished the Privy Purses of former rulers?",
+    "options": [
       "A):   24th Amendment Act",
       "B):   25th Amendment Act",
       "C):   26th Amendment Act",
       "D):   42nd Amendment Act"
     ],
-    correctAnswer: "C",
-    explanation: "The 26th Constitutional Amendment Act passed in 1971 permanently terminated the Privy Purses and princely privileges."
+    "correctAnswer": "C",
+    "explanation": "The 26th Constitutional Amendment Act passed in 1971 permanently terminated the Privy Purses and princely privileges."
   },
   {
-    id: "c12-pol-12-mcq-8",
-    question: "In July 1969, how many major private commercial banks were nationalized by the Indira Gandhi government?",
-    options: [
+    "id": "c12-pol-12-mcq-8",
+    "question": "In July 1969, how many major private commercial banks were nationalized by the Indira Gandhi government?",
+    "options": [
       "A):   10 Banks",
       "B):   12 Banks",
-      "C):   14 Banks",
-      "D):   20 Banks"
+      "C):   20 Banks",
+      "D):   14 Banks"
     ],
-    correctAnswer: "C",
-    explanation: "Prime Minister Indira Gandhi promulgated an executive ordinance nationalizing 14 major private commercial banks on 19 July 1969."
+    "correctAnswer": "D",
+    "explanation": "Prime Minister Indira Gandhi promulgated an executive ordinance nationalizing 14 major private commercial banks on 19 July 1969."
   },
-
-  // Tier 2: Conceptual & Comparative (Q9 to Q15)
   {
-    id: "c12-pol-12-mcq-9",
-    question: "Why was the 1967 General Election described by political analysts as a 'Political Earthquake'?",
-    options: [
-      "A):   A severe natural earthquake struck New Delhi during polling",
-      "B):   Congress lost power in nine states and had its Lok Sabha majority slashed to its lowest-ever margin",
+    "id": "c12-pol-12-mcq-9",
+    "question": "Why was the 1967 General Election described by political analysts as a 'Political Earthquake'?",
+    "options": [
+      "A):   Congress lost power in nine states and had its Lok Sabha majority slashed to its lowest-ever margin",
+      "B):   A severe natural earthquake struck New Delhi during polling",
       "C):   The Communist Party won a national majority in the Lok Sabha",
       "D):   General elections were cancelled across northern India"
     ],
-    correctAnswer: "B",
-    explanation: "It was called a political earthquake because the invincible dominance of Congress was broken: it lost nine states and survived with a narrow 23-seat margin in the Lok Sabha."
+    "correctAnswer": "A",
+    "explanation": "It was called a political earthquake because the invincible dominance of Congress was broken: it lost nine states and survived with a narrow 23-seat margin in the Lok Sabha."
   },
   {
-    id: "c12-pol-12-mcq-10",
-    question: "What was the primary ideological reason behind the formation of Samyukt Vidhayak Dal (SVD) coalition governments in 1967?",
-    options: [
+    "id": "c12-pol-12-mcq-10",
+    "question": "What was the primary ideological reason behind the formation of Samyukt Vidhayak Dal (SVD) coalition governments in 1967?",
+    "options": [
       "A):   A shared commitment to Marxist-Leninist economic planning",
       "B):   A shared desire to keep Congress out of power despite deep mutual ideological contradictions",
       "C):   A unanimous plan to abolish the Constitution of India",
       "D):   An agreement to establish Hindi as the sole national language"
     ],
-    correctAnswer: "B",
-    explanation: "SVD coalitions combined mutually opposing parties (like Jana Sangh and CPI) whose sole unifying agenda was opportunistic anti-Congressism."
+    "correctAnswer": "B",
+    "explanation": "SVD coalitions combined mutually opposing parties (like Jana Sangh and CPI) whose sole unifying agenda was opportunistic anti-Congressism."
   },
   {
-    id: "c12-pol-12-mcq-11",
-    question: "What appeal did Indira Gandhi famously make to Congress MPs and MLAs during the August 1969 Presidential Election?",
-    options: [
+    "id": "c12-pol-12-mcq-11",
+    "question": "What appeal did Indira Gandhi famously make to Congress MPs and MLAs during the August 1969 Presidential Election?",
+    "options": [
       "A):   To strictly obey the party whip issued by Congress President Nijalingappa",
       "B):   To boycott the presidential polling completely",
       "C):   To cast a 'Conscience Vote' rather than follow the official party directive",
       "D):   To vote unanimously for Morarji Desai"
     ],
-    correctAnswer: "C",
-    explanation: "Indira Gandhi appealed to legislators to vote according to their inner conscience, leading to V.V. Giri's victory over Sanjeeva Reddy."
+    "correctAnswer": "C",
+    "explanation": "Indira Gandhi appealed to legislators to vote according to their inner conscience, leading to V.V. Giri's victory over Sanjeeva Reddy."
   },
   {
-    id: "c12-pol-12-mcq-12",
-    question: "Following the November 1969 split, which political parties provided crucial outside support to sustain Indira Gandhi's minority government?",
-    options: [
+    "id": "c12-pol-12-mcq-12",
+    "question": "Following the November 1969 split, which political parties provided crucial outside support to sustain Indira Gandhi's minority government?",
+    "options": [
       "A):   Bharatiya Jana Sangh and Swatantra Party",
-      "B):   Communist Party of India (CPI) and DMK",
+      "B):   Samyukta Socialist Party and Hindu Mahasabha",
       "C):   Congress (O) and Akali Dal",
-      "D):   Samyukta Socialist Party and Hindu Mahasabha"
+      "D):   Communist Party of India (CPI) and DMK"
     ],
-    correctAnswer: "B",
-    explanation: "Indira Gandhi's minority government survived the 1969 split with the outside parliamentary support of the CPI and the regional DMK."
+    "correctAnswer": "D",
+    "explanation": "Indira Gandhi's minority government survived the 1969 split with the outside parliamentary support of the CPI and the regional DMK."
   },
   {
-    id: "c12-pol-12-mcq-13",
-    question: "Which of the following was the central campaign slogan of the Grand Alliance in the 1971 elections?",
-    options: [
-      "A):   Garibi Hatao",
+    "id": "c12-pol-12-mcq-13",
+    "question": "Which of the following was the central campaign slogan of the Grand Alliance in the 1971 elections?",
+    "options": [
+      "A):   Indira Hatao",
       "B):   Jai Jawan, Jai Kisan",
-      "C):   Indira Hatao",
+      "C):   Garibi Hatao",
       "D):   Samvidhan Bachao"
     ],
-    correctAnswer: "C",
-    explanation: "The Grand Alliance campaigned on the single negative slogan 'Indira Hatao' (Remove Indira), having no coherent programmatic alternative."
+    "correctAnswer": "A",
+    "explanation": "The Grand Alliance campaigned on the single negative slogan 'Indira Hatao' (Remove Indira), having no coherent programmatic alternative."
   },
   {
-    id: "c12-pol-12-mcq-14",
-    question: "How did Indira Gandhi's 'Garibi Hatao' program politically outmaneuver the Grand Alliance in 1971?",
-    options: [
+    "id": "c12-pol-12-mcq-14",
+    "question": "How did Indira Gandhi's 'Garibi Hatao' program politically outmaneuver the Grand Alliance in 1971?",
+    "options": [
       "A):   By offering ministerial berths to all opposition party presidents",
       "B):   By mobilizing poor peasants, landless Dalits, Adivasis, minorities, and women through a positive socialist vision",
       "C):   By cancelling the 1971 general elections through Emergency powers",
       "D):   By merging Congress (R) with the Swatantra Party"
     ],
-    correctAnswer: "B",
-    explanation: "Garibi Hatao presented a positive, forward-looking socialist agenda that mobilized underprivileged social strata across traditional caste divides."
+    "correctAnswer": "B",
+    "explanation": "Garibi Hatao presented a positive, forward-looking socialist agenda that mobilized underprivileged social strata across traditional caste divides."
   },
   {
-    id: "c12-pol-12-mcq-15",
-    question: "Which of the following was NOT an element of the Ten-Point Programme adopted by Congress in May 1967?",
-    options: [
+    "id": "c12-pol-12-mcq-15",
+    "question": "Which of the following was NOT an element of the Ten-Point Programme adopted by Congress in May 1967?",
+    "options": [
       "A):   Social control of commercial banks",
       "B):   Nationalization of general insurance",
-      "C):   Ceilings on urban property and income",
-      "D):   Complete privatization of Indian Railways and coal mining"
+      "C):   Complete privatization of Indian Railways and coal mining",
+      "D):   Ceilings on urban property and income"
     ],
-    correctAnswer: "D",
-    explanation: "The Ten-Point Programme was socialist and state-oriented; privatization of core sectors like railways and mining was never part of it."
+    "correctAnswer": "C",
+    "explanation": "The Ten-Point Programme was socialist and state-oriented; privatization of core sectors like railways and mining was never part of it."
   },
-
-  // Tier 3: Analytical, Assertion-Reason & Chronology (Q16 to Q20)
   {
-    id: "c12-pol-12-mcq-16",
-    question: "Assertion (A): The Congress system restored under Indira Gandhi in 1971 was structurally very different from the Nehruvian Congress.\nReason (R): It was an umbrella coalition that accommodated local factions through internal democratic elections.",
-    options: [
+    "id": "c12-pol-12-mcq-16",
+    "question": "Assertion (A): The Congress system restored under Indira Gandhi in 1971 was structurally very different from the Nehruvian Congress.\nReason (R): It was an umbrella coalition that accommodated local factions through internal democratic elections.",
+    "options": [
+      "A):   Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+      "B):   Both (A) and (R) are true, but (R) is not the correct explanation of (A)",
+      "C):   (A) is false, but (R) is true",
+      "D):   (A) is true, but (R) is false"
+    ],
+    "correctAnswer": "D",
+    "explanation": "(A) is true because the restored Congress was intensely centralized around Indira's personal charisma. (R) is false because it had lost its umbrella consensus nature and internal democratic factional accommodation."
+  },
+  {
+    "id": "c12-pol-12-mcq-17",
+    "question": "Assertion (A): In 1966, the Syndicate chose Indira Gandhi over Morarji Desai for the Prime Ministership.\nReason (R): The Syndicate assumed that due to her inexperience, Indira Gandhi would remain dependent on them for political survival.",
+    "options": [
       "A):   Both (A) and (R) are true, and (R) is the correct explanation of (A)",
       "B):   Both (A) and (R) are true, but (R) is not the correct explanation of (A)",
       "C):   (A) is true, but (R) is false",
       "D):   (A) is false, but (R) is true"
     ],
-    correctAnswer: "C",
-    explanation: "(A) is true because the restored Congress was intensely centralized around Indira's personal charisma. (R) is false because it had lost its umbrella consensus nature and internal democratic factional accommodation."
+    "correctAnswer": "A",
+    "explanation": "The Syndicate backed Indira Gandhi specifically because they believed she would be a pliable figurehead dependent on their counsel and organizational machinery."
   },
   {
-    id: "c12-pol-12-mcq-17",
-    question: "Assertion (A): In 1966, the Syndicate chose Indira Gandhi over Morarji Desai for the Prime Ministership.\nReason (R): The Syndicate assumed that due to her inexperience, Indira Gandhi would remain dependent on them for political survival.",
-    options: [
-      "A):   Both (A) and (R) are true, and (R) is the correct explanation of (A)",
-      "B):   Both (A) and (R) are true, but (R) is not the correct explanation of (A)",
-      "C):   (A) is true, but (R) is false",
-      "D):   (A) is false, but (R) is true"
-    ],
-    correctAnswer: "A",
-    explanation: "The Syndicate backed Indira Gandhi specifically because they believed she would be a pliable figurehead dependent on their counsel and organizational machinery."
-  },
-  {
-    id: "c12-pol-12-mcq-18",
-    question: "Consider the following political leaders:\n1. K. Kamaraj\n2. S.K. Patil\n3. N. Sanjeeva Reddy\n4. Atulya Ghosh\nWhich of the following describes all four leaders collectively?",
-    options: [
+    "id": "c12-pol-12-mcq-18",
+    "question": "Consider the following political leaders:\n1. K. Kamaraj\n2. S.K. Patil\n3. N. Sanjeeva Reddy\n4. Atulya Ghosh\nWhich of the following describes all four leaders collectively?",
+    "options": [
       "A):   Founders of the Communist Party of India (Marxist)",
       "B):   Key regional bosses comprising the Congress 'Syndicate'",
       "C):   Cabinet ministers who moved the first No-Confidence Motion against Nehru",
       "D):   Chief Ministers who established the DMK in Tamil Nadu"
     ],
-    correctAnswer: "B",
-    explanation: "Kamaraj (Madras), S.K. Patil (Bombay), Sanjeeva Reddy (Andhra), and Atulya Ghosh (West Bengal) were the primary regional bosses known as the Syndicate."
+    "correctAnswer": "B",
+    "explanation": "Kamaraj (Madras), S.K. Patil (Bombay), Sanjeeva Reddy (Andhra), and Atulya Ghosh (West Bengal) were the primary regional bosses known as the Syndicate."
   },
   {
-    id: "c12-pol-12-mcq-19",
-    question: "Match List-I (Event/Concept) with List-II (Leader/Personality):\n1. Non-Congressism — (i) Gaya Lal\n2. 'Aaya Ram, Gaya Ram' — (ii) Dr. Ram Manohar Lohia\n3. Conscience Vote Candidate — (iii) V.V. Giri\n4. 'Garibi Hatao' Slogan — (iv) Indira Gandhi\nSelect the correct combination:",
-    options: [
-      "A):   1-(ii), 2-(i), 3-(iii), 4-(iv)",
+    "id": "c12-pol-12-mcq-19",
+    "question": "Match List-I (Event/Concept) with List-II (Leader/Personality):\n1. Non-Congressism — (i) Gaya Lal\n2. 'Aaya Ram, Gaya Ram' — (ii) Dr. Ram Manohar Lohia\n3. Conscience Vote Candidate — (iii) V.V. Giri\n4. 'Garibi Hatao' Slogan — (iv) Indira Gandhi\nSelect the correct combination:",
+    "options": [
+      "A):   1-(ii), 2-(iii), 3-(i), 4-(iv)",
       "B):   1-(i), 2-(ii), 3-(iv), 4-(iii)",
-      "C):   1-(ii), 2-(iii), 3-(i), 4-(iv)",
+      "C):   1-(ii), 2-(i), 3-(iii), 4-(iv)",
       "D):   1-(iv), 2-(i), 3-(iii), 4-(ii)"
     ],
-    correctAnswer: "A",
-    explanation: "Non-Congressism was by Lohia; Aaya Ram Gaya Ram by Gaya Lal; Conscience vote candidate was V.V. Giri; Garibi Hatao by Indira Gandhi."
+    "correctAnswer": "C",
+    "explanation": "Non-Congressism was by Lohia; Aaya Ram Gaya Ram by Gaya Lal; Conscience vote candidate was V.V. Giri; Garibi Hatao by Indira Gandhi."
   },
   {
-    id: "c12-pol-12-mcq-20",
-    question: "Arrange the following events in chronological order:\n1. The Great Split in the Congress [Congress(O) vs Congress(R)]\n2. Landslide victory of Congress (R) in the 5th Lok Sabha elections\n3. 'Political Earthquake' of the 4th General Elections\n4. Demise of Lal Bahadur Shastri in Tashkent\nSelect the correct sequence:",
-    options: [
-      "A):   4 — 3 — 1 — 2",
+    "id": "c12-pol-12-mcq-20",
+    "question": "Arrange the following events in chronological order:\n1. The Great Split in the Congress [Congress(O) vs Congress(R)]\n2. Landslide victory of Congress (R) in the 5th Lok Sabha elections\n3. 'Political Earthquake' of the 4th General Elections\n4. Demise of Lal Bahadur Shastri in Tashkent\nSelect the correct sequence:",
+    "options": [
+      "A):   1 — 4 — 3 — 2",
       "B):   3 — 4 — 1 — 2",
       "C):   4 — 1 — 3 — 2",
-      "D):   1 — 4 — 3 — 2"
+      "D):   4 — 3 — 1 — 2"
     ],
-    correctAnswer: "A",
-    explanation: "Shastri's death (Jan 1966) → 4th General Elections (Feb 1967) → Congress Split (Nov 1969) → 5th Lok Sabha Landslide (March 1971)."
+    "correctAnswer": "D",
+    "explanation": "Shastri's death (Jan 1966) → 4th General Elections (Feb 1967) → Congress Split (Nov 1969) → 5th Lok Sabha Landslide (March 1971)."
   }
 ];

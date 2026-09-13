@@ -403,249 +403,244 @@ export const c12Pol9HtmlSolutions = `
 /* -------------------------------------------------------------------------- */
 
 export const c12Pol9Mcqs = [
-  // Tier 1: Q1 to Q8 (Recall, dates, personalities, party founders)
   {
-    id: "c12-pol-9-mcq-1",
-    question: "Who served as India's first Chief Election Commissioner when the Election Commission was established in January 1950?",
-    options: [
-      "A):   K.V.K. Sundaram",
-      "B):   Sukumar Sen",
+    "id": "c12-pol-9-mcq-1",
+    "question": "Who served as India's first Chief Election Commissioner when the Election Commission was established in January 1950?",
+    "options": [
+      "A):   Sukumar Sen",
+      "B):   K.V.K. Sundaram",
       "C):   T.N. Seshan",
-      "D):   Fakiruddin Ali Ahmed",
+      "D):   Fakiruddin Ali Ahmed"
     ],
-    correctAnswer: "b",
-    explanation: "Sukumar Sen was India's first Chief Election Commissioner who oversaw the historic first two general elections in 1951-52 and 1957.",
+    "correctAnswer": "A",
+    "explanation": "Sukumar Sen was India's first Chief Election Commissioner who oversaw the historic first two general elections in 1951-52 and 1957."
   },
   {
-    id: "c12-pol-9-mcq-2",
-    question: "How many Lok Sabha seats were contested in India's First General Election held in 1951–1952?",
-    options: [
+    "id": "c12-pol-9-mcq-2",
+    "question": "How many Lok Sabha seats were contested in India's First General Election held in 1951–1952?",
+    "options": [
       "A):   300 seats",
       "B):   489 seats",
       "C):   543 seats",
-      "D):   550 seats",
+      "D):   550 seats"
     ],
-    correctAnswer: "b",
-    explanation: "India's first Lok Sabha had 489 seats, of which the Indian National Congress won an overwhelming majority of 364 seats.",
+    "correctAnswer": "B",
+    "explanation": "India's first Lok Sabha had 489 seats, of which the Indian National Congress won an overwhelming majority of 364 seats."
   },
   {
-    id: "c12-pol-9-mcq-3",
-    question: "Which political party emerged as the second largest party in the Lok Sabha in the 1951–52 elections, winning 16 seats?",
-    options: [
+    "id": "c12-pol-9-mcq-3",
+    "question": "Which political party emerged as the second largest party in the Lok Sabha in the 1951–52 elections, winning 16 seats?",
+    "options": [
       "A):   Socialist Party",
-      "B):   Communist Party of India (CPI)",
-      "C):   Bharatiya Jana Sangh",
-      "D):   Swatantra Party",
+      "B):   Bharatiya Jana Sangh",
+      "C):   Communist Party of India (CPI)",
+      "D):   Swatantra Party"
     ],
-    correctAnswer: "b",
-    explanation: "The Communist Party of India (CPI) won 16 seats, emerging as the largest single opposition party in the first Lok Sabha.",
+    "correctAnswer": "C",
+    "explanation": "The Communist Party of India (CPI) won 16 seats, emerging as the largest single opposition party in the first Lok Sabha."
   },
   {
-    id: "c12-pol-9-mcq-4",
-    question: "Who founded the Bharatiya Jana Sangh (BJS) in October 1951?",
-    options: [
-      "A):   Dr. Syama Prasad Mukherjee",
+    "id": "c12-pol-9-mcq-4",
+    "question": "Who founded the Bharatiya Jana Sangh (BJS) in October 1951?",
+    "options": [
+      "A):   Atal Bihari Vajpayee",
       "B):   Deendayal Upadhyaya",
       "C):   Balraj Madhok",
-      "D):   Atal Bihari Vajpayee",
+      "D):   Dr. Syama Prasad Mukherjee"
     ],
-    correctAnswer: "a",
-    explanation: "Dr. Syama Prasad Mukherjee founded the Bharatiya Jana Sangh in October 1951 in Delhi.",
+    "correctAnswer": "D",
+    "explanation": "Dr. Syama Prasad Mukherjee founded the Bharatiya Jana Sangh in October 1951 in Delhi."
   },
   {
-    id: "c12-pol-9-mcq-5",
-    question: "In which year and by whom was the Swatantra Party founded as a pro-free enterprise alternative to the Congress?",
-    options: [
-      "A):   1951 by Syama Prasad Mukherjee",
-      "B):   1959 by C. Rajagopalachari",
+    "id": "c12-pol-9-mcq-5",
+    "question": "In which year and by whom was the Swatantra Party founded as a pro-free enterprise alternative to the Congress?",
+    "options": [
+      "A):   1959 by C. Rajagopalachari",
+      "B):   1951 by Syama Prasad Mukherjee",
       "C):   1948 by Acharya Narendra Deva",
-      "D):   1964 by E.M.S. Namboodiripad",
+      "D):   1964 by E.M.S. Namboodiripad"
     ],
-    correctAnswer: "b",
-    explanation: "The Swatantra Party was founded in August 1959 by veteran statesman C. Rajagopalachari (Rajaji) alongside Minoo Masani and N.G. Ranga.",
+    "correctAnswer": "A",
+    "explanation": "The Swatantra Party was founded in August 1959 by veteran statesman C. Rajagopalachari (Rajaji) alongside Minoo Masani and N.G. Ranga."
   },
   {
-    id: "c12-pol-9-mcq-6",
-    question: "Which political scientist coined the famous term 'The Congress System' to describe Indian politics in the 1950s and 1960s?",
-    options: [
+    "id": "c12-pol-9-mcq-6",
+    "question": "Which political scientist coined the famous term 'The Congress System' to describe Indian politics in the 1950s and 1960s?",
+    "options": [
       "A):   Paul Brass",
       "B):   Rajni Kothari",
       "C):   Myron Weiner",
-      "D):   W.H. Morris-Jones",
+      "D):   W.H. Morris-Jones"
     ],
-    correctAnswer: "b",
-    explanation: "Rajni Kothari coined the term 'The Congress System' in his seminal 1964 essay analyzing one-party dominance with internal factional competition.",
+    "correctAnswer": "B",
+    "explanation": "Rajni Kothari coined the term 'The Congress System' in his seminal 1964 essay analyzing one-party dominance with internal factional competition."
   },
   {
-    id: "c12-pol-9-mcq-7",
-    question: "In which year was the first democratically elected Communist government formed in Kerala under E.M.S. Namboodiripad?",
-    options: [
+    "id": "c12-pol-9-mcq-7",
+    "question": "In which year was the first democratically elected Communist government formed in Kerala under E.M.S. Namboodiripad?",
+    "options": [
       "A):   1952",
-      "B):   1957",
-      "C):   1962",
-      "D):   1967",
+      "B):   1962",
+      "C):   1957",
+      "D):   1967"
     ],
-    correctAnswer: "b",
-    explanation: "The CPI formed the government in Kerala in March 1957 after winning 60 of 126 seats in the second general election.",
+    "correctAnswer": "C",
+    "explanation": "The CPI formed the government in Kerala in March 1957 after winning 60 of 126 seats in the second general election."
   },
   {
-    id: "c12-pol-9-mcq-8",
-    question: "Under which constitutional article was the Communist ministry in Kerala dismissed by the central government in July 1959?",
-    options: [
+    "id": "c12-pol-9-mcq-8",
+    "question": "Under which constitutional article was the Communist ministry in Kerala dismissed by the central government in July 1959?",
+    "options": [
       "A):   Article 352",
-      "B):   Article 356",
+      "B):   Article 370",
       "C):   Article 360",
-      "D):   Article 370",
+      "D):   Article 356"
     ],
-    correctAnswer: "b",
-    explanation: "The central government invoked Article 356 (President's Rule) in July 1959 to dismiss the Namboodiripad government amidst the 'Liberation Struggle'.",
+    "correctAnswer": "D",
+    "explanation": "The central government invoked Article 356 (President's Rule) in July 1959 to dismiss the Namboodiripad government amidst the 'Liberation Struggle'."
   },
-
-  // Tier 2: Q9 to Q15 (Concepts, FPTP system, factions, party ideologies)
   {
-    id: "c12-pol-9-mcq-9",
-    question: "How did the First-Past-The-Post (FPTP) system produce a massive 'seat bonus' for the Congress in 1952?",
-    options: [
-      "A):   Congress received 100% of all popular votes cast",
-      "B):   With roughly 45% of the popular vote, Congress won 74% of the seats because non-Congress votes were fragmented among rival parties",
+    "id": "c12-pol-9-mcq-9",
+    "question": "How did the First-Past-The-Post (FPTP) system produce a massive 'seat bonus' for the Congress in 1952?",
+    "options": [
+      "A):   With roughly 45% of the popular vote, Congress won 74% of the seats because non-Congress votes were fragmented among rival parties",
+      "B):   Congress received 100% of all popular votes cast",
       "C):   The Constitution legally barred opposition candidates from filing nomination papers",
-      "D):   All ballot boxes of opposition parties were confiscated",
+      "D):   All ballot boxes of opposition parties were confiscated"
     ],
-    correctAnswer: "b",
-    explanation: "Under FPTP, fragmented opposition votes allowed Congress to win three-quarters of the parliamentary seats despite securing less than half the popular vote.",
+    "correctAnswer": "A",
+    "explanation": "Under FPTP, fragmented opposition votes allowed Congress to win three-quarters of the parliamentary seats despite securing less than half the popular vote."
   },
   {
-    id: "c12-pol-9-mcq-10",
-    question: "What was the fundamental difference between one-party dominance in India and one-party rule in Mexico under the PRI?",
-    options: [
+    "id": "c12-pol-9-mcq-10",
+    "question": "What was the fundamental difference between one-party dominance in India and one-party rule in Mexico under the PRI?",
+    "options": [
       "A):   In Mexico, opposition parties won all elections",
       "B):   In India, one-party dominance took place under free, fair, multi-party democratic competition, whereas the PRI ruled through electoral fraud and intimidation",
       "C):   In India, only military generals were allowed to vote",
-      "D):   In Mexico, elections were conducted by the United Nations",
+      "D):   In Mexico, elections were conducted by the United Nations"
     ],
-    correctAnswer: "b",
-    explanation: "Unlike authoritarian or rigged one-party states, Congress dominance in India was based on genuine popular choice in an open, competitive democracy.",
+    "correctAnswer": "B",
+    "explanation": "Unlike authoritarian or rigged one-party states, Congress dominance in India was based on genuine popular choice in an open, competitive democracy."
   },
   {
-    id: "c12-pol-9-mcq-11",
-    question: "Which of the following was the foundational slogan and cultural vision of the Bharatiya Jana Sangh?",
-    options: [
+    "id": "c12-pol-9-mcq-11",
+    "question": "Which of the following was the foundational slogan and cultural vision of the Bharatiya Jana Sangh?",
+    "options": [
       "A):   'Workers of the World, Unite'",
-      "B):   'One country, one nation, one culture'",
-      "C):   'Another World is Possible'",
-      "D):   'Jai Jawan, Jai Kisan'",
+      "B):   'Another World is Possible'",
+      "C):   'One country, one nation, one culture'",
+      "D):   'Jai Jawan, Jai Kisan'"
     ],
-    correctAnswer: "b",
-    explanation: "The Bharatiya Jana Sangh championed 'One country, one nation, one culture', emphasizing cultural assimilation and Indian traditional values.",
+    "correctAnswer": "C",
+    "explanation": "The Bharatiya Jana Sangh championed 'One country, one nation, one culture', emphasizing cultural assimilation and Indian traditional values."
   },
   {
-    id: "c12-pol-9-mcq-12",
-    question: "Which political party was known as the champion of private enterprise and the opponent of the 'License-Permit Raj' in the 1960s?",
-    options: [
+    "id": "c12-pol-9-mcq-12",
+    "question": "Which political party was known as the champion of private enterprise and the opponent of the 'License-Permit Raj' in the 1960s?",
+    "options": [
       "A):   Communist Party of India",
-      "B):   Swatantra Party",
+      "B):   Praja Socialist Party",
       "C):   Socialist Party",
-      "D):   Praja Socialist Party",
+      "D):   Swatantra Party"
     ],
-    correctAnswer: "b",
-    explanation: "The Swatantra Party, led by Rajaji and Minoo Masani, strongly opposed Nehru's socialist planning, demanding deregulation and free enterprise.",
+    "correctAnswer": "D",
+    "explanation": "The Swatantra Party, led by Rajaji and Minoo Masani, strongly opposed Nehru's socialist planning, demanding deregulation and free enterprise."
   },
   {
-    id: "c12-pol-9-mcq-13",
-    question: "In 1964, the Communist Party of India (CPI) formally split into two parties primarily due to which major development?",
-    options: [
-      "A):   Dispute over the national language Hindi",
-      "B):   The ideological rift between the Soviet Union and China, and the 1962 Sino-Indian War",
+    "id": "c12-pol-9-mcq-13",
+    "question": "In 1964, the Communist Party of India (CPI) formally split into two parties primarily due to which major development?",
+    "options": [
+      "A):   The ideological rift between the Soviet Union and China, and the 1962 Sino-Indian War",
+      "B):   Dispute over the national language Hindi",
       "C):   A disagreement over the green revolution",
-      "D):   The creation of Andhra State",
+      "D):   The creation of Andhra State"
     ],
-    correctAnswer: "b",
-    explanation: "The CPI split in 1964 into the pro-Moscow CPI and pro-Beijing CPI(M) following the ideological Sino-Soviet split and the 1962 border war.",
+    "correctAnswer": "A",
+    "explanation": "The CPI split in 1964 into the pro-Moscow CPI and pro-Beijing CPI(M) following the ideological Sino-Soviet split and the 1962 border war."
   },
   {
-    id: "c12-pol-9-mcq-14",
-    question: "How did internal factions inside the Congress party contribute to its sustained political dominance?",
-    options: [
+    "id": "c12-pol-9-mcq-14",
+    "question": "How did internal factions inside the Congress party contribute to its sustained political dominance?",
+    "options": [
       "A):   By expelling all members who disagreed with the Prime Minister",
       "B):   By acting as internal balancing mechanisms that absorbed diverse local grievances, preventing leaders from defecting to external opposition parties",
       "C):   By dissolving Parliament whenever a disagreement occurred",
-      "D):   By forcing all regional languages to be banned",
+      "D):   By forcing all regional languages to be banned"
     ],
-    correctAnswer: "b",
-    explanation: "Factional competition inside the Congress accommodated diverse interests, effectively making the Congress its own ruling party and opposition.",
+    "correctAnswer": "B",
+    "explanation": "Factional competition inside the Congress accommodated diverse interests, effectively making the Congress its own ruling party and opposition."
   },
   {
-    id: "c12-pol-9-mcq-15",
-    question: "Who developed the philosophical concept of 'Integral Humanism' for the Bharatiya Jana Sangh?",
-    options: [
-      "A):   Pandit Deendayal Upadhyaya",
+    "id": "c12-pol-9-mcq-15",
+    "question": "Who developed the philosophical concept of 'Integral Humanism' for the Bharatiya Jana Sangh?",
+    "options": [
+      "A):   Rammanohar Lohia",
       "B):   Dr. B.R. Ambedkar",
-      "C):   Rammanohar Lohia",
-      "D):   Jayaprakash Narayan",
+      "C):   Pandit Deendayal Upadhyaya",
+      "D):   Jayaprakash Narayan"
     ],
-    correctAnswer: "a",
-    explanation: "Pandit Deendayal Upadhyaya formulated 'Integral Humanism', which presented an alternative to both Western capitalism and Marxist communism.",
+    "correctAnswer": "C",
+    "explanation": "Pandit Deendayal Upadhyaya formulated 'Integral Humanism', which presented an alternative to both Western capitalism and Marxist communism."
   },
-
-  // Tier 3: Q16 to Q20 (Analytical, Assertion-Reason, comparative questions)
   {
-    id: "c12-pol-9-mcq-16",
-    question: "Assertion (A): The Indian National Congress operated as a social and ideological coalition during the foundational decades of independence.\nReason (R): The Congress evolved from an urban elite group into a mass national movement containing diverse economic classes, religions, and political philosophies.",
-    options: [
-      "A):   Both A and R are true, and R is the correct explanation of A",
+    "id": "c12-pol-9-mcq-16",
+    "question": "Assertion (A): The Indian National Congress operated as a social and ideological coalition during the foundational decades of independence.\nReason (R): The Congress evolved from an urban elite group into a mass national movement containing diverse economic classes, religions, and political philosophies.",
+    "options": [
+      "A):   A is false, but R is true",
       "B):   Both A and R are true, but R is not the correct explanation of A",
       "C):   A is true, but R is false",
-      "D):   A is false, but R is true",
+      "D):   Both A and R are true, and R is the correct explanation of A"
     ],
-    correctAnswer: "a",
-    explanation: "Both statements are correct. The transformation under Mahatma Gandhi made the Congress an umbrella coalition representing all sections of Indian society.",
+    "correctAnswer": "D",
+    "explanation": "Both statements are correct. The transformation under Mahatma Gandhi made the Congress an umbrella coalition representing all sections of Indian society."
   },
   {
-    id: "c12-pol-9-mcq-17",
-    question: "Consider the following statements regarding the 1957 Kerala elections:\n1. The Communist Party of India (CPI) won an absolute majority of seats alone without any independent support.\n2. The elected CPI ministry was dismissed in 1959 under Article 356 following the 'Liberation Struggle'.\nWhich of the statements is/are correct?",
-    options: [
-      "A):   1 only",
-      "B):   2 only",
+    "id": "c12-pol-9-mcq-17",
+    "question": "Consider the following statements regarding the 1957 Kerala elections:\n1. The Communist Party of India (CPI) won an absolute majority of seats alone without any independent support.\n2. The elected CPI ministry was dismissed in 1959 under Article 356 following the 'Liberation Struggle'.\nWhich of the statements is/are correct?",
+    "options": [
+      "A):   2 only",
+      "B):   1 only",
       "C):   Both 1 and 2",
-      "D):   Neither 1 nor 2",
+      "D):   Neither 1 nor 2"
     ],
-    correctAnswer: "b",
-    explanation: "Statement 1 is false because CPI won 60 of 126 seats and formed government with 5 independents. Statement 2 is correct (dismissed under Article 356 in 1959).",
+    "correctAnswer": "A",
+    "explanation": "Statement 1 is false because CPI won 60 of 126 seats and formed government with 5 independents. Statement 2 is correct (dismissed under Article 356 in 1959)."
   },
   {
-    id: "c12-pol-9-mcq-18",
-    question: "Which prominent socialist leader broke away from the Congress to form the Socialist Party and later spearheaded the Total Revolution movement in the 1970s?",
-    options: [
-      "A):   Jayaprakash Narayan (JP)",
-      "B):   C. Rajagopalachari",
+    "id": "c12-pol-9-mcq-18",
+    "question": "Which prominent socialist leader broke away from the Congress to form the Socialist Party and later spearheaded the Total Revolution movement in the 1970s?",
+    "options": [
+      "A):   C. Rajagopalachari",
+      "B):   Jayaprakash Narayan (JP)",
       "C):   Syama Prasad Mukherjee",
-      "D):   Morarji Desai",
+      "D):   Morarji Desai"
     ],
-    correctAnswer: "a",
-    explanation: "Jayaprakash Narayan was a founding leader of the Congress Socialist Party who later launched the historic Total Revolution movement.",
+    "correctAnswer": "B",
+    "explanation": "Jayaprakash Narayan was a founding leader of the Congress Socialist Party who later launched the historic Total Revolution movement."
   },
   {
-    id: "c12-pol-9-mcq-19",
-    question: "Why was the 1951–52 general election in India watched with immense international interest by democratic scholars worldwide?",
-    options: [
-      "A):   Because it tested whether constitutional democracy could succeed in a non-Western, poor, and largely illiterate post-colonial society",
+    "id": "c12-pol-9-mcq-19",
+    "question": "Why was the 1951–52 general election in India watched with immense international interest by democratic scholars worldwide?",
+    "options": [
+      "A):   Because the winner would be appointed Secretary-General of the United Nations",
       "B):   Because it was the first election where computers were used for voting",
-      "C):   Because the winner would be appointed Secretary-General of the United Nations",
-      "D):   Because India had declared war on the British Empire",
+      "C):   Because it tested whether constitutional democracy could succeed in a non-Western, poor, and largely illiterate post-colonial society",
+      "D):   Because India had declared war on the British Empire"
     ],
-    correctAnswer: "a",
-    explanation: "The 1951-52 election was a global test case proving that democratic universal adult franchise was not a luxury limited only to wealthy, educated Western nations.",
+    "correctAnswer": "C",
+    "explanation": "The 1951-52 election was a global test case proving that democratic universal adult franchise was not a luxury limited only to wealthy, educated Western nations."
   },
   {
-    id: "c12-pol-9-mcq-20",
-    question: "Which of the following parties was staunchly in favor of replacing English with Hindi as the sole national language of India?",
-    options: [
+    "id": "c12-pol-9-mcq-20",
+    "question": "Which of the following parties was staunchly in favor of replacing English with Hindi as the sole national language of India?",
+    "options": [
       "A):   Dravida Munnetra Kazhagam (DMK)",
-      "B):   Bharatiya Jana Sangh (BJS)",
+      "B):   Communist Party of India (Marxist)",
       "C):   Swatantra Party",
-      "D):   Communist Party of India (Marxist)",
+      "D):   Bharatiya Jana Sangh (BJS)"
     ],
-    correctAnswer: "b",
-    explanation: "The Bharatiya Jana Sangh strongly campaigned for Hindi as the sole official national language, advocating 'One country, one nation, one culture'.",
-  },
+    "correctAnswer": "D",
+    "explanation": "The Bharatiya Jana Sangh strongly campaigned for Hindi as the sole official national language, advocating 'One country, one nation, one culture'."
+  }
 ];

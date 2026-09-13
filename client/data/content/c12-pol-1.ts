@@ -675,249 +675,244 @@ export const c12Pol1HtmlSolutions = `
 /* -------------------------------------------------------------------------- */
 
 export const c12Pol1Mcqs = [
-  // --- TIER 1: BASIC & RECALL (Q1 to Q8) ---
   {
-    id: "c12-pol-1-mcq-1",
-    question: "In which year did the historic Bolshevik Revolution take place in Russia, leading to the establishment of the Soviet Union?",
-    options: [
-      "A):   1914",
-      "B):   1917",
+    "id": "c12-pol-1-mcq-1",
+    "question": "In which year did the historic Bolshevik Revolution take place in Russia, leading to the establishment of the Soviet Union?",
+    "options": [
+      "A):   1917",
+      "B):   1914",
       "C):   1921",
-      "D):   1925",
+      "D):   1925"
     ],
-    correctAnswer: "b",
-    explanation: "The Bolshevik Revolution led by Vladimir Lenin took place in 1917, establishing the world's first socialist state based on Marxist principles.",
+    "correctAnswer": "A",
+    "explanation": "The Bolshevik Revolution led by Vladimir Lenin took place in 1917, establishing the world's first socialist state based on Marxist principles."
   },
   {
-    id: "c12-pol-1-mcq-2",
-    question: "Which military alliance was formed by the Soviet Union and its Eastern European socialist allies in 1955 to counter NATO?",
-    options: [
-      "A):   Warsaw Pact",
-      "B):   SEATO",
+    "id": "c12-pol-1-mcq-2",
+    "question": "Which military alliance was formed by the Soviet Union and its Eastern European socialist allies in 1955 to counter NATO?",
+    "options": [
+      "A):   SEATO",
+      "B):   Warsaw Pact",
       "C):   CENTO",
-      "D):   Cominform",
+      "D):   Cominform"
     ],
-    correctAnswer: "a",
-    explanation: "The Warsaw Pact was created in 1955 by the Soviet Union and six Eastern European socialist allies as a collective defence treaty to counter NATO.",
+    "correctAnswer": "B",
+    "explanation": "The Warsaw Pact was created in 1955 by the Soviet Union and six Eastern European socialist allies as a collective defence treaty to counter NATO."
   },
   {
-    id: "c12-pol-1-mcq-3",
-    question: "Who was the last General Secretary of the Communist Party of the Soviet Union before its dissolution?",
-    options: [
+    "id": "c12-pol-1-mcq-3",
+    "question": "Who was the last General Secretary of the Communist Party of the Soviet Union before its dissolution?",
+    "options": [
       "A):   Nikita Khrushchev",
       "B):   Leonid Brezhnev",
       "C):   Mikhail Gorbachev",
-      "D):   Boris Yeltsin",
+      "D):   Boris Yeltsin"
     ],
-    correctAnswer: "c",
-    explanation: "Mikhail Gorbachev became General Secretary in March 1985 and was the final leader of the Soviet Union until his resignation on December 25, 1991.",
+    "correctAnswer": "C",
+    "explanation": "Mikhail Gorbachev became General Secretary in March 1985 and was the final leader of the Soviet Union until his resignation on December 25, 1991."
   },
   {
-    id: "c12-pol-1-mcq-4",
-    question: "On which historic date did the citizens of Germany breach the Berlin Wall, symbolizing the imminent fall of the Second World?",
-    options: [
+    "id": "c12-pol-1-mcq-4",
+    "question": "On which historic date did the citizens of Germany breach the Berlin Wall, symbolizing the imminent fall of the Second World?",
+    "options": [
       "A):   August 15, 1987",
-      "B):   November 9, 1989",
+      "B):   December 25, 1991",
       "C):   October 3, 1990",
-      "D):   December 25, 1991",
+      "D):   November 9, 1989"
     ],
-    correctAnswer: "b",
-    explanation: "The Berlin Wall was breached on November 9, 1989, triggering the collapse of communist governments across Eastern Europe.",
+    "correctAnswer": "D",
+    "explanation": "The Berlin Wall was breached on November 9, 1989, triggering the collapse of communist governments across Eastern Europe."
   },
   {
-    id: "c12-pol-1-mcq-5",
-    question: "Which was the first Soviet republic to officially declare its independence from the USSR in March 1990?",
-    options: [
+    "id": "c12-pol-1-mcq-5",
+    "question": "Which was the first Soviet republic to officially declare its independence from the USSR in March 1990?",
+    "options": [
       "A):   Lithuania",
       "B):   Ukraine",
       "C):   Georgia",
-      "D):   Belarus",
+      "D):   Belarus"
     ],
-    correctAnswer: "a",
-    explanation: "Lithuania was the first Soviet republic to declare independence in March 1990, initiating the secessionist movement among the Baltic states.",
+    "correctAnswer": "A",
+    "explanation": "Lithuania was the first Soviet republic to declare independence in March 1990, initiating the secessionist movement among the Baltic states."
   },
   {
-    id: "c12-pol-1-mcq-6",
-    question: "Who emerged as the heroic leader of popular resistance against the August 1991 hardline communist coup in Moscow?",
-    options: [
+    "id": "c12-pol-1-mcq-6",
+    "question": "Who emerged as the heroic leader of popular resistance against the August 1991 hardline communist coup in Moscow?",
+    "options": [
       "A):   Vladimir Putin",
       "B):   Boris Yeltsin",
       "C):   Alexander Lebed",
-      "D):   Gennady Yanayev",
+      "D):   Gennady Yanayev"
     ],
-    correctAnswer: "b",
-    explanation: "Boris Yeltsin, the popularly elected President of the Russian Republic, led the public resistance that defeated the August 1991 communist coup.",
+    "correctAnswer": "B",
+    "explanation": "Boris Yeltsin, the popularly elected President of the Russian Republic, led the public resistance that defeated the August 1991 communist coup."
   },
   {
-    id: "c12-pol-1-mcq-7",
-    question: "The Treaty of Peace, Friendship and Cooperation between India and the Soviet Union was signed in which year?",
-    options: [
+    "id": "c12-pol-1-mcq-7",
+    "question": "The Treaty of Peace, Friendship and Cooperation between India and the Soviet Union was signed in which year?",
+    "options": [
       "A):   1965",
-      "B):   1971",
-      "C):   1975",
-      "D):   1980",
+      "B):   1975",
+      "C):   1971",
+      "D):   1980"
     ],
-    correctAnswer: "b",
-    explanation: "The 20-Year Treaty of Peace, Friendship and Cooperation was signed in August 1971 between India and the USSR ahead of the Bangladesh Liberation War.",
+    "correctAnswer": "C",
+    "explanation": "The 20-Year Treaty of Peace, Friendship and Cooperation was signed in August 1971 between India and the USSR ahead of the Bangladesh Liberation War."
   },
   {
-    id: "c12-pol-1-mcq-8",
-    question: "Which country was officially recognized as the sole successor state to the USSR in the United Nations Security Council?",
-    options: [
+    "id": "c12-pol-1-mcq-8",
+    "question": "Which country was officially recognized as the sole successor state to the USSR in the United Nations Security Council?",
+    "options": [
       "A):   Kazakhstan",
       "B):   Ukraine",
       "C):   Belarus",
-      "D):   Russian Federation",
+      "D):   Russian Federation"
     ],
-    correctAnswer: "d",
-    explanation: "The Russian Federation inherited the permanent seat, veto power, and international treaty commitments of the USSR in the UN Security Council.",
+    "correctAnswer": "D",
+    "explanation": "The Russian Federation inherited the permanent seat, veto power, and international treaty commitments of the USSR in the UN Security Council."
   },
-
-  // --- TIER 2: CONCEPTUAL & COMPARATIVE (Q9 to Q15) ---
   {
-    id: "c12-pol-1-mcq-9",
-    question: "What did Gorbachev's reform policy of 'Glasnost' specifically aim to introduce in the Soviet Union?",
-    options: [
-      "A):   Rapid privatization of heavy steel mills",
-      "B):   Freedom of speech, transparency, and relaxation of media censorship",
+    "id": "c12-pol-1-mcq-9",
+    "question": "What did Gorbachev's reform policy of 'Glasnost' specifically aim to introduce in the Soviet Union?",
+    "options": [
+      "A):   Freedom of speech, transparency, and relaxation of media censorship",
+      "B):   Rapid privatization of heavy steel mills",
       "C):   Immediate withdrawal from all international treaties",
-      "D):   Abolition of the Soviet military",
+      "D):   Abolition of the Soviet military"
     ],
-    correctAnswer: "b",
-    explanation: "Glasnost (Openness) dismantled state censorship, allowed freedom of expression, and permitted public debate and historical transparency.",
+    "correctAnswer": "A",
+    "explanation": "Glasnost (Openness) dismantled state censorship, allowed freedom of expression, and permitted public debate and historical transparency."
   },
   {
-    id: "c12-pol-1-mcq-10",
-    question: "The economic transition model known as 'Shock Therapy' was sponsored and guided primarily by which international organizations?",
-    options: [
+    "id": "c12-pol-1-mcq-10",
+    "question": "The economic transition model known as 'Shock Therapy' was sponsored and guided primarily by which international organizations?",
+    "options": [
       "A):   United Nations General Assembly and UNESCO",
       "B):   International Monetary Fund (IMF) and World Bank",
       "C):   World Health Organization and ILO",
-      "D):   BRICS and Shanghai Cooperation Organisation",
+      "D):   BRICS and Shanghai Cooperation Organisation"
     ],
-    correctAnswer: "b",
-    explanation: "Shock Therapy was designed and promoted by the International Monetary Fund (IMF) and the World Bank to rapidly establish capitalist free markets.",
+    "correctAnswer": "B",
+    "explanation": "Shock Therapy was designed and promoted by the International Monetary Fund (IMF) and the World Bank to rapidly establish capitalist free markets."
   },
   {
-    id: "c12-pol-1-mcq-11",
-    question: "Why was the large-scale privatization under Russian Shock Therapy labeled the 'largest garage sale in history'?",
-    options: [
+    "id": "c12-pol-1-mcq-11",
+    "question": "Why was the large-scale privatization under Russian Shock Therapy labeled the 'largest garage sale in history'?",
+    "options": [
       "A):   Citizens sold their private cars at street auctions",
-      "B):   Valuable state-owned industries were sold off at throwaway, undervalued prices",
-      "C):   Foreign nations donated consumer goods freely to Russia",
-      "D):   The Russian government purchased American electronic goods in bulk",
+      "B):   Foreign nations donated consumer goods freely to Russia",
+      "C):   Valuable state-owned industries were sold off at throwaway, undervalued prices",
+      "D):   The Russian government purchased American electronic goods in bulk"
     ],
-    correctAnswer: "b",
-    explanation: "Nearly 90% of massive state-owned industrial enterprises were auctioned off at deeply undervalued prices, cornered by oligarchs and cartels.",
+    "correctAnswer": "C",
+    "explanation": "Nearly 90% of massive state-owned industrial enterprises were auctioned off at deeply undervalued prices, cornered by oligarchs and cartels."
   },
   {
-    id: "c12-pol-1-mcq-12",
-    question: "Which peaceful partition of a post-communist country in 1993 was historically termed the 'Velvet Divorce'?",
-    options: [
+    "id": "c12-pol-1-mcq-12",
+    "question": "Which peaceful partition of a post-communist country in 1993 was historically termed the 'Velvet Divorce'?",
+    "options": [
       "A):   Dissolution of Yugoslavia into Serbia and Croatia",
-      "B):   Breakup of Czechoslovakia into Czech Republic and Slovakia",
+      "B):   Separation of Crimea from Ukraine",
       "C):   Secession of South Ossetia from Georgia",
-      "D):   Separation of Crimea from Ukraine",
+      "D):   Breakup of Czechoslovakia into Czech Republic and Slovakia"
     ],
-    correctAnswer: "b",
-    explanation: "The peaceful, amicable separation of Czechoslovakia into the Czech Republic and Slovakia on January 1, 1993 is known as the Velvet Divorce.",
+    "correctAnswer": "D",
+    "explanation": "The peaceful, amicable separation of Czechoslovakia into the Czech Republic and Slovakia on January 1, 1993 is known as the Velvet Divorce."
   },
   {
-    id: "c12-pol-1-mcq-13",
-    question: "The 1995 Dayton Accords brought an end to the horrific ethnic civil war in which former Yugoslav republic?",
-    options: [
+    "id": "c12-pol-1-mcq-13",
+    "question": "The 1995 Dayton Accords brought an end to the horrific ethnic civil war in which former Yugoslav republic?",
+    "options": [
       "A):   Bosnia and Herzegovina",
       "B):   Slovenia",
       "C):   Macedonia",
-      "D):   Montenegro",
+      "D):   Montenegro"
     ],
-    correctAnswer: "a",
-    explanation: "The US-brokered Dayton Peace Agreement in 1995 concluded the bitter ethnic conflict and genocide in Bosnia and Herzegovina.",
+    "correctAnswer": "A",
+    "explanation": "The US-brokered Dayton Peace Agreement in 1995 concluded the bitter ethnic conflict and genocide in Bosnia and Herzegovina."
   },
   {
-    id: "c12-pol-1-mcq-14",
-    question: "Which Muslim-majority republic within the Russian Federation experienced two brutal secessionist wars against Moscow after 1991?",
-    options: [
+    "id": "c12-pol-1-mcq-14",
+    "question": "Which Muslim-majority republic within the Russian Federation experienced two brutal secessionist wars against Moscow after 1991?",
+    "options": [
       "A):   Tatarstan",
-      "B):   Bashkortostan",
-      "C):   Chechnya",
-      "D):   Chuvashia",
+      "B):   Chechnya",
+      "C):   Bashkortostan",
+      "D):   Chuvashia"
     ],
-    correctAnswer: "c",
-    explanation: "Chechnya fought two violent secessionist wars against Russian federal forces (1994–1996 and 1999–2009) resulting in massive casualties and destruction.",
+    "correctAnswer": "B",
+    "explanation": "Chechnya fought two violent secessionist wars against Russian federal forces (1994–1996 and 1999–2009) resulting in massive casualties and destruction."
   },
   {
-    id: "c12-pol-1-mcq-15",
-    question: "Which Central Asian country was ravaged by a bitter 5-year civil war between 1992 and 1997 following the Soviet collapse?",
-    options: [
+    "id": "c12-pol-1-mcq-15",
+    "question": "Which Central Asian country was ravaged by a bitter 5-year civil war between 1992 and 1997 following the Soviet collapse?",
+    "options": [
       "A):   Kazakhstan",
       "B):   Turkmenistan",
       "C):   Tajikistan",
-      "D):   Uzbekistan",
+      "D):   Uzbekistan"
     ],
-    correctAnswer: "c",
-    explanation: "Tajikistan suffered a devastating civil war (1992–1997) between the post-communist government and an Islamist-democratic opposition alliance.",
+    "correctAnswer": "C",
+    "explanation": "Tajikistan suffered a devastating civil war (1992–1997) between the post-communist government and an Islamist-democratic opposition alliance."
   },
-
-  // --- TIER 3: ANALYTICAL & INDO-RUSSIAN RELATIONS (Q16 to Q20) ---
   {
-    id: "c12-pol-1-mcq-16",
-    question: "In October 2000, India and Russia elevated their bilateral relationship by signing which landmark agreement?",
-    options: [
+    "id": "c12-pol-1-mcq-16",
+    "question": "In October 2000, India and Russia elevated their bilateral relationship by signing which landmark agreement?",
+    "options": [
       "A):   Tashkent Peace Accord",
-      "B):   Declaration on Strategic Partnership",
+      "B):   Panchsheel Joint Agreement",
       "C):   Simla Bilateral Treaty",
-      "D):   Panchsheel Joint Agreement",
+      "D):   Declaration on Strategic Partnership"
     ],
-    correctAnswer: "b",
-    explanation: "Prime Minister Atal Bihari Vajpayee and President Vladimir Putin signed the Declaration on Strategic Partnership in October 2000, initiating annual bilateral summits.",
+    "correctAnswer": "D",
+    "explanation": "Prime Minister Atal Bihari Vajpayee and President Vladimir Putin signed the Declaration on Strategic Partnership in October 2000, initiating annual bilateral summits."
   },
   {
-    id: "c12-pol-1-mcq-17",
-    question: "Which iconic supersonic cruise missile represents the flagship joint defence co-development project between India and Russia?",
-    options: [
-      "A):   Prithvi",
+    "id": "c12-pol-1-mcq-17",
+    "question": "Which iconic supersonic cruise missile represents the flagship joint defence co-development project between India and Russia?",
+    "options": [
+      "A):   BrahMos",
       "B):   Agni-V",
-      "C):   BrahMos",
-      "D):   Akash",
+      "C):   Prithvi",
+      "D):   Akash"
     ],
-    correctAnswer: "c",
-    explanation: "The BrahMos missile (named after the Brahmaputra and Moskva rivers) is jointly designed, developed, and produced by India's DRDO and Russia's NPO Mashinostroyeniya.",
+    "correctAnswer": "A",
+    "explanation": "The BrahMos missile (named after the Brahmaputra and Moskva rivers) is jointly designed, developed, and produced by India's DRDO and Russia's NPO Mashinostroyeniya."
   },
   {
-    id: "c12-pol-1-mcq-18",
-    question: "At which location in Tamil Nadu has Russia been actively constructing massive civil nuclear power reactors for India?",
-    options: [
+    "id": "c12-pol-1-mcq-18",
+    "question": "At which location in Tamil Nadu has Russia been actively constructing massive civil nuclear power reactors for India?",
+    "options": [
       "A):   Kalpakkam",
-      "B):   Narora",
-      "C):   Kudankulam",
-      "D):   Tarapur",
+      "B):   Kudankulam",
+      "C):   Narora",
+      "D):   Tarapur"
     ],
-    correctAnswer: "c",
-    explanation: "Russia's Rosatom has constructed the Kudankulam Nuclear Power Plant in Tamil Nadu, with multiple 1,000 MW VVER water-water energetic reactors.",
+    "correctAnswer": "B",
+    "explanation": "Russia's Rosatom has constructed the Kudankulam Nuclear Power Plant in Tamil Nadu, with multiple 1,000 MW VVER water-water energetic reactors."
   },
   {
-    id: "c12-pol-1-mcq-19",
-    question: "Both India and Russia actively collaborate within which plurilateral institutions to champion a 'Multipolar World Order'?",
-    options: [
+    "id": "c12-pol-1-mcq-19",
+    "question": "Both India and Russia actively collaborate within which plurilateral institutions to champion a 'Multipolar World Order'?",
+    "options": [
       "A):   NATO and G7",
-      "B):   BRICS and Shanghai Cooperation Organisation (SCO)",
-      "C):   OPEC and OECD",
-      "D):   ASEAN and APEC",
+      "B):   OPEC and OECD",
+      "C):   BRICS and Shanghai Cooperation Organisation (SCO)",
+      "D):   ASEAN and APEC"
     ],
-    correctAnswer: "b",
-    explanation: "Both New Delhi and Moscow are founding leaders of BRICS and prominent members of the SCO, using these forums to promote a multipolar world order.",
+    "correctAnswer": "C",
+    "explanation": "Both New Delhi and Moscow are founding leaders of BRICS and prominent members of the SCO, using these forums to promote a multipolar world order."
   },
   {
-    id: "c12-pol-1-mcq-20",
-    question: "Consider the following statements regarding the consequences of Shock Therapy in Russia:\n1. The value of the Russian Ruble declined dramatically.\n2. The state-guaranteed social safety net was systematically dismantled.\n3. The Russian GDP surpassed the United States within three years.\nWhich of the statements given above are correct?",
-    options: [
-      "A):   1 and 2 only",
+    "id": "c12-pol-1-mcq-20",
+    "question": "Consider the following statements regarding the consequences of Shock Therapy in Russia:\n1. The value of the Russian Ruble declined dramatically.\n2. The state-guaranteed social safety net was systematically dismantled.\n3. The Russian GDP surpassed the United States within three years.\nWhich of the statements given above are correct?",
+    "options": [
+      "A):   1, 2, and 3",
       "B):   2 and 3 only",
       "C):   1 and 3 only",
-      "D):   1, 2, and 3",
+      "D):   1 and 2 only"
     ],
-    correctAnswer: "a",
-    explanation: "Statements 1 and 2 are historically correct. Statement 3 is entirely false because Russia's GDP contracted by more than 40% between 1990 and 1998 under Shock Therapy.",
-  },
+    "correctAnswer": "D",
+    "explanation": "Statements 1 and 2 are historically correct. Statement 3 is entirely false because Russia's GDP contracted by more than 40% between 1990 and 1998 under Shock Therapy."
+  }
 ];

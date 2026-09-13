@@ -573,249 +573,244 @@ export const c12Pol7HtmlSolutions = `
 /* -------------------------------------------------------------------------- */
 
 export const c12Pol7Mcqs = [
-  // Tier 1: Q1 to Q8 (Recall, dates, summits, treaties, definitions)
   {
-    id: "c12-pol-7-mcq-1",
-    question: "In which year was the historic United Nations Conference on Environment and Development (Rio Earth Summit) held?",
-    options: [
-      "A):   1972",
+    "id": "c12-pol-7-mcq-1",
+    "question": "In which year was the historic United Nations Conference on Environment and Development (Rio Earth Summit) held?",
+    "options": [
+      "A):   1992",
       "B):   1987",
-      "C):   1992",
-      "D):   2002",
+      "C):   1972",
+      "D):   2002"
     ],
-    correctAnswer: "c",
-    explanation: "The Rio Earth Summit (UNCED) was held in Rio de Janeiro, Brazil in June 1992.",
+    "correctAnswer": "A",
+    "explanation": "The Rio Earth Summit (UNCED) was held in Rio de Janeiro, Brazil in June 1992."
   },
   {
-    id: "c12-pol-7-mcq-2",
-    question: "Which landmark report published in 1987 introduced and popularized the definition of 'Sustainable Development'?",
-    options: [
+    "id": "c12-pol-7-mcq-2",
+    "question": "Which landmark report published in 1987 introduced and popularized the definition of 'Sustainable Development'?",
+    "options": [
       "A):   Limits to Growth",
       "B):   Our Common Future (Brundtland Report)",
       "C):   Agenda 21",
-      "D):   Silent Spring",
+      "D):   Silent Spring"
     ],
-    correctAnswer: "b",
-    explanation: "'Our Common Future', authored by the Brundtland Commission in 1987, defined Sustainable Development as meeting present needs without compromising future generations.",
+    "correctAnswer": "B",
+    "explanation": "'Our Common Future', authored by the Brundtland Commission in 1987, defined Sustainable Development as meeting present needs without compromising future generations."
   },
   {
-    id: "c12-pol-7-mcq-3",
-    question: "Which of the following is NOT categorized as part of the 'Global Commons'?",
-    options: [
+    "id": "c12-pol-7-mcq-3",
+    "question": "Which of the following is NOT categorized as part of the 'Global Commons'?",
+    "options": [
       "A):   The Earth's atmosphere",
       "B):   Antarctica",
       "C):   Domestic agricultural river canals",
-      "D):   Outer space",
+      "D):   Outer space"
     ],
-    correctAnswer: "c",
-    explanation: "Domestic agricultural river canals fall under sovereign national jurisdiction, whereas the Global Commons include the atmosphere, Antarctica, ocean floor, and outer space.",
+    "correctAnswer": "C",
+    "explanation": "Domestic agricultural river canals fall under sovereign national jurisdiction, whereas the Global Commons include the atmosphere, Antarctica, ocean floor, and outer space."
   },
   {
-    id: "c12-pol-7-mcq-4",
-    question: "In which year was the Montreal Protocol signed to phase out substances that deplete the ozone layer?",
-    options: [
+    "id": "c12-pol-7-mcq-4",
+    "question": "In which year was the Montreal Protocol signed to phase out substances that deplete the ozone layer?",
+    "options": [
       "A):   1959",
       "B):   1972",
-      "C):   1987",
-      "D):   1997",
+      "C):   1997",
+      "D):   1987"
     ],
-    correctAnswer: "c",
-    explanation: "The Montreal Protocol was adopted in 1987 to phase out chlorofluorocarbons (CFCs) that destroy the stratospheric ozone layer.",
+    "correctAnswer": "D",
+    "explanation": "The Montreal Protocol was adopted in 1987 to phase out chlorofluorocarbons (CFCs) that destroy the stratospheric ozone layer."
   },
   {
-    id: "c12-pol-7-mcq-5",
-    question: "The Kyoto Protocol, adopted in 1997, aimed at reducing the emissions of which category of gases?",
-    options: [
-      "A):   Tear gas and riot control agents",
-      "B):   Greenhouse gases causing global warming",
+    "id": "c12-pol-7-mcq-5",
+    "question": "The Kyoto Protocol, adopted in 1997, aimed at reducing the emissions of which category of gases?",
+    "options": [
+      "A):   Greenhouse gases causing global warming",
+      "B):   Tear gas and riot control agents",
       "C):   Inert noble gases",
-      "D):   Medical oxygen",
+      "D):   Medical oxygen"
     ],
-    correctAnswer: "b",
-    explanation: "The Kyoto Protocol mandated legally binding emission cuts for greenhouse gases (including CO2, methane, and nitrous oxide) on industrialized countries.",
+    "correctAnswer": "A",
+    "explanation": "The Kyoto Protocol mandated legally binding emission cuts for greenhouse gases (including CO2, methane, and nitrous oxide) on industrialized countries."
   },
   {
-    id: "c12-pol-7-mcq-6",
-    question: "In which year did India officially ratify the Kyoto Protocol?",
-    options: [
+    "id": "c12-pol-7-mcq-6",
+    "question": "In which year did India officially ratify the Kyoto Protocol?",
+    "options": [
       "A):   1997",
       "B):   2002",
       "C):   2010",
-      "D):   2015",
+      "D):   2015"
     ],
-    correctAnswer: "b",
-    explanation: "India ratified the Kyoto Protocol in August 2002.",
+    "correctAnswer": "B",
+    "explanation": "India ratified the Kyoto Protocol in August 2002."
   },
   {
-    id: "c12-pol-7-mcq-7",
-    question: "Where is the global headquarters of the International Solar Alliance (ISA) located?",
-    options: [
+    "id": "c12-pol-7-mcq-7",
+    "question": "Where is the global headquarters of the International Solar Alliance (ISA) located?",
+    "options": [
       "A):   Paris, France",
       "B):   Geneva, Switzerland",
       "C):   Gurugram, India",
-      "D):   Nairobi, Kenya",
+      "D):   Nairobi, Kenya"
     ],
-    correctAnswer: "c",
-    explanation: "The International Solar Alliance (ISA), launched by India and France in 2015, is headquartered in Gurugram, Haryana, India.",
+    "correctAnswer": "C",
+    "explanation": "The International Solar Alliance (ISA), launched by India and France in 2015, is headquartered in Gurugram, Haryana, India."
   },
   {
-    id: "c12-pol-7-mcq-8",
-    question: "Approximately what percentage of the world's known conventional oil reserves are located in the Persian Gulf region?",
-    options: [
+    "id": "c12-pol-7-mcq-8",
+    "question": "Approximately what percentage of the world's known conventional oil reserves are located in the Persian Gulf region?",
+    "options": [
       "A):   Around 10%",
       "B):   Around 25%",
-      "C):   Around 64%",
-      "D):   Around 95%",
+      "C):   Around 95%",
+      "D):   Around 64%"
     ],
-    correctAnswer: "c",
-    explanation: "Nearly two-thirds (roughly 64%) of known conventional petroleum reserves are located in the Persian Gulf region.",
+    "correctAnswer": "D",
+    "explanation": "Nearly two-thirds (roughly 64%) of known conventional petroleum reserves are located in the Persian Gulf region."
   },
-
-  // Tier 2: Q9 to Q15 (Concepts, CBDR, indigenous rights, oil/water politics)
   {
-    id: "c12-pol-7-mcq-9",
-    question: "What is the core meaning of Principle 7 of the Rio Declaration ('Common but Differentiated Responsibilities')?",
-    options: [
-      "A):   Developing nations must pay all climate taxes on behalf of developed countries",
-      "B):   All nations share a common duty, but developed nations bear greater responsibility due to historical emissions and greater financial capacity",
+    "id": "c12-pol-7-mcq-9",
+    "question": "What is the core meaning of Principle 7 of the Rio Declaration ('Common but Differentiated Responsibilities')?",
+    "options": [
+      "A):   All nations share a common duty, but developed nations bear greater responsibility due to historical emissions and greater financial capacity",
+      "B):   Developing nations must pay all climate taxes on behalf of developed countries",
       "C):   Only African nations are allowed to consume fossil fuels",
-      "D):   All environmental treaties must be drafted exclusively in English",
+      "D):   All environmental treaties must be drafted exclusively in English"
     ],
-    correctAnswer: "b",
-    explanation: "CBDR establishes that all states share common ecological responsibility, but developed countries must lead cuts because of their historic role in creating pollution.",
+    "correctAnswer": "A",
+    "explanation": "CBDR establishes that all states share common ecological responsibility, but developed countries must lead cuts because of their historic role in creating pollution."
   },
   {
-    id: "c12-pol-7-mcq-10",
-    question: "Why does India advocate that global climate agreements must be judged on 'Per Capita' emission terms?",
-    options: [
+    "id": "c12-pol-7-mcq-10",
+    "question": "Why does India advocate that global climate agreements must be judged on 'Per Capita' emission terms?",
+    "options": [
       "A):   Because India wants to avoid any form of environmental conservation",
       "B):   Because India's per capita emissions are less than half the world average and far below Western developed countries",
       "C):   Because the UN Charter forbids total aggregate emission measurements",
-      "D):   Because India produces no agricultural carbon emissions",
+      "D):   Because India produces no agricultural carbon emissions"
     ],
-    correctAnswer: "b",
-    explanation: "India's per capita carbon emissions (~1.8 tonnes) are less than half the global average and a fraction of the US (~16 tonnes), making per capita equity the only just metric.",
+    "correctAnswer": "B",
+    "explanation": "India's per capita carbon emissions (~1.8 tonnes) are less than half the global average and a fraction of the US (~16 tonnes), making per capita equity the only just metric."
   },
   {
-    id: "c12-pol-7-mcq-11",
-    question: "Which of the following international treaties demilitarized the Antarctic continent and dedicated it exclusively to scientific research?",
-    options: [
-      "A):   The Antarctic Treaty (1959)",
+    "id": "c12-pol-7-mcq-11",
+    "question": "Which of the following international treaties demilitarized the Antarctic continent and dedicated it exclusively to scientific research?",
+    "options": [
+      "A):   The Kyoto Protocol (1997)",
       "B):   The Warsaw Pact (1955)",
-      "C):   The Kyoto Protocol (1997)",
-      "D):   The Paris Agreement (2015)",
+      "C):   The Antarctic Treaty (1959)",
+      "D):   The Paris Agreement (2015)"
     ],
-    correctAnswer: "a",
-    explanation: "The 1959 Antarctic Treaty established Antarctica as a peaceful, demilitarized scientific reserve free from military bases and mineral exploitation.",
+    "correctAnswer": "C",
+    "explanation": "The 1959 Antarctic Treaty established Antarctica as a peaceful, demilitarized scientific reserve free from military bases and mineral exploitation."
   },
   {
-    id: "c12-pol-7-mcq-12",
-    question: "In which year did India launch its National Action Plan on Climate Change (NAPCC) comprising eight national missions?",
-    options: [
+    "id": "c12-pol-7-mcq-12",
+    "question": "In which year did India launch its National Action Plan on Climate Change (NAPCC) comprising eight national missions?",
+    "options": [
       "A):   1992",
       "B):   2000",
-      "C):   2008",
-      "D):   2020",
+      "C):   2020",
+      "D):   2008"
     ],
-    correctAnswer: "c",
-    explanation: "The Government of India launched the National Action Plan on Climate Change (NAPCC) in 2008.",
+    "correctAnswer": "D",
+    "explanation": "The Government of India launched the National Action Plan on Climate Change (NAPCC) in 2008."
   },
   {
-    id: "c12-pol-7-mcq-13",
-    question: "The construction of the Grand Ethiopian Renaissance Dam (GERD) on the Blue Nile has caused acute geopolitical disputes with which downstream countries?",
-    options: [
-      "A):   South Africa and Nigeria",
-      "B):   Egypt and Sudan",
+    "id": "c12-pol-7-mcq-13",
+    "question": "The construction of the Grand Ethiopian Renaissance Dam (GERD) on the Blue Nile has caused acute geopolitical disputes with which downstream countries?",
+    "options": [
+      "A):   Egypt and Sudan",
+      "B):   South Africa and Nigeria",
       "C):   Kenya and Tanzania",
-      "D):   Ghana and Senegal",
+      "D):   Ghana and Senegal"
     ],
-    correctAnswer: "b",
-    explanation: "Ethiopia's mega-dam on the Blue Nile has created major geopolitical tensions with downstream Sudan and Egypt, who depend on the Nile for their water supply.",
+    "correctAnswer": "A",
+    "explanation": "Ethiopia's mega-dam on the Blue Nile has created major geopolitical tensions with downstream Sudan and Egypt, who depend on the Nile for their water supply."
   },
   {
-    id: "c12-pol-7-mcq-14",
-    question: "Which legislation was enacted in India in 2006 to recognize the ancestral land and minor forest produce rights of forest-dwelling tribal communities?",
-    options: [
+    "id": "c12-pol-7-mcq-14",
+    "question": "Which legislation was enacted in India in 2006 to recognize the ancestral land and minor forest produce rights of forest-dwelling tribal communities?",
+    "options": [
       "A):   Wild Life Protection Act",
       "B):   Forest Rights Act (FRA)",
       "C):   Environment Protection Act",
-      "D):   Mines and Minerals Act",
+      "D):   Mines and Minerals Act"
     ],
-    correctAnswer: "b",
-    explanation: "The Scheduled Tribes and Other Traditional Forest Dwellers (Recognition of Forest Rights) Act, or FRA 2006, restored ancestral land and forest produce rights to Adivasis.",
+    "correctAnswer": "B",
+    "explanation": "The Scheduled Tribes and Other Traditional Forest Dwellers (Recognition of Forest Rights) Act, or FRA 2006, restored ancestral land and forest produce rights to Adivasis."
   },
   {
-    id: "c12-pol-7-mcq-15",
-    question: "At the COP26 summit in Glasgow (2021), India announced its target to achieve Net Zero carbon emissions by which year?",
-    options: [
+    "id": "c12-pol-7-mcq-15",
+    "question": "At the COP26 summit in Glasgow (2021), India announced its target to achieve Net Zero carbon emissions by which year?",
+    "options": [
       "A):   2030",
       "B):   2047",
-      "C):   2050",
-      "D):   2070",
+      "C):   2070",
+      "D):   2050"
     ],
-    correctAnswer: "d",
-    explanation: "Under the Panchamrit commitments announced at COP26 Glasgow in 2021, India pledged to achieve Net Zero carbon emissions by the year 2070.",
+    "correctAnswer": "C",
+    "explanation": "Under the Panchamrit commitments announced at COP26 Glasgow in 2021, India pledged to achieve Net Zero carbon emissions by the year 2070."
   },
-
-  // Tier 3: Q16 to Q20 (Analytical, Assertion-Reason, comparative questions)
   {
-    id: "c12-pol-7-mcq-16",
-    question: "Assertion (A): The Rio Earth Summit of 1992 marked the acceptance of the principle of 'Common but Differentiated Responsibilities' (CBDR).\nReason (R): Developed nations acknowledged that their two centuries of industrialization caused the vast majority of historical greenhouse gas emissions.",
-    options: [
-      "A):   Both A and R are true, and R is the correct explanation of A",
+    "id": "c12-pol-7-mcq-16",
+    "question": "Assertion (A): The Rio Earth Summit of 1992 marked the acceptance of the principle of 'Common but Differentiated Responsibilities' (CBDR).\nReason (R): Developed nations acknowledged that their two centuries of industrialization caused the vast majority of historical greenhouse gas emissions.",
+    "options": [
+      "A):   A is false, but R is true",
       "B):   Both A and R are true, but R is not the correct explanation of A",
       "C):   A is true, but R is false",
-      "D):   A is false, but R is true",
+      "D):   Both A and R are true, and R is the correct explanation of A"
     ],
-    correctAnswer: "a",
-    explanation: "Both statements are correct. CBDR was formulated precisely because the historical responsibility for carbon accumulation rests predominantly with developed Western nations.",
+    "correctAnswer": "D",
+    "explanation": "Both statements are correct. CBDR was formulated precisely because the historical responsibility for carbon accumulation rests predominantly with developed Western nations."
   },
   {
-    id: "c12-pol-7-mcq-17",
-    question: "Consider the following statements regarding the Global Commons:\n1. The Antarctic Treaty of 1959 bans military activity and nuclear explosions on Antarctica.\n2. The 1987 Montreal Protocol was designed to regulate deep-sea petroleum drilling.\nWhich of the statements is/are correct?",
-    options: [
+    "id": "c12-pol-7-mcq-17",
+    "question": "Consider the following statements regarding the Global Commons:\n1. The Antarctic Treaty of 1959 bans military activity and nuclear explosions on Antarctica.\n2. The 1987 Montreal Protocol was designed to regulate deep-sea petroleum drilling.\nWhich of the statements is/are correct?",
+    "options": [
       "A):   1 only",
       "B):   2 only",
       "C):   Both 1 and 2",
-      "D):   Neither 1 nor 2",
+      "D):   Neither 1 nor 2"
     ],
-    correctAnswer: "a",
-    explanation: "Statement 1 is correct. Statement 2 is false because the Montreal Protocol was enacted to protect the stratospheric ozone layer by phasing out CFCs.",
+    "correctAnswer": "A",
+    "explanation": "Statement 1 is correct. Statement 2 is false because the Montreal Protocol was enacted to protect the stratospheric ozone layer by phasing out CFCs."
   },
   {
-    id: "c12-pol-7-mcq-18",
-    question: "Why was the 1997 Kyoto Protocol criticized by some conservative politicians in the United States?",
-    options: [
+    "id": "c12-pol-7-mcq-18",
+    "question": "Why was the 1997 Kyoto Protocol criticized by some conservative politicians in the United States?",
+    "options": [
       "A):   Because it banned all automobiles in North America",
       "B):   Because it imposed legally binding cuts on developed countries while exempting developing nations like India and China in its first phase",
       "C):   Because it mandated that the UN headquarters be moved to Tokyo",
-      "D):   Because it dissolved the World Bank",
+      "D):   Because it dissolved the World Bank"
     ],
-    correctAnswer: "b",
-    explanation: "US critics opposed the Kyoto Protocol because it exempted developing economies like India and China, even though CBDR justified this differentiation on historical grounds.",
+    "correctAnswer": "B",
+    "explanation": "US critics opposed the Kyoto Protocol because it exempted developing economies like India and China, even though CBDR justified this differentiation on historical grounds."
   },
   {
-    id: "c12-pol-7-mcq-19",
-    question: "What is the primary significance of the UN Declaration on the Rights of Indigenous Peoples (UNDRIP) adopted in 2007?",
-    options: [
-      "A):   It affirms indigenous rights to self-determination, traditional lands, and free, prior, and informed consent (FPIC)",
+    "id": "c12-pol-7-mcq-19",
+    "question": "What is the primary significance of the UN Declaration on the Rights of Indigenous Peoples (UNDRIP) adopted in 2007?",
+    "options": [
+      "A):   It grants all mineral mining licenses to foreign multinationals unconditionally",
       "B):   It mandates that indigenous peoples must abandon their native dialects",
-      "C):   It grants all mineral mining licenses to foreign multinationals unconditionally",
-      "D):   It eliminates all national borders across South America",
+      "C):   It affirms indigenous rights to self-determination, traditional lands, and free, prior, and informed consent (FPIC)",
+      "D):   It eliminates all national borders across South America"
     ],
-    correctAnswer: "a",
-    explanation: "UNDRIP is a milestone human rights instrument recognizing the collective rights of indigenous peoples to self-determination, ancestral territories, and prior consent.",
+    "correctAnswer": "C",
+    "explanation": "UNDRIP is a milestone human rights instrument recognizing the collective rights of indigenous peoples to self-determination, ancestral territories, and prior consent."
   },
   {
-    id: "c12-pol-7-mcq-20",
-    question: "Which of the following is NOT one of the eight national missions under India's National Action Plan on Climate Change (NAPCC)?",
-    options: [
+    "id": "c12-pol-7-mcq-20",
+    "question": "Which of the following is NOT one of the eight national missions under India's National Action Plan on Climate Change (NAPCC)?",
+    "options": [
       "A):   National Solar Mission",
       "B):   National Mission for Enhanced Energy Efficiency",
-      "C):   National Mission on Deep Sea Coal Mining",
-      "D):   National Mission for a Green India",
+      "C):   National Mission for a Green India",
+      "D):   National Mission on Deep Sea Coal Mining"
     ],
-    correctAnswer: "c",
-    explanation: "Deep sea coal mining is completely contrary to climate action; the NAPCC focuses on clean solar power, energy efficiency, sustainable habitats, water, and green afforestation.",
-  },
+    "correctAnswer": "D",
+    "explanation": "Deep sea coal mining is completely contrary to climate action; the NAPCC focuses on clean solar power, energy efficiency, sustainable habitats, water, and green afforestation."
+  }
 ];

@@ -668,249 +668,244 @@ export const c12Pol2HtmlSolutions = `
 /* -------------------------------------------------------------------------- */
 
 export const c12Pol2Mcqs = [
-  // --- TIER 1: BASIC & RECALL (Q1 to Q8) ---
   {
-    id: "c12-pol-2-mcq-1",
-    question: "Under which historic program did the United States extend massive financial aid to revive Western European economies after World War II in 1948?",
-    options: [
-      "A):   Truman Plan",
-      "B):   Marshall Plan",
+    "id": "c12-pol-2-mcq-1",
+    "question": "Under which historic program did the United States extend massive financial aid to revive Western European economies after World War II in 1948?",
+    "options": [
+      "A):   Marshall Plan",
+      "B):   Truman Plan",
       "C):   Eisenhower Doctrine",
-      "D):   Molotov Plan",
+      "D):   Molotov Plan"
     ],
-    correctAnswer: "b",
-    explanation: "Under the Marshall Plan (1948), the United States provided over $13 billion in economic assistance to rebuild Western European nations.",
+    "correctAnswer": "A",
+    "explanation": "Under the Marshall Plan (1948), the United States provided over $13 billion in economic assistance to rebuild Western European nations."
   },
   {
-    id: "c12-pol-2-mcq-2",
-    question: "In which year and through which historic treaty was the European Union (EU) formally established?",
-    options: [
+    "id": "c12-pol-2-mcq-2",
+    "question": "In which year and through which historic treaty was the European Union (EU) formally established?",
+    "options": [
       "A):   1957 by Treaty of Rome",
       "B):   1992 by Maastricht Treaty",
       "C):   1985 by Schengen Agreement",
-      "D):   2007 by Lisbon Treaty",
+      "D):   2007 by Lisbon Treaty"
     ],
-    correctAnswer: "b",
-    explanation: "The European Union was formally established on February 7, 1992 through the signing of the Maastricht Treaty in the Netherlands.",
+    "correctAnswer": "B",
+    "explanation": "The European Union was formally established on February 7, 1992 through the signing of the Maastricht Treaty in the Netherlands."
   },
   {
-    id: "c12-pol-2-mcq-3",
-    question: "The common currency of the European Union, the Euro (€), was officially introduced in circulation in which year?",
-    options: [
+    "id": "c12-pol-2-mcq-3",
+    "question": "The common currency of the European Union, the Euro (€), was officially introduced in circulation in which year?",
+    "options": [
       "A):   1995",
       "B):   1999",
       "C):   2002",
-      "D):   2005",
+      "D):   2005"
     ],
-    correctAnswer: "c",
-    explanation: "The Euro notes and coins were officially introduced into circulation across 12 EU member nations in January 2002.",
+    "correctAnswer": "C",
+    "explanation": "The Euro notes and coins were officially introduced into circulation across 12 EU member nations in January 2002."
   },
   {
-    id: "c12-pol-2-mcq-4",
-    question: "In which year and city was ASEAN established by five founding nations through the signing of a landmark declaration?",
-    options: [
+    "id": "c12-pol-2-mcq-4",
+    "question": "In which year and city was ASEAN established by five founding nations through the signing of a landmark declaration?",
+    "options": [
       "A):   1965 in Jakarta",
-      "B):   1967 in Bangkok",
+      "B):   1975 in Singapore",
       "C):   1971 in Manila",
-      "D):   1975 in Singapore",
+      "D):   1967 in Bangkok"
     ],
-    correctAnswer: "b",
-    explanation: "ASEAN was founded on August 8, 1967 in Bangkok, Thailand, through the signing of the Bangkok Declaration.",
+    "correctAnswer": "D",
+    "explanation": "ASEAN was founded on August 8, 1967 in Bangkok, Thailand, through the signing of the Bangkok Declaration."
   },
   {
-    id: "c12-pol-2-mcq-5",
-    question: "Which of the following nations was NOT one of the five founding members of ASEAN in 1967?",
-    options: [
-      "A):   Indonesia",
-      "B):   Vietnam",
+    "id": "c12-pol-2-mcq-5",
+    "question": "Which of the following nations was NOT one of the five founding members of ASEAN in 1967?",
+    "options": [
+      "A):   Vietnam",
+      "B):   Indonesia",
       "C):   Malaysia",
-      "D):   Thailand",
+      "D):   Thailand"
     ],
-    correctAnswer: "b",
-    explanation: "Vietnam joined ASEAN much later in 1995. The five founding members were Indonesia, Malaysia, Philippines, Singapore, and Thailand.",
+    "correctAnswer": "A",
+    "explanation": "Vietnam joined ASEAN much later in 1995. The five founding members were Indonesia, Malaysia, Philippines, Singapore, and Thailand."
   },
   {
-    id: "c12-pol-2-mcq-6",
-    question: "Which Chinese premier announced the 'Four Modernizations' in agriculture, industry, defence, and science & technology in 1973?",
-    options: [
+    "id": "c12-pol-2-mcq-6",
+    "question": "Which Chinese premier announced the 'Four Modernizations' in agriculture, industry, defence, and science & technology in 1973?",
+    "options": [
       "A):   Mao Zedong",
       "B):   Zhou Enlai",
       "C):   Deng Xiaoping",
-      "D):   Jiang Zemin",
+      "D):   Jiang Zemin"
     ],
-    correctAnswer: "b",
-    explanation: "Premier Zhou Enlai proposed the Four Modernizations in 1973, which were later vigorously implemented by Deng Xiaoping.",
+    "correctAnswer": "B",
+    "explanation": "Premier Zhou Enlai proposed the Four Modernizations in 1973, which were later vigorously implemented by Deng Xiaoping."
   },
   {
-    id: "c12-pol-2-mcq-7",
-    question: "Who was the paramount Chinese leader who announced the revolutionary 'Open Door Policy' in December 1978?",
-    options: [
+    "id": "c12-pol-2-mcq-7",
+    "question": "Who was the paramount Chinese leader who announced the revolutionary 'Open Door Policy' in December 1978?",
+    "options": [
       "A):   Hua Guofeng",
-      "B):   Deng Xiaoping",
-      "C):   Hu Jintao",
-      "D):   Xi Jinping",
+      "B):   Hu Jintao",
+      "C):   Deng Xiaoping",
+      "D):   Xi Jinping"
     ],
-    correctAnswer: "b",
-    explanation: "Deng Xiaoping announced China's Open Door Policy in December 1978, inviting foreign capital, technology, and private enterprise.",
+    "correctAnswer": "C",
+    "explanation": "Deng Xiaoping announced China's Open Door Policy in December 1978, inviting foreign capital, technology, and private enterprise."
   },
   {
-    id: "c12-pol-2-mcq-8",
-    question: "On which date was the historic Panchsheel Agreement signed between India and China regarding Tibet?",
-    options: [
+    "id": "c12-pol-2-mcq-8",
+    "question": "On which date was the historic Panchsheel Agreement signed between India and China regarding Tibet?",
+    "options": [
       "A):   August 15, 1947",
-      "B):   April 29, 1954",
+      "B):   October 20, 1962",
       "C):   January 26, 1950",
-      "D):   October 20, 1962",
+      "D):   April 29, 1954"
     ],
-    correctAnswer: "b",
-    explanation: "The Panchsheel Agreement (Five Principles of Peaceful Coexistence) was signed on April 29, 1954 by Jawaharlal Nehru and Zhou Enlai.",
+    "correctAnswer": "D",
+    "explanation": "The Panchsheel Agreement (Five Principles of Peaceful Coexistence) was signed on April 29, 1954 by Jawaharlal Nehru and Zhou Enlai."
   },
-
-  // --- TIER 2: CONCEPTUAL & COMPARATIVE (Q9 to Q15) ---
   {
-    id: "c12-pol-2-mcq-9",
-    question: "What does the diplomatic term 'The ASEAN Way' fundamentally signify in international relations?",
-    options: [
-      "A):   A military pact to suppress communist insurgencies",
-      "B):   An informal, consensual, and non-confrontational style of diplomatic interaction",
+    "id": "c12-pol-2-mcq-9",
+    "question": "What does the diplomatic term 'The ASEAN Way' fundamentally signify in international relations?",
+    "options": [
+      "A):   An informal, consensual, and non-confrontational style of diplomatic interaction",
+      "B):   A military pact to suppress communist insurgencies",
       "C):   A strict legal system enforceable by a supranational court",
-      "D):   A joint regional currency across Southeast Asia",
+      "D):   A joint regional currency across Southeast Asia"
     ],
-    correctAnswer: "b",
-    explanation: "'The ASEAN Way' refers to an informal, consensual, non-confrontational diplomatic process that respects national sovereignty and non-interference.",
+    "correctAnswer": "A",
+    "explanation": "'The ASEAN Way' refers to an informal, consensual, non-confrontational diplomatic process that respects national sovereignty and non-interference."
   },
   {
-    id: "c12-pol-2-mcq-10",
-    question: "The ASEAN Regional Forum (ARF), established in 1994, is primarily tasked with which responsibility?",
-    options: [
+    "id": "c12-pol-2-mcq-10",
+    "question": "The ASEAN Regional Forum (ARF), established in 1994, is primarily tasked with which responsibility?",
+    "options": [
       "A):   Imposing international economic sanctions",
       "B):   Conducting security dialogues and consultations among major powers",
       "C):   Regulating deep-sea commercial fishing quotas",
-      "D):   Managing religious tourism in Southeast Asia",
+      "D):   Managing religious tourism in Southeast Asia"
     ],
-    correctAnswer: "b",
-    explanation: "The ARF (established in 1994) is the premier regional forum for security dialogues, bringing world powers including the US, China, and India to the table.",
+    "correctAnswer": "B",
+    "explanation": "The ARF (established in 1994) is the premier regional forum for security dialogues, bringing world powers including the US, China, and India to the table."
   },
   {
-    id: "c12-pol-2-mcq-11",
-    question: "At which historic summit was the agreement to establish the Three Pillars of the ASEAN Community (Bali Concord II) adopted?",
-    options: [
+    "id": "c12-pol-2-mcq-11",
+    "question": "At which historic summit was the agreement to establish the Three Pillars of the ASEAN Community (Bali Concord II) adopted?",
+    "options": [
       "A):   Kuala Lumpur Summit 1977",
-      "B):   Bali Summit 2003",
-      "C):   Singapore Summit 1992",
-      "D):   Hanoi Summit 1998",
+      "B):   Singapore Summit 1992",
+      "C):   Bali Summit 2003",
+      "D):   Hanoi Summit 1998"
     ],
-    correctAnswer: "b",
-    explanation: "The Three Pillars (Security, Economic, and Socio-Cultural) were established at the Ninth ASEAN Summit in Bali, Indonesia, in October 2003.",
+    "correctAnswer": "C",
+    "explanation": "The Three Pillars (Security, Economic, and Socio-Cultural) were established at the Ninth ASEAN Summit in Bali, Indonesia, in October 2003."
   },
   {
-    id: "c12-pol-2-mcq-12",
-    question: "How did China's transition to a market-driven economy differ fundamentally from the Russian 'Shock Therapy' model?",
-    options: [
+    "id": "c12-pol-2-mcq-12",
+    "question": "How did China's transition to a market-driven economy differ fundamentally from the Russian 'Shock Therapy' model?",
+    "options": [
       "A):   China abolished private property completely in 1978",
-      "B):   China privatized its economy gradually in phased stages rather than abruptly",
+      "B):   China destroyed its state-owned industrial enterprises overnight",
       "C):   China accepted direct structural loans from the IMF",
-      "D):   China destroyed its state-owned industrial enterprises overnight",
+      "D):   China privatized its economy gradually in phased stages rather than abruptly"
     ],
-    correctAnswer: "b",
-    explanation: "China rejected Shock Therapy, opening its economy step-by-step: agriculture in 1982, industry in 1998, and full global integration in 2001.",
+    "correctAnswer": "D",
+    "explanation": "China rejected Shock Therapy, opening its economy step-by-step: agriculture in 1982, industry in 1998, and full global integration in 2001."
   },
   {
-    id: "c12-pol-2-mcq-13",
-    question: "Which Chinese paramount leader famously remarked: 'It doesn't matter whether a cat is black or white, as long as it catches mice'?",
-    options: [
-      "A):   Mao Zedong",
-      "B):   Deng Xiaoping",
+    "id": "c12-pol-2-mcq-13",
+    "question": "Which Chinese paramount leader famously remarked: 'It doesn't matter whether a cat is black or white, as long as it catches mice'?",
+    "options": [
+      "A):   Deng Xiaoping",
+      "B):   Mao Zedong",
       "C):   Sun Yat-sen",
-      "D):   Lin Biao",
+      "D):   Lin Biao"
     ],
-    correctAnswer: "b",
-    explanation: "Deng Xiaoping used this famous pragmatic maxim to justify adopting capitalist market mechanisms within a socialist political framework.",
+    "correctAnswer": "A",
+    "explanation": "Deng Xiaoping used this famous pragmatic maxim to justify adopting capitalist market mechanisms within a socialist political framework."
   },
   {
-    id: "c12-pol-2-mcq-14",
-    question: "In which year did the People's Republic of China formally become a member of the World Trade Organization (WTO)?",
-    options: [
+    "id": "c12-pol-2-mcq-14",
+    "question": "In which year did the People's Republic of China formally become a member of the World Trade Organization (WTO)?",
+    "options": [
       "A):   1991",
-      "B):   1995",
-      "C):   2001",
-      "D):   2008",
+      "B):   2001",
+      "C):   1995",
+      "D):   2008"
     ],
-    correctAnswer: "c",
-    explanation: "China formally joined the WTO in December 2001, integrating its massive manufacturing industry into global international supply chains.",
+    "correctAnswer": "B",
+    "explanation": "China formally joined the WTO in December 2001, integrating its massive manufacturing industry into global international supply chains."
   },
   {
-    id: "c12-pol-2-mcq-15",
-    question: "In which year did the United Kingdom formally exit the European Union following a historic referendum, an event known as 'Brexit'?",
-    options: [
+    "id": "c12-pol-2-mcq-15",
+    "question": "In which year did the United Kingdom formally exit the European Union following a historic referendum, an event known as 'Brexit'?",
+    "options": [
       "A):   2014",
       "B):   2016",
       "C):   2020",
-      "D):   2022",
+      "D):   2022"
     ],
-    correctAnswer: "c",
-    explanation: "Although the British electorate voted for Brexit in June 2016, the UK formally departed from the European Union on January 31, 2020.",
+    "correctAnswer": "C",
+    "explanation": "Although the British electorate voted for Brexit in June 2016, the UK formally departed from the European Union on January 31, 2020."
   },
-
-  // --- TIER 3: ANALYTICAL & SINO-INDIAN TIES (Q16 to Q20) ---
   {
-    id: "c12-pol-2-mcq-16",
-    question: "The historic 1988 diplomatic visit by which Indian Prime Minister achieved a major breakthrough in normalizing Sino-Indian relations?",
-    options: [
+    "id": "c12-pol-2-mcq-16",
+    "question": "The historic 1988 diplomatic visit by which Indian Prime Minister achieved a major breakthrough in normalizing Sino-Indian relations?",
+    "options": [
       "A):   Indira Gandhi",
-      "B):   Rajiv Gandhi",
+      "B):   Atal Bihari Vajpayee",
       "C):   P.V. Narasimha Rao",
-      "D):   Atal Bihari Vajpayee",
+      "D):   Rajiv Gandhi"
     ],
-    correctAnswer: "b",
-    explanation: "Prime Minister Rajiv Gandhi's visit to Beijing in December 1988 was the first by an Indian Prime Minister in 34 years, establishing joint border working groups.",
+    "correctAnswer": "D",
+    "explanation": "Prime Minister Rajiv Gandhi's visit to Beijing in December 1988 was the first by an Indian Prime Minister in 34 years, establishing joint border working groups."
   },
   {
-    id: "c12-pol-2-mcq-17",
-    question: "In 1993, India and China signed an agreement to maintain peace and tranquillity along which demarcated boundary interface?",
-    options: [
-      "A):   Radcliffe Line",
+    "id": "c12-pol-2-mcq-17",
+    "question": "In 1993, India and China signed an agreement to maintain peace and tranquillity along which demarcated boundary interface?",
+    "options": [
+      "A):   Line of Actual Control (LAC)",
       "B):   Line of Control (LoC)",
-      "C):   Line of Actual Control (LAC)",
-      "D):   Durand Line",
+      "C):   Radcliffe Line",
+      "D):   Durand Line"
     ],
-    correctAnswer: "c",
-    explanation: "In September 1993, India and China signed the landmark Agreement on the Maintenance of Peace and Tranquillity along the Line of Actual Control (LAC).",
+    "correctAnswer": "A",
+    "explanation": "In September 1993, India and China signed the landmark Agreement on the Maintenance of Peace and Tranquillity along the Line of Actual Control (LAC)."
   },
   {
-    id: "c12-pol-2-mcq-18",
-    question: "In June 2020, a deadly violent clash between Indian and Chinese armed forces took place at which flashpoint in Eastern Ladakh?",
-    options: [
+    "id": "c12-pol-2-mcq-18",
+    "question": "In June 2020, a deadly violent clash between Indian and Chinese armed forces took place at which flashpoint in Eastern Ladakh?",
+    "options": [
       "A):   Doklam Plateau",
       "B):   Galwan Valley",
       "C):   Nathu La Pass",
-      "D):   Depsang Plains",
+      "D):   Depsang Plains"
     ],
-    correctAnswer: "b",
-    explanation: "The violent physical clash occurred in Galwan Valley in Eastern Ladakh on June 15, 2020, resulting in the loss of 20 Indian bravehearts.",
+    "correctAnswer": "B",
+    "explanation": "The violent physical clash occurred in Galwan Valley in Eastern Ladakh on June 15, 2020, resulting in the loss of 20 Indian bravehearts."
   },
   {
-    id: "c12-pol-2-mcq-19",
-    question: "India upgraded its 1991 'Look East Policy' to the proactive 'Act East Policy' in which year under Prime Minister Narendra Modi?",
-    options: [
+    "id": "c12-pol-2-mcq-19",
+    "question": "India upgraded its 1991 'Look East Policy' to the proactive 'Act East Policy' in which year under Prime Minister Narendra Modi?",
+    "options": [
       "A):   2004",
       "B):   2009",
       "C):   2014",
-      "D):   2019",
+      "D):   2019"
     ],
-    correctAnswer: "c",
-    explanation: "The 'Act East Policy' was announced in November 2014 at the East Asia Summit to accelerate economic, strategic, and cultural ties with ASEAN.",
+    "correctAnswer": "C",
+    "explanation": "The 'Act East Policy' was announced in November 2014 at the East Asia Summit to accelerate economic, strategic, and cultural ties with ASEAN."
   },
   {
-    id: "c12-pol-2-mcq-20",
-    question: "Consider the following statements regarding the European Union:\n1. France holds a permanent veto-bearing seat in the UN Security Council.\n2. The European Union adopted a common European Constitution in 2005 without opposition.\n3. The Euro serves as a major alternative reserve currency to the US Dollar.\nWhich of the statements given above are correct?",
-    options: [
+    "id": "c12-pol-2-mcq-20",
+    "question": "Consider the following statements regarding the European Union:\n1. France holds a permanent veto-bearing seat in the UN Security Council.\n2. The European Union adopted a common European Constitution in 2005 without opposition.\n3. The Euro serves as a major alternative reserve currency to the US Dollar.\nWhich of the statements given above are correct?",
+    "options": [
       "A):   1 and 2 only",
-      "B):   1 and 3 only",
+      "B):   1, 2, and 3",
       "C):   2 and 3 only",
-      "D):   1, 2, and 3",
+      "D):   1 and 3 only"
     ],
-    correctAnswer: "b",
-    explanation: "Statements 1 and 3 are correct. Statement 2 is incorrect because the proposed European Constitution was defeated and rejected by voters in France and the Netherlands in 2005.",
-  },
+    "correctAnswer": "D",
+    "explanation": "Statements 1 and 3 are correct. Statement 2 is incorrect because the proposed European Constitution was defeated and rejected by voters in France and the Netherlands in 2005."
+  }
 ];

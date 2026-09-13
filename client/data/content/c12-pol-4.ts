@@ -718,249 +718,244 @@ export const c12Pol4HtmlSolutions = `
 /* -------------------------------------------------------------------------- */
 
 export const c12Pol4Mcqs = [
-  // Tier 1: Q1 to Q8 (Direct recall, dates, charters, headquarters, founding facts)
   {
-    id: "c12-pol-4-mcq-1",
-    question: "On which date did the United Nations officially come into existence following the ratification of its Charter?",
-    options: [
+    "id": "c12-pol-4-mcq-1",
+    "question": "On which date did the United Nations officially come into existence following the ratification of its Charter?",
+    "options": [
       "A):   24th October 1945",
       "B):   15th August 1947",
       "C):   10th December 1948",
-      "D):   26th January 1950",
+      "D):   26th January 1950"
     ],
-    correctAnswer: "a",
-    explanation: "The UN Charter was ratified by the five permanent members and a majority of signatories on 24 October 1945, which is celebrated globally each year as United Nations Day.",
+    "correctAnswer": "A",
+    "explanation": "The UN Charter was ratified by the five permanent members and a majority of signatories on 24 October 1945, which is celebrated globally each year as United Nations Day."
   },
   {
-    id: "c12-pol-4-mcq-2",
-    question: "Where is the international headquarters of the United Nations located?",
-    options: [
+    "id": "c12-pol-4-mcq-2",
+    "question": "Where is the international headquarters of the United Nations located?",
+    "options": [
       "A):   Geneva, Switzerland",
       "B):   New York City, USA",
       "C):   The Hague, Netherlands",
-      "D):   Paris, France",
+      "D):   Paris, France"
     ],
-    correctAnswer: "b",
-    explanation: "The principal headquarters of the United Nations is situated along the East River in New York City, USA.",
+    "correctAnswer": "B",
+    "explanation": "The principal headquarters of the United Nations is situated along the East River in New York City, USA."
   },
   {
-    id: "c12-pol-4-mcq-3",
-    question: "How many nations were original founding signatories of the UN Charter at the San Francisco Conference?",
-    options: [
+    "id": "c12-pol-4-mcq-3",
+    "question": "How many nations were original founding signatories of the UN Charter at the San Francisco Conference?",
+    "options": [
       "A):   26 nations",
       "B):   45 nations",
       "C):   51 nations",
-      "D):   193 nations",
+      "D):   193 nations"
     ],
-    correctAnswer: "c",
-    explanation: "50 nations signed the Charter at the San Francisco Conference in June 1945, and Poland signed shortly afterward as the 51st founding member.",
+    "correctAnswer": "C",
+    "explanation": "50 nations signed the Charter at the San Francisco Conference in June 1945, and Poland signed shortly afterward as the 51st founding member."
   },
   {
-    id: "c12-pol-4-mcq-4",
-    question: "On which date did India officially join the United Nations as an original founding member?",
-    options: [
+    "id": "c12-pol-4-mcq-4",
+    "question": "On which date did India officially join the United Nations as an original founding member?",
+    "options": [
       "A):   24th October 1945",
-      "B):   30th October 1945",
+      "B):   26th January 1950",
       "C):   15th August 1947",
-      "D):   26th January 1950",
+      "D):   30th October 1945"
     ],
-    correctAnswer: "b",
-    explanation: "India signed the UN Charter on 26 October 1945 and formally became a member state of the United Nations on 30 October 1945.",
+    "correctAnswer": "D",
+    "explanation": "India signed the UN Charter on 26 October 1945 and formally became a member state of the United Nations on 30 October 1945."
   },
   {
-    id: "c12-pol-4-mcq-5",
-    question: "Which organ of the United Nations had its operations formally suspended in 1994 after the independence of Palau?",
-    options: [
-      "A):   Economic and Social Council",
-      "B):   Trusteeship Council",
+    "id": "c12-pol-4-mcq-5",
+    "question": "Which organ of the United Nations had its operations formally suspended in 1994 after the independence of Palau?",
+    "options": [
+      "A):   Trusteeship Council",
+      "B):   Economic and Social Council",
       "C):   International Court of Justice",
-      "D):   Secretariat",
+      "D):   Secretariat"
     ],
-    correctAnswer: "b",
-    explanation: "The Trusteeship Council suspended its operations on 1 November 1994 following the independence of Palau, the last remaining United Nations trust territory.",
+    "correctAnswer": "A",
+    "explanation": "The Trusteeship Council suspended its operations on 1 November 1994 following the independence of Palau, the last remaining United Nations trust territory."
   },
   {
-    id: "c12-pol-4-mcq-6",
-    question: "How many non-permanent members currently serve on the United Nations Security Council, and what is their term of office?",
-    options: [
+    "id": "c12-pol-4-mcq-6",
+    "question": "How many non-permanent members currently serve on the United Nations Security Council, and what is their term of office?",
+    "options": [
       "A):   5 members elected for 3 years",
       "B):   10 members elected for 2 years",
       "C):   15 members elected for 1 year",
-      "D):   10 members elected for 5 years",
+      "D):   10 members elected for 5 years"
     ],
-    correctAnswer: "b",
-    explanation: "The Security Council consists of 10 non-permanent members elected by the General Assembly for staggered two-year terms without immediate re-election.",
+    "correctAnswer": "B",
+    "explanation": "The Security Council consists of 10 non-permanent members elected by the General Assembly for staggered two-year terms without immediate re-election."
   },
   {
-    id: "c12-pol-4-mcq-7",
-    question: "Where is the seat of the International Court of Justice (ICJ) located?",
-    options: [
-      "A):   The Hague, Netherlands",
+    "id": "c12-pol-4-mcq-7",
+    "question": "Where is the seat of the International Court of Justice (ICJ) located?",
+    "options": [
+      "A):   Geneva, Switzerland",
       "B):   Vienna, Austria",
-      "C):   Geneva, Switzerland",
-      "D):   Rome, Italy",
+      "C):   The Hague, Netherlands",
+      "D):   Rome, Italy"
     ],
-    correctAnswer: "a",
-    explanation: "The International Court of Justice is the principal judicial organ of the UN and is situated at the Peace Palace in The Hague, Netherlands.",
+    "correctAnswer": "C",
+    "explanation": "The International Court of Justice is the principal judicial organ of the UN and is situated at the Peace Palace in The Hague, Netherlands."
   },
   {
-    id: "c12-pol-4-mcq-8",
-    question: "Which of the following international organizations succeeded the General Agreement on Tariffs and Trade (GATT) on 1 January 1995?",
-    options: [
+    "id": "c12-pol-4-mcq-8",
+    "question": "Which of the following international organizations succeeded the General Agreement on Tariffs and Trade (GATT) on 1 January 1995?",
+    "options": [
       "A):   International Monetary Fund (IMF)",
       "B):   World Bank (IBRD)",
-      "C):   World Trade Organization (WTO)",
-      "D):   UNCTAD",
+      "C):   UNCTAD",
+      "D):   World Trade Organization (WTO)"
     ],
-    correctAnswer: "c",
-    explanation: "The World Trade Organization (WTO) was established on 1 January 1995 as the institutional successor to GATT following the Marrakesh Agreement.",
+    "correctAnswer": "D",
+    "explanation": "The World Trade Organization (WTO) was established on 1 January 1995 as the institutional successor to GATT following the Marrakesh Agreement."
   },
-
-  // Tier 2: Q9 to Q15 (Concepts, reform criteria, Bretton Woods, agencies)
   {
-    id: "c12-pol-4-mcq-9",
-    question: "Under which Article of the United Nations Charter is the 'Veto Power' of permanent members enshrined?",
-    options: [
-      "A):   Article 2",
-      "B):   Article 27",
+    "id": "c12-pol-4-mcq-9",
+    "question": "Under which Article of the United Nations Charter is the 'Veto Power' of permanent members enshrined?",
+    "options": [
+      "A):   Article 27",
+      "B):   Article 2",
       "C):   Article 51",
-      "D):   Article 99",
+      "D):   Article 99"
     ],
-    correctAnswer: "b",
-    explanation: "Article 27 of the UN Charter mandates that substantive decisions of the Security Council require affirmative votes of nine members, including the concurring votes of all permanent members.",
+    "correctAnswer": "A",
+    "explanation": "Article 27 of the UN Charter mandates that substantive decisions of the Security Council require affirmative votes of nine members, including the concurring votes of all permanent members."
   },
   {
-    id: "c12-pol-4-mcq-10",
-    question: "Which four nations constitute the 'G4 Alliance' advocating mutual support for permanent UNSC seats?",
-    options: [
+    "id": "c12-pol-4-mcq-10",
+    "question": "Which four nations constitute the 'G4 Alliance' advocating mutual support for permanent UNSC seats?",
+    "options": [
       "A):   India, Pakistan, China, Russia",
       "B):   India, Brazil, Germany, Japan",
       "C):   USA, UK, France, Germany",
-      "D):   South Africa, Nigeria, Egypt, India",
+      "D):   South Africa, Nigeria, Egypt, India"
     ],
-    correctAnswer: "b",
-    explanation: "The G4 Alliance comprises India, Brazil, Germany, and Japan, who mutually support each other&rsquo;s bids for permanent membership in an expanded Security Council.",
+    "correctAnswer": "B",
+    "explanation": "The G4 Alliance comprises India, Brazil, Germany, and Japan, who mutually support each other&rsquo;s bids for permanent membership in an expanded Security Council."
   },
   {
-    id: "c12-pol-4-mcq-11",
-    question: "What approximately is the voting share held by the United States in the International Monetary Fund (IMF)?",
-    options: [
+    "id": "c12-pol-4-mcq-11",
+    "question": "What approximately is the voting share held by the United States in the International Monetary Fund (IMF)?",
+    "options": [
       "A):   Around 5%",
-      "B):   Around 16.5%",
-      "C):   Around 33%",
-      "D):   Around 51%",
+      "B):   Around 33%",
+      "C):   Around 16.5%",
+      "D):   Around 51%"
     ],
-    correctAnswer: "b",
-    explanation: "The United States holds approximately 16.5% of total votes in the IMF, which gives Washington a de facto unilateral veto because major charter decisions require an 85% supermajority.",
+    "correctAnswer": "C",
+    "explanation": "The United States holds approximately 16.5% of total votes in the IMF, which gives Washington a de facto unilateral veto because major charter decisions require an 85% supermajority."
   },
   {
-    id: "c12-pol-4-mcq-12",
-    question: "The International Atomic Energy Agency (IAEA) was established in 1957 inspired by which famous diplomatic initiative?",
-    options: [
+    "id": "c12-pol-4-mcq-12",
+    "question": "The International Atomic Energy Agency (IAEA) was established in 1957 inspired by which famous diplomatic initiative?",
+    "options": [
       "A):   Woodrow Wilson's Fourteen Points",
-      "B):   Dwight Eisenhower's 'Atoms for Peace' proposal",
+      "B):   The Marshall Plan",
       "C):   The Baruch Plan",
-      "D):   The Marshall Plan",
+      "D):   Dwight Eisenhower's 'Atoms for Peace' proposal"
     ],
-    correctAnswer: "b",
-    explanation: "US President Dwight D. Eisenhower delivered his historic 'Atoms for Peace' speech to the UN General Assembly in 1953, leading directly to the founding of the IAEA in 1957.",
+    "correctAnswer": "D",
+    "explanation": "US President Dwight D. Eisenhower delivered his historic 'Atoms for Peace' speech to the UN General Assembly in 1953, leading directly to the founding of the IAEA in 1957."
   },
   {
-    id: "c12-pol-4-mcq-13",
-    question: "Which global NGO is headquartered in London and specializes in campaigns against human rights abuses and the abolition of the death penalty?",
-    options: [
-      "A):   Human Rights Watch",
-      "B):   Amnesty International",
+    "id": "c12-pol-4-mcq-13",
+    "question": "Which global NGO is headquartered in London and specializes in campaigns against human rights abuses and the abolition of the death penalty?",
+    "options": [
+      "A):   Amnesty International",
+      "B):   Human Rights Watch",
       "C):   Transparency International",
-      "D):   Oxfam International",
+      "D):   Oxfam International"
     ],
-    correctAnswer: "b",
-    explanation: "Amnesty International, founded in London in 1961 by British lawyer Peter Benenson, is a worldwide movement dedicated to the protection of human rights.",
+    "correctAnswer": "A",
+    "explanation": "Amnesty International, founded in London in 1961 by British lawyer Peter Benenson, is a worldwide movement dedicated to the protection of human rights."
   },
   {
-    id: "c12-pol-4-mcq-14",
-    question: "In which year was the UN Commission on Human Rights replaced by the permanent UN Human Rights Council (UNHRC)?",
-    options: [
+    "id": "c12-pol-4-mcq-14",
+    "question": "In which year was the UN Commission on Human Rights replaced by the permanent UN Human Rights Council (UNHRC)?",
+    "options": [
       "A):   1995",
-      "B):   2000",
-      "C):   2006",
-      "D):   2015",
+      "B):   2006",
+      "C):   2000",
+      "D):   2015"
     ],
-    correctAnswer: "c",
-    explanation: "Following agreements made during the 2005 World Summit, the General Assembly established the 47-member UN Human Rights Council (UNHRC) in March 2006.",
+    "correctAnswer": "B",
+    "explanation": "Following agreements made during the 2005 World Summit, the General Assembly established the 47-member UN Human Rights Council (UNHRC) in March 2006."
   },
   {
-    id: "c12-pol-4-mcq-15",
-    question: "What principle adopted at the 2005 UN World Summit obligates the international community to intervene when states fail to protect citizens from atrocities?",
-    options: [
+    "id": "c12-pol-4-mcq-15",
+    "question": "What principle adopted at the 2005 UN World Summit obligates the international community to intervene when states fail to protect citizens from atrocities?",
+    "options": [
       "A):   Democratic Peace Theory",
-      "B):   Responsibility to Protect (R2P)",
-      "C):   Washington Consensus",
-      "D):   Millennium Development Goals",
+      "B):   Washington Consensus",
+      "C):   Responsibility to Protect (R2P)",
+      "D):   Millennium Development Goals"
     ],
-    correctAnswer: "b",
-    explanation: "The 'Responsibility to Protect' (R2P) doctrine establishes that the international community has the duty to intervene through the UNSC when sovereign states fail to prevent genocide and mass crimes against humanity.",
+    "correctAnswer": "C",
+    "explanation": "The 'Responsibility to Protect' (R2P) doctrine establishes that the international community has the duty to intervene through the UNSC when sovereign states fail to prevent genocide and mass crimes against humanity."
   },
-
-  // Tier 3: Q16 to Q20 (Analytical, Assertion-Reason, comparative questions)
   {
-    id: "c12-pol-4-mcq-16",
-    question: "Which of the following was NOT among the criteria proposed by Secretary-General Kofi Annan in 1997 for new permanent members of the UNSC?",
-    options: [
+    "id": "c12-pol-4-mcq-16",
+    "question": "Which of the following was NOT among the criteria proposed by Secretary-General Kofi Annan in 1997 for new permanent members of the UNSC?",
+    "options": [
       "A):   A major economic power",
       "B):   A major military power",
-      "C):   A nation possessing an official nuclear weapons arsenal",
-      "D):   A country that respects democracy and human rights",
+      "C):   A country that respects democracy and human rights",
+      "D):   A nation possessing an official nuclear weapons arsenal"
     ],
-    correctAnswer: "c",
-    explanation: "Possession of nuclear weapons was deliberately excluded from Kofi Annan's criteria; in fact, the UN explicitly champions nuclear disarmament and non-proliferation.",
+    "correctAnswer": "D",
+    "explanation": "Possession of nuclear weapons was deliberately excluded from Kofi Annan's criteria; in fact, the UN explicitly champions nuclear disarmament and non-proliferation."
   },
   {
-    id: "c12-pol-4-mcq-17",
-    question: "Why is the voting procedure of the International Monetary Fund (IMF) and World Bank described as having a 'Democratic Deficit'?",
-    options: [
-      "A):   Because decisions are made by secret ballot with no published results",
-      "B):   Because member voting weight is determined by financial quotas rather than sovereign equality",
+    "id": "c12-pol-4-mcq-17",
+    "question": "Why is the voting procedure of the International Monetary Fund (IMF) and World Bank described as having a 'Democratic Deficit'?",
+    "options": [
+      "A):   Because member voting weight is determined by financial quotas rather than sovereign equality",
+      "B):   Because decisions are made by secret ballot with no published results",
       "C):   Because only European nations are permitted to vote on financial aid",
-      "D):   Because the UN General Assembly can overturn IMF loans at any time",
+      "D):   Because the UN General Assembly can overturn IMF loans at any time"
     ],
-    correctAnswer: "b",
-    explanation: "In the IMF and World Bank, voting power is proportional to financial contributions (quotas), allowing a small group of wealthy Western nations (G7) to dominate policy while developing nations have negligible influence.",
+    "correctAnswer": "A",
+    "explanation": "In the IMF and World Bank, voting power is proportional to financial contributions (quotas), allowing a small group of wealthy Western nations (G7) to dominate policy while developing nations have negligible influence."
   },
   {
-    id: "c12-pol-4-mcq-18",
-    question: "Consider the following statements regarding India's bid for a permanent seat in the UN Security Council:\n1. India represents roughly one-sixth of the global population.\n2. India has never contributed personnel to UN Peacekeeping operations.\nWhich of the statements is/are correct?",
-    options: [
-      "A):   1 only",
-      "B):   2 only",
+    "id": "c12-pol-4-mcq-18",
+    "question": "Consider the following statements regarding India's bid for a permanent seat in the UN Security Council:\n1. India represents roughly one-sixth of the global population.\n2. India has never contributed personnel to UN Peacekeeping operations.\nWhich of the statements is/are correct?",
+    "options": [
+      "A):   2 only",
+      "B):   1 only",
       "C):   Both 1 and 2",
-      "D):   Neither 1 nor 2",
+      "D):   Neither 1 nor 2"
     ],
-    correctAnswer: "a",
-    explanation: "Statement 1 is correct (India has over 1.4 billion people). Statement 2 is completely false because India is historically one of the largest cumulative troop contributors to UN Peacekeeping.",
+    "correctAnswer": "B",
+    "explanation": "Statement 1 is correct (India has over 1.4 billion people). Statement 2 is completely false because India is historically one of the largest cumulative troop contributors to UN Peacekeeping."
   },
   {
-    id: "c12-pol-4-mcq-19",
-    question: "Assertion (A): The United Nations cannot act as a complete military check on the United States in a unipolar world.\nReason (R): The United States provides about 22% of the UN regular budget and wields a permanent veto in the Security Council.",
-    options: [
-      "A):   Both A and R are true, and R is the correct explanation of A",
+    "id": "c12-pol-4-mcq-19",
+    "question": "Assertion (A): The United Nations cannot act as a complete military check on the United States in a unipolar world.\nReason (R): The United States provides about 22% of the UN regular budget and wields a permanent veto in the Security Council.",
+    "options": [
+      "A):   A is true, but R is false",
       "B):   Both A and R are true, but R is not the correct explanation of A",
-      "C):   A is true, but R is false",
-      "D):   A is false, but R is true",
+      "C):   Both A and R are true, and R is the correct explanation of A",
+      "D):   A is false, but R is true"
     ],
-    correctAnswer: "a",
-    explanation: "Both statements are factually accurate. The US's unmatched economic/military power, combined with its 22% budget contribution and permanent veto, prevents the UN from militarily restraining Washington when it chooses to act unilaterally.",
+    "correctAnswer": "C",
+    "explanation": "Both statements are factually accurate. The US's unmatched economic/military power, combined with its 22% budget contribution and permanent veto, prevents the UN from militarily restraining Washington when it chooses to act unilaterally."
   },
   {
-    id: "c12-pol-4-mcq-20",
-    question: "Which of the following coalitions, led by Italy, Pakistan, and Mexico, actively opposes the expansion of permanent seats in the UN Security Council?",
-    options: [
+    "id": "c12-pol-4-mcq-20",
+    "question": "Which of the following coalitions, led by Italy, Pakistan, and Mexico, actively opposes the expansion of permanent seats in the UN Security Council?",
+    "options": [
       "A):   The G4 Alliance",
       "B):   The Shanghai Cooperation Organisation",
-      "C):   Uniting for Consensus ('Coffee Club')",
-      "D):   The Non-Aligned Movement",
+      "C):   The Non-Aligned Movement",
+      "D):   Uniting for Consensus ('Coffee Club')"
     ],
-    correctAnswer: "c",
-    explanation: "The 'Uniting for Consensus' coalition, colloquially termed the 'Coffee Club', opposes adding new permanent members to the UNSC and advocates only for non-permanent or semi-permanent expansion.",
-  },
+    "correctAnswer": "D",
+    "explanation": "The 'Uniting for Consensus' coalition, colloquially termed the 'Coffee Club', opposes adding new permanent members to the UNSC and advocates only for non-permanent or semi-permanent expansion."
+  }
 ];

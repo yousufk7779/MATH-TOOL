@@ -649,249 +649,244 @@ export const c12Pol15HtmlSolutions = `
 /* -------------------------------------------------------------------------- */
 
 export const c12Pol15Mcqs = [
-  // Tier 1: Direct Recall, Dates & Terms (Q1 to Q8)
   {
-    id: "c12-pol-15-mcq-1",
-    question: "In which year did the Ninth General Elections take place, marking the decisive end of the 'Congress System' at the Centre?",
-    options: [
-      "A):   1984",
-      "B):   1989",
+    "id": "c12-pol-15-mcq-1",
+    "question": "In which year did the Ninth General Elections take place, marking the decisive end of the 'Congress System' at the Centre?",
+    "options": [
+      "A):   1989",
+      "B):   1984",
       "C):   1991",
       "D):   1996"
     ],
-    correctAnswer: "B",
-    explanation: "The November 1989 general elections marked the end of single-party Congress dominance and launched the coalition era."
+    "correctAnswer": "A",
+    "explanation": "The November 1989 general elections marked the end of single-party Congress dominance and launched the coalition era."
   },
   {
-    id: "c12-pol-15-mcq-2",
-    question: "Who was the Chairman of the Second Backward Classes Commission appointed in 1979?",
-    options: [
+    "id": "c12-pol-15-mcq-2",
+    "question": "Who was the Chairman of the Second Backward Classes Commission appointed in 1979?",
+    "options": [
       "A):   Kaka Kalelkar",
       "B):   B.P. Mandal",
       "C):   Chaudhary Charan Singh",
       "D):   Kanshi Ram"
     ],
-    correctAnswer: "B",
-    explanation: "Bindeshwari Prasad Mandal (B.P. Mandal) headed the Second Backward Classes Commission, popularly called the Mandal Commission."
+    "correctAnswer": "B",
+    "explanation": "Bindeshwari Prasad Mandal (B.P. Mandal) headed the Second Backward Classes Commission, popularly called the Mandal Commission."
   },
   {
-    id: "c12-pol-15-mcq-3",
-    question: "What percentage of reservation was recommended by the Mandal Commission for Other Backward Classes (OBCs) in central government jobs?",
-    options: [
+    "id": "c12-pol-15-mcq-3",
+    "question": "What percentage of reservation was recommended by the Mandal Commission for Other Backward Classes (OBCs) in central government jobs?",
+    "options": [
       "A):   15%",
-      "B):   27%",
-      "C):   33%",
+      "B):   33%",
+      "C):   27%",
       "D):   50%"
     ],
-    correctAnswer: "B",
-    explanation: "The Mandal Commission recommended 27% reservation in central government jobs and educational institutions for OBCs."
+    "correctAnswer": "C",
+    "explanation": "The Mandal Commission recommended 27% reservation in central government jobs and educational institutions for OBCs."
   },
   {
-    id: "c12-pol-15-mcq-4",
-    question: "Who was the Prime Minister of India who announced the implementation of the Mandal Commission recommendations in August 1990?",
-    options: [
+    "id": "c12-pol-15-mcq-4",
+    "question": "Who was the Prime Minister of India who announced the implementation of the Mandal Commission recommendations in August 1990?",
+    "options": [
       "A):   Rajiv Gandhi",
-      "B):   V.P. Singh",
+      "B):   P.V. Narasimha Rao",
       "C):   Chandra Shekhar",
-      "D):   P.V. Narasimha Rao"
+      "D):   V.P. Singh"
     ],
-    correctAnswer: "B",
-    explanation: "Prime Minister V.P. Singh of the National Front government announced the implementation of the Mandal report on 7 August 1990."
+    "correctAnswer": "D",
+    "explanation": "Prime Minister V.P. Singh of the National Front government announced the implementation of the Mandal report on 7 August 1990."
   },
   {
-    id: "c12-pol-15-mcq-5",
-    question: "The New Economic Policy of Liberalization, Privatization, and Globalization (LPG) was initiated in India in which year?",
-    options: [
-      "A):   1989",
-      "B):   1991",
+    "id": "c12-pol-15-mcq-5",
+    "question": "The New Economic Policy of Liberalization, Privatization, and Globalization (LPG) was initiated in India in which year?",
+    "options": [
+      "A):   1991",
+      "B):   1989",
       "C):   1996",
       "D):   1998"
     ],
-    correctAnswer: "B",
-    explanation: "The New Economic Policy was launched in July 1991 under Prime Minister P.V. Narasimha Rao and Finance Minister Dr. Manmohan Singh."
+    "correctAnswer": "A",
+    "explanation": "The New Economic Policy was launched in July 1991 under Prime Minister P.V. Narasimha Rao and Finance Minister Dr. Manmohan Singh."
   },
   {
-    id: "c12-pol-15-mcq-6",
-    question: "Who was the founder of the Bahujan Samaj Party (BSP) established in April 1984?",
-    options: [
+    "id": "c12-pol-15-mcq-6",
+    "question": "Who was the founder of the Bahujan Samaj Party (BSP) established in April 1984?",
+    "options": [
       "A):   Mayawati",
       "B):   Kanshi Ram",
       "C):   B.P. Mandal",
       "D):   Ram Vilas Paswan"
     ],
-    correctAnswer: "B",
-    explanation: "Kanshi Ram founded the Bahujan Samaj Party on 14 April 1984 to organize and politically empower the Bahujan masses."
+    "correctAnswer": "B",
+    "explanation": "Kanshi Ram founded the Bahujan Samaj Party on 14 April 1984 to organize and politically empower the Bahujan masses."
   },
   {
-    id: "c12-pol-15-mcq-7",
-    question: "The National Democratic Alliance (NDA) government formed in 1998 was headed by which Prime Minister?",
-    options: [
+    "id": "c12-pol-15-mcq-7",
+    "question": "The National Democratic Alliance (NDA) government formed in 1998 was headed by which Prime Minister?",
+    "options": [
       "A):   H.D. Deve Gowda",
-      "B):   Atal Bihari Vajpayee",
-      "C):   L.K. Advani",
+      "B):   L.K. Advani",
+      "C):   Atal Bihari Vajpayee",
       "D):   I.K. Gujral"
     ],
-    correctAnswer: "B",
-    explanation: "Atal Bihari Vajpayee was the leader and Prime Minister of the National Democratic Alliance (NDA) government."
+    "correctAnswer": "C",
+    "explanation": "Atal Bihari Vajpayee was the leader and Prime Minister of the National Democratic Alliance (NDA) government."
   },
   {
-    id: "c12-pol-15-mcq-8",
-    question: "In which year was the Mahatma Gandhi National Rural Employment Guarantee Act (MGNREGA) passed by the UPA-I government?",
-    options: [
+    "id": "c12-pol-15-mcq-8",
+    "question": "In which year was the Mahatma Gandhi National Rural Employment Guarantee Act (MGNREGA) passed by the UPA-I government?",
+    "options": [
       "A):   1999",
-      "B):   2005",
+      "B):   2014",
       "C):   2009",
-      "D):   2014"
+      "D):   2005"
     ],
-    correctAnswer: "B",
-    explanation: "MGNREGA was enacted in 2005 by the UPA-I government to guarantee 100 days of wage employment annually to rural households."
+    "correctAnswer": "D",
+    "explanation": "MGNREGA was enacted in 2005 by the UPA-I government to guarantee 100 days of wage employment annually to rural households."
   },
-
-  // Tier 2: Conceptual & Comparative (Q9 to Q15)
   {
-    id: "c12-pol-15-mcq-9",
-    question: "Why was the 1989 National Front government described as an extraordinary political experiment?",
-    options: [
-      "A):   It was supported by all 542 members of the Lok Sabha unanimously",
-      "B):   It was a minority government supported from outside simultaneously by two ideological adversaries: the BJP and the Left Front",
+    "id": "c12-pol-15-mcq-9",
+    "question": "Why was the 1989 National Front government described as an extraordinary political experiment?",
+    "options": [
+      "A):   It was a minority government supported from outside simultaneously by two ideological adversaries: the BJP and the Left Front",
+      "B):   It was supported by all 542 members of the Lok Sabha unanimously",
       "C):   It was governed directly by the Supreme Court of India",
       "D):   It abolished all political parties in India for two years"
     ],
-    correctAnswer: "B",
-    explanation: "The National Front under V.P. Singh was uniquely supported from outside by both the right-wing BJP and the Left Front to keep Congress out."
+    "correctAnswer": "A",
+    "explanation": "The National Front under V.P. Singh was uniquely supported from outside by both the right-wing BJP and the Left Front to keep Congress out."
   },
   {
-    id: "c12-pol-15-mcq-10",
-    question: "What does the term 'Second Democratic Upsurge' refer to in the context of Indian democracy in the 1990s?",
-    options: [
+    "id": "c12-pol-15-mcq-10",
+    "question": "What does the term 'Second Democratic Upsurge' refer to in the context of Indian democracy in the 1990s?",
+    "options": [
       "A):   The privatization of public sector enterprises",
       "B):   The dramatic increase in voter turnout and political representation of OBCs and Dalits",
       "C):   The rise of student protests in Gujarat and Bihar",
       "D):   The introduction of electronic voting machines (EVMs)"
     ],
-    correctAnswer: "B",
-    explanation: "Coined by Yogendra Yadav, the Second Democratic Upsurge refers to the political awakening and legislative rise of lower castes and OBCs in the 1990s."
+    "correctAnswer": "B",
+    "explanation": "Coined by Yogendra Yadav, the Second Democratic Upsurge refers to the political awakening and legislative rise of lower castes and OBCs in the 1990s."
   },
   {
-    id: "c12-pol-15-mcq-11",
-    question: "In which landmark 1992 case did the Supreme Court uphold the constitutional validity of 27% OBC reservation while introducing the 'creamy layer' rule?",
-    options: [
+    "id": "c12-pol-15-mcq-11",
+    "question": "In which landmark 1992 case did the Supreme Court uphold the constitutional validity of 27% OBC reservation while introducing the 'creamy layer' rule?",
+    "options": [
       "A):   Kesavananda Bharati Case",
-      "B):   Indra Sawhney Case",
-      "C):   Golaknath Case",
+      "B):   Golaknath Case",
+      "C):   Indra Sawhney Case",
       "D):   Minerva Mills Case"
     ],
-    correctAnswer: "B",
-    explanation: "In Indra Sawhney vs Union of India (1992), the Supreme Court upheld 27% OBC reservations with the exclusion of the affluent creamy layer."
+    "correctAnswer": "C",
+    "explanation": "In Indra Sawhney vs Union of India (1992), the Supreme Court upheld 27% OBC reservations with the exclusion of the affluent creamy layer."
   },
   {
-    id: "c12-pol-15-mcq-12",
-    question: "Which campaign by the NDA government in 2004 failed to connect with the rural electorate, leading to its unexpected defeat?",
-    options: [
+    "id": "c12-pol-15-mcq-12",
+    "question": "Which campaign by the NDA government in 2004 failed to connect with the rural electorate, leading to its unexpected defeat?",
+    "options": [
       "A):   Garibi Hatao",
-      "B):   India Shining",
+      "B):   Total Revolution",
       "C):   Jai Jawan, Jai Kisan",
-      "D):   Total Revolution"
+      "D):   India Shining"
     ],
-    correctAnswer: "B",
-    explanation: "The 'India Shining' slogan was perceived as highlighting urban prosperity while ignoring agrarian distress, contributing to the NDA's 2004 defeat."
+    "correctAnswer": "D",
+    "explanation": "The 'India Shining' slogan was perceived as highlighting urban prosperity while ignoring agrarian distress, contributing to the NDA's 2004 defeat."
   },
   {
-    id: "c12-pol-15-mcq-13",
-    question: "What immediate step did the BJP take in October 1990 that caused the collapse of the V.P. Singh-led National Front government?",
-    options: [
-      "A):   It voted in favor of the Congress party's budget",
-      "B):   It withdrew outside support after party leader L.K. Advani was arrested in Bihar during his Rath Yatra",
+    "id": "c12-pol-15-mcq-13",
+    "question": "What immediate step did the BJP take in October 1990 that caused the collapse of the V.P. Singh-led National Front government?",
+    "options": [
+      "A):   It withdrew outside support after party leader L.K. Advani was arrested in Bihar during his Rath Yatra",
+      "B):   It voted in favor of the Congress party's budget",
       "C):   It merged with the Janata Dal",
       "D):   It signed the Tashkent Agreement"
     ],
-    correctAnswer: "B",
-    explanation: "When L.K. Advani's Rath Yatra was stopped and he was arrested in Bihar by the Lalu Prasad Yadav government, the BJP withdrew outside support."
+    "correctAnswer": "A",
+    "explanation": "When L.K. Advani's Rath Yatra was stopped and he was arrested in Bihar by the Lalu Prasad Yadav government, the BJP withdrew outside support."
   },
   {
-    id: "c12-pol-15-mcq-14",
-    question: "Which of the following was NOT part of the emerging consensus in Indian politics since the 1990s?",
-    options: [
+    "id": "c12-pol-15-mcq-14",
+    "question": "Which of the following was NOT part of the emerging consensus in Indian politics since the 1990s?",
+    "options": [
       "A):   Agreement on the broad contours of the New Economic Policies",
-      "B):   Acceptance of the social and political claims of Other Backward Classes",
-      "C):   Complete abolition of all regional parties to create a two-party system",
+      "B):   Complete abolition of all regional parties to create a two-party system",
+      "C):   Acceptance of the social and political claims of Other Backward Classes",
       "D):   Pragmatic governance through multi-party coalitions"
     ],
-    correctAnswer: "C",
-    explanation: "Abolishing regional parties was never part of the consensus; in fact, the consensus celebrates regional parties as indispensable federal partners."
+    "correctAnswer": "B",
+    "explanation": "Abolishing regional parties was never part of the consensus; in fact, the consensus celebrates regional parties as indispensable federal partners."
   },
   {
-    id: "c12-pol-15-mcq-15",
-    question: "Who became the first Dalit woman Chief Minister of an Indian state in June 1995?",
-    options: [
+    "id": "c12-pol-15-mcq-15",
+    "question": "Who became the first Dalit woman Chief Minister of an Indian state in June 1995?",
+    "options": [
       "A):   Mamata Banerjee",
-      "B):   Mayawati",
-      "C):   Jayalalithaa",
+      "B):   Jayalalithaa",
+      "C):   Mayawati",
       "D):   Sushma Swaraj"
     ],
-    correctAnswer: "B",
-    explanation: "Mayawati of the Bahujan Samaj Party made history by taking oath as Chief Minister of Uttar Pradesh in June 1995."
+    "correctAnswer": "C",
+    "explanation": "Mayawati of the Bahujan Samaj Party made history by taking oath as Chief Minister of Uttar Pradesh in June 1995."
   },
-
-  // Tier 3: Analytical, Assertion-Reason & Chronology (Q16 to Q20)
   {
-    id: "c12-pol-15-mcq-16",
-    question: "Assertion (A): The 1990s marked the irreversible democratization and decentralization of Indian politics.\nReason (R): Regional parties emerged as central kingmakers, and voter participation rose sharply among lower castes and rural communities.",
-    options: [
-      "A):   Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+    "id": "c12-pol-15-mcq-16",
+    "question": "Assertion (A): The 1990s marked the irreversible democratization and decentralization of Indian politics.\nReason (R): Regional parties emerged as central kingmakers, and voter participation rose sharply among lower castes and rural communities.",
+    "options": [
+      "A):   (A) is false, but (R) is true",
       "B):   Both (A) and (R) are true, but (R) is not the correct explanation of (A)",
       "C):   (A) is true, but (R) is false",
-      "D):   (A) is false, but (R) is true"
+      "D):   Both (A) and (R) are true, and (R) is the correct explanation of (A)"
     ],
-    correctAnswer: "A",
-    explanation: "Indian democracy democratized deeply because the entry of regional parties and subaltern voter mobilization ended one-party centralized rule."
+    "correctAnswer": "D",
+    "explanation": "Indian democracy democratized deeply because the entry of regional parties and subaltern voter mobilization ended one-party centralized rule."
   },
   {
-    id: "c12-pol-15-mcq-17",
-    question: "Assertion (A): Coalition governments at the Centre between 1989 and 2014 caused permanent policy paralysis in India.\nReason (R): Both the NDA and UPA coalition governments completed full five-year terms and enacted major structural reforms.",
-    options: [
-      "A):   Both (A) and (R) are true",
-      "B):   (A) is false, but (R) is true",
+    "id": "c12-pol-15-mcq-17",
+    "question": "Assertion (A): Coalition governments at the Centre between 1989 and 2014 caused permanent policy paralysis in India.\nReason (R): Both the NDA and UPA coalition governments completed full five-year terms and enacted major structural reforms.",
+    "options": [
+      "A):   (A) is false, but (R) is true",
+      "B):   Both (A) and (R) are true",
       "C):   (A) is true, but (R) is false",
       "D):   Both (A) and (R) are false"
     ],
-    correctAnswer: "B",
-    explanation: "(A) is false because coalitions did not cause paralysis; (R) is true because NDA (1999–2004) and UPA (2004–2014) delivered full terms and major reforms (LPG, MGNREGA, RTI)."
+    "correctAnswer": "A",
+    "explanation": "(A) is false because coalitions did not cause paralysis; (R) is true because NDA (1999–2004) and UPA (2004–2014) delivered full terms and major reforms (LPG, MGNREGA, RTI)."
   },
   {
-    id: "c12-pol-15-mcq-18",
-    question: "Match List-I (Coalition / Front) with List-II (Period / Lead Party):\n1. National Front — (i) BJP (1998–2004)\n2. United Front — (ii) Congress (2004–2014)\n3. NDA — (iii) Janata Dal (1989–1990)\n4. UPA — (iv) Janata Dal & Regional Parties (1996–1998)\nSelect the correct combination:",
-    options: [
-      "A):   1-(iii), 2-(iv), 3-(i), 4-(ii)",
-      "B):   1-(iv), 2-(iii), 3-(i), 4-(ii)",
+    "id": "c12-pol-15-mcq-18",
+    "question": "Match List-I (Coalition / Front) with List-II (Period / Lead Party):\n1. National Front — (i) BJP (1998–2004)\n2. United Front — (ii) Congress (2004–2014)\n3. NDA — (iii) Janata Dal (1989–1990)\n4. UPA — (iv) Janata Dal & Regional Parties (1996–1998)\nSelect the correct combination:",
+    "options": [
+      "A):   1-(iv), 2-(iii), 3-(i), 4-(ii)",
+      "B):   1-(iii), 2-(iv), 3-(i), 4-(ii)",
       "C):   1-(iii), 2-(i), 3-(iv), 4-(ii)",
       "D):   1-(ii), 2-(iv), 3-(iii), 4-(i)"
     ],
-    correctAnswer: "A",
-    explanation: "National Front was in 1989–90; United Front in 1996–98; NDA in 1998–2004; UPA in 2004–2014."
+    "correctAnswer": "B",
+    "explanation": "National Front was in 1989–90; United Front in 1996–98; NDA in 1998–2004; UPA in 2004–2014."
   },
   {
-    id: "c12-pol-15-mcq-19",
-    question: "Arrange the following events in chronological sequence:\n1. Demolition of Babri Masjid in Ayodhya\n2. Implementation of the Mandal Commission report\n3. Formation of the United Progressive Alliance (UPA-I)\n4. Enactment of the New Economic Policy (LPG)",
-    options: [
-      "A):   2 — 4 — 1 — 3",
+    "id": "c12-pol-15-mcq-19",
+    "question": "Arrange the following events in chronological sequence:\n1. Demolition of Babri Masjid in Ayodhya\n2. Implementation of the Mandal Commission report\n3. Formation of the United Progressive Alliance (UPA-I)\n4. Enactment of the New Economic Policy (LPG)",
+    "options": [
+      "A):   2 — 1 — 4 — 3",
       "B):   4 — 2 — 1 — 3",
-      "C):   2 — 1 — 4 — 3",
+      "C):   2 — 4 — 1 — 3",
       "D):   1 — 2 — 4 — 3"
     ],
-    correctAnswer: "A",
-    explanation: "Mandal Report (Aug 1990) → New Economic Policy (July 1991) → Babri Masjid Demolition (Dec 1992) → UPA-I formation (May 2004)."
+    "correctAnswer": "C",
+    "explanation": "Mandal Report (Aug 1990) → New Economic Policy (July 1991) → Babri Masjid Demolition (Dec 1992) → UPA-I formation (May 2004)."
   },
   {
-    id: "c12-pol-15-mcq-20",
-    question: "Which of the following was NOT one of the core elements of the New Economic Policy adopted in 1991?",
-    options: [
+    "id": "c12-pol-15-mcq-20",
+    "question": "Which of the following was NOT one of the core elements of the New Economic Policy adopted in 1991?",
+    "options": [
       "A):   Dismantling of the industrial licensing regime (Liberalization)",
       "B):   Disinvestment of government shares in public sector enterprises (Privatization)",
-      "C):   Complete nationalization of all private foreign trade and commercial banks",
-      "D):   Reduction of import tariffs and encouragement of Foreign Direct Investment (Globalization)"
+      "C):   Reduction of import tariffs and encouragement of Foreign Direct Investment (Globalization)",
+      "D):   Complete nationalization of all private foreign trade and commercial banks"
     ],
-    correctAnswer: "C",
-    explanation: "The 1991 reforms favored privatization and open trade; nationalization of banks was an old policy from 1969, not 1991."
+    "correctAnswer": "D",
+    "explanation": "The 1991 reforms favored privatization and open trade; nationalization of banks was an old policy from 1969, not 1991."
   }
 ];

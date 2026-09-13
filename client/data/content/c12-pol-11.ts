@@ -735,249 +735,244 @@ export const c12Pol11HtmlSolutions = `
 /* -------------------------------------------------------------------------- */
 
 export const c12Pol11Mcqs = [
-  // Tier 1: Direct Recall, Treaties & Key Facts (Q1 to Q8)
   {
-    id: "c12-pol-11-mcq-1",
-    question: "Which Article of the Indian Constitution lays down the Directive Principle regarding the promotion of international peace and security?",
-    options: [
-      "A):   Article 370",
-      "B):   Article 51",
+    "id": "c12-pol-11-mcq-1",
+    "question": "Which Article of the Indian Constitution lays down the Directive Principle regarding the promotion of international peace and security?",
+    "options": [
+      "A):   Article 51",
+      "B):   Article 370",
       "C):   Article 356",
       "D):   Article 44"
     ],
-    correctAnswer: "B",
-    explanation: "Article 51 in Part IV (Directive Principles of State Policy) enjoins the State to promote international peace, honorable relations, and treaty obligations."
+    "correctAnswer": "A",
+    "explanation": "Article 51 in Part IV (Directive Principles of State Policy) enjoins the State to promote international peace, honorable relations, and treaty obligations."
   },
   {
-    id: "c12-pol-11-mcq-2",
-    question: "On which date was the historic Panchsheel Agreement signed between India and China?",
-    options: [
+    "id": "c12-pol-11-mcq-2",
+    "question": "On which date was the historic Panchsheel Agreement signed between India and China?",
+    "options": [
       "A):   15 August 1947",
       "B):   29 April 1954",
       "C):   20 October 1962",
       "D):   2 July 1972"
     ],
-    correctAnswer: "B",
-    explanation: "The Panchsheel Agreement was signed on 29 April 1954 between Prime Minister Jawaharlal Nehru and Chinese Premier Zhou Enlai."
+    "correctAnswer": "B",
+    "explanation": "The Panchsheel Agreement was signed on 29 April 1954 between Prime Minister Jawaharlal Nehru and Chinese Premier Zhou Enlai."
   },
   {
-    id: "c12-pol-11-mcq-3",
-    question: "Who among the following was the founder-architect of India's nuclear energy programme?",
-    options: [
-      "A):   Dr. Homi J. Bhabha",
+    "id": "c12-pol-11-mcq-3",
+    "question": "Who among the following was the founder-architect of India's nuclear energy programme?",
+    "options": [
+      "A):   Dr. Vikram Sarabhai",
       "B):   Dr. A.P.J. Abdul Kalam",
-      "C):   Dr. Vikram Sarabhai",
+      "C):   Dr. Homi J. Bhabha",
       "D):   Dr. M.S. Swaminathan"
     ],
-    correctAnswer: "A",
-    explanation: "Dr. Homi J. Bhabha was the pioneering visionary and physicist who founded and guided India's atomic energy programme starting in the late 1940s."
+    "correctAnswer": "C",
+    "explanation": "Dr. Homi J. Bhabha was the pioneering visionary and physicist who founded and guided India's atomic energy programme starting in the late 1940s."
   },
   {
-    id: "c12-pol-11-mcq-4",
-    question: "Which river water treaty was signed between Jawaharlal Nehru and Ayub Khan in September 1960?",
-    options: [
+    "id": "c12-pol-11-mcq-4",
+    "question": "Which river water treaty was signed between Jawaharlal Nehru and Ayub Khan in September 1960?",
+    "options": [
       "A):   Ganga Water Agreement",
-      "B):   Indus Waters Treaty",
+      "B):   Brahmaputra Accord",
       "C):   Sutlej-Yamuna Link Treaty",
-      "D):   Brahmaputra Accord"
+      "D):   Indus Waters Treaty"
     ],
-    correctAnswer: "B",
-    explanation: "The Indus Waters Treaty was signed in September 1960 between Nehru and Ayub Khan with the mediation of the World Bank."
+    "correctAnswer": "D",
+    "explanation": "The Indus Waters Treaty was signed in September 1960 between Nehru and Ayub Khan with the mediation of the World Bank."
   },
   {
-    id: "c12-pol-11-mcq-5",
-    question: "Who was India's Defense Minister during the 1962 Sino-Indian War who subsequently resigned from the cabinet?",
-    options: [
-      "A):   Sardar Baldev Singh",
+    "id": "c12-pol-11-mcq-5",
+    "question": "Who was India's Defense Minister during the 1962 Sino-Indian War who subsequently resigned from the cabinet?",
+    "options": [
+      "A):   V.K. Krishna Menon",
       "B):   Morarji Desai",
-      "C):   V.K. Krishna Menon",
+      "C):   Sardar Baldev Singh",
       "D):   Y.B. Chavan"
     ],
-    correctAnswer: "C",
-    explanation: "V.K. Krishna Menon was the Defense Minister during the 1962 war and resigned following severe criticism of military unreadiness."
+    "correctAnswer": "A",
+    "explanation": "V.K. Krishna Menon was the Defense Minister during the 1962 war and resigned following severe criticism of military unreadiness."
   },
   {
-    id: "c12-pol-11-mcq-6",
-    question: "In which city did Prime Minister Lal Bahadur Shastri sign the peace declaration with President Ayub Khan in January 1966?",
-    options: [
+    "id": "c12-pol-11-mcq-6",
+    "question": "In which city did Prime Minister Lal Bahadur Shastri sign the peace declaration with President Ayub Khan in January 1966?",
+    "options": [
       "A):   Shimla",
       "B):   Tashkent",
       "C):   Moscow",
       "D):   Karachi"
     ],
-    correctAnswer: "B",
-    explanation: "The Tashkent Declaration was signed in Tashkent (then Uzbek SSR, Soviet Union) on 10 January 1966 mediated by Soviet Premier Alexei Kosygin."
+    "correctAnswer": "B",
+    "explanation": "The Tashkent Declaration was signed in Tashkent (then Uzbek SSR, Soviet Union) on 10 January 1966 mediated by Soviet Premier Alexei Kosygin."
   },
   {
-    id: "c12-pol-11-mcq-7",
-    question: "What was the code name of India's first underground nuclear test conducted at Pokhran in May 1974?",
-    options: [
+    "id": "c12-pol-11-mcq-7",
+    "question": "What was the code name of India's first underground nuclear test conducted at Pokhran in May 1974?",
+    "options": [
       "A):   Operation Shakti",
-      "B):   Smiling Buddha",
-      "C):   Operation Vijay",
+      "B):   Operation Vijay",
+      "C):   Smiling Buddha",
       "D):   Operation Gibraltar"
     ],
-    correctAnswer: "B",
-    explanation: "The May 1974 test under Indira Gandhi was officially designated as a Peaceful Nuclear Explosion code-named 'Smiling Buddha'."
+    "correctAnswer": "C",
+    "explanation": "The May 1974 test under Indira Gandhi was officially designated as a Peaceful Nuclear Explosion code-named 'Smiling Buddha'."
   },
   {
-    id: "c12-pol-11-mcq-8",
-    question: "The Shimla Agreement of 1972 was signed between Prime Minister Indira Gandhi and which Pakistani leader?",
-    options: [
+    "id": "c12-pol-11-mcq-8",
+    "question": "The Shimla Agreement of 1972 was signed between Prime Minister Indira Gandhi and which Pakistani leader?",
+    "options": [
       "A):   General Yahya Khan",
       "B):   General Zia-ul-Haq",
-      "C):   Zulfikar Ali Bhutto",
-      "D):   General Ayub Khan"
+      "C):   General Ayub Khan",
+      "D):   Zulfikar Ali Bhutto"
     ],
-    correctAnswer: "C",
-    explanation: "The Shimla Agreement was signed on 2 July 1972 between Prime Minister Indira Gandhi and President Zulfikar Ali Bhutto of Pakistan."
+    "correctAnswer": "D",
+    "explanation": "The Shimla Agreement was signed on 2 July 1972 between Prime Minister Indira Gandhi and President Zulfikar Ali Bhutto of Pakistan."
   },
-
-  // Tier 2: Conceptual & Comparative (Q9 to Q15)
   {
-    id: "c12-pol-11-mcq-9",
-    question: "Why did India strongly criticize and refuse to sign the Nuclear Non-Proliferation Treaty (NPT) of 1968?",
-    options: [
-      "A):   It wanted to engage in an unconstrained nuclear arms race in Asia",
-      "B):   The treaty was inherently discriminatory, establishing a monopoly for five nuclear powers",
+    "id": "c12-pol-11-mcq-9",
+    "question": "Why did India strongly criticize and refuse to sign the Nuclear Non-Proliferation Treaty (NPT) of 1968?",
+    "options": [
+      "A):   The treaty was inherently discriminatory, establishing a monopoly for five nuclear powers",
+      "B):   It wanted to engage in an unconstrained nuclear arms race in Asia",
       "C):   It was already allied with the Warsaw Pact military alliance",
       "D):   The United Nations General Assembly rejected the treaty overwhelmingly"
     ],
-    correctAnswer: "B",
-    explanation: "India rejected the NPT as discriminatory because it banned non-nuclear nations from acquiring nuclear technology while legalizing the arsenals of five pre-1967 nuclear states."
+    "correctAnswer": "A",
+    "explanation": "India rejected the NPT as discriminatory because it banned non-nuclear nations from acquiring nuclear technology while legalizing the arsenals of five pre-1967 nuclear states."
   },
   {
-    id: "c12-pol-11-mcq-10",
-    question: "Which of the following was NOT one of the Five Principles of Peaceful Coexistence (Panchsheel)?",
-    options: [
+    "id": "c12-pol-11-mcq-10",
+    "question": "Which of the following was NOT one of the Five Principles of Peaceful Coexistence (Panchsheel)?",
+    "options": [
       "A):   Mutual respect for each other's territorial integrity and sovereignty",
-      "B):   Mutual non-aggression and peaceful coexistence",
-      "C):   Collective military defense against third-party Western aggression",
+      "B):   Collective military defense against third-party Western aggression",
+      "C):   Mutual non-aggression and peaceful coexistence",
       "D):   Mutual non-interference in each other's internal affairs"
     ],
-    correctAnswer: "C",
-    explanation: "Panchsheel was a non-military, peaceful coexistence treaty and never contained any collective military defense or mutual security pact clauses."
+    "correctAnswer": "B",
+    "explanation": "Panchsheel was a non-military, peaceful coexistence treaty and never contained any collective military defense or mutual security pact clauses."
   },
   {
-    id: "c12-pol-11-mcq-11",
-    question: "The 1964 split in the Communist Party of India (CPI) resulting in the formation of CPI(M) was primarily driven by:",
-    options: [
+    "id": "c12-pol-11-mcq-11",
+    "question": "The 1964 split in the Communist Party of India (CPI) resulting in the formation of CPI(M) was primarily driven by:",
+    "options": [
       "A):   Disputes over regional language policies in Madras State",
-      "B):   Ideological divide over the 1962 Sino-Indian War and Sino-Soviet rift",
-      "C):   Disagreements regarding the First Five-Year Plan allocations",
+      "B):   Disagreements regarding the First Five-Year Plan allocations",
+      "C):   Ideological divide over the 1962 Sino-Indian War and Sino-Soviet rift",
       "D):   The nationalization of commercial banks in 1969"
     ],
-    correctAnswer: "B",
-    explanation: "The CPI split in 1964 into the pro-Soviet CPI and the radical faction CPI(M) due to deep ideological divides regarding the 1962 China War and the global Sino-Soviet ideological split."
+    "correctAnswer": "C",
+    "explanation": "The CPI split in 1964 into the pro-Soviet CPI and the radical faction CPI(M) due to deep ideological divides regarding the 1962 China War and the global Sino-Soviet ideological split."
   },
   {
-    id: "c12-pol-11-mcq-12",
-    question: "What immediate geopolitical development prompted India to sign the 20-Year Treaty with the Soviet Union in August 1971?",
-    options: [
+    "id": "c12-pol-11-mcq-12",
+    "question": "What immediate geopolitical development prompted India to sign the 20-Year Treaty with the Soviet Union in August 1971?",
+    "options": [
       "A):   The Chinese nuclear test at Lop Nur in 1964",
-      "B):   The secret visit of Henry Kissinger to China facilitating a US-China-Pakistan diplomatic alignment",
+      "B):   The outbreak of the Korean War",
       "C):   The signing of the Tashkent Agreement under Soviet mediation",
-      "D):   The outbreak of the Korean War"
+      "D):   The secret visit of Henry Kissinger to China facilitating a US-China-Pakistan diplomatic alignment"
     ],
-    correctAnswer: "B",
-    explanation: "Kissinger's secret mission to Beijing through Pakistan signaled an emerging US-China-Pakistan axis against India during the East Pakistan crisis, prompting India to sign the treaty with the USSR."
+    "correctAnswer": "D",
+    "explanation": "Kissinger's secret mission to Beijing through Pakistan signaled an emerging US-China-Pakistan axis against India during the East Pakistan crisis, prompting India to sign the treaty with the USSR."
   },
   {
-    id: "c12-pol-11-mcq-13",
-    question: "Under the Shimla Agreement (1972), the 1971 ceasefire line between India and Pakistan was formally redesignated as the:",
-    options: [
-      "A):   Radcliffe Line",
+    "id": "c12-pol-11-mcq-13",
+    "question": "Under the Shimla Agreement (1972), the 1971 ceasefire line between India and Pakistan was formally redesignated as the:",
+    "options": [
+      "A):   Line of Control (LoC)",
       "B):   Line of Actual Control (LAC)",
-      "C):   Line of Control (LoC)",
+      "C):   Radcliffe Line",
       "D):   Durand Line"
     ],
-    correctAnswer: "C",
-    explanation: "The Shimla Agreement redesignated the Jammu & Kashmir ceasefire line as the 'Line of Control' (LoC), which both nations committed not to violate."
+    "correctAnswer": "A",
+    "explanation": "The Shimla Agreement redesignated the Jammu & Kashmir ceasefire line as the 'Line of Control' (LoC), which both nations committed not to violate."
   },
   {
-    id: "c12-pol-11-mcq-14",
-    question: "What does the 'No First Use' (NFU) policy in India's official Nuclear Doctrine signify?",
-    options: [
+    "id": "c12-pol-11-mcq-14",
+    "question": "What does the 'No First Use' (NFU) policy in India's official Nuclear Doctrine signify?",
+    "options": [
       "A):   India will never test another nuclear weapon in Rajasthan",
       "B):   India will never be the first to initiate a nuclear strike in any armed conflict",
       "C):   India will destroy its nuclear stockpile unilaterally within ten years",
       "D):   India will use nuclear weapons only with prior authorization from the UN Security Council"
     ],
-    correctAnswer: "B",
-    explanation: "No First Use means India pledges never to initiate a nuclear attack, reserving nuclear weapons exclusively for retaliatory strikes if attacked with nuclear weapons."
+    "correctAnswer": "B",
+    "explanation": "No First Use means India pledges never to initiate a nuclear attack, reserving nuclear weapons exclusively for retaliatory strikes if attacked with nuclear weapons."
   },
   {
-    id: "c12-pol-11-mcq-15",
-    question: "Which of the following leaders presciently warned Nehru about Chinese aggressive designs on Tibet and the Himalayan frontier in November 1950?",
-    options: [
+    "id": "c12-pol-11-mcq-15",
+    "question": "Which of the following leaders presciently warned Nehru about Chinese aggressive designs on Tibet and the Himalayan frontier in November 1950?",
+    "options": [
       "A):   Dr. B.R. Ambedkar",
-      "B):   Sardar Vallabhbhai Patel",
-      "C):   C. Rajagopalachari",
+      "B):   C. Rajagopalachari",
+      "C):   Sardar Vallabhbhai Patel",
       "D):   Jayaprakash Narayan"
     ],
-    correctAnswer: "B",
-    explanation: "Sardar Vallabhbhai Patel wrote a prescient letter to Nehru on 7 November 1950 warning that communist China was an expansionist power threatening India's northern borders."
+    "correctAnswer": "C",
+    "explanation": "Sardar Vallabhbhai Patel wrote a prescient letter to Nehru on 7 November 1950 warning that communist China was an expansionist power threatening India's northern borders."
   },
-
-  // Tier 3: Analytical, Assertion-Reason & Chronology (Q16 to Q20)
   {
-    id: "c12-pol-11-mcq-16",
-    question: "Assertion (A): Nehru's policy of Non-Alignment was neither isolationism nor neutrality.\nReason (R): India actively intervened in world affairs to mediate Cold War disputes and ease superpower tensions.",
-    options: [
-      "A):   Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+    "id": "c12-pol-11-mcq-16",
+    "question": "Assertion (A): Nehru's policy of Non-Alignment was neither isolationism nor neutrality.\nReason (R): India actively intervened in world affairs to mediate Cold War disputes and ease superpower tensions.",
+    "options": [
+      "A):   (A) is false, but (R) is true",
       "B):   Both (A) and (R) are true, but (R) is not the correct explanation of (A)",
       "C):   (A) is true, but (R) is false",
-      "D):   (A) is false, but (R) is true"
+      "D):   Both (A) and (R) are true, and (R) is the correct explanation of (A)"
     ],
-    correctAnswer: "A",
-    explanation: "Non-Alignment was not passive neutrality or isolationism; India actively took dynamic diplomatic positions, such as in the Korean and Suez crises, to broker international peace."
+    "correctAnswer": "D",
+    "explanation": "Non-Alignment was not passive neutrality or isolationism; India actively took dynamic diplomatic positions, such as in the Korean and Suez crises, to broker international peace."
   },
   {
-    id: "c12-pol-11-mcq-17",
-    question: "Which of the following events was the direct catalyst for the first-ever parliamentary No-Confidence Motion debated against the Nehru government in August 1963?",
-    options: [
-      "A):   The integration of Goa through military action in 1961",
-      "B):   The military setback in the 1962 Sino-Indian War",
+    "id": "c12-pol-11-mcq-17",
+    "question": "Which of the following events was the direct catalyst for the first-ever parliamentary No-Confidence Motion debated against the Nehru government in August 1963?",
+    "options": [
+      "A):   The military setback in the 1962 Sino-Indian War",
+      "B):   The integration of Goa through military action in 1961",
       "C):   The signing of the Indus Waters Treaty in 1960",
       "D):   The dismissal of the Communist ministry in Kerala in 1959"
     ],
-    correctAnswer: "B",
-    explanation: "The military debacle in the 1962 war with China shattered national confidence and prompted Acharya J.B. Kripalani to move the first No-Confidence Motion in August 1963."
+    "correctAnswer": "A",
+    "explanation": "The military debacle in the 1962 war with China shattered national confidence and prompted Acharya J.B. Kripalani to move the first No-Confidence Motion in August 1963."
   },
   {
-    id: "c12-pol-11-mcq-18",
-    question: "Assertion (A): India refused to sign the Comprehensive Test Ban Treaty (CTBT) in 1996.\nReason (R): The CTBT failed to provide a time-bound schedule for complete nuclear disarmament by the existing five nuclear-weapon states.",
-    options: [
-      "A):   Both (A) and (R) are true, and (R) is the correct explanation of (A)",
-      "B):   Both (A) and (R) are true, but (R) is not the correct explanation of (A)",
+    "id": "c12-pol-11-mcq-18",
+    "question": "Assertion (A): India refused to sign the Comprehensive Test Ban Treaty (CTBT) in 1996.\nReason (R): The CTBT failed to provide a time-bound schedule for complete nuclear disarmament by the existing five nuclear-weapon states.",
+    "options": [
+      "A):   Both (A) and (R) are true, but (R) is not the correct explanation of (A)",
+      "B):   Both (A) and (R) are true, and (R) is the correct explanation of (A)",
       "C):   (A) is true, but (R) is false",
       "D):   (A) is false, but (R) is true"
     ],
-    correctAnswer: "A",
-    explanation: "India rejected the CTBT because it froze the technological advantages of existing nuclear weapon states without compelling them to disarm on a time-bound schedule."
+    "correctAnswer": "B",
+    "explanation": "India rejected the CTBT because it froze the technological advantages of existing nuclear weapon states without compelling them to disarm on a time-bound schedule."
   },
   {
-    id: "c12-pol-11-mcq-19",
-    question: "Match List-I (Agreements/Events) with List-II (Year):\n1. Bandung Conference — (i) 1972\n2. Tashkent Declaration — (ii) 1955\n3. Shimla Agreement — (iii) 1966\n4. Pokhran-II Tests — (iv) 1998\nSelect the correct combination:",
-    options: [
-      "A):   1-(ii), 2-(iii), 3-(i), 4-(iv)",
+    "id": "c12-pol-11-mcq-19",
+    "question": "Match List-I (Agreements/Events) with List-II (Year):\n1. Bandung Conference — (i) 1972\n2. Tashkent Declaration — (ii) 1955\n3. Shimla Agreement — (iii) 1966\n4. Pokhran-II Tests — (iv) 1998\nSelect the correct combination:",
+    "options": [
+      "A):   1-(ii), 2-(i), 3-(iii), 4-(iv)",
       "B):   1-(iii), 2-(ii), 3-(iv), 4-(i)",
-      "C):   1-(ii), 2-(i), 3-(iii), 4-(iv)",
+      "C):   1-(ii), 2-(iii), 3-(i), 4-(iv)",
       "D):   1-(iv), 2-(iii), 3-(ii), 4-(i)"
     ],
-    correctAnswer: "A",
-    explanation: "Bandung Conference was in 1955; Tashkent Declaration in 1966; Shimla Agreement in 1972; Pokhran-II Tests in 1998."
+    "correctAnswer": "C",
+    "explanation": "Bandung Conference was in 1955; Tashkent Declaration in 1966; Shimla Agreement in 1972; Pokhran-II Tests in 1998."
   },
   {
-    id: "c12-pol-11-mcq-20",
-    question: "Arrange the following historical developments in chronological order:\n1. Liberation of Bangladesh and Niazi's surrender\n2. First underground nuclear test (Pokhran-I)\n3. Sino-Indian Border War\n4. Signing of the Panchsheel Agreement\nSelect the correct sequence:",
-    options: [
-      "A):   4 — 3 — 1 — 2",
+    "id": "c12-pol-11-mcq-20",
+    "question": "Arrange the following historical developments in chronological order:\n1. Liberation of Bangladesh and Niazi's surrender\n2. First underground nuclear test (Pokhran-I)\n3. Sino-Indian Border War\n4. Signing of the Panchsheel Agreement\nSelect the correct sequence:",
+    "options": [
+      "A):   2 — 4 — 3 — 1",
       "B):   3 — 4 — 2 — 1",
       "C):   4 — 1 — 3 — 2",
-      "D):   2 — 4 — 3 — 1"
+      "D):   4 — 3 — 1 — 2"
     ],
-    correctAnswer: "A",
-    explanation: "Panchsheel (1954) → Sino-Indian War (1962) → Bangladesh Liberation (1971) → Pokhran-I (1974)."
+    "correctAnswer": "D",
+    "explanation": "Panchsheel (1954) → Sino-Indian War (1962) → Bangladesh Liberation (1971) → Pokhran-I (1974)."
   }
 ];

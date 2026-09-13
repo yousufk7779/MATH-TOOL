@@ -614,249 +614,244 @@ export const c12Pol3HtmlSolutions = `
 /* -------------------------------------------------------------------------- */
 
 export const c12Pol3Mcqs = [
-  // --- TIER 1: BASIC & RECALL (Q1 to Q8) ---
   {
-    id: "c12-pol-3-mcq-1",
-    question: "Which country was formally admitted as the eighth member of SAARC at the New Delhi Summit in 2007?",
-    options: [
-      "A):   Myanmar",
-      "B):   Afghanistan",
+    "id": "c12-pol-3-mcq-1",
+    "question": "Which country was formally admitted as the eighth member of SAARC at the New Delhi Summit in 2007?",
+    "options": [
+      "A):   Afghanistan",
+      "B):   Myanmar",
       "C):   Mauritius",
-      "D):   Iran",
+      "D):   Iran"
     ],
-    correctAnswer: "b",
-    explanation: "Afghanistan was officially inducted as the eighth member of SAARC at the 14th SAARC Summit in New Delhi in April 2007.",
+    "correctAnswer": "A",
+    "explanation": "Afghanistan was officially inducted as the eighth member of SAARC at the 14th SAARC Summit in New Delhi in April 2007."
   },
   {
-    id: "c12-pol-3-mcq-2",
-    question: "General Pervez Musharraf seized power in Pakistan after overthrowing which elected Prime Minister in a military coup in October 1999?",
-    options: [
+    "id": "c12-pol-3-mcq-2",
+    "question": "General Pervez Musharraf seized power in Pakistan after overthrowing which elected Prime Minister in a military coup in October 1999?",
+    "options": [
       "A):   Benazir Bhutto",
-      "B):   Zulfikar Ali Bhutto",
-      "C):   Nawaz Sharif",
-      "D):   Imran Khan",
+      "B):   Nawaz Sharif",
+      "C):   Zulfikar Ali Bhutto",
+      "D):   Imran Khan"
     ],
-    correctAnswer: "c",
-    explanation: "General Pervez Musharraf staged a bloodless military coup in October 1999, overthrowing the civilian government of Prime Minister Nawaz Sharif.",
+    "correctAnswer": "B",
+    "explanation": "General Pervez Musharraf staged a bloodless military coup in October 1999, overthrowing the civilian government of Prime Minister Nawaz Sharif."
   },
   {
-    id: "c12-pol-3-mcq-3",
-    question: "In which year was the monarchy formally abolished in Nepal, declaring the nation a federal democratic republic?",
-    options: [
+    "id": "c12-pol-3-mcq-3",
+    "question": "In which year was the monarchy formally abolished in Nepal, declaring the nation a federal democratic republic?",
+    "options": [
       "A):   2001",
       "B):   2006",
       "C):   2008",
-      "D):   2015",
+      "D):   2015"
     ],
-    correctAnswer: "c",
-    explanation: "The Constituent Assembly of Nepal formally voted to abolish the 240-year-old Shah monarchy on May 28, 2008, establishing a federal democratic republic.",
+    "correctAnswer": "C",
+    "explanation": "The Constituent Assembly of Nepal formally voted to abolish the 240-year-old Shah monarchy on May 28, 2008, establishing a federal democratic republic."
   },
   {
-    id: "c12-pol-3-mcq-4",
-    question: "Which controversial legislative act passed in Sri Lanka in 1956 declared Sinhala as the sole official language of the country?",
-    options: [
+    "id": "c12-pol-3-mcq-4",
+    "question": "Which controversial legislative act passed in Sri Lanka in 1956 declared Sinhala as the sole official language of the country?",
+    "options": [
       "A):   Ceylon Autonomy Act",
-      "B):   Sinhala Only Act",
+      "B):   Colombo Declaration",
       "C):   Language Standardization Act",
-      "D):   Colombo Declaration",
+      "D):   Sinhala Only Act"
     ],
-    correctAnswer: "b",
-    explanation: "The Official Language Act No. 33 of 1956, commonly known as the 'Sinhala Only Act', made Sinhala the sole official language of government and education.",
+    "correctAnswer": "D",
+    "explanation": "The Official Language Act No. 33 of 1956, commonly known as the 'Sinhala Only Act', made Sinhala the sole official language of government and education."
   },
   {
-    id: "c12-pol-3-mcq-5",
-    question: "In which year was the South Asian Association for Regional Cooperation (SAARC) formally established in Dhaka?",
-    options: [
-      "A):   1980",
-      "B):   1985",
+    "id": "c12-pol-3-mcq-5",
+    "question": "In which year was the South Asian Association for Regional Cooperation (SAARC) formally established in Dhaka?",
+    "options": [
+      "A):   1985",
+      "B):   1980",
       "C):   1991",
-      "D):   1995",
+      "D):   1995"
     ],
-    correctAnswer: "b",
-    explanation: "SAARC was founded on December 8, 1985 in Dhaka, Bangladesh, by the heads of state of seven South Asian nations.",
+    "correctAnswer": "A",
+    "explanation": "SAARC was founded on December 8, 1985 in Dhaka, Bangladesh, by the heads of state of seven South Asian nations."
   },
   {
-    id: "c12-pol-3-mcq-6",
-    question: "The historic Indus Waters Treaty was signed in September 1960 between Prime Minister Jawaharlal Nehru and which Pakistani President?",
-    options: [
+    "id": "c12-pol-3-mcq-6",
+    "question": "The historic Indus Waters Treaty was signed in September 1960 between Prime Minister Jawaharlal Nehru and which Pakistani President?",
+    "options": [
       "A):   Iskander Mirza",
       "B):   Ayub Khan",
       "C):   Yahya Khan",
-      "D):   Zia-ul-Haq",
+      "D):   Zia-ul-Haq"
     ],
-    correctAnswer: "b",
-    explanation: "The Indus Waters Treaty was signed in Karachi on September 19, 1960 by Indian Prime Minister Jawaharlal Nehru and Field Marshal Ayub Khan.",
+    "correctAnswer": "B",
+    "explanation": "The Indus Waters Treaty was signed in Karachi on September 19, 1960 by Indian Prime Minister Jawaharlal Nehru and Field Marshal Ayub Khan."
   },
   {
-    id: "c12-pol-3-mcq-7",
-    question: "In which year did India conduct its second series of underground nuclear tests at Pokhran (Operation Shakti)?",
-    options: [
+    "id": "c12-pol-3-mcq-7",
+    "question": "In which year did India conduct its second series of underground nuclear tests at Pokhran (Operation Shakti)?",
+    "options": [
       "A):   1974",
       "B):   1991",
       "C):   1998",
-      "D):   2001",
+      "D):   2001"
     ],
-    correctAnswer: "c",
-    explanation: "India conducted five underground nuclear tests in Pokhran on May 11 and 13, 1998, followed weeks later by Pakistani nuclear tests in Chagai.",
+    "correctAnswer": "C",
+    "explanation": "India conducted five underground nuclear tests in Pokhran on May 11 and 13, 1998, followed weeks later by Pakistani nuclear tests in Chagai."
   },
   {
-    id: "c12-pol-3-mcq-8",
-    question: "The Indian Peace Keeping Force (IPKF) was deployed to Sri Lanka in 1987 under the agreement signed by Rajiv Gandhi and which Sri Lankan President?",
-    options: [
+    "id": "c12-pol-3-mcq-8",
+    "question": "The Indian Peace Keeping Force (IPKF) was deployed to Sri Lanka in 1987 under the agreement signed by Rajiv Gandhi and which Sri Lankan President?",
+    "options": [
       "A):   Sirimavo Bandaranaike",
-      "B):   J.R. Jayewardene",
+      "B):   Mahinda Rajapaksa",
       "C):   Ranasinghe Premadasa",
-      "D):   Mahinda Rajapaksa",
+      "D):   J.R. Jayewardene"
     ],
-    correctAnswer: "b",
-    explanation: "The Indo-Sri Lanka Accord was signed on July 29, 1987 in Colombo by Indian Prime Minister Rajiv Gandhi and President J.R. Jayewardene.",
+    "correctAnswer": "D",
+    "explanation": "The Indo-Sri Lanka Accord was signed on July 29, 1987 in Colombo by Indian Prime Minister Rajiv Gandhi and President J.R. Jayewardene."
   },
-
-  // --- TIER 2: CONCEPTUAL & COMPARATIVE (Q9 to Q15) ---
   {
-    id: "c12-pol-3-mcq-9",
-    question: "What was the Seven Party Alliance (SPA) in the context of Nepal's democratic movement?",
-    options: [
-      "A):   A military council supporting King Gyanendra",
-      "B):   A coalition of mainstream political parties fighting for the restoration of democracy",
+    "id": "c12-pol-3-mcq-9",
+    "question": "What was the Seven Party Alliance (SPA) in the context of Nepal's democratic movement?",
+    "options": [
+      "A):   A coalition of mainstream political parties fighting for the restoration of democracy",
+      "B):   A military council supporting King Gyanendra",
       "C):   An international diplomatic commission from the United Nations",
-      "D):   A trade union representing transport workers",
+      "D):   A trade union representing transport workers"
     ],
-    correctAnswer: "b",
-    explanation: "The SPA was an alliance formed by Nepal's major democratic parties to spearhead the 2006 popular pro-democracy movement against royal dictatorship.",
+    "correctAnswer": "A",
+    "explanation": "The SPA was an alliance formed by Nepal's major democratic parties to spearhead the 2006 popular pro-democracy movement against royal dictatorship."
   },
   {
-    id: "c12-pol-3-mcq-10",
-    question: "Which principle of the SAARC Charter is often cited as a key limitation in resolving the region's most pressing political deadlocks?",
-    options: [
-      "A):   Unanimous voting requirement and the exclusion of bilateral contentious issues",
-      "B):   Mandatory deployment of a combined military defense force",
+    "id": "c12-pol-3-mcq-10",
+    "question": "Which principle of the SAARC Charter is often cited as a key limitation in resolving the region's most pressing political deadlocks?",
+    "options": [
+      "A):   Mandatory deployment of a combined military defense force",
+      "B):   Unanimous voting requirement and the exclusion of bilateral contentious issues",
       "C):   Adoption of a single regional currency",
-      "D):   Free movement of citizens without passports",
+      "D):   Free movement of citizens without passports"
     ],
-    correctAnswer: "a",
-    explanation: "Article X of the SAARC Charter stipulates that decisions must be unanimous and that 'bilateral and contentious issues shall be excluded' from deliberations.",
+    "correctAnswer": "B",
+    "explanation": "Article X of the SAARC Charter stipulates that decisions must be unanimous and that 'bilateral and contentious issues shall be excluded' from deliberations."
   },
   {
-    id: "c12-pol-3-mcq-11",
-    question: "The South Asian Free Trade Area (SAFTA) agreement was signed at which SAARC Summit in January 2004?",
-    options: [
+    "id": "c12-pol-3-mcq-11",
+    "question": "The South Asian Free Trade Area (SAFTA) agreement was signed at which SAARC Summit in January 2004?",
+    "options": [
       "A):   Dhaka Summit",
       "B):   New Delhi Summit",
       "C):   Islamabad Summit",
-      "D):   Colombo Summit",
+      "D):   Colombo Summit"
     ],
-    correctAnswer: "c",
-    explanation: "SAFTA was signed at the 12th SAARC Summit in Islamabad, Pakistan, in January 2004, coming into force on January 1, 2006.",
+    "correctAnswer": "C",
+    "explanation": "SAFTA was signed at the 12th SAARC Summit in Islamabad, Pakistan, in January 2004, coming into force on January 1, 2006."
   },
   {
-    id: "c12-pol-3-mcq-12",
-    question: "The historic 2015 Land Boundary Agreement (LBA) between India and Bangladesh peacefully resolved which long-standing issue?",
-    options: [
+    "id": "c12-pol-3-mcq-12",
+    "question": "The historic 2015 Land Boundary Agreement (LBA) between India and Bangladesh peacefully resolved which long-standing issue?",
+    "options": [
       "A):   Maritime demarcation in the Bay of Bengal",
-      "B):   Exchange of 162 disputed border enclaves (chhitmahals)",
+      "B):   Joint transit across the Siliguri Corridor",
       "C):   Construction of the Farakka Barrage",
-      "D):   Joint transit across the Siliguri Corridor",
+      "D):   Exchange of 162 disputed border enclaves (chhitmahals)"
     ],
-    correctAnswer: "b",
-    explanation: "The 2015 LBA enabled the exchange of 162 enclaves between India and Bangladesh, granting long-delayed citizenship rights to over 50,000 residents.",
+    "correctAnswer": "D",
+    "explanation": "The 2015 LBA enabled the exchange of 162 enclaves between India and Bangladesh, granting long-delayed citizenship rights to over 50,000 residents."
   },
   {
-    id: "c12-pol-3-mcq-13",
-    question: "Under the Gujral Doctrine of 1996, what was India's core operational posture toward its smaller South Asian neighbors?",
-    options: [
-      "A):   Demanding proportional military alliances from all neighbors",
-      "B):   Extending unilateral concessions in good faith without seeking reciprocal benefits",
+    "id": "c12-pol-3-mcq-13",
+    "question": "Under the Gujral Doctrine of 1996, what was India's core operational posture toward its smaller South Asian neighbors?",
+    "options": [
+      "A):   Extending unilateral concessions in good faith without seeking reciprocal benefits",
+      "B):   Demanding proportional military alliances from all neighbors",
       "C):   Imposing uniform tariffs on all goods entering the subcontinent",
-      "D):   Establishing military bases across the Indian Ocean",
+      "D):   Establishing military bases across the Indian Ocean"
     ],
-    correctAnswer: "b",
-    explanation: "The Gujral Doctrine advocated that India should not seek reciprocity from smaller neighbors but give whatever it can in good faith.",
+    "correctAnswer": "A",
+    "explanation": "The Gujral Doctrine advocated that India should not seek reciprocity from smaller neighbors but give whatever it can in good faith."
   },
   {
-    id: "c12-pol-3-mcq-14",
-    question: "In which year did the civil war in Sri Lanka formally end with the military defeat of the LTTE and the death of Velupillai Prabhakaran?",
-    options: [
+    "id": "c12-pol-3-mcq-14",
+    "question": "In which year did the civil war in Sri Lanka formally end with the military defeat of the LTTE and the death of Velupillai Prabhakaran?",
+    "options": [
       "A):   2004",
-      "B):   2006",
-      "C):   2009",
-      "D):   2012",
+      "B):   2009",
+      "C):   2006",
+      "D):   2012"
     ],
-    correctAnswer: "c",
-    explanation: "The 26-year-old Sri Lankan civil war concluded in May 2009 when government troops overran the LTTE's final stronghold, killing Prabhakaran.",
+    "correctAnswer": "B",
+    "explanation": "The 26-year-old Sri Lankan civil war concluded in May 2009 when government troops overran the LTTE's final stronghold, killing Prabhakaran."
   },
   {
-    id: "c12-pol-3-mcq-15",
-    question: "Which disputed frontier territory in Ladakh witnessed a high-altitude armed conflict between India and Pakistan in the summer of 1999?",
-    options: [
+    "id": "c12-pol-3-mcq-15",
+    "question": "Which disputed frontier territory in Ladakh witnessed a high-altitude armed conflict between India and Pakistan in the summer of 1999?",
+    "options": [
       "A):   Siachen Glacier",
-      "B):   Kargil",
-      "C):   Sir Creek",
-      "D):   Aksai Chin",
+      "B):   Sir Creek",
+      "C):   Kargil",
+      "D):   Aksai Chin"
     ],
-    correctAnswer: "b",
-    explanation: "The Kargil War was fought between May and July 1999 after Pakistani soldiers and armed infiltrators occupied strategic heights on the Indian side of the LoC.",
+    "correctAnswer": "C",
+    "explanation": "The Kargil War was fought between May and July 1999 after Pakistani soldiers and armed infiltrators occupied strategic heights on the Indian side of the LoC."
   },
-
-  // --- TIER 3: ANALYTICAL & NEIGHBOUR RELATIONS (Q16 to Q20) ---
   {
-    id: "c12-pol-3-mcq-16",
-    question: "Operation Cactus was a successful 1988 Indian military mission dispatched to thwart an armed mercenary coup in which country?",
-    options: [
+    "id": "c12-pol-3-mcq-16",
+    "question": "Operation Cactus was a successful 1988 Indian military mission dispatched to thwart an armed mercenary coup in which country?",
+    "options": [
       "A):   Seychelles",
       "B):   Mauritius",
-      "C):   Maldives",
-      "D):   Sri Lanka",
+      "C):   Sri Lanka",
+      "D):   Maldives"
     ],
-    correctAnswer: "c",
-    explanation: "In November 1988, Indian paratroopers and naval vessels launched Operation Cactus to rescue Maldivian President Gayoom from an armed coup by mercenaries.",
+    "correctAnswer": "D",
+    "explanation": "In November 1988, Indian paratroopers and naval vessels launched Operation Cactus to rescue Maldivian President Gayoom from an armed coup by mercenaries."
   },
   {
-    id: "c12-pol-3-mcq-17",
-    question: "Sharing of waters of which major river remains a persistent point of diplomatic negotiation between India and Bangladesh?",
-    options: [
-      "A):   Ganga",
+    "id": "c12-pol-3-mcq-17",
+    "question": "Sharing of waters of which major river remains a persistent point of diplomatic negotiation between India and Bangladesh?",
+    "options": [
+      "A):   Teesta",
       "B):   Brahmaputra",
-      "C):   Teesta",
-      "D):   Meghna",
+      "C):   Ganga",
+      "D):   Meghna"
     ],
-    correctAnswer: "c",
-    explanation: "While the 1996 Ganga Water Treaty resolved Farakka disputes, the treaty for sharing the waters of the Teesta River remains unsigned.",
+    "correctAnswer": "A",
+    "explanation": "While the 1996 Ganga Water Treaty resolved Farakka disputes, the treaty for sharing the waters of the Teesta River remains unsigned."
   },
   {
-    id: "c12-pol-3-mcq-18",
-    question: "Which landlocked Himalayan country signed a landmark Treaty of Friendship with India in 1949 (updated in 2007) and remains India's closest regional ally?",
-    options: [
+    "id": "c12-pol-3-mcq-18",
+    "question": "Which landlocked Himalayan country signed a landmark Treaty of Friendship with India in 1949 (updated in 2007) and remains India's closest regional ally?",
+    "options": [
       "A):   Nepal",
       "B):   Bhutan",
       "C):   Sikkim",
-      "D):   Tibet",
+      "D):   Tibet"
     ],
-    correctAnswer: "b",
-    explanation: "Bhutan enjoys an exemplary relationship with India, bound by the 1949 Treaty of Friendship (revised in 2007), with deep cooperation in clean hydroelectricity.",
+    "correctAnswer": "B",
+    "explanation": "Bhutan enjoys an exemplary relationship with India, bound by the 1949 Treaty of Friendship (revised in 2007), with deep cooperation in clean hydroelectricity."
   },
   {
-    id: "c12-pol-3-mcq-19",
-    question: "The territory of 'Sir Creek', a disputed 96-kilometer tidal estuary between India and Pakistan, is located in which border region?",
-    options: [
+    "id": "c12-pol-3-mcq-19",
+    "question": "The territory of 'Sir Creek', a disputed 96-kilometer tidal estuary between India and Pakistan, is located in which border region?",
+    "options": [
       "A):   Punjab border near Wagah",
-      "B):   Rann of Kutch marshlands (Gujarat-Sindh)",
-      "C):   Line of Control in Kashmir",
-      "D):   Thar Desert in Rajasthan",
+      "B):   Line of Control in Kashmir",
+      "C):   Rann of Kutch marshlands (Gujarat-Sindh)",
+      "D):   Thar Desert in Rajasthan"
     ],
-    correctAnswer: "b",
-    explanation: "Sir Creek is a 96-km strip of water in the marshlands of the Rann of Kutch separating India's Gujarat from Pakistan's Sindh province.",
+    "correctAnswer": "C",
+    "explanation": "Sir Creek is a 96-km strip of water in the marshlands of the Rann of Kutch separating India's Gujarat from Pakistan's Sindh province."
   },
   {
-    id: "c12-pol-3-mcq-20",
-    question: "Consider the following statements regarding the 1987 Indo-Sri Lanka Accord:\n1. It provided for the deployment of the Indian Peace Keeping Force (IPKF) to disarm Tamil militants.\n2. It recommended devolution of power to Sri Lanka's provinces under the 13th Amendment.\n3. The LTTE embraced the accord wholeheartedly and permanently laid down its weapons.\nWhich of the statements given above are correct?",
-    options: [
-      "A):   1 and 2 only",
+    "id": "c12-pol-3-mcq-20",
+    "question": "Consider the following statements regarding the 1987 Indo-Sri Lanka Accord:\n1. It provided for the deployment of the Indian Peace Keeping Force (IPKF) to disarm Tamil militants.\n2. It recommended devolution of power to Sri Lanka's provinces under the 13th Amendment.\n3. The LTTE embraced the accord wholeheartedly and permanently laid down its weapons.\nWhich of the statements given above are correct?",
+    "options": [
+      "A):   1, 2, and 3",
       "B):   2 and 3 only",
       "C):   1 and 3 only",
-      "D):   1, 2, and 3",
+      "D):   1 and 2 only"
     ],
-    correctAnswer: "a",
-    explanation: "Statements 1 and 2 are historically accurate. Statement 3 is incorrect because the LTTE refused to surrender its weapons and entered into armed conflict with the IPKF.",
-  },
+    "correctAnswer": "D",
+    "explanation": "Statements 1 and 2 are historically accurate. Statement 3 is incorrect because the LTTE refused to surrender its weapons and entered into armed conflict with the IPKF."
+  }
 ];

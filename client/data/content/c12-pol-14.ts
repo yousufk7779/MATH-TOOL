@@ -699,249 +699,244 @@ export const c12Pol14HtmlSolutions = `
 /* -------------------------------------------------------------------------- */
 
 export const c12Pol14Mcqs = [
-  // Tier 1: Direct Recall, Accords & Facts (Q1 to Q8)
   {
-    id: "c12-pol-14-mcq-1",
-    question: "In which year was the Punjabi Suba movement successful in bifurcating Punjab into Punjab and Haryana?",
-    options: [
-      "A):   1956",
-      "B):   1966",
+    "id": "c12-pol-14-mcq-1",
+    "question": "In which year was the Punjabi Suba movement successful in bifurcating Punjab into Punjab and Haryana?",
+    "options": [
+      "A):   1966",
+      "B):   1956",
       "C):   1971",
       "D):   1984"
     ],
-    correctAnswer: "B",
-    explanation: "Punjab was reorganized on linguistic lines in 1966, carving out Haryana as a separate Hindi-speaking state."
+    "correctAnswer": "A",
+    "explanation": "Punjab was reorganized on linguistic lines in 1966, carving out Haryana as a separate Hindi-speaking state."
   },
   {
-    id: "c12-pol-14-mcq-2",
-    question: "In which year did the Shiromani Akali Dal adopt the Anandpur Sahib Resolution?",
-    options: [
+    "id": "c12-pol-14-mcq-2",
+    "question": "In which year did the Shiromani Akali Dal adopt the Anandpur Sahib Resolution?",
+    "options": [
       "A):   1967",
       "B):   1973",
       "C):   1984",
       "D):   1985"
     ],
-    correctAnswer: "B",
-    explanation: "The Anandpur Sahib Resolution demanding greater state autonomy for Punjab was passed in 1973."
+    "correctAnswer": "B",
+    "explanation": "The Anandpur Sahib Resolution demanding greater state autonomy for Punjab was passed in 1973."
   },
   {
-    id: "c12-pol-14-mcq-3",
-    question: "What was the code name of the Indian Army operation conducted in June 1984 at the Golden Temple in Amritsar?",
-    options: [
+    "id": "c12-pol-14-mcq-3",
+    "question": "What was the code name of the Indian Army operation conducted in June 1984 at the Golden Temple in Amritsar?",
+    "options": [
       "A):   Operation Vijay",
-      "B):   Operation Blue Star",
-      "C):   Operation Black Thunder",
+      "B):   Operation Black Thunder",
+      "C):   Operation Blue Star",
       "D):   Operation Cactus"
     ],
-    correctAnswer: "B",
-    explanation: "Operation Blue Star was conducted in June 1984 to flush out armed militants from the Golden Temple complex."
+    "correctAnswer": "C",
+    "explanation": "Operation Blue Star was conducted in June 1984 to flush out armed militants from the Golden Temple complex."
   },
   {
-    id: "c12-pol-14-mcq-4",
-    question: "Who was the Maharaja of Jammu & Kashmir who signed the Instrument of Accession with India in October 1947?",
-    options: [
+    "id": "c12-pol-14-mcq-4",
+    "question": "Who was the Maharaja of Jammu & Kashmir who signed the Instrument of Accession with India in October 1947?",
+    "options": [
       "A):   Maharaja Gulab Singh",
-      "B):   Maharaja Hari Singh",
+      "B):   Karan Singh",
       "C):   Sheikh Abdullah",
-      "D):   Karan Singh"
+      "D):   Maharaja Hari Singh"
     ],
-    correctAnswer: "B",
-    explanation: "Maharaja Hari Singh signed the Instrument of Accession on 26 October 1947 following tribal invasion from Pakistan."
+    "correctAnswer": "D",
+    "explanation": "Maharaja Hari Singh signed the Instrument of Accession on 26 October 1947 following tribal invasion from Pakistan."
   },
   {
-    id: "c12-pol-14-mcq-5",
-    question: "Which student organization led the six-year Assam Movement from 1979 to 1985 against illegal immigrants?",
-    options: [
-      "A):   NSUI",
-      "B):   All Assam Students Union (AASU)",
+    "id": "c12-pol-14-mcq-5",
+    "question": "Which student organization led the six-year Assam Movement from 1979 to 1985 against illegal immigrants?",
+    "options": [
+      "A):   All Assam Students Union (AASU)",
+      "B):   NSUI",
       "C):   ABVP",
       "D):   SFI"
     ],
-    correctAnswer: "B",
-    explanation: "AASU (All Assam Students Union) spearheaded the mass agitation against illegal immigrants in Assam."
+    "correctAnswer": "A",
+    "explanation": "AASU (All Assam Students Union) spearheaded the mass agitation against illegal immigrants in Assam."
   },
   {
-    id: "c12-pol-14-mcq-6",
-    question: "What was the cutoff date fixed in the 1985 Assam Accord for detecting and deporting illegal foreigners?",
-    options: [
+    "id": "c12-pol-14-mcq-6",
+    "question": "What was the cutoff date fixed in the 1985 Assam Accord for detecting and deporting illegal foreigners?",
+    "options": [
       "A):   15 August 1947",
-      "B):   26 January 1950",
-      "C):   24 March 1971",
+      "B):   24 March 1971",
+      "C):   26 January 1950",
       "D):   1 January 1980"
     ],
-    correctAnswer: "C",
-    explanation: "The Assam Accord established 24 March 1971 as the cutoff date for detecting and deporting illegal migrants."
+    "correctAnswer": "B",
+    "explanation": "The Assam Accord established 24 March 1971 as the cutoff date for detecting and deporting illegal migrants."
   },
   {
-    id: "c12-pol-14-mcq-7",
-    question: "Who founded the Mizo National Front (MNF) and later signed the 1986 Mizoram Peace Accord with Rajiv Gandhi?",
-    options: [
+    "id": "c12-pol-14-mcq-7",
+    "question": "Who founded the Mizo National Front (MNF) and later signed the 1986 Mizoram Peace Accord with Rajiv Gandhi?",
+    "options": [
       "A):   Angami Zapu Phizo",
-      "B):   Laldenga",
-      "C):   Harchand Singh Longowal",
+      "B):   Harchand Singh Longowal",
+      "C):   Laldenga",
       "D):   Prafulla Kumar Mahanta"
     ],
-    correctAnswer: "B",
-    explanation: "Laldenga founded the MNF following the 1959 Mautam famine and signed the 1986 Mizoram Peace Accord."
+    "correctAnswer": "C",
+    "explanation": "Laldenga founded the MNF following the 1959 Mautam famine and signed the 1986 Mizoram Peace Accord."
   },
   {
-    id: "c12-pol-14-mcq-8",
-    question: "Which regional political party was formed by the student leaders of AASU following the 1985 Assam Accord?",
-    options: [
-      "A):   Asom Gana Parishad (AGP)",
+    "id": "c12-pol-14-mcq-8",
+    "question": "Which regional political party was formed by the student leaders of AASU following the 1985 Assam Accord?",
+    "options": [
+      "A):   United Minorities Front",
       "B):   Bodoland Peoples Front",
       "C):   Mizo National Front",
-      "D):   United Minorities Front"
+      "D):   Asom Gana Parishad (AGP)"
     ],
-    correctAnswer: "A",
-    explanation: "The AASU leadership founded the Asom Gana Parishad (AGP), winning the Assam state elections in December 1985."
+    "correctAnswer": "D",
+    "explanation": "The AASU leadership founded the Asom Gana Parishad (AGP), winning the Assam state elections in December 1985."
   },
-
-  // Tier 2: Conceptual & Comparative (Q9 to Q15)
   {
-    id: "c12-pol-14-mcq-9",
-    question: "What was the core constitutional premise of the Indian approach to handling regional diversity?",
-    options: [
-      "A):   Suppressing regional languages to establish a single national language",
-      "B):   Treating regional diversities as legitimate expressions of democracy through federal accommodation",
+    "id": "c12-pol-14-mcq-9",
+    "question": "What was the core constitutional premise of the Indian approach to handling regional diversity?",
+    "options": [
+      "A):   Treating regional diversities as legitimate expressions of democracy through federal accommodation",
+      "B):   Suppressing regional languages to establish a single national language",
       "C):   Abolishing state governments and establishing a unitary presidential system",
       "D):   Encouraging states to secede from the Union whenever disagreements arise"
     ],
-    correctAnswer: "B",
-    explanation: "The Indian model views regional diversities as normal components of democracy, accommodating them through federal power sharing."
+    "correctAnswer": "A",
+    "explanation": "The Indian model views regional diversities as normal components of democracy, accommodating them through federal power sharing."
   },
   {
-    id: "c12-pol-14-mcq-10",
-    question: "What was the tragic consequence that immediately followed the assassination of Indira Gandhi on 31 October 1984?",
-    options: [
+    "id": "c12-pol-14-mcq-10",
+    "question": "What was the tragic consequence that immediately followed the assassination of Indira Gandhi on 31 October 1984?",
+    "options": [
       "A):   The immediate declaration of war against Pakistan",
       "B):   Widespread, state-condoned anti-Sikh violence across Delhi and northern India killing over 2,000 Sikhs",
       "C):   The dissolution of all state assemblies across India",
       "D):   The cancellation of the Indian Constitution"
     ],
-    correctAnswer: "B",
-    explanation: "The assassination was followed by horrific anti-Sikh riots across Delhi and northern cities resulting in over 2,000 deaths."
+    "correctAnswer": "B",
+    "explanation": "The assassination was followed by horrific anti-Sikh riots across Delhi and northern cities resulting in over 2,000 deaths."
   },
   {
-    id: "c12-pol-14-mcq-11",
-    question: "What was the significance of the 1974 Indira–Sheikh Accord regarding Jammu & Kashmir?",
-    options: [
+    "id": "c12-pol-14-mcq-11",
+    "question": "What was the significance of the 1974 Indira–Sheikh Accord regarding Jammu & Kashmir?",
+    "options": [
       "A):   It transferred Kashmir to the control of the United Nations",
-      "B):   It restored Sheikh Abdullah as Chief Minister and affirmed J&K's status as a constituent unit of India under Article 370",
-      "C):   It revoked Article 370 completely",
+      "B):   It revoked Article 370 completely",
+      "C):   It restored Sheikh Abdullah as Chief Minister and affirmed J&K's status as a constituent unit of India under Article 370",
       "D):   It partitioned the state into two Union Territories"
     ],
-    correctAnswer: "B",
-    explanation: "The 1974 accord settled long-standing friction, restoring Sheikh Abdullah to power as Chief Minister within the Indian constitutional framework."
+    "correctAnswer": "C",
+    "explanation": "The 1974 accord settled long-standing friction, restoring Sheikh Abdullah to power as Chief Minister within the Indian constitutional framework."
   },
   {
-    id: "c12-pol-14-mcq-12",
-    question: "Which of the following events is widely cited by political analysts as the trigger for the eruption of armed insurgency in Kashmir in 1989?",
-    options: [
+    "id": "c12-pol-14-mcq-12",
+    "question": "Which of the following events is widely cited by political analysts as the trigger for the eruption of armed insurgency in Kashmir in 1989?",
+    "options": [
       "A):   The signing of the Tashkent Agreement in 1966",
-      "B):   The blatant rigging of the 1987 J&K Assembly elections against the Muslim United Front (MUF)",
+      "B):   The dismissal of the Kerala communist government in 1959",
       "C):   The Indus Waters Treaty of 1960",
-      "D):   The dismissal of the Kerala communist government in 1959"
+      "D):   The blatant rigging of the 1987 J&K Assembly elections against the Muslim United Front (MUF)"
     ],
-    correctAnswer: "B",
-    explanation: "The widespread manipulation of the 1987 elections alienated Kashmiri youth, driving many into armed separatist militancy."
+    "correctAnswer": "D",
+    "explanation": "The widespread manipulation of the 1987 elections alienated Kashmiri youth, driving many into armed separatist militancy."
   },
   {
-    id: "c12-pol-14-mcq-13",
-    question: "What natural calamity in 1959 ignited intense resentment in the Mizo Hills against the Assam state government?",
-    options: [
-      "A):   The Great Brahmaputra Earthquake",
-      "B):   The Mautam Famine caused by rat infestations after bamboo flowering",
+    "id": "c12-pol-14-mcq-13",
+    "question": "What natural calamity in 1959 ignited intense resentment in the Mizo Hills against the Assam state government?",
+    "options": [
+      "A):   The Mautam Famine caused by rat infestations after bamboo flowering",
+      "B):   The Great Brahmaputra Earthquake",
       "C):   A catastrophic tsunami in the Bay of Bengal",
       "D):   A cloudburst and glacial lake outburst"
     ],
-    correctAnswer: "B",
-    explanation: "The Mautam famine of 1959 and the Assam government's apathy led Laldenga to form the Mizo National Front to fight for independence."
+    "correctAnswer": "A",
+    "explanation": "The Mautam famine of 1959 and the Assam government's apathy led Laldenga to form the Mizo National Front to fight for independence."
   },
   {
-    id: "c12-pol-14-mcq-14",
-    question: "What was the narrow 22-kilometer corridor connecting mainland India with the North Eastern states popularly called?",
-    options: [
+    "id": "c12-pol-14-mcq-14",
+    "question": "What was the narrow 22-kilometer corridor connecting mainland India with the North Eastern states popularly called?",
+    "options": [
       "A):   The Khyber Pass",
       "B):   The Siliguri Corridor ('Chicken's Neck')",
       "C):   The Zojila Corridor",
       "D):   The Wagah Border Corridor"
     ],
-    correctAnswer: "B",
-    explanation: "The Siliguri Corridor, often termed the 'Chicken's Neck', is a narrow 22-km land strip connecting the North East with mainland India."
+    "correctAnswer": "B",
+    "explanation": "The Siliguri Corridor, often termed the 'Chicken's Neck', is a narrow 22-km land strip connecting the North East with mainland India."
   },
   {
-    id: "c12-pol-14-mcq-15",
-    question: "Which of the following was NOT a provision of the Rajiv Gandhi–Longowal Accord (Punjab Accord) of 1985?",
-    options: [
+    "id": "c12-pol-14-mcq-15",
+    "question": "Which of the following was NOT a provision of the Rajiv Gandhi–Longowal Accord (Punjab Accord) of 1985?",
+    "options": [
       "A):   Transfer of Chandigarh to Punjab",
       "B):   Tribunal to adjudicate the Ravi-Beas river water dispute",
       "C):   Granting complete sovereignty and independence to Punjab as Khalistan",
       "D):   Rehabilitation of youth affected by violence and withdrawal of AFSPA"
     ],
-    correctAnswer: "C",
-    explanation: "The Punjab Accord was an agreement within the Indian constitutional framework; granting independence or Khalistan was never part of it."
+    "correctAnswer": "C",
+    "explanation": "The Punjab Accord was an agreement within the Indian constitutional framework; granting independence or Khalistan was never part of it."
   },
-
-  // Tier 3: Analytical, Assertion-Reason & Chronology (Q16 to Q20)
   {
-    id: "c12-pol-14-mcq-16",
-    question: "Assertion (A): The Mizoram Peace Accord of 1986 is considered one of the most successful peace accords in post-colonial history.\nReason (R): It successfully transitioned insurgent leader Laldenga into a democratic Chief Minister and permanently ended two decades of armed rebellion.",
-    options: [
-      "A):   Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+    "id": "c12-pol-14-mcq-16",
+    "question": "Assertion (A): The Mizoram Peace Accord of 1986 is considered one of the most successful peace accords in post-colonial history.\nReason (R): It successfully transitioned insurgent leader Laldenga into a democratic Chief Minister and permanently ended two decades of armed rebellion.",
+    "options": [
+      "A):   (A) is false, but (R) is true",
       "B):   Both (A) and (R) are true, but (R) is not the correct explanation of (A)",
       "C):   (A) is true, but (R) is false",
-      "D):   (A) is false, but (R) is true"
+      "D):   Both (A) and (R) are true, and (R) is the correct explanation of (A)"
     ],
-    correctAnswer: "A",
-    explanation: "The Mizo Accord was a stellar success because the MNF laid down arms, joined the electoral mainstream, and Mizoram became one of India's most peaceful states."
+    "correctAnswer": "D",
+    "explanation": "The Mizo Accord was a stellar success because the MNF laid down arms, joined the electoral mainstream, and Mizoram became one of India's most peaceful states."
   },
   {
-    id: "c12-pol-14-mcq-17",
-    question: "Assertion (A): Regional aspirations in India are an existential threat to national sovereignty.\nReason (R): Regional parties always demand the secession of their states from the Indian Union.",
-    options: [
-      "A):   Both (A) and (R) are true",
-      "B):   Both (A) and (R) are false",
+    "id": "c12-pol-14-mcq-17",
+    "question": "Assertion (A): Regional aspirations in India are an existential threat to national sovereignty.\nReason (R): Regional parties always demand the secession of their states from the Indian Union.",
+    "options": [
+      "A):   Both (A) and (R) are false",
+      "B):   Both (A) and (R) are true",
       "C):   (A) is true, but (R) is false",
       "D):   (A) is false, but (R) is true"
     ],
-    correctAnswer: "B",
-    explanation: "Both statements are false. Regional aspirations are healthy democratic expressions for autonomy, and regional parties (like DMK, TDP, Akali Dal) operate within the Indian constitutional framework."
+    "correctAnswer": "A",
+    "explanation": "Both statements are false. Regional aspirations are healthy democratic expressions for autonomy, and regional parties (like DMK, TDP, Akali Dal) operate within the Indian constitutional framework."
   },
   {
-    id: "c12-pol-14-mcq-18",
-    question: "Match List-I (Movement / Leader) with List-II (State / Region):\n1. Laldenga — (i) Assam\n2. Harchand Singh Longowal — (ii) Mizoram\n3. Prafulla Kumar Mahanta — (iii) Punjab\n4. Sheikh Abdullah — (iv) Jammu & Kashmir\nSelect the correct combination:",
-    options: [
-      "A):   1-(ii), 2-(iii), 3-(i), 4-(iv)",
-      "B):   1-(i), 2-(ii), 3-(iii), 4-(iv)",
+    "id": "c12-pol-14-mcq-18",
+    "question": "Match List-I (Movement / Leader) with List-II (State / Region):\n1. Laldenga — (i) Assam\n2. Harchand Singh Longowal — (ii) Mizoram\n3. Prafulla Kumar Mahanta — (iii) Punjab\n4. Sheikh Abdullah — (iv) Jammu & Kashmir\nSelect the correct combination:",
+    "options": [
+      "A):   1-(i), 2-(ii), 3-(iii), 4-(iv)",
+      "B):   1-(ii), 2-(iii), 3-(i), 4-(iv)",
       "C):   1-(ii), 2-(i), 3-(iii), 4-(iv)",
       "D):   1-(iv), 2-(iii), 3-(ii), 4-(i)"
     ],
-    correctAnswer: "A",
-    explanation: "Laldenga led Mizoram; Longowal led Akali Dal in Punjab; Mahanta led AASU in Assam; Sheikh Abdullah led Kashmir."
+    "correctAnswer": "B",
+    "explanation": "Laldenga led Mizoram; Longowal led Akali Dal in Punjab; Mahanta led AASU in Assam; Sheikh Abdullah led Kashmir."
   },
   {
-    id: "c12-pol-14-mcq-19",
-    question: "Arrange the following events in chronological order:\n1. Signing of the Assam Accord\n2. Operation Blue Star in Amritsar\n3. Adoption of the Anandpur Sahib Resolution\n4. Signing of the Mizoram Peace Accord\nSelect the correct sequence:",
-    options: [
-      "A):   3 — 2 — 1 — 4",
+    "id": "c12-pol-14-mcq-19",
+    "question": "Arrange the following events in chronological order:\n1. Signing of the Assam Accord\n2. Operation Blue Star in Amritsar\n3. Adoption of the Anandpur Sahib Resolution\n4. Signing of the Mizoram Peace Accord\nSelect the correct sequence:",
+    "options": [
+      "A):   3 — 1 — 2 — 4",
       "B):   2 — 3 — 1 — 4",
-      "C):   3 — 1 — 2 — 4",
+      "C):   3 — 2 — 1 — 4",
       "D):   1 — 3 — 2 — 4"
     ],
-    correctAnswer: "A",
-    explanation: "Anandpur Sahib Resolution (1973) → Operation Blue Star (June 1984) → Assam Accord (August 1985) → Mizoram Peace Accord (1986)."
+    "correctAnswer": "C",
+    "explanation": "Anandpur Sahib Resolution (1973) → Operation Blue Star (June 1984) → Assam Accord (August 1985) → Mizoram Peace Accord (1986)."
   },
   {
-    id: "c12-pol-14-mcq-20",
-    question: "Under the Sixth Schedule of the Indian Constitution, what institutional mechanism is provided to protect tribal identities in the North East?",
-    options: [
-      "A):   Autonomous District Councils with legislative and executive powers",
+    "id": "c12-pol-14-mcq-20",
+    "question": "Under the Sixth Schedule of the Indian Constitution, what institutional mechanism is provided to protect tribal identities in the North East?",
+    "options": [
+      "A):   Complete exemption from all central criminal laws",
       "B):   Direct military governance under the Chief of Defense Staff",
       "C):   Permanent abolition of state legislatures",
-      "D):   Complete exemption from all central criminal laws"
+      "D):   Autonomous District Councils with legislative and executive powers"
     ],
-    correctAnswer: "A",
-    explanation: "The Sixth Schedule provides for Autonomous District Councils (ADCs) with powers to make laws on land, forests, and customs for tribal populations."
+    "correctAnswer": "D",
+    "explanation": "The Sixth Schedule provides for Autonomous District Councils (ADCs) with powers to make laws on land, forests, and customs for tribal populations."
   }
 ];

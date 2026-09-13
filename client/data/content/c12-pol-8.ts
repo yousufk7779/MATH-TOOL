@@ -570,249 +570,244 @@ export const c12Pol8HtmlSolutions = `
 /* -------------------------------------------------------------------------- */
 
 export const c12Pol8Mcqs = [
-  // Tier 1: Q1 to Q8 (Direct recall, events, dates, historical personalities)
   {
-    id: "c12-pol-8-mcq-1",
-    question: "What was the title of the historic speech delivered by Jawaharlal Nehru on the midnight of 14–15 August 1947?",
-    options: [
+    "id": "c12-pol-8-mcq-1",
+    "question": "What was the title of the historic speech delivered by Jawaharlal Nehru on the midnight of 14–15 August 1947?",
+    "options": [
       "A):   Tryst with Destiny",
       "B):   Quit India Speech",
       "C):   Discovery of India",
-      "D):   The Light Has Gone Out",
+      "D):   The Light Has Gone Out"
     ],
-    correctAnswer: "a",
-    explanation: "Jawaharlal Nehru delivered his famous 'Tryst with Destiny' speech addressing the Constituent Assembly at midnight on 14-15 August 1947.",
+    "correctAnswer": "A",
+    "explanation": "Jawaharlal Nehru delivered his famous 'Tryst with Destiny' speech addressing the Constituent Assembly at midnight on 14-15 August 1947."
   },
   {
-    id: "c12-pol-8-mcq-2",
-    question: "Which political party advanced the 'Two-Nation Theory' demanding the partition of British India?",
-    options: [
+    "id": "c12-pol-8-mcq-2",
+    "question": "Which political party advanced the 'Two-Nation Theory' demanding the partition of British India?",
+    "options": [
       "A):   Indian National Congress",
       "B):   All-India Muslim League",
       "C):   Communist Party of India",
-      "D):   Hindu Mahasabha",
+      "D):   Hindu Mahasabha"
     ],
-    correctAnswer: "b",
-    explanation: "The All-India Muslim League, led by Muhammad Ali Jinnah, advanced the Two-Nation Theory claiming Hindus and Muslims were separate nations.",
+    "correctAnswer": "B",
+    "explanation": "The All-India Muslim League, led by Muhammad Ali Jinnah, advanced the Two-Nation Theory claiming Hindus and Muslims were separate nations."
   },
   {
-    id: "c12-pol-8-mcq-3",
-    question: "Who was popularly known as 'Frontier Gandhi' for his non-violent struggle in the North-West Frontier Province (NWFP)?",
-    options: [
+    "id": "c12-pol-8-mcq-3",
+    "question": "Who was popularly known as 'Frontier Gandhi' for his non-violent struggle in the North-West Frontier Province (NWFP)?",
+    "options": [
       "A):   Maulana Abul Kalam Azad",
-      "B):   Khan Abdul Ghaffar Khan",
-      "C):   Liaquat Ali Khan",
-      "D):   Sheikh Abdullah",
+      "B):   Liaquat Ali Khan",
+      "C):   Khan Abdul Ghaffar Khan",
+      "D):   Sheikh Abdullah"
     ],
-    correctAnswer: "b",
-    explanation: "Khan Abdul Ghaffar Khan, founder of the Khudai Khidmatgars, was known as Frontier Gandhi and was a staunch opponent of Partition.",
+    "correctAnswer": "C",
+    "explanation": "Khan Abdul Ghaffar Khan, founder of the Khudai Khidmatgars, was known as Frontier Gandhi and was a staunch opponent of Partition."
   },
   {
-    id: "c12-pol-8-mcq-4",
-    question: "How many princely states existed in British India on the eve of independence in 1947?",
-    options: [
+    "id": "c12-pol-8-mcq-4",
+    "question": "How many princely states existed in British India on the eve of independence in 1947?",
+    "options": [
       "A):   250 states",
-      "B):   565 states",
+      "B):   720 states",
       "C):   610 states",
-      "D):   720 states",
+      "D):   565 states"
     ],
-    correctAnswer: "b",
-    explanation: "There were 565 princely states covering roughly one-third of the territory and one-fourth of the population of British India.",
+    "correctAnswer": "D",
+    "explanation": "There were 565 princely states covering roughly one-third of the territory and one-fourth of the population of British India."
   },
   {
-    id: "c12-pol-8-mcq-5",
-    question: "What was the name of the standard legal treaty signed by princely rulers to formally join the Dominion of India?",
-    options: [
-      "A):   Standstill Agreement",
-      "B):   Instrument of Accession",
+    "id": "c12-pol-8-mcq-5",
+    "question": "What was the name of the standard legal treaty signed by princely rulers to formally join the Dominion of India?",
+    "options": [
+      "A):   Instrument of Accession",
+      "B):   Standstill Agreement",
       "C):   Poona Pact",
-      "D):   Shimla Agreement",
+      "D):   Shimla Agreement"
     ],
-    correctAnswer: "b",
-    explanation: "The Instrument of Accession was the legal treaty signed by rulers to surrender Defence, Foreign Affairs, and Communications to India.",
+    "correctAnswer": "A",
+    "explanation": "The Instrument of Accession was the legal treaty signed by rulers to surrender Defence, Foreign Affairs, and Communications to India."
   },
   {
-    id: "c12-pol-8-mcq-6",
-    question: "Which was the first part of India to hold elections based on Universal Adult Franchise in June 1948?",
-    options: [
+    "id": "c12-pol-8-mcq-6",
+    "question": "Which was the first part of India to hold elections based on Universal Adult Franchise in June 1948?",
+    "options": [
       "A):   Hyderabad",
       "B):   Manipur",
       "C):   Travancore",
-      "D):   Mysore",
+      "D):   Mysore"
     ],
-    correctAnswer: "b",
-    explanation: "Under Maharaja Bodhachandra Singh, Manipur held elections based on Universal Adult Franchise in June 1948, becoming a constitutional monarchy.",
+    "correctAnswer": "B",
+    "explanation": "Under Maharaja Bodhachandra Singh, Manipur held elections based on Universal Adult Franchise in June 1948, becoming a constitutional monarchy."
   },
   {
-    id: "c12-pol-8-mcq-7",
-    question: "What was the military code name for the police action executed by the Indian Armed Forces to integrate Hyderabad in September 1948?",
-    options: [
+    "id": "c12-pol-8-mcq-7",
+    "question": "What was the military code name for the police action executed by the Indian Armed Forces to integrate Hyderabad in September 1948?",
+    "options": [
       "A):   Operation Vijay",
-      "B):   Operation Polo",
-      "C):   Operation Blue Star",
-      "D):   Operation Meghdoot",
+      "B):   Operation Blue Star",
+      "C):   Operation Polo",
+      "D):   Operation Meghdoot"
     ],
-    correctAnswer: "b",
-    explanation: "The military police action launched on September 13, 1948 to integrate Hyderabad into India was codenamed 'Operation Polo'.",
+    "correctAnswer": "C",
+    "explanation": "The military police action launched on September 13, 1948 to integrate Hyderabad into India was codenamed 'Operation Polo'."
   },
   {
-    id: "c12-pol-8-mcq-8",
-    question: "Which was the first state in independent India to be created on a linguistic basis in December 1952?",
-    options: [
+    "id": "c12-pol-8-mcq-8",
+    "question": "Which was the first state in independent India to be created on a linguistic basis in December 1952?",
+    "options": [
       "A):   Gujarat",
       "B):   Maharashtra",
-      "C):   Andhra State",
-      "D):   Karnataka",
+      "C):   Karnataka",
+      "D):   Andhra State"
     ],
-    correctAnswer: "c",
-    explanation: "Following the death of Potti Sreeramulu after a 56-day hunger strike, Andhra State was created in December 1952 as India's first linguistic state.",
+    "correctAnswer": "D",
+    "explanation": "Following the death of Potti Sreeramulu after a 56-day hunger strike, Andhra State was created in December 1952 as India's first linguistic state."
   },
-
-  // Tier 2: Q9 to Q15 (Concepts, partition complications, Kashmir accession, SRC)
   {
-    id: "c12-pol-8-mcq-9",
-    question: "Why was the geographic execution of Partition particularly complicated in British India?",
-    options: [
-      "A):   Because Muslims refused to live anywhere near rivers",
-      "B):   Because there was no single contiguous belt of Muslim majority; populations were concentrated in the northwest and east",
+    "id": "c12-pol-8-mcq-9",
+    "question": "Why was the geographic execution of Partition particularly complicated in British India?",
+    "options": [
+      "A):   Because there was no single contiguous belt of Muslim majority; populations were concentrated in the northwest and east",
+      "B):   Because Muslims refused to live anywhere near rivers",
       "C):   Because the British monarch forbade dividing provinces",
-      "D):   Because the United Nations drew the boundary lines unilaterally",
+      "D):   Because the United Nations drew the boundary lines unilaterally"
     ],
-    correctAnswer: "b",
-    explanation: "Muslims were clustered in the northwest and east, necessitating the awkward creation of West Pakistan and East Pakistan separated by Indian territory.",
+    "correctAnswer": "A",
+    "explanation": "Muslims were clustered in the northwest and east, necessitating the awkward creation of West Pakistan and East Pakistan separated by Indian territory."
   },
   {
-    id: "c12-pol-8-mcq-10",
-    question: "What was the name of the irregular sectarian paramilitary force deployed by the Nizam of Hyderabad to terrorize citizens?",
-    options: [
+    "id": "c12-pol-8-mcq-10",
+    "question": "What was the name of the irregular sectarian paramilitary force deployed by the Nizam of Hyderabad to terrorize citizens?",
+    "options": [
       "A):   Khudai Khidmatgars",
       "B):   Razakars",
       "C):   Mukti Bahini",
-      "D):   Azad Hind Fauj",
+      "D):   Azad Hind Fauj"
     ],
-    correctAnswer: "b",
-    explanation: "The Razakars were the fanatical paramilitary militia unleashed by Nizam Mir Osman Ali Khan to crush dissent and commit atrocities on non-Muslims.",
+    "correctAnswer": "B",
+    "explanation": "The Razakars were the fanatical paramilitary militia unleashed by Nizam Mir Osman Ali Khan to crush dissent and commit atrocities on non-Muslims."
   },
   {
-    id: "c12-pol-8-mcq-11",
-    question: "Under what circumstances did Maharaja Hari Singh sign the Instrument of Accession of Jammu & Kashmir on 26 October 1947?",
-    options: [
+    "id": "c12-pol-8-mcq-11",
+    "question": "Under what circumstances did Maharaja Hari Singh sign the Instrument of Accession of Jammu & Kashmir on 26 October 1947?",
+    "options": [
       "A):   After winning a war against China",
-      "B):   When Pakistani-sponsored tribal raiders invaded the valley and threatened to capture Srinagar",
-      "C):   Following an order by the British Parliament in London",
-      "D):   After holding a statewide public referendum",
+      "B):   Following an order by the British Parliament in London",
+      "C):   When Pakistani-sponsored tribal raiders invaded the valley and threatened to capture Srinagar",
+      "D):   After holding a statewide public referendum"
     ],
-    correctAnswer: "b",
-    explanation: "Hari Singh signed the IoA on 26 October 1947 to secure urgent Indian military intervention after armed Pakistani tribal raiders invaded Kashmir.",
+    "correctAnswer": "C",
+    "explanation": "Hari Singh signed the IoA on 26 October 1947 to secure urgent Indian military intervention after armed Pakistani tribal raiders invaded Kashmir."
   },
   {
-    id: "c12-pol-8-mcq-12",
-    question: "Who headed the States Reorganisation Commission (SRC) appointed by the Government of India in December 1953?",
-    options: [
+    "id": "c12-pol-8-mcq-12",
+    "question": "Who headed the States Reorganisation Commission (SRC) appointed by the Government of India in December 1953?",
+    "options": [
       "A):   Sardar Vallabhbhai Patel",
-      "B):   Justice Fazal Ali",
+      "B):   C. Rajagopalachari",
       "C):   Dr. B.R. Ambedkar",
-      "D):   C. Rajagopalachari",
+      "D):   Justice Fazal Ali"
     ],
-    correctAnswer: "b",
-    explanation: "The States Reorganisation Commission was headed by former Supreme Court judge Justice Fazal Ali, along with members H.N. Kunzru and K.M. Panikkar.",
+    "correctAnswer": "D",
+    "explanation": "The States Reorganisation Commission was headed by former Supreme Court judge Justice Fazal Ali, along with members H.N. Kunzru and K.M. Panikkar."
   },
   {
-    id: "c12-pol-8-mcq-13",
-    question: "How did the 1967 amendment to the Official Languages Act resolve the violent anti-Hindi agitations in South India?",
-    options: [
-      "A):   By declaring Sanskrit as the sole national language",
-      "B):   By allowing English to continue indefinitely alongside Hindi for official union purposes",
+    "id": "c12-pol-8-mcq-13",
+    "question": "How did the 1967 amendment to the Official Languages Act resolve the violent anti-Hindi agitations in South India?",
+    "options": [
+      "A):   By allowing English to continue indefinitely alongside Hindi for official union purposes",
+      "B):   By declaring Sanskrit as the sole national language",
       "C):   By abolishing Hindi from all Indian currency notes",
-      "D):   By banning regional languages from parliamentary debates",
+      "D):   By banning regional languages from parliamentary debates"
     ],
-    correctAnswer: "b",
-    explanation: "The 1967 amendment established that English would continue indefinitely alongside Hindi, ensuring non-Hindi states were not disadvantaged.",
+    "correctAnswer": "A",
+    "explanation": "The 1967 amendment established that English would continue indefinitely alongside Hindi, ensuring non-Hindi states were not disadvantaged."
   },
   {
-    id: "c12-pol-8-mcq-14",
-    question: "How did linguistic reorganization of states ultimately impact Indian national unity?",
-    options: [
+    "id": "c12-pol-8-mcq-14",
+    "question": "How did linguistic reorganization of states ultimately impact Indian national unity?",
+    "options": [
       "A):   It led to the immediate disintegration of the Indian Union",
       "B):   It consolidated national unity by accommodating regional linguistic identities within federal democracy",
       "C):   It caused the abolition of the Supreme Court of India",
-      "D):   It led to military rule across southern India",
+      "D):   It led to military rule across southern India"
     ],
-    correctAnswer: "b",
-    explanation: "Linguistic states fulfilled democratic regional aspirations, removing alienation and strengthening national unity through cooperative federalism.",
+    "correctAnswer": "B",
+    "explanation": "Linguistic states fulfilled democratic regional aspirations, removing alienation and strengthening national unity through cooperative federalism."
   },
   {
-    id: "c12-pol-8-mcq-15",
-    question: "Which popular Kashmiri leader led the National Conference and headed the emergency government after accession to India?",
-    options: [
-      "A):   Sheikh Abdullah",
+    "id": "c12-pol-8-mcq-15",
+    "question": "Which popular Kashmiri leader led the National Conference and headed the emergency government after accession to India?",
+    "options": [
+      "A):   Karan Singh",
       "B):   Mirwaiz Umar Farooq",
-      "C):   Karan Singh",
-      "D):   Liaquat Ali Khan",
+      "C):   Sheikh Abdullah",
+      "D):   Liaquat Ali Khan"
     ],
-    correctAnswer: "a",
-    explanation: "Sheikh Abdullah, the towering anti-feudal leader of the National Conference, mobilized Kashmiris against Pakistani invaders and headed the emergency administration.",
+    "correctAnswer": "C",
+    "explanation": "Sheikh Abdullah, the towering anti-feudal leader of the National Conference, mobilized Kashmiris against Pakistani invaders and headed the emergency administration."
   },
-
-  // Tier 3: Q16 to Q20 (Analytical, Assertion-Reason, comparative questions)
   {
-    id: "c12-pol-8-mcq-16",
-    question: "Assertion (A): National leaders were initially reluctant to reorganize Indian states along linguistic lines after 1947.\nReason (R): Fresh from the trauma of Partition, leaders feared linguistic reorganization would trigger regional chauvinism and disintegrate the nation.",
-    options: [
-      "A):   Both A and R are true, and R is the correct explanation of A",
+    "id": "c12-pol-8-mcq-16",
+    "question": "Assertion (A): National leaders were initially reluctant to reorganize Indian states along linguistic lines after 1947.\nReason (R): Fresh from the trauma of Partition, leaders feared linguistic reorganization would trigger regional chauvinism and disintegrate the nation.",
+    "options": [
+      "A):   A is false, but R is true",
       "B):   Both A and R are true, but R is not the correct explanation of A",
       "C):   A is true, but R is false",
-      "D):   A is false, but R is true",
+      "D):   Both A and R are true, and R is the correct explanation of A"
     ],
-    correctAnswer: "a",
-    explanation: "Both statements are correct. The fear of another partition made Nehru and Patel cautious about dividing provinces along language lines.",
+    "correctAnswer": "D",
+    "explanation": "Both statements are correct. The fear of another partition made Nehru and Patel cautious about dividing provinces along language lines."
   },
   {
-    id: "c12-pol-8-mcq-17",
-    question: "Consider the following statements regarding the integration of princely states:\n1. The ruler of Junagadh opted to accede to Pakistan despite a predominantly Hindu population.\n2. Manipur was integrated into India only after the Indian Army launched 'Operation Polo'.\nWhich of the statements is/are correct?",
-    options: [
+    "id": "c12-pol-8-mcq-17",
+    "question": "Consider the following statements regarding the integration of princely states:\n1. The ruler of Junagadh opted to accede to Pakistan despite a predominantly Hindu population.\n2. Manipur was integrated into India only after the Indian Army launched 'Operation Polo'.\nWhich of the statements is/are correct?",
+    "options": [
       "A):   1 only",
       "B):   2 only",
       "C):   Both 1 and 2",
-      "D):   Neither 1 nor 2",
+      "D):   Neither 1 nor 2"
     ],
-    correctAnswer: "a",
-    explanation: "Statement 1 is correct. Statement 2 is false because Operation Polo was conducted in Hyderabad, whereas Manipur integrated via a Merger Agreement.",
+    "correctAnswer": "A",
+    "explanation": "Statement 1 is correct. Statement 2 is false because Operation Polo was conducted in Hyderabad, whereas Manipur integrated via a Merger Agreement."
   },
   {
-    id: "c12-pol-8-mcq-18",
-    question: "Which of the following constitutional provisions granted special autonomous status to Jammu & Kashmir in the original Indian Constitution?",
-    options: [
+    "id": "c12-pol-8-mcq-18",
+    "question": "Which of the following constitutional provisions granted special autonomous status to Jammu & Kashmir in the original Indian Constitution?",
+    "options": [
       "A):   Article 356",
       "B):   Article 370",
       "C):   Article 352",
-      "D):   Article 280",
+      "D):   Article 280"
     ],
-    correctAnswer: "b",
-    explanation: "Article 370 granted special autonomous status to Jammu & Kashmir, allowing it its own state constitution and limiting Parliament's legislative powers over the state.",
+    "correctAnswer": "B",
+    "explanation": "Article 370 granted special autonomous status to Jammu & Kashmir, allowing it its own state constitution and limiting Parliament's legislative powers over the state."
   },
   {
-    id: "c12-pol-8-mcq-19",
-    question: "Which of the following describes the nature of the division during Partition as emphasized by historians?",
-    options: [
+    "id": "c12-pol-8-mcq-19",
+    "question": "Which of the following describes the nature of the division during Partition as emphasized by historians?",
+    "options": [
       "A):   A simple peaceful survey of agricultural farms",
-      "B):   A violent 'division of hearts' dividing families, communities, civil services, and physical assets",
-      "C):   A military alliance between India and Great Britain",
-      "D):   An agreement solely affecting foreign exchange currency rates",
+      "B):   A military alliance between India and Great Britain",
+      "C):   A violent 'division of hearts' dividing families, communities, civil services, and physical assets",
+      "D):   An agreement solely affecting foreign exchange currency rates"
     ],
-    correctAnswer: "b",
-    explanation: "Partition was a profound trauma that divided families, communal ties, police instruments, civil servants, and social memories across generations.",
+    "correctAnswer": "C",
+    "explanation": "Partition was a profound trauma that divided families, communal ties, police instruments, civil servants, and social memories across generations."
   },
   {
-    id: "c12-pol-8-mcq-20",
-    question: "Which of the following was NOT one of the 14 states established under the States Reorganisation Act of 1956?",
-    options: [
+    "id": "c12-pol-8-mcq-20",
+    "question": "Which of the following was NOT one of the 14 states established under the States Reorganisation Act of 1956?",
+    "options": [
       "A):   Kerala",
       "B):   Mysore",
-      "C):   Telangana",
-      "D):   Rajasthan",
+      "C):   Rajasthan",
+      "D):   Telangana"
     ],
-    correctAnswer: "c",
-    explanation: "Telangana was merged into Andhra Pradesh in 1956 and only became a separate state much later in June 2014; Kerala, Mysore, and Rajasthan were among the original 14 states in 1956.",
-  },
+    "correctAnswer": "D",
+    "explanation": "Telangana was merged into Andhra Pradesh in 1956 and only became a separate state much later in June 2014; Kerala, Mysore, and Rajasthan were among the original 14 states in 1956."
+  }
 ];

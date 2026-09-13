@@ -579,249 +579,244 @@ export const c12Pol5HtmlSolutions = `
 /* -------------------------------------------------------------------------- */
 
 export const c12Pol5Mcqs = [
-  // Tier 1: Q1 to Q8 (Recall, basic concepts, treaties, dates, weapons conventions)
   {
-    id: "c12-pol-5-mcq-1",
-    question: "What is the primary referent object in the traditional conception of security?",
-    options: [
-      "A):   The individual citizen",
-      "B):   The sovereign nation-state",
+    "id": "c12-pol-5-mcq-1",
+    "question": "What is the primary referent object in the traditional conception of security?",
+    "options": [
+      "A):   The sovereign nation-state",
+      "B):   The individual citizen",
       "C):   The global biosphere",
-      "D):   International non-governmental organizations",
+      "D):   International non-governmental organizations"
     ],
-    correctAnswer: "b",
-    explanation: "In traditional security realism, the sovereign nation-state is the primary referent object, focusing on defending borders and constitutional sovereignty against external military aggression.",
+    "correctAnswer": "A",
+    "explanation": "In traditional security realism, the sovereign nation-state is the primary referent object, focusing on defending borders and constitutional sovereignty against external military aggression."
   },
   {
-    id: "c12-pol-5-mcq-2",
-    question: "Which of the following is an instrument of traditional external security aimed at preventing war by demonstrating credible retaliatory strength?",
-    options: [
-      "A):   Deterrence",
-      "B):   Capitulation",
+    "id": "c12-pol-5-mcq-2",
+    "question": "Which of the following is an instrument of traditional external security aimed at preventing war by demonstrating credible retaliatory strength?",
+    "options": [
+      "A):   Capitulation",
+      "B):   Deterrence",
       "C):   Human Development",
-      "D):   Universal Disarmament",
+      "D):   Universal Disarmament"
     ],
-    correctAnswer: "a",
-    explanation: "Deterrence is the traditional strategy of convincing a prospective adversary that the costs of launching an attack will far outweigh any potential military gains.",
+    "correctAnswer": "B",
+    "explanation": "Deterrence is the traditional strategy of convincing a prospective adversary that the costs of launching an attack will far outweigh any potential military gains."
   },
   {
-    id: "c12-pol-5-mcq-3",
-    question: "In which year was the Biological Weapons Convention (BWC) opened for signature?",
-    options: [
+    "id": "c12-pol-5-mcq-3",
+    "question": "In which year was the Biological Weapons Convention (BWC) opened for signature?",
+    "options": [
       "A):   1945",
       "B):   1968",
       "C):   1972",
-      "D):   1992",
+      "D):   1992"
     ],
-    correctAnswer: "c",
-    explanation: "The Biological Weapons Convention (BWC) was signed in 1972, outlawing the development, production, and stockpiling of bacteriological weapons.",
+    "correctAnswer": "C",
+    "explanation": "The Biological Weapons Convention (BWC) was signed in 1972, outlawing the development, production, and stockpiling of bacteriological weapons."
   },
   {
-    id: "c12-pol-5-mcq-4",
-    question: "Which international convention signed in 1992 completely banned the development, production, and use of chemical weapons?",
-    options: [
-      "A):   Chemical Weapons Convention (CWC)",
+    "id": "c12-pol-5-mcq-4",
+    "question": "Which international convention signed in 1992 completely banned the development, production, and use of chemical weapons?",
+    "options": [
+      "A):   Strategic Arms Reduction Treaty (START)",
       "B):   Biological Weapons Convention (BWC)",
       "C):   Comprehensive Nuclear-Test-Ban Treaty (CTBT)",
-      "D):   Strategic Arms Reduction Treaty (START)",
+      "D):   Chemical Weapons Convention (CWC)"
     ],
-    correctAnswer: "a",
-    explanation: "The Chemical Weapons Convention (CWC) was adopted in 1992 in Paris, requiring the destruction of all chemical weapon stockpiles under the OPCW.",
+    "correctAnswer": "D",
+    "explanation": "The Chemical Weapons Convention (CWC) was adopted in 1992 in Paris, requiring the destruction of all chemical weapon stockpiles under the OPCW."
   },
   {
-    id: "c12-pol-5-mcq-5",
-    question: "In which year did India conduct its first peaceful nuclear explosion in Pokhran ('Operation Smiling Buddha')?",
-    options: [
-      "A):   1962",
+    "id": "c12-pol-5-mcq-5",
+    "question": "In which year did India conduct its first peaceful nuclear explosion in Pokhran ('Operation Smiling Buddha')?",
+    "options": [
+      "A):   1974",
       "B):   1971",
-      "C):   1974",
-      "D):   1998",
+      "C):   1962",
+      "D):   1998"
     ],
-    correctAnswer: "c",
-    explanation: "India conducted its first underground peaceful nuclear explosion at Pokhran, Rajasthan in May 1974 under Prime Minister Indira Gandhi.",
+    "correctAnswer": "A",
+    "explanation": "India conducted its first underground peaceful nuclear explosion at Pokhran, Rajasthan in May 1974 under Prime Minister Indira Gandhi."
   },
   {
-    id: "c12-pol-5-mcq-6",
-    question: "Under the Nuclear Non-Proliferation Treaty (NPT) of 1968, which cut-off date was established to define a recognized nuclear weapon state?",
-    options: [
+    "id": "c12-pol-5-mcq-6",
+    "question": "Under the Nuclear Non-Proliferation Treaty (NPT) of 1968, which cut-off date was established to define a recognized nuclear weapon state?",
+    "options": [
       "A):   1st January 1945",
       "B):   1st January 1967",
       "C):   15th August 1947",
-      "D):   24th October 1945",
+      "D):   24th October 1945"
     ],
-    correctAnswer: "b",
-    explanation: "The NPT recognized only states that had manufactured and exploded a nuclear weapon before 1 January 1967 (the P5 powers) as nuclear weapon states.",
+    "correctAnswer": "B",
+    "explanation": "The NPT recognized only states that had manufactured and exploded a nuclear weapon before 1 January 1967 (the P5 powers) as nuclear weapon states."
   },
   {
-    id: "c12-pol-5-mcq-7",
-    question: "Which landmark report published in 1994 by the UNDP formally popularized the modern concept of 'Human Security'?",
-    options: [
+    "id": "c12-pol-5-mcq-7",
+    "question": "Which landmark report published in 1994 by the UNDP formally popularized the modern concept of 'Human Security'?",
+    "options": [
       "A):   Brundtland Report",
-      "B):   Human Development Report",
-      "C):   World Development Report",
-      "D):   Agenda for Peace",
+      "B):   World Development Report",
+      "C):   Human Development Report",
+      "D):   Agenda for Peace"
     ],
-    correctAnswer: "b",
-    explanation: "The 1994 UNDP Human Development Report formally introduced Human Security, shifting the focus from territorial borders to individual people.",
+    "correctAnswer": "C",
+    "explanation": "The 1994 UNDP Human Development Report formally introduced Human Security, shifting the focus from territorial borders to individual people."
   },
   {
-    id: "c12-pol-5-mcq-8",
-    question: "What are formal procedures where rival militaries share troop deployment information and operate communication hotlines called?",
-    options: [
+    "id": "c12-pol-5-mcq-8",
+    "question": "What are formal procedures where rival militaries share troop deployment information and operate communication hotlines called?",
+    "options": [
       "A):   Collective Defense Pacts",
-      "B):   Confidence Building Measures (CBMs)",
+      "B):   Balance of Power Coalitions",
       "C):   Structural Adjustment Programs",
-      "D):   Balance of Power Coalitions",
+      "D):   Confidence Building Measures (CBMs)"
     ],
-    correctAnswer: "b",
-    explanation: "Confidence Building Measures (CBMs) are institutionalized processes where adversaries share military data and maintain hotlines to prevent accidental conflict.",
+    "correctAnswer": "D",
+    "explanation": "Confidence Building Measures (CBMs) are institutionalized processes where adversaries share military data and maintain hotlines to prevent accidental conflict."
   },
-
-  // Tier 2: Q9 to Q15 (Concepts, human security pillars, refugee vs IDP, human rights)
   {
-    id: "c12-pol-5-mcq-9",
-    question: "Which of the following best differentiates an Internally Displaced Person (IDP) from a Refugee?",
-    options: [
-      "A):   IDPs flee due to economic reasons, while refugees flee due to war",
-      "B):   IDPs remain within the borders of their own country, while refugees cross international borders",
+    "id": "c12-pol-5-mcq-9",
+    "question": "Which of the following best differentiates an Internally Displaced Person (IDP) from a Refugee?",
+    "options": [
+      "A):   IDPs remain within the borders of their own country, while refugees cross international borders",
+      "B):   IDPs flee due to economic reasons, while refugees flee due to war",
       "C):   IDPs receive full UN protection, while refugees do not",
-      "D):   IDPs are legally prohibited from returning home",
+      "D):   IDPs are legally prohibited from returning home"
     ],
-    correctAnswer: "b",
-    explanation: "The fundamental distinction is geographical: Refugees cross internationally recognized borders to seek asylum, while Internally Displaced Persons remain within their own country.",
+    "correctAnswer": "A",
+    "explanation": "The fundamental distinction is geographical: Refugees cross internationally recognized borders to seek asylum, while Internally Displaced Persons remain within their own country."
   },
   {
-    id: "c12-pol-5-mcq-10",
-    question: "Which two essential freedoms form the core pillars of Human Security as defined in global governance?",
-    options: [
+    "id": "c12-pol-5-mcq-10",
+    "question": "Which two essential freedoms form the core pillars of Human Security as defined in global governance?",
+    "options": [
       "A):   Freedom of trade and Freedom of investment",
       "B):   Freedom from Want and Freedom from Fear",
       "C):   Freedom of navigation and Freedom of airspace",
-      "D):   Freedom of speech and Freedom of migration",
+      "D):   Freedom of speech and Freedom of migration"
     ],
-    correctAnswer: "b",
-    explanation: "Human Security is defined by two foundational pillars: 'Freedom from Want' (freedom from poverty and disease) and 'Freedom from Fear' (freedom from violence and oppression).",
+    "correctAnswer": "B",
+    "explanation": "Human Security is defined by two foundational pillars: 'Freedom from Want' (freedom from poverty and disease) and 'Freedom from Fear' (freedom from violence and oppression)."
   },
   {
-    id: "c12-pol-5-mcq-11",
-    question: "Why did India consistently refuse to sign the Nuclear Non-Proliferation Treaty (NPT) of 1968?",
-    options: [
+    "id": "c12-pol-5-mcq-11",
+    "question": "Why did India consistently refuse to sign the Nuclear Non-Proliferation Treaty (NPT) of 1968?",
+    "options": [
       "A):   Because India wanted to wage war against all neighboring nations",
-      "B):   Because the NPT was discriminatory, creating a permanent division between nuclear 'haves' and 'have-nots'",
-      "C):   Because the NPT banned civilian nuclear energy production",
-      "D):   Because the UN Charter prohibited Asian nations from signing nuclear treaties",
+      "B):   Because the NPT banned civilian nuclear energy production",
+      "C):   Because the NPT was discriminatory, creating a permanent division between nuclear 'haves' and 'have-nots'",
+      "D):   Because the UN Charter prohibited Asian nations from signing nuclear treaties"
     ],
-    correctAnswer: "b",
-    explanation: "India rejected the NPT as discriminatory because it legitimized the nuclear monopolies of the P5 powers while banning all other nations from acquiring security deterrents.",
+    "correctAnswer": "C",
+    "explanation": "India rejected the NPT as discriminatory because it legitimized the nuclear monopolies of the P5 powers while banning all other nations from acquiring security deterrents."
   },
   {
-    id: "c12-pol-5-mcq-12",
-    question: "To which category of human rights does the right to a healthy environment and collective self-determination of colonized peoples belong?",
-    options: [
+    "id": "c12-pol-5-mcq-12",
+    "question": "To which category of human rights does the right to a healthy environment and collective self-determination of colonized peoples belong?",
+    "options": [
       "A):   First Generation Rights",
       "B):   Second Generation Rights",
-      "C):   Third Generation Rights",
-      "D):   Traditional Realist Rights",
+      "C):   Traditional Realist Rights",
+      "D):   Third Generation Rights"
     ],
-    correctAnswer: "c",
-    explanation: "Third Generation rights (solidarity rights) encompass collective entitlements such as the right to development, environmental protection, and self-determination.",
+    "correctAnswer": "D",
+    "explanation": "Third Generation rights (solidarity rights) encompass collective entitlements such as the right to development, environmental protection, and self-determination."
   },
   {
-    id: "c12-pol-5-mcq-13",
-    question: "Which principle under the 1951 UN Refugee Convention strictly prohibits returning refugees to countries where they face persecution?",
-    options: [
-      "A):   Deterrence",
-      "B):   Non-refoulement",
+    "id": "c12-pol-5-mcq-13",
+    "question": "Which principle under the 1951 UN Refugee Convention strictly prohibits returning refugees to countries where they face persecution?",
+    "options": [
+      "A):   Non-refoulement",
+      "B):   Deterrence",
       "C):   Autarky",
-      "D):   Pre-emption",
+      "D):   Pre-emption"
     ],
-    correctAnswer: "b",
-    explanation: "The principle of non-refoulement is a cornerstone of international refugee law, prohibiting host nations from expelling or returning refugees to territories where their lives would be in danger.",
+    "correctAnswer": "A",
+    "explanation": "The principle of non-refoulement is a cornerstone of international refugee law, prohibiting host nations from expelling or returning refugees to territories where their lives would be in danger."
   },
   {
-    id: "c12-pol-5-mcq-14",
-    question: "How does 'Global Poverty' directly imperil non-traditional human security across the Global South?",
-    options: [
+    "id": "c12-pol-5-mcq-14",
+    "question": "How does 'Global Poverty' directly imperil non-traditional human security across the Global South?",
+    "options": [
       "A):   By triggering foreign military air strikes",
       "B):   By causing preventable deaths from malnutrition, disease, and breeding civil conflict",
       "C):   By inflating international currency reserves in developing countries",
-      "D):   By forcing the dissolution of the United Nations Security Council",
+      "D):   By forcing the dissolution of the United Nations Security Council"
     ],
-    correctAnswer: "b",
-    explanation: "Poverty leads to acute malnutrition, infant mortality, and clean water shortages, while hopeless socio-economic conditions often spark domestic insurrections and crime.",
+    "correctAnswer": "B",
+    "explanation": "Poverty leads to acute malnutrition, infant mortality, and clean water shortages, while hopeless socio-economic conditions often spark domestic insurrections and crime."
   },
   {
-    id: "c12-pol-5-mcq-15",
-    question: "What is the primary objective of India's nuclear doctrine adopted after the 1998 Pokhran-II tests?",
-    options: [
+    "id": "c12-pol-5-mcq-15",
+    "question": "What is the primary objective of India's nuclear doctrine adopted after the 1998 Pokhran-II tests?",
+    "options": [
       "A):   Aggressive pre-emptive first strike capability",
-      "B):   Credible minimum nuclear deterrence with a strict 'No First Use' commitment",
-      "C):   Building thousands of tactical battlefield nuclear warheads",
-      "D):   Transferring atomic weapons to non-aligned nations",
+      "B):   Building thousands of tactical battlefield nuclear warheads",
+      "C):   Credible minimum nuclear deterrence with a strict 'No First Use' commitment",
+      "D):   Transferring atomic weapons to non-aligned nations"
     ],
-    correctAnswer: "b",
-    explanation: "India's official nuclear doctrine emphasizes a 'Credible Minimum Deterrent' coupled with a strict 'No First Use' posture, reserving nuclear retaliation only if attacked with WMDs.",
+    "correctAnswer": "C",
+    "explanation": "India's official nuclear doctrine emphasizes a 'Credible Minimum Deterrent' coupled with a strict 'No First Use' posture, reserving nuclear retaliation only if attacked with WMDs."
   },
-
-  // Tier 3: Q16 to Q20 (Analytical, Assertion-Reason, comparative questions)
   {
-    id: "c12-pol-5-mcq-16",
-    question: "Which of the following is NOT one of the four components of India's national security strategy?",
-    options: [
+    "id": "c12-pol-5-mcq-16",
+    "question": "Which of the following is NOT one of the four components of India's national security strategy?",
+    "options": [
       "A):   Strengthening military capabilities and credible deterrence",
       "B):   Strengthening international norms and multilateral institutions",
-      "C):   Joining a Western military alliance like NATO to guarantee collective defense",
-      "D):   Developing the domestic economy to eradicate poverty and social disparities",
+      "C):   Developing the domestic economy to eradicate poverty and social disparities",
+      "D):   Joining a Western military alliance like NATO to guarantee collective defense"
     ],
-    correctAnswer: "c",
-    explanation: "Joining military alliances like NATO is contrary to India's core strategic autonomy and historical non-alignment philosophy; India relies on indigenous capability and autonomous diplomacy.",
+    "correctAnswer": "D",
+    "explanation": "Joining military alliances like NATO is contrary to India's core strategic autonomy and historical non-alignment philosophy; India relies on indigenous capability and autonomous diplomacy."
   },
   {
-    id: "c12-pol-5-mcq-17",
-    question: "Assertion (A): Diseases like COVID-19, Bird Flu, and HIV-AIDS cannot be contained by traditional national military security methods.\nReason (R): Microscopic pathogens respect no sovereign territorial borders and spread across international aviation and trade routes.",
-    options: [
+    "id": "c12-pol-5-mcq-17",
+    "question": "Assertion (A): Diseases like COVID-19, Bird Flu, and HIV-AIDS cannot be contained by traditional national military security methods.\nReason (R): Microscopic pathogens respect no sovereign territorial borders and spread across international aviation and trade routes.",
+    "options": [
       "A):   Both A and R are true, and R is the correct explanation of A",
       "B):   Both A and R are true, but R is not the correct explanation of A",
       "C):   A is true, but R is false",
-      "D):   A is false, but R is true",
+      "D):   A is false, but R is true"
     ],
-    correctAnswer: "a",
-    explanation: "Both statements are correct. Traditional military weapons (tanks, missiles) are completely useless against biological viruses, which require international health cooperation and epidemiological surveillance.",
+    "correctAnswer": "A",
+    "explanation": "Both statements are correct. Traditional military weapons (tanks, missiles) are completely useless against biological viruses, which require international health cooperation and epidemiological surveillance."
   },
   {
-    id: "c12-pol-5-mcq-18",
-    question: "Consider the following statements regarding traditional vs. non-traditional security:\n1. Traditional security focuses exclusively on foreign military threats to the state.\n2. Non-traditional security addresses threats that endanger individuals and communities, including global warming and poverty.\nWhich of the statements is/are correct?",
-    options: [
+    "id": "c12-pol-5-mcq-18",
+    "question": "Consider the following statements regarding traditional vs. non-traditional security:\n1. Traditional security focuses exclusively on foreign military threats to the state.\n2. Non-traditional security addresses threats that endanger individuals and communities, including global warming and poverty.\nWhich of the statements is/are correct?",
+    "options": [
       "A):   1 only",
-      "B):   2 only",
-      "C):   Both 1 and 2",
-      "D):   Neither 1 nor 2",
+      "B):   Both 1 and 2",
+      "C):   2 only",
+      "D):   Neither 1 nor 2"
     ],
-    correctAnswer: "c",
-    explanation: "Both statements are correct and summarize the fundamental divergence between traditional state-centric security and non-traditional human-centric security.",
+    "correctAnswer": "B",
+    "explanation": "Both statements are correct and summarize the fundamental divergence between traditional state-centric security and non-traditional human-centric security."
   },
   {
-    id: "c12-pol-5-mcq-19",
-    question: "Which of the following bilateral agreements between the US and the USSR in 1972 limited the deployment of defensive interceptor missile systems?",
-    options: [
-      "A):   Anti-Ballistic Missile (ABM) Treaty",
+    "id": "c12-pol-5-mcq-19",
+    "question": "Which of the following bilateral agreements between the US and the USSR in 1972 limited the deployment of defensive interceptor missile systems?",
+    "options": [
+      "A):   Comprehensive Nuclear-Test-Ban Treaty",
       "B):   Biological Weapons Convention",
-      "C):   Comprehensive Nuclear-Test-Ban Treaty",
-      "D):   Ottawa Landmine Treaty",
+      "C):   Anti-Ballistic Missile (ABM) Treaty",
+      "D):   Ottawa Landmine Treaty"
     ],
-    correctAnswer: "a",
-    explanation: "The 1972 ABM Treaty barred the US and USSR from deploying nationwide defensive missile systems, preserving the concept of Mutual Assured Destruction (MAD).",
+    "correctAnswer": "C",
+    "explanation": "The 1972 ABM Treaty barred the US and USSR from deploying nationwide defensive missile systems, preserving the concept of Mutual Assured Destruction (MAD)."
   },
   {
-    id: "c12-pol-5-mcq-20",
-    question: "Why do large-scale sudden inflows of refugees frequently trigger security tensions in receiving host countries?",
-    options: [
+    "id": "c12-pol-5-mcq-20",
+    "question": "Why do large-scale sudden inflows of refugees frequently trigger security tensions in receiving host countries?",
+    "options": [
       "A):   Because refugees automatically become heads of state in host nations",
-      "B):   Because sudden influxes can overwhelm local economies, public utilities, and trigger social friction with native populations",
+      "B):   Because refugees are legally exempt from obeying the host nation's criminal laws",
       "C):   Because the UN Charter requires host nations to abolish their military forces upon accepting refugees",
-      "D):   Because refugees are legally exempt from obeying the host nation's criminal laws",
+      "D):   Because sudden influxes can overwhelm local economies, public utilities, and trigger social friction with native populations"
     ],
-    correctAnswer: "b",
-    explanation: "Sudden large-scale migration places severe pressure on local water, healthcare, housing, and food supplies, often causing socio-economic friction with local host communities.",
-  },
+    "correctAnswer": "D",
+    "explanation": "Sudden large-scale migration places severe pressure on local water, healthcare, housing, and food supplies, often causing socio-economic friction with local host communities."
+  }
 ];

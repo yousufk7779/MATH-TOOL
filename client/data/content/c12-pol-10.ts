@@ -443,189 +443,184 @@ export const c12Pol10HtmlSolutions = `
 /* -------------------------------------------------------------------------- */
 
 export const c12Pol10Mcqs = [
-  // Tier 1: Direct Recall & Foundations (Q1 to Q6)
   {
-    id: "c12-pol-10-mcq-1",
-    question: "When was the Planning Commission of India established?",
-    options: [
-      "A):   January 1950",
-      "B):   March 1950",
+    "id": "c12-pol-10-mcq-1",
+    "question": "When was the Planning Commission of India established?",
+    "options": [
+      "A):   March 1950",
+      "B):   January 1950",
       "C):   August 1947",
       "D):   November 1951"
     ],
-    correctAnswer: "B",
-    explanation: "The Planning Commission of India was established in March 1950 by an executive cabinet resolution of the Government of India."
+    "correctAnswer": "A",
+    "explanation": "The Planning Commission of India was established in March 1950 by an executive cabinet resolution of the Government of India."
   },
   {
-    id: "c12-pol-10-mcq-2",
-    question: "Who among the following was the young economist associated with drafting the First Five-Year Plan?",
-    options: [
+    "id": "c12-pol-10-mcq-2",
+    "question": "Who among the following was the young economist associated with drafting the First Five-Year Plan?",
+    "options": [
       "A):   P.C. Mahalanobis",
-      "B):   Amartya Sen",
-      "C):   K.N. Raj",
+      "B):   K.N. Raj",
+      "C):   Amartya Sen",
       "D):   Chaudhary Charan Singh"
     ],
-    correctAnswer: "C",
-    explanation: "Economist K.N. Raj was one of the key young architects who drafted the First Five-Year Plan, arguing that India should 'hasten slowly' in its initial two decades."
+    "correctAnswer": "B",
+    "explanation": "Economist K.N. Raj was one of the key young architects who drafted the First Five-Year Plan, arguing that India should 'hasten slowly' in its initial two decades."
   },
   {
-    id: "c12-pol-10-mcq-3",
-    question: "The 'Bombay Plan' was drafted in 1944 by which of the following groups?",
-    options: [
-      "A):   Leading Indian industrialists",
+    "id": "c12-pol-10-mcq-3",
+    "question": "The 'Bombay Plan' was drafted in 1944 by which of the following groups?",
+    "options": [
+      "A):   Socialist Party executives",
       "B):   Peasant trade union leaders",
-      "C):   Socialist Party executives",
+      "C):   Leading Indian industrialists",
       "D):   British colonial administrators"
     ],
-    correctAnswer: "A",
-    explanation: "The Bombay Plan was a joint proposal drafted in 1944 by leading Indian industrialists (including J.R.D. Tata and G.D. Birla) advocating that the state must undertake massive investment in basic industries."
+    "correctAnswer": "C",
+    "explanation": "The Bombay Plan was a joint proposal drafted in 1944 by leading Indian industrialists (including J.R.D. Tata and G.D. Birla) advocating that the state must undertake massive investment in basic industries."
   },
   {
-    id: "c12-pol-10-mcq-4",
-    question: "At which session did the Indian National Congress pass the historic resolution declaring a 'Socialistic Pattern of Society' as its goal?",
-    options: [
+    "id": "c12-pol-10-mcq-4",
+    "question": "At which session did the Indian National Congress pass the historic resolution declaring a 'Socialistic Pattern of Society' as its goal?",
+    "options": [
       "A):   Nagpur Session (1959)",
-      "B):   Avadi Session (1955)",
+      "B):   Haripura Session (1938)",
       "C):   Lahore Session (1929)",
-      "D):   Haripura Session (1938)"
+      "D):   Avadi Session (1955)"
     ],
-    correctAnswer: "B",
-    explanation: "The Congress passed the resolution declaring the goal of establishing a 'Socialistic Pattern of Society' at its Avadi Session near Madras in 1955."
+    "correctAnswer": "D",
+    "explanation": "The Congress passed the resolution declaring the goal of establishing a 'Socialistic Pattern of Society' at its Avadi Session near Madras in 1955."
   },
   {
-    id: "c12-pol-10-mcq-5",
-    question: "The period from 1966 to 1969 in Indian economic planning is officially known as:",
-    options: [
-      "A):   Rolling Plan",
-      "B):   Plan Holiday",
+    "id": "c12-pol-10-mcq-5",
+    "question": "The period from 1966 to 1969 in Indian economic planning is officially known as:",
+    "options": [
+      "A):   Plan Holiday",
+      "B):   Rolling Plan",
       "C):   Emergency Plan Period",
       "D):   Green Revolution Era"
     ],
-    correctAnswer: "B",
-    explanation: "The three-year suspension of Five-Year Plans between 1966 and 1969, caused by wars, foreign exchange scarcity, and severe drought, is termed the 'Plan Holiday'."
+    "correctAnswer": "A",
+    "explanation": "The three-year suspension of Five-Year Plans between 1966 and 1969, caused by wars, foreign exchange scarcity, and severe drought, is termed the 'Plan Holiday'."
   },
   {
-    id: "c12-pol-10-mcq-6",
-    question: "On which date was NITI Aayog officially constituted to replace the Planning Commission?",
-    options: [
+    "id": "c12-pol-10-mcq-6",
+    "question": "On which date was NITI Aayog officially constituted to replace the Planning Commission?",
+    "options": [
       "A):   15 August 2014",
-      "B):   26 January 2015",
-      "C):   1 January 2015",
+      "B):   1 January 2015",
+      "C):   26 January 2015",
       "D):   1 April 2017"
     ],
-    correctAnswer: "C",
-    explanation: "NITI Aayog (National Institution for Transforming India) was officially formed on 1 January 2015 via a Union Cabinet resolution."
+    "correctAnswer": "B",
+    "explanation": "NITI Aayog (National Institution for Transforming India) was officially formed on 1 January 2015 via a Union Cabinet resolution."
   },
-
-  // Tier 2: Conceptual & Comparative (Q7 to Q11)
   {
-    id: "c12-pol-10-mcq-7",
-    question: "Which of the following sectors was the primary focus of the Second Five-Year Plan?",
-    options: [
+    "id": "c12-pol-10-mcq-7",
+    "question": "Which of the following sectors was the primary focus of the Second Five-Year Plan?",
+    "options": [
       "A):   Agriculture and Minor Irrigation",
-      "B):   Rapid Heavy Industrialization",
-      "C):   Information Technology and Services",
+      "B):   Information Technology and Services",
+      "C):   Rapid Heavy Industrialization",
       "D):   Handicrafts and Rural Weaving"
     ],
-    correctAnswer: "B",
-    explanation: "Formulated by P.C. Mahalanobis, the Second Five-Year Plan (1956–1961) placed its overwhelming emphasis on rapid heavy industrialization and basic capital goods like steel, power, and machinery."
+    "correctAnswer": "C",
+    "explanation": "Formulated by P.C. Mahalanobis, the Second Five-Year Plan (1956–1961) placed its overwhelming emphasis on rapid heavy industrialization and basic capital goods like steel, power, and machinery."
   },
   {
-    id: "c12-pol-10-mcq-8",
-    question: "What was the purpose of the 'Zoning' policy enforced by state governments during the 1960s food crisis?",
-    options: [
+    "id": "c12-pol-10-mcq-8",
+    "question": "What was the purpose of the 'Zoning' policy enforced by state governments during the 1960s food crisis?",
+    "options": [
       "A):   Demarcating agricultural land from industrial zones",
-      "B):   Restricting the trade and transit of foodgrains across state boundaries",
+      "B):   Reserving reserved constituencies for peasant representatives",
       "C):   Designating forest conservation boundaries",
-      "D):   Reserving reserved constituencies for peasant representatives"
+      "D):   Restricting the trade and transit of foodgrains across state boundaries"
     ],
-    correctAnswer: "B",
-    explanation: "Zoning prohibited the commercial movement of foodgrains across state borders, preventing deficit states like Bihar from procuring grain from surplus states like Punjab."
+    "correctAnswer": "D",
+    "explanation": "Zoning prohibited the commercial movement of foodgrains across state borders, preventing deficit states like Bihar from procuring grain from surplus states like Punjab."
   },
   {
-    id: "c12-pol-10-mcq-9",
-    question: "Under which foreign aid agreement did India import massive quantities of wheat from the United States during the mid-1960s?",
-    options: [
-      "A):   Marshall Plan",
-      "B):   Public Law 480 (PL-480)",
+    "id": "c12-pol-10-mcq-9",
+    "question": "Under which foreign aid agreement did India import massive quantities of wheat from the United States during the mid-1960s?",
+    "options": [
+      "A):   Public Law 480 (PL-480)",
+      "B):   Marshall Plan",
       "C):   Colombo Plan",
       "D):   Bretton Woods Agreement"
     ],
-    correctAnswer: "B",
-    explanation: "India imported foodgrains from the United States under the PL-480 (Public Law 480) program, which created severe political vulnerability and dependency."
+    "correctAnswer": "A",
+    "explanation": "India imported foodgrains from the United States under the PL-480 (Public Law 480) program, which created severe political vulnerability and dependency."
   },
   {
-    id: "c12-pol-10-mcq-10",
-    question: "Which political leader strongly championed the cause of agriculture over industry and later founded the Bharatiya Kranti Dal (BKD)?",
-    options: [
+    "id": "c12-pol-10-mcq-10",
+    "question": "Which political leader strongly championed the cause of agriculture over industry and later founded the Bharatiya Kranti Dal (BKD)?",
+    "options": [
       "A):   Jawaharlal Nehru",
       "B):   Chaudhary Charan Singh",
       "C):   Morarji Desai",
       "D):   C. Rajagopalachari"
     ],
-    correctAnswer: "B",
-    explanation: "Chaudhary Charan Singh broke away from Congress to advocate aggressively for peasant interests and rural agriculture, founding the Bharatiya Kranti Dal (BKD) in UP."
+    "correctAnswer": "B",
+    "explanation": "Chaudhary Charan Singh broke away from Congress to advocate aggressively for peasant interests and rural agriculture, founding the Bharatiya Kranti Dal (BKD) in UP."
   },
   {
-    id: "c12-pol-10-mcq-11",
-    question: "Who authored the influential book 'Economy of Permanence', advocating a village-centered, ecologically sustainable economic model?",
-    options: [
-      "A):   J.C. Kumarappa",
+    "id": "c12-pol-10-mcq-11",
+    "question": "Who authored the influential book 'Economy of Permanence', advocating a village-centered, ecologically sustainable economic model?",
+    "options": [
+      "A):   Mahatma Gandhi",
       "B):   P.C. Mahalanobis",
-      "C):   Mahatma Gandhi",
+      "C):   J.C. Kumarappa",
       "D):   Dr. B.R. Ambedkar"
     ],
-    correctAnswer: "A",
-    explanation: "Gandhian economist J.C. Kumarappa authored 'Economy of Permanence', proposing an alternative development model based on village industries and ecological balance."
+    "correctAnswer": "C",
+    "explanation": "Gandhian economist J.C. Kumarappa authored 'Economy of Permanence', proposing an alternative development model based on village industries and ecological balance."
   },
-
-  // Tier 3: Analytical & Multi-Statement (Q12 to Q15)
   {
-    id: "c12-pol-10-mcq-12",
-    question: "Which of the following regions reaped the maximum initial benefits of the Green Revolution in India?",
-    options: [
+    "id": "c12-pol-10-mcq-12",
+    "question": "Which of the following regions reaped the maximum initial benefits of the Green Revolution in India?",
+    "options": [
       "A):   Bihar, Odisha, and Eastern Uttar Pradesh",
-      "B):   Punjab, Haryana, and Western Uttar Pradesh",
+      "B):   Rajasthan, Gujarat, and Madhya Pradesh",
       "C):   Kerala, Tamil Nadu, and Karnataka",
-      "D):   Rajasthan, Gujarat, and Madhya Pradesh"
+      "D):   Punjab, Haryana, and Western Uttar Pradesh"
     ],
-    correctAnswer: "B",
-    explanation: "The Green Revolution was intentionally concentrated in regions with assured irrigation and resourceful farmers, predominantly Punjab, Haryana, and Western UP."
+    "correctAnswer": "D",
+    "explanation": "The Green Revolution was intentionally concentrated in regions with assured irrigation and resourceful farmers, predominantly Punjab, Haryana, and Western UP."
   },
   {
-    id: "c12-pol-10-mcq-13",
-    question: "Assertion (A): The Green Revolution ended India's chronic dependence on external food aid.\nReason (R): The Green Revolution significantly reduced inter-regional disparities between eastern and northwestern states of India.",
-    options: [
-      "A):   Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+    "id": "c12-pol-10-mcq-13",
+    "question": "Assertion (A): The Green Revolution ended India's chronic dependence on external food aid.\nReason (R): The Green Revolution significantly reduced inter-regional disparities between eastern and northwestern states of India.",
+    "options": [
+      "A):   (A) is true, but (R) is false",
       "B):   Both (A) and (R) are true, but (R) is not the correct explanation of (A)",
-      "C):   (A) is true, but (R) is false",
+      "C):   Both (A) and (R) are true, and (R) is the correct explanation of (A)",
       "D):   (A) is false, but (R) is true"
     ],
-    correctAnswer: "C",
-    explanation: "(A) is true because India became self-sufficient in foodgrains and built buffer stocks. (R) is false because the Green Revolution widened, rather than reduced, disparities between rich northwestern states and impoverished eastern states."
+    "correctAnswer": "A",
+    "explanation": "(A) is true because India became self-sufficient in foodgrains and built buffer stocks. (R) is false because the Green Revolution widened, rather than reduced, disparities between rich northwestern states and impoverished eastern states."
   },
   {
-    id: "c12-pol-10-mcq-14",
-    question: "Which of the following was NOT a direct consequence of the expansion of the public sector under Indian planning?",
-    options: [
+    "id": "c12-pol-10-mcq-14",
+    "question": "Which of the following was NOT a direct consequence of the expansion of the public sector under Indian planning?",
+    "options": [
       "A):   Establishment of core infrastructure like steel, dams, and railways",
       "B):   Complete elimination of all private sector businesses and land ownership",
       "C):   Expansion of an urban salaried administrative middle class",
       "D):   Protection of private domestic industrialists from foreign competition"
     ],
-    correctAnswer: "B",
-    explanation: "Under the Mixed Economy model, private businesses, small-scale enterprises, and private farming land were never eliminated; they operated alongside the public sector."
+    "correctAnswer": "B",
+    "explanation": "Under the Mixed Economy model, private businesses, small-scale enterprises, and private farming land were never eliminated; they operated alongside the public sector."
   },
   {
-    id: "c12-pol-10-mcq-15",
-    question: "Consider the following events:\n1. Establishment of NITI Aayog\n2. The Bombay Plan\n3. Launch of the First Five-Year Plan\n4. Declaration of the Plan Holiday\nWhat is the correct chronological sequence?",
-    options: [
-      "A):   2 — 3 — 4 — 1",
+    "id": "c12-pol-10-mcq-15",
+    "question": "Consider the following events:\n1. Establishment of NITI Aayog\n2. The Bombay Plan\n3. Launch of the First Five-Year Plan\n4. Declaration of the Plan Holiday\nWhat is the correct chronological sequence?",
+    "options": [
+      "A):   2 — 4 — 3 — 1",
       "B):   3 — 2 — 4 — 1",
-      "C):   2 — 4 — 3 — 1",
+      "C):   2 — 3 — 4 — 1",
       "D):   1 — 2 — 3 — 4"
     ],
-    correctAnswer: "A",
-    explanation: "The correct sequence is: Bombay Plan (1944) → First FYP (1951) → Plan Holiday (1966) → NITI Aayog (2015)."
+    "correctAnswer": "C",
+    "explanation": "The correct sequence is: Bombay Plan (1944) → First FYP (1951) → Plan Holiday (1966) → NITI Aayog (2015)."
   }
 ];

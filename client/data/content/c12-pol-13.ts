@@ -505,249 +505,244 @@ export const c12Pol13HtmlSolutions = `
 /* -------------------------------------------------------------------------- */
 
 export const c12Pol13Mcqs = [
-  // Tier 1: Direct Recall, Dates & Personalities (Q1 to Q8)
   {
-    id: "c12-pol-13-mcq-1",
-    question: "On which date was the National Emergency declared in India under Article 352?",
-    options: [
-      "A):   12 June 1975",
-      "B):   25 June 1975",
+    "id": "c12-pol-13-mcq-1",
+    "question": "On which date was the National Emergency declared in India under Article 352?",
+    "options": [
+      "A):   25 June 1975",
+      "B):   12 June 1975",
       "C):   24 April 1973",
       "D):   18 January 1977"
     ],
-    correctAnswer: "B",
-    explanation: "The National Emergency was declared on the night of 25 June 1975 on the grounds of 'internal disturbance'."
+    "correctAnswer": "A",
+    "explanation": "The National Emergency was declared on the night of 25 June 1975 on the grounds of 'internal disturbance'."
   },
   {
-    id: "c12-pol-13-mcq-2",
-    question: "Who was the President of India who signed the proclamation of Emergency in June 1975?",
-    options: [
+    "id": "c12-pol-13-mcq-2",
+    "question": "Who was the President of India who signed the proclamation of Emergency in June 1975?",
+    "options": [
       "A):   Dr. Zakir Husain",
-      "B):   V.V. Giri",
-      "C):   Fakhruddin Ali Ahmed",
+      "B):   Fakhruddin Ali Ahmed",
+      "C):   V.V. Giri",
       "D):   Neelam Sanjeeva Reddy"
     ],
-    correctAnswer: "C",
-    explanation: "President Fakhruddin Ali Ahmed signed the emergency proclamation on the advice of Prime Minister Indira Gandhi."
+    "correctAnswer": "B",
+    "explanation": "President Fakhruddin Ali Ahmed signed the emergency proclamation on the advice of Prime Minister Indira Gandhi."
   },
   {
-    id: "c12-pol-13-mcq-3",
-    question: "Which judge of the Allahabad High Court set aside Indira Gandhi's election in June 1975?",
-    options: [
+    "id": "c12-pol-13-mcq-3",
+    "question": "Which judge of the Allahabad High Court set aside Indira Gandhi's election in June 1975?",
+    "options": [
       "A):   Justice A.N. Ray",
-      "B):   Justice Jagmohan Lal Sinha",
-      "C):   Justice H.R. Khanna",
+      "B):   Justice H.R. Khanna",
+      "C):   Justice Jagmohan Lal Sinha",
       "D):   Justice V.R. Krishna Iyer"
     ],
-    correctAnswer: "B",
-    explanation: "Justice Jagmohan Lal Sinha delivered the historic verdict on 12 June 1975 holding Indira Gandhi's election invalid."
+    "correctAnswer": "C",
+    "explanation": "Justice Jagmohan Lal Sinha delivered the historic verdict on 12 June 1975 holding Indira Gandhi's election invalid."
   },
   {
-    id: "c12-pol-13-mcq-4",
-    question: "Who gave the famous clarion call for 'Total Revolution' (Sampoorna Kranti) in 1974?",
-    options: [
+    "id": "c12-pol-13-mcq-4",
+    "question": "Who gave the famous clarion call for 'Total Revolution' (Sampoorna Kranti) in 1974?",
+    "options": [
       "A):   Ram Manohar Lohia",
-      "B):   Jayaprakash Narayan",
+      "B):   Chaudhary Charan Singh",
       "C):   Morarji Desai",
-      "D):   Chaudhary Charan Singh"
+      "D):   Jayaprakash Narayan"
     ],
-    correctAnswer: "B",
-    explanation: "Jayaprakash Narayan (JP) called for 'Total Revolution' encompassing moral, social, economic, and political transformations."
+    "correctAnswer": "D",
+    "explanation": "Jayaprakash Narayan (JP) called for 'Total Revolution' encompassing moral, social, economic, and political transformations."
   },
   {
-    id: "c12-pol-13-mcq-5",
-    question: "The Navnirman Movement in 1974 originated in which Indian state?",
-    options: [
-      "A):   Bihar",
-      "B):   Gujarat",
+    "id": "c12-pol-13-mcq-5",
+    "question": "The Navnirman Movement in 1974 originated in which Indian state?",
+    "options": [
+      "A):   Gujarat",
+      "B):   Bihar",
       "C):   Uttar Pradesh",
       "D):   Maharashtra"
     ],
-    correctAnswer: "B",
-    explanation: "The Navnirman Movement was initiated by engineering students in Gujarat protesting against price rise, corruption, and food inflation."
+    "correctAnswer": "A",
+    "explanation": "The Navnirman Movement was initiated by engineering students in Gujarat protesting against price rise, corruption, and food inflation."
   },
   {
-    id: "c12-pol-13-mcq-6",
-    question: "Who was appointed as the Chief Justice of India in 1973 superseding three senior Supreme Court judges?",
-    options: [
-      "A):   Justice A.N. Ray",
-      "B):   Justice S.M. Sikri",
+    "id": "c12-pol-13-mcq-6",
+    "question": "Who was appointed as the Chief Justice of India in 1973 superseding three senior Supreme Court judges?",
+    "options": [
+      "A):   Justice S.M. Sikri",
+      "B):   Justice A.N. Ray",
       "C):   Justice P.N. Bhagwati",
       "D):   Justice Y.V. Chandrachud"
     ],
-    correctAnswer: "A",
-    explanation: "Justice A.N. Ray was appointed CJI by the Indira Gandhi government, bypassing Justices Shelat, Hegde, and Grover."
+    "correctAnswer": "B",
+    "explanation": "Justice A.N. Ray was appointed CJI by the Indira Gandhi government, bypassing Justices Shelat, Hegde, and Grover."
   },
   {
-    id: "c12-pol-13-mcq-7",
-    question: "Who became the first non-Congress Prime Minister of India following the March 1977 elections?",
-    options: [
+    "id": "c12-pol-13-mcq-7",
+    "question": "Who became the first non-Congress Prime Minister of India following the March 1977 elections?",
+    "options": [
       "A):   Chaudhary Charan Singh",
       "B):   Atal Bihari Vajpayee",
       "C):   Morarji Desai",
       "D):   Jagjivan Ram"
     ],
-    correctAnswer: "C",
-    explanation: "Morarji Desai took oath as the Prime Minister of India on 24 March 1977, heading the Janata Party government."
+    "correctAnswer": "C",
+    "explanation": "Morarji Desai took oath as the Prime Minister of India on 24 March 1977, heading the Janata Party government."
   },
   {
-    id: "c12-pol-13-mcq-8",
-    question: "Which constitutional amendment is popularly known as the 'Mini-Constitution'?",
-    options: [
+    "id": "c12-pol-13-mcq-8",
+    "question": "Which constitutional amendment is popularly known as the 'Mini-Constitution'?",
+    "options": [
       "A):   24th Amendment Act",
-      "B):   42nd Amendment Act",
+      "B):   52nd Amendment Act",
       "C):   44th Amendment Act",
-      "D):   52nd Amendment Act"
+      "D):   42nd Amendment Act"
     ],
-    correctAnswer: "B",
-    explanation: "The 42nd Constitutional Amendment Act passed during the Emergency in 1976 made sweeping changes and is termed the 'Mini-Constitution'."
+    "correctAnswer": "D",
+    "explanation": "The 42nd Constitutional Amendment Act passed during the Emergency in 1976 made sweeping changes and is termed the 'Mini-Constitution'."
   },
-
-  // Tier 2: Conceptual & Comparative (Q9 to Q15)
   {
-    id: "c12-pol-13-mcq-9",
-    question: "What was the core ground under Article 352 cited by the government for declaring the 1975 Emergency?",
-    options: [
-      "A):   External Aggression by a foreign power",
-      "B):   Internal Disturbance",
+    "id": "c12-pol-13-mcq-9",
+    "question": "What was the core ground under Article 352 cited by the government for declaring the 1975 Emergency?",
+    "options": [
+      "A):   Internal Disturbance",
+      "B):   External Aggression by a foreign power",
       "C):   Armed Rebellion by underground cadres",
       "D):   Financial Insolvency"
     ],
-    correctAnswer: "B",
-    explanation: "The Emergency of 1975 was declared under Article 352 on the grounds of 'Internal Disturbance', a phrase subsequently removed by the 44th Amendment."
+    "correctAnswer": "A",
+    "explanation": "The Emergency of 1975 was declared under Article 352 on the grounds of 'Internal Disturbance', a phrase subsequently removed by the 44th Amendment."
   },
   {
-    id: "c12-pol-13-mcq-10",
-    question: "Why did three senior Supreme Court judges resign in April 1973?",
-    options: [
+    "id": "c12-pol-13-mcq-10",
+    "question": "Why did three senior Supreme Court judges resign in April 1973?",
+    "options": [
       "A):   They were convicted of corrupt practices by the Lok Sabha",
       "B):   The government superseded them and appointed a junior judge (A.N. Ray) as Chief Justice of India",
       "C):   They contested the presidential elections as independent candidates",
       "D):   They protested against the abolition of privy purses"
     ],
-    correctAnswer: "B",
-    explanation: "Justices Shelat, Hegde, and Grover resigned in protest against the violation of the seniority convention when Justice A.N. Ray was appointed CJI."
+    "correctAnswer": "B",
+    "explanation": "Justices Shelat, Hegde, and Grover resigned in protest against the violation of the seniority convention when Justice A.N. Ray was appointed CJI."
   },
   {
-    id: "c12-pol-13-mcq-11",
-    question: "What was the primary objective of the Shah Commission appointed in May 1977?",
-    options: [
+    "id": "c12-pol-13-mcq-11",
+    "question": "What was the primary objective of the Shah Commission appointed in May 1977?",
+    "options": [
       "A):   To draft the 44th Constitutional Amendment Bill",
-      "B):   To inquire into abuses of power, excesses, and illegal actions committed during the Emergency",
-      "C):   To investigate electoral irregularities in the 1971 elections",
+      "B):   To investigate electoral irregularities in the 1971 elections",
+      "C):   To inquire into abuses of power, excesses, and illegal actions committed during the Emergency",
       "D):   To determine financial compensation for former princely rulers"
     ],
-    correctAnswer: "B",
-    explanation: "The Shah Commission, headed by Justice J.C. Shah, investigated excesses, unauthorized arrests, press censorship, and abuses during the Emergency."
+    "correctAnswer": "C",
+    "explanation": "The Shah Commission, headed by Justice J.C. Shah, investigated excesses, unauthorized arrests, press censorship, and abuses during the Emergency."
   },
   {
-    id: "c12-pol-13-mcq-12",
-    question: "Which of the following Fundamental Rights CANNOT be suspended even during a National Emergency after the 44th Amendment?",
-    options: [
+    "id": "c12-pol-13-mcq-12",
+    "question": "Which of the following Fundamental Rights CANNOT be suspended even during a National Emergency after the 44th Amendment?",
+    "options": [
       "A):   Article 19 (Freedom of Speech and Assembly)",
       "B):   Article 14 (Equality before Law)",
-      "C):   Articles 20 and 21 (Protection in respect of conviction and Right to Life)",
-      "D):   Article 32 (Right to Constitutional Remedies)"
+      "C):   Article 32 (Right to Constitutional Remedies)",
+      "D):   Articles 20 and 21 (Protection in respect of conviction and Right to Life)"
     ],
-    correctAnswer: "C",
-    explanation: "The 44th Amendment guaranteed that Articles 20 and 21 can never be suspended under any circumstance, safeguarding the right to life."
+    "correctAnswer": "D",
+    "explanation": "The 44th Amendment guaranteed that Articles 20 and 21 can never be suspended under any circumstance, safeguarding the right to life."
   },
   {
-    id: "c12-pol-13-mcq-13",
-    question: "Which political leader quit Indira Gandhi's cabinet on the eve of the 1977 elections to form the 'Congress for Democracy'?",
-    options: [
-      "A):   Y.B. Chavan",
-      "B):   Jagjivan Ram",
+    "id": "c12-pol-13-mcq-13",
+    "question": "Which political leader quit Indira Gandhi's cabinet on the eve of the 1977 elections to form the 'Congress for Democracy'?",
+    "options": [
+      "A):   Jagjivan Ram",
+      "B):   Y.B. Chavan",
       "C):   K. Kamaraj",
       "D):   C. Subramaniam"
     ],
-    correctAnswer: "B",
-    explanation: "Senior Dalit leader Jagjivan Ram resigned from the Congress in February 1977 to launch the Congress for Democracy, which allied with the Janata Party."
+    "correctAnswer": "A",
+    "explanation": "Senior Dalit leader Jagjivan Ram resigned from the Congress in February 1977 to launch the Congress for Democracy, which allied with the Janata Party."
   },
   {
-    id: "c12-pol-13-mcq-14",
-    question: "Which newspapers famously left their editorial columns blank to protest government pre-censorship during the Emergency?",
-    options: [
+    "id": "c12-pol-13-mcq-14",
+    "question": "Which newspapers famously left their editorial columns blank to protest government pre-censorship during the Emergency?",
+    "options": [
       "A):   The Times of India and Hindustan Times",
       "B):   The Indian Express and The Statesman",
       "C):   The Hindu and National Herald",
       "D):   Dainik Jagran and Punjab Kesari"
     ],
-    correctAnswer: "B",
-    explanation: "*The Indian Express* and *The Statesman* protested against censorship by publishing blank editorial spaces."
+    "correctAnswer": "B",
+    "explanation": "*The Indian Express* and *The Statesman* protested against censorship by publishing blank editorial spaces."
   },
   {
-    id: "c12-pol-13-mcq-15",
-    question: "Under the 44th Amendment Act (1978), the phrase 'Internal Disturbance' was replaced by which term in Article 352?",
-    options: [
+    "id": "c12-pol-13-mcq-15",
+    "question": "Under the 44th Amendment Act (1978), the phrase 'Internal Disturbance' was replaced by which term in Article 352?",
+    "options": [
       "A):   Civil Disobedience",
-      "B):   Armed Rebellion",
-      "C):   Constitutional Breakdown",
+      "B):   Constitutional Breakdown",
+      "C):   Armed Rebellion",
       "D):   Terrorist Insurgency"
     ],
-    correctAnswer: "B",
-    explanation: "The 44th Amendment replaced 'internal disturbance' with 'armed rebellion' to prevent future subjective political declarations of emergency."
+    "correctAnswer": "C",
+    "explanation": "The 44th Amendment replaced 'internal disturbance' with 'armed rebellion' to prevent future subjective political declarations of emergency."
   },
-
-  // Tier 3: Analytical, Assertion-Reason & Chronology (Q16 to Q20)
   {
-    id: "c12-pol-13-mcq-16",
-    question: "Assertion (A): The 1977 General Election was a democratic referendum on the Emergency.\nReason (R): The Congress was completely routed in Northern India, winning zero seats in Uttar Pradesh and Bihar.",
-    options: [
-      "A):   Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+    "id": "c12-pol-13-mcq-16",
+    "question": "Assertion (A): The 1977 General Election was a democratic referendum on the Emergency.\nReason (R): The Congress was completely routed in Northern India, winning zero seats in Uttar Pradesh and Bihar.",
+    "options": [
+      "A):   (A) is false, but (R) is true",
       "B):   Both (A) and (R) are true, but (R) is not the correct explanation of (A)",
       "C):   (A) is true, but (R) is false",
-      "D):   (A) is false, but (R) is true"
+      "D):   Both (A) and (R) are true, and (R) is the correct explanation of (A)"
     ],
-    correctAnswer: "A",
-    explanation: "The election was a direct public referendum against Emergency authoritarianism, resulting in total voter rejection of Congress across North India."
+    "correctAnswer": "D",
+    "explanation": "The election was a direct public referendum against Emergency authoritarianism, resulting in total voter rejection of Congress across North India."
   },
   {
-    id: "c12-pol-13-mcq-17",
-    question: "Which landmark civil liberties organization emerged in the aftermath of the Emergency to protect constitutional rights?",
-    options: [
+    "id": "c12-pol-13-mcq-17",
+    "question": "Which landmark civil liberties organization emerged in the aftermath of the Emergency to protect constitutional rights?",
+    "options": [
       "A):   People's Union for Civil Liberties (PUCL)",
       "B):   Amnesty International India Branch",
       "C):   National Human Rights Commission (NHRC)",
       "D):   Association for Democratic Reforms (ADR)"
     ],
-    correctAnswer: "A",
-    explanation: "PUCL (People's Union for Civil Liberties) was founded during and immediately after the Emergency by Jayaprakash Narayan and civil rights defenders."
+    "correctAnswer": "A",
+    "explanation": "PUCL (People's Union for Civil Liberties) was founded during and immediately after the Emergency by Jayaprakash Narayan and civil rights defenders."
   },
   {
-    id: "c12-pol-13-mcq-18",
-    question: "Assertion (A): The President declared the Emergency on the night of 25 June 1975 without the prior formal consultation of the Union Cabinet.\nReason (R): The 44th Amendment later made it mandatory for the President to act only on written advice from the Union Cabinet.",
-    options: [
-      "A):   Both (A) and (R) are true, and (R) explains the corrective constitutional mechanism introduced",
-      "B):   Both (A) and (R) are true, but (R) is not related to (A)",
+    "id": "c12-pol-13-mcq-18",
+    "question": "Assertion (A): The President declared the Emergency on the night of 25 June 1975 without the prior formal consultation of the Union Cabinet.\nReason (R): The 44th Amendment later made it mandatory for the President to act only on written advice from the Union Cabinet.",
+    "options": [
+      "A):   Both (A) and (R) are true, but (R) is not related to (A)",
+      "B):   Both (A) and (R) are true, and (R) explains the corrective constitutional mechanism introduced",
       "C):   (A) is true, but (R) is false",
       "D):   (A) is false, but (R) is true"
     ],
-    correctAnswer: "A",
-    explanation: "Indira Gandhi advised the President unilaterally before informing the Cabinet; to prevent such abuse, the 44th Amendment mandated written Cabinet advice."
+    "correctAnswer": "B",
+    "explanation": "Indira Gandhi advised the President unilaterally before informing the Cabinet; to prevent such abuse, the 44th Amendment mandated written Cabinet advice."
   },
   {
-    id: "c12-pol-13-mcq-19",
-    question: "Match List-I (Event/Movement) with List-II (Key Personality):\n1. Navnirman Movement — (i) George Fernandes\n2. Nationwide Railway Strike — (ii) Morarji Desai\n3. Total Revolution — (iii) Justice J.C. Shah\n4. Commission of Inquiry — (iv) Jayaprakash Narayan\nSelect the correct combination:",
-    options: [
-      "A):   1-(ii), 2-(i), 3-(iv), 4-(iii)",
+    "id": "c12-pol-13-mcq-19",
+    "question": "Match List-I (Event/Movement) with List-II (Key Personality):\n1. Navnirman Movement — (i) George Fernandes\n2. Nationwide Railway Strike — (ii) Morarji Desai\n3. Total Revolution — (iii) Justice J.C. Shah\n4. Commission of Inquiry — (iv) Jayaprakash Narayan\nSelect the correct combination:",
+    "options": [
+      "A):   1-(ii), 2-(iv), 3-(i), 4-(iii)",
       "B):   1-(iv), 2-(i), 3-(ii), 4-(iii)",
-      "C):   1-(ii), 2-(iv), 3-(i), 4-(iii)",
+      "C):   1-(ii), 2-(i), 3-(iv), 4-(iii)",
       "D):   1-(i), 2-(ii), 3-(iv), 4-(iii)"
     ],
-    correctAnswer: "A",
-    explanation: "Navnirman involved Morarji's fast; Railway Strike led by Fernandes; Total Revolution by JP; Commission of Inquiry by Justice Shah."
+    "correctAnswer": "C",
+    "explanation": "Navnirman involved Morarji's fast; Railway Strike led by Fernandes; Total Revolution by JP; Commission of Inquiry by Justice Shah."
   },
   {
-    id: "c12-pol-13-mcq-20",
-    question: "Arrange the following events in chronological sequence:\n1. Proclamation of Emergency by President Ahmed\n2. Kesavananda Bharati verdict of the Supreme Court\n3. Historic victory of the Janata Party in elections\n4. Allahabad High Court verdict by Justice Sinha\nSelect the correct sequence:",
-    options: [
-      "A):   2 — 4 — 1 — 3",
+    "id": "c12-pol-13-mcq-20",
+    "question": "Arrange the following events in chronological sequence:\n1. Proclamation of Emergency by President Ahmed\n2. Kesavananda Bharati verdict of the Supreme Court\n3. Historic victory of the Janata Party in elections\n4. Allahabad High Court verdict by Justice Sinha\nSelect the correct sequence:",
+    "options": [
+      "A):   1 — 2 — 4 — 3",
       "B):   4 — 2 — 1 — 3",
       "C):   2 — 1 — 4 — 3",
-      "D):   1 — 2 — 4 — 3"
+      "D):   2 — 4 — 1 — 3"
     ],
-    correctAnswer: "A",
-    explanation: "Kesavananda Bharati (April 1973) → Allahabad HC Verdict (12 June 1975) → Emergency declared (25 June 1975) → Janata Party victory (March 1977)."
+    "correctAnswer": "D",
+    "explanation": "Kesavananda Bharati (April 1973) → Allahabad HC Verdict (12 June 1975) → Emergency declared (25 June 1975) → Janata Party victory (March 1977)."
   }
 ];
