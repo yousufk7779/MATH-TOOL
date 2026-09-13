@@ -43,6 +43,7 @@ import { c12Pol8HtmlOverview, c12Pol8HtmlSolutions, c12Pol8Mcqs } from "./conten
 import { c12Pol9HtmlOverview, c12Pol9HtmlSolutions, c12Pol9Mcqs } from "./content/c12-pol-9";
 import { c12Pol10HtmlOverview, c12Pol10HtmlSolutions, c12Pol10Mcqs } from "./content/c12-pol-10";
 import { c12Pol11HtmlOverview, c12Pol11HtmlSolutions, c12Pol11Mcqs } from "./content/c12-pol-11";
+import { c12Pol12HtmlOverview, c12Pol12HtmlSolutions, c12Pol12Mcqs } from "./content/c12-pol-12";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -2820,6 +2821,24 @@ if (ch12Pol11) {
   ];
   ch12Pol11.mcqs = c12Pol11Mcqs;
 }
+
+// Override Class 12 Political Science Chapter 12 (Challenge to and Restoration of Congress System)
+const ch12Pol12 = chapterContents["c12-pol-12"];
+if (ch12Pol12) {
+  ch12Pol12.htmlOverview = c12Pol12HtmlOverview;
+  ch12Pol12.htmlExercises = {
+    "ex-c12-qa": c12Pol12HtmlSolutions,
+  };
+  ch12Pol12.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Pol12.mcqs = c12Pol12Mcqs;
+}
+
 
 
 
