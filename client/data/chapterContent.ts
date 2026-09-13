@@ -52,6 +52,7 @@ import { c11Pol2HtmlOverview, c11Pol2HtmlSolutions, c11Pol2Mcqs } from "./conten
 import { c11Pol3HtmlOverview, c11Pol3HtmlSolutions, c11Pol3Mcqs } from "./content/c11-pol-3";
 import { c11Pol4HtmlOverview, c11Pol4HtmlSolutions, c11Pol4Mcqs } from "./content/c11-pol-4";
 import { c11Pol5HtmlOverview, c11Pol5HtmlSolutions, c11Pol5Mcqs } from "./content/c11-pol-5";
+import { c11Pol6HtmlOverview, c11Pol6HtmlSolutions, c11Pol6Mcqs } from "./content/c11-pol-6";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -3127,6 +3128,23 @@ if (ch11Pol5) {
     },
   ];
   ch11Pol5.mcqs = c11Pol5Mcqs;
+}
+
+// Override Class 11 Political Science Chapter 6 (Judiciary)
+const ch11Pol6 = chapterContents["c11-pol-6"];
+if (ch11Pol6) {
+  ch11Pol6.htmlOverview = c11Pol6HtmlOverview;
+  ch11Pol6.htmlExercises = {
+    "ex-c11-qa": c11Pol6HtmlSolutions,
+  };
+  ch11Pol6.exercises = [
+    {
+      id: "ex-c11-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch11Pol6.mcqs = c11Pol6Mcqs;
 }
 
 
