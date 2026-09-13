@@ -38,6 +38,7 @@ import { c12Pol3HtmlOverview, c12Pol3HtmlSolutions, c12Pol3Mcqs } from "./conten
 import { c12Pol4HtmlOverview, c12Pol4HtmlSolutions, c12Pol4Mcqs } from "./content/c12-pol-4";
 import { c12Pol5HtmlOverview, c12Pol5HtmlSolutions, c12Pol5Mcqs } from "./content/c12-pol-5";
 import { c12Pol6HtmlOverview, c12Pol6HtmlSolutions, c12Pol6Mcqs } from "./content/c12-pol-6";
+import { c12Pol7HtmlOverview, c12Pol7HtmlSolutions, c12Pol7Mcqs } from "./content/c12-pol-7";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -2730,6 +2731,24 @@ if (ch12Pol6) {
   ];
   ch12Pol6.mcqs = c12Pol6Mcqs;
 }
+
+// Override Class 12 Political Science Chapter 7 (Environmental and Natural Resources in Global Politics)
+const ch12Pol7 = chapterContents["c12-pol-7"];
+if (ch12Pol7) {
+  ch12Pol7.htmlOverview = c12Pol7HtmlOverview;
+  ch12Pol7.htmlExercises = {
+    "ex-c12-qa": c12Pol7HtmlSolutions,
+  };
+  ch12Pol7.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Pol7.mcqs = c12Pol7Mcqs;
+}
+
 
 
 
