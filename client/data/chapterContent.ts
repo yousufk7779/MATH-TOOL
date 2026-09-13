@@ -49,6 +49,7 @@ import { c12Pol14HtmlOverview, c12Pol14HtmlSolutions, c12Pol14Mcqs } from "./con
 import { c12Pol15HtmlOverview, c12Pol15HtmlSolutions, c12Pol15Mcqs } from "./content/c12-pol-15";
 import { c11Pol1HtmlOverview, c11Pol1HtmlSolutions, c11Pol1Mcqs } from "./content/c11-pol-1";
 import { c11Pol2HtmlOverview, c11Pol2HtmlSolutions, c11Pol2Mcqs } from "./content/c11-pol-2";
+import { c11Pol3HtmlOverview, c11Pol3HtmlSolutions, c11Pol3Mcqs } from "./content/c11-pol-3";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -3074,6 +3075,24 @@ if (ch11Pol2) {
   ];
   ch11Pol2.mcqs = c11Pol2Mcqs;
 }
+
+// Override Class 11 Political Science Chapter 3 (System of Representational Democracy)
+const ch11Pol3 = chapterContents["c11-pol-3"];
+if (ch11Pol3) {
+  ch11Pol3.htmlOverview = c11Pol3HtmlOverview;
+  ch11Pol3.htmlExercises = {
+    "ex-c11-qa": c11Pol3HtmlSolutions,
+  };
+  ch11Pol3.exercises = [
+    {
+      id: "ex-c11-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch11Pol3.mcqs = c11Pol3Mcqs;
+}
+
 
 
 
