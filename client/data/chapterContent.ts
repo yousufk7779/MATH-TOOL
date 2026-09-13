@@ -56,6 +56,7 @@ import { c11Pol6HtmlOverview, c11Pol6HtmlSolutions, c11Pol6Mcqs } from "./conten
 import { c11Pol7HtmlOverview, c11Pol7HtmlSolutions, c11Pol7Mcqs } from "./content/c11-pol-7";
 import { c11Pol8HtmlOverview, c11Pol8HtmlSolutions, c11Pol8Mcqs } from "./content/c11-pol-8";
 import { c11Pol9HtmlOverview, c11Pol9HtmlSolutions, c11Pol9Mcqs } from "./content/c11-pol-9";
+import { c11Pol10HtmlOverview, c11Pol10HtmlSolutions, c11Pol10Mcqs } from "./content/c11-pol-10";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -3199,6 +3200,23 @@ if (ch11Pol9) {
     },
   ];
   ch11Pol9.mcqs = c11Pol9Mcqs;
+}
+
+// Override Class 11 Political Science Chapter 10 (Constitution as a Living Document)
+const ch11Pol10 = chapterContents["c11-pol-10"];
+if (ch11Pol10) {
+  ch11Pol10.htmlOverview = c11Pol10HtmlOverview;
+  ch11Pol10.htmlExercises = {
+    "ex-c11-qa": c11Pol10HtmlSolutions,
+  };
+  ch11Pol10.exercises = [
+    {
+      id: "ex-c11-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch11Pol10.mcqs = c11Pol10Mcqs;
 }
 
 
