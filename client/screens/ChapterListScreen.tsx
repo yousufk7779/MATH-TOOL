@@ -49,12 +49,14 @@ function ChapterListScreen() {
       const available = !item.locked;
       const chapterGradient = getChapterGradient(item.id);
 
-      const isPolSciencePartA = item.id === "c12-pol-1";
-      const isPolSciencePartB = item.id === "c12-pol-8";
+      const isPolScience12PartA = item.id === "c12-pol-1";
+      const isPolScience12PartB = item.id === "c12-pol-8";
+      const isPolScience11PartA = item.id === "c11-pol-1";
+      const isPolScience11PartB = item.id === "c11-pol-11";
 
       return (
         <View>
-          {isPolSciencePartA && (
+          {(isPolScience12PartA || isPolScience11PartA) && (
             <View style={styles.sectionBanner}>
               <View style={[styles.sectionBadge, styles.badgePartA]}>
                 <ThemedText style={[styles.sectionBadgeText, styles.badgeTextPartA]}>
@@ -62,12 +64,14 @@ function ChapterListScreen() {
                 </ThemedText>
               </View>
               <ThemedText style={styles.sectionBannerTitle}>
-                Contemporary World Politics
+                {isPolScience11PartA
+                  ? "Indian Constitution at Work"
+                  : "Contemporary World Politics"}
               </ThemedText>
             </View>
           )}
 
-          {isPolSciencePartB && (
+          {(isPolScience12PartB || isPolScience11PartB) && (
             <View style={[styles.sectionBanner, styles.sectionBannerPartB]}>
               <View style={[styles.sectionBadge, styles.badgePartB]}>
                 <ThemedText style={[styles.sectionBadgeText, styles.badgeTextPartB]}>
@@ -75,7 +79,9 @@ function ChapterListScreen() {
                 </ThemedText>
               </View>
               <ThemedText style={styles.sectionBannerTitle}>
-                Politics in India since Independence
+                {isPolScience11PartB
+                  ? "Political Theory"
+                  : "Politics in India since Independence"}
               </ThemedText>
             </View>
           )}

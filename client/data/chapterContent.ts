@@ -2050,6 +2050,152 @@ for (let i = 1; i <= 15; i++) {
   };
 }
 
+// Dynamically generate Class 11 Political Science Chapter Structures (18 Chapters)
+const c11PolTitles = [
+  "Making of the Constitution",
+  "Fundamental Rights",
+  "System of Representational Democracy",
+  "Executive in a Parliamentary System",
+  "Legislature at the Central and State Level",
+  "Judiciary",
+  "Federalism",
+  "Local Government",
+  "Political Philosophy Underlying the Constitution",
+  "Constitution as a Living Document",
+  "Introduction to Political Theory",
+  "Freedom",
+  "Equality",
+  "Social Justice",
+  "Rights",
+  "Citizenship",
+  "Nationalism",
+  "Secularism",
+];
+
+const c11PolMarks = [
+  "3 Marks",
+  "5 Marks",
+  "6 Marks",
+  "4 Marks",
+  "4 Marks",
+  "4 Marks",
+  "6 Marks",
+  "4 Marks",
+  "2 Marks",
+  "2 Marks",
+  "4 Marks",
+  "6 Marks",
+  "6 Marks",
+  "6 Marks",
+  "4 Marks",
+  "4 Marks",
+  "4 Marks",
+  "6 Marks",
+];
+
+const c11PolThemeColors = [
+  "#FF512F",
+  "#00C6FF",
+  "#11998E",
+  "#8E2DE2",
+  "#FF8A65",
+  "#FDC830",
+  "#00E676",
+  "#FF6D00",
+  "#2979FF",
+  "#00BFA5",
+  "#E040FB",
+  "#FF007F",
+  "#D50000",
+  "#7C4DFF",
+  "#00C853",
+  "#FFAB00",
+  "#00E5FF",
+  "#E91E63",
+];
+
+const c11PolParts = [
+  "Part A: Indian Constitution at Work",
+  "Part A: Indian Constitution at Work",
+  "Part A: Indian Constitution at Work",
+  "Part A: Indian Constitution at Work",
+  "Part A: Indian Constitution at Work",
+  "Part A: Indian Constitution at Work",
+  "Part A: Indian Constitution at Work",
+  "Part A: Indian Constitution at Work",
+  "Part A: Indian Constitution at Work",
+  "Part A: Indian Constitution at Work",
+  "Part B: Political Theory",
+  "Part B: Political Theory",
+  "Part B: Political Theory",
+  "Part B: Political Theory",
+  "Part B: Political Theory",
+  "Part B: Political Theory",
+  "Part B: Political Theory",
+  "Part B: Political Theory",
+];
+
+// Initialize Class 11 Political Science (c11-pol-1 to c11-pol-18)
+for (let i = 1; i <= 18; i++) {
+  const id = `c11-pol-${i}`;
+  const themeColor = c11PolThemeColors[i - 1];
+  const title = c11PolTitles[i - 1];
+  const marks = c11PolMarks[i - 1];
+  const part = c11PolParts[i - 1];
+  chapterContents[id] = {
+    id,
+    number: i,
+    title: `Chapter ${i}: ${title}`,
+    isHtmlView: true,
+    htmlOverview: `
+      <div style="padding: 14px; color: #F8FAFC; text-align: justify; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+        <div style="display: inline-block; background: ${themeColor}22; border: 1px solid ${themeColor}; border-radius: 6px; padding: 4px 10px; margin-bottom: 12px;">
+          <span style="color: ${themeColor}; font-size: 12px; font-weight: 800; letter-spacing: 0.5px;">${part.toUpperCase()} • ${marks.toUpperCase()}</span>
+        </div>
+        <h2 style="color: ${themeColor}; font-size: 22px; font-weight: 800; border-bottom: 2px solid ${themeColor}; padding-bottom: 8px; margin-bottom: 16px;">
+          Chapter ${i}: ${title}
+        </h2>
+        <div style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(255, 255, 255, 0.1); border-left: 4px solid ${themeColor}; border-radius: 8px; padding: 14px 16px; margin: 16px 0;">
+          <h4 style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 6px 0;">🏛️ Ultra Gold Reference Guide</h4>
+          <p style="color: #CBD5E1; font-size: 14.5px; line-height: 1.6; margin: 0;">Comprehensive constitutional principles, democratic institutions, political theories, and high-contrast concept flowcharts are being prepared for this chapter.</p>
+        </div>
+      </div>
+    `,
+    htmlExercises: {
+      "ex-c11-qa": `
+        <div style="padding: 14px; color: #F8FAFC; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+          <h3 style="color: ${themeColor}; font-size: 20px; font-weight: 800; border-bottom: 2px solid ${themeColor}; padding-bottom: 8px; margin-bottom: 16px;">
+            Chapter ${i}: Board Master Q&A (${marks})
+          </h3>
+          <p style="color: #94A3B8; font-size: 14.5px; line-height: 1.6;">
+            Targeted Board Exam Questions curated strictly according to the official ${marks} board weightage.
+          </p>
+        </div>
+      `,
+    },
+    exercises: [
+      {
+        id: "ex-c11-qa",
+        name: "Q & A",
+        questions: [],
+      },
+    ],
+    mcqs: Array.from({ length: 20 }, (_, idx) => ({
+      id: `${id}-mcq-${idx + 1}`,
+      question: `Class 11 Political Science Chapter ${i} (${title}) - Practice Question ${idx + 1}`,
+      options: [
+        `A):   Option 1 for Question ${idx + 1}`,
+        `B):   Option 2 for Question ${idx + 1}`,
+        `C):   Option 3 for Question ${idx + 1}`,
+        `D):   Option 4 for Question ${idx + 1}`,
+      ],
+      correctAnswer: ["a", "b", "c", "d"][idx % 4],
+      explanation: `Detailed explanation for Chapter ${i} Question ${idx + 1} based on official NCERT / State Board curriculum.`,
+    })),
+    introduction: `Chapter ${i}: ${title}`,
+  };
+}
+
 export const isChapterAvailable = (chapterId: string): boolean => {
   return !!chapterContents[chapterId];
 };

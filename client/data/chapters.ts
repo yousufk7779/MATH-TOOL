@@ -96,6 +96,29 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
       { id: "c11-edu-7", number: 7, name: "Statistics and Education", color: "#FF007F" },
       { id: "c11-edu-8", number: 8, name: "Peace and Value Education", color: "#29B6F6" },
     ],
+    "Political Science": [
+      // Part A: Indian Constitution at Work (40 Marks)
+      { id: "c11-pol-1", number: 1, name: "Making of the Constitution", color: "#FF512F", marks: "3 Marks", section: "Part A" },
+      { id: "c11-pol-2", number: 2, name: "Fundamental Rights", color: "#00C6FF", marks: "5 Marks", section: "Part A" },
+      { id: "c11-pol-3", number: 3, name: "System of Representational Democracy", color: "#11998E", marks: "6 Marks", section: "Part A" },
+      { id: "c11-pol-4", number: 4, name: "Executive in a Parliamentary System", color: "#8E2DE2", marks: "4 Marks", section: "Part A" },
+      { id: "c11-pol-5", number: 5, name: "Legislature at the Central and State Level", color: "#FF8A65", marks: "4 Marks", section: "Part A" },
+      { id: "c11-pol-6", number: 6, name: "Judiciary", color: "#FDC830", marks: "4 Marks", section: "Part A" },
+      { id: "c11-pol-7", number: 7, name: "Federalism", color: "#00E676", marks: "6 Marks", section: "Part A" },
+      { id: "c11-pol-8", number: 8, name: "Local Government", color: "#FF6D00", marks: "4 Marks", section: "Part A" },
+      { id: "c11-pol-9", number: 9, name: "Political Philosophy Underlying the Constitution", color: "#2979FF", marks: "2 Marks", section: "Part A" },
+      { id: "c11-pol-10", number: 10, name: "Constitution as a Living Document", color: "#00BFA5", marks: "2 Marks", section: "Part A" },
+
+      // Part B: Political Theory (40 Marks)
+      { id: "c11-pol-11", number: 11, name: "Introduction to Political Theory", color: "#E040FB", marks: "4 Marks", section: "Part B" },
+      { id: "c11-pol-12", number: 12, name: "Freedom", color: "#FF007F", marks: "6 Marks", section: "Part B" },
+      { id: "c11-pol-13", number: 13, name: "Equality", color: "#D50000", marks: "6 Marks", section: "Part B" },
+      { id: "c11-pol-14", number: 14, name: "Social Justice", color: "#7C4DFF", marks: "6 Marks", section: "Part B" },
+      { id: "c11-pol-15", number: 15, name: "Rights", color: "#00C853", marks: "4 Marks", section: "Part B" },
+      { id: "c11-pol-16", number: 16, name: "Citizenship", color: "#FFAB00", marks: "4 Marks", section: "Part B" },
+      { id: "c11-pol-17", number: 17, name: "Nationalism", color: "#00E5FF", marks: "4 Marks", section: "Part B" },
+      { id: "c11-pol-18", number: 18, name: "Secularism", color: "#E91E63", marks: "6 Marks", section: "Part B" },
+    ],
   },
   "Class 12 Arts": {
     Education: [
@@ -1203,6 +1226,26 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
   if (chapterId === "c12-pol-13") return ["#D50000", "#B71C1C"]; // Bold Crimson
   if (chapterId === "c12-pol-14") return ["#7C4DFF", "#536DFE"]; // Deep Indigo
   if (chapterId === "c12-pol-15") return ["#00C853", "#64DD17"]; // Vibrant Green
+
+  // Class 11 Political Science (18 Chapters - Vibrant Two-Stop Gradients)
+  if (chapterId === "c11-pol-1") return ["#FF512F", "#DD2476"]; // Sunset Crimson
+  if (chapterId === "c11-pol-2") return ["#00C6FF", "#0072FF"]; // Ocean Cyan
+  if (chapterId === "c11-pol-3") return ["#11998E", "#38EF7D"]; // Mint Teal
+  if (chapterId === "c11-pol-4") return ["#8E2DE2", "#4A00E0"]; // Royal Violet
+  if (chapterId === "c11-pol-5") return ["#FF8A65", "#FF5722"]; // Coral Flame
+  if (chapterId === "c11-pol-6") return ["#FDC830", "#F37335"]; // Amber Sunburst
+  if (chapterId === "c11-pol-7") return ["#00E676", "#00B0FF"]; // Neon Spring
+  if (chapterId === "c11-pol-8") return ["#FF6D00", "#FFAB00"]; // Tangerine Flame
+  if (chapterId === "c11-pol-9") return ["#2979FF", "#1565C0"]; // Cobalt Royal
+  if (chapterId === "c11-pol-10") return ["#00BFA5", "#00E5FF"]; // Deep Aqua
+  if (chapterId === "c11-pol-11") return ["#E040FB", "#8E24AA"]; // Neon Amethyst
+  if (chapterId === "c11-pol-12") return ["#FF007F", "#E91E63"]; // Rose Fuchsia
+  if (chapterId === "c11-pol-13") return ["#D50000", "#B71C1C"]; // Bold Crimson
+  if (chapterId === "c11-pol-14") return ["#7C4DFF", "#536DFE"]; // Deep Indigo
+  if (chapterId === "c11-pol-15") return ["#00C853", "#64DD17"]; // Vibrant Green
+  if (chapterId === "c11-pol-16") return ["#FFAB00", "#FF6D00"]; // Golden Honey
+  if (chapterId === "c11-pol-17") return ["#00E5FF", "#0091EA"]; // Electric Azure
+  if (chapterId === "c11-pol-18") return ["#E91E63", "#C2185B"]; // Pink Ruby
 
   if (chapterId === "c7-math-10") return JiguuColors.gradients.gold;
   if (chapterId === "c7-math-11") return JiguuColors.gradients.pink;
