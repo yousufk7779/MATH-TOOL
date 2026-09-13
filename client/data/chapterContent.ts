@@ -46,6 +46,7 @@ import { c12Pol11HtmlOverview, c12Pol11HtmlSolutions, c12Pol11Mcqs } from "./con
 import { c12Pol12HtmlOverview, c12Pol12HtmlSolutions, c12Pol12Mcqs } from "./content/c12-pol-12";
 import { c12Pol13HtmlOverview, c12Pol13HtmlSolutions, c12Pol13Mcqs } from "./content/c12-pol-13";
 import { c12Pol14HtmlOverview, c12Pol14HtmlSolutions, c12Pol14Mcqs } from "./content/c12-pol-14";
+import { c12Pol15HtmlOverview, c12Pol15HtmlSolutions, c12Pol15Mcqs } from "./content/c12-pol-15";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -2874,6 +2875,24 @@ if (ch12Pol14) {
   ];
   ch12Pol14.mcqs = c12Pol14Mcqs;
 }
+
+// Override Class 12 Political Science Chapter 15 (Recent Developments in Indian Politics)
+const ch12Pol15 = chapterContents["c12-pol-15"];
+if (ch12Pol15) {
+  ch12Pol15.htmlOverview = c12Pol15HtmlOverview;
+  ch12Pol15.htmlExercises = {
+    "ex-c12-qa": c12Pol15HtmlSolutions,
+  };
+  ch12Pol15.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Pol15.mcqs = c12Pol15Mcqs;
+}
+
 
 
 
