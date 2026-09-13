@@ -45,6 +45,7 @@ import { c12Pol10HtmlOverview, c12Pol10HtmlSolutions, c12Pol10Mcqs } from "./con
 import { c12Pol11HtmlOverview, c12Pol11HtmlSolutions, c12Pol11Mcqs } from "./content/c12-pol-11";
 import { c12Pol12HtmlOverview, c12Pol12HtmlSolutions, c12Pol12Mcqs } from "./content/c12-pol-12";
 import { c12Pol13HtmlOverview, c12Pol13HtmlSolutions, c12Pol13Mcqs } from "./content/c12-pol-13";
+import { c12Pol14HtmlOverview, c12Pol14HtmlSolutions, c12Pol14Mcqs } from "./content/c12-pol-14";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -2856,6 +2857,24 @@ if (ch12Pol13) {
   ];
   ch12Pol13.mcqs = c12Pol13Mcqs;
 }
+
+// Override Class 12 Political Science Chapter 14 (Regional Aspirations and Conflicts)
+const ch12Pol14 = chapterContents["c12-pol-14"];
+if (ch12Pol14) {
+  ch12Pol14.htmlOverview = c12Pol14HtmlOverview;
+  ch12Pol14.htmlExercises = {
+    "ex-c12-qa": c12Pol14HtmlSolutions,
+  };
+  ch12Pol14.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Pol14.mcqs = c12Pol14Mcqs;
+}
+
 
 
 
