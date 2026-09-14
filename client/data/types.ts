@@ -67,4 +67,5 @@ export interface ChapterContent {
   htmlOverview?: string;
   htmlExercises?: Record<string, string>;
   htmlMcqs?: string;
+  _isLoaded?: boolean;
 }
