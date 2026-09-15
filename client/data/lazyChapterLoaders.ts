@@ -1832,6 +1832,9 @@ export const lazyChapterLoaders: Record<string, () => any> = {
   "c11-eng-h1": () => {
     const mod = require("./content/c11-eng-h1");
     return {
+      id: "c11-eng-h1",
+      number: 1,
+      title: "The Portrait of a Lady",
       htmlOverview: mod.c11EngH1HtmlOverview,
       htmlExercises: { "ex-c11-eng": mod.c11EngH1HtmlSolutions },
       mcqs: mod.c11EngH1Mcqs,
@@ -1842,6 +1845,9 @@ export const lazyChapterLoaders: Record<string, () => any> = {
   "c11-eng-h2": () => {
     const mod = require("./content/c11-eng-h2");
     return {
+      id: "c11-eng-h2",
+      number: 2,
+      title: "A Photograph",
       htmlOverview: mod.c11EngH2HtmlOverview,
       htmlExercises: { "ex-c11-eng": mod.c11EngH2HtmlSolutions },
       mcqs: mod.c11EngH2Mcqs,
@@ -1849,4 +1855,218 @@ export const lazyChapterLoaders: Record<string, () => any> = {
       isHtmlView: true,
     };
   },
+  "c11-eng-h3": () => {
+    const mod = require("./content/c11-eng-h3");
+    return {
+      id: "c11-eng-h3",
+      number: 3,
+      title: "We're Not Afraid to Die... If We Can All Be Together",
+      htmlOverview: mod.c11EngH3HtmlOverview,
+      htmlExercises: { "ex-c11-eng": mod.c11EngH3HtmlSolutions },
+      mcqs: mod.c11EngH3Mcqs,
+      exercises: [{ id: "ex-c11-eng", name: "Q & A", questions: [] }],
+      isHtmlView: true,
+    };
+  },
+  "c11-eng-h4": () => {
+    const mod = require("./content/c11-eng-h4");
+    return {
+      id: "c11-eng-h4",
+      number: 4,
+      title: "Discovering Tut: The Saga Continues",
+      htmlOverview: mod.c11EngH4HtmlOverview,
+      htmlExercises: { "ex-c11-eng": mod.c11EngH4HtmlSolutions },
+      mcqs: mod.c11EngH4Mcqs,
+      exercises: [{ id: "ex-c11-eng", name: "Q & A", questions: [] }],
+      isHtmlView: true,
+    };
+  },
+  "c11-eng-h5": () => {
+    const mod = require("./content/c11-eng-h5");
+    return {
+      id: "c11-eng-h5",
+      number: 5,
+      title: "The Laburnum Top",
+      htmlOverview: mod.c11EngH5HtmlOverview,
+      htmlExercises: { "ex-c11-eng": mod.c11EngH5HtmlSolutions },
+      mcqs: mod.c11EngH5Mcqs,
+      exercises: [{ id: "ex-c11-eng", name: "Q & A", questions: [] }],
+      isHtmlView: true,
+    };
+  },
+  "c11-eng-h6": () => {
+    const mod = require("./content/c11-eng-h6");
+    return {
+      id: "c11-eng-h6",
+      number: 6,
+      title: "The Voice of the Rain",
+      htmlOverview: mod.c11EngH6HtmlOverview,
+      htmlExercises: { "ex-c11-eng": mod.c11EngH6HtmlSolutions },
+      mcqs: mod.c11EngH6Mcqs,
+      exercises: [{ id: "ex-c11-eng", name: "Q & A", questions: [] }],
+      isHtmlView: true,
+    };
+  },
+  "c11-eng-h7": () => {
+    const mod = require("./content/c11-eng-h7");
+    return {
+      id: "c11-eng-h7",
+      number: 7,
+      title: "The Ailing Planet: The Green Movement's Role",
+      htmlOverview: mod.c11EngH7HtmlOverview,
+      htmlExercises: { "ex-c11-eng": mod.c11EngH7HtmlSolutions },
+      mcqs: mod.c11EngH7Mcqs,
+      exercises: [{ id: "ex-c11-eng", name: "Q & A", questions: [] }],
+      isHtmlView: true,
+    };
+  },
+  "c11-eng-h8": () => {
+    const mod = require("./content/c11-eng-h8");
+    return {
+      id: "c11-eng-h8",
+      number: 8,
+      title: "Childhood",
+      htmlOverview: mod.c11EngH8HtmlOverview,
+      htmlExercises: { "ex-c11-eng": mod.c11EngH8HtmlSolutions },
+      mcqs: mod.c11EngH8Mcqs,
+      exercises: [{ id: "ex-c11-eng", name: "Q & A", questions: [] }],
+      isHtmlView: true,
+    };
+  },
+  "c11-eng-h9": () => {
+    const mod = require("./content/c11-eng-h9");
+    return {
+      id: "c11-eng-h9",
+      number: 9,
+      title: "The Adventure",
+      htmlOverview: mod.c11EngH9HtmlOverview,
+      htmlExercises: { "ex-c11-eng": mod.c11EngH9HtmlSolutions },
+      mcqs: mod.c11EngH9Mcqs,
+      exercises: [{ id: "ex-c11-eng", name: "Q & A", questions: [] }],
+      isHtmlView: true,
+    };
+  },
+  "c11-eng-h10": () => {
+    const mod = require("./content/c11-eng-h10");
+    return {
+      id: "c11-eng-h10",
+      number: 10,
+      title: "Silk Road",
+      htmlOverview: mod.c11EngH10HtmlOverview,
+      htmlExercises: { "ex-c11-eng": mod.c11EngH10HtmlSolutions },
+      mcqs: mod.c11EngH10Mcqs,
+      exercises: [{ id: "ex-c11-eng", name: "Q & A", questions: [] }],
+      isHtmlView: true,
+    };
+  },
+  "c11-eng-h11": () => {
+    const mod = require("./content/c11-eng-h11");
+    return {
+      id: "c11-eng-h11",
+      number: 11,
+      title: "Father to Son",
+      htmlOverview: mod.c11EngH11HtmlOverview,
+      htmlExercises: { "ex-c11-eng": mod.c11EngH11HtmlSolutions },
+      mcqs: mod.c11EngH11Mcqs,
+      exercises: [{ id: "ex-c11-eng", name: "Q & A", questions: [] }],
+      isHtmlView: true,
+    };
+  },
+  "c11-eng-s1": () => {
+    const mod = require("./content/c11-eng-s1");
+    return {
+      id: "c11-eng-s1",
+      number: 1,
+      title: "The Summer of the Beautiful White Horse",
+      htmlOverview: mod.c11EngS1HtmlOverview,
+      htmlExercises: { "ex-c11-eng": mod.c11EngS1HtmlSolutions },
+      mcqs: mod.c11EngS1Mcqs,
+      exercises: [{ id: "ex-c11-eng", name: "Q & A", questions: [] }],
+      isHtmlView: true,
+    };
+  },
+  "c11-eng-s2": () => {
+    const mod = require("./content/c11-eng-s2");
+    return {
+      id: "c11-eng-s2",
+      number: 2,
+      title: "The Address",
+      htmlOverview: mod.c11EngS2HtmlOverview,
+      htmlExercises: { "ex-c11-eng": mod.c11EngS2HtmlSolutions },
+      mcqs: mod.c11EngS2Mcqs,
+      exercises: [{ id: "ex-c11-eng", name: "Q & A", questions: [] }],
+      isHtmlView: true,
+    };
+  },
+  "c11-eng-s3": () => {
+    const mod = require("./content/c11-eng-s3");
+    return {
+      id: "c11-eng-s3",
+      number: 3,
+      title: "Mother's Day",
+      htmlOverview: mod.c11EngS3HtmlOverview,
+      htmlExercises: { "ex-c11-eng": mod.c11EngS3HtmlSolutions },
+      mcqs: mod.c11EngS3Mcqs,
+      exercises: [{ id: "ex-c11-eng", name: "Q & A", questions: [] }],
+      isHtmlView: true,
+    };
+  },
+  "c11-eng-s4": () => {
+    const mod = require("./content/c11-eng-s4");
+    return {
+      id: "c11-eng-s4",
+      number: 4,
+      title: "Birth",
+      htmlOverview: mod.c11EngS4HtmlOverview,
+      htmlExercises: { "ex-c11-eng": mod.c11EngS4HtmlSolutions },
+      mcqs: mod.c11EngS4Mcqs,
+      exercises: [{ id: "ex-c11-eng", name: "Q & A", questions: [] }],
+      isHtmlView: true,
+    };
+  },
+  "c11-eng-s5": () => {
+    const mod = require("./content/c11-eng-s5");
+    return {
+      id: "c11-eng-s5",
+      number: 5,
+      title: "The Tale of Melon City",
+      htmlOverview: mod.c11EngS5HtmlOverview,
+      htmlExercises: { "ex-c11-eng": mod.c11EngS5HtmlSolutions },
+      mcqs: mod.c11EngS5Mcqs,
+      exercises: [{ id: "ex-c11-eng", name: "Q & A", questions: [] }],
+      isHtmlView: true,
+    };
+  },
+  "c11-eng-w1": () => {
+    const mod = require("./content/c11-eng-w1");
+    return {
+      id: "c11-eng-w1",
+      number: 1,
+      title: "Note-Making & Summarizing",
+      htmlOverview: mod.c11EngW1HtmlOverview,
+      htmlExercises: { "ex-c11-eng": mod.c11EngW1HtmlSolutions },
+      mcqs: mod.c11EngW1Mcqs,
+      exercises: [{ id: "ex-c11-eng", name: "Q & A", questions: [] }],
+      isHtmlView: true,
+    };
+  },
+  "c11-eng-w2": () => {
+    const mod = require("./content/c11-eng-w2");
+    return {
+      id: "c11-eng-w2",
+      number: 2,
+      title: "Notice, Poster & Advertisement Writing",
+      htmlOverview: mod.c11EngW2HtmlOverview,
+      htmlExercises: { "ex-c11-eng": mod.c11EngW2HtmlSolutions },
+      mcqs: mod.c11EngW2Mcqs,
+      exercises: [{ id: "ex-c11-eng", name: "Q & A", questions: [] }],
+      isHtmlView: true,
+    };
+  },
 };
+
+
+
+
+
+
