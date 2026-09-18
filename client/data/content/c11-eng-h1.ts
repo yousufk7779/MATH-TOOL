@@ -599,249 +599,244 @@ export const c11EngH1HtmlSolutions = `
 /* -------------------------------------------------------------------------- */
 
 export const c11EngH1Mcqs = [
-  // --- TIER 1: BASIC RECALL, CHARACTERS & PLOT (Q1 to Q8) ---
   {
-    id: "c11-eng-h1-mcq-1",
-    question: "Where was the portrait of the author's grandfather placed in the house?",
-    options: [
-      "A):   In the author's private study room",
-      "B):   Above the mantelpiece in the drawing room",
+    "id": "c11-eng-h1-mcq-1",
+    "question": "Where was the portrait of the author's grandfather placed in the house?",
+    "options": [
+      "A):   Above the mantelpiece in the drawing room",
+      "B):   In the author's private study room",
       "C):   Inside the temple sanctum",
       "D):   In the dining hall near the verandah"
     ],
-    correctAnswer: "b",
-    explanation: "The grandfather's portrait hung above the mantelpiece in the drawing room, wearing a big turban and loose robes."
+    "correctAnswer": "a",
+    "explanation": "The grandfather's portrait hung above the mantelpiece in the drawing room, wearing a big turban and loose robes."
   },
   {
-    id: "c11-eng-h1-mcq-2",
-    question: "What did the grandmother feed to the village dogs on her way back from the school?",
-    options: [
+    "id": "c11-eng-h1-mcq-2",
+    "question": "What did the grandmother feed to the village dogs on her way back from the school?",
+    "options": [
       "A):   Freshly baked biscuits",
-      "B):   Leftover milk and rice",
-      "C):   Stale chapattis",
+      "B):   Stale chapattis",
+      "C):   Leftover milk and rice",
       "D):   Raw wheat dough"
     ],
-    correctAnswer: "c",
-    explanation: "She carried stale chapattis from home to feed the village dogs who followed them from the temple gate."
+    "correctAnswer": "b",
+    "explanation": "She carried stale chapattis from home to feed the village dogs who followed them from the temple gate."
   },
   {
-    id: "c11-eng-h1-mcq-3",
-    question: "What physical handicap or gait did the grandmother have while walking?",
-    options: [
+    "id": "c11-eng-h1-mcq-3",
+    "question": "What physical handicap or gait did the grandmother have while walking?",
+    "options": [
       "A):   She used a polished wooden walking stick",
       "B):   She had a limp in her left leg",
       "C):   She hobbled about with one hand on her waist to balance her stoop",
       "D):   She was wheelchair-bound due to severe arthritis"
     ],
-    correctAnswer: "c",
-    explanation: "The text states she hobbled about the house in spotless white with one hand resting on her waist to balance her stoop."
+    "correctAnswer": "c",
+    "explanation": "The text states she hobbled about the house in spotless white with one hand resting on her waist to balance her stoop."
   },
   {
-    id: "c11-eng-h1-mcq-4",
-    question: "What did the author use to write on while studying in the village school?",
-    options: [
+    "id": "c11-eng-h1-mcq-4",
+    "question": "What did the author use to write on while studying in the village school?",
+    "options": [
       "A):   A modern printed notebook and fountain pen",
-      "B):   A wooden slate plastered with yellow chalk and a reed pen",
+      "B):   A parchment scroll with charcoal ink",
       "C):   A black slate with limestone pencils",
-      "D):   A parchment scroll with charcoal ink"
+      "D):   A wooden slate plastered with yellow chalk and a reed pen"
     ],
-    correctAnswer: "b",
-    explanation: "The grandmother tied his wooden slate (already plastered with yellow chalk), an earthen inkpot, and a reed pen into a bundle."
+    "correctAnswer": "d",
+    "explanation": "The grandmother tied his wooden slate (already plastered with yellow chalk), an earthen inkpot, and a reed pen into a bundle."
   },
   {
-    id: "c11-eng-h1-mcq-5",
-    question: "Why did the grandmother accompany Khushwant Singh to the village school every morning?",
-    options: [
-      "A):   Because the road was dangerous and filled with wild animals",
-      "B):   Because the school was attached to the temple where she read scriptures",
+    "id": "c11-eng-h1-mcq-5",
+    "question": "Why did the grandmother accompany Khushwant Singh to the village school every morning?",
+    "options": [
+      "A):   Because the school was attached to the temple where she read scriptures",
+      "B):   Because the road was dangerous and filled with wild animals",
       "C):   Because the school headmaster was her younger brother",
       "D):   Because she served as the school's head teacher"
     ],
-    correctAnswer: "b",
-    explanation: "She went with him because the school was attached to the temple; while the children studied, she sat inside reading scriptures."
+    "correctAnswer": "a",
+    "explanation": "She went with him because the school was attached to the temple; while the children studied, she sat inside reading scriptures."
   },
   {
-    id: "c11-eng-h1-mcq-6",
-    question: "What was the decisive 'turning point' in the friendship between the author and his grandmother?",
-    options: [
+    "id": "c11-eng-h1-mcq-6",
+    "question": "What was the decisive 'turning point' in the friendship between the author and his grandmother?",
+    "options": [
       "A):   The tragic death of the grandfather",
-      "B):   The author's admission to university",
-      "C):   Their relocation to the city to live with his parents",
+      "B):   Their relocation to the city to live with his parents",
+      "C):   The author's admission to university",
       "D):   The day the grandmother took up spinning thread"
     ],
-    correctAnswer: "c",
-    explanation: "When their parents called them to the city, it marked the turning point as their daily routine and companionship began to diverge."
+    "correctAnswer": "b",
+    "explanation": "When their parents called them to the city, it marked the turning point as their daily routine and companionship began to diverge."
   },
   {
-    id: "c11-eng-h1-mcq-7",
-    question: "For how many years did the author travel abroad for his higher education?",
-    options: [
+    "id": "c11-eng-h1-mcq-7",
+    "question": "For how many years did the author travel abroad for his higher education?",
+    "options": [
       "A):   Two years",
       "B):   Three years",
       "C):   Five years",
       "D):   Seven years"
     ],
-    correctAnswer: "c",
-    explanation: "The author was to stay abroad for five years, and at her age he feared he might never see her again."
+    "correctAnswer": "c",
+    "explanation": "The author was to stay abroad for five years, and at her age he feared he might never see her again."
   },
   {
-    id: "c11-eng-h1-mcq-8",
-    question: "What did the grandmother use to celebrate the homecoming of her grandson?",
-    options: [
+    "id": "c11-eng-h1-mcq-8",
+    "question": "What did the grandmother use to celebrate the homecoming of her grandson?",
+    "options": [
       "A):   She distributed sweets to all neighborhood children",
-      "B):   She thumped a dilapidated drum and sang warrior songs with local women",
+      "B):   She bought new golden bird cages for the courtyard sparrows",
       "C):   She organized a grand feast in the family drawing room",
-      "D):   She bought new golden bird cages for the courtyard sparrows"
+      "D):   She thumped a dilapidated drum and sang warrior songs with local women"
     ],
-    correctAnswer: "b",
-    explanation: "She collected neighborhood women, acquired an old dilapidated drum, and thumped its sagging skin for hours singing of victorious warriors."
+    "correctAnswer": "d",
+    "explanation": "She collected neighborhood women, acquired an old dilapidated drum, and thumped its sagging skin for hours singing of victorious warriors."
   },
-
-  // --- TIER 2: LITERARY DEVICES, VOCABULARY & SUBTLE DETAILS (Q9 to Q15) ---
   {
-    id: "c11-eng-h1-mcq-9",
-    question: "Which literary device is employed in the phrase 'an expanse of pure white serenity breathing peace and contentment'?",
-    options: [
-      "A):   Onomatopoeia",
-      "B):   Metaphor",
+    "id": "c11-eng-h1-mcq-9",
+    "question": "Which literary device is employed in the phrase 'an expanse of pure white serenity breathing peace and contentment'?",
+    "options": [
+      "A):   Metaphor",
+      "B):   Onomatopoeia",
       "C):   Hyperbole",
       "D):   Apostrophe"
     ],
-    correctAnswer: "b",
-    explanation: "The grandmother's calm, spotless physical and spiritual presence is directly compared to an expanse of pure white serenity without using 'like' or 'as' (Metaphor)."
+    "correctAnswer": "a",
+    "explanation": "The grandmother's calm, spotless physical and spiritual presence is directly compared to an expanse of pure white serenity without using 'like' or 'as' (Metaphor)."
   },
   {
-    id: "c11-eng-h1-mcq-10",
-    question: "The author compares his grandmother's peaceful presence to which natural phenomenon?",
-    options: [
+    "id": "c11-eng-h1-mcq-10",
+    "question": "The author compares his grandmother's peaceful presence to which natural phenomenon?",
+    "options": [
       "A):   A tranquil river flowing through a dense forest",
       "B):   The serene winter landscape in the mountains",
       "C):   A quiet full moon shining in a desert sky",
       "D):   A blooming lotus in a crystal clear pond"
     ],
-    correctAnswer: "b",
-    explanation: "The text states: 'She was like the winter landscape in the mountains, an expanse of pure white serenity breathing peace and contentment.'"
+    "correctAnswer": "b",
+    "explanation": "The text states: 'She was like the winter landscape in the mountains, an expanse of pure white serenity breathing peace and contentment.'"
   },
   {
-    id: "c11-eng-h1-mcq-11",
-    question: "Why was the grandmother deeply disturbed when the author announced he was receiving music lessons?",
-    options: [
+    "id": "c11-eng-h1-mcq-11",
+    "question": "Why was the grandmother deeply disturbed when the author announced he was receiving music lessons?",
+    "options": [
       "A):   Because musical instruments were too expensive to purchase",
       "B):   Because music distracted the author from studying scriptures",
       "C):   Because to her, music had lewd associations & was the monopoly of harlots and beggars",
       "D):   Because the music teacher had insulted their family tradition"
     ],
-    correctAnswer: "c",
-    explanation: "In her orthodox perspective, music had lewd associations, being the domain of harlots and beggars, not meant for respectable gentlefolk."
+    "correctAnswer": "c",
+    "explanation": "In her orthodox perspective, music had lewd associations, being the domain of harlots and beggars, not meant for respectable gentlefolk."
   },
   {
-    id: "c11-eng-h1-mcq-12",
-    question: "What does the expression 'a veritable bedlam of chirrupings' mean in the context of the feeding ritual?",
-    options: [
+    "id": "c11-eng-h1-mcq-12",
+    "question": "What does the expression 'a veritable bedlam of chirrupings' mean in the context of the feeding ritual?",
+    "options": [
       "A):   A dangerous attack by wild predator birds",
-      "B):   A noisy, chaotic, and cheerful commotion of birds fluttering and calling",
+      "B):   A melodic harmony sung by trained nightingales",
       "C):   A mournful cry produced by starving animals",
-      "D):   A melodic harmony sung by trained nightingales"
+      "D):   A noisy, chaotic, and cheerful commotion of birds fluttering and calling"
     ],
-    correctAnswer: "b",
-    explanation: "'Bedlam' means uproar or confused noise; here it describes the enthusiastic, noisy commotion of hundreds of sparrows chirruping around her."
+    "correctAnswer": "d",
+    "explanation": "'Bedlam' means uproar or confused noise; here it describes the enthusiastic, noisy commotion of hundreds of sparrows chirruping around her."
   },
   {
-    id: "c11-eng-h1-mcq-13",
-    question: "What physical sign signified to the family that the grandmother had passed away?",
-    options: [
-      "A):   A sudden scream of pain followed by silence",
-      "B):   Her lips ceased moving and the rosary fell from her lifeless fingers",
+    "id": "c11-eng-h1-mcq-13",
+    "question": "What physical sign signified to the family that the grandmother had passed away?",
+    "options": [
+      "A):   Her lips ceased moving and the rosary fell from her lifeless fingers",
+      "B):   A sudden scream of pain followed by silence",
       "C):   She closed the Holy Bible with a heavy sigh",
       "D):   She pointed her finger toward the courtyard sparrows"
     ],
-    correctAnswer: "b",
-    explanation: "Her lips stopped moving, and the rosary dropped from her lifeless fingers as a peaceful pallor spread over her face."
+    "correctAnswer": "a",
+    "explanation": "Her lips stopped moving, and the rosary dropped from her lifeless fingers as a peaceful pallor spread over her face."
   },
   {
-    id: "c11-eng-h1-mcq-14",
-    question: "What color was the shroud used to cover the grandmother's mortal remains?",
-    options: [
+    "id": "c11-eng-h1-mcq-14",
+    "question": "What color was the shroud used to cover the grandmother's mortal remains?",
+    "options": [
       "A):   Pure White",
-      "B):   Golden Yellow",
-      "C):   Red",
+      "B):   Red",
+      "C):   Golden Yellow",
       "D):   Saffron"
     ],
-    correctAnswer: "c",
-    explanation: "According to traditional custom depicted in the text, she was laid on the ground and covered with a red shroud."
+    "correctAnswer": "b",
+    "explanation": "According to traditional custom depicted in the text, she was laid on the ground and covered with a red shroud."
   },
   {
-    id: "c11-eng-h1-mcq-15",
-    question: "What happened to the bread crumbs scattered by the author's mother after the grandmother's corpse was carried away?",
-    options: [
+    "id": "c11-eng-h1-mcq-15",
+    "question": "What happened to the bread crumbs scattered by the author's mother after the grandmother's corpse was carried away?",
+    "options": [
       "A):   The sparrows returned at night and ate them all",
       "B):   The street dogs rushed in and devoured them greedily",
       "C):   The sweeper swept the crumbs into the dustbin the next morning",
       "D):   The family threw them into the holy river"
     ],
-    correctAnswer: "c",
-    explanation: "The sparrows ignored the bread entirely, and next morning the sweeper swept the untouched crumbs into the dustbin."
+    "correctAnswer": "c",
+    "explanation": "The sparrows ignored the bread entirely, and next morning the sweeper swept the untouched crumbs into the dustbin."
   },
-
-  // --- TIER 3: ADVANCED ANALYTICAL, THEMATIC & INFERENCE (Q16 to Q20) ---
   {
-    id: "c11-eng-h1-mcq-16",
-    question: "Assertion (A): The author's grandmother accepted her seclusion with stoic resignation when the common link of friendship snapped.\nReason (R): She had lost all emotional love and affectionate regard for her grandson due to his western education.",
-    options: [
+    "id": "c11-eng-h1-mcq-16",
+    "question": "Assertion (A): The author's grandmother accepted her seclusion with stoic resignation when the common link of friendship snapped.\nReason (R): She had lost all emotional love and affectionate regard for her grandson due to his western education.",
+    "options": [
       "A):   Both (A) and (R) are true, and (R) is the correct explanation of (A)",
       "B):   Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
-      "C):   (A) is true, but (R) is false",
-      "D):   (A) is false, but (R) is true"
+      "C):   (A) is false, but (R) is true",
+      "D):   (A) is true, but (R) is false"
     ],
-    correctAnswer: "c",
-    explanation: "(A) is true because she accepted her isolation without protest; but (R) is false because her love never died &mdash; she showered him with prayers and embraced him upon return."
+    "correctAnswer": "d",
+    "explanation": "(A) is true because she accepted her isolation without protest; but (R) is false because her love never died &mdash; she showered him with prayers and embraced him upon return."
   },
   {
-    id: "c11-eng-h1-mcq-17",
-    question: "Which of the following best explains why the author found the thought of his grandmother ever being young and pretty 'almost revolting'?",
-    options: [
-      "A):   He harbored strong personal resentment toward her conservative views",
-      "B):   Her identity in his conscious memory was so completely associated with timeless, venerable old age that imagining her as a playful girl felt unnatural and absurd",
+    "id": "c11-eng-h1-mcq-17",
+    "question": "Which of the following best explains why the author found the thought of his grandmother ever being young and pretty 'almost revolting'?",
+    "options": [
+      "A):   Her identity in his conscious memory was so completely associated with timeless, venerable old age that imagining her as a playful girl felt unnatural and absurd",
+      "B):   He harbored strong personal resentment toward her conservative views",
       "C):   She had always worn ragged and soiled clothing during her village youth",
       "D):   Her grandfather had told him that she had always been an unpleasant person"
     ],
-    correctAnswer: "b",
-    explanation: "For twenty years she had remained unchanged in extreme old age; to imagine her youthful and playing games seemed totally foreign and contrary to her spiritual persona."
+    "correctAnswer": "a",
+    "explanation": "For twenty years she had remained unchanged in extreme old age; to imagine her youthful and playing games seemed totally foreign and contrary to her spiritual persona."
   },
   {
-    id: "c11-eng-h1-mcq-18",
-    question: "The sparrows' refusal to eat bread crumbs and their silent congregation around the dead body primarily symbolizes:",
-    options: [
+    "id": "c11-eng-h1-mcq-18",
+    "question": "The sparrows' refusal to eat bread crumbs and their silent congregation around the dead body primarily symbolizes:",
+    "options": [
       "A):   A supernatural omen warning the family of future misfortunes",
-      "B):   A seasonal illness among local birds due to sudden temperature changes",
-      "C):   Nature's profound, non-verbal empathy and sacred communion with a saintly soul",
+      "B):   Nature's profound, non-verbal empathy and sacred communion with a saintly soul",
+      "C):   A seasonal illness among local birds due to sudden temperature changes",
       "D):   The birds' fear of the crowd of mourners gathered in the verandah"
     ],
-    correctAnswer: "c",
-    explanation: "The sparrows' behavior highlights that genuine love transcends species boundaries; nature silently mourned its benevolent human friend."
+    "correctAnswer": "b",
+    "explanation": "The sparrows' behavior highlights that genuine love transcends species boundaries; nature silently mourned its benevolent human friend."
   },
   {
-    id: "c11-eng-h1-mcq-19",
-    question: "How did the grandmother's response to her approaching demise reflect her lifelong philosophical conviction?",
-    options: [
+    "id": "c11-eng-h1-mcq-19",
+    "question": "How did the grandmother's response to her approaching demise reflect her lifelong philosophical conviction?",
+    "options": [
       "A):   She ordered a grand memorial feast and distributed her jewelry",
       "B):   She lamented the wasted years of her youth and cursed modern doctors",
       "C):   She recognized that time had run out, repented for skipping her evening prayers, and refused to waste remaining moments talking to mortals",
       "D):   She asked her grandson to read western science books to her"
     ],
-    correctAnswer: "c",
-    explanation: "She realized her end had come, felt she had committed an omission by singing instead of praying, and dedicated every last breath exclusively to God."
+    "correctAnswer": "c",
+    "explanation": "She realized her end had come, felt she had committed an omission by singing instead of praying, and dedicated every last breath exclusively to God."
   },
   {
-    id: "c11-eng-h1-mcq-20",
-    question: "What fundamental sociological contrast does Khushwant Singh illustrate through the grandmother's transition from the village to the city?",
-    options: [
+    "id": "c11-eng-h1-mcq-20",
+    "question": "What fundamental sociological contrast does Khushwant Singh illustrate through the grandmother's transition from the village to the city?",
+    "options": [
       "A):   The economic prosperity of rural farming compared to urban industrial poverty",
-      "B):   The shift from close-knit, faith-centered rural companionship to compartmentalized, alienated, and secular urban existence",
+      "B):   The decline of joint family architecture in favor of single-story bungalows",
       "C):   The superiority of modern motor buses over traditional village walking trails",
-      "D):   The decline of joint family architecture in favor of single-story bungalows"
+      "D):   The shift from close-knit, faith-centered rural companionship to compartmentalized, alienated, and secular urban existence"
     ],
-    correctAnswer: "b",
-    explanation: "The transition highlights the sociological erosion of traditional communal warmth and sacred values under the pressure of individualistic, secular urban lifestyles."
+    "correctAnswer": "d",
+    "explanation": "The transition highlights the sociological erosion of traditional communal warmth and sacred values under the pressure of individualistic, secular urban lifestyles."
   }
 ];

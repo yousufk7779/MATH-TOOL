@@ -653,249 +653,244 @@ export const c11EngH2HtmlSolutions = `
 /* -------------------------------------------------------------------------- */
 
 export const c11EngH2Mcqs = [
-  // --- TIER 1: BASIC RECALL, CHARACTERS & PLOT (Q1 to Q8) ---
   {
-    id: "c11-eng-h2-mcq-1",
-    question: "Who is the poet of the elegiac poem 'A Photograph'?",
-    options: [
-      "A):   Walt Whitman",
-      "B):   Shirley Toulson",
+    "id": "c11-eng-h2-mcq-1",
+    "question": "Who is the poet of the elegiac poem 'A Photograph'?",
+    "options": [
+      "A):   Shirley Toulson",
+      "B):   Walt Whitman",
       "C):   Ted Hughes",
       "D):   Elizabeth Jennings"
     ],
-    correctAnswer: "b",
-    explanation: "The poem 'A Photograph' is written by the English poet, editor, and journalist Shirley Toulson."
+    "correctAnswer": "a",
+    "explanation": "The poem 'A Photograph' is written by the English poet, editor, and journalist Shirley Toulson."
   },
   {
-    id: "c11-eng-h2-mcq-2",
-    question: "How old was the poet's mother in the cardboard photograph?",
-    options: [
+    "id": "c11-eng-h2-mcq-2",
+    "question": "How old was the poet's mother in the cardboard photograph?",
+    "options": [
       "A):   Around eight years old",
       "B):   Some twelve years or so",
       "C):   Sixteen years old",
       "D):   Twenty years old"
     ],
-    correctAnswer: "b",
-    explanation: "The text clearly states: 'And she the big girl &mdash; some twelve years or so.'"
+    "correctAnswer": "b",
+    "explanation": "The text clearly states: 'And she the big girl &mdash; some twelve years or so.'"
   },
   {
-    id: "c11-eng-h2-mcq-3",
-    question: "What were the names of the two cousins accompanying the mother on the beach?",
-    options: [
+    "id": "c11-eng-h2-mcq-3",
+    "question": "What were the names of the two cousins accompanying the mother on the beach?",
+    "options": [
       "A):   Mary and Lucy",
-      "B):   Betty and Dolly",
-      "C):   Sarah and Clara",
+      "B):   Sarah and Clara",
+      "C):   Betty and Dolly",
       "D):   Jane and Emma"
     ],
-    correctAnswer: "b",
-    explanation: "In the second stanza, the mother says: 'See Betty and Dolly... and look how they dressed us for the beach.'"
+    "correctAnswer": "c",
+    "explanation": "In the second stanza, the mother says: 'See Betty and Dolly... and look how they dressed us for the beach.'"
   },
   {
-    id: "c11-eng-h2-mcq-4",
-    question: "Who took the photograph of the three young girls paddling in the sea?",
-    options: [
+    "id": "c11-eng-h2-mcq-4",
+    "question": "Who took the photograph of the three young girls paddling in the sea?",
+    "options": [
       "A):   The mother's father (the grandfather)",
-      "B):   The uncle with the camera",
+      "B):   The poet's father",
       "C):   A professional seaside photographer",
-      "D):   The poet's father"
+      "D):   The uncle with the camera"
     ],
-    correctAnswer: "b",
-    explanation: "The poem specifies: 'All three stood still to smile through their hair / At the uncle with the camera.'"
+    "correctAnswer": "d",
+    "explanation": "The poem specifies: 'All three stood still to smile through their hair / At the uncle with the camera.'"
   },
   {
-    id: "c11-eng-h2-mcq-5",
-    question: "What physical movement were the three girls performing in the water?",
-    options: [
-      "A):   Swimming in deep water",
-      "B):   Paddling barefoot in shallow water",
+    "id": "c11-eng-h2-mcq-5",
+    "question": "What physical movement were the three girls performing in the water?",
+    "options": [
+      "A):   Paddling barefoot in shallow water",
+      "B):   Swimming in deep water",
       "C):   Sailing on a wooden boat",
       "D):   Diving from coastal cliffs"
     ],
-    correctAnswer: "b",
-    explanation: "The poem begins: 'When the two girl cousins went paddling / Each one holding one of my mother's hands.'"
+    "correctAnswer": "a",
+    "explanation": "The poem begins: 'When the two girl cousins went paddling / Each one holding one of my mother's hands.'"
   },
   {
-    id: "c11-eng-h2-mcq-6",
-    question: "Approximately how many years later did the mother laugh at the snapshot?",
-    options: [
+    "id": "c11-eng-h2-mcq-6",
+    "question": "Approximately how many years later did the mother laugh at the snapshot?",
+    "options": [
       "A):   Five or ten years later",
       "B):   Some twenty &mdash; thirty &mdash; years later",
       "C):   Fifty years later",
       "D):   Only two weeks later"
     ],
-    correctAnswer: "b",
-    explanation: "The second stanza opens: 'Some twenty &mdash; thirty &mdash; years later / She'd laugh at the snapshot.'"
+    "correctAnswer": "b",
+    "explanation": "The second stanza opens: 'Some twenty &mdash; thirty &mdash; years later / She'd laugh at the snapshot.'"
   },
   {
-    id: "c11-eng-h2-mcq-7",
-    question: "For how many years has the poet's mother been dead in the final stanza?",
-    options: [
-      "A):   Nearly as many years as that girl lived (around 12 years)",
+    "id": "c11-eng-h2-mcq-7",
+    "question": "For how many years has the poet's mother been dead in the final stanza?",
+    "options": [
+      "A):   Only three months",
       "B):   Exactly twenty-five years",
-      "C):   Only three months",
+      "C):   Nearly as many years as that girl lived (around 12 years)",
       "D):   Forty years"
     ],
-    correctAnswer: "a",
-    explanation: "The poet reflects: 'Now she's been dead nearly as many years / As that girl lived' &mdash; approximately twelve years."
+    "correctAnswer": "c",
+    "explanation": "The poet reflects: 'Now she's been dead nearly as many years / As that girl lived' &mdash; approximately twelve years."
   },
   {
-    id: "c11-eng-h2-mcq-8",
-    question: "What was the mother's past, and what was the poet's past respectively?",
-    options: [
+    "id": "c11-eng-h2-mcq-8",
+    "question": "What was the mother's past, and what was the poet's past respectively?",
+    "options": [
       "A):   The mother's past was school; the poet's past was university",
-      "B):   The mother's past was the sea holiday; the poet's past is her mother's laughter",
+      "B):   The mother's past was marriage; the poet's past was childhood",
       "C):   The mother's past was London; the poet's past was Paris",
-      "D):   The mother's past was marriage; the poet's past was childhood"
+      "D):   The mother's past was the sea holiday; the poet's past is her mother's laughter"
     ],
-    correctAnswer: "b",
-    explanation: "The poem explicitly asserts: 'The sea holiday / Was her past, mine is her laughter.'"
+    "correctAnswer": "d",
+    "explanation": "The poem explicitly asserts: 'The sea holiday / Was her past, mine is her laughter.'"
   },
-
-  // --- TIER 2: POETIC DEVICES, VOCABULARY & SUBTLE DETAILS (Q9 to Q15) ---
   {
-    id: "c11-eng-h2-mcq-9",
-    question: "Which poetic device is employed in the phrase 'terribly transient feet'?",
-    options: [
-      "A):   Hyperbole",
-      "B):   Transferred Epithet and Alliteration",
+    "id": "c11-eng-h2-mcq-9",
+    "question": "Which poetic device is employed in the phrase 'terribly transient feet'?",
+    "options": [
+      "A):   Transferred Epithet and Alliteration",
+      "B):   Hyperbole",
       "C):   Simile",
       "D):   Onomatopoeia"
     ],
-    correctAnswer: "b",
-    explanation: "'Transient' (temporary) transfers the impermanence of human life onto 'feet', and 'terribly transient' repeats the initial 't' consonant sound (Alliteration)."
+    "correctAnswer": "a",
+    "explanation": "'Transient' (temporary) transfers the impermanence of human life onto 'feet', and 'terribly transient' repeats the initial 't' consonant sound (Alliteration)."
   },
   {
-    id: "c11-eng-h2-mcq-10",
-    question: "Identify the figure of speech in 'the laboured ease of loss'.",
-    options: [
+    "id": "c11-eng-h2-mcq-10",
+    "question": "Identify the figure of speech in 'the laboured ease of loss'.",
+    "options": [
       "A):   Metaphor",
       "B):   Oxymoron",
       "C):   Personification",
       "D):   Synecdoche"
     ],
-    correctAnswer: "b",
-    explanation: "'Laboured' (requiring great effort) and 'ease' (natural relaxation) are contradictory concepts placed together (Oxymoron) to describe the struggle of grief."
+    "correctAnswer": "b",
+    "explanation": "'Laboured' (requiring great effort) and 'ease' (natural relaxation) are contradictory concepts placed together (Oxymoron) to describe the struggle of grief."
   },
   {
-    id: "c11-eng-h2-mcq-11",
-    question: "What does the line 'Its silence silences' signify?",
-    options: [
+    "id": "c11-eng-h2-mcq-11",
+    "question": "What does the line 'Its silence silences' signify?",
+    "options": [
       "A):   The camera ran out of battery and stopped making clicking sounds",
       "B):   The sea waves retreated and caused absolute silence on the beach",
       "C):   The overwhelming grief caused by death renders the poet completely speechless",
       "D):   The family imposed strict quiet hours in the home"
     ],
-    correctAnswer: "c",
-    explanation: "Death's silence is personified as a suffocating presence that extinguishes speech and leaves the grieving poet with 'nothing to say at all'."
+    "correctAnswer": "c",
+    "explanation": "Death's silence is personified as a suffocating presence that extinguishes speech and leaves the grieving poet with 'nothing to say at all'."
   },
   {
-    id: "c11-eng-h2-mcq-12",
-    question: "What poetic device is evident in the phrase 'stood still to smile'?",
-    options: [
-      "A):   Alliteration",
+    "id": "c11-eng-h2-mcq-12",
+    "question": "What poetic device is evident in the phrase 'stood still to smile'?",
+    "options": [
+      "A):   Euphemism",
       "B):   Oxymoron",
       "C):   Irony",
-      "D):   Euphemism"
+      "D):   Alliteration"
     ],
-    correctAnswer: "a",
-    explanation: "The repetition of the initial consonant 's' in 'stood still to smile' is a clear instance of alliteration."
+    "correctAnswer": "d",
+    "explanation": "The repetition of the initial consonant 's' in 'stood still to smile' is a clear instance of alliteration."
   },
   {
-    id: "c11-eng-h2-mcq-13",
-    question: "Why did the three girls 'smile through their hair'?",
-    options: [
-      "A):   They were playing hide and seek behind a screen",
-      "B):   The seaside wind blew their hair across their faces as they posed for the snapshot",
+    "id": "c11-eng-h2-mcq-13",
+    "question": "Why did the three girls 'smile through their hair'?",
+    "options": [
+      "A):   The seaside wind blew their hair across their faces as they posed for the snapshot",
+      "B):   They were playing hide and seek behind a screen",
       "C):   They felt embarrassed and wanted to hide their faces from the camera",
       "D):   Their hair was wet and tied into tight braids"
     ],
-    correctAnswer: "b",
-    explanation: "The coastal breeze blew strands of their hair across their cheeks, framing their happy smiles as they posed."
+    "correctAnswer": "a",
+    "explanation": "The coastal breeze blew strands of their hair across their cheeks, framing their happy smiles as they posed."
   },
   {
-    id: "c11-eng-h2-mcq-14",
-    question: "In the poem, the word 'wry' most accurately means:",
-    options: [
+    "id": "c11-eng-h2-mcq-14",
+    "question": "In the poem, the word 'wry' most accurately means:",
+    "options": [
       "A):   Extremely angry and violent",
       "B):   Twisted with ironic, bittersweet amusement and disappointment",
       "C):   Loudly weeping and inconsolable",
       "D):   Completely indifferent and bored"
     ],
-    correctAnswer: "b",
-    explanation: "'Wry' denotes an ironic, dry grimace where amusement and sorrowful acknowledgment of loss are tightly blended."
+    "correctAnswer": "b",
+    "explanation": "'Wry' denotes an ironic, dry grimace where amusement and sorrowful acknowledgment of loss are tightly blended."
   },
   {
-    id: "c11-eng-h2-mcq-15",
-    question: "Why does the poet use the word 'cardboard' rather than 'photograph' or 'portrait' in the opening line?",
-    options: [
+    "id": "c11-eng-h2-mcq-15",
+    "question": "Why does the poet use the word 'cardboard' rather than 'photograph' or 'portrait' in the opening line?",
+    "options": [
       "A):   Because cardboard was the cheapest material available in bookstores",
-      "B):   To emphasize the fragile, stiff, and lifeless nature of the paper substrate preserving human memories",
-      "C):   Because the photograph was destroyed in an accident",
+      "B):   Because the photograph was destroyed in an accident",
+      "C):   To emphasize the fragile, stiff, and lifeless nature of the paper substrate preserving human memories",
       "D):   Because the uncle manufactured cardboard boxes for a living"
     ],
-    correctAnswer: "b",
-    explanation: "'Cardboard' underscores the fragile, perishable, and rigid nature of physical mementos compared to the vibrant human life they capture."
+    "correctAnswer": "c",
+    "explanation": "'Cardboard' underscores the fragile, perishable, and rigid nature of physical mementos compared to the vibrant human life they capture."
   },
-
-  // --- TIER 3: ADVANCED ANALYTICAL, THEMATIC & INFERENCE (Q16 to Q20) ---
   {
-    id: "c11-eng-h2-mcq-16",
-    question: "Assertion (A): The sea in the poem symbolizes permanence, while the human feet symbolize transience.\nReason (R): The sea has changed very little over decades, whereas the mother who stood in its waves aged and passed away.",
-    options: [
-      "A):   Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+    "id": "c11-eng-h2-mcq-16",
+    "question": "Assertion (A): The sea in the poem symbolizes permanence, while the human feet symbolize transience.\nReason (R): The sea has changed very little over decades, whereas the mother who stood in its waves aged and passed away.",
+    "options": [
+      "A):   (A) is false, but (R) is true",
       "B):   Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
       "C):   (A) is true, but (R) is false",
-      "D):   (A) is false, but (R) is true"
+      "D):   Both (A) and (R) are true, and (R) is the correct explanation of (A)"
     ],
-    correctAnswer: "a",
-    explanation: "The text deliberately contrasts the timeless, unchanging sea with the fragile, short-lived lifespan of mortal humans ('transient feet')."
+    "correctAnswer": "d",
+    "explanation": "The text deliberately contrasts the timeless, unchanging sea with the fragile, short-lived lifespan of mortal humans ('transient feet')."
   },
   {
-    id: "c11-eng-h2-mcq-17",
-    question: "What is the psychological significance of the chronological symmetry where the mother has been dead for 'nearly as many years as that girl lived'?",
-    options: [
-      "A):   It proves that the poet kept an exact legal calendar of family events",
-      "B):   It balances the span of radiant childhood against the span of cold death, emphasizing how swiftly life comes full circle",
+    "id": "c11-eng-h2-mcq-17",
+    "question": "What is the psychological significance of the chronological symmetry where the mother has been dead for 'nearly as many years as that girl lived'?",
+    "options": [
+      "A):   It balances the span of radiant childhood against the span of cold death, emphasizing how swiftly life comes full circle",
+      "B):   It proves that the poet kept an exact legal calendar of family events",
       "C):   It indicates that the uncle with the camera lived for twenty-four years",
       "D):   It proves that the cousins Betty and Dolly died at the same time"
     ],
-    correctAnswer: "b",
-    explanation: "Equating twelve years of vibrant childhood with twelve years of cold absence poignantly crystallizes the tragic brevity of mortal life."
+    "correctAnswer": "a",
+    "explanation": "Equating twelve years of vibrant childhood with twelve years of cold absence poignantly crystallizes the tragic brevity of mortal life."
   },
   {
-    id: "c11-eng-h2-mcq-18",
-    question: "How does the tone of the poem transform from the first stanza to the third stanza?",
-    options: [
+    "id": "c11-eng-h2-mcq-18",
+    "question": "How does the tone of the poem transform from the first stanza to the third stanza?",
+    "options": [
       "A):   From sarcastic and mocking to wildly celebratory",
       "B):   From sunny, nostalgic, and vivid to somber, desolate, and silent",
       "C):   From terrified and angry to humorous and satirical",
       "D):   From romantic and melodramatic to detached and journalistic"
     ],
-    correctAnswer: "b",
-    explanation: "The poem begins with warm, sunny beach laughter and gradually descends into the heavy, hollow, and silent void of death."
+    "correctAnswer": "b",
+    "explanation": "The poem begins with warm, sunny beach laughter and gradually descends into the heavy, hollow, and silent void of death."
   },
   {
-    id: "c11-eng-h2-mcq-19",
-    question: "Why is there 'nothing to say at all' regarding 'this circumstance'?",
-    options: [
+    "id": "c11-eng-h2-mcq-19",
+    "question": "Why is there 'nothing to say at all' regarding 'this circumstance'?",
+    "options": [
       "A):   Because the poet had an unresolved quarrel with her mother before her death",
-      "B):   Because death is an absolute, irreversible reality beyond the consoling power of language",
-      "C):   Because the cardboard photograph was stolen from the living room",
+      "B):   Because the cardboard photograph was stolen from the living room",
+      "C):   Because death is an absolute, irreversible reality beyond the consoling power of language",
       "D):   Because the cousins Betty and Dolly forbade the poet from writing poetry"
     ],
-    correctAnswer: "b",
-    explanation: "Before the finality of death, all words, laments, and rational explanations dissolve into inadequacy; sorrow transcends verbalization."
+    "correctAnswer": "c",
+    "explanation": "Before the finality of death, all words, laments, and rational explanations dissolve into inadequacy; sorrow transcends verbalization."
   },
   {
-    id: "c11-eng-h2-mcq-20",
-    question: "Which overarching philosophical truth does Shirley Toulson communicate through the photograph?",
-    options: [
+    "id": "c11-eng-h2-mcq-20",
+    "question": "Which overarching philosophical truth does Shirley Toulson communicate through the photograph?",
+    "options": [
       "A):   That photography should be replaced by digital video recordings",
-      "B):   That human love and joyful memories can freeze time emotionally, yet cannot prevent death's ultimate conquest",
+      "B):   That older siblings should always look after younger cousins",
       "C):   That seaside holidays are harmful to young children's health",
-      "D):   That older siblings should always look after younger cousins"
+      "D):   That human love and joyful memories can freeze time emotionally, yet cannot prevent death's ultimate conquest"
     ],
-    correctAnswer: "b",
-    explanation: "The photograph captures joyful memories and defies time momentarily, but ultimately highlights our helplessness against the inevitability of loss."
+    "correctAnswer": "d",
+    "explanation": "The photograph captures joyful memories and defies time momentarily, but ultimately highlights our helplessness against the inevitability of loss."
   }
 ];
