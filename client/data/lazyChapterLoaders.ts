@@ -2063,6 +2063,58 @@ export const lazyChapterLoaders: Record<string, () => any> = {
       isHtmlView: true,
     };
   },
+  "c11-eng-w3": () => {
+    const mod = require("./content/c11-eng-w3");
+    return {
+      id: "c11-eng-w3",
+      number: 3,
+      title: "Formal & Business Letter Writing",
+      htmlOverview: mod.c11EngW3HtmlOverview,
+      htmlExercises: { "ex-c11-eng": mod.c11EngW3HtmlSolutions },
+      mcqs: mod.c11EngW3Mcqs,
+      exercises: [{ id: "ex-c11-eng", name: "Q & A", questions: [] }],
+      isHtmlView: true,
+    };
+  },
+  "c11-eng-w4": () => {
+    const mod = require("./content/c11-eng-w4");
+    return {
+      id: "c11-eng-w4",
+      number: 4,
+      title: "Personal Email Writing",
+      htmlOverview: mod.c11EngW4HtmlOverview,
+      htmlExercises: { "ex-c11-eng": mod.c11EngW4HtmlSolutions },
+      mcqs: mod.c11EngW4Mcqs,
+      exercises: [{ id: "ex-c11-eng", name: "Q & A", questions: [] }],
+      isHtmlView: true,
+    };
+  },
+  "c11-eng-w5": () => {
+    const mod = require("./content/c11-eng-w5");
+    return {
+      id: "c11-eng-w5",
+      number: 5,
+      title: "Article, Speech, Report & Debate Writing",
+      htmlOverview: mod.c11EngW5HtmlOverview,
+      htmlExercises: { "ex-c11-eng": mod.c11EngW5HtmlSolutions },
+      mcqs: mod.c11EngW5Mcqs,
+      exercises: [{ id: "ex-c11-eng", name: "Q & A", questions: [] }],
+      isHtmlView: true,
+    };
+  },
+  "c11-eng-w6": () => {
+    const mod = require("./content/c11-eng-w6");
+    return {
+      id: "c11-eng-w6",
+      number: 6,
+      title: "Grammar Error Correction Master Toolkit",
+      htmlOverview: mod.c11EngW6HtmlOverview,
+      htmlExercises: { "ex-c11-eng": mod.c11EngW6HtmlSolutions },
+      mcqs: mod.c11EngW6Mcqs,
+      exercises: [{ id: "ex-c11-eng", name: "Q & A", questions: [] }],
+      isHtmlView: true,
+    };
+  },
 };
 
 
