@@ -2115,6 +2115,331 @@ export const lazyChapterLoaders: Record<string, () => any> = {
       isHtmlView: true,
     };
   },
+  "c12-eng-f1": () => {
+    const mod = require("./content/c12-eng-f1");
+    return {
+      id: "c12-eng-f1",
+      number: 1,
+      title: "The Last Lesson",
+      htmlOverview: mod.c12EngF1HtmlOverview,
+      htmlExercises: { "ex-c12-eng": mod.c12EngF1HtmlSolutions },
+      mcqs: mod.c12EngF1Mcqs,
+      exercises: [{ id: "ex-c12-eng", name: "Q & A", questions: [] }],
+      isHtmlView: true,
+    };
+  },
+  "c12-eng-f2": () => {
+    const mod = require("./content/c12-eng-f2");
+    return {
+      id: "c12-eng-f2",
+      number: 2,
+      title: "Lost Spring",
+      htmlOverview: mod.c12EngF2HtmlOverview,
+      htmlExercises: { "ex-c12-eng": mod.c12EngF2HtmlSolutions },
+      mcqs: mod.c12EngF2Mcqs,
+      exercises: [{ id: "ex-c12-eng", name: "Q & A", questions: [] }],
+      isHtmlView: true,
+    };
+  },
+  "c12-eng-f3": () => {
+    const mod = require("./content/c12-eng-f3");
+    return {
+      id: "c12-eng-f3",
+      number: 3,
+      title: "Deep Water",
+      htmlOverview: mod.c12EngF3HtmlOverview,
+      htmlExercises: { "ex-c12-eng": mod.c12EngF3HtmlSolutions },
+      mcqs: mod.c12EngF3Mcqs,
+      exercises: [{ id: "ex-c12-eng", name: "Q & A", questions: [] }],
+      isHtmlView: true,
+    };
+  },
+  "c12-eng-f4": () => {
+    const mod = require("./content/c12-eng-f4");
+    return {
+      id: "c12-eng-f4",
+      number: 4,
+      title: "The Rattrap",
+      htmlOverview: mod.c12EngF4HtmlOverview,
+      htmlExercises: { "ex-c12-eng": mod.c12EngF4HtmlSolutions },
+      mcqs: mod.c12EngF4Mcqs,
+      exercises: [{ id: "ex-c12-eng", name: "Q & A", questions: [] }],
+      isHtmlView: true,
+    };
+  },
+  "c12-eng-f5": () => {
+    const mod = require("./content/c12-eng-f5");
+    return {
+      id: "c12-eng-f5",
+      number: 5,
+      title: "Indigo",
+      htmlOverview: mod.c12EngF5HtmlOverview,
+      htmlExercises: { "ex-c12-eng": mod.c12EngF5HtmlSolutions },
+      mcqs: mod.c12EngF5Mcqs,
+      exercises: [{ id: "ex-c12-eng", name: "Q & A", questions: [] }],
+      isHtmlView: true,
+    };
+  },
+  "c12-eng-f6": () => {
+    const mod = require("./content/c12-eng-f6");
+    return {
+      id: "c12-eng-f6",
+      number: 6,
+      title: "Poets and Pancakes",
+      htmlOverview: mod.c12EngF6HtmlOverview,
+      htmlExercises: { "ex-c12-eng": mod.c12EngF6HtmlSolutions },
+      mcqs: mod.c12EngF6Mcqs,
+      exercises: [{ id: "ex-c12-eng", name: "Q & A", questions: [] }],
+      isHtmlView: true,
+    };
+  },
+  "c12-eng-f7": () => {
+    const mod = require("./content/c12-eng-f7");
+    return {
+      id: "c12-eng-f7",
+      number: 7,
+      title: "The Interview (Part I & II)",
+      htmlOverview: mod.c12EngF7HtmlOverview,
+      htmlExercises: { "ex-c12-eng": mod.c12EngF7HtmlSolutions },
+      mcqs: mod.c12EngF7Mcqs,
+      exercises: [{ id: "ex-c12-eng", name: "Q & A", questions: [] }],
+      isHtmlView: true,
+    };
+  },
+  "c12-eng-f8": () => {
+    const mod = require("./content/c12-eng-f8");
+    return {
+      id: "c12-eng-f8",
+      number: 8,
+      title: "Going Places",
+      htmlOverview: mod.c12EngF8HtmlOverview,
+      htmlExercises: { "ex-c12-eng": mod.c12EngF8HtmlSolutions },
+      mcqs: mod.c12EngF8Mcqs,
+      exercises: [{ id: "ex-c12-eng", name: "Q & A", questions: [] }],
+      isHtmlView: true,
+    };
+  },
+  "c12-eng-f9": () => {
+    const mod = require("./content/c12-eng-f9");
+    return {
+      id: "c12-eng-f9",
+      number: 9,
+      title: "My Mother at Sixty-six",
+      htmlOverview: mod.c12EngF9HtmlOverview,
+      htmlExercises: { "ex-c12-eng": mod.c12EngF9HtmlSolutions },
+      mcqs: mod.c12EngF9Mcqs,
+      exercises: [{ id: "ex-c12-eng", name: "Q & A", questions: [] }],
+      isHtmlView: true,
+    };
+  },
+  "c12-eng-f10": () => {
+    const mod = require("./content/c12-eng-f10");
+    return {
+      id: "c12-eng-f10",
+      number: 10,
+      title: "Keeping Quiet",
+      htmlOverview: mod.c12EngF10HtmlOverview,
+      htmlExercises: { "ex-c12-eng": mod.c12EngF10HtmlSolutions },
+      mcqs: mod.c12EngF10Mcqs,
+      exercises: [{ id: "ex-c12-eng", name: "Q & A", questions: [] }],
+      isHtmlView: true,
+    };
+  },
+  "c12-eng-f11": () => {
+    const mod = require("./content/c12-eng-f11");
+    return {
+      id: "c12-eng-f11",
+      number: 11,
+      title: "A Thing of Beauty",
+      htmlOverview: mod.c12EngF11HtmlOverview,
+      htmlExercises: { "ex-c12-eng": mod.c12EngF11HtmlSolutions },
+      mcqs: mod.c12EngF11Mcqs,
+      exercises: [{ id: "ex-c12-eng", name: "Q & A", questions: [] }],
+      isHtmlView: true,
+    };
+  },
+  "c12-eng-f12": () => {
+    const mod = require("./content/c12-eng-f12");
+    return {
+      id: "c12-eng-f12",
+      number: 12,
+      title: "A Roadside Stand",
+      htmlOverview: mod.c12EngF12HtmlOverview,
+      htmlExercises: { "ex-c12-eng": mod.c12EngF12HtmlSolutions },
+      mcqs: mod.c12EngF12Mcqs,
+      exercises: [{ id: "ex-c12-eng", name: "Q & A", questions: [] }],
+      isHtmlView: true,
+    };
+  },
+  "c12-eng-f13": () => {
+    const mod = require("./content/c12-eng-f13");
+    return {
+      id: "c12-eng-f13",
+      number: 13,
+      title: "Aunt Jennifer's Tigers",
+      htmlOverview: mod.c12EngF13HtmlOverview,
+      htmlExercises: { "ex-c12-eng": mod.c12EngF13HtmlSolutions },
+      mcqs: mod.c12EngF13Mcqs,
+      exercises: [{ id: "ex-c12-eng", name: "Q & A", questions: [] }],
+      isHtmlView: true,
+    };
+  },
+  "c12-eng-v1": () => {
+    const mod = require("./content/c12-eng-v1");
+    return {
+      id: "c12-eng-v1",
+      number: 1,
+      title: "The Third Level",
+      htmlOverview: mod.c12EngV1HtmlOverview,
+      htmlExercises: { "ex-c12-eng": mod.c12EngV1HtmlSolutions },
+      mcqs: mod.c12EngV1Mcqs,
+      exercises: [{ id: "ex-c12-eng", name: "Q & A", questions: [] }],
+      isHtmlView: true,
+    };
+  },
+  "c12-eng-v2": () => {
+    const mod = require("./content/c12-eng-v2");
+    return {
+      id: "c12-eng-v2",
+      number: 2,
+      title: "The Tiger King",
+      htmlOverview: mod.c12EngV2HtmlOverview,
+      htmlExercises: { "ex-c12-eng": mod.c12EngV2HtmlSolutions },
+      mcqs: mod.c12EngV2Mcqs,
+      exercises: [{ id: "ex-c12-eng", name: "Q & A", questions: [] }],
+      isHtmlView: true,
+    };
+  },
+  "c12-eng-v3": () => {
+    const mod = require("./content/c12-eng-v3");
+    return {
+      id: "c12-eng-v3",
+      number: 3,
+      title: "Journey to the End of the Earth",
+      htmlOverview: mod.c12EngV3HtmlOverview,
+      htmlExercises: { "ex-c12-eng": mod.c12EngV3HtmlSolutions },
+      mcqs: mod.c12EngV3Mcqs,
+      exercises: [{ id: "ex-c12-eng", name: "Q & A", questions: [] }],
+      isHtmlView: true,
+    };
+  },
+  "c12-eng-v4": () => {
+    const mod = require("./content/c12-eng-v4");
+    return {
+      id: "c12-eng-v4",
+      number: 4,
+      title: "The Enemy",
+      htmlOverview: mod.c12EngV4HtmlOverview,
+      htmlExercises: { "ex-c12-eng": mod.c12EngV4HtmlSolutions },
+      mcqs: mod.c12EngV4Mcqs,
+      exercises: [{ id: "ex-c12-eng", name: "Q & A", questions: [] }],
+      isHtmlView: true,
+    };
+  },
+  "c12-eng-v5": () => {
+    const mod = require("./content/c12-eng-v5");
+    return {
+      id: "c12-eng-v5",
+      number: 5,
+      title: "On the Face of It",
+      htmlOverview: mod.c12EngV5HtmlOverview,
+      htmlExercises: { "ex-c12-eng": mod.c12EngV5HtmlSolutions },
+      mcqs: mod.c12EngV5Mcqs,
+      exercises: [{ id: "ex-c12-eng", name: "Q & A", questions: [] }],
+      isHtmlView: true,
+    };
+  },
+  "c12-eng-v6": () => {
+    const mod = require("./content/c12-eng-v6");
+    return {
+      id: "c12-eng-v6",
+      number: 6,
+      title: "Memories of Childhood",
+      htmlOverview: mod.c12EngV6HtmlOverview,
+      htmlExercises: { "ex-c12-eng": mod.c12EngV6HtmlSolutions },
+      mcqs: mod.c12EngV6Mcqs,
+      exercises: [{ id: "ex-c12-eng", name: "Q & A", questions: [] }],
+      isHtmlView: true,
+    };
+  },
+  "c12-eng-w1": () => {
+    const mod = require("./content/c12-eng-w1");
+    return {
+      id: "c12-eng-w1",
+      number: 1,
+      title: "Note-Making & Summarizing",
+      htmlOverview: mod.c12EngW1HtmlOverview,
+      htmlExercises: { "ex-c12-eng": mod.c12EngW1HtmlSolutions },
+      mcqs: mod.c12EngW1Mcqs,
+      exercises: [{ id: "ex-c12-eng", name: "Q & A", questions: [] }],
+      isHtmlView: true,
+    };
+  },
+  "c12-eng-w2": () => {
+    const mod = require("./content/c12-eng-w2");
+    return {
+      id: "c12-eng-w2",
+      number: 2,
+      title: "Advertisements & Invitations/Replies",
+      htmlOverview: mod.c12EngW2HtmlOverview,
+      htmlExercises: { "ex-c12-eng": mod.c12EngW2HtmlSolutions },
+      mcqs: mod.c12EngW2Mcqs,
+      exercises: [{ id: "ex-c12-eng", name: "Q & A", questions: [] }],
+      isHtmlView: true,
+    };
+  },
+  "c12-eng-w3": () => {
+    const mod = require("./content/c12-eng-w3");
+    return {
+      id: "c12-eng-w3",
+      number: 3,
+      title: "Formal & Business Letter Writing",
+      htmlOverview: mod.c12EngW3HtmlOverview,
+      htmlExercises: { "ex-c12-eng": mod.c12EngW3HtmlSolutions },
+      mcqs: mod.c12EngW3Mcqs,
+      exercises: [{ id: "ex-c12-eng", name: "Q & A", questions: [] }],
+      isHtmlView: true,
+    };
+  },
+  "c12-eng-w4": () => {
+    const mod = require("./content/c12-eng-w4");
+    return {
+      id: "c12-eng-w4",
+      number: 4,
+      title: "Resume & Cover Letter Writing",
+      htmlOverview: mod.c12EngW4HtmlOverview,
+      htmlExercises: { "ex-c12-eng": mod.c12EngW4HtmlSolutions },
+      mcqs: mod.c12EngW4Mcqs,
+      exercises: [{ id: "ex-c12-eng", name: "Q & A", questions: [] }],
+      isHtmlView: true,
+    };
+  },
+  "c12-eng-w5": () => {
+    const mod = require("./content/c12-eng-w5");
+    return {
+      id: "c12-eng-w5",
+      number: 5,
+      title: "Article, Debate, Speech & Narrative Writing",
+      htmlOverview: mod.c12EngW5HtmlOverview,
+      htmlExercises: { "ex-c12-eng": mod.c12EngW5HtmlSolutions },
+      mcqs: mod.c12EngW5Mcqs,
+      exercises: [{ id: "ex-c12-eng", name: "Q & A", questions: [] }],
+      isHtmlView: true,
+    };
+  },
+  "c12-eng-w6": () => {
+    const mod = require("./content/c12-eng-w6");
+    return {
+      id: "c12-eng-w6",
+      number: 6,
+      title: "Grammar Editing Master Toolkit",
+      htmlOverview: mod.c12EngW6HtmlOverview,
+      htmlExercises: { "ex-c12-eng": mod.c12EngW6HtmlSolutions },
+      mcqs: mod.c12EngW6Mcqs,
+      exercises: [{ id: "ex-c12-eng", name: "Q & A", questions: [] }],
+      isHtmlView: true,
+    };
+  },
 };
 
 
