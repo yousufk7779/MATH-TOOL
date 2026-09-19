@@ -126,7 +126,8 @@ const styles = StyleSheet.create({
   },
   content: {
     paddingHorizontal: Spacing.xl,
-    paddingVertical: Spacing.xl,
+    paddingTop: Spacing.sm,
+    paddingBottom: Spacing.xl,
     flexGrow: 1,
   },
   centeredContent: {
@@ -134,7 +135,7 @@ const styles = StyleSheet.create({
   },
   headerContainer: {
     alignItems: "center",
-    marginBottom: Spacing["3xl"],
+    marginBottom: Spacing.lg,
   },
   titleRow: {
     flexDirection: "row",
@@ -165,7 +166,7 @@ const styles = StyleSheet.create({
     borderRadius: 3,
   },
   buttonsContainer: {
-    gap: Spacing.xl,
+    gap: Spacing.lg,
   },
   buttonWrapper: {
     width: "100%",
