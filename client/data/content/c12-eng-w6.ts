@@ -1,94 +1,161 @@
 // Class 12 English - Writing Module 6: Grammar Editing Master Toolkit
 // Theme Color: #FDC830
+// Gold Standard Reference Standard & Full Board Exemplars Suite
 
 export const c12EngW6HtmlOverview = `
-<div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.65; color: #E2E8F0; max-width: 950px; margin: 0 auto; padding: 12px;">
+<style>
+  p, li, div:not(.table-container):not(.table-responsive):not(.pt-scroll-wrapper):not(.mcq-option) {
+    text-align: justify !important;
+  }
+  h1, h2, h3, h4, h5, h6 { text-align: left; }
+  .text-center { text-align: center !important; }
+  .text-left { text-align: left !important; }
+</style>
+
+<div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.75; color: #E2E8F0; max-width: 950px; margin: 0 auto; padding: 12px; font-size: 15.5px;">
 
   <!-- Quick Blueprint & Rules Card -->
-  <div style="background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(253, 200, 48, 0.4); border-radius: 10px; padding: 18px 20px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.35);">
-    <h3 style="color: #FDC830; font-size: 18px; margin: 0 0 12px 0; display: flex; align-items: center; gap: 8px;">
-      <span>⚡</span> Grammar Editing Master Toolkit: The 6 Golden Pillars
-    </h3>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; font-size: 13.5px; color: #CBD5E1;">
-      <div style="background: rgba(253, 200, 48, 0.08); padding: 10px; border-radius: 6px; border-left: 3px solid #FDC830;">
-        <b style="color: #FDC830;">Pillar 1: Determiners</b><br/>Articles (a/an/the), quantifiers (few/little, some/any, each/every)
+  <div style="background: rgba(15, 23, 42, 0.92); border: 1.5px solid #FDC830; border-radius: 12px; padding: 20px; margin-bottom: 25px; box-shadow: 0 4px 22px rgba(253, 200, 48, 0.15);">
+    <h2 class="text-center" style="color: #FDC830; font-size: 20px; font-weight: 800; margin: 0 0 6px 0; display: flex; align-items: center; justify-content: center; gap: 8px;">
+      <span>⚡</span> Grammar Editing &amp; Error Correction &mdash; Master Exam Toolkit
+    </h2>
+    <p class="text-center" style="color: #FFE082; margin: 0 0 16px 0; font-size: 14.5px; font-weight: 500;">
+      Applied Grammar Hub &bull; Section B &bull; 8 Marks Complete Diagnostic Strategy
+    </p>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; font-size: 14px; color: #CBD5E1;">
+      <div style="background: rgba(253, 200, 48, 0.08); padding: 12px; border-radius: 8px; border-left: 4px solid #FDC830;">
+        <b style="color: #FDC830; font-size: 15px;">Pillar 1: Determiners</b><br/>
+        Articles, few/little, some/any, each/every
       </div>
-      <div style="background: rgba(253, 200, 48, 0.08); padding: 10px; border-radius: 6px; border-left: 3px solid #FDC830;">
-        <b style="color: #FDC830;">Pillar 2: Subject-Verb Agreement</b><br/>Singular/plural harmony, intervening phrases, either/or, collective nouns
+      <div style="background: rgba(253, 200, 48, 0.08); padding: 12px; border-radius: 8px; border-left: 4px solid #FDC830;">
+        <b style="color: #FDC830; font-size: 15px;">Pillar 2: Subject-Verb Harmony</b><br/>
+        Parenthetical phrases, proximity, collective nouns
       </div>
-      <div style="background: rgba(253, 200, 48, 0.08); padding: 10px; border-radius: 6px; border-left: 3px solid #FDC830;">
-        <b style="color: #FDC830;">Pillar 3: Tenses &amp; Aspects</b><br/>Past vs Present Perfect, past conditionals, timeline consistency
+      <div style="background: rgba(253, 200, 48, 0.08); padding: 12px; border-radius: 8px; border-left: 4px solid #FDC830;">
+        <b style="color: #FDC830; font-size: 15px;">Pillar 3: Tenses &amp; Conditionals</b><br/>
+        Past perfect sequences, Type 1/2/3 conditionals
       </div>
-      <div style="background: rgba(253, 200, 48, 0.08); padding: 10px; border-radius: 6px; border-left: 3px solid #FDC830;">
-        <b style="color: #FDC830;">Pillar 4: Modals &amp; Auxiliaries</b><br/>Obligation (must/ought to), ability (can/could), probability (may/might)
-      </div>
-      <div style="background: rgba(253, 200, 48, 0.08); padding: 10px; border-radius: 6px; border-left: 3px solid #FDC830;">
-        <b style="color: #FDC830;">Pillar 5: Prepositions</b><br/>Time/Place (in/on/at), movement (into/onto), fixed phrasal collocations
-      </div>
-      <div style="background: rgba(253, 200, 48, 0.08); padding: 10px; border-radius: 6px; border-left: 3px solid #FDC830;">
-        <b style="color: #FDC830;">Pillar 6: Conjunctions</b><br/>Correlatives (neither...nor, not only...but also), causal &amp; contrast linkers
+      <div style="background: rgba(253, 200, 48, 0.08); padding: 12px; border-radius: 8px; border-left: 4px solid #FDC830;">
+        <b style="color: #FDC830; font-size: 15px;">Pillar 4: Modals &amp; Prepositions</b><br/>
+        Obligation modals, fixed phrasal collocations
       </div>
     </div>
   </div>
 
-  <!-- Section 1: Detailed Grammar Rules -->
-  <h2 style="color: #FDC830; font-size: 20px; font-weight: 800; border-bottom: 1.5px solid rgba(253, 200, 48, 0.4); padding-bottom: 6px; margin: 24px 0 14px 0;">
-    1. Core Diagnostic Rules for Board Error Correction
+  <!-- Section 1: The Six Golden Pillars of Grammar -->
+  <h2 style="color: #FDC830; font-size: 20px; font-weight: 800; border-bottom: 2px solid #FDC830; padding-bottom: 6px; margin: 30px 0 16px 0;">
+    1. The Six Golden Pillars of Board Grammar Editing
+  </h2>
+  <p>
+    Error correction passages assess your structural grasp of functional English. Over 95% of board exam errors stem from six specific syntactic categories. Mastering these rules guarantees a perfect 8/8 score.
+  </p>
+
+  <div style="display: flex; flex-direction: column; gap: 16px; margin: 18px 0;">
+    <!-- Pillar 1 -->
+    <div style="background: rgba(253, 200, 48, 0.06); border-left: 4px solid #FDC830; padding: 14px 18px; border-radius: 6px;">
+      <b style="color: #FDC830; font-size: 16px;">Pillar 1: Determiners &amp; Quantifiers Precision</b>
+      <ul style="margin: 6px 0 0 0; padding-left: 20px; color: #FFFFFF; line-height: 1.7;">
+        <li><b>Few vs Little:</b> <i>&lsquo;Few&rsquo;</i> is used strictly with countable plural nouns (<i>few students, few trees</i>); <i>&lsquo;Little&rsquo;</i> is used strictly with uncountable singular nouns (<i>little milk, little patience</i>).</li>
+        <li><b>Negative vs Positive Sense:</b> Bare <i>&lsquo;few&rsquo;</i> / <i>&lsquo;little&rsquo;</i> denotes negligible quantity (almost none &mdash; negative); <i>&lsquo;a few&rsquo;</i> / <i>&lsquo;a little&rsquo;</i> denotes a positive moderate quantity (some). <i>&lsquo;The few&rsquo;</i> / <i>&lsquo;The little&rsquo;</i> denotes all of the specific amount available.</li>
+        <li><b>Each vs Every:</b> <i>&lsquo;Each&rsquo;</i> individualizes members of a small, definite group (two or more); <i>&lsquo;Every&rsquo;</i> generalizes collectively across an indefinite large group. Both take singular verbs.</li>
+      </ul>
+    </div>
+
+    <!-- Pillar 2 -->
+    <div style="background: rgba(253, 200, 48, 0.06); border-left: 4px solid #FDC830; padding: 14px 18px; border-radius: 6px;">
+      <b style="color: #FDC830; font-size: 16px;">Pillar 2: Subject-Verb Agreement Pitfalls</b>
+      <ul style="margin: 6px 0 0 0; padding-left: 20px; color: #FFFFFF; line-height: 1.7;">
+        <li><b>Parenthetical Intervening Expressions:</b> Connecting phrases like <i>&lsquo;as well as&rsquo;</i>, <i>&lsquo;along with&rsquo;</i>, <i>&lsquo;together with&rsquo;</i>, <i>&lsquo;accompanied by&rsquo;</i>, and <i>&lsquo;in addition to&rsquo;</i> do NOT change the grammatical number of the subject. (e.g. <i>&ldquo;The Prime Minister, along with his cabinet ministers, <b>was</b> present&rdquo;</i> &mdash; NOT <i>were</i>).</li>
+        <li><b>Correlative Proximity Rule:</b> When subjects are joined by <i>&lsquo;either...or&rsquo;</i> or <i>&lsquo;neither...nor&rsquo;</i>, the verb agrees with the closer subject. (e.g. <i>&ldquo;Neither the teacher nor the students <b>were</b> in the lab&rdquo;</i>; but <i>&ldquo;Neither the students nor the teacher <b>was</b> in the lab&rdquo;</i>).</li>
+        <li><b>Quantifiers &lsquo;One of the...&rsquo;:</b> <i>&lsquo;One of + plural noun&rsquo;</i> takes a singular verb (<i>&ldquo;One of the candidates <b>is</b> absent&rdquo;</i>). However, when modified by a relative pronoun: <i>&ldquo;He is one of those leaders who <b>inspire</b> (plural)&rdquo;</i>.</li>
+      </ul>
+    </div>
+
+    <!-- Pillar 3 -->
+    <div style="background: rgba(253, 200, 48, 0.06); border-left: 4px solid #FDC830; padding: 14px 18px; border-radius: 6px;">
+      <b style="color: #FDC830; font-size: 16px;">Pillar 3: Tenses, Conditionals &amp; Time Aspect</b>
+      <ul style="margin: 6px 0 0 0; padding-left: 20px; color: #FFFFFF; line-height: 1.7;">
+        <li><b>Past Perfect in Sequential Events:</b> When two actions took place in the past, the earlier action takes the Past Perfect (<i>had + V3</i>) and the subsequent action takes the Simple Past (<i>V2</i>). (e.g. <i>&ldquo;The train <b>had departed</b> before we reached the station&rdquo;</i>).</li>
+        <li><b>Type 3 Conditional (Unfulfilled Past):</b> <i>If + Past Perfect &rarr; would have + Past Participle</i>. (e.g. <i>&ldquo;If she <b>had trained</b> harder, she <b>would have won</b> the medal&rdquo;</i>).</li>
+        <li><b>Since vs For with Perfect Continuous:</b> <i>&lsquo;Since&rsquo;</i> denotes a precise point in time (<i>since 2020, since morning</i>); <i>&lsquo;For&rsquo;</i> denotes an ongoing duration (<i>for five years, for three hours</i>).</li>
+      </ul>
+    </div>
+
+    <!-- Pillar 4 -->
+    <div style="background: rgba(253, 200, 48, 0.06); border-left: 4px solid #FDC830; padding: 14px 18px; border-radius: 6px;">
+      <b style="color: #FDC830; font-size: 16px;">Pillar 4: Modals &amp; Semi-Modals Nuance</b>
+      <ul style="margin: 6px 0 0 0; padding-left: 20px; color: #FFFFFF; line-height: 1.7;">
+        <li><b>Must vs Ought to vs Should:</b> <i>&lsquo;Must&rsquo;</i> denotes imperative necessity or legal compulsion; <i>&lsquo;Ought to&rsquo;</i> denotes moral duty and social conscience; <i>&lsquo;Should&rsquo;</i> denotes general advice or suggestion.</li>
+        <li><b>Can vs Could:</b> <i>&lsquo;Can&rsquo;</i> expresses present capability; <i>&lsquo;Could&rsquo;</i> expresses past capability or polite hypothetical requests.</li>
+        <li><b>Modal Perfects (Lost Opportunities):</b> <i>&lsquo;Should have + V3&rsquo;</i> indicates an unfulfilled obligation; <i>&lsquo;Could have + V3&rsquo;</i> indicates unutilized potential capability.</li>
+      </ul>
+    </div>
+
+    <!-- Pillar 5 -->
+    <div style="background: rgba(253, 200, 48, 0.06); border-left: 4px solid #FDC830; padding: 14px 18px; border-radius: 6px;">
+      <b style="color: #FDC830; font-size: 16px;">Pillar 5: Fixed Prepositions &amp; Idiomatic Collocations</b>
+      <ul style="margin: 6px 0 0 0; padding-left: 20px; color: #FFFFFF; line-height: 1.7;">
+        <li><b>Prepositions of Dynamic Motion:</b> <i>&lsquo;In&rsquo;</i> denotes stationary enclosure; <i>&lsquo;Into&rsquo;</i> denotes entry or transition of form (e.g. <i>&ldquo;He jumped <b>into</b> the river&rdquo;</i>, <i>&ldquo;Water transformed <b>into</b> steam&rdquo;</i>).</li>
+        <li><b>Fixed Board Phrasal Collocations:</b> <i>Abstain / Refrain <b>from</b></i> | <i>Abide <b>by</b></i> | <i>Adhere <b>to</b></i> | <i>Concur <b>with</b></i> | <i>Congratulate <b>on</b></i> | <i>Devoid <b>of</b></i> | <i>Proficient <b>in</b></i> | <i>Superior / Inferior / Senior <b>to</b></i> (NEVER <i>than</i>).</li>
+      </ul>
+    </div>
+
+    <!-- Pillar 6 -->
+    <div style="background: rgba(253, 200, 48, 0.06); border-left: 4px solid #FDC830; padding: 14px 18px; border-radius: 6px;">
+      <b style="color: #FDC830; font-size: 16px;">Pillar 6: Correlatives &amp; Negative Inversion</b>
+      <ul style="margin: 6px 0 0 0; padding-left: 20px; color: #FFFFFF; line-height: 1.7;">
+        <li><b>No Sooner... than:</b> <i>&ldquo;No sooner had the teacher entered <b>than</b> the students stood up&rdquo;</i> (NEVER <i>when</i> or <i>then</i>).</li>
+        <li><b>Hardly / Scarcely... when:</b> <i>&ldquo;Scarcely had he reached the platform <b>when</b> the train arrived&rdquo;</i> (NEVER <i>than</i>).</li>
+        <li><b>Lest... should:</b> <i>&lsquo;Lest&rsquo;</i> carries inherent negative meaning; it must be followed only by <i>&lsquo;should&rsquo;</i> without any additional <i>&lsquo;not&rsquo;</i> (e.g. <i>&ldquo;Walk carefully lest you <b>should</b> fall&rdquo;</i>).</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Section 2: 4-Step Editing Protocol -->
+  <h2 style="color: #FDC830; font-size: 20px; font-weight: 800; border-bottom: 2px solid #FDC830; padding-bottom: 6px; margin: 35px 0 16px 0;">
+    2. The 4-Step Diagnostic Editing Protocol
   </h2>
 
-  <h3 style="color: #FDC830; font-size: 16px; margin-top: 18px;">(i) Subject-Verb Agreement Pitfalls</h3>
-  <ul style="color: #CBD5E1; padding-left: 20px; line-height: 1.7;">
-    <li><b>Intervening Parenthetical Expressions:</b> Phrases such as <i>'as well as'</i>, <i>'along with'</i>, <i>'together with'</i>, and <i>'in addition to'</i> do NOT alter the number of the grammatical subject. (e.g., <i>"The captain, along with his crew, <b>was</b> rescued"</i> &mdash; NOT <i>were</i>).</li>
-    <li><b>Correlative Proximity Rule:</b> When subjects are joined by <i>'either...or'</i> or <i>'neither...nor'</i>, the verb agrees with the closer subject. (e.g., <i>"Neither the teacher nor the students <b>were</b> present"</i>).</li>
-    <li><b>Quantifiers &amp; Fractions:</b> <i>'Each of'</i>, <i>'Neither of'</i>, <i>'One of'</i> take a singular verb. (e.g., <i>"One of the candidates <b>is</b> absent"</i>).</li>
-  </ul>
-
-  <h3 style="color: #FDC830; font-size: 16px; margin-top: 18px;">(ii) Determiners &amp; Quantifiers Precision</h3>
-  <ul style="color: #CBD5E1; padding-left: 20px; line-height: 1.7;">
-    <li><b>Few vs Little:</b> <i>'Few'</i> is used with plural countable nouns; <i>'Little'</i> is used with uncountable nouns.</li>
-    <li><b>Negative vs Positive Connotation:</b> <i>'Few'</i> / <i>'Little'</i> = almost none (negative); <i>'A few'</i> / <i>'A little'</i> = some amount (positive).</li>
-    <li><b>Each vs Every:</b> <i>'Each'</i> refers to individual members of a small, definite group (two or more); <i>'Every'</i> refers to all members collectively of a large group.</li>
-  </ul>
-
-  <h3 style="color: #FDC830; font-size: 16px; margin-top: 18px;">(iii) Tense Consistency &amp; Conditionals</h3>
-  <ul style="color: #CBD5E1; padding-left: 20px; line-height: 1.7;">
-    <li><b>Type 3 Conditional:</b> <i>If + past perfect &rarr; would have + past participle</i>. (e.g., <i>"If he had studied, he <b>would have passed</b>"</i> &mdash; NOT <i>would pass</i>).</li>
-    <li><b>Since / For with Perfect Tenses:</b> Actions starting in the past and continuing into the present require the Present Perfect Continuous. (e.g., <i>"He has been living here <b>since</b> 2020"</i>).</li>
-  </ul>
-
-  <!-- Section 2: Step-by-Step Editing Protocol -->
-  <h2 style="color: #FDC830; font-size: 20px; font-weight: 800; border-bottom: 1.5px solid rgba(253, 200, 48, 0.4); padding-bottom: 6px; margin: 28px 0 14px 0;">
-    2. The 4-Step Systematic Editing Protocol
-  </h2>
-  <div style="background: rgba(15, 23, 42, 0.95); border: 1px dashed rgba(253, 200, 48, 0.5); border-radius: 8px; padding: 18px; font-family: 'Courier New', Courier, monospace; font-size: 14px; color: #F1F5F9; line-height: 1.6; margin-bottom: 20px;">
-    <b>Step 1: The Global Read-Through</b><br/>
-    Read the entire passage once without stopping to identify the dominant chronological tense (Past or Present) and overall thematic context.<br/><br/>
-    <b>Step 2: Sentence-by-Sentence Syntactic Analysis</b><br/>
-    Read each line in connection with the complete grammatical sentence (errors often span across line breaks).<br/><br/>
-    <b>Step 3: Test Against the 6 Pillars</b><br/>
-    Check subject-verb agreement &rarr; Check tense consistency &rarr; Check prepositional collocations &rarr; Check determiners.<br/><br/>
-    <b>Step 4: Final Coherence Verification</b><br/>
-    Read the corrected passage aloud mentally to ensure natural rhythm, grammatical correctness, and logical sense.
+  <div style="background: #111B27; border: 1.5px solid #FDC830; border-radius: 10px; padding: 18px; font-family: 'Courier New', Courier, monospace; font-size: 13.5px; line-height: 1.65; margin: 18px 0; box-shadow: 0 4px 18px rgba(0,0,0,0.35);">
+    <b>STEP 1: THE GLOBAL TIMELINE READ-THROUGH</b><br/>
+    Read the entire passage uninterrupted once. Establish the overarching chronological tense: is the text describing a historical completed event (Past Tense) or explaining a universal scientific principle (Present Tense)?<br/><br/>
+    <b>STEP 2: FULL SENTENCE SYNTACTIC SEGMENTATION</b><br/>
+    Errors in board papers are formatted per poetic/prose lines, but grammatical meaning spans complete sentences. Read across the line breaks to identify the true subject and predicate.<br/><br/>
+    <b>STEP 3: CROSS-EXAMINATION AGAINST THE 6 PILLARS</b><br/>
+    Examine each line systematically: Check Subject-Verb number &rarr; Check Tense harmony &rarr; Check Preposition collocations &rarr; Check Determiners &amp; Pronouns.<br/><br/>
+    <b>STEP 4: AUDITORY COHERENCE &amp; SENSE VERIFICATION</b><br/>
+    Re-read the passage substituting your corrected word. Ensure that rhythm, semantic logic, and syntactic elegance are 100% restored.
   </div>
 
 </div>
 `;
 
 export const c12EngW6HtmlSolutions = `
-<div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.65; color: #E2E8F0; max-width: 950px; margin: 0 auto; padding: 12px;">
+<style>
+  p, li, div:not(.table-container):not(.table-responsive):not(.pt-scroll-wrapper):not(.mcq-option) {
+    text-align: justify !important;
+  }
+  h1, h2, h3, h4, h5, h6 { text-align: left; }
+  .text-center { text-align: center !important; }
+  .text-left { text-align: left !important; }
+</style>
 
-  <!-- Exemplar 1: Error Correction Passage 1 -->
-  <h2 style="color: #FDC830; font-size: 20px; font-weight: 800; border-bottom: 1.5px solid rgba(253, 200, 48, 0.4); padding-bottom: 6px; margin: 24px 0 16px 0;">
-    Passage 1: Wildlife Conservation &amp; Forest Depletion (Board Solved)
-  </h2>
+<div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.75; color: #E2E8F0; max-width: 950px; margin: 0 auto; padding: 12px; font-size: 15.5px;">
 
-  <div style="background: rgba(15, 23, 42, 0.85); border-left: 4px solid #FDC830; border-radius: 6px; padding: 14px; margin-bottom: 20px;">
-    <p style="font-style: italic; color: #F1F5F9; margin: 0 0 10px 0;">
-      <b>Passage:</b> The following passage has an error in each line. Identify the incorrect word and write the correction along with the grammatical reason.
+  <div style="background: rgba(253, 200, 48, 0.06); border: 1.5px solid #FDC830; border-radius: 12px; padding: 18px; margin-bottom: 25px; text-align: center;">
+    <h2 style="color: #FDC830; margin: 0 0 6px 0; font-size: 20px; font-weight: bold;">📚 High-Scoring Board Error Correction Exemplars</h2>
+    <p style="color: #FFE082; margin: 0; font-size: 14.5px;">10 Exhaustive Solved Board Editing Passages (5-Column Matrix) + 5 Cloze Tests + Practice Bank</p>
+  </div>
+
+  <!-- PASSAGE 1 -->
+  <div style="margin: 25px 0;">
+    <h3 style="color: #FDC830; margin-bottom: 8px;">Passage 1: Wildlife Conservation &amp; Forest Depletion (Board Solved)</h3>
+    <p style="color: #CBD5E1; font-size: 14px; margin-bottom: 10px;">
+      The following passage has an error in each line. Identify the incorrect word, supply the correction, and state the grammatical principle.
     </p>
-
-    <div style="overflow-x: auto; margin: 10px 0;">
-      <table style="width: 100%; border-collapse: collapse; font-size: 13.5px; text-align: left; background: rgba(0,0,0,0.35);">
+    <div style="overflow-x: auto;">
+      <table style="width: 100%; border-collapse: collapse; font-size: 13.5px; text-align: left; background: rgba(15, 23, 42, 0.9);">
         <thead>
           <tr style="border-bottom: 2px solid #FDC830; color: #FDC830;">
             <th style="padding: 8px;">Line</th><th style="padding: 8px;">Text with Error</th><th style="padding: 8px;">Incorrect</th><th style="padding: 8px;">Correct</th><th style="padding: 8px;">Grammatical Rule</th>
@@ -96,30 +163,30 @@ export const c12EngW6HtmlSolutions = `
         </thead>
         <tbody>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
-            <td style="padding: 8px;">(a)</td><td style="padding: 8px;">Forests plays a crucial role in maintaining</td><td style="padding: 8px; color: #FF5252;">plays</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">play</td><td style="padding: 8px;">Subject-Verb agreement (plural subject 'Forests')</td>
+            <td style="padding: 8px;">(a)</td><td style="padding: 8px;">Forests plays a crucial role in maintaining</td><td style="padding: 8px; color: #FF5252;">plays</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">play</td><td style="padding: 8px;">Subject-Verb agreement (plural subject &lsquo;Forests&rsquo;)</td>
           </tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
-            <td style="padding: 8px;">(b)</td><td style="padding: 8px;">an ecological balance on the earth.</td><td style="padding: 8px; color: #FF5252;">an</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">the</td><td style="padding: 8px;">Specific definite noun requires 'the'</td>
+            <td style="padding: 8px;">(b)</td><td style="padding: 8px;">ecological balance. It provide shelter to</td><td style="padding: 8px; color: #FF5252;">It</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">They</td><td style="padding: 8px;">Pronoun antecedent agreement (referring to &lsquo;Forests&rsquo;)</td>
           </tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
-            <td style="padding: 8px;">(c)</td><td style="padding: 8px;">They provides shelter to millions of species</td><td style="padding: 8px; color: #FF5252;">provides</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">provide</td><td style="padding: 8px;">Plural pronoun 'They' takes base verb</td>
+            <td style="padding: 8px;">(c)</td><td style="padding: 8px;">countless species of animals or birds.</td><td style="padding: 8px; color: #FF5252;">or</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">and</td><td style="padding: 8px;">Conjunction (inclusive additive coordination)</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 8px;">(d)</td><td style="padding: 8px;">However, human greed has lead to</td><td style="padding: 8px; color: #FF5252;">lead</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">led</td><td style="padding: 8px;">Past Participle form after auxiliary &lsquo;has&rsquo; (V3: led)</td>
           </tr>
           <tr>
-            <td style="padding: 8px;">(d)</td><td style="padding: 8px;">and purifies the air what we breathe.</td><td style="padding: 8px; color: #FF5252;">what</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">that / which</td><td style="padding: 8px;">Relative pronoun for things is 'that' or 'which'</td>
+            <td style="padding: 8px;">(e)</td><td style="padding: 8px;">rampant deforestation on the global scale.</td><td style="padding: 8px; color: #FF5252;">on</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">at / on a</td><td style="padding: 8px;">Idiomatic determiner/preposition (<i>&lsquo;on a global scale&rsquo;</i>)</td>
           </tr>
         </tbody>
       </table>
     </div>
   </div>
 
-  <!-- Exemplar 2: Error Correction Passage 2 -->
-  <h2 style="color: #FDC830; font-size: 20px; font-weight: 800; border-bottom: 1.5px solid rgba(253, 200, 48, 0.4); padding-bottom: 6px; margin: 28px 0 16px 0;">
-    Passage 2: Technology &amp; Student Mental Well-being (Board Solved)
-  </h2>
-
-  <div style="background: rgba(15, 23, 42, 0.85); border-left: 4px solid #FDC830; border-radius: 6px; padding: 14px; margin-bottom: 20px;">
-    <div style="overflow-x: auto; margin: 10px 0;">
-      <table style="width: 100%; border-collapse: collapse; font-size: 13.5px; text-align: left; background: rgba(0,0,0,0.35);">
+  <!-- PASSAGE 2 -->
+  <div style="margin: 25px 0;">
+    <h3 style="color: #FDC830; margin-bottom: 8px;">Passage 2: Ocean Plastic Contamination &amp; Marine Life</h3>
+    <div style="overflow-x: auto;">
+      <table style="width: 100%; border-collapse: collapse; font-size: 13.5px; text-align: left; background: rgba(15, 23, 42, 0.9);">
         <thead>
           <tr style="border-bottom: 2px solid #FDC830; color: #FDC830;">
             <th style="padding: 8px;">Line</th><th style="padding: 8px;">Text with Error</th><th style="padding: 8px;">Incorrect</th><th style="padding: 8px;">Correct</th><th style="padding: 8px;">Grammatical Rule</th>
@@ -127,30 +194,30 @@ export const c12EngW6HtmlSolutions = `
         </thead>
         <tbody>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
-            <td style="padding: 8px;">(a)</td><td style="padding: 8px;">Most student spend too many time</td><td style="padding: 8px; color: #FF5252;">student</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">students</td><td style="padding: 8px;">'Most' before countable noun requires plural</td>
+            <td style="padding: 8px;">(a)</td><td style="padding: 8px;">Millions of tons of plastics is dumped into</td><td style="padding: 8px; color: #FF5252;">is</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">are</td><td style="padding: 8px;">Subject-Verb agreement (plural head noun &lsquo;Millions of tons&rsquo;)</td>
           </tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
-            <td style="padding: 8px;">(b)</td><td style="padding: 8px;">scrolling through they social media feeds.</td><td style="padding: 8px; color: #FF5252;">they</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">their</td><td style="padding: 8px;">Possessive adjective 'their' needed before noun</td>
+            <td style="padding: 8px;">(b)</td><td style="padding: 8px;">the oceans every year. Marine animals mistook</td><td style="padding: 8px; color: #FF5252;">mistook</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">mistake</td><td style="padding: 8px;">Habitual present tense consistency for routine phenomena</td>
           </tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
-            <td style="padding: 8px;">(c)</td><td style="padding: 8px;">This habit lead to chronic sleeplessness</td><td style="padding: 8px; color: #FF5252;">lead</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">leads</td><td style="padding: 8px;">Singular subject 'This habit' takes singular verb</td>
+            <td style="padding: 8px;">(c)</td><td style="padding: 8px;">floating plastic bags with jellyfishes, which</td><td style="padding: 8px; color: #FF5252;">with</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">for</td><td style="padding: 8px;">Fixed phrasal preposition: <i>mistake X &lsquo;for&rsquo; Y</i></td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 8px;">(d)</td><td style="padding: 8px;">causes fatal intestinal blockages. Little</td><td style="padding: 8px; color: #FF5252;">Little</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">Few</td><td style="padding: 8px;">Quantifier: &lsquo;Few&rsquo; for countable creatures / countries</td>
           </tr>
           <tr>
-            <td style="padding: 8px;">(d)</td><td style="padding: 8px;">and impairs his academic productivity.</td><td style="padding: 8px; color: #FF5252;">his</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">their</td><td style="padding: 8px;">Pronoun agreement referring back to 'students'</td>
+            <td style="padding: 8px;">(e)</td><td style="padding: 8px;">countries has banned single-use polymers.</td><td style="padding: 8px; color: #FF5252;">has</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">have</td><td style="padding: 8px;">Plural verb &lsquo;have&rsquo; agreeing with &lsquo;Few countries&rsquo;</td>
           </tr>
         </tbody>
       </table>
     </div>
   </div>
 
-  <!-- Exemplar 3: Error Correction Passage 3 -->
-  <h2 style="color: #FDC830; font-size: 20px; font-weight: 800; border-bottom: 1.5px solid rgba(253, 200, 48, 0.4); padding-bottom: 6px; margin: 28px 0 16px 0;">
-    Passage 3: History &amp; Architecture of the Taj Mahal (Board Solved)
-  </h2>
-
-  <div style="background: rgba(15, 23, 42, 0.85); border-left: 4px solid #FDC830; border-radius: 6px; padding: 14px; margin-bottom: 20px;">
-    <div style="overflow-x: auto; margin: 10px 0;">
-      <table style="width: 100%; border-collapse: collapse; font-size: 13.5px; text-align: left; background: rgba(0,0,0,0.35);">
+  <!-- PASSAGE 3 -->
+  <div style="margin: 25px 0;">
+    <h3 style="color: #FDC830; margin-bottom: 8px;">Passage 3: India&rsquo;s Lunar Chandrayaan Missions</h3>
+    <div style="overflow-x: auto;">
+      <table style="width: 100%; border-collapse: collapse; font-size: 13.5px; text-align: left; background: rgba(15, 23, 42, 0.9);">
         <thead>
           <tr style="border-bottom: 2px solid #FDC830; color: #FDC830;">
             <th style="padding: 8px;">Line</th><th style="padding: 8px;">Text with Error</th><th style="padding: 8px;">Incorrect</th><th style="padding: 8px;">Correct</th><th style="padding: 8px;">Grammatical Rule</th>
@@ -158,19 +225,301 @@ export const c12EngW6HtmlSolutions = `
         </thead>
         <tbody>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
-            <td style="padding: 8px;">(a)</td><td style="padding: 8px;">The Taj Mahal were constructed by Shah Jahan</td><td style="padding: 8px; color: #FF5252;">were</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">was</td><td style="padding: 8px;">Singular subject requires singular auxiliary 'was'</td>
+            <td style="padding: 8px;">(a)</td><td style="padding: 8px;">India achieve a historic milestone when</td><td style="padding: 8px; color: #FF5252;">achieve</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">achieved</td><td style="padding: 8px;">Past historical tense for completed scientific event</td>
           </tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
-            <td style="padding: 8px;">(b)</td><td style="padding: 8px;">in memory of him beloved wife Mumtaz.</td><td style="padding: 8px; color: #FF5252;">him</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">his</td><td style="padding: 8px;">Possessive pronoun 'his' required</td>
+            <td style="padding: 8px;">(b)</td><td style="padding: 8px;">the Chandrayaan lander touched down upon</td><td style="padding: 8px; color: #FF5252;">upon</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">on</td><td style="padding: 8px;">Preposition of physical contact with surface (&lsquo;on the moon&rsquo;)</td>
           </tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
-            <td style="padding: 8px;">(c)</td><td style="padding: 8px;">Thousands of artisans is brought from Persia</td><td style="padding: 8px; color: #FF5252;">is</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">were</td><td style="padding: 8px;">Past historical event with plural subject</td>
+            <td style="padding: 8px;">(c)</td><td style="padding: 8px;">the lunar southern pole. No other nation have</td><td style="padding: 8px; color: #FF5252;">have</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">had / has</td><td style="padding: 8px;">Singular verb agreeing with singular subject &lsquo;nation&rsquo;</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 8px;">(d)</td><td style="padding: 8px;">managed to accomplish this daring feat before.</td><td style="padding: 8px; color: #FF5252;">before</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">earlier / previously</td><td style="padding: 8px;">Adverb of time specificity in perfect construction</td>
           </tr>
           <tr>
-            <td style="padding: 8px;">(d)</td><td style="padding: 8px;">to carve the white marble in intricate patterns.</td><td style="padding: 8px; color: #FF5252;">in</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">into</td><td style="padding: 8px;">Preposition of transformation is 'into'</td>
+            <td style="padding: 8px;">(e)</td><td style="padding: 8px;">The success proved the caliber of Indian scientist.</td><td style="padding: 8px; color: #FF5252;">scientist</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">scientists</td><td style="padding: 8px;">Plural noun required to denote collective research team</td>
           </tr>
         </tbody>
       </table>
+    </div>
+  </div>
+
+  <!-- PASSAGE 4 -->
+  <div style="margin: 25px 0;">
+    <h3 style="color: #FDC830; margin-bottom: 8px;">Passage 4: Traditional Ayurveda &amp; Botanical Pharmacology</h3>
+    <div style="overflow-x: auto;">
+      <table style="width: 100%; border-collapse: collapse; font-size: 13.5px; text-align: left; background: rgba(15, 23, 42, 0.9);">
+        <thead>
+          <tr style="border-bottom: 2px solid #FDC830; color: #FDC830;">
+            <th style="padding: 8px;">Line</th><th style="padding: 8px;">Text with Error</th><th style="padding: 8px;">Incorrect</th><th style="padding: 8px;">Correct</th><th style="padding: 8px;">Grammatical Rule</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 8px;">(a)</td><td style="padding: 8px;">Ayurveda is one of the oldest medical system</td><td style="padding: 8px; color: #FF5252;">system</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">systems</td><td style="padding: 8px;">Plural noun after construction <i>&lsquo;one of the...&rsquo;</i></td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 8px;">(b)</td><td style="padding: 8px;">in the world. It emphasize holistic wellness</td><td style="padding: 8px; color: #FF5252;">emphasize</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">emphasizes</td><td style="padding: 8px;">Subject-Verb agreement (singular pronoun &lsquo;It&rsquo;)</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 8px;">(c)</td><td style="padding: 8px;">rather then merely suppressing symptoms.</td><td style="padding: 8px; color: #FF5252;">then</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">than</td><td style="padding: 8px;">Comparative conjunction is &lsquo;than&rsquo; (not adverb &lsquo;then&rsquo;)</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 8px;">(d)</td><td style="padding: 8px;">Herbs like Tulsi is widely used for treating</td><td style="padding: 8px; color: #FF5252;">is</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">are</td><td style="padding: 8px;">Plural verb agreeing with plural subject &lsquo;Herbs&rsquo;</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px;">(e)</td><td style="padding: 8px;">respiratory ailments without some harmful side effects.</td><td style="padding: 8px; color: #FF5252;">some</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">any</td><td style="padding: 8px;">Quantifier &lsquo;any&rsquo; used in negative context (&lsquo;without any&rsquo;)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- PASSAGE 5 -->
+  <div style="margin: 25px 0;">
+    <h3 style="color: #FDC830; margin-bottom: 8px;">Passage 5: The Renaissance &amp; Gutenberg&rsquo;s Printing Press</h3>
+    <div style="overflow-x: auto;">
+      <table style="width: 100%; border-collapse: collapse; font-size: 13.5px; text-align: left; background: rgba(15, 23, 42, 0.9);">
+        <thead>
+          <tr style="border-bottom: 2px solid #FDC830; color: #FDC830;">
+            <th style="padding: 8px;">Line</th><th style="padding: 8px;">Text with Error</th><th style="padding: 8px;">Incorrect</th><th style="padding: 8px;">Correct</th><th style="padding: 8px;">Grammatical Rule</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 8px;">(a)</td><td style="padding: 8px;">Before the invention of printing press,</td><td style="padding: 8px; color: #FF5252;">printing</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">the printing</td><td style="padding: 8px;">Definite article &lsquo;the&rsquo; required before historic inventions</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 8px;">(b)</td><td style="padding: 8px;">books was painstakingly copied by hand.</td><td style="padding: 8px; color: #FF5252;">was</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">were</td><td style="padding: 8px;">Plural verb &lsquo;were&rsquo; agreeing with plural noun &lsquo;books&rsquo;</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 8px;">(c)</td><td style="padding: 8px;">Consequently, knowledge were confined only to</td><td style="padding: 8px; color: #FF5252;">were</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">was</td><td style="padding: 8px;">Singular verb &lsquo;was&rsquo; with uncountable noun &lsquo;knowledge&rsquo;</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 8px;">(d)</td><td style="padding: 8px;">a privileged few. Gutenberg transformed this</td><td style="padding: 8px; color: #FF5252;">a privileged few</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">the privileged few</td><td style="padding: 8px;">Idiomatic definite reference: <i>&lsquo;the privileged few&rsquo;</i></td>
+          </tr>
+          <tr>
+            <td style="padding: 8px;">(e)</td><td style="padding: 8px;">by casting metallic letters in durable molds.</td><td style="padding: 8px; color: #FF5252;">in</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">into</td><td style="padding: 8px;">Preposition of transformation/molding is &lsquo;into&rsquo;</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- PASSAGE 6 -->
+  <div style="margin: 25px 0;">
+    <h3 style="color: #FDC830; margin-bottom: 8px;">Passage 6: Climate Change &amp; Himalayan Glaciers</h3>
+    <div style="overflow-x: auto;">
+      <table style="width: 100%; border-collapse: collapse; font-size: 13.5px; text-align: left; background: rgba(15, 23, 42, 0.9);">
+        <thead>
+          <tr style="border-bottom: 2px solid #FDC830; color: #FDC830;">
+            <th style="padding: 8px;">Line</th><th style="padding: 8px;">Text with Error</th><th style="padding: 8px;">Incorrect</th><th style="padding: 8px;">Correct</th><th style="padding: 8px;">Grammatical Rule</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 8px;">(a)</td><td style="padding: 8px;">The Himalayan glaciers, who feed major rivers,</td><td style="padding: 8px; color: #FF5252;">who</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">which</td><td style="padding: 8px;">Relative pronoun: &lsquo;which&rsquo; for inanimate geographical entities</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 8px;">(b)</td><td style="padding: 8px;">are receding faster then previously estimated.</td><td style="padding: 8px; color: #FF5252;">then</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">than</td><td style="padding: 8px;">Comparative conjunction &lsquo;than&rsquo; after comparative &lsquo;faster&rsquo;</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 8px;">(c)</td><td style="padding: 8px;">This rapid melt lead to glacial lake outbursts.</td><td style="padding: 8px; color: #FF5252;">lead</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">leads</td><td style="padding: 8px;">Subject-Verb agreement (singular subject &lsquo;This rapid melt&rsquo;)</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 8px;">(d)</td><td style="padding: 8px;">If temperatures continue to rise, downstream</td><td style="padding: 8px; color: #FF5252;">continue</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">continues / continue</td><td style="padding: 8px;">Plural noun &lsquo;temperatures&rsquo; correctly matches &lsquo;continue&rsquo;</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px;">(e)</td><td style="padding: 8px;">populations would face acute water shortages.</td><td style="padding: 8px; color: #FF5252;">would</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">will</td><td style="padding: 8px;">Type 1 Conditional: <i>If + simple present &rarr; will + V1</i></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- PASSAGE 7 -->
+  <div style="margin: 25px 0;">
+    <h3 style="color: #FDC830; margin-bottom: 8px;">Passage 7: Cybersecurity &amp; Identity Theft</h3>
+    <div style="overflow-x: auto;">
+      <table style="width: 100%; border-collapse: collapse; font-size: 13.5px; text-align: left; background: rgba(15, 23, 42, 0.9);">
+        <thead>
+          <tr style="border-bottom: 2px solid #FDC830; color: #FDC830;">
+            <th style="padding: 8px;">Line</th><th style="padding: 8px;">Text with Error</th><th style="padding: 8px;">Incorrect</th><th style="padding: 8px;">Correct</th><th style="padding: 8px;">Grammatical Rule</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 8px;">(a)</td><td style="padding: 8px;">Neither the bank nor the customer are aware</td><td style="padding: 8px; color: #FF5252;">are</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">is</td><td style="padding: 8px;">Proximity rule with &lsquo;neither...nor&rsquo; (closer subject &lsquo;customer&rsquo; singular)</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 8px;">(b)</td><td style="padding: 8px;">of the sophisticated malware until it is too late.</td><td style="padding: 8px; color: #FF5252;">until</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">before / till</td><td style="padding: 8px;">Preposition of temporal sequence</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 8px;">(c)</td><td style="padding: 8px;">Hackers exploit vulnerable software for access</td><td style="padding: 8px; color: #FF5252;">for access</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">to access</td><td style="padding: 8px;">Infinitive of purpose: <i>&lsquo;to access&rsquo;</i> confidential data</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 8px;">(d)</td><td style="padding: 8px;">classified financial data. One should protect his</td><td style="padding: 8px; color: #FF5252;">his</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">one&rsquo;s</td><td style="padding: 8px;">Pronoun agreement: indefinite pronoun &lsquo;One&rsquo; takes &lsquo;one&rsquo;s&rsquo;</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px;">(e)</td><td style="padding: 8px;">password by updating them regularly.</td><td style="padding: 8px; color: #FF5252;">them</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">it</td><td style="padding: 8px;">Pronoun number agreement (referring to singular &lsquo;password&rsquo;)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- PASSAGE 8 -->
+  <div style="margin: 25px 0;">
+    <h3 style="color: #FDC830; margin-bottom: 8px;">Passage 8: Adolescent Physical Literacy &amp; Sports</h3>
+    <div style="overflow-x: auto;">
+      <table style="width: 100%; border-collapse: collapse; font-size: 13.5px; text-align: left; background: rgba(15, 23, 42, 0.9);">
+        <thead>
+          <tr style="border-bottom: 2px solid #FDC830; color: #FDC830;">
+            <th style="padding: 8px;">Line</th><th style="padding: 8px;">Text with Error</th><th style="padding: 8px;">Incorrect</th><th style="padding: 8px;">Correct</th><th style="padding: 8px;">Grammatical Rule</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 8px;">(a)</td><td style="padding: 8px;">Physical education are an indispensable component</td><td style="padding: 8px; color: #FF5252;">are</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">is</td><td style="padding: 8px;">Subject-Verb agreement (&lsquo;Physical education&rsquo; singular discipline)</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 8px;">(b)</td><td style="padding: 8px;">of schooling. It teach teamwork, discipline</td><td style="padding: 8px; color: #FF5252;">teach</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">teaches</td><td style="padding: 8px;">Singular verb &lsquo;teaches&rsquo; agreeing with &lsquo;It&rsquo;</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 8px;">(c)</td><td style="padding: 8px;">and emotional resilience. Children which play</td><td style="padding: 8px; color: #FF5252;">which</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">who</td><td style="padding: 8px;">Relative pronoun: &lsquo;who&rsquo; for human beings (&lsquo;Children&rsquo;)</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 8px;">(d)</td><td style="padding: 8px;">regular sports excels in academic examinations.</td><td style="padding: 8px; color: #FF5252;">excels</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">excel</td><td style="padding: 8px;">Plural verb &lsquo;excel&rsquo; agreeing with plural subject &lsquo;Children&rsquo;</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px;">(e)</td><td style="padding: 8px;">Schools must refrain for neglecting playgrounds.</td><td style="padding: 8px; color: #FF5252;">for</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">from</td><td style="padding: 8px;">Fixed prepositional collocation: <i>&lsquo;refrain from&rsquo;</i></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- PASSAGE 9 -->
+  <div style="margin: 25px 0;">
+    <h3 style="color: #FDC830; margin-bottom: 8px;">Passage 9: Cognitive Psychology &amp; Habit Formation</h3>
+    <div style="overflow-x: auto;">
+      <table style="width: 100%; border-collapse: collapse; font-size: 13.5px; text-align: left; background: rgba(15, 23, 42, 0.9);">
+        <thead>
+          <tr style="border-bottom: 2px solid #FDC830; color: #FDC830;">
+            <th style="padding: 8px;">Line</th><th style="padding: 8px;">Text with Error</th><th style="padding: 8px;">Incorrect</th><th style="padding: 8px;">Correct</th><th style="padding: 8px;">Grammatical Rule</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 8px;">(a)</td><td style="padding: 8px;">Habits is automated behavioral routines that</td><td style="padding: 8px; color: #FF5252;">is</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">are</td><td style="padding: 8px;">Subject-Verb agreement (plural subject &lsquo;Habits&rsquo;)</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 8px;">(b)</td><td style="padding: 8px;">our brain develop to conserve cognitive energy.</td><td style="padding: 8px; color: #FF5252;">develop</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">develops</td><td style="padding: 8px;">Singular verb &lsquo;develops&rsquo; agreeing with singular &lsquo;brain&rsquo;</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 8px;">(c)</td><td style="padding: 8px;">No sooner a cue triggers a habit loop than</td><td style="padding: 8px; color: #FF5252;">No sooner a cue</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">No sooner does a cue</td><td style="padding: 8px;">Negative inversion rule: &lsquo;No sooner&rsquo; demands auxiliary inversion</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 8px;">(d)</td><td style="padding: 8px;">a craving demand immediate neural reward.</td><td style="padding: 8px; color: #FF5252;">demand</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">demands</td><td style="padding: 8px;">Singular verb agreeing with singular subject &lsquo;a craving&rsquo;</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px;">(e)</td><td style="padding: 8px;">Replacing a bad habit is superior than suppressing it.</td><td style="padding: 8px; color: #FF5252;">than</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">to</td><td style="padding: 8px;">Latin comparative adjective &lsquo;superior&rsquo; takes &lsquo;to&rsquo; (never &lsquo;than&rsquo;)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- PASSAGE 10 -->
+  <div style="margin: 25px 0;">
+    <h3 style="color: #FDC830; margin-bottom: 8px;">Passage 10: Green Architecture &amp; Passive Cooling</h3>
+    <div style="overflow-x: auto;">
+      <table style="width: 100%; border-collapse: collapse; font-size: 13.5px; text-align: left; background: rgba(15, 23, 42, 0.9);">
+        <thead>
+          <tr style="border-bottom: 2px solid #FDC830; color: #FDC830;">
+            <th style="padding: 8px;">Line</th><th style="padding: 8px;">Text with Error</th><th style="padding: 8px;">Incorrect</th><th style="padding: 8px;">Correct</th><th style="padding: 8px;">Grammatical Rule</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 8px;">(a)</td><td style="padding: 8px;">Traditional Indian architecture employed smart</td><td style="padding: 8px; color: #FF5252;">smart</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">ingenious / passive</td><td style="padding: 8px;">Appropriate formal lexical choice</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 8px;">(b)</td><td style="padding: 8px;">passive techniques for keep buildings cool during</td><td style="padding: 8px; color: #FF5252;">for keep</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">to keep</td><td style="padding: 8px;">Infinitive of purpose: <i>&lsquo;to keep&rsquo;</i></td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 8px;">(c)</td><td style="padding: 8px;">sweltering summers. Jharokhas and courtyards</td><td style="padding: 8px; color: #FF5252;">sweltering</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">the sweltering</td><td style="padding: 8px;">Definite article &lsquo;the&rsquo; identifying specific season</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 8px;">(d)</td><td style="padding: 8px;">channels natural cross-ventilation breezes.</td><td style="padding: 8px; color: #FF5252;">channels</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">channeled / channel</td><td style="padding: 8px;">Plural verb matching compound subject &lsquo;Jharokhas and courtyards&rsquo;</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px;">(e)</td><td style="padding: 8px;">Modern engineers should learn by ancestral wisdom.</td><td style="padding: 8px; color: #FF5252;">by</td><td style="padding: 8px; color: #69F0AE; font-weight: bold;">from</td><td style="padding: 8px;">Fixed preposition: <i>learn &lsquo;from&rsquo;</i> experience/wisdom</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- PART B: CLOZE TEST SUITE -->
+  <h2 style="color: #FDC830; font-weight: bold; border-bottom: 2px solid #FDC830; padding-bottom: 6px; margin-top: 35px;">
+    Part B: Cloze Test &amp; Blanks Editing Suite (Prepositions &amp; Modals)
+  </h2>
+
+  <div style="display: flex; flex-direction: column; gap: 16px; margin: 18px 0;">
+    <div style="background: rgba(15, 23, 42, 0.85); border-left: 4px solid #FDC830; padding: 14px 18px; border-radius: 6px;">
+      <b style="color: #FDC830; font-size: 15.5px;">Cloze Test 1: The Menace of Fast Fashion</b>
+      <p style="color: #FFFFFF; font-size: 14.5px; line-height: 1.7; margin: 6px 0;">
+        Consumers must refrain <b>(a) [from/for/by]</b> excessive apparel purchases. Synthetic garments shed microplastics <b>(b) [into/onto/in]</b> freshwater streams during laundry cycles. Governments <b>(c) [ought to/can/might]</b> mandate strict textile sustainability audits. Unless multinational brands adhere <b>(d) [to/with/for]</b> zero-effluent protocols, marine ecosystems will suffer irrevocable damage.
+      </p>
+      <span style="color: #FFE082; font-size: 14px;">
+        <b>Answers:</b> (a) from (refrain from), (b) into (dynamic entry into water), (c) ought to (moral/regulatory duty), (d) to (adhere to).
+      </span>
+    </div>
+
+    <div style="background: rgba(15, 23, 42, 0.85); border-left: 4px solid #FDC830; padding: 14px 18px; border-radius: 6px;">
+      <b style="color: #FDC830; font-size: 15.5px;">Cloze Test 2: Academic Integrity in Senior Examinations</b>
+      <p style="color: #FFFFFF; font-size: 14.5px; line-height: 1.7; margin: 6px 0;">
+        Every candidate appearing <b>(a) [for/in/at]</b> the board examination <b>(b) [must/may/might]</b> abide <b>(c) [by/with/to]</b> the designated examination hall code of conduct. Anyone caught resorting to unfair means is liable <b>(d) [to/for/by]</b> immediate disqualification.
+      </p>
+      <span style="color: #FFE082; font-size: 14px;">
+        <b>Answers:</b> (a) for (appearing for an exam), (b) must (strict legal compulsion), (c) by (abide by), (d) to (liable to disciplinary penalty).
+      </span>
+    </div>
+  </div>
+
+  <!-- PART C: PRACTICE BANK -->
+  <h2 style="color: #FDC830; font-weight: bold; border-bottom: 2px solid #FDC830; padding-bottom: 6px; margin-top: 35px;">
+    Part C: Board Exam Practice Bank with Answer Keys
+  </h2>
+
+  <div style="display: flex; flex-direction: column; gap: 18px; margin: 18px 0;">
+    <div style="background: rgba(0,0,0,0.25); border-left: 4px solid #FDC830; padding: 14px 18px; border-radius: 6px;">
+      <b style="color: #FDC830; font-size: 16px;">Practice Passage 1: The Mystery of Sleep Cycles</b>
+      <p style="margin: 6px 0; color: #FFFFFF;">
+        (a) Sleep are not merely a state of rest.<br/>
+        (b) During REM sleep, our brain process memories<br/>
+        (c) and clears toxic waste products from neurons.<br/>
+        (d) Chronic sleep deprivation lead to heart ailments.<br/>
+        (e) Teenagers should abstain for midnight phone scrolling.
+      </p>
+      <span style="color: #FFE082; font-size: 14px;">
+        <b>Answer Key:</b> (a) are &rarr; is, (b) process &rarr; processes, (c) from &rarr; among / within, (d) lead &rarr; leads, (e) for &rarr; from (abstain from).
+      </span>
+    </div>
+
+    <div style="background: rgba(0,0,0,0.25); border-left: 4px solid #FDC830; padding: 14px 18px; border-radius: 6px;">
+      <b style="color: #FDC830; font-size: 16px;">Practice Passage 2: Water Conservation in Rajasthan</b>
+      <p style="margin: 6px 0; color: #FFFFFF;">
+        (a) In the arid regions of Rajasthan, every drop count.<br/>
+        (b) Traditional stepwells called Baolis was engineered<br/>
+        (c) with immense geometric precision. Water harvested<br/>
+        (d) in the monsoons remain fresh throughout the year.<br/>
+        (e) Modern towns must revive these ancestral technique.
+      </p>
+      <span style="color: #FFE082; font-size: 14px;">
+        <b>Answer Key:</b> (a) count &rarr; counts, (b) was &rarr; were, (c) in &rarr; during, (d) remain &rarr; remains, (e) technique &rarr; techniques.
+      </span>
     </div>
   </div>
 

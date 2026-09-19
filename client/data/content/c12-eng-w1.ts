@@ -1,229 +1,491 @@
 // Class 12 English - Writing Module 1: Note-Making & Summarizing
 // Theme Color: #FF512F
+// Gold Standard Reference Standard & Full Board Exemplars Suite
 
 export const c12EngW1HtmlOverview = `
-<div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.65; color: #E2E8F0; max-width: 950px; margin: 0 auto; padding: 12px;">
+<style>
+  p, li, div:not(.table-container):not(.table-responsive):not(.pt-scroll-wrapper):not(.mcq-option) {
+    text-align: justify !important;
+  }
+  h1, h2, h3, h4, h5, h6 { text-align: left; }
+  .text-center { text-align: center !important; }
+  .text-left { text-align: left !important; }
+</style>
+
+<div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.75; color: #E2E8F0; max-width: 950px; margin: 0 auto; padding: 12px; font-size: 15.5px;">
 
   <!-- Quick Blueprint & Marking Scheme Card -->
-  <div style="background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 81, 47, 0.4); border-radius: 10px; padding: 18px 20px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.35);">
-    <h3 style="color: #FF512F; font-size: 18px; margin: 0 0 12px 0; display: flex; align-items: center; gap: 8px;">
-      <span>📝</span> Note-Making &amp; Summarizing: Master Exam Blueprint &amp; Marking Scheme
-    </h3>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; font-size: 13.5px; color: #CBD5E1;">
-      <div style="background: rgba(255, 81, 47, 0.08); padding: 10px; border-radius: 6px; border-left: 3px solid #FF512F;">
-        <b style="color: #FF512F;">Total Marks:</b> 8 Marks (Notes: 5 Marks + Summary: 3 Marks)
+  <div style="background: rgba(15, 23, 42, 0.92); border: 1.5px solid #FF512F; border-radius: 12px; padding: 20px; margin-bottom: 25px; box-shadow: 0 4px 22px rgba(255, 81, 47, 0.15);">
+    <h2 class="text-center" style="color: #FF512F; font-size: 20px; font-weight: 800; margin: 0 0 6px 0; display: flex; align-items: center; justify-content: center; gap: 8px;">
+      <span>📝</span> Note-Making &amp; Summarizing &mdash; Master Exam Blueprint
+    </h2>
+    <p class="text-center" style="color: #FFA07A; margin: 0 0 16px 0; font-size: 14.5px; font-weight: 500;">
+      Reading Skills &bull; Section A &bull; Total 8 Marks Comprehensive Strategy
+    </p>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; font-size: 14px; color: #CBD5E1;">
+      <div style="background: rgba(255, 81, 47, 0.08); padding: 12px; border-radius: 8px; border-left: 4px solid #FF512F;">
+        <b style="color: #FF512F; font-size: 15px;">Total Marks: 8 Marks</b><br/>
+        Notes: 5 Marks | Summary: 3 Marks
       </div>
-      <div style="background: rgba(255, 81, 47, 0.08); padding: 10px; border-radius: 6px; border-left: 3px solid #FF512F;">
-        <b style="color: #FF512F;">Title:</b> 1 Mark (Brief, relevant, captivating)
+      <div style="background: rgba(255, 81, 47, 0.08); padding: 12px; border-radius: 8px; border-left: 4px solid #FF512F;">
+        <b style="color: #FF512F; font-size: 15px;">Title: 1 Mark</b><br/>
+        Captivating, relevant, centered at the top
       </div>
-      <div style="background: rgba(255, 81, 47, 0.08); padding: 10px; border-radius: 6px; border-left: 3px solid #FF512F;">
-        <b style="color: #FF512F;">Numbering &amp; Indenting:</b> 1 Mark (Logical decimal/letter hierarchy)
+      <div style="background: rgba(255, 81, 47, 0.08); padding: 12px; border-radius: 8px; border-left: 4px solid #FF512F;">
+        <b style="color: #FF512F; font-size: 15px;">Numbering &amp; Indenting: 1 Mark</b><br/>
+        Logical decimal hierarchy (1., 1.1, 1.2)
       </div>
-      <div style="background: rgba(255, 81, 47, 0.08); padding: 10px; border-radius: 6px; border-left: 3px solid #FF512F;">
-        <b style="color: #FF512F;">Key to Abbreviations:</b> 1 Mark (Minimum 4–5 standard symbols/contractions in a box)
+      <div style="background: rgba(255, 81, 47, 0.08); padding: 12px; border-radius: 8px; border-left: 4px solid #FF512F;">
+        <b style="color: #FF512F; font-size: 15px;">Key to Abbreviations: 1 Mark</b><br/>
+        Min. 4&ndash;6 standard symbols in a box
       </div>
-      <div style="background: rgba(255, 81, 47, 0.08); padding: 10px; border-radius: 6px; border-left: 3px solid #FF512F;">
-        <b style="color: #FF512F;">Notes Content:</b> 2 Marks (Point form, phrases, NO full sentences)
+      <div style="background: rgba(255, 81, 47, 0.08); padding: 12px; border-radius: 8px; border-left: 4px solid #FF512F;">
+        <b style="color: #FF512F; font-size: 15px;">Notes Content: 2 Marks</b><br/>
+        Phrases and keywords only; NO full sentences
       </div>
-      <div style="background: rgba(255, 81, 47, 0.08); padding: 10px; border-radius: 6px; border-left: 3px solid #FF512F;">
-        <b style="color: #FF512F;">Summary:</b> 3 Marks (Content: 2M, Expression: 1M, strict ~50 words)
+      <div style="background: rgba(255, 81, 47, 0.08); padding: 12px; border-radius: 8px; border-left: 4px solid #FF512F;">
+        <b style="color: #FF512F; font-size: 15px;">Summary: 3 Marks</b><br/>
+        Content: 2M | Expression: 1M (Strict ~50 words)
       </div>
     </div>
   </div>
 
-  <!-- Section 1: Core Principles of High-Scoring Note-Making -->
-  <h2 style="color: #FF512F; font-size: 20px; font-weight: 800; border-bottom: 1.5px solid rgba(255, 81, 47, 0.4); padding-bottom: 6px; margin: 24px 0 14px 0;">
+  <!-- Section 1: The Golden Mechanics of Note-Making -->
+  <h2 style="color: #FF512F; font-size: 20px; font-weight: 800; border-bottom: 2px solid #FF512F; padding-bottom: 6px; margin: 30px 0 16px 0;">
     1. The Golden Mechanics of Note-Making
   </h2>
   <p>
-    Note-making is an indispensable cognitive skill designed to extract, condense, and organize essential information from extensive textual passages into a compact, logically structured format. It facilitates rapid revision and trains the mind to distinguish between primary themes and subordinate details.
+    Note-making is an indispensable cognitive skill designed to extract, condense, and organize essential data from complex textual passages into a compact, logically structured format. It trains the human mind to filter out verbal padding and isolate primary principles, underlying mechanisms, and supporting evidence.
   </p>
 
-  <h3 style="color: #FF512F; font-size: 16px; margin-top: 18px;">(i) The Five Cardinal Rules of Note-Making</h3>
-  <ul style="color: #CBD5E1; padding-left: 20px; line-height: 1.7;">
-    <li><b style="color: #FF512F;">Never Use Full Sentences:</b> Notes must strictly consist of brief phrases, keywords, and fragmented clauses. A note containing subject-verb-predicate structures will lose marks.</li>
-    <li><b style="color: #FF512F;">Strict Indentation Hierarchy:</b> Organize points using standard decimal numbering (e.g., 1., 1.1, 1.2, 1.2.1) or alphanumeric hierarchy (e.g., I., A., i.). Clear visual indentation is mandatory.</li>
-    <li><b style="color: #FF512F;">Mandatory Abbreviations:</b> Use at least 4 to 6 abbreviations and mathematical/graphical symbols (e.g., <i>dept., govt., info., &amp;, %, &rarr;, &uarr;</i>). Enclose all utilized abbreviations in a dedicated <b style="color: #FF512F;">'Key to Abbreviations'</b> box at the bottom of the notes.</li>
-    <li><b style="color: #FF512F;">Appropriate Headings &amp; Subheadings:</b> Divide the passage into 3 to 4 logical conceptual chunks. Provide a clear Main Heading for each chunk, followed by 2 to 4 Sub-points.</li>
-    <li><b style="color: #FF512F;">Title Selection:</b> The overall title must reflect the central thesis of the passage, centered at the very top, formatted in Title Case.</li>
-  </ul>
-
-  <!-- Section 2: Universal Note-Making Template -->
-  <h2 style="color: #FF512F; font-size: 20px; font-weight: 800; border-bottom: 1.5px solid rgba(255, 81, 47, 0.4); padding-bottom: 6px; margin: 28px 0 14px 0;">
-    2. Universal Note-Making Structural Architecture
-  </h2>
-  <div style="background: rgba(15, 23, 42, 0.95); border: 1px dashed rgba(255, 81, 47, 0.5); border-radius: 8px; padding: 18px; font-family: 'Courier New', Courier, monospace; font-size: 14px; color: #F1F5F9; line-height: 1.6; margin-bottom: 20px;">
-    <div style="text-align: center; font-weight: bold; color: #FF512F; font-size: 16px; margin-bottom: 12px;">
-      [TITLE: SUITABLE CENTRAL HEADING]
+  <div style="display: flex; flex-direction: column; gap: 14px; margin: 18px 0;">
+    <div style="background: rgba(255, 81, 47, 0.06); border-left: 4px solid #FF512F; padding: 14px 18px; border-radius: 6px;">
+      <b style="color: #FF512F; font-size: 16px;">(i) Strict Prohibition of Full Sentences:</b>
+      <p style="margin: 6px 0 0 0; color: #FFFFFF;">
+        Notes must strictly consist of brief phrases, keywords, and fragmented clauses. <b>Never write subject-verb-predicate complete sentences.</b> If an examiner detects full grammatically complete sentences in your notes, marks under &lsquo;Content&rsquo; and &lsquo;Format&rsquo; are severely docked. Eliminate auxiliary verbs, articles (a, an, the), and filler conjunctions.
+      </p>
     </div>
-    <b>1. First Main Heading</b><br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;1.1 Sub-point one (using abbrev.)<br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;1.2 Sub-point two<br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.2.1 Sub-sub point (optional)<br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;1.3 Sub-point three<br/><br/>
-    <b>2. Second Main Heading</b><br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;2.1 Primary cause / factor<br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;2.2 Secondary effect / manifestation<br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;2.3 Associated data / stats (&amp;, %, &uarr;)<br/><br/>
-    <b>3. Third Main Heading</b><br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;3.1 Remedy / solution suggested<br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;3.2 Preventative protocol<br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;3.3 Future perspective<br/><br/>
-    <div style="border: 1.5px solid rgba(255, 81, 47, 0.6); border-radius: 6px; padding: 10px; margin-top: 10px; background: rgba(0,0,0,0.3);">
-      <b style="color: #FF512F;">Key to Abbreviations:</b><br/>
-      &bull; govt. = government &nbsp;&nbsp;&bull; devpt. = development<br/>
-      &bull; info. = information &nbsp;&nbsp;&bull; &amp; = and<br/>
-      &bull; conc. = concentration &bull; &rarr; = leads to
+
+    <div style="background: rgba(255, 81, 47, 0.06); border-left: 4px solid #FF512F; padding: 14px 18px; border-radius: 6px;">
+      <b style="color: #FF512F; font-size: 16px;">(ii) Logical Indentation &amp; Numbering Hierarchy:</b>
+      <p style="margin: 6px 0 0 0; color: #FFFFFF;">
+        Visual indentation must clearly establish subordinate relationships between ideas. A main topic sits flush against the left boundary, while sub-points are indented inward by 4&ndash;5 character spaces. Sub-sub points are indented even deeper. The decimal system (1., 1.1, 1.2, 1.2.1) is universally preferred by board evaluators.
+      </p>
+    </div>
+
+    <div style="background: rgba(255, 81, 47, 0.06); border-left: 4px solid #FF512F; padding: 14px 18px; border-radius: 6px;">
+      <b style="color: #FF512F; font-size: 16px;">(iii) Mandatory Key to Abbreviations (Inside a Box):</b>
+      <p style="margin: 6px 0 0 0; color: #FFFFFF;">
+        You must employ a minimum of 4 to 6 abbreviations, contractions, and mathematical/graphical symbols across your notes. At the end of the notes, you must draw a distinct rectangular box titled <b>&lsquo;Key to Abbreviations&rsquo;</b> listing every abbreviation alongside its complete expansion. Missing this box guarantees a loss of 1 full mark.
+      </p>
+    </div>
+
+    <div style="background: rgba(255, 81, 47, 0.06); border-left: 4px solid #FF512F; padding: 14px 18px; border-radius: 6px;">
+      <b style="color: #FF512F; font-size: 16px;">(iv) Title Precision &amp; Chunking:</b>
+      <p style="margin: 6px 0 0 0; color: #FFFFFF;">
+        Always read the first and last paragraphs carefully to extract the central theme for your Title. Divide the passage into 3 to 4 logical thematic chunks. Each chunk receives a crisp Main Heading (3&ndash;5 words), followed by 2 to 4 informative sub-points.
+      </p>
     </div>
   </div>
 
-  <!-- Section 3: Summary Writing Blueprint -->
-  <h2 style="color: #FF512F; font-size: 20px; font-weight: 800; border-bottom: 1.5px solid rgba(255, 81, 47, 0.4); padding-bottom: 6px; margin: 28px 0 14px 0;">
-    3. The Art of Summarizing (The 50-Word Rule)
+  <!-- Section 2: Universal Architecture Templates -->
+  <h2 style="color: #FF512F; font-size: 20px; font-weight: 800; border-bottom: 2px solid #FF512F; padding-bottom: 6px; margin: 35px 0 16px 0;">
+    2. Universal Structural Architecture Templates
+  </h2>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; margin: 18px 0;">
+    <!-- Decimal System -->
+    <div style="background: #111B27; border: 1.5px solid #FF512F; border-radius: 10px; padding: 18px; font-family: 'Courier New', Courier, monospace; font-size: 13.5px; line-height: 1.6;">
+      <div style="color: #FF512F; font-weight: bold; font-size: 15px; margin-bottom: 8px; text-align: center;">
+        STANDARD DECIMAL SYSTEM (RECOMMENDED)
+      </div>
+      <div style="text-align: center; color: #FFD54F; font-weight: bold; margin-bottom: 12px;">
+        [TITLE: SUITABLE CENTRAL HEADING]
+      </div>
+      <b>1. First Main Heading</b><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;1.1 First sub-point with abbrev.<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;1.2 Second sub-point (factual data)<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.2.1 Sub-sub point (cause/detail)<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;1.3 Third sub-point<br/><br/>
+      <b>2. Second Main Heading</b><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;2.1 Primary driving factor (&amp;, &rarr;)<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;2.2 Secondary manifestation<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;2.3 Observed statistical trend (% / &uarr;)<br/><br/>
+      <b>3. Third Main Heading</b><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;3.1 Proposed remediation protocol<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;3.2 Community &amp; govt. action<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;3.3 Long-term projection
+    </div>
+
+    <!-- Alphanumeric System -->
+    <div style="background: #111B27; border: 1.5px dashed rgba(255, 81, 47, 0.6); border-radius: 10px; padding: 18px; font-family: 'Courier New', Courier, monospace; font-size: 13.5px; line-height: 1.6;">
+      <div style="color: #FFA07A; font-weight: bold; font-size: 15px; margin-bottom: 8px; text-align: center;">
+        ALPHANUMERIC SYSTEM (ALTERNATIVE)
+      </div>
+      <div style="text-align: center; color: #FFD54F; font-weight: bold; margin-bottom: 12px;">
+        [TITLE: SUITABLE CENTRAL HEADING]
+      </div>
+      <b>I. First Main Heading</b><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;A. Key characteristic trait<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;B. Underlying biological/social base<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i. Intrinsic mechanism<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;C. Associated outcome<br/><br/>
+      <b>II. Second Main Heading</b><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;A. Empirical consequences noted<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;B. Economic &amp; behavioral impacts<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;C. Vulnerable demographic groups<br/><br/>
+      <b>III. Third Main Heading</b><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;A. Preventative guidelines<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;B. Structural legislative policy<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;C. Future roadmap
+    </div>
+  </div>
+
+  <!-- Section 3: Master Abbreviation & Symbols Table -->
+  <h2 style="color: #FF512F; font-size: 20px; font-weight: 800; border-bottom: 2px solid #FF512F; padding-bottom: 6px; margin: 35px 0 16px 0;">
+    3. Master Abbreviations &amp; Symbols Reference Matrix
   </h2>
   <p>
-    The summary is a dense, cohesive single-paragraph condensation of the passage, strictly limited to approximately 50 words (or 1/3 of the original passage). It must be constructed exclusively from the notes prepared in Step 1.
+    Abbreviations must be genuine, readily recognizable contractions or universally acknowledged symbols. Never truncate words so radically that they turn into unintelligible gibberish.
   </p>
-  <ul style="color: #CBD5E1; padding-left: 20px; line-height: 1.7;">
-    <li><b style="color: #FF512F;">Rely Exclusively on Notes:</b> Do not read back into the original passage. Synthesize the summary directly by linking the subheadings and sub-points of your notes with logical sentence connectors.</li>
-    <li><b style="color: #FF512F;">Zero Abbreviations in Summary:</b> While notes demand abbreviations, the summary must be written in formal, complete, grammatically flawless English sentences.</li>
-    <li><b style="color: #FF512F;">Single Unified Paragraph:</b> Never split the summary into multiple paragraphs or bulleted lists.</li>
-    <li><b style="color: #FF512F;">Word Limit Adherence:</b> Stay strictly within 50 words. Exceeding 60 words risks penalties under board examination rubrics.</li>
-  </ul>
+
+  <div style="overflow-x: auto; margin: 18px 0;">
+    <table style="width: 100%; border-collapse: collapse; background: rgba(0,0,0,0.35); font-size: 14.5px;">
+      <thead>
+        <tr style="background: rgba(255, 81, 47, 0.2); color: #FF512F;">
+          <th style="border: 1px solid rgba(255, 81, 47, 0.4); padding: 10px; text-align: left;">Category</th>
+          <th style="border: 1px solid rgba(255, 81, 47, 0.4); padding: 10px; text-align: left;">Method / Rule</th>
+          <th style="border: 1px solid rgba(255, 81, 47, 0.4); padding: 10px; text-align: left;">Approved Exam Examples</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="border: 1px solid rgba(255,255,255,0.1); padding: 9px; font-weight: bold; color: #FFA07A;">Contraction</td>
+          <td style="border: 1px solid rgba(255,255,255,0.1); padding: 9px;">First few and last letters of word</td>
+          <td style="border: 1px solid rgba(255,255,255,0.1); padding: 9px;">govt. (government), dept. (department), devpt. (development), mfg. (manufacturing)</td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid rgba(255,255,255,0.1); padding: 9px; font-weight: bold; color: #FFA07A;">Truncation</td>
+          <td style="border: 1px solid rgba(255,255,255,0.1); padding: 9px;">First 3 to 4 letters with period</td>
+          <td style="border: 1px solid rgba(255,255,255,0.1); padding: 9px;">info. (information), educ. (education), pop. (population), max. (maximum), min. (minimum)</td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid rgba(255,255,255,0.1); padding: 9px; font-weight: bold; color: #FFA07A;">Acronyms</td>
+          <td style="border: 1px solid rgba(255,255,255,0.1); padding: 9px;">Capitalized first letters of compound terms</td>
+          <td style="border: 1px solid rgba(255,255,255,0.1); padding: 9px;">UNESCO, WHO, AI, NEP, NCERT, NASA, GDP, GHG (greenhouse gases)</td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid rgba(255,255,255,0.1); padding: 9px; font-weight: bold; color: #FFA07A;">Universal Symbols</td>
+          <td style="border: 1px solid rgba(255,255,255,0.1); padding: 9px;">Mathematical &amp; directional shorthand</td>
+          <td style="border: 1px solid rgba(255,255,255,0.1); padding: 9px;">&amp; (and), % (percentage), &rarr; (leads to / causes), &uarr; (increases / rises), &darr; (decreases / falls), = (equals / stands for)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Section 4: The Art of Summarizing -->
+  <h2 style="color: #FF512F; font-size: 20px; font-weight: 800; border-bottom: 2px solid #FF512F; padding-bottom: 6px; margin: 35px 0 16px 0;">
+    4. The Art of Summarizing (The Strict 50-Word Rule)
+  </h2>
+  <p>
+    The Summary is an elegant, highly synthesized distillation of the passage constructed <b>exclusively from your prepared notes</b>. It carries 3 marks (Content: 2 Marks, Expression: 1 Mark).
+  </p>
+
+  <div style="background: rgba(15, 23, 42, 0.85); border-left: 4px solid #FF512F; border-radius: 6px; padding: 14px 18px; margin: 18px 0;">
+    <h4 style="color: #FF512F; margin: 0 0 8px 0; font-size: 16px;">The 4 Cardinal Rules of Summary Writing:</h4>
+    <ul style="margin: 0; padding-left: 20px; color: #CBD5E1; line-height: 1.75;">
+      <li><b style="color: #FF512F;">Never Refer Back to the Original Passage:</b> Do not look at the passage when drafting your summary. Look only at your notes. Combine your main headings and sub-points into connected sentences.</li>
+      <li><b style="color: #FF512F;">Zero Abbreviations in Summary:</b> While notes strictly require abbreviations, the summary must be written in grammatically flawless, complete formal English sentences.</li>
+      <li><b style="color: #FF512F;">Single Unified Paragraph:</b> Never split the summary into bullet points or multiple paragraphs. Write exactly one dense, continuous prose paragraph.</li>
+      <li><b style="color: #FF512F;">Strict Word Limit (~50 Words):</b> The ideal length is 45 to 55 words. Breaching 60 words risks penalties under the board rubric for expression.</li>
+    </ul>
+  </div>
+
+  <!-- Section 5: Common Pitfalls Box -->
+  <div style="background: rgba(255, 82, 82, 0.08); border-left: 4px solid #FF5252; padding: 16px; border-radius: 6px; margin: 30px 0;">
+    <h3 style="color: #FF5252; margin: 0 0 8px 0; font-size: 17px; font-weight: bold;">⚠️ Critical Board Exam Pitfalls &amp; Penalties:</h3>
+    <ul style="margin: 0; padding-left: 20px; color: #FFFFFF; font-size: 14.5px; line-height: 1.7;">
+      <li><b>Forgetting to Box the Key to Abbreviations:</b> Evaluators strictly look for the enclosed box. Drawing the box takes 10 seconds; omitting it loses 1 full mark.</li>
+      <li><b>Writing Vague, One-Word Headings:</b> Headings like <i>"Introduction"</i>, <i>"Information"</i>, or <i>"Conclusion"</i> are too generic and receive zero marks. Use descriptive topic phrases like <i>"Causes of Glacial Retreat"</i> or <i>"Cognitive Hazards of Screen Addiction"</i>.</li>
+      <li><b>Copying Whole Sentences into Notes:</b> If your notes contain sentences ending with full stops and verbs like <i>"is"</i>, <i>"was"</i>, or <i>"have been"</i>, you lose marks immediately.</li>
+      <li><b>Using Slang / SMS Shorthand:</b> Never write chat abbreviations like <i>"u"</i>, <i>"plz"</i>, <i>"thx"</i>, or <i>"bcoz"</i>. Use standardized academic contractions only.</li>
+    </ul>
+  </div>
 
 </div>
 `;
 
 export const c12EngW1HtmlSolutions = `
-<div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.65; color: #E2E8F0; max-width: 950px; margin: 0 auto; padding: 12px;">
+<style>
+  p, li, div:not(.table-container):not(.table-responsive):not(.pt-scroll-wrapper):not(.mcq-option) {
+    text-align: justify !important;
+  }
+  h1, h2, h3, h4, h5, h6 { text-align: left; }
+  .text-center { text-align: center !important; }
+  .text-left { text-align: left !important; }
+</style>
 
-  <!-- Section A: Fully Solved High-Frequency Board Exemplar 1 -->
-  <h2 style="color: #FF512F; font-size: 20px; font-weight: 800; border-bottom: 1.5px solid rgba(255, 81, 47, 0.4); padding-bottom: 6px; margin: 24px 0 16px 0;">
-    Section A: Board Solved Exemplar 1 (Environmental Science &amp; Global Warming)
-  </h2>
+<div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.75; color: #E2E8F0; max-width: 950px; margin: 0 auto; padding: 12px; font-size: 15.5px;">
 
-  <div style="background: rgba(15, 23, 42, 0.85); border-left: 4px solid #FF512F; border-radius: 6px; padding: 14px; margin-bottom: 20px;">
-    <p style="font-style: italic; color: #F1F5F9; margin: 0 0 10px 0;">
-      <b>Passage Prompt:</b> Read the passage on the catastrophic decline of freshwater resources and rising global temperatures due to anthropogenic emissions, industrial urbanization, and glacial depletion. Make notes using abbreviations and prepare a 50-word summary.
+  <div style="background: rgba(255, 81, 47, 0.06); border: 1.5px solid #FF512F; border-radius: 12px; padding: 18px; margin-bottom: 25px; text-align: center;">
+    <h2 style="color: #FF512F; margin: 0 0 6px 0; font-size: 20px; font-weight: bold;">📚 High-Scoring Board Exemplars &amp; Model Notes</h2>
+    <p style="color: #FFA07A; margin: 0; font-size: 14.5px;">5 Comprehensive Board Solved Passages (Notes + Key Box + 50-Word Summary) + Practice Bank</p>
+  </div>
+
+  <!-- EXEMPLAR 1 -->
+  <div style="margin: 25px 0;">
+    <h3 style="color: #FF512F; margin-bottom: 8px;">Exemplar 1: Global Freshwater Crisis &amp; Glacial Depletion</h3>
+    <p style="color: #CBD5E1; font-size: 14px; margin-bottom: 12px;">
+      <b>Passage Context:</b> Anthropogenic carbon emissions and industrial urbanization have accelerated polar and Himalayan glacial retreat, depleting global freshwater reservoirs and threatening food security for over two billion people worldwide.
     </p>
 
-    <div style="background: rgba(0,0,0,0.3); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 6px; padding: 14px; margin: 12px 0;">
-      <h3 style="text-align: center; color: #FF512F; font-size: 16px; margin: 0 0 10px 0;">
+    <div style="background: #111B27; border: 1.5px solid #FF512F; border-radius: 8px; padding: 18px; box-shadow: 0 4px 18px rgba(0,0,0,0.35); font-family: 'Courier New', Courier, monospace; font-size: 14px;">
+      <div style="text-align: center; font-weight: 800; font-size: 16px; color: #FFD54F; margin-bottom: 12px;">
         Title: Global Freshwater Crisis &amp; Glacial Depletion
-      </h3>
-      <b>1. Causes of Freshwater Depletion</b><br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;1.1 Indiscriminate indust. urbanization<br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;1.2 Rampant emission of GHG &rarr; temp. rise<br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;1.3 Over-exploitation of groundwtr. tables<br/><br/>
+      </div>
+      <b>1. Primary Drivers of Water Scarcity</b><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;1.1 Indiscrim. indust. urbanization &amp; effluent dumping<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;1.2 Rampant GHG emissions &rarr; global temp. rise (&uarr; 1.5&deg;C)<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;1.3 Over-extraction of underground aquifers<br/><br/>
 
-      <b>2. Glacial Retreat &amp; Planetary Effects</b><br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;2.1 Accelerated melting of polar ice caps<br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;2.2 Rising ocean levels threatening coastal areas<br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;2.3 Disruption of agr. irrigation cycles<br/><br/>
+      <b>2. Glacial Retreat &amp; Planetary Consequences</b><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;2.1 Accelerated melting of polar ice sheets<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;2.2 Depletion of perennial river basins (Ganges, Indus, Mekong)<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;2.3 Disruption of agr. irrigation cycles &rarr; food insecurity<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;2.4 Rising sea levels inundating coastal ecosystems<br/><br/>
 
-      <b>3. Mitigation &amp; Conservation Protocols</b><br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;3.1 Rainwtr. harvesting in urban zones<br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;3.2 Transition to renew. energy sources<br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;3.3 Strict govt. regulations on effluent disposal<br/><br/>
+      <b>3. Strategic Remediation Protocols</b><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;3.1 Mandatory rainwater harvesting in urban zones<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;3.2 Rapid transition to clean renew. energy sources<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;3.3 Strict govt. environmental norms &amp; effluent audits<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;3.4 Community water stewardship &amp; drip irrigation<br/><br/>
 
-      <div style="border: 1px solid #FF512F; border-radius: 4px; padding: 8px; margin-top: 8px; background: rgba(15, 23, 42, 0.8);">
+      <div style="border: 1.5px solid #FF512F; border-radius: 6px; padding: 10px; margin-top: 10px; background: rgba(15, 23, 42, 0.85);">
         <b style="color: #FF512F;">Key to Abbreviations:</b><br/>
-        &bull; indust. = industrial &nbsp;&nbsp;&bull; GHG = greenhouse gases<br/>
-        &bull; groundwtr. = groundwater &bull; temp. = temperature<br/>
-        &bull; agr. = agricultural &nbsp;&nbsp;&bull; renew. = renewable<br/>
-        &bull; &rarr; = leads to &nbsp;&nbsp;&bull; govt. = government
+        &bull; indiscrim. = indiscriminate &nbsp;&bull; indust. = industrial<br/>
+        &bull; GHG = greenhouse gases &nbsp;&nbsp;&nbsp;&nbsp;&bull; temp. = temperature<br/>
+        &bull; &uarr; = rising / exceeding &nbsp;&nbsp;&nbsp;&bull; agr. = agricultural<br/>
+        &bull; renew. = renewable &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; govt. = government<br/>
+        &bull; &rarr; = leads to &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; &amp; = and
       </div>
     </div>
 
-    <div style="background: rgba(255, 81, 47, 0.08); border-left: 3px solid #FF512F; padding: 10px 14px; border-radius: 4px; margin-top: 14px;">
-      <b style="color: #FF512F;">Summary (Approx. 50 Words):</b><br/>
-      Rapid industrial urbanization and rising greenhouse gas emissions are driving severe global freshwater depletion and accelerated polar glacial melt. Rising oceans threaten coastlines, while erratic water supplies disrupt agriculture. Mitigating this planetary catastrophe demands widespread rainwater harvesting, adopting renewable energy sources, and enforcing stringent government effluent control laws.
+    <div style="background: rgba(255, 81, 47, 0.08); border-left: 4px solid #FF512F; padding: 12px 16px; border-radius: 6px; margin-top: 14px;">
+      <b style="color: #FF512F; font-size: 15px;">Summary (Strictly 50 Words):</b><br/>
+      <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.65;">
+        Rampant industrial urbanization and rising greenhouse gas emissions are accelerating polar glacial retreat and depleting vital subterranean aquifers. This freshwater crisis disrupts river basins and agricultural food production worldwide. Averting planetary catastrophe requires widespread urban rainwater harvesting, transitioning to renewable energy, enforcing stringent government effluent laws, and adopting modern drip irrigation.
+      </p>
     </div>
   </div>
 
-  <!-- Section B: Board Solved Exemplar 2 -->
-  <h2 style="color: #FF512F; font-size: 20px; font-weight: 800; border-bottom: 1.5px solid rgba(255, 81, 47, 0.4); padding-bottom: 6px; margin: 28px 0 16px 0;">
-    Section B: Board Solved Exemplar 2 (Cognitive Psychology &amp; Digital Distraction)
-  </h2>
-
-  <div style="background: rgba(15, 23, 42, 0.85); border-left: 4px solid #FF512F; border-radius: 6px; padding: 14px; margin-bottom: 20px;">
-    <p style="font-style: italic; color: #F1F5F9; margin: 0 0 10px 0;">
-      <b>Passage Prompt:</b> Read the passage examining the impact of excessive smartphone usage, algorithm notifications, and shortened attention spans on student academic productivity. Prepare notes and a summary.
+  <!-- EXEMPLAR 2 -->
+  <div style="margin: 30px 0;">
+    <h3 style="color: #FF512F; margin-bottom: 8px;">Exemplar 2: Digital Screen Addiction &amp; Adolescent Cognitive Distraction</h3>
+    <p style="color: #CBD5E1; font-size: 14px; margin-bottom: 12px;">
+      <b>Passage Context:</b> Pervasive smartphone usage, continuous notification pings, and algorithmic social media feeds cause profound cognitive fragmentation, attention span erosion, and adolescent anxiety disorders.
     </p>
 
-    <div style="background: rgba(0,0,0,0.3); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 6px; padding: 14px; margin: 12px 0;">
-      <h3 style="text-align: center; color: #FF512F; font-size: 16px; margin: 0 0 10px 0;">
-        Title: Digital Distraction &amp; Cognitive Decline in Youth
-      </h3>
-      <b>1. Factors Fueling Screen Addiction</b><br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;1.1 Relentless app notifs. triggering dopamine<br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;1.2 Compulsive scrolling on social media<br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;1.3 FOMO (fear of missing out)<br/><br/>
+    <div style="background: #111B27; border: 1.5px solid #FF512F; border-radius: 8px; padding: 18px; box-shadow: 0 4px 18px rgba(0,0,0,0.35); font-family: 'Courier New', Courier, monospace; font-size: 14px;">
+      <div style="text-align: center; font-weight: 800; font-size: 16px; color: #FFD54F; margin-bottom: 12px;">
+        Title: Digital Screen Addiction &amp; Cognitive Fragmentation
+      </div>
+      <b>1. Causes of Compulsive Smartphone Dependency</b><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;1.1 Algorithmic social media dopamine feedback loops<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;1.2 Continuous digital notifs. &amp; FOMO psychological pressure<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;1.3 Unsupervised teenage device access &amp; screen immersion<br/><br/>
 
-      <b>2. Cognitive &amp; Psychological Impact</b><br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;2.1 Fragmentation of focus &amp; attentn. span<br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;2.2 Impaired deep reading &amp; retention<br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;2.3 Heightened anxiety &amp; sleep deficit<br/><br/>
+      <b>2. Neuro-Cognitive &amp; Psychological Fallouts</b><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;2.1 Severe attentn. span erosion (&darr; to 8 seconds)<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;2.2 Impaired deep reading comprehension &amp; memory retentn.<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;2.3 Disrupted sleep cycles caused by blue-light emission<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;2.4 Spiking adolescent anxiety, depression &amp; social isolation<br/><br/>
 
-      <b>3. Restorative Interventions</b><br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;3.1 Scheduled digital detox intervals<br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;3.2 Mindfulness &amp; offline reading habits<br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;3.3 Strict device-free bedroom policy<br/><br/>
+      <b>3. Restorative Interventions &amp; Digital Hygiene</b><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;3.1 Scheduled digital detox weekends &amp; screen-free zones<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;3.2 Cultivating focused offline book-reading habits<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;3.3 Engaging in outdoor sports &amp; face-to-face social bonds<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;3.4 Parental modeling of disciplined technology habits<br/><br/>
 
-      <div style="border: 1px solid #FF512F; border-radius: 4px; padding: 8px; margin-top: 8px; background: rgba(15, 23, 42, 0.8);">
+      <div style="border: 1.5px solid #FF512F; border-radius: 6px; padding: 10px; margin-top: 10px; background: rgba(15, 23, 42, 0.85);">
         <b style="color: #FF512F;">Key to Abbreviations:</b><br/>
-        &bull; notifs. = notifications &nbsp;&bull; attentn. = attention<br/>
-        &bull; &amp; = and &nbsp;&nbsp;&bull; FOMO = fear of missing out<br/>
-        &bull; dev. = device &nbsp;&nbsp;&bull; retentn. = retention
+        &bull; notifs. = notifications &nbsp;&bull; FOMO = fear of missing out<br/>
+        &bull; attentn. = attention &nbsp;&nbsp;&bull; &darr; = reduced / diminished<br/>
+        &bull; retentn. = retention &nbsp;&nbsp;&bull; &amp; = and<br/>
+        &bull; tech. = technology
       </div>
     </div>
 
-    <div style="background: rgba(255, 81, 47, 0.08); border-left: 3px solid #FF512F; padding: 10px 14px; border-radius: 4px; margin-top: 14px;">
-      <b style="color: #FF512F;">Summary (Approx. 50 Words):</b><br/>
-      Compulsive smartphone scrolling and persistent app notifications fragment adolescent concentration, damaging deep reading comprehension and long-term memory retention. This digital addiction elevates anxiety and produces chronic sleep deficits. Restoring cognitive health requires institutionalizing regular digital detoxes, cultivating focused offline reading habits, and enforcing strict device-free sleep zones.
+    <div style="background: rgba(255, 81, 47, 0.08); border-left: 4px solid #FF512F; padding: 12px 16px; border-radius: 6px; margin-top: 14px;">
+      <b style="color: #FF512F; font-size: 15px;">Summary (Strictly 50 Words):</b><br/>
+      <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.65;">
+        Algorithmic social media feeds and incessant notifications trigger acute smartphone dependency among adolescents. This digital immersion drastically reduces attention spans, impedes memory retention, disrupts sleep rhythms, and fuels psychological distress. Reclaiming cognitive well-being necessitates structured digital detoxes, reviving offline reading routines, actively participating in physical sports, and fostering genuine personal interactions.
+      </p>
     </div>
   </div>
 
-  <!-- Section C: Board Solved Exemplar 3 -->
-  <h2 style="color: #FF512F; font-size: 20px; font-weight: 800; border-bottom: 1.5px solid rgba(255, 81, 47, 0.4); padding-bottom: 6px; margin: 28px 0 16px 0;">
-    Section C: Board Solved Exemplar 3 (Traditional Indian Herbal Medicine)
-  </h2>
-
-  <div style="background: rgba(15, 23, 42, 0.85); border-left: 4px solid #FF512F; border-radius: 6px; padding: 14px; margin-bottom: 20px;">
-    <p style="font-style: italic; color: #F1F5F9; margin: 0 0 10px 0;">
-      <b>Passage Prompt:</b> Read the text on Ayurveda, indigenous medicinal herbs like Tulsi, Neem, and Turmeric, and the global resurgence of holistic wellness. Prepare notes and a summary.
+  <!-- EXEMPLAR 3 -->
+  <div style="margin: 30px 0;">
+    <h3 style="color: #FF512F; margin-bottom: 8px;">Exemplar 3: Artificial Intelligence in Modern Healthcare Diagnostics</h3>
+    <p style="color: #CBD5E1; font-size: 14px; margin-bottom: 12px;">
+      <b>Passage Context:</b> Advanced machine learning algorithms and neural networks are transforming radiological diagnostics, genomics, and personalized drug discovery while raising ethical dilemmas regarding patient data privacy.
     </p>
 
-    <div style="background: rgba(0,0,0,0.3); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 6px; padding: 14px; margin: 12px 0;">
-      <h3 style="text-align: center; color: #FF512F; font-size: 16px; margin: 0 0 10px 0;">
-        Title: Ayurveda &amp; The Global Holistic Health Revolution
-      </h3>
-      <b>1. Foundational Tenets of Ayurveda</b><br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;1.1 Harmonizing body, mind &amp; spirit<br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;1.2 Tridosha balance (Vata, Pitta, Kapha)<br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;1.3 Preventative healthcare over reactive cure<br/><br/>
+    <div style="background: #111B27; border: 1.5px solid #FF512F; border-radius: 8px; padding: 18px; box-shadow: 0 4px 18px rgba(0,0,0,0.35); font-family: 'Courier New', Courier, monospace; font-size: 14px;">
+      <div style="text-align: center; font-weight: 800; font-size: 16px; color: #FFD54F; margin-bottom: 12px;">
+        Title: Artificial Intelligence in Clinical Healthcare &amp; Diagnostics
+      </div>
+      <b>1. Diagnostic Breakthroughs via AI Integration</b><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;1.1 Deep-learning scans detecting early-stage malignancies<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;1.2 Real-time automated ECG &amp; radiological image analysis<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;1.3 Genomic sequencing &amp; personalized oncology therapies<br/><br/>
 
-      <b>2. Potency of Indigenous Herbs</b><br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;2.1 Tulsi: immunity booster &amp; respiratory tonic<br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;2.2 Neem: antibacterial &amp; blood purifier<br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;2.3 Turmeric: anti-inflamm. curcumin properties<br/><br/>
+      <b>2. Operational &amp; Clinical Benefits</b><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;2.1 Dramatic reduction in diagnostic error rates (&darr; by 40%)<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;2.2 Faster drug discov. &amp; protein-folding simulations<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;2.3 Telemedicine access for remote &amp; rural populations<br/><br/>
 
-      <b>3. Worldwide Recognition &amp; Future Potential</b><br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;3.1 Surge in global organic exports<br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;3.2 Scientif. validation of herbal pharmacology<br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;3.3 Integration into mainstream clinical wellness<br/><br/>
+      <b>3. Critical Ethical &amp; Regulatory Challenges</b><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;3.1 Vulnerability of confidential patient electronic health data<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;3.2 Algorithmic bias resulting from non-representative datasets<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;3.3 Legal liability dilemmas in autonomous clinical decisions<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;3.4 Need for rigorous internat. regulatory frameworks<br/><br/>
 
-      <div style="border: 1px solid #FF512F; border-radius: 4px; padding: 8px; margin-top: 8px; background: rgba(15, 23, 42, 0.8);">
+      <div style="border: 1.5px solid #FF512F; border-radius: 6px; padding: 10px; margin-top: 10px; background: rgba(15, 23, 42, 0.85);">
         <b style="color: #FF512F;">Key to Abbreviations:</b><br/>
-        &bull; &amp; = and &nbsp;&nbsp;&bull; anti-inflamm. = anti-inflammatory<br/>
-        &bull; scientif. = scientific &bull; herbs = herbal extracts<br/>
-        &bull; prop. = properties
+        &bull; AI = Artificial Intelligence &bull; ECG = electrocardiogram<br/>
+        &bull; discov. = discovery &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; &darr; = reduced / decreased<br/>
+        &bull; internat. = international &nbsp;&nbsp;&bull; &amp; = and
       </div>
     </div>
 
-    <div style="background: rgba(255, 81, 47, 0.08); border-left: 3px solid #FF512F; padding: 10px 14px; border-radius: 4px; margin-top: 14px;">
-      <b style="color: #FF512F;">Summary (Approx. 50 Words):</b><br/>
-      Ayurveda emphasizes holistic balance among body, mind, and spirit through personalized tridosha equilibrium. Potent medicinal herbs like Tulsi, Neem, and Turmeric deliver verified antibacterial and anti-inflammatory benefits without toxic side effects. As modern pharmacology scientifically validates traditional remedies, Ayurvedic wellness is gaining unprecedented global integration into mainstream preventive healthcare.
+    <div style="background: rgba(255, 81, 47, 0.08); border-left: 4px solid #FF512F; padding: 12px 16px; border-radius: 6px; margin-top: 14px;">
+      <b style="color: #FF512F; font-size: 15px;">Summary (Strictly 50 Words):</b><br/>
+      <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.65;">
+        Artificial intelligence is revolutionizing healthcare diagnostics by detecting early malignancies, analyzing complex medical scans, and accelerating personalized genomic therapies. While significantly slashing clinical error rates and expanding remote healthcare accessibility, AI deployment presents serious ethical hurdles regarding data privacy and algorithmic bias. Safeguarding patient welfare requires robust international regulatory oversight and accountability.
+      </p>
+    </div>
+  </div>
+
+  <!-- EXEMPLAR 4 -->
+  <div style="margin: 30px 0;">
+    <h3 style="color: #FF512F; margin-bottom: 8px;">Exemplar 4: Traditional Ayurveda &amp; The Holistic Health Revolution</h3>
+    <p style="color: #CBD5E1; font-size: 14px; margin-bottom: 12px;">
+      <b>Passage Context:</b> Ancient Indian Ayurveda, focusing on Tridosha equilibrium, natural botanical remedies, and preventive wellness, is witnessing a massive scientific resurgence across global healthcare systems.
+    </p>
+
+    <div style="background: #111B27; border: 1.5px solid #FF512F; border-radius: 8px; padding: 18px; box-shadow: 0 4px 18px rgba(0,0,0,0.35); font-family: 'Courier New', Courier, monospace; font-size: 14px;">
+      <div style="text-align: center; font-weight: 800; font-size: 16px; color: #FFD54F; margin-bottom: 12px;">
+        Title: Ayurveda &amp; The Global Holistic Health Resurgence
+      </div>
+      <b>1. Core Philosophical Foundations</b><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;1.1 Harmonization of body, mind &amp; spirit<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;1.2 Tridosha equilibrium (Vata, Pitta, Kapha)<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;1.3 Preventive lifestyle wellness over reactive cure<br/><br/>
+
+      <b>2. Therapeutic Potency of Indigenous Herbs</b><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;2.1 Tulsi: adaptogenic immunity booster &amp; respiratory tonic<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;2.2 Neem: natural antibacterial &amp; blood-purifying agent<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;2.3 Turmeric: anti-inflamm. curcumin properties<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;2.4 Ashwagandha: neuro-protective &amp; stress-reducing herb<br/><br/>
+
+      <b>3. Scientific Validation &amp; Worldwide Integration</b><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;3.1 Clinical trials validating botanical pharmacology<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;3.2 Booming internat. market for organic herbal remedies<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;3.3 Synergistic blend of traditional wisdom &amp; modern medicine<br/><br/>
+
+      <div style="border: 1.5px solid #FF512F; border-radius: 6px; padding: 10px; margin-top: 10px; background: rgba(15, 23, 42, 0.85);">
+        <b style="color: #FF512F;">Key to Abbreviations:</b><br/>
+        &bull; anti-inflamm. = anti-inflammatory<br/>
+        &bull; internat. = international &bull; &amp; = and<br/>
+        &bull; scientif. = scientific &nbsp;&nbsp;&bull; herbs = herbal extracts
+      </div>
+    </div>
+
+    <div style="background: rgba(255, 81, 47, 0.08); border-left: 4px solid #FF512F; padding: 12px 16px; border-radius: 6px; margin-top: 14px;">
+      <b style="color: #FF512F; font-size: 15px;">Summary (Strictly 50 Words):</b><br/>
+      <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.65;">
+        Ayurveda prioritizes holistic mental and physical equilibrium through balanced lifestyle practices and constitutional harmony. Potent indigenous herbs like Tulsi, Neem, Turmeric, and Ashwagandha offer proven anti-inflammatory and stress-alleviating therapeutics without adverse side effects. Supported by modern pharmacological validation, Ayurvedic medicine is gaining worldwide acceptance as an indispensable complement to conventional preventive healthcare.
+      </p>
+    </div>
+  </div>
+
+  <!-- EXEMPLAR 5 -->
+  <div style="margin: 30px 0;">
+    <h3 style="color: #FF512F; margin-bottom: 8px;">Exemplar 5: Preserving Endangered Indigenous Languages &amp; Tribal Lore</h3>
+    <p style="color: #CBD5E1; font-size: 14px; margin-bottom: 12px;">
+      <b>Passage Context:</b> Globalization and linguistic homogenization threaten thousands of indigenous oral languages, erasing irreplaceable ecological knowledge, folklore, and cultural biodiversity.
+    </p>
+
+    <div style="background: #111B27; border: 1.5px solid #FF512F; border-radius: 8px; padding: 18px; box-shadow: 0 4px 18px rgba(0,0,0,0.35); font-family: 'Courier New', Courier, monospace; font-size: 14px;">
+      <div style="text-align: center; font-weight: 800; font-size: 16px; color: #FFD54F; margin-bottom: 12px;">
+        Title: Preserving Endangered Indigenous Languages &amp; Oral Lore
+      </div>
+      <b>1. Crisis of Vanishing Indigenous Tongues</b><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;1.1 Extinction of an indigenous dialect every 14 days<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;1.2 Dominance of global commercial languages in schooling<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;1.3 Youth migration to urban centers &rarr; linguistic erosion<br/><br/>
+
+      <b>2. Irreplaceable Value of Tribal Knowledge</b><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;2.1 Unwritten botanical &amp; pharmacolog. biodiversity records<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;2.2 Rich oral folklore, ancestral mythologies &amp; proverbs<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;2.3 Unique cultural worldviews &amp; sustainable ecological practices<br/><br/>
+
+      <b>3. Conservation &amp; Revitalization Strategies</b><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;3.1 Digital audio-visual archiving of tribal storytellers<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;3.2 Mother-tongue bilingual instruction in primary schools<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;3.3 Community cultural centers &amp; institutional grants<br/><br/>
+
+      <div style="border: 1.5px solid #FF512F; border-radius: 6px; padding: 10px; margin-top: 10px; background: rgba(15, 23, 42, 0.85);">
+        <b style="color: #FF512F;">Key to Abbreviations:</b><br/>
+        &bull; dialect = dialectal speech &bull; pharmacolog. = pharmacological<br/>
+        &bull; &rarr; = causes / leads to &nbsp;&bull; &amp; = and<br/>
+        &bull; doc. = documentation &nbsp;&nbsp;&nbsp;&bull; educ. = educational
+      </div>
+    </div>
+
+    <div style="background: rgba(255, 81, 47, 0.08); border-left: 4px solid #FF512F; padding: 12px 16px; border-radius: 6px; margin-top: 14px;">
+      <b style="color: #FF512F; font-size: 15px;">Summary (Strictly 50 Words):</b><br/>
+      <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.65;">
+        Rapid globalization and urban migration are accelerating the extinction of vulnerable indigenous languages. Their disappearance obliterates priceless oral folklores, traditional ecological wisdom, and botanical remedies preserved over centuries. Reversing this cultural loss requires comprehensive digital audio-visual documentation of tribal elders, community-led cultural revival, and integrating native languages into early childhood primary education.
+      </p>
+    </div>
+  </div>
+
+  <!-- PART B: BOARD EXAM PRACTICE BANK -->
+  <h2 style="color: #FF512F; font-size: 20px; font-weight: 800; border-bottom: 2px solid #FF512F; padding-bottom: 6px; margin: 35px 0 16px 0;">
+    Part B: Board Exam Practice Bank with Examiner Keys
+  </h2>
+
+  <div style="display: flex; flex-direction: column; gap: 18px; margin: 18px 0;">
+    <div style="background: rgba(0,0,0,0.25); border-left: 4px solid #FF512F; padding: 14px 18px; border-radius: 6px;">
+      <b style="color: #FF512F; font-size: 16px;">Practice Passage 1 (Renewable Solar Energy Revolution):</b>
+      <p style="margin: 6px 0; color: #FFFFFF;">
+        Read a 400-word passage detailing the international shift from fossil fuels to photovoltaic solar energy, decentralized rooftop micro-grids, battery storage bottlenecks, and governmental subsidies in developing countries. Prepare notes using abbreviations and draft a 50-word summary.
+      </p>
+      <span style="color: #FFA07A; font-size: 14px;">
+        <b>Examiner Evaluation Key:</b> Look for clear headings: (1) Impetus for Solar Transition, (2) Technological &amp; Storage Innovations, (3) Policy Incentives &amp; Economic Hurdles. Mandatory abbreviations: PV (photovoltaic), renew. (renewable), GW (gigawatt), batt. (battery), govt. (government).
+      </span>
+    </div>
+
+    <div style="background: rgba(0,0,0,0.25); border-left: 4px solid #FF512F; padding: 14px 18px; border-radius: 6px;">
+      <b style="color: #FF512F; font-size: 16px;">Practice Passage 2 (The Psychology of Procrastination &amp; Time Management):</b>
+      <p style="margin: 6px 0; color: #FFFFFF;">
+        Read a passage on the emotional root causes of chronic academic procrastination, fear of failure, the Pomodoro technique, and structured micro-deadlines for competitive exam aspirants. Prepare notes with indentation and write a concise summary.
+      </p>
+      <span style="color: #FFA07A; font-size: 14px;">
+        <b>Examiner Evaluation Key:</b> Notes must clearly avoid full sentences. Headings: (1) Psychological Triggers, (2) Detrimental Cognitive Effects, (3) Tactical Anti-Procrastination Methods. Abbreviations: psych. (psychological), acad. (academic), tech. (technique), min. (minutes).
+      </span>
+    </div>
+
+    <div style="background: rgba(0,0,0,0.25); border-left: 4px solid #FF512F; padding: 14px 18px; border-radius: 6px;">
+      <b style="color: #FF512F; font-size: 16px;">Practice Passage 3 (Urban Micro-Forests &amp; The Miyawaki Method):</b>
+      <p style="margin: 6px 0; color: #FFFFFF;">
+        Read a passage explaining the Miyawaki method of dense native urban afforestation, multi-layered biodiversity restoration, heat island mitigation, and carbon sequestration in congested modern metropolises. Prepare notes and a summary.
+      </p>
+      <span style="color: #FFA07A; font-size: 14px;">
+        <b>Examiner Evaluation Key:</b> Headings: (1) Miyawaki Afforestation Principles, (2) Environmental &amp; Climate Benefits, (3) Scalability in Urban Governance. Abbreviations: nat. (native), co2 (carbon dioxide), bio. (biodiversity), devpt. (development).
+      </span>
     </div>
   </div>
 
