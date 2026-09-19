@@ -110,9 +110,13 @@ export const JiguuLogo = memo(function JiguuLogo({
               subtitleTextStyle,
               isSmall && styles.subtitleTextSmall,
             ]}
+            numberOfLines={1}
+            adjustsFontSizeToFit
+            minimumFontScale={0.8}
+            maxFontSizeMultiplier={1.15}
           >
-            Learn Smart <Text style={[styles.dot, isSmall && styles.dotSmall]}>.</Text>{" "}
-            <Text style={[suffixStyle, isSmall && styles.subtitleTextSmall]}>
+            Learn Smart <Text style={[styles.dot, isSmall && styles.dotSmall]} maxFontSizeMultiplier={1.15}>.</Text>{" "}
+            <Text style={[suffixStyle, isSmall && styles.subtitleTextSmall]} maxFontSizeMultiplier={1.15}>
               {subtitleSuffix}
             </Text>
           </Text>

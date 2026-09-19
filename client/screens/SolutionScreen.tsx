@@ -214,6 +214,10 @@ const TabButton = memo(
             >
               <ThemedText
                 style={[styles.tabText, styles.tabTextActive, textStyle]}
+                numberOfLines={1}
+                adjustsFontSizeToFit
+                minimumFontScale={0.75}
+                maxFontSizeMultiplier={1.12}
               >
                 {title}
               </ThemedText>
@@ -221,7 +225,15 @@ const TabButton = memo(
             {isGlossy && <View style={styles.glossOverlay} />}
           </View>
         ) : (
-          <ThemedText style={[styles.tabText, textStyle]}>{title}</ThemedText>
+          <ThemedText
+            style={[styles.tabText, textStyle]}
+            numberOfLines={1}
+            adjustsFontSizeToFit
+            minimumFontScale={0.75}
+            maxFontSizeMultiplier={1.12}
+          >
+            {title}
+          </ThemedText>
         )}
       </Pressable>
     );
@@ -262,6 +274,10 @@ const SubTabButton = memo(
             >
               <ThemedText
                 style={[styles.tabText, styles.tabTextActive, textStyle]}
+                numberOfLines={1}
+                adjustsFontSizeToFit
+                minimumFontScale={0.78}
+                maxFontSizeMultiplier={1.12}
               >
                 {title}
               </ThemedText>
@@ -269,7 +285,15 @@ const SubTabButton = memo(
             {isGlossy && <View style={styles.glossOverlay} />}
           </View>
         ) : (
-          <ThemedText style={[styles.tabText, textStyle]}>{title}</ThemedText>
+          <ThemedText
+            style={[styles.tabText, textStyle]}
+            numberOfLines={1}
+            adjustsFontSizeToFit
+            minimumFontScale={0.78}
+            maxFontSizeMultiplier={1.12}
+          >
+            {title}
+          </ThemedText>
         )}
       </Pressable>
     );
@@ -1667,15 +1691,16 @@ const styles = StyleSheet.create({
   tabContainer: {
     flexDirection: "row",
     marginBottom: Spacing.sm,
-    marginHorizontal: Spacing.lg,
+    marginHorizontal: Spacing.md,
     backgroundColor: JiguuColors.surface,
     borderRadius: BorderRadius.full,
-    padding: Spacing.xs,
-    gap: Spacing.xs,
+    padding: 4,
+    gap: 4,
   },
   tabButton: {
     flex: 1,
-    height: 36,
+    minHeight: 38,
+    paddingHorizontal: 4,
     alignItems: "center",
     justifyContent: "center",
     borderRadius: BorderRadius.full,
@@ -1689,26 +1714,28 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     borderRadius: BorderRadius.full,
+    paddingHorizontal: 4,
   },
   tabText: {
     ...Typography.small,
     fontSize: 13,
-    fontFamily: "NotoSans_400Regular",
+    fontFamily: "NotoSans_500Medium",
     color: JiguuColors.textSecondary,
+    textAlign: "center",
   },
   tabTextActive: { color: "#fff" },
   subTabScroll: { flex: 1 },
   subTabContainer: {
-    paddingHorizontal: Spacing.lg,
-    gap: Spacing.sm,
+    paddingHorizontal: Spacing.md,
+    gap: Spacing.xs,
     alignItems: "center",
     justifyContent: "center",
     flexGrow: 1,
   },
   subTabButton: {
-    paddingVertical: 8,
-    paddingHorizontal: 28,
-    minWidth: 130,
+    paddingVertical: 6,
+    paddingHorizontal: 16,
+    minWidth: 90,
     alignItems: "center",
     borderRadius: BorderRadius.full,
     borderWidth: 1.5,

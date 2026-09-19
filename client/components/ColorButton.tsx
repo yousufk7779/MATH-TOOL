@@ -101,10 +101,18 @@ export const ColorButton = memo(function ColorButton({
           >
             {icon ? (
               <View style={styles.iconWrapper}>
-                <ThemedText style={styles.iconText}>{icon}</ThemedText>
+                <ThemedText style={styles.iconText} maxFontSizeMultiplier={1.12}>
+                  {icon}
+                </ThemedText>
               </View>
             ) : null}
-            <ThemedText style={styles.buttonText} numberOfLines={1}>
+            <ThemedText
+              style={[styles.buttonText, icon ? { paddingHorizontal: 36 } : null]}
+              numberOfLines={1}
+              adjustsFontSizeToFit
+              minimumFontScale={0.72}
+              maxFontSizeMultiplier={1.12}
+            >
               {title.replace(/ /g, "\u00A0")}
             </ThemedText>
           </View>
@@ -118,7 +126,7 @@ export const ColorButton = memo(function ColorButton({
 const styles = StyleSheet.create({
   buttonContainer: {
     width: "100%",
-    height: Spacing.buttonHeight + 4,
+    minHeight: Spacing.buttonHeight + 4,
     borderRadius: BorderRadius.xl,
     shadowOffset: { width: 0, height: 4 },
   },
@@ -134,7 +142,7 @@ const styles = StyleSheet.create({
     borderRadius: BorderRadius.xl - 2,
     borderWidth: 1.5,
     borderColor: "rgba(255,255,255,0.3)",
-    paddingHorizontal: 20,
+    paddingHorizontal: 12,
   },
   iconWrapper: {
     position: "absolute",

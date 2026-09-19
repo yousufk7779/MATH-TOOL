@@ -53,5 +53,30 @@ export const ThemedText = memo(function ThemedText({
     }
   }, [type]);
 
-  return <Text style={[{ color }, typeStyle, style]} {...rest} />;
+  const effectiveMaxFontSizeMultiplier = useMemo(() => {
+    if (rest.maxFontSizeMultiplier !== undefined) {
+      return rest.maxFontSizeMultiplier;
+    }
+    switch (type) {
+      case "h1":
+      case "h2":
+        return 1.15;
+      case "h3":
+      case "h4":
+        return 1.2;
+      case "small":
+      case "body":
+      case "link":
+      default:
+        return 1.25;
+    }
+  }, [rest.maxFontSizeMultiplier, type]);
+
+  return (
+    <Text
+      style={[{ color }, typeStyle, style]}
+      maxFontSizeMultiplier={effectiveMaxFontSizeMultiplier}
+      {...rest}
+    />
+  );
 });

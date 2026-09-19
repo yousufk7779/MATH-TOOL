@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet } from "react-native";
+import { StyleSheet, Text } from "react-native";
 import { NavigationContainer, DefaultTheme } from "@react-navigation/native";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { SafeAreaProvider } from "react-native-safe-area-context";
@@ -22,6 +22,12 @@ import { useUpdateCheck } from "@/hooks/useUpdateCheck";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 
 import { JiguuColors } from "@/constants/theme";
+
+// Global safeguard for font scaling across any raw Text components
+if ((Text as any).defaultProps == null) {
+  (Text as any).defaultProps = {};
+}
+(Text as any).defaultProps.maxFontSizeMultiplier = 1.25;
 
 // Do NOT prevent auto hide so native splash never freezes if an error or delay occurs
 SplashScreen.hideAsync().catch(() => {});

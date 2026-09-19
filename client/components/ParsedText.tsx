@@ -113,6 +113,7 @@ export const ParsedText = memo(
         baseStyle={flattenedStyle as any}
         enableExperimentalMarginCollapsing={true}
         systemFonts={systemFonts}
+        defaultTextProps={{ maxFontSizeMultiplier: 1.25 }}
         {...rest}
       />
     );

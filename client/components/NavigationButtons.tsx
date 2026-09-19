@@ -65,7 +65,9 @@ export const NavigationButtons = memo(function NavigationButtons({
               <View style={styles.arrowLine} />
               <View style={styles.arrowHead} />
             </View>
-            <ThemedText style={styles.text}>Back</ThemedText>
+            <ThemedText style={styles.text} maxFontSizeMultiplier={1.15}>
+              Back
+            </ThemedText>
           </View>
         </LinearGradient>
       </Pressable>
@@ -79,6 +81,9 @@ export const NavigationButtons = memo(function NavigationButtons({
             ]}
             numberOfLines={1}
             ellipsizeMode="tail"
+            adjustsFontSizeToFit
+            minimumFontScale={0.78}
+            maxFontSizeMultiplier={1.15}
           >
             {title}
           </ThemedText>
@@ -102,7 +107,9 @@ export const NavigationButtons = memo(function NavigationButtons({
           >
             <View style={styles.borderInner}>
               <Feather name="home" size={16} color={JiguuColors.textPrimary} />
-              <ThemedText style={styles.text}>Home</ThemedText>
+              <ThemedText style={styles.text} maxFontSizeMultiplier={1.15}>
+                Home
+              </ThemedText>
             </View>
           </LinearGradient>
         </Pressable>
@@ -187,6 +194,6 @@ const styles = StyleSheet.create({
     color: JiguuColors.textPrimary,
     fontSize: 18,
     fontFamily: "NotoSans_400Regular",
-    paddingHorizontal: 100,
+    paddingHorizontal: 75,
   },
 });

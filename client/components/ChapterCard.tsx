@@ -83,10 +83,16 @@ export const ChapterCard = memo(function ChapterCard({
         >
           <View style={styles.borderInner}>
             <View style={styles.numberContainer}>
-              <ThemedText style={styles.number}>{number}</ThemedText>
+              <ThemedText style={styles.number} maxFontSizeMultiplier={1.15}>
+                {number}
+              </ThemedText>
             </View>
             <View style={styles.nameContainer}>
-              <ThemedText style={styles.name} numberOfLines={2}>
+              <ThemedText
+                style={styles.name}
+                numberOfLines={2}
+                maxFontSizeMultiplier={1.18}
+              >
                 {name}
               </ThemedText>
             </View>
