@@ -63,7 +63,7 @@ function ClassSelectorScreen() {
             <ColorButton
               testID="button-class-12"
               title="Class 12"
-              colors={["#6A11CB", "#2575FC"]}
+              colors={["#ec008c", "#fc6767"]}
               onPress={() => navigation.navigate("Class12")}
             />
           </View>
@@ -72,7 +72,7 @@ function ClassSelectorScreen() {
             <ColorButton
               testID="button-class-11"
               title="Class 11"
-              colors={["#FF512F", "#DD2476"]}
+              colors={["#00C6FF", "#0072FF"]}
               onPress={() => navigation.navigate("Class11")}
             />
           </View>
@@ -81,7 +81,7 @@ function ClassSelectorScreen() {
             <ColorButton
               testID="button-class-10"
               title="Class 10"
-              colors={JiguuColors.gradients.blue}
+              colors={["#F39C12", "#D35400"]}
               onPress={() => navigation.navigate("Home")}
             />
           </View>
@@ -90,7 +90,7 @@ function ClassSelectorScreen() {
             <ColorButton
               testID="button-class-9"
               title="Class 9"
-              colors={JiguuColors.gradients.purple}
+              colors={["#00b09b", "#96c93d"]}
               onPress={() => navigation.navigate("Class9")}
             />
           </View>
@@ -99,7 +99,7 @@ function ClassSelectorScreen() {
             <ColorButton
               testID="button-class-8"
               title="Class 8"
-              colors={JiguuColors.gradients.pink}
+              colors={["#FF8A65", "#FF3D00"]}
               onPress={() => navigation.navigate("Class8")}
             />
           </View>
@@ -108,7 +108,7 @@ function ClassSelectorScreen() {
             <ColorButton
               testID="button-class-7"
               title="Class 7"
-              colors={JiguuColors.gradients.green}
+              colors={["#E040FB", "#7B1FA2"]}
               onPress={() => navigation.navigate("Class7")}
             />
           </View>

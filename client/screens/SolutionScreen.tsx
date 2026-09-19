@@ -332,6 +332,8 @@ function SolutionScreen() {
   const isSeniorClass =
     className === "Class 11" ||
     className === "Class 12" ||
+    (typeof className === "string" &&
+      (className.includes("Class 11") || className.includes("Class 12"))) ||
     chapterId.startsWith("c11-") ||
     chapterId.startsWith("c12-");
 
@@ -1020,15 +1022,7 @@ function SolutionScreen() {
 
   if (isSeniorClass) {
     tab1Title = "Reference";
-    tab2Title = "Solutions";
-    if (
-      chapterId.match(/^c1[12]-(edu|pol|soc|his|psy|eng)-/) ||
-      chapterId.includes("-edu-") ||
-      chapterId.includes("-arts-") ||
-      chapterId.includes("-eng-")
-    ) {
-      tab2Title = "Q & A";
-    }
+    tab2Title = "Q & A";
   } else if (chapterId.startsWith("sci-")) {
     tab1Title = "Quick Revision";
     tab2Title = "NCERT Solutions";
