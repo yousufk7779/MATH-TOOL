@@ -157,15 +157,16 @@ const styles = StyleSheet.create({
   },
   content: {
     paddingHorizontal: Spacing.xl,
-    paddingVertical: Spacing.xl,
+    paddingTop: Spacing.xs,
+    paddingBottom: Spacing["3xl"],
     flexGrow: 1,
   },
   centeredContent: {
-    justifyContent: "center",
+    justifyContent: "flex-start",
   },
   headerContainer: {
     alignItems: "center",
-    marginBottom: Spacing["3xl"],
+    marginBottom: Spacing.lg,
   },
   titleRow: {
     flexDirection: "row",
@@ -196,7 +197,7 @@ const styles = StyleSheet.create({
     borderRadius: 3,
   },
   buttonsContainer: {
-    gap: Spacing.xl,
+    gap: Spacing.lg,
   },
   buttonWrapper: {
     width: "100%",

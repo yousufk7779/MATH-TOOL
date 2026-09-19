@@ -15,11 +15,13 @@ export const JiguuLogo = memo(function JiguuLogo({
   showSubtitle = false,
   size = "medium",
 }: JiguuLogoProps) {
+  const isSmall = size === "small";
   const route = useRoute();
+
   const { logoWidth, logoHeight } = useMemo(
     () => ({
-      logoWidth: size === "small" ? 160 : size === "medium" ? 200 : 250,
-      logoHeight: size === "small" ? 48 : size === "medium" ? 60 : 75,
+      logoWidth: size === "small" ? 140 : size === "medium" ? 200 : 250,
+      logoHeight: size === "small" ? 38 : size === "medium" ? 60 : 75,
     }),
     [size],
   );
@@ -97,10 +99,22 @@ export const JiguuLogo = memo(function JiguuLogo({
         resizeMode="contain"
       />
       {showSubtitle ? (
-        <View style={styles.subtitleWrapper}>
-          <Text style={subtitleTextStyle}>
-            Learn Smart <Text style={styles.dot}>.</Text>{" "}
-            <Text style={suffixStyle}>{subtitleSuffix}</Text>
+        <View
+          style={[
+            styles.subtitleWrapper,
+            isSmall && styles.subtitleWrapperSmall,
+          ]}
+        >
+          <Text
+            style={[
+              subtitleTextStyle,
+              isSmall && styles.subtitleTextSmall,
+            ]}
+          >
+            Learn Smart <Text style={[styles.dot, isSmall && styles.dotSmall]}>.</Text>{" "}
+            <Text style={[suffixStyle, isSmall && styles.subtitleTextSmall]}>
+              {subtitleSuffix}
+            </Text>
           </Text>
         </View>
       ) : null}
@@ -125,6 +139,10 @@ const styles = StyleSheet.create({
     marginTop: -18,
     paddingHorizontal: 20,
   },
+  subtitleWrapperSmall: {
+    height: 18,
+    marginTop: -13,
+  },
   subtitleText: {
     width: "100%",
     textAlign: "center",
@@ -134,6 +152,10 @@ const styles = StyleSheet.create({
     letterSpacing: 1,
     includeFontPadding: false,
     lineHeight: 22,
+  },
+  subtitleTextSmall: {
+    fontSize: 12.5,
+    lineHeight: 16,
   },
   subtitleSuffixText: {
     color: JiguuColors.accent2,
@@ -153,5 +175,8 @@ const styles = StyleSheet.create({
     color: "#FFFFFF",
     position: "relative",
     top: -1,
+  },
+  dotSmall: {
+    fontSize: 15,
   },
 });

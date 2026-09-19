@@ -11,23 +11,28 @@ export const StaticHeader = memo(function StaticHeader() {
   const { width, height } = useWindowDimensions();
   const route = useRoute();
   const isLandscape = width > height;
-  const isClassSelector = route.name === "ClassSelector";
 
   return (
     <View
       style={[
         styles.container,
         {
-          paddingTop: isLandscape ? insets.top + 5 : insets.top + Spacing.sm,
+          paddingTop: isLandscape
+            ? Math.max(insets.top, 2)
+            : insets.top + Spacing.sm,
           paddingBottom: isLandscape ? 2 : 0,
-          height: isLandscape ? 100 : insets.top + 105,
-          flexDirection: isLandscape ? "row" : "column",
-          justifyContent: "center",
+          height: isLandscape ? Math.max(insets.top, 2) + 54 : insets.top + 105,
+          justifyContent: isLandscape ? "center" : "flex-end",
           alignItems: "center",
         },
       ]}
     >
-      <View style={styles.logoContainer}>
+      <View
+        style={[
+          styles.logoContainer,
+          isLandscape && styles.logoContainerLandscape,
+        ]}
+      >
         <JiguuLogo size={isLandscape ? "small" : "large"} showSubtitle={true} />
       </View>
     </View>
@@ -39,7 +44,6 @@ const styles = StyleSheet.create({
     backgroundColor: JiguuColors.background,
     paddingHorizontal: Spacing.lg,
     alignItems: "center",
-    justifyContent: "flex-end",
     borderBottomWidth: 1,
     borderBottomColor: JiguuColors.border,
     zIndex: 100,
@@ -49,5 +53,10 @@ const styles = StyleSheet.create({
     justifyContent: "flex-end",
     alignItems: "center",
     paddingBottom: 2,
+  },
+  logoContainerLandscape: {
+    height: 48,
+    justifyContent: "center",
+    paddingBottom: 0,
   },
 });
