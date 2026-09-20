@@ -1690,6 +1690,7 @@ const styles = StyleSheet.create({
   },
   tabContainer: {
     flexDirection: "row",
+    height: 44,
     marginBottom: Spacing.sm,
     marginHorizontal: Spacing.md,
     backgroundColor: JiguuColors.surface,
@@ -1699,7 +1700,7 @@ const styles = StyleSheet.create({
   },
   tabButton: {
     flex: 1,
-    minHeight: 38,
+    height: "100%",
     paddingHorizontal: 4,
     alignItems: "center",
     justifyContent: "center",
