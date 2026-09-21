@@ -182,4 +182,23 @@ Full authoritative rules, JKBOSE & CBSE textbook alignments (Hornbill, Snapshots
    - Golden Rule templates with 3 high-scoring solved samples per topic.
    - Grammar Editing error-correction rules with solved passages.
 
+---
+
+## Class 8 Mathematics Master Blueprint
+
+Full authoritative rules, chapter list, and UI standards are permanently recorded in:
+👉 `.agents/CLASS_8_MATH_BLUEPRINT.md`
+
+### Core Class 8 Math Directives:
+1. **100% Web View Architecture (`isHtmlView: true`)**: All chapters built using rich HTML/CSS Web View for dark-mode cards and custom math typography.
+2. **Full Question Statements & Zero-Omission Guarantee**: Every single question and sub-part `(i), (ii), (iii)...` written verbatim with complete context. No questions skipped.
+3. **Strict Stacked Fractions ("a over b" Format, Never "a/b") & Generous Line Spacing**: Raw `a/b` is strictly forbidden. All fractions must be vertically stacked with numerator over denominator and fraction bar line (`<span class="frac"><span class="num">a</span><span class="den">b</span></span>`). To prevent any vertical mesh, always enforce `.sol-step { line-height: 2.35; }`, math row `margin: 8px 0;`, and `.frac { margin: 2px 6px; line-height: 1.25; }`.
+4. **Theme Color for Questions & Sub-Parts**: Main question headers (`Question 1`), sub-parts (`(i)`, `(ii)`), step headings (`Given:`, `Step 1:`), and card left borders MUST use the chapter's `themeColor`.
+5. **Student-Friendly & Concise Solutions**: Clear steps, intuitive reasons in brackets (e.g. `[Transposing...]`), and final answer highlighted in clean colored boxes. Not too long.
+6. **Exact Figures & Number Lines (Zero Cut-Off Guarantee)**: Clean SVGs with `#FFFFFF` background inside sleek dark cards (`.diagram-wrapper` with `display: block; width: 100%; box-sizing: border-box; overflow: hidden;`). **NEVER use `min-width` on SVGs.** Always ensure generous margins (minimum 25px - 50px) inside viewBox on left & right so arrows and endpoint labels are 100% visible without clipping on mobile screens.
+7. **Dedicated Sub-Tab For Each Exercise**: Every exercise rendered in its own dedicated sub-tab via `chapterData.exercises` and `chapterData.htmlExercises`.
+
+
+
+
 
