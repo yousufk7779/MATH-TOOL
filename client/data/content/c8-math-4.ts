@@ -1,599 +1,266 @@
 import { ChapterContent } from "../types";
 
-const ex41Content = `
-  <style>
-    .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
-    .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
-    .frac .den { padding: 0 2px; }
-    .ex-container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
-    .q-card { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 15px; margin-bottom: 25px; }
-    .q-text { color: #2196F3; font-weight: 600; margin-bottom: 12px; text-align: justify; }
-    .q-subtext { color: #e0e0e0; margin-bottom: 10px; margin-left: 10px; }
-    .sol-box { border-left: 3px solid #2196F3; padding-left: 15px; margin-top: 15px; background: rgba(33, 150, 243, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; }
-    .ans-highlight { color: #2196F3; font-weight: 700; }
-    .step-label { color: #64B5F6; font-weight: 600; margin-right: 5px; }
-    .math-svg { background: white; padding: 10px; border-radius: 12px; margin: 15px 0; display: inline-block; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
-    .data-table { width: 100%; border-collapse: collapse; background: white; color: #333; border-radius: 8px; overflow: hidden; margin: 15px 0; }
-    .data-table th { background: #2196F3; color: white; padding: 10px; text-align: left; border: 1px solid #ddd; }
-    .data-table td { padding: 8px 12px; border: 1px solid #ddd; text-align: center; }
-    .hint-box { background: #FCE4EC; color: #880E4F; padding: 15px; border-radius: 8px; font-size: 14px; margin: 15px 0; border: 1px dashed #C2185B; font-style: italic; }
-      .q-text, .q-subtext, .sol-step, .sol-box { font-size: 16px; }
-  </style>
-  <div class="ex-container">
-    <div class="q-card">
-      <div class="q-text">1. A survey was made to find the type of music that a certain group of young people liked in a city. Adjoining pie chart shows the findings of this survey.<br/><br/>From this pie chart answer the following:</div>
-      <div class="q-subtext">(i) If 20 people liked classical music, how many young people were surveyed?</div>
-      <div class="q-subtext">(ii) Which type of music is liked by the maximum number of people?</div>
-      <div class="q-subtext">(iii) If a cassette company were to make 1000 CD's, how many of each type would they make?</div>
-      
-      <div style="text-align:center;">
-        <div class="math-svg">
-          <svg width="220" height="220" viewBox="0 0 220 220">
-            <circle cx="110" cy="110" r="90" fill="white" stroke="#000" stroke-width="2"/>
-            <path d="M110,110 L110,20 A90,90 0 0,1 195,138 Z" fill="#BBDEFB" stroke="#000" stroke-width="1.5"/>
-            <path d="M110,110 L195,138 A90,90 0 0,1 45,173 Z" fill="#90CAF9" stroke="#000" stroke-width="1.5"/>
-            <path d="M110,110 L45,173 A90,90 0 0,1 25,138 Z" fill="#64B5F6" stroke="#000" stroke-width="1.5"/>
-            <path d="M110,110 L25,138 A90,90 0 0,1 110,20 Z" fill="#42A5F5" stroke="#000" stroke-width="1.5"/>
-            <text x="135" y="75" font-size="11" font-weight="bold" fill="#000">Light 40%</text>
-            <text x="100" y="185" font-size="11" font-weight="bold" fill="#000">Folk 30%</text>
-            <text x="10" y="160" font-size="10" font-weight="bold" fill="#000">Classical 10%</text>
-            <text x="20" y="55" font-size="10" font-weight="bold" fill="#000">Semi Classical 20%</text>
-          </svg>
-        </div>
-      </div>
-      
-      <div class="sol-box">
-        <span class="step-label">Solution:</span><br/>
-        <span class="step-label">(i)</span> 10% represents 20 people.<br/>
-        Let the total number of young people surveyed be x.<br/>
-        10% of x = 20<br/>
-        (<span class='frac'><span class='num'>10</span><span class='den'>100</span></span>) × x = 20<br/>
-        x = (20 × 100) / 10 = <span class="ans-highlight">200</span><br/>
-        Therefore, 200 young people were surveyed.<br/><br/>
-        
-        <span class="step-label">(ii)</span> Since the sector for Light music is the largest (40%), <span class="ans-highlight">Light music</span> is liked by the maximum number of people.<br/><br/>
-        
-        <span class="step-label">(iii)</span> Total number of CDs = 1000<br/>
-        - Classical music CDs = 10% of 1000 = (<span class='frac'><span class='num'>10</span><span class='den'>100</span></span>) × 1000 = <span class="ans-highlight">100</span><br/>
-        - Semi Classical music CDs = 20% of 1000 = (<span class='frac'><span class='num'>20</span><span class='den'>100</span></span>) × 1000 = <span class="ans-highlight">200</span><br/>
-        - Light music CDs = 40% of 1000 = (<span class='frac'><span class='num'>40</span><span class='den'>100</span></span>) × 1000 = <span class="ans-highlight">400</span><br/>
-        - Folk music CDs = 30% of 1000 = (<span class='frac'><span class='num'>30</span><span class='den'>100</span></span>) × 1000 = <span class="ans-highlight">300</span>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">2. A group of 360 people were asked to vote for their favourite season from the three seasons rainy, winter and summer.</div>
-      <div class="q-subtext">(i) Which season got the most votes?</div>
-      <div class="q-subtext">(ii) Find the central angle of each sector.</div>
-      <div class="q-subtext">(iii) Draw a pie chart to show this information.</div>
-      
-      <table class="data-table">
-        <tr><th>Season</th><th>No. of votes</th></tr>
-        <tr><td>Summer ☀️</td><td>90</td></tr>
-        <tr><td>Rainy ☔</td><td>120</td></tr>
-        <tr><td>Winter ⛄</td><td>150</td></tr>
-      </table>
-      
-      <div class="sol-box">
-        <span class="step-label">Solution:</span><br/>
-        <span class="step-label">(i)</span> The <span class="ans-highlight">Winter</span> season got the most votes (150).<br/><br/>
-        <span class="step-label">(ii)</span> Total votes = 90 + 120 + 150 = 360.<br/>
-        Central angle = (<span class='frac'><span class='num'>Votes</span><span class='den'>Total</span></span>) × 360°<br/>
-        - Summer: (<span class='frac'><span class='num'>90</span><span class='den'>360</span></span>) × 360° = <span class="ans-highlight">90°</span><br/>
-        - Rainy: (<span class='frac'><span class='num'>120</span><span class='den'>360</span></span>) × 360° = <span class="ans-highlight">120°</span><br/>
-        - Winter: (<span class='frac'><span class='num'>150</span><span class='den'>360</span></span>) × 360° = <span class="ans-highlight">150°</span><br/><br/>
-        <span class="step-label">(iii)</span> Pie chart based on the central angles:<br/>
-        <div style="text-align:center;">
-          <div class="math-svg">
-            <svg width="180" height="180" viewBox="0 0 180 180">
-              <circle cx="90" cy="90" r="70" fill="white" stroke="#000" stroke-width="1.5"/>
-              <!-- Summer 90° -->
-              <path d="M90,90 L90,20 A70,70 0 0,1 160,90 Z" fill="#FFF59D" stroke="#000"/>
-              <text x="110" y="50" font-size="10">Summer</text>
-              <!-- Rainy 120° -->
-              <path d="M90,90 L160,90 A70,70 0 0,1 29,125 Z" fill="#90CAF9" stroke="#000"/>
-              <text x="95" y="140" font-size="10">Rainy</text>
-              <!-- Winter 150° -->
-              <path d="M90,90 L29,125 A70,70 0 0,1 90,20 Z" fill="#E0F7FA" stroke="#000"/>
-              <text x="35" y="80" font-size="10">Winter</text>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">3. Draw a pie chart showing the following information. The table shows the colours preferred by a group of people.</div>
-      <table class="data-table">
-        <tr><th>Colours</th><th>Number of people</th></tr>
-        <tr><td style="background-color:#E3F2FD; color:#1565C0; font-weight:bold;">Blue</td><td>18</td></tr>
-        <tr><td style="background-color:#E8F5E9; color:#2E7D32; font-weight:bold;">Green</td><td>9</td></tr>
-        <tr><td style="background-color:#FFEBEE; color:#C62828; font-weight:bold;">Red</td><td>6</td></tr>
-        <tr><td style="background-color:#FFFDE7; color:#F9A825; font-weight:bold;">Yellow</td><td>3</td></tr>
-        <tr><td><b>Total</b></td><td><b>36</b></td></tr>
-      </table>
-      
-      <div class="hint-box">
-        Find the proportion of each sector. For example, Blue is <span class='frac'><span class='num'>18</span><span class='den'>36</span></span> = <span class='frac'><span class='num'>1</span><span class='den'>2</span></span>; Green is <span class='frac'><span class='num'>9</span><span class='den'>36</span></span> = <span class='frac'><span class='num'>1</span><span class='den'>4</span></span> and so on. Use this to find the corresponding angles.
-      </div>
-      
-      <div class="sol-box">
-        <span class="step-label">Solution:</span><br/>
-        First, we calculate the central angle for each colour. Total people = 36.<br/>
-        Central angle = (Number of <span class='frac'><span class='num'>people</span><span class='den'>36</span></span>) × 360°<br/>
-        - Blue: (<span class='frac'><span class='num'>18</span><span class='den'>36</span></span>) × 360° = <span class="ans-highlight">180°</span><br/>
-        - Green: (<span class='frac'><span class='num'>9</span><span class='den'>36</span></span>) × 360° = <span class="ans-highlight">90°</span><br/>
-        - Red: (<span class='frac'><span class='num'>6</span><span class='den'>36</span></span>) × 360° = <span class="ans-highlight">60°</span><br/>
-        - Yellow: (<span class='frac'><span class='num'>3</span><span class='den'>36</span></span>) × 360° = <span class="ans-highlight">30°</span><br/><br/>
-        
-        <div style="text-align:center;">
-          <div class="math-svg">
-            <svg width="180" height="180" viewBox="0 0 180 180">
-              <circle cx="90" cy="90" r="70" fill="white" stroke="#000" stroke-width="1.5"/>
-              <!-- Blue 180° -->
-              <path d="M90,90 L90,20 A70,70 0 0,1 90,160 Z" fill="#2196F3" stroke="#000"/>
-              <text x="120" y="95" fill="white" font-weight="bold">Blue</text>
-              <!-- Green 90° -->
-              <path d="M90,90 L90,160 A70,70 0 0,1 20,90 Z" fill="#4CAF50" stroke="#000"/>
-              <text x="35" y="130" fill="white" font-weight="bold">Green</text>
-              <!-- Red 60° -->
-              <path d="M90,90 L20,90 A70,70 0 0,1 55,29 Z" fill="#F44336" stroke="#000"/>
-              <text x="35" y="65" fill="white" font-weight="bold">Red</text>
-              <!-- Yellow 30° -->
-              <path d="M90,90 L55,29 A70,70 0 0,1 90,20 Z" fill="#FFEB3B" stroke="#000"/>
-              <text x="65" y="35" font-weight="bold">Y</text>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">4. The adjoining pie chart gives the marks scored in an examination by a student in Hindi, English, Mathematics, Social Science and Science. If the total marks obtained by the students were 540, answer the following questions.</div>
-      <div class="q-subtext">(i) In which subject did the student score 105 marks?<br/>(Hint: for 540 marks, the central angle = 360°. So, for 105 marks, what is the central angle?)</div>
-      <div class="q-subtext">(ii) How many more marks were obtained by the student in Mathematics than in Hindi?</div>
-      <div class="q-subtext">(iii) Examine whether the sum of the marks obtained in Social Science and Mathematics is more than that in Science and Hindi. (Hint: Just study the central angles).</div>
-      
-      <div style="text-align:center;">
-        <div class="math-svg">
-          <svg width="200" height="200" viewBox="0 0 200 200">
-            <circle cx="100" cy="100" r="80" fill="white" stroke="#000" stroke-width="1.5"/>
-            <path d="M100,100 L100,20 A80,80 0 0,1 180,100 Z" fill="#E3F2FD" stroke="#000"/>
-            <text x="120" y="60" font-size="10">Mathematics 90°</text>
-            <path d="M100,100 L180,100 A80,80 0 0,1 156,156 Z" fill="#BBDEFB" stroke="#000"/>
-            <text x="135" y="130" font-size="9">S.Science 65°</text>
-            <path d="M100,100 L156,156 A80,80 0 0,1 75,176 Z" fill="#90CAF9" stroke="#000"/>
-            <text x="115" y="170" font-size="9">Science 80°</text>
-            <path d="M100,100 L75,176 A80,80 0 0,1 24,124 Z" fill="#64B5F6" stroke="#000"/>
-            <text x="40" y="160" font-size="9">Hindi 70°</text>
-            <path d="M100,100 L24,124 A80,80 0 0,1 100,20 Z" fill="#42A5F5" stroke="#000"/>
-            <text x="40" y="70" font-size="9">English 55°</text>
-          </svg>
-        </div>
-      </div>
-      
-      <div class="sol-box">
-        <span class="step-label">Solution:</span><br/>
-        Total marks = 540. Total central angle = 360°.<br/><br/>
-        <span class="step-label">(i)</span> Central angle for 105 marks = (<span class='frac'><span class='num'>105</span><span class='den'>540</span></span>) × 360° = <span class="ans-highlight">70°</span>.<br/>
-        From the pie chart, the angle 70° corresponds to <span class="ans-highlight">Hindi</span>. So, the student scored 105 marks in Hindi.<br/><br/>
-        
-        <span class="step-label">(ii)</span> Central angle for Mathematics = 90°.<br/>
-        Marks in Mathematics = (90° / 360°) × 540 = 135.<br/>
-        Marks in Hindi = 105.<br/>
-        Difference = 135 - 105 = <span class="ans-highlight">30 marks</span>.<br/>
-        Thus, the student obtained 30 more marks in Mathematics than in Hindi.<br/><br/>
-        
-        <span class="step-label">(iii)</span> Sum of central angles of Social Science and Mathematics = 65° + 90° = <span class="ans-highlight">155°</span>.<br/>
-        Sum of central angles of Science and Hindi = 80° + 70° = <span class="ans-highlight">150°</span>.<br/>
-        Since 155° > 150°, <span class="ans-highlight">Yes</span>, the sum of marks in Social Science and Mathematics is more than that in Science and Hindi.
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">5. The number of students in a hostel, speaking different languages is given below. Display the data in a pie chart.</div>
-      <table class="data-table">
-        <tr><th>Language</th><th>Number of students</th></tr>
-        <tr><td>Hindi</td><td>40</td></tr>
-        <tr><td>English</td><td>12</td></tr>
-        <tr><td>Marathi</td><td>9</td></tr>
-        <tr><td>Tamil</td><td>7</td></tr>
-        <tr><td>Bengali</td><td>4</td></tr>
-        <tr><td><b>Total</b></td><td><b>72</b></td></tr>
-      </table>
-      
-      <div class="sol-box">
-        <span class="step-label">Solution:</span><br/>
-        Total number of students = 72.<br/>
-        Central angle = (Number of <span class='frac'><span class='num'>students</span><span class='den'>72</span></span>) × 360°<br/>
-        - Hindi: (<span class='frac'><span class='num'>40</span><span class='den'>72</span></span>) × 360° = <span class="ans-highlight">200°</span><br/>
-        - English: (<span class='frac'><span class='num'>12</span><span class='den'>72</span></span>) × 360° = <span class="ans-highlight">60°</span><br/>
-        - Marathi: (<span class='frac'><span class='num'>9</span><span class='den'>72</span></span>) × 360° = <span class="ans-highlight">45°</span><br/>
-        - Tamil: (<span class='frac'><span class='num'>7</span><span class='den'>72</span></span>) × 360° = <span class="ans-highlight">35°</span><br/>
-        - Bengali: (<span class='frac'><span class='num'>4</span><span class='den'>72</span></span>) × 360° = <span class="ans-highlight">20°</span><br/><br/>
-        
-        <div style="text-align:center;">
-          <div class="math-svg">
-            <svg width="180" height="180" viewBox="0 0 180 180">
-              <circle cx="90" cy="90" r="70" fill="white" stroke="#000" stroke-width="1.5"/>
-              <!-- Hindi 200° -->
-              <path d="M90,90 L90,20 A70,70 0 1,1 66,155 Z" fill="#E3F2FD" stroke="#000"/>
-              <text x="120" y="100" font-size="11" font-weight="bold">Hindi</text>
-              <!-- English 60° -->
-              <path d="M90,90 L66,155 A70,70 0 0,1 29,125 Z" fill="#90CAF9" stroke="#000"/>
-              <text x="35" y="150" font-size="9">English</text>
-              <!-- Marathi 45° -->
-              <path d="M90,90 L29,125 A70,70 0 0,1 20,90 Z" fill="#64B5F6" stroke="#000"/>
-              <text x="10" y="115" font-size="8">Marathi</text>
-              <!-- Tamil 35° -->
-              <path d="M90,90 L20,90 A70,70 0 0,1 30,53 Z" fill="#42A5F5" stroke="#000"/>
-              <text x="15" y="75" font-size="8">Tamil</text>
-              <!-- Bengali 20° -->
-              <path d="M90,90 L30,53 A70,70 0 0,1 55,29 Z" fill="#2196F3" stroke="#000"/>
-              <text x="35" y="45" font-size="7">Bengali</text>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-`;
-
-const ex42Content = `
-  <style>
-    .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
-    .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
-    .frac .den { padding: 0 2px; }
-    .ex-container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
-    .q-card { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 15px; margin-bottom: 25px; }
-    .q-text { color: #2196F3; font-weight: 600; margin-bottom: 12px; text-align: justify; }
-    .q-subtext { color: #e0e0e0; margin-bottom: 10px; margin-left: 10px; }
-    .sol-box { border-left: 3px solid #2196F3; padding-left: 15px; margin-top: 15px; background: rgba(33, 150, 243, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; }
-    .ans-highlight { color: #2196F3; font-weight: 700; }
-    .step-label { color: #64B5F6; font-weight: 600; margin-right: 5px; }
-    .math-svg { background: white; padding: 10px; border-radius: 12px; margin: 15px 0; display: inline-block; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
-      .q-text, .q-subtext, .sol-step, .sol-box { font-size: 16px; }
-  </style>
-  <div class="ex-container">
-    <div class="q-card">
-      <div class="q-text">1. List the outcomes you can see in these experiments.</div>
-      <div class="q-subtext">(a) Spinning a wheel</div>
-      <div class="q-subtext">(b) Tossing two coins together</div>
-      
-      <div style="display:flex; justify-content:space-around; margin:15px 0;">
-        <div class="math-svg" style="width:120px;">
-          <svg width="100" height="100" viewBox="0 0 100 100">
-            <circle cx="50" cy="50" r="45" fill="white" stroke="#000" stroke-width="2"/>
-            <path d="M50,50 L50,5 A45,45 0 0,1 93,36 Z" fill="none" stroke="#000"/>
-            <path d="M50,50 L93,36 A45,45 0 0,1 76,86 Z" fill="none" stroke="#000"/>
-            <path d="M50,50 L76,86 A45,45 0 0,1 24,86 Z" fill="none" stroke="#000"/>
-            <path d="M50,50 L24,86 A45,45 0 0,1 7,36 Z" fill="none" stroke="#000"/>
-            <path d="M50,50 L7,36 A45,45 0 0,1 50,5 Z" fill="none" stroke="#000"/>
-            <line x1="50" y1="50" x2="65" y2="30" stroke="#F44336" stroke-width="2"/>
-            <text x="30" y="30" font-size="12" font-weight="bold">A</text>
-            <text x="25" y="65" font-size="12" font-weight="bold">A</text>
-            <text x="60" y="80" font-size="12" font-weight="bold">D</text>
-            <text x="80" y="60" font-size="12" font-weight="bold">C</text>
-            <text x="70" y="30" font-size="12" font-weight="bold">B</text>
-          </svg>
-        </div>
-      </div>
-      
-      <div class="sol-box">
-        <span class="step-label">Solution:</span><br/>
-        <span class="step-label">(a)</span> The outcomes of spinning the given wheel are the letters on the sectors: <span class="ans-highlight">A, B, C, and D</span>.<br/>
-        <span class="step-label">(b)</span> When tossing two coins together, the possible outcomes are Head-Head, Head-Tail, Tail-Head, and Tail-Tail. So, outcomes are <span class="ans-highlight">HH, HT, TH, TT</span>.
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">2. When a die is thrown, list the outcomes of an event of getting</div>
-      <div class="q-subtext">(i) (a) a prime number (b) not a prime number.</div>
-      <div class="q-subtext">(ii) (a) a number greater than 5 (b) a number not greater than 5.</div>
-      <div class="sol-box">
-        <span class="step-label">Solution:</span><br/>
-        When a die is thrown, the possible outcomes are {1, 2, 3, 4, 5, 6}.<br/>
-        <span class="step-label">(i)(a)</span> Prime numbers are 2, 3, and 5. Outcomes: <span class="ans-highlight">{2, 3, 5}</span>.<br/>
-        <span class="step-label">(i)(b)</span> Numbers which are not prime are 1, 4, and 6. Outcomes: <span class="ans-highlight">{1, 4, 6}</span>.<br/>
-        <span class="step-label">(ii)(a)</span> The only number greater than 5 is 6. Outcome: <span class="ans-highlight">{6}</span>.<br/>
-        <span class="step-label">(ii)(b)</span> Numbers not greater than 5 are 1, 2, 3, 4, and 5. Outcomes: <span class="ans-highlight">{1, 2, 3, 4, 5}</span>.
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">3. Find the.</div>
-      <div class="q-subtext">(a) Probability of the pointer stopping on D in Question 1 (a) ?</div>
-      <div class="q-subtext">(b) Probability of getting an ace from a well shuffled deck of 52 playing cards?</div>
-      <div class="q-subtext">(c) Probability of getting a red apple. (See given figure)</div>
-      
-      <div style="text-align:center;">
-        <div class="math-svg">
-          <svg width="120" height="120" viewBox="0 0 120 120">
-            <circle cx="60" cy="60" r="55" fill="none" stroke="#333" stroke-width="2"/>
-            <circle cx="45" cy="40" r="12" fill="white" stroke="#333" stroke-width="1.5"/><text x="40" y="44" font-size="12" font-weight="bold">G</text>
-            <circle cx="75" cy="40" r="12" fill="white" stroke="#333" stroke-width="1.5"/><text x="70" y="44" font-size="12" font-weight="bold">R</text>
-            <circle cx="95" cy="60" r="12" fill="white" stroke="#333" stroke-width="1.5"/><text x="90" y="64" font-size="12" font-weight="bold">R</text>
-            <circle cx="45" cy="70" r="12" fill="white" stroke="#333" stroke-width="1.5"/><text x="40" y="74" font-size="12" font-weight="bold">R</text>
-            <circle cx="65" cy="75" r="12" fill="white" stroke="#333" stroke-width="1.5"/><text x="60" y="79" font-size="12" font-weight="bold">G</text>
-            <circle cx="25" cy="60" r="12" fill="white" stroke="#333" stroke-width="1.5"/><text x="20" y="64" font-size="12" font-weight="bold">R</text>
-            <circle cx="60" cy="100" r="12" fill="white" stroke="#333" stroke-width="1.5"/><text x="55" y="104" font-size="12" font-weight="bold">G</text>
-          </svg>
-        </div>
-      </div>
-      
-      <div class="sol-box">
-        <span class="step-label">Solution:</span><br/>
-        <span class="step-label">(a)</span> In the spinning wheel of Q1(a), there are 5 sectors (A, A, B, C, D). The pointer stopping on D is 1 favourable outcome. Total outcomes = 5.<br/>
-        Probability = <span class="ans-highlight"><span class='frac'><span class='num'>1</span><span class='den'>5</span></span></span>.<br/><br/>
-        <span class="step-label">(b)</span> There are 4 aces in a deck of 52 cards. Favourable outcomes = 4. Total outcomes = 52.<br/>
-        Probability = <span class='frac'><span class='num'>4</span><span class='den'>52</span></span> = <span class="ans-highlight"><span class='frac'><span class='num'>1</span><span class='den'>13</span></span></span>.<br/><br/>
-        <span class="step-label">(c)</span> Total apples = 7. Red apples = 4. Favourable outcomes = 4. Total outcomes = 7.<br/>
-        Probability = <span class="ans-highlight"><span class='frac'><span class='num'>4</span><span class='den'>7</span></span></span>.
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">4. Numbers 1 to 10 are written on ten separate slips (one number on one slip), kept in a box and mixed well. One slip is chosen from the box without looking into it. What is the probability of.</div>
-      <div class="q-subtext">(i) getting a number 6?</div>
-      <div class="q-subtext">(ii) getting a number less than 6?</div>
-      <div class="q-subtext">(iii) getting a number greater than 6?</div>
-      <div class="q-subtext">(iv) getting a 1-digit number?</div>
-      <div class="sol-box">
-        <span class="step-label">Solution:</span><br/>
-        Total slips (outcomes) = 10 (which are 1, 2, 3, 4, 5, 6, 7, 8, 9, 10).<br/><br/>
-        <span class="step-label">(i)</span> Number 6 appears only 1 time. Favourable outcomes = 1.<br/>
-        P(getting number 6) = <span class="ans-highlight"><span class='frac'><span class='num'>1</span><span class='den'>10</span></span></span>.<br/><br/>
-        <span class="step-label">(ii)</span> Numbers less than 6 are {1, 2, 3, 4, 5}. Favourable outcomes = 5.<br/>
-        P(getting a number less than 6) = <span class='frac'><span class='num'>5</span><span class='den'>10</span></span> = <span class="ans-highlight"><span class='frac'><span class='num'>1</span><span class='den'>2</span></span></span>.<br/><br/>
-        <span class="step-label">(iii)</span> Numbers greater than 6 are {7, 8, 9, 10}. Favourable outcomes = 4.<br/>
-        P(getting a number greater than 6) = <span class='frac'><span class='num'>4</span><span class='den'>10</span></span> = <span class="ans-highlight"><span class='frac'><span class='num'>2</span><span class='den'>5</span></span></span>.<br/><br/>
-        <span class="step-label">(iv)</span> 1-digit numbers are {1, 2, 3, 4, 5, 6, 7, 8, 9}. Favourable outcomes = 9.<br/>
-        P(getting a 1-digit number) = <span class="ans-highlight"><span class='frac'><span class='num'>9</span><span class='den'>10</span></span></span>.
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">5. If you have a spinning wheel with 3 green sectors, 1 blue sector and 1 red sector, what is the probability of getting a green sector? What is the probability of getting a non blue sector?</div>
-      <div class="sol-box">
-        <span class="step-label">Solution:</span><br/>
-        Total number of sectors = 3 (Green) + 1 (Blue) + 1 (Red) = 5.<br/><br/>
-        - Number of green sectors = 3.<br/>
-        P(getting a green sector) = <span class="ans-highlight"><span class='frac'><span class='num'>3</span><span class='den'>5</span></span></span>.<br/><br/>
-        - Number of non-blue sectors = 3 (Green) + 1 (Red) = 4.<br/>
-        P(getting a non-blue sector) = <span class="ans-highlight"><span class='frac'><span class='num'>4</span><span class='den'>5</span></span></span>.
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">6. Find the probabilities of the events given in Question 2.</div>
-      <div class="sol-box">
-        <span class="step-label">Solution:</span><br/>
-        Total outcomes when throwing a die = 6 ({1, 2, 3, 4, 5, 6}).<br/><br/>
-        <span class="step-label">(i)(a)</span> Prime numbers are {2, 3, 5}. Favourable outcomes = 3.<br/>
-        P(prime number) = <span class='frac'><span class='num'>3</span><span class='den'>6</span></span> = <span class="ans-highlight"><span class='frac'><span class='num'>1</span><span class='den'>2</span></span></span>.<br/><br/>
-        <span class="step-label">(i)(b)</span> Non-prime numbers are {1, 4, 6}. Favourable outcomes = 3.<br/>
-        P(not a prime number) = <span class='frac'><span class='num'>3</span><span class='den'>6</span></span> = <span class="ans-highlight"><span class='frac'><span class='num'>1</span><span class='den'>2</span></span></span>.<br/><br/>
-        <span class="step-label">(ii)(a)</span> Number greater than 5 is {6}. Favourable outcomes = 1.<br/>
-        P(number greater than 5) = <span class="ans-highlight"><span class='frac'><span class='num'>1</span><span class='den'>6</span></span></span>.<br/><br/>
-        <span class="step-label">(ii)(b)</span> Numbers not greater than 5 are {1, 2, 3, 4, 5}. Favourable outcomes = 5.<br/>
-        P(number not greater than 5) = <span class="ans-highlight"><span class='frac'><span class='num'>5</span><span class='den'>6</span></span></span>.
-      </div>
-    </div>
-  </div>
-`;
-
 export const c8Math4: ChapterContent = {
   id: "c8-math-4",
   number: 4,
-  title: "Data Handling",
+  title: "Practical Geometry",
   introduction:
-    "In this chapter, we explore tools like Frequency Distribution Tables, Pie Charts, and Probability.",
-  mcqs: [
+    "In this chapter, we explore practical geometry and the systematic construction of quadrilaterals using a ruler and a pair of compasses. We learn why five independent measurements are necessary to determine a unique quadrilateral, how to draw accurate rough sketches, and step-by-step techniques to construct quadrilaterals given four sides and one diagonal.",
+  definitions: [
     {
-      id: "m1",
-      question: "Central angle formula:",
-      options: [
-        "(<span class='frac'><span class='num'>Value</span><span class='den'>Total</span></span>)x360°",
-        "(<span class='frac'><span class='num'>Value</span><span class='den'>Total</span></span>)x180°",
-        "Value x 360°",
-        "<span class='frac'><span class='num'>Total</span><span class='den'>Value</span></span>",
-      ],
-      correctAnswer:
-        "(<span class='frac'><span class='num'>Value</span><span class='den'>Total</span></span>)x360°",
+      term: "Unique Quadrilateral",
+      description:
+        "A quadrilateral whose size, shape, and angles are rigidly fixed by a specific set of 5 independent measurements.",
     },
     {
-      id: "m2",
-      question: "Sum of angles in pie chart:",
-      options: ["180°", "360°", "90°", "270°"],
-      correctAnswer: "360°",
+      term: "Rough Sketch",
+      description:
+        "A preliminary freehand diagram labeled with given dimensions that serves as a visual guide before executing the actual compass construction.",
     },
     {
-      id: "m3",
-      question: "P(Impossible event):",
-      options: ["1", "0", "0.5", "2"],
-      correctAnswer: "0",
+      term: "Diagonal",
+      description:
+        "A straight line segment joining two non-consecutive vertices of a polygon, which divides a quadrilateral into two constructible triangles.",
     },
     {
-      id: "m4",
-      question: "P(Sure event):",
-      options: ["0", "1", "0.5", "100"],
-      correctAnswer: "1",
-    },
-    {
-      id: "m5",
-      question: "Die faces are:",
-      options: ["4", "6", "8", "12"],
-      correctAnswer: "6",
-    },
-    {
-      id: "m6",
-      question: "Outcome of tossing 1 coin:",
-      options: ["1", "2", "3", "4"],
-      correctAnswer: "2",
-    },
-    {
-      id: "m7",
-      question: "P(Head) in coin toss:",
-      options: [
-        "1",
-        "0",
-        "<span class='frac'><span class='num'>1</span><span class='den'>2</span></span>",
-        "<span class='frac'><span class='num'>1</span><span class='den'>4</span></span>",
-      ],
-      correctAnswer:
-        "<span class='frac'><span class='num'>1</span><span class='den'>2</span></span>",
-    },
-    {
-      id: "m8",
-      question: "Range = Max value - ?",
-      options: ["Min value", "Total", "Mean", "Median"],
-      correctAnswer: "Min value",
-    },
-    {
-      id: "m9",
-      question: "Tally marks are in groups of:",
-      options: ["4", "5", "10", "2"],
-      correctAnswer: "5",
-    },
-    {
-      id: "m10",
-      question: "P(Even number) in die:",
-      options: [
-        "<span class='frac'><span class='num'>1</span><span class='den'>2</span></span>",
-        "<span class='frac'><span class='num'>1</span><span class='den'>3</span></span>",
-        "<span class='frac'><span class='num'>1</span><span class='den'>6</span></span>",
-        "1",
-      ],
-      correctAnswer:
-        "<span class='frac'><span class='num'>1</span><span class='den'>2</span></span>",
+      term: "Triangulation",
+      description:
+        "The geometric principle of splitting a polygon into triangles to facilitate step-by-step compass and straightedge construction.",
     },
   ],
-  summary: [
-    "Pie charts represent relationship of parts to a whole.",
-    "Probability = Fav <span class='frac'><span class='num'>outcomes</span><span class='den'>Total</span></span> outcomes.",
+  keyPoints: [
+    "A quadrilateral has 10 elements: 4 sides, 4 angles, and 2 diagonals.",
+    "A minimum of 5 independent measurements are required to construct a unique quadrilateral.",
+    "Four sides alone are not enough because hinges can flex into infinitely many shapes; a 5th measurement fixes the quadrilateral rigidly.",
+    "Case I: When four sides and one diagonal are given, construct the base triangle first using SSS, then locate the fourth vertex using intersecting arcs.",
+    "Opposite sides of a parallelogram are equal: ME = OR and MO = RE.",
+    "All four sides of a rhombus are equal: BE = ES = ST = TB.",
   ],
+  formulas: [],
+  crux: [],
   exercises: [
-    { id: "ex4-1", name: "Exercise 4.1", questions: [] },
-    { id: "ex4-2", name: "Exercise 4.2", questions: [] },
+    {
+      id: "ex4-1",
+      name: "Exercise 4.1",
+      questions: [
+        {
+          id: "c8-m4-ex4-1-q1-1",
+          number: "1(i)",
+          question: "Construct Quadrilateral ABCD: AB = 4.5 cm, BC = 5.5 cm, CD = 4 cm, AD = 6 cm, AC = 7 cm.",
+          solution: ["See complete step-by-step construction with compass arcs in the interactive Web View."],
+        },
+        {
+          id: "c8-m4-ex4-1-q1-2",
+          number: "1(ii)",
+          question: "Construct Quadrilateral JUMP: JU = 3.5 cm, UM = 4 cm, MP = 5 cm, PJ = 4.5 cm, PU = 6.5 cm.",
+          solution: ["See complete step-by-step construction with compass arcs in the interactive Web View."],
+        },
+        {
+          id: "c8-m4-ex4-1-q1-3",
+          number: "1(iii)",
+          question: "Construct Parallelogram MORE: OR = 6 cm, RE = 4.5 cm, EO = 7.5 cm.",
+          solution: ["See complete step-by-step construction with compass arcs in the interactive Web View."],
+        },
+        {
+          id: "c8-m4-ex4-1-q1-4",
+          number: "1(iv)",
+          question: "Construct Rhombus BEST: BE = 4.5 cm, ET = 6 cm.",
+          solution: ["See complete step-by-step construction with compass arcs in the interactive Web View."],
+        },
+      ],
+    },
+  ],
+  mcqs: [
+  {
+    "id": "c8-m4-q1",
+    "question": "How many independent measurements are required to construct a unique quadrilateral?",
+    "options": [
+      "A):   3",
+      "B):   4",
+      "C):   5",
+      "D):   6"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Exactly 5 independent measurements (sides, angles, diagonals) are necessary and sufficient to construct a unique quadrilateral."
+  },
+  {
+    "id": "c8-m4-q2",
+    "question": "Can a quadrilateral ABCD be constructed if only the lengths of its four sides are given?",
+    "options": [
+      "A):   Yes, always",
+      "B):   No, a fifth measurement (diagonal or angle) is required",
+      "C):   Yes, if all sides are equal",
+      "D):   Yes, if opposite sides are equal"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Four sides do not fix the shape of a quadrilateral rigidly because the angles can flex. A fifth measurement (such as a diagonal or an angle) is required."
+  },
+  {
+    "id": "c8-m4-q3",
+    "question": "To construct a unique parallelogram, what is the minimum number of measurements needed?",
+    "options": [
+      "A):   2",
+      "B):   3",
+      "C):   4",
+      "D):   5"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Since opposite sides of a parallelogram are equal, knowing 2 adjacent sides and 1 diagonal (or 1 included angle) provides 3 measurements, which is sufficient because the other 2 sides are automatically known."
+  },
+  {
+    "id": "c8-m4-q4",
+    "question": "To construct a unique square, how many measurements are required?",
+    "options": [
+      "A):   1",
+      "B):   2",
+      "C):   3",
+      "D):   4"
+    ],
+    "correctAnswer": "A",
+    "explanation": "For a square, all 4 sides are equal and all 4 angles are 90°. Therefore, just 1 measurement (either side length or diagonal length) is sufficient."
+  },
+  {
+    "id": "c8-m4-q5",
+    "question": "To construct a rhombus uniquely, what minimum measurements are sufficient?",
+    "options": [
+      "A):   1 side only",
+      "B):   1 side and 1 diagonal (or both diagonals)",
+      "C):   All 4 sides",
+      "D):   3 angles"
+    ],
+    "correctAnswer": "B",
+    "explanation": "All sides of a rhombus are equal. Giving 1 side and 1 diagonal (or both diagonals) completely determines the rhombus."
+  },
+  {
+    "id": "c8-m4-q6",
+    "question": "In quadrilateral ABCD, if AB = 4 cm, BC = 5 cm, and diagonal AC = 10 cm, can triangle ABC be constructed?",
+    "options": [
+      "A):   Yes, by SSS criterion",
+      "B):   No, because AB + BC < AC (triangle inequality violated)",
+      "C):   Yes, because all lengths are positive",
+      "D):   Cannot be determined"
+    ],
+    "correctAnswer": "B",
+    "explanation": "By the Triangle Inequality Theorem, the sum of any two sides of a triangle must be strictly greater than the third side. Here, AB + BC = 4 + 5 = 9 cm < 10 cm, so no such triangle can exist."
+  },
+  {
+    "id": "c8-m4-q7",
+    "question": "When four sides and one diagonal are given, the quadrilateral is constructed by dividing it into:",
+    "options": [
+      "A):   Two triangles",
+      "B):   Three triangles",
+      "C):   Two rectangles",
+      "D):   Four squares"
+    ],
+    "correctAnswer": "A",
+    "explanation": "A single diagonal divides a quadrilateral into two triangles, each of which can be constructed using the SSS criterion."
+  },
+  {
+    "id": "c8-m4-q8",
+    "question": "To construct a unique rectangle, what measurements are needed?",
+    "options": [
+      "A):   1 side",
+      "B):   2 adjacent sides (length and breadth)",
+      "C):   4 sides",
+      "D):   3 angles"
+    ],
+    "correctAnswer": "B",
+    "explanation": "In a rectangle, all angles are 90° and opposite sides are equal. Hence, giving 2 adjacent sides (length and breadth) is sufficient."
+  },
+  {
+    "id": "c8-m4-q9",
+    "question": "If two diagonals and three sides of a quadrilateral are given, which case of construction does it belong to?",
+    "options": [
+      "A):   Case I",
+      "B):   Case II",
+      "C):   Case III",
+      "D):   Case IV"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Case II represents the construction of a quadrilateral when its two diagonals and three sides are given."
+  },
+  {
+    "id": "c8-m4-q10",
+    "question": "Before starting any geometric construction with ruler and compass, the first essential step is to:",
+    "options": [
+      "A):   Draw a rough sketch with labeled measurements",
+      "B):   Sharpen both ends of the pencil",
+      "C):   Draw a 90° angle",
+      "D):   Draw a circle of radius 5 cm"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Drawing a rough sketch with all given measurements labeled gives a visual plan and shows which triangle should be constructed first."
+  },
+  {
+    "id": "c8-m4-q11",
+    "question": "In constructing a rhombus whose two diagonals d₁ and d₂ are given, what property of its diagonals is used?",
+    "options": [
+      "A):   Diagonals are parallel",
+      "B):   Diagonals are equal",
+      "C):   Diagonals are perpendicular bisectors of each other",
+      "D):   Diagonals are tangent to sides"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The diagonals of a rhombus bisect each other at right angles (90°). Thus, drawing one diagonal and its perpendicular bisector gives the four vertices."
+  },
+  {
+    "id": "c8-m4-q12",
+    "question": "A quadrilateral has a total of how many parts (elements)?",
+    "options": [
+      "A):   6 parts",
+      "B):   8 parts",
+      "C):   10 parts",
+      "D):   12 parts"
+    ],
+    "correctAnswer": "C",
+    "explanation": "A quadrilateral has 10 parts: 4 sides, 4 angles, and 2 diagonals."
+  },
+  {
+    "id": "c8-m4-q13",
+    "question": "To construct quadrilateral MORE where OR = 6 cm, RE = 4.5 cm, EO = 7.5 cm, what type of quadrilateral is it?",
+    "options": [
+      "A):   Trapezium",
+      "B):   Kite",
+      "C):   Parallelogram",
+      "D):   Square"
+    ],
+    "correctAnswer": "C",
+    "explanation": "MORE is a parallelogram with opposite sides ME = OR = 6 cm, MO = RE = 4.5 cm, and diagonal EO = 7.5 cm."
+  },
+  {
+    "id": "c8-m4-q14",
+    "question": "In rhombus BEST with BE = 4.5 cm and ET = 6 cm, the length of side ST is:",
+    "options": [
+      "A):   6 cm",
+      "B):   4.5 cm",
+      "C):   3 cm",
+      "D):   9 cm"
+    ],
+    "correctAnswer": "B",
+    "explanation": "All four sides of a rhombus are equal in length: BE = ES = ST = TB = 4.5 cm."
+  },
+  {
+    "id": "c8-m4-q15",
+    "question": "When three sides and two included angles are given, what is the first step of construction?",
+    "options": [
+      "A):   Draw any diagonal",
+      "B):   Draw the side that lies between the two given angles",
+      "C):   Construct a circle",
+      "D):   Draw the angle bisector"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Drawing the side between the two included angles allows constructing the two given angles at its endpoints, forming the base of the construction."
+  }
+],
+  summary: [
+    "Five independent measurements are required to determine a unique quadrilateral.",
+    "Always draw a rough sketch and choose a suitable base triangle to construct first.",
+    "Compass arcs drawn from two known vertices pinpoint the position of the unknown vertex.",
+    "Special quadrilaterals like squares, rectangles, and rhombuses require fewer measurements due to inherent geometric symmetry.",
   ],
   isHtmlView: true,
-  htmlOverview: `
-    <style>
-    .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
-    .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
-    .frac .den { padding: 0 2px; }
-      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
-      
-      .premium-container {
-        padding: 20px;
-        color: #ffffff;
-        font-family: 'Outfit', sans-serif !important;
-        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-        border-radius: 20px;
-        margin: 10px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-      }
-
-      .section-box {
-        background: rgba(255, 255, 255, 0.05);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 15px;
-        padding: 20px;
-        margin-bottom: 20px;
-        backdrop-filter: blur(10px);
-      }
-
-      .section-header {
-        color: #2196F3;
-        font-size: 20px;
-        font-weight: 600;
-        margin-bottom: 15px;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-      }
-
-      .prop-table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 10px;
-        background: rgba(0,0,0,0.2);
-        border-radius: 12px;
-        overflow: hidden;
-      }
-
-      .prop-table th, .prop-table td {
-        padding: 12px;
-        border: 1px solid rgba(255,255,255,0.1);
-        text-align: left;
-        font-size: 15px;
-      }
-
-      .prop-table th {
-        background: rgba(255,255,255,0.1);
-        color: #64B5F6;
-        font-weight: 700;
-      }
-
-      .highlight { color: #64B5F6; font-weight: 600; }
-      
-      .intro-text {
-        line-height: 1.6;
-        font-size: 16px;
-        color: #e0e0e0;
-        text-align: justify;
-      }
-
-      .formula-badge {
-        background: rgba(33, 150, 243, 0.2);
-        border: 1px dashed #2196F3;
-        padding: 10px;
-        border-radius: 8px;
-        margin-top: 10px;
-        text-align: center;
-        font-weight: bold;
-        color: #90CAF9;
-      }
-        .q-text, .q-subtext, .sol-step, .sol-box { font-size: 16px; }
-  </style>
-
-    <div class="premium-container">
-      <div class="section-box">
-        <div class="section-header"><span>✦</span> Introduction</div>
-        <div class="intro-text">
-          Data mostly is available to us in an unorganised form, called <strong>Raw Data</strong>. In order to draw meaningful inferences from any data, we need to organise the data systematically. In this chapter, we explore tools like Frequency Distribution Tables, Pie Charts, and Probability to handle data effectively.
-        </div>
-      </div>
-
-      <div class="section-box">
-        <div class="section-header"><span>✦</span> Key Concepts & Formulas</div>
-        <table class="prop-table">
-          <tr>
-            <th>Concept</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td><strong>Circle <span class='frac'><span class='num'>Graph</span><span class='den'>Pie</span></span> Chart</strong></td>
-            <td>
-              Shows the relationship between a whole and its parts.<br/>
-              The whole circle is divided into sectors. The size of each sector is proportional to the activity or information it represents.
-              <div class="formula-badge">Angle = (<span class='frac'><span class='num'>Value</span><span class='den'>Total</span></span>) × 360°</div>
-            </td>
-          </tr>
-          <tr>
-            <td><strong>Probability</strong></td>
-            <td>
-              The chance of an event happening.<br/>
-              An event that has many possibilities can have outcomes that are equally likely to happen.
-              <div class="formula-badge">Prob = (Favourable Outcomes) / (Total Outcomes)</div>
-            </td>
-          </tr>
-        </table>
-      </div>
-    </div>
-  `,
+  htmlOverview: "\n\n<style>\n  * { box-sizing: border-box; }\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; text-align: center; }\n  .frac .den { padding: 1px 4px; text-align: center; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(171, 71, 188, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); text-align: left !important; }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #AB47BC; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; text-align: left !important; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 16px; font-weight: 500; text-align: left !important; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(171, 71, 188, 0.2); text-align: left !important; }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; text-align: left !important; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #AB47BC; border-radius: 8px; padding: 14px 16px; margin-top: 12px; text-align: left !important; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #CE93D8; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; text-align: left !important; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; text-align: left !important; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; text-align: left !important; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; text-align: left !important; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; text-align: left !important; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; text-align: left !important; }\n  .prop-chip { background: rgba(171, 71, 188, 0.15); border: 1px solid #AB47BC; color: #E1BEE7; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 4px 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(171, 71, 188, 0.4); border-radius: 10px; padding: 14px; margin: 16px 0; text-align: center !important; }\n  .diagram-wrapper { display: block; background: #FFFFFF; border-radius: 8px; padding: 10px 8px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.25); text-align: center !important; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center !important; margin-top: 10px; font-weight: 500; }\n  .matrix-table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 14.5px; }\n  .matrix-table th { background: rgba(171, 71, 188, 0.25); color: #E1BEE7; padding: 10px; border: 1px solid rgba(171, 71, 188, 0.3); text-align: left; }\n  .matrix-table td { padding: 10px; border: 1px solid rgba(255, 255, 255, 0.1); color: #E2E8F0; line-height: 1.6; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Hero Header -->\n  <div style=\"background: linear-gradient(135deg, rgba(171, 71, 188, 0.25), rgba(106, 27, 154, 0.15)); border: 1.5px solid #AB47BC; border-radius: 14px; padding: 18px; margin-bottom: 20px; text-align: center;\">\n    <div style=\"font-size: 22px; font-weight: 800; color: #AB47BC; margin-bottom: 6px;\">\n      📐 Chapter 4: Practical Geometry\n    </div>\n    <div style=\"color: #CBD5E1; font-size: 14.5px; line-height: 1.5;\">\n      Class 8 NCERT Mathematics &bull; Complete Reference Guide &amp; Construction Blueprint\n    </div>\n  </div>\n\n  <!-- Section 1: Conditions for Unique Quadrilateral -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 1. Condition for Constructing a Unique Quadrilateral</div>\n    <div class=\"q-text\">\n      A quadrilateral has <b>10 elements</b>: 4 sides, 4 angles, and 2 diagonals.<br/>\n      To construct a unique quadrilateral, we do <b>NOT</b> need all 10 measurements. Exactly <b>5 independent measurements</b> are sufficient to determine and construct a unique quadrilateral!\n    </div>\n    <div class=\"sol-box\">\n      <div style=\"color: #FFFFFF; font-size: 14.5px; line-height: 1.7;\">\n        &bull; <b>Why 4 sides are not enough?</b> Four rigid sticks connected at hinges can flex into infinitely many quadrilaterals of different shapes. A fifth measurement (such as a diagonal or an angle) fixes the shape rigidly!<br/>\n        &bull; <b>The Triangle Splitting Principle:</b> Every quadrilateral can be split into <b>two triangles</b> by drawing a diagonal. Since 3 measurements determine a triangle (SSS, SAS, ASA), constructing one triangle and then locating the 4th vertex requires exactly <b>3 + 2 = 5 measurements</b>.\n      </div>\n    </div>\n  </div>\n\n  <!-- Section 2: The 5 Construction Cases -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 2. The Five Standard Construction Cases</div>\n    <div class=\"q-text\">\n      NCERT Mathematics specifies 5 distinct cases where a quadrilateral can be uniquely constructed:\n    </div>\n\n    <div style=\"overflow-x: auto;\">\n      <table class=\"matrix-table\">\n        <thead>\n          <tr>\n            <th>Case</th>\n            <th>Given Measurements</th>\n            <th>Triangulation Strategy</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr>\n            <td><b style=\"color: #AB47BC;\">Case I</b></td>\n            <td><b>Four Sides and One Diagonal</b> (e.g., Ex 4.1)</td>\n            <td>Diagonal divides quad into two triangles. Construct first triangle by SSS, then locate 4th vertex by intersecting arcs.</td>\n          </tr>\n          <tr>\n            <td><b style=\"color: #AB47BC;\">Case II</b></td>\n            <td><b>Two Diagonals and Three Sides</b> (e.g., Ex 4.2)</td>\n            <td>Use one diagonal and two sides to construct base triangle; use second diagonal and third side to locate remaining vertex.</td>\n          </tr>\n          <tr>\n            <td><b style=\"color: #AB47BC;\">Case III</b></td>\n            <td><b>Two Adjacent Sides and Three Angles</b> (e.g., Ex 4.3)</td>\n            <td>Draw base side, construct angles at both ends using protractor/compass, cut adjacent side, and construct third angle.</td>\n          </tr>\n          <tr>\n            <td><b style=\"color: #AB47BC;\">Case IV</b></td>\n            <td><b>Three Sides and Two Included Angles</b> (e.g., Ex 4.4)</td>\n            <td>Draw the side between the two known angles, construct the two angles, mark off the other two sides on the rays.</td>\n          </tr>\n          <tr>\n            <td><b style=\"color: #AB47BC;\">Case V</b></td>\n            <td><b>Special Quadrilaterals</b> (Square, Rhombus, Rectangle)</td>\n            <td>Symmetry and known geometric properties (e.g. all sides equal, right angles, perpendicular bisecting diagonals) reduce required measurements.</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n  </div>\n\n  <!-- Section 3: Golden Rules of Construction -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 3. The 3 Golden Rules of Geometric Construction</div>\n    \n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #AB47BC;\">Rule 1: Always Draw a Rough Sketch First</b></div>\n      <div style=\"color: #FFFFFF; font-size: 15px; line-height: 1.7;\">\n        Before touching the ruler or compass, draw a freehand rough sketch. Label all 4 vertices in cyclic order (<b style=\"color: #AB47BC;\">ABCD</b>), mark all given lengths on sides and diagonals. This visual roadmap immediately reveals which triangle to construct first!\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #AB47BC;\">Rule 2: The Triangulation Base Method</b></div>\n      <div style=\"color: #FFFFFF; font-size: 15px; line-height: 1.7;\">\n        Choose the diagonal or longest side with the most known connections as the base line. Construct the primary triangle first using compass arcs.\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #AB47BC;\">Rule 3: Precise Compass Arc Intersections</b></div>\n      <div style=\"color: #FFFFFF; font-size: 15px; line-height: 1.7;\">\n        Always keep the pencil sharp and compass hinge tight. To locate any vertex, draw two arcs from two fixed centres with radii equal to the given distances. The single point of intersection gives the exact vertex location.\n      </div>\n    </div>\n  </div>\n\n  <!-- Section 4: Master Revision Cheat Sheet -->\n  <div class=\"q-card\" style=\"border-color: #4CAF50;\">\n    <div class=\"q-title\" style=\"color: #4CAF50;\">✦ 4. Master Revision Cheat Sheet</div>\n    <div style=\"font-size: 15px; color: #FFFFFF; line-height: 1.9;\">\n      &bull; <b>Total Elements in a Quadrilateral:</b> 10 (4 sides + 4 angles + 2 diagonals).<br/>\n      &bull; <b>Minimum Independent Measurements for Unique Quad:</b> Exactly <b>5</b>.<br/>\n      &bull; <b>Parallelogram Special Case:</b> Opposite sides are equal ($AB = CD$, $BC = AD$). Giving 2 adjacent sides and 1 diagonal provides all 5 needed measurements!<br/>\n      &bull; <b>Rhombus Special Case:</b> All 4 sides are equal ($a = b = c = d$). Giving 1 side and 1 diagonal provides all 5 needed measurements!<br/>\n      &bull; <b>Square Special Case:</b> Needs only <b>1 measurement</b> (side length or diagonal length), because all sides are equal and all angles are $90^circ$!<br/>\n      &bull; <b>Rectangle Special Case:</b> Needs only <b>2 measurements</b> (length and breadth), because opposite sides are equal and all angles are $90^circ$!\n    </div>\n  </div>\n\n</div>\n",
   htmlExercises: {
-    "ex4-1": ex41Content,
-    "ex4-2": ex42Content,
+    "ex4-1": "<style>\n  * { box-sizing: border-box; }\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; text-align: center; }\n  .frac .den { padding: 1px 4px; text-align: center; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(171, 71, 188, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); text-align: left !important; }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #AB47BC; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; text-align: left !important; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 14px; font-weight: 500; text-align: left !important; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(171, 71, 188, 0.2); text-align: left !important; }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; text-align: left !important; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #AB47BC; border-radius: 8px; padding: 14px 16px; margin-top: 12px; text-align: left !important; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #CE93D8; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; text-align: left !important; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; text-align: left !important; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; text-align: left !important; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; text-align: left !important; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; text-align: left !important; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; text-align: left !important; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(171, 71, 188, 0.4); border-radius: 10px; padding: 14px; margin: 16px 0; text-align: center !important; }\n  .diagram-wrapper { display: block; background: #FFFFFF; border-radius: 8px; padding: 10px 8px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.25); text-align: center !important; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center !important; margin-top: 10px; font-weight: 500; }\n  .step-label { color: #AB47BC; font-weight: 700; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Header Card -->\n  <div style=\"background: linear-gradient(135deg, rgba(171, 71, 188, 0.2), rgba(106, 27, 154, 0.1)); border: 1.5px solid #AB47BC; border-radius: 12px; padding: 14px 18px; margin-bottom: 20px;\">\n    <div style=\"font-size: 19px; font-weight: 800; color: #AB47BC; margin-bottom: 4px;\">\n      Exercise 4.1\n    </div>\n    <div style=\"color: #FFFFFF; font-size: 15px; font-weight: 500;\">\n      Construction of Quadrilaterals: When Four Sides and One Diagonal are Given\n    </div>\n  </div>\n\n  <!-- QUESTION 1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 1:</div>\n    <div class=\"q-text\">Construct the following quadrilaterals:</div>\n\n    <!-- SUBPART (i): ABCD -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">\n        <b style=\"color: #AB47BC; font-size: 16px;\">(i) Quadrilateral ABCD</b><br/>\n        <span style=\"color: #FFFFFF; font-weight: normal; font-size: 15px;\">\n          AB = 4.5 cm, BC = 5.5 cm, CD = 4 cm, AD = 6 cm, AC = 7 cm\n        </span>\n      </div>\n\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">💡 Solution &amp; Steps of Construction:</div>\n        \n        <div class=\"sol-step\">\n          <div>The rough sketch of the quadrilateral ABCD can be drawn as follows:</div>\n        </div>\n\n        <!-- 1. Rough Sketch ABCD -->\n        <div class=\"diagram-card\">\n          <div class=\"diagram-wrapper\">\n            <svg viewBox=\"0 0 380 230\" width=\"100%\" height=\"auto\">\n              <rect width=\"100%\" height=\"100%\" fill=\"#FFFFFF\" rx=\"8\"/>\n              <!-- Quadrilateral ABCD Rough Outline -->\n              <polygon points=\"70,180 270,180 300,75 100,65\" fill=\"#FFF3E0\" stroke=\"#E65100\" stroke-width=\"2.2\" stroke-dasharray=\"6,4\"/>\n              <!-- Diagonal AC -->\n              <line x1=\"100\" y1=\"65\" x2=\"270\" y2=\"180\" stroke=\"#D84315\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/>\n              <!-- Vertex Points -->\n              <circle cx=\"70\" cy=\"180\" r=\"3.5\" fill=\"#E65100\"/>\n              <circle cx=\"270\" cy=\"180\" r=\"3.5\" fill=\"#E65100\"/>\n              <circle cx=\"300\" cy=\"75\" r=\"3.5\" fill=\"#E65100\"/>\n              <circle cx=\"100\" cy=\"65\" r=\"3.5\" fill=\"#E65100\"/>\n              <!-- Labels -->\n              <text x=\"50\" y=\"190\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\">B</text>\n              <text x=\"280\" y=\"190\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\">C</text>\n              <text x=\"315\" y=\"80\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\">D</text>\n              <text x=\"90\" y=\"55\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\">A</text>\n              <!-- Dimension Texts -->\n              <text x=\"170\" y=\"200\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"middle\">5.5 cm</text>\n              <text x=\"65\" y=\"125\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\">4.5 cm</text>\n              <text x=\"310\" y=\"130\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\">4 cm</text>\n              <text x=\"200\" y=\"58\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\">6 cm</text>\n              <text x=\"195\" y=\"120\" font-size=\"13\" font-weight=\"700\" fill=\"#D84315\" transform=\"rotate(33 195 120)\">7 cm</text>\n            </svg>\n          </div>\n          <div class=\"diagram-caption\">📍 Rough Sketch of Quadrilateral ABCD</div>\n        </div>\n\n        <div class=\"sol-step\">\n          <div><b class=\"step-label\">(1)</b> &Delta;ABC can be constructed by using the given measurements as follows: Draw base line BC = 5.5 cm. With B as centre, draw an arc of radius 4.5 cm. With C as centre, draw an arc of radius 7 cm, cutting the previous arc at A. Join AB and AC.</div>\n        </div>\n\n        <!-- 2. Step 1 Construction: Triangle ABC -->\n        <div class=\"diagram-card\">\n          <div class=\"diagram-wrapper\">\n            <svg viewBox=\"0 0 380 230\" width=\"100%\" height=\"auto\">\n              <rect width=\"100%\" height=\"100%\" fill=\"#FFFFFF\" rx=\"8\"/>\n              <!-- Base BC -->\n              <line x1=\"70\" y1=\"180\" x2=\"270\" y2=\"180\" stroke=\"#0F172A\" stroke-width=\"2.5\"/>\n              <!-- Triangle ABC -->\n              <line x1=\"70\" y1=\"180\" x2=\"100\" y2=\"65\" stroke=\"#0F172A\" stroke-width=\"2.5\"/>\n              <line x1=\"100\" y1=\"65\" x2=\"270\" y2=\"180\" stroke=\"#0F172A\" stroke-width=\"2.2\"/>\n              <!-- Compass Arcs at A -->\n              <!-- Arc from B (r ~ 124) -->\n              <path d=\"M 85 55 A 124 124 0 0 1 120 75\" fill=\"none\" stroke=\"#D81B60\" stroke-width=\"2\"/>\n              <!-- Arc from C (r ~ 208) -->\n              <path d=\"M 115 55 A 208 208 0 0 0 85 78\" fill=\"none\" stroke=\"#D81B60\" stroke-width=\"2\"/>\n              <!-- Vertex Points -->\n              <circle cx=\"70\" cy=\"180\" r=\"3.5\" fill=\"#0F172A\"/>\n              <circle cx=\"270\" cy=\"180\" r=\"3.5\" fill=\"#0F172A\"/>\n              <circle cx=\"100\" cy=\"65\" r=\"3.5\" fill=\"#0F172A\"/>\n              <!-- Labels -->\n              <text x=\"50\" y=\"190\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\">B</text>\n              <text x=\"280\" y=\"190\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\">C</text>\n              <text x=\"90\" y=\"55\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\">A</text>\n              <text x=\"170\" y=\"200\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"middle\">5.5 cm</text>\n              <text x=\"65\" y=\"125\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\">4.5 cm</text>\n              <text x=\"195\" y=\"120\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\" transform=\"rotate(33 195 120)\">7 cm</text>\n            </svg>\n          </div>\n          <div class=\"diagram-caption\">📍 Step (1): Constructing Base Triangle &Delta;ABC with AC = 7 cm</div>\n        </div>\n\n        <div class=\"sol-step\">\n          <div><b class=\"step-label\">(2)</b> Vertex D is 6 cm away from vertex A. Therefore, while taking A as the centre, draw an arc of radius 6 cm.</div>\n        </div>\n\n        <!-- 3. Step 2 Construction: Arc from A -->\n        <div class=\"diagram-card\">\n          <div class=\"diagram-wrapper\">\n            <svg viewBox=\"0 0 380 230\" width=\"100%\" height=\"auto\">\n              <rect width=\"100%\" height=\"100%\" fill=\"#FFFFFF\" rx=\"8\"/>\n              <!-- Base and triangle ABC -->\n              <line x1=\"70\" y1=\"180\" x2=\"270\" y2=\"180\" stroke=\"#0F172A\" stroke-width=\"2.5\"/>\n              <line x1=\"70\" y1=\"180\" x2=\"100\" y2=\"65\" stroke=\"#0F172A\" stroke-width=\"2.5\"/>\n              <line x1=\"100\" y1=\"65\" x2=\"270\" y2=\"180\" stroke=\"#0F172A\" stroke-width=\"2.2\"/>\n              <!-- Arc from A (radius 6 cm ~ 200px) -->\n              <path d=\"M 290 60 A 200 200 0 0 1 310 95\" fill=\"none\" stroke=\"#D81B60\" stroke-width=\"2.2\"/>\n              <!-- Compass Arcs at A -->\n              <path d=\"M 85 55 A 124 124 0 0 1 120 75\" fill=\"none\" stroke=\"#D81B60\" stroke-width=\"1.8\"/>\n              <path d=\"M 115 55 A 208 208 0 0 0 85 78\" fill=\"none\" stroke=\"#D81B60\" stroke-width=\"1.8\"/>\n              <!-- Points & Labels -->\n              <circle cx=\"70\" cy=\"180\" r=\"3.5\" fill=\"#0F172A\"/>\n              <circle cx=\"270\" cy=\"180\" r=\"3.5\" fill=\"#0F172A\"/>\n              <circle cx=\"100\" cy=\"65\" r=\"3.5\" fill=\"#0F172A\"/>\n              <text x=\"50\" y=\"190\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\">B</text>\n              <text x=\"280\" y=\"190\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\">C</text>\n              <text x=\"90\" y=\"55\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\">A</text>\n              <text x=\"170\" y=\"200\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"middle\">5.5 cm</text>\n              <text x=\"65\" y=\"125\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\">4.5 cm</text>\n              <text x=\"195\" y=\"120\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\" transform=\"rotate(33 195 120)\">7 cm</text>\n            </svg>\n          </div>\n          <div class=\"diagram-caption\">📍 Step (2): Drawing an arc of radius 6 cm taking A as centre</div>\n        </div>\n\n        <div class=\"sol-step\">\n          <div><b class=\"step-label\">(3)</b> Taking C as the centre, draw an arc of radius 4 cm, cutting the previous arc at point D. Join D to A and C.</div>\n        </div>\n\n        <!-- 4. Step 3 Construction: Final ABCD -->\n        <div class=\"diagram-card\">\n          <div class=\"diagram-wrapper\">\n            <svg viewBox=\"0 0 380 230\" width=\"100%\" height=\"auto\">\n              <rect width=\"100%\" height=\"100%\" fill=\"#FFFFFF\" rx=\"8\"/>\n              <!-- Sides of Quadrilateral ABCD -->\n              <polygon points=\"70,180 270,180 300,75 100,65\" fill=\"none\" stroke=\"#0F172A\" stroke-width=\"2.5\"/>\n              <!-- Diagonal AC -->\n              <line x1=\"100\" y1=\"65\" x2=\"270\" y2=\"180\" stroke=\"#0F172A\" stroke-width=\"2\" stroke-dasharray=\"5,4\"/>\n              <!-- Compass Arcs at A -->\n              <path d=\"M 85 55 A 124 124 0 0 1 120 75\" fill=\"none\" stroke=\"#D81B60\" stroke-width=\"1.8\"/>\n              <path d=\"M 115 55 A 208 208 0 0 0 85 78\" fill=\"none\" stroke=\"#D81B60\" stroke-width=\"1.8\"/>\n              <!-- Intersecting Arcs at D -->\n              <!-- From A (radius 6 cm) -->\n              <path d=\"M 290 60 A 200 200 0 0 1 310 95\" fill=\"none\" stroke=\"#D81B60\" stroke-width=\"2\"/>\n              <!-- From C (radius 4 cm) -->\n              <path d=\"M 315 70 A 108 108 0 0 0 285 85\" fill=\"none\" stroke=\"#D81B60\" stroke-width=\"2\"/>\n              <!-- Points & Labels -->\n              <circle cx=\"70\" cy=\"180\" r=\"3.5\" fill=\"#0F172A\"/>\n              <circle cx=\"270\" cy=\"180\" r=\"3.5\" fill=\"#0F172A\"/>\n              <circle cx=\"300\" cy=\"75\" r=\"3.5\" fill=\"#0F172A\"/>\n              <circle cx=\"100\" cy=\"65\" r=\"3.5\" fill=\"#0F172A\"/>\n              <text x=\"50\" y=\"190\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\">B</text>\n              <text x=\"280\" y=\"190\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\">C</text>\n              <text x=\"315\" y=\"80\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\">D</text>\n              <text x=\"90\" y=\"55\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\">A</text>\n              <text x=\"170\" y=\"200\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"middle\">5.5 cm</text>\n              <text x=\"65\" y=\"125\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\">4.5 cm</text>\n              <text x=\"310\" y=\"130\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\">4 cm</text>\n              <text x=\"200\" y=\"58\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\">6 cm</text>\n              <text x=\"195\" y=\"120\" font-size=\"13\" font-weight=\"700\" fill=\"#64748B\" transform=\"rotate(33 195 120)\">7 cm</text>\n            </svg>\n          </div>\n          <div class=\"diagram-caption\">📍 Step (3): ABCD is the required quadrilateral</div>\n        </div>\n\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Result: </span>\n          <span class=\"ans-val\">ABCD is the required quadrilateral constructed with AC = 7 cm.</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- SUBPART (ii): JUMP -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">\n        <b style=\"color: #AB47BC; font-size: 16px;\">(ii) Quadrilateral JUMP</b><br/>\n        <span style=\"color: #FFFFFF; font-weight: normal; font-size: 15px;\">\n          JU = 3.5 cm, UM = 4 cm, MP = 5 cm, PJ = 4.5 cm, PU = 6.5 cm\n        </span>\n      </div>\n\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">💡 Solution &amp; Steps of Construction:</div>\n        \n        <div class=\"sol-step\">\n          <div>The rough sketch of the quadrilateral JUMP can be drawn as follows:</div>\n        </div>\n\n        <!-- 1. Rough Sketch JUMP -->\n        <div class=\"diagram-card\">\n          <div class=\"diagram-wrapper\">\n            <svg viewBox=\"0 0 380 260\" width=\"100%\" height=\"auto\">\n              <rect width=\"100%\" height=\"100%\" fill=\"#FFFFFF\" rx=\"8\"/>\n              <!-- Polygon JUMP Rough Outline -->\n              <polygon points=\"60,130 180,45 320,130 200,225\" fill=\"#FFF3E0\" stroke=\"#E65100\" stroke-width=\"2.2\" stroke-dasharray=\"6,4\"/>\n              <!-- Diagonal PU -->\n              <line x1=\"60\" y1=\"130\" x2=\"320\" y2=\"130\" stroke=\"#D84315\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/>\n              <!-- Points -->\n              <circle cx=\"60\" cy=\"130\" r=\"3.5\" fill=\"#E65100\"/>\n              <circle cx=\"180\" cy=\"45\" r=\"3.5\" fill=\"#E65100\"/>\n              <circle cx=\"320\" cy=\"130\" r=\"3.5\" fill=\"#E65100\"/>\n              <circle cx=\"200\" cy=\"225\" r=\"3.5\" fill=\"#E65100\"/>\n              <!-- Labels -->\n              <text x=\"40\" y=\"135\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\">P</text>\n              <text x=\"180\" y=\"32\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\" text-anchor=\"middle\">J</text>\n              <text x=\"330\" y=\"135\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\">U</text>\n              <text x=\"200\" y=\"248\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\" text-anchor=\"middle\">M</text>\n              <!-- Dimensions -->\n              <text x=\"105\" y=\"75\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\">4.5 cm</text>\n              <text x=\"260\" y=\"75\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\">3.5 cm</text>\n              <text x=\"110\" y=\"195\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\">5 cm</text>\n              <text x=\"270\" y=\"195\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\">4 cm</text>\n              <text x=\"190\" y=\"122\" font-size=\"13\" font-weight=\"700\" fill=\"#D84315\" text-anchor=\"middle\">6.5 cm</text>\n            </svg>\n          </div>\n          <div class=\"diagram-caption\">📍 Rough Sketch of Quadrilateral JUMP</div>\n        </div>\n\n        <div class=\"sol-step\">\n          <div><b class=\"step-label\">(1)</b> &Delta;JUP can be constructed by using the given measurements as follows: Draw diagonal base PU = 6.5 cm. With P as centre, draw an arc of radius 4.5 cm. With U as centre, draw an arc of radius 3.5 cm, intersecting the first arc at point J. Join PJ and JU.</div>\n        </div>\n\n        <!-- 2. Step 1 Construction: Triangle JUP -->\n        <div class=\"diagram-card\">\n          <div class=\"diagram-wrapper\">\n            <svg viewBox=\"0 0 380 230\" width=\"100%\" height=\"auto\">\n              <rect width=\"100%\" height=\"100%\" fill=\"#FFFFFF\" rx=\"8\"/>\n              <!-- Base PU -->\n              <line x1=\"60\" y1=\"140\" x2=\"320\" y2=\"140\" stroke=\"#0F172A\" stroke-width=\"2.5\"/>\n              <!-- Triangle JUP -->\n              <line x1=\"60\" y1=\"140\" x2=\"180\" y2=\"55\" stroke=\"#0F172A\" stroke-width=\"2.5\"/>\n              <line x1=\"180\" y1=\"55\" x2=\"320\" y2=\"140\" stroke=\"#0F172A\" stroke-width=\"2.5\"/>\n              <!-- Compass Arcs at J -->\n              <path d=\"M 165 40 A 147 147 0 0 1 195 68\" fill=\"none\" stroke=\"#D81B60\" stroke-width=\"2\"/>\n              <path d=\"M 195 40 A 164 164 0 0 0 165 68\" fill=\"none\" stroke=\"#D81B60\" stroke-width=\"2\"/>\n              <!-- Points & Labels -->\n              <circle cx=\"60\" cy=\"140\" r=\"3.5\" fill=\"#0F172A\"/>\n              <circle cx=\"180\" cy=\"55\" r=\"3.5\" fill=\"#0F172A\"/>\n              <circle cx=\"320\" cy=\"140\" r=\"3.5\" fill=\"#0F172A\"/>\n              <text x=\"40\" y=\"145\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\">P</text>\n              <text x=\"180\" y=\"40\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\" text-anchor=\"middle\">J</text>\n              <text x=\"330\" y=\"145\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\">U</text>\n              <text x=\"105\" y=\"85\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\">4.5 cm</text>\n              <text x=\"260\" y=\"85\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\">3.5 cm</text>\n              <text x=\"190\" y=\"160\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"middle\">6.5 cm</text>\n            </svg>\n          </div>\n          <div class=\"diagram-caption\">📍 Step (1): Constructing Base Triangle &Delta;JUP with PU = 6.5 cm</div>\n        </div>\n\n        <div class=\"sol-step\">\n          <div><b class=\"step-label\">(2)</b> Vertex M is 5 cm away from vertex P and 4 cm away from vertex U. Taking P and U as centres, draw arcs of radii 5 cm and 4 cm, respectively below PU. Let the point of intersection be M.</div>\n        </div>\n\n        <!-- 3. Step 2 Construction: Bottom Arcs for M -->\n        <div class=\"diagram-card\">\n          <div class=\"diagram-wrapper\">\n            <svg viewBox=\"0 0 380 260\" width=\"100%\" height=\"auto\">\n              <rect width=\"100%\" height=\"100%\" fill=\"#FFFFFF\" rx=\"8\"/>\n              <!-- Base PU and top triangle JUP -->\n              <line x1=\"60\" y1=\"120\" x2=\"320\" y2=\"120\" stroke=\"#0F172A\" stroke-width=\"2.5\"/>\n              <line x1=\"60\" y1=\"120\" x2=\"180\" y2=\"40\" stroke=\"#0F172A\" stroke-width=\"2.5\"/>\n              <line x1=\"180\" y1=\"40\" x2=\"320\" y2=\"120\" stroke=\"#0F172A\" stroke-width=\"2.5\"/>\n              <!-- Compass Arcs at J -->\n              <path d=\"M 165 28 A 147 147 0 0 1 195 52\" fill=\"none\" stroke=\"#D81B60\" stroke-width=\"1.8\"/>\n              <path d=\"M 195 28 A 164 164 0 0 0 165 52\" fill=\"none\" stroke=\"#D81B60\" stroke-width=\"1.8\"/>\n              <!-- Compass Arcs at M (below) -->\n              <path d=\"M 185 200 A 185 185 0 0 1 215 228\" fill=\"none\" stroke=\"#D81B60\" stroke-width=\"2.2\"/>\n              <path d=\"M 215 200 A 155 155 0 0 0 185 228\" fill=\"none\" stroke=\"#D81B60\" stroke-width=\"2.2\"/>\n              <!-- Points & Labels -->\n              <circle cx=\"60\" cy=\"120\" r=\"3.5\" fill=\"#0F172A\"/>\n              <circle cx=\"180\" cy=\"40\" r=\"3.5\" fill=\"#0F172A\"/>\n              <circle cx=\"320\" cy=\"120\" r=\"3.5\" fill=\"#0F172A\"/>\n              <text x=\"40\" y=\"125\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\">P</text>\n              <text x=\"180\" y=\"28\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\" text-anchor=\"middle\">J</text>\n              <text x=\"330\" y=\"125\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\">U</text>\n              <text x=\"200\" y=\"245\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\" text-anchor=\"middle\">M</text>\n              <text x=\"105\" y=\"70\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\">4.5 cm</text>\n              <text x=\"260\" y=\"70\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\">3.5 cm</text>\n              <text x=\"190\" y=\"140\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"middle\">6.5 cm</text>\n            </svg>\n          </div>\n          <div class=\"diagram-caption\">📍 Step (2): Arcs of radii 5 cm and 4 cm drawn below PU intersecting at M</div>\n        </div>\n\n        <div class=\"sol-step\">\n          <div><b class=\"step-label\">(3)</b> Join M to P and U. JUMP is the required quadrilateral.</div>\n        </div>\n\n        <!-- 4. Step 3 Construction: Final JUMP -->\n        <div class=\"diagram-card\">\n          <div class=\"diagram-wrapper\">\n            <svg viewBox=\"0 0 380 260\" width=\"100%\" height=\"auto\">\n              <rect width=\"100%\" height=\"100%\" fill=\"#FFFFFF\" rx=\"8\"/>\n              <!-- Full Polygon JUMP -->\n              <polygon points=\"60,120 180,40 320,120 200,215\" fill=\"none\" stroke=\"#0F172A\" stroke-width=\"2.5\"/>\n              <!-- Diagonal PU -->\n              <line x1=\"60\" y1=\"120\" x2=\"320\" y2=\"120\" stroke=\"#0F172A\" stroke-width=\"2\" stroke-dasharray=\"5,4\"/>\n              <!-- Compass Arcs at J -->\n              <path d=\"M 165 28 A 147 147 0 0 1 195 52\" fill=\"none\" stroke=\"#D81B60\" stroke-width=\"1.8\"/>\n              <path d=\"M 195 28 A 164 164 0 0 0 165 52\" fill=\"none\" stroke=\"#D81B60\" stroke-width=\"1.8\"/>\n              <!-- Compass Arcs at M -->\n              <path d=\"M 185 200 A 185 185 0 0 1 215 228\" fill=\"none\" stroke=\"#D81B60\" stroke-width=\"1.8\"/>\n              <path d=\"M 215 200 A 155 155 0 0 0 185 228\" fill=\"none\" stroke=\"#D81B60\" stroke-width=\"1.8\"/>\n              <!-- Points & Labels -->\n              <circle cx=\"60\" cy=\"120\" r=\"3.5\" fill=\"#0F172A\"/>\n              <circle cx=\"180\" cy=\"40\" r=\"3.5\" fill=\"#0F172A\"/>\n              <circle cx=\"320\" cy=\"120\" r=\"3.5\" fill=\"#0F172A\"/>\n              <circle cx=\"200\" cy=\"215\" r=\"3.5\" fill=\"#0F172A\"/>\n              <text x=\"40\" y=\"125\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\">P</text>\n              <text x=\"180\" y=\"28\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\" text-anchor=\"middle\">J</text>\n              <text x=\"330\" y=\"125\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\">U</text>\n              <text x=\"200\" y=\"240\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\" text-anchor=\"middle\">M</text>\n              <text x=\"105\" y=\"70\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\">4.5 cm</text>\n              <text x=\"260\" y=\"70\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\">3.5 cm</text>\n              <text x=\"110\" y=\"185\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\">5 cm</text>\n              <text x=\"270\" y=\"185\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\">4 cm</text>\n              <text x=\"190\" y=\"112\" font-size=\"13\" font-weight=\"700\" fill=\"#64748B\" text-anchor=\"middle\">6.5 cm</text>\n            </svg>\n          </div>\n          <div class=\"diagram-caption\">📍 Step (3): JUMP is the required quadrilateral</div>\n        </div>\n\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Result: </span>\n          <span class=\"ans-val\">JUMP is the required quadrilateral constructed with PU = 6.5 cm.</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- SUBPART (iii): MORE -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">\n        <b style=\"color: #AB47BC; font-size: 16px;\">(iii) Parallelogram MORE</b><br/>\n        <span style=\"color: #FFFFFF; font-weight: normal; font-size: 15px;\">\n          OR = 6 cm, RE = 4.5 cm, EO = 7.5 cm\n        </span>\n      </div>\n\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">💡 Solution &amp; Steps of Construction:</div>\n        \n        <div class=\"sol-step\">\n          <div>We know that opposite sides of a parallelogram are equal in length, and also parallel to each other:</div>\n          <div style=\"padding-left: 12px;\">&bull; <b>ME = OR = 6 cm</b></div>\n          <div style=\"padding-left: 12px;\">&bull; <b>MO = RE = 4.5 cm</b></div>\n          <div>The rough sketch of the parallelogram MORE can be drawn as follows:</div>\n        </div>\n\n        <!-- 1. Rough Sketch MORE -->\n        <div class=\"diagram-card\">\n          <div class=\"diagram-wrapper\">\n            <svg viewBox=\"0 0 380 230\" width=\"100%\" height=\"auto\">\n              <rect width=\"100%\" height=\"100%\" fill=\"#FFFFFF\" rx=\"8\"/>\n              <!-- Polygon MORE Rough Outline -->\n              <polygon points=\"80,180 270,180 300,65 110,65\" fill=\"#FFF3E0\" stroke=\"#E65100\" stroke-width=\"2.2\" stroke-dasharray=\"6,4\"/>\n              <!-- Diagonal EO -->\n              <line x1=\"80\" y1=\"180\" x2=\"300\" y2=\"65\" stroke=\"#D84315\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/>\n              <!-- Points -->\n              <circle cx=\"80\" cy=\"180\" r=\"3.5\" fill=\"#E65100\"/>\n              <circle cx=\"270\" cy=\"180\" r=\"3.5\" fill=\"#E65100\"/>\n              <circle cx=\"300\" cy=\"65\" r=\"3.5\" fill=\"#E65100\"/>\n              <circle cx=\"110\" cy=\"65\" r=\"3.5\" fill=\"#E65100\"/>\n              <!-- Labels -->\n              <text x=\"60\" y=\"190\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\">O</text>\n              <text x=\"280\" y=\"190\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\">R</text>\n              <text x=\"312\" y=\"65\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\">E</text>\n              <text x=\"95\" y=\"60\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\">M</text>\n              <!-- Dimensions -->\n              <text x=\"175\" y=\"200\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"middle\">6 cm</text>\n              <text x=\"305\" y=\"130\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\">4.5 cm</text>\n              <text x=\"200\" y=\"55\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"middle\">6 cm</text>\n              <text x=\"70\" y=\"125\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\">4.5 cm</text>\n              <text x=\"190\" y=\"115\" font-size=\"13\" font-weight=\"700\" fill=\"#D84315\" transform=\"rotate(-27 190 115)\">7.5 cm</text>\n            </svg>\n          </div>\n          <div class=\"diagram-caption\">📍 Rough Sketch of Parallelogram MORE</div>\n        </div>\n\n        <div class=\"sol-step\">\n          <div><b class=\"step-label\">(1)</b> &Delta;EOR can be constructed by using the given measurements as follows: Draw base OR = 6 cm. With O as centre, draw an arc of radius 7.5 cm. With R as centre, draw an arc of radius 4.5 cm, intersecting the first arc at E. Join OE and RE.</div>\n        </div>\n\n        <!-- 2. Step 1 Construction: Triangle EOR -->\n        <div class=\"diagram-card\">\n          <div class=\"diagram-wrapper\">\n            <svg viewBox=\"0 0 380 230\" width=\"100%\" height=\"auto\">\n              <rect width=\"100%\" height=\"100%\" fill=\"#FFFFFF\" rx=\"8\"/>\n              <!-- Base OR -->\n              <line x1=\"80\" y1=\"180\" x2=\"270\" y2=\"180\" stroke=\"#0F172A\" stroke-width=\"2.5\"/>\n              <!-- Triangle EOR -->\n              <line x1=\"80\" y1=\"180\" x2=\"300\" y2=\"65\" stroke=\"#0F172A\" stroke-width=\"2.2\"/>\n              <line x1=\"270\" y1=\"180\" x2=\"300\" y2=\"65\" stroke=\"#0F172A\" stroke-width=\"2.5\"/>\n              <!-- Compass Arcs at E -->\n              <path d=\"M 285 50 A 247 247 0 0 1 315 80\" fill=\"none\" stroke=\"#D81B60\" stroke-width=\"2\"/>\n              <path d=\"M 315 50 A 118 118 0 0 0 285 80\" fill=\"none\" stroke=\"#D81B60\" stroke-width=\"2\"/>\n              <!-- Points & Labels -->\n              <circle cx=\"80\" cy=\"180\" r=\"3.5\" fill=\"#0F172A\"/>\n              <circle cx=\"270\" cy=\"180\" r=\"3.5\" fill=\"#0F172A\"/>\n              <circle cx=\"300\" cy=\"65\" r=\"3.5\" fill=\"#0F172A\"/>\n              <text x=\"60\" y=\"190\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\">O</text>\n              <text x=\"280\" y=\"190\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\">R</text>\n              <text x=\"312\" y=\"65\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\">E</text>\n              <text x=\"175\" y=\"200\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"middle\">6 cm</text>\n              <text x=\"305\" y=\"130\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\">4.5 cm</text>\n              <text x=\"190\" y=\"115\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\" transform=\"rotate(-27 190 115)\">7.5 cm</text>\n            </svg>\n          </div>\n          <div class=\"diagram-caption\">📍 Step (1): Constructing Base Triangle &Delta;EOR with EO = 7.5 cm</div>\n        </div>\n\n        <div class=\"sol-step\">\n          <div><b class=\"step-label\">(2)</b> Vertex M is 4.5 cm away from vertex O and 6 cm away from vertex E. Therefore, while taking O and E as centres, draw arcs of 4.5 cm radius and 6 cm radius, respectively. These will intersect each other at point M.</div>\n        </div>\n\n        <!-- 3. Step 2 Construction: Arcs at M -->\n        <div class=\"diagram-card\">\n          <div class=\"diagram-wrapper\">\n            <svg viewBox=\"0 0 380 230\" width=\"100%\" height=\"auto\">\n              <rect width=\"100%\" height=\"100%\" fill=\"#FFFFFF\" rx=\"8\"/>\n              <!-- Base OR and Triangle EOR -->\n              <line x1=\"80\" y1=\"180\" x2=\"270\" y2=\"180\" stroke=\"#0F172A\" stroke-width=\"2.5\"/>\n              <line x1=\"80\" y1=\"180\" x2=\"300\" y2=\"65\" stroke=\"#0F172A\" stroke-width=\"2.2\"/>\n              <line x1=\"270\" y1=\"180\" x2=\"300\" y2=\"65\" stroke=\"#0F172A\" stroke-width=\"2.5\"/>\n              <!-- Compass Arcs at E -->\n              <path d=\"M 285 50 A 247 247 0 0 1 315 80\" fill=\"none\" stroke=\"#D81B60\" stroke-width=\"1.8\"/>\n              <path d=\"M 315 50 A 118 118 0 0 0 285 80\" fill=\"none\" stroke=\"#D81B60\" stroke-width=\"1.8\"/>\n              <!-- Compass Arcs at M -->\n              <!-- From O (4.5 cm ~ 118) -->\n              <path d=\"M 95 50 A 118 118 0 0 1 125 78\" fill=\"none\" stroke=\"#D81B60\" stroke-width=\"2.2\"/>\n              <!-- From E (6 cm ~ 190) -->\n              <path d=\"M 125 50 A 190 190 0 0 0 95 78\" fill=\"none\" stroke=\"#D81B60\" stroke-width=\"2.2\"/>\n              <!-- Points & Labels -->\n              <circle cx=\"80\" cy=\"180\" r=\"3.5\" fill=\"#0F172A\"/>\n              <circle cx=\"270\" cy=\"180\" r=\"3.5\" fill=\"#0F172A\"/>\n              <circle cx=\"300\" cy=\"65\" r=\"3.5\" fill=\"#0F172A\"/>\n              <text x=\"60\" y=\"190\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\">O</text>\n              <text x=\"280\" y=\"190\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\">R</text>\n              <text x=\"312\" y=\"65\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\">E</text>\n              <text x=\"95\" y=\"60\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\">M</text>\n              <text x=\"175\" y=\"200\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"middle\">6 cm</text>\n              <text x=\"305\" y=\"130\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\">4.5 cm</text>\n              <text x=\"190\" y=\"115\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\" transform=\"rotate(-27 190 115)\">7.5 cm</text>\n            </svg>\n          </div>\n          <div class=\"diagram-caption\">📍 Step (2): Arcs of radii 4.5 cm and 6 cm intersecting at point M</div>\n        </div>\n\n        <div class=\"sol-step\">\n          <div><b class=\"step-label\">(3)</b> Join M to O and E. MORE is the required parallelogram.</div>\n        </div>\n\n        <!-- 4. Step 3 Construction: Final MORE -->\n        <div class=\"diagram-card\">\n          <div class=\"diagram-wrapper\">\n            <svg viewBox=\"0 0 380 230\" width=\"100%\" height=\"auto\">\n              <rect width=\"100%\" height=\"100%\" fill=\"#FFFFFF\" rx=\"8\"/>\n              <!-- Polygon MORE -->\n              <polygon points=\"80,180 270,180 300,65 110,65\" fill=\"none\" stroke=\"#0F172A\" stroke-width=\"2.5\"/>\n              <!-- Diagonal EO -->\n              <line x1=\"80\" y1=\"180\" x2=\"300\" y2=\"65\" stroke=\"#0F172A\" stroke-width=\"2\" stroke-dasharray=\"5,4\"/>\n              <!-- Compass Arcs at E -->\n              <path d=\"M 285 50 A 247 247 0 0 1 315 80\" fill=\"none\" stroke=\"#D81B60\" stroke-width=\"1.8\"/>\n              <path d=\"M 315 50 A 118 118 0 0 0 285 80\" fill=\"none\" stroke=\"#D81B60\" stroke-width=\"1.8\"/>\n              <!-- Compass Arcs at M -->\n              <path d=\"M 95 50 A 118 118 0 0 1 125 78\" fill=\"none\" stroke=\"#D81B60\" stroke-width=\"1.8\"/>\n              <path d=\"M 125 50 A 190 190 0 0 0 95 78\" fill=\"none\" stroke=\"#D81B60\" stroke-width=\"1.8\"/>\n              <!-- Points & Labels -->\n              <circle cx=\"80\" cy=\"180\" r=\"3.5\" fill=\"#0F172A\"/>\n              <circle cx=\"270\" cy=\"180\" r=\"3.5\" fill=\"#0F172A\"/>\n              <circle cx=\"300\" cy=\"65\" r=\"3.5\" fill=\"#0F172A\"/>\n              <circle cx=\"110\" cy=\"65\" r=\"3.5\" fill=\"#0F172A\"/>\n              <text x=\"60\" y=\"190\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\">O</text>\n              <text x=\"280\" y=\"190\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\">R</text>\n              <text x=\"312\" y=\"65\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\">E</text>\n              <text x=\"95\" y=\"60\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\">M</text>\n              <text x=\"175\" y=\"200\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"middle\">6 cm</text>\n              <text x=\"305\" y=\"130\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\">4.5 cm</text>\n              <text x=\"200\" y=\"55\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"middle\">6 cm</text>\n              <text x=\"70\" y=\"125\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\">4.5 cm</text>\n              <text x=\"190\" y=\"115\" font-size=\"13\" font-weight=\"700\" fill=\"#64748B\" transform=\"rotate(-27 190 115)\">7.5 cm</text>\n            </svg>\n          </div>\n          <div class=\"diagram-caption\">📍 Step (3): MORE is the required parallelogram</div>\n        </div>\n\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Result: </span>\n          <span class=\"ans-val\">MORE is the required parallelogram constructed with EO = 7.5 cm.</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- SUBPART (iv): BEST -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">\n        <b style=\"color: #AB47BC; font-size: 16px;\">(iv) Rhombus BEST</b><br/>\n        <span style=\"color: #FFFFFF; font-weight: normal; font-size: 15px;\">\n          BE = 4.5 cm, ET = 6 cm\n        </span>\n      </div>\n\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">💡 Solution &amp; Steps of Construction:</div>\n        \n        <div class=\"sol-step\">\n          <div>We know that all sides of a rhombus are of the same measure:</div>\n          <div style=\"padding-left: 12px;\">&bull; <b>BE = ES = ST = TB = 4.5 cm</b></div>\n          <div>The rough sketch of the rhombus BEST can be drawn as follows:</div>\n        </div>\n\n        <!-- 1. Rough Sketch BEST -->\n        <div class=\"diagram-card\">\n          <div class=\"diagram-wrapper\">\n            <svg viewBox=\"0 0 380 260\" width=\"100%\" height=\"auto\">\n              <rect width=\"100%\" height=\"100%\" fill=\"#FFFFFF\" rx=\"8\"/>\n              <!-- Rhombus BEST Rough Outline -->\n              <polygon points=\"60,130 190,45 320,130 190,215\" fill=\"#FFF3E0\" stroke=\"#E65100\" stroke-width=\"2.2\" stroke-dasharray=\"6,4\"/>\n              <!-- Diagonal ET -->\n              <line x1=\"60\" y1=\"130\" x2=\"320\" y2=\"130\" stroke=\"#D84315\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/>\n              <!-- Points -->\n              <circle cx=\"60\" cy=\"130\" r=\"3.5\" fill=\"#E65100\"/>\n              <circle cx=\"190\" cy=\"45\" r=\"3.5\" fill=\"#E65100\"/>\n              <circle cx=\"320\" cy=\"130\" r=\"3.5\" fill=\"#E65100\"/>\n              <circle cx=\"190\" cy=\"215\" r=\"3.5\" fill=\"#E65100\"/>\n              <!-- Labels -->\n              <text x=\"40\" y=\"135\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\">E</text>\n              <text x=\"190\" y=\"32\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\" text-anchor=\"middle\">B</text>\n              <text x=\"330\" y=\"135\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\">T</text>\n              <text x=\"190\" y=\"235\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\" text-anchor=\"middle\">S</text>\n              <!-- Dimensions -->\n              <text x=\"110\" y=\"80\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\">4.5 cm</text>\n              <text x=\"260\" y=\"80\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\">4.5 cm</text>\n              <text x=\"110\" y=\"185\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\">4.5 cm</text>\n              <text x=\"260\" y=\"185\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\">4.5 cm</text>\n              <text x=\"190\" y=\"122\" font-size=\"13\" font-weight=\"700\" fill=\"#D84315\" text-anchor=\"middle\">6 cm</text>\n            </svg>\n          </div>\n          <div class=\"diagram-caption\">📍 Rough Sketch of Rhombus BEST</div>\n        </div>\n\n        <div class=\"sol-step\">\n          <div><b class=\"step-label\">(1)</b> &Delta;BET can be constructed by using the given measurements as follows: Draw diagonal base ET = 6 cm. With E as centre, draw an arc of radius 4.5 cm. With T as centre, draw an arc of radius 4.5 cm, intersecting the first arc at point B. Join EB and TB.</div>\n        </div>\n\n        <!-- 2. Step 1 Construction: Triangle BET -->\n        <div class=\"diagram-card\">\n          <div class=\"diagram-wrapper\">\n            <svg viewBox=\"0 0 380 230\" width=\"100%\" height=\"auto\">\n              <rect width=\"100%\" height=\"100%\" fill=\"#FFFFFF\" rx=\"8\"/>\n              <!-- Base ET -->\n              <line x1=\"60\" y1=\"140\" x2=\"320\" y2=\"140\" stroke=\"#0F172A\" stroke-width=\"2.5\"/>\n              <!-- Triangle BET -->\n              <line x1=\"60\" y1=\"140\" x2=\"190\" y2=\"55\" stroke=\"#0F172A\" stroke-width=\"2.5\"/>\n              <line x1=\"190\" y1=\"55\" x2=\"320\" y2=\"140\" stroke=\"#0F172A\" stroke-width=\"2.5\"/>\n              <!-- Compass Arcs at B -->\n              <path d=\"M 175 42 A 155 155 0 0 1 205 68\" fill=\"none\" stroke=\"#D81B60\" stroke-width=\"2\"/>\n              <path d=\"M 205 42 A 155 155 0 0 0 175 68\" fill=\"none\" stroke=\"#D81B60\" stroke-width=\"2\"/>\n              <!-- Points & Labels -->\n              <circle cx=\"60\" cy=\"140\" r=\"3.5\" fill=\"#0F172A\"/>\n              <circle cx=\"190\" cy=\"55\" r=\"3.5\" fill=\"#0F172A\"/>\n              <circle cx=\"320\" cy=\"140\" r=\"3.5\" fill=\"#0F172A\"/>\n              <text x=\"40\" y=\"145\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\">E</text>\n              <text x=\"190\" y=\"40\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\" text-anchor=\"middle\">B</text>\n              <text x=\"330\" y=\"145\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\">T</text>\n              <text x=\"110\" y=\"90\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\">4.5 cm</text>\n              <text x=\"260\" y=\"90\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\">4.5 cm</text>\n              <text x=\"190\" y=\"160\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"middle\">6 cm</text>\n            </svg>\n          </div>\n          <div class=\"diagram-caption\">📍 Step (1): Constructing Base Triangle &Delta;BET with ET = 6 cm</div>\n        </div>\n\n        <div class=\"sol-step\">\n          <div><b class=\"step-label\">(2)</b> Vertex S is 4.5 cm away from vertex E and also from vertex T. Therefore, while taking E and T as centres, draw arcs of 4.5 cm radius below ET, which will intersect each other at point S.</div>\n        </div>\n\n        <!-- 3. Step 2 Construction: Arcs at S -->\n        <div class=\"diagram-card\">\n          <div class=\"diagram-wrapper\">\n            <svg viewBox=\"0 0 380 260\" width=\"100%\" height=\"auto\">\n              <rect width=\"100%\" height=\"100%\" fill=\"#FFFFFF\" rx=\"8\"/>\n              <!-- Base ET and Triangle BET -->\n              <line x1=\"60\" y1=\"120\" x2=\"320\" y2=\"120\" stroke=\"#0F172A\" stroke-width=\"2.5\"/>\n              <line x1=\"60\" y1=\"120\" x2=\"190\" y2=\"40\" stroke=\"#0F172A\" stroke-width=\"2.5\"/>\n              <line x1=\"190\" y1=\"40\" x2=\"320\" y2=\"120\" stroke=\"#0F172A\" stroke-width=\"2.5\"/>\n              <!-- Compass Arcs at B -->\n              <path d=\"M 175 28 A 155 155 0 0 1 205 52\" fill=\"none\" stroke=\"#D81B60\" stroke-width=\"1.8\"/>\n              <path d=\"M 205 28 A 155 155 0 0 0 175 52\" fill=\"none\" stroke=\"#D81B60\" stroke-width=\"1.8\"/>\n              <!-- Compass Arcs at S (below) -->\n              <path d=\"M 175 190 A 155 155 0 0 1 205 218\" fill=\"none\" stroke=\"#D81B60\" stroke-width=\"2.2\"/>\n              <path d=\"M 205 190 A 155 155 0 0 0 175 218\" fill=\"none\" stroke=\"#D81B60\" stroke-width=\"2.2\"/>\n              <!-- Points & Labels -->\n              <circle cx=\"60\" cy=\"120\" r=\"3.5\" fill=\"#0F172A\"/>\n              <circle cx=\"190\" cy=\"40\" r=\"3.5\" fill=\"#0F172A\"/>\n              <circle cx=\"320\" cy=\"120\" r=\"3.5\" fill=\"#0F172A\"/>\n              <text x=\"40\" y=\"125\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\">E</text>\n              <text x=\"190\" y=\"28\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\" text-anchor=\"middle\">B</text>\n              <text x=\"330\" y=\"125\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\">T</text>\n              <text x=\"190\" y=\"235\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\" text-anchor=\"middle\">S</text>\n              <text x=\"110\" y=\"70\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\">4.5 cm</text>\n              <text x=\"260\" y=\"70\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\">4.5 cm</text>\n              <text x=\"190\" y=\"140\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"middle\">6 cm</text>\n            </svg>\n          </div>\n          <div class=\"diagram-caption\">📍 Step (2): Arcs of radius 4.5 cm drawn below ET intersecting at S</div>\n        </div>\n\n        <div class=\"sol-step\">\n          <div><b class=\"step-label\">(3)</b> Join S to E and T. BEST is the required rhombus.</div>\n        </div>\n\n        <!-- 4. Step 3 Construction: Final BEST (Page 5) -->\n        <div class=\"diagram-card\">\n          <div class=\"diagram-wrapper\">\n            <svg viewBox=\"0 0 380 260\" width=\"100%\" height=\"auto\">\n              <rect width=\"100%\" height=\"100%\" fill=\"#FFFFFF\" rx=\"8\"/>\n              <!-- Polygon BEST -->\n              <polygon points=\"60,120 190,40 320,120 190,205\" fill=\"none\" stroke=\"#0F172A\" stroke-width=\"2.5\"/>\n              <!-- Diagonal ET -->\n              <line x1=\"60\" y1=\"120\" x2=\"320\" y2=\"120\" stroke=\"#0F172A\" stroke-width=\"2\" stroke-dasharray=\"5,4\"/>\n              <!-- Compass Arcs at B -->\n              <path d=\"M 175 28 A 155 155 0 0 1 205 52\" fill=\"none\" stroke=\"#D81B60\" stroke-width=\"1.8\"/>\n              <path d=\"M 205 28 A 155 155 0 0 0 175 52\" fill=\"none\" stroke=\"#D81B60\" stroke-width=\"1.8\"/>\n              <!-- Compass Arcs at S -->\n              <path d=\"M 175 190 A 155 155 0 0 1 205 218\" fill=\"none\" stroke=\"#D81B60\" stroke-width=\"1.8\"/>\n              <path d=\"M 205 190 A 155 155 0 0 0 175 218\" fill=\"none\" stroke=\"#D81B60\" stroke-width=\"1.8\"/>\n              <!-- Points & Labels -->\n              <circle cx=\"60\" cy=\"120\" r=\"3.5\" fill=\"#0F172A\"/>\n              <circle cx=\"190\" cy=\"40\" r=\"3.5\" fill=\"#0F172A\"/>\n              <circle cx=\"320\" cy=\"120\" r=\"3.5\" fill=\"#0F172A\"/>\n              <circle cx=\"190\" cy=\"205\" r=\"3.5\" fill=\"#0F172A\"/>\n              <text x=\"40\" y=\"125\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\">E</text>\n              <text x=\"190\" y=\"28\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\" text-anchor=\"middle\">B</text>\n              <text x=\"330\" y=\"125\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\">T</text>\n              <text x=\"190\" y=\"225\" font-size=\"14\" font-weight=\"800\" fill=\"#0F172A\" text-anchor=\"middle\">S</text>\n              <text x=\"110\" y=\"70\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\">4.5 cm</text>\n              <text x=\"260\" y=\"70\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\">4.5 cm</text>\n              <text x=\"110\" y=\"175\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\">4.5 cm</text>\n              <text x=\"260\" y=\"175\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\">4.5 cm</text>\n              <text x=\"190\" y=\"112\" font-size=\"13\" font-weight=\"700\" fill=\"#64748B\" text-anchor=\"middle\">6 cm</text>\n            </svg>\n          </div>\n          <div class=\"diagram-caption\">📍 Step (3): BEST is the required rhombus</div>\n        </div>\n\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Result: </span>\n          <span class=\"ans-val\">BEST is the required rhombus constructed with all sides = 4.5 cm and ET = 6 cm.</span>\n        </div>\n      </div>\n    </div>\n\n  </div>\n\n</div>",
   },
 };

@@ -671,7 +671,12 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
         name: "Understanding Quadrilaterals",
         color: "#26C6DA",
       },
-      { id: "c8-math-4", number: 4, name: "Data Handling", color: "#AA00FF" },
+      {
+        id: "c8-math-4",
+        number: 4,
+        name: "Practical Geometry",
+        color: "#AB47BC",
+      },
       {
         id: "c8-math-5",
         number: 5,
