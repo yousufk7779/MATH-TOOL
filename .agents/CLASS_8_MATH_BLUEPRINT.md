@@ -4,7 +4,7 @@ This document serves as the permanent, authoritative blueprint for **Class 8 Mat
 
 ---
 
-## 1. The 7 Core Directives (Mandatory)
+## 1. The 9 Core Directives (Mandatory)
 
 1. **100% Web View Architecture (`isHtmlView: true`)**:
    - All chapters must be created using the high-performance HTML/CSS Web View model (`isHtmlView: true`).
@@ -32,9 +32,9 @@ This document serves as the permanent, authoritative blueprint for **Class 8 Mat
 
 4. **Chapter Theme Color For Questions & Sub-Parts**:
    - Every question header and sub-question part MUST strictly use the chapter's primary `themeColor`:
-     - **Main Question Titles:** `<h3 style="color: ${themeColor}; font-size: 17px; margin: 0 0 8px 0;">Question 1</h3>`
+     - **Main Question Titles:** `<div class="q-title" style="color: ${themeColor}; font-size: 17.5px; font-weight: 700;">Question 1:</div>`
      - **Sub-Parts & Roman Numerals:** `<b style="color: ${themeColor}; font-size: 16px;">(i)</b>`, `<b style="color: ${themeColor}; font-size: 16px;">(ii)</b>`, `<b style="color: ${themeColor};">(a)</b>`
-     - **Step Labels & Given Headings:** `<b style="color: ${themeColor};">Given:</b>`, `<b style="color: ${themeColor};">Step 1:</b>`, `<b style="color: ${themeColor};">Step 2:</b>`
+     - **Step Labels & Given Headings:** `<b style="color: ${themeColor};">Given:</b>`, `<b style="color: ${themeColor};">Finding x:</b>`
      - **Card Left Accent Border:** `border-left: 3.5px solid ${themeColor};`
    - Never leave question numbers or sub-parts in default white or generic grey.
 
@@ -47,15 +47,13 @@ This document serves as the permanent, authoritative blueprint for **Class 8 Mat
      - **Sub-Part Labels:** Numbering in Theme Color `<b style="color: ${themeColor}; font-size: 16px;">(i)</b>`, followed by problem text in `#FFFFFF`.
      - **Solution Card:** Dark container with left accent border in theme color (`border-left: 3.5px solid ${themeColor};`).
      - **Final Answer Box:** Crisp green box with `border: 1.5px solid #4CAF50;` and `<span class="ans-label">✓ Final Answer: </span><span class="ans-val">...</span>`.
-   - **Proper Math Typography:**
-     - Strictly stacked fractions (`<span class="frac">...</span>`), zero raw slashes `a/b`.
-     - Always use `<sup>2</sup>`, `<sup>3</sup>` for powers (zero raw carets `^`).
 
 6. **Exact Figures & Geometric Diagrams (Pure White BG & Zero Overlapping)**:
-   - For all geometry, mensuration, and data handling questions:
+   - For all geometry, mensuration, graphs, and data handling questions:
      - **Pure White Background (`#FFFFFF`):** High contrast, crisp visibility inside a sleek dark card wrapper.
      - **Zero Overlapping:** Vertex labels ($A, B, C, D$), angle measurements ($90^\circ, 60^\circ$), dimension indicators ($12\text{ cm}, 5\text{ m}$), and arrow markings must have generous spacing/coordinates so they NEVER collide with lines, arcs, or other text.
      - **Clean Responsive SVG:** Vectors scale sharply across all mobile resolutions.
+     - **NO `min-width` on SVGs:** Use `width="100%"` and `height="auto"` on `<svg>` inside `.diagram-wrapper` with generous viewBox padding (minimum 25px - 50px).
 
 7. **Dedicated Independent Tab For Each Exercise**:
    - Every exercise must be placed in its own separate sub-tab using `htmlExercises`.
@@ -72,6 +70,20 @@ This document serves as the permanent, authoritative blueprint for **Class 8 Mat
      ```
    - This ensures instant loading, clean separation, and effortless navigation between exercises.
 
+8. **Zero Raw LaTeX / Markdown Remnants in HTML View (`$`, `\text`, `\times`, `&text`)**:
+   - In `isHtmlView: true`, MathJax is NOT automatically parsing raw LaTeX strings.
+   - **Strictly Forbidden:** Writing raw LaTeX like `$\text{Central angle} \times 1.5$` or `&text{...}`. In JS template literals, `\t` gets escaped as a literal tab character, displaying broken artifacts like `$ext{...} imes 1.5$`.
+   - **Mandatory Clean HTML:**
+     - Always use standard semantic HTML tags: `<b>Central angle</b> &times; 1.5`, `<i>x</i>`, `<span class="frac">...</span>`, and `&rArr;`.
+     - Probabilities: `<b>P(Event)</b> = <span class="frac"><span class="num">Favourable outcomes</span><span class="den">Total outcomes</span></span>`.
+     - Powers and exponents: always use `<sup>2</sup>`, `<sup>3</sup>` (never raw `^`).
+
+9. **Table Mobile Responsiveness & Text Anti-Wrap**:
+   - In statistical and data tables (frequency tables, survey marks, languages, shopper tallies):
+     - Always set `white-space: nowrap; font-weight: 700; text-align: left; padding-left: 12px; min-width: 105px;` on textual category/subject cells.
+     - **Never allow words like "Mathematics" or "Social Science" to wrap or break into broken fragments like "Mathema" and "tics".**
+     - Table wrapper `.table-card` must ALWAYS have `overflow-x: auto; -webkit-overflow-scrolling: touch;` so tables scroll smoothly on narrow mobile screens.
+
 ---
 
 ## 2. Standard Screen Structure (3 Dedicated Tabs)
@@ -79,7 +91,7 @@ This document serves as the permanent, authoritative blueprint for **Class 8 Mat
 1. **Tab 1: Overview (Concept Guide & Formulas)**:
    - Quick Summary & Basic Definitions card.
    - Core concepts explained with simple everyday intuitions.
-   - Important properties & identities summary box (e.g. Closure, Commutative, Associative, Distributive).
+   - Important properties & identities summary box (e.g. Closure, Commutative, Associative, Distributive, Histograms, Central Angles).
    - Chapter Master Formula / Rule Cheat Sheet.
 
 2. **Tab 2: Solutions (Exercise-by-Exercise Sub-Tabs)**:
@@ -90,6 +102,7 @@ This document serves as the permanent, authoritative blueprint for **Class 8 Mat
 3. **Tab 3: MCQs (Interactive Quiz)**:
    - 10 to 15 kid-friendly, engaging MCQs per chapter.
    - Evenly distributed options (`A`, `B`, `C`, `D`).
+   - Format: `A):   `, `B):   `, `C):   `, `D):   `.
    - Instant Green (correct) / Red (wrong with explanation) interactive feedback.
    - Gamified result summary dashboard.
 
@@ -111,15 +124,19 @@ This document serves as the permanent, authoritative blueprint for **Class 8 Mat
 .frac .num {
   border-bottom: 1.5px solid currentColor;
   padding: 1px 4px;
+  text-align: center;
 }
 .frac .den {
   padding: 1px 4px;
+  text-align: center;
 }
 .q-text {
   font-size: 15.5px;
-  color: #F1F5F9;
+  color: #FFFFFF;
   line-height: 2.1;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
+  font-weight: 500;
+  text-align: left !important;
 }
 .sub-q {
   font-size: 15.5px;
@@ -127,84 +144,83 @@ This document serves as the permanent, authoritative blueprint for **Class 8 Mat
   font-weight: 600;
   margin-bottom: 12px;
   line-height: 2.3;
+  text-align: left !important;
 }
 .sol-step {
   font-size: 15px;
   color: #E2E8F0;
   line-height: 2.35;
+  text-align: left !important;
 }
 .sol-step div {
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  text-align: left !important;
 }
-```
-
-```html
-<!-- Example of stacked fraction -->
-<span class="frac"><span class="num">3</span><span class="den">7</span></span>
-```
-
-### Question-Solution Card Structure (Direct Algebraic Working, Theme Color & Pure White Text):
-```html
-<div style="background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(${themeColor}, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
-  <!-- Question Header with Theme Color -->
-  <div style="font-size: 17.5px; font-weight: 700; color: ${themeColor}; margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
-    Question 1:
-  </div>
-  
-  <!-- Full Question Statement in Pure White with 2.1 line-height -->
-  <div style="font-size: 15.5px; color: #FFFFFF; font-weight: 500; line-height: 2.1; margin-bottom: 14px;">
-    Solve the following equation and check your result:
-  </div>
-
-  <!-- Sub-Part (i) with Theme Color & Pure White problem text -->
-  <div style="margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(${themeColor}, 0.2);">
-    <div style="font-size: 15.5px; color: #FFFFFF; font-weight: 600; line-height: 2.3; margin-bottom: 12px;">
-      <b style="color: ${themeColor}; font-size: 16px;">(i)</b> 3x = 2x + 18
-    </div>
-    
-    <!-- Direct Solution Box with generous line spacing & concise bracketed reasons (NO bulky Step 1/2 headers) -->
-    <div style="background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid ${themeColor}; border-radius: 8px; padding: 14px 16px; margin-top: 12px;">
-      <div style="font-size: 14.5px; font-weight: 700; color: #4DD0E1; margin-bottom: 10px; display: flex; align-items: center; gap: 6px;">
-        💡 Solution:
-      </div>
-      <div style="font-size: 15px; color: #E2E8F0; line-height: 2.35;">
-        <div>We have,</div>
-        <div style="padding-left: 12px;">3x = 2x + 18</div>
-        <div style="padding-left: 12px;">&rArr; 3x &minus; 2x = 18 <span style="color: #94A3B8; font-size: 13.5px; font-style: italic;">[Transposing 2x to LHS]</span></div>
-        <div style="padding-left: 12px;">&rArr; <b>x = 18</b></div>
-      </div>
-      
-      <!-- Final Answer Box with crisp green border -->
-      <div style="background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8;">
-        <span style="color: #A5D6A7; font-weight: 700; font-size: 14px;">✓ Final Answer: </span>
-        <span style="color: #FFFFFF; font-weight: 700; font-size: 15px;">x = 18</span>
-      </div>
-    </div>
-  </div>
-</div>
-```
-
-### Number Lines & Geometric Figure Card Structure (Zero Cut-Off Guarantee):
-> [!IMPORTANT]
-> **NO `min-width` on SVGs:** `min-width` forces horizontal overflow and clips left/right arrows on mobile viewports.
-> **Full Visibility Rules:**
-> 1. Use `width="100%"` and `height="auto"` on `<svg>` with responsive `viewBox`.
-> 2. The `.diagram-wrapper` must be `display: block; width: 100%; box-sizing: border-box; overflow: hidden;`.
-> 3. Provide at least 25px - 50px padding between the outer axis endpoints/arrows and the viewBox boundaries so arrows and labels are 100% visible on all mobile screens.
-
-```html
-<div style="background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(${themeColor}, 0.4); border-radius: 10px; padding: 14px; margin: 16px 0; text-align: center;">
-  <div style="display: block; background: #FFFFFF; border-radius: 8px; padding: 10px 8px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.25);">
-    <!-- Clean responsive SVG with generous left/right padding inside viewBox -->
-    <svg viewBox="0 0 540 105" width="100%" height="auto" style="display: block; width: 100%; max-width: 100%;">
-      <!-- Markers, Axis Lines & Point Labels -->
-    </svg>
-  </div>
-  <div style="color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 10px; font-weight: 500;">
-    📍 Figure / Caption
-  </div>
-</div>
+.reason {
+  color: #94A3B8;
+  font-size: 13.5px;
+  font-style: italic;
+  display: inline-block;
+  margin-left: 8px;
+}
+.ans-box {
+  background: rgba(76, 175, 80, 0.15);
+  border: 1.5px solid #4CAF50;
+  border-radius: 8px;
+  padding: 8px 14px;
+  margin-top: 14px;
+  display: inline-block;
+  line-height: 1.8;
+}
+.ans-label {
+  color: #A5D6A7;
+  font-weight: 700;
+  font-size: 14px;
+}
+.ans-val {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 15px;
+}
+.table-card {
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 10px 8px;
+  margin: 16px 0;
+  overflow-x: auto;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.25);
+  -webkit-overflow-scrolling: touch;
+}
+.styled-table {
+  width: 100%;
+  min-width: 290px;
+  border-collapse: collapse;
+  color: #0F172A;
+  font-size: 13.5px;
+  text-align: center;
+}
+.styled-table th {
+  background: #00B8D4;
+  color: #FFFFFF;
+  font-weight: 700;
+  padding: 9px 8px;
+  border: 1px solid #CBD5E1;
+  font-size: 13.5px;
+  white-space: nowrap;
+}
+.styled-table td {
+  padding: 8px 6px;
+  border: 1px solid #CBD5E1;
+  font-weight: 500;
+  font-size: 13px;
+}
+.styled-table td.col-label {
+  font-weight: 700;
+  white-space: nowrap;
+  text-align: left;
+  padding-left: 12px;
+}
 ```
 
 ---
@@ -216,16 +232,17 @@ This document serves as the permanent, authoritative blueprint for **Class 8 Mat
 | **1** | Rational Numbers | `#FF8C00` (Vibrant Orange) | `#FFB74D` |
 | **2** | Linear Equations in One Variable | `#00C6FF` (Sky Cyan) | `#80D8FF` |
 | **3** | Understanding Quadrilaterals | `#26C6DA` (Teal) | `#80DEEA` |
-| **4** | Data Handling | `#9C27B0` (Purple) | `#CE93D8` |
-| **5** | Square and Square Roots | `#4CAF50` (Emerald Green) | `#81C784` |
-| **6** | Cube and Cube Roots | `#00E676` (Mint Green) | `#69F0AE` |
-| **7** | Comparing Quantities | `#E91E63` (Rose Pink) | `#F48FB1` |
-| **8** | Algebraic Expressions and Identities | `#3F51B5` (Indigo) | `#9FA8DA` |
-| **9** | Mensuration | `#FF5722` (Deep Orange) | `#FF8A65` |
-| **10** | Exponents and Powers | `#FDC830` (Amber Gold) | `#FFE082` |
-| **11** | Direct and Inverse Proportions | `#00BCD4` (Aqua) | `#80DEEA` |
-| **12** | Factorisation | `#AB47BC` (Amethyst) | `#CE93D8` |
-| **13** | Introduction to Graphs | `#29B6F6` (Electric Blue) | `#81D4FA` |
+| **4** | Practical Geometry | `#9C27B0` (Purple) | `#CE93D8` |
+| **5** | Data Handling | `#00B8D4` (Aqua / Teal) | `#80DEEA` |
+| **6** | Squares and Square Roots | `#4CAF50` (Emerald Green) | `#81C784` |
+| **7** | Cubes and Cube Roots | `#00E676` (Mint Green) | `#69F0AE` |
+| **8** | Comparing Quantities | `#E91E63` (Rose Pink) | `#F48FB1` |
+| **9** | Algebraic Expressions and Identities | `#3F51B5` (Indigo) | `#9FA8DA` |
+| **10** | Mensuration | `#FF5722` (Deep Orange) | `#FF8A65` |
+| **11** | Exponents and Powers | `#FDC830` (Amber Gold) | `#FFE082` |
+| **12** | Direct and Inverse Proportions | `#00BCD4` (Cyan) | `#80DEEA` |
+| **13** | Factorisation | `#AB47BC` (Amethyst) | `#CE93D8` |
+| **14** | Introduction to Graphs | `#29B6F6` (Electric Blue) | `#81D4FA` |
 
 ---
 
@@ -241,3 +258,5 @@ This document serves as the permanent, authoritative blueprint for **Class 8 Mat
 - [ ] **Crisp Green Answer Box:** Every question concludes with a green-bordered answer box (`border: 1.5px solid #4CAF50`).
 - [ ] All geometric / graphical figures have a clean `#FFFFFF` background with generous label margins and zero overlapping.
 - [ ] Powers use `<sup>` tags (zero raw `^` carets).
+- [ ] **Zero Raw LaTeX:** Absolutely no unparsed `$\text{...}$`, `&text`, or `\times` remnants.
+- [ ] **Table Anti-Wrap:** Textual column values have `white-space: nowrap;` and `min-width` so long words never break.

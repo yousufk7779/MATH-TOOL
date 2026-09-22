@@ -197,6 +197,9 @@ Full authoritative rules, chapter list, and UI standards are permanently recorde
 5. **Student-Friendly & Direct Mathematical Solutions (NO Bulky Step Headers)**: Do not intimidate Class 8 students with bulky "Step 1:", "Step 2:" paragraph titles. Write clean, direct, line-by-line algebraic steps using `&rArr;` with concise reasons in brackets (e.g. `[Transposing &minus;2 to RHS]`, `[By Cross-Multiplication]`). Simple, non-lengthy, and easy to understand.
 6. **Exact Figures & Number Lines (Zero Cut-Off Guarantee)**: Clean SVGs with `#FFFFFF` background inside sleek dark cards (`.diagram-wrapper` with `display: block; width: 100%; box-sizing: border-box; overflow: hidden;`). **NEVER use `min-width` on SVGs.** Always ensure generous margins (minimum 25px - 50px) inside viewBox on left & right so arrows and endpoint labels are 100% visible without clipping on mobile screens.
 7. **Dedicated Sub-Tab For Each Exercise**: Every exercise rendered in its own dedicated sub-tab via `chapterData.exercises` and `chapterData.htmlExercises`.
+8. **Zero Raw LaTeX / Markdown Remnants in HTML View (`$`, `\text`, `\times`, `&text`)**: MathJax is not active in HTML Web View. Never use raw `$\text{...}$`, `&text`, or `\times` (which escape as tabs `\t`). Always use pure semantic HTML (`<b>...</b>`, `<i>x</i>`, `&times;`, `&minus;`, `<span class="frac">...</span>`, `&rArr;`).
+9. **Table Mobile Responsiveness & Text Anti-Wrap**: Always enforce `white-space: nowrap; font-weight: 700; text-align: left; padding-left: 12px; min-width: 105px;` on textual category/subject cells so long words (like "Mathematics") never break into awkward fragments ("Mathema" / "tics"). Container `.table-card` must always have `overflow-x: auto; -webkit-overflow-scrolling: touch;`.
+
 
 
 
