@@ -38,16 +38,18 @@ This document serves as the permanent, authoritative blueprint for **Class 8 Mat
      - **Card Left Accent Border:** `border-left: 3.5px solid ${themeColor};`
    - Never leave question numbers or sub-parts in default white or generic grey.
 
-5. **Student-Friendly, Crystal-Clear & Concise Solutions (Easy Steps)**:
-   - Solutions must be tailored specifically for Class 8 students: intuitive, simple, and encouraging.
-   - **Not Too Long:** Avoid unnecessary philosophical essays or cluttered text walls. Keep explanations direct, crisp, and to the point.
-   - **Clear 3-Tier Solution Structure:**
-     - **Given / Equation:** Clear starting data or algebraic expression.
-     - **Step-by-Step Working:** Every calculation step broken down with a concise reason in brackets (e.g., `[Transposing +7 to RHS → -7]`, `[L.C.M of 3 and 5 = 15]`, `[Dividing both sides by 2]`).
-     - **Answer Box:** Final answer cleanly highlighted inside a dedicated high-contrast colored box.
+5. **Student-Friendly, Crystal-Clear & Direct Concise Solutions (No Bulky Step Headers)**:
+   - Solutions must be tailored specifically for Class 8 students: intuitive, simple, encouraging, and non-intimidating.
+   - **Direct Algebraic Working (NO Bulky "Step 1:", "Step 2:" Headers):** Do not overwhelm students with repetitive verbose text headers like `Step 1: ...`, `Step 2: ...`. Write direct, elegant, line-by-line mathematical solutions using `&rArr;` with concise bracketed reasons (e.g., `[Transposing &minus;2 to RHS]`, `[By Cross-Multiplication]`, `[L.C.M of 3 and 15 = 15]`).
+   - **Color Hierarchy:**
+     - **Main Question Titles:** Theme color (e.g. `<div class="q-title" style="color: ${themeColor};">Question 1:</div>`).
+     - **Question Statement:** Pure White `<div class="q-text" style="color: #FFFFFF; font-size: 15.5px; line-height: 2.1;">...</div>`.
+     - **Sub-Part Labels:** Numbering in Theme Color `<b style="color: ${themeColor}; font-size: 16px;">(i)</b>`, followed by problem text in `#FFFFFF`.
+     - **Solution Card:** Dark container with left accent border in theme color (`border-left: 3.5px solid ${themeColor};`).
+     - **Final Answer Box:** Crisp green box with `border: 1.5px solid #4CAF50;` and `<span class="ans-label">✓ Final Answer: </span><span class="ans-val">...</span>`.
    - **Proper Math Typography:**
+     - Strictly stacked fractions (`<span class="frac">...</span>`), zero raw slashes `a/b`.
      - Always use `<sup>2</sup>`, `<sup>3</sup>` for powers (zero raw carets `^`).
-     - Mention property/formula badges where applicable (e.g., *Distributive Property*, *Cross-Multiplication*, *Pythagoras Theorem*).
 
 6. **Exact Figures & Geometric Diagrams (Pure White BG & Zero Overlapping)**:
    - For all geometry, mensuration, and data handling questions:
@@ -142,46 +144,41 @@ This document serves as the permanent, authoritative blueprint for **Class 8 Mat
 <span class="frac"><span class="num">3</span><span class="den">7</span></span>
 ```
 
-### Question-Solution Card Structure (With Theme Color, Spacing & Sub-parts):
+### Question-Solution Card Structure (Direct Algebraic Working, Theme Color & Pure White Text):
 ```html
-<div style="background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(${themeColor}, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px;">
+<div style="background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(${themeColor}, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
   <!-- Question Header with Theme Color -->
-  <div style="font-size: 17.5px; font-weight: 700; color: ${themeColor}; margin-bottom: 10px;">
-    Question 1
+  <div style="font-size: 17.5px; font-weight: 700; color: ${themeColor}; margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+    Question 1:
   </div>
   
-  <!-- Full Question Statement with 2.1 line-height -->
-  <div style="font-size: 15.5px; color: #F1F5F9; line-height: 2.1; margin-bottom: 16px; text-align: justify;">
-    Using appropriate properties, find:
+  <!-- Full Question Statement in Pure White with 2.1 line-height -->
+  <div style="font-size: 15.5px; color: #FFFFFF; font-weight: 500; line-height: 2.1; margin-bottom: 14px;">
+    Solve the following equation and check your result:
   </div>
 
-  <!-- Sub-Part (i) with Theme Color -->
+  <!-- Sub-Part (i) with Theme Color & Pure White problem text -->
   <div style="margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(${themeColor}, 0.2);">
-    <div style="font-size: 15.5px; color: #FFFFFF; line-height: 2.3; margin-bottom: 12px;">
-      <b style="color: ${themeColor}; font-size: 16px;">(i)</b> 
-      -<span class="frac"><span class="num">2</span><span class="den">3</span></span> &times; 
-      <span class="frac"><span class="num">3</span><span class="den">5</span></span> + 
-      <span class="frac"><span class="num">5</span><span class="den">2</span></span> - 
-      <span class="frac"><span class="num">3</span><span class="den">5</span></span> &times; 
-      <span class="frac"><span class="num">1</span><span class="den">6</span></span>
+    <div style="font-size: 15.5px; color: #FFFFFF; font-weight: 600; line-height: 2.3; margin-bottom: 12px;">
+      <b style="color: ${themeColor}; font-size: 16px;">(i)</b> 3x = 2x + 18
     </div>
     
-    <!-- Solution Box with generous padding & line spacing -->
+    <!-- Direct Solution Box with generous line spacing & concise bracketed reasons (NO bulky Step 1/2 headers) -->
     <div style="background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid ${themeColor}; border-radius: 8px; padding: 14px 16px; margin-top: 12px;">
-      <div style="font-size: 14.5px; font-weight: 700; color: #4DD0E1; margin-bottom: 10px;">
+      <div style="font-size: 14.5px; font-weight: 700; color: #4DD0E1; margin-bottom: 10px; display: flex; align-items: center; gap: 6px;">
         💡 Solution:
       </div>
       <div style="font-size: 15px; color: #E2E8F0; line-height: 2.35;">
-        <div><b style="color: ${themeColor};">Step 1:</b> Rearrange terms using Commutative Property:</div>
-        <div style="margin: 8px 0; padding-left: 12px;">= ...</div>
-        <div><b style="color: ${themeColor};">Step 2:</b> Take common factor using Distributive Property:</div>
-        <div style="margin: 8px 0; padding-left: 12px;">= ...</div>
+        <div>We have,</div>
+        <div style="padding-left: 12px;">3x = 2x + 18</div>
+        <div style="padding-left: 12px;">&rArr; 3x &minus; 2x = 18 <span style="color: #94A3B8; font-size: 13.5px; font-style: italic;">[Transposing 2x to LHS]</span></div>
+        <div style="padding-left: 12px;">&rArr; <b>x = 18</b></div>
       </div>
       
-      <!-- Final Answer Box -->
+      <!-- Final Answer Box with crisp green border -->
       <div style="background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8;">
         <span style="color: #A5D6A7; font-weight: 700; font-size: 14px;">✓ Final Answer: </span>
-        <span style="color: #FFFFFF; font-weight: 700; font-size: 15px;">2</span>
+        <span style="color: #FFFFFF; font-weight: 700; font-size: 15px;">x = 18</span>
       </div>
     </div>
   </div>
@@ -236,10 +233,11 @@ This document serves as the permanent, authoritative blueprint for **Class 8 Mat
 
 - [ ] `isHtmlView: true` is enabled in chapter definition.
 - [ ] Every exercise in the chapter is mapped to a dedicated key in `htmlExercises` matching `exercises[i].id`.
-- [ ] Zero questions omitted — total count matches the NCERT / Byju's reference PDF exactly.
-- [ ] Every question statement is written out completely without truncation.
+- [ ] Zero questions omitted — total count matches the NCERT / reference PDF exactly.
+- [ ] Every question statement is written out completely in Pure White (`#FFFFFF`).
 - [ ] **Stacked Fractions:** All fractions are strictly in vertical "a over b" format (`<span class="frac">...</span>`), zero inline `a/b`.
-- [ ] **Theme Color Applied:** All main question headers, sub-parts `(i), (ii)`, step headings, and card left borders use `themeColor`.
-- [ ] Solutions are step-by-step, simple for Class 8, not overly long, with clear calculation notes.
+- [ ] **Theme Color Applied:** All main question headers (`Question X:`), sub-parts `(i), (ii)`, and card left borders use `themeColor`.
+- [ ] **Direct Algebraic Solutions:** Zero bulky `Step 1:`, `Step 2:` headers. Direct line-by-line algebraic steps (`&rArr;`) with concise reasons in brackets.
+- [ ] **Crisp Green Answer Box:** Every question concludes with a green-bordered answer box (`border: 1.5px solid #4CAF50`).
 - [ ] All geometric / graphical figures have a clean `#FFFFFF` background with generous label margins and zero overlapping.
 - [ ] Powers use `<sup>` tags (zero raw `^` carets).

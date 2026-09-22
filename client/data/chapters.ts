@@ -663,7 +663,7 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
         id: "c8-math-2",
         number: 2,
         name: "Linear Equations in One Variable",
-        color: "#D81B60",
+        color: "#00C6FF",
       },
       {
         id: "c8-math-3",
