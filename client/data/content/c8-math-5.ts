@@ -1,841 +1,385 @@
 import { ChapterContent } from "../types";
 
-const ex51Content = `
-  <style>
-    .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
-    .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
-    .frac .den { padding: 0 2px; }
-    .ex-container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
-    .q-card { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 15px; margin-bottom: 25px; }
-    .q-text { color: #4CAF50; font-weight: 600; margin-bottom: 12px; text-align: justify; }
-    .q-subtext { color: #e0e0e0; margin-bottom: 5px; margin-left: 10px; }
-    .sol-box { border-left: 3px solid #4CAF50; padding-left: 15px; margin-top: 15px; background: rgba(76, 175, 80, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; }
-    .ans-highlight { color: #4CAF50; font-weight: 700; }
-    .step-label { color: #81C784; font-weight: 600; margin-right: 5px; }
-    .sol-step { margin-bottom: 8px; }
-      .q-text, .q-subtext, .sol-step, .sol-box { font-size: 16px; }
-  </style>
-  <div class="ex-container">
-    <div class="q-card">
-      <div class="q-text">1. What will be the unit digit of the squares of the following numbers?</div>
-      <div class="q-subtext">(i) 81</div>
-      <div class="q-subtext">(ii) 272</div>
-      <div class="q-subtext">(iii) 799</div>
-      <div class="q-subtext">(iv) 3853</div>
-      <div class="q-subtext">(v) 1234</div>
-      <div class="q-subtext">(vi) 26387</div>
-      <div class="q-subtext">(vii) 52698</div>
-      <div class="q-subtext">(viii) 99880</div>
-      <div class="q-subtext">(ix) 12796</div>
-      <div class="q-subtext">(x) 55555</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step"><span class="step-label">(i) 81:</span> Unit digit is 1. Since 1² = 1, unit digit will be <span class="ans-highlight">1</span>.</div>
-        <div class="sol-step"><span class="step-label">(ii) 272:</span> Unit digit is 2. Since 2² = 4, unit digit will be <span class="ans-highlight">4</span>.</div>
-        <div class="sol-step"><span class="step-label">(iii) 799:</span> Unit digit is 9. Since 9² = 81, unit digit will be <span class="ans-highlight">1</span>.</div>
-        <div class="sol-step"><span class="step-label">(iv) 3853:</span> Unit digit is 3. Since 3² = 9, unit digit will be <span class="ans-highlight">9</span>.</div>
-        <div class="sol-step"><span class="step-label">(v) 1234:</span> Unit digit is 4. Since 4² = 16, unit digit will be <span class="ans-highlight">6</span>.</div>
-        <div class="sol-step"><span class="step-label">(vi) 26387:</span> Unit digit is 7. Since 7² = 49, unit digit will be <span class="ans-highlight">9</span>.</div>
-        <div class="sol-step"><span class="step-label">(vii) 52698:</span> Unit digit is 8. Since 8² = 64, unit digit will be <span class="ans-highlight">4</span>.</div>
-        <div class="sol-step"><span class="step-label">(viii) 99880:</span> Unit digit is 0. Since 0² = 0, unit digit will be <span class="ans-highlight">0</span>.</div>
-        <div class="sol-step"><span class="step-label">(ix) 12796:</span> Unit digit is 6. Since 6² = 36, unit digit will be <span class="ans-highlight">6</span>.</div>
-        <div class="sol-step"><span class="step-label">(x) 55555:</span> Unit digit is 5. Since 5² = 25, unit digit will be <span class="ans-highlight">5</span>.</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">2. The following numbers are obviously not perfect squares. Give reason.</div>
-      <div class="q-subtext">(i) 1057</div>
-      <div class="q-subtext">(ii) 23453</div>
-      <div class="q-subtext">(iii) 7928</div>
-      <div class="q-subtext">(iv) 222222</div>
-      <div class="q-subtext">(v) 64000</div>
-      <div class="q-subtext">(vi) 89722</div>
-      <div class="q-subtext">(vii) 222000</div>
-      <div class="q-subtext">(viii) 505050</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Reason:</span> Perfect squares end only with digits 0, 1, 4, 5, 6, 9 and an even number of zeroes.</div>
-        <div class="sol-step"><span class="step-label">(i) 1057:</span> Ends with <span class="ans-highlight">7</span>.</div>
-        <div class="sol-step"><span class="step-label">(ii) 23453:</span> Ends with <span class="ans-highlight">3</span>.</div>
-        <div class="sol-step"><span class="step-label">(iii) 7928:</span> Ends with <span class="ans-highlight">8</span>.</div>
-        <div class="sol-step"><span class="step-label">(iv) 222222:</span> Ends with <span class="ans-highlight">2</span>.</div>
-        <div class="sol-step"><span class="step-label">(v) 64000:</span> Ends with an <span class="ans-highlight">odd number of zeroes (3 zeroes)</span>.</div>
-        <div class="sol-step"><span class="step-label">(vi) 89722:</span> Ends with <span class="ans-highlight">2</span>.</div>
-        <div class="sol-step"><span class="step-label">(vii) 222000:</span> Ends with an <span class="ans-highlight">odd number of zeroes (3 zeroes)</span>.</div>
-        <div class="sol-step"><span class="step-label">(viii) 505050:</span> Ends with an <span class="ans-highlight">odd number of zeroes (1 zero)</span>.</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">3. The squares of which of the following would be odd numbers?</div>
-      <div class="q-subtext">(i) 431</div>
-      <div class="q-subtext">(ii) 2826</div>
-      <div class="q-subtext">(iii) 7779</div>
-      <div class="q-subtext">(iv) 82004</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">The square of an odd number is odd, and the square of an even number is even.</div>
-        <div class="sol-step"><span class="ans-highlight">(i) 431</span> is an odd number. Therefore, its square will be odd.</div>
-        <div class="sol-step">(ii) 2826 is an even number. Therefore, its square will be even.</div>
-        <div class="sol-step"><span class="ans-highlight">(iii) 7779</span> is an odd number. Therefore, its square will be odd.</div>
-        <div class="sol-step">(iv) 82004 is an even number. Therefore, its square will be even.</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">4. Observe the following pattern and find the missing digits.</div>
-      <div class="q-subtext" style="font-family: monospace;">
-        11² = 121<br/>
-        101² = 10201<br/>
-        1001² = 1002001<br/>
-        100001² = 1......2......1<br/>
-        10000001² = ....................
-      </div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">100001² = 1<span class="ans-highlight">0000</span>2<span class="ans-highlight">0000</span>1</div>
-        <div class="sol-step">10000001² = <span class="ans-highlight">100000020000001</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">5. Observe the following pattern and supply the missing numbers.</div>
-      <div class="q-subtext" style="font-family: monospace;">
-        11² = 121<br/>
-        101² = 10201<br/>
-        10101² = 102030201<br/>
-        1010101² = ....................<br/>
-        ........² = 10203040504030201
-      </div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">1010101² = <span class="ans-highlight">1020304030201</span></div>
-        <div class="sol-step"><span class="ans-highlight">101010101</span>² = 10203040504030201</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">6. Using the given pattern, find the missing numbers</div>
-      <div class="q-subtext" style="font-family: monospace;">
-        1² + 2² + 2² = 3²<br/>
-        2² + 3² + 6² = 7²<br/>
-        3² + 4² + 12² = 13²<br/>
-        4² + 5² + __² = 21²<br/>
-        5² + __² + 30² = 31²<br/>
-        6² + 7² + __² = __²
-      </div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Pattern rule: Third number = First × Second.</div>
-        <div class="sol-step">Fourth number = Third + 1.</div>
-        <div class="sol-step">4² + 5² + <span class="ans-highlight">20</span>² = 21²</div>
-        <div class="sol-step">5² + <span class="ans-highlight">6</span>² + 30² = 31²</div>
-        <div class="sol-step">6² + 7² + <span class="ans-highlight">42</span>² = <span class="ans-highlight">43</span>²</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">7. Without adding, find the sum.</div>
-      <div class="q-subtext">(i) 1 + 3 + 5 + 7 + 9</div>
-      <div class="q-subtext">(ii) 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19</div>
-      <div class="q-subtext">(iii) 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 + 21 + 23</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Sum of first 'n' odd natural numbers is n².</div>
-        <div class="sol-step"><span class="step-label">(i)</span> Here n = 5.</div>
-        <div class="sol-step">Sum = 5² = <span class="ans-highlight">25</span>.</div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(ii)</span> Here n = 10.</div>
-        <div class="sol-step">Sum = 10² = <span class="ans-highlight">100</span>.</div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(iii)</span> Here n = 12.</div>
-        <div class="sol-step">Sum = 12² = <span class="ans-highlight">144</span>.</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">8. (i) Express 49 as the sum of 7 odd numbers.<br/>(ii) Express 121 as the sum of 11 odd numbers.</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step"><span class="step-label">(i)</span> 49 is the square of 7.</div>
-        <div class="sol-step">It can be expressed as the sum of the first 7 odd numbers:</div>
-        <div class="sol-step">49 = <span class="ans-highlight">1 + 3 + 5 + 7 + 9 + 11 + 13</span></div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(ii)</span> 121 is the square of 11.</div>
-        <div class="sol-step">It can be expressed as the sum of the first 11 odd numbers:</div>
-        <div class="sol-step">121 = <span class="ans-highlight">1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 + 21</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">9. How many numbers lie between squares of the following numbers?</div>
-      <div class="q-subtext">(i) 12 and 13</div>
-      <div class="q-subtext">(ii) 25 and 26</div>
-      <div class="q-subtext">(iii) 99 and 100</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Non-perfect square numbers between n² and (n+1)² are 2n.</div>
-        <div class="sol-step"><span class="step-label">(i)</span> Here n = 12.</div>
-        <div class="sol-step">Numbers = 2 × 12 = <span class="ans-highlight">24</span>.</div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(ii)</span> Here n = 25.</div>
-        <div class="sol-step">Numbers = 2 × 25 = <span class="ans-highlight">50</span>.</div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(iii)</span> Here n = 99.</div>
-        <div class="sol-step">Numbers = 2 × 99 = <span class="ans-highlight">198</span>.</div>
-      </div>
-    </div>
-  </div>
-`;
-
-const ex52Content = `
-  <style>
-    .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
-    .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
-    .frac .den { padding: 0 2px; }
-    .ex-container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
-    .q-card { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 15px; margin-bottom: 25px; }
-    .q-text { color: #4CAF50; font-weight: 600; margin-bottom: 12px; text-align: justify; }
-    .q-subtext { color: #e0e0e0; margin-bottom: 5px; margin-left: 10px; }
-    .sol-box { border-left: 3px solid #4CAF50; padding-left: 15px; margin-top: 15px; background: rgba(76, 175, 80, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; }
-    .ans-highlight { color: #4CAF50; font-weight: 700; }
-    .step-label { color: #81C784; font-weight: 600; margin-right: 5px; }
-    .sol-step { margin-bottom: 8px; }
-      .q-text, .q-subtext, .sol-step, .sol-box { font-size: 16px; }
-  </style>
-  <div class="ex-container">
-    <div class="q-card">
-      <div class="q-text">1. Find the Square of the following numbers.</div>
-      <div class="q-subtext">(i) 32</div>
-      <div class="q-subtext">(ii) 35</div>
-      <div class="q-subtext">(iii) 86</div>
-      <div class="q-subtext">(iv) 93</div>
-      <div class="q-subtext">(v) 71</div>
-      <div class="q-subtext">(vi) 46</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span> Using identity (a + b)² = a² + 2ab + b².</div>
-        <div class="sol-step"><span class="step-label">(i) 32:</span></div>
-        <div class="sol-step">(30 + 2)² = 30² + 2(30)(2) + 2²</div>
-        <div class="sol-step">= 900 + 120 + 4 = <span class="ans-highlight">1024</span></div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(ii) 35:</span></div>
-        <div class="sol-step">(30 + 5)² = 30² + 2(30)(5) + 5²</div>
-        <div class="sol-step">= 900 + 300 + 25 = <span class="ans-highlight">1225</span></div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(iii) 86:</span></div>
-        <div class="sol-step">(80 + 6)² = 80² + 2(80)(6) + 6²</div>
-        <div class="sol-step">= 6400 + 960 + 36 = <span class="ans-highlight">7396</span></div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(iv) 93:</span></div>
-        <div class="sol-step">(90 + 3)² = 90² + 2(90)(3) + 3²</div>
-        <div class="sol-step">= 8100 + 540 + 9 = <span class="ans-highlight">8649</span></div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(v) 71:</span></div>
-        <div class="sol-step">(70 + 1)² = 70² + 2(70)(1) + 1²</div>
-        <div class="sol-step">= 4900 + 140 + 1 = <span class="ans-highlight">5041</span></div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(vi) 46:</span></div>
-        <div class="sol-step">(40 + 6)² = 40² + 2(40)(6) + 6²</div>
-        <div class="sol-step">= 1600 + 480 + 36 = <span class="ans-highlight">2116</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">2. Write a Pythagorean triplet whose one member is.</div>
-      <div class="q-subtext">(i) 6</div>
-      <div class="q-subtext">(ii) 14</div>
-      <div class="q-subtext">(iii) 16</div>
-      <div class="q-subtext">(iv) 18</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">The general form of a Pythagorean triplet is 2m, m² - 1, m² + 1.</div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(i) 6:</span></div>
-        <div class="sol-step">Let 2m = 6, so m = 3.</div>
-        <div class="sol-step">m² - 1 = 3² - 1 = 9 - 1 = 8.</div>
-        <div class="sol-step">m² + 1 = 3² + 1 = 9 + 1 = 10.</div>
-        <div class="sol-step">Triplet: <span class="ans-highlight">6, 8, 10</span>.</div>
-        <br/>
-        
-        <div class="sol-step"><span class="step-label">(ii) 14:</span></div>
-        <div class="sol-step">Let 2m = 14, so m = 7.</div>
-        <div class="sol-step">m² - 1 = 7² - 1 = 49 - 1 = 48.</div>
-        <div class="sol-step">m² + 1 = 7² + 1 = 49 + 1 = 50.</div>
-        <div class="sol-step">Triplet: <span class="ans-highlight">14, 48, 50</span>.</div>
-        <br/>
-        
-        <div class="sol-step"><span class="step-label">(iii) 16:</span></div>
-        <div class="sol-step">Let 2m = 16, so m = 8.</div>
-        <div class="sol-step">m² - 1 = 8² - 1 = 64 - 1 = 63.</div>
-        <div class="sol-step">m² + 1 = 8² + 1 = 64 + 1 = 65.</div>
-        <div class="sol-step">Triplet: <span class="ans-highlight">16, 63, 65</span>.</div>
-        <br/>
-        
-        <div class="sol-step"><span class="step-label">(iv) 18:</span></div>
-        <div class="sol-step">Let 2m = 18, so m = 9.</div>
-        <div class="sol-step">m² - 1 = 9² - 1 = 81 - 1 = 80.</div>
-        <div class="sol-step">m² + 1 = 9² + 1 = 81 + 1 = 82.</div>
-        <div class="sol-step">Triplet: <span class="ans-highlight">18, 80, 82</span>.</div>
-      </div>
-    </div>
-  </div>
-`;
-
-const ex53Content = `
-  <style>
-    .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
-    .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
-    .frac .den { padding: 0 2px; }
-    .ex-container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
-    .q-card { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 15px; margin-bottom: 25px; }
-    .q-text { color: #4CAF50; font-weight: 600; margin-bottom: 12px; text-align: justify; }
-    .q-subtext { color: #e0e0e0; margin-bottom: 5px; margin-left: 10px; }
-    .sol-box { border-left: 3px solid #4CAF50; padding-left: 15px; margin-top: 15px; background: rgba(76, 175, 80, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; }
-    .ans-highlight { color: #4CAF50; font-weight: 700; }
-    .step-label { color: #81C784; font-weight: 600; margin-right: 5px; }
-    .sol-step { margin-bottom: 8px; }
-      .q-text, .q-subtext, .sol-step, .sol-box { font-size: 16px; }
-  </style>
-  <div class="ex-container">
-    <div class="q-card">
-      <div class="q-text">1. What could be the possible 'one's' digits of the square root of each of the following numbers?</div>
-      <div class="q-subtext">(i) 9801</div>
-      <div class="q-subtext">(ii) 99856</div>
-      <div class="q-subtext">(iii) 998001</div>
-      <div class="q-subtext">(iv) 657666025</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step"><span class="step-label">(i) 9801:</span> Ends in 1. Square roots could end in <span class="ans-highlight">1 or 9</span>.</div>
-        <div class="sol-step"><span class="step-label">(ii) 99856:</span> Ends in 6. Square roots could end in <span class="ans-highlight">4 or 6</span>.</div>
-        <div class="sol-step"><span class="step-label">(iii) 998001:</span> Ends in 1. Square roots could end in <span class="ans-highlight">1 or 9</span>.</div>
-        <div class="sol-step"><span class="step-label">(iv) 657666025:</span> Ends in 5. Square root will end in <span class="ans-highlight">5</span>.</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">2. Without doing any calculation, find the numbers which are surely not perfect squares.</div>
-      <div class="q-subtext">(i) 153</div>
-      <div class="q-subtext">(ii) 257</div>
-      <div class="q-subtext">(iii) 408</div>
-      <div class="q-subtext">(iv) 441</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Perfect squares end only with digits 0, 1, 4, 5, 6, 9.</div>
-        <div class="sol-step"><span class="ans-highlight">(i) 153</span> (Ends with 3),</div>
-        <div class="sol-step"><span class="ans-highlight">(ii) 257</span> (Ends with 7),</div>
-        <div class="sol-step"><span class="ans-highlight">(iii) 408</span> (Ends with 8) are surely not perfect squares.</div>
-        <div class="sol-step">(iv) 441 ends with 1, so it can be a perfect square.</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">3. Find the square roots of 100 and 169 by the method of repeated subtraction.</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution for 100:</span></div>
-        <div class="sol-step">Subtract consecutive odd numbers:</div>
-        <div class="sol-step">100-1=99, 99-3=96, 96-5=91, 91-7=84, 84-9=75,</div>
-        <div class="sol-step">75-11=64, 64-13=51, 51-15=36, 36-17=19, 19-19=0.</div>
-        <div class="sol-step">We subtracted 10 times. So, √100 = <span class="ans-highlight">10</span>.</div>
-        <br/>
-        <div class="sol-step"><span class="step-label">Solution for 169:</span></div>
-        <div class="sol-step">169-1=168, 168-3=165, 165-5=160, 160-7=153, 153-9=144,</div>
-        <div class="sol-step">144-11=133, 133-13=120, 120-15=105, 105-17=88, 88-19=69,</div>
-        <div class="sol-step">69-21=48, 48-23=25, 25-25=0.</div>
-        <div class="sol-step">We subtracted 13 times. So, √169 = <span class="ans-highlight">13</span>.</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">4. Find the square roots of the following numbers by the Prime Factorisation Method.</div>
-      <div class="q-subtext">(i) 729</div>
-      <div class="q-subtext">(ii) 400</div>
-      <div class="q-subtext">(iii) 1764</div>
-      <div class="q-subtext">(iv) 4096</div>
-      <div class="q-subtext">(v) 7744</div>
-      <div class="q-subtext">(vi) 9604</div>
-      <div class="q-subtext">(vii) 5929</div>
-      <div class="q-subtext">(viii) 9216</div>
-      <div class="q-subtext">(ix) 529</div>
-      <div class="q-subtext">(x) 8100</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step"><span class="step-label">(i) 729:</span> 3×3×3×3×3×3. √729 = 3×3×3 = <span class="ans-highlight">27</span></div>
-        <div class="sol-step"><span class="step-label">(ii) 400:</span> 2×2×2×2×5×5. √400 = 2×2×5 = <span class="ans-highlight">20</span></div>
-        <div class="sol-step"><span class="step-label">(iii) 1764:</span> 2×2×3×3×7×7. √1764 = 2×3×7 = <span class="ans-highlight">42</span></div>
-        <div class="sol-step"><span class="step-label">(iv) 4096:</span> 2¹². √4096 = 2⁶ = <span class="ans-highlight">64</span></div>
-        <div class="sol-step"><span class="step-label">(v) 7744:</span> 2×2×2×2×2×2×11×11. √7744 = 2×2×2×11 = <span class="ans-highlight">88</span></div>
-        <div class="sol-step"><span class="step-label">(vi) 9604:</span> 2×2×7×7×7×7. √9604 = 2×7×7 = <span class="ans-highlight">98</span></div>
-        <div class="sol-step"><span class="step-label">(vii) 5929:</span> 7×7×11×11. √5929 = 7×11 = <span class="ans-highlight">77</span></div>
-        <div class="sol-step"><span class="step-label">(viii) 9216:</span> 2¹⁰×3². √9216 = 2⁵×3 = 32×3 = <span class="ans-highlight">96</span></div>
-        <div class="sol-step"><span class="step-label">(ix) 529:</span> 23×23. √529 = <span class="ans-highlight">23</span></div>
-        <div class="sol-step"><span class="step-label">(x) 8100:</span> 2×2×3×3×3×3×5×5. √8100 = 2×3×3×5 = <span class="ans-highlight">90</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">5. For each of the following numbers, find the smallest whole number by which it should be multiplied so as to get a perfect square number. Also find the square root of the square number so obtained.</div>
-      <div class="q-subtext">(i) 252</div>
-      <div class="q-subtext">(ii) 180</div>
-      <div class="q-subtext">(iii) 1008</div>
-      <div class="q-subtext">(iv) 2028</div>
-      <div class="q-subtext">(v) 1458</div>
-      <div class="q-subtext">(vi) 768</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step"><span class="step-label">(i) 252:</span> 2×2×3×3×7. Multiply by <span class="ans-highlight">7</span>. New number = 1764. Root = <span class="ans-highlight">42</span>.</div>
-        <div class="sol-step"><span class="step-label">(ii) 180:</span> 2×2×3×3×5. Multiply by <span class="ans-highlight">5</span>. New number = 900. Root = <span class="ans-highlight">30</span>.</div>
-        <div class="sol-step"><span class="step-label">(iii) 1008:</span> 2×2×2×2×3×3×7. Multiply by <span class="ans-highlight">7</span>. New number = 7056. Root = <span class="ans-highlight">84</span>.</div>
-        <div class="sol-step"><span class="step-label">(iv) 2028:</span> 2×2×3×13×13. Multiply by <span class="ans-highlight">3</span>. New number = 6084. Root = <span class="ans-highlight">78</span>.</div>
-        <div class="sol-step"><span class="step-label">(v) 1458:</span> 2×3×3×3×3×3×3. Multiply by <span class="ans-highlight">2</span>. New number = 2916. Root = <span class="ans-highlight">54</span>.</div>
-        <div class="sol-step"><span class="step-label">(vi) 768:</span> 2×2×2×2×2×2×2×2×3. Multiply by <span class="ans-highlight">3</span>. New number = 2304. Root = <span class="ans-highlight">48</span>.</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">6. For each of the following numbers, find the smallest whole number by which it should be divided so as to get a perfect square. Also find the square root of the square number so obtained.</div>
-      <div class="q-subtext">(i) 252</div>
-      <div class="q-subtext">(ii) 2925</div>
-      <div class="q-subtext">(iii) 396</div>
-      <div class="q-subtext">(iv) 2645</div>
-      <div class="q-subtext">(v) 2800</div>
-      <div class="q-subtext">(vi) 1620</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step"><span class="step-label">(i) 252:</span> 2×2×3×3×7. Divide by <span class="ans-highlight">7</span>. New number = 36. Root = <span class="ans-highlight">6</span>.</div>
-        <div class="sol-step"><span class="step-label">(ii) 2925:</span> 3×3×5×5×13. Divide by <span class="ans-highlight">13</span>. New number = 225. Root = <span class="ans-highlight">15</span>.</div>
-        <div class="sol-step"><span class="step-label">(iii) 396:</span> 2×2×3×3×11. Divide by <span class="ans-highlight">11</span>. New number = 36. Root = <span class="ans-highlight">6</span>.</div>
-        <div class="sol-step"><span class="step-label">(iv) 2645:</span> 5×23×23. Divide by <span class="ans-highlight">5</span>. New number = 529. Root = <span class="ans-highlight">23</span>.</div>
-        <div class="sol-step"><span class="step-label">(v) 2800:</span> 2×2×2×2×5×5×7. Divide by <span class="ans-highlight">7</span>. New number = 400. Root = <span class="ans-highlight">20</span>.</div>
-        <div class="sol-step"><span class="step-label">(vi) 1620:</span> 2×2×3×3×3×3×5. Divide by <span class="ans-highlight">5</span>. New number = 324. Root = <span class="ans-highlight">18</span>.</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">7. The students of Class VIII of a school donated Rs 2401 in all, for Prime Minister's National Relief Fund. Each student donated as many rupees as the number of students in the class. Find the number of students in the class.</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Let the number of students be x.</div>
-        <div class="sol-step">Amount donated by each student = Rs x.</div>
-        <div class="sol-step">Total donation = x × x = x² = 2401.</div>
-        <div class="sol-step">Number of students = √2401 = <span class="ans-highlight">49</span>.</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">8. 2025 plants are to be planted in a garden in such a way that each row contains as many plants as the number of rows. Find the number of rows and the number of plants in each row.</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Let the number of rows be x.</div>
-        <div class="sol-step">The number of plants in each row = x.</div>
-        <div class="sol-step">Total plants = x × x = x² = 2025.</div>
-        <div class="sol-step">Number of rows = √2025 = <span class="ans-highlight">45</span>.</div>
-        <div class="sol-step">So, there are 45 rows and 45 plants in each row.</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">9. Find the smallest square number that is divisible by each of the numbers 4, 9 and 10.</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">LCM of 4, 9, 10 is 180.</div>
-        <div class="sol-step">Prime factors of 180 = 2 × 2 × 3 × 3 × 5.</div>
-        <div class="sol-step">Here, 5 is not in a pair. Multiply by 5 to make it a perfect square.</div>
-        <div class="sol-step">Smallest square number = 180 × 5 = <span class="ans-highlight">900</span>.</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">10. Find the smallest square number that is divisible by each of the numbers 8, 15 and 20.</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">LCM of 8, 15, 20 is 120.</div>
-        <div class="sol-step">Prime factors of 120 = 2 × 2 × 2 × 3 × 5.</div>
-        <div class="sol-step">Here, 2, 3, and 5 are not in pairs. Multiply by 2 × 3 × 5 = 30.</div>
-        <div class="sol-step">Smallest square number = 120 × 30 = <span class="ans-highlight">3600</span>.</div>
-      </div>
-    </div>
-  </div>
-`;
-
-const ex54Content = `
-  <style>
-    .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
-    .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
-    .frac .den { padding: 0 2px; }
-    .ex-container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
-    .q-card { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 15px; margin-bottom: 25px; }
-    .q-text { color: #4CAF50; font-weight: 600; margin-bottom: 12px; text-align: justify; }
-    .q-subtext { color: #e0e0e0; margin-bottom: 5px; margin-left: 10px; }
-    .sol-box { border-left: 3px solid #4CAF50; padding-left: 15px; margin-top: 15px; background: rgba(76, 175, 80, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; }
-    .ans-highlight { color: #4CAF50; font-weight: 700; }
-    .step-label { color: #81C784; font-weight: 600; margin-right: 5px; }
-    .sol-step { margin-bottom: 8px; }
-      .q-text, .q-subtext, .sol-step, .sol-box { font-size: 16px; }
-  </style>
-  <div class="ex-container">
-    <div class="q-card">
-      <div class="q-text">1. Find the square root of each of the following numbers by Division method.</div>
-      <div class="q-subtext">(i) 2304</div>
-      <div class="q-subtext">(ii) 4489</div>
-      <div class="q-subtext">(iii) 3481</div>
-      <div class="q-subtext">(iv) 529</div>
-      <div class="q-subtext">(v) 3249</div>
-      <div class="q-subtext">(vi) 1369</div>
-      <div class="q-subtext">(vii) 5776</div>
-      <div class="q-subtext">(viii) 7921</div>
-      <div class="q-subtext">(ix) 576</div>
-      <div class="q-subtext">(x) 1024</div>
-      <div class="q-subtext">(xi) 3136</div>
-      <div class="q-subtext">(xii) 900</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step"><span class="step-label">(i)</span> √2304 = <span class="ans-highlight">48</span></div>
-        <div class="sol-step"><span class="step-label">(ii)</span> √4489 = <span class="ans-highlight">67</span></div>
-        <div class="sol-step"><span class="step-label">(iii)</span> √3481 = <span class="ans-highlight">59</span></div>
-        <div class="sol-step"><span class="step-label">(iv)</span> √529 = <span class="ans-highlight">23</span></div>
-        <div class="sol-step"><span class="step-label">(v)</span> √3249 = <span class="ans-highlight">57</span></div>
-        <div class="sol-step"><span class="step-label">(vi)</span> √1369 = <span class="ans-highlight">37</span></div>
-        <div class="sol-step"><span class="step-label">(vii)</span> √5776 = <span class="ans-highlight">76</span></div>
-        <div class="sol-step"><span class="step-label">(viii)</span> √7921 = <span class="ans-highlight">89</span></div>
-        <div class="sol-step"><span class="step-label">(ix)</span> √576 = <span class="ans-highlight">24</span></div>
-        <div class="sol-step"><span class="step-label">(x)</span> √1024 = <span class="ans-highlight">32</span></div>
-        <div class="sol-step"><span class="step-label">(xi)</span> √3136 = <span class="ans-highlight">56</span></div>
-        <div class="sol-step"><span class="step-label">(xii)</span> √900 = <span class="ans-highlight">30</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">2. Find the number of digits in the square root of each of the following numbers (without any calculation).</div>
-      <div class="q-subtext">(i) 64</div>
-      <div class="q-subtext">(ii) 144</div>
-      <div class="q-subtext">(iii) 4489</div>
-      <div class="q-subtext">(iv) 27225</div>
-      <div class="q-subtext">(v) 390625</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Number of digits in square root = <span class='frac'><span class='num'>n</span><span class='den'>2</span></span> (if n is even) or (n+1)/2 (if n is odd).</div>
-        <div class="sol-step"><span class="step-label">(i) 64:</span> n=2. Digits = <span class='frac'><span class='num'>2</span><span class='den'>2</span></span> = <span class="ans-highlight">1</span>.</div>
-        <div class="sol-step"><span class="step-label">(ii) 144:</span> n=3. Digits = (3+1)/2 = <span class="ans-highlight">2</span>.</div>
-        <div class="sol-step"><span class="step-label">(iii) 4489:</span> n=4. Digits = <span class='frac'><span class='num'>4</span><span class='den'>2</span></span> = <span class="ans-highlight">2</span>.</div>
-        <div class="sol-step"><span class="step-label">(iv) 27225:</span> n=5. Digits = (5+1)/2 = <span class="ans-highlight">3</span>.</div>
-        <div class="sol-step"><span class="step-label">(v) 390625:</span> n=6. Digits = <span class='frac'><span class='num'>6</span><span class='den'>2</span></span> = <span class="ans-highlight">3</span>.</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">3. Find the square root of the following decimal numbers.</div>
-      <div class="q-subtext">(i) 2.56</div>
-      <div class="q-subtext">(ii) 7.29</div>
-      <div class="q-subtext">(iii) 51.84</div>
-      <div class="q-subtext">(iv) 42.25</div>
-      <div class="q-subtext">(v) 31.36</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step"><span class="step-label">(i)</span> √2.56 = <span class="ans-highlight">1.6</span></div>
-        <div class="sol-step"><span class="step-label">(ii)</span> √7.29 = <span class="ans-highlight">2.7</span></div>
-        <div class="sol-step"><span class="step-label">(iii)</span> √51.84 = <span class="ans-highlight">7.2</span></div>
-        <div class="sol-step"><span class="step-label">(iv)</span> √42.25 = <span class="ans-highlight">6.5</span></div>
-        <div class="sol-step"><span class="step-label">(v)</span> √31.36 = <span class="ans-highlight">5.6</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">4. Find the least number which must be subtracted from each of the following numbers so as to get a perfect square. Also find the square root of the perfect square so obtained.</div>
-      <div class="q-subtext">(i) 402</div>
-      <div class="q-subtext">(ii) 1989</div>
-      <div class="q-subtext">(iii) 3250</div>
-      <div class="q-subtext">(iv) 825</div>
-      <div class="q-subtext">(v) 4000</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Use division method to find the remainder.</div>
-        <div class="sol-step"><span class="step-label">(i) 402:</span> Remainder is 2. Subtract <span class="ans-highlight">2</span>. Perfect square = 400. Root = <span class="ans-highlight">20</span>.</div>
-        <div class="sol-step"><span class="step-label">(ii) 1989:</span> Remainder is 53. Subtract <span class="ans-highlight">53</span>. Perfect square = 1936. Root = <span class="ans-highlight">44</span>.</div>
-        <div class="sol-step"><span class="step-label">(iii) 3250:</span> Remainder is 1. Subtract <span class="ans-highlight">1</span>. Perfect square = 3249. Root = <span class="ans-highlight">57</span>.</div>
-        <div class="sol-step"><span class="step-label">(iv) 825:</span> Remainder is 41. Subtract <span class="ans-highlight">41</span>. Perfect square = 784. Root = <span class="ans-highlight">28</span>.</div>
-        <div class="sol-step"><span class="step-label">(v) 4000:</span> Remainder is 31. Subtract <span class="ans-highlight">31</span>. Perfect square = 3969. Root = <span class="ans-highlight">63</span>.</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">5. Find the least number which must be added to each of the following numbers so as to get a perfect square. Also find the square root of the perfect square so obtained.</div>
-      <div class="q-subtext">(i) 525</div>
-      <div class="q-subtext">(ii) 1750</div>
-      <div class="q-subtext">(iii) 252</div>
-      <div class="q-subtext">(iv) 1825</div>
-      <div class="q-subtext">(v) 6412</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step"><span class="step-label">(i) 525:</span> 22² < 525 < 23². Next square is 23² = 529. Add 529 - 525 = <span class="ans-highlight">4</span>. Root = <span class="ans-highlight">23</span>.</div>
-        <div class="sol-step"><span class="step-label">(ii) 1750:</span> 41² < 1750 < 42². Next square is 42² = 1764. Add 1764 - 1750 = <span class="ans-highlight">14</span>. Root = <span class="ans-highlight">42</span>.</div>
-        <div class="sol-step"><span class="step-label">(iii) 252:</span> 15² < 252 < 16². Next square is 16² = 256. Add 256 - 252 = <span class="ans-highlight">4</span>. Root = <span class="ans-highlight">16</span>.</div>
-        <div class="sol-step"><span class="step-label">(iv) 1825:</span> 42² < 1825 < 43². Next square is 43² = 1849. Add 1849 - 1825 = <span class="ans-highlight">24</span>. Root = <span class="ans-highlight">43</span>.</div>
-        <div class="sol-step"><span class="step-label">(v) 6412:</span> 80² < 6412 < 81². Next square is 81² = 6561. Add 6561 - 6412 = <span class="ans-highlight">149</span>. Root = <span class="ans-highlight">81</span>.</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">6. Find the length of the side of a square whose area is 441 m².</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Area of square = side² = 441.</div>
-        <div class="sol-step">Side = √441 = <span class="ans-highlight">21 m</span>.</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">7. In a right triangle ABC, ∠B = 90°.<br/>(a) If AB = 6cm, BC = 8cm, find AC<br/>(b) If AC = 13cm, BC = 5cm, find AB</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Using Pythagoras theorem: AC² = AB² + BC².</div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(a)</span> AC² = 6² + 8² = 36 + 64 = 100.</div>
-        <div class="sol-step">AC = √100 = <span class="ans-highlight">10 cm</span>.</div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(b)</span> 13² = AB² + 5² => 169 = AB² + 25.</div>
-        <div class="sol-step">AB² = 169 - 25 = 144.</div>
-        <div class="sol-step">AB = √144 = <span class="ans-highlight">12 cm</span>.</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">8. A gardener has 1000 plants. He wants to plant these in such a way that the number of rows and the number of columns remain same. Find the minimum number of plants he needs more for this.</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Number of plants = 1000.</div>
-        <div class="sol-step">We need to find the number to be added to 1000 to make it a perfect square.</div>
-        <div class="sol-step">31² < 1000 < 32².</div>
-        <div class="sol-step">32² = 1024.</div>
-        <div class="sol-step">Number of plants needed more = 1024 - 1000 = <span class="ans-highlight">24 plants</span>.</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">9. There are 500 children in a school. For a P.T. drill they have to stand in such a manner that the number of rows is equal to number of columns. How many children would be left out in this arrangement?</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Total children = 500.</div>
-        <div class="sol-step">We need to find the remainder when square root of 500 is calculated by division method.</div>
-        <div class="sol-step">22² = 484, which is less than 500.</div>
-        <div class="sol-step">Remainder = 500 - 484 = 16.</div>
-        <div class="sol-step">Therefore, <span class="ans-highlight">16 children</span> would be left out.</div>
-      </div>
-    </div>
-  </div>
-`;
-
 export const c8Math5: ChapterContent = {
   id: "c8-math-5",
   number: 5,
-  title: "Squares and Square Roots",
+  title: "Data Handling",
   introduction:
-    "In this chapter, we explore the properties of square numbers and learn how to find the square root of a number using different methods.",
-  mcqs: [
+    "Data Handling deals with the collection, systematic organisation, graphical representation, and interpretation of numerical information. In this chapter, we master frequency distribution tables, tally marks, bar graphs, histograms with continuous class intervals, circle graphs (pie charts) with central sector angles, and introductory concepts of chance and theoretical probability.",
+  definitions: [
     {
-      id: "m1",
-      question:
-        "The square of which of the following numbers would be an odd number?",
-      options: ["431", "2826", "7770", "82004"],
-      correctAnswer: "431",
+      term: "Raw Data",
+      description:
+        "Initial numerical observations or facts collected directly from an investigation before being organized.",
     },
     {
-      id: "m2",
-      question: "Which of the following is not a perfect square?",
-      options: ["100", "169", "257", "400"],
-      correctAnswer: "257",
+      term: "Frequency",
+      description:
+        "The number of times a particular observation or data entry occurs in a given dataset.",
     },
     {
-      id: "m3",
-      question: "The unit digit of the square of 272 will be:",
-      options: ["2", "4", "6", "8"],
-      correctAnswer: "4",
+      term: "Class Interval",
+      description:
+        "A continuous numerical group or range into which raw data is condensed (e.g., 800–810, 10–20).",
     },
     {
-      id: "m4",
-      question:
-        "How many non-perfect square numbers lie between the squares of 12 and 13?",
-      options: ["24", "25", "26", "144"],
-      correctAnswer: "24",
+      term: "Histogram",
+      description:
+        "A graphical display using adjacent vertical bars with no gaps between them, representing frequency distribution over continuous class intervals.",
     },
     {
-      id: "m5",
-      question: "The sum of first n odd natural numbers is:",
-      options: ["2n", "n²", "n+1", "n³"],
-      correctAnswer: "n²",
+      term: "Pie Chart (Circle Graph)",
+      description:
+        "A circular chart divided into proportional sectors showing the relationship between individual components and the whole (total central angle = 360°).",
     },
     {
-      id: "m6",
-      question:
-        "If one member of a Pythagorean triplet is 6, the other two members are:",
-      options: ["8, 10", "7, 9", "10, 12", "12, 14"],
-      correctAnswer: "8, 10",
-    },
-    {
-      id: "m7",
-      question:
-        "What will be the possible ones digit of the square root of 9801?",
-      options: ["1 or 9", "2 or 8", "3 or 7", "4 or 6"],
-      correctAnswer: "1 or 9",
-    },
-    {
-      id: "m8",
-      question: "The square root of 441 is:",
-      options: ["11", "21", "31", "41"],
-      correctAnswer: "21",
-    },
-    {
-      id: "m9",
-      question:
-        "Which least number should be subtracted from 402 to make it a perfect square?",
-      options: ["1", "2", "3", "4"],
-      correctAnswer: "2",
-    },
-    {
-      id: "m10",
-      question: "The number of digits in the square root of 390625 is:",
-      options: ["2", "3", "4", "5"],
-      correctAnswer: "3",
+      term: "Probability",
+      description:
+        "The numerical measure of the likelihood that an event will occur, calculated as favourable outcomes divided by total equally likely outcomes.",
     },
   ],
-  summary: [
-    "Numbers ending with 2, 3, 7 or 8 are never perfect squares.",
-    "The square of an even number is even and the square of an odd number is odd.",
-    "There are 2n non-perfect square numbers between the squares of the numbers n and (n + 1).",
+  keyPoints: [
+    "Tally marks are recorded in clusters of five (four vertical strokes and a diagonal fifth slash) to accurately tally frequencies.",
+    "The class mark (mid-point) is calculated as: Class Mark = (Upper Limit + Lower Limit) / 2.",
+    "Class width or size is the difference between upper limit and lower limit: Class Size = Upper Limit - Lower Limit.",
+    "A jagged line (kink) on an axis indicates that the scale begins at a non-zero number, omitting numbers between 0 and that starting value.",
+    "In a pie chart, the central angle of a sector is given by: Central Angle = (Component Value / Total Value) × 360°.",
+    "Probability of an event E: P(E) = (Number of outcomes favourable to E) / (Total number of equally likely outcomes).",
+    "Probability of any event is always between 0 and 1, inclusive: 0 ≤ P(E) ≤ 1. Furthermore, P(E) + P(not E) = 1.",
   ],
+  formulas: [
+    {
+      name: "Class Mark (Midpoint)",
+      formula: "Class Mark = (Upper Class Limit + Lower Class Limit) / 2",
+    },
+    {
+      name: "Class Size / Width",
+      formula: "Class Size = Upper Class Limit - Lower Class Limit",
+    },
+    {
+      name: "Central Angle of Sector (Pie Chart)",
+      formula: "Central Angle = (Frequency of Component / Total Frequency) × 360°",
+    },
+    {
+      name: "Classical Probability Formula",
+      formula: "P(E) = n(E) / n(S) = (Favourable Outcomes) / (Total Outcomes)",
+    },
+    {
+      name: "Complementary Probability",
+      formula: "P(not E) = 1 - P(E)",
+    },
+  ],
+  crux: [],
   exercises: [
-    { id: "ex5-1", name: "Exercise 5.1", questions: [] },
-    { id: "ex5-2", name: "Exercise 5.2", questions: [] },
-    { id: "ex5-3", name: "Exercise 5.3", questions: [] },
-    { id: "ex5-4", name: "Exercise 5.4", questions: [] },
+    {
+      id: "ex5-1",
+      name: "Exercise 5.1",
+      questions: [
+        {
+          id: "c8-m5-ex5-1-q1",
+          number: "1",
+          question: "For which of these would you use a histogram to show the data? Give reasons for each: (a) letters in a postman's bag, (b) heights of competitors, (c) cassettes by 5 companies, (d) passengers boarding trains from 7 a.m. to 7 p.m.",
+          solution: ["See complete frequency classification and reasoning in the interactive Web View."],
+        },
+        {
+          id: "c8-m5-ex5-1-q2",
+          number: "2",
+          question: "The shoppers who come to a departmental store are marked as: man (M), woman (W), boy (B) or girl (G). Make a frequency distribution table using tally marks. Draw a bar graph to illustrate it.",
+          solution: ["See complete tally table and authentic bar graph SVG in the interactive Web View."],
+        },
+        {
+          id: "c8-m5-ex5-1-q3",
+          number: "3",
+          question: "The weekly wages (in ₹) of 30 workers in a factory are: 830, 835, 890, 810, 835... Using tally marks make a frequency table with intervals as 800-810, 810-820 and so on.",
+          solution: ["See complete 10-interval grouped frequency distribution table in the interactive Web View."],
+        },
+        {
+          id: "c8-m5-ex5-1-q4",
+          number: "4",
+          question: "Draw a histogram for the frequency table made for the data in Question 3, and answer the following: (i) Which group has the maximum number of workers? (ii) How many workers earn ₹850 and more? (iii) How many workers earn less than ₹850?",
+          solution: ["See complete histogram with axis kink and sub-question solutions in the interactive Web View."],
+        },
+        {
+          id: "c8-m5-ex5-1-q5",
+          number: "5",
+          question: "The number of hours for which students of a particular class watched television during holidays is shown through the given graph. Answer: (i) Maximum hours (ii) Less than 4 hours (iii) More than 5 hours.",
+          solution: ["See complete holiday TV histogram and answers in the interactive Web View."],
+        },
+      ],
+    },
+    {
+      id: "ex5-2",
+      name: "Exercise 5.2",
+      questions: [
+        {
+          id: "c8-m5-ex5-2-q1",
+          number: "1",
+          question: "A survey was made to find the type of music that a certain group of young people liked in a city. Adjoining pie chart shows findings: (i) If 20 people liked classical music, total surveyed? (ii) Maximum liked? (iii) CDs out of 1000?",
+          solution: ["See complete pie chart interpretation and calculations in the interactive Web View."],
+        },
+        {
+          id: "c8-m5-ex5-2-q2",
+          number: "2",
+          question: "A group of 360 people were asked to vote for their favourite season from three seasons: rainy, winter and summer. (i) Most votes? (ii) Central angle of each sector? (iii) Draw pie chart.",
+          solution: ["See complete angle calculations and pie chart SVG in the interactive Web View."],
+        },
+        {
+          id: "c8-m5-ex5-2-q3",
+          number: "3",
+          question: "Draw a pie chart showing colours preferred: Blue 18, Green 9, Red 6, Yellow 3 (Total = 36).",
+          solution: ["See complete sector angle table and pie chart SVG in the interactive Web View."],
+        },
+        {
+          id: "c8-m5-ex5-2-q4",
+          number: "4",
+          question: "The adjoining pie chart gives marks scored by a student in Hindi, English, Mathematics, Social Science and Science (Total = 540). (i) Subject with 105 marks? (ii) More in Maths than Hindi? (iii) S.Sc + Maths > Science + Hindi?",
+          solution: ["See complete angle-to-marks conversion and pie chart SVG in the interactive Web View."],
+        },
+        {
+          id: "c8-m5-ex5-2-q5",
+          number: "5",
+          question: "The number of students in a hostel speaking different languages: Hindi 40, English 12, Marathi 9, Tamil 7, Bengali 4 (Total = 72). Display the data in a pie chart.",
+          solution: ["See complete angle table and pie chart SVG in the interactive Web View."],
+        },
+      ],
+    },
+    {
+      id: "ex5-3",
+      name: "Exercise 5.3",
+      questions: [
+        {
+          id: "c8-m5-ex5-3-q1",
+          number: "1",
+          question: "List the outcomes you can see in these experiments: (a) Spinning a wheel (b) Tossing two coins together.",
+          solution: ["See outcomes breakdown and spinning wheel SVG in the interactive Web View."],
+        },
+        {
+          id: "c8-m5-ex5-3-q2",
+          number: "2",
+          question: "When a die is thrown, list outcomes of getting: (i) (a) prime (b) not prime (ii) (a) number > 5 (b) number not > 5.",
+          solution: ["See complete outcomes listing in the interactive Web View."],
+        },
+        {
+          id: "c8-m5-ex5-3-q3",
+          number: "3",
+          question: "Find the: (a) Probability of pointer stopping on D (Q1-a) (b) Getting an ace from 52 cards (c) Getting a red apple from basket with 7 apples.",
+          solution: ["See probability calculations and apples basket SVG in the interactive Web View."],
+        },
+        {
+          id: "c8-m5-ex5-3-q4",
+          number: "4",
+          question: "Numbers 1 to 10 are written on ten separate slips in a box. What is the probability of: (i) getting 6 (ii) < 6 (iii) > 6 (iv) 1-digit number?",
+          solution: ["See complete step-by-step probability solutions in the interactive Web View."],
+        },
+        {
+          id: "c8-m5-ex5-3-q5",
+          number: "5",
+          question: "If you have a spinning wheel with 3 green sectors, 1 blue sector and 1 red sector, what is the probability of getting a green sector? Non-blue sector?",
+          solution: ["See sector wheel SVG and probability solutions in the interactive Web View."],
+        },
+        {
+          id: "c8-m5-ex5-3-q6",
+          number: "6",
+          question: "Find the probabilities of the events given in Question 2: (i) (a) prime (b) not prime (ii) (a) > 5 (b) not > 5.",
+          solution: ["See die outcome probability solutions in the interactive Web View."],
+        },
+      ],
+    },
+  ],
+  mcqs: [
+  {
+    "id": "c8-m5-q1",
+    "question": "Information collected in the form of raw numerical figures before organization is called:",
+    "options": [
+      "A):   Frequency",
+      "B):   Raw data",
+      "C):   Class interval",
+      "D):   Range"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Initial information collected directly from an investigation or survey in numerical form is called raw data. When organized into a table, it becomes grouped or frequency data."
+  },
+  {
+    "id": "c8-m5-q2",
+    "question": "What is the class mark (mid-value) of the class interval 20 – 30?",
+    "options": [
+      "A):   20",
+      "B):   30",
+      "C):   25",
+      "D):   10"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The class mark is the midpoint of a class interval: Class Mark = (Upper Limit + Lower Limit) / 2 = (30 + 20) / 2 = 50 / 2 = 25."
+  },
+  {
+    "id": "c8-m5-q3",
+    "question": "The difference between the upper class limit and the lower class limit of a class interval is called its:",
+    "options": [
+      "A):   Class width (or class size)",
+      "B):   Class mark",
+      "C):   Frequency",
+      "D):   Cumulative frequency"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The difference between upper limit and lower limit is known as the class size (or class width). For example, for interval 10–20, class size = 20 - 10 = 10."
+  },
+  {
+    "id": "c8-m5-q4",
+    "question": "Which of the following is true for the bars in a histogram?",
+    "options": [
+      "A):   There are equal gaps between the bars",
+      "B):   The bars must be horizontal only",
+      "C):   The bars have unequal widths randomly",
+      "D):   There are no gaps between adjacent bars"
+    ],
+    "correctAnswer": "D",
+    "explanation": "A histogram represents continuous class intervals. Since the upper limit of one class coincides with the lower limit of the next class, there are no gaps between the bars."
+  },
+  {
+    "id": "c8-m5-q5",
+    "question": "In a histogram, a jagged or zig-zag line (kink) along an axis indicates that:",
+    "options": [
+      "A):   The data is incorrect",
+      "B):   The frequencies are very large",
+      "C):   Numbers between 0 and the starting value are omitted",
+      "D):   The graph is incomplete"
+    ],
+    "correctAnswer": "C",
+    "explanation": "A jagged line or kink on an axis shows that the graph is broken, meaning the scale does not start from zero continuously and numbers between 0 and the first marked value are omitted."
+  },
+  {
+    "id": "c8-m5-q6",
+    "question": "A circular statistical graphic divided into sectors to illustrate numerical proportions is commonly called a:",
+    "options": [
+      "A):   Histogram",
+      "B):   Pie chart (circle graph)",
+      "C):   Bar graph",
+      "D):   Pictograph"
+    ],
+    "correctAnswer": "B",
+    "explanation": "A circle graph or pie chart shows the relationship between a whole and its parts by dividing a circle into proportional sectors."
+  },
+  {
+    "id": "c8-m5-q7",
+    "question": "The sum of the central angles of all sectors in a pie chart is always equal to:",
+    "options": [
+      "A):   360°",
+      "B):   180°",
+      "C):   90°",
+      "D):   100°"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Since the sectors together make up the complete circle around the central vertex, the sum of all sector central angles is always 360°."
+  },
+  {
+    "id": "c8-m5-q8",
+    "question": "If 25% of students in a class prefer football, what will be the central angle of the football sector in a pie chart?",
+    "options": [
+      "A):   25°",
+      "B):   45°",
+      "C):   60°",
+      "D):   90°"
+    ],
+    "correctAnswer": "D",
+    "explanation": "Central angle = (Percentage / 100) × 360° = (25 / 100) × 360° = (1 / 4) × 360° = 90°."
+  },
+  {
+    "id": "c8-m5-q9",
+    "question": "An experiment in which all possible outcomes are known beforehand, but the exact outcome cannot be predicted in advance, is called a:",
+    "options": [
+      "A):   Deterministic experiment",
+      "B):   Random experiment",
+      "C):   Fixed trial",
+      "D):   Certain event"
+    ],
+    "correctAnswer": "B",
+    "explanation": "A random experiment is one whose outcomes are well-defined, but which specific outcome will occur on any given trial cannot be predicted with certainty (e.g., tossing a coin or rolling a die)."
+  },
+  {
+    "id": "c8-m5-q10",
+    "question": "When a standard six-sided die is rolled once, what is the probability of getting an even number?",
+    "options": [
+      "A):   1/6",
+      "B):   1/3",
+      "C):   1/2",
+      "D):   2/3"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Total possible outcomes = {1, 2, 3, 4, 5, 6} (6 outcomes). Even numbers = {2, 4, 3} &rarr; 3 outcomes. P(Even) = 3 / 6 = 1 / 2."
+  },
+  {
+    "id": "c8-m5-q11",
+    "question": "When two coins are tossed simultaneously, what is the total number of possible outcomes?",
+    "options": [
+      "A):   4",
+      "B):   2",
+      "C):   6",
+      "D):   8"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The possible outcomes when two coins are tossed are: HH, HT, TH, TT. Thus, there are 2 × 2 = 4 possible outcomes."
+  },
+  {
+    "id": "c8-m5-q12",
+    "question": "A card is drawn from a well-shuffled standard deck of 52 playing cards. What is the probability of getting a King?",
+    "options": [
+      "A):   1/52",
+      "B):   1/4",
+      "C):   1/26",
+      "D):   1/13"
+    ],
+    "correctAnswer": "D",
+    "explanation": "There are 4 Kings in a standard deck of 52 cards (King of Spades, Hearts, Diamonds, Clubs). P(King) = 4 / 52 = 1 / 13."
+  },
+  {
+    "id": "c8-m5-q13",
+    "question": "A bag contains 5 red balls, 3 green balls, and 2 blue balls. What is the probability of drawing a green ball at random?",
+    "options": [
+      "A):   1/5",
+      "B):   3/10",
+      "C):   1/2",
+      "D):   3/7"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Total balls = 5 + 3 + 2 = 10. Number of green balls = 3. Therefore, P(Green ball) = 3 / 10."
+  },
+  {
+    "id": "c8-m5-q14",
+    "question": "If the probability of an event E occurring is P(E) = 0.35, then the probability of 'not E' is:",
+    "options": [
+      "A):   0.35",
+      "B):   0.50",
+      "C):   0.65",
+      "D):   0.75"
+    ],
+    "correctAnswer": "C",
+    "explanation": "For any event E, P(E) + P(not E) = 1. Therefore, P(not E) = 1 - P(E) = 1 - 0.35 = 0.65."
+  },
+  {
+    "id": "c8-m5-q15",
+    "question": "In a pie chart representing a total of 120 items, a sector has a central angle of 60°. How many items are represented by this sector?",
+    "options": [
+      "A):   20",
+      "B):   30",
+      "C):   40",
+      "D):   60"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Number of items = (Central angle / 360°) × Total items = (60° / 360°) × 120 = (1 / 6) × 120 = 20 items."
+  }
+],
+  summary: [
+    "Raw data is organized into frequency tables using tally marks in bunches of five.",
+    "Histograms represent continuous class intervals where bars touch each other without gaps.",
+    "A kink on an axis indicates omitted values between 0 and the starting point.",
+    "Pie charts represent proportions of a whole where each sector angle = (Value / Total) × 360°.",
+    "Probability P(E) measures the chance of an event: P(E) = (Favourable Outcomes) / (Total Outcomes).",
   ],
   isHtmlView: true,
-  htmlOverview: `
-    <style>
-    .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
-    .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
-    .frac .den { padding: 0 2px; }
-      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
-      
-      .premium-container {
-        padding: 20px;
-        color: #ffffff;
-        font-family: 'Outfit', sans-serif !important;
-        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-        border-radius: 20px;
-        margin: 10px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-      }
-
-      .section-box {
-        background: rgba(255, 255, 255, 0.05);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 15px;
-        padding: 20px;
-        margin-bottom: 20px;
-        backdrop-filter: blur(10px);
-      }
-
-      .section-header {
-        color: #4CAF50;
-        font-size: 20px;
-        font-weight: 600;
-        margin-bottom: 15px;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-      }
-
-      .prop-table {
-        width: 100%;
-        border-collapse: collapse;
-        background: rgba(0,0,0,0.2);
-        overflow: hidden;
-        min-width: 300px;
-      }
-
-      .prop-table th, .prop-table td {
-        padding: 10px;
-        border: 1px solid rgba(255,255,255,0.1);
-        text-align: left;
-        font-size: 15px;
-      }
-
-      .prop-table th {
-        background: rgba(255,255,255,0.1);
-        color: #81C784;
-        font-weight: 700;
-      }
-
-      .table-container { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; border-radius: 12px; margin-top: 10px; border: 1px solid rgba(255,255,255,0.1); }
-
-      .highlight { color: #81C784; font-weight: 600; }
-      
-      .intro-text {
-        line-height: 1.6;
-        font-size: 16px;
-        color: #e0e0e0;
-        text-align: justify;
-      }
-
-      .formula-badge {
-        background: rgba(76, 175, 80, 0.2);
-        border: 1px dashed #4CAF50;
-        padding: 10px;
-        border-radius: 8px;
-        margin-top: 10px;
-        text-align: center;
-        font-weight: bold;
-        color: #A5D6A7;
-      }
-        .q-text, .q-subtext, .sol-step, .sol-box { font-size: 16px; }
-  </style>
-
-    <div class="premium-container">
-      <div class="section-box">
-        <div class="section-header"><span>✦</span> Introduction</div>
-        <div class="intro-text">
-          A number is called a <strong>Perfect Square</strong> if it can be expressed as the product of a number by itself. For example, 25 is a perfect square because 25 = 5 × 5. Finding the square root is the inverse operation of squaring a number.
-        </div>
-      </div>
-
-      <div class="section-box">
-        <div class="section-header"><span>✦</span> Key Concepts & Properties</div>
-      <div class="table-container">
-        <table class="prop-table">
-          <tr>
-            <th>Concept</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td><strong>Perfect Squares</strong></td>
-            <td>
-              Numbers like 1, 4, 9, 16, 25 are perfect squares. They always end with digits <span class="highlight">0, 1, 4, 5, 6, 9</span>.
-            </td>
-          </tr>
-          <tr>
-            <td><strong>Number of digits in Square Root</strong></td>
-            <td>
-              If a perfect square has <span class="highlight">n</span> digits, its square root has:<br/>
-              <span class="highlight"><span class='frac'><span class='num'>n</span><span class='den'>2</span></span></span> digits (if n is even)<br/>
-              <span class="highlight">(n+1)/2</span> digits (if n is odd)
-            </td>
-          </tr>
-          <tr>
-            <td><strong>Pythagorean Triplets</strong></td>
-            <td>
-              For any natural number m > 1, the Pythagorean triplet is given by:
-              <div class="formula-badge">2m, m² - 1, m² + 1</div>
-            </td>
-          </tr>
-        </table>
-      </div>
-      </div>
-    </div>
-  `,
+  htmlOverview: "\n\n<style>\n  * { box-sizing: border-box; }\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; text-align: center; }\n  .frac .den { padding: 1px 4px; text-align: center; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(0, 184, 212, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); text-align: left !important; }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #00B8D4; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; text-align: left !important; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 16px; font-weight: 500; text-align: left !important; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(0, 184, 212, 0.2); text-align: left !important; }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; text-align: left !important; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #00B8D4; border-radius: 8px; padding: 14px 16px; margin-top: 12px; text-align: left !important; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #4DD0E1; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; text-align: left !important; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; text-align: left !important; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; text-align: left !important; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; text-align: left !important; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; text-align: left !important; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; text-align: left !important; }\n  .prop-chip { background: rgba(0, 184, 212, 0.15); border: 1px solid #00B8D4; color: #80DEEA; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 4px 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(0, 184, 212, 0.4); border-radius: 10px; padding: 14px; margin: 16px 0; text-align: center !important; }\n  .diagram-wrapper { display: block; background: #FFFFFF; border-radius: 8px; padding: 10px 8px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.25); text-align: center !important; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center !important; margin-top: 10px; font-weight: 500; }\n  .matrix-table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 14.5px; }\n  .matrix-table th { background: rgba(0, 184, 212, 0.25); color: #80DEEA; padding: 10px; border: 1px solid rgba(0, 184, 212, 0.3); text-align: left; }\n  .matrix-table td { padding: 10px; border: 1px solid rgba(255, 255, 255, 0.1); color: #E2E8F0; line-height: 1.6; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Hero Header -->\n  <div style=\"background: linear-gradient(135deg, rgba(0, 184, 212, 0.25), rgba(0, 150, 136, 0.15)); border: 1.5px solid #00B8D4; border-radius: 14px; padding: 18px; margin-bottom: 20px; text-align: center;\">\n    <div style=\"font-size: 22px; font-weight: 800; color: #00B8D4; margin-bottom: 6px;\">\n      📊 Chapter 5: Data Handling\n    </div>\n    <div style=\"color: #CBD5E1; font-size: 14.5px; line-height: 1.5;\">\n      Class 8 NCERT Mathematics &bull; Complete Reference Guide &amp; Master Formula Cheat Sheet\n    </div>\n  </div>\n\n  <!-- Section 1: What is Data & Frequency Distribution -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 1. What is Data &amp; Frequency Distribution?</div>\n    <div class=\"q-text\">\n      The information collected in the form of numbers, words, or measurements is called <b>Data</b>.<br/>\n      Data initially collected in its original unorganized form is called <b>Raw Data</b>. To draw meaningful inferences, we organize it into a <b>Frequency Distribution Table</b> using <b>Tally Marks</b>.\n    </div>\n    <div class=\"sol-box\">\n      <div style=\"color: #FFFFFF; font-size: 14.5px; line-height: 1.7;\">\n        &bull; <b>Frequency:</b> The number of times a particular observation occurs in the given data.<br/>\n        &bull; <b>Tally Marks:</b> Vertical lines written in bundles of 5 (<b style=\"letter-spacing: 2px;\">||||</b> crossed with a diagonal slash <b style=\"color: #00B8D4;\">卌</b>).<br/>\n        &bull; <b>Class Interval (Grouping):</b> When data is very large, we group observations into continuous intervals like 800&ndash;810, 810&ndash;820.<br/>\n        &nbsp;&nbsp;&bull; <b>Lower Class Limit:</b> 800<br/>\n        &nbsp;&nbsp;&bull; <b>Upper Class Limit:</b> 810<br/>\n        &nbsp;&nbsp;&bull; <b>Class Size (Width):</b> Upper limit &minus; Lower limit = 810 &minus; 800 = 10.\n      </div>\n    </div>\n  </div>\n\n  <!-- Section 2: Four Key Graphical Representations -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 2. The Four Key Graphical Representations</div>\n    \n    <div style=\"overflow-x: auto;\">\n      <table class=\"matrix-table\">\n        <thead>\n          <tr>\n            <th>Graph Type</th>\n            <th>Features &amp; Definition</th>\n            <th>When to Use</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr>\n            <td><b style=\"color: #00B8D4;\">Bar Graph</b></td>\n            <td>Bars of uniform width with equal spacing between them. Bar height represents frequency.</td>\n            <td>Discrete categories (e.g. Shoppers: Woman, Man, Boy, Girl).</td>\n          </tr>\n          <tr>\n            <td><b style=\"color: #00B8D4;\">Double Bar Graph</b></td>\n            <td>Two adjacent bars drawn side-by-side for each category to compare two sets of data simultaneously.</td>\n            <td>Comparing marks of students across two terms, sales of two years.</td>\n          </tr>\n          <tr>\n            <td><b style=\"color: #00B8D4;\">Histogram</b></td>\n            <td>Adjacent bars over class intervals with <b>no gaps</b> between them. A <b>jagged line (kink)</b> is drawn near origin if the scale does not start from 0.</td>\n            <td>Continuous grouped numerical data (e.g. Wages 800&ndash;900, TV watching hours).</td>\n          </tr>\n          <tr>\n            <td><b style=\"color: #00B8D4;\">Pie Chart (Circle Graph)</b></td>\n            <td>A circle divided into sectors where each sector's size is proportional to the activity or component. Total angle at centre = <b>360&deg;</b>.</td>\n            <td>Showing relationship between a whole and its parts (e.g. Budget, Music survey).</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n  </div>\n\n  <!-- Section 3: Central Angle of a Sector in a Pie Chart -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 3. Master Formula for Pie Chart (Central Angle)</div>\n    <div class=\"q-text\">\n      The total angle at the centre of a complete circle is <b>360&deg;</b>.<br/>\n      To find the angle of the sector representing each component, use the <b>Central Angle Formula</b>:\n    </div>\n    <div class=\"sol-box\">\n      <div style=\"text-align: center; margin: 12px 0;\">\n        <span class=\"prop-chip\" style=\"font-size: 16px; padding: 8px 18px; color: #FFFFFF;\">\n          Central Angle = ( <span class=\"frac\"><span class=\"num\">Value of the Component</span><span class=\"den\">Total Value of all Components</span></span> ) &times; 360&deg;\n        </span>\n      </div>\n      <div style=\"color: #FFFFFF; font-size: 14.5px; line-height: 1.7;\">\n        &bull; <i>Worked Example:</i> If 18 people out of 36 prefer Blue color:<br/>\n        &nbsp;&nbsp;Fraction = <span class=\"frac\"><span class=\"num\">18</span><span class=\"den\">36</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span><br/>\n        &nbsp;&nbsp;Central Angle = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &times; 360&deg; = <b>180&deg;</b>.\n      </div>\n    </div>\n  </div>\n\n  <!-- Section 4: Chance and Probability -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 4. Chance &amp; Theoretical Probability</div>\n    <div class=\"q-text\">\n      In everyday life, there are events whose outcomes cannot be predicted beforehand with certainty (e.g. tossing a coin, rolling a die).\n    </div>\n    \n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00B8D4;\">Key Probability Definitions:</b></div>\n      <div style=\"color: #FFFFFF; font-size: 15px; line-height: 1.7;\">\n        &bull; <b>Random Experiment:</b> An experiment whose exact outcome cannot be known in advance, although all possible outcomes are known (e.g., throwing a standard die).<br/>\n        &bull; <b>Outcomes:</b> The possible results of a random experiment (e.g., for a die: 1, 2, 3, 4, 5, 6).<br/>\n        &bull; <b>Equally Likely Outcomes:</b> Outcomes that have the exact same chance of occurring (e.g., getting a Head or a Tail on an unbiased coin).<br/>\n        &bull; <b>Event:</b> One or more outcomes of an experiment (e.g., getting a prime number: {2, 3, 5}).\n      </div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">✦ Master Probability Formula:</div>\n      <div style=\"text-align: center; margin: 10px 0;\">\n        <span class=\"prop-chip\" style=\"font-size: 16px; padding: 8px 18px; color: #FFFFFF;\">\n          P(Event E) = <span class=\"frac\"><span class=\"num\">Number of outcomes favourable to E</span><span class=\"den\">Total number of possible outcomes</span></span>\n        </span>\n      </div>\n      <div style=\"color: #FFFFFF; font-size: 14.5px; line-height: 1.7;\">\n        &bull; Probability of an impossible event = <b>0</b>.<br/>\n        &bull; Probability of a sure (certain) event = <b>1</b>.<br/>\n        &bull; For any event E: <b>0 &le; P(E) &le; 1</b>.\n      </div>\n    </div>\n  </div>\n\n  <!-- Section 5: Master Revision Cheat Sheet -->\n  <div class=\"q-card\" style=\"border-color: #4CAF50;\">\n    <div class=\"q-title\" style=\"color: #4CAF50;\">✦ 5. Master Revision Formula Cheat Sheet</div>\n    <div style=\"font-size: 15px; color: #FFFFFF; line-height: 1.9;\">\n      &bull; <b>Class Mark (Mid-Point):</b> <span class=\"frac\"><span class=\"num\">Upper Class Limit + Lower Class Limit</span><span class=\"den\">2</span></span><br/>\n      &bull; <b>Class Width (Size):</b> Upper Limit &minus; Lower Limit.<br/>\n      &bull; <b>Total Angle in Pie Chart:</b> Exactly <b>360&deg;</b>.<br/>\n      &bull; <b>Central Angle:</b> (<span class=\"frac\"><span class=\"num\">Component Value</span><span class=\"den\">Total</span></span>) &times; 360&deg;.<br/>\n      &bull; <b>Component Value from Angle:</b> (<span class=\"frac\"><span class=\"num\">Central Angle</span><span class=\"den\">360&deg;</span></span>) &times; Total Value.<br/>\n      &bull; <b>Probability P(E):</b> <span class=\"frac\"><span class=\"num\">Favourable Outcomes</span><span class=\"den\">Total Outcomes</span></span>.<br/>\n      &bull; <b>Complementary Event:</b> P(Not E) = 1 &minus; P(E).\n    </div>\n  </div>\n\n</div>\n",
   htmlExercises: {
-    "ex5-1": ex51Content,
-    "ex5-2": ex52Content,
-    "ex5-3": ex53Content,
-    "ex5-4": ex54Content,
+    "ex5-1": "<style>\n  * { box-sizing: border-box; }\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; text-align: center; }\n  .frac .den { padding: 1px 4px; text-align: center; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(0, 184, 212, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); text-align: left !important; }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #00B8D4; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; text-align: left !important; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 14px; font-weight: 500; text-align: left !important; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(0, 184, 212, 0.2); text-align: left !important; }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; text-align: left !important; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #00B8D4; border-radius: 8px; padding: 14px 16px; margin-top: 12px; text-align: left !important; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #4DD0E1; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; text-align: left !important; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; text-align: left !important; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; text-align: left !important; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; text-align: left !important; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; text-align: left !important; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; text-align: left !important; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(0, 184, 212, 0.4); border-radius: 10px; padding: 14px; margin: 16px 0; text-align: center !important; }\n  .diagram-wrapper { display: block; background: #FFFFFF; border-radius: 8px; padding: 10px 8px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.25); text-align: center !important; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center !important; margin-top: 10px; font-weight: 500; }\n  .table-card { background: #FFFFFF; border-radius: 8px; padding: 12px; margin: 16px 0; overflow-x: auto; box-shadow: 0 3px 12px rgba(0,0,0,0.25); }\n  .styled-table { width: 100%; border-collapse: collapse; color: #0F172A; font-size: 14px; text-align: center; }\n  .styled-table th { background: #00B8D4; color: #FFFFFF; font-weight: 700; padding: 10px 8px; border: 1px solid #CBD5E1; }\n  .styled-table td { padding: 8px; border: 1px solid #CBD5E1; font-weight: 500; }\n  .styled-table tr:nth-child(even) { background: #F8FAFC; }\n  .styled-table tfoot td { font-weight: 800; background: #E0F7FA; color: #00838F; }\n  .tally { font-family: 'Courier New', Courier, monospace; letter-spacing: 2px; font-weight: 700; color: #0284C7; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Header Card -->\n  <div style=\"background: linear-gradient(135deg, rgba(0, 184, 212, 0.2), rgba(0, 150, 136, 0.1)); border: 1.5px solid #00B8D4; border-radius: 12px; padding: 14px 18px; margin-bottom: 20px;\">\n    <div style=\"font-size: 19px; font-weight: 800; color: #00B8D4; margin-bottom: 4px;\">\n      Exercise 5.1\n    </div>\n    <div style=\"color: #FFFFFF; font-size: 15px; font-weight: 500;\">\n      Organising Data, Frequency Tables, Tally Marks, Bar Graphs &amp; Histograms\n    </div>\n  </div>\n\n  <!-- QUESTION 1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 1:</div>\n    <div class=\"q-text\">\n      For which of these would you use a histogram to show the data?<br/>\n      <div style=\"margin-top: 6px; color: #E2E8F0;\">\n        (a) The number of letters for different areas in a postman&rsquo;s bag.<br/>\n        (b) The height of competitors in an athletics meet.<br/>\n        (c) The number of cassettes produced by 5 companies.<br/>\n        (d) The number of passengers boarding trains from 7.00 a.m. to 7.00 p.m. at a station.<br/>\n        Give a reason for each.\n      </div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Solution:</div>\n      <div class=\"sol-step\">\n        <div>We know that a <b>Histogram</b> is a graphical representation of data when the data is represented using <b>continuous class intervals</b> (numerical ranges with no gaps).</div>\n        \n        <div style=\"margin-top: 12px;\">\n          <b style=\"color: #00B8D4;\">(a)</b> <span style=\"color: #EF4444; font-weight: 700;\">No:</span> The letters are distributed over geographical area names (qualitative categories). Area names cannot be divided into continuous numerical class intervals. Hence, a histogram <b>cannot</b> be used.\n        </div>\n\n        <div style=\"margin-top: 10px;\">\n          <b style=\"color: #00B8D4;\">(b)</b> <span style=\"color: #10B981; font-weight: 700;\">Yes:</span> The heights of competitors are continuous numerical measurements that can be grouped into class intervals (e.g., 140&ndash;150 cm, 150&ndash;160 cm, 160&ndash;170 cm, etc.). Hence, a histogram <b>can</b> be used.\n        </div>\n\n        <div style=\"margin-top: 10px;\">\n          <b style=\"color: #00B8D4;\">(c)</b> <span style=\"color: #EF4444; font-weight: 700;\">No:</span> Company names are separate distinct entities (categories) that cannot be broken down into class intervals. Hence, a histogram <b>cannot</b> be used (a bar graph is used instead).\n        </div>\n\n        <div style=\"margin-top: 10px;\">\n          <b style=\"color: #00B8D4;\">(d)</b> <span style=\"color: #10B981; font-weight: 700;\">Yes:</span> The 12-hour time period from 7.00 a.m. to 7.00 p.m. can be conveniently partitioned into continuous class intervals of time (e.g., 7 a.m.&ndash;8 a.m., 8 a.m.&ndash;9 a.m., etc.). Hence, a histogram <b>can</b> be used.\n        </div>\n      </div>\n\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">A histogram would be used for cases (b) and (d).</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 2 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 2:</div>\n    <div class=\"q-text\">\n      The shoppers who come to a departmental store are marked as man (M), woman (W), boy (B) or girl (G). The following list gives the shoppers who came during the first hour of the morning:<br/>\n      <div style=\"margin-top: 8px; font-family: monospace; font-size: 14px; color: #80DEEA; line-height: 1.8; background: rgba(0,0,0,0.3); padding: 10px; border-radius: 6px;\">\n        W W W G B W W M G G M M W W W W G B M W B G G M W W M M W W W M W B W G M W W W W G W M M W M W G W M G W M M B G G W\n      </div>\n      <div style=\"margin-top: 8px;\">\n        Make a frequency distribution table using tally marks. Draw a bar graph to illustrate it.\n      </div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Solution:</div>\n\n      <div class=\"sol-step\">\n        <div><b>1. Frequency Distribution Table:</b> Counting each shopper category using tally marks:</div>\n      </div>\n\n      <!-- Table Shoppers -->\n      <div class=\"table-card\">\n        <table class=\"styled-table\">\n          <thead>\n            <tr>\n              <th style=\"width: 25%;\">Shopper</th>\n              <th style=\"width: 50%;\">Tally Marks</th>\n              <th style=\"width: 25%;\">Number of Shoppers (Frequency)</th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr>\n              <td><b style=\"color: #0284C7; font-size: 15px;\">Woman (W)</b></td>\n              <td class=\"tally\">卌 卌 卌 卌 卌 |||</td>\n              <td style=\"font-size: 15px; font-weight: 700;\">28</td>\n            </tr>\n            <tr>\n              <td><b style=\"color: #0284C7; font-size: 15px;\">Man (M)</b></td>\n              <td class=\"tally\">卌 卌 卌</td>\n              <td style=\"font-size: 15px; font-weight: 700;\">15</td>\n            </tr>\n            <tr>\n              <td><b style=\"color: #0284C7; font-size: 15px;\">Boy (B)</b></td>\n              <td class=\"tally\">卌</td>\n              <td style=\"font-size: 15px; font-weight: 700;\">5</td>\n            </tr>\n            <tr>\n              <td><b style=\"color: #0284C7; font-size: 15px;\">Girl (G)</b></td>\n              <td class=\"tally\">卌 卌 ||</td>\n              <td style=\"font-size: 15px; font-weight: 700;\">12</td>\n            </tr>\n          </tbody>\n          <tfoot>\n            <tr>\n              <td>Total</td>\n              <td>&mdash;</td>\n              <td style=\"font-size: 16px;\">60</td>\n            </tr>\n          </tfoot>\n        </table>\n      </div>\n\n      <div class=\"sol-step\">\n        <div><b>2. Bar Graph:</b> Depicting the number of shoppers in each category:</div>\n      </div>\n\n      <!-- Bar Graph Shoppers matching PDF Page 2 -->\n      <div class=\"diagram-card\">\n        <div class=\"diagram-wrapper\">\n          <svg viewBox=\"0 0 380 250\" width=\"100%\" height=\"auto\">\n            <rect width=\"100%\" height=\"100%\" fill=\"#FFFFFF\" rx=\"8\"/>\n            <!-- Grid lines -->\n            <line x1=\"50\" y1=\"200\" x2=\"350\" y2=\"200\" stroke=\"#CBD5E1\" stroke-width=\"1\"/>\n            <line x1=\"50\" y1=\"168\" x2=\"350\" y2=\"168\" stroke=\"#F1F5F9\" stroke-width=\"1\"/>\n            <line x1=\"50\" y1=\"137\" x2=\"350\" y2=\"137\" stroke=\"#F1F5F9\" stroke-width=\"1\"/>\n            <line x1=\"50\" y1=\"105\" x2=\"350\" y2=\"105\" stroke=\"#F1F5F9\" stroke-width=\"1\"/>\n            <line x1=\"50\" y1=\"74\" x2=\"350\" y2=\"74\" stroke=\"#F1F5F9\" stroke-width=\"1\"/>\n            <line x1=\"50\" y1=\"42\" x2=\"350\" y2=\"42\" stroke=\"#F1F5F9\" stroke-width=\"1\"/>\n            <line x1=\"50\" y1=\"20\" x2=\"350\" y2=\"20\" stroke=\"#F1F5F9\" stroke-width=\"1\"/>\n            <!-- Axes -->\n            <line x1=\"50\" y1=\"200\" x2=\"360\" y2=\"200\" stroke=\"#0F172A\" stroke-width=\"2\"/>\n            <line x1=\"50\" y1=\"205\" x2=\"50\" y2=\"15\" stroke=\"#0F172A\" stroke-width=\"2\"/>\n            <!-- Arrowheads -->\n            <polygon points=\"360,200 354,196 354,204\" fill=\"#0F172A\"/>\n            <polygon points=\"50,15 46,21 54,21\" fill=\"#0F172A\"/>\n            <!-- Y-Axis Ticks & Labels (scale 0 to 30) -->\n            <text x=\"42\" y=\"204\" font-size=\"11\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"end\">0</text>\n            <text x=\"42\" y=\"172\" font-size=\"11\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"end\">5</text>\n            <text x=\"42\" y=\"141\" font-size=\"11\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"end\">10</text>\n            <text x=\"42\" y=\"109\" font-size=\"11\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"end\">15</text>\n            <text x=\"42\" y=\"78\" font-size=\"11\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"end\">20</text>\n            <text x=\"42\" y=\"46\" font-size=\"11\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"end\">25</text>\n            <text x=\"42\" y=\"24\" font-size=\"11\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"end\">30</text>\n            <!-- Vertical Bars:\n                 y = 200 - (val / 30) * 180\n                 W = 28 -> h = 168 -> y = 32\n                 M = 15 -> h = 90  -> y = 110\n                 B = 5  -> h = 30  -> y = 170\n                 G = 12 -> h = 72  -> y = 128\n            -->\n            <!-- Bar 1: Woman (28) -->\n            <rect x=\"75\" y=\"32\" width=\"45\" height=\"168\" fill=\"#D97706\" stroke=\"#B45309\" stroke-width=\"1.5\" rx=\"3\"/>\n            <text x=\"97\" y=\"26\" font-size=\"12\" font-weight=\"800\" fill=\"#B45309\" text-anchor=\"middle\">28</text>\n            <text x=\"97\" y=\"218\" font-size=\"12\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"middle\">Woman</text>\n            <!-- Bar 2: Man (15) -->\n            <rect x=\"145\" y=\"110\" width=\"45\" height=\"90\" fill=\"#B45309\" stroke=\"#78350F\" stroke-width=\"1.5\" rx=\"3\"/>\n            <text x=\"167\" y=\"104\" font-size=\"12\" font-weight=\"800\" fill=\"#78350F\" text-anchor=\"middle\">15</text>\n            <text x=\"167\" y=\"218\" font-size=\"12\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"middle\">Man</text>\n            <!-- Bar 3: Boy (5) -->\n            <rect x=\"215\" y=\"170\" width=\"45\" height=\"30\" fill=\"#78350F\" stroke=\"#451A03\" stroke-width=\"1.5\" rx=\"3\"/>\n            <text x=\"237\" y=\"164\" font-size=\"12\" font-weight=\"800\" fill=\"#451A03\" text-anchor=\"middle\">5</text>\n            <text x=\"237\" y=\"218\" font-size=\"12\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"middle\">Boy</text>\n            <!-- Bar 4: Girl (12) -->\n            <rect x=\"285\" y=\"128\" width=\"45\" height=\"72\" fill=\"#92400E\" stroke=\"#78350F\" stroke-width=\"1.5\" rx=\"3\"/>\n            <text x=\"307\" y=\"122\" font-size=\"12\" font-weight=\"800\" fill=\"#78350F\" text-anchor=\"middle\">12</text>\n            <text x=\"307\" y=\"218\" font-size=\"12\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"middle\">Girl</text>\n            <!-- Axis Labels -->\n            <text x=\"200\" y=\"242\" font-size=\"12\" font-weight=\"800\" fill=\"#0F172A\" text-anchor=\"middle\">Shoppers &rarr;</text>\n            <text x=\"16\" y=\"110\" font-size=\"11\" font-weight=\"800\" fill=\"#0F172A\" transform=\"rotate(-90 16 110)\" text-anchor=\"middle\">Number of Shoppers &rarr;</text>\n          </svg>\n        </div>\n        <div class=\"diagram-caption\">📍 Bar Graph Showing the Number of Shoppers in Each Category</div>\n      </div>\n\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Summary: </span>\n        <span class=\"ans-val\">Woman is the most frequent shopper (28), and Boy is the least frequent (5).</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 3 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 3:</div>\n    <div class=\"q-text\">\n      The weekly wages (in ₹) of 30 workers in a factory are:<br/>\n      <div style=\"margin-top: 8px; font-family: monospace; font-size: 14px; color: #80DEEA; line-height: 1.8; background: rgba(0,0,0,0.3); padding: 10px; border-radius: 6px;\">\n        830, 835, 890, 810, 835, 836, 869, 845, 898, 890, 820, 860, 832, 833, 855, 845, 804, 808, 812, 840, 885, 835, 835, 836, 878, 840, 868, 890, 806, 840\n      </div>\n      <div style=\"margin-top: 8px;\">\n        Using tally marks, make a frequency table with intervals as 800&ndash;810, 810&ndash;820 and so on.\n      </div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Solution:</div>\n      <div class=\"sol-step\">\n        <div>The frequency distribution table with class intervals of size 10 is constructed below:</div>\n      </div>\n\n      <!-- Table Wages 30 Workers matching PDF Page 2 -->\n      <div class=\"table-card\">\n        <table class=\"styled-table\">\n          <thead>\n            <tr>\n              <th style=\"width: 33%;\">Class Intervals (Weekly Wages in ₹)</th>\n              <th style=\"width: 34%;\">Tally Marks</th>\n              <th style=\"width: 33%;\">Frequency (No. of Workers)</th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr>\n              <td><b>800 &ndash; 810</b></td>\n              <td class=\"tally\">|||</td>\n              <td>3</td>\n            </tr>\n            <tr>\n              <td><b>810 &ndash; 820</b></td>\n              <td class=\"tally\">||</td>\n              <td>2</td>\n            </tr>\n            <tr>\n              <td><b>820 &ndash; 830</b></td>\n              <td class=\"tally\">|</td>\n              <td>1</td>\n            </tr>\n            <tr>\n              <td><b style=\"color: #0284C7;\">830 &ndash; 840</b></td>\n              <td class=\"tally\" style=\"color: #0284C7;\">卌 ||||</td>\n              <td style=\"color: #0284C7; font-weight: 800;\">9</td>\n            </tr>\n            <tr>\n              <td><b>840 &ndash; 850</b></td>\n              <td class=\"tally\">卌</td>\n              <td>5</td>\n            </tr>\n            <tr>\n              <td><b>850 &ndash; 860</b></td>\n              <td class=\"tally\">|</td>\n              <td>1</td>\n            </tr>\n            <tr>\n              <td><b>860 &ndash; 870</b></td>\n              <td class=\"tally\">|||</td>\n              <td>3</td>\n            </tr>\n            <tr>\n              <td><b>870 &ndash; 880</b></td>\n              <td class=\"tally\">|</td>\n              <td>1</td>\n            </tr>\n            <tr>\n              <td><b>880 &ndash; 890</b></td>\n              <td class=\"tally\">|</td>\n              <td>1</td>\n            </tr>\n            <tr>\n              <td><b>890 &ndash; 900</b></td>\n              <td class=\"tally\">||||</td>\n              <td>4</td>\n            </tr>\n          </tbody>\n          <tfoot>\n            <tr>\n              <td>Total</td>\n              <td>&mdash;</td>\n              <td>30</td>\n            </tr>\n          </tfoot>\n        </table>\n      </div>\n\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Note: </span>\n        <span class=\"ans-val\">Observations falling on the upper limit (e.g. 840) are included in the next interval (840&ndash;850). Total workers = 30.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 4 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 4:</div>\n    <div class=\"q-text\">\n      Draw a histogram for the frequency table made for the data in Question 3 and answer the following questions:<br/>\n      <div style=\"margin-top: 6px; color: #E2E8F0;\">\n        (i) Which group has the maximum number of workers?<br/>\n        (ii) How many workers earn ₹ 850 and more?<br/>\n        (iii) How many workers earn less than ₹ 850?\n      </div>\n    </div>\n\n    <!-- Histogram Weekly Wages matching PDF Page 3 -->\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg viewBox=\"0 0 380 250\" width=\"100%\" height=\"auto\">\n          <rect width=\"100%\" height=\"100%\" fill=\"#FFFFFF\" rx=\"8\"/>\n          <!-- Grid lines -->\n          <line x1=\"45\" y1=\"200\" x2=\"365\" y2=\"200\" stroke=\"#CBD5E1\" stroke-width=\"1\"/>\n          <line x1=\"45\" y1=\"164\" x2=\"365\" y2=\"164\" stroke=\"#F1F5F9\" stroke-width=\"1\"/>\n          <line x1=\"45\" y1=\"128\" x2=\"365\" y2=\"128\" stroke=\"#F1F5F9\" stroke-width=\"1\"/>\n          <line x1=\"45\" y1=\"92\" x2=\"365\" y2=\"92\" stroke=\"#F1F5F9\" stroke-width=\"1\"/>\n          <line x1=\"45\" y1=\"56\" x2=\"365\" y2=\"56\" stroke=\"#F1F5F9\" stroke-width=\"1\"/>\n          <line x1=\"45\" y1=\"20\" x2=\"365\" y2=\"20\" stroke=\"#F1F5F9\" stroke-width=\"1\"/>\n          <!-- Y-Axis (0 to 10) -->\n          <line x1=\"45\" y1=\"205\" x2=\"45\" y2=\"15\" stroke=\"#0F172A\" stroke-width=\"2\"/>\n          <polygon points=\"45,15 41,21 49,21\" fill=\"#0F172A\"/>\n          <text x=\"38\" y=\"204\" font-size=\"10\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"end\">0</text>\n          <text x=\"38\" y=\"186\" font-size=\"10\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"end\">1</text>\n          <text x=\"38\" y=\"168\" font-size=\"10\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"end\">2</text>\n          <text x=\"38\" y=\"150\" font-size=\"10\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"end\">3</text>\n          <text x=\"38\" y=\"132\" font-size=\"10\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"end\">4</text>\n          <text x=\"38\" y=\"114\" font-size=\"10\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"end\">5</text>\n          <text x=\"38\" y=\"96\" font-size=\"10\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"end\">6</text>\n          <text x=\"38\" y=\"78\" font-size=\"10\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"end\">7</text>\n          <text x=\"38\" y=\"60\" font-size=\"10\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"end\">8</text>\n          <text x=\"38\" y=\"42\" font-size=\"10\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"end\">9</text>\n          <text x=\"38\" y=\"24\" font-size=\"10\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"end\">10</text>\n          <!-- X-Axis with Kink (Jagged Line) -->\n          <line x1=\"45\" y1=\"200\" x2=\"60\" y2=\"200\" stroke=\"#0F172A\" stroke-width=\"2\"/>\n          <!-- Kink / Jagged Line between 60 and 75 -->\n          <polyline points=\"60,200 64,194 68,206 72,194 76,200\" fill=\"none\" stroke=\"#0F172A\" stroke-width=\"2\"/>\n          <line x1=\"76\" y1=\"200\" x2=\"365\" y2=\"200\" stroke=\"#0F172A\" stroke-width=\"2\"/>\n          <polygon points=\"365,200 359,196 359,204\" fill=\"#0F172A\"/>\n          <!-- Histogram Pillars (Continuous, width = 27px each, start x = 76)\n               800-810: 76 to 103 (f=3 -> h=54 -> y=146)\n               810-820: 103 to 130 (f=2 -> h=36 -> y=164)\n               820-830: 130 to 157 (f=1 -> h=18 -> y=182)\n               830-840: 157 to 184 (f=9 -> h=162 -> y=38)\n               840-850: 184 to 211 (f=5 -> h=90 -> y=110)\n               850-860: 211 to 238 (f=1 -> h=18 -> y=182)\n               860-870: 238 to 265 (f=3 -> h=54 -> y=146)\n               870-880: 265 to 292 (f=1 -> h=18 -> y=182)\n               880-890: 292 to 319 (f=1 -> h=18 -> y=182)\n               890-900: 319 to 346 (f=4 -> h=72 -> y=128)\n          -->\n          <rect x=\"76\" y=\"146\" width=\"27\" height=\"54\" fill=\"#FED7AA\" stroke=\"#C2410C\" stroke-width=\"1.2\"/>\n          <rect x=\"103\" y=\"164\" width=\"27\" height=\"36\" fill=\"#FED7AA\" stroke=\"#C2410C\" stroke-width=\"1.2\"/>\n          <rect x=\"130\" y=\"182\" width=\"27\" height=\"18\" fill=\"#FED7AA\" stroke=\"#C2410C\" stroke-width=\"1.2\"/>\n          <rect x=\"157\" y=\"38\" width=\"27\" height=\"162\" fill=\"#FDBA74\" stroke=\"#C2410C\" stroke-width=\"1.5\"/>\n          <rect x=\"184\" y=\"110\" width=\"27\" height=\"90\" fill=\"#FED7AA\" stroke=\"#C2410C\" stroke-width=\"1.2\"/>\n          <rect x=\"211\" y=\"182\" width=\"27\" height=\"18\" fill=\"#FED7AA\" stroke=\"#C2410C\" stroke-width=\"1.2\"/>\n          <rect x=\"238\" y=\"146\" width=\"27\" height=\"54\" fill=\"#FED7AA\" stroke=\"#C2410C\" stroke-width=\"1.2\"/>\n          <rect x=\"265\" y=\"182\" width=\"27\" height=\"18\" fill=\"#FED7AA\" stroke=\"#C2410C\" stroke-width=\"1.2\"/>\n          <rect x=\"292\" y=\"182\" width=\"27\" height=\"18\" fill=\"#FED7AA\" stroke=\"#C2410C\" stroke-width=\"1.2\"/>\n          <rect x=\"319\" y=\"128\" width=\"27\" height=\"72\" fill=\"#FED7AA\" stroke=\"#C2410C\" stroke-width=\"1.2\"/>\n          <!-- X-Axis Labels -->\n          <text x=\"76\" y=\"214\" font-size=\"9\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"middle\">800</text>\n          <text x=\"103\" y=\"214\" font-size=\"9\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"middle\">810</text>\n          <text x=\"130\" y=\"214\" font-size=\"9\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"middle\">820</text>\n          <text x=\"157\" y=\"214\" font-size=\"9\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"middle\">830</text>\n          <text x=\"184\" y=\"214\" font-size=\"9\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"middle\">840</text>\n          <text x=\"211\" y=\"214\" font-size=\"9\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"middle\">850</text>\n          <text x=\"238\" y=\"214\" font-size=\"9\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"middle\">860</text>\n          <text x=\"265\" y=\"214\" font-size=\"9\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"middle\">870</text>\n          <text x=\"292\" y=\"214\" font-size=\"9\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"middle\">880</text>\n          <text x=\"319\" y=\"214\" font-size=\"9\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"middle\">890</text>\n          <text x=\"346\" y=\"214\" font-size=\"9\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"middle\">900</text>\n          <!-- Axis Labels -->\n          <text x=\"210\" y=\"238\" font-size=\"12\" font-weight=\"800\" fill=\"#0F172A\" text-anchor=\"middle\">Weekly wages (₹) &rarr;</text>\n          <text x=\"14\" y=\"110\" font-size=\"11\" font-weight=\"800\" fill=\"#0F172A\" transform=\"rotate(-90 14 110)\" text-anchor=\"middle\">Number of workers &rarr;</text>\n        </svg>\n      </div>\n      <div class=\"diagram-caption\">📍 Histogram Showing Weekly Wages (in ₹) of 30 Workers (with kink on X-axis)</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Answers:</div>\n      <div class=\"sol-step\">\n        <div style=\"margin-bottom: 12px;\">\n          <b style=\"color: #00B8D4;\">(i) Group having maximum workers:</b><br/>\n          From the histogram, the tallest bar corresponds to interval <b>830 &ndash; 840</b> with <b>9 workers</b>.\n        </div>\n\n        <div style=\"margin-bottom: 12px;\">\n          <b style=\"color: #00B8D4;\">(ii) Workers earning ₹ 850 and more:</b><br/>\n          We sum the frequencies of all intervals from 850 onwards:<br/>\n          <span class=\"prop-chip\">= 1 (850&ndash;860) + 3 (860&ndash;870) + 1 (870&ndash;880) + 1 (880&ndash;890) + 4 (890&ndash;900) = <b>10 workers</b></span>\n        </div>\n\n        <div style=\"margin-bottom: 6px;\">\n          <b style=\"color: #00B8D4;\">(iii) Workers earning less than ₹ 850:</b><br/>\n          We sum the frequencies of all intervals below 850:<br/>\n          <span class=\"prop-chip\">= 3 (800&ndash;810) + 2 (810&ndash;820) + 1 (820&ndash;830) + 9 (830&ndash;840) + 5 (840&ndash;850) = <b>20 workers</b></span>\n        </div>\n      </div>\n\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Results: </span>\n        <span class=\"ans-val\">(i) 830&ndash;840 (9 workers) &bull; (ii) 10 workers &bull; (iii) 20 workers</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 5 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 5:</div>\n    <div class=\"q-text\">\n      The number of hours for which students of a particular class watched television during holidays is shown in the given graph.<br/>\n      <div style=\"margin-top: 6px; color: #E2E8F0;\">\n        Answer the following:<br/>\n        (i) For how many hours did the maximum number of students watch TV?<br/>\n        (ii) How many students watched TV for less than 4 hours?<br/>\n        (iii) How many students spent more than 5 hours watching TV?\n      </div>\n    </div>\n\n    <!-- Histogram TV Watching Hours matching PDF Page 4 -->\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg viewBox=\"0 0 380 250\" width=\"100%\" height=\"auto\">\n          <rect width=\"100%\" height=\"100%\" fill=\"#FFFFFF\" rx=\"8\"/>\n          <!-- Grid lines -->\n          <line x1=\"45\" y1=\"200\" x2=\"350\" y2=\"200\" stroke=\"#CBD5E1\" stroke-width=\"1\"/>\n          <line x1=\"45\" y1=\"175\" x2=\"350\" y2=\"175\" stroke=\"#F1F5F9\" stroke-width=\"1\"/>\n          <line x1=\"45\" y1=\"150\" x2=\"350\" y2=\"150\" stroke=\"#F1F5F9\" stroke-width=\"1\"/>\n          <line x1=\"45\" y1=\"125\" x2=\"350\" y2=\"125\" stroke=\"#F1F5F9\" stroke-width=\"1\"/>\n          <line x1=\"45\" y1=\"100\" x2=\"350\" y2=\"100\" stroke=\"#F1F5F9\" stroke-width=\"1\"/>\n          <line x1=\"45\" y1=\"75\" x2=\"350\" y2=\"75\" stroke=\"#F1F5F9\" stroke-width=\"1\"/>\n          <line x1=\"45\" y1=\"50\" x2=\"350\" y2=\"50\" stroke=\"#F1F5F9\" stroke-width=\"1\"/>\n          <line x1=\"45\" y1=\"25\" x2=\"350\" y2=\"25\" stroke=\"#F1F5F9\" stroke-width=\"1\"/>\n          <!-- Y-Axis (0 to 32) -->\n          <line x1=\"45\" y1=\"205\" x2=\"45\" y2=\"15\" stroke=\"#0F172A\" stroke-width=\"2\"/>\n          <polygon points=\"45,15 41,21 49,21\" fill=\"#0F172A\"/>\n          <text x=\"38\" y=\"204\" font-size=\"10\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"end\">0</text>\n          <text x=\"38\" y=\"179\" font-size=\"10\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"end\">4</text>\n          <text x=\"38\" y=\"154\" font-size=\"10\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"end\">8</text>\n          <text x=\"38\" y=\"129\" font-size=\"10\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"end\">12</text>\n          <text x=\"38\" y=\"104\" font-size=\"10\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"end\">16</text>\n          <text x=\"38\" y=\"79\" font-size=\"10\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"end\">20</text>\n          <text x=\"38\" y=\"54\" font-size=\"10\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"end\">24</text>\n          <text x=\"38\" y=\"29\" font-size=\"10\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"end\">28</text>\n          <text x=\"38\" y=\"10\" font-size=\"10\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"end\">32</text>\n          <!-- X-Axis with kink -->\n          <line x1=\"45\" y1=\"200\" x2=\"60\" y2=\"200\" stroke=\"#0F172A\" stroke-width=\"2\"/>\n          <polyline points=\"60,200 64,194 68,206 72,194 76,200\" fill=\"none\" stroke=\"#0F172A\" stroke-width=\"2\"/>\n          <line x1=\"76\" y1=\"200\" x2=\"350\" y2=\"200\" stroke=\"#0F172A\" stroke-width=\"2\"/>\n          <polygon points=\"350,200 344,196 344,204\" fill=\"#0F172A\"/>\n          <!-- Histogram Bars:\n               width = 42px each\n               1-2: 76 to 118 (f=4 -> h=25 -> y=175)\n               2-3: 118 to 160 (f=8 -> h=50 -> y=150)\n               3-4: 160 to 202 (f=22 -> h=137.5 -> y=62.5)\n               4-5: 202 to 244 (f=32 -> h=200 -> y=0) wait, let's scale so 32 fits at y=25:\n               scale: h = (val / 32) * 175\n               4 -> h = 22 -> y = 178\n               8 -> h = 44 -> y = 156\n               22 -> h = 120 -> y = 80\n               32 -> h = 175 -> y = 25\n               8 -> h = 44 -> y = 156\n               6 -> h = 33 -> y = 167\n          -->\n          <!-- 1-2 (4) -->\n          <rect x=\"76\" y=\"178\" width=\"42\" height=\"22\" fill=\"#E2E8F0\" stroke=\"#0F172A\" stroke-width=\"1.5\"/>\n          <text x=\"97\" y=\"172\" font-size=\"11\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"middle\">4</text>\n          <!-- 2-3 (8) -->\n          <rect x=\"118\" y=\"156\" width=\"42\" height=\"44\" fill=\"#E2E8F0\" stroke=\"#0F172A\" stroke-width=\"1.5\"/>\n          <text x=\"139\" y=\"150\" font-size=\"11\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"middle\">8</text>\n          <!-- 3-4 (22) -->\n          <rect x=\"160\" y=\"80\" width=\"42\" height=\"120\" fill=\"#E2E8F0\" stroke=\"#0F172A\" stroke-width=\"1.5\"/>\n          <text x=\"181\" y=\"74\" font-size=\"11\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"middle\">22</text>\n          <!-- 4-5 (32) -->\n          <rect x=\"202\" y=\"25\" width=\"42\" height=\"175\" fill=\"#BAE6FD\" stroke=\"#0284C7\" stroke-width=\"1.8\"/>\n          <text x=\"223\" y=\"19\" font-size=\"12\" font-weight=\"800\" fill=\"#0284C7\" text-anchor=\"middle\">32</text>\n          <!-- 5-6 (8) -->\n          <rect x=\"244\" y=\"156\" width=\"42\" height=\"44\" fill=\"#E2E8F0\" stroke=\"#0F172A\" stroke-width=\"1.5\"/>\n          <text x=\"265\" y=\"150\" font-size=\"11\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"middle\">8</text>\n          <!-- 6-7 (6) -->\n          <rect x=\"286\" y=\"167\" width=\"42\" height=\"33\" fill=\"#E2E8F0\" stroke=\"#0F172A\" stroke-width=\"1.5\"/>\n          <text x=\"307\" y=\"161\" font-size=\"11\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"middle\">6</text>\n          <!-- X-Axis Labels -->\n          <text x=\"76\" y=\"214\" font-size=\"11\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"middle\">1</text>\n          <text x=\"118\" y=\"214\" font-size=\"11\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"middle\">2</text>\n          <text x=\"160\" y=\"214\" font-size=\"11\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"middle\">3</text>\n          <text x=\"202\" y=\"214\" font-size=\"11\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"middle\">4</text>\n          <text x=\"244\" y=\"214\" font-size=\"11\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"middle\">5</text>\n          <text x=\"286\" y=\"214\" font-size=\"11\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"middle\">6</text>\n          <text x=\"328\" y=\"214\" font-size=\"11\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"middle\">7</text>\n          <!-- Axis Titles -->\n          <text x=\"200\" y=\"238\" font-size=\"12\" font-weight=\"800\" fill=\"#0F172A\" text-anchor=\"middle\">Hours of TV watched per day &rarr;</text>\n          <text x=\"14\" y=\"110\" font-size=\"11\" font-weight=\"800\" fill=\"#0F172A\" transform=\"rotate(-90 14 110)\" text-anchor=\"middle\">Number of students &rarr;</text>\n        </svg>\n      </div>\n      <div class=\"diagram-caption\">📍 Histogram Showing Daily TV Watching Hours of Students During Holidays</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Answers:</div>\n      <div class=\"sol-step\">\n        <div style=\"margin-bottom: 12px;\">\n          <b style=\"color: #00B8D4;\">(i) Hours for which maximum students watched TV:</b><br/>\n          The tallest bar is 32 units high for the interval <b>4 &ndash; 5 hours</b>.<br/>\n          &rArr; The maximum number of students watched TV for <b>4 to 5 hours</b>.\n        </div>\n\n        <div style=\"margin-bottom: 12px;\">\n          <b style=\"color: #00B8D4;\">(ii) Students who watched TV for less than 4 hours:</b><br/>\n          We sum the students in intervals 1&ndash;2, 2&ndash;3, and 3&ndash;4:<br/>\n          <span class=\"prop-chip\">= 4 + 8 + 22 = <b>34 students</b></span>\n        </div>\n\n        <div style=\"margin-bottom: 6px;\">\n          <b style=\"color: #00B8D4;\">(iii) Students who spent more than 5 hours watching TV:</b><br/>\n          We sum the students in intervals 5&ndash;6 and 6&ndash;7:<br/>\n          <span class=\"prop-chip\">= 8 + 6 = <b>14 students</b></span>\n        </div>\n      </div>\n\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Results: </span>\n        <span class=\"ans-val\">(i) 4&ndash;5 hours (32 students) &bull; (ii) 34 students &bull; (iii) 14 students</span>\n      </div>\n    </div>\n  </div>\n\n</div>",
+    "ex5-2": "<style>\n  * { box-sizing: border-box; }\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; text-align: center; }\n  .frac .den { padding: 1px 4px; text-align: center; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(0, 184, 212, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); text-align: left !important; }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #00B8D4; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; text-align: left !important; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 14px; font-weight: 500; text-align: left !important; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(0, 184, 212, 0.2); text-align: left !important; }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; text-align: left !important; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #00B8D4; border-radius: 8px; padding: 14px 16px; margin-top: 12px; text-align: left !important; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #4DD0E1; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; text-align: left !important; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; text-align: left !important; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; text-align: left !important; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; text-align: left !important; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; text-align: left !important; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; text-align: left !important; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(0, 184, 212, 0.4); border-radius: 10px; padding: 14px; margin: 16px 0; text-align: center !important; }\n  .diagram-wrapper { display: block; background: #FFFFFF; border-radius: 8px; padding: 10px 8px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.25); text-align: center !important; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center !important; margin-top: 10px; font-weight: 500; }\n  .table-card { background: #FFFFFF; border-radius: 8px; padding: 12px; margin: 16px 0; overflow-x: auto; box-shadow: 0 3px 12px rgba(0,0,0,0.25); }\n  .styled-table { width: 100%; border-collapse: collapse; color: #0F172A; font-size: 14px; text-align: center; }\n  .styled-table th { background: #00B8D4; color: #FFFFFF; font-weight: 700; padding: 10px 8px; border: 1px solid #CBD5E1; }\n  .styled-table td { padding: 8px; border: 1px solid #CBD5E1; font-weight: 500; }\n  .styled-table tr:nth-child(even) { background: #F8FAFC; }\n  .styled-table tfoot td { font-weight: 800; background: #E0F7FA; color: #00838F; }\n  .prop-chip { display: inline-block; background: rgba(0, 184, 212, 0.2); border: 1px solid #00B8D4; border-radius: 6px; padding: 2px 8px; color: #E0F7FA; font-weight: 600; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Header Card -->\n  <div style=\"background: linear-gradient(135deg, rgba(0, 184, 212, 0.2), rgba(0, 150, 136, 0.1)); border: 1.5px solid #00B8D4; border-radius: 12px; padding: 14px 18px; margin-bottom: 20px;\">\n    <div style=\"font-size: 19px; font-weight: 800; color: #00B8D4; margin-bottom: 4px;\">\n      Exercise 5.2\n    </div>\n    <div style=\"color: #FFFFFF; font-size: 15px; font-weight: 500;\">\n      Circle Graphs / Pie Charts, Proportions &amp; Sector Central Angles\n    </div>\n  </div>\n\n  <!-- QUESTION 1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 1:</div>\n    <div class=\"q-text\">\n      A survey was made to find the type of music that a certain group of young people liked in a city. Adjoining pie chart shows the findings of this survey.<br/>\n      From this pie chart, answer the following:<br/>\n      <div style=\"margin-top: 6px; color: #E2E8F0;\">\n        (i) If 20 people liked classical music, how many young people were surveyed?<br/>\n        (ii) Which type of music is liked by the maximum number of people?<br/>\n        (iii) If a cassette company were to make 1000 CDs, how many of each type would they make?\n      </div>\n    </div>\n\n    <!-- Pie Chart Graphic -->\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        \n    <svg viewBox=\"0 0 420 280\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width: 100%; height: auto; display: block; margin: 0 auto; max-width: 440px;\">\n      <rect width=\"100%\" height=\"100%\" fill=\"#FFFFFF\" rx=\"8\"/>\n      <path d=\"M 140,140 L 140.00,35.00 A 105,105 0 0,1 201.72,224.95 Z\" fill=\"#38BDF8\" stroke=\"#FFFFFF\" stroke-width=\"2\"/>\n<path d=\"M 140,140 L 201.72,224.95 A 105,105 0 0,1 40.14,172.45 Z\" fill=\"#34D399\" stroke=\"#FFFFFF\" stroke-width=\"2\"/>\n<path d=\"M 140,140 L 40.14,172.45 A 105,105 0 0,1 78.28,55.05 Z\" fill=\"#FB923C\" stroke=\"#FFFFFF\" stroke-width=\"2\"/>\n<path d=\"M 140,140 L 78.28,55.05 A 105,105 0 0,1 140.00,35.00 Z\" fill=\"#F43F5E\" stroke=\"#FFFFFF\" stroke-width=\"2\"/>\n      <text x=\"204.91\" y=\"118.91\" fill=\"#0F172A\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\">40%</text>\n<text x=\"118.91\" y=\"204.91\" fill=\"#0F172A\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\">30%</text>\n<text x=\"75.09\" y=\"118.91\" fill=\"#0F172A\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\">20%</text>\n<text x=\"118.91\" y=\"75.09\" fill=\"#FFFFFF\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\">10%</text>\n      \n      <rect x=\"260\" y=\"55\" width=\"14\" height=\"14\" rx=\"3\" fill=\"#38BDF8\" stroke=\"#CBD5E1\"/>\n      <text x=\"280\" y=\"66\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0F172A\">Light (40%)</text>\n    \n      <rect x=\"260\" y=\"83\" width=\"14\" height=\"14\" rx=\"3\" fill=\"#34D399\" stroke=\"#CBD5E1\"/>\n      <text x=\"280\" y=\"94\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0F172A\">Folk (30%)</text>\n    \n      <rect x=\"260\" y=\"111\" width=\"14\" height=\"14\" rx=\"3\" fill=\"#FB923C\" stroke=\"#CBD5E1\"/>\n      <text x=\"280\" y=\"122\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0F172A\">Semi-Classical (20%)</text>\n    \n      <rect x=\"260\" y=\"139\" width=\"14\" height=\"14\" rx=\"3\" fill=\"#F43F5E\" stroke=\"#CBD5E1\"/>\n      <text x=\"280\" y=\"150\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0F172A\">Classical (10%)</text>\n    \n    </svg>\n  \n      </div>\n      <div class=\"diagram-caption\">📍 Pie Chart Showing Preferences for Different Types of Music</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Direct Line-by-Line Solution:</div>\n      <div class=\"sol-step\">\n        \n        <div style=\"margin-bottom: 14px;\">\n          <b style=\"color: #00B8D4;\">(i) Finding the total number of young people surveyed:</b><br/>\n          Let the total number of young people surveyed be $x$.<br/>\n          From the pie chart, percentage of people liking Classical music = 10%.<br/>\n          &rArr; 10% of $x$ = 20<br/>\n          &rArr; <span class=\"frac\"><span class=\"num\">10</span><span class=\"den\">100</span></span> &times; $x$ = 20<br/>\n          &rArr; $x$ = 20 &times; <span class=\"frac\"><span class=\"num\">100</span><span class=\"den\">10</span></span> = 200<br/>\n          &rArr; Total young people surveyed = <b>200 people</b>.\n        </div>\n\n        <div style=\"margin-bottom: 14px;\">\n          <b style=\"color: #00B8D4;\">(ii) Type of music liked by maximum people:</b><br/>\n          From the pie chart, the sector with the largest percentage is <b>Light Music (40%)</b>.<br/>\n          &rArr; <b>Light music</b> is liked by the maximum number of people.\n        </div>\n\n        <div style=\"margin-bottom: 6px;\">\n          <b style=\"color: #00B8D4;\">(iii) Number of CDs of each type out of 1000 CDs:</b><br/>\n          Total number of CDs to be produced = 1000.<br/>\n          &bull; <b>Classical Music:</b> 10% of 1000 = <span class=\"frac\"><span class=\"num\">10</span><span class=\"den\">100</span></span> &times; 1000 = <b>100 CDs</b>.<br/>\n          &bull; <b>Semi-Classical Music:</b> 20% of 1000 = <span class=\"frac\"><span class=\"num\">20</span><span class=\"den\">100</span></span> &times; 1000 = <b>200 CDs</b>.<br/>\n          &bull; <b>Folk Music:</b> 30% of 1000 = <span class=\"frac\"><span class=\"num\">30</span><span class=\"den\">100</span></span> &times; 1000 = <b>300 CDs</b>.<br/>\n          &bull; <b>Light Music:</b> 40% of 1000 = <span class=\"frac\"><span class=\"num\">40</span><span class=\"den\">100</span></span> &times; 1000 = <b>400 CDs</b>.<br/>\n          <span class=\"reason\">[Check: 100 + 200 + 300 + 400 = 1000 CDs]</span>\n        </div>\n\n      </div>\n\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Results: </span>\n        <span class=\"ans-val\">(i) 200 people &bull; (ii) Light Music &bull; (iii) Classical: 100, Semi-Classical: 200, Folk: 300, Light: 400 CDs</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 2 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 2:</div>\n    <div class=\"q-text\">\n      A group of 360 people were asked to vote for their favourite season from the three seasons: rainy, winter and summer.<br/>\n      <div class=\"table-card\">\n        <table class=\"styled-table\">\n          <thead>\n            <tr>\n              <th>Season</th>\n              <th>Number of votes</th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr>\n              <td><b>Summer</b></td>\n              <td>90</td>\n            </tr>\n            <tr>\n              <td><b>Rainy</b></td>\n              <td>120</td>\n            </tr>\n            <tr>\n              <td><b>Winter</b></td>\n              <td>150</td>\n            </tr>\n          </tbody>\n          <tfoot>\n            <tr>\n              <td>Total</td>\n              <td>360</td>\n            </tr>\n          </tfoot>\n        </table>\n      </div>\n      (i) Which season got the most votes?<br/>\n      (ii) Find the central angle of each sector.<br/>\n      (iii) Draw a pie chart to show this information.\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Direct Line-by-Line Solution:</div>\n      <div class=\"sol-step\">\n        \n        <div style=\"margin-bottom: 12px;\">\n          <b style=\"color: #00B8D4;\">(i) Season with the most votes:</b><br/>\n          Comparing the votes: Winter (150) &gt; Rainy (120) &gt; Summer (90).<br/>\n          &rArr; <b>Winter season</b> got the most votes (150 votes).\n        </div>\n\n        <div style=\"margin-bottom: 14px;\">\n          <b style=\"color: #00B8D4;\">(ii) Central angle of each sector:</b><br/>\n          Total number of votes = 360.<br/>\n          We know: $\text{Central angle} = \text{Fraction of votes} \times 360^circ$.<br/>\n          <div class=\"table-card\">\n            <table class=\"styled-table\">\n              <thead>\n                <tr>\n                  <th>Season</th>\n                  <th>Votes</th>\n                  <th>In Fraction</th>\n                  <th>Central Angle</th>\n                </tr>\n              </thead>\n              <tbody>\n                <tr>\n                  <td><b>Summer</b></td>\n                  <td>90</td>\n                  <td><span class=\"frac\"><span class=\"num\">90</span><span class=\"den\">360</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span></td>\n                  <td><span class=\"frac\"><span class=\"num\">90</span><span class=\"den\">360</span></span> &times; 360&deg; = <b>90&deg;</b></td>\n                </tr>\n                <tr>\n                  <td><b>Rainy</b></td>\n                  <td>120</td>\n                  <td><span class=\"frac\"><span class=\"num\">120</span><span class=\"den\">360</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span></td>\n                  <td><span class=\"frac\"><span class=\"num\">120</span><span class=\"den\">360</span></span> &times; 360&deg; = <b>120&deg;</b></td>\n                </tr>\n                <tr>\n                  <td><b>Winter</b></td>\n                  <td>150</td>\n                  <td><span class=\"frac\"><span class=\"num\">150</span><span class=\"den\">360</span></span> = <span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">12</span></span></td>\n                  <td><span class=\"frac\"><span class=\"num\">150</span><span class=\"den\">360</span></span> &times; 360&deg; = <b>150&deg;</b></td>\n                </tr>\n              </tbody>\n              <tfoot>\n                <tr>\n                  <td><b>Total</b></td>\n                  <td><b>360</b></td>\n                  <td><b>1</b></td>\n                  <td><b>360&deg;</b></td>\n                </tr>\n              </tfoot>\n            </table>\n          </div>\n        </div>\n\n        <div>\n          <b style=\"color: #00B8D4;\">(iii) Pie Chart Representation:</b>\n        </div>\n\n      </div>\n\n      <!-- Pie Chart Graphic -->\n      <div class=\"diagram-card\">\n        <div class=\"diagram-wrapper\">\n          \n    <svg viewBox=\"0 0 420 280\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width: 100%; height: auto; display: block; margin: 0 auto; max-width: 440px;\">\n      <rect width=\"100%\" height=\"100%\" fill=\"#FFFFFF\" rx=\"8\"/>\n      <path d=\"M 140,140 L 140.00,35.00 A 105,105 0 0,1 245.00,140.00 Z\" fill=\"#FBBF24\" stroke=\"#FFFFFF\" stroke-width=\"2\"/>\n<path d=\"M 140,140 L 245.00,140.00 A 105,105 0 0,1 87.50,230.93 Z\" fill=\"#38BDF8\" stroke=\"#FFFFFF\" stroke-width=\"2\"/>\n<path d=\"M 140,140 L 87.50,230.93 A 105,105 0 0,1 140.00,35.00 Z\" fill=\"#818CF8\" stroke=\"#FFFFFF\" stroke-width=\"2\"/>\n      <text x=\"188.26\" y=\"91.74\" fill=\"#0F172A\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\">Summer 90°</text>\n<text x=\"174.13\" y=\"199.11\" fill=\"#0F172A\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\">Rainy 120°</text>\n<text x=\"74.08\" y=\"122.34\" fill=\"#FFFFFF\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\">Winter 150°</text>\n      \n      <rect x=\"260\" y=\"55\" width=\"14\" height=\"14\" rx=\"3\" fill=\"#FBBF24\" stroke=\"#CBD5E1\"/>\n      <text x=\"280\" y=\"66\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0F172A\">Summer (90°)</text>\n    \n      <rect x=\"260\" y=\"83\" width=\"14\" height=\"14\" rx=\"3\" fill=\"#38BDF8\" stroke=\"#CBD5E1\"/>\n      <text x=\"280\" y=\"94\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0F172A\">Rainy (120°)</text>\n    \n      <rect x=\"260\" y=\"111\" width=\"14\" height=\"14\" rx=\"3\" fill=\"#818CF8\" stroke=\"#CBD5E1\"/>\n      <text x=\"280\" y=\"122\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0F172A\">Winter (150°)</text>\n    \n    </svg>\n  \n        </div>\n        <div class=\"diagram-caption\">📍 Pie Chart Showing Voting for Favourite Seasons (Total 360 People)</div>\n      </div>\n\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answers: </span>\n        <span class=\"ans-val\">(i) Winter Season (150 votes) &bull; (ii) Summer: 90&deg;, Rainy: 120&deg;, Winter: 150&deg; &bull; (iii) Pie chart constructed</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 3 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 3:</div>\n    <div class=\"q-text\">\n      Draw a pie chart showing the following information. The table shows the colours preferred by a group of people.<br/>\n      <div class=\"table-card\">\n        <table class=\"styled-table\">\n          <thead>\n            <tr>\n              <th>Colours</th>\n              <th>Number of people</th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr>\n              <td>Blue</td>\n              <td>18</td>\n            </tr>\n            <tr>\n              <td>Green</td>\n              <td>9</td>\n            </tr>\n            <tr>\n              <td>Red</td>\n              <td>6</td>\n            </tr>\n            <tr>\n              <td>Yellow</td>\n              <td>3</td>\n            </tr>\n          </tbody>\n          <tfoot>\n            <tr>\n              <td>Total</td>\n              <td>36</td>\n            </tr>\n          </tfoot>\n        </table>\n      </div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Direct Line-by-Line Solution:</div>\n      <div class=\"sol-step\">\n        <div>Total number of people = 36.</div>\n        <div>Central angle of each sector = <span class=\"frac\"><span class=\"num\">&text{Number of people preferring color}</span><span class=\"den\">&text{Total people}</span></span> &times; 360&deg;</div>\n        \n        <div class=\"table-card\">\n          <table class=\"styled-table\">\n            <thead>\n              <tr>\n                <th>Colour</th>\n                <th>Number of people</th>\n                <th>In Fraction</th>\n                <th>Central Angle</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td><b style=\"color: #2563EB;\">Blue</b></td>\n                <td>18</td>\n                <td><span class=\"frac\"><span class=\"num\">18</span><span class=\"den\">36</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></td>\n                <td><span class=\"frac\"><span class=\"num\">18</span><span class=\"den\">36</span></span> &times; 360&deg; = <b>180&deg;</b></td>\n              </tr>\n              <tr>\n                <td><b style=\"color: #059669;\">Green</b></td>\n                <td>9</td>\n                <td><span class=\"frac\"><span class=\"num\">9</span><span class=\"den\">36</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span></td>\n                <td><span class=\"frac\"><span class=\"num\">9</span><span class=\"den\">36</span></span> &times; 360&deg; = <b>90&deg;</b></td>\n              </tr>\n              <tr>\n                <td><b style=\"color: #DC2626;\">Red</b></td>\n                <td>6</td>\n                <td><span class=\"frac\"><span class=\"num\">6</span><span class=\"den\">36</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">6</span></span></td>\n                <td><span class=\"frac\"><span class=\"num\">6</span><span class=\"den\">36</span></span> &times; 360&deg; = <b>60&deg;</b></td>\n              </tr>\n              <tr>\n                <td><b style=\"color: #D97706;\">Yellow</b></td>\n                <td>3</td>\n                <td><span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">36</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">12</span></span></td>\n                <td><span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">36</span></span> &times; 360&deg; = <b>30&deg;</b></td>\n              </tr>\n            </tbody>\n            <tfoot>\n              <tr>\n                <td><b>Total</b></td>\n                <td><b>36</b></td>\n                <td><b>1</b></td>\n                <td><b>360&deg;</b></td>\n              </tr>\n            </tfoot>\n          </table>\n        </div>\n\n        <div>Now, draw a circle of convenient radius and construct sectors of angles 180&deg;, 90&deg;, 60&deg;, and 30&deg;:</div>\n      </div>\n\n      <!-- Pie Chart Graphic -->\n      <div class=\"diagram-card\">\n        <div class=\"diagram-wrapper\">\n          \n    <svg viewBox=\"0 0 420 280\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width: 100%; height: auto; display: block; margin: 0 auto; max-width: 440px;\">\n      <rect width=\"100%\" height=\"100%\" fill=\"#FFFFFF\" rx=\"8\"/>\n      <path d=\"M 140,140 L 140.00,35.00 A 105,105 0 0,1 140.00,245.00 Z\" fill=\"#2563EB\" stroke=\"#FFFFFF\" stroke-width=\"2\"/>\n<path d=\"M 140,140 L 140.00,245.00 A 105,105 0 0,1 35.00,140.00 Z\" fill=\"#10B981\" stroke=\"#FFFFFF\" stroke-width=\"2\"/>\n<path d=\"M 140,140 L 35.00,140.00 A 105,105 0 0,1 87.50,49.07 Z\" fill=\"#EF4444\" stroke=\"#FFFFFF\" stroke-width=\"2\"/>\n<path d=\"M 140,140 L 87.50,49.07 A 105,105 0 0,1 140.00,35.00 Z\" fill=\"#FBBF24\" stroke=\"#FFFFFF\" stroke-width=\"2\"/>\n      <text x=\"208.25\" y=\"140.00\" fill=\"#FFFFFF\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\">Blue 180°</text>\n<text x=\"91.74\" y=\"188.26\" fill=\"#FFFFFF\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\">Green 90°</text>\n<text x=\"80.89\" y=\"105.88\" fill=\"#FFFFFF\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\">Red 60°</text>\n<text x=\"122.34\" y=\"74.08\" fill=\"#0F172A\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\">Yellow 30°</text>\n      \n      <rect x=\"260\" y=\"55\" width=\"14\" height=\"14\" rx=\"3\" fill=\"#2563EB\" stroke=\"#CBD5E1\"/>\n      <text x=\"280\" y=\"66\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0F172A\">Blue (180°)</text>\n    \n      <rect x=\"260\" y=\"83\" width=\"14\" height=\"14\" rx=\"3\" fill=\"#10B981\" stroke=\"#CBD5E1\"/>\n      <text x=\"280\" y=\"94\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0F172A\">Green (90°)</text>\n    \n      <rect x=\"260\" y=\"111\" width=\"14\" height=\"14\" rx=\"3\" fill=\"#EF4444\" stroke=\"#CBD5E1\"/>\n      <text x=\"280\" y=\"122\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0F172A\">Red (60°)</text>\n    \n      <rect x=\"260\" y=\"139\" width=\"14\" height=\"14\" rx=\"3\" fill=\"#FBBF24\" stroke=\"#CBD5E1\"/>\n      <text x=\"280\" y=\"150\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0F172A\">Yellow (30°)</text>\n    \n    </svg>\n  \n        </div>\n        <div class=\"diagram-caption\">📍 Pie Chart Showing Colours Preferred by 36 People</div>\n      </div>\n\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Sector Angles: </span>\n        <span class=\"ans-val\">Blue = 180&deg;, Green = 90&deg;, Red = 60&deg;, Yellow = 30&deg;</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 4 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 4:</div>\n    <div class=\"q-text\">\n      The adjoining pie chart gives the marks scored in an examination by a student in Hindi, English, Mathematics, Social Science and Science. If the total marks obtained by the students were 540, answer the following questions:<br/>\n      <div style=\"margin-top: 6px; color: #E2E8F0;\">\n        (i) In which subject did the student score 105 marks?<br/>\n        <i style=\"color: #94A3B8;\">(Hint: For 540 marks, the central angle = 360&deg;. So, for 105 marks, what is the central angle?)</i><br/>\n        (ii) How many more marks were obtained by the student in Mathematics than in Hindi?<br/>\n        (iii) Examine whether the sum of the marks obtained in Social Science and Mathematics is more than that in Science and Hindi.<br/>\n        <i style=\"color: #94A3B8;\">(Hint: Just study the central angles).</i>\n      </div>\n    </div>\n\n    <!-- Pie Chart Graphic -->\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        \n    <svg viewBox=\"0 0 430 280\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width: 100%; height: auto; display: block; margin: 0 auto; max-width: 440px;\">\n      <rect width=\"100%\" height=\"100%\" fill=\"#FFFFFF\" rx=\"8\"/>\n      <path d=\"M 140,140 L 140.00,35.00 A 105,105 0 0,1 245.00,140.00 Z\" fill=\"#0284C7\" stroke=\"#FFFFFF\" stroke-width=\"2\"/>\n<path d=\"M 140,140 L 245.00,140.00 A 105,105 0 0,1 184.37,235.16 Z\" fill=\"#10B981\" stroke=\"#FFFFFF\" stroke-width=\"2\"/>\n<path d=\"M 140,140 L 184.37,235.16 A 105,105 0 0,1 53.99,200.23 Z\" fill=\"#F59E0B\" stroke=\"#FFFFFF\" stroke-width=\"2\"/>\n<path d=\"M 140,140 L 53.99,200.23 A 105,105 0 0,1 53.99,79.77 Z\" fill=\"#EC4899\" stroke=\"#FFFFFF\" stroke-width=\"2\"/>\n<path d=\"M 140,140 L 53.99,79.77 A 105,105 0 0,1 140.00,35.00 Z\" fill=\"#8B5CF6\" stroke=\"#FFFFFF\" stroke-width=\"2\"/>\n      <text x=\"188.26\" y=\"91.74\" fill=\"#FFFFFF\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\">Maths 90°</text>\n<text x=\"197.56\" y=\"176.67\" fill=\"#FFFFFF\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\">S.Sc 65°</text>\n<text x=\"122.34\" y=\"205.92\" fill=\"#FFFFFF\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\">Science 80°</text>\n<text x=\"71.75\" y=\"140.00\" fill=\"#FFFFFF\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\">Hindi 70°</text>\n<text x=\"108.49\" y=\"79.46\" fill=\"#FFFFFF\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\">English 55°</text>\n      \n      <rect x=\"260\" y=\"55\" width=\"14\" height=\"14\" rx=\"3\" fill=\"#0284C7\" stroke=\"#CBD5E1\"/>\n      <text x=\"280\" y=\"66\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0F172A\">Maths (90°)</text>\n    \n      <rect x=\"260\" y=\"83\" width=\"14\" height=\"14\" rx=\"3\" fill=\"#10B981\" stroke=\"#CBD5E1\"/>\n      <text x=\"280\" y=\"94\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0F172A\">Social Sc. (65°)</text>\n    \n      <rect x=\"260\" y=\"111\" width=\"14\" height=\"14\" rx=\"3\" fill=\"#F59E0B\" stroke=\"#CBD5E1\"/>\n      <text x=\"280\" y=\"122\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0F172A\">Science (80°)</text>\n    \n      <rect x=\"260\" y=\"139\" width=\"14\" height=\"14\" rx=\"3\" fill=\"#EC4899\" stroke=\"#CBD5E1\"/>\n      <text x=\"280\" y=\"150\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0F172A\">Hindi (70°)</text>\n    \n      <rect x=\"260\" y=\"167\" width=\"14\" height=\"14\" rx=\"3\" fill=\"#8B5CF6\" stroke=\"#CBD5E1\"/>\n      <text x=\"280\" y=\"178\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0F172A\">English (55°)</text>\n    \n    </svg>\n  \n      </div>\n      <div class=\"diagram-caption\">📍 Pie Chart Showing Sector Central Angles for Subjects (Total Marks = 540)</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Direct Line-by-Line Solution:</div>\n      <div class=\"sol-step\">\n        <div>Total marks obtained = 540. Total central angle = 360&deg;.</div>\n        <div>Marks obtained in a subject = <span class=\"frac\"><span class=\"num\">&text{Central angle of sector}</span><span class=\"den\">360&deg;</span></span> &times; 540 = $\text{Central angle} \times 1.5$.</div>\n\n        <!-- Subject Marks Calculation Table -->\n        <div class=\"table-card\">\n          <table class=\"styled-table\">\n            <thead>\n              <tr>\n                <th>Subject</th>\n                <th>Central Angle</th>\n                <th>Marks Obtained</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td><b>Mathematics</b></td>\n                <td>90&deg;</td>\n                <td><span class=\"frac\"><span class=\"num\">90</span><span class=\"den\">360</span></span> &times; 540 = <b>135 marks</b></td>\n              </tr>\n              <tr>\n                <td><b>Social Science</b></td>\n                <td>65&deg;</td>\n                <td><span class=\"frac\"><span class=\"num\">65</span><span class=\"den\">360</span></span> &times; 540 = <b>97.5 marks</b></td>\n              </tr>\n              <tr>\n                <td><b>Science</b></td>\n                <td>80&deg;</td>\n                <td><span class=\"frac\"><span class=\"num\">80</span><span class=\"den\">360</span></span> &times; 540 = <b>120 marks</b></td>\n              </tr>\n              <tr>\n                <td><b>Hindi</b></td>\n                <td>70&deg;</td>\n                <td><span class=\"frac\"><span class=\"num\">70</span><span class=\"den\">360</span></span> &times; 540 = <b>105 marks</b></td>\n              </tr>\n              <tr>\n                <td><b>English</b></td>\n                <td>55&deg;</td>\n                <td><span class=\"frac\"><span class=\"num\">55</span><span class=\"den\">360</span></span> &times; 540 = <b>82.5 marks</b></td>\n              </tr>\n            </tbody>\n            <tfoot>\n              <tr>\n                <td><b>Total</b></td>\n                <td><b>360&deg;</b></td>\n                <td><b>540 marks</b></td>\n              </tr>\n            </tfoot>\n          </table>\n        </div>\n\n        <div style=\"margin-top: 14px; margin-bottom: 12px;\">\n          <b style=\"color: #00B8D4;\">(i) In which subject did the student score 105 marks?</b><br/>\n          For 540 marks, central angle = 360&deg;.<br/>\n          &rArr; For 105 marks, central angle = <span class=\"frac\"><span class=\"num\">360</span><span class=\"den\">540</span></span> &times; 105 = <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span> &times; 105 = <b>70&deg;</b>.<br/>\n          From the pie chart, sector with central angle 70&deg; corresponds to <b>Hindi</b>.<br/>\n          &rArr; The student scored 105 marks in <b>Hindi</b>.\n        </div>\n\n        <div style=\"margin-bottom: 12px;\">\n          <b style=\"color: #00B8D4;\">(ii) How many more marks obtained in Mathematics than in Hindi?</b><br/>\n          Marks in Mathematics = 135.<br/>\n          Marks in Hindi = 105.<br/>\n          &rArr; Difference = 135 &minus; 105 = <b>30 marks</b>.<br/>\n          <span class=\"reason\">[Alternative using angles: Difference in angles = 90&deg; &minus; 70&deg; = 20&deg; &rArr; <span class=\"frac\"><span class=\"num\">20</span><span class=\"den\">360</span></span> &times; 540 = 30 marks]</span>\n        </div>\n\n        <div style=\"margin-bottom: 6px;\">\n          <b style=\"color: #00B8D4;\">(iii) Examine whether Marks in (Social Science + Maths) &gt; Marks in (Science + Hindi):</b><br/>\n          Comparing the central angles:<br/>\n          &bull; Sum of central angles of Social Science &amp; Maths = 65&deg; + 90&deg; = <b>155&deg;</b>.<br/>\n          &bull; Sum of central angles of Science &amp; Hindi = 80&deg; + 70&deg; = <b>150&deg;</b>.<br/>\n          Since 155&deg; &gt; 150&deg;:<br/>\n          &rArr; <b>Yes</b>, the sum of the marks obtained in Social Science and Mathematics is more than that in Science and Hindi.<br/>\n          <span class=\"reason\">[Check marks: (97.5 + 135 = 232.5) &gt; (120 + 105 = 225)]</span>\n        </div>\n\n      </div>\n\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answers: </span>\n        <span class=\"ans-val\">(i) Hindi &bull; (ii) 30 marks &bull; (iii) Yes (155&deg; &gt; 150&deg;)</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 5 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 5:</div>\n    <div class=\"q-text\">\n      The number of students in a hostel, speaking different languages is given below. Display the data in a pie chart.<br/>\n      <div class=\"table-card\">\n        <table class=\"styled-table\">\n          <thead>\n            <tr>\n              <th>Language</th>\n              <th>Number of students</th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr>\n              <td>Hindi</td>\n              <td>40</td>\n            </tr>\n            <tr>\n              <td>English</td>\n              <td>12</td>\n            </tr>\n            <tr>\n              <td>Marathi</td>\n              <td>9</td>\n            </tr>\n            <tr>\n              <td>Tamil</td>\n              <td>7</td>\n            </tr>\n            <tr>\n              <td>Bengali</td>\n              <td>4</td>\n            </tr>\n          </tbody>\n          <tfoot>\n            <tr>\n              <td>Total</td>\n              <td>72</td>\n            </tr>\n          </tfoot>\n        </table>\n      </div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Direct Line-by-Line Solution:</div>\n      <div class=\"sol-step\">\n        <div>Total number of students = 72.</div>\n        <div>Total central angle of circle = 360&deg;.</div>\n        <div>Central angle of each sector = <span class=\"frac\"><span class=\"num\">&text{Number of students}</span><span class=\"den\">72</span></span> &times; 360&deg; = $\text{Number of students} \times 5&deg;$.</div>\n\n        <div class=\"table-card\">\n          <table class=\"styled-table\">\n            <thead>\n              <tr>\n                <th>Language</th>\n                <th>Students</th>\n                <th>In Fraction</th>\n                <th>Central Angle</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td><b style=\"color: #0284C7;\">Hindi</b></td>\n                <td>40</td>\n                <td><span class=\"frac\"><span class=\"num\">40</span><span class=\"den\">72</span></span> = <span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">9</span></span></td>\n                <td><span class=\"frac\"><span class=\"num\">40</span><span class=\"den\">72</span></span> &times; 360&deg; = <b>200&deg;</b></td>\n              </tr>\n              <tr>\n                <td><b style=\"color: #059669;\">English</b></td>\n                <td>12</td>\n                <td><span class=\"frac\"><span class=\"num\">12</span><span class=\"den\">72</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">6</span></span></td>\n                <td><span class=\"frac\"><span class=\"num\">12</span><span class=\"den\">72</span></span> &times; 360&deg; = <b>60&deg;</b></td>\n              </tr>\n              <tr>\n                <td><b style=\"color: #D97706;\">Marathi</b></td>\n                <td>9</td>\n                <td><span class=\"frac\"><span class=\"num\">9</span><span class=\"den\">72</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">8</span></span></td>\n                <td><span class=\"frac\"><span class=\"num\">9</span><span class=\"den\">72</span></span> &times; 360&deg; = <b>45&deg;</b></td>\n              </tr>\n              <tr>\n                <td><b style=\"color: #DB2777;\">Tamil</b></td>\n                <td>7</td>\n                <td><span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">72</span></span></td>\n                <td><span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">72</span></span> &times; 360&deg; = <b>35&deg;</b></td>\n              </tr>\n              <tr>\n                <td><b style=\"color: #7C3AED;\">Bengali</b></td>\n                <td>4</td>\n                <td><span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">72</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">18</span></span></td>\n                <td><span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">72</span></span> &times; 360&deg; = <b>20&deg;</b></td>\n              </tr>\n            </tbody>\n            <tfoot>\n              <tr>\n                <td><b>Total</b></td>\n                <td><b>72</b></td>\n                <td><b>1</b></td>\n                <td><b>360&deg;</b></td>\n              </tr>\n            </tfoot>\n          </table>\n        </div>\n\n        <div>Draw a circle of convenient radius and construct the sectors corresponding to these calculated angles:</div>\n      </div>\n\n      <!-- Pie Chart Graphic -->\n      <div class=\"diagram-card\">\n        <div class=\"diagram-wrapper\">\n          \n    <svg viewBox=\"0 0 420 280\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width: 100%; height: auto; display: block; margin: 0 auto; max-width: 440px;\">\n      <rect width=\"100%\" height=\"100%\" fill=\"#FFFFFF\" rx=\"8\"/>\n      <path d=\"M 140,140 L 140.00,35.00 A 105,105 0 1,1 104.09,238.67 Z\" fill=\"#0EA5E9\" stroke=\"#FFFFFF\" stroke-width=\"2\"/>\n<path d=\"M 140,140 L 104.09,238.67 A 105,105 0 0,1 36.60,158.23 Z\" fill=\"#10B981\" stroke=\"#FFFFFF\" stroke-width=\"2\"/>\n<path d=\"M 140,140 L 36.60,158.23 A 105,105 0 0,1 53.99,79.77 Z\" fill=\"#F59E0B\" stroke=\"#FFFFFF\" stroke-width=\"2\"/>\n<path d=\"M 140,140 L 53.99,79.77 A 105,105 0 0,1 104.09,41.33 Z\" fill=\"#EC4899\" stroke=\"#FFFFFF\" stroke-width=\"2\"/>\n<path d=\"M 140,140 L 104.09,41.33 A 105,105 0 0,1 140.00,35.00 Z\" fill=\"#8B5CF6\" stroke=\"#FFFFFF\" stroke-width=\"2\"/>\n      <text x=\"207.21\" y=\"151.85\" fill=\"#FFFFFF\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\">Hindi 200°</text>\n<text x=\"87.72\" y=\"183.87\" fill=\"#FFFFFF\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\">Eng 60°</text>\n<text x=\"73.37\" y=\"125.23\" fill=\"#FFFFFF\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\">Mar 45°</text>\n<text x=\"98.45\" y=\"85.85\" fill=\"#FFFFFF\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\">Tam 35°</text>\n<text x=\"128.15\" y=\"72.79\" fill=\"#FFFFFF\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\">Ben 20°</text>\n      \n      <rect x=\"260\" y=\"55\" width=\"14\" height=\"14\" rx=\"3\" fill=\"#0EA5E9\" stroke=\"#CBD5E1\"/>\n      <text x=\"280\" y=\"66\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0F172A\">Hindi (200°)</text>\n    \n      <rect x=\"260\" y=\"83\" width=\"14\" height=\"14\" rx=\"3\" fill=\"#10B981\" stroke=\"#CBD5E1\"/>\n      <text x=\"280\" y=\"94\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0F172A\">English (60°)</text>\n    \n      <rect x=\"260\" y=\"111\" width=\"14\" height=\"14\" rx=\"3\" fill=\"#F59E0B\" stroke=\"#CBD5E1\"/>\n      <text x=\"280\" y=\"122\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0F172A\">Marathi (45°)</text>\n    \n      <rect x=\"260\" y=\"139\" width=\"14\" height=\"14\" rx=\"3\" fill=\"#EC4899\" stroke=\"#CBD5E1\"/>\n      <text x=\"280\" y=\"150\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0F172A\">Tamil (35°)</text>\n    \n      <rect x=\"260\" y=\"167\" width=\"14\" height=\"14\" rx=\"3\" fill=\"#8B5CF6\" stroke=\"#CBD5E1\"/>\n      <text x=\"280\" y=\"178\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0F172A\">Bengali (20°)</text>\n    \n    </svg>\n  \n        </div>\n        <div class=\"diagram-caption\">📍 Pie Chart Showing Languages Spoken by 72 Students in Hostel</div>\n      </div>\n\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Sector Angles: </span>\n        <span class=\"ans-val\">Hindi = 200&deg;, English = 60&deg;, Marathi = 45&deg;, Tamil = 35&deg;, Bengali = 20&deg;</span>\n      </div>\n    </div>\n  </div>\n\n</div>",
+    "ex5-3": "<style>\n  * { box-sizing: border-box; }\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; text-align: center; }\n  .frac .den { padding: 1px 4px; text-align: center; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(0, 184, 212, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); text-align: left !important; }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #00B8D4; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; text-align: left !important; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 14px; font-weight: 500; text-align: left !important; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(0, 184, 212, 0.2); text-align: left !important; }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; text-align: left !important; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #00B8D4; border-radius: 8px; padding: 14px 16px; margin-top: 12px; text-align: left !important; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #4DD0E1; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; text-align: left !important; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; text-align: left !important; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; text-align: left !important; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; text-align: left !important; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; text-align: left !important; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; text-align: left !important; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(0, 184, 212, 0.4); border-radius: 10px; padding: 14px; margin: 16px 0; text-align: center !important; }\n  .diagram-wrapper { display: block; background: #FFFFFF; border-radius: 8px; padding: 10px 8px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.25); text-align: center !important; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center !important; margin-top: 10px; font-weight: 500; }\n  .badge { display: inline-block; padding: 2px 10px; border-radius: 6px; font-weight: 700; font-size: 13.5px; margin: 2px 4px; }\n  .badge-blue { background: rgba(2, 132, 199, 0.2); border: 1px solid #0284C7; color: #38BDF8; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Header Card -->\n  <div style=\"background: linear-gradient(135deg, rgba(0, 184, 212, 0.2), rgba(0, 150, 136, 0.1)); border: 1.5px solid #00B8D4; border-radius: 12px; padding: 14px 18px; margin-bottom: 20px;\">\n    <div style=\"font-size: 19px; font-weight: 800; color: #00B8D4; margin-bottom: 4px;\">\n      Exercise 5.3\n    </div>\n    <div style=\"color: #FFFFFF; font-size: 15px; font-weight: 500;\">\n      Chance and Probability, Random Experiments &amp; Equally Likely Outcomes\n    </div>\n  </div>\n\n  <!-- QUESTION 1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 1:</div>\n    <div class=\"q-text\">\n      List the outcomes you can see in these experiments:<br/>\n      <div style=\"margin-top: 6px; color: #E2E8F0;\">\n        (a) Spinning a wheel.<br/>\n        (b) Tossing two coins together.\n      </div>\n    </div>\n\n    <!-- Diagram for Spinning Wheel -->\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        \n    <svg viewBox=\"0 0 320 280\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width: 100%; height: auto; display: block; margin: 0 auto; max-width: 320px;\">\n      <rect width=\"100%\" height=\"100%\" fill=\"#FFFFFF\" rx=\"8\"/>\n      \n      <!-- Outer circle -->\n      <circle cx=\"160\" cy=\"140\" r=\"105\" fill=\"#F8FAFC\" stroke=\"#0F172A\" stroke-width=\"3\"/>\n      \n      <!-- 5 sectors of 72 degrees each -->\n      <!-- Sector 1: -90° to -18° (A) -->\n      <path d=\"M 160,140 L 160,35 A 105,105 0 0,1 259.85,107.55 Z\" fill=\"#E0F2FE\" stroke=\"#0F172A\" stroke-width=\"2\"/>\n      <text x=\"195\" y=\"85\" font-size=\"20\" font-weight=\"800\" fill=\"#0369A1\" text-anchor=\"middle\">A</text>\n\n      <!-- Sector 2: -18° to 54° (B) -->\n      <path d=\"M 160,140 L 259.85,107.55 A 105,105 0 0,1 221.72,224.95 Z\" fill=\"#DCFCE7\" stroke=\"#0F172A\" stroke-width=\"2\"/>\n      <text x=\"215\" y=\"165\" font-size=\"20\" font-weight=\"800\" fill=\"#15803D\" text-anchor=\"middle\">B</text>\n\n      <!-- Sector 3: 54° to 126° (C) -->\n      <path d=\"M 160,140 L 221.72,224.95 A 105,105 0 0,1 98.28,224.95 Z\" fill=\"#FEF3C7\" stroke=\"#0F172A\" stroke-width=\"2\"/>\n      <text x=\"160\" y=\"210\" font-size=\"20\" font-weight=\"800\" fill=\"#B45309\" text-anchor=\"middle\">C</text>\n\n      <!-- Sector 4: 126° to 198° (D) -->\n      <path d=\"M 160,140 L 98.28,224.95 A 105,105 0 0,1 60.15,107.55 Z\" fill=\"#FEE2E2\" stroke=\"#0F172A\" stroke-width=\"2\"/>\n      <text x=\"105\" y=\"165\" font-size=\"20\" font-weight=\"800\" fill=\"#B91C1C\" text-anchor=\"middle\">D</text>\n\n      <!-- Sector 5: 198° to 270° (A) -->\n      <path d=\"M 160,140 L 60.15,107.55 A 105,105 0 0,1 160,35 Z\" fill=\"#E0E7FF\" stroke=\"#0F172A\" stroke-width=\"2\"/>\n      <text x=\"125\" y=\"85\" font-size=\"20\" font-weight=\"800\" fill=\"#4338CA\" text-anchor=\"middle\">A</text>\n\n      <!-- Center pivot & pointer -->\n      <circle cx=\"160\" cy=\"140\" r=\"16\" fill=\"#0F172A\"/>\n      <circle cx=\"160\" cy=\"140\" r=\"8\" fill=\"#FFFFFF\"/>\n      \n      <!-- Pointer pointing towards sector A / D boundary -->\n      <polygon points=\"160,140 152,130 152,70 160,50 168,70 168,130\" fill=\"#EF4444\" stroke=\"#7F1D1D\" stroke-width=\"1.5\" transform=\"rotate(-36 160 140)\"/>\n    </svg>\n  \n      </div>\n      <div class=\"diagram-caption\">📍 Spinning Wheel with 5 Sectors Marked A, B, C, D, A</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Direct Line-by-Line Solution:</div>\n      <div class=\"sol-step\">\n        <div style=\"margin-bottom: 12px;\">\n          <b style=\"color: #00B8D4;\">(a) Spinning a wheel:</b><br/>\n          In the given spinning wheel, there are 5 pointers/sectors containing the letters A, B, C, D, and A.<br/>\n          Although letter A appears twice, the distinct possible outcomes where the pointer can stop are:<br/>\n          &rArr; Possible outcomes = <b>A, B, C, D</b>.\n        </div>\n\n        <div style=\"margin-bottom: 6px;\">\n          <b style=\"color: #00B8D4;\">(b) Tossing two coins together:</b><br/>\n          Let 'H' denote Head and 'T' denote Tail on a coin.<br/>\n          When two coins are tossed simultaneously, the possible combinations of faces showing up are:<br/>\n          1. Head on first coin, Head on second coin &rarr; <span class=\"badge badge-blue\">HT</span><br/>\n          2. Head on first coin, Tail on second coin &rarr; <span class=\"badge badge-blue\">HT</span><br/>\n          3. Tail on first coin, Head on second coin &rarr; <span class=\"badge badge-blue\">TH</span><br/>\n          4. Tail on first coin, Tail on second coin &rarr; <span class=\"badge badge-blue\">TT</span><br/>\n          &rArr; Total possible outcomes = <b>{HT, HT, TH, TT}</b> (4 outcomes).\n        </div>\n      </div>\n\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answers: </span>\n        <span class=\"ans-val\">(a) A, B, C, D &bull; (b) HT, HT, TH, TT (4 outcomes)</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 2 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 2:</div>\n    <div class=\"q-text\">\n      When a die is thrown, list the outcomes of an event of getting:<br/>\n      <div style=\"margin-top: 6px; color: #E2E8F0;\">\n        (i) (a) a prime number &nbsp;&nbsp;&nbsp;&nbsp; (b) not a prime number<br/>\n        (ii) (a) a number greater than 5 &nbsp;&nbsp;&nbsp;&nbsp; (b) a number not greater than 5\n      </div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Direct Line-by-Line Solution:</div>\n      <div class=\"sol-step\">\n        <div>When a standard six-sided die is thrown, the total possible outcomes on the upper face are:<br/>\n        <b>S = {1, 2, 3, 4, 5, 6}</b> (6 possible outcomes).</div>\n\n        <div style=\"margin-top: 14px; margin-bottom: 12px;\">\n          <b style=\"color: #00B8D4;\">(i) Prime and Non-Prime Outcomes:</b><br/>\n          &bull; <b>(a) A prime number:</b><br/>\n          A prime number has exactly two distinct factors (1 and itself).<br/>\n          Among {1, 2, 3, 4, 5, 6}, the prime numbers are <b>2, 3, 5</b>.<br/>\n          &rArr; Outcomes = <b>{2, 3, 5}</b>.<br/><br/>\n          &bull; <b>(b) Not a prime number:</b><br/>\n          Numbers from {1, 2, 3, 4, 5, 6} which are not prime are <b>1, 4, 6</b>.<br/>\n          <span class=\"reason\">[Note: 1 is neither prime nor composite; 4 and 6 are composite numbers]</span><br/>\n          &rArr; Outcomes = <b>{1, 4, 6}</b>.\n        </div>\n\n        <div style=\"margin-bottom: 6px;\">\n          <b style=\"color: #00B8D4;\">(ii) Conditions with Number 5:</b><br/>\n          &bull; <b>(a) A number greater than 5:</b><br/>\n          The only face value greater than 5 on a standard die is <b>6</b>.<br/>\n          &rArr; Outcome = <b>{6}</b>.<br/><br/>\n          &bull; <b>(b) A number not greater than 5:</b><br/>\n          This includes all numbers less than or equal to 5, which are <b>1, 2, 3, 4, 5</b>.<br/>\n          &rArr; Outcomes = <b>{1, 2, 3, 4, 5}</b>.\n        </div>\n      </div>\n\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answers: </span>\n        <span class=\"ans-val\">(i) (a) 2, 3, 5; (b) 1, 4, 6 &bull; (ii) (a) 6; (b) 1, 2, 3, 4, 5</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 3 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 3:</div>\n    <div class=\"q-text\">\n      Find the:<br/>\n      <div style=\"margin-top: 6px; color: #E2E8F0;\">\n        (a) Probability of the pointer stopping on D in (Question 1-(a))?<br/>\n        (b) Probability of getting an ace from a well shuffled deck of 52 playing cards?<br/>\n        (c) Probability of getting a red apple. (See figure below).\n      </div>\n    </div>\n\n    <!-- Apples Diagram -->\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        \n    <svg viewBox=\"0 0 340 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width: 100%; height: auto; display: block; margin: 0 auto; max-width: 340px;\">\n      <rect width=\"100%\" height=\"100%\" fill=\"#FFFFFF\" rx=\"8\"/>\n      \n      <!-- Large circular basket / dish -->\n      <circle cx=\"170\" cy=\"125\" r=\"105\" fill=\"#F1F5F9\" stroke=\"#0284C7\" stroke-width=\"3\" stroke-dasharray=\"6,4\"/>\n      \n      <!-- Apple 1: Red (Top) -->\n      <g transform=\"translate(170, 60)\">\n        <circle cx=\"0\" cy=\"0\" r=\"22\" fill=\"#EF4444\" stroke=\"#991B1B\" stroke-width=\"2\"/>\n        <path d=\"M 0,-22 C -2,-28 4,-30 8,-28\" stroke=\"#15803D\" stroke-width=\"2\" fill=\"none\"/>\n        <text x=\"0\" y=\"6\" font-size=\"16\" font-weight=\"900\" fill=\"#FFFFFF\" text-anchor=\"middle\">R</text>\n      </g>\n\n      <!-- Apple 2: Green (Top-Right) -->\n      <g transform=\"translate(225, 95)\">\n        <circle cx=\"0\" cy=\"0\" r=\"22\" fill=\"#22C55E\" stroke=\"#166534\" stroke-width=\"2\"/>\n        <path d=\"M 0,-22 C -2,-28 4,-30 8,-28\" stroke=\"#15803D\" stroke-width=\"2\" fill=\"none\"/>\n        <text x=\"0\" y=\"6\" font-size=\"16\" font-weight=\"900\" fill=\"#FFFFFF\" text-anchor=\"middle\">G</text>\n      </g>\n\n      <!-- Apple 3: Red (Bottom-Right) -->\n      <g transform=\"translate(210, 165)\">\n        <circle cx=\"0\" cy=\"0\" r=\"22\" fill=\"#EF4444\" stroke=\"#991B1B\" stroke-width=\"2\"/>\n        <path d=\"M 0,-22 C -2,-28 4,-30 8,-28\" stroke=\"#15803D\" stroke-width=\"2\" fill=\"none\"/>\n        <text x=\"0\" y=\"6\" font-size=\"16\" font-weight=\"900\" fill=\"#FFFFFF\" text-anchor=\"middle\">R</text>\n      </g>\n\n      <!-- Apple 4: Red (Bottom) -->\n      <g transform=\"translate(150, 185)\">\n        <circle cx=\"0\" cy=\"0\" r=\"22\" fill=\"#EF4444\" stroke=\"#991B1B\" stroke-width=\"2\"/>\n        <path d=\"M 0,-22 C -2,-28 4,-30 8,-28\" stroke=\"#15803D\" stroke-width=\"2\" fill=\"none\"/>\n        <text x=\"0\" y=\"6\" font-size=\"16\" font-weight=\"900\" fill=\"#FFFFFF\" text-anchor=\"middle\">R</text>\n      </g>\n\n      <!-- Apple 5: Green (Bottom-Left) -->\n      <g transform=\"translate(100, 155)\">\n        <circle cx=\"0\" cy=\"0\" r=\"22\" fill=\"#22C55E\" stroke=\"#166534\" stroke-width=\"2\"/>\n        <path d=\"M 0,-22 C -2,-28 4,-30 8,-28\" stroke=\"#15803D\" stroke-width=\"2\" fill=\"none\"/>\n        <text x=\"0\" y=\"6\" font-size=\"16\" font-weight=\"900\" fill=\"#FFFFFF\" text-anchor=\"middle\">G</text>\n      </g>\n\n      <!-- Apple 6: Red (Top-Left) -->\n      <g transform=\"translate(115, 85)\">\n        <circle cx=\"0\" cy=\"0\" r=\"22\" fill=\"#EF4444\" stroke=\"#991B1B\" stroke-width=\"2\"/>\n        <path d=\"M 0,-22 C -2,-28 4,-30 8,-28\" stroke=\"#15803D\" stroke-width=\"2\" fill=\"none\"/>\n        <text x=\"0\" y=\"6\" font-size=\"16\" font-weight=\"900\" fill=\"#FFFFFF\" text-anchor=\"middle\">R</text>\n      </g>\n\n      <!-- Apple 7: Green (Center) -->\n      <g transform=\"translate(165, 125)\">\n        <circle cx=\"0\" cy=\"0\" r=\"22\" fill=\"#22C55E\" stroke=\"#166534\" stroke-width=\"2\"/>\n        <path d=\"M 0,-22 C -2,-28 4,-30 8,-28\" stroke=\"#15803D\" stroke-width=\"2\" fill=\"none\"/>\n        <text x=\"0\" y=\"6\" font-size=\"16\" font-weight=\"900\" fill=\"#FFFFFF\" text-anchor=\"middle\">G</text>\n      </g>\n\n      <text x=\"170\" y=\"238\" font-size=\"12\" font-weight=\"700\" fill=\"#0F172A\" text-anchor=\"middle\">Total: 7 Apples (4 Red, 3 Green)</text>\n    </svg>\n  \n      </div>\n      <div class=\"diagram-caption\">📍 Basket of 7 Apples (4 Red 'R', 3 Green 'G')</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Direct Line-by-Line Solution:</div>\n      <div class=\"sol-step\">\n        <div>We use the classical definition of probability:<br/>\n        $\text{P(Event)} = <span class=\"frac\"><span class=\"num\">&text{Number of favourable outcomes}</span><span class=\"den\">&text{Total number of possible outcomes}</span></span></div>\n\n        <div style=\"margin-top: 14px; margin-bottom: 12px;\">\n          <b style=\"color: #00B8D4;\">(a) Pointer stopping on D:</b><br/>\n          From the wheel in Question 1(a), there are 5 equal sectors: {A, B, C, D, A}.<br/>\n          &bull; Total number of sectors = 5.<br/>\n          &bull; Number of sectors with letter 'D' = 1.<br/>\n          &rArr; $\text{P(pointer stopping on D)} = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">5</span></span>.\n        </div>\n\n        <div style=\"margin-bottom: 12px;\">\n          <b style=\"color: #00B8D4;\">(b) Getting an ace from a deck of 52 playing cards:</b><br/>\n          &bull; Total number of playing cards in the deck = 52.<br/>\n          &bull; Total number of aces in the deck = 4 (Ace of Spades, Hearts, Diamonds, Clubs).<br/>\n          &rArr; $\text{P(getting an ace)} = <span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">52</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">13</span></span>.\n        </div>\n\n        <div style=\"margin-bottom: 6px;\">\n          <b style=\"color: #00B8D4;\">(c) Getting a red apple from the basket:</b><br/>\n          From the given figure:<br/>\n          &bull; Total number of apples in the basket = 4 Red + 3 Green = 7.<br/>\n          &bull; Number of red apples (R) = 4.<br/>\n          &rArr; $\text{P(getting a red apple)} = <span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">7</span></span>.\n        </div>\n      </div>\n\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Probabilities: </span>\n        <span class=\"ans-val\">(a) <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">5</span></span> &bull; (b) <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">13</span></span> &bull; (c) <span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">7</span></span></span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 4 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 4:</div>\n    <div class=\"q-text\">\n      Numbers 1 to 10 are written on ten separate slips (one number on one slip), kept in a box and mixed well. One slip is chosen from the box without looking into it. What is the probability of:<br/>\n      <div style=\"margin-top: 6px; color: #E2E8F0;\">\n        (i) getting a number 6?<br/>\n        (ii) getting a number less than 6?<br/>\n        (iii) getting a number greater than 6?<br/>\n        (iv) getting a 1-digit number?\n      </div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Direct Line-by-Line Solution:</div>\n      <div class=\"sol-step\">\n        <div>Total numbers written on slips: <b>S = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}</b>.<br/>\n        Total number of possible outcomes = <b>10</b>.</div>\n\n        <div style=\"margin-top: 14px; margin-bottom: 12px;\">\n          <b style=\"color: #00B8D4;\">(i) Getting a number 6:</b><br/>\n          The number 6 appears on exactly 1 slip.<br/>\n          &bull; Number of favourable outcomes = 1.<br/>\n          &rArr; $\text{P(getting 6)} = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">10</span></span>.\n        </div>\n\n        <div style=\"margin-bottom: 12px;\">\n          <b style=\"color: #00B8D4;\">(ii) Getting a number less than 6:</b><br/>\n          Numbers less than 6 are <b>{1, 2, 3, 4, 5}</b>.<br/>\n          &bull; Number of favourable outcomes = 5.<br/>\n          &rArr; $\text{P(number } &lt; 6\text{)} = <span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">10</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>.\n        </div>\n\n        <div style=\"margin-bottom: 12px;\">\n          <b style=\"color: #00B8D4;\">(iii) Getting a number greater than 6:</b><br/>\n          Numbers greater than 6 are <b>{7, 8, 9, 10}</b>.<br/>\n          &bull; Number of favourable outcomes = 4.<br/>\n          &rArr; $\text{P(number } &gt; 6\text{)} = <span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">10</span></span> = <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">5</span></span>.\n        </div>\n\n        <div style=\"margin-bottom: 6px;\">\n          <b style=\"color: #00B8D4;\">(iv) Getting a 1-digit number:</b><br/>\n          1-digit numbers among {1 to 10} are <b>{1, 2, 3, 4, 5, 6, 7, 8, 9}</b> (10 is a 2-digit number).<br/>\n          &bull; Number of favourable outcomes = 9.<br/>\n          &rArr; $\text{P(1-digit number)} = <span class=\"frac\"><span class=\"num\">9</span><span class=\"den\">10</span></span>.\n        </div>\n      </div>\n\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Probabilities: </span>\n        <span class=\"ans-val\">(i) <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">10</span></span> &bull; (ii) <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &bull; (iii) <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">5</span></span> &bull; (iv) <span class=\"frac\"><span class=\"num\">9</span><span class=\"den\">10</span></span></span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 5 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 5:</div>\n    <div class=\"q-text\">\n      If you have a spinning wheel with 3 green sectors, 1 blue sector and 1 red sector, what is the probability of getting a green sector? What is the probability of getting a non blue sector?\n    </div>\n\n    <!-- Diagram for Spinning Wheel Q5 -->\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        \n    <svg viewBox=\"0 0 320 280\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width: 100%; height: auto; display: block; margin: 0 auto; max-width: 320px;\">\n      <rect width=\"100%\" height=\"100%\" fill=\"#FFFFFF\" rx=\"8\"/>\n      \n      <!-- Outer circle -->\n      <circle cx=\"160\" cy=\"140\" r=\"105\" fill=\"#F8FAFC\" stroke=\"#0F172A\" stroke-width=\"3\"/>\n      \n      <!-- 5 sectors of 72 degrees each -->\n      <!-- Sector 1: Green 1 (-90° to -18°) -->\n      <path d=\"M 160,140 L 160,35 A 105,105 0 0,1 259.85,107.55 Z\" fill=\"#86EFAC\" stroke=\"#0F172A\" stroke-width=\"2\"/>\n      <text x=\"195\" y=\"85\" font-size=\"16\" font-weight=\"800\" fill=\"#14532D\" text-anchor=\"middle\">Green</text>\n\n      <!-- Sector 2: Green 2 (-18° to 54°) -->\n      <path d=\"M 160,140 L 259.85,107.55 A 105,105 0 0,1 221.72,224.95 Z\" fill=\"#86EFAC\" stroke=\"#0F172A\" stroke-width=\"2\"/>\n      <text x=\"215\" y=\"165\" font-size=\"16\" font-weight=\"800\" fill=\"#14532D\" text-anchor=\"middle\">Green</text>\n\n      <!-- Sector 3: Green 3 (54° to 126°) -->\n      <path d=\"M 160,140 L 221.72,224.95 A 105,105 0 0,1 98.28,224.95 Z\" fill=\"#86EFAC\" stroke=\"#0F172A\" stroke-width=\"2\"/>\n      <text x=\"160\" y=\"210\" font-size=\"16\" font-weight=\"800\" fill=\"#14532D\" text-anchor=\"middle\">Green</text>\n\n      <!-- Sector 4: Blue (126° to 198°) -->\n      <path d=\"M 160,140 L 98.28,224.95 A 105,105 0 0,1 60.15,107.55 Z\" fill=\"#93C5FD\" stroke=\"#0F172A\" stroke-width=\"2\"/>\n      <text x=\"105\" y=\"165\" font-size=\"16\" font-weight=\"800\" fill=\"#1E3A8A\" text-anchor=\"middle\">Blue</text>\n\n      <!-- Sector 5: Red (198° to 270°) -->\n      <path d=\"M 160,140 L 60.15,107.55 A 105,105 0 0,1 160,35 Z\" fill=\"#FCA5A5\" stroke=\"#0F172A\" stroke-width=\"2\"/>\n      <text x=\"125\" y=\"85\" font-size=\"16\" font-weight=\"800\" fill=\"#7F1D1D\" text-anchor=\"middle\">Red</text>\n\n      <!-- Center pivot & pointer -->\n      <circle cx=\"160\" cy=\"140\" r=\"16\" fill=\"#0F172A\"/>\n      <circle cx=\"160\" cy=\"140\" r=\"8\" fill=\"#FFFFFF\"/>\n      <polygon points=\"160,140 152,130 152,70 160,50 168,70 168,130\" fill=\"#0F172A\" stroke=\"#000\" stroke-width=\"1.5\" transform=\"rotate(30 160 140)\"/>\n    </svg>\n  \n      </div>\n      <div class=\"diagram-caption\">📍 Spinning Wheel with 3 Green, 1 Blue, and 1 Red Sectors</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Direct Line-by-Line Solution:</div>\n      <div class=\"sol-step\">\n        <div>Total number of sectors on the wheel = 3 (Green) + 1 (Blue) + 1 (Red) = <b>5 sectors</b>.<br/>\n        &rArr; Total possible outcomes = 5.</div>\n\n        <div style=\"margin-top: 14px; margin-bottom: 12px;\">\n          <b style=\"color: #00B8D4;\">1. Probability of getting a green sector:</b><br/>\n          Number of green sectors = 3.<br/>\n          &rArr; $\text{P(Green sector)} = <span class=\"frac\"><span class=\"num\">&text{Number of green sectors}</span><span class=\"den\">&text{Total sectors}</span></span> = <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">5</span></span>.\n        </div>\n\n        <div style=\"margin-bottom: 6px;\">\n          <b style=\"color: #00B8D4;\">2. Probability of getting a non-blue sector:</b><br/>\n          Sectors that are NOT blue = Green sectors + Red sectors = 3 + 1 = <b>4 sectors</b>.<br/>\n          &rArr; $\text{P(Non-blue sector)} = <span class=\"frac\"><span class=\"num\">&text{Number of non-blue sectors}</span><span class=\"den\">&text{Total sectors}</span></span> = <span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">5</span></span>.<br/>\n          <span class=\"reason\">[Alternative: $\text{P(Non-blue)} = 1 - \text{P(Blue)} = 1 - <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">5</span></span> = <span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">5</span></span>$]</span>\n        </div>\n      </div>\n\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answers: </span>\n        <span class=\"ans-val\">P(Green) = <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">5</span></span> &bull; P(Non-blue) = <span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">5</span></span></span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 6 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 6:</div>\n    <div class=\"q-text\">\n      Find the probabilities of the events given in Question 2.<br/>\n      <div style=\"margin-top: 6px; color: #E2E8F0;\">\n        (i) (a) getting a prime number &nbsp;&nbsp;&nbsp;&nbsp; (b) getting not a prime number<br/>\n        (ii) (a) getting a number greater than 5 &nbsp;&nbsp;&nbsp;&nbsp; (b) getting a number not greater than 5\n      </div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Direct Line-by-Line Solution:</div>\n      <div class=\"sol-step\">\n        <div>When a die is thrown, the total possible outcomes are <b>{1, 2, 3, 4, 5, 6}</b>.<br/>\n        &rArr; Total number of possible outcomes = <b>6</b>.</div>\n\n        <div style=\"margin-top: 14px; margin-bottom: 12px;\">\n          <b style=\"color: #00B8D4;\">(i) (a) Probability of getting a prime number:</b><br/>\n          Prime numbers are {2, 3, 5} &rarr; 3 favourable outcomes.<br/>\n          &rArr; $\text{P(Prime)} = <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">6</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>.\n        </div>\n\n        <div style=\"margin-bottom: 12px;\">\n          <b style=\"color: #00B8D4;\">(i) (b) Probability of getting not a prime number:</b><br/>\n          Non-prime numbers are {1, 4, 6} &rarr; 3 favourable outcomes.<br/>\n          &rArr; $\text{P(Not Prime)} = <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">6</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>.\n        </div>\n\n        <div style=\"margin-bottom: 12px;\">\n          <b style=\"color: #00B8D4;\">(ii) (a) Probability of getting a number greater than 5:</b><br/>\n          Number greater than 5 is {6} &rarr; 1 favourable outcome.<br/>\n          &rArr; $\text{P(Number } &gt; 5\text{)} = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">6</span></span>.\n        </div>\n\n        <div style=\"margin-bottom: 6px;\">\n          <b style=\"color: #00B8D4;\">(ii) (b) Probability of getting a number not greater than 5:</b><br/>\n          Numbers not greater than 5 are {1, 2, 3, 4, 5} &rarr; 5 favourable outcomes.<br/>\n          &rArr; $\text{P(Number } le 5\text{)} = <span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">6</span></span>.\n        </div>\n      </div>\n\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Probabilities: </span>\n        <span class=\"ans-val\">(i) (a) <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>, (b) <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &bull; (ii) (a) <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">6</span></span>, (b) <span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">6</span></span></span>\n      </div>\n    </div>\n  </div>\n\n</div>",
   },
 };
