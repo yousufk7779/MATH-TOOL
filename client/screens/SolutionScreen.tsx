@@ -1536,7 +1536,7 @@ const MathWebView = memo(
     const injectedJS = `
     const style = document.createElement('style');
     style.innerHTML = \`
-      * { box-sizing: border-box !important; font-weight: normal !important; }
+      * { box-sizing: border-box !important; }
       body { 
         margin: 0 !important; 
         padding: 5px !important; 
@@ -1546,15 +1546,20 @@ const MathWebView = memo(
         user-select: none; 
         -webkit-touch-callout: none;
       }
-      p, li, div:not(.table-container):not(.table-responsive):not(.prop-table):not(.pt-scroll-wrapper) {
-        text-align: justify !important;
+      p:not(.no-justify), li:not(.no-justify) {
+        text-align: justify;
+      }
+      .q-card, .q-card *, .sol-box, .sol-box *, .sol-step, .sol-step *, .ans-box, .ans-box *, .sub-item, .sub-item *, .q-title, .q-text, .sub-q, .reason, .math-row, .equation {
+        text-align: left !important;
+      }
+      .diagram-caption, .diagram-wrapper, .frac, .frac * {
+        text-align: center !important;
       }
       p, img, div:not(.table-container):not(.table-responsive):not(.prop-table), h1, h2, h3, h4, h5, h6, b, strong, span {
         word-break: break-word !important;
         overflow-wrap: break-word !important;
         max-width: 100% !important;
       }
-      h1, h2, h3, h4, h5, h6, b, strong, span, div, p { font-weight: normal !important; }
       img { 
         max-width: 100% !important; 
         height: auto !important; 
