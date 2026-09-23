@@ -1,427 +1,463 @@
 import { ChapterContent } from "../types";
 
-const ex61Content = `
-  <style>
-    .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
-    .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
-    .frac .den { padding: 0 2px; }
-    .ex-container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
-    .q-card { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 15px; margin-bottom: 25px; }
-    .q-text { color: #FF6CAB; font-weight: 600; margin-bottom: 12px; text-align: justify; }
-    .q-subtext { color: #e0e0e0; margin-bottom: 5px; margin-left: 10px; }
-    .sol-box { border-left: 3px solid #FF6CAB; padding-left: 15px; margin-top: 15px; background: rgba(255, 108, 171, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; }
-    .ans-highlight { color: #FF6CAB; font-weight: 700; }
-    .step-label { color: #FF80AB; font-weight: 600; margin-right: 5px; }
-    .sol-step { margin-bottom: 8px; }
-      .q-text, .q-subtext, .sol-step, .sol-box { font-size: 16px; }
-  </style>
-  <div class="ex-container">
-    <div class="q-card">
-      <div class="q-text">1. Which of the following numbers are not perfect cubes?</div>
-      <div class="q-subtext">(i) 216</div>
-      <div class="q-subtext">(ii) 128</div>
-      <div class="q-subtext">(iii) 1000</div>
-      <div class="q-subtext">(iv) 100</div>
-      <div class="q-subtext">(v) 46656</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step"><span class="step-label">(i) 216:</span> Prime factorisation is 2 × 2 × 2 × 3 × 3 × 3.</div>
-        <div class="sol-step">Here, factors 2 and 3 can be grouped in triples.</div>
-        <div class="sol-step">So, 216 is a <span class="ans-highlight">perfect cube</span>.</div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(ii) 128:</span> Prime factorisation is 2 × 2 × 2 × 2 × 2 × 2 × 2.</div>
-        <div class="sol-step">One factor 2 is left without a triple.</div>
-        <div class="sol-step">So, 128 is <span class="ans-highlight">not a perfect cube</span>.</div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(iii) 1000:</span> Prime factorisation is 2 × 2 × 2 × 5 × 5 × 5.</div>
-        <div class="sol-step">Here, factors 2 and 5 can be grouped in triples.</div>
-        <div class="sol-step">So, 1000 is a <span class="ans-highlight">perfect cube</span>.</div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(iv) 100:</span> Prime factorisation is 2 × 2 × 5 × 5.</div>
-        <div class="sol-step">None of the factors can be grouped in triples.</div>
-        <div class="sol-step">So, 100 is <span class="ans-highlight">not a perfect cube</span>.</div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(v) 46656:</span> Prime factorisation is 2 × 2 × 2 × 2 × 2 × 2 × 3 × 3 × 3 × 3 × 3 × 3.</div>
-        <div class="sol-step">All factors can be grouped in triples.</div>
-        <div class="sol-step">So, 46656 is a <span class="ans-highlight">perfect cube</span>.</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">2. Find the smallest number by which each of the following numbers must be multiplied to obtain a perfect cube.</div>
-      <div class="q-subtext">(i) 243</div>
-      <div class="q-subtext">(ii) 256</div>
-      <div class="q-subtext">(iii) 72</div>
-      <div class="q-subtext">(iv) 675</div>
-      <div class="q-subtext">(v) 100</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step"><span class="step-label">(i) 243:</span> Prime factorisation is 3 × 3 × 3 × 3 × 3.</div>
-        <div class="sol-step">We need one more 3 to make a perfect cube.</div>
-        <div class="sol-step">Smallest number to be multiplied is <span class="ans-highlight">3</span>.</div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(ii) 256:</span> Prime factorisation is 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2.</div>
-        <div class="sol-step">We need one more 2 to make a perfect cube.</div>
-        <div class="sol-step">Smallest number to be multiplied is <span class="ans-highlight">2</span>.</div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(iii) 72:</span> Prime factorisation is 2 × 2 × 2 × 3 × 3.</div>
-        <div class="sol-step">We need one more 3 to make a perfect cube.</div>
-        <div class="sol-step">Smallest number to be multiplied is <span class="ans-highlight">3</span>.</div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(iv) 675:</span> Prime factorisation is 3 × 3 × 3 × 5 × 5.</div>
-        <div class="sol-step">We need one more 5 to make a perfect cube.</div>
-        <div class="sol-step">Smallest number to be multiplied is <span class="ans-highlight">5</span>.</div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(v) 100:</span> Prime factorisation is 2 × 2 × 5 × 5.</div>
-        <div class="sol-step">We need one more 2 and one more 5 to make a perfect cube.</div>
-        <div class="sol-step">Smallest number to be multiplied is 2 × 5 = <span class="ans-highlight">10</span>.</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">3. Find the smallest number by which each of the following numbers must be divided to obtain a perfect cube.</div>
-      <div class="q-subtext">(i) 81</div>
-      <div class="q-subtext">(ii) 128</div>
-      <div class="q-subtext">(iii) 135</div>
-      <div class="q-subtext">(iv) 192</div>
-      <div class="q-subtext">(v) 704</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step"><span class="step-label">(i) 81:</span> Prime factorisation is 3 × 3 × 3 × 3.</div>
-        <div class="sol-step">The factor 3 is left without a triple.</div>
-        <div class="sol-step">Smallest number to divide by is <span class="ans-highlight">3</span>.</div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(ii) 128:</span> Prime factorisation is 2 × 2 × 2 × 2 × 2 × 2 × 2.</div>
-        <div class="sol-step">The factor 2 is left without a triple.</div>
-        <div class="sol-step">Smallest number to divide by is <span class="ans-highlight">2</span>.</div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(iii) 135:</span> Prime factorisation is 3 × 3 × 3 × 5.</div>
-        <div class="sol-step">The factor 5 is left without a triple.</div>
-        <div class="sol-step">Smallest number to divide by is <span class="ans-highlight">5</span>.</div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(iv) 192:</span> Prime factorisation is 2 × 2 × 2 × 2 × 2 × 2 × 3.</div>
-        <div class="sol-step">The factor 3 is left without a triple.</div>
-        <div class="sol-step">Smallest number to divide by is <span class="ans-highlight">3</span>.</div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(v) 704:</span> Prime factorisation is 2 × 2 × 2 × 2 × 2 × 2 × 11.</div>
-        <div class="sol-step">The factor 11 is left without a triple.</div>
-        <div class="sol-step">Smallest number to divide by is <span class="ans-highlight">11</span>.</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">4. Imtiyaz makes a cuboid of plasticine of sides 5 cm, 2cm, 5 cm. How many such cuboids will he need to form a cube?</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Volume of cuboid = Length × Breadth × Height.</div>
-        <div class="sol-step">Volume = 5 cm × 2 cm × 5 cm = 50 cm³.</div>
-        <div class="sol-step">Prime factors of volume = 5 × 2 × 5.</div>
-        <div class="sol-step">To make it a perfect cube, we need factors in triples.</div>
-        <div class="sol-step">We need one more 5 and two more 2s.</div>
-        <div class="sol-step">Number of cuboids needed = 5 × 2 × 2 = <span class="ans-highlight">20</span>.</div>
-      </div>
-    </div>
-  </div>
-`;
-
-const ex62Content = `
-  <style>
-    .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
-    .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
-    .frac .den { padding: 0 2px; }
-    .ex-container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
-    .q-card { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 15px; margin-bottom: 25px; }
-    .q-text { color: #FF6CAB; font-weight: 600; margin-bottom: 12px; text-align: justify; }
-    .q-subtext { color: #e0e0e0; margin-bottom: 5px; margin-left: 10px; }
-    .sol-box { border-left: 3px solid #FF6CAB; padding-left: 15px; margin-top: 15px; background: rgba(255, 108, 171, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; }
-    .ans-highlight { color: #FF6CAB; font-weight: 700; }
-    .step-label { color: #FF80AB; font-weight: 600; margin-right: 5px; }
-    .sol-step { margin-bottom: 8px; }
-      .q-text, .q-subtext, .sol-step, .sol-box { font-size: 16px; }
-  </style>
-  <div class="ex-container">
-    <div class="q-card">
-      <div class="q-text">1. Find the cube root of each of the following numbers by prime factorisation method.</div>
-      <div class="q-subtext">(i) 64</div>
-      <div class="q-subtext">(ii) 512</div>
-      <div class="q-subtext">(iii) 10648</div>
-      <div class="q-subtext">(iv) 27000</div>
-      <div class="q-subtext">(v) 15625</div>
-      <div class="q-subtext">(vi) 13824</div>
-      <div class="q-subtext">(vii) 110592</div>
-      <div class="q-subtext">(viii) 46656</div>
-      <div class="q-subtext">(ix) 175616</div>
-      <div class="q-subtext">(x) 91125</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step"><span class="step-label">(i) 64:</span> 64 = 2 × 2 × 2 × 2 × 2 × 2. So, ∛64 = 2 × 2 = <span class="ans-highlight">4</span>.</div>
-        <div class="sol-step"><span class="step-label">(ii) 512:</span> 512 = 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2. So, ∛512 = 2 × 2 × 2 = <span class="ans-highlight">8</span>.</div>
-        <div class="sol-step"><span class="step-label">(iii) 10648:</span> 10648 = 2 × 2 × 2 × 11 × 11 × 11. So, ∛10648 = 2 × 11 = <span class="ans-highlight">22</span>.</div>
-        <div class="sol-step"><span class="step-label">(iv) 27000:</span> 27000 = 3 × 3 × 3 × 10 × 10 × 10. So, ∛27000 = 3 × 10 = <span class="ans-highlight">30</span>.</div>
-        <div class="sol-step"><span class="step-label">(v) 15625:</span> 15625 = 5 × 5 × 5 × 5 × 5 × 5. So, ∛15625 = 5 × 5 = <span class="ans-highlight">25</span>.</div>
-        <div class="sol-step"><span class="step-label">(vi) 13824:</span> 13824 = 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 3 × 3 × 3. So, ∛13824 = 2 × 2 × 2 × 3 = <span class="ans-highlight">24</span>.</div>
-        <div class="sol-step"><span class="step-label">(vii) 110592:</span> 110592 = 2¹² × 3³. So, ∛110592 = 2⁴ × 3 = 16 × 3 = <span class="ans-highlight">48</span>.</div>
-        <div class="sol-step"><span class="step-label">(viii) 46656:</span> 46656 = 2⁶ × 3⁶. So, ∛46656 = 2² × 3² = 4 × 9 = <span class="ans-highlight">36</span>.</div>
-        <div class="sol-step"><span class="step-label">(ix) 175616:</span> 175616 = 2⁹ × 7³. So, ∛175616 = 2³ × 7 = 8 × 7 = <span class="ans-highlight">56</span>.</div>
-        <div class="sol-step"><span class="step-label">(x) 91125:</span> 91125 = 3⁶ × 5³. So, ∛91125 = 3² × 5 = 9 × 5 = <span class="ans-highlight">45</span>.</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">2. State true or false.</div>
-      <div class="q-subtext">(i) Cube of any odd number is even.</div>
-      <div class="q-subtext">(ii) A perfect cube does not end with two zeros.</div>
-      <div class="q-subtext">(iii) If square of a number ends with 5, then its cube ends with 25.</div>
-      <div class="q-subtext">(iv) There is no perfect cube which ends with 8.</div>
-      <div class="q-subtext">(v) The cube of a two digit number may be a three digit number.</div>
-      <div class="q-subtext">(vi) The cube of a two digit number may have seven or more digits.</div>
-      <div class="q-subtext">(vii) The cube of a single digit number may be a single digit number.</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step"><span class="step-label">(i)</span> <span class="ans-highlight">False</span>. Example: 3³ = 27 (odd).</div>
-        <div class="sol-step"><span class="step-label">(ii)</span> <span class="ans-highlight">True</span>. A perfect cube ending in zeros will have them in multiples of 3.</div>
-        <div class="sol-step"><span class="step-label">(iii)</span> <span class="ans-highlight">False</span>. Example: 15² = 225, but 15³ = 3375 (does not end in 25).</div>
-        <div class="sol-step"><span class="step-label">(iv)</span> <span class="ans-highlight">False</span>. Example: 2³ = 8, 12³ = 1728.</div>
-        <div class="sol-step"><span class="step-label">(v)</span> <span class="ans-highlight">False</span>. Smallest two digit number is 10, and 10³ = 1000 (four digits).</div>
-        <div class="sol-step"><span class="step-label">(vi)</span> <span class="ans-highlight">False</span>. Largest two digit number is 99, and 99³ = 970299 (six digits).</div>
-        <div class="sol-step"><span class="step-label">(vii)</span> <span class="ans-highlight">True</span>. Example: 1³ = 1, 2³ = 8.</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">3. You are told that 1,331 is a perfect cube. Can you guess without factorisation what is its cube root? Similarly, guess the cube roots of 4913, 12167, 32768.</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step"><span class="step-label">For 1331:</span></div>
-        <div class="sol-step">Split the number into two groups from right: 1 and 331.</div>
-        <div class="sol-step">331 ends in 1, so the unit digit of cube root is 1.</div>
-        <div class="sol-step">The other group is 1. 1³ = 1. So tens digit is 1.</div>
-        <div class="sol-step">Cube root is <span class="ans-highlight">11</span>.</div>
-        <br/>
-        <div class="sol-step"><span class="step-label">For 4913:</span></div>
-        <div class="sol-step">Split the number into two groups: 4 and 913.</div>
-        <div class="sol-step">913 ends in 3, so unit digit of cube root is 7 (since 7³ = 343).</div>
-        <div class="sol-step">The other group is 4. We know 1³ < 4 < 2³. Tens digit is 1.</div>
-        <div class="sol-step">Cube root is <span class="ans-highlight">17</span>.</div>
-        <br/>
-        <div class="sol-step"><span class="step-label">For 12167:</span></div>
-        <div class="sol-step">Split into two groups: 12 and 167.</div>
-        <div class="sol-step">167 ends in 7, so unit digit is 3 (since 3³ = 27).</div>
-        <div class="sol-step">The other group is 12. We know 2³ < 12 < 3³. Tens digit is 2.</div>
-        <div class="sol-step">Cube root is <span class="ans-highlight">23</span>.</div>
-        <br/>
-        <div class="sol-step"><span class="step-label">For 32768:</span></div>
-        <div class="sol-step">Split into two groups: 32 and 768.</div>
-        <div class="sol-step">768 ends in 8, so unit digit is 2 (since 2³ = 8).</div>
-        <div class="sol-step">The other group is 32. We know 3³ < 32 < 4³. Tens digit is 3.</div>
-        <div class="sol-step">Cube root is <span class="ans-highlight">32</span>.</div>
-      </div>
-    </div>
-  </div>
-`;
-
 export const c8Math6: ChapterContent = {
   id: "c8-math-6",
   number: 6,
-  title: "Cubes and Cube Roots",
+  title: "Squares and Square Roots",
   introduction:
-    "In this chapter, we will learn about perfect cubes and the concept of cube roots. We will explore methods to find them, including prime factorisation and estimation.",
-  mcqs: [
+    "Squares and Square Roots form the backbone of arithmetic and geometry. In this chapter, we explore the properties of perfect squares, unit digit patterns, non-square intervals between consecutive squares, Pythagorean triplets, and the four fundamental techniques for extracting square roots: repeated subtraction, prime factorisation, long division, and square roots of decimals.",
+  definitions: [
     {
-      id: "m1",
-      question: "Which of the following is a perfect cube?",
-      options: ["100", "125", "150", "200"],
-      correctAnswer: "125",
+      term: "Square Number (Perfect Square)",
+      description:
+        "A natural number m that can be expressed as n<sup>2</sup>, where n is also a natural number (e.g., 1, 4, 9, 16, 25, 36, 49...).",
     },
     {
-      id: "m2",
-      question: "The cube of an odd number is always:",
-      options: ["Even", "Odd", "Prime", "Zero"],
-      correctAnswer: "Odd",
+      term: "Pythagorean Triplet",
+      description:
+        "A set of three positive integers (a, b, c) satisfying a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>. For any natural number m &gt; 1, the numbers 2m, m<sup>2</sup> &minus; 1, and m<sup>2</sup> + 1 always form a Pythagorean triplet.",
     },
     {
-      id: "m3",
-      question: "The cube root of 64 is:",
-      options: ["2", "4", "6", "8"],
-      correctAnswer: "4",
+      term: "Square Root (&radic;)",
+      description:
+        "The inverse operation of squaring a number. If a<sup>2</sup> = b, then the square root of b is a, denoted as &radic;b = a.",
     },
     {
-      id: "m4",
-      question: "If a number ends with 2, its cube will end with:",
-      options: ["2", "4", "6", "8"],
-      correctAnswer: "8",
-    },
-    {
-      id: "m5",
-      question: "Which of the following numbers is not a perfect cube?",
-      options: ["216", "343", "512", "600"],
-      correctAnswer: "600",
-    },
-    {
-      id: "m6",
-      question: "The cube of 10 is:",
-      options: ["100", "1000", "10000", "10"],
-      correctAnswer: "1000",
-    },
-    {
-      id: "m7",
-      question: "Find the cube root of 27:",
-      options: ["3", "9", "2", "6"],
-      correctAnswer: "3",
-    },
-    {
-      id: "m8",
-      question:
-        "If a perfect cube ends in 0, how many zeroes must it end with at minimum?",
-      options: ["1", "2", "3", "4"],
-      correctAnswer: "3",
-    },
-    {
-      id: "m9",
-      question: "What is the cube of 5?",
-      options: ["25", "75", "100", "125"],
-      correctAnswer: "125",
-    },
-    {
-      id: "m10",
-      question: "The unit digit of the cube of 7 is:",
-      options: ["1", "3", "7", "9"],
-      correctAnswer: "3",
+      term: "Non-Square Numbers",
+      description:
+        "Between the squares of consecutive numbers n<sup>2</sup> and (n + 1)<sup>2</sup>, there exist exactly 2n non-perfect square numbers.",
     },
   ],
-  summary: [
-    "Numbers obtained when a number is multiplied by itself three times are called cube numbers.",
-    "The cube of an even number is always even, and the cube of an odd number is always odd.",
-    "If a number ends in digits 1, 4, 5, 6 or 9, its cube also ends in the same digit.",
-    "A perfect cube ending in 0 must have zeroes in multiples of 3.",
+  keyPoints: [
+    "Numbers ending in 2, 3, 7, or 8 are never perfect squares.",
+    "A perfect square can only end in 0, 1, 4, 5, 6, or 9 at its unit place.",
+    "A square number can only end in an even number of zeroes.",
+    "The square of an even number is always even, and the square of an odd number is always odd.",
+    "The sum of the first n odd natural numbers is always equal to n<sup>2</sup>.",
+    "Between n<sup>2</sup> and (n + 1)<sup>2</sup>, there are exactly 2n non-square natural numbers.",
+    "In long division, placing bars over pairs of digits determines the exact number of digits in the square root.",
+    "In a right triangle with right angle at B, Pythagoras theorem states: AC<sup>2</sup> = AB<sup>2</sup> + BC<sup>2</sup>.",
   ],
+  formulas: [
+    {
+      name: "Pythagorean Triplet Form",
+      formula: "2m, m<sup>2</sup> &minus; 1, m<sup>2</sup> + 1 (for any natural number m &gt; 1)",
+    },
+    {
+      name: "Sum of First n Odd Numbers",
+      formula: "1 + 3 + 5 + ... + (2n &minus; 1) = n<sup>2</sup>",
+    },
+    {
+      name: "Non-Square Numbers Between Squares",
+      formula: "Count = 2n (between n<sup>2</sup> and (n + 1)<sup>2</sup>)",
+    },
+    {
+      name: "Digits in Square Root",
+      formula: "n / 2 (if n is even) OR (n + 1) / 2 (if n is odd)",
+    },
+  ],
+  crux: [],
   exercises: [
-    { id: "ex6-1", name: "Exercise 6.1", questions: [] },
-    { id: "ex6-2", name: "Exercise 6.2", questions: [] },
+    {
+      id: "ex6-1",
+      name: "Exercise 6.1",
+      questions: [
+        {
+          id: "c8-m6-ex6-1-q1",
+          number: "1",
+          question: "What will be the unit digit of the squares of the following numbers? (i) 81 (ii) 272 (iii) 799 (iv) 3853 (v) 1234 (vi) 26387 (vii) 52698 (viii) 99880 (ix) 12796 (x) 55555",
+          solution: ["See full step-by-step unit digit solutions in the interactive Web View."],
+        },
+        {
+          id: "c8-m6-ex6-1-q2",
+          number: "2",
+          question: "The following numbers are obviously not perfect squares. Give reason: (i) 1057 (ii) 23453 (iii) 7928 (iv) 222222 (v) 64000 (vi) 89722 (vii) 222000 (viii) 505050",
+          solution: ["See complete reasons based on units digits and zeroes in the interactive Web View."],
+        },
+        {
+          id: "c8-m6-ex6-1-q3",
+          number: "3",
+          question: "The squares of which of the following would be odd numbers? (i) 431 (ii) 2826 (iii) 7779 (iv) 82004",
+          solution: ["See even/odd square property reasoning in the interactive Web View."],
+        },
+        {
+          id: "c8-m6-ex6-1-q4",
+          number: "4",
+          question: "Observe the pattern and find the missing numbers for 100001² and 10000001².",
+          solution: ["See pattern deductions in the interactive Web View."],
+        },
+        {
+          id: "c8-m6-ex6-1-q5",
+          number: "5",
+          question: "Observe the pattern and supply the missing numbers for 1010101² and the number whose square is 10203040504030201.",
+          solution: ["See central peak digit pattern solutions in the interactive Web View."],
+        },
+        {
+          id: "c8-m6-ex6-1-q6",
+          number: "6",
+          question: "Using the given pattern, find the missing numbers: 4² + 5² + _² = 21², 5² + _² + 30² = 31², 6² + 7² + _² = _².",
+          solution: ["See algebraic consecutive product analysis in the interactive Web View."],
+        },
+        {
+          id: "c8-m6-ex6-1-q7",
+          number: "7",
+          question: "Without adding, find the sum: (i) 1 to 9 (ii) 1 to 19 (iii) 1 to 23.",
+          solution: ["See n² odd sum property solutions in the interactive Web View."],
+        },
+        {
+          id: "c8-m6-ex6-1-q8",
+          number: "8",
+          question: "(i) Express 49 as the sum of 7 odd numbers. (ii) Express 121 as the sum of 11 odd numbers.",
+          solution: ["See odd sum expansions in the interactive Web View."],
+        },
+        {
+          id: "c8-m6-ex6-1-q9",
+          number: "9",
+          question: "How many numbers lie between squares of: (i) 12 and 13 (ii) 25 and 26 (iii) 99 and 100?",
+          solution: ["See 2n non-square count solutions in the interactive Web View."],
+        },
+      ],
+    },
+    {
+      id: "ex6-2",
+      name: "Exercise 6.2",
+      questions: [
+        {
+          id: "c8-m6-ex6-2-q1",
+          number: "1",
+          question: "Find the square of the following numbers: (i) 32 (ii) 35 (iii) 86 (iv) 93 (v) 71 (vi) 46.",
+          solution: ["See algebraic binomial expansion steps in the interactive Web View."],
+        },
+        {
+          id: "c8-m6-ex6-2-q2",
+          number: "2",
+          question: "Write a Pythagorean triplet whose one member is: (i) 6 (ii) 14 (iii) 16 (iv) 18.",
+          solution: ["See 2m, m²−1, m²+1 calculations in the interactive Web View."],
+        },
+      ],
+    },
+    {
+      id: "ex6-3",
+      name: "Exercise 6.3",
+      questions: [
+        {
+          id: "c8-m6-ex6-3-q1",
+          number: "1",
+          question: "What could be the possible ‘one’s’ digits of the square root of: (i) 9801 (ii) 99856 (iii) 998001 (iv) 657666025?",
+          solution: ["See possible unit digit analysis in the interactive Web View."],
+        },
+        {
+          id: "c8-m6-ex6-3-q2",
+          number: "2",
+          question: "Without doing any calculation, find the numbers which are surely not perfect squares: (i) 153 (ii) 257 (iii) 408 (iv) 441.",
+          solution: ["See unit digit test solutions in the interactive Web View."],
+        },
+        {
+          id: "c8-m6-ex6-3-q3",
+          number: "3",
+          question: "Find the square roots of 100 and 169 by the method of repeated subtraction.",
+          solution: ["See all repeated subtraction steps in the interactive Web View."],
+        },
+        {
+          id: "c8-m6-ex6-3-q4",
+          number: "4",
+          question: "Find the square roots of: (i) 729 (ii) 400 (iii) 1764 (iv) 4096 (v) 7744 (vi) 9604 (vii) 5929 (viii) 9216 (ix) 529 (x) 8100 by Prime Factorisation Method.",
+          solution: ["See prime factorisation pairs and roots in the interactive Web View."],
+        },
+        {
+          id: "c8-m6-ex6-3-q5",
+          number: "5",
+          question: "Find the smallest whole number by which it should be multiplied so as to get a perfect square, and find its square root: (i) 252 (ii) 180 (iii) 1008 (iv) 2028 (v) 1458 (vi) 768.",
+          solution: ["See unpaired factor analysis and square root calculations in the interactive Web View."],
+        },
+        {
+          id: "c8-m6-ex6-3-q6",
+          number: "6",
+          question: "Find the smallest whole number by which it should be divided so as to get a perfect square, and find its square root: (i) 252 (ii) 2925 (iii) 396 (iv) 2645 (v) 2800 (vi) 1620.",
+          solution: ["See division by unpaired factors and square root solutions in the interactive Web View."],
+        },
+        {
+          id: "c8-m6-ex6-3-q7",
+          number: "7",
+          question: "The students of Class VIII donated Rs 2401 in all for PM National Relief Fund. Each student donated as many rupees as the number of students. Find the number of students in the class.",
+          solution: ["See quadratic equation and square root calculation in the interactive Web View."],
+        },
+        {
+          id: "c8-m6-ex6-3-q8",
+          number: "8",
+          question: "2025 plants are planted in a garden such that each row contains as many plants as rows. Find the number of rows and plants in each row.",
+          solution: ["See square root solution in the interactive Web View."],
+        },
+        {
+          id: "c8-m6-ex6-3-q9",
+          number: "9",
+          question: "Find the smallest square number that is divisible by each of 4, 9 and 10.",
+          solution: ["See LCM and pairing solution in the interactive Web View."],
+        },
+        {
+          id: "c8-m6-ex6-3-q10",
+          number: "10",
+          question: "Find the smallest square number that is divisible by each of 8, 15 and 20.",
+          solution: ["See LCM and prime factor completion in the interactive Web View."],
+        },
+      ],
+    },
+    {
+      id: "ex6-4",
+      name: "Exercise 6.4",
+      questions: [
+        {
+          id: "c8-m6-ex6-4-q1",
+          number: "1",
+          question: "Find the square root of each number by Division method: (i) 2304 (ii) 4489 (iii) 3481 (iv) 529 (v) 3249 (vi) 1369 (vii) 5776 (viii) 7921 (ix) 576 (x) 1024 (xi) 3136 (xii) 900.",
+          solution: ["See complete long division diagrams in the interactive Web View."],
+        },
+        {
+          id: "c8-m6-ex6-4-q2",
+          number: "2",
+          question: "Find the number of digits in the square root of each of the following numbers (without any calculation): (i) 64 (ii) 144 (iii) 4489 (iv) 27225 (v) 390625.",
+          solution: ["See digit count rule solutions in the interactive Web View."],
+        },
+        {
+          id: "c8-m6-ex6-4-q3",
+          number: "3",
+          question: "Find the square root of the following decimal numbers: (i) 2.56 (ii) 7.29 (iii) 51.84 (iv) 42.25 (v) 31.36.",
+          solution: ["See decimal division steps in the interactive Web View."],
+        },
+        {
+          id: "c8-m6-ex6-4-q4",
+          number: "4",
+          question: "Find the least number which must be subtracted from each number to get a perfect square, and find its square root: (i) 402 (ii) 1989 (iii) 3250 (iv) 825 (v) 4000.",
+          solution: ["See long division remainder subtraction solutions in the interactive Web View."],
+        },
+        {
+          id: "c8-m6-ex6-4-q5",
+          number: "5",
+          question: "Find the least number which must be added to each number to get a perfect square, and find its square root: (i) 525 (ii) 1750 (iii) 252 (iv) 1825 (v) 6412.",
+          solution: ["See next square excess addition solutions in the interactive Web View."],
+        },
+        {
+          id: "c8-m6-ex6-4-q6",
+          number: "6",
+          question: "Find the length of the side of a square whose area is 441 m².",
+          solution: ["See square area and root solution in the interactive Web View."],
+        },
+        {
+          id: "c8-m6-ex6-4-q7",
+          number: "7",
+          question: "In a right triangle ABC, ∠B = 90°: a. If AB = 6 cm, BC = 8 cm, find AC. b. If AC = 13 cm, BC = 5 cm, find AB.",
+          solution: ["See Pythagoras theorem working and triangle SVGs in the interactive Web View."],
+        },
+        {
+          id: "c8-m6-ex6-4-q8",
+          number: "8",
+          question: "A gardener has 1000 plants. He wants to plant these in such a way that the number of rows and columns remain same. Find minimum plants he needs more.",
+          solution: ["See next square analysis and addition solution in the interactive Web View."],
+        },
+        {
+          id: "c8-m6-ex6-4-q9",
+          number: "9",
+          question: "There are 500 children in a school for P.T. drill. Number of rows = columns. How many children would be left out?",
+          solution: ["See division remainder calculation in the interactive Web View."],
+        },
+      ],
+    },
+  ],
+  examples: [],
+  mcqs: [
+  {
+    "id": "c8-m6-q1",
+    "question": "What is the unit digit of the square of the number 799?",
+    "options": [
+      "A):   9",
+      "B):   1",
+      "C):   8",
+      "D):   7"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The unit digit of 799 is 9. Since 9 × 9 = 81, the units digit of its square is 1."
+  },
+  {
+    "id": "c8-m6-q2",
+    "question": "Which of the following numbers can NEVER be the unit digit of a perfect square?",
+    "options": [
+      "A):   1",
+      "B):   6",
+      "C):   7",
+      "D):   9"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Natural numbers ending in 2, 3, 7, or 8 are never perfect squares. All squares end only in 0, 1, 4, 5, 6, or 9."
+  },
+  {
+    "id": "c8-m6-q3",
+    "question": "The square of an odd natural number is always:",
+    "options": [
+      "A):   An odd number",
+      "B):   An even number",
+      "C):   A prime number",
+      "D):   A negative number"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The square of an odd number is always odd (e.g., 3² = 9, 7² = 49), and the square of an even number is always even."
+  },
+  {
+    "id": "c8-m6-q4",
+    "question": "How many non-perfect square numbers lie between 12² and 13²?",
+    "options": [
+      "A):   12",
+      "B):   13",
+      "C):   25",
+      "D):   24"
+    ],
+    "correctAnswer": "D",
+    "explanation": "Between n² and (n + 1)², there are 2n non-perfect square numbers. For n = 12, there are 2 × 12 = 24 non-square numbers."
+  },
+  {
+    "id": "c8-m6-q5",
+    "question": "What is the sum of the first 8 consecutive odd natural numbers (1 + 3 + 5 + 7 + 9 + 11 + 13 + 15)?",
+    "options": [
+      "A):   56",
+      "B):   60",
+      "C):   64",
+      "D):   81"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The sum of the first n odd natural numbers is n². For n = 8, Sum = 8² = 64."
+  },
+  {
+    "id": "c8-m6-q6",
+    "question": "If the smallest member of a Pythagorean triplet is 6, what are the other two members?",
+    "options": [
+      "A):   8 and 10",
+      "B):   10 and 12",
+      "C):   7 and 9",
+      "D):   9 and 12"
+    ],
+    "correctAnswer": "A",
+    "explanation": "For 2m = 6, m = 3. Then m² − 1 = 3² − 1 = 8, and m² + 1 = 3² + 1 = 10. The triplet is (6, 8, 10) since 6² + 8² = 10²."
+  },
+  {
+    "id": "c8-m6-q7",
+    "question": "What is the value of √729 by prime factorisation?",
+    "options": [
+      "A):   23",
+      "B):   27",
+      "C):   33",
+      "D):   29"
+    ],
+    "correctAnswer": "B",
+    "explanation": "729 = 3⁶ = (3³)². Taking one factor from each of the three pairs gives 3 × 3 × 3 = 27."
+  },
+  {
+    "id": "c8-m6-q8",
+    "question": "What is the smallest number by which 180 must be multiplied to make it a perfect square?",
+    "options": [
+      "A):   2",
+      "B):   3",
+      "C):   4",
+      "D):   5"
+    ],
+    "correctAnswer": "D",
+    "explanation": "180 = 2² × 3² × 5. The prime factor 5 is unpaired. Multiplying by 5 gives 180 × 5 = 900, which is 30²."
+  },
+  {
+    "id": "c8-m6-q9",
+    "question": "What is the smallest number by which 396 must be divided to obtain a perfect square?",
+    "options": [
+      "A):   11",
+      "B):   3",
+      "C):   2",
+      "D):   6"
+    ],
+    "correctAnswer": "A",
+    "explanation": "396 = 2² × 3² × 11. The prime factor 11 is unpaired. Dividing 396 by 11 gives 36 = 6²."
+  },
+  {
+    "id": "c8-m6-q10",
+    "question": "How many digits will be present in the square root of 27225 (without actual calculation)?",
+    "options": [
+      "A):   2",
+      "B):   4",
+      "C):   3",
+      "D):   5"
+    ],
+    "correctAnswer": "C",
+    "explanation": "27225 has 5 digits (n = 5, odd). Digits in square root = (n + 1)/2 = (5 + 1)/2 = 3 (since √27225 = 165, a 3-digit number)."
+  },
+  {
+    "id": "c8-m6-q11",
+    "question": "What is the square root of the decimal number 51.84?",
+    "options": [
+      "A):   7.8",
+      "B):   7.2",
+      "C):   6.8",
+      "D):   8.2"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Using long division on 51.84: 7² = 49 ≤ 51, bringing down 84 with divisor 142 gives quotient 7.2 (7.2 × 7.2 = 51.84)."
+  },
+  {
+    "id": "c8-m6-q12",
+    "question": "What is the least number that must be subtracted from 402 to get a perfect square?",
+    "options": [
+      "A):   4",
+      "B):   1",
+      "C):   3",
+      "D):   2"
+    ],
+    "correctAnswer": "D",
+    "explanation": "Long division of 402 gives quotient 20 with remainder 2. Subtracting 2 yields 402 − 2 = 400 = 20²."
+  },
+  {
+    "id": "c8-m6-q13",
+    "question": "What is the least number that must be added to 1750 to make it a perfect square?",
+    "options": [
+      "A):   14",
+      "B):   16",
+      "C):   24",
+      "D):   10"
+    ],
+    "correctAnswer": "A",
+    "explanation": "41² = 1681 < 1750 < 42² = 1764. The next square is 1764. Number to add = 1764 − 1750 = 14."
+  },
+  {
+    "id": "c8-m6-q14",
+    "question": "What is the smallest square number divisible by each of 4, 9, and 10?",
+    "options": [
+      "A):   180",
+      "B):   360",
+      "C):   900",
+      "D):   3600"
+    ],
+    "correctAnswer": "C",
+    "explanation": "LCM(4, 9, 10) = 180 = 2² × 3² × 5. To make it a square, multiply by the unpaired factor 5: 180 × 5 = 900."
+  },
+  {
+    "id": "c8-m6-q15",
+    "question": "In a right triangle ABC with ∠B = 90°, if AB = 6 cm and BC = 8 cm, what is the length of hypotenuse AC?",
+    "options": [
+      "A):   14 cm",
+      "B):   10 cm",
+      "C):   12 cm",
+      "D):   9 cm"
+    ],
+    "correctAnswer": "B",
+    "explanation": "By Pythagoras theorem: AC² = AB² + BC² = 6² + 8² = 36 + 64 = 100 ⇒ AC = √100 = 10 cm."
+  }
+],
+  summary: [
+    "If a natural number m = n<sup>2</sup>, then m is a square number and n is its square root.",
+    "Square numbers can end only with 0, 1, 4, 5, 6, or 9 at their unit place, and never in 2, 3, 7, or 8.",
+    "For any natural number m &gt; 1, (2m, m<sup>2</sup> &minus; 1, m<sup>2</sup> + 1) forms a Pythagorean triplet.",
+    "Square roots can be found using Repeated Subtraction, Prime Factorisation, or the Long Division method.",
   ],
   isHtmlView: true,
-  htmlOverview: `
-    <style>
-    .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
-    .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
-    .frac .den { padding: 0 2px; }
-      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
-      
-      .premium-container {
-        padding: 20px;
-        color: #ffffff;
-        font-family: 'Outfit', sans-serif !important;
-        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-        border-radius: 20px;
-        margin: 10px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-      }
-
-      .section-box {
-        background: rgba(255, 255, 255, 0.05);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 15px;
-        padding: 20px;
-        margin-bottom: 20px;
-        backdrop-filter: blur(10px);
-      }
-
-      .section-header {
-        color: #FF6CAB;
-        font-size: 20px;
-        font-weight: 600;
-        margin-bottom: 15px;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-      }
-
-      .prop-table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 10px;
-        background: rgba(0,0,0,0.2);
-        border-radius: 12px;
-        overflow: hidden;
-      }
-
-      .prop-table th, .prop-table td {
-        padding: 12px;
-        border: 1px solid rgba(255,255,255,0.1);
-        text-align: left;
-        font-size: 15px;
-      }
-
-      .prop-table th {
-        background: rgba(255,255,255,0.1);
-        color: #FF80AB;
-        font-weight: 700;
-      }
-
-      .highlight { color: #FF80AB; font-weight: 600; }
-      
-      .intro-text {
-        line-height: 1.6;
-        font-size: 16px;
-        color: #e0e0e0;
-        text-align: justify;
-      }
-
-      .formula-badge {
-        background: rgba(255, 108, 171, 0.2);
-        border: 1px dashed #FF6CAB;
-        padding: 10px;
-        border-radius: 8px;
-        margin-top: 10px;
-        text-align: center;
-        font-weight: bold;
-        color: #FF80AB;
-      }
-        .q-text, .q-subtext, .sol-step, .sol-box { font-size: 16px; }
-  </style>
-
-    <div class="premium-container">
-      <div class="section-box">
-        <div class="section-header"><span>✦</span> Introduction</div>
-        <div class="intro-text">
-          A number is called a <strong>Perfect Cube</strong> if it can be expressed as the product of a number by itself three times. For example, 8 is a perfect cube because 8 = 2 × 2 × 2. Finding the cube root is the inverse operation of cubing a number.
-        </div>
-      </div>
-
-      <div class="section-box">
-        <div class="section-header"><span>✦</span> Key Concepts & Properties</div>
-        <table class="prop-table">
-          <tr>
-            <th>Concept</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td><strong>Perfect Cubes</strong></td>
-            <td>
-              Numbers like 1, 8, 27, 64, 125 are perfect cubes. They are obtained by multiplying an integer by itself three times.
-            </td>
-          </tr>
-          <tr>
-            <td><strong>Units Digit</strong></td>
-            <td>
-              If a number ends in <span class="highlight">2</span>, its cube ends in <span class="highlight">8</span> (and vice versa).<br/>
-              If a number ends in <span class="highlight">3</span>, its cube ends in <span class="highlight">7</span> (and vice versa).
-            </td>
-          </tr>
-          <tr>
-            <td><strong>Cube Root Notation</strong></td>
-            <td>
-              The symbol for cube root is:
-              <div class="formula-badge">∛</div>
-              Example: ∛125 = 5.
-            </td>
-          </tr>
-        </table>
-      </div>
-    </div>
-  `,
+  htmlOverview: "\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; text-align: center; }\n  .frac .den { padding: 1px 4px; text-align: center; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(76, 175, 80, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #4CAF50; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 16px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(76, 175, 80, 0.2); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #4CAF50; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #81C784; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(76, 175, 80, 0.15); border: 1px solid #4CAF50; color: #A5D6A7; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 4px 2px; }\n  .table-card { background: #FFFFFF; border-radius: 8px; padding: 10px 8px; margin: 16px 0; overflow-x: auto; box-shadow: 0 3px 12px rgba(0,0,0,0.25); -webkit-overflow-scrolling: touch; }\n  .styled-table { width: 100%; min-width: 290px; border-collapse: collapse; color: #0F172A; font-size: 13.5px; text-align: center; }\n  .styled-table th { background: #4CAF50; color: #FFFFFF; font-weight: 700; padding: 9px 8px; border: 1px solid #CBD5E1; font-size: 13.5px; white-space: nowrap; }\n  .styled-table td { padding: 8px 6px; border: 1px solid #CBD5E1; font-weight: 500; font-size: 13px; }\n  .styled-table td.col-label { font-weight: 700; white-space: nowrap; text-align: left; padding-left: 12px; }\n  .div-calc { display: inline-block; background: rgba(0, 0, 0, 0.45); border: 1.5px solid rgba(76, 175, 80, 0.35); border-radius: 8px; padding: 10px 14px; margin: 10px 0; }\n  .div-table { border-collapse: collapse; font-family: 'Courier New', Courier, monospace; font-size: 15px; color: #FFFFFF; }\n  .div-top { border-bottom: 2px solid #4CAF50; color: #81C784; font-weight: 700; text-align: right; padding: 2px 8px; }\n  .div-side { border-right: 2px solid #4CAF50; text-align: right; padding: 3px 10px; color: #A5D6A7; font-weight: 700; }\n  .div-main { text-align: left; padding: 3px 10px; letter-spacing: 1px; }\n  .div-sub { text-align: left; padding: 2px 10px; color: #FF8A80; border-bottom: 1px dashed rgba(255,255,255,0.25); }\n  .div-line { border-top: 1px solid rgba(255,255,255,0.2); }\n  .bar-pair { text-decoration: overline; font-weight: 700; color: #FFD54F; }\n  .diagram-wrapper { display: block; background: #FFFFFF; border-radius: 8px; padding: 12px 10px; margin: 14px auto; width: 100%; max-width: 320px; box-sizing: border-box; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.25); text-align: center; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Hero Header -->\n  <div style=\"background: linear-gradient(135deg, rgba(76, 175, 80, 0.25), rgba(0, 150, 136, 0.15)); border: 1.5px solid #4CAF50; border-radius: 14px; padding: 18px; margin-bottom: 20px; text-align: center;\">\n    <div style=\"font-size: 22px; font-weight: 800; color: #4CAF50; margin-bottom: 6px;\">\n      📗 Chapter 6: Squares and Square Roots\n    </div>\n    <div style=\"color: #CBD5E1; font-size: 14.5px; line-height: 1.5;\">\n      Class 8 NCERT Mathematics &bull; Complete Reference Guide &amp; Master Formula Cheat Sheet\n    </div>\n  </div>\n\n  <!-- Definition Box -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 1. What is a Square Number (Perfect Square)?</div>\n    <div class=\"q-text\">\n      If a natural number <b>m</b> can be expressed as <b>n<sup>2</sup></b>, where <b>n</b> is also a natural number, then <b>m</b> is called a <b>Square Number</b> or a <b>Perfect Square</b>.\n    </div>\n    <div class=\"sol-box\">\n      <div style=\"color: #FFFFFF; font-size: 14.5px; line-height: 1.6;\">\n        &bull; <b>Examples:</b> 1 (= 1<sup>2</sup>), 4 (= 2<sup>2</sup>), 9 (= 3<sup>2</sup>), 16 (= 4<sup>2</sup>), 25 (= 5<sup>2</sup>), 36, 49, 64, 81, 100...<br/>\n        &bull; Numbers like 2, 3, 5, 6, 7, 8 are <b>not</b> square numbers because there is no natural number whose square equals them.\n      </div>\n    </div>\n\n    <!-- Table of Squares 1 to 20 -->\n    <div class=\"table-card\">\n      <table class=\"styled-table\">\n        <thead>\n          <tr>\n            <th>Number (n)</th>\n            <th>Square (n<sup>2</sup>)</th>\n            <th>Unit Digit</th>\n            <th>Number (n)</th>\n            <th>Square (n<sup>2</sup>)</th>\n            <th>Unit Digit</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr><td>1</td><td>1</td><td><b>1</b></td><td>11</td><td>121</td><td><b>1</b></td></tr>\n          <tr><td>2</td><td>4</td><td><b>4</b></td><td>12</td><td>144</td><td><b>4</b></td></tr>\n          <tr><td>3</td><td>9</td><td><b>9</b></td><td>13</td><td>169</td><td><b>9</b></td></tr>\n          <tr><td>4</td><td>16</td><td><b>6</b></td><td>14</td><td>196</td><td><b>6</b></td></tr>\n          <tr><td>5</td><td>25</td><td><b>5</b></td><td>15</td><td>225</td><td><b>5</b></td></tr>\n          <tr><td>6</td><td>36</td><td><b>6</b></td><td>16</td><td>256</td><td><b>6</b></td></tr>\n          <tr><td>7</td><td>49</td><td><b>9</b></td><td>17</td><td>289</td><td><b>9</b></td></tr>\n          <tr><td>8</td><td>64</td><td><b>4</b></td><td>18</td><td>324</td><td><b>4</b></td></tr>\n          <tr><td>9</td><td>81</td><td><b>1</b></td><td>19</td><td>361</td><td><b>1</b></td></tr>\n          <tr><td>10</td><td>100</td><td><b>0</b></td><td>20</td><td>400</td><td><b>0</b></td></tr>\n        </tbody>\n      </table>\n    </div>\n  </div>\n\n  <!-- Properties Card -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 2. Golden Properties of Square Numbers</div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">1. Ending Digits (Unit Place Rule):</b></div>\n      <div style=\"font-size: 15px; color: #FFFFFF; line-height: 1.6;\">\n        All square numbers end with one of the digits: <b>0, 1, 4, 5, 6, or 9</b> at their units place.<br/>\n        <span class=\"reason\"><b>Golden Negative Rule:</b> A natural number ending in <b>2, 3, 7, or 8</b> is <b>NEVER</b> a perfect square!</span>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">2. Number of Trailing Zeroes:</b></div>\n      <div style=\"font-size: 15px; color: #FFFFFF; line-height: 1.6;\">\n        A square number can only end in an <b>even number of zeroes</b> (2 zeroes, 4 zeroes, 6 zeroes...).<br/>\n        <span class=\"reason\">Numbers ending in an odd number of zeroes (e.g. 64000, 222000, 505050) are <b>NEVER</b> perfect squares.</span>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">3. Even and Odd Squares:</b></div>\n      <div style=\"font-size: 15px; color: #FFFFFF; line-height: 1.6;\">\n        &bull; Square of an <b>even number</b> is always <b>even</b> (e.g. 6<sup>2</sup> = 36, 12<sup>2</sup> = 144).<br/>\n        &bull; Square of an <b>odd number</b> is always <b>odd</b> (e.g. 7<sup>2</sup> = 49, 11<sup>2</sup> = 121).\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">4. Non-Square Numbers Between Consecutive Squares:</b></div>\n      <div style=\"font-size: 15px; color: #FFFFFF; line-height: 1.6;\">\n        Between <b>n<sup>2</sup></b> and <b>(n + 1)<sup>2</sup></b>, there are exactly <b>2n</b> non-perfect square numbers.<br/>\n        <span class=\"reason\">Example: Between 12<sup>2</sup> and 13<sup>2</sup>, there are 2 &times; 12 = <b>24</b> non-square numbers.</span>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">5. Sum of First n Odd Natural Numbers:</b></div>\n      <div style=\"font-size: 15px; color: #FFFFFF; line-height: 1.6;\">\n        The sum of first <b>n</b> odd natural numbers is always equal to <b>n<sup>2</sup></b>:<br/>\n        <div style=\"margin: 8px 0;\">\n          <span class=\"prop-chip\">1 = 1<sup>2</sup> = 1</span><br/>\n          <span class=\"prop-chip\">1 + 3 = 2<sup>2</sup> = 4</span><br/>\n          <span class=\"prop-chip\">1 + 3 + 5 = 3<sup>2</sup> = 9</span><br/>\n          <span class=\"prop-chip\">1 + 3 + 5 + ... + (2n - 1) = n<sup>2</sup></span>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <!-- Pythagorean Triplets Card -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 3. Pythagorean Triplets</div>\n    <div class=\"q-text\">\n      A collection of three natural numbers (a, b, c) such that <b>a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></b> is called a <b>Pythagorean Triplet</b>.\n    </div>\n    <div class=\"sol-box\">\n      <div style=\"color: #FFFFFF; font-size: 14.5px; line-height: 1.6;\">\n        For any natural number <b>m &gt; 1</b>, the three numbers:<br/>\n        <div style=\"margin: 10px 0; text-align: center;\">\n          <span class=\"prop-chip\" style=\"font-size: 15px; padding: 6px 14px;\"><b>2m</b>, &nbsp; <b>m<sup>2</sup> &minus; 1</b>, &nbsp; <b>m<sup>2</sup> + 1</b></span>\n        </div>\n        always form a Pythagorean Triplet.<br/>\n        <span class=\"reason\">Example: For m = 3, 2m = 6, m<sup>2</sup> &minus; 1 = 8, m<sup>2</sup> + 1 = 10 &rArr; (6, 8, 10) since 6<sup>2</sup> + 8<sup>2</sup> = 36 + 64 = 100 = 10<sup>2</sup>.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Four Methods Card -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 4. Four Core Methods to Find Square Roots (&radic;)</div>\n    <div style=\"display: flex; flex-direction: column; gap: 10px; margin-top: 6px;\">\n      <div style=\"background: rgba(0,0,0,0.25); border-left: 3.5px solid #00C6FF; padding: 10px 12px; border-radius: 6px;\">\n        <b style=\"color: #00C6FF;\">1. Repeated Subtraction:</b> Subtract consecutive odd numbers 1, 3, 5, 7, 9... starting from the number until 0 is reached. The number of subtractions performed is the square root. (Ideal for smaller numbers like 100, 169).\n      </div>\n      <div style=\"background: rgba(0,0,0,0.25); border-left: 3.5px solid #FFD54F; padding: 10px 12px; border-radius: 6px;\">\n        <b style=\"color: #FFD54F;\">2. Prime Factorisation:</b> Resolve number into prime factors, group identical factors in pairs of two, and take one factor from each pair. Their product is the square root.\n      </div>\n      <div style=\"background: rgba(0,0,0,0.25); border-left: 3.5px solid #4CAF50; padding: 10px 12px; border-radius: 6px;\">\n        <b style=\"color: #4CAF50;\">3. Long Division Method:</b> Place bars over digit pairs starting from the unit digit. Find largest divisor whose square is &le; first pair, double the divisor for the next step, and repeat. (Fastest for large numbers).\n      </div>\n      <div style=\"background: rgba(0,0,0,0.25); border-left: 3.5px solid #FF4081; padding: 10px 12px; border-radius: 6px;\">\n        <b style=\"color: #FF4081;\">4. Decimal Square Roots:</b> Place bars starting from units place to the left for the whole part, and from the decimal point to the right for the decimal part. Place decimal point in quotient as soon as decimal part is brought down.\n      </div>\n    </div>\n  </div>\n\n  <!-- Master Revision Cheat Sheet -->\n  <div class=\"q-card\" style=\"border-color: #4CAF50;\">\n    <div class=\"q-title\" style=\"color: #4CAF50;\">✦ 5. Master Revision Cheat Sheet</div>\n    <div style=\"font-size: 15px; color: #FFFFFF; line-height: 1.8;\">\n      &bull; <b>End digits 2, 3, 7, 8:</b> Can NEVER be perfect squares.<br/>\n      &bull; <b>Square Root Digit Count:</b> For an n-digit number, the square root contains <b><span class=\"frac\"><span class=\"num\">n</span><span class=\"den\">2</span></span></b> digits if n is even, and <b><span class=\"frac\"><span class=\"num\">n + 1</span><span class=\"den\">2</span></span></b> digits if n is odd.<br/>\n      &bull; <b>To Find Number to Subtract:</b> In long division, the <b>remainder</b> is the least number to be subtracted.<br/>\n      &bull; <b>To Find Number to Add:</b> Take the next integer quotient (q + 1), compute (q + 1)<sup>2</sup> &minus; given number.<br/>\n      &bull; <b>Right Angle Triangle (Pythagoras Theorem):</b> Hypotenuse<sup>2</sup> = Base<sup>2</sup> + Perpendicular<sup>2</sup> (&rArr; AC<sup>2</sup> = AB<sup>2</sup> + BC<sup>2</sup>).\n    </div>\n  </div>\n\n</div>\n",
   htmlExercises: {
-    "ex6-1": ex61Content,
-    "ex6-2": ex62Content,
+    "ex6-1": "\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; text-align: center; }\n  .frac .den { padding: 1px 4px; text-align: center; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(76, 175, 80, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #4CAF50; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 16px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(76, 175, 80, 0.2); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #4CAF50; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #81C784; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(76, 175, 80, 0.15); border: 1px solid #4CAF50; color: #A5D6A7; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 4px 2px; }\n  .table-card { background: #FFFFFF; border-radius: 8px; padding: 10px 8px; margin: 16px 0; overflow-x: auto; box-shadow: 0 3px 12px rgba(0,0,0,0.25); -webkit-overflow-scrolling: touch; }\n  .styled-table { width: 100%; min-width: 290px; border-collapse: collapse; color: #0F172A; font-size: 13.5px; text-align: center; }\n  .styled-table th { background: #4CAF50; color: #FFFFFF; font-weight: 700; padding: 9px 8px; border: 1px solid #CBD5E1; font-size: 13.5px; white-space: nowrap; }\n  .styled-table td { padding: 8px 6px; border: 1px solid #CBD5E1; font-weight: 500; font-size: 13px; }\n  .styled-table td.col-label { font-weight: 700; white-space: nowrap; text-align: left; padding-left: 12px; }\n  .div-calc { display: inline-block; background: rgba(0, 0, 0, 0.45); border: 1.5px solid rgba(76, 175, 80, 0.35); border-radius: 8px; padding: 10px 14px; margin: 10px 0; }\n  .div-table { border-collapse: collapse; font-family: 'Courier New', Courier, monospace; font-size: 15px; color: #FFFFFF; }\n  .div-top { border-bottom: 2px solid #4CAF50; color: #81C784; font-weight: 700; text-align: right; padding: 2px 8px; }\n  .div-side { border-right: 2px solid #4CAF50; text-align: right; padding: 3px 10px; color: #A5D6A7; font-weight: 700; }\n  .div-main { text-align: left; padding: 3px 10px; letter-spacing: 1px; }\n  .div-sub { text-align: left; padding: 2px 10px; color: #FF8A80; border-bottom: 1px dashed rgba(255,255,255,0.25); }\n  .div-line { border-top: 1px solid rgba(255,255,255,0.2); }\n  .bar-pair { text-decoration: overline; font-weight: 700; color: #FFD54F; }\n  .diagram-wrapper { display: block; background: #FFFFFF; border-radius: 8px; padding: 12px 10px; margin: 14px auto; width: 100%; max-width: 320px; box-sizing: border-box; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.25); text-align: center; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Header Card -->\n  <div style=\"background: linear-gradient(135deg, rgba(76, 175, 80, 0.2), rgba(0, 150, 136, 0.1)); border: 1.5px solid #4CAF50; border-radius: 12px; padding: 14px 18px; margin-bottom: 20px;\">\n    <div style=\"font-size: 19px; font-weight: 800; color: #4CAF50; margin-bottom: 4px;\">\n      Exercise 6.1\n    </div>\n    <div style=\"color: #FFFFFF; font-size: 15px; font-weight: 500;\">\n      Properties of Square Numbers, Unit Digits, Non-Square Numbers &amp; Patterns\n    </div>\n  </div>\n\n  <!-- QUESTION 1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 1:</div>\n    <div class=\"q-text\">What will be the unit digit of the squares of the following numbers?</div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(i)</b> 81</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">Unit digit of 81 is 1. <br/>Square of 1 = 1 &times; 1 = 1.</div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Unit Digit: </span><span class=\"ans-val\">1</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(ii)</b> 272</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">Unit digit of 272 is 2. <br/>Square of 2 = 2 &times; 2 = 4.</div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Unit Digit: </span><span class=\"ans-val\">4</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(iii)</b> 799</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">Unit digit of 799 is 9. <br/>Square of 9 = 9 &times; 9 = 81 (unit digit is 1).</div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Unit Digit: </span><span class=\"ans-val\">1</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(iv)</b> 3853</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">Unit digit of 3853 is 3. <br/>Square of 3 = 3 &times; 3 = 9.</div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Unit Digit: </span><span class=\"ans-val\">9</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(v)</b> 1234</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">Unit digit of 1234 is 4. <br/>Square of 4 = 4 &times; 4 = 16 (unit digit is 6).</div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Unit Digit: </span><span class=\"ans-val\">6</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(vi)</b> 26387</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">Unit digit of 26387 is 7. <br/>Square of 7 = 7 &times; 7 = 49 (unit digit is 9).</div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Unit Digit: </span><span class=\"ans-val\">9</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(vii)</b> 52698</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">Unit digit of 52698 is 8. <br/>Square of 8 = 8 &times; 8 = 64 (unit digit is 4).</div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Unit Digit: </span><span class=\"ans-val\">4</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(viii)</b> 99880</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">Unit digit of 99880 is 0. <br/>Square of 0 = 0 &times; 0 = 0.</div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Unit Digit: </span><span class=\"ans-val\">0</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(ix)</b> 12796</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">Unit digit of 12796 is 6. <br/>Square of 6 = 6 &times; 6 = 36 (unit digit is 6).</div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Unit Digit: </span><span class=\"ans-val\">6</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(x)</b> 55555</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">Unit digit of 55555 is 5. <br/>Square of 5 = 5 &times; 5 = 25 (unit digit is 5).</div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Unit Digit: </span><span class=\"ans-val\">5</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 2 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 2:</div>\n    <div class=\"q-text\">The following numbers are obviously not perfect squares. Give reason.</div>\n\n    <div class=\"sol-box\" style=\"margin-bottom: 16px;\">\n      <div style=\"color: #A5D6A7; font-weight: 700; font-size: 14.5px;\">💡 General Rule:</div>\n      <div style=\"color: #FFFFFF; font-size: 14.5px; line-height: 1.6;\">\n        Natural numbers ending in <b>2, 3, 7, 8</b> or ending with an <b>odd number of zeroes</b> cannot be perfect squares.\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(i)</b> 1057</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">1057 ends in <b>7</b>, which can never be the unit digit of a perfect square.</div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Reason: </span><span class=\"ans-val\">Ends in 7 &rArr; Not a perfect square</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(ii)</b> 23453</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">23453 ends in <b>3</b>, which can never be the unit digit of a perfect square.</div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Reason: </span><span class=\"ans-val\">Ends in 3 &rArr; Not a perfect square</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(iii)</b> 7928</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">7928 ends in <b>8</b>, which can never be the unit digit of a perfect square.</div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Reason: </span><span class=\"ans-val\">Ends in 8 &rArr; Not a perfect square</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(iv)</b> 222222</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">222222 ends in <b>2</b>, which can never be the unit digit of a perfect square.</div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Reason: </span><span class=\"ans-val\">Ends in 2 &rArr; Not a perfect square</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(v)</b> 64000</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">64000 ends in <b>three zeroes (odd number of zeroes)</b>. A perfect square can only end in an even number of zeroes.</div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Reason: </span><span class=\"ans-val\">Ends in odd number of zeroes (3 zeroes) &rArr; Not a perfect square</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(vi)</b> 89722</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">89722 ends in <b>2</b>, which can never be the unit digit of a perfect square.</div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Reason: </span><span class=\"ans-val\">Ends in 2 &rArr; Not a perfect square</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(vii)</b> 222000</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">222000 ends in <b>three zeroes (odd number of zeroes)</b>.</div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Reason: </span><span class=\"ans-val\">Ends in odd number of zeroes (3 zeroes) &rArr; Not a perfect square</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(viii)</b> 505050</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">505050 ends in <b>only one zero (odd number of zeroes)</b>.</div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Reason: </span><span class=\"ans-val\">Ends in odd number of zeroes (1 zero) &rArr; Not a perfect square</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 3 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 3:</div>\n    <div class=\"q-text\">The squares of which of the following would be odd numbers?</div>\n\n    <div class=\"sol-box\" style=\"margin-bottom: 16px;\">\n      <div style=\"color: #A5D6A7; font-weight: 700; font-size: 14.5px;\">💡 Property:</div>\n      <div style=\"color: #FFFFFF; font-size: 14.5px; line-height: 1.6;\">\n        The square of an <b>odd number is always odd</b>, and the square of an <b>even number is always even</b>.\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(i)</b> 431</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">431 is an odd number (ends in 1).<br/>Therefore, its square will be an <b>odd number</b>.</div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">Odd number</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(ii)</b> 2826</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">2826 is an even number (ends in 6).<br/>Therefore, its square will be an <b>even number</b>.</div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">Even number</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(iii)</b> 7779</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">7779 is an odd number (ends in 9).<br/>Therefore, its square will be an <b>odd number</b>.</div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">Odd number</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(iv)</b> 82004</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">82004 is an even number (ends in 4).<br/>Therefore, its square will be an <b>even number</b>.</div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">Even number</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 4 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 4:</div>\n    <div class=\"q-text\">\n      Observe the following pattern and find the missing numbers:<br/>\n      <div style=\"font-family: monospace; font-size: 15px; color: #A5D6A7; margin: 8px 0; line-height: 1.8;\">\n        11<sup>2</sup> = 121<br/>\n        101<sup>2</sup> = 10201<br/>\n        1001<sup>2</sup> = 1002001<br/>\n        100001<sup>2</sup> = 1 &hellip;&hellip; 2 &hellip;&hellip; 1<br/>\n        10000001<sup>2</sup> = &hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;\n      </div>\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Solution Pattern:</div>\n      <div class=\"sol-step\">\n        <div>In each square, the number starts with 1, has the same number of zeroes as the base number, followed by 2, followed by the same number of zeroes, and ends with 1:</div>\n        <div style=\"margin-top: 8px;\">\n          &bull; 100001 has <b>4 zeroes</b> &rArr; 100001<sup>2</sup> = <b>10000200001</b><br/>\n          &bull; 10000001 has <b>6 zeroes</b> &rArr; 10000001<sup>2</sup> = <b>100000020000001</b>\n        </div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Missing Numbers: </span>\n        <span class=\"ans-val\">10000200001 and 100000020000001</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 5 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 5:</div>\n    <div class=\"q-text\">\n      Observe the following pattern and supply the missing numbers:<br/>\n      <div style=\"font-family: monospace; font-size: 15px; color: #A5D6A7; margin: 8px 0; line-height: 1.8;\">\n        11<sup>2</sup> = 121<br/>\n        101<sup>2</sup> = 10201<br/>\n        10101<sup>2</sup> = 102030201<br/>\n        1010101<sup>2</sup> = &hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;<br/>\n        &hellip;&hellip;&hellip;&hellip;&hellip;&hellip;<sup>2</sup> = 10203040504030201\n      </div>\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Solution Pattern:</div>\n      <div class=\"sol-step\">\n        <div>The peak digit in the center corresponds to the count of 1's in the base number:</div>\n        <div style=\"margin-top: 8px;\">\n          &bull; 1010101 contains <b>four 1's</b> &rArr; peak digit is 4: <b>1020304030201</b><br/>\n          &bull; 10203040504030201 has peak digit <b>5</b> &rArr; base has five 1's: <b>101010101<sup>2</sup></b>\n        </div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Missing Numbers: </span>\n        <span class=\"ans-val\">1020304030201 and 101010101<sup>2</sup></span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 6 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 6:</div>\n    <div class=\"q-text\">\n      Using the given pattern, find the missing numbers:<br/>\n      <div style=\"font-family: monospace; font-size: 15px; color: #A5D6A7; margin: 8px 0; line-height: 1.8;\">\n        1<sup>2</sup> + 2<sup>2</sup> + 2<sup>2</sup> = 3<sup>2</sup><br/>\n        2<sup>2</sup> + 3<sup>2</sup> + 6<sup>2</sup> = 7<sup>2</sup><br/>\n        3<sup>2</sup> + 4<sup>2</sup> + 12<sup>2</sup> = 13<sup>2</sup><br/>\n        4<sup>2</sup> + 5<sup>2</sup> + _<sup>2</sup> = 21<sup>2</sup><br/>\n        5<sup>2</sup> + _<sup>2</sup> + 30<sup>2</sup> = 31<sup>2</sup><br/>\n        6<sup>2</sup> + 7<sup>2</sup> + _<sup>2</sup> = _<sup>2</sup>\n      </div>\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Pattern Rule:</div>\n      <div class=\"sol-step\">\n        <div>For any consecutive integers a and b:</div>\n        <div>1. Third term = (a &times; b)<sup>2</sup></div>\n        <div>2. RHS result = (a &times; b + 1)<sup>2</sup></div>\n        <div style=\"margin-top: 8px;\">\n          &bull; Row 4: a = 4, b = 5 &rArr; third term = 4 &times; 5 = <b>20</b> &rArr; 4<sup>2</sup> + 5<sup>2</sup> + <b>20<sup>2</sup></b> = 21<sup>2</sup><br/>\n          &bull; Row 5: a = 5, third term = 30 &rArr; b = 30 &divide; 5 = <b>6</b> &rArr; 5<sup>2</sup> + <b>6<sup>2</sup></b> + 30<sup>2</sup> = 31<sup>2</sup><br/>\n          &bull; Row 6: a = 6, b = 7 &rArr; third term = 6 &times; 7 = <b>42</b>, RHS = 42 + 1 = <b>43</b> &rArr; 6<sup>2</sup> + 7<sup>2</sup> + <b>42<sup>2</sup></b> = <b>43<sup>2</sup></b>\n        </div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Missing Numbers: </span>\n        <span class=\"ans-val\">20, 6, 42, 43</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 7 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 7:</div>\n    <div class=\"q-text\">Without adding, find the sum:</div>\n\n    <div class=\"sol-box\" style=\"margin-bottom: 16px;\">\n      <div style=\"color: #A5D6A7; font-weight: 700; font-size: 14.5px;\">💡 Property:</div>\n      <div style=\"color: #FFFFFF; font-size: 14.5px; line-height: 1.6;\">\n        The sum of the first <b>n</b> odd natural numbers is equal to <b>n<sup>2</sup></b>.\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(i)</b> 1 + 3 + 5 + 7 + 9</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">This is the sum of first 5 odd natural numbers.<br/>&rArr; Sum = 5<sup>2</sup> = 25.</div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Sum: </span><span class=\"ans-val\">25</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(ii)</b> 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">This is the sum of first 10 odd natural numbers.<br/>&rArr; Sum = 10<sup>2</sup> = 100.</div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Sum: </span><span class=\"ans-val\">100</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(iii)</b> 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 + 21 + 23</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">This is the sum of first 12 odd natural numbers.<br/>&rArr; Sum = 12<sup>2</sup> = 144.</div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Sum: </span><span class=\"ans-val\">144</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 8 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 8:</div>\n    <div class=\"q-text\">Express:</div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(i)</b> Express 49 as the sum of 7 odd numbers.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          We know that 49 = 7<sup>2</sup>.<br/>\n          By the property of odd numbers, 7<sup>2</sup> is the sum of the first 7 odd natural numbers:<br/>\n          <b>49 = 1 + 3 + 5 + 7 + 9 + 11 + 13</b>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">1 + 3 + 5 + 7 + 9 + 11 + 13</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(ii)</b> Express 121 as the sum of 11 odd numbers.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          We know that 121 = 11<sup>2</sup>.<br/>\n          Therefore, 121 is the sum of the first 11 odd natural numbers:<br/>\n          <b>121 = 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 + 21</b>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 + 21</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 9 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 9:</div>\n    <div class=\"q-text\">How many numbers lie between squares of the following numbers?</div>\n\n    <div class=\"sol-box\" style=\"margin-bottom: 16px;\">\n      <div style=\"color: #A5D6A7; font-weight: 700; font-size: 14.5px;\">💡 Formula:</div>\n      <div style=\"color: #FFFFFF; font-size: 14.5px; line-height: 1.6;\">\n        Between <b>n<sup>2</sup></b> and <b>(n + 1)<sup>2</sup></b>, the number of non-perfect square numbers is <b>2n</b>.\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(i)</b> 12 and 13</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">Here n = 12.<br/>Number of non-square numbers = 2n = 2 &times; 12 = <b>24</b>.</div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Numbers between 12<sup>2</sup> and 13<sup>2</sup>: </span><span class=\"ans-val\">24</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(ii)</b> 25 and 26</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">Here n = 25.<br/>Number of non-square numbers = 2n = 2 &times; 25 = <b>50</b>.</div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Numbers between 25<sup>2</sup> and 26<sup>2</sup>: </span><span class=\"ans-val\">50</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(iii)</b> 99 and 100</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">Here n = 99.<br/>Number of non-square numbers = 2n = 2 &times; 99 = <b>198</b>.</div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Numbers between 99<sup>2</sup> and 100<sup>2</sup>: </span><span class=\"ans-val\">198</span></div>\n      </div>\n    </div>\n  </div>\n\n</div>\n",
+    "ex6-2": "\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; text-align: center; }\n  .frac .den { padding: 1px 4px; text-align: center; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(76, 175, 80, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #4CAF50; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 16px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(76, 175, 80, 0.2); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #4CAF50; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #81C784; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(76, 175, 80, 0.15); border: 1px solid #4CAF50; color: #A5D6A7; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 4px 2px; }\n  .table-card { background: #FFFFFF; border-radius: 8px; padding: 10px 8px; margin: 16px 0; overflow-x: auto; box-shadow: 0 3px 12px rgba(0,0,0,0.25); -webkit-overflow-scrolling: touch; }\n  .styled-table { width: 100%; min-width: 290px; border-collapse: collapse; color: #0F172A; font-size: 13.5px; text-align: center; }\n  .styled-table th { background: #4CAF50; color: #FFFFFF; font-weight: 700; padding: 9px 8px; border: 1px solid #CBD5E1; font-size: 13.5px; white-space: nowrap; }\n  .styled-table td { padding: 8px 6px; border: 1px solid #CBD5E1; font-weight: 500; font-size: 13px; }\n  .styled-table td.col-label { font-weight: 700; white-space: nowrap; text-align: left; padding-left: 12px; }\n  .div-calc { display: inline-block; background: rgba(0, 0, 0, 0.45); border: 1.5px solid rgba(76, 175, 80, 0.35); border-radius: 8px; padding: 10px 14px; margin: 10px 0; }\n  .div-table { border-collapse: collapse; font-family: 'Courier New', Courier, monospace; font-size: 15px; color: #FFFFFF; }\n  .div-top { border-bottom: 2px solid #4CAF50; color: #81C784; font-weight: 700; text-align: right; padding: 2px 8px; }\n  .div-side { border-right: 2px solid #4CAF50; text-align: right; padding: 3px 10px; color: #A5D6A7; font-weight: 700; }\n  .div-main { text-align: left; padding: 3px 10px; letter-spacing: 1px; }\n  .div-sub { text-align: left; padding: 2px 10px; color: #FF8A80; border-bottom: 1px dashed rgba(255,255,255,0.25); }\n  .div-line { border-top: 1px solid rgba(255,255,255,0.2); }\n  .bar-pair { text-decoration: overline; font-weight: 700; color: #FFD54F; }\n  .diagram-wrapper { display: block; background: #FFFFFF; border-radius: 8px; padding: 12px 10px; margin: 14px auto; width: 100%; max-width: 320px; box-sizing: border-box; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.25); text-align: center; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Header Card -->\n  <div style=\"background: linear-gradient(135deg, rgba(76, 175, 80, 0.2), rgba(0, 150, 136, 0.1)); border: 1.5px solid #4CAF50; border-radius: 12px; padding: 14px 18px; margin-bottom: 20px;\">\n    <div style=\"font-size: 19px; font-weight: 800; color: #4CAF50; margin-bottom: 4px;\">\n      Exercise 6.2\n    </div>\n    <div style=\"color: #FFFFFF; font-size: 15px; font-weight: 500;\">\n      Finding Squares Without Direct Multiplication &amp; Pythagorean Triplets\n    </div>\n  </div>\n\n  <!-- QUESTION 1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 1:</div>\n    <div class=\"q-text\">Find the square of the following numbers.</div>\n\n    <div class=\"sol-box\" style=\"margin-bottom: 16px;\">\n      <div style=\"color: #A5D6A7; font-weight: 700; font-size: 14.5px;\">💡 Identity Used:</div>\n      <div style=\"color: #FFFFFF; font-size: 14.5px; line-height: 1.6;\">\n        (a + b)<sup>2</sup> = a<sup>2</sup> + 2ab + b<sup>2</sup> &nbsp;&nbsp;or&nbsp;&nbsp; (a &minus; b)<sup>2</sup> = a<sup>2</sup> &minus; 2ab + b<sup>2</sup>\n      </div>\n    </div>\n\n    <!-- (i) 32 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(i)</b> 32</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>We write 32 = (30 + 2):</div>\n          <div style=\"padding-left: 12px;\">32<sup>2</sup> = (30 + 2)<sup>2</sup></div>\n          <div style=\"padding-left: 12px;\">= 30<sup>2</sup> + 2(30)(2) + 2<sup>2</sup></div>\n          <div style=\"padding-left: 12px;\">= 900 + 120 + 4 = 1024</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ 32<sup>2</sup> = </span><span class=\"ans-val\">1024</span></div>\n      </div>\n    </div>\n\n    <!-- (ii) 35 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(ii)</b> 35</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>We write 35 = (30 + 5):</div>\n          <div style=\"padding-left: 12px;\">35<sup>2</sup> = (30 + 5)<sup>2</sup></div>\n          <div style=\"padding-left: 12px;\">= 30<sup>2</sup> + 2(30)(5) + 5<sup>2</sup></div>\n          <div style=\"padding-left: 12px;\">= 900 + 300 + 25 = 1225</div>\n          <div class=\"reason\" style=\"margin-top: 6px;\">[Shortcut for numbers ending in 5: 3 &times; (3 + 1) hundreds + 25 = 12 hundreds + 25 = 1225]</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ 35<sup>2</sup> = </span><span class=\"ans-val\">1225</span></div>\n      </div>\n    </div>\n\n    <!-- (iii) 86 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(iii)</b> 86</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>We write 86 = (80 + 6) or (90 &minus; 4):</div>\n          <div style=\"padding-left: 12px;\">86<sup>2</sup> = (90 &minus; 4)<sup>2</sup></div>\n          <div style=\"padding-left: 12px;\">= 90<sup>2</sup> &minus; 2(90)(4) + 4<sup>2</sup></div>\n          <div style=\"padding-left: 12px;\">= 8100 &minus; 720 + 16</div>\n          <div style=\"padding-left: 12px;\">= 7380 + 16 = 7396</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ 86<sup>2</sup> = </span><span class=\"ans-val\">7396</span></div>\n      </div>\n    </div>\n\n    <!-- (iv) 93 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(iv)</b> 93</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>We write 93 = (90 + 3):</div>\n          <div style=\"padding-left: 12px;\">93<sup>2</sup> = (90 + 3)<sup>2</sup></div>\n          <div style=\"padding-left: 12px;\">= 90<sup>2</sup> + 2(90)(3) + 3<sup>2</sup></div>\n          <div style=\"padding-left: 12px;\">= 8100 + 540 + 9 = 8649</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ 93<sup>2</sup> = </span><span class=\"ans-val\">8649</span></div>\n      </div>\n    </div>\n\n    <!-- (v) 71 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(v)</b> 71</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>We write 71 = (70 + 1):</div>\n          <div style=\"padding-left: 12px;\">71<sup>2</sup> = (70 + 1)<sup>2</sup></div>\n          <div style=\"padding-left: 12px;\">= 70<sup>2</sup> + 2(70)(1) + 1<sup>2</sup></div>\n          <div style=\"padding-left: 12px;\">= 4900 + 140 + 1 = 5041</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ 71<sup>2</sup> = </span><span class=\"ans-val\">5041</span></div>\n      </div>\n    </div>\n\n    <!-- (vi) 46 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(vi)</b> 46</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>We write 46 = (50 &minus; 4):</div>\n          <div style=\"padding-left: 12px;\">46<sup>2</sup> = (50 &minus; 4)<sup>2</sup></div>\n          <div style=\"padding-left: 12px;\">= 50<sup>2</sup> &minus; 2(50)(4) + 4<sup>2</sup></div>\n          <div style=\"padding-left: 12px;\">= 2500 &minus; 400 + 16 = 2116</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ 46<sup>2</sup> = </span><span class=\"ans-val\">2116</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 2 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 2:</div>\n    <div class=\"q-text\">Write a Pythagorean triplet whose one member is:</div>\n\n    <div class=\"sol-box\" style=\"margin-bottom: 16px;\">\n      <div style=\"color: #A5D6A7; font-weight: 700; font-size: 14.5px;\">💡 General Form of Pythagorean Triplet:</div>\n      <div style=\"color: #FFFFFF; font-size: 14.5px; line-height: 1.6;\">\n        For any natural number m &gt; 1, <b>(2m, m<sup>2</sup> &minus; 1, m<sup>2</sup> + 1)</b> is a Pythagorean triplet.\n      </div>\n    </div>\n\n    <!-- (i) 6 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(i)</b> 6</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Let 2m = 6 &rArr; m = 6 &divide; 2 = 3.</div>\n          <div style=\"padding-left: 12px;\">&bull; m<sup>2</sup> &minus; 1 = 3<sup>2</sup> &minus; 1 = 9 &minus; 1 = 8</div>\n          <div style=\"padding-left: 12px;\">&bull; m<sup>2</sup> + 1 = 3<sup>2</sup> + 1 = 9 + 1 = 10</div>\n          <div class=\"reason\">Check: 6<sup>2</sup> + 8<sup>2</sup> = 36 + 64 = 100 = 10<sup>2</sup></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Pythagorean Triplet: </span><span class=\"ans-val\">(6, 8, 10)</span></div>\n      </div>\n    </div>\n\n    <!-- (ii) 14 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(ii)</b> 14</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Let 2m = 14 &rArr; m = 14 &divide; 2 = 7.</div>\n          <div style=\"padding-left: 12px;\">&bull; m<sup>2</sup> &minus; 1 = 7<sup>2</sup> &minus; 1 = 49 &minus; 1 = 48</div>\n          <div style=\"padding-left: 12px;\">&bull; m<sup>2</sup> + 1 = 7<sup>2</sup> + 1 = 49 + 1 = 50</div>\n          <div class=\"reason\">Check: 14<sup>2</sup> + 48<sup>2</sup> = 196 + 2304 = 2500 = 50<sup>2</sup></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Pythagorean Triplet: </span><span class=\"ans-val\">(14, 48, 50)</span></div>\n      </div>\n    </div>\n\n    <!-- (iii) 16 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(iii)</b> 16</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Let 2m = 16 &rArr; m = 16 &divide; 2 = 8.</div>\n          <div style=\"padding-left: 12px;\">&bull; m<sup>2</sup> &minus; 1 = 8<sup>2</sup> &minus; 1 = 64 &minus; 1 = 63</div>\n          <div style=\"padding-left: 12px;\">&bull; m<sup>2</sup> + 1 = 8<sup>2</sup> + 1 = 64 + 1 = 65</div>\n          <div class=\"reason\">Check: 16<sup>2</sup> + 63<sup>2</sup> = 256 + 3969 = 4225 = 65<sup>2</sup></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Pythagorean Triplet: </span><span class=\"ans-val\">(16, 63, 65)</span></div>\n      </div>\n    </div>\n\n    <!-- (iv) 18 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(iv)</b> 18</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Let 2m = 18 &rArr; m = 18 &divide; 2 = 9.</div>\n          <div style=\"padding-left: 12px;\">&bull; m<sup>2</sup> &minus; 1 = 9<sup>2</sup> &minus; 1 = 81 &minus; 1 = 80</div>\n          <div style=\"padding-left: 12px;\">&bull; m<sup>2</sup> + 1 = 9<sup>2</sup> + 1 = 81 + 1 = 82</div>\n          <div class=\"reason\">Check: 18<sup>2</sup> + 80<sup>2</sup> = 324 + 6400 = 6724 = 82<sup>2</sup></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Pythagorean Triplet: </span><span class=\"ans-val\">(18, 80, 82)</span></div>\n      </div>\n    </div>\n  </div>\n\n</div>\n",
+    "ex6-3": "\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; text-align: center; }\n  .frac .den { padding: 1px 4px; text-align: center; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(76, 175, 80, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #4CAF50; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 16px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(76, 175, 80, 0.2); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #4CAF50; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #81C784; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(76, 175, 80, 0.15); border: 1px solid #4CAF50; color: #A5D6A7; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 4px 2px; }\n  .table-card { background: #FFFFFF; border-radius: 8px; padding: 10px 8px; margin: 16px 0; overflow-x: auto; box-shadow: 0 3px 12px rgba(0,0,0,0.25); -webkit-overflow-scrolling: touch; }\n  .styled-table { width: 100%; min-width: 290px; border-collapse: collapse; color: #0F172A; font-size: 13.5px; text-align: center; }\n  .styled-table th { background: #4CAF50; color: #FFFFFF; font-weight: 700; padding: 9px 8px; border: 1px solid #CBD5E1; font-size: 13.5px; white-space: nowrap; }\n  .styled-table td { padding: 8px 6px; border: 1px solid #CBD5E1; font-weight: 500; font-size: 13px; }\n  .styled-table td.col-label { font-weight: 700; white-space: nowrap; text-align: left; padding-left: 12px; }\n  .div-calc { display: inline-block; background: rgba(0, 0, 0, 0.45); border: 1.5px solid rgba(76, 175, 80, 0.35); border-radius: 8px; padding: 10px 14px; margin: 10px 0; }\n  .div-table { border-collapse: collapse; font-family: 'Courier New', Courier, monospace; font-size: 15px; color: #FFFFFF; }\n  .div-top { border-bottom: 2px solid #4CAF50; color: #81C784; font-weight: 700; text-align: right; padding: 2px 8px; }\n  .div-side { border-right: 2px solid #4CAF50; text-align: right; padding: 3px 10px; color: #A5D6A7; font-weight: 700; }\n  .div-main { text-align: left; padding: 3px 10px; letter-spacing: 1px; }\n  .div-sub { text-align: left; padding: 2px 10px; color: #FF8A80; border-bottom: 1px dashed rgba(255,255,255,0.25); }\n  .div-line { border-top: 1px solid rgba(255,255,255,0.2); }\n  .bar-pair { text-decoration: overline; font-weight: 700; color: #FFD54F; }\n  .diagram-wrapper { display: block; background: #FFFFFF; border-radius: 8px; padding: 12px 10px; margin: 14px auto; width: 100%; max-width: 320px; box-sizing: border-box; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.25); text-align: center; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Header Card -->\n  <div style=\"background: linear-gradient(135deg, rgba(76, 175, 80, 0.2), rgba(0, 150, 136, 0.1)); border: 1.5px solid #4CAF50; border-radius: 12px; padding: 14px 18px; margin-bottom: 20px;\">\n    <div style=\"font-size: 19px; font-weight: 800; color: #4CAF50; margin-bottom: 4px;\">\n      Exercise 6.3\n    </div>\n    <div style=\"color: #FFFFFF; font-size: 15px; font-weight: 500;\">\n      Square Roots by Repeated Subtraction &amp; Prime Factorisation Method\n    </div>\n  </div>\n\n  <!-- QUESTION 1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 1:</div>\n    <div class=\"q-text\">What could be the possible ‘one’s’ digits of the square root of each of the following numbers?</div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(i)</b> 9801</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">The number 9801 ends in 1. Since 1<sup>2</sup> = 1 and 9<sup>2</sup> = 81 (both end in 1), the possible units digit of &radic;9801 is <b>1 or 9</b>.</div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Possible Digit: </span><span class=\"ans-val\">1 or 9</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(ii)</b> 99856</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">The number 99856 ends in 6. Since 4<sup>2</sup> = 16 and 6<sup>2</sup> = 36 (both end in 6), the possible units digit of &radic;99856 is <b>4 or 6</b>.</div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Possible Digit: </span><span class=\"ans-val\">4 or 6</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(iii)</b> 998001</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">The number 998001 ends in 1. Therefore, the possible units digit of &radic;998001 is <b>1 or 9</b>.</div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Possible Digit: </span><span class=\"ans-val\">1 or 9</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(iv)</b> 657666025</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">The number ends in 5. Since only 5<sup>2</sup> = 25 ends in 5, the possible units digit is <b>5</b>.</div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Possible Digit: </span><span class=\"ans-val\">5</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 2 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 2:</div>\n    <div class=\"q-text\">Without doing any calculation, find the numbers which are surely not perfect squares.</div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(i)</b> 153</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">153 ends in <b>3</b>. Numbers ending in 2, 3, 7, 8 are never perfect squares.</div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Result: </span><span class=\"ans-val\">Surely not a perfect square</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(ii)</b> 257</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">257 ends in <b>7</b>. Hence, it is surely not a perfect square.</div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Result: </span><span class=\"ans-val\">Surely not a perfect square</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(iii)</b> 408</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">408 ends in <b>8</b>. Hence, it is surely not a perfect square.</div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Result: </span><span class=\"ans-val\">Surely not a perfect square</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(iv)</b> 441</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">441 ends in <b>1</b>. Natural numbers ending in 1 may be perfect squares (in fact, 21<sup>2</sup> = 441).</div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Result: </span><span class=\"ans-val\">Can be a perfect square (It is 21<sup>2</sup>)</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 3 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 3:</div>\n    <div class=\"q-text\">Find the square roots of 100 and 169 by the method of repeated subtraction.</div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(i)</b> Square root of 100:</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Subtracting successive odd numbers 1, 3, 5, 7, 9... from 100:</div>\n          <div style=\"font-family: monospace; font-size: 14.5px; line-height: 1.8; padding-left: 12px; margin-top: 6px;\">\n            1. 100 &minus; 1 = 99<br/>\n            2. 99 &minus; 3 = 96<br/>\n            3. 96 &minus; 5 = 91<br/>\n            4. 91 &minus; 7 = 84<br/>\n            5. 84 &minus; 9 = 75<br/>\n            6. 75 &minus; 11 = 64<br/>\n            7. 64 &minus; 13 = 51<br/>\n            8. 51 &minus; 15 = 36<br/>\n            9. 36 &minus; 17 = 19<br/>\n            10. 19 &minus; 19 = 0\n          </div>\n          <div style=\"margin-top: 8px;\">Subtraction has been performed <b>10 times</b> to reach 0.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ &radic;100 = </span><span class=\"ans-val\">10</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(ii)</b> Square root of 169:</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Subtracting successive odd numbers from 169:</div>\n          <div style=\"font-family: monospace; font-size: 14.5px; line-height: 1.8; padding-left: 12px; margin-top: 6px;\">\n            1. 169 &minus; 1 = 168<br/>\n            2. 168 &minus; 3 = 165<br/>\n            3. 165 &minus; 5 = 160<br/>\n            4. 160 &minus; 7 = 153<br/>\n            5. 153 &minus; 9 = 144<br/>\n            6. 144 &minus; 11 = 133<br/>\n            7. 133 &minus; 13 = 120<br/>\n            8. 120 &minus; 15 = 105<br/>\n            9. 105 &minus; 17 = 88<br/>\n            10. 88 &minus; 19 = 69<br/>\n            11. 69 &minus; 21 = 48<br/>\n            12. 48 &minus; 23 = 25<br/>\n            13. 25 &minus; 25 = 0\n          </div>\n          <div style=\"margin-top: 8px;\">Subtraction has been performed <b>13 times</b> to reach 0.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ &radic;169 = </span><span class=\"ans-val\">13</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 4 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 4:</div>\n    <div class=\"q-text\">Find the square roots of the following numbers by the Prime Factorisation Method.</div>\n\n    <!-- (i) 729 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(i)</b> 729</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Prime factorisation of 729:</div>\n          <div style=\"padding-left: 12px;\">729 = 3 &times; 3 &times; 3 &times; 3 &times; 3 &times; 3</div>\n          <div style=\"padding-left: 12px;\">Pairing factors: (3 &times; 3) &times; (3 &times; 3) &times; (3 &times; 3)</div>\n          <div style=\"padding-left: 12px;\">&rArr; &radic;729 = 3 &times; 3 &times; 3 = 27</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ &radic;729 = </span><span class=\"ans-val\">27</span></div>\n      </div>\n    </div>\n\n    <!-- (ii) 400 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(ii)</b> 400</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Prime factorisation of 400:</div>\n          <div style=\"padding-left: 12px;\">400 = 2 &times; 2 &times; 2 &times; 2 &times; 5 &times; 5</div>\n          <div style=\"padding-left: 12px;\">Pairing factors: (2 &times; 2) &times; (2 &times; 2) &times; (5 &times; 5)</div>\n          <div style=\"padding-left: 12px;\">&rArr; &radic;400 = 2 &times; 2 &times; 5 = 20</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ &radic;400 = </span><span class=\"ans-val\">20</span></div>\n      </div>\n    </div>\n\n    <!-- (iii) 1764 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(iii)</b> 1764</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Prime factorisation of 1764:</div>\n          <div style=\"padding-left: 12px;\">1764 = 2 &times; 2 &times; 3 &times; 3 &times; 7 &times; 7</div>\n          <div style=\"padding-left: 12px;\">Pairing factors: (2 &times; 2) &times; (3 &times; 3) &times; (7 &times; 7)</div>\n          <div style=\"padding-left: 12px;\">&rArr; &radic;1764 = 2 &times; 3 &times; 7 = 42</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ &radic;1764 = </span><span class=\"ans-val\">42</span></div>\n      </div>\n    </div>\n\n    <!-- (iv) 4096 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(iv)</b> 4096</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Prime factorisation of 4096:</div>\n          <div style=\"padding-left: 12px;\">4096 = 2<sup>12</sup> = (2 &times; 2) &times; (2 &times; 2) &times; (2 &times; 2) &times; (2 &times; 2) &times; (2 &times; 2) &times; (2 &times; 2)</div>\n          <div style=\"padding-left: 12px;\">&rArr; &radic;4096 = 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 = 64</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ &radic;4096 = </span><span class=\"ans-val\">64</span></div>\n      </div>\n    </div>\n\n    <!-- (v) 7744 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(v)</b> 7744</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Prime factorisation of 7744:</div>\n          <div style=\"padding-left: 12px;\">7744 = 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 11 &times; 11</div>\n          <div style=\"padding-left: 12px;\">Pairing factors: (2 &times; 2) &times; (2 &times; 2) &times; (2 &times; 2) &times; (11 &times; 11)</div>\n          <div style=\"padding-left: 12px;\">&rArr; &radic;7744 = 2 &times; 2 &times; 2 &times; 11 = 88</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ &radic;7744 = </span><span class=\"ans-val\">88</span></div>\n      </div>\n    </div>\n\n    <!-- (vi) 9604 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(vi)</b> 9604</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Prime factorisation of 9604:</div>\n          <div style=\"padding-left: 12px;\">9604 = 2 &times; 2 &times; 7 &times; 7 &times; 7 &times; 7</div>\n          <div style=\"padding-left: 12px;\">Pairing factors: (2 &times; 2) &times; (7 &times; 7) &times; (7 &times; 7)</div>\n          <div style=\"padding-left: 12px;\">&rArr; &radic;9604 = 2 &times; 7 &times; 7 = 98</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ &radic;9604 = </span><span class=\"ans-val\">98</span></div>\n      </div>\n    </div>\n\n    <!-- (vii) 5929 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(vii)</b> 5929</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Prime factorisation of 5929:</div>\n          <div style=\"padding-left: 12px;\">5929 = 7 &times; 7 &times; 11 &times; 11</div>\n          <div style=\"padding-left: 12px;\">Pairing factors: (7 &times; 7) &times; (11 &times; 11)</div>\n          <div style=\"padding-left: 12px;\">&rArr; &radic;5929 = 7 &times; 11 = 77</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ &radic;5929 = </span><span class=\"ans-val\">77</span></div>\n      </div>\n    </div>\n\n    <!-- (viii) 9216 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(viii)</b> 9216</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Prime factorisation of 9216:</div>\n          <div style=\"padding-left: 12px;\">9216 = 2<sup>10</sup> &times; 3<sup>2</sup></div>\n          <div style=\"padding-left: 12px;\">Pairing factors: (2 &times; 2)<sup>5</sup> &times; (3 &times; 3)</div>\n          <div style=\"padding-left: 12px;\">&rArr; &radic;9216 = 2<sup>5</sup> &times; 3 = 32 &times; 3 = 96</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ &radic;9216 = </span><span class=\"ans-val\">96</span></div>\n      </div>\n    </div>\n\n    <!-- (ix) 529 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(ix)</b> 529</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Prime factorisation of 529:</div>\n          <div style=\"padding-left: 12px;\">529 = 23 &times; 23</div>\n          <div style=\"padding-left: 12px;\">Pairing factors: (23 &times; 23)</div>\n          <div style=\"padding-left: 12px;\">&rArr; &radic;529 = 23</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ &radic;529 = </span><span class=\"ans-val\">23</span></div>\n      </div>\n    </div>\n\n    <!-- (x) 8100 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(x)</b> 8100</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Prime factorisation of 8100:</div>\n          <div style=\"padding-left: 12px;\">8100 = 2 &times; 2 &times; 3 &times; 3 &times; 3 &times; 3 &times; 5 &times; 5</div>\n          <div style=\"padding-left: 12px;\">Pairing factors: (2 &times; 2) &times; (3 &times; 3) &times; (3 &times; 3) &times; (5 &times; 5)</div>\n          <div style=\"padding-left: 12px;\">&rArr; &radic;8100 = 2 &times; 3 &times; 3 &times; 5 = 90</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ &radic;8100 = </span><span class=\"ans-val\">90</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 5 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 5:</div>\n    <div class=\"q-text\">For each of the following numbers, find the smallest whole number by which it should be multiplied so as to get a perfect square number. Also find the square root of the square number so obtained.</div>\n\n    <!-- (i) 252 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(i)</b> 252</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Prime factorisation: 252 = 2 &times; 2 &times; 3 &times; 3 &times; 7 = (2 &times; 2) &times; (3 &times; 3) &times; 7</div>\n          <div>Prime factor 7 has no pair. To make it a pair, we must multiply by <b>7</b>.</div>\n          <div style=\"padding-left: 12px;\">New perfect square = 252 &times; 7 = 1764</div>\n          <div style=\"padding-left: 12px;\">&radic;1764 = 2 &times; 3 &times; 7 = 42</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Multiply by: </span><span class=\"ans-val\">7 &nbsp;(New Number = 1764, &radic;1764 = 42)</span></div>\n      </div>\n    </div>\n\n    <!-- (ii) 180 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(ii)</b> 180</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Prime factorisation: 180 = 2 &times; 2 &times; 3 &times; 3 &times; 5 = (2 &times; 2) &times; (3 &times; 3) &times; 5</div>\n          <div>Prime factor 5 has no pair. We must multiply by <b>5</b>.</div>\n          <div style=\"padding-left: 12px;\">New perfect square = 180 &times; 5 = 900</div>\n          <div style=\"padding-left: 12px;\">&radic;900 = 2 &times; 3 &times; 5 = 30</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Multiply by: </span><span class=\"ans-val\">5 &nbsp;(New Number = 900, &radic;900 = 30)</span></div>\n      </div>\n    </div>\n\n    <!-- (iii) 1008 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(iii)</b> 1008</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Prime factorisation: 1008 = (2 &times; 2) &times; (2 &times; 2) &times; (3 &times; 3) &times; 7</div>\n          <div>Prime factor 7 has no pair. We must multiply by <b>7</b>.</div>\n          <div style=\"padding-left: 12px;\">New perfect square = 1008 &times; 7 = 7056</div>\n          <div style=\"padding-left: 12px;\">&radic;7056 = 2 &times; 2 &times; 3 &times; 7 = 84</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Multiply by: </span><span class=\"ans-val\">7 &nbsp;(New Number = 7056, &radic;7056 = 84)</span></div>\n      </div>\n    </div>\n\n    <!-- (iv) 2028 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(iv)</b> 2028</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Prime factorisation: 2028 = (2 &times; 2) &times; (13 &times; 13) &times; 3</div>\n          <div>Prime factor 3 has no pair. We must multiply by <b>3</b>.</div>\n          <div style=\"padding-left: 12px;\">New perfect square = 2028 &times; 3 = 6084</div>\n          <div style=\"padding-left: 12px;\">&radic;6084 = 2 &times; 13 &times; 3 = 78</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Multiply by: </span><span class=\"ans-val\">3 &nbsp;(New Number = 6084, &radic;6084 = 78)</span></div>\n      </div>\n    </div>\n\n    <!-- (v) 1458 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(v)</b> 1458</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Prime factorisation: 1458 = (3 &times; 3) &times; (3 &times; 3) &times; (3 &times; 3) &times; 2</div>\n          <div>Prime factor 2 has no pair. We must multiply by <b>2</b>.</div>\n          <div style=\"padding-left: 12px;\">New perfect square = 1458 &times; 2 = 2916</div>\n          <div style=\"padding-left: 12px;\">&radic;2916 = 3 &times; 3 &times; 3 &times; 2 = 54</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Multiply by: </span><span class=\"ans-val\">2 &nbsp;(New Number = 2916, &radic;2916 = 54)</span></div>\n      </div>\n    </div>\n\n    <!-- (vi) 768 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(vi)</b> 768</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Prime factorisation: 768 = (2 &times; 2) &times; (2 &times; 2) &times; (2 &times; 2) &times; (2 &times; 2) &times; 3</div>\n          <div>Prime factor 3 has no pair. We must multiply by <b>3</b>.</div>\n          <div style=\"padding-left: 12px;\">New perfect square = 768 &times; 3 = 2304</div>\n          <div style=\"padding-left: 12px;\">&radic;2304 = 2 &times; 2 &times; 2 &times; 2 &times; 3 = 48</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Multiply by: </span><span class=\"ans-val\">3 &nbsp;(New Number = 2304, &radic;2304 = 48)</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 6 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 6:</div>\n    <div class=\"q-text\">For each of the following numbers, find the smallest whole number by which it should be divided so as to get a perfect square. Also find the square root of the square number so obtained.</div>\n\n    <!-- (i) 252 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(i)</b> 252</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Prime factorisation: 252 = (2 &times; 2) &times; (3 &times; 3) &times; 7</div>\n          <div>Prime factor 7 is unpaired. Dividing by <b>7</b> removes the unpaired factor:</div>\n          <div style=\"padding-left: 12px;\">New number = 252 &divide; 7 = 36</div>\n          <div style=\"padding-left: 12px;\">&radic;36 = 2 &times; 3 = 6</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Divide by: </span><span class=\"ans-val\">7 &nbsp;(New Number = 36, &radic;36 = 6)</span></div>\n      </div>\n    </div>\n\n    <!-- (ii) 2925 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(ii)</b> 2925</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Prime factorisation: 2925 = (3 &times; 3) &times; (5 &times; 5) &times; 13</div>\n          <div>Prime factor 13 is unpaired. Dividing by <b>13</b>:</div>\n          <div style=\"padding-left: 12px;\">New number = 2925 &divide; 13 = 225</div>\n          <div style=\"padding-left: 12px;\">&radic;225 = 3 &times; 5 = 15</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Divide by: </span><span class=\"ans-val\">13 &nbsp;(New Number = 225, &radic;225 = 15)</span></div>\n      </div>\n    </div>\n\n    <!-- (iii) 396 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(iii)</b> 396</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Prime factorisation: 396 = (2 &times; 2) &times; (3 &times; 3) &times; 11</div>\n          <div>Prime factor 11 is unpaired. Dividing by <b>11</b>:</div>\n          <div style=\"padding-left: 12px;\">New number = 396 &divide; 11 = 36</div>\n          <div style=\"padding-left: 12px;\">&radic;36 = 2 &times; 3 = 6</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Divide by: </span><span class=\"ans-val\">11 &nbsp;(New Number = 36, &radic;36 = 6)</span></div>\n      </div>\n    </div>\n\n    <!-- (iv) 2645 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(iv)</b> 2645</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Prime factorisation: 2645 = 5 &times; (23 &times; 23)</div>\n          <div>Prime factor 5 is unpaired. Dividing by <b>5</b>:</div>\n          <div style=\"padding-left: 12px;\">New number = 2645 &divide; 5 = 529</div>\n          <div style=\"padding-left: 12px;\">&radic;529 = 23</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Divide by: </span><span class=\"ans-val\">5 &nbsp;(New Number = 529, &radic;529 = 23)</span></div>\n      </div>\n    </div>\n\n    <!-- (v) 2800 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(v)</b> 2800</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Prime factorisation: 2800 = (2 &times; 2) &times; (2 &times; 2) &times; (5 &times; 5) &times; 7</div>\n          <div>Prime factor 7 is unpaired. Dividing by <b>7</b>:</div>\n          <div style=\"padding-left: 12px;\">New number = 2800 &divide; 7 = 400</div>\n          <div style=\"padding-left: 12px;\">&radic;400 = 2 &times; 2 &times; 5 = 20</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Divide by: </span><span class=\"ans-val\">7 &nbsp;(New Number = 400, &radic;400 = 20)</span></div>\n      </div>\n    </div>\n\n    <!-- (vi) 1620 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(vi)</b> 1620</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Prime factorisation: 1620 = (2 &times; 2) &times; (3 &times; 3) &times; (3 &times; 3) &times; 5</div>\n          <div>Prime factor 5 is unpaired. Dividing by <b>5</b>:</div>\n          <div style=\"padding-left: 12px;\">New number = 1620 &divide; 5 = 324</div>\n          <div style=\"padding-left: 12px;\">&radic;324 = 2 &times; 3 &times; 3 = 18</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Divide by: </span><span class=\"ans-val\">5 &nbsp;(New Number = 324, &radic;324 = 18)</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 7 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 7:</div>\n    <div class=\"q-text\">\n      The students of Class VIII of a school donated Rs 2401 in all, for Prime Minister’s National Relief Fund. Each student donated as many rupees as the number of students in the class. Find the number of students in the class.\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Solution:</div>\n      <div class=\"sol-step\">\n        <div>Let the number of students in Class VIII = <b>x</b>.</div>\n        <div>Then, donation by each student = Rs <b>x</b>.</div>\n        <div style=\"padding-left: 12px;\">Total money donated = x &times; x = x<sup>2</sup></div>\n        <div style=\"padding-left: 12px;\">Given: x<sup>2</sup> = 2401</div>\n        <div style=\"padding-left: 12px;\">&rArr; x = &radic;2401</div>\n        <div style=\"margin-top: 6px;\">Finding &radic;2401 by prime factorisation:</div>\n        <div style=\"padding-left: 12px;\">2401 = 7 &times; 7 &times; 7 &times; 7 = (7 &times; 7) &times; (7 &times; 7)</div>\n        <div style=\"padding-left: 12px;\">&rArr; x = 7 &times; 7 = 49</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Number of students: </span>\n        <span class=\"ans-val\">49 students</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 8 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 8:</div>\n    <div class=\"q-text\">\n      2025 plants are to be planted in a garden in such a way that each row contains as many plants as the number of rows. Find the number of rows and the number of plants in each row.\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Solution:</div>\n      <div class=\"sol-step\">\n        <div>Let the number of rows = <b>x</b>.</div>\n        <div>Then, the number of plants in each row = <b>x</b>.</div>\n        <div style=\"padding-left: 12px;\">Total plants planted = x &times; x = x<sup>2</sup></div>\n        <div style=\"padding-left: 12px;\">Given: x<sup>2</sup> = 2025</div>\n        <div style=\"padding-left: 12px;\">&rArr; x = &radic;2025</div>\n        <div style=\"margin-top: 6px;\">Finding prime factors of 2025:</div>\n        <div style=\"padding-left: 12px;\">2025 = 3 &times; 3 &times; 3 &times; 3 &times; 5 &times; 5 = (3 &times; 3) &times; (3 &times; 3) &times; (5 &times; 5)</div>\n        <div style=\"padding-left: 12px;\">&rArr; x = 3 &times; 3 &times; 5 = 45</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Result: </span>\n        <span class=\"ans-val\">45 rows &bull; 45 plants in each row</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 9 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 9:</div>\n    <div class=\"q-text\">\n      Find the smallest square number that is divisible by each of the numbers 4, 9 and 10.\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Solution:</div>\n      <div class=\"sol-step\">\n        <div>First, find the L.C.M of 4, 9, and 10:</div>\n        <div style=\"padding-left: 12px;\">&bull; 4 = 2 &times; 2</div>\n        <div style=\"padding-left: 12px;\">&bull; 9 = 3 &times; 3</div>\n        <div style=\"padding-left: 12px;\">&bull; 10 = 2 &times; 5</div>\n        <div style=\"padding-left: 12px;\">L.C.M(4, 9, 10) = 2 &times; 2 &times; 3 &times; 3 &times; 5 = 180</div>\n        <div style=\"margin-top: 8px;\">Prime factorisation of 180 = (2 &times; 2) &times; (3 &times; 3) &times; 5</div>\n        <div>Factor 5 is unpaired. To make it a perfect square, we must multiply 180 by 5:</div>\n        <div style=\"padding-left: 12px;\">Required smallest square number = 180 &times; 5 = <b>900</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Smallest Square Number: </span>\n        <span class=\"ans-val\">900</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 10 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 10:</div>\n    <div class=\"q-text\">\n      Find the smallest square number that is divisible by each of the numbers 8, 15 and 20.\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Solution:</div>\n      <div class=\"sol-step\">\n        <div>First, find the L.C.M of 8, 15, and 20:</div>\n        <div style=\"padding-left: 12px;\">&bull; 8 = 2 &times; 2 &times; 2</div>\n        <div style=\"padding-left: 12px;\">&bull; 15 = 3 &times; 5</div>\n        <div style=\"padding-left: 12px;\">&bull; 20 = 2 &times; 2 &times; 5</div>\n        <div style=\"padding-left: 12px;\">L.C.M(8, 15, 20) = 2 &times; 2 &times; 2 &times; 3 &times; 5 = 120</div>\n        <div style=\"margin-top: 8px;\">Prime factorisation of 120 = (2 &times; 2) &times; 2 &times; 3 &times; 5</div>\n        <div>Here, prime factors <b>2, 3, and 5</b> are all unpaired.</div>\n        <div>To make 120 a perfect square, we must multiply by (2 &times; 3 &times; 5 = 30):</div>\n        <div style=\"padding-left: 12px;\">Required smallest square number = 120 &times; 30 = <b>3600</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Smallest Square Number: </span>\n        <span class=\"ans-val\">3600</span>\n      </div>\n    </div>\n  </div>\n\n</div>\n",
+    "ex6-4": "\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; text-align: center; }\n  .frac .den { padding: 1px 4px; text-align: center; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(76, 175, 80, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #4CAF50; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 16px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(76, 175, 80, 0.2); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #4CAF50; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #81C784; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(76, 175, 80, 0.15); border: 1px solid #4CAF50; color: #A5D6A7; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 4px 2px; }\n  .table-card { background: #FFFFFF; border-radius: 8px; padding: 10px 8px; margin: 16px 0; overflow-x: auto; box-shadow: 0 3px 12px rgba(0,0,0,0.25); -webkit-overflow-scrolling: touch; }\n  .styled-table { width: 100%; min-width: 290px; border-collapse: collapse; color: #0F172A; font-size: 13.5px; text-align: center; }\n  .styled-table th { background: #4CAF50; color: #FFFFFF; font-weight: 700; padding: 9px 8px; border: 1px solid #CBD5E1; font-size: 13.5px; white-space: nowrap; }\n  .styled-table td { padding: 8px 6px; border: 1px solid #CBD5E1; font-weight: 500; font-size: 13px; }\n  .styled-table td.col-label { font-weight: 700; white-space: nowrap; text-align: left; padding-left: 12px; }\n  .div-calc { display: inline-block; background: rgba(0, 0, 0, 0.45); border: 1.5px solid rgba(76, 175, 80, 0.35); border-radius: 8px; padding: 10px 14px; margin: 10px 0; }\n  .div-table { border-collapse: collapse; font-family: 'Courier New', Courier, monospace; font-size: 15px; color: #FFFFFF; }\n  .div-top { border-bottom: 2px solid #4CAF50; color: #81C784; font-weight: 700; text-align: right; padding: 2px 8px; }\n  .div-side { border-right: 2px solid #4CAF50; text-align: right; padding: 3px 10px; color: #A5D6A7; font-weight: 700; }\n  .div-main { text-align: left; padding: 3px 10px; letter-spacing: 1px; }\n  .div-sub { text-align: left; padding: 2px 10px; color: #FF8A80; border-bottom: 1px dashed rgba(255,255,255,0.25); }\n  .div-line { border-top: 1px solid rgba(255,255,255,0.2); }\n  .bar-pair { text-decoration: overline; font-weight: 700; color: #FFD54F; }\n  .diagram-wrapper { display: block; background: #FFFFFF; border-radius: 8px; padding: 12px 10px; margin: 14px auto; width: 100%; max-width: 320px; box-sizing: border-box; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.25); text-align: center; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Header Card -->\n  <div style=\"background: linear-gradient(135deg, rgba(76, 175, 80, 0.2), rgba(0, 150, 136, 0.1)); border: 1.5px solid #4CAF50; border-radius: 12px; padding: 14px 18px; margin-bottom: 20px;\">\n    <div style=\"font-size: 19px; font-weight: 800; color: #4CAF50; margin-bottom: 4px;\">\n      Exercise 6.4\n    </div>\n    <div style=\"color: #FFFFFF; font-size: 15px; font-weight: 500;\">\n      Square Roots by Long Division Method, Decimals, Right Triangles &amp; Word Problems\n    </div>\n  </div>\n\n  <!-- QUESTION 1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 1:</div>\n    <div class=\"q-text\">Find the square root of each of the following numbers by Division method.</div>\n\n    <!-- (i) 2304 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(i)</b> 2304</div>\n      <div class=\"sol-box\">\n        <div class=\"div-calc\"><table class=\"div-table\"><tr><td class=\"div-side\"></td><td class=\"div-top\"><b>48</b></td></tr><tr><td class=\"div-side\">4</td><td class=\"div-main\"><span class=\"bar-pair\">23</span>&nbsp;<span class=\"bar-pair\">04</span></td></tr><tr><td class=\"div-side\">+ 4</td><td class=\"div-sub\">&minus; 16</td></tr><tr class=\"div-line\"><td class=\"div-side\">88</td><td class=\"div-main\">704</td></tr><tr><td class=\"div-side\">+ 8</td><td class=\"div-sub\">&minus; 704</td></tr><tr class=\"div-line\"><td class=\"div-side\">96</td><td class=\"div-main\">0</td></tr></table></div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ &radic;2304 = </span><span class=\"ans-val\">48</span></div>\n      </div>\n    </div>\n\n    <!-- (ii) 4489 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(ii)</b> 4489</div>\n      <div class=\"sol-box\">\n        <div class=\"div-calc\"><table class=\"div-table\"><tr><td class=\"div-side\"></td><td class=\"div-top\"><b>67</b></td></tr><tr><td class=\"div-side\">6</td><td class=\"div-main\"><span class=\"bar-pair\">44</span>&nbsp;<span class=\"bar-pair\">89</span></td></tr><tr><td class=\"div-side\">+ 6</td><td class=\"div-sub\">&minus; 36</td></tr><tr class=\"div-line\"><td class=\"div-side\">127</td><td class=\"div-main\">889</td></tr><tr><td class=\"div-side\">+ 7</td><td class=\"div-sub\">&minus; 889</td></tr><tr class=\"div-line\"><td class=\"div-side\">134</td><td class=\"div-main\">0</td></tr></table></div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ &radic;4489 = </span><span class=\"ans-val\">67</span></div>\n      </div>\n    </div>\n\n    <!-- (iii) 3481 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(iii)</b> 3481</div>\n      <div class=\"sol-box\">\n        <div class=\"div-calc\"><table class=\"div-table\"><tr><td class=\"div-side\"></td><td class=\"div-top\"><b>59</b></td></tr><tr><td class=\"div-side\">5</td><td class=\"div-main\"><span class=\"bar-pair\">34</span>&nbsp;<span class=\"bar-pair\">81</span></td></tr><tr><td class=\"div-side\">+ 5</td><td class=\"div-sub\">&minus; 25</td></tr><tr class=\"div-line\"><td class=\"div-side\">109</td><td class=\"div-main\">981</td></tr><tr><td class=\"div-side\">+ 9</td><td class=\"div-sub\">&minus; 981</td></tr><tr class=\"div-line\"><td class=\"div-side\">118</td><td class=\"div-main\">0</td></tr></table></div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ &radic;3481 = </span><span class=\"ans-val\">59</span></div>\n      </div>\n    </div>\n\n    <!-- (iv) 529 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(iv)</b> 529</div>\n      <div class=\"sol-box\">\n        <div class=\"div-calc\"><table class=\"div-table\"><tr><td class=\"div-side\"></td><td class=\"div-top\"><b>23</b></td></tr><tr><td class=\"div-side\">2</td><td class=\"div-main\"><span class=\"bar-pair\">5</span>&nbsp;<span class=\"bar-pair\">29</span></td></tr><tr><td class=\"div-side\">+ 2</td><td class=\"div-sub\">&minus; 4</td></tr><tr class=\"div-line\"><td class=\"div-side\">43</td><td class=\"div-main\">129</td></tr><tr><td class=\"div-side\">+ 3</td><td class=\"div-sub\">&minus; 129</td></tr><tr class=\"div-line\"><td class=\"div-side\">46</td><td class=\"div-main\">0</td></tr></table></div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ &radic;529 = </span><span class=\"ans-val\">23</span></div>\n      </div>\n    </div>\n\n    <!-- (v) 3249 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(v)</b> 3249</div>\n      <div class=\"sol-box\">\n        <div class=\"div-calc\"><table class=\"div-table\"><tr><td class=\"div-side\"></td><td class=\"div-top\"><b>57</b></td></tr><tr><td class=\"div-side\">5</td><td class=\"div-main\"><span class=\"bar-pair\">32</span>&nbsp;<span class=\"bar-pair\">49</span></td></tr><tr><td class=\"div-side\">+ 5</td><td class=\"div-sub\">&minus; 25</td></tr><tr class=\"div-line\"><td class=\"div-side\">107</td><td class=\"div-main\">749</td></tr><tr><td class=\"div-side\">+ 7</td><td class=\"div-sub\">&minus; 749</td></tr><tr class=\"div-line\"><td class=\"div-side\">114</td><td class=\"div-main\">0</td></tr></table></div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ &radic;3249 = </span><span class=\"ans-val\">57</span></div>\n      </div>\n    </div>\n\n    <!-- (vi) 1369 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(vi)</b> 1369</div>\n      <div class=\"sol-box\">\n        <div class=\"div-calc\"><table class=\"div-table\"><tr><td class=\"div-side\"></td><td class=\"div-top\"><b>37</b></td></tr><tr><td class=\"div-side\">3</td><td class=\"div-main\"><span class=\"bar-pair\">13</span>&nbsp;<span class=\"bar-pair\">69</span></td></tr><tr><td class=\"div-side\">+ 3</td><td class=\"div-sub\">&minus; 9</td></tr><tr class=\"div-line\"><td class=\"div-side\">67</td><td class=\"div-main\">469</td></tr><tr><td class=\"div-side\">+ 7</td><td class=\"div-sub\">&minus; 469</td></tr><tr class=\"div-line\"><td class=\"div-side\">74</td><td class=\"div-main\">0</td></tr></table></div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ &radic;1369 = </span><span class=\"ans-val\">37</span></div>\n      </div>\n    </div>\n\n    <!-- (vii) 5776 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(vii)</b> 5776</div>\n      <div class=\"sol-box\">\n        <div class=\"div-calc\"><table class=\"div-table\"><tr><td class=\"div-side\"></td><td class=\"div-top\"><b>76</b></td></tr><tr><td class=\"div-side\">7</td><td class=\"div-main\"><span class=\"bar-pair\">57</span>&nbsp;<span class=\"bar-pair\">76</span></td></tr><tr><td class=\"div-side\">+ 7</td><td class=\"div-sub\">&minus; 49</td></tr><tr class=\"div-line\"><td class=\"div-side\">146</td><td class=\"div-main\">876</td></tr><tr><td class=\"div-side\">+ 6</td><td class=\"div-sub\">&minus; 876</td></tr><tr class=\"div-line\"><td class=\"div-side\">152</td><td class=\"div-main\">0</td></tr></table></div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ &radic;5776 = </span><span class=\"ans-val\">76</span></div>\n      </div>\n    </div>\n\n    <!-- (viii) 7921 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(viii)</b> 7921</div>\n      <div class=\"sol-box\">\n        <div class=\"div-calc\"><table class=\"div-table\"><tr><td class=\"div-side\"></td><td class=\"div-top\"><b>89</b></td></tr><tr><td class=\"div-side\">8</td><td class=\"div-main\"><span class=\"bar-pair\">79</span>&nbsp;<span class=\"bar-pair\">21</span></td></tr><tr><td class=\"div-side\">+ 8</td><td class=\"div-sub\">&minus; 64</td></tr><tr class=\"div-line\"><td class=\"div-side\">169</td><td class=\"div-main\">1521</td></tr><tr><td class=\"div-side\">+ 9</td><td class=\"div-sub\">&minus; 1521</td></tr><tr class=\"div-line\"><td class=\"div-side\">178</td><td class=\"div-main\">0</td></tr></table></div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ &radic;7921 = </span><span class=\"ans-val\">89</span></div>\n      </div>\n    </div>\n\n    <!-- (ix) 576 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(ix)</b> 576</div>\n      <div class=\"sol-box\">\n        <div class=\"div-calc\"><table class=\"div-table\"><tr><td class=\"div-side\"></td><td class=\"div-top\"><b>24</b></td></tr><tr><td class=\"div-side\">2</td><td class=\"div-main\"><span class=\"bar-pair\">5</span>&nbsp;<span class=\"bar-pair\">76</span></td></tr><tr><td class=\"div-side\">+ 2</td><td class=\"div-sub\">&minus; 4</td></tr><tr class=\"div-line\"><td class=\"div-side\">44</td><td class=\"div-main\">176</td></tr><tr><td class=\"div-side\">+ 4</td><td class=\"div-sub\">&minus; 176</td></tr><tr class=\"div-line\"><td class=\"div-side\">48</td><td class=\"div-main\">0</td></tr></table></div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ &radic;576 = </span><span class=\"ans-val\">24</span></div>\n      </div>\n    </div>\n\n    <!-- (x) 1024 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(x)</b> 1024</div>\n      <div class=\"sol-box\">\n        <div class=\"div-calc\"><table class=\"div-table\"><tr><td class=\"div-side\"></td><td class=\"div-top\"><b>32</b></td></tr><tr><td class=\"div-side\">3</td><td class=\"div-main\"><span class=\"bar-pair\">10</span>&nbsp;<span class=\"bar-pair\">24</span></td></tr><tr><td class=\"div-side\">+ 3</td><td class=\"div-sub\">&minus; 9</td></tr><tr class=\"div-line\"><td class=\"div-side\">62</td><td class=\"div-main\">124</td></tr><tr><td class=\"div-side\">+ 2</td><td class=\"div-sub\">&minus; 124</td></tr><tr class=\"div-line\"><td class=\"div-side\">64</td><td class=\"div-main\">0</td></tr></table></div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ &radic;1024 = </span><span class=\"ans-val\">32</span></div>\n      </div>\n    </div>\n\n    <!-- (xi) 3136 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(xi)</b> 3136</div>\n      <div class=\"sol-box\">\n        <div class=\"div-calc\"><table class=\"div-table\"><tr><td class=\"div-side\"></td><td class=\"div-top\"><b>56</b></td></tr><tr><td class=\"div-side\">5</td><td class=\"div-main\"><span class=\"bar-pair\">31</span>&nbsp;<span class=\"bar-pair\">36</span></td></tr><tr><td class=\"div-side\">+ 5</td><td class=\"div-sub\">&minus; 25</td></tr><tr class=\"div-line\"><td class=\"div-side\">106</td><td class=\"div-main\">636</td></tr><tr><td class=\"div-side\">+ 6</td><td class=\"div-sub\">&minus; 636</td></tr><tr class=\"div-line\"><td class=\"div-side\">112</td><td class=\"div-main\">0</td></tr></table></div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ &radic;3136 = </span><span class=\"ans-val\">56</span></div>\n      </div>\n    </div>\n\n    <!-- (xii) 900 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(xii)</b> 900</div>\n      <div class=\"sol-box\">\n        <div class=\"div-calc\"><table class=\"div-table\"><tr><td class=\"div-side\"></td><td class=\"div-top\"><b>30</b></td></tr><tr><td class=\"div-side\">3</td><td class=\"div-main\"><span class=\"bar-pair\">9</span>&nbsp;<span class=\"bar-pair\">00</span></td></tr><tr><td class=\"div-side\">+ 3</td><td class=\"div-sub\">&minus; 9</td></tr><tr class=\"div-line\"><td class=\"div-side\">60</td><td class=\"div-main\">00</td></tr><tr><td class=\"div-side\">+ 0</td><td class=\"div-sub\">&minus; 00</td></tr><tr class=\"div-line\"><td class=\"div-side\">60</td><td class=\"div-main\">0</td></tr></table></div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ &radic;900 = </span><span class=\"ans-val\">30</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 2 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 2:</div>\n    <div class=\"q-text\">Find the number of digits in the square root of each of the following numbers (without any calculation).</div>\n\n    <div class=\"sol-box\" style=\"margin-bottom: 16px;\">\n      <div style=\"color: #A5D6A7; font-weight: 700; font-size: 14.5px;\">💡 Formula:</div>\n      <div style=\"color: #FFFFFF; font-size: 14.5px; line-height: 1.6;\">\n        If a perfect square has <b>n</b> digits:<br/>\n        &bull; If n is even, digits in square root = <b><span class=\"frac\"><span class=\"num\">n</span><span class=\"den\">2</span></span></b><br/>\n        &bull; If n is odd, digits in square root = <b><span class=\"frac\"><span class=\"num\">n + 1</span><span class=\"den\">2</span></span></b> (or simply count the number of bars placed over pairs).\n      </div>\n    </div>\n\n    <!-- (i) 64 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(i)</b> 64</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">64 has 2 digits (n = 2, even). <br/>Digits in &radic;64 = <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">2</span></span> = <b>1</b>.</div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Digits in Square Root: </span><span class=\"ans-val\">1 digit</span></div>\n      </div>\n    </div>\n\n    <!-- (ii) 144 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(ii)</b> 144</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">144 has 3 digits (n = 3, odd). <br/>Digits in &radic;144 = <span class=\"frac\"><span class=\"num\">3 + 1</span><span class=\"den\">2</span></span> = <span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">2</span></span> = <b>2</b>.</div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Digits in Square Root: </span><span class=\"ans-val\">2 digits</span></div>\n      </div>\n    </div>\n\n    <!-- (iii) 4489 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(iii)</b> 4489</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">4489 has 4 digits (n = 4, even). <br/>Digits in &radic;4489 = <span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">2</span></span> = <b>2</b>.</div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Digits in Square Root: </span><span class=\"ans-val\">2 digits</span></div>\n      </div>\n    </div>\n\n    <!-- (iv) 27225 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(iv)</b> 27225</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">27225 has 5 digits (n = 5, odd). <br/>Digits in &radic;27225 = <span class=\"frac\"><span class=\"num\">5 + 1</span><span class=\"den\">2</span></span> = <span class=\"frac\"><span class=\"num\">6</span><span class=\"den\">2</span></span> = <b>3</b>.</div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Digits in Square Root: </span><span class=\"ans-val\">3 digits</span></div>\n      </div>\n    </div>\n\n    <!-- (v) 390625 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(v)</b> 390625</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">390625 has 6 digits (n = 6, even). <br/>Digits in &radic;390625 = <span class=\"frac\"><span class=\"num\">6</span><span class=\"den\">2</span></span> = <b>3</b>.</div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Digits in Square Root: </span><span class=\"ans-val\">3 digits</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 3 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 3:</div>\n    <div class=\"q-text\">Find the square root of the following decimal numbers.</div>\n\n    <!-- (i) 2.56 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(i)</b> 2.56</div>\n      <div class=\"sol-box\">\n        <div class=\"div-calc\"><table class=\"div-table\"><tr><td class=\"div-side\"></td><td class=\"div-top\"><b>1.6</b></td></tr><tr><td class=\"div-side\">1</td><td class=\"div-main\"><span class=\"bar-pair\">2</span>.<span class=\"bar-pair\">56</span></td></tr><tr><td class=\"div-side\">+ 1</td><td class=\"div-sub\">&minus; 1</td></tr><tr class=\"div-line\"><td class=\"div-side\">26</td><td class=\"div-main\">156</td></tr><tr><td class=\"div-side\">+ 6</td><td class=\"div-sub\">&minus; 156</td></tr><tr class=\"div-line\"><td class=\"div-side\">32</td><td class=\"div-main\">0</td></tr></table></div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ &radic;2.56 = </span><span class=\"ans-val\">1.6</span></div>\n      </div>\n    </div>\n\n    <!-- (ii) 7.29 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(ii)</b> 7.29</div>\n      <div class=\"sol-box\">\n        <div class=\"div-calc\"><table class=\"div-table\"><tr><td class=\"div-side\"></td><td class=\"div-top\"><b>2.7</b></td></tr><tr><td class=\"div-side\">2</td><td class=\"div-main\"><span class=\"bar-pair\">7</span>.<span class=\"bar-pair\">29</span></td></tr><tr><td class=\"div-side\">+ 2</td><td class=\"div-sub\">&minus; 4</td></tr><tr class=\"div-line\"><td class=\"div-side\">47</td><td class=\"div-main\">329</td></tr><tr><td class=\"div-side\">+ 7</td><td class=\"div-sub\">&minus; 329</td></tr><tr class=\"div-line\"><td class=\"div-side\">54</td><td class=\"div-main\">0</td></tr></table></div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ &radic;7.29 = </span><span class=\"ans-val\">2.7</span></div>\n      </div>\n    </div>\n\n    <!-- (iii) 51.84 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(iii)</b> 51.84</div>\n      <div class=\"sol-box\">\n        <div class=\"div-calc\"><table class=\"div-table\"><tr><td class=\"div-side\"></td><td class=\"div-top\"><b>7.2</b></td></tr><tr><td class=\"div-side\">7</td><td class=\"div-main\"><span class=\"bar-pair\">51</span>.<span class=\"bar-pair\">84</span></td></tr><tr><td class=\"div-side\">+ 7</td><td class=\"div-sub\">&minus; 49</td></tr><tr class=\"div-line\"><td class=\"div-side\">142</td><td class=\"div-main\">284</td></tr><tr><td class=\"div-side\">+ 2</td><td class=\"div-sub\">&minus; 284</td></tr><tr class=\"div-line\"><td class=\"div-side\">144</td><td class=\"div-main\">0</td></tr></table></div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ &radic;51.84 = </span><span class=\"ans-val\">7.2</span></div>\n      </div>\n    </div>\n\n    <!-- (iv) 42.25 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(iv)</b> 42.25</div>\n      <div class=\"sol-box\">\n        <div class=\"div-calc\"><table class=\"div-table\"><tr><td class=\"div-side\"></td><td class=\"div-top\"><b>6.5</b></td></tr><tr><td class=\"div-side\">6</td><td class=\"div-main\"><span class=\"bar-pair\">42</span>.<span class=\"bar-pair\">25</span></td></tr><tr><td class=\"div-side\">+ 6</td><td class=\"div-sub\">&minus; 36</td></tr><tr class=\"div-line\"><td class=\"div-side\">125</td><td class=\"div-main\">625</td></tr><tr><td class=\"div-side\">+ 5</td><td class=\"div-sub\">&minus; 625</td></tr><tr class=\"div-line\"><td class=\"div-side\">130</td><td class=\"div-main\">0</td></tr></table></div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ &radic;42.25 = </span><span class=\"ans-val\">6.5</span></div>\n      </div>\n    </div>\n\n    <!-- (v) 31.36 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(v)</b> 31.36</div>\n      <div class=\"sol-box\">\n        <div class=\"div-calc\"><table class=\"div-table\"><tr><td class=\"div-side\"></td><td class=\"div-top\"><b>5.6</b></td></tr><tr><td class=\"div-side\">5</td><td class=\"div-main\"><span class=\"bar-pair\">31</span>.<span class=\"bar-pair\">36</span></td></tr><tr><td class=\"div-side\">+ 5</td><td class=\"div-sub\">&minus; 25</td></tr><tr class=\"div-line\"><td class=\"div-side\">106</td><td class=\"div-main\">636</td></tr><tr><td class=\"div-side\">+ 6</td><td class=\"div-sub\">&minus; 636</td></tr><tr class=\"div-line\"><td class=\"div-side\">112</td><td class=\"div-main\">0</td></tr></table></div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ &radic;31.36 = </span><span class=\"ans-val\">5.6</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 4 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 4:</div>\n    <div class=\"q-text\">Find the least number which must be subtracted from each of the following numbers so as to get a perfect square. Also find the square root of the perfect square so obtained.</div>\n\n    <!-- (i) 402 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(i)</b> 402</div>\n      <div class=\"sol-box\">\n        <div class=\"div-calc\"><table class=\"div-table\"><tr><td class=\"div-side\"></td><td class=\"div-top\"><b>20</b></td></tr><tr><td class=\"div-side\">2</td><td class=\"div-main\"><span class=\"bar-pair\">4</span>&nbsp;<span class=\"bar-pair\">02</span></td></tr><tr><td class=\"div-side\">+ 2</td><td class=\"div-sub\">&minus; 4</td></tr><tr class=\"div-line\"><td class=\"div-side\">40</td><td class=\"div-main\">02</td></tr><tr><td class=\"div-side\">+ 0</td><td class=\"div-sub\">&minus; 00</td></tr><tr class=\"div-line\"><td class=\"div-side\">40</td><td class=\"div-main\"><b>2 (Remainder)</b></td></tr></table></div>\n        <div class=\"sol-step\">\n          <div>By division method, we get a remainder of <b>2</b>.</div>\n          <div>This shows that 20<sup>2</sup> is less than 402 by 2.</div>\n          <div>Therefore, to get a perfect square, we must subtract <b>2</b> from 402:</div>\n          <div style=\"padding-left: 12px;\">New perfect square = 402 &minus; 2 = 400</div>\n          <div style=\"padding-left: 12px;\">&radic;400 = 20</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Subtract: </span><span class=\"ans-val\">2 &nbsp;(New Number = 400, &radic;400 = 20)</span></div>\n      </div>\n    </div>\n\n    <!-- (ii) 1989 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(ii)</b> 1989</div>\n      <div class=\"sol-box\">\n        <div class=\"div-calc\"><table class=\"div-table\"><tr><td class=\"div-side\"></td><td class=\"div-top\"><b>44</b></td></tr><tr><td class=\"div-side\">4</td><td class=\"div-main\"><span class=\"bar-pair\">19</span>&nbsp;<span class=\"bar-pair\">89</span></td></tr><tr><td class=\"div-side\">+ 4</td><td class=\"div-sub\">&minus; 16</td></tr><tr class=\"div-line\"><td class=\"div-side\">84</td><td class=\"div-main\">389</td></tr><tr><td class=\"div-side\">+ 4</td><td class=\"div-sub\">&minus; 336</td></tr><tr class=\"div-line\"><td class=\"div-side\">88</td><td class=\"div-main\"><b>53 (Remainder)</b></td></tr></table></div>\n        <div class=\"sol-step\">\n          <div>By division method, the remainder is <b>53</b>.</div>\n          <div>Therefore, we must subtract <b>53</b> from 1989:</div>\n          <div style=\"padding-left: 12px;\">New perfect square = 1989 &minus; 53 = 1936</div>\n          <div style=\"padding-left: 12px;\">&radic;1936 = 44</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Subtract: </span><span class=\"ans-val\">53 &nbsp;(New Number = 1936, &radic;1936 = 44)</span></div>\n      </div>\n    </div>\n\n    <!-- (iii) 3250 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(iii)</b> 3250</div>\n      <div class=\"sol-box\">\n        <div class=\"div-calc\"><table class=\"div-table\"><tr><td class=\"div-side\"></td><td class=\"div-top\"><b>57</b></td></tr><tr><td class=\"div-side\">5</td><td class=\"div-main\"><span class=\"bar-pair\">32</span>&nbsp;<span class=\"bar-pair\">50</span></td></tr><tr><td class=\"div-side\">+ 5</td><td class=\"div-sub\">&minus; 25</td></tr><tr class=\"div-line\"><td class=\"div-side\">107</td><td class=\"div-main\">750</td></tr><tr><td class=\"div-side\">+ 7</td><td class=\"div-sub\">&minus; 749</td></tr><tr class=\"div-line\"><td class=\"div-side\">114</td><td class=\"div-main\"><b>1 (Remainder)</b></td></tr></table></div>\n        <div class=\"sol-step\">\n          <div>The remainder obtained is <b>1</b>.</div>\n          <div>Therefore, we must subtract <b>1</b> from 3250:</div>\n          <div style=\"padding-left: 12px;\">New perfect square = 3250 &minus; 1 = 3249</div>\n          <div style=\"padding-left: 12px;\">&radic;3249 = 57</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Subtract: </span><span class=\"ans-val\">1 &nbsp;(New Number = 3249, &radic;3249 = 57)</span></div>\n      </div>\n    </div>\n\n    <!-- (iv) 825 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(iv)</b> 825</div>\n      <div class=\"sol-box\">\n        <div class=\"div-calc\"><table class=\"div-table\"><tr><td class=\"div-side\"></td><td class=\"div-top\"><b>28</b></td></tr><tr><td class=\"div-side\">2</td><td class=\"div-main\"><span class=\"bar-pair\">8</span>&nbsp;<span class=\"bar-pair\">25</span></td></tr><tr><td class=\"div-side\">+ 2</td><td class=\"div-sub\">&minus; 4</td></tr><tr class=\"div-line\"><td class=\"div-side\">48</td><td class=\"div-main\">425</td></tr><tr><td class=\"div-side\">+ 8</td><td class=\"div-sub\">&minus; 384</td></tr><tr class=\"div-line\"><td class=\"div-side\">56</td><td class=\"div-main\"><b>41 (Remainder)</b></td></tr></table></div>\n        <div class=\"sol-step\">\n          <div>The remainder obtained is <b>41</b>.</div>\n          <div>Therefore, we must subtract <b>41</b> from 825:</div>\n          <div style=\"padding-left: 12px;\">New perfect square = 825 &minus; 41 = 784</div>\n          <div style=\"padding-left: 12px;\">&radic;784 = 28</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Subtract: </span><span class=\"ans-val\">41 &nbsp;(New Number = 784, &radic;784 = 28)</span></div>\n      </div>\n    </div>\n\n    <!-- (v) 4000 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(v)</b> 4000</div>\n      <div class=\"sol-box\">\n        <div class=\"div-calc\"><table class=\"div-table\"><tr><td class=\"div-side\"></td><td class=\"div-top\"><b>63</b></td></tr><tr><td class=\"div-side\">6</td><td class=\"div-main\"><span class=\"bar-pair\">40</span>&nbsp;<span class=\"bar-pair\">00</span></td></tr><tr><td class=\"div-side\">+ 6</td><td class=\"div-sub\">&minus; 36</td></tr><tr class=\"div-line\"><td class=\"div-side\">123</td><td class=\"div-main\">400</td></tr><tr><td class=\"div-side\">+ 3</td><td class=\"div-sub\">&minus; 369</td></tr><tr class=\"div-line\"><td class=\"div-side\">126</td><td class=\"div-main\"><b>31 (Remainder)</b></td></tr></table></div>\n        <div class=\"sol-step\">\n          <div>The remainder obtained is <b>31</b>.</div>\n          <div>Therefore, we must subtract <b>31</b> from 4000:</div>\n          <div style=\"padding-left: 12px;\">New perfect square = 4000 &minus; 31 = 3969</div>\n          <div style=\"padding-left: 12px;\">&radic;3969 = 63</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Subtract: </span><span class=\"ans-val\">31 &nbsp;(New Number = 3969, &radic;3969 = 63)</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 5 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 5:</div>\n    <div class=\"q-text\">Find the least number which must be added to each of the following numbers so as to get a perfect square. Also find the square root of the perfect square so obtained.</div>\n\n    <!-- (i) 525 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(i)</b> 525</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>By division method, 22<sup>2</sup> &lt; 525 &lt; 23<sup>2</sup>.</div>\n          <div>Next perfect square is 23<sup>2</sup> = 529.</div>\n          <div style=\"padding-left: 12px;\">Number to be added = 529 &minus; 525 = <b>4</b>.</div>\n          <div style=\"padding-left: 12px;\">New perfect square = 525 + 4 = 529</div>\n          <div style=\"padding-left: 12px;\">&radic;529 = 23</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Add: </span><span class=\"ans-val\">4 &nbsp;(New Number = 529, &radic;529 = 23)</span></div>\n      </div>\n    </div>\n\n    <!-- (ii) 1750 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(ii)</b> 1750</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>By division method, 41<sup>2</sup> &lt; 1750 &lt; 42<sup>2</sup>.</div>\n          <div>Next perfect square is 42<sup>2</sup> = 1764.</div>\n          <div style=\"padding-left: 12px;\">Number to be added = 1764 &minus; 1750 = <b>14</b>.</div>\n          <div style=\"padding-left: 12px;\">New perfect square = 1750 + 14 = 1764</div>\n          <div style=\"padding-left: 12px;\">&radic;1764 = 42</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Add: </span><span class=\"ans-val\">14 &nbsp;(New Number = 1764, &radic;1764 = 42)</span></div>\n      </div>\n    </div>\n\n    <!-- (iii) 252 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(iii)</b> 252</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>By division method, 15<sup>2</sup> &lt; 252 &lt; 16<sup>2</sup>.</div>\n          <div>Next perfect square is 16<sup>2</sup> = 256.</div>\n          <div style=\"padding-left: 12px;\">Number to be added = 256 &minus; 252 = <b>4</b>.</div>\n          <div style=\"padding-left: 12px;\">New perfect square = 252 + 4 = 256</div>\n          <div style=\"padding-left: 12px;\">&radic;256 = 16</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Add: </span><span class=\"ans-val\">4 &nbsp;(New Number = 256, &radic;256 = 16)</span></div>\n      </div>\n    </div>\n\n    <!-- (iv) 1825 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(iv)</b> 1825</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>By division method, 42<sup>2</sup> &lt; 1825 &lt; 43<sup>2</sup>.</div>\n          <div>Next perfect square is 43<sup>2</sup> = 1849.</div>\n          <div style=\"padding-left: 12px;\">Number to be added = 1849 &minus; 1825 = <b>24</b>.</div>\n          <div style=\"padding-left: 12px;\">New perfect square = 1825 + 24 = 1849</div>\n          <div style=\"padding-left: 12px;\">&radic;1849 = 43</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Add: </span><span class=\"ans-val\">24 &nbsp;(New Number = 1849, &radic;1849 = 43)</span></div>\n      </div>\n    </div>\n\n    <!-- (v) 6412 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">(v)</b> 6412</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>By division method, 80<sup>2</sup> &lt; 6412 &lt; 81<sup>2</sup>.</div>\n          <div>Next perfect square is 81<sup>2</sup> = 6561.</div>\n          <div style=\"padding-left: 12px;\">Number to be added = 6561 &minus; 6412 = <b>149</b>.</div>\n          <div style=\"padding-left: 12px;\">New perfect square = 6412 + 149 = 6561</div>\n          <div style=\"padding-left: 12px;\">&radic;6561 = 81</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Add: </span><span class=\"ans-val\">149 &nbsp;(New Number = 6561, &radic;6561 = 81)</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 6 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 6:</div>\n    <div class=\"q-text\">Find the length of the side of a square whose area is 441 m<sup>2</sup>.</div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Solution:</div>\n      <div class=\"sol-step\">\n        <div>Let the side of the square = <b>s</b> meters.</div>\n        <div style=\"padding-left: 12px;\">Area of square = s<sup>2</sup> = 441 m<sup>2</sup></div>\n        <div style=\"padding-left: 12px;\">&rArr; s = &radic;441</div>\n        <div>By prime factorisation or division: 441 = 21 &times; 21.</div>\n        <div style=\"padding-left: 12px;\">&rArr; s = 21 m</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Side of the Square: </span>\n        <span class=\"ans-val\">21 m</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 7 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 7:</div>\n    <div class=\"q-text\">In a right triangle ABC, &ang;B = 90&deg;.</div>\n\n    <div class=\"sol-box\" style=\"margin-bottom: 16px;\">\n      <div style=\"color: #A5D6A7; font-weight: 700; font-size: 14.5px;\">💡 Pythagoras Theorem:</div>\n      <div style=\"color: #FFFFFF; font-size: 14.5px; line-height: 1.6;\">\n        In right triangle ABC with &ang;B = 90&deg;: &nbsp;<b>AC<sup>2</sup> = AB<sup>2</sup> + BC<sup>2</sup></b>\n      </div>\n    </div>\n\n    <!-- (a) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">a.</b> If AB = 6 cm, BC = 8 cm, find AC</div>\n      \n<div class=\"diagram-wrapper\">\n  <svg viewBox=\"0 0 260 210\" width=\"100%\" height=\"auto\">\n    <polygon points=\"45,35 45,165 215,165\" fill=\"#E8F5E9\" stroke=\"#4CAF50\" stroke-width=\"2.5\" />\n    <rect x=\"45\" y=\"145\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"#2E7D32\" stroke-width=\"2\" />\n    <text x=\"32\" y=\"32\" font-size=\"16\" font-weight=\"bold\" fill=\"#1B5E20\">A</text>\n    <text x=\"25\" y=\"175\" font-size=\"16\" font-weight=\"bold\" fill=\"#1B5E20\">B (90°)</text>\n    <text x=\"225\" y=\"172\" font-size=\"16\" font-weight=\"bold\" fill=\"#1B5E20\">C</text>\n    <text x=\"12\" y=\"105\" font-size=\"14\" font-weight=\"600\" fill=\"#2E7D32\">6 cm</text>\n    <text x=\"115\" y=\"190\" font-size=\"14\" font-weight=\"600\" fill=\"#2E7D32\">8 cm</text>\n    <text x=\"145\" y=\"95\" font-size=\"15\" font-weight=\"bold\" fill=\"#D32F2F\">AC = ?</text>\n  </svg>\n  <div style=\"font-size: 13.5px; color: #475569; font-weight: 600; margin-top: 6px;\">Fig: Right Triangle ABC (a)</div>\n</div>\n\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">💡 Solution:</div>\n        <div class=\"sol-step\">\n          <div>By Pythagoras theorem in &Delta;ABC:</div>\n          <div style=\"padding-left: 12px;\">AC<sup>2</sup> = AB<sup>2</sup> + BC<sup>2</sup></div>\n          <div style=\"padding-left: 12px;\">AC<sup>2</sup> = 6<sup>2</sup> + 8<sup>2</sup></div>\n          <div style=\"padding-left: 12px;\">AC<sup>2</sup> = 36 + 64 = 100</div>\n          <div style=\"padding-left: 12px;\">&rArr; AC = &radic;100 = 10 cm</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Length of AC: </span><span class=\"ans-val\">10 cm</span></div>\n      </div>\n    </div>\n\n    <!-- (b) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #4CAF50;\">b.</b> If AC = 13 cm, BC = 5 cm, find AB</div>\n      \n<div class=\"diagram-wrapper\">\n  <svg viewBox=\"0 0 260 210\" width=\"100%\" height=\"auto\">\n    <polygon points=\"45,35 45,165 215,165\" fill=\"#E8F5E9\" stroke=\"#4CAF50\" stroke-width=\"2.5\" />\n    <rect x=\"45\" y=\"145\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"#2E7D32\" stroke-width=\"2\" />\n    <text x=\"32\" y=\"32\" font-size=\"16\" font-weight=\"bold\" fill=\"#1B5E20\">A</text>\n    <text x=\"25\" y=\"175\" font-size=\"16\" font-weight=\"bold\" fill=\"#1B5E20\">B (90°)</text>\n    <text x=\"225\" y=\"172\" font-size=\"16\" font-weight=\"bold\" fill=\"#1B5E20\">C</text>\n    <text x=\"12\" y=\"105\" font-size=\"15\" font-weight=\"bold\" fill=\"#D32F2F\">AB = ?</text>\n    <text x=\"115\" y=\"190\" font-size=\"14\" font-weight=\"600\" fill=\"#2E7D32\">5 cm</text>\n    <text x=\"140\" y=\"95\" font-size=\"14\" font-weight=\"bold\" fill=\"#2E7D32\">13 cm</text>\n  </svg>\n  <div style=\"font-size: 13.5px; color: #475569; font-weight: 600; margin-top: 6px;\">Fig: Right Triangle ABC (b)</div>\n</div>\n\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">💡 Solution:</div>\n        <div class=\"sol-step\">\n          <div>By Pythagoras theorem in &Delta;ABC:</div>\n          <div style=\"padding-left: 12px;\">AC<sup>2</sup> = AB<sup>2</sup> + BC<sup>2</sup></div>\n          <div style=\"padding-left: 12px;\">13<sup>2</sup> = AB<sup>2</sup> + 5<sup>2</sup></div>\n          <div style=\"padding-left: 12px;\">169 = AB<sup>2</sup> + 25</div>\n          <div style=\"padding-left: 12px;\">&rArr; AB<sup>2</sup> = 169 &minus; 25 = 144</div>\n          <div style=\"padding-left: 12px;\">&rArr; AB = &radic;144 = 12 cm</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Length of AB: </span><span class=\"ans-val\">12 cm</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 8 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 8:</div>\n    <div class=\"q-text\">\n      A gardener has 1000 plants. He wants to plant these in such a way that the number of rows and the number of columns remain same. Find the minimum number of plants he needs more for this.\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Solution:</div>\n      <div class=\"sol-step\">\n        <div>Let the number of rows and columns be <b>x</b>.</div>\n        <div style=\"padding-left: 12px;\">Total number of plants required = x &times; x = x<sup>2</sup>.</div>\n        <div>Here, the gardener currently has 1000 plants.</div>\n        <div>Using division method on 1000:</div>\n        <div style=\"padding-left: 12px;\">31<sup>2</sup> = 961 &lt; 1000 &lt; 32<sup>2</sup> = 1024</div>\n        <div style=\"margin-top: 6px;\">The next square number is 32<sup>2</sup> = 1024.</div>\n        <div style=\"padding-left: 12px;\">Number of plants needed more = 1024 &minus; 1000 = <b>24</b>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Minimum Plants Needed More: </span>\n        <span class=\"ans-val\">24 plants</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 9 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 9:</div>\n    <div class=\"q-text\">\n      There are 500 children in a school. For a P.T. drill they have to stand in such a manner that the number of rows is equal to number of columns. How many children would be left out in this arrangement.\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Solution:</div>\n      <div class=\"sol-step\">\n        <div>Let the number of rows and columns be <b>x</b>.</div>\n        <div style=\"padding-left: 12px;\">Children standing in drill = x &times; x = x<sup>2</sup>.</div>\n        <div>Total children available = 500.</div>\n        <div>Finding square root of 500 by division method:</div>\n        <div style=\"padding-left: 12px;\">22<sup>2</sup> = 484 &le; 500</div>\n        <div style=\"padding-left: 12px;\">Remainder = 500 &minus; 484 = <b>16</b>.</div>\n        <div style=\"margin-top: 6px;\">Thus, 22 rows with 22 students each can be formed, leaving <b>16 children</b> out.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Children Left Out: </span>\n        <span class=\"ans-val\">16 children</span>\n      </div>\n    </div>\n  </div>\n\n</div>\n",
   },
 };

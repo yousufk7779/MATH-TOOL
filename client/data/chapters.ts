@@ -686,8 +686,8 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
       {
         id: "c8-math-6",
         number: 6,
-        name: "Cubes and Cube Roots",
-        color: "#F06292",
+        name: "Squares and Square Roots",
+        color: "#4CAF50",
       },
       {
         id: "c8-math-7",
