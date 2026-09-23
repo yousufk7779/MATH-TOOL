@@ -1,466 +1,311 @@
 import { ChapterContent } from "../types";
 
-const ex71Content = `
-  <style>
-    .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
-    .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
-    .frac .den { padding: 0 2px; }
-    .ex-container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
-    .q-card { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 15px; margin-bottom: 25px; }
-    .q-text { color: #FB8C00; font-weight: 600; margin-bottom: 12px; text-align: justify; }
-    .q-subtext { color: #e0e0e0; margin-bottom: 5px; margin-left: 10px; }
-    .sol-box { border-left: 3px solid #FB8C00; padding-left: 15px; margin-top: 15px; background: rgba(251, 140, 0, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; }
-    .ans-highlight { color: #FB8C00; font-weight: 700; }
-    .step-label { color: #FFB74D; font-weight: 600; margin-right: 5px; }
-    .sol-step { margin-bottom: 8px; }
-      .q-text, .q-subtext, .sol-step, .sol-box { font-size: 16px; }
-  </style>
-  <div class="ex-container">
-    <div class="q-card">
-      <div class="q-text">1. Find the ratio of the following.</div>
-      <div class="q-subtext">(a) Speed of a cycle 15 km per hour to the speed of scooter 30 km per hour.</div>
-      <div class="q-subtext">(b) 5 m to 10 km</div>
-      <div class="q-subtext">(c) 50 paise to Rs 5</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step"><span class="step-label">(a)</span> Ratio of speed of cycle to scooter = 15 <span class='frac'><span class='num'>km</span><span class='den'>h</span></span> : 30 <span class='frac'><span class='num'>km</span><span class='den'>h</span></span></div>
-        <div class="sol-step">= <span class='frac'><span class='num'>15</span><span class='den'>30</span></span> = <span class='frac'><span class='num'>1</span><span class='den'>2</span></span> = <span class="ans-highlight">1 : 2</span></div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(b)</span> Since 1 km = 1000 m, 10 km = 10 × 1000 = 10000 m.</div>
-        <div class="sol-step">Ratio = 5 m : 10000 m</div>
-        <div class="sol-step">= <span class='frac'><span class='num'>5</span><span class='den'>10000</span></span> = <span class='frac'><span class='num'>1</span><span class='den'>2000</span></span> = <span class="ans-highlight">1 : 2000</span></div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(c)</span> Since Rs 1 = 100 paise, Rs 5 = 5 × 100 = 500 paise.</div>
-        <div class="sol-step">Ratio = 50 paise : 500 paise</div>
-        <div class="sol-step">= <span class='frac'><span class='num'>50</span><span class='den'>500</span></span> = <span class='frac'><span class='num'>1</span><span class='den'>10</span></span> = <span class="ans-highlight">1 : 10</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">2. Convert the following ratios to percentages.</div>
-      <div class="q-subtext">(a) 3 : 4</div>
-      <div class="q-subtext">(b) 2 : 3</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step"><span class="step-label">(a)</span> 3 : 4 = <span class='frac'><span class='num'>3</span><span class='den'>4</span></span></div>
-        <div class="sol-step">Percentage = (<span class='frac'><span class='num'>3</span><span class='den'>4</span></span>) × 100% = 3 × 25% = <span class="ans-highlight">75%</span></div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(b)</span> 2 : 3 = <span class='frac'><span class='num'>2</span><span class='den'>3</span></span></div>
-        <div class="sol-step">Percentage = (<span class='frac'><span class='num'>2</span><span class='den'>3</span></span>) × 100% = <span class='frac'><span class='num'>200</span><span class='den'>3</span></span> % = <span class="ans-highlight">66 <span class='frac'><span class='num'>2</span><span class='den'>3</span></span> %</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">3. 72% of 25 students are good in mathematics. How many are not good in mathematics?</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Percentage of students good in mathematics = 72%</div>
-        <div class="sol-step">Percentage of students not good in mathematics = 100% - 72% = 28%</div>
-        <div class="sol-step">Number of students not good = 28% of 25</div>
-        <div class="sol-step">= (<span class='frac'><span class='num'>28</span><span class='den'>100</span></span>) × 25 = <span class='frac'><span class='num'>28</span><span class='den'>4</span></span> = <span class="ans-highlight">7</span></div>
-        <div class="sol-step">Therefore, 7 students are not good in mathematics.</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">4. A football team won 10 matches out of the total number of matches they played. If their win percentage was 40, then how many matches did they play in all?</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Let the total number of matches played be x.</div>
-        <div class="sol-step">Win percentage = 40%</div>
-        <div class="sol-step">Number of matches won = 40% of x = 10</div>
-        <div class="sol-step">=> (<span class='frac'><span class='num'>40</span><span class='den'>100</span></span>) × x = 10</div>
-        <div class="sol-step">=> x = (10 × 100) / 40 = <span class='frac'><span class='num'>100</span><span class='den'>4</span></span></div>
-        <div class="sol-step">=> x = <span class="ans-highlight">25</span></div>
-        <div class="sol-step">Therefore, they played 25 matches in all.</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">5. If Insha had Rs 600 left after spending 75% of her money, how much did she have in the beginning?</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Let the total money Insha had be Rs x.</div>
-        <div class="sol-step">Percentage of money spent = 75%</div>
-        <div class="sol-step">Percentage of money left = 100% - 75% = 25%</div>
-        <div class="sol-step">Money left = 25% of x = Rs 600</div>
-        <div class="sol-step">=> (<span class='frac'><span class='num'>25</span><span class='den'>100</span></span>) × x = 600</div>
-        <div class="sol-step">=> x = (600 × 100) / 25 = 600 × 4</div>
-        <div class="sol-step">=> x = <span class="ans-highlight">2400</span></div>
-        <div class="sol-step">Therefore, she had Rs 2400 in the beginning.</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">6. If 60% people in a city like cricket, 30% like football and the remaining like other games, then what per cent of the people like other games? If the total number of people are 50 lakh, find the exact number who like each type of game.</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Percentage of people who like cricket = 60%</div>
-        <div class="sol-step">Percentage of people who like football = 30%</div>
-        <div class="sol-step">Percentage of people who like other games = 100% - (60% + 30%) = 100% - 90% = <span class="ans-highlight">10%</span></div>
-        <br/>
-        <div class="sol-step">Total number of people = 50 lakh</div>
-        <div class="sol-step">Number of people who like cricket = 60% of 50 lakh</div>
-        <div class="sol-step">= (<span class='frac'><span class='num'>60</span><span class='den'>100</span></span>) × 50 = <span class="ans-highlight">30 lakh</span></div>
-        <br/>
-        <div class="sol-step">Number of people who like football = 30% of 50 lakh</div>
-        <div class="sol-step">= (<span class='frac'><span class='num'>30</span><span class='den'>100</span></span>) × 50 = <span class="ans-highlight">15 lakh</span></div>
-        <br/>
-        <div class="sol-step">Number of people who like other games = 10% of 50 lakh</div>
-        <div class="sol-step">= (<span class='frac'><span class='num'>10</span><span class='den'>100</span></span>) × 50 = <span class="ans-highlight">5 lakh</span></div>
-      </div>
-    </div>
-  </div>
-`;
-
-const ex72Content = `
-  <style>
-    .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
-    .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
-    .frac .den { padding: 0 2px; }
-    .ex-container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
-    .q-card { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 15px; margin-bottom: 25px; }
-    .q-text { color: #FB8C00; font-weight: 600; margin-bottom: 12px; text-align: justify; }
-    .q-subtext { color: #e0e0e0; margin-bottom: 5px; margin-left: 10px; }
-    .sol-box { border-left: 3px solid #FB8C00; padding-left: 15px; margin-top: 15px; background: rgba(251, 140, 0, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; }
-    .ans-highlight { color: #FB8C00; font-weight: 700; }
-    .step-label { color: #FFB74D; font-weight: 600; margin-right: 5px; }
-    .sol-step { margin-bottom: 8px; }
-      .q-text, .q-subtext, .sol-step, .sol-box { font-size: 16px; }
-  </style>
-  <div class="ex-container">
-    <div class="q-card">
-      <div class="q-text">1. The price of a TV is Rs 13,000. The sales tax charged on it is at the rate of 12%. Find the amount that Faheem will have to pay if he buys it.</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Price of TV = Rs 13,000</div>
-        <div class="sol-step">Sales tax rate = 12%</div>
-        <div class="sol-step">Sales tax amount = 12% of 13000</div>
-        <div class="sol-step">= (<span class='frac'><span class='num'>12</span><span class='den'>100</span></span>) × 13000 = 12 × 130 = Rs 1560</div>
-        <div class="sol-step">Total amount to be paid = Price + Sales tax</div>
-        <div class="sol-step">= 13000 + 1560 = <span class="ans-highlight">Rs 14,560</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">2. Akram bought a pair of skates at a sale where the discount given was 20%. If the amount he pays is Rs 1,600, find the marked price.</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Let the marked price be Rs x.</div>
-        <div class="sol-step">Discount given = 20%</div>
-        <div class="sol-step">Amount paid = Marked price - Discount = (100% - 20%) of x = 80% of x</div>
-        <div class="sol-step">80% of x = Rs 1600</div>
-        <div class="sol-step">=> (<span class='frac'><span class='num'>80</span><span class='den'>100</span></span>) × x = 1600</div>
-        <div class="sol-step">=> x = (1600 × 100) / 80 = 20 × 100</div>
-        <div class="sol-step">=> x = <span class="ans-highlight">Rs 2000</span></div>
-        <div class="sol-step">Therefore, the marked price is Rs 2000.</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">3. I purchased a hair-dryer for Rs 5,400 including 8% VAT. Find the price before VAT was added.</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Let the price before VAT be Rs x.</div>
-        <div class="sol-step">VAT rate = 8%</div>
-        <div class="sol-step">Price including VAT = Original price + VAT = (100% + 8%) of x = 108% of x</div>
-        <div class="sol-step">108% of x = Rs 5400</div>
-        <div class="sol-step">=> (<span class='frac'><span class='num'>108</span><span class='den'>100</span></span>) × x = 5400</div>
-        <div class="sol-step">=> x = (5400 × 100) / 108 = 50 × 100</div>
-        <div class="sol-step">=> x = <span class="ans-highlight">Rs 5000</span></div>
-        <div class="sol-step">Therefore, the price before VAT was added is Rs 5000.</div>
-      </div>
-    </div>
-  </div>
-`;
-
-const ex73Content = `
-  <style>
-    .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
-    .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
-    .frac .den { padding: 0 2px; }
-    .ex-container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
-    .q-card { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 15px; margin-bottom: 25px; }
-    .q-text { color: #FB8C00; font-weight: 600; margin-bottom: 12px; text-align: justify; }
-    .q-subtext { color: #e0e0e0; margin-bottom: 5px; margin-left: 10px; }
-    .sol-box { border-left: 3px solid #FB8C00; padding-left: 15px; margin-top: 15px; background: rgba(251, 140, 0, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; }
-    .ans-highlight { color: #FB8C00; font-weight: 700; }
-    .step-label { color: #FFB74D; font-weight: 600; margin-right: 5px; }
-    .sol-step { margin-bottom: 8px; }
-      .q-text, .q-subtext, .sol-step, .sol-box { font-size: 16px; }
-  </style>
-  <div class="ex-container">
-    <div class="q-card">
-      <div class="q-text">1. The population of a place increased to 54,000 in 2003 at a rate of 5% per annum</div>
-      <div class="q-subtext">(i) find the population in 2001.</div>
-      <div class="q-subtext">(ii) what would be its population in 2005?</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Using formula A = P(1 + <span class='frac'><span class='num'>R</span><span class='den'>100</span></span>)ⁿ</div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(i) Population in 2001:</span></div>
-        <div class="sol-step">A (Population in 2003) = 54,000. R = 5%. n = 2 years.</div>
-        <div class="sol-step">54000 = P(1 + <span class='frac'><span class='num'>5</span><span class='den'>100</span></span>)²</div>
-        <div class="sol-step">=> 54000 = P(<span class='frac'><span class='num'>105</span><span class='den'>100</span></span>)² = P(<span class='frac'><span class='num'>21</span><span class='den'>20</span></span>)²</div>
-        <div class="sol-step">=> P = (54000 × 400) / 441</div>
-        <div class="sol-step">=> P ≈ 48979.59</div>
-        <div class="sol-step">Approximate population in 2001 is <span class="ans-highlight">48,980</span>.</div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(ii) Population in 2005:</span></div>
-        <div class="sol-step">P (Population in 2003) = 54,000. R = 5%. n = 2 years.</div>
-        <div class="sol-step">A = 54000(1 + <span class='frac'><span class='num'>5</span><span class='den'>100</span></span>)²</div>
-        <div class="sol-step">=> A = 54000 × (<span class='frac'><span class='num'>21</span><span class='den'>20</span></span>) × (<span class='frac'><span class='num'>21</span><span class='den'>20</span></span>)</div>
-        <div class="sol-step">=> A = 135 × 441 = <span class="ans-highlight">59,535</span></div>
-        <div class="sol-step">Therefore, population in 2005 will be 59,535.</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">2. In a Laboratory, the count of bacteria in a certain experiment was increasing at the rate of 2.5% per hour. Find the bacteria at the end of 2 hours if the count was initially 5,06,000.</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Initial count (P) = 5,06,000</div>
-        <div class="sol-step">Rate of increase (R) = 2.5% per hour</div>
-        <div class="sol-step">Time (n) = 2 hours</div>
-        <div class="sol-step">Count after 2 hours (A) = P(1 + <span class='frac'><span class='num'>R</span><span class='den'>100</span></span>)ⁿ</div>
-        <div class="sol-step">= 506000(1 + 2.<span class='frac'><span class='num'>5</span><span class='den'>100</span></span>)² = 506000(1 + <span class='frac'><span class='num'>1</span><span class='den'>40</span></span>)²</div>
-        <div class="sol-step">= 506000(<span class='frac'><span class='num'>41</span><span class='den'>40</span></span>)² = 506000 × (<span class='frac'><span class='num'>1681</span><span class='den'>1600</span></span>)</div>
-        <div class="sol-step">= 316.25 × 1681 ≈ 531616.25</div>
-        <div class="sol-step">Approximate bacteria count is <span class="ans-highlight">5,31,616</span>.</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">3. A scooter was bought at Rs 42,000. Its value depreciated at the rate of 8% per annum. Find its value after one year.</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Initial value = Rs 42,000</div>
-        <div class="sol-step">Depreciation rate = 8% per annum</div>
-        <div class="sol-step">Depreciation amount = 8% of 42000</div>
-        <div class="sol-step">= (<span class='frac'><span class='num'>8</span><span class='den'>100</span></span>) × 42000 = 8 × 420 = Rs 3360</div>
-        <div class="sol-step">Value after one year = Initial value - Depreciation amount</div>
-        <div class="sol-step">= 42000 - 3360 = <span class="ans-highlight">Rs 38,640</span></div>
-      </div>
-    </div>
-  </div>
-`;
-
 export const c8Math7: ChapterContent = {
   id: "c8-math-7",
   number: 7,
-  title: "Comparing Quantities",
+  title: "Cubes and Cube Roots",
   introduction:
-    "In this chapter, we will learn about ratios, percentages, and their applications in real-life scenarios like discounts, taxes, and compound interest.",
-  mcqs: [
+    "Cubes and Cube Roots are central concepts in arithmetic, geometry, and 3D spatial mensuration. In this chapter, we explore the properties of perfect cubes, unit digit patterns, Hardy-Ramanujan numbers, prime factorisation triplets, finding smallest multipliers or divisors to make cubes, and extracting cube roots via Prime Factorisation and the Estimation method.",
+  definitions: [
     {
-      id: "m1",
-      question: "The ratio 3:4 expressed as a percentage is:",
-      options: ["40%", "60%", "75%", "80%"],
-      correctAnswer: "75%",
+      term: "Cube Number (Perfect Cube)",
+      description:
+        "A natural number m that can be expressed as n<sup>3</sup>, where n is also a natural number (e.g., 1, 8, 27, 64, 125, 216, 343, 512, 729, 1000...).",
     },
     {
-      id: "m2",
-      question:
-        "If 50% of students like apples out of 40 students, how many like apples?",
-      options: ["10", "20", "30", "40"],
-      correctAnswer: "20",
+      term: "Cube Root (&#8731;)",
+      description:
+        "The inverse operation of finding a cube. If a<sup>3</sup> = b, then the cube root of b is a, denoted as &#8731;b = a.",
     },
     {
-      id: "m3",
-      question:
-        "The price of an item is Rs 100. If 10% tax is added, what is the final price?",
-      options: ["Rs 90", "Rs 100", "Rs 110", "Rs 120"],
-      correctAnswer: "Rs 110",
+      term: "Hardy-Ramanujan Number (1729)",
+      description:
+        "The smallest natural number that can be expressed as the sum of two cubes in two different ways: 1729 = 12<sup>3</sup> + 1<sup>3</sup> = 10<sup>3</sup> + 9<sup>3</sup>.",
     },
     {
-      id: "m4",
-      question: "Discount is always calculated on which price?",
-      options: ["Selling Price", "Cost Price", "Marked Price", "None of these"],
-      correctAnswer: "Marked Price",
-    },
-    {
-      id: "m5",
-      question: "What is 20% of 50?",
-      options: ["10", "20", "25", "5"],
-      correctAnswer: "10",
-    },
-    {
-      id: "m6",
-      question:
-        "If an item of Rs 500 is sold at 10% discount, the selling price is:",
-      options: ["Rs 400", "Rs 450", "Rs 490", "Rs 550"],
-      correctAnswer: "Rs 450",
-    },
-    {
-      id: "m7",
-      question: "Which formula calculates compound amount?",
-      options: [
-        "A = P(1+<span class='frac'><span class='num'>R</span><span class='den'>100</span></span>)",
-        "A = P(1-<span class='frac'><span class='num'>R</span><span class='den'>100</span></span>)",
-        "A = P(1+<span class='frac'><span class='num'>R</span><span class='den'>100</span></span>)ⁿ",
-        "A = P×R×<span class='frac'><span class='num'>T</span><span class='den'>100</span></span>",
-      ],
-      correctAnswer:
-        "A = P(1+<span class='frac'><span class='num'>R</span><span class='den'>100</span></span>)ⁿ",
-    },
-    {
-      id: "m8",
-      question: "1 km is equal to how many meters?",
-      options: ["10", "100", "1000", "10000"],
-      correctAnswer: "1000",
-    },
-    {
-      id: "m9",
-      question: "Depreciation means:",
-      options: [
-        "Increase in value",
-        "Decrease in value",
-        "No change in value",
-        "Double the value",
-      ],
-      correctAnswer: "Decrease in value",
-    },
-    {
-      id: "m10",
-      question: "The ratio of 50 paise to Rs 1 is:",
-      options: ["1:2", "2:1", "1:1", "50:1"],
-      correctAnswer: "1:2",
+      term: "Prime Factor Triplet Rule",
+      description:
+        "In the prime factorisation of any perfect cube, each prime factor appears in triplets of three identical factors: a<sup>3</sup> = (p &times; p &times; p) &times; (q &times; q &times; q)...",
     },
   ],
-  summary: [
-    "A ratio is a comparison of two quantities using division.",
-    "Percentages are ratios expressed as a fraction of 100.",
-    "Discount is a reduction given on the Marked Price (MP) of an article.",
-    "Sales tax and Value Added Tax (VAT) are charged on the sale of an item and are added to the bill amount.",
-    "Compound interest calculates interest on the initial principal and also on the accumulated interest of previous periods.",
+  keyPoints: [
+    "Cubes of even numbers are always even, and cubes of odd numbers are always odd.",
+    "A perfect cube ending in zeroes must end in a multiple of 3 zeroes (3, 6, 9 zeroes...).",
+    "Numbers ending in 0, 1, 4, 5, 6, 9 have cubes ending in the exact same unit digit.",
+    "Numbers ending in 2 have cubes ending in 8 (and vice-versa).",
+    "Numbers ending in 3 have cubes ending in 7 (and vice-versa).",
+    "Every cube n<sup>3</sup> is equal to the sum of n consecutive odd natural numbers.",
+    "The cube of a 2-digit number contains between 4 and 6 digits.",
+    "Cube roots of large perfect cubes can be quickly found using the two-group Estimation Method.",
   ],
+  formulas: [
+    {
+      name: "Volume of a Cube",
+      formula: "Volume = side<sup>3</sup> = a<sup>3</sup>",
+    },
+    {
+      name: "Cube Root Definition",
+      formula: "If a<sup>3</sup> = b &rArr; &#8731;b = a",
+    },
+    {
+      name: "Cube of Fraction",
+      formula: "(a / b)<sup>3</sup> = a<sup>3</sup> / b<sup>3</sup>",
+    },
+    {
+      name: "Cube Root of Product",
+      formula: "&#8731;(a &times; b) = &#8731;a &times; &#8731;b",
+    },
+  ],
+  crux: [],
   exercises: [
-    { id: "ex7-1", name: "Exercise 7.1", questions: [] },
-    { id: "ex7-2", name: "Exercise 7.2", questions: [] },
-    { id: "ex7-3", name: "Exercise 7.3", questions: [] },
+    {
+      id: "ex7-1",
+      name: "Exercise 7.1",
+      questions: [
+        {
+          id: "c8-m7-ex7-1-q1",
+          number: "1",
+          question: "Which of the following numbers are not perfect cubes? (i) 216 (ii) 128 (iii) 1000 (iv) 100 (v) 46656",
+          solution: ["See full prime factorisation ladder and triplet analysis in the interactive Web View."],
+        },
+        {
+          id: "c8-m7-ex7-1-q2",
+          number: "2",
+          question: "Find the smallest number by which each of the following numbers must be multiplied to obtain a perfect cube: (i) 243 (ii) 256 (iii) 72 (iv) 675 (v) 100",
+          solution: ["See smallest multiplier ladders and solutions in the interactive Web View."],
+        },
+        {
+          id: "c8-m7-ex7-1-q3",
+          number: "3",
+          question: "Find the smallest number by which each of the following numbers must be divided to obtain a perfect cube: (i) 81 (ii) 128 (iii) 135 (iv) 192 (v) 704",
+          solution: ["See smallest divisor ladders and solutions in the interactive Web View."],
+        },
+        {
+          id: "c8-m7-ex7-1-q4",
+          number: "4",
+          question: "Parikshit makes a cuboid of plasticine with sides 5 cm, 2 cm, and 5 cm. How many such cuboids will he need to form a cube?",
+          solution: ["See volume and prime factor triplet grouping in the interactive Web View."],
+        },
+      ],
+    },
+    {
+      id: "ex7-2",
+      name: "Exercise 7.2",
+      questions: [
+        {
+          id: "c8-m7-ex7-2-q1",
+          number: "1",
+          question: "Find the cube root of each of the following numbers by prime factorisation method: (i) 64 (ii) 512 (iii) 10648 (iv) 27000 (v) 15625 (vi) 13824 (vii) 110592 (viii) 46656 (ix) 175616 (x) 91125",
+          solution: ["See complete prime factor ladders, grouping steps and roots in the interactive Web View."],
+        },
+        {
+          id: "c8-m7-ex7-2-q2",
+          number: "2",
+          question: "State true or false: (i) Cube of any odd number is even. (ii) A perfect cube does not end with two zeros. (iii) If square of a number ends with 5, then its cube ends with 25. (iv) There is no perfect cube which ends with 8. (v) The cube of a two-digit number may be a three-digit number. (vi) The cube of a two-digit number may have seven or more digits. (vii) The cube of a single-digit number may be a single-digit number.",
+          solution: ["See mathematical proofs and counter-examples in the interactive Web View."],
+        },
+        {
+          id: "c8-m7-ex7-2-q3",
+          number: "3",
+          question: "You are told that 1,331 is a perfect cube. Can you guess without factorisation what its cube root is? Similarly, guess the cube roots of 4913, 12167, and 32768.",
+          solution: ["See step-by-step Estimation / Grouping method in the interactive Web View."],
+        },
+      ],
+    },
+  ],
+  examples: [],
+  mcqs: [
+  {
+    "id": "c8-m7-q1",
+    "question": "Which of the following is a perfect cube?",
+    "options": [
+      "A):   100",
+      "B):   128",
+      "C):   216",
+      "D):   72"
+    ],
+    "correctAnswer": "C",
+    "explanation": "216 = 6 × 6 × 6 = 6³, which is a perfect cube. 100 has only two zeroes, 128 has an unpaired factor 2, and 72 needs one more 3."
+  },
+  {
+    "id": "c8-m7-q2",
+    "question": "What is the unit digit of the cube of 27?",
+    "options": [
+      "A):   3",
+      "B):   7",
+      "C):   9",
+      "D):   1"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The unit digit of 27 is 7. Since 7³ = 343 ends in 3, the unit digit of 27³ is 3."
+  },
+  {
+    "id": "c8-m7-q3",
+    "question": "The cube of an even natural number is always:",
+    "options": [
+      "A):   An odd number",
+      "B):   An even number",
+      "C):   A negative number",
+      "D):   A prime number"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Even × Even × Even = Even (e.g. 2³ = 8, 4³ = 64, 6³ = 216). Thus, the cube of an even number is always even."
+  },
+  {
+    "id": "c8-m7-q4",
+    "question": "What is the smallest natural number by which 243 must be multiplied to make it a perfect cube?",
+    "options": [
+      "A):   2",
+      "B):   3",
+      "C):   5",
+      "D):   9"
+    ],
+    "correctAnswer": "B",
+    "explanation": "243 = 3⁵ = (3 × 3 × 3) × (3 × 3). The factor 3 appears only twice in the second group, so multiplying by 3 gives 243 × 3 = 729 = 9³."
+  },
+  {
+    "id": "c8-m7-q5",
+    "question": "What is the smallest number by which 81 must be divided to obtain a perfect cube?",
+    "options": [
+      "A):   3",
+      "B):   9",
+      "C):   27",
+      "D):   1"
+    ],
+    "correctAnswer": "A",
+    "explanation": "81 = 3⁴ = (3 × 3 × 3) × 3. Dividing by the extra factor 3 yields 81 ÷ 3 = 27 = 3³."
+  },
+  {
+    "id": "c8-m7-q6",
+    "question": "What is the value of ∛512?",
+    "options": [
+      "A):   6",
+      "B):   7",
+      "C):   8",
+      "D):   9"
+    ],
+    "correctAnswer": "C",
+    "explanation": "512 = 2⁹ = (2 × 2 × 2)³. Taking one factor from each of the three triplets gives 2 × 2 × 2 = 8."
+  },
+  {
+    "id": "c8-m7-q7",
+    "question": "Which of the following is known as the Hardy-Ramanujan Number?",
+    "options": [
+      "A):   1429",
+      "B):   1729",
+      "C):   1629",
+      "D):   1829"
+    ],
+    "correctAnswer": "B",
+    "explanation": "1729 is the smallest number expressible as the sum of two cubes in two different ways (1729 = 12³ + 1³ = 10³ + 9³)."
+  },
+  {
+    "id": "c8-m7-q8",
+    "question": "A plasticine cuboid of dimensions 5 cm × 2 cm × 5 cm is used. How many such cuboids are needed to form a cube?",
+    "options": [
+      "A):   10",
+      "B):   15",
+      "C):   20",
+      "D):   25"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Volume = 5 × 5 × 2. To complete triplets of equal factors, we need one more 5 and two more 2's: 5 × 2 × 2 = 20 cuboids."
+  },
+  {
+    "id": "c8-m7-q9",
+    "question": "How many zeroes are there at the end of the cube of 100?",
+    "options": [
+      "A):   2",
+      "B):   4",
+      "C):   6",
+      "D):   8"
+    ],
+    "correctAnswer": "C",
+    "explanation": "100³ = (10²)³ = 10⁶ = 1,000,000 (which contains 6 zeroes). Trailing zeroes always triple when cubing."
+  },
+  {
+    "id": "c8-m7-q10",
+    "question": "The cube of a two-digit number can have at most how many digits?",
+    "options": [
+      "A):   4 digits",
+      "B):   5 digits",
+      "C):   6 digits",
+      "D):   7 digits"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The largest two-digit number is 99, and 99³ = 970,299 (a 6-digit number). Hence, it can have at most 6 digits."
+  },
+  {
+    "id": "c8-m7-q11",
+    "question": "What is the cube root of 10,648 by prime factorisation?",
+    "options": [
+      "A):   18",
+      "B):   22",
+      "C):   24",
+      "D):   28"
+    ],
+    "correctAnswer": "B",
+    "explanation": "10648 = 2³ × 11³. Taking one from each triplet: 2 × 11 = 22."
+  },
+  {
+    "id": "c8-m7-q12",
+    "question": "Using estimation, what is the cube root of 4913?",
+    "options": [
+      "A):   13",
+      "B):   17",
+      "C):   23",
+      "D):   27"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Group 1 is 913 (ends in 3 ⇒ unit digit is 7). Group 2 is 4 (1³ = 1 ≤ 4 < 2³ = 8 ⇒ tens digit is 1). Root is 17."
+  },
+  {
+    "id": "c8-m7-q13",
+    "question": "What is the sum of the five consecutive odd numbers 21 + 23 + 25 + 27 + 29?",
+    "options": [
+      "A):   64",
+      "B):   100",
+      "C):   125",
+      "D):   216"
+    ],
+    "correctAnswer": "C",
+    "explanation": "By the consecutive odd number pattern, the sum of these 5 odd numbers equals 5³ = 125."
+  },
+  {
+    "id": "c8-m7-q14",
+    "question": "What is the cube root of the number 32,768?",
+    "options": [
+      "A):   28",
+      "B):   32",
+      "C):   34",
+      "D):   38"
+    ],
+    "correctAnswer": "B",
+    "explanation": "In 32768, Group 1 is 768 (ends in 8 ⇒ unit digit is 2). Group 2 is 32 (3³ = 27 ≤ 32 < 4³ = 64 ⇒ tens digit is 3). Root is 32."
+  },
+  {
+    "id": "c8-m7-q15",
+    "question": "If a natural number m = n³, then n is called the ______ of m.",
+    "options": [
+      "A):   Square",
+      "B):   Square root",
+      "C):   Cube root",
+      "D):   Reciprocal"
+    ],
+    "correctAnswer": "C",
+    "explanation": "By definition, if m = n³, then n is the cube root of m, written as ∛m = n."
+  }
+],
+  summary: [
+    "A natural number m = n<sup>3</sup> is a cube number or perfect cube.",
+    "Cubes of even numbers are even; cubes of odd numbers are odd.",
+    "Prime factorisation of a perfect cube groups into triplets of equal factors.",
+    "Cube roots can be found using Prime Factorisation or the two-group Estimation Method.",
   ],
   isHtmlView: true,
-  htmlOverview: `
-    <style>
-    .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
-    .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
-    .frac .den { padding: 0 2px; }
-      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
-      
-      .premium-container {
-        padding: 20px;
-        color: #ffffff;
-        font-family: 'Outfit', sans-serif !important;
-        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-        border-radius: 20px;
-        margin: 10px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-      }
-
-      .section-box {
-        background: rgba(255, 255, 255, 0.05);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 15px;
-        padding: 20px;
-        margin-bottom: 20px;
-        backdrop-filter: blur(10px);
-      }
-
-      .section-header {
-        color: #FB8C00;
-        font-size: 20px;
-        font-weight: 600;
-        margin-bottom: 15px;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-      }
-
-      .prop-table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 10px;
-        background: rgba(0,0,0,0.2);
-        border-radius: 12px;
-        overflow: hidden;
-      }
-
-      .prop-table th, .prop-table td {
-        padding: 12px;
-        border: 1px solid rgba(255,255,255,0.1);
-        text-align: left;
-        font-size: 15px;
-      }
-
-      .prop-table th {
-        background: rgba(255,255,255,0.1);
-        color: #FFB74D;
-        font-weight: 700;
-      }
-
-      .highlight { color: #FFB74D; font-weight: 600; }
-      
-      .intro-text {
-        line-height: 1.6;
-        font-size: 16px;
-        color: #e0e0e0;
-        text-align: justify;
-      }
-
-      .formula-badge {
-        background: rgba(251, 140, 0, 0.2);
-        border: 1px dashed #FB8C00;
-        padding: 10px;
-        border-radius: 8px;
-        margin-top: 10px;
-        text-align: center;
-        font-weight: bold;
-        color: #FFB74D;
-      }
-        .q-text, .q-subtext, .sol-step, .sol-box { font-size: 16px; }
-  </style>
-
-    <div class="premium-container">
-      <div class="section-box">
-        <div class="section-header"><span>✦</span> Introduction</div>
-        <div class="intro-text">
-          Comparing Quantities helps us measure and express how one quantity relates to another. We use <strong>ratios</strong> and <strong>percentages</strong> to understand shares, calculate taxes, discounts, and compound interest effectively.
-        </div>
-      </div>
-
-      <div class="section-box">
-        <div class="section-header"><span>✦</span> Important Formulas</div>
-        <table class="prop-table">
-          <tr>
-            <th>Concept</th>
-            <th>Formula</th>
-          </tr>
-          <tr>
-            <td><strong>Discount</strong></td>
-            <td>
-              Discount = <span class="highlight">Marked Price - Sale Price</span>
-            </td>
-          </tr>
-          <tr>
-            <td><strong>Sales <span class='frac'><span class='num'>Tax</span><span class='den'>VAT</span></span></strong></td>
-            <td>
-              Tax = <span class="highlight">(Tax Rate % × Cost Price)</span>
-            </td>
-          </tr>
-          <tr>
-            <td><strong>Compound Amount</strong></td>
-            <td>
-              <div class="formula-badge">A = P(1 + <span class='frac'><span class='num'>R</span><span class='den'>100</span></span>)ⁿ</div>
-              Where P = Principal, R = Rate, n = Time in years.
-            </td>
-          </tr>
-        </table>
-      </div>
-    </div>
-  `,
+  htmlOverview: "\n\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; text-align: center; }\n  .frac .den { padding: 1px 4px; text-align: center; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(0, 230, 118, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #00E676; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 16px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(0, 230, 118, 0.2); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #00E676; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #69F0AE; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(0, 230, 118, 0.15); border: 1.5px solid #00E676; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #69F0AE; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(0, 230, 118, 0.15); border: 1px solid #00E676; color: #69F0AE; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 4px 2px; }\n  .table-card { background: #FFFFFF; border-radius: 8px; padding: 10px 8px; margin: 16px 0; overflow-x: auto; box-shadow: 0 3px 12px rgba(0,0,0,0.25); -webkit-overflow-scrolling: touch; }\n  .styled-table { width: 100%; min-width: 290px; border-collapse: collapse; color: #0F172A; font-size: 13.5px; text-align: center; }\n  .styled-table th { background: #00E676; color: #0A2F1D; font-weight: 800; padding: 9px 8px; border: 1px solid #CBD5E1; font-size: 13.5px; white-space: nowrap; }\n  .styled-table td { padding: 8px 6px; border: 1px solid #CBD5E1; font-weight: 500; font-size: 13px; }\n  .styled-table td.col-label { font-weight: 700; white-space: nowrap; text-align: left; padding-left: 12px; }\n\n  /* Chapter 6 Style Factorisation Ladder: Dark Background with Green Borders */\n  .ladder-wrapper { display: inline-block; background: rgba(0, 0, 0, 0.55); border: 1.5px solid rgba(0, 230, 118, 0.45); border-radius: 8px; padding: 10px 16px; margin: 12px 0; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); }\n  .ladder-table { border-collapse: collapse; font-family: 'Courier New', Courier, monospace; font-size: 15.5px; color: #FFFFFF; }\n  .ladder-div { border-right: 2px solid #00E676; border-bottom: 1px solid rgba(255, 255, 255, 0.18); padding: 3px 12px; text-align: right; color: #69F0AE; font-weight: 700; min-width: 35px; }\n  .ladder-num { border-bottom: 1px solid rgba(255, 255, 255, 0.18); padding: 3px 14px; text-align: left; color: #FFFFFF; letter-spacing: 0.5px; min-width: 65px; }\n  .ladder-last-div { border-right: 2px solid #00E676; padding: 3px 12px; text-align: right; min-width: 35px; }\n  .ladder-last-num { padding: 3px 14px; text-align: left; color: #FFD54F; font-weight: 800; letter-spacing: 0.5px; min-width: 65px; }\n  .triplet-box { background: rgba(0, 230, 118, 0.12); border: 1px dashed rgba(0, 230, 118, 0.5); border-radius: 6px; padding: 3px 8px; display: inline-block; margin: 2px; color: #FFFFFF; font-weight: 600; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Hero Header -->\n  <div style=\"background: linear-gradient(135deg, rgba(0, 230, 118, 0.25), rgba(0, 150, 136, 0.15)); border: 1.5px solid #00E676; border-radius: 14px; padding: 18px; margin-bottom: 20px; text-align: center;\">\n    <div style=\"font-size: 22px; font-weight: 800; color: #00E676; margin-bottom: 6px;\">\n      🧊 Chapter 7: Cubes and Cube Roots\n    </div>\n    <div style=\"color: #CBD5E1; font-size: 14.5px; line-height: 1.5;\">\n      Class 8 NCERT Mathematics &bull; Complete Reference Guide &amp; Master Formula Cheat Sheet\n    </div>\n  </div>\n\n  <!-- 1. What is a Cube Number -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 1. What is a Cube Number (Perfect Cube)?</div>\n    <div class=\"q-text\">\n      When a natural number <b>m</b> can be expressed as <b>n<sup>3</sup></b>, where <b>n</b> is also a natural number, then <b>m</b> is called a <b>Cube Number</b> or a <b>Perfect Cube</b>.\n    </div>\n    <div class=\"sol-box\">\n      <div style=\"color: #FFFFFF; font-size: 14.5px; line-height: 1.7;\">\n        &bull; <b>Geometrical Meaning:</b> The volume of a cube having side length <i>a</i> is given by: <b>Volume = a &times; a &times; a = a<sup>3</sup></b>.<br/>\n        &bull; <b>Examples:</b> 1 (= 1<sup>3</sup>), 8 (= 2<sup>3</sup>), 27 (= 3<sup>3</sup>), 64 (= 4<sup>3</sup>), 125 (= 5<sup>3</sup>), 216 (= 6<sup>3</sup>)...<br/>\n        &bull; <b>Hardy-Ramanujan Number (1729):</b> 1729 is the smallest number that can be expressed as a sum of two cubes in two different ways:<br/>\n        <div style=\"text-align: center; margin: 10px 0;\">\n          <span class=\"prop-chip\" style=\"font-size: 15px; padding: 6px 14px;\">1729 = 1728 + 1 = 12<sup>3</sup> + 1<sup>3</sup></span>\n          &nbsp;&nbsp;and&nbsp;&nbsp;\n          <span class=\"prop-chip\" style=\"font-size: 15px; padding: 6px 14px;\">1729 = 1000 + 729 = 10<sup>3</sup> + 9<sup>3</sup></span>\n        </div>\n      </div>\n    </div>\n\n    <!-- Table of Cubes 1 to 20 -->\n    <div class=\"table-card\">\n      <table class=\"styled-table\">\n        <thead>\n          <tr>\n            <th>Number (n)</th>\n            <th>Cube (n<sup>3</sup>)</th>\n            <th>Unit Digit</th>\n            <th>Number (n)</th>\n            <th>Cube (n<sup>3</sup>)</th>\n            <th>Unit Digit</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr><td>1</td><td>1</td><td><b>1</b></td><td>11</td><td>1331</td><td><b>1</b></td></tr>\n          <tr><td>2</td><td>8</td><td><b>8</b></td><td>12</td><td>1728</td><td><b>8</b></td></tr>\n          <tr><td>3</td><td>27</td><td><b>7</b></td><td>13</td><td>2197</td><td><b>7</b></td></tr>\n          <tr><td>4</td><td>64</td><td><b>4</b></td><td>14</td><td>2744</td><td><b>4</b></td></tr>\n          <tr><td>5</td><td>125</td><td><b>5</b></td><td>15</td><td>3375</td><td><b>5</b></td></tr>\n          <tr><td>6</td><td>216</td><td><b>6</b></td><td>16</td><td>4096</td><td><b>6</b></td></tr>\n          <tr><td>7</td><td>343</td><td><b>3</b></td><td>17</td><td>4913</td><td><b>3</b></td></tr>\n          <tr><td>8</td><td>512</td><td><b>2</b></td><td>18</td><td>5832</td><td><b>2</b></td></tr>\n          <tr><td>9</td><td>729</td><td><b>9</b></td><td>19</td><td>6859</td><td><b>9</b></td></tr>\n          <tr><td>10</td><td>1000</td><td><b>0</b></td><td>20</td><td>8000</td><td><b>0</b></td></tr>\n        </tbody>\n      </table>\n    </div>\n  </div>\n\n  <!-- 2. Golden Properties of Cubes -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 2. Golden Properties of Cube Numbers</div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00E676;\">1. Unit Digits of Perfect Cubes:</b></div>\n      <div style=\"font-size: 15px; color: #FFFFFF; line-height: 1.7;\">\n        Unlike square numbers (which can never end in 2, 3, 7, 8), <b>a cube can end in ANY digit from 0 to 9!</b><br/>\n        &bull; <b>Identical Ending (0, 1, 4, 5, 6, 9):</b> Numbers ending in 0, 1, 4, 5, 6, 9 have cubes ending in the <b>exact same digit</b> (1 &rarr; 1, 4 &rarr; 4, 5 &rarr; 5, 6 &rarr; 6, 9 &rarr; 9, 0 &rarr; 0).<br/>\n        &bull; <b>Complementary Ending (2 &harr; 8 and 3 &harr; 7):</b><br/>\n        &nbsp;&nbsp;&ndash; Number ending in <b>2</b> has cube ending in <b>8</b>, and vice-versa (8 &rarr; 2).<br/>\n        &nbsp;&nbsp;&ndash; Number ending in <b>3</b> has cube ending in <b>7</b>, and vice-versa (7 &rarr; 3).\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00E676;\">2. Even &amp; Odd Number Rule:</b></div>\n      <div style=\"font-size: 15px; color: #FFFFFF; line-height: 1.7;\">\n        &bull; The cube of an <b>even number is always even</b> (e.g., 2<sup>3</sup> = 8, 4<sup>3</sup> = 64, 6<sup>3</sup> = 216).<br/>\n        &bull; The cube of an <b>odd number is always odd</b> (e.g., 3<sup>3</sup> = 27, 5<sup>3</sup> = 125, 7<sup>3</sup> = 343).\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00E676;\">3. Trailing Zeroes Property:</b></div>\n      <div style=\"font-size: 15px; color: #FFFFFF; line-height: 1.7;\">\n        A perfect cube ending in zeroes must end in a <b>multiple of 3 zeroes</b> (3 zeroes, 6 zeroes, 9 zeroes...).<br/>\n        <span class=\"reason\">A number ending in 1 zero or 2 zeroes (like 100, 200, 50) is <b>NEVER</b> a perfect cube.</span>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00E676;\">4. Adding Consecutive Odd Numbers Pattern:</b></div>\n      <div style=\"font-size: 15px; color: #FFFFFF; line-height: 1.7;\">\n        Every cube <b>n<sup>3</sup></b> is expressed as the sum of <b>n consecutive odd numbers</b>:<br/>\n        <div style=\"margin: 8px 0;\">\n          <span class=\"prop-chip\">1 = 1<sup>3</sup> = 1</span><br/>\n          <span class=\"prop-chip\">3 + 5 = 2<sup>3</sup> = 8</span><br/>\n          <span class=\"prop-chip\">7 + 9 + 11 = 3<sup>3</sup> = 27</span><br/>\n          <span class=\"prop-chip\">13 + 15 + 17 + 19 = 4<sup>3</sup> = 64</span><br/>\n          <span class=\"prop-chip\">21 + 23 + 25 + 27 + 29 = 5<sup>3</sup> = 125</span>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <!-- 3. Prime Factorisation & Triplets Rule -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 3. The Prime Factor Triplet Rule</div>\n    <div class=\"q-text\">\n      In the prime factorisation of any perfect cube, <b>each prime factor appears in triplets (groups of 3 identical factors)</b>.\n    </div>\n    <div class=\"sol-box\">\n      <div style=\"color: #FFFFFF; font-size: 14.5px; line-height: 1.7;\">\n        &bull; <b>To check if a number is a cube:</b> Factorise it into primes using the factor ladder. If all factors form complete triplets, it is a perfect cube.<br/>\n        &bull; <b>To find the smallest multiplier:</b> Identify prime factors that do not form triplets and multiply by the missing factors to complete the group of 3.<br/>\n        &bull; <b>To find the smallest divisor:</b> Divide by the extra prime factors that do not form a complete triplet.\n      </div>\n    </div>\n  </div>\n\n  <!-- 4. Cube Root (∛) & Two Methods -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 4. Two Core Methods to Find Cube Roots (&#8731;)</div>\n    <div style=\"display: flex; flex-direction: column; gap: 12px; margin-top: 6px;\">\n      <div style=\"background: rgba(0,0,0,0.25); border-left: 3.5px solid #00E676; padding: 12px 14px; border-radius: 6px;\">\n        <b style=\"color: #00E676; font-size: 15.5px;\">Method 1: Prime Factorisation Method</b><br/>\n        <div style=\"color: #E2E8F0; font-size: 14.5px; margin-top: 4px; line-height: 1.6;\">\n          1. Resolve the number into prime factors using the factor ladder.<br/>\n          2. Group identical factors into triplets of three.<br/>\n          3. Take one factor from each triplet and find their product &rArr; <b>Cube Root = Product of one factor from each triplet</b>.\n        </div>\n      </div>\n      <div style=\"background: rgba(0,0,0,0.25); border-left: 3.5px solid #FFD54F; padding: 12px 14px; border-radius: 6px;\">\n        <b style=\"color: #FFD54F; font-size: 15.5px;\">Method 2: Estimation / Guessing Method</b><br/>\n        <div style=\"color: #E2E8F0; font-size: 14.5px; margin-top: 4px; line-height: 1.6;\">\n          1. <b>Group 1 (First 3 digits from right):</b> Gives the <b>unit digit</b> of the cube root directly using unit digit matching.<br/>\n          2. <b>Group 2 (Remaining digits on left):</b> Find the largest natural number whose cube is &le; Group 2. That number is the <b>tens digit</b> of the cube root.\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <!-- 5. Master Revision Cheat Sheet -->\n  <div class=\"q-card\" style=\"border-color: #00E676;\">\n    <div class=\"q-title\" style=\"color: #00E676;\">✦ 5. Master Revision Formula Cheat Sheet</div>\n    <div style=\"font-size: 15px; color: #FFFFFF; line-height: 1.85;\">\n      &bull; <b>Cube of n:</b> n<sup>3</sup> = n &times; n &times; n.<br/>\n      &bull; <b>Cube Root:</b> If a<sup>3</sup> = b, then &#8731;b = a.<br/>\n      &bull; <b>Cube of a Negative Number:</b> (&minus;a)<sup>3</sup> = &minus;a<sup>3</sup> (always negative).<br/>\n      &bull; <b>Cube of a Fraction:</b> <span class=\"frac\"><span class=\"num\">a</span><span class=\"den\">b</span></span><sup>3</sup> = <span class=\"frac\"><span class=\"num\">a<sup>3</sup></span><span class=\"den\">b<sup>3</sup></span></span>.<br/>\n      &bull; <b>Product Rule:</b> &#8731;(a &times; b) = &#8731;a &times; &#8731;b.<br/>\n      &bull; <b>Number of Digits in Cube:</b> Cube of a 1-digit number has 1 to 3 digits; cube of a 2-digit number has 4 to 6 digits.\n    </div>\n  </div>\n\n</div>\n",
   htmlExercises: {
-    "ex7-1": ex71Content,
-    "ex7-2": ex72Content,
-    "ex7-3": ex73Content,
+    "ex7-1": "\n\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; text-align: center; }\n  .frac .den { padding: 1px 4px; text-align: center; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(0, 230, 118, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #00E676; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 16px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(0, 230, 118, 0.2); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #00E676; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #69F0AE; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(0, 230, 118, 0.15); border: 1.5px solid #00E676; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #69F0AE; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(0, 230, 118, 0.15); border: 1px solid #00E676; color: #69F0AE; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 4px 2px; }\n  .table-card { background: #FFFFFF; border-radius: 8px; padding: 10px 8px; margin: 16px 0; overflow-x: auto; box-shadow: 0 3px 12px rgba(0,0,0,0.25); -webkit-overflow-scrolling: touch; }\n  .styled-table { width: 100%; min-width: 290px; border-collapse: collapse; color: #0F172A; font-size: 13.5px; text-align: center; }\n  .styled-table th { background: #00E676; color: #0A2F1D; font-weight: 800; padding: 9px 8px; border: 1px solid #CBD5E1; font-size: 13.5px; white-space: nowrap; }\n  .styled-table td { padding: 8px 6px; border: 1px solid #CBD5E1; font-weight: 500; font-size: 13px; }\n  .styled-table td.col-label { font-weight: 700; white-space: nowrap; text-align: left; padding-left: 12px; }\n\n  /* Chapter 6 Style Factorisation Ladder: Dark Background with Green Borders */\n  .ladder-wrapper { display: inline-block; background: rgba(0, 0, 0, 0.55); border: 1.5px solid rgba(0, 230, 118, 0.45); border-radius: 8px; padding: 10px 16px; margin: 12px 0; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); }\n  .ladder-table { border-collapse: collapse; font-family: 'Courier New', Courier, monospace; font-size: 15.5px; color: #FFFFFF; }\n  .ladder-div { border-right: 2px solid #00E676; border-bottom: 1px solid rgba(255, 255, 255, 0.18); padding: 3px 12px; text-align: right; color: #69F0AE; font-weight: 700; min-width: 35px; }\n  .ladder-num { border-bottom: 1px solid rgba(255, 255, 255, 0.18); padding: 3px 14px; text-align: left; color: #FFFFFF; letter-spacing: 0.5px; min-width: 65px; }\n  .ladder-last-div { border-right: 2px solid #00E676; padding: 3px 12px; text-align: right; min-width: 35px; }\n  .ladder-last-num { padding: 3px 14px; text-align: left; color: #FFD54F; font-weight: 800; letter-spacing: 0.5px; min-width: 65px; }\n  .triplet-box { background: rgba(0, 230, 118, 0.12); border: 1px dashed rgba(0, 230, 118, 0.5); border-radius: 6px; padding: 3px 8px; display: inline-block; margin: 2px; color: #FFFFFF; font-weight: 600; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Header Card -->\n  <div style=\"background: linear-gradient(135deg, rgba(0, 230, 118, 0.2), rgba(0, 150, 136, 0.1)); border: 1.5px solid #00E676; border-radius: 12px; padding: 14px 18px; margin-bottom: 20px;\">\n    <div style=\"font-size: 19px; font-weight: 800; color: #00E676; margin-bottom: 4px;\">\n      Exercise 7.1\n    </div>\n    <div style=\"color: #FFFFFF; font-size: 15px; font-weight: 500;\">\n      Perfect Cubes, Prime Factor Triplet Rules &amp; Smallest Multipliers / Divisors\n    </div>\n  </div>\n\n  <!-- QUESTION 1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 1:</div>\n    <div class=\"q-text\">Which of the following numbers are not perfect cubes?</div>\n\n    <!-- (i) 216 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00E676;\">(i)</b> 216</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>By resolving 216 into prime factors:</div>\n          <div class=\"ladder-wrapper\"><table class=\"ladder-table\"><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">216</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">108</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">54</td></tr><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">27</td></tr><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">9</td></tr><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">3</td></tr><tr><td class=\"ladder-last-div\">&nbsp;</td><td class=\"ladder-last-num\">1</td></tr></table></div>\n          <div>216 = 2 &times; 2 &times; 2 &times; 3 &times; 3 &times; 3</div>\n          <div style=\"margin-top: 6px;\">\n            By grouping the factors in triplets of equal factors,\n          </div>\n          <div>216 = <span class=\"triplet-box\">(2 &times; 2 &times; 2)</span> &times; <span class=\"triplet-box\">(3 &times; 3 &times; 3)</span></div>\n          <div style=\"margin-top: 6px;\">Here, 216 can be grouped into triplets of equal factors.</div>\n          <div>&there4; &#8731;216 = (2 &times; 3) = 6 &nbsp;&rArr;&nbsp; 216 = 6<sup>3</sup></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Result: </span><span class=\"ans-val\">Hence, 216 is the cube of 6 (A Perfect Cube).</span></div>\n      </div>\n    </div>\n\n    <!-- (ii) 128 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00E676;\">(ii)</b> 128</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>By resolving 128 into prime factors:</div>\n          <div class=\"ladder-wrapper\"><table class=\"ladder-table\"><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">128</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">64</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">32</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">16</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">8</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">4</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">2</td></tr><tr><td class=\"ladder-last-div\">&nbsp;</td><td class=\"ladder-last-num\">1</td></tr></table></div>\n          <div>128 = 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2</div>\n          <div style=\"margin-top: 6px;\">\n            By grouping the factors in triplets of equal factors,\n          </div>\n          <div>128 = <span class=\"triplet-box\">(2 &times; 2 &times; 2)</span> &times; <span class=\"triplet-box\">(2 &times; 2 &times; 2)</span> &times; 2</div>\n          <div style=\"margin-top: 6px;\">Here, 128 cannot be grouped into triplets of equal factors, and we are left with one factor: 2.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Result: </span><span class=\"ans-val\">&there4; 128 is NOT a perfect cube.</span></div>\n      </div>\n    </div>\n\n    <!-- (iii) 1000 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00E676;\">(iii)</b> 1000</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>By resolving 1000 into prime factors:</div>\n          <div class=\"ladder-wrapper\"><table class=\"ladder-table\"><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">1000</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">500</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">250</td></tr><tr><td class=\"ladder-div\">5</td><td class=\"ladder-num\">125</td></tr><tr><td class=\"ladder-div\">5</td><td class=\"ladder-num\">25</td></tr><tr><td class=\"ladder-div\">5</td><td class=\"ladder-num\">5</td></tr><tr><td class=\"ladder-last-div\">&nbsp;</td><td class=\"ladder-last-num\">1</td></tr></table></div>\n          <div>1000 = 2 &times; 2 &times; 2 &times; 5 &times; 5 &times; 5</div>\n          <div style=\"margin-top: 6px;\">\n            By grouping the factors in triplets of equal factors,\n          </div>\n          <div>1000 = <span class=\"triplet-box\">(2 &times; 2 &times; 2)</span> &times; <span class=\"triplet-box\">(5 &times; 5 &times; 5)</span></div>\n          <div style=\"margin-top: 6px;\">Here, 1000 can be grouped into triplets of equal factors.</div>\n          <div>&there4; &#8731;1000 = (2 &times; 5) = 10 &nbsp;&rArr;&nbsp; 1000 = 10<sup>3</sup></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Result: </span><span class=\"ans-val\">Hence, 1000 is the cube of 10 (A Perfect Cube).</span></div>\n      </div>\n    </div>\n\n    <!-- (iv) 100 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00E676;\">(iv)</b> 100</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>By resolving 100 into prime factors:</div>\n          <div class=\"ladder-wrapper\"><table class=\"ladder-table\"><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">100</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">50</td></tr><tr><td class=\"ladder-div\">5</td><td class=\"ladder-num\">25</td></tr><tr><td class=\"ladder-div\">5</td><td class=\"ladder-num\">5</td></tr><tr><td class=\"ladder-last-div\">&nbsp;</td><td class=\"ladder-last-num\">1</td></tr></table></div>\n          <div>100 = 2 &times; 2 &times; 5 &times; 5</div>\n          <div style=\"margin-top: 6px;\">Here, 100 cannot be grouped into triplets of equal factors (2 and 5 both appear only twice).</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Result: </span><span class=\"ans-val\">&there4; 100 is NOT a perfect cube.</span></div>\n      </div>\n    </div>\n\n    <!-- (v) 46656 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00E676;\">(v)</b> 46656</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>By resolving 46656 into prime factors:</div>\n          <div class=\"ladder-wrapper\"><table class=\"ladder-table\"><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">46656</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">23328</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">11664</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">5832</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">2916</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">1458</td></tr><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">729</td></tr><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">243</td></tr><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">81</td></tr><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">27</td></tr><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">9</td></tr><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">3</td></tr><tr><td class=\"ladder-last-div\">&nbsp;</td><td class=\"ladder-last-num\">1</td></tr></table></div>\n          <div>46656 = 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 3 &times; 3 &times; 3 &times; 3 &times; 3 &times; 3</div>\n          <div style=\"margin-top: 6px;\">\n            By grouping the factors in triplets of equal factors,\n          </div>\n          <div>46656 = <span class=\"triplet-box\">(2 &times; 2 &times; 2)</span> &times; <span class=\"triplet-box\">(2 &times; 2 &times; 2)</span> &times; <span class=\"triplet-box\">(3 &times; 3 &times; 3)</span> &times; <span class=\"triplet-box\">(3 &times; 3 &times; 3)</span></div>\n          <div style=\"margin-top: 6px;\">Here, 46656 can be grouped into triplets of equal factors without remainder.</div>\n          <div>&there4; &#8731;46656 = (2 &times; 2 &times; 3 &times; 3) = 36 &nbsp;&rArr;&nbsp; 46656 = 36<sup>3</sup></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Result: </span><span class=\"ans-val\">Hence, 46656 is the cube of 36 (A Perfect Cube).</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 2 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 2:</div>\n    <div class=\"q-text\">Find the smallest number by which each of the following numbers must be multiplied to obtain a perfect cube.</div>\n\n    <!-- (i) 243 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00E676;\">(i)</b> 243</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>By resolving 243 into prime factors:</div>\n          <div class=\"ladder-wrapper\"><table class=\"ladder-table\"><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">243</td></tr><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">81</td></tr><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">27</td></tr><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">9</td></tr><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">3</td></tr><tr><td class=\"ladder-last-div\">&nbsp;</td><td class=\"ladder-last-num\">1</td></tr></table></div>\n          <div>243 = 3 &times; 3 &times; 3 &times; 3 &times; 3</div>\n          <div style=\"margin-top: 6px;\">\n            By grouping the factors in triplets of equal factors,\n          </div>\n          <div>243 = <span class=\"triplet-box\">(3 &times; 3 &times; 3)</span> &times; 3 &times; 3</div>\n          <div style=\"margin-top: 6px;\">Here, 3 cannot be grouped into triplets of equal factors (we are short of one 3).</div>\n          <div>&there4; We will multiply 243 by <b>3</b> to get the perfect cube: 243 &times; 3 = 729 = 9<sup>3</sup>.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Smallest Multiplier: </span><span class=\"ans-val\">3</span></div>\n      </div>\n    </div>\n\n    <!-- (ii) 256 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00E676;\">(ii)</b> 256</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>By resolving 256 into prime factors:</div>\n          <div class=\"ladder-wrapper\"><table class=\"ladder-table\"><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">256</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">128</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">64</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">32</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">16</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">8</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">4</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">2</td></tr><tr><td class=\"ladder-last-div\">&nbsp;</td><td class=\"ladder-last-num\">1</td></tr></table></div>\n          <div>256 = 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2</div>\n          <div style=\"margin-top: 6px;\">\n            By grouping the factors in triplets of equal factors,\n          </div>\n          <div>256 = <span class=\"triplet-box\">(2 &times; 2 &times; 2)</span> &times; <span class=\"triplet-box\">(2 &times; 2 &times; 2)</span> &times; 2 &times; 2</div>\n          <div style=\"margin-top: 6px;\">Here, the last group has only two 2's, so 2 cannot be grouped into triplets.</div>\n          <div>&there4; We will multiply 256 by <b>2</b> to get the perfect cube: 256 &times; 2 = 512 = 8<sup>3</sup>.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Smallest Multiplier: </span><span class=\"ans-val\">2</span></div>\n      </div>\n    </div>\n\n    <!-- (iii) 72 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00E676;\">(iii)</b> 72</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>By resolving 72 into prime factors:</div>\n          <div class=\"ladder-wrapper\"><table class=\"ladder-table\"><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">72</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">36</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">18</td></tr><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">9</td></tr><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">3</td></tr><tr><td class=\"ladder-last-div\">&nbsp;</td><td class=\"ladder-last-num\">1</td></tr></table></div>\n          <div>72 = 2 &times; 2 &times; 2 &times; 3 &times; 3</div>\n          <div style=\"margin-top: 6px;\">\n            By grouping the factors in triplets of equal factors,\n          </div>\n          <div>72 = <span class=\"triplet-box\">(2 &times; 2 &times; 2)</span> &times; 3 &times; 3</div>\n          <div style=\"margin-top: 6px;\">Here, 3 cannot be grouped into triplets of equal factors.</div>\n          <div>&there4; We will multiply 72 by <b>3</b> to get the perfect cube: 72 &times; 3 = 216 = 6<sup>3</sup>.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Smallest Multiplier: </span><span class=\"ans-val\">3</span></div>\n      </div>\n    </div>\n\n    <!-- (iv) 675 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00E676;\">(iv)</b> 675</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>By resolving 675 into prime factors:</div>\n          <div class=\"ladder-wrapper\"><table class=\"ladder-table\"><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">675</td></tr><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">225</td></tr><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">75</td></tr><tr><td class=\"ladder-div\">5</td><td class=\"ladder-num\">25</td></tr><tr><td class=\"ladder-div\">5</td><td class=\"ladder-num\">5</td></tr><tr><td class=\"ladder-last-div\">&nbsp;</td><td class=\"ladder-last-num\">1</td></tr></table></div>\n          <div>675 = 3 &times; 3 &times; 3 &times; 5 &times; 5</div>\n          <div style=\"margin-top: 6px;\">\n            By grouping the factors in triplets of equal factors,\n          </div>\n          <div>675 = <span class=\"triplet-box\">(3 &times; 3 &times; 3)</span> &times; 5 &times; 5</div>\n          <div style=\"margin-top: 6px;\">Here, 5 cannot be grouped into triplets of equal factors.</div>\n          <div>&there4; We will multiply 675 by <b>5</b> to get the perfect cube: 675 &times; 5 = 3375 = 15<sup>3</sup>.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Smallest Multiplier: </span><span class=\"ans-val\">5</span></div>\n      </div>\n    </div>\n\n    <!-- (v) 100 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00E676;\">(v)</b> 100</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>By resolving 100 into prime factors:</div>\n          <div class=\"ladder-wrapper\"><table class=\"ladder-table\"><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">100</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">50</td></tr><tr><td class=\"ladder-div\">5</td><td class=\"ladder-num\">25</td></tr><tr><td class=\"ladder-div\">5</td><td class=\"ladder-num\">5</td></tr><tr><td class=\"ladder-last-div\">&nbsp;</td><td class=\"ladder-last-num\">1</td></tr></table></div>\n          <div>100 = 2 &times; 2 &times; 5 &times; 5</div>\n          <div style=\"margin-top: 6px;\">Here, 2 and 5 cannot be grouped into triplets of equal factors.</div>\n          <div>To complete the triplets, we need one 2 and one 5.</div>\n          <div>&there4; We will multiply 100 by (2 &times; 5) = <b>10</b> to get the perfect cube: 100 &times; 10 = 1000 = 10<sup>3</sup>.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Smallest Multiplier: </span><span class=\"ans-val\">10</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 3 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 3:</div>\n    <div class=\"q-text\">Find the smallest number by which each of the following numbers must be divided to obtain a perfect cube.</div>\n\n    <!-- (i) 81 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00E676;\">(i)</b> 81</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>By resolving 81 into prime factors:</div>\n          <div class=\"ladder-wrapper\"><table class=\"ladder-table\"><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">81</td></tr><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">27</td></tr><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">9</td></tr><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">3</td></tr><tr><td class=\"ladder-last-div\">&nbsp;</td><td class=\"ladder-last-num\">1</td></tr></table></div>\n          <div>81 = 3 &times; 3 &times; 3 &times; 3</div>\n          <div style=\"margin-top: 6px;\">\n            By grouping the factors in triplets of equal factors,\n          </div>\n          <div>81 = <span class=\"triplet-box\">(3 &times; 3 &times; 3)</span> &times; 3</div>\n          <div style=\"margin-top: 6px;\">Here, 3 cannot be grouped into triplets of equal factors (one factor 3 is extra).</div>\n          <div>&there4; We will divide 81 by <b>3</b> to get the perfect cube: 81 &divide; 3 = 27 = 3<sup>3</sup>.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Smallest Divisor: </span><span class=\"ans-val\">3</span></div>\n      </div>\n    </div>\n\n    <!-- (ii) 128 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00E676;\">(ii)</b> 128</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>By resolving 128 into prime factors:</div>\n          <div class=\"ladder-wrapper\"><table class=\"ladder-table\"><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">128</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">64</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">32</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">16</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">8</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">4</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">2</td></tr><tr><td class=\"ladder-last-div\">&nbsp;</td><td class=\"ladder-last-num\">1</td></tr></table></div>\n          <div>128 = 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2</div>\n          <div style=\"margin-top: 6px;\">\n            By grouping the factors in triplets of equal factors,\n          </div>\n          <div>128 = <span class=\"triplet-box\">(2 &times; 2 &times; 2)</span> &times; <span class=\"triplet-box\">(2 &times; 2 &times; 2)</span> &times; 2</div>\n          <div style=\"margin-top: 6px;\">Here, 2 cannot be grouped into triplets of equal factors.</div>\n          <div>&there4; We will divide 128 by <b>2</b> to get the perfect cube: 128 &divide; 2 = 64 = 4<sup>3</sup>.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Smallest Divisor: </span><span class=\"ans-val\">2</span></div>\n      </div>\n    </div>\n\n    <!-- (iii) 135 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00E676;\">(iii)</b> 135</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>By resolving 135 into prime factors:</div>\n          <div class=\"ladder-wrapper\"><table class=\"ladder-table\"><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">135</td></tr><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">45</td></tr><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">15</td></tr><tr><td class=\"ladder-div\">5</td><td class=\"ladder-num\">5</td></tr><tr><td class=\"ladder-last-div\">&nbsp;</td><td class=\"ladder-last-num\">1</td></tr></table></div>\n          <div>135 = 3 &times; 3 &times; 3 &times; 5</div>\n          <div style=\"margin-top: 6px;\">\n            By grouping the factors in triplets of equal factors,\n          </div>\n          <div>135 = <span class=\"triplet-box\">(3 &times; 3 &times; 3)</span> &times; 5</div>\n          <div style=\"margin-top: 6px;\">Here, 5 cannot be grouped into triplets of equal factors.</div>\n          <div>&there4; We will divide 135 by <b>5</b> to get the perfect cube: 135 &divide; 5 = 27 = 3<sup>3</sup>.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Smallest Divisor: </span><span class=\"ans-val\">5</span></div>\n      </div>\n    </div>\n\n    <!-- (iv) 192 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00E676;\">(iv)</b> 192</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>By resolving 192 into prime factors:</div>\n          <div class=\"ladder-wrapper\"><table class=\"ladder-table\"><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">192</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">96</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">48</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">24</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">12</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">6</td></tr><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">3</td></tr><tr><td class=\"ladder-last-div\">&nbsp;</td><td class=\"ladder-last-num\">1</td></tr></table></div>\n          <div>192 = 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 3</div>\n          <div style=\"margin-top: 6px;\">\n            By grouping the factors in triplets of equal factors,\n          </div>\n          <div>192 = <span class=\"triplet-box\">(2 &times; 2 &times; 2)</span> &times; <span class=\"triplet-box\">(2 &times; 2 &times; 2)</span> &times; 3</div>\n          <div style=\"margin-top: 6px;\">Here, 3 cannot be grouped into triplets of equal factors.</div>\n          <div>&there4; We will divide 192 by <b>3</b> to get the perfect cube: 192 &divide; 3 = 64 = 4<sup>3</sup>.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Smallest Divisor: </span><span class=\"ans-val\">3</span></div>\n      </div>\n    </div>\n\n    <!-- (v) 704 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00E676;\">(v)</b> 704</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>By resolving 704 into prime factors:</div>\n          <div class=\"ladder-wrapper\"><table class=\"ladder-table\"><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">704</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">352</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">176</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">88</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">44</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">22</td></tr><tr><td class=\"ladder-div\">11</td><td class=\"ladder-num\">11</td></tr><tr><td class=\"ladder-last-div\">&nbsp;</td><td class=\"ladder-last-num\">1</td></tr></table></div>\n          <div>704 = 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 11</div>\n          <div style=\"margin-top: 6px;\">\n            By grouping the factors in triplets of equal factors,\n          </div>\n          <div>704 = <span class=\"triplet-box\">(2 &times; 2 &times; 2)</span> &times; <span class=\"triplet-box\">(2 &times; 2 &times; 2)</span> &times; 11</div>\n          <div style=\"margin-top: 6px;\">Here, 11 cannot be grouped into triplets of equal factors.</div>\n          <div>&there4; We will divide 704 by <b>11</b> to get the perfect cube: 704 &divide; 11 = 64 = 4<sup>3</sup>.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Smallest Divisor: </span><span class=\"ans-val\">11</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 4 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 4:</div>\n    <div class=\"q-text\">Parikshit makes a cuboid of plasticine with sides 5 cm, 2 cm, and 5 cm. How many such cuboids will he need to form a cube?</div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div>Given the sides of the cuboid are 5 cm, 2 cm and 5 cm.</div>\n        <div style=\"margin-top: 6px;\">\n          &there4; Volume of cuboid = 5 &times; 2 &times; 5 = <b>50 cm<sup>3</sup></b>\n        </div>\n        <div>By resolving 50 into prime factors:</div>\n        <div class=\"ladder-wrapper\"><table class=\"ladder-table\"><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">50</td></tr><tr><td class=\"ladder-div\">5</td><td class=\"ladder-num\">25</td></tr><tr><td class=\"ladder-div\">5</td><td class=\"ladder-num\">5</td></tr><tr><td class=\"ladder-last-div\">&nbsp;</td><td class=\"ladder-last-num\">1</td></tr></table></div>\n        <div>50 = 2 &times; 5 &times; 5</div>\n        <div style=\"margin-top: 6px;\">Here, 2, 5 and 5 cannot be grouped into triplets of equal factors.</div>\n        <div style=\"margin-top: 6px;\">\n          &bull; There is only one 2 &rArr; <b>Two more 2's (2 &times; 2)</b> are needed.<br/>\n          &bull; There are two 5's &rArr; <b>One more 5</b> is needed.\n        </div>\n        <div style=\"margin-top: 8px;\">\n          &there4; We will multiply 50 by (2 &times; 2 &times; 5) = <b>20</b> to get the perfect cube.\n        </div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Result: </span>\n        <span class=\"ans-val\">Hence, 20 cuboids are needed to form a cube.</span>\n      </div>\n    </div>\n  </div>\n\n</div>\n",
+    "ex7-2": "\n\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; text-align: center; }\n  .frac .den { padding: 1px 4px; text-align: center; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(0, 230, 118, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #00E676; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 16px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(0, 230, 118, 0.2); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #00E676; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #69F0AE; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(0, 230, 118, 0.15); border: 1.5px solid #00E676; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #69F0AE; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(0, 230, 118, 0.15); border: 1px solid #00E676; color: #69F0AE; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 4px 2px; }\n  .table-card { background: #FFFFFF; border-radius: 8px; padding: 10px 8px; margin: 16px 0; overflow-x: auto; box-shadow: 0 3px 12px rgba(0,0,0,0.25); -webkit-overflow-scrolling: touch; }\n  .styled-table { width: 100%; min-width: 290px; border-collapse: collapse; color: #0F172A; font-size: 13.5px; text-align: center; }\n  .styled-table th { background: #00E676; color: #0A2F1D; font-weight: 800; padding: 9px 8px; border: 1px solid #CBD5E1; font-size: 13.5px; white-space: nowrap; }\n  .styled-table td { padding: 8px 6px; border: 1px solid #CBD5E1; font-weight: 500; font-size: 13px; }\n  .styled-table td.col-label { font-weight: 700; white-space: nowrap; text-align: left; padding-left: 12px; }\n\n  /* Chapter 6 Style Factorisation Ladder: Dark Background with Green Borders */\n  .ladder-wrapper { display: inline-block; background: rgba(0, 0, 0, 0.55); border: 1.5px solid rgba(0, 230, 118, 0.45); border-radius: 8px; padding: 10px 16px; margin: 12px 0; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); }\n  .ladder-table { border-collapse: collapse; font-family: 'Courier New', Courier, monospace; font-size: 15.5px; color: #FFFFFF; }\n  .ladder-div { border-right: 2px solid #00E676; border-bottom: 1px solid rgba(255, 255, 255, 0.18); padding: 3px 12px; text-align: right; color: #69F0AE; font-weight: 700; min-width: 35px; }\n  .ladder-num { border-bottom: 1px solid rgba(255, 255, 255, 0.18); padding: 3px 14px; text-align: left; color: #FFFFFF; letter-spacing: 0.5px; min-width: 65px; }\n  .ladder-last-div { border-right: 2px solid #00E676; padding: 3px 12px; text-align: right; min-width: 35px; }\n  .ladder-last-num { padding: 3px 14px; text-align: left; color: #FFD54F; font-weight: 800; letter-spacing: 0.5px; min-width: 65px; }\n  .triplet-box { background: rgba(0, 230, 118, 0.12); border: 1px dashed rgba(0, 230, 118, 0.5); border-radius: 6px; padding: 3px 8px; display: inline-block; margin: 2px; color: #FFFFFF; font-weight: 600; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Header Card -->\n  <div style=\"background: linear-gradient(135deg, rgba(0, 230, 118, 0.2), rgba(0, 150, 136, 0.1)); border: 1.5px solid #00E676; border-radius: 12px; padding: 14px 18px; margin-bottom: 20px;\">\n    <div style=\"font-size: 19px; font-weight: 800; color: #00E676; margin-bottom: 4px;\">\n      Exercise 7.2\n    </div>\n    <div style=\"color: #FFFFFF; font-size: 15px; font-weight: 500;\">\n      Cube Roots by Prime Factorisation, True/False Properties &amp; Estimation Method\n    </div>\n  </div>\n\n  <!-- QUESTION 1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 1:</div>\n    <div class=\"q-text\">Find the cube root of each of the following numbers by the prime factorisation method.</div>\n\n    <!-- (i) 64 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00E676;\">(i)</b> 64</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>By resolving 64 into prime factors:</div>\n          <div class=\"ladder-wrapper\"><table class=\"ladder-table\"><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">64</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">32</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">16</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">8</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">4</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">2</td></tr><tr><td class=\"ladder-last-div\">&nbsp;</td><td class=\"ladder-last-num\">1</td></tr></table></div>\n          <div>64 = 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2</div>\n          <div style=\"margin-top: 6px;\">\n            By grouping the factors in triplets of equal factors,\n          </div>\n          <div>64 = <span class=\"triplet-box\">(2 &times; 2 &times; 2)</span> &times; <span class=\"triplet-box\">(2 &times; 2 &times; 2)</span></div>\n          <div style=\"margin-top: 6px;\">Here, 64 can be grouped into triplets of equal factors.</div>\n          <div>&there4; &#8731;64 = 2 &times; 2 = <b>4</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Cube Root: </span><span class=\"ans-val\">Hence, 4 is the cube root of 64.</span></div>\n      </div>\n    </div>\n\n    <!-- (ii) 512 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00E676;\">(ii)</b> 512</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>By resolving 512 into prime factors:</div>\n          <div class=\"ladder-wrapper\"><table class=\"ladder-table\"><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">512</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">256</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">128</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">64</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">32</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">16</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">8</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">4</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">2</td></tr><tr><td class=\"ladder-last-div\">&nbsp;</td><td class=\"ladder-last-num\">1</td></tr></table></div>\n          <div>512 = 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2</div>\n          <div style=\"margin-top: 6px;\">\n            By grouping the factors in triplets of equal factors,\n          </div>\n          <div>512 = <span class=\"triplet-box\">(2 &times; 2 &times; 2)</span> &times; <span class=\"triplet-box\">(2 &times; 2 &times; 2)</span> &times; <span class=\"triplet-box\">(2 &times; 2 &times; 2)</span></div>\n          <div style=\"margin-top: 6px;\">Here, 512 can be grouped into triplets of equal factors.</div>\n          <div>&there4; &#8731;512 = 2 &times; 2 &times; 2 = <b>8</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Cube Root: </span><span class=\"ans-val\">Hence, 8 is the cube root of 512.</span></div>\n      </div>\n    </div>\n\n    <!-- (iii) 10648 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00E676;\">(iii)</b> 10648</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>By resolving 10648 into prime factors:</div>\n          <div class=\"ladder-wrapper\"><table class=\"ladder-table\"><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">10648</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">5324</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">2662</td></tr><tr><td class=\"ladder-div\">11</td><td class=\"ladder-num\">1331</td></tr><tr><td class=\"ladder-div\">11</td><td class=\"ladder-num\">121</td></tr><tr><td class=\"ladder-div\">11</td><td class=\"ladder-num\">11</td></tr><tr><td class=\"ladder-last-div\">&nbsp;</td><td class=\"ladder-last-num\">1</td></tr></table></div>\n          <div>10648 = 2 &times; 2 &times; 2 &times; 11 &times; 11 &times; 11</div>\n          <div style=\"margin-top: 6px;\">\n            By grouping the factors in triplets of equal factors,\n          </div>\n          <div>10648 = <span class=\"triplet-box\">(2 &times; 2 &times; 2)</span> &times; <span class=\"triplet-box\">(11 &times; 11 &times; 11)</span></div>\n          <div style=\"margin-top: 6px;\">Here, 10648 can be grouped into triplets of equal factors.</div>\n          <div>&there4; &#8731;10648 = 2 &times; 11 = <b>22</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Cube Root: </span><span class=\"ans-val\">Hence, 22 is the cube root of 10648.</span></div>\n      </div>\n    </div>\n\n    <!-- (iv) 27000 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00E676;\">(iv)</b> 27000</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>By resolving 27000 into prime factors:</div>\n          <div class=\"ladder-wrapper\"><table class=\"ladder-table\"><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">27000</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">13500</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">6750</td></tr><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">3375</td></tr><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">1125</td></tr><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">375</td></tr><tr><td class=\"ladder-div\">5</td><td class=\"ladder-num\">125</td></tr><tr><td class=\"ladder-div\">5</td><td class=\"ladder-num\">25</td></tr><tr><td class=\"ladder-div\">5</td><td class=\"ladder-num\">5</td></tr><tr><td class=\"ladder-last-div\">&nbsp;</td><td class=\"ladder-last-num\">1</td></tr></table></div>\n          <div>27000 = 2 &times; 2 &times; 2 &times; 3 &times; 3 &times; 3 &times; 5 &times; 5 &times; 5</div>\n          <div style=\"margin-top: 6px;\">\n            By grouping the factors in triplets of equal factors,\n          </div>\n          <div>27000 = <span class=\"triplet-box\">(2 &times; 2 &times; 2)</span> &times; <span class=\"triplet-box\">(3 &times; 3 &times; 3)</span> &times; <span class=\"triplet-box\">(5 &times; 5 &times; 5)</span></div>\n          <div style=\"margin-top: 6px;\">Here, 27000 can be grouped into triplets of equal factors.</div>\n          <div>&there4; &#8731;27000 = (2 &times; 3 &times; 5) = <b>30</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Cube Root: </span><span class=\"ans-val\">Hence, 30 is the cube root of 27000.</span></div>\n      </div>\n    </div>\n\n    <!-- (v) 15625 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00E676;\">(v)</b> 15625</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>By resolving 15625 into prime factors:</div>\n          <div class=\"ladder-wrapper\"><table class=\"ladder-table\"><tr><td class=\"ladder-div\">5</td><td class=\"ladder-num\">15625</td></tr><tr><td class=\"ladder-div\">5</td><td class=\"ladder-num\">3125</td></tr><tr><td class=\"ladder-div\">5</td><td class=\"ladder-num\">625</td></tr><tr><td class=\"ladder-div\">5</td><td class=\"ladder-num\">125</td></tr><tr><td class=\"ladder-div\">5</td><td class=\"ladder-num\">25</td></tr><tr><td class=\"ladder-div\">5</td><td class=\"ladder-num\">5</td></tr><tr><td class=\"ladder-last-div\">&nbsp;</td><td class=\"ladder-last-num\">1</td></tr></table></div>\n          <div>15625 = 5 &times; 5 &times; 5 &times; 5 &times; 5 &times; 5</div>\n          <div style=\"margin-top: 6px;\">\n            By grouping the factors in triplets of equal factors,\n          </div>\n          <div>15625 = <span class=\"triplet-box\">(5 &times; 5 &times; 5)</span> &times; <span class=\"triplet-box\">(5 &times; 5 &times; 5)</span></div>\n          <div style=\"margin-top: 6px;\">Here, 15625 can be grouped into triplets of equal factors.</div>\n          <div>&there4; &#8731;15625 = (5 &times; 5) = <b>25</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Cube Root: </span><span class=\"ans-val\">Hence, 25 is the cube root of 15625.</span></div>\n      </div>\n    </div>\n\n    <!-- (vi) 13824 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00E676;\">(vi)</b> 13824</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>By resolving 13824 into prime factors:</div>\n          <div class=\"ladder-wrapper\"><table class=\"ladder-table\"><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">13824</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">6912</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">3456</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">1728</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">864</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">432</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">216</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">108</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">54</td></tr><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">27</td></tr><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">9</td></tr><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">3</td></tr><tr><td class=\"ladder-last-div\">&nbsp;</td><td class=\"ladder-last-num\">1</td></tr></table></div>\n          <div>13824 = 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 3 &times; 3 &times; 3</div>\n          <div style=\"margin-top: 6px;\">\n            By grouping the factors in triplets of equal factors,\n          </div>\n          <div>13824 = <span class=\"triplet-box\">(2 &times; 2 &times; 2)</span> &times; <span class=\"triplet-box\">(2 &times; 2 &times; 2)</span> &times; <span class=\"triplet-box\">(2 &times; 2 &times; 2)</span> &times; <span class=\"triplet-box\">(3 &times; 3 &times; 3)</span></div>\n          <div style=\"margin-top: 6px;\">Here, 13824 can be grouped into triplets of equal factors.</div>\n          <div>&there4; &#8731;13824 = (2 &times; 2 &times; 2 &times; 3) = <b>24</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Cube Root: </span><span class=\"ans-val\">Hence, 24 is the cube root of 13824.</span></div>\n      </div>\n    </div>\n\n    <!-- (vii) 110592 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00E676;\">(vii)</b> 110592</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>By resolving 110592 into prime factors:</div>\n          <div class=\"ladder-wrapper\"><table class=\"ladder-table\"><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">110592</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">55296</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">27648</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">13824</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">6912</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">3456</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">1728</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">864</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">432</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">216</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">108</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">54</td></tr><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">27</td></tr><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">9</td></tr><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">3</td></tr><tr><td class=\"ladder-last-div\">&nbsp;</td><td class=\"ladder-last-num\">1</td></tr></table></div>\n          <div>110592 = 2<sup>12</sup> &times; 3<sup>3</sup></div>\n          <div style=\"margin-top: 6px;\">\n            By grouping the factors in triplets of equal factors,\n          </div>\n          <div>110592 = <span class=\"triplet-box\">(2 &times; 2 &times; 2)</span> &times; <span class=\"triplet-box\">(2 &times; 2 &times; 2)</span> &times; <span class=\"triplet-box\">(2 &times; 2 &times; 2)</span> &times; <span class=\"triplet-box\">(2 &times; 2 &times; 2)</span> &times; <span class=\"triplet-box\">(3 &times; 3 &times; 3)</span></div>\n          <div style=\"margin-top: 6px;\">Here, 110592 can be grouped into triplets of equal factors.</div>\n          <div>&there4; &#8731;110592 = (2 &times; 2 &times; 2 &times; 2 &times; 3) = <b>48</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Cube Root: </span><span class=\"ans-val\">Hence, 48 is the cube root of 110592.</span></div>\n      </div>\n    </div>\n\n    <!-- (viii) 46656 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00E676;\">(viii)</b> 46656</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>By resolving 46656 into prime factors:</div>\n          <div class=\"ladder-wrapper\"><table class=\"ladder-table\"><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">46656</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">23328</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">11664</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">5832</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">2916</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">1458</td></tr><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">729</td></tr><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">243</td></tr><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">81</td></tr><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">27</td></tr><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">9</td></tr><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">3</td></tr><tr><td class=\"ladder-last-div\">&nbsp;</td><td class=\"ladder-last-num\">1</td></tr></table></div>\n          <div>46656 = 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 3 &times; 3 &times; 3 &times; 3 &times; 3 &times; 3</div>\n          <div style=\"margin-top: 6px;\">\n            By grouping the factors in triplets of equal factors,\n          </div>\n          <div>46656 = <span class=\"triplet-box\">(2 &times; 2 &times; 2)</span> &times; <span class=\"triplet-box\">(2 &times; 2 &times; 2)</span> &times; <span class=\"triplet-box\">(3 &times; 3 &times; 3)</span> &times; <span class=\"triplet-box\">(3 &times; 3 &times; 3)</span></div>\n          <div style=\"margin-top: 6px;\">Here, 46656 can be grouped into triplets of equal factors.</div>\n          <div>&there4; &#8731;46656 = (2 &times; 2 &times; 3 &times; 3) = <b>36</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Cube Root: </span><span class=\"ans-val\">Hence, 36 is the cube root of 46656.</span></div>\n      </div>\n    </div>\n\n    <!-- (ix) 175616 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00E676;\">(ix)</b> 175616</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>By resolving 175616 into prime factors:</div>\n          <div class=\"ladder-wrapper\"><table class=\"ladder-table\"><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">175616</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">87808</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">43904</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">21952</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">10976</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">5488</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">2744</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">1372</td></tr><tr><td class=\"ladder-div\">2</td><td class=\"ladder-num\">686</td></tr><tr><td class=\"ladder-div\">7</td><td class=\"ladder-num\">343</td></tr><tr><td class=\"ladder-div\">7</td><td class=\"ladder-num\">49</td></tr><tr><td class=\"ladder-div\">7</td><td class=\"ladder-num\">7</td></tr><tr><td class=\"ladder-last-div\">&nbsp;</td><td class=\"ladder-last-num\">1</td></tr></table></div>\n          <div>175616 = 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 7 &times; 7 &times; 7</div>\n          <div style=\"margin-top: 6px;\">\n            By grouping the factors in triplets of equal factors,\n          </div>\n          <div>175616 = <span class=\"triplet-box\">(2 &times; 2 &times; 2)</span> &times; <span class=\"triplet-box\">(2 &times; 2 &times; 2)</span> &times; <span class=\"triplet-box\">(2 &times; 2 &times; 2)</span> &times; <span class=\"triplet-box\">(7 &times; 7 &times; 7)</span></div>\n          <div style=\"margin-top: 6px;\">Here, 175616 can be grouped into triplets of equal factors.</div>\n          <div>&there4; &#8731;175616 = (2 &times; 2 &times; 2 &times; 7) = <b>56</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Cube Root: </span><span class=\"ans-val\">Hence, 56 is the cube root of 175616.</span></div>\n      </div>\n    </div>\n\n    <!-- (x) 91125 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00E676;\">(x)</b> 91125</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>By resolving 91125 into prime factors:</div>\n          <div class=\"ladder-wrapper\"><table class=\"ladder-table\"><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">91125</td></tr><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">30375</td></tr><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">10125</td></tr><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">3375</td></tr><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">1125</td></tr><tr><td class=\"ladder-div\">3</td><td class=\"ladder-num\">375</td></tr><tr><td class=\"ladder-div\">5</td><td class=\"ladder-num\">125</td></tr><tr><td class=\"ladder-div\">5</td><td class=\"ladder-num\">25</td></tr><tr><td class=\"ladder-div\">5</td><td class=\"ladder-num\">5</td></tr><tr><td class=\"ladder-last-div\">&nbsp;</td><td class=\"ladder-last-num\">1</td></tr></table></div>\n          <div>91125 = 3 &times; 3 &times; 3 &times; 3 &times; 3 &times; 3 &times; 5 &times; 5 &times; 5</div>\n          <div style=\"margin-top: 6px;\">\n            By grouping the factors in triplets of equal factors,\n          </div>\n          <div>91125 = <span class=\"triplet-box\">(3 &times; 3 &times; 3)</span> &times; <span class=\"triplet-box\">(3 &times; 3 &times; 3)</span> &times; <span class=\"triplet-box\">(5 &times; 5 &times; 5)</span></div>\n          <div style=\"margin-top: 6px;\">Here, 91125 can be grouped into triplets of equal factors.</div>\n          <div>&there4; &#8731;91125 = (3 &times; 3 &times; 5) = <b>45</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Cube Root: </span><span class=\"ans-val\">Hence, 45 is the cube root of 91125.</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 2 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 2:</div>\n    <div class=\"q-text\">State true or false.</div>\n\n    <!-- (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00E676;\">(i)</b> Cube of any odd number is even.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div><b>False.</b></div>\n          <div style=\"color: #94A3B8; font-size: 14px;\">Reason: The product of three odd numbers is always odd (e.g., 3<sup>3</sup> = 27, 5<sup>3</sup> = 125, 7<sup>3</sup> = 343).</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\" style=\"color: #FF5252;\">False</span></div>\n      </div>\n    </div>\n\n    <!-- (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00E676;\">(ii)</b> A perfect cube does not end with two zeros.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div><b>True.</b></div>\n          <div style=\"color: #94A3B8; font-size: 14px;\">Reason: A perfect cube ending in zeroes must end with a multiple of 3 zeroes (e.g. 10<sup>3</sup> = 1000, 20<sup>3</sup> = 8000). It can never end with exactly two zeroes.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\" style=\"color: #69F0AE;\">True</span></div>\n      </div>\n    </div>\n\n    <!-- (iii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00E676;\">(iii)</b> If the cube of a number ends with 5, then its cube ends with 25.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div><b>False.</b></div>\n          <div style=\"color: #94A3B8; font-size: 14px;\">Reason: Consider the number 15. Its square ends in 5 (15<sup>2</sup> = 225), but its cube 15<sup>3</sup> = <b>3375</b> ends with <b>75</b>, not 25.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\" style=\"color: #FF5252;\">False</span></div>\n      </div>\n    </div>\n\n    <!-- (iv) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00E676;\">(iv)</b> There is no perfect cube which ends with 8.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div><b>False.</b></div>\n          <div style=\"color: #94A3B8; font-size: 14px;\">Reason: 2<sup>3</sup> = 8 and 12<sup>3</sup> = 1728 are perfect cubes ending with 8.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\" style=\"color: #FF5252;\">False</span></div>\n      </div>\n    </div>\n\n    <!-- (v) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00E676;\">(v)</b> The cube of a two-digit number may be a three-digit number.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div><b>False.</b></div>\n          <div style=\"color: #94A3B8; font-size: 14px;\">Reason: The smallest two-digit number is 10. 10<sup>3</sup> = <b>1000</b> (a 4-digit number). Hence, the cube of any two-digit number has at least 4 digits.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\" style=\"color: #FF5252;\">False</span></div>\n      </div>\n    </div>\n\n    <!-- (vi) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00E676;\">(vi)</b> The cube of a two-digit number may have seven or more digits.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div><b>False.</b></div>\n          <div style=\"color: #94A3B8; font-size: 14px;\">Reason: The largest two-digit number is 99. 99<sup>3</sup> = <b>970299</b> (a 6-digit number). So it can have at most 6 digits, never 7 or more.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\" style=\"color: #FF5252;\">False</span></div>\n      </div>\n    </div>\n\n    <!-- (vii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00E676;\">(vii)</b> The cube of a single-digit number may be a single-digit number.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div><b>True.</b></div>\n          <div style=\"color: #94A3B8; font-size: 14px;\">Reason: 1<sup>3</sup> = 1 and 2<sup>3</sup> = 8 are single-digit numbers.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\" style=\"color: #69F0AE;\">True</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 3 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 3:</div>\n    <div class=\"q-text\">\n      You are told that 1,331 is a perfect cube. Can you guess without factorisation what its cube root is? Similarly, guess the cube roots of 4913, 12167, and 32768.\n    </div>\n\n    <!-- (i) 1331 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00E676;\">(i)</b> 1331</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>By grouping the digits, we get two groups: <b>1</b> and <b>331</b>.</div>\n          <div>We know that since the unit digit of 331 is 1, the unit digit of the cube root is 1.</div>\n          <div>&there4; We get <b>1</b> as the unit digit of the cube root of 1331.</div>\n          <div style=\"margin-top: 6px;\">The cube of 1 matches the number of the second group (1<sup>3</sup> = 1).</div>\n          <div>&there4; The ten's digit of our cube root is taken as <b>1</b>.</div>\n          <div>&there4; &#8731;1331 = <b>11</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">&#8731;1331 = 11</span></div>\n      </div>\n    </div>\n\n    <!-- (ii) 4913 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00E676;\">(ii)</b> 4913</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>By grouping the digits, we get two groups: <b>4</b> and <b>913</b>.</div>\n          <div>We know that since the unit digit of 913 is 3, the unit digit of the cube root is 7 (since 7<sup>3</sup> = 343).</div>\n          <div>&there4; We get <b>7</b> as the unit digit of the cube root of 4913.</div>\n          <div style=\"margin-top: 6px;\">Now, for the second group 4:</div>\n          <div>We know 1<sup>3</sup> = 1 and 2<sup>3</sup> = 8, with 1 &lt; 4 &lt; 8.</div>\n          <div>Thus, <b>1</b> is taken as the tens digit of the cube root.</div>\n          <div>&there4; &#8731;4913 = <b>17</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">&#8731;4913 = 17</span></div>\n      </div>\n    </div>\n\n    <!-- (iii) 12167 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00E676;\">(iii)</b> 12167</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>By grouping the digits, we get two groups: <b>12</b> and <b>167</b>.</div>\n          <div>We know that since the unit digit of 167 is 7, the unit digit of the cube root is 3 (since 3<sup>3</sup> = 27).</div>\n          <div>&there4; <b>3</b> is the unit digit of the cube root of 12167.</div>\n          <div style=\"margin-top: 6px;\">Now, for the second group 12:</div>\n          <div>We know 2<sup>3</sup> = 8 and 3<sup>3</sup> = 27, with 8 &lt; 12 &lt; 27.</div>\n          <div>Thus, <b>2</b> is taken as the tens digit of the cube root.</div>\n          <div>&there4; &#8731;12167 = <b>23</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">&#8731;12167 = 23</span></div>\n      </div>\n    </div>\n\n    <!-- (iv) 32768 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00E676;\">(iv)</b> 32768</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>By grouping the digits, we get two groups: <b>32</b> and <b>768</b>.</div>\n          <div>We know that since the unit digit of 768 is 8, the unit digit of the cube root is 2 (since 2<sup>3</sup> = 8).</div>\n          <div>&there4; <b>2</b> is the unit digit of the cube root of 32768.</div>\n          <div style=\"margin-top: 6px;\">Now, for the second group 32:</div>\n          <div>We know 3<sup>3</sup> = 27 and 4<sup>3</sup> = 64, with 27 &lt; 32 &lt; 64.</div>\n          <div>Thus, <b>3</b> is taken as the tens digit of the cube root.</div>\n          <div>&there4; &#8731;32768 = <b>32</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">&#8731;32768 = 32</span></div>\n      </div>\n    </div>\n  </div>\n\n</div>\n",
   },
 };

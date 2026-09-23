@@ -1,665 +1,462 @@
 import { ChapterContent } from "../types";
 
-const ex81Content = `
-  <style>
-    .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
-    .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
-    .frac .den { padding: 0 2px; }
-    .ex-container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
-    .q-card { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 15px; margin-bottom: 25px; }
-    .q-text { color: #FF6D00; font-weight: 600; margin-bottom: 12px; text-align: justify; }
-    .q-subtext { color: #e0e0e0; margin-bottom: 5px; margin-left: 10px; }
-    .sol-box { border-left: 3px solid #FF6D00; padding-left: 15px; margin-top: 15px; background: rgba(255, 109, 0, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; }
-    .ans-highlight { color: #FF6D00; font-weight: 700; }
-    .step-label { color: #FF9100; font-weight: 600; margin-right: 5px; }
-    .sol-step { margin-bottom: 8px; }
-      .q-text, .q-subtext, .sol-step, .sol-box { font-size: 16px; }
-  </style>
-  <div class="ex-container">
-    <div class="q-card">
-      <div class="q-text">1. Add the following.</div>
-      <div class="q-subtext">(i) ab - bc, bc - ca, ca - ab</div>
-      <div class="q-subtext">(ii) a - b + ab, b - c + bc, c - a + ac</div>
-      <div class="q-subtext">(iii) 2p²q² - 3pq + 4, 5 + 7pq - 3p²q²</div>
-      <div class="q-subtext">(iv) l² + m², m² + n², n² + l², 2lm + 2mn + 2nl</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step"><span class="step-label">(i)</span> (ab - bc) + (bc - ca) + (ca - ab)</div>
-        <div class="sol-step">= ab - ab - bc + bc - ca + ca = <span class="ans-highlight">0</span></div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(ii)</span> (a - b + ab) + (b - c + bc) + (c - a + ac)</div>
-        <div class="sol-step">= a - a - b + b - c + c + ab + bc + ac</div>
-        <div class="sol-step">= <span class="ans-highlight">ab + bc + ac</span></div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(iii)</span> (2p²q² - 3pq + 4) + (5 + 7pq - 3p²q²)</div>
-        <div class="sol-step">= 2p²q² - 3p²q² - 3pq + 7pq + 4 + 5</div>
-        <div class="sol-step">= <span class="ans-highlight">-p²q² + 4pq + 9</span></div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(iv)</span> (l² + m²) + (m² + n²) + (n² + l²) + (2lm + 2mn + 2nl)</div>
-        <div class="sol-step">= l² + l² + m² + m² + n² + n² + 2lm + 2mn + 2nl</div>
-        <div class="sol-step">= <span class="ans-highlight">2l² + 2m² + 2n² + 2lm + 2mn + 2nl</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">2. Subtract the following.</div>
-      <div class="q-subtext">(a) Subtract 4a - 7ab + 3b + 12 from 12a - 9ab + 5b - 3</div>
-      <div class="q-subtext">(b) Subtract 3xy + 5yz - 7zx from 5xy - 2yz - 2zx + 10xyz</div>
-      <div class="q-subtext">(c) Subtract 4p²q - 3pq + 5pq² - 8p + 7q - 10 from 18 - 3p - 11q + 5pq - 2pq² + 5p²q</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step"><span class="step-label">(a)</span> (12a - 9ab + 5b - 3) - (4a - 7ab + 3b + 12)</div>
-        <div class="sol-step">= 12a - 9ab + 5b - 3 - 4a + 7ab - 3b - 12</div>
-        <div class="sol-step">= (12a - 4a) + (-9ab + 7ab) + (5b - 3b) + (-3 - 12)</div>
-        <div class="sol-step">= <span class="ans-highlight">8a - 2ab + 2b - 15</span></div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(b)</span> (5xy - 2yz - 2zx + 10xyz) - (3xy + 5yz - 7zx)</div>
-        <div class="sol-step">= 5xy - 2yz - 2zx + 10xyz - 3xy - 5yz + 7zx</div>
-        <div class="sol-step">= (5xy - 3xy) + (-2yz - 5yz) + (-2zx + 7zx) + 10xyz</div>
-        <div class="sol-step">= <span class="ans-highlight">2xy - 7yz + 5zx + 10xyz</span></div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(c)</span> (18 - 3p - 11q + 5pq - 2pq² + 5p²q) - (4p²q - 3pq + 5pq² - 8p + 7q - 10)</div>
-        <div class="sol-step">= 18 - 3p - 11q + 5pq - 2pq² + 5p²q - 4p²q + 3pq - 5pq² + 8p - 7q + 10</div>
-        <div class="sol-step">= (5p²q - 4p²q) + (-2pq² - 5pq²) + (5pq + 3pq) + (-3p + 8p) + (-11q - 7q) + (18 + 10)</div>
-        <div class="sol-step">= <span class="ans-highlight">p²q - 7pq² + 8pq + 5p - 18q + 28</span></div>
-      </div>
-    </div>
-  </div>
-`;
-
-const ex82Content = `
-  <style>
-    .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
-    .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
-    .frac .den { padding: 0 2px; }
-    .ex-container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
-    .q-card { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 15px; margin-bottom: 25px; }
-    .q-text { color: #FF6D00; font-weight: 600; margin-bottom: 12px; text-align: justify; }
-    .q-subtext { color: #e0e0e0; margin-bottom: 5px; margin-left: 10px; }
-    .sol-box { border-left: 3px solid #FF6D00; padding-left: 15px; margin-top: 15px; background: rgba(255, 109, 0, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; }
-    .ans-highlight { color: #FF6D00; font-weight: 700; }
-    .step-label { color: #FF9100; font-weight: 600; margin-right: 5px; }
-    .sol-step { margin-bottom: 8px; }
-    .math-table { width: 100%; border-collapse: collapse; margin-top: 10px; color: #fff; font-size: 11px; }
-    .math-table th, .math-table td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 3px; text-align: center; white-space: nowrap; }
-    .math-table th { background: rgba(255, 109, 0, 0.2); color: #FF9100; font-weight: bold; }
-      .q-text, .q-subtext, .sol-step, .sol-box { font-size: 16px; }
-  </style>
-  <div class="ex-container">
-    <div class="q-card">
-      <div class="q-text">1. Find the product of the following pairs of monomials</div>
-      <div class="q-subtext">(i) 4, 7p</div>
-      <div class="q-subtext">(ii) -4p, 7p</div>
-      <div class="q-subtext">(iii) -4p, 7pq</div>
-      <div class="q-subtext">(iv) 4p³, -3p</div>
-      <div class="q-subtext">(v) 4p, 0</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step"><span class="step-label">(i)</span> 4 × 7p = <span class="ans-highlight">28p</span></div>
-        <div class="sol-step"><span class="step-label">(ii)</span> (-4p) × 7p = -4 × 7 × p × p = <span class="ans-highlight">-28p²</span></div>
-        <div class="sol-step"><span class="step-label">(iii)</span> (-4p) × 7pq = -4 × 7 × p × p × q = <span class="ans-highlight">-28p²q</span></div>
-        <div class="sol-step"><span class="step-label">(iv)</span> 4p³ × (-3p) = 4 × (-3) × p³ × p = <span class="ans-highlight">-12p⁴</span></div>
-        <div class="sol-step"><span class="step-label">(v)</span> 4p × 0 = <span class="ans-highlight">0</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">2. Find the areas of rectangles with the following pairs of monomials as their lengths and breadths respectively.</div>
-      <div class="q-subtext">(p, q); (10m, 5n); (20x², 5y²); (4x, 3x²); (3mn, 4np)</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Area of rectangle = Length × Breadth</div>
-        <div class="sol-step">(i) Area = p × q = <span class="ans-highlight">pq</span></div>
-        <div class="sol-step">(ii) Area = 10m × 5n = <span class="ans-highlight">50mn</span></div>
-        <div class="sol-step">(iii) Area = 20x² × 5y² = <span class="ans-highlight">100x²y²</span></div>
-        <div class="sol-step">(iv) Area = 4x × 3x² = <span class="ans-highlight">12x³</span></div>
-        <div class="sol-step">(v) Area = 3mn × 4np = <span class="ans-highlight">12mn²p</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">3. Complete the table of products.</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div style="overflow-x: auto;">
-          <table class="math-table">
-            <tr>
-              <th>×</th>
-              <th>2x</th>
-              <th>-5y</th>
-              <th>3x²</th>
-              <th>-4xy</th>
-              <th>7x²y</th>
-              <th>-9x²y²</th>
-            </tr>
-            <tr>
-              <th>2x</th>
-              <td><span class="ans-highlight">4x²</span></td>
-              <td><span class="ans-highlight">-10xy</span></td>
-              <td><span class="ans-highlight">6x³</span></td>
-              <td><span class="ans-highlight">-8x²y</span></td>
-              <td><span class="ans-highlight">14x³y</span></td>
-              <td><span class="ans-highlight">-18x³y²</span></td>
-            </tr>
-            <tr>
-              <th>-5y</th>
-              <td><span class="ans-highlight">-10xy</span></td>
-              <td><span class="ans-highlight">25y²</span></td>
-              <td><span class="ans-highlight">-15x²y</span></td>
-              <td><span class="ans-highlight">20xy²</span></td>
-              <td><span class="ans-highlight">-35x²y²</span></td>
-              <td><span class="ans-highlight">45x²y³</span></td>
-            </tr>
-            <tr>
-              <th>3x²</th>
-              <td><span class="ans-highlight">6x³</span></td>
-              <td><span class="ans-highlight">-15x²y</span></td>
-              <td><span class="ans-highlight">9x⁴</span></td>
-              <td><span class="ans-highlight">-12x³y</span></td>
-              <td><span class="ans-highlight">21x⁴y</span></td>
-              <td><span class="ans-highlight">-27x⁴y²</span></td>
-            </tr>
-            <tr>
-              <th>-4xy</th>
-              <td><span class="ans-highlight">-8x²y</span></td>
-              <td><span class="ans-highlight">20xy²</span></td>
-              <td><span class="ans-highlight">-12x³y</span></td>
-              <td><span class="ans-highlight">16x²y²</span></td>
-              <td><span class="ans-highlight">-28x³y²</span></td>
-              <td><span class="ans-highlight">36x³y³</span></td>
-            </tr>
-            <tr>
-              <th>7x²y</th>
-              <td><span class="ans-highlight">14x³y</span></td>
-              <td><span class="ans-highlight">-35x²y²</span></td>
-              <td><span class="ans-highlight">21x⁴y</span></td>
-              <td><span class="ans-highlight">-28x³y²</span></td>
-              <td><span class="ans-highlight">49x⁴y²</span></td>
-              <td><span class="ans-highlight">-63x⁴y³</span></td>
-            </tr>
-            <tr>
-              <th>-9x²y²</th>
-              <td><span class="ans-highlight">-18x³y²</span></td>
-              <td><span class="ans-highlight">45x²y³</span></td>
-              <td><span class="ans-highlight">-27x⁴y²</span></td>
-              <td><span class="ans-highlight">36x³y³</span></td>
-              <td><span class="ans-highlight">-63x⁴y³</span></td>
-              <td><span class="ans-highlight">81x⁴y⁴</span></td>
-            </tr>
-          </table>
-        </div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">4. Obtain the volume of rectangular boxes with the following length, breadth and height respectively</div>
-      <div class="q-subtext">(i) 5a, 3a², 7a⁴</div>
-      <div class="q-subtext">(ii) 2p, 4q, 8r</div>
-      <div class="q-subtext">(iii) xy, 2x²y, 2xy²</div>
-      <div class="q-subtext">(iv) a, 2b, 3c</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Volume = Length × Breadth × Height</div>
-        <div class="sol-step"><span class="step-label">(i)</span> Volume = 5a × 3a² × 7a⁴ = (5 × 3 × 7) × (a × a² × a⁴) = <span class="ans-highlight">105a⁷</span></div>
-        <div class="sol-step"><span class="step-label">(ii)</span> Volume = 2p × 4q × 8r = (2 × 4 × 8) × (p × q × r) = <span class="ans-highlight">64pqr</span></div>
-        <div class="sol-step"><span class="step-label">(iii)</span> Volume = xy × 2x²y × 2xy² = (1 × 2 × 2) × (x × x² × x) × (y × y × y²) = <span class="ans-highlight">4x⁴y⁴</span></div>
-        <div class="sol-step"><span class="step-label">(iv)</span> Volume = a × 2b × 3c = (1 × 2 × 3) × (a × b × c) = <span class="ans-highlight">6abc</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">5. Obtain the product of</div>
-      <div class="q-subtext">(i) xy, yz, zx</div>
-      <div class="q-subtext">(ii) a, -a², a³</div>
-      <div class="q-subtext">(iii) 2, 4y, 8y², 16y³</div>
-      <div class="q-subtext">(iv) a, 2b, 3c, 6abc</div>
-      <div class="q-subtext">(v) m, -mn, mnp</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step"><span class="step-label">(i)</span> xy × yz × zx = x²y²z² = <span class="ans-highlight">x²y²z²</span></div>
-        <div class="sol-step"><span class="step-label">(ii)</span> a × (-a²) × a³ = <span class="ans-highlight">-a⁶</span></div>
-        <div class="sol-step"><span class="step-label">(iii)</span> 2 × 4y × 8y² × 16y³ = (2 × 4 × 8 × 16) × (y × y² × y³) = <span class="ans-highlight">1024y⁶</span></div>
-        <div class="sol-step"><span class="step-label">(iv)</span> a × 2b × 3c × 6abc = (1 × 2 × 3 × 6) × (a × b × c × abc) = <span class="ans-highlight">36a²b²c²</span></div>
-        <div class="sol-step"><span class="step-label">(v)</span> m × (-mn) × mnp = - (m × m × m) × (n × n) × p = <span class="ans-highlight">-m³n²p</span></div>
-      </div>
-    </div>
-  </div>
-`;
-
-const ex83Content = `
-  <style>
-    .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
-    .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
-    .frac .den { padding: 0 2px; }
-    .ex-container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
-    .q-card { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 15px; margin-bottom: 25px; }
-    .q-text { color: #FF6D00; font-weight: 600; margin-bottom: 12px; text-align: justify; }
-    .q-subtext { color: #e0e0e0; margin-bottom: 5px; margin-left: 10px; }
-    .sol-box { border-left: 3px solid #FF6D00; padding-left: 15px; margin-top: 15px; background: rgba(255, 109, 0, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; }
-    .ans-highlight { color: #FF6D00; font-weight: 700; }
-    .step-label { color: #FF9100; font-weight: 600; margin-right: 5px; }
-    .sol-step { margin-bottom: 8px; }
-    .math-table { width: 100%; border-collapse: collapse; margin-top: 15px; margin-bottom: 15px; color: #fff; font-size: 14px; }
-    .math-table th, .math-table td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 8px 4px; text-align: center; }
-    .math-table th { background: rgba(255, 109, 0, 0.2); color: #FF9100; font-weight: bold; }
-      .q-text, .q-subtext, .sol-step, .sol-box { font-size: 16px; }
-  </style>
-  <div class="ex-container">
-    <div class="q-card">
-      <div class="q-text">1. Carry out the multiplication of the expressions in each of the following pairs.</div>
-      <div class="q-subtext">(i) 4p, q + r</div>
-      <div class="q-subtext">(ii) ab, a - b</div>
-      <div class="q-subtext">(iii) a + b, 7a²b²</div>
-      <div class="q-subtext">(iv) a² - 9, 4a</div>
-      <div class="q-subtext">(v) pq + qr + rp, 0</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step"><span class="step-label">(i)</span> 4p × (q + r) = (4p × q) + (4p × r) = <span class="ans-highlight">4pq + 4pr</span></div>
-        <div class="sol-step"><span class="step-label">(ii)</span> ab × (a - b) = (ab × a) - (ab × b) = <span class="ans-highlight">a²b - ab²</span></div>
-        <div class="sol-step"><span class="step-label">(iii)</span> (a + b) × 7a²b² = (a × 7a²b²) + (b × 7a²b²) = <span class="ans-highlight">7a³b² + 7a²b³</span></div>
-        <div class="sol-step"><span class="step-label">(iv)</span> (a² - 9) × 4a = (a² × 4a) - (9 × 4a) = <span class="ans-highlight">4a³ - 36a</span></div>
-        <div class="sol-step"><span class="step-label">(v)</span> (pq + qr + rp) × 0 = <span class="ans-highlight">0</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">2. Complete the table.</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div style="overflow-x: auto;">
-          <table class="math-table">
-            <tr>
-              <th></th>
-              <th>Expr 1</th>
-              <th>Expr 2</th>
-              <th>Product</th>
-            </tr>
-            <tr>
-              <td>(i)</td>
-              <td>a</td>
-              <td>b + c + d</td>
-              <td><span class="ans-highlight">ab + ac + ad</span></td>
-            </tr>
-            <tr>
-              <td>(ii)</td>
-              <td>x + y - 5</td>
-              <td>5xy</td>
-              <td><span class="ans-highlight">5x²y + 5xy² - 25xy</span></td>
-            </tr>
-            <tr>
-              <td>(iii)</td>
-              <td>p</td>
-              <td>6p² - 7p + 5</td>
-              <td><span class="ans-highlight">6p³ - 7p² + 5p</span></td>
-            </tr>
-            <tr>
-              <td>(iv)</td>
-              <td>4p²q²</td>
-              <td>p² - q²</td>
-              <td><span class="ans-highlight">4p⁴q² - 4p²q⁴</span></td>
-            </tr>
-            <tr>
-              <td>(v)</td>
-              <td>a + b + c</td>
-              <td>abc</td>
-              <td><span class="ans-highlight">a²bc + ab²c + abc²</span></td>
-            </tr>
-          </table>
-        </div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">3. Find the product.</div>
-      <div class="q-subtext">(i) (a²) × (2a<sup>22</sup>) × (4a<sup>26</sup>)</div>
-      <div class="q-subtext">(ii) (<span class='frac'><span class='num'>2</span><span class='den'>3</span></span> xy) × (-<span class='frac'><span class='num'>9</span><span class='den'>10</span></span> x²y²)</div>
-      <div class="q-subtext">(iii) (-<span class='frac'><span class='num'>10</span><span class='den'>3</span></span> pq³) × (<span class='frac'><span class='num'>6</span><span class='den'>5</span></span> p³q)</div>
-      <div class="q-subtext">(iv) x × x² × x³ × x⁴</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step"><span class="step-label">(i)</span> (a²) × (2a<sup>22</sup>) × (4a<sup>26</sup>) = (1 × 2 × 4) × a<sup>(2 + 22 + 26)</sup> = <span class="ans-highlight">8a<sup>50</sup></span></div>
-        <div class="sol-step"><span class="step-label">(ii)</span> (<span class='frac'><span class='num'>2</span><span class='den'>3</span></span> xy) × (-<span class='frac'><span class='num'>9</span><span class='den'>10</span></span> x²y²) = (<span class='frac'><span class='num'>2</span><span class='den'>3</span></span> × -<span class='frac'><span class='num'>9</span><span class='den'>10</span></span>) × (x × x²) × (y × y²)</div>
-        <div class="sol-step">= (-<span class='frac'><span class='num'>18</span><span class='den'>30</span></span>) x³y³ = <span class="ans-highlight">-<span class='frac'><span class='num'>3</span><span class='den'>5</span></span> x³y³</span></div>
-        <div class="sol-step"><span class="step-label">(iii)</span> (-<span class='frac'><span class='num'>10</span><span class='den'>3</span></span> pq³) × (<span class='frac'><span class='num'>6</span><span class='den'>5</span></span> p³q) = (-<span class='frac'><span class='num'>10</span><span class='den'>3</span></span> × <span class='frac'><span class='num'>6</span><span class='den'>5</span></span>) × (p × p³) × (q³ × q)</div>
-        <div class="sol-step">= (-<span class='frac'><span class='num'>60</span><span class='den'>15</span></span>) p⁴q⁴ = <span class="ans-highlight">-4p⁴q⁴</span></div>
-        <div class="sol-step"><span class="step-label">(iv)</span> x × x² × x³ × x⁴ = x<sup>(1 + 2 + 3 + 4)</sup> = <span class="ans-highlight">x<sup>10</sup></span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">4. (a) Simplify 3x (4x - 5) + 3 and find its values for (i) x = 3 (ii) x = <span class='frac'><span class='num'>1</span><span class='den'>2</span></span>.<br/>(b) Simplify a (a² + a + 1) + 5 and find its value for (i) a = 0, (ii) a = 1 (iii) a = -1.</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step"><span class="step-label">(a)</span> 3x(4x - 5) + 3 = 12x² - 15x + 3</div>
-        <div class="sol-step">(i) For x = 3: 12(3)² - 15(3) + 3 = 12(9) - 45 + 3 = 108 - 45 + 3 = <span class="ans-highlight">66</span></div>
-        <div class="sol-step">(ii) For x = <span class='frac'><span class='num'>1</span><span class='den'>2</span></span>: 12(<span class='frac'><span class='num'>1</span><span class='den'>2</span></span>)² - 15(<span class='frac'><span class='num'>1</span><span class='den'>2</span></span>) + 3 = 12(<span class='frac'><span class='num'>1</span><span class='den'>4</span></span>) - <span class='frac'><span class='num'>15</span><span class='den'>2</span></span> + 3 = 3 - 7.5 + 3 = 6 - 7.5 = <span class="ans-highlight">-1.5 (or -<span class='frac'><span class='num'>3</span><span class='den'>2</span></span>)</span></div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(b)</span> a(a² + a + 1) + 5 = a³ + a² + a + 5</div>
-        <div class="sol-step">(i) For a = 0: 0³ + 0² + 0 + 5 = <span class="ans-highlight">5</span></div>
-        <div class="sol-step">(ii) For a = 1: 1³ + 1² + 1 + 5 = 1 + 1 + 1 + 5 = <span class="ans-highlight">8</span></div>
-        <div class="sol-step">(iii) For a = -1: (-1)³ + (-1)² + (-1) + 5 = -1 + 1 - 1 + 5 = <span class="ans-highlight">4</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">5. (a) Add: p (p - q), q (q - r) and r (r - p)<br/>(b) Add: 2x (z - x - y) and 2y (z - y - x)<br/>(c) Subtract: 3l (l - 4m + 5n) from 4l (10n - 3m + 2l)<br/>(d) Subtract: 3a (a + b + c) - 2b (a - b + c) from 4c (-a + b + c)</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step"><span class="step-label">(a)</span> p(p - q) + q(q - r) + r(r - p)</div>
-        <div class="sol-step">= p² - pq + q² - qr + r² - rp</div>
-        <div class="sol-step">= <span class="ans-highlight">p² + q² + r² - pq - qr - rp</span></div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(b)</span> 2x(z - x - y) + 2y(z - y - x)</div>
-        <div class="sol-step">= 2xz - 2x² - 2xy + 2yz - 2y² - 2xy</div>
-        <div class="sol-step">= <span class="ans-highlight">-2x² - 2y² - 4xy + 2yz + 2zx</span></div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(c)</span> 4l(10n - 3m + 2l) - 3l(l - 4m + 5n)</div>
-        <div class="sol-step">= (40ln - 12lm + 8l²) - (3l² - 12lm + 15ln)</div>
-        <div class="sol-step">= 40ln - 12lm + 8l² - 3l² + 12lm - 15ln</div>
-        <div class="sol-step">= (8l² - 3l²) + (-12lm + 12lm) + (40ln - 15ln)</div>
-        <div class="sol-step">= <span class="ans-highlight">5l² + 25ln</span></div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(d)</span> First simplify what to subtract:</div>
-        <div class="sol-step">3a(a + b + c) - 2b(a - b + c) = 3a² + 3ab + 3ac - 2ab + 2b² - 2bc</div>
-        <div class="sol-step">= 3a² + 2b² + ab + 3ac - 2bc</div>
-        <div class="sol-step">Now subtract from 4c(-a + b + c) = -4ac + 4bc + 4c²:</div>
-        <div class="sol-step">(-4ac + 4bc + 4c²) - (3a² + 2b² + ab + 3ac - 2bc)</div>
-        <div class="sol-step">= -4ac + 4bc + 4c² - 3a² - 2b² - ab - 3ac + 2bc</div>
-        <div class="sol-step">= <span class="ans-highlight">-3a² - 2b² + 4c² - ab + 6bc - 7ac</span></div>
-      </div>
-    </div>
-  </div>
-`;
-
-const ex84Content = `
-  <style>
-    .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
-    .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
-    .frac .den { padding: 0 2px; }
-    .ex-container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
-    .q-card { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 15px; margin-bottom: 25px; }
-    .q-text { color: #FF6D00; font-weight: 600; margin-bottom: 12px; text-align: justify; }
-    .q-subtext { color: #e0e0e0; margin-bottom: 5px; margin-left: 10px; }
-    .sol-box { border-left: 3px solid #FF6D00; padding-left: 15px; margin-top: 15px; background: rgba(255, 109, 0, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; }
-    .ans-highlight { color: #FF6D00; font-weight: 700; }
-    .step-label { color: #FF9100; font-weight: 600; margin-right: 5px; }
-    .sol-step { margin-bottom: 8px; }
-      .q-text, .q-subtext, .sol-step, .sol-box { font-size: 16px; }
-  </style>
-  <div class="ex-container">
-    <div class="q-card">
-      <div class="q-text">1. Multiply</div>
-      <div class="q-subtext">(i) (2x + 5) and (4x - 3)</div>
-      <div class="q-subtext">(ii) (y - 8) and (3y - 4)</div>
-      <div class="q-subtext">(iii) (2.5l - 0.5m) and (2.5l + 0.5m)</div>
-      <div class="q-subtext">(iv) (a + 3b) and (x + 5)</div>
-      <div class="q-subtext">(v) (2pq + 3q²) and (3pq - 2q²)</div>
-      <div class="q-subtext">(vi) (<span class='frac'><span class='num'>3</span><span class='den'>4</span></span> a² + 3b²) and 4(a² - <span class='frac'><span class='num'>2</span><span class='den'>3</span></span> b²)</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step"><span class="step-label">(i)</span> (2x + 5)(4x - 3) = 2x(4x - 3) + 5(4x - 3) = 8x² - 6x + 20x - 15 = <span class="ans-highlight">8x² + 14x - 15</span></div>
-        <div class="sol-step"><span class="step-label">(ii)</span> (y - 8)(3y - 4) = y(3y - 4) - 8(3y - 4) = 3y² - 4y - 24y + 32 = <span class="ans-highlight">3y² - 28y + 32</span></div>
-        <div class="sol-step"><span class="step-label">(iii)</span> (2.5l - 0.5m)(2.5l + 0.5m) = (2.5l)² - (0.5m)² = <span class="ans-highlight">6.25l² - 0.25m²</span></div>
-        <div class="sol-step"><span class="step-label">(iv)</span> (a + 3b)(x + 5) = a(x + 5) + 3b(x + 5) = <span class="ans-highlight">ax + 5a + 3bx + 15b</span></div>
-        <div class="sol-step"><span class="step-label">(v)</span> (2pq + 3q²)(3pq - 2q²) = 2pq(3pq - 2q²) + 3q²(3pq - 2q²) = 6p²q² - 4pq³ + 9pq³ - 6q⁴ = <span class="ans-highlight">6p²q² + 5pq³ - 6q⁴</span></div>
-        <div class="sol-step"><span class="step-label">(vi)</span> (<span class='frac'><span class='num'>3</span><span class='den'>4</span></span> a² + 3b²) × 4(a² - <span class='frac'><span class='num'>2</span><span class='den'>3</span></span> b²) = (<span class='frac'><span class='num'>3</span><span class='den'>4</span></span> a² + 3b²)(4a² - <span class='frac'><span class='num'>8</span><span class='den'>3</span></span> b²)</div>
-        <div class="sol-step">= <span class='frac'><span class='num'>3</span><span class='den'>4</span></span> a²(4a² - <span class='frac'><span class='num'>8</span><span class='den'>3</span></span> b²) + 3b²(4a² - <span class='frac'><span class='num'>8</span><span class='den'>3</span></span> b²) = 3a⁴ - 2a²b² + 12a²b² - 8b⁴ = <span class="ans-highlight">3a⁴ + 10a²b² - 8b⁴</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">2. Find the product.</div>
-      <div class="q-subtext">(i) (5 - 2x) (3 + x)</div>
-      <div class="q-subtext">(ii) (x + 7y) (7x - y)</div>
-      <div class="q-subtext">(iii) (a² + b) (a + b²)</div>
-      <div class="q-subtext">(iv) (p² - q²) (2p + q)</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step"><span class="step-label">(i)</span> (5 - 2x)(3 + x) = 5(3 + x) - 2x(3 + x) = 15 + 5x - 6x - 2x² = <span class="ans-highlight">15 - x - 2x²</span></div>
-        <div class="sol-step"><span class="step-label">(ii)</span> (x + 7y)(7x - y) = x(7x - y) + 7y(7x - y) = 7x² - xy + 49xy - 7y² = <span class="ans-highlight">7x² + 48xy - 7y²</span></div>
-        <div class="sol-step"><span class="step-label">(iii)</span> (a² + b)(a + b²) = a²(a + b²) + b(a + b²) = <span class="ans-highlight">a³ + a²b² + ab + b³</span></div>
-        <div class="sol-step"><span class="step-label">(iv)</span> (p² - q²)(2p + q) = p²(2p + q) - q²(2p + q) = <span class="ans-highlight">2p³ + p²q - 2pq² - q³</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">3. Simplify</div>
-      <div class="q-subtext">(i) (x² - 5) (x + 5) + 25</div>
-      <div class="q-subtext">(ii) (a² + 5) (b³ + 3) + 5</div>
-      <div class="q-subtext">(iii) (t + s²) (t² - s)</div>
-      <div class="q-subtext">(iv) (a + b) (c - d) + (a - b) (c + d) + 2 (ac + bd)</div>
-      <div class="q-subtext">(v) (x + y) (2x + y) + (x + 2y) (x - y)</div>
-      <div class="q-subtext">(vi) (x + y) (x² - xy + y²)</div>
-      <div class="q-subtext">(vii) (1.5x - 4y) (1.5x + 4y + 3) - 4.5x + 12y</div>
-      <div class="q-subtext">(viii) (a + b + c) (a + b - c)</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step"><span class="step-label">(i)</span> (x² - 5)(x + 5) + 25 = x³ + 5x² - 5x - 25 + 25 = <span class="ans-highlight">x³ + 5x² - 5x</span></div>
-        <div class="sol-step"><span class="step-label">(ii)</span> (a² + 5)(b³ + 3) + 5 = a²b³ + 3a² + 5b³ + 15 + 5 = <span class="ans-highlight">a²b³ + 3a² + 5b³ + 20</span></div>
-        <div class="sol-step"><span class="step-label">(iii)</span> (t + s²)(t² - s) = t(t² - s) + s²(t² - s) = <span class="ans-highlight">t³ - ts + s²t² - s³</span></div>
-        <div class="sol-step"><span class="step-label">(iv)</span> (ac - ad + bc - bd) + (ac + ad - bc - bd) + (2ac + 2bd)</div>
-        <div class="sol-step">= ac + ac + 2ac - ad + ad + bc - bc - bd - bd + 2bd = <span class="ans-highlight">4ac</span></div>
-        <div class="sol-step"><span class="step-label">(v)</span> (2x² + xy + 2xy + y²) + (x² - xy + 2xy - 2y²)</div>
-        <div class="sol-step">= 2x² + 3xy + y² + x² + xy - 2y² = <span class="ans-highlight">3x² + 4xy - y²</span></div>
-        <div class="sol-step"><span class="step-label">(vi)</span> x(x² - xy + y²) + y(x² - xy + y²) = x³ - x²y + xy² + x²y - xy² + y³ = <span class="ans-highlight">x³ + y³</span></div>
-        <div class="sol-step"><span class="step-label">(vii)</span> 1.5x(1.5x + 4y + 3) - 4y(1.5x + 4y + 3) - 4.5x + 12y</div>
-        <div class="sol-step">= 2.25x² + 6xy + 4.5x - 6xy - 16y² - 12y - 4.5x + 12y = <span class="ans-highlight">2.25x² - 16y²</span></div>
-        <div class="sol-step"><span class="step-label">(viii)</span> a(a + b - c) + b(a + b - c) + c(a + b - c)</div>
-        <div class="sol-step">= a² + ab - ac + ba + b² - bc + ca + cb - c² = <span class="ans-highlight">a² + b² - c² + 2ab</span></div>
-      </div>
-    </div>
-  </div>
-`;
-
 export const c8Math8: ChapterContent = {
   id: "c8-math-8",
   number: 8,
-  title: "Algebraic Expressions and Identities",
+  title: "Comparing Quantities",
   introduction:
-    "In this chapter, we explore algebraic expressions, their addition, subtraction, and multiplication. We also learn about standard identities and how to apply them.",
-  mcqs: [
+    "Comparing Quantities provides essential mathematical tools for business, finance, and everyday decision making. In this chapter, we master ratio and percentage conversions, profit and loss analysis with overhead expenses, discounts on marked prices, sales tax, VAT, Goods and Services Tax (GST), simple interest, annual and half-yearly compound interest, as well as real-world applications of growth and depreciation.",
+  definitions: [
     {
-      id: "m1",
-      question: "Which of the following is a binomial?",
-      options: ["4x", "4x + 3", "4x² + 3x + 1", "7"],
-      correctAnswer: "4x + 3",
+      term: "Ratio",
+      description:
+        "A comparison of two quantities of the same kind having identical units, expressed by division (a : b or a / b).",
     },
     {
-      id: "m2",
-      question: "The coefficient of x in the term -5xy is:",
-      options: ["-5", "-5y", "y", "5"],
-      correctAnswer: "-5y",
+      term: "Percentage (%)",
+      description:
+        "A fraction or ratio where the denominator is always 100, representing parts per hundred.",
     },
     {
-      id: "m3",
-      question: "What is the product of 2x and 3y?",
-      options: ["5xy", "6x", "6y", "6xy"],
-      correctAnswer: "6xy",
+      term: "Discount",
+      description:
+        "The reduction offered on the Marked Price (M.P.) of an article: Discount = Marked Price &minus; Sale Price.",
     },
     {
-      id: "m4",
-      question: "The value of a² - b² is equal to:",
-      options: ["(a+b)(a-b)", "(a-b)²", "a² + b²", "None of these"],
-      correctAnswer: "(a+b)(a-b)",
+      term: "Compound Interest (C.I.)",
+      description:
+        "Interest calculated on the initial principal and also on the accumulated interest of previous conversion periods: C.I. = Amount &minus; Principal.",
     },
     {
-      id: "m5",
-      question: "Add 5x and 7x:",
-      options: ["12x²", "12x", "35x", "35x²"],
-      correctAnswer: "12x",
-    },
-    {
-      id: "m6",
-      question: "Subtract 3a from 8a:",
-      options: ["5", "5a", "11a", "24a"],
-      correctAnswer: "5a",
-    },
-    {
-      id: "m7",
-      question: "An algebraic expression containing three terms is called:",
-      options: ["Monomial", "Binomial", "Trinomial", "Polynomial"],
-      correctAnswer: "Trinomial",
-    },
-    {
-      id: "m8",
-      question: "What is the square of (x + y)?",
-      options: ["x² + y²", "x² + 2xy + y²", "x² - 2xy + y²", "x²y²"],
-      correctAnswer: "x² + 2xy + y²",
-    },
-    {
-      id: "m9",
-      question: "The product of a monomial and a binomial is a:",
-      options: ["Monomial", "Binomial", "Trinomial", "None"],
-      correctAnswer: "Binomial",
-    },
-    {
-      id: "m10",
-      question: "What is the volume of a box with dimensions 2, 3x, and 4y?",
-      options: ["24xy", "9xy", "24x²y", "14xy"],
-      correctAnswer: "24xy",
+      term: "Depreciation",
+      description:
+        "The gradual decrease in the monetary value of an asset (such as machinery or vehicles) over time due to wear, tear, or obsolescence.",
     },
   ],
-  summary: [
-    "Expressions are formed from variables and constants.",
-    "Terms are added to form expressions. Terms themselves are formed as product of factors.",
-    "Expressions that contain exactly one, two and three terms are called monomials, binomials and trinomials respectively.",
-    "While adding or subtracting polynomials, we add or subtract like terms.",
-    "An identity is an equality, which is true for all values of the variables in the equality.",
+  keyPoints: [
+    "Quantities must be converted into identical units before finding their ratio.",
+    "Cost Price (C.P.) includes buying price plus all overhead expenses like repairs, transport, and labour.",
+    "Profit = S.P. &minus; C.P. (when S.P. &gt; C.P.); Loss = C.P. &minus; S.P. (when C.P. &gt; S.P.).",
+    "Profit % and Loss % are always computed on the Cost Price (C.P.).",
+    "Discount is always calculated on the Marked Price (M.P.).",
+    "Sales Tax, VAT, and GST are always calculated on the selling price and added to the bill.",
+    "In half-yearly compounding, the annual interest rate is halved (R/2) and conversion periods double (2n).",
+    "Depreciated value after n years is given by P(1 &minus; R/100)<sup>n</sup>.",
   ],
+  formulas: [
+    {
+      name: "Profit Percentage",
+      formula: "Profit % = (Profit / C.P.) &times; 100%",
+    },
+    {
+      name: "Loss Percentage",
+      formula: "Loss % = (Loss / C.P.) &times; 100%",
+    },
+    {
+      name: "Discount Formula",
+      formula: "Discount = M.P. &minus; S.P. &nbsp;|&nbsp; Discount % = (Discount / M.P.) &times; 100%",
+    },
+    {
+      name: "Simple Interest",
+      formula: "S.I. = (P &times; R &times; T) / 100",
+    },
+    {
+      name: "Compound Amount (Annually)",
+      formula: "A = P &times; (1 + R / 100)<sup>n</sup>",
+    },
+    {
+      name: "Compound Amount (Half-Yearly)",
+      formula: "A = P &times; (1 + R / 200)<sup>2n</sup>",
+    },
+    {
+      name: "Depreciation Formula",
+      formula: "Value = P &times; (1 &minus; R / 100)<sup>n</sup>",
+    },
+  ],
+  crux: [],
   exercises: [
-    { id: "ex8-1", name: "Exercise 8.1", questions: [] },
-    { id: "ex8-2", name: "Exercise 8.2", questions: [] },
-    { id: "ex8-3", name: "Exercise 8.3", questions: [] },
-    { id: "ex8-4", name: "Exercise 8.4", questions: [] },
+    {
+      id: "ex8-1",
+      name: "Exercise 8.1",
+      questions: [
+        {
+          id: "c8-m8-ex8-1-q1",
+          number: "1",
+          question: "Find the ratio of the following: (a) Speed of a cycle 15 km/h to scooter 30 km/h (b) 5 m to 10 km (c) 50 paise to ₹ 5",
+          solution: ["See complete ratio conversions with standardized units in the interactive Web View."],
+        },
+        {
+          id: "c8-m8-ex8-1-q2",
+          number: "2",
+          question: "Convert the following ratios to percentages: (a) 3 : 4 (b) 2 : 3",
+          solution: ["See fractional percentage conversion steps in the interactive Web View."],
+        },
+        {
+          id: "c8-m8-ex8-1-q3",
+          number: "3",
+          question: "72% of 25 students are good in mathematics. How many are not good in mathematics?",
+          solution: ["See complementary percentage deduction in the interactive Web View."],
+        },
+        {
+          id: "c8-m8-ex8-1-q4",
+          number: "4",
+          question: "A football team won 10 matches out of the total number of matches they played. If their win percentage was 40, then how many matches did they play in all?",
+          solution: ["See algebraic equation solving in the interactive Web View."],
+        },
+        {
+          id: "c8-m8-ex8-1-q5",
+          number: "5",
+          question: "If Chameli had ₹ 600 left after spending 75% of her money, how much did she have in the beginning?",
+          solution: ["See remaining percentage equation in the interactive Web View."],
+        },
+        {
+          id: "c8-m8-ex8-1-q6",
+          number: "6",
+          question: "If 60% of people in a city like cricket, 30% like football and the remaining like other games, then what per cent of the people like other games? If total people are 50 lakhs, find exact number for each.",
+          solution: ["See percentage breakdown and population calculations in the interactive Web View."],
+        },
+      ],
+    },
+    {
+      id: "ex8-2",
+      name: "Exercise 8.2",
+      questions: [
+        {
+          id: "c8-m8-ex8-2-q1",
+          number: "1",
+          question: "A man got a 10% increase in his salary. If his new salary is ₹ 1,54,000, find his original salary.",
+          solution: ["See salary increment working in the interactive Web View."],
+        },
+        {
+          id: "c8-m8-ex8-2-q2",
+          number: "2",
+          question: "On Sunday, 845 people went to the zoo. On Monday, only 169 people went. What is the per cent decrease in the number of people visiting the zoo on Monday?",
+          solution: ["See percentage decrease steps in the interactive Web View."],
+        },
+        {
+          id: "c8-m8-ex8-2-q3",
+          number: "3",
+          question: "A shopkeeper buys 80 articles for ₹ 2,400 and sells them for a profit of 16%. Find the selling price of one article.",
+          solution: ["See unitary cost and selling price working in the interactive Web View."],
+        },
+        {
+          id: "c8-m8-ex8-2-q4",
+          number: "4",
+          question: "The cost of an article was ₹ 15,500. ₹ 450 was spent on its repairs. If it is sold for a profit of 15%, find the selling price of the article.",
+          solution: ["See effective cost price and profit working in the interactive Web View."],
+        },
+        {
+          id: "c8-m8-ex8-2-q5",
+          number: "5",
+          question: "A VCR and TV were bought for ₹ 8,000 each. The shopkeeper made a loss of 4% on VCR and a profit of 8% on TV. Find gain or loss per cent on whole transaction.",
+          solution: ["See two-item transaction matrix in the interactive Web View."],
+        },
+        {
+          id: "c8-m8-ex8-2-q6",
+          number: "6",
+          question: "During a sale, a shop offered a discount of 10% on marked prices. What would a customer have to pay for a pair of jeans marked at ₹ 1450 and two shirts marked at ₹ 850 each?",
+          solution: ["See total marked price and discount deduction in the interactive Web View."],
+        },
+        {
+          id: "c8-m8-ex8-2-q7",
+          number: "7",
+          question: "A milkman sold two of his buffaloes for ₹ 20,000 each. On one, he made a gain of 5% and on other, a loss of 10%. Find his overall gain or loss.",
+          solution: ["See separate cost prices and overall loss calculation in the interactive Web View."],
+        },
+        {
+          id: "c8-m8-ex8-2-q8",
+          number: "8",
+          question: "The price of a TV is ₹ 13,000. Sales tax charged is 12%. Find amount Vinod will have to pay.",
+          solution: ["See sales tax calculation in the interactive Web View."],
+        },
+        {
+          id: "c8-m8-ex8-2-q9",
+          number: "9",
+          question: "Arun bought a pair of skates at a sale where discount given was 20%. If amount paid is ₹ 1,600, find marked price.",
+          solution: ["See reverse discount equation in the interactive Web View."],
+        },
+        {
+          id: "c8-m8-ex8-2-q10",
+          number: "10",
+          question: "I purchased a hair dryer for ₹ 5,400, including 8% VAT. Find price before VAT was added.",
+          solution: ["See VAT exclusion working in the interactive Web View."],
+        },
+      ],
+    },
+    {
+      id: "ex8-3",
+      name: "Exercise 8.3",
+      questions: [
+        {
+          id: "c8-m8-ex8-3-q1",
+          number: "1",
+          question: "Calculate amount and compound interest on: (a) ₹ 10,800 for 3 yrs at 12½% p.a. (b) ₹ 18,000 for 2½ yrs at 10% p.a. (c) ₹ 62,500 for 1½ yrs at 8% p.a. half yearly (d) ₹ 8,000 for 1 yr at 9% p.a. half yearly (e) ₹ 10,000 for 1 yr at 8% p.a. half yearly",
+          solution: ["See all 5 sub-parts with full compound amount formulas in the interactive Web View."],
+        },
+        {
+          id: "c8-m8-ex8-3-q2",
+          number: "2",
+          question: "Kamala borrowed ₹ 26,400 from a Bank to buy a scooter at 15% p.a. compounded yearly. What amount will she pay at the end of 2 years and 4 months to clear the loan?",
+          solution: ["See 2 years compound interest plus 4 months simple interest split calculation in the interactive Web View."],
+        },
+        {
+          id: "c8-m8-ex8-3-q3",
+          number: "3",
+          question: "Fabina borrows ₹ 12,500 at 12% p.a. for 3 years at simple interest, and Radha borrows same amount at 10% p.a. compounded annually. Who pays more interest, and by how much?",
+          solution: ["See SI vs CI side-by-side comparison in the interactive Web View."],
+        },
+        {
+          id: "c8-m8-ex8-3-q4",
+          number: "4",
+          question: "I borrowed ₹ 12,000 at 6% p.a. simple interest for 2 years. Had I borrowed this sum at 6% p.a. compound interest, what extra amount would I have to pay?",
+          solution: ["See extra interest calculation in the interactive Web View."],
+        },
+        {
+          id: "c8-m8-ex8-3-q5",
+          number: "5",
+          question: "Vasudevan invested ₹ 60,000 at 12% p.a. compounded half yearly. What amount would he get: (i) after 6 months? (ii) after 1 year?",
+          solution: ["See half-yearly period amount calculations in the interactive Web View."],
+        },
+        {
+          id: "c8-m8-ex8-3-q6",
+          number: "6",
+          question: "Arif took loan of ₹ 80,000 at 10% p.a. Find difference in amounts paying after 1½ years if interest is: (i) Compounded annually (ii) Compounded half yearly.",
+          solution: ["See annual vs half-yearly comparison and ₹ 210 difference in the interactive Web View."],
+        },
+        {
+          id: "c8-m8-ex8-3-q7",
+          number: "7",
+          question: "Maria invested ₹ 8,000 at 5% p.a. compounded annually. Find: (i) Amount at end of second year (ii) Interest for 3rd year.",
+          solution: ["See 2nd year amount and 3rd year interest steps in the interactive Web View."],
+        },
+        {
+          id: "c8-m8-ex8-3-q8",
+          number: "8",
+          question: "Find amount and compound interest on ₹ 10,000 for 1½ years at 10% p.a. compounded half yearly. Would this interest be more than if compounded annually?",
+          solution: ["See half-yearly vs annually verification in the interactive Web View."],
+        },
+        {
+          id: "c8-m8-ex8-3-q9",
+          number: "9",
+          question: "Find amount which Ram will get on ₹ 4,096, if he gave it for 18 months at 12½% p.a. compounded half-yearly.",
+          solution: ["See 3 half-years fractional exponent working in the interactive Web View."],
+        },
+        {
+          id: "c8-m8-ex8-3-q10",
+          number: "10",
+          question: "Population increased to 54,000 in 2003 at 5% p.a. (i) Find population in 2001 (ii) What would be its population in 2005?",
+          solution: ["See reverse and forward population growth formulas in the interactive Web View."],
+        },
+        {
+          id: "c8-m8-ex8-3-q11",
+          number: "11",
+          question: "In a laboratory, bacteria count was increasing at 2.5% per hour. Find bacteria at end of 2 hours if initially 5,06,000.",
+          solution: ["See hourly exponential growth formula in the interactive Web View."],
+        },
+        {
+          id: "c8-m8-ex8-3-q12",
+          number: "12",
+          question: "A scooter was bought at ₹ 42,000. Its value depreciated at rate of 8% p.a. Find its value after one year.",
+          solution: ["See depreciation deduction in the interactive Web View."],
+        },
+      ],
+    },
+  ],
+  examples: [],
+  mcqs: [
+  {
+    "id": "c8-m8-q1",
+    "question": "What is the ratio of 5 m to 10 km in simplest form?",
+    "options": [
+      "A):   1 : 2",
+      "B):   1 : 20",
+      "C):   1 : 200",
+      "D):   1 : 2000"
+    ],
+    "correctAnswer": "D",
+    "explanation": "10 km = 10,000 m. Ratio = 5 m / 10000 m = 1 / 2000 = 1 : 2000."
+  },
+  {
+    "id": "c8-m8-q2",
+    "question": "Convert the ratio 3 : 4 to a percentage:",
+    "options": [
+      "A):   60%",
+      "B):   75%",
+      "C):   80%",
+      "D):   25%"
+    ],
+    "correctAnswer": "B",
+    "explanation": "(3 / 4) × 100% = 3 × 25% = 75%."
+  },
+  {
+    "id": "c8-m8-q3",
+    "question": "If 72% of 25 students are good in mathematics, how many students are NOT good in mathematics?",
+    "options": [
+      "A):   7",
+      "B):   8",
+      "C):   18",
+      "D):   14"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Percentage not good = 100% − 72% = 28%. Number not good = 28% of 25 = (28 / 100) × 25 = 7."
+  },
+  {
+    "id": "c8-m8-q4",
+    "question": "A football team won 10 matches which was 40% of the total matches played. How many matches did they play?",
+    "options": [
+      "A):   20",
+      "B):   25",
+      "C):   30",
+      "D):   40"
+    ],
+    "correctAnswer": "B",
+    "explanation": "40% of total = 10 ⇒ Total = (10 × 100) / 40 = 25 matches."
+  },
+  {
+    "id": "c8-m8-q5",
+    "question": "A man got a 10% increase in salary, making his new salary ₹ 1,54,000. What was his original salary?",
+    "options": [
+      "A):   ₹ 1,40,000",
+      "B):   ₹ 1,38,000",
+      "C):   ₹ 1,44,000",
+      "D):   ₹ 1,50,000"
+    ],
+    "correctAnswer": "A",
+    "explanation": "110% of x = 154000 ⇒ x = (154000 × 100) / 110 = ₹ 1,40,000."
+  },
+  {
+    "id": "c8-m8-q6",
+    "question": "An item marked at ₹ 840 is sold for ₹ 714. What is the discount percentage?",
+    "options": [
+      "A):   10%",
+      "B):   12%",
+      "C):   15%",
+      "D):   20%"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Discount = 840 − 714 = ₹ 126. Discount % = (126 / 840) × 100% = 15%."
+  },
+  {
+    "id": "c8-m8-q7",
+    "question": "A shopkeeper buys 80 articles for ₹ 2,400 and sells them at 16% profit. What is the selling price of ONE article?",
+    "options": [
+      "A):   ₹ 32.40",
+      "B):   ₹ 34.80",
+      "C):   ₹ 36.00",
+      "D):   ₹ 30.00"
+    ],
+    "correctAnswer": "B",
+    "explanation": "CP of 1 article = 2400 / 80 = ₹ 30. Profit = 16% of 30 = ₹ 4.80. SP = 30 + 4.80 = ₹ 34.80."
+  },
+  {
+    "id": "c8-m8-q8",
+    "question": "Cost of article is ₹ 15,500 and ₹ 450 is spent on repairs. What is the effective Cost Price (C.P.)?",
+    "options": [
+      "A):   ₹ 15,500",
+      "B):   ₹ 15,950",
+      "C):   ₹ 15,050",
+      "D):   ₹ 16,000"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Effective CP = Cost price + Overhead expenses = 15500 + 450 = ₹ 15,950."
+  },
+  {
+    "id": "c8-m8-q9",
+    "question": "When interest is compounded half-yearly, the annual rate R% becomes ______ and the number of years n becomes ______.",
+    "options": [
+      "A):   2R, n/2",
+      "B):   R/2, 2n",
+      "C):   R, 2n",
+      "D):   R/2, n"
+    ],
+    "correctAnswer": "B",
+    "explanation": "In half-yearly compounding, rate is halved (R/2) and conversion periods double (2n)."
+  },
+  {
+    "id": "c8-m8-q10",
+    "question": "What is the compound interest on ₹ 10,000 for 1 year at 8% per annum compounded half-yearly?",
+    "options": [
+      "A):   ₹ 800",
+      "B):   ₹ 816",
+      "C):   ₹ 832",
+      "D):   ₹ 840"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Rate = 4%, n = 2 periods. A = 10000(1 + 4/100)² = 10000(26/25)² = ₹ 10,816. CI = 10816 − 10000 = ₹ 816."
+  },
+  {
+    "id": "c8-m8-q11",
+    "question": "What is the marked price of a pair of skates if ₹ 1,600 was paid after a 20% discount?",
+    "options": [
+      "A):   ₹ 1,800",
+      "B):   ₹ 1,920",
+      "C):   ₹ 2,000",
+      "D):   ₹ 2,200"
+    ],
+    "correctAnswer": "C",
+    "explanation": "80% of MP = 1600 ⇒ MP = (1600 × 100) / 80 = ₹ 2,000."
+  },
+  {
+    "id": "c8-m8-q12",
+    "question": "A hair dryer was purchased for ₹ 5,400 including 8% VAT. What was the price before VAT?",
+    "options": [
+      "A):   ₹ 4,800",
+      "B):   ₹ 5,000",
+      "C):   ₹ 5,100",
+      "D):   ₹ 5,200"
+    ],
+    "correctAnswer": "B",
+    "explanation": "108% of price = 5400 ⇒ Price before VAT = (5400 × 100) / 108 = ₹ 5,000."
+  },
+  {
+    "id": "c8-m8-q13",
+    "question": "A scooter bought at ₹ 42,000 depreciates at 8% p.a. What is its value after one year?",
+    "options": [
+      "A):   ₹ 38,640",
+      "B):   ₹ 39,200",
+      "C):   ₹ 35,280",
+      "D):   ₹ 38,000"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Depreciation = 8% of 42000 = ₹ 3,360. Value after 1 year = 42000 − 3360 = ₹ 38,640."
+  },
+  {
+    "id": "c8-m8-q14",
+    "question": "If ₹ 80,000 is compounded annually vs half-yearly at 10% p.a. for 1½ years, what is the difference in amounts?",
+    "options": [
+      "A):   ₹ 100",
+      "B):   ₹ 210",
+      "C):   ₹ 150",
+      "D):   ₹ 260"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Amount annually = ₹ 92,400. Amount half-yearly = ₹ 92,610. Difference = 92610 − 92400 = ₹ 210."
+  },
+  {
+    "id": "c8-m8-q15",
+    "question": "The formula to calculate the depreciated value of a machine after n years is:",
+    "options": [
+      "A):   P(1 + R/100)ⁿ",
+      "B):   P(1 − R/100)ⁿ",
+      "C):   P × R × n / 100",
+      "D):   P(1 + 2R/100)ⁿ"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Since the value decreases over time, depreciation uses the minus sign: Value = P(1 − R/100)ⁿ."
+  }
+],
+  summary: [
+    "A ratio compares two quantities of identical units by division.",
+    "Cost price includes purchase cost plus all overhead expenses.",
+    "Discount is always offered on the Marked Price: Discount = M.P. &minus; S.P.",
+    "Compound Amount A = P(1 + R/100)<sup>n</sup> when compounded annually, and A = P(1 + R/200)<sup>2n</sup> when compounded half-yearly.",
+    "Depreciation value after n years = P(1 &minus; R/100)<sup>n</sup>.",
   ],
   isHtmlView: true,
-  htmlOverview: `
-    <style>
-    .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
-    .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
-    .frac .den { padding: 0 2px; }
-      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
-      
-      .premium-container {
-        padding: 20px;
-        color: #ffffff;
-        font-family: 'Outfit', sans-serif !important;
-        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-        border-radius: 20px;
-        margin: 10px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-      }
-
-      .section-box {
-        background: rgba(255, 255, 255, 0.05);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 15px;
-        padding: 20px;
-        margin-bottom: 20px;
-        backdrop-filter: blur(10px);
-      }
-
-      .section-header {
-        color: #FF6D00;
-        font-size: 20px;
-        font-weight: 600;
-        margin-bottom: 15px;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-      }
-
-      .prop-table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 10px;
-        background: rgba(0,0,0,0.2);
-        border-radius: 12px;
-        overflow: hidden;
-      }
-
-      .prop-table th, .prop-table td {
-        padding: 12px;
-        border: 1px solid rgba(255,255,255,0.1);
-        text-align: left;
-        font-size: 15px;
-      }
-
-      .prop-table th {
-        background: rgba(255,255,255,0.1);
-        color: #FF9100;
-        font-weight: 700;
-      }
-
-      .highlight { color: #FF9100; font-weight: 600; }
-      
-      .intro-text {
-        line-height: 1.6;
-        font-size: 16px;
-        color: #e0e0e0;
-        text-align: justify;
-      }
-
-      .formula-badge {
-        background: rgba(255, 109, 0, 0.2);
-        border: 1px dashed #FF6D00;
-        padding: 10px;
-        border-radius: 8px;
-        margin-top: 10px;
-        text-align: center;
-        font-weight: bold;
-        color: #FF9100;
-      }
-        .q-text, .q-subtext, .sol-step, .sol-box { font-size: 16px; }
-  </style>
-
-    <div class="premium-container">
-      <div class="section-box">
-        <div class="section-header"><span>✦</span> Introduction</div>
-        <div class="intro-text">
-          An algebraic expression is a combination of constants and variables connected by arithmetic operators. <strong>Identities</strong> are special equations that are always true regardless of the values assigned to the variables.
-        </div>
-      </div>
-
-      <div class="section-box">
-        <div class="section-header"><span>✦</span> Standard Identities</div>
-        <table class="prop-table">
-          <tr>
-            <th>Identity Name</th>
-            <th>Formula</th>
-          </tr>
-          <tr>
-            <td><strong>Square of a Binomial (Sum)</strong></td>
-            <td>
-              <span class="highlight">(a + b)² = a² + 2ab + b²</span>
-            </td>
-          </tr>
-          <tr>
-            <td><strong>Square of a Binomial (Difference)</strong></td>
-            <td>
-              <span class="highlight">(a - b)² = a² - 2ab + b²</span>
-            </td>
-          </tr>
-          <tr>
-            <td><strong>Difference of Squares</strong></td>
-            <td>
-              <span class="highlight">(a + b)(a - b) = a² - b²</span>
-            </td>
-          </tr>
-          <tr>
-            <td><strong>General Product</strong></td>
-            <td>
-              <span class="highlight">(x + a)(x + b) = x² + (a + b)x + ab</span>
-            </td>
-          </tr>
-        </table>
-      </div>
-    </div>
-  `,
+  htmlOverview: "\n\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; text-align: center; }\n  .frac .den { padding: 1px 4px; text-align: center; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(233, 30, 99, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #E91E63; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 16px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(233, 30, 99, 0.2); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #E91E63; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #F48FB1; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(233, 30, 99, 0.15); border: 1.5px solid #E91E63; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #F48FB1; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(233, 30, 99, 0.15); border: 1px solid #E91E63; color: #F48FB1; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 4px 2px; }\n  .table-card { background: #FFFFFF; border-radius: 8px; padding: 10px 8px; margin: 16px 0; overflow-x: auto; box-shadow: 0 3px 12px rgba(0,0,0,0.25); -webkit-overflow-scrolling: touch; }\n  .styled-table { width: 100%; min-width: 290px; border-collapse: collapse; color: #0F172A; font-size: 13.5px; text-align: center; }\n  .styled-table th { background: #E91E63; color: #FFFFFF; font-weight: 800; padding: 9px 8px; border: 1px solid #CBD5E1; font-size: 13.5px; white-space: nowrap; }\n  .styled-table td { padding: 8px 6px; border: 1px solid #CBD5E1; font-weight: 500; font-size: 13px; }\n  .styled-table td.col-label { font-weight: 700; white-space: nowrap; text-align: left; padding-left: 12px; }\n  .calc-matrix { background: rgba(0, 0, 0, 0.45); border: 1.5px solid rgba(233, 30, 99, 0.35); border-radius: 8px; padding: 12px 16px; margin: 10px 0; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Hero Header -->\n  <div style=\"background: linear-gradient(135deg, rgba(233, 30, 99, 0.25), rgba(156, 39, 176, 0.15)); border: 1.5px solid #E91E63; border-radius: 14px; padding: 18px; margin-bottom: 20px; text-align: center;\">\n    <div style=\"font-size: 22px; font-weight: 800; color: #E91E63; margin-bottom: 6px;\">\n      📊 Chapter 8: Comparing Quantities\n    </div>\n    <div style=\"color: #CBD5E1; font-size: 14.5px; line-height: 1.5;\">\n      Class 8 NCERT Mathematics &bull; Complete Reference Guide &amp; Master Formula Cheat Sheet\n    </div>\n  </div>\n\n  <!-- 1. Ratio and Percentage -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 1. Ratios and Unit Conversions</div>\n    <div class=\"q-text\">\n      A <b>Ratio</b> is a comparison of two quantities having the <b>same unit</b> by division.\n    </div>\n    <div class=\"sol-box\">\n      <div style=\"color: #FFFFFF; font-size: 14.5px; line-height: 1.7;\">\n        &bull; <b>Fundamental Rule:</b> Before finding a ratio, both quantities must be converted into the <b>same unit</b>:<br/>\n        &nbsp;&nbsp;&ndash; <b>Distance:</b> 1 km = 1,000 m = 100,000 cm.<br/>\n        &nbsp;&nbsp;&ndash; <b>Money:</b> ₹1 = 100 paise.<br/>\n        &nbsp;&nbsp;&ndash; <b>Time:</b> 1 hour = 60 minutes = 3,600 seconds.<br/>\n        &bull; <b>Percentage Conversion:</b><br/>\n        &nbsp;&nbsp;&ndash; Ratio to Percentage: Multiply by 100% (e.g. <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span> &times; 100% = 75%).<br/>\n        &nbsp;&nbsp;&ndash; Percentage to Fraction: Divide by 100 (e.g. 25% = <span class=\"frac\"><span class=\"num\">25</span><span class=\"den\">100</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span>).\n      </div>\n    </div>\n  </div>\n\n  <!-- 2. Commercial Math (Profit, Loss, Discount, Tax) -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 2. Commercial Mathematics: Profit, Loss, Discount &amp; Tax</div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #E91E63;\">1. Profit, Loss and Overheads:</b></div>\n      <div style=\"font-size: 15px; color: #FFFFFF; line-height: 1.7;\">\n        &bull; <b>Effective Cost Price (C.P.):</b> Buying Price + Overhead Expenses (repairs, transport, labour).<br/>\n        &bull; <b>When S.P. &gt; C.P. &rArr; Profit = S.P. &minus; C.P.</b><br/>\n        &nbsp;&nbsp;<b>Profit %</b> = <span class=\"frac\"><span class=\"num\">Profit</span><span class=\"den\">C.P.</span></span> &times; 100%<br/>\n        &bull; <b>When C.P. &gt; S.P. &rArr; Loss = C.P. &minus; S.P.</b><br/>\n        &nbsp;&nbsp;<b>Loss %</b> = <span class=\"frac\"><span class=\"num\">Loss</span><span class=\"den\">C.P.</span></span> &times; 100%\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #E91E63;\">2. Discount and Marked Price (M.P.):</b></div>\n      <div style=\"font-size: 15px; color: #FFFFFF; line-height: 1.7;\">\n        &bull; <b>Discount:</b> A reduction given on the Marked Price (M.P.) of the article.<br/>\n        &bull; <b>Discount = Marked Price &minus; Sale Price</b><br/>\n        &bull; <b>Discount %</b> = <span class=\"frac\"><span class=\"num\">Discount</span><span class=\"den\">Marked Price</span></span> &times; 100%<br/>\n        &bull; <b>Sale Price</b> = M.P. &times; <span class=\"frac\"><span class=\"num\">100 &minus; Discount %</span><span class=\"den\">100</span></span>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #E91E63;\">3. Sales Tax, VAT &amp; GST:</b></div>\n      <div style=\"font-size: 15px; color: #FFFFFF; line-height: 1.7;\">\n        &bull; Tax is charged on the <b>sale price</b> of the item and <b>added</b> to the bill amount:<br/>\n        &bull; <b>Bill Amount = Sale Price + Tax Amount</b><br/>\n        &bull; <b>Tax Amount</b> = <span class=\"frac\"><span class=\"num\">Tax %</span><span class=\"den\">100</span></span> &times; Sale Price\n      </div>\n    </div>\n  </div>\n\n  <!-- 3. Simple vs Compound Interest -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 3. Simple Interest vs Compound Interest</div>\n    <div style=\"display: flex; flex-direction: column; gap: 12px; margin-top: 6px;\">\n      <div style=\"background: rgba(0,0,0,0.25); border-left: 3.5px solid #00E676; padding: 12px 14px; border-radius: 6px;\">\n        <b style=\"color: #00E676; font-size: 15.5px;\">Simple Interest (S.I.)</b><br/>\n        <div style=\"color: #E2E8F0; font-size: 14.5px; margin-top: 4px; line-height: 1.8;\">\n          Principal remains constant throughout the loan tenure.<br/>\n          <b>Formula:</b> S.I. = <span class=\"frac\"><span class=\"num\">P &times; R &times; T</span><span class=\"den\">100</span></span> &nbsp;&bull;&nbsp; Amount = P + S.I.\n        </div>\n      </div>\n      <div style=\"background: rgba(0,0,0,0.25); border-left: 3.5px solid #E91E63; padding: 12px 14px; border-radius: 6px;\">\n        <b style=\"color: #E91E63; font-size: 15.5px;\">Compound Interest (C.I.) — \"Interest on Interest\"</b><br/>\n        <div style=\"color: #E2E8F0; font-size: 14.5px; margin-top: 4px; line-height: 1.8;\">\n          Interest earned is added back to principal at the end of each conversion period.<br/>\n          &bull; <b>Compounded Annually:</b> A = P &times; <span class=\"frac\"><span class=\"num\">1 + R</span><span class=\"den\">100</span></span><sup>n</sup><br/>\n          &bull; <b>Compounded Half-Yearly:</b> Rate becomes <b><span class=\"frac\"><span class=\"num\">R</span><span class=\"den\">2</span></span>%</b> per half-year, and time period becomes <b>2n</b> half-years:<br/>\n          &nbsp;&nbsp;A = P &times; <span class=\"frac\"><span class=\"num\">1 + R / 2</span><span class=\"den\">100</span></span><sup>2n</sup> = P &times; <span class=\"frac\"><span class=\"num\">1 + R</span><span class=\"den\">200</span></span><sup>2n</sup><br/>\n          &bull; <b>Compound Interest:</b> <b>C.I. = A &minus; P</b>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <!-- 4. Real-World Applications -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 4. Growth and Depreciation Applications</div>\n    <div class=\"sol-box\">\n      <div style=\"color: #FFFFFF; font-size: 14.5px; line-height: 1.8;\">\n        &bull; <b>Population Growth / Bacteria Increase:</b><br/>\n        &nbsp;&nbsp;Population after n years = P &times; <span class=\"frac\"><span class=\"num\">1 + R</span><span class=\"den\">100</span></span><sup>n</sup><br/>\n        &bull; <b>Asset Depreciation (Vehicles, Machinery):</b> When value decreases over time at rate R% per annum:<br/>\n        &nbsp;&nbsp;Depreciated Value after n years = P &times; <span class=\"frac\"><span class=\"num\">1 &minus; R</span><span class=\"den\">100</span></span><sup>n</sup>\n      </div>\n    </div>\n  </div>\n\n  <!-- 5. Master Revision Cheat Sheet -->\n  <div class=\"q-card\" style=\"border-color: #E91E63;\">\n    <div class=\"q-title\" style=\"color: #E91E63;\">✦ 5. Master Revision Formula Cheat Sheet</div>\n    <div style=\"font-size: 15px; color: #FFFFFF; line-height: 2.1;\">\n      &bull; <b>Ratio:</b> <span class=\"frac\"><span class=\"num\">Quantity A</span><span class=\"den\">Quantity B</span></span> (both in identical units).<br/>\n      &bull; <b>Percentage:</b> Value = <span class=\"frac\"><span class=\"num\">Percentage</span><span class=\"den\">100</span></span> &times; Total.<br/>\n      &bull; <b>Discount:</b> M.P. &minus; S.P. &nbsp;&bull;&nbsp; <b>Discount %:</b> <span class=\"frac\"><span class=\"num\">Discount</span><span class=\"den\">M.P.</span></span> &times; 100%.<br/>\n      &bull; <b>Profit %:</b> <span class=\"frac\"><span class=\"num\">Profit</span><span class=\"den\">C.P.</span></span> &times; 100% &nbsp;&bull;&nbsp; <b>Loss %:</b> <span class=\"frac\"><span class=\"num\">Loss</span><span class=\"den\">C.P.</span></span> &times; 100%.<br/>\n      &bull; <b>Amount (Compounded Annually):</b> A = P<span class=\"frac\"><span class=\"num\">1 + R</span><span class=\"den\">100</span></span><sup>n</sup>.<br/>\n      &bull; <b>Amount (Compounded Half-Yearly):</b> A = P<span class=\"frac\"><span class=\"num\">1 + R</span><span class=\"den\">200</span></span><sup>2n</sup>.<br/>\n      &bull; <b>Compound Interest:</b> C.I. = A &minus; P.<br/>\n      &bull; <b>Depreciation:</b> Value = P<span class=\"frac\"><span class=\"num\">1 &minus; R</span><span class=\"den\">100</span></span><sup>n</sup>.\n    </div>\n  </div>\n\n</div>\n",
   htmlExercises: {
-    "ex8-1": ex81Content,
-    "ex8-2": ex82Content,
-    "ex8-3": ex83Content,
-    "ex8-4": ex84Content,
+    "ex8-1": "\n\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; text-align: center; }\n  .frac .den { padding: 1px 4px; text-align: center; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(233, 30, 99, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #E91E63; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 16px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(233, 30, 99, 0.2); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #E91E63; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #F48FB1; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(233, 30, 99, 0.15); border: 1.5px solid #E91E63; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #F48FB1; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(233, 30, 99, 0.15); border: 1px solid #E91E63; color: #F48FB1; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 4px 2px; }\n  .table-card { background: #FFFFFF; border-radius: 8px; padding: 10px 8px; margin: 16px 0; overflow-x: auto; box-shadow: 0 3px 12px rgba(0,0,0,0.25); -webkit-overflow-scrolling: touch; }\n  .styled-table { width: 100%; min-width: 290px; border-collapse: collapse; color: #0F172A; font-size: 13.5px; text-align: center; }\n  .styled-table th { background: #E91E63; color: #FFFFFF; font-weight: 800; padding: 9px 8px; border: 1px solid #CBD5E1; font-size: 13.5px; white-space: nowrap; }\n  .styled-table td { padding: 8px 6px; border: 1px solid #CBD5E1; font-weight: 500; font-size: 13px; }\n  .styled-table td.col-label { font-weight: 700; white-space: nowrap; text-align: left; padding-left: 12px; }\n  .calc-matrix { background: rgba(0, 0, 0, 0.45); border: 1.5px solid rgba(233, 30, 99, 0.35); border-radius: 8px; padding: 12px 16px; margin: 10px 0; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Header Card -->\n  <div style=\"background: linear-gradient(135deg, rgba(233, 30, 99, 0.2), rgba(156, 39, 176, 0.1)); border: 1.5px solid #E91E63; border-radius: 12px; padding: 14px 18px; margin-bottom: 20px;\">\n    <div style=\"font-size: 19px; font-weight: 800; color: #E91E63; margin-bottom: 4px;\">\n      Exercise 8.1\n    </div>\n    <div style=\"color: #FFFFFF; font-size: 15px; font-weight: 500;\">\n      Ratios, Unit Standardization &amp; Percentage Word Problems\n    </div>\n  </div>\n\n  <!-- QUESTION 1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 1:</div>\n    <div class=\"q-text\">Find the ratio of the following:</div>\n\n    <!-- (a) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #E91E63;\">(a)</b> Speed of a cycle 15 km per hour to the speed of a scooter 30 km per hour.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>Speed of cycle = 15 km/h</div>\n          <div>Speed of scooter = 30 km/h</div>\n          <div style=\"margin-top: 6px;\">\n            Ratio of speed of cycle to speed of scooter = <span class=\"frac\"><span class=\"num\">Speed of cycle</span><span class=\"den\">Speed of scooter</span></span>\n          </div>\n          <div>\n            = <span class=\"frac\"><span class=\"num\">15</span><span class=\"den\">30</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> = <b>1 : 2</b>\n          </div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Required Ratio: </span><span class=\"ans-val\">1 : 2</span></div>\n      </div>\n    </div>\n\n    <!-- (b) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #E91E63;\">(b)</b> 5 m to 10 km</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>To find the ratio, both quantities must have the same unit.</div>\n          <div>We know that 1 km = 1,000 m.</div>\n          <div>&rArr; 10 km = 10 &times; 1,000 m = 10,000 m</div>\n          <div style=\"margin-top: 6px;\">\n            Ratio = <span class=\"frac\"><span class=\"num\">5 m</span><span class=\"den\">10 km</span></span> = <span class=\"frac\"><span class=\"num\">5 m</span><span class=\"den\">10000 m</span></span>\n          </div>\n          <div>\n            = <span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">10000</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2000</span></span> = <b>1 : 2000</b>\n          </div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Required Ratio: </span><span class=\"ans-val\">1 : 2000</span></div>\n      </div>\n    </div>\n\n    <!-- (c) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #E91E63;\">(c)</b> 50 paise to ₹ 5</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>We know that ₹ 1 = 100 paise.</div>\n          <div>&rArr; ₹ 5 = 5 &times; 100 paise = 500 paise</div>\n          <div style=\"margin-top: 6px;\">\n            Ratio = <span class=\"frac\"><span class=\"num\">50 paise</span><span class=\"den\">₹ 5</span></span> = <span class=\"frac\"><span class=\"num\">50 paise</span><span class=\"den\">500 paise</span></span>\n          </div>\n          <div>\n            = <span class=\"frac\"><span class=\"num\">50</span><span class=\"den\">500</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">10</span></span> = <b>1 : 10</b>\n          </div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Required Ratio: </span><span class=\"ans-val\">1 : 10</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 2 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 2:</div>\n    <div class=\"q-text\">Convert the following ratios to percentages:</div>\n\n    <!-- (a) 3:4 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #E91E63;\">(a)</b> 3 : 4</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>Given ratio = 3 : 4 = <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span></div>\n          <div style=\"margin-top: 6px;\">\n            Percentage = <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span> &times; 100%\n          </div>\n          <div>\n            = 3 &times; 25% = <b>75%</b>\n          </div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Percentage: </span><span class=\"ans-val\">75%</span></div>\n      </div>\n    </div>\n\n    <!-- (b) 2:3 -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #E91E63;\">(b)</b> 2 : 3</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>Given ratio = 2 : 3 = <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span></div>\n          <div style=\"margin-top: 6px;\">\n            Percentage = <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span> &times; 100%\n          </div>\n          <div>\n            = <span class=\"frac\"><span class=\"num\">200</span><span class=\"den\">3</span></span>% = <b>66<span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span>%</b> &nbsp;(or 66.67%)\n          </div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Percentage: </span><span class=\"ans-val\">66<span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span>%</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 3 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 3:</div>\n    <div class=\"q-text\">72% of 25 students are good in mathematics. How many are not good in mathematics?</div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div>Total number of students = 25</div>\n        <div>Percentage of students good in mathematics = 72%</div>\n        <div style=\"margin-top: 6px;\">\n          &bull; <b>Percentage of students not good in mathematics:</b>\n        </div>\n        <div style=\"padding-left: 12px;\">\n          = (100 &minus; 72)% = <b>28%</b>\n        </div>\n        <div style=\"margin-top: 6px;\">\n          &bull; <b>Number of students not good in mathematics:</b>\n        </div>\n        <div style=\"padding-left: 12px;\">\n          = 28% of 25 = <span class=\"frac\"><span class=\"num\">28</span><span class=\"den\">100</span></span> &times; 25\n        </div>\n        <div style=\"padding-left: 12px;\">\n          = <span class=\"frac\"><span class=\"num\">28</span><span class=\"den\">4</span></span> = <b>7</b>\n        </div>\n        <div style=\"margin-top: 8px;\" class=\"reason\">\n          Alternative Check: Number good = <span class=\"frac\"><span class=\"num\">72</span><span class=\"den\">100</span></span> &times; 25 = 18 students. Number not good = 25 &minus; 18 = 7 students.\n        </div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Students Not Good in Mathematics: </span>\n        <span class=\"ans-val\">7 students</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 4 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 4:</div>\n    <div class=\"q-text\">A football team won 10 matches out of the total number of matches they played. If their win percentage was 40, then how many matches did they play in all?</div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div>Let the total number of matches played by the team be <b>x</b>.</div>\n        <div>Number of matches won = 10</div>\n        <div>Win percentage = 40%</div>\n        <div style=\"margin-top: 6px;\">\n          According to the question:\n        </div>\n        <div style=\"padding-left: 12px;\">\n          40% of x = 10\n        </div>\n        <div style=\"padding-left: 12px;\">\n          &rArr; <span class=\"frac\"><span class=\"num\">40</span><span class=\"den\">100</span></span> &times; x = 10\n        </div>\n        <div style=\"padding-left: 12px;\">\n          &rArr; <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">5</span></span> &times; x = 10\n        </div>\n        <div style=\"padding-left: 12px;\">\n          &rArr; x = <span class=\"frac\"><span class=\"num\">10 &times; 5</span><span class=\"den\">2</span></span> = 5 &times; 5 = <b>25</b>\n        </div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Total Matches Played: </span>\n        <span class=\"ans-val\">25 matches</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 5 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 5:</div>\n    <div class=\"q-text\">If Chameli had ₹ 600 left after spending 75% of her money, how much did she have in the beginning?</div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div>Let the total amount of money Chameli had in the beginning be <b>₹ x</b>.</div>\n        <div>Percentage of money spent = 75%</div>\n        <div style=\"margin-top: 6px;\">\n          Percentage of money remaining with her:\n        </div>\n        <div style=\"padding-left: 12px;\">\n          = (100 &minus; 75)% = <b>25%</b>\n        </div>\n        <div style=\"margin-top: 6px;\">\n          Given that remaining money = ₹ 600.\n        </div>\n        <div style=\"padding-left: 12px;\">\n          &rArr; 25% of x = 600\n        </div>\n        <div style=\"padding-left: 12px;\">\n          &rArr; <span class=\"frac\"><span class=\"num\">25</span><span class=\"den\">100</span></span> &times; x = 600\n        </div>\n        <div style=\"padding-left: 12px;\">\n          &rArr; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span> &times; x = 600\n        </div>\n        <div style=\"padding-left: 12px;\">\n          &rArr; x = 600 &times; 4 = <b>₹ 2,400</b>\n        </div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Total Money in the Beginning: </span>\n        <span class=\"ans-val\">₹ 2,400</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 6 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 6:</div>\n    <div class=\"q-text\">If 60% of people in a city like cricket, 30% like football and the remaining like other games, then what per cent of the people like other games? If the total number of people is 50 lakhs, find the exact number who like each type of game.</div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div>Total percentage of people in the city = 100%</div>\n        <div>Percentage of people who like cricket = 60%</div>\n        <div>Percentage of people who like football = 30%</div>\n        <div style=\"margin-top: 6px;\">\n          &bull; <b>Percentage of people who like other games:</b>\n        </div>\n        <div style=\"padding-left: 12px;\">\n          = 100% &minus; (60% + 30%) = 100% &minus; 90% = <b>10%</b>\n        </div>\n        <div style=\"margin-top: 8px;\">\n          Total population = 50 lakhs = 50,00,000\n        </div>\n        <div style=\"margin-top: 6px;\">\n          &bull; <b>Exact number of people who like cricket:</b>\n        </div>\n        <div style=\"padding-left: 12px;\">\n          = 60% of 50 lakhs = <span class=\"frac\"><span class=\"num\">60</span><span class=\"den\">100</span></span> &times; 50 lakhs = <b>30 lakhs</b> (30,00,000)\n        </div>\n        <div style=\"margin-top: 6px;\">\n          &bull; <b>Exact number of people who like football:</b>\n        </div>\n        <div style=\"padding-left: 12px;\">\n          = 30% of 50 lakhs = <span class=\"frac\"><span class=\"num\">30</span><span class=\"den\">100</span></span> &times; 50 lakhs = <b>15 lakhs</b> (15,00,000)\n        </div>\n        <div style=\"margin-top: 6px;\">\n          &bull; <b>Exact number of people who like other games:</b>\n        </div>\n        <div style=\"padding-left: 12px;\">\n          = 10% of 50 lakhs = <span class=\"frac\"><span class=\"num\">10</span><span class=\"den\">100</span></span> &times; 50 lakhs = <b>5 lakhs</b> (5,00,000)\n        </div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Summary: </span>\n        <span class=\"ans-val\">Other games: 10% &bull; Cricket: 30 lakhs &bull; Football: 15 lakhs &bull; Other games: 5 lakhs</span>\n      </div>\n    </div>\n  </div>\n\n</div>\n",
+    "ex8-2": "\n\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; text-align: center; }\n  .frac .den { padding: 1px 4px; text-align: center; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(233, 30, 99, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #E91E63; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 16px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(233, 30, 99, 0.2); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #E91E63; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #F48FB1; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(233, 30, 99, 0.15); border: 1.5px solid #E91E63; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #F48FB1; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(233, 30, 99, 0.15); border: 1px solid #E91E63; color: #F48FB1; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 4px 2px; }\n  .table-card { background: #FFFFFF; border-radius: 8px; padding: 10px 8px; margin: 16px 0; overflow-x: auto; box-shadow: 0 3px 12px rgba(0,0,0,0.25); -webkit-overflow-scrolling: touch; }\n  .styled-table { width: 100%; min-width: 290px; border-collapse: collapse; color: #0F172A; font-size: 13.5px; text-align: center; }\n  .styled-table th { background: #E91E63; color: #FFFFFF; font-weight: 800; padding: 9px 8px; border: 1px solid #CBD5E1; font-size: 13.5px; white-space: nowrap; }\n  .styled-table td { padding: 8px 6px; border: 1px solid #CBD5E1; font-weight: 500; font-size: 13px; }\n  .styled-table td.col-label { font-weight: 700; white-space: nowrap; text-align: left; padding-left: 12px; }\n  .calc-matrix { background: rgba(0, 0, 0, 0.45); border: 1.5px solid rgba(233, 30, 99, 0.35); border-radius: 8px; padding: 12px 16px; margin: 10px 0; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Header Card -->\n  <div style=\"background: linear-gradient(135deg, rgba(233, 30, 99, 0.2), rgba(156, 39, 176, 0.1)); border: 1.5px solid #E91E63; border-radius: 12px; padding: 14px 18px; margin-bottom: 20px;\">\n    <div style=\"font-size: 19px; font-weight: 800; color: #E91E63; margin-bottom: 4px;\">\n      Exercise 8.2\n    </div>\n    <div style=\"color: #FFFFFF; font-size: 15px; font-weight: 500;\">\n      Percentage Increase &amp; Decrease, Profit &amp; Loss, Discount &amp; Sales Tax / VAT\n    </div>\n  </div>\n\n  <!-- QUESTION 1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 1:</div>\n    <div class=\"q-text\">A man got a 10% increase in his salary. If his new salary is ₹ 1,54,000, find his original salary.</div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div>Let the original salary of the man be <b>₹ x</b>.</div>\n        <div>Percentage increase in salary = 10%</div>\n        <div style=\"margin-top: 6px;\">\n          Amount of increment = 10% of x = <span class=\"frac\"><span class=\"num\">10</span><span class=\"den\">100</span></span> &times; x = <span class=\"frac\"><span class=\"num\">x</span><span class=\"den\">10</span></span>\n        </div>\n        <div style=\"margin-top: 6px;\">\n          New Salary = Original Salary + Increment\n        </div>\n        <div style=\"padding-left: 12px;\">\n          = x + <span class=\"frac\"><span class=\"num\">x</span><span class=\"den\">10</span></span> = <span class=\"frac\"><span class=\"num\">10x + x</span><span class=\"den\">10</span></span> = <span class=\"frac\"><span class=\"num\">11x</span><span class=\"den\">10</span></span>\n        </div>\n        <div style=\"margin-top: 6px;\">\n          Given new salary = ₹ 1,54,000.\n        </div>\n        <div style=\"padding-left: 12px;\">\n          &rArr; <span class=\"frac\"><span class=\"num\">11x</span><span class=\"den\">10</span></span> = 154000\n        </div>\n        <div style=\"padding-left: 12px;\">\n          &rArr; x = <span class=\"frac\"><span class=\"num\">154000 &times; 10</span><span class=\"den\">11</span></span>\n        </div>\n        <div style=\"padding-left: 12px;\">\n          &rArr; x = 14000 &times; 10 = <b>₹ 1,40,000</b>\n        </div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Original Salary: </span>\n        <span class=\"ans-val\">₹ 1,40,000</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 2 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 2:</div>\n    <div class=\"q-text\">On Sunday, 845 people went to the zoo. On Monday, only 169 people went. What is the per cent decrease in the number of people visiting the zoo on Monday?</div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div>Number of people who went on Sunday = 845</div>\n        <div>Number of people who went on Monday = 169</div>\n        <div style=\"margin-top: 6px;\">\n          Decrease in the number of people = 845 &minus; 169 = <b>676</b>\n        </div>\n        <div style=\"margin-top: 6px;\">\n          Percentage Decrease = <span class=\"frac\"><span class=\"num\">Decrease in visitors</span><span class=\"den\">Sunday visitors</span></span> &times; 100%\n        </div>\n        <div style=\"padding-left: 12px;\">\n          = <span class=\"frac\"><span class=\"num\">676</span><span class=\"den\">845</span></span> &times; 100%\n        </div>\n        <div style=\"padding-left: 12px;\">\n          Dividing both 676 and 845 by 169: (676 &divide; 169 = 4, 845 &divide; 169 = 5)\n        </div>\n        <div style=\"padding-left: 12px;\">\n          = <span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">5</span></span> &times; 100% = 4 &times; 20% = <b>80%</b>\n        </div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Per Cent Decrease: </span>\n        <span class=\"ans-val\">80%</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 3 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 3:</div>\n    <div class=\"q-text\">A shopkeeper buys 80 articles for ₹ 2,400 and sells them for a profit of 16%. Find the selling price of one article.</div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div>Total number of articles = 80</div>\n        <div>Cost price of 80 articles = ₹ 2,400</div>\n        <div style=\"margin-top: 6px;\">\n          &bull; <b>Cost price (C.P.) of 1 article:</b>\n        </div>\n        <div style=\"padding-left: 12px;\">\n          = <span class=\"frac\"><span class=\"num\">2400</span><span class=\"den\">80</span></span> = <b>₹ 30</b>\n        </div>\n        <div style=\"margin-top: 6px;\">\n          Profit percentage = 16%\n        </div>\n        <div style=\"margin-top: 6px;\">\n          &bull; <b>Profit on 1 article:</b>\n        </div>\n        <div style=\"padding-left: 12px;\">\n          = 16% of ₹ 30 = <span class=\"frac\"><span class=\"num\">16</span><span class=\"den\">100</span></span> &times; 30 = <span class=\"frac\"><span class=\"num\">48</span><span class=\"den\">10</span></span> = <b>₹ 4.80</b>\n        </div>\n        <div style=\"margin-top: 6px;\">\n          &bull; <b>Selling price (S.P.) of 1 article:</b>\n        </div>\n        <div style=\"padding-left: 12px;\">\n          = C.P. + Profit = ₹ 30 + ₹ 4.80 = <b>₹ 34.80</b>\n        </div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Selling Price of 1 Article: </span>\n        <span class=\"ans-val\">₹ 34.80</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 4 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 4:</div>\n    <div class=\"q-text\">The cost of an article was ₹ 15,500. ₹ 450 was spent on its repairs. If it is sold for a profit of 15%, find the selling price of the article.</div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div>Initial purchase cost of article = ₹ 15,500</div>\n        <div>Overhead expenses on repair = ₹ 450</div>\n        <div style=\"margin-top: 6px;\">\n          &bull; <b>Total effective Cost Price (C.P.):</b>\n        </div>\n        <div style=\"padding-left: 12px;\">\n          = Cost + Overheads = ₹ 15,500 + ₹ 450 = <b>₹ 15,950</b>\n        </div>\n        <div style=\"margin-top: 6px;\">\n          Profit percentage = 15%\n        </div>\n        <div style=\"margin-top: 6px;\">\n          &bull; <b>Profit amount:</b>\n        </div>\n        <div style=\"padding-left: 12px;\">\n          = 15% of ₹ 15,950 = <span class=\"frac\"><span class=\"num\">15</span><span class=\"den\">100</span></span> &times; 15950\n        </div>\n        <div style=\"padding-left: 12px;\">\n          = <span class=\"frac\"><span class=\"num\">15 &times; 1595</span><span class=\"den\">10</span></span> = <span class=\"frac\"><span class=\"num\">23925</span><span class=\"den\">10</span></span> = <b>₹ 2,392.50</b>\n        </div>\n        <div style=\"margin-top: 6px;\">\n          &bull; <b>Selling Price (S.P.):</b>\n        </div>\n        <div style=\"padding-left: 12px;\">\n          = C.P. + Profit = ₹ 15,950 + ₹ 2,392.50 = <b>₹ 18,342.50</b>\n        </div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Selling Price: </span>\n        <span class=\"ans-val\">₹ 18,342.50</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 5 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 5:</div>\n    <div class=\"q-text\">A VCR and TV were bought for ₹ 8,000 each. The shopkeeper made a loss of 4% on the VCR and a profit of 8% on the TV. Find the gain or loss per cent on the whole transaction.</div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div style=\"font-weight: 700; color: #F48FB1;\">1. For the VCR:</div>\n        <div style=\"padding-left: 12px;\">\n          C.P. of VCR = ₹ 8,000 &nbsp;&bull;&nbsp; Loss = 4%<br/>\n          Loss amount = 4% of ₹ 8,000 = <span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">100</span></span> &times; 8000 = <b>₹ 320</b><br/>\n          S.P. of VCR = C.P. &minus; Loss = ₹ 8,000 &minus; ₹ 320 = <b>₹ 7,680</b>\n        </div>\n        <div style=\"font-weight: 700; color: #F48FB1; margin-top: 10px;\">2. For the TV:</div>\n        <div style=\"padding-left: 12px;\">\n          C.P. of TV = ₹ 8,000 &nbsp;&bull;&nbsp; Profit = 8%<br/>\n          Profit amount = 8% of ₹ 8,000 = <span class=\"frac\"><span class=\"num\">8</span><span class=\"den\">100</span></span> &times; 8000 = <b>₹ 640</b><br/>\n          S.P. of TV = C.P. + Profit = ₹ 8,000 + ₹ 640 = <b>₹ 8,640</b>\n        </div>\n        <div style=\"font-weight: 700; color: #F48FB1; margin-top: 10px;\">3. On the Whole Transaction:</div>\n        <div style=\"padding-left: 12px;\">\n          Total C.P. = ₹ 8,000 + ₹ 8,000 = <b>₹ 16,000</b><br/>\n          Total S.P. = ₹ 7,680 + ₹ 8,640 = <b>₹ 16,320</b><br/>\n          Since Total S.P. &gt; Total C.P., there is an overall profit.<br/>\n          Overall Profit = ₹ 16,320 &minus; ₹ 16,000 = <b>₹ 320</b>\n        </div>\n        <div style=\"margin-top: 8px;\">\n          <b>Profit % on Whole Transaction:</b>\n        </div>\n        <div style=\"padding-left: 12px;\">\n          = <span class=\"frac\"><span class=\"num\">Total Profit</span><span class=\"den\">Total C.P.</span></span> &times; 100% = <span class=\"frac\"><span class=\"num\">320</span><span class=\"den\">16000</span></span> &times; 100% = <span class=\"frac\"><span class=\"num\">320</span><span class=\"den\">160</span></span>% = <b>2%</b>\n        </div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Result: </span>\n        <span class=\"ans-val\">Gain of 2% on the whole transaction</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 6 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 6:</div>\n    <div class=\"q-text\">During a sale, a shop offered a discount of 10% on the marked prices of all the items. What would a customer have to pay for a pair of jeans marked at ₹ 1450 and two shirts marked at ₹ 850 each?</div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div>Marked price (M.P.) of 1 pair of jeans = ₹ 1,450</div>\n        <div>Marked price (M.P.) of 1 shirt = ₹ 850</div>\n        <div>&rArr; Marked price of 2 shirts = 2 &times; 850 = ₹ 1,700</div>\n        <div style=\"margin-top: 6px;\">\n          &bull; <b>Total Marked Price (M.P.):</b>\n        </div>\n        <div style=\"padding-left: 12px;\">\n          = ₹ 1,450 + ₹ 1,700 = <b>₹ 3,150</b>\n        </div>\n        <div style=\"margin-top: 6px;\">\n          Discount rate = 10%\n        </div>\n        <div style=\"margin-top: 6px;\">\n          &bull; <b>Discount Amount:</b>\n        </div>\n        <div style=\"padding-left: 12px;\">\n          = 10% of ₹ 3,150 = <span class=\"frac\"><span class=\"num\">10</span><span class=\"den\">100</span></span> &times; 3150 = <b>₹ 315</b>\n        </div>\n        <div style=\"margin-top: 6px;\">\n          &bull; <b>Amount customer has to pay (Sale Price):</b>\n        </div>\n        <div style=\"padding-left: 12px;\">\n          = Total M.P. &minus; Discount = ₹ 3,150 &minus; ₹ 315 = <b>₹ 2,835</b>\n        </div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Total Amount to Pay: </span>\n        <span class=\"ans-val\">₹ 2,835</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 7 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 7:</div>\n    <div class=\"q-text\">A milkman sold two of his buffaloes for ₹ 20,000 each. On one, he made a gain of 5% and on the other, a loss of 10%. Find his overall gain or loss. (Hint: Find the C.P. of each)</div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div style=\"font-weight: 700; color: #F48FB1;\">1. For the First Buffalo (Gain of 5%):</div>\n        <div style=\"padding-left: 12px;\">\n          Selling Price (S.P.<sub>1</sub>) = ₹ 20,000<br/>\n          S.P. = C.P. &times; <span class=\"frac\"><span class=\"num\">100 + Gain %</span><span class=\"den\">100</span></span><br/>\n          &rArr; 20000 = C.P.<sub>1</sub> &times; <span class=\"frac\"><span class=\"num\">105</span><span class=\"den\">100</span></span><br/>\n          &rArr; C.P.<sub>1</sub> = <span class=\"frac\"><span class=\"num\">20000 &times; 100</span><span class=\"den\">105</span></span> = <span class=\"frac\"><span class=\"num\">20000 &times; 20</span><span class=\"den\">21</span></span> = <span class=\"frac\"><span class=\"num\">400000</span><span class=\"den\">21</span></span> = <b>₹ 19,047.62</b>\n        </div>\n        <div style=\"font-weight: 700; color: #F48FB1; margin-top: 10px;\">2. For the Second Buffalo (Loss of 10%):</div>\n        <div style=\"padding-left: 12px;\">\n          Selling Price (S.P.<sub>2</sub>) = ₹ 20,000<br/>\n          S.P. = C.P. &times; <span class=\"frac\"><span class=\"num\">100 &minus; Loss %</span><span class=\"den\">100</span></span><br/>\n          &rArr; 20000 = C.P.<sub>2</sub> &times; <span class=\"frac\"><span class=\"num\">90</span><span class=\"den\">100</span></span><br/>\n          &rArr; C.P.<sub>2</sub> = <span class=\"frac\"><span class=\"num\">20000 &times; 100</span><span class=\"den\">90</span></span> = <span class=\"frac\"><span class=\"num\">200000</span><span class=\"den\">9</span></span> = <b>₹ 22,222.22</b>\n        </div>\n        <div style=\"font-weight: 700; color: #F48FB1; margin-top: 10px;\">3. Overall Transaction:</div>\n        <div style=\"padding-left: 12px;\">\n          Total S.P. = ₹ 20,000 + ₹ 20,000 = <b>₹ 40,000</b><br/>\n          Total C.P. = ₹ 19,047.62 + ₹ 22,222.22 = <b>₹ 41,269.84</b><br/>\n          Since Total C.P. &gt; Total S.P., the milkman suffered an overall loss.<br/>\n          <b>Overall Loss</b> = Total C.P. &minus; Total S.P. = ₹ 41,269.84 &minus; ₹ 40,000 = <b>₹ 1,269.84</b>\n        </div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Overall Result: </span>\n        <span class=\"ans-val\">Overall Loss of ₹ 1,269.84</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 8 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 8:</div>\n    <div class=\"q-text\">The price of a TV is ₹ 13,000. The sales tax charged on it is at the rate of 12%. Find the amount that Vinod will have to pay if he buys it.</div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div>List price (Cost) of the TV = ₹ 13,000</div>\n        <div>Sales tax rate = 12%</div>\n        <div style=\"margin-top: 6px;\">\n          &bull; <b>Sales tax amount:</b>\n        </div>\n        <div style=\"padding-left: 12px;\">\n          = 12% of ₹ 13,000 = <span class=\"frac\"><span class=\"num\">12</span><span class=\"den\">100</span></span> &times; 13000\n        </div>\n        <div style=\"padding-left: 12px;\">\n          = 12 &times; 130 = <b>₹ 1,560</b>\n        </div>\n        <div style=\"margin-top: 6px;\">\n          &bull; <b>Total amount to be paid:</b>\n        </div>\n        <div style=\"padding-left: 12px;\">\n          = Price of TV + Sales Tax = ₹ 13,000 + ₹ 1,560 = <b>₹ 14,560</b>\n        </div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Amount to be Paid: </span>\n        <span class=\"ans-val\">₹ 14,560</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 9 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 9:</div>\n    <div class=\"q-text\">Arun bought a pair of skates at a sale where the discount given was 20%. If the amount he pays is ₹ 1,600, find the marked price.</div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div>Let the marked price (M.P.) of the skates be <b>₹ x</b>.</div>\n        <div>Discount percentage = 20%</div>\n        <div>Amount of discount = 20% of x = <span class=\"frac\"><span class=\"num\">20</span><span class=\"den\">100</span></span> &times; x = <span class=\"frac\"><span class=\"num\">x</span><span class=\"den\">5</span></span></div>\n        <div style=\"margin-top: 6px;\">\n          Sale Price (amount paid) = Marked Price &minus; Discount\n        </div>\n        <div style=\"padding-left: 12px;\">\n          = x &minus; <span class=\"frac\"><span class=\"num\">x</span><span class=\"den\">5</span></span> = <span class=\"frac\"><span class=\"num\">4x</span><span class=\"den\">5</span></span>\n        </div>\n        <div style=\"margin-top: 6px;\">\n          Given amount paid = ₹ 1,600.\n        </div>\n        <div style=\"padding-left: 12px;\">\n          &rArr; <span class=\"frac\"><span class=\"num\">4x</span><span class=\"den\">5</span></span> = 1600\n        </div>\n        <div style=\"padding-left: 12px;\">\n          &rArr; x = <span class=\"frac\"><span class=\"num\">1600 &times; 5</span><span class=\"den\">4</span></span> = 400 &times; 5 = <b>₹ 2,000</b>\n        </div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Marked Price: </span>\n        <span class=\"ans-val\">₹ 2,000</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 10 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 10:</div>\n    <div class=\"q-text\">I purchased a hair dryer for ₹ 5,400, including 8% VAT. Find the price before VAT was added.</div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div>Let the original price of the hair dryer before VAT be <b>₹ x</b>.</div>\n        <div>Value Added Tax (VAT) rate = 8%</div>\n        <div>VAT amount = 8% of x = <span class=\"frac\"><span class=\"num\">8</span><span class=\"den\">100</span></span> &times; x</div>\n        <div style=\"margin-top: 6px;\">\n          Price including VAT:\n        </div>\n        <div style=\"padding-left: 12px;\">\n          = x + <span class=\"frac\"><span class=\"num\">8</span><span class=\"den\">100</span></span>x = <span class=\"frac\"><span class=\"num\">108x</span><span class=\"den\">100</span></span>\n        </div>\n        <div style=\"margin-top: 6px;\">\n          Given purchase price = ₹ 5,400.\n        </div>\n        <div style=\"padding-left: 12px;\">\n          &rArr; <span class=\"frac\"><span class=\"num\">108x</span><span class=\"den\">100</span></span> = 5400\n        </div>\n        <div style=\"padding-left: 12px;\">\n          &rArr; x = <span class=\"frac\"><span class=\"num\">5400 &times; 100</span><span class=\"den\">108</span></span>\n        </div>\n        <div style=\"padding-left: 12px;\">\n          Since 5400 &divide; 108 = 50:\n        </div>\n        <div style=\"padding-left: 12px;\">\n          &rArr; x = 50 &times; 100 = <b>₹ 5,000</b>\n        </div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Price Before VAT: </span>\n        <span class=\"ans-val\">₹ 5,000</span>\n      </div>\n    </div>\n  </div>\n\n</div>\n",
+    "ex8-3": "\n\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; text-align: center; }\n  .frac .den { padding: 1px 4px; text-align: center; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(233, 30, 99, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #E91E63; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 16px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(233, 30, 99, 0.2); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #E91E63; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #F48FB1; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(233, 30, 99, 0.15); border: 1.5px solid #E91E63; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #F48FB1; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(233, 30, 99, 0.15); border: 1px solid #E91E63; color: #F48FB1; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 4px 2px; }\n  .table-card { background: #FFFFFF; border-radius: 8px; padding: 10px 8px; margin: 16px 0; overflow-x: auto; box-shadow: 0 3px 12px rgba(0,0,0,0.25); -webkit-overflow-scrolling: touch; }\n  .styled-table { width: 100%; min-width: 290px; border-collapse: collapse; color: #0F172A; font-size: 13.5px; text-align: center; }\n  .styled-table th { background: #E91E63; color: #FFFFFF; font-weight: 800; padding: 9px 8px; border: 1px solid #CBD5E1; font-size: 13.5px; white-space: nowrap; }\n  .styled-table td { padding: 8px 6px; border: 1px solid #CBD5E1; font-weight: 500; font-size: 13px; }\n  .styled-table td.col-label { font-weight: 700; white-space: nowrap; text-align: left; padding-left: 12px; }\n  .calc-matrix { background: rgba(0, 0, 0, 0.45); border: 1.5px solid rgba(233, 30, 99, 0.35); border-radius: 8px; padding: 12px 16px; margin: 10px 0; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Header Card -->\n  <div style=\"background: linear-gradient(135deg, rgba(233, 30, 99, 0.2), rgba(156, 39, 176, 0.1)); border: 1.5px solid #E91E63; border-radius: 12px; padding: 14px 18px; margin-bottom: 20px;\">\n    <div style=\"font-size: 19px; font-weight: 800; color: #E91E63; margin-bottom: 4px;\">\n      Exercise 8.3\n    </div>\n    <div style=\"color: #FFFFFF; font-size: 15px; font-weight: 500;\">\n      Compound Interest (Annual &amp; Half-Yearly Compounding), Population &amp; Depreciation\n    </div>\n  </div>\n\n  <!-- QUESTION 1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 1:</div>\n    <div class=\"q-text\">Calculate the amount and compound interest on:</div>\n\n    <!-- (a) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #E91E63;\">(a)</b> ₹ 10,800 for 3 years at 12<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>% per annum compounded annually.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>Principal (P) = ₹ 10,800</div>\n          <div>Time (n) = 3 years</div>\n          <div>Rate of Interest (R) = 12<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>% = <span class=\"frac\"><span class=\"num\">25</span><span class=\"den\">2</span></span>% per annum</div>\n          <div style=\"margin-top: 6px;\">\n            Formula for Amount: <b>A = P &times; <span class=\"frac\"><span class=\"num\">1 + R</span><span class=\"den\">100</span></span><sup>n</sup></b>\n          </div>\n          <div style=\"padding-left: 12px;\">\n            A = 10800 &times; <span class=\"frac\"><span class=\"num\">1 + 25</span><span class=\"den\">200</span></span><sup>3</sup>\n          </div>\n          <div style=\"padding-left: 12px;\">\n            = 10800 &times; <span class=\"frac\"><span class=\"num\">1 + 1</span><span class=\"den\">8</span></span><sup>3</sup> = 10800 &times; <span class=\"frac\"><span class=\"num\">9</span><span class=\"den\">8</span></span><sup>3</sup>\n          </div>\n          <div style=\"padding-left: 12px;\">\n            = 10800 &times; <span class=\"frac\"><span class=\"num\">729</span><span class=\"den\">512</span></span> = <span class=\"frac\"><span class=\"num\">7873200</span><span class=\"den\">512</span></span> = <b>₹ 15,377.34</b> (approx.)\n          </div>\n          <div style=\"margin-top: 8px;\">\n            <b>Compound Interest (C.I.):</b>\n          </div>\n          <div style=\"padding-left: 12px;\">\n            C.I. = A &minus; P = ₹ 15,377.34 &minus; ₹ 10,800 = <b>₹ 4,577.34</b>\n          </div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Result: </span>\n          <span class=\"ans-val\">Amount = ₹ 15,377.34 &bull; C.I. = ₹ 4,577.34</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (b) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #E91E63;\">(b)</b> ₹ 18,000 for 2<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> years at 10% per annum compounded annually.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>Principal (P) = ₹ 18,000</div>\n          <div>Rate (R) = 10% per annum</div>\n          <div>Time = 2<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> years</div>\n          <div style=\"margin-top: 6px;\">\n            First, we calculate the compounded amount for 2 complete years:\n          </div>\n          <div style=\"padding-left: 12px;\">\n            A<sub>2</sub> = P &times; <span class=\"frac\"><span class=\"num\">1 + R</span><span class=\"den\">100</span></span><sup>2</sup> = 18000 &times; <span class=\"frac\"><span class=\"num\">1 + 10</span><span class=\"den\">100</span></span><sup>2</sup>\n          </div>\n          <div style=\"padding-left: 12px;\">\n            = 18000 &times; <span class=\"frac\"><span class=\"num\">11</span><span class=\"den\">10</span></span><sup>2</sup> = 18000 &times; <span class=\"frac\"><span class=\"num\">121</span><span class=\"den\">100</span></span> = 180 &times; 121 = <b>₹ 21,780</b>\n          </div>\n          <div style=\"margin-top: 6px;\">\n            Now, taking ₹ 21,780 as Principal, compute Simple Interest for the remaining <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> year:\n          </div>\n          <div style=\"padding-left: 12px;\">\n            S.I. = <span class=\"frac\"><span class=\"num\">P &times; R &times; T</span><span class=\"den\">100</span></span> = <span class=\"frac\"><span class=\"num\">21780 &times; 10 &times; (1/2)</span><span class=\"den\">100</span></span>\n          </div>\n          <div style=\"padding-left: 12px;\">\n            = <span class=\"frac\"><span class=\"num\">2178</span><span class=\"den\">2</span></span> = <b>₹ 1,089</b>\n          </div>\n          <div style=\"margin-top: 6px;\">\n            &bull; <b>Total Amount at the end of 2<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> years:</b>\n          </div>\n          <div style=\"padding-left: 12px;\">\n            = ₹ 21,780 + ₹ 1,089 = <b>₹ 22,869</b>\n          </div>\n          <div style=\"margin-top: 6px;\">\n            &bull; <b>Total Compound Interest (C.I.):</b>\n          </div>\n          <div style=\"padding-left: 12px;\">\n            C.I. = Total Amount &minus; Original Principal = ₹ 22,869 &minus; ₹ 18,000 = <b>₹ 4,869</b>\n          </div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Result: </span>\n          <span class=\"ans-val\">Amount = ₹ 22,869 &bull; C.I. = ₹ 4,869</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (c) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #E91E63;\">(c)</b> ₹ 62,500 for 1<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> years at 8% per annum compounded half yearly.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>Principal (P) = ₹ 62,500</div>\n          <div>Annual Rate = 8% &rArr; Rate per half-year (R) = <span class=\"frac\"><span class=\"num\">8%</span><span class=\"den\">2</span></span> = <b>4%</b></div>\n          <div>Time = 1<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> years = <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">2</span></span> &times; 2 = <b>3 half-years (n = 3)</b></div>\n          <div style=\"margin-top: 6px;\">\n            Amount Formula: <b>A = P &times; <span class=\"frac\"><span class=\"num\">1 + R</span><span class=\"den\">100</span></span><sup>n</sup></b>\n          </div>\n          <div style=\"padding-left: 12px;\">\n            A = 62500 &times; <span class=\"frac\"><span class=\"num\">1 + 4</span><span class=\"den\">100</span></span><sup>3</sup> = 62500 &times; <span class=\"frac\"><span class=\"num\">26</span><span class=\"den\">25</span></span><sup>3</sup>\n          </div>\n          <div style=\"padding-left: 12px;\">\n            = 62500 &times; <span class=\"frac\"><span class=\"num\">17576</span><span class=\"den\">15625</span></span>\n          </div>\n          <div style=\"padding-left: 12px;\">\n            Since 62500 &divide; 15625 = 4:\n          </div>\n          <div style=\"padding-left: 12px;\">\n            = 4 &times; 17576 = <b>₹ 70,304</b>\n          </div>\n          <div style=\"margin-top: 8px;\">\n            <b>Compound Interest (C.I.):</b>\n          </div>\n          <div style=\"padding-left: 12px;\">\n            C.I. = A &minus; P = ₹ 70,304 &minus; ₹ 62,500 = <b>₹ 7,804</b>\n          </div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Result: </span>\n          <span class=\"ans-val\">Amount = ₹ 70,304 &bull; C.I. = ₹ 7,804</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (d) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #E91E63;\">(d)</b> ₹ 8,000 for 1 year at 9% per annum compounded half yearly.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>Principal (P) = ₹ 8,000</div>\n          <div>Annual Rate = 9% &rArr; Rate per half-year (R) = <span class=\"frac\"><span class=\"num\">9</span><span class=\"den\">2</span></span>% = 4.5%</div>\n          <div>Time = 1 year = 1 &times; 2 = <b>2 half-years (n = 2)</b></div>\n          <div style=\"margin-top: 6px;\">\n            Amount:\n          </div>\n          <div style=\"padding-left: 12px;\">\n            A = 8000 &times; <span class=\"frac\"><span class=\"num\">1 + 9</span><span class=\"den\">200</span></span><sup>2</sup> = 8000 &times; <span class=\"frac\"><span class=\"num\">209</span><span class=\"den\">200</span></span><sup>2</sup>\n          </div>\n          <div style=\"padding-left: 12px;\">\n            = 8000 &times; <span class=\"frac\"><span class=\"num\">43681</span><span class=\"den\">40000</span></span> = <span class=\"frac\"><span class=\"num\">43681</span><span class=\"den\">5</span></span> = <b>₹ 8,736.20</b>\n          </div>\n          <div style=\"margin-top: 8px;\">\n            <b>Compound Interest (C.I.):</b>\n          </div>\n          <div style=\"padding-left: 12px;\">\n            C.I. = A &minus; P = ₹ 8,736.20 &minus; ₹ 8,000 = <b>₹ 736.20</b>\n          </div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Result: </span>\n          <span class=\"ans-val\">Amount = ₹ 8,736.20 &bull; C.I. = ₹ 736.20</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (e) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #E91E63;\">(e)</b> ₹ 10,000 for 1 year at 8% per annum compounded half yearly.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>Principal (P) = ₹ 10,000</div>\n          <div>Annual Rate = 8% &rArr; Rate per half-year (R) = <span class=\"frac\"><span class=\"num\">8%</span><span class=\"den\">2</span></span> = 4%</div>\n          <div>Time = 1 year = 1 &times; 2 = <b>2 half-years (n = 2)</b></div>\n          <div style=\"margin-top: 6px;\">\n            Amount:\n          </div>\n          <div style=\"padding-left: 12px;\">\n            A = 10000 &times; <span class=\"frac\"><span class=\"num\">1 + 4</span><span class=\"den\">100</span></span><sup>2</sup> = 10000 &times; <span class=\"frac\"><span class=\"num\">26</span><span class=\"den\">25</span></span><sup>2</sup>\n          </div>\n          <div style=\"padding-left: 12px;\">\n            = 10000 &times; <span class=\"frac\"><span class=\"num\">676</span><span class=\"den\">625</span></span> = 16 &times; 676 = <b>₹ 10,816</b>\n          </div>\n          <div style=\"margin-top: 8px;\">\n            <b>Compound Interest (C.I.):</b>\n          </div>\n          <div style=\"padding-left: 12px;\">\n            C.I. = A &minus; P = ₹ 10,816 &minus; ₹ 10,000 = <b>₹ 816</b>\n          </div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Result: </span>\n          <span class=\"ans-val\">Amount = ₹ 10,816 &bull; C.I. = ₹ 816</span>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 2 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 2:</div>\n    <div class=\"q-text\">Kamala borrowed ₹ 26,400 from a Bank to buy a scooter at a rate of 15% p.a. compounded yearly. What amount will she pay at the end of 2 years and 4 months to clear the loan?</div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div>Principal (P) = ₹ 26,400</div>\n        <div>Rate of Interest (R) = 15% per annum</div>\n        <div>Time = 2 years 4 months = 2 + <span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">12</span></span> years = 2<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span> years</div>\n        <div style=\"margin-top: 6px;\">\n          <b>Step 1: Calculate compounded amount for 2 complete years:</b>\n        </div>\n        <div style=\"padding-left: 12px;\">\n          A<sub>2</sub> = P &times; <span class=\"frac\"><span class=\"num\">1 + R</span><span class=\"den\">100</span></span><sup>2</sup> = 26400 &times; <span class=\"frac\"><span class=\"num\">1 + 15</span><span class=\"den\">100</span></span><sup>2</sup>\n        </div>\n        <div style=\"padding-left: 12px;\">\n          = 26400 &times; <span class=\"frac\"><span class=\"num\">1 + 3</span><span class=\"den\">20</span></span><sup>2</sup> = 26400 &times; <span class=\"frac\"><span class=\"num\">23</span><span class=\"den\">20</span></span><sup>2</sup>\n        </div>\n        <div style=\"padding-left: 12px;\">\n          = 26400 &times; <span class=\"frac\"><span class=\"num\">529</span><span class=\"den\">400</span></span> = 66 &times; 529 = <b>₹ 34,914</b>\n        </div>\n        <div style=\"margin-top: 8px;\">\n          <b>Step 2: Calculate Simple Interest for remaining <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span> year on ₹ 34,914:</b>\n        </div>\n        <div style=\"padding-left: 12px;\">\n          S.I. = <span class=\"frac\"><span class=\"num\">P &times; R &times; T</span><span class=\"den\">100</span></span> = <span class=\"frac\"><span class=\"num\">34914 &times; 15 &times; (1/3)</span><span class=\"den\">100</span></span>\n        </div>\n        <div style=\"padding-left: 12px;\">\n          = <span class=\"frac\"><span class=\"num\">34914 &times; 5</span><span class=\"den\">100</span></span> = <span class=\"frac\"><span class=\"num\">174570</span><span class=\"den\">100</span></span> = <b>₹ 1,745.70</b>\n        </div>\n        <div style=\"margin-top: 8px;\">\n          <b>Step 3: Total amount to clear loan:</b>\n        </div>\n        <div style=\"padding-left: 12px;\">\n          Amount = ₹ 34,914 + ₹ 1,745.70 = <b>₹ 36,659.70</b>\n        </div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Amount Paid to Clear Loan: </span>\n        <span class=\"ans-val\">₹ 36,659.70</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 3 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 3:</div>\n    <div class=\"q-text\">Fabina borrows ₹ 12,500 at 12% per annum for 3 years at simple interest, and Radha borrows the same amount for the same time period at 10% per annum, compounded annually. Who pays more interest, and by how much?</div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div style=\"font-weight: 700; color: #F48FB1;\">1. Interest Paid by Fabina (Simple Interest):</div>\n        <div style=\"padding-left: 12px;\">\n          P = ₹ 12,500 &nbsp;&bull;&nbsp; R = 12% &nbsp;&bull;&nbsp; T = 3 years<br/>\n          S.I. = <span class=\"frac\"><span class=\"num\">P &times; R &times; T</span><span class=\"den\">100</span></span> = <span class=\"frac\"><span class=\"num\">12500 &times; 12 &times; 3</span><span class=\"den\">100</span></span><br/>\n          = 125 &times; 36 = <b>₹ 4,500</b>\n        </div>\n        <div style=\"font-weight: 700; color: #F48FB1; margin-top: 10px;\">2. Interest Paid by Radha (Compound Interest):</div>\n        <div style=\"padding-left: 12px;\">\n          P = ₹ 12,500 &nbsp;&bull;&nbsp; R = 10% &nbsp;&bull;&nbsp; n = 3 years<br/>\n          Amount (A) = P &times; <span class=\"frac\"><span class=\"num\">1 + R</span><span class=\"den\">100</span></span><sup>3</sup> = 12500 &times; <span class=\"frac\"><span class=\"num\">1 + 10</span><span class=\"den\">100</span></span><sup>3</sup><br/>\n          = 12500 &times; <span class=\"frac\"><span class=\"num\">11</span><span class=\"den\">10</span></span><sup>3</sup> = 12500 &times; <span class=\"frac\"><span class=\"num\">1331</span><span class=\"den\">1000</span></span><br/>\n          = <span class=\"frac\"><span class=\"num\">125 &times; 1331</span><span class=\"den\">10</span></span> = <span class=\"frac\"><span class=\"num\">166375</span><span class=\"den\">10</span></span> = <b>₹ 16,637.50</b><br/>\n          Compound Interest (C.I.) = A &minus; P = ₹ 16,637.50 &minus; ₹ 12,500 = <b>₹ 4,137.50</b>\n        </div>\n        <div style=\"font-weight: 700; color: #F48FB1; margin-top: 10px;\">3. Comparison:</div>\n        <div style=\"padding-left: 12px;\">\n          Fabina's Interest = ₹ 4,500<br/>\n          Radha's Interest = ₹ 4,137.50<br/>\n          Fabina pays more interest than Radha.<br/>\n          Difference = ₹ 4,500 &minus; ₹ 4,137.50 = <b>₹ 362.50</b>\n        </div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Result: </span>\n        <span class=\"ans-val\">Fabina pays more interest by ₹ 362.50</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 4 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 4:</div>\n    <div class=\"q-text\">I borrowed ₹ 12,000 from Jamshed at 6% per annum simple interest for 2 years. Had I borrowed this sum at 6% per annum compound interest, what extra amount would I have to pay?</div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div>Principal (P) = ₹ 12,000</div>\n        <div>Rate of Interest (R) = 6% per annum</div>\n        <div>Time (T or n) = 2 years</div>\n        <div style=\"margin-top: 6px; font-weight: 700; color: #F48FB1;\">\n          1. Calculate Simple Interest (S.I.):\n        </div>\n        <div style=\"padding-left: 12px;\">\n          S.I. = <span class=\"frac\"><span class=\"num\">P &times; R &times; T</span><span class=\"den\">100</span></span> = <span class=\"frac\"><span class=\"num\">12000 &times; 6 &times; 2</span><span class=\"den\">100</span></span> = 120 &times; 12 = <b>₹ 1,440</b>\n        </div>\n        <div style=\"margin-top: 8px; font-weight: 700; color: #F48FB1;\">\n          2. Calculate Compound Interest (C.I.):\n        </div>\n        <div style=\"padding-left: 12px;\">\n          Amount (A) = P &times; <span class=\"frac\"><span class=\"num\">1 + R</span><span class=\"den\">100</span></span><sup>2</sup> = 12000 &times; <span class=\"frac\"><span class=\"num\">1 + 6</span><span class=\"den\">100</span></span><sup>2</sup>\n        </div>\n        <div style=\"padding-left: 12px;\">\n          = 12000 &times; <span class=\"frac\"><span class=\"num\">53</span><span class=\"den\">50</span></span><sup>2</sup> = 12000 &times; <span class=\"frac\"><span class=\"num\">2809</span><span class=\"den\">2500</span></span>\n        </div>\n        <div style=\"padding-left: 12px;\">\n          = <span class=\"frac\"><span class=\"num\">120 &times; 2809</span><span class=\"den\">25</span></span> = <span class=\"frac\"><span class=\"num\">24 &times; 2809</span><span class=\"den\">5</span></span> = <span class=\"frac\"><span class=\"num\">67416</span><span class=\"den\">5</span></span> = <b>₹ 13,483.20</b>\n        </div>\n        <div style=\"padding-left: 12px;\">\n          C.I. = A &minus; P = ₹ 13,483.20 &minus; ₹ 12,000 = <b>₹ 1,483.20</b>\n        </div>\n        <div style=\"margin-top: 8px; font-weight: 700; color: #F48FB1;\">\n          3. Extra Amount to Pay:\n        </div>\n        <div style=\"padding-left: 12px;\">\n          = C.I. &minus; S.I. = ₹ 1,483.20 &minus; ₹ 1,440 = <b>₹ 43.20</b>\n        </div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Extra Amount to be Paid: </span>\n        <span class=\"ans-val\">₹ 43.20</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 5 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 5:</div>\n    <div class=\"q-text\">Vasudevan invested ₹ 60,000 at an interest rate of 12% per annum compounded half yearly. What amount would he get: (i) after 6 months? (ii) after 1 year?</div>\n\n    <!-- (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #E91E63;\">(i)</b> After 6 months</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>Principal (P) = ₹ 60,000</div>\n          <div>Annual Rate = 12% &rArr; Rate per half-year (R) = <span class=\"frac\"><span class=\"num\">12%</span><span class=\"den\">2</span></span> = 6%</div>\n          <div>Time = 6 months = <b>1 half-year (n = 1)</b></div>\n          <div style=\"margin-top: 6px;\">\n            Amount (A) = P &times; <span class=\"frac\"><span class=\"num\">1 + R</span><span class=\"den\">100</span></span><sup>1</sup>\n          </div>\n          <div style=\"padding-left: 12px;\">\n            = 60000 &times; <span class=\"frac\"><span class=\"num\">1 + 6</span><span class=\"den\">100</span></span> = 60000 &times; <span class=\"frac\"><span class=\"num\">53</span><span class=\"den\">50</span></span>\n          </div>\n          <div style=\"padding-left: 12px;\">\n            = 1200 &times; 53 = <b>₹ 63,600</b>\n          </div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Amount after 6 months: </span><span class=\"ans-val\">₹ 63,600</span></div>\n      </div>\n    </div>\n\n    <!-- (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #E91E63;\">(ii)</b> After 1 year</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>Principal (P) = ₹ 60,000</div>\n          <div>Rate per half-year (R) = 6%</div>\n          <div>Time = 1 year = 1 &times; 2 = <b>2 half-years (n = 2)</b></div>\n          <div style=\"margin-top: 6px;\">\n            Amount (A) = P &times; <span class=\"frac\"><span class=\"num\">1 + R</span><span class=\"den\">100</span></span><sup>2</sup>\n          </div>\n          <div style=\"padding-left: 12px;\">\n            = 60000 &times; <span class=\"frac\"><span class=\"num\">1 + 6</span><span class=\"den\">100</span></span><sup>2</sup> = 60000 &times; <span class=\"frac\"><span class=\"num\">53</span><span class=\"den\">50</span></span><sup>2</sup>\n          </div>\n          <div style=\"padding-left: 12px;\">\n            = 60000 &times; <span class=\"frac\"><span class=\"num\">2809</span><span class=\"den\">2500</span></span> = 24 &times; 2809 = <b>₹ 67,416</b>\n          </div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Amount after 1 year: </span><span class=\"ans-val\">₹ 67,416</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 6 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 6:</div>\n    <div class=\"q-text\">Arif took a loan of ₹ 80,000 from a bank. If the rate of interest is 10% per annum, find the difference in amounts he would be paying after 1<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> years if the interest is: (i) Compounded annually (ii) Compounded half yearly.</div>\n\n    <!-- (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #E91E63;\">(i)</b> When interest is compounded annually</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>Principal (P) = ₹ 80,000 &nbsp;&bull;&nbsp; R = 10% p.a. &nbsp;&bull;&nbsp; Time = 1<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> years</div>\n          <div>Amount for 1st complete year:</div>\n          <div style=\"padding-left: 12px;\">\n            A<sub>1</sub> = 80000 &times; <span class=\"frac\"><span class=\"num\">1 + 10</span><span class=\"den\">100</span></span> = 80000 &times; <span class=\"frac\"><span class=\"num\">11</span><span class=\"den\">10</span></span> = <b>₹ 88,000</b>\n          </div>\n          <div>Simple interest for remaining <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> year on ₹ 88,000:</div>\n          <div style=\"padding-left: 12px;\">\n            S.I. = <span class=\"frac\"><span class=\"num\">88000 &times; 10 &times; (1/2)</span><span class=\"den\">100</span></span> = <span class=\"frac\"><span class=\"num\">8800</span><span class=\"den\">2</span></span> = <b>₹ 4,400</b>\n          </div>\n          <div>Total amount compounded annually:</div>\n          <div style=\"padding-left: 12px;\">\n            = ₹ 88,000 + ₹ 4,400 = <b>₹ 92,400</b>\n          </div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Amount (Compounded Annually): </span><span class=\"ans-val\">₹ 92,400</span></div>\n      </div>\n    </div>\n\n    <!-- (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #E91E63;\">(ii)</b> When interest is compounded half yearly</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>Rate per half-year (R) = <span class=\"frac\"><span class=\"num\">10%</span><span class=\"den\">2</span></span> = 5%</div>\n          <div>Time = 1<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> years = <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">2</span></span> &times; 2 = <b>3 half-years (n = 3)</b></div>\n          <div>Amount:</div>\n          <div style=\"padding-left: 12px;\">\n            A = 80000 &times; <span class=\"frac\"><span class=\"num\">1 + 5</span><span class=\"den\">100</span></span><sup>3</sup> = 80000 &times; <span class=\"frac\"><span class=\"num\">21</span><span class=\"den\">20</span></span><sup>3</sup>\n          </div>\n          <div style=\"padding-left: 12px;\">\n            = 80000 &times; <span class=\"frac\"><span class=\"num\">9261</span><span class=\"den\">8000</span></span> = 10 &times; 9261 = <b>₹ 92,610</b>\n          </div>\n          <div style=\"margin-top: 8px; font-weight: 700; color: #F48FB1;\">\n            Difference between the two amounts:\n          </div>\n          <div style=\"padding-left: 12px;\">\n            = ₹ 92,610 &minus; ₹ 92,400 = <b>₹ 210</b>\n          </div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Difference in Amounts: </span><span class=\"ans-val\">₹ 210</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 7 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 7:</div>\n    <div class=\"q-text\">Maria invested ₹ 8,000 in a business. She would be paid interest at 5% per annum compounded annually. Find: (i) The amount credited against her name at the end of the second year. (ii) The interest for the 3rd year.</div>\n\n    <!-- (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #E91E63;\">(i)</b> Amount credited at the end of the second year</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>Principal (P) = ₹ 8,000 &nbsp;&bull;&nbsp; Rate (R) = 5% p.a. &nbsp;&bull;&nbsp; n = 2 years</div>\n          <div>Amount (A<sub>2</sub>) = P &times; <span class=\"frac\"><span class=\"num\">1 + R</span><span class=\"den\">100</span></span><sup>2</sup></div>\n          <div style=\"padding-left: 12px;\">\n            = 8000 &times; <span class=\"frac\"><span class=\"num\">1 + 5</span><span class=\"den\">100</span></span><sup>2</sup> = 8000 &times; <span class=\"frac\"><span class=\"num\">21</span><span class=\"den\">20</span></span><sup>2</sup>\n          </div>\n          <div style=\"padding-left: 12px;\">\n            = 8000 &times; <span class=\"frac\"><span class=\"num\">441</span><span class=\"den\">400</span></span> = 20 &times; 441 = <b>₹ 8,820</b>\n          </div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Amount at End of 2nd Year: </span><span class=\"ans-val\">₹ 8,820</span></div>\n      </div>\n    </div>\n\n    <!-- (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #E91E63;\">(ii)</b> Interest for the 3rd year</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>In compound interest, the amount at the end of 2nd year becomes the principal for the 3rd year:</div>\n          <div>Principal for 3rd year = ₹ 8,820</div>\n          <div>Interest for 1 year at 5% p.a.:</div>\n          <div style=\"padding-left: 12px;\">\n            S.I. = <span class=\"frac\"><span class=\"num\">P &times; R &times; T</span><span class=\"den\">100</span></span> = <span class=\"frac\"><span class=\"num\">8820 &times; 5 &times; 1</span><span class=\"den\">100</span></span>\n          </div>\n          <div style=\"padding-left: 12px;\">\n            = <span class=\"frac\"><span class=\"num\">44100</span><span class=\"den\">100</span></span> = <b>₹ 441</b>\n          </div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Interest for 3rd Year: </span><span class=\"ans-val\">₹ 441</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 8 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 8:</div>\n    <div class=\"q-text\">Find the amount and the compound interest on ₹ 10,000 for 1<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> years at 10% per annum, compounded half yearly. Would this interest be more than the interest he would get if it was compounded annually?</div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div style=\"font-weight: 700; color: #F48FB1;\">1. Compounded Half-Yearly:</div>\n        <div style=\"padding-left: 12px;\">\n          P = ₹ 10,000 &nbsp;&bull;&nbsp; Rate per half-year = <span class=\"frac\"><span class=\"num\">10%</span><span class=\"den\">2</span></span> = 5% &nbsp;&bull;&nbsp; n = 1.5 &times; 2 = 3 half-years<br/>\n          Amount (A) = 10000 &times; <span class=\"frac\"><span class=\"num\">1 + 5</span><span class=\"den\">100</span></span><sup>3</sup> = 10000 &times; <span class=\"frac\"><span class=\"num\">21</span><span class=\"den\">20</span></span><sup>3</sup><br/>\n          = 10000 &times; <span class=\"frac\"><span class=\"num\">9261</span><span class=\"den\">8000</span></span> = <span class=\"frac\"><span class=\"num\">92610</span><span class=\"den\">8</span></span> = <b>₹ 11,576.25</b><br/>\n          C.I. (Half-Yearly) = ₹ 11,576.25 &minus; ₹ 10,000 = <b>₹ 1,576.25</b>\n        </div>\n        <div style=\"font-weight: 700; color: #F48FB1; margin-top: 10px;\">2. Compounded Annually:</div>\n        <div style=\"padding-left: 12px;\">\n          Amount for 1 year = 10000 &times; <span class=\"frac\"><span class=\"num\">1 + 10</span><span class=\"den\">100</span></span> = 10000 &times; <span class=\"frac\"><span class=\"num\">11</span><span class=\"den\">10</span></span> = ₹ 11,000<br/>\n          S.I. for next <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> year on ₹ 11,000 = <span class=\"frac\"><span class=\"num\">11000 &times; 10 &times; (1/2)</span><span class=\"den\">100</span></span> = ₹ 550<br/>\n          Total Amount (Annually) = ₹ 11,000 + ₹ 550 = <b>₹ 11,550</b><br/>\n          C.I. (Annually) = ₹ 11,550 &minus; ₹ 10,000 = <b>₹ 1,550</b>\n        </div>\n        <div style=\"font-weight: 700; color: #F48FB1; margin-top: 10px;\">3. Comparison:</div>\n        <div style=\"padding-left: 12px;\">\n          Yes, the interest compounded half yearly (₹ 1,576.25) is <b>more</b> than the interest compounded annually (₹ 1,550).<br/>\n          Difference = ₹ 1,576.25 &minus; ₹ 1,550 = <b>₹ 26.25</b>\n        </div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Result: </span>\n        <span class=\"ans-val\">Amount = ₹ 11,576.25 &bull; C.I. = ₹ 1,576.25 &bull; Yes, it is ₹ 26.25 more</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 9 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 9:</div>\n    <div class=\"q-text\">Find the amount which Ram will get on ₹ 4,096, if he gave it for 18 months at 12<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>% per annum, interest being compounded half-yearly.</div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div>Principal (P) = ₹ 4,096</div>\n        <div>Annual Rate = 12<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>% = <span class=\"frac\"><span class=\"num\">25</span><span class=\"den\">2</span></span>% per annum</div>\n        <div>Rate per half-year (R) = <span class=\"frac\"><span class=\"num\">25</span><span class=\"den\">2 &times; 2</span></span>% = <span class=\"frac\"><span class=\"num\">25</span><span class=\"den\">4</span></span>%</div>\n        <div>Time = 18 months = <span class=\"frac\"><span class=\"num\">18</span><span class=\"den\">6</span></span> half-years = <b>3 half-years (n = 3)</b></div>\n        <div style=\"margin-top: 6px;\">\n          Amount Formula:\n        </div>\n        <div style=\"padding-left: 12px;\">\n          A = P &times; <span class=\"frac\"><span class=\"num\">1 + R</span><span class=\"den\">100</span></span><sup>n</sup> = 4096 &times; <span class=\"frac\"><span class=\"num\">1 + 25</span><span class=\"den\">400</span></span><sup>3</sup>\n        </div>\n        <div style=\"padding-left: 12px;\">\n          = 4096 &times; <span class=\"frac\"><span class=\"num\">1 + 1</span><span class=\"den\">16</span></span><sup>3</sup> = 4096 &times; <span class=\"frac\"><span class=\"num\">17</span><span class=\"den\">16</span></span><sup>3</sup>\n        </div>\n        <div style=\"padding-left: 12px;\">\n          = 4096 &times; <span class=\"frac\"><span class=\"num\">17 &times; 17 &times; 17</span><span class=\"den\">16 &times; 16 &times; 16</span></span>\n        </div>\n        <div style=\"padding-left: 12px;\">\n          Since 16 &times; 16 &times; 16 = 4096:\n        </div>\n        <div style=\"padding-left: 12px;\">\n          = 4096 &times; <span class=\"frac\"><span class=\"num\">4913</span><span class=\"den\">4096</span></span> = <b>₹ 4,913</b>\n        </div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Amount Ram Will Get: </span>\n        <span class=\"ans-val\">₹ 4,913</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 10 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 10:</div>\n    <div class=\"q-text\">The population of a place increased to 54,000 in 2003 at a rate of 5% per annum: (i) Find the population in 2001. (ii) What would be its population in 2005?</div>\n\n    <!-- (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #E91E63;\">(i)</b> Population in 2001</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>Let the population in 2001 be <b>P</b>.</div>\n          <div>Rate of increase = 5% per annum &nbsp;&bull;&nbsp; Time from 2001 to 2003 = 2 years (n = 2)</div>\n          <div>Population in 2003 = P &times; <span class=\"frac\"><span class=\"num\">1 + R</span><span class=\"den\">100</span></span><sup>2</sup></div>\n          <div style=\"padding-left: 12px;\">\n            54000 = P &times; <span class=\"frac\"><span class=\"num\">1 + 5</span><span class=\"den\">100</span></span><sup>2</sup> = P &times; <span class=\"frac\"><span class=\"num\">21</span><span class=\"den\">20</span></span><sup>2</sup> = P &times; <span class=\"frac\"><span class=\"num\">441</span><span class=\"den\">400</span></span>\n          </div>\n          <div style=\"padding-left: 12px;\">\n            &rArr; P = <span class=\"frac\"><span class=\"num\">54000 &times; 400</span><span class=\"den\">441</span></span> = <span class=\"frac\"><span class=\"num\">21600000</span><span class=\"den\">441</span></span>\n          </div>\n          <div style=\"padding-left: 12px;\">\n            = 48979.59 &approx; <b>48,980</b>\n          </div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Population in 2001: </span><span class=\"ans-val\">Approximately 48,980</span></div>\n      </div>\n    </div>\n\n    <!-- (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #E91E63;\">(ii)</b> Population in 2005</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>Population in 2003 = 54,000</div>\n          <div>Rate of increase = 5% per annum &nbsp;&bull;&nbsp; Time from 2003 to 2005 = 2 years (n = 2)</div>\n          <div>Population in 2005:</div>\n          <div style=\"padding-left: 12px;\">\n            = 54000 &times; <span class=\"frac\"><span class=\"num\">1 + 5</span><span class=\"den\">100</span></span><sup>2</sup> = 54000 &times; <span class=\"frac\"><span class=\"num\">21</span><span class=\"den\">20</span></span><sup>2</sup>\n          </div>\n          <div style=\"padding-left: 12px;\">\n            = 54000 &times; <span class=\"frac\"><span class=\"num\">441</span><span class=\"den\">400</span></span> = <span class=\"frac\"><span class=\"num\">540 &times; 441</span><span class=\"den\">4</span></span> = 135 &times; 441 = <b>59,535</b>\n          </div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Population in 2005: </span><span class=\"ans-val\">59,535</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 11 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 11:</div>\n    <div class=\"q-text\">In a laboratory, the count of bacteria in a certain experiment was increasing at the rate of 2.5% per hour. Find the bacteria at the end of 2 hours if the count was initially 5,06,000.</div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div>Initial count of bacteria (P) = 5,06,000</div>\n        <div>Rate of increase (R) = 2.5% = <span class=\"frac\"><span class=\"num\">2.5</span><span class=\"den\">100</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">40</span></span> per hour</div>\n        <div>Time (n) = 2 hours</div>\n        <div style=\"margin-top: 6px;\">\n          Bacteria count at the end of 2 hours:\n        </div>\n        <div style=\"padding-left: 12px;\">\n          = P &times; <span class=\"frac\"><span class=\"num\">1 + R</span><span class=\"den\">100</span></span><sup>2</sup> = 506000 &times; <span class=\"frac\"><span class=\"num\">1 + 1</span><span class=\"den\">40</span></span><sup>2</sup>\n        </div>\n        <div style=\"padding-left: 12px;\">\n          = 506000 &times; <span class=\"frac\"><span class=\"num\">41</span><span class=\"den\">40</span></span><sup>2</sup> = 506000 &times; <span class=\"frac\"><span class=\"num\">1681</span><span class=\"den\">1600</span></span>\n        </div>\n        <div style=\"padding-left: 12px;\">\n          = <span class=\"frac\"><span class=\"num\">5060 &times; 1681</span><span class=\"den\">16</span></span> = <span class=\"frac\"><span class=\"num\">1265 &times; 1681</span><span class=\"den\">4</span></span> = <span class=\"frac\"><span class=\"num\">2126465</span><span class=\"den\">4</span></span>\n        </div>\n        <div style=\"padding-left: 12px;\">\n          = 531616.25 &approx; <b>5,31,616</b>\n        </div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Bacteria Count at End of 2 Hours: </span>\n        <span class=\"ans-val\">Approximately 5,31,616</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 12 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 12:</div>\n    <div class=\"q-text\">A scooter was bought at ₹ 42,000. Its value depreciated at the rate of 8% per annum. Find its value after one year.</div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div>Cost price of the scooter (P) = ₹ 42,000</div>\n        <div>Rate of depreciation (R) = 8% per annum</div>\n        <div>Time (n) = 1 year</div>\n        <div style=\"margin-top: 6px;\">\n          <b>Method 1: Using Depreciation formula:</b>\n        </div>\n        <div style=\"padding-left: 12px;\">\n          Value after 1 year = P &times; <span class=\"frac\"><span class=\"num\">1 &minus; R</span><span class=\"den\">100</span></span><sup>1</sup>\n        </div>\n        <div style=\"padding-left: 12px;\">\n          = 42000 &times; <span class=\"frac\"><span class=\"num\">1 &minus; 8</span><span class=\"den\">100</span></span> = 42000 &times; <span class=\"frac\"><span class=\"num\">92</span><span class=\"den\">100</span></span>\n        </div>\n        <div style=\"padding-left: 12px;\">\n          = 420 &times; 92 = <b>₹ 38,640</b>\n        </div>\n        <div style=\"margin-top: 8px;\">\n          <b>Method 2: By calculating depreciation amount directly:</b>\n        </div>\n        <div style=\"padding-left: 12px;\">\n          Depreciation for 1 year = 8% of ₹ 42,000 = <span class=\"frac\"><span class=\"num\">8</span><span class=\"den\">100</span></span> &times; 42000 = <b>₹ 3,360</b><br/>\n          Value after 1 year = ₹ 42,000 &minus; ₹ 3,360 = <b>₹ 38,640</b>\n        </div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Value After 1 Year: </span>\n        <span class=\"ans-val\">₹ 38,640</span>\n      </div>\n    </div>\n  </div>\n\n</div>\n",
   },
 };
