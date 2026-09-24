@@ -716,15 +716,21 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
       {
         id: "c8-math-11",
         number: 11,
-        name: "Direct and Inverse Proportion",
-        color: "#00D4FF",
+        name: "Exponents and Powers",
+        color: "#FDC830",
       },
-      { id: "c8-math-12", number: 12, name: "Factorisation", color: "#00BFA5" },
       {
-        id: "c8-math-13",
-        number: 13,
+        id: "c8-math-12",
+        number: 12,
+        name: "Direct and Inverse Proportions",
+        color: "#00BCD4",
+      },
+      { id: "c8-math-13", number: 13, name: "Factorisation", color: "#AB47BC" },
+      {
+        id: "c8-math-14",
+        number: 14,
         name: "Introduction to Graphs",
-        color: "#E040FB",
+        color: "#29B6F6",
       },
     ],
   },
@@ -1211,6 +1217,7 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
   if (chapterId === "c8-math-8") return ["#E91E63", "#C2185B"]; // Rose Pink for Comparing Quantities
   if (chapterId === "c8-math-9") return ["#3F51B5", "#283593"]; // Indigo for Algebraic Expressions
   if (chapterId === "c8-math-10") return ["#FF5722", "#D84315"]; // Deep Orange for Mensuration
+  if (chapterId === "c8-math-11") return ["#FDC830", "#F39C12"]; // Amber Gold for Exponents and Powers
   if (chapterId === "c11-phy-1") return ["#FF512F", "#DD2476"];
   if (chapterId === "c11-phy-2") return ["#8E2DE2", "#4A00E0"];
   if (chapterId === "c11-phy-3") return ["#FF8A65", "#FF3D00"];

@@ -1,573 +1,374 @@
 import { ChapterContent } from "../types";
 
-const ex111Content = `
-  <style>
-    .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
-    .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
-    .frac .den { padding: 0 2px; }
-    .ex-container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
-    .q-card { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 15px; margin-bottom: 25px; }
-    .q-text { color: #00D4FF; font-weight: 600; margin-bottom: 12px; }
-    .q-subtext { color: #e0e0e0; margin-bottom: 5px; margin-left: 10px; }
-    .sol-box { border-left: 3px solid #00D4FF; padding-left: 15px; margin-top: 15px; background: rgba(0, 212, 255, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; }
-    .ans-highlight { color: #00D4FF; font-weight: 700; }
-    .step-label { color: #40C4FF; font-weight: 600; margin-right: 5px; }
-    .sol-step { margin-bottom: 8px; }
-    .q-text, .q-subtext, .sol-step, .sol-box { font-size: 16px; line-height: 1.8; }
-    .fig-container { display: flex; justify-content: center; margin: 15px 0; }
-    .prop-table { width: max-content; min-width: 100%; border-collapse: collapse; background: rgba(0,0,0,0.2); }
-    .prop-table th, .prop-table td { padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1); text-align: center; font-size: 14px; white-space: nowrap; }
-    .prop-table th { background: rgba(0, 212, 255, 0.2); color: #00D4FF; font-weight: 600; width: 1%; }
-    .table-container { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; border-radius: 8px; margin: 15px 0; border: 1px solid rgba(255,255,255,0.1); }
-  </style>
-  <div class="ex-container">
-    <div class="q-card">
-      <div class="q-text">1. Following are the car parking charges near a railway station upto:</div>
-      <div class="q-subtext">4 hours — Rs 60</div>
-      <div class="q-subtext">8 hours — Rs 100</div>
-      <div class="q-subtext">12 hours — Rs 140</div>
-      <div class="q-subtext">24 hours — Rs 180</div>
-      <div class="q-text">Check if the parking charges are in direct proportion to the parking time.</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Two quantities are in direct proportion if their ratio (x/y) remains constant.</div>
-        <div class="sol-step">C₁/T₁ = 60/4 = 15</div>
-        <div class="sol-step">C₂/T₂ = 100/8 = 12.5</div>
-        <div class="sol-step">C₃/T₃ = 140/12 = 11.66...</div>
-        <div class="sol-step">C₄/T₄ = 180/24 = 7.5</div>
-        <div class="sol-step">Since 15 ≠ 12.5 ≠ 11.66 ≠ 7.5, the ratios are not equal.</div>
-        <div class="sol-step"><span class="ans-highlight">Therefore, the parking charges are not in direct proportion to the parking time.</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">2. A mixture of paint is prepared by mixing 1 part of red pigments with 8 parts of base. In the following table, find the parts of base that need to be added.</div>
-      <div class="table-container">
-        <table class="prop-table">
-          <tr><th>Red Pigment</th><td>1</td><td>4</td><td>7</td><td>12</td><td>20</td></tr>
-          <tr><th>Base Parts</th><td>8</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
-        </table>
-      </div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Let red pigment be x and base be y. Ratio x/y = 1/8.</div>
-        <div class="sol-step">For x = 4: y = 4 × 8 = <span class="ans-highlight">32</span></div>
-        <div class="sol-step">For x = 7: y = 7 × 8 = <span class="ans-highlight">56</span></div>
-        <div class="sol-step">For x = 12: y = 12 × 8 = <span class="ans-highlight">96</span></div>
-        <div class="sol-step">For x = 20: y = 20 × 8 = <span class="ans-highlight">160</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">3. In Question 2 above, if 1 part of a red pigment requires 75 mL of base, how much red pigment should we mix with 1800 mL of base?</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Let the red pigment required be x.</div>
-        <div class="table-container">
-          <table class="prop-table">
-            <tr><th>Red Pigment</th><td>1</td><td>x</td></tr>
-            <tr><th>Base (mL)</th><td>75</td><td>1800</td></tr>
-          </table>
-        </div>
-        <div class="sol-step">Ratio = 1/75 = x/1800</div>
-        <div class="sol-step">x = 1800 / 75</div>
-        <div class="sol-step">x = <span class="ans-highlight">24 parts</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">4. A machine in a soft drink factory fills 840 bottles in six hours. How many bottles will it fill in five hours?</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Let the number of bottles be x.</div>
-        <div class="table-container">
-          <table class="prop-table">
-            <tr><th>Hours</th><td>6</td><td>5</td></tr>
-            <tr><th>Bottles</th><td>840</td><td>x</td></tr>
-          </table>
-        </div>
-        <div class="sol-step">Since time and bottles are in direct proportion:</div>
-        <div class="sol-step">840/6 = x/5</div>
-        <div class="sol-step">140 = x/5</div>
-        <div class="sol-step">x = 140 × 5 = <span class="ans-highlight">700 bottles</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">5. A photograph of a bacteria enlarged 50,000 times attains a length of 5 cm as shown in the diagram. What is the actual length of the bacteria? If the photograph is enlarged 20,000 times only, what would be its enlarged length?</div>
-      <div class="fig-container">
-        <svg width="150" height="80" viewBox="0 0 150 80">
-          <ellipse cx="75" cy="40" rx="60" ry="20" fill="rgba(0, 212, 255, 0.1)" stroke="#00D4FF" stroke-width="2"/>
-          <path d="M40 30 Q 50 20 60 30 M80 30 Q 90 20 100 30" stroke="#00D4FF" fill="none" stroke-width="1"/>
-          <circle cx="50" cy="45" r="3" fill="#00D4FF"/>
-          <circle cx="100" cy="45" r="3" fill="#00D4FF"/>
-          <path d="M15 40 L5 40 M135 40 L145 40 M75 20 L75 10 M75 60 L75 70" stroke="#00D4FF" stroke-width="1"/>
-        </svg>
-      </div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Actual length = Enlarged length / Enlargement</div>
-        <div class="sol-step">= 5 / 50,000 = 1 / 10,000 = <span class="ans-highlight">10⁻⁴ cm</span></div>
-        <div class="sol-step">Now, for enlargement of 20,000 times:</div>
-        <div class="sol-step">Length/Enlargement = 5 / 50,000 = x / 20,000</div>
-        <div class="sol-step">x = (5 × 20,000) / 50,000 = 100,000 / 50,000 = <span class="ans-highlight">2 cm</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">6. In a model of a ship, the mast is 9 cm high, while the mast of the actual ship is 12 m high. If the length of the ship is 28 m, how long is the model ship?</div>
-      <div class="fig-container">
-        <svg width="150" height="100" viewBox="0 0 150 100">
-          <path d="M20 70 L130 70 L110 90 L40 90 Z" fill="rgba(0, 212, 255, 0.1)" stroke="#00D4FF" stroke-width="2"/>
-          <line x1="75" y1="70" x2="75" y2="20" stroke="#00D4FF" stroke-width="3"/>
-          <path d="M75 20 L110 50 L75 55 Z" fill="rgba(0, 212, 255, 0.2)" stroke="#00D4FF"/>
-          <text x="80" y="40" fill="#00D4FF" font-size="10">Mast</text>
-        </svg>
-      </div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Let the length of model ship be x.</div>
-        <div class="table-container">
-          <table class="prop-table">
-            <tr><th></th><th>Actual Ship</th><th>Model Ship</th></tr>
-            <tr><th>Mast Height</th><td>12 m</td><td>9 cm</td></tr>
-            <tr><th>Ship Length</th><td>28 m</td><td>x cm</td></tr>
-          </table>
-        </div>
-        <div class="sol-step">Ratio = 12/9 = 28/x</div>
-        <div class="sol-step">x = (28 × 9) / 12</div>
-        <div class="sol-step">x = 7 × 3 = <span class="ans-highlight">21 cm</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">7. Suppose 2 kg of sugar contains 9 × 10⁶ crystals. How many sugar crystals are there in (i) 5 kg of sugar? (ii) 1.2 kg of sugar?</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Weight and crystals are in direct proportion. Ratio = (9 × 10⁶) / 2 = 4.5 × 10⁶ crystals/kg.</div>
-        <div class="sol-step"><span class="step-label">(i) 5 kg:</span> 5 × 4.5 × 10⁶ = <span class="ans-highlight">2.25 × 10⁷ crystals</span></div>
-        <div class="sol-step"><span class="step-label">(ii) 1.2 kg:</span> 1.2 × 4.5 × 10⁶ = <span class="ans-highlight">5.4 × 10⁶ crystals</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">8. Renu has a road map with a scale of 1 cm representing 18 km. She drives on a road for 72 km. What would be her distance covered in the map?</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Scale = 1 cm / 18 km.</div>
-        <div class="sol-step">Let map distance be x.</div>
-        <div class="sol-step">1/18 = x/72</div>
-        <div class="sol-step">x = 72 / 18 = <span class="ans-highlight">4 cm</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">9. A 5 m 60 cm high vertical pole casts a shadow 3 m 20 cm long. Find at the same time (i) the length of the shadow cast by another pole 10 m 50 cm high (ii) the height of a pole which casts a shadow 5 m long.</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Convert to cm: 5 m 60 cm = 560 cm, 3 m 20 cm = 320 cm.</div>
-        <div class="sol-step">Ratio = 560 / 320 = 7/4.</div>
-        <div class="sol-step"><span class="step-label">(i) Shadow for 1050 cm pole:</span> 1050 / x = 7/4 ⇒ x = (1050 × 4) / 7 = 150 × 4 = <span class="ans-highlight">600 cm or 6 m</span></div>
-        <div class="sol-step"><span class="step-label">(ii) Height for 500 cm shadow:</span> x / 500 = 7/4 ⇒ x = (500 × 7) / 4 = 125 × 7 = <span class="ans-highlight">875 cm or 8 m 75 cm</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">10. A loaded truck travels 14 km in 25 minutes. If the speed remains the same, how far can it travel in 5 hours?</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Time = 5 hours = 5 × 60 = 300 minutes.</div>
-        <div class="sol-step">Ratio = 14 km / 25 min.</div>
-        <div class="sol-step">14 / 25 = x / 300</div>
-        <div class="sol-step">x = (14 × 300) / 25 = 14 × 12 = <span class="ans-highlight">168 km</span></div>
-      </div>
-    </div>
-  </div>
-`;
-
-const ex112Content = `
-  <style>
-    .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
-    .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
-    .frac .den { padding: 0 2px; }
-    .ex-container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
-    .q-card { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 15px; margin-bottom: 25px; }
-    .q-text { color: #00D4FF; font-weight: 600; margin-bottom: 12px; }
-    .q-subtext { color: #e0e0e0; margin-bottom: 5px; margin-left: 10px; }
-    .sol-box { border-left: 3px solid #00D4FF; padding-left: 15px; margin-top: 15px; background: rgba(0, 212, 255, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; }
-    .ans-highlight { color: #00D4FF; font-weight: 700; }
-    .step-label { color: #40C4FF; font-weight: 600; margin-right: 5px; }
-    .sol-step { margin-bottom: 8px; }
-    .q-text, .q-subtext, .sol-step, .sol-box { font-size: 16px; line-height: 1.8; }
-    .fig-container { display: flex; justify-content: center; margin: 15px 0; }
-    .prop-table { width: max-content; min-width: 100%; border-collapse: collapse; background: rgba(0,0,0,0.2); }
-    .prop-table th, .prop-table td { padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1); text-align: center; font-size: 14px; white-space: nowrap; }
-    .prop-table th { background: rgba(0, 212, 255, 0.2); color: #00D4FF; font-weight: 600; width: 1%; }
-    .table-container { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; border-radius: 8px; margin: 15px 0; border: 1px solid rgba(255,255,255,0.1); }
-  </style>
-  <div class="ex-container">
-    <div class="q-card">
-      <div class="q-text">1. Which of the following are in inverse proportion?</div>
-      <div class="q-subtext">(i) The number of workers on a job and the time to complete the job.</div>
-      <div class="q-subtext">(ii) The time taken for a journey and the distance travelled in a uniform speed.</div>
-      <div class="q-subtext">(iii) Area of cultivated land and the crop harvested.</div>
-      <div class="q-subtext">(iv) The time taken for a fixed journey and the speed of the vehicle.</div>
-      <div class="q-subtext">(v) The population of a country and the area of land per person.</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="ans-highlight">(i), (iv) and (v) are in inverse proportion.</span></div>
-        <div class="sol-step">Reason: In these cases, as one quantity increases, the other decreases (and vice-versa) such that their product remains constant.</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">2. In a Television game show, the prize money of Rs 1,00,000 is to be divided equally amongst the winners. Complete the following table and find whether the prize money given to an individual winner is directly or inversely proportional to the number of winners?</div>
-      <div class="table-container">
-        <table class="prop-table">
-          <tr><th>Winners</th><td>1</td><td>2</td><td>4</td><td>5</td><td>8</td><td>10</td><td>20</td></tr>
-          <tr><th>Prize (Rs)</th><td>1,00,000</td><td>50,000</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
-        </table>
-      </div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Total Prize = Rs 1,00,000 (Constant). Product = x × y. This is <span class="ans-highlight">Inverse Proportion</span>.</div>
-        <div class="sol-step">For 4 winners: 1,00,000 / 4 = <span class="ans-highlight">25,000</span></div>
-        <div class="sol-step">For 5 winners: 1,00,000 / 5 = <span class="ans-highlight">20,000</span></div>
-        <div class="sol-step">For 8 winners: 1,00,000 / 8 = <span class="ans-highlight">12,500</span></div>
-        <div class="sol-step">For 10 winners: 1,00,000 / 10 = <span class="ans-highlight">10,000</span></div>
-        <div class="sol-step">For 20 winners: 1,00,000 / 20 = <span class="ans-highlight">5,000</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">3. Raj is making a wheel using spokes. He wants to fix equal spokes in such a way that the angles between any pair of consecutive spokes are equal. Help him by completing the following table.</div>
-      <div class="fig-container">
-        <svg width="200" height="80" viewBox="0 0 200 80">
-          <circle cx="30" cy="40" r="25" fill="none" stroke="#00D4FF" stroke-width="2"/>
-          <line x1="30" y1="15" x2="30" y2="65" stroke="#00D4FF"/><line x1="5" y1="40" x2="55" y2="40" stroke="#00D4FF"/>
-          <circle cx="100" cy="40" r="25" fill="none" stroke="#00D4FF" stroke-width="2"/>
-          <line x1="100" y1="15" x2="100" y2="65" stroke="#00D4FF"/><line x1="78" y1="28" x2="122" y2="52" stroke="#00D4FF"/><line x1="78" y1="52" x2="122" y2="28" stroke="#00D4FF"/>
-          <circle cx="170" cy="40" r="25" fill="none" stroke="#00D4FF" stroke-width="2"/>
-          <line x1="170" y1="15" x2="170" y2="65" stroke="#00D4FF"/><line x1="145" y1="40" x2="195" y2="40" stroke="#00D4FF"/>
-          <line x1="152" y1="22" x2="188" y2="58" stroke="#00D4FF"/><line x1="152" y1="58" x2="188" y2="22" stroke="#00D4FF"/>
-        </svg>
-      </div>
-      <div class="table-container">
-        <table class="prop-table">
-          <tr><th>Spokes</th><td>4</td><td>6</td><td>8</td><td>10</td><td>12</td></tr>
-          <tr><th>Angle</th><td>90°</td><td>60°</td><td>...</td><td>...</td><td>...</td></tr>
-        </table>
-      </div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Total angle = 360° (Constant). Spokes × Angle = 360°. (Inverse Proportion).</div>
-        <div class="sol-step">For 8 spokes: 360 / 8 = <span class="ans-highlight">45°</span></div>
-        <div class="sol-step">For 10 spokes: 360 / 10 = <span class="ans-highlight">36°</span></div>
-        <div class="sol-step">For 12 spokes: 360 / 12 = <span class="ans-highlight">30°</span></div>
-        <div class="sol-step"><span class="step-label">(i)</span> Yes, they are in inverse proportion.</div>
-        <div class="sol-step"><span class="step-label">(ii)</span> For 15 spokes: 360 / 15 = <span class="ans-highlight">24°</span></div>
-        <div class="sol-step"><span class="step-label">(iii)</span> For 40°: 360 / 40 = <span class="ans-highlight">9 spokes</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">4. If a box of sweets is divided among 24 children, they will get 5 sweets each. How many would each get, if the number of the children is reduced by 4?</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Children = 24, Sweets per child = 5. Total sweets = 24 × 5 = 120.</div>
-        <div class="sol-step">Reduced children = 24 - 4 = 20.</div>
-        <div class="sol-step">Sweets per child = 120 / 20 = <span class="ans-highlight">6 sweets</span>.</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">5. A farmer has enough food to feed 20 animals in his cattle for 6 days. How long would the food last if there were 10 more animals in his cattle?</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Animals = 20, Days = 6. Total feed units = 20 × 6 = 120.</div>
-        <div class="sol-step">New animals = 20 + 10 = 30.</div>
-        <div class="sol-step">Days = 120 / 30 = <span class="ans-highlight">4 days</span>.</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">6. A contractor estimates that 3 persons could rewire Javid's house in 4 days. If, he uses 4 persons instead of three, how long should they take to complete the job?</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Persons = 3, Days = 4. Product = 3 × 4 = 12.</div>
-        <div class="sol-step">New persons = 4.</div>
-        <div class="sol-step">Days = 12 / 4 = <span class="ans-highlight">3 days</span>.</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">7. A batch of bottles were packed in 25 boxes with 12 bottles in each box. If the same batch is packed using 20 bottles in each box, how many boxes would be filled?</div>
-      <div class="fig-container">
-        <svg width="150" height="80" viewBox="0 0 150 80">
-          <rect x="10" y="20" width="60" height="40" fill="none" stroke="#00D4FF" stroke-width="2"/>
-          <circle cx="20" cy="30" r="5" fill="#00D4FF"/><circle cx="35" cy="30" r="5" fill="#00D4FF"/><circle cx="50" cy="30" r="5" fill="#00D4FF"/>
-          <circle cx="20" cy="45" r="5" fill="#00D4FF"/><circle cx="35" cy="45" r="5" fill="#00D4FF"/><circle cx="50" cy="45" r="5" fill="#00D4FF"/>
-          <rect x="80" y="20" width="60" height="40" fill="none" stroke="#00D4FF" stroke-width="2"/>
-          <circle cx="90" cy="30" r="4" fill="#00D4FF"/><circle cx="105" cy="30" r="4" fill="#00D4FF"/><circle cx="120" cy="30" r="4" fill="#00D4FF"/>
-          <circle cx="90" cy="40" r="4" fill="#00D4FF"/><circle cx="105" cy="40" r="4" fill="#00D4FF"/><circle cx="120" cy="40" r="4" fill="#00D4FF"/>
-          <circle cx="90" cy="50" r="4" fill="#00D4FF"/><circle cx="105" cy="50" r="4" fill="#00D4FF"/><circle cx="120" cy="50" r="4" fill="#00D4FF"/>
-        </svg>
-      </div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Boxes = 25, Bottles per box = 12. Total bottles = 25 × 12 = 300.</div>
-        <div class="sol-step">New bottles per box = 20.</div>
-        <div class="sol-step">Boxes = 300 / 20 = <span class="ans-highlight">15 boxes</span>.</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">8. A factory requires 42 machines to produce a given number of articles in 63 days. How many machines would be required to produce the same number of articles in 54 days?</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Machines × Days = Constant.</div>
-        <div class="sol-step">42 × 63 = x × 54</div>
-        <div class="sol-step">x = (42 × 63) / 54</div>
-        <div class="sol-step">x = 7 × 7 = <span class="ans-highlight">49 machines</span>.</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">9. A car takes 2 hours to reach a destination by travelling at the speed of 60 km/h. How long will it take when the car travels at the speed of 80 km/h?</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Speed and time are in inverse proportion. Product = 60 × 2 = 120 km (Distance).</div>
-        <div class="sol-step">New Speed = 80 km/h.</div>
-        <div class="sol-step">Time = 120 / 80 = 1.5 hours or <span class="ans-highlight">1 hour 30 minutes</span>.</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">10. Two persons could fit new windows in a house in 3 days.</div>
-      <div class="q-subtext">(i) One of the persons fell ill before the work started. How long would the job take now?</div>
-      <div class="q-subtext">(ii) How many persons would be needed to fit the windows in one day?</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Product = 2 persons × 3 days = 6 person-days.</div>
-        <div class="sol-step"><span class="step-label">(i)</span> If 1 person fell ill, only 1 person is left. Days = 6 / 1 = <span class="ans-highlight">6 days</span>.</div>
-        <div class="sol-step"><span class="step-label">(ii)</span> For 1 day: Persons = 6 / 1 = <span class="ans-highlight">6 persons</span>.</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">11. A school has 8 periods a day each of 45 minutes duration. How long would each period be, if the school has 9 periods a day, assuming the number of school hours to be the same?</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Periods × Minutes = Constant.</div>
-        <div class="sol-step">8 × 45 = 9 × x</div>
-        <div class="sol-step">x = (8 × 45) / 9 = 8 × 5 = <span class="ans-highlight">40 minutes</span>.</div>
-      </div>
-    </div>
-  </div>
-`;
-
 export const c8Math11: ChapterContent = {
-  id: "c8-math-11",
-  number: 11,
-  title: "Direct and Inverse Proportion",
-  introduction:
-    "In our daily lives, we often encounter situations where a change in one quantity causes a corresponding change in another. This chapter explores how variables relate to each other through direct and inverse proportions, helping us solve real-world problems efficiently.",
-  mcqs: [
+  "id": "c8-math-11",
+  "number": 11,
+  "title": "Exponents and Powers",
+  "introduction": "Exponents and powers allow us to write and manipulate extremely large or extraordinarily small quantities in a compact, elegant notation. In this chapter, we master negative exponents, simplify expressions using the seven golden laws of exponents, and express microscopic and astronomical quantities in standard scientific notation.",
+  "definitions": [
     {
-      id: "m1",
-      question:
-        "If x and y are in direct proportion, then which of the following is constant?",
-      options: ["x + y", "x - y", "x / y", "x × y"],
-      correctAnswer: "C",
+      "term": "Base and Exponent",
+      "description": "In an exponential expression aᵐ, 'a' is called the base and 'm' is called the exponent (power or index)."
     },
     {
-      id: "m2",
-      question:
-        "If x and y are in inverse proportion, then which of the following is constant?",
-      options: ["x + y", "x / y", "x × y", "x - y"],
-      correctAnswer: "C",
+      "term": "Negative Exponent",
+      "description": "For any non-zero integer a and natural number m, a⁻ᵐ = 1/aᵐ, which is the multiplicative inverse of aᵐ."
     },
     {
-      id: "m3",
-      question:
-        "If 10 m of cloth costs Rs 200, then the cost of 4 m of cloth is:",
-      options: ["Rs 80", "Rs 100", "Rs 40", "Rs 50"],
-      correctAnswer: "A",
+      "term": "Multiplicative Inverse",
+      "description": "Two numbers whose product is 1. The multiplicative inverse of aᵐ is a⁻ᵐ because aᵐ × a⁻ᵐ = a⁰ = 1."
     },
     {
-      id: "m4",
-      question: "Which of the following is an example of inverse proportion?",
-      options: [
-        "Distance and time at uniform speed",
-        "Speed and time taken for a fixed distance",
-        "Quantity of goods and total cost",
-        "Side of square and its area",
-      ],
-      correctAnswer: "B",
-    },
-    {
-      id: "m5",
-      question:
-        "If 12 men can do a work in 8 days, then 16 men can do the same work in:",
-      options: ["10 days", "6 days", "5 days", "12 days"],
-      correctAnswer: "B",
-    },
-    {
-      id: "m6",
-      question:
-        "x and y are in direct proportion. If x = 2 and y = 10, then for x = 5, y will be:",
-      options: ["20", "25", "15", "50"],
-      correctAnswer: "B",
-    },
-    {
-      id: "m7",
-      question:
-        "x and y are in inverse proportion. If x = 4 and y = 6, then for x = 8, y will be:",
-      options: ["12", "3", "4", "2"],
-      correctAnswer: "B",
-    },
-    {
-      id: "m8",
-      question: "The distance covered by a car and the petrol consumed are in:",
-      options: [
-        "Direct proportion",
-        "Inverse proportion",
-        "No proportion",
-        "None of these",
-      ],
-      correctAnswer: "A",
-    },
-    {
-      id: "m9",
-      question: "If a map scale is 1:1000, then 5 cm on map represents:",
-      options: ["5 m", "50 m", "500 m", "5 km"],
-      correctAnswer: "B",
-    },
-    {
-      id: "m10",
-      question: "Number of pipes and time taken to fill a tank are in:",
-      options: [
-        "Direct proportion",
-        "Inverse proportion",
-        "Linear proportion",
-        "None",
-      ],
-      correctAnswer: "B",
-    },
+      "term": "Standard Form (Scientific Notation)",
+      "description": "A number expressed as k × 10ⁿ, where 1 ≤ k < 10 and n is an integer."
+    }
   ],
-  summary: [
-    "Two quantities x and y are said to be in direct proportion if they increase or decrease together such that x/y = k (constant).",
-    "Two quantities x and y are said to be in inverse proportion if an increase in x causes a proportional decrease in y (and vice-versa) such that xy = k (constant).",
-    "Direct proportion: x₁/y₁ = x₂/y₂.",
-    "Inverse proportion: x₁y₁ = x₂y₂.",
+  "keyPoints": [
+    "aᵐ × aⁿ = aᵐ⁺ⁿ (Product Law: same base, add exponents).",
+    "aᵐ ÷ aⁿ = aᵐ⁻ⁿ (Quotient Law: same base, subtract exponents).",
+    "(aᵐ)ⁿ = aᵐⁿ (Power of a power: multiply exponents).",
+    "aᵐ × bᵐ = (ab)ᵐ (Power of a product: same exponent, multiply bases).",
+    "aᵐ ÷ bᵐ = (a/b)ᵐ (Power of a quotient).",
+    "a⁰ = 1 for any non-zero number a.",
+    "a⁻ᵐ = 1/aᵐ and (a/b)⁻ᵐ = (b/a)ᵐ.",
+    "(-1)ⁿ = 1 when n is even; (-1)ⁿ = -1 when n is odd.",
+    "Small numbers (< 1) have negative powers of 10 in standard form.",
+    "Large numbers (≥ 10) have positive powers of 10 in standard form."
   ],
-  exercises: [
-    { id: "ex11-1", name: "Exercise 11.1", questions: [] },
-    { id: "ex11-2", name: "Exercise 11.2", questions: [] },
+  "formulas": [
+    {
+      "name": "Product Law",
+      "formula": "aᵐ × aⁿ = aᵐ⁺ⁿ"
+    },
+    {
+      "name": "Quotient Law",
+      "formula": "aᵐ ÷ aⁿ = aᵐ⁻ⁿ"
+    },
+    {
+      "name": "Power of a Power",
+      "formula": "(aᵐ)ⁿ = aᵐⁿ"
+    },
+    {
+      "name": "Power of a Product",
+      "formula": "aᵐ × bᵐ = (ab)ᵐ"
+    },
+    {
+      "name": "Power of a Quotient",
+      "formula": "aᵐ / bᵐ = (a/b)ᵐ"
+    },
+    {
+      "name": "Zero Exponent Rule",
+      "formula": "a⁰ = 1 (a ≠ 0)"
+    },
+    {
+      "name": "Negative Exponent Rule",
+      "formula": "a⁻ᵐ = 1 / aᵐ"
+    },
+    {
+      "name": "Fraction Negative Power",
+      "formula": "(a/b)⁻ᵐ = (b/a)ᵐ"
+    },
+    {
+      "name": "Standard Scientific Form",
+      "formula": "k × 10ⁿ (1 ≤ k < 10)"
+    }
   ],
-  isHtmlView: true,
-  htmlOverview: `
-    <style>
-      .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
-      .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
-      .frac .den { padding: 0 2px; }
-      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
-      
-      .premium-container {
-        padding: 20px;
-        color: #ffffff;
-        font-family: 'Outfit', sans-serif !important;
-        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-        border-radius: 20px;
-        margin: 10px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-      }
-
-      .section-box {
-        background: rgba(255, 255, 255, 0.05);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 15px;
-        padding: 20px;
-        margin-bottom: 20px;
-        backdrop-filter: blur(10px);
-      }
-
-      .section-header {
-        color: #00D4FF;
-        font-size: 20px;
-        font-weight: 600;
-        margin-bottom: 15px;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-      }
-
-      .prop-table {
-        width: 100% !important;
-        max-width: 100% !important;
-        border-collapse: collapse;
-        background: rgba(0,0,0,0.2);
-        table-layout: auto !important;
-      }
-
-      .prop-table th, .prop-table td {
-        padding: 8px 10px;
-        border: 1px solid rgba(255,255,255,0.1);
-        text-align: left;
-        font-size: 14px;
-        word-break: break-word;
-      }
-
-      .prop-table th {
-        background: rgba(255,255,255,0.1);
-        color: #40C4FF;
-        font-weight: 700;
-      }
-
-      .table-container { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; border-radius: 12px; margin-top: 10px; border: 1px solid rgba(255,255,255,0.1); }
-
-      .highlight { color: #40C4FF; font-weight: 600; }
-      
-      .intro-text {
-        line-height: 1.6;
-        font-size: 16px;
-        color: #e0e0e0;
-        text-align: justify;
-      }
-    </style>
-
-    <div class="premium-container">
-      <div class="section-box">
-        <div class="section-header"><span>✦</span> Introduction</div>
-        <div class="intro-text">
-          In our daily lives, we often encounter situations where a change in one quantity causes a corresponding change in another. This chapter explores how variables relate to each other through direct and inverse proportions, helping us solve real-world problems efficiently.
-        </div>
-      </div>
-      <div class="section-box">
-        <div class="section-header"><span>✦</span> Proportion Types</div>
-      <div class="table-container">
-        <table class="prop-table">
-          <tr>
-            <th>Type</th>
-            <th>Relationship</th>
-            <th>Constant Ratio/Product</th>
-          </tr>
-          <tr>
-            <td><strong>Direct Proportion</strong></td>
-            <td>Both increase or decrease together</td>
-            <td><span class="highlight">x / y = k</span></td>
-          </tr>
-          <tr>
-            <td><strong>Inverse Proportion</strong></td>
-            <td>One increases, other decreases</td>
-            <td><span class="highlight">x × y = k</span></td>
-          </tr>
-        </table>
-      </div>
-      </div>
-    </div>
-  `,
-  htmlExercises: {
-    "ex11-1": ex111Content,
-    "ex11-2": ex112Content,
-  },
+  "crux": [],
+  "exercises": [
+    {
+      "id": "ex11-1",
+      "name": "Exercise 11.1",
+      "questions": [
+        {
+          "id": "c8-m11-ex11-1-q1",
+          "number": "1",
+          "question": "Evaluate: (i) 3⁻² (ii) (-4)⁻² (iii) (1/2)⁻⁵",
+          "solution": [
+            "See complete step-by-step mathematical working with negative exponent reciprocal rules in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m11-ex11-1-q2",
+          "number": "2",
+          "question": "Simplify and express the result in power notation with a positive exponent: (i) (-4)⁵ ÷ (-4)⁸ (ii) (1/2³)² (iii) (-3)⁴ × (5/3)⁴ (iv) (3⁻⁷ ÷ 3⁻¹⁰) × 3⁻⁵ (v) 2⁻³ × (-7)⁻³",
+          "solution": [
+            "See complete algebraic working using product, quotient, and power laws in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m11-ex11-1-q3",
+          "number": "3",
+          "question": "Find the value of: (i) (3⁰ + 4⁻¹) × 2² (ii) (2⁻¹ × 4⁻¹) ÷ 2⁻² (iii) (1/2)⁻² + (1/3)⁻² + (1/4)⁻² (iv) (3⁻¹ + 4⁻¹ + 5⁻¹)⁰ (v) {(-2/3)⁻²}²",
+          "solution": [
+            "See evaluated fractional values and zero-exponent simplifications in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m11-ex11-1-q4",
+          "number": "4",
+          "question": "Evaluate: (i) (8⁻¹ × 5³) / 2⁻⁴ (ii) (5⁻¹ × 2⁻¹) × 6⁻¹",
+          "solution": [
+            "See prime factorisation of 8 = 2³ and fractional product calculations in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m11-ex11-1-q5",
+          "number": "5",
+          "question": "Find the value of m for which 5ᵐ ÷ 5⁻³ = 5⁵.",
+          "solution": [
+            "See exponent equation formulation and comparison in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m11-ex11-1-q6",
+          "number": "6",
+          "question": "Evaluate: (i) {(1/3)⁻¹ - (1/4)⁻¹}⁻¹ (ii) (5/8)⁻⁷ × (8/5)⁻⁴",
+          "solution": [
+            "See fraction inversion and power simplification in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m11-ex11-1-q7",
+          "number": "7",
+          "question": "Simplify the following: (i) (25 × t⁻⁴) / (5⁻³ × 10 × t⁻⁸) (t ≠ 0) (ii) (3⁻⁵ × 10⁻⁵ × 125) / (5⁻⁷ × 6⁻⁵)",
+          "solution": [
+            "See prime power decomposition (10 = 2×5, 6 = 2×3) and cancellation in the interactive Web View."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex11-2",
+      "name": "Exercise 11.2",
+      "questions": [
+        {
+          "id": "c8-m11-ex11-2-q1",
+          "number": "1",
+          "question": "Express the following numbers in standard form: (i) 0.0000000000085 (ii) 0.00000000000942 (iii) 6020000000000000 (iv) 0.00000000837 (v) 31860000000",
+          "solution": [
+            "See decimal shift counting and scientific notation conversions in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m11-ex11-2-q2",
+          "number": "2",
+          "question": "Express the following numbers in the usual form: (i) 3.02 × 10⁻⁶ (ii) 4.5 × 10⁴ (iii) 3 × 10⁻⁸ (iv) 1.0001 × 10⁹ (v) 5.8 × 10¹² (vi) 3.61492 × 10⁶",
+          "solution": [
+            "See decimal expansion to usual numbers in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m11-ex11-2-q3",
+          "number": "3",
+          "question": "Express the number appearing in the following statements in standard form: (i) 1 micron is equal to 1/1000000 m. (ii) Charge of an electron is 0.00000000000000000016 coulomb. (iii) Size of bacteria is 0.0000005 m. (iv) Size of a plant cell is 0.00001275 m. (v) Thickness of a thick paper is 0.07 mm.",
+          "solution": [
+            "See real-world scientific measurements expressed in powers of 10 in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m11-ex11-2-q4",
+          "number": "4",
+          "question": "In a stack, there are 5 books, each having a thickness of 20 mm and 5 paper sheets, each having a thickness of 0.016 mm. What is the total thickness of the stack?",
+          "solution": [
+            "See stack thickness sum calculation and conversion to 1.0008 × 10² mm in the interactive Web View."
+          ]
+        }
+      ]
+    }
+  ],
+  "examples": [],
+  "mcqs": [
+    {
+      "id": "c8-m11-mcq-1",
+      "question": "The multiplicative inverse of 2⁻⁴ is equal to:",
+      "options": [
+        "A):   2⁴",
+        "B):   -2⁴",
+        "C):   1/2⁴",
+        "D):   -8"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The multiplicative inverse (reciprocal) of a⁻ᵐ is aᵐ. Thus, the multiplicative inverse of 2⁻⁴ is 2⁴ = 16."
+    },
+    {
+      "id": "c8-m11-mcq-2",
+      "question": "What is the value of (1/3)⁻²?",
+      "options": [
+        "A):   1/9",
+        "B):   9",
+        "C):   -9",
+        "D):   -1/9"
+      ],
+      "correctAnswer": "B",
+      "explanation": "(1/3)⁻² = (3/1)² = 3² = 9."
+    },
+    {
+      "id": "c8-m11-mcq-3",
+      "question": "The value of (7⁰ + 5⁰ + 3⁰)⁰ is:",
+      "options": [
+        "A):   3",
+        "B):   0",
+        "C):   1",
+        "D):   15"
+      ],
+      "correctAnswer": "C",
+      "explanation": "7⁰ = 1, 5⁰ = 1, 3⁰ = 1. So (1 + 1 + 1)⁰ = 3⁰ = 1. Any non-zero base raised to the power 0 is always 1."
+    },
+    {
+      "id": "c8-m11-mcq-4",
+      "question": "For any non-zero integer a, aᵐ ÷ aⁿ is equal to:",
+      "options": [
+        "A):   aᵐ⁺ⁿ",
+        "B):   aᵐ⁻ⁿ",
+        "C):   aᵐⁿ",
+        "D):   aᵐ/ⁿ"
+      ],
+      "correctAnswer": "B",
+      "explanation": "By the quotient law of exponents, when bases are the same, powers are subtracted during division: aᵐ ÷ aⁿ = aᵐ⁻ⁿ."
+    },
+    {
+      "id": "c8-m11-mcq-5",
+      "question": "If 5ᵐ ÷ 5⁻³ = 5⁵, then the value of m is:",
+      "options": [
+        "A):   2",
+        "B):   8",
+        "C):   -2",
+        "D):   15"
+      ],
+      "correctAnswer": "A",
+      "explanation": "5ᵐ ÷ 5⁻³ = 5ᵐ⁻⁽⁻³⁾ = 5ᵐ⁺³. Comparing exponents with 5⁵: m + 3 = 5 ⟹ m = 2."
+    },
+    {
+      "id": "c8-m11-mcq-6",
+      "question": "What is the value of (-1)⁵¹?",
+      "options": [
+        "A):   1",
+        "B):   -51",
+        "C):   51",
+        "D):   -1"
+      ],
+      "correctAnswer": "D",
+      "explanation": "A negative base (-1) raised to an odd power is always -1. Since 51 is odd, (-1)⁵¹ = -1."
+    },
+    {
+      "id": "c8-m11-mcq-7",
+      "question": "Which of the following is the standard form of 0.000035?",
+      "options": [
+        "A):   3.5 × 10⁻⁵",
+        "B):   3.5 × 10⁵",
+        "C):   35 × 10⁻⁶",
+        "D):   0.35 × 10⁻⁴"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Moving the decimal point 5 places to the right gives 3.5 × 10⁻⁵ (in standard form, 1 ≤ k < 10)."
+    },
+    {
+      "id": "c8-m11-mcq-8",
+      "question": "The value of (2⁻¹ × 4⁻¹) ÷ 2⁻² is:",
+      "options": [
+        "A):   1/4",
+        "B):   1/2",
+        "C):   2",
+        "D):   1"
+      ],
+      "correctAnswer": "B",
+      "explanation": "(1/2 × 1/4) ÷ 1/4 = 1/8 ÷ 1/4 = 1/8 × 4 = 1/2."
+    },
+    {
+      "id": "c8-m11-mcq-9",
+      "question": "The number 1.0001 × 10⁹ in usual form is written as:",
+      "options": [
+        "A):   10001000",
+        "B):   100010000",
+        "C):   1000100000",
+        "D):   10001000000"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Multiplying by 10⁹ shifts the decimal point 9 places to the right: 1,000,100,000."
+    },
+    {
+      "id": "c8-m11-mcq-10",
+      "question": "1 micron is equal to:",
+      "options": [
+        "A):   10⁻⁶ m",
+        "B):   10⁶ m",
+        "C):   10⁻³ m",
+        "D):   10⁻⁹ m"
+      ],
+      "correctAnswer": "A",
+      "explanation": "1 micron = 1/1,000,000 m = 1/10⁶ m = 10⁻⁶ m."
+    },
+    {
+      "id": "c8-m11-mcq-11",
+      "question": "The value of {(-2/3)⁻²}² is:",
+      "options": [
+        "A):   16/81",
+        "B):   81/16",
+        "C):   -81/16",
+        "D):   -16/81"
+      ],
+      "correctAnswer": "B",
+      "explanation": "{(-2/3)⁻²}² = (-2/3)⁻⁴ = (-3/2)⁴ = (-3)⁴ / 2⁴ = 81/16."
+    },
+    {
+      "id": "c8-m11-mcq-12",
+      "question": "Which of the following is equal to (a/b)⁻ᵐ?",
+      "options": [
+        "A):   (a/b)ᵐ",
+        "B):   (-a/b)ᵐ",
+        "C):   (b/a)ᵐ",
+        "D):   -(b/a)ᵐ"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Inverting the fraction changes the sign of the exponent: (a/b)⁻ᵐ = (b/a)ᵐ."
+    },
+    {
+      "id": "c8-m11-mcq-13",
+      "question": "The standard form of 4050000 is:",
+      "options": [
+        "A):   4.05 × 10⁵",
+        "B):   40.5 × 10⁵",
+        "C):   4.05 × 10⁶",
+        "D):   0.405 × 10⁷"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Moving the decimal point 6 places to the left gives 4.05 × 10⁶."
+    },
+    {
+      "id": "c8-m11-mcq-14",
+      "question": "Simplify: (3⁻¹ + 4⁻¹ + 5⁻¹)⁰",
+      "options": [
+        "A):   12/60",
+        "B):   0",
+        "C):   47/60",
+        "D):   1"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Any non-zero quantity raised to the power 0 is equal to 1. Since (3⁻¹ + 4⁻¹ + 5⁻¹) ≠ 0, the result is 1."
+    },
+    {
+      "id": "c8-m11-mcq-15",
+      "question": "The thickness of 5 books of 20 mm each and 5 sheets of 0.016 mm each in standard form is:",
+      "options": [
+        "A):   1.0008 × 10² mm",
+        "B):   1.0008 × 10³ mm",
+        "C):   10.008 × 10¹ mm",
+        "D):   1.08 × 10² mm"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Total thickness = (5 × 20) + (5 × 0.016) = 100 + 0.08 = 100.08 mm = 1.0008 × 10² mm in standard form."
+    }
+  ],
+  "summary": [
+    "Numbers with negative exponents satisfy a⁻ᵐ = 1/aᵐ.",
+    "Laws of exponents apply equally to negative, positive, and zero exponents.",
+    "Very large and very small numbers can be expressed in standard form as k × 10ⁿ, where 1 ≤ k < 10 and n is an integer.",
+    "Standard form provides a quick method to compare extremely large and micro-scale quantities."
+  ],
+  "isHtmlView": true,
+  "htmlOverview": "\n\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; text-align: center; }\n  .frac .den { padding: 1px 4px; text-align: center; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(253, 200, 48, 0.4); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 18px; font-weight: 800; color: #FDC830; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 16px; font-weight: 500; text-align: left !important; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(253, 200, 48, 0.25); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; text-align: left !important; }\n  .sol-box { background: rgba(0, 0, 0, 0.35); border-left: 3.5px solid #FDC830; border-radius: 8px; padding: 14px 16px; margin-top: 12px; text-align: left !important; }\n  .sol-title { font-size: 15.5px; font-weight: 800; color: #FDC830; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; text-align: left !important; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; text-align: left !important; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(253, 200, 48, 0.15); border: 1px solid #FDC830; color: #FFE082; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 4px 2px; }\n  \n  /* Diagram Wrapper: Pure Crisp White Canvas, Beautiful Shadow */\n  .diagram-wrapper { display: block; background: #FFFFFF; border: 1.5px solid rgba(253, 200, 48, 0.45); border-radius: 10px; padding: 12px 10px; margin: 14px auto 8px auto; width: 100%; max-width: 440px; box-sizing: border-box; overflow: hidden; box-shadow: 0 4px 18px rgba(0,0,0,0.35); text-align: center; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; font-weight: 600; text-align: center; margin-top: 8px; margin-bottom: 14px; line-height: 1.45; }\n\n  /* Table styling */\n  .table-card { background: rgba(15, 23, 42, 0.95); border: 1.5px solid #FDC830; border-radius: 10px; padding: 10px 8px; margin: 16px 0; overflow-x: auto; box-shadow: 0 4px 18px rgba(0,0,0,0.35); -webkit-overflow-scrolling: touch; }\n  .styled-table { width: 100%; border-collapse: collapse; color: #F8FAFC; font-size: 12px; text-align: center; }\n  .styled-table th { background: rgba(253, 200, 48, 0.22); color: #FDC830; font-weight: 700; padding: 8px 6px; border: 1px solid rgba(253, 200, 48, 0.4); font-size: 12px; white-space: nowrap; }\n  .styled-table td { padding: 6px 6px; border: 1px solid rgba(255, 255, 255, 0.12); font-weight: 500; font-size: 11.5px; color: #E2E8F0; }\n  .styled-table tr:nth-child(even) td { background: rgba(255, 255, 255, 0.03); }\n  .styled-table td.col-label { font-weight: 700; white-space: nowrap; text-align: left; padding-left: 10px; color: #FFE082; }\n  .styled-table td.highlight-cell { color: #A5D6A7; font-weight: 600; }\n</style>\n\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Hero Header -->\n  <div style=\"background: linear-gradient(135deg, rgba(253, 200, 48, 0.25), rgba(243, 156, 18, 0.15)); border: 1.5px solid #FDC830; border-radius: 14px; padding: 18px; margin-bottom: 20px; text-align: center;\">\n    <div style=\"font-size: 22px; font-weight: 800; color: #FDC830; margin-bottom: 6px;\">\n      ⚡ Chapter 11: Exponents and Powers\n    </div>\n    <div style=\"color: #CBD5E1; font-size: 14.5px; line-height: 1.5;\">\n      Class 8 NCERT Mathematics &bull; Complete Reference Guide &amp; Master Formula Cheat Sheet\n    </div>\n  </div>\n\n  <!-- 1. What is an Exponent? -->\n  <div class=\"q-card\">\n    <div class=\"q-title\" style=\"color: #FDC830; font-size: 18px; font-weight: 800;\">✦ 1. What is an Exponent and Power?</div>\n    <div class=\"q-text\">\n      Very large numbers (like distance from Earth to Sun = 150,000,000,000 m) or very tiny numbers (like size of bacteria = 0.0000005 m) are awkward to write in standard decimal form. We use <b>exponents</b> to write repeated multiplications conveniently.\n    </div>\n    <div class=\"sol-box\">\n      <div style=\"color: #FFFFFF; font-size: 14.5px; line-height: 1.8;\">\n        In the expression <b style=\"color: #FDC830; font-size: 16px;\"><i>a</i><sup><i>m</i></sup></b>:<br/>\n        &bull; <b style=\"color: #FDC830;\"><i>a</i> is the Base:</b> The number that is being multiplied repeatedly.<br/>\n        &bull; <b style=\"color: #FDC830;\"><i>m</i> is the Exponent (Power or Index):</b> The number of times the base is multiplied by itself.<br/>\n        &bull; <b style=\"color: #FDC830;\">Read as:</b> \"<i>a</i> raised to the power <i>m</i>\".<br/>\n        &bull; <i>Example:</i> 2<sup>5</sup> = 2 &times; 2 &times; 2 &times; 2 &times; 2 = <b>32</b> (Base = 2, Exponent = 5).\n      </div>\n    </div>\n  </div>\n\n  <!-- 2. Powers with Negative Exponents -->\n  <div class=\"q-card\">\n    <div class=\"q-title\" style=\"color: #FDC830; font-size: 18px; font-weight: 800;\">✦ 2. Powers with Negative Exponents</div>\n    <div class=\"q-text\">\n      For any non-zero integer <i>a</i> and a positive integer <i>m</i>, <b><i>a</i><sup>&minus;<i>m</i></sup></b> represents the <b>multiplicative inverse (reciprocal)</b> of <i>a</i><sup><i>m</i></sup>:\n    </div>\n    \n    <!-- Diagram Card Concept -->\n    <div class=\"diagram-wrapper\">\n      <svg width=\"100%\" height=\"auto\" viewBox=\"0 0 380 145\" style=\"display:block; width:100%; height:auto;\">\n        <rect width=\"100%\" height=\"100%\" fill=\"#FFFFFF\" rx=\"8\"/>\n        \n        <!-- Negative Exponent Rule Badge -->\n        <rect x=\"30\" y=\"20\" width=\"320\" height=\"50\" rx=\"8\" fill=\"#FFF9C4\" stroke=\"#FBC02D\" stroke-width=\"2\"/>\n        <text x=\"190\" y=\"52\" font-size=\"19\" font-weight=\"900\" fill=\"#E65100\" text-anchor=\"middle\">a<sup>&minus;m</sup> = 1 / a<sup>m</sup></text>\n        \n        <!-- Reciprocal of Fraction Badge -->\n        <rect x=\"30\" y=\"80\" width=\"320\" height=\"50\" rx=\"8\" fill=\"#E8F5E9\" stroke=\"#4CAF50\" stroke-width=\"2\"/>\n        <text x=\"190\" y=\"112\" font-size=\"18\" font-weight=\"900\" fill=\"#1B5E20\" text-anchor=\"middle\">(a / b)<sup>&minus;m</sup> = (b / a)<sup>m</sup></text>\n      </svg>\n    </div>\n    <div class=\"diagram-caption\">Core Rule: A negative exponent flips the base to its reciprocal</div>\n\n    <div class=\"sol-box\">\n      <div style=\"color: #FFFFFF; font-size: 14.5px; line-height: 1.8;\">\n        &bull; 3<sup>&minus;2</sup> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3<sup>2</sup></span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">9</span></span>.<br/>\n        &bull; (-4)<sup>&minus;2</sup> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">(&minus;4)<sup>2</sup></span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">16</span></span>.<br/>\n        &bull; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span><sup>&minus;5</sup> = <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">1</span></span><sup>5</sup> = 2<sup>5</sup> = <b>32</b>.<br/>\n        &bull; <i>Multiplicative Inverse:</i> The multiplicative inverse of <b><i>a</i><sup><i>m</i></sup></b> is <b><i>a</i><sup>&minus;<i>m</i></sup></b> (since <i>a</i><sup><i>m</i></sup> &times; <i>a</i><sup>&minus;<i>m</i></sup> = <i>a</i><sup>0</sup> = 1).\n      </div>\n    </div>\n  </div>\n\n  <!-- 3. Master Table: Laws of Exponents -->\n  <div class=\"q-card\">\n    <div class=\"q-title\" style=\"color: #FDC830; font-size: 18px; font-weight: 800;\">✦ 3. Master Table: The 7 Laws of Exponents</div>\n    <div class=\"table-card\">\n      <table class=\"styled-table\">\n        <thead>\n          <tr>\n            <th>Law</th>\n            <th>Formula</th>\n            <th>Condition / Name</th>\n            <th>Worked Example</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr>\n            <td class=\"col-label\">1. Product Law</td>\n            <td style=\"color:#FFE082; font-weight:700;\"><i>a</i><sup><i>m</i></sup> &times; <i>a</i><sup><i>n</i></sup> = <i>a</i><sup><i>m</i> + <i>n</i></sup></td>\n            <td>Same Base, Add Powers</td>\n            <td class=\"highlight-cell\">2<sup>3</sup> &times; 2<sup>4</sup> = 2<sup>7</sup> = 128</td>\n          </tr>\n          <tr>\n            <td class=\"col-label\">2. Quotient Law</td>\n            <td style=\"color:#FFE082; font-weight:700;\"><i>a</i><sup><i>m</i></sup> &divide; <i>a</i><sup><i>n</i></sup> = <i>a</i><sup><i>m</i> &minus; <i>n</i></sup></td>\n            <td>Same Base, Subtract Powers</td>\n            <td class=\"highlight-cell\">5<sup>7</sup> &divide; 5<sup>4</sup> = 5<sup>3</sup> = 125</td>\n          </tr>\n          <tr>\n            <td class=\"col-label\">3. Power of a Power</td>\n            <td style=\"color:#FFE082; font-weight:700;\">(<i>a</i><sup><i>m</i></sup>)<sup><i>n</i></sup> = <i>a</i><sup><i>m</i> &times; <i>n</i></sup></td>\n            <td>Multiply Powers</td>\n            <td class=\"highlight-cell\">(3<sup>2</sup>)<sup>3</sup> = 3<sup>6</sup> = 729</td>\n          </tr>\n          <tr>\n            <td class=\"col-label\">4. Power of a Product</td>\n            <td style=\"color:#FFE082; font-weight:700;\"><i>a</i><sup><i>m</i></sup> &times; <i>b</i><sup><i>m</i></sup> = (<i>ab</i>)<sup><i>m</i></sup></td>\n            <td>Same Power, Multiply Bases</td>\n            <td class=\"highlight-cell\">2<sup>3</sup> &times; 3<sup>3</sup> = (6)<sup>3</sup> = 216</td>\n          </tr>\n          <tr>\n            <td class=\"col-label\">5. Power of a Quotient</td>\n            <td style=\"color:#FFE082; font-weight:700;\"><span class=\"frac\"><span class=\"num\"><i>a</i><sup><i>m</i></sup></span><span class=\"den\"><i>b</i><sup><i>m</i></sup></span></span> = (<span class=\"frac\"><span class=\"num\"><i>a</i></span><span class=\"den\"><i>b</i></span></span>)<sup><i>m</i></sup></td>\n            <td>Same Power, Divide Bases</td>\n            <td class=\"highlight-cell\"><span class=\"frac\"><span class=\"num\">8<sup>2</sup></span><span class=\"den\">4<sup>2</sup></span></span> = (2)<sup>2</sup> = 4</td>\n          </tr>\n          <tr>\n            <td class=\"col-label\">6. Zero Exponent</td>\n            <td style=\"color:#FFE082; font-weight:700;\"><i>a</i><sup>0</sup> = 1</td>\n            <td>Any base (except 0) to power 0</td>\n            <td class=\"highlight-cell\">(1234)<sup>0</sup> = 1</td>\n          </tr>\n          <tr>\n            <td class=\"col-label\">7. Negative Power</td>\n            <td style=\"color:#FFE082; font-weight:700;\"><i>a</i><sup>&minus;<i>m</i></sup> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\"><i>a</i><sup><i>m</i></sup></span></span></td>\n            <td>Reciprocal Power</td>\n            <td class=\"highlight-cell\">2<sup>&minus;3</sup> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2<sup>3</sup></span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">8</span></span></td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n  </div>\n\n  <!-- 4. Standard Form (Scientific Notation) -->\n  <div class=\"q-card\">\n    <div class=\"q-title\" style=\"color: #FDC830; font-size: 18px; font-weight: 800;\">✦ 4. Standard Form (Scientific Notation)</div>\n    <div class=\"q-text\">\n      Any number can be expressed as a decimal number between <b>1.0 and 10.0</b> (including 1.0) multiplied by a power of 10. Such a form is called the <b>Standard Form</b> or <b>Scientific Notation</b>:\n      <div style=\"margin: 10px 0; text-align: center;\">\n        <span class=\"prop-chip\" style=\"font-size: 16px; padding: 6px 14px;\">\n          <b><i>k</i> &times; 10<sup><i>n</i></sup></b> &nbsp;&nbsp;(where <b>1 &le; <i>k</i> &lt; 10</b> and <i>n</i> is an integer)\n        </span>\n      </div>\n    </div>\n    <div class=\"sol-box\">\n      <div style=\"color: #FFFFFF; font-size: 14.5px; line-height: 1.8;\">\n        &bull; <b style=\"color: #FDC830;\">Large Numbers (Positive Power 10<sup>+<i>n</i></sup>):</b><br/>\n        &nbsp;&nbsp;Decimal point shifts to the <b>left</b> by <i>n</i> places.<br/>\n        &nbsp;&nbsp;<i>Example:</i> 150,000,000,000 = <b>1.5 &times; 10<sup>11</sup></b> (Shift 11 places left).<br/>\n        &nbsp;&nbsp;<i>Example:</i> 60,20,000 = <b>6.02 &times; 10<sup>6</sup></b>.<br/>\n        &bull; <b style=\"color: #FDC830;\">Tiny Numbers (Negative Power 10<sup>&minus;<i>n</i></sup>):</b><br/>\n        &nbsp;&nbsp;Decimal point shifts to the <b>right</b> by <i>n</i> places.<br/>\n        &nbsp;&nbsp;<i>Example:</i> 0.000007 = <b>7 &times; 10<sup>&minus;6</sup></b> (Shift 6 places right).<br/>\n        &nbsp;&nbsp;<i>Example:</i> 0.0000000000085 = <b>8.5 &times; 10<sup>&minus;12</sup></b> (Shift 12 places right).\n      </div>\n    </div>\n  </div>\n\n  <!-- 5. Master Revision Formula Cheat Sheet -->\n  <div class=\"q-card\" style=\"border-color: #FDC830;\">\n    <div class=\"q-title\" style=\"color: #FDC830; font-size: 18px; font-weight: 800;\">✦ 5. Master Revision Formula Cheat Sheet</div>\n    <div style=\"font-size: 15px; color: #FFFFFF; line-height: 2.1;\">\n      &bull; <b>Multiplicative inverse of <i>a</i><sup><i>m</i></sup>:</b> <i>a</i><sup>&minus;<i>m</i></sup>.<br/>\n      &bull; <b>Base conversion trick:</b> 4 = 2<sup>2</sup>, 8 = 2<sup>3</sup>, 9 = 3<sup>2</sup>, 16 = 2<sup>4</sup>, 25 = 5<sup>2</sup>, 27 = 3<sup>3</sup>, 32 = 2<sup>5</sup>, 125 = 5<sup>3</sup>.<br/>\n      &bull; <b>Equating Powers:</b> If <i>a</i><sup><i>x</i></sup> = <i>a</i><sup><i>y</i></sup> (where <i>a</i> &ne; 0, 1, &minus;1), then <b><i>x</i> = <i>y</i></b>.<br/>\n      &bull; <b>Even vs Odd Powers of Negative Numbers:</b><br/>\n      &nbsp;&nbsp;(&minus;1)<sup>even</sup> = <b>+1</b> &nbsp;|&nbsp; (&minus;1)<sup>odd</sup> = <b>&minus;1</b>.<br/>\n      &bull; <b>1 Micron:</b> 10<sup>&minus;6</sup> m = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">1,000,000</span></span> m.<br/>\n      &bull; <b>Charge of Electron:</b> 1.6 &times; 10<sup>&minus;19</sup> C.<br/>\n      &bull; <b>Stack Thickness Formula:</b> Total Thickness = (Number of books &times; thickness of 1 book) + (Number of sheets &times; thickness of 1 sheet).\n    </div>\n  </div>\n\n</div>\n",
+  "htmlExercises": {
+    "ex11-1": "\n\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; text-align: center; }\n  .frac .den { padding: 1px 4px; text-align: center; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(253, 200, 48, 0.4); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 18px; font-weight: 800; color: #FDC830; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 16px; font-weight: 500; text-align: left !important; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(253, 200, 48, 0.25); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; text-align: left !important; }\n  .sol-box { background: rgba(0, 0, 0, 0.35); border-left: 3.5px solid #FDC830; border-radius: 8px; padding: 14px 16px; margin-top: 12px; text-align: left !important; }\n  .sol-title { font-size: 15.5px; font-weight: 800; color: #FDC830; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; text-align: left !important; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; text-align: left !important; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(253, 200, 48, 0.15); border: 1px solid #FDC830; color: #FFE082; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 4px 2px; }\n  \n  /* Diagram Wrapper: Pure Crisp White Canvas, Beautiful Shadow */\n  .diagram-wrapper { display: block; background: #FFFFFF; border: 1.5px solid rgba(253, 200, 48, 0.45); border-radius: 10px; padding: 12px 10px; margin: 14px auto 8px auto; width: 100%; max-width: 440px; box-sizing: border-box; overflow: hidden; box-shadow: 0 4px 18px rgba(0,0,0,0.35); text-align: center; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; font-weight: 600; text-align: center; margin-top: 8px; margin-bottom: 14px; line-height: 1.45; }\n\n  /* Table styling */\n  .table-card { background: rgba(15, 23, 42, 0.95); border: 1.5px solid #FDC830; border-radius: 10px; padding: 10px 8px; margin: 16px 0; overflow-x: auto; box-shadow: 0 4px 18px rgba(0,0,0,0.35); -webkit-overflow-scrolling: touch; }\n  .styled-table { width: 100%; border-collapse: collapse; color: #F8FAFC; font-size: 12px; text-align: center; }\n  .styled-table th { background: rgba(253, 200, 48, 0.22); color: #FDC830; font-weight: 700; padding: 8px 6px; border: 1px solid rgba(253, 200, 48, 0.4); font-size: 12px; white-space: nowrap; }\n  .styled-table td { padding: 6px 6px; border: 1px solid rgba(255, 255, 255, 0.12); font-weight: 500; font-size: 11.5px; color: #E2E8F0; }\n  .styled-table tr:nth-child(even) td { background: rgba(255, 255, 255, 0.03); }\n  .styled-table td.col-label { font-weight: 700; white-space: nowrap; text-align: left; padding-left: 10px; color: #FFE082; }\n  .styled-table td.highlight-cell { color: #A5D6A7; font-weight: 600; }\n</style>\n\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Header Card -->\n  <div style=\"background: linear-gradient(135deg, rgba(253, 200, 48, 0.25), rgba(243, 156, 18, 0.15)); border: 1.5px solid #FDC830; border-radius: 12px; padding: 14px 18px; margin-bottom: 20px;\">\n    <div style=\"font-size: 19px; font-weight: 800; color: #FDC830; margin-bottom: 4px;\">\n      Exercise 11.1\n    </div>\n    <div style=\"color: #FFFFFF; font-size: 15px; font-weight: 500;\">\n      Powers with Negative Exponents &amp; Laws of Exponents\n    </div>\n  </div>\n\n  <!-- QUESTION 1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\" style=\"color: #FDC830; font-size: 18px; font-weight: 800;\">Question 1:</div>\n    <div class=\"q-text\">Evaluate:</div>\n\n    <!-- (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FDC830;\">(i)</b> 3<sup>&minus;2</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #FDC830; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>3<sup>&minus;2</sup> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3<sup>2</sup></span></span> <span class=\"reason\">[Using <i>a</i><sup>&minus;<i>m</i></sup> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\"><i>a</i><sup><i>m</i></sup></span></span>]</span></div>\n          <div>&rArr; = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">9</span></span></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Final Answer: </span><span class=\"ans-val\"><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">9</span></span></span></div>\n      </div>\n    </div>\n\n    <!-- (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FDC830;\">(ii)</b> (&minus;4)<sup>&minus;2</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #FDC830; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>(&minus;4)<sup>&minus;2</sup> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">(&minus;4)<sup>2</sup></span></span> <span class=\"reason\">[Using <i>a</i><sup>&minus;<i>m</i></sup> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\"><i>a</i><sup><i>m</i></sup></span></span>]</span></div>\n          <div>&rArr; = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">(&minus;4) &times; (&minus;4)</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">16</span></span></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Final Answer: </span><span class=\"ans-val\"><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">16</span></span></span></div>\n      </div>\n    </div>\n\n    <!-- (iii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FDC830;\">(iii)</b> (<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>)<sup>&minus;5</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #FDC830; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>(<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>)<sup>&minus;5</sup> = (<span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">1</span></span>)<sup>5</sup> <span class=\"reason\">[Using (<span class=\"frac\"><span class=\"num\"><i>a</i></span><span class=\"den\"><i>b</i></span></span>)<sup>&minus;<i>m</i></sup> = (<span class=\"frac\"><span class=\"num\"><i>b</i></span><span class=\"den\"><i>a</i></span></span>)<sup><i>m</i></sup>]</span></div>\n          <div>&rArr; = 2<sup>5</sup> = 2 &times; 2 &times; 2 &times; 2 &times; 2 = <b>32</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Final Answer: </span><span class=\"ans-val\">32</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 2 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\" style=\"color: #FDC830; font-size: 18px; font-weight: 800;\">Question 2:</div>\n    <div class=\"q-text\">Simplify and express the result in power notation with a positive exponent:</div>\n\n    <!-- (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FDC830;\">(i)</b> (&minus;4)<sup>5</sup> &divide; (&minus;4)<sup>8</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #FDC830; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>(&minus;4)<sup>5</sup> &divide; (&minus;4)<sup>8</sup> = (&minus;4)<sup>5 &minus; 8</sup> <span class=\"reason\">[Using <i>a</i><sup><i>m</i></sup> &divide; <i>a</i><sup><i>n</i></sup> = <i>a</i><sup><i>m</i> &minus; <i>n</i></sup>]</span></div>\n          <div>&rArr; = (&minus;4)<sup>&minus;3</sup></div>\n          <div>&rArr; = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">(&minus;4)<sup>3</sup></span></span> <span class=\"reason\">[Using <i>a</i><sup>&minus;<i>m</i></sup> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\"><i>a</i><sup><i>m</i></sup></span></span>]</span></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Final Answer: </span><span class=\"ans-val\"><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">(&minus;4)<sup>3</sup></span></span></span></div>\n      </div>\n    </div>\n\n    <!-- (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FDC830;\">(ii)</b> (<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2<sup>3</sup></span></span>)<sup>2</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #FDC830; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>(<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2<sup>3</sup></span></span>)<sup>2</sup> = <span class=\"frac\"><span class=\"num\">1<sup>2</sup></span><span class=\"den\">(2<sup>3</sup>)<sup>2</sup></span></span> <span class=\"reason\">[Using (<span class=\"frac\"><span class=\"num\"><i>a</i></span><span class=\"den\"><i>b</i></span></span>)<sup><i>m</i></sup> = <span class=\"frac\"><span class=\"num\"><i>a</i><sup><i>m</i></sup></span><span class=\"den\"><i>b</i><sup><i>m</i></sup></span></span>]</span></div>\n          <div>&rArr; = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2<sup>3 &times; 2</sup></span></span> <span class=\"reason\">[Using (<i>a</i><sup><i>m</i></sup>)<sup><i>n</i></sup> = <i>a</i><sup><i>mn</i></sup>]</span></div>\n          <div>&rArr; = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2<sup>6</sup></span></span></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Final Answer: </span><span class=\"ans-val\"><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2<sup>6</sup></span></span></span></div>\n      </div>\n    </div>\n\n    <!-- (iii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FDC830;\">(iii)</b> (&minus;3)<sup>4</sup> &times; (<span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">3</span></span>)<sup>4</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #FDC830; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>(&minus;3)<sup>4</sup> &times; (<span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">3</span></span>)<sup>4</sup> = [(&minus;1) &times; 3]<sup>4</sup> &times; <span class=\"frac\"><span class=\"num\">5<sup>4</sup></span><span class=\"den\">3<sup>4</sup></span></span></div>\n          <div>&rArr; = (&minus;1)<sup>4</sup> &times; 3<sup>4</sup> &times; <span class=\"frac\"><span class=\"num\">5<sup>4</sup></span><span class=\"den\">3<sup>4</sup></span></span> <span class=\"reason\">[Since (&minus;1)<sup>4</sup> = 1]</span></div>\n          <div>&rArr; = 1 &times; 5<sup>4</sup> = <b>5<sup>4</sup></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Final Answer: </span><span class=\"ans-val\">5<sup>4</sup></span></div>\n      </div>\n    </div>\n\n    <!-- (iv) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FDC830;\">(iv)</b> (3<sup>&minus;7</sup> &divide; 3<sup>&minus;10</sup>) &times; 3<sup>&minus;5</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #FDC830; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>(3<sup>&minus;7</sup> &divide; 3<sup>&minus;10</sup>) &times; 3<sup>&minus;5</sup> = 3<sup>&minus;7 &minus; (&minus;10)</sup> &times; 3<sup>&minus;5</sup> <span class=\"reason\">[Using <i>a</i><sup><i>m</i></sup> &divide; <i>a</i><sup><i>n</i></sup> = <i>a</i><sup><i>m</i> &minus; <i>n</i></sup>]</span></div>\n          <div>&rArr; = 3<sup>&minus;7 + 10</sup> &times; 3<sup>&minus;5</sup> = 3<sup>3</sup> &times; 3<sup>&minus;5</sup></div>\n          <div>&rArr; = 3<sup>3 + (&minus;5)</sup> = 3<sup>&minus;2</sup> <span class=\"reason\">[Using <i>a</i><sup><i>m</i></sup> &times; <i>a</i><sup><i>n</i></sup> = <i>a</i><sup><i>m</i> + <i>n</i></sup>]</span></div>\n          <div>&rArr; = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3<sup>2</sup></span></span> <span class=\"reason\">[Using <i>a</i><sup>&minus;<i>m</i></sup> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\"><i>a</i><sup><i>m</i></sup></span></span>]</span></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Final Answer: </span><span class=\"ans-val\"><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3<sup>2</sup></span></span></span></div>\n      </div>\n    </div>\n\n    <!-- (v) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FDC830;\">(v)</b> 2<sup>&minus;3</sup> &times; (&minus;7)<sup>&minus;3</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #FDC830; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>2<sup>&minus;3</sup> &times; (&minus;7)<sup>&minus;3</sup> = [2 &times; (&minus;7)]<sup>&minus;3</sup> <span class=\"reason\">[Using <i>a</i><sup><i>m</i></sup> &times; <i>b</i><sup><i>m</i></sup> = (<i>ab</i>)<sup><i>m</i></sup>]</span></div>\n          <div>&rArr; = (&minus;14)<sup>&minus;3</sup></div>\n          <div>&rArr; = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">(&minus;14)<sup>3</sup></span></span> <span class=\"reason\">[Using <i>a</i><sup>&minus;<i>m</i></sup> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\"><i>a</i><sup><i>m</i></sup></span></span>]</span></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Final Answer: </span><span class=\"ans-val\"><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">(&minus;14)<sup>3</sup></span></span></span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 3 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\" style=\"color: #FDC830; font-size: 18px; font-weight: 800;\">Question 3:</div>\n    <div class=\"q-text\">Find the value of:</div>\n\n    <!-- (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FDC830;\">(i)</b> (3<sup>0</sup> + 4<sup>&minus;1</sup>) &times; 2<sup>2</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #FDC830; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>(3<sup>0</sup> + 4<sup>&minus;1</sup>) &times; 2<sup>2</sup> = (1 + <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span>) &times; 4 <span class=\"reason\">[Since 3<sup>0</sup> = 1 and 4<sup>&minus;1</sup> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span>]</span></div>\n          <div>&rArr; = (<span class=\"frac\"><span class=\"num\">4 + 1</span><span class=\"den\">4</span></span>) &times; 4 = <span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">4</span></span> &times; 4 = <b>5</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Final Answer: </span><span class=\"ans-val\">5</span></div>\n      </div>\n    </div>\n\n    <!-- (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FDC830;\">(ii)</b> (2<sup>&minus;1</sup> &times; 4<sup>&minus;1</sup>) &divide; 2<sup>&minus;2</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #FDC830; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>(<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &times; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span>) &divide; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2<sup>2</sup></span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">8</span></span> &divide; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span></div>\n          <div>&rArr; = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">8</span></span> &times; 4 = <span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">8</span></span> = <b><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Final Answer: </span><span class=\"ans-val\"><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></span></div>\n      </div>\n    </div>\n\n    <!-- (iii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FDC830;\">(iii)</b> (<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>)<sup>&minus;2</sup> + (<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span>)<sup>&minus;2</sup> + (<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span>)<sup>&minus;2</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #FDC830; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>(<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>)<sup>&minus;2</sup> + (<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span>)<sup>&minus;2</sup> + (<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span>)<sup>&minus;2</sup> = 2<sup>2</sup> + 3<sup>2</sup> + 4<sup>2</sup> <span class=\"reason\">[Using (<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\"><i>a</i></span></span>)<sup>&minus;<i>m</i></sup> = <i>a</i><sup><i>m</i></sup>]</span></div>\n          <div>&rArr; = 4 + 9 + 16 = <b>29</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Final Answer: </span><span class=\"ans-val\">29</span></div>\n      </div>\n    </div>\n\n    <!-- (iv) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FDC830;\">(iv)</b> (3<sup>&minus;1</sup> + 4<sup>&minus;1</sup> + 5<sup>&minus;1</sup>)<sup>0</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #FDC830; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>Any non-zero expression raised to the power 0 equals 1:</div>\n          <div>&rArr; (3<sup>&minus;1</sup> + 4<sup>&minus;1</sup> + 5<sup>&minus;1</sup>)<sup>0</sup> = <b>1</b> <span class=\"reason\">[Using <i>a</i><sup>0</sup> = 1 for <i>a</i> &ne; 0]</span></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Final Answer: </span><span class=\"ans-val\">1</span></div>\n      </div>\n    </div>\n\n    <!-- (v) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FDC830;\">(v)</b> {(&minus;<span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span>)<sup>&minus;2</sup>}<sup>2</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #FDC830; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>{(&minus;<span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span>)<sup>&minus;2</sup>}<sup>2</sup> = (&minus;<span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span>)<sup>(&minus;2) &times; 2</sup> <span class=\"reason\">[Using (<i>a</i><sup><i>m</i></sup>)<sup><i>n</i></sup> = <i>a</i><sup><i>mn</i></sup>]</span></div>\n          <div>&rArr; = (&minus;<span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span>)<sup>&minus;4</sup> = (&minus;<span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">2</span></span>)<sup>4</sup> <span class=\"reason\">[Using (<span class=\"frac\"><span class=\"num\"><i>a</i></span><span class=\"den\"><i>b</i></span></span>)<sup>&minus;<i>m</i></sup> = (<span class=\"frac\"><span class=\"num\"><i>b</i></span><span class=\"den\"><i>a</i></span></span>)<sup><i>m</i></sup>]</span></div>\n          <div>&rArr; = <span class=\"frac\"><span class=\"num\">(&minus;3)<sup>4</sup></span><span class=\"den\">2<sup>4</sup></span></span> = <span class=\"frac\"><span class=\"num\">81</span><span class=\"den\">16</span></span></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Final Answer: </span><span class=\"ans-val\"><span class=\"frac\"><span class=\"num\">81</span><span class=\"den\">16</span></span></span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 4 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\" style=\"color: #FDC830; font-size: 18px; font-weight: 800;\">Question 4:</div>\n    <div class=\"q-text\">Evaluate:</div>\n\n    <!-- (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FDC830;\">(i)</b> <span class=\"frac\"><span class=\"num\">8<sup>&minus;1</sup> &times; 5<sup>3</sup></span><span class=\"den\">2<sup>&minus;4</sup></span></span></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #FDC830; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>Express base 8 as 2<sup>3</sup>:</div>\n          <div>&rArr; <span class=\"frac\"><span class=\"num\">8<sup>&minus;1</sup> &times; 5<sup>3</sup></span><span class=\"den\">2<sup>&minus;4</sup></span></span> = <span class=\"frac\"><span class=\"num\">(2<sup>3</sup>)<sup>&minus;1</sup> &times; 125</span><span class=\"den\">2<sup>&minus;4</sup></span></span> = <span class=\"frac\"><span class=\"num\">2<sup>&minus;3</sup> &times; 125</span><span class=\"den\">2<sup>&minus;4</sup></span></span></div>\n          <div>&rArr; = 2<sup>&minus;3 &minus; (&minus;4)</sup> &times; 125 <span class=\"reason\">[Using <span class=\"frac\"><span class=\"num\"><i>a</i><sup><i>m</i></sup></span><span class=\"den\"><i>a</i><sup><i>n</i></sup></span></span> = <i>a</i><sup><i>m</i> &minus; <i>n</i></sup>]</span></div>\n          <div>&rArr; = 2<sup>&minus;3 + 4</sup> &times; 125 = 2<sup>1</sup> &times; 125 = <b>250</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Final Answer: </span><span class=\"ans-val\">250</span></div>\n      </div>\n    </div>\n\n    <!-- (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FDC830;\">(ii)</b> (5<sup>&minus;1</sup> &times; 2<sup>&minus;1</sup>) &times; 6<sup>&minus;1</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #FDC830; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>(5<sup>&minus;1</sup> &times; 2<sup>&minus;1</sup>) &times; 6<sup>&minus;1</sup> = (<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">5</span></span> &times; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>) &times; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">6</span></span></div>\n          <div>&rArr; = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">10</span></span> &times; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">6</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">60</span></span></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Final Answer: </span><span class=\"ans-val\"><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">60</span></span></span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 5 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\" style=\"color: #FDC830; font-size: 18px; font-weight: 800;\">Question 5:</div>\n    <div class=\"q-text\">Find the value of <i>m</i> for which 5<sup><i>m</i></sup> &divide; 5<sup>&minus;3</sup> = 5<sup>5</sup>.</div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\" style=\"color: #FDC830; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n      <div class=\"sol-step\">\n        <div>5<sup><i>m</i></sup> &divide; 5<sup>&minus;3</sup> = 5<sup>5</sup></div>\n        <div>&rArr; 5<sup><i>m</i> &minus; (&minus;3)</sup> = 5<sup>5</sup> <span class=\"reason\">[Using <i>a</i><sup><i>m</i></sup> &divide; <i>a</i><sup><i>n</i></sup> = <i>a</i><sup><i>m</i> &minus; <i>n</i></sup>]</span></div>\n        <div>&rArr; 5<sup><i>m</i> + 3</sup> = 5<sup>5</sup></div>\n        <div>Comparing exponents on both sides (bases are equal):</div>\n        <div>&rArr; <i>m</i> + 3 = 5 &rArr; <i>m</i> = 5 &minus; 3 = <b>2</b></div>\n      </div>\n      <div class=\"ans-box\"><span class=\"ans-label\">✓ Final Answer: </span><span class=\"ans-val\"><i>m</i> = 2</span></div>\n    </div>\n  </div>\n\n  <!-- QUESTION 6 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\" style=\"color: #FDC830; font-size: 18px; font-weight: 800;\">Question 6:</div>\n    <div class=\"q-text\">Evaluate:</div>\n\n    <!-- (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FDC830;\">(i)</b> {(<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span>)<sup>&minus;1</sup> &minus; (<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span>)<sup>&minus;1</sup>}<sup>&minus;1</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #FDC830; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>(<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span>)<sup>&minus;1</sup> = 3 &nbsp;and&nbsp; (<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span>)<sup>&minus;1</sup> = 4 <span class=\"reason\">[Using (<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\"><i>a</i></span></span>)<sup>&minus;1</sup> = <i>a</i>]</span></div>\n          <div>&rArr; {3 &minus; 4}<sup>&minus;1</sup> = (&minus;1)<sup>&minus;1</sup></div>\n          <div>&rArr; = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">&minus;1</span></span> = <b>&minus;1</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Final Answer: </span><span class=\"ans-val\">&minus;1</span></div>\n      </div>\n    </div>\n\n    <!-- (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FDC830;\">(ii)</b> (<span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">8</span></span>)<sup>&minus;7</sup> &times; (<span class=\"frac\"><span class=\"num\">8</span><span class=\"den\">5</span></span>)<sup>&minus;4</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #FDC830; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>(<span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">8</span></span>)<sup>&minus;7</sup> &times; (<span class=\"frac\"><span class=\"num\">8</span><span class=\"den\">5</span></span>)<sup>&minus;4</sup> = <span class=\"frac\"><span class=\"num\">5<sup>&minus;7</sup></span><span class=\"den\">8<sup>&minus;7</sup></span></span> &times; <span class=\"frac\"><span class=\"num\">8<sup>&minus;4</sup></span><span class=\"den\">5<sup>&minus;4</sup></span></span></div>\n          <div>&rArr; = 5<sup>&minus;7 &minus; (&minus;4)</sup> &times; 8<sup>&minus;4 &minus; (&minus;7)</sup> <span class=\"reason\">[Using <span class=\"frac\"><span class=\"num\"><i>a</i><sup><i>m</i></sup></span><span class=\"den\"><i>a</i><sup><i>n</i></sup></span></span> = <i>a</i><sup><i>m</i> &minus; <i>n</i></sup>]</span></div>\n          <div>&rArr; = 5<sup>&minus;3</sup> &times; 8<sup>3</sup> = <span class=\"frac\"><span class=\"num\">8<sup>3</sup></span><span class=\"den\">5<sup>3</sup></span></span></div>\n          <div>&rArr; = <span class=\"frac\"><span class=\"num\">512</span><span class=\"den\">125</span></span></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Final Answer: </span><span class=\"ans-val\"><span class=\"frac\"><span class=\"num\">512</span><span class=\"den\">125</span></span></span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 7 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\" style=\"color: #FDC830; font-size: 18px; font-weight: 800;\">Question 7:</div>\n    <div class=\"q-text\">Simplify the following:</div>\n\n    <!-- (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FDC830;\">(i)</b> <span class=\"frac\"><span class=\"num\">25 &times; <i>t</i><sup>&minus;4</sup></span><span class=\"den\">5<sup>&minus;3</sup> &times; 10 &times; <i>t</i><sup>&minus;8</sup></span></span> &nbsp;&nbsp;(<i>t</i> &ne; 0)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #FDC830; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>Express numbers with prime base 5: 25 = 5<sup>2</sup> and 10 = 2 &times; 5<sup>1</sup></div>\n          <div>&rArr; = <span class=\"frac\"><span class=\"num\">5<sup>2</sup> &times; <i>t</i><sup>&minus;4</sup></span><span class=\"den\">5<sup>&minus;3</sup> &times; (2 &times; 5<sup>1</sup>) &times; <i>t</i><sup>&minus;8</sup></span></span> = <span class=\"frac\"><span class=\"num\">5<sup>2</sup> &times; <i>t</i><sup>&minus;4</sup></span><span class=\"den\">2 &times; 5<sup>&minus;3 + 1</sup> &times; <i>t</i><sup>&minus;8</sup></span></span></div>\n          <div>&rArr; = <span class=\"frac\"><span class=\"num\">5<sup>2</sup> &times; <i>t</i><sup>&minus;4</sup></span><span class=\"den\">2 &times; 5<sup>&minus;2</sup> &times; <i>t</i><sup>&minus;8</sup></span></span></div>\n          <div>&rArr; = <span class=\"frac\"><span class=\"num\">5<sup>2 &minus; (&minus;2)</sup> &times; <i>t</i><sup>&minus;4 &minus; (&minus;8)</sup></span><span class=\"den\">2</span></span></div>\n          <div>&rArr; = <span class=\"frac\"><span class=\"num\">5<sup>4</sup> &times; <i>t</i><sup>4</sup></span><span class=\"den\">2</span></span> = <b><span class=\"frac\"><span class=\"num\">625<i>t</i><sup>4</sup></span><span class=\"den\">2</span></span></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Final Answer: </span><span class=\"ans-val\"><span class=\"frac\"><span class=\"num\">625<i>t</i><sup>4</sup></span><span class=\"den\">2</span></span></span></div>\n      </div>\n    </div>\n\n    <!-- (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FDC830;\">(ii)</b> <span class=\"frac\"><span class=\"num\">3<sup>&minus;5</sup> &times; 10<sup>&minus;5</sup> &times; 125</span><span class=\"den\">5<sup>&minus;7</sup> &times; 6<sup>&minus;5</sup></span></span></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #FDC830; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>Resolve composite numbers into prime factors:</div>\n          <div>10<sup>&minus;5</sup> = (2 &times; 5)<sup>&minus;5</sup> = 2<sup>&minus;5</sup> &times; 5<sup>&minus;5</sup></div>\n          <div>6<sup>&minus;5</sup> = (2 &times; 3)<sup>&minus;5</sup> = 2<sup>&minus;5</sup> &times; 3<sup>&minus;5</sup> &nbsp;and&nbsp; 125 = 5<sup>3</sup></div>\n          <div style=\"margin-top: 6px;\">&rArr; = <span class=\"frac\"><span class=\"num\">3<sup>&minus;5</sup> &times; (2<sup>&minus;5</sup> &times; 5<sup>&minus;5</sup>) &times; 5<sup>3</sup></span><span class=\"den\">5<sup>&minus;7</sup> &times; (2<sup>&minus;5</sup> &times; 3<sup>&minus;5</sup>)</span></span></div>\n          <div>&rArr; = <span class=\"frac\"><span class=\"num\">3<sup>&minus;5</sup> &times; 2<sup>&minus;5</sup> &times; 5<sup>&minus;5 + 3</sup></span><span class=\"den\">3<sup>&minus;5</sup> &times; 2<sup>&minus;5</sup> &times; 5<sup>&minus;7</sup></span></span> = <span class=\"frac\"><span class=\"num\">3<sup>&minus;5</sup> &times; 2<sup>&minus;5</sup> &times; 5<sup>&minus;2</sup></span><span class=\"den\">3<sup>&minus;5</sup> &times; 2<sup>&minus;5</sup> &times; 5<sup>&minus;7</sup></span></span></div>\n          <div>&rArr; = 3<sup>&minus;5 &minus; (&minus;5)</sup> &times; 2<sup>&minus;5 &minus; (&minus;5)</sup> &times; 5<sup>&minus;2 &minus; (&minus;7)</sup></div>\n          <div>&rArr; = 3<sup>0</sup> &times; 2<sup>0</sup> &times; 5<sup>5</sup> = 1 &times; 1 &times; 3125 = <b>3125</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Final Answer: </span><span class=\"ans-val\">3125</span></div>\n      </div>\n    </div>\n  </div>\n\n</div>\n",
+    "ex11-2": "\n\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; text-align: center; }\n  .frac .den { padding: 1px 4px; text-align: center; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(253, 200, 48, 0.4); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 18px; font-weight: 800; color: #FDC830; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 16px; font-weight: 500; text-align: left !important; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(253, 200, 48, 0.25); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; text-align: left !important; }\n  .sol-box { background: rgba(0, 0, 0, 0.35); border-left: 3.5px solid #FDC830; border-radius: 8px; padding: 14px 16px; margin-top: 12px; text-align: left !important; }\n  .sol-title { font-size: 15.5px; font-weight: 800; color: #FDC830; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; text-align: left !important; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; text-align: left !important; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(253, 200, 48, 0.15); border: 1px solid #FDC830; color: #FFE082; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 4px 2px; }\n  \n  /* Diagram Wrapper: Pure Crisp White Canvas, Beautiful Shadow */\n  .diagram-wrapper { display: block; background: #FFFFFF; border: 1.5px solid rgba(253, 200, 48, 0.45); border-radius: 10px; padding: 12px 10px; margin: 14px auto 8px auto; width: 100%; max-width: 440px; box-sizing: border-box; overflow: hidden; box-shadow: 0 4px 18px rgba(0,0,0,0.35); text-align: center; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; font-weight: 600; text-align: center; margin-top: 8px; margin-bottom: 14px; line-height: 1.45; }\n\n  /* Table styling */\n  .table-card { background: rgba(15, 23, 42, 0.95); border: 1.5px solid #FDC830; border-radius: 10px; padding: 10px 8px; margin: 16px 0; overflow-x: auto; box-shadow: 0 4px 18px rgba(0,0,0,0.35); -webkit-overflow-scrolling: touch; }\n  .styled-table { width: 100%; border-collapse: collapse; color: #F8FAFC; font-size: 12px; text-align: center; }\n  .styled-table th { background: rgba(253, 200, 48, 0.22); color: #FDC830; font-weight: 700; padding: 8px 6px; border: 1px solid rgba(253, 200, 48, 0.4); font-size: 12px; white-space: nowrap; }\n  .styled-table td { padding: 6px 6px; border: 1px solid rgba(255, 255, 255, 0.12); font-weight: 500; font-size: 11.5px; color: #E2E8F0; }\n  .styled-table tr:nth-child(even) td { background: rgba(255, 255, 255, 0.03); }\n  .styled-table td.col-label { font-weight: 700; white-space: nowrap; text-align: left; padding-left: 10px; color: #FFE082; }\n  .styled-table td.highlight-cell { color: #A5D6A7; font-weight: 600; }\n</style>\n\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Header Card -->\n  <div style=\"background: linear-gradient(135deg, rgba(253, 200, 48, 0.25), rgba(243, 156, 18, 0.15)); border: 1.5px solid #FDC830; border-radius: 12px; padding: 14px 18px; margin-bottom: 20px;\">\n    <div style=\"font-size: 19px; font-weight: 800; color: #FDC830; margin-bottom: 4px;\">\n      Exercise 11.2\n    </div>\n    <div style=\"color: #FFFFFF; font-size: 15px; font-weight: 500;\">\n      Standard Form (Scientific Notation) &amp; Usual Form Real-World Applications\n    </div>\n  </div>\n\n  <!-- QUESTION 1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\" style=\"color: #FDC830; font-size: 18px; font-weight: 800;\">Question 1:</div>\n    <div class=\"q-text\">Express the following numbers in standard form:</div>\n\n    <!-- (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FDC830;\">(i)</b> 0.0000000000085</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #FDC830; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>To place the decimal after the first non-zero digit (8), move decimal point <b>12 places to the right</b>:</div>\n          <div>&rArr; 0.0000000000085 = <b>8.5 &times; 10<sup>&minus;12</sup></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Final Answer: </span><span class=\"ans-val\">8.5 &times; 10<sup>&minus;12</sup></span></div>\n      </div>\n    </div>\n\n    <!-- (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FDC830;\">(ii)</b> 0.00000000000942</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #FDC830; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>Move decimal point <b>12 places to the right</b> to obtain 9.42:</div>\n          <div>&rArr; 0.00000000000942 = <b>9.42 &times; 10<sup>&minus;12</sup></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Final Answer: </span><span class=\"ans-val\">9.42 &times; 10<sup>&minus;12</sup></span></div>\n      </div>\n    </div>\n\n    <!-- (iii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FDC830;\">(iii)</b> 6020000000000000</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #FDC830; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>Move decimal point <b>15 places to the left</b> to obtain 6.02:</div>\n          <div>&rArr; 6020000000000000 = <b>6.02 &times; 10<sup>15</sup></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Final Answer: </span><span class=\"ans-val\">6.02 &times; 10<sup>15</sup></span></div>\n      </div>\n    </div>\n\n    <!-- (iv) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FDC830;\">(iv)</b> 0.00000000837</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #FDC830; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>Move decimal point <b>9 places to the right</b> to obtain 8.37:</div>\n          <div>&rArr; 0.00000000837 = <b>8.37 &times; 10<sup>&minus;9</sup></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Final Answer: </span><span class=\"ans-val\">8.37 &times; 10<sup>&minus;9</sup></span></div>\n      </div>\n    </div>\n\n    <!-- (v) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FDC830;\">(v)</b> 31860000000</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #FDC830; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>Move decimal point <b>10 places to the left</b> to obtain 3.186:</div>\n          <div>&rArr; 31860000000 = <b>3.186 &times; 10<sup>10</sup></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Final Answer: </span><span class=\"ans-val\">3.186 &times; 10<sup>10</sup></span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 2 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\" style=\"color: #FDC830; font-size: 18px; font-weight: 800;\">Question 2:</div>\n    <div class=\"q-text\">Express the following numbers in usual form:</div>\n\n    <!-- (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FDC830;\">(i)</b> 3.02 &times; 10<sup>&minus;6</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #FDC830; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>Power is &minus;6, so shift decimal point <b>6 places to the left</b>:</div>\n          <div>&rArr; 3.02 &times; 10<sup>&minus;6</sup> = <span class=\"frac\"><span class=\"num\">3.02</span><span class=\"den\">10<sup>6</sup></span></span> = <b>0.00000302</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Final Answer: </span><span class=\"ans-val\">0.00000302</span></div>\n      </div>\n    </div>\n\n    <!-- (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FDC830;\">(ii)</b> 4.5 &times; 10<sup>4</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #FDC830; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>Power is +4, so shift decimal point <b>4 places to the right</b>:</div>\n          <div>&rArr; 4.5 &times; 10,000 = <b>45,000</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Final Answer: </span><span class=\"ans-val\">45,000</span></div>\n      </div>\n    </div>\n\n    <!-- (iii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FDC830;\">(iii)</b> 3 &times; 10<sup>&minus;8</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #FDC830; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>Power is &minus;8, so shift decimal point <b>8 places to the left</b>:</div>\n          <div>&rArr; 3 &times; 10<sup>&minus;8</sup> = <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">10<sup>8</sup></span></span> = <b>0.00000003</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Final Answer: </span><span class=\"ans-val\">0.00000003</span></div>\n      </div>\n    </div>\n\n    <!-- (iv) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FDC830;\">(iv)</b> 1.0001 &times; 10<sup>9</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #FDC830; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>Power is +9, so shift decimal point <b>9 places to the right</b>:</div>\n          <div>&rArr; 1.0001 &times; 1,000,000,000 = <b>1,000,100,000</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Final Answer: </span><span class=\"ans-val\">1,000,100,000</span></div>\n      </div>\n    </div>\n\n    <!-- (v) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FDC830;\">(v)</b> 5.8 &times; 10<sup>12</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #FDC830; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>Power is +12, so shift decimal point <b>12 places to the right</b>:</div>\n          <div>&rArr; 5.8 &times; 10<sup>12</sup> = <b>5,800,000,000,000</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Final Answer: </span><span class=\"ans-val\">5,800,000,000,000</span></div>\n      </div>\n    </div>\n\n    <!-- (vi) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FDC830;\">(vi)</b> 3.61492 &times; 10<sup>6</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #FDC830; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>Power is +6, so shift decimal point <b>6 places to the right</b>:</div>\n          <div>&rArr; 3.61492 &times; 1,000,000 = <b>3,614,920</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Final Answer: </span><span class=\"ans-val\">3,614,920</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 3 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\" style=\"color: #FDC830; font-size: 18px; font-weight: 800;\">Question 3:</div>\n    <div class=\"q-text\">Express the number appearing in the following statements in standard form:</div>\n\n    <!-- (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FDC830;\">(i)</b> 1 micron is equal to <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">1000000</span></span> m.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #FDC830; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>1 micron = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">1,000,000</span></span> m = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">10<sup>6</sup></span></span> m</div>\n          <div>&rArr; = <b>1 &times; 10<sup>&minus;6</sup> m</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Final Answer: </span><span class=\"ans-val\">1 &times; 10<sup>&minus;6</sup> m</span></div>\n      </div>\n    </div>\n\n    <!-- (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FDC830;\">(ii)</b> Charge of an electron is 0.000,000,000,000,000,000,16 coulomb.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #FDC830; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>There are 18 zeroes after the decimal point, so move decimal point <b>19 places to the right</b> to obtain 1.6:</div>\n          <div>&rArr; = <b>1.6 &times; 10<sup>&minus;19</sup> coulomb</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Final Answer: </span><span class=\"ans-val\">1.6 &times; 10<sup>&minus;19</sup> coulomb</span></div>\n      </div>\n    </div>\n\n    <!-- (iii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FDC830;\">(iii)</b> Size of bacteria is 0.0000005 m.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #FDC830; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>Move decimal point <b>7 places to the right</b>:</div>\n          <div>&rArr; 0.0000005 m = <span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">10,000,000</span></span> m = <span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">10<sup>7</sup></span></span> m = <b>5 &times; 10<sup>&minus;7</sup> m</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Final Answer: </span><span class=\"ans-val\">5 &times; 10<sup>&minus;7</sup> m</span></div>\n      </div>\n    </div>\n\n    <!-- (iv) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FDC830;\">(iv)</b> Size of a plant cell is 0.00001275 m.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #FDC830; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>Move decimal point <b>5 places to the right</b> to place it after 1:</div>\n          <div>&rArr; 0.00001275 m = <b>1.275 &times; 10<sup>&minus;5</sup> m</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Final Answer: </span><span class=\"ans-val\">1.275 &times; 10<sup>&minus;5</sup> m</span></div>\n      </div>\n    </div>\n\n    <!-- (v) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FDC830;\">(v)</b> Thickness of a thick paper is 0.07 mm.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #FDC830; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>Move decimal point <b>2 places to the right</b>:</div>\n          <div>&rArr; 0.07 mm = <span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">100</span></span> mm = <span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">10<sup>2</sup></span></span> mm = <b>7 &times; 10<sup>&minus;2</sup> mm</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Final Answer: </span><span class=\"ans-val\">7 &times; 10<sup>&minus;2</sup> mm</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 4 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\" style=\"color: #FDC830; font-size: 18px; font-weight: 800;\">Question 4:</div>\n    <div class=\"q-text\">\n      In a stack, there are 5 books, each having a thickness of 20 mm and 5 paper sheets, each having a thickness of 0.016 mm. What is the total thickness of the stack?\n    </div>\n\n    <!-- Diagram Card Q4 -->\n    <div class=\"diagram-wrapper\">\n      <svg width=\"100%\" height=\"auto\" viewBox=\"0 0 350 180\" style=\"display:block; width:100%; height:auto;\">\n        <rect width=\"100%\" height=\"100%\" fill=\"#FFFFFF\" rx=\"8\"/>\n\n        <!-- 5 Books Stack -->\n        <g transform=\"translate(45, 15)\">\n          <rect x=\"20\" y=\"70\" width=\"160\" height=\"15\" rx=\"2\" fill=\"#FFE082\" stroke=\"#F57F17\" stroke-width=\"1.8\"/>\n          <rect x=\"20\" y=\"53\" width=\"160\" height=\"15\" rx=\"2\" fill=\"#FFD54F\" stroke=\"#F57F17\" stroke-width=\"1.8\"/>\n          <rect x=\"20\" y=\"36\" width=\"160\" height=\"15\" rx=\"2\" fill=\"#FFCA28\" stroke=\"#F57F17\" stroke-width=\"1.8\"/>\n          <rect x=\"20\" y=\"19\" width=\"160\" height=\"15\" rx=\"2\" fill=\"#FFC107\" stroke=\"#F57F17\" stroke-width=\"1.8\"/>\n          <rect x=\"20\" y=\"2\" width=\"160\" height=\"15\" rx=\"2\" fill=\"#FFB300\" stroke=\"#F57F17\" stroke-width=\"1.8\"/>\n          \n          <text x=\"100\" y=\"48\" font-size=\"12.5\" font-weight=\"900\" fill=\"#E65100\" text-anchor=\"middle\">5 Books (100 mm)</text>\n\n          <!-- 5 Sheets on Top -->\n          <line x1=\"20\" y1=\"0\" x2=\"180\" y2=\"0\" stroke=\"#0288D1\" stroke-width=\"2.5\"/>\n          <text x=\"100\" y=\"-5\" font-size=\"11\" font-weight=\"900\" fill=\"#0288D1\" text-anchor=\"middle\">5 Sheets (0.08 mm)</text>\n          \n          <!-- Height Dimension Bracket -->\n          <line x1=\"195\" y1=\"0\" x2=\"195\" y2=\"85\" stroke=\"#334155\" stroke-width=\"1.8\"/>\n          <polyline points=\"190,0 195,0\" stroke=\"#334155\" stroke-width=\"1.8\"/>\n          <polyline points=\"190,85 195,85\" stroke=\"#334155\" stroke-width=\"1.8\"/>\n          <rect x=\"200\" y=\"32\" width=\"95\" height=\"22\" rx=\"3\" fill=\"#F1F5F9\" stroke=\"#CBD5E1\" stroke-width=\"1\"/>\n          <text x=\"247\" y=\"47\" font-size=\"11.5\" font-weight=\"900\" fill=\"#0F172A\" text-anchor=\"middle\">100.08 mm</text>\n        </g>\n        \n        <text x=\"175\" y=\"150\" font-size=\"13\" font-weight=\"900\" fill=\"#E65100\" text-anchor=\"middle\">Total Stack Thickness = 1.0008 &times; 10² mm</text>\n      </svg>\n    </div>\n    <div class=\"diagram-caption\">Figure 11.1: Stack of 5 books and 5 paper sheets</div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\" style=\"color: #FDC830; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n      <div class=\"sol-step\">\n        <div>Thickness of 1 book = 20 mm</div>\n        <div>&rArr; Thickness of 5 books = 5 &times; 20 = <b>100 mm</b></div>\n        <div style=\"margin-top: 6px;\">Thickness of 1 paper sheet = 0.016 mm</div>\n        <div>&rArr; Thickness of 5 paper sheets = 5 &times; 0.016 = <b>0.08 mm</b></div>\n        <div style=\"margin-top: 6px;\">Total thickness of the stack = 100 + 0.08 = <b>100.08 mm</b></div>\n        <div>In standard form:</div>\n        <div>&rArr; 100.08 mm = <b>1.0008 &times; 10<sup>2</sup> mm</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">Total thickness = 100.08 mm = 1.0008 &times; 10<sup>2</sup> mm</span>\n      </div>\n    </div>\n  </div>\n\n</div>\n"
+  }
 };
