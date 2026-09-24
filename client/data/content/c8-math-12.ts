@@ -1,491 +1,443 @@
 import { ChapterContent } from "../types";
 
-const ex121Content = `
-  <style>
-    .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
-    .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
-    .frac .den { padding: 0 2px; }
-    .ex-container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
-    .q-card { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 15px; margin-bottom: 25px; }
-    .q-text { color: #00BFA5; font-weight: 600; margin-bottom: 12px; }
-    .q-subtext { color: #e0e0e0; margin-bottom: 5px; margin-left: 10px; }
-    .sol-box { border-left: 3px solid #00BFA5; padding-left: 15px; margin-top: 15px; background: rgba(0, 191, 165, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; }
-    .ans-highlight { color: #00BFA5; font-weight: 700; }
-    .step-label { color: #4DB6AC; font-weight: 600; margin-right: 5px; }
-    .sol-step { margin-bottom: 8px; }
-    .q-text, .q-subtext, .sol-step, .sol-box { font-size: 16px; line-height: 1.8; }
-  </style>
-  <div class="ex-container">
-    <div class="q-card">
-      <div class="q-text">1. Find the common factors of the given terms.</div>
-      <div class="q-subtext">(i) 12x, 36</div>
-      <div class="q-subtext">(ii) 2y, 22xy</div>
-      <div class="q-subtext">(iii) 14pq, 28p²q²</div>
-      <div class="q-subtext">(iv) 2x, 3x², 4</div>
-      <div class="q-subtext">(v) 6abc, 24ab², 12a²b</div>
-      <div class="q-subtext">(vi) 16x³, -4x², 32x</div>
-      <div class="q-subtext">(vii) 10pq, 20qr, 30rp</div>
-      <div class="q-subtext">(viii) 3x²y³, 10x³y², 6x²y²z</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">(i)</span> 12x = 2×2×3×x, 36 = 2×2×3×3. Common factors = 2×2×3 = <span class="ans-highlight">12</span></div>
-        <div class="sol-step"><span class="step-label">(ii)</span> 2y = 2×y, 22xy = 2×11×x×y. Common factors = 2×y = <span class="ans-highlight">2y</span></div>
-        <div class="sol-step"><span class="step-label">(iii)</span> 14pq = 2×7×p×q, 28p²q² = 2×2×7×p×p×q×q. Common factors = 2×7×p×q = <span class="ans-highlight">14pq</span></div>
-        <div class="sol-step"><span class="step-label">(iv)</span> 2x, 3x², 4. Only common factor is <span class="ans-highlight">1</span>.</div>
-        <div class="sol-step"><span class="step-label">(v)</span> 6abc, 24ab², 12a²b. Common factors = 6×a×b = <span class="ans-highlight">6ab</span></div>
-        <div class="sol-step"><span class="step-label">(vi)</span> 16x³, -4x², 32x. Common factors = 4×x = <span class="ans-highlight">4x</span></div>
-        <div class="sol-step"><span class="step-label">(vii)</span> 10pq, 20qr, 30rp. Common factors = <span class="ans-highlight">10</span></div>
-        <div class="sol-step"><span class="step-label">(viii)</span> 3x²y³, 10x³y², 6x²y²z. Common factors = x²y² = <span class="ans-highlight">x²y²</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">2. Factorise the following expressions.</div>
-      <div class="q-subtext">(i) 7x - 42</div>
-      <div class="q-subtext">(ii) 6p - 12q</div>
-      <div class="q-subtext">(iii) 7a² + 14a</div>
-      <div class="q-subtext">(iv) -16z + 20z³</div>
-      <div class="q-subtext">(v) 20l²m + 30alm</div>
-      <div class="q-subtext">(vi) 5x²y - 15xy²</div>
-      <div class="q-subtext">(vii) 10a² - 15b² + 20c²</div>
-      <div class="q-subtext">(viii) -4a² + 4ab - 4ca</div>
-      <div class="q-subtext">(ix) x²yz + xy²z + xyz²</div>
-      <div class="q-subtext">(x) ax²y + bxy² + cxyz</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">(i)</span> 7(x - 6)</div>
-        <div class="sol-step"><span class="step-label">(ii)</span> 6(p - 2q)</div>
-        <div class="sol-step"><span class="step-label">(iii)</span> 7a(a + 2)</div>
-        <div class="sol-step"><span class="step-label">(iv)</span> 4z(-4 + 5z²)</div>
-        <div class="sol-step"><span class="step-label">(v)</span> 10lm(2l + 3a)</div>
-        <div class="sol-step"><span class="step-label">(vi)</span> 5xy(x - 3y)</div>
-        <div class="sol-step"><span class="step-label">(vii)</span> 5(2a² - 3b² + 4c²)</div>
-        <div class="sol-step"><span class="step-label">(viii)</span> 4a(-a + b - c)</div>
-        <div class="sol-step"><span class="step-label">(ix)</span> xyz(x + y + z)</div>
-        <div class="sol-step"><span class="step-label">(x)</span> xy(ax + by + cz)</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">3. Factorise.</div>
-      <div class="q-subtext">(i) x² + xy + 8x + 8y</div>
-      <div class="q-subtext">(ii) 15xy - 6x + 5y - 2</div>
-      <div class="q-subtext">(iii) ax + bx - ay - by</div>
-      <div class="q-subtext">(iv) 15pq + 15 + 9q + 25p</div>
-      <div class="q-subtext">(v) z - 7 + 7xy - xyz</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">(i)</span> x(x + y) + 8(x + y) = <span class="ans-highlight">(x + y)(x + 8)</span></div>
-        <div class="sol-step"><span class="step-label">(ii)</span> 3x(5y - 2) + 1(5y - 2) = <span class="ans-highlight">(5y - 2)(3x + 1)</span></div>
-        <div class="sol-step"><span class="step-label">(iii)</span> x(a + b) - y(a + b) = <span class="ans-highlight">(a + b)(x - y)</span></div>
-        <div class="sol-step"><span class="step-label">(iv)</span> 15pq + 25p + 9q + 15 = 5p(3q + 5) + 3(3q + 5) = <span class="ans-highlight">(3q + 5)(5p + 3)</span></div>
-        <div class="sol-step"><span class="step-label">(v)</span> (z - 7) - xy(z - 7) = <span class="ans-highlight">(z - 7)(1 - xy)</span></div>
-      </div>
-    </div>
-  </div>
-`;
-
-const ex122Content = `
-  <style>
-    .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
-    .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
-    .frac .den { padding: 0 2px; }
-    .ex-container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
-    .q-card { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 15px; margin-bottom: 25px; }
-    .q-text { color: #00BFA5; font-weight: 600; margin-bottom: 12px; }
-    .q-subtext { color: #e0e0e0; margin-bottom: 5px; margin-left: 10px; }
-    .sol-box { border-left: 3px solid #00BFA5; padding-left: 15px; margin-top: 15px; background: rgba(0, 191, 165, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; }
-    .ans-highlight { color: #00BFA5; font-weight: 700; }
-    .step-label { color: #4DB6AC; font-weight: 600; margin-right: 5px; }
-    .sol-step { margin-bottom: 8px; }
-    .q-text, .q-subtext, .sol-step, .sol-box { font-size: 16px; line-height: 1.8; }
-  </style>
-  <div class="ex-container">
-    <div class="q-card">
-      <div class="q-text">1. Factorise the following expressions.</div>
-      <div class="q-subtext">(i) a² + 8a + 16</div>
-      <div class="q-subtext">(ii) p² - 10p + 25</div>
-      <div class="q-subtext">(iii) 25m² + 30m + 9</div>
-      <div class="q-subtext">(iv) 49y² + 84yz + 36z²</div>
-      <div class="q-subtext">(v) 4x² - 8x + 4</div>
-      <div class="q-subtext">(vi) 121b² - 88bc + 16c²</div>
-      <div class="q-subtext">(vii) (l + m)² - 4lm</div>
-      <div class="q-subtext">(viii) a⁴ + 2a²b² + b⁴</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">(i)</span> (a)² + 2(a)(4) + (4)² = <span class="ans-highlight">(a + 4)²</span></div>
-        <div class="sol-step"><span class="step-label">(ii)</span> (p)² - 2(p)(5) + (5)² = <span class="ans-highlight">(p - 5)²</span></div>
-        <div class="sol-step"><span class="step-label">(iii)</span> (5m)² + 2(5m)(3) + (3)² = <span class="ans-highlight">(5m + 3)²</span></div>
-        <div class="sol-step"><span class="step-label">(iv)</span> (7y)² + 2(7y)(6z) + (6z)² = <span class="ans-highlight">(7y + 6z)²</span></div>
-        <div class="sol-step"><span class="step-label">(v)</span> 4(x² - 2x + 1) = 4(x - 1)²</div>
-        <div class="sol-step"><span class="step-label">(vi)</span> (11b)² - 2(11b)(4c) + (4c)² = <span class="ans-highlight">(11b - 4c)²</span></div>
-        <div class="sol-step"><span class="step-label">(vii)</span> l² + m² + 2lm - 4lm = l² + m² - 2lm = <span class="ans-highlight">(l - m)²</span></div>
-        <div class="sol-step"><span class="step-label">(viii)</span> (a²)² + 2(a²)(b²) + (b²)² = <span class="ans-highlight">(a² + b²)²</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">2. Factorise.</div>
-      <div class="q-subtext">(i) 4p² - 9q²</div>
-      <div class="q-subtext">(ii) 63a² - 112b²</div>
-      <div class="q-subtext">(iii) 49x² - 36</div>
-      <div class="q-subtext">(iv) 16x⁵ - 144x³</div>
-      <div class="q-subtext">(v) (l + m)² - (l - m)²</div>
-      <div class="q-subtext">(vi) 9x²y² - 16</div>
-      <div class="q-subtext">(vii) (x² - 2xy + y²) - z²</div>
-      <div class="q-subtext">(viii) 25a² - 4b² + 28bc - 49c²</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">(i)</span> (2p)² - (3q)² = <span class="ans-highlight">(2p - 3q)(2p + 3q)</span></div>
-        <div class="sol-step"><span class="step-label">(ii)</span> 7(9a² - 16b²) = 7(3a - 4b)(3a + 4b)</div>
-        <div class="sol-step"><span class="step-label">(iii)</span> (7x)² - (6)² = <span class="ans-highlight">(7x - 6)(7x + 6)</span></div>
-        <div class="sol-step"><span class="step-label">(iv)</span> 16x³(x² - 9) = 16x³(x - 3)(x + 3)</div>
-        <div class="sol-step"><span class="step-label">(v)</span> [(l+m) - (l-m)][(l+m) + (l-m)] = [2m][2l] = <span class="ans-highlight">4lm</span></div>
-        <div class="sol-step"><span class="step-label">(vi)</span> (3xy)² - (4)² = <span class="ans-highlight">(3xy - 4)(3xy + 4)</span></div>
-        <div class="sol-step"><span class="step-label">(vii)</span> (x - y)² - z² = <span class="ans-highlight">(x - y - z)(x - y + z)</span></div>
-        <div class="sol-step"><span class="step-label">(viii)</span> 25a² - (4b² - 28bc + 49c²) = (5a)² - (2b - 7c)² = <span class="ans-highlight">(5a - 2b + 7c)(5a + 2b - 7c)</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">3. Factorise the expressions.</div>
-      <div class="q-subtext">(i) ax² + bx</div>
-      <div class="q-subtext">(ii) 7p² + 21q²</div>
-      <div class="q-subtext">(iii) 2x³ + 2xy² + 2xz²</div>
-      <div class="q-subtext">(iv) am² + bm² + bn² + an²</div>
-      <div class="q-subtext">(v) (lm + l) + m + 1</div>
-      <div class="q-subtext">(vi) y(y + z) + 9(y + z)</div>
-      <div class="q-subtext">(vii) 5y² - 20y - 8z + 2yz</div>
-      <div class="q-subtext">(viii) 10ab + 4a + 5b + 2</div>
-      <div class="q-subtext">(ix) 6xy - 4y + 6 - 9x</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">(i)</span> x(ax + b)</div>
-        <div class="sol-step"><span class="step-label">(ii)</span> 7(p² + 3q²)</div>
-        <div class="sol-step"><span class="step-label">(iii)</span> 2x(x² + y² + z²)</div>
-        <div class="sol-step"><span class="step-label">(iv)</span> m²(a + b) + n²(a + b) = <span class="ans-highlight">(a + b)(m² + n²)</span></div>
-        <div class="sol-step"><span class="step-label">(v)</span> l(m + 1) + 1(m + 1) = <span class="ans-highlight">(m + 1)(l + 1)</span></div>
-        <div class="sol-step"><span class="step-label">(vi)</span> <span class="ans-highlight">(y + z)(y + 9)</span></div>
-        <div class="sol-step"><span class="step-label">(vii)</span> 5y(y - 4) + 2z(y - 4) = <span class="ans-highlight">(y - 4)(5y + 2z)</span></div>
-        <div class="sol-step"><span class="step-label">(viii)</span> 2a(5b + 2) + 1(5b + 2) = <span class="ans-highlight">(5b + 2)(2a + 1)</span></div>
-        <div class="sol-step"><span class="step-label">(ix)</span> 2y(3x - 2) - 3(3x - 2) = <span class="ans-highlight">(3x - 2)(2y - 3)</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">4. Factorise.</div>
-      <div class="q-subtext">(i) a⁴ - b⁴</div>
-      <div class="q-subtext">(ii) p⁴ - 81</div>
-      <div class="q-subtext">(iii) x⁴ - (y + z)⁴</div>
-      <div class="q-subtext">(iv) x⁴ - (x - z)⁴</div>
-      <div class="q-subtext">(v) a⁴ - 2a²b² + b⁴</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">(i)</span> (a²)² - (b²)² = (a² - b²)(a² + b²) = <span class="ans-highlight">(a - b)(a + b)(a² + b²)</span></div>
-        <div class="sol-step"><span class="step-label">(ii)</span> (p²)² - (9)² = (p² - 9)(p² + 9) = <span class="ans-highlight">(p - 3)(p + 3)(p² + 9)</span></div>
-        <div class="sol-step"><span class="step-label">(iii)</span> (x² - (y+z)²)(x² + (y+z)²) = <span class="ans-highlight">(x - y - z)(x + y + z)(x² + (y+z)²)</span></div>
-        <div class="sol-step"><span class="step-label">(iv)</span> (x² - (x-z)²)(x² + (x-z)²) = (x - x + z)(x + x - z)(x² + (x-z)²) = <span class="ans-highlight">z(2x - z)(x² + (x-z)²)</span></div>
-        <div class="sol-step"><span class="step-label">(v)</span> (a² - b²)² = <span class="ans-highlight">(a - b)²(a + b)²</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">5. Factorise the following expressions.</div>
-      <div class="q-subtext">(i) p² + 6p + 8</div>
-      <div class="q-subtext">(ii) q² - 10q + 21</div>
-      <div class="q-subtext">(iii) p² + 6p - 16</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">(i)</span> p² + 4p + 2p + 8 = p(p + 4) + 2(p + 4) = <span class="ans-highlight">(p + 4)(p + 2)</span></div>
-        <div class="sol-step"><span class="step-label">(ii)</span> q² - 7q - 3q + 21 = q(q - 7) - 3(q - 7) = <span class="ans-highlight">(q - 7)(q - 3)</span></div>
-        <div class="sol-step"><span class="step-label">(iii)</span> p² + 8p - 2p - 16 = p(p + 8) - 2(p + 8) = <span class="ans-highlight">(p + 8)(p - 2)</span></div>
-      </div>
-    </div>
-  </div>
-`;
-
-const ex123Content = `
-  <style>
-    .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
-    .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
-    .frac .den { padding: 0 2px; }
-    .ex-container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
-    .q-card { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 15px; margin-bottom: 25px; }
-    .q-text { color: #00BFA5; font-weight: 600; margin-bottom: 12px; }
-    .q-subtext { color: #e0e0e0; margin-bottom: 5px; margin-left: 10px; }
-    .sol-box { border-left: 3px solid #00BFA5; padding-left: 15px; margin-top: 15px; background: rgba(0, 191, 165, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; }
-    .ans-highlight { color: #00BFA5; font-weight: 700; }
-    .step-label { color: #4DB6AC; font-weight: 600; margin-right: 5px; }
-    .sol-step { margin-bottom: 8px; }
-    .q-text, .q-subtext, .sol-step, .sol-box { font-size: 16px; line-height: 1.8; }
-  </style>
-  <div class="ex-container">
-    <div class="q-card">
-      <div class="q-text">1. Carry out the following divisions.</div>
-      <div class="q-subtext">(i) 28x⁴ ÷ 56x</div>
-      <div class="q-subtext">(ii) -36y³ ÷ 9y²</div>
-      <div class="q-subtext">(iii) 66pq²r³ ÷ 11qr²</div>
-      <div class="q-subtext">(iv) 34x³y³z³ ÷ 51xy²z³</div>
-      <div class="q-subtext">(v) 12a⁸b⁸ ÷ (-6a⁶b⁴)</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">(i)</span> <span class='frac'><span class='num'>28x⁴</span><span class='den'>56x</span></span> = <span class="ans-highlight"><span class='frac'><span class='num'>x³</span><span class='den'>2</span></span></span></div>
-        <div class="sol-step"><span class="step-label">(ii)</span> <span class='frac'><span class='num'>-36y³</span><span class='den'>9y²</span></span> = <span class="ans-highlight">-4y</span></div>
-        <div class="sol-step"><span class="step-label">(iii)</span> <span class='frac'><span class='num'>66pq²r³</span><span class='den'>11qr²</span></span> = <span class="ans-highlight">6pqr</span></div>
-        <div class="sol-step"><span class="step-label">(iv)</span> <span class='frac'><span class='num'>34x³y³z³</span><span class='den'>51xy²z³</span></span> = <span class="ans-highlight"><span class='frac'><span class='num'>2</span><span class='den'>3</span></span> x²y</span></div>
-        <div class="sol-step"><span class="step-label">(v)</span> <span class='frac'><span class='num'>12a⁸b⁸</span><span class='den'>-6a⁶b⁴</span></span> = <span class="ans-highlight">-2a²b⁴</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">2. Divide the given polynomial by the given monomial.</div>
-      <div class="q-subtext">(i) (5x² - 6x) ÷ 3x</div>
-      <div class="q-subtext">(ii) (3y⁸ - 4y⁶ + 5y⁴) ÷ y⁴</div>
-      <div class="q-subtext">(iii) 8(x³y²z² + x²y³z² + x²y²z³) ÷ 4x²y²z²</div>
-      <div class="q-subtext">(iv) (x³ + 2x² + 3x) ÷ 2x</div>
-      <div class="q-subtext">(v) (p³q⁶ - p⁶q³) ÷ p³q³</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">(i)</span> <span class='frac'><span class='num'>x(5x - 6)</span><span class='den'>3x</span></span> = <span class="ans-highlight"><span class='frac'><span class='num'>5x - 6</span><span class='den'>3</span></span></span></div>
-        <div class="sol-step"><span class="step-label">(ii)</span> <span class='frac'><span class='num'>y⁴(3y⁴ - 4y² + 5)</span><span class='den'>y⁴</span></span> = <span class="ans-highlight">3y⁴ - 4y² + 5</span></div>
-        <div class="sol-step"><span class="step-label">(iii)</span> <span class='frac'><span class='num'>8x²y²z²(x + y + z)</span><span class='den'>4x²y²z²</span></span> = <span class="ans-highlight">2(x + y + z)</span></div>
-        <div class="sol-step"><span class="step-label">(iv)</span> <span class='frac'><span class='num'>x(x² + 2x + 3)</span><span class='den'>2x</span></span> = <span class="ans-highlight"><span class='frac'><span class='num'>x² + 2x + 3</span><span class='den'>2</span></span></span></div>
-        <div class="sol-step"><span class="step-label">(v)</span> <span class='frac'><span class='num'>p³q³(q³ - p³)</span><span class='den'>p³q³</span></span> = <span class="ans-highlight">q³ - p³</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">3. Work out the following divisions.</div>
-      <div class="q-subtext">(i) (10x - 25) ÷ 5</div>
-      <div class="q-subtext">(ii) (10x - 25) ÷ (2x - 5)</div>
-      <div class="q-subtext">(iii) 10y(6y + 21) ÷ 5(2y + 7)</div>
-      <div class="q-subtext">(iv) 9x²y²(3z - 24) ÷ 27xy(z - 8)</div>
-      <div class="q-subtext">(v) 96abc(3a - 12)(5b - 30) ÷ 144(a - 4)(b - 6)</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">(i)</span> <span class='frac'><span class='num'>5(2x - 5)</span><span class='den'>5</span></span> = <span class="ans-highlight">2x - 5</span></div>
-        <div class="sol-step"><span class="step-label">(ii)</span> <span class='frac'><span class='num'>5(2x - 5)</span><span class='den'>2x - 5</span></span> = <span class="ans-highlight">5</span></div>
-        <div class="sol-step"><span class="step-label">(iii)</span> <span class='frac'><span class='num'>10y[3(2y + 7)]</span><span class='den'>5(2y + 7)</span></span> = <span class='frac'><span class='num'>30y</span><span class='den'>5</span></span> = <span class="ans-highlight">6y</span></div>
-        <div class="sol-step"><span class="step-label">(iv)</span> <span class='frac'><span class='num'>9x²y²[3(z - 8)]</span><span class='den'>27xy(z - 8)</span></span> = <span class='frac'><span class='num'>27x²y²</span><span class='den'>27xy</span></span> = <span class="ans-highlight">xy</span></div>
-        <div class="sol-step"><span class="step-label">(v)</span> <span class='frac'><span class='num'>96abc[3(a - 4)][5(b - 6)]</span><span class='den'>144(a - 4)(b - 6)</span></span> = <span class='frac'><span class='num'>96abc × 15</span><span class='den'>144</span></span> = <span class="ans-highlight">10abc</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">4. Divide as directed.</div>
-      <div class="q-subtext">(i) 5(2x + 1)(3x + 5) ÷ (2x + 1)</div>
-      <div class="q-subtext">(ii) 26xy(x + 5)(y - 4) ÷ 13x(y - 4)</div>
-      <div class="q-subtext">(iii) 52pqr(p + q)(q + r)(r + p) ÷ 104pq(q + r)(r + p)</div>
-      <div class="q-subtext">(iv) 20(y + 4)(y² + 5y + 3) ÷ 5(y + 4)</div>
-      <div class="q-subtext">(v) x(x + 1)(x + 2)(x + 3) ÷ x(x + 1)</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">(i)</span> <span class="ans-highlight">5(3x + 5)</span></div>
-        <div class="sol-step"><span class="step-label">(ii)</span> <span class="ans-highlight">2y(x + 5)</span></div>
-        <div class="sol-step"><span class="step-label">(iii)</span> <span class='frac'><span class='num'>1</span><span class='den'>2</span></span> r(p + q) = <span class="ans-highlight"><span class='frac'><span class='num'>r(p + q)</span><span class='den'>2</span></span></span></div>
-        <div class="sol-step"><span class="step-label">(iv)</span> <span class="ans-highlight">4(y² + 5y + 3)</span></div>
-        <div class="sol-step"><span class="step-label">(v)</span> <span class="ans-highlight">(x + 2)(x + 3)</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">5. Factorise the expressions and divide them as directed.</div>
-      <div class="q-subtext">(i) (y² + 7y + 10) ÷ (y + 5)</div>
-      <div class="q-subtext">(ii) (m² - 14m - 32) ÷ (m + 2)</div>
-      <div class="q-subtext">(iii) (5p² - 25p + 20) ÷ (p - 1)</div>
-      <div class="q-subtext">(iv) 4yz(z² + 6z - 16) ÷ 2y(z + 8)</div>
-      <div class="q-subtext">(v) 5pq(p² - q²) ÷ 2p(p + q)</div>
-      <div class="q-subtext">(vi) 12xy(9x² - 16y²) ÷ 4xy(3x + 4y)</div>
-      <div class="q-subtext">(vii) 39y³(50y² - 98) ÷ 26y²(5y + 7)</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">(i)</span> <span class='frac'><span class='num'>(y + 5)(y + 2)</span><span class='den'>y + 5</span></span> = <span class="ans-highlight">y + 2</span></div>
-        <div class="sol-step"><span class="step-label">(ii)</span> <span class='frac'><span class='num'>(m - 16)(m + 2)</span><span class='den'>m + 2</span></span> = <span class="ans-highlight">m - 16</span></div>
-        <div class="sol-step"><span class="step-label">(iii)</span> <span class='frac'><span class='num'>5(p - 4)(p - 1)</span><span class='den'>p - 1</span></span> = <span class="ans-highlight">5(p - 4)</span></div>
-        <div class="sol-step"><span class="step-label">(iv)</span> <span class='frac'><span class='num'>4yz(z + 8)(z - 2)</span><span class='den'>2y(z + 8)</span></span> = <span class="ans-highlight">2z(z - 2)</span></div>
-        <div class="sol-step"><span class="step-label">(v)</span> <span class='frac'><span class='num'>5pq(p - q)(p + q)</span><span class='den'>2p(p + q)</span></span> = <span class="ans-highlight"><span class='frac'><span class='num'>5</span><span class='den'>2</span></span> q(p - q)</span></div>
-        <div class="sol-step"><span class="step-label">(vi)</span> <span class='frac'><span class='num'>12xy(3x - 4y)(3x + 4y)</span><span class='den'>4xy(3x + 4y)</span></span> = <span class="ans-highlight">3(3x - 4y)</span></div>
-        <div class="sol-step"><span class="step-label">(vii)</span> <span class='frac'><span class='num'>39y³ × 2(25y² - 49)</span><span class='den'>26y²(5y + 7)</span></span> = <span class='frac'><span class='num'>78y³(5y - 7)(5y + 7)</span><span class='den'>26y²(5y + 7)</span></span> = <span class="ans-highlight">3y(5y - 7)</span></div>
-      </div>
-    </div>
-  </div>
-`;
-
 export const c8Math12: ChapterContent = {
-  id: "c8-math-12",
-  number: 12,
-  title: "Factorisation",
-  introduction:
-    "Factorisation is the reverse process of multiplication. It involves breaking down a number or an algebraic expression into a product of simpler terms or 'factors'. This chapter explores various methods of factorisation including common factors, grouping, and identities.",
-  mcqs: [
+  "id": "c8-math-12",
+  "number": 12,
+  "title": "Direct and Inverse Proportions",
+  "introduction": "Variation and proportion govern how two quantities change with respect to each other. When an increase in one quantity produces a proportionate increase in another, they are in Direct Proportion (x / y = k). When an increase in one causes a proportionate decrease in the other, they are in Inverse Proportion (x × y = k). This chapter equips students with algebraic techniques to solve everyday problems in speed, time, work, scaling, and sharing.",
+  "definitions": [
     {
-      id: "m1",
-      question: "The common factor of 2y and 22xy is:",
-      options: ["2", "y", "2y", "22"],
-      correctAnswer: "C",
+      "term": "Direct Proportion",
+      "description": "Two quantities x and y vary directly if their ratio x/y remains constant (x/y = k) for all corresponding pairs."
     },
     {
-      id: "m2",
-      question: "Factorisation of x² + xy is:",
-      options: ["x(x+y)", "y(x+y)", "xy(x+1)", "x+y"],
-      correctAnswer: "A",
+      "term": "Inverse Proportion",
+      "description": "Two quantities x and y vary inversely if their product x × y remains constant (xy = k) for all corresponding pairs."
     },
     {
-      id: "m3",
-      question: "(a+b)² is equal to:",
-      options: ["a² + b²", "a² + 2ab + b²", "a² - 2ab + b²", "a² + ab + b²"],
-      correctAnswer: "B",
+      "term": "Constant of Variation (k)",
+      "description": "The fixed non-zero numerical value representing the ratio (in direct) or product (in inverse) between two variables."
     },
     {
-      id: "m4",
-      question: "a² - b² is equal to:",
-      options: ["(a-b)²", "(a+b)²", "(a-b)(a+b)", "a² + b²"],
-      correctAnswer: "C",
-    },
-    {
-      id: "m5",
-      question: "Factors of x² + 5x + 6 are:",
-      options: ["(x+1)(x+6)", "(x+2)(x+3)", "(x-2)(x-3)", "(x+5)(x+1)"],
-      correctAnswer: "B",
-    },
-    {
-      id: "m6",
-      question: "Common factor of 12x and 36 is:",
-      options: ["12", "x", "3", "6"],
-      correctAnswer: "A",
-    },
-    {
-      id: "m7",
-      question: "Factorisation of 7x - 42 is:",
-      options: ["7(x-42)", "7(x-6)", "x(7-42)", "42(x-7)"],
-      correctAnswer: "B",
-    },
-    {
-      id: "m8",
-      question: "Divide 10x by 5, the result is:",
-      options: ["2x", "5x", "x/2", "2"],
-      correctAnswer: "A",
-    },
-    {
-      id: "m9",
-      question: "The value of 101² - 99² is:",
-      options: ["400", "200", "401", "399"],
-      correctAnswer: "A",
-    },
-    {
-      id: "m10",
-      question: "Which of the following is a factor of x² - 4?",
-      options: ["x-4", "x+4", "x-2", "x+1"],
-      correctAnswer: "C",
-    },
+      "term": "Map Scale",
+      "description": "The ratio of the distance between two points on a map to the actual corresponding distance on the ground."
+    }
   ],
-  summary: [
-    "When we factorise an algebraic expression, we write it as a product of factors. These factors may be numbers, algebraic variables or algebraic expressions.",
-    "Methods of factorisation: Common factors, Regrouping terms, Using Identities.",
-    "Important Identities: (a+b)² = a² + 2ab + b², (a-b)² = a² - 2ab + b², a² - b² = (a-b)(a+b).",
-    "Division of expressions: Polynomial ÷ Monomial and Polynomial ÷ Polynomial.",
+  "keyPoints": [
+    "Two quantities x and y are in direct proportion if x / y = k (constant) or x₁ / y₁ = x₂ / y₂.",
+    "Cross-multiplication rule for direct proportion: x₁ × y₂ = x₂ × y₁.",
+    "Two quantities x and y are in inverse proportion if x × y = k (constant) or x₁ × y₁ = x₂ × y₂.",
+    "More workers on a task results in fewer days to complete the task (Inverse variation).",
+    "At uniform speed, distance travelled is directly proportional to time taken (Direct variation).",
+    "For a fixed distance, speed and travel time are inversely proportional (Inverse variation).",
+    "In a circle, the number of equal spokes and the angle between consecutive spokes are in inverse proportion: Spokes × Angle = 360°."
   ],
-  exercises: [
-    { id: "ex12-1", name: "Exercise 12.1", questions: [] },
-    { id: "ex12-2", name: "Exercise 12.2", questions: [] },
-    { id: "ex12-3", name: "Exercise 12.3", questions: [] },
+  "formulas": [
+    {
+      "name": "Direct Proportion Ratio",
+      "formula": "x / y = k (constant)"
+    },
+    {
+      "name": "Direct Proportion Working Formula",
+      "formula": "x₁ / y₁ = x₂ / y₂"
+    },
+    {
+      "name": "Direct Cross-Multiplication",
+      "formula": "x₁ × y₂ = x₂ × y₁"
+    },
+    {
+      "name": "Inverse Proportion Product",
+      "formula": "x × y = k (constant)"
+    },
+    {
+      "name": "Inverse Proportion Working Formula",
+      "formula": "x₁ × y₁ = x₂ × y₂"
+    },
+    {
+      "name": "Map Scaling Formula",
+      "formula": "Map Distance / Actual Distance = Scale"
+    },
+    {
+      "name": "Wheel Spokes & Central Angle",
+      "formula": "Number of Spokes × Angle = 360°"
+    }
   ],
-  isHtmlView: true,
-  htmlOverview: `
-    <style>
-      .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
-      .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
-      .frac .den { padding: 0 2px; }
-      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
-      
-      .premium-container {
-        padding: 20px;
-        color: #ffffff;
-        font-family: 'Outfit', sans-serif !important;
-        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-        border-radius: 20px;
-        margin: 10px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-      }
-
-      .section-box {
-        background: rgba(255, 255, 255, 0.05);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 15px;
-        padding: 20px;
-        margin-bottom: 20px;
-        backdrop-filter: blur(10px);
-      }
-
-      .section-header {
-        color: #00BFA5;
-        font-size: 20px;
-        font-weight: 600;
-        margin-bottom: 15px;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-      }
-
-      .prop-table {
-        width: 100%;
-        border-collapse: collapse;
-        background: rgba(0,0,0,0.2);
-        overflow: hidden;
-        min-width: 300px;
-      }
-
-      .prop-table th, .prop-table td {
-        padding: 10px;
-        border: 1px solid rgba(255,255,255,0.1);
-        text-align: left;
-        font-size: 15px;
-      }
-
-      .prop-table th {
-        background: rgba(255,255,255,0.1);
-        color: #4DB6AC;
-        font-weight: 700;
-      }
-
-      .table-container { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; border-radius: 12px; margin-top: 10px; border: 1px solid rgba(255,255,255,0.1); }
-
-      .highlight { color: #4DB6AC; font-weight: 600; }
-      
-      .intro-text {
-        line-height: 1.6;
-        font-size: 16px;
-        color: #e0e0e0;
-        text-align: justify;
-      }
-    </style>
-
-    <div class="premium-container">
-      <div class="section-box">
-        <div class="section-header"><span>✦</span> Introduction</div>
-        <div class="intro-text">
-          Factorisation is the reverse process of multiplication. It involves breaking down a number or an algebraic expression into a product of simpler terms or 'factors'. This chapter explores various methods of factorisation including common factors, grouping, and identities.
-        </div>
-      </div>
-      <div class="section-box">
-        <div class="section-header"><span>✦</span> Key Identities</div>
-      <div class="table-container">
-        <table class="prop-table">
-          <tr>
-            <th>Identity Name</th>
-            <th>Formula</th>
-          </tr>
-          <tr>
-            <td><strong>Square of Sum</strong></td>
-            <td><span class="highlight">(a + b)² = a² + 2ab + b²</span></td>
-          </tr>
-          <tr>
-            <td><strong>Square of Difference</strong></td>
-            <td><span class="highlight">(a - b)² = a² - 2ab + b²</span></td>
-          </tr>
-          <tr>
-            <td><strong>Difference of Squares</strong></td>
-            <td><span class="highlight">a² - b² = (a - b)(a + b)</span></td>
-          </tr>
-          <tr>
-            <td><strong>Trinomial Product</strong></td>
-            <td><span class="highlight">(x + a)(x + b) = x² + (a+b)x + ab</span></td>
-          </tr>
-        </table>
-      </div>
-      </div>
-    </div>
-  `,
-  htmlExercises: {
-    "ex12-1": ex121Content,
-    "ex12-2": ex122Content,
-    "ex12-3": ex123Content,
-  },
+  "crux": [],
+  "exercises": [
+    {
+      "id": "ex12-1",
+      "name": "Exercise 12.1",
+      "questions": [
+        {
+          "id": "c8-m12-ex12-1-q1",
+          "number": "1",
+          "question": "The following are the car parking charges near a railway station up to: 4 hours - Rs 60, 8 hours - Rs 100, 12 hours - Rs 140, 24 hours - Rs 180. Check if the parking charges are in direct proportion to the parking time.",
+          "solution": [
+            "See evaluation of charge per hour ratios in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m12-ex12-1-q2",
+          "number": "2",
+          "question": "A mixture of paint is prepared by mixing 1 part of red pigments with 8 parts of the base. In the following table, find the parts of the base that need to be added (for 1, 4, 7, 12, 20 parts of red pigment).",
+          "solution": [
+            "See constant ratio calculations in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m12-ex12-1-q3",
+          "number": "3",
+          "question": "In Question 2 above, if 1 part of a red pigment requires 75 mL of the base, how much red pigment should we mix with 1800 mL of the base?",
+          "solution": [
+            "See direct proportion proportion solving in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m12-ex12-1-q4",
+          "number": "4",
+          "question": "A machine in a soft drink factory fills 840 bottles in six hours. How many bottles will it fill in five hours?",
+          "solution": [
+            "See direct proportion calculation in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m12-ex12-1-q5",
+          "number": "5",
+          "question": "A photograph of a bacteria enlarged 50,000 times attains a length of 5 cm, as shown in the diagram. What is the actual length of the bacteria? If the photograph is enlarged 20,000 times only, what would be its enlarged length?",
+          "solution": [
+            "See actual size and magnification ratio calculations in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m12-ex12-1-q6",
+          "number": "6",
+          "question": "In a model of a ship, the mast is 9 cm high, while the mast of the actual ship is 12 m high. If the length of the ship is 28 m, how long is the model ship?",
+          "solution": [
+            "See model to actual scaling proportion in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m12-ex12-1-q7",
+          "number": "7",
+          "question": "Suppose 2 kg of sugar contains 9 × 10⁶ crystals. How many sugar crystals are there in: (i) 5 kg of sugar? (ii) 1.2 kg of sugar?",
+          "solution": [
+            "See scientific notation and direct proportion evaluation in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m12-ex12-1-q8",
+          "number": "8",
+          "question": "Rashmi has a road map with a scale of 1 cm representing 18 km. She drives on the road for 72 km. What would be her distance covered on the map?",
+          "solution": [
+            "See map scale proportion solving in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m12-ex12-1-q9",
+          "number": "9",
+          "question": "A 5 m 60 cm high vertical pole casts a shadow 3 m 20 cm long. Find at the same time: (i) the length of the shadow cast by another pole 10 m 50 cm high (ii) the height of a pole which casts a shadow 5 m long.",
+          "solution": [
+            "See unit conversion to cm and simultaneous shadow calculations in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m12-ex12-1-q10",
+          "number": "10",
+          "question": "A loaded truck travels 14 km in 25 minutes. If the speed remains the same, how far can it travel in 5 hours?",
+          "solution": [
+            "See time conversion to minutes and direct distance calculation in the interactive Web View."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex12-2",
+      "name": "Exercise 12.2",
+      "questions": [
+        {
+          "id": "c8-m12-ex12-2-q1",
+          "number": "1",
+          "question": "Which of the following are in inverse proportion? (i) Number of workers on a job and time to complete the job (ii) Time taken for journey and distance travelled at uniform speed (iii) Area of cultivated land and crop harvested (iv) Time taken for fixed journey and speed of vehicle (v) Population of country and area of land per person.",
+          "solution": [
+            "See conceptual justification for each relationship in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m12-ex12-2-q2",
+          "number": "2",
+          "question": "In a Television game show, the prize money of Rs 1,00,000 is to be divided equally amongst the winners. Complete the table and find whether the prize money given to an individual winner is directly or inversely proportional to the number of winners (for 1, 2, 4, 5, 8, 10, 20 winners).",
+          "solution": [
+            "See constant product inverse variation table calculations in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m12-ex12-2-q3",
+          "number": "3",
+          "question": "Rehman is making a wheel using spokes. He wants to fix equal spokes in such a way that the angles between any pair of consecutive spokes are equal. Help him by completing the table (for 4, 6, 8, 10, 12 spokes), and answer sub-parts (i), (ii), (iii).",
+          "solution": [
+            "See 360-degree angle distribution and inverse proportion solving in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m12-ex12-2-q4",
+          "number": "4",
+          "question": "If a box of sweets is divided among 24 children, they will get 5 sweets each. How many would each get, if the number of children is reduced by 4?",
+          "solution": [
+            "See total sweets conservation and inverse calculation in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m12-ex12-2-q5",
+          "number": "5",
+          "question": "A farmer has enough food to feed 20 animals in his cattle for 6 days. How long would the food last if there were 10 more animals in his cattle?",
+          "solution": [
+            "See animal-days product conservation in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m12-ex12-2-q6",
+          "number": "6",
+          "question": "A contractor estimates that 3 persons could rewire Jasminder's house in 4 days. If he uses 4 persons instead of three, how long should they take to complete the job?",
+          "solution": [
+            "See person-days work conservation in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m12-ex12-2-q7",
+          "number": "7",
+          "question": "A batch of bottles was packed in 25 boxes, with 12 bottles in each box. If the same batch is packed using 20 bottles in each box, how many boxes would be filled?",
+          "solution": [
+            "See batch total conservation and boxes evaluation in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m12-ex12-2-q8",
+          "number": "8",
+          "question": "A factory requires 42 machines to produce a given number of articles in 63 days. How many machines would be required to produce the same number of articles in 54 days?",
+          "solution": [
+            "See machine-days product conservation in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m12-ex12-2-q9",
+          "number": "9",
+          "question": "A car takes 2 hours to reach a destination by travelling at the speed of 60 km/hr. How long will it take when the car travels at the speed of 80 km/hr?",
+          "solution": [
+            "See speed-time inverse variation in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m12-ex12-2-q10",
+          "number": "10",
+          "question": "Two persons could fit new windows in a house in 3 days. (i) One of the persons fell ill before the work started. How long would the job take now? (ii) How many persons would be needed to fit the windows in one day?",
+          "solution": [
+            "See person-days work conservation sub-problems in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m12-ex12-2-q11",
+          "number": "11",
+          "question": "A school has 8 periods a day, each of 45 minutes duration. How long would each period be, if the school has 9 periods a day, assuming the number of school hours to be the same?",
+          "solution": [
+            "See total school minutes conservation in the interactive Web View."
+          ]
+        }
+      ]
+    }
+  ],
+  "examples": [],
+  "mcqs": [
+    {
+      "id": "c8-m12-mcq-1",
+      "question": "If two quantities x and y are in direct proportion, which relation is always constant?",
+      "options": [
+        "A):   x + y",
+        "B):   x / y",
+        "C):   x × y",
+        "D):   x - y"
+      ],
+      "correctAnswer": "B",
+      "explanation": "In direct proportion, the ratio between corresponding values remains constant, i.e., x / y = k."
+    },
+    {
+      "id": "c8-m12-mcq-2",
+      "question": "If two quantities x and y vary inversely, which relation is always constant?",
+      "options": [
+        "A):   x × y",
+        "B):   x / y",
+        "C):   x + y",
+        "D):   x² + y²"
+      ],
+      "correctAnswer": "A",
+      "explanation": "In inverse proportion, the product of corresponding values remains constant, i.e., x × y = k."
+    },
+    {
+      "id": "c8-m12-mcq-3",
+      "question": "If 15 metres of cloth costs Rs 195, how much will 10 metres of the same cloth cost?",
+      "options": [
+        "A):   Rs 150",
+        "B):   Rs 120",
+        "C):   Rs 130",
+        "D):   Rs 140"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Direct proportion: 195 / 15 = x / 10 ⟹ x = 13 × 10 = Rs 130."
+    },
+    {
+      "id": "c8-m12-mcq-4",
+      "question": "If 8 workers can build a wall in 12 days, in how many days can 16 workers build the same wall?",
+      "options": [
+        "A):   24 days",
+        "B):   6 days",
+        "C):   8 days",
+        "D):   4 days"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Inverse proportion: 8 × 12 = 16 × d ⟹ 96 = 16d ⟹ d = 96 / 16 = 6 days."
+    },
+    {
+      "id": "c8-m12-mcq-5",
+      "question": "On a map, 1 cm represents 25 km on the ground. Two cities are 5 cm apart on the map. What is the actual distance between them?",
+      "options": [
+        "A):   125 km",
+        "B):   100 km",
+        "C):   50 km",
+        "D):   250 km"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Direct proportion: Actual distance = 5 × 25 km = 125 km."
+    },
+    {
+      "id": "c8-m12-mcq-6",
+      "question": "If x and y are in inverse proportion, and x = 10 when y = 6, what is y when x = 15?",
+      "options": [
+        "A):   9",
+        "B):   5",
+        "C):   4",
+        "D):   8"
+      ],
+      "correctAnswer": "C",
+      "explanation": "x₁y₁ = x₂y₂ ⟹ 10 × 6 = 15 × y ⟹ 60 = 15y ⟹ y = 4."
+    },
+    {
+      "id": "c8-m12-mcq-7",
+      "question": "A car covers a fixed distance in 2 hours at 60 km/h. How long will it take at 80 km/h?",
+      "options": [
+        "A):   2.5 hours",
+        "B):   1.5 hours",
+        "C):   1 hour",
+        "D):   3 hours"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Distance = 60 × 2 = 120 km. At 80 km/h: time = 120 / 80 = 1.5 hours (1 hour 30 minutes)."
+    },
+    {
+      "id": "c8-m12-mcq-8",
+      "question": "Which of the following pairs represents inverse variation?",
+      "options": [
+        "A):   Number of books bought and their total price",
+        "B):   Speed of vehicle and time taken for a fixed distance",
+        "C):   Distance travelled and petrol consumed",
+        "D):   Age of a person and their height"
+      ],
+      "correctAnswer": "B",
+      "explanation": "As speed increases, the time required to cover a fixed distance decreases proportionally."
+    },
+    {
+      "id": "c8-m12-mcq-9",
+      "question": "If 12 pipes can fill a swimming pool in 5 hours, how many hours will 10 pipes take to fill the same pool?",
+      "options": [
+        "A):   4 hours",
+        "B):   7 hours",
+        "C):   6 hours",
+        "D):   8 hours"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Inverse proportion: 12 × 5 = 10 × t ⟹ 60 = 10t ⟹ t = 6 hours."
+    },
+    {
+      "id": "c8-m12-mcq-10",
+      "question": "Rehman fixes 10 equal spokes in a cycle wheel. The angle between any pair of consecutive spokes is:",
+      "options": [
+        "A):   36°",
+        "B):   45°",
+        "C):   30°",
+        "D):   60°"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Total angle around center is 360°. For 10 spokes: angle = 360° / 10 = 36°."
+    },
+    {
+      "id": "c8-m12-mcq-11",
+      "question": "If a machine fills 840 bottles in 6 hours, how many bottles does it fill in 1 hour?",
+      "options": [
+        "A):   120",
+        "B):   140",
+        "C):   160",
+        "D):   100"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Rate = 840 / 6 = 140 bottles per hour."
+    },
+    {
+      "id": "c8-m12-mcq-12",
+      "question": "A box of sweets is divided among 20 children and each gets 6 sweets. If the number of children is 24, how many sweets will each get?",
+      "options": [
+        "A):   4",
+        "B):   7",
+        "C):   5",
+        "D):   8"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Total sweets = 20 × 6 = 120. For 24 children: sweets each = 120 / 24 = 5 sweets."
+    },
+    {
+      "id": "c8-m12-mcq-13",
+      "question": "If the weight of 12 sheets of thick paper is 40 grams, how many sheets of the same paper will weigh 2500 grams?",
+      "options": [
+        "A):   750",
+        "B):   800",
+        "C):   600",
+        "D):   700"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Direct proportion: 12 / 40 = x / 2500 ⟹ x = (12 × 2500) / 40 = 750 sheets."
+    },
+    {
+      "id": "c8-m12-mcq-14",
+      "question": "A school has 8 periods of 45 minutes each. If there are 9 periods in the same school hours, what will be the duration of each period?",
+      "options": [
+        "A):   35 minutes",
+        "B):   40 minutes",
+        "C):   50 minutes",
+        "D):   38 minutes"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Inverse proportion: 8 × 45 = 9 × d ⟹ 360 = 9d ⟹ d = 40 minutes."
+    },
+    {
+      "id": "c8-m12-mcq-15",
+      "question": "If 3 persons can rewire a house in 4 days, how many persons can do the same job in 1 day?",
+      "options": [
+        "A):   7 persons",
+        "B):   12 persons",
+        "C):   6 persons",
+        "D):   9 persons"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Total work = 3 × 4 = 12 person-days. To complete in 1 day: 12 / 1 = 12 persons are needed."
+    }
+  ],
+  "summary": [
+    "Two quantities x and y are in direct proportion if x / y = k (ratio is constant).",
+    "Two quantities x and y are in inverse proportion if x × y = k (product is constant).",
+    "Direct proportion problems are solved using x₁ / y₁ = x₂ / y₂.",
+    "Inverse proportion problems are solved using x₁y₁ = x₂y₂."
+  ],
+  "isHtmlView": true,
+  "htmlOverview": "\n\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; text-align: center; }\n  .frac .den { padding: 1px 4px; text-align: center; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(0, 188, 212, 0.4); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 18px; font-weight: 800; color: #00BCD4; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 16px; font-weight: 500; text-align: left !important; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(0, 188, 212, 0.25); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; text-align: left !important; }\n  .sol-box { background: rgba(0, 0, 0, 0.35); border-left: 3.5px solid #00BCD4; border-radius: 8px; padding: 14px 16px; margin-top: 12px; text-align: left !important; }\n  .sol-title { font-size: 15.5px; font-weight: 800; color: #00BCD4; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; text-align: left !important; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; text-align: left !important; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(0, 188, 212, 0.15); border: 1px solid #00BCD4; color: #80DEEA; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 4px 2px; }\n  \n  /* Diagram Wrapper: Pure Crisp White Canvas, Beautiful Shadow */\n  .diagram-wrapper { display: block; background: #FFFFFF; border: 1.5px solid rgba(0, 188, 212, 0.45); border-radius: 10px; padding: 12px 10px; margin: 14px auto 8px auto; width: 100%; max-width: 440px; box-sizing: border-box; overflow: hidden; box-shadow: 0 4px 18px rgba(0,0,0,0.35); text-align: center; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; font-weight: 600; text-align: center; margin-top: 8px; margin-bottom: 14px; line-height: 1.45; }\n\n  /* Table styling */\n  .table-card { background: rgba(15, 23, 42, 0.95); border: 1.5px solid #00BCD4; border-radius: 10px; padding: 10px 8px; margin: 16px 0; overflow-x: auto; box-shadow: 0 4px 18px rgba(0,0,0,0.35); -webkit-overflow-scrolling: touch; }\n  .styled-table { width: 100%; border-collapse: collapse; color: #F8FAFC; font-size: 13px; text-align: center; }\n  .styled-table th { background: rgba(0, 188, 212, 0.22); color: #00E5FF; font-weight: 700; padding: 9px 8px; border: 1px solid rgba(0, 188, 212, 0.4); font-size: 13px; white-space: nowrap; }\n  .styled-table td { padding: 7px 8px; border: 1px solid rgba(255, 255, 255, 0.12); font-weight: 500; font-size: 12.5px; color: #E2E8F0; }\n  .styled-table tr:nth-child(even) td { background: rgba(255, 255, 255, 0.03); }\n  .styled-table td.col-label { font-weight: 700; white-space: nowrap; text-align: left; padding-left: 12px; color: #80DEEA; }\n  .styled-table td.highlight-cell { color: #A5D6A7; font-weight: 700; }\n</style>\n\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Hero Header -->\n  <div style=\"background: linear-gradient(135deg, rgba(0, 188, 212, 0.25), rgba(0, 150, 136, 0.15)); border: 1.5px solid #00BCD4; border-radius: 14px; padding: 18px; margin-bottom: 20px; text-align: center;\">\n    <div style=\"font-size: 22px; font-weight: 800; color: #00BCD4; margin-bottom: 6px;\">\n      ⚖️ Chapter 12: Direct and Inverse Proportions\n    </div>\n    <div style=\"color: #CBD5E1; font-size: 14.5px; line-height: 1.5;\">\n      Class 8 NCERT Mathematics &bull; Complete Reference Guide &amp; Master Formula Cheat Sheet\n    </div>\n  </div>\n\n  <!-- 1. What is Proportion? -->\n  <div class=\"q-card\">\n    <div class=\"q-title\" style=\"color: #00BCD4; font-size: 18px; font-weight: 800;\">✦ 1. Concept of Variation &amp; Proportion</div>\n    <div class=\"q-text\">\n      In daily life, we frequently observe that a change in one quantity brings about a change in another related quantity. Such relationships between two variables <b><i>x</i></b> and <b><i>y</i></b> are studied under <b>Variation / Proportion</b>.\n    </div>\n    <div class=\"sol-box\">\n      <div style=\"color: #FFFFFF; font-size: 14.5px; line-height: 1.8;\">\n        &bull; <i>More articles purchased &rArr; More total cost</i> (Direct).<br/>\n        &bull; <i>More speed of a car &rArr; Less time taken to cover a fixed distance</i> (Inverse).<br/>\n        &bull; <i>More workers employed on a job &rArr; Less days required to finish the job</i> (Inverse).<br/>\n        &bull; <i>More time spent driving at constant speed &rArr; More distance covered</i> (Direct).\n      </div>\n    </div>\n  </div>\n\n  <!-- 2. Direct Proportion -->\n  <div class=\"q-card\">\n    <div class=\"q-title\" style=\"color: #00BCD4; font-size: 18px; font-weight: 800;\">✦ 2. Direct Proportion (Direct Variation)</div>\n    <div class=\"q-text\">\n      Two quantities <i>x</i> and <i>y</i> are said to be in <b>Direct Proportion</b> if an increase (or decrease) in <i>x</i> causes a proportional increase (or decrease) in <i>y</i> such that their <b>ratio remains constant</b>:\n      <div style=\"margin: 12px 0; text-align: center;\">\n        <span class=\"prop-chip\" style=\"font-size: 17px; padding: 7px 18px;\">\n          <b><span class=\"frac\"><span class=\"num\"><i>x</i></span><span class=\"den\"><i>y</i></span></span> = <i>k</i> &nbsp;&nbsp;(constant) &nbsp;&rArr;&nbsp; <span class=\"frac\"><span class=\"num\"><i>x</i><sub>1</sub></span><span class=\"den\"><i>y</i><sub>1</sub></span></span> = <span class=\"frac\"><span class=\"num\"><i>x</i><sub>2</sub></span><span class=\"den\"><i>y</i><sub>2</sub></span></span></b>\n        </span>\n      </div>\n    </div>\n\n    <!-- Diagram Card: Direct vs Inverse Comparison -->\n    <div class=\"diagram-wrapper\">\n      <svg width=\"100%\" height=\"auto\" viewBox=\"0 0 400 155\" style=\"display:block; width:100%; height:auto;\">\n        <rect width=\"100%\" height=\"100%\" fill=\"#FFFFFF\" rx=\"8\"/>\n        \n        <!-- Direct Card -->\n        <g transform=\"translate(15, 15)\">\n          <rect x=\"0\" y=\"0\" width=\"175\" height=\"125\" rx=\"6\" fill=\"#E0F7FA\" stroke=\"#00838F\" stroke-width=\"2\"/>\n          <text x=\"87\" y=\"26\" font-size=\"14\" font-weight=\"900\" fill=\"#006064\" text-anchor=\"middle\">Direct Proportion</text>\n          <text x=\"87\" y=\"52\" font-size=\"16\" font-weight=\"900\" fill=\"#00838F\" text-anchor=\"middle\">x / y = k (constant)</text>\n          <line x1=\"20\" y1=\"85\" x2=\"155\" y2=\"85\" stroke=\"#00838F\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\"/>\n          <text x=\"87\" y=\"105\" font-size=\"12\" font-weight=\"800\" fill=\"#004D40\" text-anchor=\"middle\">x₁ / y₁ = x₂ / y₂</text>\n        </g>\n\n        <!-- Inverse Card -->\n        <g transform=\"translate(210, 15)\">\n          <rect x=\"0\" y=\"0\" width=\"175\" height=\"125\" rx=\"6\" fill=\"#FFF3E0\" stroke=\"#E65100\" stroke-width=\"2\"/>\n          <text x=\"87\" y=\"26\" font-size=\"14\" font-weight=\"900\" fill=\"#BF360C\" text-anchor=\"middle\">Inverse Proportion</text>\n          <text x=\"87\" y=\"52\" font-size=\"16\" font-weight=\"900\" fill=\"#E65100\" text-anchor=\"middle\">x &times; y = k (constant)</text>\n          <line x1=\"20\" y1=\"85\" x2=\"155\" y2=\"85\" stroke=\"#E65100\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\"/>\n          <text x=\"87\" y=\"105\" font-size=\"12\" font-weight=\"800\" fill=\"#BF360C\" text-anchor=\"middle\">x₁ &times; y₁ = x₂ &times; y₂</text>\n        </g>\n      </svg>\n    </div>\n    <div class=\"diagram-caption\">Core Comparison: Direct Proportion preserves ratio &bull; Inverse Proportion preserves product</div>\n\n    <div class=\"sol-box\">\n      <div style=\"color: #FFFFFF; font-size: 14.5px; line-height: 1.8;\">\n        &bull; <i>Test for Direct Proportion:</i> Calculate <span class=\"frac\"><span class=\"num\"><i>x</i></span><span class=\"den\"><i>y</i></span></span> for all observations. If all ratios are equal (<span class=\"frac\"><span class=\"num\"><i>x</i><sub>1</sub></span><span class=\"den\"><i>y</i><sub>1</sub></span></span> = <span class=\"frac\"><span class=\"num\"><i>x</i><sub>2</sub></span><span class=\"den\"><i>y</i><sub>2</sub></span></span> = ...), the variables are in direct proportion.<br/>\n        &bull; <i>Cross-Multiplication Rule:</i> <b><i>x</i><sub>1</sub> &times; <i>y</i><sub>2</sub> = <i>x</i><sub>2</sub> &times; <i>y</i><sub>1</sub></b>.\n      </div>\n    </div>\n  </div>\n\n  <!-- 3. Inverse Proportion -->\n  <div class=\"q-card\">\n    <div class=\"q-title\" style=\"color: #00BCD4; font-size: 18px; font-weight: 800;\">✦ 3. Inverse Proportion (Indirect Variation)</div>\n    <div class=\"q-text\">\n      Two quantities <i>x</i> and <i>y</i> are said to be in <b>Inverse Proportion</b> if an increase in <i>x</i> causes a proportional decrease in <i>y</i> (or vice versa) such that their <b>product remains constant</b>:\n      <div style=\"margin: 12px 0; text-align: center;\">\n        <span class=\"prop-chip\" style=\"font-size: 17px; padding: 7px 18px;\">\n          <b><i>x</i> &times; <i>y</i> = <i>k</i> &nbsp;&nbsp;(constant) &nbsp;&rArr;&nbsp; <i>x</i><sub>1</sub><i>y</i><sub>1</sub> = <i>x</i><sub>2</sub><i>y</i><sub>2</sub></b>\n        </span>\n      </div>\n    </div>\n    <div class=\"sol-box\">\n      <div style=\"color: #FFFFFF; font-size: 14.5px; line-height: 1.8;\">\n        &bull; <i>Test for Inverse Proportion:</i> Multiply corresponding pairs <i>x</i> &times; <i>y</i>. If the product is identical for all columns (<i>x</i><sub>1</sub><i>y</i><sub>1</sub> = <i>x</i><sub>2</sub><i>y</i><sub>2</sub> = ...), the quantities are in inverse proportion.<br/>\n        &bull; <i>Key Formula:</i> <b><i>x</i><sub>2</sub> = <span class=\"frac\"><span class=\"num\"><i>x</i><sub>1</sub><i>y</i><sub>1</sub></span><span class=\"den\"><i>y</i><sub>2</sub></span></span></b> &nbsp;or&nbsp; <b><i>y</i><sub>2</sub> = <span class=\"frac\"><span class=\"num\"><i>x</i><sub>1</sub><i>y</i><sub>1</sub></span><span class=\"den\"><i>x</i><sub>2</sub></span></span></b>.\n      </div>\n    </div>\n  </div>\n\n  <!-- 4. Master Comparison Matrix -->\n  <div class=\"q-card\">\n    <div class=\"q-title\" style=\"color: #00BCD4; font-size: 18px; font-weight: 800;\">✦ 4. Master Comparison Matrix: Direct vs Inverse</div>\n    <div class=\"table-card\">\n      <table class=\"styled-table\">\n        <thead>\n          <tr>\n            <th>Feature</th>\n            <th>Direct Proportion</th>\n            <th>Inverse Proportion</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr>\n            <td class=\"col-label\">Definition</td>\n            <td>Both increase together or decrease together</td>\n            <td>One increases while the other decreases proportionally</td>\n          </tr>\n          <tr>\n            <td class=\"col-label\">Constant Quantity</td>\n            <td class=\"highlight-cell\">Ratio is constant: <span class=\"frac\"><span class=\"num\"><i>x</i></span><span class=\"den\"><i>y</i></span></span> = <i>k</i></td>\n            <td class=\"highlight-cell\">Product is constant: <i>x</i> &times; <i>y</i> = <i>k</i></td>\n          </tr>\n          <tr>\n            <td class=\"col-label\">Working Formula</td>\n            <td><span class=\"frac\"><span class=\"num\"><i>x</i><sub>1</sub></span><span class=\"den\"><i>y</i><sub>1</sub></span></span> = <span class=\"frac\"><span class=\"num\"><i>x</i><sub>2</sub></span><span class=\"den\"><i>y</i><sub>2</sub></span></span></td>\n            <td><i>x</i><sub>1</sub><i>y</i><sub>1</sub> = <i>x</i><sub>2</sub><i>y</i><sub>2</sub></td>\n          </tr>\n          <tr>\n            <td class=\"col-label\">Real-World Examples</td>\n            <td>\n              &bull; Distance vs Time (constant speed)<br/>\n              &bull; Articles bought vs Total cost<br/>\n              &bull; Height of pole vs Length of shadow\n            </td>\n            <td>\n              &bull; Speed vs Time (fixed distance)<br/>\n              &bull; Number of workers vs Days to finish<br/>\n              &bull; Number of spokes vs Angle between them\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n  </div>\n\n  <!-- 5. Master Revision Formula Cheat Sheet -->\n  <div class=\"q-card\" style=\"border-color: #00BCD4;\">\n    <div class=\"q-title\" style=\"color: #00BCD4; font-size: 18px; font-weight: 800;\">✦ 5. Master Revision Formula Cheat Sheet</div>\n    <div style=\"font-size: 15px; color: #FFFFFF; line-height: 2.1;\">\n      &bull; <b>Direct Proportion Formula:</b> <span class=\"frac\"><span class=\"num\"><i>x</i><sub>1</sub></span><span class=\"den\"><i>y</i><sub>1</sub></span></span> = <span class=\"frac\"><span class=\"num\"><i>x</i><sub>2</sub></span><span class=\"den\"><i>y</i><sub>2</sub></span></span> &rArr; <b><i>x</i><sub>1</sub><i>y</i><sub>2</sub> = <i>x</i><sub>2</sub><i>y</i><sub>1</sub></b>.<br/>\n      &bull; <b>Inverse Proportion Formula:</b> <b><i>x</i><sub>1</sub> &times; <i>y</i><sub>1</sub> = <i>x</i><sub>2</sub> &times; <i>y</i><sub>2</sub></b>.<br/>\n      &bull; <b>Map Scale:</b> Scale = <span class=\"frac\"><span class=\"num\">Distance on map</span><span class=\"den\">Actual distance on ground</span></span> (Always in same units!).<br/>\n      &bull; <b>Spokes &amp; Angle of Wheel:</b> Number of spokes &times; Angle between consecutive spokes = <b>360&deg;</b>.<br/>\n      &bull; <b>Work &amp; Time:</b> Number of workers &times; Time taken = <b>Total Work</b> (Constant).<br/>\n      &bull; <b>Speed &amp; Time:</b> Speed &times; Time = <b>Distance</b> (Constant).\n    </div>\n  </div>\n\n</div>\n",
+  "htmlExercises": {
+    "ex12-1": "\n\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; text-align: center; }\n  .frac .den { padding: 1px 4px; text-align: center; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(0, 188, 212, 0.4); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 18px; font-weight: 800; color: #00BCD4; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 16px; font-weight: 500; text-align: left !important; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(0, 188, 212, 0.25); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; text-align: left !important; }\n  .sol-box { background: rgba(0, 0, 0, 0.35); border-left: 3.5px solid #00BCD4; border-radius: 8px; padding: 14px 16px; margin-top: 12px; text-align: left !important; }\n  .sol-title { font-size: 15.5px; font-weight: 800; color: #00BCD4; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; text-align: left !important; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; text-align: left !important; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(0, 188, 212, 0.15); border: 1px solid #00BCD4; color: #80DEEA; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 4px 2px; }\n  \n  /* Diagram Wrapper: Pure Crisp White Canvas, Beautiful Shadow */\n  .diagram-wrapper { display: block; background: #FFFFFF; border: 1.5px solid rgba(0, 188, 212, 0.45); border-radius: 10px; padding: 12px 10px; margin: 14px auto 8px auto; width: 100%; max-width: 440px; box-sizing: border-box; overflow: hidden; box-shadow: 0 4px 18px rgba(0,0,0,0.35); text-align: center; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; font-weight: 600; text-align: center; margin-top: 8px; margin-bottom: 14px; line-height: 1.45; }\n\n  /* Table styling */\n  .table-card { background: rgba(15, 23, 42, 0.95); border: 1.5px solid #00BCD4; border-radius: 10px; padding: 10px 8px; margin: 16px 0; overflow-x: auto; box-shadow: 0 4px 18px rgba(0,0,0,0.35); -webkit-overflow-scrolling: touch; }\n  .styled-table { width: 100%; border-collapse: collapse; color: #F8FAFC; font-size: 13px; text-align: center; }\n  .styled-table th { background: rgba(0, 188, 212, 0.22); color: #00E5FF; font-weight: 700; padding: 9px 8px; border: 1px solid rgba(0, 188, 212, 0.4); font-size: 13px; white-space: nowrap; }\n  .styled-table td { padding: 7px 8px; border: 1px solid rgba(255, 255, 255, 0.12); font-weight: 500; font-size: 12.5px; color: #E2E8F0; }\n  .styled-table tr:nth-child(even) td { background: rgba(255, 255, 255, 0.03); }\n  .styled-table td.col-label { font-weight: 700; white-space: nowrap; text-align: left; padding-left: 12px; color: #80DEEA; }\n  .styled-table td.highlight-cell { color: #A5D6A7; font-weight: 700; }\n</style>\n\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Header Card -->\n  <div style=\"background: linear-gradient(135deg, rgba(0, 188, 212, 0.25), rgba(0, 150, 136, 0.15)); border: 1.5px solid #00BCD4; border-radius: 12px; padding: 14px 18px; margin-bottom: 20px;\">\n    <div style=\"font-size: 19px; font-weight: 800; color: #00BCD4; margin-bottom: 4px;\">\n      Exercise 12.1\n    </div>\n    <div style=\"color: #FFFFFF; font-size: 15px; font-weight: 500;\">\n      Direct Proportion &bull; Constant Ratio x / y = k &bull; Real-World Applications\n    </div>\n  </div>\n\n  <!-- QUESTION 1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\" style=\"color: #00BCD4; font-size: 18px; font-weight: 800;\">Question 1:</div>\n    <div class=\"q-text\">\n      The following are the car parking charges near a railway station up to:<br/>\n      <div style=\"margin: 8px 0 8px 12px; line-height: 1.9; color: #80DEEA; font-weight: 600;\">\n        &bull; 4 hours &minus; Rs 60<br/>\n        &bull; 8 hours &minus; Rs 100<br/>\n        &bull; 12 hours &minus; Rs 140<br/>\n        &bull; 24 hours &minus; Rs 180\n      </div>\n      Check if the parking charges are in direct proportion to the parking time.\n    </div>\n\n    <!-- Diagram Card Q1 -->\n    <div class=\"diagram-wrapper\">\n      <svg width=\"100%\" height=\"auto\" viewBox=\"0 0 360 140\" style=\"display:block; width:100%; height:auto;\">\n        <rect width=\"100%\" height=\"100%\" fill=\"#FFFFFF\" rx=\"8\"/>\n        <!-- Car Graphic -->\n        <g transform=\"translate(40, 20)\">\n          <path d=\"M 30 55 L 60 25 L 140 25 L 170 55 L 200 55 A 10 10 0 0 1 210 65 L 210 80 L 10 80 L 10 65 A 10 10 0 0 1 20 55 Z\" fill=\"#E0F7FA\" stroke=\"#00838F\" stroke-width=\"2.5\"/>\n          <circle cx=\"55\" cy=\"80\" r=\"16\" fill=\"#37474F\" stroke=\"#263238\" stroke-width=\"2\"/>\n          <circle cx=\"55\" cy=\"80\" r=\"6\" fill=\"#ECEFF1\"/>\n          <circle cx=\"165\" cy=\"80\" r=\"16\" fill=\"#37474F\" stroke=\"#263238\" stroke-width=\"2\"/>\n          <circle cx=\"165\" cy=\"80\" r=\"6\" fill=\"#ECEFF1\"/>\n          <polygon points=\"65,30 100,30 100,52 45,52\" fill=\"#B2EBF2\"/>\n          <polygon points=\"105,30 135,30 160,52 105,52\" fill=\"#B2EBF2\"/>\n          \n          <rect x=\"225\" y=\"10\" width=\"85\" height=\"24\" rx=\"4\" fill=\"#F1F5F9\" stroke=\"#CBD5E1\" stroke-width=\"1\"/>\n          <text x=\"267\" y=\"27\" font-size=\"12\" font-weight=\"900\" fill=\"#00838F\" text-anchor=\"middle\">PARKING</text>\n          \n          <text x=\"267\" y=\"55\" font-size=\"12.5\" font-weight=\"800\" fill=\"#0F172A\" text-anchor=\"middle\">4 h &rarr; Rs 60</text>\n          <text x=\"267\" y=\"75\" font-size=\"12.5\" font-weight=\"800\" fill=\"#0F172A\" text-anchor=\"middle\">24 h &rarr; Rs 180</text>\n        </g>\n      </svg>\n    </div>\n    <div class=\"diagram-caption\">Figure 12.1: Railway station parking charges vs time duration</div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\" style=\"color: #00BCD4; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n      <div class=\"sol-step\">\n        <div>For direct proportion, the ratio <span class=\"frac\"><span class=\"num\">Charge</span><span class=\"den\">Time</span></span> must remain constant.</div>\n        <div style=\"margin-top: 6px;\">Calculate charge per hour for each time period:</div>\n        <div>&bull; <i>C</i><sub>1</sub> = <span class=\"frac\"><span class=\"num\">60</span><span class=\"den\">4</span></span> = <b>Rs 15.00 / hr</b></div>\n        <div>&bull; <i>C</i><sub>2</sub> = <span class=\"frac\"><span class=\"num\">100</span><span class=\"den\">8</span></span> = <b>Rs 12.50 / hr</b></div>\n        <div>&bull; <i>C</i><sub>3</sub> = <span class=\"frac\"><span class=\"num\">140</span><span class=\"den\">12</span></span> = <b>Rs 11.67 / hr</b></div>\n        <div>&bull; <i>C</i><sub>4</sub> = <span class=\"frac\"><span class=\"num\">180</span><span class=\"den\">24</span></span> = <b>Rs 7.50 / hr</b></div>\n        <div style=\"margin-top: 6px;\">Since 15 &ne; 12.50 &ne; 11.67 &ne; 7.50, the ratios are not equal.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">No, the parking charges are not in direct proportion to the parking time.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 2 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\" style=\"color: #00BCD4; font-size: 18px; font-weight: 800;\">Question 2:</div>\n    <div class=\"q-text\">\n      A mixture of paint is prepared by mixing 1 part of red pigments with 8 parts of the base. In the following table, find the parts of the base that need to be added.\n    </div>\n\n    <!-- Table Card Q2 -->\n    <div class=\"table-card\">\n      <table class=\"styled-table\">\n        <thead>\n          <tr>\n            <th>Parts of red pigment</th>\n            <th>1</th>\n            <th>4</th>\n            <th>7</th>\n            <th>12</th>\n            <th>20</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr>\n            <td class=\"col-label\">Parts of base</td>\n            <td>8</td>\n            <td class=\"highlight-cell\">32</td>\n            <td class=\"highlight-cell\">56</td>\n            <td class=\"highlight-cell\">96</td>\n            <td class=\"highlight-cell\">160</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\" style=\"color: #00BCD4; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n      <div class=\"sol-step\">\n        <div>Let red pigment be <i>x</i> and base be <i>y</i>. Since the mixture is uniform, <i>x</i> and <i>y</i> are in direct proportion:</div>\n        <div>&rArr; <span class=\"frac\"><span class=\"num\"><i>x</i></span><span class=\"den\"><i>y</i></span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">8</span></span> &nbsp;&rArr;&nbsp; <b><i>y</i> = 8<i>x</i></b></div>\n        <div style=\"margin-top: 6px;\">&bull; For <i>x</i> = 4 &rArr; <i>y</i> = 4 &times; 8 = <b>32</b></div>\n        <div>&bull; For <i>x</i> = 7 &rArr; <i>y</i> = 7 &times; 8 = <b>56</b></div>\n        <div>&bull; For <i>x</i> = 12 &rArr; <i>y</i> = 12 &times; 8 = <b>96</b></div>\n        <div>&bull; For <i>x</i> = 20 &rArr; <i>y</i> = 20 &times; 8 = <b>160</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">Missing parts of base are 32, 56, 96, and 160.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 3 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\" style=\"color: #00BCD4; font-size: 18px; font-weight: 800;\">Question 3:</div>\n    <div class=\"q-text\">\n      In Question 2 above, if 1 part of a red pigment requires 75 mL of the base, how much red pigment should we mix with 1800 mL of the base?\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\" style=\"color: #00BCD4; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n      <div class=\"sol-step\">\n        <div>Let the required parts of red pigment be <b><i>x</i></b>.</div>\n        <div>Red pigment and volume of base are in direct proportion:</div>\n        <div>&rArr; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">75</span></span> = <span class=\"frac\"><span class=\"num\"><i>x</i></span><span class=\"den\">1800</span></span></div>\n        <div>&rArr; 75 &times; <i>x</i> = 1 &times; 1800</div>\n        <div>&rArr; <i>x</i> = <span class=\"frac\"><span class=\"num\">1800</span><span class=\"den\">75</span></span> = <b>24 parts</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">24 parts of red pigment should be mixed with 1800 mL base.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 4 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\" style=\"color: #00BCD4; font-size: 18px; font-weight: 800;\">Question 4:</div>\n    <div class=\"q-text\">\n      A machine in a soft drink factory fills 840 bottles in six hours. How many bottles will it fill in five hours?\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\" style=\"color: #00BCD4; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n      <div class=\"sol-step\">\n        <div>Let the number of bottles filled in 5 hours be <b><i>x</i></b>.</div>\n        <div>More hours &rArr; more bottles filled (Direct Proportion):</div>\n        <div>&rArr; <span class=\"frac\"><span class=\"num\">840</span><span class=\"den\">6</span></span> = <span class=\"frac\"><span class=\"num\"><i>x</i></span><span class=\"den\">5</span></span></div>\n        <div>&rArr; 6<i>x</i> = 840 &times; 5</div>\n        <div>&rArr; <i>x</i> = <span class=\"frac\"><span class=\"num\">840 &times; 5</span><span class=\"den\">6</span></span> = 140 &times; 5 = <b>700 bottles</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">The machine will fill 700 bottles in five hours.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 5 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\" style=\"color: #00BCD4; font-size: 18px; font-weight: 800;\">Question 5:</div>\n    <div class=\"q-text\">\n      A photograph of a bacteria enlarged 50,000 times attains a length of 5 cm, as shown in the diagram. What is the actual length of the bacteria? If the photograph is enlarged 20,000 times only, what would be its enlarged length?\n    </div>\n\n    <!-- Diagram Card Q5 -->\n    <div class=\"diagram-wrapper\">\n      <svg width=\"100%\" height=\"auto\" viewBox=\"0 0 350 145\" style=\"display:block; width:100%; height:auto;\">\n        <rect width=\"100%\" height=\"100%\" fill=\"#FFFFFF\" rx=\"8\"/>\n        <!-- Bacteria illustration -->\n        <g transform=\"translate(60, 20)\">\n          <!-- Rod-shaped bacteria -->\n          <rect x=\"30\" y=\"30\" width=\"140\" height=\"45\" rx=\"22.5\" fill=\"#E8F5E9\" stroke=\"#2E7D32\" stroke-width=\"2.5\"/>\n          <!-- Flagella threads -->\n          <path d=\"M 30 40 Q 10 30 5 45 Q 0 60 -15 50\" fill=\"none\" stroke=\"#2E7D32\" stroke-width=\"1.8\"/>\n          <path d=\"M 30 55 Q 15 65 10 80 Q 5 95 -10 90\" fill=\"none\" stroke=\"#2E7D32\" stroke-width=\"1.8\"/>\n          <path d=\"M 170 45 Q 190 35 195 50 Q 200 65 215 55\" fill=\"none\" stroke=\"#2E7D32\" stroke-width=\"1.8\"/>\n          \n          <text x=\"100\" y=\"58\" font-size=\"13.5\" font-weight=\"900\" fill=\"#1B5E20\" text-anchor=\"middle\">Bacteria (5 cm)</text>\n          \n          <rect x=\"45\" y=\"85\" width=\"110\" height=\"22\" rx=\"3\" fill=\"#F1F5F9\" stroke=\"#CBD5E1\" stroke-width=\"1\"/>\n          <text x=\"100\" y=\"100\" font-size=\"12\" font-weight=\"800\" fill=\"#0F172A\" text-anchor=\"middle\">&times; 50,000 Enlarged</text>\n        </g>\n      </svg>\n    </div>\n    <div class=\"diagram-caption\">Figure 12.2: Microscopic bacteria enlarged 50,000 times to 5 cm</div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\" style=\"color: #00BCD4; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n      <div class=\"sol-step\">\n        <div><b>1. Actual Length:</b></div>\n        <div>Actual length = <span class=\"frac\"><span class=\"num\">Enlarged length</span><span class=\"den\">Magnification</span></span> = <span class=\"frac\"><span class=\"num\">5 cm</span><span class=\"den\">50,000</span></span></div>\n        <div>&rArr; Actual length = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">10,000</span></span> cm = <b>10<sup>&minus;4</sup> cm</b> = <b>10<sup>&minus;6</sup> m</b></div>\n        <div style=\"margin-top: 8px;\"><b>2. Enlarged Length at 20,000 Magnification:</b></div>\n        <div>Let the length be <i>x</i>. Since enlargement is in direct proportion:</div>\n        <div>&rArr; <span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">50,000</span></span> = <span class=\"frac\"><span class=\"num\"><i>x</i></span><span class=\"den\">20,000</span></span></div>\n        <div>&rArr; <i>x</i> = <span class=\"frac\"><span class=\"num\">5 &times; 20,000</span><span class=\"den\">50,000</span></span> = <span class=\"frac\"><span class=\"num\">100,000</span><span class=\"den\">50,000</span></span> = <b>2 cm</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">Actual length = 10<sup>&minus;4</sup> cm &bull; Enlarged length = 2 cm</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 6 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\" style=\"color: #00BCD4; font-size: 18px; font-weight: 800;\">Question 6:</div>\n    <div class=\"q-text\">\n      In a model of a ship, the mast is 9 cm high, while the mast of the actual ship is 12 m high. If the length of the ship is 28 m, how long is the model ship?\n    </div>\n\n    <!-- Diagram Card Q6 -->\n    <div class=\"diagram-wrapper\">\n      <svg width=\"100%\" height=\"auto\" viewBox=\"0 0 370 150\" style=\"display:block; width:100%; height:auto;\">\n        <rect width=\"100%\" height=\"100%\" fill=\"#FFFFFF\" rx=\"8\"/>\n        <!-- Model Ship -->\n        <g transform=\"translate(20, 25)\">\n          <polygon points=\"10,65 75,65 65,85 20,85\" fill=\"#B0BEC5\" stroke=\"#37474F\" stroke-width=\"2\"/>\n          <line x1=\"42\" y1=\"65\" x2=\"42\" y2=\"20\" stroke=\"#37474F\" stroke-width=\"2\"/>\n          <polygon points=\"42,25 65,45 42,45\" fill=\"#ECEFF1\" stroke=\"#37474F\" stroke-width=\"1.5\"/>\n          <rect x=\"15\" y=\"92\" width=\"60\" height=\"20\" rx=\"3\" fill=\"#F1F5F9\" stroke=\"#CBD5E1\" stroke-width=\"1\"/>\n          <text x=\"45\" y=\"106\" font-size=\"11\" font-weight=\"900\" fill=\"#00838F\" text-anchor=\"middle\">Mast: 9 cm</text>\n          <text x=\"45\" y=\"122\" font-size=\"11\" font-weight=\"800\" fill=\"#0F172A\" text-anchor=\"middle\">Model Ship (x)</text>\n        </g>\n\n        <!-- Actual Ship -->\n        <g transform=\"translate(160, 15)\">\n          <polygon points=\"15,80 165,80 145,115 35,115\" fill=\"#CFD8DC\" stroke=\"#263238\" stroke-width=\"2.5\"/>\n          <line x1=\"90\" y1=\"80\" x2=\"90\" y2=\"15\" stroke=\"#263238\" stroke-width=\"2.5\"/>\n          <polygon points=\"90,20 135,50 90,50\" fill=\"#ECEFF1\" stroke=\"#263238\" stroke-width=\"1.8\"/>\n          <rect x=\"55\" y=\"120\" width=\"80\" height=\"20\" rx=\"3\" fill=\"#F1F5F9\" stroke=\"#CBD5E1\" stroke-width=\"1\"/>\n          <text x=\"95\" y=\"134\" font-size=\"11.5\" font-weight=\"900\" fill=\"#00838F\" text-anchor=\"middle\">Length: 28 m</text>\n          <text x=\"95\" y=\"5\" font-size=\"11.5\" font-weight=\"900\" fill=\"#B71C1C\" text-anchor=\"middle\">Mast: 12 m</text>\n        </g>\n      </svg>\n    </div>\n    <div class=\"diagram-caption\">Figure 12.3: Model ship vs actual ship dimensions in direct proportion</div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\" style=\"color: #00BCD4; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n      <div class=\"sol-step\">\n        <div>Let the length of the model ship be <b><i>x</i> cm</b>.</div>\n        <div>Model dimensions and actual dimensions are in direct proportion:</div>\n        <div>&rArr; <span class=\"frac\"><span class=\"num\">Length of model mast</span><span class=\"den\">Length of actual mast</span></span> = <span class=\"frac\"><span class=\"num\">Length of model ship</span><span class=\"den\">Length of actual ship</span></span></div>\n        <div>&rArr; <span class=\"frac\"><span class=\"num\">9</span><span class=\"den\">12</span></span> = <span class=\"frac\"><span class=\"num\"><i>x</i></span><span class=\"den\">28</span></span></div>\n        <div>&rArr; 12<i>x</i> = 9 &times; 28</div>\n        <div>&rArr; <i>x</i> = <span class=\"frac\"><span class=\"num\">9 &times; 28</span><span class=\"den\">12</span></span> = <span class=\"frac\"><span class=\"num\">252</span><span class=\"den\">12</span></span> = <b>21 cm</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">Length of the model ship = 21 cm</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 7 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\" style=\"color: #00BCD4; font-size: 18px; font-weight: 800;\">Question 7:</div>\n    <div class=\"q-text\">\n      Suppose 2 kg of sugar contains 9 &times; 10<sup>6</sup> crystals. How many sugar crystals are there in:\n    </div>\n\n    <!-- (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00BCD4;\">(i)</b> 5 kg of sugar?</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #00BCD4; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>Let the number of crystals in 5 kg be <i>x</i> (Direct Proportion):</div>\n          <div>&rArr; <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">9 &times; 10<sup>6</sup></span></span> = <span class=\"frac\"><span class=\"num\">5</span><span class=\"den\"><i>x</i></span></span></div>\n          <div>&rArr; 2<i>x</i> = 5 &times; 9 &times; 10<sup>6</sup> = 45 &times; 10<sup>6</sup></div>\n          <div>&rArr; <i>x</i> = <span class=\"frac\"><span class=\"num\">45 &times; 10<sup>6</sup></span><span class=\"den\">2</span></span> = 22.5 &times; 10<sup>6</sup> = <b>2.25 &times; 10<sup>7</sup> crystals</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Final Answer: </span><span class=\"ans-val\">2.25 &times; 10<sup>7</sup> crystals</span></div>\n      </div>\n    </div>\n\n    <!-- (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00BCD4;\">(ii)</b> 1.2 kg of sugar?</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #00BCD4; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>Let the number of crystals in 1.2 kg be <i>x</i>:</div>\n          <div>&rArr; <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">9 &times; 10<sup>6</sup></span></span> = <span class=\"frac\"><span class=\"num\">1.2</span><span class=\"den\"><i>x</i></span></span></div>\n          <div>&rArr; 2<i>x</i> = 1.2 &times; 9 &times; 10<sup>6</sup> = 10.8 &times; 10<sup>6</sup></div>\n          <div>&rArr; <i>x</i> = <span class=\"frac\"><span class=\"num\">10.8 &times; 10<sup>6</sup></span><span class=\"den\">2</span></span> = <b>5.4 &times; 10<sup>6</sup> crystals</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Final Answer: </span><span class=\"ans-val\">5.4 &times; 10<sup>6</sup> crystals</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 8 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\" style=\"color: #00BCD4; font-size: 18px; font-weight: 800;\">Question 8:</div>\n    <div class=\"q-text\">\n      Rashmi has a road map with a scale of 1 cm representing 18 km. She drives on the road for 72 km. What would be her distance covered on the map?\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\" style=\"color: #00BCD4; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n      <div class=\"sol-step\">\n        <div>Let distance covered on the map be <b><i>x</i> cm</b>.</div>\n        <div>Map distance and actual road distance are in direct proportion:</div>\n        <div>&rArr; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">18</span></span> = <span class=\"frac\"><span class=\"num\"><i>x</i></span><span class=\"den\">72</span></span></div>\n        <div>&rArr; 18<i>x</i> = 72 &rArr; <i>x</i> = <span class=\"frac\"><span class=\"num\">72</span><span class=\"den\">18</span></span> = <b>4 cm</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">Distance covered on the map = 4 cm</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 9 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\" style=\"color: #00BCD4; font-size: 18px; font-weight: 800;\">Question 9:</div>\n    <div class=\"q-text\">\n      A 5 m 60 cm high vertical pole casts a shadow 3 m 20 cm long. Find at the same time:\n    </div>\n\n    <!-- (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00BCD4;\">(i)</b> The length of the shadow cast by another pole 10 m 50 cm high.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #00BCD4; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>Convert all heights into cm:</div>\n          <div>&bull; Pole 1 = 5 m 60 cm = 560 cm &nbsp;|&nbsp; Shadow 1 = 3 m 20 cm = 320 cm</div>\n          <div>&bull; Pole 2 = 10 m 50 cm = 1050 cm &nbsp;|&nbsp; Shadow 2 = <i>x</i> cm</div>\n          <div>At the same time, pole height and shadow length are in direct proportion:</div>\n          <div>&rArr; <span class=\"frac\"><span class=\"num\">560</span><span class=\"den\">320</span></span> = <span class=\"frac\"><span class=\"num\">1050</span><span class=\"den\"><i>x</i></span></span></div>\n          <div>&rArr; 560<i>x</i> = 1050 &times; 320</div>\n          <div>&rArr; <i>x</i> = <span class=\"frac\"><span class=\"num\">1050 &times; 320</span><span class=\"den\">560</span></span> = <span class=\"frac\"><span class=\"num\">336,000</span><span class=\"den\">560</span></span> = <b>600 cm</b> = <b>6 m</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Final Answer: </span><span class=\"ans-val\">Length of shadow = 6 m</span></div>\n      </div>\n    </div>\n\n    <!-- (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00BCD4;\">(ii)</b> The height of a pole which casts a shadow 5 m long.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #00BCD4; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>Shadow length = 5 m = 500 cm. Let the height of the pole be <i>y</i> cm:</div>\n          <div>&rArr; <span class=\"frac\"><span class=\"num\">560</span><span class=\"den\">320</span></span> = <span class=\"frac\"><span class=\"num\"><i>y</i></span><span class=\"den\">500</span></span></div>\n          <div>&rArr; 320<i>y</i> = 560 &times; 500</div>\n          <div>&rArr; <i>y</i> = <span class=\"frac\"><span class=\"num\">560 &times; 500</span><span class=\"den\">320</span></span> = <span class=\"frac\"><span class=\"num\">280,000</span><span class=\"den\">320</span></span> = <b>875 cm</b> = <b>8 m 75 cm</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Final Answer: </span><span class=\"ans-val\">Height of the pole = 8 m 75 cm</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 10 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\" style=\"color: #00BCD4; font-size: 18px; font-weight: 800;\">Question 10:</div>\n    <div class=\"q-text\">\n      A loaded truck travels 14 km in 25 minutes. If the speed remains the same, how far can it travel in 5 hours?\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\" style=\"color: #00BCD4; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n      <div class=\"sol-step\">\n        <div>Convert 5 hours into minutes: 5 &times; 60 = <b>300 minutes</b>.</div>\n        <div>Let the distance covered be <b><i>x</i> km</b>.</div>\n        <div>At constant speed, distance and time are in direct proportion:</div>\n        <div>&rArr; <span class=\"frac\"><span class=\"num\">14</span><span class=\"den\">25</span></span> = <span class=\"frac\"><span class=\"num\"><i>x</i></span><span class=\"den\">300</span></span></div>\n        <div>&rArr; 25<i>x</i> = 14 &times; 300</div>\n        <div>&rArr; <i>x</i> = <span class=\"frac\"><span class=\"num\">14 &times; 300</span><span class=\"den\">25</span></span> = 14 &times; 12 = <b>168 km</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">The truck can travel 168 km in 5 hours.</span>\n      </div>\n    </div>\n  </div>\n\n</div>\n",
+    "ex12-2": "\n\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; text-align: center; }\n  .frac .den { padding: 1px 4px; text-align: center; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(0, 188, 212, 0.4); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 18px; font-weight: 800; color: #00BCD4; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 16px; font-weight: 500; text-align: left !important; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(0, 188, 212, 0.25); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; text-align: left !important; }\n  .sol-box { background: rgba(0, 0, 0, 0.35); border-left: 3.5px solid #00BCD4; border-radius: 8px; padding: 14px 16px; margin-top: 12px; text-align: left !important; }\n  .sol-title { font-size: 15.5px; font-weight: 800; color: #00BCD4; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; text-align: left !important; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; text-align: left !important; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(0, 188, 212, 0.15); border: 1px solid #00BCD4; color: #80DEEA; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 4px 2px; }\n  \n  /* Diagram Wrapper: Pure Crisp White Canvas, Beautiful Shadow */\n  .diagram-wrapper { display: block; background: #FFFFFF; border: 1.5px solid rgba(0, 188, 212, 0.45); border-radius: 10px; padding: 12px 10px; margin: 14px auto 8px auto; width: 100%; max-width: 440px; box-sizing: border-box; overflow: hidden; box-shadow: 0 4px 18px rgba(0,0,0,0.35); text-align: center; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; font-weight: 600; text-align: center; margin-top: 8px; margin-bottom: 14px; line-height: 1.45; }\n\n  /* Table styling */\n  .table-card { background: rgba(15, 23, 42, 0.95); border: 1.5px solid #00BCD4; border-radius: 10px; padding: 10px 8px; margin: 16px 0; overflow-x: auto; box-shadow: 0 4px 18px rgba(0,0,0,0.35); -webkit-overflow-scrolling: touch; }\n  .styled-table { width: 100%; border-collapse: collapse; color: #F8FAFC; font-size: 13px; text-align: center; }\n  .styled-table th { background: rgba(0, 188, 212, 0.22); color: #00E5FF; font-weight: 700; padding: 9px 8px; border: 1px solid rgba(0, 188, 212, 0.4); font-size: 13px; white-space: nowrap; }\n  .styled-table td { padding: 7px 8px; border: 1px solid rgba(255, 255, 255, 0.12); font-weight: 500; font-size: 12.5px; color: #E2E8F0; }\n  .styled-table tr:nth-child(even) td { background: rgba(255, 255, 255, 0.03); }\n  .styled-table td.col-label { font-weight: 700; white-space: nowrap; text-align: left; padding-left: 12px; color: #80DEEA; }\n  .styled-table td.highlight-cell { color: #A5D6A7; font-weight: 700; }\n</style>\n\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Header Card -->\n  <div style=\"background: linear-gradient(135deg, rgba(0, 188, 212, 0.25), rgba(0, 150, 136, 0.15)); border: 1.5px solid #00BCD4; border-radius: 12px; padding: 14px 18px; margin-bottom: 20px;\">\n    <div style=\"font-size: 19px; font-weight: 800; color: #00BCD4; margin-bottom: 4px;\">\n      Exercise 12.2\n    </div>\n    <div style=\"color: #FFFFFF; font-size: 15px; font-weight: 500;\">\n      Inverse Proportion &bull; Constant Product x &times; y = k &bull; Real-World Applications\n    </div>\n  </div>\n\n  <!-- QUESTION 1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\" style=\"color: #00BCD4; font-size: 18px; font-weight: 800;\">Question 1:</div>\n    <div class=\"q-text\">Which of the following are in inverse proportion?</div>\n\n    <!-- (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00BCD4;\">(i)</b> The number of workers on a job and the time to complete the job.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #00BCD4; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>More workers take less time to complete the same job. As one quantity increases, the other decreases proportionally.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Answer (i): </span><span class=\"ans-val\">Inverse Proportion</span></div>\n      </div>\n    </div>\n\n    <!-- (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00BCD4;\">(ii)</b> The time taken for a journey and the distance travelled at a uniform speed.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #00BCD4; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>At uniform speed, more time means more distance covered. Both increase together.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Answer (ii): </span><span class=\"ans-val\">Not in Inverse Proportion (Direct Proportion)</span></div>\n      </div>\n    </div>\n\n    <!-- (iii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00BCD4;\">(iii)</b> Area of cultivated land and the crop harvested.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #00BCD4; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>More cultivated land yields more crops. Both increase together.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Answer (iii): </span><span class=\"ans-val\">Not in Inverse Proportion (Direct Proportion)</span></div>\n      </div>\n    </div>\n\n    <!-- (iv) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00BCD4;\">(iv)</b> The time taken for a fixed journey and the speed of the vehicle.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #00BCD4; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>Higher speed requires less time to cover the same fixed distance.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Answer (iv): </span><span class=\"ans-val\">Inverse Proportion</span></div>\n      </div>\n    </div>\n\n    <!-- (v) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00BCD4;\">(v)</b> The population of a country and the area of land per person.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #00BCD4; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>For a fixed total land area, if population increases, the area of land available per person decreases.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Answer (v): </span><span class=\"ans-val\">Inverse Proportion</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 2 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\" style=\"color: #00BCD4; font-size: 18px; font-weight: 800;\">Question 2:</div>\n    <div class=\"q-text\">\n      In a Television game show, the prize money of Rs 1,00,000 is to be divided equally amongst the winners. Complete the following table and find whether the prize money given to an individual winner is directly or inversely proportional to the number of winners:\n    </div>\n\n    <!-- Table Card Q2 -->\n    <div class=\"table-card\">\n      <table class=\"styled-table\">\n        <thead>\n          <tr>\n            <th>No. of winners (x)</th>\n            <th>1</th>\n            <th>2</th>\n            <th>4</th>\n            <th>5</th>\n            <th>8</th>\n            <th>10</th>\n            <th>20</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr>\n            <td class=\"col-label\">Prize for each (y) in Rs</td>\n            <td>1,00,000</td>\n            <td>50,000</td>\n            <td class=\"highlight-cell\">25,000</td>\n            <td class=\"highlight-cell\">20,000</td>\n            <td class=\"highlight-cell\">12,500</td>\n            <td class=\"highlight-cell\">10,000</td>\n            <td class=\"highlight-cell\">5,000</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\" style=\"color: #00BCD4; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n      <div class=\"sol-step\">\n        <div>Here, total prize money is fixed at <b>Rs 1,00,000</b>.</div>\n        <div>As the number of winners increases, each winner's share decreases proportionally:</div>\n        <div>&rArr; <b><i>x</i> &times; <i>y</i> = 1,00,000 (constant)</b> &rArr; It is an <b>Inverse Proportion</b>.</div>\n        <div style=\"margin-top: 6px;\">&bull; For <i>x</i> = 4 &rArr; <i>y</i> = <span class=\"frac\"><span class=\"num\">100,000</span><span class=\"den\">4</span></span> = <b>Rs 25,000</b></div>\n        <div>&bull; For <i>x</i> = 5 &rArr; <i>y</i> = <span class=\"frac\"><span class=\"num\">100,000</span><span class=\"den\">5</span></span> = <b>Rs 20,000</b></div>\n        <div>&bull; For <i>x</i> = 8 &rArr; <i>y</i> = <span class=\"frac\"><span class=\"num\">100,000</span><span class=\"den\">8</span></span> = <b>Rs 12,500</b></div>\n        <div>&bull; For <i>x</i> = 10 &rArr; <i>y</i> = <span class=\"frac\"><span class=\"num\">100,000</span><span class=\"den\">10</span></span> = <b>Rs 10,000</b></div>\n        <div>&bull; For <i>x</i> = 20 &rArr; <i>y</i> = <span class=\"frac\"><span class=\"num\">100,000</span><span class=\"den\">20</span></span> = <b>Rs 5,000</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">Inversely proportional &bull; Missing prizes: Rs 25,000; Rs 20,000; Rs 12,500; Rs 10,000; Rs 5,000.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 3 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\" style=\"color: #00BCD4; font-size: 18px; font-weight: 800;\">Question 3:</div>\n    <div class=\"q-text\">\n      Rehman is making a wheel using spokes. He wants to fix equal spokes in such a way that the angles between any pair of consecutive spokes are equal. Help him by completing the following table:\n    </div>\n\n    <!-- Diagram Card Q3 -->\n    <div class=\"diagram-wrapper\">\n      <svg width=\"100%\" height=\"auto\" viewBox=\"0 0 380 150\" style=\"display:block; width:100%; height:auto;\">\n        <rect width=\"100%\" height=\"100%\" fill=\"#FFFFFF\" rx=\"8\"/>\n        <!-- 4 Spokes Wheel -->\n        <g transform=\"translate(45, 20)\">\n          <circle cx=\"50\" cy=\"50\" r=\"42\" fill=\"#E0F7FA\" stroke=\"#00838F\" stroke-width=\"2.5\"/>\n          <line x1=\"50\" y1=\"8\" x2=\"50\" y2=\"92\" stroke=\"#00838F\" stroke-width=\"2\"/>\n          <line x1=\"8\" y1=\"50\" x2=\"92\" y2=\"50\" stroke=\"#00838F\" stroke-width=\"2\"/>\n          <circle cx=\"50\" cy=\"50\" r=\"6\" fill=\"#006064\"/>\n          <text x=\"50\" y=\"115\" font-size=\"12\" font-weight=\"900\" fill=\"#006064\" text-anchor=\"middle\">4 Spokes (90&deg;)</text>\n        </g>\n\n        <!-- 6 Spokes Wheel -->\n        <g transform=\"translate(160, 20)\">\n          <circle cx=\"50\" cy=\"50\" r=\"42\" fill=\"#FFF3E0\" stroke=\"#E65100\" stroke-width=\"2.5\"/>\n          <line x1=\"50\" y1=\"8\" x2=\"50\" y2=\"92\" stroke=\"#E65100\" stroke-width=\"2\"/>\n          <line x1=\"14\" y1=\"29\" x2=\"86\" y2=\"71\" stroke=\"#E65100\" stroke-width=\"2\"/>\n          <line x1=\"14\" y1=\"71\" x2=\"86\" y2=\"29\" stroke=\"#E65100\" stroke-width=\"2\"/>\n          <circle cx=\"50\" cy=\"50\" r=\"6\" fill=\"#BF360C\"/>\n          <text x=\"50\" y=\"115\" font-size=\"12\" font-weight=\"900\" fill=\"#BF360C\" text-anchor=\"middle\">6 Spokes (60&deg;)</text>\n        </g>\n\n        <!-- 8 Spokes Wheel -->\n        <g transform=\"translate(275, 20)\">\n          <circle cx=\"50\" cy=\"50\" r=\"42\" fill=\"#E8F5E9\" stroke=\"#2E7D32\" stroke-width=\"2.5\"/>\n          <line x1=\"50\" y1=\"8\" x2=\"50\" y2=\"92\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\n          <line x1=\"8\" y1=\"50\" x2=\"92\" y2=\"50\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\n          <line x1=\"20\" y1=\"20\" x2=\"80\" y2=\"80\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\n          <line x1=\"20\" y1=\"80\" x2=\"80\" y2=\"20\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\n          <circle cx=\"50\" cy=\"50\" r=\"6\" fill=\"#1B5E20\"/>\n          <text x=\"50\" y=\"115\" font-size=\"12\" font-weight=\"900\" fill=\"#1B5E20\" text-anchor=\"middle\">8 Spokes (45&deg;)</text>\n        </g>\n      </svg>\n    </div>\n    <div class=\"diagram-caption\">Figure 12.4: Wheels with equal angles between consecutive spokes</div>\n\n    <!-- Table Card Q3 -->\n    <div class=\"table-card\">\n      <table class=\"styled-table\">\n        <thead>\n          <tr>\n            <th>Number of spokes</th>\n            <th>4</th>\n            <th>6</th>\n            <th>8</th>\n            <th>10</th>\n            <th>12</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr>\n            <td class=\"col-label\">Angle between pair of spokes</td>\n            <td>90&deg;</td>\n            <td>60&deg;</td>\n            <td class=\"highlight-cell\">45&deg;</td>\n            <td class=\"highlight-cell\">36&deg;</td>\n            <td class=\"highlight-cell\">30&deg;</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n\n    <!-- (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00BCD4;\">(i)</b> Are the number of spokes and the angles formed between the pairs of consecutive spokes in inverse proportion?</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #00BCD4; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>Check product of (Number of spokes &times; Angle):</div>\n          <div>4 &times; 90&deg; = 360&deg;, &nbsp;6 &times; 60&deg; = 360&deg;, &nbsp;8 &times; 45&deg; = 360&deg;.</div>\n          <div>Since the product remains constant (360&deg;), they are in <b>inverse proportion</b>.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Answer (i): </span><span class=\"ans-val\">Yes, they are in inverse proportion.</span></div>\n      </div>\n    </div>\n\n    <!-- (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00BCD4;\">(ii)</b> Calculate the angle between a pair of consecutive spokes on a wheel with 15 spokes.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #00BCD4; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>Angle = <span class=\"frac\"><span class=\"num\">360&deg;</span><span class=\"den\">Number of spokes</span></span> = <span class=\"frac\"><span class=\"num\">360&deg;</span><span class=\"den\">15</span></span> = <b>24&deg;</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Answer (ii): </span><span class=\"ans-val\">24&deg;</span></div>\n      </div>\n    </div>\n\n    <!-- (iii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00BCD4;\">(iii)</b> How many spokes would be needed, if the angle between a pair of consecutive spokes is 40&deg;?</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #00BCD4; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>Number of spokes = <span class=\"frac\"><span class=\"num\">360&deg;</span><span class=\"den\">Angle</span></span> = <span class=\"frac\"><span class=\"num\">360&deg;</span><span class=\"den\">40&deg;</span></span> = <b>9 spokes</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Answer (iii): </span><span class=\"ans-val\">9 spokes</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 4 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\" style=\"color: #00BCD4; font-size: 18px; font-weight: 800;\">Question 4:</div>\n    <div class=\"q-text\">\n      If a box of sweets is divided among 24 children, they will get 5 sweets each. How many would each get, if the number of children is reduced by 4?\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\" style=\"color: #00BCD4; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n      <div class=\"sol-step\">\n        <div>Initial children = <b>24</b>, Sweets per child = <b>5</b></div>\n        <div>Total sweets = 24 &times; 5 = <b>120</b></div>\n        <div style=\"margin-top: 6px;\">When children reduced by 4, new number of children = 24 &minus; 4 = <b>20</b></div>\n        <div>Let each child get <i>x</i> sweets (Inverse Proportion):</div>\n        <div>&rArr; 20 &times; <i>x</i> = 120 &rArr; <i>x</i> = <span class=\"frac\"><span class=\"num\">120</span><span class=\"den\">20</span></span> = <b>6 sweets</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">Each child will get 6 sweets.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 5 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\" style=\"color: #00BCD4; font-size: 18px; font-weight: 800;\">Question 5:</div>\n    <div class=\"q-text\">\n      A farmer has enough food to feed 20 animals in his cattle for 6 days. How long would the food last if there were 10 more animals in his cattle?\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\" style=\"color: #00BCD4; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n      <div class=\"sol-step\">\n        <div>Original animals = <b>20</b>, Days = <b>6</b></div>\n        <div>New number of animals = 20 + 10 = <b>30 animals</b></div>\n        <div>More animals &rArr; food lasts fewer days (Inverse Proportion):</div>\n        <div>&rArr; <i>x</i><sub>1</sub><i>y</i><sub>1</sub> = <i>x</i><sub>2</sub><i>y</i><sub>2</sub></div>\n        <div>&rArr; 20 &times; 6 = 30 &times; <i>x</i></div>\n        <div>&rArr; 30<i>x</i> = 120 &rArr; <i>x</i> = <span class=\"frac\"><span class=\"num\">120</span><span class=\"den\">30</span></span> = <b>4 days</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">The food would last for 4 days.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 6 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\" style=\"color: #00BCD4; font-size: 18px; font-weight: 800;\">Question 6:</div>\n    <div class=\"q-text\">\n      A contractor estimates that 3 persons could rewire Jasminder’s house in 4 days. If he uses 4 persons instead of three, how long should they take to complete the job?\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\" style=\"color: #00BCD4; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n      <div class=\"sol-step\">\n        <div>Number of persons and days to complete a job are in inverse proportion:</div>\n        <div>&rArr; <i>x</i><sub>1</sub><i>y</i><sub>1</sub> = <i>x</i><sub>2</sub><i>y</i><sub>2</sub></div>\n        <div>&rArr; 3 &times; 4 = 4 &times; <i>x</i></div>\n        <div>&rArr; 4<i>x</i> = 12 &rArr; <i>x</i> = <span class=\"frac\"><span class=\"num\">12</span><span class=\"den\">4</span></span> = <b>3 days</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">They will take 3 days to complete the job.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 7 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\" style=\"color: #00BCD4; font-size: 18px; font-weight: 800;\">Question 7:</div>\n    <div class=\"q-text\">\n      A batch of bottles was packed in 25 boxes, with 12 bottles in each box. If the same batch is packed using 20 bottles in each box, how many boxes would be filled?\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\" style=\"color: #00BCD4; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n      <div class=\"sol-step\">\n        <div>Total bottles in the batch = 25 &times; 12 = <b>300 bottles</b></div>\n        <div>Number of bottles per box and total boxes are in inverse proportion:</div>\n        <div>&rArr; 20 &times; <i>x</i> = 300</div>\n        <div>&rArr; <i>x</i> = <span class=\"frac\"><span class=\"num\">300</span><span class=\"den\">20</span></span> = <b>15 boxes</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">15 boxes would be filled.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 8 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\" style=\"color: #00BCD4; font-size: 18px; font-weight: 800;\">Question 8:</div>\n    <div class=\"q-text\">\n      A factory requires 42 machines to produce a given number of articles in 63 days. How many machines would be required to produce the same number of articles in 54 days?\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\" style=\"color: #00BCD4; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n      <div class=\"sol-step\">\n        <div>Number of machines and days are in inverse proportion (<i>x</i> &times; <i>y</i> = <i>k</i>):</div>\n        <div>&rArr; 42 &times; 63 = <i>x</i> &times; 54</div>\n        <div>&rArr; 54<i>x</i> = 2646</div>\n        <div>&rArr; <i>x</i> = <span class=\"frac\"><span class=\"num\">42 &times; 63</span><span class=\"den\">54</span></span> = <span class=\"frac\"><span class=\"num\">7 &times; 63</span><span class=\"den\">9</span></span> = 7 &times; 7 = <b>49 machines</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">49 machines would be required.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 9 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\" style=\"color: #00BCD4; font-size: 18px; font-weight: 800;\">Question 9:</div>\n    <div class=\"q-text\">\n      A car takes 2 hours to reach a destination by travelling at the speed of 60 km/hr. How long will it take when the car travels at the speed of 80 km/hr?\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\" style=\"color: #00BCD4; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n      <div class=\"sol-step\">\n        <div>Speed and time for a fixed destination are in inverse proportion:</div>\n        <div>&rArr; Speed &times; Time = Distance (Constant)</div>\n        <div>&rArr; 60 &times; 2 = 80 &times; <i>t</i></div>\n        <div>&rArr; 80<i>t</i> = 120 &rArr; <i>t</i> = <span class=\"frac\"><span class=\"num\">120</span><span class=\"den\">80</span></span> = <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">2</span></span> = <b>1<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> hours</b> (1 hr 30 min)</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">1<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> hours (1 hour 30 minutes)</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 10 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\" style=\"color: #00BCD4; font-size: 18px; font-weight: 800;\">Question 10:</div>\n    <div class=\"q-text\">Two persons could fit new windows in a house in 3 days.</div>\n\n    <!-- (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00BCD4;\">(i)</b> One of the persons fell ill before the work started. How long would the job take now?</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #00BCD4; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>Remaining persons = 2 &minus; 1 = 1 person.</div>\n          <div>Persons &times; Days = Constant:</div>\n          <div>&rArr; 2 &times; 3 = 1 &times; <i>x</i> &rArr; <i>x</i> = <b>6 days</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Answer (i): </span><span class=\"ans-val\">6 days</span></div>\n      </div>\n    </div>\n\n    <!-- (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #00BCD4;\">(ii)</b> How many persons would be needed to fit the windows in one day?</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\" style=\"color: #00BCD4; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>Let required persons be <i>y</i> for 1 day:</div>\n          <div>&rArr; <i>y</i> &times; 1 = 2 &times; 3 &rArr; <i>y</i> = <b>6 persons</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Answer (ii): </span><span class=\"ans-val\">6 persons</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 11 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\" style=\"color: #00BCD4; font-size: 18px; font-weight: 800;\">Question 11:</div>\n    <div class=\"q-text\">\n      A school has 8 periods a day, each of 45 minutes duration. How long would each period be, if the school has 9 periods a day, assuming the number of school hours to be the same?\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\" style=\"color: #00BCD4; font-size: 15.5px; font-weight: 800;\">Solution:</div>\n      <div class=\"sol-step\">\n        <div>Total school duration = 8 &times; 45 = <b>360 minutes</b></div>\n        <div>Periods and duration per period are in inverse proportion:</div>\n        <div>&rArr; 9 &times; <i>x</i> = 360</div>\n        <div>&rArr; <i>x</i> = <span class=\"frac\"><span class=\"num\">360</span><span class=\"den\">9</span></span> = <b>40 minutes</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">Duration of each period would be 40 minutes.</span>\n      </div>\n    </div>\n  </div>\n\n</div>\n"
+  }
 };
