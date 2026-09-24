@@ -1219,6 +1219,7 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
   if (chapterId === "c8-math-10") return ["#FF5722", "#D84315"]; // Deep Orange for Mensuration
   if (chapterId === "c8-math-11") return ["#FDC830", "#F39C12"]; // Amber Gold for Exponents and Powers
   if (chapterId === "c8-math-12") return ["#00BCD4", "#00838F"]; // Cyan / Teal for Direct and Inverse Proportions
+  if (chapterId === "c8-math-13") return ["#AB47BC", "#7B1FA2"]; // Amethyst Purple for Factorisation
   if (chapterId === "c11-phy-1") return ["#FF512F", "#DD2476"];
   if (chapterId === "c11-phy-2") return ["#8E2DE2", "#4A00E0"];
   if (chapterId === "c11-phy-3") return ["#FF8A65", "#FF3D00"];
