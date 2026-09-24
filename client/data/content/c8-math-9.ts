@@ -1,817 +1,505 @@
 import { ChapterContent } from "../types";
 
-const ex91Content = `
-  <style>
-    .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
-    .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
-    .frac .den { padding: 0 2px; }
-    .ex-container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
-    .q-card { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 15px; margin-bottom: 25px; }
-    .q-text { color: #0091EA; font-weight: 600; margin-bottom: 12px; }
-    .q-subtext { color: #e0e0e0; margin-bottom: 5px; margin-left: 10px; }
-    .sol-box { border-left: 3px solid #0091EA; padding-left: 15px; margin-top: 15px; background: rgba(0, 145, 234, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; }
-    .ans-highlight { color: #0091EA; font-weight: 700; }
-    .step-label { color: #40C4FF; font-weight: 600; margin-right: 5px; }
-    .sol-step { margin-bottom: 8px; }
-    .q-text, .q-subtext, .sol-step, .sol-box { font-size: 16px; line-height: 1.8; }
-    .fig-container { display: flex; justify-content: center; margin: 15px 0; }
-  </style>
-  <div class="ex-container">
-    <div class="q-card">
-      <div class="q-text">1. The shape of the top surface of a table is a trapezium. Find its area if its parallel sides are 1 m and 1.2 m and perpendicular distance between them is 0.8 m.</div>
-      <div class="fig-container">
-        <svg width="200" height="100" viewBox="0 0 200 100">
-          <polygon points="50,20 150,20 180,80 20,80" fill="rgba(0,145,234,0.1)" stroke="#0091EA" stroke-width="2"/>
-          <line x1="50" y1="20" x2="50" y2="80" stroke="#0091EA" stroke-dasharray="4"/>
-          <text x="25" y="55" fill="#0091EA" font-size="12">0.8m</text>
-          <text x="100" y="15" fill="#0091EA" font-size="12" text-anchor="middle">1 m</text>
-          <text x="100" y="95" fill="#0091EA" font-size="12" text-anchor="middle">1.2 m</text>
-        </svg>
-      </div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Parallel sides of the trapezium, a = 1 m, b = 1.2 m</div>
-        <div class="sol-step">Perpendicular distance (height), h = 0.8 m</div>
-        <div class="sol-step">Area of trapezium = <span class='frac'><span class='num'>1</span><span class='den'>2</span></span> × (a + b) × h</div>
-        <div class="sol-step">= <span class='frac'><span class='num'>1</span><span class='den'>2</span></span> × (1 + 1.2) × 0.8</div>
-        <div class="sol-step">= <span class='frac'><span class='num'>1</span><span class='den'>2</span></span> × 2.2 × 0.8</div>
-        <div class="sol-step">= 1.1 × 0.8 = <span class="ans-highlight">0.88 m²</span></div>
-        <div class="sol-step">The area of the top surface of the table is 0.88 m².</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">2. The area of a trapezium is 34 cm² and the length of one of the parallel sides is 10 cm and its height is 4 cm. Find the length of the other parallel side.</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Let the length of the other parallel side be x.</div>
-        <div class="sol-step">Area of trapezium = 34 cm²</div>
-        <div class="sol-step">One parallel side, a = 10 cm</div>
-        <div class="sol-step">Height, h = 4 cm</div>
-        <div class="sol-step">Area = <span class='frac'><span class='num'>1</span><span class='den'>2</span></span> × (a + x) × h</div>
-        <div class="sol-step">34 = <span class='frac'><span class='num'>1</span><span class='den'>2</span></span> × (10 + x) × 4</div>
-        <div class="sol-step">34 = 2 × (10 + x)</div>
-        <div class="sol-step">10 + x = <span class='frac'><span class='num'>34</span><span class='den'>2</span></span> = 17</div>
-        <div class="sol-step">x = 17 - 10 = <span class="ans-highlight">7 cm</span></div>
-        <div class="sol-step">The length of the other parallel side is 7 cm.</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">3. Length of the fence of a trapezium shaped field ABCD is 120 m. If BC = 48 m, CD = 17 m and AD = 40 m, find the area of this field. Side AB is perpendicular to the parallel sides AD and BC.</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Perimeter of trapezium ABCD = 120 m</div>
-        <div class="sol-step">AB + BC + CD + AD = 120 m</div>
-        <div class="sol-step">AB + 48 + 17 + 40 = 120</div>
-        <div class="sol-step">AB + 105 = 120</div>
-        <div class="sol-step">AB = 120 - 105 = 15 m</div>
-        <div class="sol-step">Since AB is perpendicular to parallel sides AD and BC, AB is the height (h) = 15 m.</div>
-        <div class="sol-step">Parallel sides are AD = 40 m and BC = 48 m.</div>
-        <div class="sol-step">Area of the field = <span class='frac'><span class='num'>1</span><span class='den'>2</span></span> × (AD + BC) × AB</div>
-        <div class="sol-step">= <span class='frac'><span class='num'>1</span><span class='den'>2</span></span> × (40 + 48) × 15</div>
-        <div class="sol-step">= <span class='frac'><span class='num'>1</span><span class='den'>2</span></span> × 88 × 15 = 44 × 15</div>
-        <div class="sol-step">= <span class="ans-highlight">660 m²</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">4. The diagonal of a quadrilateral shaped field is 24 m and the perpendiculars dropped on it from the remaining opposite vertices are 8 m and 13 m. Find the area of the field.</div>
-      <div class="fig-container">
-        <svg width="200" height="120" viewBox="0 0 200 120">
-          <polygon points="20,60 100,20 180,60 140,100" fill="rgba(0,145,234,0.1)" stroke="#0091EA" stroke-width="2"/>
-          <line x1="20" y1="60" x2="180" y2="60" stroke="#0091EA"/>
-          <line x1="100" y1="20" x2="100" y2="60" stroke="#0091EA" stroke-dasharray="4"/>
-          <line x1="140" y1="100" x2="140" y2="60" stroke="#0091EA" stroke-dasharray="4"/>
-          <text x="105" y="45" fill="#0091EA" font-size="12">13m</text>
-          <text x="145" y="85" fill="#0091EA" font-size="12">8m</text>
-          <text x="160" y="55" fill="#0091EA" font-size="12">24m</text>
-        </svg>
-      </div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Diagonal (d) = 24 m</div>
-        <div class="sol-step">Perpendiculars (heights) are h₁ = 13 m and h₂ = 8 m</div>
-        <div class="sol-step">Area of quadrilateral = <span class='frac'><span class='num'>1</span><span class='den'>2</span></span> × d × (h₁ + h₂)</div>
-        <div class="sol-step">= <span class='frac'><span class='num'>1</span><span class='den'>2</span></span> × 24 × (13 + 8)</div>
-        <div class="sol-step">= 12 × 21</div>
-        <div class="sol-step">= <span class="ans-highlight">252 m²</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">5. The diagonals of a rhombus are 7.5 cm and 12 cm. Find its area.</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Let diagonals be d₁ = 7.5 cm and d₂ = 12 cm.</div>
-        <div class="sol-step">Area of rhombus = <span class='frac'><span class='num'>1</span><span class='den'>2</span></span> × d₁ × d₂</div>
-        <div class="sol-step">= <span class='frac'><span class='num'>1</span><span class='den'>2</span></span> × 7.5 × 12</div>
-        <div class="sol-step">= 7.5 × 6</div>
-        <div class="sol-step">= <span class="ans-highlight">45 cm²</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">6. Find the area of a rhombus whose side is 5 cm and whose altitude is 4.8 cm. If one of its diagonals is 8 cm long, find the length of the other diagonal.</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">A rhombus is also a parallelogram.</div>
-        <div class="sol-step">Area = Base × Altitude = Side × Altitude</div>
-        <div class="sol-step">= 5 cm × 4.8 cm = <span class="ans-highlight">24 cm²</span></div>
-        <div class="sol-step">We also know, Area = <span class='frac'><span class='num'>1</span><span class='den'>2</span></span> × d₁ × d₂</div>
-        <div class="sol-step">Given d₁ = 8 cm.</div>
-        <div class="sol-step">24 = <span class='frac'><span class='num'>1</span><span class='den'>2</span></span> × 8 × d₂</div>
-        <div class="sol-step">24 = 4 × d₂</div>
-        <div class="sol-step">d₂ = <span class='frac'><span class='num'>24</span><span class='den'>4</span></span> = <span class="ans-highlight">6 cm</span></div>
-        <div class="sol-step">The length of the other diagonal is 6 cm.</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">7. The floor of a building consists of 3000 tiles which are rhombus shaped and each of its diagonals are 45 cm and 30 cm in length. Find the total cost of polishing the floor, if the cost per m² is Rs 4.</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Area of one tile = <span class='frac'><span class='num'>1</span><span class='den'>2</span></span> × d₁ × d₂</div>
-        <div class="sol-step">= <span class='frac'><span class='num'>1</span><span class='den'>2</span></span> × 45 × 30 = 45 × 15 = 675 cm²</div>
-        <div class="sol-step">Total area of 3000 tiles = 675 × 3000 = 20,25,000 cm²</div>
-        <div class="sol-step">Convert to m² (since 1 m² = 10,000 cm²):</div>
-        <div class="sol-step">Total Area = <span class='frac'><span class='num'>2025000</span><span class='den'>10000</span></span> = 202.5 m²</div>
-        <div class="sol-step">Cost of polishing 1 m² = Rs 4</div>
-        <div class="sol-step">Total cost = 202.5 × 4 = <span class="ans-highlight">Rs 810</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">8. Manish wants to buy a trapezium shaped field. Its side along the river is parallel to and twice the side along the road. If the area of this field is 10500 m² and the perpendicular distance between the two parallel sides is 100 m, find the length of the side along the river.</div>
-      <div class="fig-container">
-        <svg width="250" height="100" viewBox="0 0 250 100">
-          <line x1="10" y1="20" x2="240" y2="20" stroke="#0091EA" stroke-width="1" stroke-dasharray="4"/>
-          <line x1="10" y1="80" x2="240" y2="80" stroke="#0091EA" stroke-width="1" stroke-dasharray="4"/>
-          <polygon points="60,20 180,20 200,80 40,80" fill="rgba(0,145,234,0.1)" stroke="#0091EA" stroke-width="2"/>
-          <line x1="120" y1="20" x2="120" y2="80" stroke="#0091EA" stroke-dasharray="4"/>
-          <text x="125" y="55" fill="#0091EA" font-size="12">100m</text>
-          <text x="120" y="15" fill="#e0e0e0" font-size="12" text-anchor="middle">Road</text>
-          <text x="120" y="95" fill="#e0e0e0" font-size="12" text-anchor="middle">River</text>
-        </svg>
-      </div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Let the side along the road be x meters.</div>
-        <div class="sol-step">Then, the side along the river = 2x meters.</div>
-        <div class="sol-step">Height (h) = 100 m, Area = 10500 m²</div>
-        <div class="sol-step">Area = <span class='frac'><span class='num'>1</span><span class='den'>2</span></span> × (a + b) × h</div>
-        <div class="sol-step">10500 = <span class='frac'><span class='num'>1</span><span class='den'>2</span></span> × (x + 2x) × 100</div>
-        <div class="sol-step">10500 = <span class='frac'><span class='num'>1</span><span class='den'>2</span></span> × 3x × 100</div>
-        <div class="sol-step">10500 = 150x</div>
-        <div class="sol-step">x = <span class='frac'><span class='num'>10500</span><span class='den'>150</span></span> = 70 m</div>
-        <div class="sol-step">Length of the side along the river = 2x = 2 × 70 = <span class="ans-highlight">140 m</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">9. Top surface of a raised platform is in the shape of a regular octagon as shown in the figure. Find the area of the octagonal surface.</div>
-      <div class="fig-container">
-        <svg width="120" height="120" viewBox="0 0 120 120">
-          <polygon points="40,10 80,10 110,40 110,80 80,110 40,110 10,80 10,40" fill="rgba(0,145,234,0.1)" stroke="#0091EA" stroke-width="2"/>
-          <line x1="10" y1="40" x2="110" y2="40" stroke="#0091EA" stroke-dasharray="4"/>
-          <line x1="40" y1="10" x2="40" y2="40" stroke="#0091EA" stroke-dasharray="4"/>
-          <text x="25" y="30" fill="#0091EA" font-size="12">4m</text>
-          <text x="60" y="55" fill="#0091EA" font-size="12">11m</text>
-          <text x="115" y="65" fill="#0091EA" font-size="12">5m</text>
-        </svg>
-      </div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">The octagon can be divided into two identical trapeziums and one central rectangle.</div>
-        <div class="sol-step">Since it's a regular octagon, all sides are equal to 5 m.</div>
-        <div class="sol-step">Area of one trapezium = <span class='frac'><span class='num'>1</span><span class='den'>2</span></span> × (a + b) × h</div>
-        <div class="sol-step">= <span class='frac'><span class='num'>1</span><span class='den'>2</span></span> × (11 + 5) × 4 = <span class='frac'><span class='num'>1</span><span class='den'>2</span></span> × 16 × 4 = 32 m²</div>
-        <div class="sol-step">Area of two trapeziums = 2 × 32 = 64 m²</div>
-        <div class="sol-step">Area of central rectangle = length × breadth = 11 × 5 = 55 m²</div>
-        <div class="sol-step">Total area = 64 + 55 = <span class="ans-highlight">119 m²</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">10. There is a pentagonal shaped park as shown in the figure.<br/>For finding its area Asha and Samina divided it in two different ways.<br/>Find the area of this park using both ways.</div>
-      <div class="fig-container">
-        <svg width="150" height="150" viewBox="0 0 150 150">
-          <polygon points="75,10 125,60 125,130 25,130 25,60" fill="rgba(0,145,234,0.1)" stroke="#0091EA" stroke-width="2"/>
-          <line x1="25" y1="130" x2="125" y2="130" stroke="#0091EA" stroke-width="2"/>
-          <line x1="75" y1="10" x2="75" y2="130" stroke="#0091EA" stroke-dasharray="4"/>
-          <text x="45" y="145" fill="#0091EA" font-size="12">15m</text>
-          <text x="135" y="100" fill="#0091EA" font-size="12">15m</text>
-          <text x="80" y="80" fill="#0091EA" font-size="12">30m</text>
-        </svg>
-      </div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step"><span class="step-label">Asha's Method (Two Trapeziums):</span></div>
-        <div class="sol-step">Asha divided the pentagon vertically into two identical trapeziums.</div>
-        <div class="sol-step">Parallel sides of each trapezium = 15 m and 30 m.</div>
-        <div class="sol-step">Height of each trapezium = <span class='frac'><span class='num'>15</span><span class='den'>2</span></span> = 7.5 m</div>
-        <div class="sol-step">Area = 2 × [ <span class='frac'><span class='num'>1</span><span class='den'>2</span></span> × (15 + 30) × 7.5 ]</div>
-        <div class="sol-step">= 45 × 7.5 = <span class="ans-highlight">337.5 m²</span></div>
-        <br/>
-        <div class="sol-step"><span class="step-label">Samina's Method (Square + Triangle):</span></div>
-        <div class="sol-step">Samina divided it horizontally into a square and a triangle.</div>
-        <div class="sol-step">Area of square = 15 × 15 = 225 m²</div>
-        <div class="sol-step">Area of triangle = <span class='frac'><span class='num'>1</span><span class='den'>2</span></span> × base × height</div>
-        <div class="sol-step">Height of triangle = 30 - 15 = 15 m</div>
-        <div class="sol-step">Area of triangle = <span class='frac'><span class='num'>1</span><span class='den'>2</span></span> × 15 × 15 = 112.5 m²</div>
-        <div class="sol-step">Total area = 225 + 112.5 = <span class="ans-highlight">337.5 m²</span></div>
-        <div class="sol-step">Both methods give the same area.</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">11. Diagram of the adjacent picture frame has outer dimensions = 24 cm × 28 cm and inner dimensions 16 cm × 20 cm. Find the area of each section of the frame, if the width of each section is same.</div>
-      <div class="fig-container">
-        <svg width="150" height="170" viewBox="0 0 150 170">
-          <rect x="10" y="10" width="130" height="150" fill="rgba(0,145,234,0.05)" stroke="#0091EA" stroke-width="2"/>
-          <rect x="30" y="30" width="90" height="110" fill="#121212" stroke="#0091EA" stroke-width="2"/>
-          <line x1="10" y1="10" x2="30" y2="30" stroke="#0091EA" stroke-width="2"/>
-          <line x1="140" y1="10" x2="120" y2="30" stroke="#0091EA" stroke-width="2"/>
-          <line x1="10" y1="160" x2="30" y2="140" stroke="#0091EA" stroke-width="2"/>
-          <line x1="140" y1="160" x2="120" y2="140" stroke="#0091EA" stroke-width="2"/>
-          <text x="75" y="25" fill="#0091EA" font-size="12" text-anchor="middle">16 cm</text>
-          <text x="75" y="155" fill="#0091EA" font-size="12" text-anchor="middle">24 cm</text>
-          <text x="25" y="85" fill="#0091EA" font-size="12" text-anchor="middle" transform="rotate(-90 25 85)">20 cm</text>
-        </svg>
-      </div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">The frame has 4 sections (2 horizontal and 2 vertical trapeziums).</div>
-        <div class="sol-step">Width of horizontal sections = <span class='frac'><span class='num'>28 - 20</span><span class='den'>2</span></span> = <span class='frac'><span class='num'>8</span><span class='den'>2</span></span> = 4 cm</div>
-        <div class="sol-step">Width of vertical sections = <span class='frac'><span class='num'>24 - 16</span><span class='den'>2</span></span> = <span class='frac'><span class='num'>8</span><span class='den'>2</span></span> = 4 cm</div>
-        <div class="sol-step">Area of top/bottom sections (trapeziums):</div>
-        <div class="sol-step">Parallel sides = 24 cm and 16 cm, Height = 4 cm</div>
-        <div class="sol-step">Area = <span class='frac'><span class='num'>1</span><span class='den'>2</span></span> × (24 + 16) × 4 = <span class='frac'><span class='num'>1</span><span class='den'>2</span></span> × 40 × 4 = <span class="ans-highlight">80 cm² each</span></div>
-        <div class="sol-step">Area of left/right sections (trapeziums):</div>
-        <div class="sol-step">Parallel sides = 28 cm and 20 cm, Height = 4 cm</div>
-        <div class="sol-step">Area = <span class='frac'><span class='num'>1</span><span class='den'>2</span></span> × (28 + 20) × 4 = <span class='frac'><span class='num'>1</span><span class='den'>2</span></span> × 48 × 4 = <span class="ans-highlight">96 cm² each</span></div>
-      </div>
-    </div>
-  </div>
-`;
-
-const ex92Content = `
-  <style>
-    .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
-    .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
-    .frac .den { padding: 0 2px; }
-    .ex-container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
-    .q-card { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 15px; margin-bottom: 25px; }
-    .q-text { color: #0091EA; font-weight: 600; margin-bottom: 12px; }
-    .q-subtext { color: #e0e0e0; margin-bottom: 5px; margin-left: 10px; }
-    .sol-box { border-left: 3px solid #0091EA; padding-left: 15px; margin-top: 15px; background: rgba(0, 145, 234, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; }
-    .ans-highlight { color: #0091EA; font-weight: 700; }
-    .step-label { color: #40C4FF; font-weight: 600; margin-right: 5px; }
-    .sol-step { margin-bottom: 8px; }
-    .q-text, .q-subtext, .sol-step, .sol-box { font-size: 16px; line-height: 1.8; }
-    .fig-container { display: flex; justify-content: center; margin: 15px 0; }
-  </style>
-  <div class="ex-container">
-    <div class="q-card">
-      <div class="q-text">1. There are two cuboidal boxes as shown in the adjoining figure. Which box requires the lesser amount of material to make?</div>
-      <div class="fig-container">
-        <svg width="250" height="120" viewBox="0 0 250 120">
-          <polygon points="10,60 70,60 90,40 30,40" fill="rgba(0,145,234,0.1)" stroke="#0091EA" stroke-width="2"/>
-          <polygon points="10,60 10,100 70,100 70,60" fill="rgba(0,145,234,0.1)" stroke="#0091EA" stroke-width="2"/>
-          <polygon points="70,100 90,80 90,40 70,60" fill="rgba(0,145,234,0.1)" stroke="#0091EA" stroke-width="2"/>
-          <text x="40" y="115" fill="#0091EA" font-size="12" text-anchor="middle">60 cm</text>
-          <text x="95" y="70" fill="#0091EA" font-size="12">40 cm</text>
-          <text x="75" y="50" fill="#0091EA" font-size="12">50 cm</text>
-          
-          <polygon points="150,60 190,60 210,40 170,40" fill="rgba(0,145,234,0.1)" stroke="#0091EA" stroke-width="2"/>
-          <polygon points="150,60 150,100 190,100 190,60" fill="rgba(0,145,234,0.1)" stroke="#0091EA" stroke-width="2"/>
-          <polygon points="190,100 210,80 210,40 190,60" fill="rgba(0,145,234,0.1)" stroke="#0091EA" stroke-width="2"/>
-          <text x="170" y="115" fill="#0091EA" font-size="12" text-anchor="middle">50 cm</text>
-          <text x="215" y="70" fill="#0091EA" font-size="12">50 cm</text>
-          <text x="195" y="50" fill="#0091EA" font-size="12">50 cm</text>
-        </svg>
-      </div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step"><span class="step-label">For Box (a):</span> Length (l) = 60 cm, Breadth (b) = 40 cm, Height (h) = 50 cm</div>
-        <div class="sol-step">Total Surface Area = 2(lb + bh + hl)</div>
-        <div class="sol-step">= 2(60×40 + 40×50 + 50×60)</div>
-        <div class="sol-step">= 2(2400 + 2000 + 3000)</div>
-        <div class="sol-step">= 2(7400) = 14800 cm²</div>
-        <br/>
-        <div class="sol-step"><span class="step-label">For Box (b):</span> It is a cube with side (a) = 50 cm</div>
-        <div class="sol-step">Total Surface Area = 6a²</div>
-        <div class="sol-step">= 6(50)² = 6 × 2500 = 15000 cm²</div>
-        <div class="sol-step">Since 14800 cm² < 15000 cm², <span class="ans-highlight">Box (a) requires lesser material.</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">2. A suitcase with measures 80 cm × 48 cm × 24 cm is to be covered with a tarpaulin cloth. How many metres of tarpaulin of width 96 cm is required to cover 100 such suitcases?</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Length (l) = 80 cm, Breadth (b) = 48 cm, Height (h) = 24 cm</div>
-        <div class="sol-step">Total Surface Area of 1 suitcase = 2(lb + bh + hl)</div>
-        <div class="sol-step">= 2(80×48 + 48×24 + 24×80)</div>
-        <div class="sol-step">= 2(3840 + 1152 + 1920) = 2(6912) = 13824 cm²</div>
-        <div class="sol-step">Surface Area of 100 suitcases = 100 × 13824 = 13,82,400 cm²</div>
-        <div class="sol-step">Area of tarpaulin required = Area of 100 suitcases</div>
-        <div class="sol-step">Length × Width = 1382400</div>
-        <div class="sol-step">Length × 96 = 1382400</div>
-        <div class="sol-step">Length = <span class='frac'><span class='num'>1382400</span><span class='den'>96</span></span> = 14400 cm</div>
-        <div class="sol-step">Convert to metres: 14400 cm = <span class="ans-highlight">144 m</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">3. Find the side of a cube whose surface area is 600 cm².</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Surface Area of a cube = 6a²</div>
-        <div class="sol-step">6a² = 600</div>
-        <div class="sol-step">a² = <span class='frac'><span class='num'>600</span><span class='den'>6</span></span> = 100</div>
-        <div class="sol-step">a = √100 = <span class="ans-highlight">10 cm</span></div>
-        <div class="sol-step">The side of the cube is 10 cm.</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">4. Reeta painted the outside of the cabinet of measure 1 m × 2 m × 1.5 m. How much surface area did she cover if she painted all except the bottom of the cabinet.</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Length (l) = 2 m, Breadth (b) = 1 m, Height (h) = 1.5 m</div>
-        <div class="sol-step">Area to be painted = Total Surface Area - Area of bottom</div>
-        <div class="sol-step">= 2(lb + bh + hl) - lb</div>
-        <div class="sol-step">= lb + 2(bh + hl)</div>
-        <div class="sol-step">= (2 × 1) + 2(1×1.5 + 1.5×2)</div>
-        <div class="sol-step">= 2 + 2(1.5 + 3) = 2 + 2(4.5)</div>
-        <div class="sol-step">= 2 + 9 = <span class="ans-highlight">11 m²</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">5. Dawood is painting the walls and ceiling of a cuboidal hall with length, breadth and height of 15 m, 10 m and 7 m respectively. From each can of paint 100 m² of area is painted. How many cans of paint will she need to paint the room?</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Length (l) = 15 m, Breadth (b) = 10 m, Height (h) = 7 m</div>
-        <div class="sol-step">Area to be painted = Area of 4 walls + Area of ceiling</div>
-        <div class="sol-step">= 2h(l + b) + lb</div>
-        <div class="sol-step">= 2×7(15 + 10) + (15 × 10)</div>
-        <div class="sol-step">= 14(25) + 150</div>
-        <div class="sol-step">= 350 + 150 = 500 m²</div>
-        <div class="sol-step">Area covered by 1 can = 100 m²</div>
-        <div class="sol-step">Number of cans needed = <span class='frac'><span class='num'>500</span><span class='den'>100</span></span> = <span class="ans-highlight">5 cans</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">6. Describe how the two figures at the right are alike and how they are different. Which box has larger lateral surface area?</div>
-      <div class="fig-container">
-        <svg width="200" height="120" viewBox="0 0 200 120">
-          <ellipse cx="50" cy="30" rx="30" ry="10" fill="rgba(0,145,234,0.1)" stroke="#0091EA" stroke-width="2"/>
-          <line x1="20" y1="30" x2="20" y2="90" stroke="#0091EA" stroke-width="2"/>
-          <line x1="80" y1="30" x2="80" y2="90" stroke="#0091EA" stroke-width="2"/>
-          <path d="M 20 90 A 30 10 0 0 0 80 90" fill="rgba(0,145,234,0.1)" stroke="#0091EA" stroke-width="2"/>
-          <text x="90" y="65" fill="#0091EA" font-size="12">7 cm</text>
-          <text x="50" y="110" fill="#0091EA" font-size="12" text-anchor="middle">7 cm</text>
-          
-          <polygon points="130,40 170,40 190,20 150,20" fill="rgba(0,145,234,0.1)" stroke="#0091EA" stroke-width="2"/>
-          <polygon points="130,40 130,80 170,80 170,40" fill="rgba(0,145,234,0.1)" stroke="#0091EA" stroke-width="2"/>
-          <polygon points="170,80 190,60 190,20 170,40" fill="rgba(0,145,234,0.1)" stroke="#0091EA" stroke-width="2"/>
-          <text x="150" y="95" fill="#0091EA" font-size="12" text-anchor="middle">7 cm</text>
-          <text x="195" y="60" fill="#0091EA" font-size="12">7 cm</text>
-        </svg>
-      </div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step"><span class="step-label">Alike:</span> Both figures have the same height of 7 cm.</div>
-        <div class="sol-step"><span class="step-label">Different:</span> One is a cylinder and the other is a cube.</div>
-        <br/>
-        <div class="sol-step">Lateral Surface Area of cylinder = 2πrh</div>
-        <div class="sol-step">Radius (r) = <span class='frac'><span class='num'>7</span><span class='den'>2</span></span> cm, h = 7 cm</div>
-        <div class="sol-step">= 2 × <span class='frac'><span class='num'>22</span><span class='den'>7</span></span> × <span class='frac'><span class='num'>7</span><span class='den'>2</span></span> × 7 = 22 × 7 = 154 cm²</div>
-        <br/>
-        <div class="sol-step">Lateral Surface Area of cube = 4a²</div>
-        <div class="sol-step">Side (a) = 7 cm</div>
-        <div class="sol-step">= 4 × 7² = 4 × 49 = 196 cm²</div>
-        <div class="sol-step">Since 196 cm² > 154 cm², the <span class="ans-highlight">cube has larger lateral surface area.</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">7. A closed cylindrical tank of radius 7 m and height 3 m is made from a sheet of metal. How much sheet of metal is required?</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Radius (r) = 7 m, Height (h) = 3 m</div>
-        <div class="sol-step">Metal sheet required = Total Surface Area of closed cylinder</div>
-        <div class="sol-step">= 2πr(r + h)</div>
-        <div class="sol-step">= 2 × <span class='frac'><span class='num'>22</span><span class='den'>7</span></span> × 7 × (7 + 3)</div>
-        <div class="sol-step">= 44 × 10 = <span class="ans-highlight">440 m²</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">8. The lateral surface area of a hollow cylinder is 4224 cm². It is cut along its height and formed a rectangular sheet of width 33 cm. Find the perimeter of rectangular sheet?</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Lateral surface area of cylinder = Area of rectangular sheet = 4224 cm²</div>
-        <div class="sol-step">Width of sheet = 33 cm</div>
-        <div class="sol-step">Length × Width = Area</div>
-        <div class="sol-step">Length × 33 = 4224</div>
-        <div class="sol-step">Length = <span class='frac'><span class='num'>4224</span><span class='den'>33</span></span> = 128 cm</div>
-        <div class="sol-step">Perimeter of sheet = 2 × (Length + Width)</div>
-        <div class="sol-step">= 2 × (128 + 33) = 2 × 161 = <span class="ans-highlight">322 cm</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">9. A road roller takes 750 complete revolutions to move once over to level a road. Find the area of the road if the diameter of a road roller is 84 cm and length is 1 m.</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Diameter = 84 cm, so Radius (r) = 42 cm</div>
-        <div class="sol-step">Length (h) = 1 m = 100 cm</div>
-        <div class="sol-step">Area leveled in 1 revolution = Lateral Surface Area = 2πrh</div>
-        <div class="sol-step">= 2 × <span class='frac'><span class='num'>22</span><span class='den'>7</span></span> × 42 × 100</div>
-        <div class="sol-step">= 44 × 6 × 100 = 26400 cm²</div>
-        <div class="sol-step">Convert to m²: <span class='frac'><span class='num'>26400</span><span class='den'>10000</span></span> = 2.64 m²</div>
-        <div class="sol-step">Area leveled in 750 revolutions = 750 × 2.64 = <span class="ans-highlight">1980 m²</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">10. A company packages its milk powder in cylindrical container whose base has a diameter of 14 cm and height 20 cm. Company places a label around the surface of the container. If the label is placed 2 cm from top and bottom, what is the area of the label.</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Diameter = 14 cm, so Radius (r) = 7 cm</div>
-        <div class="sol-step">Total height of container = 20 cm</div>
-        <div class="sol-step">The label is 2 cm away from both top and bottom.</div>
-        <div class="sol-step">Height of the label (h) = 20 - 2 - 2 = 16 cm</div>
-        <div class="sol-step">Area of the label = Lateral Surface Area = 2πrh</div>
-        <div class="sol-step">= 2 × <span class='frac'><span class='num'>22</span><span class='den'>7</span></span> × 7 × 16</div>
-        <div class="sol-step">= 44 × 16 = <span class="ans-highlight">704 cm²</span></div>
-      </div>
-    </div>
-  </div>
-`;
-
-const ex93Content = `
-  <style>
-    .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
-    .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
-    .frac .den { padding: 0 2px; }
-    .ex-container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
-    .q-card { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 15px; margin-bottom: 25px; }
-    .q-text { color: #0091EA; font-weight: 600; margin-bottom: 12px; }
-    .q-subtext { color: #e0e0e0; margin-bottom: 5px; margin-left: 10px; }
-    .sol-box { border-left: 3px solid #0091EA; padding-left: 15px; margin-top: 15px; background: rgba(0, 145, 234, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; }
-    .ans-highlight { color: #0091EA; font-weight: 700; }
-    .step-label { color: #40C4FF; font-weight: 600; margin-right: 5px; }
-    .sol-step { margin-bottom: 8px; }
-    .q-text, .q-subtext, .sol-step, .sol-box { font-size: 16px; line-height: 1.8; }
-    .fig-container { display: flex; justify-content: center; margin: 15px 0; }
-  </style>
-  <div class="ex-container">
-    <div class="q-card">
-      <div class="q-text">1. Given a cylindrical tank, in which situation will you find surface area and in which situation volume.</div>
-      <div class="q-subtext">(a) To find how much it can hold.</div>
-      <div class="q-subtext">(b) Number of cement bags required to plaster it.</div>
-      <div class="q-subtext">(c) To find the number of smaller tanks that can be filled with water from it.</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">(a) To find how much it can hold, we need its <span class="ans-highlight">Volume</span>.</div>
-        <div class="sol-step">(b) To find cement bags to plaster it, we need its <span class="ans-highlight">Surface Area</span>.</div>
-        <div class="sol-step">(c) To find smaller tanks to be filled, we need its <span class="ans-highlight">Volume</span>.</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">2. Diameter of cylinder A is 7 cm, and the height is 14 cm. Diameter of cylinder B is 14 cm and height is 7 cm. Without doing any calculations can you suggest whose volume is greater? Verify it by finding the volume of both the cylinders. Check whether the cylinder with greater volume also has greater surface area?</div>
-      <div class="fig-container">
-        <svg width="200" height="120" viewBox="0 0 200 120">
-          <!-- Cylinder A -->
-          <ellipse cx="40" cy="20" rx="20" ry="6" fill="rgba(0,145,234,0.1)" stroke="#0091EA" stroke-width="2"/>
-          <line x1="20" y1="20" x2="20" y2="90" stroke="#0091EA" stroke-width="2"/>
-          <line x1="60" y1="20" x2="60" y2="90" stroke="#0091EA" stroke-width="2"/>
-          <path d="M 20 90 A 20 6 0 0 0 60 90" fill="rgba(0,145,234,0.1)" stroke="#0091EA" stroke-width="2"/>
-          <text x="65" y="55" fill="#0091EA" font-size="10">14 cm</text>
-          <text x="40" y="110" fill="#0091EA" font-size="10" text-anchor="middle">7 cm</text>
-          <text x="40" y="120" fill="#e0e0e0" font-size="10" text-anchor="middle">A</text>
-          
-          <!-- Cylinder B -->
-          <ellipse cx="140" cy="60" rx="40" ry="10" fill="rgba(0,145,234,0.1)" stroke="#0091EA" stroke-width="2"/>
-          <line x1="100" y1="60" x2="100" y2="90" stroke="#0091EA" stroke-width="2"/>
-          <line x1="180" y1="60" x2="180" y2="90" stroke="#0091EA" stroke-width="2"/>
-          <path d="M 100 90 A 40 10 0 0 0 180 90" fill="rgba(0,145,234,0.1)" stroke="#0091EA" stroke-width="2"/>
-          <text x="185" y="80" fill="#0091EA" font-size="10">7 cm</text>
-          <text x="140" y="110" fill="#0091EA" font-size="10" text-anchor="middle">14 cm</text>
-          <text x="140" y="120" fill="#e0e0e0" font-size="10" text-anchor="middle">B</text>
-        </svg>
-      </div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Since radius is squared in the volume formula (πr²h), the cylinder with the larger radius (Cylinder B) will likely have the greater volume.</div>
-        <br/>
-        <div class="sol-step"><span class="step-label">Volume verification:</span></div>
-        <div class="sol-step">Volume of A = πr²h = <span class='frac'><span class='num'>22</span><span class='den'>7</span></span> × (<span class='frac'><span class='num'>7</span><span class='den'>2</span></span>)² × 14 = <span class='frac'><span class='num'>22</span><span class='den'>7</span></span> × <span class='frac'><span class='num'>49</span><span class='den'>4</span></span> × 14 = 539 cm³</div>
-        <div class="sol-step">Volume of B = πr²h = <span class='frac'><span class='num'>22</span><span class='den'>7</span></span> × 7² × 7 = 22 × 49 = 1078 cm³</div>
-        <div class="sol-step">Yes, Volume of B > Volume of A.</div>
-        <br/>
-        <div class="sol-step"><span class="step-label">Surface Area verification:</span></div>
-        <div class="sol-step">TSA of A = 2πr(r + h) = 2 × <span class='frac'><span class='num'>22</span><span class='den'>7</span></span> × 3.5 × (3.5 + 14) = 22 × 17.5 = 385 cm²</div>
-        <div class="sol-step">TSA of B = 2πr(r + h) = 2 × <span class='frac'><span class='num'>22</span><span class='den'>7</span></span> × 7 × (7 + 7) = 44 × 14 = 616 cm²</div>
-        <div class="sol-step"><span class="ans-highlight">Yes, the cylinder with greater volume also has greater surface area.</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">3. Find the height of a cuboid whose base area is 180 cm² and volume is 900 cm³.</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Volume of cuboid = Base Area × Height</div>
-        <div class="sol-step">900 = 180 × Height</div>
-        <div class="sol-step">Height = <span class='frac'><span class='num'>900</span><span class='den'>180</span></span> = <span class="ans-highlight">5 cm</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">4. A cuboid is of dimensions 60 cm × 54 cm × 30 cm. How many small cubes with side 6 cm can be placed in the given cuboid?</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Volume of cuboid = 60 × 54 × 30 = 97200 cm³</div>
-        <div class="sol-step">Volume of 1 small cube = 6³ = 216 cm³</div>
-        <div class="sol-step">Number of cubes = <span class='frac'><span class='num'>Volume of cuboid</span><span class='den'>Volume of 1 cube</span></span> = <span class='frac'><span class='num'>97200</span><span class='den'>216</span></span></div>
-        <div class="sol-step">= <span class="ans-highlight">450 cubes</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">5. Find the height of the cylinder whose volume is 1.54 m³ and diameter of the base is 140 cm?</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Volume (V) = 1.54 m³</div>
-        <div class="sol-step">Diameter = 140 cm, so Radius (r) = 70 cm = 0.7 m</div>
-        <div class="sol-step">Volume = πr²h</div>
-        <div class="sol-step">1.54 = <span class='frac'><span class='num'>22</span><span class='den'>7</span></span> × 0.7 × 0.7 × h</div>
-        <div class="sol-step">1.54 = 22 × 0.1 × 0.7 × h</div>
-        <div class="sol-step">1.54 = 1.54 × h</div>
-        <div class="sol-step">h = <span class="ans-highlight">1 m</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">6. A milk tank is in the form of cylinder whose radius is 1.5 m and length is 7 m. Find the quantity of milk in litres that can be stored in the tank?</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Radius (r) = 1.5 m, Height (h) = 7 m</div>
-        <div class="sol-step">Volume of tank = πr²h</div>
-        <div class="sol-step">= <span class='frac'><span class='num'>22</span><span class='den'>7</span></span> × 1.5 × 1.5 × 7</div>
-        <div class="sol-step">= 22 × 2.25 = 49.5 m³</div>
-        <div class="sol-step">Since 1 m³ = 1000 litres,</div>
-        <div class="sol-step">Quantity of milk = 49.5 × 1000 = <span class="ans-highlight">49,500 litres</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">7. If each edge of a cube is doubled,</div>
-      <div class="q-subtext">(i) how many times will its surface area increase?</div>
-      <div class="q-subtext">(ii) how many times will its volume increase?</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Let original edge be 'a'. Surface Area = 6a², Volume = a³</div>
-        <div class="sol-step">New edge = 2a</div>
-        <div class="sol-step"><span class="step-label">(i) Surface Area:</span> New SA = 6(2a)² = 6(4a²) = 4 × (6a²)</div>
-        <div class="sol-step">Surface area will increase by <span class="ans-highlight">4 times</span>.</div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(ii) Volume:</span> New Vol = (2a)³ = 8a³ = 8 × (a³)</div>
-        <div class="sol-step">Volume will increase by <span class="ans-highlight">8 times</span>.</div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">8. Water is pouring into a cubiodal reservoir at the rate of 60 litres per minute. If the volume of reservoir is 108 m³, find the number of hours it will take to fill the reservoir.</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Volume of reservoir = 108 m³</div>
-        <div class="sol-step">Convert to litres (1 m³ = 1000 L): 108 × 1000 = 108000 L</div>
-        <div class="sol-step">Rate of pouring = 60 litres/minute</div>
-        <div class="sol-step">Time taken in minutes = <span class='frac'><span class='num'>108000</span><span class='den'>60</span></span> = 1800 minutes</div>
-        <div class="sol-step">Time in hours = <span class='frac'><span class='num'>1800</span><span class='den'>60</span></span> = <span class="ans-highlight">30 hours</span></div>
-      </div>
-    </div>
-  </div>
-`;
-
 export const c8Math9: ChapterContent = {
   id: "c8-math-9",
   number: 9,
-  title: "Mensuration",
+  title: "Algebraic Expressions and Identities",
   introduction:
-    "In this chapter, we explore how to find the area of 2D shapes like parallelograms, triangles, trapeziums, and polygons. We will also learn to calculate the surface area and volume of 3D shapes like cubes, cuboids, and cylinders.",
-  mcqs: [
+    "Algebraic Expressions and Identities forms the foundation of modern algebra. In this chapter, we master terms, factors, and numerical coefficients, classify expressions into monomials, binomials, trinomials, and general polynomials, and perform additions, subtractions, and multiplications of algebraic expressions. We also discover the four fundamental algebraic identities, using them to simplify algebraic expressions and evaluate numerical products with speed and precision.",
+  definitions: [
     {
-      id: "m1",
-      question: "The area of a rhombus is equal to:",
-      options: [
-        "Base × Height",
-        "<span class='frac'><span class='num'>1</span><span class='den'>2</span></span> × d1 × d2",
-        "<span class='frac'><span class='num'>1</span><span class='den'>2</span></span> × Base × Height",
-        "Both A and B",
-      ],
-      correctAnswer: "Both A and B",
+      term: "Algebraic Expression",
+      description:
+        "A mathematical phrase combining variables, constants, and operators (+, &minus;, &times;, &divide;).",
     },
     {
-      id: "m2",
-      question: "1 m³ is equal to how many litres?",
-      options: ["10", "100", "1000", "10000"],
-      correctAnswer: "1000",
+      term: "Term",
+      description:
+        "A single number, variable, or product of numbers and variables separated by plus or minus signs.",
     },
     {
-      id: "m3",
-      question: "The total surface area of a cube of side 'a' is:",
-      options: ["4a²", "6a²", "a³", "2a²"],
-      correctAnswer: "6a²",
+      term: "Numerical Coefficient",
+      description:
+        "The numerical factor of a term (e.g., in -3zy, the numerical coefficient is -3).",
     },
     {
-      id: "m4",
-      question: "Area of a trapezium is:",
-      options: [
-        "<span class='frac'><span class='num'>1</span><span class='den'>2</span></span>(a+b)h",
-        "(a+b)h",
-        "<span class='frac'><span class='num'>1</span><span class='den'>2</span></span>ab",
-        "ah",
-      ],
-      correctAnswer:
-        "<span class='frac'><span class='num'>1</span><span class='den'>2</span></span>(a+b)h",
+      term: "Like Terms",
+      description:
+        "Terms that have identical variable factors raised to the same powers, differing only in numerical coefficients.",
     },
     {
-      id: "m5",
-      question: "The lateral surface area of a cylinder is:",
-      options: ["2πr²", "πr²h", "2πrh", "2πr(r+h)"],
-      correctAnswer: "2πrh",
-    },
-    {
-      id: "m6",
-      question: "If the edge of a cube is doubled, its volume becomes:",
-      options: ["2 times", "4 times", "8 times", "16 times"],
-      correctAnswer: "8 times",
-    },
-    {
-      id: "m7",
-      question: "The volume of a cuboid is given by:",
-      options: ["l+b+h", "lbh", "2(lb+bh+hl)", "l²+b²+h²"],
-      correctAnswer: "lbh",
-    },
-    {
-      id: "m8",
-      question: "1 cm³ is equal to:",
-      options: ["1 mL", "10 mL", "100 mL", "1 L"],
-      correctAnswer: "1 mL",
-    },
-    {
-      id: "m9",
-      question:
-        "Area of a general quadrilateral can be found by splitting it into:",
-      options: ["Two triangles", "Two rectangles", "Two squares", "A circle"],
-      correctAnswer: "Two triangles",
-    },
-    {
-      id: "m10",
-      question: "Surface area of a closed cylinder is:",
-      options: ["2πrh", "2πr² + 2πrh", "πr²h", "πrh"],
-      correctAnswer: "2πr² + 2πrh",
+      term: "Identity",
+      description:
+        "An equality that holds true for all possible numerical values assigned to its variables.",
     },
   ],
-  summary: [
-    "Area of a trapezium = <span class='frac'><span class='num'>1</span><span class='den'>2</span></span>(a+b)×h, where a and b are parallel sides.",
-    "Area of a rhombus = <span class='frac'><span class='num'>1</span><span class='den'>2</span></span>×d1×d2.",
-    "Surface area of a cuboid = 2(lb + bh + hl) and its volume = lbh.",
-    "Surface area of a cube = 6a² and its volume = a³.",
-    "Surface area of a cylinder = 2πr(r+h) and its volume = πr²h.",
-    "1 m³ = 1000 L, 1 L = 1000 cm³, and 1 cm³ = 1 mL.",
+  keyPoints: [
+    "Terms are added to form expressions, and each term is formed as a product of its factors.",
+    "A polynomial of one term is a monomial, of two terms is a binomial, and of three terms is a trinomial.",
+    "Only like terms can be added or subtracted directly by operating on their numerical coefficients.",
+    "When multiplying terms, coefficients are multiplied and powers of like variables are added (aᵐ × aⁿ = aᵐ⁺ⁿ).",
+    "Identity 1: (a + b)² = a² + 2ab + b².",
+    "Identity 2: (a − b)² = a² − 2ab + b².",
+    "Identity 3: (a + b)(a − b) = a² − b².",
+    "Identity 4: (x + a)(x + b) = x² + (a + b)x + ab.",
   ],
+  formulas: [
+    {
+      name: "Identity I (Square of Sum)",
+      formula: "(a + b)² = a² + 2ab + b²",
+    },
+    {
+      name: "Identity II (Square of Difference)",
+      formula: "(a &minus; b)² = a² &minus; 2ab + b²",
+    },
+    {
+      name: "Identity III (Difference of Two Squares)",
+      formula: "(a + b)(a &minus; b) = a² &minus; b²",
+    },
+    {
+      name: "Identity IV (Common First Term Product)",
+      formula: "(x + a)(x + b) = x² + (a + b)x + ab",
+    },
+    {
+      name: "Area of Rectangle",
+      formula: "Area = Length &times; Breadth (Monomial &times; Monomial)",
+    },
+    {
+      name: "Volume of Rectangular Box",
+      formula: "Volume = Length &times; Breadth &times; Height",
+    },
+  ],
+  crux: [],
   exercises: [
-    { id: "ex9-1", name: "Exercise 9.1", questions: [] },
-    { id: "ex9-2", name: "Exercise 9.2", questions: [] },
-    { id: "ex9-3", name: "Exercise 9.3", questions: [] },
+  {
+    "id": "ex9-1",
+    "name": "Exercise 9.1",
+    "questions": [
+      {
+        "id": "c8-m9-ex9-1-q1",
+        "number": "1",
+        "question": "Identify the terms, their coefficients for each of the following expressions: (i) 5xyz² - 3zy (ii) 1 + x + x² (iii) 4x²y² - 4x²y²z² + z² (iv) 3 - pq + qr - p (v) (x/2) + (y/2) - xy (vi) 0.3a - 0.6ab + 0.5b",
+        "solution": [
+          "See complete high-contrast terms and coefficients classification table in the interactive Web View."
+        ]
+      },
+      {
+        "id": "c8-m9-ex9-1-q2",
+        "number": "2",
+        "question": "Classify the following polynomials as monomials, binomials, trinomials. Which polynomials do not fit in any of these three categories? x + y, 1000, x + x² + x³ + x⁴, 7 + y + 5x, 2y - 3y², 2y - 3y² + 4y³, 5x - 4y + 3xy, 4z - 15z², ab + bc + cd + da, pqr, p²q + pq², 2p + 2q",
+        "solution": [
+          "See classification table with terms count and category breakdowns in the interactive Web View."
+        ]
+      },
+      {
+        "id": "c8-m9-ex9-1-q3",
+        "number": "3",
+        "question": "Add the following: (i) ab - bc, bc - ca, ca - ab (ii) a - b + ab, b - c + bc, c - a + ac (iii) 2p²q² - 3pq + 4, 5 + 7pq - 3p²q² (iv) l² + m², m² + n², n² + l², 2lm + 2mn + 2nl",
+        "solution": [
+          "See step-by-step grouping of like terms in the interactive Web View."
+        ]
+      },
+      {
+        "id": "c8-m9-ex9-1-q4",
+        "number": "4",
+        "question": "(a) Subtract 4a - 7ab + 3b + 12 from 12a - 9ab + 5b - 3 (b) Subtract 3xy + 5yz - 7zx from 5xy - 2yz - 2zx + 10xyz (c) Subtract 4p²q - 3pq + 5pq² - 8p + 7q - 10 from 18 - 3p - 11q + 5pq - 2pq² + 5p²q",
+        "solution": [
+          "See algebraic subtraction with bracket signs reversal in the interactive Web View."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ex9-2",
+    "name": "Exercise 9.2",
+    "questions": [
+      {
+        "id": "c8-m9-ex9-2-q1",
+        "number": "1",
+        "question": "Find the product of the following pairs of monomials: (i) 4, 7p (ii) -4p, 7p (iii) -4p, 7pq (iv) 4p³, -3p (v) 4p, 0",
+        "solution": [
+          "See monomial multiplication steps in the interactive Web View."
+        ]
+      },
+      {
+        "id": "c8-m9-ex9-2-q2",
+        "number": "2",
+        "question": "Find the areas of rectangles with the following pairs of monomials as their lengths and breadths respectively: (p, q); (10m, 5n); (20x², 5y²); (4x, 3x²); (3mn, 4np)",
+        "solution": [
+          "See length × breadth monomial evaluations in the interactive Web View."
+        ]
+      },
+      {
+        "id": "c8-m9-ex9-2-q3",
+        "number": "3",
+        "question": "Complete the following table of products of monomials (6x6 matrix of products).",
+        "solution": [
+          "See the complete 36-cell monomial multiplication table with dark background and green borders in the interactive Web View."
+        ]
+      },
+      {
+        "id": "c8-m9-ex9-2-q4",
+        "number": "4",
+        "question": "Obtain the volume of rectangular boxes with the following length, breadth and height respectively: (i) 5a, 3a², 7a⁴ (ii) 2p, 4q, 8r (iii) xy, 2x²y, 2xy² (iv) a, 2b, 3c",
+        "solution": [
+          "See length × breadth × height products in the interactive Web View."
+        ]
+      },
+      {
+        "id": "c8-m9-ex9-2-q5",
+        "number": "5",
+        "question": "Obtain the product of: (i) xy, yz, zx (ii) a, -a², a³ (iii) 2, 4y, 8y², 16y³ (iv) a, 2b, 3c, 6abc (v) m, -mn, mnp",
+        "solution": [
+          "See continuous monomial products in the interactive Web View."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ex9-3",
+    "name": "Exercise 9.3",
+    "questions": [
+      {
+        "id": "c8-m9-ex9-3-q1",
+        "number": "1",
+        "question": "Carry out the multiplication of the expressions in each of the following pairs: (i) 4p, q + r (ii) ab, a - b (iii) a + b, 7a²b² (iv) a² - 9, 4a (v) pq + qr + rp, 0",
+        "solution": [
+          "See distributive monomial by binomial multiplications in the interactive Web View."
+        ]
+      },
+      {
+        "id": "c8-m9-ex9-3-q2",
+        "number": "2",
+        "question": "Complete the table: First expression × Second expression = Product.",
+        "solution": [
+          "See complete product table with dark background and green borders in the interactive Web View."
+        ]
+      },
+      {
+        "id": "c8-m9-ex9-3-q3",
+        "number": "3",
+        "question": "Find the product: (i) a² × (2a²²) × (4a²⁶) (ii) (2/3 xy) × (-9/10 x²y²) (iii) (-10/3 pq³) × (6/5 p³q) (iv) x × x² × x³ × x⁴",
+        "solution": [
+          "See fractional coefficient products and power addition in the interactive Web View."
+        ]
+      },
+      {
+        "id": "c8-m9-ex9-3-q4",
+        "number": "4",
+        "question": "(a) Simplify 3x(4x - 5) + 3 and find its values for (i) x = 3, (ii) x = 1/2. (b) Simplify a(a² + a + 1) + 5 and find its values for (i) a = 0, (ii) a = 1, (iii) a = -1.",
+        "solution": [
+          "See algebraic expansion and numerical substitution steps in the interactive Web View."
+        ]
+      },
+      {
+        "id": "c8-m9-ex9-3-q5",
+        "number": "5",
+        "question": "(a) Add: p(p - q), q(q - r) and r(r - p) (b) Add: 2x(z - x - y) and 2y(z - y - x) (c) Subtract: 3l(l - 4m + 5n) from 4l(10n - 3m + 2l) (d) Subtract: 3a(a + b + c) - 2b(a - b + c) from 4c(-a + b + c)",
+        "solution": [
+          "See full expansions, sign operations, and like terms combination in the interactive Web View."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ex9-4",
+    "name": "Exercise 9.4",
+    "questions": [
+      {
+        "id": "c8-m9-ex9-4-q1",
+        "number": "1",
+        "question": "Multiply the binomials: (i) (2x + 5) and (4x - 3) (ii) (y - 8) and (3y - 4) (iii) (2.5l - 0.5m) and (2.5l + 0.5m) (iv) (a + 3b) and (x + 5) (v) (2pq + 3q²) and (3pq - 2q²) (vi) (3/4 a² + 3b²) and 4(a² - 2/3 b²)",
+        "solution": [
+          "See FOIL / binomial multiplication line-by-line steps in the interactive Web View."
+        ]
+      },
+      {
+        "id": "c8-m9-ex9-4-q2",
+        "number": "2",
+        "question": "Find the product: (i) (5 - 2x)(3 + x) (ii) (x + 7y)(7x - y) (iii) (a² + b)(a + b²) (iv) (p² - q²)(2p + q)",
+        "solution": [
+          "See binomial product expansions in the interactive Web View."
+        ]
+      },
+      {
+        "id": "c8-m9-ex9-4-q3",
+        "number": "3",
+        "question": "Simplify: (i) (x² - 5)(x + 5) + 25 (ii) (a² + 5)(b³ + 3) + 5 (iii) (t + s²)(t² - s) (iv) (a + b)(c - d) + (a - b)(c + d) + 2(ac + bd) (v) (x + y)(2x + y) + (x + 2y)(x - y) (vi) (x + y)(x² - xy + y²) (vii) (1.5x - 4y)(1.5x + 4y + 3) - 4.5x + 12y (viii) (a + b + c)(a + b - c)",
+        "solution": [
+          "See complete algebraic expansions and terms cancellation in the interactive Web View."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ex9-5",
+    "name": "Exercise 9.5",
+    "questions": [
+      {
+        "id": "c8-m9-ex9-5-q1",
+        "number": "1",
+        "question": "Use a suitable identity to get each of the following products: (i) (x + 3)(x + 3) (ii) (2y + 5)(2y + 5) (iii) (2a - 7)(2a - 7) (iv) (3a - 1/2)(3a - 1/2) (v) (1.1m - 0.4)(1.1m + 0.4) (vi) (a² + b²)(-a² + b²) (vii) (6x - 7)(6x + 7) (viii) (-a + c)(-a + c) (ix) (1/2 x + 3/4 y)(1/2 x + 3/4 y) (x) (7a - 9b)(7a - 9b)",
+        "solution": [
+          "See solutions using identities (a+b)², (a-b)², and (a+b)(a-b) in the interactive Web View."
+        ]
+      },
+      {
+        "id": "c8-m9-ex9-5-q2",
+        "number": "2",
+        "question": "Use the identity (x + a)(x + b) = x² + (a + b)x + ab to find the following products: (i) (x + 3)(x + 7) (ii) (4x + 5)(4x + 1) (iii) (4x - 5)(4x - 1) (iv) (4x + 5)(4x - 1) (v) (2x + 5y)(2x + 3y) (vi) (2a² + 9)(2a² + 5) (vii) (xyz - 4)(xyz - 2)",
+        "solution": [
+          "See Identity IV step-by-step applications in the interactive Web View."
+        ]
+      },
+      {
+        "id": "c8-m9-ex9-5-q3",
+        "number": "3",
+        "question": "Find the following squares by using the identities: (i) (b - 7)² (ii) (xy + 3z)² (iii) (6x² - 5y)² (iv) [(2/3 m) + (3/2 n)]² (v) (0.4p - 0.5q)² (vi) (2xy + 5y)²",
+        "solution": [
+          "See square of binomial expansions in the interactive Web View."
+        ]
+      },
+      {
+        "id": "c8-m9-ex9-5-q4",
+        "number": "4",
+        "question": "Simplify: (i) (a² - b²)² (ii) (2x + 5)² - (2x - 5)² (iii) (7m - 8n)² + (7m + 8n)² (iv) (4m + 5n)² + (5m + 4n)² (v) (2.5p - 1.5q)² - (1.5p - 2.5q)² (vi) (ab + bc)² - 2ab²c (vii) (m² - n²m)² + 2m³n²",
+        "solution": [
+          "See compound square expressions and cancellation in the interactive Web View."
+        ]
+      },
+      {
+        "id": "c8-m9-ex9-5-q5",
+        "number": "5",
+        "question": "Show that: (i) (3x + 7)² - 84x = (3x - 7)² (ii) (9p - 5q)² + 180pq = (9p + 5q)² (iii) (4/3 m - 3/4 n)² + 2mn = 16/9 m² + 9/16 n² (iv) (4pq + 3q)² - (4pq - 3q)² = 48pq² (v) (a - b)(a + b) + (b - c)(b + c) + (c - a)(c + a) = 0",
+        "solution": [
+          "See LHS to RHS algebraic proofs in the interactive Web View."
+        ]
+      },
+      {
+        "id": "c8-m9-ex9-5-q6",
+        "number": "6",
+        "question": "Using identities, evaluate: (i) 71² (ii) 99² (iii) 102² (iv) 998² (v) 5.2² (vi) 297 × 303 (vii) 78 × 82 (viii) 8.9² (ix) 10.5 × 9.5",
+        "solution": [
+          "See fast mental math identity calculations in the interactive Web View."
+        ]
+      },
+      {
+        "id": "c8-m9-ex9-5-q7",
+        "number": "7",
+        "question": "Using a² - b² = (a + b)(a - b), find: (i) 51² - 49² (ii) (1.02)² - (0.98)² (iii) 153² - 147² (iv) 12.1² - 7.9²",
+        "solution": [
+          "See difference of squares numerical calculations in the interactive Web View."
+        ]
+      },
+      {
+        "id": "c8-m9-ex9-5-q8",
+        "number": "8",
+        "question": "Using (x + a)(x + b) = x² + (a + b)x + ab, find: (i) 103 × 104 (ii) 5.1 × 5.2 (iii) 103 × 98 (iv) 9.7 × 9.8",
+        "solution": [
+          "See Identity IV evaluations in the interactive Web View."
+        ]
+      }
+    ]
+  }
+],
+  examples: [],
+  mcqs: [
+  {
+    "id": "c8-m9-q1",
+    "question": "What is the numerical coefficient of the term -3zy in 5xyz² - 3zy?",
+    "options": [
+      "A):   3",
+      "B):   -3",
+      "C):   5",
+      "D):   -1"
+    ],
+    "correctAnswer": "B",
+    "explanation": "In the term -3zy, the numerical multiplier is -3."
+  },
+  {
+    "id": "c8-m9-q2",
+    "question": "How many terms does a trinomial contain?",
+    "options": [
+      "A):   1 term",
+      "B):   2 terms",
+      "C):   3 terms",
+      "D):   4 terms"
+    ],
+    "correctAnswer": "C",
+    "explanation": "By definition, a trinomial contains exactly three terms (e.g., 7 + y + 5x)."
+  },
+  {
+    "id": "c8-m9-q3",
+    "question": "Which of the following is a monomial?",
+    "options": [
+      "A):   pqr",
+      "B):   x + y",
+      "C):   2y - 3y²",
+      "D):   a + b + c"
+    ],
+    "correctAnswer": "A",
+    "explanation": "pqr consists of a single term with factors p, q, and r; hence it is a monomial."
+  },
+  {
+    "id": "c8-m9-q4",
+    "question": "What is the sum of (ab - bc), (bc - ca) and (ca - ab)?",
+    "options": [
+      "A):   ab + bc + ca",
+      "B):   0",
+      "C):   2(ab + bc + ca)",
+      "D):   -1"
+    ],
+    "correctAnswer": "B",
+    "explanation": "ab - bc + bc - ca + ca - ab = (ab - ab) + (-bc + bc) + (-ca + ca) = 0."
+  },
+  {
+    "id": "c8-m9-q5",
+    "question": "What is the product of 4p³ and -3p?",
+    "options": [
+      "A):   12p⁴",
+      "B):   -12p³",
+      "C):   -12p⁴",
+      "D):   -7p⁴"
+    ],
+    "correctAnswer": "C",
+    "explanation": "(4 × -3) × (p³ × p) = -12 × p^(3+1) = -12p⁴."
+  },
+  {
+    "id": "c8-m9-q6",
+    "question": "What is the product of 4p and 0?",
+    "options": [
+      "A):   4p",
+      "B):   4",
+      "C):   p",
+      "D):   0"
+    ],
+    "correctAnswer": "D",
+    "explanation": "Any algebraic expression multiplied by zero is equal to 0."
+  },
+  {
+    "id": "c8-m9-q7",
+    "question": "What is the area of a rectangle with length 4x and breadth 3x²?",
+    "options": [
+      "A):   7x³",
+      "B):   12x³",
+      "C):   12x²",
+      "D):   12x⁴"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Area = Length × Breadth = 4x × 3x² = (4 × 3)(x × x²) = 12x³."
+  },
+  {
+    "id": "c8-m9-q8",
+    "question": "What is the volume of a rectangular box with dimensions 2p, 4q and 8r?",
+    "options": [
+      "A):   14pqr",
+      "B):   32pqr",
+      "C):   64pqr",
+      "D):   16pqr"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Volume = 2p × 4q × 8r = (2 × 4 × 8)(p × q × r) = 64pqr."
+  },
+  {
+    "id": "c8-m9-q9",
+    "question": "The product of (x) × (x²) × (x³) × (x⁴) is:",
+    "options": [
+      "A):   x⁹",
+      "B):   x¹⁰",
+      "C):   x²⁴",
+      "D):   4x"
+    ],
+    "correctAnswer": "B",
+    "explanation": "When bases are identical, powers are added: 1 + 2 + 3 + 4 = 10, so the product is x¹⁰."
+  },
+  {
+    "id": "c8-m9-q10",
+    "question": "According to standard algebraic identities, (a - b)² is equal to:",
+    "options": [
+      "A):   a² - b²",
+      "B):   a² + b² + 2ab",
+      "C):   a² - 2ab + b²",
+      "D):   a² - 2ab - b²"
+    ],
+    "correctAnswer": "C",
+    "explanation": "(a - b)² = (a - b)(a - b) = a² - ab - ab + b² = a² - 2ab + b²."
+  },
+  {
+    "id": "c8-m9-q11",
+    "question": "What is the expansion of (2y + 5)²?",
+    "options": [
+      "A):   4y² + 25",
+      "B):   4y² + 20y + 25",
+      "C):   2y² + 10y + 25",
+      "D):   4y² + 10y + 25"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Using (a+b)²: (2y)² + 2(2y)(5) + 5² = 4y² + 20y + 25."
+  },
+  {
+    "id": "c8-m9-q12",
+    "question": "Evaluate (6x - 7)(6x + 7) using an identity:",
+    "options": [
+      "A):   36x² + 49",
+      "B):   36x² - 84x + 49",
+      "C):   36x² - 49",
+      "D):   12x² - 49"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Using (a - b)(a + b) = a² - b²: (6x)² - (7)² = 36x² - 49."
+  },
+  {
+    "id": "c8-m9-q13",
+    "question": "Evaluate 71² using an identity:",
+    "options": [
+      "A):   5041",
+      "B):   4941",
+      "C):   5141",
+      "D):   5001"
+    ],
+    "correctAnswer": "A",
+    "explanation": "71² = (70 + 1)² = 70² + 2(70)(1) + 1² = 4900 + 140 + 1 = 5041."
+  },
+  {
+    "id": "c8-m9-q14",
+    "question": "Evaluate 297 × 303 using an algebraic identity:",
+    "options": [
+      "A):   89991",
+      "B):   89999",
+      "C):   90009",
+      "D):   88991"
+    ],
+    "correctAnswer": "A",
+    "explanation": "(300 - 3)(300 + 3) = 300² - 3² = 90000 - 9 = 89991."
+  },
+  {
+    "id": "c8-m9-q15",
+    "question": "Evaluate 51² - 49² using the identity a² - b² = (a + b)(a - b):",
+    "options": [
+      "A):   100",
+      "B):   200",
+      "C):   400",
+      "D):   50"
+    ],
+    "correctAnswer": "B",
+    "explanation": "51² - 49² = (51 + 49)(51 - 49) = 100 × 2 = 200."
+  }
+],
+  summary: [
+    "Expressions are made of terms, which are formed by products of factors.",
+    "Like terms have the same variable factors, while unlike terms have different variable factors.",
+    "Only like terms can be combined in addition and subtraction.",
+    "Multiplying a monomial by a polynomial follows the distributive law.",
+    "An identity is an equality true for every value of its variables.",
+    "Standard identities provide rapid shortcuts for expanding binomial squares and calculating large numerical products.",
   ],
   isHtmlView: true,
-  htmlOverview: `
-    <style>
-      .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
-      .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
-      .frac .den { padding: 0 2px; }
-      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
-      
-      .premium-container {
-        padding: 20px;
-        color: #ffffff;
-        font-family: 'Outfit', sans-serif !important;
-        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-        border-radius: 20px;
-        margin: 10px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-      }
-
-      .section-box {
-        background: rgba(255, 255, 255, 0.05);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 15px;
-        padding: 20px;
-        margin-bottom: 20px;
-        backdrop-filter: blur(10px);
-      }
-
-      .section-header {
-        color: #0091EA;
-        font-size: 20px;
-        font-weight: 600;
-        margin-bottom: 15px;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-      }
-
-      .prop-table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 10px;
-        background: rgba(0,0,0,0.2);
-        border-radius: 12px;
-        overflow: hidden;
-      }
-
-      .prop-table th, .prop-table td {
-        padding: 12px;
-        border: 1px solid rgba(255,255,255,0.1);
-        text-align: left;
-        font-size: 15px;
-      }
-
-      .prop-table th {
-        background: rgba(255,255,255,0.1);
-        color: #40C4FF;
-        font-weight: 700;
-      }
-
-      .highlight { color: #40C4FF; font-weight: 600; }
-      
-      .intro-text {
-        line-height: 1.6;
-        font-size: 16px;
-        color: #e0e0e0;
-        text-align: justify;
-      }
-    </style>
-
-    <div class="premium-container">
-      <div class="section-box">
-        <div class="section-header"><span>✦</span> Introduction</div>
-        <div class="intro-text">
-          In this chapter, we explore how to find the area of 2D shapes like parallelograms, triangles, trapeziums, and polygons. We will also learn to calculate the surface area and volume of 3D shapes like cubes, cuboids, and cylinders.
-        </div>
-      </div>
-      <div class="section-box">
-        <div class="section-header"><span>✦</span> Important Formulas</div>
-        <table class="prop-table">
-          <tr>
-            <th>Shape</th>
-            <th>Area / Volume</th>
-          </tr>
-          <tr>
-            <td><strong>Trapezium</strong></td>
-            <td>Area = <span class="highlight"><span class='frac'><span class='num'>1</span><span class='den'>2</span></span> × (a+b) × h</span></td>
-          </tr>
-          <tr>
-            <td><strong>Rhombus</strong></td>
-            <td>Area = <span class="highlight"><span class='frac'><span class='num'>1</span><span class='den'>2</span></span> × d₁ × d₂</span></td>
-          </tr>
-          <tr>
-            <td><strong>Cuboid (Volume)</strong></td>
-            <td>Volume = <span class="highlight">l × b × h</span></td>
-          </tr>
-          <tr>
-            <td><strong>Cuboid (Total SA)</strong></td>
-            <td>TSA = <span class="highlight">2(lb + bh + hl)</span></td>
-          </tr>
-          <tr>
-            <td><strong>Cylinder (Volume)</strong></td>
-            <td>Volume = <span class="highlight">πr²h</span></td>
-          </tr>
-          <tr>
-            <td><strong>Cylinder (Lateral SA)</strong></td>
-            <td>LSA = <span class="highlight">2πrh</span></td>
-          </tr>
-          <tr>
-            <td><strong>Cylinder (Total SA)</strong></td>
-            <td>TSA = <span class="highlight">2πr(r+h)</span></td>
-          </tr>
-        </table>
-      </div>
-    </div>
-  `,
+  htmlOverview: "\n\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; text-align: center; }\n  .frac .den { padding: 1px 4px; text-align: center; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(63, 81, 181, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #3F51B5; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 16px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(63, 81, 181, 0.25); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #3F51B5; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #9FA8DA; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  /* User requested dark bg, green border, compact font for full visibility */\n  .table-card { background: rgba(15, 23, 42, 0.95); border: 1.5px solid #4CAF50; border-radius: 10px; padding: 10px 8px; margin: 16px 0; overflow-x: auto; box-shadow: 0 4px 18px rgba(0,0,0,0.35); -webkit-overflow-scrolling: touch; }\n  .styled-table { width: 100%; border-collapse: collapse; color: #F8FAFC; font-size: 12px; text-align: center; }\n  .styled-table th { background: rgba(76, 175, 80, 0.22); color: #A5D6A7; font-weight: 700; padding: 8px 6px; border: 1px solid rgba(76, 175, 80, 0.4); font-size: 12px; white-space: nowrap; }\n  .styled-table td { padding: 6px 6px; border: 1px solid rgba(255, 255, 255, 0.12); font-weight: 500; font-size: 11.5px; color: #E2E8F0; }\n  .styled-table tr:nth-child(even) td { background: rgba(255, 255, 255, 0.03); }\n  .styled-table td.col-label { font-weight: 700; white-space: nowrap; text-align: left; padding-left: 10px; color: #81C784; }\n  .styled-table td.highlight-cell { color: #FFE082; font-weight: 600; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Hero Header -->\n  <div style=\"background: linear-gradient(135deg, rgba(63, 81, 181, 0.25), rgba(156, 39, 176, 0.15)); border: 1.5px solid #3F51B5; border-radius: 14px; padding: 18px; margin-bottom: 20px; text-align: center;\">\n    <div style=\"font-size: 22px; font-weight: 800; color: #3F51B5; margin-bottom: 6px;\">\n      📐 Chapter 9: Algebraic Expressions &amp; Identities\n    </div>\n    <div style=\"color: #CBD5E1; font-size: 14.5px; line-height: 1.5;\">\n      Class 8 NCERT Mathematics &bull; Complete Reference Guide &amp; Master Formula Cheat Sheet\n    </div>\n  </div>\n\n  <!-- 1. Expressions, Terms, Factors & Coefficients -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 1. Anatomy of an Algebraic Expression</div>\n    <div class=\"q-text\">\n      An <b>Algebraic Expression</b> is formed by combining variables and constants using the operations of addition, subtraction, multiplication, and division.\n    </div>\n    <div class=\"sol-box\">\n      <div style=\"color: #FFFFFF; font-size: 14.5px; line-height: 1.8;\">\n        &bull; <b style=\"color: #3F51B5;\">Terms:</b> The parts of an expression separated by '+' or '&minus;' signs. For example, in 4<i>x</i><sup>2</sup> &minus; 3<i>xy</i>, the terms are <b>4<i>x</i><sup>2</sup></b> and <b>&minus;3<i>xy</i></b>.<br/>\n        &bull; <b style=\"color: #3F51B5;\">Factors:</b> The quantities multiplied together to form a term. For example, the term 4<i>x</i><sup>2</sup> has factors 4, <i>x</i>, and <i>x</i>.<br/>\n        &bull; <b style=\"color: #3F51B5;\">Coefficients:</b> The numerical factor of a term is called its <b>numerical coefficient</b> (or simply coefficient). In &minus;3<i>xy</i>, the coefficient is <b>&minus;3</b>.\n      </div>\n    </div>\n  </div>\n\n  <!-- 2. Types of Polynomials -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 2. Classification of Polynomials</div>\n    <div class=\"table-card\">\n      <table class=\"styled-table\">\n        <thead>\n          <tr>\n            <th>Category</th>\n            <th>Number of Terms</th>\n            <th>Examples</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr>\n            <td class=\"col-label\">Monomial</td>\n            <td>Exactly 1 term</td>\n            <td>4<i>x</i><sup>2</sup>, 1000, <i>pqr</i>, &minus;7<i>y</i></td>\n          </tr>\n          <tr>\n            <td class=\"col-label\">Binomial</td>\n            <td>Exactly 2 terms</td>\n            <td><i>x</i> + <i>y</i>, 2<i>y</i> &minus; 3<i>y</i><sup>2</sup>, 4<i>z</i> &minus; 15<i>z</i><sup>2</sup>, <i>a</i> + <i>b</i></td>\n          </tr>\n          <tr>\n            <td class=\"col-label\">Trinomial</td>\n            <td>Exactly 3 terms</td>\n            <td>7 + <i>y</i> + 5<i>x</i>, 2<i>y</i> &minus; 3<i>y</i><sup>2</sup> + 4<i>y</i><sup>3</sup>, 5<i>x</i> &minus; 4<i>y</i> + 3<i>xy</i></td>\n          </tr>\n          <tr>\n            <td class=\"col-label\">Polynomial</td>\n            <td>One or more terms with non-negative integer exponents</td>\n            <td><i>x</i> + <i>x</i><sup>2</sup> + <i>x</i><sup>3</sup> + <i>x</i><sup>4</sup>, <i>ab</i> + <i>bc</i> + <i>cd</i> + <i>da</i></td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n  </div>\n\n  <!-- 3. Like vs Unlike Terms & Operations -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 3. Like vs Unlike Terms &amp; Algebraic Operations</div>\n    <div class=\"sol-box\">\n      <div style=\"color: #FFFFFF; font-size: 14.5px; line-height: 1.8;\">\n        &bull; <b style=\"color: #3F51B5;\">Like Terms:</b> Terms having the <b>same algebraic factors</b> (same variables raised to the same powers), regardless of their numerical coefficients. For example: 7<i>x</i>, 14<i>x</i>, &minus;13<i>x</i>; or 5<i>x</i><sup>2</sup><i>y</i> and &minus;9<i>x</i><sup>2</sup><i>y</i>.<br/>\n        &bull; <b style=\"color: #3F51B5;\">Unlike Terms:</b> Terms having different algebraic factors (e.g. 7<i>x</i> and 7<i>y</i>; or 5<i>x</i><sup>2</sup><i>y</i> and 5<i>xy</i><sup>2</sup>).<br/>\n        &bull; <b style=\"color: #3F51B5;\">Rule of Addition &amp; Subtraction:</b> Only <b>like terms</b> can be added or subtracted together by adding/subtracting their numerical coefficients. Unlike terms remain separate.\n      </div>\n    </div>\n  </div>\n\n  <!-- 4. Multiplication of Algebraic Expressions -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 4. Laws of Multiplication</div>\n    <div class=\"sol-box\">\n      <div style=\"color: #FFFFFF; font-size: 14.5px; line-height: 1.8;\">\n        &bull; <b style=\"color: #3F51B5;\">Product of Monomials:</b> Multiply numerical coefficients together, and add powers of identical variables: (<i>a</i><sup><i>m</i></sup> &times; <i>a</i><sup><i>n</i></sup> = <i>a</i><sup><i>m+n</i></sup>).<br/>\n        &nbsp;&nbsp;Example: (4<i>p</i><sup>3</sup>) &times; (&minus;3<i>p</i>) = (4 &times; &minus;3)(<i>p</i><sup>3</sup> &times; <i>p</i>) = <b>&minus;12<i>p</i><sup>4</sup></b>.<br/>\n        &bull; <b style=\"color: #3F51B5;\">Distributive Law:</b> <i>a</i>(<i>b</i> + <i>c</i>) = <i>ab</i> + <i>ac</i>.<br/>\n        &bull; <b style=\"color: #3F51B5;\">Binomial &times; Binomial:</b> (<i>a</i> + <i>b</i>)(<i>c</i> + <i>d</i>) = <i>a</i>(<i>c</i> + <i>d</i>) + <i>b</i>(<i>c</i> + <i>d</i>) = <i>ac</i> + <i>ad</i> + <i>bc</i> + <i>bd</i>.\n      </div>\n    </div>\n  </div>\n\n  <!-- 5. The 4 Standard Algebraic Identities -->\n  <div class=\"q-card\" style=\"border-color: #4CAF50;\">\n    <div class=\"q-title\" style=\"color: #4CAF50;\">✦ 5. The Four Standard Algebraic Identities</div>\n    <div class=\"table-card\">\n      <table class=\"styled-table\">\n        <thead>\n          <tr>\n            <th>Identity #</th>\n            <th>Algebraic Formula</th>\n            <th>Standard Application</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr>\n            <td class=\"col-label\">Identity I</td>\n            <td class=\"highlight-cell\"><b>(a + b)<sup>2</sup> = a<sup>2</sup> + 2ab + b<sup>2</sup></b></td>\n            <td>Square of a sum (e.g. 103<sup>2</sup> = (100 + 3)<sup>2</sup>)</td>\n          </tr>\n          <tr>\n            <td class=\"col-label\">Identity II</td>\n            <td class=\"highlight-cell\"><b>(a &minus; b)<sup>2</sup> = a<sup>2</sup> &minus; 2ab + b<sup>2</sup></b></td>\n            <td>Square of a difference (e.g. 99<sup>2</sup> = (100 &minus; 1)<sup>2</sup>)</td>\n          </tr>\n          <tr>\n            <td class=\"col-label\">Identity III</td>\n            <td class=\"highlight-cell\"><b>(a + b)(a &minus; b) = a<sup>2</sup> &minus; b<sup>2</sup></b></td>\n            <td>Difference of two squares (e.g. 105 &times; 95 = (100+5)(100&minus;5))</td>\n          </tr>\n          <tr>\n            <td class=\"col-label\">Identity IV</td>\n            <td class=\"highlight-cell\"><b>(x + a)(x + b) = x<sup>2</sup> + (a + b)x + ab</b></td>\n            <td>Product of two binomials with common first term</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n  </div>\n\n  <!-- 6. Master Revision Cheat Sheet -->\n  <div class=\"q-card\" style=\"border-color: #3F51B5;\">\n    <div class=\"q-title\" style=\"color: #3F51B5;\">✦ 6. Master Revision Formula Cheat Sheet</div>\n    <div style=\"font-size: 15px; color: #FFFFFF; line-height: 2.1;\">\n      &bull; <b>Term:</b> Constant &times; Variable factors.<br/>\n      &bull; <b>Coefficient:</b> Numerical multiplier of variable factors.<br/>\n      &bull; <b>Area of Rectangle:</b> Length &times; Breadth (product of two monomials).<br/>\n      &bull; <b>Volume of Rectangular Box:</b> Length &times; Breadth &times; Height (product of three monomials).<br/>\n      &bull; <b>Identity 1:</b> (<i>a</i> + <i>b</i>)<sup>2</sup> = <i>a</i><sup>2</sup> + 2<i>ab</i> + <i>b</i><sup>2</sup>.<br/>\n      &bull; <b>Identity 2:</b> (<i>a</i> &minus; <i>b</i>)<sup>2</sup> = <i>a</i><sup>2</sup> &minus; 2<i>ab</i> + <i>b</i><sup>2</sup>.<br/>\n      &bull; <b>Identity 3:</b> (<i>a</i> + <i>b</i>)(<i>a</i> &minus; <i>b</i>) = <i>a</i><sup>2</sup> &minus; <i>b</i><sup>2</sup>.<br/>\n      &bull; <b>Identity 4:</b> (<i>x</i> + <i>a</i>)(<i>x</i> + <i>b</i>) = <i>x</i><sup>2</sup> + (<i>a</i> + <i>b</i>)<i>x</i> + <i>ab</i>.\n    </div>\n  </div>\n\n</div>\n",
   htmlExercises: {
-    "ex9-1": ex91Content,
-    "ex9-2": ex92Content,
-    "ex9-3": ex93Content,
+    "ex9-1": "\n\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; text-align: center; }\n  .frac .den { padding: 1px 4px; text-align: center; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(63, 81, 181, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #3F51B5; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 16px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(63, 81, 181, 0.25); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #3F51B5; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #9FA8DA; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  /* User requested dark bg, green border, compact font for full visibility */\n  .table-card { background: rgba(15, 23, 42, 0.95); border: 1.5px solid #4CAF50; border-radius: 10px; padding: 10px 8px; margin: 16px 0; overflow-x: auto; box-shadow: 0 4px 18px rgba(0,0,0,0.35); -webkit-overflow-scrolling: touch; }\n  .styled-table { width: 100%; border-collapse: collapse; color: #F8FAFC; font-size: 12px; text-align: center; }\n  .styled-table th { background: rgba(76, 175, 80, 0.22); color: #A5D6A7; font-weight: 700; padding: 8px 6px; border: 1px solid rgba(76, 175, 80, 0.4); font-size: 12px; white-space: nowrap; }\n  .styled-table td { padding: 6px 6px; border: 1px solid rgba(255, 255, 255, 0.12); font-weight: 500; font-size: 11.5px; color: #E2E8F0; }\n  .styled-table tr:nth-child(even) td { background: rgba(255, 255, 255, 0.03); }\n  .styled-table td.col-label { font-weight: 700; white-space: nowrap; text-align: left; padding-left: 10px; color: #81C784; }\n  .styled-table td.highlight-cell { color: #FFE082; font-weight: 600; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Header Card -->\n  <div style=\"background: linear-gradient(135deg, rgba(63, 81, 181, 0.2), rgba(156, 39, 176, 0.1)); border: 1.5px solid #3F51B5; border-radius: 12px; padding: 14px 18px; margin-bottom: 20px;\">\n    <div style=\"font-size: 19px; font-weight: 800; color: #3F51B5; margin-bottom: 4px;\">\n      Exercise 9.1\n    </div>\n    <div style=\"color: #FFFFFF; font-size: 15px; font-weight: 500;\">\n      Terms, Coefficients, Classification of Polynomials, Addition &amp; Subtraction\n    </div>\n  </div>\n\n  <!-- QUESTION 1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 1:</div>\n    <div class=\"q-text\">Identify the terms, their coefficients for each of the following expressions:</div>\n    <div style=\"color: #E2E8F0; font-size: 14.5px; margin-bottom: 12px; line-height: 1.9;\">\n      <b>(i)</b> 5<i>xyz</i><sup>2</sup> &minus; 3<i>zy</i><br/>\n      <b>(ii)</b> 1 + <i>x</i> + <i>x</i><sup>2</sup><br/>\n      <b>(iii)</b> 4<i>x</i><sup>2</sup><i>y</i><sup>2</sup> &minus; 4<i>x</i><sup>2</sup><i>y</i><sup>2</sup><i>z</i><sup>2</sup> + <i>z</i><sup>2</sup><br/>\n      <b>(iv)</b> 3 &minus; <i>pq</i> + <i>qr</i> &minus; <i>p</i><br/>\n      <b>(v)</b> <span class=\"frac\"><span class=\"num\"><i>x</i></span><span class=\"den\">2</span></span> + <span class=\"frac\"><span class=\"num\"><i>y</i></span><span class=\"den\">2</span></span> &minus; <i>xy</i><br/>\n      <b>(vi)</b> 0.3<i>a</i> &minus; 0.6<i>ab</i> + 0.5<i>b</i>\n    </div>\n\n    <!-- Table of Terms & Coefficients (Dark bg, green border, compact font) -->\n    <div class=\"table-card\">\n      <table class=\"styled-table\">\n        <thead>\n          <tr>\n            <th style=\"width: 10%;\">Sl. No.</th>\n            <th style=\"width: 40%; text-align: left; padding-left: 10px;\">Expression</th>\n            <th style=\"width: 30%;\">Terms</th>\n            <th style=\"width: 20%;\">Coefficient</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr>\n            <td class=\"col-label\" style=\"text-align: center;\">(i)</td>\n            <td style=\"text-align: left; padding-left: 10px;\">5<i>xyz</i><sup>2</sup> &minus; 3<i>zy</i></td>\n            <td>5<i>xyz</i><sup>2</sup><br/>&minus;3<i>zy</i></td>\n            <td class=\"highlight-cell\">5<br/>&minus;3</td>\n          </tr>\n          <tr>\n            <td class=\"col-label\" style=\"text-align: center;\">(ii)</td>\n            <td style=\"text-align: left; padding-left: 10px;\">1 + <i>x</i> + <i>x</i><sup>2</sup></td>\n            <td>1<br/><i>x</i><br/><i>x</i><sup>2</sup></td>\n            <td class=\"highlight-cell\">1<br/>1<br/>1</td>\n          </tr>\n          <tr>\n            <td class=\"col-label\" style=\"text-align: center;\">(iii)</td>\n            <td style=\"text-align: left; padding-left: 10px;\">4<i>x</i><sup>2</sup><i>y</i><sup>2</sup> &minus; 4<i>x</i><sup>2</sup><i>y</i><sup>2</sup><i>z</i><sup>2</sup> + <i>z</i><sup>2</sup></td>\n            <td>4<i>x</i><sup>2</sup><i>y</i><sup>2</sup><br/>&minus;4<i>x</i><sup>2</sup><i>y</i><sup>2</sup><i>z</i><sup>2</sup><br/><i>z</i><sup>2</sup></td>\n            <td class=\"highlight-cell\">4<br/>&minus;4<br/>1</td>\n          </tr>\n          <tr>\n            <td class=\"col-label\" style=\"text-align: center;\">(iv)</td>\n            <td style=\"text-align: left; padding-left: 10px;\">3 &minus; <i>pq</i> + <i>qr</i> &minus; <i>p</i></td>\n            <td>3<br/>&minus;<i>pq</i><br/><i>qr</i><br/>&minus;<i>p</i></td>\n            <td class=\"highlight-cell\">3<br/>&minus;1<br/>1<br/>&minus;1</td>\n          </tr>\n          <tr>\n            <td class=\"col-label\" style=\"text-align: center;\">(v)</td>\n            <td style=\"text-align: left; padding-left: 10px;\"><span class=\"frac\"><span class=\"num\"><i>x</i></span><span class=\"den\">2</span></span> + <span class=\"frac\"><span class=\"num\"><i>y</i></span><span class=\"den\">2</span></span> &minus; <i>xy</i></td>\n            <td><span class=\"frac\"><span class=\"num\"><i>x</i></span><span class=\"den\">2</span></span><br/><span class=\"frac\"><span class=\"num\"><i>y</i></span><span class=\"den\">2</span></span><br/>&minus;<i>xy</i></td>\n            <td class=\"highlight-cell\"><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span><br/><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span><br/>&minus;1</td>\n          </tr>\n          <tr>\n            <td class=\"col-label\" style=\"text-align: center;\">(vi)</td>\n            <td style=\"text-align: left; padding-left: 10px;\">0.3<i>a</i> &minus; 0.6<i>ab</i> + 0.5<i>b</i></td>\n            <td>0.3<i>a</i><br/>&minus;0.6<i>ab</i><br/>0.5<i>b</i></td>\n            <td class=\"highlight-cell\">0.3<br/>&minus;0.6<br/>0.5</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n\n    <div class=\"ans-box\">\n      <span class=\"ans-label\">✓ Summary: </span>\n      <span class=\"ans-val\">All 6 expressions, terms, and numerical coefficients classified above.</span>\n    </div>\n  </div>\n\n  <!-- QUESTION 2 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 2:</div>\n    <div class=\"q-text\">\n      Classify the following polynomials as monomials, binomials, trinomials. Which polynomials do not fit in any of these three categories?<br/>\n      <i>x</i> + <i>y</i>, 1000, <i>x</i> + <i>x</i><sup>2</sup> + <i>x</i><sup>3</sup> + <i>x</i><sup>4</sup>, 7 + <i>y</i> + 5<i>x</i>, 2<i>y</i> &minus; 3<i>y</i><sup>2</sup>, 2<i>y</i> &minus; 3<i>y</i><sup>2</sup> + 4<i>y</i><sup>3</sup>, 5<i>x</i> &minus; 4<i>y</i> + 3<i>xy</i>, 4<i>z</i> &minus; 15<i>z</i><sup>2</sup>, <i>ab</i> + <i>bc</i> + <i>cd</i> + <i>da</i>, <i>pqr</i>, <i>p</i><sup>2</sup><i>q</i> + <i>pq</i><sup>2</sup>, 2<i>p</i> + 2<i>q</i>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Standard Definitions:</div>\n      <div class=\"sol-step\">\n        <div>&bull; <b>Monomials:</b> Contain only 1 term.</div>\n        <div>&bull; <b>Binomials:</b> Contain exactly 2 terms.</div>\n        <div>&bull; <b>Trinomials:</b> Contain exactly 3 terms.</div>\n        <div>&bull; <b>Polynomials not fitting in these 3 categories:</b> Expressions containing 4 or more terms.</div>\n      </div>\n    </div>\n\n    <!-- Table of Classification (Dark bg, green border, compact font) -->\n    <div class=\"table-card\">\n      <table class=\"styled-table\">\n        <thead>\n          <tr>\n            <th style=\"width: 40%; text-align: left; padding-left: 12px;\">Given Polynomial</th>\n            <th style=\"width: 25%;\">No. of Terms</th>\n            <th style=\"width: 35%;\">Classification</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr>\n            <td class=\"col-label\"><i>x</i> + <i>y</i></td>\n            <td>2 terms</td>\n            <td class=\"highlight-cell\">Binomial</td>\n          </tr>\n          <tr>\n            <td class=\"col-label\">1000</td>\n            <td>1 term</td>\n            <td class=\"highlight-cell\">Monomial</td>\n          </tr>\n          <tr>\n            <td class=\"col-label\"><i>x</i> + <i>x</i><sup>2</sup> + <i>x</i><sup>3</sup> + <i>x</i><sup>4</sup></td>\n            <td>4 terms</td>\n            <td style=\"color: #FF8A80; font-weight: 600;\">Polynomial (Does not fit in the 3 categories)</td>\n          </tr>\n          <tr>\n            <td class=\"col-label\">7 + <i>y</i> + 5<i>x</i></td>\n            <td>3 terms</td>\n            <td class=\"highlight-cell\">Trinomial</td>\n          </tr>\n          <tr>\n            <td class=\"col-label\">2<i>y</i> &minus; 3<i>y</i><sup>2</sup></td>\n            <td>2 terms</td>\n            <td class=\"highlight-cell\">Binomial</td>\n          </tr>\n          <tr>\n            <td class=\"col-label\">2<i>y</i> &minus; 3<i>y</i><sup>2</sup> + 4<i>y</i><sup>3</sup></td>\n            <td>3 terms</td>\n            <td class=\"highlight-cell\">Trinomial</td>\n          </tr>\n          <tr>\n            <td class=\"col-label\">5<i>x</i> &minus; 4<i>y</i> + 3<i>xy</i></td>\n            <td>3 terms</td>\n            <td class=\"highlight-cell\">Trinomial</td>\n          </tr>\n          <tr>\n            <td class=\"col-label\">4<i>z</i> &minus; 15<i>z</i><sup>2</sup></td>\n            <td>2 terms</td>\n            <td class=\"highlight-cell\">Binomial</td>\n          </tr>\n          <tr>\n            <td class=\"col-label\"><i>ab</i> + <i>bc</i> + <i>cd</i> + <i>da</i></td>\n            <td>4 terms</td>\n            <td style=\"color: #FF8A80; font-weight: 600;\">Polynomial (Does not fit in the 3 categories)</td>\n          </tr>\n          <tr>\n            <td class=\"col-label\"><i>pqr</i></td>\n            <td>1 term</td>\n            <td class=\"highlight-cell\">Monomial</td>\n          </tr>\n          <tr>\n            <td class=\"col-label\"><i>p</i><sup>2</sup><i>q</i> + <i>pq</i><sup>2</sup></td>\n            <td>2 terms</td>\n            <td class=\"highlight-cell\">Binomial</td>\n          </tr>\n          <tr>\n            <td class=\"col-label\">2<i>p</i> + 2<i>q</i></td>\n            <td>2 terms</td>\n            <td class=\"highlight-cell\">Binomial</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n\n    <div class=\"ans-box\">\n      <span class=\"ans-label\">✓ Result Summary: </span>\n      <span class=\"ans-val\">Monomials: 2 &bull; Binomials: 5 &bull; Trinomials: 3 &bull; 4-term Polynomials: 2</span>\n    </div>\n  </div>\n\n  <!-- QUESTION 3 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 3:</div>\n    <div class=\"q-text\">Add the following:</div>\n\n    <!-- (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(i)</b> <i>ab</i> &minus; <i>bc</i>, &nbsp;<i>bc</i> &minus; <i>ca</i>, &nbsp;<i>ca</i> &minus; <i>ab</i></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>Required Sum = (<i>ab</i> &minus; <i>bc</i>) + (<i>bc</i> &minus; <i>ca</i>) + (<i>ca</i> &minus; <i>ab</i>)</div>\n          <div>Grouping like terms:</div>\n          <div>= (<i>ab</i> &minus; <i>ab</i>) + (&minus;<i>bc</i> + <i>bc</i>) + (&minus;<i>ca</i> + <i>ca</i>)</div>\n          <div>= 0 + 0 + 0 = <b>0</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Sum: </span><span class=\"ans-val\">0</span></div>\n      </div>\n    </div>\n\n    <!-- (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(ii)</b> <i>a</i> &minus; <i>b</i> + <i>ab</i>, &nbsp;<i>b</i> &minus; <i>c</i> + <i>bc</i>, &nbsp;<i>c</i> &minus; <i>a</i> + <i>ac</i></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>Required Sum = (<i>a</i> &minus; <i>b</i> + <i>ab</i>) + (<i>b</i> &minus; <i>c</i> + <i>bc</i>) + (<i>c</i> &minus; <i>a</i> + <i>ac</i>)</div>\n          <div>Grouping like terms:</div>\n          <div>= (<i>a</i> &minus; <i>a</i>) + (&minus;<i>b</i> + <i>b</i>) + (&minus;<i>c</i> + <i>c</i>) + <i>ab</i> + <i>bc</i> + <i>ac</i></div>\n          <div>= 0 + 0 + 0 + <i>ab</i> + <i>bc</i> + <i>ac</i></div>\n          <div>= <b><i>ab</i> + <i>bc</i> + <i>ac</i></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Sum: </span><span class=\"ans-val\"><i>ab</i> + <i>bc</i> + <i>ac</i></span></div>\n      </div>\n    </div>\n\n    <!-- (iii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(iii)</b> 2<i>p</i><sup>2</sup><i>q</i><sup>2</sup> &minus; 3<i>pq</i> + 4, &nbsp;5 + 7<i>pq</i> &minus; 3<i>p</i><sup>2</sup><i>q</i><sup>2</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>Required Sum = (2<i>p</i><sup>2</sup><i>q</i><sup>2</sup> &minus; 3<i>pq</i> + 4) + (5 + 7<i>pq</i> &minus; 3<i>p</i><sup>2</sup><i>q</i><sup>2</sup>)</div>\n          <div>Grouping like terms:</div>\n          <div>= (2<i>p</i><sup>2</sup><i>q</i><sup>2</sup> &minus; 3<i>p</i><sup>2</sup><i>q</i><sup>2</sup>) + (&minus;3<i>pq</i> + 7<i>pq</i>) + (4 + 5)</div>\n          <div>= <b>&minus;<i>p</i><sup>2</sup><i>q</i><sup>2</sup> + 4<i>pq</i> + 9</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Sum: </span><span class=\"ans-val\">&minus;<i>p</i><sup>2</sup><i>q</i><sup>2</sup> + 4<i>pq</i> + 9</span></div>\n      </div>\n    </div>\n\n    <!-- (iv) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(iv)</b> <i>l</i><sup>2</sup> + <i>m</i><sup>2</sup>, &nbsp;<i>m</i><sup>2</sup> + <i>n</i><sup>2</sup>, &nbsp;<i>n</i><sup>2</sup> + <i>l</i><sup>2</sup>, &nbsp;2<i>lm</i> + 2<i>mn</i> + 2<i>nl</i></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>Required Sum = (<i>l</i><sup>2</sup> + <i>m</i><sup>2</sup>) + (<i>m</i><sup>2</sup> + <i>n</i><sup>2</sup>) + (<i>n</i><sup>2</sup> + <i>l</i><sup>2</sup>) + (2<i>lm</i> + 2<i>mn</i> + 2<i>nl</i>)</div>\n          <div>Grouping like terms:</div>\n          <div>= (<i>l</i><sup>2</sup> + <i>l</i><sup>2</sup>) + (<i>m</i><sup>2</sup> + <i>m</i><sup>2</sup>) + (<i>n</i><sup>2</sup> + <i>n</i><sup>2</sup>) + 2<i>lm</i> + 2<i>mn</i> + 2<i>nl</i></div>\n          <div>= <b>2<i>l</i><sup>2</sup> + 2<i>m</i><sup>2</sup> + 2<i>n</i><sup>2</sup> + 2<i>lm</i> + 2<i>mn</i> + 2<i>nl</i></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Sum: </span><span class=\"ans-val\">2<i>l</i><sup>2</sup> + 2<i>m</i><sup>2</sup> + 2<i>n</i><sup>2</sup> + 2<i>lm</i> + 2<i>mn</i> + 2<i>nl</i></span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 4 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 4:</div>\n    <div class=\"q-text\">Perform the following subtractions:</div>\n\n    <!-- (a) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(a)</b> Subtract 4<i>a</i> &minus; 7<i>ab</i> + 3<i>b</i> + 12 from 12<i>a</i> &minus; 9<i>ab</i> + 5<i>b</i> &minus; 3</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>= (12<i>a</i> &minus; 9<i>ab</i> + 5<i>b</i> &minus; 3) &minus; (4<i>a</i> &minus; 7<i>ab</i> + 3<i>b</i> + 12)</div>\n          <div>Opening bracket and reversing signs of subtracted terms:</div>\n          <div>= 12<i>a</i> &minus; 9<i>ab</i> + 5<i>b</i> &minus; 3 &minus; 4<i>a</i> + 7<i>ab</i> &minus; 3<i>b</i> &minus; 12</div>\n          <div>Grouping like terms:</div>\n          <div>= (12<i>a</i> &minus; 4<i>a</i>) + (&minus;9<i>ab</i> + 7<i>ab</i>) + (5<i>b</i> &minus; 3<i>b</i>) + (&minus;3 &minus; 12)</div>\n          <div>= <b>8<i>a</i> &minus; 2<i>ab</i> + 2<i>b</i> &minus; 15</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Result: </span><span class=\"ans-val\">8<i>a</i> &minus; 2<i>ab</i> + 2<i>b</i> &minus; 15</span></div>\n      </div>\n    </div>\n\n    <!-- (b) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(b)</b> Subtract 3<i>xy</i> + 5<i>yz</i> &minus; 7<i>zx</i> from 5<i>xy</i> &minus; 2<i>yz</i> &minus; 2<i>zx</i> + 10<i>xyz</i></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>= (5<i>xy</i> &minus; 2<i>yz</i> &minus; 2<i>zx</i> + 10<i>xyz</i>) &minus; (3<i>xy</i> + 5<i>yz</i> &minus; 7<i>zx</i>)</div>\n          <div>Opening bracket and reversing signs:</div>\n          <div>= 5<i>xy</i> &minus; 2<i>yz</i> &minus; 2<i>zx</i> + 10<i>xyz</i> &minus; 3<i>xy</i> &minus; 5<i>yz</i> + 7<i>zx</i></div>\n          <div>Grouping like terms:</div>\n          <div>= (5<i>xy</i> &minus; 3<i>xy</i>) + (&minus;2<i>yz</i> &minus; 5<i>yz</i>) + (&minus;2<i>zx</i> + 7<i>zx</i>) + 10<i>xyz</i></div>\n          <div>= <b>2<i>xy</i> &minus; 7<i>yz</i> + 5<i>zx</i> + 10<i>xyz</i></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Result: </span><span class=\"ans-val\">2<i>xy</i> &minus; 7<i>yz</i> + 5<i>zx</i> + 10<i>xyz</i></span></div>\n      </div>\n    </div>\n\n    <!-- (c) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(c)</b> Subtract 4<i>p</i><sup>2</sup><i>q</i> &minus; 3<i>pq</i> + 5<i>pq</i><sup>2</sup> &minus; 8<i>p</i> + 7<i>q</i> &minus; 10 from 18 &minus; 3<i>p</i> &minus; 11<i>q</i> + 5<i>pq</i> &minus; 2<i>pq</i><sup>2</sup> + 5<i>p</i><sup>2</sup><i>q</i></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Solution:</div>\n        <div class=\"sol-step\">\n          <div>= (18 &minus; 3<i>p</i> &minus; 11<i>q</i> + 5<i>pq</i> &minus; 2<i>pq</i><sup>2</sup> + 5<i>p</i><sup>2</sup><i>q</i>) &minus; (4<i>p</i><sup>2</sup><i>q</i> &minus; 3<i>pq</i> + 5<i>pq</i><sup>2</sup> &minus; 8<i>p</i> + 7<i>q</i> &minus; 10)</div>\n          <div>Opening bracket and reversing signs:</div>\n          <div>= 18 &minus; 3<i>p</i> &minus; 11<i>q</i> + 5<i>pq</i> &minus; 2<i>pq</i><sup>2</sup> + 5<i>p</i><sup>2</sup><i>q</i> &minus; 4<i>p</i><sup>2</sup><i>q</i> + 3<i>pq</i> &minus; 5<i>pq</i><sup>2</sup> + 8<i>p</i> &minus; 7<i>q</i> + 10</div>\n          <div>Grouping like terms:</div>\n          <div>= (18 + 10) + (&minus;3<i>p</i> + 8<i>p</i>) + (&minus;11<i>q</i> &minus; 7<i>q</i>) + (5<i>pq</i> + 3<i>pq</i>) + (&minus;2<i>pq</i><sup>2</sup> &minus; 5<i>pq</i><sup>2</sup>) + (5<i>p</i><sup>2</sup><i>q</i> &minus; 4<i>p</i><sup>2</sup><i>q</i>)</div>\n          <div>= <b>28 + 5<i>p</i> &minus; 18<i>q</i> + 8<i>pq</i> &minus; 7<i>pq</i><sup>2</sup> + <i>p</i><sup>2</sup><i>q</i></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Result: </span><span class=\"ans-val\">28 + 5<i>p</i> &minus; 18<i>q</i> + 8<i>pq</i> &minus; 7<i>pq</i><sup>2</sup> + <i>p</i><sup>2</sup><i>q</i></span></div>\n      </div>\n    </div>\n  </div>\n\n</div>\n",
+    "ex9-2": "\n\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; text-align: center; }\n  .frac .den { padding: 1px 4px; text-align: center; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(63, 81, 181, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #3F51B5; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 16px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(63, 81, 181, 0.25); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #3F51B5; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #9FA8DA; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  /* User requested dark bg, green border, compact font for full visibility */\n  .table-card { background: rgba(15, 23, 42, 0.95); border: 1.5px solid #4CAF50; border-radius: 10px; padding: 10px 8px; margin: 16px 0; overflow-x: auto; box-shadow: 0 4px 18px rgba(0,0,0,0.35); -webkit-overflow-scrolling: touch; }\n  .styled-table { width: 100%; border-collapse: collapse; color: #F8FAFC; font-size: 12px; text-align: center; }\n  .styled-table th { background: rgba(76, 175, 80, 0.22); color: #A5D6A7; font-weight: 700; padding: 8px 6px; border: 1px solid rgba(76, 175, 80, 0.4); font-size: 12px; white-space: nowrap; }\n  .styled-table td { padding: 6px 6px; border: 1px solid rgba(255, 255, 255, 0.12); font-weight: 500; font-size: 11.5px; color: #E2E8F0; }\n  .styled-table tr:nth-child(even) td { background: rgba(255, 255, 255, 0.03); }\n  .styled-table td.col-label { font-weight: 700; white-space: nowrap; text-align: left; padding-left: 10px; color: #81C784; }\n  .styled-table td.highlight-cell { color: #FFE082; font-weight: 600; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Header Card -->\n  <div style=\"background: linear-gradient(135deg, rgba(63, 81, 181, 0.2), rgba(156, 39, 176, 0.1)); border: 1.5px solid #3F51B5; border-radius: 12px; padding: 14px 18px; margin-bottom: 20px;\">\n    <div style=\"font-size: 19px; font-weight: 800; color: #3F51B5; margin-bottom: 4px;\">\n      Exercise 9.2\n    </div>\n    <div style=\"color: #FFFFFF; font-size: 15px; font-weight: 500;\">\n      Multiplication of Monomials, Area of Rectangles, Table of Products &amp; Volumes\n    </div>\n  </div>\n\n  <!-- QUESTION 1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 1:</div>\n    <div class=\"q-text\">Find the product of the following pairs of monomials:</div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(i)</b> 4, 7<i>p</i></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">Product = 4 &times; 7<i>p</i> = (4 &times; 7) &times; <i>p</i> = <b>28<i>p</i></b></div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Product: </span><span class=\"ans-val\">28<i>p</i></span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(ii)</b> &minus;4<i>p</i>, 7<i>p</i></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">Product = (&minus;4<i>p</i>) &times; (7<i>p</i>) = (&minus;4 &times; 7) &times; (<i>p</i> &times; <i>p</i>) = <b>&minus;28<i>p</i><sup>2</sup></b></div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Product: </span><span class=\"ans-val\">&minus;28<i>p</i><sup>2</sup></span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(iii)</b> &minus;4<i>p</i>, 7<i>pq</i></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">Product = (&minus;4<i>p</i>) &times; (7<i>pq</i>) = (&minus;4 &times; 7) &times; (<i>p</i> &times; <i>p</i> &times; <i>q</i>) = <b>&minus;28<i>p</i><sup>2</sup><i>q</i></b></div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Product: </span><span class=\"ans-val\">&minus;28<i>p</i><sup>2</sup><i>q</i></span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(iv)</b> 4<i>p</i><sup>3</sup>, &minus;3<i>p</i></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">Product = (4<i>p</i><sup>3</sup>) &times; (&minus;3<i>p</i>) = (4 &times; &minus;3) &times; (<i>p</i><sup>3</sup> &times; <i>p</i>) = <b>&minus;12<i>p</i><sup>4</sup></b></div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Product: </span><span class=\"ans-val\">&minus;12<i>p</i><sup>4</sup></span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(v)</b> 4<i>p</i>, 0</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">Product = 4<i>p</i> &times; 0 = <b>0</b></div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Product: </span><span class=\"ans-val\">0</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 2 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 2:</div>\n    <div class=\"q-text\">Find the areas of rectangles with the following pairs of monomials as their lengths and breadths respectively:</div>\n    <div style=\"color: #94A3B8; font-size: 14px; margin-bottom: 12px; font-style: italic;\">\n      Note: Area of rectangle = Length &times; Breadth.\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(i)</b> (<i>p</i>, <i>q</i>)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">Area = <i>p</i> &times; <i>q</i> = <b><i>pq</i> sq units</b></div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Area: </span><span class=\"ans-val\"><i>pq</i> sq units</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(ii)</b> (10<i>m</i>, 5<i>n</i>)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">Area = 10<i>m</i> &times; 5<i>n</i> = (10 &times; 5) &times; (<i>m</i> &times; <i>n</i>) = <b>50<i>mn</i> sq units</b></div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Area: </span><span class=\"ans-val\">50<i>mn</i> sq units</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(iii)</b> (20<i>x</i><sup>2</sup>, 5<i>y</i><sup>2</sup>)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">Area = 20<i>x</i><sup>2</sup> &times; 5<i>y</i><sup>2</sup> = (20 &times; 5) &times; (<i>x</i><sup>2</sup> &times; <i>y</i><sup>2</sup>) = <b>100<i>x</i><sup>2</sup><i>y</i><sup>2</sup> sq units</b></div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Area: </span><span class=\"ans-val\">100<i>x</i><sup>2</sup><i>y</i><sup>2</sup> sq units</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(iv)</b> (4<i>x</i>, 3<i>x</i><sup>2</sup>)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">Area = 4<i>x</i> &times; 3<i>x</i><sup>2</sup> = (4 &times; 3) &times; (<i>x</i> &times; <i>x</i><sup>2</sup>) = <b>12<i>x</i><sup>3</sup> sq units</b></div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Area: </span><span class=\"ans-val\">12<i>x</i><sup>3</sup> sq units</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(v)</b> (3<i>mn</i>, 4<i>np</i>)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">Area = 3<i>mn</i> &times; 4<i>np</i> = (3 &times; 4) &times; (<i>m</i> &times; <i>n</i> &times; <i>n</i> &times; <i>p</i>) = <b>12<i>mn</i><sup>2</sup><i>p</i> sq units</b></div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Area: </span><span class=\"ans-val\">12<i>mn</i><sup>2</sup><i>p</i> sq units</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 3: Complete the following table of products -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 3:</div>\n    <div class=\"q-text\">Complete the following table of products:</div>\n\n    <!-- 6x6 Matrix Table (Dark bg, green border, compact font) -->\n    <div class=\"table-card\">\n      <table class=\"styled-table\" style=\"font-size: 11px;\">\n        <thead>\n          <tr>\n            <th style=\"background: rgba(63, 81, 181, 0.4); color: #FFFFFF; font-size: 11.5px; padding: 7px 4px;\">\n              First &rarr;<br/>Second &darr;\n            </th>\n            <th style=\"padding: 7px 4px;\">2<i>x</i></th>\n            <th style=\"padding: 7px 4px;\">&minus;5<i>y</i></th>\n            <th style=\"padding: 7px 4px;\">3<i>x</i><sup>2</sup></th>\n            <th style=\"padding: 7px 4px;\">&minus;4<i>xy</i></th>\n            <th style=\"padding: 7px 4px;\">7<i>x</i><sup>2</sup><i>y</i></th>\n            <th style=\"padding: 7px 4px;\">&minus;9<i>x</i><sup>2</sup><i>y</i><sup>2</sup></th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr>\n            <td class=\"col-label\" style=\"text-align: center; padding: 6px 4px;\"><b>2<i>x</i></b></td>\n            <td class=\"highlight-cell\">4<i>x</i><sup>2</sup></td>\n            <td>&minus;10<i>xy</i></td>\n            <td>6<i>x</i><sup>3</sup></td>\n            <td>&minus;8<i>x</i><sup>2</sup><i>y</i></td>\n            <td>14<i>x</i><sup>3</sup><i>y</i></td>\n            <td>&minus;18<i>x</i><sup>3</sup><i>y</i><sup>2</sup></td>\n          </tr>\n          <tr>\n            <td class=\"col-label\" style=\"text-align: center; padding: 6px 4px;\"><b>&minus;5<i>y</i></b></td>\n            <td>&minus;10<i>xy</i></td>\n            <td class=\"highlight-cell\">25<i>y</i><sup>2</sup></td>\n            <td>&minus;15<i>x</i><sup>2</sup><i>y</i></td>\n            <td>20<i>xy</i><sup>2</sup></td>\n            <td>&minus;35<i>x</i><sup>2</sup><i>y</i><sup>2</sup></td>\n            <td>45<i>x</i><sup>2</sup><i>y</i><sup>3</sup></td>\n          </tr>\n          <tr>\n            <td class=\"col-label\" style=\"text-align: center; padding: 6px 4px;\"><b>3<i>x</i><sup>2</sup></b></td>\n            <td>6<i>x</i><sup>3</sup></td>\n            <td>&minus;15<i>x</i><sup>2</sup><i>y</i></td>\n            <td class=\"highlight-cell\">9<i>x</i><sup>4</sup></td>\n            <td>&minus;12<i>x</i><sup>3</sup><i>y</i></td>\n            <td>21<i>x</i><sup>4</sup><i>y</i></td>\n            <td>&minus;27<i>x</i><sup>4</sup><i>y</i><sup>2</sup></td>\n          </tr>\n          <tr>\n            <td class=\"col-label\" style=\"text-align: center; padding: 6px 4px;\"><b>&minus;4<i>xy</i></b></td>\n            <td>&minus;8<i>x</i><sup>2</sup><i>y</i></td>\n            <td>20<i>xy</i><sup>2</sup></td>\n            <td>&minus;12<i>x</i><sup>3</sup><i>y</i></td>\n            <td class=\"highlight-cell\">16<i>x</i><sup>2</sup><i>y</i><sup>2</sup></td>\n            <td>&minus;28<i>x</i><sup>3</sup><i>y</i><sup>2</sup></td>\n            <td>36<i>x</i><sup>3</sup><i>y</i><sup>3</sup></td>\n          </tr>\n          <tr>\n            <td class=\"col-label\" style=\"text-align: center; padding: 6px 4px;\"><b>7<i>x</i><sup>2</sup><i>y</i></b></td>\n            <td>14<i>x</i><sup>3</sup><i>y</i></td>\n            <td>&minus;35<i>x</i><sup>2</sup><i>y</i><sup>2</sup></td>\n            <td>21<i>x</i><sup>4</sup><i>y</i></td>\n            <td>&minus;28<i>x</i><sup>3</sup><i>y</i><sup>2</sup></td>\n            <td class=\"highlight-cell\">49<i>x</i><sup>4</sup><i>y</i><sup>2</sup></td>\n            <td>&minus;63<i>x</i><sup>4</sup><i>y</i><sup>3</sup></td>\n          </tr>\n          <tr>\n            <td class=\"col-label\" style=\"text-align: center; padding: 6px 4px;\"><b>&minus;9<i>x</i><sup>2</sup><i>y</i><sup>2</sup></b></td>\n            <td>&minus;18<i>x</i><sup>3</sup><i>y</i><sup>2</sup></td>\n            <td>45<i>x</i><sup>2</sup><i>y</i><sup>3</sup></td>\n            <td>&minus;27<i>x</i><sup>4</sup><i>y</i><sup>2</sup></td>\n            <td>36<i>x</i><sup>3</sup><i>y</i><sup>3</sup></td>\n            <td>&minus;63<i>x</i><sup>4</sup><i>y</i><sup>3</sup></td>\n            <td class=\"highlight-cell\">81<i>x</i><sup>4</sup><i>y</i><sup>4</sup></td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n\n    <div class=\"ans-box\">\n      <span class=\"ans-label\">✓ Table Status: </span>\n      <span class=\"ans-val\">All 36 monomial product cells fully computed with zero shortcuts.</span>\n    </div>\n  </div>\n\n  <!-- QUESTION 4 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 4:</div>\n    <div class=\"q-text\">Obtain the volume of rectangular boxes with the following length, breadth and height respectively:</div>\n    <div style=\"color: #94A3B8; font-size: 14px; margin-bottom: 12px; font-style: italic;\">\n      Note: Volume of rectangular box = Length &times; Breadth &times; Height.\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(i)</b> 5<i>a</i>, 3<i>a</i><sup>2</sup>, 7<i>a</i><sup>4</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">Volume = 5<i>a</i> &times; 3<i>a</i><sup>2</sup> &times; 7<i>a</i><sup>4</sup> = (5 &times; 3 &times; 7) &times; (<i>a</i> &times; <i>a</i><sup>2</sup> &times; <i>a</i><sup>4</sup>) = <b>105<i>a</i><sup>7</sup> cu units</b></div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Volume: </span><span class=\"ans-val\">105<i>a</i><sup>7</sup> cu units</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(ii)</b> 2<i>p</i>, 4<i>q</i>, 8<i>r</i></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">Volume = 2<i>p</i> &times; 4<i>q</i> &times; 8<i>r</i> = (2 &times; 4 &times; 8) &times; (<i>p</i> &times; <i>q</i> &times; <i>r</i>) = <b>64<i>pqr</i> cu units</b></div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Volume: </span><span class=\"ans-val\">64<i>pqr</i> cu units</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(iii)</b> <i>xy</i>, 2<i>x</i><sup>2</sup><i>y</i>, 2<i>xy</i><sup>2</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">Volume = <i>xy</i> &times; 2<i>x</i><sup>2</sup><i>y</i> &times; 2<i>xy</i><sup>2</sup> = (1 &times; 2 &times; 2) &times; (<i>x</i> &times; <i>x</i><sup>2</sup> &times; <i>x</i> &times; <i>y</i> &times; <i>y</i> &times; <i>y</i><sup>2</sup>) = <b>4<i>x</i><sup>4</sup><i>y</i><sup>4</sup> cu units</b></div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Volume: </span><span class=\"ans-val\">4<i>x</i><sup>4</sup><i>y</i><sup>4</sup> cu units</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(iv)</b> <i>a</i>, 2<i>b</i>, 3<i>c</i></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">Volume = <i>a</i> &times; 2<i>b</i> &times; 3<i>c</i> = (1 &times; 2 &times; 3) &times; (<i>a</i> &times; <i>b</i> &times; <i>c</i>) = <b>6<i>abc</i> cu units</b></div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Volume: </span><span class=\"ans-val\">6<i>abc</i> cu units</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 5 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 5:</div>\n    <div class=\"q-text\">Obtain the product of:</div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(i)</b> <i>xy</i>, <i>yz</i>, <i>zx</i></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">Product = <i>xy</i> &times; <i>yz</i> &times; <i>zx</i> = (<i>x</i> &times; <i>x</i>) &times; (<i>y</i> &times; <i>y</i>) &times; (<i>z</i> &times; <i>z</i>) = <b><i>x</i><sup>2</sup><i>y</i><sup>2</sup><i>z</i><sup>2</sup></b></div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Product: </span><span class=\"ans-val\"><i>x</i><sup>2</sup><i>y</i><sup>2</sup><i>z</i><sup>2</sup></span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(ii)</b> <i>a</i>, &minus;<i>a</i><sup>2</sup>, <i>a</i><sup>3</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">Product = <i>a</i> &times; (&minus;<i>a</i><sup>2</sup>) &times; <i>a</i><sup>3</sup> = &minus;(<i>a</i><sup>1+2+3</sup>) = <b>&minus;<i>a</i><sup>6</sup></b></div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Product: </span><span class=\"ans-val\">&minus;<i>a</i><sup>6</sup></span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(iii)</b> 2, 4<i>y</i>, 8<i>y</i><sup>2</sup>, 16<i>y</i><sup>3</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">Product = 2 &times; 4<i>y</i> &times; 8<i>y</i><sup>2</sup> &times; 16<i>y</i><sup>3</sup> = (2 &times; 4 &times; 8 &times; 16) &times; (<i>y</i> &times; <i>y</i><sup>2</sup> &times; <i>y</i><sup>3</sup>) = <b>1024<i>y</i><sup>6</sup></b></div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Product: </span><span class=\"ans-val\">1024<i>y</i><sup>6</sup></span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(iv)</b> <i>a</i>, 2<i>b</i>, 3<i>c</i>, 6<i>abc</i></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">Product = <i>a</i> &times; 2<i>b</i> &times; 3<i>c</i> &times; 6<i>abc</i> = (1 &times; 2 &times; 3 &times; 6) &times; (<i>a</i> &times; <i>a</i> &times; <i>b</i> &times; <i>b</i> &times; <i>c</i> &times; <i>c</i>) = <b>36<i>a</i><sup>2</sup><i>b</i><sup>2</sup><i>c</i><sup>2</sup></b></div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Product: </span><span class=\"ans-val\">36<i>a</i><sup>2</sup><i>b</i><sup>2</sup><i>c</i><sup>2</sup></span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(v)</b> <i>m</i>, &minus;<i>mn</i>, <i>mnp</i></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">Product = <i>m</i> &times; (&minus;<i>mn</i>) &times; <i>mnp</i> = &minus;(<i>m</i> &times; <i>m</i> &times; <i>m</i> &times; <i>n</i> &times; <i>n</i> &times; <i>p</i>) = <b>&minus;<i>m</i><sup>3</sup><i>n</i><sup>2</sup><i>p</i></b></div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Product: </span><span class=\"ans-val\">&minus;<i>m</i><sup>3</sup><i>n</i><sup>2</sup><i>p</i></span></div>\n      </div>\n    </div>\n  </div>\n\n</div>\n",
+    "ex9-3": "\n\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; text-align: center; }\n  .frac .den { padding: 1px 4px; text-align: center; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(63, 81, 181, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #3F51B5; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 16px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(63, 81, 181, 0.25); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #3F51B5; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #9FA8DA; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  /* User requested dark bg, green border, compact font for full visibility */\n  .table-card { background: rgba(15, 23, 42, 0.95); border: 1.5px solid #4CAF50; border-radius: 10px; padding: 10px 8px; margin: 16px 0; overflow-x: auto; box-shadow: 0 4px 18px rgba(0,0,0,0.35); -webkit-overflow-scrolling: touch; }\n  .styled-table { width: 100%; border-collapse: collapse; color: #F8FAFC; font-size: 12px; text-align: center; }\n  .styled-table th { background: rgba(76, 175, 80, 0.22); color: #A5D6A7; font-weight: 700; padding: 8px 6px; border: 1px solid rgba(76, 175, 80, 0.4); font-size: 12px; white-space: nowrap; }\n  .styled-table td { padding: 6px 6px; border: 1px solid rgba(255, 255, 255, 0.12); font-weight: 500; font-size: 11.5px; color: #E2E8F0; }\n  .styled-table tr:nth-child(even) td { background: rgba(255, 255, 255, 0.03); }\n  .styled-table td.col-label { font-weight: 700; white-space: nowrap; text-align: left; padding-left: 10px; color: #81C784; }\n  .styled-table td.highlight-cell { color: #FFE082; font-weight: 600; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Header Card -->\n  <div style=\"background: linear-gradient(135deg, rgba(63, 81, 181, 0.2), rgba(156, 39, 176, 0.1)); border: 1.5px solid #3F51B5; border-radius: 12px; padding: 14px 18px; margin-bottom: 20px;\">\n    <div style=\"font-size: 19px; font-weight: 800; color: #3F51B5; margin-bottom: 4px;\">\n      Exercise 9.3\n    </div>\n    <div style=\"color: #FFFFFF; font-size: 15px; font-weight: 500;\">\n      Multiplication of Monomial by Polynomial, Complete Products Table &amp; Simplification\n    </div>\n  </div>\n\n  <!-- QUESTION 1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 1:</div>\n    <div class=\"q-text\">Carry out the multiplication of the expressions in each of the following pairs:</div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(i)</b> 4<i>p</i>, <i>q</i> + <i>r</i></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">Product = 4<i>p</i>(<i>q</i> + <i>r</i>) = <b>4<i>pq</i> + 4<i>pr</i></b></div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Product: </span><span class=\"ans-val\">4<i>pq</i> + 4<i>pr</i></span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(ii)</b> <i>ab</i>, <i>a</i> &minus; <i>b</i></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">Product = <i>ab</i>(<i>a</i> &minus; <i>b</i>) = <b><i>a</i><sup>2</sup><i>b</i> &minus; <i>ab</i><sup>2</sup></b></div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Product: </span><span class=\"ans-val\"><i>a</i><sup>2</sup><i>b</i> &minus; <i>ab</i><sup>2</sup></span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(iii)</b> <i>a</i> + <i>b</i>, 7<i>a</i><sup>2</sup><i>b</i><sup>2</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">Product = (<i>a</i> + <i>b</i>)(7<i>a</i><sup>2</sup><i>b</i><sup>2</sup>) = <b>7<i>a</i><sup>3</sup><i>b</i><sup>2</sup> + 7<i>a</i><sup>2</sup><i>b</i><sup>3</sup></b></div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Product: </span><span class=\"ans-val\">7<i>a</i><sup>3</sup><i>b</i><sup>2</sup> + 7<i>a</i><sup>2</sup><i>b</i><sup>3</sup></span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(iv)</b> <i>a</i><sup>2</sup> &minus; 9, 4<i>a</i></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">Product = (<i>a</i><sup>2</sup> &minus; 9)(4<i>a</i>) = <b>4<i>a</i><sup>3</sup> &minus; 36<i>a</i></b></div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Product: </span><span class=\"ans-val\">4<i>a</i><sup>3</sup> &minus; 36<i>a</i></span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(v)</b> <i>pq</i> + <i>qr</i> + <i>rp</i>, 0</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">Product = (<i>pq</i> + <i>qr</i> + <i>rp</i>) &times; 0 = <b>0</b></div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Product: </span><span class=\"ans-val\">0</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 2: Complete the Table -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 2:</div>\n    <div class=\"q-text\">Complete the table:</div>\n\n    <!-- Products Table (Dark bg, green border, compact font) -->\n    <div class=\"table-card\">\n      <table class=\"styled-table\">\n        <thead>\n          <tr>\n            <th style=\"width: 10%;\">Sl.</th>\n            <th style=\"width: 25%; text-align: left; padding-left: 10px;\">First Expression</th>\n            <th style=\"width: 30%; text-align: left; padding-left: 10px;\">Second Expression</th>\n            <th style=\"width: 35%; text-align: left; padding-left: 10px;\">Product</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr>\n            <td class=\"col-label\" style=\"text-align: center;\">(i)</td>\n            <td style=\"text-align: left; padding-left: 10px;\"><i>a</i></td>\n            <td style=\"text-align: left; padding-left: 10px;\"><i>b</i> + <i>c</i> + <i>d</i></td>\n            <td class=\"highlight-cell\" style=\"text-align: left; padding-left: 10px;\"><b><i>ab</i> + <i>ac</i> + <i>ad</i></b></td>\n          </tr>\n          <tr>\n            <td class=\"col-label\" style=\"text-align: center;\">(ii)</td>\n            <td style=\"text-align: left; padding-left: 10px;\"><i>x</i> + <i>y</i> &minus; 5</td>\n            <td style=\"text-align: left; padding-left: 10px;\">5<i>xy</i></td>\n            <td class=\"highlight-cell\" style=\"text-align: left; padding-left: 10px;\"><b>5<i>x</i><sup>2</sup><i>y</i> + 5<i>xy</i><sup>2</sup> &minus; 25<i>xy</i></b></td>\n          </tr>\n          <tr>\n            <td class=\"col-label\" style=\"text-align: center;\">(iii)</td>\n            <td style=\"text-align: left; padding-left: 10px;\"><i>p</i></td>\n            <td style=\"text-align: left; padding-left: 10px;\">6<i>p</i><sup>2</sup> &minus; 7<i>p</i> + 5</td>\n            <td class=\"highlight-cell\" style=\"text-align: left; padding-left: 10px;\"><b>6<i>p</i><sup>3</sup> &minus; 7<i>p</i><sup>2</sup> + 5<i>p</i></b></td>\n          </tr>\n          <tr>\n            <td class=\"col-label\" style=\"text-align: center;\">(iv)</td>\n            <td style=\"text-align: left; padding-left: 10px;\">4<i>p</i><sup>2</sup><i>q</i><sup>2</sup></td>\n            <td style=\"text-align: left; padding-left: 10px;\"><i>p</i><sup>2</sup> &minus; <i>q</i><sup>2</sup></td>\n            <td class=\"highlight-cell\" style=\"text-align: left; padding-left: 10px;\"><b>4<i>p</i><sup>4</sup><i>q</i><sup>2</sup> &minus; 4<i>p</i><sup>2</sup><i>q</i><sup>4</sup></b></td>\n          </tr>\n          <tr>\n            <td class=\"col-label\" style=\"text-align: center;\">(v)</td>\n            <td style=\"text-align: left; padding-left: 10px;\"><i>a</i> + <i>b</i> + <i>c</i></td>\n            <td style=\"text-align: left; padding-left: 10px;\"><i>abc</i></td>\n            <td class=\"highlight-cell\" style=\"text-align: left; padding-left: 10px;\"><b><i>a</i><sup>2</sup><i>bc</i> + <i>ab</i><sup>2</sup><i>c</i> + <i>abc</i><sup>2</sup></b></td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n\n    <div class=\"ans-box\">\n      <span class=\"ans-label\">✓ Table Status: </span>\n      <span class=\"ans-val\">All 5 algebraic products fully computed using the distributive law.</span>\n    </div>\n  </div>\n\n  <!-- QUESTION 3 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 3:</div>\n    <div class=\"q-text\">Find the product:</div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(i)</b> <i>a</i><sup>2</sup> &times; (2<i>a</i><sup>22</sup>) &times; (4<i>a</i><sup>26</sup>)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= (1 &times; 2 &times; 4) &times; (<i>a</i><sup>2</sup> &times; <i>a</i><sup>22</sup> &times; <i>a</i><sup>26</sup>)</div>\n          <div>= 8 &times; <i>a</i><sup>2 + 22 + 26</sup> = <b>8<i>a</i><sup>50</sup></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Product: </span><span class=\"ans-val\">8<i>a</i><sup>50</sup></span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(ii)</b> (<span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span><i>xy</i>) &times; (&minus;<span class=\"frac\"><span class=\"num\">9</span><span class=\"den\">10</span></span><i>x</i><sup>2</sup><i>y</i><sup>2</sup>)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= (<span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span> &times; &minus;<span class=\"frac\"><span class=\"num\">9</span><span class=\"den\">10</span></span>) &times; (<i>xy</i> &times; <i>x</i><sup>2</sup><i>y</i><sup>2</sup>)</div>\n          <div>= &minus;<span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">5</span></span> &times; (<i>x</i><sup>1+2</sup> &times; <i>y</i><sup>1+2</sup>) = <b>&minus;<span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">5</span></span><i>x</i><sup>3</sup><i>y</i><sup>3</sup></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Product: </span><span class=\"ans-val\">&minus;<span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">5</span></span><i>x</i><sup>3</sup><i>y</i><sup>3</sup></span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(iii)</b> (&minus;<span class=\"frac\"><span class=\"num\">10</span><span class=\"den\">3</span></span><i>pq</i><sup>3</sup>) &times; (<span class=\"frac\"><span class=\"num\">6</span><span class=\"den\">5</span></span><i>p</i><sup>3</sup><i>q</i>)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= (&minus;<span class=\"frac\"><span class=\"num\">10</span><span class=\"den\">3</span></span> &times; <span class=\"frac\"><span class=\"num\">6</span><span class=\"den\">5</span></span>) &times; (<i>pq</i><sup>3</sup> &times; <i>p</i><sup>3</sup><i>q</i>)</div>\n          <div>= &minus;4 &times; (<i>p</i><sup>1+3</sup> &times; <i>q</i><sup>3+1</sup>) = <b>&minus;4<i>p</i><sup>4</sup><i>q</i><sup>4</sup></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Product: </span><span class=\"ans-val\">&minus;4<i>p</i><sup>4</sup><i>q</i><sup>4</sup></span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(iv)</b> <i>x</i> &times; <i>x</i><sup>2</sup> &times; <i>x</i><sup>3</sup> &times; <i>x</i><sup>4</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= <i>x</i><sup>1 + 2 + 3 + 4</sup> = <b><i>x</i><sup>10</sup></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Product: </span><span class=\"ans-val\"><i>x</i><sup>10</sup></span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 4 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 4:</div>\n    <div class=\"q-text\">Algebraic Simplification and Substitution:</div>\n\n    <!-- (a) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(a)</b> Simplify 3<i>x</i>(4<i>x</i> &minus; 5) + 3 and find its values for (i) <i>x</i> = 3, &nbsp;(ii) <i>x</i> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Simplification:</div>\n        <div class=\"sol-step\">\n          <div>3<i>x</i>(4<i>x</i> &minus; 5) + 3 = (3<i>x</i> &times; 4<i>x</i>) &minus; (3<i>x</i> &times; 5) + 3 = <b>12<i>x</i><sup>2</sup> &minus; 15<i>x</i> + 3</b></div>\n        </div>\n        <div class=\"sol-title\" style=\"margin-top: 10px;\">Evaluating at given values:</div>\n        <div class=\"sol-step\">\n          <div>&bull; <b>(i) For <i>x</i> = 3:</b></div>\n          <div style=\"padding-left: 12px;\">= 12(3)<sup>2</sup> &minus; 15(3) + 3 = 12(9) &minus; 45 + 3 = 108 &minus; 45 + 3 = <b>66</b></div>\n          <div style=\"margin-top: 6px;\">&bull; <b>(ii) For <i>x</i> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>:</b></div>\n          <div style=\"padding-left: 12px;\">\n            = 12(<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>)<sup>2</sup> &minus; 15(<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>) + 3<br/>\n            = 12 &times; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span> &minus; <span class=\"frac\"><span class=\"num\">15</span><span class=\"den\">2</span></span> + 3 = 3 &minus; <span class=\"frac\"><span class=\"num\">15</span><span class=\"den\">2</span></span> + 3 = 6 &minus; <span class=\"frac\"><span class=\"num\">15</span><span class=\"den\">2</span></span> = <span class=\"frac\"><span class=\"num\">12 &minus; 15</span><span class=\"den\">2</span></span> = <b>&minus;<span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">2</span></span></b>\n          </div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Answers: </span><span class=\"ans-val\">(i) 66 &nbsp;|&nbsp; (ii) &minus;<span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">2</span></span></span></div>\n      </div>\n    </div>\n\n    <!-- (b) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(b)</b> Simplify <i>a</i>(<i>a</i><sup>2</sup> + <i>a</i> + 1) + 5 and find its values for (i) <i>a</i> = 0, &nbsp;(ii) <i>a</i> = 1, &nbsp;(iii) <i>a</i> = &minus;1</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">Simplification:</div>\n        <div class=\"sol-step\">\n          <div><i>a</i>(<i>a</i><sup>2</sup> + <i>a</i> + 1) + 5 = (<i>a</i> &times; <i>a</i><sup>2</sup>) + (<i>a</i> &times; <i>a</i>) + (<i>a</i> &times; 1) + 5 = <b><i>a</i><sup>3</sup> + <i>a</i><sup>2</sup> + <i>a</i> + 5</b></div>\n        </div>\n        <div class=\"sol-title\" style=\"margin-top: 10px;\">Evaluating at given values:</div>\n        <div class=\"sol-step\">\n          <div>&bull; <b>(i) For <i>a</i> = 0:</b> (0)<sup>3</sup> + (0)<sup>2</sup> + 0 + 5 = <b>5</b></div>\n          <div>&bull; <b>(ii) For <i>a</i> = 1:</b> (1)<sup>3</sup> + (1)<sup>2</sup> + 1 + 5 = 1 + 1 + 1 + 5 = <b>8</b></div>\n          <div>&bull; <b>(iii) For <i>a</i> = &minus;1:</b> (&minus;1)<sup>3</sup> + (&minus;1)<sup>2</sup> + (&minus;1) + 5 = &minus;1 + 1 &minus; 1 + 5 = <b>4</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Answers: </span><span class=\"ans-val\">(i) 5 &nbsp;|&nbsp; (ii) 8 &nbsp;|&nbsp; (iii) 4</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 5 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 5:</div>\n    <div class=\"q-text\">Addition and Subtraction of Multiplied Expressions:</div>\n\n    <!-- (a) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(a)</b> Add: <i>p</i>(<i>p</i> &minus; <i>q</i>), &nbsp;<i>q</i>(<i>q</i> &minus; <i>r</i>) and <i>r</i>(<i>r</i> &minus; <i>p</i>)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Expanding each expression:</div>\n          <div><i>p</i>(<i>p</i> &minus; <i>q</i>) = <i>p</i><sup>2</sup> &minus; <i>pq</i></div>\n          <div><i>q</i>(<i>q</i> &minus; <i>r</i>) = <i>q</i><sup>2</sup> &minus; <i>qr</i></div>\n          <div><i>r</i>(<i>r</i> &minus; <i>p</i>) = <i>r</i><sup>2</sup> &minus; <i>pr</i></div>\n          <div style=\"margin-top: 6px;\">Total Sum = (<i>p</i><sup>2</sup> &minus; <i>pq</i>) + (<i>q</i><sup>2</sup> &minus; <i>qr</i>) + (<i>r</i><sup>2</sup> &minus; <i>pr</i>)</div>\n          <div>= <b><i>p</i><sup>2</sup> + <i>q</i><sup>2</sup> + <i>r</i><sup>2</sup> &minus; <i>pq</i> &minus; <i>qr</i> &minus; <i>pr</i></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Sum: </span><span class=\"ans-val\"><i>p</i><sup>2</sup> + <i>q</i><sup>2</sup> + <i>r</i><sup>2</sup> &minus; <i>pq</i> &minus; <i>qr</i> &minus; <i>pr</i></span></div>\n      </div>\n    </div>\n\n    <!-- (b) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(b)</b> Add: 2<i>x</i>(<i>z</i> &minus; <i>x</i> &minus; <i>y</i>) and 2<i>y</i>(<i>z</i> &minus; <i>y</i> &minus; <i>x</i>)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Expanding both expressions:</div>\n          <div>2<i>x</i>(<i>z</i> &minus; <i>x</i> &minus; <i>y</i>) = 2<i>xz</i> &minus; 2<i>x</i><sup>2</sup> &minus; 2<i>xy</i></div>\n          <div>2<i>y</i>(<i>z</i> &minus; <i>y</i> &minus; <i>x</i>) = 2<i>yz</i> &minus; 2<i>y</i><sup>2</sup> &minus; 2<i>xy</i></div>\n          <div style=\"margin-top: 6px;\">Total Sum = (2<i>xz</i> &minus; 2<i>x</i><sup>2</sup> &minus; 2<i>xy</i>) + (2<i>yz</i> &minus; 2<i>y</i><sup>2</sup> &minus; 2<i>xy</i>)</div>\n          <div>= 2<i>xz</i> + 2<i>yz</i> &minus; 2<i>x</i><sup>2</sup> &minus; 2<i>y</i><sup>2</sup> &minus; 4<i>xy</i></div>\n          <div>= <b>&minus;2<i>x</i><sup>2</sup> &minus; 2<i>y</i><sup>2</sup> &minus; 4<i>xy</i> + 2<i>yz</i> + 2<i>zx</i></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Sum: </span><span class=\"ans-val\">&minus;2<i>x</i><sup>2</sup> &minus; 2<i>y</i><sup>2</sup> &minus; 4<i>xy</i> + 2<i>yz</i> + 2<i>zx</i></span></div>\n      </div>\n    </div>\n\n    <!-- (c) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(c)</b> Subtract: 3<i>l</i>(<i>l</i> &minus; 4<i>m</i> + 5<i>n</i>) from 4<i>l</i>(10<i>n</i> &minus; 3<i>m</i> + 2<i>l</i>)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Expanding both expressions:</div>\n          <div>Target = 4<i>l</i>(10<i>n</i> &minus; 3<i>m</i> + 2<i>l</i>) = 40<i>ln</i> &minus; 12<i>lm</i> + 8<i>l</i><sup>2</sup></div>\n          <div>To subtract = 3<i>l</i>(<i>l</i> &minus; 4<i>m</i> + 5<i>n</i>) = 3<i>l</i><sup>2</sup> &minus; 12<i>lm</i> + 15<i>ln</i></div>\n          <div style=\"margin-top: 6px;\">Difference = (40<i>ln</i> &minus; 12<i>lm</i> + 8<i>l</i><sup>2</sup>) &minus; (3<i>l</i><sup>2</sup> &minus; 12<i>lm</i> + 15<i>ln</i>)</div>\n          <div>= 40<i>ln</i> &minus; 12<i>lm</i> + 8<i>l</i><sup>2</sup> &minus; 3<i>l</i><sup>2</sup> + 12<i>lm</i> &minus; 15<i>ln</i></div>\n          <div>= (8<i>l</i><sup>2</sup> &minus; 3<i>l</i><sup>2</sup>) + (&minus;12<i>lm</i> + 12<i>lm</i>) + (40<i>ln</i> &minus; 15<i>ln</i>)</div>\n          <div>= 5<i>l</i><sup>2</sup> + 0 + 25<i>ln</i> = <b>5<i>l</i><sup>2</sup> + 25<i>ln</i></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Result: </span><span class=\"ans-val\">5<i>l</i><sup>2</sup> + 25<i>ln</i></span></div>\n      </div>\n    </div>\n\n    <!-- (d) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(d)</b> Subtract: 3<i>a</i>(<i>a</i> + <i>b</i> + <i>c</i>) &minus; 2<i>b</i>(<i>a</i> &minus; <i>b</i> + <i>c</i>) from 4<i>c</i>(&minus;<i>a</i> + <i>b</i> + <i>c</i>)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>First simplify the expression to subtract:</div>\n          <div>3<i>a</i>(<i>a</i> + <i>b</i> + <i>c</i>) &minus; 2<i>b</i>(<i>a</i> &minus; <i>b</i> + <i>c</i>)</div>\n          <div>= 3<i>a</i><sup>2</sup> + 3<i>ab</i> + 3<i>ac</i> &minus; (2<i>ab</i> &minus; 2<i>b</i><sup>2</sup> + 2<i>bc</i>)</div>\n          <div>= 3<i>a</i><sup>2</sup> + 3<i>ab</i> + 3<i>ac</i> &minus; 2<i>ab</i> + 2<i>b</i><sup>2</sup> &minus; 2<i>bc</i></div>\n          <div>= 3<i>a</i><sup>2</sup> + 2<i>b</i><sup>2</sup> + <i>ab</i> &minus; 2<i>bc</i> + 3<i>ac</i></div>\n          <div style=\"margin-top: 8px;\">Target expression:</div>\n          <div>4<i>c</i>(&minus;<i>a</i> + <i>b</i> + <i>c</i>) = &minus;4<i>ac</i> + 4<i>bc</i> + 4<i>c</i><sup>2</sup></div>\n          <div style=\"margin-top: 8px;\">Now subtracting:</div>\n          <div>= (&minus;4<i>ac</i> + 4<i>bc</i> + 4<i>c</i><sup>2</sup>) &minus; (3<i>a</i><sup>2</sup> + 2<i>b</i><sup>2</sup> + <i>ab</i> &minus; 2<i>bc</i> + 3<i>ac</i>)</div>\n          <div>= &minus;4<i>ac</i> + 4<i>bc</i> + 4<i>c</i><sup>2</sup> &minus; 3<i>a</i><sup>2</sup> &minus; 2<i>b</i><sup>2</sup> &minus; <i>ab</i> + 2<i>bc</i> &minus; 3<i>ac</i></div>\n          <div>= &minus;3<i>a</i><sup>2</sup> &minus; 2<i>b</i><sup>2</sup> + 4<i>c</i><sup>2</sup> &minus; <i>ab</i> + (4<i>bc</i> + 2<i>bc</i>) + (&minus;4<i>ac</i> &minus; 3<i>ac</i>)</div>\n          <div>= <b>&minus;3<i>a</i><sup>2</sup> &minus; 2<i>b</i><sup>2</sup> + 4<i>c</i><sup>2</sup> &minus; <i>ab</i> + 6<i>bc</i> &minus; 7<i>ac</i></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Result: </span><span class=\"ans-val\">&minus;3<i>a</i><sup>2</sup> &minus; 2<i>b</i><sup>2</sup> + 4<i>c</i><sup>2</sup> &minus; <i>ab</i> + 6<i>bc</i> &minus; 7<i>ac</i></span></div>\n      </div>\n    </div>\n  </div>\n\n</div>\n",
+    "ex9-4": "\n\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; text-align: center; }\n  .frac .den { padding: 1px 4px; text-align: center; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(63, 81, 181, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #3F51B5; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 16px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(63, 81, 181, 0.25); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #3F51B5; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #9FA8DA; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  /* User requested dark bg, green border, compact font for full visibility */\n  .table-card { background: rgba(15, 23, 42, 0.95); border: 1.5px solid #4CAF50; border-radius: 10px; padding: 10px 8px; margin: 16px 0; overflow-x: auto; box-shadow: 0 4px 18px rgba(0,0,0,0.35); -webkit-overflow-scrolling: touch; }\n  .styled-table { width: 100%; border-collapse: collapse; color: #F8FAFC; font-size: 12px; text-align: center; }\n  .styled-table th { background: rgba(76, 175, 80, 0.22); color: #A5D6A7; font-weight: 700; padding: 8px 6px; border: 1px solid rgba(76, 175, 80, 0.4); font-size: 12px; white-space: nowrap; }\n  .styled-table td { padding: 6px 6px; border: 1px solid rgba(255, 255, 255, 0.12); font-weight: 500; font-size: 11.5px; color: #E2E8F0; }\n  .styled-table tr:nth-child(even) td { background: rgba(255, 255, 255, 0.03); }\n  .styled-table td.col-label { font-weight: 700; white-space: nowrap; text-align: left; padding-left: 10px; color: #81C784; }\n  .styled-table td.highlight-cell { color: #FFE082; font-weight: 600; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Header Card -->\n  <div style=\"background: linear-gradient(135deg, rgba(63, 81, 181, 0.2), rgba(156, 39, 176, 0.1)); border: 1.5px solid #3F51B5; border-radius: 12px; padding: 14px 18px; margin-bottom: 20px;\">\n    <div style=\"font-size: 19px; font-weight: 800; color: #3F51B5; margin-bottom: 4px;\">\n      Exercise 9.4\n    </div>\n    <div style=\"color: #FFFFFF; font-size: 15px; font-weight: 500;\">\n      Multiplication of Binomial by Binomial &amp; Simplification of Algebraic Products\n    </div>\n  </div>\n\n  <!-- QUESTION 1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 1:</div>\n    <div class=\"q-text\">Multiply the binomials:</div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(i)</b> (2<i>x</i> + 5) and (4<i>x</i> &minus; 3)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= 2<i>x</i>(4<i>x</i> &minus; 3) + 5(4<i>x</i> &minus; 3)</div>\n          <div>= 8<i>x</i><sup>2</sup> &minus; 6<i>x</i> + 20<i>x</i> &minus; 15 = <b>8<i>x</i><sup>2</sup> + 14<i>x</i> &minus; 15</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Product: </span><span class=\"ans-val\">8<i>x</i><sup>2</sup> + 14<i>x</i> &minus; 15</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(ii)</b> (<i>y</i> &minus; 8) and (3<i>y</i> &minus; 4)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= <i>y</i>(3<i>y</i> &minus; 4) &minus; 8(3<i>y</i> &minus; 4)</div>\n          <div>= 3<i>y</i><sup>2</sup> &minus; 4<i>y</i> &minus; 24<i>y</i> + 32 = <b>3<i>y</i><sup>2</sup> &minus; 28<i>y</i> + 32</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Product: </span><span class=\"ans-val\">3<i>y</i><sup>2</sup> &minus; 28<i>y</i> + 32</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(iii)</b> (2.5<i>l</i> &minus; 0.5<i>m</i>) and (2.5<i>l</i> + 0.5<i>m</i>)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= 2.5<i>l</i>(2.5<i>l</i> + 0.5<i>m</i>) &minus; 0.5<i>m</i>(2.5<i>l</i> + 0.5<i>m</i>)</div>\n          <div>= 6.25<i>l</i><sup>2</sup> + 1.25<i>lm</i> &minus; 1.25<i>lm</i> &minus; 0.25<i>m</i><sup>2</sup> = <b>6.25<i>l</i><sup>2</sup> &minus; 0.25<i>m</i><sup>2</sup></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Product: </span><span class=\"ans-val\">6.25<i>l</i><sup>2</sup> &minus; 0.25<i>m</i><sup>2</sup></span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(iv)</b> (<i>a</i> + 3<i>b</i>) and (<i>x</i> + 5)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= <i>a</i>(<i>x</i> + 5) + 3<i>b</i>(<i>x</i> + 5)</div>\n          <div>= <b><i>ax</i> + 5<i>a</i> + 3<i>bx</i> + 15<i>b</i></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Product: </span><span class=\"ans-val\"><i>ax</i> + 5<i>a</i> + 3<i>bx</i> + 15<i>b</i></span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(v)</b> (2<i>pq</i> + 3<i>q</i><sup>2</sup>) and (3<i>pq</i> &minus; 2<i>q</i><sup>2</sup>)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= 2<i>pq</i>(3<i>pq</i> &minus; 2<i>q</i><sup>2</sup>) + 3<i>q</i><sup>2</sup>(3<i>pq</i> &minus; 2<i>q</i><sup>2</sup>)</div>\n          <div>= 6<i>p</i><sup>2</sup><i>q</i><sup>2</sup> &minus; 4<i>pq</i><sup>3</sup> + 9<i>pq</i><sup>3</sup> &minus; 6<i>q</i><sup>4</sup> = <b>6<i>p</i><sup>2</sup><i>q</i><sup>2</sup> + 5<i>pq</i><sup>3</sup> &minus; 6<i>q</i><sup>4</sup></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Product: </span><span class=\"ans-val\">6<i>p</i><sup>2</sup><i>q</i><sup>2</sup> + 5<i>pq</i><sup>3</sup> &minus; 6<i>q</i><sup>4</sup></span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(vi)</b> (<span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span><i>a</i><sup>2</sup> + 3<i>b</i><sup>2</sup>) and 4(<i>a</i><sup>2</sup> &minus; <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span><i>b</i><sup>2</sup>)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>First simplify the second factor: 4(<i>a</i><sup>2</sup> &minus; <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span><i>b</i><sup>2</sup>) = 4<i>a</i><sup>2</sup> &minus; <span class=\"frac\"><span class=\"num\">8</span><span class=\"den\">3</span></span><i>b</i><sup>2</sup></div>\n          <div>Now multiply both binomials:</div>\n          <div>= (<span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span><i>a</i><sup>2</sup> + 3<i>b</i><sup>2</sup>)(4<i>a</i><sup>2</sup> &minus; <span class=\"frac\"><span class=\"num\">8</span><span class=\"den\">3</span></span><i>b</i><sup>2</sup>)</div>\n          <div>= <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span><i>a</i><sup>2</sup>(4<i>a</i><sup>2</sup> &minus; <span class=\"frac\"><span class=\"num\">8</span><span class=\"den\">3</span></span><i>b</i><sup>2</sup>) + 3<i>b</i><sup>2</sup>(4<i>a</i><sup>2</sup> &minus; <span class=\"frac\"><span class=\"num\">8</span><span class=\"den\">3</span></span><i>b</i><sup>2</sup>)</div>\n          <div>= (<span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span> &times; 4)<i>a</i><sup>4</sup> &minus; (<span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span> &times; <span class=\"frac\"><span class=\"num\">8</span><span class=\"den\">3</span></span>)<i>a</i><sup>2</sup><i>b</i><sup>2</sup> + (3 &times; 4)<i>a</i><sup>2</sup><i>b</i><sup>2</sup> &minus; (3 &times; <span class=\"frac\"><span class=\"num\">8</span><span class=\"den\">3</span></span>)<i>b</i><sup>4</sup></div>\n          <div>= 3<i>a</i><sup>4</sup> &minus; 2<i>a</i><sup>2</sup><i>b</i><sup>2</sup> + 12<i>a</i><sup>2</sup><i>b</i><sup>2</sup> &minus; 8<i>b</i><sup>4</sup> = <b>3<i>a</i><sup>4</sup> + 10<i>a</i><sup>2</sup><i>b</i><sup>2</sup> &minus; 8<i>b</i><sup>4</sup></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Product: </span><span class=\"ans-val\">3<i>a</i><sup>4</sup> + 10<i>a</i><sup>2</sup><i>b</i><sup>2</sup> &minus; 8<i>b</i><sup>4</sup></span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 2 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 2:</div>\n    <div class=\"q-text\">Find the product:</div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(i)</b> (5 &minus; 2<i>x</i>)(3 + <i>x</i>)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= 5(3 + <i>x</i>) &minus; 2<i>x</i>(3 + <i>x</i>)</div>\n          <div>= 15 + 5<i>x</i> &minus; 6<i>x</i> &minus; 2<i>x</i><sup>2</sup> = <b>15 &minus; <i>x</i> &minus; 2<i>x</i><sup>2</sup></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Product: </span><span class=\"ans-val\">15 &minus; <i>x</i> &minus; 2<i>x</i><sup>2</sup></span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(ii)</b> (<i>x</i> + 7<i>y</i>)(7<i>x</i> &minus; <i>y</i>)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= <i>x</i>(7<i>x</i> &minus; <i>y</i>) + 7<i>y</i>(7<i>x</i> &minus; <i>y</i>)</div>\n          <div>= 7<i>x</i><sup>2</sup> &minus; <i>xy</i> + 49<i>xy</i> &minus; 7<i>y</i><sup>2</sup> = <b>7<i>x</i><sup>2</sup> + 48<i>xy</i> &minus; 7<i>y</i><sup>2</sup></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Product: </span><span class=\"ans-val\">7<i>x</i><sup>2</sup> + 48<i>xy</i> &minus; 7<i>y</i><sup>2</sup></span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(iii)</b> (<i>a</i><sup>2</sup> + <i>b</i>)(<i>a</i> + <i>b</i><sup>2</sup>)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= <i>a</i><sup>2</sup>(<i>a</i> + <i>b</i><sup>2</sup>) + <i>b</i>(<i>a</i> + <i>b</i><sup>2</sup>)</div>\n          <div>= <b><i>a</i><sup>3</sup> + <i>a</i><sup>2</sup><i>b</i><sup>2</sup> + <i>ab</i> + <i>b</i><sup>3</sup></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Product: </span><span class=\"ans-val\"><i>a</i><sup>3</sup> + <i>a</i><sup>2</sup><i>b</i><sup>2</sup> + <i>ab</i> + <i>b</i><sup>3</sup></span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(iv)</b> (<i>p</i><sup>2</sup> &minus; <i>q</i><sup>2</sup>)(2<i>p</i> + <i>q</i>)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= <i>p</i><sup>2</sup>(2<i>p</i> + <i>q</i>) &minus; <i>q</i><sup>2</sup>(2<i>p</i> + <i>q</i>)</div>\n          <div>= <b>2<i>p</i><sup>3</sup> + <i>p</i><sup>2</sup><i>q</i> &minus; 2<i>pq</i><sup>2</sup> &minus; <i>q</i><sup>3</sup></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Product: </span><span class=\"ans-val\">2<i>p</i><sup>3</sup> + <i>p</i><sup>2</sup><i>q</i> &minus; 2<i>pq</i><sup>2</sup> &minus; <i>q</i><sup>3</sup></span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 3 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 3:</div>\n    <div class=\"q-text\">Simplify:</div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(i)</b> (<i>x</i><sup>2</sup> &minus; 5)(<i>x</i> + 5) + 25</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= <i>x</i><sup>2</sup>(<i>x</i> + 5) &minus; 5(<i>x</i> + 5) + 25</div>\n          <div>= <i>x</i><sup>3</sup> + 5<i>x</i><sup>2</sup> &minus; 5<i>x</i> &minus; 25 + 25 = <b><i>x</i><sup>3</sup> + 5<i>x</i><sup>2</sup> &minus; 5<i>x</i></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Result: </span><span class=\"ans-val\"><i>x</i><sup>3</sup> + 5<i>x</i><sup>2</sup> &minus; 5<i>x</i></span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(ii)</b> (<i>a</i><sup>2</sup> + 5)(<i>b</i><sup>3</sup> + 3) + 5</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= <i>a</i><sup>2</sup>(<i>b</i><sup>3</sup> + 3) + 5(<i>b</i><sup>3</sup> + 3) + 5</div>\n          <div>= <i>a</i><sup>2</sup><i>b</i><sup>3</sup> + 3<i>a</i><sup>2</sup> + 5<i>b</i><sup>3</sup> + 15 + 5 = <b><i>a</i><sup>2</sup><i>b</i><sup>3</sup> + 3<i>a</i><sup>2</sup> + 5<i>b</i><sup>3</sup> + 20</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Result: </span><span class=\"ans-val\"><i>a</i><sup>2</sup><i>b</i><sup>3</sup> + 3<i>a</i><sup>2</sup> + 5<i>b</i><sup>3</sup> + 20</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(iii)</b> (<i>t</i> + <i>s</i><sup>2</sup>)(<i>t</i><sup>2</sup> &minus; <i>s</i>)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= <i>t</i>(<i>t</i><sup>2</sup> &minus; <i>s</i>) + <i>s</i><sup>2</sup>(<i>t</i><sup>2</sup> &minus; <i>s</i>)</div>\n          <div>= <b><i>t</i><sup>3</sup> &minus; <i>st</i> + <i>s</i><sup>2</sup><i>t</i><sup>2</sup> &minus; <i>s</i><sup>3</sup></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Result: </span><span class=\"ans-val\"><i>t</i><sup>3</sup> &minus; <i>st</i> + <i>s</i><sup>2</sup><i>t</i><sup>2</sup> &minus; <i>s</i><sup>3</sup></span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(iv)</b> (<i>a</i> + <i>b</i>)(<i>c</i> &minus; <i>d</i>) + (<i>a</i> &minus; <i>b</i>)(<i>c</i> + <i>d</i>) + 2(<i>ac</i> + <i>bd</i>)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= (<i>ac</i> &minus; <i>ad</i> + <i>bc</i> &minus; <i>bd</i>) + (<i>ac</i> + <i>ad</i> &minus; <i>bc</i> &minus; <i>bd</i>) + (2<i>ac</i> + 2<i>bd</i>)</div>\n          <div>= (<i>ac</i> + <i>ac</i> + 2<i>ac</i>) + (&minus;<i>ad</i> + <i>ad</i>) + (<i>bc</i> &minus; <i>bc</i>) + (&minus;<i>bd</i> &minus; <i>bd</i> + 2<i>bd</i>)</div>\n          <div>= 4<i>ac</i> + 0 + 0 + 0 = <b>4<i>ac</i></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Result: </span><span class=\"ans-val\">4<i>ac</i></span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(v)</b> (<i>x</i> + <i>y</i>)(2<i>x</i> + <i>y</i>) + (<i>x</i> + 2<i>y</i>)(<i>x</i> &minus; <i>y</i>)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= [<i>x</i>(2<i>x</i> + <i>y</i>) + <i>y</i>(2<i>x</i> + <i>y</i>)] + [<i>x</i>(<i>x</i> &minus; <i>y</i>) + 2<i>y</i>(<i>x</i> &minus; <i>y</i>)]</div>\n          <div>= (2<i>x</i><sup>2</sup> + <i>xy</i> + 2<i>xy</i> + <i>y</i><sup>2</sup>) + (<i>x</i><sup>2</sup> &minus; <i>xy</i> + 2<i>xy</i> &minus; 2<i>y</i><sup>2</sup>)</div>\n          <div>= (2<i>x</i><sup>2</sup> + 3<i>xy</i> + <i>y</i><sup>2</sup>) + (<i>x</i><sup>2</sup> + <i>xy</i> &minus; 2<i>y</i><sup>2</sup>)</div>\n          <div>= (2<i>x</i><sup>2</sup> + <i>x</i><sup>2</sup>) + (3<i>xy</i> + <i>xy</i>) + (<i>y</i><sup>2</sup> &minus; 2<i>y</i><sup>2</sup>) = <b>3<i>x</i><sup>2</sup> + 4<i>xy</i> &minus; <i>y</i><sup>2</sup></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Result: </span><span class=\"ans-val\">3<i>x</i><sup>2</sup> + 4<i>xy</i> &minus; <i>y</i><sup>2</sup></span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(vi)</b> (<i>x</i> + <i>y</i>)(<i>x</i><sup>2</sup> &minus; <i>xy</i> + <i>y</i><sup>2</sup>)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= <i>x</i>(<i>x</i><sup>2</sup> &minus; <i>xy</i> + <i>y</i><sup>2</sup>) + <i>y</i>(<i>x</i><sup>2</sup> &minus; <i>xy</i> + <i>y</i><sup>2</sup>)</div>\n          <div>= <i>x</i><sup>3</sup> &minus; <i>x</i><sup>2</sup><i>y</i> + <i>xy</i><sup>2</sup> + <i>x</i><sup>2</sup><i>y</i> &minus; <i>xy</i><sup>2</sup> + <i>y</i><sup>3</sup></div>\n          <div>= <i>x</i><sup>3</sup> + (&minus;<i>x</i><sup>2</sup><i>y</i> + <i>x</i><sup>2</sup><i>y</i>) + (<i>xy</i><sup>2</sup> &minus; <i>xy</i><sup>2</sup>) + <i>y</i><sup>3</sup> = <b><i>x</i><sup>3</sup> + <i>y</i><sup>3</sup></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Result: </span><span class=\"ans-val\"><i>x</i><sup>3</sup> + <i>y</i><sup>3</sup></span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(vii)</b> (1.5<i>x</i> &minus; 4<i>y</i>)(1.5<i>x</i> + 4<i>y</i> + 3) &minus; 4.5<i>x</i> + 12<i>y</i></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= 1.5<i>x</i>(1.5<i>x</i> + 4<i>y</i> + 3) &minus; 4<i>y</i>(1.5<i>x</i> + 4<i>y</i> + 3) &minus; 4.5<i>x</i> + 12<i>y</i></div>\n          <div>= 2.25<i>x</i><sup>2</sup> + 6<i>xy</i> + 4.5<i>x</i> &minus; 6<i>xy</i> &minus; 16<i>y</i><sup>2</sup> &minus; 12<i>y</i> &minus; 4.5<i>x</i> + 12<i>y</i></div>\n          <div>= 2.25<i>x</i><sup>2</sup> &minus; 16<i>y</i><sup>2</sup> + (6<i>xy</i> &minus; 6<i>xy</i>) + (4.5<i>x</i> &minus; 4.5<i>x</i>) + (&minus;12<i>y</i> + 12<i>y</i>)</div>\n          <div>= <b>2.25<i>x</i><sup>2</sup> &minus; 16<i>y</i><sup>2</sup></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Result: </span><span class=\"ans-val\">2.25<i>x</i><sup>2</sup> &minus; 16<i>y</i><sup>2</sup></span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(viii)</b> (<i>a</i> + <i>b</i> + <i>c</i>)(<i>a</i> + <i>b</i> &minus; <i>c</i>)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= <i>a</i>(<i>a</i> + <i>b</i> &minus; <i>c</i>) + <i>b</i>(<i>a</i> + <i>b</i> &minus; <i>c</i>) + <i>c</i>(<i>a</i> + <i>b</i> &minus; <i>c</i>)</div>\n          <div>= <i>a</i><sup>2</sup> + <i>ab</i> &minus; <i>ac</i> + <i>ab</i> + <i>b</i><sup>2</sup> &minus; <i>bc</i> + <i>ac</i> + <i>bc</i> &minus; <i>c</i><sup>2</sup></div>\n          <div>= <i>a</i><sup>2</sup> + <i>b</i><sup>2</sup> &minus; <i>c</i><sup>2</sup> + (<i>ab</i> + <i>ab</i>) + (&minus;<i>ac</i> + <i>ac</i>) + (&minus;<i>bc</i> + <i>bc</i>)</div>\n          <div>= <b><i>a</i><sup>2</sup> + <i>b</i><sup>2</sup> &minus; <i>c</i><sup>2</sup> + 2<i>ab</i></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Result: </span><span class=\"ans-val\"><i>a</i><sup>2</sup> + <i>b</i><sup>2</sup> &minus; <i>c</i><sup>2</sup> + 2<i>ab</i></span></div>\n      </div>\n    </div>\n  </div>\n\n</div>\n",
+    "ex9-5": "\n\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; text-align: center; }\n  .frac .den { padding: 1px 4px; text-align: center; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(63, 81, 181, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #3F51B5; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 16px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(63, 81, 181, 0.25); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #3F51B5; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #9FA8DA; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  /* User requested dark bg, green border, compact font for full visibility */\n  .table-card { background: rgba(15, 23, 42, 0.95); border: 1.5px solid #4CAF50; border-radius: 10px; padding: 10px 8px; margin: 16px 0; overflow-x: auto; box-shadow: 0 4px 18px rgba(0,0,0,0.35); -webkit-overflow-scrolling: touch; }\n  .styled-table { width: 100%; border-collapse: collapse; color: #F8FAFC; font-size: 12px; text-align: center; }\n  .styled-table th { background: rgba(76, 175, 80, 0.22); color: #A5D6A7; font-weight: 700; padding: 8px 6px; border: 1px solid rgba(76, 175, 80, 0.4); font-size: 12px; white-space: nowrap; }\n  .styled-table td { padding: 6px 6px; border: 1px solid rgba(255, 255, 255, 0.12); font-weight: 500; font-size: 11.5px; color: #E2E8F0; }\n  .styled-table tr:nth-child(even) td { background: rgba(255, 255, 255, 0.03); }\n  .styled-table td.col-label { font-weight: 700; white-space: nowrap; text-align: left; padding-left: 10px; color: #81C784; }\n  .styled-table td.highlight-cell { color: #FFE082; font-weight: 600; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Header Card -->\n  <div style=\"background: linear-gradient(135deg, rgba(63, 81, 181, 0.2), rgba(156, 39, 176, 0.1)); border: 1.5px solid #3F51B5; border-radius: 12px; padding: 14px 18px; margin-bottom: 20px;\">\n    <div style=\"font-size: 19px; font-weight: 800; color: #3F51B5; margin-bottom: 4px;\">\n      Exercise 9.5\n    </div>\n    <div style=\"color: #FFFFFF; font-size: 15px; font-weight: 500;\">\n      The 4 Standard Algebraic Identities &bull; Expansion, Proofs &amp; Numerical Evaluations\n    </div>\n  </div>\n\n  <!-- QUESTION 1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 1:</div>\n    <div class=\"q-text\">Use a suitable identity to get each of the following products:</div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(i)</b> (<i>x</i> + 3)(<i>x</i> + 3)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= (<i>x</i> + 3)<sup>2</sup></div>\n          <div>Using Identity I: (<i>a</i> + <i>b</i>)<sup>2</sup> = <i>a</i><sup>2</sup> + 2<i>ab</i> + <i>b</i><sup>2</sup></div>\n          <div>= <i>x</i><sup>2</sup> + 2(<i>x</i>)(3) + 3<sup>2</sup> = <b><i>x</i><sup>2</sup> + 6<i>x</i> + 9</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Product: </span><span class=\"ans-val\"><i>x</i><sup>2</sup> + 6<i>x</i> + 9</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(ii)</b> (2<i>y</i> + 5)(2<i>y</i> + 5)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= (2<i>y</i> + 5)<sup>2</sup></div>\n          <div>Using (<i>a</i> + <i>b</i>)<sup>2</sup> = <i>a</i><sup>2</sup> + 2<i>ab</i> + <i>b</i><sup>2</sup></div>\n          <div>= (2<i>y</i>)<sup>2</sup> + 2(2<i>y</i>)(5) + 5<sup>2</sup> = <b>4<i>y</i><sup>2</sup> + 20<i>y</i> + 25</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Product: </span><span class=\"ans-val\">4<i>y</i><sup>2</sup> + 20<i>y</i> + 25</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(iii)</b> (2<i>a</i> &minus; 7)(2<i>a</i> &minus; 7)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= (2<i>a</i> &minus; 7)<sup>2</sup></div>\n          <div>Using Identity II: (<i>a</i> &minus; <i>b</i>)<sup>2</sup> = <i>a</i><sup>2</sup> &minus; 2<i>ab</i> + <i>b</i><sup>2</sup></div>\n          <div>= (2<i>a</i>)<sup>2</sup> &minus; 2(2<i>a</i>)(7) + 7<sup>2</sup> = <b>4<i>a</i><sup>2</sup> &minus; 28<i>a</i> + 49</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Product: </span><span class=\"ans-val\">4<i>a</i><sup>2</sup> &minus; 28<i>a</i> + 49</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(iv)</b> (3<i>a</i> &minus; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>)(3<i>a</i> &minus; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= (3<i>a</i> &minus; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>)<sup>2</sup></div>\n          <div>Using (<i>a</i> &minus; <i>b</i>)<sup>2</sup> = <i>a</i><sup>2</sup> &minus; 2<i>ab</i> + <i>b</i><sup>2</sup></div>\n          <div>= (3<i>a</i>)<sup>2</sup> &minus; 2(3<i>a</i>)(<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>) + (<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>)<sup>2</sup> = <b>9<i>a</i><sup>2</sup> &minus; 3<i>a</i> + <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Product: </span><span class=\"ans-val\">9<i>a</i><sup>2</sup> &minus; 3<i>a</i> + <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span></span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(v)</b> (1.1<i>m</i> &minus; 0.4)(1.1<i>m</i> + 0.4)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Using Identity III: (<i>a</i> &minus; <i>b</i>)(<i>a</i> + <i>b</i>) = <i>a</i><sup>2</sup> &minus; <i>b</i><sup>2</sup></div>\n          <div>= (1.1<i>m</i>)<sup>2</sup> &minus; (0.4)<sup>2</sup> = <b>1.21<i>m</i><sup>2</sup> &minus; 0.16</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Product: </span><span class=\"ans-val\">1.21<i>m</i><sup>2</sup> &minus; 0.16</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(vi)</b> (<i>a</i><sup>2</sup> + <i>b</i><sup>2</sup>)(&minus;<i>a</i><sup>2</sup> + <i>b</i><sup>2</sup>)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Rearranging terms: = (<i>b</i><sup>2</sup> + <i>a</i><sup>2</sup>)(<i>b</i><sup>2</sup> &minus; <i>a</i><sup>2</sup>)</div>\n          <div>Using (<i>x</i> + <i>y</i>)(<i>x</i> &minus; <i>y</i>) = <i>x</i><sup>2</sup> &minus; <i>y</i><sup>2</sup></div>\n          <div>= (<i>b</i><sup>2</sup>)<sup>2</sup> &minus; (<i>a</i><sup>2</sup>)<sup>2</sup> = <b><i>b</i><sup>4</sup> &minus; <i>a</i><sup>4</sup></b> &nbsp;(or &minus;<i>a</i><sup>4</sup> + <i>b</i><sup>4</sup>)</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Product: </span><span class=\"ans-val\"><i>b</i><sup>4</sup> &minus; <i>a</i><sup>4</sup></span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(vii)</b> (6<i>x</i> &minus; 7)(6<i>x</i> + 7)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Using (<i>a</i> &minus; <i>b</i>)(<i>a</i> + <i>b</i>) = <i>a</i><sup>2</sup> &minus; <i>b</i><sup>2</sup></div>\n          <div>= (6<i>x</i>)<sup>2</sup> &minus; 7<sup>2</sup> = <b>36<i>x</i><sup>2</sup> &minus; 49</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Product: </span><span class=\"ans-val\">36<i>x</i><sup>2</sup> &minus; 49</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(viii)</b> (&minus;<i>a</i> + <i>c</i>)(&minus;<i>a</i> + <i>c</i>)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= (<i>c</i> &minus; <i>a</i>)(<i>c</i> &minus; <i>a</i>) = (<i>c</i> &minus; <i>a</i>)<sup>2</sup></div>\n          <div>Using (<i>a</i> &minus; <i>b</i>)<sup>2</sup> = <i>a</i><sup>2</sup> &minus; 2<i>ab</i> + <i>b</i><sup>2</sup></div>\n          <div>= <i>c</i><sup>2</sup> &minus; 2<i>ca</i> + <i>a</i><sup>2</sup> = <b><i>c</i><sup>2</sup> &minus; 2<i>ac</i> + <i>a</i><sup>2</sup></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Product: </span><span class=\"ans-val\"><i>c</i><sup>2</sup> &minus; 2<i>ac</i> + <i>a</i><sup>2</sup></span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(ix)</b> (<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span><i>x</i> + <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span><i>y</i>)(<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span><i>x</i> + <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span><i>y</i>)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= (<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span><i>x</i> + <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span><i>y</i>)<sup>2</sup></div>\n          <div>Using (<i>a</i> + <i>b</i>)<sup>2</sup> = <i>a</i><sup>2</sup> + 2<i>ab</i> + <i>b</i><sup>2</sup></div>\n          <div>\n            = (<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span><i>x</i>)<sup>2</sup> + 2(<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span><i>x</i>)(<span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span><i>y</i>) + (<span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span><i>y</i>)<sup>2</sup><br/>\n            = <b><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span><i>x</i><sup>2</sup> + <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span><i>xy</i> + <span class=\"frac\"><span class=\"num\">9</span><span class=\"den\">16</span></span><i>y</i><sup>2</sup></b>\n          </div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Product: </span><span class=\"ans-val\"><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span><i>x</i><sup>2</sup> + <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span><i>xy</i> + <span class=\"frac\"><span class=\"num\">9</span><span class=\"den\">16</span></span><i>y</i><sup>2</sup></span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(x)</b> (7<i>a</i> &minus; 9<i>b</i>)(7<i>a</i> &minus; 9<i>b</i>)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= (7<i>a</i> &minus; 9<i>b</i>)<sup>2</sup></div>\n          <div>Using (<i>a</i> &minus; <i>b</i>)<sup>2</sup> = <i>a</i><sup>2</sup> &minus; 2<i>ab</i> + <i>b</i><sup>2</sup></div>\n          <div>= (7<i>a</i>)<sup>2</sup> &minus; 2(7<i>a</i>)(9<i>b</i>) + (9<i>b</i>)<sup>2</sup> = <b>49<i>a</i><sup>2</sup> &minus; 126<i>ab</i> + 81<i>b</i><sup>2</sup></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Product: </span><span class=\"ans-val\">49<i>a</i><sup>2</sup> &minus; 126<i>ab</i> + 81<i>b</i><sup>2</sup></span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 2 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 2:</div>\n    <div class=\"q-text\">Use the identity (<i>x</i> + <i>a</i>)(<i>x</i> + <i>b</i>) = <i>x</i><sup>2</sup> + (<i>a</i> + <i>b</i>)<i>x</i> + <i>ab</i> to find the following products:</div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(i)</b> (<i>x</i> + 3)(<i>x</i> + 7)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Here <i>a</i> = 3, <i>b</i> = 7</div>\n          <div>= <i>x</i><sup>2</sup> + (3 + 7)<i>x</i> + (3 &times; 7) = <b><i>x</i><sup>2</sup> + 10<i>x</i> + 21</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Product: </span><span class=\"ans-val\"><i>x</i><sup>2</sup> + 10<i>x</i> + 21</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(ii)</b> (4<i>x</i> + 5)(4<i>x</i> + 1)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Here term is 4<i>x</i>, <i>a</i> = 5, <i>b</i> = 1</div>\n          <div>= (4<i>x</i>)<sup>2</sup> + (5 + 1)(4<i>x</i>) + (5 &times; 1)</div>\n          <div>= 16<i>x</i><sup>2</sup> + 6(4<i>x</i>) + 5 = <b>16<i>x</i><sup>2</sup> + 24<i>x</i> + 5</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Product: </span><span class=\"ans-val\">16<i>x</i><sup>2</sup> + 24<i>x</i> + 5</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(iii)</b> (4<i>x</i> &minus; 5)(4<i>x</i> &minus; 1)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Here term is 4<i>x</i>, <i>a</i> = &minus;5, <i>b</i> = &minus;1</div>\n          <div>= (4<i>x</i>)<sup>2</sup> + [(&minus;5) + (&minus;1)](4<i>x</i>) + [(&minus;5) &times; (&minus;1)]</div>\n          <div>= 16<i>x</i><sup>2</sup> + (&minus;6)(4<i>x</i>) + 5 = <b>16<i>x</i><sup>2</sup> &minus; 24<i>x</i> + 5</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Product: </span><span class=\"ans-val\">16<i>x</i><sup>2</sup> &minus; 24<i>x</i> + 5</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(iv)</b> (4<i>x</i> + 5)(4<i>x</i> &minus; 1)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Here term is 4<i>x</i>, <i>a</i> = 5, <i>b</i> = &minus;1</div>\n          <div>= (4<i>x</i>)<sup>2</sup> + [5 + (&minus;1)](4<i>x</i>) + [5 &times; (&minus;1)]</div>\n          <div>= 16<i>x</i><sup>2</sup> + 4(4<i>x</i>) &minus; 5 = <b>16<i>x</i><sup>2</sup> + 16<i>x</i> &minus; 5</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Product: </span><span class=\"ans-val\">16<i>x</i><sup>2</sup> + 16<i>x</i> &minus; 5</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(v)</b> (2<i>x</i> + 5<i>y</i>)(2<i>x</i> + 3<i>y</i>)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Here term is 2<i>x</i>, <i>a</i> = 5<i>y</i>, <i>b</i> = 3<i>y</i></div>\n          <div>= (2<i>x</i>)<sup>2</sup> + (5<i>y</i> + 3<i>y</i>)(2<i>x</i>) + (5<i>y</i> &times; 3<i>y</i>)</div>\n          <div>= 4<i>x</i><sup>2</sup> + (8<i>y</i>)(2<i>x</i>) + 15<i>y</i><sup>2</sup> = <b>4<i>x</i><sup>2</sup> + 16<i>xy</i> + 15<i>y</i><sup>2</sup></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Product: </span><span class=\"ans-val\">4<i>x</i><sup>2</sup> + 16<i>xy</i> + 15<i>y</i><sup>2</sup></span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(vi)</b> (2<i>a</i><sup>2</sup> + 9)(2<i>a</i><sup>2</sup> + 5)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Here term is 2<i>a</i><sup>2</sup>, <i>a</i> = 9, <i>b</i> = 5</div>\n          <div>= (2<i>a</i><sup>2</sup>)<sup>2</sup> + (9 + 5)(2<i>a</i><sup>2</sup>) + (9 &times; 5)</div>\n          <div>= 4<i>a</i><sup>4</sup> + 14(2<i>a</i><sup>2</sup>) + 45 = <b>4<i>a</i><sup>4</sup> + 28<i>a</i><sup>2</sup> + 45</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Product: </span><span class=\"ans-val\">4<i>a</i><sup>4</sup> + 28<i>a</i><sup>2</sup> + 45</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(vii)</b> (<i>xyz</i> &minus; 4)(<i>xyz</i> &minus; 2)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Here term is <i>xyz</i>, <i>a</i> = &minus;4, <i>b</i> = &minus;2</div>\n          <div>= (<i>xyz</i>)<sup>2</sup> + [(&minus;4) + (&minus;2)](<i>xyz</i>) + [(&minus;4) &times; (&minus;2)]</div>\n          <div>= <b><i>x</i><sup>2</sup><i>y</i><sup>2</sup><i>z</i><sup>2</sup> &minus; 6<i>xyz</i> + 8</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Product: </span><span class=\"ans-val\"><i>x</i><sup>2</sup><i>y</i><sup>2</sup><i>z</i><sup>2</sup> &minus; 6<i>xyz</i> + 8</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 3 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 3:</div>\n    <div class=\"q-text\">Find the following squares by using the identities:</div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(i)</b> (<i>b</i> &minus; 7)<sup>2</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Using (<i>a</i> &minus; <i>b</i>)<sup>2</sup> = <i>a</i><sup>2</sup> &minus; 2<i>ab</i> + <i>b</i><sup>2</sup></div>\n          <div>= <i>b</i><sup>2</sup> &minus; 2(<i>b</i>)(7) + 7<sup>2</sup> = <b><i>b</i><sup>2</sup> &minus; 14<i>b</i> + 49</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Result: </span><span class=\"ans-val\"><i>b</i><sup>2</sup> &minus; 14<i>b</i> + 49</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(ii)</b> (<i>xy</i> + 3<i>z</i>)<sup>2</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Using (<i>a</i> + <i>b</i>)<sup>2</sup> = <i>a</i><sup>2</sup> + 2<i>ab</i> + <i>b</i><sup>2</sup></div>\n          <div>= (<i>xy</i>)<sup>2</sup> + 2(<i>xy</i>)(3<i>z</i>) + (3<i>z</i>)<sup>2</sup> = <b><i>x</i><sup>2</sup><i>y</i><sup>2</sup> + 6<i>xyz</i> + 9<i>z</i><sup>2</sup></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Result: </span><span class=\"ans-val\"><i>x</i><sup>2</sup><i>y</i><sup>2</sup> + 6<i>xyz</i> + 9<i>z</i><sup>2</sup></span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(iii)</b> (6<i>x</i><sup>2</sup> &minus; 5<i>y</i>)<sup>2</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Using (<i>a</i> &minus; <i>b</i>)<sup>2</sup> = <i>a</i><sup>2</sup> &minus; 2<i>ab</i> + <i>b</i><sup>2</sup></div>\n          <div>= (6<i>x</i><sup>2</sup>)<sup>2</sup> &minus; 2(6<i>x</i><sup>2</sup>)(5<i>y</i>) + (5<i>y</i>)<sup>2</sup> = <b>36<i>x</i><sup>4</sup> &minus; 60<i>x</i><sup>2</sup><i>y</i> + 25<i>y</i><sup>2</sup></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Result: </span><span class=\"ans-val\">36<i>x</i><sup>4</sup> &minus; 60<i>x</i><sup>2</sup><i>y</i> + 25<i>y</i><sup>2</sup></span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(iv)</b> [(<span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span><i>m</i>) + (<span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">2</span></span><i>n</i>)]<sup>2</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Using (<i>a</i> + <i>b</i>)<sup>2</sup> = <i>a</i><sup>2</sup> + 2<i>ab</i> + <i>b</i><sup>2</sup></div>\n          <div>\n            = (<span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span><i>m</i>)<sup>2</sup> + 2(<span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span><i>m</i>)(<span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">2</span></span><i>n</i>) + (<span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">2</span></span><i>n</i>)<sup>2</sup><br/>\n            = <b><span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">9</span></span><i>m</i><sup>2</sup> + 2<i>mn</i> + <span class=\"frac\"><span class=\"num\">9</span><span class=\"den\">4</span></span><i>n</i><sup>2</sup></b>\n          </div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Result: </span><span class=\"ans-val\"><span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">9</span></span><i>m</i><sup>2</sup> + 2<i>mn</i> + <span class=\"frac\"><span class=\"num\">9</span><span class=\"den\">4</span></span><i>n</i><sup>2</sup></span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(v)</b> (0.4<i>p</i> &minus; 0.5<i>q</i>)<sup>2</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Using (<i>a</i> &minus; <i>b</i>)<sup>2</sup> = <i>a</i><sup>2</sup> &minus; 2<i>ab</i> + <i>b</i><sup>2</sup></div>\n          <div>= (0.4<i>p</i>)<sup>2</sup> &minus; 2(0.4<i>p</i>)(0.5<i>q</i>) + (0.5<i>q</i>)<sup>2</sup> = <b>0.16<i>p</i><sup>2</sup> &minus; 0.4<i>pq</i> + 0.25<i>q</i><sup>2</sup></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Result: </span><span class=\"ans-val\">0.16<i>p</i><sup>2</sup> &minus; 0.4<i>pq</i> + 0.25<i>q</i><sup>2</sup></span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(vi)</b> (2<i>xy</i> + 5<i>y</i>)<sup>2</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Using (<i>a</i> + <i>b</i>)<sup>2</sup> = <i>a</i><sup>2</sup> + 2<i>ab</i> + <i>b</i><sup>2</sup></div>\n          <div>= (2<i>xy</i>)<sup>2</sup> + 2(2<i>xy</i>)(5<i>y</i>) + (5<i>y</i>)<sup>2</sup> = <b>4<i>x</i><sup>2</sup><i>y</i><sup>2</sup> + 20<i>xy</i><sup>2</sup> + 25<i>y</i><sup>2</sup></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Result: </span><span class=\"ans-val\">4<i>x</i><sup>2</sup><i>y</i><sup>2</sup> + 20<i>xy</i><sup>2</sup> + 25<i>y</i><sup>2</sup></span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 4 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 4:</div>\n    <div class=\"q-text\">Simplify:</div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(i)</b> (<i>a</i><sup>2</sup> &minus; <i>b</i><sup>2</sup>)<sup>2</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Using (<i>x</i> &minus; <i>y</i>)<sup>2</sup> = <i>x</i><sup>2</sup> &minus; 2<i>xy</i> + <i>y</i><sup>2</sup></div>\n          <div>= (<i>a</i><sup>2</sup>)<sup>2</sup> &minus; 2(<i>a</i><sup>2</sup>)(<i>b</i><sup>2</sup>) + (<i>b</i><sup>2</sup>)<sup>2</sup> = <b><i>a</i><sup>4</sup> &minus; 2<i>a</i><sup>2</sup><i>b</i><sup>2</sup> + <i>b</i><sup>4</sup></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Result: </span><span class=\"ans-val\"><i>a</i><sup>4</sup> &minus; 2<i>a</i><sup>2</sup><i>b</i><sup>2</sup> + <i>b</i><sup>4</sup></span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(ii)</b> (2<i>x</i> + 5)<sup>2</sup> &minus; (2<i>x</i> &minus; 5)<sup>2</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Method: Expand each square:</div>\n          <div>(2<i>x</i> + 5)<sup>2</sup> = 4<i>x</i><sup>2</sup> + 20<i>x</i> + 25</div>\n          <div>(2<i>x</i> &minus; 5)<sup>2</sup> = 4<i>x</i><sup>2</sup> &minus; 20<i>x</i> + 25</div>\n          <div>Difference = (4<i>x</i><sup>2</sup> + 20<i>x</i> + 25) &minus; (4<i>x</i><sup>2</sup> &minus; 20<i>x</i> + 25)</div>\n          <div>= 4<i>x</i><sup>2</sup> + 20<i>x</i> + 25 &minus; 4<i>x</i><sup>2</sup> + 20<i>x</i> &minus; 25 = <b>40<i>x</i></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Result: </span><span class=\"ans-val\">40<i>x</i></span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(iii)</b> (7<i>m</i> &minus; 8<i>n</i>)<sup>2</sup> + (7<i>m</i> + 8<i>n</i>)<sup>2</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= (49<i>m</i><sup>2</sup> &minus; 112<i>mn</i> + 64<i>n</i><sup>2</sup>) + (49<i>m</i><sup>2</sup> + 112<i>mn</i> + 64<i>n</i><sup>2</sup>)</div>\n          <div>= (49<i>m</i><sup>2</sup> + 49<i>m</i><sup>2</sup>) + (&minus;112<i>mn</i> + 112<i>mn</i>) + (64<i>n</i><sup>2</sup> + 64<i>n</i><sup>2</sup>)</div>\n          <div>= <b>98<i>m</i><sup>2</sup> + 128<i>n</i><sup>2</sup></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Result: </span><span class=\"ans-val\">98<i>m</i><sup>2</sup> + 128<i>n</i><sup>2</sup></span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(iv)</b> (4<i>m</i> + 5<i>n</i>)<sup>2</sup> + (5<i>m</i> + 4<i>n</i>)<sup>2</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= (16<i>m</i><sup>2</sup> + 40<i>mn</i> + 25<i>n</i><sup>2</sup>) + (25<i>m</i><sup>2</sup> + 40<i>mn</i> + 16<i>n</i><sup>2</sup>)</div>\n          <div>= (16<i>m</i><sup>2</sup> + 25<i>m</i><sup>2</sup>) + (40<i>mn</i> + 40<i>mn</i>) + (25<i>n</i><sup>2</sup> + 16<i>n</i><sup>2</sup>)</div>\n          <div>= <b>41<i>m</i><sup>2</sup> + 80<i>mn</i> + 41<i>n</i><sup>2</sup></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Result: </span><span class=\"ans-val\">41<i>m</i><sup>2</sup> + 80<i>mn</i> + 41<i>n</i><sup>2</sup></span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(v)</b> (2.5<i>p</i> &minus; 1.5<i>q</i>)<sup>2</sup> &minus; (1.5<i>p</i> &minus; 2.5<i>q</i>)<sup>2</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= (6.25<i>p</i><sup>2</sup> &minus; 7.5<i>pq</i> + 2.25<i>q</i><sup>2</sup>) &minus; (2.25<i>p</i><sup>2</sup> &minus; 7.5<i>pq</i> + 6.25<i>q</i><sup>2</sup>)</div>\n          <div>= 6.25<i>p</i><sup>2</sup> &minus; 7.5<i>pq</i> + 2.25<i>q</i><sup>2</sup> &minus; 2.25<i>p</i><sup>2</sup> + 7.5<i>pq</i> &minus; 6.25<i>q</i><sup>2</sup></div>\n          <div>= (6.25<i>p</i><sup>2</sup> &minus; 2.25<i>p</i><sup>2</sup>) + (&minus;7.5<i>pq</i> + 7.5<i>pq</i>) + (2.25<i>q</i><sup>2</sup> &minus; 6.25<i>q</i><sup>2</sup>)</div>\n          <div>= <b>4<i>p</i><sup>2</sup> &minus; 4<i>q</i><sup>2</sup></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Result: </span><span class=\"ans-val\">4<i>p</i><sup>2</sup> &minus; 4<i>q</i><sup>2</sup></span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(vi)</b> (<i>ab</i> + <i>bc</i>)<sup>2</sup> &minus; 2<i>ab</i><sup>2</sup><i>c</i></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= (<i>a</i><sup>2</sup><i>b</i><sup>2</sup> + 2<i>ab</i><sup>2</sup><i>c</i> + <i>b</i><sup>2</sup><i>c</i><sup>2</sup>) &minus; 2<i>ab</i><sup>2</sup><i>c</i></div>\n          <div>= <b><i>a</i><sup>2</sup><i>b</i><sup>2</sup> + <i>b</i><sup>2</sup><i>c</i><sup>2</sup></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Result: </span><span class=\"ans-val\"><i>a</i><sup>2</sup><i>b</i><sup>2</sup> + <i>b</i><sup>2</sup><i>c</i><sup>2</sup></span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(vii)</b> (<i>m</i><sup>2</sup> &minus; <i>n</i><sup>2</sup><i>m</i>)<sup>2</sup> + 2<i>m</i><sup>3</sup><i>n</i><sup>2</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= [(<i>m</i><sup>2</sup>)<sup>2</sup> &minus; 2(<i>m</i><sup>2</sup>)(<i>n</i><sup>2</sup><i>m</i>) + (<i>n</i><sup>2</sup><i>m</i>)<sup>2</sup>] + 2<i>m</i><sup>3</sup><i>n</i><sup>2</sup></div>\n          <div>= (<i>m</i><sup>4</sup> &minus; 2<i>m</i><sup>3</sup><i>n</i><sup>2</sup> + <i>m</i><sup>2</sup><i>n</i><sup>4</sup>) + 2<i>m</i><sup>3</sup><i>n</i><sup>2</sup></div>\n          <div>= <b><i>m</i><sup>4</sup> + <i>m</i><sup>2</sup><i>n</i><sup>4</sup></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Result: </span><span class=\"ans-val\"><i>m</i><sup>4</sup> + <i>m</i><sup>2</sup><i>n</i><sup>4</sup></span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 5 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 5:</div>\n    <div class=\"q-text\">Show that:</div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(i)</b> (3<i>x</i> + 7)<sup>2</sup> &minus; 84<i>x</i> = (3<i>x</i> &minus; 7)<sup>2</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>LHS = (3<i>x</i> + 7)<sup>2</sup> &minus; 84<i>x</i></div>\n          <div>= (9<i>x</i><sup>2</sup> + 42<i>x</i> + 49) &minus; 84<i>x</i> = 9<i>x</i><sup>2</sup> &minus; 42<i>x</i> + 49</div>\n          <div>RHS = (3<i>x</i> &minus; 7)<sup>2</sup> = (3<i>x</i>)<sup>2</sup> &minus; 2(3<i>x</i>)(7) + 7<sup>2</sup> = 9<i>x</i><sup>2</sup> &minus; 42<i>x</i> + 49</div>\n          <div><b>LHS = RHS</b> [Hence Proved]</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Verification: </span><span class=\"ans-val\">LHS = RHS = 9<i>x</i><sup>2</sup> &minus; 42<i>x</i> + 49</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(ii)</b> (9<i>p</i> &minus; 5<i>q</i>)<sup>2</sup> + 180<i>pq</i> = (9<i>p</i> + 5<i>q</i>)<sup>2</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>LHS = (9<i>p</i> &minus; 5<i>q</i>)<sup>2</sup> + 180<i>pq</i></div>\n          <div>= (81<i>p</i><sup>2</sup> &minus; 90<i>pq</i> + 25<i>q</i><sup>2</sup>) + 180<i>pq</i> = 81<i>p</i><sup>2</sup> + 90<i>pq</i> + 25<i>q</i><sup>2</sup></div>\n          <div>RHS = (9<i>p</i> + 5<i>q</i>)<sup>2</sup> = 81<i>p</i><sup>2</sup> + 90<i>pq</i> + 25<i>q</i><sup>2</sup></div>\n          <div><b>LHS = RHS</b> [Hence Proved]</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Verification: </span><span class=\"ans-val\">LHS = RHS = 81<i>p</i><sup>2</sup> + 90<i>pq</i> + 25<i>q</i><sup>2</sup></span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(iii)</b> (<span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">3</span></span><i>m</i> &minus; <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span><i>n</i>)<sup>2</sup> + 2<i>mn</i> = <span class=\"frac\"><span class=\"num\">16</span><span class=\"den\">9</span></span><i>m</i><sup>2</sup> + <span class=\"frac\"><span class=\"num\">9</span><span class=\"den\">16</span></span><i>n</i><sup>2</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>LHS = (<span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">3</span></span><i>m</i> &minus; <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span><i>n</i>)<sup>2</sup> + 2<i>mn</i></div>\n          <div>= [(<span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">3</span></span><i>m</i>)<sup>2</sup> &minus; 2(<span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">3</span></span><i>m</i>)(<span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span><i>n</i>) + (<span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span><i>n</i>)<sup>2</sup>] + 2<i>mn</i></div>\n          <div>= (<span class=\"frac\"><span class=\"num\">16</span><span class=\"den\">9</span></span><i>m</i><sup>2</sup> &minus; 2<i>mn</i> + <span class=\"frac\"><span class=\"num\">9</span><span class=\"den\">16</span></span><i>n</i><sup>2</sup>) + 2<i>mn</i> = <b><span class=\"frac\"><span class=\"num\">16</span><span class=\"den\">9</span></span><i>m</i><sup>2</sup> + <span class=\"frac\"><span class=\"num\">9</span><span class=\"den\">16</span></span><i>n</i><sup>2</sup> = RHS</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Verification: </span><span class=\"ans-val\">LHS = RHS</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(iv)</b> (4<i>pq</i> + 3<i>q</i>)<sup>2</sup> &minus; (4<i>pq</i> &minus; 3<i>q</i>)<sup>2</sup> = 48<i>pq</i><sup>2</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>LHS = (16<i>p</i><sup>2</sup><i>q</i><sup>2</sup> + 24<i>pq</i><sup>2</sup> + 9<i>q</i><sup>2</sup>) &minus; (16<i>p</i><sup>2</sup><i>q</i><sup>2</sup> &minus; 24<i>pq</i><sup>2</sup> + 9<i>q</i><sup>2</sup>)</div>\n          <div>= 16<i>p</i><sup>2</sup><i>q</i><sup>2</sup> + 24<i>pq</i><sup>2</sup> + 9<i>q</i><sup>2</sup> &minus; 16<i>p</i><sup>2</sup><i>q</i><sup>2</sup> + 24<i>pq</i><sup>2</sup> &minus; 9<i>q</i><sup>2</sup></div>\n          <div>= 24<i>pq</i><sup>2</sup> + 24<i>pq</i><sup>2</sup> = <b>48<i>pq</i><sup>2</sup> = RHS</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Verification: </span><span class=\"ans-val\">LHS = RHS = 48<i>pq</i><sup>2</sup></span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(v)</b> (<i>a</i> &minus; <i>b</i>)(<i>a</i> + <i>b</i>) + (<i>b</i> &minus; <i>c</i>)(<i>b</i> + <i>c</i>) + (<i>c</i> &minus; <i>a</i>)(<i>c</i> + <i>a</i>) = 0</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Using Identity III: (<i>x</i> &minus; <i>y</i>)(<i>x</i> + <i>y</i>) = <i>x</i><sup>2</sup> &minus; <i>y</i><sup>2</sup></div>\n          <div>(<i>a</i> &minus; <i>b</i>)(<i>a</i> + <i>b</i>) = <i>a</i><sup>2</sup> &minus; <i>b</i><sup>2</sup></div>\n          <div>(<i>b</i> &minus; <i>c</i>)(<i>b</i> + <i>c</i>) = <i>b</i><sup>2</sup> &minus; <i>c</i><sup>2</sup></div>\n          <div>(<i>c</i> &minus; <i>a</i>)(<i>c</i> + <i>a</i>) = <i>c</i><sup>2</sup> &minus; <i>a</i><sup>2</sup></div>\n          <div>LHS = (<i>a</i><sup>2</sup> &minus; <i>b</i><sup>2</sup>) + (<i>b</i><sup>2</sup> &minus; <i>c</i><sup>2</sup>) + (<i>c</i><sup>2</sup> &minus; <i>a</i><sup>2</sup>)</div>\n          <div>= (<i>a</i><sup>2</sup> &minus; <i>a</i><sup>2</sup>) + (&minus;<i>b</i><sup>2</sup> + <i>b</i><sup>2</sup>) + (&minus;<i>c</i><sup>2</sup> + <i>c</i><sup>2</sup>) = <b>0 = RHS</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Verification: </span><span class=\"ans-val\">LHS = RHS = 0</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 6 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 6:</div>\n    <div class=\"q-text\">Using identities, evaluate:</div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(i)</b> 71<sup>2</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= (70 + 1)<sup>2</sup></div>\n          <div>Using (<i>a</i> + <i>b</i>)<sup>2</sup> = <i>a</i><sup>2</sup> + 2<i>ab</i> + <i>b</i><sup>2</sup></div>\n          <div>= 70<sup>2</sup> + 2(70)(1) + 1<sup>2</sup> = 4900 + 140 + 1 = <b>5041</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Value: </span><span class=\"ans-val\">5041</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(ii)</b> 99<sup>2</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= (100 &minus; 1)<sup>2</sup></div>\n          <div>Using (<i>a</i> &minus; <i>b</i>)<sup>2</sup> = <i>a</i><sup>2</sup> &minus; 2<i>ab</i> + <i>b</i><sup>2</sup></div>\n          <div>= 100<sup>2</sup> &minus; 2(100)(1) + 1<sup>2</sup> = 10000 &minus; 200 + 1 = <b>9801</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Value: </span><span class=\"ans-val\">9801</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(iii)</b> 102<sup>2</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= (100 + 2)<sup>2</sup></div>\n          <div>Using (<i>a</i> + <i>b</i>)<sup>2</sup> = <i>a</i><sup>2</sup> + 2<i>ab</i> + <i>b</i><sup>2</sup></div>\n          <div>= 100<sup>2</sup> + 2(100)(2) + 2<sup>2</sup> = 10000 + 400 + 4 = <b>10404</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Value: </span><span class=\"ans-val\">10404</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(iv)</b> 998<sup>2</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= (1000 &minus; 2)<sup>2</sup></div>\n          <div>Using (<i>a</i> &minus; <i>b</i>)<sup>2</sup> = <i>a</i><sup>2</sup> &minus; 2<i>ab</i> + <i>b</i><sup>2</sup></div>\n          <div>= 1000<sup>2</sup> &minus; 2(1000)(2) + 2<sup>2</sup> = 1000000 &minus; 4000 + 4 = <b>996004</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Value: </span><span class=\"ans-val\">996004</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(v)</b> 5.2<sup>2</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= (5 + 0.2)<sup>2</sup></div>\n          <div>Using (<i>a</i> + <i>b</i>)<sup>2</sup> = <i>a</i><sup>2</sup> + 2<i>ab</i> + <i>b</i><sup>2</sup></div>\n          <div>= 5<sup>2</sup> + 2(5)(0.2) + (0.2)<sup>2</sup> = 25 + 2 + 0.04 = <b>27.04</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Value: </span><span class=\"ans-val\">27.04</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(vi)</b> 297 &times; 303</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= (300 &minus; 3)(300 + 3)</div>\n          <div>Using (<i>a</i> &minus; <i>b</i>)(<i>a</i> + <i>b</i>) = <i>a</i><sup>2</sup> &minus; <i>b</i><sup>2</sup></div>\n          <div>= 300<sup>2</sup> &minus; 3<sup>2</sup> = 90000 &minus; 9 = <b>89991</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Value: </span><span class=\"ans-val\">89991</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(vii)</b> 78 &times; 82</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= (80 &minus; 2)(80 + 2)</div>\n          <div>Using (<i>a</i> &minus; <i>b</i>)(<i>a</i> + <i>b</i>) = <i>a</i><sup>2</sup> &minus; <i>b</i><sup>2</sup></div>\n          <div>= 80<sup>2</sup> &minus; 2<sup>2</sup> = 6400 &minus; 4 = <b>6396</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Value: </span><span class=\"ans-val\">6396</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(viii)</b> 8.9<sup>2</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= (9 &minus; 0.1)<sup>2</sup></div>\n          <div>Using (<i>a</i> &minus; <i>b</i>)<sup>2</sup> = <i>a</i><sup>2</sup> &minus; 2<i>ab</i> + <i>b</i><sup>2</sup></div>\n          <div>= 9<sup>2</sup> &minus; 2(9)(0.1) + (0.1)<sup>2</sup> = 81 &minus; 1.8 + 0.01 = <b>79.21</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Value: </span><span class=\"ans-val\">79.21</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(ix)</b> 10.5 &times; 9.5</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= (10 + 0.5)(10 &minus; 0.5)</div>\n          <div>Using (<i>a</i> + <i>b</i>)(<i>a</i> &minus; <i>b</i>) = <i>a</i><sup>2</sup> &minus; <i>b</i><sup>2</sup></div>\n          <div>= 10<sup>2</sup> &minus; (0.5)<sup>2</sup> = 100 &minus; 0.25 = <b>99.75</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Value: </span><span class=\"ans-val\">99.75</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 7 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 7:</div>\n    <div class=\"q-text\">Using <i>a</i><sup>2</sup> &minus; <i>b</i><sup>2</sup> = (<i>a</i> + <i>b</i>)(<i>a</i> &minus; <i>b</i>), find:</div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(i)</b> 51<sup>2</sup> &minus; 49<sup>2</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= (51 + 49)(51 &minus; 49)</div>\n          <div>= 100 &times; 2 = <b>200</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Value: </span><span class=\"ans-val\">200</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(ii)</b> (1.02)<sup>2</sup> &minus; (0.98)<sup>2</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= (1.02 + 0.98)(1.02 &minus; 0.98)</div>\n          <div>= 2 &times; 0.04 = <b>0.08</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Value: </span><span class=\"ans-val\">0.08</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(iii)</b> 153<sup>2</sup> &minus; 147<sup>2</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= (153 + 147)(153 &minus; 147)</div>\n          <div>= 300 &times; 6 = <b>1800</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Value: </span><span class=\"ans-val\">1800</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(iv)</b> 12.1<sup>2</sup> &minus; 7.9<sup>2</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= (12.1 + 7.9)(12.1 &minus; 7.9)</div>\n          <div>= 20 &times; 4.2 = <b>84</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Value: </span><span class=\"ans-val\">84</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 8 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 8:</div>\n    <div class=\"q-text\">Using (<i>x</i> + <i>a</i>)(<i>x</i> + <i>b</i>) = <i>x</i><sup>2</sup> + (<i>a</i> + <i>b</i>)<i>x</i> + <i>ab</i>, find:</div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(i)</b> 103 &times; 104</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= (100 + 3)(100 + 4)</div>\n          <div>Here <i>x</i> = 100, <i>a</i> = 3, <i>b</i> = 4</div>\n          <div>= 100<sup>2</sup> + (3 + 4)(100) + (3 &times; 4)</div>\n          <div>= 10000 + 7(100) + 12 = 10000 + 700 + 12 = <b>10712</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Value: </span><span class=\"ans-val\">10712</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(ii)</b> 5.1 &times; 5.2</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= (5 + 0.1)(5 + 0.2)</div>\n          <div>Here <i>x</i> = 5, <i>a</i> = 0.1, <i>b</i> = 0.2</div>\n          <div>= 5<sup>2</sup> + (0.1 + 0.2)(5) + (0.1 &times; 0.2)</div>\n          <div>= 25 + (0.3)(5) + 0.02 = 25 + 1.5 + 0.02 = <b>26.52</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Value: </span><span class=\"ans-val\">26.52</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(iii)</b> 103 &times; 98</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= (100 + 3)(100 &minus; 2)</div>\n          <div>Here <i>x</i> = 100, <i>a</i> = 3, <i>b</i> = &minus;2</div>\n          <div>= 100<sup>2</sup> + [3 + (&minus;2)](100) + [3 &times; (&minus;2)]</div>\n          <div>= 10000 + (1)(100) &minus; 6 = 10000 + 100 &minus; 6 = <b>10094</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Value: </span><span class=\"ans-val\">10094</span></div>\n      </div>\n    </div>\n\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #3F51B5;\">(iv)</b> 9.7 &times; 9.8</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>= (9 + 0.7)(9 + 0.8) &nbsp;[or (10 &minus; 0.3)(10 &minus; 0.2)]</div>\n          <div>Using <i>x</i> = 9, <i>a</i> = 0.7, <i>b</i> = 0.8:</div>\n          <div>= 9<sup>2</sup> + (0.7 + 0.8)(9) + (0.7 &times; 0.8)</div>\n          <div>= 81 + (1.5)(9) + 0.56 = 81 + 13.5 + 0.56 = <b>95.06</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Value: </span><span class=\"ans-val\">95.06</span></div>\n      </div>\n    </div>\n  </div>\n\n</div>\n",
   },
 };
