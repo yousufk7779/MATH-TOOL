@@ -1,439 +1,594 @@
 import { ChapterContent } from "../types";
 
-const ex101Content = `
-  <style>
-    .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
-    .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
-    .frac .den { padding: 0 2px; }
-    .ex-container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
-    .q-card { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 15px; margin-bottom: 25px; }
-    .q-text { color: #FFD600; font-weight: 600; margin-bottom: 12px; }
-    .q-subtext { color: #e0e0e0; margin-bottom: 5px; margin-left: 10px; }
-    .sol-box { border-left: 3px solid #FFD600; padding-left: 15px; margin-top: 15px; background: rgba(255, 214, 0, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; }
-    .ans-highlight { color: #FFD600; font-weight: 700; }
-    .step-label { color: #FFE082; font-weight: 600; margin-right: 5px; }
-    .sol-step { margin-bottom: 8px; }
-    .q-text, .q-subtext, .sol-step, .sol-box { font-size: 16px; line-height: 1.8; }
-  </style>
-  <div class="ex-container">
-    <div class="q-card">
-      <div class="q-text">1. Evaluate</div>
-      <div class="q-subtext">(i) 3<sup>-2</sup></div>
-      <div class="q-subtext">(ii) (-4)<sup>-2</sup></div>
-      <div class="q-subtext">(iii) (<span class='frac'><span class='num'>1</span><span class='den'>2</span></span>)<sup>-5</sup></div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step"><span class="step-label">(i)</span> 3<sup>-2</sup> = <span class='frac'><span class='num'>1</span><span class='den'>3<sup>2</sup></span></span> = <span class="ans-highlight"><span class='frac'><span class='num'>1</span><span class='den'>9</span></span></span></div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(ii)</span> (-4)<sup>-2</sup> = <span class='frac'><span class='num'>1</span><span class='den'>(-4)<sup>2</sup></span></span> = <span class='frac'><span class='num'>1</span><span class='den'>(-4) × (-4)</span></span> = <span class="ans-highlight"><span class='frac'><span class='num'>1</span><span class='den'>16</span></span></span></div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(iii)</span> (<span class='frac'><span class='num'>1</span><span class='den'>2</span></span>)<sup>-5</sup> = (<span class='frac'><span class='num'>2</span><span class='den'>1</span></span>)<sup>5</sup> = 2<sup>5</sup> = <span class="ans-highlight">32</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">2. Simplify and express the result in power notation with positive exponent.</div>
-      <div class="q-subtext">(i) (-4)<sup>5</sup> ÷ (-4)<sup>8</sup></div>
-      <div class="q-subtext">(ii) (<span class='frac'><span class='num'>1</span><span class='den'>2<sup>3</sup></span></span>)<sup>2</sup></div>
-      <div class="q-subtext">(iii) (-3)<sup>4</sup> × (<span class='frac'><span class='num'>5</span><span class='den'>3</span></span>)<sup>4</sup></div>
-      <div class="q-subtext">(iv) (3<sup>-7</sup> ÷ 3<sup>-10</sup>) × 3<sup>-5</sup></div>
-      <div class="q-subtext">(v) 2<sup>-3</sup> × (-7)<sup>-3</sup></div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step"><span class="step-label">(i)</span> (-4)<sup>5</sup> ÷ (-4)<sup>8</sup> = (-4)<sup>5 - 8</sup> = (-4)<sup>-3</sup> = <span class="ans-highlight"><span class='frac'><span class='num'>1</span><span class='den'>(-4)<sup>3</sup></span></span></span></div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(ii)</span> (<span class='frac'><span class='num'>1</span><span class='den'>2<sup>3</sup></span></span>)<sup>2</sup> = <span class='frac'><span class='num'>1<sup>2</sup></span><span class='den'>(2<sup>3</sup>)<sup>2</sup></span></span> = <span class="ans-highlight"><span class='frac'><span class='num'>1</span><span class='den'>2<sup>6</sup></span></span></span></div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(iii)</span> (-3)<sup>4</sup> × (<span class='frac'><span class='num'>5</span><span class='den'>3</span></span>)<sup>4</sup> = (-3 × <span class='frac'><span class='num'>5</span><span class='den'>3</span></span>)<sup>4</sup> = (-5)<sup>4</sup> = <span class="ans-highlight">5<sup>4</sup></span></div>
-        <div class="sol-step">(Note: Since power is even, negative sign is eliminated).</div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(iv)</span> (3<sup>-7</sup> ÷ 3<sup>-10</sup>) × 3<sup>-5</sup> = 3<sup>-7 - (-10)</sup> × 3<sup>-5</sup></div>
-        <div class="sol-step">= 3<sup>-7 + 10</sup> × 3<sup>-5</sup> = 3<sup>3</sup> × 3<sup>-5</sup></div>
-        <div class="sol-step">= 3<sup>3 + (-5)</sup> = 3<sup>-2</sup> = <span class="ans-highlight"><span class='frac'><span class='num'>1</span><span class='den'>3<sup>2</sup></span></span></span></div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(v)</span> 2<sup>-3</sup> × (-7)<sup>-3</sup> = [2 × (-7)]<sup>-3</sup></div>
-        <div class="sol-step">= (-14)<sup>-3</sup> = <span class="ans-highlight"><span class='frac'><span class='num'>1</span><span class='den'>(-14)<sup>3</sup></span></span></span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">3. Find the value of.</div>
-      <div class="q-subtext">(i) (3<sup>0</sup> + 4<sup>-1</sup>) × 2<sup>2</sup></div>
-      <div class="q-subtext">(ii) (2<sup>-1</sup> × 4<sup>-1</sup>) ÷ 2<sup>-2</sup></div>
-      <div class="q-subtext">(iii) (<span class='frac'><span class='num'>1</span><span class='den'>2</span></span>)<sup>-2</sup> + (<span class='frac'><span class='num'>1</span><span class='den'>3</span></span>)<sup>-2</sup> + (<span class='frac'><span class='num'>1</span><span class='den'>4</span></span>)<sup>-2</sup></div>
-      <div class="q-subtext">(iv) (3<sup>-1</sup> + 4<sup>-1</sup> + 5<sup>-1</sup>)<sup>0</sup></div>
-      <div class="q-subtext">(v) { (<span class='frac'><span class='num'>-2</span><span class='den'>3</span></span>)<sup>-2</sup> }<sup>2</sup></div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step"><span class="step-label">(i)</span> (3<sup>0</sup> + 4<sup>-1</sup>) × 2<sup>2</sup> = (1 + <span class='frac'><span class='num'>1</span><span class='den'>4</span></span>) × 4</div>
-        <div class="sol-step">= (<span class='frac'><span class='num'>5</span><span class='den'>4</span></span>) × 4 = <span class="ans-highlight">5</span></div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(ii)</span> (2<sup>-1</sup> × 4<sup>-1</sup>) ÷ 2<sup>-2</sup> = (<span class='frac'><span class='num'>1</span><span class='den'>2</span></span> × <span class='frac'><span class='num'>1</span><span class='den'>4</span></span>) ÷ (<span class='frac'><span class='num'>1</span><span class='den'>2<sup>2</sup></span></span>)</div>
-        <div class="sol-step">= <span class='frac'><span class='num'>1</span><span class='den'>8</span></span> ÷ <span class='frac'><span class='num'>1</span><span class='den'>4</span></span> = <span class='frac'><span class='num'>1</span><span class='den'>8</span></span> × 4 = <span class="ans-highlight"><span class='frac'><span class='num'>1</span><span class='den'>2</span></span></span></div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(iii)</span> (<span class='frac'><span class='num'>1</span><span class='den'>2</span></span>)<sup>-2</sup> + (<span class='frac'><span class='num'>1</span><span class='den'>3</span></span>)<sup>-2</sup> + (<span class='frac'><span class='num'>1</span><span class='den'>4</span></span>)<sup>-2</sup> = (2)<sup>2</sup> + (3)<sup>2</sup> + (4)<sup>2</sup></div>
-        <div class="sol-step">= 4 + 9 + 16 = <span class="ans-highlight">29</span></div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(iv)</span> (3<sup>-1</sup> + 4<sup>-1</sup> + 5<sup>-1</sup>)<sup>0</sup></div>
-        <div class="sol-step">Since a<sup>0</sup> = 1 for any non-zero 'a', the value is <span class="ans-highlight">1</span>.</div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(v)</span> { (<span class='frac'><span class='num'>-2</span><span class='den'>3</span></span>)<sup>-2</sup> }<sup>2</sup> = (<span class='frac'><span class='num'>-2</span><span class='den'>3</span></span>)<sup>-2 × 2</sup> = (<span class='frac'><span class='num'>-2</span><span class='den'>3</span></span>)<sup>-4</sup></div>
-        <div class="sol-step">= (<span class='frac'><span class='num'>-3</span><span class='den'>2</span></span>)<sup>4</sup> = <span class='frac'><span class='num'>(-3)<sup>4</sup></span><span class='den'>2<sup>4</sup></span></span> = <span class="ans-highlight"><span class='frac'><span class='num'>81</span><span class='den'>16</span></span></span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">4. Evaluate:</div>
-      <div class="q-subtext">(i) <span class='frac'><span class='num'>8<sup>-1</sup> × 5<sup>3</sup></span><span class='den'>2<sup>-4</sup></span></span></div>
-      <div class="q-subtext">(ii) (5<sup>-1</sup> × 2<sup>-1</sup>) × 6<sup>-1</sup></div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step"><span class="step-label">(i)</span> <span class='frac'><span class='num'>8<sup>-1</sup> × 5<sup>3</sup></span><span class='den'>2<sup>-4</sup></span></span> = <span class='frac'><span class='num'>2<sup>4</sup> × 5<sup>3</sup></span><span class='den'>8<sup>1</sup></span></span></div>
-        <div class="sol-step">= <span class='frac'><span class='num'>16 × 125</span><span class='den'>8</span></span> = 2 × 125 = <span class="ans-highlight">250</span></div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(ii)</span> (5<sup>-1</sup> × 2<sup>-1</sup>) × 6<sup>-1</sup> = (<span class='frac'><span class='num'>1</span><span class='den'>5</span></span> × <span class='frac'><span class='num'>1</span><span class='den'>2</span></span>) × <span class='frac'><span class='num'>1</span><span class='den'>6</span></span></div>
-        <div class="sol-step">= <span class='frac'><span class='num'>1</span><span class='den'>10</span></span> × <span class='frac'><span class='num'>1</span><span class='den'>6</span></span> = <span class="ans-highlight"><span class='frac'><span class='num'>1</span><span class='den'>60</span></span></span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">5. Find the value of m for which 5<sup>m</sup> ÷ 5<sup>-3</sup> = 5<sup>5</sup>.</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Given: 5<sup>m</sup> ÷ 5<sup>-3</sup> = 5<sup>5</sup></div>
-        <div class="sol-step">Using law a<sup>m</sup> ÷ a<sup>n</sup> = a<sup>m - n</sup>:</div>
-        <div class="sol-step">5<sup>m - (-3)</sup> = 5<sup>5</sup></div>
-        <div class="sol-step">5<sup>m + 3</sup> = 5<sup>5</sup></div>
-        <div class="sol-step">Comparing exponents since bases are equal:</div>
-        <div class="sol-step">m + 3 = 5</div>
-        <div class="sol-step">m = 5 - 3</div>
-        <div class="sol-step"><span class="ans-highlight">m = 2</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">6. Evaluate:</div>
-      <div class="q-subtext">(i) { (<span class='frac'><span class='num'>1</span><span class='den'>3</span></span>)<sup>-1</sup> - (<span class='frac'><span class='num'>1</span><span class='den'>4</span></span>)<sup>-1</sup> }<sup>-1</sup></div>
-      <div class="q-subtext">(ii) (<span class='frac'><span class='num'>5</span><span class='den'>8</span></span>)<sup>-7</sup> × (<span class='frac'><span class='num'>8</span><span class='den'>5</span></span>)<sup>-4</sup></div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step"><span class="step-label">(i)</span> { (<span class='frac'><span class='num'>1</span><span class='den'>3</span></span>)<sup>-1</sup> - (<span class='frac'><span class='num'>1</span><span class='den'>4</span></span>)<sup>-1</sup> }<sup>-1</sup> = { 3 - 4 }<sup>-1</sup></div>
-        <div class="sol-step">= {-1}<sup>-1</sup> = <span class='frac'><span class='num'>1</span><span class='den'>-1</span></span> = <span class="ans-highlight">-1</span></div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(ii)</span> (<span class='frac'><span class='num'>5</span><span class='den'>8</span></span>)<sup>-7</sup> × (<span class='frac'><span class='num'>8</span><span class='den'>5</span></span>)<sup>-4</sup> = (<span class='frac'><span class='num'>8</span><span class='den'>5</span></span>)<sup>7</sup> × (<span class='frac'><span class='num'>8</span><span class='den'>5</span></span>)<sup>-4</sup></div>
-        <div class="sol-step">= (<span class='frac'><span class='num'>8</span><span class='den'>5</span></span>)<sup>7 + (-4)</sup> = (<span class='frac'><span class='num'>8</span><span class='den'>5</span></span>)<sup>3</sup></div>
-        <div class="sol-step">= <span class='frac'><span class='num'>8<sup>3</sup></span><span class='den'>5<sup>3</sup></span></span> = <span class="ans-highlight"><span class='frac'><span class='num'>512</span><span class='den'>125</span></span></span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">7. Simplify:</div>
-      <div class="q-subtext">(i) <span class='frac'><span class='num'>25 × t<sup>-4</sup></span><span class='den'>5<sup>-3</sup> × 10 × t<sup>-8</sup></span></span> (t ≠ 0)</div>
-      <div class="q-subtext">(ii) <span class='frac'><span class='num'>3<sup>-5</sup> × 10<sup>-5</sup> × 125</span><span class='den'>5<sup>-7</sup> × 6<sup>-5</sup></span></span></div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step"><span class="step-label">(i)</span> <span class='frac'><span class='num'>25 × t<sup>-4</sup></span><span class='den'>5<sup>-3</sup> × 10 × t<sup>-8</sup></span></span> = <span class='frac'><span class='num'>5<sup>2</sup> × t<sup>-4</sup></span><span class='den'>5<sup>-3</sup> × (2 × 5) × t<sup>-8</sup></span></span></div>
-        <div class="sol-step">= <span class='frac'><span class='num'>5<sup>2</sup> × t<sup>-4</sup></span><span class='den'>5<sup>-2</sup> × 2 × t<sup>-8</sup></span></span></div>
-        <div class="sol-step">= <span class='frac'><span class='num'>5<sup>2 - (-2)</sup> × t<sup>-4 - (-8)</sup></span><span class='den'>2</span></span></div>
-        <div class="sol-step">= <span class='frac'><span class='num'>5<sup>4</sup> × t<sup>4</sup></span><span class='den'>2</span></span> = <span class="ans-highlight"><span class='frac'><span class='num'>625 t<sup>4</sup></span><span class='den'>2</span></span></span></div>
-        <br/>
-        <div class="sol-step"><span class="step-label">(ii)</span> <span class='frac'><span class='num'>3<sup>-5</sup> × 10<sup>-5</sup> × 125</span><span class='den'>5<sup>-7</sup> × 6<sup>-5</sup></span></span></div>
-        <div class="sol-step">= <span class='frac'><span class='num'>3<sup>-5</sup> × (2 × 5)<sup>-5</sup> × 5<sup>3</sup></span><span class='den'>5<sup>-7</sup> × (2 × 3)<sup>-5</sup></span></span></div>
-        <div class="sol-step">= <span class='frac'><span class='num'>3<sup>-5</sup> × 2<sup>-5</sup> × 5<sup>-5</sup> × 5<sup>3</sup></span><span class='den'>5<sup>-7</sup> × 2<sup>-5</sup> × 3<sup>-5</sup></span></span></div>
-        <div class="sol-step">= 3<sup>-5 - (-5)</sup> × 2<sup>-5 - (-5)</sup> × 5<sup>-5 + 3 - (-7)</sup></div>
-        <div class="sol-step">= 3<sup>0</sup> × 2<sup>0</sup> × 5<sup>-2 + 7</sup></div>
-        <div class="sol-step">= 1 × 1 × 5<sup>5</sup> = <span class="ans-highlight">3125</span></div>
-      </div>
-    </div>
-  </div>
-`;
-
-const ex102Content = `
-  <style>
-    .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
-    .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
-    .frac .den { padding: 0 2px; }
-    .ex-container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
-    .q-card { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 15px; margin-bottom: 25px; }
-    .q-text { color: #FFD600; font-weight: 600; margin-bottom: 12px; }
-    .q-subtext { color: #e0e0e0; margin-bottom: 5px; margin-left: 10px; }
-    .sol-box { border-left: 3px solid #FFD600; padding-left: 15px; margin-top: 15px; background: rgba(255, 214, 0, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; }
-    .ans-highlight { color: #FFD600; font-weight: 700; }
-    .step-label { color: #FFE082; font-weight: 600; margin-right: 5px; }
-    .sol-step { margin-bottom: 8px; }
-    .q-text, .q-subtext, .sol-step, .sol-box { font-size: 16px; line-height: 1.8; }
-  </style>
-  <div class="ex-container">
-    <div class="q-card">
-      <div class="q-text">1. Express the following numbers in standard form.</div>
-      <div class="q-subtext">(i) 0.0000000000085</div>
-      <div class="q-subtext">(ii) 0.00000000000942</div>
-      <div class="q-subtext">(iii) 6020000000000000</div>
-      <div class="q-subtext">(iv) 0.00000000837</div>
-      <div class="q-subtext">(v) 31860000000</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step"><span class="step-label">(i)</span> 0.0000000000085 = <span class="ans-highlight">8.5 × 10<sup>-12</sup></span></div>
-        <div class="sol-step"><span class="step-label">(ii)</span> 0.00000000000942 = <span class="ans-highlight">9.42 × 10<sup>-12</sup></span></div>
-        <div class="sol-step"><span class="step-label">(iii)</span> 6020000000000000 = <span class="ans-highlight">6.02 × 10<sup>15</sup></span></div>
-        <div class="sol-step"><span class="step-label">(iv)</span> 0.00000000837 = <span class="ans-highlight">8.37 × 10<sup>-9</sup></span></div>
-        <div class="sol-step"><span class="step-label">(v)</span> 31860000000 = <span class="ans-highlight">3.186 × 10<sup>10</sup></span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">2. Express the following numbers in usual form.</div>
-      <div class="q-subtext">(i) 3.02 × 10<sup>-6</sup></div>
-      <div class="q-subtext">(ii) 4.5 × 10<sup>4</sup></div>
-      <div class="q-subtext">(iii) 3 × 10<sup>-8</sup></div>
-      <div class="q-subtext">(iv) 1.0001 × 10<sup>9</sup></div>
-      <div class="q-subtext">(v) 5.8 × 10<sup>12</sup></div>
-      <div class="q-subtext">(vi) 3.61492 × 10<sup>6</sup></div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step"><span class="step-label">(i)</span> 3.02 × 10<sup>-6</sup> = <span class="ans-highlight">0.00000302</span></div>
-        <div class="sol-step"><span class="step-label">(ii)</span> 4.5 × 10<sup>4</sup> = <span class="ans-highlight">45000</span></div>
-        <div class="sol-step"><span class="step-label">(iii)</span> 3 × 10<sup>-8</sup> = <span class="ans-highlight">0.00000003</span></div>
-        <div class="sol-step"><span class="step-label">(iv)</span> 1.0001 × 10<sup>9</sup> = <span class="ans-highlight">1000100000</span></div>
-        <div class="sol-step"><span class="step-label">(v)</span> 5.8 × 10<sup>12</sup> = <span class="ans-highlight">5800000000000</span></div>
-        <div class="sol-step"><span class="step-label">(vi)</span> 3.61492 × 10<sup>6</sup> = <span class="ans-highlight">3614920</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">3. Express the numbers appearing in the following statements in standard form.</div>
-      <div class="q-subtext">(i) 1 micron is equal to <span class='frac'><span class='num'>1</span><span class='den'>1000000</span></span> m.</div>
-      <div class="q-subtext">(ii) Charge of an electron is 0.000,000,000,000,000,000,16 coulomb.</div>
-      <div class="q-subtext">(iii) Size of a bacteria is 0.0000005 m.</div>
-      <div class="q-subtext">(iv) Size of a plant cell is 0.00001275 m.</div>
-      <div class="q-subtext">(v) Thickness of a thick paper is 0.07 mm.</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step"><span class="step-label">(i)</span> <span class='frac'><span class='num'>1</span><span class='den'>1000000</span></span> m = <span class="ans-highlight">1 × 10<sup>-6</sup> m</span></div>
-        <div class="sol-step"><span class="step-label">(ii)</span> 0.00000000000000000016 coulomb = <span class="ans-highlight">1.6 × 10<sup>-19</sup> coulomb</span></div>
-        <div class="sol-step"><span class="step-label">(iii)</span> 0.0000005 m = <span class="ans-highlight">5.0 × 10<sup>-7</sup> m</span></div>
-        <div class="sol-step"><span class="step-label">(iv)</span> 0.00001275 m = <span class="ans-highlight">1.275 × 10<sup>-5</sup> m</span></div>
-        <div class="sol-step"><span class="step-label">(v)</span> 0.07 mm = <span class="ans-highlight">7 × 10<sup>-2</sup> mm</span></div>
-      </div>
-    </div>
-
-    <div class="q-card">
-      <div class="q-text">4. In a stack there are 5 books each of thickness 20 mm and 5 paper sheets each of thickness 0.016 mm. What is the total thickness of the stack?</div>
-      <div class="sol-box">
-        <div class="sol-step"><span class="step-label">Solution:</span></div>
-        <div class="sol-step">Thickness of 1 book = 20 mm</div>
-        <div class="sol-step">Thickness of 5 books = 5 × 20 = 100 mm</div>
-        <div class="sol-step">Thickness of 1 paper sheet = 0.016 mm</div>
-        <div class="sol-step">Thickness of 5 paper sheets = 5 × 0.016 = 0.08 mm</div>
-        <div class="sol-step">Total thickness of the stack = 100 mm + 0.08 mm</div>
-        <div class="sol-step">= 100.08 mm</div>
-        <div class="sol-step">In standard form: <span class="ans-highlight">1.0008 × 10<sup>2</sup> mm</span></div>
-      </div>
-    </div>
-  </div>
-`;
-
 export const c8Math10: ChapterContent = {
-  id: "c8-math-10",
-  number: 10,
-  title: "Exponents and Powers",
-  introduction:
-    "In this chapter, we extend our knowledge of exponents by learning about numbers with negative exponents. We will also learn how to express very small and very large numbers in standard form.",
-  mcqs: [
+  "id": "c8-math-10",
+  "number": 10,
+  "title": "Mensuration",
+  "introduction": "Mensuration deals with measuring perimeter, area, surface area, and volume of geometric figures. In this chapter, we master calculating areas of trapeziums, rhombuses, general quadrilaterals, and composite polygons, and determine total surface areas, lateral surface areas, and volumes of cubes, cuboids, and cylinders with real-world applications.",
+  "definitions": [
     {
-      id: "m1",
-      question: "aᵐ × aⁿ is equal to:",
-      options: ["aᵐ⁻ⁿ", "aᵐⁿ", "aᵐ⁺ⁿ", "aᵐ/ⁿ"],
-      correctAnswer: "aᵐ⁺ⁿ",
+      "term": "Perimeter",
+      "description": "The total continuous distance around the outer boundary of a closed two-dimensional shape."
     },
     {
-      id: "m2",
-      question: "a⁰ (where a ≠ 0) is equal to:",
-      options: ["0", "a", "1", "-1"],
-      correctAnswer: "1",
+      "term": "Area",
+      "description": "The measure of surface region enclosed within the boundary of a closed plane figure, expressed in square units."
     },
     {
-      id: "m3",
-      question: "The value of 2⁻³ is:",
-      options: [
-        "-6",
-        "<span class='frac'><span class='num'>1</span><span class='den'>8</span></span>",
-        "-8",
-        "8",
+      "term": "Trapezium",
+      "description": "A quadrilateral with at least one pair of parallel opposite sides. Area = ½(a + b)h."
+    },
+    {
+      "term": "Rhombus",
+      "description": "A parallelogram with all four sides equal. Area = ½ × d₁ × d₂ = Base × Altitude."
+    },
+    {
+      "term": "Surface Area (TSA & LSA)",
+      "description": "The total area of all outer faces of a 3D solid (TSA) or vertical boundary faces excluding top and bottom (LSA)."
+    },
+    {
+      "term": "Volume & Capacity",
+      "description": "Volume is the 3D space occupied by an object (m³, cm³). Capacity is the volume of liquid a container holds (1 m³ = 1000 litres)."
+    }
+  ],
+  "keyPoints": [
+    "Area of a trapezium = ½ × (Sum of parallel sides) × (Perpendicular distance between them).",
+    "Area of a rhombus = ½ × d₁ × d₂ = Base × Altitude.",
+    "Area of a general quadrilateral with diagonal d and offsets h₁, h₂ = ½ × d × (h₁ + h₂).",
+    "Area of special polygons (octagons, pentagons) can be obtained by partitioning into known trapeziums, rectangles, and triangles.",
+    "Total surface area of cuboid = 2(lb + bh + hl); Lateral surface area (4 walls) = 2(l + b)h.",
+    "Total surface area of cube = 6a²; Lateral surface area = 4a².",
+    "Curved surface area of cylinder = 2πrh; Total surface area of closed cylinder = 2πr(r + h).",
+    "Volume of cuboid = l × b × h; Volume of cube = a³; Volume of cylinder = πr²h.",
+    "Unit Conversions: 1 m² = 10,000 cm²; 1 m³ = 1,000,000 cm³ = 1,000 litres; 1 litre = 1,000 cm³."
+  ],
+  "formulas": [
+    {
+      "name": "Area of Trapezium",
+      "formula": "Area = ½(a + b)h"
+    },
+    {
+      "name": "Area of Rhombus",
+      "formula": "Area = ½ × d₁ × d₂ = Base × Altitude"
+    },
+    {
+      "name": "Area of General Quadrilateral",
+      "formula": "Area = ½ × d × (h₁ + h₂)"
+    },
+    {
+      "name": "Total Surface Area of Cuboid",
+      "formula": "TSA = 2(lb + bh + hl)"
+    },
+    {
+      "name": "Lateral Surface Area of Cuboid",
+      "formula": "LSA = 2(l + b)h"
+    },
+    {
+      "name": "Total Surface Area of Cube",
+      "formula": "TSA = 6a²"
+    },
+    {
+      "name": "Lateral Surface Area of Cube",
+      "formula": "LSA = 4a²"
+    },
+    {
+      "name": "Curved Surface Area of Cylinder",
+      "formula": "CSA = 2πrh"
+    },
+    {
+      "name": "Total Surface Area of Closed Cylinder",
+      "formula": "TSA = 2πr(r + h)"
+    },
+    {
+      "name": "Volume of Cuboid",
+      "formula": "Volume = l × b × h = Base Area × Height"
+    },
+    {
+      "name": "Volume of Cube",
+      "formula": "Volume = a³"
+    },
+    {
+      "name": "Volume of Cylinder",
+      "formula": "Volume = πr²h = Base Area × Height"
+    }
+  ],
+  "crux": [],
+  "exercises": [
+    {
+      "id": "ex10-1",
+      "name": "Exercise 10.1",
+      "questions": [
+        {
+          "id": "c8-m10-ex10-1-q1",
+          "number": "1",
+          "question": "A square and a rectangular field with measurements as given in the figure have the same perimeter. Which field has a larger area?",
+          "solution": [
+            "See complete step-by-step mathematical working and side-by-side comparison in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m10-ex10-1-q2",
+          "number": "2",
+          "question": "Mrs. Kaushik has a square plot with the measurement as shown in the figure. She wants to construct a house in the middle of the plot. A garden is developed around the house. Find the total cost of developing a garden around the house at the rate of Rs 55 per m².",
+          "solution": [
+            "See plot, house, and garden area calculations with total cost evaluation in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m10-ex10-1-q3",
+          "number": "3",
+          "question": "The shape of a garden is rectangular in the middle and semi-circular at the ends as shown in the diagram. Find the area and the perimeter of this garden [Length of rectangle is 20 - (3.5 + 3.5) metres].",
+          "solution": [
+            "See rectangular and semicircular area and perimeter breakdowns in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m10-ex10-1-q4",
+          "number": "4",
+          "question": "A flooring tile has the shape of a parallelogram whose base is 24 cm and the corresponding height is 10 cm. How many such tiles are required to cover a floor of area 1080 m²? [If required you can split the tiles in whatever way you want to fill up the corners].",
+          "solution": [
+            "See unit conversion from m² to cm² and total tiles calculation in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m10-ex10-1-q5",
+          "number": "5",
+          "question": "An ant is moving around a few food pieces of different shapes scattered on the floor. For which food-piece would the ant have to take a longer round? Remember, circumference of a circle can be obtained by using the expression C = 2πr, where r is the radius of the circle.",
+          "solution": [
+            "See perimeter calculations for all three composite food pieces (a), (b), (c) in the interactive Web View."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex10-2",
+      "name": "Exercise 10.2",
+      "questions": [
+        {
+          "id": "c8-m10-ex10-2-q1",
+          "number": "1",
+          "question": "The shape of the top surface of a table is a trapezium. Find its area if its parallel sides are 1 m and 1.2 m and perpendicular distance between them is 0.8 m.",
+          "solution": [
+            "See trapezium area calculation in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m10-ex10-2-q2",
+          "number": "2",
+          "question": "The area of a trapezium is 34 cm² and the length of one of the parallel sides is 10 cm and its height is 4 cm. Find the length of the other parallel side.",
+          "solution": [
+            "See algebraic solving for unknown parallel side b in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m10-ex10-2-q3",
+          "number": "3",
+          "question": "Length of the fence of a trapezium shaped field ABCD is 120 m. If BC = 48 m, CD = 17 m and AD = 40 m, find the area of this field. Side AB is perpendicular to the parallel sides AD and BC.",
+          "solution": [
+            "See calculation of perpendicular height AB and trapezium field area in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m10-ex10-2-q4",
+          "number": "4",
+          "question": "The diagonal of a quadrilateral shaped field is 24 m and the perpendiculars dropped on it from the remaining opposite vertices are 8 m and 13 m. Find the area of the field.",
+          "solution": [
+            "See general quadrilateral area with diagonal offsets in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m10-ex10-2-q5",
+          "number": "5",
+          "question": "The diagonals of a rhombus are 7.5 cm and 12 cm. Find its area.",
+          "solution": [
+            "See rhombus area from product of diagonals in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m10-ex10-2-q6",
+          "number": "6",
+          "question": "Find the area of a rhombus whose side is 5 cm and whose altitude is 4.8 cm. If one of the diagonals is 8 cm long, find the length of the other diagonal.",
+          "solution": [
+            "See dual-method rhombus area and diagonal evaluation in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m10-ex10-2-q7",
+          "number": "7",
+          "question": "The floor of a building consists of 3000 tiles which are rhombus shaped and each of its diagonals are 45 cm and 30 cm in length. Find the total cost of polishing the floor, if the cost per m² is Rs 4.",
+          "solution": [
+            "See total floor area in m² and polishing cost in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m10-ex10-2-q8",
+          "number": "8",
+          "question": "Mohan wants to buy a trapezium shaped field. Its side along the river is parallel to and twice the side along the road. If the area of this field is 10500 m² and the perpendicular distance between the two parallel sides is 100 m, find the length of the side along the river.",
+          "solution": [
+            "See linear equation setup and side evaluation in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m10-ex10-2-q9",
+          "number": "9",
+          "question": "Top surface of a raised platform is in the shape of a regular octagon as shown in the figure. Find the area of the octagonal surface.",
+          "solution": [
+            "See octagon partitioning into 2 trapeziums and 1 rectangle in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m10-ex10-2-q10",
+          "number": "10",
+          "question": "There is a pentagonal shaped park as shown in the figure. For finding its area Jyoti and Kavita divided it in two different ways. Find the area of this park using both ways. Can you suggest some other way of finding its area?",
+          "solution": [
+            "See Jyoti's, Kavita's, and third subtraction method in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m10-ex10-2-q11",
+          "number": "11",
+          "question": "Diagram of the adjacent picture frame has outer dimensions = 24 cm × 28 cm and inner dimensions = 16 cm × 20 cm. Find the area of each section of the frame, if the width of each section is same.",
+          "solution": [
+            "See symmetrical trapezoidal section areas I, II, III, and IV in the interactive Web View."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex10-3",
+      "name": "Exercise 10.3",
+      "questions": [
+        {
+          "id": "c8-m10-ex10-3-q1",
+          "number": "1",
+          "question": "There are two cuboidal boxes as shown in the adjoining figure. Which box requires the lesser amount of material to make? (a) Cuboid 60 cm × 40 cm × 50 cm (b) Cube 50 cm × 50 cm × 50 cm.",
+          "solution": [
+            "See TSA of cuboid vs cube comparison in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m10-ex10-3-q2",
+          "number": "2",
+          "question": "A suitcase with measures 80 cm × 48 cm × 24 cm is to be covered with a tarpaulin cloth. How many metres of tarpaulin of width 96 cm is required to cover 100 such suitcases?",
+          "solution": [
+            "See suitcase surface area and required tarpaulin length in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m10-ex10-3-q3",
+          "number": "3",
+          "question": "Find the side of a cube whose surface area is 600 cm².",
+          "solution": [
+            "See square root solution for cube edge in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m10-ex10-3-q4",
+          "number": "4",
+          "question": "Rukhsar painted the outside of the cabinet of measure 1 m × 2 m × 1.5 m. How much surface area did she cover if she painted all except the bottom of the cabinet?",
+          "solution": [
+            "See 5-face surface area calculation in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m10-ex10-3-q5",
+          "number": "5",
+          "question": "Daniel is painting the walls and ceiling of a cuboidal hall with length, breadth and height of 15 m, 10 m and 7 m respectively. From each can of paint 100 m² of area is painted. How many cans of paint will she need to paint the room?",
+          "solution": [
+            "See 4 walls + ceiling area and paint cans calculation in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m10-ex10-3-q6",
+          "number": "6",
+          "question": "Describe how the two figures below are alike and how they are different. Which box has larger lateral surface area? (Cylinder d=7 cm, h=7 cm vs Cube side 7 cm).",
+          "solution": [
+            "See likeness, differences, and LSA comparison in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m10-ex10-3-q7",
+          "number": "7",
+          "question": "A closed cylindrical tank of radius 7 m and height 3 m is made from a sheet of metal. How much sheet of metal is required?",
+          "solution": [
+            "See TSA of closed cylinder calculation in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m10-ex10-3-q8",
+          "number": "8",
+          "question": "The lateral surface area of a hollow cylinder is 4224 cm². It is cut along its height and formed a rectangular sheet of width 33 cm. Find the perimeter of rectangular sheet?",
+          "solution": [
+            "See unrolled rectangular sheet dimensions and perimeter in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m10-ex10-3-q9",
+          "number": "9",
+          "question": "A road roller takes 750 complete revolutions to move once over to level a road. Find the area of the road if the diameter of a road roller is 84 cm and length 1 m.",
+          "solution": [
+            "See CSA per revolution and total road area in m² in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m10-ex10-3-q10",
+          "number": "10",
+          "question": "A company packages its milk powder in cylindrical container whose base has a diameter of 14 cm and height 20 cm. Company places a label around the surface of the container (as shown in figure). If the label is placed 2 cm from top and bottom, what is the area of the label?",
+          "solution": [
+            "See label height determination and curved surface area in the interactive Web View."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex10-4",
+      "name": "Exercise 10.4",
+      "questions": [
+        {
+          "id": "c8-m10-ex10-4-q1",
+          "number": "1",
+          "question": "Given a cylindrical tank, in which situation will you find surface area and in which situation volume: (a) To find how much it can hold (b) Number of cement bags required to plaster it (c) To find the number of smaller tanks that can be filled with water from it.",
+          "solution": [
+            "See surface area vs volume real-world classification in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m10-ex10-4-q2",
+          "number": "2",
+          "question": "Diameter of cylinder A is 7 cm and the height is 14 cm. Diameter of cylinder B is 14 cm and height is 7 cm. Without doing any calculations can you suggest whose volume is greater? Verify it by finding the volume of both the cylinders. Check whether the cylinder with greater volume also has greater surface area.",
+          "solution": [
+            "See intuitive suggestion, volumes, and surface areas verification in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m10-ex10-4-q3",
+          "number": "3",
+          "question": "Find the height of a cuboid whose base area is 180 cm² and volume is 900 cm³?",
+          "solution": [
+            "See height evaluation from Volume = Base Area × Height in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m10-ex10-4-q4",
+          "number": "4",
+          "question": "A cuboid is of dimensions 60 cm × 54 cm × 30 cm. How many small cubes with side 6 cm can be placed in the given cuboid?",
+          "solution": [
+            "See volume ratio calculation for small cubes in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m10-ex10-4-q5",
+          "number": "5",
+          "question": "Find the height of the cylinder whose volume is 1.54 m³ and diameter of the base is 140 cm.",
+          "solution": [
+            "See cylinder height from Volume = πr²h in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m10-ex10-4-q6",
+          "number": "6",
+          "question": "A milk tank is in the form of cylinder whose radius is 1.5 m and length is 7 m. Find the quantity of milk in litres that can be stored in the tank.",
+          "solution": [
+            "See volume in m³ and conversion to litres in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m10-ex10-4-q7",
+          "number": "7",
+          "question": "If each edge of a cube is doubled: (i) how many times will its surface area increase? (ii) how many times will its volume increase?",
+          "solution": [
+            "See algebraic scaling proofs (4× and 8×) in the interactive Web View."
+          ]
+        },
+        {
+          "id": "c8-m10-ex10-4-q8",
+          "number": "8",
+          "question": "Water is pouring into a cuboidal reservoir at the rate of 60 litres per minute. If the volume of reservoir is 108 m³, find the number of hours it will take to fill the reservoir.",
+          "solution": [
+            "See capacity in litres, flow rate per hour, and total time in the interactive Web View."
+          ]
+        }
+      ]
+    }
+  ],
+  "examples": [],
+  "mcqs": [
+    {
+      "id": "c8-m10-q1",
+      "question": "What is the formula for the area of a trapezium with parallel sides a and b, and height h?",
+      "options": [
+        "A):   ½(a + b)h",
+        "B):   (a + b)h",
+        "C):   ½abh",
+        "D):   2(a + b)h"
       ],
-      correctAnswer:
-        "<span class='frac'><span class='num'>1</span><span class='den'>8</span></span>",
+      "correctAnswer": "A",
+      "explanation": "Area of a trapezium = ½ × (Sum of parallel sides) × (Perpendicular distance) = ½(a + b)h."
     },
     {
-      id: "m4",
-      question: "Standard form of 0.000045 is:",
-      options: ["45 × 10⁻⁶", "4.5 × 10⁻⁵", "4.5 × 10⁵", "0.45 × 10⁻⁴"],
-      correctAnswer: "4.5 × 10⁻⁵",
+      "id": "c8-m10-q2",
+      "question": "If the diagonals of a rhombus are 10 cm and 12 cm, what is its area?",
+      "options": [
+        "A):   120 cm²",
+        "B):   60 cm²",
+        "C):   44 cm²",
+        "D):   30 cm²"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Area of rhombus = ½ × d₁ × d₂ = ½ × 10 × 12 = 60 cm²."
     },
     {
-      id: "m5",
-      question: "(3⁰ + 4⁰ + 5⁰) equals:",
-      options: ["12", "0", "1", "3"],
-      correctAnswer: "3",
+      "id": "c8-m10-q3",
+      "question": "How many cubic centimetres (cm³) are equal to 1 litre?",
+      "options": [
+        "A):   100 cm³",
+        "B):   10 cm³",
+        "C):   1000 cm³",
+        "D):   10,000 cm³"
+      ],
+      "correctAnswer": "C",
+      "explanation": "1 litre is defined as exactly 1000 cm³ (or 1000 mL)."
     },
     {
-      id: "m6",
-      question: "(aᵐ)ⁿ is equal to:",
-      options: ["aᵐ⁺ⁿ", "aᵐ⁻ⁿ", "aᵐⁿ", "aᵐ/ⁿ"],
-      correctAnswer: "aᵐⁿ",
+      "id": "c8-m10-q4",
+      "question": "What is the total surface area of a cube having side length 6 cm?",
+      "options": [
+        "A):   36 cm²",
+        "B):   144 cm²",
+        "C):   72 cm²",
+        "D):   216 cm²"
+      ],
+      "correctAnswer": "D",
+      "explanation": "TSA of cube = 6a² = 6 × (6)² = 6 × 36 = 216 cm²."
     },
     {
-      id: "m7",
-      question: "Usual form of 3.02 × 10⁻⁴ is:",
-      options: ["0.0302", "0.00302", "0.000302", "0.0000302"],
-      correctAnswer: "0.000302",
+      "id": "c8-m10-q5",
+      "question": "What is the curved surface area (CSA) of a cylinder of radius 7 cm and height 10 cm?",
+      "options": [
+        "A):   440 cm²",
+        "B):   220 cm²",
+        "C):   880 cm²",
+        "D):   154 cm²"
+      ],
+      "correctAnswer": "A",
+      "explanation": "CSA = 2πrh = 2 × (22/7) × 7 × 10 = 44 × 10 = 440 cm²."
     },
     {
-      id: "m8",
-      question: "aᵐ ÷ aⁿ is equal to:",
-      options: ["aᵐ⁺ⁿ", "aᵐ⁻ⁿ", "aᵐⁿ", "aᵐ/ⁿ"],
-      correctAnswer: "aᵐ⁻ⁿ",
+      "id": "c8-m10-q6",
+      "question": "If each edge of a cube is doubled, its volume increases by how many times?",
+      "options": [
+        "A):   2 times",
+        "B):   8 times",
+        "C):   4 times",
+        "D):   16 times"
+      ],
+      "correctAnswer": "B",
+      "explanation": "V = l³. When l becomes 2l, new volume V' = (2l)³ = 8l³ = 8 times original volume."
     },
     {
-      id: "m9",
-      question: "Multiplicative inverse of 10⁻¹⁰⁰ is:",
-      options: ["10¹⁰", "-10¹⁰⁰", "10¹⁰⁰", "10⁻¹⁰"],
-      correctAnswer: "10¹⁰⁰",
+      "id": "c8-m10-q7",
+      "question": "What is the lateral surface area (area of 4 walls) of a cuboid with length l, breadth b, and height h?",
+      "options": [
+        "A):   lbh",
+        "B):   2(lb + bh)",
+        "C):   2(l + b)h",
+        "D):   2(lb + bh + hl)"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Area of 4 walls = Perimeter of base × Height = 2(l + b)h."
     },
     {
-      id: "m10",
-      question: "Value of (1/2)⁻¹ is:",
-      options: ["-2", "2", "1/2", "-1/2"],
-      correctAnswer: "2",
+      "id": "c8-m10-q8",
+      "question": "A cylinder has radius 7 m and height 3 m. What is its volume?",
+      "options": [
+        "A):   154 m³",
+        "B):   66 m³",
+        "C):   231 m³",
+        "D):   462 m³"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Volume = πr²h = (22/7) × 7 × 7 × 3 = 22 × 21 = 462 m³."
     },
+    {
+      "id": "c8-m10-q9",
+      "question": "1 cubic metre (1 m³) is equal to how many litres of water?",
+      "options": [
+        "A):   1000 litres",
+        "B):   100 litres",
+        "C):   10,000 litres",
+        "D):   500 litres"
+      ],
+      "correctAnswer": "A",
+      "explanation": "1 m³ = 1000 litres. (A tank of 1 m × 1 m × 1 m holds 1000 litres)."
+    },
+    {
+      "id": "c8-m10-q10",
+      "question": "The area of a rhombus is 24 cm² and one diagonal is 8 cm. What is the other diagonal?",
+      "options": [
+        "A):   3 cm",
+        "B):   6 cm",
+        "C):   12 cm",
+        "D):   4 cm"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Area = ½ × d₁ × d₂ ⇒ 24 = ½ × 8 × d₂ ⇒ 4d₂ = 24 ⇒ d₂ = 6 cm."
+    },
+    {
+      "id": "c8-m10-q11",
+      "question": "If each edge of a cube is doubled, its surface area increases by how many times?",
+      "options": [
+        "A):   2 times",
+        "B):   6 times",
+        "C):   4 times",
+        "D):   8 times"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Surface area A = 6l². When l becomes 2l, A' = 6(2l)² = 6 × 4l² = 4 × (6l²) = 4 times."
+    },
+    {
+      "id": "c8-m10-q12",
+      "question": "Which of the following measurements is used to determine how much water a cylindrical reservoir can hold?",
+      "options": [
+        "A):   Curved surface area",
+        "B):   Perimeter",
+        "C):   Total surface area",
+        "D):   Volume"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Capacity or the amount of liquid a container holds is given by its Volume."
+    },
+    {
+      "id": "c8-m10-q13",
+      "question": "A square field of side 60 m and a rectangle of length 80 m have equal perimeters. Which has greater area?",
+      "options": [
+        "A):   Square field",
+        "B):   Rectangular field",
+        "C):   Both have equal area",
+        "D):   Cannot be determined"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Perimeter = 240 m. Rectangle breadth = 40 m. Area of square = 3600 m², Area of rectangle = 3200 m². Square is larger by 400 m²."
+    },
+    {
+      "id": "c8-m10-q14",
+      "question": "What is the area of a quadrilateral with diagonal 24 m and perpendicular offsets 13 m and 8 m?",
+      "options": [
+        "A):   504 m²",
+        "B):   252 m²",
+        "C):   126 m²",
+        "D):   300 m²"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Area = ½ × d × (h₁ + h₂) = ½ × 24 × (13 + 8) = 12 × 21 = 252 m²."
+    },
+    {
+      "id": "c8-m10-q15",
+      "question": "How many small cubes of side 6 cm can fit inside a cuboid of 60 cm × 54 cm × 30 cm?",
+      "options": [
+        "A):   250 cubes",
+        "B):   360 cubes",
+        "C):   450 cubes",
+        "D):   500 cubes"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Number of cubes = (60/6) × (54/6) × (30/6) = 10 × 9 × 5 = 450 cubes."
+    }
   ],
-  summary: [
-    "Numbers with negative exponents obey the same laws of exponents as positive exponents.",
-    "a<sup>-m</sup> = <span class='frac'><span class='num'>1</span><span class='den'>a<sup>m</sup></span></span>, for any non-zero integer a.",
-    "Very small numbers can be expressed in standard form using negative exponents.",
-    "Standard form is represented as k × 10<sup>n</sup>, where 1 ≤ k < 10 and n is an integer.",
+  "summary": [
+    "Mensuration involves calculating perimeter, area, surface area, and volume of geometric figures.",
+    "Area of trapezium = ½(a + b)h, where a and b are parallel sides and h is height.",
+    "Area of rhombus = ½ × d₁ × d₂ = Base × Altitude.",
+    "Area of a general quadrilateral = ½ × d × (h₁ + h₂).",
+    "Surface area of a 3D solid is the sum of the areas of its outer faces.",
+    "Volume is the 3D space occupied by an object; Capacity is the volume of liquid a container holds.",
+    "1 m³ = 1000 litres, and 1 litre = 1000 cm³."
   ],
-  exercises: [
-    { id: "ex10-1", name: "Exercise 10.1", questions: [] },
-    { id: "ex10-2", name: "Exercise 10.2", questions: [] },
-  ],
-  isHtmlView: true,
-  htmlOverview: `
-    <style>
-      .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
-      .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
-      .frac .den { padding: 0 2px; }
-      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
-      
-      .premium-container {
-        padding: 20px;
-        color: #ffffff;
-        font-family: 'Outfit', sans-serif !important;
-        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-        border-radius: 20px;
-        margin: 10px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-      }
-
-      .section-box {
-        background: rgba(255, 255, 255, 0.05);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 15px;
-        padding: 20px;
-        margin-bottom: 20px;
-        backdrop-filter: blur(10px);
-      }
-
-      .section-header {
-        color: #FFD600;
-        font-size: 20px;
-        font-weight: 600;
-        margin-bottom: 15px;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-      }
-
-      .prop-table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 10px;
-        background: rgba(0,0,0,0.2);
-        border-radius: 12px;
-        overflow: hidden;
-      }
-
-      .prop-table th, .prop-table td {
-        padding: 12px;
-        border: 1px solid rgba(255,255,255,0.1);
-        text-align: left;
-        font-size: 15px;
-      }
-
-      .prop-table th {
-        background: rgba(255,255,255,0.1);
-        color: #FFE082;
-        font-weight: 700;
-      }
-
-      .highlight { color: #FFE082; font-weight: 600; }
-      
-      .intro-text {
-        line-height: 1.6;
-        font-size: 16px;
-        color: #e0e0e0;
-        text-align: justify;
-      }
-    </style>
-
-    <div class="premium-container">
-      <div class="section-box">
-        <div class="section-header"><span>✦</span> Introduction</div>
-        <div class="intro-text">
-          In this chapter, we extend our knowledge of exponents by learning about numbers with negative exponents. We will also learn how to express very small and very large numbers in standard form.
-        </div>
-      </div>
-      <div class="section-box">
-        <div class="section-header"><span>✦</span> Laws of Exponents</div>
-        <table class="prop-table">
-          <tr>
-            <th>Law</th>
-            <th>Formula</th>
-          </tr>
-          <tr>
-            <td><strong>Multiplication</strong></td>
-            <td><span class="highlight">a<sup>m</sup> × a<sup>n</sup> = a<sup>m+n</sup></span></td>
-          </tr>
-          <tr>
-            <td><strong>Division</strong></td>
-            <td><span class="highlight">a<sup>m</sup> ÷ a<sup>n</sup> = a<sup>m-n</sup></span></td>
-          </tr>
-          <tr>
-            <td><strong>Power of a Power</strong></td>
-            <td><span class="highlight">(a<sup>m</sup>)<sup>n</sup> = a<sup>mn</sup></span></td>
-          </tr>
-          <tr>
-            <td><strong>Power of a Product</strong></td>
-            <td><span class="highlight">a<sup>m</sup> × b<sup>m</sup> = (ab)<sup>m</sup></span></td>
-          </tr>
-          <tr>
-            <td><strong>Power of a Fraction</strong></td>
-            <td><span class="highlight">a<sup>m</sup> ÷ b<sup>m</sup> = (<span class='frac'><span class='num'>a</span><span class='den'>b</span></span>)<sup>m</sup></span></td>
-          </tr>
-          <tr>
-            <td><strong>Negative Exponent</strong></td>
-            <td><span class="highlight">a<sup>-m</sup> = <span class='frac'><span class='num'>1</span><span class='den'>a<sup>m</sup></span></span></span></td>
-          </tr>
-          <tr>
-            <td><strong>Zero Exponent</strong></td>
-            <td><span class="highlight">a<sup>0</sup> = 1</span> (for a ≠ 0)</td>
-          </tr>
-        </table>
-      </div>
-    </div>
-  `,
-  htmlExercises: {
-    "ex10-1": ex101Content,
-    "ex10-2": ex102Content,
-  },
+  "isHtmlView": true,
+  "htmlOverview": "\n\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; text-align: center; }\n  .frac .den { padding: 1px 4px; text-align: center; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 87, 34, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FF5722; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 16px; font-weight: 500; text-align: left !important; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(255, 87, 34, 0.25); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; text-align: left !important; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FF5722; border-radius: 8px; padding: 14px 16px; margin-top: 12px; text-align: left !important; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FF8A65; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; text-align: left !important; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; text-align: left !important; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(255, 87, 34, 0.15); border: 1px solid #FF5722; color: #FF8A65; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 4px 2px; }\n  \n  /* Diagram Card: Pure White Background, Rounded Border, Drop-shadow */\n  .diagram-card { background: #FFFFFF; border: 1.5px solid rgba(255, 87, 34, 0.4); border-radius: 10px; padding: 12px; margin: 16px auto; max-width: 440px; text-align: center; box-shadow: 0 4px 18px rgba(0,0,0,0.35); }\n  .diagram-card svg { display: block; margin: 0 auto; max-width: 100%; height: auto; }\n  .diagram-caption { color: #475569; font-size: 13px; font-weight: 600; margin-top: 8px; }\n\n  /* Table styling */\n  .table-card { background: rgba(15, 23, 42, 0.95); border: 1.5px solid #4CAF50; border-radius: 10px; padding: 10px 8px; margin: 16px 0; overflow-x: auto; box-shadow: 0 4px 18px rgba(0,0,0,0.35); -webkit-overflow-scrolling: touch; }\n  .styled-table { width: 100%; border-collapse: collapse; color: #F8FAFC; font-size: 12px; text-align: center; }\n  .styled-table th { background: rgba(76, 175, 80, 0.22); color: #A5D6A7; font-weight: 700; padding: 8px 6px; border: 1px solid rgba(76, 175, 80, 0.4); font-size: 12px; white-space: nowrap; }\n  .styled-table td { padding: 6px 6px; border: 1px solid rgba(255, 255, 255, 0.12); font-weight: 500; font-size: 11.5px; color: #E2E8F0; }\n  .styled-table tr:nth-child(even) td { background: rgba(255, 255, 255, 0.03); }\n  .styled-table td.col-label { font-weight: 700; white-space: nowrap; text-align: left; padding-left: 10px; color: #81C784; }\n  .styled-table td.highlight-cell { color: #FFE082; font-weight: 600; }\n</style>\n\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Hero Header -->\n  <div style=\"background: linear-gradient(135deg, rgba(255, 87, 34, 0.25), rgba(255, 138, 101, 0.15)); border: 1.5px solid #FF5722; border-radius: 14px; padding: 18px; margin-bottom: 20px; text-align: center;\">\n    <div style=\"font-size: 22px; font-weight: 800; color: #FF5722; margin-bottom: 6px;\">\n      📏 Chapter 10: Mensuration\n    </div>\n    <div style=\"color: #CBD5E1; font-size: 14.5px; line-height: 1.5;\">\n      Class 8 NCERT Mathematics &bull; Complete Reference Guide &amp; Master Formula Cheat Sheet\n    </div>\n  </div>\n\n  <!-- 1. Quick Glossary & Basic Definitions -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 1. Quick Glossary &amp; Core Mensuration Concepts</div>\n    <div class=\"q-text\">\n      <b>Mensuration</b> is the branch of mathematics that deals with measuring the perimeter, area, surface area, and volume of geometric figures.\n    </div>\n    <div class=\"sol-box\">\n      <div style=\"color: #FFFFFF; font-size: 14.5px; line-height: 1.8;\">\n        &bull; <b style=\"color: #FF5722;\">Perimeter:</b> The total distance around the boundary of a closed 2D shape (measured in linear units: m, cm, mm).<br/>\n        &bull; <b style=\"color: #FF5722;\">Area:</b> The measure of the surface region enclosed inside a closed boundary (measured in square units: m<sup>2</sup>, cm<sup>2</sup>).<br/>\n        &bull; <b style=\"color: #FF5722;\">Surface Area (LSA &amp; TSA):</b> The total area of all the outer faces or boundary surfaces of a 3D solid (in m<sup>2</sup>, cm<sup>2</sup>).<br/>\n        &bull; <b style=\"color: #FF5722;\">Volume:</b> The amount of three-dimensional space occupied by a solid object (in m<sup>3</sup>, cm<sup>3</sup>).<br/>\n        &bull; <b style=\"color: #FF5722;\">Capacity:</b> The quantity of liquid or substance a hollow container can hold (measured in litres, mL, where <b>1 m<sup>3</sup> = 1000 litres</b> and <b>1 litre = 1000 cm<sup>3</sup></b>).\n      </div>\n    </div>\n  </div>\n\n  <!-- 2. Master Table of 2D Plane Figures -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 2. Standard 2D Plane Figures &amp; Area Formulas</div>\n    <div class=\"table-card\">\n      <table class=\"styled-table\">\n        <thead>\n          <tr>\n            <th>Shape</th>\n            <th>Perimeter</th>\n            <th>Area Formula</th>\n            <th>Key Variables</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr>\n            <td class=\"col-label\">Square</td>\n            <td>4<i>a</i></td>\n            <td class=\"highlight-cell\"><i>a</i><sup>2</sup> = side &times; side</td>\n            <td><i>a</i> = side length</td>\n          </tr>\n          <tr>\n            <td class=\"col-label\">Rectangle</td>\n            <td>2(<i>l</i> + <i>b</i>)</td>\n            <td class=\"highlight-cell\"><i>l</i> &times; <i>b</i></td>\n            <td><i>l</i> = length, <i>b</i> = breadth</td>\n          </tr>\n          <tr>\n            <td class=\"col-label\">Triangle</td>\n            <td><i>a</i> + <i>b</i> + <i>c</i></td>\n            <td class=\"highlight-cell\"><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &times; <i>b</i> &times; <i>h</i></td>\n            <td><i>b</i> = base, <i>h</i> = height</td>\n          </tr>\n          <tr>\n            <td class=\"col-label\">Parallelogram</td>\n            <td>2(<i>a</i> + <i>b</i>)</td>\n            <td class=\"highlight-cell\"><i>b</i> &times; <i>h</i></td>\n            <td><i>b</i> = base, <i>h</i> = altitude</td>\n          </tr>\n          <tr>\n            <td class=\"col-label\">Circle</td>\n            <td>2&pi;<i>r</i> (Circumference)</td>\n            <td class=\"highlight-cell\">&pi;<i>r</i><sup>2</sup></td>\n            <td><i>r</i> = radius, &pi; &approx; <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span></td>\n          </tr>\n          <tr>\n            <td class=\"col-label\">Semicircle</td>\n            <td>&pi;<i>r</i> + 2<i>r</i></td>\n            <td class=\"highlight-cell\"><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>&pi;<i>r</i><sup>2</sup></td>\n            <td><i>r</i> = radius, 2<i>r</i> = diameter</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n  </div>\n\n  <!-- 3. Quadrilaterals & Polygons -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 3. Trapezium, Rhombus &amp; General Polygons</div>\n    <div class=\"sol-box\">\n      <div style=\"color: #FFFFFF; font-size: 14.5px; line-height: 1.8;\">\n        &bull; <b style=\"color: #FF5722;\">Area of Trapezium:</b> Half of the sum of parallel sides multiplied by the perpendicular distance between them.<br/>\n        &nbsp;&nbsp;<b>Area = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>(<i>a</i> + <i>b</i>) &times; <i>h</i></b><br/>\n        &bull; <b style=\"color: #FF5722;\">Area of Rhombus:</b> Half of the product of its two diagonals.<br/>\n        &nbsp;&nbsp;<b>Area = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &times; <i>d</i><sub>1</sub> &times; <i>d</i><sub>2</sub></b> (Also <b>Base &times; Altitude</b> since rhombus is a parallelogram).<br/>\n        &bull; <b style=\"color: #FF5722;\">Area of General Quadrilateral:</b> Split by a diagonal of length <i>d</i> with perpendicular offsets <i>h</i><sub>1</sub>, <i>h</i><sub>2</sub>:<br/>\n        &nbsp;&nbsp;<b>Area = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &times; <i>d</i> &times; (<i>h</i><sub>1</sub> + <i>h</i><sub>2</sub>)</b><br/>\n        &bull; <b style=\"color: #FF5722;\">Area of Special Polygons (Octagons, Pentagons):</b> Partition the polygon into known non-overlapping components (triangles, rectangles, trapeziums) and sum their areas.\n      </div>\n    </div>\n  </div>\n\n  <!-- 4. 3D Solids: Surface Areas and Volumes -->\n  <div class=\"q-card\" style=\"border-color: #4CAF50;\">\n    <div class=\"q-title\" style=\"color: #4CAF50;\">✦ 4. Master 3D Solids: Surface Area &amp; Volume Matrix</div>\n    <div class=\"table-card\">\n      <table class=\"styled-table\">\n        <thead>\n          <tr>\n            <th>Solid (3D)</th>\n            <th>Lateral / Curved Surface Area (LSA)</th>\n            <th>Total Surface Area (TSA)</th>\n            <th>Volume (<i>V</i>)</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr>\n            <td class=\"col-label\">Cuboid (<i>l</i>, <i>b</i>, <i>h</i>)</td>\n            <td>2(<i>l</i> + <i>b</i>)<i>h</i><br/><span style=\"color:#94A3B8; font-size:10.5px;\">[Area of 4 walls]</span></td>\n            <td class=\"highlight-cell\">2(<i>lb</i> + <i>bh</i> + <i>hl</i>)</td>\n            <td style=\"color:#81D4FA; font-weight:700;\"><i>l</i> &times; <i>b</i> &times; <i>h</i></td>\n          </tr>\n          <tr>\n            <td class=\"col-label\">Cube (side <i>a</i> or <i>l</i>)</td>\n            <td>4<i>a</i><sup>2</sup></td>\n            <td class=\"highlight-cell\">6<i>a</i><sup>2</sup></td>\n            <td style=\"color:#81D4FA; font-weight:700;\"><i>a</i><sup>3</sup></td>\n          </tr>\n          <tr>\n            <td class=\"col-label\">Right Circular Cylinder (<i>r</i>, <i>h</i>)</td>\n            <td>2&pi;<i>rh</i></td>\n            <td class=\"highlight-cell\">2&pi;<i>r</i>(<i>h</i> + <i>r</i>)</td>\n            <td style=\"color:#81D4FA; font-weight:700;\">&pi;<i>r</i><sup>2</sup><i>h</i></td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n  </div>\n\n  <!-- 5. Capacity & Unit Conversion Cheat Sheet -->\n  <div class=\"q-card\" style=\"border-color: #FF5722;\">\n    <div class=\"q-title\" style=\"color: #FF5722;\">✦ 5. Master Revision Formula Cheat Sheet</div>\n    <div style=\"font-size: 15px; color: #FFFFFF; line-height: 2.1;\">\n      &bull; <b>1 m<sup>2</sup></b> = 100 cm &times; 100 cm = <b>10,000 cm<sup>2</sup></b>.<br/>\n      &bull; <b>1 m<sup>3</sup></b> = 1,000,000 cm<sup>3</sup> = <b>1,000 litres</b>.<br/>\n      &bull; <b>1 litre</b> = 1,000 cm<sup>3</sup> = <b>1,000 mL</b>.<br/>\n      &bull; <b>1 mL</b> = <b>1 cm<sup>3</sup></b>.<br/>\n      &bull; <b>Number of identical small tiles/boxes:</b> <span class=\"frac\"><span class=\"num\">Total Area or Volume of Container</span><span class=\"den\">Area or Volume of Single Unit</span></span>.<br/>\n      &bull; <b>Scaling Factor (Cube edge doubled):</b> New Surface Area = <b>4 &times; Original</b>; New Volume = <b>8 &times; Original</b>.\n    </div>\n  </div>\n\n</div>\n",
+  "htmlExercises": {
+    "ex10-1": "\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Header Card -->\n  <div style=\"background: linear-gradient(135deg, rgba(255, 87, 34, 0.2), rgba(255, 138, 101, 0.1)); border: 1.5px solid #FF5722; border-radius: 12px; padding: 14px 18px; margin-bottom: 20px;\">\n    <div style=\"font-size: 19px; font-weight: 800; color: #FF5722; margin-bottom: 4px;\">\n      Exercise 10.1\n    </div>\n    <div style=\"color: #FFFFFF; font-size: 15px; font-weight: 500;\">\n      Perimeter, Area of 2D Figures, Compound Plots &amp; Flooring Tiles\n    </div>\n  </div>\n\n  <!-- QUESTION 1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 1:</div>\n    <div class=\"q-text\">\n      A square and a rectangular field with measurements as given in the figure have the same perimeter. Which field has a larger area?\n    </div>\n\n    <!-- Diagram Card Q1 -->\n    <div class=\"diagram-card\">\n      <svg width=\"100%\" height=\"auto\" viewBox=\"0 0 380 160\">\n        <!-- Square (a) -->\n        <rect x=\"30\" y=\"30\" width=\"90\" height=\"90\" fill=\"#FFF3E0\" stroke=\"#E65100\" stroke-width=\"2.2\" rx=\"4\"/>\n        <line x1=\"30\" y1=\"135\" x2=\"120\" y2=\"135\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n        <polygon points=\"30,135 36,132 36,138\" fill=\"#475569\"/>\n        <polygon points=\"120,135 114,132 114,138\" fill=\"#475569\"/>\n        <text x=\"75\" y=\"148\" font-size=\"13\" font-weight=\"700\" fill=\"#1E293B\" text-anchor=\"middle\">60 m</text>\n        <text x=\"75\" y=\"80\" font-size=\"15\" font-weight=\"800\" fill=\"#E65100\" text-anchor=\"middle\">Square</text>\n        <text x=\"75\" y=\"100\" font-size=\"13\" font-weight=\"600\" fill=\"#64748B\" text-anchor=\"middle\">(a)</text>\n\n        <!-- Rectangle (b) -->\n        <rect x=\"180\" y=\"45\" width=\"160\" height=\"60\" fill=\"#E8F5E9\" stroke=\"#2E7D32\" stroke-width=\"2.2\" rx=\"4\"/>\n        <line x1=\"180\" y1=\"120\" x2=\"340\" y2=\"120\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n        <polygon points=\"180,120 186,117 186,123\" fill=\"#475569\"/>\n        <polygon points=\"340,120 334,117 334,123\" fill=\"#475569\"/>\n        <text x=\"260\" y=\"135\" font-size=\"13\" font-weight=\"700\" fill=\"#1E293B\" text-anchor=\"middle\">80 m</text>\n        <text x=\"260\" y=\"78\" font-size=\"15\" font-weight=\"800\" fill=\"#2E7D32\" text-anchor=\"middle\">Rectangle</text>\n        <text x=\"260\" y=\"96\" font-size=\"13\" font-weight=\"600\" fill=\"#64748B\" text-anchor=\"middle\">(b)</text>\n      </svg>\n      <div class=\"diagram-caption\">Figure 10.1: (a) Square field of side 60 m &bull; (b) Rectangular field of length 80 m</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div><b style=\"color: #FF8A65;\">Given:</b></div>\n        <div>&bull; Side of square field, <i>a</i> = <b>60 m</b></div>\n        <div>&bull; Length of rectangular field, <i>l</i> = <b>80 m</b></div>\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Step 1: Finding breadth of rectangular field:</b></div>\n        <div>Perimeter of rectangle = Perimeter of square <span class=\"reason\">[Given: Same perimeter]</span></div>\n        <div>&rArr; 2(<i>l</i> + <i>b</i>) = 4 &times; <i>a</i></div>\n        <div>&rArr; 2(80 + <i>b</i>) = 4 &times; 60</div>\n        <div>&rArr; 2(80 + <i>b</i>) = 240</div>\n        <div>&rArr; 80 + <i>b</i> = <span class=\"frac\"><span class=\"num\">240</span><span class=\"den\">2</span></span> = 120</div>\n        <div>&rArr; <i>b</i> = 120 &minus; 80 = <b>40 m</b></div>\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Step 2: Calculating Areas:</b></div>\n        <div>&bull; Area of square field = (side)<sup>2</sup> = (60)<sup>2</sup> = <b>3600 m<sup>2</sup></b></div>\n        <div>&bull; Area of rectangular field = <i>l</i> &times; <i>b</i> = 80 &times; 40 = <b>3200 m<sup>2</sup></b></div>\n        <div style=\"margin-top: 6px;\">Since 3600 m<sup>2</sup> &gt; 3200 m<sup>2</sup>, the square field has a larger area by (3600 &minus; 3200) = 400 m<sup>2</sup>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">The square field has a larger area (3600 m<sup>2</sup>).</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 2 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 2:</div>\n    <div class=\"q-text\">\n      Mrs. Kaushik has a square plot with the measurement as shown in the figure. She wants to construct a house in the middle of the plot. A garden is developed around the house. Find the total cost of developing a garden around the house at the rate of Rs 55 per m<sup>2</sup>.\n    </div>\n\n    <!-- Diagram Card Q2 -->\n    <div class=\"diagram-card\">\n      <svg width=\"100%\" height=\"auto\" viewBox=\"0 0 320 280\">\n        <!-- Outer Square Plot -->\n        <rect x=\"35\" y=\"25\" width=\"220\" height=\"220\" fill=\"#DCEDC8\" stroke=\"#33691E\" stroke-width=\"2.5\" rx=\"4\"/>\n        <text x=\"75\" y=\"55\" font-size=\"13\" font-weight=\"700\" fill=\"#2E7D32\">Garden</text>\n        <text x=\"210\" y=\"230\" font-size=\"13\" font-weight=\"700\" fill=\"#2E7D32\">Garden</text>\n        <text x=\"65\" y=\"230\" font-size=\"13\" font-weight=\"700\" fill=\"#2E7D32\">Garden</text>\n\n        <!-- Inner House Rectangle -->\n        <rect x=\"75\" y=\"70\" width=\"140\" height=\"110\" fill=\"#FFFFFF\" stroke=\"#B71C1C\" stroke-width=\"2\" rx=\"3\"/>\n        <text x=\"145\" y=\"130\" font-size=\"16\" font-weight=\"800\" fill=\"#B71C1C\" text-anchor=\"middle\">House</text>\n\n        <!-- House dimensions -->\n        <line x1=\"75\" y1=\"62\" x2=\"215\" y2=\"62\" stroke=\"#B71C1C\" stroke-width=\"1.2\"/>\n        <polygon points=\"75,62 80,59 80,65\" fill=\"#B71C1C\"/>\n        <polygon points=\"215,62 210,59 210,65\" fill=\"#B71C1C\"/>\n        <text x=\"145\" y=\"56\" font-size=\"12\" font-weight=\"700\" fill=\"#B71C1C\" text-anchor=\"middle\">20 m</text>\n\n        <line x1=\"65\" y1=\"70\" x2=\"65\" y2=\"180\" stroke=\"#B71C1C\" stroke-width=\"1.2\"/>\n        <polygon points=\"65,70 62,75 68,75\" fill=\"#B71C1C\"/>\n        <polygon points=\"65,180 62,175 68,175\" fill=\"#B71C1C\"/>\n        <text x=\"55\" y=\"130\" font-size=\"12\" font-weight=\"700\" fill=\"#B71C1C\" text-anchor=\"middle\">15 m</text>\n\n        <!-- Outer Plot dimensions -->\n        <line x1=\"35\" y1=\"258\" x2=\"255\" y2=\"258\" stroke=\"#1E293B\" stroke-width=\"1.5\"/>\n        <polygon points=\"35,258 41,255 41,261\" fill=\"#1E293B\"/>\n        <polygon points=\"255,258 249,255 249,261\" fill=\"#1E293B\"/>\n        <text x=\"145\" y=\"272\" font-size=\"13\" font-weight=\"700\" fill=\"#1E293B\" text-anchor=\"middle\">25 m</text>\n\n        <line x1=\"18\" y1=\"25\" x2=\"18\" y2=\"245\" stroke=\"#1E293B\" stroke-width=\"1.5\"/>\n        <polygon points=\"18,25 15,31 21,31\" fill=\"#1E293B\"/>\n        <polygon points=\"18,245 15,239 21,239\" fill=\"#1E293B\"/>\n        <text x=\"12\" y=\"140\" font-size=\"13\" font-weight=\"700\" fill=\"#1E293B\" text-anchor=\"middle\" transform=\"rotate(-90 12 140)\">25 m</text>\n      </svg>\n      <div class=\"diagram-caption\">Figure 10.2: Square plot (25 m &times; 25 m) with house (20 m &times; 15 m) and surrounding garden</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div><b style=\"color: #FF8A65;\">Given:</b></div>\n        <div>&bull; Side of square plot = <b>25 m</b></div>\n        <div>&bull; Length of house = <b>20 m</b>, Breadth of house = <b>15 m</b></div>\n        <div>&bull; Cost of developing garden = <b>Rs 55 per m<sup>2</sup></b></div>\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Step 1: Areas:</b></div>\n        <div>&bull; Area of square plot = (side)<sup>2</sup> = (25)<sup>2</sup> = <b>625 m<sup>2</sup></b></div>\n        <div>&bull; Area of house = length &times; breadth = 20 &times; 15 = <b>300 m<sup>2</sup></b></div>\n        <div>&bull; Area of garden = Area of plot &minus; Area of house = 625 &minus; 300 = <b>325 m<sup>2</sup></b></div>\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Step 2: Total Cost:</b></div>\n        <div>Total cost = Area of garden &times; Rate per m<sup>2</sup></div>\n        <div>&rArr; Total cost = 325 &times; 55 = <b>Rs 17,875</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">Total cost of developing the garden = Rs 17,875</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 3 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 3:</div>\n    <div class=\"q-text\">\n      The shape of a garden is rectangular in the middle and semi-circular at the ends as shown in the diagram. Find the area and the perimeter of this garden [Length of rectangle is 20 &minus; (3.5 + 3.5) metres].\n    </div>\n\n    <!-- Diagram Card Q3 -->\n    <div class=\"diagram-card\">\n      <svg width=\"100%\" height=\"auto\" viewBox=\"0 0 380 180\">\n        <!-- Capsule Garden Shape -->\n        <!-- Semicircle left -->\n        <path d=\"M 100 40 A 45 45 0 0 0 100 130\" fill=\"#E8F5E9\" stroke=\"#2E7D32\" stroke-width=\"2.2\"/>\n        <!-- Central rectangle -->\n        <rect x=\"100\" y=\"40\" width=\"180\" height=\"90\" fill=\"#E8F5E9\" stroke=\"none\"/>\n        <line x1=\"100\" y1=\"40\" x2=\"280\" y2=\"40\" stroke=\"#2E7D32\" stroke-width=\"2.2\"/>\n        <line x1=\"100\" y1=\"130\" x2=\"280\" y2=\"130\" stroke=\"#2E7D32\" stroke-width=\"2.2\"/>\n        <!-- Dashed inner boundary lines -->\n        <line x1=\"100\" y1=\"40\" x2=\"100\" y2=\"130\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-dasharray=\"4,4\"/>\n        <line x1=\"280\" y1=\"40\" x2=\"280\" y2=\"130\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-dasharray=\"4,4\"/>\n        <!-- Semicircle right -->\n        <path d=\"M 280 40 A 45 45 0 0 1 280 130\" fill=\"#E8F5E9\" stroke=\"#2E7D32\" stroke-width=\"2.2\"/>\n\n        <!-- Diameter indicator -->\n        <line x1=\"335\" y1=\"40\" x2=\"335\" y2=\"130\" stroke=\"#1E293B\" stroke-width=\"1.5\"/>\n        <polygon points=\"335,40 332,46 338,46\" fill=\"#1E293B\"/>\n        <polygon points=\"335,130 332,124 338,124\" fill=\"#1E293B\"/>\n        <text x=\"355\" y=\"90\" font-size=\"13\" font-weight=\"700\" fill=\"#1E293B\" text-anchor=\"middle\">7 m</text>\n\n        <!-- Total length indicator -->\n        <line x1=\"55\" y1=\"155\" x2=\"325\" y2=\"155\" stroke=\"#1E293B\" stroke-width=\"1.5\"/>\n        <polygon points=\"55,155 61,152 61,158\" fill=\"#1E293B\"/>\n        <polygon points=\"325,155 319,152 319,158\" fill=\"#1E293B\"/>\n        <text x=\"190\" y=\"170\" font-size=\"14\" font-weight=\"800\" fill=\"#1E293B\" text-anchor=\"middle\">20 m</text>\n\n        <text x=\"190\" y=\"90\" font-size=\"13.5\" font-weight=\"700\" fill=\"#2E7D32\" text-anchor=\"middle\">Rectangle: 13 m &times; 7 m</text>\n      </svg>\n      <div class=\"diagram-caption\">Figure 10.3: Garden with central rectangle (13 m &times; 7 m) and 2 semicircular ends (diameter 7 m)</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div><b style=\"color: #FF8A65;\">Given:</b></div>\n        <div>&bull; Total length of garden = <b>20 m</b></div>\n        <div>&bull; Diameter of each semicircle = <b>7 m</b> &rArr; Radius, <i>r</i> = <span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">2</span></span> = <b>3.5 m</b></div>\n        <div>&bull; Length of rectangular middle portion, <i>l</i> = 20 &minus; (3.5 + 3.5) = 20 &minus; 7 = <b>13 m</b></div>\n        <div>&bull; Breadth of rectangular portion, <i>b</i> = <b>7 m</b></div>\n\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Part 1: Area of the Garden:</b></div>\n        <div>&bull; Area of rectangular middle = <i>l</i> &times; <i>b</i> = 13 &times; 7 = <b>91 m<sup>2</sup></b></div>\n        <div>&bull; Area of 2 semicircular ends = 2 &times; (<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &times; &pi; &times; <i>r</i><sup>2</sup>) = &pi;<i>r</i><sup>2</sup></div>\n        <div>&nbsp;&nbsp;= <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; 3.5 &times; 3.5 = 22 &times; 0.5 &times; 3.5 = <b>38.5 m<sup>2</sup></b></div>\n        <div>&rArr; Total Area = 91 + 38.5 = <b>129.5 m<sup>2</sup></b></div>\n\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Part 2: Perimeter of the Garden:</b></div>\n        <div>&bull; Circumference of 2 semicircular arcs = 2 &times; (&pi; &times; <i>r</i>) = 2&pi;<i>r</i></div>\n        <div>&nbsp;&nbsp;= 2 &times; <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; 3.5 = 2 &times; 11 = <b>22 m</b></div>\n        <div>&bull; Total Perimeter = Circumference of 2 ends + 2 &times; (Length of straight sides)</div>\n        <div>&nbsp;&nbsp;= 22 + 13 + 13 = <b>48 m</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">Area = 129.5 m<sup>2</sup> &bull; Perimeter = 48 m</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 4 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 4:</div>\n    <div class=\"q-text\">\n      A flooring tile has the shape of a parallelogram whose base is 24 cm and the corresponding height is 10 cm. How many such tiles are required to cover a floor of area 1080 m<sup>2</sup>? [If required you can split the tiles in whatever way you want to fill up the corners].\n    </div>\n\n    <!-- Diagram Card Q4 -->\n    <div class=\"diagram-card\">\n      <svg width=\"100%\" height=\"auto\" viewBox=\"0 0 320 140\">\n        <!-- Parallelogram Tile -->\n        <polygon points=\"50,105 230,105 270,35 90,35\" fill=\"#FFF8E1\" stroke=\"#F57F17\" stroke-width=\"2.2\" rx=\"3\"/>\n        <!-- Dotted height line -->\n        <line x1=\"90\" y1=\"35\" x2=\"90\" y2=\"105\" stroke=\"#B71C1C\" stroke-width=\"1.8\" stroke-dasharray=\"3,3\"/>\n        <polyline points=\"90,95 100,95 100,105\" fill=\"none\" stroke=\"#B71C1C\" stroke-width=\"1.2\"/>\n        <text x=\"105\" y=\"75\" font-size=\"12\" font-weight=\"700\" fill=\"#B71C1C\">h = 10 cm</text>\n\n        <!-- Base indicator -->\n        <line x1=\"50\" y1=\"120\" x2=\"230\" y2=\"120\" stroke=\"#1E293B\" stroke-width=\"1.5\"/>\n        <polygon points=\"50,120 56,117 56,123\" fill=\"#1E293B\"/>\n        <polygon points=\"230,120 224,117 224,123\" fill=\"#1E293B\"/>\n        <text x=\"140\" y=\"134\" font-size=\"13\" font-weight=\"700\" fill=\"#1E293B\" text-anchor=\"middle\">Base = 24 cm</text>\n        <text x=\"180\" y=\"65\" font-size=\"14\" font-weight=\"800\" fill=\"#E65100\" text-anchor=\"middle\">Flooring Tile</text>\n      </svg>\n      <div class=\"diagram-caption\">Figure 10.4: Parallelogram flooring tile (Base = 24 cm, Altitude = 10 cm)</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div><b style=\"color: #FF8A65;\">Given:</b></div>\n        <div>&bull; Base of parallelogram tile, <i>b</i> = <b>24 cm</b></div>\n        <div>&bull; Height of tile, <i>h</i> = <b>10 cm</b></div>\n        <div>&bull; Total area of floor = <b>1080 m<sup>2</sup></b></div>\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Step 1: Area of 1 tile:</b></div>\n        <div>Area of 1 tile = Base &times; Height = 24 &times; 10 = <b>240 cm<sup>2</sup></b></div>\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Step 2: Convert floor area to cm<sup>2</sup>:</b></div>\n        <div>1 m<sup>2</sup> = 100 cm &times; 100 cm = 10,000 cm<sup>2</sup></div>\n        <div>&rArr; Total floor area = 1080 &times; 10,000 = <b>1,08,00,000 cm<sup>2</sup></b></div>\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Step 3: Number of tiles required:</b></div>\n        <div>Number of tiles = <span class=\"frac\"><span class=\"num\">Area of Floor</span><span class=\"den\">Area of One Tile</span></span></div>\n        <div>&rArr; Number of tiles = <span class=\"frac\"><span class=\"num\">1,08,00,000</span><span class=\"den\">240</span></span> = <b>45,000</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">45,000 tiles are required to cover the floor.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 5 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 5:</div>\n    <div class=\"q-text\">\n      An ant is moving around a few food pieces of different shapes scattered on the floor. For which food-piece would the ant have to take a longer round? Remember, circumference of a circle can be obtained by using the expression <i>C</i> = 2&pi;<i>r</i>, where <i>r</i> is the radius of the circle.\n    </div>\n\n    <!-- Diagram Card Q5 -->\n    <div class=\"diagram-card\">\n      <svg width=\"100%\" height=\"auto\" viewBox=\"0 0 440 160\">\n        <!-- Shape (a): Semicircle -->\n        <g transform=\"translate(10, 20)\">\n          <path d=\"M 15 80 A 40 40 0 0 1 95 80 Z\" fill=\"#E1F5FE\" stroke=\"#0288D1\" stroke-width=\"2\"/>\n          <line x1=\"15\" y1=\"95\" x2=\"95\" y2=\"95\" stroke=\"#475569\" stroke-width=\"1.2\"/>\n          <polygon points=\"15,95 20,92 20,98\" fill=\"#475569\"/>\n          <polygon points=\"95,95 90,92 90,98\" fill=\"#475569\"/>\n          <text x=\"55\" y=\"108\" font-size=\"11\" font-weight=\"700\" fill=\"#1E293B\" text-anchor=\"middle\">2.8 cm</text>\n          <text x=\"55\" y=\"125\" font-size=\"13\" font-weight=\"800\" fill=\"#0288D1\" text-anchor=\"middle\">(a)</text>\n        </g>\n\n        <!-- Shape (b): Semicircle atop open rectangle -->\n        <g transform=\"translate(150, 20)\">\n          <line x1=\"20\" y1=\"80\" x2=\"20\" y2=\"35\" stroke=\"#0288D1\" stroke-width=\"2\"/>\n          <line x1=\"20\" y1=\"80\" x2=\"100\" y2=\"80\" stroke=\"#0288D1\" stroke-width=\"2\"/>\n          <line x1=\"100\" y1=\"80\" x2=\"100\" y2=\"35\" stroke=\"#0288D1\" stroke-width=\"2\"/>\n          <path d=\"M 20 35 A 40 40 0 0 1 100 35\" fill=\"none\" stroke=\"#0288D1\" stroke-width=\"2\"/>\n          <!-- Dimensions -->\n          <text x=\"5\" y=\"60\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1E293B\">1.5</text>\n          <text x=\"105\" y=\"60\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1E293B\">1.5</text>\n          <line x1=\"20\" y1=\"95\" x2=\"100\" y2=\"95\" stroke=\"#475569\" stroke-width=\"1.2\"/>\n          <polygon points=\"20,95 25,92 25,98\" fill=\"#475569\"/>\n          <polygon points=\"100,95 95,92 95,98\" fill=\"#475569\"/>\n          <text x=\"60\" y=\"108\" font-size=\"11\" font-weight=\"700\" fill=\"#1E293B\" text-anchor=\"middle\">2.8 cm</text>\n          <text x=\"60\" y=\"125\" font-size=\"13\" font-weight=\"800\" fill=\"#0288D1\" text-anchor=\"middle\">(b)</text>\n        </g>\n\n        <!-- Shape (c): Semicircle with sloping cone legs -->\n        <g transform=\"translate(300, 20)\">\n          <path d=\"M 20 35 A 40 40 0 0 1 100 35\" fill=\"none\" stroke=\"#0288D1\" stroke-width=\"2\"/>\n          <line x1=\"20\" y1=\"35\" x2=\"60\" y2=\"95\" stroke=\"#0288D1\" stroke-width=\"2\"/>\n          <line x1=\"100\" y1=\"35\" x2=\"60\" y2=\"95\" stroke=\"#0288D1\" stroke-width=\"2\"/>\n          <line x1=\"20\" y1=\"20\" x2=\"100\" y2=\"20\" stroke=\"#475569\" stroke-width=\"1.2\"/>\n          <polygon points=\"20,20 25,17 25,23\" fill=\"#475569\"/>\n          <polygon points=\"100,20 95,17 95,23\" fill=\"#475569\"/>\n          <text x=\"60\" y=\"15\" font-size=\"11\" font-weight=\"700\" fill=\"#1E293B\" text-anchor=\"middle\">2.8 cm</text>\n          <text x=\"25\" y=\"70\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1E293B\">2 cm</text>\n          <text x=\"90\" y=\"70\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1E293B\">2 cm</text>\n          <text x=\"60\" y=\"125\" font-size=\"13\" font-weight=\"800\" fill=\"#0288D1\" text-anchor=\"middle\">(c)</text>\n        </g>\n      </svg>\n      <div class=\"diagram-caption\">Figure 10.5: Three food pieces (a), (b), and (c) scattered on the floor</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div>For each shape, the semicircular arc has diameter <i>d</i> = 2.8 cm &rArr; <i>r</i> = <span class=\"frac\"><span class=\"num\">2.8</span><span class=\"den\">2</span></span> = <b>1.4 cm</b>.</div>\n        <div>Length of semicircular arc = &pi;<i>r</i> = <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; 1.4 = 22 &times; 0.2 = <b>4.4 cm</b>.</div>\n\n        <div style=\"margin-top: 12px;\"><b style=\"color: #FF8A65;\">(a) For food-piece (a):</b></div>\n        <div>Perimeter = Arc length + Diameter = 4.4 + 2.8 = <b>7.2 cm</b></div>\n\n        <div style=\"margin-top: 12px;\"><b style=\"color: #FF8A65;\">(b) For food-piece (b):</b></div>\n        <div>Perimeter = 1.5 cm + 2.8 cm + 1.5 cm + Arc length</div>\n        <div>&nbsp;&nbsp;= 1.5 + 2.8 + 1.5 + 4.4 = <b>10.2 cm</b></div>\n\n        <div style=\"margin-top: 12px;\"><b style=\"color: #FF8A65;\">(c) For food-piece (c):</b></div>\n        <div>Perimeter = 2 cm + 2 cm + Arc length</div>\n        <div>&nbsp;&nbsp;= 2 + 2 + 4.4 = <b>8.4 cm</b></div>\n\n        <div style=\"margin-top: 10px;\">Comparing the perimeters: <b>10.2 cm &gt; 8.4 cm &gt; 7.2 cm</b>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">For food-piece (b), the ant would have to take the longest round (10.2 cm).</span>\n      </div>\n    </div>\n  </div>\n\n</div>\n",
+    "ex10-2": "\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Header Card -->\n  <div style=\"background: linear-gradient(135deg, rgba(255, 87, 34, 0.2), rgba(255, 138, 101, 0.1)); border: 1.5px solid #FF5722; border-radius: 12px; padding: 14px 18px; margin-bottom: 20px;\">\n    <div style=\"font-size: 19px; font-weight: 800; color: #FF5722; margin-bottom: 4px;\">\n      Exercise 10.2\n    </div>\n    <div style=\"color: #FFFFFF; font-size: 15px; font-weight: 500;\">\n      Area of Trapezium, Rhombus, General Quadrilaterals &amp; Polygons\n    </div>\n  </div>\n\n  <!-- QUESTION 1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 1:</div>\n    <div class=\"q-text\">\n      The shape of the top surface of a table is a trapezium. Find its area if its parallel sides are 1 m and 1.2 m and perpendicular distance between them is 0.8 m.\n    </div>\n\n    <!-- Diagram Card Q1 -->\n    <div class=\"diagram-card\">\n      <svg width=\"100%\" height=\"auto\" viewBox=\"0 0 340 180\">\n        <!-- Table Top (Trapezium) -->\n        <polygon points=\"90,40 230,40 290,110 50,110\" fill=\"#FFE0B2\" stroke=\"#E65100\" stroke-width=\"2.5\" rx=\"3\"/>\n        <!-- Table Legs -->\n        <rect x=\"65\" y=\"110\" width=\"12\" height=\"50\" fill=\"#BCAAA4\" stroke=\"#5D4037\" stroke-width=\"1.5\"/>\n        <rect x=\"110\" y=\"110\" width=\"12\" height=\"40\" fill=\"#D7CCC8\" stroke=\"#5D4037\" stroke-width=\"1.5\"/>\n        <rect x=\"215\" y=\"110\" width=\"12\" height=\"40\" fill=\"#D7CCC8\" stroke=\"#5D4037\" stroke-width=\"1.5\"/>\n        <rect x=\"260\" y=\"110\" width=\"12\" height=\"50\" fill=\"#BCAAA4\" stroke=\"#5D4037\" stroke-width=\"1.5\"/>\n\n        <!-- Top parallel side 1 m -->\n        <line x1=\"90\" y1=\"28\" x2=\"230\" y2=\"28\" stroke=\"#1E293B\" stroke-width=\"1.3\"/>\n        <polygon points=\"90,28 95,25 95,31\" fill=\"#1E293B\"/>\n        <polygon points=\"230,28 225,25 225,31\" fill=\"#1E293B\"/>\n        <text x=\"160\" y=\"23\" font-size=\"12\" font-weight=\"700\" fill=\"#1E293B\" text-anchor=\"middle\">1 m</text>\n\n        <!-- Bottom parallel side 1.2 m -->\n        <line x1=\"50\" y1=\"125\" x2=\"290\" y2=\"125\" stroke=\"#1E293B\" stroke-width=\"1.3\"/>\n        <polygon points=\"50,125 55,122 55,128\" fill=\"#1E293B\"/>\n        <polygon points=\"290,125 285,122 285,128\" fill=\"#1E293B\"/>\n        <text x=\"170\" y=\"140\" font-size=\"12\" font-weight=\"700\" fill=\"#1E293B\" text-anchor=\"middle\">1.2 m</text>\n\n        <!-- Height 0.8 m -->\n        <line x1=\"90\" y1=\"40\" x2=\"90\" y2=\"110\" stroke=\"#B71C1C\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\"/>\n        <polyline points=\"90,102 98,102 98,110\" fill=\"none\" stroke=\"#B71C1C\" stroke-width=\"1\"/>\n        <text x=\"115\" y=\"78\" font-size=\"11.5\" font-weight=\"700\" fill=\"#B71C1C\">0.8 m</text>\n      </svg>\n      <div class=\"diagram-caption\">Figure 10.6: Trapezoidal table top with parallel sides 1 m and 1.2 m, height 0.8 m</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div><b style=\"color: #FF8A65;\">Given:</b></div>\n        <div>&bull; First parallel side, <i>a</i> = <b>1 m</b></div>\n        <div>&bull; Second parallel side, <i>b</i> = <b>1.2 m</b></div>\n        <div>&bull; Perpendicular height, <i>h</i> = <b>0.8 m</b></div>\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Formula:</b> Area of trapezium = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>(<i>a</i> + <i>b</i>) &times; <i>h</i></div>\n        <div>&rArr; Area = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &times; (1 + 1.2) &times; 0.8</div>\n        <div>&rArr; Area = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &times; 2.2 &times; 0.8</div>\n        <div>&rArr; Area = 1.1 &times; 0.8 = <b>0.88 m<sup>2</sup></b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">Area of top surface of the table = 0.88 m<sup>2</sup></span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 2 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 2:</div>\n    <div class=\"q-text\">\n      The area of a trapezium is 34 cm<sup>2</sup> and the length of one of the parallel sides is 10 cm and its height is 4 cm. Find the length of the other parallel side.\n    </div>\n\n    <!-- Diagram Card Q2 -->\n    <div class=\"diagram-card\">\n      <svg width=\"100%\" height=\"auto\" viewBox=\"0 0 300 160\">\n        <!-- Trapezium ABCD -->\n        <polygon points=\"50,40 170,40 230,120 50,120\" fill=\"#FFF3E0\" stroke=\"#E65100\" stroke-width=\"2.2\" rx=\"3\"/>\n        <polyline points=\"50,110 60,110 60,120\" fill=\"none\" stroke=\"#B71C1C\" stroke-width=\"1.2\"/>\n        <polyline points=\"50,50 60,50 60,40\" fill=\"none\" stroke=\"#B71C1C\" stroke-width=\"1.2\"/>\n        \n        <!-- Vertex Labels -->\n        <text x=\"35\" y=\"38\" font-size=\"13\" font-weight=\"700\" fill=\"#1E293B\">A</text>\n        <text x=\"175\" y=\"35\" font-size=\"13\" font-weight=\"700\" fill=\"#1E293B\">D</text>\n        <text x=\"240\" y=\"125\" font-size=\"13\" font-weight=\"700\" fill=\"#1E293B\">C</text>\n        <text x=\"35\" y=\"125\" font-size=\"13\" font-weight=\"700\" fill=\"#1E293B\">B</text>\n\n        <!-- Height & Dimension -->\n        <text x=\"20\" y=\"85\" font-size=\"12\" font-weight=\"700\" fill=\"#B71C1C\">4 cm</text>\n        <text x=\"110\" y=\"30\" font-size=\"12\" font-weight=\"700\" fill=\"#1E293B\">b = ?</text>\n        <text x=\"140\" y=\"138\" font-size=\"12\" font-weight=\"700\" fill=\"#1E293B\">10 cm</text>\n        <text x=\"120\" y=\"85\" font-size=\"13\" font-weight=\"800\" fill=\"#E65100\">Area = 34 cm²</text>\n      </svg>\n      <div class=\"diagram-caption\">Figure 10.7: Right-angled trapezium ABCD with Area = 34 cm²</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div><b style=\"color: #FF8A65;\">Given:</b></div>\n        <div>&bull; Area of trapezium = <b>34 cm<sup>2</sup></b></div>\n        <div>&bull; Length of one parallel side, <i>a</i> = <b>10 cm</b></div>\n        <div>&bull; Height, <i>h</i> = <b>4 cm</b></div>\n        <div>Let the length of the other parallel side be <b><i>b</i></b>.</div>\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Formula:</b> Area = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>(<i>a</i> + <i>b</i>) &times; <i>h</i></div>\n        <div>&rArr; 34 = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &times; (10 + <i>b</i>) &times; 4</div>\n        <div>&rArr; 34 = 2 &times; (10 + <i>b</i>)</div>\n        <div>&rArr; 10 + <i>b</i> = <span class=\"frac\"><span class=\"num\">34</span><span class=\"den\">2</span></span> = 17</div>\n        <div>&rArr; <i>b</i> = 17 &minus; 10 = <b>7 cm</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">Length of the other parallel side = 7 cm</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 3 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 3:</div>\n    <div class=\"q-text\">\n      Length of the fence of a trapezium shaped field ABCD is 120 m. If BC = 48 m, CD = 17 m and AD = 40 m, find the area of this field. Side AB is perpendicular to the parallel sides AD and BC.\n    </div>\n\n    <!-- Diagram Card Q3 -->\n    <div class=\"diagram-card\">\n      <svg width=\"100%\" height=\"auto\" viewBox=\"0 0 320 180\">\n        <!-- Trapezium ABCD -->\n        <polygon points=\"60,40 160,40 260,130 60,130\" fill=\"#E8F5E9\" stroke=\"#2E7D32\" stroke-width=\"2.2\" rx=\"3\"/>\n        <polyline points=\"60,120 70,120 70,130\" fill=\"none\" stroke=\"#2E7D32\" stroke-width=\"1.2\"/>\n        <polyline points=\"60,50 70,50 70,40\" fill=\"none\" stroke=\"#2E7D32\" stroke-width=\"1.2\"/>\n\n        <!-- Labels -->\n        <text x=\"45\" y=\"38\" font-size=\"13\" font-weight=\"700\" fill=\"#1E293B\">A</text>\n        <text x=\"165\" y=\"35\" font-size=\"13\" font-weight=\"700\" fill=\"#1E293B\">D</text>\n        <text x=\"270\" y=\"135\" font-size=\"13\" font-weight=\"700\" fill=\"#1E293B\">C</text>\n        <text x=\"45\" y=\"135\" font-size=\"13\" font-weight=\"700\" fill=\"#1E293B\">B</text>\n\n        <!-- Dimensions -->\n        <text x=\"110\" y=\"32\" font-size=\"12\" font-weight=\"700\" fill=\"#1E293B\">40 m</text>\n        <text x=\"225\" y=\"80\" font-size=\"12\" font-weight=\"700\" fill=\"#1E293B\">17 m</text>\n        <text x=\"150\" y=\"148\" font-size=\"12\" font-weight=\"700\" fill=\"#1E293B\">BC = 48 m</text>\n        <text x=\"15\" y=\"90\" font-size=\"12\" font-weight=\"700\" fill=\"#B71C1C\">AB = 15 m</text>\n      </svg>\n      <div class=\"diagram-caption\">Figure 10.8: Trapezium field ABCD with AB &perp; BC and AB &perp; AD</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div><b style=\"color: #FF8A65;\">Given:</b></div>\n        <div>&bull; Total length of fence (Perimeter) = <b>120 m</b></div>\n        <div>&bull; BC = <b>48 m</b>, CD = <b>17 m</b>, AD = <b>40 m</b></div>\n        <div>&bull; Side AB &perp; AD and AB &perp; BC &rArr; <b>AB is the perpendicular height <i>h</i></b>.</div>\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Step 1: Finding height AB:</b></div>\n        <div>Perimeter = AB + BC + CD + DA</div>\n        <div>&rArr; 120 = AB + 48 + 17 + 40</div>\n        <div>&rArr; 120 = AB + 105</div>\n        <div>&rArr; AB = 120 &minus; 105 = <b>15 m</b></div>\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Step 2: Area of the field:</b></div>\n        <div>Area = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &times; (Sum of parallel sides) &times; Height</div>\n        <div>&rArr; Area = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &times; (AD + BC) &times; AB</div>\n        <div>&rArr; Area = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &times; (40 + 48) &times; 15</div>\n        <div>&rArr; Area = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &times; 88 &times; 15</div>\n        <div>&rArr; Area = 44 &times; 15 = <b>660 m<sup>2</sup></b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">Area of the field ABCD = 660 m<sup>2</sup></span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 4 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 4:</div>\n    <div class=\"q-text\">\n      The diagonal of a quadrilateral shaped field is 24 m and the perpendiculars dropped on it from the remaining opposite vertices are 8 m and 13 m. Find the area of the field.\n    </div>\n\n    <!-- Diagram Card Q4 -->\n    <div class=\"diagram-card\">\n      <svg width=\"100%\" height=\"auto\" viewBox=\"0 0 340 190\">\n        <!-- Quadrilateral ABCD -->\n        <polygon points=\"40,95 140,25 300,95 180,165\" fill=\"#EDE7F6\" stroke=\"#512DA8\" stroke-width=\"2.2\" rx=\"3\"/>\n        <!-- Diagonal AC -->\n        <line x1=\"40\" y1=\"95\" x2=\"300\" y2=\"95\" stroke=\"#1E293B\" stroke-width=\"2\"/>\n        <!-- Offsets -->\n        <line x1=\"140\" y1=\"25\" x2=\"140\" y2=\"95\" stroke=\"#B71C1C\" stroke-width=\"1.8\" stroke-dasharray=\"3,3\"/>\n        <polyline points=\"140,85 148,85 148,95\" fill=\"none\" stroke=\"#B71C1C\" stroke-width=\"1.2\"/>\n\n        <line x1=\"180\" y1=\"165\" x2=\"180\" y2=\"95\" stroke=\"#B71C1C\" stroke-width=\"1.8\" stroke-dasharray=\"3,3\"/>\n        <polyline points=\"180,105 172,105 172,95\" fill=\"none\" stroke=\"#B71C1C\" stroke-width=\"1.2\"/>\n\n        <!-- Labels -->\n        <text x=\"25\" y=\"98\" font-size=\"13\" font-weight=\"700\" fill=\"#1E293B\">A</text>\n        <text x=\"140\" y=\"18\" font-size=\"13\" font-weight=\"700\" fill=\"#1E293B\">B</text>\n        <text x=\"310\" y=\"98\" font-size=\"13\" font-weight=\"700\" fill=\"#1E293B\">C</text>\n        <text x=\"180\" y=\"182\" font-size=\"13\" font-weight=\"700\" fill=\"#1E293B\">D</text>\n\n        <!-- Values -->\n        <text x=\"150\" y=\"60\" font-size=\"12\" font-weight=\"700\" fill=\"#B71C1C\">h₁ = 13 m</text>\n        <text x=\"190\" y=\"135\" font-size=\"12\" font-weight=\"700\" fill=\"#B71C1C\">h₂ = 8 m</text>\n        <text x=\"220\" y=\"90\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1E293B\">d = 24 m</text>\n      </svg>\n      <div class=\"diagram-caption\">Figure 10.9: Quadrilateral field with diagonal d = 24 m and offsets h₁ = 13 m, h₂ = 8 m</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div><b style=\"color: #FF8A65;\">Given:</b></div>\n        <div>&bull; Length of diagonal, <i>d</i> = <b>24 m</b></div>\n        <div>&bull; First perpendicular offset, <i>h</i><sub>1</sub> = <b>13 m</b></div>\n        <div>&bull; Second perpendicular offset, <i>h</i><sub>2</sub> = <b>8 m</b></div>\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Formula:</b> Area of quadrilateral = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &times; <i>d</i> &times; (<i>h</i><sub>1</sub> + <i>h</i><sub>2</sub>)</div>\n        <div>&rArr; Area = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &times; 24 &times; (13 + 8)</div>\n        <div>&rArr; Area = 12 &times; 21 = <b>252 m<sup>2</sup></b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">Area of the field = 252 m<sup>2</sup></span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 5 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 5:</div>\n    <div class=\"q-text\">\n      The diagonals of a rhombus are 7.5 cm and 12 cm. Find its area.\n    </div>\n\n    <!-- Diagram Card Q5 -->\n    <div class=\"diagram-card\">\n      <svg width=\"100%\" height=\"auto\" viewBox=\"0 0 280 180\">\n        <!-- Rhombus ABCD -->\n        <polygon points=\"140,20 250,90 140,160 30,90\" fill=\"#E0F7FA\" stroke=\"#00838F\" stroke-width=\"2.2\" rx=\"3\"/>\n        <!-- Diagonals -->\n        <line x1=\"30\" y1=\"90\" x2=\"250\" y2=\"90\" stroke=\"#B71C1C\" stroke-width=\"1.8\" stroke-dasharray=\"3,3\"/>\n        <line x1=\"140\" y1=\"20\" x2=\"140\" y2=\"160\" stroke=\"#00838F\" stroke-width=\"1.8\" stroke-dasharray=\"3,3\"/>\n        <polyline points=\"140,82 148,82 148,90\" fill=\"none\" stroke=\"#1E293B\" stroke-width=\"1\"/>\n\n        <!-- Text Labels -->\n        <text x=\"140\" y=\"105\" font-size=\"12\" font-weight=\"700\" fill=\"#B71C1C\" text-anchor=\"middle\">d₂ = 12 cm</text>\n        <text x=\"180\" y=\"55\" font-size=\"12\" font-weight=\"700\" fill=\"#00838F\">d₁ = 7.5 cm</text>\n        <text x=\"140\" y=\"12\" font-size=\"13\" font-weight=\"700\" fill=\"#1E293B\" text-anchor=\"middle\">A</text>\n        <text x=\"260\" y=\"95\" font-size=\"13\" font-weight=\"700\" fill=\"#1E293B\">B</text>\n        <text x=\"140\" y=\"175\" font-size=\"13\" font-weight=\"700\" fill=\"#1E293B\" text-anchor=\"middle\">C</text>\n        <text x=\"18\" y=\"95\" font-size=\"13\" font-weight=\"700\" fill=\"#1E293B\">D</text>\n      </svg>\n      <div class=\"diagram-caption\">Figure 10.10: Rhombus ABCD with diagonals d₁ = 7.5 cm and d₂ = 12 cm</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div><b style=\"color: #FF8A65;\">Given:</b></div>\n        <div>&bull; First diagonal, <i>d</i><sub>1</sub> = <b>7.5 cm</b></div>\n        <div>&bull; Second diagonal, <i>d</i><sub>2</sub> = <b>12 cm</b></div>\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Formula:</b> Area of rhombus = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &times; <i>d</i><sub>1</sub> &times; <i>d</i><sub>2</sub></div>\n        <div>&rArr; Area = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &times; 7.5 &times; 12</div>\n        <div>&rArr; Area = 7.5 &times; 6 = <b>45 cm<sup>2</sup></b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">Area of the rhombus = 45 cm<sup>2</sup></span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 6 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 6:</div>\n    <div class=\"q-text\">\n      Find the area of a rhombus whose side is 5 cm and whose altitude is 4.8 cm. If one of the diagonals is 8 cm long, find the length of the other diagonal.\n    </div>\n\n    <!-- Diagram Card Q6 -->\n    <div class=\"diagram-card\">\n      <svg width=\"100%\" height=\"auto\" viewBox=\"0 0 300 160\">\n        <!-- Rhombus as Parallelogram -->\n        <polygon points=\"60,120 180,120 230,40 110,40\" fill=\"#FFF8E1\" stroke=\"#F57F17\" stroke-width=\"2.2\" rx=\"3\"/>\n        <!-- Altitude -->\n        <line x1=\"110\" y1=\"40\" x2=\"110\" y2=\"120\" stroke=\"#B71C1C\" stroke-width=\"1.8\" stroke-dasharray=\"3,3\"/>\n        <polyline points=\"110,110 120,110 120,120\" fill=\"none\" stroke=\"#B71C1C\" stroke-width=\"1.2\"/>\n        <!-- Dimensions -->\n        <text x=\"125\" y=\"85\" font-size=\"12\" font-weight=\"700\" fill=\"#B71C1C\">h = 4.8 cm</text>\n        <text x=\"120\" y=\"138\" font-size=\"12\" font-weight=\"700\" fill=\"#1E293B\">Side = 5 cm</text>\n        <text x=\"180\" y=\"75\" font-size=\"13\" font-weight=\"800\" fill=\"#E65100\">d₁ = 8 cm</text>\n      </svg>\n      <div class=\"diagram-caption\">Figure 10.11: Rhombus with Base = 5 cm, Altitude = 4.8 cm, and Diagonal = 8 cm</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div><b style=\"color: #FF8A65;\">Given:</b></div>\n        <div>&bull; Side (base) of rhombus, <i>b</i> = <b>5 cm</b></div>\n        <div>&bull; Altitude, <i>h</i> = <b>4.8 cm</b></div>\n        <div>&bull; First diagonal, <i>d</i><sub>1</sub> = <b>8 cm</b></div>\n\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Step 1: Finding Area of Rhombus:</b></div>\n        <div>Since every rhombus is also a parallelogram:</div>\n        <div>Area of rhombus = Base &times; Altitude</div>\n        <div>&rArr; Area = 5 &times; 4.8 = <b>24 cm<sup>2</sup></b></div>\n\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Step 2: Finding Length of Other Diagonal (<i>d</i><sub>2</sub>):</b></div>\n        <div>We also know that: Area = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &times; <i>d</i><sub>1</sub> &times; <i>d</i><sub>2</sub></div>\n        <div>&rArr; 24 = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &times; 8 &times; <i>d</i><sub>2</sub></div>\n        <div>&rArr; 24 = 4 &times; <i>d</i><sub>2</sub></div>\n        <div>&rArr; <i>d</i><sub>2</sub> = <span class=\"frac\"><span class=\"num\">24</span><span class=\"den\">4</span></span> = <b>6 cm</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">Area = 24 cm<sup>2</sup> &bull; Length of other diagonal = 6 cm</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 7 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 7:</div>\n    <div class=\"q-text\">\n      The floor of a building consists of 3000 tiles which are rhombus shaped and each of its diagonals are 45 cm and 30 cm in length. Find the total cost of polishing the floor, if the cost per m<sup>2</sup> is Rs 4.\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div><b style=\"color: #FF8A65;\">Given:</b></div>\n        <div>&bull; Number of rhombus-shaped tiles = <b>3000</b></div>\n        <div>&bull; Diagonals of each tile: <i>d</i><sub>1</sub> = <b>45 cm</b>, <i>d</i><sub>2</sub> = <b>30 cm</b></div>\n        <div>&bull; Rate of polishing = <b>Rs 4 per m<sup>2</sup></b></div>\n\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Step 1: Area of 1 tile:</b></div>\n        <div>Area of 1 tile = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &times; <i>d</i><sub>1</sub> &times; <i>d</i><sub>2</sub> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &times; 45 &times; 30 = 45 &times; 15 = <b>675 cm<sup>2</sup></b></div>\n\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Step 2: Total Area of 3000 tiles:</b></div>\n        <div>Total Area = 3000 &times; 675 = <b>20,25,000 cm<sup>2</sup></b></div>\n\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Step 3: Convert Area to m<sup>2</sup>:</b></div>\n        <div>1 m<sup>2</sup> = 10,000 cm<sup>2</sup></div>\n        <div>&rArr; Total Area in m<sup>2</sup> = <span class=\"frac\"><span class=\"num\">20,25,000</span><span class=\"den\">10,000</span></span> = <b>202.5 m<sup>2</sup></b></div>\n\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Step 4: Total Cost of Polishing:</b></div>\n        <div>Total Cost = Total Area &times; Rate per m<sup>2</sup> = 202.5 &times; 4 = <b>Rs 810</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">Total cost of polishing the floor = Rs 810</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 8 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 8:</div>\n    <div class=\"q-text\">\n      Mohan wants to buy a trapezium shaped field. Its side along the river is parallel to and twice the side along the road. If the area of this field is 10,500 m<sup>2</sup> and the perpendicular distance between the two parallel sides is 100 m, find the length of the side along the river.\n    </div>\n\n    <!-- Diagram Card Q8 -->\n    <div class=\"diagram-card\">\n      <svg width=\"100%\" height=\"auto\" viewBox=\"0 0 360 210\">\n        <!-- Road on Top -->\n        <rect x=\"20\" y=\"15\" width=\"320\" height=\"20\" fill=\"#94A3B8\" rx=\"2\"/>\n        <line x1=\"20\" y1=\"25\" x2=\"340\" y2=\"25\" stroke=\"#FFFFFF\" stroke-width=\"1.5\" stroke-dasharray=\"8,6\"/>\n        <text x=\"180\" y=\"12\" font-size=\"12\" font-weight=\"800\" fill=\"#334155\" text-anchor=\"middle\">ROAD</text>\n\n        <!-- Trapezium Field -->\n        <polygon points=\"120,35 200,35 270,155 50,155\" fill=\"#DCEDC8\" stroke=\"#33691E\" stroke-width=\"2.2\"/>\n        <text x=\"160\" y=\"30\" font-size=\"12\" font-weight=\"700\" fill=\"#B71C1C\" text-anchor=\"middle\">Side along road = x</text>\n\n        <!-- Perpendicular distance 100 m -->\n        <line x1=\"120\" y1=\"35\" x2=\"120\" y2=\"155\" stroke=\"#B71C1C\" stroke-width=\"1.8\" stroke-dasharray=\"3,3\"/>\n        <polyline points=\"120,145 128,145 128,155\" fill=\"none\" stroke=\"#B71C1C\" stroke-width=\"1.2\"/>\n        <text x=\"145\" y=\"95\" font-size=\"12.5\" font-weight=\"700\" fill=\"#B71C1C\">100 m</text>\n        <text x=\"160\" y=\"115\" font-size=\"13\" font-weight=\"800\" fill=\"#2E7D32\">Area = 10,500 m²</text>\n\n        <!-- River at bottom -->\n        <path d=\"M 20 165 Q 60 160 100 165 T 180 165 T 260 165 T 340 165 L 340 195 L 20 195 Z\" fill=\"#BBDEFB\"/>\n        <path d=\"M 20 175 Q 60 170 100 175 T 180 175 T 260 175 T 340 175\" fill=\"none\" stroke=\"#1976D2\" stroke-width=\"1.5\"/>\n        <text x=\"160\" y=\"190\" font-size=\"12\" font-weight=\"800\" fill=\"#0D47A1\" text-anchor=\"middle\">RIVER</text>\n        <text x=\"160\" y=\"150\" font-size=\"12\" font-weight=\"700\" fill=\"#0D47A1\" text-anchor=\"middle\">Side along river = 2x</text>\n      </svg>\n      <div class=\"diagram-caption\">Figure 10.12: Trapezium field between road and river with height = 100 m</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div><b style=\"color: #FF8A65;\">Given:</b></div>\n        <div>&bull; Area of trapezium field = <b>10,500 m<sup>2</sup></b></div>\n        <div>&bull; Perpendicular height, <i>h</i> = <b>100 m</b></div>\n        <div>Let the parallel side along the road = <b><i>x</i> metres</b>.</div>\n        <div>Then, the side along the river = <b>2<i>x</i> metres</b> <span class=\"reason\">[Given: Twice the side along the road]</span>.</div>\n\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Step 1: Formulating Equation:</b></div>\n        <div>Area = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>(<i>a</i> + <i>b</i>) &times; <i>h</i></div>\n        <div>&rArr; 10,500 = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &times; (<i>x</i> + 2<i>x</i>) &times; 100</div>\n        <div>&rArr; 10,500 = 3<i>x</i> &times; 50</div>\n        <div>&rArr; 10,500 = 150<i>x</i></div>\n        <div>&rArr; <i>x</i> = <span class=\"frac\"><span class=\"num\">10,500</span><span class=\"den\">150</span></span> = <b>70 m</b></div>\n\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Step 2: Finding side along the river:</b></div>\n        <div>Side along river = 2<i>x</i> = 2 &times; 70 = <b>140 m</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">Length of the side along the river = 140 m</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 9 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 9:</div>\n    <div class=\"q-text\">\n      Top surface of a raised platform is in the shape of a regular octagon as shown in the figure. Find the area of the octagonal surface.\n    </div>\n\n    <!-- Diagram Card Q9 -->\n    <div class=\"diagram-card\">\n      <svg width=\"100%\" height=\"auto\" viewBox=\"0 0 300 240\">\n        <!-- Octagon partitioned into 2 trapeziums & 1 rectangle -->\n        <!-- Coordinates for regular octagon -->\n        <polygon points=\"90,30 210,30 270,90 270,150 210,210 90,210 30,150 30,90\" fill=\"#FFF3E0\" stroke=\"#E65100\" stroke-width=\"2.5\" rx=\"3\"/>\n        \n        <!-- Partition Dotted Lines -->\n        <line x1=\"30\" y1=\"90\" x2=\"270\" y2=\"90\" stroke=\"#B71C1C\" stroke-width=\"1.8\" stroke-dasharray=\"4,4\"/>\n        <line x1=\"30\" y1=\"150\" x2=\"270\" y2=\"150\" stroke=\"#B71C1C\" stroke-width=\"1.8\" stroke-dasharray=\"4,4\"/>\n\n        <!-- Height of top trapezium -->\n        <line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"90\" stroke=\"#B71C1C\" stroke-width=\"1.5\"/>\n        <polygon points=\"150,30 147,36 153,36\" fill=\"#B71C1C\"/>\n        <polygon points=\"150,90 147,84 153,84\" fill=\"#B71C1C\"/>\n        <text x=\"165\" y=\"65\" font-size=\"12\" font-weight=\"700\" fill=\"#B71C1C\">4 m</text>\n\n        <!-- Octagon side 5 m -->\n        <text x=\"150\" y=\"22\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1E293B\" text-anchor=\"middle\">5 m</text>\n        <text x=\"280\" y=\"125\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1E293B\">5 m</text>\n        <text x=\"150\" y=\"82\" font-size=\"12.5\" font-weight=\"700\" fill=\"#B71C1C\" text-anchor=\"middle\">11 m</text>\n        <text x=\"150\" y=\"125\" font-size=\"13\" font-weight=\"800\" fill=\"#E65100\" text-anchor=\"middle\">Rectangle: 11 m &times; 5 m</text>\n        <text x=\"150\" y=\"185\" font-size=\"12.5\" font-weight=\"700\" fill=\"#E65100\" text-anchor=\"middle\">Trapezium (II)</text>\n        <text x=\"80\" y=\"65\" font-size=\"12.5\" font-weight=\"700\" fill=\"#E65100\">Trapezium (I)</text>\n      </svg>\n      <div class=\"diagram-caption\">Figure 10.13: Regular octagon divided into two identical trapeziums and one central rectangle</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div><b style=\"color: #FF8A65;\">Given:</b></div>\n        <div>&bull; Regular octagon side = <b>5 m</b> (all 8 sides are 5 m)</div>\n        <div>&bull; Parallel chords dividing the octagon = <b>11 m</b></div>\n        <div>&bull; Perpendicular height of each trapezium = <b>4 m</b></div>\n\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Division of Octagon:</b></div>\n        <div>We divide the octagon into three non-overlapping regions:</div>\n        <div>1. Two congruent trapeziums (top and bottom), each having parallel sides <b>11 m</b> and <b>5 m</b>, and height <b>4 m</b>.</div>\n        <div>2. One central rectangle having length <b>11 m</b> and breadth <b>5 m</b>.</div>\n\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Step 1: Area of two trapeziums:</b></div>\n        <div>Area of 2 trapeziums = 2 &times; [<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>(<i>a</i> + <i>b</i>) &times; <i>h</i>]</div>\n        <div>&rArr; Area = 2 &times; [<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &times; (11 + 5) &times; 4] = 16 &times; 4 = <b>64 m<sup>2</sup></b></div>\n\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Step 2: Area of central rectangle:</b></div>\n        <div>Area of rectangle = Length &times; Breadth = 11 &times; 5 = <b>55 m<sup>2</sup></b></div>\n\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Step 3: Total Area of the Octagonal Surface:</b></div>\n        <div>Total Area = Area of 2 trapeziums + Area of rectangle = 64 + 55 = <b>119 m<sup>2</sup></b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">Total area of the octagonal surface = 119 m<sup>2</sup></span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 10 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 10:</div>\n    <div class=\"q-text\">\n      There is a pentagonal shaped park as shown in the figure. For finding its area Jyoti and Kavita divided it in two different ways. Find the area of this park using both ways. Can you suggest some other way of finding its area?\n    </div>\n\n    <!-- Diagram Card Q10 -->\n    <div class=\"diagram-card\">\n      <svg width=\"100%\" height=\"auto\" viewBox=\"0 0 460 170\">\n        <!-- 1. Original Pentagon -->\n        <g transform=\"translate(10, 10)\">\n          <polygon points=\"50,15 15,55 15,130 85,130 85,55\" fill=\"#E8F5E9\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\n          <text x=\"50\" y=\"145\" font-size=\"11\" font-weight=\"700\" fill=\"#1E293B\" text-anchor=\"middle\">15 m</text>\n          <text x=\"5\" y=\"95\" font-size=\"11\" font-weight=\"700\" fill=\"#1E293B\">15 m</text>\n          <!-- Total height 30 m -->\n          <line x1=\"95\" y1=\"15\" x2=\"95\" y2=\"130\" stroke=\"#B71C1C\" stroke-width=\"1.2\"/>\n          <polygon points=\"95,15 92,21 98,21\" fill=\"#B71C1C\"/>\n          <polygon points=\"95,130 92,124 98,124\" fill=\"#B71C1C\"/>\n          <text x=\"110\" y=\"75\" font-size=\"11\" font-weight=\"700\" fill=\"#B71C1C\">30 m</text>\n          <text x=\"50\" y=\"160\" font-size=\"12\" font-weight=\"800\" fill=\"#2E7D32\" text-anchor=\"middle\">Park</text>\n        </g>\n\n        <!-- 2. Jyoti's Diagram (Vertical Split) -->\n        <g transform=\"translate(160, 10)\">\n          <polygon points=\"50,15 15,55 15,130 85,130 85,55\" fill=\"#FFF3E0\" stroke=\"#E65100\" stroke-width=\"2\"/>\n          <line x1=\"50\" y1=\"15\" x2=\"50\" y2=\"130\" stroke=\"#B71C1C\" stroke-width=\"1.8\" stroke-dasharray=\"3,3\"/>\n          <text x=\"50\" y=\"10\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1E293B\" text-anchor=\"middle\">A</text>\n          <text x=\"8\" y=\"55\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1E293B\">B</text>\n          <text x=\"8\" y=\"135\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1E293B\">C</text>\n          <text x=\"50\" y=\"142\" font-size=\"10.5\" font-weight=\"700\" fill=\"#B71C1C\" text-anchor=\"middle\">P</text>\n          <text x=\"90\" y=\"135\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1E293B\">D</text>\n          <text x=\"90\" y=\"55\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1E293B\">E</text>\n          <text x=\"50\" y=\"160\" font-size=\"12\" font-weight=\"800\" fill=\"#E65100\" text-anchor=\"middle\">Jyoti's Diagram</text>\n        </g>\n\n        <!-- 3. Kavita's Diagram (Horizontal Split) -->\n        <g transform=\"translate(310, 10)\">\n          <polygon points=\"50,15 15,55 15,130 85,130 85,55\" fill=\"#E1F5FE\" stroke=\"#0288D1\" stroke-width=\"2\"/>\n          <line x1=\"15\" y1=\"55\" x2=\"85\" y2=\"55\" stroke=\"#B71C1C\" stroke-width=\"1.8\" stroke-dasharray=\"3,3\"/>\n          <!-- Perpendicular AM in triangle -->\n          <line x1=\"50\" y1=\"15\" x2=\"50\" y2=\"55\" stroke=\"#B71C1C\" stroke-width=\"1.2\"/>\n          <text x=\"50\" y=\"10\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1E293B\" text-anchor=\"middle\">A</text>\n          <text x=\"8\" y=\"55\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1E293B\">B</text>\n          <text x=\"90\" y=\"55\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1E293B\">E</text>\n          <text x=\"8\" y=\"135\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1E293B\">C</text>\n          <text x=\"90\" y=\"135\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1E293B\">D</text>\n          <text x=\"50\" y=\"67\" font-size=\"10\" font-weight=\"700\" fill=\"#B71C1C\" text-anchor=\"middle\">M</text>\n          <text x=\"50\" y=\"100\" font-size=\"11\" font-weight=\"700\" fill=\"#0288D1\" text-anchor=\"middle\">Square</text>\n          <text x=\"50\" y=\"38\" font-size=\"10\" font-weight=\"700\" fill=\"#0288D1\" text-anchor=\"middle\">&Delta;</text>\n          <text x=\"50\" y=\"160\" font-size=\"12\" font-weight=\"800\" fill=\"#0288D1\" text-anchor=\"middle\">Kavita's Diagram</text>\n        </g>\n      </svg>\n      <div class=\"diagram-caption\">Figure 10.14: Pentagonal park &bull; Jyoti's vertical division &bull; Kavita's horizontal division</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div><b style=\"color: #FF8A65;\">Given Dimensions:</b></div>\n        <div>&bull; Base of park, CD = <b>15 m</b></div>\n        <div>&bull; Height of side walls, BC = ED = <b>15 m</b></div>\n        <div>&bull; Total height from base to top apex A = <b>30 m</b></div>\n\n        <div style=\"margin-top: 12px;\"><b style=\"color: #FF8A65;\">Method 1: By Jyoti's Diagram (Two Congruent Trapeziums):</b></div>\n        <div>Jyoti draws a vertical line AP splitting the pentagon into two equal trapeziums ABCP and AEDP.</div>\n        <div>For each trapezium:</div>\n        <div>&bull; Parallel sides: <i>a</i> = AP = 30 m, &nbsp;<i>b</i> = BC = 15 m</div>\n        <div>&bull; Height: <i>h</i> = CP = DP = <span class=\"frac\"><span class=\"num\">15</span><span class=\"den\">2</span></span> = <b>7.5 m</b></div>\n        <div>Area of pentagon = 2 &times; Area of trapezium ABCP</div>\n        <div>&rArr; Area = 2 &times; [<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &times; (30 + 15) &times; 7.5]</div>\n        <div>&rArr; Area = 45 &times; 7.5 = <b>337.5 m<sup>2</sup></b></div>\n\n        <div style=\"margin-top: 12px;\"><b style=\"color: #FF8A65;\">Method 2: By Kavita's Diagram (Triangle + Square):</b></div>\n        <div>Kavita draws a horizontal line BE splitting the park into a triangle &Delta;ABE atop a square BCDE.</div>\n        <div>1. <b>Square BCDE:</b> Side = 15 m &rArr; Area = 15 &times; 15 = <b>225 m<sup>2</sup></b></div>\n        <div>2. <b>Triangle &Delta;ABE:</b> Base BE = 15 m; Height AM = Total height &minus; Wall height = 30 &minus; 15 = <b>15 m</b></div>\n        <div>&nbsp;&nbsp;&rArr; Area of &Delta;ABE = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &times; Base &times; Height = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &times; 15 &times; 15 = <span class=\"frac\"><span class=\"num\">225</span><span class=\"den\">2</span></span> = <b>112.5 m<sup>2</sup></b></div>\n        <div>&rArr; Total Area = Area of square + Area of triangle = 225 + 112.5 = <b>337.5 m<sup>2</sup></b></div>\n\n        <div style=\"margin-top: 12px;\"><b style=\"color: #FF8A65;\">Another Way (Subtraction Method):</b></div>\n        <div>Enclose the entire pentagon inside a rectangle of dimensions <b>15 m &times; 30 m</b>.</div>\n        <div>&bull; Area of bounding rectangle = 15 &times; 30 = <b>450 m<sup>2</sup></b>.</div>\n        <div>&bull; The two unshaded corners at the top are right-angled triangles, each with base 7.5 m and height 15 m:</div>\n        <div>&nbsp;&nbsp;Area of 2 corner triangles = 2 &times; (<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &times; 7.5 &times; 15) = 7.5 &times; 15 = <b>112.5 m<sup>2</sup></b>.</div>\n        <div>&rArr; Area of pentagonal park = 450 &minus; 112.5 = <b>337.5 m<sup>2</sup></b>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">Area of the park = 337.5 m<sup>2</sup> (Verified identically by all 3 methods).</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 11 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 11:</div>\n    <div class=\"q-text\">\n      Diagram of the adjacent picture frame has outer dimensions = 24 cm &times; 28 cm and inner dimensions = 16 cm &times; 20 cm. Find the area of each section of the frame, if the width of each section is same.\n    </div>\n\n    <!-- Diagram Card Q11 -->\n    <div class=\"diagram-card\">\n      <svg width=\"100%\" height=\"auto\" viewBox=\"0 0 320 300\">\n        <!-- Outer Frame -->\n        <rect x=\"40\" y=\"20\" width=\"240\" height=\"260\" fill=\"#EFEBE9\" stroke=\"#4E342E\" stroke-width=\"3\" rx=\"4\"/>\n        <!-- Inner Cutout -->\n        <rect x=\"80\" y=\"60\" width=\"160\" height=\"180\" fill=\"#FFFFFF\" stroke=\"#4E342E\" stroke-width=\"2\" rx=\"2\"/>\n\n        <!-- Diagonal Mitre Lines defining sections I, II, III, IV -->\n        <line x1=\"40\" y1=\"20\" x2=\"80\" y2=\"60\" stroke=\"#4E342E\" stroke-width=\"2\"/>\n        <line x1=\"280\" y1=\"20\" x2=\"240\" y2=\"60\" stroke=\"#4E342E\" stroke-width=\"2\"/>\n        <line x1=\"40\" y1=\"280\" x2=\"80\" y2=\"240\" stroke=\"#4E342E\" stroke-width=\"2\"/>\n        <line x1=\"280\" y1=\"280\" x2=\"240\" y2=\"240\" stroke=\"#4E342E\" stroke-width=\"2\"/>\n\n        <!-- Section Labels -->\n        <text x=\"260\" y=\"155\" font-size=\"15\" font-weight=\"800\" fill=\"#B71C1C\">I</text>\n        <text x=\"55\" y=\"155\" font-size=\"15\" font-weight=\"800\" fill=\"#B71C1C\">II</text>\n        <text x=\"160\" y=\"45\" font-size=\"15\" font-weight=\"800\" fill=\"#B71C1C\" text-anchor=\"middle\">III</text>\n        <text x=\"160\" y=\"265\" font-size=\"15\" font-weight=\"800\" fill=\"#B71C1C\" text-anchor=\"middle\">IV</text>\n        <text x=\"160\" y=\"155\" font-size=\"13\" font-weight=\"700\" fill=\"#94A3B8\" text-anchor=\"middle\">Photo Opening</text>\n\n        <!-- Dimensions -->\n        <text x=\"160\" y=\"15\" font-size=\"12\" font-weight=\"700\" fill=\"#1E293B\" text-anchor=\"middle\">24 cm</text>\n        <text x=\"160\" y=\"75\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1E293B\" text-anchor=\"middle\">16 cm</text>\n        <text x=\"295\" y=\"155\" font-size=\"12\" font-weight=\"700\" fill=\"#1E293B\">28 cm</text>\n        <text x=\"225\" y=\"155\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1E293B\">20 cm</text>\n      </svg>\n      <div class=\"diagram-caption\">Figure 10.15: Picture frame partitioned into 4 trapezoidal sections I, II, III, and IV</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div><b style=\"color: #FF8A65;\">Given:</b></div>\n        <div>&bull; Outer dimensions = <b>24 cm &times; 28 cm</b></div>\n        <div>&bull; Inner dimensions = <b>16 cm &times; 20 cm</b></div>\n\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Step 1: Finding the width of each section (Height <i>h</i>):</b></div>\n        <div>Since the width of each section is identical:</div>\n        <div>&bull; Horizontal width difference = <span class=\"frac\"><span class=\"num\">24 &minus; 16</span><span class=\"den\">2</span></span> = <span class=\"frac\"><span class=\"num\">8</span><span class=\"den\">2</span></span> = <b>4 cm</b></div>\n        <div>&bull; Vertical width difference = <span class=\"frac\"><span class=\"num\">28 &minus; 20</span><span class=\"den\">2</span></span> = <span class=\"frac\"><span class=\"num\">8</span><span class=\"den\">2</span></span> = <b>4 cm</b></div>\n        <div>Thus, the height of each trapezoidal section is <b><i>h</i> = 4 cm</b>.</div>\n\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Step 2: Area of Sections I and II (Left and Right trapeziums):</b></div>\n        <div>Parallel sides are <b>28 cm</b> and <b>20 cm</b>; height = <b>4 cm</b>.</div>\n        <div>Area = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &times; (28 + 20) &times; 4 = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &times; 48 &times; 4 = 48 &times; 2 = <b>96 cm<sup>2</sup></b></div>\n        <div>&rArr; <b>Area of Section I = 96 cm<sup>2</sup></b> and <b>Area of Section II = 96 cm<sup>2</sup></b>.</div>\n\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Step 3: Area of Sections III and IV (Top and Bottom trapeziums):</b></div>\n        <div>Parallel sides are <b>24 cm</b> and <b>16 cm</b>; height = <b>4 cm</b>.</div>\n        <div>Area = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &times; (24 + 16) &times; 4 = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &times; 40 &times; 4 = 40 &times; 2 = <b>80 cm<sup>2</sup></b></div>\n        <div>&rArr; <b>Area of Section III = 80 cm<sup>2</sup></b> and <b>Area of Section IV = 80 cm<sup>2</sup></b>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">Area of Section I = 96 cm<sup>2</sup> &bull; Section II = 96 cm<sup>2</sup> &bull; Section III = 80 cm<sup>2</sup> &bull; Section IV = 80 cm<sup>2</sup></span>\n      </div>\n    </div>\n  </div>\n\n</div>\n",
+    "ex10-3": "\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Header Card -->\n  <div style=\"background: linear-gradient(135deg, rgba(255, 87, 34, 0.2), rgba(255, 138, 101, 0.1)); border: 1.5px solid #FF5722; border-radius: 12px; padding: 14px 18px; margin-bottom: 20px;\">\n    <div style=\"font-size: 19px; font-weight: 800; color: #FF5722; margin-bottom: 4px;\">\n      Exercise 10.3\n    </div>\n    <div style=\"color: #FFFFFF; font-size: 15px; font-weight: 500;\">\n      Surface Area of Cube, Cuboid &amp; Cylinder &bull; Real-World Applications\n    </div>\n  </div>\n\n  <!-- QUESTION 1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 1:</div>\n    <div class=\"q-text\">\n      There are two cuboidal boxes as shown in the adjoining figure. Which box requires the lesser amount of material to make?\n    </div>\n\n    <!-- Diagram Card Q1 -->\n    <div class=\"diagram-card\">\n      <svg width=\"100%\" height=\"auto\" viewBox=\"0 0 420 180\">\n        <!-- Box (a): Cuboid 60 x 40 x 50 -->\n        <g transform=\"translate(20, 20)\">\n          <!-- Front Face -->\n          <polygon points=\"10,50 110,50 110,130 10,130\" fill=\"#FFE0B2\" stroke=\"#E65100\" stroke-width=\"2\"/>\n          <!-- Top Face -->\n          <polygon points=\"10,50 50,15 150,15 110,50\" fill=\"#FFF3E0\" stroke=\"#E65100\" stroke-width=\"2\"/>\n          <!-- Right Face -->\n          <polygon points=\"110,50 150,15 150,95 110,130\" fill=\"#FFCC80\" stroke=\"#E65100\" stroke-width=\"2\"/>\n          <!-- Dimensions -->\n          <text x=\"60\" y=\"145\" font-size=\"12\" font-weight=\"700\" fill=\"#1E293B\" text-anchor=\"middle\">60 cm</text>\n          <text x=\"142\" y=\"120\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1E293B\">40 cm</text>\n          <text x=\"160\" y=\"60\" font-size=\"12\" font-weight=\"700\" fill=\"#B71C1C\">50 cm</text>\n          <text x=\"75\" y=\"90\" font-size=\"14\" font-weight=\"800\" fill=\"#E65100\" text-anchor=\"middle\">(a) Cuboid</text>\n        </g>\n\n        <!-- Box (b): Cube 50 x 50 x 50 -->\n        <g transform=\"translate(240, 20)\">\n          <!-- Front Face -->\n          <polygon points=\"15,45 95,45 95,125 15,125\" fill=\"#E8F5E9\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\n          <!-- Top Face -->\n          <polygon points=\"15,45 50,15 130,15 95,45\" fill=\"#F1F8E9\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\n          <!-- Right Face -->\n          <polygon points=\"95,45 130,15 130,95 95,125\" fill=\"#C8E6C9\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\n          <!-- Dimensions -->\n          <text x=\"55\" y=\"140\" font-size=\"12\" font-weight=\"700\" fill=\"#1E293B\" text-anchor=\"middle\">50 cm</text>\n          <text x=\"120\" y=\"115\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1E293B\">50 cm</text>\n          <text x=\"140\" y=\"60\" font-size=\"12\" font-weight=\"700\" fill=\"#B71C1C\">50 cm</text>\n          <text x=\"55\" y=\"85\" font-size=\"14\" font-weight=\"800\" fill=\"#2E7D32\" text-anchor=\"middle\">(b) Cube</text>\n        </g>\n      </svg>\n      <div class=\"diagram-caption\">Figure 10.16: (a) Cuboid (60 &times; 40 &times; 50 cm) &bull; (b) Cube (50 &times; 50 &times; 50 cm)</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div>The amount of material required to make a box is equal to its <b>Total Surface Area (TSA)</b>.</div>\n\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">(a) For Cuboidal Box:</b></div>\n        <div>Length, <i>l</i> = 60 cm, &nbsp;Breadth, <i>b</i> = 40 cm, &nbsp;Height, <i>h</i> = 50 cm</div>\n        <div>Total Surface Area = 2(<i>lb</i> + <i>bh</i> + <i>hl</i>)</div>\n        <div>&rArr; TSA = 2 &times; (60 &times; 40 + 40 &times; 50 + 50 &times; 60)</div>\n        <div>&rArr; TSA = 2 &times; (2400 + 2000 + 3000)</div>\n        <div>&rArr; TSA = 2 &times; 7400 = <b>14,800 cm<sup>2</sup></b></div>\n\n        <div style=\"margin-top: 12px;\"><b style=\"color: #FF8A65;\">(b) For Cubical Box:</b></div>\n        <div>Side of cube, <i>a</i> = 50 cm</div>\n        <div>Total Surface Area = 6<i>a</i><sup>2</sup></div>\n        <div>&rArr; TSA = 6 &times; (50)<sup>2</sup> = 6 &times; 2500 = <b>15,000 cm<sup>2</sup></b></div>\n\n        <div style=\"margin-top: 10px;\">Comparing the two surface areas: <b>14,800 cm<sup>2</sup> &lt; 15,000 cm<sup>2</sup></b>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">The cuboidal box (a) requires the lesser amount of material to make (14,800 cm<sup>2</sup>).</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 2 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 2:</div>\n    <div class=\"q-text\">\n      A suitcase with measures 80 cm &times; 48 cm &times; 24 cm is to be covered with a tarpaulin cloth. How many metres of tarpaulin of width 96 cm is required to cover 100 such suitcases?\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div><b style=\"color: #FF8A65;\">Given:</b></div>\n        <div>&bull; Dimensions of suitcase: <i>l</i> = <b>80 cm</b>, <i>b</i> = <b>48 cm</b>, <i>h</i> = <b>24 cm</b></div>\n        <div>&bull; Width of tarpaulin cloth, <i>W</i> = <b>96 cm</b></div>\n        <div>&bull; Number of suitcases to cover = <b>100</b></div>\n\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Step 1: Total Surface Area of 1 Suitcase:</b></div>\n        <div>TSA = 2(<i>lb</i> + <i>bh</i> + <i>hl</i>)</div>\n        <div>&rArr; TSA = 2 &times; (80 &times; 48 + 48 &times; 24 + 24 &times; 80)</div>\n        <div>&rArr; TSA = 2 &times; (3840 + 1152 + 1920)</div>\n        <div>&rArr; TSA = 2 &times; 6912 = <b>13,824 cm<sup>2</sup></b></div>\n\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Step 2: Total Surface Area of 100 Suitcases:</b></div>\n        <div>Total Area = 100 &times; 13,824 = <b>13,82,400 cm<sup>2</sup></b></div>\n\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Step 3: Length of Tarpaulin Required:</b></div>\n        <div>Area of rectangular cloth = Length &times; Width</div>\n        <div>&rArr; Length &times; 96 = 13,82,400</div>\n        <div>&rArr; Length = <span class=\"frac\"><span class=\"num\">13,82,400</span><span class=\"den\">96</span></span> = <b>14,400 cm</b></div>\n        <div>Converting to metres: Length = <span class=\"frac\"><span class=\"num\">14,400</span><span class=\"den\">100</span></span> = <b>144 m</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">144 metres of tarpaulin cloth is required.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 3 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 3:</div>\n    <div class=\"q-text\">\n      Find the side of a cube whose surface area is 600 cm<sup>2</sup>.\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div><b style=\"color: #FF8A65;\">Given:</b> Total Surface Area of cube = <b>600 cm<sup>2</sup></b></div>\n        <div>Let the side of the cube be <b><i>a</i> cm</b>.</div>\n        <div style=\"margin-top: 8px;\"><b style=\"color: #FF8A65;\">Formula:</b> Surface area of cube = 6<i>a</i><sup>2</sup></div>\n        <div>&rArr; 6<i>a</i><sup>2</sup> = 600</div>\n        <div>&rArr; <i>a</i><sup>2</sup> = <span class=\"frac\"><span class=\"num\">600</span><span class=\"den\">6</span></span> = 100</div>\n        <div>&rArr; <i>a</i> = &radic;100 = <b>10 cm</b> <span class=\"reason\">[Side length cannot be negative]</span></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">Side of the cube = 10 cm</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 4 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 4:</div>\n    <div class=\"q-text\">\n      Rukhsar painted the outside of the cabinet of measure 1 m &times; 2 m &times; 1.5 m. How much surface area did she cover if she painted all except the bottom of the cabinet?\n    </div>\n\n    <!-- Diagram Card Q4 -->\n    <div class=\"diagram-card\">\n      <svg width=\"100%\" height=\"auto\" viewBox=\"0 0 320 200\">\n        <!-- 3D Cabinet -->\n        <!-- Top Face -->\n        <polygon points=\"50,45 100,15 260,15 210,45\" fill=\"#FFE0B2\" stroke=\"#E65100\" stroke-width=\"2\"/>\n        <!-- Front Face (Painted with 2 doors) -->\n        <polygon points=\"50,45 210,45 210,165 50,165\" fill=\"#FFF3E0\" stroke=\"#E65100\" stroke-width=\"2\"/>\n        <line x1=\"130\" y1=\"45\" x2=\"130\" y2=\"165\" stroke=\"#E65100\" stroke-width=\"1.8\"/>\n        <!-- Door Handles -->\n        <circle cx=\"120\" cy=\"105\" r=\"3\" fill=\"#E65100\"/>\n        <circle cx=\"140\" cy=\"105\" r=\"3\" fill=\"#E65100\"/>\n        <!-- Right Side Face -->\n        <polygon points=\"210,45 260,15 260,135 210,165\" fill=\"#FFCC80\" stroke=\"#E65100\" stroke-width=\"2\"/>\n        \n        <!-- Dimensions -->\n        <text x=\"130\" y=\"180\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1E293B\" text-anchor=\"middle\">Length = 2 m</text>\n        <text x=\"245\" y=\"155\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1E293B\">1 m</text>\n        <text x=\"30\" y=\"105\" font-size=\"12\" font-weight=\"700\" fill=\"#B71C1C\">1.5 m</text>\n        <text x=\"130\" y=\"28\" font-size=\"11\" font-weight=\"700\" fill=\"#2E7D32\" text-anchor=\"middle\">Top (Painted)</text>\n      </svg>\n      <div class=\"diagram-caption\">Figure 10.17: Cabinet (2 m &times; 1 m &times; 1.5 m) painted on all sides except the bottom</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div><b style=\"color: #FF8A65;\">Given:</b></div>\n        <div>&bull; Length of cabinet, <i>l</i> = <b>2 m</b></div>\n        <div>&bull; Breadth (depth), <i>b</i> = <b>1 m</b></div>\n        <div>&bull; Height, <i>h</i> = <b>1.5 m</b></div>\n\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Step 1: Formula for Area to be Painted:</b></div>\n        <div>Area painted = (Area of 4 vertical walls) + (Area of top face)</div>\n        <div>&rArr; Area painted = 2(<i>l</i> + <i>b</i>)<i>h</i> + <i>lb</i></div>\n        <div>&nbsp;&nbsp;[Alternatively: Total Surface Area &minus; Area of bottom = 2(<i>lb</i> + <i>bh</i> + <i>hl</i>) &minus; <i>lb</i>]</div>\n\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Step 2: Calculation:</b></div>\n        <div>Area painted = 2(2 + 1) &times; 1.5 + (2 &times; 1)</div>\n        <div>&rArr; Area painted = 2(3) &times; 1.5 + 2</div>\n        <div>&rArr; Area painted = 6 &times; 1.5 + 2</div>\n        <div>&rArr; Area painted = 9 + 2 = <b>11 m<sup>2</sup></b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">Total surface area covered by paint = 11 m<sup>2</sup></span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 5 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 5:</div>\n    <div class=\"q-text\">\n      Daniel is painting the walls and ceiling of a cuboidal hall with length, breadth and height of 15 m, 10 m and 7 m respectively. From each can of paint 100 m<sup>2</sup> of area is painted. How many cans of paint will she need to paint the room?\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div><b style=\"color: #FF8A65;\">Given:</b></div>\n        <div>&bull; Dimensions of hall: <i>l</i> = <b>15 m</b>, <i>b</i> = <b>10 m</b>, <i>h</i> = <b>7 m</b></div>\n        <div>&bull; Area covered by 1 can of paint = <b>100 m<sup>2</sup></b></div>\n\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Step 1: Area to be Painted:</b></div>\n        <div>Only the 4 walls and the ceiling are painted (the floor is not painted):</div>\n        <div>Area to be painted = (Area of 4 walls) + (Area of ceiling)</div>\n        <div>&rArr; Area = 2(<i>l</i> + <i>b</i>)<i>h</i> + <i>lb</i></div>\n        <div>&rArr; Area = 2(15 + 10) &times; 7 + (15 &times; 10)</div>\n        <div>&rArr; Area = 2(25) &times; 7 + 150</div>\n        <div>&rArr; Area = 50 &times; 7 + 150 = 350 + 150 = <b>500 m<sup>2</sup></b></div>\n\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Step 2: Number of Cans Needed:</b></div>\n        <div>Number of cans = <span class=\"frac\"><span class=\"num\">Total Area to be Painted</span><span class=\"den\">Area Painted by 1 Can</span></span></div>\n        <div>&rArr; Number of cans = <span class=\"frac\"><span class=\"num\">500</span><span class=\"den\">100</span></span> = <b>5</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">Daniel will need 5 cans of paint to paint the room.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 6 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 6:</div>\n    <div class=\"q-text\">\n      Describe how the two figures below are alike and how they are different. Which box has larger lateral surface area?\n    </div>\n\n    <!-- Diagram Card Q6 -->\n    <div class=\"diagram-card\">\n      <svg width=\"100%\" height=\"auto\" viewBox=\"0 0 380 170\">\n        <!-- Cylinder -->\n        <g transform=\"translate(30, 20)\">\n          <!-- Top ellipse -->\n          <ellipse cx=\"60\" cy=\"20\" rx=\"35\" ry=\"12\" fill=\"#E1F5FE\" stroke=\"#0288D1\" stroke-width=\"2\"/>\n          <!-- Body -->\n          <line x1=\"25\" y1=\"20\" x2=\"25\" y2=\"105\" stroke=\"#0288D1\" stroke-width=\"2\"/>\n          <line x1=\"95\" y1=\"20\" x2=\"95\" y2=\"105\" stroke=\"#0288D1\" stroke-width=\"2\"/>\n          <!-- Bottom ellipse -->\n          <path d=\"M 25 105 A 35 12 0 0 0 95 105\" fill=\"#E1F5FE\" stroke=\"#0288D1\" stroke-width=\"2\"/>\n          <!-- Dimensions -->\n          <text x=\"60\" y=\"130\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1E293B\" text-anchor=\"middle\">Diameter = 7 cm</text>\n          <text x=\"10\" y=\"65\" font-size=\"11.5\" font-weight=\"700\" fill=\"#B71C1C\">7 cm</text>\n          <text x=\"60\" y=\"65\" font-size=\"13\" font-weight=\"800\" fill=\"#0288D1\" text-anchor=\"middle\">Cylinder</text>\n        </g>\n\n        <!-- Cube -->\n        <g transform=\"translate(210, 20)\">\n          <!-- Front Face -->\n          <rect x=\"15\" y=\"30\" width=\"80\" height=\"80\" fill=\"#FFF3E0\" stroke=\"#E65100\" stroke-width=\"2\"/>\n          <!-- Top Face -->\n          <polygon points=\"15,30 45,10 125,10 95,30\" fill=\"#FFF8E1\" stroke=\"#E65100\" stroke-width=\"2\"/>\n          <!-- Right Face -->\n          <polygon points=\"95,30 125,10 125,90 95,110\" fill=\"#FFE0B2\" stroke=\"#E65100\" stroke-width=\"2\"/>\n          <!-- Dimensions -->\n          <text x=\"55\" y=\"125\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1E293B\" text-anchor=\"middle\">7 cm</text>\n          <text x=\"135\" y=\"55\" font-size=\"11.5\" font-weight=\"700\" fill=\"#B71C1C\">7 cm</text>\n          <text x=\"55\" y=\"75\" font-size=\"13\" font-weight=\"800\" fill=\"#E65100\" text-anchor=\"middle\">Cube</text>\n        </g>\n      </svg>\n      <div class=\"diagram-caption\">Figure 10.18: Cylinder (d = 7 cm, h = 7 cm) and Cube (side = 7 cm)</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div><b style=\"color: #FF8A65;\">1. Similarities:</b></div>\n        <div>&bull; Both figures have the exact same horizontal width/base extent (7 cm) and the same vertical height (7 cm).</div>\n\n        <div style=\"margin-top: 8px;\"><b style=\"color: #FF8A65;\">2. Differences:</b></div>\n        <div>&bull; The first figure is a <b>cylinder</b> with curved circular top and bottom faces.</div>\n        <div>&bull; The second figure is a <b>cube</b> with 6 identical flat square faces.</div>\n\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">3. Comparing Lateral Surface Areas (LSA):</b></div>\n        <div>&bull; <b>LSA of Cylinder:</b> Radius, <i>r</i> = <span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">2</span></span> cm, Height, <i>h</i> = 7 cm</div>\n        <div>&nbsp;&nbsp;LSA = 2&pi;<i>rh</i> = 2 &times; <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; <span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">2</span></span> &times; 7 = 22 &times; 7 = <b>154 cm<sup>2</sup></b></div>\n        <div>&bull; <b>LSA of Cube:</b> Side, <i>a</i> = 7 cm</div>\n        <div>&nbsp;&nbsp;LSA = 4<i>a</i><sup>2</sup> = 4 &times; (7)<sup>2</sup> = 4 &times; 49 = <b>196 cm<sup>2</sup></b></div>\n        <div style=\"margin-top: 6px;\">Since 196 cm<sup>2</sup> &gt; 154 cm<sup>2</sup>, the cube has a larger lateral surface area.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">The cube has a larger lateral surface area (196 cm<sup>2</sup> vs 154 cm<sup>2</sup>).</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 7 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 7:</div>\n    <div class=\"q-text\">\n      A closed cylindrical tank of radius 7 m and height 3 m is made from a sheet of metal. How much sheet of metal is required?\n    </div>\n\n    <!-- Diagram Card Q7 -->\n    <div class=\"diagram-card\">\n      <svg width=\"100%\" height=\"auto\" viewBox=\"0 0 240 180\">\n        <!-- Closed Cylinder -->\n        <ellipse cx=\"120\" cy=\"30\" rx=\"60\" ry=\"18\" fill=\"#ECEFF1\" stroke=\"#37474F\" stroke-width=\"2.2\"/>\n        <line x1=\"60\" y1=\"30\" x2=\"60\" y2=\"130\" stroke=\"#37474F\" stroke-width=\"2.2\"/>\n        <line x1=\"180\" y1=\"30\" x2=\"180\" y2=\"130\" stroke=\"#37474F\" stroke-width=\"2.2\"/>\n        <ellipse cx=\"120\" cy=\"130\" rx=\"60\" ry=\"18\" fill=\"#ECEFF1\" stroke=\"#37474F\" stroke-width=\"2.2\"/>\n        <!-- Center radius -->\n        <line x1=\"120\" y1=\"30\" x2=\"180\" y2=\"30\" stroke=\"#B71C1C\" stroke-width=\"1.8\"/>\n        <circle cx=\"120\" cy=\"30\" r=\"2.5\" fill=\"#B71C1C\"/>\n        <text x=\"150\" y=\"24\" font-size=\"11.5\" font-weight=\"700\" fill=\"#B71C1C\">r = 7 m</text>\n        <text x=\"25\" y=\"85\" font-size=\"12\" font-weight=\"700\" fill=\"#1E293B\">h = 3 m</text>\n        <text x=\"120\" y=\"85\" font-size=\"13\" font-weight=\"800\" fill=\"#37474F\" text-anchor=\"middle\">Closed Tank</text>\n      </svg>\n      <div class=\"diagram-caption\">Figure 10.19: Closed cylindrical tank of radius 7 m and height 3 m</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div><b style=\"color: #FF8A65;\">Given:</b></div>\n        <div>&bull; Radius of cylindrical tank, <i>r</i> = <b>7 m</b></div>\n        <div>&bull; Height of cylindrical tank, <i>h</i> = <b>3 m</b></div>\n        <div style=\"margin-top: 10px;\">Since the tank is <b>closed</b>, it includes the curved surface plus both circular ends (top and bottom):</div>\n        <div>Sheet required = Total Surface Area (TSA) of cylinder</div>\n        <div>&rArr; TSA = 2&pi;<i>r</i>(<i>h</i> + <i>r</i>)</div>\n        <div>&rArr; TSA = 2 &times; <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; 7 &times; (3 + 7)</div>\n        <div>&rArr; TSA = 44 &times; 10 = <b>440 m<sup>2</sup></b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">440 m<sup>2</sup> of metal sheet is required.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 8 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 8:</div>\n    <div class=\"q-text\">\n      The lateral surface area of a hollow cylinder is 4224 cm<sup>2</sup>. It is cut along its height and formed a rectangular sheet of width 33 cm. Find the perimeter of rectangular sheet?\n    </div>\n\n    <!-- Diagram Card Q8 -->\n    <div class=\"diagram-card\">\n      <svg width=\"100%\" height=\"auto\" viewBox=\"0 0 380 150\">\n        <!-- Cylinder on left -->\n        <g transform=\"translate(10, 15)\">\n          <ellipse cx=\"45\" cy=\"15\" rx=\"30\" ry=\"10\" fill=\"none\" stroke=\"#00838F\" stroke-width=\"2\"/>\n          <line x1=\"15\" y1=\"15\" x2=\"15\" y2=\"105\" stroke=\"#00838F\" stroke-width=\"2\"/>\n          <line x1=\"75\" y1=\"15\" x2=\"75\" y2=\"105\" stroke=\"#00838F\" stroke-width=\"2\"/>\n          <path d=\"M 15 105 A 30 10 0 0 0 75 105\" fill=\"none\" stroke=\"#00838F\" stroke-width=\"2\"/>\n          <!-- Cut line with scissors symbol -->\n          <line x1=\"45\" y1=\"15\" x2=\"45\" y2=\"105\" stroke=\"#B71C1C\" stroke-width=\"1.8\" stroke-dasharray=\"3,3\"/>\n          <text x=\"45\" y=\"65\" font-size=\"11\" font-weight=\"700\" fill=\"#B71C1C\" text-anchor=\"middle\">Cut along h</text>\n        </g>\n\n        <!-- Arrow -->\n        <g transform=\"translate(105, 60)\">\n          <line x1=\"0\" y1=\"10\" x2=\"35\" y2=\"10\" stroke=\"#FF5722\" stroke-width=\"2.5\"/>\n          <polygon points=\"35,10 25,5 25,15\" fill=\"#FF5722\"/>\n          <text x=\"18\" y=\"0\" font-size=\"10\" font-weight=\"700\" fill=\"#FF5722\" text-anchor=\"middle\">Unroll</text>\n        </g>\n\n        <!-- Unrolled Rectangle -->\n        <g transform=\"translate(160, 20)\">\n          <rect x=\"10\" y=\"10\" width=\"190\" height=\"90\" fill=\"#E0F7FA\" stroke=\"#00838F\" stroke-width=\"2\" rx=\"3\"/>\n          <text x=\"105\" y=\"55\" font-size=\"13\" font-weight=\"800\" fill=\"#00838F\" text-anchor=\"middle\">Rectangular Sheet</text>\n          <text x=\"105\" y=\"75\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1E293B\" text-anchor=\"middle\">Area = 4224 cm²</text>\n          <text x=\"210\" y=\"60\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1E293B\">33 cm</text>\n          <text x=\"105\" y=\"118\" font-size=\"12\" font-weight=\"700\" fill=\"#B71C1C\" text-anchor=\"middle\">Length l = 128 cm</text>\n        </g>\n      </svg>\n      <div class=\"diagram-caption\">Figure 10.20: Hollow cylinder cut along height unrolls into a rectangular sheet</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div><b style=\"color: #FF8A65;\">Given:</b></div>\n        <div>&bull; Lateral surface area of hollow cylinder = <b>4224 cm<sup>2</sup></b></div>\n        <div>&bull; Width of rectangular sheet, <i>b</i> = <b>33 cm</b></div>\n\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Step 1: Finding Length of Rectangular Sheet:</b></div>\n        <div>When a hollow cylinder is cut along its height, its lateral surface area unrolls into the area of the rectangle:</div>\n        <div>Area of rectangular sheet = Lateral surface area of cylinder</div>\n        <div>&rArr; <i>l</i> &times; <i>b</i> = 4224</div>\n        <div>&rArr; <i>l</i> &times; 33 = 4224</div>\n        <div>&rArr; <i>l</i> = <span class=\"frac\"><span class=\"num\">4224</span><span class=\"den\">33</span></span> = <b>128 cm</b></div>\n\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Step 2: Finding Perimeter of the Rectangular Sheet:</b></div>\n        <div>Perimeter = 2(<i>l</i> + <i>b</i>)</div>\n        <div>&rArr; Perimeter = 2(128 + 33)</div>\n        <div>&rArr; Perimeter = 2 &times; 161 = <b>322 cm</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">Perimeter of the rectangular sheet = 322 cm</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 9 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 9:</div>\n    <div class=\"q-text\">\n      A road roller takes 750 complete revolutions to move once over to level a road. Find the area of the road if the diameter of a road roller is 84 cm and length 1 m.\n    </div>\n\n    <!-- Diagram Card Q9 -->\n    <div class=\"diagram-card\">\n      <svg width=\"100%\" height=\"auto\" viewBox=\"0 0 340 160\">\n        <!-- Cylindrical Roller Drum -->\n        <g transform=\"translate(30, 20)\">\n          <!-- Left circular base -->\n          <ellipse cx=\"60\" cy=\"60\" rx=\"25\" ry=\"50\" fill=\"#90A4AE\" stroke=\"#37474F\" stroke-width=\"2.5\"/>\n          <!-- Roller body -->\n          <rect x=\"60\" y=\"10\" width=\"180\" height=\"100\" fill=\"#CFD8DC\" stroke=\"none\"/>\n          <line x1=\"60\" y1=\"10\" x2=\"240\" y2=\"10\" stroke=\"#37474F\" stroke-width=\"2.5\"/>\n          <line x1=\"60\" y1=\"110\" x2=\"240\" y2=\"110\" stroke=\"#37474F\" stroke-width=\"2.5\"/>\n          <!-- Right circular base -->\n          <ellipse cx=\"240\" cy=\"60\" rx=\"25\" ry=\"50\" fill=\"#B0BEC5\" stroke=\"#37474F\" stroke-width=\"2.5\"/>\n          \n          <!-- Dimensions -->\n          <text x=\"25\" y=\"65\" font-size=\"11.5\" font-weight=\"700\" fill=\"#B71C1C\">d = 84 cm</text>\n          <text x=\"150\" y=\"65\" font-size=\"13\" font-weight=\"800\" fill=\"#263238\" text-anchor=\"middle\">Road Roller Drum</text>\n          <text x=\"150\" y=\"128\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1E293B\" text-anchor=\"middle\">Length h = 1 m (100 cm)</text>\n        </g>\n      </svg>\n      <div class=\"diagram-caption\">Figure 10.21: Road roller drum of diameter 84 cm and length 1 m (100 cm)</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div><b style=\"color: #FF8A65;\">Given:</b></div>\n        <div>&bull; Diameter of road roller, <i>d</i> = 84 cm &rArr; Radius, <i>r</i> = <span class=\"frac\"><span class=\"num\">84</span><span class=\"den\">2</span></span> = <b>42 cm</b></div>\n        <div>&bull; Length (height) of roller, <i>h</i> = 1 m = <b>100 cm</b></div>\n        <div>&bull; Number of revolutions = <b>750</b></div>\n\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Step 1: Area covered in 1 revolution:</b></div>\n        <div>In 1 complete revolution, the roller covers an area equal to its <b>Curved Surface Area (CSA)</b>:</div>\n        <div>CSA = 2&pi;<i>rh</i></div>\n        <div>&rArr; CSA = 2 &times; <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; 42 &times; 100</div>\n        <div>&rArr; CSA = 2 &times; 22 &times; 6 &times; 100 = <b>26,400 cm<sup>2</sup></b></div>\n\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Step 2: Area covered in 750 revolutions:</b></div>\n        <div>Total Area = 750 &times; 26,400 = <b>1,98,00,000 cm<sup>2</sup></b></div>\n\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Step 3: Convert to m<sup>2</sup>:</b></div>\n        <div>1 m<sup>2</sup> = 10,000 cm<sup>2</sup></div>\n        <div>&rArr; Total Area in m<sup>2</sup> = <span class=\"frac\"><span class=\"num\">1,98,00,000</span><span class=\"den\">10,000</span></span> = <b>1980 m<sup>2</sup></b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">Total area of the road = 1980 m<sup>2</sup></span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 10 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 10:</div>\n    <div class=\"q-text\">\n      A company packages its milk powder in cylindrical container whose base has a diameter of 14 cm and height 20 cm. Company places a label around the surface of the container (as shown in figure). If the label is placed 2 cm from top and bottom, what is the area of the label?\n    </div>\n\n    <!-- Diagram Card Q10 -->\n    <div class=\"diagram-card\">\n      <svg width=\"100%\" height=\"auto\" viewBox=\"0 0 280 230\">\n        <!-- Cylindrical Container -->\n        <!-- Top Rim -->\n        <ellipse cx=\"140\" cy=\"25\" rx=\"60\" ry=\"15\" fill=\"#ECEFF1\" stroke=\"#37474F\" stroke-width=\"2\"/>\n        <line x1=\"80\" y1=\"25\" x2=\"80\" y2=\"195\" stroke=\"#37474F\" stroke-width=\"2\"/>\n        <line x1=\"200\" y1=\"25\" x2=\"200\" y2=\"195\" stroke=\"#37474F\" stroke-width=\"2\"/>\n        <ellipse cx=\"140\" cy=\"195\" rx=\"60\" ry=\"15\" fill=\"#ECEFF1\" stroke=\"#37474F\" stroke-width=\"2\"/>\n\n        <!-- Label Band (placed 2 cm from top & bottom) -->\n        <rect x=\"80\" y=\"55\" width=\"120\" height=\"110\" fill=\"#FFF8E1\" stroke=\"#F57F17\" stroke-width=\"1.8\"/>\n        <text x=\"140\" y=\"105\" font-size=\"12\" font-weight=\"900\" fill=\"#E65100\" text-anchor=\"middle\">POWDERED</text>\n        <text x=\"140\" y=\"125\" font-size=\"12\" font-weight=\"900\" fill=\"#E65100\" text-anchor=\"middle\">MILK</text>\n\n        <!-- Margin Indicators -->\n        <text x=\"215\" y=\"45\" font-size=\"11\" font-weight=\"700\" fill=\"#B71C1C\">2 cm</text>\n        <text x=\"215\" y=\"180\" font-size=\"11\" font-weight=\"700\" fill=\"#B71C1C\">2 cm</text>\n        <line x1=\"205\" y1=\"25\" x2=\"205\" y2=\"55\" stroke=\"#B71C1C\" stroke-width=\"1\"/>\n        <line x1=\"205\" y1=\"165\" x2=\"205\" y2=\"195\" stroke=\"#B71C1C\" stroke-width=\"1\"/>\n\n        <!-- Height & Diameter Indicators -->\n        <text x=\"45\" y=\"115\" font-size=\"12\" font-weight=\"700\" fill=\"#1E293B\">20 cm</text>\n        <text x=\"140\" y=\"218\" font-size=\"12\" font-weight=\"700\" fill=\"#1E293B\" text-anchor=\"middle\">Diameter = 14 cm</text>\n      </svg>\n      <div class=\"diagram-caption\">Figure 10.22: Cylindrical milk powder container with central label band</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div><b style=\"color: #FF8A65;\">Given:</b></div>\n        <div>&bull; Diameter of container, <i>d</i> = 14 cm &rArr; Radius, <i>r</i> = <span class=\"frac\"><span class=\"num\">14</span><span class=\"den\">2</span></span> = <b>7 cm</b></div>\n        <div>&bull; Total height of container = <b>20 cm</b></div>\n        <div>&bull; Distance of label from top = 2 cm, and from bottom = 2 cm</div>\n\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Step 1: Height of the Label (<i>h</i>):</b></div>\n        <div>Height of label, <i>h</i> = Total height &minus; Top gap &minus; Bottom gap</div>\n        <div>&rArr; <i>h</i> = 20 &minus; 2 &minus; 2 = <b>16 cm</b></div>\n\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Step 2: Area of the Label:</b></div>\n        <div>Since the label wraps around the curved surface of the cylinder:</div>\n        <div>Area of label = Curved Surface Area (CSA) of cylinder of height 16 cm</div>\n        <div>&rArr; Area = 2&pi;<i>rh</i></div>\n        <div>&rArr; Area = 2 &times; <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; 7 &times; 16</div>\n        <div>&rArr; Area = 2 &times; 22 &times; 16 = 44 &times; 16 = <b>704 cm<sup>2</sup></b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">Area of the label = 704 cm<sup>2</sup></span>\n      </div>\n    </div>\n  </div>\n\n</div>\n",
+    "ex10-4": "\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Header Card -->\n  <div style=\"background: linear-gradient(135deg, rgba(255, 87, 34, 0.2), rgba(255, 138, 101, 0.1)); border: 1.5px solid #FF5722; border-radius: 12px; padding: 14px 18px; margin-bottom: 20px;\">\n    <div style=\"font-size: 19px; font-weight: 800; color: #FF5722; margin-bottom: 4px;\">\n      Exercise 10.4\n    </div>\n    <div style=\"color: #FFFFFF; font-size: 15px; font-weight: 500;\">\n      Volume &amp; Capacity of Cube, Cuboid &amp; Cylinder &bull; Liquid Conversions\n    </div>\n  </div>\n\n  <!-- QUESTION 1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 1:</div>\n    <div class=\"q-text\">\n      Given a cylindrical tank, in which situation will you find surface area and in which situation volume:\n    </div>\n\n    <!-- (a) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FF5722;\">(a)</b> To find how much it can hold.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>To find the capacity or the amount of space inside the tank that can hold liquid or substances, we find its <b>Volume</b>.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">Volume</span></div>\n      </div>\n    </div>\n\n    <!-- (b) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FF5722;\">(b)</b> Number of cement bags required to plaster it.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Plastering covers the boundary walls and surfaces of the tank. To cover a surface region, we find its <b>Surface Area</b>.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">Surface Area</span></div>\n      </div>\n    </div>\n\n    <!-- (c) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FF5722;\">(c)</b> To find the number of smaller tanks that can be filled with water from it.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>The water stored inside the tank occupies a three-dimensional capacity. To divide the water into smaller tanks, we need to know the total quantity of water, so we find its <b>Volume</b>.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">Volume</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 2 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 2:</div>\n    <div class=\"q-text\">\n      Diameter of cylinder A is 7 cm and the height is 14 cm. Diameter of cylinder B is 14 cm and height is 7 cm. Without doing any calculations can you suggest whose volume is greater? Verify it by finding the volume of both the cylinders. Check whether the cylinder with greater volume also has greater surface area.\n    </div>\n\n    <!-- Diagram Card Q2 -->\n    <div class=\"diagram-card\">\n      <svg width=\"100%\" height=\"auto\" viewBox=\"0 0 380 180\">\n        <!-- Cylinder A (Tall & Slim) -->\n        <g transform=\"translate(30, 15)\">\n          <ellipse cx=\"50\" cy=\"18\" rx=\"25\" ry=\"8\" fill=\"#E1F5FE\" stroke=\"#0288D1\" stroke-width=\"2\"/>\n          <line x1=\"25\" y1=\"18\" x2=\"25\" y2=\"128\" stroke=\"#0288D1\" stroke-width=\"2\"/>\n          <line x1=\"75\" y1=\"18\" x2=\"75\" y2=\"128\" stroke=\"#0288D1\" stroke-width=\"2\"/>\n          <ellipse cx=\"50\" cy=\"128\" rx=\"25\" ry=\"8\" fill=\"#E1F5FE\" stroke=\"#0288D1\" stroke-width=\"2\"/>\n          <!-- Dimensions -->\n          <text x=\"50\" y=\"148\" font-size=\"11\" font-weight=\"700\" fill=\"#1E293B\" text-anchor=\"middle\">d = 7 cm</text>\n          <text x=\"12\" y=\"75\" font-size=\"11\" font-weight=\"700\" fill=\"#B71C1C\">14 cm</text>\n          <text x=\"50\" y=\"75\" font-size=\"14\" font-weight=\"800\" fill=\"#0288D1\" text-anchor=\"middle\">A</text>\n        </g>\n\n        <!-- Cylinder B (Short & Broad) -->\n        <g transform=\"translate(190, 45)\">\n          <ellipse cx=\"75\" cy=\"20\" rx=\"55\" ry=\"14\" fill=\"#FFF3E0\" stroke=\"#E65100\" stroke-width=\"2\"/>\n          <line x1=\"20\" y1=\"20\" x2=\"20\" y2=\"85\" stroke=\"#E65100\" stroke-width=\"2\"/>\n          <line x1=\"130\" y1=\"20\" x2=\"130\" y2=\"85\" stroke=\"#E65100\" stroke-width=\"2\"/>\n          <ellipse cx=\"75\" cy=\"85\" rx=\"55\" ry=\"14\" fill=\"#FFF3E0\" stroke=\"#E65100\" stroke-width=\"2\"/>\n          <!-- Dimensions -->\n          <text x=\"75\" y=\"118\" font-size=\"11\" font-weight=\"700\" fill=\"#1E293B\" text-anchor=\"middle\">d = 14 cm</text>\n          <text x=\"8\" y=\"55\" font-size=\"11\" font-weight=\"700\" fill=\"#B71C1C\">7 cm</text>\n          <text x=\"75\" y=\"55\" font-size=\"14\" font-weight=\"800\" fill=\"#E65100\" text-anchor=\"middle\">B</text>\n        </g>\n      </svg>\n      <div class=\"diagram-caption\">Figure 10.23: Cylinder A (d = 7 cm, h = 14 cm) &bull; Cylinder B (d = 14 cm, h = 7 cm)</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div><b style=\"color: #FF8A65;\">1. Intuitive Suggestion (Without Calculation):</b></div>\n        <div>In the formula for volume of a cylinder (<i>V</i> = &pi;<i>r</i><sup>2</sup><i>h</i>), the radius <i>r</i> is <b>squared</b> while height <i>h</i> is only linear. Since cylinder B has twice the radius of cylinder A, squaring the radius increases its base area four times, which more than compensates for halving the height. Therefore, <b>Cylinder B has greater volume</b>.</div>\n\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">2. Mathematical Verification of Volume:</b></div>\n        <div>&bull; <b>For Cylinder A:</b> Radius, <i>r</i> = <span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">2</span></span> cm, &nbsp;Height, <i>h</i> = 14 cm</div>\n        <div>&nbsp;&nbsp;Volume of A = &pi;<i>r</i><sup>2</sup><i>h</i> = <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; <span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">2</span></span> &times; <span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">2</span></span> &times; 14</div>\n        <div>&nbsp;&nbsp;= 11 &times; 7 &times; 7 = <b>539 cm<sup>3</sup></b></div>\n        <div>&bull; <b>For Cylinder B:</b> Radius, <i>r</i> = <span class=\"frac\"><span class=\"num\">14</span><span class=\"den\">2</span></span> = 7 cm, &nbsp;Height, <i>h</i> = 7 cm</div>\n        <div>&nbsp;&nbsp;Volume of B = &pi;<i>r</i><sup>2</sup><i>h</i> = <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; 7 &times; 7 &times; 7</div>\n        <div>&nbsp;&nbsp;= 22 &times; 49 = <b>1078 cm<sup>3</sup></b></div>\n        <div>Hence verified: <b>Volume of Cylinder B (1078 cm<sup>3</sup>) is greater</b> (exactly double of A!).</div>\n\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">3. Checking Total Surface Area:</b></div>\n        <div>&bull; <b>TSA of Cylinder A:</b> 2&pi;<i>r</i>(<i>r</i> + <i>h</i>)</div>\n        <div>&nbsp;&nbsp;= 2 &times; <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; <span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">2</span></span> &times; (<span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">2</span></span> + 14)</div>\n        <div>&nbsp;&nbsp;= 22 &times; (3.5 + 14) = 22 &times; 17.5 = <b>385 cm<sup>2</sup></b></div>\n        <div>&bull; <b>TSA of Cylinder B:</b> 2&pi;<i>r</i>(<i>r</i> + <i>h</i>)</div>\n        <div>&nbsp;&nbsp;= 2 &times; <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; 7 &times; (7 + 7)</div>\n        <div>&nbsp;&nbsp;= 44 &times; 14 = <b>616 cm<sup>2</sup></b></div>\n        <div>Since 616 cm<sup>2</sup> &gt; 385 cm<sup>2</sup>, the cylinder with greater volume (Cylinder B) also has greater surface area.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">Cylinder B has greater volume (1078 cm<sup>3</sup> vs 539 cm<sup>3</sup>), and it also has greater surface area (616 cm<sup>2</sup> vs 385 cm<sup>2</sup>).</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 3 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 3:</div>\n    <div class=\"q-text\">\n      Find the height of a cuboid whose base area is 180 cm<sup>2</sup> and volume is 900 cm<sup>3</sup>?\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div><b style=\"color: #FF8A65;\">Given:</b></div>\n        <div>&bull; Base area of cuboid (<i>l</i> &times; <i>b</i>) = <b>180 cm<sup>2</sup></b></div>\n        <div>&bull; Volume of cuboid = <b>900 cm<sup>3</sup></b></div>\n        <div style=\"margin-top: 8px;\"><b style=\"color: #FF8A65;\">Formula:</b> Volume of cuboid = Base area &times; Height (<i>h</i>)</div>\n        <div>&rArr; 900 = 180 &times; <i>h</i></div>\n        <div>&rArr; <i>h</i> = <span class=\"frac\"><span class=\"num\">900</span><span class=\"den\">180</span></span> = <b>5 cm</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">Height of the cuboid = 5 cm</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 4 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 4:</div>\n    <div class=\"q-text\">\n      A cuboid is of dimensions 60 cm &times; 54 cm &times; 30 cm. How many small cubes with side 6 cm can be placed in the given cuboid?\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div><b style=\"color: #FF8A65;\">Given:</b></div>\n        <div>&bull; Dimensions of cuboid: <i>l</i> = <b>60 cm</b>, <i>b</i> = <b>54 cm</b>, <i>h</i> = <b>30 cm</b></div>\n        <div>&bull; Side of each small cube, <i>a</i> = <b>6 cm</b></div>\n\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Step 1: Volumes:</b></div>\n        <div>&bull; Volume of cuboid = <i>l</i> &times; <i>b</i> &times; <i>h</i> = 60 &times; 54 &times; 30 = <b>97,200 cm<sup>3</sup></b></div>\n        <div>&bull; Volume of 1 small cube = <i>a</i><sup>3</sup> = 6 &times; 6 &times; 6 = <b>216 cm<sup>3</sup></b></div>\n\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Step 2: Number of cubes:</b></div>\n        <div>Number of small cubes = <span class=\"frac\"><span class=\"num\">Volume of Cuboid</span><span class=\"den\">Volume of 1 Small Cube</span></span></div>\n        <div>&rArr; Number of cubes = <span class=\"frac\"><span class=\"num\">60 &times; 54 &times; 30</span><span class=\"den\">6 &times; 6 &times; 6</span></span> = 10 &times; 9 &times; 5 = <b>450</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">450 small cubes can be placed in the given cuboid.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 5 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 5:</div>\n    <div class=\"q-text\">\n      Find the height of the cylinder whose volume is 1.54 m<sup>3</sup> and diameter of the base is 140 cm.\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div><b style=\"color: #FF8A65;\">Given:</b></div>\n        <div>&bull; Volume of cylinder, <i>V</i> = <b>1.54 m<sup>3</sup></b></div>\n        <div>&bull; Diameter of base, <i>d</i> = 140 cm &rArr; Radius, <i>r</i> = <span class=\"frac\"><span class=\"num\">140</span><span class=\"den\">2</span></span> = 70 cm = <b>0.7 m</b></div>\n\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Step 1: Formula:</b></div>\n        <div>Volume of cylinder = &pi;<i>r</i><sup>2</sup><i>h</i></div>\n        <div>&rArr; 1.54 = <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; 0.7 &times; 0.7 &times; <i>h</i></div>\n        <div>&rArr; 1.54 = 22 &times; 0.1 &times; 0.7 &times; <i>h</i></div>\n        <div>&rArr; 1.54 = 1.54 &times; <i>h</i></div>\n        <div>&rArr; <i>h</i> = <span class=\"frac\"><span class=\"num\">1.54</span><span class=\"den\">1.54</span></span> = <b>1 m</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">Height of the cylinder = 1 m</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 6 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 6:</div>\n    <div class=\"q-text\">\n      A milk tank is in the form of cylinder whose radius is 1.5 m and length is 7 m. Find the quantity of milk in litres that can be stored in the tank.\n    </div>\n\n    <!-- Diagram Card Q6 -->\n    <div class=\"diagram-card\">\n      <svg width=\"100%\" height=\"auto\" viewBox=\"0 0 360 160\">\n        <!-- Cylindrical Tanker Body -->\n        <g transform=\"translate(30, 20)\">\n          <!-- Left dome -->\n          <path d=\"M 50 15 A 25 45 0 0 0 50 105\" fill=\"#ECEFF1\" stroke=\"#37474F\" stroke-width=\"2.2\"/>\n          <!-- Middle tank cylinder -->\n          <rect x=\"50\" y=\"15\" width=\"200\" height=\"90\" fill=\"#CFD8DC\" stroke=\"none\"/>\n          <line x1=\"50\" y1=\"15\" x2=\"250\" y2=\"15\" stroke=\"#37474F\" stroke-width=\"2.2\"/>\n          <line x1=\"50\" y1=\"105\" x2=\"250\" y2=\"105\" stroke=\"#37474F\" stroke-width=\"2.2\"/>\n          <!-- Right dome -->\n          <path d=\"M 250 15 A 25 45 0 0 1 250 105\" fill=\"#ECEFF1\" stroke=\"#37474F\" stroke-width=\"2.2\"/>\n          \n          <!-- Dimensions & Text -->\n          <text x=\"150\" y=\"55\" font-size=\"14\" font-weight=\"900\" fill=\"#0D47A1\" text-anchor=\"middle\">MILK TANKER</text>\n          <text x=\"150\" y=\"75\" font-size=\"12\" font-weight=\"700\" fill=\"#37474F\" text-anchor=\"middle\">Length = 7 m</text>\n          <line x1=\"50\" y1=\"120\" x2=\"250\" y2=\"120\" stroke=\"#1E293B\" stroke-width=\"1.3\"/>\n          <polygon points=\"50,120 55,117 55,123\" fill=\"#1E293B\"/>\n          <polygon points=\"250,120 245,117 245,123\" fill=\"#1E293B\"/>\n          <text x=\"150\" y=\"135\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1E293B\" text-anchor=\"middle\">7 m</text>\n          <text x=\"15\" y=\"60\" font-size=\"11.5\" font-weight=\"700\" fill=\"#B71C1C\">r = 1.5 m</text>\n        </g>\n      </svg>\n      <div class=\"diagram-caption\">Figure 10.24: Cylindrical milk tank with radius = 1.5 m and length = 7 m</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div><b style=\"color: #FF8A65;\">Given:</b></div>\n        <div>&bull; Radius of cylindrical tank, <i>r</i> = <b>1.5 m</b></div>\n        <div>&bull; Length (height) of tank, <i>h</i> = <b>7 m</b></div>\n\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Step 1: Volume of the Tank:</b></div>\n        <div>Volume = &pi;<i>r</i><sup>2</sup><i>h</i></div>\n        <div>&rArr; Volume = <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; 1.5 &times; 1.5 &times; 7</div>\n        <div>&rArr; Volume = 22 &times; 2.25 = <b>49.5 m<sup>3</sup></b></div>\n\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Step 2: Convert to Litres:</b></div>\n        <div>Since <b>1 m<sup>3</sup> = 1000 litres</b>:</div>\n        <div>Quantity of milk = 49.5 &times; 1000 = <b>49,500 litres</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">Quantity of milk that can be stored = 49,500 litres</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 7 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 7:</div>\n    <div class=\"q-text\">\n      If each edge of a cube is doubled:\n    </div>\n\n    <!-- (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FF8A65;\">(i)</b> How many times will its surface area increase?</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Let original edge of cube = <b><i>l</i></b></div>\n          <div>Original surface area, <i>A</i><sub>1</sub> = 6<i>l</i><sup>2</sup></div>\n          <div>When edge is doubled, new edge = <b>2<i>l</i></b></div>\n          <div>New surface area, <i>A</i><sub>2</sub> = 6(2<i>l</i>)<sup>2</sup></div>\n          <div>&rArr; <i>A</i><sub>2</sub> = 6 &times; 4<i>l</i><sup>2</sup> = 4 &times; (6<i>l</i><sup>2</sup>) = <b>4<i>A</i><sub>1</sub></b></div>\n          <div>Therefore, its surface area will increase by <b>4 times</b>.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Answer (i): </span><span class=\"ans-val\">Surface area increases by 4 times.</span></div>\n      </div>\n    </div>\n\n    <!-- (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FF8A65;\">(ii)</b> How many times will its volume increase?</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Original volume, <i>V</i><sub>1</sub> = <i>l</i><sup>3</sup></div>\n          <div>When edge is doubled, new edge = <b>2<i>l</i></b></div>\n          <div>New volume, <i>V</i><sub>2</sub> = (2<i>l</i>)<sup>3</sup> = <b>8<i>l</i><sup>3</sup></b> = <b>8<i>V</i><sub>1</sub></b></div>\n          <div>Therefore, its volume will increase by <b>8 times</b>.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Answer (ii): </span><span class=\"ans-val\">Volume increases by 8 times.</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 8 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 8:</div>\n    <div class=\"q-text\">\n      Water is pouring into a cuboidal reservoir at the rate of 60 litres per minute. If the volume of reservoir is 108 m<sup>3</sup>, find the number of hours it will take to fill the reservoir.\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution:</div>\n      <div class=\"sol-step\">\n        <div><b style=\"color: #FF8A65;\">Given:</b></div>\n        <div>&bull; Volume of reservoir = <b>108 m<sup>3</sup></b></div>\n        <div>&bull; Rate of water pouring = <b>60 litres per minute</b></div>\n\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Step 1: Convert volume of reservoir into litres:</b></div>\n        <div>1 m<sup>3</sup> = 1000 litres</div>\n        <div>&rArr; Total capacity = 108 &times; 1000 = <b>1,08,000 litres</b></div>\n\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Step 2: Rate of pouring per hour:</b></div>\n        <div>1 hour = 60 minutes</div>\n        <div>&rArr; Water poured in 1 hour = 60 litres/min &times; 60 min = <b>3600 litres per hour</b></div>\n\n        <div style=\"margin-top: 10px;\"><b style=\"color: #FF8A65;\">Step 3: Total time required:</b></div>\n        <div>Time (in hours) = <span class=\"frac\"><span class=\"num\">Total Capacity in Litres</span><span class=\"den\">Rate in Litres per Hour</span></span></div>\n        <div>&rArr; Time = <span class=\"frac\"><span class=\"num\">1,08,000</span><span class=\"den\">3600</span></span> = <span class=\"frac\"><span class=\"num\">1080</span><span class=\"den\">36</span></span> = <b>30 hours</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">It will take 30 hours to fill the reservoir.</span>\n      </div>\n    </div>\n  </div>\n\n</div>\n"
+  }
 };

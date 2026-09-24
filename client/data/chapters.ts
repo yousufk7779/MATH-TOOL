@@ -710,8 +710,8 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
       {
         id: "c8-math-10",
         number: 10,
-        name: "Exponents and Powers",
-        color: "#FFD600",
+        name: "Mensuration",
+        color: "#FF5722",
       },
       {
         id: "c8-math-11",
@@ -1210,6 +1210,7 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
   if (chapterId === "c7-geo-8") return JiguuColors.gradients.rose; // Rose for J&K (Valley of Flowers/Traditional)
   if (chapterId === "c8-math-8") return ["#E91E63", "#C2185B"]; // Rose Pink for Comparing Quantities
   if (chapterId === "c8-math-9") return ["#3F51B5", "#283593"]; // Indigo for Algebraic Expressions
+  if (chapterId === "c8-math-10") return ["#FF5722", "#D84315"]; // Deep Orange for Mensuration
   if (chapterId === "c11-phy-1") return ["#FF512F", "#DD2476"];
   if (chapterId === "c11-phy-2") return ["#8E2DE2", "#4A00E0"];
   if (chapterId === "c11-phy-3") return ["#FF8A65", "#FF3D00"];
