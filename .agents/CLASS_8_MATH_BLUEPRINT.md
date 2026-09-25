@@ -231,18 +231,18 @@ This document serves as the permanent, authoritative blueprint for **Class 8 Mat
 | :---: | :--- | :---: | :---: |
 | **1** | Rational Numbers | `#FF8C00` (Vibrant Orange) | `#FFB74D` |
 | **2** | Linear Equations in One Variable | `#00C6FF` (Sky Cyan) | `#80D8FF` |
-| **3** | Understanding Quadrilaterals | `#26C6DA` (Teal) | `#80DEEA` |
-| **4** | Practical Geometry | `#9C27B0` (Purple) | `#CE93D8` |
-| **5** | Data Handling | `#00B8D4` (Aqua / Teal) | `#80DEEA` |
-| **6** | Squares and Square Roots | `#4CAF50` (Emerald Green) | `#81C784` |
+| **3** | Understanding Quadrilaterals | `#FF1744` (Crimson Red) | `#FF8A80` |
+| **4** | Practical Geometry | `#7C4DFF` (Royal Violet) | `#B388FF` |
+| **5** | Data Handling | `#84CC16` (Electric Lime) | `#A3E635` |
+| **6** | Squares and Square Roots | `#FF007F` (Hot Magenta) | `#FF80AB` |
 | **7** | Cubes and Cube Roots | `#00E676` (Mint Green) | `#69F0AE` |
 | **8** | Comparing Quantities | `#E91E63` (Rose Pink) | `#F48FB1` |
 | **9** | Algebraic Expressions and Identities | `#3F51B5` (Indigo) | `#9FA8DA` |
 | **10** | Mensuration | `#FF5722` (Deep Orange) | `#FF8A65` |
 | **11** | Exponents and Powers | `#FDC830` (Amber Gold) | `#FFE082` |
-| **12** | Direct and Inverse Proportions | `#00BCD4` (Cyan) | `#80DEEA` |
+| **12** | Direct and Inverse Proportions | `#00897B` (Deep Sea Teal) | `#80CBC4` |
 | **13** | Factorisation | `#AB47BC` (Amethyst) | `#CE93D8` |
-| **14** | Introduction to Graphs | `#29B6F6` (Electric Blue) | `#81D4FA` |
+| **14** | Introduction to Graphs | `#2979FF` (Cobalt Royal Blue) | `#82B1FF` |
 
 ---
 

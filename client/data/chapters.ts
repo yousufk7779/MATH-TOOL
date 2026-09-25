@@ -669,25 +669,25 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
         id: "c8-math-3",
         number: 3,
         name: "Understanding Quadrilaterals",
-        color: "#26C6DA",
+        color: "#FF1744",
       },
       {
         id: "c8-math-4",
         number: 4,
         name: "Practical Geometry",
-        color: "#AB47BC",
+        color: "#7C4DFF",
       },
       {
         id: "c8-math-5",
         number: 5,
         name: "Data Handling",
-        color: "#00B8D4",
+        color: "#84CC16",
       },
       {
         id: "c8-math-6",
         number: 6,
         name: "Squares and Square Roots",
-        color: "#4CAF50",
+        color: "#FF007F",
       },
       {
         id: "c8-math-7",
@@ -723,14 +723,14 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
         id: "c8-math-12",
         number: 12,
         name: "Direct and Inverse Proportions",
-        color: "#00BCD4",
+        color: "#00897B",
       },
       { id: "c8-math-13", number: 13, name: "Factorisation", color: "#AB47BC" },
       {
         id: "c8-math-14",
         number: 14,
         name: "Introduction to Graphs",
-        color: "#29B6F6",
+        color: "#2979FF",
       },
     ],
   },
@@ -1156,7 +1156,6 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
   const pinkTargetedIds = [
     "ch6",
     "c9-math-6",
-    "c8-math-6",
     "c7-math-6",
     "c7-math-9",
   ];
@@ -1194,11 +1193,9 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
   const redTargetedIds = [
     "ch10",
     "c9-math-10",
-    "c8-math-10",
     "c7-math-10",
     "ch7",
     "c9-math-7",
-    "c8-math-7",
     "c7-math-7",
   ];
 
@@ -1206,21 +1203,23 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
     return JiguuColors.gradients.premiumOrange as string[];
   }
 
-  // Targeted theme color replacement for Class 7 Math Chapters 10-13
-  if (chapterId === "c7-civ-6") return JiguuColors.gradients.teal; // Teal for Chapter 6 (distinguish from Chapter 3 Blue)
-  if (chapterId === "c7-civ-9") return JiguuColors.gradients.green; // Green for Chapter 9 (distinguish from Chapter 8 Pink/Orange)
-  if (chapterId === "c7-geo-3") return JiguuColors.gradients.deepOrange; // Deep Orange for Changing Earth (Volcanoes/Lava)
-  if (chapterId === "c7-geo-4") return ["#C5E1A5", "#9CCC65", "#1B5E20"]; // Very Light Green for Chapter 4
-  if (chapterId === "c7-geo-5") return JiguuColors.gradients.blue; // Blue for Water
-  if (chapterId === "c7-geo-7") return JiguuColors.gradients.gold; // Gold for Deserts
-  if (chapterId === "c7-geo-8") return JiguuColors.gradients.rose; // Rose for J&K (Valley of Flowers/Traditional)
+  // Class 8 Mathematics (Chapters 1 to 14 - Full Blueprint & Content Theme Color Alignment)
+  if (chapterId === "c8-math-1") return ["#FF8C00", "#F57C00"]; // Vibrant Orange (Rational Numbers)
+  if (chapterId === "c8-math-2") return ["#00C6FF", "#0072FF"]; // Sky Cyan (Linear Equations in One Variable)
+  if (chapterId === "c8-math-3") return ["#FF1744", "#D50000"]; // Bold Crimson Red (Understanding Quadrilaterals)
+  if (chapterId === "c8-math-4") return ["#7C4DFF", "#4A00E0"]; // Royal Violet (Practical Geometry)
+  if (chapterId === "c8-math-5") return ["#84CC16", "#4D7C0F"]; // Electric Lime (Data Handling)
+  if (chapterId === "c8-math-6") return ["#FF007F", "#C2185B"]; // Hot Magenta (Squares and Square Roots)
+  if (chapterId === "c8-math-7") return ["#00E676", "#00C853"]; // Mint Green (Cubes and Cube Roots)
   if (chapterId === "c8-math-8") return ["#E91E63", "#C2185B"]; // Rose Pink for Comparing Quantities
   if (chapterId === "c8-math-9") return ["#3F51B5", "#283593"]; // Indigo for Algebraic Expressions
   if (chapterId === "c8-math-10") return ["#FF5722", "#D84315"]; // Deep Orange for Mensuration
   if (chapterId === "c8-math-11") return ["#FDC830", "#F39C12"]; // Amber Gold for Exponents and Powers
-  if (chapterId === "c8-math-12") return ["#00BCD4", "#00838F"]; // Cyan / Teal for Direct and Inverse Proportions
+  if (chapterId === "c8-math-12") return ["#00897B", "#004D40"]; // Deep Sea Teal (Direct and Inverse Proportions)
   if (chapterId === "c8-math-13") return ["#AB47BC", "#7B1FA2"]; // Amethyst Purple for Factorisation
-  if (chapterId === "c8-math-14") return ["#29B6F6", "#0288D1"]; // Light Blue / Sky Blue for Introduction to Graphs
+  if (chapterId === "c8-math-14") return ["#2979FF", "#1565C0"]; // Cobalt Royal Blue (Introduction to Graphs)
+
+  // Targeted theme color replacement for Class 7 Math Chapters 10-13
   if (chapterId === "c11-phy-1") return ["#FF512F", "#DD2476"];
   if (chapterId === "c11-phy-2") return ["#8E2DE2", "#4A00E0"];
   if (chapterId === "c11-phy-3") return ["#FF8A65", "#FF3D00"];
