@@ -200,6 +200,24 @@ Full authoritative rules, chapter list, and UI standards are permanently recorde
 8. **Zero Raw LaTeX / Markdown Remnants in HTML View (`$`, `\text`, `\times`, `&text`)**: MathJax is not active in HTML Web View. Never use raw `$\text{...}$`, `&text`, or `\times` (which escape as tabs `\t`). Always use pure semantic HTML (`<b>...</b>`, `<i>x</i>`, `&times;`, `&minus;`, `<span class="frac">...</span>`, `&rArr;`).
 9. **Table Mobile Responsiveness & Text Anti-Wrap**: Always enforce `white-space: nowrap; font-weight: 700; text-align: left; padding-left: 12px; min-width: 105px;` on textual category/subject cells so long words (like "Mathematics") never break into awkward fragments ("Mathema" / "tics"). Container `.table-card` must always have `overflow-x: auto; -webkit-overflow-scrolling: touch;`.
 
+---
+
+## Class 10 Mathematics Master Blueprint & Upgrade Strategy
+
+Full authoritative rules, chapter list, and UI standards are permanently recorded in:
+👉 `.agents/CLASS_10_MATH_BLUEPRINT.md`
+
+### Core Class 10 Math Directives:
+1. **Zero Content Omission Guarantee**: Keep every single question, example, and sub-part already solved in the app. No deletions.
+2. **Zero Extra Questions Added**: Only upgrade the exact questions and examples already in the chapter.
+3. **Easy & Student-Friendly Solutions**: Eliminate bulky "Step 1:" headers; write clean line-by-line steps with `&rArr;` and concise bracketed reasons.
+4. **100% Web View Architecture (`isHtmlView: true`)**: Dark cards (`.q-card`), chapter `themeColor` borders, green answer boxes (`#4CAF50`), and coordinate tables.
+5. **Strict Stacked Fractions**: Use vertical `<span class="frac"><span class="num">a</span><span class="den">b</span></span>`, never raw `a/b`.
+6. **Sub-Tabs for Each Exercise & Solved Examples**: Clean sub-tab navigation (`examples`, `exercise1`, `exercise2`, etc.).
+7. **Resume Trigger**: When user says "bhai class 10 math continue karo" or "bhai class 10 math chapter X karo", immediately apply this blueprint.
+
+
+
 
 
 

@@ -1206,6 +1206,7 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
   // Class 10 Mathematics (Full Blueprint & Content Theme Color Alignment)
   if (chapterId === "ch1") return ["#E91E63", "#C2185B"]; // Rose Pink (Real Numbers)
   if (chapterId === "ch2") return ["#00C853", "#009624"]; // Vibrant Emerald Green (Polynomials)
+  if (chapterId === "ch3") return ["#FFAB00", "#FF8F00"]; // Amber Gold (Pair of Linear Equations)
 
   // Class 8 Mathematics (Chapters 1 to 14 - Full Blueprint & Content Theme Color Alignment)
   if (chapterId === "c8-math-1") return ["#FF8C00", "#F57C00"]; // Vibrant Orange (Rational Numbers)

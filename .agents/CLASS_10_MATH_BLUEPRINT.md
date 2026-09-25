@@ -1,87 +1,87 @@
-# Class 10 Mathematics — Master Blueprint & Gold Standards
+# Class 10 Mathematics Master Blueprint & Upgrade Strategy
 
-This document serves as the permanent, authoritative blueprint for **Class 10 Mathematics** across all 14 chapters. Whenever creating or upgrading Class 10 Mathematics content, ALWAYS adhere strictly to these core rules and standard specifications.
+## 1. Core Mission & Philosophy
+Class 10 Mathematics is already fully solved in the app. The upgrade mission is to transform existing chapters into the **Gold-Standard Ultra Model** established by Class 8 Mathematics, maintaining 100% integrity of all existing questions while dramatically improving readability, design, and mathematical clarity.
 
 ---
 
-## 1. The 9 Core Directives (Mandatory)
+## 2. The Golden Rules (Non-Negotiable)
 
-1. **100% Web View Architecture (`isHtmlView: true`)**:
-   - All Class 10 chapters must be built using the high-performance HTML/CSS Web View model (`isHtmlView: true`).
-   - Rich dark-mode typography, stacked fractions, luxury cards, and responsive SVGs.
+1. **Zero Content Omission Guarantee:**
+   - Every single question, sub-part `(i), (ii), (iii)...`, and solved example present in the app must be preserved verbatim.
+   - Absolutely NO questions or examples are to be deleted or skipped.
 
-2. **Full Question Statements & Zero-Omission Guarantee**:
-   - **Zero Omission:** Every single question and example from every exercise must be included verbatim.
-   - **Full Context:** All word problems, algebraic equations, geometry problem statements, and real-life scenarios must be written out completely in Pure White (`#FFFFFF`). Never summarize or skip sub-parts `(i), (ii), (iii)...`.
+2. **Zero Extra Questions Added:**
+   - Do NOT invent or add extra textbook questions outside of what is already in the syllabus / existing app content.
+   - Keep the exact question inventory.
 
-3. **Strict Stacked Fractions ("a over b" Format, Never "a/b")**:
-   - **Strictly Forbidden:** Raw horizontal slash fractions like `a/b`, `p/q`, `1/2`, or `(a+b)/c`.
-   - **Mandatory Format:** Fractions must ALWAYS be rendered in true vertical stacked format ("a over b"):
+3. **Student-Friendly, Direct Solutions (NO Bulky Step Headers):**
+   - Eliminate bulky paragraph titles like "Step 1: Write equation", "Step 2: Transpose terms".
+   - Use clean, line-by-line algebraic steps using `&rArr;` with concise reasons in brackets (e.g., `[From equation (1)]`, `[Multiplying by 3]`, `[Transposing 5 to RHS]`).
+   - Keep explanations crisp, direct, and easy to follow for Class 10 board students.
+
+4. **100% Rich Web View Architecture (`isHtmlView: true`):**
+   - All content rendered via `htmlOverview` and `htmlExercises`.
+   - Dark-mode card container `.q-card` with theme-colored border `1.5px solid rgba(themeColor, 0.35)`.
+   - Card left border or accent in `themeColor`.
+   - Final answers cleanly presented in crisp green boxes:
      ```html
-     <span class="frac">
-       <span class="num">a</span>
-       <span class="den">b</span>
-     </span>
+     <div class="ans-box">
+       <span class="ans-label">✓ Solution: </span>
+       <span class="ans-val">x = 2, y = 3</span>
+     </div>
      ```
-   - Standard line-height: `.sol-step { line-height: 2.35; }`, math row margin: `8px 0;`, and `.frac { margin: 2px 6px; line-height: 1.25; }`.
 
-4. **Chapter Theme Color & Visual Hierarchy**:
-   - Primary `themeColor` matches the chapter's button gradient first color exactly.
-   - Question Titles: `<div class="q-title" style="color: ${themeColor}; font-size: 17.5px; font-weight: 700;">Question X:</div>`
-   - Sub-Parts: `<b style="color: ${themeColor}; font-size: 16px;">(i)</b>`
-   - Card Left Accent Border: `border-left: 3.5px solid ${themeColor};`
-   - Final Answer Box: Crisp Green Box (`border: 1.5px solid #4CAF50;`) with `<span class="ans-label">✓ Final Answer: </span><span class="ans-val">...</span>`.
+5. **Strict Vertical Stacked Fractions (Never Raw "a/b"):**
+   - Raw `a/b` in calculations is strictly forbidden.
+   - Always format fractions using:
+     ```html
+     <span class="frac"><span class="num">numerator</span><span class="den">denominator</span></span>
+     ```
+   - Ensure generous line-height (`.sol-step { line-height: 2.35; }`) and margin to prevent vertical collisions.
 
-5. **Student-Friendly, Direct Line-by-Line Algebraic Solutions (NO Bulky Step Headers)**:
-   - Clean, direct algebraic steps using `&rArr;` with concise reasons in brackets (e.g., `[By Fundamental Theorem of Arithmetic]`, `[Since HCF(a, b) × LCM(a, b) = a × b]`, `[By Method of Contradiction]`).
-   - No repetitive, intimidating "Step 1:", "Step 2:" paragraph titles.
+6. **Clean Coordinate & Data Tables:**
+   - Tables styled with dark background, theme-colored headers, and light borders.
+   - Never clip on mobile; wrap in responsive containers if wide.
 
-6. **Exact High-Contrast Figures & SVGs (Pure White BG & Zero Overlapping)**:
-   - Factor trees, coordinate axes, parabola curves, tangents to circles, geometric triangles, and 3D solids.
-   - Clean `#FFFFFF` background enclosed in a sleek `.diagram-wrapper` with generous viewBox padding so endpoint labels and numbers never cut off on narrow screens.
-
-7. **Dedicated Sub-Tabs for Each Exercise & Solved Examples**:
-   - Every exercise and example set mapped to its own independent tab via `chapterData.exercises` and `chapterData.htmlExercises`:
+7. **Dedicated Sub-Tab For Each Exercise & Solved Examples:**
+   - In `exercises` array:
      ```typescript
      exercises: [
        { id: "examples", name: "Examples", questions: [] },
-       { id: "ex1-1", name: "Exercise 1.1", questions: [] },
-       { id: "ex1-2", name: "Exercise 1.2", questions: [] },
-     ],
-     htmlExercises: {
-       "examples": examplesHtml,
-       "ex1-1": ex1_1Html,
-       "ex1-2": ex1_2Html,
-     }
+       { id: "exercise1", name: "Exercise X.1", questions: [] },
+       { id: "exercise2", name: "Exercise X.2", questions: [] },
+       ...
+     ]
      ```
+   - Corresponding keys in `htmlExercises`: `{ examples, exercise1, exercise2, ... }`.
 
-8. **Zero Raw LaTeX / Markdown Remnants in HTML View (`$`, `\text`, `\times`, `&text`)**:
-   - MathJax does not parse raw LaTeX inside HTML string views.
-   - Always use standard semantic HTML tags: `<b>...</b>`, `<i>x</i>`, `&times;`, `&minus;`, `<span class="frac">...</span>`, `&radic;`, `&rArr;`.
-   - Powers and exponents must use `<sup>2</sup>`, `<sup>n</sup>` (never raw `^`).
-
-9. **Dedicated 3-Tab Architecture**:
-   - **Tab 1: Overview** — Comprehensive concept summary, glossary, graphical intuitions, and Master Revision Formula Cheat Sheet.
-   - **Tab 2: Solutions** — Exercise-by-exercise horizontal sub-tabs with all questions, sub-parts, and solved examples.
-   - **Tab 3: MCQs** — 15 interactive quiz questions with `A):   `, `B):   `, `C):   `, `D):   `, instant green/red feedback, and score dashboard.
+8. **Theme Color Palette for Class 10 Math:**
+   - **Ch 1 (Real Numbers):** `#00E5FF` (Electric Cyan)
+   - **Ch 2 (Polynomials):** `#00C853` (Vibrant Emerald Green)
+   - **Ch 3 (Pair of Linear Equations):** `#FFAB00` (Amber Gold)
+   - **Ch 4 (Quadratic Equations):** `#FF6D00` (Vibrant Orange)
+   - **Ch 5 (Arithmetic Progressions):** `#7C4DFF` (Deep Purple / Violet)
+   - **Ch 6 (Triangles):** `#00B0FF` (Bright Sky Blue)
+   - **Ch 7 (Coordinate Geometry):** `#FF4081` (Rose Pink)
+   - **Ch 8 (Introduction to Trigonometry):** `#E040FB` (Neon Magenta)
+   - **Ch 9 (Applications of Trigonometry):** `#1DE9B6` (Teal / Turquoise)
+   - **Ch 10 (Circles):** `#FFD600` (Bright Yellow)
+   - **Ch 11 (Areas Related to Circles):** `#64DD17` (Lime Green)
+   - **Ch 12 (Surface Areas and Volumes):** `#FF3D00` (Deep Coral Red)
+   - **Ch 13 (Statistics):** `#00E676` (Spring Green)
+   - **Ch 14 (Probability):** `#2979FF` (Electric Blue)
 
 ---
 
-## 2. Class 10 NCERT Mathematics Chapters & Theme Color Palette
+## 3. Resume Trigger / Quick Prompt for Future Sessions
+Whenever the user says:
+> **"bhai class 10 math continue karo"** OR **"bhai class 10 math chapter X karo"** OR mentions **"same strategy se class 10 math upgrade karo"**
 
-| Ch # | Chapter Title | Primary Theme Color | Button Gradient | Identity |
-| :---: | :--- | :---: | :---: | :--- |
-| **1** | Real Numbers | `#E91E63` (Rose Pink) | `["#E91E63", "#C2185B"]` | 🌸 Deep Rose |
-| **2** | Polynomials | `#00C853` (Vibrant Emerald) | `["#00C853", "#1B5E20"]` | 🌿 Emerald Green |
-| **3** | Pair of Linear Equations in Two Variables | `#FFAB00` (Amber Gold) | `["#FFAB00", "#FF6D00"]` | 🍯 Amber Flame |
-| **4** | Quadratic Equations | `#AA00FF` (Electric Purple) | `["#AA00FF", "#4A148C"]` | 🔮 Vivid Purple |
-| **5** | Arithmetic Progressions | `#00B8D4` (Aqua Cyan) | `["#00B8D4", "#00838F"]` | 🩵 Aqua Cyan |
-| **6** | Triangles | `#FF1744` (Crimson Red) | `["#FF1744", "#D50000"]` | 🔴 Bold Crimson |
-| **7** | Coordinate Geometry | `#7C4DFF` (Royal Violet) | `["#7C4DFF", "#4A00E0"]` | 🟣 Royal Violet |
-| **8** | Introduction to Trigonometry | `#FF6D00` (Tangerine Flame) | `["#FF6D00", "#E65100"]` | 🍊 Bright Tangerine |
-| **9** | Some Applications of Trigonometry | `#2979FF` (Cobalt Blue) | `["#2979FF", "#1565C0"]` | 💎 Cobalt Blue |
-| **10** | Circles | `#FFD600` (Sunflower Gold) | `["#FFD600", "#F57F17"]` | 🌻 Sunflower Gold |
-| **11** | Areas Related to Circles | `#00BCD4` (Teal) | `["#00BCD4", "#006064"]` | 🌊 Deep Teal |
-| **12** | Surface Areas and Volumes | `#FF5722` (Deep Orange) | `["#FF5722", "#D84315"]` | 🌋 Fiery Terracotta |
-| **13** | Statistics | `#E040FB` (Neon Magenta) | `["#E040FB", "#8E24AA"]` | 💖 Neon Magenta |
-| **14** | Probability | `#84CC16` (Electric Lime) | `["#84CC16", "#4D7C0F"]` | 🍏 Electric Lime |
+The agent should immediately:
+1. Refer to this blueprint (`.agents/CLASS_10_MATH_BLUEPRINT.md`).
+2. Audit the target chapter in `client/data/content/math-chX.ts` (identify all examples, exercises, and questions).
+3. Check and apply the theme color gradient in `client/data/chapters.ts` for that chapter.
+4. Upgrade the chapter with `isHtmlView: true`, `htmlOverview`, `htmlExercises`, and MCQs following all rules above.
+5. Verify with `npx tsc --noEmit` (ensure 0 errors).
+6. Present the summary to the user for review.
