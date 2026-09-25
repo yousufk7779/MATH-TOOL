@@ -1,1960 +1,363 @@
 import { ChapterContent } from "../types";
 
 export const mathCh5: ChapterContent = {
-  id: "ch5",
-  number: 5,
-  title: "Arithmetic Progressions",
-  introduction: "An Arithmetic Progression (AP) is a sequence of numbers in which each term is obtained by adding a fixed number to the preceding term.",
-  definitions: [
-  {
-    "term": "First term (a)",
-    "description": "The starting value."
-  },
-  {
-    "term": "Common difference (d)",
-    "description": "The constant difference between consecutive terms."
-  },
-  {
-    "term": "nth term (an)",
-    "description": "The general term of the AP."
-  }
-],
-  keyPoints: [
-  "The formula for the nth term is an = a + (n-1)d.",
-  "The formula for the sum of the first n terms is Sn = <sup>n</sup>/<sub>2</sub> [2a + (n-1)d]."
-],
-  formulas: [],
-  crux: [
-  "Recognizing the constant difference makes predicting future values simple.",
-  "If a, b, c are in AP, then 2b = a + c."
-],
-  summary: [
-  "Progressions streamline repetitive arithmetic addition, proving highly useful in compounding, simple interest, and uniform growth models.",
-  "Carefully read and understand every problem statement before jumping into the solution.",
-  "A strong grasp of the core concepts is the key to solving complex problems easily.",
-  "Make a habit of practicing the solved examples to get familiar with standard solution formats."
-],
-  examples: [],
-  exercises: [
-    { id: "examples", name: "Examples", questions: [] },
-    { id: "exercise1", name: "Exercise 5.1", questions: [] },
-    { id: "exercise2", name: "Exercise 5.2", questions: [] },
-    { id: "exercise3", name: "Exercise 5.3", questions: [] }
+  "id": "ch5",
+  "number": 5,
+  "title": "Arithmetic Progressions",
+  "introduction": "An Arithmetic Progression (AP) is a sequence of numbers in which each term is obtained by adding a fixed number to the preceding term, except the first term. It provides the foundation for uniform discrete mathematical modeling and summation series.",
+  "definitions": [
+    {
+      "term": "Arithmetic Progression (AP)",
+      "description": "A sequence of numbers in which each term is obtained by adding a fixed number (common difference) to the preceding term, except the first term."
+    },
+    {
+      "term": "First Term (a)",
+      "description": "The initial number or starting term of the Arithmetic Progression."
+    },
+    {
+      "term": "Common Difference (d)",
+      "description": "The fixed number added to each successive term, given by d = aₖ₊₁ − aₖ. It can be positive, negative, or zero."
+    },
+    {
+      "term": "General Term (an)",
+      "description": "The nth term of an AP given by the formula aₙ = a + (n − 1)d."
+    },
+    {
+      "term": "Arithmetic Mean (AM)",
+      "description": "For any two numbers a and c, the number b = (a + c)/2 is their Arithmetic Mean, ensuring a, b, c form an AP."
+    }
   ],
-  mcqs: [
-  {
-    "id": "mcq1",
-    "question": "<span style=\"font-weight: normal;\">The fixed number added to each term in an AP is called:</span>",
-    "options": [
-      "(A) First term",
-      "(B) Common difference",
-      "(C) Sum",
-      "(D) Last term"
-    ],
-    "correctAnswer": "B"
-  },
-  {
-    "id": "mcq2",
-    "question": "<span style=\"font-weight: normal;\">If the first term is a and common difference is d, the second term is:</span>",
-    "options": [
-      "(A) a + d",
-      "(B) a - d",
-      "(C) ad",
-      "(D) a / d"
-    ],
-    "correctAnswer": "A"
-  },
-  {
-    "id": "mcq3",
-    "question": "<span style=\"font-weight: normal;\">Which of the following is an AP?</span>",
-    "options": [
-      "(A) 2, 4, 8, 16",
-      "(B) 1, 3, 5, 7",
-      "(C) 1, 2, 4, 7",
-      "(D) 1, 5, 10, 15"
-    ],
-    "correctAnswer": "B"
-  },
-  {
-    "id": "mcq4",
-    "question": "<span style=\"font-weight: normal;\">The common difference of the AP: 10, 7, 4... is:</span>",
-    "options": [
-      "(A) 3",
-      "(B) -3",
-      "(C) 7",
-      "(D) 4"
-    ],
-    "correctAnswer": "B"
-  },
-  {
-    "id": "mcq5",
-    "question": "<span style=\"font-weight: normal;\">The nth term formula for an AP is:</span>",
-    "options": [
-      "(A) a + (n - 1)d",
-      "(B) a + nd",
-      "(C) 2a + (n - 1)d",
-      "(D) a - (n - 1)d"
-    ],
-    "correctAnswer": "A"
-  },
-  {
-    "id": "mcq6",
-    "question": "<span style=\"font-weight: normal;\">In an AP, if a = 5 and d = 2, what is the 10th term?</span>",
-    "options": [
-      "(A) 20",
-      "(B) 23",
-      "(C) 25",
-      "(D) 27"
-    ],
-    "correctAnswer": "B"
-  },
-  {
-    "id": "mcq7",
-    "question": "<span style=\"font-weight: normal;\">The sum of the first n terms of an AP starting with a and ending with l is:</span>",
-    "options": [
-      "(A) n/2 (a + l)",
-      "(B) n (a + l)",
-      "(C) (a + l) / 2",
-      "(D) n/2 (a - l)"
-    ],
-    "correctAnswer": "A"
-  },
-  {
-    "id": "mcq8",
-    "question": "<span style=\"font-weight: normal;\">If a, b, c are in AP, then 2b is equal to:</span>",
-    "options": [
-      "(A) a + c",
-      "(B) a - c",
-      "(C) ac",
-      "(D) a / c"
-    ],
-    "correctAnswer": "A"
-  },
-  {
-    "id": "mcq9",
-    "question": "<span style=\"font-weight: normal;\">The common difference of an AP can be:</span>",
-    "options": [
-      "(A) Positive",
-      "(B) Negative",
-      "(C) Zero",
-      "(D) All of these"
-    ],
-    "correctAnswer": "D"
-  },
-  {
-    "id": "mcq10",
-    "question": "<span style=\"font-weight: normal;\">The first term of the AP: -5, -1, 3, 7 is:</span>",
-    "options": [
-      "(A) -5",
-      "(B) -1",
-      "(C) 1",
-      "(D) 7"
-    ],
-    "correctAnswer": "A"
-  }
-],
-  isHtmlView: true,
-  htmlExercises: {
-    examples: `<!DOCTYPE html><html lang="en"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapter 5 Examples - Solutions</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
-
-        body {
-            font-family: 'Noto Sans', sans-serif, sans-serif;
-            line-height: 1.8;
-            color: #000080;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px;
-            
-            
-            
-        }
-
-        .container {
-            
-            padding-left: 20px;
-            min-height: 100vh;
-        }
-
-        h1,
-        h2 {
-            color: #d32f2f;
-            text-align: center;
-            text-decoration: underline;
-        }
-
-        .question {
-            font-weight: bold;
-            color: #000;
-            margin-top: 2em;
-            margin-bottom: 1em;
-        }
-
-        .step {
-            display: block;
-            margin-bottom: 0px;
-        }
-
-        .frac {
-            display: inline-block;
-            vertical-align: middle;
-            text-align: center;
-            margin: 0 4px;
-        }
-
-        .frac-top {
-            display: block;
-            border-bottom: 1px solid #000080;
-            padding: 0 2px;
-            line-height: 1;
-        }
-
-        .frac-bottom {
-            display: block;
-            padding: 0 2px;
-            line-height: 1;
-        }
-
-        .formula {
-            color: #d35400;
-            font-weight: bold;
-        }
-
-        .answer {
-            font-weight: bold;
-            display: block;
-            margin-top: 1em;
-            text-decoration: underline;
-        }
-    </style>
-
-    <style>
-        img {
-            background: #FFFFFF;
-            padding: 10px;
-            border-radius: 10px;
-            width: 100%;
-            max-width: 320px;
-            height: 180px;
-            object-fit: contain;
-            display: block;
-            margin: 15px auto;
-            border: 1px solid #e9ecef;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-        }
-    </style>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    renderMathInElement(document.body, {
-      delimiters: [
-        {left: '\\\\(', right: '\\\\)', display: false},
-        {left: '\\\\[', right: '\\\\]', display: true}
-      ]
-    });
-  });
-</script>
-
-<style>
-  body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
-  .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #66BB6A !important; color: #fff !important; }
-  h1, h2, h3, h4, h5, h6 { color: #66BB6A !important; }
-  .question { color: #66BB6A !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-question { color: #66BB6A !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
-  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
-  .formula { color: #4CAF50 !important; }
-  .true-text { color: #4CAF50 !important; }
-  .false-text { color: #F44336 !important; }
-  table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
-  .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
-  img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #66BB6A !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
-  * { font-family: 'Noto Sans', sans-serif !important; }
-  
-  /* Make sure every sub part of the question has the question color */
-  strong[style*="color: #FF6B6B"] { color: #66BB6A !important; }
-  strong[style*="color: #ff6b6b"] { color: #66BB6A !important; }
-
-  .question { font-size: 0.95em !important; }
-  .sub-question { font-size: 0.9em !important; }
-  .step { font-size: 0.9em !important; }
-  .final-answer { font-size: 0.95em !important; }
-</style>
-</head>
-
-<body>
-<div class="container">
-
-        
-        
-
-        <!-- Example 1 -->
-        <div class="question">Example 1. For the AP: <span class="frac"><span class="frac-top">3</span><span class="frac-bottom">2</span></span>, <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span>, -<span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span>, -<span class="frac"><span class="frac-top">3</span><span class="frac-bottom">2</span></span>... write first term a and common difference d.</div>
-        <div class="step">First term a = <span class="frac"><span class="frac-top">3</span><span class="frac-bottom">2</span></span></div>
-        <div class="step">d = Second term - First term</div>
-        <div class="step">d = <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span> - <span class="frac"><span class="frac-top">3</span><span class="frac-bottom">2</span></span></div>
-        <div class="step">d = <span class="frac"><span class="frac-top">1 - 3</span><span class="frac-bottom">2</span></span> = <span class="frac"><span class="frac-top">-2</span><span class="frac-bottom">2</span></span> = -1</div>
-        <div class="final-answer">Answer: a = <span class="frac"><span class="frac-top">3</span><span class="frac-bottom">2</span></span>, d = -1</div>
-
-        <!-- Example 2 -->
-        <div class="question">Example 2. Which of the following lists of numbers form an AP? If yes, write next two
-            terms.</div>
-
-        <div class="sub-question">(i) 4, 10, 16, 22...</div>
-        <div class="step">10 - 4 = 6</div>
-        <div class="step">16 - 10 = 6</div>
-        <div class="step">22 - 16 = 6</div>
-        <div class="step">Difference is constant (6). Yes, it is an AP.</div>
-        <div class="step">Next terms: 22 + 6 = 28, 28 + 6 = 34</div>
-        <div class="final-answer">Answer: Yes; 28, 34</div>
-
-        <div class="sub-question">(ii) 1, -1, -3, -5...</div>
-        <div class="step">-1 - 1 = -2</div>
-        <div class="step">-3 - (-1) = -2</div>
-        <div class="step">-5 - (-3) = -2</div>
-        <div class="step">Difference is constant (-2). Yes, it is an AP.</div>
-        <div class="step">Next terms: -5 - 2 = -7, -7 - 2 = -9</div>
-        <div class="final-answer">Answer: Yes; -7, -9</div>
-
-        <div class="sub-question">(iii) -2, 2, -2, 2, -2...</div>
-        <div class="step">2 - (-2) = 4</div>
-        <div class="step">-2 - 2 = -4</div>
-        <div class="step">Difference is not constant. No, it is not an AP.</div>
-        <div class="final-answer">Answer: No</div>
-
-        <div class="sub-question">(iv) 1, 1, 1, 2, 2, 2, 3, 3, 3...</div>
-        <div class="step">1 - 1 = 0</div>
-        <div class="step">2 - 1 = 1</div>
-        <div class="step">Difference is not constant. No, it is not an AP.</div>
-        <div class="final-answer">Answer: No</div>
-
-        <!-- Example 3 -->
-        <div class="question">Example 3. Find the 10th term of the AP: 2, 7, 12...</div>
-        <div class="step">a = 2, d = 7 - 2 = 5, n = 10</div>
-        <div class="step">Formula: <span class="formula">aₙ = a + (n - 1)d</span></div>
-        <div class="step">a₁₀ = 2 + (10 - 1)5</div>
-        <div class="step">a₁₀ = 2 + 9(5)</div>
-        <div class="step">a₁₀ = 2 + 45 = 47</div>
-        <div class="final-answer">Answer: 47</div>
-
-        <!-- Example 4 -->
-        <div class="question">Example 4. Which term of the AP: 21, 18, 15... is -81? Also, is any term 0?</div>
-        <div class="step">a = 21, d = 18 - 21 = -3</div>
-        <div class="step">Let nth term be -81.</div>
-        <div class="step">-81 = 21 + (n - 1)(-3)</div>
-        <div class="step">-81 - 21 = (n - 1)(-3)</div>
-        <div class="step">-102 = (n - 1)(-3)</div>
-        <div class="step">n - 1 = -102 / -3 = 34</div>
-        <div class="step">n = 35. So, 35th term is -81.</div>
-        <br>
-        <div class="step">Now check for 0:</div>
-        <div class="step">0 = 21 + (m - 1)(-3)</div>
-        <div class="step">-21 = (m - 1)(-3)</div>
-        <div class="step">m - 1 = 7</div>
-        <div class="step">m = 8. So, 8th term is 0.</div>
-        <div class="final-answer">Answer: 35th term is -81; Yes, 8th term is 0</div>
-
-        <!-- Example 5 -->
-        <div class="question">Example 5. Determine the AP whose 3rd term is 5 and 7th term is 9.</div>
-        <div class="step">a₃ = a + 2d = 5 ...(1)</div>
-        <div class="step">a₇ = a + 6d = 9 ...(2)</div>
-        <div class="step">Subtract (1) from (2):</div>
-        <div class="step">4d = 4 → d = 1</div>
-        <div class="step">Put d=1 in (1): a + 2(1) = 5 → a = 3</div>
-        <div class="step">AP is: 3, 4, 5, 6...</div>
-        <div class="final-answer">Answer: 3, 4, 5, 6...</div>
-
-        <!-- Example 6 -->
-        <div class="question">Example 6. Check whether 301 is a term of 5, 11, 17, 23...</div>
-        <div class="step">a = 5, d = 11 - 5 = 6</div>
-        <div class="step">Let 301 be nth term.</div>
-        <div class="step">301 = 5 + (n - 1)6</div>
-        <div class="step">296 = (n - 1)6</div>
-        <div class="step">n - 1 = \\(\\frac{296}{6}\\) = 49.33...</div>
-        <div class="step">Since n is not a whole number (integer), 301 is not a term.</div>
-        <div class="final-answer">Answer: No, it is not a term.</div>
-
-        <!-- Example 7 -->
-        <div class="question">Example 7. How many two-digit numbers are divisible by 3?</div>
-        <div class="step">Two digit numbers: 10 to 99.</div>
-        <div class="step">First divisible by 3: 12. Last: 99.</div>
-        <div class="step">List: 12, 15, 18, ..., 99</div>
-        <div class="step">This is an AP with a = 12, d = 3, aₙ = 99.</div>
-        <div class="step">99 = 12 + (n - 1)3</div>
-        <div class="step">87 = (n - 1)3</div>
-        <div class="step">n - 1 = 29</div>
-        <div class="step">n = 30</div>
-        <div class="final-answer">Answer: 30 numbers</div>
-
-        <!-- Example 8 -->
-        <div class="question">Example 8. Find the 11th term from the last term of the AP: 10, 7, 4, ..., -62.</div>
-        <div class="step">Method: Reverse the AP.</div>
-        <div class="step">New AP: -62, ..., 4, 7, 10</div>
-        <div class="step">a = -62, d = 3 (since original d was -3)</div>
-        <div class="step">Find 11th term: a₁₁ = a + 10d</div>
-        <div class="step">a₁₁ = -62 + 10(3)</div>
-        <div class="step">a₁₁ = -62 + 30 = -32</div>
-        <div class="final-answer">Answer: -32</div>
-
-        <!-- Example 9 -->
-        <div class="question">Example 9. ₹ 1000 invested at 8% SI. Calculate interest at end of each year. Do they form
-            AP? Find interest for 30 years.</div>
-        <div class="step">Simple Interest = (P × R × T) / 100</div>
-        <div class="step">Year 1: (1000 × 8 × 1)/100 = ₹ 80</div>
-        <div class="step">Year 2: (1000 × 8 × 2)/100 = ₹ 160</div>
-        <div class="step">Year 3: (1000 × 8 × 3)/100 = ₹ 240</div>
-        <div class="step">List: 80, 160, 240...</div>
-        <div class="step">Difference is 80 (constant). Yes, it is an AP.</div>
-        <div class="step">Find interest for 30 years (30th term).</div>
-        <div class="step">a₃₀ = a + 29d</div>
-        <div class="step">a₃₀ = 80 + 29(80)</div>
-        <div class="step">Or simply, I = (1000 × 8 × 30)/100 = 2400.</div>
-        <div class="step">Using AP: 80 + 2320 = 2400.</div>
-        <div class="final-answer">Answer: Yes AP; Interest at 30 years = ₹ 2400</div>
-
-        <!-- Example 10 -->
-        <div class="question">Example 10. Rose plants: 23, 21, 19... last row 5. How many rows?</div>
-        <div class="step">a = 23, d = -2, aₙ = 5</div>
-        <div class="step">5 = 23 + (n - 1)(-2)</div>
-        <div class="step">-18 = (n - 1)(-2)</div>
-        <div class="step">n - 1 = 9</div>
-        <div class="step">n = 10</div>
-        <div class="final-answer">Answer: 10 rows</div>
-
-        <!-- Example 11 -->
-        <div class="question">Example 11. Find sum of first 22 terms of AP: 8, 3, -2...</div>
-        <div class="step">a = 8, d = 3 - 8 = -5, n = 22</div>
-        <div class="step">Sₙ = <span class="frac"><span class="frac-top">n</span><span class="frac-bottom">2</span></span>[2a + (n - 1)d]</div>
-        <div class="step">S₂₂ = <span class="frac"><span class="frac-top">22</span><span class="frac-bottom">2</span></span>[2(8) + 21(-5)]</div>
-        <div class="step">S₂₂ = 11[16 - 105]</div>
-        <div class="step">S₂₂ = 11(-89)</div>
-        <div class="step">S₂₂ = -979</div>
-        <div class="final-answer">Answer: -979</div>
-
-        <!-- Example 12 -->
-        <div class="question">Example 12. Sum of first 14 terms is 1050, first term is 10. Find 20th term.</div>
-        <div class="step">S₁₄ = 1050, a = 10, n = 14</div>
-        <div class="step">1050 = <span class="frac"><span class="frac-top">14</span><span class="frac-bottom">2</span></span>[2(10) + 13d]</div>
-        <div class="step">1050 = 7[20 + 13d]</div>
-        <div class="step">150 = 20 + 13d</div>
-        <div class="step">130 = 13d → d = 10</div>
-        <div class="step">Find a₂₀ = a + 19d</div>
-        <div class="step">a₂₀ = 10 + 19(10)</div>
-        <div class="step">a₂₀ = 10 + 190 = 200</div>
-        <div class="final-answer">Answer: 200</div>
-
-        <!-- Example 13 -->
-        <div class="question">Example 13. How many terms of AP: 24, 21, 18... must be taken so sum is 78?</div>
-        <div class="step">a = 24, d = -3, Sₙ = 78</div>
-        <div class="step">78 = <span class="frac"><span class="frac-top">n</span><span class="frac-bottom">2</span></span>[2(24) + (n - 1)(-3)]</div>
-        <div class="step">156 = n[48 - 3n + 3]</div>
-        <div class="step">156 = n[51 - 3n]</div>
-        <div class="step">156 = 51n - 3n²</div>
-        <div class="step">3n² - 51n + 156 = 0</div>
-        <div class="step">Divide by 3: n² - 17n + 52 = 0</div>
-        <div class="step">(n - 4)(n - 13) = 0</div>
-        <div class="step">n = 4 or n = 13</div>
-        <div class="step">Both values are valid.</div>
-        <div class="final-answer">Answer: 4 or 13 terms</div>
-
-        <!-- Example 14 -->
-        <div class="question">Example 14. Find the sum of:</div>
-        <div class="sub-question">(i) First 1000 positive integers.</div>
-        <div class="step">S = 1 + 2 + ... + 1000</div>
-        <div class="step">Use Sₙ = <span class="frac"><span class="frac-top">n(n + 1)</span><span class="frac-bottom">2</span></span></div>
-        <div class="step">S₁₀₀₀ = <span class="frac"><span class="frac-top">1000 × 1001</span><span class="frac-bottom">2</span></span></div>
-        <div class="step">S₁₀₀₀ = 500 × 1001 = 500500</div>
-        <div class="final-answer">Answer: 500500</div>
-
-        <div class="sub-question">(ii) First n positive integers.</div>
-        <div class="step">Formula derived from AP where a=1, d=1, l=n.</div>
-        <div class="final-answer">Answer: <span class="frac"><span class="frac-top">n(n + 1)</span><span class="frac-bottom">2</span></span></div>
-
-        <!-- Example 15 -->
-        <div class="question">Example 15. Find sum of first 24 terms where aₙ = 3 + 2n.</div>
-        <div class="step">a₁ = 3 + 2(1) = 5</div>
-        <div class="step">a₂ = 3 + 2(2) = 7</div>
-        <div class="step">a₃ = 9. So AP is 5, 7, 9...</div>
-        <div class="step">a = 5, d = 2, n = 24</div>
-        <div class="step">S₂₄ = <span class="frac"><span class="frac-top">24</span><span class="frac-bottom">2</span></span>[2(5) + 23(2)]</div>
-        <div class="step">S₂₄ = 12[10 + 46]</div>
-        <div class="step">S₂₄ = 12(56)</div>
-        <div class="step">S₂₄ = 672</div>
-        <div class="final-answer">Answer: 672</div>
-
-        <!-- Example 16 -->
-        <div class="question">Example 16. TV Manufacturer. 3rd year 600, 7th year 700. Uniform increase.</div>
-        <div class="step">a₃ = 600, a₇ = 700</div>
-        <div class="step">a + 2d = 600</div>
-        <div class="step">a + 6d = 700</div>
-        <div class="step">Subtracting: 4d = 100 → d = 25</div>
-        <div class="step">a + 50 = 600 → a = 550</div>
-        <br>
-        <div class="sub-question">(i) Production in first year</div>
-        <div class="final-answer">Answer: 550</div>
-        <br>
-        <div class="sub-question">(ii) Production in 10th year</div>
-        <div class="step">a₁₀ = a + 9d = 550 + 9(25)</div>
-        <div class="step">a₁₀ = 550 + 225 = 775</div>
-        <div class="final-answer">Answer: 775</div>
-        <br>
-        <div class="sub-question">(iii) Total production in first 7 years</div>
-        <div class="step">S₇ = <span class="frac"><span class="frac-top">7</span><span class="frac-bottom">2</span></span>[2(550) + 6(25)]</div>
-        <div class="step">S₇ = <span class="frac"><span class="frac-top">7</span><span class="frac-bottom">2</span></span>[1100 + 150]</div>
-        <div class="step">S₇ = <span class="frac"><span class="frac-top">7</span><span class="frac-bottom">2</span></span>(1250)</div>
-        <div class="step">S₇ = 7 × 625 = 4375</div>
-        <div class="final-answer">Answer: 4375</div>
-
-    </div>
-
-
-</body></html>`,
-    exercise1: `<!DOCTYPE html><html lang="en"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maths Solutions - Notebook Style</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
-        /* Handwriting font */
-
-        body {
-            font-family: 'Noto Sans', sans-serif, sans-serif;
-            /* Fallback to sans-serif if Kalam fails */
-            line-height: 1.8;
-            color: #000080;
-            /* Dark Blue like ink */
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px;
-            
-            
-            
-            /* Notebook lines */
-        }
-
-        /* Simulating notebook margin */
-        .container {
-            
-            padding-left: 20px;
-            min-height: 100vh;
-        }
-
-        h1,
-        h2 {
-            color: #d32f2f;
-            /* Red heading */
-            text-align: center;
-            text-decoration: underline;
-        }
-
-        .question {
-            font-weight: bold;
-            color: #000;
-            margin-top: 2em;
-            margin-bottom: 1em;
-        }
-
-        .step {
-            display: block;
-            margin-bottom: 0px;
-            /* Steps sit on lines */
-        }
-
-        /* Vertical Fraction Style */
-        .frac {
-            display: inline-block;
-            vertical-align: middle;
-            text-align: center;
-            margin: 0 4px;
-        }
-
-        .frac-top {
-            display: block;
-            border-bottom: 1px solid #000080;
-            padding: 0 2px;
-            line-height: 1;
-        }
-
-        .frac-bottom {
-            display: block;
-            padding: 0 2px;
-            line-height: 1;
-        }
-
-        .formula {
-            color: #d35400;
-            /* Burnt Orange/Red for emphasis */
-            font-weight: bold;
-        }
-
-        .answer {
-            font-weight: bold;
-            display: block;
-            margin-top: 1em;
-            text-decoration: underline;
-        }
-
-        /* Utility for roots and powers */
-        sup {
-            vertical-align: super;
-            font-size: smaller;
-        }
-    </style>
-
-    <style>
-        img {
-            background: #FFFFFF;
-            padding: 10px;
-            border-radius: 10px;
-            width: 100%;
-            max-width: 320px;
-            height: 180px;
-            object-fit: contain;
-            display: block;
-            margin: 15px auto;
-            border: 1px solid #e9ecef;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-        }
-    </style>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    renderMathInElement(document.body, {
-      delimiters: [
-        {left: '\\\\(', right: '\\\\)', display: false},
-        {left: '\\\\[', right: '\\\\]', display: true}
-      ]
-    });
-  });
-</script>
-
-<style>
-  body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
-  .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #66BB6A !important; color: #fff !important; }
-  h1, h2, h3, h4, h5, h6 { color: #66BB6A !important; }
-  .question { color: #66BB6A !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-question { color: #66BB6A !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
-  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
-  .formula { color: #4CAF50 !important; }
-  .true-text { color: #4CAF50 !important; }
-  .false-text { color: #F44336 !important; }
-  table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
-  .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
-  img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #66BB6A !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
-  * { font-family: 'Noto Sans', sans-serif !important; }
-  
-  /* Make sure every sub part of the question has the question color */
-  strong[style*="color: #FF6B6B"] { color: #66BB6A !important; }
-  strong[style*="color: #ff6b6b"] { color: #66BB6A !important; }
-
-  .question { font-size: 0.95em !important; }
-  .sub-question { font-size: 0.9em !important; }
-  .step { font-size: 0.9em !important; }
-  .final-answer { font-size: 0.95em !important; }
-</style>
-</head>
-
-<body>
-<div class="container">
-
-        
-
-        
-
-        <!-- Question 1 -->
-        <div class="question">Question 1. In which situations does the list of numbers make an AP?</div>
-
-        <div class="sub-question">(i) Taxi fare: ₹ 15 for first km, ₹ 8 for additional km.</div>
-        <div class="step">Fare for 1st km = 15</div>
-        <div class="step">Fare for 2nd km = 15 + 8 = 23</div>
-        <div class="step">Fare for 3rd km = 23 + 8 = 31</div>
-        <div class="step">List: 15, 23, 31, ...</div>
-        <div class="step">Difference = 23 - 15 = 8</div>
-        <div class="step">Difference = 31 - 23 = 8</div>
-        <div class="step">Difference is same.</div>
-        <div class="final-answer">Answer: Yes</div>
-
-        <div class="sub-question">(ii) Air in cylinder: Removes <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">4</span></span> of remaining air.</div>
-        <div class="step">Initial air = 1</div>
-        <div class="step">Removed 1st time = <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">4</span></span></div>
-        <div class="step">Remaining = 1 - <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">4</span></span> = <span class="frac"><span class="frac-top">3</span><span class="frac-bottom">4</span></span></div>
-        <br>
-        <div class="step">Removed 2nd time = <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">4</span></span> × <span class="frac"><span class="frac-top">3</span><span class="frac-bottom">4</span></span> = <span class="frac"><span class="frac-top">3</span><span class="frac-bottom">16</span></span></div>
-        <div class="step">Remaining = <span class="frac"><span class="frac-top">3</span><span class="frac-bottom">4</span></span> - <span class="frac"><span class="frac-top">3</span><span class="frac-bottom">16</span></span></div>
-        <div class="step">= <span class="frac"><span class="frac-top">12 - 3</span><span class="frac-bottom">16</span></span> = <span class="frac"><span class="frac-top">9</span><span class="frac-bottom">16</span></span></div>
-        <br>
-        <div class="step">d₁ = <span class="frac"><span class="frac-top">3</span><span class="frac-bottom">4</span></span> - 1 = -<span class="frac"><span class="frac-top">1</span><span class="frac-bottom">4</span></span></div>
-        <div class="step">d₂ = <span class="frac"><span class="frac-top">9</span><span class="frac-bottom">16</span></span> - <span class="frac"><span class="frac-top">3</span><span class="frac-bottom">4</span></span> = -<span class="frac"><span class="frac-top">3</span><span class="frac-bottom">16</span></span></div>
-        <div class="step">Difference is not same.</div>
-        <div class="final-answer">Answer: No</div>
-
-        <div class="sub-question">(iii) Well digging cost: ₹ 150 first metre, rises by ₹ 50.</div>
-        <div class="step">1st metre = 150</div>
-        <div class="step">2nd metre = 150 + 50 = 200</div>
-        <div class="step">3rd metre = 200 + 50 = 250</div>
-        <div class="step">Difference = 50 (constant).</div>
-        <div class="final-answer">Answer: Yes</div>
-
-        <div class="sub-question">(iv) Compound interest: ₹ 10000 at 8% per annum.</div>
-        <div class="step"><span class="formula">Amount = P(1 + <span class="frac"><span class="frac-top">R</span><span class="frac-bottom">100</span></span>)ⁿ</span></div>
-        <div class="step">Calculating amounts for each year.</div>
-        <div class="step">Interest is on increasing amount.</div>
-        <div class="step">So difference keeps increasing.</div>
-        <div class="step">Difference is not same.</div>
-        <div class="final-answer">Answer: No</div>
-
-        <!-- Question 2 -->
-        <div class="question">Question 2. Write first four terms.</div>
-
-        <div class="sub-question">(i) a = 10, d = 10</div>
-        <div class="step">a₁ = 10</div>
-        <div class="step">a₂ = 10 + 10 = 20</div>
-        <div class="step">a₃ = 20 + 10 = 30</div>
-        <div class="step">a₄ = 30 + 10 = 40</div>
-        <div class="final-answer">Answer: 10, 20, 30, 40</div>
-
-        <div class="sub-question">(ii) a = -2, d = 0</div>
-        <div class="step">a₁ = -2</div>
-        <div class="step">a₂ = -2 + 0 = -2</div>
-        <div class="step">a₃ = -2</div>
-        <div class="step">a₄ = -2</div>
-        <div class="final-answer">Answer: -2, -2, -2, -2</div>
-
-        <div class="sub-question">(iii) a = 4, d = -3</div>
-        <div class="step">a₁ = 4</div>
-        <div class="step">a₂ = 4 - 3 = 1</div>
-        <div class="step">a₃ = 1 - 3 = -2</div>
-        <div class="step">a₄ = -2 - 3 = -5</div>
-        <div class="final-answer">Answer: 4, 1, -2, -5</div>
-
-        <div class="sub-question">(iv) a = -1, d = <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span></div>
-        <div class="step">a₁ = -1</div>
-        <div class="step">a₂ = -1 + <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span> = -<span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span></div>
-        <div class="step">a₃ = -<span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span> + <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span> = 0</div>
-        <div class="step">a₄ = 0 + <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span> = <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span></div>
-        <div class="final-answer">Answer: -1, -<span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span>, 0, <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span></div>
-
-        <div class="sub-question">(v) a = -1.25, d = -0.25</div>
-        <div class="step">a₁ = -1.25</div>
-        <div class="step">a₂ = -1.25 - 0.25 = -1.50</div>
-        <div class="step">a₃ = -1.50 - 0.25 = -1.75</div>
-        <div class="step">a₄ = -1.75 - 0.25 = -2.00</div>
-        <div class="final-answer">Answer: -1.25, -1.50, -1.75, -2.00</div>
-
-        <!-- Question 3 -->
-        <div class="question">Question 3. Write first term (a) and common difference (d).</div>
-
-        <div class="sub-question">(i) 3, 1, -1, -3...</div>
-        <div class="step">a = 3</div>
-        <div class="step">d = 1 - 3 = -2</div>
-        <div class="final-answer">Answer: a = 3, d = -2</div>
-
-        <div class="sub-question">(ii) -5, -1, 3, 7...</div>
-        <div class="step">a = -5</div>
-        <div class="step">d = -1 - (-5) = -1 + 5 = 4</div>
-        <div class="final-answer">Answer: a = -5, d = 4</div>
-
-        <div class="sub-question">(iii) <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">3</span></span>, <span class="frac"><span class="frac-top">5</span><span class="frac-bottom">3</span></span>, <span class="frac"><span class="frac-top">9</span><span class="frac-bottom">3</span></span>...</div>
-        <div class="step">a = <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">3</span></span></div>
-        <div class="step">d = <span class="frac"><span class="frac-top">5</span><span class="frac-bottom">3</span></span> - <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">3</span></span> = <span class="frac"><span class="frac-top">4</span><span class="frac-bottom">3</span></span></div>
-        <div class="final-answer">Answer: a = <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">3</span></span>, d = <span class="frac"><span class="frac-top">4</span><span class="frac-bottom">3</span></span></div>
-
-        <div class="sub-question">(iv) 0.6, 1.7, 2.8...</div>
-        <div class="step">a = 0.6</div>
-        <div class="step">d = 1.7 - 0.6 = 1.1</div>
-        <div class="final-answer">Answer: a = 0.6, d = 1.1</div>
-
-        <!-- Question 4 -->
-        <div class="question">Question 4. Which are APs? If yes, find d and 3 more terms.</div>
-
-        <div class="sub-question">(i) 2, 4, 8, 16...</div>
-        <div class="step">4 - 2 = 2</div>
-        <div class="step">8 - 4 = 4</div>
-        <div class="step">Difference not same. Not AP.</div>
-        <div class="final-answer">Answer: No</div>
-
-        <div class="sub-question">(ii) 2, <span class="frac"><span class="frac-top">5</span><span class="frac-bottom">2</span></span>, 3, <span class="frac"><span class="frac-top">7</span><span class="frac-bottom">2</span></span>...</div>
-        <div class="step"><span class="frac"><span class="frac-top">5</span><span class="frac-bottom">2</span></span> -
-            2 = <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span></div>
-        <div class="step">3 - <span class="frac"><span class="frac-top">5</span><span class="frac-bottom">2</span></span> = <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span></div>
-        <div class="step">Yes AP. d = <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span></div>
-        <div class="step">Next: <span class="frac"><span class="frac-top">7</span><span class="frac-bottom">2</span></span> + <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span> = 4</div>
-        <div class="step">Next: 4 + <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span> = <span class="frac"><span class="frac-top">9</span><span class="frac-bottom">2</span></span></div>
-        <div class="step">Next: <span class="frac"><span class="frac-top">9</span><span class="frac-bottom">2</span></span> + <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span> = 5</div>
-        <div class="final-answer">Answer: Yes, 4, <span class="frac"><span class="frac-top">9</span><span class="frac-bottom">2</span></span>, 5</div>
-
-        <div class="sub-question">(iii) -1.2, -3.2, -5.2...</div>
-        <div class="step">-3.2 - (-1.2) = -2</div>
-        <div class="step">-5.2 - (-3.2) = -2</div>
-        <div class="step">Yes AP. d = -2</div>
-        <div class="step">Next: -7.2 - 2 = -9.2</div>
-        <div class="step">Next: -9.2 - 2 = -11.2</div>
-        <div class="step">Next: -11.2 - 2 = -13.2</div>
-        <div class="final-answer">Answer: Yes, -9.2, -11.2, -13.2</div>
-
-        <div class="sub-question">(iv) -10, -6, -2, 2...</div>
-        <div class="step">-6 - (-10) = 4</div>
-        <div class="step">-2 - (-6) = 4</div>
-        <div class="step">Yes AP. d = 4</div>
-        <div class="step">Next: 2 + 4 = 6</div>
-        <div class="step">Next: 6 + 4 = 10</div>
-        <div class="step">Next: 10 + 4 = 14</div>
-        <div class="final-answer">Answer: Yes, 6, 10, 14</div>
-
-        <div class="sub-question">(v) 3, 3+√2, 3+2√2...</div>
-        <div class="step">(3+√2) - 3 = √2</div>
-        <div class="step">(3+2√2) - (3+√2) = √2</div>
-        <div class="step">Yes AP. d = √2</div>
-        <div class="step">Next: 3+3√2 + √2 = 3+4√2</div>
-        <div class="step">Next: 3+4√2 + √2 = 3+5√2</div>
-        <div class="step">Next: 3+5√2 + √2 = 3+6√2</div>
-        <div class="final-answer">Answer: Yes, 3+4√2, 3+5√2, 3+6√2</div>
-
-        <div class="sub-question">(vi) 0.2, 0.22, 0.222...</div>
-        <div class="step">0.22 - 0.2 = 0.02</div>
-        <div class="step">0.222 - 0.22 = 0.002</div>
-        <div class="step">Difference not same. No AP.</div>
-        <div class="final-answer">Answer: No</div>
-
-        <div class="sub-question">(vii) 0, -4, -8...</div>
-        <div class="step">-4 - 0 = -4</div>
-        <div class="step">-8 - (-4) = -4</div>
-        <div class="step">Yes AP. d = -4</div>
-        <div class="step">Next: -12 - 4 = -16</div>
-        <div class="step">Next: -16 - 4 = -20</div>
-        <div class="step">Next: -20 - 4 = -24</div>
-        <div class="final-answer">Answer: Yes, -16, -20, -24</div>
-
-        <div class="sub-question">(viii) -<span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span>, -<span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span>, -<span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span>...</div>
-        <div class="step">Diff = 0. Yes AP. d = 0</div>
-        <div class="final-answer">Answer: Yes, -<span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span>, -<span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span>, -<span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span></div>
-
-        <div class="sub-question">(ix) 1, 3, 9, 27...</div>
-        <div class="step">3 - 1 = 2</div>
-        <div class="step">9 - 3 = 6</div>
-        <div class="step">Difference not same. No AP.</div>
-        <div class="final-answer">Answer: No</div>
-
-        <div class="sub-question">(x) a, 2a, 3a, 4a...</div>
-        <div class="step">2a - a = a</div>
-        <div class="step">3a - 2a = a</div>
-        <div class="step">Yes AP. d = a</div>
-        <div class="step">Next: 4a + a = 5a</div>
-        <div class="step">Next: 5a + a = 6a</div>
-        <div class="step">Next: 6a + a = 7a</div>
-        <div class="final-answer">Answer: Yes, 5a, 6a, 7a</div>
-
-        <div class="sub-question">(xi) a, a², a³, a⁴...</div>
-        <div class="step">a² - a = a(a-1)</div>
-        <div class="step">a³ - a² = a²(a-1)</div>
-        <div class="step">Difference not same. No AP.</div>
-        <div class="final-answer">Answer: No</div>
-
-        <div class="sub-question">(xii) √2, √8, √18, √32...</div>
-        <div class="step">Simplify terms:</div>
-        <div class="step">√2, 2√2, 3√2, 4√2...</div>
-        <div class="step">2√2 - √2 = √2</div>
-        <div class="step">3√2 - 2√2 = √2</div>
-        <div class="step">Yes AP. d = √2</div>
-        <div class="step">Next: 4√2 + √2 = 5√2 = √50</div>
-        <div class="step">Next: 5√2 + √2 = 6√2 = √72</div>
-        <div class="step">Next: 6√2 + √2 = 7√2 = √98</div>
-        <div class="final-answer">Answer: Yes, √50, √72, √98</div>
-
-        <div class="sub-question">(xiii) √3, √6, √9, √12...</div>
-        <div class="step">√6 - √3 = √3(√2 - 1)</div>
-        <div class="step">√9 - √6 = 3 - √6</div>
-        <div class="step">Difference not same. No AP.</div>
-        <div class="final-answer">Answer: No</div>
-
-        <div class="sub-question">(xiv) 1², 3², 5², 7²...</div>
-        <div class="step">1, 9, 25, 49...</div>
-        <div class="step">9 - 1 = 8</div>
-        <div class="step">25 - 9 = 16</div>
-        <div class="step">Difference not same. No AP.</div>
-        <div class="final-answer">Answer: No</div>
-
-        <div class="sub-question">(xv) 1², 5², 7², 73...</div>
-        <div class="step">1, 25, 49, 73...</div>
-        <div class="step">25 - 1 = 24</div>
-        <div class="step">49 - 25 = 24</div>
-        <div class="step">73 - 49 = 24</div>
-        <div class="step">Yes AP. d = 24</div>
-        <div class="step">Next: 73 + 24 = 97</div>
-        <div class="step">Next: 97 + 24 = 121</div>
-        <div class="step">Next: 121 + 24 = 145</div>
-        <div class="final-answer">Answer: Yes, 97, 121, 145</div>
-
-       
-    </div>
-
-
-</body></html>`,
-    exercise2: `<!DOCTYPE html><html lang="en"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maths Solutions - Notebook Style</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
-        /* Handwriting font */
-
-        body {
-            font-family: 'Noto Sans', sans-serif, sans-serif;
-            /* Fallback to sans-serif if Kalam fails */
-            line-height: 1.8;
-            color: #000080;
-            /* Dark Blue like ink */
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px;
-            
-            
-            
-            /* Notebook lines */
-        }
-
-        /* Simulating notebook margin */
-        .container {
-            
-            padding-left: 20px;
-            min-height: 100vh;
-        }
-
-        h1,
-        h2 {
-            color: #d32f2f;
-            /* Red heading */
-            text-align: center;
-            text-decoration: underline;
-        }
-
-        .question {
-            font-weight: bold;
-            color: #000;
-            margin-top: 2em;
-            margin-bottom: 1em;
-        }
-
-        .step {
-            display: block;
-            margin-bottom: 0px;
-            /* Steps sit on lines */
-        }
-
-        /* Vertical Fraction Style */
-        .frac {
-            display: inline-block;
-            vertical-align: middle;
-            text-align: center;
-            margin: 0 4px;
-        }
-
-        .frac-top {
-            display: block;
-            border-bottom: 1px solid #000080;
-            padding: 0 2px;
-            line-height: 1;
-        }
-
-        .frac-bottom {
-            display: block;
-            padding: 0 2px;
-            line-height: 1;
-        }
-
-        .formula {
-            color: #d35400;
-            /* Burnt Orange/Red for emphasis */
-            font-weight: bold;
-        }
-
-        .answer {
-            font-weight: bold;
-            display: block;
-            margin-top: 1em;
-            text-decoration: underline;
-        }
-
-        /* Utility for roots and powers */
-        sup {
-            vertical-align: super;
-            font-size: smaller;
-        }
-    </style>
-
-    <style>
-        img {
-            background: #FFFFFF;
-            padding: 10px;
-            border-radius: 10px;
-            width: 100%;
-            max-width: 320px;
-            height: 180px;
-            object-fit: contain;
-            display: block;
-            margin: 15px auto;
-            border: 1px solid #e9ecef;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-        }
-    </style>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    renderMathInElement(document.body, {
-      delimiters: [
-        {left: '\\\\(', right: '\\\\)', display: false},
-        {left: '\\\\[', right: '\\\\]', display: true}
-      ]
-    });
-  });
-</script>
-
-<style>
-  body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
-  .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #66BB6A !important; color: #fff !important; }
-  h1, h2, h3, h4, h5, h6 { color: #66BB6A !important; }
-  .question { color: #66BB6A !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-question { color: #66BB6A !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
-  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
-  .formula { color: #4CAF50 !important; }
-  .true-text { color: #4CAF50 !important; }
-  .false-text { color: #F44336 !important; }
-  table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
-  .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
-  img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #66BB6A !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
-  * { font-family: 'Noto Sans', sans-serif !important; }
-  
-  /* Make sure every sub part of the question has the question color */
-  strong[style*="color: #FF6B6B"] { color: #66BB6A !important; }
-  strong[style*="color: #ff6b6b"] { color: #66BB6A !important; }
-
-  .question { font-size: 0.95em !important; }
-  .sub-question { font-size: 0.9em !important; }
-  .step { font-size: 0.9em !important; }
-  .final-answer { font-size: 0.95em !important; }
-</style>
-</head>
-
-<body>
-<div class="container">
-
-        
-
-        
-
-        <!-- Question 1 -->
-        <div class="question">Question 1. Fill in the blanks. Formula used: <span class="formula">aₙ = a + (n - 1)d</span></div>
-
-        <div class="sub-question">(i) a = 7, d = 3, n = 8. Find aₙ.</div>
-        <div class="step">aₙ = 7 + (8 - 1)3</div>
-        <div class="step">aₙ = 7 + (7)3</div>
-        <div class="step">aₙ = 7 + 21</div>
-        <div class="step">aₙ = 28</div>
-        <div class="final-answer">Answer: 28</div>
-
-        <div class="sub-question">(ii) a = -18, n = 10, aₙ = 0. Find d.</div>
-        <div class="step">0 = -18 + (10 - 1)d</div>
-        <div class="step">18 = 9d</div>
-        <div class="step">d = 18 ÷ 9</div>
-        <div class="step">d = 2</div>
-        <div class="final-answer">Answer: d = 2</div>
-
-        <div class="sub-question">(iii) d = -3, n = 18, aₙ = -5. Find a.</div>
-        <div class="step">-5 = a + (18 - 1)(-3)</div>
-        <div class="step">-5 = a + (17)(-3)</div>
-        <div class="step">-5 = a - 51</div>
-        <div class="step">a = -5 + 51</div>
-        <div class="step">a = 46</div>
-        <div class="final-answer">Answer: a = 46</div>
-
-        <div class="sub-question">(iv) a = -18.9, d = 2.5, aₙ = 3.6. Find n.</div>
-        <div class="step">3.6 = -18.9 + (n - 1)2.5</div>
-        <div class="step">3.6 + 18.9 = (n - 1)2.5</div>
-        <div class="step">22.5 = (n - 1)2.5</div>
-        <div class="step">n - 1 = 22.5 ÷ 2.5</div>
-        <div class="step">n - 1 = 9</div>
-        <div class="step">n = 9 + 1 = 10</div>
-        <div class="final-answer">Answer: n = 10</div>
-
-        <div class="sub-question">(v) a = 3.5, d = 0, n = 105. Find aₙ.</div>
-        <div class="step">aₙ = 3.5 + (105 - 1)0</div>
-        <div class="step">aₙ = 3.5 + 0</div>
-        <div class="step">aₙ = 3.5</div>
-        <div class="final-answer">Answer: 3.5</div>
-
-        <!-- Question 2 -->
-        <div class="question">Question 2. Choose correct choice.</div>
-
-        <div class="sub-question">(i) 30th term of AP: 10, 7, 4...</div>
-        <div class="step">a = 10, d = 7 - 10 = -3, n = 30</div>
-        <div class="step">a₃₀ = 10 + (30 - 1)(-3)</div>
-        <div class="step">a₃₀ = 10 + 29(-3)</div>
-        <div class="step">a₃₀ = 10 - 87</div>
-        <div class="step">a₃₀ = -77</div>
-        <div class="final-answer">Answer: (C) -77</div>
-
-        <div class="sub-question">(ii) 11th term of AP: -3, -<span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span>, 2...</div>
-        <div class="step">a = -3, n = 11</div>
-        <div class="step">d = -<span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span> - (-3)</div>
-        <div class="step">d = -<span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span> + 3 = <span class="frac"><span class="frac-top">5</span><span class="frac-bottom">2</span></span></div>
-        <div class="step">a₁₁ = -3 + (11 - 1)<span class="frac"><span class="frac-top">5</span><span class="frac-bottom">2</span></span></div>
-        <div class="step">a₁₁ = -3 + 10 × <span class="frac"><span class="frac-top">5</span><span class="frac-bottom">2</span></span></div>
-        <div class="step">a₁₁ = -3 + 25</div>
-        <div class="step">a₁₁ = 22</div>
-        <div class="final-answer">Answer: (B) 22</div>
-
-        <!-- Question 3 -->
-        <div class="question">Question 3. Find missing terms in boxes.</div>
-
-        <div class="sub-question">(i) 2, □, 26</div>
-        <div class="step">a = 2, a₃ = 26</div>
-        <div class="step">a + 2d = 26</div>
-        <div class="step">2 + 2d = 26</div>
-        <div class="step">2d = 24</div>
-        <div class="step">d = 12</div>
-        <div class="step">Missing term = a + d = 2 + 12 = 14</div>
-        <div class="final-answer">Answer: 14</div>
-
-        <div class="sub-question">(ii) □, 13, □, 3</div>
-        <div class="step">a₂ = a + d = 13</div>
-        <div class="step">a₄ = a + 3d = 3</div>
-        <div class="step">Subtracting eq(1) from eq(2):</div>
-        <div class="step">2d = -10</div>
-        <div class="step">d = -5</div>
-        <div class="step">a = 13 - d = 13 - (-5) = 18</div>
-        <div class="step">a₃ = a + 2d = 18 + 2(-5) = 8</div>
-        <div class="final-answer">Answer: 18, 8</div>
-
-        <div class="sub-question">(iii) 5, □, □, 9<span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span></div>
-        <div class="step">a = 5, a₄ = 9.5 = <span class="frac"><span class="frac-top">19</span><span class="frac-bottom">2</span></span></div>
-        <div class="step">a + 3d = <span class="frac"><span class="frac-top">19</span><span class="frac-bottom">2</span></span></div>
-        <div class="step">5 + 3d = <span class="frac"><span class="frac-top">19</span><span class="frac-bottom">2</span></span></div>
-        <div class="step">3d = <span class="frac"><span class="frac-top">19</span><span class="frac-bottom">2</span></span> - 5 = <span class="frac"><span class="frac-top">9</span><span class="frac-bottom">2</span></span></div>
-        <div class="step">d = <span class="frac"><span class="frac-top">3</span><span class="frac-bottom">2</span></span></div>
-        <div class="step">a₂ = 5 + <span class="frac"><span class="frac-top">3</span><span class="frac-bottom">2</span></span> = <span class="frac"><span class="frac-top">13</span><span class="frac-bottom">2</span></span> = 6<span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span></div>
-        <div class="step">a₃ = <span class="frac"><span class="frac-top">13</span><span class="frac-bottom">2</span></span> + <span class="frac"><span class="frac-top">3</span><span class="frac-bottom">2</span></span> = <span class="frac"><span class="frac-top">16</span><span class="frac-bottom">2</span></span> = 8</div>
-        <div class="final-answer">Answer: 6<span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span>, 8</div>
-
-        <div class="sub-question">(iv) -4, □, □, □, □, 6</div>
-        <div class="step">a = -4, a₆ = 6</div>
-        <div class="step">a + 5d = 6</div>
-        <div class="step">-4 + 5d = 6</div>
-        <div class="step">5d = 10 → d = 2</div>
-        <div class="step">Terms: -2, 0, 2, 4</div>
-        <div class="final-answer">Answer: -2, 0, 2, 4</div>
-
-        <div class="sub-question">(v) □, 38, □, □, □, -22</div>
-        <div class="step">a₂ = a + d = 38</div>
-        <div class="step">a₆ = a + 5d = -22</div>
-        <div class="step">Subtracting: 4d = -60 → d = -15</div>
-        <div class="step">a = 38 - (-15) = 53</div>
-        <div class="step">a₃ = 38 - 15 = 23</div>
-        <div class="step">a₄ = 23 - 15 = 8</div>
-        <div class="step">a₅ = 8 - 15 = -7</div>
-        <div class="final-answer">Answer: 53, 23, 8, -7</div>
-
-        <!-- Question 4 -->
-        <div class="question">Question 4. Which term of the AP: 3, 8, 13, 18... is 78?</div>
-        <div class="step">a = 3, d = 8 - 3 = 5, aₙ = 78</div>
-        <div class="step">78 = 3 + (n - 1)5</div>
-        <div class="step">75 = (n - 1)5</div>
-        <div class="step">15 = n - 1</div>
-        <div class="step">n = 16</div>
-        <div class="final-answer">Answer: 16th term</div>
-
-        <!-- Question 5 -->
-        <div class="question">Question 5. Find number of terms.</div>
-
-        <div class="sub-question">(i) 7, 13, 19, ..., 205</div>
-        <div class="step">a = 7, d = 6, aₙ = 205</div>
-        <div class="step">205 = 7 + (n - 1)6</div>
-        <div class="step">198 = (n - 1)6</div>
-        <div class="step">33 = n - 1</div>
-        <div class="step">n = 34</div>
-        <div class="final-answer">Answer: 34 terms</div>
-
-        <div class="sub-question">(ii) 18, 15<span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span>, 13, ..., -47</div>
-        <div class="step">a = 18, aₙ = -47</div>
-        <div class="step">d = 15.5 - 18 = -2.5 = -<span class="frac"><span class="frac-top">5</span><span class="frac-bottom">2</span></span></div>
-        <div class="step">-47 = 18 + (n - 1)(-<span class="frac"><span class="frac-top">5</span><span class="frac-bottom">2</span></span>)</div>
-        <div class="step">-65 = (n - 1)(-<span class="frac"><span class="frac-top">5</span><span class="frac-bottom">2</span></span>)</div>
-        <div class="step">-65 × -<span class="frac"><span class="frac-top">2</span><span class="frac-bottom">5</span></span> = n - 1</div>
-        <div class="step">26 = n - 1</div>
-        <div class="step">n = 27</div>
-        <div class="final-answer">Answer: 27 terms</div>
-
-        <!-- Question 6 -->
-        <div class="question">Question 6. Check if -150 is a term of 11, 8, 5, 2...</div>
-        <div class="step">a = 11, d = -3</div>
-        <div class="step">-150 = 11 + (n - 1)(-3)</div>
-        <div class="step">-161 = (n - 1)(-3)</div>
-        <div class="step">n - 1 = \\(\\frac{161}{3}\\)</div>
-        <div class="step">161 is not divisible by 3.</div>
-        <div class="step">So n is not an integer.</div>
-        <div class="final-answer">Answer: No</div>
-
-        <!-- Question 7 -->
-        <div class="question">Question 7. Find 31st term if 11th term is 38 and 16th term is 73.</div>
-        <div class="step">a₁₁ = a + 10d = 38</div>
-        <div class="step">a₁₆ = a + 15d = 73</div>
-        <div class="step">Subtracting: 5d = 35 → d = 7</div>
-        <div class="step">a + 10(7) = 38</div>
-        <div class="step">a = 38 - 70 = -32</div>
-        <div class="step">a₃₁ = a + 30d</div>
-        <div class="step">a₃₁ = -32 + 30(7)</div>
-        <div class="step">a₃₁ = -32 + 210 = 178</div>
-        <div class="final-answer">Answer: 178</div>
-
-        <!-- Question 8 -->
-        <div class="question">Question 8. AP of 50 terms. 3rd term = 12, Last term = 106. Find 29th term.</div>
-        <div class="step">Total terms n = 50. So a₅₀ = 106.</div>
-        <div class="step">a₃ = a + 2d = 12</div>
-        <div class="step">a₅₀ = a + 49d = 106</div>
-        <div class="step">Subtracting: 47d = 94 → d = 2</div>
-        <div class="step">a + 2(2) = 12 → a = 8</div>
-        <div class="step">a₂₉ = a + 28d</div>
-        <div class="step">a₂₉ = 8 + 28(2)</div>
-        <div class="step">a₂₉ = 8 + 56 = 64</div>
-        <div class="final-answer">Answer: 64</div>
-
-        <!-- Question 9 -->
-        <div class="question">Question 9. 3rd term is 4, 9th term is -8. Which term is 0?</div>
-        <div class="step">a₃ = a + 2d = 4</div>
-        <div class="step">a₉ = a + 8d = -8</div>
-        <div class="step">Subtracting (2)-(1): 6d = -12</div>
-        <div class="step">d = -2</div>
-        <div class="step">a + 2(-2) = 4 → a - 4 = 4 → a = 8</div>
-        <div class="step">Let nth term be 0.</div>
-        <div class="step">0 = 8 + (n - 1)(-2)</div>
-        <div class="step">-8 = (n - 1)(-2)</div>
-        <div class="step">4 = n - 1</div>
-        <div class="step">n = 5</div>
-        <div class="final-answer">Answer: 5th term</div>
-
-        <!-- Question 10 -->
-        <div class="question">Question 10. 17th term exceeds 10th term by 7. Find common difference.</div>
-        <div class="step">a₁₇ - a₁₀ = 7</div>
-        <div class="step">(a + 16d) - (a + 9d) = 7</div>
-        <div class="step">a + 16d - a - 9d = 7</div>
-        <div class="step">7d = 7</div>
-        <div class="step">d = 1</div>
-        <div class="final-answer">Answer: 1</div>
-
-        <!-- Question 11 -->
-        <div class="question">Question 11. Which term of 3, 15, 27, 39... will be 132 more than 54th term?</div>
-        <div class="step">a = 3, d = 12</div>
-        <div class="step">a₅₄ = 3 + 53(12)</div>
-        <div class="step">a₅₄ = 3 + 636 = 639</div>
-        <div class="step">Required term = 639 + 132 = 771</div>
-        <div class="step">771 = 3 + (n - 1)12</div>
-        <div class="step">768 = (n - 1)12</div>
-        <div class="step">64 = n - 1</div>
-        <div class="step">n = 65</div>
-        <div class="final-answer">Answer: 65th term</div>
-
-        <!-- Question 12 -->
-        <div class="question">Question 12. Two APs have same common difference. Diff between 100th terms is 100. Diff between
-            1000th terms?</div>
-        <div class="step">Let APs be a, a+d... and A, A+d...</div>
-        <div class="step">Diff between nth terms = (A + (n-1)d) - (a + (n-1)d)</div>
-        <div class="step">= A - a (constant difference)</div>
-        <div class="step">Given diff between 100th terms = 100.</div>
-        <div class="step">So A - a = 100.</div>
-        <div class="step">Diff between 1000th terms will also be A - a.</div>
-        <div class="step">So difference is 100.</div>
-        <div class="final-answer">Answer: 100</div>
-
-        <!-- Question 13 -->
-        <div class="question">Question 13. How many 3-digit numbers are divisible by 7?</div>
-        <div class="step">3-digit numbers: 100 to 999.</div>
-        <div class="step">First divisible by 7: 105 (7 × 15)</div>
-        <div class="step">Last divisible by 7: 994 (7 × 142)</div>
-        <div class="step">AP: 105, 112, ..., 994</div>
-        <div class="step">a = 105, d = 7, aₙ = 994</div>
-        <div class="step">994 = 105 + (n - 1)7</div>
-        <div class="step">889 = (n - 1)7</div>
-        <div class="step">127 = n - 1</div>
-        <div class="step">n = 128</div>
-        <div class="final-answer">Answer: 128</div>
-
-        <!-- Question 14 -->
-        <div class="question">Question 14. How many multiples of 4 lie between 10 and 250?</div>
-        <div class="step">First multiple &gt; 10 is 12.</div>
-        <div class="step">Last multiple &lt; 250 is 248.</div>
-                <div class="step">AP: 12, 16, ..., 248</div>
-                <div class="step">a = 12, d = 4, aₙ = 248</div>
-                <div class="step">248 = 12 + (n - 1)4</div>
-                <div class="step">236 = (n - 1)4</div>
-                <div class="step">59 = n - 1</div>
-                <div class="step">n = 60</div>
-                <div class="final-answer">Answer: 60</div>
-
-                <!-- Question 15 -->
-                <div class="question">Question 15. For what value of n, terms of 63, 65, 67... and 3, 10, 17... are equal?</div>
-                <div class="step">AP1: a = 63, d = 2 → nth term = 63 + (n-1)2</div>
-                <div class="step">AP2: a = 3, d = 7 → nth term = 3 + (n-1)7</div>
-                <div class="step">Equal: 63 + 2n - 2 = 3 + 7n - 7</div>
-                <div class="step">61 + 2n = 7n - 4</div>
-                <div class="step">65 = 5n</div>
-                <div class="step">n = 13</div>
-                <div class="final-answer">Answer: 13</div>
-
-                <!-- Question 16 -->
-                <div class="question">Question 16. Determine AP: 3rd term is 16, 7th term exceeds 5th by 12.</div>
-                <div class="step">a₃ = 16</div>
-                <div class="step">a₇ - a₅ = 12</div>
-                <div class="step">(a + 6d) - (a + 4d) = 12</div>
-                <div class="step">2d = 12 → d = 6</div>
-                <div class="step">a₃ = a + 2d = 16</div>
-                <div class="step">a + 2(6) = 16</div>
-                <div class="step">a + 12 = 16 → a = 4</div>
-                <div class="step">AP: 4, 10, 16, 22...</div>
-                <div class="final-answer">Answer: 4, 10, 16, 22...</div>
-
-                <!-- Question 17 -->
-                <div class="question">Question 17. Find the 20th term from the last term of the AP: 3, 8, 13, ..., 253.</div>
-                <div class="step">For last term, we reverse the AP.</div>
-                <div class="step">New AP: 253, ..., 13, 8, 3</div>
-                <div class="step">a = 253, d = 3 - 8 = -5</div>
-                <div class="step">Find 20th term (a₂₀).</div>
-                <div class="step">a₂₀ = a + 19d</div>
-                <div class="step">a₂₀ = 253 + 19(-5)</div>
-                <div class="step">a₂₀ = 253 - 95</div>
-                <div class="step">a₂₀ = 158</div>
-                <div class="final-answer">Answer: 158</div>
-
-                <!-- Question 18 -->
-                <div class="question">Question 18. Sum of 4th and 8th terms is 24. Sum of 6th and 10th terms is 44. Find AP.
-                </div>
-                <div class="step">a₄ + a₈ = 24</div>
-                <div class="step">(a + 3d) + (a + 7d) = 24</div>
-                <div class="step">2a + 10d = 24 → a + 5d = 12 ...(1)</div>
-                <div class="step">a₆ + a₁₀ = 44</div>
-                <div class="step">(a + 5d) + (a + 9d) = 44</div>
-                <div class="step">2a + 14d = 44 → a + 7d = 22 ...(2)</div>
-                <div class="step">Subtracting (1) from (2):</div>
-                <div class="step">2d = 10 → d = 5</div>
-                <div class="step">From (1): a + 5(5) = 12</div>
-                <div class="step">a + 25 = 12 → a = -13</div>
-                <div class="step">Terms: -13, -8, -3...</div>
-                <div class="final-answer">Answer: -13, -8, -3...</div>
-
-                <!-- Question 19 -->
-                <div class="question">Question 19. Subba Rao started at ₹ 5000 (1995), increment ₹ 200. When ₹ 7000?</div>
-                <div class="step">a = 5000, d = 200, aₙ = 7000</div>
-                <div class="step">7000 = 5000 + (n - 1)200</div>
-                <div class="step">2000 = (n - 1)200</div>
-                <div class="step">10 = n - 1</div>
-                <div class="step">n = 11</div>
-                <div class="step">Year = 1995 + 10 = 2005 (11th year)</div>
-                <div class="final-answer">Answer: In 11th year (2005)</div>
-
-                <!-- Question 20 -->
-                <div class="question">Question 20. Ramkali saved ₹ 5 first week, increased by ₹ 1.75. nth week ₹ 20.75. Find n.
-                </div>
-                <div class="step">a = 5, d = 1.75, aₙ = 20.75</div>
-                <div class="step">20.75 = 5 + (n - 1)1.75</div>
-                <div class="step">15.75 = (n - 1)1.75</div>
-                <div class="step">n - 1 = 15.75 ÷ 1.75</div>
-                <div class="step">n - 1 = 1575 ÷ 175</div>
-                <div class="step">n - 1 = 9</div>
-                <div class="step">n = 10</div>
-                <div class="final-answer">Answer: n = 10</div>
-
-    </div>
-
-
-</body></html>`,
-    exercise3: `<!DOCTYPE html><html lang="en"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maths Solutions - Notebook Style</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
-        /* Handwriting font */
-
-        body {
-            font-family: 'Noto Sans', sans-serif, sans-serif;
-            /* Fallback to sans-serif if Kalam fails */
-            line-height: 1.8;
-            color: #000080;
-            /* Dark Blue like ink */
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px;
-            
-            
-            
-            /* Notebook lines */
-        }
-
-        /* Simulating notebook margin */
-        .container {
-            
-            padding-left: 20px;
-            min-height: 100vh;
-        }
-
-        h1,
-        h2 {
-            color: #d32f2f;
-            /* Red heading */
-            text-align: center;
-            text-decoration: underline;
-        }
-
-        .question {
-            font-weight: bold;
-            color: #000;
-            margin-top: 2em;
-            margin-bottom: 1em;
-        }
-
-        .step {
-            display: block;
-            margin-bottom: 0px;
-            /* Steps sit on lines */
-        }
-
-        /* Vertical Fraction Style */
-        .frac {
-            display: inline-block;
-            vertical-align: middle;
-            text-align: center;
-            margin: 0 4px;
-        }
-
-        .frac-top {
-            display: block;
-            border-bottom: 1px solid #000080;
-            padding: 0 2px;
-            line-height: 1;
-        }
-
-        .frac-bottom {
-            display: block;
-            padding: 0 2px;
-            line-height: 1;
-        }
-
-        .formula {
-            color: #d35400;
-            /* Burnt Orange/Red for emphasis */
-            font-weight: bold;
-        }
-
-        .answer {
-            font-weight: bold;
-            display: block;
-            margin-top: 1em;
-            text-decoration: underline;
-        }
-
-        /* Images style */
-        .diagram {
-            display: block;
-            margin: 1em auto;
-            max-width: 100%;
-            border: 1px dashed #aaa;
-            padding: 5px;
-            background: #fff;
-        }
-
-        /* Utility for roots and powers */
-        sup {
-            vertical-align: super;
-            font-size: smaller;
-        }
-    </style>
-
-    <style>
-        img {
-            background: #FFFFFF;
-            padding: 10px;
-            border-radius: 10px;
-            width: 100%;
-            max-width: 320px;
-            height: 180px;
-            object-fit: contain;
-            display: block;
-            margin: 15px auto;
-            border: 1px solid #e9ecef;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-        }
-    </style>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    renderMathInElement(document.body, {
-      delimiters: [
-        {left: '\\\\(', right: '\\\\)', display: false},
-        {left: '\\\\[', right: '\\\\]', display: true}
-      ]
-    });
-  });
-</script>
-
-<style>
-  body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
-  .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #66BB6A !important; color: #fff !important; }
-  h1, h2, h3, h4, h5, h6 { color: #66BB6A !important; }
-  .question { color: #66BB6A !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-question { color: #66BB6A !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
-  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
-  .formula { color: #4CAF50 !important; }
-  .true-text { color: #4CAF50 !important; }
-  .false-text { color: #F44336 !important; }
-  table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
-  .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
-  img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #66BB6A !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
-  * { font-family: 'Noto Sans', sans-serif !important; }
-  
-  /* Make sure every sub part of the question has the question color */
-  strong[style*="color: #FF6B6B"] { color: #66BB6A !important; }
-  strong[style*="color: #ff6b6b"] { color: #66BB6A !important; }
-
-  .question { font-size: 0.95em !important; }
-  .sub-question { font-size: 0.9em !important; }
-  .step { font-size: 0.9em !important; }
-  .final-answer { font-size: 0.95em !important; }
-</style>
-</head>
-
-<body>
-<div class="container">
-
-        
-
-        
-
-        <div class="step"><span class="formula">Sum of n terms: Sₙ = <span class="frac"><span class="frac-top">n</span><span class="frac-bottom">2</span></span>[2a + (n - 1)d]</span></div>
-        <div class="step"><span class="formula">Or: Sₙ = <span class="frac"><span class="frac-top">n</span><span class="frac-bottom">2</span></span>(a + aₙ)</span></div>
-
-        <!-- Question 1 -->
-        <div class="question">Question 1. Find the sum of the following APs:</div>
-
-        <div class="sub-question">(i) 2, 7, 12..., to 10 terms.</div>
-        <div class="step">a = 2, d = 7 - 2 = 5, n = 10</div>
-        <div class="step">S₁₀ = <span class="frac"><span class="frac-top">10</span><span class="frac-bottom">2</span></span>[2(2) + (10 - 1)5]</div>
-        <div class="step">S₁₀ = 5[4 + 9(5)]</div>
-        <div class="step">S₁₀ = 5[4 + 45]</div>
-        <div class="step">S₁₀ = 5(49)</div>
-        <div class="step">S₁₀ = 245</div>
-        <div class="final-answer">Answer: 245</div>
-
-        <div class="sub-question">(ii) -37, -33, -29..., to 12 terms.</div>
-        <div class="step">a = -37, d = -33 - (-37) = 4, n = 12</div>
-        <div class="step">S₁₂ = <span class="frac"><span class="frac-top">12</span><span class="frac-bottom">2</span></span>[2(-37) + (12 - 1)4]</div>
-        <div class="step">S₁₂ = 6[-74 + 11(4)]</div>
-        <div class="step">S₁₂ = 6[-74 + 44]</div>
-        <div class="step">S₁₂ = 6(-30)</div>
-        <div class="step">S₁₂ = -180</div>
-        <div class="final-answer">Answer: -180</div>
-
-        <div class="sub-question">(iii) 0.6, 1.7, 2.8..., to 100 terms.</div>
-        <div class="step">a = 0.6, d = 1.1, n = 100</div>
-        <div class="step">S₁₀₀ = <span class="frac"><span class="frac-top">100</span><span class="frac-bottom">2</span></span>[2(0.6) + (100 - 1)1.1]</div>
-        <div class="step">S₁₀₀ = 50[1.2 + 99(1.1)]</div>
-        <div class="step">S₁₀₀ = 50[1.2 + 108.9]</div>
-        <div class="step">S₁₀₀ = 50(110.1)</div>
-        <div class="step">S₁₀₀ = 5505</div>
-        <div class="final-answer">Answer: 5505</div>
-
-        <div class="sub-question">(iv) <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">15</span></span>, <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">12</span></span>, <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">10</span></span>..., to 11 terms.</div>
-        <div class="step">a = <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">15</span></span></div>
-        <div class="step">d = <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">12</span></span> - <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">15</span></span> = <span class="frac"><span class="frac-top">5 - 4</span><span class="frac-bottom">60</span></span> = <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">60</span></span></div>
-        <div class="step">S₁₁ = <span class="frac"><span class="frac-top">11</span><span class="frac-bottom">2</span></span>[2(<span class="frac"><span class="frac-top">1</span><span class="frac-bottom">15</span></span>) + (11 - 1)<span class="frac"><span class="frac-top">1</span><span class="frac-bottom">60</span></span>]</div>
-        <div class="step">S₁₁ = <span class="frac"><span class="frac-top">11</span><span class="frac-bottom">2</span></span>[<span class="frac"><span class="frac-top">2</span><span class="frac-bottom">15</span></span> + <span class="frac"><span class="frac-top">10</span><span class="frac-bottom">60</span></span>]</div>
-        <div class="step">S₁₁ = <span class="frac"><span class="frac-top">11</span><span class="frac-bottom">2</span></span>[<span class="frac"><span class="frac-top">2</span><span class="frac-bottom">15</span></span> + <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">6</span></span>]</div>
-        <div class="step">S₁₁ = <span class="frac"><span class="frac-top">11</span><span class="frac-bottom">2</span></span>[<span class="frac"><span class="frac-top">4 + 5</span><span class="frac-bottom">30</span></span>]</div>
-        <div class="step">S₁₁ = <span class="frac"><span class="frac-top">11</span><span class="frac-bottom">2</span></span>[<span class="frac"><span class="frac-top">9</span><span class="frac-bottom">30</span></span>] = <span class="frac"><span class="frac-top">33</span><span class="frac-bottom">20</span></span></div>
-        <div class="final-answer">Answer: <span class="frac"><span class="frac-top">33</span><span class="frac-bottom">20</span></span></div>
-
-        <!-- Question 2 -->
-        <div class="question">Question 2. Find the sums given below:</div>
-
-        <div class="sub-question">(i) 7 + 10<span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span> + 14 + ... + 84</div>
-        <div class="step">a = 7, d = 3.5 = <span class="frac"><span class="frac-top">7</span><span class="frac-bottom">2</span></span>, aₙ = 84</div>
-        <div class="step">84 = 7 + (n - 1)<span class="frac"><span class="frac-top">7</span><span class="frac-bottom">2</span></span></div>
-        <div class="step">77 = (n - 1)<span class="frac"><span class="frac-top">7</span><span class="frac-bottom">2</span></span></div>
-        <div class="step">22 = n - 1 → n = 23</div>
-        <div class="step">S₂₃ = <span class="frac"><span class="frac-top">23</span><span class="frac-bottom">2</span></span>(7 + 84)</div>
-        <div class="step">S₂₃ = <span class="frac"><span class="frac-top">23</span><span class="frac-bottom">2</span></span>(91) = <span class="frac"><span class="frac-top">2093</span><span class="frac-bottom">2</span></span></div>
-        <div class="final-answer">Answer: 1046<span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span></div>
-
-        <div class="sub-question">(ii) 34 + 32 + 30 + ... + 10</div>
-        <div class="step">a = 34, d = -2, aₙ = 10</div>
-        <div class="step">10 = 34 + (n - 1)(-2)</div>
-        <div class="step">-24 = (n - 1)(-2)</div>
-        <div class="step">12 = n - 1 → n = 13</div>
-        <div class="step">S₁₃ = <span class="frac"><span class="frac-top">13</span><span class="frac-bottom">2</span></span>(34 + 10)</div>
-        <div class="step">S₁₃ = <span class="frac"><span class="frac-top">13</span><span class="frac-bottom">2</span></span>(44) = 13(22)</div>
-        <div class="step">S₁₃ = 286</div>
-        <div class="final-answer">Answer: 286</div>
-
-        <div class="sub-question">(iii) -5 + (-8) + (-11) + ... + (-230)</div>
-        <div class="step">a = -5, d = -3, aₙ = -230</div>
-        <div class="step">-230 = -5 + (n - 1)(-3)</div>
-        <div class="step">-225 = (n - 1)(-3)</div>
-        <div class="step">75 = n - 1 → n = 76</div>
-        <div class="step">S₇₆ = <span class="frac"><span class="frac-top">76</span><span class="frac-bottom">2</span></span>(-5 - 230)</div>
-        <div class="step">S₇₆ = 38(-235)</div>
-        <div class="step">S₇₆ = -8930</div>
-        <div class="final-answer">Answer: -8930</div>
-
-        <!-- Question 3 -->
-        <div class="question">Question 3. In an AP:</div>
-
-        <div class="sub-question">(i) a = 5, d = 3, aₙ = 50. Find n and Sₙ.</div>
-        <div class="step">50 = 5 + (n - 1)3</div>
-        <div class="step">45 = (n - 1)3</div>
-        <div class="step">15 = n - 1 → n = 16</div>
-        <div class="step">S₁₆ = <span class="frac"><span class="frac-top">16</span><span class="frac-bottom">2</span></span>(5 + 50)</div>
-        <div class="step">S₁₆ = 8(55) = 440</div>
-        <div class="final-answer">Answer: n = 16, Sₙ = 440</div>
-
-        <div class="sub-question">(ii) a = 7, a₁₃ = 35. Find d and S₁₃.</div>
-        <div class="step">a₁₃ = a + 12d = 35</div>
-        <div class="step">7 + 12d = 35</div>
-        <div class="step">12d = 28</div>
-        <div class="step">d = <span class="frac"><span class="frac-top">28</span><span class="frac-bottom">12</span></span> = <span class="frac"><span class="frac-top">7</span><span class="frac-bottom">3</span></span></div>
-        <div class="step">S₁₃ = <span class="frac"><span class="frac-top">13</span><span class="frac-bottom">2</span></span>(7 + 35)</div>
-        <div class="step">S₁₃ = <span class="frac"><span class="frac-top">13</span><span class="frac-bottom">2</span></span>(42) = 13(21) = 273</div>
-        <div class="final-answer">Answer: d = <span class="frac"><span class="frac-top">7</span><span class="frac-bottom">3</span></span>, S₁₃ = 273</div>
-
-        <div class="sub-question">(iii) a₁₂ = 37, d = 3. Find a and S₁₂.</div>
-        <div class="step">a + 11d = 37</div>
-        <div class="step">a + 11(3) = 37</div>
-        <div class="step">a + 33 = 37 → a = 4</div>
-        <div class="step">S₁₂ = <span class="frac"><span class="frac-top">12</span><span class="frac-bottom">2</span></span>(4 + 37)</div>
-        <div class="step">S₁₂ = 6(41) = 246</div>
-        <div class="final-answer">Answer: a = 4, S₁₂ = 246</div>
-
-        <div class="sub-question">(iv) a₃ = 15, S₁₀ = 125. Find d and a₁₀.</div>
-        <div class="step">a + 2d = 15 ...(1)</div>
-        <div class="step">S₁₀ = <span class="frac"><span class="frac-top">10</span><span class="frac-bottom">2</span></span>[2a + 9d] = 125</div>
-        <div class="step">5[2a + 9d] = 125</div>
-        <div class="step">2a + 9d = 25 ...(2)</div>
-        <div class="step">From (1), 2a + 4d = 30 ...(Multiply by 2)</div>
-        <div class="step">Subtracting: 5d = -5 → d = -1</div>
-        <div class="step">a = 15 - 2(-1) = 17</div>
-        <div class="step">a₁₀ = a + 9d = 17 + 9(-1) = 8</div>
-        <div class="final-answer">Answer: d = -1, a₁₀ = 8</div>
-
-        <div class="sub-question">(v) d = 5, S₉ = 75. Find a and a₉.</div>
-        <div class="step">S₉ = <span class="frac"><span class="frac-top">9</span><span class="frac-bottom">2</span></span>[2a + 8(5)] = 75</div>
-        <div class="step"><span class="frac"><span class="frac-top">9</span><span class="frac-bottom">2</span></span>[2a + 40] = 75</div>
-        <div class="step">9(a + 20) = 75</div>
-        <div class="step">9a + 180 = 75</div>
-        <div class="step">9a = -105</div>
-        <div class="step">a = -<span class="frac"><span class="frac-top">35</span><span class="frac-bottom">3</span></span></div>
-        <div class="step">a₉ = a + 8d = -<span class="frac"><span class="frac-top">35</span><span class="frac-bottom">3</span></span> + 40</div>
-        <div class="step">a₉ = <span class="frac"><span class="frac-top">-35 + 120</span><span class="frac-bottom">3</span></span> = <span class="frac"><span class="frac-top">85</span><span class="frac-bottom">3</span></span></div>
-        <div class="final-answer">Answer: a = -<span class="frac"><span class="frac-top">35</span><span class="frac-bottom">3</span></span>, a₉ = <span class="frac"><span class="frac-top">85</span><span class="frac-bottom">3</span></span></div>
-
-        <div class="sub-question">(vi) a = 2, d = 8, Sₙ = 90. Find n and aₙ.</div>
-        <div class="step">90 = <span class="frac"><span class="frac-top">n</span><span class="frac-bottom">2</span></span>[2(2) + (n - 1)8]</div>
-        <div class="step">180 = n[4 + 8n - 8]</div>
-        <div class="step">180 = n[8n - 4]</div>
-        <div class="step">180 = 8n² - 4n</div>
-        <div class="step">2n² - n - 45 = 0</div>
-        <div class="step">2n² - 10n + 9n - 45 = 0</div>
-        <div class="step">2n(n - 5) + 9(n - 5) = 0</div>
-        <div class="step">(n - 5)(2n + 9) = 0</div>
-        <div class="step">n = 5</div>
-        <div class="step">a₅ = 2 + 4(8) = 34</div>
-        <div class="final-answer">Answer: n = 5, aₙ = 34</div>
-
-        <div class="sub-question">(vii) a = 8, aₙ = 62, Sₙ = 210. Find n and d.</div>
-        <div class="step">Sₙ = <span class="frac"><span class="frac-top">n</span><span class="frac-bottom">2</span></span>(a + aₙ)</div>
-        <div class="step">210 = <span class="frac"><span class="frac-top">n</span><span class="frac-bottom">2</span></span>(8 + 62)</div>
-        <div class="step">210 = <span class="frac"><span class="frac-top">n</span><span class="frac-bottom">2</span></span>(70)</div>
-        <div class="step">210 = 35n → n = 6</div>
-        <div class="step">a₆ = a + 5d = 62</div>
-        <div class="step">8 + 5d = 62</div>
-        <div class="step">5d = 54 → d = <span class="frac"><span class="frac-top">54</span><span class="frac-bottom">5</span></span></div>
-        <div class="final-answer">Answer: n = 6, d = <span class="frac"><span class="frac-top">54</span><span class="frac-bottom">5</span></span></div>
-
-        <div class="sub-question">(viii) aₙ = 4, d = 2, Sₙ = -14. Find n and a.</div>
-        <div class="step">a + (n - 1)2 = 4</div>
-        <div class="step">a + 2n - 2 = 4 → a = 6 - 2n ...(1)</div>
-        <div class="step">Sₙ = <span class="frac"><span class="frac-top">n</span><span class="frac-bottom">2</span></span>(a + aₙ) = -14</div>
-        <div class="step">n(a + 4) = -28</div>
-        <div class="step">Substitute (1): n(6 - 2n + 4) = -28</div>
-        <div class="step">n(10 - 2n) = -28</div>
-        <div class="step">10n - 2n² = -28</div>
-        <div class="step">2n² - 10n - 28 = 0</div>
-        <div class="step">n² - 5n - 14 = 0</div>
-        <div class="step">(n - 7)(n + 2) = 0</div>
-        <div class="step">n = 7</div>
-        <div class="step">a = 6 - 2(7) = -8</div>
-        <div class="final-answer">Answer: n = 7, a = -8</div>
-
-        <div class="sub-question">(ix) a = 3, n = 8, S = 192. Find d.</div>
-        <div class="step">192 = <span class="frac"><span class="frac-top">8</span><span class="frac-bottom">2</span></span>[2(3) + 7d]</div>
-        <div class="step">192 = 4[6 + 7d]</div>
-        <div class="step">48 = 6 + 7d</div>
-        <div class="step">7d = 42 → d = 6</div>
-        <div class="final-answer">Answer: d = 6</div>
-
-        <div class="sub-question">(x) l = 28, S = 144, n = 9. Find a.</div>
-        <div class="step">S = <span class="frac"><span class="frac-top">n</span><span class="frac-bottom">2</span></span>(a + l)</div>
-        <div class="step">144 = <span class="frac"><span class="frac-top">9</span><span class="frac-bottom">2</span></span>(a + 28)</div>
-        <div class="step">32 = a + 28</div>
-        <div class="step">a = 4</div>
-        <div class="final-answer">Answer: a = 4</div>
-
-        <!-- Question 4 -->
-        <div class="question">Question 4. How many terms of 9, 17, 25... needed to give sum 636?</div>
-        <div class="step">a = 9, d = 8, Sₙ = 636</div>
-        <div class="step">636 = <span class="frac"><span class="frac-top">n</span><span class="frac-bottom">2</span></span>[18 + (n - 1)8]</div>
-        <div class="step">1272 = n[18 + 8n - 8]</div>
-        <div class="step">1272 = n[10 + 8n]</div>
-        <div class="step">8n² + 10n - 1272 = 0</div>
-        <div class="step">4n² + 5n - 636 = 0</div>
-        <div class="step">b² - 4ac = 25 - 4(4)(-636) = 25 + 10176 = 10201</div>
-        <div class="step">√D = 101</div>
-        <div class="step">n = <span class="frac"><span class="frac-top">-5 ± 101</span><span class="frac-bottom">8</span></span></div>
-        <div class="step">n = 12 (positive)</div>
-        <div class="final-answer">Answer: 12 terms</div>
-
-        <!-- Question 5 -->
-        <div class="question">Question 5. First term 5, last 45, sum 400. Find n and d.</div>
-        <div class="step">a = 5, l = 45, S = 400</div>
-        <div class="step">400 = <span class="frac"><span class="frac-top">n</span><span class="frac-bottom">2</span></span>(5 + 45)</div>
-        <div class="step">800 = 50n → n = 16</div>
-        <div class="step">l = a + 15d = 45</div>
-        <div class="step">5 + 15d = 45</div>
-        <div class="step">15d = 40 → d = <span class="frac"><span class="frac-top">40</span><span class="frac-bottom">15</span></span> = <span class="frac"><span class="frac-top">8</span><span class="frac-bottom">3</span></span></div>
-        <div class="final-answer">Answer: n = 16, d = <span class="frac"><span class="frac-top">8</span><span class="frac-bottom">3</span></span></div>
-
-        <!-- Question 6 -->
-        <div class="question">Question 6. First 17, last 350, d = 9. Find n and Sum.</div>
-        <div class="step">a = 17, l = aₙ = 350, d = 9</div>
-        <div class="step">350 = 17 + (n - 1)9</div>
-        <div class="step">333 = (n - 1)9</div>
-        <div class="step">37 = n - 1 → n = 38</div>
-        <div class="step">S = <span class="frac"><span class="frac-top">38</span><span class="frac-bottom">2</span></span>(17 + 350)</div>
-        <div class="step">S = 19(367)</div>
-        <div class="step">S = 6973</div>
-        <div class="final-answer">Answer: n = 38, Sum = 6973</div>
-
-        <!-- Question 7 -->
-        <div class="question">Question 7. Find sum of first 22 terms if d = 7, 22nd term = 149.</div>
-        <div class="step">a₂₂ = a + 21d = 149</div>
-        <div class="step">a + 21(7) = 149</div>
-        <div class="step">a + 147 = 149 → a = 2</div>
-        <div class="step">S₂₂ = <span class="frac"><span class="frac-top">22</span><span class="frac-bottom">2</span></span>(2 + 149)</div>
-        <div class="step">S₂₂ = 11(151) = 1661</div>
-        <div class="final-answer">Answer: 1661</div>
-
-        <!-- Question 8 -->
-        <div class="question">Question 8. Sum of first 51 terms if 2nd term 14, 3rd 18.</div>
-        <div class="step">d = a₃ - a₂ = 18 - 14 = 4</div>
-        <div class="step">a = a₂ - d = 14 - 4 = 10</div>
-        <div class="step">S₅₁ = <span class="frac"><span class="frac-top">51</span><span class="frac-bottom">2</span></span>[2(10) + 50(4)]</div>
-        <div class="step">S₅₁ = <span class="frac"><span class="frac-top">51</span><span class="frac-bottom">2</span></span>[20 + 200]</div>
-        <div class="step">S₅₁ = <span class="frac"><span class="frac-top">51</span><span class="frac-bottom">2</span></span>(220) = 51(110)</div>
-        <div class="step">S₅₁ = 5610</div>
-        <div class="final-answer">Answer: 5610</div>
-
-        <!-- Question 9 -->
-        <div class="question">Question 9. Sum of 7 terms is 49, sum of 17 terms is 289. Find sum of n terms.</div>
-        <div class="step">S₇ = 49 → <span class="frac"><span class="frac-top">7</span><span class="frac-bottom">2</span></span>[2a+6d] = 49</div>
-        <div class="step">7(a+3d) = 49 → a + 3d = 7 ...(1)</div>
-        <div class="step">S₁₇ = 289 → <span class="frac"><span class="frac-top">17</span><span class="frac-bottom">2</span></span>[2a+16d] = 289</div>
-        <div class="step">17(a+8d) = 289 → a + 8d = 17 ...(2)</div>
-        <div class="step">Subtracting (1) from (2): 5d = 10 → d = 2</div>
-        <div class="step">a + 6 = 7 → a = 1</div>
-        <div class="step">Sₙ = <span class="frac"><span class="frac-top">n</span><span class="frac-bottom">2</span></span>[2(1) + (n-1)2]</div>
-        <div class="step">Sₙ = <span class="frac"><span class="frac-top">n</span><span class="frac-bottom">2</span></span>[2 + 2n - 2]</div>
-        <div class="step">Sₙ = <span class="frac"><span class="frac-top">n</span><span class="frac-bottom">2</span></span>(2n) = n²</div>
-        <div class="final-answer">Answer: n²</div>
-
-        <!-- Question 10 -->
-        <div class="question">Question 10. Show a₁, a₂... form AP defined by aₙ. Find S₁₅.</div>
-
-        <div class="sub-question">(i) aₙ = 3 + 4n</div>
-        <div class="step">a₁ = 7, a₂ = 11, a₃ = 15</div>
-        <div class="step">Diff = 4. It is an AP.</div>
-        <div class="step">a = 7, d = 4</div>
-        <div class="step">S₁₅ = <span class="frac"><span class="frac-top">15</span><span class="frac-bottom">2</span></span>[2(7) + 14(4)]</div>
-        <div class="step">S₁₅ = <span class="frac"><span class="frac-top">15</span><span class="frac-bottom">2</span></span>[14 + 56]</div>
-        <div class="step">S₁₅ = <span class="frac"><span class="frac-top">15</span><span class="frac-bottom">2</span></span>(70) = 525</div>
-        <div class="final-answer">Answer: 525</div>
-
-        <div class="sub-question">(ii) aₙ = 9 - 5n</div>
-        <div class="step">a₁ = 4, a₂ = -1, a₃ = -6</div>
-        <div class="step">Diff = -5. It is an AP.</div>
-        <div class="step">a = 4, d = -5</div>
-        <div class="step">S₁₅ = <span class="frac"><span class="frac-top">15</span><span class="frac-bottom">2</span></span>[2(4) + 14(-5)]</div>
-        <div class="step">S₁₅ = <span class="frac"><span class="frac-top">15</span><span class="frac-bottom">2</span></span>[8 - 70]</div>
-        <div class="step">S₁₅ = <span class="frac"><span class="frac-top">15</span><span class="frac-bottom">2</span></span>(-62) = -465</div>
-        <div class="final-answer">Answer: -465</div>
-
-        <!-- Question 11 -->
-        <div class="question">Question 11. Sum of first n terms is 4n - n². Find S₁, S₂, 2nd term, 3rd, 10th, nth terms.</div>
-        <div class="step">Sₙ = 4n - n²</div>
-        <div class="step">S₁ = 4(1) - 1² = 3 (First term a is S₁)</div>
-        <div class="step">S₂ = 4(2) - 2² = 8 - 4 = 4</div>
-        <div class="step">a₂ = S₂ - S₁ = 4 - 3 = 1</div>
-        <div class="step">a₃ = S₃ - S₂</div>
-        <div class="step">S₃ = 4(3) - 3² = 12 - 9 = 3</div>
-        <div class="step">a₃ = 3 - 4 = -1</div>
-        <div class="step">a₁₀ = S₁₀ - S₉</div>
-        <div class="step">S₁₀ = 40 - 100 = -60</div>
-        <div class="step">S₉ = 36 - 81 = -45</div>
-        <div class="step">a₁₀ = -60 - (-45) = -15</div>
-        <div class="step">aₙ = Sₙ - Sₙ₋₁</div>
-        <div class="step">aₙ = (4n - n²) - [4(n - 1) - (n - 1)²]</div>
-        <div class="step">aₙ = 4n - n² - [4n - 4 - (n² - 2n + 1)]</div>
-        <div class="step">aₙ = 4n - n² - 4n + 4 + n² - 2n + 1</div>
-        <div class="step">aₙ = 5 - 2n</div>
-        <div class="final-answer">Answer: S₁=3, S₂=4, a₂=1, a₃=-1, a₁₀=-15, aₙ=5-2n</div>
-
-        <!-- Question 12 -->
-        <div class="question">Question 12. Sum of first 40 positive integers divisible by 6.</div>
-        <div class="step">AP: 6, 12, 18, ... (40 terms)</div>
-        <div class="step">a = 6, d = 6, n = 40</div>
-        <div class="step">S₄₀ = <span class="frac"><span class="frac-top">40</span><span class="frac-bottom">2</span></span>[2(6) + 39(6)]</div>
-        <div class="step">S₄₀ = 20[12 + 234]</div>
-        <div class="step">S₄₀ = 20(246)</div>
-        <div class="step">S₄₀ = 4920</div>
-        <div class="final-answer">Answer: 4920</div>
-
-        <!-- Question 13 -->
-        <div class="question">Question 13. Sum of first 15 multiples of 8.</div>
-        <div class="step">AP: 8, 16, 24, ... (15 terms)</div>
-        <div class="step">a = 8, d = 8, n = 15</div>
-        <div class="step">S₁₅ = <span class="frac"><span class="frac-top">15</span><span class="frac-bottom">2</span></span>[2(8) + 14(8)]</div>
-        <div class="step">S₁₅ = <span class="frac"><span class="frac-top">15</span><span class="frac-bottom">2</span></span>[16 + 112]</div>
-        <div class="step">S₁₅ = <span class="frac"><span class="frac-top">15</span><span class="frac-bottom">2</span></span>(128)</div>
-        <div class="step">S₁₅ = 15(64)</div>
-        <div class="step">S₁₅ = 960</div>
-        <div class="final-answer">Answer: 960</div>
-
-        <!-- Question 14 -->
-        <div class="question">Question 14. Sum of odd numbers between 0 and 50.</div>
-        <div class="step">Odd numbers: 1, 3, 5, ..., 49</div>
-        <div class="step">a = 1, l = 49, d = 2</div>
-        <div class="step">49 = 1 + (n - 1)2 → 48 = 2(n - 1) → 24 = n - 1 → n = 25</div>
-        <div class="step">S₂₅ = <span class="frac"><span class="frac-top">25</span><span class="frac-bottom">2</span></span>(1 + 49)</div>
-        <div class="step">S₂₅ = <span class="frac"><span class="frac-top">25</span><span class="frac-bottom">2</span></span>(50) = 25(25)</div>
-        <div class="step">S₂₅ = 625</div>
-        <div class="final-answer">Answer: 625</div>
-
-        <!-- Question 15 -->
-        <div class="question">Question 15. Penalty for delay: ₹ 200, ₹ 250, ₹ 300... for 30 days.</div>
-        <div class="step">a = 200, d = 50, n = 30</div>
-        <div class="step">S₃₀ = <span class="frac"><span class="frac-top">30</span><span class="frac-bottom">2</span></span>[2(200) + 29(50)]</div>
-        <div class="step">S₃₀ = 15[400 + 1450]</div>
-        <div class="step">S₃₀ = 15(1850)</div>
-        <div class="step">S₃₀ = 27750</div>
-        <div class="final-answer">Answer: ₹ 27750</div>
-
-        <!-- Question 16 -->
-        <div class="question">Question 16. Sum ₹ 700 for 7 prizes. Each prize ₹ 20 less than preceding. Find prizes.</div>
-        <div class="step">Let prizes be a, a-20, a-40...</div>
-        <div class="step">S₇ = 700, n = 7, d = -20</div>
-        <div class="step">700 = <span class="frac"><span class="frac-top">7</span><span class="frac-bottom">2</span></span>[2a + 6(-20)]</div>
-        <div class="step">200 = 2a - 120 (Divide by 3.5 is 200)</div>
-        <div class="step">Wait, \\(\\frac{700}{3}\\).5 = 200. Yes. Or 700 = \\(\\frac{7}{2}\\)(...). 1400 = 7(...). 200 = 2a - 120.</div>
-        <div class="step">320 = 2a → a = 160</div>
-        <div class="step">Prizes: 160, 140, 120, 100, 80, 60, 40</div>
-        <div class="final-answer">Answer: ₹ 160, 140, 120, 100, 80, 60, 40</div>
-
-        <!-- Question 17 -->
-        <div class="question">Question 17. Planting trees. Class I plants 1, Class II plants 2... Class XII plants 12. 3
-            sections each.</div>
-        <div class="step">Class I: 3 × 1 = 3</div>
-        <div class="step">Class II: 3 × 2 = 6</div>
-        <div class="step">... Class XII: 3 × 12 = 36</div>
-        <div class="step">AP: 3, 6, ..., 36 (12 terms)</div>
-        <div class="step">S₁₂ = <span class="frac"><span class="frac-top">12</span><span class="frac-bottom">2</span></span>(3 + 36)</div>
-        <div class="step">S₁₂ = 6(39)</div>
-        <div class="step">S₁₂ = 234</div>
-        <div class="final-answer">Answer: 234 trees</div>
-
-        <!-- Question 18 -->
-        <div class="question">Question 18. Spiral of semicircles. Radii 0.5, 1.0, 1.5... Total length of 13 spirals?</div>
-        <img src="data:image/png;base64,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" class="diagram" alt="Spiral Diagram">
-        <div class="step">Perimeter of semicircle = πr</div>
-        <div class="step">l₁ = π(0.5), l₂ = π(1.0), l₃ = π(1.5)...</div>
-        <div class="step">Total Length L = π(0.5) + π(1.0) + ... (13 terms)</div>
-        <div class="step">L = π[0.5 + 1.0 + ... ]</div>
-        <div class="step">Inside bracket is AP: a = 0.5, d = 0.5, n = 13</div>
-        <div class="step">Sum = <span class="frac"><span class="frac-top">13</span><span class="frac-bottom">2</span></span>[2(0.5) + 12(0.5)]</div>
-        <div class="step">Sum = <span class="frac"><span class="frac-top">13</span><span class="frac-bottom">2</span></span>[1 + 6] = <span class="frac"><span class="frac-top">13</span><span class="frac-bottom">2</span></span>(7) = <span class="frac"><span class="frac-top">91</span><span class="frac-bottom">2</span></span></div>
-        <div class="step">Total L = π × <span class="frac"><span class="frac-top">91</span><span class="frac-bottom">2</span></span></div>
-        <div class="step">L = <span class="frac"><span class="frac-top">22</span><span class="frac-bottom">7</span></span> × <span class="frac"><span class="frac-top">91</span><span class="frac-bottom">2</span></span></div>
-        <div class="step">L = 11 × 13 = 143</div>
-        <div class="final-answer">Answer: 143 cm</div>
-
-        <!-- Question 19 -->
-        <div class="question">Question 19. 200 logs stacked. 20 bottom, 19 next... How many rows? Top row logs?</div>
-        <img src="data:image/png;base64,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6CpVqqSbMGHCS719f/31V12tWrVU+al780rv5U6dOuny58+vhtZ07dpVFxMTY7A39eXLl9VQpcKFC6sYSC9s6Xn8+PHjdD8X6Vndo0cP1QtchgMZEx0drYYGyb7I3yK9pTdu3PjScub2jk7vJzg4+PlQqBEjRui8vLxUL/M33nhDN2vWrOdDr/QSExNVuQULFlSfYceOHXVnz55V25oxY4ZaRmIxevRoXbVq1XTu7u46V1dX9e+QkBCT9pfoVWST/5iWronsg0zOIPc8ZdIKInOdOHFCXSVZvnw5evXqxQCSpnhPmOyWXG6V4UCpydCgP/74wyEeakDWJ9NWvkguT8ulcrmsT6Q13hMmuyX3WmUcsdyXlE4y0vlpwYIF6n7sqz5OkLIGuXceERGh7iHLwzxkyJH8yD1y/XAzIi3xcjTZLekgJAfLgwcPqsknXF1d0axZM9VD2dicxkR6cstChnL9+eefqjOfPLtZJiaRTl2SlIm0xiRMRESkEd4TJiIi0giTMBERkUaYhImIiDTCJExERKQRJmEiIiKNMAkTERFphEmYiIhII0zCREREGmESJiIi0giTMBERkUaYhImIiDTCJExERKQRJmEiIiKNMAkTERFphEmYiIhII0zCREREGmESJiIi0giTMBERkUaYhImIiDTCJExERKQRJmEiIiKNMAkTERFphEmYiIhII0zCREREGmESJiIi0giTMBERkUaYhImIiDTCJExERKQRJmEiIiKNMAkTERFphEmYiIhII0zCREREGmESJiIi0giTMBERkUaYhImIiDTCJExERKQRJmEiIiKNMAkTERFphEmYiIhII0zCREREGmESJiIi0giTMBERkUaYhImIiDTCJExERKQRJmEiIiKNMAkTERFphEmYiIhII0zCREREGnHSqmBHFBcXh2PHjuHUqVNISEhQr7m5uaFy5cqoVasWChQooMl+paSk4OzZs4iIiEBMTAyePHmCnDlzwsvLS+1X+fLlkSNHDk32jTFjzFjP7LNtko3o6JXExMToPv30U12ZMmV1Ek75yZnLRVfgtcLqR/6tf12WmTx5slrH2lJSUnTh4eG6du3a6/K4uj7fB/d8+XUFCxdRv/Wvyfvt23dQy8t61saYMWasZ/bZNsn2ssl/bJXwHcn169cxctQo/LRqFZycc6JeW39UebMevCtXhWdpb2TP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" class="diagram" alt="Logs Stack">
-        <div class="step">AP: 20, 19, 18... Sum = 200</div>
-        <div class="step">a = 20, d = -1, Sₙ = 200</div>
-        <div class="step">200 = <span class="frac"><span class="frac-top">n</span><span class="frac-bottom">2</span></span>[2(20) + (n - 1)(-1)]</div>
-        <div class="step">400 = n[40 - n + 1]</div>
-        <div class="step">400 = n[41 - n]</div>
-        <div class="step">n² - 41n + 400 = 0</div>
-        <div class="step">Factors of 400 summing to 41: 16 and 25</div>
-        <div class="step">(n - 16)(n - 25) = 0</div>
-        <div class="step">n = 16 or n = 25</div>
-        <div class="step">If n = 25: a₂₅ = 20 + 24(-1) = -4 (Negative logs impossible)</div>
-        <div class="step">So n = 16</div>
-        <div class="step">Top row (a₁₆) = 20 + 15(-1) = 5</div>
-        <div class="final-answer">Answer: 16 rows, 5 logs in top row</div>
-
-        <!-- Question 20 -->
-        <div class="question">Question 20. Potato race. 5m first, then 3m apart. 10 potatoes. Total distance run?</div>
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAADECAYAAAAPm5BwAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjgsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvwVt1zgAAAAlwSFlzAAAPYQAAD2EBqD+naQAAHzBJREFUeJzt3Qd8VGW6x/EnpEF6pUSaJHSQ3hQBRaqwCLZFBXUVXRFZXdwVVhSQIriWZVdAREEQRQQsqAhKRxeUXtaFCwjSQpWSQkJIzv0873XmTkKAEISY8/6+n8+Q5MyZmTPvTE7+PG8ZP8dxHAEAAIA1ShT1AQAAAODqIgACAABYhgAIAABgGQIgAACAZQiAAAAAliEAAgAAWIYACAAAYBkCIAAAgGUIgAAAAJYhAAIutXv3bvHz85N33nmnqA8FAPAbQwAEiikNdhrw8rsMHDjwijzmAw88kO/j1ahRo8D3kZKSIn/961/l2muvleDgYLnmmmvkjjvukPT09EId09ChQ3MdS0hIiNSqVUsGDx4sp06duuT7GzVqlHzyySdSWD/88IM5Jg3gV/L1DggIMG2nr8n+/ft/1ccC4H4BRX0AAC7PCy+8YMKUrzp16kilSpXk9OnTEhgY+Ks2sYa2t956K9e2yMjIAt325MmT0rp1a9m3b5888sgjkpSUJEeOHJEVK1ZIZmamCW+FNWHCBAkLC5PU1FT56quvZOTIkbJ48WL59ttvTWC6lACogfS2224rdAAcNmyYtGnTRipXrixX6vXOyMiQVatWmWD4zTffyJYtW6RkyZK/+uMBcCcCIFDMderUSRo3bpzvdVciEGjl6b777ivUbQcNGiQ//fSTrFu3LldofeaZZy77uDS0xcXFme//+Mc/yu233y4fffSRCUktWrQQN77eDz/8sHnOY8aMkblz58pdd91V1IcHoJigCxiwbAzgrFmzTBephkOtFH788cemG/FSqlXZ2dmX3L164sQJmTJliqn8afg7c+aMqfrlJysrS7Zu3SrJyclSWDfffLP5umvXLvM1LS1NBgwYIBUqVDBVzOrVq8vLL78sjuN4b6PtpftNnTrV29WqbaM0uPbt29fcrlSpUhIbGyt33nlnrq5ebWvdpm666SbvfSxdutS7z/jx46V27drmGBISEuTxxx83bVNYN954o/m6c+dO7zZt2+eff14aNWpkqrOhoaFmvyVLlpxz+5ycHBk7dqzUrVvXvCfi4+OlY8eOsmbNmlz7TZ8+3dyfPveYmBj5/e9/L3v37i30cQMoWgRAoJjTbtWjR4/mupzPF198IXfffbfpFn7xxRelR48e8tBDD8natWsL/Hg6Vi8iIsIECw0CGmC02/VitJtSuy2121erddrdq2HihhtukA0bNuTaV8e01axZ01QMC8sTiDSoacj73e9+J6+99poJN6+++qoJcn/5y1/kz3/+s/c27777rglmGpb0e708+uij5rrVq1fLv//9bxN8/vnPf5oq46JFi0xXr2f8YqtWraR///7m+7/97W/e+9DnonRsoLaXBr9XXnnFVCknTpwo7du3N6G3MDwBNDo62rtNw7l20+uxaXVQH1e72jt06HBOW+vr/+STT5pgrPvq+FENglo59dDu9N69e0vVqlVN2+n++tz1+V5OeAVQhBwAxdKUKVO0dJXvRe3atct8r/t51K1b1ylfvryTkpLi3bZ06VKzX6VKlS76mAMHDnSeeeYZZ+bMmc6MGTOc+++/39z2hhtucLKysi5421dffdXsGxsb6zRt2tR57733nPHjxztlypRxoqOjnQMHDnj39Ry73v/FDBkyxOy7bds258iRI+a2EydOdIKDg819p6WlOZ988onZZ8SIEblue8cddzh+fn7Ojh07vNtCQ0Pzfdz09PRztq1cudLc77Rp07zbZs2aZbYtWbIk176HDx92goKCnPbt2zvZ2dne7a+//rrZf/LkyQV6vRcuXGie5969e53Zs2c78fHx5rnqzx5nz551MjMzc93++PHjpj3+8Ic/eLctXrzY3Gf//v3PebycnBzzdffu3Y6/v78zcuTIXNdv3rzZCQgIOGc7gOKBMYBAMTdu3DipVq3aRfc7cOCAbN682VSmdLKEh07K0O6/gnTpatXQl1bD9LGfffZZmT17tvn5fDxVQu0S1eqR5xgaNGhgxujp8xgxYoTZpt3Rvl2zBaEVPV/azapduVppnDdvnvj7+3urcx7aJazH/eWXX0q/fv0ueP9arfTQap22l1Yzo6KizJjGXr16XfD2CxcuNF2zWj0rUeL/O1/69OljXhOtzj744IMXfZ633HJLrp+1rbR7tnz58t5t+lz14uni1SqdftWxg3qsHnPmzDGvx5AhQ855HM/EGR1HqbfV8YW+1eWyZcua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" class="diagram" alt="Potato Race">
-        <div class="step">Run to 1st: 2 × 5 = 10 m</div>
-        <div class="step">Run to 2nd: 2 × (5 + 3) = 16 m</div>
-        <div class="step">Run to 3rd: 2 × (5 + 6) = 22 m</div>
-        <div class="step">AP: 10, 16, 22... (10 terms)</div>
-        <div class="step">a = 10, d = 6, n = 10</div>
-        <div class="step">S₁₀ = <span class="frac"><span class="frac-top">10</span><span class="frac-bottom">2</span></span>[2(10) + 9(6)]</div>
-        <div class="step">S₁₀ = 5[20 + 54]</div>
-        <div class="step">S₁₀ = 5(74)</div>
-        <div class="step">S₁₀ = 370</div>
-        <div class="final-answer">Answer: 370 m</div>
-
-    </div>
-
-
-</body></html>`
+  "keyPoints": [
+    "The general form of an AP is a, a + d, a + 2d, a + 3d, ...",
+    "The nth term of an AP is aₙ = a + (n − 1)d.",
+    "The nth term from the end of a finite AP is aₙ(end) = l − (n − 1)d.",
+    "The sum of the first n terms is Sₙ = (n/2)[2a + (n − 1)d] = (n/2)[a + l].",
+    "The sum of the first n natural numbers is Sₙ = n(n + 1)/2.",
+    "The relation between general term and sum is aₙ = Sₙ − Sₙ₋₁ for n ≥ 2."
+  ],
+  "formulas": [
+    {
+      "name": "Common Difference",
+      "formula": "d = aₖ₊₁ − aₖ"
+    },
+    {
+      "name": "General Form of AP",
+      "formula": "a, a + d, a + 2d, a + 3d, ..."
+    },
+    {
+      "name": "nth Term from Beginning",
+      "formula": "aₙ = a + (n − 1)d"
+    },
+    {
+      "name": "nth Term from End",
+      "formula": "aₙ(end) = l − (n − 1)d"
+    },
+    {
+      "name": "Sum of First n Terms (with d)",
+      "formula": "Sₙ = (n/2) [2a + (n − 1)d]"
+    },
+    {
+      "name": "Sum of First n Terms (with last term l)",
+      "formula": "Sₙ = (n/2) [a + l]"
+    },
+    {
+      "name": "Sum of First n Positive Integers",
+      "formula": "Sₙ = n(n + 1) / 2"
+    },
+    {
+      "name": "nth Term from Sum",
+      "formula": "aₙ = Sₙ − Sₙ₋₁"
+    },
+    {
+      "name": "Arithmetic Mean",
+      "formula": "b = (a + c) / 2"
+    }
+  ],
+  "crux": [
+    "A sequence is an AP if and only if the difference between any term and its preceding term is constant.",
+    "In any AP, aₙ depends linearly on n (aₙ = An + B), and Sₙ is a quadratic in n without constant term (Sₙ = An² + Bn).",
+    "When selecting 3 terms in AP, choose a − d, a, a + d (common diff d).",
+    "When selecting 4 terms in AP, choose a − 3d, a − d, a + d, a + 3d (common diff 2d).",
+    "If a, b, c are in AP, then 2b = a + c."
+  ],
+  "summary": [
+    "Master the general term formula aₙ = a + (n − 1)d to identify unknown terms and positions.",
+    "Use Sₙ = (n/2)[a + l] whenever the first and last terms are known for rapid calculations.",
+    "Always verify that n is a natural number (positive integer) when solving for the number of terms.",
+    "Remember that the common difference can be zero or negative; always preserve algebraic signs."
+  ],
+  "exercises": [
+    {
+      "id": "examples",
+      "name": "Examples",
+      "questions": []
+    },
+    {
+      "id": "exercise1",
+      "name": "Exercise 5.1",
+      "questions": []
+    },
+    {
+      "id": "exercise2",
+      "name": "Exercise 5.2",
+      "questions": []
+    },
+    {
+      "id": "exercise3",
+      "name": "Exercise 5.3",
+      "questions": []
+    }
+  ],
+  "examples": [],
+  "theorems": [],
+  "mcqs": [
+    {
+      "id": "ch5-mcq-1",
+      "question": "If the first term of an AP is 10 and its common difference is 3, what is its 5th term?",
+      "options": [
+        "A):   19",
+        "B):   22",
+        "C):   25",
+        "D):   28"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Using the nth term formula: a₅ = a + (5 − 1)d = 10 + 4(3) = 10 + 12 = 22."
+    },
+    {
+      "id": "ch5-mcq-2",
+      "question": "Which of the following sequences forms an Arithmetic Progression?",
+      "options": [
+        "A):   1, 4, 9, 16, ...",
+        "B):   2, 4, 8, 16, ...",
+        "C):   −10, −6, −2, 2, ...",
+        "D):   0.2, 0.22, 0.222, ..."
+      ],
+      "correctAnswer": "C",
+      "explanation": "In sequence (C), consecutive differences are: (−6) − (−10) = 4, (−2) − (−6) = 4, 2 − (−2) = 4. Since the common difference is constant (d = 4), it is an AP."
+    },
+    {
+      "id": "ch5-mcq-3",
+      "question": "The common difference d of an Arithmetic Progression can be:",
+      "options": [
+        "A):   Strictly positive only",
+        "B):   Strictly negative only",
+        "C):   Strictly non-zero only",
+        "D):   Positive, negative, or zero"
+      ],
+      "correctAnswer": "D",
+      "explanation": "By definition, the common difference d of an AP can be positive (increasing sequence), negative (decreasing sequence), or zero (constant sequence)."
+    },
+    {
+      "id": "ch5-mcq-4",
+      "question": "Which term of the AP: 21, 18, 15, ... is equal to 0?",
+      "options": [
+        "A):   8th term",
+        "B):   7th term",
+        "C):   9th term",
+        "D):   6th term"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Here a = 21 and d = 18 − 21 = −3. Setting aₙ = 0 ⇒ 21 + (n − 1)(−3) = 0 ⇒ −3(n − 1) = −21 ⇒ n − 1 = 7 ⇒ n = 8."
+    },
+    {
+      "id": "ch5-mcq-5",
+      "question": "If the nth term of an AP is given by aₙ = 3n + 7, then its common difference is:",
+      "options": [
+        "A):   7",
+        "B):   3",
+        "C):   10",
+        "D):   4"
+      ],
+      "correctAnswer": "B",
+      "explanation": "For any AP with general term an + b, the common difference is the coefficient of n. Here a₁ = 3(1)+7 = 10, a₂ = 3(2)+7 = 13 ⇒ d = 13 − 10 = 3."
+    },
+    {
+      "id": "ch5-mcq-6",
+      "question": "If three numbers a, b, c are in Arithmetic Progression, which of the following relations is always true?",
+      "options": [
+        "A):   b = a + c",
+        "B):   b² = ac",
+        "C):   2b = a + c",
+        "D):   b = 2(a + c)"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Since they are in AP, b − a = c − b ⇒ 2b = a + c, which means b = (a + c)/2 is the Arithmetic Mean between a and c."
+    },
+    {
+      "id": "ch5-mcq-7",
+      "question": "The 11th term from the last term of the AP: 10, 7, 4, ..., −62 is:",
+      "options": [
+        "A):   −25",
+        "B):   −40",
+        "C):   −16",
+        "D):   −32"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Using the reverse term formula: a₁₁ (from end) = l − (n − 1)d = −62 − (11 − 1)(−3) = −62 − 10(−3) = −62 + 30 = −32."
+    },
+    {
+      "id": "ch5-mcq-8",
+      "question": "The sum of the first n positive natural numbers (1 + 2 + 3 + ... + n) is given by:",
+      "options": [
+        "A):   n(n + 1) / 2",
+        "B):   n(n − 1) / 2",
+        "C):   n²",
+        "D):   n(n + 1)(2n + 1) / 6"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Using the sum formula Sₙ = (n/2)[a + l] where a = 1 and l = n, we get Sₙ = n(1 + n)/2 = n(n + 1)/2."
+    },
+    {
+      "id": "ch5-mcq-9",
+      "question": "What is the 10th term of the AP: 2, 7, 12, ...?",
+      "options": [
+        "A):   42",
+        "B):   47",
+        "C):   52",
+        "D):   57"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Here a = 2, d = 7 − 2 = 5. Therefore, a₁₀ = a + 9d = 2 + 9(5) = 2 + 45 = 47."
+    },
+    {
+      "id": "ch5-mcq-10",
+      "question": "The sum of the first 20 odd natural numbers (1 + 3 + 5 + ... to 20 terms) is:",
+      "options": [
+        "A):   200",
+        "B):   300",
+        "C):   400",
+        "D):   500"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The sum of the first n odd natural numbers is always equal to n². For n = 20, S₂₀ = 20² = 400."
+    },
+    {
+      "id": "ch5-mcq-11",
+      "question": "If the common difference of an AP is 5, then what is the value of a₁₈ − a₁₃?",
+      "options": [
+        "A):   5",
+        "B):   20",
+        "C):   30",
+        "D):   25"
+      ],
+      "correctAnswer": "D",
+      "explanation": "a₁₈ − a₁₃ = (a + 17d) − (a + 12d) = 5d. Since d = 5, 5d = 5 × 5 = 25."
+    },
+    {
+      "id": "ch5-mcq-12",
+      "question": "If k, 2k − 1, and 2k + 1 are three consecutive terms of an AP, then the value of k is:",
+      "options": [
+        "A):   3",
+        "B):   2",
+        "C):   4",
+        "D):   1"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Condition for AP: 2(2k − 1) = k + (2k + 1) ⇒ 4k − 2 = 3k + 1 ⇒ 4k − 3k = 1 + 2 ⇒ k = 3."
+    },
+    {
+      "id": "ch5-mcq-13",
+      "question": "How many two-digit numbers are divisible by 3?",
+      "options": [
+        "A):   25",
+        "B):   30",
+        "C):   32",
+        "D):   33"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The sequence is 12, 15, ..., 99 with a = 12, d = 3, an = 99. Then 12 + (n − 1)3 = 99 ⇒ 3(n − 1) = 87 ⇒ n − 1 = 29 ⇒ n = 30."
+    },
+    {
+      "id": "ch5-mcq-14",
+      "question": "If the sum of first n terms of an AP is Sₙ = 3n² + 5n, then its common difference is:",
+      "options": [
+        "A):   3",
+        "B):   5",
+        "C):   6",
+        "D):   8"
+      ],
+      "correctAnswer": "C",
+      "explanation": "S₁ = a₁ = 3(1)² + 5(1) = 8. S₂ = 3(2)² + 5(2) = 12 + 10 = 22. Then a₂ = S₂ − S₁ = 22 − 8 = 14. Therefore, d = a₂ − a₁ = 14 − 8 = 6."
+    },
+    {
+      "id": "ch5-mcq-15",
+      "question": "If the 3rd and 9th terms of an AP are 4 and −8 respectively, which term of this AP is zero?",
+      "options": [
+        "A):   3rd term",
+        "B):   4th term",
+        "C):   6th term",
+        "D):   5th term"
+      ],
+      "correctAnswer": "D",
+      "explanation": "a + 2d = 4 and a + 8d = −8 ⇒ 6d = −12 ⇒ d = −2, a = 8. For an = 0 ⇒ 8 + (n − 1)(−2) = 0 ⇒ −2(n − 1) = −8 ⇒ n − 1 = 4 ⇒ n = 5."
+    },
+    {
+      "id": "ch5-mcq-16",
+      "question": "The first four terms of an AP with first term a = −2 and common difference d = 0 are:",
+      "options": [
+        "A):   −2, −2, −2, −2",
+        "B):   −2, 0, 2, 4",
+        "C):   −2, −4, −6, −8",
+        "D):   0, −2, −4, −6"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Since d = 0, every term is obtained by adding 0 to the preceding term, so all terms are equal to −2."
+    },
+    {
+      "id": "ch5-mcq-17",
+      "question": "The 21st term of the AP whose first two terms are −3 and 4 is:",
+      "options": [
+        "A):   133",
+        "B):   137",
+        "C):   143",
+        "D):   147"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Here a = −3 and d = 4 − (−3) = 7. Thus, a₂₁ = a + 20d = −3 + 20(7) = −3 + 140 = 137."
+    },
+    {
+      "id": "ch5-mcq-18",
+      "question": "In an AP, if a = 3.5, d = 0, and n = 101, then what is the value of aₙ?",
+      "options": [
+        "A):   0",
+        "B):   104.5",
+        "C):   3.5",
+        "D):   101"
+      ],
+      "correctAnswer": "C",
+      "explanation": "a₁₀₁ = a + 100d = 3.5 + 100(0) = 3.5."
+    },
+    {
+      "id": "ch5-mcq-19",
+      "question": "Two APs have the same common difference. The difference between their 100th terms is 100. What is the difference between their 1000th terms?",
+      "options": [
+        "A):   10",
+        "B):   1000",
+        "C):   10000",
+        "D):   100"
+      ],
+      "correctAnswer": "D",
+      "explanation": "The difference between corresponding nth terms of two APs with the same common difference is always constant and equal to the difference between their first terms (a − A = 100)."
+    },
+    {
+      "id": "ch5-mcq-20",
+      "question": "What is the sum of the first 16 terms of the AP: 10, 6, 2, ...?",
+      "options": [
+        "A):   −320",
+        "B):   320",
+        "C):   −352",
+        "D):   −400"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Here a = 10, d = 6 − 10 = −4, n = 16. S₁₆ = (16/2)[2(10) + 15(−4)] = 8[20 − 60] = 8(−40) = −320."
+    }
+  ],
+  "isHtmlView": true,
+  "htmlOverview": "\n\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; }\n  .frac .den { padding: 1px 4px; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(124, 77, 255, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #7C4DFF; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 14px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(124, 77, 255, 0.25); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #7C4DFF; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #B388FF; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(124, 77, 255, 0.15); border: 1px solid #7C4DFF; color: #B388FF; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 6px 0; }\n  .table-card { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 14px 0; border-radius: 8px; }\n  .table-card table { width: 100%; border-collapse: collapse; text-align: center; }\n  .table-card th { background: rgba(124, 77, 255, 0.25); color: #B388FF; border: 1px solid rgba(124, 77, 255, 0.4); padding: 10px; font-weight: 700; }\n  .table-card td { border: 1px solid rgba(124, 77, 255, 0.25); padding: 9px; color: #E2E8F0; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Hero Header -->\n  <div style=\"background: linear-gradient(135deg, rgba(124, 77, 255, 0.25), rgba(83, 109, 254, 0.15)); border: 1.5px solid #7C4DFF; border-radius: 14px; padding: 18px; margin-bottom: 20px; text-align: center;\">\n    <div style=\"font-size: 22px; font-weight: 800; color: #B388FF; margin-bottom: 6px;\">\n      📘 Chapter 5: Arithmetic Progressions\n    </div>\n    <div style=\"color: #CBD5E1; font-size: 14.5px; line-height: 1.5;\">\n      Class 10 NCERT Mathematics &bull; Comprehensive Reference Guide &amp; Master Formula Cheat Sheet\n    </div>\n  </div>\n\n  <!-- 1. Definition & Core Concepts -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 1. Definition &amp; Nature of an Arithmetic Progression (AP)</div>\n    <div class=\"q-text\">\n      An <b>Arithmetic Progression (AP)</b> is a list or sequence of numbers in which each term is obtained by adding a fixed number to the preceding term, except the first term.\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-step\">\n        <div>&bull; <b style=\"color: #B388FF;\">First Term (<i>a</i> or <i>a</i><sub>1</sub>):</b> The starting number of the sequence.</div>\n        <div>&bull; <b style=\"color: #B388FF;\">Common Difference (<i>d</i>):</b> The fixed number added to each successive term. It is given by the difference between any term and its preceding term:\n          <div style=\"text-align: center; margin: 8px 0;\">\n            <span class=\"prop-chip\" style=\"font-size: 16px; padding: 6px 16px;\">\n              <b><i>d</i> = <i>a</i><sub><i>k</i>+1</sub> &minus; <i>a</i><sub><i>k</i></sub></b>\n            </span>\n          </div>\n        </div>\n        <div>&bull; <b style=\"color: #B388FF;\">Crucial Property of <i>d</i>:</b> The common difference <i>d</i> can be <b>positive</b> (increasing AP), <b>negative</b> (decreasing AP), or <b>zero</b> (constant AP).</div>\n        <div>&bull; <b style=\"color: #B388FF;\">Finite vs Infinite AP:</b>\n          <div style=\"margin-left: 16px; margin-top: 4px;\">\n            &minus; <b>Finite AP:</b> An AP containing a finite number of terms. It always possesses a distinct <b>last term</b> (<i>l</i>). E.g., 2, 4, 6, 8, ..., 100.<br/>\n            &minus; <b>Infinite AP:</b> An AP containing infinitely many terms without an end. E.g., 1, 3, 5, 7, 9, ...\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <!-- 2. General Form of an AP -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 2. General Form of an Arithmetic Progression</div>\n    <div class=\"q-text\">\n      If <b><i>a</i></b> is the first term and <b><i>d</i></b> is the common difference, then the standard sequence is represented as:\n    </div>\n    <div class=\"sol-box\">\n      <div style=\"text-align: center; margin: 10px 0;\">\n        <span class=\"prop-chip\" style=\"font-size: 16.5px; padding: 8px 18px;\">\n          <b><i>a</i>, &nbsp; <i>a</i> + <i>d</i>, &nbsp; <i>a</i> + 2<i>d</i>, &nbsp; <i>a</i> + 3<i>d</i>, &nbsp; ..., &nbsp; <i>a</i> + (<i>n</i> &minus; 1)<i>d</i></b>\n        </span>\n      </div>\n      <div class=\"sol-step\">\n        <div>&bull; 1<sup>st</sup> term: <i>a</i><sub>1</sub> = <i>a</i> = <i>a</i> + (1 &minus; 1)<i>d</i></div>\n        <div>&bull; 2<sup>nd</sup> term: <i>a</i><sub>2</sub> = <i>a</i> + <i>d</i> = <i>a</i> + (2 &minus; 1)<i>d</i></div>\n        <div>&bull; 3<sup>rd</sup> term: <i>a</i><sub>3</sub> = <i>a</i> + 2<i>d</i> = <i>a</i> + (3 &minus; 1)<i>d</i></div>\n        <div>&bull; 4<sup>th</sup> term: <i>a</i><sub>4</sub> = <i>a</i> + 3<i>d</i> = <i>a</i> + (4 &minus; 1)<i>d</i></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- 3. The nth Term of an AP -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 3. The <i>n</i><sup>th</sup> Term (General Term) of an AP</div>\n    <div class=\"q-text\">\n      The formula for the <b><i>n</i><sup>th</sup> term</b> <i>a</i><sub><i>n</i></sub> of an AP whose first term is <i>a</i> and common difference is <i>d</i>:\n    </div>\n    <div class=\"sol-box\">\n      <div style=\"text-align: center; margin: 10px 0;\">\n        <span class=\"prop-chip\" style=\"font-size: 18px; padding: 8px 20px;\">\n          <b><i>a</i><sub><i>n</i></sub> = <i>a</i> + (<i>n</i> &minus; 1)<i>d</i></b>\n        </span>\n      </div>\n      <div class=\"sol-step\">\n        <div>&bull; <b><i>a</i><sub><i>n</i></sub></b> is also called the <b>general term</b> of the AP.</div>\n        <div>&bull; If an AP has total <i>m</i> terms, then <b><i>a</i><sub><i>m</i></sub> = <i>l</i></b> represents the <b>last term</b>.</div>\n        <div>&bull; <b style=\"color: #B388FF;\"><i>n</i><sup>th</sup> Term from the End:</b> If an AP has first term <i>a</i>, common difference <i>d</i>, and last term <i>l</i>, then the <i>n</i><sup>th</sup> term from the end is given by:\n          <div style=\"text-align: center; margin: 8px 0;\">\n            <span class=\"prop-chip\" style=\"font-size: 15.5px; padding: 6px 14px;\">\n              <b><i>a</i><sub><i>n</i> (from end)</sub> = <i>l</i> &minus; (<i>n</i> &minus; 1)<i>d</i></b>\n            </span>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <!-- 4. Selection of Terms in an AP -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 4. Convenient Selection of Terms in an AP</div>\n    <div class=\"q-text\">\n      When solving word problems involving symmetric relations (like the sum or product of consecutive terms), choosing terms strategically simplifies calculations dramatically:\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"table-card\">\n        <table>\n          <thead>\n            <tr>\n              <th>Number of Terms</th>\n              <th>Terms to Choose</th>\n              <th>Common Difference</th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr>\n              <td><b>3 terms</b></td>\n              <td><b><i>a</i> &minus; <i>d</i>, &nbsp; <i>a</i>, &nbsp; <i>a</i> + <i>d</i></b></td>\n              <td><b><i>d</i></b></td>\n            </tr>\n            <tr>\n              <td><b>4 terms</b></td>\n              <td><b><i>a</i> &minus; 3<i>d</i>, &nbsp; <i>a</i> &minus; <i>d</i>, &nbsp; <i>a</i> + <i>d</i>, &nbsp; <i>a</i> + 3<i>d</i></b></td>\n              <td><b>2<i>d</i></b></td>\n            </tr>\n            <tr>\n              <td><b>5 terms</b></td>\n              <td><b><i>a</i> &minus; 2<i>d</i>, &nbsp; <i>a</i> &minus; <i>d</i>, &nbsp; <i>a</i>, &nbsp; <i>a</i> + <i>d</i>, &nbsp; <i>a</i> + 2<i>d</i></b></td>\n              <td><b><i>d</i></b></td>\n            </tr>\n          </tbody>\n        </table>\n      </div>\n      <div class=\"sol-step\">\n        <div>💡 <b>Intuition:</b> When we sum these terms, the terms with <i>d</i> cancel out completely, leaving a direct equation for <i>a</i>!</div>\n      </div>\n    </div>\n  </div>\n\n  <!-- 5. Sum of First n Terms -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 5. Sum of the First <i>n</i> Terms of an AP (<i>S</i><sub><i>n</i></sub>)</div>\n    <div class=\"q-text\">\n      The sum <b><i>S</i><sub><i>n</i></sub></b> of the first <i>n</i> terms of an AP can be calculated using two primary formulas:\n    </div>\n    <div class=\"sol-box\">\n      <div style=\"display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; margin: 10px 0;\">\n        \n        <div style=\"background: rgba(124, 77, 255, 0.12); border: 1.5px solid rgba(124, 77, 255, 0.4); border-radius: 8px; padding: 14px; text-align: center;\">\n          <div style=\"color: #B388FF; font-weight: 700; font-size: 15px; margin-bottom: 8px;\">Standard Formula (When <i>d</i> is known)</div>\n          <div style=\"font-size: 18px; font-weight: 700; color: #FFFFFF; padding: 6px 0;\">\n            <i>S</i><sub><i>n</i></sub> = <span class=\"frac\"><span class=\"num\"><i>n</i></span><span class=\"den\">2</span></span> [2<i>a</i> + (<i>n</i> &minus; 1)<i>d</i>]\n          </div>\n        </div>\n\n        <div style=\"background: rgba(83, 109, 254, 0.12); border: 1.5px solid rgba(83, 109, 254, 0.4); border-radius: 8px; padding: 14px; text-align: center;\">\n          <div style=\"color: #8C9EFF; font-weight: 700; font-size: 15px; margin-bottom: 8px;\">Direct Formula (When last term <i>l</i> is known)</div>\n          <div style=\"font-size: 18px; font-weight: 700; color: #FFFFFF; padding: 6px 0;\">\n            <i>S</i><sub><i>n</i></sub> = <span class=\"frac\"><span class=\"num\"><i>n</i></span><span class=\"den\">2</span></span> [<i>a</i> + <i>l</i>]\n          </div>\n        </div>\n\n      </div>\n\n      <div class=\"sol-step\" style=\"margin-top: 12px;\">\n        <div>&bull; <b style=\"color: #B388FF;\">Sum of First <i>n</i> Positive Integers:</b>\n          <div style=\"text-align: center; margin: 6px 0;\">\n            <span class=\"prop-chip\" style=\"font-size: 16px; padding: 6px 16px;\">\n              <i>S</i><sub><i>n</i></sub> = 1 + 2 + 3 + ... + <i>n</i> = <span class=\"frac\"><span class=\"num\"><i>n</i>(<i>n</i> + 1)</span><span class=\"den\">2</span></span>\n            </span>\n          </div>\n        </div>\n        <div>&bull; <b style=\"color: #B388FF;\">Finding <i>a</i><sub><i>n</i></sub> from <i>S</i><sub><i>n</i></sub>:</b>\n          If the sum of first <i>n</i> terms is given as a function of <i>n</i>, the <i>n</i><sup>th</sup> term is obtained by:\n          <div style=\"text-align: center; margin: 6px 0;\">\n            <span class=\"prop-chip\" style=\"font-size: 16px; padding: 6px 16px;\">\n              <b><i>a</i><sub><i>n</i></sub> = <i>S</i><sub><i>n</i></sub> &minus; <i>S</i><sub><i>n</i>&minus;1</sub></b>\n            </span>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <!-- 6. Arithmetic Mean -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 6. Arithmetic Mean (AM)</div>\n    <div class=\"q-text\">\n      If three numbers <b><i>a</i>, <i>b</i>, <i>c</i></b> are in Arithmetic Progression, then:\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-step\">\n        <div>&rArr; <i>b</i> &minus; <i>a</i> = <i>c</i> &minus; <i>b</i></div>\n        <div>&rArr; 2<i>b</i> = <i>a</i> + <i>c</i></div>\n        <div style=\"text-align: center; margin: 10px 0;\">\n          <span class=\"prop-chip\" style=\"font-size: 17px; padding: 6px 18px;\">\n            <b><i>b</i> = <span class=\"frac\"><span class=\"num\"><i>a</i> + <i>c</i></span><span class=\"den\">2</span></span></b>\n          </span>\n        </div>\n        <div>Here, <b><i>b</i></b> is called the <b>Arithmetic Mean</b> between <i>a</i> and <i>c</i>.</div>\n      </div>\n    </div>\n  </div>\n\n  <!-- 7. Master Formula Cheat Sheet -->\n  <div class=\"q-card\" style=\"border-color: #7C4DFF;\">\n    <div class=\"q-title\">✦ 7. Master Formula Cheat Sheet for Arithmetic Progressions</div>\n    <div class=\"sol-box\">\n      <div class=\"table-card\">\n        <table>\n          <thead>\n            <tr>\n              <th>Concept / Quantity</th>\n              <th>Mathematical Formula</th>\n              <th>Key Conditions &amp; Remarks</th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr>\n              <td><b>Common Difference (<i>d</i>)</b></td>\n              <td><b><i>d</i> = <i>a</i><sub><i>k</i>+1</sub> &minus; <i>a</i><sub><i>k</i></sub></b></td>\n              <td>Must be constant for all consecutive pairs</td>\n            </tr>\n            <tr>\n              <td><b>General Form of AP</b></td>\n              <td><b><i>a</i>, <i>a</i>+<i>d</i>, <i>a</i>+2<i>d</i>, ...</b></td>\n              <td><i>a</i> = first term, <i>d</i> = common difference</td>\n            </tr>\n            <tr>\n              <td><b><i>n</i><sup>th</sup> Term from Beginning</b></td>\n              <td><b><i>a</i><sub><i>n</i></sub> = <i>a</i> + (<i>n</i> &minus; 1)<i>d</i></b></td>\n              <td><i>n</i> &isin; &naturals; (must be a positive integer)</td>\n            </tr>\n            <tr>\n              <td><b><i>n</i><sup>th</sup> Term from End</b></td>\n              <td><b><i>a</i><sub><i>n</i>(end)</sub> = <i>l</i> &minus; (<i>n</i> &minus; 1)<i>d</i></b></td>\n              <td><i>l</i> = last term of finite AP</td>\n            </tr>\n            <tr>\n              <td><b>Sum of First <i>n</i> Terms (General)</b></td>\n              <td><b><i>S</i><sub><i>n</i></sub> = <span class=\"frac\"><span class=\"num\"><i>n</i></span><span class=\"den\">2</span></span> [2<i>a</i> + (<i>n</i> &minus; 1)<i>d</i>]</b></td>\n              <td>Use when <i>a</i>, <i>d</i>, and <i>n</i> are given</td>\n            </tr>\n            <tr>\n              <td><b>Sum when Last Term Known</b></td>\n              <td><b><i>S</i><sub><i>n</i></sub> = <span class=\"frac\"><span class=\"num\"><i>n</i></span><span class=\"den\">2</span></span> [<i>a</i> + <i>l</i>]</b></td>\n              <td>Fastest method when last term <i>l</i> is known</td>\n            </tr>\n            <tr>\n              <td><b>Sum of First <i>n</i> Natural Numbers</b></td>\n              <td><b><i>S</i><sub><i>n</i></sub> = <span class=\"frac\"><span class=\"num\"><i>n</i>(<i>n</i> + 1)</span><span class=\"den\">2</span></span></b></td>\n              <td>Sum of 1 + 2 + 3 + ... + <i>n</i></td>\n            </tr>\n            <tr>\n              <td><b>Relation between <i>a</i><sub><i>n</i></sub> and <i>S</i><sub><i>n</i></sub></b></td>\n              <td><b><i>a</i><sub><i>n</i></sub> = <i>S</i><sub><i>n</i></sub> &minus; <i>S</i><sub><i>n</i>&minus;1</sub></b></td>\n              <td>Valid for all <i>n</i> &ge; 2 (and <i>a</i><sub>1</sub> = <i>S</i><sub>1</sub>)</td>\n            </tr>\n            <tr>\n              <td><b>Arithmetic Mean (AM)</b></td>\n              <td><b><i>b</i> = <span class=\"frac\"><span class=\"num\"><i>a</i> + <i>c</i></span><span class=\"den\">2</span></span></b></td>\n              <td>If <i>a</i>, <i>b</i>, <i>c</i> are in AP &hArr; 2<i>b</i> = <i>a</i> + <i>c</i></td>\n            </tr>\n          </tbody>\n        </table>\n      </div>\n    </div>\n  </div>\n\n</div>\n",
+  "htmlExercises": {
+    "examples": "\n\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; }\n  .frac .den { padding: 1px 4px; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(124, 77, 255, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #7C4DFF; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 14px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(124, 77, 255, 0.25); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #7C4DFF; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #B388FF; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(124, 77, 255, 0.15); border: 1px solid #7C4DFF; color: #B388FF; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 6px 0; }\n  .table-card { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 14px 0; border-radius: 8px; }\n  .table-card table { width: 100%; border-collapse: collapse; text-align: center; }\n  .table-card th { background: rgba(124, 77, 255, 0.25); color: #B388FF; border: 1px solid rgba(124, 77, 255, 0.4); padding: 10px; font-weight: 700; }\n  .table-card td { border: 1px solid rgba(124, 77, 255, 0.25); padding: 9px; color: #E2E8F0; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Example 1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 1</div>\n    <div class=\"q-text\">\n      For the AP: <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">2</span></span>, <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>, &minus;<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>, &minus;<span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">2</span></span>, &hellip;, write the first term <i>a</i> and the common difference <i>d</i>.\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Here, the given arithmetic progression is: <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">2</span></span>, <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>, &minus;<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>, &minus;<span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">2</span></span>, &hellip;</div>\n        <div>&rArr; First term: <b><i>a</i> = <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">2</span></span></b></div>\n        <div>&rArr; Common difference: <i>d</i> = <i>a</i><sub>2</sub> &minus; <i>a</i><sub>1</sub></div>\n        <div>&rArr; <i>d</i> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &minus; <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">2</span></span> = <span class=\"frac\"><span class=\"num\">1 &minus; 3</span><span class=\"den\">2</span></span> = <span class=\"frac\"><span class=\"num\">&minus;2</span><span class=\"den\">2</span></span> = <b>&minus;1</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\">First term <i>a</i> = <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">2</span></span>, Common difference <i>d</i> = &minus;1</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Example 2 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 2</div>\n    <div class=\"q-text\">\n      Which of the following lists of numbers form an AP? If they form an AP, write the next two terms:\n    </div>\n\n    <!-- (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(i) 4, 10, 16, 22, &hellip;</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; <i>a</i><sub>2</sub> &minus; <i>a</i><sub>1</sub> = 10 &minus; 4 = 6</div>\n          <div>&rArr; <i>a</i><sub>3</sub> &minus; <i>a</i><sub>2</sub> = 16 &minus; 10 = 6</div>\n          <div>&rArr; <i>a</i><sub>4</sub> &minus; <i>a</i><sub>3</sub> = 22 &minus; 16 = 6</div>\n          <div>Since <i>a</i><sub><i>k</i>+1</sub> &minus; <i>a</i><sub><i>k</i></sub> is constant (6) each time, this list forms an AP with <i>d</i> = 6.</div>\n          <div>Next two terms:</div>\n          <div>&rArr; <i>a</i><sub>5</sub> = 22 + 6 = <b>28</b></div>\n          <div>&rArr; <i>a</i><sub>6</sub> = 28 + 6 = <b>34</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">Yes, it forms an AP. Next two terms: 28 and 34</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(ii) 1, &minus;1, &minus;3, &minus;5, &hellip;</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; <i>a</i><sub>2</sub> &minus; <i>a</i><sub>1</sub> = &minus;1 &minus; 1 = &minus;2</div>\n          <div>&rArr; <i>a</i><sub>3</sub> &minus; <i>a</i><sub>2</sub> = &minus;3 &minus; (&minus;1) = &minus;3 + 1 = &minus;2</div>\n          <div>&rArr; <i>a</i><sub>4</sub> &minus; <i>a</i><sub>3</sub> = &minus;5 &minus; (&minus;3) = &minus;5 + 3 = &minus;2</div>\n          <div>Since <i>a</i><sub><i>k</i>+1</sub> &minus; <i>a</i><sub><i>k</i></sub> is constant (&minus;2), this list forms an AP with <i>d</i> = &minus;2.</div>\n          <div>Next two terms:</div>\n          <div>&rArr; <i>a</i><sub>5</sub> = &minus;5 + (&minus;2) = <b>&minus;7</b></div>\n          <div>&rArr; <i>a</i><sub>6</sub> = &minus;7 + (&minus;2) = <b>&minus;9</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">Yes, it forms an AP. Next two terms: &minus;7 and &minus;9</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (iii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(iii) &minus;2, 2, &minus;2, 2, &minus;2, &hellip;</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; <i>a</i><sub>2</sub> &minus; <i>a</i><sub>1</sub> = 2 &minus; (&minus;2) = 2 + 2 = 4</div>\n          <div>&rArr; <i>a</i><sub>3</sub> &minus; <i>a</i><sub>2</sub> = &minus;2 &minus; 2 = &minus;4</div>\n          <div>Since <i>a</i><sub>2</sub> &minus; <i>a</i><sub>1</sub> &ne; <i>a</i><sub>3</sub> &minus; <i>a</i><sub>2</sub> (4 &ne; &minus;4), the difference is not constant.</div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">No, it does not form an AP.</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (iv) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(iv) 1, 1, 1, 2, 2, 2, 3, 3, 3, &hellip;</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; <i>a</i><sub>2</sub> &minus; <i>a</i><sub>1</sub> = 1 &minus; 1 = 0</div>\n          <div>&rArr; <i>a</i><sub>4</sub> &minus; <i>a</i><sub>3</sub> = 2 &minus; 1 = 1</div>\n          <div>Since <i>a</i><sub>2</sub> &minus; <i>a</i><sub>1</sub> &ne; <i>a</i><sub>4</sub> &minus; <i>a</i><sub>3</sub> (0 &ne; 1), the difference is not constant.</div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">No, it does not form an AP.</span>\n        </div>\n      </div>\n    </div>\n\n  </div>\n\n  <!-- Example 3 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 3</div>\n    <div class=\"q-text\">\n      Find the 10<sup>th</sup> term of the AP: 2, 7, 12, &hellip;\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Here, first term <i>a</i> = 2, and common difference <i>d</i> = 7 &minus; 2 = 5.</div>\n        <div>We need to find the 10<sup>th</sup> term, so <i>n</i> = 10.</div>\n        <div>Using the <i>n</i><sup>th</sup> term formula: <b><i>a</i><sub><i>n</i></sub> = <i>a</i> + (<i>n</i> &minus; 1)<i>d</i></b></div>\n        <div>&rArr; <i>a</i><sub>10</sub> = 2 + (10 &minus; 1)(5)</div>\n        <div>&rArr; <i>a</i><sub>10</sub> = 2 + (9)(5) = 2 + 45 = <b>47</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\">The 10<sup>th</sup> term of the given AP is 47.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Example 4 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 4</div>\n    <div class=\"q-text\">\n      Which term of the AP: 21, 18, 15, &hellip; is &minus;81? Also, is any term 0? Give reason for your answer.\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Here, <i>a</i> = 21, and <i>d</i> = 18 &minus; 21 = &minus;3.</div>\n        <div><b>Part 1: Finding which term is &minus;81:</b></div>\n        <div>Let the <i>n</i><sup>th</sup> term be &minus;81.</div>\n        <div>&rArr; <i>a</i><sub><i>n</i></sub> = <i>a</i> + (<i>n</i> &minus; 1)<i>d</i> = &minus;81</div>\n        <div>&rArr; 21 + (<i>n</i> &minus; 1)(&minus;3) = &minus;81</div>\n        <div>&rArr; &minus;3(<i>n</i> &minus; 1) = &minus;81 &minus; 21 = &minus;102</div>\n        <div>&rArr; <i>n</i> &minus; 1 = <span class=\"frac\"><span class=\"num\">&minus;102</span><span class=\"den\">&minus;3</span></span> = 34</div>\n        <div>&rArr; <i>n</i> = 34 + 1 = <b>35</b></div>\n        <div style=\"margin-top: 10px;\"><b>Part 2: Check if any term is 0:</b></div>\n        <div>Let <i>a</i><sub><i>n</i></sub> = 0.</div>\n        <div>&rArr; 21 + (<i>n</i> &minus; 1)(&minus;3) = 0</div>\n        <div>&rArr; &minus;3(<i>n</i> &minus; 1) = &minus;21</div>\n        <div>&rArr; <i>n</i> &minus; 1 = <span class=\"frac\"><span class=\"num\">&minus;21</span><span class=\"den\">&minus;3</span></span> = 7</div>\n        <div>&rArr; <i>n</i> = 7 + 1 = <b>8</b></div>\n        <div>Since <i>n</i> = 8 is a natural number, the 8<sup>th</sup> term of the AP is 0.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\">The 35<sup>th</sup> term is &minus;81, and the 8<sup>th</sup> term is 0.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Example 5 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 5</div>\n    <div class=\"q-text\">\n      Determine the AP whose 3<sup>rd</sup> term is 5 and 7<sup>th</sup> term is 9.\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>We know that <i>a</i><sub><i>n</i></sub> = <i>a</i> + (<i>n</i> &minus; 1)<i>d</i>.</div>\n        <div>&rArr; <i>a</i><sub>3</sub> = <i>a</i> + 2<i>d</i> = 5 &nbsp; &hellip; (1)</div>\n        <div>&rArr; <i>a</i><sub>7</sub> = <i>a</i> + 6<i>d</i> = 9 &nbsp; &hellip; (2)</div>\n        <div>Subtracting equation (1) from equation (2):</div>\n        <div>&rArr; (<i>a</i> + 6<i>d</i>) &minus; (<i>a</i> + 2<i>d</i>) = 9 &minus; 5</div>\n        <div>&rArr; 4<i>d</i> = 4 &rArr; <b><i>d</i> = 1</b></div>\n        <div>Substituting <i>d</i> = 1 in equation (1):</div>\n        <div>&rArr; <i>a</i> + 2(1) = 5 &rArr; <i>a</i> + 2 = 5 &rArr; <b><i>a</i> = 3</b></div>\n        <div>Hence, the required AP is <i>a</i>, <i>a</i>+<i>d</i>, <i>a</i>+2<i>d</i>, &hellip;:</div>\n        <div>&rArr; 3, (3 + 1), (3 + 2), &hellip; = <b>3, 4, 5, 6, &hellip;</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\">The required AP is 3, 4, 5, 6, &hellip;</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Example 6 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 6</div>\n    <div class=\"q-text\">\n      Check whether 301 is a term of the list of numbers: 5, 11, 17, 23, &hellip;\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Here, <i>a</i><sub>2</sub> &minus; <i>a</i><sub>1</sub> = 11 &minus; 5 = 6, &nbsp; <i>a</i><sub>3</sub> &minus; <i>a</i><sub>2</sub> = 17 &minus; 11 = 6.</div>\n        <div>Since difference is constant, it is an AP with <i>a</i> = 5 and <i>d</i> = 6.</div>\n        <div>Let 301 be the <i>n</i><sup>th</sup> term of this AP:</div>\n        <div>&rArr; <i>a</i><sub><i>n</i></sub> = <i>a</i> + (<i>n</i> &minus; 1)<i>d</i> = 301</div>\n        <div>&rArr; 5 + (<i>n</i> &minus; 1)(6) = 301</div>\n        <div>&rArr; 6(<i>n</i> &minus; 1) = 301 &minus; 5 = 296</div>\n        <div>&rArr; <i>n</i> &minus; 1 = <span class=\"frac\"><span class=\"num\">296</span><span class=\"den\">6</span></span> = <span class=\"frac\"><span class=\"num\">148</span><span class=\"den\">3</span></span></div>\n        <div>&rArr; <i>n</i> = <span class=\"frac\"><span class=\"num\">148</span><span class=\"den\">3</span></span> + 1 = <span class=\"frac\"><span class=\"num\">151</span><span class=\"den\">3</span></span> = 50<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span></div>\n        <div>Since <i>n</i> must be a positive integer (natural number), and here <i>n</i> is a fraction, 301 cannot be a term of this AP.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\">No, 301 is not a term of the given AP.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Example 7 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 7</div>\n    <div class=\"q-text\">\n      How many two-digit numbers are divisible by 3?\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>The two-digit numbers divisible by 3 are:</div>\n        <div>12, 15, 18, 21, &hellip;, 99.</div>\n        <div>This is an AP where:</div>\n        <div>&bull; First term <i>a</i> = 12</div>\n        <div>&bull; Common difference <i>d</i> = 15 &minus; 12 = 3</div>\n        <div>&bull; Last term <i>a</i><sub><i>n</i></sub> = 99</div>\n        <div>Using <i>a</i><sub><i>n</i></sub> = <i>a</i> + (<i>n</i> &minus; 1)<i>d</i>:</div>\n        <div>&rArr; 12 + (<i>n</i> &minus; 1)(3) = 99</div>\n        <div>&rArr; 3(<i>n</i> &minus; 1) = 99 &minus; 12 = 87</div>\n        <div>&rArr; <i>n</i> &minus; 1 = <span class=\"frac\"><span class=\"num\">87</span><span class=\"den\">3</span></span> = 29</div>\n        <div>&rArr; <i>n</i> = 29 + 1 = <b>30</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\">There are 30 two-digit numbers divisible by 3.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Example 8 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 8</div>\n    <div class=\"q-text\">\n      Find the 11<sup>th</sup> term from the last term (towards the first term) of the AP: 10, 7, 4, &hellip;, &minus;62.\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Here, given AP: 10, 7, 4, &hellip;, &minus;62.</div>\n        <div>&bull; First term <i>a</i> = 10, &nbsp; Common difference <i>d</i> = 7 &minus; 10 = &minus;3, &nbsp; Last term <i>l</i> = &minus;62.</div>\n        <div style=\"margin: 8px 0;\"><b style=\"color: #B388FF;\">Method 1 (Using direct reverse formula):</b></div>\n        <div>The <i>n</i><sup>th</sup> term from the end = <b><i>l</i> &minus; (<i>n</i> &minus; 1)<i>d</i></b></div>\n        <div>&rArr; <i>a</i><sub>11 (from end)</sub> = &minus;62 &minus; (11 &minus; 1)(&minus;3)</div>\n        <div>&rArr; <i>a</i><sub>11 (from end)</sub> = &minus;62 &minus; (10)(&minus;3)</div>\n        <div>&rArr; <i>a</i><sub>11 (from end)</sub> = &minus;62 + 30 = <b>&minus;32</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\">The 11<sup>th</sup> term from the last term is &minus;32.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Example 9 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 9</div>\n    <div class=\"q-text\">\n      A sum of ₹ 1000 is invested at 8% simple interest per year. Calculate the interest at the end of each year. Do these interests form an AP? If so, find the interest at the end of 30 years making use of this fact.\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>We know that Simple Interest (SI) = <span class=\"frac\"><span class=\"num\">P &times; R &times; T</span><span class=\"den\">100</span></span></div>\n        <div>Here, Principal <i>P</i> = ₹ 1000, Rate <i>R</i> = 8% per annum.</div>\n        <div>&rArr; Interest at the end of 1<sup>st</sup> year = <span class=\"frac\"><span class=\"num\">1000 &times; 8 &times; 1</span><span class=\"den\">100</span></span> = <b>₹ 80</b></div>\n        <div>&rArr; Interest at the end of 2<sup>nd</sup> year = <span class=\"frac\"><span class=\"num\">1000 &times; 8 &times; 2</span><span class=\"den\">100</span></span> = <b>₹ 160</b></div>\n        <div>&rArr; Interest at the end of 3<sup>rd</sup> year = <span class=\"frac\"><span class=\"num\">1000 &times; 8 &times; 3</span><span class=\"den\">100</span></span> = <b>₹ 240</b></div>\n        <div>The interest sequence is: 80, 160, 240, &hellip;</div>\n        <div>&rArr; 160 &minus; 80 = 80, &nbsp; 240 &minus; 160 = 80. Since the difference is constant, it forms an AP with <i>a</i> = 80, <i>d</i> = 80.</div>\n        <div style=\"margin-top: 8px;\">To find the interest at the end of 30 years, we find the 30<sup>th</sup> term <i>a</i><sub>30</sub>:</div>\n        <div>&rArr; <i>a</i><sub>30</sub> = <i>a</i> + (30 &minus; 1)<i>d</i></div>\n        <div>&rArr; <i>a</i><sub>30</sub> = 80 + (29)(80) = 80 + 2320 = <b>₹ 2400</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\">Yes, it forms an AP. Interest at end of 30 years is ₹ 2400.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Example 10 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 10</div>\n    <div class=\"q-text\">\n      In a flower bed, there are 23 rose plants in the first row, 21 in the second, 19 in the third, and so on. There are 5 rose plants in the last row. How many rows are there in the flower bed?\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>The number of rose plants in consecutive rows forms the sequence:</div>\n        <div>23, 21, 19, &hellip;, 5.</div>\n        <div>Here:</div>\n        <div>&bull; First term <i>a</i> = 23</div>\n        <div>&bull; Common difference <i>d</i> = 21 &minus; 23 = &minus;2</div>\n        <div>&bull; Last term <i>a</i><sub><i>n</i></sub> = 5</div>\n        <div>Using <i>a</i><sub><i>n</i></sub> = <i>a</i> + (<i>n</i> &minus; 1)<i>d</i>:</div>\n        <div>&rArr; 5 = 23 + (<i>n</i> &minus; 1)(&minus;2)</div>\n        <div>&rArr; &minus;2(<i>n</i> &minus; 1) = 5 &minus; 23 = &minus;18</div>\n        <div>&rArr; <i>n</i> &minus; 1 = <span class=\"frac\"><span class=\"num\">&minus;18</span><span class=\"den\">&minus;2</span></span> = 9</div>\n        <div>&rArr; <i>n</i> = 9 + 1 = <b>10</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\">There are 10 rows in the flower bed.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Example 11 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 11</div>\n    <div class=\"q-text\">\n      Find the sum of the first 22 terms of the AP: 8, 3, &minus;2, &hellip;\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Here, <i>a</i> = 8, &nbsp; <i>d</i> = 3 &minus; 8 = &minus;5, &nbsp; and <i>n</i> = 22.</div>\n        <div>Using the sum formula: <b><i>S</i><sub><i>n</i></sub> = <span class=\"frac\"><span class=\"num\"><i>n</i></span><span class=\"den\">2</span></span> [2<i>a</i> + (<i>n</i> &minus; 1)<i>d</i>]</b></div>\n        <div>&rArr; <i>S</i><sub>22</sub> = <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">2</span></span> [2(8) + (22 &minus; 1)(&minus;5)]</div>\n        <div>&rArr; <i>S</i><sub>22</sub> = 11 [16 + (21)(&minus;5)]</div>\n        <div>&rArr; <i>S</i><sub>22</sub> = 11 [16 &minus; 105]</div>\n        <div>&rArr; <i>S</i><sub>22</sub> = 11 &times; (&minus;89) = <b>&minus;979</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\">The sum of the first 22 terms is &minus;979.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Example 12 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 12</div>\n    <div class=\"q-text\">\n      If the sum of the first 14 terms of an AP is 1050 and its first term is 10, find the 20<sup>th</sup> term.\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Here, <i>S</i><sub>14</sub> = 1050, <i>n</i> = 14, and <i>a</i> = 10.</div>\n        <div>Using <i>S</i><sub><i>n</i></sub> = <span class=\"frac\"><span class=\"num\"><i>n</i></span><span class=\"den\">2</span></span> [2<i>a</i> + (<i>n</i> &minus; 1)<i>d</i>]:</div>\n        <div>&rArr; 1050 = <span class=\"frac\"><span class=\"num\">14</span><span class=\"den\">2</span></span> [2(10) + (14 &minus; 1)<i>d</i>]</div>\n        <div>&rArr; 1050 = 7 [20 + 13<i>d</i>]</div>\n        <div>&rArr; 20 + 13<i>d</i> = <span class=\"frac\"><span class=\"num\">1050</span><span class=\"den\">7</span></span> = 150</div>\n        <div>&rArr; 13<i>d</i> = 150 &minus; 20 = 130</div>\n        <div>&rArr; <b><i>d</i> = 10</b></div>\n        <div style=\"margin-top: 8px;\">Now, finding the 20<sup>th</sup> term <i>a</i><sub>20</sub>:</div>\n        <div>&rArr; <i>a</i><sub>20</sub> = <i>a</i> + (20 &minus; 1)<i>d</i> = 10 + 19(10)</div>\n        <div>&rArr; <i>a</i><sub>20</sub> = 10 + 190 = <b>200</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\">The 20<sup>th</sup> term is 200.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Example 13 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 13</div>\n    <div class=\"q-text\">\n      How many terms of the AP: 24, 21, 18, &hellip; must be taken so that their sum is 78?\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Here, <i>a</i> = 24, &nbsp; <i>d</i> = 21 &minus; 24 = &minus;3, &nbsp; and <i>S</i><sub><i>n</i></sub> = 78.</div>\n        <div>Using <i>S</i><sub><i>n</i></sub> = <span class=\"frac\"><span class=\"num\"><i>n</i></span><span class=\"den\">2</span></span> [2<i>a</i> + (<i>n</i> &minus; 1)<i>d</i>]:</div>\n        <div>&rArr; 78 = <span class=\"frac\"><span class=\"num\"><i>n</i></span><span class=\"den\">2</span></span> [2(24) + (<i>n</i> &minus; 1)(&minus;3)]</div>\n        <div>&rArr; 156 = <i>n</i> [48 &minus; 3<i>n</i> + 3]</div>\n        <div>&rArr; 156 = <i>n</i> [51 &minus; 3<i>n</i>]</div>\n        <div>&rArr; 156 = 51<i>n</i> &minus; 3<i>n</i><sup>2</sup></div>\n        <div>&rArr; 3<i>n</i><sup>2</sup> &minus; 51<i>n</i> + 156 = 0</div>\n        <div>Dividing the entire equation by 3:</div>\n        <div>&rArr; <i>n</i><sup>2</sup> &minus; 17<i>n</i> + 52 = 0</div>\n        <div>Factorising the quadratic equation:</div>\n        <div>&rArr; <i>n</i><sup>2</sup> &minus; 13<i>n</i> &minus; 4<i>n</i> + 52 = 0</div>\n        <div>&rArr; <i>n</i>(<i>n</i> &minus; 13) &minus; 4(<i>n</i> &minus; 13) = 0</div>\n        <div>&rArr; (<i>n</i> &minus; 4)(<i>n</i> &minus; 13) = 0</div>\n        <div>&rArr; <b><i>n</i> = 4</b> or <b><i>n</i> = 13</b></div>\n        <div>Both values of <i>n</i> are admissible. The sum of the first 4 terms is 78, and the sum of terms from the 5<sup>th</sup> to 13<sup>th</sup> term is 0 because the terms become negative and cancel the positive ones.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\">The number of terms <i>n</i> is either 4 or 13.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Example 14 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 14</div>\n    <div class=\"q-text\">\n      Find the sum of:\n    </div>\n\n    <!-- (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(i) The first 1000 positive integers</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Let <i>S</i> = 1 + 2 + 3 + &hellip; + 1000.</div>\n          <div>Here, <i>a</i> = 1, <i>l</i> = 1000, and <i>n</i> = 1000.</div>\n          <div>Using <i>S</i><sub><i>n</i></sub> = <span class=\"frac\"><span class=\"num\"><i>n</i></span><span class=\"den\">2</span></span> [<i>a</i> + <i>l</i>]:</div>\n          <div>&rArr; <i>S</i><sub>1000</sub> = <span class=\"frac\"><span class=\"num\">1000</span><span class=\"den\">2</span></span> [1 + 1000]</div>\n          <div>&rArr; <i>S</i><sub>1000</sub> = 500 &times; 1001 = <b>500500</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">The sum of the first 1000 positive integers is 500500.</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(ii) The first <i>n</i> positive integers</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Let <i>S</i><sub><i>n</i></sub> = 1 + 2 + 3 + &hellip; + <i>n</i>.</div>\n          <div>Here, <i>a</i> = 1, and the last term <i>l</i> = <i>n</i>.</div>\n          <div>Using <i>S</i><sub><i>n</i></sub> = <span class=\"frac\"><span class=\"num\"><i>n</i></span><span class=\"den\">2</span></span> [<i>a</i> + <i>l</i>]:</div>\n          <div>&rArr; <b><i>S</i><sub><i>n</i></sub> = <span class=\"frac\"><span class=\"num\"><i>n</i>(<i>n</i> + 1)</span><span class=\"den\">2</span></span></b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">The sum of the first <i>n</i> positive integers is <span class=\"frac\"><span class=\"num\"><i>n</i>(<i>n</i> + 1)</span><span class=\"den\">2</span></span>.</span>\n        </div>\n      </div>\n    </div>\n\n  </div>\n\n  <!-- Example 15 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 15</div>\n    <div class=\"q-text\">\n      Find the sum of first 24 terms of the list of numbers whose <i>n</i><sup>th</sup> term is given by <i>a</i><sub><i>n</i></sub> = 3 + 2<i>n</i>.\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Given general term: <i>a</i><sub><i>n</i></sub> = 3 + 2<i>n</i>.</div>\n        <div>&rArr; <i>a</i><sub>1</sub> = 3 + 2(1) = 5</div>\n        <div>&rArr; <i>a</i><sub>2</sub> = 3 + 2(2) = 7</div>\n        <div>&rArr; <i>a</i><sub>3</sub> = 3 + 2(3) = 9</div>\n        <div>Sequence: 5, 7, 9, &hellip; which forms an AP with <i>a</i> = 5 and <i>d</i> = 7 &minus; 5 = 2.</div>\n        <div>We need the sum of the first 24 terms (<i>n</i> = 24):</div>\n        <div>Using <i>S</i><sub><i>n</i></sub> = <span class=\"frac\"><span class=\"num\"><i>n</i></span><span class=\"den\">2</span></span> [2<i>a</i> + (<i>n</i> &minus; 1)<i>d</i>]:</div>\n        <div>&rArr; <i>S</i><sub>24</sub> = <span class=\"frac\"><span class=\"num\">24</span><span class=\"den\">2</span></span> [2(5) + (24 &minus; 1)(2)]</div>\n        <div>&rArr; <i>S</i><sub>24</sub> = 12 [10 + 23(2)]</div>\n        <div>&rArr; <i>S</i><sub>24</sub> = 12 [10 + 46] = 12 &times; 56 = <b>672</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\">The sum of the first 24 terms is 672.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Example 16 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 16</div>\n    <div class=\"q-text\">\n      A manufacturer of TV sets produced 600 sets in the third year and 700 sets in the seventh year. Assuming that the production increases uniformly by a fixed number every year, find:\n    </div>\n\n    <!-- (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(i) The production in the 1<sup>st</sup> year</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Since production increases uniformly, annual productions form an AP.</div>\n          <div>Let <i>a</i> be the production in 1<sup>st</sup> year and <i>d</i> be the annual increase.</div>\n          <div>&rArr; <i>a</i><sub>3</sub> = <i>a</i> + 2<i>d</i> = 600 &nbsp; &hellip; (1)</div>\n          <div>&rArr; <i>a</i><sub>7</sub> = <i>a</i> + 6<i>d</i> = 700 &nbsp; &hellip; (2)</div>\n          <div>Subtracting (1) from (2):</div>\n          <div>&rArr; 4<i>d</i> = 100 &rArr; <b><i>d</i> = 25</b></div>\n          <div>Substituting <i>d</i> = 25 in (1):</div>\n          <div>&rArr; <i>a</i> + 2(25) = 600 &rArr; <i>a</i> + 50 = 600 &rArr; <b><i>a</i> = 550</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">Production in the 1<sup>st</sup> year was 550 sets.</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(ii) The production in the 10<sup>th</sup> year</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; <i>a</i><sub>10</sub> = <i>a</i> + 9<i>d</i></div>\n          <div>&rArr; <i>a</i><sub>10</sub> = 550 + 9(25) = 550 + 225 = <b>775</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">Production in the 10<sup>th</sup> year was 775 sets.</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (iii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(iii) The total production in first 7 years</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Using <i>S</i><sub><i>n</i></sub> = <span class=\"frac\"><span class=\"num\"><i>n</i></span><span class=\"den\">2</span></span> [2<i>a</i> + (<i>n</i> &minus; 1)<i>d</i>] for <i>n</i> = 7:</div>\n          <div>&rArr; <i>S</i><sub>7</sub> = <span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">2</span></span> [2(550) + (7 &minus; 1)(25)]</div>\n          <div>&rArr; <i>S</i><sub>7</sub> = <span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">2</span></span> [1100 + 6(25)]</div>\n          <div>&rArr; <i>S</i><sub>7</sub> = <span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">2</span></span> [1100 + 150] = <span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">2</span></span> &times; 1250</div>\n          <div>&rArr; <i>S</i><sub>7</sub> = 7 &times; 625 = <b>4375</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">Total production in the first 7 years was 4375 sets.</span>\n        </div>\n      </div>\n    </div>\n\n  </div>\n\n</div>\n",
+    "exercise1": "\n\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; }\n  .frac .den { padding: 1px 4px; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(124, 77, 255, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #7C4DFF; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 14px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(124, 77, 255, 0.25); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #7C4DFF; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #B388FF; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(124, 77, 255, 0.15); border: 1px solid #7C4DFF; color: #B388FF; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 6px 0; }\n  .table-card { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 14px 0; border-radius: 8px; }\n  .table-card table { width: 100%; border-collapse: collapse; text-align: center; }\n  .table-card th { background: rgba(124, 77, 255, 0.25); color: #B388FF; border: 1px solid rgba(124, 77, 255, 0.4); padding: 10px; font-weight: 700; }\n  .table-card td { border: 1px solid rgba(124, 77, 255, 0.25); padding: 9px; color: #E2E8F0; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Question 1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 1</div>\n    <div class=\"q-text\">\n      In which of the following situations, does the list of numbers involved make an arithmetic progression, and why?\n    </div>\n\n    <!-- (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(i) The taxi fare after each km when the fare is ₹ 15 for the first km and ₹ 8 for each additional km.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; Fare for 1 km = ₹ 15</div>\n          <div>&rArr; Fare for 2 km = 15 + 8 = ₹ 23</div>\n          <div>&rArr; Fare for 3 km = 23 + 8 = ₹ 31</div>\n          <div>&rArr; Fare for 4 km = 31 + 8 = ₹ 39</div>\n          <div>The sequence of fares is: 15, 23, 31, 39, &hellip;</div>\n          <div>Difference: 23 &minus; 15 = 8, &nbsp; 31 &minus; 23 = 8, &nbsp; 39 &minus; 31 = 8.</div>\n          <div>Since the difference between consecutive terms is constant (8), this forms an AP.</div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">Yes, it forms an AP because common difference <i>d</i> = ₹ 8 is constant.</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(ii) The amount of air present in a cylinder when a vacuum pump removes <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span> of the air remaining in the cylinder at a time.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Let the initial volume of air in the cylinder be <i>V</i>.</div>\n          <div>&rArr; 1<sup>st</sup> term: <i>a</i><sub>1</sub> = <i>V</i></div>\n          <div>In the first stroke, pump removes <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span><i>V</i>, so remaining air:</div>\n          <div>&rArr; <i>a</i><sub>2</sub> = <i>V</i> &minus; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span><i>V</i> = <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span><i>V</i></div>\n          <div>In the second stroke, pump removes <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span> of (<span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span><i>V</i>):</div>\n          <div>&rArr; <i>a</i><sub>3</sub> = <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span><i>V</i> &minus; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span>(<span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span><i>V</i>) = <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span><i>V</i> &times; (1 &minus; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span>) = (<span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span>)<sup>2</sup><i>V</i> = <span class=\"frac\"><span class=\"num\">9</span><span class=\"den\">16</span></span><i>V</i></div>\n          <div>Checking differences:</div>\n          <div>&rArr; <i>a</i><sub>2</sub> &minus; <i>a</i><sub>1</sub> = <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span><i>V</i> &minus; <i>V</i> = &minus;<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span><i>V</i></div>\n          <div>&rArr; <i>a</i><sub>3</sub> &minus; <i>a</i><sub>2</sub> = <span class=\"frac\"><span class=\"num\">9</span><span class=\"den\">16</span></span><i>V</i> &minus; <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span><i>V</i> = &minus;<span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">16</span></span><i>V</i></div>\n          <div>Since <i>a</i><sub>2</sub> &minus; <i>a</i><sub>1</sub> &ne; <i>a</i><sub>3</sub> &minus; <i>a</i><sub>2</sub>, the difference is not constant.</div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">No, it does not form an AP.</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (iii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(iii) The cost of digging a well after every metre of digging, when it costs ₹ 150 for the first metre and rises by ₹ 50 for each subsequent metre.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; Cost for digging 1 metre = ₹ 150</div>\n          <div>&rArr; Cost for digging 2 metres = 150 + 50 = ₹ 200</div>\n          <div>&rArr; Cost for digging 3 metres = 200 + 50 = ₹ 250</div>\n          <div>&rArr; Cost for digging 4 metres = 250 + 50 = ₹ 300</div>\n          <div>Sequence: 150, 200, 250, 300, &hellip;</div>\n          <div>Differences: 200 &minus; 150 = 50, &nbsp; 250 &minus; 200 = 50, &nbsp; 300 &minus; 250 = 50.</div>\n          <div>Since the common difference is constant (50), this situation forms an AP.</div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">Yes, it forms an AP with common difference <i>d</i> = ₹ 50.</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (iv) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(iv) The amount of money in the account every year, when ₹ 10,000 is deposited at compound interest at 8% per annum.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>We know that Compound Amount <i>A</i> = <i>P</i>(1 + <span class=\"frac\"><span class=\"num\">R</span><span class=\"den\">100</span></span>)<sup><i>n</i></sup>.</div>\n          <div>Here, <i>P</i> = 10,000 and <i>R</i> = 8%.</div>\n          <div>&rArr; Amount at end of 1<sup>st</sup> year = 10000(1 + <span class=\"frac\"><span class=\"num\">8</span><span class=\"den\">100</span></span>)<sup>1</sup> = 10000(1.08) = ₹ 10,800</div>\n          <div>&rArr; Amount at end of 2<sup>nd</sup> year = 10000(1 + <span class=\"frac\"><span class=\"num\">8</span><span class=\"den\">100</span></span>)<sup>2</sup> = 10000(1.1664) = ₹ 11,664</div>\n          <div>&rArr; Amount at end of 3<sup>rd</sup> year = 10000(1 + <span class=\"frac\"><span class=\"num\">8</span><span class=\"den\">100</span></span>)<sup>3</sup> = ₹ 12,597.12</div>\n          <div>Differences:</div>\n          <div>&rArr; <i>a</i><sub>2</sub> &minus; <i>a</i><sub>1</sub> = 11,664 &minus; 10,800 = 864</div>\n          <div>&rArr; <i>a</i><sub>3</sub> &minus; <i>a</i><sub>2</sub> = 12,597.12 &minus; 11,664 = 933.12</div>\n          <div>Since the difference increases each year due to compounding, it is not constant.</div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">No, it does not form an AP because compound interest increases geometrically.</span>\n        </div>\n      </div>\n    </div>\n\n  </div>\n\n  <!-- Question 2 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 2</div>\n    <div class=\"q-text\">\n      Write first four terms of the AP, when the first term <i>a</i> and the common difference <i>d</i> are given as follows:\n    </div>\n\n    <!-- (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(i) <i>a</i> = 10, &nbsp; <i>d</i> = 10</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; <i>a</i><sub>1</sub> = <i>a</i> = <b>10</b></div>\n          <div>&rArr; <i>a</i><sub>2</sub> = <i>a</i> + <i>d</i> = 10 + 10 = <b>20</b></div>\n          <div>&rArr; <i>a</i><sub>3</sub> = <i>a</i><sub>2</sub> + <i>d</i> = 20 + 10 = <b>30</b></div>\n          <div>&rArr; <i>a</i><sub>4</sub> = <i>a</i><sub>3</sub> + <i>d</i> = 30 + 10 = <b>40</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">First four terms: 10, 20, 30, 40</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(ii) <i>a</i> = &minus;2, &nbsp; <i>d</i> = 0</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; <i>a</i><sub>1</sub> = &minus;2</div>\n          <div>&rArr; <i>a</i><sub>2</sub> = &minus;2 + 0 = &minus;2</div>\n          <div>&rArr; <i>a</i><sub>3</sub> = &minus;2 + 0 = &minus;2</div>\n          <div>&rArr; <i>a</i><sub>4</sub> = &minus;2 + 0 = &minus;2</div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">First four terms: &minus;2, &minus;2, &minus;2, &minus;2</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (iii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(iii) <i>a</i> = 4, &nbsp; <i>d</i> = &minus;3</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; <i>a</i><sub>1</sub> = 4</div>\n          <div>&rArr; <i>a</i><sub>2</sub> = 4 + (&minus;3) = 1</div>\n          <div>&rArr; <i>a</i><sub>3</sub> = 1 + (&minus;3) = &minus;2</div>\n          <div>&rArr; <i>a</i><sub>4</sub> = &minus;2 + (&minus;3) = &minus;5</div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">First four terms: 4, 1, &minus;2, &minus;5</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (iv) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(iv) <i>a</i> = &minus;1, &nbsp; <i>d</i> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; <i>a</i><sub>1</sub> = &minus;1</div>\n          <div>&rArr; <i>a</i><sub>2</sub> = &minus;1 + <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> = &minus;<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></div>\n          <div>&rArr; <i>a</i><sub>3</sub> = &minus;<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> + <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> = 0</div>\n          <div>&rArr; <i>a</i><sub>4</sub> = 0 + <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">First four terms: &minus;1, &minus;<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>, 0, <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (v) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(v) <i>a</i> = &minus;1.25, &nbsp; <i>d</i> = &minus;0.25</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; <i>a</i><sub>1</sub> = &minus;1.25</div>\n          <div>&rArr; <i>a</i><sub>2</sub> = &minus;1.25 + (&minus;0.25) = &minus;1.50</div>\n          <div>&rArr; <i>a</i><sub>3</sub> = &minus;1.50 + (&minus;0.25) = &minus;1.75</div>\n          <div>&rArr; <i>a</i><sub>4</sub> = &minus;1.75 + (&minus;0.25) = &minus;2.00</div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">First four terms: &minus;1.25, &minus;1.50, &minus;1.75, &minus;2.00</span>\n        </div>\n      </div>\n    </div>\n\n  </div>\n\n  <!-- Question 3 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 3</div>\n    <div class=\"q-text\">\n      For the following APs, write the first term and the common difference:\n    </div>\n\n    <!-- (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(i) 3, 1, &minus;1, &minus;3, &hellip;</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; First term: <b><i>a</i> = 3</b></div>\n          <div>&rArr; Common difference: <i>d</i> = <i>a</i><sub>2</sub> &minus; <i>a</i><sub>1</sub> = 1 &minus; 3 = <b>&minus;2</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\"><i>a</i> = 3, &nbsp; <i>d</i> = &minus;2</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(ii) &minus;5, &minus;1, 3, 7, &hellip;</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; First term: <b><i>a</i> = &minus;5</b></div>\n          <div>&rArr; Common difference: <i>d</i> = <i>a</i><sub>2</sub> &minus; <i>a</i><sub>1</sub> = &minus;1 &minus; (&minus;5) = &minus;1 + 5 = <b>4</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\"><i>a</i> = &minus;5, &nbsp; <i>d</i> = 4</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (iii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(iii) <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span>, <span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">3</span></span>, <span class=\"frac\"><span class=\"num\">9</span><span class=\"den\">3</span></span>, <span class=\"frac\"><span class=\"num\">13</span><span class=\"den\">3</span></span>, &hellip;</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; First term: <b><i>a</i> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span></b></div>\n          <div>&rArr; Common difference: <i>d</i> = <span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">3</span></span> &minus; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span> = <span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">3</span></span></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\"><i>a</i> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span>, &nbsp; <i>d</i> = <span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">3</span></span></span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (iv) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(iv) 0.6, 1.7, 2.8, 3.9, &hellip;</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; First term: <b><i>a</i> = 0.6</b></div>\n          <div>&rArr; Common difference: <i>d</i> = 1.7 &minus; 0.6 = <b>1.1</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\"><i>a</i> = 0.6, &nbsp; <i>d</i> = 1.1</span>\n        </div>\n      </div>\n    </div>\n\n  </div>\n\n  <!-- Question 4 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 4</div>\n    <div class=\"q-text\">\n      Which of the following are APs? If they form an AP, find the common difference <i>d</i> and write three more terms:\n    </div>\n\n    <!-- (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(i) 2, 4, 8, 16, &hellip;</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; <i>a</i><sub>2</sub> &minus; <i>a</i><sub>1</sub> = 4 &minus; 2 = 2</div>\n          <div>&rArr; <i>a</i><sub>3</sub> &minus; <i>a</i><sub>2</sub> = 8 &minus; 4 = 4</div>\n          <div>Since <i>a</i><sub>2</sub> &minus; <i>a</i><sub>1</sub> &ne; <i>a</i><sub>3</sub> &minus; <i>a</i><sub>2</sub>, it is not an AP.</div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">Not an AP.</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(ii) 2, <span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">2</span></span>, 3, <span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">2</span></span>, &hellip;</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; <i>a</i><sub>2</sub> &minus; <i>a</i><sub>1</sub> = <span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">2</span></span> &minus; 2 = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></div>\n          <div>&rArr; <i>a</i><sub>3</sub> &minus; <i>a</i><sub>2</sub> = 3 &minus; <span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">2</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></div>\n          <div>&rArr; <i>a</i><sub>4</sub> &minus; <i>a</i><sub>3</sub> = <span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">2</span></span> &minus; 3 = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></div>\n          <div>Since difference is constant, it forms an AP with <i>d</i> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>.</div>\n          <div>Three more terms:</div>\n          <div>&rArr; <i>a</i><sub>5</sub> = <span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">2</span></span> + <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> = <span class=\"frac\"><span class=\"num\">8</span><span class=\"den\">2</span></span> = <b>4</b></div>\n          <div>&rArr; <i>a</i><sub>6</sub> = 4 + <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> = <b><span class=\"frac\"><span class=\"num\">9</span><span class=\"den\">2</span></span></b></div>\n          <div>&rArr; <i>a</i><sub>7</sub> = <span class=\"frac\"><span class=\"num\">9</span><span class=\"den\">2</span></span> + <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> = <span class=\"frac\"><span class=\"num\">10</span><span class=\"den\">2</span></span> = <b>5</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">Forms an AP with <i>d</i> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>. Next three terms: 4, <span class=\"frac\"><span class=\"num\">9</span><span class=\"den\">2</span></span>, 5</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (iii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(iii) &minus;1.2, &minus;3.2, &minus;5.2, &minus;7.2, &hellip;</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; <i>a</i><sub>2</sub> &minus; <i>a</i><sub>1</sub> = &minus;3.2 &minus; (&minus;1.2) = &minus;2.0</div>\n          <div>&rArr; <i>a</i><sub>3</sub> &minus; <i>a</i><sub>2</sub> = &minus;5.2 &minus; (&minus;3.2) = &minus;2.0</div>\n          <div>&rArr; <i>a</i><sub>4</sub> &minus; <i>a</i><sub>3</sub> = &minus;7.2 &minus; (&minus;5.2) = &minus;2.0</div>\n          <div>It forms an AP with <i>d</i> = &minus;2.</div>\n          <div>Three more terms:</div>\n          <div>&rArr; <i>a</i><sub>5</sub> = &minus;7.2 + (&minus;2) = <b>&minus;9.2</b></div>\n          <div>&rArr; <i>a</i><sub>6</sub> = &minus;9.2 + (&minus;2) = <b>&minus;11.2</b></div>\n          <div>&rArr; <i>a</i><sub>7</sub> = &minus;11.2 + (&minus;2) = <b>&minus;13.2</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">Forms an AP with <i>d</i> = &minus;2. Next three terms: &minus;9.2, &minus;11.2, &minus;13.2</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (iv) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(iv) &minus;10, &minus;6, &minus;2, 2, &hellip;</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; <i>a</i><sub>2</sub> &minus; <i>a</i><sub>1</sub> = &minus;6 &minus; (&minus;10) = 4</div>\n          <div>&rArr; <i>a</i><sub>3</sub> &minus; <i>a</i><sub>2</sub> = &minus;2 &minus; (&minus;6) = 4</div>\n          <div>&rArr; <i>a</i><sub>4</sub> &minus; <i>a</i><sub>3</sub> = 2 &minus; (&minus;2) = 4</div>\n          <div>It forms an AP with <i>d</i> = 4.</div>\n          <div>Three more terms:</div>\n          <div>&rArr; <i>a</i><sub>5</sub> = 2 + 4 = <b>6</b></div>\n          <div>&rArr; <i>a</i><sub>6</sub> = 6 + 4 = <b>10</b></div>\n          <div>&rArr; <i>a</i><sub>7</sub> = 10 + 4 = <b>14</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">Forms an AP with <i>d</i> = 4. Next three terms: 6, 10, 14</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (v) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(v) 3, 3 + &radic;2, 3 + 2&radic;2, 3 + 3&radic;2, &hellip;</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; <i>a</i><sub>2</sub> &minus; <i>a</i><sub>1</sub> = (3 + &radic;2) &minus; 3 = &radic;2</div>\n          <div>&rArr; <i>a</i><sub>3</sub> &minus; <i>a</i><sub>2</sub> = (3 + 2&radic;2) &minus; (3 + &radic;2) = &radic;2</div>\n          <div>&rArr; <i>a</i><sub>4</sub> &minus; <i>a</i><sub>3</sub> = (3 + 3&radic;2) &minus; (3 + 2&radic;2) = &radic;2</div>\n          <div>It forms an AP with <i>d</i> = &radic;2.</div>\n          <div>Three more terms:</div>\n          <div>&rArr; <i>a</i><sub>5</sub> = 3 + 3&radic;2 + &radic;2 = <b>3 + 4&radic;2</b></div>\n          <div>&rArr; <i>a</i><sub>6</sub> = 3 + 4&radic;2 + &radic;2 = <b>3 + 5&radic;2</b></div>\n          <div>&rArr; <i>a</i><sub>7</sub> = 3 + 5&radic;2 + &radic;2 = <b>3 + 6&radic;2</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">Forms an AP with <i>d</i> = &radic;2. Next three terms: 3 + 4&radic;2, 3 + 5&radic;2, 3 + 6&radic;2</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (vi) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(vi) 0.2, 0.22, 0.222, 0.2222, &hellip;</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; <i>a</i><sub>2</sub> &minus; <i>a</i><sub>1</sub> = 0.22 &minus; 0.2 = 0.02</div>\n          <div>&rArr; <i>a</i><sub>3</sub> &minus; <i>a</i><sub>2</sub> = 0.222 &minus; 0.22 = 0.002</div>\n          <div>Since 0.02 &ne; 0.002, the difference is not constant.</div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">Not an AP.</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (vii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(vii) 0, &minus;4, &minus;8, &minus;12, &hellip;</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; <i>a</i><sub>2</sub> &minus; <i>a</i><sub>1</sub> = &minus;4 &minus; 0 = &minus;4</div>\n          <div>&rArr; <i>a</i><sub>3</sub> &minus; <i>a</i><sub>2</sub> = &minus;8 &minus; (&minus;4) = &minus;4</div>\n          <div>&rArr; <i>a</i><sub>4</sub> &minus; <i>a</i><sub>3</sub> = &minus;12 &minus; (&minus;8) = &minus;4</div>\n          <div>It forms an AP with <i>d</i> = &minus;4.</div>\n          <div>Three more terms:</div>\n          <div>&rArr; <i>a</i><sub>5</sub> = &minus;12 + (&minus;4) = <b>&minus;16</b></div>\n          <div>&rArr; <i>a</i><sub>6</sub> = &minus;16 + (&minus;4) = <b>&minus;20</b></div>\n          <div>&rArr; <i>a</i><sub>7</sub> = &minus;20 + (&minus;4) = <b>&minus;24</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">Forms an AP with <i>d</i> = &minus;4. Next three terms: &minus;16, &minus;20, &minus;24</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (viii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(viii) &minus;<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>, &minus;<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>, &minus;<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>, &minus;<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>, &hellip;</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; <i>a</i><sub>2</sub> &minus; <i>a</i><sub>1</sub> = &minus;<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &minus; (&minus;<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>) = 0</div>\n          <div>&rArr; <i>a</i><sub>3</sub> &minus; <i>a</i><sub>2</sub> = 0, &nbsp; <i>a</i><sub>4</sub> &minus; <i>a</i><sub>3</sub> = 0</div>\n          <div>It forms an AP with common difference <i>d</i> = 0.</div>\n          <div>Three more terms:</div>\n          <div>&rArr; <i>a</i><sub>5</sub> = <b>&minus;<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></b>, &nbsp; <i>a</i><sub>6</sub> = <b>&minus;<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></b>, &nbsp; <i>a</i><sub>7</sub> = <b>&minus;<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">Forms an AP with <i>d</i> = 0. Next three terms: &minus;<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>, &minus;<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>, &minus;<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (ix) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(ix) 1, 3, 9, 27, &hellip;</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; <i>a</i><sub>2</sub> &minus; <i>a</i><sub>1</sub> = 3 &minus; 1 = 2</div>\n          <div>&rArr; <i>a</i><sub>3</sub> &minus; <i>a</i><sub>2</sub> = 9 &minus; 3 = 6</div>\n          <div>Since 2 &ne; 6, it does not form an AP.</div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">Not an AP.</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (x) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(x) <i>a</i>, 2<i>a</i>, 3<i>a</i>, 4<i>a</i>, &hellip;</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; <i>a</i><sub>2</sub> &minus; <i>a</i><sub>1</sub> = 2<i>a</i> &minus; <i>a</i> = <i>a</i></div>\n          <div>&rArr; <i>a</i><sub>3</sub> &minus; <i>a</i><sub>2</sub> = 3<i>a</i> &minus; 2<i>a</i> = <i>a</i></div>\n          <div>&rArr; <i>a</i><sub>4</sub> &minus; <i>a</i><sub>3</sub> = 4<i>a</i> &minus; 3<i>a</i> = <i>a</i></div>\n          <div>It forms an AP with common difference <i>d</i> = <i>a</i>.</div>\n          <div>Three more terms:</div>\n          <div>&rArr; <i>a</i><sub>5</sub> = 4<i>a</i> + <i>a</i> = <b>5<i>a</i></b></div>\n          <div>&rArr; <i>a</i><sub>6</sub> = 5<i>a</i> + <i>a</i> = <b>6<i>a</i></b></div>\n          <div>&rArr; <i>a</i><sub>7</sub> = 6<i>a</i> + <i>a</i> = <b>7<i>a</i></b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">Forms an AP with <i>d</i> = <i>a</i>. Next three terms: 5<i>a</i>, 6<i>a</i>, 7<i>a</i></span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (xi) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(xi) <i>a</i>, <i>a</i><sup>2</sup>, <i>a</i><sup>3</sup>, <i>a</i><sup>4</sup>, &hellip;</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; <i>a</i><sub>2</sub> &minus; <i>a</i><sub>1</sub> = <i>a</i><sup>2</sup> &minus; <i>a</i> = <i>a</i>(<i>a</i> &minus; 1)</div>\n          <div>&rArr; <i>a</i><sub>3</sub> &minus; <i>a</i><sub>2</sub> = <i>a</i><sup>3</sup> &minus; <i>a</i><sup>2</sup> = <i>a</i><sup>2</sup>(<i>a</i> &minus; 1)</div>\n          <div>Since <i>a</i>(<i>a</i> &minus; 1) &ne; <i>a</i><sup>2</sup>(<i>a</i> &minus; 1) for <i>a</i> &ne; 0, 1, the difference is not constant.</div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">Not an AP.</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (xii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(xii) &radic;2, &radic;8, &radic;18, &radic;32, &hellip;</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Simplifying the square roots:</div>\n          <div>&bull; &radic;8 = &radic;(4 &times; 2) = 2&radic;2</div>\n          <div>&bull; &radic;18 = &radic;(9 &times; 2) = 3&radic;2</div>\n          <div>&bull; &radic;32 = &radic;(16 &times; 2) = 4&radic;2</div>\n          <div>The sequence is: &radic;2, 2&radic;2, 3&radic;2, 4&radic;2, &hellip;</div>\n          <div>Differences:</div>\n          <div>&rArr; 2&radic;2 &minus; &radic;2 = &radic;2</div>\n          <div>&rArr; 3&radic;2 &minus; 2&radic;2 = &radic;2</div>\n          <div>&rArr; 4&radic;2 &minus; 3&radic;2 = &radic;2</div>\n          <div>It forms an AP with <i>d</i> = &radic;2.</div>\n          <div>Three more terms:</div>\n          <div>&rArr; <i>a</i><sub>5</sub> = 4&radic;2 + &radic;2 = 5&radic;2 = &radic;(25 &times; 2) = <b>&radic;50</b></div>\n          <div>&rArr; <i>a</i><sub>6</sub> = 5&radic;2 + &radic;2 = 6&radic;2 = &radic;(36 &times; 2) = <b>&radic;72</b></div>\n          <div>&rArr; <i>a</i><sub>7</sub> = 6&radic;2 + &radic;2 = 7&radic;2 = &radic;(49 &times; 2) = <b>&radic;98</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">Forms an AP with <i>d</i> = &radic;2. Next three terms: &radic;50, &radic;72, &radic;98</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (xiii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(xiii) &radic;3, &radic;6, &radic;9, &radic;12, &hellip;</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; <i>a</i><sub>2</sub> &minus; <i>a</i><sub>1</sub> = &radic;6 &minus; &radic;3 = &radic;3(&radic;2 &minus; 1)</div>\n          <div>&rArr; <i>a</i><sub>3</sub> &minus; <i>a</i><sub>2</sub> = &radic;9 &minus; &radic;6 = 3 &minus; &radic;6</div>\n          <div>Since &radic;6 &minus; &radic;3 &ne; 3 &minus; &radic;6, the difference is not constant.</div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">Not an AP.</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (xiv) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(xiv) 1<sup>2</sup>, 3<sup>2</sup>, 5<sup>2</sup>, 7<sup>2</sup>, &hellip;</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Simplifying the powers: 1, 9, 25, 49, &hellip;</div>\n          <div>&rArr; <i>a</i><sub>2</sub> &minus; <i>a</i><sub>1</sub> = 9 &minus; 1 = 8</div>\n          <div>&rArr; <i>a</i><sub>3</sub> &minus; <i>a</i><sub>2</sub> = 25 &minus; 9 = 16</div>\n          <div>Since 8 &ne; 16, the difference is not constant.</div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">Not an AP.</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (xv) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(xv) 1<sup>2</sup>, 5<sup>2</sup>, 7<sup>2</sup>, 73, &hellip;</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Simplifying the terms: 1, 25, 49, 73, &hellip;</div>\n          <div>&rArr; <i>a</i><sub>2</sub> &minus; <i>a</i><sub>1</sub> = 25 &minus; 1 = 24</div>\n          <div>&rArr; <i>a</i><sub>3</sub> &minus; <i>a</i><sub>2</sub> = 49 &minus; 25 = 24</div>\n          <div>&rArr; <i>a</i><sub>4</sub> &minus; <i>a</i><sub>3</sub> = 73 &minus; 49 = 24</div>\n          <div>It forms an AP with common difference <i>d</i> = 24.</div>\n          <div>Three more terms:</div>\n          <div>&rArr; <i>a</i><sub>5</sub> = 73 + 24 = <b>97</b></div>\n          <div>&rArr; <i>a</i><sub>6</sub> = 97 + 24 = <b>121</b></div>\n          <div>&rArr; <i>a</i><sub>7</sub> = 121 + 24 = <b>145</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">Forms an AP with <i>d</i> = 24. Next three terms: 97, 121, 145</span>\n        </div>\n      </div>\n    </div>\n\n  </div>\n\n</div>\n",
+    "exercise2": "\n\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; }\n  .frac .den { padding: 1px 4px; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(124, 77, 255, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #7C4DFF; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 14px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(124, 77, 255, 0.25); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #7C4DFF; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #B388FF; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(124, 77, 255, 0.15); border: 1px solid #7C4DFF; color: #B388FF; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 6px 0; }\n  .table-card { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 14px 0; border-radius: 8px; }\n  .table-card table { width: 100%; border-collapse: collapse; text-align: center; }\n  .table-card th { background: rgba(124, 77, 255, 0.25); color: #B388FF; border: 1px solid rgba(124, 77, 255, 0.4); padding: 10px; font-weight: 700; }\n  .table-card td { border: 1px solid rgba(124, 77, 255, 0.25); padding: 9px; color: #E2E8F0; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Question 1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 1</div>\n    <div class=\"q-text\">\n      Fill in the blanks in the following table, given that <i>a</i> is the first term, <i>d</i> the common difference and <i>a</i><sub><i>n</i></sub> the <i>n</i><sup>th</sup> term of the AP:\n    </div>\n\n    <!-- (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(i) <i>a</i> = 7, &nbsp; <i>d</i> = 3, &nbsp; <i>n</i> = 8, &nbsp; <i>a</i><sub><i>n</i></sub> = ?</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Formula: <i>a</i><sub><i>n</i></sub> = <i>a</i> + (<i>n</i> &minus; 1)<i>d</i></div>\n          <div>&rArr; <i>a</i><sub>8</sub> = 7 + (8 &minus; 1)(3)</div>\n          <div>&rArr; <i>a</i><sub>8</sub> = 7 + 7(3) = 7 + 21 = <b>28</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\"><i>a</i><sub><i>n</i></sub> = 28</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(ii) <i>a</i> = &minus;18, &nbsp; <i>d</i> = ?, &nbsp; <i>n</i> = 10, &nbsp; <i>a</i><sub><i>n</i></sub> = 0</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Formula: <i>a</i><sub><i>n</i></sub> = <i>a</i> + (<i>n</i> &minus; 1)<i>d</i></div>\n          <div>&rArr; 0 = &minus;18 + (10 &minus; 1)<i>d</i></div>\n          <div>&rArr; 0 = &minus;18 + 9<i>d</i></div>\n          <div>&rArr; 9<i>d</i> = 18</div>\n          <div>&rArr; <b><i>d</i> = 2</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\"><i>d</i> = 2</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (iii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(iii) <i>a</i> = ?, &nbsp; <i>d</i> = &minus;3, &nbsp; <i>n</i> = 18, &nbsp; <i>a</i><sub><i>n</i></sub> = &minus;5</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Formula: <i>a</i><sub><i>n</i></sub> = <i>a</i> + (<i>n</i> &minus; 1)<i>d</i></div>\n          <div>&rArr; &minus;5 = <i>a</i> + (18 &minus; 1)(&minus;3)</div>\n          <div>&rArr; &minus;5 = <i>a</i> + 17(&minus;3)</div>\n          <div>&rArr; &minus;5 = <i>a</i> &minus; 51</div>\n          <div>&rArr; <i>a</i> = &minus;5 + 51 = <b>46</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\"><i>a</i> = 46</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (iv) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(iv) <i>a</i> = &minus;18.9, &nbsp; <i>d</i> = 2.5, &nbsp; <i>n</i> = ?, &nbsp; <i>a</i><sub><i>n</i></sub> = 3.6</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Formula: <i>a</i><sub><i>n</i></sub> = <i>a</i> + (<i>n</i> &minus; 1)<i>d</i></div>\n          <div>&rArr; 3.6 = &minus;18.9 + (<i>n</i> &minus; 1)(2.5)</div>\n          <div>&rArr; (<i>n</i> &minus; 1)(2.5) = 3.6 + 18.9 = 22.5</div>\n          <div>&rArr; <i>n</i> &minus; 1 = <span class=\"frac\"><span class=\"num\">22.5</span><span class=\"den\">2.5</span></span> = 9</div>\n          <div>&rArr; <i>n</i> = 9 + 1 = <b>10</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\"><i>n</i> = 10</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (v) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(v) <i>a</i> = 3.5, &nbsp; <i>d</i> = 0, &nbsp; <i>n</i> = 105, &nbsp; <i>a</i><sub><i>n</i></sub> = ?</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Formula: <i>a</i><sub><i>n</i></sub> = <i>a</i> + (<i>n</i> &minus; 1)<i>d</i></div>\n          <div>&rArr; <i>a</i><sub>105</sub> = 3.5 + (105 &minus; 1)(0)</div>\n          <div>&rArr; <i>a</i><sub>105</sub> = 3.5 + 0 = <b>3.5</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\"><i>a</i><sub><i>n</i></sub> = 3.5</span>\n        </div>\n      </div>\n    </div>\n\n  </div>\n\n  <!-- Question 2 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 2</div>\n    <div class=\"q-text\">\n      Choose the correct choice in the following and justify:\n    </div>\n\n    <!-- (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(i) 30<sup>th</sup> term of the AP: 10, 7, 4, &hellip;, is:<br/>\n      (A) 97 &nbsp;&nbsp; (B) 77 &nbsp;&nbsp; (C) &minus;77 &nbsp;&nbsp; (D) &minus;87</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Here, <i>a</i> = 10, &nbsp; <i>d</i> = 7 &minus; 10 = &minus;3, &nbsp; <i>n</i> = 30.</div>\n          <div>&rArr; <i>a</i><sub>30</sub> = <i>a</i> + (30 &minus; 1)<i>d</i></div>\n          <div>&rArr; <i>a</i><sub>30</sub> = 10 + 29(&minus;3) = 10 &minus; 87 = <b>&minus;77</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">(C) &minus;77</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(ii) 11<sup>th</sup> term of the AP: &minus;3, &minus;<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>, 2, &hellip;, is:<br/>\n      (A) 28 &nbsp;&nbsp; (B) 22 &nbsp;&nbsp; (C) &minus;38 &nbsp;&nbsp; (D) &minus;46<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Here, <i>a</i> = &minus;3, &nbsp; <i>d</i> = &minus;<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &minus; (&minus;3) = &minus;<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> + 3 = <span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">2</span></span>, &nbsp; <i>n</i> = 11.</div>\n          <div>&rArr; <i>a</i><sub>11</sub> = <i>a</i> + (11 &minus; 1)<i>d</i></div>\n          <div>&rArr; <i>a</i><sub>11</sub> = &minus;3 + 10(<span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">2</span></span>) = &minus;3 + 25 = <b>22</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">(B) 22</span>\n        </div>\n      </div>\n    </div>\n\n  </div>\n\n  <!-- Question 3 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 3</div>\n    <div class=\"q-text\">\n      In the following APs, find the missing terms in the boxes:\n    </div>\n\n    <!-- (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(i) 2, &square;, 26</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Let the terms be <i>a</i><sub>1</sub> = 2, <i>a</i><sub>2</sub> = <i>x</i>, <i>a</i><sub>3</sub> = 26.</div>\n          <div>Since they are in AP, the middle term is the Arithmetic Mean:</div>\n          <div>&rArr; <i>a</i><sub>2</sub> = <span class=\"frac\"><span class=\"num\"><i>a</i><sub>1</sub> + <i>a</i><sub>3</sub></span><span class=\"den\">2</span></span> = <span class=\"frac\"><span class=\"num\">2 + 26</span><span class=\"den\">2</span></span> = <span class=\"frac\"><span class=\"num\">28</span><span class=\"den\">2</span></span> = <b>14</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">Missing term = 14</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(ii) &square;, 13, &square;, 3</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Here, <i>a</i><sub>2</sub> = <i>a</i> + <i>d</i> = 13 &nbsp; &hellip; (1)</div>\n          <div>and <i>a</i><sub>4</sub> = <i>a</i> + 3<i>d</i> = 3 &nbsp; &hellip; (2)</div>\n          <div>Subtracting (1) from (2):</div>\n          <div>&rArr; 2<i>d</i> = 3 &minus; 13 = &minus;10 &rArr; <b><i>d</i> = &minus;5</b></div>\n          <div>From (1): <i>a</i> + (&minus;5) = 13 &rArr; <b><i>a</i> = 18</b></div>\n          <div>Now, <i>a</i><sub>3</sub> = <i>a</i> + 2<i>d</i> = 18 + 2(&minus;5) = 18 &minus; 10 = <b>8</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">Missing terms: 18 and 8 (Sequence: 18, 13, 8, 3)</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (iii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(iii) 5, &square;, &square;, 9<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Here, <i>a</i> = 5, and <i>a</i><sub>4</sub> = 9<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> = <span class=\"frac\"><span class=\"num\">19</span><span class=\"den\">2</span></span>.</div>\n          <div>&rArr; <i>a</i> + 3<i>d</i> = <span class=\"frac\"><span class=\"num\">19</span><span class=\"den\">2</span></span></div>\n          <div>&rArr; 5 + 3<i>d</i> = <span class=\"frac\"><span class=\"num\">19</span><span class=\"den\">2</span></span> &rArr; 3<i>d</i> = <span class=\"frac\"><span class=\"num\">19</span><span class=\"den\">2</span></span> &minus; 5 = <span class=\"frac\"><span class=\"num\">9</span><span class=\"den\">2</span></span></div>\n          <div>&rArr; <i>d</i> = <span class=\"frac\"><span class=\"num\">9</span><span class=\"den\">6</span></span> = <b><span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">2</span></span></b></div>\n          <div>Now finding missing terms:</div>\n          <div>&rArr; <i>a</i><sub>2</sub> = <i>a</i> + <i>d</i> = 5 + <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">2</span></span> = <b><span class=\"frac\"><span class=\"num\">13</span><span class=\"den\">2</span></span> = 6<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></b></div>\n          <div>&rArr; <i>a</i><sub>3</sub> = <i>a</i><sub>2</sub> + <i>d</i> = <span class=\"frac\"><span class=\"num\">13</span><span class=\"den\">2</span></span> + <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">2</span></span> = <span class=\"frac\"><span class=\"num\">16</span><span class=\"den\">2</span></span> = <b>8</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">Missing terms: 6<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> and 8</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (iv) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(iv) &minus;4, &square;, &square;, &square;, &square;, 6</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Here, <i>a</i><sub>1</sub> = <i>a</i> = &minus;4, and <i>a</i><sub>6</sub> = 6.</div>\n          <div>&rArr; <i>a</i> + 5<i>d</i> = 6</div>\n          <div>&rArr; &minus;4 + 5<i>d</i> = 6 &rArr; 5<i>d</i> = 10 &rArr; <b><i>d</i> = 2</b></div>\n          <div>The missing terms:</div>\n          <div>&rArr; <i>a</i><sub>2</sub> = &minus;4 + 2 = <b>&minus;2</b></div>\n          <div>&rArr; <i>a</i><sub>3</sub> = &minus;2 + 2 = <b>0</b></div>\n          <div>&rArr; <i>a</i><sub>4</sub> = 0 + 2 = <b>2</b></div>\n          <div>&rArr; <i>a</i><sub>5</sub> = 2 + 2 = <b>4</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">Missing terms: &minus;2, 0, 2, 4</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (v) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(v) &square;, 38, &square;, &square;, &square;, &minus;22</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Here, <i>a</i><sub>2</sub> = <i>a</i> + <i>d</i> = 38 &nbsp; &hellip; (1)</div>\n          <div>and <i>a</i><sub>6</sub> = <i>a</i> + 5<i>d</i> = &minus;22 &nbsp; &hellip; (2)</div>\n          <div>Subtracting (1) from (2):</div>\n          <div>&rArr; 4<i>d</i> = &minus;22 &minus; 38 = &minus;60 &rArr; <b><i>d</i> = &minus;15</b></div>\n          <div>From (1): <i>a</i> + (&minus;15) = 38 &rArr; <b><i>a</i> = 53</b></div>\n          <div>Finding remaining terms:</div>\n          <div>&rArr; <i>a</i><sub>3</sub> = 38 + (&minus;15) = <b>23</b></div>\n          <div>&rArr; <i>a</i><sub>4</sub> = 23 + (&minus;15) = <b>8</b></div>\n          <div>&rArr; <i>a</i><sub>5</sub> = 8 + (&minus;15) = <b>&minus;7</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">Missing terms: 53, 23, 8, &minus;7</span>\n        </div>\n      </div>\n    </div>\n\n  </div>\n\n  <!-- Question 4 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 4</div>\n    <div class=\"q-text\">\n      Which term of the AP: 3, 8, 13, 18, &hellip; is 78?\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Here, first term <i>a</i> = 3, and common difference <i>d</i> = 8 &minus; 3 = 5.</div>\n        <div>Let the <i>n</i><sup>th</sup> term be 78:</div>\n        <div>&rArr; <i>a</i><sub><i>n</i></sub> = <i>a</i> + (<i>n</i> &minus; 1)<i>d</i> = 78</div>\n        <div>&rArr; 3 + (<i>n</i> &minus; 1)(5) = 78</div>\n        <div>&rArr; 5(<i>n</i> &minus; 1) = 78 &minus; 3 = 75</div>\n        <div>&rArr; <i>n</i> &minus; 1 = <span class=\"frac\"><span class=\"num\">75</span><span class=\"den\">5</span></span> = 15</div>\n        <div>&rArr; <i>n</i> = 15 + 1 = <b>16</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\">The 16<sup>th</sup> term of the AP is 78.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 5 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 5</div>\n    <div class=\"q-text\">\n      Find the number of terms in each of the following APs:\n    </div>\n\n    <!-- (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(i) 7, 13, 19, &hellip;, 205</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Here, <i>a</i> = 7, &nbsp; <i>d</i> = 13 &minus; 7 = 6, &nbsp; and last term <i>a</i><sub><i>n</i></sub> = 205.</div>\n          <div>&rArr; 7 + (<i>n</i> &minus; 1)(6) = 205</div>\n          <div>&rArr; 6(<i>n</i> &minus; 1) = 205 &minus; 7 = 198</div>\n          <div>&rArr; <i>n</i> &minus; 1 = <span class=\"frac\"><span class=\"num\">198</span><span class=\"den\">6</span></span> = 33</div>\n          <div>&rArr; <i>n</i> = 33 + 1 = <b>34</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">Number of terms = 34</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(ii) 18, 15<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>, 13, &hellip;, &minus;47</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Here, <i>a</i> = 18, &nbsp; <i>d</i> = <span class=\"frac\"><span class=\"num\">31</span><span class=\"den\">2</span></span> &minus; 18 = <span class=\"frac\"><span class=\"num\">31 &minus; 36</span><span class=\"den\">2</span></span> = &minus;<span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">2</span></span>, &nbsp; and <i>a</i><sub><i>n</i></sub> = &minus;47.</div>\n          <div>&rArr; 18 + (<i>n</i> &minus; 1)(&minus;<span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">2</span></span>) = &minus;47</div>\n          <div>&rArr; (<i>n</i> &minus; 1)(&minus;<span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">2</span></span>) = &minus;47 &minus; 18 = &minus;65</div>\n          <div>&rArr; <i>n</i> &minus; 1 = &minus;65 &times; (&minus;<span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">5</span></span>) = 13 &times; 2 = 26</div>\n          <div>&rArr; <i>n</i> = 26 + 1 = <b>27</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">Number of terms = 27</span>\n        </div>\n      </div>\n    </div>\n\n  </div>\n\n  <!-- Question 6 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 6</div>\n    <div class=\"q-text\">\n      Check whether &minus;150 is a term of the AP: 11, 8, 5, 2, &hellip;\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Here, <i>a</i> = 11, &nbsp; <i>d</i> = 8 &minus; 11 = &minus;3.</div>\n        <div>Let &minus;150 be the <i>n</i><sup>th</sup> term:</div>\n        <div>&rArr; <i>a</i><sub><i>n</i></sub> = <i>a</i> + (<i>n</i> &minus; 1)<i>d</i> = &minus;150</div>\n        <div>&rArr; 11 + (<i>n</i> &minus; 1)(&minus;3) = &minus;150</div>\n        <div>&rArr; &minus;3(<i>n</i> &minus; 1) = &minus;150 &minus; 11 = &minus;161</div>\n        <div>&rArr; <i>n</i> &minus; 1 = <span class=\"frac\"><span class=\"num\">161</span><span class=\"den\">3</span></span></div>\n        <div>&rArr; <i>n</i> = <span class=\"frac\"><span class=\"num\">161</span><span class=\"den\">3</span></span> + 1 = <span class=\"frac\"><span class=\"num\">164</span><span class=\"den\">3</span></span> = 54<span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span></div>\n        <div>Since <i>n</i> must be a natural number (positive integer), &minus;150 cannot be a term of this AP.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\">No, &minus;150 is not a term of the given AP.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 7 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 7</div>\n    <div class=\"q-text\">\n      Find the 31<sup>st</sup> term of an AP whose 11<sup>th</sup> term is 38 and the 16<sup>th</sup> term is 73.\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Given:</div>\n        <div>&rArr; <i>a</i><sub>11</sub> = <i>a</i> + 10<i>d</i> = 38 &nbsp; &hellip; (1)</div>\n        <div>&rArr; <i>a</i><sub>16</sub> = <i>a</i> + 15<i>d</i> = 73 &nbsp; &hellip; (2)</div>\n        <div>Subtracting equation (1) from (2):</div>\n        <div>&rArr; (<i>a</i> + 15<i>d</i>) &minus; (<i>a</i> + 10<i>d</i>) = 73 &minus; 38</div>\n        <div>&rArr; 5<i>d</i> = 35 &rArr; <b><i>d</i> = 7</b></div>\n        <div>Substituting <i>d</i> = 7 into equation (1):</div>\n        <div>&rArr; <i>a</i> + 10(7) = 38 &rArr; <i>a</i> + 70 = 38 &rArr; <b><i>a</i> = &minus;32</b></div>\n        <div>Now, calculating the 31<sup>st</sup> term:</div>\n        <div>&rArr; <i>a</i><sub>31</sub> = <i>a</i> + 30<i>d</i> = &minus;32 + 30(7) = &minus;32 + 210 = <b>178</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\">The 31<sup>st</sup> term is 178.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 8 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 8</div>\n    <div class=\"q-text\">\n      An AP consists of 50 terms of which 3<sup>rd</sup> term is 12 and the last term is 106. Find the 29<sup>th</sup> term.\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Total terms <i>n</i> = 50, so the last term is the 50<sup>th</sup> term.</div>\n        <div>&rArr; <i>a</i><sub>3</sub> = <i>a</i> + 2<i>d</i> = 12 &nbsp; &hellip; (1)</div>\n        <div>&rArr; <i>a</i><sub>50</sub> = <i>a</i> + 49<i>d</i> = 106 &nbsp; &hellip; (2)</div>\n        <div>Subtracting (1) from (2):</div>\n        <div>&rArr; 47<i>d</i> = 106 &minus; 12 = 94 &rArr; <b><i>d</i> = 2</b></div>\n        <div>From (1): <i>a</i> + 2(2) = 12 &rArr; <i>a</i> + 4 = 12 &rArr; <b><i>a</i> = 8</b></div>\n        <div>Now, finding the 29<sup>th</sup> term:</div>\n        <div>&rArr; <i>a</i><sub>29</sub> = <i>a</i> + 28<i>d</i> = 8 + 28(2) = 8 + 56 = <b>64</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\">The 29<sup>th</sup> term is 64.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 9 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 9</div>\n    <div class=\"q-text\">\n      If the 3<sup>rd</sup> and the 9<sup>th</sup> terms of an AP are 4 and &minus;8 respectively, which term of this AP is zero?\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Given:</div>\n        <div>&rArr; <i>a</i><sub>3</sub> = <i>a</i> + 2<i>d</i> = 4 &nbsp; &hellip; (1)</div>\n        <div>&rArr; <i>a</i><sub>9</sub> = <i>a</i> + 8<i>d</i> = &minus;8 &nbsp; &hellip; (2)</div>\n        <div>Subtracting (1) from (2):</div>\n        <div>&rArr; 6<i>d</i> = &minus;8 &minus; 4 = &minus;12 &rArr; <b><i>d</i> = &minus;2</b></div>\n        <div>From (1): <i>a</i> + 2(&minus;2) = 4 &rArr; <i>a</i> &minus; 4 = 4 &rArr; <b><i>a</i> = 8</b></div>\n        <div>Let the <i>n</i><sup>th</sup> term be 0:</div>\n        <div>&rArr; <i>a</i> + (<i>n</i> &minus; 1)<i>d</i> = 0</div>\n        <div>&rArr; 8 + (<i>n</i> &minus; 1)(&minus;2) = 0</div>\n        <div>&rArr; &minus;2(<i>n</i> &minus; 1) = &minus;8</div>\n        <div>&rArr; <i>n</i> &minus; 1 = 4 &rArr; <b><i>n</i> = 5</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\">The 5<sup>th</sup> term of the AP is zero.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 10 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 10</div>\n    <div class=\"q-text\">\n      The 17<sup>th</sup> term of an AP exceeds its 10<sup>th</sup> term by 7. Find the common difference.\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>We know that <i>a</i><sub><i>n</i></sub> = <i>a</i> + (<i>n</i> &minus; 1)<i>d</i>.</div>\n        <div>&rArr; <i>a</i><sub>17</sub> = <i>a</i> + 16<i>d</i></div>\n        <div>&rArr; <i>a</i><sub>10</sub> = <i>a</i> + 9<i>d</i></div>\n        <div>According to the given condition:</div>\n        <div>&rArr; <i>a</i><sub>17</sub> &minus; <i>a</i><sub>10</sub> = 7</div>\n        <div>&rArr; (<i>a</i> + 16<i>d</i>) &minus; (<i>a</i> + 9<i>d</i>) = 7</div>\n        <div>&rArr; 7<i>d</i> = 7</div>\n        <div>&rArr; <b><i>d</i> = 1</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\">The common difference <i>d</i> is 1.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 11 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 11</div>\n    <div class=\"q-text\">\n      Which term of the AP: 3, 15, 27, 39, &hellip; will be 132 more than its 54<sup>th</sup> term?\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Here, <i>a</i> = 3, and <i>d</i> = 15 &minus; 3 = 12.</div>\n        <div>First, find the 54<sup>th</sup> term <i>a</i><sub>54</sub>:</div>\n        <div>&rArr; <i>a</i><sub>54</sub> = <i>a</i> + 53<i>d</i> = 3 + 53(12) = 3 + 636 = 639</div>\n        <div>Let the required term be <i>a</i><sub><i>n</i></sub>:</div>\n        <div>&rArr; <i>a</i><sub><i>n</i></sub> = <i>a</i><sub>54</sub> + 132 = 639 + 132 = 771</div>\n        <div>Using <i>a</i><sub><i>n</i></sub> = <i>a</i> + (<i>n</i> &minus; 1)<i>d</i>:</div>\n        <div>&rArr; 3 + (<i>n</i> &minus; 1)(12) = 771</div>\n        <div>&rArr; 12(<i>n</i> &minus; 1) = 771 &minus; 3 = 768</div>\n        <div>&rArr; <i>n</i> &minus; 1 = <span class=\"frac\"><span class=\"num\">768</span><span class=\"den\">12</span></span> = 64</div>\n        <div>&rArr; <i>n</i> = 64 + 1 = <b>65</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\">The 65<sup>th</sup> term is 132 more than the 54<sup>th</sup> term.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 12 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 12</div>\n    <div class=\"q-text\">\n      Two APs have the same common difference. The difference between their 100<sup>th</sup> terms is 100, what is the difference between their 1000<sup>th</sup> terms?\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Let the first AP have first term <i>a</i> and common difference <i>d</i>.</div>\n        <div>Let the second AP have first term <i>A</i> and the same common difference <i>d</i>.</div>\n        <div>For the 100<sup>th</sup> terms:</div>\n        <div>&rArr; <i>a</i><sub>100</sub> = <i>a</i> + 99<i>d</i> &nbsp; and &nbsp; <i>A</i><sub>100</sub> = <i>A</i> + 99<i>d</i></div>\n        <div>Given: <i>a</i><sub>100</sub> &minus; <i>A</i><sub>100</sub> = 100</div>\n        <div>&rArr; (<i>a</i> + 99<i>d</i>) &minus; (<i>A</i> + 99<i>d</i>) = 100</div>\n        <div>&rArr; <b><i>a</i> &minus; <i>A</i> = 100</b> &nbsp; &hellip; (1)</div>\n        <div style=\"margin-top: 8px;\">Now, for their 1000<sup>th</sup> terms:</div>\n        <div>&rArr; <i>a</i><sub>1000</sub> &minus; <i>A</i><sub>1000</sub> = (<i>a</i> + 999<i>d</i>) &minus; (<i>A</i> + 999<i>d</i>)</div>\n        <div>&rArr; <i>a</i><sub>1000</sub> &minus; <i>A</i><sub>1000</sub> = <i>a</i> &minus; <i>A</i></div>\n        <div>From (1), <i>a</i> &minus; <i>A</i> = 100.</div>\n        <div>&rArr; <b><i>a</i><sub>1000</sub> &minus; <i>A</i><sub>1000</sub> = 100</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\">The difference between their 1000<sup>th</sup> terms is 100.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 13 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 13</div>\n    <div class=\"q-text\">\n      How many three-digit numbers are divisible by 7?\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>The smallest three-digit number divisible by 7 is 105 (since 105 = 7 &times; 15).</div>\n        <div>The largest three-digit number divisible by 7 is 994 (since 999 &divide; 7 = 142 with remainder 5, so 999 &minus; 5 = 994).</div>\n        <div>The sequence of three-digit numbers divisible by 7 is:</div>\n        <div>105, 112, 119, &hellip;, 994.</div>\n        <div>This is an AP with:</div>\n        <div>&bull; <i>a</i> = 105</div>\n        <div>&bull; <i>d</i> = 7</div>\n        <div>&bull; <i>a</i><sub><i>n</i></sub> = 994</div>\n        <div>Using <i>a</i><sub><i>n</i></sub> = <i>a</i> + (<i>n</i> &minus; 1)<i>d</i>:</div>\n        <div>&rArr; 105 + (<i>n</i> &minus; 1)(7) = 994</div>\n        <div>&rArr; 7(<i>n</i> &minus; 1) = 994 &minus; 105 = 889</div>\n        <div>&rArr; <i>n</i> &minus; 1 = <span class=\"frac\"><span class=\"num\">889</span><span class=\"den\">7</span></span> = 127</div>\n        <div>&rArr; <i>n</i> = 127 + 1 = <b>128</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\">There are 128 three-digit numbers divisible by 7.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 14 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 14</div>\n    <div class=\"q-text\">\n      How many multiples of 4 lie between 10 and 250?\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>The first multiple of 4 greater than 10 is 12.</div>\n        <div>The largest multiple of 4 less than 250 is 248 (since 250 &divide; 4 gives remainder 2).</div>\n        <div>The sequence of multiples of 4 is:</div>\n        <div>12, 16, 20, &hellip;, 248.</div>\n        <div>Here, <i>a</i> = 12, &nbsp; <i>d</i> = 4, &nbsp; and <i>a</i><sub><i>n</i></sub> = 248.</div>\n        <div>Using <i>a</i><sub><i>n</i></sub> = <i>a</i> + (<i>n</i> &minus; 1)<i>d</i>:</div>\n        <div>&rArr; 12 + (<i>n</i> &minus; 1)(4) = 248</div>\n        <div>&rArr; 4(<i>n</i> &minus; 1) = 248 &minus; 12 = 236</div>\n        <div>&rArr; <i>n</i> &minus; 1 = <span class=\"frac\"><span class=\"num\">236</span><span class=\"den\">4</span></span> = 59</div>\n        <div>&rArr; <i>n</i> = 59 + 1 = <b>60</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\">There are 60 multiples of 4 lying between 10 and 250.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 15 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 15</div>\n    <div class=\"q-text\">\n      For what value of <i>n</i>, are the <i>n</i><sup>th</sup> terms of two APs: 63, 65, 67, &hellip; and 3, 10, 17, &hellip; equal?\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div><b>First AP:</b> 63, 65, 67, &hellip;</div>\n        <div>&rArr; First term <i>a</i><sub>1</sub> = 63, common difference <i>d</i><sub>1</sub> = 65 &minus; 63 = 2</div>\n        <div>&rArr; <i>n</i><sup>th</sup> term = 63 + (<i>n</i> &minus; 1)(2) = 63 + 2<i>n</i> &minus; 2 = <b>61 + 2<i>n</i></b></div>\n        <div style=\"margin-top: 8px;\"><b>Second AP:</b> 3, 10, 17, &hellip;</div>\n        <div>&rArr; First term <i>a</i><sub>2</sub> = 3, common difference <i>d</i><sub>2</sub> = 10 &minus; 3 = 7</div>\n        <div>&rArr; <i>n</i><sup>th</sup> term = 3 + (<i>n</i> &minus; 1)(7) = 3 + 7<i>n</i> &minus; 7 = <b>7<i>n</i> &minus; 4</b></div>\n        <div style=\"margin-top: 8px;\">Equating the two <i>n</i><sup>th</sup> terms:</div>\n        <div>&rArr; 61 + 2<i>n</i> = 7<i>n</i> &minus; 4</div>\n        <div>&rArr; 7<i>n</i> &minus; 2<i>n</i> = 61 + 4</div>\n        <div>&rArr; 5<i>n</i> = 65</div>\n        <div>&rArr; <b><i>n</i> = 13</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\">For <i>n</i> = 13, the <i>n</i><sup>th</sup> terms of both APs are equal.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 16 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 16</div>\n    <div class=\"q-text\">\n      Determine the AP whose third term is 16 and the 7<sup>th</sup> term exceeds the 5<sup>th</sup> term by 12.\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Given:</div>\n        <div>&rArr; <i>a</i><sub>3</sub> = <i>a</i> + 2<i>d</i> = 16 &nbsp; &hellip; (1)</div>\n        <div>and <i>a</i><sub>7</sub> &minus; <i>a</i><sub>5</sub> = 12</div>\n        <div>&rArr; (<i>a</i> + 6<i>d</i>) &minus; (<i>a</i> + 4<i>d</i>) = 12</div>\n        <div>&rArr; 2<i>d</i> = 12 &rArr; <b><i>d</i> = 6</b></div>\n        <div>Substituting <i>d</i> = 6 into equation (1):</div>\n        <div>&rArr; <i>a</i> + 2(6) = 16 &rArr; <i>a</i> + 12 = 16 &rArr; <b><i>a</i> = 4</b></div>\n        <div>The required AP is <i>a</i>, <i>a</i>+<i>d</i>, <i>a</i>+2<i>d</i>, &hellip;:</div>\n        <div>&rArr; 4, (4 + 6), (4 + 12), &hellip; = <b>4, 10, 16, 22, &hellip;</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\">The AP is 4, 10, 16, 22, &hellip;</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 17 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 17</div>\n    <div class=\"q-text\">\n      Find the 20<sup>th</sup> term from the last term of the AP: 3, 8, 13, &hellip;, 253.\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Here, <i>a</i> = 3, &nbsp; <i>d</i> = 8 &minus; 3 = 5, &nbsp; and last term <i>l</i> = 253.</div>\n        <div>Formula for the <i>n</i><sup>th</sup> term from the end:</div>\n        <div><b><i>a</i><sub><i>n</i> (from end)</sub> = <i>l</i> &minus; (<i>n</i> &minus; 1)<i>d</i></b></div>\n        <div>For <i>n</i> = 20:</div>\n        <div>&rArr; <i>a</i><sub>20 (from end)</sub> = 253 &minus; (20 &minus; 1)(5)</div>\n        <div>&rArr; <i>a</i><sub>20 (from end)</sub> = 253 &minus; 19(5) = 253 &minus; 95 = <b>158</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\">The 20<sup>th</sup> term from the end is 158.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 18 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 18</div>\n    <div class=\"q-text\">\n      The sum of the 4<sup>th</sup> and 8<sup>th</sup> terms of an AP is 24 and the sum of the 6<sup>th</sup> and 10<sup>th</sup> terms is 44. Find the first three terms of the AP.\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Given:</div>\n        <div>&rArr; <i>a</i><sub>4</sub> + <i>a</i><sub>8</sub> = 24</div>\n        <div>&rArr; (<i>a</i> + 3<i>d</i>) + (<i>a</i> + 7<i>d</i>) = 24</div>\n        <div>&rArr; 2<i>a</i> + 10<i>d</i> = 24 &rArr; <i>a</i> + 5<i>d</i> = 12 &nbsp; &hellip; (1)</div>\n        <div style=\"margin-top: 8px;\">Also:</div>\n        <div>&rArr; <i>a</i><sub>6</sub> + <i>a</i><sub>10</sub> = 44</div>\n        <div>&rArr; (<i>a</i> + 5<i>d</i>) + (<i>a</i> + 9<i>d</i>) = 44</div>\n        <div>&rArr; 2<i>a</i> + 14<i>d</i> = 44 &rArr; <i>a</i> + 7<i>d</i> = 22 &nbsp; &hellip; (2)</div>\n        <div style=\"margin-top: 8px;\">Subtracting (1) from (2):</div>\n        <div>&rArr; 2<i>d</i> = 22 &minus; 12 = 10 &rArr; <b><i>d</i> = 5</b></div>\n        <div>Substituting <i>d</i> = 5 into (1):</div>\n        <div>&rArr; <i>a</i> + 5(5) = 12 &rArr; <i>a</i> + 25 = 12 &rArr; <b><i>a</i> = &minus;13</b></div>\n        <div>First three terms:</div>\n        <div>&rArr; <i>a</i><sub>1</sub> = <b>&minus;13</b></div>\n        <div>&rArr; <i>a</i><sub>2</sub> = &minus;13 + 5 = <b>&minus;8</b></div>\n        <div>&rArr; <i>a</i><sub>3</sub> = &minus;8 + 5 = <b>&minus;3</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\">The first three terms are &minus;13, &minus;8, and &minus;3.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 19 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 19</div>\n    <div class=\"q-text\">\n      Subba Rao started work in 1995 at an annual salary of ₹ 5000 and received an increment of ₹ 200 each year. In which year did his income reach ₹ 7000?\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>The annual salaries form an AP:</div>\n        <div>5000, 5200, 5400, &hellip;, 7000.</div>\n        <div>Here, <i>a</i> = 5000, &nbsp; <i>d</i> = 200, &nbsp; and <i>a</i><sub><i>n</i></sub> = 7000.</div>\n        <div>Using <i>a</i><sub><i>n</i></sub> = <i>a</i> + (<i>n</i> &minus; 1)<i>d</i>:</div>\n        <div>&rArr; 5000 + (<i>n</i> &minus; 1)(200) = 7000</div>\n        <div>&rArr; 200(<i>n</i> &minus; 1) = 7000 &minus; 5000 = 2000</div>\n        <div>&rArr; <i>n</i> &minus; 1 = <span class=\"frac\"><span class=\"num\">2000</span><span class=\"den\">200</span></span> = 10</div>\n        <div>&rArr; <i>n</i> = 10 + 1 = <b>11</b></div>\n        <div>His income reached ₹ 7000 in the 11<sup>th</sup> year.</div>\n        <div>Calendar year = 1995 + (11 &minus; 1) = 1995 + 10 = <b>2005</b>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\">His income reached ₹ 7000 in the year 2005 (in the 11<sup>th</sup> year).</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 20 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 20</div>\n    <div class=\"q-text\">\n      Ramkali saved ₹ 5 in the first week of a year and then increased her weekly savings by ₹ 1.75. If in the <i>n</i><sup>th</sup> week, her weekly savings become ₹ 20.75, find <i>n</i>.\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Her weekly savings form an AP:</div>\n        <div>5, 6.75, 8.50, &hellip;, 20.75.</div>\n        <div>Here, <i>a</i> = 5, &nbsp; <i>d</i> = 1.75, &nbsp; and <i>a</i><sub><i>n</i></sub> = 20.75.</div>\n        <div>Using <i>a</i><sub><i>n</i></sub> = <i>a</i> + (<i>n</i> &minus; 1)<i>d</i>:</div>\n        <div>&rArr; 5 + (<i>n</i> &minus; 1)(1.75) = 20.75</div>\n        <div>&rArr; 1.75(<i>n</i> &minus; 1) = 20.75 &minus; 5 = 15.75</div>\n        <div>&rArr; <i>n</i> &minus; 1 = <span class=\"frac\"><span class=\"num\">15.75</span><span class=\"den\">1.75</span></span> = <span class=\"frac\"><span class=\"num\">1575</span><span class=\"den\">175</span></span> = 9</div>\n        <div>&rArr; <i>n</i> = 9 + 1 = <b>10</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\"><i>n</i> = 10 (in the 10<sup>th</sup> week).</span>\n      </div>\n    </div>\n  </div>\n\n</div>\n",
+    "exercise3": "\n\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; }\n  .frac .den { padding: 1px 4px; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(124, 77, 255, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #7C4DFF; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 14px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(124, 77, 255, 0.25); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #7C4DFF; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #B388FF; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(124, 77, 255, 0.15); border: 1px solid #7C4DFF; color: #B388FF; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 6px 0; }\n  .table-card { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 14px 0; border-radius: 8px; }\n  .table-card table { width: 100%; border-collapse: collapse; text-align: center; }\n  .table-card th { background: rgba(124, 77, 255, 0.25); color: #B388FF; border: 1px solid rgba(124, 77, 255, 0.4); padding: 10px; font-weight: 700; }\n  .table-card td { border: 1px solid rgba(124, 77, 255, 0.25); padding: 9px; color: #E2E8F0; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Question 1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 1</div>\n    <div class=\"q-text\">\n      Find the sum of the following APs:\n    </div>\n\n    <!-- (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(i) 2, 7, 12, &hellip;, to 10 terms</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Here, <i>a</i> = 2, &nbsp; <i>d</i> = 7 &minus; 2 = 5, &nbsp; and <i>n</i> = 10.</div>\n          <div>Using <i>S</i><sub><i>n</i></sub> = <span class=\"frac\"><span class=\"num\"><i>n</i></span><span class=\"den\">2</span></span> [2<i>a</i> + (<i>n</i> &minus; 1)<i>d</i>]:</div>\n          <div>&rArr; <i>S</i><sub>10</sub> = <span class=\"frac\"><span class=\"num\">10</span><span class=\"den\">2</span></span> [2(2) + (10 &minus; 1)(5)]</div>\n          <div>&rArr; <i>S</i><sub>10</sub> = 5 [4 + 9(5)] = 5 [4 + 45] = 5 &times; 49 = <b>245</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\"><i>S</i><sub>10</sub> = 245</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(ii) &minus;37, &minus;33, &minus;29, &hellip;, to 12 terms</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Here, <i>a</i> = &minus;37, &nbsp; <i>d</i> = &minus;33 &minus; (&minus;37) = 4, &nbsp; and <i>n</i> = 12.</div>\n          <div>&rArr; <i>S</i><sub>12</sub> = <span class=\"frac\"><span class=\"num\">12</span><span class=\"den\">2</span></span> [2(&minus;37) + (12 &minus; 1)(4)]</div>\n          <div>&rArr; <i>S</i><sub>12</sub> = 6 [&minus;74 + 11(4)] = 6 [&minus;74 + 44] = 6 &times; (&minus;30) = <b>&minus;180</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\"><i>S</i><sub>12</sub> = &minus;180</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (iii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(iii) 0.6, 1.7, 2.8, &hellip;, to 100 terms</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Here, <i>a</i> = 0.6, &nbsp; <i>d</i> = 1.7 &minus; 0.6 = 1.1, &nbsp; and <i>n</i> = 100.</div>\n          <div>&rArr; <i>S</i><sub>100</sub> = <span class=\"frac\"><span class=\"num\">100</span><span class=\"den\">2</span></span> [2(0.6) + (100 &minus; 1)(1.1)]</div>\n          <div>&rArr; <i>S</i><sub>100</sub> = 50 [1.2 + 99(1.1)] = 50 [1.2 + 108.9] = 50 &times; 110.1 = <b>5505</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\"><i>S</i><sub>100</sub> = 5505</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (iv) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(iv) <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">15</span></span>, <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">12</span></span>, <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">10</span></span>, &hellip;, to 11 terms</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Here, <i>a</i> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">15</span></span>, &nbsp; <i>n</i> = 11.</div>\n          <div>&rArr; <i>d</i> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">12</span></span> &minus; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">15</span></span> = <span class=\"frac\"><span class=\"num\">5 &minus; 4</span><span class=\"den\">60</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">60</span></span></div>\n          <div>&rArr; <i>S</i><sub>11</sub> = <span class=\"frac\"><span class=\"num\">11</span><span class=\"den\">2</span></span> [2(<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">15</span></span>) + (11 &minus; 1)(<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">60</span></span>)]</div>\n          <div>&rArr; <i>S</i><sub>11</sub> = <span class=\"frac\"><span class=\"num\">11</span><span class=\"den\">2</span></span> [<span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">15</span></span> + 10(<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">60</span></span>)] = <span class=\"frac\"><span class=\"num\">11</span><span class=\"den\">2</span></span> [<span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">15</span></span> + <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">6</span></span>]</div>\n          <div>&rArr; <i>S</i><sub>11</sub> = <span class=\"frac\"><span class=\"num\">11</span><span class=\"den\">2</span></span> [<span class=\"frac\"><span class=\"num\">4 + 5</span><span class=\"den\">30</span></span>] = <span class=\"frac\"><span class=\"num\">11</span><span class=\"den\">2</span></span> &times; <span class=\"frac\"><span class=\"num\">9</span><span class=\"den\">30</span></span> = <span class=\"frac\"><span class=\"num\">11</span><span class=\"den\">2</span></span> &times; <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">10</span></span> = <b><span class=\"frac\"><span class=\"num\">33</span><span class=\"den\">20</span></span></b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\"><i>S</i><sub>11</sub> = <span class=\"frac\"><span class=\"num\">33</span><span class=\"den\">20</span></span></span>\n        </div>\n      </div>\n    </div>\n\n  </div>\n\n  <!-- Question 2 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 2</div>\n    <div class=\"q-text\">\n      Find the sums given below:\n    </div>\n\n    <!-- (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(i) 7 + 10<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> + 14 + &hellip; + 84</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Here, <i>a</i> = 7, &nbsp; <i>d</i> = <span class=\"frac\"><span class=\"num\">21</span><span class=\"den\">2</span></span> &minus; 7 = <span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">2</span></span>, &nbsp; and last term <i>l</i> = <i>a</i><sub><i>n</i></sub> = 84.</div>\n          <div>Finding <i>n</i> using <i>a</i><sub><i>n</i></sub> = <i>a</i> + (<i>n</i> &minus; 1)<i>d</i>:</div>\n          <div>&rArr; 7 + (<i>n</i> &minus; 1)(<span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">2</span></span>) = 84</div>\n          <div>&rArr; (<i>n</i> &minus; 1)(<span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">2</span></span>) = 84 &minus; 7 = 77</div>\n          <div>&rArr; <i>n</i> &minus; 1 = 77 &times; <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">7</span></span> = 22 &rArr; <b><i>n</i> = 23</b></div>\n          <div>Now, using <i>S</i><sub><i>n</i></sub> = <span class=\"frac\"><span class=\"num\"><i>n</i></span><span class=\"den\">2</span></span> [<i>a</i> + <i>l</i>]:</div>\n          <div>&rArr; <i>S</i><sub>23</sub> = <span class=\"frac\"><span class=\"num\">23</span><span class=\"den\">2</span></span> [7 + 84] = <span class=\"frac\"><span class=\"num\">23</span><span class=\"den\">2</span></span> &times; 91 = <span class=\"frac\"><span class=\"num\">2093</span><span class=\"den\">2</span></span> = <b>1046<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">Sum = 1046<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> (or <span class=\"frac\"><span class=\"num\">2093</span><span class=\"den\">2</span></span>)</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(ii) 34 + 32 + 30 + &hellip; + 10</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Here, <i>a</i> = 34, &nbsp; <i>d</i> = 32 &minus; 34 = &minus;2, &nbsp; and <i>l</i> = <i>a</i><sub><i>n</i></sub> = 10.</div>\n          <div>&rArr; 34 + (<i>n</i> &minus; 1)(&minus;2) = 10</div>\n          <div>&rArr; &minus;2(<i>n</i> &minus; 1) = 10 &minus; 34 = &minus;24</div>\n          <div>&rArr; <i>n</i> &minus; 1 = 12 &rArr; <b><i>n</i> = 13</b></div>\n          <div>Using <i>S</i><sub><i>n</i></sub> = <span class=\"frac\"><span class=\"num\"><i>n</i></span><span class=\"den\">2</span></span> [<i>a</i> + <i>l</i>]:</div>\n          <div>&rArr; <i>S</i><sub>13</sub> = <span class=\"frac\"><span class=\"num\">13</span><span class=\"den\">2</span></span> [34 + 10] = <span class=\"frac\"><span class=\"num\">13</span><span class=\"den\">2</span></span> &times; 44 = 13 &times; 22 = <b>286</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">Sum = 286</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (iii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(iii) (&minus;5) + (&minus;8) + (&minus;11) + &hellip; + (&minus;230)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Here, <i>a</i> = &minus;5, &nbsp; <i>d</i> = &minus;8 &minus; (&minus;5) = &minus;3, &nbsp; and <i>l</i> = <i>a</i><sub><i>n</i></sub> = &minus;230.</div>\n          <div>&rArr; &minus;5 + (<i>n</i> &minus; 1)(&minus;3) = &minus;230</div>\n          <div>&rArr; &minus;3(<i>n</i> &minus; 1) = &minus;230 + 5 = &minus;225</div>\n          <div>&rArr; <i>n</i> &minus; 1 = <span class=\"frac\"><span class=\"num\">&minus;225</span><span class=\"den\">&minus;3</span></span> = 75 &rArr; <b><i>n</i> = 76</b></div>\n          <div>Using <i>S</i><sub><i>n</i></sub> = <span class=\"frac\"><span class=\"num\"><i>n</i></span><span class=\"den\">2</span></span> [<i>a</i> + <i>l</i>]:</div>\n          <div>&rArr; <i>S</i><sub>76</sub> = <span class=\"frac\"><span class=\"num\">76</span><span class=\"den\">2</span></span> [&minus;5 + (&minus;230)] = 38 &times; (&minus;235) = <b>&minus;8930</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">Sum = &minus;8930</span>\n        </div>\n      </div>\n    </div>\n\n  </div>\n\n  <!-- Question 3 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 3</div>\n    <div class=\"q-text\">\n      In an AP:\n    </div>\n\n    <!-- (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(i) Given <i>a</i> = 5, <i>d</i> = 3, <i>a</i><sub><i>n</i></sub> = 50, find <i>n</i> and <i>S</i><sub><i>n</i></sub>.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; <i>a</i><sub><i>n</i></sub> = <i>a</i> + (<i>n</i> &minus; 1)<i>d</i> = 50</div>\n          <div>&rArr; 5 + (<i>n</i> &minus; 1)(3) = 50 &rArr; 3(<i>n</i> &minus; 1) = 45 &rArr; <i>n</i> &minus; 1 = 15 &rArr; <b><i>n</i> = 16</b></div>\n          <div>&rArr; <i>S</i><sub>16</sub> = <span class=\"frac\"><span class=\"num\">16</span><span class=\"den\">2</span></span> [<i>a</i> + <i>l</i>] = 8 [5 + 50] = 8 &times; 55 = <b>440</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\"><i>n</i> = 16, &nbsp; <i>S</i><sub><i>n</i></sub> = 440</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(ii) Given <i>a</i> = 7, <i>a</i><sub>13</sub> = 35, find <i>d</i> and <i>S</i><sub>13</sub>.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; <i>a</i><sub>13</sub> = <i>a</i> + 12<i>d</i> = 35</div>\n          <div>&rArr; 7 + 12<i>d</i> = 35 &rArr; 12<i>d</i> = 28 &rArr; <i>d</i> = <span class=\"frac\"><span class=\"num\">28</span><span class=\"den\">12</span></span> = <b><span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">3</span></span></b></div>\n          <div>&rArr; <i>S</i><sub>13</sub> = <span class=\"frac\"><span class=\"num\">13</span><span class=\"den\">2</span></span> [<i>a</i> + <i>a</i><sub>13</sub>] = <span class=\"frac\"><span class=\"num\">13</span><span class=\"den\">2</span></span> [7 + 35] = <span class=\"frac\"><span class=\"num\">13</span><span class=\"den\">2</span></span> &times; 42 = 13 &times; 21 = <b>273</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\"><i>d</i> = <span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">3</span></span>, &nbsp; <i>S</i><sub>13</sub> = 273</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (iii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(iii) Given <i>a</i><sub>12</sub> = 37, <i>d</i> = 3, find <i>a</i> and <i>S</i><sub>12</sub>.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; <i>a</i><sub>12</sub> = <i>a</i> + 11<i>d</i> = 37</div>\n          <div>&rArr; <i>a</i> + 11(3) = 37 &rArr; <i>a</i> + 33 = 37 &rArr; <b><i>a</i> = 4</b></div>\n          <div>&rArr; <i>S</i><sub>12</sub> = <span class=\"frac\"><span class=\"num\">12</span><span class=\"den\">2</span></span> [<i>a</i> + <i>a</i><sub>12</sub>] = 6 [4 + 37] = 6 &times; 41 = <b>246</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\"><i>a</i> = 4, &nbsp; <i>S</i><sub>12</sub> = 246</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (iv) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(iv) Given <i>a</i><sub>3</sub> = 15, <i>S</i><sub>10</sub> = 125, find <i>d</i> and <i>a</i><sub>10</sub>.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; <i>a</i><sub>3</sub> = <i>a</i> + 2<i>d</i> = 15 &nbsp; &hellip; (1)</div>\n          <div>&rArr; <i>S</i><sub>10</sub> = <span class=\"frac\"><span class=\"num\">10</span><span class=\"den\">2</span></span> [2<i>a</i> + 9<i>d</i>] = 125 &rArr; 5 [2<i>a</i> + 9<i>d</i>] = 125 &rArr; 2<i>a</i> + 9<i>d</i> = 25 &nbsp; &hellip; (2)</div>\n          <div>Multiplying (1) by 2: 2<i>a</i> + 4<i>d</i> = 30 &nbsp; &hellip; (3)</div>\n          <div>Subtracting (3) from (2): 5<i>d</i> = &minus;5 &rArr; <b><i>d</i> = &minus;1</b></div>\n          <div>From (1): <i>a</i> + 2(&minus;1) = 15 &rArr; <b><i>a</i> = 17</b></div>\n          <div>&rArr; <i>a</i><sub>10</sub> = <i>a</i> + 9<i>d</i> = 17 + 9(&minus;1) = 17 &minus; 9 = <b>8</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\"><i>d</i> = &minus;1, &nbsp; <i>a</i><sub>10</sub> = 8</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (v) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(v) Given <i>d</i> = 5, <i>S</i><sub>9</sub> = 75, find <i>a</i> and <i>a</i><sub>9</sub>.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; <i>S</i><sub>9</sub> = <span class=\"frac\"><span class=\"num\">9</span><span class=\"den\">2</span></span> [2<i>a</i> + (9 &minus; 1)(5)] = 75</div>\n          <div>&rArr; <span class=\"frac\"><span class=\"num\">9</span><span class=\"den\">2</span></span> [2<i>a</i> + 40] = 75 &rArr; 9(<i>a</i> + 20) = 75</div>\n          <div>&rArr; <i>a</i> + 20 = <span class=\"frac\"><span class=\"num\">75</span><span class=\"den\">9</span></span> = <span class=\"frac\"><span class=\"num\">25</span><span class=\"den\">3</span></span> &rArr; <i>a</i> = <span class=\"frac\"><span class=\"num\">25</span><span class=\"den\">3</span></span> &minus; 20 = <b>&minus;<span class=\"frac\"><span class=\"num\">35</span><span class=\"den\">3</span></span></b></div>\n          <div>&rArr; <i>a</i><sub>9</sub> = <i>a</i> + 8<i>d</i> = &minus;<span class=\"frac\"><span class=\"num\">35</span><span class=\"den\">3</span></span> + 8(5) = &minus;<span class=\"frac\"><span class=\"num\">35</span><span class=\"den\">3</span></span> + 40 = <span class=\"frac\"><span class=\"num\">&minus;35 + 120</span><span class=\"den\">3</span></span> = <b><span class=\"frac\"><span class=\"num\">85</span><span class=\"den\">3</span></span></b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\"><i>a</i> = &minus;<span class=\"frac\"><span class=\"num\">35</span><span class=\"den\">3</span></span>, &nbsp; <i>a</i><sub>9</sub> = <span class=\"frac\"><span class=\"num\">85</span><span class=\"den\">3</span></span></span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (vi) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(vi) Given <i>a</i> = 2, <i>d</i> = 8, <i>S</i><sub><i>n</i></sub> = 90, find <i>n</i> and <i>a</i><sub><i>n</i></sub>.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; <i>S</i><sub><i>n</i></sub> = <span class=\"frac\"><span class=\"num\"><i>n</i></span><span class=\"den\">2</span></span> [2(2) + (<i>n</i> &minus; 1)(8)] = 90</div>\n          <div>&rArr; <i>n</i> [4 + 8<i>n</i> &minus; 8] = 180 &rArr; <i>n</i> [8<i>n</i> &minus; 4] = 180</div>\n          <div>&rArr; 8<i>n</i><sup>2</sup> &minus; 4<i>n</i> &minus; 180 = 0 &rArr; 2<i>n</i><sup>2</sup> &minus; <i>n</i> &minus; 45 = 0</div>\n          <div>&rArr; 2<i>n</i><sup>2</sup> &minus; 10<i>n</i> + 9<i>n</i> &minus; 45 = 0 &rArr; 2<i>n</i>(<i>n</i> &minus; 5) + 9(<i>n</i> &minus; 5) = 0</div>\n          <div>&rArr; (<i>n</i> &minus; 5)(2<i>n</i> + 9) = 0 &rArr; <b><i>n</i> = 5</b> (rejecting negative fraction)</div>\n          <div>&rArr; <i>a</i><sub>5</sub> = <i>a</i> + 4<i>d</i> = 2 + 4(8) = 2 + 32 = <b>34</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\"><i>n</i> = 5, &nbsp; <i>a</i><sub><i>n</i></sub> = 34</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (vii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(vii) Given <i>a</i> = 8, <i>a</i><sub><i>n</i></sub> = 62, <i>S</i><sub><i>n</i></sub> = 210, find <i>n</i> and <i>d</i>.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Using <i>S</i><sub><i>n</i></sub> = <span class=\"frac\"><span class=\"num\"><i>n</i></span><span class=\"den\">2</span></span> [<i>a</i> + <i>a</i><sub><i>n</i></sub>]:</div>\n          <div>&rArr; 210 = <span class=\"frac\"><span class=\"num\"><i>n</i></span><span class=\"den\">2</span></span> [8 + 62] = <span class=\"frac\"><span class=\"num\"><i>n</i></span><span class=\"den\">2</span></span> &times; 70 = 35<i>n</i></div>\n          <div>&rArr; <i>n</i> = <span class=\"frac\"><span class=\"num\">210</span><span class=\"den\">35</span></span> = <b>6</b></div>\n          <div>Now, <i>a</i><sub>6</sub> = <i>a</i> + 5<i>d</i> = 62</div>\n          <div>&rArr; 8 + 5<i>d</i> = 62 &rArr; 5<i>d</i> = 54 &rArr; <b><i>d</i> = <span class=\"frac\"><span class=\"num\">54</span><span class=\"den\">5</span></span></b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\"><i>n</i> = 6, &nbsp; <i>d</i> = <span class=\"frac\"><span class=\"num\">54</span><span class=\"den\">5</span></span></span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (viii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(viii) Given <i>a</i><sub><i>n</i></sub> = 4, <i>d</i> = 2, <i>S</i><sub><i>n</i></sub> = &minus;14, find <i>n</i> and <i>a</i>.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; <i>a</i><sub><i>n</i></sub> = <i>a</i> + (<i>n</i> &minus; 1)(2) = 4 &rArr; <i>a</i> + 2<i>n</i> &minus; 2 = 4 &rArr; <i>a</i> = 6 &minus; 2<i>n</i> &nbsp; &hellip; (1)</div>\n          <div>Using <i>S</i><sub><i>n</i></sub> = <span class=\"frac\"><span class=\"num\"><i>n</i></span><span class=\"den\">2</span></span> [<i>a</i> + <i>a</i><sub><i>n</i></sub>] = &minus;14:</div>\n          <div>&rArr; <span class=\"frac\"><span class=\"num\"><i>n</i></span><span class=\"den\">2</span></span> [(6 &minus; 2<i>n</i>) + 4] = &minus;14</div>\n          <div>&rArr; <i>n</i> (10 &minus; 2<i>n</i>) = &minus;28 &rArr; 2<i>n</i>(5 &minus; <i>n</i>) = &minus;28 &rArr; 5<i>n</i> &minus; <i>n</i><sup>2</sup> = &minus;14</div>\n          <div>&rArr; <i>n</i><sup>2</sup> &minus; 5<i>n</i> &minus; 14 = 0 &rArr; (<i>n</i> &minus; 7)(<i>n</i> + 2) = 0 &rArr; <b><i>n</i> = 7</b> (since <i>n</i> > 0)</div>\n          <div>From (1): <i>a</i> = 6 &minus; 2(7) = 6 &minus; 14 = <b>&minus;8</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\"><i>n</i> = 7, &nbsp; <i>a</i> = &minus;8</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (ix) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(ix) Given <i>a</i> = 3, <i>n</i> = 8, <i>S</i> = 192, find <i>d</i>.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; <i>S</i><sub>8</sub> = <span class=\"frac\"><span class=\"num\">8</span><span class=\"den\">2</span></span> [2(3) + (8 &minus; 1)<i>d</i>] = 192</div>\n          <div>&rArr; 4 [6 + 7<i>d</i>] = 192 &rArr; 6 + 7<i>d</i> = <span class=\"frac\"><span class=\"num\">192</span><span class=\"den\">4</span></span> = 48</div>\n          <div>&rArr; 7<i>d</i> = 48 &minus; 6 = 42 &rArr; <b><i>d</i> = 6</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\"><i>d</i> = 6</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (x) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(x) Given <i>l</i> = 28, <i>S</i> = 144, and there are total 9 terms. Find <i>a</i>.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Here, <i>n</i> = 9, <i>l</i> = 28, and <i>S</i><sub>9</sub> = 144.</div>\n          <div>Using <i>S</i><sub><i>n</i></sub> = <span class=\"frac\"><span class=\"num\"><i>n</i></span><span class=\"den\">2</span></span> [<i>a</i> + <i>l</i>]:</div>\n          <div>&rArr; 144 = <span class=\"frac\"><span class=\"num\">9</span><span class=\"den\">2</span></span> [<i>a</i> + 28]</div>\n          <div>&rArr; <i>a</i> + 28 = 144 &times; <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">9</span></span> = 16 &times; 2 = 32</div>\n          <div>&rArr; <i>a</i> = 32 &minus; 28 = <b>4</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\"><i>a</i> = 4</span>\n        </div>\n      </div>\n    </div>\n\n  </div>\n\n  <!-- Question 4 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 4</div>\n    <div class=\"q-text\">\n      How many terms of the AP: 9, 17, 25, &hellip; must be taken to give a sum of 636?\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Here, <i>a</i> = 9, &nbsp; <i>d</i> = 17 &minus; 9 = 8, &nbsp; and <i>S</i><sub><i>n</i></sub> = 636.</div>\n        <div>Using <i>S</i><sub><i>n</i></sub> = <span class=\"frac\"><span class=\"num\"><i>n</i></span><span class=\"den\">2</span></span> [2<i>a</i> + (<i>n</i> &minus; 1)<i>d</i>]:</div>\n        <div>&rArr; 636 = <span class=\"frac\"><span class=\"num\"><i>n</i></span><span class=\"den\">2</span></span> [2(9) + (<i>n</i> &minus; 1)(8)]</div>\n        <div>&rArr; 636 = <span class=\"frac\"><span class=\"num\"><i>n</i></span><span class=\"den\">2</span></span> [18 + 8<i>n</i> &minus; 8] = <span class=\"frac\"><span class=\"num\"><i>n</i></span><span class=\"den\">2</span></span> [10 + 8<i>n</i>]</div>\n        <div>&rArr; 636 = <i>n</i>(5 + 4<i>n</i>) = 4<i>n</i><sup>2</sup> + 5<i>n</i></div>\n        <div>&rArr; 4<i>n</i><sup>2</sup> + 5<i>n</i> &minus; 636 = 0</div>\n        <div>Factorising using middle term splitting (product = 4 &times; (&minus;636) = &minus;2544, sum = 5 &rArr; 53 and &minus;48):</div>\n        <div>&rArr; 4<i>n</i><sup>2</sup> &minus; 48<i>n</i> + 53<i>n</i> &minus; 636 = 0</div>\n        <div>&rArr; 4<i>n</i>(<i>n</i> &minus; 12) + 53(<i>n</i> &minus; 12) = 0</div>\n        <div>&rArr; (<i>n</i> &minus; 12)(4<i>n</i> + 53) = 0</div>\n        <div>&rArr; <b><i>n</i> = 12</b> (rejecting negative fraction <i>n</i> = &minus;53/4)</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\">12 terms must be taken.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 5 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 5</div>\n    <div class=\"q-text\">\n      The first term of an AP is 5, the last term is 45 and the sum is 400. Find the number of terms and the common difference.\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Here, <i>a</i> = 5, &nbsp; <i>l</i> = 45, &nbsp; and <i>S</i><sub><i>n</i></sub> = 400.</div>\n        <div>Using <i>S</i><sub><i>n</i></sub> = <span class=\"frac\"><span class=\"num\"><i>n</i></span><span class=\"den\">2</span></span> [<i>a</i> + <i>l</i>]:</div>\n        <div>&rArr; 400 = <span class=\"frac\"><span class=\"num\"><i>n</i></span><span class=\"den\">2</span></span> [5 + 45] = <span class=\"frac\"><span class=\"num\"><i>n</i></span><span class=\"den\">2</span></span> &times; 50 = 25<i>n</i></div>\n        <div>&rArr; <i>n</i> = <span class=\"frac\"><span class=\"num\">400</span><span class=\"den\">25</span></span> = <b>16</b></div>\n        <div>Now, <i>a</i><sub>16</sub> = <i>a</i> + 15<i>d</i> = 45</div>\n        <div>&rArr; 5 + 15<i>d</i> = 45 &rArr; 15<i>d</i> = 40 &rArr; <i>d</i> = <span class=\"frac\"><span class=\"num\">40</span><span class=\"den\">15</span></span> = <b><span class=\"frac\"><span class=\"num\">8</span><span class=\"den\">3</span></span></b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\">Number of terms <i>n</i> = 16, Common difference <i>d</i> = <span class=\"frac\"><span class=\"num\">8</span><span class=\"den\">3</span></span></span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 6 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 6</div>\n    <div class=\"q-text\">\n      The first and the last terms of an AP are 17 and 350 respectively. If the common difference is 9, how many terms are there and what is their sum?\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Here, <i>a</i> = 17, &nbsp; <i>l</i> = <i>a</i><sub><i>n</i></sub> = 350, &nbsp; and <i>d</i> = 9.</div>\n        <div>&rArr; <i>a</i> + (<i>n</i> &minus; 1)<i>d</i> = 350</div>\n        <div>&rArr; 17 + (<i>n</i> &minus; 1)(9) = 350</div>\n        <div>&rArr; 9(<i>n</i> &minus; 1) = 350 &minus; 17 = 333</div>\n        <div>&rArr; <i>n</i> &minus; 1 = <span class=\"frac\"><span class=\"num\">333</span><span class=\"den\">9</span></span> = 37 &rArr; <b><i>n</i> = 38</b></div>\n        <div>Now, finding the sum <i>S</i><sub>38</sub>:</div>\n        <div>&rArr; <i>S</i><sub>38</sub> = <span class=\"frac\"><span class=\"num\">38</span><span class=\"den\">2</span></span> [17 + 350] = 19 &times; 367 = <b>6973</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\">There are 38 terms and their sum is 6973.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 7 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 7</div>\n    <div class=\"q-text\">\n      Find the sum of first 22 terms of an AP in which <i>d</i> = 7 and 22<sup>nd</sup> term is 149.\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Here, <i>n</i> = 22, <i>d</i> = 7, and <i>a</i><sub>22</sub> = 149.</div>\n        <div>&rArr; <i>a</i> + 21<i>d</i> = 149</div>\n        <div>&rArr; <i>a</i> + 21(7) = 149 &rArr; <i>a</i> + 147 = 149 &rArr; <b><i>a</i> = 2</b></div>\n        <div>Now, using <i>S</i><sub><i>n</i></sub> = <span class=\"frac\"><span class=\"num\"><i>n</i></span><span class=\"den\">2</span></span> [<i>a</i> + <i>l</i>]:</div>\n        <div>&rArr; <i>S</i><sub>22</sub> = <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">2</span></span> [2 + 149] = 11 &times; 151 = <b>1661</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\">The sum of the first 22 terms is 1661.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 8 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 8</div>\n    <div class=\"q-text\">\n      Find the sum of first 51 terms of an AP whose second and third terms are 14 and 18 respectively.\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Given: <i>a</i><sub>2</sub> = 14 and <i>a</i><sub>3</sub> = 18.</div>\n        <div>&rArr; Common difference <i>d</i> = <i>a</i><sub>3</sub> &minus; <i>a</i><sub>2</sub> = 18 &minus; 14 = <b>4</b></div>\n        <div>&rArr; First term <i>a</i> = <i>a</i><sub>2</sub> &minus; <i>d</i> = 14 &minus; 4 = <b>10</b></div>\n        <div>Now, calculating sum of first 51 terms (<i>n</i> = 51):</div>\n        <div>&rArr; <i>S</i><sub>51</sub> = <span class=\"frac\"><span class=\"num\">51</span><span class=\"den\">2</span></span> [2(10) + (51 &minus; 1)(4)]</div>\n        <div>&rArr; <i>S</i><sub>51</sub> = <span class=\"frac\"><span class=\"num\">51</span><span class=\"den\">2</span></span> [20 + 50(4)] = <span class=\"frac\"><span class=\"num\">51</span><span class=\"den\">2</span></span> [20 + 200] = <span class=\"frac\"><span class=\"num\">51</span><span class=\"den\">2</span></span> &times; 220</div>\n        <div>&rArr; <i>S</i><sub>51</sub> = 51 &times; 110 = <b>5610</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\">The sum of the first 51 terms is 5610.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 9 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 9</div>\n    <div class=\"q-text\">\n      If the sum of first 7 terms of an AP is 49 and that of 17 terms is 289, find the sum of first <i>n</i> terms.\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Given: <i>S</i><sub>7</sub> = 49 and <i>S</i><sub>17</sub> = 289.</div>\n        <div>&rArr; <i>S</i><sub>7</sub> = <span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">2</span></span> [2<i>a</i> + 6<i>d</i>] = 49 &rArr; 7(<i>a</i> + 3<i>d</i>) = 49 &rArr; <i>a</i> + 3<i>d</i> = 7 &nbsp; &hellip; (1)</div>\n        <div>&rArr; <i>S</i><sub>17</sub> = <span class=\"frac\"><span class=\"num\">17</span><span class=\"den\">2</span></span> [2<i>a</i> + 16<i>d</i>] = 289 &rArr; 17(<i>a</i> + 8<i>d</i>) = 289 &rArr; <i>a</i> + 8<i>d</i> = 17 &nbsp; &hellip; (2)</div>\n        <div>Subtracting (1) from (2):</div>\n        <div>&rArr; 5<i>d</i> = 10 &rArr; <b><i>d</i> = 2</b></div>\n        <div>From (1): <i>a</i> + 3(2) = 7 &rArr; <i>a</i> + 6 = 7 &rArr; <b><i>a</i> = 1</b></div>\n        <div>Now, sum of first <i>n</i> terms:</div>\n        <div>&rArr; <i>S</i><sub><i>n</i></sub> = <span class=\"frac\"><span class=\"num\"><i>n</i></span><span class=\"den\">2</span></span> [2(1) + (<i>n</i> &minus; 1)(2)] = <span class=\"frac\"><span class=\"num\"><i>n</i></span><span class=\"den\">2</span></span> [2 + 2<i>n</i> &minus; 2] = <span class=\"frac\"><span class=\"num\"><i>n</i></span><span class=\"den\">2</span></span> &times; 2<i>n</i> = <b><i>n</i><sup>2</sup></b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\"><i>S</i><sub><i>n</i></sub> = <i>n</i><sup>2</sup></span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 10 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 10</div>\n    <div class=\"q-text\">\n      Show that <i>a</i><sub>1</sub>, <i>a</i><sub>2</sub>, &hellip;, <i>a</i><sub><i>n</i></sub>, &hellip; form an AP where <i>a</i><sub><i>n</i></sub> is defined as below. Also find the sum of the first 15 terms in each case:\n    </div>\n\n    <!-- (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(i) <i>a</i><sub><i>n</i></sub> = 3 + 4<i>n</i></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; <i>a</i><sub>1</sub> = 3 + 4(1) = 7</div>\n          <div>&rArr; <i>a</i><sub>2</sub> = 3 + 4(2) = 11</div>\n          <div>&rArr; <i>a</i><sub>3</sub> = 3 + 4(3) = 15</div>\n          <div>&rArr; <i>a</i><sub>2</sub> &minus; <i>a</i><sub>1</sub> = 11 &minus; 7 = 4, &nbsp; <i>a</i><sub>3</sub> &minus; <i>a</i><sub>2</sub> = 15 &minus; 11 = 4.</div>\n          <div>Since difference is constant, it forms an AP with <i>a</i> = 7 and <i>d</i> = 4.</div>\n          <div>Sum of first 15 terms:</div>\n          <div>&rArr; <i>S</i><sub>15</sub> = <span class=\"frac\"><span class=\"num\">15</span><span class=\"den\">2</span></span> [2(7) + (15 &minus; 1)(4)] = <span class=\"frac\"><span class=\"num\">15</span><span class=\"den\">2</span></span> [14 + 14(4)] = <span class=\"frac\"><span class=\"num\">15</span><span class=\"den\">2</span></span> [14 + 56] = <span class=\"frac\"><span class=\"num\">15</span><span class=\"den\">2</span></span> &times; 70 = 15 &times; 35 = <b>525</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">Forms an AP with <i>a</i> = 7, <i>d</i> = 4; Sum <i>S</i><sub>15</sub> = 525</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\">(ii) <i>a</i><sub><i>n</i></sub> = 9 &minus; 5<i>n</i></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; <i>a</i><sub>1</sub> = 9 &minus; 5(1) = 4</div>\n          <div>&rArr; <i>a</i><sub>2</sub> = 9 &minus; 5(2) = &minus;1</div>\n          <div>&rArr; <i>a</i><sub>3</sub> = 9 &minus; 5(3) = &minus;6</div>\n          <div>&rArr; <i>a</i><sub>2</sub> &minus; <i>a</i><sub>1</sub> = &minus;1 &minus; 4 = &minus;5, &nbsp; <i>a</i><sub>3</sub> &minus; <i>a</i><sub>2</sub> = &minus;6 &minus; (&minus;1) = &minus;5.</div>\n          <div>Since difference is constant, it forms an AP with <i>a</i> = 4 and <i>d</i> = &minus;5.</div>\n          <div>Sum of first 15 terms:</div>\n          <div>&rArr; <i>S</i><sub>15</sub> = <span class=\"frac\"><span class=\"num\">15</span><span class=\"den\">2</span></span> [2(4) + (15 &minus; 1)(&minus;5)] = <span class=\"frac\"><span class=\"num\">15</span><span class=\"den\">2</span></span> [8 + 14(&minus;5)] = <span class=\"frac\"><span class=\"num\">15</span><span class=\"den\">2</span></span> [8 &minus; 70] = <span class=\"frac\"><span class=\"num\">15</span><span class=\"den\">2</span></span> &times; (&minus;62) = 15 &times; (&minus;31) = <b>&minus;465</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Answer: </span>\n          <span class=\"ans-val\">Forms an AP with <i>a</i> = 4, <i>d</i> = &minus;5; Sum <i>S</i><sub>15</sub> = &minus;465</span>\n        </div>\n      </div>\n    </div>\n\n  </div>\n\n\n  <!-- Question 11 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 11</div>\n    <div class=\"q-text\">\n      If the sum of the first <i>n</i> terms of an AP is 4<i>n</i> &minus; <i>n</i><sup>2</sup>, what is the first term (that is <i>S</i><sub>1</sub>)? What is the sum of first two terms? What is the second term? Similarly, find the 3<sup>rd</sup>, the 10<sup>th</sup> and the <i>n</i><sup>th</sup> terms.\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Given: <i>S</i><sub><i>n</i></sub> = 4<i>n</i> &minus; <i>n</i><sup>2</sup></div>\n        <div>&rArr; First term: <b><i>a</i><sub>1</sub> = <i>S</i><sub>1</sub> = 4(1) &minus; (1)<sup>2</sup> = 4 &minus; 1 = 3</b></div>\n        <div>&rArr; Sum of first two terms: <b><i>S</i><sub>2</sub> = 4(2) &minus; (2)<sup>2</sup> = 8 &minus; 4 = 4</b></div>\n        <div>&rArr; Second term: <b><i>a</i><sub>2</sub> = <i>S</i><sub>2</sub> &minus; <i>S</i><sub>1</sub> = 4 &minus; 3 = 1</b></div>\n        <div>&rArr; Common difference: <i>d</i> = <i>a</i><sub>2</sub> &minus; <i>a</i><sub>1</sub> = 1 &minus; 3 = <b>&minus;2</b></div>\n        <div style=\"margin-top: 8px;\">Finding 3<sup>rd</sup>, 10<sup>th</sup> and <i>n</i><sup>th</sup> terms:</div>\n        <div>&rArr; 3<sup>rd</sup> term: <b><i>a</i><sub>3</sub> = <i>a</i> + 2<i>d</i> = 3 + 2(&minus;2) = 3 &minus; 4 = &minus;1</b></div>\n        <div>&rArr; 10<sup>th</sup> term: <b><i>a</i><sub>10</sub> = <i>a</i> + 9<i>d</i> = 3 + 9(&minus;2) = 3 &minus; 18 = &minus;15</b></div>\n        <div>&rArr; <i>n</i><sup>th</sup> term: <b><i>a</i><sub><i>n</i></sub> = <i>a</i> + (<i>n</i> &minus; 1)<i>d</i> = 3 + (<i>n</i> &minus; 1)(&minus;2) = 3 &minus; 2<i>n</i> + 2 = 5 &minus; 2<i>n</i></b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\"><i>S</i><sub>1</sub> = 3, &nbsp; <i>S</i><sub>2</sub> = 4, &nbsp; <i>a</i><sub>2</sub> = 1, &nbsp; <i>a</i><sub>3</sub> = &minus;1, &nbsp; <i>a</i><sub>10</sub> = &minus;15, &nbsp; <i>a</i><sub><i>n</i></sub> = 5 &minus; 2<i>n</i></span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 12 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 12</div>\n    <div class=\"q-text\">\n      Find the sum of the first 40 positive integers divisible by 6.\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>The positive integers divisible by 6 are: 6, 12, 18, 24, &hellip;</div>\n        <div>Here, <i>a</i> = 6, <i>d</i> = 6, and <i>n</i> = 40.</div>\n        <div>Using <i>S</i><sub><i>n</i></sub> = <span class=\"frac\"><span class=\"num\"><i>n</i></span><span class=\"den\">2</span></span> [2<i>a</i> + (<i>n</i> &minus; 1)<i>d</i>]:</div>\n        <div>&rArr; <i>S</i><sub>40</sub> = <span class=\"frac\"><span class=\"num\">40</span><span class=\"den\">2</span></span> [2(6) + (40 &minus; 1)(6)]</div>\n        <div>&rArr; <i>S</i><sub>40</sub> = 20 [12 + 39(6)] = 20 [12 + 234] = 20 &times; 246 = <b>4920</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\">The sum of the first 40 positive integers divisible by 6 is 4920.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 13 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 13</div>\n    <div class=\"q-text\">\n      Find the sum of the first 15 multiples of 8.\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>The multiples of 8 are: 8, 16, 24, &hellip;</div>\n        <div>Here, <i>a</i> = 8, <i>d</i> = 8, and <i>n</i> = 15.</div>\n        <div>Using <i>S</i><sub><i>n</i></sub> = <span class=\"frac\"><span class=\"num\"><i>n</i></span><span class=\"den\">2</span></span> [2<i>a</i> + (<i>n</i> &minus; 1)<i>d</i>]:</div>\n        <div>&rArr; <i>S</i><sub>15</sub> = <span class=\"frac\"><span class=\"num\">15</span><span class=\"den\">2</span></span> [2(8) + (15 &minus; 1)(8)]</div>\n        <div>&rArr; <i>S</i><sub>15</sub> = <span class=\"frac\"><span class=\"num\">15</span><span class=\"den\">2</span></span> [16 + 14(8)] = <span class=\"frac\"><span class=\"num\">15</span><span class=\"den\">2</span></span> [16 + 112] = <span class=\"frac\"><span class=\"num\">15</span><span class=\"den\">2</span></span> &times; 128</div>\n        <div>&rArr; <i>S</i><sub>15</sub> = 15 &times; 64 = <b>960</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\">The sum of the first 15 multiples of 8 is 960.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 14 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 14</div>\n    <div class=\"q-text\">\n      Find the sum of the odd numbers between 0 and 50.\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>The odd numbers between 0 and 50 are: 1, 3, 5, 7, &hellip;, 49.</div>\n        <div>Here, <i>a</i> = 1, <i>d</i> = 2, and last term <i>l</i> = 49.</div>\n        <div>Finding number of terms <i>n</i>:</div>\n        <div>&rArr; <i>a</i> + (<i>n</i> &minus; 1)<i>d</i> = 49</div>\n        <div>&rArr; 1 + (<i>n</i> &minus; 1)(2) = 49 &rArr; 2(<i>n</i> &minus; 1) = 48 &rArr; <i>n</i> &minus; 1 = 24 &rArr; <b><i>n</i> = 25</b></div>\n        <div>Now, calculating sum:</div>\n        <div>&rArr; <i>S</i><sub>25</sub> = <span class=\"frac\"><span class=\"num\"><i>n</i></span><span class=\"den\">2</span></span> [<i>a</i> + <i>l</i>] = <span class=\"frac\"><span class=\"num\">25</span><span class=\"den\">2</span></span> [1 + 49] = <span class=\"frac\"><span class=\"num\">25</span><span class=\"den\">2</span></span> &times; 50 = 25 &times; 25 = <b>625</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\">The sum of the odd numbers between 0 and 50 is 625.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 15 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 15</div>\n    <div class=\"q-text\">\n      A contract on construction job specifies a penalty for delay of completion beyond a certain date as follows: ₹ 200 for the first day, ₹ 250 for the second day, ₹ 300 for the third day, etc., the penalty for each succeeding day being ₹ 50 more than for the preceding day. How much money the contractor has to pay as penalty, if he has delayed the work by 30 days?\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>The daily penalties form an AP: 200, 250, 300, &hellip;</div>\n        <div>Here:</div>\n        <div>&bull; First day penalty <i>a</i> = ₹ 200</div>\n        <div>&bull; Daily increment <i>d</i> = ₹ 50</div>\n        <div>&bull; Number of delay days <i>n</i> = 30</div>\n        <div>Using the sum formula <i>S</i><sub><i>n</i></sub> = <span class=\"frac\"><span class=\"num\"><i>n</i></span><span class=\"den\">2</span></span> [2<i>a</i> + (<i>n</i> &minus; 1)<i>d</i>]:</div>\n        <div>&rArr; <i>S</i><sub>30</sub> = <span class=\"frac\"><span class=\"num\">30</span><span class=\"den\">2</span></span> [2(200) + (30 &minus; 1)(50)]</div>\n        <div>&rArr; <i>S</i><sub>30</sub> = 15 [400 + 29(50)] = 15 [400 + 1450] = 15 &times; 1850 = <b>₹ 27,750</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\">The contractor has to pay ₹ 27,750 as penalty.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 16 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 16</div>\n    <div class=\"q-text\">\n      A sum of ₹ 700 is to be used to give seven cash prizes to students of a school for their overall academic performance. If each prize is ₹ 20 less than its preceding prize, find the value of each of the prizes.\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Total prize money <i>S</i><sub>7</sub> = ₹ 700, number of prizes <i>n</i> = 7.</div>\n        <div>Since each prize is ₹ 20 less than preceding, common difference <i>d</i> = &minus;20.</div>\n        <div>Let the first prize be <i>a</i>.</div>\n        <div>&rArr; <i>S</i><sub>7</sub> = <span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">2</span></span> [2<i>a</i> + (7 &minus; 1)(&minus;20)] = 700</div>\n        <div>&rArr; <span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">2</span></span> [2<i>a</i> &minus; 120] = 700</div>\n        <div>&rArr; 2<i>a</i> &minus; 120 = 700 &times; <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">7</span></span> = 200</div>\n        <div>&rArr; 2<i>a</i> = 200 + 120 = 320 &rArr; <b><i>a</i> = 160</b></div>\n        <div>The seven prizes are:</div>\n        <div>&bull; 1<sup>st</sup> prize = <b>₹ 160</b></div>\n        <div>&bull; 2<sup>nd</sup> prize = 160 &minus; 20 = <b>₹ 140</b></div>\n        <div>&bull; 3<sup>rd</sup> prize = 140 &minus; 20 = <b>₹ 120</b></div>\n        <div>&bull; 4<sup>th</sup> prize = 120 &minus; 20 = <b>₹ 100</b></div>\n        <div>&bull; 5<sup>th</sup> prize = 100 &minus; 20 = <b>₹ 80</b></div>\n        <div>&bull; 6<sup>th</sup> prize = 80 &minus; 20 = <b>₹ 60</b></div>\n        <div>&bull; 7<sup>th</sup> prize = 60 &minus; 20 = <b>₹ 40</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\">The values of the prizes are: ₹ 160, ₹ 140, ₹ 120, ₹ 100, ₹ 80, ₹ 60, ₹ 40.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 17 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 17</div>\n    <div class=\"q-text\">\n      In a school, students thought of planting trees in and around the school to reduce air pollution. It was decided that the number of trees, that each section of each class will plant, will be the same as the class, in which they are studying, e.g., a section of Class I will plant 1 tree, a section of Class II will plant 2 trees and so on till Class XII. There are three sections of each class. How many trees will be planted by the students?\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Number of trees planted by each class (with 3 sections each):</div>\n        <div>&bull; Class I = 3 &times; 1 = 3 trees</div>\n        <div>&bull; Class II = 3 &times; 2 = 6 trees</div>\n        <div>&bull; Class III = 3 &times; 3 = 9 trees</div>\n        <div>&bull; &hellip;</div>\n        <div>&bull; Class XII = 3 &times; 12 = 36 trees</div>\n        <div>This forms an AP: 3, 6, 9, 12, &hellip;, 36.</div>\n        <div>Here, <i>a</i> = 3, <i>d</i> = 3, <i>n</i> = 12, and last term <i>l</i> = 36.</div>\n        <div>Using <i>S</i><sub><i>n</i></sub> = <span class=\"frac\"><span class=\"num\"><i>n</i></span><span class=\"den\">2</span></span> [<i>a</i> + <i>l</i>]:</div>\n        <div>&rArr; <i>S</i><sub>12</sub> = <span class=\"frac\"><span class=\"num\">12</span><span class=\"den\">2</span></span> [3 + 36] = 6 &times; 39 = <b>234</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\">Total number of trees planted = 234</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 18 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 18</div>\n    <div class=\"q-text\">\n      A spiral is made up of successive semicircles, with centres alternately at A and B, starting with centre at A, of radii 0.5 cm, 1.0 cm, 1.5 cm, 2.0 cm, &hellip; What is the total length of such a spiral made up of thirteen consecutive semicircles? (Take &pi; = <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span>).\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Perimeter of a semicircle of radius <i>r</i> = &pi;<i>r</i>.</div>\n        <div>Length of consecutive semicircles:</div>\n        <div>&bull; <i>l</i><sub>1</sub> = &pi; &times; 0.5 = 0.5&pi; cm</div>\n        <div>&bull; <i>l</i><sub>2</sub> = &pi; &times; 1.0 = 1.0&pi; cm</div>\n        <div>&bull; <i>l</i><sub>3</sub> = &pi; &times; 1.5 = 1.5&pi; cm</div>\n        <div>The lengths form an AP: 0.5&pi;, 1.0&pi;, 1.5&pi;, &hellip;</div>\n        <div>Here, <i>a</i> = 0.5&pi;, <i>d</i> = 0.5&pi;, and number of semicircles <i>n</i> = 13.</div>\n        <div>Total length of spiral <i>S</i><sub>13</sub>:</div>\n        <div>&rArr; <i>S</i><sub>13</sub> = <span class=\"frac\"><span class=\"num\">13</span><span class=\"den\">2</span></span> [2(0.5&pi;) + (13 &minus; 1)(0.5&pi;)]</div>\n        <div>&rArr; <i>S</i><sub>13</sub> = <span class=\"frac\"><span class=\"num\">13</span><span class=\"den\">2</span></span> [&pi; + 12(0.5&pi;)] = <span class=\"frac\"><span class=\"num\">13</span><span class=\"den\">2</span></span> [&pi; + 6&pi;] = <span class=\"frac\"><span class=\"num\">13</span><span class=\"den\">2</span></span> &times; 7&pi;</div>\n        <div>Substituting &pi; = <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span>:</div>\n        <div>&rArr; <i>S</i><sub>13</sub> = <span class=\"frac\"><span class=\"num\">13</span><span class=\"den\">2</span></span> &times; 7 &times; <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> = <span class=\"frac\"><span class=\"num\">13</span><span class=\"den\">2</span></span> &times; 22 = 13 &times; 11 = <b>143 cm</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\">Total length of the spiral is 143 cm.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 19 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 19</div>\n    <div class=\"q-text\">\n      200 logs are stacked in the following manner: 20 logs in the bottom row, 19 in the next row, 18 in the row next to it and so on. In how many rows are the 200 logs placed and how many logs are in the top row?\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>The number of logs in consecutive rows forms an AP: 20, 19, 18, &hellip;</div>\n        <div>Here, <i>a</i> = 20, <i>d</i> = 19 &minus; 20 = &minus;1, and total logs <i>S</i><sub><i>n</i></sub> = 200.</div>\n        <div>Using <i>S</i><sub><i>n</i></sub> = <span class=\"frac\"><span class=\"num\"><i>n</i></span><span class=\"den\">2</span></span> [2<i>a</i> + (<i>n</i> &minus; 1)<i>d</i>]:</div>\n        <div>&rArr; 200 = <span class=\"frac\"><span class=\"num\"><i>n</i></span><span class=\"den\">2</span></span> [2(20) + (<i>n</i> &minus; 1)(&minus;1)]</div>\n        <div>&rArr; 400 = <i>n</i> [40 &minus; <i>n</i> + 1] = <i>n</i> [41 &minus; <i>n</i>]</div>\n        <div>&rArr; 400 = 41<i>n</i> &minus; <i>n</i><sup>2</sup></div>\n        <div>&rArr; <i>n</i><sup>2</sup> &minus; 41<i>n</i> + 400 = 0</div>\n        <div>Factorising the quadratic equation:</div>\n        <div>&rArr; <i>n</i><sup>2</sup> &minus; 25<i>n</i> &minus; 16<i>n</i> + 400 = 0</div>\n        <div>&rArr; <i>n</i>(<i>n</i> &minus; 25) &minus; 16(<i>n</i> &minus; 25) = 0</div>\n        <div>&rArr; (<i>n</i> &minus; 16)(<i>n</i> &minus; 25) = 0 &rArr; <b><i>n</i> = 16</b> or <b><i>n</i> = 25</b></div>\n        <div style=\"margin-top: 8px;\"><b>Checking validity:</b></div>\n        <div>&bull; If <i>n</i> = 25: <i>a</i><sub>25</sub> = 20 + 24(&minus;1) = 20 &minus; 24 = &minus;4 (number of logs cannot be negative!).</div>\n        <div>&bull; If <i>n</i> = 16: <i>a</i><sub>16</sub> = 20 + 15(&minus;1) = 20 &minus; 15 = <b>5 logs</b>.</div>\n        <div>Therefore, <i>n</i> = 16 is the only physically possible solution.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\">There are 16 rows, and the top row has 5 logs.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 20 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 20</div>\n    <div class=\"q-text\">\n      In a potato race, a bucket is placed at the starting point, which is 5 m from the first potato, and the other potatoes are placed 3 m apart in a straight line. There are ten potatoes in the line. A competitor starts from the bucket, picks up the nearest potato, runs back with it, drops it in the bucket, runs back to pick up the next potato, runs to the bucket to drop it in, and she continues in the same way until all the potatoes are in the bucket. What is the total distance the competitor has to run?\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Distance run for each potato (round trip = 2 &times; distance):</div>\n        <div>&bull; 1<sup>st</sup> potato: 2 &times; 5 = 10 m</div>\n        <div>&bull; 2<sup>nd</sup> potato: 2 &times; (5 + 3) = 2 &times; 8 = 16 m</div>\n        <div>&bull; 3<sup>rd</sup> potato: 2 &times; (5 + 3 + 3) = 2 &times; 11 = 22 m</div>\n        <div>This forms an AP: 10, 16, 22, &hellip;</div>\n        <div>Here:</div>\n        <div>&bull; First term <i>a</i> = 10</div>\n        <div>&bull; Common difference <i>d</i> = 16 &minus; 10 = 6</div>\n        <div>&bull; Number of potatoes <i>n</i> = 10</div>\n        <div>Using <i>S</i><sub><i>n</i></sub> = <span class=\"frac\"><span class=\"num\"><i>n</i></span><span class=\"den\">2</span></span> [2<i>a</i> + (<i>n</i> &minus; 1)<i>d</i>]:</div>\n        <div>&rArr; <i>S</i><sub>10</sub> = <span class=\"frac\"><span class=\"num\">10</span><span class=\"den\">2</span></span> [2(10) + (10 &minus; 1)(6)]</div>\n        <div>&rArr; <i>S</i><sub>10</sub> = 5 [20 + 9(6)] = 5 [20 + 54] = 5 &times; 74 = <b>370 m</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\">The total distance the competitor has to run is 370 metres.</span>\n      </div>\n    </div>\n  </div>\n\n</div>\n\n</div>\n"
   }
 };

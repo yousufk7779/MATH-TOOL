@@ -1,1780 +1,404 @@
-import { ChapterContent } from "../chapterContent";
+import { ChapterContent } from "../types";
 
 export const mathCh13: ChapterContent = {
-    id: "ch13",
-    number: 13,
-    title: "Statistics",
-    introduction: "In this chapter, we delve into the world of data analysis. We focus on Measures of Central Tendency, learning how to calculate the Mean, Mode, and Median for grouped data using various mathematical techniques.",
-    definitions: [
-        { term: "Mean", description: "The average value of a data set, calculated as the sum of all values divided by the total number of values." },
-        { term: "Mode", description: "The value that appears most frequently in a data set." },
-        { term: "Median", description: "The middle value in a distribution when data is arranged in ascending or descending order." }
-    ],
-    keyPoints: [
-        "Mean can be calculated using Direct, Assumed Mean, or Step-Deviation methods.",
-        "The empirical relationship between the three measures is: 3 Median = Mode + 2 Mean.",
-        "Cumulative frequency (cf) is essential for calculating the Median of grouped data."
-    ],
-    formulas: [
-        { name: "Direct Mean", formula: "x = (Σ fᵢxᵢ) / (Σ fᵢ)" },
-        { name: "Mode (Grouped)", formula: "l + [(f₁ - f₀) / (2f₁ - f₀ - f₂)] × h" },
-        { name: "Median (Grouped)", formula: "l + [(n/2 - cf) / f] × h" }
-    ],
-    crux: [
-        "Always identify the modal class (highest frequency) and median class (first class where cf ≥ n/2).",
-        "Step-deviation method is preferred when class intervals (h) are large to simplify arithmetic.",
-        "Remember that the Mode is a position-based average, while Mean is a value-based average."
-    ],
-    exercises: [
-        { id: "examples", name: "Examples", questions: [] },
-        { id: "exercise1", name: "Exercise 13.1", questions: [] },
-        { id: "exercise2", name: "Exercise 13.2", questions: [] },
-        { id: "exercise3", name: "Exercise 13.3", questions: [] }
-    ],
-    examples: [],
-    theorems: [],
-    mcqs: [
-		{
-				"id": "mcq1",
-				"question": "<span style=\"font-weight: normal;\">The relationship between Mean, Median and Mode for a moderately skewed distribution is:</span>",
-				"options": [
-						"Mode = 2 Median - 3 Mean",
-						"Mode = Median - 2 Mean",
-						"Mode = 3 Median - 2 Mean",
-						"Mode = 2 Mean - 3 Median"
-				],
-				"correctAnswer": "Mode = 3 Median - 2 Mean"
-		},
-		{
-				"id": "mcq2",
-				"question": "<span style=\"font-weight: normal;\">The mode of the following data: 2, 6, 4, 5, 0, 2, 1, 3, 2, 3 is:</span>",
-				"options": [
-						"2",
-						"3",
-						"4",
-						"5"
-				],
-				"correctAnswer": "2"
-		},
-		{
-				"id": "mcq3",
-				"question": "<span style=\"font-weight: normal;\">If the mean of the following distribution is 6, find the value of p: x: 2 4 6 10 p+5; f: 3 2 3 1 2</span>",
-				"options": [
-						"6",
-						"7",
-						"5",
-						"4"
-				],
-				"correctAnswer": "7"
-		},
-		{
-				"id": "mcq4",
-				"question": "<span style=\"font-weight: normal;\">The algebraic sum of deviations of a frequency distribution from its mean is:</span>",
-				"options": [
-						"Always positive",
-						"Always negative",
-						"Zero",
-						"Non-zero"
-				],
-				"correctAnswer": "Zero"
-		},
-		{
-				"id": "mcq5",
-				"question": "<span style=\"font-weight: normal;\">In the formula x = a + (Σfᵢuᵢ/Σfᵢ) × h, uᵢ is:</span>",
-				"options": [
-						"xᵢ - a",
-						"(xᵢ - a) / h",
-						"(a - xᵢ) / h",
-						"h(xᵢ - a)"
-				],
-				"correctAnswer": "(xᵢ - a) / h"
-		},
-		{
-				"id": "mcq6",
-				"question": "<span style=\"font-weight: normal;\">While computing mean of grouped data, we assume that the frequencies are:</span>",
-				"options": [
-						"centred at the upper limits of the classes",
-						"centred at the lower limits of the classes",
-						"centred at the classmarks of the classes",
-						"evenly distributed"
-				],
-				"correctAnswer": "centred at the classmarks of the classes"
-		},
-		{
-				"id": "mcq7",
-				"question": "<span style=\"font-weight: normal;\">Construction of a cumulative frequency table is useful in determining the:</span>",
-				"options": [
-						"Mean",
-						"Median",
-						"Mode",
-						"All of these"
-				],
-				"correctAnswer": "Median"
-		},
-		{
-				"id": "mcq8",
-				"question": "<span style=\"font-weight: normal;\">Which of the following cannot be determined graphically?</span>",
-				"options": [
-						"Mean",
-						"Median",
-						"Mode",
-						"None of these"
-				],
-				"correctAnswer": "Mean"
-		},
-		{
-				"id": "mcq9",
-				"question": "<span style=\"font-weight: normal;\">The abscissa of the point of intersection of the less than type and of the more than type cumulative frequency curves of a grouped data gives its:</span>",
-				"options": [
-						"Mean",
-						"Median",
-						"Mode",
-						"Range"
-				],
-				"correctAnswer": "Median"
-		},
-		{
-				"id": "mcq10",
-				"question": "<span style=\"font-weight: normal;\">If the mean of first n natural numbers is 5n/9, then n = ?</span>",
-				"options": [
-						"9",
-						"10",
-						"11",
-						"12"
-				],
-				"correctAnswer": "9"
-		}
-],
-    summary: [
-        "Mastered the calculation of Mean using multiple methods.",
-        "Learned to identify the Modal and Median class for grouped frequency distributions.",
-        "Understood the relationship between Mean, Median, and Mode."
-    ],
-
-    isHtmlView: true,
-    htmlOverview: `<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Statistics - Overview</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
-
-        body {
-            font-family: 'Kalam', cursive;
-            margin: 0;
-            padding: 15px;
-            background: #fff;
-            color: #333;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #6C63FF;
-            padding-bottom: 10px;
-            font-family: 'Nunito', sans-serif;
-        }
-
-        .logo {
-            color: #6C63FF;
-            font-size: 24px;
-            font-weight: 800;
-        }
-
-        .chapter-title {
-            text-align: center;
-            color: #333;
-            font-size: 20px;
-            font-weight: 700;
-            margin: 10px 0;
-            font-family: 'Kalam', cursive;
-        }
-
-        .content-box { background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px; padding: 15px; margin-bottom: 15px; display: flow-root; transition: transform 0.2s ease; }
-
-        .section-title {
-            color: #D32F2F;
-            font-weight: 700;
-            font-size: 1.2em;
-            margin-bottom: 10px;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 5px;
-        }
-
-        .formula-box {
-            background: #E8F5E9;
-            border-left: 4px solid #4CAF50;
-            padding: 10px;
-            margin: 10px 0;
-            font-family: 'Nunito', sans-serif;
-        }
-
-        .step {
-            margin-bottom: 8px;
-            font-size: 1.1em;
-            color: #000;
-            line-height: 1.5;
-        }
-
-        
-    
-
-
-img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; height: auto; border: 1px solid #ddd; border-radius: 6px; padding: 5px; background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-@media (max-width: 600px) { img { float: none; display: block; margin: 10px auto; max-width: 100%; } }
-</style>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    renderMathInElement(document.body, {
-      delimiters: [
-        {left: '\\\\(', right: '\\\\)', display: false},
-        {left: '\\\\[', right: '\\\\]', display: true}
-      ]
-    });
-  });
-</script>
-
-<style>
-  body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
-  .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #42A5F5 !important; color: #fff !important; }
-  h1, h2, h3, h4, h5, h6 { color: #42A5F5 !important; }
-  .question { color: #42A5F5 !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
-  .formula { color: #4CAF50 !important; }
-  .true-text { color: #4CAF50 !important; }
-  .false-text { color: #F44336 !important; }
-  table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
-  .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
-  img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #42A5F5 !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
-  * { font-family: 'Noto Sans', sans-serif !important; }
-
-  .question { font-size: 0.95em !important; }
-  .sub-question { font-size: 0.9em !important; }
-  .step { font-size: 0.9em !important; }
-  .final-answer { font-size: 0.95em !important; }
-</style>
-</head>
-
-<body>
-
-    
-
-    <div class="content-box">
-        <div class="section-title">1. Introduction</div>
-        <div class="step">We study the numerical representation of data. We will focus on three measures of central
-            tendency: Mean, Mode, and Median of grouped data.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjUwIiB5PSIyMzAiIHdpZHRoPSIzMCIgaGVpZ2h0PSIyMCIgZmlsbD0iI2JiZGVmYiIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHJlY3QgeD0iOTAiIHk9IjIwMCIgd2lkdGg9IjMwIiBoZWlnaHQ9IjUwIiBmaWxsPSIjYmJkZWZiIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48cmVjdCB4PSIxMzAiIHk9IjE3MCIgd2lkdGg9IjMwIiBoZWlnaHQ9IjgwIiBmaWxsPSIjYmJkZWZiIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48cmVjdCB4PSIxNzAiIHk9IjE1MCIgd2lkdGg9IjMwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iI2JiZGVmYiIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHJlY3QgeD0iMjEwIiB5PSIxNzAiIHdpZHRoPSIzMCIgaGVpZ2h0PSI4MCIgZmlsbD0iI2JiZGVmYiIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHJlY3QgeD0iMjUwIiB5PSIyMDAiIHdpZHRoPSIzMCIgaGVpZ2h0PSI1MCIgZmlsbD0iI2JiZGVmYiIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHJlY3QgeD0iMjkwIiB5PSIyMzAiIHdpZHRoPSIzMCIgaGVpZ2h0PSIyMCIgZmlsbD0iI2JiZGVmYiIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PGxpbmUgeDE9IjQwIiB5MT0iMjUwIiB4Mj0iMzUwIiB5Mj0iMjUwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48bGluZSB4MT0iNDAiIHkxPSIyNTAiIHgyPSI0MCIgeTI9IjUwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48dGV4dCB4PSIyMDAiIHk9IjMwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5GcmVxdWVuY3kgRGlzdHJpYnV0aW9uPC90ZXh0PjxsaW5lIHgxPSIxODUiIHkxPSI1MCIgeDI9IjE4NSIgeTI9IjI1MCIgc3Ryb2tlPSJncmVlbiIgc3Ryb2tlLWRhc2hhcnJheT0iNCIvPjx0ZXh0IHg9IjE4NSIgeT0iMjcwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImdyZWVuIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5NZWFuL01lZGlhbi9Nb2RlPC90ZXh0Pjwvc3ZnPg==" alt="Statistics Overview">
-    </div>
-
-    <div class="content-box">
-        <div class="section-title">2. Mean of Grouped Data</div>
-        <div class="formula-box">
-            <strong>Direct Method:</strong><br>
-            x = (Σ fᵢxᵢ) / (Σ fᵢ)<br><br>
-            <strong>Assumed Mean Method:</strong><br>
-            x = a + (Σ fᵢdᵢ) / (Σ fᵢ), where dᵢ = xᵢ - a<br><br>
-            <strong>Step-Deviation Method:</strong><br>
-            x = a + [(Σ fᵢuᵢ) / (Σ fᵢ)] × h, where uᵢ = (xᵢ - a)/h
-        </div>
-    </div>
-
-    <div class="content-box">
-        <div class="section-title">3. Mode of Grouped Data</div>
-        <div class="formula-box">
-            Mode = l + [(f₁ - f₀) / (2f₁ - f₀ - f₂)] × h<br>
-            Where:<br>
-            l = lower limit of modal class<br>
-            f₁ = frequency of modal class<br>
-            f₀ = frequency of class preceding modal class<br>
-            f₂ = frequency of class succeeding modal class<br>
-            h = class size
-        </div>
-    </div>
-
-    <div class="content-box">
-        <div class="section-title">4. Median of Grouped Data</div>
-        <div class="formula-box">
-            Median = l + [(n/2 - cf) / f] × h<br>
-            Where:<br>
-            l = lower limit of median class<br>
-            n = number of observations<br>
-            cf = cumulative frequency of class preceding median class<br>
-            f = frequency of median class<br>
-            h = class size
-        </div>
-    </div>
-
-    <div class="content-box">
-        <div class="section-title">5. Empirical Relationship</div>
-        <div class="formula-box">
-            3 Median = Mode + 2 Mean
-        </div>
-    </div>
-
-</body>
-
-</html>`,
-    htmlExercises: {
-        exercise1: `<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Statistics - Exercise 13.1 (Mean)</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
-
-        body {
-            font-family: 'Kalam', cursive;
-            margin: 0;
-            padding: 15px;
-            background: #fff;
-            color: #333;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #6C63FF;
-            padding-bottom: 10px;
-            font-family: 'Nunito', sans-serif;
-        }
-
-        .logo {
-            color: #6C63FF;
-            font-size: 24px;
-            font-weight: 800;
-        }
-
-        .chapter-title {
-            text-align: center;
-            color: #333;
-            font-size: 20px;
-            font-weight: 700;
-            margin: 10px 0;
-            font-family: 'Kalam', cursive;
-        }
-
-        .content-box { background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px; padding: 15px; margin-bottom: 15px; display: flow-root; transition: transform 0.2s ease; }
-
-        .question {
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: #333;
-        }
-
-        .step {
-            margin-bottom: 8px;
-            font-size: 1.1em;
-            color: #000;
-            line-height: 1.5;
-        }
-
-        .final-answer {
-            color: #2E7D32;
-            font-weight: 700;
-            margin-top: 10px;
-            font-size: 1.2em;
-        }
-
-        
-
-        .solution-header {
-            color: #2E7D32;
-            font-weight: 700;
-            margin-bottom: 5px;
-        }
-
-        table { width: auto; min-width: 60%; margin: 15px auto; border-collapse: collapse; font-family: 'Nunito', sans-serif; font-size: 0.9em; box-shadow: 0 2px 5px rgba(0,0,0,0.1); background: white; border-radius: 4px; overflow: hidden; }
-
-        th, td { border: 1px solid #ddd; padding: 5px; text-align: center; font-size: 0.95em; }
-
-        th { background-color: #e8f5e9; color: #2E7D32; font-weight: 700; padding: 8px; border: 1px solid #ddd; text-align: center; }
-    
-
-
-img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; height: auto; border: 1px solid #ddd; border-radius: 6px; padding: 5px; background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-@media (max-width: 600px) { img { float: none; display: block; margin: 10px auto; max-width: 100%; } }
-</style>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    renderMathInElement(document.body, {
-      delimiters: [
-        {left: '\\\\(', right: '\\\\)', display: false},
-        {left: '\\\\[', right: '\\\\]', display: true}
-      ]
-    });
-  });
-</script>
-
-<style>
-  body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
-  .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #42A5F5 !important; color: #fff !important; }
-  h1, h2, h3, h4, h5, h6 { color: #42A5F5 !important; }
-  .question { color: #42A5F5 !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
-  .formula { color: #4CAF50 !important; }
-  .true-text { color: #4CAF50 !important; }
-  .false-text { color: #F44336 !important; }
-  table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
-  .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
-  img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #42A5F5 !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
-  * { font-family: 'Noto Sans', sans-serif !important; }
-
-  .question { font-size: 0.95em !important; }
-  .sub-question { font-size: 0.9em !important; }
-  .step { font-size: 0.9em !important; }
-  .final-answer { font-size: 0.95em !important; }
-</style>
-</head>
-
-<body>
-
-    
-
-    <div class="content-box">
-        <div class="question">1. A survey was conducted by a group of students... regarding the number of plants in 20
-            houses... Find the mean number of plants. Which method did you use and why?</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjUwIiB5PSIyMTYuNjY2NjY2NjY2NjY2NjYiIHdpZHRoPSI0MCIgaGVpZ2h0PSIzMy4zMzMzMzMzMzMzMzMzMzYiIGZpbGw9IiNjOGU2YzkiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjcwIiB5PSIyMTEuNjY2NjY2NjY2NjY2NjYiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjE8L3RleHQ+PHRleHQgeD0iNzAiIHk9IjI2NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjgiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4wLTI8L3RleHQ+PHJlY3QgeD0iOTAiIHk9IjE4My4zMzMzMzMzMzMzMzMzMSIgd2lkdGg9IjQwIiBoZWlnaHQ9IjY2LjY2NjY2NjY2NjY2NjY3IiBmaWxsPSIjYzhlNmM5IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48dGV4dCB4PSIxMTAiIHk9IjE3OC4zMzMzMzMzMzMzMzMzMSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MjwvdGV4dD48dGV4dCB4PSIxMTAiIHk9IjI2NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjgiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4yLTQ8L3RleHQ+PHJlY3QgeD0iMTMwIiB5PSIyMTYuNjY2NjY2NjY2NjY2NjYiIHdpZHRoPSI0MCIgaGVpZ2h0PSIzMy4zMzMzMzMzMzMzMzMzMzYiIGZpbGw9IiNjOGU2YzkiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjE1MCIgeT0iMjExLjY2NjY2NjY2NjY2NjY2IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xPC90ZXh0Pjx0ZXh0IHg9IjE1MCIgeT0iMjY1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iOCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjQtNjwvdGV4dD48cmVjdCB4PSIxNzAiIHk9IjgzLjMzMzMzMzMzMzMzMzMxIiB3aWR0aD0iNDAiIGhlaWdodD0iMTY2LjY2NjY2NjY2NjY2NjY5IiBmaWxsPSIjYzhlNmM5IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48dGV4dCB4PSIxOTAiIHk9Ijc4LjMzMzMzMzMzMzMzMzMxIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj41PC90ZXh0Pjx0ZXh0IHg9IjE5MCIgeT0iMjY1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iOCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjYtODwvdGV4dD48cmVjdCB4PSIyMTAiIHk9IjUwLjAiIHdpZHRoPSI0MCIgaGVpZ2h0PSIyMDAuMCIgZmlsbD0iI2M4ZTZjOSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iMjMwIiB5PSI0NS4wIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj42PC90ZXh0Pjx0ZXh0IHg9IjIzMCIgeT0iMjY1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iOCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjgtMTA8L3RleHQ+PHJlY3QgeD0iMjUwIiB5PSIxODMuMzMzMzMzMzMzMzMzMzEiIHdpZHRoPSI0MCIgaGVpZ2h0PSI2Ni42NjY2NjY2NjY2NjY2NyIgZmlsbD0iI2M4ZTZjOSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iMjcwIiB5PSIxNzguMzMzMzMzMzMzMzMzMzEiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjI8L3RleHQ+PHRleHQgeD0iMjcwIiB5PSIyNjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSI4IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MTAtMTI8L3RleHQ+PHJlY3QgeD0iMjkwIiB5PSIxNTAuMCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjEwMC4wIiBmaWxsPSIjYzhlNmM5IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48dGV4dCB4PSIzMTAiIHk9IjE0NS4wIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4zPC90ZXh0Pjx0ZXh0IHg9IjMxMCIgeT0iMjY1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iOCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjEyLTE0PC90ZXh0PjxsaW5lIHgxPSI0MCIgeTE9IjI1MCIgeDI9IjM1MCIgeTI9IjI1MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+PGxpbmUgeDE9IjQwIiB5MT0iMjUwIiB4Mj0iNDAiIHkyPSIyMCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+PHRleHQgeD0iMjAwIiB5PSIyOTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPk51bWJlciBvZiBQbGFudHMgcGVyIEhvdXNlPC90ZXh0Pjwvc3ZnPg==" alt="Plants Data">
-        <div class="solution-header">Solution:</div>
-        <div class="step">We use Direct Method as values of f and x are small.</div>
-        <table>
-            <tr>
-                <th>Class</th>
-                <th>fi</th>
-                <th>xi (mid)</th>
-                <th>fixi</th>
-            </tr>
-            <tr>
-                <td>0-2</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>2-4</td>
-                <td>2</td>
-                <td>3</td>
-                <td>6</td>
-            </tr>
-            <tr>
-                <td>4-6</td>
-                <td>1</td>
-                <td>5</td>
-                <td>5</td>
-            </tr>
-            <tr>
-                <td>6-8</td>
-                <td>5</td>
-                <td>7</td>
-                <td>35</td>
-            </tr>
-            <tr>
-                <td>8-10</td>
-                <td>6</td>
-                <td>9</td>
-                <td>54</td>
-            </tr>
-            <tr>
-                <td>10-12</td>
-                <td>2</td>
-                <td>11</td>
-                <td>22</td>
-            </tr>
-            <tr>
-                <td>12-14</td>
-                <td>3</td>
-                <td>13</td>
-                <td>39</td>
-            </tr>
-            <tr>
-                <th>Total</th>
-                <th>20</th>
-                <th></th>
-                <th>162</th>
-            </tr>
-        </table>
-        <div class="step">Mean x = Σfixi / Σfi = 162 / 20 = 8.1.</div>
-        <div class="final-answer">Mean = 8.1 plants.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">2. Consider the following distribution of daily wages of 50 workers... Find the mean daily
-            wages.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjUwIiB5PSI3OC41NzE0Mjg1NzE0Mjg1NiIgd2lkdGg9IjUwIiBoZWlnaHQ9IjE3MS40Mjg1NzE0Mjg1NzE0NCIgZmlsbD0iI2ZmY2NiYyIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iNzUiIHk9IjczLjU3MTQyODU3MTQyODU2IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xMjwvdGV4dD48dGV4dCB4PSI3NSIgeT0iMjY1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iOCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjUwMC01MjA8L3RleHQ+PHJlY3QgeD0iMTAwIiB5PSI1MC4wIiB3aWR0aD0iNTAiIGhlaWdodD0iMjAwLjAiIGZpbGw9IiNmZmNjYmMiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjEyNSIgeT0iNDUuMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MTQ8L3RleHQ+PHRleHQgeD0iMTI1IiB5PSIyNjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSI4IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NTIwLTU0MDwvdGV4dD48cmVjdCB4PSIxNTAiIHk9IjEzNS43MTQyODU3MTQyODU3MiIgd2lkdGg9IjUwIiBoZWlnaHQ9IjExNC4yODU3MTQyODU3MTQyOSIgZmlsbD0iI2ZmY2NiYyIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iMTc1IiB5PSIxMzAuNzE0Mjg1NzE0Mjg1NzIiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjg8L3RleHQ+PHRleHQgeD0iMTc1IiB5PSIyNjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSI4IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NTQwLTU2MDwvdGV4dD48cmVjdCB4PSIyMDAiIHk9IjE2NC4yODU3MTQyODU3MTQyOCIgd2lkdGg9IjUwIiBoZWlnaHQ9Ijg1LjcxNDI4NTcxNDI4NTcyIiBmaWxsPSIjZmZjY2JjIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48dGV4dCB4PSIyMjUiIHk9IjE1OS4yODU3MTQyODU3MTQyOCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NjwvdGV4dD48dGV4dCB4PSIyMjUiIHk9IjI2NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjgiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj41NjAtNTgwPC90ZXh0PjxyZWN0IHg9IjI1MCIgeT0iMTA3LjE0Mjg1NzE0Mjg1NzE0IiB3aWR0aD0iNTAiIGhlaWdodD0iMTQyLjg1NzE0Mjg1NzE0Mjg2IiBmaWxsPSIjZmZjY2JjIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48dGV4dCB4PSIyNzUiIHk9IjEwMi4xNDI4NTcxNDI4NTcxNCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MTA8L3RleHQ+PHRleHQgeD0iMjc1IiB5PSIyNjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSI4IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NTgwLTYwMDwvdGV4dD48bGluZSB4MT0iNDAiIHkxPSIyNTAiIHgyPSIzNTAiIHkyPSIyNTAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjxsaW5lIHgxPSI0MCIgeTE9IjI1MCIgeDI9IjQwIiB5Mj0iMjAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjx0ZXh0IHg9IjIwMCIgeT0iMjkwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5EYWlseSBXYWdlcyBEaXN0cmlidXRpb248L3RleHQ+PC9zdmc+" alt="Wages Data">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Using Step Deviation Method. Let a = 550, h = 20.</div>
-        <table>
-            <tr>
-                <th>Class</th>
-                <th>fi</th>
-                <th>xi</th>
-                <th>di=xi-a</th>
-                <th>ui=di/h</th>
-                <th>fiui</th>
-            </tr>
-            <tr>
-                <td>500-520</td>
-                <td>12</td>
-                <td>510</td>
-                <td>-40</td>
-                <td>-2</td>
-                <td>-24</td>
-            </tr>
-            <tr>
-                <td>520-540</td>
-                <td>14</td>
-                <td>530</td>
-                <td>-20</td>
-                <td>-1</td>
-                <td>-14</td>
-            </tr>
-            <tr>
-                <td>540-560</td>
-                <td>8</td>
-                <td>550</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>560-580</td>
-                <td>6</td>
-                <td>570</td>
-                <td>20</td>
-                <td>1</td>
-                <td>6</td>
-            </tr>
-            <tr>
-                <td>580-600</td>
-                <td>10</td>
-                <td>590</td>
-                <td>40</td>
-                <td>2</td>
-                <td>20</td>
-            </tr>
-            <tr>
-                <th>Total</th>
-                <th>50</th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th>-12</th>
-            </tr>
-        </table>
-        <div class="step">Mean x = a + (Σfiui / Σfi) × h</div>
-        <div class="step">= 550 + (-12/50) × 20</div>
-        <div class="step">= 550 - 4.8 = 545.2.</div>
-        <div class="final-answer">Mean Daily Wages = ₹ 545.20.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">3. The following distribution shows daily pocket allowance... The mean pocket allowance is
-            ₹ 18. Find the missing frequency f.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjQwIiB5PSIxODAuMCIgd2lkdGg9IjQ1IiBoZWlnaHQ9IjcwLjAiIGZpbGw9IiNmZmY5YzQiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjYyIiB5PSIxNzUuMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NzwvdGV4dD48dGV4dCB4PSI2MiIgeT0iMjY1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iOCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjExLTEzPC90ZXh0PjxyZWN0IHg9Ijg1IiB5PSIxOTAuMCIgd2lkdGg9IjQ1IiBoZWlnaHQ9IjYwLjAiIGZpbGw9IiNmZmY5YzQiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjEwNyIgeT0iMTg1LjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjY8L3RleHQ+PHRleHQgeD0iMTA3IiB5PSIyNjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSI4IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MTMtMTU8L3RleHQ+PHJlY3QgeD0iMTMwIiB5PSIxNjAuMCIgd2lkdGg9IjQ1IiBoZWlnaHQ9IjkwLjAiIGZpbGw9IiNmZmY5YzQiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjE1MiIgeT0iMTU1LjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjk8L3RleHQ+PHRleHQgeD0iMTUyIiB5PSIyNjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSI4IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MTUtMTc8L3RleHQ+PHJlY3QgeD0iMTc1IiB5PSIxMjAuMCIgd2lkdGg9IjQ1IiBoZWlnaHQ9IjEzMC4wIiBmaWxsPSIjZmZmOWM0IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48dGV4dCB4PSIxOTciIHk9IjExNS4wIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xMzwvdGV4dD48dGV4dCB4PSIxOTciIHk9IjI2NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjgiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xNy0xOTwvdGV4dD48cmVjdCB4PSIyMjAiIHk9IjUwLjAiIHdpZHRoPSI0NSIgaGVpZ2h0PSIyMDAuMCIgZmlsbD0iI2JkYmRiZCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iMjQyIiB5PSI0NS4wIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5mPzwvdGV4dD48dGV4dCB4PSIyNDIiIHk9IjI2NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjgiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xOS0yMTwvdGV4dD48cmVjdCB4PSIyNjUiIHk9IjIwMC4wIiB3aWR0aD0iNDUiIGhlaWdodD0iNTAuMCIgZmlsbD0iI2ZmZjljNCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iMjg3IiB5PSIxOTUuMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NTwvdGV4dD48dGV4dCB4PSIyODciIHk9IjI2NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjgiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4yMS0yMzwvdGV4dD48cmVjdCB4PSIzMTAiIHk9IjIxMC4wIiB3aWR0aD0iNDUiIGhlaWdodD0iNDAuMCIgZmlsbD0iI2ZmZjljNCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iMzMyIiB5PSIyMDUuMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NDwvdGV4dD48dGV4dCB4PSIzMzIiIHk9IjI2NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjgiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4yMy0yNTwvdGV4dD48bGluZSB4MT0iMzAiIHkxPSIyNTAiIHgyPSIzNjAiIHkyPSIyNTAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjx0ZXh0IHg9IjIwMCIgeT0iMjkwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5Qb2NrZXQgQWxsb3dhbmNlIChGaW5kIGYpPC90ZXh0Pjwvc3ZnPg==" alt="Missing Frequency Data">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Using Direct Method. Mean = 18.</div>
-        <table>
-            <tr>
-                <th>Class</th>
-                <th>fi</th>
-                <th>xi</th>
-                <th>fixi</th>
-            </tr>
-            <tr>
-                <td>11-13</td>
-                <td>7</td>
-                <td>12</td>
-                <td>84</td>
-            </tr>
-            <tr>
-                <td>13-15</td>
-                <td>6</td>
-                <td>14</td>
-                <td>84</td>
-            </tr>
-            <tr>
-                <td>15-17</td>
-                <td>9</td>
-                <td>16</td>
-                <td>144</td>
-            </tr>
-            <tr>
-                <td>17-19</td>
-                <td>13</td>
-                <td>18</td>
-                <td>234</td>
-            </tr>
-            <tr>
-                <td>19-21</td>
-                <td>f</td>
-                <td>20</td>
-                <td>20f</td>
-            </tr>
-            <tr>
-                <td>21-23</td>
-                <td>5</td>
-                <td>22</td>
-                <td>110</td>
-            </tr>
-            <tr>
-                <td>23-25</td>
-                <td>4</td>
-                <td>24</td>
-                <td>96</td>
-            </tr>
-            <tr>
-                <th>Total</th>
-                <th>44+f</th>
-                <th></th>
-                <th>752+20f</th>
-            </tr>
-        </table>
-        <div class="step">Mean = Σfixi / Σfi => 18 = (752 + 20f) / (44 + f).</div>
-        <div class="step">18(44 + f) = 752 + 20f</div>
-        <div class="step">792 + 18f = 752 + 20f</div>
-        <div class="step">40 = 2f => f = 20.</div>
-        <div class="final-answer">Missing frequency f = 20.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">4. Thirty women were examined... find the mean heart beats per minute.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjUwIiB5PSIyMDAuMCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjUwLjAiIGZpbGw9IiNmOGJiZDAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjxyZWN0IHg9IjkwIiB5PSIxNTAuMCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjEwMC4wIiBmaWxsPSIjZjhiYmQwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48cmVjdCB4PSIxMzAiIHk9IjE3NS4wIiB3aWR0aD0iNDAiIGhlaWdodD0iNzUuMCIgZmlsbD0iI2Y4YmJkMCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHJlY3QgeD0iMTcwIiB5PSI1MC4wIiB3aWR0aD0iNDAiIGhlaWdodD0iMjAwLjAiIGZpbGw9IiNmOGJiZDAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjxyZWN0IHg9IjIxMCIgeT0iNzUuMCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjE3NS4wIiBmaWxsPSIjZjhiYmQwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48cmVjdCB4PSIyNTAiIHk9IjE1MC4wIiB3aWR0aD0iNDAiIGhlaWdodD0iMTAwLjAiIGZpbGw9IiNmOGJiZDAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjxyZWN0IHg9IjI5MCIgeT0iMjAwLjAiIHdpZHRoPSI0MCIgaGVpZ2h0PSI1MC4wIiBmaWxsPSIjZjhiYmQwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48bGluZSB4MT0iNDAiIHkxPSIyNTAiIHgyPSIzNTAiIHkyPSIyNTAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjx0ZXh0IHg9IjIwMCIgeT0iMjgwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5IZWFydGJlYXRzIHBlciBNaW51dGU8L3RleHQ+PC9zdmc+" alt="Heartbeat Data">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Using Step Deviation Method. a = 75.5, h = 3.</div>
-        <table>
-            <tr>
-                <th>Class</th>
-                <th>fi</th>
-                <th>xi</th>
-                <th>ui</th>
-                <th>fiui</th>
-            </tr>
-            <tr>
-                <td>65-68</td>
-                <td>2</td>
-                <td>66.5</td>
-                <td>-3</td>
-                <td>-6</td>
-            </tr>
-            <tr>
-                <td>68-71</td>
-                <td>4</td>
-                <td>69.5</td>
-                <td>-2</td>
-                <td>-8</td>
-            </tr>
-            <tr>
-                <td>71-74</td>
-                <td>3</td>
-                <td>72.5</td>
-                <td>-1</td>
-                <td>-3</td>
-            </tr>
-            <tr>
-                <td>74-77</td>
-                <td>8</td>
-                <td>75.5</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>77-80</td>
-                <td>7</td>
-                <td>78.5</td>
-                <td>1</td>
-                <td>7</td>
-            </tr>
-            <tr>
-                <td>80-83</td>
-                <td>4</td>
-                <td>81.5</td>
-                <td>2</td>
-                <td>8</td>
-            </tr>
-            <tr>
-                <td>83-86</td>
-                <td>2</td>
-                <td>84.5</td>
-                <td>3</td>
-                <td>6</td>
-            </tr>
-            <tr>
-                <th>Total</th>
-                <th>30</th>
-                <th></th>
-                <th></th>
-                <th>4</th>
-            </tr>
-        </table>
-        <div class="step">Mean = 75.5 + (4/30) × 3 = 75.5 + 0.4 = 75.9.</div>
-        <div class="final-answer">Mean = 75.9 beats/min.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">5. In a retail market, fruit vendors were selling mangoes... kept in packing boxes. Find
-            the mean number of mangoes.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjUwIiB5PSIyMjcuNzc3Nzc3Nzc3Nzc3NzciIHdpZHRoPSI1MCIgaGVpZ2h0PSIyMi4yMjIyMjIyMjIyMjIyMiIgZmlsbD0iI2ZmZTBiMiIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHJlY3QgeD0iMTAwIiB5PSI4Ny4wMzcwMzcwMzcwMzcwNCIgd2lkdGg9IjUwIiBoZWlnaHQ9IjE2Mi45NjI5NjI5NjI5NjI5NiIgZmlsbD0iI2ZmZTBiMiIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHJlY3QgeD0iMTUwIiB5PSI1MC4wIiB3aWR0aD0iNTAiIGhlaWdodD0iMjAwLjAiIGZpbGw9IiNmZmUwYjIiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjxyZWN0IHg9IjIwMCIgeT0iNzkuNjI5NjI5NjI5NjI5NjUiIHdpZHRoPSI1MCIgaGVpZ2h0PSIxNzAuMzcwMzcwMzcwMzcwMzUiIGZpbGw9IiNmZmUwYjIiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjxyZWN0IHg9IjI1MCIgeT0iMjEyLjk2Mjk2Mjk2Mjk2Mjk2IiB3aWR0aD0iNTAiIGhlaWdodD0iMzcuMDM3MDM3MDM3MDM3MDQiIGZpbGw9IiNmZmUwYjIiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjxsaW5lIHgxPSI0MCIgeTE9IjI1MCIgeDI9IjM1MCIgeTI9IjI1MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+PHRleHQgeD0iMjAwIiB5PSIyODAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPk1hbmdvZXMgUGFja2luZzwvdGV4dD48L3N2Zz4=" alt="Mangoes Data">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Classes are discontinuous (50-52, 53-55). Make continuous (49.5-52.5). However, for mean, 'xi'
-            remains same.</div>
-        <div class="step">Step Deviation. a = 57, h = 3.</div>
-        <table>
-            <tr>
-                <th>Class</th>
-                <th>fi</th>
-                <th>xi</th>
-                <th>ui</th>
-                <th>fiui</th>
-            </tr>
-            <tr>
-                <td>50-52</td>
-                <td>15</td>
-                <td>51</td>
-                <td>-2</td>
-                <td>-30</td>
-            </tr>
-            <tr>
-                <td>53-55</td>
-                <td>110</td>
-                <td>54</td>
-                <td>-1</td>
-                <td>-110</td>
-            </tr>
-            <tr>
-                <td>56-58</td>
-                <td>135</td>
-                <td>57</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>59-61</td>
-                <td>115</td>
-                <td>60</td>
-                <td>1</td>
-                <td>115</td>
-            </tr>
-            <tr>
-                <td>62-64</td>
-                <td>25</td>
-                <td>63</td>
-                <td>2</td>
-                <td>50</td>
-            </tr>
-            <tr>
-                <th>Total</th>
-                <th>400</th>
-                <th></th>
-                <th></th>
-                <th>25</th>
-            </tr>
-        </table>
-        <div class="step">Mean = 57 + (25/400) × 3 = 57 + 0.1875 = 57.19.</div>
-        <div class="final-answer">Mean = 57.19 mangoes.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">6. The table below shows the daily expenditure on food of 25 households... Find the mean
-            daily expenditure.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjUwIiB5PSIxODMuMzMzMzMzMzMzMzMzMzEiIHdpZHRoPSI1MCIgaGVpZ2h0PSI2Ni42NjY2NjY2NjY2NjY2NyIgZmlsbD0iI2QxYzRlOSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHJlY3QgeD0iMTAwIiB5PSIxNjYuNjY2NjY2NjY2NjY2NjYiIHdpZHRoPSI1MCIgaGVpZ2h0PSI4My4zMzMzMzMzMzMzMzMzNCIgZmlsbD0iI2QxYzRlOSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHJlY3QgeD0iMTUwIiB5PSI1MC4wIiB3aWR0aD0iNTAiIGhlaWdodD0iMjAwLjAiIGZpbGw9IiNkMWM0ZTkiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjxyZWN0IHg9IjIwMCIgeT0iMjE2LjY2NjY2NjY2NjY2NjY2IiB3aWR0aD0iNTAiIGhlaWdodD0iMzMuMzMzMzMzMzMzMzMzMzM2IiBmaWxsPSIjZDFjNGU5IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48cmVjdCB4PSIyNTAiIHk9IjIxNi42NjY2NjY2NjY2NjY2NiIgd2lkdGg9IjUwIiBoZWlnaHQ9IjMzLjMzMzMzMzMzMzMzMzMzNiIgZmlsbD0iI2QxYzRlOSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PGxpbmUgeDE9IjQwIiB5MT0iMjUwIiB4Mj0iMzUwIiB5Mj0iMjUwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48dGV4dCB4PSIyMDAiIHk9IjI4MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+RGFpbHkgRXhwZW5kaXR1cmU8L3RleHQ+PC9zdmc+" alt="Expenditure Data">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Step Deviation. a = 225, h = 50.</div>
-        <table>
-            <tr>
-                <th>Class</th>
-                <th>fi</th>
-                <th>xi</th>
-                <th>ui</th>
-                <th>fiui</th>
-            </tr>
-            <tr>
-                <td>100-150</td>
-                <td>4</td>
-                <td>125</td>
-                <td>-2</td>
-                <td>-8</td>
-            </tr>
-            <tr>
-                <td>150-200</td>
-                <td>5</td>
-                <td>175</td>
-                <td>-1</td>
-                <td>-5</td>
-            </tr>
-            <tr>
-                <td>200-250</td>
-                <td>12</td>
-                <td>225</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>250-300</td>
-                <td>2</td>
-                <td>275</td>
-                <td>1</td>
-                <td>2</td>
-            </tr>
-            <tr>
-                <td>300-350</td>
-                <td>2</td>
-                <td>325</td>
-                <td>2</td>
-                <td>4</td>
-            </tr>
-            <tr>
-                <th>Total</th>
-                <th>25</th>
-                <th></th>
-                <th></th>
-                <th>-7</th>
-            </tr>
-        </table>
-        <div class="step">Mean = 225 + (-7/25) × 50 = 225 - 14 = 211.</div>
-        <div class="final-answer">Mean = ₹ 211.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">7. To find out the concentration of SO2 in the air... find the mean concentration.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjUwIiB5PSIxNjEuMTExMTExMTExMTExMTEiIHdpZHRoPSI0MCIgaGVpZ2h0PSI4OC44ODg4ODg4ODg4ODg4OSIgZmlsbD0iI2UxYmVlNyIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHJlY3QgeD0iOTAiIHk9IjUwLjAiIHdpZHRoPSI0MCIgaGVpZ2h0PSIyMDAuMCIgZmlsbD0iI2UxYmVlNyIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHJlY3QgeD0iMTMwIiB5PSI1MC4wIiB3aWR0aD0iNDAiIGhlaWdodD0iMjAwLjAiIGZpbGw9IiNlMWJlZTciIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjxyZWN0IHg9IjE3MCIgeT0iMjA1LjU1NTU1NTU1NTU1NTU0IiB3aWR0aD0iNDAiIGhlaWdodD0iNDQuNDQ0NDQ0NDQ0NDQ0NDQiIGZpbGw9IiNlMWJlZTciIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjxyZWN0IHg9IjIxMCIgeT0iMTYxLjExMTExMTExMTExMTExIiB3aWR0aD0iNDAiIGhlaWdodD0iODguODg4ODg4ODg4ODg4ODkiIGZpbGw9IiNlMWJlZTciIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjxyZWN0IHg9IjI1MCIgeT0iMjA1LjU1NTU1NTU1NTU1NTU0IiB3aWR0aD0iNDAiIGhlaWdodD0iNDQuNDQ0NDQ0NDQ0NDQ0NDQiIGZpbGw9IiNlMWJlZTciIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjxsaW5lIHgxPSI0MCIgeTE9IjI1MCIgeDI9IjM1MCIgeTI9IjI1MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+PHRleHQgeD0iMjAwIiB5PSIyODAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPlNPMiBDb25jZW50cmF0aW9uPC90ZXh0Pjwvc3ZnPg==" alt="SO2 Data">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Direct Method looks manageable with decimals. Or Step Deviation.</div>
-        <div class="step">Let's use Direct Method.</div>
-        <table>
-            <tr>
-                <th>Class</th>
-                <th>fi</th>
-                <th>xi</th>
-                <th>fixi</th>
-            </tr>
-            <tr>
-                <td>0.00-0.04</td>
-                <td>4</td>
-                <td>0.02</td>
-                <td>0.08</td>
-            </tr>
-            <tr>
-                <td>0.04-0.08</td>
-                <td>9</td>
-                <td>0.06</td>
-                <td>0.54</td>
-            </tr>
-            <tr>
-                <td>0.08-0.12</td>
-                <td>9</td>
-                <td>0.10</td>
-                <td>0.90</td>
-            </tr>
-            <tr>
-                <td>0.12-0.16</td>
-                <td>2</td>
-                <td>0.14</td>
-                <td>0.28</td>
-            </tr>
-            <tr>
-                <td>0.16-0.20</td>
-                <td>4</td>
-                <td>0.18</td>
-                <td>0.72</td>
-            </tr>
-            <tr>
-                <td>0.20-0.24</td>
-                <td>2</td>
-                <td>0.22</td>
-                <td>0.44</td>
-            </tr>
-            <tr>
-                <th>Total</th>
-                <th>30</th>
-                <th></th>
-                <th>2.96</th>
-            </tr>
-        </table>
-        <div class="step">Mean = 2.96 / 30 = 0.0986... ≈ 0.099 ppm.</div>
-        <div class="final-answer">Mean = 0.099 ppm.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">8. A class teacher has the following absentee record... Find the mean number of days.
-        </div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjUwIiB5PSI0OS45OTk5OTk5OTk5OTk5NyIgd2lkdGg9IjQwIiBoZWlnaHQ9IjIwMC4wMDAwMDAwMDAwMDAwMyIgZmlsbD0iI2M1Y2FlOSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHJlY3QgeD0iOTAiIHk9IjY4LjE4MTgxODE4MTgxODE2IiB3aWR0aD0iNDAiIGhlaWdodD0iMTgxLjgxODE4MTgxODE4MTg0IiBmaWxsPSIjYzVjYWU5IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48cmVjdCB4PSIxMzAiIHk9IjEyMi43MjcyNzI3MjcyNzI3MiIgd2lkdGg9IjQwIiBoZWlnaHQ9IjEyNy4yNzI3MjcyNzI3MjcyOCIgZmlsbD0iI2M1Y2FlOSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHJlY3QgeD0iMTcwIiB5PSIxNzcuMjcyNzI3MjcyNzI3MjUiIHdpZHRoPSI0MCIgaGVpZ2h0PSI3Mi43MjcyNzI3MjcyNzI3MyIgZmlsbD0iI2M1Y2FlOSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHJlY3QgeD0iMjEwIiB5PSIxNzcuMjcyNzI3MjcyNzI3MjUiIHdpZHRoPSI0MCIgaGVpZ2h0PSI3Mi43MjcyNzI3MjcyNzI3MyIgZmlsbD0iI2M1Y2FlOSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHJlY3QgeD0iMjUwIiB5PSIxOTUuNDU0NTQ1NDU0NTQ1NDQiIHdpZHRoPSI0MCIgaGVpZ2h0PSI1NC41NDU0NTQ1NDU0NTQ1NSIgZmlsbD0iI2M1Y2FlOSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHJlY3QgeD0iMjkwIiB5PSIyMzEuODE4MTgxODE4MTgxOCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjE4LjE4MTgxODE4MTgxODE4MyIgZmlsbD0iI2M1Y2FlOSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PGxpbmUgeDE9IjQwIiB5MT0iMjUwIiB4Mj0iMzUwIiB5Mj0iMjUwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48dGV4dCB4PSIyMDAiIHk9IjI4MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+U3R1ZGVudCBBYnNlbnRlZXM8L3RleHQ+PC9zdmc+" alt="Absentee Data">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Class sizes are unequal (6, 4, 4, 6, 8, 10, 2). Use Direct Method.</div>
-        <table>
-            <tr>
-                <th>Class</th>
-                <th>fi</th>
-                <th>xi</th>
-                <th>fixi</th>
-            </tr>
-            <tr>
-                <td>0-6</td>
-                <td>11</td>
-                <td>3</td>
-                <td>33</td>
-            </tr>
-            <tr>
-                <td>6-10</td>
-                <td>10</td>
-                <td>8</td>
-                <td>80</td>
-            </tr>
-            <tr>
-                <td>10-14</td>
-                <td>7</td>
-                <td>12</td>
-                <td>84</td>
-            </tr>
-            <tr>
-                <td>14-20</td>
-                <td>4</td>
-                <td>17</td>
-                <td>68</td>
-            </tr>
-            <tr>
-                <td>20-28</td>
-                <td>4</td>
-                <td>24</td>
-                <td>96</td>
-            </tr>
-            <tr>
-                <td>28-38</td>
-                <td>3</td>
-                <td>33</td>
-                <td>99</td>
-            </tr>
-            <tr>
-                <td>38-40</td>
-                <td>1</td>
-                <td>39</td>
-                <td>39</td>
-            </tr>
-            <tr>
-                <th>Total</th>
-                <th>40</th>
-                <th></th>
-                <th>499</th>
-            </tr>
-        </table>
-        <div class="step">Mean = 499 / 40 = 12.475.</div>
-        <div class="final-answer">Mean = 12.48 days.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">9. The following table gives the literacy rate... Find the mean literacy rate.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjUwIiB5PSIyMjcuNzc3Nzc3Nzc3Nzc3NzciIHdpZHRoPSI1MCIgaGVpZ2h0PSIyMi4yMjIyMjIyMjIyMjIyMiIgZmlsbD0iI2ZmZTBiMiIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHJlY3QgeD0iMTAwIiB5PSI4Ny4wMzcwMzcwMzcwMzcwNCIgd2lkdGg9IjUwIiBoZWlnaHQ9IjE2Mi45NjI5NjI5NjI5NjI5NiIgZmlsbD0iI2ZmZTBiMiIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHJlY3QgeD0iMTUwIiB5PSI1MC4wIiB3aWR0aD0iNTAiIGhlaWdodD0iMjAwLjAiIGZpbGw9IiNmZmUwYjIiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjxyZWN0IHg9IjIwMCIgeT0iNzkuNjI5NjI5NjI5NjI5NjUiIHdpZHRoPSI1MCIgaGVpZ2h0PSIxNzAuMzcwMzcwMzcwMzcwMzUiIGZpbGw9IiNmZmUwYjIiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjxyZWN0IHg9IjI1MCIgeT0iMjEyLjk2Mjk2Mjk2Mjk2Mjk2IiB3aWR0aD0iNTAiIGhlaWdodD0iMzcuMDM3MDM3MDM3MDM3MDQiIGZpbGw9IiNmZmUwYjIiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjxsaW5lIHgxPSI0MCIgeTE9IjI1MCIgeDI9IjM1MCIgeTI9IjI1MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+PHRleHQgeD0iMjAwIiB5PSIyODAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPk1hbmdvZXMgUGFja2luZzwvdGV4dD48L3N2Zz4=" alt="Literacy Data">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Step Deviation. a = 70, h = 10.</div>
-        <table>
-            <tr>
-                <th>Class</th>
-                <th>fi</th>
-                <th>xi</th>
-                <th>ui</th>
-                <th>fiui</th>
-            </tr>
-            <tr>
-                <td>45-55</td>
-                <td>3</td>
-                <td>50</td>
-                <td>-2</td>
-                <td>-6</td>
-            </tr>
-            <tr>
-                <td>55-65</td>
-                <td>10</td>
-                <td>60</td>
-                <td>-1</td>
-                <td>-10</td>
-            </tr>
-            <tr>
-                <td>65-75</td>
-                <td>11</td>
-                <td>70</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>75-85</td>
-                <td>8</td>
-                <td>80</td>
-                <td>1</td>
-                <td>8</td>
-            </tr>
-            <tr>
-                <td>85-95</td>
-                <td>3</td>
-                <td>90</td>
-                <td>2</td>
-                <td>6</td>
-            </tr>
-            <tr>
-                <th>Total</th>
-                <th>35</th>
-                <th></th>
-                <th></th>
-                <th>-2</th>
-            </tr>
-        </table>
-        <div class="step">Mean = 70 + (-2/35) × 10 = 70 - 0.57 = 69.43.</div>
-        <div class="final-answer">Mean = 69.43 %.</div>
-    </div>
-
-</body>
-
-</html>`,
-        exercise2: `<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Statistics - Exercise 13.2 (Mode)</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
-
-        body {
-            font-family: 'Kalam', cursive;
-            margin: 0;
-            padding: 15px;
-            background: #fff;
-            color: #333;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #6C63FF;
-            padding-bottom: 10px;
-            font-family: 'Nunito', sans-serif;
-        }
-
-        .logo {
-            color: #6C63FF;
-            font-size: 24px;
-            font-weight: 800;
-        }
-
-        .chapter-title {
-            text-align: center;
-            color: #333;
-            font-size: 20px;
-            font-weight: 700;
-            margin: 10px 0;
-            font-family: 'Kalam', cursive;
-        }
-
-        .content-box { background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px; padding: 15px; margin-bottom: 15px; display: flow-root; transition: transform 0.2s ease; }
-
-        .question {
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: #333;
-        }
-
-        .step {
-            margin-bottom: 8px;
-            font-size: 1.1em;
-            color: #000;
-            line-height: 1.5;
-        }
-
-        .final-answer {
-            color: #2E7D32;
-            font-weight: 700;
-            margin-top: 10px;
-            font-size: 1.2em;
-        }
-
-        
-
-        .solution-header {
-            color: #2E7D32;
-            font-weight: 700;
-            margin-bottom: 5px;
-        }
-
-        .formula {
-            background: #e0f2f1;
-            padding: 5px;
-            border-radius: 4px;
-            font-family: monospace;
-            display: inline-block;
-        }
-    
-
-
-img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; height: auto; border: 1px solid #ddd; border-radius: 6px; padding: 5px; background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-@media (max-width: 600px) { img { float: none; display: block; margin: 10px auto; max-width: 100%; } }
-</style>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    renderMathInElement(document.body, {
-      delimiters: [
-        {left: '\\\\(', right: '\\\\)', display: false},
-        {left: '\\\\[', right: '\\\\]', display: true}
-      ]
-    });
-  });
-</script>
-
-<style>
-  body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
-  .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #42A5F5 !important; color: #fff !important; }
-  h1, h2, h3, h4, h5, h6 { color: #42A5F5 !important; }
-  .question { color: #42A5F5 !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
-  .formula { color: #4CAF50 !important; }
-  .true-text { color: #4CAF50 !important; }
-  .false-text { color: #F44336 !important; }
-  table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
-  .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
-  img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #42A5F5 !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
-  * { font-family: 'Noto Sans', sans-serif !important; }
-
-  .question { font-size: 0.95em !important; }
-  .sub-question { font-size: 0.9em !important; }
-  .step { font-size: 0.9em !important; }
-  .final-answer { font-size: 0.95em !important; }
-</style>
-</head>
-
-<body>
-
-    
-
-    <div class="content-box">
-        <div class="question">1. The following table shows the ages of the patients admitted in a hospital during a
-            year... Find the mode and the mean of the data given above.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjUwIiB5PSIxOTcuODI2MDg2OTU2NTIxNzUiIHdpZHRoPSI0MCIgaGVpZ2h0PSI1Mi4xNzM5MTMwNDM0NzgyNiIgZmlsbD0iI2UwZTBlMCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iNzAiIHk9IjE5Mi44MjYwODY5NTY1MjE3NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NjwvdGV4dD48cmVjdCB4PSI5MCIgeT0iMTU0LjM0NzgyNjA4Njk1NjUzIiB3aWR0aD0iNDAiIGhlaWdodD0iOTUuNjUyMTczOTEzMDQzNDciIGZpbGw9IiNlMGUwZTAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjExMCIgeT0iMTQ5LjM0NzgyNjA4Njk1NjUzIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xMTwvdGV4dD48cmVjdCB4PSIxMzAiIHk9IjY3LjM5MTMwNDM0NzgyNjEiIHdpZHRoPSI0MCIgaGVpZ2h0PSIxODIuNjA4Njk1NjUyMTczOSIgZmlsbD0iI2UwZTBlMCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iMTUwIiB5PSI2Mi4zOTEzMDQzNDc4MjYwOSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MjE8L3RleHQ+PHJlY3QgeD0iMTcwIiB5PSI1MC4wIiB3aWR0aD0iNDAiIGhlaWdodD0iMjAwLjAiIGZpbGw9IiNmZmNjYmMiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjE5MCIgeT0iNDUuMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MjM8L3RleHQ+PHJlY3QgeD0iMjEwIiB5PSIxMjguMjYwODY5NTY1MjE3NCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjEyMS43MzkxMzA0MzQ3ODI2IiBmaWxsPSIjZTBlMGUwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48dGV4dCB4PSIyMzAiIHk9IjEyMy4yNjA4Njk1NjUyMTc0IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xNDwvdGV4dD48cmVjdCB4PSIyNTAiIHk9IjIwNi41MjE3MzkxMzA0MzQ3OCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQzLjQ3ODI2MDg2OTU2NTIyIiBmaWxsPSIjZTBlMGUwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48dGV4dCB4PSIyNzAiIHk9IjIwMS41MjE3MzkxMzA0MzQ3OCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NTwvdGV4dD48bGluZSB4MT0iNDAiIHkxPSIyNTAiIHgyPSIzNTAiIHkyPSIyNTAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjx0ZXh0IHg9IjIwMCIgeT0iMjgwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5QYXRpZW50IEFnZXMgKE1vZGUgSGlnaGxpZ2h0ZWQpPC90ZXh0Pjwvc3ZnPg==" alt="Patient Ages Chart">
-        <div class="solution-header">Solution:</div>
-        <div class="step">For Mode: Maximum frequency is 23 (Class 35-45).</div>
-        <div class="step">Modal Class = 35-45.</div>
-        <div class="step">l = 35, h = 10, f₁ = 23, f₀ = 21, f₂ = 14.</div>
-        <div class="formula">Mode = l + [(f₁ - f₀)/(2f₁ - f₀ - f₂)] × h</div>
-        <div class="step">= 35 + [(23 - 21)/(46 - 21 - 14)] × 10</div>
-        <div class="step">= 35 + [2/11] × 10 = 35 + 1.81 = 36.8.</div>
-        <div class="step">For Mean (Step Deviation): Mean = 35.37 years.</div>
-        <div class="final-answer">Mode = 36.8 years, Mean = 35.37 years.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">2. The following data gives the information on the observed lifetimes (in hours) of 225
-            electrical components... Determine the modal lifetimes of the components.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjUwIiB5PSIyMTcuMjEzMTE0NzU0MDk4MzQiIHdpZHRoPSI0MCIgaGVpZ2h0PSIzMi43ODY4ODUyNDU5MDE2NDQiIGZpbGw9IiNlMGUwZTAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjxyZWN0IHg9IjkwIiB5PSIxMzUuMjQ1OTAxNjM5MzQ0MjUiIHdpZHRoPSI0MCIgaGVpZ2h0PSIxMTQuNzU0MDk4MzYwNjU1NzUiIGZpbGw9IiNlMGUwZTAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjxyZWN0IHg9IjEzMCIgeT0iNzkuNTA4MTk2NzIxMzExNDYiIHdpZHRoPSI0MCIgaGVpZ2h0PSIxNzAuNDkxODAzMjc4Njg4NTQiIGZpbGw9IiNlMGUwZTAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjxyZWN0IHg9IjE3MCIgeT0iNTAuMCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjIwMC4wIiBmaWxsPSIjYjNlNWZjIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48cmVjdCB4PSIyMTAiIHk9IjEyNS40MDk4MzYwNjU1NzM3NyIgd2lkdGg9IjQwIiBoZWlnaHQ9IjEyNC41OTAxNjM5MzQ0MjYyMyIgZmlsbD0iI2UwZTBlMCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHJlY3QgeD0iMjUwIiB5PSIxNTQuOTE4MDMyNzg2ODg1MjUiIHdpZHRoPSI0MCIgaGVpZ2h0PSI5NS4wODE5NjcyMTMxMTQ3NSIgZmlsbD0iI2UwZTBlMCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PGxpbmUgeDE9IjQwIiB5MT0iMjUwIiB4Mj0iMzUwIiB5Mj0iMjUwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48dGV4dCB4PSIyMDAiIHk9IjI4MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Q29tcG9uZW50IExpZmV0aW1lczwvdGV4dD48L3N2Zz4=" alt="Component Lifetimes Chart">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Max frequency is 61 (Class 60-80).</div>
-        <div class="step">l = 60, h = 20, f₁ = 61, f₀ = 52, f₂ = 38.</div>
-        <div class="step">Mode = 60 + [(61 - 52)/(122 - 52 - 38)] × 20</div>
-        <div class="step">= 60 + [9 / 32] × 20</div>
-        <div class="step">= 60 + 5.625 = 65.625.</div>
-        <div class="final-answer">Modal Lifetime = 65.625 hours.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">3. The following data gives the distribution of total monthly household expenditure of 200
-            families... Find the modal monthly expenditure of the families. Also, find the mean monthly expenditure.
-        </div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjQwIiB5PSIxMzAuMCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjEyMC4wIiBmaWxsPSIjZTBlMGUwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48cmVjdCB4PSI4MCIgeT0iNTAuMCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjIwMC4wIiBmaWxsPSIjZGNlZGM4IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48cmVjdCB4PSIxMjAiIHk9Ijg1LjAiIHdpZHRoPSI0MCIgaGVpZ2h0PSIxNjUuMCIgZmlsbD0iI2UwZTBlMCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHJlY3QgeD0iMTYwIiB5PSIxMTAuMCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjE0MC4wIiBmaWxsPSIjZTBlMGUwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48cmVjdCB4PSIyMDAiIHk9IjEwMC4wIiB3aWR0aD0iNDAiIGhlaWdodD0iMTUwLjAiIGZpbGw9IiNlMGUwZTAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjxyZWN0IHg9IjI0MCIgeT0iMTQwLjAiIHdpZHRoPSI0MCIgaGVpZ2h0PSIxMTAuMCIgZmlsbD0iI2UwZTBlMCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHJlY3QgeD0iMjgwIiB5PSIxNzAuMCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjgwLjAiIGZpbGw9IiNlMGUwZTAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjxyZWN0IHg9IjMyMCIgeT0iMjE1LjAiIHdpZHRoPSI0MCIgaGVpZ2h0PSIzNS4wIiBmaWxsPSIjZTBlMGUwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48bGluZSB4MT0iMzAiIHkxPSIyNTAiIHgyPSIzODAiIHkyPSIyNTAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjx0ZXh0IHg9IjIwMCIgeT0iMjgwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5Ib3VzZWhvbGQgRXhwIChNb2RlKTwvdGV4dD48L3N2Zz4=" alt="Household Expenditure Chart">
-        <div class="solution-header">Solution:</div>
-        <div class="step">For Mode: Max freq = 40 (Class 1500-2000).</div>
-        <div class="step">Mode = 1500 + [(40-24)/(80-24-33)] × 500</div>
-        <div class="step">= 1500 + [16/23] × 500 = 1500 + 347.83 = 1847.83.</div>
-        <div class="step">For Mean: Using Step Deviation, Mean = 2662.5.</div>
-        <div class="final-answer">Mode = ₹ 1847.83, Mean = ₹ 2662.50.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">4. The following distribution gives the state-wise teacher-student ratio... Find the mode
-            and mean of this data.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjUwIiB5PSIyMTcuMjEzMTE0NzU0MDk4MzQiIHdpZHRoPSI0MCIgaGVpZ2h0PSIzMi43ODY4ODUyNDU5MDE2NDQiIGZpbGw9IiNlMGUwZTAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjxyZWN0IHg9IjkwIiB5PSIxMzUuMjQ1OTAxNjM5MzQ0MjUiIHdpZHRoPSI0MCIgaGVpZ2h0PSIxMTQuNzU0MDk4MzYwNjU1NzUiIGZpbGw9IiNlMGUwZTAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjxyZWN0IHg9IjEzMCIgeT0iNzkuNTA4MTk2NzIxMzExNDYiIHdpZHRoPSI0MCIgaGVpZ2h0PSIxNzAuNDkxODAzMjc4Njg4NTQiIGZpbGw9IiNlMGUwZTAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjxyZWN0IHg9IjE3MCIgeT0iNTAuMCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjIwMC4wIiBmaWxsPSIjYjNlNWZjIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48cmVjdCB4PSIyMTAiIHk9IjEyNS40MDk4MzYwNjU1NzM3NyIgd2lkdGg9IjQwIiBoZWlnaHQ9IjEyNC41OTAxNjM5MzQ0MjYyMyIgZmlsbD0iI2UwZTBlMCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHJlY3QgeD0iMjUwIiB5PSIxNTQuOTE4MDMyNzg2ODg1MjUiIHdpZHRoPSI0MCIgaGVpZ2h0PSI5NS4wODE5NjcyMTMxMTQ3NSIgZmlsbD0iI2UwZTBlMCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PGxpbmUgeDE9IjQwIiB5MT0iMjUwIiB4Mj0iMzUwIiB5Mj0iMjUwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48dGV4dCB4PSIyMDAiIHk9IjI4MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Q29tcG9uZW50IExpZmV0aW1lczwvdGV4dD48L3N2Zz4=" alt="Teacher Ratio Chart">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Mode: Max freq = 10 (Class 30-35).</div>
-        <div class="step">Mode = 30 + [(10-9)/(20-9-3)] × 5</div>
-        <div class="step">= 30 + [1/8] × 5 = 30 + 0.625 = 30.6.</div>
-        <div class="step">Mean = 29.2.</div>
-        <div class="final-answer">Mode = 30.6, Mean = 29.2.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">5. The given distribution shows the number of runs scored by some top batsmen of the world
-            in one-day international cricket matches. Find the mode of the data.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjUwIiB5PSIxOTcuODI2MDg2OTU2NTIxNzUiIHdpZHRoPSI0MCIgaGVpZ2h0PSI1Mi4xNzM5MTMwNDM0NzgyNiIgZmlsbD0iI2UwZTBlMCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iNzAiIHk9IjE5Mi44MjYwODY5NTY1MjE3NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NjwvdGV4dD48cmVjdCB4PSI5MCIgeT0iMTU0LjM0NzgyNjA4Njk1NjUzIiB3aWR0aD0iNDAiIGhlaWdodD0iOTUuNjUyMTczOTEzMDQzNDciIGZpbGw9IiNlMGUwZTAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjExMCIgeT0iMTQ5LjM0NzgyNjA4Njk1NjUzIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xMTwvdGV4dD48cmVjdCB4PSIxMzAiIHk9IjY3LjM5MTMwNDM0NzgyNjEiIHdpZHRoPSI0MCIgaGVpZ2h0PSIxODIuNjA4Njk1NjUyMTczOSIgZmlsbD0iI2UwZTBlMCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iMTUwIiB5PSI2Mi4zOTEzMDQzNDc4MjYwOSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MjE8L3RleHQ+PHJlY3QgeD0iMTcwIiB5PSI1MC4wIiB3aWR0aD0iNDAiIGhlaWdodD0iMjAwLjAiIGZpbGw9IiNmZmNjYmMiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjE5MCIgeT0iNDUuMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MjM8L3RleHQ+PHJlY3QgeD0iMjEwIiB5PSIxMjguMjYwODY5NTY1MjE3NCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjEyMS43MzkxMzA0MzQ3ODI2IiBmaWxsPSIjZTBlMGUwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48dGV4dCB4PSIyMzAiIHk9IjEyMy4yNjA4Njk1NjUyMTc0IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xNDwvdGV4dD48cmVjdCB4PSIyNTAiIHk9IjIwNi41MjE3MzkxMzA0MzQ3OCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQzLjQ3ODI2MDg2OTU2NTIyIiBmaWxsPSIjZTBlMGUwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48dGV4dCB4PSIyNzAiIHk9IjIwMS41MjE3MzkxMzA0MzQ3OCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NTwvdGV4dD48bGluZSB4MT0iNDAiIHkxPSIyNTAiIHgyPSIzNTAiIHkyPSIyNTAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjx0ZXh0IHg9IjIwMCIgeT0iMjgwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5QYXRpZW50IEFnZXMgKE1vZGUgSGlnaGxpZ2h0ZWQpPC90ZXh0Pjwvc3ZnPg==" alt="Batsmen Runs Chart">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Max freq = 18 (Class 4000-5000).</div>
-        <div class="step">Mode = 4000 + [(18 - 4)/(36 - 4 - 9)] × 1000</div>
-        <div class="step">= 4000 + [14/23] × 1000</div>
-        <div class="step">= 4000 + 608.69 = 4608.7.</div>
-        <div class="final-answer">Mode = 4608.7 runs.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">6. A student noted the number of cars passing through a spot on a road for 100 periods
-            each of 3 minutes and summarised it in the table given below. Find the mode of the data.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjUwIiB5PSIyMTcuMjEzMTE0NzU0MDk4MzQiIHdpZHRoPSI0MCIgaGVpZ2h0PSIzMi43ODY4ODUyNDU5MDE2NDQiIGZpbGw9IiNlMGUwZTAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjxyZWN0IHg9IjkwIiB5PSIxMzUuMjQ1OTAxNjM5MzQ0MjUiIHdpZHRoPSI0MCIgaGVpZ2h0PSIxMTQuNzU0MDk4MzYwNjU1NzUiIGZpbGw9IiNlMGUwZTAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjxyZWN0IHg9IjEzMCIgeT0iNzkuNTA4MTk2NzIxMzExNDYiIHdpZHRoPSI0MCIgaGVpZ2h0PSIxNzAuNDkxODAzMjc4Njg4NTQiIGZpbGw9IiNlMGUwZTAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjxyZWN0IHg9IjE3MCIgeT0iNTAuMCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjIwMC4wIiBmaWxsPSIjYjNlNWZjIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48cmVjdCB4PSIyMTAiIHk9IjEyNS40MDk4MzYwNjU1NzM3NyIgd2lkdGg9IjQwIiBoZWlnaHQ9IjEyNC41OTAxNjM5MzQ0MjYyMyIgZmlsbD0iI2UwZTBlMCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHJlY3QgeD0iMjUwIiB5PSIxNTQuOTE4MDMyNzg2ODg1MjUiIHdpZHRoPSI0MCIgaGVpZ2h0PSI5NS4wODE5NjcyMTMxMTQ3NSIgZmlsbD0iI2UwZTBlMCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PGxpbmUgeDE9IjQwIiB5MT0iMjUwIiB4Mj0iMzUwIiB5Mj0iMjUwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48dGV4dCB4PSIyMDAiIHk9IjI4MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Q29tcG9uZW50IExpZmV0aW1lczwvdGV4dD48L3N2Zz4=" alt="Car Data Chart">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Max freq = 20 (Class 40-50).</div>
-        <div class="step">Mode = 40 + [(20-12)/(40-12-11)] × 10</div>
-        <div class="step">= 40 + [8/17] × 10 = 40 + 4.7 = 44.7.</div>
-        <div class="final-answer">Mode = 44.7 cars.</div>
-    </div>
-
-</body>
-
-</html>`,
-        exercise3: `<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Statistics - Exercise 13.3 (Median)</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
-
-        body {
-            font-family: 'Kalam', cursive;
-            margin: 0;
-            padding: 15px;
-            background: #fff;
-            color: #333;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #6C63FF;
-            padding-bottom: 10px;
-            font-family: 'Nunito', sans-serif;
-        }
-
-        .logo {
-            color: #6C63FF;
-            font-size: 24px;
-            font-weight: 800;
-        }
-
-        .chapter-title {
-            text-align: center;
-            color: #333;
-            font-size: 20px;
-            font-weight: 700;
-            margin: 10px 0;
-            font-family: 'Kalam', cursive;
-        }
-
-        .content-box { background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px; padding: 15px; margin-bottom: 15px; display: flow-root; transition: transform 0.2s ease; }
-
-        .question {
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: #333;
-        }
-
-        .step {
-            margin-bottom: 8px;
-            font-size: 1.1em;
-            color: #000;
-            line-height: 1.5;
-        }
-
-        .final-answer {
-            color: #2E7D32;
-            font-weight: 700;
-            margin-top: 10px;
-            font-size: 1.2em;
-        }
-
-        
-
-        .solution-header {
-            color: #2E7D32;
-            font-weight: 700;
-            margin-bottom: 5px;
-        }
-
-        table { width: auto; min-width: 60%; margin: 15px auto; border-collapse: collapse; font-family: 'Nunito', sans-serif; font-size: 0.9em; box-shadow: 0 2px 5px rgba(0,0,0,0.1); background: white; border-radius: 4px; overflow: hidden; }
-
-        th, td { border: 1px solid #ddd; padding: 5px; text-align: center; font-size: 0.95em; }
-
-        th { background-color: #e8f5e9; color: #2E7D32; font-weight: 700; padding: 8px; border: 1px solid #ddd; text-align: center; }
-    
-
-
-img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; height: auto; border: 1px solid #ddd; border-radius: 6px; padding: 5px; background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-@media (max-width: 600px) { img { float: none; display: block; margin: 10px auto; max-width: 100%; } }
-</style>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    renderMathInElement(document.body, {
-      delimiters: [
-        {left: '\\\\(', right: '\\\\)', display: false},
-        {left: '\\\\[', right: '\\\\]', display: true}
-      ]
-    });
-  });
-</script>
-
-<style>
-  body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
-  .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #42A5F5 !important; color: #fff !important; }
-  h1, h2, h3, h4, h5, h6 { color: #42A5F5 !important; }
-  .question { color: #42A5F5 !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
-  .formula { color: #4CAF50 !important; }
-  .true-text { color: #4CAF50 !important; }
-  .false-text { color: #F44336 !important; }
-  table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
-  .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
-  img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #42A5F5 !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
-  * { font-family: 'Noto Sans', sans-serif !important; }
-
-  .question { font-size: 0.95em !important; }
-  .sub-question { font-size: 0.9em !important; }
-  .step { font-size: 0.9em !important; }
-  .final-answer { font-size: 0.95em !important; }
-</style>
-</head>
-
-<body>
-
-    
-
-    <div class="content-box">
-        <div class="question">1. The following frequency distribution gives the monthly consumption of electricity of 68
-            consumers... Find the median, mean and mode of the data and compare them.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxsaW5lIHgxPSI0MCIgeTE9IjI1MCIgeDI9IjM1MCIgeTI9IjI1MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+PGxpbmUgeDE9IjQwIiB5MT0iMjUwIiB4Mj0iNDAiIHkyPSI1MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+PHBhdGggZD0iTSA0MCAyNTAgUSAxMDAgMjQwIDE1MCAxNTAgVCAzNTAgNTAiIHN0cm9rZT0iYmx1ZSIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIyIi8+PHRleHQgeD0iMjAwIiB5PSIzMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Q3VtdWxhdGl2ZSBGcmVxdWVuY3kgQ3VydmU8L3RleHQ+PGxpbmUgeDE9IjQwIiB5MT0iMTUwIiB4Mj0iMTUwIiB5Mj0iMTUwIiBzdHJva2U9InJlZCIgc3Ryb2tlLWRhc2hhcnJheT0iNCIvPjxsaW5lIHgxPSIxNTAiIHkxPSIxNTAiIHgyPSIxNTAiIHkyPSIyNTAiIHN0cm9rZT0icmVkIiBzdHJva2UtZGFzaGFycmF5PSI0Ii8+PHRleHQgeD0iMTUwIiB5PSIyNzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0icmVkIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5NZWRpYW48L3RleHQ+PC9zdmc+" alt="Cumulative Frequency Curve">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Median:</div>
-        <table>
-            <tr>
-                <th>Class</th>
-                <th>Freq (f)</th>
-                <th>Cum. Freq (cf)</th>
-            </tr>
-            <tr>
-                <td>65-85</td>
-                <td>4</td>
-                <td>4</td>
-            </tr>
-            <tr>
-                <td>85-105</td>
-                <td>5</td>
-                <td>9</td>
-            </tr>
-            <tr>
-                <td>105-125</td>
-                <td>13</td>
-                <td>22</td>
-            </tr>
-            <tr>
-                <td>125-145</td>
-                <td>20</td>
-                <td>42</td>
-            </tr>
-            <tr>
-                <td>145-165</td>
-                <td>14</td>
-                <td>56</td>
-            </tr>
-            <tr>
-                <td>165-185</td>
-                <td>8</td>
-                <td>64</td>
-            </tr>
-            <tr>
-                <td>185-205</td>
-                <td>4</td>
-                <td>68</td>
-            </tr>
-        </table>
-        <div class="step">n = 68 => n/2 = 34.</div>
-        <div class="step">Class containing cf=34 is 125-145 (since 42 > 34).</div>
-        <div class="step">l = 125, cf = 22, f = 20, h = 20.</div>
-        <div class="step">Median = 125 + [(34-22)/20] × 20</div>
-        <div class="step">= 125 + 12 = 137 units.</div>
-        <div class="step">Mean = 137.05 units. Mode = 135.76 units.</div>
-        <div class="final-answer">Median = 137, Mean = 137.05, Mode = 135.76.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">2. If the median of the distribution given below is 28.5, find the values of x and y.
-        </div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjUwIiB5PSI1MCIgd2lkdGg9IjMwMCIgaGVpZ2h0PSIzMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHJlY3QgeD0iNTAiIHk9IjgwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwIiBmaWxsPSJub25lIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48cmVjdCB4PSI1MCIgeT0iMTEwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwIiBmaWxsPSJub25lIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48cmVjdCB4PSI1MCIgeT0iMTQwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwIiBmaWxsPSJub25lIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48cmVjdCB4PSI1MCIgeT0iMTcwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwIiBmaWxsPSJub25lIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48cmVjdCB4PSI1MCIgeT0iMjAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwIiBmaWxsPSJub25lIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48cmVjdCB4PSI1MCIgeT0iMjMwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwIiBmaWxsPSJub25lIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48dGV4dCB4PSIyMDAiIHk9IjQwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5GcmVxdWVuY3kgVGFibGUgd2l0aCBNaXNzaW5nIFZhbHVlczwvdGV4dD48L3N2Zz4=" alt="Table Visual">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Total n = 60.</div>
-        <table>
-            <tr>
-                <th>Class</th>
-                <th>Freq</th>
-                <th>cf</th>
-            </tr>
-            <tr>
-                <td>0-10</td>
-                <td>5</td>
-                <td>5</td>
-            </tr>
-            <tr>
-                <td>10-20</td>
-                <td>x</td>
-                <td>5+x</td>
-            </tr>
-            <tr>
-                <td>20-30</td>
-                <td>20</td>
-                <td>25+x</td>
-            </tr>
-            <tr>
-                <td>30-40</td>
-                <td>15</td>
-                <td>40+x</td>
-            </tr>
-            <tr>
-                <td>40-50</td>
-                <td>y</td>
-                <td>40+x+y</td>
-            </tr>
-            <tr>
-                <td>50-60</td>
-                <td>5</td>
-                <td>45+x+y</td>
-            </tr>
-        </table>
-        <div class="step">45+x+y = 60 => x+y = 15.</div>
-        <div class="step">Median = 28.5. So Median Class is 20-30.</div>
-        <div class="step">l = 20, f = 20, cf = 5+x, h = 10, n/2 = 30.</div>
-        <div class="step">28.5 = 20 + [(30 - (5+x))/20] × 10</div>
-        <div class="step">8.5 = (25-x)/2</div>
-        <div class="step">17 = 25 - x => x = 8.</div>
-        <div class="step">x+y = 15 => 8+y=15 => y = 7.</div>
-        <div class="final-answer">x = 8, y = 7.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">3. A life insurance agent found the following data for distribution of ages... Calculate
-            the median age.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxsaW5lIHgxPSI0MCIgeTE9IjI1MCIgeDI9IjM1MCIgeTI9IjI1MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+PGxpbmUgeDE9IjQwIiB5MT0iMjUwIiB4Mj0iNDAiIHkyPSI1MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+PHBhdGggZD0iTSA0MCAyNTAgUSAxMDAgMjQwIDE1MCAxNTAgVCAzNTAgNTAiIHN0cm9rZT0iYmx1ZSIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIyIi8+PHRleHQgeD0iMjAwIiB5PSIzMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Q3VtdWxhdGl2ZSBGcmVxdWVuY3kgQ3VydmU8L3RleHQ+PGxpbmUgeDE9IjQwIiB5MT0iMTUwIiB4Mj0iMTUwIiB5Mj0iMTUwIiBzdHJva2U9InJlZCIgc3Ryb2tlLWRhc2hhcnJheT0iNCIvPjxsaW5lIHgxPSIxNTAiIHkxPSIxNTAiIHgyPSIxNTAiIHkyPSIyNTAiIHN0cm9rZT0icmVkIiBzdHJva2UtZGFzaGFycmF5PSI0Ii8+PHRleHQgeD0iMTUwIiB5PSIyNzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0icmVkIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5NZWRpYW48L3RleHQ+PC9zdmc+" alt="Cumulative Frequency">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Values are "Below x". Convert to frequency distribution.</div>
-        <table>
-            <tr>
-                <th>Class</th>
-                <th>Below cf</th>
-                <th>Freq (f)</th>
-            </tr>
-            <tr>
-                <td>15-20</td>
-                <td>2</td>
-                <td>2</td>
-            </tr>
-            <tr>
-                <td>20-25</td>
-                <td>6</td>
-                <td>4</td>
-            </tr>
-            <tr>
-                <td>25-30</td>
-                <td>24</td>
-                <td>18</td>
-            </tr>
-            <tr>
-                <td>30-35</td>
-                <td>45</td>
-                <td>21</td>
-            </tr>
-            <tr>
-                <td>35-40</td>
-                <td>78</td>
-                <td>33</td>
-            </tr>
-            <tr>
-                <td>40-45</td>
-                <td>89</td>
-                <td>11</td>
-            </tr>
-            <tr>
-                <td>45-50</td>
-                <td>92</td>
-                <td>3</td>
-            </tr>
-            <tr>
-                <td>50-55</td>
-                <td>98</td>
-                <td>6</td>
-            </tr>
-            <tr>
-                <td>55-60</td>
-                <td>100</td>
-                <td>2</td>
-            </tr>
-        </table>
-        <div class="step">n = 100, n/2 = 50.</div>
-        <div class="step">Median Class (cf > 50) is 35-40.</div>
-        <div class="step">l = 35, cf = 45, f = 33, h = 5.</div>
-        <div class="step">Median = 35 + [(50-45)/33] × 5</div>
-        <div class="step">= 35 + (5/33) × 5 = 35 + 25/33 = 35 + 0.76.</div>
-        <div class="final-answer">Median Age = 35.76 years.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">4. The lengths of 40 leaves of a plant are measured correct to the nearest millimetre...
-            Find the median length of the leaves.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjUwIiB5PSIyMTYuNjY2NjY2NjY2NjY2NjYiIHdpZHRoPSI0MCIgaGVpZ2h0PSIzMy4zMzMzMzMzMzMzMzMzMzYiIGZpbGw9IiNjOGU2YzkiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjcwIiB5PSIyMTEuNjY2NjY2NjY2NjY2NjYiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjE8L3RleHQ+PHRleHQgeD0iNzAiIHk9IjI2NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjgiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4wLTI8L3RleHQ+PHJlY3QgeD0iOTAiIHk9IjE4My4zMzMzMzMzMzMzMzMzMSIgd2lkdGg9IjQwIiBoZWlnaHQ9IjY2LjY2NjY2NjY2NjY2NjY3IiBmaWxsPSIjYzhlNmM5IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48dGV4dCB4PSIxMTAiIHk9IjE3OC4zMzMzMzMzMzMzMzMzMSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MjwvdGV4dD48dGV4dCB4PSIxMTAiIHk9IjI2NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjgiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4yLTQ8L3RleHQ+PHJlY3QgeD0iMTMwIiB5PSIyMTYuNjY2NjY2NjY2NjY2NjYiIHdpZHRoPSI0MCIgaGVpZ2h0PSIzMy4zMzMzMzMzMzMzMzMzMzYiIGZpbGw9IiNjOGU2YzkiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjE1MCIgeT0iMjExLjY2NjY2NjY2NjY2NjY2IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xPC90ZXh0Pjx0ZXh0IHg9IjE1MCIgeT0iMjY1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iOCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjQtNjwvdGV4dD48cmVjdCB4PSIxNzAiIHk9IjgzLjMzMzMzMzMzMzMzMzMxIiB3aWR0aD0iNDAiIGhlaWdodD0iMTY2LjY2NjY2NjY2NjY2NjY5IiBmaWxsPSIjYzhlNmM5IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48dGV4dCB4PSIxOTAiIHk9Ijc4LjMzMzMzMzMzMzMzMzMxIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj41PC90ZXh0Pjx0ZXh0IHg9IjE5MCIgeT0iMjY1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iOCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjYtODwvdGV4dD48cmVjdCB4PSIyMTAiIHk9IjUwLjAiIHdpZHRoPSI0MCIgaGVpZ2h0PSIyMDAuMCIgZmlsbD0iI2M4ZTZjOSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iMjMwIiB5PSI0NS4wIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj42PC90ZXh0Pjx0ZXh0IHg9IjIzMCIgeT0iMjY1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iOCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjgtMTA8L3RleHQ+PHJlY3QgeD0iMjUwIiB5PSIxODMuMzMzMzMzMzMzMzMzMzEiIHdpZHRoPSI0MCIgaGVpZ2h0PSI2Ni42NjY2NjY2NjY2NjY2NyIgZmlsbD0iI2M4ZTZjOSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iMjcwIiB5PSIxNzguMzMzMzMzMzMzMzMzMzEiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjI8L3RleHQ+PHRleHQgeD0iMjcwIiB5PSIyNjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSI4IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MTAtMTI8L3RleHQ+PHJlY3QgeD0iMjkwIiB5PSIxNTAuMCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjEwMC4wIiBmaWxsPSIjYzhlNmM5IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48dGV4dCB4PSIzMTAiIHk9IjE0NS4wIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4zPC90ZXh0Pjx0ZXh0IHg9IjMxMCIgeT0iMjY1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iOCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjEyLTE0PC90ZXh0PjxsaW5lIHgxPSI0MCIgeTE9IjI1MCIgeDI9IjM1MCIgeTI9IjI1MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+PGxpbmUgeDE9IjQwIiB5MT0iMjUwIiB4Mj0iNDAiIHkyPSIyMCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+PHRleHQgeD0iMjAwIiB5PSIyOTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPk51bWJlciBvZiBQbGFudHMgcGVyIEhvdXNlPC90ZXh0Pjwvc3ZnPg==" alt="Leaves Data">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Convert to continuous: 117.5-126.5 etc.</div>
-        <div class="step">n = 40, n/2 = 20.</div>
-        <div class="step">Median Class (144.5-153.5). cf = 17, f = 12. l = 144.5. h=9.</div>
-        <div class="step">Median = 144.5 + [(20-17)/12] × 9</div>
-        <div class="step">= 144.5 + (3/12) × 9 = 144.5 + 2.25 = 146.75.</div>
-        <div class="final-answer">Median Length = 146.75 mm.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">5. The following table gives the distribution of the life time of 400 neon lamps... Find
-            the median life time of a lamp.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjUwIiB5PSI3OC41NzE0Mjg1NzE0Mjg1NiIgd2lkdGg9IjUwIiBoZWlnaHQ9IjE3MS40Mjg1NzE0Mjg1NzE0NCIgZmlsbD0iI2ZmY2NiYyIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iNzUiIHk9IjczLjU3MTQyODU3MTQyODU2IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xMjwvdGV4dD48dGV4dCB4PSI3NSIgeT0iMjY1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iOCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjUwMC01MjA8L3RleHQ+PHJlY3QgeD0iMTAwIiB5PSI1MC4wIiB3aWR0aD0iNTAiIGhlaWdodD0iMjAwLjAiIGZpbGw9IiNmZmNjYmMiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjEyNSIgeT0iNDUuMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MTQ8L3RleHQ+PHRleHQgeD0iMTI1IiB5PSIyNjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSI4IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NTIwLTU0MDwvdGV4dD48cmVjdCB4PSIxNTAiIHk9IjEzNS43MTQyODU3MTQyODU3MiIgd2lkdGg9IjUwIiBoZWlnaHQ9IjExNC4yODU3MTQyODU3MTQyOSIgZmlsbD0iI2ZmY2NiYyIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iMTc1IiB5PSIxMzAuNzE0Mjg1NzE0Mjg1NzIiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjg8L3RleHQ+PHRleHQgeD0iMTc1IiB5PSIyNjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSI4IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NTQwLTU2MDwvdGV4dD48cmVjdCB4PSIyMDAiIHk9IjE2NC4yODU3MTQyODU3MTQyOCIgd2lkdGg9IjUwIiBoZWlnaHQ9Ijg1LjcxNDI4NTcxNDI4NTcyIiBmaWxsPSIjZmZjY2JjIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48dGV4dCB4PSIyMjUiIHk9IjE1OS4yODU3MTQyODU3MTQyOCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NjwvdGV4dD48dGV4dCB4PSIyMjUiIHk9IjI2NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjgiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj41NjAtNTgwPC90ZXh0PjxyZWN0IHg9IjI1MCIgeT0iMTA3LjE0Mjg1NzE0Mjg1NzE0IiB3aWR0aD0iNTAiIGhlaWdodD0iMTQyLjg1NzE0Mjg1NzE0Mjg2IiBmaWxsPSIjZmZjY2JjIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48dGV4dCB4PSIyNzUiIHk9IjEwMi4xNDI4NTcxNDI4NTcxNCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MTA8L3RleHQ+PHRleHQgeD0iMjc1IiB5PSIyNjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSI4IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NTgwLTYwMDwvdGV4dD48bGluZSB4MT0iNDAiIHkxPSIyNTAiIHgyPSIzNTAiIHkyPSIyNTAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjxsaW5lIHgxPSI0MCIgeTE9IjI1MCIgeDI9IjQwIiB5Mj0iMjAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjx0ZXh0IHg9IjIwMCIgeT0iMjkwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5EYWlseSBXYWdlcyBEaXN0cmlidXRpb248L3RleHQ+PC9zdmc+" alt="Lamps Data">
-        <div class="solution-header">Solution:</div>
-        <div class="step">n = 400, n/2 = 200.</div>
-        <div class="step">Median Class 3000-3500. cf = 130, f = 86, l = 3000, h = 500.</div>
-        <div class="step">Median = 3000 + [(200-130)/86] × 500</div>
-        <div class="step">= 3000 + (70/86) × 500 = 3000 + 406.98.</div>
-        <div class="final-answer">Median Lifetime = 3406.98 hours.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">6. 100 surnames were randomly picked from a local telephone directory... Determine the
-            median number of letters in the surnames. Find the mean number of letters in the surnames? Also, find the
-            modal size of the surnames.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjUwIiB5PSIxOTcuODI2MDg2OTU2NTIxNzUiIHdpZHRoPSI0MCIgaGVpZ2h0PSI1Mi4xNzM5MTMwNDM0NzgyNiIgZmlsbD0iI2UwZTBlMCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iNzAiIHk9IjE5Mi44MjYwODY5NTY1MjE3NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NjwvdGV4dD48cmVjdCB4PSI5MCIgeT0iMTU0LjM0NzgyNjA4Njk1NjUzIiB3aWR0aD0iNDAiIGhlaWdodD0iOTUuNjUyMTczOTEzMDQzNDciIGZpbGw9IiNlMGUwZTAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjExMCIgeT0iMTQ5LjM0NzgyNjA4Njk1NjUzIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xMTwvdGV4dD48cmVjdCB4PSIxMzAiIHk9IjY3LjM5MTMwNDM0NzgyNjEiIHdpZHRoPSI0MCIgaGVpZ2h0PSIxODIuNjA4Njk1NjUyMTczOSIgZmlsbD0iI2UwZTBlMCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iMTUwIiB5PSI2Mi4zOTEzMDQzNDc4MjYwOSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MjE8L3RleHQ+PHJlY3QgeD0iMTcwIiB5PSI1MC4wIiB3aWR0aD0iNDAiIGhlaWdodD0iMjAwLjAiIGZpbGw9IiNmZmNjYmMiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjE5MCIgeT0iNDUuMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MjM8L3RleHQ+PHJlY3QgeD0iMjEwIiB5PSIxMjguMjYwODY5NTY1MjE3NCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjEyMS43MzkxMzA0MzQ3ODI2IiBmaWxsPSIjZTBlMGUwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48dGV4dCB4PSIyMzAiIHk9IjEyMy4yNjA4Njk1NjUyMTc0IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xNDwvdGV4dD48cmVjdCB4PSIyNTAiIHk9IjIwNi41MjE3MzkxMzA0MzQ3OCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQzLjQ3ODI2MDg2OTU2NTIyIiBmaWxsPSIjZTBlMGUwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48dGV4dCB4PSIyNzAiIHk9IjIwMS41MjE3MzkxMzA0MzQ3OCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NTwvdGV4dD48bGluZSB4MT0iNDAiIHkxPSIyNTAiIHgyPSIzNTAiIHkyPSIyNTAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjx0ZXh0IHg9IjIwMCIgeT0iMjgwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5QYXRpZW50IEFnZXMgKE1vZGUgSGlnaGxpZ2h0ZWQpPC90ZXh0Pjwvc3ZnPg==" alt="Surnames Data">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Median: n=100, n/2=50. Class 7-10 (cf=76, f=40). Median = 8.05.</div>
-        <div class="step">Mean = 8.32.</div>
-        <div class="step">Mode: Class 7-10 (f=40). Mode = 7.88.</div>
-        <div class="final-answer">Median = 8.05, Mean = 8.32, Mode = 7.88.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">7. The distribution below gives the weights of 30 students of a class. Find the median
-            weight of the students.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxsaW5lIHgxPSI0MCIgeTE9IjI1MCIgeDI9IjM1MCIgeTI9IjI1MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+PGxpbmUgeDE9IjQwIiB5MT0iMjUwIiB4Mj0iNDAiIHkyPSI1MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+PHBhdGggZD0iTSA0MCAyNTAgUSAxMDAgMjQwIDE1MCAxNTAgVCAzNTAgNTAiIHN0cm9rZT0iYmx1ZSIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIyIi8+PHRleHQgeD0iMjAwIiB5PSIzMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Q3VtdWxhdGl2ZSBGcmVxdWVuY3kgQ3VydmU8L3RleHQ+PGxpbmUgeDE9IjQwIiB5MT0iMTUwIiB4Mj0iMTUwIiB5Mj0iMTUwIiBzdHJva2U9InJlZCIgc3Ryb2tlLWRhc2hhcnJheT0iNCIvPjxsaW5lIHgxPSIxNTAiIHkxPSIxNTAiIHgyPSIxNTAiIHkyPSIyNTAiIHN0cm9rZT0icmVkIiBzdHJva2UtZGFzaGFycmF5PSI0Ii8+PHRleHQgeD0iMTUwIiB5PSIyNzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0icmVkIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5NZWRpYW48L3RleHQ+PC9zdmc+" alt="Weight Data">
-        <div class="solution-header">Solution:</div>
-        <div class="step">n=30, n/2=15.</div>
-        <div class="step">Median Class 55-60. cf=13, f=6, l=55, h=5.</div>
-        <div class="step">Median = 55 + [(15-13)/6] × 5</div>
-        <div class="step">= 55 + (2/6) × 5 = 55 + 1.666 = 56.67.</div>
-        <div class="final-answer">Median Weight = 56.67 kg.</div>
-    </div>
-
-</body>
-
-</html>`,
-        examples: `<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Statistics - Examples</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
-
-        body {
-            font-family: 'Kalam', cursive;
-            margin: 0;
-            padding: 15px;
-            background: #fff;
-            color: #333;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #6C63FF;
-            padding-bottom: 10px;
-            font-family: 'Nunito', sans-serif;
-        }
-
-        .logo {
-            color: #6C63FF;
-            font-size: 24px;
-            font-weight: 800;
-        }
-
-        .chapter-title {
-            text-align: center;
-            color: #333;
-            font-size: 20px;
-            font-weight: 700;
-            margin: 10px 0;
-            font-family: 'Kalam', cursive;
-        }
-
-        .content-box { background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px; padding: 15px; margin-bottom: 15px; display: flow-root; transition: transform 0.2s ease; }
-
-        .question {
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: #333;
-        }
-
-        .step {
-            margin-bottom: 8px;
-            font-size: 1.1em;
-            color: #000;
-            line-height: 1.5;
-        }
-
-        .final-answer {
-            color: #2E7D32;
-            font-weight: 700;
-            margin-top: 10px;
-            font-size: 1.2em;
-        }
-
-        
-
-        .solution-header {
-            color: #2E7D32;
-            font-weight: 700;
-            margin-bottom: 5px;
-        }
-
-        table { width: auto; min-width: 60%; margin: 15px auto; border-collapse: collapse; font-family: 'Nunito', sans-serif; font-size: 0.9em; box-shadow: 0 2px 5px rgba(0,0,0,0.1); background: white; border-radius: 4px; overflow: hidden; }
-
-        th, td { border: 1px solid #ddd; padding: 5px; text-align: center; font-size: 0.95em; }
-
-        th { background-color: #e8f5e9; color: #2E7D32; font-weight: 700; padding: 8px; border: 1px solid #ddd; text-align: center; }
-    
-
-
-img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; height: auto; border: 1px solid #ddd; border-radius: 6px; padding: 5px; background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-@media (max-width: 600px) { img { float: none; display: block; margin: 10px auto; max-width: 100%; } }
-</style>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    renderMathInElement(document.body, {
-      delimiters: [
-        {left: '\\\\(', right: '\\\\)', display: false},
-        {left: '\\\\[', right: '\\\\]', display: true}
-      ]
-    });
-  });
-</script>
-
-<style>
-  body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
-  .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #42A5F5 !important; color: #fff !important; }
-  h1, h2, h3, h4, h5, h6 { color: #42A5F5 !important; }
-  .question { color: #42A5F5 !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
-  .formula { color: #4CAF50 !important; }
-  .true-text { color: #4CAF50 !important; }
-  .false-text { color: #F44336 !important; }
-  table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
-  .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
-  img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #42A5F5 !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
-  * { font-family: 'Noto Sans', sans-serif !important; }
-
-  .question { font-size: 0.95em !important; }
-  .sub-question { font-size: 0.9em !important; }
-  .step { font-size: 0.9em !important; }
-  .final-answer { font-size: 0.95em !important; }
-</style>
-</head>
-
-<body>
-
-    
-
-    <div class="content-box">
-        <div class="question">Example 1. The marks obtained by 30 students of Class X of a certain school in a
-            Mathematics paper consisting of 100 marks are presented in the table below. Find the mean of the marks
-            obtained by the students.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjUwIiB5PSIyMTYuNjY2NjY2NjY2NjY2NjYiIHdpZHRoPSI0MCIgaGVpZ2h0PSIzMy4zMzMzMzMzMzMzMzMzMzYiIGZpbGw9IiNjOGU2YzkiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjcwIiB5PSIyMTEuNjY2NjY2NjY2NjY2NjYiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjE8L3RleHQ+PHRleHQgeD0iNzAiIHk9IjI2NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjgiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4wLTI8L3RleHQ+PHJlY3QgeD0iOTAiIHk9IjE4My4zMzMzMzMzMzMzMzMzMSIgd2lkdGg9IjQwIiBoZWlnaHQ9IjY2LjY2NjY2NjY2NjY2NjY3IiBmaWxsPSIjYzhlNmM5IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48dGV4dCB4PSIxMTAiIHk9IjE3OC4zMzMzMzMzMzMzMzMzMSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MjwvdGV4dD48dGV4dCB4PSIxMTAiIHk9IjI2NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjgiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4yLTQ8L3RleHQ+PHJlY3QgeD0iMTMwIiB5PSIyMTYuNjY2NjY2NjY2NjY2NjYiIHdpZHRoPSI0MCIgaGVpZ2h0PSIzMy4zMzMzMzMzMzMzMzMzMzYiIGZpbGw9IiNjOGU2YzkiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjE1MCIgeT0iMjExLjY2NjY2NjY2NjY2NjY2IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xPC90ZXh0Pjx0ZXh0IHg9IjE1MCIgeT0iMjY1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iOCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjQtNjwvdGV4dD48cmVjdCB4PSIxNzAiIHk9IjgzLjMzMzMzMzMzMzMzMzMxIiB3aWR0aD0iNDAiIGhlaWdodD0iMTY2LjY2NjY2NjY2NjY2NjY5IiBmaWxsPSIjYzhlNmM5IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48dGV4dCB4PSIxOTAiIHk9Ijc4LjMzMzMzMzMzMzMzMzMxIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj41PC90ZXh0Pjx0ZXh0IHg9IjE5MCIgeT0iMjY1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iOCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjYtODwvdGV4dD48cmVjdCB4PSIyMTAiIHk9IjUwLjAiIHdpZHRoPSI0MCIgaGVpZ2h0PSIyMDAuMCIgZmlsbD0iI2M4ZTZjOSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iMjMwIiB5PSI0NS4wIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj42PC90ZXh0Pjx0ZXh0IHg9IjIzMCIgeT0iMjY1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iOCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjgtMTA8L3RleHQ+PHJlY3QgeD0iMjUwIiB5PSIxODMuMzMzMzMzMzMzMzMzMzEiIHdpZHRoPSI0MCIgaGVpZ2h0PSI2Ni42NjY2NjY2NjY2NjY2NyIgZmlsbD0iI2M4ZTZjOSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iMjcwIiB5PSIxNzguMzMzMzMzMzMzMzMzMzEiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjI8L3RleHQ+PHRleHQgeD0iMjcwIiB5PSIyNjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSI4IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MTAtMTI8L3RleHQ+PHJlY3QgeD0iMjkwIiB5PSIxNTAuMCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjEwMC4wIiBmaWxsPSIjYzhlNmM5IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48dGV4dCB4PSIzMTAiIHk9IjE0NS4wIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4zPC90ZXh0Pjx0ZXh0IHg9IjMxMCIgeT0iMjY1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iOCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjEyLTE0PC90ZXh0PjxsaW5lIHgxPSI0MCIgeTE9IjI1MCIgeDI9IjM1MCIgeTI9IjI1MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+PGxpbmUgeDE9IjQwIiB5MT0iMjUwIiB4Mj0iNDAiIHkyPSIyMCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+PHRleHQgeD0iMjAwIiB5PSIyOTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPk51bWJlciBvZiBQbGFudHMgcGVyIEhvdXNlPC90ZXh0Pjwvc3ZnPg==" alt="Table Marks">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Given marks and number of students (fi).</div>
-        <div class="step">Σfi = 30. Σfixi = 1779.</div>
-        <div class="step">Mean = 1779 / 30 = 59.3.</div>
-        <div class="final-answer">Mean Marks = 59.3.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">Example 2. The table below gives the percentage distribution of female teachers in the
-            primary schools of rural areas of various states and union territories (U.T.) of India. Find the mean
-            percentage of female teachers by all the three methods discussed in this section.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjUwIiB5PSIxOTcuODI2MDg2OTU2NTIxNzUiIHdpZHRoPSI0MCIgaGVpZ2h0PSI1Mi4xNzM5MTMwNDM0NzgyNiIgZmlsbD0iI2UwZTBlMCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iNzAiIHk9IjE5Mi44MjYwODY5NTY1MjE3NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NjwvdGV4dD48cmVjdCB4PSI5MCIgeT0iMTU0LjM0NzgyNjA4Njk1NjUzIiB3aWR0aD0iNDAiIGhlaWdodD0iOTUuNjUyMTczOTEzMDQzNDciIGZpbGw9IiNlMGUwZTAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjExMCIgeT0iMTQ5LjM0NzgyNjA4Njk1NjUzIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xMTwvdGV4dD48cmVjdCB4PSIxMzAiIHk9IjY3LjM5MTMwNDM0NzgyNjEiIHdpZHRoPSI0MCIgaGVpZ2h0PSIxODIuNjA4Njk1NjUyMTczOSIgZmlsbD0iI2UwZTBlMCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iMTUwIiB5PSI2Mi4zOTEzMDQzNDc4MjYwOSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MjE8L3RleHQ+PHJlY3QgeD0iMTcwIiB5PSI1MC4wIiB3aWR0aD0iNDAiIGhlaWdodD0iMjAwLjAiIGZpbGw9IiNmZmNjYmMiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjE5MCIgeT0iNDUuMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MjM8L3RleHQ+PHJlY3QgeD0iMjEwIiB5PSIxMjguMjYwODY5NTY1MjE3NCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjEyMS43MzkxMzA0MzQ3ODI2IiBmaWxsPSIjZTBlMGUwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48dGV4dCB4PSIyMzAiIHk9IjEyMy4yNjA4Njk1NjUyMTc0IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xNDwvdGV4dD48cmVjdCB4PSIyNTAiIHk9IjIwNi41MjE3MzkxMzA0MzQ3OCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQzLjQ3ODI2MDg2OTU2NTIyIiBmaWxsPSIjZTBlMGUwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48dGV4dCB4PSIyNzAiIHk9IjIwMS41MjE3MzkxMzA0MzQ3OCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NTwvdGV4dD48bGluZSB4MT0iNDAiIHkxPSIyNTAiIHgyPSIzNTAiIHkyPSIyNTAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjx0ZXh0IHg9IjIwMCIgeT0iMjgwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5QYXRpZW50IEFnZXMgKE1vZGUgSGlnaGxpZ2h0ZWQpPC90ZXh0Pjwvc3ZnPg==" alt="Teacher Percentage">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Direct Method: Mean = 39.71.</div>
-        <div class="step">Assumed Mean: a = 50. Mean = 39.71.</div>
-        <div class="step">Step Deviation: a = 50, h = 10. Mean = 39.71.</div>
-        <div class="final-answer">Mean Percentage = 39.71%.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">Example 3. A survey conducted on 20 households in a locality by a group of students
-            resulted in the following frequency table for the number of family members in a household. Find the mode of
-            this data.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxsaW5lIHgxPSI0MCIgeTE9IjI1MCIgeDI9IjM1MCIgeTI9IjI1MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+PGxpbmUgeDE9IjQwIiB5MT0iMjUwIiB4Mj0iNDAiIHkyPSI1MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+PHBhdGggZD0iTSA0MCAyNTAgUSAxMDAgMjQwIDE1MCAxNTAgVCAzNTAgNTAiIHN0cm9rZT0iYmx1ZSIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIyIi8+PHRleHQgeD0iMjAwIiB5PSIzMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Q3VtdWxhdGl2ZSBGcmVxdWVuY3kgQ3VydmU8L3RleHQ+PGxpbmUgeDE9IjQwIiB5MT0iMTUwIiB4Mj0iMTUwIiB5Mj0iMTUwIiBzdHJva2U9InJlZCIgc3Ryb2tlLWRhc2hhcnJheT0iNCIvPjxsaW5lIHgxPSIxNTAiIHkxPSIxNTAiIHgyPSIxNTAiIHkyPSIyNTAiIHN0cm9rZT0icmVkIiBzdHJva2UtZGFzaGFycmF5PSI0Ii8+PHRleHQgeD0iMTUwIiB5PSIyNzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0icmVkIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5NZWRpYW48L3RleHQ+PC9zdmc+" alt="Family Size Data">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Mode Class is 3-5 (max freq 8).</div>
-        <div class="step">l = 3, f1 = 8, f0 = 7, f2 = 2, h = 2.</div>
-        <div class="step">Mode = 3 + [(8-7)/(16-7-2)] × 2</div>
-        <div class="step">= 3 + (1/7) × 2 = 3 + 0.286 = 3.286.</div>
-        <div class="final-answer">Mode Family Size = 3.286.</div>
-    </div>
-
-</body>
-
-</html>`
+  id: "ch13",
+  number: 13,
+  title: "Statistics",
+  introduction: "In this chapter, we delve into the world of data analysis. We focus on Measures of Central Tendency, learning how to calculate the Mean (using Direct, Assumed Mean, and Step-Deviation methods), Mode, and Median for grouped frequency distributions.",
+  definitions: [
+    {
+      term: "Mean (Arithmetic Average)",
+      description: "The representative value of a data set calculated as the sum of all observations divided by the total number of observations."
+    },
+    {
+      term: "Class Mark",
+      description: "The mid-point of a class interval: xi = (Upper Limit + Lower Limit) / 2."
+    },
+    {
+      term: "Mode",
+      description: "The value of the variable inside the modal class that has the highest frequency of occurrence."
+    },
+    {
+      term: "Median",
+      description: "The middle value in a distribution that divides the observations into two equal halves (50% above and 50% below)."
+    },
+    {
+      term: "Cumulative Frequency",
+      description: "The running sum of successive class frequencies up to a specified upper or lower boundary."
     }
+  ],
+  keyPoints: [
+    "Mean can be calculated using Direct, Assumed Mean, or Step-Deviation methods.",
+    "Step-deviation method is preferred when class intervals (h) are uniform to simplify arithmetic to small integers.",
+    "The empirical relationship between the three measures is: 3 Median = Mode + 2 Mean.",
+    "The modal class is the class interval having the highest frequency.",
+    "The median class is the first class interval whose cumulative frequency is greater than or equal to n/2.",
+    "For inclusive (non-continuous) intervals, adjust class limits by subtracting 0.5 from lower limits and adding 0.5 to upper limits."
+  ],
+  formulas: [
+    {
+      name: "Direct Mean",
+      formula: "x̄ = (Σ fᵢxᵢ) / (Σ fᵢ)"
+    },
+    {
+      name: "Assumed Mean",
+      formula: "x̄ = a + (Σ fᵢdᵢ) / (Σ fᵢ)  [dᵢ = xᵢ − a]"
+    },
+    {
+      name: "Step-Deviation Mean",
+      formula: "x̄ = a + [(Σ fᵢuᵢ) / (Σ fᵢ)] × h  [uᵢ = (xᵢ − a)/h]"
+    },
+    {
+      name: "Mode (Grouped Data)",
+      formula: "Mode = l + [(f₁ − f₀) / (2f₁ − f₀ − f₂)] × h"
+    },
+    {
+      name: "Median (Grouped Data)",
+      formula: "Median = l + [(n/2 − cf) / f] × h"
+    },
+    {
+      name: "Empirical Relationship",
+      formula: "3 Median = Mode + 2 Mean"
+    }
+  ],
+  crux: [
+    "Always identify the modal class (highest frequency) and median class (first class where cf ≥ n/2).",
+    "In the Median formula, 'cf' is taken from the PRECEDING class, while 'f' belongs to the CURRENT median class.",
+    "The Step-Deviation method is completely independent of the choice of assumed mean 'a', but 'a' is usually chosen near the middle of class marks.",
+    "When calculating missing frequencies (e.g. x and y), always formulate two independent linear equations: one from total frequency Σfi = N, and one from the given Median/Mean."
+  ],
+  exercises: [
+    {
+      id: "examples",
+      name: "Examples",
+      questions: []
+    },
+    {
+      id: "exercise1",
+      name: "Exercise 13.1",
+      questions: []
+    },
+    {
+      id: "exercise2",
+      name: "Exercise 13.2",
+      questions: []
+    },
+    {
+      id: "exercise3",
+      name: "Exercise 13.3",
+      questions: []
+    }
+  ],
+  examples: [],
+  theorems: [],
+  mcqs: [
+  {
+    "id": "ch13-mcq-1",
+    "question": "The empirical relationship between Mean, Median and Mode for a moderately skewed distribution is:",
+    "options": [
+      "A):   Mode = 3 Median - 2 Mean",
+      "B):   Mode = Median - 2 Mean",
+      "C):   Mode = 2 Median - 3 Mean",
+      "D):   Mode = 2 Mean - 3 Median"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Karl Pearson's empirical formula states that 3 Median = Mode + 2 Mean. Rearranging gives Mode = 3 Median - 2 Mean."
+  },
+  {
+    "id": "ch13-mcq-2",
+    "question": "The mode of the numbers 2, 6, 4, 5, 0, 2, 1, 3, 2, 3 is:",
+    "options": [
+      "A):   2",
+      "B):   3",
+      "C):   4",
+      "D):   5"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The frequency of 2 is 3, frequency of 3 is 2, and other numbers appear once. Since 2 occurs most frequently (3 times), the mode is 2."
+  },
+  {
+    "id": "ch13-mcq-3",
+    "question": "If the mean of the distribution (x: 2, 4, 6, 10, p+5 with frequencies f: 3, 2, 3, 1, 2) is 6, then the value of p is:",
+    "options": [
+      "A):   6",
+      "B):   7",
+      "C):   5",
+      "D):   4"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Σfi = 3 + 2 + 3 + 1 + 2 = 11. Σfixi = (2×3) + (4×2) + (6×3) + (10×1) + 2(p+5) = 6 + 8 + 18 + 10 + 2p + 10 = 52 + 2p. Mean = (52 + 2p)/11 = 6 ⇒ 52 + 2p = 66 ⇒ 2p = 14 ⇒ p = 7."
+  },
+  {
+    "id": "ch13-mcq-4",
+    "question": "The algebraic sum of deviations of a frequency distribution from its arithmetic mean is always:",
+    "options": [
+      "A):   Positive",
+      "B):   Negative",
+      "C):   Zero",
+      "D):   Equal to total frequency"
+    ],
+    "correctAnswer": "C",
+    "explanation": "By the fundamental mathematical property of arithmetic mean, Σfi(xi - x̄) = Σfixi - x̄Σfi = Nx̄ - Nx̄ = 0."
+  },
+  {
+    "id": "ch13-mcq-5",
+    "question": "In the step-deviation formula x̄ = a + [(Σfiui)/(Σfi)] × h, ui is defined as:",
+    "options": [
+      "A):   xi - a",
+      "B):   h(xi - a)",
+      "C):   (a - xi) / h",
+      "D):   (xi - a) / h"
+    ],
+    "correctAnswer": "D",
+    "explanation": "In the step-deviation method, ui represents the reduced deviation of class mark xi from assumed mean a divided by the common class size h, i.e., ui = (xi - a)/h."
+  },
+  {
+    "id": "ch13-mcq-6",
+    "question": "While computing the mean of grouped data, it is assumed that the frequencies are:",
+    "options": [
+      "A):   Centred at the class marks of the classes",
+      "B):   Centred at the lower limits of the classes",
+      "C):   Centred at the upper limits of the classes",
+      "D):   Evenly distributed throughout the whole distribution"
+    ],
+    "correctAnswer": "A",
+    "explanation": "For grouped frequency distributions, we replace the entire class interval by its mid-point (class mark xi = (upper + lower)/2) as the single representative value."
+  },
+  {
+    "id": "ch13-mcq-7",
+    "question": "Construction of a cumulative frequency table is essential in determining the:",
+    "options": [
+      "A):   Mean",
+      "B):   Median",
+      "C):   Mode",
+      "D):   Class mark"
+    ],
+    "correctAnswer": "B",
+    "explanation": "To find the median of grouped data, we need cumulative frequencies (cf) to locate the median class where cf first exceeds or equals n/2."
+  },
+  {
+    "id": "ch13-mcq-8",
+    "question": "Which of the following measures of central tendency cannot be determined graphically from an ogive curve?",
+    "options": [
+      "A):   Mean",
+      "B):   Median",
+      "C):   Mode",
+      "D):   Quartiles"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Median can be determined from the intersection of less-than and more-than ogives. Mode can be found from a histogram. Mean cannot be obtained directly from these graphical curves."
+  },
+  {
+    "id": "ch13-mcq-9",
+    "question": "The abscissa (x-coordinate) of the point of intersection of 'less than' and 'more than' cumulative frequency curves gives the:",
+    "options": [
+      "A):   Mean",
+      "B):   Mode",
+      "C):   Median",
+      "D):   Range"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The intersection point of the 'less than' and 'more than' ogives occurs at cumulative frequency n/2 on the y-axis, and its corresponding x-coordinate (abscissa) gives the Median."
+  },
+  {
+    "id": "ch13-mcq-10",
+    "question": "If the mean of the first n natural numbers is 5n/9, then the value of n is:",
+    "options": [
+      "A):   5",
+      "B):   7",
+      "C):   9",
+      "D):   10"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Mean of first n natural numbers = [n(n+1)/2] / n = (n+1)/2. Given (n+1)/2 = 5n/9 ⇒ 9(n+1) = 10n ⇒ 9n + 9 = 10n ⇒ n = 9."
+  },
+  {
+    "id": "ch13-mcq-11",
+    "question": "If the mode of a data is 45 and the mean is 27, then by the empirical formula, its median is:",
+    "options": [
+      "A):   30",
+      "B):   33",
+      "C):   35",
+      "D):   39"
+    ],
+    "correctAnswer": "B",
+    "explanation": "3 Median = Mode + 2 Mean ⇒ 3 Median = 45 + 2(27) = 45 + 54 = 99 ⇒ Median = 99 / 3 = 33."
+  },
+  {
+    "id": "ch13-mcq-12",
+    "question": "For the following distribution (Class: 0-5, 5-10, 10-15, 15-20, 20-25 with f: 10, 15, 12, 20, 9), the sum of lower limits of median and modal class is:",
+    "options": [
+      "A):   15",
+      "B):   20",
+      "C):   30",
+      "D):   25"
+    ],
+    "correctAnswer": "D",
+    "explanation": "Modal class has max frequency (20) ⇒ Modal class = 15-20 (lower limit = 15). Total frequency n = 66, n/2 = 33. cf: 10, 25, 37. cf ≥ 33 is 37 ⇒ Median class = 10-15 (lower limit = 10). Sum = 15 + 10 = 25."
+  },
+  {
+    "id": "ch13-mcq-13",
+    "question": "In a frequency distribution, if the class mark of a class is 25 and its class size is 10, the lower limit of the class is:",
+    "options": [
+      "A):   15",
+      "B):   20",
+      "C):   22.5",
+      "D):   30"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Lower limit = Class mark - (Class size / 2) = 25 - (10 / 2) = 25 - 5 = 20."
+  },
+  {
+    "id": "ch13-mcq-14",
+    "question": "The median of the first 8 prime numbers (2, 3, 5, 7, 11, 13, 17, 19) is:",
+    "options": [
+      "A):   7",
+      "B):   8",
+      "C):   9",
+      "D):   11"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The first 8 primes in order are 2, 3, 5, 7, 11, 13, 17, 19. Since n = 8 (even), Median = average of 4th and 5th terms = (7 + 11) / 2 = 18 / 2 = 9."
+  },
+  {
+    "id": "ch13-mcq-15",
+    "question": "If each observation of a data set with mean x̄ is multiplied by a constant k (k ≠ 0), the new mean is:",
+    "options": [
+      "A):   x̄ + k",
+      "B):   x̄ / k",
+      "C):   kx̄",
+      "D):   x̄"
+    ],
+    "correctAnswer": "C",
+    "explanation": "If every observation xi is multiplied by k, new sum = Σkxi = kΣxi. Dividing by n gives New Mean = k(Σxi/n) = kx̄."
+  },
+  {
+    "id": "ch13-mcq-16",
+    "question": "In the formula for mode of grouped data: Mode = l + [(f₁ - f₀)/(2f₁ - f₀ - f₂)] × h, f₀ represents the:",
+    "options": [
+      "A):   Frequency of the modal class",
+      "B):   Frequency of the class succeeding the modal class",
+      "C):   Total frequency of the distribution",
+      "D):   Frequency of the class preceding the modal class"
+    ],
+    "correctAnswer": "D",
+    "explanation": "In the mode formula, f₁ is the frequency of the modal class, f₀ is the frequency of the preceding class, and f₂ is the frequency of the succeeding class."
+  },
+  {
+    "id": "ch13-mcq-17",
+    "question": "If the mean of 5 observations x, x+2, x+4, x+6, x+8 is 11, then the mean of the last three observations is:",
+    "options": [
+      "A):   11",
+      "B):   13",
+      "C):   15",
+      "D):   17"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Sum = 5x + 20. Mean = (5x + 20)/5 = x + 4 = 11 ⇒ x = 7. The last three observations are x+4, x+6, x+8 = 11, 13, 15. Their mean = (11 + 13 + 15)/3 = 39/3 = 13."
+  },
+  {
+    "id": "ch13-mcq-18",
+    "question": "Which of the following is NOT a measure of central tendency?",
+    "options": [
+      "A):   Mean",
+      "B):   Median",
+      "C):   Mode",
+      "D):   Standard Deviation"
+    ],
+    "correctAnswer": "D",
+    "explanation": "Mean, Median, and Mode are measures of central tendency (location). Standard Deviation is a measure of dispersion (spread)."
+  },
+  {
+    "id": "ch13-mcq-19",
+    "question": "The modal class for the distribution: Below 10: 3, Below 20: 12, Below 30: 20, Below 40: 25 is:",
+    "options": [
+      "A):   10 - 20",
+      "B):   0 - 10",
+      "C):   20 - 30",
+      "D):   30 - 40"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Frequencies: 0-10: 3; 10-20: 12 - 3 = 9; 20-30: 20 - 12 = 8; 30-40: 25 - 20 = 5. The highest frequency is 9 in the interval 10 - 20, so 10 - 20 is the modal class."
+  },
+  {
+    "id": "ch13-mcq-20",
+    "question": "If a variable takes values 0, 1, 2, ..., n with frequencies proportional to binomial coefficients nC0, nC1, ..., nCn, the mean is:",
+    "options": [
+      "A):   n / 2",
+      "B):   (n + 1) / 2",
+      "C):   n",
+      "D):   2n"
+    ],
+    "correctAnswer": "A",
+    "explanation": "For a symmetric binomial distribution with p = 1/2, the mean is E[X] = np = n(1/2) = n/2."
+  },
+  {
+    "id": "ch13-mcq-21",
+    "question": "In finding the median of grouped data, if n/2 = 25 and cf of the preceding class is 18, while frequency of the median class is 14 with class size 10 and lower limit 20, the median is:",
+    "options": [
+      "A):   22.5",
+      "B):   27.5",
+      "C):   28.0",
+      "D):   25.0"
+    ],
+    "correctAnswer": "D",
+    "explanation": "Median = l + [(n/2 - cf)/f] × h = 20 + [(25 - 18)/14] × 10 = 20 + [7/14] × 10 = 20 + (1/2) × 10 = 20 + 5 = 25.0."
+  },
+  {
+    "id": "ch13-mcq-22",
+    "question": "The class mark of the class interval 37.5 - 42.5 is:",
+    "options": [
+      "A):   39.5",
+      "B):   40.0",
+      "C):   40.5",
+      "D):   41.0"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Class mark = (37.5 + 42.5) / 2 = 80.0 / 2 = 40.0."
+  },
+  {
+    "id": "ch13-mcq-23",
+    "question": "If the difference between Mode and Median of a dataset is 24, then the difference between Median and Mean is:",
+    "options": [
+      "A):   8",
+      "B):   12",
+      "C):   16",
+      "D):   24"
+    ],
+    "correctAnswer": "B",
+    "explanation": "By empirical formula: Mode = 3 Median - 2 Mean ⇒ Mode - Median = 2 Median - 2 Mean = 2(Median - Mean). Given Mode - Median = 24 ⇒ 2(Median - Mean) = 24 ⇒ Median - Mean = 12."
+  },
+  {
+    "id": "ch13-mcq-24",
+    "question": "When all class intervals are of equal width, the step-deviation method is mathematically equivalent to:",
+    "options": [
+      "A):   Change of origin only",
+      "B):   Change of scale only",
+      "C):   Both change of origin and change of scale",
+      "D):   Neither change of origin nor scale"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Subtracting assumed mean 'a' is a change of origin, and dividing by class size 'h' is a change of scale. Step-deviation utilizes both transformations."
+  },
+  {
+    "id": "ch13-mcq-25",
+    "question": "If the mean of 20 observations is 35, and later it is found that an observation 45 was mistakenly read as 25, the correct mean is:",
+    "options": [
+      "A):   34",
+      "B):   35.5",
+      "C):   37",
+      "D):   36"
+    ],
+    "correctAnswer": "D",
+    "explanation": "Initial sum = 20 × 35 = 700. Correct sum = 700 - 25 + 45 = 720. Correct mean = 720 / 20 = 36."
+  }
+],
+  isHtmlView: true,
+  htmlOverview: "\n\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; }\n  .frac .den { padding: 1px 4px; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(0, 230, 118, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #00E676; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 14px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(0, 230, 118, 0.25); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #00E676; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #B9F6CA; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(0, 230, 118, 0.15); border: 1px solid #00E676; color: #B9F6CA; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 6px 0; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(0, 230, 118, 0.4); border-radius: 10px; padding: 14px; margin: 16px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #FFFFFF; border-radius: 8px; padding: 10px 8px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.25); }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 10px; font-weight: 500; }\n  .table-card { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 14px 0; border-radius: 8px; }\n  .table-card table { width: 100%; border-collapse: collapse; text-align: center; }\n  .table-card th { background: rgba(0, 230, 118, 0.2); color: #B9F6CA; border: 1px solid rgba(0, 230, 118, 0.35); padding: 10px; font-weight: 700; }\n  .table-card td { border: 1px solid rgba(0, 230, 118, 0.2); padding: 9px; color: #E2E8F0; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Hero Header -->\n  <div style=\"background: linear-gradient(135deg, rgba(0, 230, 118, 0.22), rgba(0, 184, 90, 0.15)); border: 1.5px solid #00E676; border-radius: 14px; padding: 18px; margin-bottom: 20px; text-align: center;\">\n    <div style=\"font-size: 22px; font-weight: 800; color: #00E676; margin-bottom: 6px;\">\n      📊 Chapter 13: Statistics\n    </div>\n    <div style=\"color: #CBD5E1; font-size: 14.5px; line-height: 1.5;\">\n      Class 10 NCERT Mathematics &bull; Measures of Central Tendency: Mean (3 Methods), Mode, Median &amp; Empirical Relationship\n    </div>\n  </div>\n\n  <!-- 1. What are Measures of Central Tendency? -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 1. Measures of Central Tendency for Grouped Data</div>\n    <div class=\"q-text\">\n      In real-world data analysis, large data sets are grouped into class intervals. A <b>measure of central tendency</b> is a single representative value that attempts to describe the central position of the distribution:\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-step\">\n        <div>&bull; <b style=\"color: #B9F6CA;\">1. Mean (Arithmetic Average):</b> The numerical centre of gravity of the data, considering the value of every single observation.</div>\n        <div>&bull; <b style=\"color: #B9F6CA;\">2. Mode (Most Frequent Value):</b> The point of maximum frequency where data values cluster most densely.</div>\n        <div>&bull; <b style=\"color: #B9F6CA;\">3. Median (Positional Middle):</b> The exact middle value dividing the ordered distribution into two equal halves (50% above, 50% below).</div>\n      </div>\n    </div>\n  </div>\n\n  <!-- 2. Master Formulations for Mean (3 Methods) -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 2. The Three Methods to Calculate Mean (<i>x̄</i>)</div>\n    <div class=\"q-text\">\n      For class intervals, we first calculate the <b>class mark</b> (mid-point): <b><i>x</i><sub>i</sub> = <span class=\"frac\"><span class=\"num\">Lower Limit + Upper Limit</span><span class=\"den\">2</span></span></b>\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"table-card\">\n        <table>\n          <thead>\n            <tr>\n              <th>Method</th>\n              <th>Formula</th>\n              <th>When to Use / Strategic Advantage</th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr>\n              <td><b>1. Direct Method</b></td>\n              <td><b><i>x̄</i> = <span class=\"frac\"><span class=\"num\">&sum; f<sub>i</sub> x<sub>i</sub></span><span class=\"den\">&sum; f<sub>i</sub></span></span></b></td>\n              <td>Best when both numerical values of <i>f</i><sub>i</sub> and <i>x</i><sub>i</sub> are small single/double digits.</td>\n            </tr>\n            <tr>\n              <td><b>2. Assumed Mean Method</b></td>\n              <td><b><i>x̄</i> = <i>a</i> + <span class=\"frac\"><span class=\"num\">&sum; f<sub>i</sub> d<sub>i</sub></span><span class=\"den\">&sum; f<sub>i</sub></span></span></b><br/><span class=\"reason\">[where <i>d</i><sub>i</sub> = <i>x</i><sub>i</sub> &minus; <i>a</i>]</span></td>\n              <td>Reduces large multi-digit numbers by subtracting an assumed central mean <i>a</i> from each class mark.</td>\n            </tr>\n            <tr>\n              <td><b>3. Step-Deviation Method</b></td>\n              <td><b><i>x̄</i> = <i>a</i> + [<span class=\"frac\"><span class=\"num\">&sum; f<sub>i</sub> u<sub>i</sub></span><span class=\"den\">&sum; f<sub>i</sub></span></span>] &times; <i>h</i></b><br/><span class=\"reason\">[where <i>u</i><sub>i</sub> = <span class=\"frac\"><span class=\"num\"><i>x</i><sub>i</sub> &minus; <i>a</i></span><span class=\"den\"><i>h</i></span></span>, <i>h</i> = class size]</span></td>\n              <td><b>Most powerful &amp; error-free:</b> Divides deviations by common width <i>h</i>, turning huge calculations into tiny integers (-2, -1, 0, 1, 2)!</td>\n            </tr>\n          </tbody>\n        </table>\n      </div>\n    </div>\n  </div>\n\n  <!-- 3. Mode of Grouped Data -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 3. Mode of Grouped Frequency Distribution</div>\n    <div class=\"q-text\">\n      The <b>modal class</b> is the class interval with the <b>highest frequency</b>. The mode lies inside this interval:\n    </div>\n    <div class=\"sol-box\">\n      <div style=\"text-align: center; margin: 12px 0;\">\n        <span class=\"prop-chip\" style=\"font-size: 16px; padding: 8px 20px;\">\n          <b>Mode = <i>l</i> + [<span class=\"frac\"><span class=\"num\"><i>f</i><sub>1</sub> &minus; <i>f</i><sub>0</sub></span><span class=\"den\">2<i>f</i><sub>1</sub> &minus; <i>f</i><sub>0</sub> &minus; <i>f</i><sub>2</sub></span></span>] &times; <i>h</i></b>\n        </span>\n      </div>\n      <div class=\"sol-step\">\n        <div>&bull; <b><i>l</i>:</b> Lower limit of the modal class</div>\n        <div>&bull; <b><i>f</i><sub>1</sub>:</b> Frequency of the modal class</div>\n        <div>&bull; <b><i>f</i><sub>0</sub>:</b> Frequency of the class preceding the modal class</div>\n        <div>&bull; <b><i>f</i><sub>2</sub>:</b> Frequency of the class succeeding the modal class</div>\n        <div>&bull; <b><i>h</i>:</b> Size of the class interval (assuming equal class sizes)</div>\n      </div>\n    </div>\n  </div>\n\n  <!-- 4. Median of Grouped Data -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 4. Median of Grouped Frequency Distribution</div>\n    <div class=\"q-text\">\n      To find the median, construct the <b>cumulative frequency (cf)</b> column. Let <i>n</i> = &sum; <i>f</i><sub>i</sub>. Find the <b>median class</b>: the class interval whose cumulative frequency is <b>first greater than or equal to <span class=\"frac\"><span class=\"num\">n</span><span class=\"den\">2</span></span></b>.\n    </div>\n    <div class=\"sol-box\">\n      <div style=\"text-align: center; margin: 12px 0;\">\n        <span class=\"prop-chip\" style=\"font-size: 16px; padding: 8px 20px;\">\n          <b>Median = <i>l</i> + [<span class=\"frac\"><span class=\"num\"><span class=\"frac\"><span class=\"num\">n</span><span class=\"den\">2</span></span> &minus; cf</span><span class=\"den\"><i>f</i></span></span>] &times; <i>h</i></b>\n        </span>\n      </div>\n      <div class=\"sol-step\">\n        <div>&bull; <b><i>l</i>:</b> Lower limit of the median class</div>\n        <div>&bull; <b><i>n</i>:</b> Number of observations (&sum; <i>f</i><sub>i</sub>)</div>\n        <div>&bull; <b>cf:</b> Cumulative frequency of the class <b>preceding</b> the median class</div>\n        <div>&bull; <b><i>f</i>:</b> Frequency of the median class</div>\n        <div>&bull; <b><i>h</i>:</b> Class size of the median class</div>\n      </div>\n    </div>\n  </div>\n\n  <!-- 5. Empirical Relationship & Cheat Sheet -->\n  <div class=\"q-card\" style=\"border-color: #00E676;\">\n    <div class=\"q-title\">✦ 5. Empirical Relationship &amp; Master Revision Cheat Sheet</div>\n    <div class=\"sol-box\">\n      <div class=\"sol-step\">\n        <div>&bull; <b style=\"color: #B9F6CA;\">The Golden Empirical Formula:</b> For moderately skewed frequency distributions:</div>\n        <div style=\"text-align: center; margin: 10px 0;\">\n          <span class=\"prop-chip\" style=\"font-size: 17px; padding: 8px 22px; border-color: #4CAF50; color: #A5D6A7;\">\n            <b>3 Median = Mode + 2 Mean</b> &nbsp; <span style=\"font-size: 14px; color: #FFFFFF;\">or</span> &nbsp; <b>Mode = 3 Median &minus; 2 Mean</b>\n          </span>\n        </div>\n      </div>\n      <div class=\"table-card\" style=\"margin-top: 14px;\">\n        <table>\n          <thead>\n            <tr>\n              <th>Measure</th>\n              <th>Formula</th>\n              <th>Crucial Board Exam Tip</th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr>\n              <td><b>Mean (Step-Dev)</b></td>\n              <td><b><i>a</i> + [<span class=\"frac\"><span class=\"num\">&sum; f<sub>i</sub> u<sub>i</sub></span><span class=\"den\">&sum; f<sub>i</sub></span></span>] &times; <i>h</i></b></td>\n              <td>Always choose <i>a</i> near the center of <i>x</i><sub>i</sub> to balance positive and negative <i>u</i><sub>i</sub>.</td>\n            </tr>\n            <tr>\n              <td><b>Mode</b></td>\n              <td><b><i>l</i> + [<span class=\"frac\"><span class=\"num\">f<sub>1</sub> &minus; f<sub>0</sub></span><span class=\"den\">2f<sub>1</sub> &minus; f<sub>0</sub> &minus; f<sub>2</sub></span></span>] &times; <i>h</i></b></td>\n              <td>The denominator (2<i>f</i><sub>1</sub> &minus; <i>f</i><sub>0</sub> &minus; <i>f</i><sub>2</sub>) must always be positive!</td>\n            </tr>\n            <tr>\n              <td><b>Median</b></td>\n              <td><b><i>l</i> + [<span class=\"frac\"><span class=\"num\">n/2 &minus; cf</span><span class=\"den\">f</span></span>] &times; <i>h</i></b></td>\n              <td><b>Common Trap:</b> 'cf' is taken from the PRECEDING class, but 'f' is taken from the CURRENT median class!</td>\n            </tr>\n            <tr>\n              <td><b>Missing Frequency</b></td>\n              <td>Form algebraic equation using given Mean/Median</td>\n              <td>Ensure &sum; <i>f</i><sub>i</sub> includes the unknown variables (e.g., <i>x</i> + <i>y</i> + known sum = <i>N</i>).</td>\n            </tr>\n            <tr>\n              <td><b>Non-Continuous Classes</b></td>\n              <td>Make continuous: subtract 0.5 from lower, add 0.5 to upper</td>\n              <td>e.g., 118-126 becomes 117.5-126.5 before finding modal or median class!</td>\n            </tr>\n          </tbody>\n        </table>\n      </div>\n    </div>\n  </div>\n\n</div>\n",
+  htmlExercises: {
+    examples: "\n<div class=\"ex-header\">\n  <div class=\"ex-badge\">Chapter 13 &bull; Solved Examples</div>\n  <div class=\"ex-title\">Mean and Mode Solved Examples</div>\n  <div class=\"ex-desc\">Step-by-step textbook solved examples illustrating Direct, Assumed Mean, Step-Deviation, and Modal Class calculations.</div>\n</div>\n\n<!-- Example 1 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Example 1</span> Mean Marks Obtained by 30 Students</div>\n  <div class=\"q-text\">\n    The marks obtained by 30 students of Class X of a certain school in a Mathematics paper consisting of 100 marks are presented in the table below. Find the mean of the marks obtained by the students.\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Step 1: Direct Method Calculation Table</b></div>\n    <div class=\"table-card\">\n      <table>\n        <thead>\n          <tr>\n            <th>Marks (<i>x</i><sub>i</sub>)</th>\n            <th>Number of Students (<i>f</i><sub>i</sub>)</th>\n            <th><i>f</i><sub>i</sub><i>x</i><sub>i</sub></th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr><td>10</td><td>1</td><td>10</td></tr>\n          <tr><td>20</td><td>1</td><td>20</td></tr>\n          <tr><td>36</td><td>3</td><td>108</td></tr>\n          <tr><td>40</td><td>4</td><td>160</td></tr>\n          <tr><td>50</td><td>3</td><td>150</td></tr>\n          <tr><td>56</td><td>2</td><td>112</td></tr>\n          <tr><td>60</td><td>4</td><td>240</td></tr>\n          <tr><td>70</td><td>4</td><td>280</td></tr>\n          <tr><td>72</td><td>1</td><td>72</td></tr>\n          <tr><td>80</td><td>1</td><td>80</td></tr>\n          <tr><td>88</td><td>2</td><td>176</td></tr>\n          <tr><td>92</td><td>3</td><td>276</td></tr>\n          <tr><td>95</td><td>1</td><td>95</td></tr>\n          <tr style=\"font-weight: 700; background: rgba(0, 230, 118, 0.15);\">\n            <td><b>Total</b></td>\n            <td><b>&sum; <i>f</i><sub>i</sub> = 30</b></td>\n            <td><b>&sum; <i>f</i><sub>i</sub><i>x</i><sub>i</sub> = 1779</b></td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 2: Calculate Mean (<i>x̄</i>)</b></div>\n    <div class=\"sol-step\"><i>x̄</i> = <span class=\"frac\"><span class=\"num\">&sum; f<sub>i</sub> x<sub>i</sub></span><span class=\"den\">&sum; f<sub>i</sub></span></span> = <span class=\"frac\"><span class=\"num\">1779</span><span class=\"den\">30</span></span></div>\n    <div class=\"sol-step\">&rArr; <i>x̄</i> = <b>59.3</b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>Mean marks obtained by the students = 59.3</b>\n    </div>\n  </div>\n</div>\n\n<!-- Example 2 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Example 2</span> Female Teachers in Primary Schools (Comparing 3 Methods)</div>\n  <div class=\"q-text\">\n    The table below gives the percentage distribution of female teachers in the primary schools of rural areas of various states and union territories (U.T.) of India. Find the mean percentage of female teachers by:\n    <br/>(i) Direct Method &nbsp;&bull;&nbsp; (ii) Assumed Mean Method &nbsp;&bull;&nbsp; (iii) Step-Deviation Method.\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Step 1: Master Calculation Table</b></div>\n    <div class=\"sol-step\">Let Assumed Mean <i>a</i> = 50, Class Size <i>h</i> = 10, <i>d</i><sub>i</sub> = <i>x</i><sub>i</sub> &minus; 50, <i>u</i><sub>i</sub> = <span class=\"frac\"><span class=\"num\"><i>d</i><sub>i</sub></span><span class=\"den\">10</span></span>.</div>\n    <div class=\"table-card\">\n      <table>\n        <thead>\n          <tr>\n            <th>Percentage (%)</th>\n            <th>Number of States (<i>f</i><sub>i</sub>)</th>\n            <th>Class Mark (<i>x</i><sub>i</sub>)</th>\n            <th><i>d</i><sub>i</sub> = <i>x</i><sub>i</sub> &minus; 50</th>\n            <th><i>u</i><sub>i</sub> = <i>d</i><sub>i</sub>/10</th>\n            <th><i>f</i><sub>i</sub><i>x</i><sub>i</sub></th>\n            <th><i>f</i><sub>i</sub><i>d</i><sub>i</sub></th>\n            <th><i>f</i><sub>i</sub><i>u</i><sub>i</sub></th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr><td>15 - 25</td><td>6</td><td>20</td><td>-30</td><td>-3</td><td>120</td><td>-180</td><td>-18</td></tr>\n          <tr><td>25 - 35</td><td>11</td><td>30</td><td>-20</td><td>-2</td><td>330</td><td>-220</td><td>-22</td></tr>\n          <tr><td>35 - 45</td><td>7</td><td>40</td><td>-10</td><td>-1</td><td>280</td><td>-70</td><td>-7</td></tr>\n          <tr><td>45 - 55</td><td>4</td><td>50 (<i>a</i>)</td><td>0</td><td>0</td><td>200</td><td>0</td><td>0</td></tr>\n          <tr><td>55 - 65</td><td>4</td><td>60</td><td>10</td><td>1</td><td>240</td><td>40</td><td>4</td></tr>\n          <tr><td>65 - 75</td><td>2</td><td>70</td><td>20</td><td>2</td><td>140</td><td>40</td><td>4</td></tr>\n          <tr><td>75 - 85</td><td>1</td><td>80</td><td>30</td><td>3</td><td>80</td><td>30</td><td>3</td></tr>\n          <tr style=\"font-weight: 700; background: rgba(0, 230, 118, 0.15);\">\n            <td><b>Total</b></td>\n            <td><b>35</b></td>\n            <td>&mdash;</td>\n            <td>&mdash;</td>\n            <td>&mdash;</td>\n            <td><b>1390</b></td>\n            <td><b>-360</b></td>\n            <td><b>-36</b></td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 2: Comparison of All Three Methods</b></div>\n    <div class=\"sol-step\"><b>(i) Direct Method:</b> <i>x̄</i> = <span class=\"frac\"><span class=\"num\">&sum; f<sub>i</sub> x<sub>i</sub></span><span class=\"den\">&sum; f<sub>i</sub></span></span> = <span class=\"frac\"><span class=\"num\">1390</span><span class=\"den\">35</span></span> = <b>39.71%</b></div>\n    <div class=\"sol-step\"><b>(ii) Assumed Mean Method:</b> <i>x̄</i> = <i>a</i> + <span class=\"frac\"><span class=\"num\">&sum; f<sub>i</sub> d<sub>i</sub></span><span class=\"den\">&sum; f<sub>i</sub></span></span> = 50 + <span class=\"frac\"><span class=\"num\">(&minus;360)</span><span class=\"den\">35</span></span> = 50 &minus; 10.29 = <b>39.71%</b></div>\n    <div class=\"sol-step\"><b>(iii) Step-Deviation Method:</b> <i>x̄</i> = <i>a</i> + [<span class=\"frac\"><span class=\"num\">&sum; f<sub>i</sub> u<sub>i</sub></span><span class=\"den\">&sum; f<sub>i</sub></span></span>] &times; <i>h</i> = 50 + [<span class=\"frac\"><span class=\"num\">(&minus;36)</span><span class=\"den\">35</span></span>] &times; 10 = 50 &minus; <span class=\"frac\"><span class=\"num\">360</span><span class=\"den\">35</span></span> = 50 &minus; 10.29 = <b>39.71%</b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>Mean percentage of female teachers = 39.71% (identical by all three methods)</b>\n    </div>\n  </div>\n</div>\n\n<!-- Example 3 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Example 3</span> Mode of Family Members in a Household</div>\n  <div class=\"q-text\">\n    A survey conducted on 20 households in a locality by a group of students resulted in the following frequency table for the number of family members in a household. Find the mode of this data.\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Step 1: Identify the Modal Class</b></div>\n    <div class=\"sol-step\">The maximum class frequency is <b>8</b>, which corresponds to the class interval <b>3 &minus; 5</b>.</div>\n    <div class=\"sol-step\">&rArr; <b>Modal Class = 3 &minus; 5</b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 2: List the parameters</b></div>\n    <div class=\"sol-step\">Lower limit of modal class (<i>l</i>) = <b>3</b></div>\n    <div class=\"sol-step\">Class size (<i>h</i>) = 5 &minus; 3 = <b>2</b></div>\n    <div class=\"sol-step\">Frequency of modal class (<i>f</i><sub>1</sub>) = <b>8</b></div>\n    <div class=\"sol-step\">Frequency of preceding class (<i>f</i><sub>0</sub>) = <b>7</b></div>\n    <div class=\"sol-step\">Frequency of succeeding class (<i>f</i><sub>2</sub>) = <b>2</b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 3: Apply the Mode formula</b></div>\n    <div class=\"sol-step\">Mode = <i>l</i> + [<span class=\"frac\"><span class=\"num\">f<sub>1</sub> &minus; f<sub>0</sub></span><span class=\"den\">2f<sub>1</sub> &minus; f<sub>0</sub> &minus; f<sub>2</sub></span></span>] &times; <i>h</i></div>\n    <div class=\"sol-step\">&rArr; Mode = 3 + [<span class=\"frac\"><span class=\"num\">8 &minus; 7</span><span class=\"den\">2(8) &minus; 7 &minus; 2</span></span>] &times; 2</div>\n    <div class=\"sol-step\">&rArr; Mode = 3 + [<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">16 &minus; 9</span></span>] &times; 2 = 3 + <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">7</span></span> = 3 + 0.286 = <b>3.286</b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>Mode of the data = 3.286</b>\n    </div>\n  </div>\n</div>\n",
+    exercise1: "\n<div class=\"ex-header\">\n  <div class=\"ex-badge\">Exercise 13.1 &bull; 9 Questions</div>\n  <div class=\"ex-title\">Mean of Grouped Data</div>\n  <div class=\"ex-desc\">Calculation of arithmetic mean using Direct, Assumed Mean, and Step-Deviation methods, including missing frequency determination.</div>\n</div>\n\n<!-- Question 1 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q1</span> Survey on Number of Plants in 20 Houses</div>\n  <div class=\"q-text\">\n    A survey was conducted by a group of students as a part of their environment awareness programme, in which they collected the following data regarding the number of plants in 20 houses in a locality. Find the mean number of plants per house. Which method did you use for finding the mean, and why?\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Step 1: Choice of Method</b></div>\n    <div class=\"sol-step\">Since the values of class marks (<i>x</i><sub>i</sub>) and frequencies (<i>f</i><sub>i</sub>) are small single-digit numbers, we use the <b>Direct Method</b>.</div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 2: Direct Method Calculation Table</b></div>\n    <div class=\"table-card\">\n      <table>\n        <thead>\n          <tr>\n            <th>Number of Plants</th>\n            <th>Number of Houses (<i>f</i><sub>i</sub>)</th>\n            <th>Class Mark (<i>x</i><sub>i</sub>)</th>\n            <th><i>f</i><sub>i</sub><i>x</i><sub>i</sub></th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr><td>0 &minus; 2</td><td>1</td><td>1</td><td>1</td></tr>\n          <tr><td>2 &minus; 4</td><td>2</td><td>3</td><td>6</td></tr>\n          <tr><td>4 &minus; 6</td><td>1</td><td>5</td><td>5</td></tr>\n          <tr><td>6 &minus; 8</td><td>5</td><td>7</td><td>35</td></tr>\n          <tr><td>8 &minus; 10</td><td>6</td><td>9</td><td>54</td></tr>\n          <tr><td>10 &minus; 12</td><td>2</td><td>11</td><td>22</td></tr>\n          <tr><td>12 &minus; 14</td><td>3</td><td>13</td><td>39</td></tr>\n          <tr style=\"font-weight: 700; background: rgba(0, 230, 118, 0.15);\">\n            <td><b>Total</b></td>\n            <td><b>&sum; <i>f</i><sub>i</sub> = 20</b></td>\n            <td>&mdash;</td>\n            <td><b>&sum; <i>f</i><sub>i</sub><i>x</i><sub>i</sub> = 162</b></td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 3: Calculate Mean</b></div>\n    <div class=\"sol-step\">Mean <i>x̄</i> = <span class=\"frac\"><span class=\"num\">&sum; f<sub>i</sub> x<sub>i</sub></span><span class=\"den\">&sum; f<sub>i</sub></span></span> = <span class=\"frac\"><span class=\"num\">162</span><span class=\"den\">20</span></span> = <b>8.1</b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>Mean number of plants per house = 8.1 plants</b><br/>\n      <span class=\"reason\">[Direct method was used because both <i>f</i><sub>i</sub> and <i>x</i><sub>i</sub> values are small numerical values]</span>\n    </div>\n  </div>\n</div>\n\n<!-- Question 2 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q2</span> Daily Wages of 50 Factory Workers</div>\n  <div class=\"q-text\">\n    Consider the following distribution of daily wages of 50 workers of a factory. Find the mean daily wages of the workers of the factory by using an appropriate method.\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Step 1: Setup for Step-Deviation Method</b></div>\n    <div class=\"sol-step\">Let Assumed Mean <i>a</i> = 550, Class Size <i>h</i> = 20. Then <i>d</i><sub>i</sub> = <i>x</i><sub>i</sub> &minus; 550 and <i>u</i><sub>i</sub> = <span class=\"frac\"><span class=\"num\"><i>x</i><sub>i</sub> &minus; 550</span><span class=\"den\">20</span></span>.</div>\n\n    <div class=\"table-card\">\n      <table>\n        <thead>\n          <tr>\n            <th>Daily Wages (in &inr;)</th>\n            <th>Number of Workers (<i>f</i><sub>i</sub>)</th>\n            <th>Class Mark (<i>x</i><sub>i</sub>)</th>\n            <th><i>d</i><sub>i</sub> = <i>x</i><sub>i</sub> &minus; 550</th>\n            <th><i>u</i><sub>i</sub> = <i>d</i><sub>i</sub> / 20</th>\n            <th><i>f</i><sub>i</sub><i>u</i><sub>i</sub></th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr><td>500 &minus; 520</td><td>12</td><td>510</td><td>-40</td><td>-2</td><td>-24</td></tr>\n          <tr><td>520 &minus; 540</td><td>14</td><td>530</td><td>-20</td><td>-1</td><td>-14</td></tr>\n          <tr><td>540 &minus; 560</td><td>8</td><td>550 (<i>a</i>)</td><td>0</td><td>0</td><td>0</td></tr>\n          <tr><td>560 &minus; 580</td><td>6</td><td>570</td><td>20</td><td>1</td><td>6</td></tr>\n          <tr><td>580 &minus; 600</td><td>10</td><td>590</td><td>40</td><td>2</td><td>20</td></tr>\n          <tr style=\"font-weight: 700; background: rgba(0, 230, 118, 0.15);\">\n            <td><b>Total</b></td>\n            <td><b>&sum; <i>f</i><sub>i</sub> = 50</b></td>\n            <td>&mdash;</td>\n            <td>&mdash;</td>\n            <td>&mdash;</td>\n            <td><b>&sum; <i>f</i><sub>i</sub><i>u</i><sub>i</sub> = &minus;12</b></td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 2: Calculate Mean using Step-Deviation</b></div>\n    <div class=\"sol-step\"><i>x̄</i> = <i>a</i> + [<span class=\"frac\"><span class=\"num\">&sum; f<sub>i</sub> u<sub>i</sub></span><span class=\"den\">&sum; f<sub>i</sub></span></span>] &times; <i>h</i></div>\n    <div class=\"sol-step\">&rArr; <i>x̄</i> = 550 + [<span class=\"frac\"><span class=\"num\">&minus;12</span><span class=\"den\">50</span></span>] &times; 20</div>\n    <div class=\"sol-step\">&rArr; <i>x̄</i> = 550 &minus; <span class=\"frac\"><span class=\"num\">240</span><span class=\"den\">50</span></span> = 550 &minus; 4.80 = <b>545.20</b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>Mean daily wages of the workers = &inr; 545.20</b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 3 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q3</span> Finding Missing Frequency <i>f</i> (Mean Pocket Allowance = &inr; 18)</div>\n  <div class=\"q-text\">\n    The following distribution shows the daily pocket allowance of children of a locality. The mean pocket allowance is <b>&inr; 18</b>. Find the missing frequency <b><i>f</i></b>.\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Step 1: Direct Method Calculation Table</b></div>\n    <div class=\"sol-step\">Let Assumed Mean <i>a</i> = 18. Then <i>d</i><sub>i</sub> = <i>x</i><sub>i</sub> &minus; 18.</div>\n    <div class=\"table-card\">\n      <table>\n        <thead>\n          <tr>\n            <th>Daily Allowance (&inr;)</th>\n            <th>Number of Children (<i>f</i><sub>i</sub>)</th>\n            <th>Class Mark (<i>x</i><sub>i</sub>)</th>\n            <th><i>d</i><sub>i</sub> = <i>x</i><sub>i</sub> &minus; 18</th>\n            <th><i>f</i><sub>i</sub><i>d</i><sub>i</sub></th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr><td>11 &minus; 13</td><td>7</td><td>12</td><td>-6</td><td>-42</td></tr>\n          <tr><td>13 &minus; 15</td><td>6</td><td>14</td><td>-4</td><td>-24</td></tr>\n          <tr><td>15 &minus; 17</td><td>9</td><td>16</td><td>-2</td><td>-18</td></tr>\n          <tr><td>17 &minus; 19</td><td>13</td><td>18 (<i>a</i>)</td><td>0</td><td>0</td></tr>\n          <tr><td>19 &minus; 21</td><td><i>f</i></td><td>20</td><td>2</td><td>2<i>f</i></td></tr>\n          <tr><td>21 &minus; 23</td><td>5</td><td>22</td><td>4</td><td>20</td></tr>\n          <tr><td>23 &minus; 25</td><td>4</td><td>24</td><td>6</td><td>24</td></tr>\n          <tr style=\"font-weight: 700; background: rgba(0, 230, 118, 0.15);\">\n            <td><b>Total</b></td>\n            <td><b>&sum; <i>f</i><sub>i</sub> = 44 + <i>f</i></b></td>\n            <td>&mdash;</td>\n            <td>&mdash;</td>\n            <td><b>&sum; <i>f</i><sub>i</sub><i>d</i><sub>i</sub> = 2<i>f</i> &minus; 40</b></td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 2: Solve for <i>f</i> using Assumed Mean formula</b></div>\n    <div class=\"sol-step\">Mean <i>x̄</i> = <i>a</i> + <span class=\"frac\"><span class=\"num\">&sum; f<sub>i</sub> d<sub>i</sub></span><span class=\"den\">&sum; f<sub>i</sub></span></span></div>\n    <div class=\"sol-step\">Given Mean = 18 and <i>a</i> = 18:</div>\n    <div class=\"sol-step\">&rArr; 18 = 18 + <span class=\"frac\"><span class=\"num\">2<i>f</i> &minus; 40</span><span class=\"den\">44 + <i>f</i></span></span></div>\n    <div class=\"sol-step\">&rArr; <span class=\"frac\"><span class=\"num\">2<i>f</i> &minus; 40</span><span class=\"den\">44 + <i>f</i></span></span> = 0</div>\n    <div class=\"sol-step\">&rArr; 2<i>f</i> &minus; 40 = 0 &rArr; 2<i>f</i> = 40 &rArr; <b><i>f</i> = 20</b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>Missing frequency <i>f</i> = 20</b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 4 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q4</span> Heart Beats per Minute of 30 Women</div>\n  <div class=\"q-text\">\n    Thirty women were examined in a hospital by a doctor and the number of heart beats per minute were recorded and summarized as follows. Find the mean heart beats per minute for these women, choosing a suitable method.\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Step 1: Step-Deviation Calculation Table</b></div>\n    <div class=\"sol-step\">Class size <i>h</i> = 3. Let Assumed Mean <i>a</i> = 75.5. Then <i>u</i><sub>i</sub> = <span class=\"frac\"><span class=\"num\"><i>x</i><sub>i</sub> &minus; 75.5</span><span class=\"den\">3</span></span>.</div>\n    <div class=\"table-card\">\n      <table>\n        <thead>\n          <tr>\n            <th>Heart Beats / min</th>\n            <th>Number of Women (<i>f</i><sub>i</sub>)</th>\n            <th>Class Mark (<i>x</i><sub>i</sub>)</th>\n            <th><i>u</i><sub>i</sub> = (<i>x</i><sub>i</sub> &minus; 75.5)/3</th>\n            <th><i>f</i><sub>i</sub><i>u</i><sub>i</sub></th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr><td>65 &minus; 68</td><td>2</td><td>66.5</td><td>-3</td><td>-6</td></tr>\n          <tr><td>68 &minus; 71</td><td>4</td><td>69.5</td><td>-2</td><td>-8</td></tr>\n          <tr><td>71 &minus; 74</td><td>3</td><td>72.5</td><td>-1</td><td>-3</td></tr>\n          <tr><td>74 &minus; 77</td><td>8</td><td>75.5 (<i>a</i>)</td><td>0</td><td>0</td></tr>\n          <tr><td>77 &minus; 80</td><td>7</td><td>78.5</td><td>1</td><td>7</td></tr>\n          <tr><td>80 &minus; 83</td><td>4</td><td>81.5</td><td>2</td><td>8</td></tr>\n          <tr><td>83 &minus; 86</td><td>2</td><td>84.5</td><td>3</td><td>6</td></tr>\n          <tr style=\"font-weight: 700; background: rgba(0, 230, 118, 0.15);\">\n            <td><b>Total</b></td>\n            <td><b>&sum; <i>f</i><sub>i</sub> = 30</b></td>\n            <td>&mdash;</td>\n            <td>&mdash;</td>\n            <td><b>&sum; <i>f</i><sub>i</sub><i>u</i><sub>i</sub> = 4</b></td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 2: Calculate Mean</b></div>\n    <div class=\"sol-step\"><i>x̄</i> = <i>a</i> + [<span class=\"frac\"><span class=\"num\">&sum; f<sub>i</sub> u<sub>i</sub></span><span class=\"den\">&sum; f<sub>i</sub></span></span>] &times; <i>h</i> = 75.5 + [<span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">30</span></span>] &times; 3</div>\n    <div class=\"sol-step\">&rArr; <i>x̄</i> = 75.5 + <span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">10</span></span> = 75.5 + 0.4 = <b>75.9</b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>Mean heart beats per minute = 75.9 beats/min</b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 5 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q5</span> Mean Number of Mangoes Kept in Packing Boxes</div>\n  <div class=\"q-text\">\n    In a retail market, fruit vendors were selling mangoes kept in packing boxes. These boxes contained varying number of mangoes. The following was the distribution of mangoes according to the number of boxes. Find the mean number of mangoes kept in a packing box. Which method of finding the mean did you choose?\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Step 1: Note on Non-Continuous Class Intervals</b></div>\n    <div class=\"sol-step\">The given class intervals (50&minus;52, 53&minus;55, etc.) are inclusive. Converting to continuous limits gives 49.5&minus;52.5, 52.5&minus;55.5, with class size <i>h</i> = 3.</div>\n    <div class=\"sol-step\">The class marks <i>x</i><sub>i</sub> remain: 51, 54, 57, 60, 63. Let Assumed Mean <i>a</i> = 57, <i>h</i> = 3.</div>\n\n    <div class=\"table-card\">\n      <table>\n        <thead>\n          <tr>\n            <th>Number of Mangoes</th>\n            <th>Number of Boxes (<i>f</i><sub>i</sub>)</th>\n            <th>Class Mark (<i>x</i><sub>i</sub>)</th>\n            <th><i>u</i><sub>i</sub> = (<i>x</i><sub>i</sub> &minus; 57)/3</th>\n            <th><i>f</i><sub>i</sub><i>u</i><sub>i</sub></th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr><td>50 &minus; 52</td><td>15</td><td>51</td><td>-2</td><td>-30</td></tr>\n          <tr><td>53 &minus; 55</td><td>110</td><td>54</td><td>-1</td><td>-110</td></tr>\n          <tr><td>56 &minus; 58</td><td>135</td><td>57 (<i>a</i>)</td><td>0</td><td>0</td></tr>\n          <tr><td>59 &minus; 61</td><td>115</td><td>60</td><td>1</td><td>115</td></tr>\n          <tr><td>62 &minus; 64</td><td>25</td><td>63</td><td>2</td><td>50</td></tr>\n          <tr style=\"font-weight: 700; background: rgba(0, 230, 118, 0.15);\">\n            <td><b>Total</b></td>\n            <td><b>&sum; <i>f</i><sub>i</sub> = 400</b></td>\n            <td>&mdash;</td>\n            <td>&mdash;</td>\n            <td><b>&sum; <i>f</i><sub>i</sub><i>u</i><sub>i</sub> = 25</b></td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 2: Calculate Mean using Step-Deviation</b></div>\n    <div class=\"sol-step\"><i>x̄</i> = <i>a</i> + [<span class=\"frac\"><span class=\"num\">&sum; f<sub>i</sub> u<sub>i</sub></span><span class=\"den\">&sum; f<sub>i</sub></span></span>] &times; <i>h</i> = 57 + [<span class=\"frac\"><span class=\"num\">25</span><span class=\"den\">400</span></span>] &times; 3</div>\n    <div class=\"sol-step\">&rArr; <i>x̄</i> = 57 + <span class=\"frac\"><span class=\"num\">75</span><span class=\"den\">400</span></span> = 57 + <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">16</span></span> = 57 + 0.1875 &approx; <b>57.19</b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>Mean number of mangoes per box = 57.19 mangoes</b><br/>\n      <span class=\"reason\">[Step-deviation method was chosen because class size is uniform (h = 3) and f values are large]</span>\n    </div>\n  </div>\n</div>\n\n<!-- Question 6 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q6</span> Daily Expenditure on Food of 25 Households</div>\n  <div class=\"q-text\">\n    The table below shows the daily expenditure on food of 25 households in a locality. Find the mean daily expenditure on food by a suitable method.\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Step 1: Step-Deviation Table</b></div>\n    <div class=\"sol-step\">Class size <i>h</i> = 50. Let Assumed Mean <i>a</i> = 225. Then <i>u</i><sub>i</sub> = <span class=\"frac\"><span class=\"num\"><i>x</i><sub>i</sub> &minus; 225</span><span class=\"den\">50</span></span>.</div>\n    <div class=\"table-card\">\n      <table>\n        <thead>\n          <tr>\n            <th>Daily Expenditure (&inr;)</th>\n            <th>Number of Households (<i>f</i><sub>i</sub>)</th>\n            <th>Class Mark (<i>x</i><sub>i</sub>)</th>\n            <th><i>u</i><sub>i</sub> = (<i>x</i><sub>i</sub> &minus; 225)/50</th>\n            <th><i>f</i><sub>i</sub><i>u</i><sub>i</sub></th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr><td>100 &minus; 150</td><td>4</td><td>125</td><td>-2</td><td>-8</td></tr>\n          <tr><td>150 &minus; 200</td><td>5</td><td>175</td><td>-1</td><td>-5</td></tr>\n          <tr><td>200 &minus; 250</td><td>12</td><td>225 (<i>a</i>)</td><td>0</td><td>0</td></tr>\n          <tr><td>250 &minus; 300</td><td>2</td><td>275</td><td>1</td><td>2</td></tr>\n          <tr><td>300 &minus; 350</td><td>2</td><td>325</td><td>2</td><td>4</td></tr>\n          <tr style=\"font-weight: 700; background: rgba(0, 230, 118, 0.15);\">\n            <td><b>Total</b></td>\n            <td><b>&sum; <i>f</i><sub>i</sub> = 25</b></td>\n            <td>&mdash;</td>\n            <td>&mdash;</td>\n            <td><b>&sum; <i>f</i><sub>i</sub><i>u</i><sub>i</sub> = &minus;7</b></td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 2: Calculate Mean Expenditure</b></div>\n    <div class=\"sol-step\"><i>x̄</i> = <i>a</i> + [<span class=\"frac\"><span class=\"num\">&sum; f<sub>i</sub> u<sub>i</sub></span><span class=\"den\">&sum; f<sub>i</sub></span></span>] &times; <i>h</i> = 225 + [<span class=\"frac\"><span class=\"num\">&minus;7</span><span class=\"den\">25</span></span>] &times; 50</div>\n    <div class=\"sol-step\">&rArr; <i>x̄</i> = 225 &minus; (7 &times; 2) = 225 &minus; 14 = <b>211</b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>Mean daily expenditure on food = &inr; 211</b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 7 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q7</span> Concentration of Sulphur Dioxide (SO<sub>2</sub>) in Air</div>\n  <div class=\"q-text\">\n    To find out the concentration of SO<sub>2</sub> in the air (in parts per million, i.e., ppm), the data was collected for 30 localities in a certain city and is presented below. Find the mean concentration of SO<sub>2</sub> in the air.\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Step 1: Direct Method Calculation Table</b></div>\n    <div class=\"table-card\">\n      <table>\n        <thead>\n          <tr>\n            <th>Concentration of SO<sub>2</sub> (ppm)</th>\n            <th>Frequency (<i>f</i><sub>i</sub>)</th>\n            <th>Class Mark (<i>x</i><sub>i</sub>)</th>\n            <th><i>f</i><sub>i</sub><i>x</i><sub>i</sub></th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr><td>0.00 &minus; 0.04</td><td>4</td><td>0.02</td><td>0.08</td></tr>\n          <tr><td>0.04 &minus; 0.08</td><td>9</td><td>0.06</td><td>0.54</td></tr>\n          <tr><td>0.08 &minus; 0.12</td><td>9</td><td>0.10</td><td>0.90</td></tr>\n          <tr><td>0.12 &minus; 0.16</td><td>2</td><td>0.14</td><td>0.28</td></tr>\n          <tr><td>0.16 &minus; 0.20</td><td>4</td><td>0.18</td><td>0.72</td></tr>\n          <tr><td>0.20 &minus; 0.24</td><td>2</td><td>0.22</td><td>0.44</td></tr>\n          <tr style=\"font-weight: 700; background: rgba(0, 230, 118, 0.15);\">\n            <td><b>Total</b></td>\n            <td><b>&sum; <i>f</i><sub>i</sub> = 30</b></td>\n            <td>&mdash;</td>\n            <td><b>&sum; <i>f</i><sub>i</sub><i>x</i><sub>i</sub> = 2.96</b></td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 2: Calculate Mean Concentration</b></div>\n    <div class=\"sol-step\">Mean <i>x̄</i> = <span class=\"frac\"><span class=\"num\">&sum; f<sub>i</sub> x<sub>i</sub></span><span class=\"den\">&sum; f<sub>i</sub></span></span> = <span class=\"frac\"><span class=\"num\">2.96</span><span class=\"den\">30</span></span> &approx; <b>0.099 ppm</b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>Mean concentration of SO<sub>2</sub> in air &approx; 0.099 ppm</b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 8 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q8</span> Absentee Record of 40 Students (Unequal Class Intervals)</div>\n  <div class=\"q-text\">\n    A class teacher has the following absentee record of 40 students of a class for the whole term. Find the mean number of days a student was absent.\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Step 1: Notice on Class Sizes</b></div>\n    <div class=\"sol-step\">The class intervals have unequal widths (6, 4, 4, 6, 8, 10, 2). Hence, the Step-Deviation method cannot be used directly with a common <i>h</i>. We use the <b>Direct Method</b>.</div>\n\n    <div class=\"table-card\">\n      <table>\n        <thead>\n          <tr>\n            <th>Number of Days</th>\n            <th>Number of Students (<i>f</i><sub>i</sub>)</th>\n            <th>Class Mark (<i>x</i><sub>i</sub>)</th>\n            <th><i>f</i><sub>i</sub><i>x</i><sub>i</sub></th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr><td>0 &minus; 6</td><td>11</td><td>3</td><td>33</td></tr>\n          <tr><td>6 &minus; 10</td><td>10</td><td>8</td><td>80</td></tr>\n          <tr><td>10 &minus; 14</td><td>7</td><td>12</td><td>84</td></tr>\n          <tr><td>14 &minus; 20</td><td>4</td><td>17</td><td>68</td></tr>\n          <tr><td>20 &minus; 28</td><td>4</td><td>24</td><td>96</td></tr>\n          <tr><td>28 &minus; 38</td><td>3</td><td>33</td><td>99</td></tr>\n          <tr><td>38 &minus; 40</td><td>1</td><td>39</td><td>39</td></tr>\n          <tr style=\"font-weight: 700; background: rgba(0, 230, 118, 0.15);\">\n            <td><b>Total</b></td>\n            <td><b>&sum; <i>f</i><sub>i</sub> = 40</b></td>\n            <td>&mdash;</td>\n            <td><b>&sum; <i>f</i><sub>i</sub><i>x</i><sub>i</sub> = 499</b></td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 2: Calculate Mean Days Absent</b></div>\n    <div class=\"sol-step\">Mean <i>x̄</i> = <span class=\"frac\"><span class=\"num\">&sum; f<sub>i</sub> x<sub>i</sub></span><span class=\"den\">&sum; f<sub>i</sub></span></span> = <span class=\"frac\"><span class=\"num\">499</span><span class=\"den\">40</span></span> = <b>12.475 &approx; 12.48 days</b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>Mean number of days a student was absent = 12.48 days</b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 9 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q9</span> Literacy Rate in 35 Cities</div>\n  <div class=\"q-text\">\n    The following table gives the literacy rate (in percentage) of 35 cities. Find the mean literacy rate.\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Step 1: Step-Deviation Method Table</b></div>\n    <div class=\"sol-step\">Class size <i>h</i> = 10. Let Assumed Mean <i>a</i> = 70. Then <i>u</i><sub>i</sub> = <span class=\"frac\"><span class=\"num\"><i>x</i><sub>i</sub> &minus; 70</span><span class=\"den\">10</span></span>.</div>\n    <div class=\"table-card\">\n      <table>\n        <thead>\n          <tr>\n            <th>Literacy Rate (%)</th>\n            <th>Number of Cities (<i>f</i><sub>i</sub>)</th>\n            <th>Class Mark (<i>x</i><sub>i</sub>)</th>\n            <th><i>u</i><sub>i</sub> = (<i>x</i><sub>i</sub> &minus; 70)/10</th>\n            <th><i>f</i><sub>i</sub><i>u</i><sub>i</sub></th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr><td>45 &minus; 55</td><td>3</td><td>50</td><td>-2</td><td>-6</td></tr>\n          <tr><td>55 &minus; 65</td><td>10</td><td>60</td><td>-1</td><td>-10</td></tr>\n          <tr><td>65 &minus; 75</td><td>11</td><td>70 (<i>a</i>)</td><td>0</td><td>0</td></tr>\n          <tr><td>75 &minus; 85</td><td>8</td><td>80</td><td>1</td><td>8</td></tr>\n          <tr><td>85 &minus; 95</td><td>3</td><td>90</td><td>2</td><td>6</td></tr>\n          <tr style=\"font-weight: 700; background: rgba(0, 230, 118, 0.15);\">\n            <td><b>Total</b></td>\n            <td><b>&sum; <i>f</i><sub>i</sub> = 35</b></td>\n            <td>&mdash;</td>\n            <td>&mdash;</td>\n            <td><b>&sum; <i>f</i><sub>i</sub><i>u</i><sub>i</sub> = &minus;2</b></td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 2: Calculate Mean Literacy Rate</b></div>\n    <div class=\"sol-step\"><i>x̄</i> = <i>a</i> + [<span class=\"frac\"><span class=\"num\">&sum; f<sub>i</sub> u<sub>i</sub></span><span class=\"den\">&sum; f<sub>i</sub></span></span>] &times; <i>h</i> = 70 + [<span class=\"frac\"><span class=\"num\">&minus;2</span><span class=\"den\">35</span></span>] &times; 10</div>\n    <div class=\"sol-step\">&rArr; <i>x̄</i> = 70 &minus; <span class=\"frac\"><span class=\"num\">20</span><span class=\"den\">35</span></span> = 70 &minus; <span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">7</span></span> = 70 &minus; 0.57 = <b>69.43%</b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>Mean literacy rate = 69.43%</b>\n    </div>\n  </div>\n</div>\n",
+    exercise2: "\n<div class=\"ex-header\">\n  <div class=\"ex-badge\">Exercise 13.2 &bull; 6 Questions</div>\n  <div class=\"ex-title\">Mode of Grouped Data</div>\n  <div class=\"ex-desc\">Finding the modal class, computing mode using the grouped formula, and comparing mode with arithmetic mean.</div>\n</div>\n\n<!-- Question 1 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q1</span> Ages of Patients Admitted in a Hospital</div>\n  <div class=\"q-text\">\n    The following table shows the ages of the patients admitted in a hospital during a year. Find the mode and the mean of the data given above. Compare and interpret the two measures of central tendency.\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Step 1: Calculate the Mode</b></div>\n    <div class=\"sol-step\">The maximum class frequency is <b>23</b>, which belongs to class interval <b>35 &minus; 45</b>.</div>\n    <div class=\"sol-step\">&rArr; <b>Modal Class = 35 &minus; 45</b></div>\n    <div class=\"sol-step\">Lower limit (<i>l</i>) = 35, Class size (<i>h</i>) = 10</div>\n    <div class=\"sol-step\"><i>f</i><sub>1</sub> = 23, <i>f</i><sub>0</sub> = 21, <i>f</i><sub>2</sub> = 14</div>\n    <div class=\"sol-step\">Mode = <i>l</i> + [<span class=\"frac\"><span class=\"num\">f<sub>1</sub> &minus; f<sub>0</sub></span><span class=\"den\">2f<sub>1</sub> &minus; f<sub>0</sub> &minus; f<sub>2</sub></span></span>] &times; <i>h</i></div>\n    <div class=\"sol-step\">&rArr; Mode = 35 + [<span class=\"frac\"><span class=\"num\">23 &minus; 21</span><span class=\"den\">2(23) &minus; 21 &minus; 14</span></span>] &times; 10</div>\n    <div class=\"sol-step\">&rArr; Mode = 35 + [<span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">46 &minus; 35</span></span>] &times; 10 = 35 + <span class=\"frac\"><span class=\"num\">20</span><span class=\"den\">11</span></span> = 35 + 1.82 = <b>36.82 years &approx; 36.8 years</b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 2: Calculate the Mean</b></div>\n    <div class=\"sol-step\">Let Assumed Mean <i>a</i> = 30, <i>h</i> = 10.</div>\n    <div class=\"sol-step\">&sum; <i>f</i><sub>i</sub> = 80, &sum; <i>f</i><sub>i</sub><i>u</i><sub>i</sub> = 43</div>\n    <div class=\"sol-step\">Mean <i>x̄</i> = 30 + [<span class=\"frac\"><span class=\"num\">43</span><span class=\"den\">80</span></span>] &times; 10 = 30 + 5.375 = <b>35.37 years</b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>Mode = 36.8 years</b> &nbsp;|&nbsp; <b>Mean = 35.37 years</b><br/>\n      <span class=\"reason\">[Interpretation: Maximum number of patients admitted were of age 36.8 years, whereas the average age of all patients was 35.37 years]</span>\n    </div>\n  </div>\n</div>\n\n<!-- Question 2 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q2</span> Modal Lifetime of 225 Electrical Components</div>\n  <div class=\"q-text\">\n    The following data gives the information on the observed lifetimes (in hours) of 225 electrical components. Determine the modal lifetimes of the components.\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Step 1: Identify the Modal Class</b></div>\n    <div class=\"sol-step\">The maximum class frequency is <b>61</b>, which belongs to interval <b>60 &minus; 80</b>.</div>\n    <div class=\"sol-step\">&rArr; <b>Modal Class = 60 &minus; 80</b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 2: Identify parameters</b></div>\n    <div class=\"sol-step\">Lower limit (<i>l</i>) = 60, Class size (<i>h</i>) = 20</div>\n    <div class=\"sol-step\"><i>f</i><sub>1</sub> = 61 (modal class frequency)</div>\n    <div class=\"sol-step\"><i>f</i><sub>0</sub> = 52 (preceding class frequency)</div>\n    <div class=\"sol-step\"><i>f</i><sub>2</sub> = 38 (succeeding class frequency)</div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 3: Calculate Mode</b></div>\n    <div class=\"sol-step\">Mode = <i>l</i> + [<span class=\"frac\"><span class=\"num\">f<sub>1</sub> &minus; f<sub>0</sub></span><span class=\"den\">2f<sub>1</sub> &minus; f<sub>0</sub> &minus; f<sub>2</sub></span></span>] &times; <i>h</i></div>\n    <div class=\"sol-step\">&rArr; Mode = 60 + [<span class=\"frac\"><span class=\"num\">61 &minus; 52</span><span class=\"den\">2(61) &minus; 52 &minus; 38</span></span>] &times; 20</div>\n    <div class=\"sol-step\">&rArr; Mode = 60 + [<span class=\"frac\"><span class=\"num\">9</span><span class=\"den\">122 &minus; 90</span></span>] &times; 20 = 60 + [<span class=\"frac\"><span class=\"num\">9</span><span class=\"den\">32</span></span>] &times; 20</div>\n    <div class=\"sol-step\">&rArr; Mode = 60 + <span class=\"frac\"><span class=\"num\">180</span><span class=\"den\">32</span></span> = 60 + 5.625 = <b>65.625 hours</b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>Modal lifetime of electrical components = 65.625 hours</b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 3 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q3</span> Monthly Household Expenditure of 200 Families</div>\n  <div class=\"q-text\">\n    The following data gives the distribution of total monthly household expenditure of 200 families of a village. Find the modal monthly expenditure of the families. Also, find the mean monthly expenditure.\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Step 1: Calculate the Mode</b></div>\n    <div class=\"sol-step\">The maximum frequency is <b>40</b> in class interval <b>1500 &minus; 2000</b>.</div>\n    <div class=\"sol-step\">&rArr; Modal Class = 1500 &minus; 2000; <i>l</i> = 1500, <i>h</i> = 500</div>\n    <div class=\"sol-step\"><i>f</i><sub>1</sub> = 40, <i>f</i><sub>0</sub> = 24, <i>f</i><sub>2</sub> = 33</div>\n    <div class=\"sol-step\">Mode = 1500 + [<span class=\"frac\"><span class=\"num\">40 &minus; 24</span><span class=\"den\">2(40) &minus; 24 &minus; 33</span></span>] &times; 500</div>\n    <div class=\"sol-step\">&rArr; Mode = 1500 + [<span class=\"frac\"><span class=\"num\">16</span><span class=\"den\">80 &minus; 57</span></span>] &times; 500 = 1500 + <span class=\"frac\"><span class=\"num\">8000</span><span class=\"den\">23</span></span> = 1500 + 347.83 = <b>&inr; 1847.83</b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 2: Calculate the Mean</b></div>\n    <div class=\"sol-step\">Let Assumed Mean <i>a</i> = 2750, <i>h</i> = 500.</div>\n    <div class=\"sol-step\">&sum; <i>f</i><sub>i</sub> = 200, &sum; <i>f</i><sub>i</sub><i>u</i><sub>i</sub> = &minus;35</div>\n    <div class=\"sol-step\">Mean <i>x̄</i> = 2750 + [<span class=\"frac\"><span class=\"num\">&minus;35</span><span class=\"den\">200</span></span>] &times; 500 = 2750 &minus; <span class=\"frac\"><span class=\"num\">175</span><span class=\"den\">2</span></span> = 2750 &minus; 87.50 = <b>&inr; 2662.50</b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>Modal monthly expenditure = &inr; 1847.83</b><br/>\n      &check; <b>Mean monthly expenditure = &inr; 2662.50</b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 4 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q4</span> State-wise Teacher-Student Ratio in Higher Secondary Schools</div>\n  <div class=\"q-text\">\n    The following distribution gives the state-wise teacher-student ratio in higher secondary schools of India. Find the mode and mean of this data. Interpret the two measures.\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Step 1: Calculate the Mode</b></div>\n    <div class=\"sol-step\">Maximum class frequency is <b>10</b>, corresponding to class interval <b>30 &minus; 35</b>.</div>\n    <div class=\"sol-step\">&rArr; Modal Class = 30 &minus; 35; <i>l</i> = 30, <i>h</i> = 5</div>\n    <div class=\"sol-step\"><i>f</i><sub>1</sub> = 10, <i>f</i><sub>0</sub> = 9, <i>f</i><sub>2</sub> = 3</div>\n    <div class=\"sol-step\">Mode = 30 + [<span class=\"frac\"><span class=\"num\">10 &minus; 9</span><span class=\"den\">2(10) &minus; 9 &minus; 3</span></span>] &times; 5</div>\n    <div class=\"sol-step\">&rArr; Mode = 30 + [<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">20 &minus; 12</span></span>] &times; 5 = 30 + <span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">8</span></span> = 30 + 0.625 = <b>30.63 &approx; 30.6</b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 2: Calculate the Mean</b></div>\n    <div class=\"sol-step\">Let Assumed Mean <i>a</i> = 32.5, <i>h</i> = 5.</div>\n    <div class=\"sol-step\">&sum; <i>f</i><sub>i</sub> = 35, &sum; <i>f</i><sub>i</sub><i>u</i><sub>i</sub> = &minus;23</div>\n    <div class=\"sol-step\">Mean <i>x̄</i> = 32.5 + [<span class=\"frac\"><span class=\"num\">&minus;23</span><span class=\"den\">35</span></span>] &times; 5 = 32.5 &minus; <span class=\"frac\"><span class=\"num\">23</span><span class=\"den\">7</span></span> = 32.5 &minus; 3.29 = <b>29.2</b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>Mode = 30.6</b> &nbsp;|&nbsp; <b>Mean = 29.2</b><br/>\n      <span class=\"reason\">[Interpretation: Most states have a student-teacher ratio of 30.6, while on average across all states the ratio is 29.2 students per teacher]</span>\n    </div>\n  </div>\n</div>\n\n<!-- Question 5 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q5</span> Runs Scored by Top Batsmen of the World in ODIs</div>\n  <div class=\"q-text\">\n    The given distribution shows the number of runs scored by some top batsmen of the world in one-day international cricket matches. Find the mode of the data.\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Step 1: Identify Modal Class</b></div>\n    <div class=\"sol-step\">Maximum frequency is <b>18</b>, which corresponds to interval <b>4000 &minus; 5000</b>.</div>\n    <div class=\"sol-step\">&rArr; <b>Modal Class = 4000 &minus; 5000</b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 2: Identify parameters</b></div>\n    <div class=\"sol-step\"><i>l</i> = 4000, <i>h</i> = 1000</div>\n    <div class=\"sol-step\"><i>f</i><sub>1</sub> = 18, <i>f</i><sub>0</sub> = 4, <i>f</i><sub>2</sub> = 9</div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 3: Calculate Mode</b></div>\n    <div class=\"sol-step\">Mode = <i>l</i> + [<span class=\"frac\"><span class=\"num\">f<sub>1</sub> &minus; f<sub>0</sub></span><span class=\"den\">2f<sub>1</sub> &minus; f<sub>0</sub> &minus; f<sub>2</sub></span></span>] &times; <i>h</i></div>\n    <div class=\"sol-step\">&rArr; Mode = 4000 + [<span class=\"frac\"><span class=\"num\">18 &minus; 4</span><span class=\"den\">2(18) &minus; 4 &minus; 9</span></span>] &times; 1000</div>\n    <div class=\"sol-step\">&rArr; Mode = 4000 + [<span class=\"frac\"><span class=\"num\">14</span><span class=\"den\">36 &minus; 13</span></span>] &times; 1000 = 4000 + <span class=\"frac\"><span class=\"num\">14000</span><span class=\"den\">23</span></span></div>\n    <div class=\"sol-step\">&rArr; Mode = 4000 + 608.695 = <b>4608.7 runs</b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>Mode of the data = 4608.7 runs</b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 6 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q6</span> Number of Cars Passing Through a Spot on Road</div>\n  <div class=\"q-text\">\n    A student noted the number of cars passing through a spot on a road for 100 periods each of 3 minutes and summarized it in the table given below. Find the mode of the data.\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Step 1: Identify Modal Class</b></div>\n    <div class=\"sol-step\">Maximum class frequency is <b>20</b> in interval <b>40 &minus; 50</b>.</div>\n    <div class=\"sol-step\">&rArr; <b>Modal Class = 40 &minus; 50</b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 2: Identify parameters</b></div>\n    <div class=\"sol-step\"><i>l</i> = 40, <i>h</i> = 10</div>\n    <div class=\"sol-step\"><i>f</i><sub>1</sub> = 20, <i>f</i><sub>0</sub> = 12, <i>f</i><sub>2</sub> = 11</div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 3: Calculate Mode</b></div>\n    <div class=\"sol-step\">Mode = <i>l</i> + [<span class=\"frac\"><span class=\"num\">f<sub>1</sub> &minus; f<sub>0</sub></span><span class=\"den\">2f<sub>1</sub> &minus; f<sub>0</sub> &minus; f<sub>2</sub></span></span>] &times; <i>h</i></div>\n    <div class=\"sol-step\">&rArr; Mode = 40 + [<span class=\"frac\"><span class=\"num\">20 &minus; 12</span><span class=\"den\">2(20) &minus; 12 &minus; 11</span></span>] &times; 10</div>\n    <div class=\"sol-step\">&rArr; Mode = 40 + [<span class=\"frac\"><span class=\"num\">8</span><span class=\"den\">40 &minus; 23</span></span>] &times; 10 = 40 + <span class=\"frac\"><span class=\"num\">80</span><span class=\"den\">17</span></span></div>\n    <div class=\"sol-step\">&rArr; Mode = 40 + 4.706 = <b>44.7 cars</b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>Mode of the data = 44.7 cars</b>\n    </div>\n  </div>\n</div>\n",
+    exercise3: "\n<div class=\"ex-header\">\n  <div class=\"ex-badge\">Exercise 13.3 &bull; 7 Questions</div>\n  <div class=\"ex-title\">Median of Grouped Data</div>\n  <div class=\"ex-desc\">Cumulative frequency distribution, finding median class, determining unknown missing frequencies <i>x</i> and <i>y</i>, and continuous boundary adjustments.</div>\n</div>\n\n<!-- Question 1 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q1</span> Monthly Consumption of Electricity (Median, Mean, Mode)</div>\n  <div class=\"q-text\">\n    The following frequency distribution gives the monthly consumption of electricity of 68 consumers of a locality. Find the median, mean and mode of the data and compare them.\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Step 1: Master Table with Cumulative Frequencies</b></div>\n    <div class=\"table-card\">\n      <table>\n        <thead>\n          <tr>\n            <th>Monthly Consumption (units)</th>\n            <th>Number of Consumers (<i>f</i><sub>i</sub>)</th>\n            <th>Cumulative Frequency (<i>cf</i>)</th>\n            <th>Class Mark (<i>x</i><sub>i</sub>)</th>\n            <th><i>u</i><sub>i</sub> = (<i>x</i><sub>i</sub> &minus; 135)/20</th>\n            <th><i>f</i><sub>i</sub><i>u</i><sub>i</sub></th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr><td>65 &minus; 85</td><td>4</td><td>4</td><td>75</td><td>-3</td><td>-12</td></tr>\n          <tr><td>85 &minus; 105</td><td>5</td><td>9</td><td>95</td><td>-2</td><td>-10</td></tr>\n          <tr><td>105 &minus; 125</td><td>13</td><td>22</td><td>115</td><td>-1</td><td>-13</td></tr>\n          <tr><td>125 &minus; 145</td><td>20</td><td>42</td><td>135 (<i>a</i>)</td><td>0</td><td>0</td></tr>\n          <tr><td>145 &minus; 165</td><td>14</td><td>56</td><td>155</td><td>1</td><td>14</td></tr>\n          <tr><td>165 &minus; 185</td><td>8</td><td>64</td><td>175</td><td>2</td><td>16</td></tr>\n          <tr><td>185 &minus; 205</td><td>4</td><td>68</td><td>195</td><td>3</td><td>12</td></tr>\n          <tr style=\"font-weight: 700; background: rgba(0, 230, 118, 0.15);\">\n            <td><b>Total</b></td>\n            <td><b><i>n</i> = 68</b></td>\n            <td>&mdash;</td>\n            <td>&mdash;</td>\n            <td>&mdash;</td>\n            <td><b>&sum; <i>f</i><sub>i</sub><i>u</i><sub>i</sub> = 7</b></td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 2: Calculate the Median</b></div>\n    <div class=\"sol-step\"><i>n</i> = 68 &rArr; <span class=\"frac\"><span class=\"num\">n</span><span class=\"den\">2</span></span> = <span class=\"frac\"><span class=\"num\">68</span><span class=\"den\">2</span></span> = <b>34</b>.</div>\n    <div class=\"sol-step\">The cumulative frequency just greater than 34 is 42, which corresponds to interval <b>125 &minus; 145</b>.</div>\n    <div class=\"sol-step\">&rArr; <b>Median Class = 125 &minus; 145</b>; <i>l</i> = 125, <i>h</i> = 20, <i>f</i> = 20, <i>cf</i> = 22</div>\n    <div class=\"sol-step\">Median = <i>l</i> + [<span class=\"frac\"><span class=\"num\"><span class=\"frac\"><span class=\"num\">n</span><span class=\"den\">2</span></span> &minus; cf</span><span class=\"den\">f</span></span>] &times; <i>h</i> = 125 + [<span class=\"frac\"><span class=\"num\">34 &minus; 22</span><span class=\"den\">20</span></span>] &times; 20 = 125 + 12 = <b>137 units</b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 3: Calculate Mean &amp; Mode</b></div>\n    <div class=\"sol-step\"><b>Mean:</b> <i>x̄</i> = <i>a</i> + [<span class=\"frac\"><span class=\"num\">&sum; f<sub>i</sub> u<sub>i</sub></span><span class=\"den\">&sum; f<sub>i</sub></span></span>] &times; <i>h</i> = 135 + [<span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">68</span></span>] &times; 20 = 135 + <span class=\"frac\"><span class=\"num\">140</span><span class=\"den\">68</span></span> = 135 + 2.05 = <b>137.05 units</b></div>\n    <div class=\"sol-step\"><b>Mode:</b> Modal Class = 125 &minus; 145; <i>l</i> = 125, <i>f</i><sub>1</sub> = 20, <i>f</i><sub>0</sub> = 13, <i>f</i><sub>2</sub> = 14, <i>h</i> = 20</div>\n    <div class=\"sol-step\">Mode = 125 + [<span class=\"frac\"><span class=\"num\">20 &minus; 13</span><span class=\"den\">2(20) &minus; 13 &minus; 14</span></span>] &times; 20 = 125 + [<span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">13</span></span>] &times; 20 = 125 + 10.76 = <b>135.76 units</b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>Median = 137 units</b> &nbsp;|&nbsp; <b>Mean = 137.05 units</b> &nbsp;|&nbsp; <b>Mode = 135.76 units</b><br/>\n      <span class=\"reason\">[The three measures are approximately identical, reflecting a nearly symmetrical distribution]</span>\n    </div>\n  </div>\n</div>\n\n<!-- Question 2 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q2</span> Finding Missing Frequencies <i>x</i> and <i>y</i> (Median = 28.5)</div>\n  <div class=\"q-text\">\n    If the median of the distribution given below is <b>28.5</b>, find the values of <b><i>x</i></b> and <b><i>y</i></b> (Total Frequency = 60).\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Step 1: Cumulative Frequency Table</b></div>\n    <div class=\"table-card\">\n      <table>\n        <thead>\n          <tr>\n            <th>Class Interval</th>\n            <th>Frequency (<i>f</i><sub>i</sub>)</th>\n            <th>Cumulative Frequency (<i>cf</i>)</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr><td>0 &minus; 10</td><td>5</td><td>5</td></tr>\n          <tr><td>10 &minus; 20</td><td><i>x</i></td><td>5 + <i>x</i></td></tr>\n          <tr><td>20 &minus; 30</td><td>20</td><td>25 + <i>x</i></td></tr>\n          <tr><td>30 &minus; 40</td><td>15</td><td>40 + <i>x</i></td></tr>\n          <tr><td>40 &minus; 50</td><td><i>y</i></td><td>40 + <i>x</i> + <i>y</i></td></tr>\n          <tr><td>50 &minus; 60</td><td>5</td><td>45 + <i>x</i> + <i>y</i></td></tr>\n          <tr style=\"font-weight: 700; background: rgba(0, 230, 118, 0.15);\">\n            <td><b>Total</b></td>\n            <td><b><i>N</i> = 60</b></td>\n            <td><b>45 + <i>x</i> + <i>y</i> = 60</b></td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 2: Equation from Total Frequency</b></div>\n    <div class=\"sol-step\">45 + <i>x</i> + <i>y</i> = 60 &rArr; <b><i>x</i> + <i>y</i> = 15</b> &nbsp;&nbsp;...(Equation 1)</div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 3: Identify Median Class from given Median</b></div>\n    <div class=\"sol-step\">Since Median = <b>28.5</b>, it lies in the class interval <b>20 &minus; 30</b>.</div>\n    <div class=\"sol-step\">&rArr; <b>Median Class = 20 &minus; 30</b></div>\n    <div class=\"sol-step\"><i>l</i> = 20, <i>h</i> = 10, <i>f</i> = 20, <i>cf</i> = 5 + <i>x</i>, <span class=\"frac\"><span class=\"num\">n</span><span class=\"den\">2</span></span> = 30</div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 4: Solve for <i>x</i> and <i>y</i></b></div>\n    <div class=\"sol-step\">Median = <i>l</i> + [<span class=\"frac\"><span class=\"num\"><span class=\"frac\"><span class=\"num\">n</span><span class=\"den\">2</span></span> &minus; cf</span><span class=\"den\">f</span></span>] &times; <i>h</i></div>\n    <div class=\"sol-step\">&rArr; 28.5 = 20 + [<span class=\"frac\"><span class=\"num\">30 &minus; (5 + x)</span><span class=\"den\">20</span></span>] &times; 10</div>\n    <div class=\"sol-step\">&rArr; 28.5 &minus; 20 = <span class=\"frac\"><span class=\"num\">25 &minus; x</span><span class=\"den\">2</span></span></div>\n    <div class=\"sol-step\">&rArr; 8.5 = <span class=\"frac\"><span class=\"num\">25 &minus; x</span><span class=\"den\">2</span></span> &rArr; 17 = 25 &minus; <i>x</i> &rArr; <b><i>x</i> = 8</b></div>\n    <div class=\"sol-step\">Substitute <i>x</i> = 8 into Equation (1):</div>\n    <div class=\"sol-step\">&rArr; 8 + <i>y</i> = 15 &rArr; <b><i>y</i> = 7</b></div>\n\n    <div class=\"ans-box\">\n      &check; <b><i>x</i> = 8</b> &nbsp;|&nbsp; <b><i>y</i> = 7</b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 3 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q3</span> Median Age of 100 Policy Holders (Below-Type Data)</div>\n  <div class=\"q-text\">\n    A life insurance agent found the following data for distribution of ages of 100 policy holders. Calculate the median age, if policies are given only to persons having age 18 years onwards but less than 60 year.\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Step 1: Convert Cumulative Frequencies to Class Frequencies</b></div>\n    <div class=\"table-card\">\n      <table>\n        <thead>\n          <tr>\n            <th>Age (in years)</th>\n            <th>Number of Policy Holders (<i>cf</i>)</th>\n            <th>Class Interval</th>\n            <th>Frequency (<i>f</i><sub>i</sub>)</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr><td>Below 20</td><td>2</td><td>15 &minus; 20</td><td>2</td></tr>\n          <tr><td>Below 25</td><td>6</td><td>20 &minus; 25</td><td>6 &minus; 2 = 4</td></tr>\n          <tr><td>Below 30</td><td>24</td><td>25 &minus; 30</td><td>24 &minus; 6 = 18</td></tr>\n          <tr><td>Below 35</td><td>45</td><td>30 &minus; 35</td><td>45 &minus; 24 = 21</td></tr>\n          <tr><td>Below 40</td><td>78</td><td>35 &minus; 40</td><td>78 &minus; 45 = 33</td></tr>\n          <tr><td>Below 45</td><td>89</td><td>40 &minus; 45</td><td>89 &minus; 78 = 11</td></tr>\n          <tr><td>Below 50</td><td>92</td><td>45 &minus; 50</td><td>92 &minus; 89 = 3</td></tr>\n          <tr><td>Below 55</td><td>98</td><td>50 &minus; 55</td><td>98 &minus; 92 = 6</td></tr>\n          <tr><td>Below 60</td><td>100</td><td>55 &minus; 60</td><td>100 &minus; 98 = 2</td></tr>\n          <tr style=\"font-weight: 700; background: rgba(0, 230, 118, 0.15);\">\n            <td><b>Total</b></td>\n            <td><b><i>n</i> = 100</b></td>\n            <td>&mdash;</td>\n            <td><b>&sum; <i>f</i><sub>i</sub> = 100</b></td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 2: Calculate Median</b></div>\n    <div class=\"sol-step\"><i>n</i> = 100 &rArr; <span class=\"frac\"><span class=\"num\">n</span><span class=\"den\">2</span></span> = 50. The cumulative frequency just greater than 50 is 78.</div>\n    <div class=\"sol-step\">&rArr; <b>Median Class = 35 &minus; 40</b>; <i>l</i> = 35, <i>h</i> = 5, <i>f</i> = 33, <i>cf</i> = 45</div>\n    <div class=\"sol-step\">Median = <i>l</i> + [<span class=\"frac\"><span class=\"num\"><span class=\"frac\"><span class=\"num\">n</span><span class=\"den\">2</span></span> &minus; cf</span><span class=\"den\">f</span></span>] &times; <i>h</i> = 35 + [<span class=\"frac\"><span class=\"num\">50 &minus; 45</span><span class=\"den\">33</span></span>] &times; 5</div>\n    <div class=\"sol-step\">&rArr; Median = 35 + <span class=\"frac\"><span class=\"num\">25</span><span class=\"den\">33</span></span> = 35 + 0.757 = <b>35.76 years</b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>Median age of policy holders = 35.76 years</b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 4 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q4</span> Median Length of 40 Leaves (Continuous Class Conversion)</div>\n  <div class=\"q-text\">\n    The lengths of 40 leaves of a plant are measured correct to the nearest millimetre, and the data obtained is represented in the following table. Find the median length of the leaves.\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Step 1: Convert to Continuous Class Intervals</b></div>\n    <div class=\"sol-step\">The given limits are 118&minus;126, 127&minus;135. The gap between upper and lower limits is 1. Subtract 0.5 from lower limits and add 0.5 to upper limits:</div>\n\n    <div class=\"table-card\">\n      <table>\n        <thead>\n          <tr>\n            <th>Continuous Length (mm)</th>\n            <th>Number of Leaves (<i>f</i><sub>i</sub>)</th>\n            <th>Cumulative Frequency (<i>cf</i>)</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr><td>117.5 &minus; 126.5</td><td>3</td><td>3</td></tr>\n          <tr><td>126.5 &minus; 135.5</td><td>5</td><td>8</td></tr>\n          <tr><td>135.5 &minus; 144.5</td><td>9</td><td>17</td></tr>\n          <tr><td>144.5 &minus; 153.5</td><td>12</td><td>29</td></tr>\n          <tr><td>153.5 &minus; 162.5</td><td>5</td><td>34</td></tr>\n          <tr><td>162.5 &minus; 171.5</td><td>4</td><td>38</td></tr>\n          <tr><td>171.5 &minus; 180.5</td><td>2</td><td>40</td></tr>\n          <tr style=\"font-weight: 700; background: rgba(0, 230, 118, 0.15);\">\n            <td><b>Total</b></td>\n            <td><b><i>n</i> = 40</b></td>\n            <td>&mdash;</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 2: Calculate Median</b></div>\n    <div class=\"sol-step\"><i>n</i> = 40 &rArr; <span class=\"frac\"><span class=\"num\">n</span><span class=\"den\">2</span></span> = 20. The <i>cf</i> just greater than 20 is 29, corresponding to <b>144.5 &minus; 153.5</b>.</div>\n    <div class=\"sol-step\">&rArr; <b>Median Class = 144.5 &minus; 153.5</b>; <i>l</i> = 144.5, <i>h</i> = 9, <i>f</i> = 12, <i>cf</i> = 17</div>\n    <div class=\"sol-step\">Median = <i>l</i> + [<span class=\"frac\"><span class=\"num\"><span class=\"frac\"><span class=\"num\">n</span><span class=\"den\">2</span></span> &minus; cf</span><span class=\"den\">f</span></span>] &times; <i>h</i> = 144.5 + [<span class=\"frac\"><span class=\"num\">20 &minus; 17</span><span class=\"den\">12</span></span>] &times; 9</div>\n    <div class=\"sol-step\">&rArr; Median = 144.5 + [<span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">12</span></span>] &times; 9 = 144.5 + <span class=\"frac\"><span class=\"num\">9</span><span class=\"den\">4</span></span> = 144.5 + 2.25 = <b>146.75 mm</b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>Median length of the leaves = 146.75 mm</b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 5 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q5</span> Median Lifetime of 400 Neon Lamps</div>\n  <div class=\"q-text\">\n    The following table gives the distribution of the life time of 400 neon lamps. Find the median life time of a lamp.\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Step 1: Cumulative Frequency Table</b></div>\n    <div class=\"table-card\">\n      <table>\n        <thead>\n          <tr>\n            <th>Life Time (in hours)</th>\n            <th>Number of Lamps (<i>f</i><sub>i</sub>)</th>\n            <th>Cumulative Frequency (<i>cf</i>)</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr><td>1500 &minus; 2000</td><td>14</td><td>14</td></tr>\n          <tr><td>2000 &minus; 2500</td><td>56</td><td>70</td></tr>\n          <tr><td>2500 &minus; 3000</td><td>60</td><td>130</td></tr>\n          <tr><td>3000 &minus; 3500</td><td>86</td><td>216</td></tr>\n          <tr><td>3500 &minus; 4000</td><td>74</td><td>290</td></tr>\n          <tr><td>4000 &minus; 4500</td><td>62</td><td>352</td></tr>\n          <tr><td>4500 &minus; 5000</td><td>48</td><td>400</td></tr>\n          <tr style=\"font-weight: 700; background: rgba(0, 230, 118, 0.15);\">\n            <td><b>Total</b></td>\n            <td><b><i>n</i> = 400</b></td>\n            <td>&mdash;</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 2: Calculate Median</b></div>\n    <div class=\"sol-step\"><i>n</i> = 400 &rArr; <span class=\"frac\"><span class=\"num\">n</span><span class=\"den\">2</span></span> = 200. The <i>cf</i> just greater than 200 is 216.</div>\n    <div class=\"sol-step\">&rArr; <b>Median Class = 3000 &minus; 3500</b>; <i>l</i> = 3000, <i>h</i> = 500, <i>f</i> = 86, <i>cf</i> = 130</div>\n    <div class=\"sol-step\">Median = <i>l</i> + [<span class=\"frac\"><span class=\"num\"><span class=\"frac\"><span class=\"num\">n</span><span class=\"den\">2</span></span> &minus; cf</span><span class=\"den\">f</span></span>] &times; <i>h</i> = 3000 + [<span class=\"frac\"><span class=\"num\">200 &minus; 130</span><span class=\"den\">86</span></span>] &times; 500</div>\n    <div class=\"sol-step\">&rArr; Median = 3000 + <span class=\"frac\"><span class=\"num\">70 &times; 500</span><span class=\"den\">86</span></span> = 3000 + <span class=\"frac\"><span class=\"num\">35000</span><span class=\"den\">86</span></span> = 3000 + 406.98 = <b>3406.98 hours</b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>Median lifetime of a lamp = 3406.98 hours</b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 6 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q6</span> Surnames from Telephone Directory (Median, Mean, Modal Size)</div>\n  <div class=\"q-text\">\n    100 surnames were randomly picked up from a local telephone directory and the frequency distribution of the number of letters in the English alphabets in the surnames was obtained as follows. Determine the median number of letters in the surnames. Find the mean number of letters in the surnames? Also, find the modal size of the surnames.\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Step 1: Master Calculation Table</b></div>\n    <div class=\"table-card\">\n      <table>\n        <thead>\n          <tr>\n            <th>Number of Letters</th>\n            <th>Number of Surnames (<i>f</i><sub>i</sub>)</th>\n            <th><i>cf</i></th>\n            <th><i>x</i><sub>i</sub></th>\n            <th><i>f</i><sub>i</sub><i>x</i><sub>i</sub></th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr><td>1 &minus; 4</td><td>6</td><td>6</td><td>2.5</td><td>15</td></tr>\n          <tr><td>4 &minus; 7</td><td>30</td><td>36</td><td>5.5</td><td>165</td></tr>\n          <tr><td>7 &minus; 10</td><td>40</td><td>76</td><td>8.5</td><td>340</td></tr>\n          <tr><td>10 &minus; 13</td><td>16</td><td>92</td><td>11.5</td><td>184</td></tr>\n          <tr><td>13 &minus; 16</td><td>4</td><td>96</td><td>14.5</td><td>58</td></tr>\n          <tr><td>16 &minus; 19</td><td>4</td><td>100</td><td>17.5</td><td>70</td></tr>\n          <tr style=\"font-weight: 700; background: rgba(0, 230, 118, 0.15);\">\n            <td><b>Total</b></td>\n            <td><b><i>n</i> = 100</b></td>\n            <td>&mdash;</td>\n            <td>&mdash;</td>\n            <td><b>&sum; <i>f</i><sub>i</sub><i>x</i><sub>i</sub> = 832</b></td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 2: Calculate Median</b></div>\n    <div class=\"sol-step\"><i>n</i> = 100 &rArr; <span class=\"frac\"><span class=\"num\">n</span><span class=\"den\">2</span></span> = 50. The <i>cf</i> just greater than 50 is 76 &rArr; <b>Median Class = 7 &minus; 10</b>.</div>\n    <div class=\"sol-step\"><i>l</i> = 7, <i>h</i> = 3, <i>f</i> = 40, <i>cf</i> = 36</div>\n    <div class=\"sol-step\">Median = 7 + [<span class=\"frac\"><span class=\"num\">50 &minus; 36</span><span class=\"den\">40</span></span>] &times; 3 = 7 + [<span class=\"frac\"><span class=\"num\">14</span><span class=\"den\">40</span></span>] &times; 3 = 7 + <span class=\"frac\"><span class=\"num\">42</span><span class=\"den\">40</span></span> = 7 + 1.05 = <b>8.05 letters</b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 3: Calculate Mean and Mode</b></div>\n    <div class=\"sol-step\"><b>Mean:</b> <i>x̄</i> = <span class=\"frac\"><span class=\"num\">&sum; f<sub>i</sub> x<sub>i</sub></span><span class=\"den\">&sum; f<sub>i</sub></span></span> = <span class=\"frac\"><span class=\"num\">832</span><span class=\"den\">100</span></span> = <b>8.32 letters</b></div>\n    <div class=\"sol-step\"><b>Mode:</b> Modal Class = 7 &minus; 10; <i>l</i> = 7, <i>f</i><sub>1</sub> = 40, <i>f</i><sub>0</sub> = 30, <i>f</i><sub>2</sub> = 16, <i>h</i> = 3</div>\n    <div class=\"sol-step\">Mode = 7 + [<span class=\"frac\"><span class=\"num\">40 &minus; 30</span><span class=\"den\">2(40) &minus; 30 &minus; 16</span></span>] &times; 3 = 7 + [<span class=\"frac\"><span class=\"num\">10</span><span class=\"den\">34</span></span>] &times; 3 = 7 + <span class=\"frac\"><span class=\"num\">30</span><span class=\"den\">34</span></span> = 7 + 0.88 = <b>7.88 letters</b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>Median = 8.05 letters</b> &nbsp;|&nbsp; <b>Mean = 8.32 letters</b> &nbsp;|&nbsp; <b>Mode = 7.88 letters</b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 7 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q7</span> Median Weight of 30 Students</div>\n  <div class=\"q-text\">\n    The distribution below gives the weights of 30 students of a class. Find the median weight of the students.\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Step 1: Cumulative Frequency Table</b></div>\n    <div class=\"table-card\">\n      <table>\n        <thead>\n          <tr>\n            <th>Weight (in kg)</th>\n            <th>Number of Students (<i>f</i><sub>i</sub>)</th>\n            <th>Cumulative Frequency (<i>cf</i>)</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr><td>40 &minus; 45</td><td>2</td><td>2</td></tr>\n          <tr><td>45 &minus; 50</td><td>3</td><td>5</td></tr>\n          <tr><td>50 &minus; 55</td><td>8</td><td>13</td></tr>\n          <tr><td>55 &minus; 60</td><td>6</td><td>19</td></tr>\n          <tr><td>60 &minus; 65</td><td>6</td><td>25</td></tr>\n          <tr><td>65 &minus; 70</td><td>3</td><td>28</td></tr>\n          <tr><td>70 &minus; 75</td><td>2</td><td>30</td></tr>\n          <tr style=\"font-weight: 700; background: rgba(0, 230, 118, 0.15);\">\n            <td><b>Total</b></td>\n            <td><b><i>n</i> = 30</b></td>\n            <td>&mdash;</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 2: Calculate Median</b></div>\n    <div class=\"sol-step\"><i>n</i> = 30 &rArr; <span class=\"frac\"><span class=\"num\">n</span><span class=\"den\">2</span></span> = 15. The <i>cf</i> just greater than 15 is 19.</div>\n    <div class=\"sol-step\">&rArr; <b>Median Class = 55 &minus; 60</b>; <i>l</i> = 55, <i>h</i> = 5, <i>f</i> = 6, <i>cf</i> = 13</div>\n    <div class=\"sol-step\">Median = <i>l</i> + [<span class=\"frac\"><span class=\"num\"><span class=\"frac\"><span class=\"num\">n</span><span class=\"den\">2</span></span> &minus; cf</span><span class=\"den\">f</span></span>] &times; <i>h</i> = 55 + [<span class=\"frac\"><span class=\"num\">15 &minus; 13</span><span class=\"den\">6</span></span>] &times; 5</div>\n    <div class=\"sol-step\">&rArr; Median = 55 + [<span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">6</span></span>] &times; 5 = 55 + <span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">3</span></span> = 55 + 1.67 = <b>56.67 kg</b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>Median weight of the students = 56.67 kg</b>\n    </div>\n  </div>\n</div>\n"
+  }
 };

@@ -1,1548 +1,414 @@
-import { ChapterContent } from "../chapterContent";
+import { ChapterContent } from "../types";
 
 export const mathCh10: ChapterContent = {
-    id: "ch10",
-    number: 10,
-    title: "Circles",
-    introduction: "In this chapter, we explore the properties of circles, focus on the geometry of tangents, and prove fundamental theorems about the relationship between a circle and its tangent lines.",
-    definitions: [
-        { term: "Tangent", description: "A line that touches a circle at exactly one point." },
-        { term: "Secant", description: "A line that intersects a circle at two distinct points." },
-        { term: "Point of Contact", description: "The single point where a tangent touches the circle." }
-    ],
-    keyPoints: [
-        "A tangent is perpendicular to the radius at the point of contact.",
-        "The lengths of tangents drawn from an external point to a circle are equal.",
-        "There is only one tangent at any point on a circle."
-    ],
-    formulas: [
-        { name: "Tangent-Radius Relation", formula: "OP ⊥ XY" },
-        { name: "External Tangents", formula: "PQ = PR" }
-    ],
-    crux: [
-        "Always draw the radius to the point of contact for right-angle properties.",
-        "Use Pythagoras theorem in problems involving tangent lengths and radii.",
-        "Remember that tangents from an external point form an isosceles triangle with the chord of contact."
-    ],
-    exercises: [
-        { id: "theorems", name: "Theorems", questions: [] },
-        { id: "examples", name: "Examples", questions: [] },
-        { id: "exercise1", name: "Exercise 10.1", questions: [] },
-        { id: "exercise2", name: "Exercise 10.2", questions: [] }
-    ],
-    examples: [],
-    theorems: [],
-    mcqs: [
-		{
-				"id": "mcq1",
-				"question": "<span style=\"font-weight: normal;\">A tangent PQ at a point P of a circle of radius 5 cm meets a line through the centre O at a point Q so that OQ = 12 cm. Length PQ is :</span>",
-				"options": [
-						"12 cm",
-						"13 cm",
-						"8.5 cm",
-						"√119 cm"
-				],
-				"correctAnswer": "√119 cm"
-		},
-		{
-				"id": "mcq2",
-				"question": "<span style=\"font-weight: normal;\">From a point Q, the length of the tangent to a circle is 24 cm and the distance of Q from the centre is 25 cm. The radius of the circle is :</span>",
-				"options": [
-						"7 cm",
-						"12 cm",
-						"15 cm",
-						"24.5 cm"
-				],
-				"correctAnswer": "7 cm"
-		},
-		{
-				"id": "mcq3",
-				"question": "<span style=\"font-weight: normal;\">If tangents PA and PB from a point P to a circle with centre O are inclined to each other at angle of 80°, then ∠ POA is equal to :</span>",
-				"options": [
-						"50°",
-						"60°",
-						"70°",
-						"80°"
-				],
-				"correctAnswer": "50°"
-		},
-		{
-				"id": "mcq4",
-				"question": "<span style=\"font-weight: normal;\">If TP and TQ are the two tangents to a circle with centre O so that ∠ POQ = 110°, then ∠ PTQ is equal to :</span>",
-				"options": [
-						"60°",
-						"70°",
-						"80°",
-						"90°"
-				],
-				"correctAnswer": "70°"
-		},
-		{
-				"id": "mcq5",
-				"question": "<span style=\"font-weight: normal;\">The length of a tangent from a point A at distance 5 cm from the centre of the circle is 4 cm. The radius of the circle is:</span>",
-				"options": [
-						"3 cm",
-						"5 cm",
-						"7 cm",
-						"3.5 cm"
-				],
-				"correctAnswer": "3 cm"
-		},
-		{
-				"id": "mcq6",
-				"question": "<span style=\"font-weight: normal;\">Two concentric circles are of radii 5 cm and 3 cm. The length of the chord of the larger circle which touches the smaller circle is:</span>",
-				"options": [
-						"8 cm",
-						"10 cm",
-						"12 cm",
-						"18 cm"
-				],
-				"correctAnswer": "8 cm"
-		},
-		{
-				"id": "mcq7",
-				"question": "<span style=\"font-weight: normal;\">A parallelogram circumscribing a circle is a:</span>",
-				"options": [
-						"Square",
-						"Rectangle",
-						"Rhombus",
-						"Trapezium"
-				],
-				"correctAnswer": "Rhombus"
-		},
-		{
-				"id": "mcq8",
-				"question": "<span style=\"font-weight: normal;\">The angle between two radii of a circle is 130°, the angle between the tangents at the ends of the radii is:</span>",
-				"options": [
-						"90°",
-						"50°",
-						"70°",
-						"40°"
-				],
-				"correctAnswer": "50°"
-		},
-		{
-				"id": "mcq9",
-				"question": "<span style=\"font-weight: normal;\">If PQR is a tangent to a circle at Q whose centre is O, AB is a chord parallel to PR and ∠ BQR = 70°, then ∠ AQB is equal to:</span>",
-				"options": [
-						"20°",
-						"40°",
-						"35°",
-						"45°"
-				],
-				"correctAnswer": "40°"
-		},
-		{
-				"id": "mcq10",
-				"question": "<span style=\"font-weight: normal;\">At one end A of a diameter AB of a circle of radius 5 cm, tangent XAY is drawn to the circle. The length of the chord CD parallel to XY and at a distance 8 cm from A is:</span>",
-				"options": [
-						"4 cm",
-						"5 cm",
-						"6 cm",
-						"8 cm"
-				],
-				"correctAnswer": "8 cm"
-		}
-],
-    summary: [
-        "Learned that tangents are perpendicular to the radius at the point of contact.",
-        "Proved that tangents from an external point are equal in length.",
-        "Solved various problems using these properties."
-    ],
-
-    isHtmlView: true,
-    htmlOverview: `<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Circles - Overview</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
-
-        body {
-            font-family: 'Noto Sans', sans-serif;
-            margin: 0;
-            padding: 15px;
-            background: #fff;
-            color: #333;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #6C63FF;
-            padding-bottom: 10px;
-            font-family: 'Nunito', sans-serif;
-        }
-
-        .logo {
-            color: #6C63FF;
-            font-size: 24px;
-            font-weight: 800;
-        }
-
-        .chapter-title {
-            text-align: center;
-            color: #333;
-            font-size: 20px;
-            font-weight: 700;
-            margin: 10px 0;
-            font-family: 'Noto Sans', sans-serif;
-        }
-
-        .content-box {
-            background: #f8f9fa;
-            border: 1px solid #e9ecef;
-            border-radius: 8px;
-            padding: 15px;
-            margin-bottom: 15px;
-            display: flow-root;
-            transition: transform 0.2s ease;
-        }
-
-        .section-title {
-            color: #D32F2F;
-            font-weight: 700;
-            font-size: 1.2em;
-            margin-bottom: 10px;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 5px;
-        }
-
-        .sub-header {
-            color: #2E7D32;
-            font-weight: 700;
-            margin-top: 15px;
-            margin-bottom: 5px;
-            font-size: 1.1em;
-        }
-
-        .formula-box {
-            background: #E8F5E9;
-            border-left: 4px solid #4CAF50;
-            padding: 10px;
-            margin: 10px 0;
-            font-family: 'Nunito', sans-serif;
-        }
-
-        .step {
-            margin-bottom: 8px;
-            font-size: 1.1em;
-            color: #000;
-            line-height: 1.5;
-        }
-
-        strong {
-            color: #E65100;
-        }
-    </style>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    renderMathInElement(document.body, {
-      delimiters: [
-        {left: '\\\\(', right: '\\\\)', display: false},
-        {left: '\\\\[', right: '\\\\]', display: true}
-      ]
-    });
-  });
-</script>
-
-<style>
-  body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
-  .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #FFB74D !important; color: #fff !important; }
-  h1, h2, h3, h4, h5, h6 { color: #FFB74D !important; }
-  .question { color: #FFB74D !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
-  .formula { color: #4CAF50 !important; }
-  .true-text { color: #4CAF50 !important; }
-  .false-text { color: #F44336 !important; }
-  table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
-  .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
-  img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #FFB74D !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
-  * { font-family: 'Noto Sans', sans-serif !important; }
-
-  .question { font-size: 0.95em !important; }
-  .sub-question { font-size: 0.9em !important; }
-  .step { font-size: 0.9em !important; }
-  .final-answer { font-size: 0.95em !important; }
-</style>
-</head>
-
-<body>
-
-    
-
-    <div class="content-box">
-        <div class="section-title">1. Basic Introduction & Definitions</div>
-        <div class="step"><strong>Circle:</strong> A circle is a collection of all points in a plane which are at a
-            constant distance (radius) from a fixed point (center).</div>
-        <div class="step"><strong>Center:</strong> The fixed point from which all points on the circle are equidistant.
-        </div>
-        <div class="step"><strong>Radius:</strong> The constant distance between the center and any point on the circle.
-        </div>
-        <div class="step"><strong>Chord:</strong> A line segment joining any two points on the circumference of the
-            circle.</div>
-        <div class="step"><strong>Diameter:</strong> The longest chord which passes through the center of the circle.
-            Length of diameter is twice the radius (d = 2r).</div>
-        <div class="step"><strong>Secant:</strong> A line that intersects the circle at two distinct points.</div>
-        <div class="step"><strong>Tangent:</strong> A line that intersects the circle at exactly one point. This point
-            is called the Point of Contact.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="section-title">2. Theorems</div>
-        <div class="sub-header">Theorem 10.1</div>
-        <div class="step">The tangent at any point of a circle is perpendicular to the radius through the point of
-            contact.</div>
-        <div class="formula-box">
-            OP ⊥ XY (Radius is perpendicular to Tangent)
-        </div>
-
-        <div class="sub-header">Theorem 10.2</div>
-        <div class="step">The lengths of tangents drawn from an external point to a circle are equal.</div>
-        <div class="formula-box">
-            PQ = PR (Tangents from external point P)
-        </div>
-    </div>
-
-    <div class="content-box">
-        <div class="section-title">3. Key Points</div>
-        <div class="step">• There is no tangent to a circle passing through a point lying inside the circle.</div>
-        <div class="step">• There is one and only one tangent to a circle passing through a point lying on the circle.
-        </div>
-        <div class="step">• There are exactly two tangents to a circle through a point lying outside the circle.</div>
-        <div class="step">• The common point of the tangent and the circle is called the point of contact.</div>
-        <div class="step">• The line containing the radius through the point of contact is also sometimes called the
-            'normal' to the circle at the point.</div>
-    </div>
-
-</body>
-
-</html>`,
-    htmlExercises: {
-        theorems: `<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Circles - Theorms</title>
-    
-    
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
-
-        body {
-            font-family: 'Noto Sans', sans-serif;
-            margin: 0;
-            padding: 15px;
-            background: #fff;
-            color: #333;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #6C63FF;
-            padding-bottom: 10px;
-            font-family: 'Nunito', sans-serif;
-        }
-
-        .logo {
-            color: #6C63FF;
-            font-size: 24px;
-            font-weight: 800;
-        }
-
-        .chapter-title {
-            text-align: center;
-            color: #333;
-            font-size: 20px;
-            font-weight: 700;
-            margin: 10px 0;
-            font-family: 'Noto Sans', sans-serif;
-        }
-
-        .content-box {
-            background: #f8f9fa;
-            border: 1px solid #e9ecef;
-            border-radius: 8px;
-            padding: 15px;
-            margin-bottom: 15px;
-            display: flow-root;
-            transition: transform 0.2s ease;
-        }
-
-        .question {
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: #333;
-        }
-
-        .step {
-            margin-bottom: 8px;
-            font-size: 1.1em;
-            color: #000;
-            line-height: 1.6;
-            display: block;
-        }
-
-        .final-answer {
-            color: #2E7D32;
-            font-weight: 700;
-            margin-top: 10px;
-            font-size: 1.2em;
-        }
-
-        .solution-header {
-            color: #2E7D32;
-            font-weight: 700;
-            margin-bottom: 5px;
-        }
-
-        .formula {
-            font-weight: bold;
-            color: #2E7D32;
-            margin: 5px 0;
-            display: inline-block;
-        }
-
-        .diagram-placeholder {
-            float: right;
-            border: 2px dashed #bbb;
-            padding: 10px;
-            margin: 0 0 10px 15px;
-            background: #fff;
-            color: #555;
-            font-size: 0.9em;
-            max-width: 280px;
-            text-align: center;
-        }
-
-        img {
-            float: right;
-            margin-left: 20px;
-            margin-bottom: 15px;
-            max-width: 280px;
-            height: auto;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            padding: 5px;
-            background: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        @media (max-width: 600px) {
-
-            img,
-            .diagram-placeholder {
-                float: none;
-                display: block;
-                margin: 10px auto;
-                max-width: 100%;
-            }
-        }
-    </style>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    renderMathInElement(document.body, {
-      delimiters: [
-        {left: '\\\\(', right: '\\\\)', display: false},
-        {left: '\\\\[', right: '\\\\]', display: true}
-      ]
-    });
-  });
-</script>
-
-<style>
-  body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
-  .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #FFB74D !important; color: #fff !important; }
-  h1, h2, h3, h4, h5, h6 { color: #FFB74D !important; }
-  .question { color: #FFB74D !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
-  .formula { color: #4CAF50 !important; }
-  .true-text { color: #4CAF50 !important; }
-  .false-text { color: #F44336 !important; }
-  table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
-  .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
-  img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #FFB74D !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
-  * { font-family: 'Noto Sans', sans-serif !important; }
-
-  .question { font-size: 0.95em !important; }
-  .sub-question { font-size: 0.9em !important; }
-  .step { font-size: 0.9em !important; }
-  .final-answer { font-size: 0.95em !important; }
-</style>
-</head>
-
-<body>
-
-    
-
-    <div class="content-box">
-        <div class="question">Theorem 10.1: The tangent at any point of a circle is perpendicular to the radius through
-            the point of contact.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPg0KICA8ZGVmcz4NCiAgICA8bWFya2VyIGlkPSJhcnJvdyIgbWFya2VyV2lkdGg9IjEwIiBtYXJrZXJIZWlnaHQ9IjEwIiByZWZYPSI5IiByZWZZPSIzIiBvcmllbnQ9ImF1dG8iIG1hcmtlclVuaXRzPSJzdHJva2VXaWR0aCI+DQogICAgICA8cGF0aCBkPSJNMCwwIEwwLDYgTDksMyB6IiBmaWxsPSJibGFjayIgLz4NCiAgICA8L21hcmtlcj4NCiAgPC9kZWZzPg0KICA8IS0tIENpcmNsZSAtLT4NCiAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMTUwIiByPSI4MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+DQogIDxjaXJjbGUgY3g9IjIwMCIgY3k9IjE1MCIgcj0iMyIgZmlsbD0iYmxhY2siLz4gPCEtLSBDZW50ZXIgTyAtLT4NCiAgPHRleHQgeD0iMTkwIiB5PSIxNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiPk88L3RleHQ+DQogIA0KICA8IS0tIFJhZGl1cyBPUCAtLT4NCiAgPGxpbmUgeDE9IjIwMCIgeTE9IjE1MCIgeDI9IjIwMCIgeTI9IjIzMCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDxjaXJjbGUgY3g9IjIwMCIgY3k9IjIzMCIgcj0iMyIgZmlsbD0iYmxhY2siLz4gPCEtLSBQb2ludCBQIC0tPg0KICA8dGV4dCB4PSIyMTAiIHk9IjIyNSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCI+UDwvdGV4dD4NCiAgDQogIDwhLS0gVGFuZ2VudCBYWSAtLT4NCiAgPGxpbmUgeDE9IjUwIiB5MT0iMjMwIiB4Mj0iMzUwIiB5Mj0iMjMwIiBzdHJva2U9InJlZCIgc3Ryb2tlLXdpZHRoPSIyIiBtYXJrZXItZW5kPSJ1cmwoI2Fycm93KSIgbWFya2VyLXN0YXJ0PSJ1cmwoI2Fycm93KSIvPg0KICA8dGV4dCB4PSI2MCIgeT0iMjIwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIj5YPC90ZXh0Pg0KICA8dGV4dCB4PSIzNDAiIHk9IjIyMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCI+WTwvdGV4dD4NCiAgDQogIDwhLS0gUG9pbnQgUSAtLT4NCiAgPGNpcmNsZSBjeD0iMjgwIiBjeT0iMjMwIiByPSIzIiBmaWxsPSJibGFjayIvPg0KICA8dGV4dCB4PSIyODUiIHk9IjIyMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCI+UTwvdGV4dD4NCiAgDQogIDwhLS0gTGluZSBPUSAtLT4NCiAgPGxpbmUgeDE9IjIwMCIgeTE9IjE1MCIgeDI9IjI4MCIgeTI9IjIzMCIgc3Ryb2tlPSJibHVlIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1kYXNoYXJyYXk9IjUsNSIvPg0KICANCiAgPCEtLSBSaWdodCBBbmdsZSBTeW1ib2wgLS0+DQogIDxwb2x5bGluZSBwb2ludHM9IjIwMCwyMjAgMjEwLDIyMCAyMTAsMjMwIiBzdHJva2U9ImJsYWNrIiBmaWxsPSJub25lIiBzdHJva2Utd2lkdGg9IjEuNSIvPg0KPC9zdmc+" alt="Theorem 10.1 Diagram">
-        <div class="solution-header">Proof:</div>
-        <div class="step"><strong style="color: #1565C0;">Given:</strong> A circle with center O and tangent XY at point P.</div>
-        <div class="step"><strong style="color: #1565C0;">To Prove:</strong> OP ⊥ XY.</div>
-        <div class="step"><strong style="color: #1565C0;">Construction:</strong> Take any point Q on XY (other than P) and join OQ.</div>
-        <div class="step"><strong style="color: #1565C0;">Proof:</strong></div>
-        <div class="step">Since Q lies on the tangent XY, it must lie outside the circle (if it lay inside, XY would be a secant, not a tangent).</div>
-        <div class="step">Therefore, OQ is longer than the radius OP of the circle (OQ &gt; OP).</div>
-        <div class="step">Since this is true for every point Q on XY other than P, OP is the shortest distance from center O to the line XY.</div>
-        <div class="step">Since the shortest distance from a point to a line is always perpendicular:</div>
-        <div class="step" style="font-weight: bold; color: #2E7D32;">OP ⊥ XY</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">Theorem 10.2: The lengths of tangents drawn from an external point to a circle are equal.
-        </div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPg0KICA8IS0tIENpcmNsZSAtLT4NCiAgPGNpcmNsZSBjeD0iMTUwIiBjeT0iMTUwIiByPSI2MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+DQogIDxjaXJjbGUgY3g9IjE1MCIgY3k9IjE1MCIgcj0iMyIgZmlsbD0iYmxhY2siLz4gPCEtLSBDZW50ZXIgTyAtLT4NCiAgPHRleHQgeD0iMTQwIiB5PSIxNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiPk88L3RleHQ+DQogIA0KICA8IS0tIEV4dGVybmFsIFBvaW50IFAgLS0+DQogIDxjaXJjbGUgY3g9IjMyMCIgY3k9IjE1MCIgcj0iMyIgZmlsbD0iYmxhY2siLz4NCiAgPHRleHQgeD0iMzMwIiB5PSIxNTUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiPlA8L3RleHQ+DQogIA0KICA8IS0tIFRhbmdlbnQgUG9pbnRzIFEgYW5kIFIgY2FsY3VsYXRlZCAtLT4NCiAgPCEtLSBUYW5nZW50IGNvbnRhY3QgcG9pbnRzIGZvciBjaXJjbGUgKDE1MCwxNTApIHI9NjAgZnJvbSBQKDMyMCwxNTApIC0tPg0KICA8IS0tIGRpc3RhbmNlIE9QID0gMTcwLiBhbmdsZSA9IGFjb3MoNjAvMTcwKSA9IDY5LjMgZGVnIC0tPg0KICA8IS0tIFEgaXMgYXQgYW5nbGUgLTY5LjMsIFIgYXQgKzY5LjMgcmVsYXRpdmUgdG8gT1AgbGluZT8gTm8sIE9QIGlzIGhvcml6b250YWwgLS0+DQogIDwhLS0gV2FpdCwgYW5nbGUgaXMgYWNvcyhyL2QpLiBRKHgseSkgPSAoMTUwICsgNjAqY29zKGEpLCAxNTAgLSA2MCpzaW4oYSkpIC0tPg0KICA8IS0tIEFjdHVhbGx5IGJhc2ljIGdlb21ldHJ5OiBRIGlzICgxNTAgKyA2MCo2MC8xNzAsIDE1MCAtIDYwKnNxcnQoMTcwXjItNjBeMikvMTcwKSBhcHByb3ggLS0+DQogIDwhLS0gTGV0J3MgbWF4aW1pemUgY2xhcml0eSB2aXN1YWxseS4gUSBhcHByb3ggYXQgKDE3MSwgOTMpLCBSIGF0ICgxNzEsIDIwNykgLS0+DQogIA0KICA8IS0tIFRhbmdlbnQgUFEgLS0+DQogIDxsaW5lIHgxPSIzMjAiIHkxPSIxNTAiIHgyPSIxNzEiIHkyPSI5MyIgc3Ryb2tlPSJyZWQiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8Y2lyY2xlIGN4PSIxNzEiIGN5PSI5MyIgcj0iMyIgZmlsbD0iYmxhY2siLz4NCiAgPHRleHQgeD0iMTcwIiB5PSI4NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCI+UTwvdGV4dD4NCiAgDQogIDwhLS0gVGFuZ2VudCBQUiAtLT4NCiAgPGxpbmUgeDE9IjMyMCIgeTE9IjE1MCIgeDI9IjE3MSIgeTI9IjIwNyIgc3Ryb2tlPSJyZWQiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8Y2lyY2xlIGN4PSIxNzEiIGN5PSIyMDciIHI9IjMiIGZpbGw9ImJsYWNrIi8+DQogIDx0ZXh0IHg9IjE3MCIgeT0iMjI1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIj5SPC90ZXh0Pg0KICANCiAgPCEtLSBSYWRpaSBPUSBhbmQgT1IgLS0+DQogIDxsaW5lIHgxPSIxNTAiIHkxPSIxNTAiIHgyPSIxNzEiIHkyPSI5MyIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDxsaW5lIHgxPSIxNTAiIHkxPSIxNTAiIHgyPSIxNzEiIHkyPSIyMDciIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIvPg0KICANCiAgPCEtLSBMaW5lIE9QIC0tPg0KICA8bGluZSB4MT0iMTUwIiB5MT0iMTUwIiB4Mj0iMzIwIiB5Mj0iMTUwIiBzdHJva2U9ImJsdWUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWRhc2hhcnJheT0iNSw1Ii8+DQogIA0KICA8IS0tIFJpZ2h0IEFuZ2xlIFN5bWJvbHMgLS0+DQogIDwhLS0gQXBwcm94aW1hdGUgcHJvamVjdGlvbiBmb3Igc3ltYm9sIC0tPg0KICA8cG9seWxpbmUgcG9pbnRzPSIxNjUsMTA3IDE3OCwxMTIgMTg0LDk4IiBzdHJva2U9ImJsYWNrIiBmaWxsPSJub25lIiBzdHJva2Utd2lkdGg9IjEiLz4NCiAgPHBvbHlsaW5lIHBvaW50cz0iMTY1LDE5MyAxNzgsMTg4IDE4NCwyMDIiIHN0cm9rZT0iYmxhY2siIGZpbGw9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIvPg0KICANCiAgPCEtLSBFcXVhbGl0eSBNYXJrcyAtLT4NCiAgPGxpbmUgeDE9IjI0MCIgeTE9IjExNSIgeDI9IjI1MCIgeTI9IjEyNSIgc3Ryb2tlPSJyZWQiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8bGluZSB4MT0iMjQwIiB5MT0iMTg1IiB4Mj0iMjUwIiB5Mj0iMTc1IiBzdHJva2U9InJlZCIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIA0KPC9zdmc+" alt="Theorem 10.2 Diagram">
-        <div class="solution-header">Proof:</div>
-        <div class="step"><strong style="color: #1565C0;">Given:</strong> A circle with center O and tangents PQ, PR from external point P.</div>
-        <div class="step"><strong style="color: #1565C0;">To Prove:</strong> PQ = PR.</div>
-        <div class="step"><strong style="color: #1565C0;">Construction:</strong> Join OQ, OR, and OP.</div>
-        <div class="step"><strong style="color: #1565C0;">Proof:</strong></div>
-        <div class="step">In right-angled triangles \\(\\triangle OQP\\) and \\(\\triangle ORP\\) (since radius ⊥ tangent, \\(\\angle OQP = \\angle ORP = 90^\\circ\\)):</div>
-        <div class="step">1. \\(OQ = OR\\) (Radii of the same circle)</div>
-        <div class="step">2. \\(OP = OP\\) (Common hypotenuse)</div>
-        <div class="step">Therefore, \\(\\triangle OQP \\cong \\triangle ORP\\) (by RHS congruence rule).</div>
-        <div class="step">By CPCT (Corresponding Parts of Congruent Triangles):</div>
-        <div class="step" style="font-weight: bold; color: #2E7D32;">PQ = PR</div>
-    </div>
-
-</body>
-
-</html>`,
-        examples: `<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Circles - Examples</title>
-    
-    
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
-
-        body {
-            font-family: 'Noto Sans', sans-serif;
-            margin: 0;
-            padding: 15px;
-            background: #fff;
-            color: #333;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #6C63FF;
-            padding-bottom: 10px;
-            font-family: 'Nunito', sans-serif;
-        }
-
-        .logo {
-            color: #6C63FF;
-            font-size: 24px;
-            font-weight: 800;
-        }
-
-        .chapter-title {
-            text-align: center;
-            color: #333;
-            font-size: 20px;
-            font-weight: 700;
-            margin: 10px 0;
-            font-family: 'Noto Sans', sans-serif;
-        }
-
-        .content-box {
-            background: #f8f9fa;
-            border: 1px solid #e9ecef;
-            border-radius: 8px;
-            padding: 15px;
-            margin-bottom: 15px;
-            display: flow-root;
-            transition: transform 0.2s ease;
-        }
-
-        .question {
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: #333;
-        }
-
-        .step {
-            margin-bottom: 8px;
-            font-size: 1.1em;
-            color: #000;
-            line-height: 1.6;
-            display: block;
-        }
-
-        .final-answer {
-            color: #2E7D32;
-            font-weight: 700;
-            margin-top: 10px;
-            font-size: 1.2em;
-        }
-
-        .solution-header {
-            color: #2E7D32;
-            font-weight: 700;
-            margin-bottom: 5px;
-        }
-
-        .formula {
-            font-weight: bold;
-            color: #2E7D32;
-            margin: 5px 0;
-            display: inline-block;
-        }
-
-        .diagram-placeholder {
-            float: right;
-            border: 2px dashed #bbb;
-            padding: 10px;
-            margin: 0 0 10px 15px;
-            background: #fff;
-            color: #555;
-            font-size: 0.9em;
-            max-width: 280px;
-            text-align: center;
-        }
-
-        img {
-            float: right;
-            margin-left: 20px;
-            margin-bottom: 15px;
-            max-width: 280px;
-            height: auto;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            padding: 5px;
-            background: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        @media (max-width: 600px) {
-
-            img,
-            .diagram-placeholder {
-                float: none;
-                display: block;
-                margin: 10px auto;
-                max-width: 100%;
-            }
-        }
-    </style>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    renderMathInElement(document.body, {
-      delimiters: [
-        {left: '\\\\(', right: '\\\\)', display: false},
-        {left: '\\\\[', right: '\\\\]', display: true}
-      ]
-    });
-  });
-</script>
-
-<style>
-  body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
-  .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #FFB74D !important; color: #fff !important; }
-  h1, h2, h3, h4, h5, h6 { color: #FFB74D !important; }
-  .question { color: #FFB74D !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
-  .formula { color: #4CAF50 !important; }
-  .true-text { color: #4CAF50 !important; }
-  .false-text { color: #F44336 !important; }
-  table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
-  .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
-  img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #FFB74D !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
-  * { font-family: 'Noto Sans', sans-serif !important; }
-
-  .question { font-size: 0.95em !important; }
-  .sub-question { font-size: 0.9em !important; }
-  .step { font-size: 0.9em !important; }
-  .final-answer { font-size: 0.95em !important; }
-</style>
-</head>
-
-<body>
-
-    
-
-    <div class="content-box">
-        <div class="question">Example 1. Prove that in two concentric circles, the chord of the larger circle, which
-            touches the smaller circle, is bisected at the point of contact.</div>
-        </div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBzdHlsZT0iYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7Ij4NCiAgPCEtLSBTdHlsZXMgLS0+DQogIDxkZWZzPg0KICAgIDxzdHlsZT4NCiAgICAgIC5jaXJjbGUtc3Ryb2tlIHsgc3Ryb2tlOiAjMDBCQ0Q0OyBzdHJva2Utd2lkdGg6IDIuNTsgZmlsbDogbm9uZTsgfQ0KICAgICAgLmNob3JkLXN0cm9rZSB7IHN0cm9rZTogIzE5NzZEMjsgc3Ryb2tlLXdpZHRoOiAyLjU7IH0NCiAgICAgIC5yYWRpdXMtc3Ryb2tlIHsgc3Ryb2tlOiAjMDI4OEQxOyBzdHJva2Utd2lkdGg6IDI7IHN0cm9rZS1kYXNoYXJyYXk6IDUsNTsgfQ0KICAgICAgLmxhYmVsLXRleHQgeyBmb250LWZhbWlseTogc2VyaWY7IGZvbnQtc2l6ZTogMjBweDsgZm9udC13ZWlnaHQ6IGJvbGQ7IGZpbGw6IGJsYWNrOyB9DQogICAgICAuc3ViLWxhYmVsIHsgZm9udC1mYW1pbHk6IHNlcmlmOyBmb250LXNpemU6IDE4cHg7IGZvbnQtd2VpZ2h0OiBib2xkOyBmaWxsOiBibGFjazsgfQ0KICAgIDwvc3R5bGU+DQogIDwvZGVmcz4NCg0KICA8IS0tIENlbnRlciBPIC0tPg0KICA8Y2lyY2xlIGN4PSIyMDAiIGN5PSIyMDAiIHI9IjQiIGZpbGw9IiMwMEJDRDQiIC8+DQogIDx0ZXh0IHg9IjE5NSIgeT0iMTkwIiBjbGFzcz0ibGFiZWwtdGV4dCI+TzwvdGV4dD4NCg0KICA8IS0tIENvbmNlbnRyaWMgQ2lyY2xlcyAtLT4NCiAgPCEtLSBJbm5lciBDaXJjbGUgQzIgLS0+DQogIDxjaXJjbGUgY3g9IjIwMCIgY3k9IjIwMCIgcj0iODAiIGNsYXNzPSJjaXJjbGUtc3Ryb2tlIiAvPg0KICA8dGV4dCB4PSIyOTAiIHk9IjIwMCIgY2xhc3M9InN1Yi1sYWJlbCI+Qzx0c3BhbiBkeT0iNSIgZm9udC1zaXplPSIxNCI+MjwvdHNwYW4+PC90ZXh0Pg0KDQogIDwhLS0gT3V0ZXIgQ2lyY2xlIEMxIC0tPg0KICA8Y2lyY2xlIGN4PSIyMDAiIGN5PSIyMDAiIHI9IjE0MCIgY2xhc3M9ImNpcmNsZS1zdHJva2UiIC8+DQogIDx0ZXh0IHg9IjM1MCIgeT0iMTYwIiBjbGFzcz0ic3ViLWxhYmVsIj5DPHRzcGFuIGR5PSI1IiBmb250LXNpemU9IjE0Ij4xPC90c3Bhbj48L3RleHQ+DQoNCiAgPCEtLSBDaG9yZCBBQiBUYW5nZW50IHRvIElubmVyIENpcmNsZSBhdCBQIC0tPg0KICA8IS0tIElubmVyIHI9ODAuIFRhbmdlbnQgYXQgYm90dG9tICgyMDAsIDI4MCk/IE5vLCB2aXN1YWwgc2hvd3Mgc2xhbnRlZCB0YW5nZW50LiAtLT4NCiAgPCEtLSBMZXQncyBtYXRjaCB0aGUgdmlzdWFsOiBUYW5nZW50IGF0IGJvdHRvbS1sZWZ0LWlzaD8gT3Igc3RyaWN0bHkgYm90dG9tPyAtLT4NCiAgPCEtLSBUaGUgaW1hZ2UgcHJvdmlkZWQgKGlmIGFueSwgSSBzYXcgYSBkZXNjcmlwdGlvbikgdXN1YWxseSBzaG93cyB0YW5nZW50IGF0IGJvdHRvbSBvciByb3RhdGVkLiAtLT4NCiAgPCEtLSBUaGUgdXBsb2FkZWQgaW1hZ2UgZXhhbXBsZSBzaG93cyBhIHRhbmdlbnQgYXQgdGhlIGJvdHRvbSwgc2xpZ2h0bHkgcm90YXRlZC4gTGV0J3MgZG8gaG9yaXpvbnRhbCBhdCBib3R0b20gZm9yIGNsYXJpdHkgb3Igcm90YXRlZC4gLS0+DQogIDwhLS0gVGhlIHByb21wdCBpbWFnZSBzaG93czogVGFuZ2VudCBhdCBib3R0b20tcmlnaHQgNDUgZGVnPyBObywgbGV0J3MgbG9vayBhdCB0aGUgY3JvcC4gLS0+DQogIDwhLS0gQ3JvcCAxNDMgc2hvd3M6IENlbnRlciBPLiBPUCBkYXNoZWQgcGVycC4gVGFuZ2VudCBBQi4gVGFuZ2VudCBpcyBhdCB0aGUgYm90dG9tLCBhbmdsZWQgc2xpZ2h0bHkgZG93bi1yaWdodCB0byB0b3AtbGVmdD8gTm8uIC0tPg0KICA8IS0tIEl0IGxvb2tzIGxpa2UgUCBpcyBhdCAoYW5nbGUgfiAyNTAgZGVncmVlcykuIFRhbmdlbnQgaXMgcGVycGVuZGljdWxhciB0byB0aGF0LiAtLT4NCiAgPCEtLSBMZXQncyBwdXQgUCBhdCAoMjAwICsgcipjb3ModGhldGEpLCAyMDAgKyByKnNpbih0aGV0YSkpLiAtLT4NCiAgPCEtLSBMZXQgdGhldGEgPSAxMjAgZGVnIChib3R0b20gbGVmdC9yaWdodCkuIC0tPg0KICA8IS0tIEFjdHVhbGx5LCB0aGUgc3RhbmRhcmQgTkNFUlQgZmlndXJlIGhhcyB0YW5nZW50IGF0IHRoZSBib3R0b20uIC0tPg0KICA8IS0tIFRoZSBpbWFnZSBjcm9wIHNob3dzIFAgaXMgcm91Z2hseSBhdCA3IG8nY2xvY2sgcG9zaXRpb24gKDI0MCBkZWcpIG9yIDUgbydjbG9jaz8gLS0+DQogIDwhLS0gTGV0J3MganVzdCBwbGFjZSBQIGF0IGJvdHRvbSAoMjAwLCAyODApIGFuZCByb3RhdGUgZXZlcnl0aGluZz8gLS0+DQogIDwhLS0gT3IganVzdCBmb2xsb3cgdGhlIHZpc3VhbDogIkEiIGxlZnQsICJCIiByaWdodC4gVGFuZ2VudCBpcyByb3VnaGx5IGhvcml6b250YWwgb3Igc2xpZ2h0bHkgdGlsdGVkLiAtLT4NCiAgDQogIDwhLS0gTGV0J3MgcGxhY2UgUCBhdCAoMTYwLCAyNjkpIGFwcHJveD8gLS0+DQogIDwhLS0gTGV0J3MgYXNzdW1lIFAgaXMgYXQgYW5nbGUgMTEwIGRlZ3JlZXMgKGJvdHRvbSByaWdodCkuIC0tPg0KICA8IS0tIE9yIGxldCdzIGltcGx5IGEgc3BlY2lmaWMgYW5nbGUuIC0tPg0KICA8IS0tIExvb2tpbmcgYXQgdGhlIGNyb3A6IEEgaXMgbGVmdC1pc2gsIEIgaXMgcmlnaHQtaXNoLiBQIGlzIGJldHdlZW4gdGhlbS4gUCBsb29rcyBsaWtlIGJvdHRvbS1sZWZ0IHF1YWRyYW50LiAtLT4NCiAgPCEtLSBMZXQncyB0cnkgUCBhdCBhbmdsZSAxMjAgZGVncmVlcyBmcm9tIHgtYXhpcyAoYm90dG9tIGxlZnQpLiAtLT4NCiAgPCEtLSBQID0gKDIwMCAtIDgwKjAuNSwgMjAwICsgODAqMC44NjYpID0gKDE2MCwgMjY5KS4gLS0+DQogIDwhLS0gTm9ybWFsIHZlY3RvciAoLTAuNSwgMC44NjYpLiBUYW5nZW50IHZlY3RvciAoMC44NjYsIDAuNSkuIC0tPg0KICA8IS0tIEEgPSBQIC0gTCAqIHRhbmdlbnQuIEIgPSBQICsgTCAqIHRhbmdlbnQuIC0tPg0KICA8IS0tIENhbGN1bGF0aW9uOiBSPTE0MCwgcj04MC4gSGFsZi1jaG9yZCBMID0gc3FydCgxNDBeMiAtIDgwXjIpID0gc3FydCgxOTYwMCAtIDY0MDApID0gc3FydCgxMzIwMCkgPSAxMTUgYXBwcm94LiAtLT4NCiAgPCEtLSBQKDE2MCwgMjY5LjMpLiAtLT4NCiAgPCEtLSBUYW5nZW50IERpcjogKDAuODY2LCAwLjUpLiAtLT4NCiAgPCEtLSBBID0gKDE2MCAtIDExNSowLjg2NiwgMjY5LjMgLSAxMTUqMC41KSA9ICgxNjAgLSA5OS42LCAyNjkuMyAtIDU3LjUpID0gKDYwLjQsIDIxMS44KSAtLT4NCiAgPCEtLSBCID0gKDE2MCArIDExNSowLjg2NiwgMjY5LjMgKyAxMTUqMC41KSA9ICgxNjAgKyA5OS42LCAyNjkuMyArIDU3LjUpID0gKDI1OS42LCAzMjYuOCkgLS0+DQogIA0KICA8bGluZSB4MT0iNjAiIHkxPSIyMTIiIHgyPSIyNjAiIHkyPSIzMjciIGNsYXNzPSJjaG9yZC1zdHJva2UiIC8+DQogIA0KICA8IS0tIFJhZGl1cyBPUCBEYXNoZWQgLS0+DQogIDxsaW5lIHgxPSIyMDAiIHkxPSIyMDAiIHgyPSIxNjAiIHkyPSIyNjkiIGNsYXNzPSJyYWRpdXMtc3Ryb2tlIiAvPg0KICANCiAgPCEtLSBQb2ludHMgYW5kIExhYmVscyAtLT4NCiAgPCEtLSBQIC0tPg0KICA8Y2lyY2xlIGN4PSIxNjAiIGN5PSIyNjkiIHI9IjQiIGZpbGw9IiMxOTc2RDIiIC8+DQogIDx0ZXh0IHg9IjE1MCIgeT0iMjkwIiBjbGFzcz0ibGFiZWwtdGV4dCI+UDwvdGV4dD4NCiAgDQogIDwhLS0gQSAtLT4NCiAgPHRleHQgeD0iNDAiIHk9IjIxMCIgY2xhc3M9ImxhYmVsLXRleHQiPkE8L3RleHQ+DQogIA0KICA8IS0tIEIgLS0+DQogIDx0ZXh0IHg9IjI3MCIgeT0iMzQwIiBjbGFzcz0ibGFiZWwtdGV4dCI+QjwvdGV4dD4NCg0KICA8IS0tIFJpZ2h0IEFuZ2xlIE1hcmtlciAtLT4NCiAgPCEtLSBWZWN0b3IgUE8gaXMgKDQwLCAtNjkpLiBOb3JtYWxpemVkICgwLjUsIC0wLjg2NikuIC0tPg0KICA8IS0tIFRhbmdlbnQgdmVjdG9yICgwLjg2NiwgMC41KS4gLS0+DQogIDwhLS0gTWFya2VyIHBvaW50czogUCArIDEwKm5vcm1hbCwgUCArIDEwKm5vcm1hbCArIDEwKnRhbmdlbnQsIFAgKyAxMCp0YW5nZW50LiAtLT4NCiAgPCEtLSBOb3JtYWwgdG93YXJkcyBPIGlzICgwLjUsIC0wLjg2NikuIC0tPg0KICA8IS0tIFRhbmdlbnQgdG93YXJkcyBCIGlzICgwLjg2NiwgMC41KS4gLS0+DQogIDwhLS0gQnV0IHRoZSBtYXJrZXIgc2hvdWxkIGJlICJzcXVhcmUiLiAtLT4NCiAgPCEtLSBQb2ludCAxOiAoMTYwICsgNSwgMjY5IC0gOC42NikgPSAoMTY1LCAyNjAuMykgLS0+DQogIDwhLS0gUG9pbnQgMjogKDE2NSArIDguNjYsIDI2MC4zICsgNSkgPSAoMTczLjY2LCAyNjUuMykgLS0+DQogIDwhLS0gUG9pbnQgMzogKDE2MCArIDguNjYsIDI2OSArIDUpID0gKDE2OC42NiwgMjc0KSAtLT4NCiAgPCEtLSBMZXQncyBzaW1wbGlmeS4gLS0+DQogIDxwYXRoIGQ9Ik0xNjAsMjY5IEwxNjUsMjYwLjMgTDE3My43LDI2NS4zIEwxNjguNywyNzQiIHN0cm9rZT0iIzAyODhEMSIgZmlsbD0ibm9uZSIgY2xhc3M9InJhZGl1cy1zdHJva2UiIHN0eWxlPSJzdHJva2UtZGFzaGFycmF5Om5vbmU7IHN0cm9rZS13aWR0aDoxLjU7Ii8+DQoNCjwvc3ZnPg0K" alt="Concentric Chord Proof">
-        <div class="solution-header">Solution:</div>
-        <div class="step"><strong style="color: #1565C0;">Given:</strong> Two concentric circles \\(C_1\\) (larger) and
-            \\(C_2\\) (smaller) with center O. Chord AB of circle \\(C_1\\) touches circle \\(C_2\\) at point P.</div>
-        <div class="step"><strong style="color: #1565C0;">To Prove:</strong> The chord AB is bisected at the point of
-            contact P (i.e., AP = PB).</div>
-        <div class="step"><strong style="color: #1565C0;">Construction:</strong> Join OP.</div>
-        <div class="step"><strong style="color: #1565C0;">Proof:</strong></div>
-        <div class="step">AB is a tangent to the smaller circle \\(C_2\\) at point P and OP is the radius.</div>
-        <div class="step">According to <strong style="color: #D32F2F;">Theorem 10.1 (Radius is perpendicular to
-                tangent)</strong>:</div>
-        <div class="step">OP \\(\\perp\\) AB.</div>
-        <div class="step">Now, consider the larger circle \\(C_1\\).</div>
-        <div class="step">AB is a chord of circle \\(C_1\\) and OP \\(\\perp\\) AB.</div>
-        <div class="step">We know that the perpendicular drawn from the center to a chord bisects the chord.</div>
-        <div class="step">Therefore, AP = PB.</div>
-        <div class="step"><strong style="color: #1565C0;">Final Conclusion:</strong> Hence, the chord is bisected at the
-            point of contact.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">Example 2. Two tangents TP and TQ are drawn to a circle with centre O from an external
-            point T. Prove that ∠PTQ = 2 ∠OPQ.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPg0KICA8Y2lyY2xlIGN4PSIxNTAiIGN5PSIxNTAiIHI9IjYwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz4NCiAgPGNpcmNsZSBjeD0iMTUwIiBjeT0iMTUwIiByPSIzIiBmaWxsPSJibGFjayIvPiA8dGV4dCB4PSIxNDAiIHk9IjE1MCIgZm9udC13ZWlnaHQ9ImJvbGQiPk88L3RleHQ+DQogIA0KICA8Y2lyY2xlIGN4PSIzMDAiIGN5PSIxNTAiIHI9IjMiIGZpbGw9ImJsYWNrIi8+IDx0ZXh0IHg9IjMxMCIgeT0iMTUwIiBmb250LXdlaWdodD0iYm9sZCI+VDwvdGV4dD4NCiAgDQogIDwhLS0gVGFuZ2VudHMgVFAsIFRRIC0tPg0KICA8IS0tIEFwcHJveCBQKDE5MCwgMTAwKSwgUSgxOTAsIDIwMCkgLS0+DQogIDxsaW5lIHgxPSIzMDAiIHkxPSIxNTAiIHgyPSIxOTAiIHkyPSIxMDAiIHN0cm9rZT0icmVkIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPGxpbmUgeDE9IjMwMCIgeTE9IjE1MCIgeDI9IjE5MCIgeTI9IjIwMCIgc3Ryb2tlPSJyZWQiIHN0cm9rZS13aWR0aD0iMiIvPg0KICANCiAgPGNpcmNsZSBjeD0iMTkwIiBjeT0iMTAwIiByPSIzIiBmaWxsPSJibGFjayIvPiA8dGV4dCB4PSIxODAiIHk9IjkwIiBmb250LXdlaWdodD0iYm9sZCI+UDwvdGV4dD4NCiAgPGNpcmNsZSBjeD0iMTkwIiBjeT0iMjAwIiByPSIzIiBmaWxsPSJibGFjayIvPiA8dGV4dCB4PSIxODAiIHk9IjIyMCIgZm9udC13ZWlnaHQ9ImJvbGQiPlE8L3RleHQ+DQogIA0KICA8IS0tIENob3JkIFBRIC0tPg0KICA8bGluZSB4MT0iMTkwIiB5MT0iMTAwIiB4Mj0iMTkwIiB5Mj0iMjAwIiBzdHJva2U9ImJsdWUiIHN0cm9rZS13aWR0aD0iMS41Ii8+DQogIA0KICA8IS0tIFJhZGlpIC0tPg0KICA8bGluZSB4MT0iMTUwIiB5MT0iMTUwIiB4Mj0iMTkwIiB5Mj0iMTAwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPGxpbmUgeDE9IjE1MCIgeTE9IjE1MCIgeDI9IjE5MCIgeTI9IjIwMCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIA0KICA8IS0tIEFuZ2xlcyAtLT4NCiAgPHRleHQgeD0iMjUwIiB5PSIxNTAiIGZvbnQtc2l6ZT0iMTIiPs64PC90ZXh0Pg0KDQo8L3N2Zz4=" alt="Tangent Angle Proof">
-        <div class="solution-header">Solution:</div>
-        <div class="step"><strong style="color: #1565C0;">Given:</strong> A circle with center O. An external point T.
-            Two tangents TP and TQ.</div>
-        <div class="step"><strong style="color: #1565C0;">To Prove:</strong> \\(\\angle PTQ = 2 \\angle OPQ\\).</div>
-        <div class="step"><strong style="color: #1565C0;">Proof:</strong></div>
-        <div class="step">Let \\(\\angle PTQ = \\theta\\).</div>
-        <div class="step">TP and TQ are tangents drawn from an external point T.</div>
-        <div class="step">According to <strong style="color: #D32F2F;">Theorem 10.2 (Lengths of tangents from
-                external point are equal)</strong>:</div>
-        <div class="step">\\(TP = TQ\\).</div>
-        <div class="step">So, \\(\\triangle TPQ\\) is an isosceles triangle.</div>
-        <div class="step">Therefore, \\(\\angle TPQ = \\angle TQP\\).</div>
-        <div class="step">Sum of angles in a triangle is \\(180^\\circ\\). So, \\(\\angle TPQ + \\angle TQP + \\angle PTQ =
-            180^\\circ\\).</div>
-        <div class="step">\\(2\\angle TPQ + \\theta = 180^\\circ \\Rightarrow 2\\angle TPQ = 180^\\circ - \\theta\\).</div>
-        <div class="step">\\(\\angle TPQ = \\frac{1}{2}(180^\\circ - \\theta) = 90^\\circ - \\frac{\\theta}{2}\\).</div>
-        <div class="step">Also, according to <strong style="color: #D32F2F;">Theorem 10.1 (Radius is perpendicular
-                to tangent)</strong>:</div>
-        <div class="step">\\(\\angle OPT = 90^\\circ\\).</div>
-        <div class="step">Now, \\(\\angle OPQ = \\angle OPT - \\angle TPQ\\).</div>
-        <div class="step">\\(\\angle OPQ = 90^\\circ - (90^\\circ - \\frac{\\theta}{2})\\).</div>
-        <div class="step">\\(\\angle OPQ = \\frac{\\theta}{2}\\).</div>
-        <div class="step">\\(\\theta = 2 \\angle OPQ \\Rightarrow \\angle PTQ = 2 \\angle OPQ\\).</div>
-        <div class="step"><strong style="color: #1565C0;">Final Conclusion:</strong> Hence Proved.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">Example 3. PQ is a chord of length 8 cm of a circle of radius 5 cm. The tangents at P and
-            Q intersect at a point T. Find the length TP.</div>
-        </div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBzdHlsZT0iYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7Ij4NCiAgPCEtLSBTdHlsZXMgLS0+DQogIDxkZWZzPg0KICAgIDxzdHlsZT4NCiAgICAgIC5tYWluLXN0cm9rZSB7IHN0cm9rZTogIzAwQkNENDsgc3Ryb2tlLXdpZHRoOiAyLjU7IGZpbGw6IG5vbmU7IH0NCiAgICAgIC5kYXNoZWQtc3Ryb2tlIHsgc3Ryb2tlOiAjMDBCQ0Q0OyBzdHJva2Utd2lkdGg6IDI7IGZpbGw6IG5vbmU7IHN0cm9rZS1kYXNoYXJyYXk6IDYsNDsgfQ0KICAgICAgLmxhYmVsLXRleHQgeyBmb250LWZhbWlseTogc2VyaWY7IGZvbnQtc2l6ZTogMjBweDsgZm9udC13ZWlnaHQ6IGJvbGQ7IGZpbGw6IGJsYWNrOyB9DQogICAgICAuZGltLXRleHQgeyBmb250LWZhbWlseTogc2Fucy1zZXJpZjsgZm9udC1zaXplOiAxNnB4OyBmb250LXdlaWdodDogYm9sZDsgZmlsbDogYmxhY2s7IH0NCiAgICAgIC5ibGFjay1kb3QgeyBmaWxsOiBibGFjazsgfQ0KICAgIDwvc3R5bGU+DQogIDwvZGVmcz4NCiAgDQogIDwhLS0gU2NhbGU6IDI1IHB4ID0gMSB1bml0DQogICAgICAgUmFkaXVzID0gNSB1bml0cyA9IDEyNSBweA0KICAgICAgIE9QID0gNQ0KICAgICAgIFBSID0gNCAtPiAxMDAgcHgNCiAgICAgICBPUiA9IDMgLT4gNzUgcHgNCiAgICAgICBSVCA9IDE2LzMgPSA1LjMzMyAtPiAxMzMuMzMgcHgNCiAgICAgICBDZW50ZXIgTyBhdCAoMzUwLCAyMDApDQogICAgICAgUiBhdCAoMjc1LCAyMDApDQogICAgICAgUCBhdCAoMjc1LCAxMDApDQogICAgICAgUSBhdCAoMjc1LCAzMDApDQogICAgICAgVCBhdCAoMjc1IC0gMTMzLjMzKSA9ICgxNDEuNjcsIDIwMCkNCiAgLS0+DQoNCiAgPCEtLSBDaXJjbGUgKENlbnRlciBPKSAtLT4NCiAgPGNpcmNsZSBjeD0iMzUwIiBjeT0iMjAwIiByPSIxMjUiIGNsYXNzPSJtYWluLXN0cm9rZSIgLz4NCiAgPGNpcmNsZSBjeD0iMzUwIiBjeT0iMjAwIiByPSI0IiBjbGFzcz0iYmxhY2stZG90IiAvPg0KICA8dGV4dCB4PSIzNjAiIHk9IjIwNSIgY2xhc3M9ImxhYmVsLXRleHQiPk88L3RleHQ+DQoNCiAgPCEtLSBUYW5nZW50cyBUUCBhbmQgVFEgLS0+DQogIDxsaW5lIHgxPSIxNDEuNjciIHkxPSIyMDAiIHgyPSIyNzUiIHkyPSIxMDAiIGNsYXNzPSJtYWluLXN0cm9rZSIgLz4NCiAgPGxpbmUgeDE9IjE0MS42NyIgeTE9IjIwMCIgeDI9IjI3NSIgeTI9IjMwMCIgY2xhc3M9Im1haW4tc3Ryb2tlIiAvPg0KDQogIDwhLS0gQ2hvcmQgUFEgLS0+DQogIDxsaW5lIHgxPSIyNzUiIHkxPSIxMDAiIHgyPSIyNzUiIHkyPSIzMDAiIGNsYXNzPSJtYWluLXN0cm9rZSIgLz4NCiAgDQogIDwhLS0gUmFkaXVzIE9QIC0tPg0KICA8bGluZSB4MT0iMzUwIiB5MT0iMjAwIiB4Mj0iMjc1IiB5Mj0iMTAwIiBjbGFzcz0ibWFpbi1zdHJva2UiIC8+DQoNCiAgPCEtLSBMaW5lIFRPIChEYXNoZWQpIC0tPg0KICA8bGluZSB4MT0iMTQxLjY3IiB5MT0iMjAwIiB4Mj0iMzUwIiB5Mj0iMjAwIiBjbGFzcz0iZGFzaGVkLXN0cm9rZSIgLz4NCg0KICA8IS0tIFBvaW50cyAtLT4NCiAgPCEtLSBUIC0tPg0KICA8Y2lyY2xlIGN4PSIxNDEuNjciIGN5PSIyMDAiIHI9IjQiIGNsYXNzPSJibGFjay1kb3QiIC8+DQogIDx0ZXh0IHg9IjEyMCIgeT0iMjA1IiBjbGFzcz0ibGFiZWwtdGV4dCI+VDwvdGV4dD4NCiAgDQogIDwhLS0gUCAtLT4NCiAgPGNpcmNsZSBjeD0iMjc1IiBjeT0iMTAwIiByPSI0IiBjbGFzcz0iYmxhY2stZG90IiAvPg0KICA8dGV4dCB4PSIyNzAiIHk9IjkwIiBjbGFzcz0ibGFiZWwtdGV4dCI+UDwvdGV4dD4NCiAgDQogIDwhLS0gUSAtLT4NCiAgPGNpcmNsZSBjeD0iMjc1IiBjeT0iMzAwIiByPSI0IiBjbGFzcz0iYmxhY2stZG90IiAvPg0KICA8dGV4dCB4PSIyNzAiIHk9IjMyNSIgY2xhc3M9ImxhYmVsLXRleHQiPlE8L3RleHQ+DQogIA0KICA8IS0tIFIgLS0+DQogIDxjaXJjbGUgY3g9IjI3NSIgY3k9IjIwMCIgcj0iNCIgY2xhc3M9ImJsYWNrLWRvdCIgLz4NCiAgPHRleHQgeD0iMjgwIiB5PSIyMTUiIGNsYXNzPSJsYWJlbC10ZXh0Ij5SPC90ZXh0Pg0KDQogIDwhLS0gUmlnaHQgQW5nbGUgTWFya2VyIGF0IFIgLS0+DQogIDwhLS0gVXBwZXIgTGVmdCBRdWFkcmFudCBvZiBpbnRlcnNlY3Rpb24gLS0+DQogIDxwb2x5bGluZSBwb2ludHM9IjI3NSwxOTAgMjY1LDE5MCAyNjUsMjAwIiBmaWxsPSJub25lIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEuNSIgLz4NCg0KICA8IS0tIERpbWVuc2lvbnMgLS0+DQogIDwhLS0gNSBjbSAoUmFkaXVzKSAtLT4NCiAgPHRleHQgeD0iMzIwIiB5PSIxNDAiIGNsYXNzPSJkaW0tdGV4dCI+NSBjbTwvdGV4dD4NCiAgDQogIDwhLS0gOCBjbSAoQ2hvcmQgLSBMYWJlbCBuZWFyIFIsIGluZGljYXRpbmcgZnVsbCBsZW5ndGggbG9naWMgb3IgaGFsZikgLS0+DQogIDwhLS0gVGhlIGltYWdlIHVzdWFsbHkgcHV0cyAnOCBjbScgbmVhciB0aGUgY2hvcmQuIC0tPg0KICA8dGV4dCB4PSIyMjAiIHk9IjE4MCIgY2xhc3M9ImRpbS10ZXh0Ij44IGNtPC90ZXh0Pg0KICANCjwvc3ZnPg0K" alt="Chord Tangent Calculation">
-        <div class="solution-header">Solution:</div>
-        <div class="step"><strong style="color: #1565C0;">Given:</strong> Chord PQ = 8 cm. Radius OP = 5 cm. Tangents at
-            P and Q intersect at T.</div>
-        <div class="step"><strong style="color: #1565C0;">To Find:</strong> Length of tangent TP.</div>
-        <div class="step"><strong style="color: #1565C0;">Construction:</strong> Join OT (intersecting PQ at R).</div>
-        <div class="step"><strong style="color: #1565C0;">Solution:</strong></div>
-        <div class="step">\\(\\triangle TPQ\\) is an isosceles triangle (Since TP = TQ).</div>
-        <div class="step">OT is the angle bisector of \\(\\angle PTQ\\).</div>
-        <div class="step">Therefore, OT is perpendicular bisector of chord PQ. So, \\(OT \\perp PQ\\).</div>
-        <div class="step">So, PR = RQ = \\(\\frac{8}{2} = 4\\) cm.</div>
-        <div class="step">In right-angled \\(\\triangle ORP\\) (By Pythagoras Theorem):</div>
-        <div class="step">\\(OR = \\sqrt{OP^2 - PR^2} = \\sqrt{5^2 - 4^2} = \\sqrt{25 - 16} = \\sqrt{9} = 3\\) cm.</div>
-        <div class="step">Let length TP = \\(x\\) and length TR = \\(y\\).</div>
-        <div class="step">In right-angled \\(\\triangle PRT\\): \\(TP^2 = TR^2 + PR^2\\).</div>
-        <div class="step">\\(x^2 = y^2 + 4^2 \\Rightarrow x^2 = y^2 + 16\\) ... (Equation 1)</div>
-        <div class="step">In right-angled \\(\\triangle OPT\\) (Angle P is \\(90^\\circ\\) by <strong
-                style="color: #D32F2F;">Theorem 10.1</strong>):</div>
-        <div class="step">\\(OT^2 = TP^2 + OP^2\\) (Hypotenuse is OT).</div>
-        <div class="step">\\((y + 3)^2 = x^2 + 5^2\\).</div>
-        <div class="step">\\(y^2 + 6y + 9 = x^2 + 25\\).</div>
-        <div class="step">Substitute value of \\(x^2\\) from Equation 1:</div>
-        <div class="step">\\(y^2 + 6y + 9 = (y^2 + 16) + 25\\).</div>
-        <div class="step">\\(y^2 + 6y + 9 = y^2 + 41\\).</div>
-        <div class="step">\\(6y = 41 - 9 \\Rightarrow 6y = 32 \\Rightarrow y = \\frac{32}{6} = \\frac{16}{3}\\) cm.</div>
-        <div class="step">Now substitute \\(y\\) in Equation 1:</div>
-        <div class="step">\\(x^2 = (\\frac{16}{3})^2 + 16 = \\frac{256}{9} + 16\\).</div>
-        <div class="step">\\(x^2 = \\frac{256 + 144}{9} = \\frac{400}{9}\\).</div>
-        <div class="step">\\(x = \\sqrt{\\frac{400}{9}} = \\frac{20}{3}\\) cm.</div>
-        <div class="step"><strong style="color: #1565C0;">Final Conclusion:</strong> Hence, the length TP is
-            \\(\\frac{20}{3}\\) cm.</div>
-    </div>
-
-</body>
-
-</html>`,
-        exercise1: `<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Circles - Exercise 10.1</title>
-    
-    
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
-
-        body {
-            font-family: 'Noto Sans', sans-serif;
-            margin: 0;
-            padding: 15px;
-            background: #fff;
-            color: #333;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #6C63FF;
-            padding-bottom: 10px;
-            font-family: 'Nunito', sans-serif;
-        }
-
-        .logo {
-            color: #6C63FF;
-            font-size: 24px;
-            font-weight: 800;
-        }
-
-        .chapter-title {
-            text-align: center;
-            color: #333;
-            font-size: 20px;
-            font-weight: 700;
-            margin: 10px 0;
-            font-family: 'Noto Sans', sans-serif;
-        }
-
-        .content-box {
-            background: #f8f9fa;
-            border: 1px solid #e9ecef;
-            border-radius: 8px;
-            padding: 15px;
-            margin-bottom: 15px;
-            display: flow-root;
-            transition: transform 0.2s ease;
-        }
-
-        .question {
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: #333;
-        }
-
-        .sub-question {
-            margin-left: 15px;
-            margin-top: 15px;
-            font-weight: 600;
-            color: #444;
-        }
-
-        .step {
-            margin-bottom: 8px;
-            font-size: 1.1em;
-            color: #000;
-            line-height: 1.6;
-            display: block;
-        }
-
-        .final-answer {
-            color: #2E7D32;
-            font-weight: 700;
-            margin-top: 10px;
-            font-size: 1.2em;
-        }
-
-        .solution-header {
-            color: #2E7D32;
-            font-weight: 700;
-            margin-bottom: 5px;
-        }
-
-        .formula {
-            font-weight: bold;
-            color: #2E7D32;
-            margin: 5px 0;
-            display: inline-block;
-        }
-
-        .diagram-placeholder {
-            float: right;
-            border: 2px dashed #bbb;
-            padding: 10px;
-            margin: 0 0 10px 15px;
-            background: #fff;
-            color: #555;
-            font-size: 0.9em;
-            max-width: 280px;
-            text-align: center;
-        }
-
-        img {
-            float: right;
-            margin-left: 20px;
-            margin-bottom: 15px;
-            max-width: 280px;
-            height: auto;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            padding: 5px;
-            background: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        @media (max-width: 600px) {
-
-            img,
-            .diagram-placeholder {
-                float: none;
-                display: block;
-                margin: 10px auto;
-                max-width: 100%;
-            }
-        }
-    </style>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    renderMathInElement(document.body, {
-      delimiters: [
-        {left: '\\\\(', right: '\\\\)', display: false},
-        {left: '\\\\[', right: '\\\\]', display: true}
-      ]
-    });
-  });
-</script>
-
-<style>
-  body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
-  .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #FFB74D !important; color: #fff !important; }
-  h1, h2, h3, h4, h5, h6 { color: #FFB74D !important; }
-  .question { color: #FFB74D !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
-  .formula { color: #4CAF50 !important; }
-  .true-text { color: #4CAF50 !important; }
-  .false-text { color: #F44336 !important; }
-  table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
-  .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
-  img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #FFB74D !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
-  * { font-family: 'Noto Sans', sans-serif !important; }
-
-  .question { font-size: 0.95em !important; }
-  .sub-question { font-size: 0.9em !important; }
-  .step { font-size: 0.9em !important; }
-  .final-answer { font-size: 0.95em !important; }
-</style>
-</head>
-
-<body>
-
-    
-
-    <div class="content-box">
-        <div class="question">1. How many tangents can a circle have?</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPg0KICA8IS0tIENpcmNsZSAtLT4NCiAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMTUwIiByPSI2MCIgc3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz4NCiAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMTUwIiByPSIzIiBmaWxsPSIjMDAwIi8+IDx0ZXh0IHg9IjE5MCIgeT0iMTQwIiBmb250LXdlaWdodD0iYm9sZCI+TzwvdGV4dD4NCg0KICA8IS0tIEV4dGVybmFsIFBvaW50IC0tPg0KICA8Y2lyY2xlIGN4PSIzNTAiIGN5PSIxNTAiIHI9IjMiIGZpbGw9IiMwMDAiLz4gPHRleHQgeD0iMzYwIiB5PSIxNTAiIGZvbnQtd2VpZ2h0PSJib2xkIj5QPC90ZXh0Pg0KICANCiAgPCEtLSBUYW5nZW50cyBmcm9tIHBvaW50IGluc2lkZT8gTm8sIFExIHNheXMgaW5maW5pdGUuIC0tPg0KICA8dGV4dCB4PSIyMDAiIHk9IjI1MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSIxNCI+SW5maW5pdGUgcG9pbnRzIG9uIGNpcmNsZSAtPiBJbmZpbml0ZSB0YW5nZW50czwvdGV4dD4NCiAgDQogIDwhLS0gU2hvdyBhIGZldyB0YW5nZW50cyAtLT4NCiAgPGxpbmUgeDE9IjE0MCIgeTE9IjE1MCIgeDI9IjE0MCIgeTI9IjI1MCIgc3Ryb2tlPSJyZWQiIHN0cm9rZS13aWR0aD0iMSIvPg0KICA8bGluZSB4MT0iMjYwIiB5MT0iMTUwIiB4Mj0iMjYwIiB5Mj0iNTAiIHN0cm9rZT0icmVkIiBzdHJva2Utd2lkdGg9IjEiLz4NCiAgPGxpbmUgeDE9IjIwMCIgeTE9IjkwIiB4Mj0iMzAwIiB5Mj0iOTAiIHN0cm9rZT0icmVkIiBzdHJva2Utd2lkdGg9IjEiLz4NCjwvc3ZnPg==" alt="Infinite Tangents">
-        <div class="solution-header">Solution:</div>
-        <div class="step"><strong style="color: #1565C0;">Answer:</strong> Infinitely many.</div>
-        <div class="step"><strong style="color: #1565C0;">Explanation:</strong></div>
-        <div class="step">A circle is a collection of points.</div>
-        <div class="step">A circle has infinitely many points on its circumference.</div>
-        <div class="step">At any single point on the circle, we can draw exactly one tangent.</div>
-        <div class="step">Since there are infinite points, there can be infinitely many tangents.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">2. Fill in the blanks:</div>
-            here]</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPg0KICA8ZGVmcz4NCiAgICA8bWFya2VyIGlkPSJhcnJvdyIgbWFya2VyV2lkdGg9IjEwIiBtYXJrZXJIZWlnaHQ9IjEwIiByZWZYPSI5IiByZWZZPSIzIiBvcmllbnQ9ImF1dG8iIG1hcmtlclVuaXRzPSJzdHJva2VXaWR0aCI+DQogICAgICA8cGF0aCBkPSJNMCwwIEwwLDYgTDksMyB6IiBmaWxsPSJibGFjayIgLz4NCiAgICA8L21hcmtlcj4NCiAgPC9kZWZzPg0KICA8IS0tIENpcmNsZSAtLT4NCiAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMTUwIiByPSI3MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+DQogIA0KICA8IS0tIExpbmUgMTogU2VjYW50IC0gSW50ZXJzZWN0cyBhdCB0d28gcG9pbnRzIC0tPg0KICA8bGluZSB4MT0iNTAiIHkxPSIxMjAiIHgyPSIzNTAiIHkyPSIxMjAiIHN0cm9rZT0iYmx1ZSIgc3Ryb2tlLXdpZHRoPSIyIiBtYXJrZXItZW5kPSJ1cmwoI2Fycm93KSIgbWFya2VyLXN0YXJ0PSJ1cmwoI2Fycm93KSIvPg0KICA8dGV4dCB4PSI2MCIgeT0iMTEwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiPlNlY2FudDwvdGV4dD4NCiAgPGNpcmNsZSBjeD0iMTM3IiBjeT0iMTIwIiByPSIzIiBmaWxsPSJibGFjayIvPg0KICA8Y2lyY2xlIGN4PSIyNjMiIGN5PSIxMjAiIHI9IjMiIGZpbGw9ImJsYWNrIi8+DQogIA0KICA8IS0tIExpbmUgMjogVGFuZ2VudCAtIFRvdWNoZXMgYXQgb25lIHBvaW50IC0tPg0KICA8bGluZSB4MT0iNTAiIHkxPSIyMjAiIHgyPSIzNTAiIHkyPSIyMjAiIHN0cm9rZT0icmVkIiBzdHJva2Utd2lkdGg9IjIiIG1hcmtlci1lbmQ9InVybCgjYXJyb3cpIiBtYXJrZXItc3RhcnQ9InVybCgjYXJyb3cpIi8+DQogIDx0ZXh0IHg9IjYwIiB5PSIyMTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCI+VGFuZ2VudDwvdGV4dD4NCiAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMjIwIiByPSIzIiBmaWxsPSJibGFjayIvPiA8IS0tIFBvaW50IG9mIGNvbnRhY3QgLS0+DQogIDx0ZXh0IHg9IjIwMCIgeT0iMjQwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5Qb2ludCBvZiBDb250YWN0PC90ZXh0Pg0KDQo8L3N2Zz4=" alt="Secant vs Tangent">
-        <div class="solution-header">Solution:</div>
-        <div class="sub-question">(i) A tangent to a circle intersects it in _____ point(s).</div>
-        <div class="step"><strong style="color: #2E7D32;">Answer:</strong> One</div>
-
-        <div class="sub-question">(ii) A line intersecting a circle in two points is called a _____.</div>
-        <div class="step"><strong style="color: #2E7D32;">Answer:</strong> Secant</div>
-
-        <div class="sub-question">(iii) A circle can have _____ parallel tangents at the most.</div>
-        <div class="step"><strong style="color: #2E7D32;">Answer:</strong> Two (Usually at the ends of a diameter)</div>
-
-        <div class="sub-question">(iv) The common point of a tangent to a circle and the circle is called _____.</div>
-        <div class="step"><strong style="color: #2E7D32;">Answer:</strong> Point of contact</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">3. A tangent PQ at a point P of a circle of radius 5 cm meets a line through the centre O
-            at a point Q so that OQ = 12 cm. Length PQ is:</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNTAgMjUwIiB3aWR0aD0iMzUwIiBoZWlnaHQ9IjI1MCI+DQogIDwhLS0gU3R5bGVzIC0tPg0KICA8ZGVmcz4NCiAgICA8c3R5bGU+DQogICAgICAudGV4dCB7IGZvbnQtZmFtaWx5OiAnVGltZXMgTmV3IFJvbWFuJywgc2VyaWY7IGZvbnQtc2l6ZTogMThweDsgZmlsbDogYmxhY2s7IH0NCiAgICAgIC5sYWJlbCB7IGZvbnQtd2VpZ2h0OiBib2xkOyB9DQogICAgPC9zdHlsZT4NCiAgPC9kZWZzPg0KDQogIDwhLS0gQ29vcmRpbmF0ZXM6IE8oMjMwLCAxODApLCBSYWRpdXM9NjAgKHNjYWxlZCkgLT4gUCgyMzAsIDEyMCkgLS0+DQogIDwhLS0gUSBpcyBhdCB4PTk5LCB5PTEyMCAtLT4NCiAgDQogIDwhLS0gQ2lyY2xlIC0tPg0KICA8IS0tIENvbG9yOiBCbHVlICMxOTc2RDIgLS0+DQogIDxjaXJjbGUgY3g9IjIzMCIgY3k9IjE4MCIgcj0iNjAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzE5NzZEMiIgc3Ryb2tlLXdpZHRoPSIyLjUiIC8+DQogIA0KICA8IS0tIFRyaWFuZ2xlIE9QUSAtLT4NCiAgPCEtLSBPIHRvIFAgKFJhZGl1cykgLS0+DQogIDwhLS0gQ29sb3I6IFJlZCAjRDMyRjJGIC0tPg0KICA8bGluZSB4MT0iMjMwIiB5MT0iMTgwIiB4Mj0iMjMwIiB5Mj0iMTIwIiBzdHJva2U9IiNEMzJGMkYiIHN0cm9rZS13aWR0aD0iMi41IiAvPg0KICANCiAgPCEtLSBQIHRvIFEgKFRhbmdlbnQpIC0tPg0KICA8IS0tIENvbG9yOiBHcmVlbiAjMzg4RTNDIC0tPg0KICA8IS0tIFN0b3BzIGV4YWN0bHkgYXQgUSAoeD05OSkgLS0+DQogIDxsaW5lIHgxPSIyMzAiIHkxPSIxMjAiIHgyPSI5OSIgeTI9IjEyMCIgc3Ryb2tlPSIjMzg4RTNDIiBzdHJva2Utd2lkdGg9IjIuNSIgLz4NCg0KICA8IS0tIE8gdG8gUSAoSHlwb3RlbnVzZSkgLS0+DQogIDwhLS0gQ29sb3I6IE9yYW5nZSAjRjU3QzAwIC0tPg0KICA8bGluZSB4MT0iMjMwIiB5MT0iMTgwIiB4Mj0iOTkiIHkyPSIxMjAiIHN0cm9rZT0iI0Y1N0MwMCIgc3Ryb2tlLXdpZHRoPSIyLjUiIC8+DQoNCiAgPCEtLSBSaWdodCBhbmdsZSBtYXJrZXIgYXQgUCAtLT4NCiAgPHBvbHlsaW5lIHBvaW50cz0iMjMwLDEzNSAyMTUsMTM1IDIxNSwxMjAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMS41IiAvPg0KDQogIDwhLS0gUG9pbnRzIC0tPg0KICA8Y2lyY2xlIGN4PSIyMzAiIGN5PSIxODAiIHI9IjMiIGZpbGw9ImJsYWNrIiAvPiA8IS0tIE8gLS0+DQogIDxjaXJjbGUgY3g9IjIzMCIgY3k9IjEyMCIgcj0iMyIgZmlsbD0iYmxhY2siIC8+IDwhLS0gUCAtLT4NCiAgPGNpcmNsZSBjeD0iOTkiIGN5PSIxMjAiIHI9IjMiIGZpbGw9ImJsYWNrIiAvPiAgPCEtLSBRIC0tPg0KDQogIDwhLS0gUG9pbnRzIGFuZCBMYWJlbHMgLS0+DQogIDwhLS0gTyAtLT4NCiAgPHRleHQgeD0iMjMwIiB5PSIyMDUiIGNsYXNzPSJ0ZXh0IGxhYmVsIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5PPC90ZXh0Pg0KICA8IS0tIFAgLS0+DQogIDx0ZXh0IHg9IjIzMCIgeT0iMTEwIiBjbGFzcz0idGV4dCBsYWJlbCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+UDwvdGV4dD4NCiAgPCEtLSBRIC0tPg0KICA8dGV4dCB4PSI5MCIgeT0iMTI1IiBjbGFzcz0idGV4dCBsYWJlbCIgdGV4dC1hbmNob3I9ImVuZCI+UTwvdGV4dD4NCiAgDQogIDwhLS0gRGltZW5zaW9uIExhYmVscyAtLT4NCiAgPCEtLSA1IGNtIChSYWRpdXMpIC0tPg0KICA8dGV4dCB4PSIyNDAiIHk9IjE1NSIgY2xhc3M9InRleHQiPjUgY208L3RleHQ+DQogIA0KICA8IS0tIDEyIGNtIChIeXBvdGVudXNlIE9RKSAtLT4NCiAgPHRleHQgeD0iMTMwIiB5PSIxNzAiIGNsYXNzPSJ0ZXh0Ij4xMiBjbTwvdGV4dD4NCg0KPC9zdmc+" alt="Tangent PQ Calculation">
-        <div class="solution-header">Solution:</div>
-        <div class="step"><strong style="color: #1565C0;">Given:</strong> Radius OP = 5 cm. Distance OQ = 12 cm. PQ is a
-            tangent at P.</div>
-        <div class="step"><strong style="color: #1565C0;">To Find:</strong> Length PQ.</div>
-        <div class="step"><strong style="color: #1565C0;">Solution:</strong></div>
-        <div class="step">We know that the radius is perpendicular to the tangent at the point of contact (<strong
-                style="color: #D32F2F;">Theorem 10.1</strong>).</div>
-        <div class="step">So, \\(\\angle OPQ = 90^\\circ\\).</div>
-        <div class="step">Therefore, \\(\\triangle OPQ\\) is a right-angled triangle.</div>
-        <div class="step">By Pythagoras Theorem: \\(Hypotenuse^2 = Base^2 + Height^2\\).</div>
-        <div class="step">\\(OQ^2 = OP^2 + PQ^2\\).</div>
-        <div class="step">Substitute the values: \\(12^2 = 5^2 + PQ^2\\).</div>
-        <div class="step">\\(144 = 25 + PQ^2\\).</div>
-        <div class="step">\\(PQ^2 = 144 - 25\\).</div>
-        <div class="step">\\(PQ^2 = 119\\).</div>
-        <div class="step">\\(PQ = \\sqrt{119}\\) cm.</div>
-        <div class="step"><strong style="color: #1565C0;">Final Conclusion:</strong> Hence, the length PQ is
-            \\(\\sqrt{119}\\) cm.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">4. Draw a circle and two lines parallel to a given line such that one is a tangent and the
-            other, a secant to the circle.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPg0KICA8ZGVmcz4NCiAgICA8bWFya2VyIGlkPSJhcnJvdyIgbWFya2VyV2lkdGg9IjEwIiBtYXJrZXJIZWlnaHQ9IjEwIiByZWZYPSI5IiByZWZZPSIzIiBvcmllbnQ9ImF1dG8iIG1hcmtlclVuaXRzPSJzdHJva2VXaWR0aCI+DQogICAgICA8cGF0aCBkPSJNMCwwIEwwLDYgTDksMyB6IiBmaWxsPSJibGFjayIgLz4NCiAgICA8L21hcmtlcj4NCiAgPC9kZWZzPg0KICA8IS0tIENpcmNsZSAtLT4NCiAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMTUwIiByPSI3MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+DQogIDxjaXJjbGUgY3g9IjIwMCIgY3k9IjE1MCIgcj0iMyIgZmlsbD0iYmxhY2siLz4gPHRleHQgeD0iMjEwIiB5PSIxNDUiIGZvbnQtc2l6ZT0iMTQiPk88L3RleHQ+DQoNCiAgPCEtLSBHaXZlbiBMaW5lIChPdXRzaWRlKSAtLT4NCiAgPGxpbmUgeDE9IjUwIiB5MT0iMjYwIiB4Mj0iMzUwIiB5Mj0iMjYwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIG1hcmtlci1lbmQ9InVybCgjYXJyb3cpIiBtYXJrZXItc3RhcnQ9InVybCgjYXJyb3cpIi8+DQogIDx0ZXh0IHg9IjYwIiB5PSIyNTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCI+R2l2ZW4gTGluZTwvdGV4dD4NCiAgDQogIDwhLS0gVGFuZ2VudCAoUGFyYWxsZWwpIC0tPg0KICA8bGluZSB4MT0iNTAiIHkxPSIyMjAiIHgyPSIzNTAiIHkyPSIyMjAiIHN0cm9rZT0icmVkIiBzdHJva2Utd2lkdGg9IjIiIG1hcmtlci1lbmQ9InVybCgjYXJyb3cpIiBtYXJrZXItc3RhcnQ9InVybCgjYXJyb3cpIi8+DQogIDx0ZXh0IHg9IjYwIiB5PSIyMTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0icmVkIj5UYW5nZW50PC90ZXh0Pg0KICA8Y2lyY2xlIGN4PSIyMDAiIGN5PSIyMjAiIHI9IjMiIGZpbGw9ImJsYWNrIi8+IDwhLS0gQ29udGFjdCAtLT4NCiAgDQogIDwhLS0gU2VjYW50IChQYXJhbGxlbCkgLS0+DQogIDxsaW5lIHgxPSI1MCIgeTE9IjE4MCIgeDI9IjM1MCIgeTI9IjE4MCIgc3Ryb2tlPSJibHVlIiBzdHJva2Utd2lkdGg9IjIiIG1hcmtlci1lbmQ9InVybCgjYXJyb3cpIiBtYXJrZXItc3RhcnQ9InVybCgjYXJyb3cpIi8+DQogIDx0ZXh0IHg9IjYwIiB5PSIxNzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iYmx1ZSI+U2VjYW50PC90ZXh0Pg0KICANCiAgPCEtLSBQYXJhbGxlbCBtYXJrZXJzIC0tPg0KICA8cGF0aCBkPSJNMTkwLDI2MCBMMjAwLDI1MCBNMTk1LDI2MCBMMjA1LDI1MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+DQogIDxwYXRoIGQ9Ik0xOTAsMjIwIEwyMDAsMjEwIE0xOTUsMjIwIEwyMDUsMjEwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz4NCiAgPHBhdGggZD0iTTE5MCwxODAgTDIwMCwxNzAgTTE5NSwxODAgTDIwNSwxNzAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPg0KPC9zdmc+" alt="Parallel Lines Diagram">
-        <div class="solution-header">Solution:</div>
-        <div class="step"><strong style="color: #1565C0;">To Do:</strong> Draw a circle and lines parallel to a given
-            line (one tangent, one secant).</div>
-        <div class="step"><strong style="color: #1565C0;">Steps of Construction:</strong></div>
-        <div class="step">Draw a circle with center O.</div>
-        <div class="step">Draw a straight line \\(AB\\) (this is the given line).</div>
-        <div class="step">Draw a perpendicular to line \\(AB\\) passing through the center O.</div>
-        <div class="step">Mark two points on this perpendicular line.</div>
-        <div class="step">One point P on the circle, and another point S inside the circle.</div>
-        <div class="step">Draw a line through P perpendicular to the radius (This is line \\(n\\)).</div>
-        <div class="step">Draw a line through S perpendicular to the radius line (This is line \\(m\\)).</div>
-        <div class="step">Here, line \\(n\\) touches the circle at one point, so it is a <strong>Tangent</strong>.</div>
-        <div class="step">Line \\(m\\) cuts the circle at two points, so it is a <strong>Secant</strong>.</div>
-        <div class="step">Both lines \\(m\\) and \\(n\\) are parallel to the given line \\(AB\\).</div>
-        <div class="step"><strong style="color: #1565C0;">Final Conclusion:</strong> See the construction in the
-            diagram.</div>
-
-</body>
-
-</html>`,
-        exercise2: `<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Circles - Exercise 10.2</title>
-    
-    
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
-
-        body {
-            font-family: 'Noto Sans', sans-serif;
-            margin: 0;
-            padding: 15px;
-            background: #fff;
-            color: #333;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #6C63FF;
-            padding-bottom: 10px;
-            font-family: 'Nunito', sans-serif;
-        }
-
-        .logo {
-            color: #6C63FF;
-            font-size: 24px;
-            font-weight: 800;
-        }
-
-        .chapter-title {
-            text-align: center;
-            color: #333;
-            font-size: 20px;
-            font-weight: 700;
-            margin: 10px 0;
-            font-family: 'Noto Sans', sans-serif;
-        }
-
-        .content-box {
-            background: #f8f9fa;
-            border: 1px solid #e9ecef;
-            border-radius: 8px;
-            padding: 15px;
-            margin-bottom: 15px;
-            display: flow-root;
-            transition: transform 0.2s ease;
-        }
-
-        .question {
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: #333;
-        }
-
-        .step {
-            margin-bottom: 8px;
-            font-size: 1.1em;
-            color: #000;
-            line-height: 1.6;
-            display: block;
-        }
-
-        .final-answer {
-            color: #2E7D32;
-            font-weight: 700;
-            margin-top: 10px;
-            font-size: 1.2em;
-        }
-
-        .solution-header {
-            color: #2E7D32;
-            font-weight: 700;
-            margin-bottom: 5px;
-        }
-
-        .formula {
-            font-weight: bold;
-            color: #2E7D32;
-            margin: 5px 0;
-            display: inline-block;
-        }
-
-        .diagram-placeholder {
-            float: right;
-            border: 2px dashed #bbb;
-            padding: 10px;
-            margin: 0 0 10px 15px;
-            background: #fff;
-            color: #555;
-            font-size: 0.9em;
-            max-width: 280px;
-            text-align: center;
-        }
-
-        img {
-            float: right;
-            margin-left: 20px;
-            margin-bottom: 15px;
-            max-width: 280px;
-            height: auto;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            padding: 5px;
-            background: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        @media (max-width: 600px) {
-
-            img,
-            .diagram-placeholder {
-                float: none;
-                display: block;
-                margin: 10px auto;
-                max-width: 100%;
-            }
-        }
-    </style>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    renderMathInElement(document.body, {
-      delimiters: [
-        {left: '\\\\(', right: '\\\\)', display: false},
-        {left: '\\\\[', right: '\\\\]', display: true}
-      ]
-    });
-  });
-</script>
-
-<style>
-  body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
-  .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #FFB74D !important; color: #fff !important; }
-  h1, h2, h3, h4, h5, h6 { color: #FFB74D !important; }
-  .question { color: #FFB74D !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
-  .formula { color: #4CAF50 !important; }
-  .true-text { color: #4CAF50 !important; }
-  .false-text { color: #F44336 !important; }
-  table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
-  .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
-  img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #FFB74D !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
-  * { font-family: 'Noto Sans', sans-serif !important; }
-
-  .question { font-size: 0.95em !important; }
-  .sub-question { font-size: 0.9em !important; }
-  .step { font-size: 0.9em !important; }
-  .final-answer { font-size: 0.95em !important; }
-</style>
-</head>
-
-<body>
-
-    
-
-    <div class="content-box">
-        <div class="question">1. From a point Q, the length of the tangent to a circle is 24 cm and the distance of Q
-            from the centre is 25 cm. The radius of the circle is:</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMjUwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjI1MCI+DQogIDxkZWZzPg0KICAgIDxzdHlsZT4NCiAgICAgIC5sYWJlbCB7IGZvbnQtZmFtaWx5OiAnVGltZXMgTmV3IFJvbWFuJywgc2VyaWY7IGZvbnQtc2l6ZTogMThweDsgZm9udC13ZWlnaHQ6IGJvbGQ7IH0NCiAgICAgIC5kaW0geyBmb250LWZhbWlseTogJ1RpbWVzIE5ldyBSb21hbicsIHNlcmlmOyBmb250LXNpemU6IDE2cHg7IH0NCiAgICA8L3N0eWxlPg0KICA8L2RlZnM+DQoNCiAgPCEtLSBDb29yZGluYXRlcyAtLT4NCiAgPCEtLSBTY2FsZTogMSB1bml0ID0gNiBweCAtLT4NCiAgPCEtLSBSYWRpdXMgPSA3IHVuaXRzID0gNDIgcHggLS0+DQogIDwhLS0gUFEgPSAyNCB1bml0cyA9IDE0NCBweCAtLT4NCiAgPCEtLSBPUSA9IDI1IHVuaXRzID0gMTUwIHB4IC0tPg0KICA8IS0tIExldCdzIHNjYWxlIHVwIGEgYml0IGZvciBiZXR0ZXIgdmlzaWJpbGl0eSAtLT4NCiAgPCEtLSBTY2FsZTogMSB1bml0ID0gOCBweCAtLT4NCiAgPCEtLSBSYWRpdXMgPSA1NiBweCAtLT4NCiAgPCEtLSBQUSA9IDE5MiBweCAtLT4NCiAgPCEtLSBPUSA9IDIwMCBweCAtLT4NCiAgDQogIDwhLS0gTyBhdCAoMTAwLCA4MCkgLS0+DQogIDwhLS0gUCBhdCAoMTAwLCAxMzYpIC0tPg0KICA8IS0tIFEgYXQgKDI5MiwgMTM2KSAtLT4NCg0KICA8IS0tIENpcmNsZSAtLT4NCiAgPCEtLSBDb2xvcjogQmx1ZSAjMTk3NkQyIC0tPg0KICA8Y2lyY2xlIGN4PSIxMDAiIGN5PSI4MCIgcj0iNTYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzE5NzZEMiIgc3Ryb2tlLXdpZHRoPSIyLjUiIC8+DQogIA0KICA8IS0tIFJhZGl1cyBPUCAtLT4NCiAgPCEtLSBDb2xvcjogUmVkICNEMzJGMkYgLS0+DQogIDxsaW5lIHgxPSIxMDAiIHkxPSI4MCIgeDI9IjEwMCIgeTI9IjEzNiIgc3Ryb2tlPSIjRDMyRjJGIiBzdHJva2Utd2lkdGg9IjIuNSIgLz4NCiAgDQogIDwhLS0gVGFuZ2VudCBQUSAtLT4NCiAgPCEtLSBDb2xvcjogR3JlZW4gIzM4OEUzQyAtLT4NCiAgPGxpbmUgeDE9IjEwMCIgeTE9IjEzNiIgeDI9IjI5MiIgeTI9IjEzNiIgc3Ryb2tlPSIjMzg4RTNDIiBzdHJva2Utd2lkdGg9IjIuNSIgLz4NCg0KICA8IS0tIEh5cG90ZW51c2UgT1EgLS0+DQogIDwhLS0gQ29sb3I6IE9yYW5nZSAjRjU3QzAwIC0tPg0KICA8bGluZSB4MT0iMTAwIiB5MT0iODAiIHgyPSIyOTIiIHkyPSIxMzYiIHN0cm9rZT0iI0Y1N0MwMCIgc3Ryb2tlLXdpZHRoPSIyLjUiIC8+DQoNCiAgPCEtLSBQb2ludHMgLS0+DQogIDxjaXJjbGUgY3g9IjEwMCIgY3k9IjgwIiByPSIzIiBmaWxsPSJibGFjayIgLz4NCiAgPGNpcmNsZSBjeD0iMTAwIiBjeT0iMTM2IiByPSIzIiBmaWxsPSJibGFjayIgLz4NCiAgPGNpcmNsZSBjeD0iMjkyIiBjeT0iMTM2IiByPSIzIiBmaWxsPSJibGFjayIgLz4NCg0KICA8IS0tIFJpZ2h0IEFuZ2xlIFN5bWJvbCAtLT4NCiAgPHBvbHlsaW5lIHBvaW50cz0iMTAwLDEyNiAxMTAsMTI2IDExMCwxMzYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIgLz4NCg0KICA8IS0tIExhYmVscyAtLT4NCiAgPHRleHQgeD0iOTAiIHk9Ijc1IiBjbGFzcz0ibGFiZWwiPk88L3RleHQ+DQogIDx0ZXh0IHg9IjkwIiB5PSIxNTUiIGNsYXNzPSJsYWJlbCI+UDwvdGV4dD4NCiAgPHRleHQgeD0iMzAwIiB5PSIxNDAiIGNsYXNzPSJsYWJlbCI+UTwvdGV4dD4NCg0KICA8IS0tIERpbWVuc2lvbnMgLS0+DQogIDwhLS0gMjUgY20gb24gT1EgLS0+DQogIDx0ZXh0IHg9IjIwMCIgeT0iMTAwIiBjbGFzcz0iZGltIiBmaWxsPSJibGFjayIgdHJhbnNmb3JtPSJyb3RhdGUoMTYsIDIwMCwgMTAwKSI+MjUgY208L3RleHQ+DQogIA0KICA8IS0tIDI0IGNtIG9uIFBRIC0tPg0KICA8dGV4dCB4PSIxOTAiIHk9IjE2MCIgY2xhc3M9ImRpbSIgZmlsbD0iYmxhY2siPjI0IGNtPC90ZXh0Pg0KDQo8L3N2Zz4=" alt="Tangent Length Problem">
-        <div class="solution-header">Solution:</div>
-        <div class="step"><strong style="color: #1565C0;">Given:</strong> Radius OP. Distance OQ = 25 cm. Tangent PQ =
-            24 cm.</div>
-        <div class="step"><strong style="color: #1565C0;">To Find:</strong> Radius of the circle (OP).</div>
-        <div class="step"><strong style="color: #1565C0;">Solution:</strong></div>
-        <div class="step">We know that radius is perpendicular to tangent at the point of contact (<strong
-                style="color: #D32F2F;">Theorem 10.1</strong>).</div>
-        <div class="step">Therefore, \\(\\angle OPQ = 90^\\circ\\).</div>
-        <div class="step">In right-angled \\(\\triangle OPQ\\): By Pythagoras Theorem:</div>
-        <div class="step">\\(Hypotenuse^2 = Base^2 + Altitude^2\\).</div>
-        <div class="step">\\(OQ^2 = OP^2 + PQ^2\\).</div>
-        <div class="step">\\(25^2 = OP^2 + 24^2\\).</div>
-        <div class="step">\\(625 = OP^2 + 576\\).</div>
-        <div class="step">\\(OP^2 = 625 - 576\\).</div>
-        <div class="step">\\(OP^2 = 49\\).</div>
-        <div class="step">\\(OP = \\sqrt{49} = 7\\) cm.</div>
-        <div class="step"><strong style="color: #1565C0;">Final Conclusion:</strong> Hence, the radius of the circle is
-            7 cm.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">2. In Fig., if TP and TQ are the two tangents to a circle with centre O so that ∠POQ =
-            110°, then ∠PTQ is equal to:</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPg0KICA8IS0tIENpcmNsZSAtLT4NCiAgPGNpcmNsZSBjeD0iMTUwIiBjeT0iMTUwIiByPSI3MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+DQogIDxjaXJjbGUgY3g9IjE1MCIgY3k9IjE1MCIgcj0iMyIgZmlsbD0iYmxhY2siLz4NCiAgPHRleHQgeD0iMTMwIiB5PSIxNTUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiPk88L3RleHQ+DQogIA0KICA8IS0tIFBvaW50cyBQIGFuZCBRIG9uIGNpcmNsZSAtLT4NCiAgPCEtLSBBbmdsZSBQT1EgPSAxMTAgZGVnLiAtLT4NCiAgDQogIDwhLS0gUmFkaXVzIE9QIC0tPg0KICA8bGluZSB4MT0iMTUwIiB5MT0iMTUwIiB4Mj0iMTkwIiB5Mj0iOTMiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8Y2lyY2xlIGN4PSIxOTAiIGN5PSI5MyIgcj0iMyIgZmlsbD0iYmxhY2siLz4NCiAgPHRleHQgeD0iMTgwIiB5PSI4NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCI+UDwvdGV4dD4NCiAgDQogIDwhLS0gUmFkaXVzIE9RIC0tPg0KICA8bGluZSB4MT0iMTUwIiB5MT0iMTUwIiB4Mj0iMTkwIiB5Mj0iMjA3IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPGNpcmNsZSBjeD0iMTkwIiBjeT0iMjA3IiByPSIzIiBmaWxsPSJibGFjayIvPg0KICA8dGV4dCB4PSIxODAiIHk9IjIyNSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCI+UTwvdGV4dD4NCiAgDQogIDwhLS0gVGFuZ2VudHMgbGluZXMgVCB0byBQIGFuZCBRIC0tPg0KICA8IS0tIFQgaXMgYXQgKDI3MiwgMTUwKSAtLT4NCiAgPGxpbmUgeDE9IjI3MiIgeTE9IjE1MCIgeDI9IjE5MCIgeTI9IjkzIiBzdHJva2U9InJlZCIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDxsaW5lIHgxPSIyNzIiIHkxPSIxNTAiIHgyPSIxOTAiIHkyPSIyMDciIHN0cm9rZT0icmVkIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgDQogIDxjaXJjbGUgY3g9IjI3MiIgY3k9IjE1MCIgcj0iMyIgZmlsbD0iYmxhY2siLz4NCiAgPHRleHQgeD0iMjgwIiB5PSIxNTUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiPlQ8L3RleHQ+DQogIA0KICA8IS0tIFJpZ2h0IEFuZ2xlIFN5bWJvbHMgLS0+DQogIDxwb2x5bGluZSBwb2ludHM9IjE4MywxMDAgMTk1LDEwOCAyMDIsMTAwIiBzdHJva2U9ImJsYWNrIiBmaWxsPSJub25lIiBzdHJva2Utd2lkdGg9IjEiLz4NCiAgPHBvbHlsaW5lIHBvaW50cz0iMTgzLDIwMCAxOTUsMTkyIDIwMiwyMDAiIHN0cm9rZT0iYmxhY2siIGZpbGw9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIvPg0KICANCiAgPCEtLSBBbmdsZSBBcmMgYXQgTyAtLT4NCiAgPHBhdGggZD0iTTE2NSwxMjkgQSAzMCAzMCAwIDAgMSAxNjUgMTcxIiBzdHJva2U9ImJsYWNrIiBmaWxsPSJub25lIi8+DQogIDwhLS0gTW92ZWQgMTEwIGRlZyB0ZXh0IHRvIHRoZSByaWdodCwgaW5zaWRlIHRoZSBhbmdsZSAtLT4NCiAgPHRleHQgeD0iMTc1IiB5PSIxNTUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCI+MTEwwrA8L3RleHQ+DQogIA0KPC9zdmc+" alt="Angles in Circle Tangents">
-        <div class="solution-header">Solution:</div>
-        <div class="step"><strong style="color: #1565C0;">Given:</strong> Two tangents TP and TQ. Angle at center
-            \\(\\angle POQ = 110^\\circ\\).</div>
-        <div class="step"><strong style="color: #1565C0;">To Find:</strong> Angle \\(\\angle PTQ\\).</div>
-        <div class="step"><strong style="color: #1565C0;">Solution:</strong></div>
-        <div class="step">We know that radius is perpendicular to tangent (<strong style="color: #D32F2F;">Theorem
-                10.1</strong>).</div>
-        <div class="step">Therefore, \\(\\angle OPT = 90^\\circ\\) and \\(\\angle OQT = 90^\\circ\\).</div>
-        <div class="step">POQT is a quadrilateral. Sum of angles in a quadrilateral is \\(360^\\circ\\).</div>
-        <div class="step">\\(\\angle POQ + \\angle OPT + \\angle OQT + \\angle PTQ = 360^\\circ\\).</div>
-        <div class="step">Substitute the values: \\(110^\\circ + 90^\\circ + 90^\\circ + \\angle PTQ = 360^\\circ\\).</div>
-        <div class="step">\\(290^\\circ + \\angle PTQ = 360^\\circ\\).</div>
-        <div class="step">\\(\\angle PTQ = 360^\\circ - 290^\\circ\\).</div>
-        <div class="step">\\(\\angle PTQ = 70^\\circ\\).</div>
-        <div class="step"><strong style="color: #1565C0;">Final Conclusion:</strong> Hence, \\(\\angle PTQ\\) is equal to
-            \\(70^\\circ\\).</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">3. If tangents PA and PB from a point P to a circle with centre O are inclined to each
-            other at angle of 80°, then ∠POA is equal to:</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNTAgMzAwIiB3aWR0aD0iMzUwIiBoZWlnaHQ9IjMwMCI+DQogIDxkZWZzPg0KICAgIDxzdHlsZT4NCiAgICAgIC5sYWJlbCB7IGZvbnQtZmFtaWx5OiAnVGltZXMgTmV3IFJvbWFuJywgc2VyaWY7IGZvbnQtc2l6ZTogMThweDsgZm9udC13ZWlnaHQ6IGJvbGQ7IH0NCiAgICAgIC5kaW0geyBmb250LWZhbWlseTogJ1RpbWVzIE5ldyBSb21hbicsIHNlcmlmOyBmb250LXNpemU6IDE2cHg7IH0NCiAgICAgIC5kYXNoZWQgeyBzdHJva2UtZGFzaGFycmF5OiA0LCA0OyB9DQogICAgPC9zdHlsZT4NCiAgPC9kZWZzPg0KDQogIDwhLS0gQ29vcmRpbmF0ZXMgLS0+DQogIDwhLS0gQ2VudGVyIE8gYXQgKDIwMCwgMTgwKSAtLT4NCiAgPCEtLSBSYWRpdXMgUiA9IDgwIC0tPg0KICA8IS0tIEFuZ2xlIEFQQiA9IDgwIGRlZ3JlZXMuIFNvIGFuZ2xlIEFQTyA9IDQwIGRlZy4gLS0+DQogIDwhLS0gRGlzdGFuY2UgT1AgPSBSIC8gc2luKDQwKSA9IDgwIC8gMC42NDI4ID0gMTI0LjUgYXBwcm94IDEyNS4gLS0+DQogIDwhLS0gUCBpcyBhdCBhbmdsZSAyMjUgZGVnICh0b3AtbGVmdCkgZnJvbSBPLiAtLT4NCiAgPCEtLSBQeCA9IDIwMCArIDEyNSAqIGNvcygyMjUpID0gMjAwIC0gODggPSAxMTIgLS0+DQogIDwhLS0gUHkgPSAxODAgKyAxMjUgKiBzaW4oMjI1KSA9IDE4MCAtIDg4ID0gOTIgLS0+DQogIA0KICA8IS0tIEEgaXMgYXQgYW5nbGUgMjI1ICsgKDkwICsgKDkwLTQwKSk/IE5vLiAtLT4NCiAgPCEtLSBJbiB0cmlhbmdsZSBPQVAgKHJpZ2h0IGFuZ2xlIGF0IEEpLCBhbmdsZSBBT1AgPSA5MCAtIDQwID0gNTAgZGVnLiAtLT4NCiAgPCEtLSBTbyB2ZWN0b3IgT0EgbWFrZXMgYW5nbGUgKDIyNSArIDUwKSA9IDI3NSBkZWcgd2l0aCBYIGF4aXM/IE5vLiAtLT4NCiAgPCEtLSBMZXQncyBjaGVjayByZWxhdGl2ZSB0byBQTyB2ZWN0b3IgKHdoaWNoIGlzIGF0IDIyNSBkZWcpLiAtLT4NCiAgPCEtLSBPQSBpcyArNTAgZGVnIHJlbGF0aXZlIHRvIFBPPyBObywgT0EgaXMgcmFkaXVzIHRvIGNvbnRhY3QgcG9pbnQuIC0tPg0KICA8IS0tIFBBIGlzIHRhbmdlbnQuIE9BIGlzIHBlcnAgdG8gUEEuIC0tPg0KICA8IS0tIEFjdHVhbGx5IGFuZ2xlIEFPUCA9IDUwIGRlZy4gU28gQSBpcyArNTAgb3IgLTUwIGZyb20gUE8gbGluZS4gLS0+DQogIDwhLS0gQW5nbGUgb2YgUE8gPSAyMjUgZGVnLiAtLT4NCiAgPCEtLSBBbmdsZSBvZiBPQSA9IDIyNSArIDUwID0gMjc1ICgtODUgZGVnKSAtPiBUb3Agb2YgY2lyY2xlIHJvdWdobHkuIC0tPg0KICA8IS0tIEFuZ2xlIG9mIE9CID0gMjI1IC0gNTAgPSAxNzUgKC0xODUgZGVnKSAtPiBMZWZ0IG9mIGNpcmNsZSByb3VnaGx5LiAtLT4NCiAgDQogIDwhLS0gQXggPSAyMDAgKyA4MCAqIGNvcygyNzUpID0gMjAwICsgNyA9IDIwNyAtLT4NCiAgPCEtLSBBeSA9IDE4MCArIDgwICogc2luKDI3NSkgPSAxODAgLSA3OS43ID0gMTAwIC0tPg0KICANCiAgPCEtLSBCeCA9IDIwMCArIDgwICogY29zKDE3NSkgPSAyMDAgLSA3OS43ID0gMTIwIC0tPg0KICA8IS0tIEJ5ID0gMTgwICsgODAgKiBzaW4oMTc1KSA9IDE4MCArIDcgPSAxODcgLS0+DQoNCiAgPCEtLSBDaXJjbGUgLS0+DQogIDwhLS0gQ29sb3I6IEJsdWUgIzE5NzZEMiAtLT4NCiAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMTgwIiByPSI4MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTk3NkQyIiBzdHJva2Utd2lkdGg9IjIuNSIgLz4NCiAgDQogIDwhLS0gUmFkaWkgT0EgYW5kIE9CIC0tPg0KICA8IS0tIENvbG9yOiBSZWQgI0QzMkYyRiAtLT4NCiAgPGxpbmUgeDE9IjIwMCIgeTE9IjE4MCIgeDI9IjIwNyIgeTI9IjEwMCIgc3Ryb2tlPSIjRDMyRjJGIiBzdHJva2Utd2lkdGg9IjIuNSIgLz4NCiAgPGxpbmUgeDE9IjIwMCIgeTE9IjE4MCIgeDI9IjEyMCIgeTI9IjE4NyIgc3Ryb2tlPSIjRDMyRjJGIiBzdHJva2Utd2lkdGg9IjIuNSIgLz4NCg0KICA8IS0tIFRhbmdlbnRzIFBBIGFuZCBQQiAtLT4NCiAgPCEtLSBDb2xvcjogR3JlZW4gIzM4OEUzQyAtLT4NCiAgPGxpbmUgeDE9IjExMiIgeTE9IjkyIiB4Mj0iMjA3IiB5Mj0iMTAwIiBzdHJva2U9IiMzODhFM0MiIHN0cm9rZS13aWR0aD0iMi41IiAvPg0KICA8bGluZSB4MT0iMTEyIiB5MT0iOTIiIHgyPSIxMjAiIHkyPSIxODciIHN0cm9rZT0iIzM4OEUzQyIgc3Ryb2tlLXdpZHRoPSIyLjUiIC8+DQoNCiAgPCEtLSBMaW5lIFBPIChEYXNoZWQpIC0tPg0KICA8IS0tIENvbG9yOiBHcmV5ICM1NTUgLS0+DQogIDxsaW5lIHgxPSIxMTIiIHkxPSI5MiIgeDI9IjIwMCIgeTI9IjE4MCIgc3Ryb2tlPSIjNTU1IiBzdHJva2Utd2lkdGg9IjIiIGNsYXNzPSJkYXNoZWQiIC8+DQoNCiAgPCEtLSBSaWdodCBBbmdsZSBTeW1ib2xzIC0tPg0KICA8IS0tIEF0IEE6IHZlY3RvciBQLT5BIGFuZCBPLT5BIGFyZSBwZXJwLiAtLT4NCiAgPCEtLSBKdXN0IGFwcHJveGltYXRlIHNtYWxsIHNxdWFyZSByb3RhdGVkIGFwcHJvcHJpYXRlbHkuIC0tPg0KICA8IS0tIFZlY3RvciBPQSBpcyBhdCAyNzUgZGVnLiBQZXJwZW5kaWN1bGFyIGlzIDE4NSBkZWcgKHRvd2FyZHMgUCkuIC0tPg0KICA8cGF0aCBkPSJNIDIwNyAxMDAgTCAyMDIgMTA4IEwgMTk1IDEwNiIgc3Ryb2tlPSJibGFjayIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxLjUiIC8+DQogIA0KICA8IS0tIEF0IEI6IHZlY3RvciBPQiBpcyBhdCAxNzUgZGVnLiBQZXJwIGlzIDg1IGRlZyAodG93YXJkcyBQKS4gLS0+DQogIDxwYXRoIGQ9Ik0gMTIwIDE4NyBMIDEyMiAxNzggTCAxMTIgMTc4IiBzdHJva2U9ImJsYWNrIiBmaWxsPSJub25lIiBzdHJva2Utd2lkdGg9IjEuNSIgLz4NCg0KICA8IS0tIEFuZ2xlIEFyYyBhdCBQICg4MCBkZWcpIC0tPg0KICA8cGF0aCBkPSJNIDEzNCA5NCBRIDE0MCAxMTAgMTIwIDEyNSIgc3Ryb2tlPSJibGFjayIgZmlsbD0ibm9uZSIgc3Ryb2tlLWRhc2hhcnJheT0iMiwyIiBzdHJva2Utd2lkdGg9IjEuNSIgLz4NCiAgPHRleHQgeD0iMTQwIiB5PSIxMDUiIGNsYXNzPSJkaW0iPjgwwrA8L3RleHQ+DQoNCiAgPCEtLSBMYWJlbHMgLS0+DQogIDx0ZXh0IHg9IjEwMCIgeT0iODUiIGNsYXNzPSJsYWJlbCI+UDwvdGV4dD4NCiAgPHRleHQgeD0iMjE1IiB5PSI5NSIgY2xhc3M9ImxhYmVsIj5BPC90ZXh0Pg0KICA8dGV4dCB4PSI5NSIgeT0iMjAwIiBjbGFzcz0ibGFiZWwiPkI8L3RleHQ+DQogIDx0ZXh0IHg9IjIxMCIgeT0iMjAwIiBjbGFzcz0ibGFiZWwiPk88L3RleHQ+DQoNCiAgPCEtLSBQb2ludHMgLS0+DQogIDxjaXJjbGUgY3g9IjIwMCIgY3k9IjE4MCIgcj0iMyIgZmlsbD0iYmxhY2siIC8+DQogIDxjaXJjbGUgY3g9IjExMiIgY3k9IjkyIiByPSIzIiBmaWxsPSJibGFjayIgLz4NCiAgPGNpcmNsZSBjeD0iMjA3IiBjeT0iMTAwIiByPSIzIiBmaWxsPSJibGFjayIgLz4NCiAgPGNpcmNsZSBjeD0iMTIwIiBjeT0iMTg3IiByPSIzIiBmaWxsPSJibGFjayIgLz4NCg0KPC9zdmc+" alt="Inclined Tangents">
-        <div class="solution-header">Solution:</div>
-        <div class="step"><strong style="color: #1565C0;">Given:</strong> Tangents PA and PB are inclined at
-            \\(80^\\circ\\) (i.e., \\(\\angle APB = 80^\\circ\\)).</div>
-        <div class="step"><strong style="color: #1565C0;">To Find:</strong> Angle \\(\\angle POA\\).</div>
-        <div class="step"><strong style="color: #1565C0;">Solution:</strong></div>
-        <div class="step">We know that the line joining the center and external point bisects the angle between
-            tangents.</div>
-        <div class="step">Therefore, \\(\\angle APO = \\frac{1}{2} \\angle APB\\).</div>
-        <div class="step">\\(\\angle APO = \\frac{80^\\circ}{2} = 40^\\circ\\).</div>
-        <div class="step">Also, radius OA \\(\\perp\\) tangent PA at A (<strong style="color: #D32F2F;">Theorem
-                10.1</strong>).</div>
-        <div class="step">So, \\(\\angle OAP = 90^\\circ\\).</div>
-        <div class="step">In \\(\\triangle OAP\\), sum of angles is \\(180^\\circ\\).</div>
-        <div class="step">\\(\\angle POA + \\angle OAP + \\angle APO = 180^\\circ\\).</div>
-        <div class="step">\\(\\angle POA + 90^\\circ + 40^\\circ = 180^\\circ\\).</div>
-        <div class="step">\\(\\angle POA + 130^\\circ = 180^\\circ\\).</div>
-        <div class="step">\\(\\angle POA = 180^\\circ - 130^\\circ = 50^\\circ\\).</div>
-        <div class="step"><strong style="color: #1565C0;">Final Conclusion:</strong> Hence, \\(\\angle POA\\) is equal to
-            \\(50^\\circ\\).</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">4. Prove that the tangents drawn at the ends of a diameter of a circle are parallel.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPg0KICA8ZGVmcz4NCiAgICA8bWFya2VyIGlkPSJhcnJvdyIgbWFya2VyV2lkdGg9IjEwIiBtYXJrZXJIZWlnaHQ9IjEwIiByZWZYPSI5IiByZWZZPSIzIiBvcmllbnQ9ImF1dG8iIG1hcmtlclVuaXRzPSJzdHJva2VXaWR0aCI+DQogICAgICA8cGF0aCBkPSJNMCwwIEwwLDYgTDksMyB6IiBmaWxsPSJibGFjayIgLz4NCiAgICA8L21hcmtlcj4NCiAgPC9kZWZzPg0KICA8IS0tIENpcmNsZSAtLT4NCiAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMTUwIiByPSI3MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+DQogIDxjaXJjbGUgY3g9IjIwMCIgY3k9IjE1MCIgcj0iMyIgZmlsbD0iYmxhY2siLz4NCiAgPHRleHQgeD0iMTg1IiB5PSIxNTUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiPk88L3RleHQ+DQogIA0KICA8IS0tIERpYW1ldGVyIFBRIHZlcnRpY2FsIGZvciBjbGVhciBwYXJhbGxlbGlzbSAtLT4NCiAgPGxpbmUgeDE9IjIwMCIgeTE9IjgwIiB4Mj0iMjAwIiB5Mj0iMjIwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iODAiIHI9IjMiIGZpbGw9ImJsYWNrIi8+IDwhLS0gUCAtLT4NCiAgPHRleHQgeD0iMjA1IiB5PSI5NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCI+UDwvdGV4dD4NCiAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMjIwIiByPSIzIiBmaWxsPSJibGFjayIvPiA8IS0tIFEgLS0+DQogIDx0ZXh0IHg9IjIwNSIgeT0iMjE1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIj5RPC90ZXh0Pg0KICANCiAgPCEtLSBUYW5nZW50IEFCIGF0IFAgLS0+DQogIDxsaW5lIHgxPSIxMDAiIHkxPSI4MCIgeDI9IjMwMCIgeTI9IjgwIiBzdHJva2U9InJlZCIgc3Ryb2tlLXdpZHRoPSIyIiBtYXJrZXItZW5kPSJ1cmwoI2Fycm93KSIgbWFya2VyLXN0YXJ0PSJ1cmwoI2Fycm93KSIvPg0KICA8dGV4dCB4PSIxMTAiIHk9IjcwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIj5BPC90ZXh0Pg0KICA8dGV4dCB4PSIyOTAiIHk9IjcwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIj5CPC90ZXh0Pg0KICANCiAgPCEtLSBUYW5nZW50IENEIGF0IFEgLS0+DQogIDxsaW5lIHgxPSIxMDAiIHkxPSIyMjAiIHgyPSIzMDAiIHkyPSIyMjAiIHN0cm9rZT0icmVkIiBzdHJva2Utd2lkdGg9IjIiIG1hcmtlci1lbmQ9InVybCgjYXJyb3cpIiBtYXJrZXItc3RhcnQ9InVybCgjYXJyb3cpIi8+DQogIDx0ZXh0IHg9IjExMCIgeT0iMjQwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIj5DPC90ZXh0Pg0KICA8dGV4dCB4PSIyOTAiIHk9IjI0MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCI+RDwvdGV4dD4NCiAgDQogIDwhLS0gUmlnaHQgQW5nbGUgU3ltYm9scyAtLT4NCiAgPHBvbHlsaW5lIHBvaW50cz0iMjAwLDk1IDIxMCw5NSAyMTAsODAiIHN0cm9rZT0iYmxhY2siIGZpbGw9Im5vbmUiLz4NCiAgPHBvbHlsaW5lIHBvaW50cz0iMjAwLDIwNSAxOTAsMjA1IDE5MCwyMjAiIHN0cm9rZT0iYmxhY2siIGZpbGw9Im5vbmUiLz4NCiAgPCEtLSBBbHRlcm5hdGUgSW50ZXJpb3IgQW5nbGVzIHZpc3VhbCBsb2dpYyAtLT4NCiAgDQogIDwhLS0gUGFyYWxsZWwgYXJyb3dzIG9uIGxpbmVzIC0tPg0KICA8cGF0aCBkPSJNMjUwLDgwIEwyNjAsNzAgTTI1NSw4MCBMMjY1LDcwIiBzdHJva2U9ImJsYWNrIi8+IDwhLS0gQXJyb3cgc3R5bGluZyAtLT4NCiAgPHBhdGggZD0iTTI1MCwyMjAgTDI2MCwyMTAgTTI1NSwyMjAgTDI2NSwyMTAiIHN0cm9rZT0iYmxhY2siLz4NCjwvc3ZnPg==" alt="Parallel Tangents Proof">
-        <div class="solution-header">Proof:</div>
-        <div class="step"><strong style="color: #1565C0;">Given:</strong> A circle with center O. PQ is a diameter. AB
-            and CD are tangents at P and Q respectively.</div>
-        <div class="step"><strong style="color: #1565C0;">To Prove:</strong> Tangent AB is parallel to Tangent CD (AB ||
-            CD).</div>
-        <div class="step"><strong style="color: #1565C0;">Proof:</strong></div>
-        <div class="step">OP is the radius and AB is the tangent at P.</div>
-        <div class="step">By <strong style="color: #D32F2F;">Theorem 10.1</strong>: Radius \\(\\perp\\) Tangent.</div>
-        <div class="step">Therefore, \\(\\angle OPB = 90^\\circ\\) (or \\(\\angle APQ = 90^\\circ\\)).</div>
-        <div class="step">OQ is the radius and CD is the tangent at Q.</div>
-        <div class="step">By <strong style="color: #D32F2F;">Theorem 10.1</strong>: Radius \\(\\perp\\) Tangent.</div>
-        <div class="step">Therefore, \\(\\angle OQC = 90^\\circ\\) (or \\(\\angle DQP = 90^\\circ\\)).</div>
-        <div class="step">Consider transversal PQ intersecting lines AB and CD.</div>
-        <div class="step">From the above, \\(\\angle OPB = 90^\\circ\\) and \\(\\angle OQC = 90^\\circ\\).</div>
-        <div class="step">Their sum \\(\\angle OPB + \\angle OQC = 180^\\circ\\) (Consecutive Interior Angles).</div>
-        <div class="step">Also alternate interior angles \\(\\angle APQ\\) and \\(\\angle DQP\\) are both \\(90^\\circ\\).</div>
-        <div class="step">Since alternate interior angles are equal, the lines are parallel.</div>
-        <div class="step">Therefore, AB || CD.</div>
-        <div class="step"><strong style="color: #1565C0;">Final Conclusion:</strong> Hence, the tangents drawn at the
-            ends of a diameter are parallel.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">5. Prove that the perpendicular at the point of contact to the tangent to a circle passes
-            through the centre.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPg0KICA8Y2lyY2xlIGN4PSIyMDAiIGN5PSIxNTAiIHI9IjcwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz4NCiAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMTUwIiByPSIzIiBmaWxsPSJibGFjayIvPiA8dGV4dCB4PSIyMTAiIHk9IjE0NSIgZm9udC13ZWlnaHQ9ImJvbGQiPk88L3RleHQ+DQogIA0KICA8IS0tIFRhbmdlbnQgQUIgYXQgcG9pbnQgUCAob24gY2lyY2xlKSAtLT4NCiAgPCEtLSBMZXQgUCBiZSBhdCByb3VnaGx5IDMzMCBkZWdyZWVzIChib3R0b20gcmlnaHQpIGZvciBjbGFyaXR5LiAtLT4NCiAgPCEtLSBObywgbGV0J3Mga2VlcCBpdCBzaW1wbGUuIFAgYXQgKDIwMCwgMjIwKSAtIGJvdHRvbS4gVGFuZ2VudCBob3Jpem9udGFsLiAtLT4NCiAgPCEtLSBTYW1lIGFzIGJlZm9yZSBidXQgY2xlYXJlciBsYWJlbHMuIC0tPg0KICANCiAgPGxpbmUgeDE9IjUwIiB5MT0iMjIwIiB4Mj0iMzUwIiB5Mj0iMjIwIiBzdHJva2U9InJlZCIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDx0ZXh0IHg9IjYwIiB5PSIyNDAiIGZvbnQtd2VpZ2h0PSJib2xkIj5BPC90ZXh0PiA8dGV4dCB4PSIzNDAiIHk9IjI0MCIgZm9udC13ZWlnaHQ9ImJvbGQiPkI8L3RleHQ+DQogIA0KICA8Y2lyY2xlIGN4PSIyMDAiIGN5PSIyMjAiIHI9IjMiIGZpbGw9ImJsYWNrIi8+IDx0ZXh0IHg9IjIwMCIgeT0iMjQwIiBmb250LXdlaWdodD0iYm9sZCI+UDwvdGV4dD4NCiAgDQogIDwhLS0gUGVycGVuZGljdWxhciBhdCBQIC0tPg0KICA8bGluZSB4MT0iMjAwIiB5MT0iMjIwIiB4Mj0iMjAwIiB5Mj0iODAiIHN0cm9rZT0iYmx1ZSIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDx0ZXh0IHg9IjIwNSIgeT0iOTAiIGZpbGw9ImJsdWUiPlBlcnBlbmRpY3VsYXIgYXQgUDwvdGV4dD4NCiAgDQogIDwhLS0gUG9pbnQgTycgbm90IG9uIGNlbnRlciAtLT4NCiAgPGNpcmNsZSBjeD0iMTgwIiBjeT0iMTMwIiByPSIzIiBmaWxsPSJyZWQiLz4gPHRleHQgeD0iMTY1IiB5PSIxMzAiIGZpbGw9InJlZCIgZm9udC13ZWlnaHQ9ImJvbGQiPk8nPC90ZXh0Pg0KICANCiAgPCEtLSBMaW5lIE8nUCAtLT4NCiAgPGxpbmUgeDE9IjIwMCIgeTE9IjIyMCIgeDI9IjE4MCIgeTI9IjEzMCIgc3Ryb2tlPSJyZWQiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtZGFzaGFycmF5PSI0LDQiLz4NCiAgDQogIDwhLS0gU2hvd2luZyBjb250cmFkaWN0aW9uIHZpc3VhbGx5OiBPJ1AgaXMgbm90IHBlcnAgKGFuZ2xlIDwgOTApIC0tPg0KICA8cGF0aCBkPSJNMTkwLDIxMCBBIDE1IDE1IDAgMCAwIDE4NSwyMjAiIHN0cm9rZT0icmVkIiBmaWxsPSJub25lIi8+DQogIDx0ZXh0IHg9IjE2MCIgeT0iMjAwIiBmb250LXNpemU9IjEyIiBmaWxsPSJyZWQiPuKJoDkwwrA8L3RleHQ+DQogIA0KICA8cG9seWxpbmUgcG9pbnRzPSIyMDAsMjEwIDIxMCwyMTAgMjEwLDIyMCIgc3Ryb2tlPSJibHVlIiBmaWxsPSJub25lIiBzdHJva2Utd2lkdGg9IjEuNSIvPg0KPC9zdmc+" alt="Normal Passes Through Center">
-        <div class="solution-header">Proof:</div>
-        <div class="step"><strong style="color: #1565C0;">Given:</strong> A circle with center O. Tangent AB touches at
-            point P.</div>
-        <div class="step"><strong style="color: #1565C0;">To Prove:</strong> Perpendicular to AB at P passes through
-            center O.</div>
-        <div class="step"><strong style="color: #1565C0;">Proof:</strong></div>
-        <div class="step">Let us assume the perpendicular to AB at point P does <strong>not</strong> pass through center
-            O.</div>
-        <div class="step">Let it pass through another point O'.</div>
-        <div class="step">Then, \\(\\angle O'PB = 90^\\circ\\) (by our assumption).</div>
-        <div class="step">However, we know by <strong style="color: #D32F2F;">Theorem 10.1</strong> that the radius is
-            perpendicular to the tangent.</div>
-        <div class="step">So, OP \\(\\perp\\) AB \\(\\Rightarrow \\angle OPB = 90^\\circ\\).</div>
-        <div class="step">Comparing the two angles: \\(\\angle O'PB = \\angle OPB = 90^\\circ\\).</div>
-        <div class="step">This is only possible if the line segment O'P and OP coincide.</div>
-        <div class="step">Therefore, O' must coincide with O.</div>
-        <div class="step">Thus, the perpendicular at the point of contact must pass through the center.</div>
-        <div class="step"><strong style="color: #1565C0;">Final Conclusion:</strong> Hence Proved.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">6. The length of a tangent from a point A at distance 5 cm from the centre of the circle
-            is 4 cm. Find the radius of the circle.</div>
-       <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDUwIiBoZWlnaHQ9IjM1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBzdHlsZT0iYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7Ij4NCiAgPCEtLSBTdHlsZXMgLS0+DQogIDxkZWZzPg0KICAgIDxzdHlsZT4NCiAgICAgIC5sYWJlbC10ZXh0IHsgZm9udC1mYW1pbHk6IHNlcmlmOyBmb250LXNpemU6IDE4cHg7IGZvbnQtd2VpZ2h0OiBib2xkOyBmaWxsOiBibGFjazsgfQ0KICAgICAgLmRpbS10ZXh0IHsgZm9udC1mYW1pbHk6IHNhbnMtc2VyaWY7IGZvbnQtc2l6ZTogMTZweDsgZm9udC13ZWlnaHQ6IGJvbGQ7IGZpbGw6IGJsYWNrOyB9DQogICAgPC9zdHlsZT4NCiAgPC9kZWZzPg0KDQogIDwhLS0gQ2lyY2xlIC0tPg0KICA8IS0tIENlbnRlciBPKDEyMCwgMTIwKS4gUmFkaXVzIDkwIChyZXByZXNlbnRpbmcgMyB1bml0cykuIFNjYWxlOiAxIHVuaXQgPSAzMHB4IC0tPg0KICA8Y2lyY2xlIGN4PSIxMjAiIGN5PSIxMjAiIHI9IjkwIiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIgLz4NCiAgPGNpcmNsZSBjeD0iMTIwIiBjeT0iMTIwIiByPSI0IiBmaWxsPSJibGFjayIgLz4NCiAgPHRleHQgeD0iMTEwIiB5PSIxMTAiIGNsYXNzPSJsYWJlbC10ZXh0Ij5PPC90ZXh0Pg0KDQogIDwhLS0gVHJpYW5nbGUgT0JBIC0tPg0KICA8IS0tIE8oMTIwLCAxMjApIC0tPg0KICA8IS0tIEIoMTIwLCAyMTApIC0gVmVydGljYWxseSBkb3duLiBMZW5ndGggOTAgKDMgdW5pdHMpIC0tPg0KICA8IS0tIEEoMjQwLCAyMTApIC0gSG9yaXpvbnRhbGx5IHJpZ2h0LiBMZW5ndGggMTIwICg0IHVuaXRzKSAtLT4NCiAgPCEtLSBIeXBvdGVudXNlIE9BIGxlbmd0aCAxNTAgKDUgdW5pdHMpIC0tPg0KDQogIDwhLS0gVGFuZ2VudCBCQSAoQmx1ZSkgLS0+DQogIDxsaW5lIHgxPSIxMjAiIHkxPSIyMTAiIHgyPSIyNDAiIHkyPSIyMTAiIHN0cm9rZT0iIzE5NzZEMiIgc3Ryb2tlLXdpZHRoPSIzIiAvPg0KDQogIDwhLS0gUmFkaXVzIE9CIChHcmVlbikgLS0+DQogIDxsaW5lIHgxPSIxMjAiIHkxPSIxMjAiIHgyPSIxMjAiIHkyPSIyMTAiIHN0cm9rZT0iIzJFN0QzMiIgc3Ryb2tlLXdpZHRoPSIzIiAvPg0KDQogIDwhLS0gSHlwb3RlbnVzZSBPQSAoUmVkKSAtLT4NCiAgPGxpbmUgeDE9IjEyMCIgeTE9IjEyMCIgeDI9IjI0MCIgeTI9IjIxMCIgc3Ryb2tlPSIjRDMyRjJGIiBzdHJva2Utd2lkdGg9IjMiIC8+DQoNCiAgPCEtLSBQb2ludHMgLS0+DQogIDwhLS0gQiAtLT4NCiAgPGNpcmNsZSBjeD0iMTIwIiBjeT0iMjEwIiByPSI0IiBmaWxsPSJibGFjayIgLz4NCiAgPHRleHQgeD0iMTEwIiB5PSIyMzUiIGNsYXNzPSJsYWJlbC10ZXh0Ij5QPC90ZXh0Pg0KDQogIDwhLS0gQSAtLT4NCiAgPGNpcmNsZSBjeD0iMjQwIiBjeT0iMjEwIiByPSI0IiBmaWxsPSJibGFjayIgLz4NCiAgPHRleHQgeD0iMjUwIiB5PSIyMjAiIGNsYXNzPSJsYWJlbC10ZXh0Ij5BPC90ZXh0Pg0KDQogIDwhLS0gUmlnaHQgQW5nbGUgTWFya2VyIGF0IEIgLS0+DQogIDxwb2x5bGluZSBwb2ludHM9IjEyMCwyMDAgMTMwLDIwMCAxMzAsMjEwIiBmaWxsPSJub25lIiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMS41IiAvPg0KDQogIDwhLS0gRGltZW5zaW9ucyAtLT4NCiAgPCEtLSA0IGNtIG9uIFRhbmdlbnQgLS0+DQogIDx0ZXh0IHg9IjE2MCIgeT0iMjM1IiBjbGFzcz0iZGltLXRleHQiIGZpbGw9IiMxOTc2RDIiPjQgY208L3RleHQ+DQoNCiAgPCEtLSA1IGNtIG9uIEh5cG90ZW51c2UgLS0+DQogIDx0ZXh0IHg9IjE5MCIgeT0iMTYwIiBjbGFzcz0iZGltLXRleHQiIGZpbGw9IiNEMzJGMkYiPjUgY208L3RleHQ+DQoNCjwvc3ZnPg==" alt="Radius Calculation">
-        <div class="solution-header">Solution:</div>
-        <div class="step"><strong style="color: #1565C0;">Given:</strong> Distance OA = 5 cm. Length of tangent AP = 4
-            cm.</div>
-        <div class="step"><strong style="color: #1565C0;">To Find:</strong> Radius of the circle (OP).</div>
-        <div class="step"><strong style="color: #1565C0;">Solution:</strong></div>
-        <div class="step">Since AP is a tangent and OP is a radius, they are perpendicular (<strong
-                style="color: #D32F2F;">Theorem 10.1</strong>).</div>
-        <div class="step">So, \\(\\triangle OPA\\) is a right-angled triangle.</div>
-        <div class="step">By Pythagoras Theorem: \\(OA^2 = OP^2 + AP^2\\).</div>
-        <div class="step">Substitute values: \\(5^2 = OP^2 + 4^2\\).</div>
-        <div class="step">\\(25 = OP^2 + 16\\).</div>
-        <div class="step">\\(OP^2 = 25 - 16\\).</div>
-        <div class="step">\\(OP^2 = 9\\).</div>
-        <div class="step">\\(OP = 3\\) cm.</div>
-        <div class="step"><strong style="color: #1565C0;">Final Conclusion:</strong> Hence, the radius of the circle is
-            3 cm.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">7. Two concentric circles are of radii 5 cm and 3 cm. Find the length of the chord of the
-            larger circle which touches the smaller circle.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPg0KICA8Y2lyY2xlIGN4PSIyMDAiIGN5PSIxNTAiIHI9IjEwMCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+IDwhLS0gNWNtIC0tPg0KICA8Y2lyY2xlIGN4PSIyMDAiIGN5PSIxNTAiIHI9IjYwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz4gPCEtLSAzY20gLS0+DQogIDxjaXJjbGUgY3g9IjIwMCIgY3k9IjE1MCIgcj0iMyIgZmlsbD0iYmxhY2siLz4gPHRleHQgeD0iMjAwIiB5PSIxMzUiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIj5PPC90ZXh0Pg0KICANCiAgPCEtLSBDaG9yZCBBQiB0b3VjaGluZyBzbWFsbGVyIGNpcmNsZSBhdCB0b3AgcG9pbnQgUCgyMDAsIDkwKSAtLT4NCiAgPGxpbmUgeDE9IjEyMCIgeTE9IjkwIiB4Mj0iMjgwIiB5Mj0iOTAiIHN0cm9rZT0icmVkIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPHRleHQgeD0iMTEwIiB5PSI5MCIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiPkE8L3RleHQ+DQogIDx0ZXh0IHg9IjI5MCIgeT0iOTAiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIj5CPC90ZXh0Pg0KICANCiAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iOTAiIHI9IjMiIGZpbGw9ImJsYWNrIi8+IDx0ZXh0IHg9IjIwNSIgeT0iODAiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIj5QPC90ZXh0Pg0KICANCiAgPCEtLSBSYWRpdXMgT1AgLS0+DQogIDxsaW5lIHgxPSIyMDAiIHkxPSIxNTAiIHgyPSIyMDAiIHkyPSI5MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIA0KICA8IS0tIFJhZGl1cyBPQSAtLT4NCiAgPGxpbmUgeDE9IjIwMCIgeTE9IjE1MCIgeDI9IjEyMCIgeTI9IjkwIiBzdHJva2U9ImJsdWUiIHN0cm9rZS13aWR0aD0iMiIvPg0KICANCiAgPCEtLSBSaWdodCBBbmdsZSAtLT4NCiAgPHBvbHlsaW5lIHBvaW50cz0iMjAwLDEwMCAxOTAsMTAwIDE5MCw5MCIgc3Ryb2tlPSJibGFjayIgZmlsbD0ibm9uZSIvPg0KICANCiAgPHRleHQgeD0iMjEwIiB5PSIxMjAiIGZvbnQtc2l6ZT0iMTQiPjM8L3RleHQ+DQogIDx0ZXh0IHg9IjE1MCIgeT0iMTMwIiBmb250LXNpemU9IjE0Ij41PC90ZXh0Pg0KPC9zdmc+" alt="Concentric Circles Chord">
-        <div class="solution-header">Solution:</div>
-        <div class="step"><strong style="color: #1565C0;">Given:</strong> Two concentric circles with center O. Radii 5
-            cm and 3 cm. Chord AB of larger circle touches smaller circle.</div>
-        <div class="step"><strong style="color: #1565C0;">To Find:</strong> Length of chord AB.</div>
-        <div class="step"><strong style="color: #1565C0;">Solution:</strong></div>
-        <div class="step">Let chord AB touch the smaller circle at point P.</div>
-        <div class="step">OP is the radius of the smaller circle (= 3 cm).</div>
-        <div class="step">AB is a tangent to the smaller circle at P.</div>
-        <div class="step">So, OP \\(\\perp\\) AB (by <strong style="color: #D32F2F;">Theorem 10.1</strong>).</div>
-        <div class="step">Since AB is a chord of the larger circle and OP \\(\\perp\\) AB:</div>
-        <div class="step">P bisects AB (Perpendicular from center to chord bisects it).</div>
-        <div class="step">So, \\(AP = PB\\).</div>
-        <div class="step">In right-angled \\(\\triangle OPA\\) (Hypotenuse OA = 5 cm):</div>
-        <div class="step">\\(OA^2 = OP^2 + AP^2\\).</div>
-        <div class="step">\\(5^2 = 3^2 + AP^2\\).</div>
-        <div class="step">\\(25 = 9 + AP^2\\).</div>
-        <div class="step">\\(AP^2 = 16 \\Rightarrow AP = 4\\) cm.</div>
-        <div class="step">Length of chord \\(AB = 2 \\times AP = 2 \\times 4 = 8\\) cm.</div>
-        <div class="step"><strong style="color: #1565C0;">Final Conclusion:</strong> Hence, the length of the chord is 8
-            cm.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">8. A quadrilateral ABCD is drawn to circumscribe a circle. Prove that AB + CD = AD + BC.
-        </div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzUwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjM1MCI+DQogIDxkZWZzPg0KICAgIDxzdHlsZT4NCiAgICAgIC5sYWJlbCB7IGZvbnQtZmFtaWx5OiAnVGltZXMgTmV3IFJvbWFuJywgc2VyaWY7IGZvbnQtc2l6ZTogMThweDsgZm9udC13ZWlnaHQ6IGJvbGQ7IH0NCiAgICA8L3N0eWxlPg0KICA8L2RlZnM+DQoNCiAgPCEtLSBDb29yZGluYXRlcyAtLT4NCiAgPCEtLSBDZW50ZXIgTyBhdCAoMjAwLCAxODApIC0tPg0KICA8IS0tIFJhZGl1cyBSID0gODAgLS0+DQogIDwhLS0gQ2FsY3VsYXRlZCBWZXJ0aWNlcyAtLT4NCiAgPCEtLSBBKDEwOCwgMjQ1KSAtLT4NCiAgPCEtLSBCKDI2NSwgMjcyKSAtLT4NCiAgPCEtLSBDKDI5MiwgMTE1KSAtLT4NCiAgPCEtLSBEKDEzNSwgODgpIC0tPg0KICANCiAgPCEtLSBDYWxjdWxhdGVkIENvbnRhY3QgUG9pbnRzIC0tPg0KICA8IS0tIFAoMTg2LCAyNTkpIG9uIEFCIC0tPg0KICA8IS0tIFEoMjc5LCAxOTQpIG9uIEJDIC0tPg0KICA8IS0tIFIoMjE0LCAxMDEpIG9uIENEIC0tPg0KICA8IS0tIFMoMTIxLCAxNjYpIG9uIERBIC0tPg0KDQogIDwhLS0gQ2lyY2xlIC0tPg0KICA8IS0tIENvbG9yOiBCbHVlICMxOTc2RDIgLS0+DQogIDxjaXJjbGUgY3g9IjIwMCIgY3k9IjE4MCIgcj0iODAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzE5NzZEMiIgc3Ryb2tlLXdpZHRoPSIyLjUiIC8+DQoNCiAgPCEtLSBRdWFkcmlsYXRlcmFsIFNpZGVzIC0tPg0KICA8IS0tIEFCIChCb3R0b20pIC0gUmVkIC0tPg0KICA8bGluZSB4MT0iMTA4IiB5MT0iMjQ1IiB4Mj0iMjY1IiB5Mj0iMjcyIiBzdHJva2U9IiNEMzJGMkYiIHN0cm9rZS13aWR0aD0iMi41IiAvPg0KICANCiAgPCEtLSBCQyAoUmlnaHQpIC0gR3JlZW4gLS0+DQogIDxsaW5lIHgxPSIyNjUiIHkxPSIyNzIiIHgyPSIyOTIiIHkyPSIxMTUiIHN0cm9rZT0iIzM4OEUzQyIgc3Ryb2tlLXdpZHRoPSIyLjUiIC8+DQogIA0KICA8IS0tIENEIChUb3ApIC0gT3JhbmdlIC0tPg0KICA8bGluZSB4MT0iMjkyIiB5MT0iMTE1IiB4Mj0iMTM1IiB5Mj0iODgiIHN0cm9rZT0iI0Y1N0MwMCIgc3Ryb2tlLXdpZHRoPSIyLjUiIC8+DQogIA0KICA8IS0tIERBIChMZWZ0KSAtIFB1cnBsZSAtLT4NCiAgPGxpbmUgeDE9IjEzNSIgeTE9Ijg4IiB4Mj0iMTA4IiB5Mj0iMjQ1IiBzdHJva2U9IiM3QjFGQTIiIHN0cm9rZS13aWR0aD0iMi41IiAvPg0KDQogIDwhLS0gUG9pbnRzIChWZXJ0aWNlcykgLS0+DQogIDwhLS0gQSAtLT4NCiAgPGNpcmNsZSBjeD0iMTA4IiBjeT0iMjQ1IiByPSIzIiBmaWxsPSJibGFjayIgLz4NCiAgPHRleHQgeD0iOTAiIHk9IjI2MCIgY2xhc3M9ImxhYmVsIj5BPC90ZXh0Pg0KICANCiAgPCEtLSBCIC0tPg0KICA8Y2lyY2xlIGN4PSIyNjUiIGN5PSIyNzIiIHI9IjMiIGZpbGw9ImJsYWNrIiAvPg0KICA8dGV4dCB4PSIyODAiIHk9IjI4NSIgY2xhc3M9ImxhYmVsIj5CPC90ZXh0Pg0KICANCiAgPCEtLSBDIC0tPg0KICA8Y2lyY2xlIGN4PSIyOTIiIGN5PSIxMTUiIHI9IjMiIGZpbGw9ImJsYWNrIiAvPg0KICA8dGV4dCB4PSIzMDAiIHk9IjExMCIgY2xhc3M9ImxhYmVsIj5DPC90ZXh0Pg0KICANCiAgPCEtLSBEIC0tPg0KICA8Y2lyY2xlIGN4PSIxMzUiIGN5PSI4OCIgcj0iMyIgZmlsbD0iYmxhY2siIC8+DQogIDx0ZXh0IHg9IjEyMCIgeT0iODAiIGNsYXNzPSJsYWJlbCI+RDwvdGV4dD4NCg0KICA8IS0tIFBvaW50cyAoQ29udGFjdHMpIC0tPg0KICA8IS0tIFAgLS0+DQogIDxjaXJjbGUgY3g9IjE4NiIgY3k9IjI1OSIgcj0iNCIgZmlsbD0iIzE5NzZEMiIgLz4NCiAgPHRleHQgeD0iMTgwIiB5PSIyODAiIGNsYXNzPSJsYWJlbCI+UDwvdGV4dD4NCiAgDQogIDwhLS0gUSAtLT4NCiAgPGNpcmNsZSBjeD0iMjc5IiBjeT0iMTk0IiByPSI0IiBmaWxsPSIjMTk3NkQyIiAvPg0KICA8dGV4dCB4PSIyOTUiIHk9IjIwMCIgY2xhc3M9ImxhYmVsIj5RPC90ZXh0Pg0KICANCiAgPCEtLSBSIC0tPg0KICA8Y2lyY2xlIGN4PSIyMTQiIGN5PSIxMDEiIHI9IjQiIGZpbGw9IiMxOTc2RDIiIC8+DQogIDx0ZXh0IHg9IjIxMCIgeT0iOTUiIGNsYXNzPSJsYWJlbCI+UjwvdGV4dD4NCiAgDQogIDwhLS0gUyAtLT4NCiAgPGNpcmNsZSBjeD0iMTIxIiBjeT0iMTY2IiByPSI0IiBmaWxsPSIjMTk3NkQyIiAvPg0KICA8dGV4dCB4PSIxMDAiIHk9IjE3MCIgY2xhc3M9ImxhYmVsIj5TPC90ZXh0Pg0KDQo8L3N2Zz4=" alt="Circumscribing Quad">
-        <div class="solution-header">Proof:</div>
-        <div class="step"><strong style="color: #1565C0;">Given:</strong> A quadrilateral ABCD circumscribing a circle.
-            Points of contact P, Q, R, S on sides AB, BC, CD, DA respectively.</div>
-        <div class="step"><strong style="color: #1565C0;">To Prove:</strong> \\(AB + CD = AD + BC\\).</div>
-        <div class="step"><strong style="color: #1565C0;">Proof:</strong></div>
-        <div class="step">We know tangent lengths from an external point are equal (<strong
-                style="color: #D32F2F;">Theorem 10.2</strong>).</div>
-        <div class="step">Tangents from A: \\(AP = AS\\) ... (i)</div>
-        <div class="step">Tangents from B: \\(BP = BQ\\) ... (ii)</div>
-        <div class="step">Tangents from C: \\(CR = CQ\\) ... (iii)</div>
-        <div class="step">Tangents from D: \\(DR = DS\\) ... (iv)</div>
-        <div class="step">Add equations (i), (ii), (iii), and (iv):</div>
-        <div class="step">\\((AP + BP) + (CR + DR) = (AS + DS) + (BQ + CQ)\\).</div>
-        <div class="step">From the figure: \\(AP + BP = AB\\) and \\(CR + DR = CD\\).</div>
-        <div class="step">Also: \\(AS + DS = AD\\) and \\(BQ + CQ = BC\\).</div>
-        <div class="step">Substituting these values: \\(AB + CD = AD + BC\\).</div>
-        <div class="step"><strong style="color: #1565C0;">Final Conclusion:</strong> Hence Proved.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">9. In Fig., XY and X'Y' are two parallel tangents... Prove that ∠AOB = 90°.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTUwIiBoZWlnaHQ9IjM1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBzdHlsZT0iYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7Ij4NCiAgPCEtLSBEZWZpbml0aW9ucyBmb3IgbWFya2VycyAtLT4NCiAgPGRlZnM+DQogICAgPG1hcmtlciBpZD0iYXJyb3ctYmx1ZSIgbWFya2VyV2lkdGg9IjEwIiBtYXJrZXJIZWlnaHQ9IjEwIiByZWZYPSI5IiByZWZZPSIzIiBvcmllbnQ9ImF1dG8iIG1hcmtlclVuaXRzPSJzdHJva2VXaWR0aCI+DQogICAgICA8cGF0aCBkPSJNMCwwIEwwLDYgTDksMyB6IiBmaWxsPSIjMTk3NkQyIiAvPg0KICAgIDwvbWFya2VyPg0KICAgIDxtYXJrZXIgaWQ9ImFycm93LXN0YXJ0LWJsdWUiIG1hcmtlcldpZHRoPSIxMCIgbWFya2VySGVpZ2h0PSIxMCIgcmVmWD0iMSIgcmVmWT0iMyIgb3JpZW50PSJhdXRvIiBtYXJrZXJVbml0cz0ic3Ryb2tlV2lkdGgiPg0KICAgICAgPHBhdGggZD0iTTksMCBMOSw2IEwwLDMgeiIgZmlsbD0iIzE5NzZEMiIgLz4NCiAgICA8L21hcmtlcj4NCiAgPC9kZWZzPg0KDQogIDwhLS0gUGFyYWxsZWwgVGFuZ2VudHMgKEJsdWUpIC0tPg0KICA8IS0tIEV4dGVuZGVkIHRvIHRoZSByaWdodCB0byBzZXBhcmF0ZSBBIGZyb20gWSAtLT4NCiAgPGxpbmUgeDE9IjQwIiB5MT0iNzUiIHgyPSI1MTAiIHkyPSI3NSIgc3Ryb2tlPSIjMTk3NkQyIiBzdHJva2Utd2lkdGg9IjIuNSIgbWFya2VyLWVuZD0idXJsKCNhcnJvdy1ibHVlKSIgbWFya2VyLXN0YXJ0PSJ1cmwoI2Fycm93LXN0YXJ0LWJsdWUpIiAvPg0KICA8dGV4dCB4PSI1MCIgeT0iNjUiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzE5NzZEMiIgZm9udC13ZWlnaHQ9ImJvbGQiPlg8L3RleHQ+DQogIDx0ZXh0IHg9IjUwMCIgeT0iNjUiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzE5NzZEMiIgZm9udC13ZWlnaHQ9ImJvbGQiPlk8L3RleHQ+DQoNCiAgPGxpbmUgeDE9IjQwIiB5MT0iMjc1IiB4Mj0iNTEwIiB5Mj0iMjc1IiBzdHJva2U9IiMxOTc2RDIiIHN0cm9rZS13aWR0aD0iMi41IiBtYXJrZXItZW5kPSJ1cmwoI2Fycm93LWJsdWUpIiBtYXJrZXItc3RhcnQ9InVybCgjYXJyb3ctc3RhcnQtYmx1ZSkiIC8+DQogIDx0ZXh0IHg9IjUwIiB5PSIzMDAiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzE5NzZEMiIgZm9udC13ZWlnaHQ9ImJvbGQiPlgnPC90ZXh0Pg0KICA8dGV4dCB4PSI1MDAiIHk9IjMwMCIgZm9udC1mYW1pbHk9InNlcmlmIiBmb250LXNpemU9IjE4IiBmaWxsPSIjMTk3NkQyIiBmb250LXdlaWdodD0iYm9sZCI+WSc8L3RleHQ+DQoNCiAgPCEtLSBDaXJjbGUgKERhcmsgR3JleSkgLS0+DQogIDxjaXJjbGUgY3g9IjIyNSIgY3k9IjE3NSIgcj0iMTAwIiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIgLz4NCiAgPGNpcmNsZSBjeD0iMjI1IiBjeT0iMTc1IiByPSI0IiBmaWxsPSIjMzMzIiAvPg0KICA8dGV4dCB4PSIyMTAiIHk9IjE4MCIgZm9udC1mYW1pbHk9InNlcmlmIiBmb250LXNpemU9IjE4IiBmaWxsPSJibGFjayIgZm9udC13ZWlnaHQ9ImJvbGQiPk88L3RleHQ+DQoNCiAgPCEtLSBEaWFtZXRlciBQUSAoQmxhY2spIC0tPg0KICA8bGluZSB4MT0iMjI1IiB5MT0iNzUiIHgyPSIyMjUiIHkyPSIyNzUiIHN0cm9rZT0iIzAwMCIgc3Ryb2tlLXdpZHRoPSIyIiAvPg0KICA8dGV4dCB4PSIyMjAiIHk9IjY1IiBmb250LWZhbWlseT0ic2VyaWYiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9ImJsYWNrIiBmb250LXdlaWdodD0iYm9sZCI+UDwvdGV4dD4NCiAgPHRleHQgeD0iMjIwIiB5PSIzMDAiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSIxOCIgZmlsbD0iYmxhY2siIGZvbnQtd2VpZ2h0PSJib2xkIj5RPC90ZXh0Pg0KDQogIDwhLS0gUmlnaHQgQW5nbGUgTWFya2VycyAtLT4NCiAgPHBvbHlsaW5lIHBvaW50cz0iMjEwLDc1IDIxMCw5MCAyMjUsOTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzU1NSIgc3Ryb2tlLXdpZHRoPSIxLjUiIC8+DQogIDxwb2x5bGluZSBwb2ludHM9IjIxMCwyNzUgMjEwLDI2MCAyMjUsMjYwIiBmaWxsPSJub25lIiBzdHJva2U9IiM1NTUiIHN0cm9rZS13aWR0aD0iMS41IiAvPg0KDQogIDwhLS0gQ29uc3RydWN0aW9uOiBUYW5nZW50IEFCIChQdXJwbGUpIC0tPg0KICA8IS0tIENvb3JkaW5hdGVzIHByZXNlcnZlZDogQSgzOTgsIDc1KSwgQigyODMsIDI3NSksIEMoMzEyLCAyMjUpIC0tPg0KICA8bGluZSB4MT0iMzk4IiB5MT0iNzUiIHgyPSIyODMiIHkyPSIyNzUiIHN0cm9rZT0iIzlDMjdCMCIgc3Ryb2tlLXdpZHRoPSIyLjUiIC8+DQogIA0KICA8IS0tIFBvaW50IEEgb24gdG9wIGxpbmUgLS0+DQogIDxjaXJjbGUgY3g9IjM5OCIgY3k9Ijc1IiByPSI0IiBmaWxsPSIjOUMyN0IwIiAvPg0KICA8dGV4dCB4PSIzOTAiIHk9IjY1IiBmb250LWZhbWlseT0ic2VyaWYiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiM5QzI3QjAiIGZvbnQtd2VpZ2h0PSJib2xkIj5BPC90ZXh0Pg0KICANCiAgPCEtLSBQb2ludCBCIG9uIGJvdHRvbSBsaW5lIC0tPg0KICA8Y2lyY2xlIGN4PSIyODMiIGN5PSIyNzUiIHI9IjQiIGZpbGw9IiM5QzI3QjAiIC8+DQogIDx0ZXh0IHg9IjI4NSIgeT0iMzAwIiBmb250LWZhbWlseT0ic2VyaWYiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiM5QzI3QjAiIGZvbnQtd2VpZ2h0PSJib2xkIj5CPC90ZXh0Pg0KDQogIDwhLS0gUG9pbnQgQyBvbiBjaXJjbGUgLS0+DQogIDxjaXJjbGUgY3g9IjMxMiIgY3k9IjIyNSIgcj0iNCIgZmlsbD0iIzlDMjdCMCIgLz4NCiAgPHRleHQgeD0iMzIwIiB5PSIyMzAiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzlDMjdCMCIgZm9udC13ZWlnaHQ9ImJvbGQiPkM8L3RleHQ+DQoNCiAgPCEtLSBSYWRpaSB0byBBLCBCLCBDIChHcmVlbikgLS0+DQogIDxsaW5lIHgxPSIyMjUiIHkxPSIxNzUiIHgyPSIzOTgiIHkyPSI3NSIgc3Ryb2tlPSIjMkU3RDMyIiBzdHJva2Utd2lkdGg9IjIiIC8+DQogIDxsaW5lIHgxPSIyMjUiIHkxPSIxNzUiIHgyPSIyODMiIHkyPSIyNzUiIHN0cm9rZT0iIzJFN0QzMiIgc3Ryb2tlLXdpZHRoPSIyIiAvPg0KICA8bGluZSB4MT0iMjI1IiB5MT0iMTc1IiB4Mj0iMzEyIiB5Mj0iMjI1IiBzdHJva2U9IiMyRTdEMzIiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWRhc2hhcnJheT0iNSw1IiAvPg0KICANCjwvc3ZnPg==" alt="AOB 90 Degree Proof">
-        <div class="solution-header">Proof:</div>
-        <div class="step"><strong style="color: #1565C0;">Given:</strong> Parallel tangents XY and X'Y'. Tangent AB
-            intersecting XY at A and X'Y' at B.</div>
-        <div class="step"><strong style="color: #1565C0;">To Prove:</strong> \\(\\angle AOB = 90^\\circ\\).</div>
-        <div class="step"><strong style="color: #1565C0;">Construction:</strong> Join OC.</div>
-        <div class="step"><strong style="color: #1565C0;">Proof:</strong></div>
-        <div class="step">In \\(\\triangle OPA\\) and \\(\\triangle OCA\\):</div>
-        <div class="step">\\(OP = OC\\) (Radii of same circle).</div>
-        <div class="step">\\(AP = AC\\) (Tangents from external point A).</div>
-        <div class="step">\\(OA = OA\\) (Common side).</div>
-        <div class="step">By SSS Congruence Rule: \\(\\triangle OPA \\cong \\triangle OCA\\).</div>
-        <div class="step">Therefore, \\(\\angle POA = \\angle COA\\). Let them be \\(x\\).</div>
-        <div class="step">Similarly, \\(\\triangle OQB \\cong \\triangle OCB\\).</div>
-        <div class="step">Therefore, \\(\\angle QOB = \\angle COB\\). Let them be \\(y\\).</div>
-        <div class="step">Since XY || X'Y', POQ is a diameter (straight line).</div>
-        <div class="step">Sum of angles on a straight line is \\(180^\\circ\\).</div>
-        <div class="step">\\(\\angle POA + \\angle COA + \\angle COB + \\angle QOB = 180^\\circ\\).</div>
-        <div class="step">\\(x + x + y + y = 180^\\circ\\).</div>
-        <div class="step">\\(2(x + y) = 180^\\circ \\Rightarrow x + y = 90^\\circ\\).</div>
-        <div class="step">From figure, \\(\\angle AOB = \\angle COA + \\angle COB = x + y\\).</div>
-        <div class="step">Therefore, \\(\\angle AOB = 90^\\circ\\).</div>
-        <div class="step"><strong style="color: #1565C0;">Final Conclusion:</strong> Hence Proved.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">10. Prove that the angle between the two tangents drawn from an external point to a circle
-            is supplementary to the angle subtended by the line-segment joining the points of contact at the centre.
-        </div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPg0KICA8Y2lyY2xlIGN4PSIxNTAiIGN5PSIxNTAiIHI9IjYwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz4NCiAgPGNpcmNsZSBjeD0iMTUwIiBjeT0iMTUwIiByPSIzIiBmaWxsPSJibGFjayIvPiA8dGV4dCB4PSIxMzUiIHk9IjE1NSIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiPk88L3RleHQ+DQogIA0KICA8Y2lyY2xlIGN4PSIzMDAiIGN5PSIxNTAiIHI9IjMiIGZpbGw9ImJsYWNrIi8+IDx0ZXh0IHg9IjMxMCIgeT0iMTU1IiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCI+UDwvdGV4dD4NCiAgDQogIDwhLS0gVGFuZ2VudHMgdG8gUCAtLT4NCiAgPCEtLSBBKDE4MCwgOTgpLCBCKDE4MCwgMjAyKSBhcHByb3ggLS0+DQogIDxsaW5lIHgxPSIzMDAiIHkxPSIxNTAiIHgyPSIxODAiIHkyPSI5OCIgc3Ryb2tlPSJyZWQiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8bGluZSB4MT0iMzAwIiB5MT0iMTUwIiB4Mj0iMTgwIiB5Mj0iMjAyIiBzdHJva2U9InJlZCIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIA0KICA8Y2lyY2xlIGN4PSIxODAiIGN5PSI5OCIgcj0iMyIgZmlsbD0iYmxhY2siLz4gPHRleHQgeD0iMTc1IiB5PSI5MCIgZm9udC13ZWlnaHQ9ImJvbGQiPkE8L3RleHQ+DQogIDxjaXJjbGUgY3g9IjE4MCIgY3k9IjIwMiIgcj0iMyIgZmlsbD0iYmxhY2siLz4gPHRleHQgeD0iMTc1IiB5PSIyMjAiIGZvbnQtd2VpZ2h0PSJib2xkIj5CPC90ZXh0Pg0KICANCiAgPCEtLSBSYWRpaSAtLT4NCiAgPGxpbmUgeDE9IjE1MCIgeTE9IjE1MCIgeDI9IjE4MCIgeTI9Ijk4IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPGxpbmUgeDE9IjE1MCIgeTE9IjE1MCIgeDI9IjE4MCIgeTI9IjIwMiIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIA0KICA8IS0tIEFuZ2xlIEFyY3MgLS0+DQogIDxwYXRoIGQ9Ik0xNzAsMTQwIEEgMjAgMjAgMCAwIDEgMTcwIDE2MCIgc3Ryb2tlPSJibHVlIiBmaWxsPSJub25lIi8+DQogIDx0ZXh0IHg9IjExMCIgeT0iMTU1IiBmb250LXNpemU9IjEyIiBmaWxsPSJibHVlIj7iiKBPPC90ZXh0Pg0KICANCiAgPHBhdGggZD0iTTI4MCwxNDUgQSAyMCAyMCAwIDAgMCAyODAgMTU1IiBzdHJva2U9ImJsdWUiIGZpbGw9Im5vbmUiLz4NCiAgPHRleHQgeD0iMzEwIiB5PSIxMzAiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsdWUiPuKIoFA8L3RleHQ+DQogIA0KICA8dGV4dCB4PSIxODAiIHk9IjUwIiBmb250LXNpemU9IjE0Ij7iiKBPICsg4oigUCA9IDE4MMKwPC90ZXh0Pg0KDQo8L3N2Zz4=" alt="Supplementary Angles Proof">
-        <div class="solution-header">Proof:</div>
-        <div class="step"><strong style="color: #1565C0;">Given:</strong> External point P. Tangents PA and PB.</div>
-        <div class="step"><strong style="color: #1565C0;">To Prove:</strong> Angle between tangents (\\(\\angle APB\\)) +
-            Angle at center (\\(\\angle AOB\\)) = \\(180^\\circ\\).</div>
-        <div class="step"><strong style="color: #1565C0;">Proof:</strong></div>
-        <div class="step">We know radius is perpendicular to tangent at point of contact (<strong
-                style="color: #D32F2F;">Theorem 10.1</strong>).</div>
-        <div class="step">So, \\(\\angle OAP = 90^\\circ\\) and \\(\\angle OBP = 90^\\circ\\).</div>
-        <div class="step">Consider quadrilateral OAPB.</div>
-        <div class="step">Sum of all interior angles of a quadrilateral is \\(360^\\circ\\).</div>
-        <div class="step">\\(\\angle APB + \\angle AOB + \\angle OAP + \\angle OBP = 360^\\circ\\).</div>
-        <div class="step">Substitute the values: \\(\\angle APB + \\angle AOB + 90^\\circ + 90^\\circ = 360^\\circ\\).</div>
-        <div class="step">\\(\\angle APB + \\angle AOB + 180^\\circ = 360^\\circ\\).</div>
-        <div class="step">\\(\\angle APB + \\angle AOB = 360^\\circ - 180^\\circ = 180^\\circ\\).</div>
-        <div class="step">Since sum is \\(180^\\circ\\), the angles are supplementary.</div>
-        <div class="step"><strong style="color: #1565C0;">Final Conclusion:</strong> Hence Proved.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">11. Prove that the parallelogram circumscribing a circle is a rhombus.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBzdHlsZT0iYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7Ij4NCiAgPCEtLSBDaXJjbGUgKENlbnRlciAyNTAsIDIwMCwgUmFkaXVzIDgwKSAtIERhcmsgR3JleSAtLT4NCiAgPGNpcmNsZSBjeD0iMjUwIiBjeT0iMjAwIiByPSI4MCIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiIC8+DQogIDxjaXJjbGUgY3g9IjI1MCIgY3k9IjIwMCIgcj0iNCIgZmlsbD0iIzMzMyIgLz4NCiAgPHRleHQgeD0iMjYwIiB5PSIyMDUiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSIxOCIgZmlsbD0iYmxhY2siIGZvbnQtd2VpZ2h0PSJib2xkIj5PPC90ZXh0Pg0KDQogIDwhLS0gUmhvbWJ1cyBBQkNEIChCcmlnaHQgQmx1ZSkgLS0+DQogIDwhLS0gQ2FsY3VsYXRlZCBDb29yZGluYXRlczogQSgxOTUsIDEyMCksIEIoMzY2LCAxMjApLCBDKDMwNiwgMjgwKSwgRCgxMzUsIDI4MCkgLS0+DQogIDxwb2x5Z29uIHBvaW50cz0iMTk1LDEyMCAzNjYsMTIwIDMwNiwyODAgMTM1LDI4MCIgc3Ryb2tlPSIjMTk3NkQyIiBzdHJva2Utd2lkdGg9IjIuNSIgZmlsbD0ibm9uZSIgLz4NCg0KICA8IS0tIFJhZGlpIHRvIGNvbnRhY3QgcG9pbnRzIChHcmVlbiBkYXNoZWQgLSBvcHRpb25hbCBidXQgYWRkcyBjb2xvci9jb250ZXh0KSAtLT4NCiAgPGxpbmUgeDE9IjI1MCIgeTE9IjIwMCIgeDI9IjI1MCIgeTI9IjEyMCIgc3Ryb2tlPSIjMzg4RTNDIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWRhc2hhcnJheT0iNSw1IiAvPg0KICA8bGluZSB4MT0iMjUwIiB5MT0iMjAwIiB4Mj0iMzI1IiB5Mj0iMjI5IiBzdHJva2U9IiMzODhFM0MiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtZGFzaGFycmF5PSI1LDUiIC8+DQogIDxsaW5lIHgxPSIyNTAiIHkxPSIyMDAiIHgyPSIyNTAiIHkyPSIyODAiIHN0cm9rZT0iIzM4OEUzQyIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1kYXNoYXJyYXk9IjUsNSIgLz4NCiAgPGxpbmUgeDE9IjI1MCIgeTE9IjIwMCIgeDI9IjE3NSIgeTI9IjE3MSIgc3Ryb2tlPSIjMzg4RTNDIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWRhc2hhcnJheT0iNSw1IiAvPg0KDQogIDwhLS0gUG9pbnRzIG9mIENvbnRhY3QgKFJlZC9PcmFuZ2UpIC0tPg0KICA8IS0tIFAoMjUwLCAxMjApIG9uIEFCIC0tPg0KICA8Y2lyY2xlIGN4PSIyNTAiIGN5PSIxMjAiIHI9IjUiIGZpbGw9IiNEMzJGMkYiIC8+DQogIDx0ZXh0IHg9IjI1MCIgeT0iMTEwIiBmb250LWZhbWlseT0ic2VyaWYiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiNEMzJGMkYiIGZvbnQtd2VpZ2h0PSJib2xkIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5QPC90ZXh0Pg0KDQogIDwhLS0gUSgzMjUsIDIyOSkgb24gQkMgLS0+DQogIDxjaXJjbGUgY3g9IjMyNSIgY3k9IjIyOSIgcj0iNSIgZmlsbD0iI0QzMkYyRiIgLz4NCiAgPHRleHQgeD0iMzM1IiB5PSIyMzUiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSIxOCIgZmlsbD0iI0QzMkYyRiIgZm9udC13ZWlnaHQ9ImJvbGQiPlE8L3RleHQ+DQoNCiAgPCEtLSBSKDI1MCwgMjgwKSBvbiBDRCAtLT4NCiAgPGNpcmNsZSBjeD0iMjUwIiBjeT0iMjgwIiByPSI1IiBmaWxsPSIjRDMyRjJGIiAvPg0KICA8dGV4dCB4PSIyNTAiIHk9IjMwNSIgZm9udC1mYW1pbHk9InNlcmlmIiBmb250LXNpemU9IjE4IiBmaWxsPSIjRDMyRjJGIiBmb250LXdlaWdodD0iYm9sZCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+UjwvdGV4dD4NCg0KICA8IS0tIFMoMTc1LCAxNzEpIG9uIEFEIC0tPg0KICA8Y2lyY2xlIGN4PSIxNzUiIGN5PSIxNzEiIHI9IjUiIGZpbGw9IiNEMzJGMkYiIC8+DQogIDx0ZXh0IHg9IjE1NSIgeT0iMTc1IiBmb250LWZhbWlseT0ic2VyaWYiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiNEMzJGMkYiIGZvbnQtd2VpZ2h0PSJib2xkIj5TPC90ZXh0Pg0KDQogIDwhLS0gVmVydGljZXMgTGFiZWxzIChCbHVlKSAtLT4NCiAgPHRleHQgeD0iMTg1IiB5PSIxMTUiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzE5NzZEMiIgZm9udC13ZWlnaHQ9ImJvbGQiPkE8L3RleHQ+DQogIDx0ZXh0IHg9IjM3NSIgeT0iMTE1IiBmb250LWZhbWlseT0ic2VyaWYiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiMxOTc2RDIiIGZvbnQtd2VpZ2h0PSJib2xkIj5CPC90ZXh0Pg0KICA8dGV4dCB4PSIzMTUiIHk9IjI5NSIgZm9udC1mYW1pbHk9InNlcmlmIiBmb250LXNpemU9IjE4IiBmaWxsPSIjMTk3NkQyIiBmb250LXdlaWdodD0iYm9sZCI+QzwvdGV4dD4NCiAgPHRleHQgeD0iMTIwIiB5PSIyOTUiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzE5NzZEMiIgZm9udC13ZWlnaHQ9ImJvbGQiPkQ8L3RleHQ+DQoNCjwvc3ZnPg==" alt="Rhombus Proof">
-        <div class="solution-header">Proof:</div>
-        <div class="step"><strong style="color: #1565C0;">Given:</strong> Parallelogram ABCD circumscribing a circle.
-        </div>
-        <div class="step"><strong style="color: #1565C0;">To Prove:</strong> ABCD is a rhombus.</div>
-        <div class="step"><strong style="color: #1565C0;">Proof:</strong></div>
-        <div class="step">Since ABCD is a parallelogram, opposite sides are equal.</div>
-        <div class="step">\\(AB = CD\\) and \\(AD = BC\\) ... (Equation 1).</div>
-        <div class="step">We know that for any quadrilateral circumscribing a circle (from Q8):</div>
-        <div class="step">\\(AB + CD = AD + BC\\).</div>
-        <div class="step">Substitute values from Equation 1:</div>
-        <div class="step">\\(AB + AB = AD + AD\\).</div>
-        <div class="step">\\(2AB = 2AD\\).</div>
-        <div class="step">\\(AB = AD\\).</div>
-        <div class="step">Since adjacent sides AB and AD are equal, all sides of the parallelogram are equal.</div>
-        <div class="step">A parallelogram with equal sides is a rhombus.</div>
-        <div class="step"><strong style="color: #1565C0;">Final Conclusion:</strong> Hence, ABCD is a rhombus.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">12. A triangle ABC is drawn to circumscribe a circle of radius 4 cm... Find the sides AB
-            and AC.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDUwIiBoZWlnaHQ9IjQyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBzdHlsZT0iYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7Ij4NCiAgPCEtLSBTdHlsZXMgLS0+DQogIDxkZWZzPg0KICAgIDxzdHlsZT4NCiAgICAgIC5tYWluLXN0cm9rZSB7IHN0cm9rZTogIzAwQUNDMTsgc3Ryb2tlLXdpZHRoOiAyLjU7IGZpbGw6IG5vbmU7IH0NCiAgICAgIC5kYXNoZWQtc3Ryb2tlIHsgc3Ryb2tlOiAjMDBBQ0MxOyBzdHJva2Utd2lkdGg6IDEuNTsgZmlsbDogbm9uZTsgc3Ryb2tlLWRhc2hhcnJheTogNSw1OyB9DQogICAgICAudGV4dC1sYWJlbCB7IGZvbnQtZmFtaWx5OiBzZXJpZjsgZm9udC1zaXplOiAxOHB4OyBmb250LXdlaWdodDogYm9sZDsgZmlsbDogYmxhY2s7IH0NCiAgICAgIC5kaW0tbGFiZWwgeyBmb250LWZhbWlseTogc2Fucy1zZXJpZjsgZm9udC1zaXplOiAxNnB4OyBmb250LXdlaWdodDogYm9sZDsgZmlsbDogYmxhY2s7IH0NCiAgICAgIC5tYXJrZXItbGluZSB7IHN0cm9rZTogYmxhY2s7IHN0cm9rZS13aWR0aDogMTsgfQ0KICAgIDwvc3R5bGU+DQogICAgPG1hcmtlciBpZD0iYXJyb3ctc3RhcnQiIG1hcmtlcldpZHRoPSIxMCIgbWFya2VySGVpZ2h0PSIxMCIgcmVmWD0iMSIgcmVmWT0iMyIgb3JpZW50PSJhdXRvIj4NCiAgICAgIDxwYXRoIGQ9Ik05LDAgTDksNiBMMCwzIHoiIGZpbGw9IiMwMEFDQzEiIC8+DQogICAgPC9tYXJrZXI+DQogICAgPG1hcmtlciBpZD0iYXJyb3ctZW5kIiBtYXJrZXJXaWR0aD0iMTAiIG1hcmtlckhlaWdodD0iMTAiIHJlZlg9IjkiIHJlZlk9IjMiIG9yaWVudD0iYXV0byI+DQogICAgICA8cGF0aCBkPSJNMCwwIEwwLDYgTDksMyB6IiBmaWxsPSIjMDBBQ0MxIiAvPg0KICAgIDwvbWFya2VyPg0KICA8L2RlZnM+DQoNCiAgPCEtLSBUcmlhbmdsZSBBQkMgLS0+DQogIDwhLS0gQSgxNTAsIDExMCksIEIoMzMwLCAzNTApLCBDKDUwLCAzNTApIC0tPg0KICA8cG9seWdvbiBwb2ludHM9IjE1MCwxMTAgMzMwLDM1MCA1MCwzNTAiIGNsYXNzPSJtYWluLXN0cm9rZSIgLz4NCg0KICA8IS0tIENpcmNsZSAtLT4NCiAgPCEtLSBDZW50ZXIgTygxNzAsIDI3MCksIFJhZGl1cyA4MCAtLT4NCiAgPGNpcmNsZSBjeD0iMTcwIiBjeT0iMjcwIiByPSI4MCIgY2xhc3M9Im1haW4tc3Ryb2tlIiAvPg0KICA8Y2lyY2xlIGN4PSIxNzAiIGN5PSIyNzAiIHI9IjQiIGZpbGw9IiMwMEFDQzEiIC8+DQogIDx0ZXh0IHg9IjE3NSIgeT0iMjk1IiBjbGFzcz0idGV4dC1sYWJlbCIgc3R5bGU9ImZvbnQtZmFtaWx5OiBzYW5zLXNlcmlmOyI+TzwvdGV4dD4NCg0KICA8IS0tIFJhZGlpIHRvIGNvbnRhY3QgcG9pbnRzIChEYXNoZWQpIC0tPg0KICA8IS0tIEQoMTcwLCAzNTApIG9uIEJDIC0tPg0KICA8IS0tIExlZnQgUG9pbnQgKE5vdyBFKSAoOTYsIDIzOSkgb24gQUMgLS0+DQogIDwhLS0gUmlnaHQgUG9pbnQgKE5vdyBGKSAoMjM0LCAyMjIpIG9uIEFCIC0tPg0KICA8bGluZSB4MT0iMTcwIiB5MT0iMjcwIiB4Mj0iMTcwIiB5Mj0iMzUwIiBjbGFzcz0iZGFzaGVkLXN0cm9rZSIgLz4NCiAgPGxpbmUgeDE9IjE3MCIgeTE9IjI3MCIgeDI9Ijk2IiB5Mj0iMjM5IiBjbGFzcz0iZGFzaGVkLXN0cm9rZSIgLz4NCiAgPGxpbmUgeDE9IjE3MCIgeTE9IjI3MCIgeDI9IjIzNCIgeTI9IjIyMiIgY2xhc3M9ImRhc2hlZC1zdHJva2UiIC8+DQoNCiAgPCEtLSBBbmdsZSBCaXNlY3RvcnMgKERhc2hlZCkgLS0+DQogIDxsaW5lIHgxPSIxNzAiIHkxPSIyNzAiIHgyPSIxNTAiIHkyPSIxMTAiIGNsYXNzPSJkYXNoZWQtc3Ryb2tlIiAvPg0KICA8bGluZSB4MT0iMTcwIiB5MT0iMjcwIiB4Mj0iMzMwIiB5Mj0iMzUwIiBjbGFzcz0iZGFzaGVkLXN0cm9rZSIgLz4NCiAgPGxpbmUgeDE9IjE3MCIgeTE9IjI3MCIgeDI9IjUwIiB5Mj0iMzUwIiBjbGFzcz0iZGFzaGVkLXN0cm9rZSIgLz4NCg0KICA8IS0tIFJpZ2h0IEFuZ2xlIE1hcmtlcnMgLS0+DQogIDwhLS0gRCAtLT4NCiAgPHBvbHlsaW5lIHBvaW50cz0iMTYwLDM1MCAxNjAsMzQwIDE3MCwzNDAiIHN0cm9rZT0iIzAwQUNDMSIgc3Ryb2tlLXdpZHRoPSIxLjUiIGZpbGw9Im5vbmUiIC8+DQogIDxwb2x5bGluZSBwb2ludHM9IjE4MCwzNTAgMTgwLDM0MCAxNzAsMzQwIiBzdHJva2U9IiMwMEFDQzEiIHN0cm9rZS13aWR0aD0iMS41IiBmaWxsPSJub25lIiAvPg0KICANCiAgPCEtLSBMZWZ0IFBvaW50IEUgKGFwcHJveCByb3RhdGlvbikgLS0+DQogIDxwb2x5Z29uIHBvaW50cz0iOTYsMjM5IDEwNCwyNDIgMTA3LDIzNCAxMDAsMjMxIiBzdHJva2U9IiMwMEFDQzEiIHN0cm9rZS13aWR0aD0iMS41IiBmaWxsPSJub25lIiAvPg0KICANCiAgPCEtLSBSaWdodCBQb2ludCBGIChhcHByb3ggcm90YXRpb24pIC0tPg0KICA8cG9seWdvbiBwb2ludHM9IjIzNCwyMjIgMjI2LDIyNSAyMjQsMjE3IDIzMSwyMTQiIHN0cm9rZT0iIzAwQUNDMSIgc3Ryb2tlLXdpZHRoPSIxLjUiIGZpbGw9Im5vbmUiIC8+DQoNCiAgPCEtLSBMYWJlbHMgLS0+DQogIDx0ZXh0IHg9IjE0NSIgeT0iMTAwIiBjbGFzcz0idGV4dC1sYWJlbCI+QTwvdGV4dD4NCiAgPHRleHQgeD0iMzQwIiB5PSIzNjAiIGNsYXNzPSJ0ZXh0LWxhYmVsIj5CPC90ZXh0Pg0KICA8dGV4dCB4PSIzMCIgeT0iMzYwIiBjbGFzcz0idGV4dC1sYWJlbCI+QzwvdGV4dD4NCiAgDQogIDx0ZXh0IHg9IjE2NSIgeT0iMzcwIiBjbGFzcz0idGV4dC1sYWJlbCI+RDwvdGV4dD4NCiAgPCEtLSBTd2FwcGVkIEUgYW5kIEYgLS0+DQogIDx0ZXh0IHg9IjI0MCIgeT0iMjI1IiBjbGFzcz0idGV4dC1sYWJlbCI+RjwvdGV4dD4gPCEtLSBXYXMgRSwgbm93IEYgKFJpZ2h0KSAtLT4NCiAgPHRleHQgeD0iNzUiIHk9IjIzNSIgY2xhc3M9InRleHQtbGFiZWwiPkU8L3RleHQ+IDwhLS0gV2FzIEYsIG5vdyBFIChMZWZ0KSAtLT4NCg0KICA8IS0tIERpbWVuc2lvbnMgb24gc2lkZXMgLS0+DQogIDwhLS0gQUYgPSB4IC0tPg0KICA8dGV4dCB4PSIxMTAiIHk9IjE3MCIgY2xhc3M9ImRpbS1sYWJlbCIgZm9udC1zdHlsZT0iaXRhbGljIj54PC90ZXh0Pg0KICA8IS0tIEFFID0geCAtLT4NCiAgPHRleHQgeD0iMjAwIiB5PSIxNzAiIGNsYXNzPSJkaW0tbGFiZWwiIGZvbnQtc3R5bGU9Iml0YWxpYyI+eDwvdGV4dD4NCiAgPCEtLSBDRiA9IDYgY20gLS0+DQogIDx0ZXh0IHg9IjUwIiB5PSIyODAiIGNsYXNzPSJkaW0tbGFiZWwiPjYgY208L3RleHQ+DQogIDwhLS0gQkUgPSA4IGNtIC0tPg0KICA8dGV4dCB4PSIyOTAiIHk9IjI4MCIgY2xhc3M9ImRpbS1sYWJlbCI+OCBjbTwvdGV4dD4NCg0KICA8IS0tIEJvdHRvbSBEaW1lbnNpb25zIC0tPg0KICA8bGluZSB4MT0iNTAiIHkxPSIzODAiIHgyPSIxNjUiIHkyPSIzODAiIHN0cm9rZT0iIzAwQUNDMSIgc3Ryb2tlLXdpZHRoPSIyIiBtYXJrZXItc3RhcnQ9InVybCgjYXJyb3ctc3RhcnQpIiBtYXJrZXItZW5kPSJ1cmwoI2Fycm93LWVuZCkiIC8+DQogIDx0ZXh0IHg9IjkwIiB5PSI0MDAiIGNsYXNzPSJ0ZXh0LWxhYmVsIj42IGNtPC90ZXh0Pg0KICANCiAgPGxpbmUgeDE9IjE3NSIgeTE9IjM4MCIgeDI9IjMzMCIgeTI9IjM4MCIgc3Ryb2tlPSIjMDBBQ0MxIiBzdHJva2Utd2lkdGg9IjIiIG1hcmtlci1zdGFydD0idXJsKCNhcnJvdy1zdGFydCkiIG1hcmtlci1lbmQ9InVybCgjYXJyb3ctZW5kKSIgLz4NCiAgPHRleHQgeD0iMjQwIiB5PSI0MDAiIGNsYXNzPSJ0ZXh0LWxhYmVsIj44PC90ZXh0Pg0KDQo8L3N2Zz4=" alt="Triangle Sides Calculation">
-        <div class="solution-header">Solution:</div>
-        <div class="step"><strong style="color: #1565C0;">Given:</strong> \\(\\triangle ABC\\) circumscribing a circle.
-            Radius \\(r = 4\\) cm. \\(BD = 8\\) cm, \\(CD = 6\\) cm.</div>
-        <div class="step"><strong style="color: #1565C0;">To Find:</strong> Lengths of sides AB and AC.</div>
-        <div class="step"><strong style="color: #1565C0;">Solution:</strong></div>
-        <div class="step">Let tangent points be D, E, F on sides BC, AC, AB.</div>
-        <div class="step">We have \\(BD = 8\\) cm and \\(CD = 6\\) cm.</div>
-        <div class="step">Tangents from external point are equal (<strong style="color: #D32F2F;">Theorem
-                10.2</strong>).</div>
-        <div class="step">\\(BF = BD = 8\\) cm and \\(CE = CD = 6\\) cm.</div>
-        <div class="step">Let \\(AF = AE = x\\) cm.</div>
-        <div class="step">Sides of triangle: \\(a = 14\\), \\(b = x+6\\), \\(c = x+8\\).</div>
-        <div class="step">Semiperimeter \\(s = \\frac{14 + x+6 + x+8}{2} = x + 14\\).</div>
-        <div class="step">Area of \\(\\triangle ABC = \\sqrt{s(s-a)(s-b)(s-c)}\\) (Heron's Formula).</div>
-        <div class="step">Area \\(= \\sqrt{(x+14)(x)(8)(6)} = \\sqrt{48x(x+14)}\\).</div>
-        <div class="step">Also, Area \\(= \\frac{1}{2}r(Perimeter) = \\frac{1}{2}(4)(2x+28) = 2(2x+28) = 4(x+14)\\).</div>
-        <div class="step">Equating both areas: \\(\\sqrt{48x(x+14)} = 4(x+14)\\).</div>
-        <div class="step">Squaring both sides: \\(48x(x+14) = 16(x+14)^2\\).</div>
-        <div class="step">Divide by \\(16(x+14)\\): \\(3x = x + 14\\).</div>
-        <div class="step">\\(2x = 14 \\Rightarrow x = 7\\).</div>
-        <div class="step">Side \\(AB = x + 8 = 7 + 8 = 15\\) cm.</div>
-        <div class="step">Side \\(AC = x + 6 = 7 + 6 = 13\\) cm.</div>
-        <div class="step"><strong style="color: #1565C0;">Final Conclusion:</strong> Hence, AB = 15 cm and AC = 13 cm.
-        </div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">13. Prove that opposite sides of a quadrilateral circumscribing a circle subtend
-            supplementary angles at the centre of the circle.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTUwIiBoZWlnaHQ9IjQ1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBzdHlsZT0iYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7Ij4NCiAgPCEtLSBTdHlsZXMgLS0+DQogIDxkZWZzPg0KICAgIDxzdHlsZT4NCiAgICAgIC52ZXJ0ZXgtdGV4dCB7IGZvbnQtZmFtaWx5OiBzZXJpZjsgZm9udC1zaXplOiAxOHB4OyBmb250LXdlaWdodDogYm9sZDsgZmlsbDogIzE5NzZEMjsgfQ0KICAgICAgLmNvbnRhY3QtdGV4dCB7IGZvbnQtZmFtaWx5OiBzYW5zLXNlcmlmOyBmb250LXNpemU6IDE0cHg7IGZvbnQtd2VpZ2h0OiBib2xkOyBmaWxsOiAjRDMyRjJGOyB9DQogICAgICAuYW5nbGUtdGV4dCB7IGZvbnQtZmFtaWx5OiBzYW5zLXNlcmlmOyBmb250LXNpemU6IDEycHg7IGZvbnQtd2VpZ2h0OiBib2xkOyBmaWxsOiBibGFjazsgfQ0KICAgICAgLmNlbnRlci10ZXh0IHsgZm9udC1mYW1pbHk6IHNlcmlmOyBmb250LXNpemU6IDE2cHg7IGZvbnQtd2VpZ2h0OiBib2xkOyBmaWxsOiBibGFjazsgfQ0KICAgIDwvc3R5bGU+DQogIDwvZGVmcz4NCg0KICA8IS0tIENlbnRlciBPIC0tPg0KICA8Y2lyY2xlIGN4PSIyNTAiIGN5PSIyMjUiIHI9IjMiIGZpbGw9IiMzMzMiIC8+DQogIDx0ZXh0IHg9IjI2MCIgeT0iMjMwIiBjbGFzcz0iY2VudGVyLXRleHQiPk88L3RleHQ+DQoNCiAgPCEtLSBDaXJjbGUgKFJhZGl1cyA4MCkgLS0+DQogIDxjaXJjbGUgY3g9IjI1MCIgY3k9IjIyNSIgcj0iODAiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIiAvPg0KDQogIDwhLS0gUXVhZHJpbGF0ZXJhbCBBQkNEIChCbHVlKSAtLT4NCiAgPCEtLSBDYWxjdWxhdGVkIFRhbmdlbnQgSW50ZXJzZWN0aW9uIFBvaW50cyAtLT4NCiAgPCEtLSBBKDE3MCwgMTU4KSwgQigzNDksIDEyNiksIEMoMzE3LCAzMDUpLCBEKDE3MCwgMzA1KSAtLT4NCiAgPHBvbHlnb24gcG9pbnRzPSIxNzAsMTU4IDM0OSwxMjYgMzE3LDMwNSAxNzAsMzA1IiBzdHJva2U9IiMxOTc2RDIiIHN0cm9rZS13aWR0aD0iMi41IiBmaWxsPSJub25lIiAvPg0KDQogIDwhLS0gUmFkaWkgdG8gY29udGFjdCBwb2ludHMgKEdyZWVuIFNvbGlkKSAtLT4NCiAgPCEtLSBQKDIzNiwgMTQ2KSBvbiBBQiAtLT4NCiAgPCEtLSBRKDMyOSwgMjM5KSBvbiBCQyAtLT4NCiAgPCEtLSBSKDI1MCwgMzA1KSBvbiBDRCAtLT4NCiAgPCEtLSBTKDE3MCwgMjI1KSBvbiBEQSAtLT4NCiAgPGxpbmUgeDE9IjI1MCIgeTE9IjIyNSIgeDI9IjIzNiIgeTI9IjE0NiIgc3Ryb2tlPSIjMkU3RDMyIiBzdHJva2Utd2lkdGg9IjIiIC8+DQogIDxsaW5lIHgxPSIyNTAiIHkxPSIyMjUiIHgyPSIzMjkiIHkyPSIyMzkiIHN0cm9rZT0iIzJFN0QzMiIgc3Ryb2tlLXdpZHRoPSIyIiAvPg0KICA8bGluZSB4MT0iMjUwIiB5MT0iMjI1IiB4Mj0iMjUwIiB5Mj0iMzA1IiBzdHJva2U9IiMyRTdEMzIiIHN0cm9rZS13aWR0aD0iMiIgLz4NCiAgPGxpbmUgeDE9IjI1MCIgeTE9IjIyNSIgeDI9IjE3MCIgeTI9IjIyNSIgc3Ryb2tlPSIjMkU3RDMyIiBzdHJva2Utd2lkdGg9IjIiIC8+DQoNCiAgPCEtLSBMaW5lcyB0byBWZXJ0aWNlcyAoUHVycGxlIERhc2hlZCkgLS0+DQogIDxsaW5lIHgxPSIyNTAiIHkxPSIyMjUiIHgyPSIxNzAiIHkyPSIxNTgiIHN0cm9rZT0iIzdCMUZBMiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1kYXNoYXJyYXk9IjUsNSIgLz4NCiAgPGxpbmUgeDE9IjI1MCIgeTE9IjIyNSIgeDI9IjM0OSIgeTI9IjEyNiIgc3Ryb2tlPSIjN0IxRkEyIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWRhc2hhcnJheT0iNSw1IiAvPg0KICA8bGluZSB4MT0iMjUwIiB5MT0iMjI1IiB4Mj0iMzE3IiB5Mj0iMzA1IiBzdHJva2U9IiM3QjFGQTIiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtZGFzaGFycmF5PSI1LDUiIC8+DQogIDxsaW5lIHgxPSIyNTAiIHkxPSIyMjUiIHgyPSIxNzAiIHkyPSIzMDUiIHN0cm9rZT0iIzdCMUZBMiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1kYXNoYXJyYXk9IjUsNSIgLz4NCg0KICA8IS0tIFJpZ2h0IEFuZ2xlIE1hcmtlcnMgKEdyYXkpIC0tPg0KICA8IS0tIFAgLS0+DQogIDxwb2x5bGluZSBwb2ludHM9IjIzNiwxNDYgMjQwLDE1NSAyNDgsMTUzIiBmaWxsPSJub25lIiBzdHJva2U9IiM3NzciIHN0cm9rZS13aWR0aD0iMSIgLz4NCiAgPCEtLSBRIC0tPg0KICA8cG9seWxpbmUgcG9pbnRzPSIzMjksMjM5IDMyMCwyNDAgMzIyLDIzMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNzc3IiBzdHJva2Utd2lkdGg9IjEiIC8+DQogIDwhLS0gUiAtLT4NCiAgPHBvbHlsaW5lIHBvaW50cz0iMjUwLDMwNSAyNjAsMzA1IDI2MCwyOTUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzc3NyIgc3Ryb2tlLXdpZHRoPSIxIiAvPg0KICA8IS0tIFMgLS0+DQogIDxwb2x5bGluZSBwb2ludHM9IjE3MCwyMjUgMTgwLDIyNSAxODAsMjM1IiBmaWxsPSJub25lIiBzdHJva2U9IiM3NzciIHN0cm9rZS13aWR0aD0iMSIgLz4NCg0KICA8IS0tIEFuZ2xlIE51bWJlcnMgMS04IC0tPg0KICA8IS0tIDE6IEFPUCAoVG9wIExlZnQpIC0tPiA8dGV4dCB4PSIyMTUiIHk9IjE5NSIgY2xhc3M9ImFuZ2xlLXRleHQiPjE8L3RleHQ+DQogIDwhLS0gMjogUE9CIChUb3AgUmlnaHQpIC0tPiA8dGV4dCB4PSIyNTUiIHk9IjE5MCIgY2xhc3M9ImFuZ2xlLXRleHQiPjI8L3RleHQ+DQogIDwhLS0gMzogQk9RIChNaWQgUmlnaHQgVXBwZXIpIC0tPiA8dGV4dCB4PSIyNzUiIHk9IjIxNSIgY2xhc3M9ImFuZ2xlLXRleHQiPjM8L3RleHQ+DQogIDwhLS0gNDogUU9DIChNaWQgUmlnaHQgTG93ZXIpIC0tPiA8dGV4dCB4PSIyNzUiIHk9IjI1MCIgY2xhc3M9ImFuZ2xlLXRleHQiPjQ8L3RleHQ+DQogIDwhLS0gNTogQ09SIChCb3R0b20gUmlnaHQpIC0tPiA8dGV4dCB4PSIyNjAiIHk9IjI3NSIgY2xhc3M9ImFuZ2xlLXRleHQiPjU8L3RleHQ+DQogIDwhLS0gNjogUk9EIChCb3R0b20gTGVmdCkgLS0+IDx0ZXh0IHg9IjIyNSIgeT0iMjc1IiBjbGFzcz0iYW5nbGUtdGV4dCI+NjwvdGV4dD4NCiAgPCEtLSA3OiBET1MgKE1pZCBMZWZ0IExvd2VyKSAtLT4gPHRleHQgeD0iMjEwIiB5PSIyNTAiIGNsYXNzPSJhbmdsZS10ZXh0Ij43PC90ZXh0Pg0KICA8IS0tIDg6IFNPQSAoTWlkIExlZnQgVXBwZXIpIC0tPiA8dGV4dCB4PSIyMTAiIHk9IjIxNSIgY2xhc3M9ImFuZ2xlLXRleHQiPjg8L3RleHQ+DQoNCiAgPCEtLSBMYWJlbHMgLS0+DQogIDx0ZXh0IHg9IjE1MCIgeT0iMTUwIiBjbGFzcz0idmVydGV4LXRleHQiPkE8L3RleHQ+DQogIDx0ZXh0IHg9IjM2MCIgeT0iMTIwIiBjbGFzcz0idmVydGV4LXRleHQiPkI8L3RleHQ+DQogIDx0ZXh0IHg9IjMyNSIgeT0iMzI1IiBjbGFzcz0idmVydGV4LXRleHQiPkM8L3RleHQ+DQogIDx0ZXh0IHg9IjE1MCIgeT0iMzI1IiBjbGFzcz0idmVydGV4LXRleHQiPkQ8L3RleHQ+DQoNCiAgPHRleHQgeD0iMjMwIiB5PSIxMzUiIGNsYXNzPSJjb250YWN0LXRleHQiPlA8L3RleHQ+DQogIDx0ZXh0IHg9IjM0MCIgeT0iMjQwIiBjbGFzcz0iY29udGFjdC10ZXh0Ij5RPC90ZXh0Pg0KICA8dGV4dCB4PSIyNDUiIHk9IjMyNSIgY2xhc3M9ImNvbnRhY3QtdGV4dCI+UjwvdGV4dD4NCiAgPHRleHQgeD0iMTUwIiB5PSIyMzAiIGNsYXNzPSJjb250YWN0LXRleHQiPlM8L3RleHQ+DQoNCjwvc3ZnPg==" alt="Opposite Quad Sides Proof">
-        <div class="solution-header">Proof:</div>
-        <div class="step"><strong style="color: #1565C0;">Given:</strong> Quadrilateral ABCD circumscribing a circle
-            with center O.</div>
-        <div class="step"><strong style="color: #1565C0;">To Prove:</strong> Opposite sides subtend supplementary angles
-            at center (\\(\\angle AOB + \\angle COD = 180^\\circ\\)).</div>
-        <div class="step"><strong style="color: #1565C0;">Construction:</strong> Join the center O to points of contact
-            P, Q, R, S.</div>
-        <div class="step"><strong style="color: #1565C0;">Proof:</strong></div>
-        <div class="step">Consider \\(\\triangle AOP\\) and \\(\\triangle AOS\\).</div>
-        <div class="step">\\(AP = AS\\) (Tangents from A).</div>
-        <div class="step">\\(OP = OS\\) (Radii).</div>
-        <div class="step">\\(OA = OA\\) (Common).</div>
-        <div class="step">By SSS Congruence Rule: \\(\\triangle AOP \\cong \\triangle AOS\\).</div>
-        <div class="step">Therefore, \\(\\angle 1 = \\angle 8\\) (By CPCT).</div>
-        <div class="step">Similarly, \\(\\angle 2 = \\angle 3\\), \\(\\angle 4 = \\angle 5\\), \\(\\angle 6 = \\angle 7\\).</div>
-        <div class="step">Sum of all angles at center O is \\(360^\\circ\\).</div>
-        <div class="step">\\(\\angle 1 + \\angle 2 + \\angle 3 + \\angle 4 +5 + \\angle 6 + \\angle 7 + \\angle 8 = 360^\\circ\\).
-        </div>
-        <div class="step">Grouping equal angles: \\(2(\\angle 1 + \\angle 2) + 2(\\angle 5 + \\angle 6) = 360^\\circ\\).</div>
-        <div class="step">\\(\\angle 1 + \\angle 2 + \\angle 5 + \\angle 6 = 180^\\circ\\).</div>
-        <div class="step">From figure, \\(\\angle AOB = \\angle 1 + \\angle 2\\) and \\(\\angle COD = \\angle 5 + \\angle 6\\).
-        </div>
-        <div class="step">Therefore, \\(\\angle AOB + \\angle COD = 180^\\circ\\).</div>
-        <div class="step"><strong style="color: #1565C0;">Final Conclusion:</strong> Hence, opposite sides subtend
-            supplementary angles at the center.</div>
-    </div>
-
-</body>
-
-</html>`
+  id: "ch10",
+  number: 10,
+  title: "Circles",
+  introduction: "In this chapter, we explore the geometric properties of circles, establish the foundational perpendicularity relationship between a tangent and the radius at the point of contact, and prove that lengths of tangents drawn from an external point to a circle are equal.",
+  definitions: [
+    {
+        "term": "Tangent to a Circle",
+        "description": "A straight line that touches the circle at exactly one single point in its plane."
+    },
+    {
+        "term": "Secant to a Circle",
+        "description": "A straight line that intersects the circle at two distinct points, passing through its interior."
+    },
+    {
+        "term": "Point of Contact",
+        "description": "The unique common point where a tangent touches the circumference of a circle."
+    },
+    {
+        "term": "Concentric Circles",
+        "description": "Two or more coplanar circles that share the same centre but possess different radii."
+    },
+    {
+        "term": "Circumscribed Polygon",
+        "description": "A polygon whose sides are all tangents touching an inscribed circle."
+    },
+    {
+        "term": "Chord of Contact",
+        "description": "The chord joining the two points of contact of the tangents drawn from an external point to a circle."
     }
+],
+  keyPoints: [
+    "A tangent to a circle is perpendicular to the radius through the point of contact (Theorem 10.1: OP ⊥ XY).",
+    "The lengths of tangents drawn from an external point to a circle are equal (Theorem 10.2: PQ = PR).",
+    "There is exactly one tangent passing through any point on a circle.",
+    "No tangent can be drawn to a circle from a point lying inside it.",
+    "Exactly two tangents can be drawn to a circle from an external point.",
+    "Tangents drawn at the two opposite endpoints of a diameter are parallel.",
+    "For any quadrilateral circumscribing a circle, the sum of opposite sides is equal: AB + CD = AD + BC.",
+    "A parallelogram circumscribing a circle is always a rhombus."
+],
+  formulas: [
+    {
+        "name": "Tangent-Radius Perpendicularity",
+        "formula": "OP ⊥ Tangent at point P  (∠OPT = 90°)"
+    },
+    {
+        "name": "Pythagorean Tangent Relation",
+        "formula": "OT² = OP² + PT²  =>  PT = √(OT² − r²)"
+    },
+    {
+        "name": "Equal External Tangents",
+        "formula": "PQ = PR  (from external point P)"
+    },
+    {
+        "name": "Supplementary Angle Property",
+        "formula": "∠PTQ + ∠POQ = 180°"
+    },
+    {
+        "name": "Concentric Circles Chord Length",
+        "formula": "Chord Length = 2√(R² − r²)"
+    },
+    {
+        "name": "Circumscribed Quadrilateral Identity",
+        "formula": "AB + CD = AD + BC"
+    },
+    {
+        "name": "Inradius Area Decomposition",
+        "formula": "Area(ΔABC) = r × s = (1/2)r(a + b + c)"
+    }
+],
+  crux: [
+    "Always connect the centre to the point of contact to establish 90° angles and create right-angled triangles for Pythagoras theorem.",
+    "Remember that the line joining the external point to the centre is the angle bisector of both the angle between the tangents and the angle at the centre.",
+    "In circumscribed quadrilaterals, write the equal tangent lengths starting from each of the 4 vertices and add them to prove AB + CD = AD + BC.",
+    "In concentric circles, the chord of the larger circle touching the smaller circle is always bisected by the radius of the smaller circle."
+],
+  exercises: [
+    {
+        "id": "theorems",
+        "name": "Theorems",
+        "questions": []
+    },
+    {
+        "id": "examples",
+        "name": "Examples",
+        "questions": []
+    },
+    {
+        "id": "exercise1",
+        "name": "Exercise 10.1",
+        "questions": []
+    },
+    {
+        "id": "exercise2",
+        "name": "Exercise 10.2",
+        "questions": []
+    }
+],
+  examples: [],
+  theorems: [],
+  mcqs: [
+    {
+        "id": "ch10-mcq-1",
+        "question": "A line intersecting a circle in two distinct points is called a:",
+        "options": [
+            "A):   Tangent",
+            "B):   Secant",
+            "C):   Chord",
+            "D):   Diameter"
+        ],
+        "correctAnswer": "B",
+        "explanation": "By definition, a line that intersects a circle at two distinct points is called a secant, whereas a line touching at only one point is a tangent."
+    },
+    {
+        "id": "ch10-mcq-2",
+        "question": "How many tangents can be drawn to a circle from a point lying strictly INSIDE the circle?",
+        "options": [
+            "A):   0",
+            "B):   1",
+            "C):   2",
+            "D):   Infinitely many"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Every straight line passing through a point inside a circle intersects the circle at two points (secant). Therefore, no tangent can be drawn from an interior point."
+    },
+    {
+        "id": "ch10-mcq-3",
+        "question": "The maximum number of parallel tangents that a circle can have for a given direction is:",
+        "options": [
+            "A):   1",
+            "B):   2",
+            "C):   3",
+            "D):   Infinitely many"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Parallel tangents can only occur at the two diametrically opposite endpoints of a diameter. Hence, there are at most 2 parallel tangents for any direction."
+    },
+    {
+        "id": "ch10-mcq-4",
+        "question": "The angle between a tangent to a circle and the radius drawn through the point of contact is:",
+        "options": [
+            "A):   45°",
+            "B):   60°",
+            "C):   90°",
+            "D):   180°"
+        ],
+        "correctAnswer": "C",
+        "explanation": "According to Theorem 10.1, the tangent at any point of a circle is perpendicular (90°) to the radius through the point of contact."
+    },
+    {
+        "id": "ch10-mcq-5",
+        "question": "From an external point P, how many tangents can be drawn to a circle?",
+        "options": [
+            "A):   0",
+            "B):   1",
+            "C):   2",
+            "D):   3"
+        ],
+        "correctAnswer": "C",
+        "explanation": "From any point lying strictly outside a circle, exactly two tangents can be drawn to the circle, and both tangents have equal length."
+    },
+    {
+        "id": "ch10-mcq-6",
+        "question": "From a point Q, the length of the tangent to a circle is 24 cm and the distance of Q from the centre is 25 cm. The radius of the circle is:",
+        "options": [
+            "A):   7 cm",
+            "B):   12 cm",
+            "C):   15 cm",
+            "D):   24.5 cm"
+        ],
+        "correctAnswer": "A",
+        "explanation": "In right triangle OPQ (hypotenuse OQ = 25 cm, tangent PQ = 24 cm), r = √(25² − 24²) = √(625 − 576) = √49 = 7 cm."
+    },
+    {
+        "id": "ch10-mcq-7",
+        "question": "If TP and TQ are two tangents to a circle with centre O such that ∠POQ = 110°, then ∠PTQ is equal to:",
+        "options": [
+            "A):   60°",
+            "B):   70°",
+            "C):   80°",
+            "D):   90°"
+        ],
+        "correctAnswer": "B",
+        "explanation": "In quadrilateral OPTQ, ∠P = ∠Q = 90°. Since opposite angles are supplementary, ∠PTQ = 180° − 110° = 70°."
+    },
+    {
+        "id": "ch10-mcq-8",
+        "question": "If tangents PA and PB from a point P to a circle with centre O are inclined to each other at an angle of 80°, then ∠POA is equal to:",
+        "options": [
+            "A):   50°",
+            "B):   60°",
+            "C):   70°",
+            "D):   80°"
+        ],
+        "correctAnswer": "A",
+        "explanation": "∠AOB = 180° − 80° = 100°. Since the line joining the external point to the centre bisects the angle at the centre, ∠POA = 100° / 2 = 50°."
+    },
+    {
+        "id": "ch10-mcq-9",
+        "question": "A tangent PQ at a point P of a circle of radius 5 cm meets a line through the centre O at a point Q so that OQ = 12 cm. The length of PQ is:",
+        "options": [
+            "A):   12 cm",
+            "B):   13 cm",
+            "C):   8.5 cm",
+            "D):   √119 cm"
+        ],
+        "correctAnswer": "D",
+        "explanation": "In right-angled triangle OPQ, PQ² = OQ² − OP² = 12² − 5² = 144 − 25 = 119. Hence, PQ = √119 cm."
+    },
+    {
+        "id": "ch10-mcq-10",
+        "question": "The length of a tangent from a point A at a distance of 5 cm from the centre of the circle is 4 cm. The diameter of the circle is:",
+        "options": [
+            "A):   3 cm",
+            "B):   8 cm",
+            "C):   10 cm",
+            "D):   6 cm"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Radius r = √(5² − 4²) = √(25 − 16) = √9 = 3 cm. Therefore, diameter = 2r = 2 × 3 = 6 cm."
+    },
+    {
+        "id": "ch10-mcq-11",
+        "question": "Two concentric circles have radii 5 cm and 3 cm. The length of the chord of the larger circle which touches the smaller circle is:",
+        "options": [
+            "A):   6 cm",
+            "B):   7 cm",
+            "C):   8 cm",
+            "D):   10 cm"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Half the chord length is √(5² − 3²) = √(25 − 9) = √16 = 4 cm. The perpendicular from the centre bisects the chord, so full chord length = 2 × 4 = 8 cm."
+    },
+    {
+        "id": "ch10-mcq-12",
+        "question": "A parallelogram circumscribing a circle is always a:",
+        "options": [
+            "A):   Square",
+            "B):   Rectangle",
+            "C):   Trapezium",
+            "D):   Rhombus"
+        ],
+        "correctAnswer": "D",
+        "explanation": "For any circumscribed quadrilateral, AB + CD = AD + BC. In a parallelogram, opposite sides are equal, leading to 2AB = 2AD ⇒ AB = AD. A parallelogram with equal adjacent sides is a rhombus."
+    },
+    {
+        "id": "ch10-mcq-13",
+        "question": "If two tangents inclined at an angle of 60° are drawn to a circle of radius 3 cm, then the length of each tangent is:",
+        "options": [
+            "A):   3√3 cm",
+            "B):   6 cm",
+            "C):   3 cm",
+            "D):   (3/2)√3 cm"
+        ],
+        "correctAnswer": "A",
+        "explanation": "OP bisects the angle between the tangents, so ∠APO = 30°. In right triangle OAP, tan 30° = OA / AP ⇒ 1/√3 = 3 / AP ⇒ AP = 3√3 cm."
+    },
+    {
+        "id": "ch10-mcq-14",
+        "question": "If a quadrilateral ABCD circumscribes a circle, then AB + CD is always equal to:",
+        "options": [
+            "A):   AD + BC",
+            "B):   AC + BD",
+            "C):   AB + BC",
+            "D):   AD + CD"
+        ],
+        "correctAnswer": "A",
+        "explanation": "By Theorem 10.2, the sum of lengths of opposite sides of any circumscribed quadrilateral is equal: AB + CD = AD + BC."
+    },
+    {
+        "id": "ch10-mcq-15",
+        "question": "In the figure, if PA and PB are tangents to the circle with centre O such that ∠APB = 50°, then ∠OAB is equal to:",
+        "options": [
+            "A):   25°",
+            "B):   40°",
+            "C):   50°",
+            "D):   65°"
+        ],
+        "correctAnswer": "A",
+        "explanation": "In isosceles ΔPAB (PA = PB), ∠PAB = (180° − 50°) / 2 = 130° / 2 = 65°. Since radius OA ⊥ PA (∠OAP = 90°), ∠OAB = 90° − 65° = 25° (Notice ∠OAB = (1/2) ∠APB = 25°)."
+    },
+    {
+        "id": "ch10-mcq-16",
+        "question": "Two concentric circles have radii 13 cm and 5 cm. The length of the chord of the outer circle which touches the inner circle is:",
+        "options": [
+            "A):   12 cm",
+            "B):   18 cm",
+            "C):   24 cm",
+            "D):   26 cm"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Half the chord = √(13² − 5²) = √(169 − 25) = √144 = 12 cm. Full chord length = 2 × 12 = 24 cm."
+    },
+    {
+        "id": "ch10-mcq-17",
+        "question": "If the angle between two radii of a circle is 130°, then the angle between the tangents at the ends of these radii is:",
+        "options": [
+            "A):   40°",
+            "B):   65°",
+            "C):   90°",
+            "D):   50°"
+        ],
+        "correctAnswer": "D",
+        "explanation": "The angle between two tangents and the angle between their radii are supplementary: Angle = 180° − 130° = 50°."
+    },
+    {
+        "id": "ch10-mcq-18",
+        "question": "A quadrilateral ABCD circumscribes a circle. If AB = 6 cm, BC = 7 cm, and CD = 4 cm, then AD is equal to:",
+        "options": [
+            "A):   3 cm",
+            "B):   4 cm",
+            "C):   5 cm",
+            "D):   6 cm"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Using AB + CD = AD + BC ⇒ 6 + 4 = AD + 7 ⇒ 10 = AD + 7 ⇒ AD = 10 − 7 = 3 cm."
+    },
+    {
+        "id": "ch10-mcq-19",
+        "question": "At the ends of a diameter AB of a circle, two tangents are drawn. The relation between these two tangents is:",
+        "options": [
+            "A):   They intersect at 90°",
+            "B):   They are parallel to each other",
+            "C):   They are perpendicular to each other",
+            "D):   They intersect at the centre"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Tangents drawn at the endpoints of a diameter are parallel because the alternate interior angles formed with the diameter are both right angles (90°)."
+    },
+    {
+        "id": "ch10-mcq-20",
+        "question": "In two concentric circles, a chord of the larger circle of length 16 cm touches the smaller circle of radius 6 cm. The radius of the larger circle is:",
+        "options": [
+            "A):   8 cm",
+            "B):   12 cm",
+            "C):   14 cm",
+            "D):   10 cm"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Half the chord = 16 / 2 = 8 cm. In the right triangle formed with radius r = 6 cm, R = √(8² + 6²) = √(64 + 36) = √100 = 10 cm."
+    },
+    {
+        "id": "ch10-mcq-21",
+        "question": "If tangents PA and PB from external point P to a circle with centre O make an angle of 90° with each other, then quadrilateral OAPB is a:",
+        "options": [
+            "A):   Trapezium",
+            "B):   Rectangle only",
+            "C):   Square",
+            "D):   Rhombus only"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Since ∠P = 90° and ∠A = ∠B = 90°, ∠O must also be 90°. All four angles are 90°, and adjacent sides OA = OB = radius. A rectangle with equal adjacent sides is a square."
+    },
+    {
+        "id": "ch10-mcq-22",
+        "question": "Opposite sides of a quadrilateral circumscribing a circle subtend angles at the centre which are:",
+        "options": [
+            "A):   Complementary",
+            "B):   Supplementary",
+            "C):   Equal",
+            "D):   Right angles"
+        ],
+        "correctAnswer": "B",
+        "explanation": "As proved in Exercise 10.2 Q13, opposite sides of a circumscribing quadrilateral always subtend supplementary angles (sum = 180°) at the centre of the circle."
+    },
+    {
+        "id": "ch10-mcq-23",
+        "question": "A circle touches all the four sides of a quadrilateral ABCD whose sides are AB = x, BC = 9, CD = 8, and DA = 6. The value of x is:",
+        "options": [
+            "A):   5",
+            "B):   8",
+            "C):   11",
+            "D):   7"
+        ],
+        "correctAnswer": "D",
+        "explanation": "AB + CD = AD + BC ⇒ x + 8 = 6 + 9 ⇒ x + 8 = 15 ⇒ x = 15 − 8 = 7."
+    },
+    {
+        "id": "ch10-mcq-24",
+        "question": "If a chord PQ of length 8 cm is drawn in a circle of radius 5 cm, and tangents at P and Q meet at T, then the length of TP is:",
+        "options": [
+            "A):   6 cm",
+            "B):   20/3 cm",
+            "C):   15/4 cm",
+            "D):   25/3 cm"
+        ],
+        "correctAnswer": "B",
+        "explanation": "As solved in Example 3, OR = √(5² − 4²) = 3 cm. By similar triangles ΔTPR ~ ΔPOR, TP / 5 = 4 / 3 ⇒ TP = 20/3 cm = 6.67 cm."
+    },
+    {
+        "id": "ch10-mcq-25",
+        "question": "The distance between two parallel tangents of a circle of radius 4.5 cm is:",
+        "options": [
+            "A):   4.5 cm",
+            "B):   7 cm",
+            "C):   9 cm",
+            "D):   12 cm"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Two parallel tangents can only be drawn at the endpoints of a diameter. Hence, the distance between them is the diameter = 2 × 4.5 = 9 cm."
+    }
+],
+  isHtmlView: true,
+  htmlOverview: "\n\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; }\n  .frac .den { padding: 1px 4px; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 214, 0, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FFD600; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 14px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(255, 214, 0, 0.25); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FFD600; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFE082; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(255, 214, 0, 0.15); border: 1px solid #FFD600; color: #FFE082; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 6px 0; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 214, 0, 0.4); border-radius: 10px; padding: 14px; margin: 16px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #FFFFFF; border-radius: 8px; padding: 10px 8px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.25); }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 10px; font-weight: 500; }\n  .table-card { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 14px 0; border-radius: 8px; }\n  .table-card table { width: 100%; border-collapse: collapse; text-align: center; }\n  .table-card th { background: rgba(255, 214, 0, 0.2); color: #FFE082; border: 1px solid rgba(255, 214, 0, 0.35); padding: 10px; font-weight: 700; }\n  .table-card td { border: 1px solid rgba(255, 214, 0, 0.2); padding: 9px; color: #E2E8F0; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Hero Header -->\n  <div style=\"background: linear-gradient(135deg, rgba(255, 214, 0, 0.22), rgba(255, 145, 0, 0.15)); border: 1.5px solid #FFD600; border-radius: 14px; padding: 18px; margin-bottom: 20px; text-align: center;\">\n    <div style=\"font-size: 22px; font-weight: 800; color: #FFD600; margin-bottom: 6px;\">\n      ⭕ Chapter 10: Circles\n    </div>\n    <div style=\"color: #CBD5E1; font-size: 14.5px; line-height: 1.5;\">\n      Class 10 NCERT Mathematics &bull; Tangents, Secants, Perpendicularity Theorems &amp; Master Formula Cheat Sheet\n    </div>\n  </div>\n\n  <!-- 1. Secant vs Tangent -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 1. Non-Intersecting Line, Secant &amp; Tangent to a Circle</div>\n    <div class=\"q-text\">\n      Consider a circle with centre O and a straight line AB in a plane. There are exactly <b>three mutually exclusive possibilities</b> for their relative positions:\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-step\">\n        <div>&bull; <b style=\"color: #FFE082;\">(a) Non-Intersecting Line:</b> The line AB has <b>no common point</b> with the circle. The perpendicular distance from centre O to AB is strictly greater than the radius (<i>d &gt; r</i>).</div>\n        <div>&bull; <b style=\"color: #FFE082;\">(b) Secant:</b> The line AB intersects the circle at <b>two distinct points</b> (say, P and Q). AB is called a <b>secant</b> of the circle. The distance <i>d &lt; r</i>.</div>\n        <div>&bull; <b style=\"color: #FFE082;\">(c) Tangent:</b> The line AB touches the circle at <b>exactly one single point</b> P. AB is called a <b>tangent</b> to the circle, and point P is the <b>point of contact</b>. The distance <i>d = r</i>.</div>\n        <div style=\"margin-top: 8px;\">&bull; <b style=\"color: #4CAF50;\">Fundamental Insight:</b> A tangent is simply a <b>limiting case of a secant</b> when the two endpoints of its corresponding chord coincide!</div>\n      </div>\n    </div>\n\n    <!-- Diagram: Non-intersecting, Secant, Tangent -->\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 540 180\" width=\"540\" height=\"180\">\n          <!-- Case 1: Non-intersecting -->\n          <circle cx=\"90\" cy=\"90\" r=\"50\" fill=\"#FFFDF0\" stroke=\"#FFD600\" stroke-width=\"2.5\"/>\n          <circle cx=\"90\" cy=\"90\" r=\"3.5\" fill=\"#334155\"/>\n          <text x=\"90\" y=\"82\" font-size=\"12\" font-weight=\"bold\" fill=\"#334155\" text-anchor=\"middle\">O</text>\n          <line x1=\"20\" y1=\"160\" x2=\"160\" y2=\"160\" stroke=\"#64748B\" stroke-width=\"2.5\"/>\n          <text x=\"90\" y=\"174\" font-size=\"12\" font-weight=\"bold\" fill=\"#64748B\" text-anchor=\"middle\">Non-Intersecting</text>\n\n          <!-- Case 2: Secant -->\n          <circle cx=\"270\" cy=\"90\" r=\"50\" fill=\"#FFFDF0\" stroke=\"#FFD600\" stroke-width=\"2.5\"/>\n          <circle cx=\"270\" cy=\"90\" r=\"3.5\" fill=\"#334155\"/>\n          <text x=\"270\" y=\"82\" font-size=\"12\" font-weight=\"bold\" fill=\"#334155\" text-anchor=\"middle\">O</text>\n          <line x1=\"200\" y1=\"120\" x2=\"340\" y2=\"60\" stroke=\"#0284C7\" stroke-width=\"2.5\"/>\n          <circle cx=\"230\" cy=\"107\" r=\"3.5\" fill=\"#0284C7\"/>\n          <circle cx=\"310\" cy=\"73\" r=\"3.5\" fill=\"#0284C7\"/>\n          <text x=\"222\" y=\"125\" font-size=\"11\" font-weight=\"bold\" fill=\"#0284C7\">A</text>\n          <text x=\"316\" y=\"70\" font-size=\"11\" font-weight=\"bold\" fill=\"#0284C7\">B</text>\n          <text x=\"270\" y=\"174\" font-size=\"12\" font-weight=\"bold\" fill=\"#0284C7\" text-anchor=\"middle\">Secant (2 Points)</text>\n\n          <!-- Case 3: Tangent -->\n          <circle cx=\"450\" cy=\"90\" r=\"50\" fill=\"#FFFDF0\" stroke=\"#FFD600\" stroke-width=\"2.5\"/>\n          <circle cx=\"450\" cy=\"90\" r=\"3.5\" fill=\"#334155\"/>\n          <text x=\"450\" y=\"82\" font-size=\"12\" font-weight=\"bold\" fill=\"#334155\" text-anchor=\"middle\">O</text>\n          <line x1=\"380\" y1=\"140\" x2=\"520\" y2=\"140\" stroke=\"#16A34A\" stroke-width=\"2.5\"/>\n          <circle cx=\"450\" cy=\"140\" r=\"4\" fill=\"#16A34A\"/>\n          <line x1=\"450\" y1=\"90\" x2=\"450\" y2=\"140\" stroke=\"#DC2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\"/>\n          <text x=\"450\" y=\"156\" font-size=\"12\" font-weight=\"bold\" fill=\"#16A34A\" text-anchor=\"middle\">P (Point of Contact)</text>\n          <text x=\"450\" y=\"174\" font-size=\"12\" font-weight=\"bold\" fill=\"#16A34A\" text-anchor=\"middle\">Tangent (1 Point)</text>\n        </svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Three Relational Positions of a Line with Respect to a Circle</div>\n    </div>\n  </div>\n\n  <!-- 2. Theorem 10.1: Tangent-Radius Perpendicularity -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 2. Theorem 10.1: Tangent-Radius Perpendicularity Principle</div>\n    <div class=\"q-text\">\n      <b>Theorem Statement:</b> The tangent at any point of a circle is <b>perpendicular</b> to the radius through the point of contact.\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-step\">\n        <div>&bull; If line <i>XY</i> is tangent to a circle with centre <i>O</i> at point <i>P</i>, then:</div>\n        <div style=\"text-align: center; margin: 8px 0;\">\n          <span class=\"prop-chip\" style=\"font-size: 16px; padding: 6px 16px;\">\n            <b><i>OP</i> &perp; <i>XY</i> &nbsp;&rArr;&nbsp; &ang;<i>OPT</i> = 90&deg;</b>\n          </span>\n        </div>\n        <div>&bull; <b>Mathematical Intuition (Shortest Distance):</b> For any point <i>Q</i> on line <i>XY</i> other than <i>P</i>, <i>Q</i> must lie strictly outside the circle (if it were inside, the line would be a secant). Thus, <b><i>OQ &gt; OP</i></b>.</div>\n        <div>&bull; Since this holds for every point on <i>XY</i> other than <i>P</i>, <b><i>OP</i> is the shortest distance</b> from centre <i>O</i> to line <i>XY</i>.</div>\n        <div>&bull; Since the shortest distance from a point to a straight line is always the perpendicular distance, <b><i>OP</i> &perp; <i>XY</i></b>!</div>\n      </div>\n    </div>\n  </div>\n\n  <!-- 3. Tangents from an External Point -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 3. Tangents from Points &amp; Theorem 10.2 (Equal Tangent Lengths)</div>\n    <div class=\"q-text\">\n      How many tangents can be drawn to a circle from a given point <i>P</i>?\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-step\">\n        <div>&bull; <b>Case 1 (Inside the circle):</b> <b>0 tangents</b> can be drawn (every line through P intersects circle at two points).</div>\n        <div>&bull; <b>Case 2 (On the circle):</b> Exactly <b>1 tangent</b> can be drawn.</div>\n        <div>&bull; <b>Case 3 (Outside the circle):</b> Exactly <b>2 tangents</b> can be drawn.</div>\n      </div>\n    </div>\n\n    <div style=\"margin-top: 14px;\">\n      <div class=\"q-text\">\n        <b>Theorem 10.2:</b> The lengths of tangents drawn from an external point to a circle are <b>equal</b>.\n      </div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Let <i>P</i> be an external point, and <i>PQ</i>, <i>PR</i> be tangents to circle with centre <i>O</i>. Then:</div>\n          <div style=\"text-align: center; margin: 10px 0;\">\n            <span class=\"prop-chip\" style=\"font-size: 16px; padding: 8px 18px;\">\n              <b><i>PQ</i> = <i>PR</i></b>\n            </span>\n          </div>\n          <div>&bull; <b style=\"color: #FFE082;\">Corollary 1 (Angle at Centre):</b> The two tangents subtend equal angles at the centre: <b>&ang;POQ = &ang;POR</b>.</div>\n          <div>&bull; <b style=\"color: #FFE082;\">Corollary 2 (Equally Inclined):</b> The tangents are equally inclined to the segment joining the point to the centre: <b>&ang;OPQ = &ang;OPR</b>.</div>\n          <div>&bull; <b style=\"color: #FFE082;\">Corollary 3 (Supplementary Angles):</b> The angle between the two tangents and the angle subtended by the radii at the centre are supplementary:</div>\n          <div style=\"text-align: center; margin: 6px 0;\">\n            <span class=\"prop-chip\" style=\"border-color: #4CAF50; color: #A5D6A7; font-size: 15px;\">\n              <b>&ang;QPR + &ang;QOR = 180&deg;</b>\n            </span>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <!-- 4. Circumscribed Polygons Matrix -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 4. Circumscribed Polygons &amp; High-Yield Board Exam Identities</div>\n    <div class=\"q-text\">\n      Key geometric theorems regarding polygons circumscribing a circle:\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"table-card\">\n        <table>\n          <thead>\n            <tr>\n              <th>Geometric Configuration</th>\n              <th>Fundamental Board Identity</th>\n              <th>Proof Foundation</th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr>\n              <td><b>Circumscribed Quadrilateral</b></td>\n              <td><b><i>AB</i> + <i>CD</i> = <i>AD</i> + <i>BC</i></b><br/>(Sum of opposite sides is equal)</td>\n              <td>Lengths of tangents from each of the 4 vertices (A, B, C, D) are equal in pairs.</td>\n            </tr>\n            <tr>\n              <td><b>Circumscribed Parallelogram</b></td>\n              <td><b>Parallelogram is a RHOMBUS</b><br/>(<i>AB</i> = <i>BC</i> = <i>CD</i> = <i>DA</i>)</td>\n              <td>Opposite sides equal (AB = CD, BC = AD) combined with AB + CD = AD + BC yields 2AB = 2AD &rArr; AB = AD.</td>\n            </tr>\n            <tr>\n              <td><b>Subtended Angles at Centre</b></td>\n              <td><b>Opposite sides subtend supplementary angles at centre</b><br/>&ang;AOB + &ang;COD = 180&deg;</td>\n              <td>Radii to points of contact form 8 congruent triangle pairs surrounding centre O.</td>\n            </tr>\n            <tr>\n              <td><b>Tangents at Diameter Ends</b></td>\n              <td><b>Tangents are PARALLEL</b></td>\n              <td>Both radii are collinear (180&deg;) and each makes 90&deg; with its tangent &rArr; Co-interior angles sum to 180&deg;.</td>\n            </tr>\n            <tr>\n              <td><b>Concentric Circles Chord</b></td>\n              <td><b>Chord is BISECTED at point of contact</b><br/>(<i>AP</i> = <i>PB</i>)</td>\n              <td>Radius to point of contact is perpendicular to the tangent (chord) &rArr; &perp; from centre bisects chord!</td>\n            </tr>\n          </tbody>\n        </table>\n      </div>\n    </div>\n  </div>\n\n  <!-- 5. Master Revision Formula Cheat Sheet -->\n  <div class=\"q-card\" style=\"border-color: #FFD600;\">\n    <div class=\"q-title\">✦ 5. Master Revision Formula Cheat Sheet</div>\n    <div class=\"sol-box\">\n      <div class=\"table-card\">\n        <table>\n          <thead>\n            <tr>\n              <th>Concept / Quantity</th>\n              <th>Formula / Condition</th>\n              <th>Key Note / Diagram Clue</th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr>\n              <td><b>Tangent-Radius Perpendicular</b></td>\n              <td><b><i>OP</i> &perp; Tangent</b> (&ang;OPT = 90&deg;)</td>\n              <td>Always form right-angled &Delta;OPT with hypotenuse <i>OT</i>.</td>\n            </tr>\n            <tr>\n              <td><b>Pythagoras in &Delta;OPT</b></td>\n              <td><b><i>OT</i><sup>2</sup> = <i>OP</i><sup>2</sup> + <i>PT</i><sup>2</sup></b><br/><i>PT</i> = &radic;<span style=\"border-top: 1px solid currentColor;\"><i>OT</i><sup>2</sup> &minus; <i>r</i><sup>2</sup></span></td>\n              <td><i>OT</i> = Distance from centre, <i>r</i> = Radius, <i>PT</i> = Tangent length.</td>\n            </tr>\n            <tr>\n              <td><b>Equal Tangent Lengths</b></td>\n              <td><b><i>PQ</i> = <i>PR</i></b></td>\n              <td>Tangents from common external point P.</td>\n            </tr>\n            <tr>\n              <td><b>Supplementary Angles</b></td>\n              <td><b>&ang;<i>PTQ</i> + &ang;<i>POQ</i> = 180&deg;</b></td>\n              <td>In quadrilateral OPTQ, &ang;P = &ang;Q = 90&deg;.</td>\n            </tr>\n            <tr>\n              <td><b>Angle Relation</b></td>\n              <td><b>&ang;<i>PTQ</i> = 2 &ang;<i>OPQ</i></b></td>\n              <td>Triangle TPQ is isosceles (TP = TQ).</td>\n            </tr>\n            <tr>\n              <td><b>Concentric Circles Chord</b></td>\n              <td><b>Chord length = 2 &radic;<span style=\"border-top: 1px solid currentColor;\"><i>R</i><sup>2</sup> &minus; <i>r</i><sup>2</sup></span></b></td>\n              <td><i>R</i> = Outer radius, <i>r</i> = Inner radius.</td>\n            </tr>\n            <tr>\n              <td><b>Circumscribed Quadrilateral</b></td>\n              <td><b><i>AB</i> + <i>CD</i> = <i>BC</i> + <i>DA</i></b></td>\n              <td>Opposite side sums are equal.</td>\n            </tr>\n            <tr>\n              <td><b>Triangle Circumscribing Circle</b></td>\n              <td><b>Area = <i>r</i> &times; <i>s</i></b><br/>(<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> <i>r</i> (<i>a</i> + <i>b</i> + <i>c</i>))</td>\n              <td>Equate with Heron's formula &Delta; = &radic;<span style=\"border-top: 1px solid currentColor;\"><i>s(s-a)(s-b)(s-c)</i></span> to find unknown sides!</td>\n            </tr>\n          </tbody>\n        </table>\n      </div>\n    </div>\n  </div>\n\n</div>\n",
+  htmlExercises: {
+    theorems: "\n\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; }\n  .frac .den { padding: 1px 4px; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 214, 0, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FFD600; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 14px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(255, 214, 0, 0.25); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FFD600; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFE082; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(255, 214, 0, 0.15); border: 1px solid #FFD600; color: #FFE082; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 6px 0; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 214, 0, 0.4); border-radius: 10px; padding: 14px; margin: 16px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #FFFFFF; border-radius: 8px; padding: 10px 8px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.25); }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 10px; font-weight: 500; }\n  .table-card { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 14px 0; border-radius: 8px; }\n  .table-card table { width: 100%; border-collapse: collapse; text-align: center; }\n  .table-card th { background: rgba(255, 214, 0, 0.2); color: #FFE082; border: 1px solid rgba(255, 214, 0, 0.35); padding: 10px; font-weight: 700; }\n  .table-card td { border: 1px solid rgba(255, 214, 0, 0.2); padding: 9px; color: #E2E8F0; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Header Card -->\n  <div style=\"background: linear-gradient(135deg, rgba(255, 214, 0, 0.2), rgba(255, 145, 0, 0.1)); border: 1.5px solid #FFD600; border-radius: 12px; padding: 14px 18px; margin-bottom: 20px;\">\n    <div style=\"font-size: 19px; font-weight: 800; color: #FFD600; margin-bottom: 4px;\">\n      Circles &bull; Core Theorems\n    </div>\n    <div style=\"color: #FFFFFF; font-size: 15px; font-weight: 500;\">\n      Official NCERT Board Derivations (Theorem 10.1 &amp; Theorem 10.2)\n    </div>\n  </div>\n\n  <!-- THEOREM 10.1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Theorem 10.1 (Tangent-Radius Perpendicularity)</div>\n    <div class=\"q-text\">\n      <b>Statement:</b> The tangent at any point of a circle is perpendicular to the radius through the point of contact.\n    </div>\n\n    <!-- Diagram -->\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 220\" width=\"380\" height=\"220\">\n          <!-- Circle -->\n          <circle cx=\"190\" cy=\"80\" r=\"55\" fill=\"#FFFDF0\" stroke=\"#FFD600\" stroke-width=\"2.5\"/>\n          <circle cx=\"190\" cy=\"80\" r=\"4\" fill=\"#334155\"/>\n          <text x=\"190\" y=\"70\" font-size=\"13\" font-weight=\"bold\" fill=\"#334155\" text-anchor=\"middle\">O</text>\n\n          <!-- Tangent Line XY -->\n          <line x1=\"50\" y1=\"135\" x2=\"330\" y2=\"135\" stroke=\"#16A34A\" stroke-width=\"2.5\"/>\n          <text x=\"40\" y=\"140\" font-size=\"13\" font-weight=\"bold\" fill=\"#16A34A\">X</text>\n          <text x=\"340\" y=\"140\" font-size=\"13\" font-weight=\"bold\" fill=\"#16A34A\">Y</text>\n\n          <!-- Radius OP -->\n          <line x1=\"190\" y1=\"80\" x2=\"190\" y2=\"135\" stroke=\"#DC2626\" stroke-width=\"2.5\"/>\n          <circle cx=\"190\" cy=\"135\" r=\"4\" fill=\"#DC2626\"/>\n          <text x=\"180\" y=\"152\" font-size=\"13\" font-weight=\"bold\" fill=\"#DC2626\">P</text>\n\n          <!-- Right angle mark at P -->\n          <path d=\"M190,123 L202,123 L202,135\" fill=\"none\" stroke=\"#DC2626\" stroke-width=\"1.5\"/>\n\n          <!-- Secant Point Q -->\n          <line x1=\"190\" y1=\"80\" x2=\"270\" y2=\"135\" stroke=\"#64748B\" stroke-width=\"1.8\" stroke-dasharray=\"3,3\"/>\n          <circle cx=\"270\" cy=\"135\" r=\"4\" fill=\"#64748B\"/>\n          <text x=\"270\" y=\"152\" font-size=\"13\" font-weight=\"bold\" fill=\"#64748B\">Q</text>\n          <!-- Intersection R with circle -->\n          <circle cx=\"243\" cy=\"116\" r=\"3\" fill=\"#E2E8F0\" stroke=\"#334155\"/>\n          <text x=\"250\" y=\"112\" font-size=\"11\" font-weight=\"bold\" fill=\"#64748B\">R</text>\n        </svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: OP is the perpendicular and shortest distance from centre O to tangent XY</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Complete Proof:</div>\n      <div class=\"sol-step\">\n        <div><b style=\"color: #FFE082;\">Given:</b> A circle with centre <i>O</i> and a tangent <i>XY</i> to the circle at a point <i>P</i>.</div>\n        <div><b style=\"color: #FFE082;\">To Prove:</b> <i>OP</i> &perp; <i>XY</i>.</div>\n        <div><b style=\"color: #FFE082;\">Construction:</b> Take a point <i>Q</i> on <i>XY</i> other than <i>P</i> and join <i>OQ</i>. Let <i>OQ</i> intersect the circle at point <i>R</i>.</div>\n        <div style=\"margin-top: 8px;\"><b style=\"color: #FFE082;\">Proof:</b></div>\n        <div style=\"padding-left: 12px;\">1. The point <i>Q</i> must lie outside the circle. (If <i>Q</i> lies inside the circle, then <i>XY</i> would become a secant and not a tangent to the circle).</div>\n        <div style=\"padding-left: 12px;\">2. Therefore, <i>OQ</i> is longer than the radius <i>OP</i> of the circle.</div>\n        <div style=\"padding-left: 12px;\">&nbsp;&nbsp;&nbsp;&rArr; <b><i>OQ &gt; OP</i></b> &nbsp; <span class=\"reason\">[Since OQ = OR + RQ and OR = OP = radius]</span></div>\n        <div style=\"padding-left: 12px;\">3. Since this happens for <b>every point</b> on the line <i>XY</i> except the point <i>P</i>, <b><i>OP</i> is the shortest</b> of all the distances of the point <i>O</i> to the points of <i>XY</i>.</div>\n        <div style=\"padding-left: 12px;\">4. We know that the shortest distance between a given point and a line is the perpendicular distance.</div>\n        <div style=\"padding-left: 12px; margin-top: 6px;\">&rArr; <b><i>OP</i> &perp; <i>XY</i></b>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Result: </span>\n        <span class=\"ans-val\">Hence Proved (Radius is perpendicular to the tangent at the point of contact).</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- THEOREM 10.2 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Theorem 10.2 (Lengths of Tangents from External Point)</div>\n    <div class=\"q-text\">\n      <b>Statement:</b> The lengths of tangents drawn from an external point to a circle are equal.\n    </div>\n\n    <!-- Diagram -->\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 220\" width=\"400\" height=\"220\">\n          <!-- Circle -->\n          <circle cx=\"260\" cy=\"110\" r=\"60\" fill=\"#FFFDF0\" stroke=\"#FFD600\" stroke-width=\"2.5\"/>\n          <circle cx=\"260\" cy=\"110\" r=\"4\" fill=\"#334155\"/>\n          <text x=\"275\" y=\"115\" font-size=\"13\" font-weight=\"bold\" fill=\"#334155\">O</text>\n\n          <!-- External Point P -->\n          <circle cx=\"60\" cy=\"110\" r=\"4.5\" fill=\"#DC2626\"/>\n          <text x=\"45\" y=\"115\" font-size=\"14\" font-weight=\"bold\" fill=\"#DC2626\">P</text>\n\n          <!-- Tangent Points Q and R -->\n          <circle cx=\"225\" cy=\"58\" r=\"4\" fill=\"#16A34A\"/>\n          <text x=\"225\" y=\"48\" font-size=\"13\" font-weight=\"bold\" fill=\"#16A34A\" text-anchor=\"middle\">Q</text>\n          <circle cx=\"225\" cy=\"162\" r=\"4\" fill=\"#16A34A\"/>\n          <text x=\"225\" y=\"180\" font-size=\"13\" font-weight=\"bold\" fill=\"#16A34A\" text-anchor=\"middle\">R</text>\n\n          <!-- Tangent lines PQ and PR -->\n          <line x1=\"60\" y1=\"110\" x2=\"225\" y2=\"58\" stroke=\"#16A34A\" stroke-width=\"2.5\"/>\n          <line x1=\"60\" y1=\"110\" x2=\"225\" y2=\"162\" stroke=\"#16A34A\" stroke-width=\"2.5\"/>\n\n          <!-- Radii OQ and OR -->\n          <line x1=\"260\" y1=\"110\" x2=\"225\" y2=\"58\" stroke=\"#DC2626\" stroke-width=\"2\"/>\n          <line x1=\"260\" y1=\"110\" x2=\"225\" y2=\"162\" stroke=\"#DC2626\" stroke-width=\"2\"/>\n\n          <!-- Center Line OP -->\n          <line x1=\"60\" y1=\"110\" x2=\"260\" y2=\"110\" stroke=\"#0284C7\" stroke-width=\"2\" stroke-dasharray=\"4,4\"/>\n\n          <!-- Right angle marks -->\n          <path d=\"M229,68 L220,71 L216,61\" fill=\"none\" stroke=\"#DC2626\" stroke-width=\"1.5\"/>\n          <path d=\"M229,152 L220,149 L216,159\" fill=\"none\" stroke=\"#DC2626\" stroke-width=\"1.5\"/>\n        </svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Tangents PQ and PR drawn from external point P to circle with centre O</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Complete Proof:</div>\n      <div class=\"sol-step\">\n        <div><b style=\"color: #FFE082;\">Given:</b> A circle with centre <i>O</i>, a point <i>P</i> lying outside the circle, and two tangents <i>PQ</i> and <i>PR</i> on the circle from <i>P</i> (where <i>Q</i> and <i>R</i> are points of contact).</div>\n        <div><b style=\"color: #FFE082;\">To Prove:</b> <b><i>PQ</i> = <i>PR</i></b>.</div>\n        <div><b style=\"color: #FFE082;\">Construction:</b> Join <i>OP</i>, <i>OQ</i>, and <i>OR</i>.</div>\n        <div style=\"margin-top: 8px;\"><b style=\"color: #FFE082;\">Proof:</b></div>\n        <div style=\"padding-left: 12px;\">By Theorem 10.1, radius is perpendicular to the tangent at the point of contact:</div>\n        <div style=\"padding-left: 12px;\">&rArr; &ang;<i>OQP</i> = 90&deg; &nbsp;and&nbsp; &ang;<i>ORP</i> = 90&deg;.</div>\n        <div style=\"padding-left: 12px; margin-top: 6px;\">Now, in right-angled triangles <b>&Delta;OQP</b> and <b>&Delta;ORP</b>:</div>\n        <div style=\"padding-left: 18px;\">&bull; <b><i>OQ</i> = <i>OR</i></b> <span class=\"reason\">[Radii of the same circle]</span></div>\n        <div style=\"padding-left: 18px;\">&bull; <b><i>OP</i> = <i>OP</i></b> <span class=\"reason\">[Common hypotenuse]</span></div>\n        <div style=\"padding-left: 18px;\">&bull; <b>&ang;<i>OQP</i> = &ang;<i>ORP</i> = 90&deg;</b> <span class=\"reason\">[Each is a right angle]</span></div>\n        <div style=\"padding-left: 12px; margin-top: 6px;\">Therefore, by <b>RHS Congruence Criterion</b>:</div>\n        <div style=\"padding-left: 12px;\">&rArr; <b>&Delta;OQP &cong; &Delta;ORP</b></div>\n        <div style=\"padding-left: 12px; margin-top: 6px;\">By Corresponding Parts of Congruent Triangles (CPCT):</div>\n        <div style=\"padding-left: 12px;\">&rArr; <b><i>PQ</i> = <i>PR</i></b>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Result: </span>\n        <span class=\"ans-val\">Hence Proved (PQ = PR).</span>\n      </div>\n    </div>\n  </div>\n\n</div>\n",
+    examples: "\n\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; }\n  .frac .den { padding: 1px 4px; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 214, 0, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FFD600; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 14px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(255, 214, 0, 0.25); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FFD600; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFE082; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(255, 214, 0, 0.15); border: 1px solid #FFD600; color: #FFE082; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 6px 0; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 214, 0, 0.4); border-radius: 10px; padding: 14px; margin: 16px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #FFFFFF; border-radius: 8px; padding: 10px 8px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.25); }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 10px; font-weight: 500; }\n  .table-card { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 14px 0; border-radius: 8px; }\n  .table-card table { width: 100%; border-collapse: collapse; text-align: center; }\n  .table-card th { background: rgba(255, 214, 0, 0.2); color: #FFE082; border: 1px solid rgba(255, 214, 0, 0.35); padding: 10px; font-weight: 700; }\n  .table-card td { border: 1px solid rgba(255, 214, 0, 0.2); padding: 9px; color: #E2E8F0; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Header Card -->\n  <div style=\"background: linear-gradient(135deg, rgba(255, 214, 0, 0.2), rgba(255, 145, 0, 0.1)); border: 1.5px solid #FFD600; border-radius: 12px; padding: 14px 18px; margin-bottom: 20px;\">\n    <div style=\"font-size: 19px; font-weight: 800; color: #FFD600; margin-bottom: 4px;\">\n      Circles &bull; Solved Examples\n    </div>\n    <div style=\"color: #FFFFFF; font-size: 15px; font-weight: 500;\">\n      Step-by-Step Textbook Solved Examples (Example 1 to Example 3)\n    </div>\n  </div>\n\n  <!-- EXAMPLE 1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 1:</div>\n    <div class=\"q-text\">\n      Prove that in two concentric circles, the chord of the larger circle, which touches the smaller circle, is bisected at the point of contact.\n    </div>\n\n    <!-- Diagram -->\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 220\" width=\"360\" height=\"220\">\n          <!-- Concentric Circles -->\n          <circle cx=\"180\" cy=\"110\" r=\"85\" fill=\"#FFFDF0\" stroke=\"#FFD600\" stroke-width=\"2.5\"/>\n          <circle cx=\"180\" cy=\"110\" r=\"48\" fill=\"#FFFFFF\" stroke=\"#0284C7\" stroke-width=\"2\"/>\n          <circle cx=\"180\" cy=\"110\" r=\"3.5\" fill=\"#334155\"/>\n          <text x=\"180\" y=\"100\" font-size=\"13\" font-weight=\"bold\" fill=\"#334155\" text-anchor=\"middle\">O</text>\n\n          <!-- Chord AB touching smaller circle at P -->\n          <line x1=\"110\" y1=\"144\" x2=\"250\" y2=\"144\" stroke=\"#16A34A\" stroke-width=\"2.5\"/>\n          <circle cx=\"110\" cy=\"144\" r=\"3.5\" fill=\"#16A34A\"/>\n          <circle cx=\"250\" cy=\"144\" r=\"3.5\" fill=\"#16A34A\"/>\n          <circle cx=\"180\" cy=\"144\" r=\"4\" fill=\"#DC2626\"/>\n          <text x=\"95\" y=\"148\" font-size=\"13\" font-weight=\"bold\" fill=\"#16A34A\">A</text>\n          <text x=\"260\" y=\"148\" font-size=\"13\" font-weight=\"bold\" fill=\"#16A34A\">B</text>\n          <text x=\"180\" y=\"162\" font-size=\"13\" font-weight=\"bold\" fill=\"#DC2626\" text-anchor=\"middle\">P</text>\n\n          <!-- Radius OP to point of contact -->\n          <line x1=\"180\" y1=\"110\" x2=\"180\" y2=\"144\" stroke=\"#DC2626\" stroke-width=\"2\"/>\n          <path d=\"M180,134 L190,134 L190,144\" fill=\"none\" stroke=\"#DC2626\" stroke-width=\"1.5\"/>\n\n          <!-- Radii OA and OB -->\n          <line x1=\"180\" y1=\"110\" x2=\"110\" y2=\"144\" stroke=\"#64748B\" stroke-dasharray=\"3,3\" stroke-width=\"1.5\"/>\n          <line x1=\"180\" y1=\"110\" x2=\"250\" y2=\"144\" stroke=\"#64748B\" stroke-dasharray=\"3,3\" stroke-width=\"1.5\"/>\n        </svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Chord AB of larger circle C₁ touches smaller circle C₂ at P</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Easy Direct Solution:</div>\n      <div class=\"sol-step\">\n        <div>Let <i>C</i><sub>1</sub> and <i>C</i><sub>2</sub> be two concentric circles with common centre <i>O</i>.</div>\n        <div>Let <i>AB</i> be a chord of the larger circle <i>C</i><sub>1</sub> touching the smaller circle <i>C</i><sub>2</sub> at the point <i>P</i>.</div>\n        <div>Join <i>OP</i>, <i>OA</i>, and <i>OB</i>.</div>\n        <div style=\"margin-top: 6px;\">Since <i>AB</i> is a tangent to the smaller circle <i>C</i><sub>2</sub> at point <i>P</i> and <i>OP</i> is its radius:</div>\n        <div style=\"padding-left: 12px;\">&rArr; <b><i>OP</i> &perp; <i>AB</i></b> <span class=\"reason\">[By Theorem 10.1: Tangent is perpendicular to radius at point of contact]</span></div>\n        <div style=\"margin-top: 6px;\">Now, consider <i>AB</i> as a chord of the larger circle <i>C</i><sub>1</sub>:</div>\n        <div>We know that the perpendicular drawn from the centre of a circle to a chord <b>bisects the chord</b>.</div>\n        <div style=\"padding-left: 12px;\">Since <i>OP</i> &perp; <i>AB</i>:</div>\n        <div style=\"padding-left: 12px;\">&rArr; <b><i>AP</i> = <i>PB</i></b>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Conclusion: </span>\n        <span class=\"ans-val\">Hence Proved (Chord AB is bisected at the point of contact P).</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- EXAMPLE 2 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 2:</div>\n    <div class=\"q-text\">\n      Two tangents <i>TP</i> and <i>TQ</i> are drawn to a circle with centre <i>O</i> from an external point <i>T</i>. Prove that <b>&ang;<i>PTQ</i> = 2 &ang;<i>OPQ</i></b>.\n    </div>\n\n    <!-- Diagram -->\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 220\" width=\"380\" height=\"220\">\n          <!-- Circle -->\n          <circle cx=\"250\" cy=\"110\" r=\"60\" fill=\"#FFFDF0\" stroke=\"#FFD600\" stroke-width=\"2.5\"/>\n          <circle cx=\"250\" cy=\"110\" r=\"4\" fill=\"#334155\"/>\n          <text x=\"265\" y=\"115\" font-size=\"13\" font-weight=\"bold\" fill=\"#334155\">O</text>\n\n          <!-- External Point T -->\n          <circle cx=\"50\" cy=\"110\" r=\"4\" fill=\"#DC2626\"/>\n          <text x=\"35\" y=\"115\" font-size=\"13\" font-weight=\"bold\" fill=\"#DC2626\">T</text>\n\n          <!-- Tangent Points P and Q -->\n          <circle cx=\"215\" cy=\"58\" r=\"4\" fill=\"#16A34A\"/>\n          <text x=\"215\" y=\"46\" font-size=\"13\" font-weight=\"bold\" fill=\"#16A34A\" text-anchor=\"middle\">P</text>\n          <circle cx=\"215\" cy=\"162\" r=\"4\" fill=\"#16A34A\"/>\n          <text x=\"215\" y=\"180\" font-size=\"13\" font-weight=\"bold\" fill=\"#16A34A\" text-anchor=\"middle\">Q</text>\n\n          <!-- Tangents TP and TQ -->\n          <line x1=\"50\" y1=\"110\" x2=\"215\" y2=\"58\" stroke=\"#16A34A\" stroke-width=\"2.5\"/>\n          <line x1=\"50\" y1=\"110\" x2=\"215\" y2=\"162\" stroke=\"#16A34A\" stroke-width=\"2.5\"/>\n\n          <!-- Chord PQ -->\n          <line x1=\"215\" y1=\"58\" x2=\"215\" y2=\"162\" stroke=\"#0284C7\" stroke-width=\"2\"/>\n\n          <!-- Radius OP -->\n          <line x1=\"250\" y1=\"110\" x2=\"215\" y2=\"58\" stroke=\"#DC2626\" stroke-width=\"2\"/>\n\n          <!-- Angle indicator theta at T -->\n          <path d=\"M75,102 Q85,110 75,118\" fill=\"none\" stroke=\"#DC2626\" stroke-width=\"1.5\"/>\n          <text x=\"90\" y=\"114\" font-size=\"11\" font-weight=\"bold\" fill=\"#DC2626\">&theta;</text>\n        </svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Tangents TP and TQ to circle O from external point T</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Easy Step-by-Step Proof:</div>\n      <div class=\"sol-step\">\n        <div>Let &ang;<i>PTQ</i> = &theta;.</div>\n        <div>By Theorem 10.2, the lengths of tangents drawn from an external point are equal:</div>\n        <div style=\"padding-left: 12px;\">&rArr; <b><i>TP</i> = <i>TQ</i></b>.</div>\n        <div>Therefore, &Delta;<i>TPQ</i> is an <b>isosceles triangle</b> with <i>TP</i> = <i>TQ</i>.</div>\n        <div style=\"padding-left: 12px; margin-top: 6px;\">&rArr; &ang;<i>TPQ</i> = &ang;<i>TQP</i>.</div>\n        <div style=\"margin-top: 6px;\">In &Delta;<i>TPQ</i>, the sum of angles of a triangle is 180&deg;:</div>\n        <div style=\"padding-left: 12px;\">&ang;<i>PTQ</i> + &ang;<i>TPQ</i> + &ang;<i>TQP</i> = 180&deg;</div>\n        <div style=\"padding-left: 12px;\">&rArr; &theta; + 2 &ang;<i>TPQ</i> = 180&deg;</div>\n        <div style=\"padding-left: 12px;\">&rArr; 2 &ang;<i>TPQ</i> = 180&deg; &minus; &theta;</div>\n        <div style=\"padding-left: 12px;\">&rArr; &ang;<i>TPQ</i> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> (180&deg; &minus; &theta;) = <b>90&deg; &minus; <span class=\"frac\"><span class=\"num\">&theta;</span><span class=\"den\">2</span></span></b> &nbsp;&nbsp;...(Equation 1)</div>\n        <div style=\"margin-top: 8px;\">Now, by Theorem 10.1, the radius is perpendicular to the tangent at the point of contact:</div>\n        <div style=\"padding-left: 12px;\"><i>OP</i> &perp; <i>TP</i> &nbsp;&rArr;&nbsp; <b>&ang;<i>OPT</i> = 90&deg;</b></div>\n        <div>From the figure, &ang;<i>OPT</i> = &ang;<i>OPQ</i> + &ang;<i>TPQ</i>:</div>\n        <div style=\"padding-left: 12px;\">&rArr; &ang;<i>OPQ</i> = &ang;<i>OPT</i> &minus; &ang;<i>TPQ</i></div>\n        <div style=\"padding-left: 12px;\">&rArr; &ang;<i>OPQ</i> = 90&deg; &minus; (90&deg; &minus; <span class=\"frac\"><span class=\"num\">&theta;</span><span class=\"den\">2</span></span>) <span class=\"reason\">[From Equation 1]</span></div>\n        <div style=\"padding-left: 12px;\">&rArr; &ang;<i>OPQ</i> = <span class=\"frac\"><span class=\"num\">&theta;</span><span class=\"den\">2</span></span></div>\n        <div style=\"padding-left: 12px;\">&rArr; <b>2 &ang;<i>OPQ</i> = &theta;</b></div>\n        <div>Since &theta; = &ang;<i>PTQ</i>:</div>\n        <div style=\"padding-left: 12px;\">&rArr; <b>&ang;<i>PTQ</i> = 2 &ang;<i>OPQ</i></b>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Result: </span>\n        <span class=\"ans-val\">Hence Proved (&ang;PTQ = 2 &ang;OPQ).</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- EXAMPLE 3 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 3:</div>\n    <div class=\"q-text\">\n      <i>PQ</i> is a chord of length 8 cm of a circle of radius 5 cm. The tangents at <i>P</i> and <i>Q</i> intersect at a point <i>T</i>. Find the length <i>TP</i>.\n    </div>\n\n    <!-- Diagram -->\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 230\" width=\"400\" height=\"230\">\n          <!-- Circle -->\n          <circle cx=\"260\" cy=\"115\" r=\"65\" fill=\"#FFFDF0\" stroke=\"#FFD600\" stroke-width=\"2.5\"/>\n          <circle cx=\"260\" cy=\"115\" r=\"4\" fill=\"#334155\"/>\n          <text x=\"275\" y=\"120\" font-size=\"13\" font-weight=\"bold\" fill=\"#334155\">O</text>\n\n          <!-- Point T -->\n          <circle cx=\"50\" cy=\"115\" r=\"4\" fill=\"#DC2626\"/>\n          <text x=\"35\" y=\"120\" font-size=\"13\" font-weight=\"bold\" fill=\"#DC2626\">T</text>\n\n          <!-- Points P and Q -->\n          <circle cx=\"215\" cy=\"62\" r=\"4\" fill=\"#16A34A\"/>\n          <text x=\"215\" y=\"50\" font-size=\"13\" font-weight=\"bold\" fill=\"#16A34A\" text-anchor=\"middle\">P</text>\n          <circle cx=\"215\" cy=\"168\" r=\"4\" fill=\"#16A34A\"/>\n          <text x=\"215\" y=\"185\" font-size=\"13\" font-weight=\"bold\" fill=\"#16A34A\" text-anchor=\"middle\">Q</text>\n\n          <!-- Tangents TP and TQ -->\n          <line x1=\"50\" y1=\"115\" x2=\"215\" y2=\"62\" stroke=\"#16A34A\" stroke-width=\"2.5\"/>\n          <line x1=\"50\" y1=\"115\" x2=\"215\" y2=\"168\" stroke=\"#16A34A\" stroke-width=\"2.5\"/>\n\n          <!-- Chord PQ -->\n          <line x1=\"215\" y1=\"62\" x2=\"215\" y2=\"168\" stroke=\"#0284C7\" stroke-width=\"2\"/>\n\n          <!-- Line TO intersecting PQ at R -->\n          <line x1=\"50\" y1=\"115\" x2=\"260\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2\"/>\n          <circle cx=\"215\" cy=\"115\" r=\"3.5\" fill=\"#DC2626\"/>\n          <text x=\"222\" y=\"130\" font-size=\"12\" font-weight=\"bold\" fill=\"#DC2626\">R</text>\n\n          <!-- Radius OP -->\n          <line x1=\"260\" y1=\"115\" x2=\"215\" y2=\"62\" stroke=\"#DC2626\" stroke-width=\"2\"/>\n          <text x=\"245\" y=\"85\" font-size=\"12\" font-weight=\"bold\" fill=\"#DC2626\">5</text>\n          <text x=\"200\" y=\"88\" font-size=\"12\" font-weight=\"bold\" fill=\"#0284C7\">4</text>\n        </svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Chord PQ = 8 cm, Radius OP = 5 cm, OT is perpendicular bisector of PQ at R</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Easy Step-by-Step Solution:</div>\n      <div class=\"sol-step\">\n        <div>Join <i>OT</i>. Let <i>OT</i> intersect <i>PQ</i> at point <i>R</i>.</div>\n        <div>Since &Delta;<i>TPQ</i> is isosceles (<i>TP</i> = <i>TQ</i>) and <i>TO</i> is the bisector of &ang;<i>PTQ</i>, <i>OT</i> is the <b>perpendicular bisector of chord <i>PQ</i></b>.</div>\n        <div style=\"padding-left: 12px; margin-top: 6px;\">&rArr; <b><i>PR</i> = <i>RQ</i> = <span class=\"frac\"><span class=\"num\">8</span><span class=\"den\">2</span></span> = 4 cm</b> &nbsp;and&nbsp; &ang;<i>PRO</i> = 90&deg;.</div>\n        <div style=\"margin-top: 8px;\"><b>Step 1: Calculate OR in right-angled &Delta;PRO:</b></div>\n        <div>Using Pythagoras theorem in right &Delta;<i>PRO</i> (hypotenuse <i>OP</i> = 5 cm, <i>PR</i> = 4 cm):</div>\n        <div style=\"padding-left: 12px;\"><i>OR</i><sup>2</sup> = <i>OP</i><sup>2</sup> &minus; <i>PR</i><sup>2</sup> = 5<sup>2</sup> &minus; 4<sup>2</sup> = 25 &minus; 16 = 9</div>\n        <div style=\"padding-left: 12px;\">&rArr; <b><i>OR</i> = &radic;9 = 3 cm</b>.</div>\n        <div style=\"margin-top: 8px;\"><b>Step 2: Find TP using Similar Triangles:</b></div>\n        <div>In right &Delta;<i>OPT</i> (&ang;<i>OPT</i> = 90&deg;) and right &Delta;<i>PRO</i> (&ang;<i>PRO</i> = 90&deg;):</div>\n        <div style=\"padding-left: 12px;\">&bull; &ang;<i>POT</i> = &ang;<i>POR</i> <span class=\"reason\">[Common angle]</span></div>\n        <div style=\"padding-left: 12px;\">&bull; &ang;<i>OPT</i> = &ang;<i>PRO</i> = 90&deg;</div>\n        <div style=\"padding-left: 12px;\">Therefore, by <b>AA similarity criterion</b>:</div>\n        <div style=\"padding-left: 12px;\">&rArr; <b>&Delta;TPR &sim; &Delta;POR</b> (or &Delta;<i>OPT</i> &sim; &Delta;<i>RPO</i>)</div>\n        <div style=\"margin-top: 6px;\">Taking ratio of corresponding sides in right triangles &Delta;<i>TPR</i> and &Delta;<i>OPR</i>:</div>\n        <div style=\"padding-left: 12px;\">In right &Delta;<i>TPR</i>, let &ang;<i>TPR</i> = &theta;. Then in right &Delta;<i>OPT</i>, &ang;<i>TOP</i> = 90&deg; &minus; &theta;.</div>\n        <div style=\"padding-left: 12px;\">&rArr; <span class=\"frac\"><span class=\"num\"><i>TP</i></span><span class=\"den\"><i>PO</i></span></span> = <span class=\"frac\"><span class=\"num\"><i>PR</i></span><span class=\"den\"><i>RO</i></span></span></div>\n        <div style=\"padding-left: 12px;\">&rArr; <span class=\"frac\"><span class=\"num\"><i>TP</i></span><span class=\"den\">5</span></span> = <span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">3</span></span></div>\n        <div style=\"padding-left: 12px;\">&rArr; <i>TP</i> = <span class=\"frac\"><span class=\"num\">5 &times; 4</span><span class=\"den\">3</span></span> = <b><span class=\"frac\"><span class=\"num\">20</span><span class=\"den\">3</span></span> cm = 6<span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span> cm &approx; 6.67 cm</b>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">TP = <span class=\"frac\"><span class=\"num\">20</span><span class=\"den\">3</span></span> cm (or 6.67 cm)</span>\n      </div>\n    </div>\n  </div>\n\n</div>\n",
+    exercise1: "\n\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; }\n  .frac .den { padding: 1px 4px; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 214, 0, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FFD600; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 14px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(255, 214, 0, 0.25); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FFD600; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFE082; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(255, 214, 0, 0.15); border: 1px solid #FFD600; color: #FFE082; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 6px 0; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 214, 0, 0.4); border-radius: 10px; padding: 14px; margin: 16px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #FFFFFF; border-radius: 8px; padding: 10px 8px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.25); }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 10px; font-weight: 500; }\n  .table-card { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 14px 0; border-radius: 8px; }\n  .table-card table { width: 100%; border-collapse: collapse; text-align: center; }\n  .table-card th { background: rgba(255, 214, 0, 0.2); color: #FFE082; border: 1px solid rgba(255, 214, 0, 0.35); padding: 10px; font-weight: 700; }\n  .table-card td { border: 1px solid rgba(255, 214, 0, 0.2); padding: 9px; color: #E2E8F0; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Header Card -->\n  <div style=\"background: linear-gradient(135deg, rgba(255, 214, 0, 0.2), rgba(255, 145, 0, 0.1)); border: 1.5px solid #FFD600; border-radius: 12px; padding: 14px 18px; margin-bottom: 20px;\">\n    <div style=\"font-size: 19px; font-weight: 800; color: #FFD600; margin-bottom: 4px;\">\n      Exercise 10.1\n    </div>\n    <div style=\"color: #FFFFFF; font-size: 15px; font-weight: 500;\">\n      Basics of Tangents, Points of Contact &amp; Tangent-Radius Calculations\n    </div>\n  </div>\n\n  <!-- QUESTION 1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 1:</div>\n    <div class=\"q-text\">How many tangents can a circle have?</div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Solution:</div>\n      <div class=\"sol-step\">\n        <div>A circle is a collection of infinitely many points in a plane situated at a fixed distance from the centre.</div>\n        <div>At each point on the circle, exactly one unique tangent can be drawn.</div>\n        <div>Since there are infinitely many points on the boundary of a circle, a circle can have <b>infinitely many tangents</b>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\">A circle can have infinitely many tangents.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 2 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 2: Fill in the blanks:</div>\n\n    <!-- Part (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FFD600;\">(i)</b> A tangent to a circle intersects it in ____________ point(s).</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>By definition, a tangent touches a circle at strictly <b>one</b> unique point. (If it intersected in two points, it would be a secant).</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">one</span></div>\n      </div>\n    </div>\n\n    <!-- Part (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FFD600;\">(ii)</b> A line intersecting a circle in two points is called a ____________.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>A line that cuts the boundary of a circle at two distinct points is called a <b>secant</b>.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">secant</span></div>\n      </div>\n    </div>\n\n    <!-- Part (iii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FFD600;\">(iii)</b> A circle can have ____________ parallel tangents at the most.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>For any given direction, parallel tangents can only be drawn at the two opposite endpoints of a diameter. Thus, a circle can have at most <b>two</b> parallel tangents for any given orientation.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">two</span></div>\n      </div>\n    </div>\n\n    <!-- Part (iv) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FFD600;\">(iv)</b> The common point of a tangent to a circle and the circle is called ____________.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>The unique point where the tangent line touches the circular perimeter is termed the <b>point of contact</b>.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">point of contact</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 3 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 3:</div>\n    <div class=\"q-text\">\n      A tangent <i>PQ</i> at a point <i>P</i> of a circle of radius 5 cm meets a line through the centre <i>O</i> at a point <i>Q</i> so that <i>OQ</i> = 12 cm. Length <i>PQ</i> is:\n      <div style=\"margin-top: 8px; font-weight: 600;\">(A) 12 cm &nbsp;&nbsp;&nbsp; (B) 13 cm &nbsp;&nbsp;&nbsp; (C) 8.5 cm &nbsp;&nbsp;&nbsp; (D) &radic;119 cm</div>\n    </div>\n\n    <!-- Diagram -->\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 180\" width=\"340\" height=\"180\">\n          <circle cx=\"120\" cy=\"90\" r=\"50\" fill=\"#FFFDF0\" stroke=\"#FFD600\" stroke-width=\"2.5\"/>\n          <circle cx=\"120\" cy=\"90\" r=\"3.5\" fill=\"#334155\"/>\n          <text x=\"110\" y=\"85\" font-size=\"13\" font-weight=\"bold\" fill=\"#334155\">O</text>\n\n          <line x1=\"120\" y1=\"140\" x2=\"300\" y2=\"140\" stroke=\"#16A34A\" stroke-width=\"2.5\"/>\n          <circle cx=\"120\" cy=\"140\" r=\"4\" fill=\"#DC2626\"/>\n          <text x=\"110\" y=\"160\" font-size=\"13\" font-weight=\"bold\" fill=\"#DC2626\">P</text>\n\n          <circle cx=\"280\" cy=\"140\" r=\"4\" fill=\"#0284C7\"/>\n          <text x=\"280\" y=\"160\" font-size=\"13\" font-weight=\"bold\" fill=\"#0284C7\">Q</text>\n\n          <line x1=\"120\" y1=\"90\" x2=\"120\" y2=\"140\" stroke=\"#DC2626\" stroke-width=\"2\"/>\n          <text x=\"95\" y=\"118\" font-size=\"12\" font-weight=\"bold\" fill=\"#DC2626\">5 cm</text>\n\n          <line x1=\"120\" y1=\"90\" x2=\"280\" y2=\"140\" stroke=\"#334155\" stroke-width=\"2\" stroke-dasharray=\"3,3\"/>\n          <text x=\"205\" y=\"105\" font-size=\"12\" font-weight=\"bold\" fill=\"#334155\">12 cm</text>\n\n          <path d=\"M120,130 L130,130 L130,140\" fill=\"none\" stroke=\"#DC2626\" stroke-width=\"1.5\"/>\n        </svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Right &Delta;OPQ right-angled at P</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Easy Step-by-Step Solution:</div>\n      <div class=\"sol-step\">\n        <div>Radius <i>OP</i> = 5 cm, Distance from centre <i>OQ</i> = 12 cm.</div>\n        <div>By Theorem 10.1, the tangent is perpendicular to the radius at the point of contact:</div>\n        <div style=\"padding-left: 12px;\">&rArr; <b><i>OP</i> &perp; <i>PQ</i></b> &nbsp;&rArr;&nbsp; &ang;<i>OPQ</i> = 90&deg;.</div>\n        <div style=\"margin-top: 6px;\">In right-angled &Delta;<i>OPQ</i>, applying Pythagoras theorem:</div>\n        <div style=\"padding-left: 12px;\"><i>OQ</i><sup>2</sup> = <i>OP</i><sup>2</sup> + <i>PQ</i><sup>2</sup></div>\n        <div style=\"padding-left: 12px;\">&rArr; 12<sup>2</sup> = 5<sup>2</sup> + <i>PQ</i><sup>2</sup></div>\n        <div style=\"padding-left: 12px;\">&rArr; 144 = 25 + <i>PQ</i><sup>2</sup></div>\n        <div style=\"padding-left: 12px;\">&rArr; <i>PQ</i><sup>2</sup> = 144 &minus; 25 = 119</div>\n        <div style=\"padding-left: 12px;\">&rArr; <b><i>PQ</i> = &radic;119 cm</b>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Correct Option: </span>\n        <span class=\"ans-val\">(D) &radic;119 cm</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 4 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 4:</div>\n    <div class=\"q-text\">\n      Draw a circle and two lines parallel to a given line such that one is a tangent and the other, a secant to the circle.\n    </div>\n\n    <!-- Diagram -->\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 220\" width=\"380\" height=\"220\">\n          <circle cx=\"190\" cy=\"100\" r=\"50\" fill=\"#FFFDF0\" stroke=\"#FFD600\" stroke-width=\"2.5\"/>\n          <circle cx=\"190\" cy=\"100\" r=\"3.5\" fill=\"#334155\"/>\n          <text x=\"190\" y=\"90\" font-size=\"13\" font-weight=\"bold\" fill=\"#334155\" text-anchor=\"middle\">O</text>\n\n          <!-- Given Line l -->\n          <line x1=\"40\" y1=\"200\" x2=\"340\" y2=\"200\" stroke=\"#64748B\" stroke-width=\"2.5\"/>\n          <text x=\"350\" y=\"205\" font-size=\"13\" font-weight=\"bold\" fill=\"#64748B\">l (Given Line)</text>\n\n          <!-- Parallel Tangent Line m -->\n          <line x1=\"40\" y1=\"150\" x2=\"340\" y2=\"150\" stroke=\"#16A34A\" stroke-width=\"2.5\"/>\n          <circle cx=\"190\" cy=\"150\" r=\"4\" fill=\"#DC2626\"/>\n          <text x=\"190\" y=\"166\" font-size=\"12\" font-weight=\"bold\" fill=\"#DC2626\" text-anchor=\"middle\">P (Point of Contact)</text>\n          <text x=\"350\" y=\"155\" font-size=\"13\" font-weight=\"bold\" fill=\"#16A34A\">m (Tangent || l)</text>\n\n          <!-- Parallel Secant Line n -->\n          <line x1=\"40\" y1=\"75\" x2=\"340\" y2=\"75\" stroke=\"#0284C7\" stroke-width=\"2.5\"/>\n          <circle cx=\"147\" cy=\"75\" r=\"3.5\" fill=\"#0284C7\"/>\n          <circle cx=\"233\" cy=\"75\" r=\"3.5\" fill=\"#0284C7\"/>\n          <text x=\"140\" y=\"70\" font-size=\"11\" font-weight=\"bold\" fill=\"#0284C7\">A</text>\n          <text x=\"238\" y=\"70\" font-size=\"11\" font-weight=\"bold\" fill=\"#0284C7\">B</text>\n          <text x=\"350\" y=\"80\" font-size=\"13\" font-weight=\"bold\" fill=\"#0284C7\">n (Secant || l)</text>\n        </svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Line l is the given line; line m is tangent at P; line n is secant intersecting at A and B (all mutually parallel)</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Construction Description:</div>\n      <div class=\"sol-step\">\n        <div>1. Draw a circle with centre <i>O</i> and a given straight line <i>l</i> outside the circle.</div>\n        <div>2. From centre <i>O</i>, draw a perpendicular to line <i>l</i> intersecting the circle at point <i>P</i> and chord at points <i>A</i>, <i>B</i>.</div>\n        <div>3. Draw line <i>m</i> through point <i>P</i> perpendicular to <i>OP</i>. Then line <i>m</i> touches the circle at exactly one point <i>P</i>, making <i>m</i> a <b>tangent parallel to <i>l</i></b>.</div>\n        <div>4. Draw line <i>n</i> through chord <i>AB</i> parallel to line <i>l</i>. Line <i>n</i> intersects the circle at two points <i>A</i> and <i>B</i>, making <i>n</i> a <b>secant parallel to <i>l</i></b>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Result: </span>\n        <span class=\"ans-val\">Line m (tangent) and line n (secant) are both parallel to given line l.</span>\n      </div>\n    </div>\n  </div>\n\n</div>\n",
+    exercise2: "\n\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; }\n  .frac .den { padding: 1px 4px; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 214, 0, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FFD600; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 14px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(255, 214, 0, 0.25); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FFD600; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFE082; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(255, 214, 0, 0.15); border: 1px solid #FFD600; color: #FFE082; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 6px 0; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 214, 0, 0.4); border-radius: 10px; padding: 14px; margin: 16px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #FFFFFF; border-radius: 8px; padding: 10px 8px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.25); }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 10px; font-weight: 500; }\n  .table-card { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 14px 0; border-radius: 8px; }\n  .table-card table { width: 100%; border-collapse: collapse; text-align: center; }\n  .table-card th { background: rgba(255, 214, 0, 0.2); color: #FFE082; border: 1px solid rgba(255, 214, 0, 0.35); padding: 10px; font-weight: 700; }\n  .table-card td { border: 1px solid rgba(255, 214, 0, 0.2); padding: 9px; color: #E2E8F0; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Header Card -->\n  <div style=\"background: linear-gradient(135deg, rgba(255, 214, 0, 0.2), rgba(255, 145, 0, 0.1)); border: 1.5px solid #FFD600; border-radius: 12px; padding: 14px 18px; margin-bottom: 20px;\">\n    <div style=\"font-size: 19px; font-weight: 800; color: #FFD600; margin-bottom: 4px;\">\n      Exercise 10.2\n    </div>\n    <div style=\"color: #FFFFFF; font-size: 15px; font-weight: 500;\">\n      Proofs, Properties of External Tangents, Circumscribed Polygons &amp; Calculations (Q1 to Q13)\n    </div>\n  </div>\n\n  <!-- QUESTION 1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 1:</div>\n    <div class=\"q-text\">\n      From a point Q, the length of the tangent to a circle is 24 cm and the distance of Q from the centre is 25 cm. The radius of the circle is:\n      <div style=\"margin-top: 8px; font-weight: 600;\">(A) 7 cm &nbsp;&nbsp;&nbsp; (B) 12 cm &nbsp;&nbsp;&nbsp; (C) 15 cm &nbsp;&nbsp;&nbsp; (D) 24.5 cm</div>\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Easy Direct Solution:</div>\n      <div class=\"sol-step\">\n        <div>Let O be the centre of the circle and P be the point of contact of the tangent from point Q.</div>\n        <div>Given: Tangent length <i>PQ</i> = 24 cm, Distance from centre <i>OQ</i> = 25 cm.</div>\n        <div>By Theorem 10.1, radius is perpendicular to the tangent at the point of contact:</div>\n        <div style=\"padding-left: 12px;\">&rArr; <b><i>OP</i> &perp; <i>PQ</i></b> &nbsp;&rArr;&nbsp; &ang;<i>OPQ</i> = 90&deg;.</div>\n        <div style=\"margin-top: 6px;\">In right-angled &Delta;<i>OPQ</i>, using Pythagoras theorem:</div>\n        <div style=\"padding-left: 12px;\"><i>OQ</i><sup>2</sup> = <i>OP</i><sup>2</sup> + <i>PQ</i><sup>2</sup></div>\n        <div style=\"padding-left: 12px;\">&rArr; 25<sup>2</sup> = <i>OP</i><sup>2</sup> + 24<sup>2</sup></div>\n        <div style=\"padding-left: 12px;\">&rArr; 625 = <i>OP</i><sup>2</sup> + 576</div>\n        <div style=\"padding-left: 12px;\">&rArr; <i>OP</i><sup>2</sup> = 625 &minus; 576 = 49</div>\n        <div style=\"padding-left: 12px;\">&rArr; <b><i>OP</i> = &radic;49 = 7 cm</b>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Correct Option: </span>\n        <span class=\"ans-val\">(A) 7 cm</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 2 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 2:</div>\n    <div class=\"q-text\">\n      In Fig. 10.11, if <i>TP</i> and <i>TQ</i> are the two tangents to a circle with centre <i>O</i> so that &ang;<i>POQ</i> = 110&deg;, then &ang;<i>PTQ</i> is equal to:\n      <div style=\"margin-top: 8px; font-weight: 600;\">(A) 60&deg; &nbsp;&nbsp;&nbsp; (B) 70&deg; &nbsp;&nbsp;&nbsp; (C) 80&deg; &nbsp;&nbsp;&nbsp; (D) 90&deg;</div>\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 200\" width=\"380\" height=\"200\">\n          <circle cx=\"240\" cy=\"100\" r=\"55\" fill=\"#FFFDF0\" stroke=\"#FFD600\" stroke-width=\"2.5\"/>\n          <circle cx=\"240\" cy=\"100\" r=\"3.5\" fill=\"#334155\"/>\n          <text x=\"255\" y=\"105\" font-size=\"13\" font-weight=\"bold\" fill=\"#334155\">O</text>\n\n          <circle cx=\"60\" cy=\"100\" r=\"4\" fill=\"#DC2626\"/>\n          <text x=\"45\" y=\"105\" font-size=\"13\" font-weight=\"bold\" fill=\"#DC2626\">T</text>\n\n          <circle cx=\"205\" cy=\"52\" r=\"4\" fill=\"#16A34A\"/>\n          <text x=\"205\" y=\"40\" font-size=\"13\" font-weight=\"bold\" fill=\"#16A34A\" text-anchor=\"middle\">P</text>\n          <circle cx=\"205\" cy=\"148\" r=\"4\" fill=\"#16A34A\"/>\n          <text x=\"205\" y=\"165\" font-size=\"13\" font-weight=\"bold\" fill=\"#16A34A\" text-anchor=\"middle\">Q</text>\n\n          <line x1=\"60\" y1=\"100\" x2=\"205\" y2=\"52\" stroke=\"#16A34A\" stroke-width=\"2.5\"/>\n          <line x1=\"60\" y1=\"100\" x2=\"205\" y2=\"148\" stroke=\"#16A34A\" stroke-width=\"2.5\"/>\n\n          <line x1=\"240\" y1=\"100\" x2=\"205\" y2=\"52\" stroke=\"#DC2626\" stroke-width=\"2\"/>\n          <line x1=\"240\" y1=\"100\" x2=\"205\" y2=\"148\" stroke=\"#DC2626\" stroke-width=\"2\"/>\n\n          <text x=\"200\" y=\"105\" font-size=\"12\" font-weight=\"bold\" fill=\"#DC2626\">110&deg;</text>\n        </svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Quadrilateral OPTQ with &ang;POQ = 110&deg;</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Easy Direct Solution:</div>\n      <div class=\"sol-step\">\n        <div>Since <i>TP</i> and <i>TQ</i> are tangents at points <i>P</i> and <i>Q</i> respectively:</div>\n        <div style=\"padding-left: 12px;\"><i>OP</i> &perp; <i>TP</i> &nbsp;&rArr;&nbsp; <b>&ang;<i>OPT</i> = 90&deg;</b></div>\n        <div style=\"padding-left: 12px;\"><i>OQ</i> &perp; <i>TQ</i> &nbsp;&rArr;&nbsp; <b>&ang;<i>OQT</i> = 90&deg;</b></div>\n        <div style=\"margin-top: 6px;\">In quadrilateral <i>OPTQ</i>, the sum of all four interior angles is 360&deg;:</div>\n        <div style=\"padding-left: 12px;\">&ang;<i>PTQ</i> + &ang;<i>OPT</i> + &ang;<i>POQ</i> + &ang;<i>OQT</i> = 360&deg;</div>\n        <div style=\"padding-left: 12px;\">&rArr; &ang;<i>PTQ</i> + 90&deg; + 110&deg; + 90&deg; = 360&deg;</div>\n        <div style=\"padding-left: 12px;\">&rArr; &ang;<i>PTQ</i> + 290&deg; = 360&deg;</div>\n        <div style=\"padding-left: 12px;\">&rArr; &ang;<i>PTQ</i> = 360&deg; &minus; 290&deg; = <b>70&deg;</b>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Correct Option: </span>\n        <span class=\"ans-val\">(B) 70&deg;</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 3 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 3:</div>\n    <div class=\"q-text\">\n      If tangents <i>PA</i> and <i>PB</i> from a point <i>P</i> to a circle with centre <i>O</i> are inclined to each other at angle of 80&deg;, then &ang;<i>POA</i> is equal to:\n      <div style=\"margin-top: 8px; font-weight: 600;\">(A) 50&deg; &nbsp;&nbsp;&nbsp; (B) 60&deg; &nbsp;&nbsp;&nbsp; (C) 70&deg; &nbsp;&nbsp;&nbsp; (D) 80&deg;</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Easy Direct Solution:</div>\n      <div class=\"sol-step\">\n        <div>Tangents <i>PA</i> and <i>PB</i> are inclined at 80&deg; &nbsp;&rArr;&nbsp; <b>&ang;<i>APB</i> = 80&deg;</b>.</div>\n        <div>By Theorem 10.1: <i>OA</i> &perp; <i>PA</i> &nbsp;&rArr;&nbsp; &ang;<i>OAP</i> = 90&deg;, and <i>OB</i> &perp; <i>PB</i> &nbsp;&rArr;&nbsp; &ang;<i>OBP</i> = 90&deg;.</div>\n        <div style=\"margin-top: 6px;\">In quadrilateral <i>OAPB</i>:</div>\n        <div style=\"padding-left: 12px;\">&ang;<i>AOB</i> + &ang;<i>APB</i> = 180&deg; <span class=\"reason\">[Opposite angles are supplementary]</span></div>\n        <div style=\"padding-left: 12px;\">&rArr; &ang;<i>AOB</i> + 80&deg; = 180&deg; &nbsp;&rArr;&nbsp; <b>&ang;<i>AOB</i> = 100&deg;</b>.</div>\n        <div style=\"margin-top: 6px;\">Since &Delta;<i>OPA</i> &cong; &Delta;<i>OPB</i> by RHS congruence:</div>\n        <div style=\"padding-left: 12px;\"><i>OP</i> bisects &ang;<i>AOB</i> &nbsp;&rArr;&nbsp; <b>&ang;<i>POA</i> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &ang;<i>AOB</i></b>.</div>\n        <div style=\"padding-left: 12px;\">&rArr; &ang;<i>POA</i> = <span class=\"frac\"><span class=\"num\">100&deg;</span><span class=\"den\">2</span></span> = <b>50&deg;</b>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Correct Option: </span>\n        <span class=\"ans-val\">(A) 50&deg;</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 4 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 4:</div>\n    <div class=\"q-text\">\n      Prove that the tangents drawn at the ends of a diameter of a circle are parallel.\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 200\" width=\"380\" height=\"200\">\n          <circle cx=\"190\" cy=\"100\" r=\"50\" fill=\"#FFFDF0\" stroke=\"#FFD600\" stroke-width=\"2.5\"/>\n          <circle cx=\"190\" cy=\"100\" r=\"3.5\" fill=\"#334155\"/>\n          <text x=\"200\" y=\"105\" font-size=\"13\" font-weight=\"bold\" fill=\"#334155\">O</text>\n\n          <!-- Diameter AB vertical -->\n          <line x1=\"190\" y1=\"50\" x2=\"190\" y2=\"150\" stroke=\"#0284C7\" stroke-width=\"2.5\"/>\n          <circle cx=\"190\" cy=\"50\" r=\"4\" fill=\"#0284C7\"/>\n          <text x=\"200\" y=\"45\" font-size=\"13\" font-weight=\"bold\" fill=\"#0284C7\">A</text>\n          <circle cx=\"190\" cy=\"150\" r=\"4\" fill=\"#0284C7\"/>\n          <text x=\"200\" y=\"165\" font-size=\"13\" font-weight=\"bold\" fill=\"#0284C7\">B</text>\n\n          <!-- Tangent PQ at A -->\n          <line x1=\"60\" y1=\"50\" x2=\"320\" y2=\"50\" stroke=\"#16A34A\" stroke-width=\"2.5\"/>\n          <text x=\"50\" y=\"45\" font-size=\"13\" font-weight=\"bold\" fill=\"#16A34A\">P</text>\n          <text x=\"330\" y=\"45\" font-size=\"13\" font-weight=\"bold\" fill=\"#16A34A\">Q</text>\n\n          <!-- Tangent RS at B -->\n          <line x1=\"60\" y1=\"150\" x2=\"320\" y2=\"150\" stroke=\"#16A34A\" stroke-width=\"2.5\"/>\n          <text x=\"50\" y=\"165\" font-size=\"13\" font-weight=\"bold\" fill=\"#16A34A\">R</text>\n          <text x=\"330\" y=\"165\" font-size=\"13\" font-weight=\"bold\" fill=\"#16A34A\">S</text>\n\n          <!-- Right angle marks -->\n          <path d=\"M190,60 L180,60 L180,50\" fill=\"none\" stroke=\"#DC2626\" stroke-width=\"1.5\"/>\n          <path d=\"M190,140 L200,140 L200,150\" fill=\"none\" stroke=\"#DC2626\" stroke-width=\"1.5\"/>\n        </svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Diameter AB with tangents PQ at A and RS at B</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Easy Step-by-Step Proof:</div>\n      <div class=\"sol-step\">\n        <div>Let <i>AB</i> be a diameter of a circle with centre <i>O</i>.</div>\n        <div>Let lines <i>PQ</i> and <i>RS</i> be tangents drawn at endpoints <i>A</i> and <i>B</i> respectively.</div>\n        <div style=\"margin-top: 6px;\">Since radius is perpendicular to the tangent at the point of contact (Theorem 10.1):</div>\n        <div style=\"padding-left: 12px;\"><i>OA</i> &perp; <i>PQ</i> &nbsp;&rArr;&nbsp; <b>&ang;<i>PAB</i> = 90&deg;</b></div>\n        <div style=\"padding-left: 12px;\"><i>OB</i> &perp; <i>RS</i> &nbsp;&rArr;&nbsp; <b>&ang;<i>AB S</i> = 90&deg;</b></div>\n        <div style=\"margin-top: 6px;\">Comparing both equations:</div>\n        <div style=\"padding-left: 12px;\">&rArr; <b>&ang;<i>PAB</i> = &ang;<i>AB S</i> = 90&deg;</b>.</div>\n        <div>These two angles form a pair of <b>alternate interior angles</b> for lines <i>PQ</i> and <i>RS</i> with transversal <i>AB</i>.</div>\n        <div>Since alternate interior angles are equal, the lines must be parallel:</div>\n        <div style=\"padding-left: 12px; margin-top: 6px;\">&rArr; <b><i>PQ</i> || <i>RS</i></b>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Conclusion: </span>\n        <span class=\"ans-val\">Hence Proved (Tangents at the ends of a diameter are parallel).</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 5 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 5:</div>\n    <div class=\"q-text\">\n      Prove that the perpendicular at the point of contact to the tangent to a circle passes through the centre.\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Direct Proof by Contradiction:</div>\n      <div class=\"sol-step\">\n        <div>Let <i>AB</i> be a tangent to a circle with centre <i>O</i> at the point of contact <i>P</i>.</div>\n        <div>We know from Theorem 10.1 that <b><i>OP</i> &perp; <i>AB</i></b> &nbsp;&rArr;&nbsp; <b>&ang;<i>OPB</i> = 90&deg;</b> &nbsp;&nbsp;...(Equation 1).</div>\n        <div style=\"margin-top: 6px;\">Suppose, if possible, that the perpendicular to <i>AB</i> at <i>P</i> does not pass through centre <i>O</i>, but passes through another point <i>O'</i>.</div>\n        <div>Then, by our assumption:</div>\n        <div style=\"padding-left: 12px;\"><b>&ang;<i>O'PB</i> = 90&deg;</b> &nbsp;&nbsp;...(Equation 2).</div>\n        <div style=\"margin-top: 6px;\">From Equation (1) and Equation (2):</div>\n        <div style=\"padding-left: 12px;\">&ang;<i>O'PB</i> = &ang;<i>OPB</i>.</div>\n        <div>From the geometry of the plane, a part cannot be equal to the whole unless the two rays coincide.</div>\n        <div>This is only possible if <b><i>O'</i> coincides with <i>O</i></b>.</div>\n        <div>Hence, our assumption was false. The perpendicular to the tangent at the point of contact must pass through the centre <i>O</i>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Conclusion: </span>\n        <span class=\"ans-val\">Hence Proved (The perpendicular at the point of contact passes through the centre).</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 6 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 6:</div>\n    <div class=\"q-text\">\n      The length of a tangent from a point <i>A</i> at distance 5 cm from the centre of the circle is 4 cm. Find the radius of the circle.\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Easy Direct Solution:</div>\n      <div class=\"sol-step\">\n        <div>Let <i>O</i> be the centre of the circle and <i>T</i> be the point of contact of the tangent from <i>A</i>.</div>\n        <div>Given: Distance from centre <i>OA</i> = 5 cm, Tangent length <i>AT</i> = 4 cm.</div>\n        <div>By Theorem 10.1: <i>OT</i> &perp; <i>AT</i> &nbsp;&rArr;&nbsp; &ang;<i>OTA</i> = 90&deg;.</div>\n        <div style=\"margin-top: 6px;\">Applying Pythagoras theorem in right &Delta;<i>OTA</i>:</div>\n        <div style=\"padding-left: 12px;\"><i>OA</i><sup>2</sup> = <i>OT</i><sup>2</sup> + <i>AT</i><sup>2</sup></div>\n        <div style=\"padding-left: 12px;\">&rArr; 5<sup>2</sup> = <i>OT</i><sup>2</sup> + 4<sup>2</sup></div>\n        <div style=\"padding-left: 12px;\">&rArr; 25 = <i>OT</i><sup>2</sup> + 16</div>\n        <div style=\"padding-left: 12px;\">&rArr; <i>OT</i><sup>2</sup> = 25 &minus; 16 = 9</div>\n        <div style=\"padding-left: 12px;\">&rArr; <b><i>OT</i> = &radic;9 = 3 cm</b>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Radius: </span>\n        <span class=\"ans-val\">3 cm</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 7 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 7:</div>\n    <div class=\"q-text\">\n      Two concentric circles are of radii 5 cm and 3 cm. Find the length of the chord of the larger circle which touches the smaller circle.\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Easy Step-by-Step Solution:</div>\n      <div class=\"sol-step\">\n        <div>Let the common centre be <i>O</i>. Let <i>AB</i> be the chord of the larger circle (radius <i>R</i> = 5 cm) touching the smaller circle (radius <i>r</i> = 3 cm) at point <i>P</i>.</div>\n        <div>Join <i>OP</i> and <i>OA</i>.</div>\n        <div>Since <i>AB</i> is tangent to the inner circle at <i>P</i> and <i>OP</i> is its radius:</div>\n        <div style=\"padding-left: 12px;\"><i>OP</i> &perp; <i>AB</i> &nbsp;&rArr;&nbsp; &ang;<i>OPA</i> = 90&deg;.</div>\n        <div style=\"margin-top: 6px;\">In right-angled &Delta;<i>OPA</i> (hypotenuse <i>OA</i> = 5 cm, <i>OP</i> = 3 cm):</div>\n        <div style=\"padding-left: 12px;\"><i>AP</i><sup>2</sup> = <i>OA</i><sup>2</sup> &minus; <i>OP</i><sup>2</sup> = 5<sup>2</sup> &minus; 3<sup>2</sup> = 25 &minus; 9 = 16</div>\n        <div style=\"padding-left: 12px;\">&rArr; <b><i>AP</i> = &radic;16 = 4 cm</b>.</div>\n        <div style=\"margin-top: 6px;\">Since the perpendicular from the centre to a chord bisects the chord:</div>\n        <div style=\"padding-left: 12px;\"><i>AB</i> = 2 &times; <i>AP</i> = 2 &times; 4 = <b>8 cm</b>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Chord Length: </span>\n        <span class=\"ans-val\">8 cm</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 8 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 8:</div>\n    <div class=\"q-text\">\n      A quadrilateral <i>ABCD</i> is drawn to circumscribe a circle (see Fig. 10.12). Prove that: <b><i>AB</i> + <i>CD</i> = <i>AD</i> + <i>BC</i></b>.\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 230\" width=\"380\" height=\"230\">\n          <circle cx=\"190\" cy=\"115\" r=\"50\" fill=\"#FFFDF0\" stroke=\"#FFD600\" stroke-width=\"2.5\"/>\n          <circle cx=\"190\" cy=\"115\" r=\"3.5\" fill=\"#334155\"/>\n\n          <!-- Circumscribed Quadrilateral ABCD -->\n          <!-- P on AB (190, 165), Q on BC (240, 115), R on CD (190, 65), S on DA (140, 115) -->\n          <polygon points=\"120,185 260,185 260,45 120,45\" fill=\"none\" stroke=\"#0284C7\" stroke-width=\"2.5\"/>\n\n          <circle cx=\"120\" cy=\"185\" r=\"4\" fill=\"#0284C7\"/>\n          <text x=\"105\" y=\"195\" font-size=\"13\" font-weight=\"bold\" fill=\"#0284C7\">A</text>\n          <circle cx=\"260\" cy=\"185\" r=\"4\" fill=\"#0284C7\"/>\n          <text x=\"270\" y=\"195\" font-size=\"13\" font-weight=\"bold\" fill=\"#0284C7\">B</text>\n          <circle cx=\"260\" cy=\"45\" r=\"4\" fill=\"#0284C7\"/>\n          <text x=\"270\" y=\"45\" font-size=\"13\" font-weight=\"bold\" fill=\"#0284C7\">C</text>\n          <circle cx=\"120\" cy=\"45\" r=\"4\" fill=\"#0284C7\"/>\n          <text x=\"105\" y=\"45\" font-size=\"13\" font-weight=\"bold\" fill=\"#0284C7\">D</text>\n\n          <!-- Contact Points P, Q, R, S -->\n          <circle cx=\"190\" cy=\"165\" r=\"3.5\" fill=\"#DC2626\"/>\n          <text x=\"190\" y=\"180\" font-size=\"12\" font-weight=\"bold\" fill=\"#DC2626\" text-anchor=\"middle\">P</text>\n          <circle cx=\"240\" cy=\"115\" r=\"3.5\" fill=\"#DC2626\"/>\n          <text x=\"252\" y=\"118\" font-size=\"12\" font-weight=\"bold\" fill=\"#DC2626\">Q</text>\n          <circle cx=\"190\" cy=\"65\" r=\"3.5\" fill=\"#DC2626\"/>\n          <text x=\"190\" y=\"60\" font-size=\"12\" font-weight=\"bold\" fill=\"#DC2626\" text-anchor=\"middle\">R</text>\n          <circle cx=\"140\" cy=\"115\" r=\"3.5\" fill=\"#DC2626\"/>\n          <text x=\"126\" y=\"118\" font-size=\"12\" font-weight=\"bold\" fill=\"#DC2626\">S</text>\n        </svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Quadrilateral ABCD circumscribing a circle touching at P, Q, R, S</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Easy Step-by-Step Proof:</div>\n      <div class=\"sol-step\">\n        <div>Let the circle touch the sides <i>AB</i>, <i>BC</i>, <i>CD</i>, and <i>DA</i> at points <i>P</i>, <i>Q</i>, <i>R</i>, and <i>S</i> respectively.</div>\n        <div>By Theorem 10.2, the lengths of tangents drawn from an external point to a circle are equal:</div>\n        <div style=\"padding-left: 12px;\">From vertex <i>A</i>: &nbsp; <b><i>AP</i> = <i>AS</i></b> &nbsp;&nbsp;...(1)</div>\n        <div style=\"padding-left: 12px;\">From vertex <i>B</i>: &nbsp; <b><i>BP</i> = <i>BQ</i></b> &nbsp;&nbsp;...(2)</div>\n        <div style=\"padding-left: 12px;\">From vertex <i>C</i>: &nbsp; <b><i>CR</i> = <i>CQ</i></b> &nbsp;&nbsp;...(3)</div>\n        <div style=\"padding-left: 12px;\">From vertex <i>D</i>: &nbsp; <b><i>DR</i> = <i>DS</i></b> &nbsp;&nbsp;...(4)</div>\n        <div style=\"margin-top: 8px;\">Adding equations (1), (2), (3), and (4):</div>\n        <div style=\"padding-left: 12px;\">(<i>AP</i> + <i>BP</i>) + (<i>CR</i> + <i>DR</i>) = (<i>AS</i> + <i>DS</i>) + (<i>BQ</i> + <i>CQ</i>)</div>\n        <div style=\"padding-left: 12px; margin-top: 4px;\">Since <i>AP</i> + <i>BP</i> = <i>AB</i>, &nbsp; <i>CR</i> + <i>DR</i> = <i>CD</i>, &nbsp; <i>AS</i> + <i>DS</i> = <i>AD</i>, &nbsp; <i>BQ</i> + <i>CQ</i> = <i>BC</i>:</div>\n        <div style=\"padding-left: 12px; margin-top: 4px;\">&rArr; <b><i>AB</i> + <i>CD</i> = <i>AD</i> + <i>BC</i></b>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Result: </span>\n        <span class=\"ans-val\">Hence Proved (AB + CD = AD + BC).</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 9 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 9:</div>\n    <div class=\"q-text\">\n      In Fig. 10.13, <i>XY</i> and <i>X'Y'</i> are two parallel tangents to a circle with centre <i>O</i> and another tangent <i>AB</i> with point of contact <i>C</i> intersecting <i>XY</i> at <i>A</i> and <i>X'Y'</i> at <i>B</i>. Prove that <b>&ang;<i>AOB</i> = 90&deg;</b>.\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 230\" width=\"380\" height=\"230\">\n          <circle cx=\"190\" cy=\"115\" r=\"50\" fill=\"#FFFDF0\" stroke=\"#FFD600\" stroke-width=\"2.5\"/>\n          <circle cx=\"190\" cy=\"115\" r=\"3.5\" fill=\"#334155\"/>\n          <text x=\"200\" y=\"115\" font-size=\"13\" font-weight=\"bold\" fill=\"#334155\">O</text>\n\n          <!-- Parallel tangents XY (top) and X'Y' (bottom) -->\n          <line x1=\"40\" y1=\"65\" x2=\"340\" y2=\"65\" stroke=\"#16A34A\" stroke-width=\"2.5\"/>\n          <text x=\"40\" y=\"55\" font-size=\"13\" font-weight=\"bold\" fill=\"#16A34A\">X</text>\n          <text x=\"330\" y=\"55\" font-size=\"13\" font-weight=\"bold\" fill=\"#16A34A\">Y</text>\n\n          <line x1=\"40\" y1=\"165\" x2=\"340\" y2=\"165\" stroke=\"#16A34A\" stroke-width=\"2.5\"/>\n          <text x=\"40\" y=\"180\" font-size=\"13\" font-weight=\"bold\" fill=\"#16A34A\">X'</text>\n          <text x=\"330\" y=\"180\" font-size=\"13\" font-weight=\"bold\" fill=\"#16A34A\">Y'</text>\n\n          <!-- Contact points P and Q on diameter PQ -->\n          <line x1=\"190\" y1=\"65\" x2=\"190\" y2=\"165\" stroke=\"#64748B\" stroke-dasharray=\"3,3\" stroke-width=\"1.8\"/>\n          <circle cx=\"190\" cy=\"65\" r=\"3.5\" fill=\"#DC2626\"/>\n          <text x=\"180\" y=\"60\" font-size=\"12\" font-weight=\"bold\" fill=\"#DC2626\">P</text>\n          <circle cx=\"190\" cy=\"165\" r=\"3.5\" fill=\"#DC2626\"/>\n          <text x=\"180\" y=\"180\" font-size=\"12\" font-weight=\"bold\" fill=\"#DC2626\">Q</text>\n\n          <!-- Tangent AB intersecting at A and B, touching at C -->\n          <line x1=\"120\" y1=\"65\" x2=\"260\" y2=\"165\" stroke=\"#0284C7\" stroke-width=\"2.5\"/>\n          <circle cx=\"120\" cy=\"65\" r=\"4\" fill=\"#0284C7\"/>\n          <text x=\"110\" y=\"60\" font-size=\"13\" font-weight=\"bold\" fill=\"#0284C7\">A</text>\n          <circle cx=\"260\" cy=\"165\" r=\"4\" fill=\"#0284C7\"/>\n          <text x=\"265\" y=\"180\" font-size=\"13\" font-weight=\"bold\" fill=\"#0284C7\">B</text>\n\n          <!-- Point of contact C and radius OC -->\n          <circle cx=\"178\" cy=\"107\" r=\"3.5\" fill=\"#DC2626\"/>\n          <text x=\"165\" y=\"105\" font-size=\"12\" font-weight=\"bold\" fill=\"#DC2626\">C</text>\n          <line x1=\"190\" y1=\"115\" x2=\"178\" y2=\"107\" stroke=\"#DC2626\" stroke-dasharray=\"3,3\" stroke-width=\"1.5\"/>\n\n          <!-- Lines OA and OB -->\n          <line x1=\"190\" y1=\"115\" x2=\"120\" y2=\"65\" stroke=\"#DC2626\" stroke-width=\"2\"/>\n          <line x1=\"190\" y1=\"115\" x2=\"260\" y2=\"165\" stroke=\"#DC2626\" stroke-width=\"2\"/>\n        </svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: &ang;AOB formed by intersection of parallel tangents XY, X'Y' with transversal tangent AB</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Easy Step-by-Step Proof:</div>\n      <div class=\"sol-step\">\n        <div>Join <i>OC</i>.</div>\n        <div style=\"margin-top: 6px;\"><b>1. Compare &Delta;OPA and &Delta;OCA:</b></div>\n        <div style=\"padding-left: 12px;\">&bull; <i>AP</i> = <i>AC</i> <span class=\"reason\">[Tangents from external point A]</span></div>\n        <div style=\"padding-left: 12px;\">&bull; <i>OP</i> = <i>OC</i> <span class=\"reason\">[Radii of same circle]</span></div>\n        <div style=\"padding-left: 12px;\">&bull; <i>OA</i> = <i>OA</i> <span class=\"reason\">[Common side]</span></div>\n        <div style=\"padding-left: 12px;\">&rArr; <b>&Delta;OPA &cong; &Delta;OCA</b> <span class=\"reason\">[By SSS Congruence]</span></div>\n        <div style=\"padding-left: 12px;\">&rArr; <b>&ang;<i>POA</i> = &ang;<i>COA</i></b> &nbsp;&rArr;&nbsp; &ang;<i>POC</i> = 2 &ang;<i>COA</i> &nbsp;&nbsp;...(1)</div>\n\n        <div style=\"margin-top: 6px;\"><b>2. Similarly, compare &Delta;OQB and &Delta;OCB:</b></div>\n        <div style=\"padding-left: 12px;\">&rArr; <b>&Delta;OQB &cong; &Delta;OCB</b> &nbsp;&rArr;&nbsp; <b>&ang;<i>QOB</i> = &ang;<i>COB</i></b> &nbsp;&rArr;&nbsp; &ang;<i>QOC</i> = 2 &ang;<i>COB</i> &nbsp;&nbsp;...(2)</div>\n\n        <div style=\"margin-top: 6px;\"><b>3. Sum of angles on diameter POQ:</b></div>\n        <div>Since <i>POQ</i> is a straight diameter, &ang;<i>POQ</i> = 180&deg;:</div>\n        <div style=\"padding-left: 12px;\">&ang;<i>POC</i> + &ang;<i>QOC</i> = 180&deg;</div>\n        <div style=\"padding-left: 12px;\">&rArr; 2 &ang;<i>COA</i> + 2 &ang;<i>COB</i> = 180&deg; <span class=\"reason\">[From (1) and (2)]</span></div>\n        <div style=\"padding-left: 12px;\">&rArr; 2(&ang;<i>COA</i> + &ang;<i>COB</i>) = 180&deg;</div>\n        <div style=\"padding-left: 12px;\">&rArr; &ang;<i>COA</i> + &ang;<i>COB</i> = <span class=\"frac\"><span class=\"num\">180&deg;</span><span class=\"den\">2</span></span> = <b>90&deg;</b>.</div>\n        <div style=\"padding-left: 12px; margin-top: 4px;\">Since &ang;<i>COA</i> + &ang;<i>COB</i> = &ang;<i>AOB</i>:</div>\n        <div style=\"padding-left: 12px;\">&rArr; <b>&ang;<i>AOB</i> = 90&deg;</b>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Result: </span>\n        <span class=\"ans-val\">Hence Proved (&ang;AOB = 90&deg;).</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 10 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 10:</div>\n    <div class=\"q-text\">\n      Prove that the angle between the two tangents drawn from an external point to a circle is supplementary to the angle subtended by the line-segment joining the points of contact at the centre.\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Easy Step-by-Step Proof:</div>\n      <div class=\"sol-step\">\n        <div>Let <i>PA</i> and <i>PB</i> be tangents drawn from an external point <i>P</i> to a circle with centre <i>O</i> (points of contact <i>A</i> and <i>B</i>).</div>\n        <div>By Theorem 10.1, radius is perpendicular to the tangent at the point of contact:</div>\n        <div style=\"padding-left: 12px;\"><i>OA</i> &perp; <i>PA</i> &nbsp;&rArr;&nbsp; <b>&ang;<i>OAP</i> = 90&deg;</b></div>\n        <div style=\"padding-left: 12px;\"><i>OB</i> &perp; <i>PB</i> &nbsp;&rArr;&nbsp; <b>&ang;<i>OBP</i> = 90&deg;</b></div>\n        <div style=\"margin-top: 6px;\">In quadrilateral <i>OAPB</i>, the sum of all 4 interior angles is 360&deg;:</div>\n        <div style=\"padding-left: 12px;\">&ang;<i>APB</i> + &ang;<i>OAP</i> + &ang;<i>AOB</i> + &ang;<i>OBP</i> = 360&deg;</div>\n        <div style=\"padding-left: 12px;\">&rArr; &ang;<i>APB</i> + 90&deg; + &ang;<i>AOB</i> + 90&deg; = 360&deg;</div>\n        <div style=\"padding-left: 12px;\">&rArr; &ang;<i>APB</i> + &ang;<i>AOB</i> + 180&deg; = 360&deg;</div>\n        <div style=\"padding-left: 12px;\">&rArr; <b>&ang;<i>APB</i> + &ang;<i>AOB</i> = 180&deg;</b>.</div>\n        <div style=\"margin-top: 6px;\">Since their sum is 180&deg;, the angle between the two tangents (&ang;<i>APB</i>) and the angle subtended by chord of contact at centre (&ang;<i>AOB</i>) are <b>supplementary</b>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Result: </span>\n        <span class=\"ans-val\">Hence Proved (&ang;APB + &ang;AOB = 180&deg;).</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 11 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 11:</div>\n    <div class=\"q-text\">\n      Prove that the parallelogram circumscribing a circle is a rhombus.\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Easy Step-by-Step Proof:</div>\n      <div class=\"sol-step\">\n        <div>Let <i>ABCD</i> be a parallelogram circumscribing a circle with centre <i>O</i>.</div>\n        <div>Since opposite sides of a parallelogram are equal:</div>\n        <div style=\"padding-left: 12px;\"><b><i>AB</i> = <i>CD</i></b> &nbsp;and&nbsp; <b><i>AD</i> = <i>BC</i></b> &nbsp;&nbsp;...(1)</div>\n        <div style=\"margin-top: 6px;\">From Question 8, for any quadrilateral circumscribing a circle:</div>\n        <div style=\"padding-left: 12px;\"><b><i>AB</i> + <i>CD</i> = <i>AD</i> + <i>BC</i></b> &nbsp;&nbsp;...(2)</div>\n        <div style=\"margin-top: 6px;\">Substituting (1) into (2):</div>\n        <div style=\"padding-left: 12px;\"><i>AB</i> + <i>AB</i> = <i>AD</i> + <i>AD</i></div>\n        <div style=\"padding-left: 12px;\">&rArr; 2 <i>AB</i> = 2 <i>AD</i></div>\n        <div style=\"padding-left: 12px;\">&rArr; <b><i>AB</i> = <i>AD</i></b>.</div>\n        <div style=\"margin-top: 6px;\">Combining <i>AB</i> = <i>CD</i>, <i>AD</i> = <i>BC</i>, and <i>AB</i> = <i>AD</i>:</div>\n        <div style=\"padding-left: 12px;\">&rArr; <b><i>AB</i> = <i>BC</i> = <i>CD</i> = <i>DA</i></b>.</div>\n        <div>A parallelogram with all four sides equal is a <b>rhombus</b>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Conclusion: </span>\n        <span class=\"ans-val\">Hence Proved (Parallelogram ABCD is a Rhombus).</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 12 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 12:</div>\n    <div class=\"q-text\">\n      A triangle <i>ABC</i> is drawn to circumscribe a circle of radius 4 cm such that the segments <i>BD</i> and <i>DC</i> into which <i>BC</i> is divided by the point of contact <i>D</i> are of lengths 8 cm and 6 cm respectively (see Fig. 10.14). Find the sides <i>AB</i> and <i>AC</i>.\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 250\" width=\"380\" height=\"250\">\n          <circle cx=\"190\" cy=\"140\" r=\"45\" fill=\"#FFFDF0\" stroke=\"#FFD600\" stroke-width=\"2.5\"/>\n          <circle cx=\"190\" cy=\"140\" r=\"3.5\" fill=\"#334155\"/>\n          <text x=\"200\" y=\"145\" font-size=\"13\" font-weight=\"bold\" fill=\"#334155\">O</text>\n\n          <!-- Triangle ABC: A(190, 30), B(70, 185), C(310, 185) -->\n          <polygon points=\"190,30 70,185 310,185\" fill=\"none\" stroke=\"#0284C7\" stroke-width=\"2.5\"/>\n          <circle cx=\"190\" cy=\"30\" r=\"4\" fill=\"#0284C7\"/>\n          <text x=\"190\" y=\"22\" font-size=\"14\" font-weight=\"bold\" fill=\"#0284C7\" text-anchor=\"middle\">A</text>\n          <circle cx=\"70\" cy=\"185\" r=\"4\" fill=\"#0284C7\"/>\n          <text x=\"55\" y=\"195\" font-size=\"14\" font-weight=\"bold\" fill=\"#0284C7\">B</text>\n          <circle cx=\"310\" cy=\"185\" r=\"4\" fill=\"#0284C7\"/>\n          <text x=\"320\" y=\"195\" font-size=\"14\" font-weight=\"bold\" fill=\"#0284C7\">C</text>\n\n          <!-- Contact points D on BC, E on AC, F on AB -->\n          <circle cx=\"190\" cy=\"185\" r=\"3.5\" fill=\"#DC2626\"/>\n          <text x=\"190\" y=\"202\" font-size=\"12\" font-weight=\"bold\" fill=\"#DC2626\" text-anchor=\"middle\">D</text>\n\n          <text x=\"130\" y=\"178\" font-size=\"12\" font-weight=\"bold\" fill=\"#16A34A\">8 cm</text>\n          <text x=\"250\" y=\"178\" font-size=\"12\" font-weight=\"bold\" fill=\"#16A34A\">6 cm</text>\n\n          <!-- Radii OD, OE, OF -->\n          <line x1=\"190\" y1=\"140\" x2=\"190\" y2=\"185\" stroke=\"#DC2626\" stroke-dasharray=\"3,3\" stroke-width=\"1.5\"/>\n          <text x=\"196\" y=\"165\" font-size=\"11\" font-weight=\"bold\" fill=\"#DC2626\">4</text>\n        </svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: &Delta;ABC circumscribing circle of radius r = 4 cm; BD = 8 cm, CD = 6 cm</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Easy Step-by-Step Solution:</div>\n      <div class=\"sol-step\">\n        <div>Let the circle touch <i>BC</i> at <i>D</i>, <i>AC</i> at <i>E</i>, and <i>AB</i> at <i>F</i>.</div>\n        <div>By Theorem 10.2, lengths of tangents from each vertex are equal:</div>\n        <div style=\"padding-left: 12px;\">&bull; From <i>B</i>: <i>BF</i> = <i>BD</i> = <b>8 cm</b></div>\n        <div style=\"padding-left: 12px;\">&bull; From <i>C</i>: <i>CE</i> = <i>CD</i> = <b>6 cm</b></div>\n        <div style=\"padding-left: 12px;\">&bull; From <i>A</i>: Let <i>AF</i> = <i>AE</i> = <b><i>x</i> cm</b></div>\n        <div style=\"margin-top: 6px;\">Side lengths of &Delta;<i>ABC</i>:</div>\n        <div style=\"padding-left: 12px;\"><i>a</i> = <i>BC</i> = 8 + 6 = <b>14 cm</b></div>\n        <div style=\"padding-left: 12px;\"><i>b</i> = <i>AC</i> = <b><i>x</i> + 6 cm</b></div>\n        <div style=\"padding-left: 12px;\"><i>c</i> = <i>AB</i> = <b><i>x</i> + 8 cm</b></div>\n        <div style=\"margin-top: 6px;\">Semi-perimeter <i>s</i>:</div>\n        <div style=\"padding-left: 12px;\"><i>s</i> = <span class=\"frac\"><span class=\"num\"><i>a</i> + <i>b</i> + <i>c</i></span><span class=\"den\">2</span></span> = <span class=\"frac\"><span class=\"num\">14 + (<i>x</i> + 6) + (<i>x</i> + 8)</span><span class=\"den\">2</span></span> = <span class=\"frac\"><span class=\"num\">2<i>x</i> + 28</span><span class=\"den\">2</span></span> = <b><i>x</i> + 14</b></div>\n\n        <div style=\"margin-top: 10px;\"><b>Method 1: Area by Triangle Partitioning:</b></div>\n        <div style=\"padding-left: 12px;\">Area(&Delta;<i>ABC</i>) = Area(&Delta;<i>OBC</i>) + Area(&Delta;<i>OCA</i>) + Area(&Delta;<i>OAB</i>)</div>\n        <div style=\"padding-left: 12px;\">= <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &times; 14 &times; 4 + <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &times; (<i>x</i> + 6) &times; 4 + <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &times; (<i>x</i> + 8) &times; 4</div>\n        <div style=\"padding-left: 12px;\">= 28 + 2(<i>x</i> + 6) + 2(<i>x</i> + 8) = 28 + 2<i>x</i> + 12 + 2<i>x</i> + 16 = 4<i>x</i> + 56 = <b>4(<i>x</i> + 14)</b> &nbsp;&nbsp;...(1)</div>\n\n        <div style=\"margin-top: 10px;\"><b>Method 2: Area by Heron's Formula:</b></div>\n        <div style=\"padding-left: 12px;\"><i>s</i> &minus; <i>a</i> = (<i>x</i> + 14) &minus; 14 = <i>x</i></div>\n        <div style=\"padding-left: 12px;\"><i>s</i> &minus; <i>b</i> = (<i>x</i> + 14) &minus; (<i>x</i> + 6) = 8</div>\n        <div style=\"padding-left: 12px;\"><i>s</i> &minus; <i>c</i> = (<i>x</i> + 14) &minus; (<i>x</i> + 8) = 6</div>\n        <div style=\"padding-left: 12px;\">Area = &radic;<span style=\"border-top: 1px solid currentColor;\"><i>s</i>(<i>s</i> &minus; <i>a</i>)(<i>s</i> &minus; <i>b</i>)(<i>s</i> &minus; <i>c</i>)</span> = &radic;<span style=\"border-top: 1px solid currentColor;\">(<i>x</i> + 14)(<i>x</i>)(8)(6)</span> = <b>&radic;<span style=\"border-top: 1px solid currentColor;\">48<i>x</i>(<i>x</i> + 14)</span></b> &nbsp;&nbsp;...(2)</div>\n\n        <div style=\"margin-top: 10px;\"><b>Equating Area (1) and Area (2):</b></div>\n        <div style=\"padding-left: 12px;\">4(<i>x</i> + 14) = &radic;<span style=\"border-top: 1px solid currentColor;\">48<i>x</i>(<i>x</i> + 14)</span></div>\n        <div style=\"padding-left: 12px;\">Squaring both sides:</div>\n        <div style=\"padding-left: 12px;\">16(<i>x</i> + 14)<sup>2</sup> = 48<i>x</i>(<i>x</i> + 14)</div>\n        <div style=\"padding-left: 12px;\">Dividing both sides by 16(<i>x</i> + 14) [since <i>x</i> + 14 &ne; 0]:</div>\n        <div style=\"padding-left: 12px;\"><i>x</i> + 14 = 3<i>x</i></div>\n        <div style=\"padding-left: 12px;\">&rArr; 3<i>x</i> &minus; <i>x</i> = 14</div>\n        <div style=\"padding-left: 12px;\">&rArr; 2<i>x</i> = 14 &nbsp;&rArr;&nbsp; <b><i>x</i> = 7 cm</b>.</div>\n\n        <div style=\"margin-top: 8px;\"><b>Calculate lengths of sides:</b></div>\n        <div style=\"padding-left: 12px;\">&bull; <b><i>AB</i> = <i>x</i> + 8 = 7 + 8 = 15 cm</b></div>\n        <div style=\"padding-left: 12px;\">&bull; <b><i>AC</i> = <i>x</i> + 6 = 7 + 6 = 13 cm</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">AB = 15 cm, &nbsp; AC = 13 cm</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 13 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 13:</div>\n    <div class=\"q-text\">\n      Prove that opposite sides of a quadrilateral circumscribing a circle subtend supplementary angles at the centre of the circle.\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 230\" width=\"380\" height=\"230\">\n          <circle cx=\"190\" cy=\"115\" r=\"50\" fill=\"#FFFDF0\" stroke=\"#FFD600\" stroke-width=\"2.5\"/>\n          <circle cx=\"190\" cy=\"115\" r=\"3.5\" fill=\"#334155\"/>\n          <text x=\"180\" y=\"115\" font-size=\"12\" font-weight=\"bold\" fill=\"#334155\">O</text>\n\n          <polygon points=\"120,185 260,185 260,45 120,45\" fill=\"none\" stroke=\"#0284C7\" stroke-width=\"2.5\"/>\n          <text x=\"105\" y=\"195\" font-size=\"13\" font-weight=\"bold\" fill=\"#0284C7\">A</text>\n          <text x=\"270\" y=\"195\" font-size=\"13\" font-weight=\"bold\" fill=\"#0284C7\">B</text>\n          <text x=\"270\" y=\"45\" font-size=\"13\" font-weight=\"bold\" fill=\"#0284C7\">C</text>\n          <text x=\"105\" y=\"45\" font-size=\"13\" font-weight=\"bold\" fill=\"#0284C7\">D</text>\n\n          <!-- Radii to contact points P, Q, R, S -->\n          <line x1=\"190\" y1=\"115\" x2=\"190\" y2=\"165\" stroke=\"#DC2626\" stroke-width=\"1.5\" stroke-dasharray=\"2,2\"/>\n          <line x1=\"190\" y1=\"115\" x2=\"240\" y2=\"115\" stroke=\"#DC2626\" stroke-width=\"1.5\" stroke-dasharray=\"2,2\"/>\n          <line x1=\"190\" y1=\"115\" x2=\"190\" y2=\"65\" stroke=\"#DC2626\" stroke-width=\"1.5\" stroke-dasharray=\"2,2\"/>\n          <line x1=\"190\" y1=\"115\" x2=\"140\" y2=\"115\" stroke=\"#DC2626\" stroke-width=\"1.5\" stroke-dasharray=\"2,2\"/>\n\n          <!-- Lines OA, OB, OC, OD -->\n          <line x1=\"190\" y1=\"115\" x2=\"120\" y2=\"185\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n          <line x1=\"190\" y1=\"115\" x2=\"260\" y2=\"185\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n          <line x1=\"190\" y1=\"115\" x2=\"260\" y2=\"45\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n          <line x1=\"190\" y1=\"115\" x2=\"120\" y2=\"45\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n        </svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: 8 congruent angle pairs surrounding centre O</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Easy Step-by-Step Proof:</div>\n      <div class=\"sol-step\">\n        <div>Let <i>ABCD</i> be a quadrilateral circumscribing a circle with centre <i>O</i>, touching sides <i>AB</i>, <i>BC</i>, <i>CD</i>, and <i>DA</i> at points <i>P</i>, <i>Q</i>, <i>R</i>, and <i>S</i> respectively.</div>\n        <div>Join <i>OP</i>, <i>OQ</i>, <i>OR</i>, <i>OS</i> and vertices <i>OA</i>, <i>OB</i>, <i>OC</i>, <i>OD</i>.</div>\n        <div style=\"margin-top: 6px;\">In &Delta;<i>OAP</i> and &Delta;<i>OAS</i>:</div>\n        <div style=\"padding-left: 12px;\">&bull; <i>AP</i> = <i>AS</i> <span class=\"reason\">[Tangents from A]</span></div>\n        <div style=\"padding-left: 12px;\">&bull; <i>OP</i> = <i>OS</i> <span class=\"reason\">[Radii]</span></div>\n        <div style=\"padding-left: 12px;\">&bull; <i>OA</i> = <i>OA</i> <span class=\"reason\">[Common]</span></div>\n        <div style=\"padding-left: 12px;\">&rArr; &Delta;<i>OAP</i> &cong; &Delta;<i>OAS</i> &nbsp;&rArr;&nbsp; <b>&ang;1 = &ang;8</b>.</div>\n        <div style=\"margin-top: 6px;\">Similarly, by congruency of the remaining triangle pairs:</div>\n        <div style=\"padding-left: 12px;\"><b>&ang;2 = &ang;3</b>, &nbsp;&nbsp; <b>&ang;4 = &ang;5</b>, &nbsp;&nbsp; <b>&ang;6 = &ang;7</b>.</div>\n        <div style=\"margin-top: 6px;\">The sum of all 8 angles around the complete circle at point <i>O</i> is 360&deg;:</div>\n        <div style=\"padding-left: 12px;\">&ang;1 + &ang;2 + &ang;3 + &ang;4 + &ang;5 + &ang;6 + &ang;7 + &ang;8 = 360&deg;</div>\n        <div style=\"padding-left: 12px;\">Substituting &ang;1 = &ang;8, &ang;3 = &ang;2, &ang;4 = &ang;5, &ang;6 = &ang;7:</div>\n        <div style=\"padding-left: 12px;\">2 &ang;2 + 2 &ang;3 + 2 &ang;6 + 2 &ang;7 = 360&deg;</div>\n        <div style=\"padding-left: 12px;\">&rArr; 2[(&ang;2 + &ang;3) + (&ang;6 + &ang;7)] = 360&deg;</div>\n        <div style=\"padding-left: 12px;\">&rArr; (&ang;2 + &ang;3) + (&ang;6 + &ang;7) = 180&deg;</div>\n        <div style=\"padding-left: 12px; margin-top: 4px;\">Since &ang;2 + &ang;3 = &ang;<i>AOB</i> and &ang;6 + &ang;7 = &ang;<i>COD</i>:</div>\n        <div style=\"padding-left: 12px;\">&rArr; <b>&ang;<i>AOB</i> + &ang;<i>COD</i> = 180&deg;</b>.</div>\n        <div style=\"margin-top: 6px;\">Similarly, we can prove:</div>\n        <div style=\"padding-left: 12px;\">&rArr; <b>&ang;<i>BOC</i> + &ang;<i>AOD</i> = 180&deg;</b>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Result: </span>\n        <span class=\"ans-val\">Hence Proved (&ang;AOB + &ang;COD = 180&deg; and &ang;BOC + &ang;AOD = 180&deg;).</span>\n      </div>\n    </div>\n  </div>\n\n</div>\n"
+  }
 };

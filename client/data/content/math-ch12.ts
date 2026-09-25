@@ -1,1031 +1,427 @@
-import { ChapterContent } from "../chapterContent";
+import { ChapterContent } from "../types";
 
 export const mathCh12: ChapterContent = {
-    id: "ch12",
-    number: 12,
-    title: "Surface Areas and Volumes",
-    introduction: "In this chapter, we explore the properties of three-dimensional figures formed by combining basic solids. We focus on calculating their total surface areas and total volumes using established geometric principles.",
-    definitions: [
-        { term: "Surface Area", description: "The total area that the surface of an object occupies." },
-        { term: "Volume", description: "The amount of space that a substance or object occupies." },
-        { term: "Combination of Solids", description: "A new solid figure formed by joining two or more basic three-dimensional objects." }
-    ],
-    keyPoints: [
-        "The total surface area of a combination is the sum of the curved surface areas of visible parts.",
-        "The total volume of a combination is the algebraic sum of the individual volumes.",
-        "When solids are joined, the surfaces that touch are no longer part of the total surface area."
-    ],
-    formulas: [
-        { name: "Cone CSA", formula: "πrl" },
-        { name: "Cylinder TSA", formula: "2πr(r + h)" },
-        { name: "Sphere Volume", formula: "(4/3)πr³" },
-        { name: "Hemisphere TSA", formula: "3πr²" }
-    ],
-    crux: [
-        "Identify which surfaces are 'joined' to exclude them from surface area calculations.",
-        "Always check if units are consistent (cm, m, mm) before starting calculations.",
-        "For volume, simply add or subtract the individual solid volumes as per the problem description."
-    ],
-    exercises: [
-        { id: "examples", name: "Examples", questions: [] },
-        { id: "exercise1", name: "Exercise 12.1", questions: [] },
-        { id: "exercise2", name: "Exercise 12.2", questions: [] }
-    ],
-    examples: [],
-    theorems: [],
-    mcqs: [
-		{
-				"id": "mcq1",
-				"question": "<span style=\"font-weight: normal;\">A solid is in the shape of a cone standing on a hemisphere with both their radii being equal to 1 cm and the height of the cone is equal to its radius. The volume of the solid is:</span>",
-				"options": [
-						"π cm³",
-						"2π cm³",
-						"3π cm³",
-						"4π cm³"
-				],
-				"correctAnswer": "π cm³"
-		},
-		{
-				"id": "mcq2",
-				"question": "<span style=\"font-weight: normal;\">Combining two cubes of side 'a' end to end results in a cuboid with surface area:</span>",
-				"options": [
-						"12a²",
-						"10a²",
-						"8a²",
-						"6a²"
-				],
-				"correctAnswer": "10a²"
-		},
-		{
-				"id": "mcq3",
-				"question": "<span style=\"font-weight: normal;\">A cylindrical pencil sharpened at one end is combination of:</span>",
-				"options": [
-						"a cone and a cylinder",
-						"frustum of a cone and a cylinder",
-						"a hemisphere and a cylinder",
-						"two cylinders"
-				],
-				"correctAnswer": "a cone and a cylinder"
-		},
-		{
-				"id": "mcq4",
-				"question": "<span style=\"font-weight: normal;\">A surahi is the combination of:</span>",
-				"options": [
-						"a sphere and a cylinder",
-						"a hemisphere and a cylinder",
-						"two hemispheres",
-						"a cylinder and a cone"
-				],
-				"correctAnswer": "a sphere and a cylinder"
-		},
-		{
-				"id": "mcq5",
-				"question": "<span style=\"font-weight: normal;\">A plumbline (sahul) is the combination of:</span>",
-				"options": [
-						"a cone and a cylinder",
-						"a hemisphere and a cone",
-						"frustum of a cone and a cylinder",
-						"sphere and cylinder"
-				],
-				"correctAnswer": "a hemisphere and a cone"
-		},
-		{
-				"id": "mcq6",
-				"question": "<span style=\"font-weight: normal;\">The shape of a gilli, in the gilli-danda game, is a combination of:</span>",
-				"options": [
-						"two cylinders",
-						"a cone and a cylinder",
-						"two cones and a cylinder",
-						"two cylinders and a cone"
-				],
-				"correctAnswer": "two cones and a cylinder"
-		},
-		{
-				"id": "mcq7",
-				"question": "<span style=\"font-weight: normal;\">A shuttle cock used for playing badminton has the shape of the combination of:</span>",
-				"options": [
-						"a cylinder and a sphere",
-						"a sphere and a cone",
-						"a cylinder and a hemisphere",
-						"frustum of cone and a hemisphere"
-				],
-				"correctAnswer": "frustum of cone and a hemisphere"
-		},
-		{
-				"id": "mcq8",
-				"question": "<span style=\"font-weight: normal;\">A medicine capsule is in the shape of a cylinder of diameter 0.5 cm with two hemispheres stuck to each of its ends. The length of entire capsule is 2 cm. The capacity of the capsule is:</span>",
-				"options": [
-						"0.36 cm³",
-						"0.35 cm³",
-						"0.34 cm³",
-						"0.33 cm³"
-				],
-				"correctAnswer": "0.36 cm³"
-		},
-		{
-				"id": "mcq9",
-				"question": "<span style=\"font-weight: normal;\">If two solid hemispheres of same base radius r are joined together along their bases, then curved surface area of this new solid is:</span>",
-				"options": [
-						"4πr²",
-						"6πr²",
-						"3πr²",
-						"8πr²"
-				],
-				"correctAnswer": "4πr²"
-		},
-		{
-				"id": "mcq10",
-				"question": "<span style=\"font-weight: normal;\">Volume of a bird-bath which consists of a cylinder with a hemispherical depression at one end, with height h and radius r, is:</span>",
-				"options": [
-						"πr²h + (2/3)πr³",
-						"πr²h - (2/3)πr³",
-						"πr²h - (4/3)πr³",
-						"None of these"
-				],
-				"correctAnswer": "πr²h - (2/3)πr³"
-		}
-],
-    summary: [
-        "Mastered the calculation of surface areas for complex combined solids.",
-        "Learned to compute the volume of air or material inside combined shapes.",
-        "Applied formulas to real-world objects like medicine capsules, tents, and decorative items."
-    ],
-
-    isHtmlView: true,
-    htmlOverview: `<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Surface Areas and Volumes - Overview</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
-
-        body {
-            font-family: 'Kalam', cursive;
-            margin: 0;
-            padding: 15px;
-            background: #fff;
-            color: #333;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #6C63FF;
-            padding-bottom: 10px;
-            font-family: 'Nunito', sans-serif;
-        }
-
-        .logo {
-            color: #6C63FF;
-            font-size: 24px;
-            font-weight: 800;
-        }
-
-        .chapter-title {
-            text-align: center;
-            color: #333;
-            font-size: 20px;
-            font-weight: 700;
-            margin: 10px 0;
-            font-family: 'Kalam', cursive;
-        }
-
-        .content-box { background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px; padding: 15px; margin-bottom: 15px; display: flow-root; transition: transform 0.2s ease; }
-
-        .section-title {
-            color: #D32F2F;
-            font-weight: 700;
-            font-size: 1.2em;
-            margin-bottom: 10px;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 5px;
-        }
-
-        .formula-box {
-            background: #E8F5E9;
-            border-left: 4px solid #4CAF50;
-            padding: 10px;
-            margin: 10px 0;
-            font-family: 'Nunito', sans-serif;
-        }
-
-        .step {
-            margin-bottom: 8px;
-            font-size: 1.1em;
-            color: #000;
-            line-height: 1.5;
-        }
-
-        
-    
-
-
-img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; height: auto; border: 1px solid #ddd; border-radius: 6px; padding: 5px; background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-@media (max-width: 600px) { img { float: none; display: block; margin: 10px auto; max-width: 100%; } }
-</style>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    renderMathInElement(document.body, {
-      delimiters: [
-        {left: '\\\\(', right: '\\\\)', display: false},
-        {left: '\\\\[', right: '\\\\]', display: true}
-      ]
-    });
-  });
-</script>
-
-<style>
-  body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
-  .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #AB47BC !important; color: #fff !important; }
-  h1, h2, h3, h4, h5, h6 { color: #AB47BC !important; }
-  .question { color: #AB47BC !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
-  .formula { color: #4CAF50 !important; }
-  .true-text { color: #4CAF50 !important; }
-  .false-text { color: #F44336 !important; }
-  table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
-  .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
-  img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #AB47BC !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
-  * { font-family: 'Noto Sans', sans-serif !important; }
-
-  .question { font-size: 0.95em !important; }
-  .sub-question { font-size: 0.9em !important; }
-  .step { font-size: 0.9em !important; }
-  .final-answer { font-size: 0.95em !important; }
-</style>
-</head>
-
-<body>
-
-    
-
-    <div class="content-box">
-        <div class="section-title">1. Introduction</div>
-        <div class="step">In this chapter, we determine the surface area and volume of solid figures formed by combining
-            two or more basic solids like cube, cuboid, cylinder, cone, sphere and hemisphere.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxwYXRoIGQ9Ik0gNDAgNjAgTCA0MCAxMjAgQSAyMCA2LjY2NjY2NjY2NjY2NjY2NyAwIDAgMCA4MCAxMjAgTCA4MCA2MCBaIiBmaWxsPSIjZGRkIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48ZWxsaXBzZSBjeD0iNjAiIGN5PSI2MCIgcng9IjIwIiByeT0iNi42NjY2NjY2NjY2NjY2NjciIGZpbGw9IiNkZGQiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjYwIiB5PSIxNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPkN5bGluZGVyPC90ZXh0PjxwYXRoIGQ9Ik0gMTUwIDQwIEwgMTMwIDEyMCBBIDIwIDYuNjY2NjY2NjY2NjY2NjY3IDAgMCAwIDE3MCAxMjAgWiIgZmlsbD0iI2ZmZTBiMiIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iMTUwIiB5PSIxNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPkNvbmU8L3RleHQ+PGNpcmNsZSBjeD0iMjQwIiBjeT0iODAiIHI9IjI1IiBmaWxsPSJibGFjayIgc3Ryb2tlPSIjZTFiZWU3IiBzdHJva2Utd2lkdGg9IjEiLz48dGV4dCB4PSIyNDAiIHk9IjE0MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+U3BoZXJlPC90ZXh0Pjwvc3ZnPg==" alt="Basic Solids">
-    </div>
-
-    <div class="content-box">
-        <div class="section-title">2. Key Formulas</div>
-        <div class="formula-box">
-            <strong>Cuboid:</strong><br>
-            SA = 2(lb + bh + hl)<br>
-            Volume = lbh<br><br>
-            <strong>Cube:</strong><br>
-            SA = 6a²<br>
-            Volume = a³<br><br>
-            <strong>Cylinder:</strong><br>
-            CSA = 2πrh<br>
-            TSA = 2πr(r + h)<br>
-            Volume = πr²h<br><br>
-            <strong>Cone:</strong><br>
-            CSA = πrl (where l = √(h² + r²))<br>
-            TSA = πr(l + r)<br>
-            Volume = (1/3)πr²h<br><br>
-            <strong>Sphere:</strong><br>
-            SA = 4πr²<br>
-            Volume = (4/3)πr³<br><br>
-            <strong>Hemisphere:</strong><br>
-            CSA = 2πr²<br>
-            TSA = 3πr²<br>
-            Volume = (2/3)πr³
-        </div>
-    </div>
-
-    <div class="content-box">
-        <div class="section-title">3. Surface Area of Combination</div>
-        <div class="step">The total surface area of a combined solid is the sum of the curved surface areas of the
-            individual parts that are visible. Note that we do not add the areas of the surfaces that are joined
-            together.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="section-title">4. Volume of Combination</div>
-        <div class="step">The volume of a combined solid is strictly the sum of the volumes of the individual solids.
-        </div>
-    </div>
-
-</body>
-
-</html>`,
-    htmlExercises: {
-        exercise1: `<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Surface Areas and Volumes - Exercise 12.1</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
-
-        body {
-            font-family: 'Kalam', cursive;
-            margin: 0;
-            padding: 15px;
-            background: #fff;
-            color: #333;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #6C63FF;
-            padding-bottom: 10px;
-            font-family: 'Nunito', sans-serif;
-        }
-
-        .logo {
-            color: #6C63FF;
-            font-size: 24px;
-            font-weight: 800;
-        }
-
-        .chapter-title {
-            text-align: center;
-            color: #333;
-            font-size: 20px;
-            font-weight: 700;
-            margin: 10px 0;
-            font-family: 'Kalam', cursive;
-        }
-
-        .content-box { background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px; padding: 15px; margin-bottom: 15px; display: flow-root; transition: transform 0.2s ease; }
-
-        .question {
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: #333;
-        }
-
-        .step {
-            margin-bottom: 8px;
-            font-size: 1.1em;
-            color: #000;
-            line-height: 1.5;
-        }
-
-        .final-answer {
-            color: #2E7D32;
-            font-weight: 700;
-            margin-top: 10px;
-            font-size: 1.2em;
-        }
-
-        
-
-        .solution-header {
-            color: #2E7D32;
-            font-weight: 700;
-            margin-bottom: 5px;
-        }
-    
-
-
-img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; height: auto; border: 1px solid #ddd; border-radius: 6px; padding: 5px; background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-@media (max-width: 600px) { img { float: none; display: block; margin: 10px auto; max-width: 100%; } }
-</style>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    renderMathInElement(document.body, {
-      delimiters: [
-        {left: '\\\\(', right: '\\\\)', display: false},
-        {left: '\\\\[', right: '\\\\]', display: true}
-      ]
-    });
-  });
-</script>
-
-<style>
-  body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
-  .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #AB47BC !important; color: #fff !important; }
-  h1, h2, h3, h4, h5, h6 { color: #AB47BC !important; }
-  .question { color: #AB47BC !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
-  .formula { color: #4CAF50 !important; }
-  .true-text { color: #4CAF50 !important; }
-  .false-text { color: #F44336 !important; }
-  table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
-  .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
-  img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #AB47BC !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
-  * { font-family: 'Noto Sans', sans-serif !important; }
-
-  .question { font-size: 0.95em !important; }
-  .sub-question { font-size: 0.9em !important; }
-  .step { font-size: 0.9em !important; }
-  .final-answer { font-size: 0.95em !important; }
-</style>
-</head>
-
-<body>
-
-    
-
-    <div class="content-box">
-        <div class="question">1. Two cubes each of volume 64 cm³ are joined end to end. Find the surface area of the
-            resulting cuboid.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxwYXRoIGQ9Ik0gNTAgMTMwLjAgTCA4MC4wIDEwMCBMIDE0MC4wIDEwMCBMIDExMCAxMzAuMCBaIiBmaWxsPSIjZmZmOWM0IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48cmVjdCB4PSI1MCIgeT0iMTMwLjAiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgZmlsbD0iI2ZmZjljNCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHBhdGggZD0iTSAxMTAgMTMwLjAgTCAxNDAuMCAxMDAgTCAxNDAuMCAxNjAgTCAxMTAgMTkwLjAgWiIgZmlsbD0iI2ZmZjljNCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHBhdGggZD0iTSAxMTAgMTMwLjAgTCAxNDAuMCAxMDAgTCAyMDAuMCAxMDAgTCAxNzAgMTMwLjAgWiIgZmlsbD0iI2ZmZjljNCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHJlY3QgeD0iMTEwIiB5PSIxMzAuMCIgd2lkdGg9IjYwIiBoZWlnaHQ9IjYwIiBmaWxsPSIjZmZmOWM0IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48cGF0aCBkPSJNIDE3MCAxMzAuMCBMIDIwMC4wIDEwMCBMIDIwMC4wIDE2MCBMIDE3MCAxOTAuMCBaIiBmaWxsPSIjZmZmOWM0IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48dGV4dCB4PSIxMTAiIHk9IjIyMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+VHdvIEN1YmVzIEpvaW5lZDwvdGV4dD48dGV4dCB4PSI4MCIgeT0iMTgwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj40Y208L3RleHQ+PC9zdmc+" alt="Two Cubes Joined">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Volume of cube = a³ = 64. So a = 4 cm.</div>
-        <div class="step">When joined end to end, length L = 4 + 4 = 8 cm.</div>
-        <div class="step">Breadth B = 4 cm. Height H = 4 cm.</div>
-        <div class="step">Surface Area = 2(LB + BH + HL)</div>
-        <div class="step">= 2(32 + 16 + 32)</div>
-        <div class="step">= 2(80) = 160 cm².</div>
-        <div class="final-answer">Surface Area = 160 cm².</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">2. A vessel is in the form of a hollow hemisphere mounted by a hollow cylinder. The
-            diameter of the hemisphere is 14 cm and the total height of the vessel is 13 cm. Find the inner surface area
-            of the vessel.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxwYXRoIGQ9Ik0gMTAwIDE1MCBBIDUwIDUwIDAgMCAwIDIwMCAxNTAiIGZpbGw9IiNiYmRlZmIiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjxlbGxpcHNlIGN4PSIxNTAiIGN5PSIxNTAiIHJ4PSI1MCIgcnk9IjE2LjY2NjY2NjY2NjY2NjY2OCIgZmlsbD0iI2UzZjJmZCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHBhdGggZD0iTSAxMDAgMTEwIEwgMTAwIDE1MCBBIDUwIDE2LjY2NjY2NjY2NjY2NjY2OCAwIDAgMCAyMDAgMTUwIEwgMjAwIDExMCBaIiBmaWxsPSJub25lIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48ZWxsaXBzZSBjeD0iMTUwIiBjeT0iMTEwIiByeD0iNTAiIHJ5PSIxNi42NjY2NjY2NjY2NjY2NjgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjE1MCIgeT0iMjUwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5IZW1pc3BoZXJlICsgQ3lsaW5kZXI8L3RleHQ+PGxpbmUgeDE9IjIyMCIgeTE9IjExMCIgeDI9IjIyMCIgeTI9IjIwMCIgc3Ryb2tlPSJncmF5IiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1kYXNoYXJyYXk9IjQiIGZpbGw9Im5vbmUiLz48dGV4dCB4PSIyMzUiIHk9IjE1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MTNjbTwvdGV4dD48bGluZSB4MT0iMTAwIiB5MT0iMTUwIiB4Mj0iMjAwIiB5Mj0iMTUwIiBzdHJva2U9ImdyYXkiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWRhc2hhcnJheT0iNCIgZmlsbD0ibm9uZSIvPjx0ZXh0IHg9IjE1MCIgeT0iMTY1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5kPTE0Y208L3RleHQ+PC9zdmc+" alt="Vessel Diagram">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Diameter = 14 cm => Radius r = 7 cm.</div>
-        <div class="step">Total height = 13 cm.</div>
-        <div class="step">Height of hemisphere portion = radius = 7 cm.</div>
-        <div class="step">Height of cylinder h = 13 - 7 = 6 cm.</div>
-        <div class="step">Inner Surface Area = CSA of Cylinder + CSA of Hemisphere.</div>
-        <div class="step">= 2πrh + 2πr²</div>
-        <div class="step">= 2πr(h + r)</div>
-        <div class="step">= 2 × (22/7) × 7 × (6 + 7)</div>
-        <div class="step">= 44 × 13 = 572 cm².</div>
-        <div class="final-answer">Inner Surface Area = 572 cm².</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">3. A toy is in the form of a cone of radius 3.5 cm mounted on a hemisphere of same radius.
-            The total height of the toy is 15.5 cm. Find the total surface area of the toy.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxwYXRoIGQ9Ik0gMTEwIDE1MCBBIDQwIDQwIDAgMCAwIDE5MCAxNTAgWiIgZmlsbD0iI2ZmY2NiYyIgc3Ryb2tlPSJibGFjayIvPjxwYXRoIGQ9Ik0gMTUwIDMwIEwgMTEwIDE1MCBMIDE5MCAxNTAgWiIgZmlsbD0iI2ZmZjljNCIgc3Ryb2tlPSJibGFjayIvPjxsaW5lIHgxPSIyMTAiIHkxPSIzMCIgeDI9IjIxMCIgeTI9IjE5MCIgc3Ryb2tlPSJncmF5IiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1kYXNoYXJyYXk9IjQiIGZpbGw9Im5vbmUiLz48dGV4dCB4PSIyMzAiIHk9IjExMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MTUuNWNtPC90ZXh0PjxsaW5lIHgxPSIxNTAiIHkxPSIxNTAiIHgyPSIxOTAiIHkyPSIxNTAiIHN0cm9rZT0iZ3JheSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtZGFzaGFycmF5PSI0IiBmaWxsPSJub25lIi8+PHRleHQgeD0iMTcwIiB5PSIxNjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPnI9My41PC90ZXh0Pjwvc3ZnPg==" alt="Toy Diagram">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Radius r = 3.5 cm. Total height = 15.5 cm.</div>
-        <div class="step">Height of cone h = 15.5 - 3.5 = 12 cm.</div>
-        <div class="step">Slant height l = √(h² + r²) = √(144 + 3.5²) = √(144 + 12.25) = √156.25 = 12.5 cm.</div>
-        <div class="step">Total Surface Area = CSA of Cone + CSA of Hemisphere.</div>
-        <div class="step">= πrl + 2πr²</div>
-        <div class="step">= πr(l + 2r)</div>
-        <div class="step">= (22/7) × 3.5 × (12.5 + 2×3.5)</div>
-        <div class="step">= 11 × (12.5 + 7) = 11 × 19.5 = 214.5 cm².</div>
-        <div class="final-answer">Total Surface Area = 214.5 cm².</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">4. A cubical block of side 7 cm is surmounted by a hemisphere. What is the greatest
-            diameter the hemisphere can have? Find the surface area of the solid.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgMzIwIiB3aWR0aD0iMzIwIiBoZWlnaHQ9IjMyMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPgogIDxkZWZzPgogICAgPCEtLSBBcnJvd2hlYWQgbWFya2VycyAtLT4KICAgIDxtYXJrZXIgaWQ9ImFycm93IiB2aWV3Qm94PSIwIDAgMTAgMTAiIHJlZlg9IjUiIHJlZlk9IjUiIG1hcmtlcldpZHRoPSI2IiBtYXJrZXJIZWlnaHQ9IjYiIG9yaWVudD0iYXV0by1zdGFydC1yZXZlcnNlIj4KICAgICAgPHBhdGggZD0iTSAwIDEuNSBMIDEwIDUgTCAwIDguNSB6IiBmaWxsPSJibGFjayIvPgogICAgPC9tYXJrZXI+CiAgICA8IS0tIFNwaGVyZSBSYWRpYWwgR3JhZGllbnQgZm9yIDNEIGxvb2sgLS0+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9ImhlbWlHcmFkIiBjeD0iNTAlIiBjeT0iMzAlIiByPSI1MCUiIGZ4PSI0MCUiIGZ5PSIyMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjOTBjYWY5IiBzdG9wLW9wYWNpdHk9IjAuODUiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSI2MCUiIHN0b3AtY29sb3I9IiMxZTg4ZTUiIHN0b3Atb3BhY2l0eT0iMC44Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzBkNDdhMSIgc3RvcC1vcGFjaXR5PSIwLjk1Ii8+CiAgICA8L3JhZGlhbEdyYWRpZW50PgogIDwvZGVmcz4KCiAgPCEtLSAzRCBDdWJlIEZhY2VzIC0tPgogIDwhLS0gVG9wIGZhY2UgLS0+CiAgPHBhdGggZD0iTSA4MCAxMzAgTCAxMzUgODAgTCAyNzUgODAgTCAyMjAgMTMwIFoiIGZpbGw9IiMwMDYyYjAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMS41Ii8+CiAgPCEtLSBSaWdodCBmYWNlIC0tPgogIDxwYXRoIGQ9Ik0gMjIwIDEzMCBMIDI3NSA4MCBMIDI3NSAyMTAgTCAyMjAgMjYwIFoiIGZpbGw9IiMwMDUwOGYiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMS41Ii8+CiAgPCEtLSBGcm9udCBmYWNlIC0tPgogIDxwYXRoIGQ9Ik0gODAgMTMwIEwgMjIwIDEzMCBMIDIyMCAyNjAgTCA4MCAyNjAgWiIgZmlsbD0iIzAwN2FkOSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KCiAgPCEtLSBIZW1pc3BoZXJlIEJhc2UgRWxsaXBzZSAtLT4KICA8ZWxsaXBzZSBjeD0iMTc3LjUiIGN5PSIxMDUiIHJ4PSI2NSIgcnk9IjIyIiBmaWxsPSJub25lIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEuNSIvPgoKICA8IS0tIEhlbWlzcGhlcmUgRG9tZSAtLT4KICA8cGF0aCBkPSJNIDExMi41IDEwNSBBIDY1IDY1IDAgMCAxIDI0Mi41IDEwNSBaIiBmaWxsPSJ1cmwoI2hlbWlHcmFkKSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KICAKICA8IS0tIFJlLWRyYXcgZnJvbnQgaGFsZiBvZiBlbGxpcHNlIG91dGxpbmUgb24gdG9wIG9mIGRvbWUgZm9yIGRlcHRoIC0tPgogIDxlbGxpcHNlIGN4PSIxNzcuNSIgY3k9IjEwNSIgcng9IjY1IiByeT0iMjIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMS41Ii8+CgogIDwhLS0gRGltZW5zaW9uIEhlbHBlciAvIEV4dGVuc2lvbiBsaW5lcyAtLT4KICA8IS0tIEhlaWdodCBoZWxwZXJzIC0tPgogIDxsaW5lIHgxPSI3NSIgeTE9IjEzMCIgeDI9IjUwIiB5Mj0iMTMwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1kYXNoYXJyYXk9IjIiLz4KICA8bGluZSB4MT0iNzUiIHkxPSIyNjAiIHgyPSI1MCIgeTI9IjI2MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtZGFzaGFycmF5PSIyIi8+CiAgPCEtLSBXaWR0aCBoZWxwZXJzIC0tPgogIDxsaW5lIHgxPSI4MCIgeTE9IjI2NSIgeDI9IjgwIiB5Mj0iMjgwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1kYXNoYXJyYXk9IjIiLz4KICA8bGluZSB4MT0iMjIwIiB5MT0iMjY1IiB4Mj0iMjIwIiB5Mj0iMjgwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1kYXNoYXJyYXk9IjIiLz4KCiAgPCEtLSBMZWZ0IEFycm93IChWZXJ0aWNhbCBIZWlnaHQ6IDcgY20pIC0tPgogIDxsaW5lIHgxPSI1NSIgeTE9IjEzNiIgeDI9IjU1IiB5Mj0iMjU0IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEuNSIgbWFya2VyLXN0YXJ0PSJ1cmwoI2Fycm93KSIgbWFya2VyLWVuZD0idXJsKCNhcnJvdykiLz4KICA8dGV4dCB4PSIzNSIgeT0iMjAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTMiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NyBjbTwvdGV4dD4KCiAgPCEtLSBCb3R0b20gQXJyb3cgKEhvcml6b250YWwgV2lkdGg6IDcgY20pIC0tPgogIDxsaW5lIHgxPSI4NiIgeTE9IjI3NSIgeDI9IjIxNCIgeTI9IjI3NSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxLjUiIG1hcmtlci1zdGFydD0idXJsKCNhcnJvdykiIG1hcmtlci1lbmQ9InVybCgjYXJyb3cpIi8+CiAgPHRleHQgeD0iMTUwIiB5PSIyOTUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMyIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj43IGNtPC90ZXh0PgoKICA8IS0tIERlcHRoIEFycm93IChTaWRlIEVkZ2U6IDcgY20pIC0tPgogIDxsaW5lIHgxPSIyMzIiIHkxPSIxMzciIHgyPSIyNzkiIHkyPSI5NSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxLjUiIG1hcmtlci1zdGFydD0idXJsKCNhcnJvdykiIG1hcmtlci1lbmQ9InVybCgjYXJyb3cpIi8+CiAgPHRleHQgeD0iMjc4IiB5PSIxMzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMyIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj43IGNtPC90ZXh0PgoKICA8IS0tIERpYW1ldGVyIEFycm93IChIZW1pc3BoZXJlOiA3IGNtKSAtLT4KICA8bGluZSB4MT0iMTE4LjUiIHkxPSIxMDUiIHgyPSIyMzYuNSIgeTI9IjEwNSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxLjUiIG1hcmtlci1zdGFydD0idXJsKCNhcnJvdykiIG1hcmtlci1lbmQ9InVybCgjYXJyb3cpIi8+CiAgPHRleHQgeD0iMTc3LjUiIHk9IjkzIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTMiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NyBjbTwvdGV4dD4KPC9zdmc+" alt="Cube with Hemisphere">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Side of cube a = 7 cm.</div>
-        <div class="step">Greatest diameter = Side of cube = 7 cm. Radius r = 3.5 cm.</div>
-        <div class="step">Surface Area = TSA of Cube - Base Area of Hemisphere + CSA of Hemisphere.</div>
-        <div class="step">= 6a² - πr² + 2πr²</div>
-        <div class="step">= 6a² + πr²</div>
-        <div class="step">= 6(49) + (22/7)(3.5)(3.5)</div>
-        <div class="step">= 294 + 38.5 = 332.5 cm².</div>
-        <div class="final-answer">Diameter = 7 cm; Surface Area = 332.5 cm².</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">5. A hemispherical depression is cut out from one face of a cubical wooden block such that
-            the diameter l of the hemisphere is equal to the edge of the cube. Determine the surface area of the
-            remaining solid.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgMzIwIiB3aWR0aD0iMzIwIiBoZWlnaHQ9IjMyMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPgogIDxkZWZzPgogICAgPCEtLSBBcnJvd2hlYWQgbWFya2VycyAtLT4KICAgIDxtYXJrZXIgaWQ9ImFycm93IiB2aWV3Qm94PSIwIDAgMTAgMTAiIHJlZlg9IjUiIHJlZlk9IjUiIG1hcmtlcldpZHRoPSI2IiBtYXJrZXJIZWlnaHQ9IjYiIG9yaWVudD0iYXV0by1zdGFydC1yZXZlcnNlIj4KICAgICAgPHBhdGggZD0iTSAwIDEuNSBMIDEwIDUgTCAwIDguNSB6IiBmaWxsPSJibGFjayIvPgogICAgPC9tYXJrZXI+CiAgICA8IS0tIERlcHJlc3Npb24gYm93bCBHcmFkaWVudCAtLT4KICAgIDxyYWRpYWxHcmFkaWVudCBpZD0iZGVwcmVzc0dyYWQiIGN4PSI1MCUiIGN5PSIxMCUiIHI9IjkwJSIgZng9IjUwJSIgZnk9IjAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAyODhkMSIgc3RvcC1vcGFjaXR5PSIwLjk1Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjMDE1NzliIiBzdG9wLW9wYWNpdHk9IjAuOTUiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAyZjZjIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgPC9kZWZzPgoKICA8IS0tIDEuIFRvcCBGYWNlIG9mIEN1YmUgLS0+CiAgPHBhdGggZD0iTSA4MCAxMzAgTCAxMzUgODAgTCAyNzUgODAgTCAyMjAgMTMwIFoiIGZpbGw9IiM3YWIxZGQiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMS41Ii8+CgogIDwhLS0gMi4gRGVwcmVzc2lvbiBCb3dsIChkcmF3biBpbnNpZGUsIHdpbGwgYmUgcGFydGlhbGx5IHNlZW4gdGhyb3VnaCBzZW1pLXRyYW5zcGFyZW50IGZyb250L3JpZ2h0IGZhY2VzKSAtLT4KICA8cGF0aCBkPSJNIDExMi41IDEwNSBBIDY1IDY1IDAgMCAwIDI0Mi41IDEwNSBaIiBmaWxsPSJ1cmwoI2RlcHJlc3NHcmFkKSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KCiAgPCEtLSAzLiBGcm9udCBGYWNlIG9mIEN1YmUgKFNlbWktdHJhbnNwYXJlbnQgdG8gc2hvdyB0aGUgZGVwcmVzc2lvbiBkZXB0aCBpbnNpZGUpIC0tPgogIDxwYXRoIGQ9Ik0gODAgMTMwIEwgMjIwIDEzMCBMIDIyMCAyNjAgTCA4MCAyNjAgWiIgZmlsbD0iIzhhYmZlYyIgZmlsbC1vcGFjaXR5PSIwLjc1IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEuNSIvPgoKICA8IS0tIDQuIFJpZ2h0IEZhY2Ugb2YgQ3ViZSAoU2VtaS10cmFuc3BhcmVudCkgLS0+CiAgPHBhdGggZD0iTSAyMjAgMTMwIEwgMjc1IDgwIEwgMjc1IDIxMCBMIDIyMCAyNjAgWiIgZmlsbD0iIzY4OWZjYiIgZmlsbC1vcGFjaXR5PSIwLjc1IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEuNSIvPgoKICA8IS0tIDUuIEhlbWlzcGhlcmUgUmltIEVsbGlwc2UgKGRyYXduIG9uIHRvcCBmb3Igb3V0bGluZSBjcmlzcG5lc3MpIC0tPgogIDxlbGxpcHNlIGN4PSIxNzcuNSIgY3k9IjEwNSIgcng9IjY1IiByeT0iMjIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMS41Ii8+CgogIDwhLS0gRGltZW5zaW9uIEhlbHBlciAvIEV4dGVuc2lvbiBsaW5lcyAtLT4KICA8IS0tIEhlaWdodCBoZWxwZXJzIC0tPgogIDxsaW5lIHgxPSI3NSIgeTE9IjEzMCIgeDI9IjUwIiB5Mj0iMTMwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1kYXNoYXJyYXk9IjIiLz4KICA8bGluZSB4MT0iNzUiIHkxPSIyNjAiIHgyPSI1MCIgeTI9IjI2MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtZGFzaGFycmF5PSIyIi8+CiAgPCEtLSBXaWR0aCBoZWxwZXJzIC0tPgogIDxsaW5lIHgxPSI4MCIgeTE9IjI2NSIgeDI9IjgwIiB5Mj0iMjgwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1kYXNoYXJyYXk9IjIiLz4KICA8bGluZSB4MT0iMjIwIiB5MT0iMjY1IiB4Mj0iMjIwIiB5Mj0iMjgwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1kYXNoYXJyYXk9IjIiLz4KCiAgPCEtLSBMZWZ0IEFycm93IChWZXJ0aWNhbCBIZWlnaHQ6IGwpIC0tPgogIDxsaW5lIHgxPSI1NSIgeTE9IjEzNiIgeDI9IjU1IiB5Mj0iMjU0IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEuNSIgbWFya2VyLXN0YXJ0PSJ1cmwoI2Fycm93KSIgbWFya2VyLWVuZD0idXJsKCNhcnJvdykiLz4KICA8dGV4dCB4PSIzNSIgeT0iMjAwIiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5sPC90ZXh0PgoKICA8IS0tIEJvdHRvbSBBcnJvdyAoSG9yaXpvbnRhbCBXaWR0aDogbCkgLS0+CiAgPGxpbmUgeDE9Ijg2IiB5MT0iMjc1IiB4Mj0iMjE0IiB5Mj0iMjc1IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEuNSIgbWFya2VyLXN0YXJ0PSJ1cmwoI2Fycm93KSIgbWFya2VyLWVuZD0idXJsKCNhcnJvdykiLz4KICA8dGV4dCB4PSIxNTAiIHk9IjI5OCIgZm9udC1mYW1pbHk9Ikdlb3JnaWEsIHNlcmlmIiBmb250LXNpemU9IjE4IiBmb250LXN0eWxlPSJpdGFsaWMiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+bDwvdGV4dD4KCiAgPCEtLSBEZXB0aCBBcnJvdyAoU2lkZSBFZGdlOiBsKSAtLT4KICA8bGluZSB4MT0iMjMyIiB5MT0iMTQyIiB4Mj0iMjc5IiB5Mj0iMTAwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEuNSIgbWFya2VyLXN0YXJ0PSJ1cmwoI2Fycm93KSIgbWFya2VyLWVuZD0idXJsKCNhcnJvdykiLz4KICA8dGV4dCB4PSIyNzgiIHk9IjEzMiIgZm9udC1mYW1pbHk9Ikdlb3JnaWEsIHNlcmlmIiBmb250LXNpemU9IjE4IiBmb250LXN0eWxlPSJpdGFsaWMiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+bDwvdGV4dD4KCiAgPCEtLSBEaWFtZXRlciBBcnJvdyAoSGVtaXNwaGVyZTogbCkgLS0+CiAgPGxpbmUgeDE9IjExOC41IiB5MT0iMTA1IiB4Mj0iMjM2LjUiIHkyPSIxMDUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMS41IiBtYXJrZXItc3RhcnQ9InVybCgjYXJyb3cpIiBtYXJrZXItZW5kPSJ1cmwoI2Fycm93KSIvPgogIDx0ZXh0IHg9IjE3Ny41IiB5PSI5MyIgZm9udC1mYW1pbHk9Ikdlb3JnaWEsIHNlcmlmIiBmb250LXNpemU9IjE4IiBmb250LXN0eWxlPSJpdGFsaWMiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+bDwvdGV4dD4KPC9zdmc+" alt="Depression in Cube">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Let edge be l. Radius r = l/2.</div>
-        <div class="step">Surface Area = TSA of Cube - Top Circle Area + CSA of Hemisphere (depression surface).</div>
-        <div class="step">= 6l² - π(l/2)² + 2π(l/2)²</div>
-        <div class="step">= 6l² + π(l/2)²</div>
-        <div class="step">= 6l² + πl²/4</div>
-        <div class="step">= (l²/4)(24 + π).</div>
-        <div class="final-answer">Surface Area = (l²/4)(24 + π) sq units.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">6. A medicine capsule is in the shape of a cylinder with two hemispheres stuck to each of
-            its ends. The length of the entire capsule is 14 mm and the diameter of the capsule is 5 mm. Find its
-            surface area.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjEwNS4wIiB5PSIxMjUiIHdpZHRoPSI5MCIgaGVpZ2h0PSI1MCIgZmlsbD0iI2UxYmVlNyIgc3Ryb2tlPSJub25lIi8+PGxpbmUgeDE9IjEwNS4wIiB5MT0iMTI1IiB4Mj0iMTk1LjAiIHkyPSIxMjUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjxsaW5lIHgxPSIxMDUuMCIgeTE9IjE3NSIgeDI9IjE5NS4wIiB5Mj0iMTc1IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNIDEwNS4wIDEyNSBBIDI1IDI1IDAgMCAwIDEwNS4wIDE3NSBaIiBmaWxsPSIjZTFiZWU3IiBzdHJva2U9ImJsYWNrIi8+PHBhdGggZD0iTSAxOTUuMCAxMjUgQSAyNSAyNSAwIDAgMSAxOTUuMCAxNzUgWiIgZmlsbD0iI2UxYmVlNyIgc3Ryb2tlPSJibGFjayIvPjxsaW5lIHgxPSI4MC4wIiB5MT0iMTkwIiB4Mj0iMjIwLjAiIHkyPSIxOTAiIHN0cm9rZT0iZ3JheSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtZGFzaGFycmF5PSI0IiBmaWxsPSJub25lIi8+PHRleHQgeD0iMTUwIiB5PSIyMDUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjE0bW08L3RleHQ+PC9zdmc+" alt="Capsule Diagram">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Diameter = 5 mm => r = 2.5 mm.</div>
-        <div class="step">Total length = 14 mm.</div>
-        <div class="step">Length of cylinder h = 14 - 2.5 - 2.5 = 9 mm.</div>
-        <div class="step">Surface Area = CSA Cylinder + 2 × CSA Hemisphere.</div>
-        <div class="step">= 2πrh + 2(2πr²)</div>
-        <div class="step">= 2πr(h + 2r)</div>
-        <div class="step">= 2 × (22/7) × 2.5 × (9 + 5)</div>
-        <div class="step">= (110/7) × 14 = 220 mm².</div>
-        <div class="final-answer">Surface Area = 220 mm².</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">7. A tent is in the shape of a cylinder surmounted by a conical top. If the height and
-            diameter of the cylindrical part are 2.1 m and 4 m respectively, and the slant height of the top is 2.8 m,
-            find the area of the canvas used for making the tent. Also, find the cost of the canvas of the tent at the
-            rate of ₹ 500 per m². (Note that the base of the tent will not be covered with canvas.)</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxwYXRoIGQ9Ik0gOTAgMTUwIEwgOTAgMjEwIEEgNjAgMjAuMCAwIDAgMCAyMTAgMjEwIEwgMjEwIDE1MCBaIiBmaWxsPSIjZmZlMGIyIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48ZWxsaXBzZSBjeD0iMTUwIiBjeT0iMTUwIiByeD0iNjAiIHJ5PSIyMC4wIiBmaWxsPSIjZmZlMGIyIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48cGF0aCBkPSJNIDE1MCA1MCBMIDkwIDE1MCBMIDIxMCAxNTAgWiIgZmlsbD0iI2ZmY2NiYyIgc3Ryb2tlPSJibGFjayIvPjxlbGxpcHNlIGN4PSIxNTAiIGN5PSIxNTAiIHJ4PSI2MCIgcnk9IjIwLjAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjIzMCIgeT0iMTgwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4yLjFtPC90ZXh0Pjx0ZXh0IHg9IjE1MCIgeT0iMjcwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5kPTRtPC90ZXh0Pjx0ZXh0IHg9IjkwIiB5PSIxMDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPmw9Mi44bTwvdGV4dD48L3N2Zz4=" alt="Tent Diagram">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Cylinder: h = 2.1 m, d = 4 m => r = 2 m.</div>
-        <div class="step">Cone: l = 2.8 m, r = 2 m.</div>
-        <div class="step">Area of Canvas = CSA Cylinder + CSA Cone.</div>
-        <div class="step">= 2πrh + πrl</div>
-        <div class="step">= πr(2h + l)</div>
-        <div class="step">= (22/7) × 2 × (2×2.1 + 2.8)</div>
-        <div class="step">= (44/7) × (4.2 + 2.8)</div>
-        <div class="step">= (44/7) × 7 = 44 m².</div>
-        <div class="step">Cost = 44 × 500 = ₹ 22000.</div>
-        <div class="final-answer">Area = 44 m²; Cost = ₹ 22000.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">8. From a solid cylinder whose height is 2.4 cm and diameter 1.4 cm, a conical cavity of
-            the same height and same diameter is hollowed out. Find the total surface area of the remaining solid to the
-            nearest cm².</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxwYXRoIGQ9Ik0gMTAwIDEwMCBMIDEwMCAyMDAgQSA1MCAxNi42NjY2NjY2NjY2NjY2NjggMCAwIDAgMjAwIDIwMCBMIDIwMCAxMDAgWiIgZmlsbD0iI2NmZDhkYyIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PGVsbGlwc2UgY3g9IjE1MCIgY3k9IjEwMCIgcng9IjUwIiByeT0iMTYuNjY2NjY2NjY2NjY2NjY4IiBmaWxsPSIjY2ZkOGRjIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48cGF0aCBkPSJNIDEwMCAxMDAgTCAxNTAgMjAwIEwgMjAwIDEwMCIgZmlsbD0iIzkwYTRhZSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLWRhc2hhcnJheT0iMiIvPjxlbGxpcHNlIGN4PSIxNTAiIGN5PSIxMDAiIHJ4PSI1MCIgcnk9IjE1IiBmaWxsPSJub25lIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48dGV4dCB4PSIxNTAiIHk9IjI1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Q29uaWNhbCBDYXZpdHk8L3RleHQ+PC9zdmc+" alt="Conical Cavity">
-        <div class="solution-header">Solution:</div>
-        <div class="step">h = 2.4 cm, d = 1.4 cm => r = 0.7 cm.</div>
-        <div class="step">l = √(h² + r²) = √(2.4² + 0.7²) = √(5.76 + 0.49) = √6.25 = 2.5 cm.</div>
-        <div class="step">TSA = CSA Cylinder + CSA Cone (Cavity inside) + Area of Base (Top is open/hollowed from top
-            but base remains? "From a solid cylinder... cavity hollowed out". Usually base remains unless specified
-            fully through). Letds assume cavity from top. Base solid.</div>
-        <div class="step">TSA = 2πrh + πrl + πr²</div>
-        <div class="step">= πr(2h + l + r)</div>
-        <div class="step">= (22/7) × 0.7 × (4.8 + 2.5 + 0.7)</div>
-        <div class="step">= 2.2 × 8 = 17.6 cm².</div>
-        <div class="step">Nearest cm² = 18 cm².</div>
-        <div class="final-answer">Total Surface Area ≈ 18 cm².</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">9. A wooden article was made by scooping out a hemisphere from each end of a solid
-            cylinder, as shown in Fig. If the height of the cylinder is 10 cm, and its base is of radius 3.5 cm, find
-            the total surface area of the article.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxsaW5lIHgxPSIxMTAiIHkxPSI1MCIgeDI9IjExMCIgeTI9IjIwMCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+PGxpbmUgeDE9IjE5MCIgeTE9IjUwIiB4Mj0iMTkwIiB5Mj0iMjAwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNIDExMCA1MCBBIDQwIDQwIDAgMCAwIDE5MCA1MCIgZmlsbD0iI2VjZWZmMSIgc3Ryb2tlPSJibGFjayIvPjxwYXRoIGQ9Ik0gMTEwIDIwMCBBIDQwIDQwIDAgMCAxIDE5MCAyMDAiIGZpbGw9IiNlY2VmZjEiIHN0cm9rZT0iYmxhY2siLz48dGV4dCB4PSIxNTAiIHk9IjIzMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+aGVtaXNwaGVyaWNhbCBzY29vcHM8L3RleHQ+PC9zdmc+" alt="Scooped Cylinder">
-        <div class="solution-header">Solution:</div>
-        <div class="step">h = 10 cm, r = 3.5 cm.</div>
-        <div class="step">TSA = CSA Cylinder + 2 × CSA Hemisphere (scoops add area).</div>
-        <div class="step">= 2πrh + 2(2πr²)</div>
-        <div class="step">= 2πr(h + 2r)</div>
-        <div class="step">= 2 × (22/7) × 3.5 × (10 + 7)</div>
-        <div class="step">= 22 × 17 = 374 cm².</div>
-        <div class="final-answer">Total Surface Area = 374 cm².</div>
-    </div>
-
-</body>
-
-</html>`,
-        exercise2: `<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Surface Areas and Volumes - Exercise 12.2</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
-
-        body {
-            font-family: 'Kalam', cursive;
-            margin: 0;
-            padding: 15px;
-            background: #fff;
-            color: #333;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #6C63FF;
-            padding-bottom: 10px;
-            font-family: 'Nunito', sans-serif;
-        }
-
-        .logo {
-            color: #6C63FF;
-            font-size: 24px;
-            font-weight: 800;
-        }
-
-        .chapter-title {
-            text-align: center;
-            color: #333;
-            font-size: 20px;
-            font-weight: 700;
-            margin: 10px 0;
-            font-family: 'Kalam', cursive;
-        }
-
-        .content-box { background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px; padding: 15px; margin-bottom: 15px; display: flow-root; transition: transform 0.2s ease; }
-
-        .question {
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: #333;
-        }
-
-        .step {
-            margin-bottom: 8px;
-            font-size: 1.1em;
-            color: #000;
-            line-height: 1.5;
-        }
-
-        .final-answer {
-            color: #2E7D32;
-            font-weight: 700;
-            margin-top: 10px;
-            font-size: 1.2em;
-        }
-
-        
-
-        .solution-header {
-            color: #2E7D32;
-            font-weight: 700;
-            margin-bottom: 5px;
-        }
-    
-
-
-img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; height: auto; border: 1px solid #ddd; border-radius: 6px; padding: 5px; background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-@media (max-width: 600px) { img { float: none; display: block; margin: 10px auto; max-width: 100%; } }
-</style>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    renderMathInElement(document.body, {
-      delimiters: [
-        {left: '\\\\(', right: '\\\\)', display: false},
-        {left: '\\\\[', right: '\\\\]', display: true}
-      ]
-    });
-  });
-</script>
-
-<style>
-  body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
-  .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #AB47BC !important; color: #fff !important; }
-  h1, h2, h3, h4, h5, h6 { color: #AB47BC !important; }
-  .question { color: #AB47BC !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
-  .formula { color: #4CAF50 !important; }
-  .true-text { color: #4CAF50 !important; }
-  .false-text { color: #F44336 !important; }
-  table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
-  .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
-  img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #AB47BC !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
-  * { font-family: 'Noto Sans', sans-serif !important; }
-
-  .question { font-size: 0.95em !important; }
-  .sub-question { font-size: 0.9em !important; }
-  .step { font-size: 0.9em !important; }
-  .final-answer { font-size: 0.95em !important; }
-</style>
-</head>
-
-<body>
-
-    
-
-    <div class="content-box">
-        <div class="question">1. A solid is in the shape of a cone standing on a hemisphere with both their radii being
-            equal to 1 cm and the height of the cone is equal to its radius. Find the volume of the solid in terms of π.
-        </div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxwYXRoIGQ9Ik0gMTEwIDE1MCBBIDQwIDQwIDAgMCAwIDE5MCAxNTAgWiIgZmlsbD0iI2ZmY2NiYyIgc3Ryb2tlPSJibGFjayIvPjxwYXRoIGQ9Ik0gMTUwIDMwIEwgMTEwIDE1MCBMIDE5MCAxNTAgWiIgZmlsbD0iI2ZmZjljNCIgc3Ryb2tlPSJibGFjayIvPjxsaW5lIHgxPSIyMTAiIHkxPSIzMCIgeDI9IjIxMCIgeTI9IjE5MCIgc3Ryb2tlPSJncmF5IiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1kYXNoYXJyYXk9IjQiIGZpbGw9Im5vbmUiLz48dGV4dCB4PSIyMzAiIHk9IjExMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+aD1yPTE8L3RleHQ+PGxpbmUgeDE9IjE1MCIgeTE9IjE1MCIgeDI9IjE5MCIgeTI9IjE1MCIgc3Ryb2tlPSJncmF5IiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1kYXNoYXJyYXk9IjQiIGZpbGw9Im5vbmUiLz48dGV4dCB4PSIxNzAiIHk9IjE2NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+cj0xY208L3RleHQ+PC9zdmc+" alt="Solid Cone on Hemisphere">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Radius r = 1 cm. Height of cone h = r = 1 cm.</div>
-        <div class="step">Volume = Volume of Cone + Volume of Hemisphere.</div>
-        <div class="step">= (1/3)πr²h + (2/3)πr³</div>
-        <div class="step">= (1/3)π(1) + (2/3)π(1)</div>
-        <div class="step">= π cm³.</div>
-        <div class="final-answer">Volume = π cm³.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">2. Rachel, an engineering student, was asked to make a model shaped like a cylinder with
-            two cones attached at its two ends. The diameter of the model is 3 cm and its length is 12 cm. If each cone
-            has a height of 2 cm, find the volume of air contained in the model that Rachel made.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjEwMC4wIiB5PSIxMjUiIHdpZHRoPSIxMDAiIGhlaWdodD0iNTAiIGZpbGw9IiNmZmUwYjIiIHN0cm9rZT0ibm9uZSIvPjxwYXRoIGQ9Ik0gMTAwLjAgMTI1IEwgNzAuMCAxNTAgTCAxMDAuMCAxNzUgWiIgZmlsbD0iI2ZmY2NiYyIgc3Ryb2tlPSJibGFjayIvPjxwYXRoIGQ9Ik0gMjAwLjAgMTI1IEwgMjMwLjAgMTUwIEwgMjAwLjAgMTc1IFoiIGZpbGw9IiNmZmNjYmMiIHN0cm9rZT0iYmxhY2siLz48bGluZSB4MT0iMTAwLjAiIHkxPSIxMjUiIHgyPSIyMDAuMCIgeTI9IjEyNSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+PGxpbmUgeDE9IjEwMC4wIiB5MT0iMTc1IiB4Mj0iMjAwLjAiIHkyPSIxNzUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjx0ZXh0IHg9IjE1MCIgeT0iMjAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5Ud28gQ29uZXMgTW9kZWw8L3RleHQ+PC9zdmc+" alt="Model Diagram">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Diameter = 3 cm => Radius r = 1.5 cm.</div>
-        <div class="step">Total length = 12 cm. Height of each cone h_c = 2 cm.</div>
-        <div class="step">Height of cylinder h_cyl = 12 - 2 - 2 = 8 cm.</div>
-        <div class="step">Volume = Volume Cylinder + 2 × Volume Cone.</div>
-        <div class="step">= πr²h_cyl + 2(1/3)πr²h_c</div>
-        <div class="step">= πr²(h_cyl + (2/3)h_c)</div>
-        <div class="step">= (22/7) × 1.5 × 1.5 × (8 + 4/3)</div>
-        <div class="step">= (22/7) × 2.25 × (28/3)</div>
-        <div class="step">= 22 × 0.75 × 4</div>
-        <div class="step">= 22 × 3 = 66 cm³.</div>
-        <div class="final-answer">Volume = 66 cm³.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">3. A gulab jamun, contains sugar syrup up to about 30% of its volume. Find approximately
-            how much syrup would be found in 45 gulab jamuns, each shaped like a cylinder with two hemispherical ends
-            with length 5 cm and diameter 2.8 cm (see Fig.).</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjEwNS4wIiB5PSIxMjUiIHdpZHRoPSI5MCIgaGVpZ2h0PSI1MCIgZmlsbD0iI2Jyb3duIiBzdHJva2U9Im5vbmUiLz48bGluZSB4MT0iMTA1LjAiIHkxPSIxMjUiIHgyPSIxOTUuMCIgeTI9IjEyNSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+PGxpbmUgeDE9IjEwNS4wIiB5MT0iMTc1IiB4Mj0iMTk1LjAiIHkyPSIxNzUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik0gMTA1LjAgMTI1IEEgMjUgMjUgMCAwIDAgMTA1LjAgMTc1IFoiIGZpbGw9IiNicm93biIgc3Ryb2tlPSJibGFjayIvPjxwYXRoIGQ9Ik0gMTk1LjAgMTI1IEEgMjUgMjUgMCAwIDEgMTk1LjAgMTc1IFoiIGZpbGw9IiNicm93biIgc3Ryb2tlPSJibGFjayIvPjxsaW5lIHgxPSI4MC4wIiB5MT0iMTkwIiB4Mj0iMjIwLjAiIHkyPSIxOTAiIHN0cm9rZT0iZ3JheSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtZGFzaGFycmF5PSI0IiBmaWxsPSJub25lIi8+PHRleHQgeD0iMTUwIiB5PSIyMDUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPkxlbmd0aD88L3RleHQ+PC9zdmc+" alt="Gulab Jamun">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Diameter 2.8 cm => Radius r = 1.4 cm.</div>
-        <div class="step">Total length = 5 cm. Cylinder length h = 5 - 1.4 - 1.4 = 2.2 cm.</div>
-        <div class="step">Volume of one Gulab Jamun = Vol Cyl + 2 × Vol Hemi.</div>
-        <div class="step">= πr²h + (4/3)πr³</div>
-        <div class="step">= πr²(h + 4r/3)</div>
-        <div class="step">= (22/7) × 1.4 × 1.4 × (2.2 + 5.6/3)</div>
-        <div class="step">= 6.16 × (2.2 + 1.866) = 6.16 × 4.066 ≈ 25.05 cm³.</div>
-        <div class="step">Volume of 45 Gulab Jamuns = 45 × 25.05 = 1127.25 cm³.</div>
-        <div class="step">Syrup = 30% of Volume = 0.30 × 1127.25 ≈ 338 cm³.</div>
-        <div class="final-answer">Syrup Volume ≈ 338 cm³.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">4. A pen stand made of wood is in the shape of a cuboid with four conical depressions to
-            hold pens. The dimensions of the cuboid are 15 cm by 10 cm by 3.5 cm. The radius of each of the depressions
-            is 0.5 cm and the depth is 1.4 cm. Find the volume of wood in the entire stand.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgMzIwIiB3aWR0aD0iMzIwIiBoZWlnaHQ9IjMyMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPgogIDxkZWZzPgogICAgPCEtLSBDdWJvaWQgRmFjZSBHcmFkaWVudHMgLS0+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImZyb250R3JhZCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMDBiMGZmIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwODBlMCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0idG9wR3JhZCIgeDE9IjAlIiB5MT0iMTAwJSIgeDI9IjEwMCUiIHkyPSIwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM4MGQ4ZmYiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZTFmNWZlIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJyaWdodEdyYWQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwODBlMCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDRkODAiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8IS0tIENvbmljYWwgSG9sZSBSYWRpYWwgR3JhZGllbnQgLS0+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9ImhvbGVHcmFkIiBjeD0iNTAlIiBjeT0iMzAlIiByPSI1MCUiIGZ4PSIzMCUiIGZ5PSIxMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMDI4OGQxIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMWQ0YSIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICAgIDwhLS0gUGVuIEJvZHkgR3JhZGllbnQgLS0+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9InBlbkJvZHkiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2IzZTVmYyIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzgxZDRmYSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0ZmMzZjciLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgoKICA8IS0tIExlZnQgUGFydDogM0QgQ3Vib2lkIFBlbiBTdGFuZCAtLT4KICA8IS0tIFRvcCBGYWNlIC0tPgogIDxwYXRoIGQ9Ik0gMjAgMjIwIEwgMTMwIDEzMCBMIDE4MCAxMzAgTCA3MCAyMjAgWiIgZmlsbD0idXJsKCN0b3BHcmFkKSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KICA8IS0tIFJpZ2h0IEZhY2UgLS0+CiAgPHBhdGggZD0iTSA3MCAyMjAgTCAxODAgMTMwIEwgMTgwIDE2MCBMIDcwIDI1MCBaIiBmaWxsPSJ1cmwoI3JpZ2h0R3JhZCkiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMS41Ii8+CiAgPCEtLSBGcm9udCBGYWNlIC0tPgogIDxwYXRoIGQ9Ik0gMjAgMjIwIEwgNzAgMjIwIEwgNzAgMjUwIEwgMjAgMjUwIFoiIGZpbGw9InVybCgjZnJvbnRHcmFkKSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KCiAgPCEtLSA0IENvbmljYWwgSG9sZXMgb24gVG9wIEZhY2UgLS0+CiAgPGVsbGlwc2UgY3g9IjY3IiBjeT0iMjAyIiByeD0iOSIgcnk9IjQiIGZpbGw9InVybCgjaG9sZUdyYWQpIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjAuNzUiLz4KICA8ZWxsaXBzZSBjeD0iODkiIGN5PSIxODQiIHJ4PSI5IiByeT0iNCIgZmlsbD0idXJsKCNob2xlR3JhZCkiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMC43NSIvPgogIDxlbGxpcHNlIGN4PSIxMTEiIGN5PSIxNjYiIHJ4PSI5IiByeT0iNCIgZmlsbD0idXJsKCNob2xlR3JhZCkiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMC43NSIvPgogIDxlbGxpcHNlIGN4PSIxMzMiIGN5PSIxNDgiIHJ4PSI5IiByeT0iNCIgZmlsbD0idXJsKCNob2xlR3JhZCkiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMC43NSIvPgoKICA8IS0tIFJpZ2h0IFBhcnQ6IDJEIENyb3NzIFNlY3Rpb24gYW5kIDQgUGVucyAtLT4KICA8IS0tIFN0YW5kIENyb3NzIFNlY3Rpb24gUHJvZmlsZSAoU2luZ2xlIGNsb3NlZCBwYXRoIHRvIGluY2x1ZGUgbm90Y2hlcykgLS0+CiAgPHBhdGggZD0iTSAxNzUgMjIwIAogICAgICAgICAgIEwgMTg1IDIyMCBMIDE5NSAyMzggTCAyMDUgMjIwIAogICAgICAgICAgIEwgMjE1IDIyMCBMIDIyNSAyMzggTCAyMzUgMjIwIAogICAgICAgICAgIEwgMjQ1IDIyMCBMIDI1NSAyMzggTCAyNjUgMjIwIAogICAgICAgICAgIEwgMjc1IDIyMCBMIDI4NSAyMzggTCAyOTUgMjIwIAogICAgICAgICAgIEwgMzA1IDIyMCBMIDMwNSAyNTAgTCAxNzUgMjUwIFoiIAogICAgICAgIGZpbGw9IiNmYWZhZmEiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMS41Ii8+CgogIDwhLS0gNCBQZW5zIC0tPgogIDwhLS0gUGVuIDEgKFggPSAxOTUpIC0tPgogIDxwYXRoIGQ9Ik0gMTg3IDIyMCBMIDE5NSAyMzggTCAyMDMgMjIwIFoiIGZpbGw9IiNlMGUwZTAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPgogIDxyZWN0IHg9IjE4NyIgeT0iODAiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNDAiIGZpbGw9InVybCgjcGVuQm9keSkiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPgogIDxsaW5lIHgxPSIxOTEiIHkxPSI4MCIgeDI9IjE5MSIgeTI9IjIyMCIgc3Ryb2tlPSIjMDI4OGQxIiBzdHJva2Utd2lkdGg9IjAuNzUiLz4KICA8bGluZSB4MT0iMTk1IiB5MT0iODAiIHgyPSIxOTUiIHkyPSIyMjAiIHN0cm9rZT0iIzAyODhkMSIgc3Ryb2tlLXdpZHRoPSIwLjc1Ii8+CiAgPGxpbmUgeDE9IjE5OSIgeTE9IjgwIiB4Mj0iMTk5IiB5Mj0iMjIwIiBzdHJva2U9IiMwMjg4ZDEiIHN0cm9rZS13aWR0aD0iMC43NSIvPgogIDxsaW5lIHgxPSIyMDMiIHkxPSI5MCIgeDI9IjIwNSIgeTI9IjkwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz4KICA8bGluZSB4MT0iMjA1IiB5MT0iOTAiIHgyPSIyMDUiIHkyPSIxMzAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPgogIDxlbGxpcHNlIGN4PSIxOTUiIGN5PSI4MCIgcng9IjgiIHJ5PSIxLjUiIGZpbGw9IiMwMjg4ZDEiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPgoKICA8IS0tIFBlbiAyIChYID0gMjI1KSAtLT4KICA8cGF0aCBkPSJNIDIxNyAyMjAgTCAyMjUgMjM4IEwgMjMzIDIyMCBaIiBmaWxsPSIjZTBlMGUwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz4KICA8cmVjdCB4PSIyMTciIHk9IjgwIiB3aWR0aD0iMTYiIGhlaWdodD0iMTQwIiBmaWxsPSJ1cmwoI3BlbkJvZHkpIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz4KICA8bGluZSB4MT0iMjIxIiB5MT0iODAiIHgyPSIyMjEiIHkyPSIyMjAiIHN0cm9rZT0iIzAyODhkMSIgc3Ryb2tlLXdpZHRoPSIwLjc1Ii8+CiAgPGxpbmUgeDE9IjIyNSIgeTE9IjgwIiB4Mj0iMjI1IiB5Mj0iMjIwIiBzdHJva2U9IiMwMjg4ZDEiIHN0cm9rZS13aWR0aD0iMC43NSIvPgogIDxsaW5lIHgxPSIyMjkiIHkxPSI4MCIgeDI9IjIyOSIgeTI9IjIyMCIgc3Ryb2tlPSIjMDI4OGQxIiBzdHJva2Utd2lkdGg9IjAuNzUiLz4KICA8bGluZSB4MT0iMjMzIiB5MT0iOTAiIHgyPSIyMzUiIHkyPSI5MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+CiAgPGxpbmUgeDE9IjIzNSIgeTE9IjkwIiB4Mj0iMjM1IiB5Mj0iMTMwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz4KICA8ZWxsaXBzZSBjeD0iMjI1IiBjeT0iODAiIHJ4PSI4IiByeT0iMS41IiBmaWxsPSIjMDI4OGQxIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz4KCiAgPCEtLSBQZW4gMyAoWCA9IDI1NSkgLS0+CiAgPHBhdGggZD0iTSAyNDcgMjIwIEwgMjU1IDIzOCBMIDI2MyAyMjAgWiIgZmlsbD0iI2UwZTBlMCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+CiAgPHJlY3QgeD0iMjQ3IiB5PSI4MCIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE0MCIgZmlsbD0idXJsKCNwZW5Cb2R5KSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+CiAgPGxpbmUgeDE9IjI1MSIgeTE9IjgwIiB4Mj0iMjUxIiB5Mj0iMjIwIiBzdHJva2U9IiMwMjg4ZDEiIHN0cm9rZS13aWR0aD0iMC43NSIvPgogIDxsaW5lIHgxPSIyNTUiIHkxPSI4MCIgeDI9IjI1NSIgeTI9IjIyMCIgc3Ryb2tlPSIjMDI4OGQxIiBzdHJva2Utd2lkdGg9IjAuNzUiLz4KICA8bGluZSB4MT0iMjU5IiB5MT0iODAiIHgyPSIyNTkiIHkyPSIyMjAiIHN0cm9rZT0iIzAyODhkMSIgc3Ryb2tlLXdpZHRoPSIwLjc1Ii8+CiAgPGxpbmUgeDE9IjI2MyIgeTE9IjkwIiB4Mj0iMjY1IiB5Mj0iOTAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPgogIDxsaW5lIHgxPSIyNjUiIHkxPSI5MCIgeDI9IjI2NSIgeTI9IjEzMCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+CiAgPGVsbGlwc2UgY3g9IjI1NSIgY3k9IjgwIiByeD0iOCIgcnk9IjEuNSIgZmlsbD0iIzAyODhkMSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+CgogIDwhLS0gUGVuIDQgKFggPSAyODUpIC0tPgogIDxwYXRoIGQ9Ik0gMjc3IDIyMCBMIDI4NSAyMzggTCAyOTMgMjIwIFoiIGZpbGw9IiNlMGUwZTAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPgogIDxyZWN0IHg9IjI3NyIgeT0iODAiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNDAiIGZpbGw9InVybCgjcGVuQm9keSkiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPgogIDxsaW5lIHgxPSIyODEiIHkxPSI4MCIgeDI9IjI4MSIgeTI9IjIyMCIgc3Ryb2tlPSIjMDI4OGQxIiBzdHJva2Utd2lkdGg9IjAuNzUiLz4KICA8bGluZSB4MT0iMjg1IiB5MT0iODAiIHgyPSIyODUiIHkyPSIyMjAiIHN0cm9rZT0iIzAyODhkMSIgc3Ryb2tlLXdpZHRoPSIwLjc1Ii8+CiAgPGxpbmUgeDE9IjI4OSIgeTE9IjgwIiB4Mj0iMjg5IiB5Mj0iMjIwIiBzdHJva2U9IiMwMjg4ZDEiIHN0cm9rZS13aWR0aD0iMC43NSIvPgogIDxsaW5lIHgxPSIyOTMiIHkxPSI5MCIgeDI9IjI5NSIgeTI9IjkwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz4KICA8bGluZSB4MT0iMjk1IiB5MT0iOTAiIHgyPSIyOTUiIHkyPSIxMzAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPgogIDxlbGxpcHNlIGN4PSIyODUiIGN5PSI4MCIgcng9IjgiIHJ5PSIxLjUiIGZpbGw9IiMwMjg4ZDEiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPgo8L3N2Zz4=" alt="Pen Stand">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Volume of Cuboid = 15 × 10 × 3.5 = 525 cm³.</div>
-        <div class="step">Volume of one Conical Depression = (1/3)πr²h.</div>
-        <div class="step">r = 0.5 cm, h = 1.4 cm.</div>
-        <div class="step">Vol = (1/3) × (22/7) × 0.25 × 1.4 = (1/3) × 22 × 0.25 × 0.2 = 1.1/3 = 0.366 cm³.</div>
-        <div class="step">Volume of 4 Depressions = 4 × 0.366 = 1.464 cm³.</div>
-        <div class="step">Volume of Wood = 525 - 1.464 = 523.536 cm³.</div>
-        <div class="final-answer">Volume of Wood ≈ 523.53 cm³.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">5. A vessel is in the form of an inverted cone. Its height is 8 cm and the radius of its
-            top, which is open, is 5 cm. It is filled with water up to the brim. When lead shots, each of which is a
-            sphere of radius 0.5 cm are dropped into the vessel, one-fourth of the water flows out. Find the number of
-            lead shots dropped in the vessel.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxwYXRoIGQ9Ik0gMTAwIDEwMCBMIDE1MCAyMjAgTCAyMDAgMTAwIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iYmxhY2siLz48ZWxsaXBzZSBjeD0iMTUwIiBjeT0iMTAwIiByeD0iNTAiIHJ5PSIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHBhdGggZD0iTSAxMTAgMTIwIEwgMTUwIDIxMCBMIDE5MCAxMjAgWiIgZmlsbD0ibGlnaHRibHVlIiBvcGFjaXR5PSIwLjUiLz48Y2lyY2xlIGN4PSIxNDAiIGN5PSIxODAiIHI9IjIiIGZpbGw9ImJsYWNrIi8+PGNpcmNsZSBjeD0iMTQ1IiBjeT0iMTgwIiByPSIyIiBmaWxsPSJibGFjayIvPjxjaXJjbGUgY3g9IjE1MCIgY3k9IjE4MCIgcj0iMiIgZmlsbD0iYmxhY2siLz48Y2lyY2xlIGN4PSIxNTUiIGN5PSIxODAiIHI9IjIiIGZpbGw9ImJsYWNrIi8+PGNpcmNsZSBjeD0iMTYwIiBjeT0iMTgwIiByPSIyIiBmaWxsPSJibGFjayIvPjx0ZXh0IHg9IjE1MCIgeT0iMjQwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5WZXNzZWwgKyBMZWFkIFNob3RzPC90ZXh0Pjwvc3ZnPg==" alt="Lead Shots Problem">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Volume of Cone = (1/3)πr²h = (1/3)π(25)(8) = 200π/3 cm³.</div>
-        <div class="step">Volume of water flowed out = (1/4) × (200π/3) = 50π/3 cm³.</div>
-        <div class="step">Volume of one lead shot (Sphere) = (4/3)πr³ = (4/3)π(0.5)³ = (4/3)π(0.125) = 0.5π/3 = π/6 cm³.
-        </div>
-        <div class="step">Number of shots = (Total Val Flowed) / (Vol of one shot).</div>
-        <div class="step">= (50π/3) / (π/6) = (50/3) × 6 = 100.</div>
-        <div class="final-answer">Number of Lead Shots = 100.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">6. A solid iron pole consists of a cylinder of height 220 cm and base diameter 24 cm,
-            which is surmounted by another cylinder of height 60 cm and radius 8 cm. Find the mass of the pole, given
-            that 1 cm³ of iron has approximately 8g mass. (Use π = 3.14)</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxwYXRoIGQ9Ik0gMTEwIDE4MCBMIDExMCAyNDAgQSA0MCAxMy4zMzMzMzMzMzMzMzMzMzQgMCAwIDAgMTkwIDI0MCBMIDE5MCAxODAgWiIgZmlsbD0iIzllOWU5ZSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PGVsbGlwc2UgY3g9IjE1MCIgY3k9IjE4MCIgcng9IjQwIiByeT0iMTMuMzMzMzMzMzMzMzMzMzM0IiBmaWxsPSIjOWU5ZTllIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48cGF0aCBkPSJNIDEzMCAxMjAgTCAxMzAgMTgwIEEgMjAgNi42NjY2NjY2NjY2NjY2NjcgMCAwIDAgMTcwIDE4MCBMIDE3MCAxMjAgWiIgZmlsbD0iI2JkYmRiZCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PGVsbGlwc2UgY3g9IjE1MCIgY3k9IjEyMCIgcng9IjIwIiByeT0iNi42NjY2NjY2NjY2NjY2NjciIGZpbGw9IiNiZGJkYmQiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjIwMCIgeT0iMTUwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5Jcm9uIFBvbGU8L3RleHQ+PC9zdmc+" alt="Iron Pole Diagram">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Big Cylinder: h1 = 220, r1 = 12. small Cylinder: h2 = 60, r2 = 8.</div>
-        <div class="step">Volume = πr₁²h₁ + πr₂²h₂</div>
-        <div class="step">= 3.14 × (144 × 220 + 64 × 60)</div>
-        <div class="step">= 3.14 × (31680 + 3840)</div>
-        <div class="step">= 3.14 × 35520 = 111532.8 cm³.</div>
-        <div class="step">Mass = 111532.8 × 8 g = 892262.4 g = 892.26 kg.</div>
-        <div class="final-answer">Mass = 892.26 kg.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">7. A solid consisting of a right circular cone of height 120 cm and radius 60 cm standing
-            on a hemisphere of radius 60 cm is placed upright in a right circular cylinder full of water such that it
-            touches the bottom. Find the volume of water left in the cylinder, if the radius of the cylinder is 60 cm
-            and its height is 180 cm.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjEwMCIgeT0iMTAwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjE1MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHBhdGggZD0iTSAxMDAgMTAwIEwgMTAwIDI1MCBMIDIwMCAyNTAgTCAyMDAgMTAwIFoiIGZpbGw9ImxpZ2h0Ymx1ZSIgb3BhY2l0eT0iMC4zIi8+PHBhdGggZD0iTSAxMDAgMjUwIEEgNTAgNTAgMCAwIDAgMjAwIDI1MCBaIiBmaWxsPSIjY2NjIiBzdHJva2U9ImJsYWNrIi8+PHBhdGggZD0iTSAxNTAgMTUwIEwgMTAwIDI1MCBMIDIwMCAyNTAgWiIgZmlsbD0iI2NjYyIgc3Ryb2tlPSJibGFjayIvPjx0ZXh0IHg9IjE1MCIgeT0iMjcwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5Tb2xpZCBpbiBXYXRlcjwvdGV4dD48L3N2Zz4=" alt="Solid in Water">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Radius r = 60 cm (all same).</div>
-        <div class="step">Cylinder height H = 180 cm. Cone height h = 120 cm. Hemisphere height = 60 cm.</div>
-        <div class="step">Total height of solid = 120 + 60 = 180 cm = H. Matches.</div>
-        <div class="step">Volume of Water Left = Vol Cylinder - Vol Solid.</div>
-        <div class="step">= πr²H - [(1/3)πr²h + (2/3)πr³]</div>
-        <div class="step">= πr² [H - h/3 - 2r/3]</div>
-        <div class="step">= (22/7) × 3600 × [180 - 40 - 40]</div>
-        <div class="step">= (22/7) × 3600 × 100</div>
-        <div class="step">= 1.131 m³.</div>
-        <div class="final-answer">Volume of Water Left ≈ 1.131 m³.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">8. A spherical glass vessel has a cylindrical neck 8 cm long, 2 cm in diameter; the
-            diameter of the spherical part is 8.5 cm. By measuring the amount of water it holds, a child finds its
-            volume to be 345 cm³. Check whether she is correct, taking the above as the inside measurements, and π =
-            3.14.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxjaXJjbGUgY3g9IjE1MCIgY3k9IjIwMCIgcj0iNDAiIGZpbGw9ImJsYWNrIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIvPjxyZWN0IHg9IjE0MCIgeT0iMTIwIiB3aWR0aD0iMjAiIGhlaWdodD0iNDUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjE1MCIgeT0iMjYwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5HbGFzcyBWZXNzZWw8L3RleHQ+PC9zdmc+" alt="Glass Vessel">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Sphere d = 8.5 => r = 4.25. Cylinder r = 1, h = 8.</div>
-        <div class="step">Volume = Volume Sphere + Volume Cylinder.</div>
-        <div class="step">= (4/3)π(4.25)³ + π(1)²(8)</div>
-        <div class="step">= 3.14 [(4/3)(76.765) + 8]</div>
-        <div class="step">= 3.14 [102.35 + 8]</div>
-        <div class="step">= 3.14 × 110.35 ≈ 346.51 cm³.</div>
-        <div class="step">346.51 ≠ 345.</div>
-        <div class="final-answer">She is incorrect. Correct volume ≈ 346.51 cm³.</div>
-    </div>
-
-</body>
-
-</html>`,
-        examples: `<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Surface Areas and Volumes - Examples</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
-
-        body {
-            font-family: 'Kalam', cursive;
-            margin: 0;
-            padding: 15px;
-            background: #fff;
-            color: #333;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #6C63FF;
-            padding-bottom: 10px;
-            font-family: 'Nunito', sans-serif;
-        }
-
-        .logo {
-            color: #6C63FF;
-            font-size: 24px;
-            font-weight: 800;
-        }
-
-        .chapter-title {
-            text-align: center;
-            color: #333;
-            font-size: 20px;
-            font-weight: 700;
-            margin: 10px 0;
-            font-family: 'Kalam', cursive;
-        }
-
-        .content-box { background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px; padding: 15px; margin-bottom: 15px; display: flow-root; transition: transform 0.2s ease; }
-
-        .question {
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: #333;
-        }
-
-        .step {
-            margin-bottom: 8px;
-            font-size: 1.1em;
-            color: #000;
-            line-height: 1.5;
-        }
-
-        .final-answer {
-            color: #2E7D32;
-            font-weight: 700;
-            margin-top: 10px;
-            font-size: 1.2em;
-        }
-
-        
-
-        .solution-header {
-            color: #2E7D32;
-            font-weight: 700;
-            margin-bottom: 5px;
-        }
-    
-
-
-img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; height: auto; border: 1px solid #ddd; border-radius: 6px; padding: 5px; background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-@media (max-width: 600px) { img { float: none; display: block; margin: 10px auto; max-width: 100%; } }
-</style>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    renderMathInElement(document.body, {
-      delimiters: [
-        {left: '\\\\(', right: '\\\\)', display: false},
-        {left: '\\\\[', right: '\\\\]', display: true}
-      ]
-    });
-  });
-</script>
-
-<style>
-  body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
-  .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #AB47BC !important; color: #fff !important; }
-  h1, h2, h3, h4, h5, h6 { color: #AB47BC !important; }
-  .question { color: #AB47BC !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
-  .formula { color: #4CAF50 !important; }
-  .true-text { color: #4CAF50 !important; }
-  .false-text { color: #F44336 !important; }
-  table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
-  .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
-  img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #AB47BC !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
-  * { font-family: 'Noto Sans', sans-serif !important; }
-
-  .question { font-size: 0.95em !important; }
-  .sub-question { font-size: 0.9em !important; }
-  .step { font-size: 0.9em !important; }
-  .final-answer { font-size: 0.95em !important; }
-</style>
-</head>
-
-<body>
-
-    
-
-    <div class="content-box">
-        <div class="question">Example 1. Rasheed got a playing top (lattu) as his birthday present, which surprisingly
-            had no colour on it. He wanted to colour it with his crayons. The top is shaped like a cone surmounted by a
-            hemisphere. The total height of the top is 5 cm and the diameter of the top is 3.5 cm. Find the area he has
-            to colour. (Use π = 22/7)</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxwYXRoIGQ9Ik0gMTEwIDE1MCBBIDQwIDQwIDAgMCAwIDE5MCAxNTAgWiIgZmlsbD0iI2ZmY2NiYyIgc3Ryb2tlPSJibGFjayIvPjxwYXRoIGQ9Ik0gMTUwIDMwIEwgMTEwIDE1MCBMIDE5MCAxNTAgWiIgZmlsbD0iI2ZmZjljNCIgc3Ryb2tlPSJibGFjayIvPjxsaW5lIHgxPSIyMTAiIHkxPSIzMCIgeDI9IjIxMCIgeTI9IjE5MCIgc3Ryb2tlPSJncmF5IiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1kYXNoYXJyYXk9IjQiIGZpbGw9Im5vbmUiLz48dGV4dCB4PSIyMzAiIHk9IjExMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MTUuNWNtPC90ZXh0PjxsaW5lIHgxPSIxNTAiIHkxPSIxNTAiIHgyPSIxOTAiIHkyPSIxNTAiIHN0cm9rZT0iZ3JheSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtZGFzaGFycmF5PSI0IiBmaWxsPSJub25lIi8+PHRleHQgeD0iMTcwIiB5PSIxNjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPnI9My41PC90ZXh0Pjwvc3ZnPg==" alt="Toy Top">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Diameter d = 3.5 cm -> r = 1.75 cm.</div>
-        <div class="step">Total height = 5 cm. Height of cone h = 5 - 1.75 = 3.25 cm.</div>
-        <div class="step">Slant height l = √(h² + r²) = √(3.25² + 1.75²) ≈ 3.7 cm.</div>
-        <div class="step">Area = CSA Hemisphere + CSA Cone.</div>
-        <div class="step">= 2πr² + πrl</div>
-        <div class="step">= πr(2r + l)</div>
-        <div class="step">= (22/7) × 1.75 × (3.5 + 3.7)</div>
-        <div class="step">= 5.5 × 7.2 = 39.6 cm².</div>
-        <div class="final-answer">Area to colour ≈ 39.6 cm².</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">Example 2. The decorative block shown in Fig. is made of two solids — a cube and a
-            hemisphere. The base of the block is a cube with edge 5 cm, and the hemisphere fixed on the top has a
-            diameter of 4.2 cm. Find the total surface area of the block. (Use π = 22/7)</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgMzIwIiB3aWR0aD0iMzIwIiBoZWlnaHQ9IjMyMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPgogIDxkZWZzPgogICAgPCEtLSBBcnJvd2hlYWQgbWFya2VycyAtLT4KICAgIDxtYXJrZXIgaWQ9ImFycm93IiB2aWV3Qm94PSIwIDAgMTAgMTAiIHJlZlg9IjUiIHJlZlk9IjUiIG1hcmtlcldpZHRoPSI2IiBtYXJrZXJIZWlnaHQ9IjYiIG9yaWVudD0iYXV0by1zdGFydC1yZXZlcnNlIj4KICAgICAgPHBhdGggZD0iTSAwIDEuNSBMIDEwIDUgTCAwIDguNSB6IiBmaWxsPSJibGFjayIvPgogICAgPC9tYXJrZXI+CiAgICA8IS0tIFNwaGVyZSBHcmFkaWVudCAtLT4KICAgIDxyYWRpYWxHcmFkaWVudCBpZD0iaGVtaUdyYWQiIGN4PSI1MCUiIGN5PSIzMCUiIHI9IjUwJSIgZng9IjQwJSIgZnk9IjIwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNlMWY1ZmUiIHN0b3Atb3BhY2l0eT0iMC40Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAyODhkMSIgc3RvcC1vcGFjaXR5PSIwLjU1Ii8+CiAgICA8L3JhZGlhbEdyYWRpZW50PgogIDwvZGVmcz4KCiAgPCEtLSAzRCBDdWJlIEZhY2VzIChXaGl0ZSBiYWNrZ3JvdW5kIHdpdGggYmx1ZSBib3JkZXJzKSAtLT4KICA8IS0tIFRvcCBmYWNlIC0tPgogIDxwYXRoIGQ9Ik0gODAgMTMwIEwgMTM1IDgwIEwgMjc1IDgwIEwgMjIwIDEzMCBaIiBmaWxsPSIjZjVmYmZmIiBzdHJva2U9IiMwMDkwZjAiIHN0cm9rZS13aWR0aD0iMS43NSIvPgogIDwhLS0gUmlnaHQgZmFjZSAtLT4KICA8cGF0aCBkPSJNIDIyMCAxMzAgTCAyNzUgODAgTCAyNzUgMjEwIEwgMjIwIDI2MCBaIiBmaWxsPSIjZjVmYmZmIiBzdHJva2U9IiMwMDkwZjAiIHN0cm9rZS13aWR0aD0iMS43NSIvPgogIDwhLS0gRnJvbnQgZmFjZSAtLT4KICA8cGF0aCBkPSJNIDgwIDEzMCBMIDIyMCAxMzAgTCAyMjAgMjYwIEwgODAgMjYwIFoiIGZpbGw9IiNmNWZiZmYiIHN0cm9rZT0iIzAwOTBmMCIgc3Ryb2tlLXdpZHRoPSIxLjc1Ii8+CgogIDwhLS0gSGVtaXNwaGVyZSBCYXNlIEVsbGlwc2UgKERhc2hlZCBhcyBpdCBpcyBhIHJpbSBvbiB0aGUgdG9wIGZhY2UpIC0tPgogIDxlbGxpcHNlIGN4PSIxNzcuNSIgY3k9IjEwNSIgcng9IjU1IiByeT0iMTguNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDA5MGYwIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWRhc2hhcnJheT0iMywzIi8+CgogIDwhLS0gSGVtaXNwaGVyZSBEb21lIC0tPgogIDxwYXRoIGQ9Ik0gMTIyLjUgMTA1IEEgNTUgNTUgMCAwIDEgMjMyLjUgMTA1IFoiIGZpbGw9InVybCgjaGVtaUdyYWQpIiBzdHJva2U9IiMwMDkwZjAiIHN0cm9rZS13aWR0aD0iMiIvPgoKICA8IS0tIERpbWVuc2lvbiBIZWxwZXIgLyBFeHRlbnNpb24gbGluZXMgLS0+CiAgPCEtLSBIZWlnaHQgaGVscGVycyAtLT4KICA8bGluZSB4MT0iNzUiIHkxPSIxMzAiIHgyPSI1MCIgeTI9IjEzMCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtZGFzaGFycmF5PSIyIi8+CiAgPGxpbmUgeDE9Ijc1IiB5MT0iMjYwIiB4Mj0iNTAiIHkyPSIyNjAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWRhc2hhcnJheT0iMiIvPgogIDwhLS0gV2lkdGggaGVscGVycyAtLT4KICA8bGluZSB4MT0iODAiIHkxPSIyNjUiIHgyPSI4MCIgeTI9IjI4MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtZGFzaGFycmF5PSIyIi8+CiAgPGxpbmUgeDE9IjIyMCIgeTE9IjI2NSIgeDI9IjIyMCIgeTI9IjI4MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtZGFzaGFycmF5PSIyIi8+CiAgCiAgPCEtLSBEaWFtZXRlciB2ZXJ0aWNhbCBkYXNoZWQgaGVscGVyIGxpbmVzIC0tPgogIDxsaW5lIHgxPSIxMjIuNSIgeTE9IjEwNSIgeDI9IjEyMi41IiB5Mj0iNTAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMS4yNSIgc3Ryb2tlLWRhc2hhcnJheT0iMywzIi8+CiAgPGxpbmUgeDE9IjIzMi41IiB5MT0iMTA1IiB4Mj0iMjMyLjUiIHkyPSI1MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxLjI1IiBzdHJva2UtZGFzaGFycmF5PSIzLDMiLz4KCiAgPCEtLSBMZWZ0IEFycm93IChWZXJ0aWNhbCBIZWlnaHQ6IDUgY20pIC0tPgogIDxsaW5lIHgxPSI1NSIgeTE9IjEzNiIgeDI9IjU1IiB5Mj0iMjU0IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEuNSIgbWFya2VyLXN0YXJ0PSJ1cmwoI2Fycm93KSIgbWFya2VyLWVuZD0idXJsKCNhcnJvdykiLz4KICA8dGV4dCB4PSIzNSIgeT0iMjAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTMiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NSBjbTwvdGV4dD4KCiAgPCEtLSBCb3R0b20gQXJyb3cgKEhvcml6b250YWwgV2lkdGg6IDUgY20pIC0tPgogIDxsaW5lIHgxPSI4NiIgeTE9IjI3NSIgeDI9IjIxNCIgeTI9IjI3NSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxLjUiIG1hcmtlci1zdGFydD0idXJsKCNhcnJvdykiIG1hcmtlci1lbmQ9InVybCgjYXJyb3cpIi8+CiAgPHRleHQgeD0iMTUwIiB5PSIyOTUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMyIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj41IGNtPC90ZXh0PgoKICA8IS0tIERlcHRoIEFycm93IChTaWRlIEVkZ2U6IDUgY20pIC0tPgogIDxsaW5lIHgxPSIyMzIiIHkxPSIxMzciIHgyPSIyNzkiIHkyPSI5NSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxLjUiIG1hcmtlci1zdGFydD0idXJsKCNhcnJvdykiIG1hcmtlci1lbmQ9InVybCgjYXJyb3cpIi8+CiAgPHRleHQgeD0iMjc4IiB5PSIxMzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMyIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj41IGNtPC90ZXh0PgoKICA8IS0tIERpYW1ldGVyIEFycm93IChIZW1pc3BoZXJlOiA0LjIgY20pIC0tPgogIDxsaW5lIHgxPSIxMjguNSIgeTE9IjU1IiB4Mj0iMjI2LjUiIHkyPSI1NSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxLjUiIG1hcmtlci1zdGFydD0idXJsKCNhcnJvdykiIG1hcmtlci1lbmQ9InVybCgjYXJyb3cpIi8+CiAgPHRleHQgeD0iMTc3LjUiIHk9IjQ2IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTMiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NC4yIGNtPC90ZXh0Pgo8L3N2Zz4=" alt="Block Diagram">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Cube edge a = 5 cm. Hemisphere d = 4.2 cm -> r = 2.1 cm.</div>
-        <div class="step">TSA = TSA of Cube - Base of Hemisphere + CSA Hemisphere.</div>
-        <div class="step">= 6a² - πr² + 2πr²</div>
-        <div class="step">= 6(25) + π(2.1)²</div>
-        <div class="step">= 150 + (22/7) × 4.41</div>
-        <div class="step">= 150 + 13.86 = 163.86 cm².</div>
-        <div class="final-answer">Total Surface Area = 163.86 cm².</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">Example 3. A wooden toy rocket is in the shape of a cone mounted on a cylinder, as shown
-            in Fig. The height of the entire rocket is 26 cm, while the height of the conical part is 6 cm. The base of
-            the conical portion has a diameter of 5 cm, while the base diameter of the cylindrical portion is 3 cm. If
-            the conical portion is to be painted orange and the cylindrical portion yellow, find the area of the rocket
-            painted with each of these colours. (Use π = 3.14)</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxwYXRoIGQ9Ik0gOTAgMTUwIEwgOTAgMjEwIEEgNjAgMjAuMCAwIDAgMCAyMTAgMjEwIEwgMjEwIDE1MCBaIiBmaWxsPSIjZmZlMGIyIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48ZWxsaXBzZSBjeD0iMTUwIiBjeT0iMTUwIiByeD0iNjAiIHJ5PSIyMC4wIiBmaWxsPSIjZmZlMGIyIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48cGF0aCBkPSJNIDE1MCA1MCBMIDkwIDE1MCBMIDIxMCAxNTAgWiIgZmlsbD0iI2ZmY2NiYyIgc3Ryb2tlPSJibGFjayIvPjxlbGxpcHNlIGN4PSIxNTAiIGN5PSIxNTAiIHJ4PSI2MCIgcnk9IjIwLjAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjIzMCIgeT0iMTgwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj48L3RleHQ+PHRleHQgeD0iMTUwIiB5PSIyNzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjwvdGV4dD48dGV4dCB4PSI5MCIgeT0iMTAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5sPTIuOG08L3RleHQ+PC9zdmc+" alt="Toy Rocket">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Cone: h = 6 cm, r = 2.5 cm. l = √(36 + 6.25) = 6.5 cm.</div>
-        <div class="step">Cylinder: h = 26 - 6 = 20 cm, r = 1.5 cm.</div>
-        <div class="step">Orange Area (Cone) = CSA + Base Ring Area (Cone base - Cylinder base).</div>
-        <div class="step">= π(2.5)(6.5) + π(2.5² - 1.5²)</div>
-        <div class="step">= 3.14 (16.25 + 4) = 63.585 cm².</div>
-        <div class="step">Yellow Area (Cylinder) = CSA + Base Area.</div>
-        <div class="step">= 2π(1.5)(20) + π(1.5)²</div>
-        <div class="step">= 3.14 (60 + 2.25) = 195.465 cm².</div>
-        <div class="final-answer">Orange: 63.585 cm²; Yellow: 195.465 cm².</div>
-    </div>
-
-</body>
-
-</html>`
+  id: "ch12",
+  number: 12,
+  title: "Surface Areas and Volumes",
+  introduction: "In this chapter, we study three-dimensional mensuration focusing on surface areas and volumes of combinations of solids (cubes, cuboids, cylinders, cones, and hemispheres) and conversion of solids from one shape to another.",
+  definitions: [
+    {
+      term: "Combined Solid",
+      description: "A composite geometric solid formed by joining two or more basic three-dimensional shapes along common matching boundaries."
+    },
+    {
+      term: "Curved Surface Area (CSA)",
+      description: "The area of the smooth outer or inner bent surface of a solid, excluding flat base boundaries."
+    },
+    {
+      term: "Total Surface Area (TSA)",
+      description: "The complete exterior or exposed surface area of all visible faces of a solid, equal to the sum of its curved and exposed flat surfaces."
+    },
+    {
+      term: "Volume",
+      description: "The measure of three-dimensional space occupied by a solid body or enclosed within a hollow container."
+    },
+    {
+      term: "Capacity",
+      description: "The internal volume of a hollow vessel or container, usually measured in cubic centimeters, cubic meters, or liters (1 m³ = 1000 L, 1000 cm³ = 1 L)."
     }
+  ],
+  keyPoints: [
+    "TSA of a combination of solids = Sum of visible curved surface areas of constituent solids (internal interface boundaries are hidden and not included).",
+    "Volume of a combination of solids = Pure algebraic sum of individual volumes: V(Total) = V₁ + V₂.",
+    "When a cavity or depression is scooped out of a solid, its volume decreases, but its surface area increases because new inner surfaces are exposed.",
+    "Slant height of a right circular cone: l = √(r² + h²).",
+    "Volume of a sphere = (4/3)πr³; Volume of a hemisphere = (2/3)πr³; CSA of hemisphere = 2πr²; TSA of solid hemisphere = 3πr².",
+    "When a solid is melted and recast into another shape, its total volume remains completely conserved (Volume before melting = Volume after recasting).",
+    "Mass = Volume × Density (e.g., Mass of iron = Volume in cm³ × 8 g/cm³)."
+  ],
+  formulas: [
+    {
+      name: "Volume of Cylinder",
+      formula: "V = πr²h"
+    },
+    {
+      name: "Curved Surface Area of Cylinder",
+      formula: "CSA = 2πrh"
+    },
+    {
+      name: "Total Surface Area of Cylinder",
+      formula: "TSA = 2πr(h + r)"
+    },
+    {
+      name: "Volume of Cone",
+      formula: "V = (1/3)πr²h"
+    },
+    {
+      name: "Curved Surface Area of Cone",
+      formula: "CSA = πrl  [l = √(r² + h²)]"
+    },
+    {
+      name: "Total Surface Area of Cone",
+      formula: "TSA = πr(l + r)"
+    },
+    {
+      name: "Volume of Sphere",
+      formula: "V = (4/3)πr³"
+    },
+    {
+      name: "Surface Area of Sphere",
+      formula: "S = 4πr²"
+    },
+    {
+      name: "Volume of Hemisphere",
+      formula: "V = (2/3)πr³"
+    },
+    {
+      name: "CSA of Hemisphere",
+      formula: "CSA = 2πr²"
+    },
+    {
+      name: "TSA of Solid Hemisphere",
+      formula: "TSA = 3πr²"
+    },
+    {
+      name: "Volume of Cuboid",
+      formula: "V = l × b × h"
+    },
+    {
+      name: "TSA of Cuboid",
+      formula: "TSA = 2(lb + bh + hl)"
+    }
+  ],
+  crux: [
+    "Never add individual TSAs when combining solids! Always identify the exposed surfaces and add their CSAs plus any uncovered bases.",
+    "When scooping out a depression from a cube or cylinder, add the curved area of the scoop (2πr²) and subtract the circular opening (πr²).",
+    "Always check units: ensure dimensions are consistently in cm or m before multiplying. 1 m³ = 1,000,000 cm³ = 1000 liters.",
+    "In melting-recasting problems: Number of small objects n = Total initial volume / Volume of 1 small object."
+  ],
+  exercises: [
+    {
+      id: "examples",
+      name: "Examples",
+      questions: []
+    },
+    {
+      id: "exercise1",
+      name: "Exercise 12.1",
+      questions: []
+    },
+    {
+      id: "exercise2",
+      name: "Exercise 12.2",
+      questions: []
+    }
+  ],
+  examples: [],
+  theorems: [],
+  mcqs: [
+  {
+    "id": "mcq-12-1",
+    "question": "If two identical cubes each of edge 3 cm are joined end to end, what is the total surface area of the resulting cuboid?",
+    "options": [
+      "A):   90 cm²",
+      "B):   108 cm²",
+      "C):   72 cm²",
+      "D):   54 cm²"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Dimensions of resulting cuboid: l = 3 + 3 = 6 cm, b = 3 cm, h = 3 cm. TSA = 2(lb + bh + hl) = 2(6×3 + 3×3 + 3×6) = 2(18 + 9 + 18) = 2(45) = 90 cm²."
+  },
+  {
+    "id": "mcq-12-2",
+    "question": "A conical cavity is scooped out of a solid cylinder of height h and radius r. The total surface area of the remaining solid includes:",
+    "options": [
+      "A):   CSA of cylinder + CSA of cone",
+      "B):   CSA of cylinder + Base circle area + CSA of cone",
+      "C):   TSA of cylinder - TSA of cone",
+      "D):   CSA of cylinder + 2 × (Base circle area)"
+    ],
+    "correctAnswer": "B",
+    "explanation": "When a cone is scooped out, the exposed surfaces are: (1) Outer curved surface of the cylinder (2πrh), (2) One intact flat circular base (πr²), and (3) The newly created inner curved surface of the cone (πrl)."
+  },
+  {
+    "id": "mcq-12-3",
+    "question": "If the radius of the base of a right circular cylinder is halved and its height is doubled, its volume will be:",
+    "options": [
+      "A):   Doubled",
+      "B):   Same as before",
+      "C):   Halved",
+      "D):   Four times"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Original volume V₁ = πr²h. New radius r' = r/2, new height h' = 2h. New volume V₂ = π(r/2)²(2h) = π(r²/4)(2h) = (1/2)πr²h = V₁/2. Hence the volume is halved."
+  },
+  {
+    "id": "mcq-12-4",
+    "question": "A sphere of diameter 6 cm is melted and drawn into a wire of diameter 2 mm. What is the length of the wire?",
+    "options": [
+      "A):   18 m",
+      "B):   24 m",
+      "C):   30 m",
+      "D):   36 m"
+    ],
+    "correctAnswer": "D",
+    "explanation": "Radius of sphere R = 3 cm = 30 mm. Radius of wire r = 2/2 = 1 mm. Volume of sphere = (4/3)πR³ = (4/3)π(30)³ = 36,000π mm³. Volume of wire = πr²h = π(1)²h = πh. Equating volumes: πh = 36,000π ⇒ h = 36,000 mm = 36 m."
+  },
+  {
+    "id": "mcq-12-5",
+    "question": "A solid is composed of a cylinder surmounted by a hemisphere. If the radius is 7 cm and total height is 17 cm, the curved surface area of the cylinder is:",
+    "options": [
+      "A):   440 cm²",
+      "B):   528 cm²",
+      "C):   308 cm²",
+      "D):   616 cm²"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Height of cylinder h = Total height - radius = 17 - 7 = 10 cm. CSA of cylinder = 2πrh = 2 × (22/7) × 7 × 10 = 44 × 10 = 440 cm²."
+  },
+  {
+    "id": "mcq-12-6",
+    "question": "The ratio of the total surface area to the curved surface area of a solid hemisphere of radius r is:",
+    "options": [
+      "A):   2 : 1",
+      "B):   3 : 2",
+      "C):   4 : 3",
+      "D):   3 : 1"
+    ],
+    "correctAnswer": "B",
+    "explanation": "For a solid hemisphere, TSA = 3πr² and CSA = 2πr². The ratio TSA : CSA = 3πr² : 2πr² = 3 : 2."
+  },
+  {
+    "id": "mcq-12-7",
+    "question": "The volume of the largest circular cone that can be cut out of a cube of edge 7 cm is:",
+    "options": [
+      "A):   179.67 cm³",
+      "B):   89.83 cm³",
+      "C):   122.5 cm³",
+      "D):   147.25 cm³"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Diameter of cone = edge of cube = 7 cm ⇒ r = 7/2 = 3.5 cm. Height h = edge = 7 cm. Volume = (1/3)πr²h = (1/3) × (22/7) × (7/2) × (7/2) × 7 = (1/3) × 11 × 7 × 3.5 = 269.5 / 3 ≈ 89.83 cm³."
+  },
+  {
+    "id": "mcq-12-8",
+    "question": "A solid cone of radius 1 cm and height 1 cm is mounted on a hemisphere of radius 1 cm. The total volume of the solid in terms of π is:",
+    "options": [
+      "A):   (2/3)π cm³",
+      "B):   (4/3)π cm³",
+      "C):   2π cm³",
+      "D):   π cm³"
+    ],
+    "correctAnswer": "D",
+    "explanation": "Volume = V(cone) + V(hemi) = (1/3)πr²h + (2/3)πr³ = (1/3)π(1)²(1) + (2/3)π(1)³ = (1/3)π + (2/3)π = (3/3)π = π cm³."
+  },
+  {
+    "id": "mcq-12-9",
+    "question": "Twelve solid spheres of the same size are made by melting a solid metallic cylinder of base diameter 2 cm and height 16 cm. The diameter of each sphere is:",
+    "options": [
+      "A):   2 cm",
+      "B):   1 cm",
+      "C):   3 cm",
+      "D):   4 cm"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Cylinder radius R = 1 cm, H = 16 cm. Volume = π(1)²(16) = 16π cm³. Volume of 12 spheres = 12 × (4/3)πr³ = 16πr³. Equating: 16πr³ = 16π ⇒ r³ = 1 ⇒ r = 1 cm. Hence, diameter = 2r = 2 cm."
+  },
+  {
+    "id": "mcq-12-10",
+    "question": "If a solid piece of iron in the form of a cuboid of dimensions 49 cm × 33 cm × 24 cm is molded into a sphere, the radius of the sphere is:",
+    "options": [
+      "A):   14 cm",
+      "B):   21 cm",
+      "C):   28 cm",
+      "D):   35 cm"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Volume of cuboid = 49 × 33 × 24 = 38,808 cm³. Volume of sphere = (4/3) × (22/7) × r³ = (88/21)r³. Equating: (88/21)r³ = 38,808 ⇒ r³ = (38,808 × 21) / 88 = 441 × 21 = (21)² × 21 = 21³. Thus r = 21 cm."
+  },
+  {
+    "id": "mcq-12-11",
+    "question": "The formula for the slant height (l) of a cone in terms of its height (h) and base radius (r) is:",
+    "options": [
+      "A):   l = h² + r²",
+      "B):   l = √(h² - r²)",
+      "C):   l = √(h² + r²)",
+      "D):   l = √(2h² + r²)"
+    ],
+    "correctAnswer": "C",
+    "explanation": "By Pythagoras Theorem applied to the right triangle formed by the vertical height h, base radius r, and slant height l: l² = h² + r² ⇒ l = √(h² + r²)."
+  },
+  {
+    "id": "mcq-12-12",
+    "question": "If the radius of a sphere is increased by 100%, its volume increases by:",
+    "options": [
+      "A):   100%",
+      "B):   300%",
+      "C):   500%",
+      "D):   700%"
+    ],
+    "correctAnswer": "D",
+    "explanation": "New radius r' = 2r. New volume V' = (4/3)π(2r)³ = 8 × [(4/3)πr³] = 8V. Increase in volume = 8V - V = 7V. Percentage increase = (7V / V) × 100% = 700%."
+  },
+  {
+    "id": "mcq-12-13",
+    "question": "A medicine capsule consists of a cylinder of length 9 mm and radius 2.5 mm with two hemispherical caps of radius 2.5 mm. Its surface area is:",
+    "options": [
+      "A):   220 mm²",
+      "B):   180 mm²",
+      "C):   240 mm²",
+      "D):   260 mm²"
+    ],
+    "correctAnswer": "A",
+    "explanation": "TSA = CSA of Cylinder + 2 × (CSA of Hemisphere) = 2πrh + 4πr² = 2πr(h + 2r) = 2 × (22/7) × 2.5 × (9 + 5) = (110/7) × 14 = 220 mm²."
+  },
+  {
+    "id": "mcq-12-14",
+    "question": "Two right circular cones have their heights in the ratio 1 : 3 and radii in the ratio 3 : 1. The ratio of their volumes is:",
+    "options": [
+      "A):   1 : 3",
+      "B):   3 : 1",
+      "C):   1 : 9",
+      "D):   9 : 1"
+    ],
+    "correctAnswer": "B",
+    "explanation": "V₁ / V₂ = [(1/3)π r₁² h₁] / [(1/3)π r₂² h₂] = (r₁ / r₂)² × (h₁ / h₂) = (3 / 1)² × (1 / 3) = 9 × (1/3) = 3 / 1 = 3 : 1."
+  },
+  {
+    "id": "mcq-12-15",
+    "question": "The lateral surface area of a cube of edge 'a' is:",
+    "options": [
+      "A):   6a²",
+      "B):   a³",
+      "C):   4a²",
+      "D):   2a²"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The lateral surface area of a cube consists of its 4 vertical side walls, each of area a². Therefore, LSA = 4a²."
+  },
+  {
+    "id": "mcq-12-16",
+    "question": "A cone, a hemisphere and a cylinder stand on equal bases and have the same height. The ratio of their volumes is:",
+    "options": [
+      "A):   1 : 2 : 3",
+      "B):   2 : 3 : 1",
+      "C):   3 : 2 : 1",
+      "D):   1 : 3 : 2"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Let equal base radius be r. Since heights are equal to hemisphere's height (which is r): h = r. V(cone) = (1/3)πr³, V(hemi) = (2/3)πr³, V(cyl) = πr²(r) = πr³. Ratio = (1/3) : (2/3) : 1 = 1 : 2 : 3."
+  },
+  {
+    "id": "mcq-12-17",
+    "question": "How many lead balls of diameter 1 cm can be made from a sphere of diameter 8 cm?",
+    "options": [
+      "A):   64",
+      "B):   256",
+      "C):   512",
+      "D):   1024"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Number of balls n = V(large sphere) / V(small sphere) = (R / r)³ = (4 / 0.5)³ = 8³ = 512."
+  },
+  {
+    "id": "mcq-12-18",
+    "question": "A solid cylinder of diameter 12 cm and height 15 cm is melted and recast into toys of conical shape with hemispherical base of diameter 6 cm. If height of cone is 9 cm, find the number of toys:",
+    "options": [
+      "A):   10",
+      "B):   12",
+      "C):   15",
+      "D):   18"
+    ],
+    "correctAnswer": "B",
+    "explanation": "V(cylinder) = π × (6)² × 15 = 540π cm³. For 1 toy: r = 3 cm, h = 9 cm. V(toy) = (1/3)π(3)²(9) + (2/3)π(3)³ = 27π + 18π = 45π cm³. Number of toys = 540π / 45π = 12."
+  },
+  {
+    "id": "mcq-12-19",
+    "question": "The slant height of a right circular cone is 10 cm and its height is 8 cm. Its curved surface area is: (Take π = 3.14)",
+    "options": [
+      "A):   188.4 cm²",
+      "B):   150.72 cm²",
+      "C):   200.96 cm²",
+      "D):   251.2 cm²"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Base radius r = √(l² - h²) = √(10² - 8²) = √(100 - 64) = √36 = 6 cm. CSA = πrl = 3.14 × 6 × 10 = 188.4 cm²."
+  },
+  {
+    "id": "mcq-12-20",
+    "question": "A cylindrical container of base radius 6 cm is filled with water to a certain height. A solid iron sphere of radius 3 cm is completely submerged in it. The rise in water level is:",
+    "options": [
+      "A):   0.5 cm",
+      "B):   1.0 cm",
+      "C):   1.5 cm",
+      "D):   2.0 cm"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Rise in water volume = Volume of submerged sphere. π × (R)² × h_rise = (4/3)π r³. π × (6)² × h = (4/3)π × (3)³ ⇒ 36h = 36 ⇒ h = 1 cm."
+  },
+  {
+    "id": "mcq-12-21",
+    "question": "If a solid cubical block of side 7 cm is surmounted by a hemisphere of maximum diameter, what is the maximum diameter?",
+    "options": [
+      "A):   3.5 cm",
+      "B):   5 cm",
+      "C):   7 cm",
+      "D):   14 cm"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The hemisphere sits entirely on the top face of the cube without hanging outside. The side of the square face is 7 cm, so the maximum diameter is exactly 7 cm."
+  },
+  {
+    "id": "mcq-12-22",
+    "question": "What is the capacity of a cylindrical pipe of length 14 m and inner radius 1 m in liters? (1 m³ = 1000 liters, π = 22/7)",
+    "options": [
+      "A):   22,000 liters",
+      "B):   44,000 liters",
+      "C):   88,000 liters",
+      "D):   14,000 liters"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Volume V = πr²h = (22/7) × (1)² × 14 = 22 × 2 = 44 m³. Capacity in liters = 44 × 1000 = 44,000 liters."
+  },
+  {
+    "id": "mcq-12-23",
+    "question": "If the surface area of a sphere is 616 cm², its diameter is: (Take π = 22/7)",
+    "options": [
+      "A):   7 cm",
+      "B):   21 cm",
+      "C):   28 cm",
+      "D):   14 cm"
+    ],
+    "correctAnswer": "D",
+    "explanation": "Surface area of sphere = 4πr² = 616 ⇒ 4 × (22/7) × r² = 616 ⇒ (88/7)r² = 616 ⇒ r² = (616 × 7) / 88 = 7 × 7 = 49 ⇒ r = 7 cm. Hence diameter = 2r = 14 cm."
+  },
+  {
+    "id": "mcq-12-24",
+    "question": "A circus tent is cylindrical up to a height of 3 m and conical above it. If its diameter is 105 m and the slant height of the cone is 53 m, the area of the canvas is:",
+    "options": [
+      "A):   9735 m²",
+      "B):   8450 m²",
+      "C):   10,250 m²",
+      "D):   11,400 m²"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Radius r = 105 / 2 = 52.5 m. Canvas Area = CSA(cyl) + CSA(cone) = 2πrh + πrl = πr(2h + l) = (22/7) × (105/2) × [2(3) + 53] = 11 × 15 × [6 + 53] = 165 × 59 = 9,735 m²."
+  },
+  {
+    "id": "mcq-12-25",
+    "question": "When a hemispherical bowl of internal radius 9 cm is completely filled with liquid and emptied into small cylindrical bottles of diameter 3 cm and height 4 cm, how many bottles are filled?",
+    "options": [
+      "A):   48",
+      "B):   54",
+      "C):   60",
+      "D):   72"
+    ],
+    "correctAnswer": "B",
+    "explanation": "V(bowl) = (2/3)π × 9³ = (2/3)π × 729 = 486π cm³. For each bottle: r = 1.5 cm = 3/2 cm, h = 4 cm. V(bottle) = π × (3/2)² × 4 = π × (9/4) × 4 = 9π cm³. Number of bottles = 486π / 9π = 54."
+  }
+],
+  isHtmlView: true,
+  htmlOverview: "\n\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; }\n  .frac .den { padding: 1px 4px; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 61, 0, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FF3D00; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 14px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(255, 61, 0, 0.25); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FF3D00; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FF8A65; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(255, 61, 0, 0.15); border: 1px solid #FF3D00; color: #FF8A65; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 6px 0; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 61, 0, 0.4); border-radius: 10px; padding: 14px; margin: 16px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #FFFFFF; border-radius: 8px; padding: 10px 8px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.25); }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 10px; font-weight: 500; }\n  .table-card { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 14px 0; border-radius: 8px; }\n  .table-card table { width: 100%; border-collapse: collapse; text-align: center; }\n  .table-card th { background: rgba(255, 61, 0, 0.2); color: #FF8A65; border: 1px solid rgba(255, 61, 0, 0.35); padding: 10px; font-weight: 700; }\n  .table-card td { border: 1px solid rgba(255, 61, 0, 0.2); padding: 9px; color: #E2E8F0; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Hero Header -->\n  <div style=\"background: linear-gradient(135deg, rgba(255, 61, 0, 0.22), rgba(221, 44, 0, 0.15)); border: 1.5px solid #FF3D00; border-radius: 14px; padding: 18px; margin-bottom: 20px; text-align: center;\">\n    <div style=\"font-size: 22px; font-weight: 800; color: #FF3D00; margin-bottom: 6px;\">\n      🧊 Chapter 12: Surface Areas and Volumes\n    </div>\n    <div style=\"color: #CBD5E1; font-size: 14.5px; line-height: 1.5;\">\n      Class 10 NCERT Mathematics &bull; Combinations of Solids, Surface Area &amp; Volume Decompositions, Conversion Cheat Sheet\n    </div>\n  </div>\n\n  <!-- 1. The Core Philosophy of Combined Solids -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 1. The Golden Rule of Combined Solids</div>\n    <div class=\"q-text\">\n      In daily life, we encounter containers, toys, capsules, and architectural structures that are not simple single geometric shapes, but combinations of two or more standard solid shapes:\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-step\">\n        <div>&bull; <b style=\"color: #FF8A65;\">Total Surface Area (TSA) of a Combined Solid:</b></div>\n        <div style=\"padding-left: 12px; margin-top: 4px;\">\n          The surface area of the combined solid is the <b>sum of the visible curved surface areas (CSA)</b> of the constituent parts. <b>NEVER simply add the individual total surface areas (TSAs)</b> because joined faces become internal and are no longer exposed!\n          <div style=\"text-align: center; margin: 8px 0;\">\n            <span class=\"prop-chip\" style=\"font-size: 15px; padding: 6px 14px;\">\n              <b>TSA of Combination = &sum; (Visible CSAs) &minus; (Covered Internal Interface Areas)</b>\n            </span>\n          </div>\n        </div>\n        <div style=\"margin-top: 8px;\">&bull; <b style=\"color: #4CAF50;\">Volume of a Combined Solid:</b></div>\n        <div style=\"padding-left: 12px; margin-top: 4px;\">\n          Unlike surface area, volume is purely additive:\n          <div style=\"text-align: center; margin: 8px 0;\">\n            <span class=\"prop-chip\" style=\"border-color: #4CAF50; color: #A5D6A7; font-size: 15px; padding: 6px 14px;\">\n              <b>Volume of Combined Solid = Volume(Solid 1) + Volume(Solid 2) + ...</b>\n            </span>\n          </div>\n          If a part is scooped out (cavity), its volume is subtracted: <b>Remaining Volume = Total Volume &minus; Scooped Volume</b>.\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <!-- 2. Standard 3D Geometric Formulas Matrix -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 2. Master Formula Matrix for Basic 3D Solids</div>\n    <div class=\"q-text\">\n      Reference formulas for all foundational 3-dimensional shapes:\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"table-card\">\n        <table>\n          <thead>\n            <tr>\n              <th>Solid Shape</th>\n              <th>Curved / Lateral Surface Area (CSA/LSA)</th>\n              <th>Total Surface Area (TSA)</th>\n              <th>Volume (V)</th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr>\n              <td><b>Cube</b> (side <i>a</i>)</td>\n              <td>4<i>a</i><sup>2</sup></td>\n              <td>6<i>a</i><sup>2</sup></td>\n              <td><i>a</i><sup>3</sup></td>\n            </tr>\n            <tr>\n              <td><b>Cuboid</b> (<i>l, b, h</i>)</td>\n              <td>2<i>h</i>(<i>l</i> + <i>b</i>)</td>\n              <td>2(<i>lb</i> + <i>bh</i> + <i>hl</i>)</td>\n              <td><i>l</i> &times; <i>b</i> &times; <i>h</i></td>\n            </tr>\n            <tr>\n              <td><b>Right Circular Cylinder</b> (<i>r, h</i>)</td>\n              <td>2&pi;<i>rh</i></td>\n              <td>2&pi;<i>r</i>(<i>h</i> + <i>r</i>)</td>\n              <td>&pi;<i>r</i><sup>2</sup><i>h</i></td>\n            </tr>\n            <tr>\n              <td><b>Right Circular Cone</b> (<i>r, h, l</i>)</td>\n              <td>&pi;<i>rl</i> &nbsp; <span class=\"reason\">[<i>l</i> = &radic;(<i>r</i><sup>2</sup> + <i>h</i><sup>2</sup>)]</span></td>\n              <td>&pi;<i>r</i>(<i>l</i> + <i>r</i>)</td>\n              <td><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span> &pi;<i>r</i><sup>2</sup><i>h</i></td>\n            </tr>\n            <tr>\n              <td><b>Sphere</b> (radius <i>r</i>)</td>\n              <td>4&pi;<i>r</i><sup>2</sup></td>\n              <td>4&pi;<i>r</i><sup>2</sup></td>\n              <td><span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">3</span></span> &pi;<i>r</i><sup>3</sup></td>\n            </tr>\n            <tr>\n              <td><b>Hemisphere</b> (radius <i>r</i>)</td>\n              <td>2&pi;<i>r</i><sup>2</sup></td>\n              <td>3&pi;<i>r</i><sup>2</sup></td>\n              <td><span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span> &pi;<i>r</i><sup>3</sup></td>\n            </tr>\n          </tbody>\n        </table>\n      </div>\n    </div>\n  </div>\n\n  <!-- 3. Key Combination Archetypes -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 3. Master Archetypes of Combined Solids</div>\n    <div class=\"q-text\">\n      Frequent board exam combinations and their direct formulas:\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-step\">\n        <div>&bull; <b style=\"color: #FF8A65;\">1. Playing Top / Toy (Cone mounted on Hemisphere):</b></div>\n        <div style=\"padding-left: 14px;\">\n          - <b>TSA:</b> CSA(Cone) + CSA(Hemisphere) = <b>&pi;<i>rl</i> + 2&pi;<i>r</i><sup>2</sup> = &pi;<i>r</i>(<i>l</i> + 2<i>r</i>)</b><br/>\n          - <b>Volume:</b> <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span> &pi;<i>r</i><sup>2</sup><i>h</i> + <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span> &pi;<i>r</i><sup>3</sup> = <b><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span> &pi;<i>r</i><sup>2</sup> (<i>h</i> + 2<i>r</i>)</b>\n        </div>\n\n        <div style=\"margin-top: 8px;\">&bull; <b style=\"color: #FF8A65;\">2. Capsule / Tanker (Cylinder with Two Hemispherical Ends):</b></div>\n        <div style=\"padding-left: 14px;\">\n          - <b>TSA:</b> CSA(Cylinder) + 2 &times; CSA(Hemisphere) = 2&pi;<i>rh</i> + 4&pi;<i>r</i><sup>2</sup> = <b>2&pi;<i>r</i>(<i>h</i> + 2<i>r</i>)</b><br/>\n          - <b>Volume:</b> &pi;<i>r</i><sup>2</sup><i>h</i> + <span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">3</span></span> &pi;<i>r</i><sup>3</sup> = <b>&pi;<i>r</i><sup>2</sup> (<i>h</i> + <span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">3</span></span> <i>r</i>)</b>\n        </div>\n\n        <div style=\"margin-top: 8px;\">&bull; <b style=\"color: #FF8A65;\">3. Circus Tent (Cylinder surmounted by Conical Top):</b></div>\n        <div style=\"padding-left: 14px;\">\n          - <b>Canvas Area:</b> CSA(Cylinder) + CSA(Cone) = <b>2&pi;<i>rh</i><sub>cyl</sub> + &pi;<i>rl</i> = &pi;<i>r</i>(2<i>h</i><sub>cyl</sub> + <i>l</i>)</b><br/>\n          - <b>Volume:</b> &pi;<i>r</i><sup>2</sup><i>h</i><sub>cyl</sub> + <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span> &pi;<i>r</i><sup>2</sup><i>h</i><sub>cone</sub>\n        </div>\n\n        <div style=\"margin-top: 8px;\">&bull; <b style=\"color: #FF8A65;\">4. Scooped Cylinder (Cylinder with Hemispherical Cavities at Both Ends):</b></div>\n        <div style=\"padding-left: 14px;\">\n          - <b>Total Surface Area:</b> Increases! = CSA(Cylinder) + 2 &times; CSA(Hemisphere) = <b>2&pi;<i>rh</i> + 4&pi;<i>r</i><sup>2</sup></b><br/>\n          - <b>Remaining Volume:</b> Decreases! = &pi;<i>r</i><sup>2</sup><i>h</i> &minus; <span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">3</span></span> &pi;<i>r</i><sup>3</sup>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <!-- 4. Master Revision Cheat Sheet -->\n  <div class=\"q-card\" style=\"border-color: #FF3D00;\">\n    <div class=\"q-title\">✦ 4. Master Revision Formula Cheat Sheet</div>\n    <div class=\"sol-box\">\n      <div class=\"table-card\">\n        <table>\n          <thead>\n            <tr>\n              <th>Combination / Scenario</th>\n              <th>Surface Area (TSA)</th>\n              <th>Volume (V)</th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr>\n              <td><b>Two Cubes Joined</b> (side <i>a</i>)</td>\n              <td><b>10<i>a</i><sup>2</sup></b> &nbsp; <span class=\"reason\">[Cuboid 2a &times; a &times; a]</span></td>\n              <td><b>2<i>a</i><sup>3</sup></b></td>\n            </tr>\n            <tr>\n              <td><b>Hemisphere on Cube</b> (side <i>a</i>, base <i>r</i>)</td>\n              <td><b>6<i>a</i><sup>2</sup> &minus; &pi;<i>r</i><sup>2</sup> + 2&pi;<i>r</i><sup>2</sup> = 6<i>a</i><sup>2</sup> + &pi;<i>r</i><sup>2</sup></b></td>\n              <td><b><i>a</i><sup>3</sup> + <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span> &pi;<i>r</i><sup>3</sup></b></td>\n            </tr>\n            <tr>\n              <td><b>Hemispherical Depression in Cube</b></td>\n              <td><b>6<i>a</i><sup>2</sup> + &pi;<i>r</i><sup>2</sup></b> &nbsp; <span class=\"reason\">[Same as mounted!]</span></td>\n              <td><b><i>a</i><sup>3</sup> &minus; <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span> &pi;<i>r</i><sup>3</sup></b></td>\n            </tr>\n            <tr>\n              <td><b>Cone on Hemisphere</b></td>\n              <td><b>&pi;<i>r</i>(<i>l</i> + 2<i>r</i>)</b></td>\n              <td><b><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span> &pi;<i>r</i><sup>2</sup>(<i>h</i> + 2<i>r</i>)</b></td>\n            </tr>\n            <tr>\n              <td><b>Cylinder + 2 Hemispheres</b></td>\n              <td><b>2&pi;<i>r</i>(<i>h</i> + 2<i>r</i>)</b></td>\n              <td><b>&pi;<i>r</i><sup>2</sup>(<i>h</i> + <span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">3</span></span> <i>r</i>)</b></td>\n            </tr>\n            <tr>\n              <td><b>Mass from Volume</b></td>\n              <td colspan=\"2\"><b>Mass = Density &times; Volume</b> &nbsp; <span class=\"reason\">[e.g. 1 cm<sup>3</sup> iron &approx; 8 g]</span></td>\n            </tr>\n          </tbody>\n        </table>\n      </div>\n    </div>\n  </div>\n\n</div>\n",
+  htmlExercises: {
+    examples: "\n\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; }\n  .frac .den { padding: 1px 4px; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 61, 0, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FF3D00; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 14px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(255, 61, 0, 0.25); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FF3D00; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FF8A65; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(255, 61, 0, 0.15); border: 1px solid #FF3D00; color: #FF8A65; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 6px 0; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 61, 0, 0.4); border-radius: 10px; padding: 14px; margin: 16px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #FFFFFF; border-radius: 8px; padding: 10px 8px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.25); }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 10px; font-weight: 500; }\n  .table-card { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 14px 0; border-radius: 8px; }\n  .table-card table { width: 100%; border-collapse: collapse; text-align: center; }\n  .table-card th { background: rgba(255, 61, 0, 0.2); color: #FF8A65; border: 1px solid rgba(255, 61, 0, 0.35); padding: 10px; font-weight: 700; }\n  .table-card td { border: 1px solid rgba(255, 61, 0, 0.2); padding: 9px; color: #E2E8F0; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Header Card -->\n  <div style=\"background: linear-gradient(135deg, rgba(255, 61, 0, 0.2), rgba(221, 44, 0, 0.1)); border: 1.5px solid #FF3D00; border-radius: 12px; padding: 14px 18px; margin-bottom: 20px;\">\n    <div style=\"font-size: 19px; font-weight: 800; color: #FF3D00; margin-bottom: 4px;\">\n      Surface Areas &amp; Volumes &bull; Solved Examples\n    </div>\n    <div style=\"color: #FFFFFF; font-size: 15px; font-weight: 500;\">\n      Step-by-Step Textbook Solved Examples (Example 1 to Example 3)\n    </div>\n  </div>\n\n  <!-- EXAMPLE 1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 1:</div>\n    <div class=\"q-text\">\n      Rasheed got a playing top (<i>lattu</i>) as his birthday present, which surprisingly had no colour on it. He wanted to colour it with his crayons. The top is shaped like a cone surmounted by a hemisphere. The entire top is 5 cm in height and the diameter of the top is 3.5 cm. Find the area he has to colour (Take &pi; = <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span>).\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 240\" width=\"240\" height=\"240\">\n          <!-- Hemisphere on top: center (120, 90), radius 45 -->\n          <path d=\"M75,90 A45,45 0 0,1 165,90 Z\" fill=\"rgba(255, 61, 0, 0.25)\" stroke=\"#FF3D00\" stroke-width=\"2\"/>\n          <ellipse cx=\"120\" cy=\"90\" rx=\"45\" ry=\"12\" fill=\"none\" stroke=\"#64748B\" stroke-dasharray=\"3,3\" stroke-width=\"1.5\"/>\n          <!-- Cone body down to tip at (120, 210) -->\n          <polygon points=\"75,90 165,90 120,210\" fill=\"rgba(255, 61, 0, 0.35)\" stroke=\"#FF3D00\" stroke-width=\"2\"/>\n          <circle cx=\"120\" cy=\"90\" r=\"3\" fill=\"#334155\"/>\n          <circle cx=\"120\" cy=\"210\" r=\"3\" fill=\"#334155\"/>\n          <text x=\"120\" y=\"80\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\" text-anchor=\"middle\">r = 1.75 cm</text>\n          <text x=\"185\" y=\"150\" font-size=\"11\" font-weight=\"bold\" fill=\"#64748B\">Total = 5 cm</text>\n        </svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Playing top (lattu) — Cone surmounted by Hemisphere</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Easy Step-by-Step Solution:</div>\n      <div class=\"sol-step\">\n        <div>Diameter = 3.5 cm &rArr; Radius <i>r</i> = <span class=\"frac\"><span class=\"num\">3.5</span><span class=\"den\">2</span></span> = 1.75 cm = <span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">4</span></span> cm.</div>\n        <div>Height of hemisphere = Radius = 1.75 cm.</div>\n        <div>Height of conical portion <i>h</i> = Total height &minus; Radius = 5 &minus; 1.75 = <b>3.25 cm</b>.</div>\n        <div style=\"margin-top: 6px;\">Slant height of the cone <i>l</i>:</div>\n        <div style=\"padding-left: 12px;\"><i>l</i> = &radic;<span style=\"border-top: 1px solid currentColor;\"><i>r</i><sup>2</sup> + <i>h</i><sup>2</sup></span> = &radic;<span style=\"border-top: 1px solid currentColor;\">(1.75)<sup>2</sup> + (3.25)<sup>2</sup></span> = &radic;<span style=\"border-top: 1px solid currentColor;\">3.0625 + 10.5625</span> = &radic;13.625 &approx; <b>3.7 cm</b>.</div>\n\n        <div style=\"margin-top: 8px;\"><b>Total Surface Area to be coloured:</b></div>\n        <div style=\"padding-left: 12px;\">TSA of top = CSA of hemisphere + CSA of cone</div>\n        <div style=\"padding-left: 12px;\">= 2&pi;<i>r</i><sup>2</sup> + &pi;<i>rl</i> = &pi;<i>r</i>(2<i>r</i> + <i>l</i>)</div>\n        <div style=\"padding-left: 12px;\">= <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; <span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">4</span></span> &times; [2(1.75) + 3.7]</div>\n        <div style=\"padding-left: 12px;\">= <span class=\"frac\"><span class=\"num\">11</span><span class=\"den\">2</span></span> &times; [3.5 + 3.7] = 5.5 &times; 7.2 = <b>39.6 cm<sup>2</sup></b> (approx).</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Area to Colour: </span>\n        <span class=\"ans-val\">39.6 cm<sup>2</sup></span>\n      </div>\n    </div>\n  </div>\n\n  <!-- EXAMPLE 2 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 2:</div>\n    <div class=\"q-text\">\n      The decorative block shown in the figure is made of two solids — a cube and a hemisphere. The base of the block is a cube with edge 5 cm, and the hemisphere fixed on the top has a diameter of 4.2 cm. Find the total surface area of the block (Take &pi; = <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span>).\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 220\" width=\"240\" height=\"220\">\n          <!-- Cube base: 120 x 100 -->\n          <rect x=\"50\" y=\"80\" width=\"140\" height=\"120\" fill=\"rgba(255, 61, 0, 0.2)\" stroke=\"#FF3D00\" stroke-width=\"2\"/>\n          <!-- Top face hemisphere: base ellipse at y=80, radius rx=40, ry=10 -->\n          <ellipse cx=\"120\" cy=\"80\" rx=\"40\" ry=\"10\" fill=\"#FFFFFF\" stroke=\"#334155\" stroke-dasharray=\"2,2\" stroke-width=\"1.5\"/>\n          <path d=\"M80,80 A40,40 0 0,1 160,80 Z\" fill=\"rgba(255, 61, 0, 0.45)\" stroke=\"#FF3D00\" stroke-width=\"2\"/>\n          <text x=\"120\" y=\"145\" font-size=\"12\" font-weight=\"bold\" fill=\"#334155\" text-anchor=\"middle\">Cube edge = 5 cm</text>\n          <text x=\"120\" y=\"60\" font-size=\"11\" font-weight=\"bold\" fill=\"#FF3D00\" text-anchor=\"middle\">d = 4.2 cm</text>\n        </svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Decorative block consisting of a Cube with top surmounted by a Hemisphere</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Easy Step-by-Step Solution:</div>\n      <div class=\"sol-step\">\n        <div>Edge of cube <i>a</i> = 5 cm &rArr; TSA of cube = 6<i>a</i><sup>2</sup> = 6 &times; 5<sup>2</sup> = 6 &times; 25 = <b>150 cm<sup>2</sup></b>.</div>\n        <div>Diameter of hemisphere = 4.2 cm &rArr; Radius <i>r</i> = 2.1 cm.</div>\n        <div style=\"margin-top: 6px;\">The hemisphere covers a circular area on the top face of the cube, but adds its own curved surface:</div>\n        <div style=\"padding-left: 12px;\">TSA of block = TSA of cube &minus; Base area of hemisphere + CSA of hemisphere</div>\n        <div style=\"padding-left: 12px;\">= 6<i>a</i><sup>2</sup> &minus; &pi;<i>r</i><sup>2</sup> + 2&pi;<i>r</i><sup>2</sup></div>\n        <div style=\"padding-left: 12px;\">= 6<i>a</i><sup>2</sup> + &pi;<i>r</i><sup>2</sup></div>\n        <div style=\"padding-left: 12px;\">= 150 + (<span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; 2.1 &times; 2.1)</div>\n        <div style=\"padding-left: 12px;\">= 150 + (22 &times; 0.3 &times; 2.1) = 150 + 13.86 = <b>163.86 cm<sup>2</sup></b>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Total Surface Area: </span>\n        <span class=\"ans-val\">163.86 cm<sup>2</sup></span>\n      </div>\n    </div>\n  </div>\n\n  <!-- EXAMPLE 3 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 3:</div>\n    <div class=\"q-text\">\n      A wooden toy rocket is in the shape of a cone mounted on a cylinder. The height of the entire rocket is 26 cm, while the height of the conical part is 6 cm. The base of the conical portion has a diameter of 5 cm, while the base diameter of the cylindrical portion is 3 cm. If the conical portion is to be painted orange and the cylindrical portion yellow, find the area of the rocket painted with each of these colours (Take &pi; = 3.14).\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Easy Step-by-Step Solution:</div>\n      <div class=\"sol-step\">\n        <div><b>1. Dimensions:</b></div>\n        <div style=\"padding-left: 12px;\">&bull; For cone: Radius <i>R</i> = <span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">2</span></span> = 2.5 cm, Height <i>h</i> = 6 cm.</div>\n        <div style=\"padding-left: 12px;\">Slant height <i>l</i> = &radic;<span style=\"border-top: 1px solid currentColor;\">(2.5)<sup>2</sup> + 6<sup>2</sup></span> = &radic;<span style=\"border-top: 1px solid currentColor;\">6.25 + 36</span> = &radic;42.25 = <b>6.5 cm</b>.</div>\n        <div style=\"padding-left: 12px;\">&bull; For cylinder: Radius <i>r</i> = <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">2</span></span> = 1.5 cm, Height <i>H</i> = 26 &minus; 6 = <b>20 cm</b>.</div>\n\n        <div style=\"margin-top: 8px;\"><b>2. Area to be painted Orange (Conical part):</b></div>\n        <div style=\"padding-left: 12px;\">Orange Area = CSA of cone + Base area of cone &minus; Base area of cylinder</div>\n        <div style=\"padding-left: 12px;\">= &pi;<i>Rl</i> + &pi;<i>R</i><sup>2</sup> &minus; &pi;<i>r</i><sup>2</sup> = &pi; [<i>Rl</i> + <i>R</i><sup>2</sup> &minus; <i>r</i><sup>2</sup>]</div>\n        <div style=\"padding-left: 12px;\">= 3.14 &times; [(2.5 &times; 6.5) + (2.5)<sup>2</sup> &minus; (1.5)<sup>2</sup>]</div>\n        <div style=\"padding-left: 12px;\">= 3.14 &times; [16.25 + 6.25 &minus; 2.25] = 3.14 &times; 20.25 = <b>63.585 cm<sup>2</sup></b>.</div>\n\n        <div style=\"margin-top: 8px;\"><b>3. Area to be painted Yellow (Cylindrical part):</b></div>\n        <div style=\"padding-left: 12px;\">Yellow Area = CSA of cylinder + Base area of cylinder</div>\n        <div style=\"padding-left: 12px;\">= 2&pi;<i>rH</i> + &pi;<i>r</i><sup>2</sup> = &pi;<i>r</i>(2<i>H</i> + <i>r</i>)</div>\n        <div style=\"padding-left: 12px;\">= 3.14 &times; 1.5 &times; [2(20) + 1.5] = 4.71 &times; 41.5 = <b>195.465 cm<sup>2</sup></b>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">Orange Area = 63.585 cm<sup>2</sup>, &nbsp; Yellow Area = 195.465 cm<sup>2</sup></span>\n      </div>\n    </div>\n  </div>\n\n</div>\n",
+    exercise1: "\n<div class=\"ex-header\">\n  <div class=\"ex-badge\">Exercise 12.1 &bull; 9 Questions</div>\n  <div class=\"ex-title\">Surface Area of Combinations of Solids</div>\n  <div class=\"ex-desc\">Finding the total exposed surface area when geometric solids (cubes, cylinders, cones, hemispheres) are joined or scooped out. <i>(Unless stated otherwise, take &pi; = <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span>)</i></div>\n</div>\n\n<!-- Question 1 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q1</span> Joining Two Cubes to Form a Cuboid</div>\n  <div class=\"q-text\">\n    2 cubes each of volume <b>64 cm<sup>3</sup></b> are joined end to end. Find the surface area of the resulting cuboid.\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Step 1: Find the edge length of each cube</b></div>\n    <div class=\"sol-step\">Let the edge of each cube be <i>a</i> cm.</div>\n    <div class=\"sol-step\">Volume of cube = <i>a</i><sup>3</sup> = 64 cm<sup>3</sup></div>\n    <div class=\"sol-step\">&rArr; <i>a</i> = &sup3;&radic;64 = <b>4 cm</b></div>\n    \n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 2: Dimensions of the resulting cuboid</b></div>\n    <div class=\"sol-step\">When two cubes of edge 4 cm are joined end-to-end:</div>\n    <div class=\"sol-step\">Length (<i>l</i>) = 4 + 4 = <b>8 cm</b></div>\n    <div class=\"sol-step\">Breadth (<i>b</i>) = <b>4 cm</b></div>\n    <div class=\"sol-step\">Height (<i>h</i>) = <b>4 cm</b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 3: Total Surface Area (TSA) of resulting cuboid</b></div>\n    <div class=\"sol-step\">TSA = 2(<i>lb</i> + <i>bh</i> + <i>hl</i>)</div>\n    <div class=\"sol-step\">&rArr; TSA = 2 &times; [(8 &times; 4) + (4 &times; 4) + (4 &times; 8)]</div>\n    <div class=\"sol-step\">&rArr; TSA = 2 &times; [32 + 16 + 32] = 2 &times; 80 = <b>160 cm<sup>2</sup></b></div>\n    \n    <div class=\"ans-box\">\n      &check; <b>Surface Area of resulting cuboid = 160 cm<sup>2</sup></b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 2 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q2</span> Inner Surface Area of a Vessel</div>\n  <div class=\"q-text\">\n    A vessel is in the form of a hollow hemisphere mounted by a hollow cylinder. The diameter of the hemisphere is <b>14 cm</b> and the total height of the vessel is <b>13 cm</b>. Find the inner surface area of the vessel.\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Step 1: Identify dimensions of both components</b></div>\n    <div class=\"sol-step\">Diameter of hemisphere (<i>d</i>) = 14 cm &rArr; Radius (<i>r</i>) = <span class=\"frac\"><span class=\"num\">14</span><span class=\"den\">2</span></span> = <b>7 cm</b></div>\n    <div class=\"sol-step\">Radius of hollow cylinder (<i>r</i>) = <b>7 cm</b> (same as hemisphere)</div>\n    <div class=\"sol-step\">Height of hemispherical part = radius = <b>7 cm</b></div>\n    <div class=\"sol-step\">Total height of vessel (<i>H</i>) = 13 cm</div>\n    <div class=\"sol-step\">Height of cylindrical part (<i>h</i>) = Total height &minus; radius = 13 &minus; 7 = <b>6 cm</b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 2: Calculate inner surface area</b></div>\n    <div class=\"sol-step\">Since the vessel is hollow and open at the top, the inner surface area equals:</div>\n    <div class=\"sol-step\"><b>Inner Surface Area = CSA of Cylinder + CSA of Hemisphere</b></div>\n    <div class=\"sol-step\">&rArr; Area = 2&pi;<i>rh</i> + 2&pi;<i>r</i><sup>2</sup> = 2&pi;<i>r</i>(<i>h</i> + <i>r</i>)</div>\n    <div class=\"sol-step\">&rArr; Area = 2 &times; <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; 7 &times; (6 + 7)</div>\n    <div class=\"sol-step\">&rArr; Area = 44 &times; 13 = <b>572 cm<sup>2</sup></b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>Inner surface area of the vessel = 572 cm<sup>2</sup></b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 3 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q3</span> Total Surface Area of a Toy (Cone on Hemisphere)</div>\n  <div class=\"q-text\">\n    A toy is in the form of a cone of radius <b>3.5 cm</b> mounted on a hemisphere of same radius. The total height of the toy is <b>15.5 cm</b>. Find the total surface area of the toy.\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Step 1: Radius and heights</b></div>\n    <div class=\"sol-step\">Common radius (<i>r</i>) = 3.5 cm = <span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">2</span></span> cm</div>\n    <div class=\"sol-step\">Total height of toy = 15.5 cm</div>\n    <div class=\"sol-step\">Height of hemisphere = <i>r</i> = 3.5 cm</div>\n    <div class=\"sol-step\">Height of conical part (<i>h</i>) = 15.5 &minus; 3.5 = <b>12 cm</b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 2: Slant height (<i>l</i>) of the cone</b></div>\n    <div class=\"sol-step\"><i>l</i> = &radic;(<i>r</i><sup>2</sup> + <i>h</i><sup>2</sup>) = &radic;((3.5)<sup>2</sup> + (12)<sup>2</sup>)</div>\n    <div class=\"sol-step\">&rArr; <i>l</i> = &radic;(12.25 + 144) = &radic;156.25 = <b>12.5 cm</b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 3: Total Surface Area (TSA) of the toy</b></div>\n    <div class=\"sol-step\">The base where the cone meets the hemisphere is internal (hidden).</div>\n    <div class=\"sol-step\"><b>TSA of Toy = CSA of Cone + CSA of Hemisphere</b></div>\n    <div class=\"sol-step\">&rArr; TSA = &pi;<i>rl</i> + 2&pi;<i>r</i><sup>2</sup> = &pi;<i>r</i>(<i>l</i> + 2<i>r</i>)</div>\n    <div class=\"sol-step\">&rArr; TSA = <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; <span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">2</span></span> &times; [12.5 + 2(3.5)]</div>\n    <div class=\"sol-step\">&rArr; TSA = 11 &times; [12.5 + 7] = 11 &times; 19.5 = <b>214.5 cm<sup>2</sup></b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>Total surface area of the toy = 214.5 cm<sup>2</sup></b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 4 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q4</span> Cubical Block Surmounted by a Hemisphere</div>\n  <div class=\"q-text\">\n    A cubical block of side <b>7 cm</b> is surmounted by a hemisphere. What is the greatest diameter the hemisphere can have? Find the surface area of the solid.\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Step 1: Greatest diameter of the hemisphere</b></div>\n    <div class=\"sol-step\">The hemisphere rests on one face of the cube (which is a square of side 7 cm).</div>\n    <div class=\"sol-step\">The maximum diameter it can have without hanging over the edge is equal to the side of the cube:</div>\n    <div class=\"sol-step\">&rArr; <b>Greatest diameter = 7 cm</b>, so radius <i>r</i> = <span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">2</span></span> = 3.5 cm</div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 2: Total surface area of the solid</b></div>\n    <div class=\"sol-step\">When the hemisphere sits on the top face, it covers a circular base of area &pi;<i>r</i><sup>2</sup>, but adds curved surface area 2&pi;<i>r</i><sup>2</sup>:</div>\n    <div class=\"sol-step\"><b>Total Surface Area = TSA of Cube + CSA of Hemisphere &minus; Area of Circular Base</b></div>\n    <div class=\"sol-step\">&rArr; TSA = 6<i>a</i><sup>2</sup> + 2&pi;<i>r</i><sup>2</sup> &minus; &pi;<i>r</i><sup>2</sup> = 6<i>a</i><sup>2</sup> + &pi;<i>r</i><sup>2</sup></div>\n    <div class=\"sol-step\">Side of cube <i>a</i> = 7 cm, radius <i>r</i> = <span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">2</span></span> cm</div>\n    <div class=\"sol-step\">&rArr; TSA = 6 &times; (7)<sup>2</sup> + <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; (<span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">2</span></span>)<sup>2</sup></div>\n    <div class=\"sol-step\">&rArr; TSA = 6 &times; 49 + <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; <span class=\"frac\"><span class=\"num\">49</span><span class=\"den\">4</span></span> = 294 + <span class=\"frac\"><span class=\"num\">77</span><span class=\"den\">2</span></span></div>\n    <div class=\"sol-step\">&rArr; TSA = 294 + 38.5 = <b>332.5 cm<sup>2</sup></b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>Greatest diameter = 7 cm</b><br>\n      &check; <b>Surface area of solid = 332.5 cm<sup>2</sup></b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 5 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q5</span> Hemispherical Depression Cut Out from a Cube</div>\n  <div class=\"q-text\">\n    A hemispherical depression is cut out from one face of a cubical wooden block such that the diameter <i>l</i> of the hemisphere is equal to the edge of the cube. Determine the surface area of the remaining solid.\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Step 1: Geometry of the scooped solid</b></div>\n    <div class=\"sol-step\">Edge of the cube = <i>l</i></div>\n    <div class=\"sol-step\">Diameter of hemisphere = <i>l</i> &rArr; Radius (<i>r</i>) = <span class=\"frac\"><span class=\"num\">l</span><span class=\"den\">2</span></span></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 2: Surface area formula</b></div>\n    <div class=\"sol-step\">Scooping out a depression creates a curved interior surface of area 2&pi;<i>r</i><sup>2</sup> while removing the circular opening of area &pi;<i>r</i><sup>2</sup> from the top square face:</div>\n    <div class=\"sol-step\"><b>Surface Area = TSA of Cube &minus; Area of Circle + Inner CSA of Hemisphere</b></div>\n    <div class=\"sol-step\">&rArr; Area = 6<i>l</i><sup>2</sup> &minus; &pi;<i>r</i><sup>2</sup> + 2&pi;<i>r</i><sup>2</sup> = 6<i>l</i><sup>2</sup> + &pi;<i>r</i><sup>2</sup></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 3: Substitute radius <i>r</i> = <span class=\"frac\"><span class=\"num\">l</span><span class=\"den\">2</span></span></b></div>\n    <div class=\"sol-step\">&rArr; Area = 6<i>l</i><sup>2</sup> + &pi; &times; (<span class=\"frac\"><span class=\"num\">l</span><span class=\"den\">2</span></span>)<sup>2</sup> = 6<i>l</i><sup>2</sup> + &pi; &times; <span class=\"frac\"><span class=\"num\">l<sup>2</sup></span><span class=\"den\">4</span></span></div>\n    <div class=\"sol-step\">&rArr; Area = <span class=\"frac\"><span class=\"num\">24l<sup>2</sup> + &pi;l<sup>2</sup></span><span class=\"den\">4</span></span> = <b><span class=\"frac\"><span class=\"num\">l<sup>2</sup></span><span class=\"den\">4</span></span>(24 + &pi;) sq. units</b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>Surface area of remaining solid = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span> <i>l</i><sup>2</sup>(&pi; + 24) sq. units</b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 6 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q6</span> Surface Area of a Medicine Capsule</div>\n  <div class=\"q-text\">\n    A medicine capsule is in the shape of a cylinder with two hemispheres stuck to each of its ends. The length of the entire capsule is <b>14 mm</b> and the diameter of the capsule is <b>5 mm</b>. Find its surface area.\n  </div>\n\n  <div class=\"diagram-card\">\n    <svg viewBox=\"0 0 420 130\" class=\"svg-art\">\n      <defs>\n        <linearGradient id=\"capGrad\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#FFCCBC\" />\n          <stop offset=\"50%\" stop-color=\"#FFAB91\" />\n          <stop offset=\"100%\" stop-color=\"#FF7043\" />\n        </linearGradient>\n      </defs>\n      <!-- Capsule Body -->\n      <!-- Left Hemisphere -->\n      <path d=\"M 120 30 A 35 35 0 0 0 120 100 Z\" fill=\"url(#capGrad)\" stroke=\"#FF3D00\" stroke-width=\"2\"/>\n      <!-- Cylindrical Center -->\n      <rect x=\"120\" y=\"30\" width=\"180\" height=\"70\" fill=\"url(#capGrad)\" stroke=\"#FF3D00\" stroke-width=\"2\"/>\n      <!-- Right Hemisphere -->\n      <path d=\"M 300 30 A 35 35 0 0 1 300 100 Z\" fill=\"url(#capGrad)\" stroke=\"#FF3D00\" stroke-width=\"2\"/>\n      \n      <!-- Seam lines (dashed) -->\n      <line x1=\"120\" y1=\"30\" x2=\"120\" y2=\"100\" stroke=\"#DD2C00\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\"/>\n      <line x1=\"300\" y1=\"30\" x2=\"300\" y2=\"100\" stroke=\"#DD2C00\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\"/>\n\n      <!-- Dimensions -->\n      <!-- Total length dimension line -->\n      <line x1=\"85\" y1=\"118\" x2=\"335\" y2=\"118\" stroke=\"#374151\" stroke-width=\"1.5\"/>\n      <line x1=\"85\" y1=\"112\" x2=\"85\" y2=\"124\" stroke=\"#374151\" stroke-width=\"1.5\"/>\n      <line x1=\"335\" y1=\"112\" x2=\"335\" y2=\"124\" stroke=\"#374151\" stroke-width=\"1.5\"/>\n      <text x=\"210\" y=\"115\" font-size=\"12\" font-weight=\"bold\" fill=\"#374151\" text-anchor=\"middle\">Total Length = 14 mm</text>\n\n      <!-- Diameter dimension line -->\n      <line x1=\"355\" y1=\"30\" x2=\"355\" y2=\"100\" stroke=\"#374151\" stroke-width=\"1.5\"/>\n      <line x1=\"350\" y1=\"30\" x2=\"360\" y2=\"30\" stroke=\"#374151\" stroke-width=\"1.5\"/>\n      <line x1=\"350\" y1=\"100\" x2=\"360\" y2=\"100\" stroke=\"#374151\" stroke-width=\"1.5\"/>\n      <text x=\"365\" y=\"69\" font-size=\"11\" font-weight=\"bold\" fill=\"#374151\">d = 5 mm</text>\n\n      <!-- Parts labels -->\n      <text x=\"100\" y=\"20\" font-size=\"10\" font-weight=\"bold\" fill=\"#E65100\">Hemisphere (r = 2.5)</text>\n      <text x=\"210\" y=\"20\" font-size=\"10\" font-weight=\"bold\" fill=\"#E65100\">Cylinder (h = 9)</text>\n      <text x=\"315\" y=\"20\" font-size=\"10\" font-weight=\"bold\" fill=\"#E65100\">Hemisphere (r = 2.5)</text>\n    </svg>\n    <div class=\"diagram-caption\">Figure: Medicine Capsule (Cylindrical middle of height 9 mm with two hemispherical ends of radius 2.5 mm)</div>\n  </div>\n\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Step 1: Determine dimensions</b></div>\n    <div class=\"sol-step\">Diameter of capsule (<i>d</i>) = 5 mm &rArr; Radius (<i>r</i>) = <span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">2</span></span> = <b>2.5 mm</b></div>\n    <div class=\"sol-step\">Length of each hemispherical end = radius = 2.5 mm</div>\n    <div class=\"sol-step\">Length of cylindrical part (<i>h</i>) = 14 &minus; (2.5 + 2.5) = 14 &minus; 5 = <b>9 mm</b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 2: Total surface area of capsule</b></div>\n    <div class=\"sol-step\">The surface area comprises the curved surface of the cylinder plus curved surfaces of 2 hemispheres:</div>\n    <div class=\"sol-step\"><b>Surface Area = CSA of Cylinder + 2 &times; (CSA of Hemisphere)</b></div>\n    <div class=\"sol-step\">&rArr; Area = 2&pi;<i>rh</i> + 2(2&pi;<i>r</i><sup>2</sup>) = 2&pi;<i>rh</i> + 4&pi;<i>r</i><sup>2</sup> = 2&pi;<i>r</i>(<i>h</i> + 2<i>r</i>)</div>\n    <div class=\"sol-step\">&rArr; Area = 2 &times; <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; <span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">2</span></span> &times; [9 + 2(2.5)]</div>\n    <div class=\"sol-step\">&rArr; Area = <span class=\"frac\"><span class=\"num\">110</span><span class=\"den\">7</span></span> &times; [9 + 5] = <span class=\"frac\"><span class=\"num\">110</span><span class=\"den\">7</span></span> &times; 14</div>\n    <div class=\"sol-step\">&rArr; Area = 110 &times; 2 = <b>220 mm<sup>2</sup></b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>Total surface area of the capsule = 220 mm<sup>2</sup></b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 7 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q7</span> Canvas Required for a Circus Tent & Total Cost</div>\n  <div class=\"q-text\">\n    A tent is in the shape of a cylinder surmounted by a conical top. If the height and diameter of the cylindrical part are <b>2.1 m</b> and <b>4 m</b> respectively, and the slant height of the top is <b>2.8 m</b>, find the area of the canvas used for making the tent. Also, find the cost of the canvas of the tent at the rate of <b>&inr; 500 per m<sup>2</sup></b>. <i>(Note that the base of the tent will not be covered with canvas).</i>\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Step 1: Identify dimensions</b></div>\n    <div class=\"sol-step\">Diameter of cylindrical base (<i>d</i>) = 4 m &rArr; Radius (<i>r</i>) = <b>2 m</b></div>\n    <div class=\"sol-step\">Height of cylindrical part (<i>h</i>) = <b>2.1 m</b></div>\n    <div class=\"sol-step\">Radius of conical top (<i>r</i>) = <b>2 m</b></div>\n    <div class=\"sol-step\">Slant height of conical top (<i>l</i>) = <b>2.8 m</b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 2: Area of canvas used</b></div>\n    <div class=\"sol-step\">Since the ground (base) is not covered with canvas:</div>\n    <div class=\"sol-step\"><b>Area of Canvas = CSA of Cylinder + CSA of Cone</b></div>\n    <div class=\"sol-step\">&rArr; Area = 2&pi;<i>rh</i> + &pi;<i>rl</i> = &pi;<i>r</i>(2<i>h</i> + <i>l</i>)</div>\n    <div class=\"sol-step\">&rArr; Area = <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; 2 &times; [2(2.1) + 2.8]</div>\n    <div class=\"sol-step\">&rArr; Area = <span class=\"frac\"><span class=\"num\">44</span><span class=\"den\">7</span></span> &times; [4.2 + 2.8] = <span class=\"frac\"><span class=\"num\">44</span><span class=\"den\">7</span></span> &times; 7 = <b>44 m<sup>2</sup></b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 3: Cost of the canvas</b></div>\n    <div class=\"sol-step\">Rate of canvas = &inr; 500 per m<sup>2</sup></div>\n    <div class=\"sol-step\">Total Cost = 44 &times; 500 = <b>&inr; 22,000</b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>Area of canvas required = 44 m<sup>2</sup></b><br>\n      &check; <b>Total cost of canvas = &inr; 22,000</b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 8 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q8</span> Solid Cylinder with Conical Cavity Scooped Out</div>\n  <div class=\"q-text\">\n    From a solid cylinder whose height is <b>2.4 cm</b> and diameter <b>1.4 cm</b>, a conical cavity of the same height and same diameter is hollowed out. Find the total surface area of the remaining solid to the nearest <b>cm<sup>2</sup></b>.\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Step 1: Given dimensions</b></div>\n    <div class=\"sol-step\">Diameter (<i>d</i>) = 1.4 cm &rArr; Radius (<i>r</i>) = <b>0.7 cm</b></div>\n    <div class=\"sol-step\">Height of cylinder and cone (<i>h</i>) = <b>2.4 cm</b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 2: Slant height (<i>l</i>) of the conical cavity</b></div>\n    <div class=\"sol-step\"><i>l</i> = &radic;(<i>r</i><sup>2</sup> + <i>h</i><sup>2</sup>) = &radic;((0.7)<sup>2</sup> + (2.4)<sup>2</sup>)</div>\n    <div class=\"sol-step\">&rArr; <i>l</i> = &radic;(0.49 + 5.76) = &radic;6.25 = <b>2.5 cm</b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 3: Surface area of remaining solid</b></div>\n    <div class=\"sol-step\">The remaining solid has 3 exposed surfaces:</div>\n    <div class=\"sol-step\">1. Outer curved surface of the cylinder = 2&pi;<i>rh</i></div>\n    <div class=\"sol-step\">2. Flat circular bottom base of cylinder = &pi;<i>r</i><sup>2</sup></div>\n    <div class=\"sol-step\">3. Inner conical cavity curved surface = &pi;<i>rl</i></div>\n    <div class=\"sol-step\"><b>TSA of Remaining Solid = CSA of Cylinder + Area of Bottom Base + CSA of Conical Cavity</b></div>\n    <div class=\"sol-step\">&rArr; TSA = 2&pi;<i>rh</i> + &pi;<i>r</i><sup>2</sup> + &pi;<i>rl</i> = &pi;<i>r</i>(2<i>h</i> + <i>r</i> + <i>l</i>)</div>\n    <div class=\"sol-step\">&rArr; TSA = <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; 0.7 &times; [2(2.4) + 0.7 + 2.5]</div>\n    <div class=\"sol-step\">&rArr; TSA = 2.2 &times; [4.8 + 0.7 + 2.5] = 2.2 &times; 8.0 = <b>17.6 cm<sup>2</sup></b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 4: Rounding to the nearest cm<sup>2</sup></b></div>\n    <div class=\"sol-step\">Rounding 17.6 cm<sup>2</sup> to the nearest whole number gives <b>18 cm<sup>2</sup></b>.</div>\n\n    <div class=\"ans-box\">\n      &check; <b>Exact surface area = 17.6 cm<sup>2</sup></b><br>\n      &check; <b>Surface area to nearest cm<sup>2</sup> = 18 cm<sup>2</sup></b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 9 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q9</span> Wooden Article with Hemispherical Scoops at Both Ends</div>\n  <div class=\"q-text\">\n    A wooden article was made by scooping out a hemisphere from each end of a solid cylinder, as shown in the figure. If the height of the cylinder is <b>10 cm</b>, and its base is of radius <b>3.5 cm</b>, find the total surface area of the article.\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Step 1: Identify dimensions</b></div>\n    <div class=\"sol-step\">Height of cylinder (<i>h</i>) = <b>10 cm</b></div>\n    <div class=\"sol-step\">Radius of cylinder and hemispherical scoops (<i>r</i>) = 3.5 cm = <span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">2</span></span> cm</div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 2: Surface area of the article</b></div>\n    <div class=\"sol-step\">Scooping out hemispheres from both flat bases removes both circular ends and replaces each with a curved hemispherical depression:</div>\n    <div class=\"sol-step\"><b>Total Surface Area = CSA of Cylinder + 2 &times; (CSA of Hemisphere)</b></div>\n    <div class=\"sol-step\">&rArr; Area = 2&pi;<i>rh</i> + 2(2&pi;<i>r</i><sup>2</sup>) = 2&pi;<i>rh</i> + 4&pi;<i>r</i><sup>2</sup> = 2&pi;<i>r</i>(<i>h</i> + 2<i>r</i>)</div>\n    <div class=\"sol-step\">&rArr; Area = 2 &times; <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; <span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">2</span></span> &times; [10 + 2(3.5)]</div>\n    <div class=\"sol-step\">&rArr; Area = 22 &times; [10 + 7] = 22 &times; 17 = <b>374 cm<sup>2</sup></b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>Total surface area of the article = 374 cm<sup>2</sup></b>\n    </div>\n  </div>\n</div>\n",
+    exercise2: "\n<div class=\"ex-header\">\n  <div class=\"ex-badge\">Exercise 12.2 &bull; 8 Questions</div>\n  <div class=\"ex-title\">Volume of Combinations of Solids</div>\n  <div class=\"ex-desc\">Computing total internal space or displacement of composite bodies. <i>(Unless stated otherwise, take &pi; = <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span>)</i></div>\n</div>\n\n<!-- Question 1 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q1</span> Solid Cone on a Hemisphere in Terms of &pi;</div>\n  <div class=\"q-text\">\n    A solid is in the shape of a cone standing on a hemisphere with both their radii being equal to <b>1 cm</b> and the height of the cone is equal to its radius. Find the volume of the solid in terms of <b>&pi;</b>.\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Step 1: Given dimensions</b></div>\n    <div class=\"sol-step\">Radius of hemisphere (<i>r</i>) = <b>1 cm</b></div>\n    <div class=\"sol-step\">Radius of cone (<i>r</i>) = <b>1 cm</b></div>\n    <div class=\"sol-step\">Height of cone (<i>h</i>) = radius = <b>1 cm</b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 2: Total Volume of the solid</b></div>\n    <div class=\"sol-step\">The total volume is simply the sum of volumes of the two components:</div>\n    <div class=\"sol-step\"><b>Total Volume = Volume of Cone + Volume of Hemisphere</b></div>\n    <div class=\"sol-step\">&rArr; <i>V</i> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span>&pi;<i>r</i><sup>2</sup><i>h</i> + <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span>&pi;<i>r</i><sup>3</sup></div>\n    <div class=\"sol-step\">&rArr; <i>V</i> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span>&pi;<i>r</i><sup>2</sup>(<i>h</i> + 2<i>r</i>)</div>\n    <div class=\"sol-step\">&rArr; <i>V</i> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span>&pi; &times; (1)<sup>2</sup> &times; [1 + 2(1)]</div>\n    <div class=\"sol-step\">&rArr; <i>V</i> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span>&pi; &times; 1 &times; 3 = <b>&pi; cm<sup>3</sup></b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>Volume of the solid = &pi; cm<sup>3</sup></b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 2 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q2</span> Rachel's Engineering Model (Cylinder with Two Cones)</div>\n  <div class=\"q-text\">\n    Rachel, an engineering student, was asked to make a model shaped like a cylinder with two cones attached at its two ends by using a thin aluminum sheet. The diameter of the model is <b>3 cm</b> and its total length is <b>12 cm</b>. If each cone has a height of <b>2 cm</b>, find the volume of air contained in the model that Rachel made. <i>(Assume the outer and inner dimensions of the model to be nearly the same.)</i>\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Step 1: Breakdown of dimensions</b></div>\n    <div class=\"sol-step\">Diameter of model (<i>d</i>) = 3 cm &rArr; Radius (<i>r</i>) = <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">2</span></span> = <b>1.5 cm</b></div>\n    <div class=\"sol-step\">Height of each cone (<i>h</i><sub>cone</sub>) = <b>2 cm</b></div>\n    <div class=\"sol-step\">Total height of model (<i>H</i>) = 12 cm</div>\n    <div class=\"sol-step\">Height of cylindrical part (<i>h</i><sub>cyl</sub>) = 12 &minus; (2 + 2) = 12 &minus; 4 = <b>8 cm</b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 2: Total volume of air inside the model</b></div>\n    <div class=\"sol-step\"><b>Volume = Volume of Cylinder + 2 &times; (Volume of Cone)</b></div>\n    <div class=\"sol-step\">&rArr; <i>V</i> = &pi;<i>r</i><sup>2</sup><i>h</i><sub>cyl</sub> + 2 &times; [<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span>&pi;<i>r</i><sup>2</sup><i>h</i><sub>cone</sub>]</div>\n    <div class=\"sol-step\">&rArr; <i>V</i> = &pi;<i>r</i><sup>2</sup> [<i>h</i><sub>cyl</sub> + <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span><i>h</i><sub>cone</sub>]</div>\n    <div class=\"sol-step\">&rArr; <i>V</i> = <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; (<span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">2</span></span>)<sup>2</sup> &times; [8 + <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span>(2)]</div>\n    <div class=\"sol-step\">&rArr; <i>V</i> = <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; <span class=\"frac\"><span class=\"num\">9</span><span class=\"den\">4</span></span> &times; [8 + <span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">3</span></span>] = <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; <span class=\"frac\"><span class=\"num\">9</span><span class=\"den\">4</span></span> &times; <span class=\"frac\"><span class=\"num\">28</span><span class=\"den\">3</span></span></div>\n    <div class=\"sol-step\">&rArr; <i>V</i> = <span class=\"frac\"><span class=\"num\">22 &times; 9 &times; 28</span><span class=\"den\">7 &times; 4 &times; 3</span></span></div>\n    <div class=\"sol-step\">Notice: <span class=\"frac\"><span class=\"num\">28</span><span class=\"den\">7 &times; 4</span></span> = <span class=\"frac\"><span class=\"num\">28</span><span class=\"den\">28</span></span> = 1, and <span class=\"frac\"><span class=\"num\">9</span><span class=\"den\">3</span></span> = 3.</div>\n    <div class=\"sol-step\">&rArr; <i>V</i> = 22 &times; 3 = <b>66 cm<sup>3</sup></b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>Volume of air inside the model = 66 cm<sup>3</sup></b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 3 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q3</span> Sugar Syrup in 45 Gulab Jamuns</div>\n  <div class=\"q-text\">\n    A gulab jamun contains sugar syrup up to about <b>30%</b> of its volume. Find approximately how much syrup would be found in <b>45 gulab jamuns</b>, each shaped like a cylinder with two hemispherical ends with length <b>5 cm</b> and diameter <b>2.8 cm</b>.\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Step 1: Dimensions of one gulab jamun</b></div>\n    <div class=\"sol-step\">Diameter (<i>d</i>) = 2.8 cm &rArr; Radius (<i>r</i>) = <b>1.4 cm</b></div>\n    <div class=\"sol-step\">Total length of gulab jamun = 5 cm</div>\n    <div class=\"sol-step\">Length of cylindrical middle (<i>h</i>) = 5 &minus; 2(<i>r</i>) = 5 &minus; 2(1.4) = 5 &minus; 2.8 = <b>2.2 cm</b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 2: Volume of 1 gulab jamun</b></div>\n    <div class=\"sol-step\"><b>Volume = Volume of Cylinder + 2 &times; (Volume of Hemisphere)</b></div>\n    <div class=\"sol-step\">&rArr; <i>V</i><sub>1</sub> = &pi;<i>r</i><sup>2</sup><i>h</i> + <span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">3</span></span>&pi;<i>r</i><sup>3</sup> = &pi;<i>r</i><sup>2</sup> [<i>h</i> + <span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">3</span></span><i>r</i>]</div>\n    <div class=\"sol-step\">&rArr; <i>V</i><sub>1</sub> = <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; (1.4)<sup>2</sup> &times; [2.2 + <span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">3</span></span>(1.4)]</div>\n    <div class=\"sol-step\">&rArr; <i>V</i><sub>1</sub> = <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; 1.96 &times; [2.2 + <span class=\"frac\"><span class=\"num\">5.6</span><span class=\"den\">3</span></span>]</div>\n    <div class=\"sol-step\">&rArr; <i>V</i><sub>1</sub> = 22 &times; 0.28 &times; <span class=\"frac\"><span class=\"num\">12.2</span><span class=\"den\">3</span></span> = 6.16 &times; <span class=\"frac\"><span class=\"num\">12.2</span><span class=\"den\">3</span></span> = <span class=\"frac\"><span class=\"num\">75.152</span><span class=\"den\">3</span></span> cm<sup>3</sup></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 3: Total volume of 45 gulab jamuns</b></div>\n    <div class=\"sol-step\"><i>V</i><sub>45</sub> = 45 &times; <span class=\"frac\"><span class=\"num\">75.152</span><span class=\"den\">3</span></span> = 15 &times; 75.152 = <b>1127.28 cm<sup>3</sup></b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 4: Volume of sugar syrup (30%)</b></div>\n    <div class=\"sol-step\">Syrup Volume = 30% of 1127.28 = <span class=\"frac\"><span class=\"num\">30</span><span class=\"den\">100</span></span> &times; 1127.28 = 0.30 &times; 1127.28 = <b>338.184 cm<sup>3</sup></b></div>\n    <div class=\"sol-step\">Rounding to the nearest whole number gives <b>338 cm<sup>3</sup></b>.</div>\n\n    <div class=\"ans-box\">\n      &check; <b>Volume of sugar syrup in 45 gulab jamuns &approx; 338 cm<sup>3</sup></b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 4 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q4</span> Wooden Pen Stand with 4 Conical Depressions</div>\n  <div class=\"q-text\">\n    A pen stand made of wood is in the shape of a cuboid with four conical depressions to hold pens. The dimensions of the cuboid are <b>15 cm by 10 cm by 3.5 cm</b>. The radius of each of the depressions is <b>0.5 cm</b> and the depth is <b>1.4 cm</b>. Find the volume of wood in the entire stand.\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Step 1: Volume of the cuboid</b></div>\n    <div class=\"sol-step\">Length (<i>l</i>) = 15 cm, Breadth (<i>b</i>) = 10 cm, Height (<i>h</i>) = 3.5 cm</div>\n    <div class=\"sol-step\">Volume of cuboid = <i>l</i> &times; <i>b</i> &times; <i>h</i> = 15 &times; 10 &times; 3.5 = <b>525 cm<sup>3</sup></b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 2: Volume of 4 conical depressions</b></div>\n    <div class=\"sol-step\">Radius (<i>r</i>) = 0.5 cm = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> cm</div>\n    <div class=\"sol-step\">Depth (<i>h</i><sub>c</sub>) = 1.4 cm</div>\n    <div class=\"sol-step\">Volume of 1 conical depression = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span>&pi;<i>r</i><sup>2</sup><i>h</i><sub>c</sub></div>\n    <div class=\"sol-step\">Volume of 4 depressions = 4 &times; [<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span> &times; <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; (0.5)<sup>2</sup> &times; 1.4]</div>\n    <div class=\"sol-step\">&rArr; <i>V</i><sub>dep</sub> = 4 &times; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span> &times; <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; 0.25 &times; 1.4</div>\n    <div class=\"sol-step\">&rArr; <i>V</i><sub>dep</sub> = 4 &times; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span> &times; 22 &times; 0.25 &times; 0.2 = <span class=\"frac\"><span class=\"num\">4 &times; 1.1</span><span class=\"den\">3</span></span> = <span class=\"frac\"><span class=\"num\">4.4</span><span class=\"den\">3</span></span> &approx; <b>1.467 cm<sup>3</sup></b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 3: Volume of wood in the entire stand</b></div>\n    <div class=\"sol-step\"><b>Volume of Wood = Volume of Cuboid &minus; Volume of 4 Conical Depressions</b></div>\n    <div class=\"sol-step\">&rArr; <i>V</i> = 525 &minus; 1.47 = <b>523.53 cm<sup>3</sup></b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>Volume of wood in the pen stand = 523.53 cm<sup>3</sup></b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 5 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q5</span> Water Displacement in Inverted Cone by Lead Shots</div>\n  <div class=\"q-text\">\n    A vessel is in the form of an inverted cone. Its height is <b>8 cm</b> and the radius of its top, which is open, is <b>5 cm</b>. It is filled with water up to the brim. When lead shots, each of which is a sphere of radius <b>0.5 cm</b> are dropped into the vessel, <b>one-fourth</b> of the water flows out. Find the number of lead shots dropped into the vessel.\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Step 1: Volume of water in the conical vessel</b></div>\n    <div class=\"sol-step\">Radius of cone (<i>R</i>) = 5 cm, Height (<i>H</i>) = 8 cm</div>\n    <div class=\"sol-step\">Volume of cone = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span>&pi;<i>R</i><sup>2</sup><i>H</i> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span>&pi; &times; (5)<sup>2</sup> &times; 8 = <b><span class=\"frac\"><span class=\"num\">200</span><span class=\"den\">3</span></span>&pi; cm<sup>3</sup></b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 2: Volume of water displaced</b></div>\n    <div class=\"sol-step\">One-fourth of the water flows out:</div>\n    <div class=\"sol-step\">Volume of water displaced = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span> &times; <span class=\"frac\"><span class=\"num\">200</span><span class=\"den\">3</span></span>&pi; = <b><span class=\"frac\"><span class=\"num\">50</span><span class=\"den\">3</span></span>&pi; cm<sup>3</sup></b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 3: Volume of one spherical lead shot</b></div>\n    <div class=\"sol-step\">Radius of lead shot (<i>r</i>) = 0.5 cm = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> cm</div>\n    <div class=\"sol-step\">Volume of 1 shot = <span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">3</span></span>&pi;<i>r</i><sup>3</sup> = <span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">3</span></span>&pi; &times; (<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>)<sup>3</sup> = <span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">3</span></span>&pi; &times; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">8</span></span> = <b><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">6</span></span>&pi; cm<sup>3</sup></b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 4: Calculate the number of lead shots (<i>n</i>)</b></div>\n    <div class=\"sol-step\">By Archimedes' Principle: Volume of <i>n</i> lead shots = Volume of water displaced</div>\n    <div class=\"sol-step\">&rArr; <i>n</i> &times; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">6</span></span>&pi; = <span class=\"frac\"><span class=\"num\">50</span><span class=\"den\">3</span></span>&pi;</div>\n    <div class=\"sol-step\">Divide both sides by &pi;:</div>\n    <div class=\"sol-step\">&rArr; <i>n</i> = <span class=\"frac\"><span class=\"num\">50</span><span class=\"den\">3</span></span> &times; 6 = 50 &times; 2 = <b>100</b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>Number of lead shots dropped = 100</b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 6 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q6</span> Mass of a Solid Iron Pole</div>\n  <div class=\"q-text\">\n    A solid iron pole consists of a cylinder of height <b>220 cm</b> and base diameter <b>24 cm</b>, which is surmounted by another cylinder of height <b>60 cm</b> and radius <b>8 cm</b>. Find the mass of the pole, given that <b>1 cm<sup>3</sup></b> of iron has approximately <b>8 g</b> mass. <i>(Use &pi; = 3.14)</i>\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Step 1: Volume of lower (larger) cylinder</b></div>\n    <div class=\"sol-step\">Diameter = 24 cm &rArr; Radius (<i>r</i><sub>1</sub>) = 12 cm, Height (<i>h</i><sub>1</sub>) = 220 cm</div>\n    <div class=\"sol-step\"><i>V</i><sub>1</sub> = &pi;<i>r</i><sub>1</sub><sup>2</sup><i>h</i><sub>1</sub> = 3.14 &times; (12)<sup>2</sup> &times; 220</div>\n    <div class=\"sol-step\">&rArr; <i>V</i><sub>1</sub> = 3.14 &times; 144 &times; 220 = 3.14 &times; 31,680 = <b>99,475.2 cm<sup>3</sup></b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 2: Volume of upper (smaller) cylinder</b></div>\n    <div class=\"sol-step\">Radius (<i>r</i><sub>2</sub>) = 8 cm, Height (<i>h</i><sub>2</sub>) = 60 cm</div>\n    <div class=\"sol-step\"><i>V</i><sub>2</sub> = &pi;<i>r</i><sub>2</sub><sup>2</sup><i>h</i><sub>2</sub> = 3.14 &times; (8)<sup>2</sup> &times; 60</div>\n    <div class=\"sol-step\">&rArr; <i>V</i><sub>2</sub> = 3.14 &times; 64 &times; 60 = 3.14 &times; 3,840 = <b>12,057.6 cm<sup>3</sup></b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 3: Total volume of the pole</b></div>\n    <div class=\"sol-step\"><i>V</i><sub>total</sub> = <i>V</i><sub>1</sub> + <i>V</i><sub>2</sub> = 99,475.2 + 12,057.6 = <b>111,532.8 cm<sup>3</sup></b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 4: Calculate mass in kilograms</b></div>\n    <div class=\"sol-step\">Mass of 1 cm<sup>3</sup> = 8 g</div>\n    <div class=\"sol-step\">Total mass in grams = 111,532.8 &times; 8 = 892,262.4 g</div>\n    <div class=\"sol-step\">Mass in kg = <span class=\"frac\"><span class=\"num\">892262.4</span><span class=\"den\">1000</span></span> = <b>892.26 kg</b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>Total volume of pole = 111,532.8 cm<sup>3</sup></b><br>\n      &check; <b>Mass of the pole &approx; 892.26 kg</b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 7 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q7</span> Water Left in Cylinder after Submerging a Solid</div>\n  <div class=\"q-text\">\n    A solid consisting of a right circular cone of height <b>120 cm</b> and radius <b>60 cm</b> standing on a hemisphere of radius <b>60 cm</b> is placed upright in a right circular cylinder full of water such that it touches the bottom. Find the volume of water left in the cylinder, if the radius of the cylinder is <b>60 cm</b> and its height is <b>180 cm</b>.\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Step 1: Dimensions of the solids</b></div>\n    <div class=\"sol-step\">Common radius (<i>r</i>) = <b>60 cm</b> for cylinder, cone, and hemisphere.</div>\n    <div class=\"sol-step\">Height of cylinder (<i>H</i>) = <b>180 cm</b></div>\n    <div class=\"sol-step\">Height of cone (<i>h</i>) = <b>120 cm</b></div>\n    <div class=\"sol-step\"><i>Notice: Height of solid = cone height + hemisphere radius = 120 + 60 = 180 cm = height of cylinder.</i></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 2: Volume of cylinder full of water</b></div>\n    <div class=\"sol-step\"><i>V</i><sub>cyl</sub> = &pi;<i>r</i><sup>2</sup><i>H</i> = &pi; &times; (60)<sup>2</sup> &times; 180 = 3600 &times; 180 &times; &pi; = <b>648,000&pi; cm<sup>3</sup></b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 3: Volume of the submerged solid</b></div>\n    <div class=\"sol-step\"><i>V</i><sub>solid</sub> = Volume of Cone + Volume of Hemisphere</div>\n    <div class=\"sol-step\">&rArr; <i>V</i><sub>solid</sub> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span>&pi;<i>r</i><sup>2</sup><i>h</i> + <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span>&pi;<i>r</i><sup>3</sup> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span>&pi;<i>r</i><sup>2</sup>[<i>h</i> + 2<i>r</i>]</div>\n    <div class=\"sol-step\">&rArr; <i>V</i><sub>solid</sub> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span>&pi; &times; (60)<sup>2</sup> &times; [120 + 2(60)] = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span>&pi; &times; 3600 &times; 240</div>\n    <div class=\"sol-step\">&rArr; <i>V</i><sub>solid</sub> = 1200 &times; 240 &times; &pi; = <b>288,000&pi; cm<sup>3</sup></b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 4: Volume of water left in the cylinder</b></div>\n    <div class=\"sol-step\"><i>V</i><sub>left</sub> = <i>V</i><sub>cyl</sub> &minus; <i>V</i><sub>solid</sub> = 648,000&pi; &minus; 288,000&pi; = <b>360,000&pi; cm<sup>3</sup></b></div>\n    <div class=\"sol-step\">&rArr; <i>V</i><sub>left</sub> = 360,000 &times; <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> = <span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">920</span></span> &approx; <b>1,131,428.57 cm<sup>3</sup></b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 5: Convert to cubic meters (m<sup>3</sup>)</b></div>\n    <div class=\"sol-step\">1 m<sup>3</sup> = 100 &times; 100 &times; 100 = 1,000,000 cm<sup>3</sup></div>\n    <div class=\"sol-step\"><i>V</i><sub>left</sub> = <span class=\"frac\"><span class=\"num\">1131428.57</span><span class=\"den\">1000000</span></span> &approx; <b>1.131 m<sup>3</sup></b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>Volume of water left &approx; 1.131 m<sup>3</sup> (or 1,131,428.57 cm<sup>3</sup>)</b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 8 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q8</span> Checking the Capacity of a Spherical Glass Vessel</div>\n  <div class=\"q-text\">\n    A spherical glass vessel has a cylindrical neck <b>8 cm long</b>, <b>2 cm in diameter</b>; the diameter of the spherical part is <b>8.5 cm</b>. By measuring the amount of water it holds, a child finds its volume to be <b>345 cm<sup>3</sup></b>. Check whether she is correct, taking the above as the inside measurements, and <b>&pi; = 3.14</b>.\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Step 1: Identify dimensions of both parts</b></div>\n    <div class=\"sol-step\"><b>Cylindrical neck:</b></div>\n    <div class=\"sol-step\">Radius (<i>r</i>) = <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">2</span></span> = <b>1 cm</b>, Height (<i>h</i>) = <b>8 cm</b></div>\n    <div class=\"sol-step\"><b>Spherical bottom:</b></div>\n    <div class=\"sol-step\">Diameter (<i>D</i>) = 8.5 cm &rArr; Radius (<i>R</i>) = <span class=\"frac\"><span class=\"num\">8.5</span><span class=\"den\">2</span></span> = <b>4.25 cm</b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 2: Volume of cylindrical neck</b></div>\n    <div class=\"sol-step\"><i>V</i><sub>neck</sub> = &pi;<i>r</i><sup>2</sup><i>h</i> = 3.14 &times; (1)<sup>2</sup> &times; 8 = 3.14 &times; 8 = <b>25.12 cm<sup>3</sup></b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 3: Volume of spherical part</b></div>\n    <div class=\"sol-step\"><i>V</i><sub>sphere</sub> = <span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">3</span></span>&pi;<i>R</i><sup>3</sup> = <span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">3</span></span> &times; 3.14 &times; (4.25)<sup>3</sup></div>\n    <div class=\"sol-step\">(4.25)<sup>3</sup> = 4.25 &times; 4.25 &times; 4.25 = 76.765625</div>\n    <div class=\"sol-step\">&rArr; <i>V</i><sub>sphere</sub> = <span class=\"frac\"><span class=\"num\">4 &times; 3.14 &times; 76.765625</span><span class=\"den\">3</span></span> = <span class=\"frac\"><span class=\"num\">964.17625</span><span class=\"den\">3</span></span> &approx; <b>321.392 cm<sup>3</sup></b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 4: Total volume of the vessel</b></div>\n    <div class=\"sol-step\"><i>V</i><sub>total</sub> = <i>V</i><sub>neck</sub> + <i>V</i><sub>sphere</sub> = 25.12 + 321.392 = <b>346.51 cm<sup>3</sup></b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 5: Verifying the child's answer</b></div>\n    <div class=\"sol-step\">The child measured 345 cm<sup>3</sup>.</div>\n    <div class=\"sol-step\">Since 346.51 cm<sup>3</sup> &ne; 345 cm<sup>3</sup>, the child's answer is <b>incorrect</b>. The correct volume is <b>346.51 cm<sup>3</sup></b>.</div>\n\n    <div class=\"ans-box\">\n      &check; <b>The child is NOT correct.</b><br>\n      &check; <b>The correct volume of the vessel is 346.51 cm<sup>3</sup></b>\n    </div>\n  </div>\n</div>\n"
+  }
 };

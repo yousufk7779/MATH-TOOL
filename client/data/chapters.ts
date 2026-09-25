@@ -14,37 +14,37 @@ export const class10Chapters: Chapter[] = [
   { id: "ch1", number: 1, name: "Real Numbers", color: "#E91E63" }, // Pink
   { id: "ch2", number: 2, name: "Polynomials", color: "#00C853" }, // Green
   { id: "ch3", number: 3, name: "Pair of Linear Equations", color: "#FFAB00" }, // Amber
-  { id: "ch4", number: 4, name: "Quadratic Equations", color: "#AA00FF" }, // Purple
-  { id: "ch5", number: 5, name: "Arithmetic Progressions", color: "#00B8D4" }, // Cyan
-  { id: "ch6", number: 6, name: "Triangles", color: "#F06292" }, // Pink
-  { id: "ch7", number: 7, name: "Coordinate Geometry", color: "#6200EA" }, // Deep Purple
+  { id: "ch4", number: 4, name: "Quadratic Equations", color: "#FF6D00" }, // Vibrant Orange
+  { id: "ch5", number: 5, name: "Arithmetic Progressions", color: "#7C4DFF" }, // Deep Purple
+  { id: "ch6", number: 6, name: "Triangles", color: "#00B0FF" }, // Bright Sky Blue
+  { id: "ch7", number: 7, name: "Coordinate Geometry", color: "#FF4081" }, // Rose Pink
   {
     id: "ch8",
     number: 8,
     name: "Introduction to Trigonometry",
-    color: "#FF6D00",
+    color: "#E040FB",
   }, // Orange
   {
     id: "ch9",
     number: 9,
     name: "Some Applications of Trigonometry",
-    color: "#0091EA",
-  }, // Light Blue
+    color: "#1DE9B6",
+  }, // Teal / Turquoise
   { id: "ch10", number: 10, name: "Circles", color: "#FFD600" }, // Yellow
   {
     id: "ch11",
     number: 11,
     name: "Areas Related to Circles",
-    color: "#00D4FF",
+    color: "#64DD17",
   },
   {
     id: "ch12",
     number: 12,
     name: "Surface Areas and Volumes",
-    color: "#00BFA5",
+    color: "#FF3D00",
   },
-  { id: "ch13", number: 13, name: "Statistics", color: "#E040FB" },
-  { id: "ch14", number: 14, name: "Probability", color: "#64DD17" },
+  { id: "ch13", number: 13, name: "Statistics", color: "#00E676" },
+  { id: "ch14", number: 14, name: "Probability", color: "#2979FF" },
 ];
 
 export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
@@ -1207,6 +1207,15 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
   if (chapterId === "ch1") return ["#E91E63", "#C2185B"]; // Rose Pink (Real Numbers)
   if (chapterId === "ch2") return ["#00C853", "#009624"]; // Vibrant Emerald Green (Polynomials)
   if (chapterId === "ch3") return ["#FFAB00", "#FF8F00"]; // Amber Gold (Pair of Linear Equations)
+  if (chapterId === "ch4") return ["#FF6D00", "#E65100"]; // Vibrant Orange (Quadratic Equations)
+  if (chapterId === "ch5") return ["#7C4DFF", "#536DFE"]; // Deep Purple / Violet (Arithmetic Progressions)
+  if (chapterId === "ch6") return ["#00B0FF", "#0081CB"]; // Bright Sky Blue (Triangles)
+  if (chapterId === "ch7") return ["#FF4081", "#C2185B"]; // Rose Pink (Coordinate Geometry)
+  if (chapterId === "ch8") return ["#E040FB", "#AA00FF"]; // Neon Magenta (Introduction to Trigonometry)
+  if (chapterId === "ch9") return ["#1DE9B6", "#00BFA5"]; // Teal / Turquoise (Some Applications of Trigonometry)
+  if (chapterId === "ch10") return ["#FFD600", "#FF9100"]; // Bright Yellow / Amber Gold (Circles)
+  if (chapterId === "ch11") return ["#64DD17", "#388E3C"]; // Lime Green (Areas Related to Circles)
+  if (chapterId === "ch12") return ["#FF3D00", "#DD2C00"]; // Deep Coral Red (Surface Areas and Volumes)
 
   // Class 8 Mathematics (Chapters 1 to 14 - Full Blueprint & Content Theme Color Alignment)
   if (chapterId === "c8-math-1") return ["#FF8C00", "#F57C00"]; // Vibrant Orange (Rational Numbers)

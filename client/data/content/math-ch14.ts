@@ -1,904 +1,388 @@
-import { ChapterContent } from "../chapterContent";
+import { ChapterContent } from "../types";
 
 export const mathCh14: ChapterContent = {
-    id: "ch14",
-    number: 14,
-    title: "Probability",
-    introduction: "In this concluding chapter, we explore the mathematics of chance. We focus on calculating the theoretical probability of events based on possible outcomes and favourable cases, applying these concepts to real-world scenarios like coin tosses, dice rolls, and card draws.",
-    definitions: [
-        { term: "Probability", description: "A numerical measure ranging from 0 to 1 that represents the likelihood of an event occurring." },
-        { term: "Sure Event", description: "An event that is certain to happen, with a probability of 1." },
-        { term: "Impossible Event", description: "An event that cannot happen, with a probability of 0." }
-    ],
-    keyPoints: [
-        "The sum of probabilities of all elementary events in an experiment is always 1.",
-        "Complementary events (P(E) and P(not E)) always satisfy: P(E) + P(not E) = 1.",
-        "Probability values are always within the range [0, 1]."
-    ],
-    formulas: [
-        { name: "Theoretical Prob.", formula: "P(E) = (Favourable Outcomes) / (Total Outcomes)" },
-        { name: "Complementary Event", formula: "P(not E) = 1 - P(E)" }
-    ],
-    crux: [
-        "Always calculate the Total Sample Space first before looking for favourable outcomes.",
-        "For complementary events, it's often easier to calculate 1 - P(Other Event).",
-        "Be careful with keywords like 'at least', 'at most', and 'greater than' when counting outcomes."
-    ],
-    exercises: [
-        { id: "examples", name: "Examples", questions: [] },
-        { id: "exercise1", name: "Exercise 14.1", questions: [] }
-    ],
-    examples: [],
-    theorems: [],
-    mcqs: [
-		{
-				"id": "mcq1",
-				"question": "<span style=\"font-weight: normal;\">The probability of an impossible event is:</span>",
-				"options": [
-						"1",
-						"<sup>1</sup>&frasl;<sub>2</sub>",
-						"0",
-						"Not defined"
-				],
-				"correctAnswer": "0"
-		},
-		{
-				"id": "mcq2",
-				"question": "<span style=\"font-weight: normal;\">Which of the following cannot be the probability of an event?</span>",
-				"options": [
-						"0.1",
-						"3%",
-						"<sup>17</sup>&frasl;<sub>16</sub>",
-						"0.001"
-				],
-				"correctAnswer": "<sup>17</sup>&frasl;<sub>16</sub>"
-		},
-		{
-				"id": "mcq3",
-				"question": "<span style=\"font-weight: normal;\">Two coins are tossed simultaneously. What is the probability of getting at most one head?</span>",
-				"options": [
-						"<sup>1</sup>&frasl;<sub>4</sub>",
-						"<sup>1</sup>&frasl;<sub>2</sub>",
-						"<sup>3</sup>&frasl;<sub>4</sub>",
-						"1"
-				],
-				"correctAnswer": "<sup>3</sup>&frasl;<sub>4</sub>"
-		},
-		{
-				"id": "mcq4",
-				"question": "<span style=\"font-weight: normal;\">A card is drawn from a pack of 52 cards. The probability that it is a face card is:</span>",
-				"options": [
-						"<sup>4</sup>&frasl;<sub>13</sub>",
-						"<sup>3</sup>&frasl;<sub>13</sub>",
-						"<sup>2</sup>&frasl;<sub>13</sub>",
-						"<sup>1</sup>&frasl;<sub>13</sub>"
-				],
-				"correctAnswer": "<sup>3</sup>&frasl;<sub>13</sub>"
-		},
-		{
-				"id": "mcq5",
-				"question": "<span style=\"font-weight: normal;\">If P(E) = 0.07, then P(not E) is:</span>",
-				"options": [
-						"0.93",
-						"0.03",
-						"0.97",
-						"0"
-				],
-				"correctAnswer": "0.93"
-		},
-		{
-				"id": "mcq6",
-				"question": "<span style=\"font-weight: normal;\">A die is thrown once. The probability of getting a number less than 3 is:</span>",
-				"options": [
-						"<sup>1</sup>&frasl;<sub>3</sub>",
-						"<sup>1</sup>&frasl;<sub>2</sub>",
-						"<sup>1</sup>&frasl;<sub>6</sub>",
-						"<sup>2</sup>&frasl;<sub>3</sub>"
-				],
-				"correctAnswer": "<sup>1</sup>&frasl;<sub>3</sub>"
-		},
-		{
-				"id": "mcq7",
-				"question": "<span style=\"font-weight: normal;\">The probability of a certain event is:</span>",
-				"options": [
-						"0",
-						"1",
-						"> 1",
-						"< 1"
-				],
-				"correctAnswer": "1"
-		},
-		{
-				"id": "mcq8",
-				"question": "<span style=\"font-weight: normal;\">Which of the following can be probability of an event?</span>",
-				"options": [
-						"-0.4",
-						"1.004",
-						"<sup>18</sup>&frasl;<sub>23</sub>",
-						"<sup>8</sup>&frasl;<sub>7</sub>"
-				],
-				"correctAnswer": "<sup>18</sup>&frasl;<sub>23</sub>"
-		},
-		{
-				"id": "mcq9",
-				"question": "<span style=\"font-weight: normal;\">Three coins are tossed. Probability of getting exactly two tails is:</span>",
-				"options": [
-						"<sup>1</sup>&frasl;<sub>8</sub>",
-						"<sup>3</sup>&frasl;<sub>8</sub>",
-						"<sup>1</sup>&frasl;<sub>2</sub>",
-						"<sup>1</sup>&frasl;<sub>4</sub>"
-				],
-				"correctAnswer": "<sup>3</sup>&frasl;<sub>8</sub>"
-		},
-		{
-				"id": "mcq10",
-				"question": "<span style=\"font-weight: normal;\">A letter is chosen at random from the word 'MATHEMATICS'. The probability that it is a vowel is:</span>",
-				"options": [
-						"<sup>4</sup>&frasl;<sub>11</sub>",
-						"<sup>3</sup>&frasl;<sub>11</sub>",
-						"<sup>5</sup>&frasl;<sub>11</sub>",
-						"<sup>2</sup>&frasl;<sub>11</sub>"
-				],
-				"correctAnswer": "<sup>4</sup>&frasl;<sub>11</sub>"
-		}
-],
-    summary: [
-        "Mastered the basic definition and calculation of theoretical probability.",
-        "Learned to handle complementary, sure, and impossible events.",
-        "Applied probability to a wide variety of practical and theoretical experiments."
-    ],
-
-    isHtmlView: true,
-    htmlOverview: `<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Probability - Overview</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
-
-        body {
-            font-family: 'Kalam', cursive;
-            margin: 0;
-            padding: 15px;
-            background: #fff;
-            color: #333;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #6C63FF;
-            padding-bottom: 10px;
-            font-family: 'Nunito', sans-serif;
-        }
-
-        .logo {
-            color: #6C63FF;
-            font-size: 24px;
-            font-weight: 800;
-        }
-
-        .chapter-title {
-            text-align: center;
-            color: #333;
-            font-size: 20px;
-            font-weight: 700;
-            margin: 10px 0;
-            font-family: 'Kalam', cursive;
-        }
-
-        .content-box { background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px; padding: 15px; margin-bottom: 15px; display: flow-root; transition: transform 0.2s ease; }
-
-        .section-title {
-            color: #D32F2F;
-            font-weight: 700;
-            font-size: 1.2em;
-            margin-bottom: 10px;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 5px;
-        }
-
-        .formula-box {
-            background: #E8F5E9;
-            border-left: 4px solid #4CAF50;
-            padding: 10px;
-            margin: 10px 0;
-            font-family: 'Nunito', sans-serif;
-        }
-
-        .step {
-            margin-bottom: 8px;
-            font-size: 1.1em;
-            color: #000;
-            line-height: 1.5;
-        }
-
-        
-    
-
-
-img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; height: auto; border: 1px solid #ddd; border-radius: 6px; padding: 5px; background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-@media (max-width: 600px) { img { float: none; display: block; margin: 10px auto; max-width: 100%; } }
-</style>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    renderMathInElement(document.body, {
-      delimiters: [
-        {left: '\\\\(', right: '\\\\)', display: false},
-        {left: '\\\\[', right: '\\\\]', display: true}
-      ]
-    });
-  });
-</script>
-
-<style>
-  body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
-  .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #66BB6A !important; color: #fff !important; }
-  h1, h2, h3, h4, h5, h6 { color: #66BB6A !important; }
-  .question { color: #66BB6A !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
-  .formula { color: #4CAF50 !important; }
-  .true-text { color: #4CAF50 !important; }
-  .false-text { color: #F44336 !important; }
-  table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
-  .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
-  img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #66BB6A !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
-  * { font-family: 'Noto Sans', sans-serif !important; }
-
-  .question { font-size: 0.95em !important; }
-  .sub-question { font-size: 0.9em !important; }
-  .step { font-size: 0.9em !important; }
-  .final-answer { font-size: 0.95em !important; }
-</style>
-</head>
-
-<body>
-
-    
-
-    <div class="content-box">
-        <div class="section-title">1. Introduction</div>
-        <div class="step">Probability is the measure of uncertainty of an event. We deal with random experiments where
-            all possible outcomes are known (sample space).</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjMwIiBmaWxsPSIjZmZkNTRmIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48dGV4dCB4PSI1MCIgeT0iNTUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyMCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPkg8L3RleHQ+PHJlY3QgeD0iMTAwIiB5PSIyMCIgd2lkdGg9IjYwIiBoZWlnaHQ9IjYwIiBmaWxsPSIjZTBmN2ZhIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48Y2lyY2xlIGN4PSIxMzAiIGN5PSI1MCIgcj0iNSIgZmlsbD0iYmxhY2siIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjxjaXJjbGUgY3g9IjExNSIgY3k9IjM1IiByPSI1IiBmaWxsPSJibGFjayIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PGNpcmNsZSBjeD0iMTQ1IiBjeT0iNjUiIHI9IjUiIGZpbGw9ImJsYWNrIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48cmVjdCB4PSIxODAiIHk9IjIwIiB3aWR0aD0iNDUiIGhlaWdodD0iNjUiIGZpbGw9IndoaXRlIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48dGV4dCB4PSIyMDIiIHk9IjU1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5B4pmgPC90ZXh0Pjx0ZXh0IHg9IjE1MCIgeT0iMTUwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5QKEUpID0gRmF2IE91dGNvbWVzIC8gVG90YWwgT3V0Y29tZXM8L3RleHQ+PGxpbmUgeDE9IjUwIiB5MT0iMjIwIiB4Mj0iMjUwIiB5Mj0iMjIwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiLz48dGV4dCB4PSI1MCIgeT0iMjQwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4wPC90ZXh0Pjx0ZXh0IHg9IjI1MCIgeT0iMjQwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xPC90ZXh0Pjx0ZXh0IHg9IjE1MCIgeT0iMjQwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4wLjU8L3RleHQ+PC9zdmc+" alt="Probability Concept">
-    </div>
-
-    <div class="content-box">
-        <div class="section-title">2. Theoretical Probability</div>
-        <div class="formula-box">
-            P(E) = (Number of outcomes favourable to E) / (Number of all possible outcomes)<br><br>
-            The probability of an event E is a number P(E) such that:<br>
-            0 ≤ P(E) ≤ 1
-        </div>
-    </div>
-
-    <div class="content-box">
-        <div class="section-title">3. Key Terms</div>
-        <div class="step"><strong>Sure Event:</strong> An event that is certain to happen. P(E) = 1.</div>
-        <div class="step"><strong>Impossible Event:</strong> An event that cannot happen. P(E) = 0.</div>
-        <div class="step"><strong>Elementary Event:</strong> An event having only one outcome.</div>
-        <div class="step"><strong>Complementary Event:</strong> The event 'not E', denoted by E<sub>avg</sub>. P(E) + P(E<sub>avg</sub>) = 1.
-        </div>
-    </div>
-
-    <div class="content-box">
-        <div class="section-title">4. Common Experiments</div>
-        <div class="step"><strong>Coin:</strong> Head (H), Tail (T).</div>
-        <div class="step"><strong>Die:</strong> 1, 2, 3, 4, 5, 6.</div>
-        <div class="step"><strong>Cards:</strong> 52 cards (4 suits: Spades, Hearts, Diamonds, Clubs).</div>
-    </div>
-
-</body>
-
-</html>`,
-    htmlExercises: {
-        exercise1: `<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Probability - Exercise 14.1</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
-
-        body {
-            font-family: 'Kalam', cursive;
-            margin: 0;
-            padding: 15px;
-            background: #fff;
-            color: #333;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #6C63FF;
-            padding-bottom: 10px;
-            font-family: 'Nunito', sans-serif;
-        }
-
-        .logo {
-            color: #6C63FF;
-            font-size: 24px;
-            font-weight: 800;
-        }
-
-        .chapter-title {
-            text-align: center;
-            color: #333;
-            font-size: 20px;
-            font-weight: 700;
-            margin: 10px 0;
-            font-family: 'Kalam', cursive;
-        }
-
-        .content-box { background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px; padding: 15px; margin-bottom: 15px; display: flow-root; transition: transform 0.2s ease; }
-
-        .question {
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: #333;
-        }
-
-        .sub-question {
-            margin-left: 15px;
-            margin-top: 15px;
-            font-weight: 600;
-            color: #444;
-        }
-
-        .step {
-            margin-bottom: 8px;
-            font-size: 1.1em;
-            color: #000;
-            line-height: 1.5;
-        }
-
-        .final-answer {
-            color: #2E7D32;
-            font-weight: 700;
-            margin-top: 10px;
-            font-size: 1.2em;
-        }
-
-        
-    
-
-
-img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; height: auto; border: 1px solid #ddd; border-radius: 6px; padding: 5px; background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-@media (max-width: 600px) { img { float: none; display: block; margin: 10px auto; max-width: 100%; } }
-</style>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    renderMathInElement(document.body, {
-      delimiters: [
-        {left: '\\\\(', right: '\\\\)', display: false},
-        {left: '\\\\[', right: '\\\\]', display: true}
-      ]
-    });
-  });
-</script>
-
-<style>
-  body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
-  .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #66BB6A !important; color: #fff !important; }
-  h1, h2, h3, h4, h5, h6 { color: #66BB6A !important; }
-  .question { color: #66BB6A !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
-  .formula { color: #4CAF50 !important; }
-  .true-text { color: #4CAF50 !important; }
-  .false-text { color: #F44336 !important; }
-  table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
-  .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
-  img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #66BB6A !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
-  * { font-family: 'Noto Sans', sans-serif !important; }
-
-  .question { font-size: 0.95em !important; }
-  .sub-question { font-size: 0.9em !important; }
-  .step { font-size: 0.9em !important; }
-  .final-answer { font-size: 0.95em !important; }
-</style>
-</head>
-
-<body>
-
-    
-
-    <div class="content-box">
-        <div class="question">1. Complete the following statements:</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxsaW5lIHgxPSI1MCIgeTE9IjE1MCIgeDI9IjI1MCIgeTI9IjE1MCIgc3Ryb2tlPSJibGFjayIvPjxsaW5lIHgxPSI1MCIgeTE9IjE0NSIgeDI9IjUwIiB5Mj0iMTU1IiBzdHJva2U9ImJsYWNrIi8+PGxpbmUgeDE9IjI1MCIgeTE9IjE0NSIgeDI9IjI1MCIgeTI9IjE1NSIgc3Ryb2tlPSJibGFjayIvPjx0ZXh0IHg9IjUwIiB5PSIxNzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjAgKEltcG9zc2libGUpPC90ZXh0Pjx0ZXh0IHg9IjI1MCIgeT0iMTcwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xIChTdXJlKTwvdGV4dD48dGV4dCB4PSIxNTAiIHk9IjEwMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+UHJvYmFiaWxpdHkgU2NhbGU8L3RleHQ+PC9zdmc+" alt="Probability Scale">
-        <div class="sub-question">(i) Probability of an event E + Probability of the event 'not E' = ___.</div>
-        <div class="final-answer">1</div>
-        <div class="sub-question">(ii) The probability of an event that cannot happen is ___. Such an event is called
-            ___.</div>
-        <div class="final-answer">0, Impossible event</div>
-        <div class="sub-question">(iii) The probability of an event that is certain to happen is ___. Such an event is
-            called ___.</div>
-        <div class="final-answer">1, Sure or Certain event</div>
-        <div class="sub-question">(iv) The sum of the probabilities of all the elementary events of an experiment is
-            ___.</div>
-        <div class="final-answer">1</div>
-        <div class="sub-question">(v) The probability of an event is greater than or equal to ___ and less than or equal
-            to ___.</div>
-        <div class="final-answer">0, 1</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">2. Which of the following experiments have equally likely outcomes? Explain.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjIwIiB5PSI1MCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjIwIiBmaWxsPSJncmF5IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48dGV4dCB4PSI0MCIgeT0iOTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSI4IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+U3RhcnQvTm88L3RleHQ+PGNpcmNsZSBjeD0iMTAwIiBjeT0iNjAiIHI9IjE1IiBmaWxsPSJvcmFuZ2UiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjEwMCIgeT0iOTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSI4IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+SGl0L01pc3M8L3RleHQ+PHRleHQgeD0iMTYwIiB5PSI2MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+VC9GPC90ZXh0Pjx0ZXh0IHg9IjE2MCIgeT0iOTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSI4IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+UmlnaHQvV3Jvbmc8L3RleHQ+PGNpcmNsZSBjeD0iMjIwIiBjeT0iNjAiIHI9IjEwIiBmaWxsPSJwaW5rIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48dGV4dCB4PSIyMjAiIHk9IjkwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iOCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPkJveS9HaXJsPC90ZXh0Pjx0ZXh0IHg9IjE1MCIgeT0iMzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPkVxdWFsbHkgTGlrZWx5PzwvdGV4dD48L3N2Zz4=" alt="Equally Likely Icons">
-        <div class="sub-question">(i) A driver attempts to start a car. The car starts or does not start.</div>
-        <div class="final-answer">Not equally likely. Depends on car condition.</div>
-        <div class="sub-question">(ii) A player attempts to shoot a basketball. She/he shoots or misses the shot.</div>
-        <div class="final-answer">Not equally likely. Depends on player's ability.</div>
-        <div class="sub-question">(iii) A trial is made to answer a true-false question. The answer is right or wrong.
-        </div>
-        <div class="final-answer">Equally likely. Only two possibilities.</div>
-        <div class="sub-question">(iv) A baby is born. It is a boy or a girl.</div>
-        <div class="final-answer">Equally likely.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">3. Why is tossing a coin considered to be a fair way of deciding which team should get the
-            ball at the beginning of a football game?</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxjaXJjbGUgY3g9IjE1MCIgY3k9IjE1MCIgcj0iNTAiIGZpbGw9IiNmZmQ1NGYiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjE1MCIgeT0iMTYwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5IZWFkcy9UYWlsczwvdGV4dD48dGV4dCB4PSIxNTAiIHk9IjI0MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+UChIKSA9IFAoVCkgPSAxLzI8L3RleHQ+PC9zdmc+" alt="Coin Toss">
-        <div class="solution-header">Solution:</div>
-        <div class="step">When we toss a coin, the possible outcomes are only two, Head or Tail, which are equally
-            likely outcomes. Therefore, the result of an individual coin toss is completely unpredictable.</div>
-        <div class="final-answer">It is a fair method.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">4. Which of the following cannot be the probability of an event? (A) 2/3 (B) -1.5 (C) 15%
-            (D) 0.7</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjx0ZXh0IHg9IjE1MCIgeT0iNTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPkE6IDIvMzwvdGV4dD48dGV4dCB4PSIxNTAiIHk9IjkwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9InJlZCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QjogLTEuNTwvdGV4dD48dGV4dCB4PSIxNTAiIHk9IjEzMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QzogMTUlPC90ZXh0Pjx0ZXh0IHg9IjE1MCIgeT0iMTcwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5EOiAwLjc8L3RleHQ+PGxpbmUgeDE9IjEyMCIgeTE9IjgwIiB4Mj0iMTgwIiB5Mj0iMTAwIiBzdHJva2U9InJlZCIgc3Ryb2tlLXdpZHRoPSIyIi8+PGxpbmUgeDE9IjE4MCIgeTE9IjgwIiB4Mj0iMTIwIiB5Mj0iMTAwIiBzdHJva2U9InJlZCIgc3Ryb2tlLXdpZHRoPSIyIi8+PHRleHQgeD0iMTUwIiB5PSIyNTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPk5lZ2F0aXZlIE5vdCBQb3NzaWJsZTwvdGV4dD48L3N2Zz4=" alt="Negative Probability">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Probability of an event cannot be negative or greater than 1.</div>
-        <div class="step">Here, -1.5 is negative.</div>
-        <div class="final-answer">(B) -1.5</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">5. If P(E) = 0.05, what is the probability of 'not E'?</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxjaXJjbGUgY3g9IjE1MCIgY3k9IjE1MCIgcj0iODAiIGZpbGw9IiNlMGY3ZmEiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjxwYXRoIGQ9Ik0gMTUwIDE1MCBMIDE1MCA3MCBBIDgwIDgwIDAgMCAxIDE3NSA3NCBaIiBmaWxsPSJyZWQiLz48dGV4dCB4PSIxODAiIHk9IjEyMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+RT0wLjA1PC90ZXh0Pjx0ZXh0IHg9IjEzMCIgeT0iMjAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5ub3QgRSA9IDAuOTU8L3RleHQ+PC9zdmc+" alt="Complementary Event">
-        <div class="solution-header">Solution:</div>
-        <div class="step">We know that P(E) + P(not E) = 1.</div>
-        <div class="step">P(not E) = 1 - P(E) = 1 - 0.05 = 0.95.</div>
-        <div class="final-answer">0.95</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">6. A bag contains lemon flavoured candies only. Malini takes out one candy without looking
-            into the bag. What is the probability that she takes out (i) an orange flavoured candy? (ii) a lemon
-            flavoured candy?</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxwYXRoIGQ9Ik0gMTAwIDEwMCBRIDEwMCAyNTAgMTUwIDI1MCBRIDIwMCAyNTAgMjAwIDEwMCBaIiBmaWxsPSIjZmZmOWM0IiBzdHJva2U9ImJsYWNrIi8+PGNpcmNsZSBjeD0iMTI3IiBjeT0iMTY3IiByPSI1IiBmaWxsPSJ5ZWxsb3ciIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjxjaXJjbGUgY3g9IjExMSIgY3k9IjE4MSIgcj0iNSIgZmlsbD0ieWVsbG93IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48Y2lyY2xlIGN4PSIxNDkiIGN5PSIxODAiIHI9IjUiIGZpbGw9InllbGxvdyIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PGNpcmNsZSBjeD0iMTQ5IiBjeT0iMTg1IiByPSI1IiBmaWxsPSJ5ZWxsb3ciIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjxjaXJjbGUgY3g9IjEzOSIgY3k9IjE4MiIgcj0iNSIgZmlsbD0ieWVsbG93IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48dGV4dCB4PSIxNTAiIHk9IjI4MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+T25seSBMZW1vbiBDYW5kaWVzPC90ZXh0Pjwvc3ZnPg==" alt="Lemon Candies">
-        <div class="solution-header">Solution:</div>
-        <div class="step">(i) Bag contains only lemon candies. So, orange candy cannot be picked.</div>
-        <div class="step">Number of favourable outcomes = 0. Probability = 0.</div>
-        <div class="step">(ii) Event of picking lemon candy is a sure event.</div>
-        <div class="step">Probability = 1.</div>
-        <div class="final-answer">(i) 0, (ii) 1</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">7. It is given that in a group of 3 students, the probability of 2 students not having the
-            same birthday is 0.992. What is the probability that the 2 students have the same birthday?</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjUwIiB5PSI1MCIgd2lkdGg9IjIwMCIgaGVpZ2h0PSIzMCIgZmlsbD0iZ3JlZW4iIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjE1MCIgeT0iNzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlAoRGlmZikgPSAwLjk5MjwvdGV4dD48cmVjdCB4PSIyNTAiIHk9IjUwIiB3aWR0aD0iMTAiIGhlaWdodD0iMzAiIGZpbGw9InJlZCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iMjcwIiB5PSI3MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+PzwvdGV4dD48dGV4dCB4PSIxNTAiIHk9IjEwMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Q29tcGxlbWVudGFyeSBFdmVudHM8L3RleHQ+PC9zdmc+" alt="Students Birthday">
-        <div class="solution-header">Solution:</div>
-        <div class="step">P(Same birthday) + P(Different birthday) = 1.</div>
-        <div class="step">P(Same) = 1 - 0.992 = 0.008.</div>
-        <div class="final-answer">0.008</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">8. A bag contains 3 red balls and 5 black balls. A ball is drawn at random from the bag.
-            What is the probability that the ball drawn is (i) red ? (ii) not red?</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxwYXRoIGQ9Ik0gMTAwIDEwMCBRIDEwMCAyNTAgMTUwIDI1MCBRIDIwMCAyNTAgMjAwIDEwMCBaIiBmaWxsPSIjZWNlZmYxIiBzdHJva2U9ImJsYWNrIi8+PGNpcmNsZSBjeD0iMTQwIiBjeT0iMTgwIiByPSI4IiBmaWxsPSJyZWQiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjxjaXJjbGUgY3g9IjE2MCIgY3k9IjIwMCIgcj0iOCIgZmlsbD0icmVkIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48Y2lyY2xlIGN4PSIxMzAiIGN5PSIyMTAiIHI9IjgiIGZpbGw9InJlZCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PGNpcmNsZSBjeD0iMTUwIiBjeT0iMTUwIiByPSI4IiBmaWxsPSJibGFjayIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PGNpcmNsZSBjeD0iMTMwIiBjeT0iMTYwIiByPSI4IiBmaWxsPSJibGFjayIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PGNpcmNsZSBjeD0iMTcwIiBjeT0iMTgwIiByPSI4IiBmaWxsPSJibGFjayIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PGNpcmNsZSBjeD0iMTUwIiBjeT0iMjIwIiByPSI4IiBmaWxsPSJibGFjayIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PGNpcmNsZSBjeD0iMTcwIiBjeT0iMTYwIiByPSI4IiBmaWxsPSJibGFjayIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iMTUwIiB5PSIyODAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPlRvdGFsIDggQmFsbHM8L3RleHQ+PC9zdmc+" alt="Balls Bag">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Total balls = 3 + 5 = 8.</div>
-        <div class="step">(i) Favourable (Red) = 3. P(Red) = 3/8.</div>
-        <div class="step">(ii) Favourable (Not Red) = Black = 5. P(Not Red) = 5/8.</div>
-        <div class="final-answer">(i) 3/8, (ii) 5/8</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">9. A box contains 5 red marbles, 8 white marbles and 4 green marbles. One marble is taken
-            out of the box at random. What is the probability that the marble taken out will be (i) red ? (ii) white ?
-            (iii) not green?</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjgwIiB5PSIxMDAiIHdpZHRoPSIxNDAiIGhlaWdodD0iMTAwIiBmaWxsPSJub25lIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48dGV4dCB4PSIxMDAiIHk9IjEzMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJyZWQiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjUgUmVkPC90ZXh0Pjx0ZXh0IHg9IjE1MCIgeT0iMTMwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImdyYXkiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjggV2hpdGU8L3RleHQ+PHRleHQgeD0iMjAwIiB5PSIxMzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iZ3JlZW4iIHRleHQtYW5jaG9yPSJtaWRkbGUiPjQgR3JlZW48L3RleHQ+PHRleHQgeD0iMTUwIiB5PSIyMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPlRvdGFsIDE3IE1hcmJsZXM8L3RleHQ+PC9zdmc+" alt="Marbles Box">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Total marbles = 5 + 8 + 4 = 17.</div>
-        <div class="step">(i) Red = 5. P(Red) = 5/17.</div>
-        <div class="step">(ii) White = 8. P(White) = 8/17.</div>
-        <div class="step">(iii) Not Green = Red + White = 5 + 8 = 13. P(Not Green) = 13/17.</div>
-        <div class="final-answer">(i) 5/17, (ii) 8/17, (iii) 13/17</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">10. A piggy bank contains hundred 50p coins, fifty ₹ 1 coins, twenty ₹ 2 coins and ten ₹ 5
-            coins. If it is equally likely that one of the coins will fall out... find probability that coin (i) will be
-            a 50p coin? (ii) will not be a ₹ 5 coin?</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjx0ZXh0IHg9IjE1MCIgeT0iNTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjEwMCB4IDUwcDwvdGV4dD48dGV4dCB4PSIxNTAiIHk9IjgwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj41MCB4IOKCuTE8L3RleHQ+PHRleHQgeD0iMTUwIiB5PSIxMTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjIwIHgg4oK5MjwvdGV4dD48dGV4dCB4PSIxNTAiIHk9IjE0MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MTAgeCDigrk1PC90ZXh0Pjx0ZXh0IHg9IjE1MCIgeT0iMjAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5Ub3RhbCBDb2lucyA9IDE4MDwvdGV4dD48L3N2Zz4=" alt="Piggy Bank Coins">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Total coins = 100 + 50 + 20 + 10 = 180.</div>
-        <div class="step">(i) 50p coins = 100. P(50p) = 100/180 = 5/9.</div>
-        <div class="step">(ii) Not ₹ 5 coin = 180 - 10 = 170. P(Not ₹ 5) = 170/180 = 17/18.</div>
-        <div class="final-answer">(i) 5/9, (ii) 17/18</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">11. Gopi buys a fish from a shop for his aquarium. The shopkeeper takes out one fish at
-            random from a tank containing 5 male fish and 8 female fish. What is the probability that the fish taken out
-            is a male fish?</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjUwIiB5PSI1MCIgd2lkdGg9IjIwMCIgaGVpZ2h0PSIxNTAiIGZpbGw9IiNlMGY3ZmEiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjEwMCIgeT0iMTAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj41IE1hbGUg4pmCPC90ZXh0Pjx0ZXh0IHg9IjIwMCIgeT0iMTUwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj44IEZlbWFsZSDimYA8L3RleHQ+PHRleHQgeD0iMTUwIiB5PSIyMzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPlRvdGFsIDEzIEZpc2g8L3RleHQ+PC9zdmc+" alt="Fish Tank">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Total fish = 5 + 8 = 13.</div>
-        <div class="step">Male fish = 5.</div>
-        <div class="step">P(Male) = 5/13.</div>
-        <div class="final-answer">5/13</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">12. A game of chance consists of spinning an arrow which comes to rest pointing at one of
-            the numbers 1, 2, 3, 4, 5, 6, 7, 8... What is the probability that it will point at (i) 8 ? (ii) an odd
-            number ? (iii) a number greater than 2 ? (iv) a number less than 9 ?</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxjaXJjbGUgY3g9IjE1MCIgY3k9IjE1MCIgcj0iMTAwIiBmaWxsPSJub25lIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48bGluZSB4MT0iMTUwIiB5MT0iMTUwIiB4Mj0iMjMzLjU2Njc5MTQ0NjA2NTEiIHkyPSIyMDUuNTQwNTc4NTk0MDc3ODMiIHN0cm9rZT0iYmxhY2siLz48bGluZSB4MT0iMTUwIiB5MT0iMTUwIiB4Mj0iMjUwLjAiIHkyPSIxNTAuMCIgc3Ryb2tlPSJibGFjayIvPjxsaW5lIHgxPSIxNTAiIHkxPSIxNTAiIHgyPSIxODkuNDYyMzg1MjU4NzgyMDQiIHkyPSIyMjMuOTYxNjk1MTM4MDgyOCIgc3Ryb2tlPSJibGFjayIvPjxsaW5lIHgxPSIxNTAiIHkxPSIxNTAiIHgyPSIyMjAuNzEwNjc4MTE4NjU0NzYiIHkyPSIyMjAuNzEwNjc4MTE4NjU0NzYiIHN0cm9rZT0iYmxhY2siLz48bGluZSB4MT0iMTUwIiB5MT0iMTUwIiB4Mj0iMTU1Ljk0NjY0MjMxNjg5NTM4IiB5Mj0iMTY3LjE4NjI3NDgxOTQ3OTUiIHN0cm9rZT0iYmxhY2siLz48bGluZSB4MT0iMTUwIiB5MT0iMTUwIiB4Mj0iMTUwLjAiIHkyPSIyNTAuMCIgc3Ryb2tlPSJibGFjayIvPjxsaW5lIHgxPSIxNTAiIHkxPSIxNTAiIHgyPSIxODMuMTEzNTU4NDcwNjM4MyIgeTI9IjE2Ny43MDQxMDM2ODMzMDI3OCIgc3Ryb2tlPSJibGFjayIvPjxsaW5lIHgxPSIxNTAiIHkxPSIxNTAiIHgyPSI3OS4yODkzMjE4ODEzNDUyNiIgeTI9IjIyMC43MTA2NzgxMTg2NTQ3NiIgc3Ryb2tlPSJibGFjayIvPjxsaW5lIHgxPSIxNTAiIHkxPSIxNTAiIHgyPSIxODkuMTAwMzUyMjgyNzYwOSIgeTI9IjE4NS4zODM2OTI5NjkzNjk0MyIgc3Ryb2tlPSJibGFjayIvPjxsaW5lIHgxPSIxNTAiIHkxPSIxNTAiIHgyPSI1MC4wIiB5Mj0iMTUwLjAiIHN0cm9rZT0iYmxhY2siLz48bGluZSB4MT0iMTUwIiB5MT0iMTUwIiB4Mj0iMTY5LjI0NjA3NTM2NzEyNTY4IiB5Mj0iMjA0LjAyMTQwNjc2ODg4Nzc0IiBzdHJva2U9ImJsYWNrIi8+PGxpbmUgeDE9IjE1MCIgeTE9IjE1MCIgeDI9Ijc5LjI4OTMyMTg4MTM0NTIzIiB5Mj0iNzkuMjg5MzIxODgxMzQ1MjYiIHN0cm9rZT0iYmxhY2siLz48bGluZSB4MT0iMTUwIiB5MT0iMTUwIiB4Mj0iMjEyLjI2MDEwODA3Njc3ODkyIiB5Mj0iMjI0LjE1Nzc4MDQ4OTI0NDcxIiBzdHJva2U9ImJsYWNrIi8+PGxpbmUgeDE9IjE1MCIgeTE9IjE1MCIgeDI9IjE0OS45OTk5OTk5OTk5OTk5NyIgeTI9IjUwLjAiIHN0cm9rZT0iYmxhY2siLz48bGluZSB4MT0iMTUwIiB5MT0iMTUwIiB4Mj0iMjE5LjQ3NjUyMjAyMjQ4NzciIHkyPSIxNTYuMjgyODMwODg4OTExMSIgc3Ryb2tlPSJibGFjayIvPjxsaW5lIHgxPSIxNTAiIHkxPSIxNTAiIHgyPSIyMjAuNzEwNjc4MTE4NjU0NzYiIHkyPSI3OS4yODkzMjE4ODEzNDUyMyIgc3Ryb2tlPSJibGFjayIvPjx0ZXh0IHg9IjIyMy45MTAzNjI2MDA5MDI5NCIgeT0iMTgwLjYxNDY3NDU4OTIwNzIiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjE8L3RleHQ+PHRleHQgeD0iMTgwLjYxNDY3NDU4OTIwNzIiIHk9IjIyMy45MTAzNjI2MDA5MDI5NCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MjwvdGV4dD48dGV4dCB4PSIxMTkuMzg1MzI1NDEwNzkyODMiIHk9IjIyMy45MTAzNjI2MDA5MDI5NCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MzwvdGV4dD48dGV4dCB4PSI3Ni4wODk2MzczOTkwOTcwNiIgeT0iMTgwLjYxNDY3NDU4OTIwNzIiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjQ8L3RleHQ+PHRleHQgeD0iNzYuMDg5NjM3Mzk5MDk3MDYiIHk9IjExOS4zODUzMjU0MTA3OTI4MyIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NTwvdGV4dD48dGV4dCB4PSIxMTkuMzg1MzI1NDEwNzkyODMiIHk9Ijc2LjA4OTYzNzM5OTA5NzA2IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj42PC90ZXh0Pjx0ZXh0IHg9IjE4MC42MTQ2NzQ1ODkyMDcyIiB5PSI3Ni4wODk2MzczOTkwOTcwNyIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NzwvdGV4dD48dGV4dCB4PSIyMjMuOTEwMzYyNjAwOTAyOTQiIHk9IjExOS4zODUzMjU0MTA3OTI4MyIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+ODwvdGV4dD48cG9seWdvbiBwb2ludHM9IjE1MCwxNTAgMTYwLDE0MCAxNjAsMTYwIiBmaWxsPSJyZWQiLz48L3N2Zz4=" alt="Spinning Arrow">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Total outcomes = 8.</div>
-        <div class="step">(i) Pointing at 8: Only 1 outcome (8). P(8) = 1/8.</div>
-        <div class="step">(ii) Odd numbers: 1, 3, 5, 7. Count = 4. P(Odd) = 4/8 = 1/2.</div>
-        <div class="step">(iii) Greater than 2: 3, 4, 5, 6, 7, 8. Count = 6. P(>2) = 6/8 = 3/4.</div>
-        <div class="step">(iv) Less than 9: All 1 to 8. Count = 8. P(<9)=8/8=1.</div>
-                <div class="final-answer">(i) 1/8, (ii) 1/2, (iii) 3/4, (iv) 1</div>
-        </div>
-
-        <div class="content-box">
-            <div class="question">13. A die is thrown once. Find the probability of getting (i) a prime number; (ii) a
-                number lying between 2 and 6; (iii) an odd number.</div>
-            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjEyMCIgeT0iMTIwIiB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIGZpbGw9IiNlZWUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjxjaXJjbGUgY3g9IjEzNSIgY3k9IjEzNSIgcj0iMyIgZmlsbD0iYmxhY2siIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjxjaXJjbGUgY3g9IjE2NSIgY3k9IjEzNSIgcj0iMyIgZmlsbD0iYmxhY2siIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjxjaXJjbGUgY3g9IjE1MCIgY3k9IjE1MCIgcj0iMyIgZmlsbD0iYmxhY2siIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjxjaXJjbGUgY3g9IjEzNSIgY3k9IjE2NSIgcj0iMyIgZmlsbD0iYmxhY2siIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjxjaXJjbGUgY3g9IjE2NSIgY3k9IjE2NSIgcj0iMyIgZmlsbD0iYmxhY2siIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjE1MCIgeT0iMjAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5PdXRjb21lczogMSwgMiwgMywgNCwgNSwgNjwvdGV4dD48L3N2Zz4=" alt="Die Outcomes">
-            <div class="solution-header">Solution:</div>
-            <div class="step">Outcomes: {1, 2, 3, 4, 5, 6}. Total = 6.</div>
-            <div class="step">(i) Prime (2, 3, 5). Count = 3. P(Prime) = 3/6 = 1/2.</div>
-            <div class="step">(ii) Between 2 and 6 (3, 4, 5). Count = 3. P(Between 2-6) = 3/6 = 1/2.</div>
-            <div class="step">(iii) Odd (1, 3, 5). Count = 3. P(Odd) = 3/6 = 1/2.</div>
-            <div class="final-answer">(i) 1/2, (ii) 1/2, (iii) 1/2</div>
-        </div>
-
-        <div class="content-box">
-            <div class="question">14. One card is drawn from a well-shuffled deck of 52 cards. Find the probability of
-                getting: (i) a king of red colour (ii) a face card (iii) a red face card (iv) the jack of hearts (v) a
-                spade (vi) the queen of diamonds.</div>
-            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjUwIiB5PSI1MCIgd2lkdGg9IjMwIiBoZWlnaHQ9IjQ1IiBmaWxsPSJ3aGl0ZSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iNjUiIHk9Ijc1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9InJlZCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+S+KZpTwvdGV4dD48cmVjdCB4PSI5MCIgeT0iNTAiIHdpZHRoPSIzMCIgaGVpZ2h0PSI0NSIgZmlsbD0id2hpdGUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjEwNSIgeT0iNzUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0icmVkIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5R4pmmPC90ZXh0PjxyZWN0IHg9IjEzMCIgeT0iNTAiIHdpZHRoPSIzMCIgaGVpZ2h0PSI0NSIgZmlsbD0id2hpdGUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjE0NSIgeT0iNzUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPkrimaA8L3RleHQ+PHRleHQgeD0iMTUwIiB5PSIxMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjUyIENhcmRzIERlY2s8L3RleHQ+PC9zdmc+" alt="Cards Deck">
-            <div class="solution-header">Solution:</div>
-            <div class="step">Total = 52.</div>
-            <div class="step">(i) King Red (Hearts, Diamonds). Count = 2. P = 2/52 = 1/26.</div>
-            <div class="step">(ii) Face cards (J, Q, K in 4 suits). Count = 12. P = 12/52 = 3/13.</div>
-            <div class="step">(iii) Red face cards (6). P = 6/52 = 3/26.</div>
-            <div class="step">(iv) Jack of Hearts (1). P = 1/52.</div>
-            <div class="step">(v) Spade (13). P = 13/52 = 1/4.</div>
-            <div class="step">(vi) Queen of Diamonds (1). P = 1/52.</div>
-            <div class="final-answer">1/26, 3/13, 3/26, 1/52, 1/4, 1/52</div>
-        </div>
-
-        <div class="content-box">
-            <div class="question">15. Five cards—the ten, jack, queen, king and ace of diamonds, are well-shuffled with
-                their face downwards. One card is then picked up at random. (i) What is the probability that the card is
-                the queen? (ii) If the queen is drawn and put aside, what is the probability that the second card picked
-                up is (a) an ace? (b) a queen?</div>
-            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjIwIiB5PSIxMDAiIHdpZHRoPSI0MCIgaGVpZ2h0PSI2MCIgZmlsbD0id2hpdGUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjQwIiB5PSIxMzUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0icmVkIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xMOKZpjwvdGV4dD48cmVjdCB4PSI3MCIgeT0iMTAwIiB3aWR0aD0iNDAiIGhlaWdodD0iNjAiIGZpbGw9IndoaXRlIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48dGV4dCB4PSI5MCIgeT0iMTM1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9InJlZCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+SuKZpjwvdGV4dD48cmVjdCB4PSIxMjAiIHk9IjEwMCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjYwIiBmaWxsPSJ3aGl0ZSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iMTQwIiB5PSIxMzUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0icmVkIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5R4pmmPC90ZXh0PjxyZWN0IHg9IjE3MCIgeT0iMTAwIiB3aWR0aD0iNDAiIGhlaWdodD0iNjAiIGZpbGw9IndoaXRlIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48dGV4dCB4PSIxOTAiIHk9IjEzNSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJyZWQiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkvimaY8L3RleHQ+PHJlY3QgeD0iMjIwIiB5PSIxMDAiIHdpZHRoPSI0MCIgaGVpZ2h0PSI2MCIgZmlsbD0id2hpdGUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjI0MCIgeT0iMTM1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9InJlZCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QeKZpjwvdGV4dD48dGV4dCB4PSIxNTAiIHk9IjIwMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+T25seSA1IENhcmRzIFRvdGFsPC90ZXh0Pjwvc3ZnPg==" alt="Five Cards">
-            <div class="solution-header">Solution:</div>
-            <div class="step">Total = 5.</div>
-            <div class="step">(i) Queen (1 card). P(Queen) = 1/5.</div>
-            <div class="step">(ii) Queen put aside. Total remaining = 4.</div>
-            <div class="step">(a) Ace (1 card). P(Ace) = 1/4.</div>
-            <div class="step">(b) Queen (0 cards left). P(Queen) = 0.</div>
-            <div class="final-answer">(i) 1/5, (ii)(a) 1/4, (ii)(b) 0</div>
-        </div>
-
-        <div class="content-box">
-            <div class="question">16. 12 defective pens are accidentally mixed with 132 good ones. One pen is taken out
-                at random. Determine the probability that the pen taken out is a good one.</div>
-            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjEwMCIgeT0iMTAwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iI2ZmZjljNCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iMTUwIiB5PSIxNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0icmVkIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xMiBCYWQ8L3RleHQ+PHRleHQgeD0iMTUwIiB5PSIxNzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iZ3JlZW4iIHRleHQtYW5jaG9yPSJtaWRkbGUiPjEzMiBHb29kPC90ZXh0Pjx0ZXh0IHg9IjE1MCIgeT0iMjIwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5Ub3RhbCAxNDQgUGVuczwvdGV4dD48L3N2Zz4=" alt="Pens Mix">
-            <div class="solution-header">Solution:</div>
-            <div class="step">Total = 12 + 132 = 144.</div>
-            <div class="step">Good pens = 132.</div>
-            <div class="step">P(Good) = 132/144 = 11/12.</div>
-            <div class="final-answer">11/12</div>
-        </div>
-
-        <div class="content-box">
-            <div class="question">17. (i) A lot of 20 bulbs contain 4 defective ones. One bulb is drawn at random. What
-                is the probability that this bulb is defective? (ii) Suppose drawn bulb is not defective/not replaced.
-                Now one bulb drawn. Probability not defective?</div>
-            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjx0ZXh0IHg9IjE1MCIgeT0iMTAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5Ub3RhbCAyMCBCdWxiczwvdGV4dD48dGV4dCB4PSIxNTAiIHk9IjEzMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJyZWQiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjQgRGVmZWN0aXZlPC90ZXh0Pjx0ZXh0IHg9IjE1MCIgeT0iMTYwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImdyZWVuIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xNiBHb29kPC90ZXh0Pjwvc3ZnPg==" alt="Bulbs Lot">
-            <div class="solution-header">Solution:</div>
-            <div class="step">(i) Total 20. Defective 4. P(Defective) = 4/20 = 1/5.</div>
-            <div class="step">(ii) Bulb drawn is good (non-defective). Remaining Total = 19. Remaining Good = 16 - 1 =
-                15.</div>
-            <div class="step">P(Not Defective) = 15/19.</div>
-            <div class="final-answer">(i) 1/5, (ii) 15/19</div>
-        </div>
-
-        <div class="content-box">
-            <div class="question">18. A box contains 90 discs which are numbered from 1 to 90. If one disc is drawn at
-                random from the box, find the probability that it bears (i) a two-digit number (ii) a perfect square
-                number (iii) a number divisible by 5.</div>
-            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxjaXJjbGUgY3g9IjUwIiBjeT0iMTAwIiByPSIyMCIgZmlsbD0iI2UxYmVlNyIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iNTAiIHk9IjEwNSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MTwvdGV4dD48Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9IjIwIiBmaWxsPSIjZTFiZWU3IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48dGV4dCB4PSIxMDAiIHk9IjEwNSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Li4uPC90ZXh0PjxjaXJjbGUgY3g9IjE1MCIgY3k9IjEwMCIgcj0iMjAiIGZpbGw9IiNlMWJlZTciIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjE1MCIgeT0iMTA1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj45MDwvdGV4dD48dGV4dCB4PSIxNTAiIHk9IjE1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+OTAgRGlzY3M8L3RleHQ+PC9zdmc+" alt="Numbered Discs">
-            <div class="solution-header">Solution:</div>
-            <div class="step">Total = 90.</div>
-            <div class="step">(i) Two-digit (10 to 90). Count = 90 - 9 = 81. P = 81/90 = 9/10.</div>
-            <div class="step">(ii) Perfect squares (1, 4, 9, 16, 25, 36, 49, 64, 81). Count = 9. P = 9/90 = 1/10.</div>
-            <div class="step">(iii) Divisible by 5 (5, 10... 90). Count = 18. P = 18/90 = 1/5.</div>
-            <div class="final-answer">9/10, 1/10, 1/5</div>
-        </div>
-
-        <div class="content-box">
-            <div class="question">19. A child has a die whose six faces show the letters: A, B, C, D, E, A. The die is
-                thrown once. What is the probability of getting (i) A? (ii) D?</div>
-            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjIwIiB5PSIxMDAiIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iI2ZmZTBiMiIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iNDAiIHk9IjEyNSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QTwvdGV4dD48cmVjdCB4PSI2NSIgeT0iMTAwIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmUwYjIiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9Ijg1IiB5PSIxMjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPkI8L3RleHQ+PHJlY3QgeD0iMTEwIiB5PSIxMDAiIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iI2ZmZTBiMiIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iMTMwIiB5PSIxMjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPkM8L3RleHQ+PHJlY3QgeD0iMTU1IiB5PSIxMDAiIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iI2ZmZTBiMiIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iMTc1IiB5PSIxMjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPkQ8L3RleHQ+PHJlY3QgeD0iMjAwIiB5PSIxMDAiIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iI2ZmZTBiMiIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iMjIwIiB5PSIxMjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPkU8L3RleHQ+PHJlY3QgeD0iMjQ1IiB5PSIxMDAiIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iI2ZmZTBiMiIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iMjY1IiB5PSIxMjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPkE8L3RleHQ+PHRleHQgeD0iMTUwIiB5PSIxNjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPkRpZSBGYWNlczwvdGV4dD48L3N2Zz4=" alt="Child's Die">
-            <div class="solution-header">Solution:</div>
-            <div class="step">Total = 6.</div>
-            <div class="step">(i) A appears twice. P(A) = 2/6 = 1/3.</div>
-            <div class="step">(ii) D appears once. P(D) = 1/6.</div>
-            <div class="final-answer">(i) 1/3, (ii) 1/6</div>
-        </div>
-
-        <div class="content-box">
-            <div class="question">20. Suppose you drop a die at random on the rectangular region... What is the
-                probability that it will land inside the circle with diameter 1m?</div>
-            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjUwIiB5PSI1MCIgd2lkdGg9IjIwMCIgaGVpZ2h0PSIxMzMiIGZpbGw9IiNjOGU2YzkiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjxjaXJjbGUgY3g9IjE1MCIgY3k9IjExNiIgcj0iMzMiIGZpbGw9IiM0ZmMzZjciIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjE1MCIgeT0iNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjNtPC90ZXh0Pjx0ZXh0IHg9IjMwIiB5PSIxMTYiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjJtPC90ZXh0Pjwvc3ZnPg==" alt="Lawn Probability">
-            <div class="solution-header">Solution:</div>
-            <div class="step">Area of Rectangle = 3 × 2 = 6 m².</div>
-            <div class="step">Area of Circle (d=1, r=0.5) = π(0.5)² = 0.25π m².</div>
-            <div class="step">Probability = Area Circle / Area Rectangle = 0.25π / 6 = π/24.</div>
-            <div class="final-answer">π/24</div>
-        </div>
-
-        <div class="content-box">
-            <div class="question">21. A lot consists of 144 ball pens of which 20 are defective... The shopkeeper draws
-                one pen at random. What is the probability that (i) She will buy it? (ii) She will not buy it?</div>
-            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjEwMCIgeT0iMTAwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iI2ZmZjljNCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iMTUwIiB5PSIxNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0icmVkIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4yMCBEZWZlY3RpdmU8L3RleHQ+PHRleHQgeD0iMTUwIiB5PSIxNzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iZ3JlZW4iIHRleHQtYW5jaG9yPSJtaWRkbGUiPjEyNCBHb29kPC90ZXh0Pjx0ZXh0IHg9IjE1MCIgeT0iMjIwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5Ub3RhbCAxNDQgUGVuczwvdGV4dD48L3N2Zz4=" alt="Pen Selection">
-            <div class="solution-header">Solution:</div>
-            <div class="step">Total = 144. Defective = 20. Good = 124.</div>
-            <div class="step">(i) She buys good pens. P(Buy) = 124/144 = 31/36.</div>
-            <div class="step">(ii) She won't buy defective. P(No Buy) = 20/144 = 5/36.</div>
-            <div class="final-answer">(i) 31/36, (ii) 5/36</div>
-        </div>
-
-        <div class="content-box">
-            <div class="question">22. Two dice, one blue and one grey, are thrown at the same time... Complete the table
-                for sum of two dice.</div>
-            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjUwIiB5PSI1MCIgd2lkdGg9IjIwMCIgaGVpZ2h0PSIyMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjE1MCIgeT0iMTUwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4zNiBPdXRjb21lczwvdGV4dD48dGV4dCB4PSIxNTAiIHk9IjE4MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+KDEsMSkgdG8gKDYsNik8L3RleHQ+PC9zdmc+" alt="Two Dice Sum">
-            <div class="solution-header">Solution:</div>
-            <div class="step">Total outcomes = 36.</div>
-            <div class="step">Sum 2: (1,1) -> 1/36.</div>
-            <div class="step">Sum 3: (1,2), (2,1) -> 2/36.</div>
-            <div class="step">Sum 4: (1,3), (2,2), (3,1) -> 3/36.</div>
-            <div class="step">Sum 5: 4/36. Sum 6: 5/36. Sum 7: 6/36.</div>
-            <div class="step">Sum 8: 5/36. Sum 9: 4/36. Sum 10: 3/36. Sum 11: 2/36. Sum 12: 1/36.</div>
-            <div class="final-answer">Refer to pattern above.</div>
-        </div>
-
-        <div class="content-box">
-            <div class="question">23. A game consists of tossing a one rupee coin 3 times... Hanif wins if all the
-                tosses give the same result... Calculate the probability that Hanif will lose the game.</div>
-            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjx0ZXh0IHg9IjE1MCIgeT0iMTUwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5ISEgsIEhIVCwgSFRILCBUSEgsIFRUSCwgVEhULCBIVFQsIFRUVDwvdGV4dD48dGV4dCB4PSIxNTAiIHk9IjEwMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+OCBPdXRjb21lczwvdGV4dD48L3N2Zz4=" alt="Three Coins">
-            <div class="solution-header">Solution:</div>
-            <div class="step">Outcomes: HHH, HHT, HTH, THH, TTH, THT, HTT, TTT. Total = 8.</div>
-            <div class="step">Win cases (Same result): HHH, TTT. Count = 2.</div>
-            <div class="step">Lose cases: 8 - 2 = 6.</div>
-            <div class="step">P(Lose) = 6/8 = 3/4.</div>
-            <div class="final-answer">3/4</div>
-        </div>
-
-        <div class="content-box">
-            <div class="question">24. A die is thrown twice. What is the probability that (i) 5 will not come up either
-                time? (ii) 5 will come up at least once?</div>
-            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjUwIiB5PSI1MCIgd2lkdGg9IjIwMCIgaGVpZ2h0PSIyMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjE1MCIgeT0iMTUwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4zNiBPdXRjb21lczwvdGV4dD48dGV4dCB4PSIxNTAiIHk9IjE4MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+KDEsMSkgdG8gKDYsNik8L3RleHQ+PC9zdmc+" alt="Die Twice">
-            <div class="solution-header">Solution:</div>
-            <div class="step">Total = 36.</div>
-            <div class="step">(ii) 5 at least once: (1,5), (2,5), (3,5), (4,5), (5,5), (6,5), (5,1), (5,2), (5,3),
-                (5,4), (5,6). Count = 11.</div>
-            <div class="step">P(5 at least once) = 11/36.</div>
-            <div class="step">(i) 5 not come up = 1 - P(at least once) = 1 - 11/36 = 25/36.</div>
-            <div class="final-answer">(i) 25/36, (ii) 11/36</div>
-        </div>
-
-        <div class="content-box">
-            <div class="question">25. Which of the following arguments are correct and which are not? (i) If two coins
-                are tossed... there are three possible outcomes - two heads, two tails or one of each. Therefore, for
-                each of these outcomes, the probability is 1/3. (ii) If a die is thrown... odd number or an even number.
-                Therefore P(odd) = 1/2.</div>
-            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjx0ZXh0IHg9IjE1MCIgeT0iMTAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5BcmcgMTogSEgsIFRULCBIVCAoRXJyb3I6IEhUICE9IFRIKTwvdGV4dD48dGV4dCB4PSIxNTAiIHk9IjE1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QXJnIDI6IE9kZCwgRXZlbiAoQ29ycmVjdCk8L3RleHQ+PC9zdmc+" alt="Arguments Check">
-            <div class="solution-header">Solution:</div>
-            <div class="step">(i) Incorrect. Outcomes are HH, HT, TH, TT (4 outcomes). P(One of each) = 2/4 = 1/2, not
-                1/3.</div>
-            <div class="step">(ii) Correct. Outcomes 1,3,5 (Odd) and 2,4,6 (Even). Both are 3/6 = 1/2.</div>
-            <div class="final-answer">(i) Incorrect, (ii) Correct</div>
-        </div>
-
-</body>
-
-</html>`,
-        examples: `<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Probability - Examples</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
-
-        body {
-            font-family: 'Kalam', cursive;
-            margin: 0;
-            padding: 15px;
-            background: #fff;
-            color: #333;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #6C63FF;
-            padding-bottom: 10px;
-            font-family: 'Nunito', sans-serif;
-        }
-
-        .logo {
-            color: #6C63FF;
-            font-size: 24px;
-            font-weight: 800;
-        }
-
-        .chapter-title {
-            text-align: center;
-            color: #333;
-            font-size: 20px;
-            font-weight: 700;
-            margin: 10px 0;
-            font-family: 'Kalam', cursive;
-        }
-
-        .content-box { background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px; padding: 15px; margin-bottom: 15px; display: flow-root; transition: transform 0.2s ease; }
-
-        .question {
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: #333;
-        }
-
-        .step {
-            margin-bottom: 8px;
-            font-size: 1.1em;
-            color: #000;
-            line-height: 1.5;
-        }
-
-        .final-answer {
-            color: #2E7D32;
-            font-weight: 700;
-            margin-top: 10px;
-            font-size: 1.2em;
-        }
-
-        
-
-        .solution-header {
-            color: #2E7D32;
-            font-weight: 700;
-            margin-bottom: 5px;
-        }
-    
-
-
-img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; height: auto; border: 1px solid #ddd; border-radius: 6px; padding: 5px; background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-@media (max-width: 600px) { img { float: none; display: block; margin: 10px auto; max-width: 100%; } }
-</style>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    renderMathInElement(document.body, {
-      delimiters: [
-        {left: '\\\\(', right: '\\\\)', display: false},
-        {left: '\\\\[', right: '\\\\]', display: true}
-      ]
-    });
-  });
-</script>
-
-<style>
-  body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
-  .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #66BB6A !important; color: #fff !important; }
-  h1, h2, h3, h4, h5, h6 { color: #66BB6A !important; }
-  .question { color: #66BB6A !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
-  .formula { color: #4CAF50 !important; }
-  .true-text { color: #4CAF50 !important; }
-  .false-text { color: #F44336 !important; }
-  table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
-  .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
-  img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #66BB6A !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
-  * { font-family: 'Noto Sans', sans-serif !important; }
-
-  .question { font-size: 0.95em !important; }
-  .sub-question { font-size: 0.9em !important; }
-  .step { font-size: 0.9em !important; }
-  .final-answer { font-size: 0.95em !important; }
-</style>
-</head>
-
-<body>
-
-    
-
-    <div class="content-box">
-        <div class="question">Example 1. Find the probability of getting a head when a coin is tossed once. Also find
-            the probability of getting a tail.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxjaXJjbGUgY3g9IjE1MCIgY3k9IjE1MCIgcj0iNTAiIGZpbGw9IiNmZmQ1NGYiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjE1MCIgeT0iMTYwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5IZWFkcy9UYWlsczwvdGV4dD48dGV4dCB4PSIxNTAiIHk9IjI0MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+UChIKSA9IFAoVCkgPSAxLzI8L3RleHQ+PC9zdmc+" alt="Coin Toss Example">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Total outcomes = 2 (Head, Tail).</div>
-        <div class="step">P(Head) = 1/2.</div>
-        <div class="step">P(Tail) = 1/2.</div>
-        <div class="final-answer">1/2, 1/2</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">Example 2. A bag contains a red ball, a blue ball and a yellow ball, all the balls being
-            of the same size. Kritika takes out a ball from the bag without looking into it. What is the probability
-            that she takes out the (i) yellow ball? (ii) red ball? (iii) blue ball?</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxwYXRoIGQ9Ik0gMTAwIDEwMCBRIDEwMCAyNTAgMTUwIDI1MCBRIDIwMCAyNTAgMjAwIDEwMCBaIiBmaWxsPSIjZWNlZmYxIiBzdHJva2U9ImJsYWNrIi8+PGNpcmNsZSBjeD0iMTQwIiBjeT0iMTgwIiByPSI4IiBmaWxsPSJyZWQiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjxjaXJjbGUgY3g9IjE2MCIgY3k9IjIwMCIgcj0iOCIgZmlsbD0icmVkIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48Y2lyY2xlIGN4PSIxMzAiIGN5PSIyMTAiIHI9IjgiIGZpbGw9InJlZCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PGNpcmNsZSBjeD0iMTUwIiBjeT0iMTUwIiByPSI4IiBmaWxsPSJibGFjayIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PGNpcmNsZSBjeD0iMTMwIiBjeT0iMTYwIiByPSI4IiBmaWxsPSJibGFjayIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PGNpcmNsZSBjeD0iMTcwIiBjeT0iMTgwIiByPSI4IiBmaWxsPSJibGFjayIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PGNpcmNsZSBjeD0iMTUwIiBjeT0iMjIwIiByPSI4IiBmaWxsPSJibGFjayIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PGNpcmNsZSBjeD0iMTcwIiBjeT0iMTYwIiByPSI4IiBmaWxsPSJibGFjayIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iMTUwIiB5PSIyODAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPlRvdGFsIDggQmFsbHM8L3RleHQ+PC9zdmc+" alt="Colored Balls Example">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Total balls = 3.</div>
-        <div class="step">(i) Yellow ball = 1. P(Yellow) = 1/3.</div>
-        <div class="step">(ii) Red ball = 1. P(Red) = 1/3.</div>
-        <div class="step">(iii) Blue ball = 1. P(Blue) = 1/3.</div>
-        <div class="final-answer">1/3, 1/3, 1/3</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">Example 3. Suppose we throw a die once. (i) What is the probability of getting a number
-            greater than 4? (ii) What is the probability of getting a number less than or equal to 4?</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjEyMCIgeT0iMTIwIiB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIGZpbGw9IiNlZWUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjxjaXJjbGUgY3g9IjEzNSIgY3k9IjEzNSIgcj0iMyIgZmlsbD0iYmxhY2siIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjxjaXJjbGUgY3g9IjE2NSIgY3k9IjEzNSIgcj0iMyIgZmlsbD0iYmxhY2siIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjxjaXJjbGUgY3g9IjE1MCIgY3k9IjE1MCIgcj0iMyIgZmlsbD0iYmxhY2siIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjxjaXJjbGUgY3g9IjEzNSIgY3k9IjE2NSIgcj0iMyIgZmlsbD0iYmxhY2siIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjxjaXJjbGUgY3g9IjE2NSIgY3k9IjE2NSIgcj0iMyIgZmlsbD0iYmxhY2siIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjE1MCIgeT0iMjAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5PdXRjb21lczogMSwgMiwgMywgNCwgNSwgNjwvdGV4dD48L3N2Zz4=" alt="Die Outcomes Example">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Total outcomes = 6.</div>
-        <div class="step">(i) Greater than 4: {5, 6}. Count = 2. P(>4) = 2/6 = 1/3.</div>
-        <div class="step">(ii) Less than or equal to 4: {1, 2, 3, 4}. Count = 4. P(<=4)=4/6=2/3.</div>
-                <div class="final-answer">1/3, 2/3</div>
-        </div>
-
-</body>
-
-</html>`
+  id: "ch14",
+  number: 14,
+  title: "Probability",
+  introduction: "In this concluding chapter, we explore the mathematics of chance. We focus on calculating theoretical probability based on equally likely outcomes and favourable cases, applying these concepts to real-world scenarios including coin tosses, dice rolls, marbles, and a standard 52-card deck.",
+  definitions: [
+    {
+      term: "Probability",
+      description: "A numerical measure ranging from 0 to 1 that quantifies the likelihood of an event occurring."
+    },
+    {
+      term: "Equally Likely Outcomes",
+      description: "Outcomes of an experiment that each have the exact same chance of occurring (e.g. Head and Tail on a fair coin)."
+    },
+    {
+      term: "Elementary Event",
+      description: "An event having only one single favourable outcome of the experiment."
+    },
+    {
+      term: "Sure Event (Certain Event)",
+      description: "An event that is 100% guaranteed to happen, having a probability of exactly 1."
+    },
+    {
+      term: "Impossible Event",
+      description: "An event that cannot happen under any circumstances, having a probability of exactly 0."
+    },
+    {
+      term: "Complementary Event",
+      description: "The event 'not E' (denoted Ē), representing all outcomes where event E does not happen. P(E) + P(Ē) = 1."
     }
+  ],
+  keyPoints: [
+    "The theoretical probability of an event E is P(E) = (Number of outcomes favourable to E) / (Number of all possible outcomes).",
+    "Probability is strictly bounded: 0 ≤ P(E) ≤ 1. It can never be negative or exceed 1 (or 100%).",
+    "The sum of probabilities of all elementary events in an experiment is always 1.",
+    "Complementary events satisfy P(not E) = 1 − P(E).",
+    "In a standard deck of 52 cards: 26 Red, 26 Black, 4 suits of 13 cards each, 12 face cards (J, Q, K), and 4 Aces (Aces are not face cards!).",
+    "When two dice are thrown simultaneously, there are 6 × 6 = 36 possible outcomes."
+  ],
+  formulas: [
+    {
+      name: "Classical Probability Formula",
+      formula: "P(E) = n(E) / n(S) = (Favourable Outcomes) / (Total Outcomes)"
+    },
+    {
+      name: "Complementary Event Formula",
+      formula: "P(not E) = 1 − P(E)"
+    },
+    {
+      name: "Sum of Elementary Events",
+      formula: "Σ P(Eᵢ) = 1"
+    },
+    {
+      name: "Geometric Probability",
+      formula: "P(E) = (Area of Target Region) / (Total Area)"
+    }
+  ],
+  crux: [
+    "Always write down the total Sample Space (S) count before counting favourable cases.",
+    "Pay close attention to keywords: 'at least one' means 1 or more; 'at most one' means 0 or 1.",
+    "When drawing items 'without replacement', remember to reduce both the numerator and denominator by 1 for the second draw.",
+    "Aces are honors cards, NOT face cards! Face cards are exclusively Jacks, Queens, and Kings (3 × 4 = 12)."
+  ],
+  exercises: [
+    {
+      id: "examples",
+      name: "Examples",
+      questions: []
+    },
+    {
+      id: "exercise1",
+      name: "Exercise 14.1",
+      questions: []
+    }
+  ],
+  examples: [],
+  theorems: [],
+  mcqs: [
+  {
+    "id": "ch14-mcq-1",
+    "question": "The probability of an impossible event is always:",
+    "options": [
+      "A):   1",
+      "B):   1/2",
+      "C):   0",
+      "D):   Not defined"
+    ],
+    "correctAnswer": "C",
+    "explanation": "An impossible event has no favourable outcomes in the sample space. Therefore, P(E) = 0 / Total = 0."
+  },
+  {
+    "id": "ch14-mcq-2",
+    "question": "Which of the following numbers cannot represent the probability of an event?",
+    "options": [
+      "A):   17/16",
+      "B):   0.1",
+      "C):   3%",
+      "D):   0.001"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Probability of any event is strictly bounded between 0 and 1 (0 ≤ P(E) ≤ 1). 17/16 = 1.0625 > 1, so it cannot be a probability."
+  },
+  {
+    "id": "ch14-mcq-3",
+    "question": "Two fair coins are tossed simultaneously. What is the probability of getting at most one head?",
+    "options": [
+      "A):   1/4",
+      "B):   3/4",
+      "C):   1/2",
+      "D):   1"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Sample space = { HH, HT, TH, TT } (4 outcomes). 'At most one head' means 0 heads or 1 head: { TT, HT, TH } (3 outcomes). P = 3/4."
+  },
+  {
+    "id": "ch14-mcq-4",
+    "question": "A card is drawn from a well-shuffled pack of 52 playing cards. The probability that it is a face card is:",
+    "options": [
+      "A):   1/13",
+      "B):   2/13",
+      "C):   4/13",
+      "D):   3/13"
+    ],
+    "correctAnswer": "D",
+    "explanation": "There are 12 face cards in a deck (4 Jacks, 4 Queens, 4 Kings). P(Face card) = 12 / 52 = 3/13."
+  },
+  {
+    "id": "ch14-mcq-5",
+    "question": "If P(E) = 0.07, then the probability of its complementary event 'not E' is:",
+    "options": [
+      "A):   0.93",
+      "B):   0.03",
+      "C):   0.97",
+      "D):   0.70"
+    ],
+    "correctAnswer": "A",
+    "explanation": "P(not E) = 1 - P(E) = 1 - 0.07 = 0.93."
+  },
+  {
+    "id": "ch14-mcq-6",
+    "question": "A fair die is thrown once. The probability of getting a number less than 3 is:",
+    "options": [
+      "A):   1/6",
+      "B):   1/3",
+      "C):   1/2",
+      "D):   2/3"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Outcomes on a die are { 1, 2, 3, 4, 5, 6 }. Numbers less than 3 are { 1, 2 } (2 outcomes). P = 2/6 = 1/3."
+  },
+  {
+    "id": "ch14-mcq-7",
+    "question": "In a single throw of a die, the probability of getting a composite number is:",
+    "options": [
+      "A):   1/2",
+      "B):   1/6",
+      "C):   1/3",
+      "D):   2/3"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Outcomes are { 1, 2, 3, 4, 5, 6 }. Composite numbers have more than 2 factors: { 4, 6 } (2 outcomes). Note that 1 is neither prime nor composite. P = 2/6 = 1/3."
+  },
+  {
+    "id": "ch14-mcq-8",
+    "question": "A card is drawn from a well-shuffled pack of 52 cards. What is the probability of drawing a red ace?",
+    "options": [
+      "A):   1/52",
+      "B):   2/13",
+      "C):   1/13",
+      "D):   1/26"
+    ],
+    "correctAnswer": "D",
+    "explanation": "There are 2 red aces in a deck (Ace of Hearts and Ace of Diamonds). P(Red Ace) = 2 / 52 = 1/26."
+  },
+  {
+    "id": "ch14-mcq-9",
+    "question": "If a letter is chosen at random from the English alphabet, the probability that it is a consonant is:",
+    "options": [
+      "A):   21/26",
+      "B):   5/26",
+      "C):   1/2",
+      "D):   11/26"
+    ],
+    "correctAnswer": "A",
+    "explanation": "There are 26 letters in total, with 5 vowels (A, E, I, O, U) and 21 consonants. P(Consonant) = 21/26."
+  },
+  {
+    "id": "ch14-mcq-10",
+    "question": "Two dice are thrown together. The probability that the sum of the numbers on top faces is 7 is:",
+    "options": [
+      "A):   5/36",
+      "B):   1/6",
+      "C):   7/36",
+      "D):   1/12"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Total outcomes = 36. Outcomes with sum 7: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) = 6 outcomes. P = 6/36 = 1/6."
+  },
+  {
+    "id": "ch14-mcq-11",
+    "question": "A box contains 3 blue, 2 white, and 4 red marbles. If a marble is drawn at random, the probability that it is not white is:",
+    "options": [
+      "A):   2/9",
+      "B):   5/9",
+      "C):   7/9",
+      "D):   4/9"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Total marbles = 3 + 2 + 4 = 9. Marbles that are not white = Blue + Red = 3 + 4 = 7. P(not white) = 7/9."
+  },
+  {
+    "id": "ch14-mcq-12",
+    "question": "The probability that a non-leap year has 53 Sundays is:",
+    "options": [
+      "A):   2/7",
+      "B):   5/7",
+      "C):   3/7",
+      "D):   1/7"
+    ],
+    "correctAnswer": "D",
+    "explanation": "A non-leap year has 365 days = 52 weeks + 1 extra day. For 53 Sundays, the single extra day must be a Sunday. P = 1/7."
+  },
+  {
+    "id": "ch14-mcq-13",
+    "question": "The probability that a leap year contains 53 Sundays is:",
+    "options": [
+      "A):   2/7",
+      "B):   1/7",
+      "C):   3/7",
+      "D):   5/7"
+    ],
+    "correctAnswer": "A",
+    "explanation": "A leap year has 366 days = 52 weeks + 2 extra consecutive days. The 7 possible pairs are (Sun,Mon), (Mon,Tue)... (Sat,Sun). Favourable pairs containing Sunday are 2. P = 2/7."
+  },
+  {
+    "id": "ch14-mcq-14",
+    "question": "When two dice are thrown simultaneously, the probability of getting a doublet (both numbers identical) is:",
+    "options": [
+      "A):   1/12",
+      "B):   1/6",
+      "C):   1/36",
+      "D):   5/36"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Doublets are (1,1), (2,2), (3,3), (4,4), (5,5), (6,6) (6 outcomes out of 36). P = 6/36 = 1/6."
+  },
+  {
+    "id": "ch14-mcq-15",
+    "question": "A number x is chosen at random from the numbers -3, -2, -1, 0, 1, 2, 3. What is the probability that |x| < 2?",
+    "options": [
+      "A):   2/7",
+      "B):   4/7",
+      "C):   3/7",
+      "D):   5/7"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Total numbers = 7. |x| < 2 means -2 < x < 2. Favourable integers are { -1, 0, 1 } (3 numbers). P = 3/7."
+  },
+  {
+    "id": "ch14-mcq-16",
+    "question": "If P(E) represents the probability of an event, then which relation is always true?",
+    "options": [
+      "A):   P(E) < 0",
+      "B):   P(E) > 1",
+      "C):   -1 ≤ P(E) ≤ 1",
+      "D):   0 ≤ P(E) ≤ 1"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The probability of any event is always a non-negative real number not exceeding 1, i.e., 0 ≤ P(E) ≤ 1."
+  },
+  {
+    "id": "ch14-mcq-17",
+    "question": "From a lottery containing 10 prizes and 25 blanks, a ticket is drawn at random. The probability of getting a prize is:",
+    "options": [
+      "A):   2/7",
+      "B):   5/7",
+      "C):   2/5",
+      "D):   1/10"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Total tickets = 10 + 25 = 35. Favourable (prizes) = 10. P(Prize) = 10 / 35 = 2/7."
+  },
+  {
+    "id": "ch14-mcq-18",
+    "question": "Three coins are tossed simultaneously. What is the probability of getting exactly two heads?",
+    "options": [
+      "A):   1/8",
+      "B):   1/2",
+      "C):   3/8",
+      "D):   5/8"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Total outcomes = 2³ = 8. Favourable outcomes with exactly two heads: { HHT, HTH, THH } (3 outcomes). P = 3/8."
+  },
+  {
+    "id": "ch14-mcq-19",
+    "question": "In a family of 2 children, the probability of having at least one girl is:",
+    "options": [
+      "A):   1/4",
+      "B):   1/2",
+      "C):   2/3",
+      "D):   3/4"
+    ],
+    "correctAnswer": "D",
+    "explanation": "Sample space = { BB, BG, GB, GG } (4 outcomes). 'At least one girl' includes { BG, GB, GG } (3 outcomes). P = 3/4."
+  },
+  {
+    "id": "ch14-mcq-20",
+    "question": "A card is drawn from a well-shuffled pack of 52 cards. What is the probability that it is neither a king nor a queen?",
+    "options": [
+      "A):   11/13",
+      "B):   2/13",
+      "C):   12/13",
+      "D):   1/13"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Number of kings and queens = 4 + 4 = 8. Cards that are neither = 52 - 8 = 44. P = 44 / 52 = 11/13."
+  },
+  {
+    "id": "ch14-mcq-21",
+    "question": "A die is thrown once. What is the probability of getting an even prime number?",
+    "options": [
+      "A):   1/2",
+      "B):   1/6",
+      "C):   1/3",
+      "D):   2/3"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The numbers on a die are 1 to 6. The only even prime number is 2 (1 outcome). P = 1/6."
+  },
+  {
+    "id": "ch14-mcq-22",
+    "question": "If a digit is chosen at random from the digits 1, 2, 3, 4, 5, 6, 7, 8, 9, what is the probability that it is an odd prime?",
+    "options": [
+      "A):   4/9",
+      "B):   1/3",
+      "C):   2/9",
+      "D):   5/9"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The digits are 9 in total. The odd primes are { 3, 5, 7 } (3 digits). P = 3/9 = 1/3."
+  },
+  {
+    "id": "ch14-mcq-23",
+    "question": "A bag contains 5 black, 7 red and 3 white balls. A ball is drawn at random. The probability that it is not black is:",
+    "options": [
+      "A):   1/3",
+      "B):   2/5",
+      "C):   2/3",
+      "D):   7/15"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Total balls = 5 + 7 + 3 = 15. Not black = Red + White = 7 + 3 = 10. P(not black) = 10 / 15 = 2/3."
+  },
+  {
+    "id": "ch14-mcq-24",
+    "question": "Two dice are rolled. What is the probability that the product of the two numbers obtained is 6?",
+    "options": [
+      "A):   1/18",
+      "B):   1/12",
+      "C):   5/36",
+      "D):   1/9"
+    ],
+    "correctAnswer": "D",
+    "explanation": "Total outcomes = 36. Outcomes with product 6: (1,6), (2,3), (3,2), (6,1) = 4 outcomes. P = 4/36 = 1/9."
+  },
+  {
+    "id": "ch14-mcq-25",
+    "question": "Which of the following events has probability equal to 1?",
+    "options": [
+      "A):   Getting an 8 when a die is thrown",
+      "B):   Getting a head when a coin is tossed",
+      "C):   Drawing a red card from a deck of red cards",
+      "D):   Getting a sum of 13 when two dice are rolled"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Drawing a red card from a deck consisting solely of red cards is a sure (certain) event, which has probability exactly equal to 1."
+  }
+],
+  isHtmlView: true,
+  htmlOverview: "\n\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; }\n  .frac .den { padding: 1px 4px; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(41, 121, 255, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #2979FF; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 14px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(41, 121, 255, 0.25); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #2979FF; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #82B1FF; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(41, 121, 255, 0.15); border: 1px solid #2979FF; color: #82B1FF; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 6px 0; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(41, 121, 255, 0.4); border-radius: 10px; padding: 14px; margin: 16px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #FFFFFF; border-radius: 8px; padding: 10px 8px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.25); }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 10px; font-weight: 500; }\n  .table-card { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 14px 0; border-radius: 8px; }\n  .table-card table { width: 100%; border-collapse: collapse; text-align: center; }\n  .table-card th { background: rgba(41, 121, 255, 0.2); color: #82B1FF; border: 1px solid rgba(41, 121, 255, 0.35); padding: 10px; font-weight: 700; }\n  .table-card td { border: 1px solid rgba(41, 121, 255, 0.2); padding: 9px; color: #E2E8F0; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Hero Header -->\n  <div style=\"background: linear-gradient(135deg, rgba(41, 121, 255, 0.22), rgba(0, 75, 224, 0.15)); border: 1.5px solid #2979FF; border-radius: 14px; padding: 18px; margin-bottom: 20px; text-align: center;\">\n    <div style=\"font-size: 22px; font-weight: 800; color: #2979FF; margin-bottom: 6px;\">\n      🎲 Chapter 14: Probability\n    </div>\n    <div style=\"color: #CBD5E1; font-size: 14.5px; line-height: 1.5;\">\n      Class 10 NCERT Mathematics &bull; Classical Theoretical Probability, Sample Spaces, Cards &amp; Dice Master Matrix\n    </div>\n  </div>\n\n  <!-- 1. The Classical Definition of Probability -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 1. The Classical Definition of Probability</div>\n    <div class=\"q-text\">\n      The theoretical (classical) probability of an event <i>E</i>, written as <b><i>P(E)</i></b>, is defined when all outcomes of an experiment are <b>equally likely</b>:\n    </div>\n    <div class=\"sol-box\">\n      <div style=\"text-align: center; margin: 12px 0;\">\n        <span class=\"prop-chip\" style=\"font-size: 16.5px; padding: 8px 22px;\">\n          <b><i>P(E)</i> = <span class=\"frac\"><span class=\"num\">Number of outcomes favourable to <i>E</i></span><span class=\"den\">Number of all possible outcomes of the experiment</span></span> = <span class=\"frac\"><span class=\"num\"><i>m</i></span><span class=\"den\"><i>n</i></span></span></b>\n        </span>\n      </div>\n      <div class=\"sol-step\">\n        <div>&bull; <b style=\"color: #82B1FF;\">Boundaries of Probability:</b> For any event <i>E</i>, the probability strictly satisfies:</div>\n        <div style=\"text-align: center; margin: 6px 0;\">\n          <span class=\"prop-chip\" style=\"border-color: #4CAF50; color: #A5D6A7; font-size: 15px;\">\n            <b>0 &le; <i>P(E)</i> &le; 1</b>\n          </span>\n        </div>\n        <div>&bull; <b style=\"color: #82B1FF;\">Sure / Certain Event:</b> An event that is 100% guaranteed to happen &rArr; <b><i>P(E)</i> = 1</b>.</div>\n        <div>&bull; <b style=\"color: #82B1FF;\">Impossible Event:</b> An event that cannot happen under any condition &rArr; <b><i>P(E)</i> = 0</b>.</div>\n        <div>&bull; <b style=\"color: #82B1FF;\">Complementary Events:</b> If <i>E</i> is an event, then <i>Ē</i> (or 'not <i>E</i>') represents its complement:</div>\n        <div style=\"text-align: center; margin: 6px 0;\">\n          <span class=\"prop-chip\" style=\"font-size: 15px;\">\n            <b><i>P(E)</i> + <i>P(not E)</i> = 1 &nbsp;&rArr;&nbsp; <i>P(not E)</i> = 1 &minus; <i>P(E)</i></b>\n          </span>\n        </div>\n        <div>&bull; <b style=\"color: #82B1FF;\">Sum of Elementary Events:</b> The sum of the probabilities of all elementary events of an experiment is <b>always 1</b>.</div>\n      </div>\n    </div>\n  </div>\n\n  <!-- 2. Master Sample Spaces Matrix -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 2. Standard Random Experiment Sample Spaces</div>\n    <div class=\"q-text\">\n      The set of all possible outcomes of an experiment is its <b>Sample Space (S)</b>:\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"table-card\">\n        <table>\n          <thead>\n            <tr>\n              <th>Experiment</th>\n              <th>Total Outcomes (<i>n</i>)</th>\n              <th>Sample Space Set (<i>S</i>)</th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr>\n              <td><b>Single Coin Toss</b></td>\n              <td><b>2<sup>1</sup> = 2</b></td>\n              <td>{ H, T }</td>\n            </tr>\n            <tr>\n              <td><b>Two Coins Tossed</b></td>\n              <td><b>2<sup>2</sup> = 4</b></td>\n              <td>{ HH, HT, TH, TT }</td>\n            </tr>\n            <tr>\n              <td><b>Three Coins Tossed</b></td>\n              <td><b>2<sup>3</sup> = 8</b></td>\n              <td>{ HHH, HHT, HTH, THH, HTT, THT, TTH, TTT }</td>\n            </tr>\n            <tr>\n              <td><b>Single Die Thrown</b></td>\n              <td><b>6<sup>1</sup> = 6</b></td>\n              <td>{ 1, 2, 3, 4, 5, 6 } &nbsp;<span class=\"reason\">[Primes: 2, 3, 5; Composites: 4, 6]</span></td>\n            </tr>\n            <tr>\n              <td><b>Two Dice Thrown (Pair)</b></td>\n              <td><b>6<sup>2</sup> = 36</b></td>\n              <td>(1,1) to (6,6) &nbsp;<span class=\"reason\">[Doublets: (1,1), (2,2)... = 6 outcomes]</span></td>\n            </tr>\n          </tbody>\n        </table>\n      </div>\n    </div>\n  </div>\n\n  <!-- 3. Playing Cards 52-Card Deck Matrix -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 3. Master Playing Cards Architecture (Pack of 52 Cards)</div>\n    <div class=\"q-text\">\n      A standard deck consists of <b>52 playing cards</b> divided equally into 4 suits of 13 cards each:\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"table-card\">\n        <table>\n          <thead>\n            <tr>\n              <th>Color (26 Each)</th>\n              <th>Suits (13 Cards Each)</th>\n              <th>Suit Breakdown (A, 2-10, J, Q, K)</th>\n              <th>Face Cards (J, Q, K)</th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr style=\"color: #FF5252;\">\n              <td rowspan=\"2\"><b>RED (26 Cards)</b><br/><i>P(Red)</i> = <span class=\"frac\"><span class=\"num\">26</span><span class=\"den\">52</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></td>\n              <td><b>Hearts (&hearts;)</b> (13)</td>\n              <td>Ace, 2, 3, 4, 5, 6, 7, 8, 9, 10, Jack, Queen, King</td>\n              <td>3 Red Face Cards (J, Q, K)</td>\n            </tr>\n            <tr style=\"color: #FF5252;\">\n              <td><b>Diamonds (&diams;)</b> (13)</td>\n              <td>Ace, 2, 3, 4, 5, 6, 7, 8, 9, 10, Jack, Queen, King</td>\n              <td>3 Red Face Cards (J, Q, K)</td>\n            </tr>\n            <tr style=\"color: #CBD5E1;\">\n              <td rowspan=\"2\"><b>BLACK (26 Cards)</b><br/><i>P(Black)</i> = <span class=\"frac\"><span class=\"num\">26</span><span class=\"den\">52</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></td>\n              <td><b>Spades (&spades;)</b> (13)</td>\n              <td>Ace, 2, 3, 4, 5, 6, 7, 8, 9, 10, Jack, Queen, King</td>\n              <td>3 Black Face Cards (J, Q, K)</td>\n            </tr>\n            <tr style=\"color: #CBD5E1;\">\n              <td><b>Clubs (&clubs;)</b> (13)</td>\n              <td>Ace, 2, 3, 4, 5, 6, 7, 8, 9, 10, Jack, Queen, King</td>\n              <td>3 Black Face Cards (J, Q, K)</td>\n            </tr>\n            <tr style=\"font-weight: 700; background: rgba(41, 121, 255, 0.15);\">\n              <td><b>Total 52 Cards</b></td>\n              <td><b>4 Suits</b></td>\n              <td><b>4 Aces, 36 Number Cards (2 to 10)</b></td>\n              <td><b>Total 12 Face Cards</b> (6 Red + 6 Black)</td>\n            </tr>\n          </tbody>\n        </table>\n      </div>\n      <div class=\"sol-step\" style=\"margin-top: 10px;\">\n        <div>&bull; <b style=\"color: #82B1FF;\">Crucial Card Trap:</b> <b>Aces are NOT face cards!</b> Only Jacks, Queens, and Kings feature faces (4 &times; 3 = 12 face cards).</div>\n      </div>\n    </div>\n  </div>\n\n  <!-- 4. Two Dice Sum Matrix (36 Outcomes) -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 4. Two-Dice Sum Frequency Distribution Matrix</div>\n    <div class=\"q-text\">\n      When two dice (e.g. blue and grey) are thrown simultaneously, the sum of numbers on top faces ranges from 2 to 12:\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"table-card\">\n        <table>\n          <thead>\n            <tr>\n              <th>Sum on 2 Dice</th>\n              <th>Favourable Outcomes</th>\n              <th>Count</th>\n              <th>Probability</th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr><td><b>2</b></td><td>(1,1)</td><td>1</td><td><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">36</span></span></td></tr>\n            <tr><td><b>3</b></td><td>(1,2), (2,1)</td><td>2</td><td><span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">36</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">18</span></span></td></tr>\n            <tr><td><b>4</b></td><td>(1,3), (2,2), (3,1)</td><td>3</td><td><span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">36</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">12</span></span></td></tr>\n            <tr><td><b>5</b></td><td>(1,4), (2,3), (3,2), (4,1)</td><td>4</td><td><span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">36</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">9</span></span></td></tr>\n            <tr><td><b>6</b></td><td>(1,5), (2,4), (3,3), (4,2), (5,1)</td><td>5</td><td><span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">36</span></span></td></tr>\n            <tr style=\"background: rgba(41, 121, 255, 0.18); font-weight: 700;\">\n              <td><b>7 (Peak Sum)</b></td>\n              <td>(1,6), (2,5), (3,4), (4,3), (5,2), (6,1)</td>\n              <td>6</td>\n              <td><span class=\"frac\"><span class=\"num\">6</span><span class=\"den\">36</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">6</span></span></td>\n            </tr>\n            <tr><td><b>8</b></td><td>(2,6), (3,5), (4,4), (5,3), (6,2)</td><td>5</td><td><span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">36</span></span></td></tr>\n            <tr><td><b>9</b></td><td>(3,6), (4,5), (5,4), (6,3)</td><td>4</td><td><span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">36</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">9</span></span></td></tr>\n            <tr><td><b>10</b></td><td>(4,6), (5,5), (6,4)</td><td>3</td><td><span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">36</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">12</span></span></td></tr>\n            <tr><td><b>11</b></td><td>(5,6), (6,5)</td><td>2</td><td><span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">36</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">18</span></span></td></tr>\n            <tr><td><b>12</b></td><td>(6,6)</td><td>1</td><td><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">36</span></span></td></tr>\n          </tbody>\n        </table>\n      </div>\n    </div>\n  </div>\n\n  <!-- 5. Master Revision Formula Cheat Sheet -->\n  <div class=\"q-card\" style=\"border-color: #2979FF;\">\n    <div class=\"q-title\">✦ 5. Master Revision Formula Cheat Sheet</div>\n    <div class=\"sol-box\">\n      <div class=\"table-card\">\n        <table>\n          <thead>\n            <tr>\n              <th>Concept</th>\n              <th>Formula / Value</th>\n              <th>Key Examination Rule</th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr>\n              <td><b>Classical Probability</b></td>\n              <td><b><i>P(E)</i> = <span class=\"frac\"><span class=\"num\">Favourable Outcomes</span><span class=\"den\">Total Possible Outcomes</span></span></b></td>\n              <td>Valid ONLY when outcomes are equally likely.</td>\n            </tr>\n            <tr>\n              <td><b>Probability Bounds</b></td>\n              <td><b>0 &le; <i>P(E)</i> &le; 1</b></td>\n              <td>Probability can never be negative, nor greater than 1 (or > 100%).</td>\n            </tr>\n            <tr>\n              <td><b>Complementary Event</b></td>\n              <td><b><i>P(not E)</i> = 1 &minus; <i>P(E)</i></b></td>\n              <td>Use whenever 'at least one' or 'not' is specified.</td>\n            </tr>\n            <tr>\n              <td><b>Impossible Event</b></td>\n              <td><b><i>P(Impossible)</i> = 0</b></td>\n              <td>e.g. Getting a 7 on a standard 6-sided die.</td>\n            </tr>\n            <tr>\n              <td><b>Sure Event</b></td>\n              <td><b><i>P(Sure)</i> = 1</b></td>\n              <td>e.g. Getting a number less than 7 on a standard die.</td>\n            </tr>\n            <tr>\n              <td><b>Geometric Probability</b></td>\n              <td><b><i>P</i> = <span class=\"frac\"><span class=\"num\">Favourable Area</span><span class=\"den\">Total Area</span></span></b></td>\n              <td>e.g. Die dropped inside circular target within rectangle.</td>\n            </tr>\n          </tbody>\n        </table>\n      </div>\n    </div>\n  </div>\n\n</div>\n",
+  htmlExercises: {
+    examples: "\n<div class=\"ex-header\">\n  <div class=\"ex-badge\">Chapter 14 &bull; Solved Examples</div>\n  <div class=\"ex-title\">Foundational Probability Experiments</div>\n  <div class=\"ex-desc\">Step-by-step textbook solved examples illustrating single coin tosses, ball selections, and die throws.</div>\n</div>\n\n<!-- Example 1 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Example 1</span> Single Coin Toss (Head and Tail)</div>\n  <div class=\"q-text\">\n    Find the probability of getting a head when a coin is tossed once. Also find the probability of getting a tail.\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Step 1: Total Possible Outcomes</b></div>\n    <div class=\"sol-step\">When a fair coin is tossed once, the possible outcomes are Head (H) and Tail (T).</div>\n    <div class=\"sol-step\">Sample Space <i>S</i> = { H, T } &rArr; Total number of outcomes = <b>2</b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 2: Probability of getting a Head</b></div>\n    <div class=\"sol-step\">Let <i>E</i> be the event of getting a head. Favourable outcome = { H } (1 outcome).</div>\n    <div class=\"sol-step\"><i>P(E)</i> = <span class=\"frac\"><span class=\"num\">Number of favourable outcomes</span><span class=\"den\">Total number of outcomes</span></span> = <b><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 3: Probability of getting a Tail</b></div>\n    <div class=\"sol-step\">Let <i>F</i> be the event of getting a tail. Favourable outcome = { T } (1 outcome).</div>\n    <div class=\"sol-step\"><i>P(F)</i> = <b><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></b></div>\n    <div class=\"sol-step\"><i>Notice: P(E) + P(F) = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> + <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> = 1 (Sum of all elementary events is 1).</i></div>\n\n    <div class=\"ans-box\">\n      &check; <b>P(Head) = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></b> &nbsp;|&nbsp; <b>P(Tail) = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></b>\n    </div>\n  </div>\n</div>\n\n<!-- Example 2 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Example 2</span> Colored Balls in a Bag (Red, Blue, Yellow)</div>\n  <div class=\"q-text\">\n    A bag contains a red ball, a blue ball and a yellow ball, all the balls being of the same size. Kritika takes out a ball from the bag without looking into it. What is the probability that she takes out the:\n    <br/>(i) yellow ball? &nbsp;&bull;&nbsp; (ii) red ball? &nbsp;&bull;&nbsp; (iii) blue ball?\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Step 1: Total Possible Outcomes</b></div>\n    <div class=\"sol-step\">Total number of balls in the bag = 1 + 1 + 1 = <b>3</b>.</div>\n    <div class=\"sol-step\">Since all balls are of the same size, each outcome is equally likely. Total outcomes = <b>3</b>.</div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 2: Calculate Probabilities for Each Color</b></div>\n    <div class=\"sol-step\"><b>(i) Probability of Yellow Ball:</b></div>\n    <div class=\"sol-step\">Favourable outcomes = 1 (yellow ball) &rArr; <i>P(Y)</i> = <b><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span></b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 6px;\"><b>(ii) Probability of Red Ball:</b></div>\n    <div class=\"sol-step\">Favourable outcomes = 1 (red ball) &rArr; <i>P(R)</i> = <b><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span></b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 6px;\"><b>(iii) Probability of Blue Ball:</b></div>\n    <div class=\"sol-step\">Favourable outcomes = 1 (blue ball) &rArr; <i>P(B)</i> = <b><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span></b></div>\n    <div class=\"sol-step\"><i>Notice: P(Y) + P(R) + P(B) = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span> + <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span> + <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span> = 1.</i></div>\n\n    <div class=\"ans-box\">\n      &check; <b>(i) P(Yellow) = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span></b> &nbsp;|&nbsp; <b>(ii) P(Red) = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span></b> &nbsp;|&nbsp; <b>(iii) P(Blue) = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span></b>\n    </div>\n  </div>\n</div>\n\n<!-- Example 3 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Example 3</span> Single Die Throw (Greater than 4 &amp; Less than or Equal to 4)</div>\n  <div class=\"q-text\">\n    Suppose we throw a die once.\n    <br/>(i) What is the probability of getting a number greater than 4?\n    <br/>(ii) What is the probability of getting a number less than or equal to 4?\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Step 1: Total Possible Outcomes</b></div>\n    <div class=\"sol-step\">Sample Space of throwing a fair die: <i>S</i> = { 1, 2, 3, 4, 5, 6 } &rArr; Total outcomes = <b>6</b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 2: (i) Probability of getting a number greater than 4</b></div>\n    <div class=\"sol-step\">Numbers strictly greater than 4 are <b>5 and 6</b>.</div>\n    <div class=\"sol-step\">Favourable outcomes = 2</div>\n    <div class=\"sol-step\"><i>P(number &gt; 4)</i> = <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">6</span></span> = <b><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span></b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Step 3: (ii) Probability of getting a number less than or equal to 4</b></div>\n    <div class=\"sol-step\">Numbers less than or equal to 4 are <b>1, 2, 3, 4</b>.</div>\n    <div class=\"sol-step\">Favourable outcomes = 4</div>\n    <div class=\"sol-step\"><i>P(number &le; 4)</i> = <span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">6</span></span> = <b><span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span></b></div>\n    <div class=\"sol-step\"><i>Alternatively: These two events are complementary! P(number &le; 4) = 1 &minus; P(number &gt; 4) = 1 &minus; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span> = <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span>.</i></div>\n\n    <div class=\"ans-box\">\n      &check; <b>(i) P(number &gt; 4) = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span></b> &nbsp;|&nbsp; <b>(ii) P(number &le; 4) = <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span></b>\n    </div>\n  </div>\n</div>\n",
+    exercise1: "\n<div class=\"ex-header\">\n  <div class=\"ex-badge\">Exercise 14.1 &bull; 25 Questions</div>\n  <div class=\"ex-title\">Theoretical Probability of Events</div>\n  <div class=\"ex-desc\">Classical probability problems across coins, dice, marbles, fish tanks, defective lots, and 52-card decks.</div>\n</div>\n\n<!-- Question 1 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q1</span> Complete the Statements on Fundamental Probability Concepts</div>\n  <div class=\"q-text\">\n    Complete the following statements:\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Explanations:</div>\n    <div class=\"sol-step\">&bull; <b>(i) Probability of an event E + Probability of the event 'not E' = 1</b></div>\n    <div class=\"sol-step\"><span class=\"reason\">[By the complementary rule: P(E) + P(Ē) = 1]</span></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>(ii) The probability of an event that cannot happen is 0. Such an event is called an impossible event.</b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>(iii) The probability of an event that is certain to happen is 1. Such an event is called a sure or certain event.</b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>(iv) The sum of the probabilities of all the elementary events of an experiment is 1.</b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>(v) The probability of an event is greater than or equal to 0 and less than or equal to 1.</b></div>\n    <div class=\"sol-step\"><span class=\"reason\">[Strictly bounded: 0 &le; P(E) &le; 1]</span></div>\n\n    <div class=\"ans-box\">\n      &check; <b>(i) 1</b> &nbsp;|&nbsp; <b>(ii) 0, impossible event</b> &nbsp;|&nbsp; <b>(iii) 1, sure event</b> &nbsp;|&nbsp; <b>(iv) 1</b> &nbsp;|&nbsp; <b>(v) 0, 1</b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 2 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q2</span> Which Experiments Have Equally Likely Outcomes?</div>\n  <div class=\"q-text\">\n    Which of the following experiments have equally likely outcomes? Explain.\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Analysis:</div>\n    <div class=\"sol-step\">&bull; <b>(i) A driver attempts to start a car. The car starts or does not start.</b></div>\n    <div class=\"sol-step\"><b>Not equally likely:</b> Under ordinary conditions, a working car starts almost every time. Starting depends on the mechanical state, battery, and fuel of the car.</div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>(ii) A player attempts to shoot a basketball. She/he shoots or misses the shot.</b></div>\n    <div class=\"sol-step\"><b>Not equally likely:</b> The outcome depends strongly on the skill, training, and distance of the player, not purely on random 50-50 chance.</div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>(iii) A trial is made to answer a true-false question. The answer is right or wrong.</b></div>\n    <div class=\"sol-step\"><b>Equally likely:</b> There are only two possible answers (True or False), exactly one of which is correct. A pure random guess has an equal chance (<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>) of being right or wrong.</div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>(iv) A baby is born. It is a boy or a girl.</b></div>\n    <div class=\"sol-step\"><b>Equally likely:</b> Biologically, the birth of a boy or a girl has an equal probability of <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>.</div>\n\n    <div class=\"ans-box\">\n      &check; <b>Only (iii) and (iv) have equally likely outcomes.</b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 3 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q3</span> Why is Tossing a Coin Considered a Fair Decision Method?</div>\n  <div class=\"q-text\">\n    Why is tossing a coin considered to be a fair way of deciding which team should get the ball at the beginning of a football game?\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Reason:</div>\n    <div class=\"sol-step\">&bull; When a balanced (unbiased) coin is tossed, there are only two mutually exclusive outcomes: <b>Head (H)</b> and <b>Tail (T)</b>.</div>\n    <div class=\"sol-step\">&bull; Both outcomes are completely <b>equally likely</b>, each having probability:</div>\n    <div class=\"sol-step\"><i>P(Head)</i> = <i>P(Tail)</i> = <b><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></b></div>\n    <div class=\"sol-step\">&bull; The outcome is completely unpredictable in advance and free from any human bias. Hence, it is universally considered a fair method.</div>\n\n    <div class=\"ans-box\">\n      &check; <b>Because outcomes (Head and Tail) are equally likely (P = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>) and completely unbiased.</b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 4 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q4</span> Which Cannot be the Probability of an Event?</div>\n  <div class=\"q-text\">\n    Which of the following cannot be the probability of an event?\n    <br/>(A) <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span> &nbsp;&bull;&nbsp; (B) &minus;1.5 &nbsp;&bull;&nbsp; (C) 15% &nbsp;&bull;&nbsp; (D) 0.7\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; The probability of any event <i>E</i> must satisfy <b>0 &le; <i>P(E)</i> &le; 1</b>.</div>\n    <div class=\"sol-step\">(A) <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span> &approx; 0.67 &isin; [0, 1] &check;</div>\n    <div class=\"sol-step\">(B) <b>&minus;1.5 &lt; 0</b> (Probability can NEVER be negative!) &cross;</div>\n    <div class=\"sol-step\">(C) 15% = <span class=\"frac\"><span class=\"num\">15</span><span class=\"den\">100</span></span> = 0.15 &isin; [0, 1] &check;</div>\n    <div class=\"sol-step\">(D) 0.7 &isin; [0, 1] &check;</div>\n\n    <div class=\"ans-box\">\n      &check; <b>Correct Option: (B) &minus;1.5 cannot be the probability of an event.</b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 5 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q5</span> Calculating Probability of 'not E' when P(E) = 0.05</div>\n  <div class=\"q-text\">\n    If <i>P(E)</i> = 0.05, what is the probability of 'not <i>E</i>'?\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; We know that for any complementary event:</div>\n    <div class=\"sol-step\"><i>P(not E)</i> = 1 &minus; <i>P(E)</i></div>\n    <div class=\"sol-step\">&rArr; <i>P(not E)</i> = 1 &minus; 0.05 = <b>0.95</b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>P(not E) = 0.95</b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 6 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q6</span> Bag Containing Only Lemon Flavoured Candies</div>\n  <div class=\"q-text\">\n    A bag contains lemon flavoured candies only. Malini takes out one candy without looking into the bag. What is the probability that she takes out:\n    <br/>(i) an orange flavoured candy?\n    <br/>(ii) a lemon flavoured candy?\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>(i) Probability of an orange flavoured candy:</b></div>\n    <div class=\"sol-step\">Since the bag contains <i>only</i> lemon flavoured candies, there are zero orange candies.</div>\n    <div class=\"sol-step\">This is an <b>impossible event</b> &rArr; <b><i>P(Orange candy)</i> = 0</b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>(ii) Probability of a lemon flavoured candy:</b></div>\n    <div class=\"sol-step\">Every candy in the bag is lemon flavoured. Whichever candy is drawn will always be lemon flavoured.</div>\n    <div class=\"sol-step\">This is a <b>sure (certain) event</b> &rArr; <b><i>P(Lemon candy)</i> = 1</b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>(i) P(Orange candy) = 0</b> &nbsp;|&nbsp; <b>(ii) P(Lemon candy) = 1</b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 7 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q7</span> Probability of 2 Students Having the Same Birthday</div>\n  <div class=\"q-text\">\n    It is given that in a group of 3 students, the probability of 2 students not having the same birthday is <b>0.992</b>. What is the probability that the 2 students have the same birthday?\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; Let <i>E</i> be the event that 2 students have the same birthday.</div>\n    <div class=\"sol-step\">Then 'not <i>E</i>' is the event that 2 students do not have the same birthday.</div>\n    <div class=\"sol-step\">Given: <i>P(not E)</i> = 0.992</div>\n    <div class=\"sol-step\">By complementary events relation:</div>\n    <div class=\"sol-step\"><i>P(E)</i> = 1 &minus; <i>P(not E)</i> = 1 &minus; 0.992 = <b>0.008</b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>Probability that the 2 students have the same birthday = 0.008</b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 8 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q8</span> Bag Containing 3 Red Balls and 5 Black Balls</div>\n  <div class=\"q-text\">\n    A bag contains 3 red balls and 5 black balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is:\n    <br/>(i) red? &nbsp;&bull;&nbsp; (ii) not red?\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; Total number of balls = 3 (Red) + 5 (Black) = <b>8</b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>(i) Probability that the ball drawn is red:</b></div>\n    <div class=\"sol-step\">Favourable outcomes (Red balls) = 3</div>\n    <div class=\"sol-step\"><i>P(Red)</i> = <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">8</span></span></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>(ii) Probability that the ball drawn is not red:</b></div>\n    <div class=\"sol-step\"><i>P(not Red)</i> = 1 &minus; <i>P(Red)</i> = 1 &minus; <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">8</span></span> = <b><span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">8</span></span></b></div>\n    <div class=\"sol-step\"><span class=\"reason\">[Alternatively: Not red means black ball = 5/8]</span></div>\n\n    <div class=\"ans-box\">\n      &check; <b>(i) P(Red) = <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">8</span></span></b> &nbsp;|&nbsp; <b>(ii) P(not Red) = <span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">8</span></span></b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 9 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q9</span> Box with 5 Red, 8 White and 4 Green Marbles</div>\n  <div class=\"q-text\">\n    A box contains 5 red marbles, 8 white marbles and 4 green marbles. One marble is taken out of the box at random. What is the probability that the marble taken out will be:\n    <br/>(i) red? &nbsp;&bull;&nbsp; (ii) white? &nbsp;&bull;&nbsp; (iii) not green?\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; Total marbles = 5 (Red) + 8 (White) + 4 (Green) = <b>17</b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>(i) Probability of Red marble:</b></div>\n    <div class=\"sol-step\">Favourable outcomes = 5 &rArr; <i>P(Red)</i> = <b><span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">17</span></span></b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 6px;\">&bull; <b>(ii) Probability of White marble:</b></div>\n    <div class=\"sol-step\">Favourable outcomes = 8 &rArr; <i>P(White)</i> = <b><span class=\"frac\"><span class=\"num\">8</span><span class=\"den\">17</span></span></b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 6px;\">&bull; <b>(iii) Probability of not Green marble:</b></div>\n    <div class=\"sol-step\">Number of marbles that are not green = Red + White = 5 + 8 = 13</div>\n    <div class=\"sol-step\">&rArr; <i>P(not Green)</i> = <b><span class=\"frac\"><span class=\"num\">13</span><span class=\"den\">17</span></span></b> &nbsp;<span class=\"reason\">[or 1 &minus; 4/17 = 13/17]</span></div>\n\n    <div class=\"ans-box\">\n      &check; <b>(i) P(Red) = <span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">17</span></span></b> &nbsp;|&nbsp; <b>(ii) P(White) = <span class=\"frac\"><span class=\"num\">8</span><span class=\"den\">17</span></span></b> &nbsp;|&nbsp; <b>(iii) P(not Green) = <span class=\"frac\"><span class=\"num\">13</span><span class=\"den\">17</span></span></b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 10 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q10</span> Piggy Bank Coins (50p, &inr; 1, &inr; 2, &inr; 5)</div>\n  <div class=\"q-text\">\n    A piggy bank contains hundred 50p coins, fifty &inr; 1 coins, twenty &inr; 2 coins and ten &inr; 5 coins. If it is equally likely that one of the coins will fall out when the bank is turned upside down, what is the probability that the coin:\n    <br/>(i) will be a 50p coin?\n    <br/>(ii) will not be a &inr; 5 coin?\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Total Coins:</b> 100 (50p) + 50 (₹1) + 20 (₹2) + 10 (₹5) = <b>180 coins</b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>(i) Probability that the coin will be a 50p coin:</b></div>\n    <div class=\"sol-step\">Favourable outcomes = 100</div>\n    <div class=\"sol-step\"><i>P(50p coin)</i> = <span class=\"frac\"><span class=\"num\">100</span><span class=\"den\">180</span></span> = <b><span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">9</span></span></b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>(ii) Probability that the coin will not be a &inr; 5 coin:</b></div>\n    <div class=\"sol-step\">Number of ₹5 coins = 10 &rArr; Coins that are not ₹5 = 180 &minus; 10 = 170</div>\n    <div class=\"sol-step\"><i>P(not &inr; 5 coin)</i> = <span class=\"frac\"><span class=\"num\">170</span><span class=\"den\">180</span></span> = <b><span class=\"frac\"><span class=\"num\">17</span><span class=\"den\">18</span></span></b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>(i) P(50p coin) = <span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">9</span></span></b> &nbsp;|&nbsp; <b>(ii) P(not &inr; 5 coin) = <span class=\"frac\"><span class=\"num\">17</span><span class=\"den\">18</span></span></b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 11 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q11</span> Gopi's Aquarium (Male and Female Fishes)</div>\n  <div class=\"q-text\">\n    Gopi buys a fish from a shop for his aquarium. The shopkeeper takes out one fish at random from a tank containing 5 male fish and 8 female fish. What is the probability that the fish taken out is a male fish?\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; Total number of fish = 5 (Male) + 8 (Female) = <b>13 fish</b></div>\n    <div class=\"sol-step\">&bull; Favourable outcomes (Male fish) = <b>5</b></div>\n    <div class=\"sol-step\"><i>P(Male fish)</i> = <span class=\"frac\"><span class=\"num\">Number of male fish</span><span class=\"den\">Total number of fish</span></span> = <b><span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">13</span></span></b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>Probability that the fish is male = <span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">13</span></span></b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 12 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q12</span> Spinning Arrow Game (Numbers 1 to 8)</div>\n  <div class=\"q-text\">\n    A game of chance consists of spinning an arrow which comes to rest pointing at one of the numbers 1, 2, 3, 4, 5, 6, 7, 8 and these are equally likely outcomes. What is the probability that it will point at:\n    <br/>(i) 8? &nbsp;&bull;&nbsp; (ii) an odd number? &nbsp;&bull;&nbsp; (iii) a number greater than 2? &nbsp;&bull;&nbsp; (iv) a number less than 9?\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; Total possible outcomes = { 1, 2, 3, 4, 5, 6, 7, 8 } &rArr; Total = <b>8</b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 8px;\">&bull; <b>(i) Probability that it points at 8:</b> Favourable outcome = {8} (1 outcome) &rArr; <b><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">8</span></span></b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 8px;\">&bull; <b>(ii) Probability of an odd number:</b> Odd numbers = { 1, 3, 5, 7 } (4 outcomes) &rArr; <span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">8</span></span> = <b><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 8px;\">&bull; <b>(iii) Probability of a number greater than 2:</b> Numbers = { 3, 4, 5, 6, 7, 8 } (6 outcomes) &rArr; <span class=\"frac\"><span class=\"num\">6</span><span class=\"den\">8</span></span> = <b><span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span></b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 8px;\">&bull; <b>(iv) Probability of a number less than 9:</b> Numbers = { 1, 2, 3, 4, 5, 6, 7, 8 } (all 8 outcomes &rArr; Sure event) &rArr; <span class=\"frac\"><span class=\"num\">8</span><span class=\"den\">8</span></span> = <b>1</b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>(i) <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">8</span></span></b> &nbsp;|&nbsp; <b>(ii) <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></b> &nbsp;|&nbsp; <b>(iii) <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span></b> &nbsp;|&nbsp; <b>(iv) 1</b>\n    </div>\n  </div>\n</div>\n\n\n<!-- Question 13 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q13</span> Single Die Throw (Prime, Between 2 and 6, Odd Number)</div>\n  <div class=\"q-text\">\n    A die is thrown once. Find the probability of getting:\n    <br/>(i) a prime number\n    <br/>(ii) a number lying between 2 and 6\n    <br/>(iii) an odd number.\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; Sample Space <i>S</i> = { 1, 2, 3, 4, 5, 6 } &rArr; Total outcomes = <b>6</b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 8px;\">&bull; <b>(i) A prime number:</b> Prime numbers are { 2, 3, 5 } (3 outcomes). Note that 1 is neither prime nor composite.</div>\n    <div class=\"sol-step\"><i>P(Prime)</i> = <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">6</span></span> = <b><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 8px;\">&bull; <b>(ii) A number lying between 2 and 6:</b> Numbers strictly between 2 and 6 are { 3, 4, 5 } (3 outcomes).</div>\n    <div class=\"sol-step\"><i>P(Between 2 and 6)</i> = <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">6</span></span> = <b><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 8px;\">&bull; <b>(iii) An odd number:</b> Odd numbers are { 1, 3, 5 } (3 outcomes).</div>\n    <div class=\"sol-step\"><i>P(Odd)</i> = <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">6</span></span> = <b><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>(i) P(Prime) = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></b> &nbsp;|&nbsp; <b>(ii) P(Between 2 and 6) = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></b> &nbsp;|&nbsp; <b>(iii) P(Odd) = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 14 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q14</span> Drawing from a Deck of 52 Cards (6 Sub-Parts)</div>\n  <div class=\"q-text\">\n    One card is drawn from a well-shuffled deck of 52 cards. Find the probability of getting:\n    <br/>(i) a king of red colour &nbsp;&bull;&nbsp; (ii) a face card &nbsp;&bull;&nbsp; (iii) a red face card\n    <br/>(iv) the jack of hearts &nbsp;&bull;&nbsp; (v) a spade &nbsp;&bull;&nbsp; (vi) the queen of diamonds.\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; Total cards in a standard deck = <b>52</b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 8px;\">&bull; <b>(i) A king of red colour:</b> There are 2 red kings (King of Hearts &amp; King of Diamonds).</div>\n    <div class=\"sol-step\"><i>P(Red King)</i> = <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">52</span></span> = <b><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">26</span></span></b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 8px;\">&bull; <b>(ii) A face card:</b> There are 12 face cards (4 Jacks, 4 Queens, 4 Kings).</div>\n    <div class=\"sol-step\"><i>P(Face card)</i> = <span class=\"frac\"><span class=\"num\">12</span><span class=\"den\">52</span></span> = <b><span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">13</span></span></b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 8px;\">&bull; <b>(iii) A red face card:</b> There are 6 red face cards (3 Hearts + 3 Diamonds).</div>\n    <div class=\"sol-step\"><i>P(Red Face card)</i> = <span class=\"frac\"><span class=\"num\">6</span><span class=\"den\">52</span></span> = <b><span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">26</span></span></b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 8px;\">&bull; <b>(iv) The jack of hearts:</b> There is only 1 Jack of Hearts.</div>\n    <div class=\"sol-step\"><i>P(Jack of hearts)</i> = <b><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">52</span></span></b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 8px;\">&bull; <b>(v) A spade:</b> There are 13 spades in a deck.</div>\n    <div class=\"sol-step\"><i>P(Spade)</i> = <span class=\"frac\"><span class=\"num\">13</span><span class=\"den\">52</span></span> = <b><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span></b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 8px;\">&bull; <b>(vi) The queen of diamonds:</b> There is only 1 Queen of Diamonds.</div>\n    <div class=\"sol-step\"><i>P(Queen of diamonds)</i> = <b><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">52</span></span></b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>(i) <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">26</span></span></b> &nbsp;|&nbsp; <b>(ii) <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">13</span></span></b> &nbsp;|&nbsp; <b>(iii) <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">26</span></span></b> &nbsp;|&nbsp; <b>(iv) <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">52</span></span></b> &nbsp;|&nbsp; <b>(v) <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span></b> &nbsp;|&nbsp; <b>(vi) <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">52</span></span></b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 15 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q15</span> Five Cards: Ten, Jack, Queen, King, and Ace of Diamonds</div>\n  <div class=\"q-text\">\n    Five cards—the ten, jack, queen, king and ace of diamonds, are well-shuffled with their face downwards. One card is then picked up at random.\n    <br/>(i) What is the probability that the card is the queen?\n    <br/>(ii) If the queen is drawn and put aside, what is the probability that the second card picked up is:\n    <br/>&nbsp;&nbsp;&nbsp;&nbsp;(a) an ace? &nbsp;&bull;&nbsp; (b) a queen?\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>(i) Total cards initially = 5</b> { 10, J, Q, K, A }</div>\n    <div class=\"sol-step\">There is 1 Queen &rArr; <i>P(Queen)</i> = <b><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">5</span></span></b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>(ii) When the Queen is drawn and put aside:</b></div>\n    <div class=\"sol-step\">Remaining cards = 4 { 10, J, K, A } &rArr; Total outcomes = <b>4</b></div>\n    <div class=\"sol-step\"><b>(a) Probability of an Ace:</b> There is 1 Ace among the 4 remaining cards.</div>\n    <div class=\"sol-step\"><i>P(Ace)</i> = <b><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span></b></div>\n    <div class=\"sol-step\" style=\"margin-top: 6px;\"><b>(b) Probability of a Queen:</b> Since the queen was already set aside, there are 0 queens left (impossible event).</div>\n    <div class=\"sol-step\"><i>P(Queen)</i> = <span class=\"frac\"><span class=\"num\">0</span><span class=\"den\">4</span></span> = <b>0</b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>(i) <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">5</span></span></b> &nbsp;|&nbsp; <b>(ii)(a) <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span></b> &nbsp;|&nbsp; <b>(ii)(b) 0</b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 16 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q16</span> Defective Pens Accidentally Mixed with Good Ones</div>\n  <div class=\"q-text\">\n    12 defective pens are accidentally mixed with 132 good ones. It is not possible to just look at a pen and tell whether or not it is defective. One pen is taken out at random from this lot. Determine the probability that the pen taken out is a good one.\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; Number of good pens = 132</div>\n    <div class=\"sol-step\">&bull; Number of defective pens = 12</div>\n    <div class=\"sol-step\">&bull; Total pens = 132 + 12 = <b>144</b></div>\n    <div class=\"sol-step\"><i>P(Good pen)</i> = <span class=\"frac\"><span class=\"num\">Number of good pens</span><span class=\"den\">Total number of pens</span></span> = <span class=\"frac\"><span class=\"num\">132</span><span class=\"den\">144</span></span> = <b><span class=\"frac\"><span class=\"num\">11</span><span class=\"den\">12</span></span></b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>Probability that the pen is good = <span class=\"frac\"><span class=\"num\">11</span><span class=\"den\">12</span></span></b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 17 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q17</span> Lot of 20 Bulbs with 4 Defective Ones (Without Replacement)</div>\n  <div class=\"q-text\">\n    (i) A lot of 20 bulbs contain 4 defective ones. One bulb is drawn at random from the lot. What is the probability that this bulb is defective?\n    <br/>(ii) Suppose the bulb drawn in (i) is not defective and is not replaced. Now one bulb is drawn at random from the rest. What is the probability that this bulb is not defective?\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>(i) Initial lot:</b> Total bulbs = 20, Defective = 4</div>\n    <div class=\"sol-step\"><i>P(Defective)</i> = <span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">20</span></span> = <b><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">5</span></span></b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>(ii) Drawing a second bulb without replacement:</b></div>\n    <div class=\"sol-step\">Given the first bulb drawn was good (not defective) and was NOT replaced:</div>\n    <div class=\"sol-step\">Total remaining bulbs = 20 &minus; 1 = <b>19</b></div>\n    <div class=\"sol-step\">Number of good bulbs remaining = (20 &minus; 4) &minus; 1 = 16 &minus; 1 = <b>15</b></div>\n    <div class=\"sol-step\"><i>P(Not defective second time)</i> = <b><span class=\"frac\"><span class=\"num\">15</span><span class=\"den\">19</span></span></b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>(i) P(Defective) = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">5</span></span></b> &nbsp;|&nbsp; <b>(ii) P(Not defective) = <span class=\"frac\"><span class=\"num\">15</span><span class=\"den\">19</span></span></b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 18 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q18</span> Box Containing 90 Discs Numbered 1 to 90</div>\n  <div class=\"q-text\">\n    A box contains 90 discs which are numbered from 1 to 90. If one disc is drawn at random from the box, find the probability that it bears:\n    <br/>(i) a two-digit number\n    <br/>(ii) a perfect square number\n    <br/>(iii) a number divisible by 5.\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; Total number of discs = <b>90</b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 8px;\">&bull; <b>(i) Two-digit number:</b> Two-digit numbers are from 10 to 90.</div>\n    <div class=\"sol-step\">Count = 90 &minus; 9 = 81 numbers</div>\n    <div class=\"sol-step\"><i>P(Two-digit number)</i> = <span class=\"frac\"><span class=\"num\">81</span><span class=\"den\">90</span></span> = <b><span class=\"frac\"><span class=\"num\">9</span><span class=\"den\">10</span></span></b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 8px;\">&bull; <b>(ii) Perfect square number:</b> Perfect squares from 1 to 90 are:</div>\n    <div class=\"sol-step\">{ 1, 4, 9, 16, 25, 36, 49, 64, 81 } = 9 numbers</div>\n    <div class=\"sol-step\"><i>P(Perfect square)</i> = <span class=\"frac\"><span class=\"num\">9</span><span class=\"den\">90</span></span> = <b><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">10</span></span></b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 8px;\">&bull; <b>(iii) A number divisible by 5:</b> Numbers are 5, 10, 15, ..., 90.</div>\n    <div class=\"sol-step\">Count = <span class=\"frac\"><span class=\"num\">90</span><span class=\"den\">5</span></span> = 18 numbers</div>\n    <div class=\"sol-step\"><i>P(Divisible by 5)</i> = <span class=\"frac\"><span class=\"num\">18</span><span class=\"den\">90</span></span> = <b><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">5</span></span></b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>(i) <span class=\"frac\"><span class=\"num\">9</span><span class=\"den\">10</span></span></b> &nbsp;|&nbsp; <b>(ii) <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">10</span></span></b> &nbsp;|&nbsp; <b>(iii) <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">5</span></span></b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 19 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q19</span> Child's Die with Lettered Faces (A, B, C, D, E, A)</div>\n  <div class=\"q-text\">\n    A child has a die whose six faces show the letters as given below: [A, B, C, D, E, A]. The die is thrown once. What is the probability of getting:\n    <br/>(i) A? &nbsp;&bull;&nbsp; (ii) D?\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; Total faces on the die = <b>6</b></div>\n    <div class=\"sol-step\">&bull; <b>(i) Getting letter A:</b> Face 'A' appears on 2 faces.</div>\n    <div class=\"sol-step\"><i>P(A)</i> = <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">6</span></span> = <b><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span></b></div>\n    <div class=\"sol-step\" style=\"margin-top: 8px;\">&bull; <b>(ii) Getting letter D:</b> Face 'D' appears on 1 face.</div>\n    <div class=\"sol-step\"><i>P(D)</i> = <b><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">6</span></span></b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>(i) P(A) = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span></b> &nbsp;|&nbsp; <b>(ii) P(D) = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">6</span></span></b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 20 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q20</span> Geometric Probability: Die Dropped on Rectangular Region</div>\n  <div class=\"q-text\">\n    Suppose you drop a die at random on the rectangular region of dimensions 3 m by 2 m. What is the probability that it will land inside the circle with diameter 1 m?\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Total Area of the Rectangular Region:</b></div>\n    <div class=\"sol-step\">Length (<i>l</i>) = 3 m, Breadth (<i>b</i>) = 2 m</div>\n    <div class=\"sol-step\">Total Area = <i>l</i> &times; <i>b</i> = 3 &times; 2 = <b>6 m<sup>2</sup></b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Favourable Area of the Circular Region:</b></div>\n    <div class=\"sol-step\">Diameter = 1 m &rArr; Radius (<i>r</i>) = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> m</div>\n    <div class=\"sol-step\">Area of Circle = &pi;<i>r</i><sup>2</sup> = &pi; &times; (<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>)<sup>2</sup> = <b><span class=\"frac\"><span class=\"num\">&pi;</span><span class=\"den\">4</span></span> m<sup>2</sup></b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Geometric Probability:</b></div>\n    <div class=\"sol-step\"><i>P(Landing inside circle)</i> = <span class=\"frac\"><span class=\"num\">Area of Circle</span><span class=\"den\">Area of Rectangle</span></span> = <span class=\"frac\"><span class=\"num\">&pi; / 4</span><span class=\"den\">6</span></span> = <b><span class=\"frac\"><span class=\"num\">&pi;</span><span class=\"den\">24</span></span></b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>Probability of landing inside circle = <span class=\"frac\"><span class=\"num\">&pi;</span><span class=\"den\">24</span></span></b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 21 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q21</span> Buying a Pen from a Lot of 144 Ball Pens</div>\n  <div class=\"q-text\">\n    A lot consists of 144 ball pens of which 20 are defective and the others are good. Nuri will buy a pen if it is good, but will not buy if it is defective. The shopkeeper draws one pen at random and gives it to her. What is the probability that:\n    <br/>(i) She will buy it?\n    <br/>(ii) She will not buy it?\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; Total ball pens = <b>144</b></div>\n    <div class=\"sol-step\">&bull; Defective pens = 20 &rArr; Good pens = 144 &minus; 20 = <b>124</b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 8px;\">&bull; <b>(i) Probability she will buy it:</b> Nuri buys only if the pen is good.</div>\n    <div class=\"sol-step\"><i>P(Buy)</i> = <i>P(Good pen)</i> = <span class=\"frac\"><span class=\"num\">124</span><span class=\"den\">144</span></span> = <b><span class=\"frac\"><span class=\"num\">31</span><span class=\"den\">36</span></span></b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 8px;\">&bull; <b>(ii) Probability she will not buy it:</b> She will not buy if it is defective.</div>\n    <div class=\"sol-step\"><i>P(Not buy)</i> = <i>P(Defective pen)</i> = <span class=\"frac\"><span class=\"num\">20</span><span class=\"den\">144</span></span> = <b><span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">36</span></span></b></div>\n    <div class=\"sol-step\"><span class=\"reason\">[Or complementary: 1 &minus; 31/36 = 5/36]</span></div>\n\n    <div class=\"ans-box\">\n      &check; <b>(i) P(She will buy) = <span class=\"frac\"><span class=\"num\">31</span><span class=\"den\">36</span></span></b> &nbsp;|&nbsp; <b>(ii) P(She will not buy) = <span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">36</span></span></b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 22 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q22</span> Two Dice Thrown (Sum Table &amp; Equal Likelihood Fallacy)</div>\n  <div class=\"q-text\">\n    Two dice, one blue and one grey, are thrown at the same time.\n    <br/>(i) Complete the following table for the sum on two dice:\n    <br/>(ii) A student argues that 'there are 11 possible outcomes 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 and 12. Therefore, each of them has a probability <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">11</span></span>'. Do you agree with this argument? Justify your answer.\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>(i) Completed Sum Table (Total Outcomes = 6 &times; 6 = 36):</b></div>\n    <div class=\"table-card\">\n      <table>\n        <thead>\n          <tr>\n            <th>Event: Sum on 2 Dice</th>\n            <th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr>\n            <td><b>Probability</b></td>\n            <td><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">36</span></span></td>\n            <td><span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">36</span></span></td>\n            <td><span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">36</span></span></td>\n            <td><span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">36</span></span></td>\n            <td><span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">36</span></span></td>\n            <td><span class=\"frac\"><span class=\"num\">6</span><span class=\"den\">36</span></span></td>\n            <td><span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">36</span></span></td>\n            <td><span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">36</span></span></td>\n            <td><span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">36</span></span></td>\n            <td><span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">36</span></span></td>\n            <td><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">36</span></span></td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>(ii) Evaluation of the Student's Argument:</b></div>\n    <div class=\"sol-step\"><b>No, we do not agree with the argument.</b></div>\n    <div class=\"sol-step\">The 11 possible sums are <b>NOT equally likely</b>. For example, sum 2 occurs only in 1 way (1,1), having probability <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">36</span></span>, whereas sum 7 occurs in 6 different ways, having probability <span class=\"frac\"><span class=\"num\">6</span><span class=\"den\">36</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">6</span></span>. Since the outcomes are not equally likely, each cannot have probability <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">11</span></span>.</div>\n\n    <div class=\"ans-box\">\n      &check; <b>(i) Completed table as shown above</b><br/>\n      &check; <b>(ii) No, the argument is incorrect because the 11 sums are not equally likely.</b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 23 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q23</span> Hanif's Coin Tossing Game (3 Tosses)</div>\n  <div class=\"q-text\">\n    A game consists of tossing a one rupee coin 3 times and noting its outcome each time. Hanif wins if all the tosses give the same result, i.e., three heads or three tails, and loses otherwise. Calculate the probability that Hanif will lose the game.\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; <b>Total Outcomes for 3 Coin Tosses (2<sup>3</sup> = 8):</b></div>\n    <div class=\"sol-step\"><i>S</i> = { HHH, HHT, HTH, THH, HTT, THT, TTH, TTT } &rArr; Total = <b>8</b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 8px;\">&bull; <b>Winning Outcomes:</b> All three same result = { HHH, TTT } (2 outcomes).</div>\n    <div class=\"sol-step\"><i>P(Hanif wins)</i> = <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">8</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 8px;\">&bull; <b>Losing Outcomes:</b> All other 6 outcomes { HHT, HTH, THH, HTT, THT, TTH }</div>\n    <div class=\"sol-step\"><i>P(Hanif loses)</i> = 1 &minus; <i>P(Hanif wins)</i> = 1 &minus; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span> = <b><span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span></b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>Probability that Hanif will lose the game = <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span></b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 24 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q24</span> Die Thrown Twice (Outcome 5 Analysis)</div>\n  <div class=\"q-text\">\n    A die is thrown twice. What is the probability that:\n    <br/>(i) 5 will not come up either time?\n    <br/>(ii) 5 will come up at least once?\n    <br/><i>[Hint: Throwing a die twice and throwing two dice simultaneously are treated as the same experiment].</i>\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Solution:</div>\n    <div class=\"sol-step\">&bull; Total possible outcomes = 6 &times; 6 = <b>36</b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>Outcomes where 5 comes up at least once:</b></div>\n    <div class=\"sol-step\">Row with 5 on first die: (5,1), (5,2), (5,3), (5,4), (5,5), (5,6) = 6 outcomes</div>\n    <div class=\"sol-step\">Column with 5 on second die: (1,5), (2,5), (3,5), (4,5), (6,5) = 5 outcomes (excluding (5,5) already counted)</div>\n    <div class=\"sol-step\">Total outcomes with 5 at least once = 6 + 5 = <b>11 outcomes</b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>(i) 5 will not come up either time:</b></div>\n    <div class=\"sol-step\">Favourable outcomes = 36 &minus; 11 = <b>25 outcomes</b></div>\n    <div class=\"sol-step\"><i>P(5 will not come up either time)</i> = <b><span class=\"frac\"><span class=\"num\">25</span><span class=\"den\">36</span></span></b></div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>(ii) 5 will come up at least once:</b></div>\n    <div class=\"sol-step\"><i>P(5 at least once)</i> = 1 &minus; <span class=\"frac\"><span class=\"num\">25</span><span class=\"den\">36</span></span> = <b><span class=\"frac\"><span class=\"num\">11</span><span class=\"den\">36</span></span></b></div>\n\n    <div class=\"ans-box\">\n      &check; <b>(i) P(5 not either time) = <span class=\"frac\"><span class=\"num\">25</span><span class=\"den\">36</span></span></b> &nbsp;|&nbsp; <b>(ii) P(5 at least once) = <span class=\"frac\"><span class=\"num\">11</span><span class=\"den\">36</span></span></b>\n    </div>\n  </div>\n</div>\n\n<!-- Question 25 -->\n<div class=\"q-card\">\n  <div class=\"q-title\"><span class=\"q-num\">Q25</span> Evaluating Correctness of Probability Arguments</div>\n  <div class=\"q-text\">\n    Which of the following arguments are correct and which are not correct? Give reasons for your answer.\n    <br/>(i) If two coins are tossed simultaneously there are three possible outcomes—two heads, two tails or one of each. Therefore, for each of these outcomes, the probability is <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span>.\n    <br/>(ii) If a die is thrown, there are two possible outcomes—an odd number or an even number. Therefore, the probability of getting an odd number is <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>.\n  </div>\n  <div class=\"sol-box\">\n    <div class=\"sol-hdr\">Step-by-step Justifications:</div>\n    <div class=\"sol-step\">&bull; <b>(i) The argument is INCORRECT:</b></div>\n    <div class=\"sol-step\">When two coins are tossed, the sample space is { HH, HT, TH, TT } (4 outcomes).</div>\n    <div class=\"sol-step\">- Two heads = { HH } &rArr; P = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span></div>\n    <div class=\"sol-step\">- Two tails = { TT } &rArr; P = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span></div>\n    <div class=\"sol-step\">- One of each = { HT, TH } &rArr; P = <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">4</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></div>\n    <div class=\"sol-step\">Since these three events are not equally likely, the probability of each is NOT <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span>.</div>\n\n    <div class=\"sol-step\" style=\"margin-top: 10px;\">&bull; <b>(ii) The argument is CORRECT:</b></div>\n    <div class=\"sol-step\">The outcomes on a die are { 1, 2, 3, 4, 5, 6 }.</div>\n    <div class=\"sol-step\">- Odd numbers = { 1, 3, 5 } (3 outcomes) &rArr; P(Odd) = <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">6</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></div>\n    <div class=\"sol-step\">- Even numbers = { 2, 4, 6 } (3 outcomes) &rArr; P(Even) = <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">6</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></div>\n    <div class=\"sol-step\">Both outcomes are equally likely, so the probability of getting an odd number is indeed <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>.</div>\n\n    <div class=\"ans-box\">\n      &check; <b>(i) Incorrect (outcomes are not equally likely: P(one of each) = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>)</b><br/>\n      &check; <b>(ii) Correct (both odd and even are equally likely with P = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>)</b>\n    </div>\n  </div>\n</div>\n"
+  }
 };

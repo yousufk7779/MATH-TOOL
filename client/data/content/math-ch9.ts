@@ -1,1092 +1,376 @@
-import { ChapterContent } from "../chapterContent";
+import { ChapterContent } from "../types";
 
 export const mathCh9: ChapterContent = {
-    id: "ch9",
-    number: 9,
-    title: "Some Applications of Trigonometry",
-    introduction: "In this chapter, we explore how trigonometry is used in practical situations, such as finding the heights of buildings or the distances between objects, using angles of elevation and depression.",
-    definitions: [],
-    keyPoints: [
-        "Angle of Elevation: The angle formed by the line of sight with the horizontal line when the object is above the horizontal line.",
-        "Angle of Depression: The angle formed by the line of sight with the horizontal line when the object is below the horizontal line.",
-        "Trigonometric ratios (sin, cos, tan) are used to find lengths and angles in right-angled triangles."
-    ],
-    formulas: [
-        { name: "tan θ", formula: "Opposite / Adjacent" },
-        { name: "sin θ", formula: "Opposite / Hypotenuse" },
-        { name: "cos θ", formula: "Adjacent / Hypotenuse" }
-    ],
-    crux: [
-        "Draw a clear diagram based on the problem description.",
-        "Identify the knowns (height, distance, or angle) and the unknown.",
-        "Select the appropriate trigonometric ratio (usually 'tan' for height/distance problems)."
-    ],
-    exercises: [
-        { id: "exercise1", name: "Exercise 9.1", questions: [] },
-        { id: "examples", name: "Examples", questions: [] }
-    ],
-    examples: [],
-    theorems: [],
-    mcqs: [
-		{
-				"id": "mcq1",
-				"question": "<span style=\"font-weight: normal;\">The angle of elevation of the top of a tower from a point on the ground, which is 30 m away from the foot of the tower, is 30°. The height of the tower is:</span>",
-				"options": [
-						"10√3 m",
-						"10 m",
-						"30√3 m",
-						"10√2 m"
-				],
-				"correctAnswer": "10√3 m"
-		},
-		{
-				"id": "mcq2",
-				"question": "<span style=\"font-weight: normal;\">A kite is flying at a height of 60 m above the ground. The string attached to the kite is temporarily tied to a point on the ground. The inclination of the string with the ground is 60°. The length of the string is:</span>",
-				"options": [
-						"40√3 m",
-						"30√3 m",
-						"60√3 m",
-						"120√3 m"
-				],
-				"correctAnswer": "40√3 m"
-		},
-		{
-				"id": "mcq3",
-				"question": "<span style=\"font-weight: normal;\">A tower is 100√3 m high. Find the angle of elevation if its top from a point 100 m away from its foot.</span>",
-				"options": [
-						"30°",
-						"45°",
-						"60°",
-						"90°"
-				],
-				"correctAnswer": "60°"
-		},
-		{
-				"id": "mcq4",
-				"question": "<span style=\"font-weight: normal;\">The shadow of a tower is equal to its height at 10:45 AM. The sun's altitude is:</span>",
-				"options": [
-						"30°",
-						"45°",
-						"60°",
-						"90°"
-				],
-				"correctAnswer": "45°"
-		},
-		{
-				"id": "mcq5",
-				"question": "<span style=\"font-weight: normal;\">If the angle of depression of an object from a 75 m high tower is 30°, the distance of the object from the tower is:</span>",
-				"options": [
-						"75√3 m",
-						"75 m",
-						"25√3 m",
-						"50 m"
-				],
-				"correctAnswer": "75√3 m"
-		},
-		{
-				"id": "mcq6",
-				"question": "<span style=\"font-weight: normal;\">A pole 6 m high casts a shadow 2√3 m long on the ground, then the sun's elevation is:</span>",
-				"options": [
-						"60°",
-						"30°",
-						"45°",
-						"90°"
-				],
-				"correctAnswer": "60°"
-		},
-		{
-				"id": "mcq7",
-				"question": "<span style=\"font-weight: normal;\">From a point on the ground, the angles of elevation of the bottom and the top of a transmission tower fixed at the top of a 20 m high building are 45° and 60° respectively. The height of the tower is:</span>",
-				"options": [
-						"20(√3 - 1) m",
-						"20√3 m",
-						"20 m",
-						"10√3 m"
-				],
-				"correctAnswer": "20(√3 - 1) m"
-		},
-		{
-				"id": "mcq8",
-				"question": "<span style=\"font-weight: normal;\">The angle of elevation of the top of a tower from two points distant s and t from its foot are complementary. Then the height of the tower is:</span>",
-				"options": [
-						"st",
-						"s²t²",
-						"√st",
-						"s/t"
-				],
-				"correctAnswer": "√st"
-		},
-		{
-				"id": "mcq9",
-				"question": "<span style=\"font-weight: normal;\">If the length of the shadow of a tower is increasing, then the angle of elevation of the sun is:</span>",
-				"options": [
-						"Increasing",
-						"Decreasing",
-						"Constant",
-						"None of these"
-				],
-				"correctAnswer": "Decreasing"
-		},
-		{
-				"id": "mcq10",
-				"question": "<span style=\"font-weight: normal;\">A ladder 15 m long just reaches the top of a vertical wall. If the ladder makes an angle of 60° with the wall, then the height of the wall is:</span>",
-				"options": [
-						"15√3 m",
-						"<sup>15√3</sup>&frasl;<sub>2</sub> m",
-						"7.5 m",
-						"15 m"
-				],
-				"correctAnswer": "7.5 m"
-		}
-],
-    summary: [
-        "We learned to apply trigonometry to calculate heights and distances in real-world scenarios.",
-        "Understood the concepts of angle of elevation and depression."
-    ],
-
-    isHtmlView: true,
-    htmlOverview: `<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Applications of Trigonometry - Overview</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
-
-        body {
-            font-family: 'Noto Sans', sans-serif;
-            margin: 0;
-            padding: 15px;
-            background: #fff;
-            color: #333;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #6C63FF;
-            padding-bottom: 10px;
-            font-family: 'Nunito', sans-serif;
-        }
-
-        .logo {
-            color: #6C63FF;
-            font-size: 24px;
-            font-weight: 800;
-        }
-
-        .chapter-title {
-            text-align: center;
-            color: #333;
-            font-size: 20px;
-            font-weight: 700;
-            margin: 10px 0;
-            font-family: 'Noto Sans', sans-serif;
-        }
-
-        .content-box {
-            background: #f8f9fa;
-            border: 1px solid #e9ecef;
-            border-radius: 8px;
-            padding: 15px;
-            margin-bottom: 15px;
-            display: flow-root;
-            transition: transform 0.2s ease;
-        }
-
-        .section-title {
-            color: #D32F2F;
-            font-weight: 700;
-            font-size: 1.2em;
-            margin-bottom: 10px;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 5px;
-        }
-
-        .formula-box {
-            background: #E8F5E9;
-            border-left: 4px solid #4CAF50;
-            padding: 10px;
-            margin: 10px 0;
-            font-family: 'Nunito', sans-serif;
-        }
-
-        .step {
-            margin-bottom: 8px;
-            font-size: 1.1em;
-            color: #000;
-            line-height: 1.5;
-        }
-
-        ul {
-            list-style-type: disc;
-            margin-left: 20px;
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 5px;
-            font-size: 1.1em;
-        }
-    </style>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    renderMathInElement(document.body, {
-      delimiters: [
-        {left: '\\\\(', right: '\\\\)', display: false},
-        {left: '\\\\[', right: '\\\\]', display: true}
-      ]
-    });
-  });
-</script>
-
-<style>
-  body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
-  .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #00C6FF !important; color: #fff !important; }
-  h1, h2, h3, h4, h5, h6 { color: #00C6FF !important; }
-  .question { color: #00C6FF !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; font-size: 15px !important; }
-  .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; font-size: 15px !important; }
-  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; font-size: 15px !important; }
-  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; font-size: 15px !important; }
-  .formula { color: #4CAF50 !important; }
-  .true-text { color: #4CAF50 !important; }
-  .false-text { color: #F44336 !important; }
-  table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
-  .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
-  img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #00C6FF !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
-  * { font-family: 'Noto Sans', sans-serif !important; }
-
-  .question { font-size: 0.95em !important; }
-  .sub-question { font-size: 0.9em !important; }
-  .step { font-size: 0.9em !important; }
-  .final-answer { font-size: 0.95em !important; }
-</style>
-</head>
-
-<body>
-
-    
-
-    <div class="content-box">
-        <div class="section-title">1. Introduction</div>
-        <div class="step">In the previous chapter, we studied trigonometric ratios. In this chapter, we will explore
-            some ways in which trigonometry is used in the life around us.</div>
-        <div class="step">Trigonometry is one of the most ancient subjects studied by scholars all over the world.
-            Astronomers used it to calculate distances from the Earth to the planets and stars.</div>
-        <div class="step">We will see how trigonometry is used to finding the heights and distances of various objects
-            like towers, mountains, buildings, etc., without actually measuring them.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="section-title">2. Heights and Distances</div>
-        <div class="step">To solve problems involving heights and distances, we need to understand the following terms:
-        </div>
-
-        <div class="formula-box">
-            <strong>Line of Sight:</strong> The line drawn from the eye of an observer to the point in the object viewed
-            by the observer.
-        </div>
-
-        <div class="formula-box">
-            <strong>Horizontal Level:</strong> The line drawn horizontally through the eye of the observer.
-        </div>
-
-        <div class="formula-box">
-            <strong>Angle of Elevation:</strong> The angle formed by the line of sight with the horizontal when the
-            point being viewed is ABOVE the horizontal level (i.e., when we raise our head to look at the object).
-        </div>
-
-        <div class="formula-box">
-            <strong>Angle of Depression:</strong> The angle formed by the line of sight with the horizontal when the
-            point being viewed is BELOW the horizontal level (i.e., when we lower our head to look at the object).
-        </div>
-    </div>
-
-    <div class="content-box">
-        <div class="section-title">3. Key Concepts</div>
-        <ul>
-            <li>The angle of elevation of an object as viewed by an observer is the angle between the horizontal line
-                and the line of sight.</li>
-            <li>If the observer moves towards the object (e.g., a tower), the angle of elevation increases.</li>
-            <li>If the observer moves away from the object, the angle of elevation decreases.</li>
-            <li>For the same height, if the distance is doubled, the angle of elevation decreases but does not become
-                half.</li>
-            <li>The angle of depression of a point on the ground from the top of a tower is numerically equal to the
-                angle of elevation of the top of the tower from that point on the ground (Alternate Interior Angles).
-            </li>
-        </ul>
-    </div>
-
-    <div class="content-box">
-        <div class="section-title">4. Trigonometric Ratios Recap</div>
-        <div class="step">For a right-angled triangle with angle θ:</div>
-        <ul>
-            <li><strong>sin θ</strong> = Opposite Side / Hypotenuse</li>
-            <li><strong>cos θ</strong> = Adjacent Side / Hypotenuse</li>
-            <li><strong>tan θ</strong> = Opposite Side / Adjacent Side</li>
-        </ul>
-    </div>
-
-    <div class="content-box">
-        <div class="section-title">5. Important Values to Remember</div>
-        <div class="step">Most problems in this chapter involve angles of 30°, 45°, and 60°. Memorize these values:
-        </div>
-        <div class="formula-box">
-            <strong>tan 30°</strong> = 1/√3 ≈ 0.577<br>
-            <strong>tan 45°</strong> = 1<br>
-            <strong>tan 60°</strong> = √3 ≈ 1.732
-        </div>
-        <div class="formula-box">
-            <strong>sin 30°</strong> = 1/2<br>
-            <strong>sin 45°</strong> = 1/√2<br>
-            <strong>sin 60°</strong> = √3/2
-        </div>
-        <div class="formula-box">
-            <strong>cos 30°</strong> = √3/2<br>
-            <strong>cos 45°</strong> = 1/√2<br>
-            <strong>cos 60°</strong> = 1/2
-        </div>
-    </div>
-
-    <div class="content-box">
-        <div class="section-title">6. Steps to Solve Problems</div>
-        <div class="step">1. Read the problem carefully and draw a neat, labeled diagram. Represent the height (tower,
-            building) by a vertical line and the distance by a horizontal line.</div>
-        <div class="step">2. Mark the given angles of elevation or depression. Remember, angle of depression is marked
-            with the horizontal line at the top.</div>
-        <div class="step">3. Identify the right-angled triangle(s) formed.</div>
-        <div class="step">4. Choose the appropriate trigonometric ratio (usually tan θ, sometimes sin θ or cos θ) that
-            relates the known side to the unknown side.</div>
-        <div class="step">5. Form an equation and solve for the unknown value.</div>
-    </div>
-
-</body>
-
-</html>`,
-    htmlExercises: {
-        exercise1: `<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Applications of Trigonometry - Exercise 9.1</title>
-    
-    
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
-
-        body {
-            font-family: 'Noto Sans', sans-serif;
-            margin: 0;
-            padding: 15px;
-            background: #fff;
-            color: #333;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #6C63FF;
-            padding-bottom: 10px;
-            font-family: 'Nunito', sans-serif;
-        }
-
-        .logo {
-            color: #6C63FF;
-            font-size: 24px;
-            font-weight: 800;
-        }
-
-        .chapter-title {
-            text-align: center;
-            color: #333;
-            font-size: 20px;
-            font-weight: 700;
-            margin: 10px 0;
-            font-family: 'Noto Sans', sans-serif;
-        }
-
-        .content-box {
-            background: #f8f9fa;
-            border: 1px solid #e9ecef;
-            border-radius: 8px;
-            padding: 15px;
-            margin-bottom: 15px;
-            display: flow-root;
-            transition: transform 0.2s ease;
-        }
-
-        .question {
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: #333;
-        }
-
-        .step {
-            margin-bottom: 8px;
-            font-size: 1.1em;
-            color: #000;
-            line-height: 1.6;
-            display: block;
-        }
-
-        .final-answer {
-            color: #2E7D32;
-            font-weight: 700;
-            margin-top: 10px;
-            font-size: 1.2em;
-        }
-
-        .solution-header {
-            color: #2E7D32;
-            font-weight: 700;
-            margin-bottom: 5px;
-        }
-
-        .formula {
-            font-weight: bold;
-            color: #2E7D32;
-            margin: 5px 0;
-            display: inline-block;
-        }
-
-        .diagram-placeholder {
-            float: right;
-            border: 2px dashed #bbb;
-            padding: 10px;
-            margin: 0 0 10px 15px;
-            background: #fff;
-            color: #555;
-            font-size: 0.9em;
-            max-width: 280px;
-            text-align: center;
-        }
-
-        img {
-            float: right;
-            margin-left: 20px;
-            margin-bottom: 15px;
-            max-width: 280px;
-            height: auto;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            padding: 5px;
-            background: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        @media (max-width: 600px) {
-
-            img,
-            .diagram-placeholder {
-                float: none;
-                display: block;
-                margin: 10px auto;
-                max-width: 100%;
-            }
-        }
-    </style>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    renderMathInElement(document.body, {
-      delimiters: [
-        {left: '\\\\(', right: '\\\\)', display: false},
-        {left: '\\\\[', right: '\\\\]', display: true}
-      ]
-    });
-  });
-</script>
-
-<style>
-  body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
-  .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #00C6FF !important; color: #fff !important; }
-  h1, h2, h3, h4, h5, h6 { color: #00C6FF !important; }
-  .question { color: #00C6FF !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; font-size: 15px !important; }
-  .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; font-size: 15px !important; }
-  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; font-size: 15px !important; }
-  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; font-size: 15px !important; }
-  .formula { color: #4CAF50 !important; }
-  .true-text { color: #4CAF50 !important; }
-  .false-text { color: #F44336 !important; }
-  table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
-  .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
-  img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #00C6FF !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
-  * { font-family: 'Noto Sans', sans-serif !important; }
-
-  .question { font-size: 0.95em !important; }
-  .sub-question { font-size: 0.9em !important; }
-  .step { font-size: 0.9em !important; }
-  .final-answer { font-size: 0.95em !important; }
-</style>
-</head>
-
-<body>
-
-    
-
-    <div class="content-box">
-        <div class="question">1. A circus artist is climbing a 20 m long rope, which is tightly stretched and tied from
-            the top of a vertical pole to the ground. Find the height of the pole, if the angle made by the rope with
-            the ground level is 30°.</div>
-        </div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNTAgMjUwIj4NCiAgPGRlZnM+DQogICAgPG1hcmtlciBpZD0iYXJyb3ciIG1hcmtlcldpZHRoPSIxMCIgbWFya2VySGVpZ2h0PSIxMCIgcmVmWD0iOSIgcmVmWT0iMyIgb3JpZW50PSJhdXRvIiBtYXJrZXJVbml0cz0ic3Ryb2tlV2lkdGgiPg0KICAgICAgPHBhdGggZD0iTTAsMCBMMCw2IEw5LDMgeiIgZmlsbD0iIzMzMyIgLz4NCiAgICA8L21hcmtlcj4NCiAgPC9kZWZzPg0KICANCiAgPHBhdGggZD0iTTUwLDMwIEw1MCwyMDAgTDMwMCwyMDAgWiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTU2NUMwIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPHJlY3QgeD0iNTAiIHk9IjE4MCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiBmaWxsPSJub25lIiBzdHJva2U9IiMxNTY1QzAiIHN0cm9rZS13aWR0aD0iMiIvPg0KICANCiAgPCEtLSBBbmdsZSBBcmMgMzAgYXQgQygzMDAsMjAwKS4gU3RhcnQgKDI2MCwyMDApLiBFbmQgKDI2NywxNzcpIC0tPg0KICA8cGF0aCBkPSJNIDI2MCAyMDAgQSA0MCA0MCAwIDAgMSAyNjcgMTc3IiBmaWxsPSJub25lIiBzdHJva2U9IiMxNTY1QzAiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8dGV4dCB4PSIyMjAiIHk9IjE5MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmaWxsPSIjMzMzIj4zMMKwPC90ZXh0Pg0KICANCiAgPHRleHQgeD0iMjAiIHk9IjExNSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI0IiBmaWxsPSIjMzMzIiBmb250LXdlaWdodD0iYm9sZCI+PzwvdGV4dD4NCiAgPHRleHQgeD0iMTgwIiB5PSIxMDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyMCIgZmlsbD0iIzMzMyI+MjAgbTwvdGV4dD4NCiAgDQogIDx0ZXh0IHg9IjQwIiB5PSIyNSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmaWxsPSIjMzMzIiBmb250LXdlaWdodD0iYm9sZCI+QTwvdGV4dD4NCiAgPHRleHQgeD0iMzUiIHk9IjIyMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmaWxsPSIjMzMzIiBmb250LXdlaWdodD0iYm9sZCI+QjwvdGV4dD4NCiAgPHRleHQgeD0iMzEwIiB5PSIyMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzMzMyIgZm9udC13ZWlnaHQ9ImJvbGQiPkM8L3RleHQ+DQo8L3N2Zz4=" alt="Circus Artist Problem">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Let AB be the height of the pole (\\(h\\)) and AC be the rope (20 m).</div>
-        <div class="step">In right \\(\\triangle ABC\\), \\(\\sin 30^\\circ = \\frac{AB}{AC}\\).</div>
-        <div class="step">We know <span class="formula">\\(\\sin 30^\\circ = \\frac{1}{2}\\)</span></div>
-        <div class="step">\\(\\frac{1}{2} = \\frac{h}{20}\\)</div>
-        <div class="step">\\(2h = 20 \\Rightarrow h = 10\\)</div>
-        <div class="final-answer">Therefore, the required value is 10 m.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">2. A tree breaks due to storm and the broken part bends so that the top of the tree
-            touches the ground making an angle 30° with it. The distance between the foot of the tree to the point where
-            the top touches the ground is 8 m. Find the height of the tree.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNTAgMjUwIj4NCiAgPHBhdGggZD0iTTUwLDIwMCBMMzAwLDIwMCBMMzAwLDUwIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzJFN0QzMiIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDxyZWN0IHg9IjI4MCIgeT0iMTgwIiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzJFN0QzMiIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIA0KICA8IS0tIEFuZ2xlIGF0IEMoNTAsMjAwKS4gU3RhcnQgKDkwLDIwMCkuIEVuZCAoODQsMTg4KSAoYXBwcm94IGZvciAyMCBkZWcgc2xvcGUgdG8gQSgzMDAsNTApPyBObyBBIGlzIGF0IDMwMCw1MC4gQmFzZSAyNTAsIEggMTUwLiBBbmdsZSAzMSBkZWcpIC0tPg0KICA8IS0tIFN0YXJ0ICg5MCwgMjAwKS4gRW5kIHZlY3RvciAoMjUwLCAtMTUwKS4gVW5pdCgwLjg1LCAtMC41MSkuIFB0KDUwKzM0LCAyMDAtMjApID0gKDg0LCAxODApIC0tPg0KICA8cGF0aCBkPSJNIDkwIDIwMCBBIDQwIDQwIDAgMCAwIDg0IDE4MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMkU3RDMyIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPHRleHQgeD0iMTAwIiB5PSIxOTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzMzMyI+MzDCsDwvdGV4dD4NCiAgDQogIDx0ZXh0IHg9IjE1MCIgeT0iMjMwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjAiIGZpbGw9IiMzMzMiPjggbTwvdGV4dD4NCiAgDQogIDx0ZXh0IHg9IjM1IiB5PSIyMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzMzMyIgZm9udC13ZWlnaHQ9ImJvbGQiPkM8L3RleHQ+DQogIDx0ZXh0IHg9IjMxMCIgeT0iMjIwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiMzMzMiIGZvbnQtd2VpZ2h0PSJib2xkIj5CPC90ZXh0Pg0KICA8dGV4dCB4PSIzMTAiIHk9IjQwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiMzMzMiIGZvbnQtd2VpZ2h0PSJib2xkIj5BPC90ZXh0Pg0KPC9zdmc+" alt="Broken Tree Diagram">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Let the broken part be AC and the standing part be BC.</div>
-        <div class="step">Total height of tree = BC + AC.</div>
-        <div class="step">Given distance AB = 8 m and angle \\(\\theta = 30^\\circ\\).</div>
-        <div class="step">In \\(\\triangle ABC\\):</div>
-        <div class="step">\\(\\tan 30^\\circ = \\frac{BC}{AB} \\Rightarrow \\frac{1}{\\sqrt{3}} = \\frac{BC}{8} \\Rightarrow BC =
-            \\frac{8}{\\sqrt{3}}\\)</div>
-        <div class="step">\\(\\cos 30^\\circ = \\frac{AB}{AC} \\Rightarrow \\frac{\\sqrt{3}}{2} = \\frac{8}{AC} \\Rightarrow AC =
-            \\frac{16}{\\sqrt{3}}\\)</div>
-        <div class="step">Total height = \\(BC + AC = \\frac{8}{\\sqrt{3}} + \\frac{16}{\\sqrt{3}}\\)</div>
-        <div class="step">\\(= \\frac{24}{\\sqrt{3}}\\)</div>
-        <div class="step">Rationalizing: \\(\\frac{24\\sqrt{3}}{3} = 8\\sqrt{3}\\)</div>
-        <div class="final-answer">Therefore, the required value is \\(8\\sqrt{3}\\) m.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">3. A contractor plans to install two slides... (height 1.5m @ 30° and height 3m @ 60°).
-            What should be the length of the slide in each case?</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1NTAgMzAwIj4NCiAgPCEtLSBTbGlkZSAxIChMZWZ0KSAtLT4NCiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAsIDUwKSI+DQogICAgPHBhdGggZD0iTTUwLDUwIEw1MCwxNTAgTDIwMCwxNTAgWiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRTY1MTAwIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgICA8cmVjdCB4PSI1MCIgeT0iMTMwIiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0U2NTEwMCIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogICAgDQogICAgPCEtLSBBbmdsZSAzMCBhdCBDKDIwMCwxNTApLiBTdGFydCAoMTYwLDE1MCkuIEVuZCAoMTY3LDEyOCkgLS0+DQogICAgPHBhdGggZD0iTSAxNjAgMTUwIEEgNDAgNDAgMCAwIDEgMTY3IDEyOCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRTY1MTAwIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgICA8dGV4dCB4PSIxMjAiIHk9IjE0MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmaWxsPSIjMzMzIj4zMMKwPC90ZXh0Pg0KICAgIA0KICAgIDx0ZXh0IHg9IjEwIiB5PSIxMDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzMzMyI+MS41IG08L3RleHQ+DQogICAgPHRleHQgeD0iNjAiIHk9IjEwMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjIwIiBmaWxsPSIjMzMzIiBmb250LXdlaWdodD0iYm9sZCI+U2xpZGUgMTwvdGV4dD4NCiAgICA8dGV4dCB4PSIxMzAiIHk9IjkwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjIiIGZpbGw9IiMzMzMiIGZvbnQtd2VpZ2h0PSJib2xkIj4/PC90ZXh0Pg0KICAgIA0KICAgIDx0ZXh0IHg9IjQwIiB5PSI0MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCI+QTwvdGV4dD4NCiAgICA8dGV4dCB4PSIzNSIgeT0iMTcwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIj5CPC90ZXh0Pg0KICAgIDx0ZXh0IHg9IjIxMCIgeT0iMTcwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIj5DPC90ZXh0Pg0KICA8L2c+DQoNCiAgPCEtLSBTbGlkZSAyIChSaWdodCkgLS0+DQogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI4MCwgMCkiPg0KICAgIDxwYXRoIGQ9Ik01MCwyMCBMNTAsMjAwIEwxODAsMjAwIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0U2NTEwMCIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogICAgPHJlY3QgeD0iNTAiIHk9IjE4MCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiBmaWxsPSJub25lIiBzdHJva2U9IiNFNjUxMDAiIHN0cm9rZS13aWR0aD0iMiIvPg0KICAgIA0KICAgIDwhLS0gQW5nbGUgNjAgYXQgUigxODAsMjAwKS4gU3RhcnQgKDE0MCwyMDApLiBFbmQgKDE1NywxNjgpIC0tPg0KICAgIDxwYXRoIGQ9Ik0gMTQwIDIwMCBBIDQwIDQwIDAgMCAxIDE1NyAxNjgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0U2NTEwMCIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogICAgPHRleHQgeD0iMTAwIiB5PSIxODAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZmlsbD0iIzMzMyI+NjDCsDwvdGV4dD4NCiAgICANCiAgICA8dGV4dCB4PSItMTAiIHk9IjExMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmaWxsPSIjMzMzIj4zIG08L3RleHQ+DQogICAgPHRleHQgeD0iNjAiIHk9IjEyMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjIwIiBmaWxsPSIjMzMzIiBmb250LXdlaWdodD0iYm9sZCI+U2xpZGUgMjwvdGV4dD4NCiAgICA8dGV4dCB4PSIxMzAiIHk9IjEwMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjIyIiBmaWxsPSIjMzMzIiBmb250LXdlaWdodD0iYm9sZCI+PzwvdGV4dD4NCg0KICAgIDx0ZXh0IHg9IjQwIiB5PSIxNSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCI+UDwvdGV4dD4NCiAgICA8dGV4dCB4PSIzNSIgeT0iMjIwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIj5RPC90ZXh0Pg0KICAgIDx0ZXh0IHg9IjE5MCIgeT0iMjIwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIj5SPC90ZXh0Pg0KICA8L2c+DQo8L3N2Zz4=" alt="Two Slides Diagram">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Case 1: For younger children. Height \\(h_1 = 1.5\\) m, Angle = 30°. Let length be \\(l_1\\).
-        </div>
-        <div class="step">\\(\\sin 30^\\circ = \\frac{h_1}{l_1} \\Rightarrow \\frac{1}{2} = \\frac{1.5}{l_1}\\)</div>
-        <div class="step">\\(l_1 = 1.5 \\times 2 = 3\\) m.</div>
-        <div class="step">Case 2: For elder children. Height \\(h_2 = 3\\) m, Angle = 60°. Let length be \\(l_2\\).</div>
-        <div class="step">\\(\\sin 60^\\circ = \\frac{h_2}{l_2} \\Rightarrow \\frac{\\sqrt{3}}{2} = \\frac{3}{l_2}\\)</div>
-        <div class="step">\\(l_2\\sqrt{3} = 6 \\Rightarrow l_2 = \\frac{6}{\\sqrt{3}}\\)</div>
-        <div class="step">Rationalizing: \\(l_2 = \\frac{6\\sqrt{3}}{3} = 2\\sqrt{3}\\) m.</div>
-        <div class="final-answer">Therefore, the required value is 3 m and \\(2\\sqrt{3}\\) m.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">4. The angle of elevation of the top of a tower from a point on the ground, which is 30 m
-            away from the foot of the tower, is 30°. Find the height of the tower.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNTAgMjUwIj4NCiAgPHBhdGggZD0iTTUwLDIwMCBMMzAwLDIwMCBMMzAwLDUwIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzdCMUZBMiIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDxyZWN0IHg9IjI4MCIgeT0iMTgwIiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzdCMUZBMiIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIA0KICA8IS0tIEFuZ2xlIGF0IEMoNTAsMjAwKS4gU2FtZSBhcyBRMiBBPTMwMCw1MCAtLT4NCiAgPHBhdGggZD0iTSA5MCAyMDAgQSA0MCA0MCAwIDAgMCA4NCAxODAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzdCMUZBMiIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDx0ZXh0IHg9IjExMCIgeT0iMTkwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiMzMzMiPjMwwrA8L3RleHQ+DQoNCiAgPHRleHQgeD0iMzE1IiB5PSIxMjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgZmlsbD0iIzMzMyIgZm9udC13ZWlnaHQ9ImJvbGQiPj88L3RleHQ+DQogIDx0ZXh0IHg9IjE0MCIgeT0iMjM1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjAiIGZpbGw9IiMzMzMiPjMwIG08L3RleHQ+DQoNCiAgPHRleHQgeD0iMzUiIHk9IjIyMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmaWxsPSIjMzMzIiBmb250LXdlaWdodD0iYm9sZCI+QzwvdGV4dD4NCiAgPHRleHQgeD0iMzEwIiB5PSIyMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzMzMyIgZm9udC13ZWlnaHQ9ImJvbGQiPkI8L3RleHQ+DQogIDx0ZXh0IHg9IjMxMCIgeT0iNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzMzMyIgZm9udC13ZWlnaHQ9ImJvbGQiPkE8L3RleHQ+DQo8L3N2Zz4=" alt="Tower Angle 30">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Let height of tower be \\(h\\). Distance = 30 m. Angle = 30°.</div>
-        <div class="step">\\(\\tan 30^\\circ = \\frac{h}{30}\\)</div>
-        <div class="step"><span class="formula">\\(\\frac{1}{\\sqrt{3}} = \\frac{h}{30}\\)</span></div>
-        <div class="step">\\(h = \\frac{30}{\\sqrt{3}}\\)</div>
-        <div class="step">Rationalizing: \\(h = \\frac{30\\sqrt{3}}{3} = 10\\sqrt{3}\\)</div>
-        <div class="final-answer">Therefore, the required value is \\(10\\sqrt{3}\\) m.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">5. A kite is flying at a height of 60 m above the ground... inclination ... is 60°. Find
-            the length of the string...</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNTAgMjUwIj4NCiAgPHBhdGggZD0iTTUwLDIwMCBMMjUwLDIwMCBMMjUwLDIwIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0QzMkYyRiIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDxyZWN0IHg9IjIzMCIgeT0iMTgwIiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0QzMkYyRiIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIA0KICA8IS0tIEFuZ2xlIGF0IEMoNTAsMjAwKS4gQSgyNTAsMjApLiBCYXNlIDIwMC4gSCAxODAuIEFuZ2xlIH40Mi4gLS0+DQogIDwhLS0gU3RhcnQgKDkwLCAyMDApLiBFbmQgdmVjdG9yICgyMDAsIC0xODApLiBVbml0KDAuNzQsIC0wLjY2KS4gRW5kICg4MCwgMTczKSAtLT4NCiAgPHBhdGggZD0iTSA5MCAyMDAgQSA0MCA0MCAwIDAgMCA4MCAxNzMiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0QzMkYyRiIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDx0ZXh0IHg9IjEwMCIgeT0iMTkwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiMzMzMiPjYwwrA8L3RleHQ+DQoNCiAgPHRleHQgeD0iMjYwIiB5PSIxMTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyMCIgZmlsbD0iIzMzMyI+NjAgbTwvdGV4dD4NCiAgPHRleHQgeD0iMTMwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI0IiBmaWxsPSIjMzMzIiBmb250LXdlaWdodD0iYm9sZCI+PzwvdGV4dD4NCg0KICA8dGV4dCB4PSIzNSIgeT0iMjIwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiMzMzMiIGZvbnQtd2VpZ2h0PSJib2xkIj5DPC90ZXh0Pg0KICA8dGV4dCB4PSIyNjAiIHk9IjIyMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmaWxsPSIjMzMzIiBmb250LXdlaWdodD0iYm9sZCI+QjwvdGV4dD4NCiAgPHRleHQgeD0iMjUwIiB5PSIxNSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmaWxsPSIjMzMzIiBmb250LXdlaWdodD0iYm9sZCI+QTwvdGV4dD4NCjwvc3ZnPg==" alt="Kite Flying Diagram">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Height = 60 m. Angle = 60°. Let length of string be \\(L\\).</div>
-        <div class="step">\\(\\sin 60^\\circ = \\frac{60}{L}\\)</div>
-        <div class="step"><span class="formula">\\(\\frac{\\sqrt{3}}{2} = \\frac{60}{L}\\)</span></div>
-        <div class="step">\\(L\\sqrt{3} = 120 \\Rightarrow L = \\frac{120}{\\sqrt{3}}\\)</div>
-        <div class="step">Rationalizing: \\(L = \\frac{120\\sqrt{3}}{3} = 40\\sqrt{3}\\)</div>
-        <div class="final-answer">Therefore, the required value is \\(40\\sqrt{3}\\) m.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">6. A 1.5 m tall boy is standing... angle of elevation... increases from 30° to 60°... Find
-            distance walked.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MDAgMzAwIj4NCiAgPGRlZnM+DQogICAgPG1hcmtlciBpZD0iYXJyb3ciIG1hcmtlcldpZHRoPSIxMCIgbWFya2VySGVpZ2h0PSIxMCIgcmVmWD0iOSIgcmVmWT0iMyIgb3JpZW50PSJhdXRvIiBtYXJrZXJVbml0cz0ic3Ryb2tlV2lkdGgiPg0KICAgICAgPHBhdGggZD0iTTAsMCBMMCw2IEw5LDMgeiIgZmlsbD0iIzMzMyIgLz4NCiAgICA8L21hcmtlcj4NCiAgPC9kZWZzPg0KDQogIDwhLS0gR3JvdW5kIExpbmUgLS0+DQogIDxsaW5lIHgxPSI1MCIgeTE9IjI1MCIgeDI9IjQ1MCIgeTI9IjI1MCIgc3Ryb2tlPSIjMkU3RDMyIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgDQogIDwhLS0gQm95IFAxIC0tPg0KICA8bGluZSB4MT0iNTAiIHkxPSIyNTAiIHgyPSI1MCIgeTI9IjIwMCIgc3Ryb2tlPSIjMkU3RDMyIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPHRleHQgeD0iNTAiIHk9IjI3MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCI+UTwvdGV4dD4NCiAgPHRleHQgeD0iNTAiIHk9IjE5NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCI+UDwvdGV4dD4NCiAgPHRleHQgeD0iMTAiIHk9IjIzMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0Ij4xLjVtPC90ZXh0Pg0KDQogIDwhLS0gQm95IFAyIC0tPg0KICA8bGluZSB4MT0iMjUwIiB5MT0iMjUwIiB4Mj0iMjUwIiB5Mj0iMjAwIiBzdHJva2U9IiMyRTdEMzIiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8dGV4dCB4PSIyNTAiIHk9IjI3MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCI+UjwvdGV4dD4NCiAgPHRleHQgeD0iMjQ1IiB5PSIxOTUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiPlM8L3RleHQ+DQoNCiAgPCEtLSBCdWlsZGluZyAtLT4NCiAgPGxpbmUgeDE9IjQyMCIgeTE9IjI1MCIgeDI9IjQyMCIgeTI9IjUwIiBzdHJva2U9IiMyRTdEMzIiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8dGV4dCB4PSI0MjUiIHk9IjQ1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIj5BPC90ZXh0Pg0KICA8dGV4dCB4PSI0MjUiIHk9IjI3MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCI+QjwvdGV4dD4NCiAgPHRleHQgeD0iNDI1IiB5PSIyMDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiPkM8L3RleHQ+DQogIDx0ZXh0IHg9IjQ2MCIgeT0iMTUwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiPjMwIG08L3RleHQ+DQoNCiAgPCEtLSBIb3Jpem9udGFsIEV5ZSBMZXZlbCAtLT4NCiAgPGxpbmUgeDE9IjUwIiB5MT0iMjAwIiB4Mj0iNDIwIiB5Mj0iMjAwIiBzdHJva2U9IiMyRTdEMzIiIHN0cm9rZS13aWR0aD0iMiIvPg0KDQogIDwhLS0gU2lnaHQgTGluZXMgLS0+DQogIDxsaW5lIHgxPSI1MCIgeTE9IjIwMCIgeDI9IjQyMCIgeTI9IjUwIiBzdHJva2U9IiMyRTdEMzIiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8bGluZSB4MT0iMjUwIiB5MT0iMjAwIiB4Mj0iNDIwIiB5Mj0iNTAiIHN0cm9rZT0iIzJFN0QzMiIgc3Ryb2tlLXdpZHRoPSIyIi8+DQoNCiAgPCEtLSBBbmdsZSAzMCBhdCBQKDUwLDIwMCkuIFJheSB0byBBKDQyMCw1MCkuIGR4IDM3MCwgZHkgLTE1MC4gVW5pdCgwLjkyLCAtMC4zNykuIEVuZCAoODcsIDE4NSkgLS0+DQogIDxwYXRoIGQ9Ik0gOTAgMjAwIEEgNDAgNDAgMCAwIDAgODcgMTg1IiBmaWxsPSJub25lIiBzdHJva2U9IiMyRTdEMzIiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8dGV4dCB4PSIxMTAiIHk9IjE5MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmaWxsPSIjMzMzIj4zMMKwPC90ZXh0Pg0KDQogIDwhLS0gQW5nbGUgNjAgYXQgUygyNTAsMjAwKS4gUmF5IHRvIEEoNDIwLDUwKS4gZHggMTcwLCBkeSAtMTUwLiBVbml0KDAuNzUsIC0wLjY2KS4gRW5kICgyODAsIDE3NCkgLS0+DQogIDxwYXRoIGQ9Ik0gMjkwIDIwMCBBIDQwIDQwIDAgMCAwIDI4MCAxNzQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzJFN0QzMiIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDx0ZXh0IHg9IjMwMCIgeT0iMTkwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiMzMzMiPjYwwrA8L3RleHQ+DQoNCiAgPCEtLSBEaXN0YW5jZSBBcnJvdyAtLT4NCiAgPGxpbmUgeDE9IjUwIiB5MT0iMjgwIiB4Mj0iMjUwIiB5Mj0iMjgwIiBzdHJva2U9IiMzMzMiIG1hcmtlci1zdGFydD0idXJsKCNhcnJvdykiIG1hcmtlci1lbmQ9InVybCgjYXJyb3cpIiAvPg0KICA8dGV4dCB4PSIxNDAiIHk9IjMwMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmaWxsPSIjMzMzIiBmb250LXdlaWdodD0iYm9sZCI+PzwvdGV4dD4NCjwvc3ZnPg==" alt="Boy walking towards building">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Height of building = 30 m. Boy = 1.5 m.</div>
-        <div class="step">Effective height \\(h = 30 - 1.5 = 28.5\\) m.</div>
-        <div class="step">In first position (Angle 30°), let horizontal distance be \\(x\\).</div>
-        <div class="step">\\(\\tan 30^\\circ = \\frac{28.5}{x} \\Rightarrow \\frac{1}{\\sqrt{3}} = \\frac{28.5}{x} \\Rightarrow x
-            = 28.5\\sqrt{3}\\).</div>
-        <div class="step">In second position (Angle 60°), let horizontal distance be \\(y\\).</div>
-        <div class="step">\\(\\tan 60^\\circ = \\frac{28.5}{y} \\Rightarrow \\sqrt{3} = \\frac{28.5}{y} \\Rightarrow y =
-            \\frac{28.5}{\\sqrt{3}}\\).</div>
-        <div class="step">Distance walked = \\(x - y\\)</div>
-        <div class="step">\\(= 28.5\\sqrt{3} - \\frac{28.5}{\\sqrt{3}}\\)</div>
-        <div class="step">\\(= 28.5 (\\frac{3 - 1}{\\sqrt{3}}) = 28.5 (\\frac{2}{\\sqrt{3}})\\)</div>
-        <div class="step">\\(= \\frac{57}{\\sqrt{3}} = \\frac{57\\sqrt{3}}{3} = 19\\sqrt{3}\\)</div>
-        <div class="final-answer">Therefore, the required value is \\(19\\sqrt{3}\\) m.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">7. From a point on the ground, the angles of elevation of the bottom and the top of a
-            transmission tower fixed at the top of a 20 m high building are 45° and 60° respectively. Find the height of
-            the tower.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzUwIj4NCiAgPGRlZnM+DQogICAgPG1hcmtlciBpZD0iYXJyb3ciIG1hcmtlcldpZHRoPSIxMCIgbWFya2VySGVpZ2h0PSIxMCIgcmVmWD0iOSIgcmVmWT0iMyIgb3JpZW50PSJhdXRvIiBtYXJrZXJVbml0cz0ic3Ryb2tlV2lkdGgiPg0KICAgICAgPHBhdGggZD0iTTAsMCBMMCw2IEw5LDMgeiIgZmlsbD0iIzMzMyIgLz4NCiAgICA8L21hcmtlcj4NCiAgPC9kZWZzPg0KDQogIDxsaW5lIHgxPSIyMCIgeTE9IjMwMCIgeDI9IjM1MCIgeTI9IjMwMCIgc3Ryb2tlPSIjRTY1MTAwIiBzdHJva2Utd2lkdGg9IjIiIC8+DQoNCiAgPCEtLSBWZXJ0aWNhbCBMaW5lIEMtQS1CIC0tPg0KICA8bGluZSB4MT0iMzAwIiB5MT0iMzAwIiB4Mj0iMzAwIiB5Mj0iNTAiIHN0cm9rZT0iI0U2NTEwMCIgc3Ryb2tlLXdpZHRoPSIyIiAvPg0KICANCiAgPHRleHQgeD0iMzA1IiB5PSIzMDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPkI8L3RleHQ+DQogIDx0ZXh0IHg9IjMwNSIgeT0iMjAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIj5BPC90ZXh0Pg0KICA8dGV4dCB4PSIzMDUiIHk9IjUwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIj5DPC90ZXh0Pg0KICA8dGV4dCB4PSIzMTUiIHk9IjI1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4Ij4yMCBtPC90ZXh0Pg0KICA8dGV4dCB4PSIzMTUiIHk9IjEyNSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjIwIiBmb250LXdlaWdodD0iYm9sZCI+PzwvdGV4dD4NCg0KICA8IS0tIFBvaW50IFAgLS0+DQogIDxjaXJjbGUgY3g9IjUwIiBjeT0iMzAwIiByPSIzIiBmaWxsPSIjMzMzIiAvPg0KICA8dGV4dCB4PSI0MCIgeT0iMzI1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIj5QPC90ZXh0Pg0KDQogIDwhLS0gU2lnaHQgTGluZXMgLS0+DQogIDxsaW5lIHgxPSI1MCIgeTE9IjMwMCIgeDI9IjMwMCIgeTI9IjIwMCIgc3Ryb2tlPSIjRTY1MTAwIiBzdHJva2Utd2lkdGg9IjIiLz4gPCEtLSBQQSAtLT4NCiAgPGxpbmUgeDE9IjUwIiB5MT0iMzAwIiB4Mj0iMzAwIiB5Mj0iNTAiIHN0cm9rZT0iI0U2NTEwMCIgc3Ryb2tlLXdpZHRoPSIyIi8+ICA8IS0tIFBDIC0tPg0KDQogIDwhLS0gNDUgYXQgUCB0byBBKDMwMCwyMDApLiBkeCAyNTAgZHkgLTEwMC4gVW5pdCgwLjkzLCAtMC4zNykuIEVuZCAoODcsIDI4NSkgLS0+DQogIDxwYXRoIGQ9Ik0gOTAgMzAwIEEgNDAgNDAgMCAwIDAgODcgMjg1IiBmaWxsPSJub25lIiBzdHJva2U9IiNFNjUxMDAiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8dGV4dCB4PSIxMTAiIHk9IjI5MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSIjMzMzIj40NcKwPC90ZXh0Pg0KDQogIDwhLS0gNjAgYXQgUCB0byBDKDMwMCw1MCkuIGR4IDI1MCBkeSAtMjUwLiBVbml0KDAuNywgLTAuNykuIEVuZCAoNzgsIDI3MikgLS0+DQogIDxwYXRoIGQ9Ik0gOTAgMzAwIEEgNDAgNDAgMCAwIDAgNzggMjcyIiBmaWxsPSJub25lIiBzdHJva2U9IiNFNjUxMDAiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8dGV4dCB4PSI3NSIgeT0iMjM1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9IiMzMzMiPjYwwrA8L3RleHQ+DQoNCjwvc3ZnPg==" alt="Transmission Tower on Building">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Let building height AB = 20 m. Tower height BC = \\(h\\). Let point P be at distance \\(x\\).
-        </div>
-        <div class="step">For bottom of tower (Angle 45°):</div>
-        <div class="step">\\(\\tan 45^\\circ = \\frac{AB}{x} \\Rightarrow 1 = \\frac{20}{x} \\Rightarrow x = 20\\) m.</div>
-        <div class="step">For top of tower (Angle 60°):</div>
-        <div class="step">\\(\\tan 60^\\circ = \\frac{AB + BC}{x} \\Rightarrow \\sqrt{3} = \\frac{20 + h}{20}\\)</div>
-        <div class="step">\\(20\\sqrt{3} = 20 + h\\)</div>
-        <div class="step">\\(h = 20\\sqrt{3} - 20 = 20(\\sqrt{3} - 1)\\)</div>
-        <div class="final-answer">Therefore, the required value is \\(20(\\sqrt{3} - 1)\\) m.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">8. A statue, 1.6 m tall, stands on the top of a pedestal... Top of statue is 60°... top of
-            pedestal is 45°. Find height of pedestal.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzUwIj4NCiAgPGRlZnM+DQogICAgPG1hcmtlciBpZD0iYXJyb3ciIG1hcmtlcldpZHRoPSIxMCIgbWFya2VySGVpZ2h0PSIxMCIgcmVmWD0iOSIgcmVmWT0iMyIgb3JpZW50PSJhdXRvIiBtYXJrZXJVbml0cz0ic3Ryb2tlV2lkdGgiPg0KICAgICAgPHBhdGggZD0iTTAsMCBMMCw2IEw5LDMgeiIgZmlsbD0iIzMzMyIgLz4NCiAgICA8L21hcmtlcj4NCiAgPC9kZWZzPg0KDQogIDxsaW5lIHgxPSIyMCIgeTE9IjMwMCIgeDI9IjM1MCIgeTI9IjMwMCIgc3Ryb2tlPSIjN0IxRkEyIiBzdHJva2Utd2lkdGg9IjIiIC8+DQoNCiAgPCEtLSBWZXJ0aWNhbCBMaW5lIEMtQS1CIC0tPg0KICA8bGluZSB4MT0iMzAwIiB5MT0iMzAwIiB4Mj0iMzAwIiB5Mj0iNTAiIHN0cm9rZT0iIzdCMUZBMiIgc3Ryb2tlLXdpZHRoPSIyIiAvPg0KDQogIDx0ZXh0IHg9IjMwNSIgeT0iMzAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIj5CPC90ZXh0Pg0KICA8dGV4dCB4PSIzMDUiIHk9IjE1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCI+QTwvdGV4dD4NCiAgPHRleHQgeD0iMzA1IiB5PSI1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCI+QzwvdGV4dD4NCiAgDQogIDx0ZXh0IHg9IjMxNSIgeT0iMTAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiPjEuNiBtPC90ZXh0Pg0KICA8dGV4dCB4PSIzMTUiIHk9IjIyNSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjIwIiBmb250LXdlaWdodD0iYm9sZCI+PzwvdGV4dD4NCg0KICA8IS0tIFBvaW50IFAgLS0+DQogIDxjaXJjbGUgY3g9IjUwIiBjeT0iMzAwIiByPSIzIiBmaWxsPSIjMzMzIiAvPg0KICA8dGV4dCB4PSI0MCIgeT0iMzI1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIj5QPC90ZXh0Pg0KDQogIDwhLS0gU2lnaHQgTGluZXMgLS0+DQogIDxsaW5lIHgxPSI1MCIgeTE9IjMwMCIgeDI9IjMwMCIgeTI9IjE1MCIgc3Ryb2tlPSIjN0IxRkEyIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPGxpbmUgeDE9IjUwIiB5MT0iMzAwIiB4Mj0iMzAwIiB5Mj0iNTAiIHN0cm9rZT0iIzdCMUZBMiIgc3Ryb2tlLXdpZHRoPSIyIi8+DQoNCiAgPCEtLSA0NSB0byBBKDMwMCwgMTUwKS4gZHggMjUwIGR5IC0xNTAuIFVuaXQgKDAuODUsIC0wLjUxKS4gRW5kICg4NCwgMjgwKSAtLT4NCiAgPHBhdGggZD0iTSA5MCAzMDAgQSA0MCA0MCAwIDAgMCA4NCAyODAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzdCMUZBMiIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDx0ZXh0IHg9IjExMCIgeT0iMjYwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9IiMzMzMiPjQ1wrA8L3RleHQ+DQoNCiAgPCEtLSA2MCB0byBDKDMwMCwgNTApLiBFbmQgKDc4LCAyNzIpIC0tPg0KICA8cGF0aCBkPSJNIDkwIDMwMCBBIDQwIDQwIDAgMCAwIDc4IDI3MiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjN0IxRkEyIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPHRleHQgeD0iNzUiIHk9IjIzNSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSIjMzMzIj42MMKwPC90ZXh0Pg0KDQo8L3N2Zz4=" alt="Statue on Pedestal">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Let pedestal height be \\(h\\) and horizontal distance be \\(x\\). Statue = 1.6 m.</div>
-        <div class="step">For top of pedestal (Angle 45°):</div>
-        <div class="step">\\(\\tan 45^\\circ = \\frac{h}{x} \\Rightarrow 1 = \\frac{h}{x} \\Rightarrow x = h\\).</div>
-        <div class="step">For top of statue (Angle 60°):</div>
-        <div class="step">\\(\\tan 60^\\circ = \\frac{h + 1.6}{x}\\)</div>
-        <div class="step">\\(\\sqrt{3} = \\frac{h + 1.6}{h}\\) (since \\(x=h\\))</div>
-        <div class="step">\\(h\\sqrt{3} = h + 1.6\\)</div>
-        <div class="step">\\(h(\\sqrt{3} - 1) = 1.6\\)</div>
-        <div class="step">\\(h = \\frac{1.6}{\\sqrt{3} - 1}\\)</div>
-        <div class="step">Rationalizing: \\(h = \\frac{1.6(\\sqrt{3} + 1)}{3 - 1} = \\frac{1.6(\\sqrt{3} + 1)}{2} =
-            0.8(\\sqrt{3} + 1)\\).</div>
-        <div class="final-answer">Therefore, the required value is \\(0.8(\\sqrt{3} + 1)\\) m.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">9. The angle of elevation of the top of a building from the foot of the tower is 30°...
-            tower from foot of building is 60°. Tower is 50 m. Find building height.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MDAgMzAwIj4NCiAgPGRlZnM+DQogICAgPG1hcmtlciBpZD0iYXJyb3ciIG1hcmtlcldpZHRoPSIxMCIgbWFya2VySGVpZ2h0PSIxMCIgcmVmWD0iOSIgcmVmWT0iMyIgb3JpZW50PSJhdXRvIiBtYXJrZXJVbml0cz0ic3Ryb2tlV2lkdGgiPg0KICAgICAgPHBhdGggZD0iTTAsMCBMMCw2IEw5LDMgeiIgZmlsbD0iIzMzMyIgLz4NCiAgICA8L21hcmtlcj4NCiAgPC9kZWZzPg0KDQogIDxsaW5lIHgxPSIzMCIgeTE9IjI1MCIgeDI9IjQ1MCIgeTI9IjI1MCIgc3Ryb2tlPSIjRDMyRjJGIiBzdHJva2Utd2lkdGg9IjIiIC8+DQoNCiAgPCEtLSBCdWlsZGluZyAoTGVmdCkgQUIgLS0+DQogIDxsaW5lIHgxPSI1MCIgeTE9IjI1MCIgeDI9IjUwIiB5Mj0iMTcwIiBzdHJva2U9IiNEMzJGMkYiIHN0cm9rZS13aWR0aD0iMiIgLz4NCiAgPHRleHQgeD0iMzUiIHk9IjE2MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCI+QTwvdGV4dD4NCiAgPHRleHQgeD0iMzUiIHk9IjI3MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCI+QjwvdGV4dD4NCiAgPHRleHQgeD0iMTAiIHk9IjIxMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjIyIiBmaWxsPSIjMzMzIiBmb250LXdlaWdodD0iYm9sZCI+PzwvdGV4dD4NCg0KICA8IS0tIFRvd2VyIChSaWdodCkgQ0QgLS0+DQogIDxsaW5lIHgxPSI0MDAiIHkxPSIyNTAiIHgyPSI0MDAiIHkyPSI1MCIgc3Ryb2tlPSIjRDMyRjJGIiBzdHJva2Utd2lkdGg9IjIiIC8+DQogIDx0ZXh0IHg9IjQwNSIgeT0iNDUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPkQ8L3RleHQ+DQogIDx0ZXh0IHg9IjQwNSIgeT0iMjcwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIj5DPC90ZXh0Pg0KICA8dGV4dCB4PSI0MTAiIHk9IjE1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmaWxsPSIjMzMzIj41MCBtPC90ZXh0Pg0KDQogIDwhLS0gRGlhZ29uYWxzIC0tPg0KICA8bGluZSB4MT0iNDAwIiB5MT0iMjUwIiB4Mj0iNTAiIHkyPSIxNzAiIHN0cm9rZT0iI0QzMkYyRiIgc3Ryb2tlLXdpZHRoPSIyIiAvPiA8IS0tIEMgdG8gQSAtLT4NCiAgPGxpbmUgeDE9IjUwIiB5MT0iMjUwIiB4Mj0iNDAwIiB5Mj0iNTAiIHN0cm9rZT0iI0QzMkYyRiIgc3Ryb2tlLXdpZHRoPSIyIiAvPiA8IS0tIEIgdG8gRCAtLT4NCg0KICA8IS0tIDMwIGF0IEMoNDAwLDI1MCkgdG8gQSg1MCwxNzApLiBkeCAtMzUwIGR5IC04MC4gVW5pdCgtMC45NywgLTAuMjIpLiBFbmQgKDM2MSwgMjQxKSAtLT4NCiAgPHBhdGggZD0iTSAzNjAgMjUwIEEgNDAgNDAgMCAwIDEgMzYxIDI0MSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRDMyRjJGIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPHRleHQgeD0iMzIwIiB5PSIyNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZmlsbD0iIzMzMyI+MzDCsDwvdGV4dD4NCg0KICA8IS0tIDYwIGF0IEIoNTAsMjUwKSB0byBEKDQwMCw1MCkuIGR4IDM1MCBkeSAtMjAwLiBVbml0KDAuODYsIC0wLjQ5KS4gRW5kICg4NCwgMjMwKSAtLT4NCiAgPHBhdGggZD0iTSA5MCAyNTAgQSA0MCA0MCAwIDAgMCA4NCAyMzAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0QzMkYyRiIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDx0ZXh0IHg9IjEyMCIgeT0iMjI1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiMzMzMiPjYwwrA8L3RleHQ+DQoNCjwvc3ZnPg==" alt="Building and Tower">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Tower height = 50 m. Let distance between feet be \\(x\\). Building height \\(h\\).</div>
-        <div class="step">From building foot to tower top (60°):</div>
-        <div class="step">\\(\\tan 60^\\circ = \\frac{50}{x} \\Rightarrow \\sqrt{3} = \\frac{50}{x} \\Rightarrow x =
-            \\frac{50}{\\sqrt{3}}\\).</div>
-        <div class="step">From tower foot to building top (30°):</div>
-        <div class="step">\\(\\tan 30^\\circ = \\frac{h}{x} \\Rightarrow \\frac{1}{\\sqrt{3}} = \\frac{h}{x}\\)</div>
-        <div class="step">\\(h = \\frac{x}{\\sqrt{3}} = \\frac{50/\\sqrt{3}}{\\sqrt{3}} = \\frac{50}{3}\\)</div>
-        <div class="final-answer">Therefore, the required value is \\(16\\frac{2}{3}\\) m.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">10. Two poles of equal heights... road 80 m wide... angles 60° and 30°. Find height and
-            distances.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MDAgMzAwIj4NCiAgPGRlZnM+DQogICAgPG1hcmtlciBpZD0iYXJyb3ciIG1hcmtlcldpZHRoPSIxMCIgbWFya2VySGVpZ2h0PSIxMCIgcmVmWD0iOSIgcmVmWT0iMyIgb3JpZW50PSJhdXRvIiBtYXJrZXJVbml0cz0ic3Ryb2tlV2lkdGgiPg0KICAgICAgPHBhdGggZD0iTTAsMCBMMCw2IEw5LDMgeiIgZmlsbD0iIzMzMyIgLz4NCiAgICA8L21hcmtlcj4NCiAgPC9kZWZzPg0KDQogIDxsaW5lIHgxPSIzMCIgeTE9IjI1MCIgeDI9IjQ3MCIgeTI9IjI1MCIgc3Ryb2tlPSIjMTU2NUMwIiBzdHJva2Utd2lkdGg9IjIiIC8+DQoNCiAgPCEtLSBQb2xlIDEgKExlZnQpIC0tPg0KICA8bGluZSB4MT0iNTAiIHkxPSIyNTAiIHgyPSI1MCIgeTI9IjUwIiBzdHJva2U9IiMxNTY1QzAiIHN0cm9rZS13aWR0aD0iMiIgLz4NCiAgPHRleHQgeD0iNDAiIHk9IjQ1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIj5BPC90ZXh0Pg0KICA8dGV4dCB4PSI0MCIgeT0iMjcwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIj5CPC90ZXh0Pg0KDQogIDwhLS0gUG9sZSAyIChSaWdodCkgLS0+DQogIDxsaW5lIHgxPSI0NTAiIHkxPSIyNTAiIHgyPSI0NTAiIHkyPSI1MCIgc3Ryb2tlPSIjMTU2NUMwIiBzdHJva2Utd2lkdGg9IjIiIC8+DQogIDx0ZXh0IHg9IjQ1MCIgeT0iNDUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPkQ8L3RleHQ+DQogIDx0ZXh0IHg9IjQ1MCIgeT0iMjcwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIj5DPC90ZXh0Pg0KDQogIDwhLS0gUG9pbnQgUCAtLT4NCiAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMjUwIiByPSIzIiBmaWxsPSIjMzMzIiAvPg0KICA8dGV4dCB4PSIxOTUiIHk9IjI3NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCI+UDwvdGV4dD4NCg0KICA8IS0tIFNpZ2h0IExpbmVzIC0tPg0KICA8bGluZSB4MT0iMjAwIiB5MT0iMjUwIiB4Mj0iNTAiIHkyPSI1MCIgc3Ryb2tlPSIjMTU2NUMwIiBzdHJva2Utd2lkdGg9IjIiIC8+DQogIDxsaW5lIHgxPSIyMDAiIHkxPSIyNTAiIHgyPSI0NTAiIHkyPSI1MCIgc3Ryb2tlPSIjMTU2NUMwIiBzdHJva2Utd2lkdGg9IjIiIC8+DQoNCiAgPCEtLSA2MCBMZWZ0IGZyb20gUCgyMDAsMjUwKSB0byBBKDUwLDUwKS4gZHggLTE1MCBkeSAtMjAwLiBVbml0KC0wLjYsIC0wLjgpLiBFbmQgKDE3NiwgMjE4KSAtLT4NCiAgPHBhdGggZD0iTSAxNjAgMjUwIEEgNDAgNDAgMCAwIDEgMTc2IDIxOCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTU2NUMwIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPHRleHQgeD0iMTQwIiB5PSIyMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZmlsbD0iIzMzMyI+NjDCsDwvdGV4dD4NCg0KICA8IS0tIDMwIFJpZ2h0IGZyb20gUCB0byBEKDQ1MCw1MCkuIGR4IDI1MCBkeSAtMjAwLiBVbml0KDAuNzgsIC0wLjYyKS4gRW5kICgyMzEsIDIyNSkgLS0+DQogIDxwYXRoIGQ9Ik0gMjQwIDI1MCBBIDQwIDQwIDAgMCAwIDIzMSAyMjUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzE1NjVDMCIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDx0ZXh0IHg9IjI2MCIgeT0iMjIwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiMzMzMiPjMwwrA8L3RleHQ+DQoNCiAgPGxpbmUgeDE9IjUwIiB5MT0iMjkwIiB4Mj0iNDUwIiB5Mj0iMjkwIiBzdHJva2U9IiMzMzMiIG1hcmtlci1zdGFydD0idXJsKCNhcnJvdykiIG1hcmtlci1lbmQ9InVybCgjYXJyb3cpIiAvPg0KICA8dGV4dCB4PSIyMzAiIHk9IjMxNSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmaWxsPSIjMzMzIj44MCBtPC90ZXh0Pg0KDQo8L3N2Zz4=" alt="Two Poles on Road">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Let height of poles be \\(h\\). Let point be at distance \\(x\\) from first pole so \\((80-x)\\)
-            from second.</div>
-        <div class="step">First pole (Angle 60°): \\(\\tan 60^\\circ = \\frac{h}{x} \\Rightarrow h = x\\sqrt{3}\\).</div>
-        <div class="step">Second pole (Angle 30°): \\(\\tan 30^\\circ = \\frac{h}{80 - x} \\Rightarrow \\frac{1}{\\sqrt{3}} =
-            \\frac{h}{80 - x} \\Rightarrow h = \\frac{80 - x}{\\sqrt{3}}\\).</div>
-        <div class="step">Equating \\(h\\):</div>
-        <div class="step">\\(x\\sqrt{3} = \\frac{80 - x}{\\sqrt{3}}\\)</div>
-        <div class="step">\\(3x = 80 - x \\Rightarrow 4x = 80 \\Rightarrow x = 20\\).</div>
-        <div class="step">Distances are 20 m and 60 m.</div>
-        <div class="step">Height \\(h = 20\\sqrt{3}\\).</div>
-        <div class="final-answer">Therefore, the required value is Height: \\(20\\sqrt{3}\\) m; Distances: 20 m, 60 m.
-        </div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">11. A TV tower... 60°... 20 m away... 30°. Find height and width.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MDAgMzAwIj4NCiAgPGRlZnM+DQogICAgPG1hcmtlciBpZD0iYXJyb3ciIG1hcmtlcldpZHRoPSIxMCIgbWFya2VySGVpZ2h0PSIxMCIgcmVmWD0iOSIgcmVmWT0iMyIgb3JpZW50PSJhdXRvIiBtYXJrZXJVbml0cz0ic3Ryb2tlV2lkdGgiPg0KICAgICAgPHBhdGggZD0iTTAsMCBMMCw2IEw5LDMgeiIgZmlsbD0iIzMzMyIgLz4NCiAgICA8L21hcmtlcj4NCiAgPC9kZWZzPg0KDQogIDxsaW5lIHgxPSIyMCIgeTE9IjI1MCIgeDI9IjQ4MCIgeTI9IjI1MCIgc3Ryb2tlPSIjNDNBMDQ3IiBzdHJva2Utd2lkdGg9IjIiLz4NCg0KICA8IS0tIFRvd2VyIC0tPg0KICA8bGluZSB4MT0iNDUwIiB5MT0iMjUwIiB4Mj0iNDUwIiB5Mj0iNTAiIHN0cm9rZT0iIzQzQTA0NyIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDx0ZXh0IHg9IjQ1NSIgeT0iNDUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPkE8L3RleHQ+DQogIDx0ZXh0IHg9IjQ1NSIgeT0iMjcwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIj5CPC90ZXh0Pg0KDQogIDwhLS0gUG9pbnQgQyAoMzMwKSBhbmQgRCgxNTApIC0tPg0KICA8Y2lyY2xlIGN4PSIzMzAiIGN5PSIyNTAiIHI9IjMiIGZpbGw9IiMzMzMiIC8+DQogIDx0ZXh0IHg9IjMyNSIgeT0iMjc1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIj5DPC90ZXh0Pg0KICA8Y2lyY2xlIGN4PSIxNTAiIGN5PSIyNTAiIHI9IjMiIGZpbGw9IiMzMzMiIC8+DQogIDx0ZXh0IHg9IjE0NSIgeT0iMjc1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIj5EPC90ZXh0Pg0KDQogIDxsaW5lIHgxPSIzMzAiIHkxPSIyNTAiIHgyPSI0NTAiIHkyPSI1MCIgc3Ryb2tlPSIjNDNBMDQ3IiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPGxpbmUgeDE9IjE1MCIgeTE9IjI1MCIgeDI9IjQ1MCIgeTI9IjUwIiBzdHJva2U9IiM0M0EwNDciIHN0cm9rZS13aWR0aD0iMiIvPg0KDQogIDwhLS0gNjAgYXQgQygzMzAsMjUwKSB0byBBKDQ1MCw1MCkuIGR4IDEyMCBkeSAtMjAwLiBVbml0KDAuNSwgLTAuODUpLiBFbmQgKDM1MCwgMjE2KSAtLT4NCiAgPHBhdGggZD0iTSAzNzAgMjUwIEEgNDAgNDAgMCAwIDAgMzUwIDIxNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNDNBMDQ3IiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPHRleHQgeD0iMzgwIiB5PSIyMzUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZmlsbD0iIzMzMyI+NjDCsDwvdGV4dD4NCg0KICA8IS0tIDMwIGF0IEQoMTUwLDI1MCkgdG8gQSg0NTAsNTApLiBkeCAzMDAgZHkgLTIwMC4gVW5pdCgwLjgzLCAtMC41NSkuIEVuZCAoMTgzLCAyMjgpIC0tPg0KICA8cGF0aCBkPSJNIDE5MCAyNTAgQSA0MCA0MCAwIDAgMCAxODMgMjI4IiBmaWxsPSJub25lIiBzdHJva2U9IiM0M0EwNDciIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8dGV4dCB4PSIyMTAiIHk9IjI0MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmaWxsPSIjMzMzIj4zMMKwPC90ZXh0Pg0KDQogIDxsaW5lIHgxPSIxNTAiIHkxPSIyODAiIHgyPSIzMzAiIHkyPSIyODAiIHN0cm9rZT0iIzMzMyIgbWFya2VyLXN0YXJ0PSJ1cmwoI2Fycm93KSIgbWFya2VyLWVuZD0idXJsKCNhcnJvdykiIC8+DQogIDx0ZXh0IHg9IjIyMCIgeT0iMzAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiMzMzMiPjIwIG08L3RleHQ+DQo8L3N2Zz4=" alt="Canal Tower Problem">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Let height be \\(h\\) and width of canal be \\(x\\).</div>
-        <div class="step">First point (60°): \\(\\tan 60^\\circ = \\frac{h}{x} \\Rightarrow h = x\\sqrt{3}\\).</div>
-        <div class="step">Second point (30°) at distance \\((x+20)\\):</div>
-        <div class="step">\\(\\tan 30^\\circ = \\frac{h}{x+20} \\Rightarrow \\frac{1}{\\sqrt{3}} = \\frac{h}{x+20} \\Rightarrow
-            h\\sqrt{3} = x+20\\).</div>
-        <div class="step">Substitute \\(h = x\\sqrt{3}\\):</div>
-        <div class="step">\\((x\\sqrt{3})\\sqrt{3} = x+20 \\Rightarrow 3x = x+20\\)</div>
-        <div class="step">\\(2x = 20 \\Rightarrow x = 10\\) m.</div>
-        <div class="step">Height \\(h = 10\\sqrt{3}\\) m.</div>
-        <div class="final-answer">Therefore, the required value is Height: \\(10\\sqrt{3}\\) m; Width: 10 m.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">12. From top of 7 m building... elevation 60°... depression 45°. Find height of tower.
-        </div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzUwIj4NCiAgPGRlZnM+DQogICAgPG1hcmtlciBpZD0iYXJyb3ciIG1hcmtlcldpZHRoPSIxMCIgbWFya2VySGVpZ2h0PSIxMCIgcmVmWD0iOSIgcmVmWT0iMyIgb3JpZW50PSJhdXRvIiBtYXJrZXJVbml0cz0ic3Ryb2tlV2lkdGgiPg0KICAgICAgPHBhdGggZD0iTTAsMCBMMCw2IEw5LDMgeiIgZmlsbD0iIzMzMyIgLz4NCiAgICA8L21hcmtlcj4NCiAgPC9kZWZzPg0KDQogIDxsaW5lIHgxPSIyMCIgeTE9IjMwMCIgeDI9IjM1MCIgeTI9IjMwMCIgc3Ryb2tlPSIjRkI4QzAwIiBzdHJva2Utd2lkdGg9IjIiLz4NCg0KICA8IS0tIEJ1aWxkaW5nIChMZWZ0KSAtLT4NCiAgPGxpbmUgeDE9IjUwIiB5MT0iMzAwIiB4Mj0iNTAiIHkyPSIyMDAiIHN0cm9rZT0iI0ZCOEMwMCIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDx0ZXh0IHg9IjM1IiB5PSIzMDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPkI8L3RleHQ+DQogIDx0ZXh0IHg9IjM1IiB5PSIyMDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPkE8L3RleHQ+DQogIDx0ZXh0IHg9IjEwIiB5PSIyNjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZmlsbD0iIzMzMyIgdHJhbnNmb3JtPSJyb3RhdGUoLTkwIDEwLDI2MCkiPjcgbTwvdGV4dD4NCg0KICA8IS0tIFRvd2VyIChSaWdodCkgLS0+DQogIDxsaW5lIHgxPSIzMDAiIHkxPSIzMDAiIHgyPSIzMDAiIHkyPSIyMCIgc3Ryb2tlPSIjRkI4QzAwIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPHRleHQgeD0iMzA1IiB5PSIzMDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPkQ8L3RleHQ+DQogIDx0ZXh0IHg9IjMwNSIgeT0iMjAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIj5FPC90ZXh0Pg0KICA8dGV4dCB4PSIzMDUiIHk9IjI1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIj5DPC90ZXh0Pg0KDQogIDwhLS0gSG9yaXpvbnRhbCBBRSAtLT4NCiAgPGxpbmUgeDE9IjUwIiB5MT0iMjAwIiB4Mj0iMzAwIiB5Mj0iMjAwIiBzdHJva2U9IiM1NTUiIHN0cm9rZS1kYXNoYXJyYXk9IjQiLz4NCg0KICA8IS0tIFNpZ2h0IExpbmVzIC0tPg0KICA8bGluZSB4MT0iNTAiIHkxPSIyMDAiIHgyPSIzMDAiIHkyPSIyMCIgc3Ryb2tlPSIjRkI4QzAwIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPGxpbmUgeDE9IjUwIiB5MT0iMjAwIiB4Mj0iMzAwIiB5Mj0iMzAwIiBzdHJva2U9IiNGQjhDMDAiIHN0cm9rZS13aWR0aD0iMiIvPg0KDQogIDwhLS0gNjAgRWxldmF0aW9uIGF0IEEoNTAsMjAwKSB0byBDKDMwMCwyMCkuIGR4IDI1MCBkeSAtMTgwLiBVbml0KDAuODEsIC0wLjU4KS4gRW5kICg4MiwgMTc3KSAtLT4NCiAgPHBhdGggZD0iTSA5MCAyMDAgQSA0MCA0MCAwIDAgMCA4MiAxNzciIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZCOEMwMCIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDx0ZXh0IHg9IjExMCIgeT0iMTgwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiMzMzMiPjYwwrA8L3RleHQ+DQoNCiAgPCEtLSA0NSBEZXByZXNzaW9uIGF0IEEgdG8gRCgzMDAsMzAwKS4gZHggMjUwIGR5IDEwMC4gVW5pdCgwLjkyLCAwLjM3KS4gRW5kICg4NywgMjE1KSAtLT4NCiAgPHBhdGggZD0iTSA5MCAyMDAgQSA0MCA0MCAwIDAgMSA4NyAyMTUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZCOEMwMCIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDx0ZXh0IHg9IjExMCIgeT0iMjMwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiMzMzMiPjQ1wrA8L3RleHQ+DQoNCjwvc3ZnPg==" alt="Cable Tower Problem">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Building height \\(AB = 7\\) m. Let tower be CD.</div>
-        <div class="step">Draw horizontal line from top of building A to tower at E.</div>
-        <div class="step">Angle of depression of foot is 45° \\(\\Rightarrow\\) Angle of elevation from foot to top of
-            building is 45°.</div>
-        <div class="step">\\(\\tan 45^\\circ = \\frac{7}{\\text{distance}} \\Rightarrow \\text{distance} = 7\\) m. So \\(AE = 7\\)
-            m.</div>
-        <div class="step">For top of tower (Angle 60°): In \\(\\triangle AEC\\), \\(\\tan 60^\\circ = \\frac{CE}{AE}\\).</div>
-        <div class="step">\\(\\sqrt{3} = \\frac{CE}{7} \\Rightarrow CE = 7\\sqrt{3}\\).</div>
-        <div class="step">Total height \\(CD = CE + ED = 7\\sqrt{3} + 7\\) (since \\(ED = AB = 7\\)).</div>
-        <div class="step">\\(CD = 7(\\sqrt{3} + 1)\\).</div>
-        <div class="final-answer">Therefore, the required value is \\(7(\\sqrt{3} + 1)\\) m.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">13. As observed from top of 75 m lighthouse... depressions 30° and 45°. Find distance
-            between ships.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NTAgMzUwIj4NCiAgPGxpbmUgeDE9IjIwIiB5MT0iMzAwIiB4Mj0iNDAwIiB5Mj0iMzAwIiBzdHJva2U9IiM4RTI0QUEiIHN0cm9rZS13aWR0aD0iMiIvPg0KDQogIDwhLS0gTGlnaHRob3VzZSAoUmlnaHQpIC0tPg0KICA8bGluZSB4MT0iMzUwIiB5MT0iMzAwIiB4Mj0iMzUwIiB5Mj0iNTAiIHN0cm9rZT0iIzhFMjRBQSIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDx0ZXh0IHg9IjM1NSIgeT0iMzAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIj5CPC90ZXh0Pg0KICA8dGV4dCB4PSIzNTUiIHk9IjUwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIj5BPC90ZXh0Pg0KICA8dGV4dCB4PSIzNjAiIHk9IjE3MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmaWxsPSIjMzMzIj43NSBtPC90ZXh0Pg0KDQogIDwhLS0gVG9wIEhvcml6b250YWwgLS0+DQogIDxsaW5lIHgxPSI1MCIgeTE9IjUwIiB4Mj0iMzUwIiB5Mj0iNTAiIHN0cm9rZT0iIzU1NSIgc3Ryb2tlLWRhc2hhcnJheT0iNCIvPg0KICA8dGV4dCB4PSI0MCIgeT0iNTUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPlA8L3RleHQ+DQoNCiAgPCEtLSBQb2ludHMgQygyMTAsIDMwMCkgYW5kIEQoMTAwLCAzMDApIC0tPg0KICA8Y2lyY2xlIGN4PSIyMTAiIGN5PSIzMDAiIHI9IjMiIGZpbGw9IiMzMzMiLz4NCiAgPHRleHQgeD0iMjA1IiB5PSIzMjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPkM8L3RleHQ+DQoNCiAgPGNpcmNsZSBjeD0iMTAwIiBjeT0iMzAwIiByPSIzIiBmaWxsPSIjMzMzIi8+DQogIDx0ZXh0IHg9Ijk1IiB5PSIzMjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPkQ8L3RleHQ+DQoNCiAgPGxpbmUgeDE9IjIxMCIgeTE9IjMwMCIgeDI9IjM1MCIgeTI9IjUwIiBzdHJva2U9IiM4RTI0QUEiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8bGluZSB4MT0iMTAwIiB5MT0iMzAwIiB4Mj0iMzUwIiB5Mj0iNTAiIHN0cm9rZT0iIzhFMjRBQSIgc3Ryb2tlLXdpZHRoPSIyIi8+DQoNCiAgPCEtLSA0NSBEZXByZXNzaW9uIGF0IFAoNTAsNTApPyBObywgQSgzNTAsNTApLiBQIGlzIGxlZnQuIEFuZ2xlIFAtQS1DLiBGYWNlIExlZnQuIC0tPg0KICA8cGF0aCBkPSJNIDMxMCA1MCBBIDQwIDQwIDAgMCAwIDMyOSA4OCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjOEUyNEFBIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPCEtLSBDYWxjOiBBKDM1MCw1MCkgdG8gQygyMTAsMzAwKS4gZHggLTE0MCBkeSAyNTAuIFVuaXQoLTAuNDksIDAuODcpLiBFbmQgKDMzMCwgODUpIC0tPg0KICA8cGF0aCBkPSJNIDMxMCA1MCBBIDQwIDQwIDAgMCAwIDMzMCA4NSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjOEUyNEFBIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPHRleHQgeD0iMjgwIiB5PSI4MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmaWxsPSIjMzMzIj40NcKwPC90ZXh0Pg0KDQogIDwhLS0gMzAgRGVwcmVzc2lvbiB0byBEKDEwMCwzMDApLiBkeCAtMjUwIGR5IDI1MC4gVW5pdCgtMC43LCAwLjcpLiBFbmQgKDMyMiwgNzgpIC0tPg0KICA8cGF0aCBkPSJNIDMxMCA1MCBBIDQwIDQwIDAgMCAwIDMyMiA3OCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjOEUyNEFBIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPHRleHQgeD0iMjEwIiB5PSI3MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmaWxsPSIjMzMzIj4zMMKwPC90ZXh0Pg0KDQo8L3N2Zz4=" alt="Lighthouse Ships">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Height \\(h = 75\\) m. Let ships be at distances \\(y\\) (near) and \\(x\\) (far).</div>
-        <div class="step">Near ship (Angle 45°): \\(\\tan 45^\\circ = \\frac{75}{y} \\Rightarrow 1 = \\frac{75}{y} \\Rightarrow
-            y = 75\\) m.</div>
-        <div class="step">Far ship (Angle 30°): \\(\\tan 30^\\circ = \\frac{75}{x} \\Rightarrow \\frac{1}{\\sqrt{3}} =
-            \\frac{75}{x} \\Rightarrow x = 75\\sqrt{3}\\) m.</div>
-        <div class="step">Distance between ships = \\(x - y\\)</div>
-        <div class="step">\\(= 75\\sqrt{3} - 75 = 75(\\sqrt{3} - 1)\\).</div>
-        <div class="final-answer">Therefore, the required value is \\(75(\\sqrt{3} - 1)\\) m.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">14. A 1.2 m tall girl spots a balloon... height 88.2 m... angle reduces 60° to 30°. Find
-            distance travelled.</div>
-            here]</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MDAgMzUwIj4NCiAgPGRlZnM+DQogICAgPG1hcmtlciBpZD0iYXJyb3ciIG1hcmtlcldpZHRoPSIxMCIgbWFya2VySGVpZ2h0PSIxMCIgcmVmWD0iOSIgcmVmWT0iMyIgb3JpZW50PSJhdXRvIiBtYXJrZXJVbml0cz0ic3Ryb2tlV2lkdGgiPg0KICAgICAgPHBhdGggZD0iTTAsMCBMMCw2IEw5LDMgeiIgZmlsbD0iIzMzMyIgLz4NCiAgICA8L21hcmtlcj4NCiAgPC9kZWZzPg0KDQogIDxsaW5lIHgxPSIyMCIgeTE9IjMwMCIgeDI9IjQ4MCIgeTI9IjMwMCIgc3Ryb2tlPSIjRDgxQjYwIiBzdHJva2Utd2lkdGg9IjIiLz4NCg0KICA8IS0tIEdpcmwgLS0+DQogIDxsaW5lIHgxPSI1MCIgeTE9IjMwMCIgeDI9IjUwIiB5Mj0iMjUwIiBzdHJva2U9IiNEODFCNjAiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8dGV4dCB4PSI0NSIgeT0iMzIwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIj5EPC90ZXh0Pg0KICA8dGV4dCB4PSI0NSIgeT0iMjQ1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIj5DPC90ZXh0Pg0KICA8dGV4dCB4PSI1IiB5PSIyODAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCI+MS4ybTwvdGV4dD4NCg0KICA8IS0tIEV5ZSBMZXZlbCAtLT4NCiAgPGxpbmUgeDE9IjUwIiB5MT0iMjUwIiB4Mj0iNDUwIiB5Mj0iMjUwIiBzdHJva2U9IiM1NTUiIHN0cm9rZS1kYXNoYXJyYXk9IjQiLz4NCg0KICA8IS0tIEJhbGxvb24gQSAoMTUwLDgwKSAtLT4NCiAgPGNpcmNsZSBjeD0iMTUwIiBjeT0iODAiIHI9IjEwIiBmaWxsPSJub25lIiBzdHJva2U9IiNEODFCNjAiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8bGluZSB4MT0iMTUwIiB5MT0iOTAiIHgyPSIxNTAiIHkyPSIzMDAiIHN0cm9rZT0iI0Q4MUI2MCIgc3Ryb2tlLWRhc2hhcnJheT0iMiIgc3Ryb2tlLXdpZHRoPSIxIi8+DQogIDx0ZXh0IHg9IjE0MCIgeT0iNzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPkE8L3RleHQ+DQogIA0KICA8IS0tIEJhbGxvb24gQiAoMzUwLDgwKSAtLT4NCiAgPGNpcmNsZSBjeD0iMzUwIiBjeT0iODAiIHI9IjEwIiBmaWxsPSJub25lIiBzdHJva2U9IiNEODFCNjAiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8bGluZSB4MT0iMzUwIiB5MT0iOTAiIHgyPSIzNTAiIHkyPSIzMDAiIHN0cm9rZT0iI0Q4MUI2MCIgc3Ryb2tlLXdpZHRoPSIxIi8+DQogIDx0ZXh0IHg9IjM0MCIgeT0iNzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPkI8L3RleHQ+DQogIDx0ZXh0IHg9IjM2MCIgeT0iMjAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiPjg4LjIgbTwvdGV4dD4NCg0KICA8bGluZSB4MT0iNTAiIHkxPSIyNTAiIHgyPSIxNTAiIHkyPSI4MCIgc3Ryb2tlPSIjRDgxQjYwIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPGxpbmUgeDE9IjUwIiB5MT0iMjUwIiB4Mj0iMzUwIiB5Mj0iODAiIHN0cm9rZT0iI0Q4MUI2MCIgc3Ryb2tlLXdpZHRoPSIyIi8+DQoNCiAgPCEtLSA2MCB0byBBKDE1MCw4MCkuIGR4IDEwMCBkeSAtMTcwLiBVbml0KDAuNSwgLTAuODYpLiBFbmQgKDcwLCAyMTYpIC0tPg0KICA8cGF0aCBkPSJNIDkwIDI1MCBBIDQwIDQwIDAgMCAwIDcwIDIxNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRDgxQjYwIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPHRleHQgeD0iOTAiIHk9IjIxMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmaWxsPSIjMzMzIj42MMKwPC90ZXh0Pg0KDQogIDwhLS0gMzAgdG8gQigzNTAsODApLiBkeCAzMDAgZHkgLTE3MC4gVW5pdCgwLjg3LCAtMC40OSkuIEVuZCAoODUsIDIzMCkgLS0+DQogIDxwYXRoIGQ9Ik0gOTAgMjUwIEEgNDAgNDAgMCAwIDAgODUgMjMwIiBmaWxsPSJub25lIiBzdHJva2U9IiNEODFCNjAiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8dGV4dCB4PSIxMjAiIHk9IjI0MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmaWxsPSIjMzMzIj4zMMKwPC90ZXh0Pg0KDQo8L3N2Zz4=" alt="Balloon Problem">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Balloon height from ground = 88.2 m. Girl height = 1.2 m.</div>
-        <div class="step">Effective height \\(h = 88.2 - 1.2 = 87\\) m.</div>
-        <div class="step">Position 1 (Angle 60°): Let horizontal distance be \\(x\\).</div>
-        <div class="step">\\(\\tan 60^\\circ = \\frac{87}{x} \\Rightarrow \\sqrt{3} = \\frac{87}{x} \\Rightarrow x =
-            \\frac{87}{\\sqrt{3}} = 29\\sqrt{3}\\).</div>
-        <div class="step">Position 2 (Angle 30°): Let horizontal distance be \\(y\\).</div>
-        <div class="step">\\(\\tan 30^\\circ = \\frac{87}{y} \\Rightarrow \\frac{1}{\\sqrt{3}} = \\frac{87}{y} \\Rightarrow y =
-            87\\sqrt{3}\\).</div>
-        <div class="step">Distance travelled = \\(y - x\\)</div>
-        <div class="step">\\(= 87\\sqrt{3} - 29\\sqrt{3} = 58\\sqrt{3}\\).</div>
-        <div class="final-answer">Therefore, the required value is \\(58\\sqrt{3}\\) m.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">15. A straight highway leads to foot of tower... car at 30°... 6 seconds later 60°. Find
-            time taken.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NTAgMzUwIj4NCiAgPGRlZnM+DQogICAgPG1hcmtlciBpZD0iYXJyb3ciIG1hcmtlcldpZHRoPSIxMCIgbWFya2VySGVpZ2h0PSIxMCIgcmVmWD0iOSIgcmVmWT0iMyIgb3JpZW50PSJhdXRvIiBtYXJrZXJVbml0cz0ic3Ryb2tlV2lkdGgiPg0KICAgICAgPHBhdGggZD0iTTAsMCBMMCw2IEw5LDMgeiIgZmlsbD0iIzMzMyIgLz4NCiAgICA8L21hcmtlcj4NCiAgPC9kZWZzPg0KDQogIDxsaW5lIHgxPSIyMCIgeTE9IjMwMCIgeDI9IjQwMCIgeTI9IjMwMCIgc3Ryb2tlPSIjMDBBQ0MxIiBzdHJva2Utd2lkdGg9IjIiLz4NCg0KICA8IS0tIFRvd2VyIChSaWdodCkgLS0+DQogIDxsaW5lIHgxPSIzNTAiIHkxPSIzMDAiIHgyPSIzNTAiIHkyPSI1MCIgc3Ryb2tlPSIjMDBBQ0MxIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPHRleHQgeD0iMzU1IiB5PSI0NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCI+QTwvdGV4dD4NCiAgPHRleHQgeD0iMzU1IiB5PSIzMDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPkI8L3RleHQ+DQoNCiAgPCEtLSBUb3AgSG9yaXpvbnRhbCBmcm9tIEEoMzUwLDUwKSAtLT4NCiAgPGxpbmUgeDE9IjEwMCIgeTE9IjUwIiB4Mj0iMzUwIiB5Mj0iNTAiIHN0cm9rZT0iIzU1NSIgc3Ryb2tlLWRhc2hhcnJheT0iNCIvPg0KDQogIDwhLS0gQygyNTApIEQoMTAwKSAtLT4NCiAgPGNpcmNsZSBjeD0iMjUwIiBjeT0iMzAwIiByPSIzIiBmaWxsPSIjMzMzIi8+DQogIDx0ZXh0IHg9IjI0NSIgeT0iMzI1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIj5DPC90ZXh0Pg0KDQogIDxjaXJjbGUgY3g9IjEwMCIgY3k9IjMwMCIgcj0iMyIgZmlsbD0iIzMzMyIvPg0KICA8dGV4dCB4PSI5NSIgeT0iMzI1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIj5EPC90ZXh0Pg0KDQogIDxsaW5lIHgxPSIyNTAiIHkxPSIzMDAiIHgyPSIzNTAiIHkyPSI1MCIgc3Ryb2tlPSIjMDBBQ0MxIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPGxpbmUgeDE9IjEwMCIgeTE9IjMwMCIgeDI9IjM1MCIgeTI9IjUwIiBzdHJva2U9IiMwMEFDQzEiIHN0cm9rZS13aWR0aD0iMiIvPg0KDQogIDwhLS0gNjAgYXQgQSB0byBDKDI1MCwzMDApLiBkeCAtMTAwIGR5IDI1MC4gVW5pdCgtMC4zNywgMC45MykuIEVuZCAoMzM1LCA4NykgLS0+DQogIDxwYXRoIGQ9Ik0gMzEwIDUwIEEgNDAgNDAgMCAwIDAgMzM1IDg3IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMEFDQzEiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8dGV4dCB4PSIyODAiIHk9IjgwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiMzMzMiPjYwwrA8L3RleHQ+DQoNCiAgPCEtLSAzMCBhdCBBIHRvIEQoMTAwLDMwMCkuIGR4IC0yNTAgZHkgMjUwLiBVbml0KC0wLjcsIDAuNykuIEVuZCAoMzIyLCA3OCkgLS0+DQogIDxwYXRoIGQ9Ik0gMzEwIDUwIEEgNDAgNDAgMCAwIDAgMzIyIDc4IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMEFDQzEiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8dGV4dCB4PSIyNjAiIHk9IjcwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiMzMzMiPjMwwrA8L3RleHQ+DQoNCiAgPGxpbmUgeDE9IjEwMCIgeTE9IjMzMCIgeDI9IjI1MCIgeTI9IjMzMCIgc3Ryb2tlPSIjMzMzIiBtYXJrZXItc3RhcnQ9InVybCgjYXJyb3cpIiBtYXJrZXItZW5kPSJ1cmwoI2Fycm93KSIgLz4NCiAgPHRleHQgeD0iMTQwIiB5PSIzNTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzMzMyI+NiBzZWM8L3RleHQ+DQoNCjwvc3ZnPg==" alt="Car Speed Problem">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Let height be \\(h\\). Distances \\(x\\) (at 30°) and \\(y\\) (at 60°).</div>
-        <div class="step">At 60°: \\(\\tan 60^\\circ = \\frac{h}{y} \\Rightarrow h = y\\sqrt{3}\\).</div>
-        <div class="step">At 30°: \\(\\tan 30^\\circ = \\frac{h}{x} \\Rightarrow h = \\frac{x}{\\sqrt{3}}\\).</div>
-        <div class="step">Equating \\(h\\): \\(\\frac{x}{\\sqrt{3}} = y\\sqrt{3} \\Rightarrow x = 3y\\).</div>
-        <div class="step">Distance travelled in 6 seconds = \\(x - y = 3y - y = 2y\\).</div>
-        <div class="step">Time to cover distance \\(2y\\) is 6 seconds.</div>
-        <div class="step">Time to cover distance \\(y\\) is \\(\\frac{6}{2} = 3\\) seconds.</div>
-        <div class="final-answer">Therefore, the required value is 3 seconds.</div>
-    </div>
-
-
-
-</body>
-
-</html>`,
-        examples: `<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Applications of Trigonometry - Examples</title>
-    
-    
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
-
-        body {
-            font-family: 'Noto Sans', sans-serif;
-            margin: 0;
-            padding: 15px;
-            background: #fff;
-            color: #333;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #6C63FF;
-            padding-bottom: 10px;
-            font-family: 'Nunito', sans-serif;
-        }
-
-        .logo {
-            color: #6C63FF;
-            font-size: 24px;
-            font-weight: 800;
-        }
-
-        .chapter-title {
-            text-align: center;
-            color: #333;
-            font-size: 20px;
-            font-weight: 700;
-            margin: 10px 0;
-            font-family: 'Noto Sans', sans-serif;
-        }
-
-        .content-box {
-            background: #f8f9fa;
-            border: 1px solid #e9ecef;
-            border-radius: 8px;
-            padding: 15px;
-            margin-bottom: 15px;
-            display: flow-root;
-            transition: transform 0.2s ease;
-        }
-
-        .question {
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: #333;
-        }
-
-        .step {
-            margin-bottom: 8px;
-            font-size: 1.1em;
-            color: #000;
-            line-height: 1.6;
-            display: block;
-        }
-
-        .final-answer {
-            color: #2E7D32;
-            font-weight: 700;
-            margin-top: 10px;
-            font-size: 1.2em;
-        }
-
-        .solution-header {
-            color: #2E7D32;
-            font-weight: 700;
-            margin-bottom: 5px;
-        }
-
-        .formula {
-            font-weight: bold;
-            color: #2E7D32;
-            margin: 5px 0;
-            display: inline-block;
-        }
-
-        .diagram-placeholder {
-            float: right;
-            border: 2px dashed #bbb;
-            padding: 10px;
-            margin: 0 0 10px 15px;
-            background: #fff;
-            color: #555;
-            font-size: 0.9em;
-            max-width: 280px;
-            text-align: center;
-        }
-
-        img {
-            float: right;
-            margin-left: 20px;
-            margin-bottom: 15px;
-            max-width: 280px;
-            height: auto;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            padding: 5px;
-            background: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        @media (max-width: 600px) {
-
-            img,
-            .diagram-placeholder {
-                float: none;
-                display: block;
-                margin: 10px auto;
-                max-width: 100%;
-            }
-        }
-    </style>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    renderMathInElement(document.body, {
-      delimiters: [
-        {left: '\\\\(', right: '\\\\)', display: false},
-        {left: '\\\\[', right: '\\\\]', display: true}
-      ]
-    });
-  });
-</script>
-
-<style>
-  body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
-  .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #00C6FF !important; color: #fff !important; }
-  h1, h2, h3, h4, h5, h6 { color: #00C6FF !important; }
-  .question { color: #00C6FF !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; font-size: 15px !important; }
-  .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; font-size: 15px !important; }
-  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; font-size: 15px !important; }
-  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; font-size: 15px !important; }
-  .formula { color: #4CAF50 !important; }
-  .true-text { color: #4CAF50 !important; }
-  .false-text { color: #F44336 !important; }
-  table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
-  .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
-  img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #00C6FF !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
-  * { font-family: 'Noto Sans', sans-serif !important; }
-
-  .question { font-size: 0.95em !important; }
-  .sub-question { font-size: 0.9em !important; }
-  .step { font-size: 0.9em !important; }
-  .final-answer { font-size: 0.95em !important; }
-</style>
-</head>
-
-<body>
-
-    
-
-    <div class="content-box">
-        <div class="question">Example 1. A tower stands vertically on the ground... 15 m away... angle 60°. Find height.
-        </div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNTAgMzAwIj4NCiAgPGRlZnM+DQogICAgPG1hcmtlciBpZD0iYXJyb3ciIG1hcmtlcldpZHRoPSIxMCIgbWFya2VySGVpZ2h0PSIxMCIgcmVmWD0iOSIgcmVmWT0iMyIgb3JpZW50PSJhdXRvIiBtYXJrZXJVbml0cz0ic3Ryb2tlV2lkdGgiPg0KICAgICAgPHBhdGggZD0iTTAsMCBMMCw2IEw5LDMgeiIgZmlsbD0iIzMzMyIgLz4NCiAgICA8L21hcmtlcj4NCiAgPC9kZWZzPg0KDQogIDxsaW5lIHgxPSIyMCIgeTE9IjI1MCIgeDI9IjMzMCIgeTI9IjI1MCIgc3Ryb2tlPSIjMTU2NUMwIiBzdHJva2Utd2lkdGg9IjIiLz4NCg0KICA8IS0tIFRvd2VyIEFCLiBCKDI1MCwgMjUwKS4gQSgyNTAsIDc3KSAtLT4NCiAgPCEtLSBCYXNlIDEwMCB1bml0cyA9IDE1bS4gSGVpZ2h0ID0gMTczIHVuaXRzLiAtLT4NCiAgPGxpbmUgeDE9IjI1MCIgeTE9IjI1MCIgeDI9IjI1MCIgeTI9Ijc3IiBzdHJva2U9IiMxNTY1QzAiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8dGV4dCB4PSIyNTUiIHk9IjcwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIj5BPC90ZXh0Pg0KICA8dGV4dCB4PSIyNTUiIHk9IjI3MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCI+QjwvdGV4dD4NCiAgPHRleHQgeD0iMjYwIiB5PSIxNzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzMzMyI+aDwvdGV4dD4NCg0KICA8IS0tIFBvaW50IEMoMTUwLCAyNTApIC0tPg0KICA8Y2lyY2xlIGN4PSIxNTAiIGN5PSIyNTAiIHI9IjMiIGZpbGw9IiMzMzMiIC8+DQogIDx0ZXh0IHg9IjE0MCIgeT0iMjcwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIj5DPC90ZXh0Pg0KDQogIDwhLS0gSHlwb3RlbnVzZSBBQyAtLT4NCiAgPGxpbmUgeDE9IjE1MCIgeTE9IjI1MCIgeDI9IjI1MCIgeTI9Ijc3IiBzdHJva2U9IiMxNTY1QzAiIHN0cm9rZS13aWR0aD0iMiIvPg0KDQogIDwhLS0gQW5nbGUgNjAgYXQgQy4gZHggMTAwIGR5IC0xNzMuIFVuaXQoMC41LCAtMC44NikuIEVuZCAoMTcwLCAyMTUpIC0tPg0KICA8cGF0aCBkPSJNIDE5MCAyNTAgQSA0MCA0MCAwIDAgMCAxNzAgMjE1IiBmaWxsPSJub25lIiBzdHJva2U9IiMxNTY1QzAiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8dGV4dCB4PSIyMDAiIHk9IjIzNSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmaWxsPSIjMzMzIj42MMKwPC90ZXh0Pg0KDQogIDxsaW5lIHgxPSIxNTAiIHkxPSIyODAiIHgyPSIyNTAiIHkyPSIyODAiIHN0cm9rZT0iIzMzMyIgbWFya2VyLXN0YXJ0PSJ1cmwoI2Fycm93KSIgbWFya2VyLWVuZD0idXJsKCNhcnJvdykiIC8+DQogIDx0ZXh0IHg9IjE4NSIgeT0iMzAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiMzMzMiPjE1IG08L3RleHQ+DQo8L3N2Zz4=" alt="Tower Problem">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Let height of tower be \\(h\\). Distance from foot is 15 m.</div>
-        <div class="step">Angle of elevation \\(\\theta = 60^\\circ\\).</div>
-        <div class="step">In the right triangle formed:</div>
-        <div class="step">\\(\\tan 60^\\circ = \\frac{h}{15}\\)</div>
-        <div class="step"><span class="formula">\\(\\sqrt{3} = \\frac{h}{15}\\)</span></div>
-        <div class="step">\\(h = 15\\sqrt{3}\\) m.</div>
-        <div class="final-answer">Therefore, the required value is \\(15\\sqrt{3}\\) m.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">Example 2. An electrician has to repair... pole height 5 m... reach point 1.3 m below
-            top... angle 60°. Find ladder length and distance.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNTAgMzUwIj4NCiAgPGRlZnM+DQogICAgPG1hcmtlciBpZD0iYXJyb3ciIG1hcmtlcldpZHRoPSIxMCIgbWFya2VySGVpZ2h0PSIxMCIgcmVmWD0iOSIgcmVmWT0iMyIgb3JpZW50PSJhdXRvIiBtYXJrZXJVbml0cz0ic3Ryb2tlV2lkdGgiPg0KICAgICAgPHBhdGggZD0iTTAsMCBMMCw2IEw5LDMgeiIgZmlsbD0iIzMzMyIgLz4NCiAgICA8L21hcmtlcj4NCiAgPC9kZWZzPg0KDQogIDwhLS0gR3JvdW5kIC0tPg0KICA8bGluZSB4MT0iNTAiIHkxPSIzMDAiIHgyPSIzMDAiIHkyPSIzMDAiIHN0cm9rZT0iIzJFN0QzMiIgc3Ryb2tlLXdpZHRoPSIyIi8+DQoNCiAgPCEtLSBQb2xlIEFELiBEKDEwMCwgMzAwKS4gSGVpZ2h0IDI1MHB4ICg1bSkuIEEoMTAwLCA1MCkuIC0tPg0KICA8bGluZSB4MT0iMTAwIiB5MT0iMzAwIiB4Mj0iMTAwIiB5Mj0iNTAiIHN0cm9rZT0iIzJFN0QzMiIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDx0ZXh0IHg9IjEwNSIgeT0iNTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPkE8L3RleHQ+DQogIDx0ZXh0IHg9IjEwNSIgeT0iMzIwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIj5EPC90ZXh0Pg0KDQogIDwhLS0gUG9pbnQgQiAoMS4zbSBiZWxvdyBBKSAtPiAxLjNtID0gNjVweC4geSA9IDExNS4gLS0+DQogIDxsaW5lIHgxPSI5MCIgeTE9IjExNSIgeDI9IjExMCIgeTI9IjExNSIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPHRleHQgeD0iNzAiIHk9IjEyMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCI+QjwvdGV4dD4NCg0KICA8IS0tIDEuM20gZGltZW5zaW9uIC0tPg0KICA8bGluZSB4MT0iMTMwIiB5MT0iNTAiIHgyPSIxMzAiIHkyPSIxMTUiIHN0cm9rZT0iIzU1NSIgbWFya2VyLXN0YXJ0PSJ1cmwoI2Fycm93KSIgbWFya2VyLWVuZD0idXJsKCNhcnJvdykiLz4NCiAgPHRleHQgeD0iMTM1IiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2Ij4xLjMgbTwvdGV4dD4NCg0KICA8IS0tIEZvb3Qgb2YgTGFkZGVyIEMuIERpc3QgPSAyLjE0bSA9IDEwN3B4LiB4ID0gMjA3LiAtLT4NCiAgPGNpcmNsZSBjeD0iMjA3IiBjeT0iMzAwIiByPSIzIiBmaWxsPSIjMzMzIi8+DQogIDx0ZXh0IHg9IjIxNSIgeT0iMzIwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIj5DPC90ZXh0Pg0KDQogIDwhLS0gTGFkZGVyIEJDIC0tPg0KICA8bGluZSB4MT0iMjA3IiB5MT0iMzAwIiB4Mj0iMTAwIiB5Mj0iMTE1IiBzdHJva2U9IiNGRjZGMDAiIHN0cm9rZS13aWR0aD0iMiIvPg0KICANCiAgPCEtLSBBbmdsZSA2MCBhdCBDLiBkeCAtMTA3IGR5IC0xODUuIFVuaXQoLTAuNSwgLTAuODY2KS4gRW5kICgxODcsIDI2NSkgLS0+DQogIDxwYXRoIGQ9Ik0gMTY3IDMwMCBBIDQwIDQwIDAgMCAxIDE4NyAyNjUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGNkYwMCIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDx0ZXh0IHg9IjE1MCIgeT0iMjgwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiMzMzMiPjYwwrA8L3RleHQ+DQoNCjwvc3ZnPg==" alt="Electrician Pole Problem">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Height of pole = 5 m. She needs to reach 1.3 m below top.</div>
-        <div class="step">So, height of the point to reach \\(AD = 5 - 1.3 = 3.7\\) m.</div>
-        <div class="step">Angle of inclination = 60°. Let ladder length be \\(L\\) and distance from foot be \\(d\\).</div>
-        <div class="step">In the right triangle:</div>
-        <div class="step">\\(\\sin 60^\\circ = \\frac{\\text{Opposite}}{\\text{Hypotenuse}} = \\frac{3.7}{L}\\)</div>
-        <div class="step">\\(\\frac{\\sqrt{3}}{2} = \\frac{3.7}{L}\\)</div>
-        <div class="step">\\(L = \\frac{3.7 \\times 2}{\\sqrt{3}} = \\frac{7.4}{1.73} \\approx 4.28\\) m.</div>
-        <div class="step">Also, \\(\\cot 60^\\circ = \\frac{\\text{Adjacent}}{\\text{Opposite}} = \\frac{d}{3.7}\\)</div>
-        <div class="step">\\(\\frac{1}{\\sqrt{3}} = \\frac{d}{3.7}\\)</div>
-        <div class="step">\\(d = \\frac{3.7}{1.73} \\approx 2.14\\) m.</div>
-        <div class="final-answer">Therefore, the required value is Length: 4.28 m; Distance: 2.14 m.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">Example 3. An observer 1.5 m tall is 28.5 m away from a chimney... angle 45°. Find height
-            of chimney.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNTAgMzUwIj4NCiAgPGRlZnM+DQogICAgPG1hcmtlciBpZD0iYXJyb3ciIG1hcmtlcldpZHRoPSIxMCIgbWFya2VySGVpZ2h0PSIxMCIgcmVmWD0iOSIgcmVmWT0iMyIgb3JpZW50PSJhdXRvIiBtYXJrZXJVbml0cz0ic3Ryb2tlV2lkdGgiPg0KICAgICAgPHBhdGggZD0iTTAsMCBMMCw2IEw5LDMgeiIgZmlsbD0iIzMzMyIgLz4NCiAgICA8L21hcmtlcj4NCiAgPC9kZWZzPg0KDQogIDwhLS0gUmVjdGFuZ2xlIERDQkUgLS0+DQogIDwhLS0gQyg1MCwgMzIwKSwgQigzMDAsIDMyMCksIEUoMzAwLCAyNzApLCBEKDUwLCAyNzApIC0tPg0KICA8cG9seWxpbmUgcG9pbnRzPSI1MCwyNzAgNTAsMzIwIDMwMCwzMjAgMzAwLDI3MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPGxpbmUgeDE9IjUwIiB5MT0iMjcwIiB4Mj0iMzAwIiB5Mj0iMjcwIiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMiIvPg0KICANCiAgPCEtLSBUcmlhbmdsZSBBREUgLS0+DQogIDwhLS0gRCg1MCwgMjcwKSwgRSgzMDAsIDI3MCksIEEoMzAwLCAyMCkgLS0+DQogIDxsaW5lIHgxPSI1MCIgeTE9IjI3MCIgeDI9IjMwMCIgeTI9IjIwIiBzdHJva2U9IiNEODFCNjAiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8bGluZSB4MT0iMzAwIiB5MT0iMjcwIiB4Mj0iMzAwIiB5Mj0iMjAiIHN0cm9rZT0iI0Q4MUI2MCIgc3Ryb2tlLXdpZHRoPSIyIi8+DQoNCiAgPCEtLSBSaWdodCBBbmdsZSBTeW1ib2wgYXQgRSAtLT4NCiAgPHJlY3QgeD0iMjgwIiB5PSIyNTAiIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiLz4NCg0KICA8IS0tIExhYmVscyAtLT4NCiAgPHRleHQgeD0iMzAwIiB5PSIxNSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCI+QTwvdGV4dD4NCiAgPHRleHQgeD0iMzAwIiB5PSIzNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPkI8L3RleHQ+DQogIDx0ZXh0IHg9IjQwIiB5PSIzNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPkM8L3RleHQ+DQogIDx0ZXh0IHg9IjMwIiB5PSIyNzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPkQ8L3RleHQ+DQogIDx0ZXh0IHg9IjMxMCIgeT0iMjcwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIj5FPC90ZXh0Pg0KDQogIDwhLS0gRGltZW5zaW9ucyAtLT4NCiAgPHRleHQgeD0iMTQwIiB5PSIyNjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCI+MjguNSBtPC90ZXh0Pg0KICA8dGV4dCB4PSIxNDAiIHk9IjM0MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4Ij4yOC41IG08L3RleHQ+DQogIA0KICA8dGV4dCB4PSI1IiB5PSIyOTUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiI+MS41IG08L3RleHQ+DQogIDx0ZXh0IHg9IjMwNSIgeT0iMzAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiPjEuNSBtPC90ZXh0Pg0KICANCiAgPCEtLSBIZWlnaHQgQUIgUXVlc3Rpb24gTWFyayAtLT4NCiAgPGxpbmUgeDE9IjMzMCIgeTE9IjIwIiB4Mj0iMzMwIiB5Mj0iMzIwIiBzdHJva2U9IiMzMzMiIG1hcmtlci1zdGFydD0idXJsKCNhcnJvdykiIG1hcmtlci1lbmQ9InVybCgjYXJyb3cpIi8+DQogIDx0ZXh0IHg9IjM0MCIgeT0iMTcwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjQiIGZvbnQtd2VpZ2h0PSJib2xkIj4/PC90ZXh0Pg0KDQogIDwhLS0gQW5nbGUgNDUgYXQgRC4gZHggMjUwIGR5IC0yNTAuIFVuaXQoMC43MDcsIC0wLjcwNykuIEVuZCAoNTArMjg9NzgsIDI3MC0yOD0yNDIpIC0tPg0KICA8cGF0aCBkPSJNIDkwIDI3MCBBIDQwIDQwIDAgMCAwIDc4IDI0MiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRDgxQjYwIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPHRleHQgeD0iMTAwIiB5PSIyNTUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZmlsbD0iIzMzMyI+NDXCsDwvdGV4dD4NCg0KPC9zdmc+" alt="Chimney Problem">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Let height of chimney above eye level be \\(h\\). Horizontal distance = 28.5 m.</div>
-        <div class="step">Angle of elevation = 45°.</div>
-        <div class="step">\\(\\tan 45^\\circ = \\frac{h}{28.5}\\)</div>
-        <div class="step"><span class="formula">\\(1 = \\frac{h}{28.5}\\)</span></div>
-        <div class="step">\\(h = 28.5\\) m.</div>
-        <div class="step">Total height of chimney = \\(h + \\text{observer height}\\)</div>
-        <div class="step">\\(= 28.5 + 1.5 = 30\\) m.</div>
-        <div class="final-answer">Therefore, the required value is 30 m.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">Example 4. From a point P... elevation of 10 m building 30°... flagstaff 45°. Find length
-            of flagstaff.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNTAgMzUwIj4NCiAgPGRlZnM+DQogICAgPG1hcmtlciBpZD0iYXJyb3ciIG1hcmtlcldpZHRoPSIxMCIgbWFya2VySGVpZ2h0PSIxMCIgcmVmWD0iOSIgcmVmWT0iMyIgb3JpZW50PSJhdXRvIiBtYXJrZXJVbml0cz0ic3Ryb2tlV2lkdGgiPg0KICAgICAgPHBhdGggZD0iTTAsMCBMMCw2IEw5LDMgeiIgZmlsbD0iIzMzMyIgLz4NCiAgICA8L21hcmtlcj4NCiAgPC9kZWZzPg0KDQogIDxsaW5lIHgxPSIyMCIgeTE9IjMwMCIgeDI9IjMwMCIgeTI9IjMwMCIgc3Ryb2tlPSIjN0IxRkEyIiBzdHJva2Utd2lkdGg9IjIiLz4NCg0KICA8IS0tIEJ1aWxkaW5nIEFCLiBBKDIyMywgMzAwKS4gQigyMjMsIDIwMCkuIC0tPg0KICA8bGluZSB4MT0iMjIzIiB5MT0iMzAwIiB4Mj0iMjIzIiB5Mj0iMjAwIiBzdHJva2U9IiM3QjFGQTIiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8dGV4dCB4PSIyMzAiIHk9IjMwMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCI+QTwvdGV4dD4NCiAgPHRleHQgeD0iMjMwIiB5PSIyMDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPkI8L3RleHQ+DQogIDx0ZXh0IHg9IjIzNSIgeT0iMjUwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiMzMzMiPjEwIG08L3RleHQ+DQoNCiAgPCEtLSBGbGFnc3RhZmYgQkQuIEQoMjIzLCAxMjcpLiAtLT4NCiAgPGxpbmUgeDE9IjIyMyIgeTE9IjIwMCIgeDI9IjIyMyIgeTI9IjEyNyIgc3Ryb2tlPSIjOUMyN0IwIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPHRleHQgeD0iMjMwIiB5PSIxMjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPkQ8L3RleHQ+DQogIDx0ZXh0IHg9IjIzNSIgeT0iMTYwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjAiIGZpbGw9IiMzMzMiIGZvbnQtd2VpZ2h0PSJib2xkIj4/PC90ZXh0Pg0KDQogIDwhLS0gUG9pbnQgUCg1MCwgMzAwKSAtLT4NCiAgPGNpcmNsZSBjeD0iNTAiIGN5PSIzMDAiIHI9IjMiIGZpbGw9IiMzMzMiLz4NCiAgPHRleHQgeD0iNDAiIHk9IjMyMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCI+UDwvdGV4dD4NCg0KICA8IS0tIFNpZ2h0IExpbmVzIC0tPg0KICA8bGluZSB4MT0iNTAiIHkxPSIzMDAiIHgyPSIyMjMiIHkyPSIyMDAiIHN0cm9rZT0iIzdCMUZBMiIgc3Ryb2tlLXdpZHRoPSIyIi8+IDwhLS0gVG8gQiAtLT4NCiAgPGxpbmUgeDE9IjUwIiB5MT0iMzAwIiB4Mj0iMjIzIiB5Mj0iMTI3IiBzdHJva2U9IiM3QjFGQTIiIHN0cm9rZS13aWR0aD0iMiIvPiA8IS0tIFRvIEQgLS0+DQoNCiAgPCEtLSBBbmdsZSAzMCB0byBCLiBkeCAxNzMgZHkgLTEwMC4gVW5pdCgwLjg2LCAtMC41KS4gRW5kICgxMDEsIDI3MCkgLS0+DQogIDxwYXRoIGQ9Ik0gMTEwIDMwMCBBIDYwIDYwIDAgMCAwIDEwMSAyNzAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzdCMUZBMiIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDx0ZXh0IHg9IjEyMCIgeT0iMjkwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiMzMzMiPjMwwrA8L3RleHQ+DQoNCiAgPCEtLSBBbmdsZSA0NSB0byBELiBkeCAxNzMgZHkgLTE3My4gVW5pdCgwLjcwNywgLTAuNzA3KS4gRW5kICg3OCwgMjcyKSAtLT4NCiAgPHBhdGggZD0iTSA5MCAzMDAgQSA0MCA0MCAwIDAgMCA3OCAyNzIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzdCMUZBMiIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDx0ZXh0IHg9IjcwIiB5PSIyNzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZmlsbD0iIzMzMyI+NDXCsDwvdGV4dD4NCg0KPC9zdmc+" alt="Flagstaff Problem">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Let height of building \\(AB = 10\\) m. Let distance \\(PA = x\\).</div>
-        <div class="step">In right \\(\\triangle PAB\\) (Angle 30°):</div>
-        <div class="step">\\(\\tan 30^\\circ = \\frac{10}{x} \\Rightarrow \\frac{1}{\\sqrt{3}} = \\frac{10}{x} \\Rightarrow x =
-            10\\sqrt{3}\\) m.</div>
-        <div class="step">Let length of flagstaff be \\(h\\). Total height \\(DB = 10 + h\\).</div>
-        <div class="step">In right \\(\\triangle PDB\\) (Angle 45°):</div>
-        <div class="step">\\(\\tan 45^\\circ = \\frac{10 + h}{x} \\Rightarrow 1 = \\frac{10 + h}{10\\sqrt{3}}\\)</div>
-        <div class="step">\\(10\\sqrt{3} = 10 + h\\)</div>
-        <div class="step">\\(h = 10\\sqrt{3} - 10 = 10(\\sqrt{3} - 1)\\)</div>
-        <div class="step">Substituting \\(\\sqrt{3} = 1.732\\):</div>
-        <div class="step">\\(h = 10(0.732) = 7.32\\) m.</div>
-        <div class="step">Distance \\(x = 10(1.732) = 17.32\\) m.</div>
-        <div class="final-answer">Therefore, the required value is Length: 7.32 m; Distance: 17.32 m.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">Example 5. Shadow of a tower... 40 m longer when altitude is 30° than when 60°. Find
-            height.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NTAgMzUwIj4NCiAgPGRlZnM+DQogICAgPG1hcmtlciBpZD0iYXJyb3ciIG1hcmtlcldpZHRoPSIxMCIgbWFya2VySGVpZ2h0PSIxMCIgcmVmWD0iOSIgcmVmWT0iMyIgb3JpZW50PSJhdXRvIiBtYXJrZXJVbml0cz0ic3Ryb2tlV2lkdGgiPg0KICAgICAgPHBhdGggZD0iTTAsMCBMMCw2IEw5LDMgeiIgZmlsbD0iIzMzMyIgLz4NCiAgICA8L21hcmtlcj4NCiAgPC9kZWZzPg0KDQogIDxsaW5lIHgxPSIyMCIgeTE9IjMwMCIgeDI9IjQyMCIgeTI9IjMwMCIgc3Ryb2tlPSIjRTY1MTAwIiBzdHJva2Utd2lkdGg9IjIiLz4NCg0KICA8IS0tIFRvd2VyIEFCLiBBKDQwMCwgMTk2KS4gQig0MDAsIDMwMCkuIC0tPg0KICA8bGluZSB4MT0iNDAwIiB5MT0iMzAwIiB4Mj0iNDAwIiB5Mj0iMTk2IiBzdHJva2U9IiNFNjUxMDAiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8dGV4dCB4PSI0MDUiIHk9IjE5MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCI+QTwvdGV4dD4NCiAgPHRleHQgeD0iNDA1IiB5PSIzMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPkI8L3RleHQ+DQogIDx0ZXh0IHg9IjQxMCIgeT0iMjUwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjAiIGZpbGw9IiMzMzMiIGZvbnQtd2VpZ2h0PSJib2xkIj5oPC90ZXh0Pg0KDQogIDwhLS0gUG9pbnRzIEMoMzQwLCAzMDApIGFuZCBEKDIyMCwgMzAwKSAtLT4NCiAgPGNpcmNsZSBjeD0iMzQwIiBjeT0iMzAwIiByPSIzIiBmaWxsPSIjMzMzIi8+DQogIDx0ZXh0IHg9IjMzNSIgeT0iMzI1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIj5DPC90ZXh0Pg0KDQogIDxjaXJjbGUgY3g9IjIyMCIgY3k9IjMwMCIgcj0iMyIgZmlsbD0iIzMzMyIvPg0KICA8dGV4dCB4PSIyMTUiIHk9IjMyNSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCI+RDwvdGV4dD4NCg0KICA8IS0tIFNpZ2h0IExpbmVzIC0tPg0KICA8bGluZSB4MT0iMzQwIiB5MT0iMzAwIiB4Mj0iNDAwIiB5Mj0iMTk2IiBzdHJva2U9IiNFNjUxMDAiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8bGluZSB4MT0iMjIwIiB5MT0iMzAwIiB4Mj0iNDAwIiB5Mj0iMTk2IiBzdHJva2U9IiNFNjUxMDAiIHN0cm9rZS13aWR0aD0iMiIvPg0KDQogIDwhLS0gQW5nbGUgNjAgYXQgQygzNDApLiBkeCA2MCBkeSAtMTA0LiBVbml0KDAuNSwgLTAuODYpLiBFbmQgKDM2MCwgMjY1KSAtLT4NCiAgPHBhdGggZD0iTSAzODAgMzAwIEEgNDAgNDAgMCAwIDAgMzYwIDI2NSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRTY1MTAwIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPHRleHQgeD0iMzc1IiB5PSIyODAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZmlsbD0iIzMzMyI+NjDCsDwvdGV4dD4NCg0KICA8IS0tIEFuZ2xlIDMwIGF0IEQoMjIwKS4gZHggMTgwIGR5IC0xMDQuIFVuaXQoMC44NiwgLTAuNSkuIEVuZCAoMjU0LCAyODApIC0tPg0KICA8cGF0aCBkPSJNIDI2MCAzMDAgQSA0MCA0MCAwIDAgMCAyNTQgMjgwIiBmaWxsPSJub25lIiBzdHJva2U9IiNFNjUxMDAiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8dGV4dCB4PSIyNzAiIHk9IjI5MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmaWxsPSIjMzMzIj4zMMKwPC90ZXh0Pg0KDQogIDwhLS0gRGlzdGFuY2UgNDBtIC0tPg0KICA8bGluZSB4MT0iMjIwIiB5MT0iMzMwIiB4Mj0iMzQwIiB5Mj0iMzMwIiBzdHJva2U9IiMzMzMiIG1hcmtlci1zdGFydD0idXJsKCNhcnJvdykiIG1hcmtlci1lbmQ9InVybCgjYXJyb3cpIiAvPg0KICA8dGV4dCB4PSIyNjAiIHk9IjM1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmaWxsPSIjMzMzIj40MCBtPC90ZXh0Pg0KDQo8L3N2Zz4=" alt="Shadow Problem">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Let height of tower be \\(h\\). Let shadow length at 60° be \\(x\\).</div>
-        <div class="step">Then shadow length at 30° is \\(x + 40\\).</div>
-        <div class="step">In first triangle (60°): \\(\\tan 60^\\circ = \\frac{h}{x} \\Rightarrow h = x\\sqrt{3}\\).</div>
-        <div class="step">In second triangle (30°): \\(\\tan 30^\\circ = \\frac{h}{x + 40}\\).</div>
-        <div class="step">\\(\\frac{1}{\\sqrt{3}} = \\frac{x\\sqrt{3}}{x + 40}\\) (Substituting \\(h\\))</div>
-        <div class="step">\\(x + 40 = 3x \\Rightarrow 2x = 40 \\Rightarrow x = 20\\) m.</div>
-        <div class="step">Height \\(h = 20\\sqrt{3}\\) m.</div>
-        <div class="final-answer">Therefore, the required value is \\(20\\sqrt{3}\\) m.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">Example 6. The angles of depression of top and bottom of 8 m building... are 30° and 45°.
-            Find height and distance.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NTAgMzUwIj4NCiAgPGRlZnM+DQogICAgPG1hcmtlciBpZD0iYXJyb3ciIG1hcmtlcldpZHRoPSIxMCIgbWFya2VySGVpZ2h0PSIxMCIgcmVmWD0iOSIgcmVmWT0iMyIgb3JpZW50PSJhdXRvIiBtYXJrZXJVbml0cz0ic3Ryb2tlV2lkdGgiPg0KICAgICAgPHBhdGggZD0iTTAsMCBMMCw2IEw5LDMgeiIgZmlsbD0iIzMzMyIgLz4NCiAgICA8L21hcmtlcj4NCiAgPC9kZWZzPg0KDQogIDwhLS0gU21hbGwgQnVpbGRpbmcgQUIgKExlZnQpLiBBKDUwLDMwMCkuIEIoNTAsMjIwKS4gSD04MHB4ICg4bSkuIC0tPg0KICA8bGluZSB4MT0iNTAiIHkxPSIzMDAiIHgyPSI1MCIgeTI9IjIyMCIgc3Ryb2tlPSIjMTU2NUMwIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPHRleHQgeD0iNDUiIHk9IjMyNSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCI+QTwvdGV4dD4NCiAgPHRleHQgeD0iNDAiIHk9IjIyMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCI+QjwvdGV4dD4NCiAgPHRleHQgeD0iNSIgeT0iMjcwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiPjggbTwvdGV4dD4NCg0KICA8IS0tIEdyb3VuZCBBQyAtLT4NCiAgPGxpbmUgeDE9IjUwIiB5MT0iMzAwIiB4Mj0iMzUwIiB5Mj0iMzAwIiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8dGV4dCB4PSIyMDAiIHk9IjMyNSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjIwIiBmb250LXdlaWdodD0iYm9sZCI+PzwvdGV4dD4NCiAgPHRleHQgeD0iMzU1IiB5PSIzMjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPkM8L3RleHQ+DQoNCiAgPCEtLSBUYWxsIEJ1aWxkaW5nIFBDIChSaWdodCkuIEMoMzUwLDMwMCkuIEQoMzUwLDIyMCkuIFAoMzUwLDUwKS4gLS0+DQogIDxsaW5lIHgxPSIzNTAiIHkxPSIzMDAiIHgyPSIzNTAiIHkyPSI1MCIgc3Ryb2tlPSIjMTU2NUMwIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPHRleHQgeD0iMzU1IiB5PSI1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCI+UDwvdGV4dD4NCiAgPHRleHQgeD0iMzU1IiB5PSIyMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPkQ8L3RleHQ+DQogIDxyZWN0IHg9IjMzMCIgeT0iMjgwIiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIxIi8+DQogIDxyZWN0IHg9IjMzMCIgeT0iMjIwIiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIxIi8+DQoNCiAgPHRleHQgeD0iMzYwIiB5PSIyNzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiI+OCBtPC90ZXh0Pg0KICA8dGV4dCB4PSIzNjAiIHk9IjEzMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjIwIiBmb250LXdlaWdodD0iYm9sZCI+PzwvdGV4dD4NCg0KICA8IS0tIEhvcml6b250YWwgQkQgLS0+DQogIDxsaW5lIHgxPSI1MCIgeTE9IjIyMCIgeDI9IjM1MCIgeTI9IjIyMCIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjIiLz4NCg0KICA8IS0tIFRvcCBIb3Jpem9udGFsIFBRIC0tPg0KICA8bGluZSB4MT0iMTAwIiB5MT0iNTAiIHgyPSIzNTAiIHkyPSI1MCIgc3Ryb2tlPSIjNTU1IiBzdHJva2UtZGFzaGFycmF5PSI2LDQiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8dGV4dCB4PSI5MCIgeT0iNTUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPlE8L3RleHQ+DQoNCiAgPCEtLSBEaWFnb25hbHMvU2lnaHQgTGluZXMgLS0+DQogIDwhLS0gUCB0byBCICgzMCBkZWcpIC0tPg0KICA8bGluZSB4MT0iMzUwIiB5MT0iNTAiIHgyPSI1MCIgeTI9IjIyMCIgc3Ryb2tlPSIjMTU2NUMwIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgDQogIDwhLS0gUCB0byBBICg0NSBkZWcpIC0tPg0KICA8bGluZSB4MT0iMzUwIiB5MT0iNTAiIHgyPSI1MCIgeTI9IjMwMCIgc3Ryb2tlPSIjMTU2NUMwIiBzdHJva2Utd2lkdGg9IjIiLz4NCg0KICA8IS0tIEFuZ2xlIERlcHJlc3Npb24gMzAgKFFQQikgLS0+DQogIDxwYXRoIGQ9Ik0gMjcwIDUwIEEgODAgODAgMCAwIDAgMjg1IDg2IiBmaWxsPSJub25lIiBzdHJva2U9IiMxNTY1QzAiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8dGV4dCB4PSIyNDAiIHk9IjgwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiMzMzMiPjMwwrA8L3RleHQ+DQoNCiAgPCEtLSBBbmdsZSBEZXByZXNzaW9uIDQ1IChRUEEpIC0tPg0KICA8cGF0aCBkPSJNIDI5MCA1MCBBIDYwIDYwIDAgMCAwIDMwNyA4NSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTU2NUMwIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPHRleHQgeD0iMzAwIiB5PSIxMDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZmlsbD0iIzMzMyI+NDXCsDwvdGV4dD4NCg0KICA8IS0tIEFsdGVybmF0ZSBJbnRlcmlvciBBbmdsZXMgKE9wdGlvbmFsIGJ1dCBnb29kIGZvciBjbGFyaXR5KSAtLT4NCiAgPCEtLSAzMCBhdCBCLiBkeCAzMDAgZHkgLTE3MC4gVW5pdCgwLjg3LCAtMC40OSkuIEVuZCAoOTAsIDE5NykgLS0+DQogIDxwYXRoIGQ9Ik0gOTAgMjIwIEEgNDAgNDAgMCAwIDAgODUgMjAwIiBmaWxsPSJub25lIiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMSIvPg0KICA8dGV4dCB4PSIxMDAiIHk9IjIxMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2Ij4zMMKwPC90ZXh0Pg0KDQogIDwhLS0gNDUgYXQgQS4gZHggMzAwIGR5IC0yNTAuIFVuaXQoMC43NywgLTAuNjQpLiBFbmQgKDgwLCAyNzUpIC0tPg0KICA8cGF0aCBkPSJNIDkwIDMwMCBBIDQwIDQwIDAgMCAwIDgwIDI3NSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiLz4NCiAgPHRleHQgeD0iMTAwIiB5PSIyOTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiI+NDXCsDwvdGV4dD4NCg0KPC9zdmc+" alt="Multi-storey Building Problem">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Let height of tall building be \\(H\\) and small building be 8 m. Distance between them \\(x\\).
-        </div>
-        <div class="step">Angle of depression to bottom is 45° \\(\\Rightarrow\\) Angle of elevation from bottom is 45°.
-        </div>
-        <div class="step">\\(\\tan 45^\\circ = \\frac{H}{x} \\Rightarrow 1 = \\frac{H}{x} \\Rightarrow H = x\\).</div>
-        <div class="step">Angle to top is 30°. Height difference is \\(H - 8\\).</div>
-        <div class="step">\\(\\tan 30^\\circ = \\frac{H - 8}{x} \\Rightarrow \\frac{1}{\\sqrt{3}} = \\frac{H - 8}{H}\\).</div>
-        <div class="step">\\(H = \\sqrt{3}(H - 8) \\Rightarrow H\\sqrt{3} - H = 8\\sqrt{3}\\).</div>
-        <div class="step">\\(H(\\sqrt{3} - 1) = 8\\sqrt{3}\\)</div>
-        <div class="step">\\(H = \\frac{8\\sqrt{3}}{\\sqrt{3} - 1}\\)</div>
-        <div class="step">Rationalizing: \\(H = \\frac{8\\sqrt{3}(\\sqrt{3} + 1)}{3 - 1} = \\frac{8(3 + \\sqrt{3})}{2} = 4(3 +
-            \\sqrt{3})\\) m.</div>
-        <div class="step">Distance \\(x = 4(3 + \\sqrt{3})\\) m.</div>
-        <div class="final-answer">Therefore, the required value is Height: \\(4(3 + \\sqrt{3})\\) m; Distance: \\(4(3 +
-            \\sqrt{3})\\) m.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">Example 7. From a point on a bridge... angles of depression 30° and 45°. Height 3 m. Find
-            width.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NTAgMzAwIj4NCiAgPGRlZnM+DQogICAgPG1hcmtlciBpZD0iYXJyb3ciIG1hcmtlcldpZHRoPSIxMCIgbWFya2VySGVpZ2h0PSIxMCIgcmVmWD0iOSIgcmVmWT0iMyIgb3JpZW50PSJhdXRvIiBtYXJrZXJVbml0cz0ic3Ryb2tlV2lkdGgiPg0KICAgICAgPHBhdGggZD0iTTAsMCBMMCw2IEw5LDMgeiIgZmlsbD0iIzMzMyIgLz4NCiAgICA8L21hcmtlcj4NCiAgPC9kZWZzPg0KDQogIDxsaW5lIHgxPSIyMCIgeTE9IjI1MCIgeDI9IjQzMCIgeTI9IjI1MCIgc3Ryb2tlPSIjNTU1IiBzdHJva2Utd2lkdGg9IjIiLz4gPCEtLSBSaXZlci9Hcm91bmQgLS0+DQogIDxsaW5lIHgxPSIyMCIgeTE9IjUwIiB4Mj0iNDMwIiB5Mj0iNTAiIHN0cm9rZT0iIzU1NSIgc3Ryb2tlLWRhc2hhcnJheT0iNiw0IiBzdHJva2Utd2lkdGg9IjIiLz4gPCEtLSBCcmlkZ2UgTGV2ZWwgLS0+DQoNCiAgPCEtLSBQb2ludCBQKDIyNSwgNTApLiBIZWlnaHQgM20gLT4gMjAwcHggKFNjYWxlKS4gR3JvdW5kKDI1MCkuIC0tPg0KICA8dGV4dCB4PSIyMjUiIHk9IjQwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIj5QPC90ZXh0Pg0KICANCiAgPCEtLSBWZXJ0aWNhbCBIZWlnaHQgLS0+DQogIDxsaW5lIHgxPSIyMjUiIHkxPSI1MCIgeDI9IjIyNSIgeTI9IjI1MCIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1kYXNoYXJyYXk9IjQiLz4NCiAgPHRleHQgeD0iMjMwIiB5PSIyNjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPkQ8L3RleHQ+DQogIDx0ZXh0IHg9IjIzMCIgeT0iMTUwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIj4zIG08L3RleHQ+DQoNCiAgPCEtLSBCYW5rIEEgKExlZnQsIDMwIGRlZyBkZXByZXNzaW9uKS4gZHggMS43MypoLiAtLT4NCiAgPCEtLSBzY2FsZSBoPTIwMC4gZHg9MzQ2LiAyMjUtMzQ2ID0gLTEyMS4gVG9vIHdpZGUuIC0tPg0KICA8IS0tIEFkanVzdCBTY2FsZS4gaD0xMDBweC4gUCgyMjUsIDE1MCkuIEdyb3VuZCgyNTApLiAtLT4NCiAgDQogIDwhLS0gUkUtQ09PUkQgLS0+DQogIDwhLS0gUCgyMjUsIDEwMCkuIEdyb3VuZCB5PTI1MC4gaD0xNTAuIC0tPg0KICA8IS0tIEJyaWRnZSBMaW5lIHk9MTAwLiAtLT4NCiAgPCEtLSBWZXJ0aWNhbCBQIHRvIEQoMjI1LDI1MCkuIC0tPg0KICANCiAgPGxpbmUgeDE9IjIwIiB5MT0iMjUwIiB4Mj0iNDMwIiB5Mj0iMjUwIiBzdHJva2U9IiNGRkEwMDAiIHN0cm9rZS13aWR0aD0iMiIvPiA8IS0tIFJpdmVyIEJhbmsgLS0+DQogIDxsaW5lIHgxPSIyMCIgeTE9IjEwMCIgeDI9IjQzMCIgeTI9IjEwMCIgc3Ryb2tlPSIjNTU1IiBzdHJva2UtZGFzaGFycmF5PSI2LDQiIHN0cm9rZS13aWR0aD0iMiIvPiA8IS0tIEJyaWRnZSAtLT4NCiAgDQogIDxsaW5lIHgxPSIyMjUiIHkxPSIxMDAiIHgyPSIyMjUiIHkyPSIyNTAiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDx0ZXh0IHg9IjIyNSIgeT0iOTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPlA8L3RleHQ+DQogIDx0ZXh0IHg9IjIxNSIgeT0iMjcwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIj5EPC90ZXh0Pg0KICA8dGV4dCB4PSIyMzAiIHk9IjE4MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2Ij4zIG08L3RleHQ+DQoNCiAgPCEtLSBCYW5rIEEgKExlZnQpLiAzMCBkZWcuIHRhbjMwPTEvMS43My4gZGlzdCA9IDEuNzMgKiAxNTAgPSAyNjAuIC0tPg0KICA8IS0tIHhBID0gMjI1IC0gMjYwID0gLTM1LiBTdGlsbCB0b28gd2lkZS4gLS0+DQogIDwhLS0gUmVkdWNlIGggdG8gODBweC4gUCgyMjUsIDE3MCkuIEdyb3VuZCgyNTApLiAtLT4NCiAgDQogIDwhLS0gUkUtQ09PUkQgMiAtLT4NCiAgPCEtLSBQKDIyNSwgMTcwKS4gR3JvdW5kIHk9MjUwLiBoPTgwLiAtLT4NCiAgPCEtLSBCcmlkZ2UgeT0xNzAuIC0tPg0KICA8IS0tIEEgKExlZnQsIDMwKS4gZGlzdCA9IDEuNzMqODAgPSAxMzguIHhBID0gMjI1LTEzOD04Ny4gQSg4NywgMjUwKS4gLS0+DQogIDwhLS0gQiAoUmlnaHQsIDQ1KS4gZGlzdCA9IDEqODAgPSA4MC4geEIgPSAyMjUrODA9MzA1LiBCKDMwNSwgMjUwKS4gLS0+DQoNCiAgPCEtLSBDbGVhcmluZyBzcGVjaWZpYyBsaW5lcyAtLT4NCiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjQ1MCIgaGVpZ2h0PSIzMDAiIGZpbGw9IndoaXRlIiAvPiA8IS0tIEJhY2tncm91bmQgY2xlYXIgLS0+DQogIA0KICA8ZGVmcz4NCiAgICA8bWFya2VyIGlkPSJhcnJvdyIgbWFya2VyV2lkdGg9IjEwIiBtYXJrZXJIZWlnaHQ9IjEwIiByZWZYPSI5IiByZWZZPSIzIiBvcmllbnQ9ImF1dG8iIG1hcmtlclVuaXRzPSJzdHJva2VXaWR0aCI+DQogICAgICA8cGF0aCBkPSJNMCwwIEwwLDYgTDksMyB6IiBmaWxsPSIjMzMzIiAvPg0KICAgIDwvbWFya2VyPg0KICA8L2RlZnM+DQoNCiAgPGxpbmUgeDE9IjIwIiB5MT0iMjUwIiB4Mj0iNDMwIiB5Mj0iMjUwIiBzdHJva2U9IiNGRkEwMDAiIHN0cm9rZS13aWR0aD0iMiIvPiA8IS0tIFJpdmVyIEEtRC1CIC0tPg0KICA8bGluZSB4MT0iMjAiIHkxPSIxNzAiIHgyPSI0MzAiIHkyPSIxNzAiIHN0cm9rZT0iIzU1NSIgc3Ryb2tlLWRhc2hhcnJheT0iNiw0IiBzdHJva2Utd2lkdGg9IjIiLz4gPCEtLSBCcmlkZ2UgLS0+DQogIA0KICA8bGluZSB4MT0iMjI1IiB5MT0iMTcwIiB4Mj0iMjI1IiB5Mj0iMjUwIiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8dGV4dCB4PSIyMjUiIHk9IjE2MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCI+UDwvdGV4dD4NCiAgPHRleHQgeD0iMjI1IiB5PSIyNzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPkQ8L3RleHQ+DQogIDx0ZXh0IHg9IjIzMCIgeT0iMjIwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiPjMgbTwvdGV4dD4NCg0KICA8IS0tIEEgYW5kIEIgLS0+DQogIDxjaXJjbGUgY3g9Ijg3IiBjeT0iMjUwIiByPSIzIiBmaWxsPSIjMzMzIi8+DQogIDx0ZXh0IHg9IjgwIiB5PSIyNzUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPkE8L3RleHQ+DQogIA0KICA8Y2lyY2xlIGN4PSIzMDUiIGN5PSIyNTAiIHI9IjMiIGZpbGw9IiMzMzMiLz4NCiAgPHRleHQgeD0iMzAwIiB5PSIyNzUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPkI8L3RleHQ+DQoNCiAgPCEtLSBTaWdodCBMaW5lcyAtLT4NCiAgPGxpbmUgeDE9IjIyNSIgeTE9IjE3MCIgeDI9Ijg3IiB5Mj0iMjUwIiBzdHJva2U9IiNGRkEwMDAiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8bGluZSB4MT0iMjI1IiB5MT0iMTcwIiB4Mj0iMzA1IiB5Mj0iMjUwIiBzdHJva2U9IiNGRkEwMDAiIHN0cm9rZS13aWR0aD0iMiIvPg0KDQogIDwhLS0gQW5nbGUgMzAgKExlZnQpLiBkeCAtMTM4IGR5IDgwLiBVbml0KC0wLjg2LCAwLjUpLiBFbmQgKDE5MCwgMTkwKSAtLT4NCiAgPHBhdGggZD0iTSAxODUgMTcwIEEgNDAgNDAgMCAwIDAgMTkwIDE5MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZBMDAwIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPHRleHQgeD0iMTYwIiB5PSIxOTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZmlsbD0iIzMzMyI+MzDCsDwvdGV4dD4NCg0KICA8IS0tIEFuZ2xlIDQ1IChSaWdodCkuIGR4IDgwIGR5IDgwLiBVbml0KDAuNywgMC43KS4gRW5kICgyNTMsIDE5OCkgLS0+DQogIDxwYXRoIGQ9Ik0gMjY1IDE3MCBBIDQwIDQwIDAgMCAxIDI1MyAxOTgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGQTAwMCIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDx0ZXh0IHg9IjI3MCIgeT0iMTkwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiMzMzMiPjQ1wrA8L3RleHQ+DQoNCjwvc3ZnPg==" alt="Bridge River Problem">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Height of bridge \\(h = 3\\) m.</div>
-        <div class="step">Width of river = distance to bank 1 + distance to bank 2 (\\(x + y\\)).</div>
-        <div class="step">Bank 1 (Angle 30°): \\(\\tan 30^\\circ = \\frac{3}{x} \\Rightarrow \\frac{1}{\\sqrt{3}} = \\frac{3}{x}
-            \\Rightarrow x = 3\\sqrt{3}\\).</div>
-        <div class="step">Bank 2 (Angle 45°): \\(\\tan 45^\\circ = \\frac{3}{y} \\Rightarrow 1 = \\frac{3}{y} \\Rightarrow y =
-            3\\).</div>
-        <div class="step">Total width = \\(3\\sqrt{3} + 3 = 3(\\sqrt{3} + 1)\\) m.</div>
-        <div class="final-answer">Therefore, the required value is \\(3(\\sqrt{3} + 1)\\) m.</div>
-    </div>
-
-</body>
-
-</html>`
+  id: "ch9",
+  number: 9,
+  title: "Some Applications of Trigonometry",
+  introduction: "In this chapter, trigonometry moves from abstract geometric definitions to powerful real-world measurement science. By synthesizing line of sight, angle of elevation, and angle of depression in right-angled triangles, students determine inaccessible heights of mountains, towers, and monuments, as well as expansive distances across rivers and roads without physical measurement.",
+  definitions: [
+    {
+      term: "Line of Sight",
+      description: "The direct straight line drawn from the eye of an observer to the target point on the object viewed."
+    },
+    {
+      term: "Horizontal Level",
+      description: "The straight horizontal reference line passing through the eye of the observer parallel to the ground plane."
+    },
+    {
+      term: "Angle of Elevation",
+      description: "The angle formed by the line of sight with the horizontal level when the target object is above the horizontal line (looking upwards)."
+    },
+    {
+      term: "Angle of Depression",
+      description: "The angle formed by the line of sight with the horizontal line when the target object is below the horizontal level (looking downwards)."
     }
-    // Chapter 9 follows Chapter 8 Strategy: No htmlMcqs property here.
-    // The interactive quiz is rendered natively from the 'mcqs' array.
+  ],
+  keyPoints: [
+    "The angle of depression of a point on the ground from the top of a tower is numerically equal to the angle of elevation of the top of the tower from that point on the ground due to alternate interior angles.",
+    "If the observer moves towards the base of a vertical object, the angle of elevation of its top increases; if moving away, it decreases.",
+    "When the observer has an explicit height h (e.g. 1.5 m boy), the effective vertical opposite side of the triangle is (Total Height - h).",
+    "tan θ = Perpendicular / Base is the most frequently deployed ratio in heights and distances problems.",
+    "For standard angles 30°, 45°, and 60°, memorize: tan 30° = 1/√3, tan 45° = 1, tan 60° = √3."
+  ],
+  formulas: [
+    {
+      name: "Primary Height Relation",
+      formula: "tan θ = Perpendicular / Base  =>  Height = Distance × tan θ"
+    },
+    {
+      name: "Slide / Cable / String Relation",
+      formula: "sin θ = Perpendicular / Hypotenuse  =>  Length = Height / sin θ"
+    },
+    {
+      name: "Complementary Angles Formula",
+      formula: "For elevations θ and (90° - θ) at distances a and b: h² = a × b  =>  h = √(ab)"
+    },
+    {
+      name: "Two Angles Same Side Formula",
+      formula: "h = (d · tan α · tan β) / (tan β - tan α), where d is the distance between the two observation points"
+    }
+  ],
+  crux: [
+    "Always draw a clean geometric diagram first; vertical towers and buildings must make a 90° right angle with the horizontal ground line.",
+    "Always draw the top horizontal line through the observer's eye before marking the angle of depression.",
+    "When solving systems of two right triangles, express the common unknown (usually height h or base x) and equate the two algebraic equations.",
+    "Never leave square roots in denominators; always rationalize by multiplying both numerator and denominator by √3."
+  ],
+  summary: [
+    "Trigonometry enables precision measurement of inaccessible terrestrial and architectural heights and distances.",
+    "Angles of elevation and depression connect eye-level lines of sight with horizontal ground projections.",
+    "Mastering the standard ratios (tan, sin, cos) for 30°, 45°, and 60° unlocks complete solutions for single-triangle and multi-triangle board exam word problems."
+  ],
+  exercises: [
+    { id: "examples", name: "Examples", questions: [] },
+    { id: "exercise1", name: "Exercise 9.1", questions: [] }
+  ],
+  examples: [],
+  theorems: [],
+  mcqs: [
+  {
+    "id": "ch9-mcq-1",
+    "question": "The angle of elevation of the top of a tower from a point on the ground, which is 30 m away from the foot of the tower, is 30°. The height of the tower is:",
+    "options": [
+      "A):   30√3 m",
+      "B):   10√3 m",
+      "C):   10 m",
+      "D):   20 m"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Using tan 30° = h / 30 ⇒ 1/√3 = h / 30 ⇒ h = 30 / √3 = 10√3 m."
+  },
+  {
+    "id": "ch9-mcq-2",
+    "question": "A pole 6 m high casts a shadow 2√3 m long on the ground. The sun's elevation at that moment is:",
+    "options": [
+      "A):   60°",
+      "B):   30°",
+      "C):   45°",
+      "D):   90°"
+    ],
+    "correctAnswer": "A",
+    "explanation": "tan θ = Height / Shadow = 6 / (2√3) = 3 / √3 = √3. Since tan 60° = √3, the sun's elevation is 60°."
+  },
+  {
+    "id": "ch9-mcq-3",
+    "question": "A kite is flying at a height of 60 m above the ground. The string is inclined at 60° to the ground. The length of the string is:",
+    "options": [
+      "A):   30√3 m",
+      "B):   120 m",
+      "C):   40√3 m",
+      "D):   60√3 m"
+    ],
+    "correctAnswer": "C",
+    "explanation": "sin 60° = Height / Length ⇒ √3 / 2 = 60 / L ⇒ L = 120 / √3 = 40√3 m."
+  },
+  {
+    "id": "ch9-mcq-4",
+    "question": "When the length of the shadow of a vertical pole is equal to its height, the sun's angle of elevation is:",
+    "options": [
+      "A):   30°",
+      "B):   60°",
+      "C):   0°",
+      "D):   45°"
+    ],
+    "correctAnswer": "D",
+    "explanation": "tan θ = Height / Shadow. Since Height = Shadow, tan θ = 1, which gives θ = 45°."
+  },
+  {
+    "id": "ch9-mcq-5",
+    "question": "If the angle of depression of an object on the ground from the top of a 75 m high tower is 30°, the distance of the object from the foot of the tower is:",
+    "options": [
+      "A):   75√3 m",
+      "B):   25√3 m",
+      "C):   75 m",
+      "D):   50√3 m"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Angle of elevation from object = angle of depression = 30°. tan 30° = 75 / d ⇒ 1/√3 = 75 / d ⇒ d = 75√3 m."
+  },
+  {
+    "id": "ch9-mcq-6",
+    "question": "A ladder 15 m long just reaches the top of a vertical wall. If the ladder makes an angle of 60° with the wall, then the height of the wall is:",
+    "options": [
+      "A):   15√3 m",
+      "B):   7.5 m",
+      "C):   15 m",
+      "D):   7.5√3 m"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The angle with the wall is 60°, so the angle with the ground is 90° - 60° = 30°. Height of wall = 15 × sin 30° = 15 × (1/2) = 7.5 m. (Or cos 60° = h / 15 ⇒ h = 15 × 0.5 = 7.5 m)."
+  },
+  {
+    "id": "ch9-mcq-7",
+    "question": "The angle of elevation of the top of a tower from two points on the ground at distances s and t from its foot are complementary. The height of the tower is:",
+    "options": [
+      "A):   st",
+      "B):   s / t",
+      "C):   √st",
+      "D):   s²t²"
+    ],
+    "correctAnswer": "C",
+    "explanation": "tan θ = h/s and tan(90° - θ) = cot θ = h/t. Multiplying: tan θ · cot θ = (h/s)(h/t) ⇒ 1 = h² / (st) ⇒ h = √st."
+  },
+  {
+    "id": "ch9-mcq-8",
+    "question": "If the length of the shadow of a tower on the ground is increasing, then the angle of elevation of the sun is:",
+    "options": [
+      "A):   Increasing",
+      "B):   Remaining constant",
+      "C):   Decreasing",
+      "D):   First increasing then decreasing"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Since shadow length s = h cot θ, as shadow length s increases, cot θ increases, which means the angle of elevation θ decreases."
+  },
+  {
+    "id": "ch9-mcq-9",
+    "question": "The angle of elevation of the top of a 15 m high tower from a point on the ground is 60°. The distance of the point from the foot of the tower is:",
+    "options": [
+      "A):   15 m",
+      "B):   15√3 m",
+      "C):   5√3 m",
+      "D):   10√3 m"
+    ],
+    "correctAnswer": "C",
+    "explanation": "tan 60° = 15 / d ⇒ √3 = 15 / d ⇒ d = 15 / √3 = 5√3 m."
+  },
+  {
+    "id": "ch9-mcq-10",
+    "question": "An observer 1.5 m tall is 28.5 m away from a tower. The angle of elevation of the top of the tower from his eyes is 45°. The height of the tower is:",
+    "options": [
+      "A):   30 m",
+      "B):   28.5 m",
+      "C):   27 m",
+      "D):   31.5 m"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Height above eye level = 28.5 × tan 45° = 28.5 m. Total height = 28.5 + 1.5 = 30 m."
+  },
+  {
+    "id": "ch9-mcq-11",
+    "question": "The line drawn from the eye of an observer to the point in the object viewed is called the:",
+    "options": [
+      "A):   Horizontal line",
+      "B):   Line of sight",
+      "C):   Vertical axis",
+      "D):   Normal line"
+    ],
+    "correctAnswer": "B",
+    "explanation": "By definition, the line drawn from the observer's eye to the point of observation is called the line of sight."
+  },
+  {
+    "id": "ch9-mcq-12",
+    "question": "From a point on the ground 20 m away from the foot of a building, the angle of elevation of the top of a 20 m building is:",
+    "options": [
+      "A):   30°",
+      "B):   60°",
+      "C):   90°",
+      "D):   45°"
+    ],
+    "correctAnswer": "D",
+    "explanation": "tan θ = Height / Distance = 20 / 20 = 1. Since tan 45° = 1, θ = 45°."
+  },
+  {
+    "id": "ch9-mcq-13",
+    "question": "A circus artist climbs a 10 m rope tied to the top of a 5 m vertical pole. The angle made by the rope with the ground is:",
+    "options": [
+      "A):   30°",
+      "B):   45°",
+      "C):   60°",
+      "D):   90°"
+    ],
+    "correctAnswer": "A",
+    "explanation": "sin θ = Height / Rope = 5 / 10 = 1/2. Since sin 30° = 1/2, θ = 30°."
+  },
+  {
+    "id": "ch9-mcq-14",
+    "question": "If a 30 m tall tree breaks at height h and its top touches ground at 30°, the height h at which it broke is:",
+    "options": [
+      "A):   15 m",
+      "B):   10 m",
+      "C):   20 m",
+      "D):   8 m"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Let standing part be h, broken part is (30 - h). sin 30° = h / (30 - h) ⇒ 1/2 = h / (30 - h) ⇒ 30 - h = 2h ⇒ 3h = 30 ⇒ h = 10 m."
+  },
+  {
+    "id": "ch9-mcq-15",
+    "question": "The angle of depression of a car parked on the road from the top of a 150 m high cliff is 30°. The distance of the car from the base of the cliff is:",
+    "options": [
+      "A):   50√3 m",
+      "B):   150 m",
+      "C):   150√3 m",
+      "D):   75√3 m"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Angle of elevation from car = 30°. tan 30° = 150 / d ⇒ 1/√3 = 150 / d ⇒ d = 150√3 m."
+  },
+  {
+    "id": "ch9-mcq-16",
+    "question": "Two poles of equal heights stand on opposite sides of an 80 m road. If the angles of elevation from a point on the road are 60° and 30°, the height of each pole is:",
+    "options": [
+      "A):   40 m",
+      "B):   20√3 m",
+      "C):   30√3 m",
+      "D):   20 m"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Let the point be at distance x from the 60° pole: h = x√3 and h = (80 - x)/√3 ⇒ 3x = 80 - x ⇒ x = 20 m. Height h = 20√3 m."
+  },
+  {
+    "id": "ch9-mcq-17",
+    "question": "If a flagstaff of 7 m height mounted on a building of height h subtends 45° and the top of building subtends 30° at a point on the ground, then h is:",
+    "options": [
+      "A):   7 / (√3 - 1) m",
+      "B):   7(√3 + 1) m",
+      "C):   7√3 m",
+      "D):   14 m"
+    ],
+    "correctAnswer": "A",
+    "explanation": "tan 30° = h / d ⇒ d = h√3. tan 45° = (h + 7) / d ⇒ d = h + 7. Equating: h√3 = h + 7 ⇒ h(√3 - 1) = 7 ⇒ h = 7 / (√3 - 1) m."
+  },
+  {
+    "id": "ch9-mcq-18",
+    "question": "The angle of depression of the top and bottom of an 8 m tall building from the top of a multi-storeyed building are 30° and 45°. The distance between them is:",
+    "options": [
+      "A):   4(3 + √3) m",
+      "B):   8(√3 + 1) m",
+      "C):   4(3 - √3) m",
+      "D):   8(√3 - 1) m"
+    ],
+    "correctAnswer": "A",
+    "explanation": "tan 45° = H / d ⇒ H = d. tan 30° = (H - 8)/d = (d - 8)/d ⇒ d / √3 = d - 8 ⇒ d(1 - 1/√3) = 8 ⇒ d(√3 - 1) = 8√3 ⇒ d = 4(3 + √3) m."
+  },
+  {
+    "id": "ch9-mcq-19",
+    "question": "A bridge across a river is at height 3 m. The angles of depression of opposite banks are 30° and 45°. The width of the river is:",
+    "options": [
+      "A):   6 m",
+      "B):   3(√3 - 1) m",
+      "C):   3(√3 + 1) m",
+      "D):   3√3 m"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Width = 3 cot 30° + 3 cot 45° = 3√3 + 3 = 3(√3 + 1) m."
+  },
+  {
+    "id": "ch9-mcq-20",
+    "question": "A vertical stick 12 m long casts a shadow 8 m long on the ground. At the same time, a tower casts a shadow 40 m long. The height of the tower is:",
+    "options": [
+      "A):   50 m",
+      "B):   75 m",
+      "C):   45 m",
+      "D):   60 m"
+    ],
+    "correctAnswer": "D",
+    "explanation": "At the same time, sun's elevation θ is the same: tan θ = 12 / 8 = H / 40 ⇒ H = (12 × 40) / 8 = 60 m."
+  },
+  {
+    "id": "ch9-mcq-21",
+    "question": "The ratio of the length of a vertical rod and its shadow is 1 : √3. The angle of elevation of the sun is:",
+    "options": [
+      "A):   30°",
+      "B):   45°",
+      "C):   60°",
+      "D):   90°"
+    ],
+    "correctAnswer": "A",
+    "explanation": "tan θ = Length / Shadow = 1 / √3. Since tan 30° = 1/√3, the angle of elevation is 30°."
+  },
+  {
+    "id": "ch9-mcq-22",
+    "question": "From the top of a 7 m building, the angle of elevation of a cable tower is 60° and depression of its foot is 45°. The height of the tower is:",
+    "options": [
+      "A):   7√3 m",
+      "B):   7(√3 + 1) m",
+      "C):   14 m",
+      "D):   7(√3 - 1) m"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Horizontal distance = 7 / tan 45° = 7 m. Height above building = 7 × tan 60° = 7√3 m. Total height = 7 + 7√3 = 7(√3 + 1) m."
+  },
+  {
+    "id": "ch9-mcq-23",
+    "question": "The angle of elevation of the top of a tower from a distance 100 m from its foot is 30°. The height of the tower is:",
+    "options": [
+      "A):   100√3 m",
+      "B):   50 m",
+      "C):   100 / √3 m",
+      "D):   50√3 m"
+    ],
+    "correctAnswer": "C",
+    "explanation": "tan 30° = h / 100 ⇒ 1/√3 = h / 100 ⇒ h = 100 / √3 m."
+  },
+  {
+    "id": "ch9-mcq-24",
+    "question": "A man on the deck of a ship 10 m above water level observes the top of a hill at 60° and the base at 30°. The height of the hill is:",
+    "options": [
+      "A):   30 m",
+      "B):   50 m",
+      "C):   60 m",
+      "D):   40 m"
+    ],
+    "correctAnswer": "D",
+    "explanation": "Horizontal distance = 10 / tan 30° = 10√3 m. Height above deck = (10√3) × tan 60° = 10√3 × √3 = 30 m. Total height of hill = 30 + 10 = 40 m."
+  },
+  {
+    "id": "ch9-mcq-25",
+    "question": "If the angles of elevation of the top of a tower from two points at distances 4 m and 9 m from base are complementary, then the height of the tower is:",
+    "options": [
+      "A):   6 m",
+      "B):   36 m",
+      "C):   13 m",
+      "D):   5 m"
+    ],
+    "correctAnswer": "A",
+    "explanation": "For complementary angles of elevation at distances a and b, the height is h = √(a · b) = √(4 × 9) = √36 = 6 m."
+  }
+],
+  isHtmlView: true,
+  htmlOverview: "\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; }\n  .frac .den { padding: 1px 4px; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(29, 233, 182, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #1DE9B6; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 14px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(29, 233, 182, 0.25); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #1DE9B6; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #64FFDA; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(29, 233, 182, 0.15); border: 1px solid #1DE9B6; color: #64FFDA; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 6px 0; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(29, 233, 182, 0.4); border-radius: 10px; padding: 14px; margin: 16px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #FFFFFF; border-radius: 8px; padding: 10px 8px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.25); }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 10px; font-weight: 500; }\n  .table-card { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 14px 0; border-radius: 8px; }\n  .table-card table { width: 100%; border-collapse: collapse; text-align: center; }\n  .table-card th { background: rgba(29, 233, 182, 0.25); color: #64FFDA; border: 1px solid rgba(29, 233, 182, 0.4); padding: 10px; font-weight: 700; }\n  .table-card td { border: 1px solid rgba(29, 233, 182, 0.25); padding: 9px; color: #E2E8F0; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Hero Header -->\n  <div style=\"background: linear-gradient(135deg, rgba(29, 233, 182, 0.25), rgba(0, 191, 165, 0.15)); border: 1.5px solid #1DE9B6; border-radius: 14px; padding: 18px; margin-bottom: 20px; text-align: center;\">\n    <div style=\"font-size: 22px; font-weight: 800; color: #64FFDA; margin-bottom: 6px;\">\n      🏔️ Chapter 9: Some Applications of Trigonometry\n    </div>\n    <div style=\"color: #CBD5E1; font-size: 14.5px; line-height: 1.5;\">\n      Class 10 NCERT Mathematics &bull; Heights and Distances Comprehensive Reference Guide &amp; Master Formula Sheet\n    </div>\n  </div>\n\n  <!-- 1. Introduction to Heights and Distances -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 1. Conceptual Introduction &amp; The Physical Significance</div>\n    <div class=\"q-text\">\n      In the previous chapter, we mastered the algebraic definitions of trigonometric ratios in right-angled triangles. In this chapter, we apply these ratios to measure inaccessible celestial, terrestrial, and architectural heights and distances &mdash; such as mountain peaks, lighthouses, tall trees, chimneys, and wide rivers &mdash; without physically measuring them.\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-step\">\n        <div>Historically, trigonometry enabled ancient astronomers to estimate distances from Earth to planetary bodies and stars. Today, civil engineers, marine navigators, and surveyors utilize optical theodolites based on these exact geometric principles.</div>\n        <div style=\"margin-top: 8px;\"><b style=\"color: #64FFDA;\">The Core Mathematical Principle:</b> In any right-angled triangle, if we know:</div>\n        <div>&bull; <b>One side length</b> and <b>one acute angle</b>, OR</div>\n        <div>&bull; <b>Two side lengths</b>,</div>\n        <div>we can uniquely evaluate all remaining sides and angles using appropriate trigonometric ratios (<b style=\"color: #1DE9B6;\">tan &theta;</b>, <b style=\"color: #1DE9B6;\">sin &theta;</b>, or <b style=\"color: #1DE9B6;\">cos &theta;</b>).</div>\n      </div>\n    </div>\n  </div>\n\n  <!-- 2. Fundamental Definitions & Geometry of Sight -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 2. Fundamental Terminology: Line of Sight, Elevation &amp; Depression</div>\n    <div class=\"q-text\">\n      All problems in Heights and Distances rely on three primary geometric definitions:\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-step\">\n        <div><b style=\"color: #64FFDA;\">(i) Line of Sight:</b> The straight line drawn from the eye of the observer to the target point on the object viewed by the observer.</div>\n        <div style=\"margin-top: 6px;\"><b style=\"color: #64FFDA;\">(ii) Horizontal Line:</b> The straight horizontal reference line passing through the eye of the observer parallel to the ground level.</div>\n        <div style=\"margin-top: 6px;\"><b style=\"color: #64FFDA;\">(iii) Angle of Elevation:</b> The angle formed by the line of sight with the horizontal level when the target point is <b>ABOVE</b> the horizontal level (i.e. when the observer looks upward).</div>\n        <div style=\"margin-top: 6px;\"><b style=\"color: #64FFDA;\">(iv) Angle of Depression:</b> The angle formed by the line of sight with the horizontal line when the target point is <b>BELOW</b> the horizontal level (i.e. when the observer looks downward from a cliff, building, or lighthouse).</div>\n        <div style=\"margin-top: 10px; background: rgba(29, 233, 182, 0.1); border-left: 3px solid #1DE9B6; padding: 10px 14px; border-radius: 6px;\">\n          💡 <b style=\"color: #64FFDA;\">Crucial Equality Law (Alternate Interior Angles):</b><br/>\n          Since the horizontal line drawn at the top from an observer's eye is parallel to the ground horizontal line, the <b>Angle of Depression</b> from the top of a tower to a point on the ground is <b>strictly equal</b> to the <b>Angle of Elevation</b> of the top of the tower viewed from that point on the ground!\n        </div>\n      </div>\n    </div>\n\n    <!-- Standalone Diagram Card -->\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 220\" width=\"350\" height=\"220\" style=\"background-color:white; border:1px solid #ddd;\"><line x1=\"20\" y1=\"180\" x2=\"330\" y2=\"180\" stroke=\"green\" stroke-width=\"2\" fill=\"none\"/><rect x=\"280\" y=\"50\" width=\"20\" height=\"130\" fill=\"#ddd\" stroke=\"black\" stroke-width=\"1\"/><rect x=\"50\" y=\"150\" width=\"10\" height=\"30\" fill=\"#333\" stroke=\"black\" stroke-width=\"1\"/><line x1=\"60\" y1=\"155\" x2=\"280\" y2=\"50\" stroke=\"gray\" stroke-width=\"1\" stroke-dasharray=\"4\" fill=\"none\"/><line x1=\"60\" y1=\"155\" x2=\"280\" y2=\"155\" stroke=\"gray\" stroke-width=\"1\" stroke-dasharray=\"4\" fill=\"none\"/><path d=\"M 90 155 A 30 30 0 0 0 85 140\" stroke=\"red\" fill=\"none\"/><text x=\"110\" y=\"140\" font-family=\"Arial\" font-size=\"12\" fill=\"red\" text-anchor=\"middle\">Angle of Elevation</text><line x1=\"280\" y1=\"50\" x2=\"20\" y2=\"50\" stroke=\"gray\" stroke-width=\"1\" stroke-dasharray=\"4\" fill=\"none\"/><line x1=\"280\" y1=\"50\" x2=\"50\" y2=\"180\" stroke=\"gray\" stroke-width=\"1\" stroke-dasharray=\"4\" fill=\"none\"/><path d=\"M 250 50 A 30 30 0 0 1 255 65\" stroke=\"blue\" fill=\"none\"/><text x=\"200\" y=\"40\" font-family=\"Arial\" font-size=\"12\" fill=\"blue\" text-anchor=\"middle\">Angle of Depression</text></svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Geometric representation of Line of Sight, Angle of Elevation (looking up), and Angle of Depression (looking down)</div>\n    </div>\n  </div>\n\n  <!-- 3. Master Trigonometric Values Table for Heights & Distances -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 3. Master Standard Values for 30&deg;, 45&deg;, and 60&deg;</div>\n    <div class=\"q-text\">\n      Almost 95% of Heights and Distances board questions involve the three primary angles: 30&deg;, 45&deg;, and 60&deg;. Memorizing their exact stacked fractions and numerical approximations ensures rapid and accurate computation.\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"table-card\">\n        <table>\n          <thead>\n            <tr>\n              <th>Trigonometric Ratio</th>\n              <th>30&deg;</th>\n              <th>45&deg;</th>\n              <th>60&deg;</th>\n              <th>Decimal Value</th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr>\n              <td><b>tan &theta; = P / B</b></td>\n              <td><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">&radic;3</span></span></td>\n              <td><b>1</b></td>\n              <td><b>&radic;3</b></td>\n              <td>&radic;3 &asymp; 1.732, &nbsp; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">&radic;3</span></span> &asymp; 0.577</td>\n            </tr>\n            <tr>\n              <td><b>sin &theta; = P / H</b></td>\n              <td><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></td>\n              <td><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">&radic;2</span></span></td>\n              <td><span class=\"frac\"><span class=\"num\">&radic;3</span><span class=\"den\">2</span></span></td>\n              <td>&radic;2 &asymp; 1.414</td>\n            </tr>\n            <tr>\n              <td><b>cos &theta; = B / H</b></td>\n              <td><span class=\"frac\"><span class=\"num\">&radic;3</span><span class=\"den\">2</span></span></td>\n              <td><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">&radic;2</span></span></td>\n              <td><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></td>\n              <td>&mdash;</td>\n            </tr>\n          </tbody>\n        </table>\n      </div>\n    </div>\n  </div>\n\n  <!-- 4. Five-Step Board Master Strategy -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 4. Five-Step Board Master Strategy for Solving Every Numerical</div>\n    <div class=\"sol-box\">\n      <div class=\"sol-step\">\n        <div><b style=\"color: #64FFDA;\">Step 1: Construct a Clean Geometric Diagram</b></div>\n        <div>Draw a neat sketch. Always represent upright vertical structures (towers, poles, trees, buildings) as vertical perpendicular lines (90&deg; to the horizontal ground).</div>\n        \n        <div style=\"margin-top: 8px;\"><b style=\"color: #64FFDA;\">Step 2: Account for Observer's Height</b></div>\n        <div>&bull; If the problem says \"from a point on the ground\", assume the observer has zero height (point observer).<br/>\n        &bull; If observer's height <i>h</i> is given (e.g. 1.5 m boy or 1.2 m girl), draw the eye level at height <i>h</i> above ground. The vertical opposite side becomes (Total Height &minus; <i>h</i>).</div>\n\n        <div style=\"margin-top: 8px;\"><b style=\"color: #64FFDA;\">Step 3: Correctly Mark Angles</b></div>\n        <div>Always draw the horizontal line at the eye position before marking angles. Never place the angle of depression along the vertical tower!</div>\n\n        <div style=\"margin-top: 8px;\"><b style=\"color: #64FFDA;\">Step 4: Select the Optimal Trigonometric Ratio</b></div>\n        <div>&bull; Involving Perpendicular and Base $\\to$ Use <b>tan &theta;</b>.<br/>\n        &bull; Involving Incline/Rope/Slide length (Hypotenuse) and Height $\\to$ Use <b>sin &theta;</b>.</div>\n\n        <div style=\"margin-top: 8px;\"><b style=\"color: #64FFDA;\">Step 5: Solve Two-Triangle Systems Efficiently</b></div>\n        <div>When two right triangles share a common side (common height or common horizontal baseline), express the common variable from the first triangle and substitute into the second triangle. Rationalize denominators containing &radic;3.</div>\n      </div>\n    </div>\n  </div>\n\n  <!-- 5. Master Revision Formula & Shortcut Cheat Sheet -->\n  <div class=\"q-card\" style=\"border-color: #1DE9B6;\">\n    <div class=\"q-title\">✦ 5. Master Revision Formula &amp; Shortcut Cheat Sheet</div>\n    <div class=\"sol-box\">\n      <div class=\"table-card\">\n        <table>\n          <thead>\n            <tr>\n              <th>Problem Configuration</th>\n              <th>Standard Diagram Setup</th>\n              <th>Direct Result / Formula</th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr>\n              <td><b>Single Triangle Height</b></td>\n              <td>Distance <i>d</i> from foot, elevation &theta;</td>\n              <td><b><i>h</i> = <i>d</i> &middot; tan &theta;</b></td>\n            </tr>\n            <tr>\n              <td><b>Complementary Angles</b></td>\n              <td>Elevations &theta; and (90&deg; &minus; &theta;) at distances <i>a</i> and <i>b</i></td>\n              <td><b><i>h</i> = &radic;<span style=\"border-top: 1px solid currentColor;\">a &middot; b</span></b></td>\n            </tr>\n            <tr>\n              <td><b>Two Angles on Same Side</b></td>\n              <td>Angles &alpha; and &beta; (&alpha; &lt; &beta;) separated by distance <i>d</i></td>\n              <td><b><i>h</i> = <span class=\"frac\"><span class=\"num\">d &middot; tan &alpha; &middot; tan &beta;</span><span class=\"den\">tan &beta; &minus; tan &alpha;</span></span></b></td>\n            </tr>\n            <tr>\n              <td><b>Two Angles on Opposite Sides</b></td>\n              <td>Poles/Points on opposite sides of distance <i>w</i></td>\n              <td><b><i>w</i> = <i>h</i>(cot &alpha; + cot &beta;)</b></td>\n            </tr>\n            <tr>\n              <td><b>Flagstaff / Pedestal</b></td>\n              <td>Height <i>H</i> atop building of height <i>h</i></td>\n              <td><b><i>h</i> = <span class=\"frac\"><span class=\"num\">H &middot; tan &alpha;</span><span class=\"den\">tan &beta; &minus; tan &alpha;</span></span></b></td>\n            </tr>\n          </tbody>\n        </table>\n      </div>\n    </div>\n  </div>\n\n</div>\n",
+  htmlExercises: {
+    examples: "\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; }\n  .frac .den { padding: 1px 4px; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(29, 233, 182, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #1DE9B6; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 14px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(29, 233, 182, 0.25); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #1DE9B6; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #64FFDA; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(29, 233, 182, 0.15); border: 1px solid #1DE9B6; color: #64FFDA; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 6px 0; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(29, 233, 182, 0.4); border-radius: 10px; padding: 14px; margin: 16px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #FFFFFF; border-radius: 8px; padding: 10px 8px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.25); }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 10px; font-weight: 500; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Example 1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 1</div>\n    <div class=\"q-text\">\n      A tower stands vertically on the ground. From a point on the ground, which is 15 m away from the foot of the tower, the angle of elevation of the top of the tower is found to be 60&deg;. Find the height of the tower.\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 300\">\r\n  <defs>\r\n    <marker id=\"arrow\" markerWidth=\"10\" markerHeight=\"10\" refX=\"9\" refY=\"3\" orient=\"auto\" markerUnits=\"strokeWidth\">\r\n      <path d=\"M0,0 L0,6 L9,3 z\" fill=\"#333\" />\r\n    </marker>\r\n  </defs>\r\n\r\n  <line x1=\"20\" y1=\"250\" x2=\"330\" y2=\"250\" stroke=\"#1565C0\" stroke-width=\"2\"/>\r\n\r\n  <!-- Tower AB. B(250, 250). A(250, 77) -->\r\n  <!-- Base 100 units = 15m. Height = 173 units. -->\r\n  <line x1=\"250\" y1=\"250\" x2=\"250\" y2=\"77\" stroke=\"#1565C0\" stroke-width=\"2\"/>\r\n  <text x=\"255\" y=\"70\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">A</text>\r\n  <text x=\"255\" y=\"270\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">B</text>\r\n  <text x=\"260\" y=\"170\" font-family=\"Arial\" font-size=\"18\" fill=\"#333\">h</text>\r\n\r\n  <!-- Point C(150, 250) -->\r\n  <circle cx=\"150\" cy=\"250\" r=\"3\" fill=\"#333\" />\r\n  <text x=\"140\" y=\"270\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">C</text>\r\n\r\n  <!-- Hypotenuse AC -->\r\n  <line x1=\"150\" y1=\"250\" x2=\"250\" y2=\"77\" stroke=\"#1565C0\" stroke-width=\"2\"/>\r\n\r\n  <!-- Angle 60 at C. dx 100 dy -173. Unit(0.5, -0.86). End (170, 215) -->\r\n  <path d=\"M 190 250 A 40 40 0 0 0 170 215\" fill=\"none\" stroke=\"#1565C0\" stroke-width=\"2\"/>\r\n  <text x=\"200\" y=\"235\" font-family=\"Arial\" font-size=\"16\" fill=\"#333\">60°</text>\r\n\r\n  <line x1=\"150\" y1=\"280\" x2=\"250\" y2=\"280\" stroke=\"#333\" marker-start=\"url(#arrow)\" marker-end=\"url(#arrow)\" />\r\n  <text x=\"185\" y=\"300\" font-family=\"Arial\" font-size=\"18\" fill=\"#333\">15 m</text>\r\n</svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Tower AB of height <i>h</i> with angle of elevation 60&deg; from point C at distance 15 m</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Let AB represent the vertical tower of height <i>h</i> metres standing on the ground.</div>\n        <div>Let C be the observation point on the ground such that BC = 15 m.</div>\n        <div>The angle of elevation of the top of the tower from point C is &ang;ACB = 60&deg;.</div>\n        <div>In right-angled triangle &Delta;ABC, right-angled at B:</div>\n        <div>&rArr; tan 60&deg; = <span class=\"frac\"><span class=\"num\">AB</span><span class=\"den\">BC</span></span> <span class=\"reason\">[tan &theta; = Perpendicular / Base]</span></div>\n        <div>&rArr; &radic;3 = <span class=\"frac\"><span class=\"num\">h</span><span class=\"den\">15</span></span> <span class=\"reason\">[Since tan 60&deg; = &radic;3]</span></div>\n        <div>&rArr; <b>h = 15&radic;3 m</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Height of Tower: </span>\n        <span class=\"ans-val\">15&radic;3 m &asymp; 25.98 m</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Example 2 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 2</div>\n    <div class=\"q-text\">\n      An electrician has to repair an electric fault on a pole of height 5 m. She needs to reach a point 1.3 m below the top of the pole to undertake the repair work. What should be the length of the ladder that she should use which, when inclined at an angle of 60&deg; to the horizontal, would enable her to reach the required position? Also, how far from the foot of the pole should she place the foot of the ladder? (Take &radic;3 = 1.73)\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 350\">\r\n  <defs>\r\n    <marker id=\"arrow\" markerWidth=\"10\" markerHeight=\"10\" refX=\"9\" refY=\"3\" orient=\"auto\" markerUnits=\"strokeWidth\">\r\n      <path d=\"M0,0 L0,6 L9,3 z\" fill=\"#333\" />\r\n    </marker>\r\n  </defs>\r\n\r\n  <!-- Ground -->\r\n  <line x1=\"50\" y1=\"300\" x2=\"300\" y2=\"300\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\r\n\r\n  <!-- Pole AD. D(100, 300). Height 250px (5m). A(100, 50). -->\r\n  <line x1=\"100\" y1=\"300\" x2=\"100\" y2=\"50\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\r\n  <text x=\"105\" y=\"50\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">A</text>\r\n  <text x=\"105\" y=\"320\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">D</text>\r\n\r\n  <!-- Point B (1.3m below A) -> 1.3m = 65px. y = 115. -->\r\n  <line x1=\"90\" y1=\"115\" x2=\"110\" y2=\"115\" stroke=\"#333\" stroke-width=\"2\"/>\r\n  <text x=\"70\" y=\"120\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">B</text>\r\n\r\n  <!-- 1.3m dimension -->\r\n  <line x1=\"130\" y1=\"50\" x2=\"130\" y2=\"115\" stroke=\"#555\" marker-start=\"url(#arrow)\" marker-end=\"url(#arrow)\"/>\r\n  <text x=\"135\" y=\"90\" font-family=\"Arial\" font-size=\"16\">1.3 m</text>\r\n\r\n  <!-- Foot of Ladder C. Dist = 2.14m = 107px. x = 207. -->\r\n  <circle cx=\"207\" cy=\"300\" r=\"3\" fill=\"#333\"/>\r\n  <text x=\"215\" y=\"320\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">C</text>\r\n\r\n  <!-- Ladder BC -->\r\n  <line x1=\"207\" y1=\"300\" x2=\"100\" y2=\"115\" stroke=\"#FF6F00\" stroke-width=\"2\"/>\r\n  \r\n  <!-- Angle 60 at C. dx -107 dy -185. Unit(-0.5, -0.866). End (187, 265) -->\r\n  <path d=\"M 167 300 A 40 40 0 0 1 187 265\" fill=\"none\" stroke=\"#FF6F00\" stroke-width=\"2\"/>\r\n  <text x=\"150\" y=\"280\" font-family=\"Arial\" font-size=\"16\" fill=\"#333\">60°</text>\r\n\r\n</svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Electrician ladder BC inclined at 60&deg; to reach point B, 1.3 m below top of 5 m pole</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Let AD be the vertical electric pole of height 5 m.</div>\n        <div>The electrician reaches point B, which is 1.3 m below the top A:</div>\n        <div>&rArr; BD = AD &minus; AB = 5 m &minus; 1.3 m = <b>3.7 m</b></div>\n        <div>Let BC be the ladder of length <i>L</i> inclined at angle &ang;BCD = 60&deg; to the horizontal ground.</div>\n        <div style=\"margin-top: 8px;\"><b style=\"color: #64FFDA;\">(i) Finding the Length of the Ladder (BC):</b></div>\n        <div>In right-angled triangle &Delta;BDC:</div>\n        <div>&rArr; sin 60&deg; = <span class=\"frac\"><span class=\"num\">BD</span><span class=\"den\">BC</span></span> <span class=\"reason\">[sin &theta; = Perpendicular / Hypotenuse]</span></div>\n        <div>&rArr; <span class=\"frac\"><span class=\"num\">&radic;3</span><span class=\"den\">2</span></span> = <span class=\"frac\"><span class=\"num\">3.7</span><span class=\"den\">BC</span></span></div>\n        <div>&rArr; BC = <span class=\"frac\"><span class=\"num\">3.7 &times; 2</span><span class=\"den\">&radic;3</span></span> = <span class=\"frac\"><span class=\"num\">7.4</span><span class=\"den\">1.73</span></span> &asymp; <b>4.28 m</b></div>\n        \n        <div style=\"margin-top: 8px;\"><b style=\"color: #64FFDA;\">(ii) Finding Distance of Foot of Ladder from Pole (DC):</b></div>\n        <div>In right-angled triangle &Delta;BDC:</div>\n        <div>&rArr; cot 60&deg; = <span class=\"frac\"><span class=\"num\">DC</span><span class=\"den\">BD</span></span> <span class=\"reason\">[cot &theta; = Base / Perpendicular]</span></div>\n        <div>&rArr; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">&radic;3</span></span> = <span class=\"frac\"><span class=\"num\">DC</span><span class=\"den\">3.7</span></span></div>\n        <div>&rArr; DC = <span class=\"frac\"><span class=\"num\">3.7</span><span class=\"den\">&radic;3</span></span> = <span class=\"frac\"><span class=\"num\">3.7</span><span class=\"den\">1.73</span></span> &asymp; <b>2.14 m</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Required Dimensions: </span>\n        <span class=\"ans-val\">Length of Ladder = 4.28 m &bull; Distance from Foot = 2.14 m</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Example 3 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 3</div>\n    <div class=\"q-text\">\n      An observer 1.5 m tall is 28.5 m away from a chimney. The angle of elevation of the top of the chimney from her eyes is 45&deg;. What is the height of the chimney?\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 350\">\r\n  <defs>\r\n    <marker id=\"arrow\" markerWidth=\"10\" markerHeight=\"10\" refX=\"9\" refY=\"3\" orient=\"auto\" markerUnits=\"strokeWidth\">\r\n      <path d=\"M0,0 L0,6 L9,3 z\" fill=\"#333\" />\r\n    </marker>\r\n  </defs>\r\n\r\n  <!-- Rectangle DCBE -->\r\n  <!-- C(50, 320), B(300, 320), E(300, 270), D(50, 270) -->\r\n  <polyline points=\"50,270 50,320 300,320 300,270\" fill=\"none\" stroke=\"#333\" stroke-width=\"2\"/>\r\n  <line x1=\"50\" y1=\"270\" x2=\"300\" y2=\"270\" stroke=\"#333\" stroke-width=\"2\"/>\r\n  \r\n  <!-- Triangle ADE -->\r\n  <!-- D(50, 270), E(300, 270), A(300, 20) -->\r\n  <line x1=\"50\" y1=\"270\" x2=\"300\" y2=\"20\" stroke=\"#D81B60\" stroke-width=\"2\"/>\r\n  <line x1=\"300\" y1=\"270\" x2=\"300\" y2=\"20\" stroke=\"#D81B60\" stroke-width=\"2\"/>\r\n\r\n  <!-- Right Angle Symbol at E -->\r\n  <rect x=\"280\" y=\"250\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"#333\" stroke-width=\"1\"/>\r\n\r\n  <!-- Labels -->\r\n  <text x=\"300\" y=\"15\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">A</text>\r\n  <text x=\"300\" y=\"340\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">B</text>\r\n  <text x=\"40\" y=\"340\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">C</text>\r\n  <text x=\"30\" y=\"270\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">D</text>\r\n  <text x=\"310\" y=\"270\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">E</text>\r\n\r\n  <!-- Dimensions -->\r\n  <text x=\"140\" y=\"260\" font-family=\"Arial\" font-size=\"18\">28.5 m</text>\r\n  <text x=\"140\" y=\"340\" font-family=\"Arial\" font-size=\"18\">28.5 m</text>\r\n  \r\n  <text x=\"5\" y=\"295\" font-family=\"Arial\" font-size=\"16\">1.5 m</text>\r\n  <text x=\"305\" y=\"300\" font-family=\"Arial\" font-size=\"16\">1.5 m</text>\r\n  \r\n  <!-- Height AB Question Mark -->\r\n  <line x1=\"330\" y1=\"20\" x2=\"330\" y2=\"320\" stroke=\"#333\" marker-start=\"url(#arrow)\" marker-end=\"url(#arrow)\"/>\r\n  <text x=\"340\" y=\"170\" font-family=\"Arial\" font-size=\"24\" font-weight=\"bold\">?</text>\r\n\r\n  <!-- Angle 45 at D. dx 250 dy -250. Unit(0.707, -0.707). End (50+28=78, 270-28=242) -->\r\n  <path d=\"M 90 270 A 40 40 0 0 0 78 242\" fill=\"none\" stroke=\"#D81B60\" stroke-width=\"2\"/>\r\n  <text x=\"100\" y=\"255\" font-family=\"Arial\" font-size=\"16\" fill=\"#333\">45°</text>\r\n\r\n</svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Observer CD of height 1.5 m observing chimney AB at 28.5 m distance</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Let AB be the chimney and CD be the observer of height 1.5 m.</div>\n        <div>The distance of the observer from the chimney is CB = 28.5 m.</div>\n        <div>Draw DE &perp; AB parallel to the ground CB. Then:</div>\n        <div>&rArr; DE = CB = 28.5 m &nbsp; and &nbsp; EB = CD = 1.5 m</div>\n        <div>The angle of elevation of top A from eye D is &ang;ADE = 45&deg;.</div>\n        <div>In right-angled triangle &Delta;ADE:</div>\n        <div>&rArr; tan 45&deg; = <span class=\"frac\"><span class=\"num\">AE</span><span class=\"den\">DE</span></span></div>\n        <div>&rArr; 1 = <span class=\"frac\"><span class=\"num\">AE</span><span class=\"den\">28.5</span></span> <span class=\"reason\">[Since tan 45&deg; = 1]</span></div>\n        <div>&rArr; <b>AE = 28.5 m</b></div>\n        <div style=\"margin-top: 8px;\">Total height of the chimney:</div>\n        <div>&rArr; AB = AE + EB = 28.5 m + 1.5 m = <b>30 m</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Height of Chimney: </span>\n        <span class=\"ans-val\">30 m</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Example 4 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 4</div>\n    <div class=\"q-text\">\n      From a point P on the ground the angle of elevation of the top of a 10 m tall building is 30&deg;. A flag is hoisted at the top of the building and the angle of elevation of the top of the flagstaff from P is 45&deg;. Find the length of the flagstaff and the distance of the building from the point P. (Take &radic;3 = 1.732)\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 350\">\r\n  <defs>\r\n    <marker id=\"arrow\" markerWidth=\"10\" markerHeight=\"10\" refX=\"9\" refY=\"3\" orient=\"auto\" markerUnits=\"strokeWidth\">\r\n      <path d=\"M0,0 L0,6 L9,3 z\" fill=\"#333\" />\r\n    </marker>\r\n  </defs>\r\n\r\n  <line x1=\"20\" y1=\"300\" x2=\"300\" y2=\"300\" stroke=\"#7B1FA2\" stroke-width=\"2\"/>\r\n\r\n  <!-- Building AB. A(223, 300). B(223, 200). -->\r\n  <line x1=\"223\" y1=\"300\" x2=\"223\" y2=\"200\" stroke=\"#7B1FA2\" stroke-width=\"2\"/>\r\n  <text x=\"230\" y=\"300\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">A</text>\r\n  <text x=\"230\" y=\"200\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">B</text>\r\n  <text x=\"235\" y=\"250\" font-family=\"Arial\" font-size=\"16\" fill=\"#333\">10 m</text>\r\n\r\n  <!-- Flagstaff BD. D(223, 127). -->\r\n  <line x1=\"223\" y1=\"200\" x2=\"223\" y2=\"127\" stroke=\"#9C27B0\" stroke-width=\"2\"/>\r\n  <text x=\"230\" y=\"125\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">D</text>\r\n  <text x=\"235\" y=\"160\" font-family=\"Arial\" font-size=\"20\" fill=\"#333\" font-weight=\"bold\">?</text>\r\n\r\n  <!-- Point P(50, 300) -->\r\n  <circle cx=\"50\" cy=\"300\" r=\"3\" fill=\"#333\"/>\r\n  <text x=\"40\" y=\"320\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">P</text>\r\n\r\n  <!-- Sight Lines -->\r\n  <line x1=\"50\" y1=\"300\" x2=\"223\" y2=\"200\" stroke=\"#7B1FA2\" stroke-width=\"2\"/> <!-- To B -->\r\n  <line x1=\"50\" y1=\"300\" x2=\"223\" y2=\"127\" stroke=\"#7B1FA2\" stroke-width=\"2\"/> <!-- To D -->\r\n\r\n  <!-- Angle 30 to B. dx 173 dy -100. Unit(0.86, -0.5). End (101, 270) -->\r\n  <path d=\"M 110 300 A 60 60 0 0 0 101 270\" fill=\"none\" stroke=\"#7B1FA2\" stroke-width=\"2\"/>\r\n  <text x=\"120\" y=\"290\" font-family=\"Arial\" font-size=\"16\" fill=\"#333\">30°</text>\r\n\r\n  <!-- Angle 45 to D. dx 173 dy -173. Unit(0.707, -0.707). End (78, 272) -->\r\n  <path d=\"M 90 300 A 40 40 0 0 0 78 272\" fill=\"none\" stroke=\"#7B1FA2\" stroke-width=\"2\"/>\r\n  <text x=\"70\" y=\"270\" font-family=\"Arial\" font-size=\"16\" fill=\"#333\">45°</text>\r\n\r\n</svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Building AB = 10 m with flagstaff BD atop it observed from point P</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Let AB represent the height of the building = 10 m.</div>\n        <div>Let BD represent the flagstaff of length <i>h</i> mounted atop the building.</div>\n        <div>Let P be the observation point on the ground at distance PA = <i>x</i> from the foot of the building.</div>\n        <div>Given: &ang;APB = 30&deg; and &ang;APD = 45&deg;.</div>\n        <div style=\"margin-top: 8px;\"><b style=\"color: #64FFDA;\">(i) Finding Distance PA (x):</b></div>\n        <div>In right-angled triangle &Delta;PAB:</div>\n        <div>&rArr; tan 30&deg; = <span class=\"frac\"><span class=\"num\">AB</span><span class=\"den\">PA</span></span></div>\n        <div>&rArr; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">&radic;3</span></span> = <span class=\"frac\"><span class=\"num\">10</span><span class=\"den\">x</span></span></div>\n        <div>&rArr; <b>x = 10&radic;3 m</b> &asymp; 10(1.732) = <b>17.32 m</b></div>\n\n        <div style=\"margin-top: 8px;\"><b style=\"color: #64FFDA;\">(ii) Finding Length of Flagstaff (BD = h):</b></div>\n        <div>Total height AD = AB + BD = 10 + <i>h</i>.</div>\n        <div>In right-angled triangle &Delta;PAD:</div>\n        <div>&rArr; tan 45&deg; = <span class=\"frac\"><span class=\"num\">AD</span><span class=\"den\">PA</span></span></div>\n        <div>&rArr; 1 = <span class=\"frac\"><span class=\"num\">10 + h</span><span class=\"den\">10&radic;3</span></span></div>\n        <div>&rArr; 10 + h = 10&radic;3</div>\n        <div>&rArr; h = 10&radic;3 &minus; 10 = 10(&radic;3 &minus; 1)</div>\n        <div>&rArr; h = 10(1.732 &minus; 1) = 10(0.732) = <b>7.32 m</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Solutions: </span>\n        <span class=\"ans-val\">Length of Flagstaff = 7.32 m &bull; Distance from P = 17.32 m</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Example 5 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 5</div>\n    <div class=\"q-text\">\n      The shadow of a tower standing on a level ground is found to be 40 m longer when the Sun's altitude is 30&deg; than when it is 60&deg;. Find the height of the tower.\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 450 350\">\r\n  <defs>\r\n    <marker id=\"arrow\" markerWidth=\"10\" markerHeight=\"10\" refX=\"9\" refY=\"3\" orient=\"auto\" markerUnits=\"strokeWidth\">\r\n      <path d=\"M0,0 L0,6 L9,3 z\" fill=\"#333\" />\r\n    </marker>\r\n  </defs>\r\n\r\n  <line x1=\"20\" y1=\"300\" x2=\"420\" y2=\"300\" stroke=\"#E65100\" stroke-width=\"2\"/>\r\n\r\n  <!-- Tower AB. A(400, 196). B(400, 300). -->\r\n  <line x1=\"400\" y1=\"300\" x2=\"400\" y2=\"196\" stroke=\"#E65100\" stroke-width=\"2\"/>\r\n  <text x=\"405\" y=\"190\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">A</text>\r\n  <text x=\"405\" y=\"320\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">B</text>\r\n  <text x=\"410\" y=\"250\" font-family=\"Arial\" font-size=\"20\" fill=\"#333\" font-weight=\"bold\">h</text>\r\n\r\n  <!-- Points C(340, 300) and D(220, 300) -->\r\n  <circle cx=\"340\" cy=\"300\" r=\"3\" fill=\"#333\"/>\r\n  <text x=\"335\" y=\"325\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">C</text>\r\n\r\n  <circle cx=\"220\" cy=\"300\" r=\"3\" fill=\"#333\"/>\r\n  <text x=\"215\" y=\"325\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">D</text>\r\n\r\n  <!-- Sight Lines -->\r\n  <line x1=\"340\" y1=\"300\" x2=\"400\" y2=\"196\" stroke=\"#E65100\" stroke-width=\"2\"/>\r\n  <line x1=\"220\" y1=\"300\" x2=\"400\" y2=\"196\" stroke=\"#E65100\" stroke-width=\"2\"/>\r\n\r\n  <!-- Angle 60 at C(340). dx 60 dy -104. Unit(0.5, -0.86). End (360, 265) -->\r\n  <path d=\"M 380 300 A 40 40 0 0 0 360 265\" fill=\"none\" stroke=\"#E65100\" stroke-width=\"2\"/>\r\n  <text x=\"375\" y=\"280\" font-family=\"Arial\" font-size=\"16\" fill=\"#333\">60°</text>\r\n\r\n  <!-- Angle 30 at D(220). dx 180 dy -104. Unit(0.86, -0.5). End (254, 280) -->\r\n  <path d=\"M 260 300 A 40 40 0 0 0 254 280\" fill=\"none\" stroke=\"#E65100\" stroke-width=\"2\"/>\r\n  <text x=\"270\" y=\"290\" font-family=\"Arial\" font-size=\"16\" fill=\"#333\">30°</text>\r\n\r\n  <!-- Distance 40m -->\r\n  <line x1=\"220\" y1=\"330\" x2=\"340\" y2=\"330\" stroke=\"#333\" marker-start=\"url(#arrow)\" marker-end=\"url(#arrow)\" />\r\n  <text x=\"260\" y=\"350\" font-family=\"Arial\" font-size=\"18\" fill=\"#333\">40 m</text>\r\n\r\n</svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Tower AB of height <i>h</i> with shadow lengthening by 40 m from 60&deg; to 30&deg;</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Let AB be the vertical tower of height <i>h</i> metres.</div>\n        <div>Let BC = <i>x</i> be the length of the shadow when the Sun's altitude is 60&deg;.</div>\n        <div>When the Sun's altitude decreases to 30&deg;, the shadow becomes BD = <i>x</i> + 40 metres.</div>\n        <div style=\"margin-top: 8px;\">In right-angled triangle &Delta;ABC:</div>\n        <div>&rArr; tan 60&deg; = <span class=\"frac\"><span class=\"num\">AB</span><span class=\"den\">BC</span></span></div>\n        <div>&rArr; &radic;3 = <span class=\"frac\"><span class=\"num\">h</span><span class=\"den\">x</span></span> &rArr; <b>h = x&radic;3</b> &nbsp; &hellip; (1)</div>\n        <div style=\"margin-top: 8px;\">In right-angled triangle &Delta;ABD:</div>\n        <div>&rArr; tan 30&deg; = <span class=\"frac\"><span class=\"num\">AB</span><span class=\"den\">BD</span></span></div>\n        <div>&rArr; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">&radic;3</span></span> = <span class=\"frac\"><span class=\"num\">h</span><span class=\"den\">x + 40</span></span></div>\n        <div>Substitute <i>h</i> = <i>x</i>&radic;3 from equation (1):</div>\n        <div>&rArr; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">&radic;3</span></span> = <span class=\"frac\"><span class=\"num\">x&radic;3</span><span class=\"den\">x + 40</span></span></div>\n        <div>Cross-multiplying:</div>\n        <div>&rArr; x + 40 = 3x</div>\n        <div>&rArr; 2x = 40 &rArr; <b>x = 20 m</b></div>\n        <div>Substituting <i>x</i> = 20 into equation (1):</div>\n        <div>&rArr; <b>h = 20&radic;3 m</b> &asymp; 20(1.732) = 34.64 m</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Height of Tower: </span>\n        <span class=\"ans-val\">20&radic;3 m &asymp; 34.64 m</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Example 6 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 6</div>\n    <div class=\"q-text\">\n      The angles of depression of the top and the bottom of an 8 m tall building from the top of a multi-storeyed building are 30&deg; and 45&deg;, respectively. Find the height of the multi-storeyed building and the distance between the two buildings.\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 450 350\">\r\n  <defs>\r\n    <marker id=\"arrow\" markerWidth=\"10\" markerHeight=\"10\" refX=\"9\" refY=\"3\" orient=\"auto\" markerUnits=\"strokeWidth\">\r\n      <path d=\"M0,0 L0,6 L9,3 z\" fill=\"#333\" />\r\n    </marker>\r\n  </defs>\r\n\r\n  <!-- Small Building AB (Left). A(50,300). B(50,220). H=80px (8m). -->\r\n  <line x1=\"50\" y1=\"300\" x2=\"50\" y2=\"220\" stroke=\"#1565C0\" stroke-width=\"2\"/>\r\n  <text x=\"45\" y=\"325\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">A</text>\r\n  <text x=\"40\" y=\"220\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">B</text>\r\n  <text x=\"5\" y=\"270\" font-family=\"Arial\" font-size=\"16\">8 m</text>\r\n\r\n  <!-- Ground AC -->\r\n  <line x1=\"50\" y1=\"300\" x2=\"350\" y2=\"300\" stroke=\"#333\" stroke-width=\"2\"/>\r\n  <text x=\"200\" y=\"325\" font-family=\"Arial\" font-size=\"20\" font-weight=\"bold\">?</text>\r\n  <text x=\"355\" y=\"325\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">C</text>\r\n\r\n  <!-- Tall Building PC (Right). C(350,300). D(350,220). P(350,50). -->\r\n  <line x1=\"350\" y1=\"300\" x2=\"350\" y2=\"50\" stroke=\"#1565C0\" stroke-width=\"2\"/>\r\n  <text x=\"355\" y=\"50\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">P</text>\r\n  <text x=\"355\" y=\"220\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">D</text>\r\n  <rect x=\"330\" y=\"280\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"#333\" stroke-width=\"1\"/>\r\n  <rect x=\"330\" y=\"220\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"#333\" stroke-width=\"1\"/>\r\n\r\n  <text x=\"360\" y=\"270\" font-family=\"Arial\" font-size=\"16\">8 m</text>\r\n  <text x=\"360\" y=\"130\" font-family=\"Arial\" font-size=\"20\" font-weight=\"bold\">?</text>\r\n\r\n  <!-- Horizontal BD -->\r\n  <line x1=\"50\" y1=\"220\" x2=\"350\" y2=\"220\" stroke=\"#333\" stroke-width=\"2\"/>\r\n\r\n  <!-- Top Horizontal PQ -->\r\n  <line x1=\"100\" y1=\"50\" x2=\"350\" y2=\"50\" stroke=\"#555\" stroke-dasharray=\"6,4\" stroke-width=\"2\"/>\r\n  <text x=\"90\" y=\"55\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">Q</text>\r\n\r\n  <!-- Diagonals/Sight Lines -->\r\n  <!-- P to B (30 deg) -->\r\n  <line x1=\"350\" y1=\"50\" x2=\"50\" y2=\"220\" stroke=\"#1565C0\" stroke-width=\"2\"/>\r\n  \r\n  <!-- P to A (45 deg) -->\r\n  <line x1=\"350\" y1=\"50\" x2=\"50\" y2=\"300\" stroke=\"#1565C0\" stroke-width=\"2\"/>\r\n\r\n  <!-- Angle Depression 30 (QPB) -->\r\n  <path d=\"M 270 50 A 80 80 0 0 0 285 86\" fill=\"none\" stroke=\"#1565C0\" stroke-width=\"2\"/>\r\n  <text x=\"240\" y=\"80\" font-family=\"Arial\" font-size=\"16\" fill=\"#333\">30°</text>\r\n\r\n  <!-- Angle Depression 45 (QPA) -->\r\n  <path d=\"M 290 50 A 60 60 0 0 0 307 85\" fill=\"none\" stroke=\"#1565C0\" stroke-width=\"2\"/>\r\n  <text x=\"300\" y=\"100\" font-family=\"Arial\" font-size=\"16\" fill=\"#333\">45°</text>\r\n\r\n  <!-- Alternate Interior Angles (Optional but good for clarity) -->\r\n  <!-- 30 at B. dx 300 dy -170. Unit(0.87, -0.49). End (90, 197) -->\r\n  <path d=\"M 90 220 A 40 40 0 0 0 85 200\" fill=\"none\" stroke=\"#333\" stroke-width=\"1\"/>\r\n  <text x=\"100\" y=\"210\" font-family=\"Arial\" font-size=\"16\">30°</text>\r\n\r\n  <!-- 45 at A. dx 300 dy -250. Unit(0.77, -0.64). End (80, 275) -->\r\n  <path d=\"M 90 300 A 40 40 0 0 0 80 275\" fill=\"none\" stroke=\"#333\" stroke-width=\"1\"/>\r\n  <text x=\"100\" y=\"290\" font-family=\"Arial\" font-size=\"16\">45°</text>\r\n\r\n</svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Multi-storeyed building PC observed towards 8 m building AB</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Let PC be the multi-storeyed building of height <i>H</i> metres.</div>\n        <div>Let AB be the 8 m tall building, so AB = 8 m.</div>\n        <div>Let AC = <i>d</i> be the horizontal distance between the two buildings.</div>\n        <div>Draw BD &perp; PC. Then BD = AC = <i>d</i> and DC = AB = 8 m.</div>\n        <div>Therefore, the remaining upper portion PD = <i>H</i> &minus; 8.</div>\n        <div>The angles of depression of top A and bottom B of the building are 30&deg; and 45&deg;.</div>\n        <div>By alternate interior angles: &ang;PBD = 30&deg; and &ang;PAC = 45&deg;.</div>\n        <div style=\"margin-top: 8px;\">In right-angled triangle &Delta;PAC:</div>\n        <div>&rArr; tan 45&deg; = <span class=\"frac\"><span class=\"num\">PC</span><span class=\"den\">AC</span></span></div>\n        <div>&rArr; 1 = <span class=\"frac\"><span class=\"num\">H</span><span class=\"den\">d</span></span> &rArr; <b>H = d</b> &nbsp; &hellip; (1)</div>\n        <div style=\"margin-top: 8px;\">In right-angled triangle &Delta;PBD:</div>\n        <div>&rArr; tan 30&deg; = <span class=\"frac\"><span class=\"num\">PD</span><span class=\"den\">BD</span></span></div>\n        <div>&rArr; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">&radic;3</span></span> = <span class=\"frac\"><span class=\"num\">H &minus; 8</span><span class=\"den\">d</span></span></div>\n        <div>Since <i>d</i> = <i>H</i> from equation (1):</div>\n        <div>&rArr; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">&radic;3</span></span> = <span class=\"frac\"><span class=\"num\">H &minus; 8</span><span class=\"den\">H</span></span></div>\n        <div>&rArr; H = &radic;3(H &minus; 8) = H&radic;3 &minus; 8&radic;3</div>\n        <div>&rArr; H(&radic;3 &minus; 1) = 8&radic;3</div>\n        <div>&rArr; H = <span class=\"frac\"><span class=\"num\">8&radic;3</span><span class=\"den\">&radic;3 &minus; 1</span></span></div>\n        <div>Rationalizing the denominator:</div>\n        <div>&rArr; H = <span class=\"frac\"><span class=\"num\">8&radic;3(&radic;3 + 1)</span><span class=\"den\">(&radic;3 &minus; 1)(&radic;3 + 1)</span></span> = <span class=\"frac\"><span class=\"num\">8(3 + &radic;3)</span><span class=\"den\">3 &minus; 1</span></span> = <span class=\"frac\"><span class=\"num\">8(3 + &radic;3)</span><span class=\"den\">2</span></span> = <b>4(3 + &radic;3) m</b></div>\n        <div>Since <i>d</i> = <i>H</i>, the distance between the two buildings is also <b>4(3 + &radic;3) m</b>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Solutions: </span>\n        <span class=\"ans-val\">Height = 4(3 + &radic;3) m &bull; Distance = 4(3 + &radic;3) m</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Example 7 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 7</div>\n    <div class=\"q-text\">\n      From a point on a bridge across a river, the angles of depression of the banks on opposite sides of the river are 30&deg; and 45&deg;, respectively. If the bridge is at a height of 3 m from the banks, find the width of the river.\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 450 300\">\r\n  <defs>\r\n    <marker id=\"arrow\" markerWidth=\"10\" markerHeight=\"10\" refX=\"9\" refY=\"3\" orient=\"auto\" markerUnits=\"strokeWidth\">\r\n      <path d=\"M0,0 L0,6 L9,3 z\" fill=\"#333\" />\r\n    </marker>\r\n  </defs>\r\n\r\n  <line x1=\"20\" y1=\"250\" x2=\"430\" y2=\"250\" stroke=\"#555\" stroke-width=\"2\"/> <!-- River/Ground -->\r\n  <line x1=\"20\" y1=\"50\" x2=\"430\" y2=\"50\" stroke=\"#555\" stroke-dasharray=\"6,4\" stroke-width=\"2\"/> <!-- Bridge Level -->\r\n\r\n  <!-- Point P(225, 50). Height 3m -> 200px (Scale). Ground(250). -->\r\n  <text x=\"225\" y=\"40\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">P</text>\r\n  \r\n  <!-- Vertical Height -->\r\n  <line x1=\"225\" y1=\"50\" x2=\"225\" y2=\"250\" stroke=\"#333\" stroke-width=\"2\" stroke-dasharray=\"4\"/>\r\n  <text x=\"230\" y=\"265\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">D</text>\r\n  <text x=\"230\" y=\"150\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\">3 m</text>\r\n\r\n  <!-- Bank A (Left, 30 deg depression). dx 1.73*h. -->\r\n  <!-- scale h=200. dx=346. 225-346 = -121. Too wide. -->\r\n  <!-- Adjust Scale. h=100px. P(225, 150). Ground(250). -->\r\n  \r\n  <!-- RE-COORD -->\r\n  <!-- P(225, 100). Ground y=250. h=150. -->\r\n  <!-- Bridge Line y=100. -->\r\n  <!-- Vertical P to D(225,250). -->\r\n  \r\n  <line x1=\"20\" y1=\"250\" x2=\"430\" y2=\"250\" stroke=\"#FFA000\" stroke-width=\"2\"/> <!-- River Bank -->\r\n  <line x1=\"20\" y1=\"100\" x2=\"430\" y2=\"100\" stroke=\"#555\" stroke-dasharray=\"6,4\" stroke-width=\"2\"/> <!-- Bridge -->\r\n  \r\n  <line x1=\"225\" y1=\"100\" x2=\"225\" y2=\"250\" stroke=\"#333\" stroke-width=\"2\"/>\r\n  <text x=\"225\" y=\"90\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">P</text>\r\n  <text x=\"215\" y=\"270\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">D</text>\r\n  <text x=\"230\" y=\"180\" font-family=\"Arial\" font-size=\"16\">3 m</text>\r\n\r\n  <!-- Bank A (Left). 30 deg. tan30=1/1.73. dist = 1.73 * 150 = 260. -->\r\n  <!-- xA = 225 - 260 = -35. Still too wide. -->\r\n  <!-- Reduce h to 80px. P(225, 170). Ground(250). -->\r\n  \r\n  <!-- RE-COORD 2 -->\r\n  <!-- P(225, 170). Ground y=250. h=80. -->\r\n  <!-- Bridge y=170. -->\r\n  <!-- A (Left, 30). dist = 1.73*80 = 138. xA = 225-138=87. A(87, 250). -->\r\n  <!-- B (Right, 45). dist = 1*80 = 80. xB = 225+80=305. B(305, 250). -->\r\n\r\n  <!-- Clearing specific lines -->\r\n  <rect x=\"0\" y=\"0\" width=\"450\" height=\"300\" fill=\"white\" /> <!-- Background clear -->\r\n  \r\n  <defs>\r\n    <marker id=\"arrow\" markerWidth=\"10\" markerHeight=\"10\" refX=\"9\" refY=\"3\" orient=\"auto\" markerUnits=\"strokeWidth\">\r\n      <path d=\"M0,0 L0,6 L9,3 z\" fill=\"#333\" />\r\n    </marker>\r\n  </defs>\r\n\r\n  <line x1=\"20\" y1=\"250\" x2=\"430\" y2=\"250\" stroke=\"#FFA000\" stroke-width=\"2\"/> <!-- River A-D-B -->\r\n  <line x1=\"20\" y1=\"170\" x2=\"430\" y2=\"170\" stroke=\"#555\" stroke-dasharray=\"6,4\" stroke-width=\"2\"/> <!-- Bridge -->\r\n  \r\n  <line x1=\"225\" y1=\"170\" x2=\"225\" y2=\"250\" stroke=\"#333\" stroke-width=\"2\"/>\r\n  <text x=\"225\" y=\"160\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">P</text>\r\n  <text x=\"225\" y=\"270\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">D</text>\r\n  <text x=\"230\" y=\"220\" font-family=\"Arial\" font-size=\"16\">3 m</text>\r\n\r\n  <!-- A and B -->\r\n  <circle cx=\"87\" cy=\"250\" r=\"3\" fill=\"#333\"/>\r\n  <text x=\"80\" y=\"275\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">A</text>\r\n  \r\n  <circle cx=\"305\" cy=\"250\" r=\"3\" fill=\"#333\"/>\r\n  <text x=\"300\" y=\"275\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">B</text>\r\n\r\n  <!-- Sight Lines -->\r\n  <line x1=\"225\" y1=\"170\" x2=\"87\" y2=\"250\" stroke=\"#FFA000\" stroke-width=\"2\"/>\r\n  <line x1=\"225\" y1=\"170\" x2=\"305\" y2=\"250\" stroke=\"#FFA000\" stroke-width=\"2\"/>\r\n\r\n  <!-- Angle 30 (Left). dx -138 dy 80. Unit(-0.86, 0.5). End (190, 190) -->\r\n  <path d=\"M 185 170 A 40 40 0 0 0 190 190\" fill=\"none\" stroke=\"#FFA000\" stroke-width=\"2\"/>\r\n  <text x=\"160\" y=\"190\" font-family=\"Arial\" font-size=\"16\" fill=\"#333\">30°</text>\r\n\r\n  <!-- Angle 45 (Right). dx 80 dy 80. Unit(0.7, 0.7). End (253, 198) -->\r\n  <path d=\"M 265 170 A 40 40 0 0 1 253 198\" fill=\"none\" stroke=\"#FFA000\" stroke-width=\"2\"/>\r\n  <text x=\"270\" y=\"190\" font-family=\"Arial\" font-size=\"16\" fill=\"#333\">45°</text>\r\n\r\n</svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Point P on bridge at height 3 m observing opposite banks A and B</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Let P be the observation point on the bridge and PD &perp; AB be the vertical height of the bridge above the river bed, so PD = 3 m.</div>\n        <div>Let A and B represent points on the two opposite banks of the river. The total width of the river is AB = AD + DB.</div>\n        <div>The angles of depression of banks A and B are 30&deg; and 45&deg;.</div>\n        <div>By alternate interior angles: &ang;PAD = 30&deg; and &ang;PBD = 45&deg;.</div>\n        <div style=\"margin-top: 8px;\"><b style=\"color: #64FFDA;\">(i) In right-angled triangle &Delta;PAD:</b></div>\n        <div>&rArr; tan 30&deg; = <span class=\"frac\"><span class=\"num\">PD</span><span class=\"den\">AD</span></span></div>\n        <div>&rArr; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">&radic;3</span></span> = <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">AD</span></span></div>\n        <div>&rArr; <b>AD = 3&radic;3 m</b></div>\n\n        <div style=\"margin-top: 8px;\"><b style=\"color: #64FFDA;\">(ii) In right-angled triangle &Delta;PBD:</b></div>\n        <div>&rArr; tan 45&deg; = <span class=\"frac\"><span class=\"num\">PD</span><span class=\"den\">BD</span></span></div>\n        <div>&rArr; 1 = <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">BD</span></span></div>\n        <div>&rArr; <b>BD = 3 m</b></div>\n\n        <div style=\"margin-top: 8px;\"><b style=\"color: #64FFDA;\">(iii) Width of the River:</b></div>\n        <div>&rArr; AB = AD + BD = 3&radic;3 + 3 = <b>3(&radic;3 + 1) m</b> &asymp; 3(1.732 + 1) = 3(2.732) = <b>8.196 m</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Width of River: </span>\n        <span class=\"ans-val\">3(&radic;3 + 1) m &asymp; 8.2 m</span>\n      </div>\n    </div>\n  </div>\n\n</div>\n",
+    exercise1: "\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; }\n  .frac .den { padding: 1px 4px; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(29, 233, 182, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #1DE9B6; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 14px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(29, 233, 182, 0.25); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #1DE9B6; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #64FFDA; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(29, 233, 182, 0.15); border: 1px solid #1DE9B6; color: #64FFDA; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 6px 0; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(29, 233, 182, 0.4); border-radius: 10px; padding: 14px; margin: 16px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #FFFFFF; border-radius: 8px; padding: 10px 8px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.25); }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 10px; font-weight: 500; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Question 1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 1</div>\n    <div class=\"q-text\">\n      A circus artist is climbing a 20 m long rope, which is tightly stretched and tied from the top of a vertical pole to the ground. Find the height of the pole, if the angle made by the rope with the ground level is 30&deg;.\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 250\">\r\n  <defs>\r\n    <marker id=\"arrow\" markerWidth=\"10\" markerHeight=\"10\" refX=\"9\" refY=\"3\" orient=\"auto\" markerUnits=\"strokeWidth\">\r\n      <path d=\"M0,0 L0,6 L9,3 z\" fill=\"#333\" />\r\n    </marker>\r\n  </defs>\r\n  \r\n  <path d=\"M50,30 L50,200 L300,200 Z\" fill=\"none\" stroke=\"#1565C0\" stroke-width=\"2\"/>\r\n  <rect x=\"50\" y=\"180\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"#1565C0\" stroke-width=\"2\"/>\r\n  \r\n  <!-- Angle Arc 30 at C(300,200). Start (260,200). End (267,177) -->\r\n  <path d=\"M 260 200 A 40 40 0 0 1 267 177\" fill=\"none\" stroke=\"#1565C0\" stroke-width=\"2\"/>\r\n  <text x=\"220\" y=\"190\" font-family=\"Arial\" font-size=\"18\" fill=\"#333\">30°</text>\r\n  \r\n  <text x=\"20\" y=\"115\" font-family=\"Arial\" font-size=\"24\" fill=\"#333\" font-weight=\"bold\">?</text>\r\n  <text x=\"180\" y=\"100\" font-family=\"Arial\" font-size=\"20\" fill=\"#333\">20 m</text>\r\n  \r\n  <text x=\"40\" y=\"25\" font-family=\"Arial\" font-size=\"18\" fill=\"#333\" font-weight=\"bold\">A</text>\r\n  <text x=\"35\" y=\"220\" font-family=\"Arial\" font-size=\"18\" fill=\"#333\" font-weight=\"bold\">B</text>\r\n  <text x=\"310\" y=\"220\" font-family=\"Arial\" font-size=\"18\" fill=\"#333\" font-weight=\"bold\">C</text>\r\n</svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Vertical pole AB of height <i>h</i> with 20 m rope AC making 30&deg; angle with ground</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Let AB represent the vertical pole of height <i>h</i> metres.</div>\n        <div>Let AC represent the tightly stretched rope of length 20 m.</div>\n        <div>Given: Angle made by the rope with the horizontal ground &ang;ACB = 30&deg;.</div>\n        <div>In right-angled triangle &Delta;ABC, right-angled at B:</div>\n        <div>&rArr; sin 30&deg; = <span class=\"frac\"><span class=\"num\">AB</span><span class=\"den\">AC</span></span> <span class=\"reason\">[sin &theta; = Perpendicular / Hypotenuse]</span></div>\n        <div>&rArr; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> = <span class=\"frac\"><span class=\"num\">h</span><span class=\"den\">20</span></span></div>\n        <div>&rArr; 2h = 20</div>\n        <div>&rArr; <b>h = 10 m</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Height of Pole: </span>\n        <span class=\"ans-val\">10 m</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 2 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 2</div>\n    <div class=\"q-text\">\n      A tree breaks due to storm and the broken part bends so that the top of the tree touches the ground making an angle 30&deg; with it. The distance between the foot of the tree to the point where the top touches the ground is 8 m. Find the height of the tree.\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 250\">\r\n  <path d=\"M50,200 L300,200 L300,50 Z\" fill=\"none\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\r\n  <rect x=\"280\" y=\"180\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\r\n  \r\n  <!-- Angle at C(50,200). Start (90,200). End (84,188) (approx for 20 deg slope to A(300,50)? No A is at 300,50. Base 250, H 150. Angle 31 deg) -->\r\n  <!-- Start (90, 200). End vector (250, -150). Unit(0.85, -0.51). Pt(50+34, 200-20) = (84, 180) -->\r\n  <path d=\"M 90 200 A 40 40 0 0 0 84 180\" fill=\"none\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\r\n  <text x=\"100\" y=\"190\" font-family=\"Arial\" font-size=\"18\" fill=\"#333\">30°</text>\r\n  \r\n  <text x=\"150\" y=\"230\" font-family=\"Arial\" font-size=\"20\" fill=\"#333\">8 m</text>\r\n  \r\n  <text x=\"35\" y=\"220\" font-family=\"Arial\" font-size=\"18\" fill=\"#333\" font-weight=\"bold\">C</text>\r\n  <text x=\"310\" y=\"220\" font-family=\"Arial\" font-size=\"18\" fill=\"#333\" font-weight=\"bold\">B</text>\r\n  <text x=\"310\" y=\"40\" font-family=\"Arial\" font-size=\"18\" fill=\"#333\" font-weight=\"bold\">A</text>\r\n</svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Tree broken at point C with top touching ground at A at distance 8 m with 30&deg; angle</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Let the unbroken original tree be BD. Suppose it breaks at point C such that the broken part CD falls over as CA touching the ground at A.</div>\n        <div>Thus, the length of the broken part is CA = CD.</div>\n        <div>Total height of the tree before breaking = <b>BC + CA</b>.</div>\n        <div>Given: Distance from foot B to point A is AB = 8 m, and &ang;BAC = 30&deg;.</div>\n        <div style=\"margin-top: 8px;\"><b style=\"color: #64FFDA;\">(i) Finding the Vertical Standing Part BC:</b></div>\n        <div>In right-angled triangle &Delta;ABC:</div>\n        <div>&rArr; tan 30&deg; = <span class=\"frac\"><span class=\"num\">BC</span><span class=\"den\">AB</span></span></div>\n        <div>&rArr; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">&radic;3</span></span> = <span class=\"frac\"><span class=\"num\">BC</span><span class=\"den\">8</span></span> &rArr; <b>BC = <span class=\"frac\"><span class=\"num\">8</span><span class=\"den\">&radic;3</span></span> m</b></div>\n\n        <div style=\"margin-top: 8px;\"><b style=\"color: #64FFDA;\">(ii) Finding the Broken Part CA:</b></div>\n        <div>In right-angled triangle &Delta;ABC:</div>\n        <div>&rArr; cos 30&deg; = <span class=\"frac\"><span class=\"num\">AB</span><span class=\"den\">CA</span></span></div>\n        <div>&rArr; <span class=\"frac\"><span class=\"num\">&radic;3</span><span class=\"den\">2</span></span> = <span class=\"frac\"><span class=\"num\">8</span><span class=\"den\">CA</span></span> &rArr; <b>CA = <span class=\"frac\"><span class=\"num\">16</span><span class=\"den\">&radic;3</span></span> m</b></div>\n\n        <div style=\"margin-top: 8px;\"><b style=\"color: #64FFDA;\">(iii) Total Height of the Tree:</b></div>\n        <div>&rArr; Total Height = BC + CA = <span class=\"frac\"><span class=\"num\">8</span><span class=\"den\">&radic;3</span></span> + <span class=\"frac\"><span class=\"num\">16</span><span class=\"den\">&radic;3</span></span> = <span class=\"frac\"><span class=\"num\">24</span><span class=\"den\">&radic;3</span></span> m</div>\n        <div>Rationalizing the denominator:</div>\n        <div>&rArr; Total Height = <span class=\"frac\"><span class=\"num\">24 &times; &radic;3</span><span class=\"den\">&radic;3 &times; &radic;3</span></span> = <span class=\"frac\"><span class=\"num\">24&radic;3</span><span class=\"den\">3</span></span> = <b>8&radic;3 m</b> &asymp; 8(1.732) = 13.856 m</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Height of Tree: </span>\n        <span class=\"ans-val\">8&radic;3 m &asymp; 13.86 m</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 3 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 3</div>\n    <div class=\"q-text\">\n      A contractor plans to install two slides for the children to play in a park. For the children below the age of 5 years, she prefers to have a slide whose top is at a height of 1.5 m, and is inclined at an angle of 30&deg; to the ground, whereas for elder children, she wants to have a steep slide at a height of 3 m, and inclined at an angle of 60&deg; to the ground. What should be the length of the slide in each case?\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 550 300\">\r\n  <!-- Slide 1 (Left) -->\r\n  <g transform=\"translate(20, 50)\">\r\n    <path d=\"M50,50 L50,150 L200,150 Z\" fill=\"none\" stroke=\"#E65100\" stroke-width=\"2\"/>\r\n    <rect x=\"50\" y=\"130\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"#E65100\" stroke-width=\"2\"/>\r\n    \r\n    <!-- Angle 30 at C(200,150). Start (160,150). End (167,128) -->\r\n    <path d=\"M 160 150 A 40 40 0 0 1 167 128\" fill=\"none\" stroke=\"#E65100\" stroke-width=\"2\"/>\r\n    <text x=\"120\" y=\"140\" font-family=\"Arial\" font-size=\"16\" fill=\"#333\">30°</text>\r\n    \r\n    <text x=\"10\" y=\"100\" font-family=\"Arial\" font-size=\"18\" fill=\"#333\">1.5 m</text>\r\n    <text x=\"60\" y=\"100\" font-family=\"Arial\" font-size=\"20\" fill=\"#333\" font-weight=\"bold\">Slide 1</text>\r\n    <text x=\"130\" y=\"90\" font-family=\"Arial\" font-size=\"22\" fill=\"#333\" font-weight=\"bold\">?</text>\r\n    \r\n    <text x=\"40\" y=\"40\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\">A</text>\r\n    <text x=\"35\" y=\"170\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\">B</text>\r\n    <text x=\"210\" y=\"170\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\">C</text>\r\n  </g>\r\n\r\n  <!-- Slide 2 (Right) -->\r\n  <g transform=\"translate(280, 0)\">\r\n    <path d=\"M50,20 L50,200 L180,200 Z\" fill=\"none\" stroke=\"#E65100\" stroke-width=\"2\"/>\r\n    <rect x=\"50\" y=\"180\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"#E65100\" stroke-width=\"2\"/>\r\n    \r\n    <!-- Angle 60 at R(180,200). Start (140,200). End (157,168) -->\r\n    <path d=\"M 140 200 A 40 40 0 0 1 157 168\" fill=\"none\" stroke=\"#E65100\" stroke-width=\"2\"/>\r\n    <text x=\"100\" y=\"180\" font-family=\"Arial\" font-size=\"16\" fill=\"#333\">60°</text>\r\n    \r\n    <text x=\"-10\" y=\"110\" font-family=\"Arial\" font-size=\"18\" fill=\"#333\">3 m</text>\r\n    <text x=\"60\" y=\"120\" font-family=\"Arial\" font-size=\"20\" fill=\"#333\" font-weight=\"bold\">Slide 2</text>\r\n    <text x=\"130\" y=\"100\" font-family=\"Arial\" font-size=\"22\" fill=\"#333\" font-weight=\"bold\">?</text>\r\n\r\n    <text x=\"40\" y=\"15\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\">P</text>\r\n    <text x=\"35\" y=\"220\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\">Q</text>\r\n    <text x=\"190\" y=\"220\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\">R</text>\r\n  </g>\r\n</svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Slide 1 (height 1.5 m @ 30&deg;) and Slide 2 (height 3 m @ 60&deg;)</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div><b style=\"color: #64FFDA;\">Case 1: For Children Below 5 Years</b></div>\n        <div>Let AB be the vertical height = 1.5 m and AC = <i>l</i><sub>1</sub> be the length of the slide.</div>\n        <div>Angle of inclination &ang;ACB = 30&deg;.</div>\n        <div>In right-angled triangle &Delta;ABC:</div>\n        <div>&rArr; sin 30&deg; = <span class=\"frac\"><span class=\"num\">AB</span><span class=\"den\">AC</span></span></div>\n        <div>&rArr; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> = <span class=\"frac\"><span class=\"num\">1.5</span><span class=\"den\">l<sub>1</sub></span></span></div>\n        <div>&rArr; <b>l<sub>1</sub> = 1.5 &times; 2 = 3 m</b></div>\n\n        <div style=\"margin-top: 10px;\"><b style=\"color: #64FFDA;\">Case 2: For Elder Children</b></div>\n        <div>Let PQ be the vertical height = 3 m and PR = <i>l</i><sub>2</sub> be the length of the slide.</div>\n        <div>Angle of inclination &ang;PRQ = 60&deg;.</div>\n        <div>In right-angled triangle &Delta;PQR:</div>\n        <div>&rArr; sin 60&deg; = <span class=\"frac\"><span class=\"num\">PQ</span><span class=\"den\">PR</span></span></div>\n        <div>&rArr; <span class=\"frac\"><span class=\"num\">&radic;3</span><span class=\"den\">2</span></span> = <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">l<sub>2</sub></span></span></div>\n        <div>&rArr; l<sub>2</sub> = <span class=\"frac\"><span class=\"num\">6</span><span class=\"den\">&radic;3</span></span></div>\n        <div>Rationalizing the denominator:</div>\n        <div>&rArr; l<sub>2</sub> = <span class=\"frac\"><span class=\"num\">6 &times; &radic;3</span><span class=\"den\">&radic;3 &times; &radic;3</span></span> = <span class=\"frac\"><span class=\"num\">6&radic;3</span><span class=\"den\">3</span></span> = <b>2&radic;3 m</b> &asymp; 2(1.732) = 3.464 m</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Length of Slides: </span>\n        <span class=\"ans-val\">For Children &lt; 5 yrs: 3 m &bull; For Elder Children: 2&radic;3 m</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 4 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 4</div>\n    <div class=\"q-text\">\n      The angle of elevation of the top of a tower from a point on the ground, which is 30 m away from the foot of the tower, is 30&deg;. Find the height of the tower.\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 250\">\r\n  <path d=\"M50,200 L300,200 L300,50 Z\" fill=\"none\" stroke=\"#7B1FA2\" stroke-width=\"2\"/>\r\n  <rect x=\"280\" y=\"180\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"#7B1FA2\" stroke-width=\"2\"/>\r\n  \r\n  <!-- Angle at C(50,200). Same as Q2 A=300,50 -->\r\n  <path d=\"M 90 200 A 40 40 0 0 0 84 180\" fill=\"none\" stroke=\"#7B1FA2\" stroke-width=\"2\"/>\r\n  <text x=\"110\" y=\"190\" font-family=\"Arial\" font-size=\"18\" fill=\"#333\">30°</text>\r\n\r\n  <text x=\"315\" y=\"125\" font-family=\"Arial\" font-size=\"24\" fill=\"#333\" font-weight=\"bold\">?</text>\r\n  <text x=\"140\" y=\"235\" font-family=\"Arial\" font-size=\"20\" fill=\"#333\">30 m</text>\r\n\r\n  <text x=\"35\" y=\"220\" font-family=\"Arial\" font-size=\"18\" fill=\"#333\" font-weight=\"bold\">C</text>\r\n  <text x=\"310\" y=\"220\" font-family=\"Arial\" font-size=\"18\" fill=\"#333\" font-weight=\"bold\">B</text>\r\n  <text x=\"310\" y=\"40\" font-family=\"Arial\" font-size=\"18\" fill=\"#333\" font-weight=\"bold\">A</text>\r\n</svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Tower AB of height <i>h</i> with elevation 30&deg; from point C at distance 30 m</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Let AB be the tower of height <i>h</i> metres.</div>\n        <div>Let C be the point on the ground at distance BC = 30 m from the foot of the tower B.</div>\n        <div>Given angle of elevation &ang;ACB = 30&deg;.</div>\n        <div>In right-angled triangle &Delta;ABC:</div>\n        <div>&rArr; tan 30&deg; = <span class=\"frac\"><span class=\"num\">AB</span><span class=\"den\">BC</span></span></div>\n        <div>&rArr; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">&radic;3</span></span> = <span class=\"frac\"><span class=\"num\">h</span><span class=\"den\">30</span></span></div>\n        <div>&rArr; h = <span class=\"frac\"><span class=\"num\">30</span><span class=\"den\">&radic;3</span></span></div>\n        <div>Rationalizing the denominator:</div>\n        <div>&rArr; h = <span class=\"frac\"><span class=\"num\">30 &times; &radic;3</span><span class=\"den\">&radic;3 &times; &radic;3</span></span> = <span class=\"frac\"><span class=\"num\">30&radic;3</span><span class=\"den\">3</span></span> = <b>10&radic;3 m</b> &asymp; 17.32 m</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Height of Tower: </span>\n        <span class=\"ans-val\">10&radic;3 m &asymp; 17.32 m</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 5 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 5</div>\n    <div class=\"q-text\">\n      A kite is flying at a height of 60 m above the ground. The string attached to the kite is temporarily tied to a point on the ground. The inclination of the string with the ground is 60&deg;. Find the length of the string, assuming that there is no slack in the string.\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 250\">\r\n  <path d=\"M50,200 L250,200 L250,20 Z\" fill=\"none\" stroke=\"#D32F2F\" stroke-width=\"2\"/>\r\n  <rect x=\"230\" y=\"180\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"#D32F2F\" stroke-width=\"2\"/>\r\n  \r\n  <!-- Angle at C(50,200). A(250,20). Base 200. H 180. Angle ~42. -->\r\n  <!-- Start (90, 200). End vector (200, -180). Unit(0.74, -0.66). End (80, 173) -->\r\n  <path d=\"M 90 200 A 40 40 0 0 0 80 173\" fill=\"none\" stroke=\"#D32F2F\" stroke-width=\"2\"/>\r\n  <text x=\"100\" y=\"190\" font-family=\"Arial\" font-size=\"18\" fill=\"#333\">60°</text>\r\n\r\n  <text x=\"260\" y=\"110\" font-family=\"Arial\" font-size=\"20\" fill=\"#333\">60 m</text>\r\n  <text x=\"130\" y=\"90\" font-family=\"Arial\" font-size=\"24\" fill=\"#333\" font-weight=\"bold\">?</text>\r\n\r\n  <text x=\"35\" y=\"220\" font-family=\"Arial\" font-size=\"18\" fill=\"#333\" font-weight=\"bold\">C</text>\r\n  <text x=\"260\" y=\"220\" font-family=\"Arial\" font-size=\"18\" fill=\"#333\" font-weight=\"bold\">B</text>\r\n  <text x=\"250\" y=\"15\" font-family=\"Arial\" font-size=\"18\" fill=\"#333\" font-weight=\"bold\">A</text>\r\n</svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Kite K at vertical height 60 m with string AK inclined at 60&deg; to ground</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Let K be the kite flying at vertical height KL = 60 m above the ground level.</div>\n        <div>Let A be the point on the ground where the string AK of length <i>L</i> is tied.</div>\n        <div>Given angle of inclination &ang;KAL = 60&deg;.</div>\n        <div>In right-angled triangle &Delta;ALK, right-angled at L:</div>\n        <div>&rArr; sin 60&deg; = <span class=\"frac\"><span class=\"num\">KL</span><span class=\"den\">AK</span></span></div>\n        <div>&rArr; <span class=\"frac\"><span class=\"num\">&radic;3</span><span class=\"den\">2</span></span> = <span class=\"frac\"><span class=\"num\">60</span><span class=\"den\">L</span></span></div>\n        <div>&rArr; L&radic;3 = 120</div>\n        <div>&rArr; L = <span class=\"frac\"><span class=\"num\">120</span><span class=\"den\">&radic;3</span></span></div>\n        <div>Rationalizing the denominator:</div>\n        <div>&rArr; L = <span class=\"frac\"><span class=\"num\">120 &times; &radic;3</span><span class=\"den\">&radic;3 &times; &radic;3</span></span> = <span class=\"frac\"><span class=\"num\">120&radic;3</span><span class=\"den\">3</span></span> = <b>40&radic;3 m</b> &asymp; 40(1.732) = 69.28 m</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Length of String: </span>\n        <span class=\"ans-val\">40&radic;3 m &asymp; 69.28 m</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 6 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 6</div>\n    <div class=\"q-text\">\n      A 1.5 m tall boy is standing at some distance from a 30 m tall building. The angle of elevation from his eyes to the top of the building increases from 30&deg; to 60&deg; as he walks towards the building. Find the distance he walked towards the building.\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 300\">\r\n  <defs>\r\n    <marker id=\"arrow\" markerWidth=\"10\" markerHeight=\"10\" refX=\"9\" refY=\"3\" orient=\"auto\" markerUnits=\"strokeWidth\">\r\n      <path d=\"M0,0 L0,6 L9,3 z\" fill=\"#333\" />\r\n    </marker>\r\n  </defs>\r\n\r\n  <!-- Ground Line -->\r\n  <line x1=\"50\" y1=\"250\" x2=\"450\" y2=\"250\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\r\n  \r\n  <!-- Boy P1 -->\r\n  <line x1=\"50\" y1=\"250\" x2=\"50\" y2=\"200\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\r\n  <text x=\"50\" y=\"270\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\">Q</text>\r\n  <text x=\"50\" y=\"195\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\">P</text>\r\n  <text x=\"10\" y=\"230\" font-family=\"Arial\" font-size=\"14\">1.5m</text>\r\n\r\n  <!-- Boy P2 -->\r\n  <line x1=\"250\" y1=\"250\" x2=\"250\" y2=\"200\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\r\n  <text x=\"250\" y=\"270\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\">R</text>\r\n  <text x=\"245\" y=\"195\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\">S</text>\r\n\r\n  <!-- Building -->\r\n  <line x1=\"420\" y1=\"250\" x2=\"420\" y2=\"50\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\r\n  <text x=\"425\" y=\"45\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\">A</text>\r\n  <text x=\"425\" y=\"270\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\">B</text>\r\n  <text x=\"425\" y=\"200\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\">C</text>\r\n  <text x=\"460\" y=\"150\" font-family=\"Arial\" font-size=\"16\">30 m</text>\r\n\r\n  <!-- Horizontal Eye Level -->\r\n  <line x1=\"50\" y1=\"200\" x2=\"420\" y2=\"200\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\r\n\r\n  <!-- Sight Lines -->\r\n  <line x1=\"50\" y1=\"200\" x2=\"420\" y2=\"50\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\r\n  <line x1=\"250\" y1=\"200\" x2=\"420\" y2=\"50\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\r\n\r\n  <!-- Angle 30 at P(50,200). Ray to A(420,50). dx 370, dy -150. Unit(0.92, -0.37). End (87, 185) -->\r\n  <path d=\"M 90 200 A 40 40 0 0 0 87 185\" fill=\"none\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\r\n  <text x=\"110\" y=\"190\" font-family=\"Arial\" font-size=\"16\" fill=\"#333\">30°</text>\r\n\r\n  <!-- Angle 60 at S(250,200). Ray to A(420,50). dx 170, dy -150. Unit(0.75, -0.66). End (280, 174) -->\r\n  <path d=\"M 290 200 A 40 40 0 0 0 280 174\" fill=\"none\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\r\n  <text x=\"300\" y=\"190\" font-family=\"Arial\" font-size=\"16\" fill=\"#333\">60°</text>\r\n\r\n  <!-- Distance Arrow -->\r\n  <line x1=\"50\" y1=\"280\" x2=\"250\" y2=\"280\" stroke=\"#333\" marker-start=\"url(#arrow)\" marker-end=\"url(#arrow)\" />\r\n  <text x=\"140\" y=\"300\" font-family=\"Arial\" font-size=\"18\" fill=\"#333\" font-weight=\"bold\">?</text>\r\n</svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Boy of height 1.5 m walking towards 30 m building with angle changing 30&deg; to 60&deg;</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Let PQ be the vertical building of height 30 m.</div>\n        <div>Let the boy be initially at position AB of height 1.5 m, and let him walk to new position CD of height 1.5 m.</div>\n        <div>The horizontal line from the boy's eye intersects the building at point R.</div>\n        <div>The effective height of the building above eye level is:</div>\n        <div>&rArr; PR = PQ &minus; RQ = 30 m &minus; 1.5 m = <b>28.5 m</b> = <span class=\"frac\"><span class=\"num\">57</span><span class=\"den\">2</span></span> m</div>\n        <div>Given: Initial angle &ang;PAR = 30&deg; and final angle &ang;PCR = 60&deg;.</div>\n        <div style=\"margin-top: 8px;\"><b style=\"color: #64FFDA;\">(i) Initial Distance from Building (AR):</b></div>\n        <div>In right-angled triangle &Delta;PRA:</div>\n        <div>&rArr; tan 30&deg; = <span class=\"frac\"><span class=\"num\">PR</span><span class=\"den\">AR</span></span></div>\n        <div>&rArr; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">&radic;3</span></span> = <span class=\"frac\"><span class=\"num\">28.5</span><span class=\"den\">AR</span></span> &rArr; <b>AR = 28.5&radic;3 m</b></div>\n\n        <div style=\"margin-top: 8px;\"><b style=\"color: #64FFDA;\">(ii) Final Distance from Building (CR):</b></div>\n        <div>In right-angled triangle &Delta;PRC:</div>\n        <div>&rArr; tan 60&deg; = <span class=\"frac\"><span class=\"num\">PR</span><span class=\"den\">CR</span></span></div>\n        <div>&rArr; &radic;3 = <span class=\"frac\"><span class=\"num\">28.5</span><span class=\"den\">CR</span></span> &rArr; <b>CR = <span class=\"frac\"><span class=\"num\">28.5</span><span class=\"den\">&radic;3</span></span> m</b></div>\n\n        <div style=\"margin-top: 8px;\"><b style=\"color: #64FFDA;\">(iii) Distance Walked towards Building (AC):</b></div>\n        <div>&rArr; AC = AR &minus; CR = 28.5&radic;3 &minus; <span class=\"frac\"><span class=\"num\">28.5</span><span class=\"den\">&radic;3</span></span> = 28.5 (<span class=\"frac\"><span class=\"num\">3 &minus; 1</span><span class=\"den\">&radic;3</span></span>) = <span class=\"frac\"><span class=\"num\">28.5 &times; 2</span><span class=\"den\">&radic;3</span></span> = <span class=\"frac\"><span class=\"num\">57</span><span class=\"den\">&radic;3</span></span> m</div>\n        <div>Rationalizing:</div>\n        <div>&rArr; AC = <span class=\"frac\"><span class=\"num\">57 &times; &radic;3</span><span class=\"den\">&radic;3 &times; &radic;3</span></span> = <span class=\"frac\"><span class=\"num\">57&radic;3</span><span class=\"den\">3</span></span> = <b>19&radic;3 m</b> &asymp; 19(1.732) = 32.908 m</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Distance Walked: </span>\n        <span class=\"ans-val\">19&radic;3 m &asymp; 32.91 m</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 7 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 7</div>\n    <div class=\"q-text\">\n      From a point on the ground, the angles of elevation of the bottom and the top of a transmission tower fixed at the top of a 20 m high building are 45&deg; and 60&deg; respectively. Find the height of the tower.\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 350\">\r\n  <defs>\r\n    <marker id=\"arrow\" markerWidth=\"10\" markerHeight=\"10\" refX=\"9\" refY=\"3\" orient=\"auto\" markerUnits=\"strokeWidth\">\r\n      <path d=\"M0,0 L0,6 L9,3 z\" fill=\"#333\" />\r\n    </marker>\r\n  </defs>\r\n\r\n  <line x1=\"20\" y1=\"300\" x2=\"350\" y2=\"300\" stroke=\"#E65100\" stroke-width=\"2\" />\r\n\r\n  <!-- Vertical Line C-A-B -->\r\n  <line x1=\"300\" y1=\"300\" x2=\"300\" y2=\"50\" stroke=\"#E65100\" stroke-width=\"2\" />\r\n  \r\n  <text x=\"305\" y=\"300\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">B</text>\r\n  <text x=\"305\" y=\"200\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">A</text>\r\n  <text x=\"305\" y=\"50\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">C</text>\r\n  <text x=\"315\" y=\"250\" font-family=\"Arial\" font-size=\"18\">20 m</text>\r\n  <text x=\"315\" y=\"125\" font-family=\"Arial\" font-size=\"20\" font-weight=\"bold\">?</text>\r\n\r\n  <!-- Point P -->\r\n  <circle cx=\"50\" cy=\"300\" r=\"3\" fill=\"#333\" />\r\n  <text x=\"40\" y=\"325\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">P</text>\r\n\r\n  <!-- Sight Lines -->\r\n  <line x1=\"50\" y1=\"300\" x2=\"300\" y2=\"200\" stroke=\"#E65100\" stroke-width=\"2\"/> <!-- PA -->\r\n  <line x1=\"50\" y1=\"300\" x2=\"300\" y2=\"50\" stroke=\"#E65100\" stroke-width=\"2\"/>  <!-- PC -->\r\n\r\n  <!-- 45 at P to A(300,200). dx 250 dy -100. Unit(0.93, -0.37). End (87, 285) -->\r\n  <path d=\"M 90 300 A 40 40 0 0 0 87 285\" fill=\"none\" stroke=\"#E65100\" stroke-width=\"2\"/>\r\n  <text x=\"110\" y=\"290\" font-family=\"Arial\" font-size=\"14\" fill=\"#333\">45°</text>\r\n\r\n  <!-- 60 at P to C(300,50). dx 250 dy -250. Unit(0.7, -0.7). End (78, 272) -->\r\n  <path d=\"M 90 300 A 40 40 0 0 0 78 272\" fill=\"none\" stroke=\"#E65100\" stroke-width=\"2\"/>\r\n  <text x=\"75\" y=\"235\" font-family=\"Arial\" font-size=\"14\" fill=\"#333\">60°</text>\r\n\r\n</svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Transmission tower BC of height <i>h</i> mounted atop 20 m building AB observed from point P</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Let AB be the building of height 20 m.</div>\n        <div>Let BC be the transmission tower of height <i>h</i> mounted atop the building.</div>\n        <div>Let P be the observation point on the ground at distance PA = <i>x</i> from the foot of the building A.</div>\n        <div>Given: Angle of elevation of bottom of tower &ang;APB = 45&deg;, and top of tower &ang;APC = 60&deg;.</div>\n        <div style=\"margin-top: 8px;\"><b style=\"color: #64FFDA;\">(i) In right-angled triangle &Delta;PAB:</b></div>\n        <div>&rArr; tan 45&deg; = <span class=\"frac\"><span class=\"num\">AB</span><span class=\"den\">PA</span></span></div>\n        <div>&rArr; 1 = <span class=\"frac\"><span class=\"num\">20</span><span class=\"den\">x</span></span> &rArr; <b>x = 20 m</b></div>\n\n        <div style=\"margin-top: 8px;\"><b style=\"color: #64FFDA;\">(ii) In right-angled triangle &Delta;PAC:</b></div>\n        <div>Total height AC = AB + BC = 20 + <i>h</i>.</div>\n        <div>&rArr; tan 60&deg; = <span class=\"frac\"><span class=\"num\">AC</span><span class=\"den\">PA</span></span></div>\n        <div>&rArr; &radic;3 = <span class=\"frac\"><span class=\"num\">20 + h</span><span class=\"den\">20</span></span></div>\n        <div>&rArr; 20&radic;3 = 20 + h</div>\n        <div>&rArr; <b>h = 20(&radic;3 &minus; 1) m</b> &asymp; 20(1.732 &minus; 1) = 20(0.732) = <b>14.64 m</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Height of Tower: </span>\n        <span class=\"ans-val\">20(&radic;3 &minus; 1) m &asymp; 14.64 m</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 8 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 8</div>\n    <div class=\"q-text\">\n      A statue, 1.6 m tall, stands on the top of a pedestal. From a point on the ground, the angle of elevation of the top of the statue is 60&deg; and from the same point the angle of elevation of the top of the pedestal is 45&deg;. Find the height of the pedestal.\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 350\">\r\n  <defs>\r\n    <marker id=\"arrow\" markerWidth=\"10\" markerHeight=\"10\" refX=\"9\" refY=\"3\" orient=\"auto\" markerUnits=\"strokeWidth\">\r\n      <path d=\"M0,0 L0,6 L9,3 z\" fill=\"#333\" />\r\n    </marker>\r\n  </defs>\r\n\r\n  <line x1=\"20\" y1=\"300\" x2=\"350\" y2=\"300\" stroke=\"#7B1FA2\" stroke-width=\"2\" />\r\n\r\n  <!-- Vertical Line C-A-B -->\r\n  <line x1=\"300\" y1=\"300\" x2=\"300\" y2=\"50\" stroke=\"#7B1FA2\" stroke-width=\"2\" />\r\n\r\n  <text x=\"305\" y=\"300\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">B</text>\r\n  <text x=\"305\" y=\"150\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">A</text>\r\n  <text x=\"305\" y=\"50\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">C</text>\r\n  \r\n  <text x=\"315\" y=\"100\" font-family=\"Arial\" font-size=\"18\">1.6 m</text>\r\n  <text x=\"315\" y=\"225\" font-family=\"Arial\" font-size=\"20\" font-weight=\"bold\">?</text>\r\n\r\n  <!-- Point P -->\r\n  <circle cx=\"50\" cy=\"300\" r=\"3\" fill=\"#333\" />\r\n  <text x=\"40\" y=\"325\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">P</text>\r\n\r\n  <!-- Sight Lines -->\r\n  <line x1=\"50\" y1=\"300\" x2=\"300\" y2=\"150\" stroke=\"#7B1FA2\" stroke-width=\"2\"/>\r\n  <line x1=\"50\" y1=\"300\" x2=\"300\" y2=\"50\" stroke=\"#7B1FA2\" stroke-width=\"2\"/>\r\n\r\n  <!-- 45 to A(300, 150). dx 250 dy -150. Unit (0.85, -0.51). End (84, 280) -->\r\n  <path d=\"M 90 300 A 40 40 0 0 0 84 280\" fill=\"none\" stroke=\"#7B1FA2\" stroke-width=\"2\"/>\r\n  <text x=\"110\" y=\"260\" font-family=\"Arial\" font-size=\"14\" fill=\"#333\">45°</text>\r\n\r\n  <!-- 60 to C(300, 50). End (78, 272) -->\r\n  <path d=\"M 90 300 A 40 40 0 0 0 78 272\" fill=\"none\" stroke=\"#7B1FA2\" stroke-width=\"2\"/>\r\n  <text x=\"75\" y=\"235\" font-family=\"Arial\" font-size=\"14\" fill=\"#333\">60°</text>\r\n\r\n</svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Statue CD = 1.6 m standing on pedestal BC of height <i>h</i> observed from point A</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Let BC be the pedestal of height <i>h</i> metres.</div>\n        <div>Let CD be the statue of height 1.6 m standing atop the pedestal.</div>\n        <div>Let A be the observation point on the ground at distance AB = <i>x</i> from the foot of the pedestal.</div>\n        <div>Given: Angle of elevation of top of pedestal &ang;CAB = 45&deg;, and top of statue &ang;DAB = 60&deg;.</div>\n        <div style=\"margin-top: 8px;\"><b style=\"color: #64FFDA;\">(i) In right-angled triangle &Delta;ABC:</b></div>\n        <div>&rArr; tan 45&deg; = <span class=\"frac\"><span class=\"num\">BC</span><span class=\"den\">AB</span></span></div>\n        <div>&rArr; 1 = <span class=\"frac\"><span class=\"num\">h</span><span class=\"den\">x</span></span> &rArr; <b>x = h</b> &nbsp; &hellip; (1)</div>\n\n        <div style=\"margin-top: 8px;\"><b style=\"color: #64FFDA;\">(ii) In right-angled triangle &Delta;ABD:</b></div>\n        <div>Total height BD = BC + CD = <i>h</i> + 1.6.</div>\n        <div>&rArr; tan 60&deg; = <span class=\"frac\"><span class=\"num\">BD</span><span class=\"den\">AB</span></span></div>\n        <div>&rArr; &radic;3 = <span class=\"frac\"><span class=\"num\">h + 1.6</span><span class=\"den\">h</span></span> <span class=\"reason\">[Since x = h]</span></div>\n        <div>&rArr; h&radic;3 = h + 1.6</div>\n        <div>&rArr; h(&radic;3 &minus; 1) = 1.6</div>\n        <div>&rArr; h = <span class=\"frac\"><span class=\"num\">1.6</span><span class=\"den\">&radic;3 &minus; 1</span></span></div>\n        <div>Rationalizing the denominator:</div>\n        <div>&rArr; h = <span class=\"frac\"><span class=\"num\">1.6(&radic;3 + 1)</span><span class=\"den\">(&radic;3 &minus; 1)(&radic;3 + 1)</span></span> = <span class=\"frac\"><span class=\"num\">1.6(&radic;3 + 1)</span><span class=\"den\">3 &minus; 1</span></span> = <span class=\"frac\"><span class=\"num\">1.6(&radic;3 + 1)</span><span class=\"den\">2</span></span> = <b>0.8(&radic;3 + 1) m</b> &asymp; 0.8(2.732) = <b>2.186 m</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Height of Pedestal: </span>\n        <span class=\"ans-val\">0.8(&radic;3 + 1) m &asymp; 2.19 m</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 9 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 9</div>\n    <div class=\"q-text\">\n      The angle of elevation of the top of a building from the foot of the tower is 30&deg; and the angle of elevation of the top of the tower from the foot of the building is 60&deg;. If the tower is 50 m high, find the height of the building.\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 300\">\r\n  <defs>\r\n    <marker id=\"arrow\" markerWidth=\"10\" markerHeight=\"10\" refX=\"9\" refY=\"3\" orient=\"auto\" markerUnits=\"strokeWidth\">\r\n      <path d=\"M0,0 L0,6 L9,3 z\" fill=\"#333\" />\r\n    </marker>\r\n  </defs>\r\n\r\n  <line x1=\"30\" y1=\"250\" x2=\"450\" y2=\"250\" stroke=\"#D32F2F\" stroke-width=\"2\" />\r\n\r\n  <!-- Building (Left) AB -->\r\n  <line x1=\"50\" y1=\"250\" x2=\"50\" y2=\"170\" stroke=\"#D32F2F\" stroke-width=\"2\" />\r\n  <text x=\"35\" y=\"160\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">A</text>\r\n  <text x=\"35\" y=\"270\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">B</text>\r\n  <text x=\"10\" y=\"210\" font-family=\"Arial\" font-size=\"22\" fill=\"#333\" font-weight=\"bold\">?</text>\r\n\r\n  <!-- Tower (Right) CD -->\r\n  <line x1=\"400\" y1=\"250\" x2=\"400\" y2=\"50\" stroke=\"#D32F2F\" stroke-width=\"2\" />\r\n  <text x=\"405\" y=\"45\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">D</text>\r\n  <text x=\"405\" y=\"270\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">C</text>\r\n  <text x=\"410\" y=\"150\" font-family=\"Arial\" font-size=\"18\" fill=\"#333\">50 m</text>\r\n\r\n  <!-- Diagonals -->\r\n  <line x1=\"400\" y1=\"250\" x2=\"50\" y2=\"170\" stroke=\"#D32F2F\" stroke-width=\"2\" /> <!-- C to A -->\r\n  <line x1=\"50\" y1=\"250\" x2=\"400\" y2=\"50\" stroke=\"#D32F2F\" stroke-width=\"2\" /> <!-- B to D -->\r\n\r\n  <!-- 30 at C(400,250) to A(50,170). dx -350 dy -80. Unit(-0.97, -0.22). End (361, 241) -->\r\n  <path d=\"M 360 250 A 40 40 0 0 1 361 241\" fill=\"none\" stroke=\"#D32F2F\" stroke-width=\"2\"/>\r\n  <text x=\"320\" y=\"240\" font-family=\"Arial\" font-size=\"16\" fill=\"#333\">30°</text>\r\n\r\n  <!-- 60 at B(50,250) to D(400,50). dx 350 dy -200. Unit(0.86, -0.49). End (84, 230) -->\r\n  <path d=\"M 90 250 A 40 40 0 0 0 84 230\" fill=\"none\" stroke=\"#D32F2F\" stroke-width=\"2\"/>\r\n  <text x=\"120\" y=\"225\" font-family=\"Arial\" font-size=\"16\" fill=\"#333\">60°</text>\r\n\r\n</svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Tower AB = 50 m and Building CD of height <i>h</i> on opposite sides of distance BD</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Let AB be the tower of height 50 m.</div>\n        <div>Let CD be the building of height <i>h</i> metres.</div>\n        <div>Let BD = <i>x</i> be the horizontal distance between their feet.</div>\n        <div>Given: Angle of elevation of tower top A from building foot D is &ang;ADB = 60&deg;.</div>\n        <div>Angle of elevation of building top C from tower foot B is &ang;CBD = 30&deg;.</div>\n        <div style=\"margin-top: 8px;\"><b style=\"color: #64FFDA;\">(i) In right-angled triangle &Delta;ABD:</b></div>\n        <div>&rArr; tan 60&deg; = <span class=\"frac\"><span class=\"num\">AB</span><span class=\"den\">BD</span></span></div>\n        <div>&rArr; &radic;3 = <span class=\"frac\"><span class=\"num\">50</span><span class=\"den\">x</span></span> &rArr; <b>x = <span class=\"frac\"><span class=\"num\">50</span><span class=\"den\">&radic;3</span></span> m</b></div>\n\n        <div style=\"margin-top: 8px;\"><b style=\"color: #64FFDA;\">(ii) In right-angled triangle &Delta;CDB:</b></div>\n        <div>&rArr; tan 30&deg; = <span class=\"frac\"><span class=\"num\">CD</span><span class=\"den\">BD</span></span></div>\n        <div>&rArr; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">&radic;3</span></span> = <span class=\"frac\"><span class=\"num\">h</span><span class=\"den\">x</span></span></div>\n        <div>&rArr; h = <span class=\"frac\"><span class=\"num\">x</span><span class=\"den\">&radic;3</span></span></div>\n        <div>Substitute <i>x</i> = <span class=\"frac\"><span class=\"num\">50</span><span class=\"den\">&radic;3</span></span>:</div>\n        <div>&rArr; h = <span class=\"frac\"><span class=\"num\">50 / &radic;3</span><span class=\"den\">&radic;3</span></span> = <span class=\"frac\"><span class=\"num\">50</span><span class=\"den\">3</span></span> = <b>16<span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span> m</b> &asymp; 16.67 m</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Height of Building: </span>\n        <span class=\"ans-val\">16<span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span> m (50/3 m &asymp; 16.67 m)</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 10 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 10</div>\n    <div class=\"q-text\">\n      Two poles of equal heights are standing opposite each other on either side of the road, which is 80 m wide. From a point between them on the road, the angles of elevation of the top of the poles are 60&deg; and 30&deg;, respectively. Find the height of the poles and the distances of the point from the poles.\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 300\">\r\n  <defs>\r\n    <marker id=\"arrow\" markerWidth=\"10\" markerHeight=\"10\" refX=\"9\" refY=\"3\" orient=\"auto\" markerUnits=\"strokeWidth\">\r\n      <path d=\"M0,0 L0,6 L9,3 z\" fill=\"#333\" />\r\n    </marker>\r\n  </defs>\r\n\r\n  <line x1=\"30\" y1=\"250\" x2=\"470\" y2=\"250\" stroke=\"#1565C0\" stroke-width=\"2\" />\r\n\r\n  <!-- Pole 1 (Left) -->\r\n  <line x1=\"50\" y1=\"250\" x2=\"50\" y2=\"50\" stroke=\"#1565C0\" stroke-width=\"2\" />\r\n  <text x=\"40\" y=\"45\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">A</text>\r\n  <text x=\"40\" y=\"270\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">B</text>\r\n\r\n  <!-- Pole 2 (Right) -->\r\n  <line x1=\"450\" y1=\"250\" x2=\"450\" y2=\"50\" stroke=\"#1565C0\" stroke-width=\"2\" />\r\n  <text x=\"450\" y=\"45\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">D</text>\r\n  <text x=\"450\" y=\"270\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">C</text>\r\n\r\n  <!-- Point P -->\r\n  <circle cx=\"200\" cy=\"250\" r=\"3\" fill=\"#333\" />\r\n  <text x=\"195\" y=\"275\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">P</text>\r\n\r\n  <!-- Sight Lines -->\r\n  <line x1=\"200\" y1=\"250\" x2=\"50\" y2=\"50\" stroke=\"#1565C0\" stroke-width=\"2\" />\r\n  <line x1=\"200\" y1=\"250\" x2=\"450\" y2=\"50\" stroke=\"#1565C0\" stroke-width=\"2\" />\r\n\r\n  <!-- 60 Left from P(200,250) to A(50,50). dx -150 dy -200. Unit(-0.6, -0.8). End (176, 218) -->\r\n  <path d=\"M 160 250 A 40 40 0 0 1 176 218\" fill=\"none\" stroke=\"#1565C0\" stroke-width=\"2\"/>\r\n  <text x=\"140\" y=\"220\" font-family=\"Arial\" font-size=\"16\" fill=\"#333\">60°</text>\r\n\r\n  <!-- 30 Right from P to D(450,50). dx 250 dy -200. Unit(0.78, -0.62). End (231, 225) -->\r\n  <path d=\"M 240 250 A 40 40 0 0 0 231 225\" fill=\"none\" stroke=\"#1565C0\" stroke-width=\"2\"/>\r\n  <text x=\"260\" y=\"220\" font-family=\"Arial\" font-size=\"16\" fill=\"#333\">30°</text>\r\n\r\n  <line x1=\"50\" y1=\"290\" x2=\"450\" y2=\"290\" stroke=\"#333\" marker-start=\"url(#arrow)\" marker-end=\"url(#arrow)\" />\r\n  <text x=\"230\" y=\"315\" font-family=\"Arial\" font-size=\"18\" fill=\"#333\">80 m</text>\r\n\r\n</svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Two equal poles AB and CD of height <i>h</i> on opposite sides of 80 m road observed from point P</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Let AB and CD be the two poles of equal height <i>h</i>, so AB = CD = <i>h</i>.</div>\n        <div>Let BD = 80 m be the width of the road.</div>\n        <div>Let P be the observation point on the road such that BP = <i>x</i>. Then PD = 80 &minus; <i>x</i>.</div>\n        <div>Given angles of elevation: &ang;APB = 60&deg; and &ang;CPD = 30&deg;.</div>\n        <div style=\"margin-top: 8px;\"><b style=\"color: #64FFDA;\">(i) In right-angled triangle &Delta;ABP:</b></div>\n        <div>&rArr; tan 60&deg; = <span class=\"frac\"><span class=\"num\">AB</span><span class=\"den\">BP</span></span></div>\n        <div>&rArr; &radic;3 = <span class=\"frac\"><span class=\"num\">h</span><span class=\"den\">x</span></span> &rArr; <b>h = x&radic;3</b> &nbsp; &hellip; (1)</div>\n\n        <div style=\"margin-top: 8px;\"><b style=\"color: #64FFDA;\">(ii) In right-angled triangle &Delta;CDP:</b></div>\n        <div>&rArr; tan 30&deg; = <span class=\"frac\"><span class=\"num\">CD</span><span class=\"den\">PD</span></span></div>\n        <div>&rArr; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">&radic;3</span></span> = <span class=\"frac\"><span class=\"num\">h</span><span class=\"den\">80 &minus; x</span></span> &rArr; <b>h = <span class=\"frac\"><span class=\"num\">80 &minus; x</span><span class=\"den\">&radic;3</span></span></b> &nbsp; &hellip; (2)</div>\n\n        <div style=\"margin-top: 8px;\"><b style=\"color: #64FFDA;\">(iii) Equating expressions for h:</b></div>\n        <div>&rArr; x&radic;3 = <span class=\"frac\"><span class=\"num\">80 &minus; x</span><span class=\"den\">&radic;3</span></span></div>\n        <div>&rArr; 3x = 80 &minus; x</div>\n        <div>&rArr; 4x = 80 &rArr; <b>x = 20 m</b></div>\n        <div>Thus, the distance from pole AB is BP = <b>20 m</b>, and from pole CD is PD = 80 &minus; 20 = <b>60 m</b>.</div>\n        <div>Height of each pole:</div>\n        <div>&rArr; <b>h = 20&radic;3 m</b> &asymp; 20(1.732) = 34.64 m</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Solutions: </span>\n        <span class=\"ans-val\">Height of Poles = 20&radic;3 m &bull; Distances = 20 m and 60 m</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 11 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 11</div>\n    <div class=\"q-text\">\n      A TV tower stands vertically on a bank of a canal. From a point on the other bank directly opposite the tower, the angle of elevation of the top of the tower is 60&deg;. From another point 20 m away from this point on the line joining this point to the foot of the tower, the angle of elevation of the top of the tower is 30&deg;. Find the height of the tower and the width of the canal.\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 300\">\r\n  <defs>\r\n    <marker id=\"arrow\" markerWidth=\"10\" markerHeight=\"10\" refX=\"9\" refY=\"3\" orient=\"auto\" markerUnits=\"strokeWidth\">\r\n      <path d=\"M0,0 L0,6 L9,3 z\" fill=\"#333\" />\r\n    </marker>\r\n  </defs>\r\n\r\n  <line x1=\"20\" y1=\"250\" x2=\"480\" y2=\"250\" stroke=\"#43A047\" stroke-width=\"2\"/>\r\n\r\n  <!-- Tower -->\r\n  <line x1=\"450\" y1=\"250\" x2=\"450\" y2=\"50\" stroke=\"#43A047\" stroke-width=\"2\"/>\r\n  <text x=\"455\" y=\"45\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">A</text>\r\n  <text x=\"455\" y=\"270\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">B</text>\r\n\r\n  <!-- Point C (330) and D(150) -->\r\n  <circle cx=\"330\" cy=\"250\" r=\"3\" fill=\"#333\" />\r\n  <text x=\"325\" y=\"275\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">C</text>\r\n  <circle cx=\"150\" cy=\"250\" r=\"3\" fill=\"#333\" />\r\n  <text x=\"145\" y=\"275\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">D</text>\r\n\r\n  <line x1=\"330\" y1=\"250\" x2=\"450\" y2=\"50\" stroke=\"#43A047\" stroke-width=\"2\"/>\r\n  <line x1=\"150\" y1=\"250\" x2=\"450\" y2=\"50\" stroke=\"#43A047\" stroke-width=\"2\"/>\r\n\r\n  <!-- 60 at C(330,250) to A(450,50). dx 120 dy -200. Unit(0.5, -0.85). End (350, 216) -->\r\n  <path d=\"M 370 250 A 40 40 0 0 0 350 216\" fill=\"none\" stroke=\"#43A047\" stroke-width=\"2\"/>\r\n  <text x=\"380\" y=\"235\" font-family=\"Arial\" font-size=\"16\" fill=\"#333\">60°</text>\r\n\r\n  <!-- 30 at D(150,250) to A(450,50). dx 300 dy -200. Unit(0.83, -0.55). End (183, 228) -->\r\n  <path d=\"M 190 250 A 40 40 0 0 0 183 228\" fill=\"none\" stroke=\"#43A047\" stroke-width=\"2\"/>\r\n  <text x=\"210\" y=\"240\" font-family=\"Arial\" font-size=\"16\" fill=\"#333\">30°</text>\r\n\r\n  <line x1=\"150\" y1=\"280\" x2=\"330\" y2=\"280\" stroke=\"#333\" marker-start=\"url(#arrow)\" marker-end=\"url(#arrow)\" />\r\n  <text x=\"220\" y=\"300\" font-family=\"Arial\" font-size=\"18\" fill=\"#333\">20 m</text>\r\n</svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: TV tower AB of height <i>h</i> on bank of canal of width BC = <i>x</i></div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Let AB be the TV tower of height <i>h</i> metres.</div>\n        <div>Let BC = <i>x</i> be the width of the canal.</div>\n        <div>Let C and D be the two observation points such that CD = 20 m. Then BD = <i>x</i> + 20 m.</div>\n        <div>Given: &ang;ACB = 60&deg; and &ang;ADB = 30&deg;.</div>\n        <div style=\"margin-top: 8px;\"><b style=\"color: #64FFDA;\">(i) In right-angled triangle &Delta;ABC:</b></div>\n        <div>&rArr; tan 60&deg; = <span class=\"frac\"><span class=\"num\">AB</span><span class=\"den\">BC</span></span></div>\n        <div>&rArr; &radic;3 = <span class=\"frac\"><span class=\"num\">h</span><span class=\"den\">x</span></span> &rArr; <b>h = x&radic;3</b> &nbsp; &hellip; (1)</div>\n\n        <div style=\"margin-top: 8px;\"><b style=\"color: #64FFDA;\">(ii) In right-angled triangle &Delta;ABD:</b></div>\n        <div>&rArr; tan 30&deg; = <span class=\"frac\"><span class=\"num\">AB</span><span class=\"den\">BD</span></span></div>\n        <div>&rArr; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">&radic;3</span></span> = <span class=\"frac\"><span class=\"num\">h</span><span class=\"den\">x + 20</span></span></div>\n        <div>Substitute <i>h</i> = <i>x</i>&radic;3:</div>\n        <div>&rArr; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">&radic;3</span></span> = <span class=\"frac\"><span class=\"num\">x&radic;3</span><span class=\"den\">x + 20</span></span></div>\n        <div>Cross-multiplying:</div>\n        <div>&rArr; x + 20 = 3x &rArr; 2x = 20 &rArr; <b>x = 10 m</b></div>\n        <div>Therefore, the width of the canal is <b>10 m</b>.</div>\n        <div>Height of the TV tower:</div>\n        <div>&rArr; <b>h = 10&radic;3 m</b> &asymp; 17.32 m</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Solutions: </span>\n        <span class=\"ans-val\">Height of Tower = 10&radic;3 m &bull; Width of Canal = 10 m</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 12 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 12</div>\n    <div class=\"q-text\">\n      From the top of a 7 m high building, the angle of elevation of the top of a cable tower is 60&deg; and the angle of depression of its foot is 45&deg;. Determine the height of the tower.\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 350\">\r\n  <defs>\r\n    <marker id=\"arrow\" markerWidth=\"10\" markerHeight=\"10\" refX=\"9\" refY=\"3\" orient=\"auto\" markerUnits=\"strokeWidth\">\r\n      <path d=\"M0,0 L0,6 L9,3 z\" fill=\"#333\" />\r\n    </marker>\r\n  </defs>\r\n\r\n  <line x1=\"20\" y1=\"300\" x2=\"350\" y2=\"300\" stroke=\"#FB8C00\" stroke-width=\"2\"/>\r\n\r\n  <!-- Building (Left) -->\r\n  <line x1=\"50\" y1=\"300\" x2=\"50\" y2=\"200\" stroke=\"#FB8C00\" stroke-width=\"2\"/>\r\n  <text x=\"35\" y=\"300\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">B</text>\r\n  <text x=\"35\" y=\"200\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">A</text>\r\n  <text x=\"10\" y=\"260\" font-family=\"Arial\" font-size=\"16\" fill=\"#333\" transform=\"rotate(-90 10,260)\">7 m</text>\r\n\r\n  <!-- Tower (Right) -->\r\n  <line x1=\"300\" y1=\"300\" x2=\"300\" y2=\"20\" stroke=\"#FB8C00\" stroke-width=\"2\"/>\r\n  <text x=\"305\" y=\"300\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">D</text>\r\n  <text x=\"305\" y=\"200\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">E</text>\r\n  <text x=\"305\" y=\"25\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">C</text>\r\n\r\n  <!-- Horizontal AE -->\r\n  <line x1=\"50\" y1=\"200\" x2=\"300\" y2=\"200\" stroke=\"#555\" stroke-dasharray=\"4\"/>\r\n\r\n  <!-- Sight Lines -->\r\n  <line x1=\"50\" y1=\"200\" x2=\"300\" y2=\"20\" stroke=\"#FB8C00\" stroke-width=\"2\"/>\r\n  <line x1=\"50\" y1=\"200\" x2=\"300\" y2=\"300\" stroke=\"#FB8C00\" stroke-width=\"2\"/>\r\n\r\n  <!-- 60 Elevation at A(50,200) to C(300,20). dx 250 dy -180. Unit(0.81, -0.58). End (82, 177) -->\r\n  <path d=\"M 90 200 A 40 40 0 0 0 82 177\" fill=\"none\" stroke=\"#FB8C00\" stroke-width=\"2\"/>\r\n  <text x=\"110\" y=\"180\" font-family=\"Arial\" font-size=\"16\" fill=\"#333\">60°</text>\r\n\r\n  <!-- 45 Depression at A to D(300,300). dx 250 dy 100. Unit(0.92, 0.37). End (87, 215) -->\r\n  <path d=\"M 90 200 A 40 40 0 0 1 87 215\" fill=\"none\" stroke=\"#FB8C00\" stroke-width=\"2\"/>\r\n  <text x=\"110\" y=\"230\" font-family=\"Arial\" font-size=\"16\" fill=\"#333\">45°</text>\r\n\r\n</svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: 7 m building AB observed towards cable tower CD</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Let AB be the building of height 7 m.</div>\n        <div>Let CD be the cable tower of total height <i>H</i>.</div>\n        <div>Draw AE &perp; CD. Then ED = AB = 7 m and AE = BD = <i>d</i> (distance between building and tower).</div>\n        <div>The upper portion of the tower is CE = <i>H</i> &minus; 7.</div>\n        <div>Given: Angle of elevation of tower top C is &ang;CAE = 60&deg;, and angle of depression of tower foot D is 45&deg;.</div>\n        <div>By alternate interior angles: &ang;ADB = 45&deg;.</div>\n        <div style=\"margin-top: 8px;\"><b style=\"color: #64FFDA;\">(i) In right-angled triangle &Delta;ABD:</b></div>\n        <div>&rArr; tan 45&deg; = <span class=\"frac\"><span class=\"num\">AB</span><span class=\"den\">BD</span></span></div>\n        <div>&rArr; 1 = <span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">BD</span></span> &rArr; <b>BD = AE = 7 m</b></div>\n\n        <div style=\"margin-top: 8px;\"><b style=\"color: #64FFDA;\">(ii) In right-angled triangle &Delta;AEC:</b></div>\n        <div>&rArr; tan 60&deg; = <span class=\"frac\"><span class=\"num\">CE</span><span class=\"den\">AE</span></span></div>\n        <div>&rArr; &radic;3 = <span class=\"frac\"><span class=\"num\">CE</span><span class=\"den\">7</span></span> &rArr; <b>CE = 7&radic;3 m</b></div>\n\n        <div style=\"margin-top: 8px;\"><b style=\"color: #64FFDA;\">(iii) Total Height of Cable Tower (CD):</b></div>\n        <div>&rArr; CD = CE + ED = 7&radic;3 + 7 = <b>7(&radic;3 + 1) m</b> &asymp; 7(1.732 + 1) = 7(2.732) = <b>19.124 m</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Height of Cable Tower: </span>\n        <span class=\"ans-val\">7(&radic;3 + 1) m &asymp; 19.12 m</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 13 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 13</div>\n    <div class=\"q-text\">\n      As observed from the top of a 75 m high lighthouse from the sea-level, the angles of depression of two ships are 30&deg; and 45&deg;. If one ship is exactly behind the other on the same side of the lighthouse, find the distance between the two ships.\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 450 350\">\r\n  <line x1=\"20\" y1=\"300\" x2=\"400\" y2=\"300\" stroke=\"#8E24AA\" stroke-width=\"2\"/>\r\n\r\n  <!-- Lighthouse (Right) -->\r\n  <line x1=\"350\" y1=\"300\" x2=\"350\" y2=\"50\" stroke=\"#8E24AA\" stroke-width=\"2\"/>\r\n  <text x=\"355\" y=\"300\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">B</text>\r\n  <text x=\"355\" y=\"50\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">A</text>\r\n  <text x=\"360\" y=\"170\" font-family=\"Arial\" font-size=\"18\" fill=\"#333\">75 m</text>\r\n\r\n  <!-- Top Horizontal -->\r\n  <line x1=\"50\" y1=\"50\" x2=\"350\" y2=\"50\" stroke=\"#555\" stroke-dasharray=\"4\"/>\r\n  <text x=\"40\" y=\"55\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">P</text>\r\n\r\n  <!-- Points C(210, 300) and D(100, 300) -->\r\n  <circle cx=\"210\" cy=\"300\" r=\"3\" fill=\"#333\"/>\r\n  <text x=\"205\" y=\"325\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">C</text>\r\n\r\n  <circle cx=\"100\" cy=\"300\" r=\"3\" fill=\"#333\"/>\r\n  <text x=\"95\" y=\"325\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">D</text>\r\n\r\n  <line x1=\"210\" y1=\"300\" x2=\"350\" y2=\"50\" stroke=\"#8E24AA\" stroke-width=\"2\"/>\r\n  <line x1=\"100\" y1=\"300\" x2=\"350\" y2=\"50\" stroke=\"#8E24AA\" stroke-width=\"2\"/>\r\n\r\n  <!-- 45 Depression at P(50,50)? No, A(350,50). P is left. Angle P-A-C. Face Left. -->\r\n  <path d=\"M 310 50 A 40 40 0 0 0 329 88\" fill=\"none\" stroke=\"#8E24AA\" stroke-width=\"2\"/>\r\n  <!-- Calc: A(350,50) to C(210,300). dx -140 dy 250. Unit(-0.49, 0.87). End (330, 85) -->\r\n  <path d=\"M 310 50 A 40 40 0 0 0 330 85\" fill=\"none\" stroke=\"#8E24AA\" stroke-width=\"2\"/>\r\n  <text x=\"280\" y=\"80\" font-family=\"Arial\" font-size=\"16\" fill=\"#333\">45°</text>\r\n\r\n  <!-- 30 Depression to D(100,300). dx -250 dy 250. Unit(-0.7, 0.7). End (322, 78) -->\r\n  <path d=\"M 310 50 A 40 40 0 0 0 322 78\" fill=\"none\" stroke=\"#8E24AA\" stroke-width=\"2\"/>\r\n  <text x=\"210\" y=\"70\" font-family=\"Arial\" font-size=\"16\" fill=\"#333\">30°</text>\r\n\r\n</svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Lighthouse AB = 75 m observing two ships C and D on sea level</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Let AB be the lighthouse of height 75 m above sea level.</div>\n        <div>Let C and D represent the two ships sailing in line on the same side of the lighthouse.</div>\n        <div>The angles of depression of ships C and D are 45&deg; and 30&deg;.</div>\n        <div>By alternate interior angles: &ang;ACB = 45&deg; (nearer ship) and &ang;ADB = 30&deg; (farther ship).</div>\n        <div style=\"margin-top: 8px;\"><b style=\"color: #64FFDA;\">(i) In right-angled triangle &Delta;ABC:</b></div>\n        <div>&rArr; tan 45&deg; = <span class=\"frac\"><span class=\"num\">AB</span><span class=\"den\">BC</span></span></div>\n        <div>&rArr; 1 = <span class=\"frac\"><span class=\"num\">75</span><span class=\"den\">BC</span></span> &rArr; <b>BC = 75 m</b></div>\n\n        <div style=\"margin-top: 8px;\"><b style=\"color: #64FFDA;\">(ii) In right-angled triangle &Delta;ABD:</b></div>\n        <div>&rArr; tan 30&deg; = <span class=\"frac\"><span class=\"num\">AB</span><span class=\"den\">BD</span></span></div>\n        <div>&rArr; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">&radic;3</span></span> = <span class=\"frac\"><span class=\"num\">75</span><span class=\"den\">BD</span></span> &rArr; <b>BD = 75&radic;3 m</b></div>\n\n        <div style=\"margin-top: 8px;\"><b style=\"color: #64FFDA;\">(iii) Distance Between the Two Ships (CD):</b></div>\n        <div>&rArr; CD = BD &minus; BC = 75&radic;3 &minus; 75 = <b>75(&radic;3 &minus; 1) m</b> &asymp; 75(1.732 &minus; 1) = 75(0.732) = <b>54.9 m</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Distance Between Ships: </span>\n        <span class=\"ans-val\">75(&radic;3 &minus; 1) m &asymp; 54.9 m</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 14 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 14</div>\n    <div class=\"q-text\">\n      A 1.2 m tall girl spots a balloon moving with the wind in a horizontal line at a height of 88.2 m from the ground. The angle of elevation of the balloon from the eyes of the girl at any instant is 60&deg;. After some time, the angle of elevation reduces to 30&deg;. Find the distance travelled by the balloon during the interval.\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 350\">\r\n  <defs>\r\n    <marker id=\"arrow\" markerWidth=\"10\" markerHeight=\"10\" refX=\"9\" refY=\"3\" orient=\"auto\" markerUnits=\"strokeWidth\">\r\n      <path d=\"M0,0 L0,6 L9,3 z\" fill=\"#333\" />\r\n    </marker>\r\n  </defs>\r\n\r\n  <line x1=\"20\" y1=\"300\" x2=\"480\" y2=\"300\" stroke=\"#D81B60\" stroke-width=\"2\"/>\r\n\r\n  <!-- Girl -->\r\n  <line x1=\"50\" y1=\"300\" x2=\"50\" y2=\"250\" stroke=\"#D81B60\" stroke-width=\"2\"/>\r\n  <text x=\"45\" y=\"320\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\">D</text>\r\n  <text x=\"45\" y=\"245\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\">C</text>\r\n  <text x=\"5\" y=\"280\" font-family=\"Arial\" font-size=\"14\">1.2m</text>\r\n\r\n  <!-- Eye Level -->\r\n  <line x1=\"50\" y1=\"250\" x2=\"450\" y2=\"250\" stroke=\"#555\" stroke-dasharray=\"4\"/>\r\n\r\n  <!-- Balloon A (150,80) -->\r\n  <circle cx=\"150\" cy=\"80\" r=\"10\" fill=\"none\" stroke=\"#D81B60\" stroke-width=\"2\"/>\r\n  <line x1=\"150\" y1=\"90\" x2=\"150\" y2=\"300\" stroke=\"#D81B60\" stroke-dasharray=\"2\" stroke-width=\"1\"/>\r\n  <text x=\"140\" y=\"70\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">A</text>\r\n  \r\n  <!-- Balloon B (350,80) -->\r\n  <circle cx=\"350\" cy=\"80\" r=\"10\" fill=\"none\" stroke=\"#D81B60\" stroke-width=\"2\"/>\r\n  <line x1=\"350\" y1=\"90\" x2=\"350\" y2=\"300\" stroke=\"#D81B60\" stroke-width=\"1\"/>\r\n  <text x=\"340\" y=\"70\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">B</text>\r\n  <text x=\"360\" y=\"200\" font-family=\"Arial\" font-size=\"16\">88.2 m</text>\r\n\r\n  <line x1=\"50\" y1=\"250\" x2=\"150\" y2=\"80\" stroke=\"#D81B60\" stroke-width=\"2\"/>\r\n  <line x1=\"50\" y1=\"250\" x2=\"350\" y2=\"80\" stroke=\"#D81B60\" stroke-width=\"2\"/>\r\n\r\n  <!-- 60 to A(150,80). dx 100 dy -170. Unit(0.5, -0.86). End (70, 216) -->\r\n  <path d=\"M 90 250 A 40 40 0 0 0 70 216\" fill=\"none\" stroke=\"#D81B60\" stroke-width=\"2\"/>\r\n  <text x=\"90\" y=\"210\" font-family=\"Arial\" font-size=\"16\" fill=\"#333\">60°</text>\r\n\r\n  <!-- 30 to B(350,80). dx 300 dy -170. Unit(0.87, -0.49). End (85, 230) -->\r\n  <path d=\"M 90 250 A 40 40 0 0 0 85 230\" fill=\"none\" stroke=\"#D81B60\" stroke-width=\"2\"/>\r\n  <text x=\"120\" y=\"240\" font-family=\"Arial\" font-size=\"16\" fill=\"#333\">30°</text>\r\n\r\n</svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Girl of height 1.2 m observing balloon at 88.2 m with elevation changing 60&deg; to 30&deg;</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Let the height of the balloon from the ground be 88.2 m.</div>\n        <div>Height of the girl = 1.2 m.</div>\n        <div>The effective vertical height of the balloon above the eye level of the girl is:</div>\n        <div>&rArr; <i>h</i> = 88.2 m &minus; 1.2 m = <b>87 m</b></div>\n        <div>Let P and Q be the two positions of the balloon. The balloon moves horizontally along line PQ.</div>\n        <div>Given: Initial angle &ang;PAL = 60&deg; and final angle &ang;QAM = 30&deg;.</div>\n        <div style=\"margin-top: 8px;\"><b style=\"color: #64FFDA;\">(i) Initial Distance AL:</b></div>\n        <div>In right-angled triangle &Delta;PLA:</div>\n        <div>&rArr; tan 60&deg; = <span class=\"frac\"><span class=\"num\">PL</span><span class=\"den\">AL</span></span></div>\n        <div>&rArr; &radic;3 = <span class=\"frac\"><span class=\"num\">87</span><span class=\"den\">AL</span></span> &rArr; <b>AL = <span class=\"frac\"><span class=\"num\">87</span><span class=\"den\">&radic;3</span></span> = 29&radic;3 m</b></div>\n\n        <div style=\"margin-top: 8px;\"><b style=\"color: #64FFDA;\">(ii) Final Distance AM:</b></div>\n        <div>In right-angled triangle &Delta;QMA:</div>\n        <div>&rArr; tan 30&deg; = <span class=\"frac\"><span class=\"num\">QM</span><span class=\"den\">AM</span></span></div>\n        <div>&rArr; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">&radic;3</span></span> = <span class=\"frac\"><span class=\"num\">87</span><span class=\"den\">AM</span></span> &rArr; <b>AM = 87&radic;3 m</b></div>\n\n        <div style=\"margin-top: 8px;\"><b style=\"color: #64FFDA;\">(iii) Distance Travelled by Balloon (LM = PQ):</b></div>\n        <div>&rArr; LM = AM &minus; AL = 87&radic;3 &minus; 29&radic;3 = <b>58&radic;3 m</b> &asymp; 58(1.732) = <b>100.456 m</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Distance Travelled: </span>\n        <span class=\"ans-val\">58&radic;3 m &asymp; 100.46 m</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 15 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 15</div>\n    <div class=\"q-text\">\n      A straight highway leads to the foot of a tower. A man standing at the top of the tower observes a car at an angle of depression of 30&deg;, which is approaching the foot of the tower with a uniform speed. Six seconds later, the angle of depression of the car is found to be 60&deg;. Find the time taken by the car to reach the foot of the tower from this point.\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 450 350\">\r\n  <defs>\r\n    <marker id=\"arrow\" markerWidth=\"10\" markerHeight=\"10\" refX=\"9\" refY=\"3\" orient=\"auto\" markerUnits=\"strokeWidth\">\r\n      <path d=\"M0,0 L0,6 L9,3 z\" fill=\"#333\" />\r\n    </marker>\r\n  </defs>\r\n\r\n  <line x1=\"20\" y1=\"300\" x2=\"400\" y2=\"300\" stroke=\"#00ACC1\" stroke-width=\"2\"/>\r\n\r\n  <!-- Tower (Right) -->\r\n  <line x1=\"350\" y1=\"300\" x2=\"350\" y2=\"50\" stroke=\"#00ACC1\" stroke-width=\"2\"/>\r\n  <text x=\"355\" y=\"45\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">A</text>\r\n  <text x=\"355\" y=\"300\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">B</text>\r\n\r\n  <!-- Top Horizontal from A(350,50) -->\r\n  <line x1=\"100\" y1=\"50\" x2=\"350\" y2=\"50\" stroke=\"#555\" stroke-dasharray=\"4\"/>\r\n\r\n  <!-- C(250) D(100) -->\r\n  <circle cx=\"250\" cy=\"300\" r=\"3\" fill=\"#333\"/>\r\n  <text x=\"245\" y=\"325\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">C</text>\r\n\r\n  <circle cx=\"100\" cy=\"300\" r=\"3\" fill=\"#333\"/>\r\n  <text x=\"95\" y=\"325\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">D</text>\r\n\r\n  <line x1=\"250\" y1=\"300\" x2=\"350\" y2=\"50\" stroke=\"#00ACC1\" stroke-width=\"2\"/>\r\n  <line x1=\"100\" y1=\"300\" x2=\"350\" y2=\"50\" stroke=\"#00ACC1\" stroke-width=\"2\"/>\r\n\r\n  <!-- 60 at A to C(250,300). dx -100 dy 250. Unit(-0.37, 0.93). End (335, 87) -->\r\n  <path d=\"M 310 50 A 40 40 0 0 0 335 87\" fill=\"none\" stroke=\"#00ACC1\" stroke-width=\"2\"/>\r\n  <text x=\"280\" y=\"80\" font-family=\"Arial\" font-size=\"16\" fill=\"#333\">60°</text>\r\n\r\n  <!-- 30 at A to D(100,300). dx -250 dy 250. Unit(-0.7, 0.7). End (322, 78) -->\r\n  <path d=\"M 310 50 A 40 40 0 0 0 322 78\" fill=\"none\" stroke=\"#00ACC1\" stroke-width=\"2\"/>\r\n  <text x=\"260\" y=\"70\" font-family=\"Arial\" font-size=\"16\" fill=\"#333\">30°</text>\r\n\r\n  <line x1=\"100\" y1=\"330\" x2=\"250\" y2=\"330\" stroke=\"#333\" marker-start=\"url(#arrow)\" marker-end=\"url(#arrow)\" />\r\n  <text x=\"140\" y=\"350\" font-family=\"Arial\" font-size=\"18\" fill=\"#333\">6 sec</text>\r\n\r\n</svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Tower AB of height <i>h</i> observing moving car at positions D and C</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Let AB be the vertical tower of height <i>h</i> metres.</div>\n        <div>Let D be the initial position of the car (depression 30&deg;) and C be the position after 6 seconds (depression 60&deg;).</div>\n        <div>By alternate interior angles: &ang;ADB = 30&deg; and &ang;ACB = 60&deg;.</div>\n        <div>Let BC = <i>y</i> be the distance from C to the foot of the tower B, and let BD = <i>x</i>.</div>\n        <div>Let the uniform speed of the car be <i>v</i> m/s.</div>\n        <div>Then distance DC covered in 6 seconds is <b>DC = 6v</b>.</div>\n        <div style=\"margin-top: 8px;\"><b style=\"color: #64FFDA;\">(i) In right-angled triangle &Delta;ABC:</b></div>\n        <div>&rArr; tan 60&deg; = <span class=\"frac\"><span class=\"num\">AB</span><span class=\"den\">BC</span></span></div>\n        <div>&rArr; &radic;3 = <span class=\"frac\"><span class=\"num\">h</span><span class=\"den\">y</span></span> &rArr; <b>h = y&radic;3</b> &nbsp; &hellip; (1)</div>\n\n        <div style=\"margin-top: 8px;\"><b style=\"color: #64FFDA;\">(ii) In right-angled triangle &Delta;ABD:</b></div>\n        <div>&rArr; tan 30&deg; = <span class=\"frac\"><span class=\"num\">AB</span><span class=\"den\">BD</span></span></div>\n        <div>&rArr; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">&radic;3</span></span> = <span class=\"frac\"><span class=\"num\">h</span><span class=\"den\">x</span></span> &rArr; <b>h = <span class=\"frac\"><span class=\"num\">x</span><span class=\"den\">&radic;3</span></span></b> &nbsp; &hellip; (2)</div>\n\n        <div style=\"margin-top: 8px;\"><b style=\"color: #64FFDA;\">(iii) Equating expressions for h:</b></div>\n        <div>&rArr; y&radic;3 = <span class=\"frac\"><span class=\"num\">x</span><span class=\"den\">&radic;3</span></span> &rArr; <b>x = 3y</b></div>\n        <div>Notice that distance DC = BD &minus; BC = <i>x</i> &minus; <i>y</i> = 3<i>y</i> &minus; <i>y</i> = <b>2y</b>.</div>\n        <div>Since the car takes 6 seconds to cover distance 2<i>y</i>:</div>\n        <div>&rArr; Time to cover distance <i>y</i> = <span class=\"frac\"><span class=\"num\">6 seconds</span><span class=\"den\">2</span></span> = <b>3 seconds</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Time Taken: </span>\n        <span class=\"ans-val\">3 seconds</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 16 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 16</div>\n    <div class=\"q-text\">\n      The angles of elevation of the top of a tower from two points at a distance of 4 m and 9 m from the base of the tower and in the same straight line with it are complementary. Prove that the height of the tower is 6 m.\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 220\" width=\"350\" height=\"220\" style=\"background-color:white; border:1px solid #ddd;\"><line x1=\"20\" y1=\"180\" x2=\"300\" y2=\"180\" stroke=\"green\" stroke-width=\"2\" fill=\"none\"/><line x1=\"40\" y1=\"180\" x2=\"40\" y2=\"50\" stroke=\"black\" stroke-width=\"2\" fill=\"none\"/><text x=\"25\" y=\"110\" font-family=\"Arial\" font-size=\"12\" fill=\"black\" text-anchor=\"middle\">h?</text><circle cx=\"140\" cy=\"180\" r=\"3\" fill=\"black\"/><text x=\"140\" y=\"195\" font-family=\"Arial\" font-size=\"12\" fill=\"black\" text-anchor=\"middle\">4m</text><circle cx=\"240\" cy=\"180\" r=\"3\" fill=\"black\"/><text x=\"240\" y=\"195\" font-family=\"Arial\" font-size=\"12\" fill=\"black\" text-anchor=\"middle\">9m</text><line x1=\"40\" y1=\"50\" x2=\"140\" y2=\"180\" stroke=\"black\" stroke-width=\"2\" fill=\"none\"/><line x1=\"40\" y1=\"50\" x2=\"240\" y2=\"180\" stroke=\"black\" stroke-width=\"2\" fill=\"none\"/></svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Tower AB of height <i>h</i> with complementary angles &theta; and (90&deg; &minus; &theta;) at distances 4 m and 9 m</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Let AB be the vertical tower of height <i>h</i> metres.</div>\n        <div>Let C and D be two points on the ground in the same straight line with base B such that BC = 4 m and BD = 9 m.</div>\n        <div>Let the angle of elevation &ang;ACB = &theta;.</div>\n        <div>Since the two angles of elevation are complementary (their sum is 90&deg;):</div>\n        <div>&rArr; <b>&ang;ADB = 90&deg; &minus; &theta;</b></div>\n        <div style=\"margin-top: 8px;\"><b style=\"color: #64FFDA;\">(i) In right-angled triangle &Delta;ABC:</b></div>\n        <div>&rArr; tan &theta; = <span class=\"frac\"><span class=\"num\">AB</span><span class=\"den\">BC</span></span> = <span class=\"frac\"><span class=\"num\">h</span><span class=\"den\">4</span></span> &nbsp; &hellip; (1)</div>\n\n        <div style=\"margin-top: 8px;\"><b style=\"color: #64FFDA;\">(ii) In right-angled triangle &Delta;ABD:</b></div>\n        <div>&rArr; tan (90&deg; &minus; &theta;) = <span class=\"frac\"><span class=\"num\">AB</span><span class=\"den\">BD</span></span></div>\n        <div>Using complementary angle relation tan (90&deg; &minus; &theta;) = cot &theta;:</div>\n        <div>&rArr; cot &theta; = <span class=\"frac\"><span class=\"num\">h</span><span class=\"den\">9</span></span> &nbsp; &hellip; (2)</div>\n\n        <div style=\"margin-top: 8px;\"><b style=\"color: #64FFDA;\">(iii) Multiplying equations (1) and (2):</b></div>\n        <div>&rArr; tan &theta; &times; cot &theta; = (<span class=\"frac\"><span class=\"num\">h</span><span class=\"den\">4</span></span>) &times; (<span class=\"frac\"><span class=\"num\">h</span><span class=\"den\">9</span></span>)</div>\n        <div>Since tan &theta; &times; cot &theta; = 1:</div>\n        <div>&rArr; 1 = <span class=\"frac\"><span class=\"num\">h&sup2;</span><span class=\"den\">36</span></span></div>\n        <div>&rArr; h&sup2; = 36</div>\n        <div>Since height must be a positive quantity:</div>\n        <div>&rArr; <b>h = &radic;36 = 6 m</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Result: </span>\n        <span class=\"ans-val\">Hence Proved (Height of Tower = 6 m).</span>\n      </div>\n    </div>\n  </div>\n\n</div>\n"
+  }
 };

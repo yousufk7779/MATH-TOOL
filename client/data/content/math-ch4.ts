@@ -1,1583 +1,275 @@
 import { ChapterContent } from "../types";
 
 export const mathCh4: ChapterContent = {
-  id: "ch4",
-  number: 4,
-  title: "Quadratic Equations",
-  introduction: "A quadratic equation is a second-degree polynomial equation in a single variable x, typically written in the standard form ax² + bx + c = 0.",
-  definitions: [
-  {
-    "term": "Roots",
-    "description": "The values of x that satisfy the equation."
-  },
-  {
-    "term": "Discriminant (D)",
-    "description": "Evaluated as b² - 4ac, which determines the nature of the roots."
-  }
-],
-  keyPoints: [
-  "Solved using methods like factorization, completing the square, or the quadratic formula x = (-b ± √D) / 2a."
-],
-  formulas: [],
-  crux: [
-  "If D > 0, roots are real and distinct.",
-  "If D = 0, roots are real and equal.",
-  "If D < 0, there are no real roots."
-],
-  summary: [
-  "Quadratic equations naturally model situations involving gravity, area, and parabolic trajectories.",
-  "The discriminant is the fastest tool to check root validity.",
-  "Carefully read and understand every problem statement before jumping into the solution.",
-  "A strong grasp of the core concepts is the key to solving complex problems easily.",
-  "Make a habit of practicing the solved examples to get familiar with standard solution formats."
-],
-  examples: [],
-  exercises: [
-    { id: "examples", name: "Examples", questions: [] },
-    { id: "exercise1", name: "Exercise 4.1", questions: [] },
-    { id: "exercise2", name: "Exercise 4.2", questions: [] },
-    { id: "exercise3", name: "Exercise 4.3", questions: [] }
+  "id": "ch4",
+  "number": 4,
+  "title": "Quadratic Equations",
+  "introduction": "A quadratic equation in variable x is an equation of the form ax² + bx + c = 0, where a, b, c are real numbers and a ≠ 0. In this chapter, we explore methods of finding roots by factorisation and the quadratic formula, and understand the nature of roots using the discriminant.",
+  "definitions": [
+    {
+      "term": "Quadratic Equation",
+      "description": "An algebraic equation of the second degree of the form ax² + bx + c = 0, where a, b, c are real numbers and a ≠ 0."
+    },
+    {
+      "term": "Roots of Quadratic Equation",
+      "description": "Real values of x that satisfy the equation ax² + bx + c = 0. A quadratic equation has at most two real roots."
+    },
+    {
+      "term": "Discriminant (D)",
+      "description": "The algebraic expression D = b² - 4ac that determines the nature of the roots of a quadratic equation."
+    },
+    {
+      "term": "Quadratic Formula",
+      "description": "The formula x = (-b ± √(b² - 4ac)) / (2a) to find the roots of any quadratic equation with real coefficients."
+    }
   ],
-  mcqs: [
-  {
-    "id": "mcq1",
-    "question": "<span style=\"font-weight: normal;\">The standard form of a quadratic equation is:</span>",
-    "options": [
-      "(A) ax² + bx + c = 0, a ≠ 0",
-      "(B) ax + b = 0",
-      "(C) ax³ + bx² + c = 0",
-      "(D) None of these"
-    ],
-    "correctAnswer": "A"
-  },
-  {
-    "id": "mcq2",
-    "question": "<span style=\"font-weight: normal;\">The degree of a quadratic equation is:</span>",
-    "options": [
-      "(A) 1",
-      "(B) 2",
-      "(C) 3",
-      "(D) 4"
-    ],
-    "correctAnswer": "B"
-  },
-  {
-    "id": "mcq3",
-    "question": "<span style=\"font-weight: normal;\">For a quadratic equation ax² + bx + c = 0, the discriminant D is:</span>",
-    "options": [
-      "(A) b² - 4ac",
-      "(B) b² + 4ac",
-      "(C) b - 4ac",
-      "(D) b² - ac"
-    ],
-    "correctAnswer": "A"
-  },
-  {
-    "id": "mcq4",
-    "question": "<span style=\"font-weight: normal;\">If b² - 4ac > 0, then the roots of the quadratic equation are:</span>",
-    "options": [
-      "(A) Real and distinct",
-      "(B) Real and equal",
-      "(C) No real roots",
-      "(D) Imaginary"
-    ],
-    "correctAnswer": "A"
-  },
-  {
-    "id": "mcq5",
-    "question": "<span style=\"font-weight: normal;\">If b² - 4ac = 0, then the roots of the quadratic equation are:</span>",
-    "options": [
-      "(A) Real and distinct",
-      "(B) Real and equal",
-      "(C) No real roots",
-      "(D) None of these"
-    ],
-    "correctAnswer": "B"
-  },
-  {
-    "id": "mcq6",
-    "question": "<span style=\"font-weight: normal;\">If b² - 4ac < 0, then the roots of the quadratic equation are:</span>",
-    "options": [
-      "(A) Real and distinct",
-      "(B) Real and equal",
-      "(C) No real roots",
-      "(D) Real roots"
-    ],
-    "correctAnswer": "C"
-  },
-  {
-    "id": "mcq7",
-    "question": "<span style=\"font-weight: normal;\">A quadratic equation can have at most how many real roots?</span>",
-    "options": [
-      "(A) 1",
-      "(B) 2",
-      "(C) 3",
-      "(D) 4"
-    ],
-    "correctAnswer": "B"
-  },
-  {
-    "id": "mcq8",
-    "question": "<span style=\"font-weight: normal;\">Is x = 1 a root of the equation x² - 2x + 1 = 0?</span>",
-    "options": [
-      "(A) Yes",
-      "(B) No",
-      "(C) Cannot say",
-      "(D) Root is 0"
-    ],
-    "correctAnswer": "A"
-  },
-  {
-    "id": "mcq9",
-    "question": "<span style=\"font-weight: normal;\">The quadratic formula to find roots is:</span>",
-    "options": [
-      "(A) x = (-b ± √D) / 2a",
-      "(B) x = (b ± √D) / 2a",
-      "(C) x = (-b ± √(b² + 4ac)) / 2a",
-      "(D) x = (-b ± b) / 2a"
-    ],
-    "correctAnswer": "A"
-  },
-  {
-    "id": "mcq10",
-    "question": "<span style=\"font-weight: normal;\">The roots of x² - 9 = 0 are:</span>",
-    "options": [
-      "(A) 3, -3",
-      "(B) 3, 3",
-      "(C) -3, -3",
-      "(D) 9, -9"
-    ],
-    "correctAnswer": "A"
-  }
-],
-  isHtmlView: true,
-  htmlExercises: {
-    examples: `<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quadratic Equations - Examples</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
-
-        body {
-            font-family: 'Noto Sans', sans-serif;
-            margin: 0;
-            padding: 15px;
-            background: #fff;
-            color: #333;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #6C63FF;
-            padding-bottom: 10px;
-            font-family: 'Nunito', sans-serif;
-        }
-
-        .logo {
-            color: #6C63FF;
-            font-size: 24px;
-            font-weight: 800;
-        }
-
-        .chapter-title {
-            text-align: center;
-            color: #333;
-            font-size: 20px;
-            font-weight: 700;
-            margin: 10px 0;
-            font-family: 'Noto Sans', sans-serif;
-        }
-
-        .content-box {
-            background: #f8f9fa;
-            border: 1px solid #e9ecef;
-            border-radius: 8px;
-            padding: 15px;
-            margin-bottom: 15px;
-            display: flow-root;
-            transition: transform 0.2s ease;
-        }
-
-        .question {
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: #333;
-        }
-
-        .sub-question {
-            margin-left: 15px;
-            margin-top: 15px;
-            font-weight: 600;
-            color: #444;
-            border-bottom: 1px dashed #ddd;
-            padding-bottom: 5px;
-            margin-bottom: 10px;
-        }
-
-        .step {
-            margin-bottom: 8px;
-            font-size: 1.1em;
-            color: #000;
-            line-height: 1.6;
-        }
-
-        .final-answer {
-            color: #2E7D32;
-            font-weight: 700;
-            margin-top: 15px;
-            font-size: 1.2em;
-            padding-top: 5px;
-            display: inline-block;
-        }
-
-        .fraction {
-            display: inline-block;
-            vertical-align: middle;
-            text-align: center;
-            font-size: 0.9em;
-            margin: 0 4px;
-        }
-
-        .numerator {
-            border-bottom: 1px solid #333;
-            display: block;
-            padding: 0 2px;
-        }
-
-        .denominator {
-            display: block;
-            padding: 0 2px;
-        }
-
-        .solution-header {
-            color: #6C63FF;
-            font-weight: 700;
-            font-size: 1.1em;
-            margin-bottom: 5px;
-            margin-top: 10px;
-        }
-
-        .clearfix::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
-
-        @media (max-width: 600px) {
-            img {
-                float: none;
-                display: block;
-                margin: 10px auto;
-                max-width: 100%;
-            }
-        }
-    </style>
-
-    <style>
-        img {
-            background: #FFFFFF;
-            padding: 10px;
-            border-radius: 10px;
-            width: 100%;
-            max-width: 320px;
-            height: 180px;
-            object-fit: contain;
-            display: block;
-            margin: 15px auto;
-            border: 1px solid #e9ecef;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-        }
-    </style>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    renderMathInElement(document.body, {
-      delimiters: [
-        {left: '\\\\(', right: '\\\\)', display: false},
-        {left: '\\\\[', right: '\\\\]', display: true}
-      ]
-    });
-  });
-</script>
-
-<style>
-  body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
-  .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #42A5F5 !important; color: #fff !important; }
-  h1, h2, h3, h4, h5, h6 { color: #42A5F5 !important; }
-  .question { color: #42A5F5 !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-question { color: #42A5F5 !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
-  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
-  .formula { color: #4CAF50 !important; }
-  .true-text { color: #4CAF50 !important; }
-  .false-text { color: #F44336 !important; }
-  table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
-  .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
-  img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #42A5F5 !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
-  * { font-family: 'Noto Sans', sans-serif !important; }
-  
-  /* Make sure every sub part of the question has the question color */
-  strong[style*="color: #FF6B6B"] { color: #42A5F5 !important; }
-  strong[style*="color: #ff6b6b"] { color: #42A5F5 !important; }
-
-  .question { font-size: 0.95em !important; }
-  .sub-question { font-size: 0.9em !important; }
-  .step { font-size: 0.9em !important; }
-  .final-answer { font-size: 0.95em !important; }
-</style>
-</head>
-
-<body>
-<!-- Example 1 -->
-    <div class="content-box">
-        <div class="question">Example 1. Represent the following situations mathematically:</div>
-
-        <div class="sub-question">(i) John and Jivanti together have 45 marbles. Both of them lost 5 marbles each, and
-            the product of the number of marbles they now have is 124. We would like to find out how many marbles they
-            had to start with.</div>
-        <div class="solution-header">Solution:</div>
-        <div class="step">Let the number of marbles John had be x.</div>
-        <div class="step">Then the number of marbles Jivanti had = 45 - x.</div>
-        <div class="step">After losing 5 marbles:</div>
-        <div class="step">Number of marbles left with John = x - 5</div>
-        <div class="step">Number of marbles left with Jivanti = (45 - x) - 5 = 40 - x</div>
-        <div class="step">Product of their marbles = 124</div>
-        <div class="step">(x - 5)(40 - x) = 124</div>
-        <div class="step">40x - x² - 200 + 5x = 124</div>
-        <div class="step">-x² + 45x - 200 = 124</div>
-        <div class="step">-x² + 45x - 324 = 0</div>
-        <div class="step">Multiply by -1:</div>
-        <div class="final-answer">x² - 45x + 324 = 0</div>
-
-        <div class="sub-question">(ii) A cottage industry produces a certain number of toys in a day. The cost of
-            production of each toy (in rupees) was found to be 55 minus the number of toys produced in a day. On a
-            particular day, the total cost of production was ₹ 750. We would like to find out the number of toys
-            produced on that day.</div>
-        <div class="solution-header">Solution:</div>
-        <div class="step">Let the number of toys produced be x.</div>
-        <div class="step">Cost of production of each toy = 55 - x</div>
-        <div class="step">Total cost of production = x(55 - x)</div>
-        <div class="step">Given total cost = 750</div>
-        <div class="step">x(55 - x) = 750</div>
-        <div class="step">55x - x² = 750</div>
-        <div class="step">-x² + 55x - 750 = 0</div>
-        <div class="step">Multiply by -1:</div>
-        <div class="final-answer">x² - 55x + 750 = 0</div>
-    </div>
-
-    <!-- Example 2 -->
-    <div class="content-box">
-        <div class="question">Example 2. Check whether the following are quadratic equations:</div>
-
-        <div class="sub-question">(i) (x - 2)² + 1 = 2x - 3</div>
-        <div class="solution-header">Solution:</div>
-        <div class="step">LHS = (x - 2)² + 1 = x² - 4x + 4 + 1 = x² - 4x + 5</div>
-        <div class="step">Given equation: x² - 4x + 5 = 2x - 3</div>
-        <div class="step">x² - 4x - 2x + 5 + 3 = 0</div>
-        <div class="step">x² - 6x + 8 = 0</div>
-        <div class="step">It is of the form ax² + bx + c = 0.</div>
-        <div class="final-answer">Yes, it is a quadratic equation.</div>
-
-        <div class="sub-question">(ii) x(x + 1) + 8 = (x + 2)(x - 2)</div>
-        <div class="solution-header">Solution:</div>
-        <div class="step">LHS = x² + x + 8</div>
-        <div class="step">RHS = x² - 4</div>
-        <div class="step">x² + x + 8 = x² - 4</div>
-        <div class="step">x + 12 = 0</div>
-        <div class="step">It is a linear equation (degree 1).</div>
-        <div class="final-answer">No, it is not a quadratic equation.</div>
-
-        <div class="sub-question">(iii) x(2x + 3) = x² + 1</div>
-        <div class="solution-header">Solution:</div>
-        <div class="step">LHS = 2x² + 3x</div>
-        <div class="step">2x² + 3x = x² + 1</div>
-        <div class="step">x² + 3x - 1 = 0</div>
-        <div class="step">It is of the form ax² + bx + c = 0.</div>
-        <div class="final-answer">Yes, it is a quadratic equation.</div>
-
-        <div class="sub-question">(iv) (x + 2)³ = x³ - 4</div>
-        <div class="solution-header">Solution:</div>
-        <div class="step">LHS = x³ + 6x² + 12x + 8</div>
-        <div class="step">x³ + 6x² + 12x + 8 = x³ - 4</div>
-        <div class="step">6x² + 12x + 12 = 0</div>
-        <div class="final-answer">Yes, it is a quadratic equation.</div>
-    </div>
-
-    <!-- Example 3 -->
-    <div class="content-box">
-        <div class="question">Example 3. Find the roots of the equation 2x² - 5x + 3 = 0, by factorisation.</div>
-        <div class="solution-header">Solution:</div>
-        <div class="step">Find two numbers whose product is 2 × 3 = 6 and sum is -5.</div>
-        <div class="step">Numbers are -2 and -3.</div>
-        <div class="step">2x² - 2x - 3x + 3 = 0</div>
-        <div class="step">2x(x - 1) - 3(x - 1) = 0</div>
-        <div class="step">(2x - 3)(x - 1) = 0</div>
-        <div class="step">2x - 3 = 0 or x - 1 = 0</div>
-        <div class="step">x = \\(\\frac{3}{2}\\) or x = 1</div>
-        <div class="final-answer">Roots are \\(\\frac{3}{2}\\), 1.</div>
-    </div>
-
-    <!-- Example 4 -->
-    <div class="content-box">
-        <div class="question">Example 4. Find the roots of the quadratic equation 6x² - x - 2 = 0.</div>
-        <div class="solution-header">Solution:</div>
-        <div class="step">Product = 6 × (-2) = -12. Sum = -1.</div>
-        <div class="step">Numbers are -4 and 3.</div>
-        <div class="step">6x² - 4x + 3x - 2 = 0</div>
-        <div class="step">2x(3x - 2) + 1(3x - 2) = 0</div>
-        <div class="step">(3x - 2)(2x + 1) = 0</div>
-        <div class="step">3x - 2 = 0 ⇒ x = \\(\\frac{2}{3}\\)</div>
-        <div class="step">2x + 1 = 0 ⇒ x = \\(\\frac{-1}{2}\\)</div>
-        <div class="final-answer">Roots are \\(\\frac{2}{3}\\), \\(\\frac{-1}{2}\\).</div>
-    </div>
-
-    <!-- Example 5 -->
-    <div class="content-box">
-        <div class="question">Example 5. Find the roots of the quadratic equation 3x² - 2√6x + 2 = 0.</div>
-        <div class="solution-header">Solution:</div>
-        <div class="step">3x² - 2√6x + 2 = 0</div>
-        <div class="step">Note that 3x² = (√3x)² and 2 = (√2)²</div>
-        <div class="step">Middle term -2√6x = -2(√3x)(√2)</div>
-        <div class="step">So, (√3x)² - 2(√3x)(√2) + (√2)² = 0</div>
-        <div class="step">(√3x - √2)² = 0</div>
-        <div class="step">√3x - √2 = 0</div>
-        <div class="step">√3x = √2</div>
-        <div class="step">x = \\(\\frac{√2}{√3}\\)</div>
-        <div class="step">Rationalising the denominator:</div>
-        <div class="step">x = \\(\\frac{√6}{3}\\)</div>
-        <div class="final-answer">Roots are \\(\\frac{√6}{3}\\), \\(\\frac{√6}{3}\\).</div>
-    </div>
-
-    <!-- Example 6 -->
-    <div class="content-box">
-        <div class="question">Example 6. Find the dimensions of the prayer hall whose carpet area is 300 m² and length
-            is one metre more than twice its breadth.</div>
-        <div class="solution-header">Given:</div>
-        <div class="step">Area = 300 m²</div>
-        <div class="step">Length = 2 × Breadth + 1</div>
-        <div class="solution-header">Solution:</div>
-        <div class="step">Let breadth = x meters.</div>
-        <div class="step">Length = 2x + 1 meters.</div>
-        <div class="step">Area = x(2x + 1) = 300</div>
-        <div class="step">2x² + x - 300 = 0</div>
-        <div class="step">Using quadratic formula: a = 2, b = 1, c = -300</div>
-        <div class="step">x = \\(\\frac{-1 ± √(1² - 4(2)(-300))}{2(2)}\\)</div>
-        <div class="step">x = \\(\\frac{-1 ± √(1 + 2400)}{4}\\)</div>
-        <div class="step">x = \\(\\frac{-1 ± √2401}{4}\\)</div>
-        <div class="step">x = \\(\\frac{-1 ± 49}{4}\\)</div>
-        <div class="step">Case 1: x = \\(\\frac{48}{4}\\) = 12</div>
-        <div class="step">Case 2: x = \\(\\frac{-50}{4}\\) (Negative, ignore)</div>
-        <div class="step">Breadth = 12 m.</div>
-        <div class="step">Length = 2(12) + 1 = 25 m.</div>
-        <div class="final-answer">Breadth = 12 m, Length = 25 m.</div>
-    </div>
-
-    <!-- Example 8 -->
-    <div class="content-box">
-        <div class="question">Example 8. A pole has to be erected at a point on the boundary of a circular park of
-            diameter 13 metres in such a way that the differences of its distances from two diametrically opposite fixed
-            gates A and B on the boundary is 7 metres. Is it possible to do so? If yes, at what distances from the two
-            gates should the pole be erected?</div>
-        <div class="solution-header">Solution:</div>
-        <div class="step">Let P be the position of the pole.</div>
-        <div class="step">Let distance from gate B, PB = x meters.</div>
-        <div class="step">Then distance from gate A, PA = x + 7 meters (Difference is 7).</div>
-        <div class="step">AB is diameter = 13 m.</div>
-        <div class="step">∠APB = 90° (Angle in a semicircle is a right angle).</div>
-        <div class="step">Using Pythagoras theorem in ΔAPB:</div>
-        <div class="step">PA² + PB² = AB²</div>
-        <div class="step">(x + 7)² + x² = 13²</div>
-        <div class="step">x² + 14x + 49 + x² = 169</div>
-        <div class="step">2x² + 14x - 120 = 0</div>
-        <div class="step">Divide by 2: x² + 7x - 60 = 0</div>
-        <div class="step">Discriminant D = b² - 4ac = 7² - 4(1)(-60)</div>
-        <div class="step">D = 49 + 240 = 289 > 0</div>
-        <div class="step">Since D > 0, real roots exist. Thus, it is possible.</div>
-        <div class="step">x = \\(\\frac{-7 ± √289}{2}\\)</div>
-        <div class="step">x = \\(\\frac{-7 ± 17}{2}\\)</div>
-        <div class="step">x = \\(\\frac{10}{2}\\) = 5 or x = \\(\\frac{-24}{2}\\) = -12</div>
-        <div class="step">Since distance cannot be negative, x = 5.</div>
-        <div class="step">PB = 5 m, PA = 5 + 7 = 12 m.</div>
-        <div class="final-answer">Distances are 5 m and 12 m.</div>
-    </div>
-
-</body>
-
-</html>`,
-    exercise1: `<!DOCTYPE html><html lang="en"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quadratic Equations - Exercise 4.1</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
-
-        body {
-            font-family: 'Noto Sans', sans-serif;
-            margin: 0;
-            padding: 15px;
-            background: #fff;
-            color: #333;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #6C63FF;
-            padding-bottom: 10px;
-            font-family: 'Nunito', sans-serif;
-        }
-
-        .logo {
-            color: #6C63FF;
-            font-size: 24px;
-            font-weight: 800;
-        }
-
-        .chapter-title {
-            text-align: center;
-            color: #333;
-            font-size: 20px;
-            font-weight: 700;
-            margin: 10px 0;
-            font-family: 'Noto Sans', sans-serif;
-        }
-
-        .content-box {
-            background: #f8f9fa;
-            border: 1px solid #e9ecef;
-            border-radius: 8px;
-            padding: 15px;
-            margin-bottom: 15px;
-            display: flow-root;
-            transition: transform 0.2s ease;
-        }
-
-        .question {
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: #333;
-        }
-
-        .sub-question {
-            margin-left: 15px;
-            margin-top: 15px;
-            font-weight: 600;
-            color: #444;
-            border-bottom: 1px dashed #ddd;
-            padding-bottom: 5px;
-            margin-bottom: 10px;
-        }
-
-        .step {
-            margin-bottom: 8px;
-            font-size: 1.1em;
-            color: #000;
-            line-height: 1.6;
-        }
-
-        .final-answer {
-            color: #2E7D32;
-            font-weight: 700;
-            margin-top: 15px;
-            font-size: 1.2em;
-            padding-top: 5px;
-            display: inline-block;
-        }
-
-        .solution-header {
-            color: #6C63FF;
-            font-weight: 700;
-            font-size: 1.1em;
-            margin-bottom: 5px;
-            margin-top: 10px;
-        }
-
-        .fraction {
-            display: inline-block;
-            vertical-align: middle;
-            text-align: center;
-            font-size: 0.9em;
-            margin: 0 4px;
-        }
-
-        .numerator {
-            border-bottom: 1px solid #333;
-            display: block;
-            padding: 0 2px;
-        }
-
-        .denominator {
-            display: block;
-            padding: 0 2px;
-        }
-
-        .clearfix::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
-
-        @media (max-width: 600px) {
-            img {
-                float: none;
-                display: block;
-                margin: 10px auto;
-                max-width: 100%;
-            }
-        }
-    </style>
-
-    <style>
-        img {
-            background: #FFFFFF;
-            padding: 10px;
-            border-radius: 10px;
-            width: 100%;
-            max-width: 320px;
-            height: 180px;
-            object-fit: contain;
-            display: block;
-            margin: 15px auto;
-            border: 1px solid #e9ecef;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-        }
-    </style>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    renderMathInElement(document.body, {
-      delimiters: [
-        {left: '\\\\(', right: '\\\\)', display: false},
-        {left: '\\\\[', right: '\\\\]', display: true}
-      ]
-    });
-  });
-</script>
-
-<style>
-  body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
-  .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #42A5F5 !important; color: #fff !important; }
-  h1, h2, h3, h4, h5, h6 { color: #42A5F5 !important; }
-  .question { color: #42A5F5 !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-question { color: #42A5F5 !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
-  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
-  .formula { color: #4CAF50 !important; }
-  .true-text { color: #4CAF50 !important; }
-  .false-text { color: #F44336 !important; }
-  table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
-  .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
-  img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #42A5F5 !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
-  * { font-family: 'Noto Sans', sans-serif !important; }
-  
-  /* Make sure every sub part of the question has the question color */
-  strong[style*="color: #FF6B6B"] { color: #42A5F5 !important; }
-  strong[style*="color: #ff6b6b"] { color: #42A5F5 !important; }
-
-  .question { font-size: 0.95em !important; }
-  .sub-question { font-size: 0.9em !important; }
-  .step { font-size: 0.9em !important; }
-  .final-answer { font-size: 0.95em !important; }
-</style>
-</head>
-
-<body>
-<!-- Question 1 -->
-    <div class="content-box">
-        <div class="question">1. Check whether the following are quadratic equations:</div>
-
-        <div class="sub-question">(i) (x + 1)² = 2(x – 3)</div>
-        <div class="solution-header">Solution:</div>
-        <div class="step">Expand LHS: (x + 1)² = x² + 2x + 1</div>
-        <div class="step">Expand RHS: 2(x - 3) = 2x - 6</div>
-        <div class="step">Equating both sides:</div>
-        <div class="step">x² + 2x + 1 = 2x - 6</div>
-        <div class="step">Bring all terms to LHS:</div>
-        <div class="step">x² + 2x - 2x + 1 + 6 = 0</div>
-        <div class="step">x² + 7 = 0</div>
-        <div class="step">It is of the form ax² + bx + c = 0 (where b = 0).</div>
-        <div class="final-answer">Yes, it is a quadratic equation.</div>
-
-        <div class="sub-question">(ii) x² – 2x = (–2) (3 – x)</div>
-        <div class="solution-header">Solution:</div>
-        <div class="step">Simplify RHS: (-2)(3 - x) = -6 + 2x</div>
-        <div class="step">Equation becomes:</div>
-        <div class="step">x² - 2x = -6 + 2x</div>
-        <div class="step">x² - 2x - 2x + 6 = 0</div>
-        <div class="step">x² - 4x + 6 = 0</div>
-        <div class="step">It is of the form ax² + bx + c = 0.</div>
-        <div class="final-answer">Yes, it is a quadratic equation.</div>
-
-        <div class="sub-question">(iii) (x – 2)(x + 1) = (x – 1)(x + 3)</div>
-        <div class="solution-header">Solution:</div>
-        <div class="step">Expand LHS: x(x + 1) - 2(x + 1)</div>
-        <div class="step">= x² + x - 2x - 2</div>
-        <div class="step">= x² - x - 2</div>
-        <div class="step">Expand RHS: x(x + 3) - 1(x + 3)</div>
-        <div class="step">= x² + 3x - x - 3</div>
-        <div class="step">= x² + 2x - 3</div>
-        <div class="step">Equating LHS and RHS:</div>
-        <div class="step">x² - x - 2 = x² + 2x - 3</div>
-        <div class="step">Subtract x² from both sides:</div>
-        <div class="step">-x - 2 = 2x - 3</div>
-        <div class="step">-x - 2x - 2 + 3 = 0</div>
-        <div class="step">-3x + 1 = 0</div>
-        <div class="step">Degree is 1.</div>
-        <div class="final-answer">No, it is not a quadratic equation.</div>
-
-        <div class="sub-question">(iv) (x – 3)(2x + 1) = x(x + 5)</div>
-        <div class="solution-header">Solution:</div>
-        <div class="step">Expand LHS: x(2x + 1) - 3(2x + 1)</div>
-        <div class="step">= 2x² + x - 6x - 3</div>
-        <div class="step">= 2x² - 5x - 3</div>
-        <div class="step">Expand RHS: x² + 5x</div>
-        <div class="step">Equating both sides:</div>
-        <div class="step">2x² - 5x - 3 = x² + 5x</div>
-        <div class="step">2x² - x² - 5x - 5x - 3 = 0</div>
-        <div class="step">x² - 10x - 3 = 0</div>
-        <div class="step">It is of the form ax² + bx + c = 0.</div>
-        <div class="final-answer">Yes, it is a quadratic equation.</div>
-
-        <div class="sub-question">(v) (2x – 1)(x – 3) = (x + 5)(x – 1)</div>
-        <div class="solution-header">Solution:</div>
-        <div class="step">Expand LHS: 2x(x - 3) - 1(x - 3)</div>
-        <div class="step">= 2x² - 6x - x + 3</div>
-        <div class="step">= 2x² - 7x + 3</div>
-        <div class="step">Expand RHS: x(x - 1) + 5(x - 1)</div>
-        <div class="step">= x² - x + 5x - 5</div>
-        <div class="step">= x² + 4x - 5</div>
-        <div class="step">Equating LHS and RHS:</div>
-        <div class="step">2x² - 7x + 3 = x² + 4x - 5</div>
-        <div class="step">2x² - x² - 7x - 4x + 3 + 5 = 0</div>
-        <div class="step">x² - 11x + 8 = 0</div>
-        <div class="final-answer">Yes, it is a quadratic equation.</div>
-
-        <div class="sub-question">(vi) x² + 3x + 1 = (x – 2)²</div>
-        <div class="solution-header">Solution:</div>
-        <div class="step">Expand RHS: (x - 2)² = x² - 4x + 4</div>
-        <div class="step">Equation: x² + 3x + 1 = x² - 4x + 4</div>
-        <div class="step">Cancel x² from both sides:</div>
-        <div class="step">3x + 1 = -4x + 4</div>
-        <div class="step">3x + 4x + 1 - 4 = 0</div>
-        <div class="step">7x - 3 = 0</div>
-        <div class="step">Degree is 1.</div>
-        <div class="final-answer">No, it is not a quadratic equation.</div>
-
-        <div class="sub-question">(vii) (x + 2)³ = 2x(x² – 1)</div>
-        <div class="solution-header">Solution:</div>
-        <div class="step">Using identity (a + b)³ = a³ + b³ + 3ab(a + b)</div>
-        <div class="step">LHS = x³ + 8 + 3(x)(2)(x + 2)</div>
-        <div class="step">= x³ + 8 + 6x(x + 2)</div>
-        <div class="step">= x³ + 6x² + 12x + 8</div>
-        <div class="step">RHS = 2x(x² - 1) = 2x³ - 2x</div>
-        <div class="step">Equating LHS and RHS:</div>
-        <div class="step">x³ + 6x² + 12x + 8 = 2x³ - 2x</div>
-        <div class="step">Rearranging terms:</div>
-        <div class="step">2x³ - x³ - 2x - 12x - 6x² - 8 = 0</div>
-        <div class="step">x³ - 6x² - 14x - 8 = 0</div>
-        <div class="step">Degree is 3.</div>
-        <div class="final-answer">No, it is not a quadratic equation.</div>
-
-        <div class="sub-question">(viii) x³ – 4x² – x + 1 = (x – 2)³</div>
-        <div class="solution-header">Solution:</div>
-        <div class="step">Expand RHS using (a - b)³ = a³ - b³ - 3ab(a - b)</div>
-        <div class="step">RHS = x³ - 8 - 3(x)(2)(x - 2)</div>
-        <div class="step">= x³ - 8 - 6x(x - 2)</div>
-        <div class="step">= x³ - 6x² + 12x - 8</div>
-        <div class="step">Equation: x³ - 4x² - x + 1 = x³ - 6x² + 12x - 8</div>
-        <div class="step">Cancel x³ from both sides:</div>
-        <div class="step">-4x² - x + 1 = -6x² + 12x - 8</div>
-        <div class="step">Bring RHS terms to LHS:</div>
-        <div class="step">6x² - 4x² - x - 12x + 1 + 8 = 0</div>
-        <div class="step">2x² - 13x + 9 = 0</div>
-        <div class="final-answer">Yes, it is a quadratic equation.</div>
-    </div>
-
-    <!-- Question 2 -->
-    <div class="content-box">
-        <div class="question">2. Represent the following situations in the form of quadratic equations:</div>
-
-        <div class="sub-question">(i) The area of a rectangular plot is 528 m². The length of the plot (in metres) is
-            one more than twice its breadth. We need to find the length and breadth of the plot.</div>
-        <div class="solution-header">Given:</div>
-        <div class="step">Area of plot = 528 m²</div>
-        <div class="step">Length is 1 more than twice breadth.</div>
-        <div class="solution-header">To Find:</div>
-        <div class="step">Quadratic equation satisfying the condition.</div>
-        <div class="solution-header">Solution:</div>
-        <div class="step">Let breadth of the plot = x meters</div>
-        <div class="step">Then, Length = 2x + 1 meters</div>
-        <div class="step">Area = Length × Breadth</div>
-        <div class="step">528 = (2x + 1)(x)</div>
-        <div class="step">528 = 2x² + x</div>
-        <div class="step">Rearranging terms:</div>
-        <div class="final-answer">2x² + x - 528 = 0</div>
-
-        <div class="sub-question">(ii) The product of two consecutive positive integers is 306. We need to find the
-            integers.</div>
-        <div class="solution-header">Given:</div>
-        <div class="step">Product of two consecutive positive integers = 306</div>
-        <div class="solution-header">To Find:</div>
-        <div class="step">Quadratic representation.</div>
-        <div class="solution-header">Solution:</div>
-        <div class="step">Let the first integer be x</div>
-        <div class="step">Then the next consecutive integer is x + 1</div>
-        <div class="step">Product = x(x + 1)</div>
-        <div class="step">According to question:</div>
-        <div class="step">x(x + 1) = 306</div>
-        <div class="step">x² + x = 306</div>
-        <div class="final-answer">x² + x - 306 = 0</div>
-
-        <div class="sub-question">(iii) Rohan’s mother is 26 years older than him. The product of their ages (in years)
-            3 years from now will be 360. We would like to find Rohan’s present age.</div>
-        <div class="solution-header">Given:</div>
-        <div class="step">Mother is 26 years older than Rohan.</div>
-        <div class="step">Product of ages 3 years hence = 360.</div>
-        <div class="solution-header">Solution:</div>
-        <div class="step">Let Rohan's present age = x years</div>
-        <div class="step">Mother's present age = (x + 26) years</div>
-        <div class="step">After 3 years:</div>
-        <div class="step">Rohan's age = x + 3</div>
-        <div class="step">Mother's age = (x + 26) + 3 = x + 29</div>
-        <div class="step">Product = (x + 3)(x + 29)</div>
-        <div class="step">According to condition:</div>
-        <div class="step">(x + 3)(x + 29) = 360</div>
-        <div class="step">x(x + 29) + 3(x + 29) = 360</div>
-        <div class="step">x² + 29x + 3x + 87 = 360</div>
-        <div class="step">x² + 32x + 87 - 360 = 0</div>
-        <div class="final-answer">x² + 32x - 273 = 0</div>
-
-        <div class="sub-question">(iv) A train travels a distance of 480 km at a uniform speed. If the speed had been 8
-            \\(\\frac{km}{h}\\) less, then it would have taken 3 hours more to cover the same distance. We need to find the speed of
-            the train.</div>
-        <div class="solution-header">Given:</div>
-        <div class="step">Distance = 480 km</div>
-        <div class="step">If speed is 8 \\(\\frac{km}{h}\\) less, time increases by 3 hours.</div>
-        <div class="solution-header">Solution:</div>
-        <div class="step">Let uniform speed of train = x \\(\\frac{km}{h}\\)</div>
-        <div class="step">Time taken (t₁) = \\(\\frac{Distance}{Speed}\\) = \\(\\frac{480}{x}\\) hours</div>
-        <div class="step">New speed = (x - 8) \\(\\frac{km}{h}\\)</div>
-        <div class="step">New Time (t₂) = \\(\\frac{480}{x - 8}\\) hours</div>
-        <div class="step">Difference in time is 3 hours:</div>
-        <div class="step">t₂ - t₁ = 3</div>
-        <div class="step">\\(\\frac{480}{x -
-                    8}\\) - \\(\\frac{480}{x}\\) = 3</div>
-        <div class="step">Take 480 common:</div>
-        <div class="step">480 [\\(\\frac{1}{x -
-                    8}\\) - \\(\\frac{1}{x}\\)] = 3</div>
-        <div class="step">Simplify bracket terms:</div>
-        <div class="step">480 [\\(\\frac{x - (x - 8)}{x(x - 8)}\\)] = 3</div>
-        <div class="step">480 [\\(\\frac{8}{x² -
-                    8x}\\)] = 3</div>
-        <div class="step">Divide both sides by 3:</div>
-        <div class="step">160 [\\(\\frac{8}{x² -
-                    8x}\\)] = 1</div>
-        <div class="step">1280 = x² - 8x</div>
-        <div class="step">Rearranging terms:</div>
-        <div class="final-answer">x² - 8x - 1280 = 0</div>
-    </div>
-
-
-
-</body></html>`,
-    exercise2: `<!DOCTYPE html><html lang="en"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quadratic Equations - Exercise 4.2</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
-
-        body {
-            font-family: 'Noto Sans', sans-serif;
-            margin: 0;
-            padding: 15px;
-            background: #fff;
-            color: #333;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #6C63FF;
-            padding-bottom: 10px;
-            font-family: 'Nunito', sans-serif;
-        }
-
-        .logo {
-            color: #6C63FF;
-            font-size: 24px;
-            font-weight: 800;
-        }
-
-        .chapter-title {
-            text-align: center;
-            color: #333;
-            font-size: 20px;
-            font-weight: 700;
-            margin: 10px 0;
-            font-family: 'Noto Sans', sans-serif;
-        }
-
-        .content-box {
-            background: #f8f9fa;
-            border: 1px solid #e9ecef;
-            border-radius: 8px;
-            padding: 15px;
-            margin-bottom: 15px;
-            display: flow-root;
-            transition: transform 0.2s ease;
-        }
-
-        .question {
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: #333;
-        }
-
-        .sub-question {
-            margin-left: 15px;
-            margin-top: 15px;
-            font-weight: 600;
-            color: #444;
-            border-bottom: 1px dashed #ddd;
-            padding-bottom: 5px;
-            margin-bottom: 10px;
-        }
-
-        .step {
-            margin-bottom: 8px;
-            font-size: 1.1em;
-            color: #000;
-            line-height: 1.6;
-        }
-
-        .final-answer {
-            color: #2E7D32;
-            font-weight: 700;
-            margin-top: 15px;
-            font-size: 1.2em;
-            padding-top: 5px;
-            display: inline-block;
-        }
-
-        .solution-header {
-            color: #6C63FF;
-            font-weight: 700;
-            font-size: 1.1em;
-            margin-bottom: 5px;
-            margin-top: 10px;
-        }
-
-        .fraction {
-            display: inline-block;
-            vertical-align: middle;
-            text-align: center;
-            font-size: 0.9em;
-            margin: 0 4px;
-        }
-
-        .numerator {
-            border-bottom: 1px solid #333;
-            display: block;
-            padding: 0 2px;
-        }
-
-        .denominator {
-            display: block;
-            padding: 0 2px;
-        }
-
-        .clearfix::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
-
-        @media (max-width: 600px) {
-            img {
-                float: none;
-                display: block;
-                margin: 10px auto;
-                max-width: 100%;
-            }
-        }
-    </style>
-
-    <style>
-        img {
-            background: #FFFFFF;
-            padding: 10px;
-            border-radius: 10px;
-            width: 100%;
-            max-width: 320px;
-            height: 180px;
-            object-fit: contain;
-            display: block;
-            margin: 15px auto;
-            border: 1px solid #e9ecef;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-        }
-    </style>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    renderMathInElement(document.body, {
-      delimiters: [
-        {left: '\\\\(', right: '\\\\)', display: false},
-        {left: '\\\\[', right: '\\\\]', display: true}
-      ]
-    });
-  });
-</script>
-
-<style>
-  body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
-  .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #42A5F5 !important; color: #fff !important; }
-  h1, h2, h3, h4, h5, h6 { color: #42A5F5 !important; }
-  .question { color: #42A5F5 !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-question { color: #42A5F5 !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
-  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
-  .formula { color: #4CAF50 !important; }
-  .true-text { color: #4CAF50 !important; }
-  .false-text { color: #F44336 !important; }
-  table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
-  .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
-  img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #42A5F5 !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
-  * { font-family: 'Noto Sans', sans-serif !important; }
-  
-  /* Make sure every sub part of the question has the question color */
-  strong[style*="color: #FF6B6B"] { color: #42A5F5 !important; }
-  strong[style*="color: #ff6b6b"] { color: #42A5F5 !important; }
-
-  .question { font-size: 0.95em !important; }
-  .sub-question { font-size: 0.9em !important; }
-  .step { font-size: 0.9em !important; }
-  .final-answer { font-size: 0.95em !important; }
-</style>
-</head>
-
-<body>
-<div class="content-box">
-        <div class="question">1. Find the roots of the following quadratic equations by factorisation:</div>
-
-        <div class="sub-question">(i) x² – 3x – 10 = 0</div>
-        <div class="solution-header">Solution:</div>
-        <div class="step">Split the middle term -3x as -5x + 2x:</div>
-        <div class="step">x² - 5x + 2x - 10 = 0</div>
-        <div class="step">Take common factors:</div>
-        <div class="step">x(x - 5) + 2(x - 5) = 0</div>
-        <div class="step">(x - 5)(x + 2) = 0</div>
-        <div class="step">Either x - 5 = 0 or x + 2 = 0</div>
-        <div class="final-answer">Roots are 5 and -2.</div>
-
-        <div class="sub-question">(ii) 2x² + x – 6 = 0</div>
-        <div class="solution-header">Solution:</div>
-        <div class="step">Split the middle term x as 4x - 3x:</div>
-        <div class="step">2x² + 4x - 3x - 6 = 0</div>
-        <div class="step">2x(x + 2) - 3(x + 2) = 0</div>
-        <div class="step">(2x - 3)(x + 2) = 0</div>
-        <div class="step">Either 2x - 3 = 0 or x + 2 = 0</div>
-        <div class="step">2x = 3 ⇒ x = \\(\\frac{3}{2}\\)</div>
-        <div class="step">x = -2</div>
-        <div class="final-answer">Roots are \\(\\frac{3}{2}\\) and -2.</div>
-
-        <div class="sub-question">(iii) √2x² + 7x + 5√2 = 0</div>
-        <div class="solution-header">Solution:</div>
-        <div class="step">Split the middle term 7x as 2x + 5x:</div>
-        <div class="step">√2x² + 2x + 5x + 5√2 = 0</div>
-        <div class="step">√2x(x + √2) + 5(x + √2) = 0</div>
-        <div class="step">(√2x + 5)(x + √2) = 0</div>
-        <div class="step">Either √2x + 5 = 0 or x + √2 = 0</div>
-        <div class="step">√2x = -5 ⇒ x = \\(\\frac{-5}{√2}\\)</div>
-        <div class="step">x = -√2</div>
-        <div class="final-answer">Roots are \\(\\frac{-5}{√2}\\) and -√2.</div>
-
-        <div class="sub-question">(iv) 2x² – x + \\(\\frac{1}{8}\\) = 0</div>
-        <div class="solution-header">Solution:</div>
-        <div class="step">Multiply entire equation by 8 to remove fraction:</div>
-        <div class="step">16x² - 8x + 1 = 0</div>
-        <div class="step">Split middle term -8x as -4x - 4x:</div>
-        <div class="step">16x² - 4x - 4x + 1 = 0</div>
-        <div class="step">4x(4x - 1) - 1(4x - 1) = 0</div>
-        <div class="step">(4x - 1)(4x - 1) = 0</div>
-        <div class="step">(4x - 1)² = 0</div>
-        <div class="step">4x = 1 ⇒ x = \\(\\frac{1}{4}\\)</div>
-        <div class="final-answer">Roots are \\(\\frac{1}{4}\\), \\(\\frac{1}{4}\\).</div>
-
-        <div class="sub-question">(v) 100x² – 20x + 1 = 0</div>
-        <div class="solution-header">Solution:</div>
-        <div class="step">Split middle term -20x as -10x - 10x:</div>
-        <div class="step">100x² - 10x - 10x + 1 = 0</div>
-        <div class="step">10x(10x - 1) - 1(10x - 1) = 0</div>
-        <div class="step">(10x - 1)(10x - 1) = 0</div>
-        <div class="step">(10x - 1)² = 0</div>
-        <div class="step">10x = 1 ⇒ x = \\(\\frac{1}{10}\\)</div>
-        <div class="final-answer">Roots are \\(\\frac{1}{10}\\), \\(\\frac{1}{10}\\).</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">3. Find two numbers whose sum is 27 and product is 182.</div>
-        <div class="solution-header">Given:</div>
-        <div class="step">Sum of numbers = 27</div>
-        <div class="step">Product of numbers = 182</div>
-        <div class="solution-header">To Find:</div>
-        <div class="step">The two numbers.</div>
-        <div class="solution-header">Solution:</div>
-        <div class="step">Let first number = x</div>
-        <div class="step">Then second number = 27 - x</div>
-        <div class="step">Checking product condition:</div>
-        <div class="step">x(27 - x) = 182</div>
-        <div class="step">27x - x² = 182</div>
-        <div class="step">Rearranging to form ax² + bx + c = 0:</div>
-        <div class="step">x² - 27x + 182 = 0</div>
-        <div class="step">Split middle term -27x as -13x - 14x:</div>
-        <div class="step">x² - 13x - 14x + 182 = 0</div>
-        <div class="step">x(x - 13) - 14(x - 13) = 0</div>
-        <div class="step">(x - 13)(x - 14) = 0</div>
-        <div class="step">x = 13 or x = 14</div>
-        <div class="step">If x = 13, second number is 14.</div>
-        <div class="step">If x = 14, second number is 13.</div>
-        <div class="final-answer">Numbers are 13 and 14.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">4. Find two consecutive positive integers, sum of whose squares is 365.</div>
-        <div class="solution-header">Given:</div>
-        <div class="step">Integers are consecutive positive integers.</div>
-        <div class="step">Sum of squares = 365.</div>
-        <div class="solution-header">Solution:</div>
-        <div class="step">Let integers be x and x + 1</div>
-        <div class="step">x² + (x + 1)² = 365</div>
-        <div class="step">x² + (x² + 2x + 1) = 365</div>
-        <div class="step">2x² + 2x + 1 - 365 = 0</div>
-        <div class="step">2x² + 2x - 364 = 0</div>
-        <div class="step">Divide by 2:</div>
-        <div class="step">x² + x - 182 = 0</div>
-        <div class="step">Split middle term x as 14x - 13x:</div>
-        <div class="step">x² + 14x - 13x - 182 = 0</div>
-        <div class="step">x(x + 14) - 13(x + 14) = 0</div>
-        <div class="step">(x + 14)(x - 13) = 0</div>
-        <div class="step">x = -14 or x = 13</div>
-        <div class="step">Since integers are positive, x = 13.</div>
-        <div class="step">Next integer = 13 + 1 = 14.</div>
-        <div class="final-answer">Integers are 13 and 14.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">5. The altitude of a right triangle is 7 cm less than its base. If the hypotenuse is 13
-            cm, find the other two sides.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNTAgMjYwIiB3aWR0aD0iMzUwIiBoZWlnaHQ9IjI2MCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxwYXRoIGQ9Ik0gNTAgNTAgTCA1MCAyMDAgTCAyMDAgMjAwIFoiIGZpbGw9IiNmZmY5YzQiIHN0cm9rZT0iI2ZmZjljNCIgc3Ryb2tlLXdpZHRoPSIyIi8+PHBhdGggZD0iTSA1MCAxODAgTCA3MCAxODAgTCA3MCAyMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZjljNCIvPjx0ZXh0IHg9IjEyNSIgeT0iMjIwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9IiNmZmY5YzQiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkJhc2UgPSB4IGNtPC90ZXh0Pjx0ZXh0IHg9IjMwIiB5PSIxMjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iI2ZmZjljNCIgdGV4dC1hbmNob3I9ImVuZCI+QWx0ID0geCAtIDc8L3RleHQ+PHRleHQgeD0iMTM1IiB5PSIxMTUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iI2ZmZjljNCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+SHlwb3RlbnVzZSA9IDEzIGNtPC90ZXh0PgoKCgo8L3N2Zz4=" alt="Triangle Altitude">
-        <div class="solution-header">Given:</div>
-        <div class="step">Hypotenuse = 13 cm</div>
-        <div class="step">Altitude = Base - 7 cm</div>
-        <div class="solution-header">To Find:</div>
-        <div class="step">Base and Altitude.</div>
-        <div class="solution-header">Solution:</div>
-        <div class="step">Let Base = x cm</div>
-        <div class="step">Then Altitude = (x - 7) cm</div>
-        <div class="step">By Pythagoras Theorem:</div>
-        <div class="step">Base² + Altitude² = Hypotenuse²</div>
-        <div class="step">x² + (x - 7)² = 13²</div>
-        <div class="step">x² + (x² - 14x + 49) = 169</div>
-        <div class="step">2x² - 14x + 49 - 169 = 0</div>
-        <div class="step">2x² - 14x - 120 = 0</div>
-        <div class="step">Divide by 2:</div>
-        <div class="step">x² - 7x - 60 = 0</div>
-        <div class="step">Split middle term -7x as -12x + 5x:</div>
-        <div class="step">x² - 12x + 5x - 60 = 0</div>
-        <div class="step">x(x - 12) + 5(x - 12) = 0</div>
-        <div class="step">(x - 12)(x + 5) = 0</div>
-        <div class="step">x = 12 or x = -5</div>
-        <div class="step">Since length cannot be negative, x = 12.</div>
-        <div class="step">Base = 12 cm.</div>
-        <div class="step">Altitude = 12 - 7 = 5 cm.</div>
-        <div class="final-answer">Sides are 12 cm and 5 cm.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">6. A cottage industry produces a certain number of pottery articles in a day... the cost
-            of production of each article (in rupees) was 3 more than twice the number of articles produced... total
-            cost of production was ₹ 90... find the number of articles produced and the cost of each article.</div>
-        <div class="solution-header">Solution:</div>
-        <div class="step">Let number of articles produced = x</div>
-        <div class="step">Cost of each article = 2x + 3</div>
-        <div class="step">Total cost = (Number of articles) × (Cost per article)</div>
-        <div class="step">x(2x + 3) = 90</div>
-        <div class="step">2x² + 3x - 90 = 0</div>
-        <div class="step">Split middle term 3x as 15x - 12x:</div>
-        <div class="step">2x² - 12x + 15x - 90 = 0</div>
-        <div class="step">2x(x - 6) + 15(x - 6) = 0</div>
-        <div class="step">(2x + 15)(x - 6) = 0</div>
-        <div class="step">x = 6 or x = \\(\\frac{-15}{2}\\)</div>
-        <div class="step">Number of articles cannot be \\(\\frac{fractional}{negative}\\), so x = 6.</div>
-        <div class="step">Cost per article = 2(6) + 3 = 15.</div>
-        <div class="final-answer">Number of articles = 6, Cost per article = ₹ 15.</div>
-    </div>
-
-
-
-</body></html>`,
-    exercise3: `<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quadratic Equations - Exercise 4.3</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
-
-        body {
-            font-family: 'Noto Sans', sans-serif;
-            margin: 0;
-            padding: 15px;
-            background: #fff;
-            color: #333;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #6C63FF;
-            padding-bottom: 10px;
-            font-family: 'Nunito', sans-serif;
-        }
-
-        .logo {
-            color: #6C63FF;
-            font-size: 24px;
-            font-weight: 800;
-        }
-
-        .chapter-title {
-            text-align: center;
-            color: #333;
-            font-size: 20px;
-            font-weight: 700;
-            margin: 10px 0;
-            font-family: 'Noto Sans', sans-serif;
-        }
-
-        .content-box {
-            background: #f8f9fa;
-            border: 1px solid #e9ecef;
-            border-radius: 8px;
-            padding: 15px;
-            margin-bottom: 15px;
-            display: flow-root;
-            transition: transform 0.2s ease;
-        }
-
-        .question {
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: #333;
-        }
-
-        .sub-question {
-            margin-left: 15px;
-            margin-top: 15px;
-            font-weight: 600;
-            color: #444;
-            border-bottom: 1px dashed #ddd;
-            padding-bottom: 5px;
-            margin-bottom: 10px;
-        }
-
-        .step {
-            margin-bottom: 8px;
-            font-size: 1.1em;
-            color: #000;
-            line-height: 1.6;
-        }
-
-        .final-answer {
-            color: #2E7D32;
-            font-weight: 700;
-            margin-top: 15px;
-            font-size: 1.2em;
-            padding-top: 5px;
-            display: inline-block;
-        }
-
-        .fraction {
-            display: inline-block;
-            vertical-align: middle;
-            text-align: center;
-            font-size: 0.9em;
-            margin: 0 4px;
-        }
-
-        .numerator {
-            border-bottom: 1px solid #333;
-            display: block;
-            padding: 0 2px;
-        }
-
-        .denominator {
-            display: block;
-            padding: 0 2px;
-        }
-
-        .solution-header {
-            color: #6C63FF;
-            font-weight: 700;
-            font-size: 1.1em;
-            margin-bottom: 5px;
-            margin-top: 10px;
-        }
-
-        .clearfix::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
-
-        @media (max-width: 600px) {
-            img {
-                float: none;
-                display: block;
-                margin: 10px auto;
-                max-width: 100%;
-            }
-        }
-    </style>
-
-    <style>
-        img {
-            background: #FFFFFF;
-            padding: 10px;
-            border-radius: 10px;
-            width: 100%;
-            max-width: 320px;
-            height: 180px;
-            object-fit: contain;
-            display: block;
-            margin: 15px auto;
-            border: 1px solid #e9ecef;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-        }
-    </style>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    renderMathInElement(document.body, {
-      delimiters: [
-        {left: '\\\\(', right: '\\\\)', display: false},
-        {left: '\\\\[', right: '\\\\]', display: true}
-      ]
-    });
-  });
-</script>
-
-<style>
-  body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
-  .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #42A5F5 !important; color: #fff !important; }
-  h1, h2, h3, h4, h5, h6 { color: #42A5F5 !important; }
-  .question { color: #42A5F5 !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-question { color: #42A5F5 !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
-  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
-  .formula { color: #4CAF50 !important; }
-  .true-text { color: #4CAF50 !important; }
-  .false-text { color: #F44336 !important; }
-  table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
-  .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
-  img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #42A5F5 !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
-  * { font-family: 'Noto Sans', sans-serif !important; }
-  
-  /* Make sure every sub part of the question has the question color */
-  strong[style*="color: #FF6B6B"] { color: #42A5F5 !important; }
-  strong[style*="color: #ff6b6b"] { color: #42A5F5 !important; }
-
-  .question { font-size: 0.95em !important; }
-  .sub-question { font-size: 0.9em !important; }
-  .step { font-size: 0.9em !important; }
-  .final-answer { font-size: 0.95em !important; }
-</style>
-</head>
-
-<body>
-<!-- Question 1 -->
-    <div class="content-box">
-        <div class="question">1. Find the nature of the roots of the following quadratic equations. If the real roots
-            exist, find them:</div>
-
-        <div class="sub-question">(i) 2x² – 3x + 5 = 0</div>
-        <div class="solution-header">Solution:</div>
-        <div class="step">Determining coefficients: a = 2, b = -3, c = 5</div>
-        <div class="step">Discriminant D = b² - 4ac</div>
-        <div class="step">D = (-3)² - 4(2)(5)</div>
-        <div class="step">D = 9 - 40</div>
-        <div class="step">D = -31</div>
-        <div class="step">Since D < 0, no real roots exist.</div>
-                <div class="final-answer">No real roots.</div>
-
-                <div class="sub-question">(ii) 3x² – 4√3x + 4 = 0</div>
-                <div class="solution-header">Solution:</div>
-                <div class="step">Determining coefficients: a = 3, b = -4√3, c = 4</div>
-                <div class="step">Discriminant D = b² - 4ac</div>
-                <div class="step">D = (-4√3)² - 4(3)(4)</div>
-                <div class="step">D = 16(3) - 48</div>
-                <div class="step">D = 48 - 48 = 0</div>
-                <div class="step">Since D = 0, two equal, real roots exist.</div>
-                <div class="step">Roots are given by x = \\(\\frac{-b}{2a}\\)</div>
-                <div class="step">x = \\(\\frac{-(-4√3)}{2(3)}\\)</div>
-                <div class="step">x = \\(\\frac{4√3}{6}\\)</div>
-                <div class="step">Simplifying: x = \\(\\frac{2√3}{3}\\)</div>
-                <div class="final-answer">Roots are \\(\\frac{2√3}{3}\\), \\(\\frac{2√3}{3}\\).</div>
-
-                <div class="sub-question">(iii) 2x² – 6x + 3 = 0</div>
-                <div class="solution-header">Solution:</div>
-                <div class="step">Determining coefficients: a = 2, b = -6, c = 3</div>
-                <div class="step">Discriminant D = b² - 4ac</div>
-                <div class="step">D = (-6)² - 4(2)(3)</div>
-                <div class="step">D = 36 - 24 = 12</div>
-                <div class="step">Since D > 0, two distinct real roots exist.</div>
-                <div class="step">Roots x = \\(\\frac{-b ± √D}{2a}\\)</div>
-                <div class="step">x = \\(\\frac{-(-6) ± √12}{2(2)}\\)</div>
-                <div class="step">x = \\(\\frac{6 ± 2√3}{4}\\)</div>
-                <div class="step">Divide numerator and denominator by 2:</div>
-                <div class="step">x = \\(\\frac{3 ± √3}{2}\\)</div>
-                <div class="final-answer">Roots are \\(\\frac{3 + √3}{2}\\) and \\(\\frac{3 -
-                            √3}{2}\\).</div>
-        </div>
-
-        <!-- Question 2 -->
-        <div class="content-box">
-            <div class="question">2. Find the values of k for each of the following quadratic equations, so that they
-                have two equal roots.</div>
-
-            <div class="sub-question">(i) 2x² + kx + 3 = 0</div>
-            <div class="solution-header">Solution:</div>
-            <div class="step">For equal roots, Discriminant D must be 0.</div>
-            <div class="step">b² - 4ac = 0</div>
-            <div class="step">Here, a = 2, b = k, c = 3</div>
-            <div class="step">k² - 4(2)(3) = 0</div>
-            <div class="step">k² - 24 = 0</div>
-            <div class="step">k² = 24</div>
-            <div class="step">k = ±√24</div>
-            <div class="step">k = ±2√6</div>
-            <div class="final-answer">k = ±2√6</div>
-
-            <div class="sub-question">(ii) kx(x – 2) + 6 = 0</div>
-            <div class="solution-header">Solution:</div>
-            <div class="step">Simplifying the equation: kx² - 2kx + 6 = 0</div>
-            <div class="step">For equal roots, D = 0</div>
-            <div class="step">Here a = k, b = -2k, c = 6</div>
-            <div class="step">(-2k)² - 4(k)(6) = 0</div>
-            <div class="step">4k² - 24k = 0</div>
-            <div class="step">Take 4k common: 4k(k - 6) = 0</div>
-            <div class="step">Either 4k = 0 ⇒ k = 0</div>
-            <div class="step">Or k - 6 = 0 ⇒ k = 6</div>
-            <div class="step">However, if k = 0, the equation becomes 6 = 0 which is false and not quadratic.</div>
-            <div class="step">Therefore, k ≠ 0.</div>
-            <div class="final-answer">k = 6</div>
-        </div>
-
-        <!-- Question 3 -->
-        <div class="content-box">
-            <div class="question">3. Is it possible to design a rectangular mango grove whose length is twice its
-                breadth, and the area is 800 m²? If so, find its length and breadth.</div>
-            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNTAgMjYwIiB3aWR0aD0iMzUwIiBoZWlnaHQ9IjI2MCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjQwIiB5PSI4MCIgd2lkdGg9IjI0MCIgaGVpZ2h0PSIxMjAiIGZpbGw9IiNlMGY3ZmEiIHN0cm9rZT0iZ3JlZW4iIHN0cm9rZS13aWR0aD0iMiIvPjx0ZXh0IHg9IjE2MCIgeT0iMjI1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9ImdyZWVuIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5MZW5ndGggPSAyeDwvdGV4dD48dGV4dCB4PSIyOTAiIHk9IjE1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJncmVlbiIgdGV4dC1hbmNob3I9InN0YXJ0Ij5CID0geDwvdGV4dD48dGV4dCB4PSIxNjAiIHk9IjE0MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmaWxsPSJncmVlbiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QXJlYSA9IDgwMCBtwrI8L3RleHQ+PHRleHQgeD0iMTYwIiB5PSI0MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmaWxsPSJncmVlbiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+TWFuZ28gR3JvdmU8L3RleHQ+CgoKCjwvc3ZnPg==" alt="Mango Grove">
-            <div class="solution-header">Given:</div>
-            <div class="step">Length (l) = 2 × Breadth (b)</div>
-            <div class="step">Area = 800 m²</div>
-            <div class="solution-header">To Find:</div>
-            <div class="step">Possibility of design, and dimensions if possible.</div>
-            <div class="solution-header">Solution:</div>
-            <div class="step">Let breadth = x meters.</div>
-            <div class="step">Then length = 2x meters.</div>
-            <div class="step">Area = Length × Breadth</div>
-            <div class="step">2x × x = 800</div>
-            <div class="step">2x² = 800</div>
-            <div class="step">Divide by 2: x² = 400</div>
-            <div class="step">x = ±√400 = ±20</div>
-            <div class="step">Since breadth cannot be negative, x = 20.</div>
-            <div class="step">Breadth = 20 m.</div>
-            <div class="step">Length = 2(20) = 40 m.</div>
-            <div class="step">Since real positive values exist, design is possible.</div>
-            <div class="final-answer">Length = 40 m, Breadth = 20 m.</div>
-        </div>
-
-        <!-- Question 4 -->
-        <div class="content-box">
-            <div class="question">4. Is the following situation possible? If so, determine their present ages. The sum
-                of the ages of two friends is 20 years. Four years ago, the product of their ages in years was 48.</div>
-            <div class="solution-header">Solution:</div>
-            <div class="step">Let age of first friend = x years.</div>
-            <div class="step">Then age of second friend = (20 - x) years.</div>
-            <div class="step">Four years ago:</div>
-            <div class="step">Age of first friend = x - 4</div>
-            <div class="step">Age of second friend = (20 - x) - 4 = 16 - x</div>
-            <div class="step">Product of ages = 48</div>
-            <div class="step">(x - 4)(16 - x) = 48</div>
-            <div class="step">16x - x² - 64 + 4x = 48</div>
-            <div class="step">-x² + 20x - 64 = 48</div>
-            <div class="step">-x² + 20x - 112 = 0</div>
-            <div class="step">Multiply by -1: x² - 20x + 112 = 0</div>
-            <div class="step">Check Discriminant D = b² - 4ac</div>
-            <div class="step">D = (-20)² - 4(1)(112)</div>
-            <div class="step">D = 400 - 448 = -48</div>
-            <div class="step">Since D < 0, equation has no real roots.</div>
-                    <div class="final-answer">This situation is not possible.</div>
-            </div>
-
-            <!-- Question 5 -->
-            <div class="content-box">
-                <div class="question">5. Is it possible to design a rectangular park of perimeter 80 m and area 400 m²?
-                    If so, find its length and breadth.</div>
-                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNTAgMjYwIiB3aWR0aD0iMzUwIiBoZWlnaHQ9IjI2MCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjYwIiB5PSI2MCIgd2lkdGg9IjE1MCIgaGVpZ2h0PSIxNTAiIGZpbGw9IiNlMWJlZTciIHN0cm9rZT0icHVycGxlIiBzdHJva2Utd2lkdGg9IjIiLz48dGV4dCB4PSIxMzUiIHk9IjIzNSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJwdXJwbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkxlbmd0aCA9IHg8L3RleHQ+PHRleHQgeD0iMjIwIiB5PSIxNDUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0icHVycGxlIiB0ZXh0LWFuY2hvcj0ic3RhcnQiPkJyZWFkdGggPSA0MC14PC90ZXh0Pjx0ZXh0IHg9IjEzNSIgeT0iMTQ1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9InB1cnBsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QXJlYSA9IDQwMCBtwrI8L3RleHQ+PHRleHQgeD0iMTM1IiB5PSI0MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJwdXJwbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlBlcmltZXRlciA9IDgwIG08L3RleHQ+CgoKCjwvc3ZnPg==" alt="Rectangular Park">
-                <div class="solution-header">Solution:</div>
-                <div class="step">Let length = l and breadth = b.</div>
-                <div class="step">Perimeter = 2(l + b) = 80</div>
-                <div class="step">l + b = 40 ⇒ b = 40 - l</div>
-                <div class="step">Area = l × b = 400</div>
-                <div class="step">l(40 - l) = 400</div>
-                <div class="step">40l - l² = 400</div>
-                <div class="step">l² - 40l + 400 = 0</div>
-                <div class="step">Check Discriminant D = b² - 4ac</div>
-                <div class="step">D = (-40)² - 4(1)(400)</div>
-                <div class="step">D = 1600 - 1600 = 0</div>
-                <div class="step">Since D = 0, equal real roots exist.</div>
-                <div class="step">l = \\(\\frac{-b}{2a}\\) = \\(\\frac{40}{2}\\) = 20</div>
-                <div class="step">Length = 20 m.</div>
-                <div class="step">Breadth = 40 - 20 = 20 m.</div>
-                <div class="final-answer">Yes, possible. Length = 20 m, Breadth = 20 m.</div>
-            </div>
-
-</body>
-
-</html>`
+  "keyPoints": [
+    "Standard form: ax² + bx + c = 0 (a ≠ 0).",
+    "A real number α is a root if aα² + bα + c = 0.",
+    "Solving by factorisation: split the middle term bx into px + qx where p + q = b and pq = ac.",
+    "Quadratic formula: x = (-b ± √D) / (2a) where D = b² - 4ac.",
+    "If D > 0: two distinct real roots.",
+    "If D = 0: two equal real roots x = -b / (2a).",
+    "If D < 0: no real roots."
+  ],
+  "formulas": [
+    {
+      "name": "Standard Form",
+      "formula": "ax² + bx + c = 0,  a ≠ 0"
+    },
+    {
+      "name": "Discriminant",
+      "formula": "D = b² - 4ac"
+    },
+    {
+      "name": "Quadratic Formula",
+      "formula": "x = (-b ± √(b² - 4ac)) / 2a"
+    },
+    {
+      "name": "Equal Roots Condition",
+      "formula": "D = 0  =>  b² = 4ac"
+    }
+  ],
+  "crux": [
+    "ax² + bx + c = 0 is quadratic only when a ≠ 0.",
+    "Roots of equation = zeroes of corresponding polynomial.",
+    "D > 0 => 2 distinct real roots.",
+    "D = 0 => 2 equal real roots (-b/2a).",
+    "D < 0 => no real roots.",
+    "Factorisation: find numbers whose product is ac and sum is b."
+  ],
+  "exercises": [
+    {
+      "id": "examples",
+      "name": "Examples",
+      "questions": []
+    },
+    {
+      "id": "exercise1",
+      "name": "Exercise 4.1",
+      "questions": []
+    },
+    {
+      "id": "exercise2",
+      "name": "Exercise 4.2",
+      "questions": []
+    },
+    {
+      "id": "exercise3",
+      "name": "Exercise 4.3",
+      "questions": []
+    }
+  ],
+  "examples": [],
+  "theorems": [],
+  "mcqs": [
+    {
+      "id": "ch4-mcq-1",
+      "question": "Which of the following is the standard form of a quadratic equation in one variable x?",
+      "options": [
+        "A):   ax + b = 0, a ≠ 0",
+        "B):   ax² + bx + c = 0, a ≠ 0",
+        "C):   ax³ + bx² + cx + d = 0, a ≠ 0",
+        "D):   ax² + bx = c²"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A quadratic equation in variable x is an equation of the second degree of the form ax² + bx + c = 0, where a, b, c are real numbers and a ≠ 0."
+    },
+    {
+      "id": "ch4-mcq-2",
+      "question": "The degree of any quadratic equation is always equal to:",
+      "options": [
+        "A):   1",
+        "B):   3",
+        "C):   2",
+        "D):   4"
+      ],
+      "correctAnswer": "C",
+      "explanation": "By definition, a quadratic equation has the highest power of the variable as 2. Hence, its degree is always 2."
+    },
+    {
+      "id": "ch4-mcq-3",
+      "question": "Which of the following is NOT a quadratic equation?",
+      "options": [
+        "A):   (x - 2)² + 1 = 2x - 3",
+        "B):   x(2x + 3) = x² + 1",
+        "C):   (x + 2)³ = x³ - 4",
+        "D):   (x - 2)(x + 1) = (x - 1)(x + 3)"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Expanding (x - 2)(x + 1) gives x² - x - 2, and (x - 1)(x + 3) gives x² + 2x - 3. Equating them cancels x² on both sides, leaving -3x + 1 = 0, which is a linear equation (degree 1)."
+    },
+    {
+      "id": "ch4-mcq-4",
+      "question": "For the quadratic equation ax² + bx + c = 0, the discriminant D is given by:",
+      "options": [
+        "A):   b² - 4ac",
+        "B):   b² + 4ac",
+        "C):   4ac - b²",
+        "D):   b - 4ac"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The discriminant D of the quadratic equation ax² + bx + c = 0 is defined as D = b² - 4ac."
+    },
+    {
+      "id": "ch4-mcq-5",
+      "question": "If the discriminant b² - 4ac > 0, then the quadratic equation has:",
+      "options": [
+        "A):   two equal real roots",
+        "B):   two distinct real roots",
+        "C):   no real roots",
+        "D):   more than two real roots"
+      ],
+      "correctAnswer": "B",
+      "explanation": "When D > 0, the square root of D is a positive real number, yielding two distinct real roots x = (-b ± √D)/(2a)."
+    },
+    {
+      "id": "ch4-mcq-6",
+      "question": "If a quadratic equation has two equal real roots, then the value of its discriminant D must be:",
+      "options": [
+        "A):   greater than 0",
+        "B):   less than 0",
+        "C):   equal to 0",
+        "D):   equal to 1"
+      ],
+      "correctAnswer": "C",
+      "explanation": "A quadratic equation has two real equal (coincident) roots if and only if its discriminant D = b² - 4ac = 0."
+    },
+    {
+      "id": "ch4-mcq-7",
+      "question": "The roots of the pure quadratic equation x² - 16 = 0 are:",
+      "options": [
+        "A):   4, -4",
+        "B):   16, -16",
+        "C):   4, 4",
+        "D):   0, 16"
+      ],
+      "correctAnswer": "A",
+      "explanation": "x² - 16 = 0 => x² = 16 => x = ±√16 = ±4. Hence, the roots are 4 and -4."
+    },
+    {
+      "id": "ch4-mcq-8",
+      "question": "The value of k for which the quadratic equation 2x² + kx + 3 = 0 has two equal roots is:",
+      "options": [
+        "A):   ±4",
+        "B):   ±2√6",
+        "C):   ±6",
+        "D):   ±√6"
+      ],
+      "correctAnswer": "B",
+      "explanation": "For equal roots, D = b² - 4ac = 0 => k² - 4(2)(3) = 0 => k² - 24 = 0 => k² = 24 => k = ±√24 = ±2√6."
+    },
+    {
+      "id": "ch4-mcq-9",
+      "question": "If one root of the quadratic equation 2x² + kx - 6 = 0 is 2, then the value of k is:",
+      "options": [
+        "A):   1",
+        "B):   2",
+        "C):   -1",
+        "D):   -2"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Substituting x = 2 into the equation: 2(2)² + k(2) - 6 = 0 => 2(4) + 2k - 6 = 0 => 8 + 2k - 6 = 0 => 2k + 2 = 0 => 2k = -2 => k = -1."
+    },
+    {
+      "id": "ch4-mcq-10",
+      "question": "The discriminant of the quadratic equation 3x² - 4√3x + 4 = 0 is:",
+      "options": [
+        "A):   0",
+        "B):   12",
+        "C):   -12",
+        "D):   48"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Here a = 3, b = -4√3, c = 4. D = b² - 4ac = (-4√3)² - 4(3)(4) = 16(3) - 48 = 48 - 48 = 0."
+    },
+    {
+      "id": "ch4-mcq-11",
+      "question": "A quadratic equation can have at most how many real roots?",
+      "options": [
+        "A):   1",
+        "B):   2",
+        "C):   3",
+        "D):   infinitely many"
+      ],
+      "correctAnswer": "B",
+      "explanation": "By the Fundamental Theorem of Algebra, a polynomial equation of degree n has at most n roots. A quadratic equation has degree 2, so it can have at most 2 roots."
+    },
+    {
+      "id": "ch4-mcq-12",
+      "question": "The quadratic formula to find the roots of ax² + bx + c = 0 was given by:",
+      "options": [
+        "A):   Aryabhata",
+        "B):   Pythagoras",
+        "C):   Euclid",
+        "D):   Shreedharacharya"
+      ],
+      "correctAnswer": "D",
+      "explanation": "The explicit algebraic quadratic formula x = (-b ± √(b² - 4ac))/(2a) is historically credited to the ancient Indian mathematician Shreedharacharya."
+    },
+    {
+      "id": "ch4-mcq-13",
+      "question": "If the equation x² - 2x + 1 = 0 is solved, its roots are:",
+      "options": [
+        "A):   1, -1",
+        "B):   1, 1",
+        "C):   -1, -1",
+        "D):   0, 1"
+      ],
+      "correctAnswer": "B",
+      "explanation": "x² - 2x + 1 = (x - 1)² = 0 => x - 1 = 0 => x = 1, 1. Both roots are equal to 1."
+    },
+    {
+      "id": "ch4-mcq-14",
+      "question": "If the quadratic equation x² + 4x + k = 0 has real roots, then:",
+      "options": [
+        "A):   k ≥ 4",
+        "B):   k ≤ 4",
+        "C):   k = 4",
+        "D):   k > 4"
+      ],
+      "correctAnswer": "B",
+      "explanation": "For real roots, D ≥ 0 => b² - 4ac ≥ 0 => 4² - 4(1)(k) ≥ 0 => 16 - 4k ≥ 0 => 16 ≥ 4k => k ≤ 4."
+    },
+    {
+      "id": "ch4-mcq-15",
+      "question": "The sum of the roots of the quadratic equation 3x² - 9x + 5 = 0 is:",
+      "options": [
+        "A):   3",
+        "B):   -3",
+        "C):   5/3",
+        "D):   -5/3"
+      ],
+      "correctAnswer": "A",
+      "explanation": "For ax² + bx + c = 0, the sum of roots is -b/a. Here a = 3, b = -9 => Sum = -(-9)/3 = 9/3 = 3."
+    }
+  ],
+  "isHtmlView": true,
+  "htmlOverview": "\n\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; }\n  .frac .den { padding: 1px 4px; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 109, 0, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FF6D00; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 14px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(255, 109, 0, 0.2); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FF6D00; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFB74D; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(255, 109, 0, 0.15); border: 1px solid #FF6D00; color: #FFB74D; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 6px 0; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 109, 0, 0.4); border-radius: 10px; padding: 14px; margin: 16px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #FFFFFF; border-radius: 8px; padding: 10px 8px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.25); }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 10px; font-weight: 500; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Hero Header -->\n  <div style=\"background: linear-gradient(135deg, rgba(255, 109, 0, 0.25), rgba(230, 81, 0, 0.15)); border: 1.5px solid #FF6D00; border-radius: 14px; padding: 18px; margin-bottom: 20px; text-align: center;\">\n    <div style=\"font-size: 22px; font-weight: 800; color: #FF6D00; margin-bottom: 6px;\">\n      📘 Chapter 4: Quadratic Equations\n    </div>\n    <div style=\"color: #CBD5E1; font-size: 14.5px; line-height: 1.5;\">\n      Class 10 NCERT Mathematics &bull; Comprehensive Reference Guide &amp; Master Formula Cheat Sheet\n    </div>\n  </div>\n\n  <!-- 1. Standard Form -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 1. Standard General Form of a Quadratic Equation</div>\n    <div class=\"q-text\">\n      A <b>quadratic equation</b> in the variable <i>x</i> is an algebraic equation of the second degree:\n    </div>\n    <div class=\"sol-box\">\n      <div style=\"text-align: center; margin: 10px 0;\">\n        <span class=\"prop-chip\" style=\"font-size: 17px; padding: 8px 18px;\">\n          <b><i>ax</i><sup>2</sup> + <i>bx</i> + <i>c</i> = 0</b>\n        </span>\n      </div>\n      <div style=\"color: #CBD5E1; font-size: 14.5px; text-align: center; line-height: 1.7;\">\n        where <b><i>a</i>, <i>b</i>, <i>c</i></b> are real numbers and <b><i>a</i> &ne; 0</b>.<br/>\n        &bull; <b>Degree:</b> The highest power of <i>x</i> is strictly <b>2</b>.<br/>\n        &bull; If <i>a</i> = 0, the equation reduces to <i>bx</i> + <i>c</i> = 0, which is a linear equation, not quadratic!\n      </div>\n    </div>\n  </div>\n\n  <!-- 2. Roots of a Quadratic Equation -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 2. Roots &amp; Solutions of a Quadratic Equation</div>\n    <div class=\"q-text\">\n      A real number &alpha; is called a <b>root</b> (or solution) of the quadratic equation <i>ax</i><sup>2</sup> + <i>bx</i> + <i>c</i> = 0 if:\n    </div>\n    <div class=\"sol-box\">\n      <div style=\"text-align: center; margin: 8px 0;\">\n        <span class=\"prop-chip\" style=\"font-size: 16px; padding: 6px 14px;\">\n          <b><i>a</i>(&alpha;)<sup>2</sup> + <i>b</i>(&alpha;) + <i>c</i> = 0</b>\n        </span>\n      </div>\n      <div class=\"sol-step\" style=\"margin-top: 10px;\">\n        <div>&bull; <b>Roots vs Zeroes:</b> The roots of the quadratic equation <i>ax</i><sup>2</sup> + <i>bx</i> + <i>c</i> = 0 are precisely the <b>zeroes</b> of the quadratic polynomial <i>p(x) = ax</i><sup>2</sup> + <i>bx</i> + <i>c</i>.</div>\n        <div>&bull; <b>Number of Roots:</b> Any quadratic equation can have <b>at most two real roots</b>.</div>\n        <div>&bull; <b>Geometrical Interpretation:</b> The roots are the <i>x</i>-coordinates of the points where the parabola <i>y = ax</i><sup>2</sup> + <i>bx</i> + <i>c</i> intersects or touches the X-axis.</div>\n      </div>\n    </div>\n  </div>\n\n  <!-- 3. Master Solving Methods -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 3. Master Methods of Solving Quadratic Equations</div>\n    <div class=\"q-text\">\n      The two primary algebraic techniques prescribed in Class 10 NCERT:\n    </div>\n    \n    <div style=\"display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; margin-top: 10px;\">\n      \n      <!-- Method 1: Factorisation -->\n      <div style=\"background: rgba(0,0,0,0.28); border-left: 3.5px solid #FF6D00; padding: 14px; border-radius: 8px;\">\n        <b style=\"color: #FF6D00; font-size: 15.5px;\">1. Factorisation (Splitting Middle Term):</b>\n        <div style=\"color: #CBD5E1; font-size: 14px; line-height: 1.7; margin-top: 8px;\">\n          1. Rewrite equation in standard form: <i>ax</i><sup>2</sup> + <i>bx</i> + <i>c</i> = 0.<br/>\n          2. Find two numbers <i>p</i> and <i>q</i> such that:<br/>\n          &nbsp;&nbsp;&bull; <b>Sum:</b> <i>p</i> + <i>q</i> = <i>b</i><br/>\n          &nbsp;&nbsp;&bull; <b>Product:</b> <i>p</i> &times; <i>q</i> = <i>a</i> &times; <i>c</i><br/>\n          3. Express <i>bx</i> as <i>px</i> + <i>qx</i> and factorise into two linear factors:<br/>\n          &nbsp;&nbsp;<b>(<i>lx</i> + <i>m</i>)(<i>px</i> + <i>q</i>) = 0</b><br/>\n          4. Set each factor to zero to find the roots.\n        </div>\n      </div>\n\n      <!-- Method 2: Quadratic Formula -->\n      <div style=\"background: rgba(0,0,0,0.28); border-left: 3.5px solid #4CAF50; padding: 14px; border-radius: 8px;\">\n        <b style=\"color: #4CAF50; font-size: 15.5px;\">2. Quadratic Formula (Shreedhar Acharya):</b>\n        <div style=\"color: #CBD5E1; font-size: 14px; line-height: 1.7; margin-top: 8px;\">\n          For any quadratic equation <i>ax</i><sup>2</sup> + <i>bx</i> + <i>c</i> = 0 with <i>b</i><sup>2</sup> &minus; 4<i>ac</i> &ge; 0:\n          <div style=\"text-align: center; margin: 10px 0;\">\n            <span class=\"prop-chip\" style=\"border-color: #4CAF50; color: #A5D6A7; font-size: 16px; padding: 6px 14px;\">\n              <i>x</i> = <span class=\"frac\"><span class=\"num\">&minus;<i>b</i> &plusmn; &radic;(<i>b</i><sup>2</sup> &minus; 4<i>ac</i>)</span><span class=\"den\">2<i>a</i></span></span>\n            </span>\n          </div>\n          &bull; Directly yields the roots without requiring factorisation trial-and-error.<br/>\n          &bull; Works even when roots involve radicals or fractions!\n        </div>\n      </div>\n\n    </div>\n  </div>\n\n  <!-- 4. Discriminant & Nature of Roots Matrix -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 4. Discriminant (<i>D</i>) &amp; Nature of Roots Matrix</div>\n    <div class=\"q-text\">\n      The quantity <b><i>D</i> = <i>b</i><sup>2</sup> &minus; 4<i>ac</i></b> is called the <b>discriminant</b> of the quadratic equation. It completely determines the nature of the roots without solving the equation:\n    </div>\n\n    <div style=\"display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; margin-top: 12px;\">\n      \n      <!-- Case 1: D > 0 -->\n      <div style=\"background: rgba(0,0,0,0.28); border-left: 3.5px solid #00E676; padding: 12px; border-radius: 8px;\">\n        <b style=\"color: #00E676;\">Case 1: <i>D</i> &gt; 0 (Positive)</b><br/>\n        <div style=\"margin: 6px 0;\">\n          <span class=\"prop-chip\" style=\"border-color: #00E676; color: #B9F6CA;\">\n            <i>b</i><sup>2</sup> &minus; 4<i>ac</i> &gt; 0\n          </span>\n        </div>\n        <span style=\"color: #CBD5E1; font-size: 14px; line-height: 1.6;\">\n          &bull; <b>Two Distinct Real Roots</b> exist.<br/>\n          &bull; Roots: <i>x</i> = <span class=\"frac\"><span class=\"num\">&minus;b + &radic;D</span><span class=\"den\">2a</span></span>, <span class=\"frac\"><span class=\"num\">&minus;b &minus; &radic;D</span><span class=\"den\">2a</span></span><br/>\n          &bull; Parabola cuts X-axis at <b>two distinct points</b>.\n        </span>\n      </div>\n\n      <!-- Case 2: D = 0 -->\n      <div style=\"background: rgba(0,0,0,0.28); border-left: 3.5px solid #FFAB00; padding: 12px; border-radius: 8px;\">\n        <b style=\"color: #FFAB00;\">Case 2: <i>D</i> = 0 (Zero)</b><br/>\n        <div style=\"margin: 6px 0;\">\n          <span class=\"prop-chip\">\n            <i>b</i><sup>2</sup> &minus; 4<i>ac</i> = 0\n          </span>\n        </div>\n        <span style=\"color: #CBD5E1; font-size: 14px; line-height: 1.6;\">\n          &bull; <b>Two Equal Real Roots</b> (Coincident roots).<br/>\n          &bull; Each root: <b><i>x</i> = <span class=\"frac\"><span class=\"num\">&minus;b</span><span class=\"den\">2a</span></span></b><br/>\n          &bull; Parabola <b>touches</b> the X-axis at exactly <b>one point</b>.\n        </span>\n      </div>\n\n      <!-- Case 3: D < 0 -->\n      <div style=\"background: rgba(0,0,0,0.28); border-left: 3.5px solid #FF5252; padding: 12px; border-radius: 8px;\">\n        <b style=\"color: #FF5252;\">Case 3: <i>D</i> &lt; 0 (Negative)</b><br/>\n        <div style=\"margin: 6px 0;\">\n          <span class=\"prop-chip\" style=\"border-color: #FF5252; color: #FF8A80;\">\n            <i>b</i><sup>2</sup> &minus; 4<i>ac</i> &lt; 0\n          </span>\n        </div>\n        <span style=\"color: #CBD5E1; font-size: 14px; line-height: 1.6;\">\n          &bull; <b>No Real Roots</b> exist (Roots are imaginary / non-real).<br/>\n          &bull; Square root of negative number is not real.<br/>\n          &bull; Parabola <b>never crosses or touches</b> the X-axis.\n        </span>\n      </div>\n\n    </div>\n  </div>\n\n  <!-- 5. Master Revision Formula Cheat Sheet -->\n  <div class=\"q-card\" style=\"border-color: #4CAF50;\">\n    <div class=\"q-title\" style=\"color: #4CAF50;\">✦ 5. Master Revision Formula Cheat Sheet</div>\n    <div style=\"font-size: 15px; color: #FFFFFF; line-height: 2.0;\">\n      &bull; <b>Standard Quadratic Equation:</b> <i>ax</i><sup>2</sup> + <i>bx</i> + <i>c</i> = 0 &nbsp;(<i>a</i> &ne; 0)<br/>\n      &bull; <b>Discriminant:</b> <i>D</i> = <i>b</i><sup>2</sup> &minus; 4<i>ac</i><br/>\n      &bull; <b>Quadratic Formula:</b> <i>x</i> = <span class=\"frac\"><span class=\"num\">&minus;b &plusmn; &radic;(b<sup>2</sup> &minus; 4ac)</span><span class=\"den\">2a</span></span><br/>\n      &bull; <b>Equal Roots Condition:</b> <i>D</i> = 0 &rArr; <i>b</i><sup>2</sup> = 4<i>ac</i> &rArr; <i>x</i> = &minus;<span class=\"frac\"><span class=\"num\">b</span><span class=\"den\">2a</span></span><br/>\n      &bull; <b>Real Roots Condition:</b> <i>D</i> &ge; 0 &rArr; <i>b</i><sup>2</sup> &minus; 4<i>ac</i> &ge; 0<br/>\n      &bull; <b>Sum of Roots (&alpha; + &beta;):</b> &minus;<span class=\"frac\"><span class=\"num\">b</span><span class=\"den\">a</span></span> = &minus;<span class=\"frac\"><span class=\"num\">Coefficient of x</span><span class=\"den\">Coefficient of x<sup>2</sup></span></span><br/>\n      &bull; <b>Product of Roots (&alpha;&beta;):</b> <span class=\"frac\"><span class=\"num\">c</span><span class=\"den\">a</span></span> = <span class=\"frac\"><span class=\"num\">Constant term</span><span class=\"den\">Coefficient of x<sup>2</sup></span></span><br/>\n      &bull; <b>Speed-Distance-Time Relation:</b> Time = <span class=\"frac\"><span class=\"num\">Distance</span><span class=\"den\">Speed</span></span> &nbsp;&rArr;&nbsp; <span class=\"frac\"><span class=\"num\">d</span><span class=\"den\">x &minus; s</span></span> &minus; <span class=\"frac\"><span class=\"num\">d</span><span class=\"den\">x</span></span> = &Delta;<i>t</i>\n    </div>\n  </div>\n\n</div>\n",
+  "htmlExercises": {
+    "examples": "\n\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; }\n  .frac .den { padding: 1px 4px; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 109, 0, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FF6D00; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 14px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(255, 109, 0, 0.2); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FF6D00; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFB74D; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(255, 109, 0, 0.15); border: 1px solid #FF6D00; color: #FFB74D; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 6px 0; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 109, 0, 0.4); border-radius: 10px; padding: 14px; margin: 16px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #FFFFFF; border-radius: 8px; padding: 10px 8px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.25); }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 10px; font-weight: 500; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Header Card -->\n  <div style=\"background: linear-gradient(135deg, rgba(255, 109, 0, 0.2), rgba(230, 81, 0, 0.1)); border: 1.5px solid #FF6D00; border-radius: 12px; padding: 14px 18px; margin-bottom: 20px;\">\n    <div style=\"font-size: 19px; font-weight: 800; color: #FF6D00; margin-bottom: 4px;\">\n      Quadratic Equations &bull; Solved Examples\n    </div>\n    <div style=\"color: #FFFFFF; font-size: 15px; font-weight: 500;\">\n      Step-by-Step Textbook Solved Examples (Example 1 to Example 8)\n    </div>\n  </div>\n\n  <!-- EXAMPLE 1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 1:</div>\n    <div class=\"q-text\">Represent the following situations mathematically:</div>\n\n    <!-- Part (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FF6D00;\">(i)</b> John and Jivanti together have 45 marbles. Both of them lost 5 marbles each, and the product of the number of marbles they now have is 124. We would like to find out how many marbles they had to start with.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">💡 Easy Direct Solution:</div>\n        <div class=\"sol-step\">\n          <div>Let the number of marbles John had = <i>x</i>.</div>\n          <div>Then the number of marbles Jivanti had = 45 &minus; <i>x</i>.</div>\n          <div style=\"margin-top: 6px;\">After losing 5 marbles each:</div>\n          <div style=\"padding-left: 12px;\">John's marbles = <i>x</i> &minus; 5</div>\n          <div style=\"padding-left: 12px;\">Jivanti's marbles = (45 &minus; <i>x</i>) &minus; 5 = 40 &minus; <i>x</i></div>\n          <div style=\"margin-top: 6px;\">According to the given condition, their product is 124:</div>\n          <div style=\"padding-left: 12px;\">(<i>x</i> &minus; 5)(40 &minus; <i>x</i>) = 124</div>\n          <div style=\"padding-left: 12px;\">&rArr; 40<i>x</i> &minus; <i>x</i><sup>2</sup> &minus; 200 + 5<i>x</i> = 124</div>\n          <div style=\"padding-left: 12px;\">&rArr; &minus;<i>x</i><sup>2</sup> + 45<i>x</i> &minus; 200 &minus; 124 = 0</div>\n          <div style=\"padding-left: 12px;\">&rArr; &minus;<i>x</i><sup>2</sup> + 45<i>x</i> &minus; 324 = 0</div>\n          <div style=\"padding-left: 12px;\">&rArr; <b><i>x</i><sup>2</sup> &minus; 45<i>x</i> + 324 = 0</b> <span class=\"reason\">[Multiplying by &minus;1]</span></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Mathematical Form: </span>\n          <span class=\"ans-val\"><i>x</i><sup>2</sup> &minus; 45<i>x</i> + 324 = 0</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- Part (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FF6D00;\">(ii)</b> A cottage industry produces a certain number of toys in a day. The cost of production of each toy (in rupees) was found to be 55 minus the number of toys produced in a day. On a particular day, the total cost of production was ₹ 750. We would like to find out the number of toys produced on that day.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-title\">💡 Easy Direct Solution:</div>\n        <div class=\"sol-step\">\n          <div>Let the number of toys produced on that day = <i>x</i>.</div>\n          <div>Then cost of production of each toy = ₹ (55 &minus; <i>x</i>).</div>\n          <div style=\"margin-top: 6px;\">Total cost of production = (Number of toys) &times; (Cost per toy):</div>\n          <div style=\"padding-left: 12px;\"><i>x</i>(55 &minus; <i>x</i>) = 750</div>\n          <div style=\"padding-left: 12px;\">&rArr; 55<i>x</i> &minus; <i>x</i><sup>2</sup> = 750</div>\n          <div style=\"padding-left: 12px;\">&rArr; &minus;<i>x</i><sup>2</sup> + 55<i>x</i> &minus; 750 = 0</div>\n          <div style=\"padding-left: 12px;\">&rArr; <b><i>x</i><sup>2</sup> &minus; 55<i>x</i> + 750 = 0</b> <span class=\"reason\">[Multiplying by &minus;1]</span></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Mathematical Form: </span>\n          <span class=\"ans-val\"><i>x</i><sup>2</sup> &minus; 55<i>x</i> + 750 = 0</span>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <!-- EXAMPLE 2 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 2:</div>\n    <div class=\"q-text\">Check whether the following are quadratic equations:</div>\n\n    <!-- Part (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FF6D00;\">(i)</b> (<i>x</i> &minus; 2)<sup>2</sup> + 1 = 2<i>x</i> &minus; 3</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>LHS = (<i>x</i> &minus; 2)<sup>2</sup> + 1 = (<i>x</i><sup>2</sup> &minus; 4<i>x</i> + 4) + 1 = <i>x</i><sup>2</sup> &minus; 4<i>x</i> + 5</div>\n          <div>Equating LHS and RHS:</div>\n          <div style=\"padding-left: 12px;\"><i>x</i><sup>2</sup> &minus; 4<i>x</i> + 5 = 2<i>x</i> &minus; 3</div>\n          <div style=\"padding-left: 12px;\">&rArr; <i>x</i><sup>2</sup> &minus; 4<i>x</i> &minus; 2<i>x</i> + 5 + 3 = 0</div>\n          <div style=\"padding-left: 12px;\">&rArr; <b><i>x</i><sup>2</sup> &minus; 6<i>x</i> + 8 = 0</b></div>\n          <div>It is of the form <i>ax</i><sup>2</sup> + <i>bx</i> + <i>c</i> = 0 where <i>a</i> = 1 &ne; 0.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Conclusion: </span><span class=\"ans-val\">Yes, it is a quadratic equation.</span></div>\n      </div>\n    </div>\n\n    <!-- Part (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FF6D00;\">(ii)</b> <i>x</i>(<i>x</i> + 1) + 8 = (<i>x</i> + 2)(<i>x</i> &minus; 2)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>LHS = <i>x</i><sup>2</sup> + <i>x</i> + 8</div>\n          <div>RHS = <i>x</i><sup>2</sup> &minus; 4 <span class=\"reason\">[Using (a + b)(a &minus; b) = a<sup>2</sup> &minus; b<sup>2</sup>]</span></div>\n          <div>Equating LHS and RHS:</div>\n          <div style=\"padding-left: 12px;\"><i>x</i><sup>2</sup> + <i>x</i> + 8 = <i>x</i><sup>2</sup> &minus; 4</div>\n          <div style=\"padding-left: 12px;\">&rArr; <i>x</i> + 8 + 4 = 0</div>\n          <div style=\"padding-left: 12px;\">&rArr; <b><i>x</i> + 12 = 0</b></div>\n          <div>The highest power of <i>x</i> is 1 (Linear equation). There is no <i>x</i><sup>2</sup> term.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Conclusion: </span><span class=\"ans-val\">No, it is not a quadratic equation.</span></div>\n      </div>\n    </div>\n\n    <!-- Part (iii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FF6D00;\">(iii)</b> <i>x</i>(2<i>x</i> + 3) = <i>x</i><sup>2</sup> + 1</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>LHS = 2<i>x</i><sup>2</sup> + 3<i>x</i></div>\n          <div>Equating LHS and RHS:</div>\n          <div style=\"padding-left: 12px;\">2<i>x</i><sup>2</sup> + 3<i>x</i> = <i>x</i><sup>2</sup> + 1</div>\n          <div style=\"padding-left: 12px;\">&rArr; 2<i>x</i><sup>2</sup> &minus; <i>x</i><sup>2</sup> + 3<i>x</i> &minus; 1 = 0</div>\n          <div style=\"padding-left: 12px;\">&rArr; <b><i>x</i><sup>2</sup> + 3<i>x</i> &minus; 1 = 0</b></div>\n          <div>It is of the form <i>ax</i><sup>2</sup> + <i>bx</i> + <i>c</i> = 0 where <i>a</i> = 1 &ne; 0.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Conclusion: </span><span class=\"ans-val\">Yes, it is a quadratic equation.</span></div>\n      </div>\n    </div>\n\n    <!-- Part (iv) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FF6D00;\">(iv)</b> (<i>x</i> + 2)<sup>3</sup> = <i>x</i><sup>3</sup> &minus; 4</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Expanding LHS using (<i>a</i> + <i>b</i>)<sup>3</sup> = <i>a</i><sup>3</sup> + 3<i>a</i><sup>2</sup><i>b</i> + 3<i>ab</i><sup>2</sup> + <i>b</i><sup>3</sup>:</div>\n          <div style=\"padding-left: 12px;\">LHS = <i>x</i><sup>3</sup> + 3(<i>x</i>)<sup>2</sup>(2) + 3(<i>x</i>)(2)<sup>2</sup> + 2<sup>3</sup> = <i>x</i><sup>3</sup> + 6<i>x</i><sup>2</sup> + 12<i>x</i> + 8</div>\n          <div>Equating LHS and RHS:</div>\n          <div style=\"padding-left: 12px;\"><i>x</i><sup>3</sup> + 6<i>x</i><sup>2</sup> + 12<i>x</i> + 8 = <i>x</i><sup>3</sup> &minus; 4</div>\n          <div style=\"padding-left: 12px;\">&rArr; 6<i>x</i><sup>2</sup> + 12<i>x</i> + 8 + 4 = 0</div>\n          <div style=\"padding-left: 12px;\">&rArr; 6<i>x</i><sup>2</sup> + 12<i>x</i> + 12 = 0</div>\n          <div style=\"padding-left: 12px;\">&rArr; <b><i>x</i><sup>2</sup> + 2<i>x</i> + 2 = 0</b> <span class=\"reason\">[Dividing by 6]</span></div>\n          <div>It is of the form <i>ax</i><sup>2</sup> + <i>bx</i> + <i>c</i> = 0 where <i>a</i> = 1 &ne; 0.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Conclusion: </span><span class=\"ans-val\">Yes, it is a quadratic equation.</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- EXAMPLE 3 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 3:</div>\n    <div class=\"q-text\">Find the roots of the equation <b>2<i>x</i><sup>2</sup> &minus; 5<i>x</i> + 3 = 0</b>, by factorisation.</div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Easy Step-by-Step Solution:</div>\n      <div class=\"sol-step\">\n        <div>Given equation: 2<i>x</i><sup>2</sup> &minus; 5<i>x</i> + 3 = 0</div>\n        <div>Find two numbers whose product is 2 &times; 3 = 6 and sum is &minus;5 &rArr; &minus;2 and &minus;3.</div>\n        <div style=\"padding-left: 12px; margin-top: 6px;\">2<i>x</i><sup>2</sup> &minus; 2<i>x</i> &minus; 3<i>x</i> + 3 = 0</div>\n        <div style=\"padding-left: 12px;\">&rArr; 2<i>x</i>(<i>x</i> &minus; 1) &minus; 3(<i>x</i> &minus; 1) = 0</div>\n        <div style=\"padding-left: 12px;\">&rArr; (2<i>x</i> &minus; 3)(<i>x</i> &minus; 1) = 0</div>\n        <div style=\"margin-top: 6px;\">Setting each factor to zero:</div>\n        <div style=\"padding-left: 12px;\">2<i>x</i> &minus; 3 = 0 &nbsp;&rArr;&nbsp; <b><i>x</i> = <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">2</span></span></b></div>\n        <div style=\"padding-left: 12px;\"><i>x</i> &minus; 1 = 0 &nbsp;&rArr;&nbsp; <b><i>x</i> = 1</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Roots: </span>\n        <span class=\"ans-val\"><i>x</i> = <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">2</span></span> and <i>x</i> = 1</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- EXAMPLE 4 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 4:</div>\n    <div class=\"q-text\">Find the roots of the quadratic equation <b>6<i>x</i><sup>2</sup> &minus; <i>x</i> &minus; 2 = 0</b>.</div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Easy Step-by-Step Solution:</div>\n      <div class=\"sol-step\">\n        <div>Given equation: 6<i>x</i><sup>2</sup> &minus; <i>x</i> &minus; 2 = 0</div>\n        <div>Find two numbers whose product is 6 &times; (&minus;2) = &minus;12 and sum is &minus;1 &rArr; &minus;4 and 3.</div>\n        <div style=\"padding-left: 12px; margin-top: 6px;\">6<i>x</i><sup>2</sup> &minus; 4<i>x</i> + 3<i>x</i> &minus; 2 = 0</div>\n        <div style=\"padding-left: 12px;\">&rArr; 2<i>x</i>(3<i>x</i> &minus; 2) + 1(3<i>x</i> &minus; 2) = 0</div>\n        <div style=\"padding-left: 12px;\">&rArr; (3<i>x</i> &minus; 2)(2<i>x</i> + 1) = 0</div>\n        <div style=\"margin-top: 6px;\">Setting each factor to zero:</div>\n        <div style=\"padding-left: 12px;\">3<i>x</i> &minus; 2 = 0 &nbsp;&rArr;&nbsp; <b><i>x</i> = <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span></b></div>\n        <div style=\"padding-left: 12px;\">2<i>x</i> + 1 = 0 &nbsp;&rArr;&nbsp; <b><i>x</i> = &minus;<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Roots: </span>\n        <span class=\"ans-val\"><i>x</i> = <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span> and <i>x</i> = &minus;<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></span>\n      </div>\n    </div>\n  </div>\n\n  <!-- EXAMPLE 5 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 5:</div>\n    <div class=\"q-text\">Find the roots of the quadratic equation <b>3<i>x</i><sup>2</sup> &minus; 2&radic;6<i>x</i> + 2 = 0</b>.</div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Easy Step-by-Step Solution:</div>\n      <div class=\"sol-step\">\n        <div>Notice that: 3<i>x</i><sup>2</sup> = (&radic;3<i>x</i>)<sup>2</sup> &nbsp;and&nbsp; 2 = (&radic;2)<sup>2</sup>.</div>\n        <div>Middle term: &minus;2&radic;6<i>x</i> = &minus;2(&radic;3<i>x</i>)(&radic;2).</div>\n        <div style=\"margin-top: 6px;\">Using identity (<i>a</i> &minus; <i>b</i>)<sup>2</sup> = <i>a</i><sup>2</sup> &minus; 2<i>ab</i> + <i>b</i><sup>2</sup>:</div>\n        <div style=\"padding-left: 12px;\">(&radic;3<i>x</i> &minus; &radic;2)<sup>2</sup> = 0</div>\n        <div style=\"padding-left: 12px;\">&rArr; &radic;3<i>x</i> &minus; &radic;2 = 0</div>\n        <div style=\"padding-left: 12px;\">&rArr; &radic;3<i>x</i> = &radic;2</div>\n        <div style=\"padding-left: 12px;\">&rArr; <i>x</i> = <span class=\"frac\"><span class=\"num\">&radic;2</span><span class=\"den\">&radic;3</span></span> = <span class=\"frac\"><span class=\"num\">&radic;2 &times; &radic;3</span><span class=\"den\">&radic;3 &times; &radic;3</span></span> = <b><span class=\"frac\"><span class=\"num\">&radic;6</span><span class=\"den\">3</span></span></b></div>\n        <div style=\"margin-top: 6px;\">Since the factor is squared, there are two equal roots.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Equal Roots: </span>\n        <span class=\"ans-val\"><i>x</i> = <span class=\"frac\"><span class=\"num\">&radic;6</span><span class=\"den\">3</span></span>, &nbsp; <i>x</i> = <span class=\"frac\"><span class=\"num\">&radic;6</span><span class=\"den\">3</span></span></span>\n      </div>\n    </div>\n  </div>\n\n  <!-- EXAMPLE 6 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 6:</div>\n    <div class=\"q-text\">Find the dimensions of a prayer hall whose carpet area is 300 m<sup>2</sup> and whose length is one metre more than twice its breadth.</div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Easy Step-by-Step Solution:</div>\n      <div class=\"sol-step\">\n        <div>Let the breadth of the hall = <i>x</i> metres.</div>\n        <div>Then length of the hall = (2<i>x</i> + 1) metres.</div>\n        <div style=\"margin-top: 6px;\">Area = Length &times; Breadth = 300:</div>\n        <div style=\"padding-left: 12px;\"><i>x</i>(2<i>x</i> + 1) = 300</div>\n        <div style=\"padding-left: 12px;\">&rArr; 2<i>x</i><sup>2</sup> + <i>x</i> &minus; 300 = 0</div>\n        <div style=\"margin-top: 6px;\">Using quadratic formula: <i>a</i> = 2, <i>b</i> = 1, <i>c</i> = &minus;300:</div>\n        <div style=\"padding-left: 12px;\"><i>D</i> = <i>b</i><sup>2</sup> &minus; 4<i>ac</i> = 1<sup>2</sup> &minus; 4(2)(&minus;300) = 1 + 2400 = 2401</div>\n        <div style=\"padding-left: 12px;\">&radic;<i>D</i> = &radic;2401 = 49</div>\n        <div style=\"padding-left: 12px; margin-top: 6px;\"><i>x</i> = <span class=\"frac\"><span class=\"num\">&minus;1 &plusmn; 49</span><span class=\"den\">2(2)</span></span> = <span class=\"frac\"><span class=\"num\">&minus;1 &plusmn; 49</span><span class=\"den\">4</span></span></div>\n        <div style=\"padding-left: 12px;\">&rArr; <i>x</i> = <span class=\"frac\"><span class=\"num\">&minus;1 + 49</span><span class=\"den\">4</span></span> = <span class=\"frac\"><span class=\"num\">48</span><span class=\"den\">4</span></span> = <b>12</b> &nbsp; or &nbsp; <i>x</i> = <span class=\"frac\"><span class=\"num\">&minus;50</span><span class=\"den\">4</span></span> = &minus;12.5</div>\n        <div>Since breadth cannot be negative, we reject <i>x</i> = &minus;12.5.</div>\n        <div style=\"margin-top: 6px;\">Breadth = <b>12 m</b>, &nbsp; Length = 2(12) + 1 = <b>25 m</b>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Dimensions: </span>\n        <span class=\"ans-val\">Breadth = 12 m, &nbsp; Length = 25 m</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- EXAMPLE 8 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 8:</div>\n    <div class=\"q-text\">A pole has to be erected at a point on the boundary of a circular park of diameter 13 metres in such a way that the difference of its distances from two diametrically opposite fixed gates A and B on the boundary is 7 metres. Is it possible to do so? If yes, at what distances from the two gates should the pole be erected?</div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Easy Step-by-Step Solution:</div>\n      <div class=\"sol-step\">\n        <div>Let P be the required position of the pole.</div>\n        <div>Let distance from gate B, <i>PB</i> = <i>x</i> metres.</div>\n        <div>Then distance from gate A, <i>PA</i> = (<i>x</i> + 7) metres <span class=\"reason\">[Difference is 7 m]</span>.</div>\n        <div>Diameter <i>AB</i> = 13 metres.</div>\n        <div>&ang;APB = 90&deg; <span class=\"reason\">[Angle in a semicircle is a right angle]</span>.</div>\n        <div style=\"margin-top: 6px;\">Applying Pythagoras theorem in &Delta;APB:</div>\n        <div style=\"padding-left: 12px;\"><i>PA</i><sup>2</sup> + <i>PB</i><sup>2</sup> = <i>AB</i><sup>2</sup></div>\n        <div style=\"padding-left: 12px;\">&rArr; (<i>x</i> + 7)<sup>2</sup> + <i>x</i><sup>2</sup> = 13<sup>2</sup></div>\n        <div style=\"padding-left: 12px;\">&rArr; <i>x</i><sup>2</sup> + 14<i>x</i> + 49 + <i>x</i><sup>2</sup> = 169</div>\n        <div style=\"padding-left: 12px;\">&rArr; 2<i>x</i><sup>2</sup> + 14<i>x</i> + 49 &minus; 169 = 0</div>\n        <div style=\"padding-left: 12px;\">&rArr; 2<i>x</i><sup>2</sup> + 14<i>x</i> &minus; 120 = 0</div>\n        <div style=\"padding-left: 12px;\">&rArr; <b><i>x</i><sup>2</sup> + 7<i>x</i> &minus; 60 = 0</b> <span class=\"reason\">[Dividing by 2]</span></div>\n        <div style=\"margin-top: 6px;\">Checking possibility using Discriminant: <i>a</i> = 1, <i>b</i> = 7, <i>c</i> = &minus;60:</div>\n        <div style=\"padding-left: 12px;\"><i>D</i> = <i>b</i><sup>2</sup> &minus; 4<i>ac</i> = 7<sup>2</sup> &minus; 4(1)(&minus;60) = 49 + 240 = <b>289 &gt; 0</b></div>\n        <div>Since <i>D</i> &gt; 0, real roots exist, so it is <b>possible</b> to erect the pole!</div>\n        <div style=\"margin-top: 6px;\">Solving for <i>x</i>:</div>\n        <div style=\"padding-left: 12px;\"><i>x</i> = <span class=\"frac\"><span class=\"num\">&minus;7 &plusmn; &radic;289</span><span class=\"den\">2(1)</span></span> = <span class=\"frac\"><span class=\"num\">&minus;7 &plusmn; 17</span><span class=\"den\">2</span></span></div>\n        <div style=\"padding-left: 12px;\">&rArr; <i>x</i> = <span class=\"frac\"><span class=\"num\">&minus;7 + 17</span><span class=\"den\">2</span></span> = <span class=\"frac\"><span class=\"num\">10</span><span class=\"den\">2</span></span> = <b>5</b> &nbsp; or &nbsp; <i>x</i> = <span class=\"frac\"><span class=\"num\">&minus;24</span><span class=\"den\">2</span></span> = &minus;12 (reject distance)</div>\n        <div style=\"margin-top: 6px;\">Therefore: <i>PB</i> = <b>5 m</b>, &nbsp; <i>PA</i> = 5 + 7 = <b>12 m</b>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Answer: </span>\n        <span class=\"ans-val\">Yes, possible; Distances are 5 m and 12 m from the two gates.</span>\n      </div>\n    </div>\n  </div>\n\n</div>\n",
+    "exercise1": "\n\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; }\n  .frac .den { padding: 1px 4px; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 109, 0, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FF6D00; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 14px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(255, 109, 0, 0.2); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FF6D00; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFB74D; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(255, 109, 0, 0.15); border: 1px solid #FF6D00; color: #FFB74D; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 6px 0; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 109, 0, 0.4); border-radius: 10px; padding: 14px; margin: 16px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #FFFFFF; border-radius: 8px; padding: 10px 8px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.25); }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 10px; font-weight: 500; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Header Card -->\n  <div style=\"background: linear-gradient(135deg, rgba(255, 109, 0, 0.2), rgba(230, 81, 0, 0.1)); border: 1.5px solid #FF6D00; border-radius: 12px; padding: 14px 18px; margin-bottom: 20px;\">\n    <div style=\"font-size: 19px; font-weight: 800; color: #FF6D00; margin-bottom: 4px;\">\n      Exercise 4.1\n    </div>\n    <div style=\"color: #FFFFFF; font-size: 15px; font-weight: 500;\">\n      Identifying Quadratic Equations &amp; Mathematical Modelling of Word Situations\n    </div>\n  </div>\n\n  <!-- QUESTION 1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 1:</div>\n    <div class=\"q-text\">Check whether the following are quadratic equations:</div>\n\n    <!-- Part (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FF6D00;\">(i)</b> (<i>x</i> + 1)<sup>2</sup> = 2(<i>x</i> &minus; 3)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>LHS = <i>x</i><sup>2</sup> + 2<i>x</i> + 1</div>\n          <div>RHS = 2<i>x</i> &minus; 6</div>\n          <div style=\"margin-top: 6px;\">Equating LHS and RHS:</div>\n          <div style=\"padding-left: 12px;\"><i>x</i><sup>2</sup> + 2<i>x</i> + 1 = 2<i>x</i> &minus; 6</div>\n          <div style=\"padding-left: 12px;\">&rArr; <i>x</i><sup>2</sup> + 2<i>x</i> &minus; 2<i>x</i> + 1 + 6 = 0</div>\n          <div style=\"padding-left: 12px;\">&rArr; <b><i>x</i><sup>2</sup> + 7 = 0</b></div>\n          <div>It is of the standard form <i>ax</i><sup>2</sup> + <i>bx</i> + <i>c</i> = 0 (where <i>a</i> = 1 &ne; 0, <i>b</i> = 0, <i>c</i> = 7).</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Result: </span><span class=\"ans-val\">Yes, it is a quadratic equation.</span></div>\n      </div>\n    </div>\n\n    <!-- Part (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FF6D00;\">(ii)</b> <i>x</i><sup>2</sup> &minus; 2<i>x</i> = (&minus;2)(3 &minus; <i>x</i>)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>RHS = &minus;6 + 2<i>x</i></div>\n          <div style=\"margin-top: 6px;\">Equating LHS and RHS:</div>\n          <div style=\"padding-left: 12px;\"><i>x</i><sup>2</sup> &minus; 2<i>x</i> = &minus;6 + 2<i>x</i></div>\n          <div style=\"padding-left: 12px;\">&rArr; <i>x</i><sup>2</sup> &minus; 2<i>x</i> &minus; 2<i>x</i> + 6 = 0</div>\n          <div style=\"padding-left: 12px;\">&rArr; <b><i>x</i><sup>2</sup> &minus; 4<i>x</i> + 6 = 0</b></div>\n          <div>It is of the standard form <i>ax</i><sup>2</sup> + <i>bx</i> + <i>c</i> = 0 with <i>a</i> = 1 &ne; 0.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Result: </span><span class=\"ans-val\">Yes, it is a quadratic equation.</span></div>\n      </div>\n    </div>\n\n    <!-- Part (iii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FF6D00;\">(iii)</b> (<i>x</i> &minus; 2)(<i>x</i> + 1) = (<i>x</i> &minus; 1)(<i>x</i> + 3)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>LHS = <i>x</i><sup>2</sup> + <i>x</i> &minus; 2<i>x</i> &minus; 2 = <i>x</i><sup>2</sup> &minus; <i>x</i> &minus; 2</div>\n          <div>RHS = <i>x</i><sup>2</sup> + 3<i>x</i> &minus; <i>x</i> &minus; 3 = <i>x</i><sup>2</sup> + 2<i>x</i> &minus; 3</div>\n          <div style=\"margin-top: 6px;\">Equating LHS and RHS:</div>\n          <div style=\"padding-left: 12px;\"><i>x</i><sup>2</sup> &minus; <i>x</i> &minus; 2 = <i>x</i><sup>2</sup> + 2<i>x</i> &minus; 3</div>\n          <div style=\"padding-left: 12px;\">&rArr; &minus;<i>x</i> &minus; 2<i>x</i> &minus; 2 + 3 = 0 <span class=\"reason\">[<i>x</i><sup>2</sup> cancels on both sides]</span></div>\n          <div style=\"padding-left: 12px;\">&rArr; <b>&minus;3<i>x</i> + 1 = 0</b> &nbsp;or&nbsp; <b>3<i>x</i> &minus; 1 = 0</b></div>\n          <div>Degree is 1 (Linear equation). There is no <i>x</i><sup>2</sup> term.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Result: </span><span class=\"ans-val\">No, it is not a quadratic equation.</span></div>\n      </div>\n    </div>\n\n    <!-- Part (iv) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FF6D00;\">(iv)</b> (<i>x</i> &minus; 3)(2<i>x</i> + 1) = <i>x</i>(<i>x</i> + 5)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>LHS = 2<i>x</i><sup>2</sup> + <i>x</i> &minus; 6<i>x</i> &minus; 3 = 2<i>x</i><sup>2</sup> &minus; 5<i>x</i> &minus; 3</div>\n          <div>RHS = <i>x</i><sup>2</sup> + 5<i>x</i></div>\n          <div style=\"margin-top: 6px;\">Equating LHS and RHS:</div>\n          <div style=\"padding-left: 12px;\">2<i>x</i><sup>2</sup> &minus; 5<i>x</i> &minus; 3 = <i>x</i><sup>2</sup> + 5<i>x</i></div>\n          <div style=\"padding-left: 12px;\">&rArr; 2<i>x</i><sup>2</sup> &minus; <i>x</i><sup>2</sup> &minus; 5<i>x</i> &minus; 5<i>x</i> &minus; 3 = 0</div>\n          <div style=\"padding-left: 12px;\">&rArr; <b><i>x</i><sup>2</sup> &minus; 10<i>x</i> &minus; 3 = 0</b></div>\n          <div>It is of the standard form <i>ax</i><sup>2</sup> + <i>bx</i> + <i>c</i> = 0 with <i>a</i> = 1 &ne; 0.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Result: </span><span class=\"ans-val\">Yes, it is a quadratic equation.</span></div>\n      </div>\n    </div>\n\n    <!-- Part (v) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FF6D00;\">(v)</b> (2<i>x</i> &minus; 1)(<i>x</i> &minus; 3) = (<i>x</i> + 5)(<i>x</i> &minus; 1)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>LHS = 2<i>x</i><sup>2</sup> &minus; 6<i>x</i> &minus; <i>x</i> + 3 = 2<i>x</i><sup>2</sup> &minus; 7<i>x</i> + 3</div>\n          <div>RHS = <i>x</i><sup>2</sup> &minus; <i>x</i> + 5<i>x</i> &minus; 5 = <i>x</i><sup>2</sup> + 4<i>x</i> &minus; 5</div>\n          <div style=\"margin-top: 6px;\">Equating LHS and RHS:</div>\n          <div style=\"padding-left: 12px;\">2<i>x</i><sup>2</sup> &minus; 7<i>x</i> + 3 = <i>x</i><sup>2</sup> + 4<i>x</i> &minus; 5</div>\n          <div style=\"padding-left: 12px;\">&rArr; 2<i>x</i><sup>2</sup> &minus; <i>x</i><sup>2</sup> &minus; 7<i>x</i> &minus; 4<i>x</i> + 3 + 5 = 0</div>\n          <div style=\"padding-left: 12px;\">&rArr; <b><i>x</i><sup>2</sup> &minus; 11<i>x</i> + 8 = 0</b></div>\n          <div>It is of the standard form <i>ax</i><sup>2</sup> + <i>bx</i> + <i>c</i> = 0 with <i>a</i> = 1 &ne; 0.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Result: </span><span class=\"ans-val\">Yes, it is a quadratic equation.</span></div>\n      </div>\n    </div>\n\n    <!-- Part (vi) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FF6D00;\">(vi)</b> <i>x</i><sup>2</sup> + 3<i>x</i> + 1 = (<i>x</i> &minus; 2)<sup>2</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>LHS = <i>x</i><sup>2</sup> + 3<i>x</i> + 1</div>\n          <div>RHS = <i>x</i><sup>2</sup> &minus; 4<i>x</i> + 4</div>\n          <div style=\"margin-top: 6px;\">Equating LHS and RHS:</div>\n          <div style=\"padding-left: 12px;\"><i>x</i><sup>2</sup> + 3<i>x</i> + 1 = <i>x</i><sup>2</sup> &minus; 4<i>x</i> + 4</div>\n          <div style=\"padding-left: 12px;\">&rArr; 3<i>x</i> + 4<i>x</i> + 1 &minus; 4 = 0 <span class=\"reason\">[<i>x</i><sup>2</sup> cancels on both sides]</span></div>\n          <div style=\"padding-left: 12px;\">&rArr; <b>7<i>x</i> &minus; 3 = 0</b></div>\n          <div>Degree is 1 (Linear equation). There is no <i>x</i><sup>2</sup> term.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Result: </span><span class=\"ans-val\">No, it is not a quadratic equation.</span></div>\n      </div>\n    </div>\n\n    <!-- Part (vii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FF6D00;\">(vii)</b> (<i>x</i> + 2)<sup>3</sup> = 2<i>x</i>(<i>x</i><sup>2</sup> &minus; 1)</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Expanding LHS: <i>x</i><sup>3</sup> + 3(<i>x</i>)<sup>2</sup>(2) + 3(<i>x</i>)(2)<sup>2</sup> + 2<sup>3</sup> = <i>x</i><sup>3</sup> + 6<i>x</i><sup>2</sup> + 12<i>x</i> + 8</div>\n          <div>Expanding RHS: 2<i>x</i>(<i>x</i><sup>2</sup> &minus; 1) = 2<i>x</i><sup>3</sup> &minus; 2<i>x</i></div>\n          <div style=\"margin-top: 6px;\">Equating LHS and RHS:</div>\n          <div style=\"padding-left: 12px;\"><i>x</i><sup>3</sup> + 6<i>x</i><sup>2</sup> + 12<i>x</i> + 8 = 2<i>x</i><sup>3</sup> &minus; 2<i>x</i></div>\n          <div style=\"padding-left: 12px;\">&rArr; <i>x</i><sup>3</sup> &minus; 2<i>x</i><sup>3</sup> + 6<i>x</i><sup>2</sup> + 12<i>x</i> + 2<i>x</i> + 8 = 0</div>\n          <div style=\"padding-left: 12px;\">&rArr; &minus;<i>x</i><sup>3</sup> + 6<i>x</i><sup>2</sup> + 14<i>x</i> + 8 = 0</div>\n          <div style=\"padding-left: 12px;\">&rArr; <b><i>x</i><sup>3</sup> &minus; 6<i>x</i><sup>2</sup> &minus; 14<i>x</i> &minus; 8 = 0</b></div>\n          <div>The degree of this equation is 3 (Cubic equation), not 2.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Result: </span><span class=\"ans-val\">No, it is not a quadratic equation.</span></div>\n      </div>\n    </div>\n\n    <!-- Part (viii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FF6D00;\">(viii)</b> <i>x</i><sup>3</sup> &minus; 4<i>x</i><sup>2</sup> &minus; <i>x</i> + 1 = (<i>x</i> &minus; 2)<sup>3</sup></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Expanding RHS using (<i>a</i> &minus; <i>b</i>)<sup>3</sup> = <i>a</i><sup>3</sup> &minus; 3<i>a</i><sup>2</sup><i>b</i> + 3<i>ab</i><sup>2</sup> &minus; <i>b</i><sup>3</sup>:</div>\n          <div style=\"padding-left: 12px;\">RHS = <i>x</i><sup>3</sup> &minus; 6<i>x</i><sup>2</sup> + 12<i>x</i> &minus; 8</div>\n          <div>Equating LHS and RHS:</div>\n          <div style=\"padding-left: 12px;\"><i>x</i><sup>3</sup> &minus; 4<i>x</i><sup>2</sup> &minus; <i>x</i> + 1 = <i>x</i><sup>3</sup> &minus; 6<i>x</i><sup>2</sup> + 12<i>x</i> &minus; 8</div>\n          <div style=\"padding-left: 12px;\">&rArr; &minus;4<i>x</i><sup>2</sup> + 6<i>x</i><sup>2</sup> &minus; <i>x</i> &minus; 12<i>x</i> + 1 + 8 = 0 <span class=\"reason\">[<i>x</i><sup>3</sup> cancels on both sides]</span></div>\n          <div style=\"padding-left: 12px;\">&rArr; <b>2<i>x</i><sup>2</sup> &minus; 13<i>x</i> + 9 = 0</b></div>\n          <div>It is of the standard form <i>ax</i><sup>2</sup> + <i>bx</i> + <i>c</i> = 0 with <i>a</i> = 2 &ne; 0.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Result: </span><span class=\"ans-val\">Yes, it is a quadratic equation.</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 2 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 2:</div>\n    <div class=\"q-text\">Represent the following situations in the form of quadratic equations:</div>\n\n    <!-- Part (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FF6D00;\">(i)</b> The area of a rectangular plot is 528 m<sup>2</sup>. The length of the plot (in metres) is one more than twice its breadth. We need to find the length and breadth of the plot.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Let the breadth of the rectangular plot = <i>x</i> metres.</div>\n          <div>Then length of the plot = (2<i>x</i> + 1) metres.</div>\n          <div style=\"margin-top: 6px;\">Area of a rectangle = Length &times; Breadth:</div>\n          <div style=\"padding-left: 12px;\"><i>x</i>(2<i>x</i> + 1) = 528</div>\n          <div style=\"padding-left: 12px;\">&rArr; 2<i>x</i><sup>2</sup> + <i>x</i> = 528</div>\n          <div style=\"padding-left: 12px;\">&rArr; <b>2<i>x</i><sup>2</sup> + <i>x</i> &minus; 528 = 0</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Required Equation: </span><span class=\"ans-val\">2<i>x</i><sup>2</sup> + <i>x</i> &minus; 528 = 0 &nbsp;(where <i>x</i> is breadth in metres)</span></div>\n      </div>\n    </div>\n\n    <!-- Part (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FF6D00;\">(ii)</b> The product of two consecutive positive integers is 306. We need to find the integers.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Let the smaller positive integer = <i>x</i>.</div>\n          <div>Then the next consecutive positive integer = (<i>x</i> + 1).</div>\n          <div style=\"margin-top: 6px;\">According to the given condition, their product is 306:</div>\n          <div style=\"padding-left: 12px;\"><i>x</i>(<i>x</i> + 1) = 306</div>\n          <div style=\"padding-left: 12px;\">&rArr; <i>x</i><sup>2</sup> + <i>x</i> = 306</div>\n          <div style=\"padding-left: 12px;\">&rArr; <b><i>x</i><sup>2</sup> + <i>x</i> &minus; 306 = 0</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Required Equation: </span><span class=\"ans-val\"><i>x</i><sup>2</sup> + <i>x</i> &minus; 306 = 0 &nbsp;(where <i>x</i> is the smaller integer)</span></div>\n      </div>\n    </div>\n\n    <!-- Part (iii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FF6D00;\">(iii)</b> Rohan's mother is 26 years older than him. The product of their ages (in years) 3 years from now will be 360. We would like to find Rohan's present age.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Let Rohan's present age = <i>x</i> years.</div>\n          <div>Then his mother's present age = (<i>x</i> + 26) years.</div>\n          <div style=\"margin-top: 6px;\">After 3 years from now:</div>\n          <div style=\"padding-left: 12px;\">Rohan's age = (<i>x</i> + 3) years</div>\n          <div style=\"padding-left: 12px;\">Mother's age = (<i>x</i> + 26 + 3) = (<i>x</i> + 29) years</div>\n          <div style=\"margin-top: 6px;\">Product of their ages will be 360:</div>\n          <div style=\"padding-left: 12px;\">(<i>x</i> + 3)(<i>x</i> + 29) = 360</div>\n          <div style=\"padding-left: 12px;\">&rArr; <i>x</i><sup>2</sup> + 29<i>x</i> + 3<i>x</i> + 87 = 360</div>\n          <div style=\"padding-left: 12px;\">&rArr; <i>x</i><sup>2</sup> + 32<i>x</i> + 87 &minus; 360 = 0</div>\n          <div style=\"padding-left: 12px;\">&rArr; <b><i>x</i><sup>2</sup> + 32<i>x</i> &minus; 273 = 0</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Required Equation: </span><span class=\"ans-val\"><i>x</i><sup>2</sup> + 32<i>x</i> &minus; 273 = 0 &nbsp;(where <i>x</i> is Rohan's present age in years)</span></div>\n      </div>\n    </div>\n\n    <!-- Part (iv) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FF6D00;\">(iv)</b> A train travels a distance of 480 km at a uniform speed. If the speed had been 8 km/h less, then it would have taken 3 hours more to cover the same distance. We need to find the speed of the train.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Let the uniform speed of the train = <i>x</i> km/h.</div>\n          <div>Total distance = 480 km.</div>\n          <div style=\"margin-top: 6px;\">Time taken at usual speed: <i>t</i><sub>1</sub> = <span class=\"frac\"><span class=\"num\">480</span><span class=\"den\">x</span></span> hours.</div>\n          <div>Reduced speed = (<i>x</i> &minus; 8) km/h.</div>\n          <div>Time taken at reduced speed: <i>t</i><sub>2</sub> = <span class=\"frac\"><span class=\"num\">480</span><span class=\"den\">x &minus; 8</span></span> hours.</div>\n          <div style=\"margin-top: 6px;\">Given that <i>t</i><sub>2</sub> &minus; <i>t</i><sub>1</sub> = 3 hours:</div>\n          <div style=\"padding-left: 12px;\"><span class=\"frac\"><span class=\"num\">480</span><span class=\"den\">x &minus; 8</span></span> &minus; <span class=\"frac\"><span class=\"num\">480</span><span class=\"den\">x</span></span> = 3</div>\n          <div style=\"padding-left: 12px;\">&rArr; 480 [ <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">x &minus; 8</span></span> &minus; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">x</span></span> ] = 3</div>\n          <div style=\"padding-left: 12px;\">&rArr; 480 [ <span class=\"frac\"><span class=\"num\">x &minus; (x &minus; 8)</span><span class=\"den\">x(x &minus; 8)</span></span> ] = 3</div>\n          <div style=\"padding-left: 12px;\">&rArr; 480 [ <span class=\"frac\"><span class=\"num\">8</span><span class=\"den\">x<sup>2</sup> &minus; 8x</span></span> ] = 3</div>\n          <div style=\"padding-left: 12px;\">&rArr; 160 &times; 8 = <i>x</i><sup>2</sup> &minus; 8<i>x</i> <span class=\"reason\">[Dividing both sides by 3]</span></div>\n          <div style=\"padding-left: 12px;\">&rArr; 1280 = <i>x</i><sup>2</sup> &minus; 8<i>x</i></div>\n          <div style=\"padding-left: 12px;\">&rArr; <b><i>x</i><sup>2</sup> &minus; 8<i>x</i> &minus; 1280 = 0</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Required Equation: </span><span class=\"ans-val\"><i>x</i><sup>2</sup> &minus; 8<i>x</i> &minus; 1280 = 0 &nbsp;(where <i>x</i> is speed in km/h)</span></div>\n      </div>\n    </div>\n  </div>\n\n</div>\n",
+    "exercise2": "\n\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; }\n  .frac .den { padding: 1px 4px; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 109, 0, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FF6D00; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 14px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(255, 109, 0, 0.2); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FF6D00; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFB74D; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(255, 109, 0, 0.15); border: 1px solid #FF6D00; color: #FFB74D; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 6px 0; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 109, 0, 0.4); border-radius: 10px; padding: 14px; margin: 16px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #FFFFFF; border-radius: 8px; padding: 10px 8px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.25); }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 10px; font-weight: 500; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Header Card -->\n  <div style=\"background: linear-gradient(135deg, rgba(255, 109, 0, 0.2), rgba(230, 81, 0, 0.1)); border: 1.5px solid #FF6D00; border-radius: 12px; padding: 14px 18px; margin-bottom: 20px;\">\n    <div style=\"font-size: 19px; font-weight: 800; color: #FF6D00; margin-bottom: 4px;\">\n      Exercise 4.2\n    </div>\n    <div style=\"color: #FFFFFF; font-size: 15px; font-weight: 500;\">\n      Solving Quadratic Equations by Factorisation &amp; Word Problems\n    </div>\n  </div>\n\n  <!-- QUESTION 1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 1:</div>\n    <div class=\"q-text\">Find the roots of the following quadratic equations by factorisation:</div>\n\n    <!-- Part (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FF6D00;\">(i)</b> <i>x</i><sup>2</sup> &minus; 3<i>x</i> &minus; 10 = 0</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Find two numbers whose product is &minus;10 and sum is &minus;3 &rArr; <b>&minus;5</b> and <b>2</b>.</div>\n          <div style=\"padding-left: 12px; margin-top: 6px;\"><i>x</i><sup>2</sup> &minus; 5<i>x</i> + 2<i>x</i> &minus; 10 = 0</div>\n          <div style=\"padding-left: 12px;\">&rArr; <i>x</i>(<i>x</i> &minus; 5) + 2(<i>x</i> &minus; 5) = 0</div>\n          <div style=\"padding-left: 12px;\">&rArr; (<i>x</i> &minus; 5)(<i>x</i> + 2) = 0</div>\n          <div style=\"margin-top: 6px;\">Setting each factor to zero:</div>\n          <div style=\"padding-left: 12px;\"><i>x</i> &minus; 5 = 0 &nbsp;&rArr;&nbsp; <b><i>x</i> = 5</b></div>\n          <div style=\"padding-left: 12px;\"><i>x</i> + 2 = 0 &nbsp;&rArr;&nbsp; <b><i>x</i> = &minus;2</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Roots: </span><span class=\"ans-val\"><i>x</i> = 5 and <i>x</i> = &minus;2</span></div>\n      </div>\n    </div>\n\n    <!-- Part (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FF6D00;\">(ii)</b> 2<i>x</i><sup>2</sup> + <i>x</i> &minus; 6 = 0</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Find two numbers whose product is 2 &times; (&minus;6) = &minus;12 and sum is 1 &rArr; <b>4</b> and <b>&minus;3</b>.</div>\n          <div style=\"padding-left: 12px; margin-top: 6px;\">2<i>x</i><sup>2</sup> + 4<i>x</i> &minus; 3<i>x</i> &minus; 6 = 0</div>\n          <div style=\"padding-left: 12px;\">&rArr; 2<i>x</i>(<i>x</i> + 2) &minus; 3(<i>x</i> + 2) = 0</div>\n          <div style=\"padding-left: 12px;\">&rArr; (2<i>x</i> &minus; 3)(<i>x</i> + 2) = 0</div>\n          <div style=\"margin-top: 6px;\">Setting each factor to zero:</div>\n          <div style=\"padding-left: 12px;\">2<i>x</i> &minus; 3 = 0 &nbsp;&rArr;&nbsp; <b><i>x</i> = <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">2</span></span></b></div>\n          <div style=\"padding-left: 12px;\"><i>x</i> + 2 = 0 &nbsp;&rArr;&nbsp; <b><i>x</i> = &minus;2</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Roots: </span><span class=\"ans-val\"><i>x</i> = <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">2</span></span> and <i>x</i> = &minus;2</span></div>\n      </div>\n    </div>\n\n    <!-- Part (iii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FF6D00;\">(iii)</b> &radic;2<i>x</i><sup>2</sup> + 7<i>x</i> + 5&radic;2 = 0</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Product = &radic;2 &times; 5&radic;2 = 5 &times; 2 = 10. &nbsp; Sum = 7 &rArr; <b>2</b> and <b>5</b>.</div>\n          <div style=\"padding-left: 12px; margin-top: 6px;\">&radic;2<i>x</i><sup>2</sup> + 2<i>x</i> + 5<i>x</i> + 5&radic;2 = 0</div>\n          <div style=\"padding-left: 12px;\">&rArr; &radic;2<i>x</i>(<i>x</i> + &radic;2) + 5(<i>x</i> + &radic;2) = 0 <span class=\"reason\">[Since 2 = &radic;2 &times; &radic;2]</span></div>\n          <div style=\"padding-left: 12px;\">&rArr; (&radic;2<i>x</i> + 5)(<i>x</i> + &radic;2) = 0</div>\n          <div style=\"margin-top: 6px;\">Setting each factor to zero:</div>\n          <div style=\"padding-left: 12px;\">&radic;2<i>x</i> + 5 = 0 &nbsp;&rArr;&nbsp; <b><i>x</i> = &minus;<span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">&radic;2</span></span> = &minus;<span class=\"frac\"><span class=\"num\">5&radic;2</span><span class=\"den\">2</span></span></b></div>\n          <div style=\"padding-left: 12px;\"><i>x</i> + &radic;2 = 0 &nbsp;&rArr;&nbsp; <b><i>x</i> = &minus;&radic;2</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Roots: </span><span class=\"ans-val\"><i>x</i> = &minus;<span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">&radic;2</span></span> and <i>x</i> = &minus;&radic;2</span></div>\n      </div>\n    </div>\n\n    <!-- Part (iv) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FF6D00;\">(iv)</b> 2<i>x</i><sup>2</sup> &minus; <i>x</i> + <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">8</span></span> = 0</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Multiply the entire equation by 8 to clear the fraction:</div>\n          <div style=\"padding-left: 12px;\">16<i>x</i><sup>2</sup> &minus; 8<i>x</i> + 1 = 0</div>\n          <div style=\"margin-top: 6px;\">Notice that 16<i>x</i><sup>2</sup> = (4<i>x</i>)<sup>2</sup> and 1 = 1<sup>2</sup>:</div>\n          <div style=\"padding-left: 12px;\">(4<i>x</i>)<sup>2</sup> &minus; 2(4<i>x</i>)(1) + 1<sup>2</sup> = 0</div>\n          <div style=\"padding-left: 12px;\">&rArr; (4<i>x</i> &minus; 1)<sup>2</sup> = 0</div>\n          <div style=\"padding-left: 12px;\">&rArr; (4<i>x</i> &minus; 1)(4<i>x</i> &minus; 1) = 0</div>\n          <div style=\"margin-top: 6px;\">Setting each factor to zero:</div>\n          <div style=\"padding-left: 12px;\">4<i>x</i> &minus; 1 = 0 &nbsp;&rArr;&nbsp; <b><i>x</i> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span></b></div>\n          <div style=\"padding-left: 12px;\">4<i>x</i> &minus; 1 = 0 &nbsp;&rArr;&nbsp; <b><i>x</i> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Equal Roots: </span><span class=\"ans-val\"><i>x</i> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span>, &nbsp; <i>x</i> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span></span></div>\n      </div>\n    </div>\n\n    <!-- Part (v) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FF6D00;\">(v)</b> 100<i>x</i><sup>2</sup> &minus; 20<i>x</i> + 1 = 0</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Notice that 100<i>x</i><sup>2</sup> = (10<i>x</i>)<sup>2</sup> and 1 = 1<sup>2</sup>:</div>\n          <div style=\"padding-left: 12px;\">(10<i>x</i>)<sup>2</sup> &minus; 2(10<i>x</i>)(1) + 1<sup>2</sup> = 0</div>\n          <div style=\"padding-left: 12px;\">&rArr; (10<i>x</i> &minus; 1)<sup>2</sup> = 0</div>\n          <div style=\"padding-left: 12px;\">&rArr; (10<i>x</i> &minus; 1)(10<i>x</i> &minus; 1) = 0</div>\n          <div style=\"margin-top: 6px;\">Setting each factor to zero:</div>\n          <div style=\"padding-left: 12px;\">10<i>x</i> &minus; 1 = 0 &nbsp;&rArr;&nbsp; <b><i>x</i> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">10</span></span></b></div>\n          <div style=\"padding-left: 12px;\">10<i>x</i> &minus; 1 = 0 &nbsp;&rArr;&nbsp; <b><i>x</i> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">10</span></span></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Equal Roots: </span><span class=\"ans-val\"><i>x</i> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">10</span></span>, &nbsp; <i>x</i> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">10</span></span></span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 2 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 2:</div>\n    <div class=\"q-text\">Solve the mathematical problems given in Example 1:</div>\n\n    <!-- Part (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FF6D00;\">(i)</b> John and Jivanti together have 45 marbles. Both lost 5 marbles each, and the product of the marbles they now have is 124. Find how many marbles they had to start with.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>From Example 1(i), the quadratic equation formed is:</div>\n          <div style=\"padding-left: 12px;\"><b><i>x</i><sup>2</sup> &minus; 45<i>x</i> + 324 = 0</b></div>\n          <div style=\"margin-top: 6px;\">Splitting middle term: Find two numbers whose product is 324 and sum is &minus;45 &rArr; <b>&minus;36</b> and <b>&minus;9</b>.</div>\n          <div style=\"padding-left: 12px;\"><i>x</i><sup>2</sup> &minus; 36<i>x</i> &minus; 9<i>x</i> + 324 = 0</div>\n          <div style=\"padding-left: 12px;\">&rArr; <i>x</i>(<i>x</i> &minus; 36) &minus; 9(<i>x</i> &minus; 36) = 0</div>\n          <div style=\"padding-left: 12px;\">&rArr; (<i>x</i> &minus; 36)(<i>x</i> &minus; 9) = 0</div>\n          <div style=\"margin-top: 6px;\">&rArr; <i>x</i> = 36 &nbsp;or&nbsp; <i>x</i> = 9.</div>\n          <div style=\"margin-top: 6px;\">&bull; If John had 36 marbles, Jivanti had 45 &minus; 36 = 9 marbles.<br/>&bull; If John had 9 marbles, Jivanti had 45 &minus; 9 = 36 marbles.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">Number of marbles are 36 and 9</span></div>\n      </div>\n    </div>\n\n    <!-- Part (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FF6D00;\">(ii)</b> A cottage industry produces a certain number of toys in a day. Cost of each toy is ₹ (55 &minus; <i>x</i>). Total cost was ₹ 750. Find the number of toys produced on that day.</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>From Example 1(ii), the quadratic equation formed is:</div>\n          <div style=\"padding-left: 12px;\"><b><i>x</i><sup>2</sup> &minus; 55<i>x</i> + 750 = 0</b></div>\n          <div style=\"margin-top: 6px;\">Splitting middle term: Find two numbers whose product is 750 and sum is &minus;55 &rArr; <b>&minus;30</b> and <b>&minus;25</b>.</div>\n          <div style=\"padding-left: 12px;\"><i>x</i><sup>2</sup> &minus; 30<i>x</i> &minus; 25<i>x</i> + 750 = 0</div>\n          <div style=\"padding-left: 12px;\">&rArr; <i>x</i>(<i>x</i> &minus; 30) &minus; 25(<i>x</i> &minus; 30) = 0</div>\n          <div style=\"padding-left: 12px;\">&rArr; (<i>x</i> &minus; 30)(<i>x</i> &minus; 25) = 0</div>\n          <div style=\"margin-top: 6px;\">&rArr; <i>x</i> = 30 &nbsp;or&nbsp; <i>x</i> = 25.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">Number of toys produced on that day is either 30 or 25</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 3 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 3:</div>\n    <div class=\"q-text\">Find two numbers whose sum is 27 and product is 182.</div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Easy Step-by-Step Solution:</div>\n      <div class=\"sol-step\">\n        <div>Let the first number = <i>x</i>.</div>\n        <div>Then the second number = (27 &minus; <i>x</i>) <span class=\"reason\">[Sum is 27]</span>.</div>\n        <div style=\"margin-top: 6px;\">Their product is 182:</div>\n        <div style=\"padding-left: 12px;\"><i>x</i>(27 &minus; <i>x</i>) = 182</div>\n        <div style=\"padding-left: 12px;\">&rArr; 27<i>x</i> &minus; <i>x</i><sup>2</sup> = 182</div>\n        <div style=\"padding-left: 12px;\">&rArr; <i>x</i><sup>2</sup> &minus; 27<i>x</i> + 182 = 0</div>\n        <div style=\"margin-top: 6px;\">Splitting middle term: Find two numbers whose product is 182 and sum is &minus;27 &rArr; <b>&minus;13</b> and <b>&minus;14</b>.</div>\n        <div style=\"padding-left: 12px;\"><i>x</i><sup>2</sup> &minus; 13<i>x</i> &minus; 14<i>x</i> + 182 = 0</div>\n        <div style=\"padding-left: 12px;\">&rArr; <i>x</i>(<i>x</i> &minus; 13) &minus; 14(<i>x</i> &minus; 13) = 0</div>\n        <div style=\"padding-left: 12px;\">&rArr; (<i>x</i> &minus; 13)(<i>x</i> &minus; 14) = 0</div>\n        <div style=\"margin-top: 6px;\">&rArr; <i>x</i> = 13 &nbsp;or&nbsp; <i>x</i> = 14.</div>\n        <div>If first number is 13, second number is 27 &minus; 13 = 14.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Two Numbers: </span>\n        <span class=\"ans-val\">13 and 14</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 4 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 4:</div>\n    <div class=\"q-text\">Find two consecutive positive integers, sum of whose squares is 365.</div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Easy Step-by-Step Solution:</div>\n      <div class=\"sol-step\">\n        <div>Let the consecutive positive integers be <i>x</i> and (<i>x</i> + 1).</div>\n        <div style=\"margin-top: 6px;\">Sum of their squares is 365:</div>\n        <div style=\"padding-left: 12px;\"><i>x</i><sup>2</sup> + (<i>x</i> + 1)<sup>2</sup> = 365</div>\n        <div style=\"padding-left: 12px;\">&rArr; <i>x</i><sup>2</sup> + (<i>x</i><sup>2</sup> + 2<i>x</i> + 1) = 365</div>\n        <div style=\"padding-left: 12px;\">&rArr; 2<i>x</i><sup>2</sup> + 2<i>x</i> + 1 &minus; 365 = 0</div>\n        <div style=\"padding-left: 12px;\">&rArr; 2<i>x</i><sup>2</sup> + 2<i>x</i> &minus; 364 = 0</div>\n        <div style=\"padding-left: 12px;\">&rArr; <b><i>x</i><sup>2</sup> + <i>x</i> &minus; 182 = 0</b> <span class=\"reason\">[Dividing by 2]</span></div>\n        <div style=\"margin-top: 6px;\">Splitting middle term: Product = &minus;182, Sum = 1 &rArr; <b>14</b> and <b>&minus;13</b>.</div>\n        <div style=\"padding-left: 12px;\"><i>x</i><sup>2</sup> + 14<i>x</i> &minus; 13<i>x</i> &minus; 182 = 0</div>\n        <div style=\"padding-left: 12px;\">&rArr; <i>x</i>(<i>x</i> + 14) &minus; 13(<i>x</i> + 14) = 0</div>\n        <div style=\"padding-left: 12px;\">&rArr; (<i>x</i> + 14)(<i>x</i> &minus; 13) = 0</div>\n        <div style=\"margin-top: 6px;\">&rArr; <i>x</i> = 13 &nbsp;or&nbsp; <i>x</i> = &minus;14.</div>\n        <div>Since <i>x</i> must be a <b>positive integer</b>, we reject <i>x</i> = &minus;14.</div>\n        <div style=\"margin-top: 6px;\">Therefore, <i>x</i> = 13, and the next integer is 13 + 1 = 14.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Integers: </span>\n        <span class=\"ans-val\">13 and 14</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 5 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 5:</div>\n    <div class=\"q-text\">The altitude of a right triangle is 7 cm less than its base. If the hypotenuse is 13 cm, find the other two sides.</div>\n\n    <!-- Geometric Diagram Card -->\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg viewBox=\"0 0 320 210\" xmlns=\"http://www.w3.org/2000/svg\">\n          <rect width=\"100%\" height=\"100%\" fill=\"#FFFFFF\" rx=\"8\"/>\n          <!-- Right Triangle -->\n          <polygon points=\"60,35 60,165 240,165\" fill=\"#FFF3E0\" stroke=\"#FF6D00\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n          <!-- Right angle symbol -->\n          <path d=\"M 60 147 L 78 147 L 78 165\" fill=\"none\" stroke=\"#FF6D00\" stroke-width=\"2\"/>\n          <!-- Vertex Labels -->\n          <text x=\"50\" y=\"32\" font-size=\"13\" font-weight=\"700\" fill=\"#E65100\">A</text>\n          <text x=\"44\" y=\"180\" font-size=\"13\" font-weight=\"700\" fill=\"#E65100\">B</text>\n          <text x=\"246\" y=\"180\" font-size=\"13\" font-weight=\"700\" fill=\"#E65100\">C</text>\n          <!-- Side Labels -->\n          <text x=\"150\" y=\"190\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\" text-anchor=\"middle\">Base = x cm</text>\n          <text x=\"14\" y=\"105\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\" text-anchor=\"start\">Altitude = (x &minus; 7) cm</text>\n          <text x=\"165\" y=\"90\" font-size=\"13\" font-weight=\"700\" fill=\"#E65100\" text-anchor=\"middle\">Hypotenuse = 13 cm</text>\n        </svg>\n      </div>\n      <div class=\"diagram-caption\">📍 Right-Angled Triangle with Hypotenuse 13 cm, Base <i>x</i>, and Altitude (<i>x</i> &minus; 7)</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Easy Step-by-Step Solution:</div>\n      <div class=\"sol-step\">\n        <div>Let the base of the right triangle = <i>x</i> cm.</div>\n        <div>Then its altitude = (<i>x</i> &minus; 7) cm.</div>\n        <div>Given Hypotenuse = 13 cm.</div>\n        <div style=\"margin-top: 6px;\">By Pythagoras theorem in right &Delta;ABC:</div>\n        <div style=\"padding-left: 12px;\">Base<sup>2</sup> + Altitude<sup>2</sup> = Hypotenuse<sup>2</sup></div>\n        <div style=\"padding-left: 12px;\"><i>x</i><sup>2</sup> + (<i>x</i> &minus; 7)<sup>2</sup> = 13<sup>2</sup></div>\n        <div style=\"padding-left: 12px;\">&rArr; <i>x</i><sup>2</sup> + (<i>x</i><sup>2</sup> &minus; 14<i>x</i> + 49) = 169</div>\n        <div style=\"padding-left: 12px;\">&rArr; 2<i>x</i><sup>2</sup> &minus; 14<i>x</i> + 49 &minus; 169 = 0</div>\n        <div style=\"padding-left: 12px;\">&rArr; 2<i>x</i><sup>2</sup> &minus; 14<i>x</i> &minus; 120 = 0</div>\n        <div style=\"padding-left: 12px;\">&rArr; <b><i>x</i><sup>2</sup> &minus; 7<i>x</i> &minus; 60 = 0</b> <span class=\"reason\">[Dividing by 2]</span></div>\n        <div style=\"margin-top: 6px;\">Splitting middle term: Product = &minus;60, Sum = &minus;7 &rArr; <b>&minus;12</b> and <b>5</b>.</div>\n        <div style=\"padding-left: 12px;\"><i>x</i><sup>2</sup> &minus; 12<i>x</i> + 5<i>x</i> &minus; 60 = 0</div>\n        <div style=\"padding-left: 12px;\">&rArr; <i>x</i>(<i>x</i> &minus; 12) + 5(<i>x</i> &minus; 12) = 0</div>\n        <div style=\"padding-left: 12px;\">&rArr; (<i>x</i> &minus; 12)(<i>x</i> + 5) = 0</div>\n        <div style=\"margin-top: 6px;\">&rArr; <i>x</i> = 12 &nbsp;or&nbsp; <i>x</i> = &minus;5.</div>\n        <div>Since length of a side cannot be negative, we reject <i>x</i> = &minus;5.</div>\n        <div style=\"margin-top: 6px;\">Base = <b>12 cm</b>, &nbsp; Altitude = 12 &minus; 7 = <b>5 cm</b>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Sides of Triangle: </span>\n        <span class=\"ans-val\">Base = 12 cm, &nbsp; Altitude = 5 cm</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 6 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 6:</div>\n    <div class=\"q-text\">A cottage industry produces a certain number of pottery articles in a day. It was observed on a particular day that the cost of production of each article (in rupees) was 3 more than twice the number of articles produced on that day. If the total cost of production on that day was ₹ 90, find the number of articles produced and the cost of each article.</div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Easy Step-by-Step Solution:</div>\n      <div class=\"sol-step\">\n        <div>Let the number of articles produced on that day = <i>x</i>.</div>\n        <div>Then the cost of production of each article = ₹ (2<i>x</i> + 3).</div>\n        <div style=\"margin-top: 6px;\">Total cost = (Number of articles) &times; (Cost per article) = ₹ 90:</div>\n        <div style=\"padding-left: 12px;\"><i>x</i>(2<i>x</i> + 3) = 90</div>\n        <div style=\"padding-left: 12px;\">&rArr; 2<i>x</i><sup>2</sup> + 3<i>x</i> &minus; 90 = 0</div>\n        <div style=\"margin-top: 6px;\">Splitting middle term: Product = 2 &times; (&minus;90) = &minus;180, Sum = 3 &rArr; <b>15</b> and <b>&minus;12</b>.</div>\n        <div style=\"padding-left: 12px;\">2<i>x</i><sup>2</sup> &minus; 12<i>x</i> + 15<i>x</i> &minus; 90 = 0</div>\n        <div style=\"padding-left: 12px;\">&rArr; 2<i>x</i>(<i>x</i> &minus; 6) + 15(<i>x</i> &minus; 6) = 0</div>\n        <div style=\"padding-left: 12px;\">&rArr; (2<i>x</i> + 15)(<i>x</i> &minus; 6) = 0</div>\n        <div style=\"margin-top: 6px;\">&rArr; <i>x</i> = 6 &nbsp;or&nbsp; <i>x</i> = &minus;<span class=\"frac\"><span class=\"num\">15</span><span class=\"den\">2</span></span>.</div>\n        <div>Since the number of articles produced must be a positive integer, we reject <i>x</i> = &minus;<span class=\"frac\"><span class=\"num\">15</span><span class=\"den\">2</span></span>.</div>\n        <div style=\"margin-top: 6px;\">&bull; Number of articles produced = <b>6</b>.<br/>&bull; Cost of each article = 2(6) + 3 = <b>₹ 15</b>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">Number of articles = 6, &nbsp; Cost per article = ₹ 15</span>\n      </div>\n    </div>\n  </div>\n\n</div>\n",
+    "exercise3": "\n\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; }\n  .frac .den { padding: 1px 4px; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 109, 0, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FF6D00; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 14px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(255, 109, 0, 0.2); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FF6D00; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFB74D; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(255, 109, 0, 0.15); border: 1px solid #FF6D00; color: #FFB74D; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 6px 0; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 109, 0, 0.4); border-radius: 10px; padding: 14px; margin: 16px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #FFFFFF; border-radius: 8px; padding: 10px 8px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.25); }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 10px; font-weight: 500; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Header Card -->\n  <div style=\"background: linear-gradient(135deg, rgba(255, 109, 0, 0.2), rgba(230, 81, 0, 0.1)); border: 1.5px solid #FF6D00; border-radius: 12px; padding: 14px 18px; margin-bottom: 20px;\">\n    <div style=\"font-size: 19px; font-weight: 800; color: #FF6D00; margin-bottom: 4px;\">\n      Exercise 4.3\n    </div>\n    <div style=\"color: #FFFFFF; font-size: 15px; font-weight: 500;\">\n      Nature of Roots, Discriminant Criteria &amp; Applied Geometric Situations\n    </div>\n  </div>\n\n  <!-- QUESTION 1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 1:</div>\n    <div class=\"q-text\">Find the nature of the roots of the following quadratic equations. If the real roots exist, find them:</div>\n\n    <!-- Part (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FF6D00;\">(i)</b> 2<i>x</i><sup>2</sup> &minus; 3<i>x</i> + 5 = 0</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Comparing with <i>ax</i><sup>2</sup> + <i>bx</i> + <i>c</i> = 0: &nbsp; <i>a</i> = 2, <i>b</i> = &minus;3, <i>c</i> = 5.</div>\n          <div style=\"margin-top: 6px;\">Discriminant <i>D</i> = <i>b</i><sup>2</sup> &minus; 4<i>ac</i>:</div>\n          <div style=\"padding-left: 12px;\"><i>D</i> = (&minus;3)<sup>2</sup> &minus; 4(2)(5)</div>\n          <div style=\"padding-left: 12px;\"><i>D</i> = 9 &minus; 40 = <b>&minus;31</b></div>\n          <div style=\"margin-top: 6px;\">Since <b><i>D</i> &lt; 0</b>, the equation has <b>no real roots</b>.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Result: </span><span class=\"ans-val\">No real roots exist (D = &minus;31 &lt; 0)</span></div>\n      </div>\n    </div>\n\n    <!-- Part (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FF6D00;\">(ii)</b> 3<i>x</i><sup>2</sup> &minus; 4&radic;3<i>x</i> + 4 = 0</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Comparing with <i>ax</i><sup>2</sup> + <i>bx</i> + <i>c</i> = 0: &nbsp; <i>a</i> = 3, <i>b</i> = &minus;4&radic;3, <i>c</i> = 4.</div>\n          <div style=\"margin-top: 6px;\">Discriminant <i>D</i> = <i>b</i><sup>2</sup> &minus; 4<i>ac</i>:</div>\n          <div style=\"padding-left: 12px;\"><i>D</i> = (&minus;4&radic;3)<sup>2</sup> &minus; 4(3)(4)</div>\n          <div style=\"padding-left: 12px;\"><i>D</i> = 16(3) &minus; 48 = 48 &minus; 48 = <b>0</b></div>\n          <div style=\"margin-top: 6px;\">Since <b><i>D</i> = 0</b>, the equation has <b>two equal real roots</b>:</div>\n          <div style=\"padding-left: 12px;\"><i>x</i> = &minus;<span class=\"frac\"><span class=\"num\">b</span><span class=\"den\">2a</span></span> = &minus;<span class=\"frac\"><span class=\"num\">(&minus;4&radic;3)</span><span class=\"den\">2(3)</span></span> = <span class=\"frac\"><span class=\"num\">4&radic;3</span><span class=\"den\">6</span></span> = <b><span class=\"frac\"><span class=\"num\">2&radic;3</span><span class=\"den\">3</span></span> = <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">&radic;3</span></span></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Equal Roots: </span><span class=\"ans-val\"><i>x</i> = <span class=\"frac\"><span class=\"num\">2&radic;3</span><span class=\"den\">3</span></span>, &nbsp; <i>x</i> = <span class=\"frac\"><span class=\"num\">2&radic;3</span><span class=\"den\">3</span></span></span></div>\n      </div>\n    </div>\n\n    <!-- Part (iii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FF6D00;\">(iii)</b> 2<i>x</i><sup>2</sup> &minus; 6<i>x</i> + 3 = 0</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Comparing with <i>ax</i><sup>2</sup> + <i>bx</i> + <i>c</i> = 0: &nbsp; <i>a</i> = 2, <i>b</i> = &minus;6, <i>c</i> = 3.</div>\n          <div style=\"margin-top: 6px;\">Discriminant <i>D</i> = <i>b</i><sup>2</sup> &minus; 4<i>ac</i>:</div>\n          <div style=\"padding-left: 12px;\"><i>D</i> = (&minus;6)<sup>2</sup> &minus; 4(2)(3)</div>\n          <div style=\"padding-left: 12px;\"><i>D</i> = 36 &minus; 24 = <b>12 &gt; 0</b></div>\n          <div style=\"margin-top: 6px;\">Since <b><i>D</i> &gt; 0</b>, the equation has <b>two distinct real roots</b>:</div>\n          <div style=\"padding-left: 12px;\"><i>x</i> = <span class=\"frac\"><span class=\"num\">&minus;b &plusmn; &radic;D</span><span class=\"den\">2a</span></span> = <span class=\"frac\"><span class=\"num\">&minus;(&minus;6) &plusmn; &radic;12</span><span class=\"den\">2(2)</span></span> = <span class=\"frac\"><span class=\"num\">6 &plusmn; 2&radic;3</span><span class=\"den\">4</span></span> = <b><span class=\"frac\"><span class=\"num\">3 &plusmn; &radic;3</span><span class=\"den\">2</span></span></b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Distinct Roots: </span><span class=\"ans-val\"><i>x</i> = <span class=\"frac\"><span class=\"num\">3 + &radic;3</span><span class=\"den\">2</span></span> and <i>x</i> = <span class=\"frac\"><span class=\"num\">3 &minus; &radic;3</span><span class=\"den\">2</span></span></span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 2 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 2:</div>\n    <div class=\"q-text\">Find the values of <i>k</i> for each of the following quadratic equations, so that they have two equal roots:</div>\n\n    <!-- Part (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FF6D00;\">(i)</b> 2<i>x</i><sup>2</sup> + <i>kx</i> + 3 = 0</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Here <i>a</i> = 2, <i>b</i> = <i>k</i>, <i>c</i> = 3.</div>\n          <div>For <b>two equal roots</b>, the discriminant must be zero: <b><i>D</i> = <i>b</i><sup>2</sup> &minus; 4<i>ac</i> = 0</b></div>\n          <div style=\"padding-left: 12px; margin-top: 6px;\"><i>k</i><sup>2</sup> &minus; 4(2)(3) = 0</div>\n          <div style=\"padding-left: 12px;\">&rArr; <i>k</i><sup>2</sup> &minus; 24 = 0</div>\n          <div style=\"padding-left: 12px;\">&rArr; <i>k</i><sup>2</sup> = 24</div>\n          <div style=\"padding-left: 12px;\">&rArr; <b><i>k</i> = &plusmn;&radic;24 = &plusmn;2&radic;6</b></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Value of k: </span><span class=\"ans-val\"><i>k</i> = &plusmn;2&radic;6</span></div>\n      </div>\n    </div>\n\n    <!-- Part (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #FF6D00;\">(ii)</b> <i>kx</i>(<i>x</i> &minus; 2) + 6 = 0</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Expanding into standard form:</div>\n          <div style=\"padding-left: 12px;\"><b><i>kx</i><sup>2</sup> &minus; 2<i>kx</i> + 6 = 0</b></div>\n          <div>Here <i>a</i> = <i>k</i>, <i>b</i> = &minus;2<i>k</i>, <i>c</i> = 6.</div>\n          <div>For <b>two equal roots</b>, <b><i>D</i> = <i>b</i><sup>2</sup> &minus; 4<i>ac</i> = 0</b>:</div>\n          <div style=\"padding-left: 12px; margin-top: 6px;\">(&minus;2<i>k</i>)<sup>2</sup> &minus; 4(<i>k</i>)(6) = 0</div>\n          <div style=\"padding-left: 12px;\">&rArr; 4<i>k</i><sup>2</sup> &minus; 24<i>k</i> = 0</div>\n          <div style=\"padding-left: 12px;\">&rArr; 4<i>k</i>(<i>k</i> &minus; 6) = 0</div>\n          <div style=\"padding-left: 12px;\">&rArr; 4<i>k</i> = 0 &rArr; <i>k</i> = 0 &nbsp; or &nbsp; <i>k</i> &minus; 6 = 0 &rArr; <b><i>k</i> = 6</b></div>\n          <div style=\"margin-top: 6px;\">If <i>k</i> = 0, the coefficient of <i>x</i><sup>2</sup> becomes 0 and the equation is not quadratic. Hence <i>k</i> &ne; 0.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Value of k: </span><span class=\"ans-val\"><i>k</i> = 6 &nbsp;(k &ne; 0)</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 3 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 3:</div>\n    <div class=\"q-text\">Is it possible to design a rectangular mango grove whose length is twice its breadth, and the area is 800 m<sup>2</sup>? If so, find its length and breadth.</div>\n\n    <!-- Mango Grove Diagram Card -->\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg viewBox=\"0 0 320 180\" xmlns=\"http://www.w3.org/2000/svg\">\n          <rect width=\"100%\" height=\"100%\" fill=\"#FFFFFF\" rx=\"8\"/>\n          <!-- Rectangular Grove -->\n          <rect x=\"50\" y=\"38\" width=\"220\" height=\"96\" fill=\"#E8F5E9\" stroke=\"#2E7D32\" stroke-width=\"2.5\" rx=\"4\"/>\n          <!-- Text inside & labels -->\n          <text x=\"160\" y=\"80\" font-size=\"15\" font-weight=\"800\" fill=\"#1B5E20\" text-anchor=\"middle\">Mango Grove</text>\n          <text x=\"160\" y=\"104\" font-size=\"13\" font-weight=\"600\" fill=\"#2E7D32\" text-anchor=\"middle\">Area = 800 m&sup2;</text>\n          <text x=\"160\" y=\"156\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\" text-anchor=\"middle\">Length = 2x metres</text>\n          <text x=\"278\" y=\"90\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\" text-anchor=\"start\">Breadth = x</text>\n        </svg>\n      </div>\n      <div class=\"diagram-caption\">📍 Rectangular Mango Grove (Length = 2 &times; Breadth, Area = 800 m&sup2;)</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Easy Step-by-Step Solution:</div>\n      <div class=\"sol-step\">\n        <div>Let the breadth of the grove = <i>x</i> metres.</div>\n        <div>Then its length = 2<i>x</i> metres.</div>\n        <div style=\"margin-top: 6px;\">Area = Length &times; Breadth = 800:</div>\n        <div style=\"padding-left: 12px;\">2<i>x</i> &times; <i>x</i> = 800</div>\n        <div style=\"padding-left: 12px;\">&rArr; 2<i>x</i><sup>2</sup> = 800</div>\n        <div style=\"padding-left: 12px;\">&rArr; <i>x</i><sup>2</sup> = 400</div>\n        <div style=\"padding-left: 12px;\">&rArr; <i>x</i><sup>2</sup> &minus; 400 = 0</div>\n        <div style=\"margin-top: 6px;\">Discriminant check: <i>a</i> = 1, <i>b</i> = 0, <i>c</i> = &minus;400:</div>\n        <div style=\"padding-left: 12px;\"><i>D</i> = 0<sup>2</sup> &minus; 4(1)(&minus;400) = 1600 &gt; 0</div>\n        <div>Since <i>D</i> &gt; 0, real solutions exist. Hence, <b>it is possible</b> to design the grove!</div>\n        <div style=\"margin-top: 6px;\">Solving: <i>x</i> = &plusmn;&radic;400 = &plusmn;20.</div>\n        <div>Since length/breadth cannot be negative, we take <i>x</i> = 20.</div>\n        <div style=\"margin-top: 6px;\">&bull; Breadth = <b>20 m</b>.<br/>&bull; Length = 2(20) = <b>40 m</b>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Dimensions: </span>\n        <span class=\"ans-val\">Yes, possible; Length = 40 m, &nbsp; Breadth = 20 m</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 4 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 4:</div>\n    <div class=\"q-text\">Is the following situation possible? If so, determine their present ages. The sum of the ages of two friends is 20 years. Four years ago, the product of their ages in years was 48.</div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Easy Step-by-Step Solution:</div>\n      <div class=\"sol-step\">\n        <div>Let the present age of the first friend = <i>x</i> years.</div>\n        <div>Then the present age of the second friend = (20 &minus; <i>x</i>) years.</div>\n        <div style=\"margin-top: 6px;\">Four years ago:</div>\n        <div style=\"padding-left: 12px;\">Age of first friend = (<i>x</i> &minus; 4) years</div>\n        <div style=\"padding-left: 12px;\">Age of second friend = (20 &minus; <i>x</i> &minus; 4) = (16 &minus; <i>x</i>) years</div>\n        <div style=\"margin-top: 6px;\">Product of their ages was 48:</div>\n        <div style=\"padding-left: 12px;\">(<i>x</i> &minus; 4)(16 &minus; <i>x</i>) = 48</div>\n        <div style=\"padding-left: 12px;\">&rArr; 16<i>x</i> &minus; <i>x</i><sup>2</sup> &minus; 64 + 4<i>x</i> = 48</div>\n        <div style=\"padding-left: 12px;\">&rArr; &minus;<i>x</i><sup>2</sup> + 20<i>x</i> &minus; 64 &minus; 48 = 0</div>\n        <div style=\"padding-left: 12px;\">&rArr; &minus;<i>x</i><sup>2</sup> + 20<i>x</i> &minus; 112 = 0</div>\n        <div style=\"padding-left: 12px;\">&rArr; <b><i>x</i><sup>2</sup> &minus; 20<i>x</i> + 112 = 0</b> <span class=\"reason\">[Multiplying by &minus;1]</span></div>\n        <div style=\"margin-top: 6px;\">Checking possibility using Discriminant: <i>a</i> = 1, <i>b</i> = &minus;20, <i>c</i> = 112:</div>\n        <div style=\"padding-left: 12px;\"><i>D</i> = <i>b</i><sup>2</sup> &minus; 4<i>ac</i></div>\n        <div style=\"padding-left: 12px;\"><i>D</i> = (&minus;20)<sup>2</sup> &minus; 4(1)(112) = 400 &minus; 448 = <b>&minus;48 &lt; 0</b></div>\n        <div style=\"margin-top: 6px;\">Since <b><i>D</i> &lt; 0</b>, this quadratic equation has <b>no real roots</b>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Conclusion: </span>\n        <span class=\"ans-val\">No, the given situation is not possible.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 5 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 5:</div>\n    <div class=\"q-text\">Is it possible to design a rectangular park of perimeter 80 m and area 400 m<sup>2</sup>? If so, find its length and breadth.</div>\n\n    <!-- Rectangular Park Diagram Card -->\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg viewBox=\"0 0 320 180\" xmlns=\"http://www.w3.org/2000/svg\">\n          <rect width=\"100%\" height=\"100%\" fill=\"#FFFFFF\" rx=\"8\"/>\n          <!-- Rectangular Park -->\n          <rect x=\"75\" y=\"30\" width=\"170\" height=\"110\" fill=\"#FFF3E0\" stroke=\"#FF6D00\" stroke-width=\"2.5\" rx=\"4\"/>\n          <!-- Labels -->\n          <text x=\"160\" y=\"75\" font-size=\"15\" font-weight=\"800\" fill=\"#E65100\" text-anchor=\"middle\">Rectangular Park</text>\n          <text x=\"160\" y=\"98\" font-size=\"13\" font-weight=\"600\" fill=\"#FF6D00\" text-anchor=\"middle\">Area = 400 m&sup2; &bull; P = 80 m</text>\n          <text x=\"160\" y=\"160\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\" text-anchor=\"middle\">Length = l</text>\n          <text x=\"252\" y=\"90\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\" text-anchor=\"start\">b = (40 &minus; l)</text>\n        </svg>\n      </div>\n      <div class=\"diagram-caption\">📍 Rectangular Park with Perimeter 80 m and Area 400 m&sup2;</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Easy Step-by-Step Solution:</div>\n      <div class=\"sol-step\">\n        <div>Let the length of the park = <i>l</i> metres, and breadth = <i>b</i> metres.</div>\n        <div>Perimeter = 2(<i>l</i> + <i>b</i>) = 80 &rArr; <b><i>l</i> + <i>b</i> = 40 &rArr; <i>b</i> = (40 &minus; <i>l</i>)</b>.</div>\n        <div style=\"margin-top: 6px;\">Area = <i>l</i> &times; <i>b</i> = 400:</div>\n        <div style=\"padding-left: 12px;\"><i>l</i>(40 &minus; <i>l</i>) = 400</div>\n        <div style=\"padding-left: 12px;\">&rArr; 40<i>l</i> &minus; <i>l</i><sup>2</sup> = 400</div>\n        <div style=\"padding-left: 12px;\">&rArr; <b><i>l</i><sup>2</sup> &minus; 40<i>l</i> + 400 = 0</b></div>\n        <div style=\"margin-top: 6px;\">Checking possibility using Discriminant: <i>a</i> = 1, <i>b</i> = &minus;40, <i>c</i> = 400:</div>\n        <div style=\"padding-left: 12px;\"><i>D</i> = (&minus;40)<sup>2</sup> &minus; 4(1)(400) = 1600 &minus; 1600 = <b>0</b></div>\n        <div>Since <b><i>D</i> = 0</b>, real and equal roots exist. Hence, <b>it is possible</b> to design the park!</div>\n        <div style=\"margin-top: 6px;\">Solving for <i>l</i>:</div>\n        <div style=\"padding-left: 12px;\"><i>l</i> = &minus;<span class=\"frac\"><span class=\"num\">b</span><span class=\"den\">2a</span></span> = &minus;<span class=\"frac\"><span class=\"num\">(&minus;40)</span><span class=\"den\">2(1)</span></span> = <b>20 m</b></div>\n        <div style=\"padding-left: 12px;\">Breadth <i>b</i> = 40 &minus; 20 = <b>20 m</b></div>\n        <div style=\"margin-top: 6px;\">Note: A square is a special type of rectangle where all sides are equal.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Dimensions: </span>\n        <span class=\"ans-val\">Yes, possible; Length = 20 m, &nbsp; Breadth = 20 m</span>\n      </div>\n    </div>\n  </div>\n\n</div>\n"
   }
 };

@@ -1,1951 +1,402 @@
-import { ChapterContent } from "../chapterContent";
+import { ChapterContent } from "../types";
 
 export const mathCh8: ChapterContent = {
-    id: "ch8",
-    number: 8,
-    title: "Introduction to Trigonometry",
-    introduction: "Loading Chapter 8...",
-    definitions: [],
-    keyPoints: [],
-    formulas: [],
-    crux: [],
-    exercises: [
-        { id: "exercise1", name: "Exercise 8.1", questions: [] },
-        { id: "exercise2", name: "Exercise 8.2", questions: [] },
-        { id: "exercise3", name: "Exercise 8.3", questions: [] }
-    ],
-    examples: [],
-    theorems: [],
-    mcqs: [
-		{
-				"id": "mcq1",
-				"question": "<span style=\"font-weight: normal;\">The value of 9 sec² A - 9 tan² A is:</span>",
-				"options": [
-						"1",
-						"9",
-						"8",
-						"0"
-				],
-				"correctAnswer": "9"
-		},
-		{
-				"id": "mcq2",
-				"question": "<span style=\"font-weight: normal;\">The value of (1 + tan θ + sec θ)(1 + cot θ - cosec θ) is:</span>",
-				"options": [
-						"0",
-						"1",
-						"2",
-						"-1"
-				],
-				"correctAnswer": "2"
-		},
-		{
-				"id": "mcq3",
-				"question": "<span style=\"font-weight: normal;\">(sec A + tan A)(1 - sin A) is equal to:</span>",
-				"options": [
-						"sec A",
-						"sin A",
-						"cosec A",
-						"cos A"
-				],
-				"correctAnswer": "cos A"
-		},
-		{
-				"id": "mcq4",
-				"question": "<span style=\"font-weight: normal;\">The value of (1 + tan² A) / (1 + cot² A) is:</span>",
-				"options": [
-						"sec² A",
-						"-1",
-						"cot² A",
-						"tan² A"
-				],
-				"correctAnswer": "tan² A"
-		},
-		{
-				"id": "mcq5",
-				"question": "<span style=\"font-weight: normal;\">If sin A = <sup>3</sup>&frasl;<sub>4</sub>, then cos A is:</span>",
-				"options": [
-						"<sup>4</sup>&frasl;<sub>3</sub>",
-						"<sup>√7</sup>&frasl;<sub>4</sub>",
-						"<sup>3</sup>&frasl;<sub>√7</sub>",
-						"<sup>√7</sup>&frasl;<sub>3</sub>"
-				],
-				"correctAnswer": "<sup>√7</sup>&frasl;<sub>4</sub>"
-		},
-		{
-				"id": "mcq6",
-				"question": "<span style=\"font-weight: normal;\">If 4 tan A = 3, then the value of (4 sin θ - cos θ) / (4 sin θ + cos θ) is:</span>",
-				"options": [
-						"<sup>2</sup>&frasl;<sub>3</sub>",
-						"<sup>1</sup>&frasl;<sub>3</sub>",
-						"<sup>1</sup>&frasl;<sub>2</sub>",
-						"<sup>3</sup>&frasl;<sub>4</sub>"
-				],
-				"correctAnswer": "<sup>1</sup>&frasl;<sub>2</sub>"
-		},
-		{
-				"id": "mcq7",
-				"question": "<span style=\"font-weight: normal;\">The value of sin 60° cos 30° + sin 30° cos 60° is:</span>",
-				"options": [
-						"0",
-						"1",
-						"2",
-						"√3"
-				],
-				"correctAnswer": "1"
-		},
-		{
-				"id": "mcq8",
-				"question": "<span style=\"font-weight: normal;\">If tan A = √3, then the value of sec A is:</span>",
-				"options": [
-						"2",
-						"<sup>√3</sup>&frasl;<sub>2</sub>",
-						"<sup>1</sup>&frasl;<sub>2</sub>",
-						"<sup>1</sup>&frasl;<sub>√3</sub>"
-				],
-				"correctAnswer": "2"
-		},
-		{
-				"id": "mcq9",
-				"question": "<span style=\"font-weight: normal;\">The value of tan 45° is:</span>",
-				"options": [
-						"0",
-						"1",
-						"√3",
-						"1/√3"
-				],
-				"correctAnswer": "1"
-		},
-		{
-				"id": "mcq10",
-				"question": "<span style=\"font-weight: normal;\">If cos 9α = sin α and 9α < 90°, then the value of tan 5α is:</span>",
-				"options": [
-						"<sup>1</sup>&frasl;<sub>√3</sub>",
-						"√3",
-						"1",
-						"0"
-				],
-				"correctAnswer": "1"
-		}
-],
-    summary: [],
-
-    isHtmlView: true,
-    htmlOverview: `<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduction to Trigonometry - Overview</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
-
-        body {
-            font-family: 'Noto Sans', sans-serif;
-            margin: 0;
-            padding: 15px;
-            background: #fff;
-            color: #333;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #6C63FF;
-            padding-bottom: 10px;
-            font-family: 'Nunito', sans-serif;
-        }
-
-        .logo {
-            color: #6C63FF;
-            font-size: 24px;
-            font-weight: 800;
-        }
-
-        .chapter-title {
-            text-align: center;
-            color: #333;
-            font-size: 20px;
-            font-weight: 700;
-            margin: 10px 0;
-            font-family: 'Noto Sans', sans-serif;
-        }
-
-        .content-box {
-            background: #f8f9fa;
-            border: 1px solid #e9ecef;
-            border-radius: 8px;
-            padding: 15px;
-            margin-bottom: 15px;
-            display: flow-root;
-            transition: transform 0.2s ease;
-        }
-
-        .section-title {
-            color: #D32F2F;
-            font-weight: 700;
-            font-size: 1.2em;
-            margin-bottom: 10px;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 5px;
-        }
-
-        .formula-box {
-            background: #E8F5E9;
-            border-left: 4px solid #4CAF50;
-            padding: 10px;
-            margin: 10px 0;
-            font-family: 'Nunito', sans-serif;
-        }
-
-        .step {
-            margin-bottom: 8px;
-            font-size: 1.1em;
-            color: #000;
-            line-height: 1.5;
-        }
-
-
-
-        .fraction {
-            display: inline-block;
-            vertical-align: middle;
-            text-align: center;
-            font-size: 0.9em;
-            margin: 0 2px;
-        }
-
-        .numerator {
-            border-bottom: 1px solid #333;
-            display: block;
-            padding: 0 2px;
-        }
-
-        .denominator {
-            display: block;
-            padding: 0 2px;
-        }
-    </style>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    renderMathInElement(document.body, {
-      delimiters: [
-        {left: '\\\\(', right: '\\\\)', display: false},
-        {left: '\\\\[', right: '\\\\]', display: true}
-      ]
-    });
-  });
-</script>
-
-<style>
-  body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
-  .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #FF8A65 !important; color: #fff !important; }
-  h1, h2, h3, h4, h5, h6 { color: #FF8A65 !important; }
-  .question { color: #FF8A65 !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
-  .formula { color: #4CAF50 !important; }
-  .true-text { color: #4CAF50 !important; }
-  .false-text { color: #F44336 !important; }
-  table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
-  .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
-  img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #FF8A65 !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
-  * { font-family: 'Noto Sans', sans-serif !important; }
-
-  .question { font-size: 0.95em !important; }
-  .sub-question { font-size: 0.9em !important; }
-  .step { font-size: 0.9em !important; }
-  .final-answer { font-size: 0.95em !important; }
-</style>
-</head>
-
-<body>
-
-    
-
-    <div class="content-box">
-        <div class="section-title">1. Introduction</div>
-        <div class="step">The word <strong>'trigonometry'</strong> is derived from the Greek words <em>'tri'</em>
-            (meaning three), <em>'gon'</em> (meaning sides) and <em>'metron'</em> (meaning measure). In fact,
-            trigonometry is the study of relationships between the sides and angles of a triangle.</div>
-        <div class="step">In this chapter, we will study some ratios of the sides of a right triangle with respect to
-            its acute angles, called <strong>trigonometric ratios</strong> of the angle. We will restrict our discussion
-            to acute angles only.</div>
-        <div class="step"><strong>Right-Angled Triangle:</strong> A triangle in which one angle is a right angle (90°).
-            The side opposite to the right angle is called the <strong>Hypotenuse</strong>. The other two sides are
-            often referred to as the <strong>Base</strong> (adjacent to the angle of interest) and the
-            <strong>Perpendicular</strong> (opposite to the angle of interest).
-        </div>
-    </div>
-
-    <div class="content-box">
-        <div class="section-title">2. Trigonometric Ratios</div>
-        <div class="step">For a right-angled triangle ABC right angled at B, with respect to angle C (θ):</div>
-
-        <div class="formula-box">
-            <strong>sin θ</strong> = <span class="fraction"><span class="numerator">Perpendicular (P)</span><span
-                    class="denominator">Hypotenuse (H)</span></span> = <span class="fraction"><span
-                    class="numerator">Opposite Side</span><span class="denominator">Hypotenuse</span></span><br><br>
-            <strong>cos θ</strong> = <span class="fraction"><span class="numerator">Base (B)</span><span
-                    class="denominator">Hypotenuse (H)</span></span> = <span class="fraction"><span
-                    class="numerator">Adjacent Side</span><span class="denominator">Hypotenuse</span></span><br><br>
-            <strong>tan θ</strong> = <span class="fraction"><span class="numerator">Perpendicular (P)</span><span
-                    class="denominator">Base (B)</span></span> = <span class="fraction"><span class="numerator">Opposite
-                    Side</span><span class="denominator">Adjacent Side</span></span>
-        </div>
-        <div class="step"><strong>Reciprocals:</strong></div>
-        <div class="step">cosec θ = 1/sin θ (H/P)</div>
-        <div class="step">sec θ = 1/cos θ (H/B)</div>
-        <div class="step">cot θ = 1/tan θ (B/P)</div>
-
-    </div>
-
-    <div class="content-box">
-        <div class="section-title">Key Points to Remember</div>
-        <div class="step">1. The values of the trigonometric ratios of an angle do not vary with the lengths of the
-            sides of the triangle, if the angle remains the same.</div>
-        <div class="step">2. Since the hypotenuse is the longest side in a right triangle, the value of <strong>sin
-                A</strong> or <strong>cos A</strong> is always less than 1 (or, in particular, equal to 1).</div>
-        <div class="step">3. The symbol <strong>sin A</strong> is used as an abbreviation for 'the sine of the angle A'.
-            sin A is not the product of 'sin' and A. 'sin' separated from A has no meaning.</div>
-        <div class="step">4. <strong>Pythagoras Theorem:</strong> In a right-angled triangle, square of Hypotenuse = sum
-            of squares of other two sides (\\(H^2 = P^2 + B^2\\)).</div>
-    </div>
-
-    <div class="content-box">
-        <div class="section-title">3. Trigonometric Ratios of Specific Angles</div>
-        <div class="step">Standard values for 0°, 30°, 45°, 60°, and 90°:</div>
-
-        <div class="formula-box">
-            <table border="1" cellpadding="5" cellspacing="0"
-                style="width:100%; border-collapse:collapse; text-align:center;">
-                <tr>
-                    <td>θ</td>
-                    <td>0°</td>
-                    <td>30°</td>
-                    <td>45°</td>
-                    <td>60°</td>
-                    <td>90°</td>
-                </tr>
-                <tr>
-                    <td>sin A</td>
-                    <td>0</td>
-                    <td>1/2</td>
-                    <td>1/√2</td>
-                    <td>√3/2</td>
-                    <td>1</td>
-                </tr>
-                <tr>
-                    <td>cos A</td>
-                    <td>1</td>
-                    <td>√3/2</td>
-                    <td>1/√2</td>
-                    <td>1/2</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>tan A</td>
-                    <td>0</td>
-                    <td>1/√3</td>
-                    <td>1</td>
-                    <td>√3</td>
-                    <td>Not Defined</td>
-                </tr>
-                <tr>
-                    <td>cosec A</td>
-                    <td>Not Defined</td>
-                    <td>2</td>
-                    <td>√2</td>
-                    <td>2/√3</td>
-                    <td>1</td>
-                </tr>
-                <tr>
-                    <td>sec A</td>
-                    <td>1</td>
-                    <td>2/√3</td>
-                    <td>√2</td>
-                    <td>2</td>
-                    <td>Not Defined</td>
-                </tr>
-                <tr>
-                    <td>cot A</td>
-                    <td>Not Defined</td>
-                    <td>√3</td>
-                    <td>1</td>
-                    <td>1/√3</td>
-                    <td>0</td>
-                </tr>
-            </table>
-        </div>
-    </div>
-
-    <div class="content-box">
-        <div class="section-title">4. Trigonometric Identities</div>
-        <div class="step">An equation involving trigonometric ratios of an angle is called a trigonometric identity.
-        </div>
-
-        <div class="formula-box">
-            <strong>Pythagorean Identities:</strong><br>
-            1. sin² A + cos² A = 1<br>
-            2. 1 + tan² A = sec² A<br>
-            3. 1 + cot² A = cosec² A<br><br>
-            <strong>Complementary Angles:</strong><br>
-            sin (90° - A) = cos A<br>
-            cos (90° - A) = sin A<br>
-            tan (90° - A) = cot A<br>
-            cot (90° - A) = tan A<br>
-            sec (90° - A) = cosec A<br>
-            cosec (90° - A) = sec A
-        </div>
-    </div>
-
-
-
-</body>
-
-</html>`,
-    htmlExercises: {
-        exercise1: `<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduction to Trigonometry - Exercise 8.1</title>
-    
-    
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
-
-        body {
-            font-family: 'Noto Sans', sans-serif;
-            margin: 0;
-            padding: 15px;
-            background: #fff;
-            color: #333;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #6C63FF;
-            padding-bottom: 10px;
-            font-family: 'Nunito', sans-serif;
-        }
-
-        .logo {
-            color: #6C63FF;
-            font-size: 24px;
-            font-weight: 800;
-        }
-
-        .chapter-title {
-            text-align: center;
-            color: #333;
-            font-size: 20px;
-            font-weight: 700;
-            margin: 10px 0;
-            font-family: 'Noto Sans', sans-serif;
-        }
-
-        .content-box {
-            background: #f8f9fa;
-            border: 1px solid #e9ecef;
-            border-radius: 8px;
-            padding: 15px;
-            margin-bottom: 15px;
-            display: flow-root;
-            transition: transform 0.2s ease;
-        }
-
-        .question {
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: #333;
-        }
-
-        .sub-question {
-            margin-left: 15px;
-            margin-top: 15px;
-            font-weight: 600;
-            color: #444;
-        }
-
-        .step {
-            margin-bottom: 8px;
-            font-size: 1.1em;
-            color: #000;
-            line-height: 1.6;
-            display: block;
-        }
-
-        .final-answer {
-            color: #2E7D32;
-            font-weight: 700;
-            margin-top: 10px;
-            font-size: 1.2em;
-        }
-
-        .solution-header {
-            color: #2E7D32;
-            font-weight: 700;
-            margin-bottom: 5px;
-        }
-
-        .formula {
-            font-weight: bold;
-            color: #2E7D32;
-            margin: 5px 0;
-            display: inline-block;
-        }
-
-        .diagram-placeholder {
-            float: right;
-            border: 2px dashed #bbb;
-            padding: 10px;
-            margin: 0 0 10px 15px;
-            background: #fff;
-            color: #555;
-            font-size: 0.9em;
-            max-width: 280px;
-            text-align: center;
-        }
-
-        img {
-            float: right;
-            margin-left: 20px;
-            margin-bottom: 15px;
-            max-width: 300px;
-            width: 100%;
-            height: auto;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            padding: 5px;
-            background: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        @media (max-width: 600px) {
-
-            img,
-            .diagram-placeholder {
-                float: none;
-                display: block;
-                margin: 10px auto;
-                max-width: 100%;
-            }
-        }
-
-        .true-text {
-            font-weight: bold;
-            color: #2E7D32;
-            /* Green */
-        }
-
-        .false-text {
-            font-weight: bold;
-            color: #D32F2F;
-            /* Red */
-        }
-    </style>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    renderMathInElement(document.body, {
-      delimiters: [
-        {left: '\\\\(', right: '\\\\)', display: false},
-        {left: '\\\\[', right: '\\\\]', display: true}
-      ]
-    });
-  });
-</script>
-
-<style>
-  body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
-  .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #FF8A65 !important; color: #fff !important; }
-  h1, h2, h3, h4, h5, h6 { color: #FF8A65 !important; }
-  .question { color: #FF8A65 !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
-  .formula { color: #4CAF50 !important; }
-  .true-text { color: #4CAF50 !important; }
-  .false-text { color: #F44336 !important; }
-  table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
-  .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
-  img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #FF8A65 !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
-  * { font-family: 'Noto Sans', sans-serif !important; }
-
-  .question { font-size: 0.95em !important; }
-  .sub-question { font-size: 0.9em !important; }
-  .step { font-size: 0.9em !important; }
-  .final-answer { font-size: 0.95em !important; }
-</style>
-</head>
-
-<body>
-
-    
-
-    <div class="content-box">
-        <div class="question">1. In ∆ABC, right-angled at B, AB = 24 cm, BC = 7 cm. Determine:</div>
-
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPg0KPGxpbmUgeDE9IjgwIiB5MT0iNTAiIHgyPSI4MCIgeTI9IjI1MCIgc3Ryb2tlPSIjMkU3RDMyIiBzdHJva2Utd2lkdGg9IjIiLz4NCjxsaW5lIHgxPSI4MCIgeTE9IjI1MCIgeDI9IjIwMCIgeTI9IjI1MCIgc3Ryb2tlPSIjMkU3RDMyIiBzdHJva2Utd2lkdGg9IjIiLz4NCjxsaW5lIHgxPSI4MCIgeTE9IjUwIiB4Mj0iMjAwIiB5Mj0iMjUwIiBzdHJva2U9IiMyRTdEMzIiIHN0cm9rZS13aWR0aD0iMiIvPg0KPHBvbHlsaW5lIHBvaW50cz0iODAsMjMwIDEwMCwyMzAgMTAwLDI1MCIgc3Ryb2tlPSIjMkU3RDMyIiBmaWxsPSJub25lIi8+DQo8dGV4dCB4PSI3MCIgeT0iNDUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZmlsbD0iYmxhY2siPkE8L3RleHQ+DQo8dGV4dCB4PSI3MCIgeT0iMjcwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9ImJsYWNrIj5CPC90ZXh0Pg0KPHRleHQgeD0iMjEwIiB5PSIyNzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZmlsbD0iYmxhY2siPkM8L3RleHQ+DQo8dGV4dCB4PSIxMCIgeT0iMTUwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9ImJsYWNrIj4yNCBjbTwvdGV4dD4NCjx0ZXh0IHg9IjEyMCIgeT0iMjgwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9ImJsYWNrIj43IGNtPC90ZXh0Pg0KPC9zdmc+" alt="Right Triangle ABC">
-
-        <div class="sub-question">(i) sin A, cos A</div>
-        <div class="solution-header">Solution:</div>
-        <div class="step">By Pythagoras Theorem: <span class="formula">\\(AC^2 = AB^2 + BC^2\\)</span></div>
-        <div class="step">\\(AC^2 = (24)^2 + (7)^2 = 576 + 49 = 625\\)</div>
-        <div class="step">\\(AC = \\sqrt{625} = 25 \\text{ cm}\\)</div>
-        <div class="step">For angle A: Base (Adj) = AB = 24, Perpendicular (Opp) = BC = 7.</div>
-        <div class="step">\\(\\sin A = \\frac{\\text{Opp}}{\\text{Hyp}} = \\frac{7}{25}\\)</div>
-        <div class="step">\\(\\cos A = \\frac{\\text{Adj}}{\\text{Hyp}} = \\frac{24}{25}\\)</div>
-        <div class="final-answer">Therefore, the required value is \\(\\sin A = \\frac{7}{25}, \\cos A = \\frac{24}{25}\\).
-        </div>
-
-        <div class="sub-question">(ii) sin C, cos C</div>
-        <div class="solution-header">Solution:</div>
-        <div class="step">For angle C: Base (Adj) = BC = 7, Perpendicular (Opp) = AB = 24.</div>
-        <div class="step">\\(\\sin C = \\frac{\\text{Opp}}{\\text{Hyp}} = \\frac{24}{25}\\)</div>
-        <div class="step">\\(\\cos C = \\frac{\\text{Adj}}{\\text{Hyp}} = \\frac{7}{25}\\)</div>
-        <div class="final-answer">Therefore, the required value is \\(\\sin C = \\frac{24}{25}, \\cos C = \\frac{7}{25}\\).
-        </div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">2. In Fig., find tan P – cot R.</div>
-
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPg0KPGxpbmUgeDE9IjEwMCIgeTE9IjUwIiB4Mj0iMTAwIiB5Mj0iMjUwIiBzdHJva2U9IiMyRTdEMzIiIHN0cm9rZS13aWR0aD0iMiIvPg0KPGxpbmUgeDE9IjEwMCIgeTE9IjI1MCIgeDI9IjI1MCIgeTI9IjI1MCIgc3Ryb2tlPSIjMkU3RDMyIiBzdHJva2Utd2lkdGg9IjIiLz4NCjxsaW5lIHgxPSIxMDAiIHkxPSI1MCIgeDI9IjI1MCIgeTI9IjI1MCIgc3Ryb2tlPSIjMkU3RDMyIiBzdHJva2Utd2lkdGg9IjIiLz4NCjxwb2x5bGluZSBwb2ludHM9IjEwMCwyMzAgMTIwLDIzMCAxMjAsMjUwIiBzdHJva2U9IiMyRTdEMzIiIGZpbGw9Im5vbmUiLz4NCjx0ZXh0IHg9IjkwIiB5PSI0NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmaWxsPSJibGFjayI+UDwvdGV4dD4NCjx0ZXh0IHg9IjkwIiB5PSIyNzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZmlsbD0iYmxhY2siPlE8L3RleHQ+DQo8dGV4dCB4PSIyNjAiIHk9IjI3MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmaWxsPSJibGFjayI+UjwvdGV4dD4NCjx0ZXh0IHg9IjIwIiB5PSIxNTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZmlsbD0iYmxhY2siPjEyIGNtPC90ZXh0Pg0KPHRleHQgeD0iMTYwIiB5PSIyODAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZmlsbD0iYmxhY2siPjcgY208L3RleHQ+DQo8dGV4dCB4PSIxODAiIHk9IjE0MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmaWxsPSJibGFjayI+MTMgY208L3RleHQ+DQo8L3N2Zz4=" alt="Triangle PQR">
-        <div class="solution-header">Solution:</div>
-        <div class="step">In ∆PQR right-angled at Q:</div>
-        <div class="step">Given \\(PQ = 12 \\text{ cm}, PR = 13 \\text{ cm}\\).</div>
-        <div class="step">By Pythagoras Theorem: <span class="formula">\\(QR^2 = PR^2 - PQ^2\\)</span></div>
-        <div class="step">\\(QR^2 = (13)^2 - (12)^2 = 169 - 144 = 25\\)</div>
-        <div class="step">\\(QR = \\sqrt{25} = 5 \\text{ cm}\\)</div>
-        <div class="step">\\(\\tan P = \\frac{\\text{Opp}}{\\text{Adj}} = \\frac{QR}{PQ} = \\frac{5}{12}\\)</div>
-        <div class="step">\\(\\cot R = \\frac{\\text{Adj}}{\\text{Opp}} = \\frac{QR}{PQ} = \\frac{5}{12}\\)</div>
-        <div class="step">\\(\\tan P - \\cot R = \\frac{5}{12} - \\frac{5}{12} = 0\\)</div>
-        <div class="final-answer">Therefore, the required value is 0.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">3. If sin A = 3/4, calculate cos A and tan A.</div>
-
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPg0KPGxpbmUgeDE9IjgwIiB5MT0iNTAiIHgyPSI4MCIgeTI9IjI1MCIgc3Ryb2tlPSIjMkU3RDMyIiBzdHJva2Utd2lkdGg9IjIiLz4NCjxsaW5lIHgxPSI4MCIgeTE9IjI1MCIgeDI9IjIyMCIgeTI9IjI1MCIgc3Ryb2tlPSIjMkU3RDMyIiBzdHJva2Utd2lkdGg9IjIiLz4NCjxsaW5lIHgxPSI4MCIgeTE9IjUwIiB4Mj0iMjIwIiB5Mj0iMjUwIiBzdHJva2U9IiMyRTdEMzIiIHN0cm9rZS13aWR0aD0iMiIvPg0KPHBvbHlsaW5lIHBvaW50cz0iODAsMjMwIDEwMCwyMzAgMTAwLDI1MCIgc3Ryb2tlPSIjMkU3RDMyIiBmaWxsPSJub25lIi8+DQo8dGV4dCB4PSI3MCIgeT0iNDUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZmlsbD0iYmxhY2siPkM8L3RleHQ+DQo8dGV4dCB4PSI3MCIgeT0iMjcwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9ImJsYWNrIj5CPC90ZXh0Pg0KPHRleHQgeD0iMjMwIiB5PSIyNzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZmlsbD0iYmxhY2siPkE8L3RleHQ+DQo8dGV4dCB4PSI0MCIgeT0iMTUwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9ImJsYWNrIj4zazwvdGV4dD4NCjx0ZXh0IHg9IjE2MCIgeT0iMTQwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9ImJsYWNrIj40azwvdGV4dD4NCjwvc3ZnPg==" alt="Triangle for sin A">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Given \\(\\sin A = \\frac{3}{4}\\).</div>
-        <div class="step">\\(\\sin A = \\frac{\\text{Perpendicular}}{\\text{Hypotenuse}}\\).</div>
-        <div class="step">Let Perpendicular (BC) = 3k and Hypotenuse (AC) = 4k.</div>
-        <div class="step">Using Pythagoras Theorem: <span class="formula">\\(AB^2 = AC^2 - BC^2\\)</span></div>
-        <div class="step">\\(AB^2 = (4k)^2 - (3k)^2 = 16k^2 - 9k^2 = 7k^2\\)</div>
-        <div class="step">\\(AB = \\sqrt{7k^2} = \\sqrt{7}k\\)</div>
-        <div class="step">\\(\\cos A = \\frac{\\text{Base}}{\\text{Hypotenuse}} = \\frac{AB}{AC} = \\frac{\\sqrt{7}k}{4k} =
-            \\frac{\\sqrt{7}}{4}\\)</div>
-        <div class="step">\\(\\tan A = \\frac{\\text{Perpendicular}}{\\text{Base}} = \\frac{BC}{AB} = \\frac{3k}{\\sqrt{7}k} =
-            \\frac{3}{\\sqrt{7}}\\)</div>
-        <div class="final-answer">Therefore, the required value is \\(\\cos A = \\frac{\\sqrt{7}}{4}, \\tan A =
-            \\frac{3}{\\sqrt{7}}\\).</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">4. Given 15 cot A = 8, find sin A and sec A.</div>
-
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPg0KPGxpbmUgeDE9IjgwIiB5MT0iNTAiIHgyPSI4MCIgeTI9IjI1MCIgc3Ryb2tlPSIjMkU3RDMyIiBzdHJva2Utd2lkdGg9IjIiLz4NCjxsaW5lIHgxPSI4MCIgeTE9IjI1MCIgeDI9IjIyMCIgeTI9IjI1MCIgc3Ryb2tlPSIjMkU3RDMyIiBzdHJva2Utd2lkdGg9IjIiLz4NCjxsaW5lIHgxPSI4MCIgeTE9IjUwIiB4Mj0iMjIwIiB5Mj0iMjUwIiBzdHJva2U9IiMyRTdEMzIiIHN0cm9rZS13aWR0aD0iMiIvPg0KPHBvbHlsaW5lIHBvaW50cz0iODAsMjMwIDEwMCwyMzAgMTAwLDI1MCIgc3Ryb2tlPSIjMkU3RDMyIiBmaWxsPSJub25lIi8+DQo8dGV4dCB4PSI3MCIgeT0iNDUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZmlsbD0iYmxhY2siPkM8L3RleHQ+DQo8dGV4dCB4PSI3MCIgeT0iMjcwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9ImJsYWNrIj5CPC90ZXh0Pg0KPHRleHQgeD0iMjMwIiB5PSIyNzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZmlsbD0iYmxhY2siPkE8L3RleHQ+DQo8dGV4dCB4PSIyMCIgeT0iMTUwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9ImJsYWNrIj4xNWs8L3RleHQ+DQo8dGV4dCB4PSIxNDAiIHk9IjI4MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmaWxsPSJibGFjayI+OGs8L3RleHQ+DQo8L3N2Zz4=" alt="Triangle for cot A">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Given \\(15 \\cot A = 8 \\Rightarrow \\cot A = \\frac{8}{15}\\).</div>
-        <div class="step">\\(\\cot A = \\frac{\\text{Base}}{\\text{Perpendicular}}\\).</div>
-        <div class="step">Let Base = 8k and Perpendicular = 15k.</div>
-        <div class="step">By Pythagoras Theorem: <span class="formula">\\(\\text{Hyp}^2 = \\text{Base}^2 +
-                \\text{Perp}^2\\)</span></div>
-        <div class="step">\\(\\text{Hyp}^2 = (8k)^2 + (15k)^2\\)</div>
-        <div class="step">\\(\\text{Hyp}^2 = 64k^2 + 225k^2 = 289k^2\\)</div>
-        <div class="step">\\(\\text{Hyp} = \\sqrt{289k^2} = 17k\\)</div>
-        <div class="step">\\(\\sin A = \\frac{\\text{Perpendicular}}{\\text{Hypotenuse}} = \\frac{15k}{17k} = \\frac{15}{17}\\)
-        </div>
-        <div class="step">\\(\\sec A = \\frac{\\text{Hypotenuse}}{\\text{Base}} = \\frac{17k}{8k} = \\frac{17}{8}\\)</div>
-        <div class="final-answer">Therefore, the required value is \\(\\sin A = \\frac{15}{17}, \\sec A = \\frac{17}{8}\\).
-        </div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">5. Given sec θ = 13/12, calculate all other trigonometric ratios.</div>
-
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPg0KPGxpbmUgeDE9IjgwIiB5MT0iNTAiIHgyPSI4MCIgeTI9IjI1MCIgc3Ryb2tlPSIjMkU3RDMyIiBzdHJva2Utd2lkdGg9IjIiLz4NCjxsaW5lIHgxPSI4MCIgeTE9IjI1MCIgeDI9IjI1MCIgeTI9IjI1MCIgc3Ryb2tlPSIjMkU3RDMyIiBzdHJva2Utd2lkdGg9IjIiLz4NCjxsaW5lIHgxPSI4MCIgeTE9IjUwIiB4Mj0iMjUwIiB5Mj0iMjUwIiBzdHJva2U9IiMyRTdEMzIiIHN0cm9rZS13aWR0aD0iMiIvPg0KPHBvbHlsaW5lIHBvaW50cz0iODAsMjMwIDEwMCwyMzAgMTAwLDI1MCIgc3Ryb2tlPSIjMkU3RDMyIiBmaWxsPSJub25lIi8+DQo8dGV4dCB4PSI3MCIgeT0iNDUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZmlsbD0iYmxhY2siPkE8L3RleHQ+DQo8dGV4dCB4PSI2MCIgeT0iMjcwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9ImJsYWNrIj5CPC90ZXh0Pg0KPHRleHQgeD0iMjYwIiB5PSIyNzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZmlsbD0iYmxhY2siPkM8L3RleHQ+DQo8dGV4dCB4PSIxNjAiIHk9IjE0MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmaWxsPSJibGFjayI+MTNrPC90ZXh0Pg0KPHRleHQgeD0iMTQwIiB5PSIyNzUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZmlsbD0iYmxhY2siPjEyazwvdGV4dD4NCjx0ZXh0IHg9IjIxMCIgeT0iMjQwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9ImJsYWNrIj7OuDwvdGV4dD4NCjwvc3ZnPg==" alt="Triangle for sec theta">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Given \\(\\sec \\theta = \\frac{13}{12}\\).</div>
-        <div class="step">\\(\\sec \\theta = \\frac{\\text{Hypotenuse}}{\\text{Base}}\\).</div>
-        <div class="step">Let Hypotenuse = 13k and Base = 12k.</div>
-        <div class="step">By Pythagoras Theorem: <span class="formula">\\(\\text{Perp}^2 = \\text{Hyp}^2 -
-                \\text{Base}^2\\)</span></div>
-        <div class="step">\\(\\text{Perp}^2 = (13k)^2 - (12k)^2\\)</div>
-        <div class="step">\\(\\text{Perp}^2 = 169k^2 - 144k^2 = 25k^2\\)</div>
-        <div class="step">\\(\\text{Perpendicular} = \\sqrt{25k^2} = 5k\\)</div>
-        <div class="step">\\(\\sin \\theta = \\frac{5}{13}\\)</div>
-        <div class="step">\\(\\cos \\theta = \\frac{12}{13}\\)</div>
-        <div class="step">\\(\\tan \\theta = \\frac{5}{12}\\)</div>
-        <div class="step">\\(\\text{cosec } \\theta = \\frac{13}{5}\\)</div>
-        <div class="step">\\(\\cot \\theta = \\frac{12}{5}\\)</div>
-        <div class="final-answer">Therefore, the required value is \\(\\sin \\theta = \\frac{5}{13}, \\cos \\theta =
-            \\frac{12}{13}, \\tan \\theta = \\frac{5}{12}, \\text{cosec } \\theta = \\frac{13}{5}, \\cot \\theta =
-            \\frac{12}{5}\\).</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">6. If ∠A and ∠B are acute angles such that cos A = cos B, then show that ∠A = ∠B.</div>
-
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMjA1IiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwNSIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPg0KPHBvbHlnb24gcG9pbnRzPSI1MCwyMCA1MCwxMjAgMTUwLDEyMCIgc3Ryb2tlPSIjMkU3RDMyIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz4NCjxwb2x5bGluZSBwb2ludHM9IjUwLDEwNSA2NSwxMDUgNjUsMTIwIiBzdHJva2U9IiMyRTdEMzIiIGZpbGw9Im5vbmUiLz4NCjx0ZXh0IHg9IjM1IiB5PSIzMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QjwvdGV4dD4NCjx0ZXh0IHg9IjM1IiB5PSIxMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPkM8L3RleHQ+DQo8dGV4dCB4PSIxNjUiIHk9IjEyMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QTwvdGV4dD4NCjx0ZXh0IHg9IjMwIiB5PSI3MC4wIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5hPC90ZXh0Pg0KPHRleHQgeD0iMTAwLjAiIHk9IjE0MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+YjwvdGV4dD4NCjx0ZXh0IHg9IjExMC4wIiB5PSI2MC4wIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5jPC90ZXh0Pg0KPC9zdmc+" alt="Triangle with A and B acute">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Consider a triangle ABC right-angled at C.</div>
-        <div class="step">\\(\\cos A = \\frac{\\text{Base}}{\\text{Hypotenuse}} = \\frac{AC}{AB}\\) <span
-                class="formula">\\((\\text{Definition})\\)</span></div>
-        <div class="step">\\(\\cos B = \\frac{\\text{Base}}{\\text{Hypotenuse}} = \\frac{BC}{AB}\\)</div>
-        <div class="step">Given \\(\\cos A = \\cos B\\).</div>
-        <div class="step">\\(\\frac{AC}{AB} = \\frac{BC}{AB}\\)</div>
-        <div class="step">\\(\\Rightarrow AC = BC\\)</div>
-        <div class="step">We know that angles opposite to equal sides are equal.</div>
-        <div class="step">\\(\\Rightarrow \\angle A = \\angle B\\)</div>
-        <div class="final-answer">Therefore, \\(\\angle A = \\angle B\\). Hence Proved.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">7. If cot θ = 7/8, evaluate:</div>
-
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPg0KPGxpbmUgeDE9IjgwIiB5MT0iNTAiIHgyPSI4MCIgeTI9IjI1MCIgc3Ryb2tlPSIjMkU3RDMyIiBzdHJva2Utd2lkdGg9IjIiLz4NCjxsaW5lIHgxPSI4MCIgeTE9IjI1MCIgeDI9IjIyMCIgeTI9IjI1MCIgc3Ryb2tlPSIjMkU3RDMyIiBzdHJva2Utd2lkdGg9IjIiLz4NCjxsaW5lIHgxPSI4MCIgeTE9IjUwIiB4Mj0iMjIwIiB5Mj0iMjUwIiBzdHJva2U9IiMyRTdEMzIiIHN0cm9rZS13aWR0aD0iMiIvPg0KPHRleHQgeD0iNzAiIHk9IjQ1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9ImJsYWNrIj5BPC90ZXh0Pg0KPHRleHQgeD0iNjAiIHk9IjI3MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmaWxsPSJibGFjayI+QjwvdGV4dD4NCjx0ZXh0IHg9IjIzMCIgeT0iMjcwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9ImJsYWNrIj5DPC90ZXh0Pg0KPHRleHQgeD0iMzAiIHk9IjE1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmaWxsPSJibGFjayI+OGs8L3RleHQ+DQo8dGV4dCB4PSIxNDAiIHk9IjI3NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmaWxsPSJibGFjayI+N2s8L3RleHQ+DQo8dGV4dCB4PSIxODAiIHk9IjI0MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmaWxsPSJibGFjayI+zrg8L3RleHQ+DQo8L3N2Zz4=" alt="Triangle for cot theta">
-
-        <div class="sub-question">(i) \\(\\frac{(1 + \\sin \\theta)(1 - \\sin \\theta)}{(1 + \\cos \\theta)(1 - \\cos \\theta)}\\)
-        </div>
-        <div class="solution-header">Solution:</div>
-        <div class="step">Using identity <span class="formula">\\((a+b)(a-b) = a^2 - b^2\\)</span>:</div>
-        <div class="step">\\(= \\frac{1 - \\sin^2 \\theta}{1 - \\cos^2 \\theta}\\)</div>
-        <div class="step">Using identities <span class="formula">\\(1 - \\sin^2 \\theta = \\cos^2 \\theta\\)</span> and <span
-                class="formula">\\(1 - \\cos^2 \\theta = \\sin^2 \\theta\\)</span>:</div>
-        <div class="step">\\(= \\frac{\\cos^2 \\theta}{\\sin^2 \\theta}\\)</div>
-        <div class="step">\\(= \\left(\\frac{\\cos \\theta}{\\sin \\theta}\\right)^2 = (\\cot \\theta)^2\\)</div>
-        <div class="step">Given \\(\\cot \\theta = \\frac{7}{8}\\).</div>
-        <div class="step">\\(= \\left(\\frac{7}{8}\\right)^2 = \\frac{49}{64}\\)</div>
-        <div class="final-answer">Therefore, the required value is \\(\\frac{49}{64}\\).</div>
-
-        <div class="sub-question">(ii) \\(\\cot^2 \\theta\\)</div>
-        <div class="solution-header">Solution:</div>
-        <div class="step">Given \\(\\cot \\theta = \\frac{7}{8}\\).</div>
-        <div class="step">\\(\\cot^2 \\theta = (\\frac{7}{8})^2\\)</div>
-        <div class="final-answer">Therefore, the required value is \\(\\frac{49}{64}\\).</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">8. If 3 cot A = 4, check whether \\(\\frac{1 - \\tan^2 A}{1 + \\tan^2 A} = \\cos^2 A - \\sin^2
-            A\\) or not.</div>
-
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPg0KPGxpbmUgeDE9IjgwIiB5MT0iNTAiIHgyPSI4MCIgeTI9IjI1MCIgc3Ryb2tlPSIjMkU3RDMyIiBzdHJva2Utd2lkdGg9IjIiLz4NCjxsaW5lIHgxPSI4MCIgeTE9IjI1MCIgeDI9IjI1MCIgeTI9IjI1MCIgc3Ryb2tlPSIjMkU3RDMyIiBzdHJva2Utd2lkdGg9IjIiLz4NCjxsaW5lIHgxPSI4MCIgeTE9IjUwIiB4Mj0iMjUwIiB5Mj0iMjUwIiBzdHJva2U9IiMyRTdEMzIiIHN0cm9rZS13aWR0aD0iMiIvPg0KPHBvbHlsaW5lIHBvaW50cz0iODAsMjMwIDEwMCwyMzAgMTAwLDI1MCIgc3Ryb2tlPSIjMkU3RDMyIiBmaWxsPSJub25lIi8+DQo8dGV4dCB4PSI3MCIgeT0iNDUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZmlsbD0iYmxhY2siPkM8L3RleHQ+DQo8dGV4dCB4PSI2MCIgeT0iMjcwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9ImJsYWNrIj5CPC90ZXh0Pg0KPHRleHQgeD0iMjYwIiB5PSIyNzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZmlsbD0iYmxhY2siPkE8L3RleHQ+DQo8dGV4dCB4PSI0MCIgeT0iMTUwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9ImJsYWNrIj4zeDwvdGV4dD4NCjx0ZXh0IHg9IjE2MCIgeT0iMjc1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9ImJsYWNrIj40eDwvdGV4dD4NCjx0ZXh0IHg9IjE4MCIgeT0iMTQwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9ImJsYWNrIj41eDwvdGV4dD4NCjwvc3ZnPg==" alt="Triangle for 3cotA=4">
-        <div class="solution-header">Solution:</div>
-        <div class="step">\\(3 \\cot A = 4 \\Rightarrow \\cot A = \\frac{4}{3} \\Rightarrow \\tan A = \\frac{3}{4}\\).</div>
-        <div class="step">Let Base = 4k, Perpendicular = 3k.</div>
-        <div class="step">Hypotenuse = \\(\\sqrt{(4k)^2 + (3k)^2} = \\sqrt{16k^2 + 9k^2} = \\sqrt{25k^2} = 5k\\).</div>
-        <div class="step">LHS: \\(\\frac{1 - \\tan^2 A}{1 + \\tan^2 A} = \\frac{1 - (3/4)^2}{1 + (3/4)^2}\\)</div>
-        <div class="step">\\(= \\frac{1 - 9/16}{1 + 9/16} = \\frac{(16-9)/16}{(16+9)/16} = \\frac{7}{25}\\)</div>
-        <div class="step">RHS: \\(\\cos^2 A - \\sin^2 A\\)</div>
-        <div class="step">\\(\\cos A = \\frac{4}{5}, \\sin A = \\frac{3}{5}\\)</div>
-        <div class="step">\\(= (\\frac{4}{5})^2 - (\\frac{3}{5})^2 = \\frac{16}{25} - \\frac{9}{25} = \\frac{7}{25}\\)</div>
-        <div class="step">LHS = RHS.</div>
-        <div class="final-answer">Therefore, the required value is True (Yes).</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">9. In ∆ ABC right angled at B, if tan A = \\(1/\\sqrt{3}\\), find the value of:</div>
-
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPg0KPGxpbmUgeDE9IjgwIiB5MT0iNTAiIHgyPSI4MCIgeTI9IjI1MCIgc3Ryb2tlPSIjMkU3RDMyIiBzdHJva2Utd2lkdGg9IjIiLz4NCjxsaW5lIHgxPSI4MCIgeTE9IjI1MCIgeDI9IjI1MCIgeTI9IjI1MCIgc3Ryb2tlPSIjMkU3RDMyIiBzdHJva2Utd2lkdGg9IjIiLz4NCjxsaW5lIHgxPSI4MCIgeTE9IjUwIiB4Mj0iMjUwIiB5Mj0iMjUwIiBzdHJva2U9IiMyRTdEMzIiIHN0cm9rZS13aWR0aD0iMiIvPg0KPHBvbHlsaW5lIHBvaW50cz0iODAsMjMwIDEwMCwyMzAgMTAwLDI1MCIgc3Ryb2tlPSIjMkU3RDMyIiBmaWxsPSJub25lIi8+DQo8dGV4dCB4PSI3MCIgeT0iNDUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZmlsbD0iYmxhY2siPkM8L3RleHQ+DQo8dGV4dCB4PSI2MCIgeT0iMjcwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9ImJsYWNrIj5CPC90ZXh0Pg0KPHRleHQgeD0iMjYwIiB5PSIyNzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZmlsbD0iYmxhY2siPkE8L3RleHQ+DQo8dGV4dCB4PSI0MCIgeT0iMTUwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9ImJsYWNrIj4xazwvdGV4dD4NCjx0ZXh0IHg9IjE0MCIgeT0iMjc1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9ImJsYWNrIj7iiJozIGs8L3RleHQ+DQo8L3N2Zz4=" alt="Triangle with tan A = 1/root3">
-        <div class="solution-header">Solution:</div>
-        <div class="step">\\(\\tan A = \\frac{1}{\\sqrt{3}}\\). This corresponds to \\(\\tan 30^\\circ\\).</div>
-        <div class="step">So, \\(\\angle A = 30^\\circ\\).</div>
-        <div class="step">Since \\(\\angle B = 90^\\circ\\), \\(\\angle C = 180^\\circ - (90^\\circ + 30^\\circ) = 60^\\circ\\).
-        </div>
-
-        <div class="sub-question">(i) \\(\\sin A \\cos C + \\cos A \\sin C\\)</div>
-        <div class="step">\\(= \\sin 30^\\circ \\cos 60^\\circ + \\cos 30^\\circ \\sin 60^\\circ\\)</div>
-        <div class="step">\\(= (\\frac{1}{2})(\\frac{1}{2}) + (\\frac{\\sqrt{3}}{2})(\\frac{\\sqrt{3}}{2})\\)</div>
-        <div class="step">\\(= \\frac{1}{4} + \\frac{3}{4} = \\frac{4}{4} = 1\\)</div>
-        <div class="final-answer">Therefore, the required value is 1.</div>
-
-        <div class="sub-question">(ii) \\(\\cos A \\cos C - \\sin A \\sin C\\)</div>
-        <div class="step">\\(= \\cos 30^\\circ \\cos 60^\\circ - \\sin 30^\\circ \\sin 60^\\circ\\)</div>
-        <div class="step">\\(= (\\frac{\\sqrt{3}}{2})(\\frac{1}{2}) - (\\frac{1}{2})(\\frac{\\sqrt{3}}{2})\\)</div>
-        <div class="step">\\(= \\frac{\\sqrt{3}}{4} - \\frac{\\sqrt{3}}{4} = 0\\)</div>
-        <div class="final-answer">Therefore, the required value is 0.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">10. In ∆ PQR, right-angled at Q, PR + QR = 25 cm and PQ = 5 cm. Determine the values of
-            sin P, cos P and tan P.</div>
-
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPg0KPGxpbmUgeDE9IjgwIiB5MT0iNTAiIHgyPSI4MCIgeTI9IjI1MCIgc3Ryb2tlPSIjMkU3RDMyIiBzdHJva2Utd2lkdGg9IjIiLz4NCjxsaW5lIHgxPSI4MCIgeTE9IjI1MCIgeDI9IjIyMCIgeTI9IjI1MCIgc3Ryb2tlPSIjMkU3RDMyIiBzdHJva2Utd2lkdGg9IjIiLz4NCjxsaW5lIHgxPSI4MCIgeTE9IjUwIiB4Mj0iMjIwIiB5Mj0iMjUwIiBzdHJva2U9IiMyRTdEMzIiIHN0cm9rZS13aWR0aD0iMiIvPg0KPHBvbHlsaW5lIHBvaW50cz0iODAsMjMwIDEwMCwyMzAgMTAwLDI1MCIgc3Ryb2tlPSIjMkU3RDMyIiBmaWxsPSJub25lIi8+DQo8dGV4dCB4PSI3MCIgeT0iNDUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZmlsbD0iYmxhY2siPlA8L3RleHQ+DQo8dGV4dCB4PSI2MCIgeT0iMjcwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9ImJsYWNrIj5RPC90ZXh0Pg0KPHRleHQgeD0iMjMwIiB5PSIyNzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZmlsbD0iYmxhY2siPlI8L3RleHQ+DQo8dGV4dCB4PSIzMCIgeT0iMTUwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9ImJsYWNrIj41IGNtPC90ZXh0Pg0KPHRleHQgeD0iMTMwIiB5PSIyODAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZmlsbD0iYmxhY2siPnggY208L3RleHQ+DQo8L3N2Zz4=" alt="Triangle PQR">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Given \\(PQ = 5\\) and \\(PR + QR = 25 \\Rightarrow PR = 25 - QR\\).</div>
-        <div class="step">Using Pythagoras Theorem: <span class="formula">\\(PQ^2 + QR^2 = PR^2\\)</span></div>
-        <div class="step">\\(5^2 + QR^2 = (25 - QR)^2\\)</div>
-        <div class="step">\\(25 + QR^2 = 625 + QR^2 - 50QR\\)</div>
-        <div class="step">\\(50QR = 600 \\Rightarrow QR = 12 \\text{ cm}\\)</div>
-        <div class="step">\\(PR = 25 - 12 = 13 \\text{ cm}\\)</div>
-        <div class="step">\\(\\sin P = \\frac{QR}{PR} = \\frac{12}{13}\\)</div>
-        <div class="step">\\(\\cos P = \\frac{PQ}{PR} = \\frac{5}{13}\\)</div>
-        <div class="step">\\(\\tan P = \\frac{QR}{PQ} = \\frac{12}{5}\\)</div>
-        <div class="final-answer">Therefore, the required value is \\(\\sin P = \\frac{12}{13}, \\cos P = \\frac{5}{13}, \\tan
-            P = \\frac{12}{5}\\).</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">11. State whether the following are true or false. Justify your answer.</div>
-
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPg0KPGxpbmUgeDE9IjgwIiB5MT0iNTAiIHgyPSI4MCIgeTI9IjI1MCIgc3Ryb2tlPSIjMkU3RDMyIiBzdHJva2Utd2lkdGg9IjIiLz4NCjxsaW5lIHgxPSI4MCIgeTE9IjI1MCIgeDI9IjIyMCIgeTI9IjI1MCIgc3Ryb2tlPSIjMkU3RDMyIiBzdHJva2Utd2lkdGg9IjIiLz4NCjxsaW5lIHgxPSI4MCIgeTE9IjUwIiB4Mj0iMjIwIiB5Mj0iMjUwIiBzdHJva2U9IiMyRTdEMzIiIHN0cm9rZS13aWR0aD0iMiIvPg0KPHBvbHlsaW5lIHBvaW50cz0iODAsMjMwIDEwMCwyMzAgMTAwLDI1MCIgc3Ryb2tlPSIjMkU3RDMyIiBmaWxsPSJub25lIi8+DQo8dGV4dCB4PSI3MCIgeT0iNDUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZmlsbD0iYmxhY2siPkM8L3RleHQ+DQo8dGV4dCB4PSI3MCIgeT0iMjc1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9ImJsYWNrIj5CPC90ZXh0Pg0KPHRleHQgeD0iMjMwIiB5PSIyNzUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZmlsbD0iYmxhY2siPkE8L3RleHQ+DQo8dGV4dCB4PSIyMCIgeT0iMTUwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9ImJsYWNrIj4xMms8L3RleHQ+DQo8dGV4dCB4PSIxNDAiIHk9IjI3NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmaWxsPSJibGFjayI+NWs8L3RleHQ+DQo8L3N2Zz4=" alt="Example Triangle">
-
-        <div class="sub-question">(i) The value of tan A is always less than 1.</div>
-        <div class="step"><span class="false-text">False</span>. In the given figure, if we take Opposite = 12k and
-            Adjacent = 5k, then \\(\\tan A = \\frac{12k}{5k} = 2.4\\), which is greater than 1.</div>
-
-        <div class="sub-question">(ii) \\(\\sec A = 12/5\\) for some value of angle A.</div>
-        <div class="step"><span class="true-text">True</span>. \\(\\sec A = \\frac{\\text{Hypotenuse}}{\\text{Adjacent}}\\).
-            Since Hyp > Adj is always true
-            (12 > 5), this is possible.</div>
-
-        <div class="sub-question">(iii) cos A is the abbreviation used for the cosecant of angle A.</div>
-        <div class="step"><span class="false-text">False</span>. \\(\\cos A\\) is cosine. Cosecant is \\(\\text{cosec } A\\).
-        </div>
-
-        <div class="sub-question">(iv) cot A is the product of cot and A.</div>
-        <div class="step"><span class="false-text">False</span>. \\(\\cot A\\) refers to the cotangent of angle A. \\(\\cot\\)
-            separated from A has no
-            meaning.</div>
-
-        <div class="sub-question">(v) \\(\\sin \\theta = 4/3\\) for some angle \\(\\theta\\).</div>
-        <div class="step"><span class="false-text">False</span>. \\(\\sin \\theta =
-            \\frac{\\text{Opposite}}{\\text{Hypotenuse}}\\). Hypotenuse must be greater
-            than Opposite side. Here 4/3 > 1, which is impossible.</div>
-    </div>
-
-</body>
-
-</html>`,
-        exercise2: `<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduction to Trigonometry - Exercise 8.2</title>
-    
-    
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
-
-        body {
-            font-family: 'Noto Sans', sans-serif;
-            margin: 0;
-            padding: 15px;
-            background: #fff;
-            color: #333;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #6C63FF;
-            padding-bottom: 10px;
-            font-family: 'Nunito', sans-serif;
-        }
-
-        .logo {
-            color: #6C63FF;
-            font-size: 24px;
-            font-weight: 800;
-        }
-
-        .chapter-title {
-            text-align: center;
-            color: #333;
-            font-size: 20px;
-            font-weight: 700;
-            margin: 10px 0;
-            font-family: 'Noto Sans', sans-serif;
-        }
-
-        .content-box {
-            background: #f8f9fa;
-            border: 1px solid #e9ecef;
-            border-radius: 8px;
-            padding: 15px;
-            margin-bottom: 15px;
-            display: flow-root;
-            transition: transform 0.2s ease;
-        }
-
-        .question {
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: #333;
-        }
-
-        .sub-question {
-            margin-left: 15px;
-            margin-top: 15px;
-            font-weight: 600;
-            color: #444;
-        }
-
-        .step {
-            margin-bottom: 8px;
-            font-size: 1.1em;
-            color: #000;
-            line-height: 1.6;
-            display: block;
-        }
-
-        .final-answer {
-            color: #2E7D32;
-            font-weight: 700;
-            margin-top: 10px;
-            font-size: 1.2em;
-        }
-
-        .solution-header {
-            color: #2E7D32;
-            font-weight: 700;
-            margin-bottom: 5px;
-        }
-
-        .formula {
-            font-weight: bold;
-            color: #2E7D32;
-            margin: 5px 0;
-            display: inline-block;
-        }
-
-        .diagram-placeholder {
-            float: right;
-            border: 2px dashed #bbb;
-            padding: 10px;
-            margin: 0 0 10px 15px;
-            background: #fff;
-            color: #555;
-            font-size: 0.9em;
-            max-width: 280px;
-            text-align: center;
-        }
-
-        img {
-            float: right;
-            margin-left: 20px;
-            margin-bottom: 15px;
-            max-width: 280px;
-            height: auto;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            padding: 5px;
-            background: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        @media (max-width: 600px) {
-
-            img,
-            .diagram-placeholder {
-                float: none;
-                display: block;
-                margin: 10px auto;
-                max-width: 100%;
-            }
-        }
-    </style>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    renderMathInElement(document.body, {
-      delimiters: [
-        {left: '\\\\(', right: '\\\\)', display: false},
-        {left: '\\\\[', right: '\\\\]', display: true}
-      ]
-    });
-  });
-</script>
-
-<style>
-  body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
-  .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #FF8A65 !important; color: #fff !important; }
-  h1, h2, h3, h4, h5, h6 { color: #FF8A65 !important; }
-  .question { color: #FF8A65 !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
-  .formula { color: #4CAF50 !important; }
-  .true-text { color: #4CAF50 !important; }
-  .false-text { color: #F44336 !important; }
-  table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
-  .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
-  img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #FF8A65 !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
-  * { font-family: 'Noto Sans', sans-serif !important; }
-
-  .question { font-size: 0.95em !important; }
-  .sub-question { font-size: 0.9em !important; }
-  .step { font-size: 0.9em !important; }
-  .final-answer { font-size: 0.95em !important; }
-</style>
-</head>
-
-<body>
-
-    
-
-    <div class="content-box">
-        <div class="question">1. Evaluate the following:</div>
-
-
-        <div class="sub-question">(i) \\(\\sin 60^\\circ \\cos 30^\\circ + \\sin 30^\\circ \\cos 60^\\circ\\)</div>
-        <div class="step">We know that: <span class="formula">\\(\\sin 60^\\circ = \\frac{\\sqrt{3}}{2}, \\cos 30^\\circ =
-                \\frac{\\sqrt{3}}{2}, \\sin 30^\\circ = \\frac{1}{2}, \\cos 60^\\circ = \\frac{1}{2}\\)</span></div>
-        <div class="step">Substituting the values:</div>
-        <div class="step">\\(= \\left(\\frac{\\sqrt{3}}{2}\\right)\\left(\\frac{\\sqrt{3}}{2}\\right) +
-            \\left(\\frac{1}{2}\\right)\\left(\\frac{1}{2}\\right)\\)</div>
-        <div class="step">\\(= \\frac{3}{4} + \\frac{1}{4}\\)</div>
-        <div class="step">\\(= \\frac{4}{4} = 1\\)</div>
-        <div class="final-answer">Therefore, the required value is 1.</div>
-
-        <div class="sub-question">(ii) \\(2 \\tan^2 45^\\circ + \\cos^2 30^\\circ - \\sin^2 60^\\circ\\)</div>
-        <div class="step">We know that: <span class="formula">\\(\\tan 45^\\circ = 1, \\cos 30^\\circ = \\frac{\\sqrt{3}}{2},
-                \\sin 60^\\circ = \\frac{\\sqrt{3}}{2}\\)</span></div>
-        <div class="step">Substituting the values:</div>
-        <div class="step">\\(= 2(1)^2 + \\left(\\frac{\\sqrt{3}}{2}\\right)^2 - \\left(\\frac{\\sqrt{3}}{2}\\right)^2\\)</div>
-        <div class="step">\\(= 2(1) + \\frac{3}{4} - \\frac{3}{4}\\)</div>
-        <div class="step">\\(= 2 + 0 = 2\\)</div>
-        <div class="final-answer">Therefore, the required value is 2.</div>
-
-        <div class="sub-question">(iii) \\(\\frac{\\cos 45^\\circ}{\\sec 30^\\circ + \\text{cosec } 30^\\circ}\\)</div>
-        <div class="step">We know that: <span class="formula">\\(\\cos 45^\\circ = \\frac{1}{\\sqrt{2}}, \\sec 30^\\circ =
-                \\frac{2}{\\sqrt{3}}, \\text{cosec } 30^\\circ = 2\\)</span></div>
-        <div class="step">Substituting the values:</div>
-        <div class="step">\\(= \\frac{\\frac{1}{\\sqrt{2}}}{\\frac{2}{\\sqrt{3}} + 2}\\)</div>
-        <div class="step">\\(= \\frac{\\frac{1}{\\sqrt{2}}}{\\frac{2 + 2\\sqrt{3}}{\\sqrt{3}}}\\)</div>
-        <div class="step">\\(= \\frac{1}{\\sqrt{2}} \\times \\frac{\\sqrt{3}}{2 + 2\\sqrt{3}}\\)</div>
-        <div class="step">\\(= \\frac{\\sqrt{3}}{2\\sqrt{2} + 2\\sqrt{6}}\\)</div>
-        <div class="step">Rationalizing the denominator by multiplying \\(\\frac{2\\sqrt{2} - 2\\sqrt{6}}{2\\sqrt{2} -
-            2\\sqrt{6}}\\):</div>
-        <div class="step">\\(= \\frac{\\sqrt{3}(2\\sqrt{2} - 2\\sqrt{6})}{(2\\sqrt{2})^2 - (2\\sqrt{6})^2}\\)</div>
-        <div class="step">\\(= \\frac{2\\sqrt{6} - 2\\sqrt{18}}{8 - 24}\\)</div>
-        <div class="step">\\(= \\frac{2\\sqrt{6} - 2(3\\sqrt{2})}{-16}\\)</div>
-        <div class="step">\\(= \\frac{2\\sqrt{6} - 6\\sqrt{2}}{-16}\\)</div>
-        <div class="step">\\(= \\frac{-2(3\\sqrt{2} - \\sqrt{6})}{-16} = \\frac{3\\sqrt{2} - \\sqrt{6}}{8}\\)</div>
-        <div class="final-answer">Therefore, the required value is \\(\\frac{3\\sqrt{2} - \\sqrt{6}}{8}\\).</div>
-
-        <div class="sub-question">(iv) \\(\\frac{\\sin 30^\\circ + \\tan 45^\\circ - \\text{cosec } 60^\\circ}{\\sec 30^\\circ +
-            \\cos 60^\\circ + \\cot 45^\\circ}\\)</div>
-        <div class="step">We know that: <span class="formula">\\(\\sin 30^\\circ=\\frac{1}{2}, \\tan 45^\\circ=1, \\text{cosec
-                } 60^\\circ=\\frac{2}{\\sqrt{3}}, \\sec 30^\\circ=\\frac{2}{\\sqrt{3}}, \\cos 60^\\circ=\\frac{1}{2}, \\cot
-                45^\\circ=1\\)</span></div>
-        <div class="step">Substituting values:</div>
-        <div class="step">\\(= \\frac{\\frac{1}{2} + 1 - \\frac{2}{\\sqrt{3}}}{\\frac{2}{\\sqrt{3}} + \\frac{1}{2} + 1}\\)</div>
-        <div class="step">\\(= \\frac{\\frac{3}{2} - \\frac{2}{\\sqrt{3}}}{\\frac{3}{2} + \\frac{2}{\\sqrt{3}}}\\)</div>
-        <div class="step">\\(= \\frac{\\frac{3\\sqrt{3} - 4}{2\\sqrt{3}}}{\\frac{3\\sqrt{3} + 4}{2\\sqrt{3}}}\\)</div>
-        <div class="step">\\(= \\frac{3\\sqrt{3} - 4}{3\\sqrt{3} + 4}\\)</div>
-        <div class="step">Rationalizing the denominator:</div>
-        <div class="step">\\(= \\frac{(3\\sqrt{3} - 4)(3\\sqrt{3} - 4)}{(3\\sqrt{3} + 4)(3\\sqrt{3} - 4)}\\)</div>
-        <div class="step">\\(= \\frac{(3\\sqrt{3})^2 - 2(3\\sqrt{3})(4) + 4^2}{(3\\sqrt{3})^2 - 4^2}\\)</div>
-        <div class="step">\\(= \\frac{27 - 24\\sqrt{3} + 16}{27 - 16}\\)</div>
-        <div class="step">\\(= \\frac{43 - 24\\sqrt{3}}{11}\\)</div>
-        <div class="final-answer">Therefore, the required value is \\(\\frac{43 - 24\\sqrt{3}}{11}\\).</div>
-
-        <div class="sub-question">(v) \\(\\frac{5 \\cos^2 60^\\circ + 4 \\sec^2 30^\\circ - \\tan^2 45^\\circ}{\\sin^2 30^\\circ +
-            \\cos^2 30^\\circ}\\)</div>
-        <div class="step">We know that: <span class="formula">\\(\\sin^2 30^\\circ + \\cos^2 30^\\circ = 1\\)</span></div>
-        <div class="step">Substituting remaining values:</div>
-        <div class="step">\\(= \\frac{5(\\frac{1}{2})^2 + 4(\\frac{2}{\\sqrt{3}})^2 - (1)^2}{1}\\)</div>
-        <div class="step">\\(= 5(\\frac{1}{4}) + 4(\\frac{4}{3}) - 1\\)</div>
-        <div class="step">\\(= \\frac{5}{4} + \\frac{16}{3} - 1\\)</div>
-        <div class="step">LCM is 12:</div>
-        <div class="step">\\(= \\frac{15 + 64 - 12}{12}\\)</div>
-        <div class="step">\\(= \\frac{67}{12}\\)</div>
-        <div class="final-answer">Therefore, the required value is \\(\\frac{67}{12}\\).</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">2. Choose the correct option and justify your choice:</div>
-
-
-        <div class="sub-question">(i) \\(\\frac{2 \\tan 30^\\circ}{1 + \\tan^2 30^\\circ}\\)</div>
-        <div class="step">Substitute \\(\\tan 30^\\circ = \\frac{1}{\\sqrt{3}}\\):</div>
-        <div class="step">\\(= \\frac{2(1/\\sqrt{3})}{1 + (1/\\sqrt{3})^2} = \\frac{2/\\sqrt{3}}{1 + 1/3}\\)</div>
-        <div class="step">\\(= \\frac{2/\\sqrt{3}}{4/3} = \\frac{2}{\\sqrt{3}} \\times \\frac{3}{4} = \\frac{3}{2\\sqrt{3}}\\)
-        </div>
-        <div class="step">\\(= \\frac{\\sqrt{3}\\sqrt{3}}{2\\sqrt{3}} = \\frac{\\sqrt{3}}{2}\\)</div>
-        <div class="step">We know that <span class="formula">\\(\\sin 60^\\circ = \\frac{\\sqrt{3}}{2}\\)</span>.</div>
-        <div class="final-answer">Therefore, the required value is (A) \\(\\sin 60^\\circ\\).</div>
-
-        <div class="sub-question">(ii) \\(\\frac{1 - \\tan^2 45^\\circ}{1 + \\tan^2 45^\\circ}\\)</div>
-        <div class="step">Substitute \\(\\tan 45^\\circ = 1\\):</div>
-        <div class="step">\\(= \\frac{1 - (1)^2}{1 + (1)^2} = \\frac{0}{2} = 0\\)</div>
-        <div class="final-answer">Therefore, the required value is (D) 0.</div>
-
-        <div class="sub-question">(iii) \\(\\sin 2A = 2 \\sin A\\) is true when A =</div>
-        <div class="step">Check A = 0°:</div>
-        <div class="step">LHS: \\(\\sin 2(0) = \\sin 0 = 0\\)</div>
-        <div class="step">RHS: \\(2 \\sin 0 = 2(0) = 0\\)</div>
-        <div class="step">LHS = RHS.</div>
-        <div class="final-answer">Therefore, the required value is (A) 0°.</div>
-
-        <div class="sub-question">(iv) \\(\\frac{2 \\tan 30^\\circ}{1 - \\tan^2 30^\\circ}\\)</div>
-        <div class="step">Substitute \\(\\tan 30^\\circ = \\frac{1}{\\sqrt{3}}\\):</div>
-        <div class="step">\\(= \\frac{2(1/\\sqrt{3})}{1 - (1/\\sqrt{3})^2} = \\frac{2/\\sqrt{3}}{1 - 1/3}\\)</div>
-        <div class="step">\\(= \\frac{2/\\sqrt{3}}{2/3} = \\frac{2}{\\sqrt{3}} \\times \\frac{3}{2} = \\frac{3}{\\sqrt{3}} =
-            \\sqrt{3}\\)</div>
-        <div class="step">We know that <span class="formula">\\(\\tan 60^\\circ = \\sqrt{3}\\)</span>.</div>
-        <div class="final-answer">Therefore, the required value is (C) \\(\\tan 60^\\circ\\).</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">3. If tan (A + B) = \\(\\sqrt{3}\\) and tan (A – B) = \\(1/\\sqrt{3}\\); 0° < A + B ≤ 90°; A> B,
-                find A and B.</div>
-
-        <div class="solution-header">Solution:</div>
-        <div class="step">\\(\\tan (A + B) = \\sqrt{3}\\)</div>
-        <div class="step">We know <span class="formula">\\(\\tan 60^\\circ = \\sqrt{3}\\)</span></div>
-        <div class="step">\\(\\Rightarrow A + B = 60^\\circ\\) ... (1)</div>
-        <div class="step">\\(\\tan (A - B) = \\frac{1}{\\sqrt{3}}\\)</div>
-        <div class="step">We know <span class="formula">\\(\\tan 30^\\circ = \\frac{1}{\\sqrt{3}}\\)</span></div>
-        <div class="step">\\(\\Rightarrow A - B = 30^\\circ\\) ... (2)</div>
-        <div class="step">Adding equations (1) and (2):</div>
-        <div class="step">\\((A + B) + (A - B) = 60^\\circ + 30^\\circ\\)</div>
-        <div class="step">\\(2A = 90^\\circ \\Rightarrow A = 45^\\circ\\)</div>
-        <div class="step">Substituting A in (1):</div>
-        <div class="step">\\(45^\\circ + B = 60^\\circ \\Rightarrow B = 15^\\circ\\)</div>
-        <div class="final-answer">Therefore, the required value is \\(A = 45^\\circ, B = 15^\\circ\\).</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">4. State whether the following are true or false. Justify your answer.</div>
-
-        <div class="sub-question">(i) \\(\\sin (A + B) = \\sin A + \\sin B\\).</div>
-        <div class="step">False. Let \\(A=30^\\circ, B=60^\\circ\\).</div>
-        <div class="step">LHS = \\(\\sin(90^\\circ) = 1\\).</div>
-        <div class="step">RHS = \\(\\sin 30^\\circ + \\sin 60^\\circ = \\frac{1}{2} + \\frac{\\sqrt{3}}{2} \\ne 1\\).</div>
-
-        <div class="sub-question">(ii) The value of \\(\\sin \\theta\\) increases as \\(\\theta\\) increases.</div>
-        <div class="step">True. From 0° to 90°, \\(\\sin \\theta\\) increases from 0 to 1.</div>
-
-        <div class="sub-question">(iii) The value of \\(\\cos \\theta\\) increases as \\(\\theta\\) increases.</div>
-        <div class="step">False. From 0° to 90°, \\(\\cos \\theta\\) decreases from 1 to 0.</div>
-
-        <div class="sub-question">(iv) \\(\\sin \\theta = \\cos \\theta\\) for all values of \\(\\theta\\).</div>
-        <div class="step">False. Only true at \\(\\theta = 45^\\circ\\). For \\(\\theta = 30^\\circ\\), \\(\\sin 30^\\circ = 0.5
-            \\ne \\cos 30^\\circ = 0.866\\).</div>
-
-        <div class="sub-question">(v) \\(\\cot A\\) is not defined for \\(A = 0^\\circ\\).</div>
-        <div class="step">True. \\(\\cot 0^\\circ = \\frac{\\cos 0^\\circ}{\\sin 0^\\circ} = \\frac{1}{0}\\), which is undefined.
-        </div>
-    </div>
-
-</body>
-
-</html>`,
-        exercise3: `<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduction to Trigonometry - Exercise 8.3</title>
-    
-    
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
-
-        body {
-            font-family: 'Noto Sans', sans-serif;
-            margin: 0;
-            padding: 15px;
-            background: #fff;
-            color: #333;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #6C63FF;
-            padding-bottom: 10px;
-            font-family: 'Nunito', sans-serif;
-        }
-
-        .logo {
-            color: #6C63FF;
-            font-size: 24px;
-            font-weight: 800;
-        }
-
-        .chapter-title {
-            text-align: center;
-            color: #333;
-            font-size: 20px;
-            font-weight: 700;
-            margin: 10px 0;
-            font-family: 'Noto Sans', sans-serif;
-        }
-
-        .content-box {
-            background: #f8f9fa;
-            border: 1px solid #e9ecef;
-            border-radius: 8px;
-            padding: 15px;
-            margin-bottom: 15px;
-            display: flow-root;
-            transition: transform 0.2s ease;
-        }
-
-        .question {
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: #333;
-        }
-
-        .sub-question {
-            margin-left: 15px;
-            margin-top: 15px;
-            font-weight: 600;
-            color: #444;
-        }
-
-        .step {
-            margin-bottom: 8px;
-            font-size: 1.1em;
-            color: #000;
-            line-height: 1.6;
-            display: block;
-        }
-
-        .final-answer {
-            color: #2E7D32;
-            font-weight: 700;
-            margin-top: 10px;
-            font-size: 1.2em;
-        }
-
-        .solution-header {
-            color: #2E7D32;
-            font-weight: 700;
-            margin-bottom: 5px;
-        }
-
-        .formula {
-            font-weight: bold;
-            color: #2E7D32;
-            margin: 5px 0;
-            display: inline-block;
-        }
-
-        .diagram-placeholder {
-            float: right;
-            border: 2px dashed #bbb;
-            padding: 10px;
-            margin: 0 0 10px 15px;
-            background: #fff;
-            color: #555;
-            font-size: 0.9em;
-            max-width: 280px;
-            text-align: center;
-        }
-
-        img {
-            float: right;
-            margin-left: 20px;
-            margin-bottom: 15px;
-            max-width: 280px;
-            height: auto;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            padding: 5px;
-            background: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        @media (max-width: 600px) {
-
-            img,
-            .diagram-placeholder {
-                float: none;
-                display: block;
-                margin: 10px auto;
-                max-width: 100%;
-            }
-        }
-    </style>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    renderMathInElement(document.body, {
-      delimiters: [
-        {left: '\\\\(', right: '\\\\)', display: false},
-        {left: '\\\\[', right: '\\\\]', display: true}
-      ]
-    });
-  });
-</script>
-
-<style>
-  body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
-  .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #FF8A65 !important; color: #fff !important; }
-  h1, h2, h3, h4, h5, h6 { color: #FF8A65 !important; }
-  .question { color: #FF8A65 !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
-  .formula { color: #4CAF50 !important; }
-  .true-text { color: #4CAF50 !important; }
-  .false-text { color: #F44336 !important; }
-  table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
-  .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
-  img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #FF8A65 !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
-  * { font-family: 'Noto Sans', sans-serif !important; }
-
-  .question { font-size: 0.95em !important; }
-  .sub-question { font-size: 0.9em !important; }
-  .step { font-size: 0.9em !important; }
-  .final-answer { font-size: 0.95em !important; }
-</style>
-</head>
-
-<body>
-
-    
-
-    <div class="content-box">
-        <div class="question">1. Express the trigonometric ratios sin A, sec A and tan A in terms of cot A.</div>
-
-        <div class="solution-header">Solution:</div>
-        <div class="step">We know the identity: <span class="formula">\\(\\text{cosec}^2 A - \\cot^2 A = 1\\)</span></div>
-        <div class="step">\\(\\Rightarrow \\text{cosec}^2 A = 1 + \\cot^2 A\\)</div>
-        <div class="step">\\(\\Rightarrow \\frac{1}{\\sin^2 A} = 1 + \\cot^2 A\\)</div>
-        <div class="step">\\(\\Rightarrow \\sin^2 A = \\frac{1}{1 + \\cot^2 A}\\)</div>
-        <div class="step">\\(\\Rightarrow \\sin A = \\frac{1}{\\sqrt{1 + \\cot^2 A}}\\)</div>
-        <div class="step">We know that <span class="formula">\\(\\tan A = \\frac{1}{\\cot A}\\)</span></div>
-        <div class="step">Also, <span class="formula">\\(\\sec^2 A = 1 + \\tan^2 A\\)</span></div>
-        <div class="step">\\(\\sec^2 A = 1 + \\frac{1}{\\cot^2 A}\\)</div>
-        <div class="step">\\(\\sec^2 A = \\frac{\\cot^2 A + 1}{\\cot^2 A}\\)</div>
-        <div class="step">\\(\\sec A = \\frac{\\sqrt{\\cot^2 A + 1}}{\\cot A}\\)</div>
-        <div class="final-answer">Therefore, the required values are \\(\\sin A = \\frac{1}{\\sqrt{1 + \\cot^2 A}}, \\tan A =
-            \\frac{1}{\\cot A}, \\sec A = \\frac{\\sqrt{\\cot^2 A + 1}}{\\cot A}\\).</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">2. Write all the other trigonometric ratios of ∠A in terms of sec A.</div>
-
-        <div class="solution-header">Solution:</div>
-        <div class="step">1. <span class="formula">\\(\\cos A = \\frac{1}{\\sec A}\\)</span></div>
-        <div class="step">2. We know <span class="formula">\\(\\sin^2 A + \\cos^2 A = 1\\)</span></div>
-        <div class="step">\\(\\sin^2 A = 1 - \\cos^2 A = 1 - \\frac{1}{\\sec^2 A}\\)</div>
-        <div class="step">\\(\\sin^2 A = \\frac{\\sec^2 A - 1}{\\sec^2 A}\\)</div>
-        <div class="step">\\(\\sin A = \\frac{\\sqrt{\\sec^2 A - 1}}{\\sec A}\\)</div>
-        <div class="step">3. We know <span class="formula">\\(\\tan^2 A = \\sec^2 A - 1\\)</span></div>
-        <div class="step">\\(\\tan A = \\sqrt{\\sec^2 A - 1}\\)</div>
-        <div class="step">4. <span class="formula">\\(\\cot A = \\frac{1}{\\tan A}\\)</span></div>
-        <div class="step">\\(\\cot A = \\frac{1}{\\sqrt{\\sec^2 A - 1}}\\)</div>
-        <div class="step">5. <span class="formula">\\(\\text{cosec } A = \\frac{1}{\\sin A}\\)</span></div>
-        <div class="step">\\(\\text{cosec } A = \\frac{\\sec A}{\\sqrt{\\sec^2 A - 1}}\\)</div>
-        <div class="final-answer">Therefore, the ratios are expressed in terms of \\(\\sec A\\) as above.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">3. Choose the correct option. Justify your choice.</div>
-
-
-        <div class="sub-question">(i) \\(9 \\sec^2 A - 9 \\tan^2 A =\\)</div>
-        <div class="step">\\(= 9 (\\sec^2 A - \\tan^2 A)\\)</div>
-        <div class="step">Using identity <span class="formula">\\(\\sec^2 A - \\tan^2 A = 1\\)</span></div>
-        <div class="step">\\(= 9 (1) = 9\\)</div>
-        <div class="final-answer">Therefore, the required value is (B) 9.</div>
-
-        <div class="sub-question">(ii) \\((1 + \\tan \\theta + \\sec \\theta) (1 + \\cot \\theta - \\text{cosec } \\theta)\\)
-        </div>
-        <div class="step">\\(= (1 + \\frac{\\sin \\theta}{\\cos \\theta} + \\frac{1}{\\cos \\theta}) (1 + \\frac{\\cos \\theta}{\\sin
-            \\theta} - \\frac{1}{\\sin \\theta})\\)</div>
-        <div class="step">\\(= (\\frac{\\cos \\theta + \\sin \\theta + 1}{\\cos \\theta}) (\\frac{\\sin \\theta + \\cos \\theta -
-            1}{\\sin \\theta})\\)</div>
-        <div class="step">Let \\(x = (\\sin \\theta + \\cos \\theta)\\) and \\(y = 1\\).</div>
-        <div class="step">\\(= \\frac{(x + 1)(x - 1)}{\\sin \\theta \\cos \\theta} = \\frac{x^2 - 1}{\\sin \\theta \\cos \\theta}\\)
-        </div>
-        <div class="step">\\(= \\frac{(\\sin \\theta + \\cos \\theta)^2 - 1}{\\sin \\theta \\cos \\theta}\\)</div>
-        <div class="step">\\(= \\frac{\\sin^2 \\theta + \\cos^2 \\theta + 2\\sin \\theta \\cos \\theta - 1}{\\sin \\theta \\cos
-            \\theta}\\)</div>
-        <div class="step">Using <span class="formula">\\(\\sin^2 \\theta + \\cos^2 \\theta = 1\\)</span></div>
-        <div class="step">\\(= \\frac{1 + 2\\sin \\theta \\cos \\theta - 1}{\\sin \\theta \\cos \\theta}\\)</div>
-        <div class="step">\\(= \\frac{2\\sin \\theta \\cos \\theta}{\\sin \\theta \\cos \\theta} = 2\\)</div>
-        <div class="final-answer">Therefore, the required value is (C) 2.</div>
-
-        <div class="sub-question">(iii) \\((\\sec A + \\tan A) (1 - \\sin A)\\)</div>
-        <div class="step">\\(= (\\frac{1}{\\cos A} + \\frac{\\sin A}{\\cos A}) (1 - \\sin A)\\)</div>
-        <div class="step">\\(= (\\frac{1 + \\sin A}{\\cos A}) (1 - \\sin A)\\)</div>
-        <div class="step">\\(= \\frac{(1 + \\sin A)(1 - \\sin A)}{\\cos A}\\)</div>
-        <div class="step">\\(= \\frac{1 - \\sin^2 A}{\\cos A}\\)</div>
-        <div class="step">Using <span class="formula">\\(1 - \\sin^2 A = \\cos^2 A\\)</span></div>
-        <div class="step">\\(= \\frac{\\cos^2 A}{\\cos A} = \\cos A\\)</div>
-        <div class="final-answer">Therefore, the required value is (D) \\(\\cos A\\).</div>
-
-        <div class="sub-question">(iv) \\(\\frac{1 + \\tan^2 A}{1 + \\cot^2 A}\\)</div>
-        <div class="step">Using identities <span class="formula">\\(1 + \\tan^2 A = \\sec^2 A\\)</span> and <span
-                class="formula">\\(1 + \\cot^2 A = \\text{cosec}^2 A\\)</span></div>
-        <div class="step">\\(= \\frac{\\sec^2 A}{\\text{cosec}^2 A}\\)</div>
-        <div class="step">\\(= \\frac{1/\\cos^2 A}{1/\\sin^2 A}\\)</div>
-        <div class="step">\\(= \\frac{\\sin^2 A}{\\cos^2 A} = \\tan^2 A\\)</div>
-        <div class="final-answer">Therefore, the required value is (D) \\(\\tan^2 A\\).</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">4. Prove the following identities, where the angles involved are acute angles for which
-            the expressions are defined.</div>
-
-
-        <div class="sub-question">(i) \\((\\text{cosec } \\theta - \\cot \\theta)^2 = \\frac{1 - \\cos \\theta}{1 + \\cos
-            \\theta}\\)</div>
-        <div class="step">LHS = \\((\\frac{1}{\\sin \\theta} - \\frac{\\cos \\theta}{\\sin \\theta})^2\\)</div>
-        <div class="step">\\(= (\\frac{1 - \\cos \\theta}{\\sin \\theta})^2\\)</div>
-        <div class="step">\\(= \\frac{(1 - \\cos \\theta)^2}{\\sin^2 \\theta}\\)</div>
-        <div class="step">Using identity <span class="formula">\\(\\sin^2 \\theta = 1 - \\cos^2 \\theta\\)</span></div>
-        <div class="step">\\(= \\frac{(1 - \\cos \\theta)^2}{1 - \\cos^2 \\theta}\\)</div>
-        <div class="step">\\(= \\frac{(1 - \\cos \\theta)(1 - \\cos \\theta)}{(1 - \\cos \\theta)(1 + \\cos \\theta)}\\)</div>
-        <div class="step">\\(= \\frac{1 - \\cos \\theta}{1 + \\cos \\theta}\\) = RHS</div>
-        <div class="final-answer">Hence Proved.</div>
-
-        <div class="sub-question">(ii) \\(\\frac{\\cos A}{1 + \\sin A} + \\frac{1 + \\sin A}{\\cos A} = 2 \\sec A\\)</div>
-        <div class="step">LHS = \\(\\frac{\\cos^2 A + (1 + \\sin A)^2}{(1 + \\sin A)\\cos A}\\)</div>
-        <div class="step">\\(= \\frac{\\cos^2 A + 1 + \\sin^2 A + 2\\sin A}{(1 + \\sin A)\\cos A}\\)</div>
-        <div class="step">Using <span class="formula">\\(\\sin^2 A + \\cos^2 A = 1\\)</span></div>
-        <div class="step">\\(= \\frac{1 + 1 + 2\\sin A}{(1 + \\sin A)\\cos A}\\)</div>
-        <div class="step">\\(= \\frac{2 + 2\\sin A}{(1 + \\sin A)\\cos A}\\)</div>
-        <div class="step">\\(= \\frac{2(1 + \\sin A)}{(1 + \\sin A)\\cos A}\\)</div>
-        <div class="step">\\(= \\frac{2}{\\cos A} = 2 \\sec A\\) = RHS</div>
-        <div class="final-answer">Hence Proved.</div>
-
-        <div class="sub-question">(iii) \\(\\frac{\\tan \\theta}{1 - \\cot \\theta} + \\frac{\\cot \\theta}{1 - \\tan \\theta} = 1
-            + \\sec \\theta \\text{cosec } \\theta\\)</div>
-        <div class="step">Convert to sin and cos:</div>
-        <div class="step">\\(= \\frac{\\frac{\\sin \\theta}{\\cos \\theta}}{1 - \\frac{\\cos \\theta}{\\sin \\theta}} +
-            \\frac{\\frac{\\cos \\theta}{\\sin \\theta}}{1 - \\frac{\\sin \\theta}{\\cos \\theta}}\\)</div>
-        <div class="step">\\(= \\frac{\\frac{\\sin \\theta}{\\cos \\theta}}{\\frac{\\sin \\theta - \\cos \\theta}{\\sin \\theta}} +
-            \\frac{\\frac{\\cos \\theta}{\\sin \\theta}}{\\frac{\\cos \\theta - \\sin \\theta}{\\cos \\theta}}\\)</div>
-        <div class="step">\\(= \\frac{\\sin^2 \\theta}{\\cos \\theta(\\sin \\theta - \\cos \\theta)} + \\frac{\\cos^2 \\theta}{\\sin
-            \\theta(\\cos \\theta - \\sin \\theta)}\\)</div>
-        <div class="step">\\(= \\frac{\\sin^2 \\theta}{\\cos \\theta(\\sin \\theta - \\cos \\theta)} - \\frac{\\cos^2 \\theta}{\\sin
-            \\theta(\\sin \\theta - \\cos \\theta)}\\)</div>
-        <div class="step">\\(= \\frac{\\sin^3 \\theta - \\cos^3 \\theta}{\\sin \\theta \\cos \\theta (\\sin \\theta - \\cos
-            \\theta)}\\)</div>
-        <div class="step">Using <span class="formula">\\(a^3 - b^3 = (a-b)(a^2 + b^2 + ab)\\)</span></div>
-        <div class="step">\\(= \\frac{(\\sin \\theta - \\cos \\theta)(\\sin^2 \\theta + \\cos^2 \\theta + \\sin \\theta \\cos
-            \\theta)}{\\sin \\theta \\cos \\theta (\\sin \\theta - \\cos \\theta)}\\)</div>
-        <div class="step">\\(= \\frac{1 + \\sin \\theta \\cos \\theta}{\\sin \\theta \\cos \\theta}\\)</div>
-        <div class="step">\\(= \\frac{1}{\\sin \\theta \\cos \\theta} + 1\\)</div>
-        <div class="step">\\(= \\text{cosec } \\theta \\sec \\theta + 1\\) = RHS</div>
-        <div class="final-answer">Hence Proved.</div>
-
-        <div class="sub-question">(iv) \\(\\frac{1 + \\sec A}{\\sec A} = \\frac{\\sin^2 A}{1 - \\cos A}\\)</div>
-        <div class="step">LHS = \\(\\frac{1 + 1/\\cos A}{1/\\cos A} = \\frac{(\\cos A + 1)/\\cos A}{1/\\cos A} = 1 + \\cos A\\).
-        </div>
-        <div class="step">RHS = \\(\\frac{\\sin^2 A}{1 - \\cos A} = \\frac{1 - \\cos^2 A}{1 - \\cos A}\\)</div>
-        <div class="step">\\(= \\frac{(1 - \\cos A)(1 + \\cos A)}{1 - \\cos A} = 1 + \\cos A\\)</div>
-        <div class="step">LHS = RHS.</div>
-        <div class="final-answer">Hence Proved.</div>
-
-        <div class="sub-question">(v) \\(\\frac{\\cos A - \\sin A + 1}{\\cos A + \\sin A - 1} = \\text{cosec } A + \\cot A\\)
-        </div>
-
-        <div class="step">Divide numerator and denominator by \\(\\sin A\\):</div>
-        <div class="step">\\(= \\frac{\\cot A - 1 + \\text{cosec } A}{\\cot A + 1 - \\text{cosec } A}\\)</div>
-        <div class="step">Using identity: <span class="formula">\\(1 = \\text{cosec}^2 A - \\cot^2 A\\)</span> in numerator
-        </div>
-        <div class="step">\\(= \\frac{\\cot A + \\text{cosec } A - (\\text{cosec}^2 A - \\cot^2 A)}{\\cot A - \\text{cosec } A +
-            1}\\)</div>
-        <div class="step">\\(= \\frac{(\\cot A + \\text{cosec } A) - (\\text{cosec } A - \\cot A)(\\text{cosec } A + \\cot
-            A)}{\\cot A - \\text{cosec } A + 1}\\)</div>
-        <div class="step">Factor out \\((\\cot A + \\text{cosec } A)\\):</div>
-        <div class="step">\\(= \\frac{(\\cot A + \\text{cosec } A)(1 - \\text{cosec } A + \\cot A)}{1 - \\text{cosec } A + \\cot
-            A}\\)</div>
-        <div class="step">\\(= \\cot A + \\text{cosec } A\\) = RHS</div>
-        <div class="final-answer">Hence Proved.</div>
-
-        <div class="sub-question">(vi) \\(\\sqrt{\\frac{1 + \\sin A}{1 - \\sin A}} = \\sec A + \\tan A\\)</div>
-        <div class="step">LHS = \\(\\sqrt{\\frac{1 + \\sin A}{1 - \\sin A} \\times \\frac{1 + \\sin A}{1 + \\sin A}}\\)</div>
-        <div class="step">\\(= \\sqrt{\\frac{(1 + \\sin A)^2}{1 - \\sin^2 A}}\\)</div>
-        <div class="step">Using <span class="formula">\\(1 - \\sin^2 A = \\cos^2 A\\)</span></div>
-        <div class="step">\\(= \\sqrt{\\frac{(1 + \\sin A)^2}{\\cos^2 A}}\\)</div>
-        <div class="step">\\(= \\frac{1 + \\sin A}{\\cos A}\\)</div>
-        <div class="step">\\(= \\frac{1}{\\cos A} + \\frac{\\sin A}{\\cos A} = \\sec A + \\tan A\\) = RHS</div>
-        <div class="final-answer">Hence Proved.</div>
-
-        <div class="sub-question">(vii) \\(\\frac{\\sin \\theta - 2 \\sin^3 \\theta}{2 \\cos^3 \\theta - \\cos \\theta} = \\tan
-            \\theta\\)</div>
-        <div class="step">LHS = \\(\\frac{\\sin \\theta (1 - 2\\sin^2 \\theta)}{\\cos \\theta (2\\cos^2 \\theta - 1)}\\)</div>
-        <div class="step">We know <span class="formula">\\(\\cos 2\\theta = 1 - 2\\sin^2 \\theta = 2\\cos^2 \\theta -
-                1\\)</span></div>
-        <div class="step">Or substitution: \\(1 - 2\\sin^2 \\theta = \\sin^2 \\theta + \\cos^2 \\theta - 2\\sin^2 \\theta =
-            \\cos^2 \\theta - \\sin^2 \\theta\\).</div>
-        <div class="step">Denominator: \\(2\\cos^2 \\theta - 1 = 2\\cos^2 \\theta - (\\sin^2 \\theta + \\cos^2 \\theta) = \\cos^2
-            \\theta - \\sin^2 \\theta\\).</div>
-        <div class="step">\\(= \\frac{\\sin \\theta (\\cos^2 \\theta - \\sin^2 \\theta)}{\\cos \\theta (\\cos^2 \\theta - \\sin^2
-            \\theta)}\\)</div>
-        <div class="step">\\(= \\frac{\\sin \\theta}{\\cos \\theta} = \\tan \\theta\\) = RHS</div>
-        <div class="final-answer">Hence Proved.</div>
-
-        <div class="sub-question">(viii) \\((\\sin A + \\text{cosec } A)^2 + (\\cos A + \\sec A)^2 = 7 + \\tan^2 A + \\cot^2
-            A\\)</div>
-        <div class="step">Expand LHS:</div>
-        <div class="step">\\(= (\\sin^2 A + \\text{cosec}^2 A + 2\\sin A \\text{cosec } A) + (\\cos^2 A + \\sec^2 A + 2\\cos A
-            \\sec A)\\)</div>
-        <div class="step">We know <span class="formula">\\(\\sin A \\text{cosec } A = 1\\)</span> and <span
-                class="formula">\\(\\cos A \\sec A = 1\\)</span></div>
-        <div class="step">\\(= \\sin^2 A + \\text{cosec}^2 A + 2 + \\cos^2 A + \\sec^2 A + 2\\)</div>
-        <div class="step">Group terms: \\((\\sin^2 A + \\cos^2 A) + \\text{cosec}^2 A + \\sec^2 A + 4\\)</div>
-        <div class="step">\\(= 1 + (1 + \\cot^2 A) + (1 + \\tan^2 A) + 4\\)</div>
-        <div class="step">\\(= 1 + 1 + 1 + 4 + \\cot^2 A + \\tan^2 A\\)</div>
-        <div class="step">\\(= 7 + \\tan^2 A + \\cot^2 A\\) = RHS</div>
-        <div class="final-answer">Hence Proved.</div>
-
-        <div class="sub-question">(ix) \\((\\text{cosec } A - \\sin A)(\\sec A - \\cos A) = \\frac{1}{\\tan A + \\cot A}\\)</div>
-        <div class="step">LHS = \\((\\frac{1}{\\sin A} - \\sin A)(\\frac{1}{\\cos A} - \\cos A)\\)</div>
-        <div class="step">\\(= (\\frac{1 - \\sin^2 A}{\\sin A})(\\frac{1 - \\cos^2 A}{\\cos A})\\)</div>
-        <div class="step">\\(= (\\frac{\\cos^2 A}{\\sin A})(\\frac{\\sin^2 A}{\\cos A}) = \\sin A \\cos A\\)</div>
-        <div class="step">RHS = \\(\\frac{1}{\\frac{\\sin A}{\\cos A} + \\frac{\\cos A}{\\sin A}}\\)</div>
-        <div class="step">\\(= \\frac{1}{\\frac{\\sin^2 A + \\cos^2 A}{\\sin A \\cos A}}\\)</div>
-        <div class="step">\\(= \\frac{\\sin A \\cos A}{1} = \\sin A \\cos A\\)</div>
-        <div class="step">LHS = RHS.</div>
-        <div class="final-answer">Hence Proved.</div>
-
-        <div class="sub-question">(x) \\((\\frac{1 + \\tan^2 A}{1 + \\cot^2 A}) = (\\frac{1 - \\tan A}{1 - \\cot A})^2 = \\tan^2
-            A\\)</div>
-        <div class="step">First part: \\(\\frac{1 + \\tan^2 A}{1 + \\cot^2 A} = \\frac{\\sec^2 A}{\\text{cosec}^2 A}\\)</div>
-        <div class="step">\\(= \\frac{1/\\cos^2 A}{1/\\sin^2 A} = \\frac{\\sin^2 A}{\\cos^2 A} = \\tan^2 A\\).</div>
-        <div class="step">Second part: \\(\\frac{1 - \\tan A}{1 - \\frac{1}{\\tan A}} = \\frac{1 - \\tan A}{\\frac{\\tan A -
-            1}{\\tan A}}\\)</div>
-        <div class="step">\\(= \\frac{\\tan A(1 - \\tan A)}{-(1 - \\tan A)} = -\\tan A\\)</div>
-        <div class="step">So, \\((-\\tan A)^2 = \\tan^2 A\\).</div>
-        <div class="step">All parts equal \\(\\tan^2 A\\).</div>
-        <div class="final-answer">Hence Proved.</div>
-    </div>
-
-</body>
-
-</html>`,
-        examples: `<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduction to Trigonometry - Examples</title>
-    
-    
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
-
-        body {
-            font-family: 'Noto Sans', sans-serif;
-            margin: 0;
-            padding: 15px;
-            background: #fff;
-            color: #333;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #6C63FF;
-            padding-bottom: 10px;
-            font-family: 'Nunito', sans-serif;
-        }
-
-        .logo {
-            color: #6C63FF;
-            font-size: 24px;
-            font-weight: 800;
-        }
-
-        .chapter-title {
-            text-align: center;
-            color: #333;
-            font-size: 20px;
-            font-weight: 700;
-            margin: 10px 0;
-            font-family: 'Noto Sans', sans-serif;
-        }
-
-        .content-box {
-            background: #f8f9fa;
-            border: 1px solid #e9ecef;
-            border-radius: 8px;
-            padding: 15px;
-            margin-bottom: 15px;
-            display: flow-root;
-            transition: transform 0.2s ease;
-        }
-
-        .question {
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: #333;
-        }
-
-        .step {
-            margin-bottom: 8px;
-            font-size: 1.1em;
-            color: #000;
-            line-height: 1.6;
-            display: block;
-        }
-
-        .final-answer {
-            color: #2E7D32;
-            font-weight: 700;
-            margin-top: 10px;
-            font-size: 1.2em;
-        }
-
-        .solution-header {
-            color: #2E7D32;
-            font-weight: 700;
-            margin-bottom: 5px;
-        }
-
-        .formula {
-            font-weight: bold;
-            color: #2E7D32;
-            margin: 5px 0;
-            display: inline-block;
-        }
-
-        .diagram-placeholder {
-            float: right;
-            border: 2px dashed #bbb;
-            padding: 10px;
-            margin: 0 0 10px 15px;
-            background: #fff;
-            color: #555;
-            font-size: 0.9em;
-            max-width: 280px;
-            text-align: center;
-        }
-
-        img {
-            float: right;
-            margin-left: 20px;
-            margin-bottom: 15px;
-            max-width: 280px;
-            height: auto;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            padding: 5px;
-            background: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        @media (max-width: 600px) {
-
-            img,
-            .diagram-placeholder {
-                float: none;
-                display: block;
-                margin: 10px auto;
-                max-width: 100%;
-            }
-        }
-    </style>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    renderMathInElement(document.body, {
-      delimiters: [
-        {left: '\\\\(', right: '\\\\)', display: false},
-        {left: '\\\\[', right: '\\\\]', display: true}
-      ]
-    });
-  });
-</script>
-
-<style>
-  body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
-  .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #FF8A65 !important; color: #fff !important; }
-  h1, h2, h3, h4, h5, h6 { color: #FF8A65 !important; }
-  .question { color: #FF8A65 !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
-  .formula { color: #4CAF50 !important; }
-  .true-text { color: #4CAF50 !important; }
-  .false-text { color: #F44336 !important; }
-  table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
-  .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
-  img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #FF8A65 !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
-  * { font-family: 'Noto Sans', sans-serif !important; }
-
-  .question { font-size: 0.95em !important; }
-  .sub-question { font-size: 0.9em !important; }
-  .step { font-size: 0.9em !important; }
-  .final-answer { font-size: 0.95em !important; }
-</style>
-</head>
-
-<body>
-
-    
-
-    <div class="content-box">
-        <div class="question">Example 1. Given tan A = 4/3, find the other trigonometric ratios of the angle A.</div>
-        
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMjA1IiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwNSIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxwb2x5Z29uIHBvaW50cz0iNTAsMjAgNTAsMTQwIDE0MCwxNDAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjxwb2x5bGluZSBwb2ludHM9IjUwLDEyNSA2NSwxMjUgNjUsMTQwIiBzdHJva2U9ImJsYWNrIiBmaWxsPSJub25lIi8+PHRleHQgeD0iMzUiIHk9IjMwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5DPC90ZXh0Pjx0ZXh0IHg9IjM1IiB5PSIxNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPkI8L3RleHQ+PHRleHQgeD0iMTU1IiB5PSIxNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPkE8L3RleHQ+PHRleHQgeD0iMzAiIHk9IjgwLjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjRrPC90ZXh0Pjx0ZXh0IHg9Ijk1LjAiIHk9IjE2MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+M2s8L3RleHQ+PHRleHQgeD0iMTA1LjAiIHk9IjcwLjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjVrPC90ZXh0Pjwvc3ZnPg==" alt="Triangle with tan A = 4/3">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Let us draw a right triangle ABC right-angled at B.</div>
-        <div class="step">\\(\\tan A = \\frac{\\text{Perpendicular}}{\\text{Base}} = \\frac{BC}{AB} = \\frac{4}{3}\\).</div>
-        <div class="step">Let \\(BC = 4k\\) and \\(AB = 3k\\) where \\(k\\) is a positive number.</div>
-        <div class="step">By Pythagoras Theorem:</div>
-        <div class="step"><span class="formula">\\(AC^2 = AB^2 + BC^2\\)</span></div>
-        <div class="step">\\(AC^2 = (3k)^2 + (4k)^2\\)</div>
-        <div class="step">\\(AC^2 = 9k^2 + 16k^2 = 25k^2\\)</div>
-        <div class="step">\\(AC = \\sqrt{25k^2} = 5k\\)</div>
-        <div class="step">Now, we can write all ratios:</div>
-        <div class="step">\\(\\sin A = \\frac{\\text{Perp}}{\\text{Hyp}} = \\frac{4k}{5k} = \\frac{4}{5}\\)</div>
-        <div class="step">\\(\\cos A = \\frac{\\text{Base}}{\\text{Hyp}} = \\frac{3k}{5k} = \\frac{3}{5}\\)</div>
-        <div class="step">\\(\\cot A = \\frac{1}{\\tan A} = \\frac{3}{4}\\)</div>
-        <div class="step">\\(\\sec A = \\frac{1}{\\cos A} = \\frac{5}{3}\\)</div>
-        <div class="step">\\(\\text{cosec } A = \\frac{1}{\\sin A} = \\frac{5}{4}\\)</div>
-        <div class="final-answer">Therefore, the required values are \\(\\sin A=\\frac{4}{5}, \\cos A=\\frac{3}{5}, \\cot
-            A=\\frac{3}{4}, \\sec A=\\frac{5}{3}, \\text{cosec } A=\\frac{5}{4}\\).</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">Example 2. If ∠B and ∠Q are acute angles such that sin B = sin Q, then prove that ∠B = ∠Q.
-        </div>
-        
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMjA1IiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwNSIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxwb2x5Z29uIHBvaW50cz0iNTAsMjAgNTAsMTIwIDEzMCwxMjAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjxwb2x5bGluZSBwb2ludHM9IjUwLDEwNSA2NSwxMDUgNjUsMTIwIiBzdHJva2U9ImJsYWNrIiBmaWxsPSJub25lIi8+PHRleHQgeD0iMzUiIHk9IjMwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5BPC90ZXh0Pjx0ZXh0IHg9IjM1IiB5PSIxMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPkM8L3RleHQ+PHRleHQgeD0iMTQ1IiB5PSIxMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPkI8L3RleHQ+PHRleHQgeD0iMzAiIHk9IjcwLjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPmI8L3RleHQ+PHRleHQgeD0iOTAuMCIgeT0iMTQwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5hPC90ZXh0Pjx0ZXh0IHg9IjEwMC4wIiB5PSI2MC4wIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5jPC90ZXh0Pjx0ZXh0IHg9IjI0MCIgeT0iMTAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5SZWYgUC1SLVEgc2ltaWxhcjwvdGV4dD48L3N2Zz4=" alt="Two Triangles">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Let us consider two right triangles ABC and PQR where sin B = sin Q.</div>
-        <div class="step">\\(\\sin B = \\frac{AC}{AB}\\)</div>
-        <div class="step">\\(\\sin Q = \\frac{PR}{PQ}\\)</div>
-        <div class="step">Given \\(\\sin B = \\sin Q\\):</div>
-        <div class="step">\\(\\Rightarrow \\frac{AC}{AB} = \\frac{PR}{PQ}\\)</div>
-        <div class="step">Let \\(\\frac{AC}{PR} = \\frac{AB}{PQ} = k\\)</div>
-        <div class="step">\\(\\Rightarrow AC = k(PR)\\) and \\(AB = k(PQ)\\)</div>
-        <div class="step">Using Pythagoras Theorem:</div>
-        <div class="step">\\(BC = \\sqrt{AB^2 - AC^2}\\)</div>
-        <div class="step">\\(QR = \\sqrt{PQ^2 - PR^2}\\)</div>
-        <div class="step">Checking ratio \\(\\frac{BC}{QR}\\):</div>
-        <div class="step">\\(\\frac{BC}{QR} = \\frac{\\sqrt{(kPQ)^2 - (kPR)^2}}{\\sqrt{PQ^2 - PR^2}}\\)</div>
-        <div class="step">\\(= \\frac{k\\sqrt{PQ^2 - PR^2}}{\\sqrt{PQ^2 - PR^2}} = k\\)</div>
-        <div class="step">So, \\(\\frac{AC}{PR} = \\frac{AB}{PQ} = \\frac{BC}{QR} = k\\)</div>
-        <div class="step">By SSS Similarity Criterion, \\(\\triangle ABC \\sim \\triangle PQR\\)</div>
-        <div class="step">Therefore, \\(\\angle B = \\angle Q\\).</div>
-        <div class="final-answer">Hence Proved.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">Example 3. Consider ∆ ACB, right-angled at C, in which AB = 29 units, BC = 21 units and
-            ∠ABC = θ. Determine the values of (i) cos² θ + sin² θ, (ii) cos² θ – sin² θ.</div>
-       
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMjA1IiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwNSIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxwb2x5Z29uIHBvaW50cz0iNTAsMjAgNTAsMTAwIDE5MCwxMDAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjxwb2x5bGluZSBwb2ludHM9IjUwLDg1IDY1LDg1IDY1LDEwMCIgc3Ryb2tlPSJibGFjayIgZmlsbD0ibm9uZSIvPjx0ZXh0IHg9IjM1IiB5PSIzMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QTwvdGV4dD48dGV4dCB4PSIzNSIgeT0iMTAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5DPC90ZXh0Pjx0ZXh0IHg9IjIwNSIgeT0iMTAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5CPC90ZXh0Pjx0ZXh0IHg9IjMwIiB5PSI2MC4wIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5BQz0yMDwvdGV4dD48dGV4dCB4PSIxMjAuMCIgeT0iMTIwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5CQz0yMTwvdGV4dD48dGV4dCB4PSIxMzAuMCIgeT0iNTAuMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QUI9Mjk8L3RleHQ+PC9zdmc+" alt="Triangle with sides 29 and 21">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Given \\(AB = 29, BC = 21\\).</div>
-        <div class="step">By Pythagoras Theorem:</div>
-        <div class="step">\\(AC = \\sqrt{AB^2 - BC^2} = \\sqrt{29^2 - 21^2}\\)</div>
-        <div class="step">\\(= \\sqrt{(29-21)(29+21)}\\)</div>
-        <div class="step">\\(= \\sqrt{8 \\times 50} = \\sqrt{400} = 20 \\text{ units}\\)</div>
-        <div class="step">Now, \\(\\sin \\theta = \\frac{AC}{AB} = \\frac{20}{29}\\)</div>
-        <div class="step">\\(\\cos \\theta = \\frac{BC}{AB} = \\frac{21}{29}\\)</div>
-
-        <div class="step">(i) \\(\\cos^2 \\theta + \\sin^2 \\theta\\)</div>
-        <div class="step">\\(= (\\frac{21}{29})^2 + (\\frac{20}{29})^2\\)</div>
-        <div class="step">\\(= \\frac{441 + 400}{841} = \\frac{841}{841} = 1\\)</div>
-
-        <div class="step">(ii) \\(\\cos^2 \\theta - \\sin^2 \\theta\\)</div>
-        <div class="step">\\(= (\\frac{21}{29})^2 - (\\frac{20}{29})^2\\)</div>
-        <div class="step">\\(= \\frac{441 - 400}{841} = \\frac{41}{841}\\)</div>
-        <div class="final-answer">Therefore, the required values are 1 and \\(\\frac{41}{841}\\).</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">Example 4. In a right triangle ABC, right-angled at B, if tan A = 1, then verify that 2
-            sin A cos A = 1.</div>
-        
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMjA1IiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwNSIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxwb2x5Z29uIHBvaW50cz0iNTAsMjAgNTAsMTAwIDEzMCwxMDAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjxwb2x5bGluZSBwb2ludHM9IjUwLDg1IDY1LDg1IDY1LDEwMCIgc3Ryb2tlPSJibGFjayIgZmlsbD0ibm9uZSIvPjx0ZXh0IHg9IjM1IiB5PSIzMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QzwvdGV4dD48dGV4dCB4PSIzNSIgeT0iMTAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5CPC90ZXh0Pjx0ZXh0IHg9IjE0NSIgeT0iMTAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5BPC90ZXh0Pjx0ZXh0IHg9IjMwIiB5PSI2MC4wIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xPC90ZXh0Pjx0ZXh0IHg9IjkwLjAiIHk9IjEyMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MTwvdGV4dD48dGV4dCB4PSIxMDAuMCIgeT0iNTAuMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4oiaMjwvdGV4dD48L3N2Zz4=" alt="Triangle 45 deg">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Given \\(\\tan A = 1\\).</div>
-        <div class="step">\\(\\frac{BC}{AB} = 1 \\Rightarrow BC = AB\\).</div>
-        <div class="step">Let \\(AB = BC = k\\).</div>
-        <div class="step">Hypotenuse \\(AC = \\sqrt{k^2 + k^2} = \\sqrt{2k^2} = k\\sqrt{2}\\)</div>
-        <div class="step">\\(\\sin A = \\frac{BC}{AC} = \\frac{k}{k\\sqrt{2}} = \\frac{1}{\\sqrt{2}}\\)</div>
-        <div class="step">\\(\\cos A = \\frac{AB}{AC} = \\frac{k}{k\\sqrt{2}} = \\frac{1}{\\sqrt{2}}\\)</div>
-        <div class="step">LHS = \\(2 \\sin A \\cos A\\)</div>
-        <div class="step">\\(= 2 (\\frac{1}{\\sqrt{2}})(\\frac{1}{\\sqrt{2}})\\)</div>
-        <div class="step">\\(= 2 (\\frac{1}{2}) = 1\\) = RHS</div>
-        <div class="final-answer">Hence Verified.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">Example 5. In ∆ OPQ, right-angled at P, OP = 7 cm and OQ – PQ = 1 cm. Determine the values
-            of sin Q and cos Q.</div>
-       
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMjA1IiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwNSIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxwb2x5Z29uIHBvaW50cz0iNTAsMjAgNTAsMTIwIDE5MCwxMjAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjxwb2x5bGluZSBwb2ludHM9IjUwLDEwNSA2NSwxMDUgNjUsMTIwIiBzdHJva2U9ImJsYWNrIiBmaWxsPSJub25lIi8+PHRleHQgeD0iMzUiIHk9IjMwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5RPC90ZXh0Pjx0ZXh0IHg9IjM1IiB5PSIxMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPlA8L3RleHQ+PHRleHQgeD0iMjA1IiB5PSIxMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPk88L3RleHQ+PHRleHQgeD0iMzAiIHk9IjcwLjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPng8L3RleHQ+PHRleHQgeD0iMTIwLjAiIHk9IjE0MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NzwvdGV4dD48dGV4dCB4PSIxMzAuMCIgeT0iNjAuMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MSt4PC90ZXh0Pjwvc3ZnPg==" alt="Triangle OPQ">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Given \\(OP = 7 \\text{ cm}\\) and \\(OQ - PQ = 1 \\Rightarrow OQ = 1 + PQ\\).</div>
-        <div class="step">By Pythagoras Theorem: <span class="formula">\\(OQ^2 = OP^2 + PQ^2\\)</span></div>
-        <div class="step">\\((1 + PQ)^2 = 7^2 + PQ^2\\)</div>
-        <div class="step">\\(1 + PQ^2 + 2PQ = 49 + PQ^2\\)</div>
-        <div class="step">\\(2PQ = 48 \\Rightarrow PQ = 24 \\text{ cm}\\)</div>
-        <div class="step">\\(OQ = 1 + 24 = 25 \\text{ cm}\\)</div>
-        <div class="step">\\(\\sin Q = \\frac{OP}{OQ} = \\frac{7}{25}\\)</div>
-        <div class="step">\\(\\cos Q = \\frac{PQ}{OQ} = \\frac{24}{25}\\)</div>
-        <div class="final-answer">Therefore, the required values are \\(\\sin Q = \\frac{7}{25}, \\cos Q = \\frac{24}{25}\\).
-        </div>
-        <div class="content-box">
-            <div class="question">Example 6. In ∆ ABC, right-angled at B, AB = 5 cm and ∠ACB = 30° (see Fig. 8.19).
-                Determine
-                the lengths of the sides BC and AC.</div>
-            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMjAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCI+DQogIDwhLS0gVHJpYW5nbGUgQUJDLCBCIGlzIHJpZ2h0IGFuZ2xlLiBDIGlzIDMwIGRlZy4gQUIgPSA1Y20uIC0tPg0KICA8IS0tIExldCAxIHVuaXQgPSAyMHB4LiBBQiA9IDEwMHB4LiBCQyA9IDUqc3FydCgzKSB+IDguNjYgPSAxNzNweCAtLT4NCiAgPGRlZnM+DQogICAgPHN0eWxlPg0KICAgICAgLmxhYmVsIHsgZm9udC1mYW1pbHk6IHNlcmlmOyBmb250LXNpemU6IDE2cHg7IGZvbnQtd2VpZ2h0OiBib2xkOyB9DQogICAgPC9zdHlsZT4NCiAgPC9kZWZzPg0KICANCiAgPHBhdGggZD0iTTUwLDE1MCBMNTAsNTAgTDIyMywxNTAgWiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgDQogIDwhLS0gUmlnaHQgYW5nbGUgYXQgQig1MCwxNTApIC0tPg0KICA8cmVjdCB4PSI1MCIgeT0iMTQwIiB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwMCIgLz4NCiAgDQogIDwhLS0gQW5nbGUgYXQgQyAtLT4NCiAgPHBhdGggZD0iTTE5MywxNTAgQTMwLDMwIDAgMCAwIDE5OCwxMzUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwMCIgLz4NCiAgPHRleHQgeD0iMTYwIiB5PSIxNDUiIGNsYXNzPSJsYWJlbCI+MzDCsDwvdGV4dD4NCg0KICA8IS0tIExhYmVscyAtLT4NCiAgPHRleHQgeD0iMzUiIHk9IjE1NSIgY2xhc3M9ImxhYmVsIj5CPC90ZXh0Pg0KICA8dGV4dCB4PSIzNSIgeT0iNDUiIGNsYXNzPSJsYWJlbCI+QTwvdGV4dD4NCiAgPHRleHQgeD0iMjMwIiB5PSIxNTUiIGNsYXNzPSJsYWJlbCI+QzwvdGV4dD4NCiAgDQogIDx0ZXh0IHg9IjIwIiB5PSIxMDAiIGNsYXNzPSJsYWJlbCI+NSBjbTwvdGV4dD4NCiAgDQo8L3N2Zz4NCg==" alt="Triangle ABC">
-            <div class="solution-header">Solution:</div>
-            <div class="step">Given \\(AB = 5 \\text{ cm}\\) and \\(\\angle ACB = 30^\\circ\\).</div>
-            <div class="step">To find BC, we use tan C:</div>
-            <div class="step">\\(\\tan C = \\frac{AB}{BC}\\)</div>
-            <div class="step">\\(\\tan 30^\\circ = \\frac{5}{BC}\\)</div>
-            <div class="step">\\(\\frac{1}{\\sqrt{3}} = \\frac{5}{BC}\\)</div>
-            <div class="step">\\(\\Rightarrow BC = 5\\sqrt{3} \\text{ cm}\\).</div>
-            <div class="step">To find AC, we use sin C:</div>
-            <div class="step">\\(\\sin 30^\\circ = \\frac{AB}{AC}\\)</div>
-            <div class="step">\\(\\frac{1}{2} = \\frac{5}{AC}\\)</div>
-            <div class="step">\\(\\Rightarrow AC = 10 \\text{ cm}\\).</div>
-            <div class="final-answer">Lengths are BC = \\(5\\sqrt{3}\\) cm and AC = 10 cm.</div>
-        </div>
-
-        <div class="content-box">
-            <div class="question">Example 7. In ∆ PQR, right-angled at Q (see Fig. 8.20), PQ = 3 cm and PR = 6 cm.
-                Determine
-                ∠QPR and ∠PRQ.</div>
-            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMjAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCI+DQogIDwhLS0gVHJpYW5nbGUgUFFSLCBRIGlzIHJpZ2h0IGFuZ2xlLiBQUT0zY20sIFBSPTZjbS4gUiB3aWxsIGJlIDMwIGRlZy4gLS0+DQogIDwhLS0gU2NhbGUgMSB1bml0ID0gMjBweC4gUFE9NjBweC4gUFI9MTIwcHguIFFSPXNxcnQoMTIwXjIgLSA2MF4yKSA9IDEwNHB4LiAtLT4NCiAgPGRlZnM+DQogICAgPHN0eWxlPg0KICAgICAgLmxhYmVsIHsgZm9udC1mYW1pbHk6IHNlcmlmOyBmb250LXNpemU6IDE2cHg7IGZvbnQtd2VpZ2h0OiBib2xkOyB9DQogICAgPC9zdHlsZT4NCiAgPC9kZWZzPg0KICANCiAgPCEtLSBRIGF0ICg1MCwgMTUwKSAtLT4NCiAgPCEtLSBQIGF0ICg1MCwgOTApIC0tPg0KICA8IS0tIFIgYXQgKDE1NCwgMTUwKSAtLT4NCiAgDQogIDxwYXRoIGQ9Ik01MCwxNTAgTDUwLDkwIEwxNTQsMTUwIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwMCIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIA0KICA8IS0tIFJpZ2h0IGFuZ2xlIGF0IFEgLS0+DQogIDxyZWN0IHg9IjUwIiB5PSIxNDAiIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDAwIiAvPg0KDQogIDwhLS0gTGFiZWxzIC0tPg0KICA8dGV4dCB4PSIzNSIgeT0iMTU1IiBjbGFzcz0ibGFiZWwiPlE8L3RleHQ+DQogIDx0ZXh0IHg9IjM1IiB5PSI4NSIgY2xhc3M9ImxhYmVsIj5QPC90ZXh0Pg0KICA8dGV4dCB4PSIxNjAiIHk9IjE1NSIgY2xhc3M9ImxhYmVsIj5SPC90ZXh0Pg0KICANCiAgPHRleHQgeD0iMTUiIHk9IjEyMCIgY2xhc3M9ImxhYmVsIj4zIGNtPC90ZXh0Pg0KICA8dGV4dCB4PSIxMDAiIHk9IjExMCIgY2xhc3M9ImxhYmVsIj42IGNtPC90ZXh0Pg0KICANCjwvc3ZnPg0K" alt="Triangle PQR">
-            <div class="solution-header">Solution:</div>
-            <div class="step">Given \\(PQ = 3 \\text{ cm}\\) and \\(PR = 6 \\text{ cm}\\).</div>
-            <div class="step">\\(\\sin R = \\frac{PQ}{PR} = \\frac{3}{6} = \\frac{1}{2}\\).</div>
-            <div class="step">We know that \\(\\sin 30^\\circ = \\frac{1}{2}\\).</div>
-            <div class="step">So, \\(\\angle PRQ = 30^\\circ\\).</div>
-            <div class="step">In \\(\\triangle PQR\\), \\(\\angle Q = 90^\\circ\\).</div>
-            <div class="step">\\(\\angle P + \\angle R = 90^\\circ\\)</div>
-            <div class="step">\\(\\angle P + 30^\\circ = 90^\\circ\\)</div>
-            <div class="step">\\(\\Rightarrow \\angle QPR = 60^\\circ\\).</div>
-            <div class="final-answer">∠QPR = 60° and ∠PRQ = 30°.</div>
-        </div>
-
-        <div class="content-box">
-            <div class="question">Example 8. If \\(\\sin (A - B) = \\frac{1}{2}, \\cos (A + B) = \\frac{1}{2}, 0^\\circ < A +
-                    B \\le 90^\\circ, A> B\\), find A and B.</div>
-            <div class="solution-header">Solution:</div>
-            <div class="step">Given \\(\\sin (A - B) = \\frac{1}{2}\\).</div>
-            <div class="step">Since \\(\\sin 30^\\circ = \\frac{1}{2}\\), we have \\(A - B = 30^\\circ\\) ...(1)</div>
-            <div class="step">Given \\(\\cos (A + B) = \\frac{1}{2}\\).</div>
-            <div class="step">Since \\(\\cos 60^\\circ = \\frac{1}{2}\\), we have \\(A + B = 60^\\circ\\) ...(2)</div>
-            <div class="step">Adding (1) and (2):</div>
-            <div class="step">\\((A - B) + (A + B) = 30^\\circ + 60^\\circ\\)</div>
-            <div class="step">\\(2A = 90^\\circ \\Rightarrow A = 45^\\circ\\).</div>
-            <div class="step">Substituting A into (2):</div>
-            <div class="step">\\(45^\\circ + B = 60^\\circ \\Rightarrow B = 15^\\circ\\).</div>
-            <div class="final-answer">A = 45° and B = 15°.</div>
-        </div>
-
-        <div class="content-box">
-            <div class="question">Example 9. Express the ratios cos A, tan A and sec A in terms of sin A.</div>
-            <div class="solution-header">Solution:</div>
-            <div class="step">We use the identity \\(\\cos^2 A + \\sin^2 A = 1\\).</div>
-            <div class="step">\\(\\cos^2 A = 1 - \\sin^2 A\\)</div>
-            <div class="step">\\(\\cos A = \\pm \\sqrt{1 - \\sin^2 A}\\). Since A is acute, \\(\\cos A = \\sqrt{1 - \\sin^2 A}\\).
-            </div>
-            <div class="step">Now, \\(\\tan A = \\frac{\\sin A}{\\cos A} = \\frac{\\sin A}{\\sqrt{1 - \\sin^2 A}}\\).</div>
-            <div class="step">And, \\(\\sec A = \\frac{1}{\\cos A} = \\frac{1}{\\sqrt{1 - \\sin^2 A}}\\).</div>
-            <div class="final-answer">Values expressed in terms of sin A.</div>
-        </div>
-
-        <div class="content-box">
-            <div class="question">Example 10. Prove that \\(\\sec A (1 - \\sin A)(\\sec A + \\tan A) = 1\\).</div>
-            <div class="solution-header">Solution:</div>
-            <div class="step">LHS = \\(\\sec A (1 - \\sin A)(\\sec A + \\tan A)\\)</div>
-            <div class="step">\\(= \\frac{1}{\\cos A}(1 - \\sin A)\\left(\\frac{1}{\\cos A} + \\frac{\\sin A}{\\cos A}\\right)\\)
-            </div>
-            <div class="step">\\(= \\frac{(1 - \\sin A)}{\\cos A} \\cdot \\frac{(1 + \\sin A)}{\\cos A}\\)</div>
-            <div class="step">\\(= \\frac{1^2 - \\sin^2 A}{\\cos^2 A}\\)</div>
-            <div class="step">Using identity \\(1 - \\sin^2 A = \\cos^2 A\\):</div>
-            <div class="step">\\(= \\frac{\\cos^2 A}{\\cos^2 A} = 1\\) = RHS.</div>
-            <div class="final-answer">Hence Proved.</div>
-        </div>
-
-        <div class="content-box">
-            <div class="question">Example 11. Prove that \\(\\frac{\\cot A - \\cos A}{\\cot A + \\cos A} = \\frac{\\text{cosec }
-                A -
-                1}{\\text{cosec } A + 1}\\).</div>
-            <div class="solution-header">Solution:</div>
-            <div class="step">LHS = \\(\\frac{\\cot A - \\cos A}{\\cot A + \\cos A}\\)</div>
-            <div class="step">\\(= \\frac{\\frac{\\cos A}{\\sin A} - \\cos A}{\\frac{\\cos A}{\\sin A} + \\cos A}\\)</div>
-            <div class="step">Factor out \\(\\cos A\\) from numerator and denominator:</div>
-            <div class="step">\\(= \\frac{\\cos A(\\frac{1}{\\sin A} - 1)}{\\cos A(\\frac{1}{\\sin A} + 1)}\\)</div>
-            <div class="step">\\(= \\frac{\\frac{1}{\\sin A} - 1}{\\frac{1}{\\sin A} + 1}\\)</div>
-            <div class="step">\\(= \\frac{\\text{cosec } A - 1}{\\text{cosec } A + 1}\\) = RHS.</div>
-            <div class="final-answer">Hence Proved.</div>
-        </div>
-
-        <div class="content-box">
-            <div class="question">Example 12. Prove that \\(\\frac{\\sin \\theta - \\cos \\theta + 1}{\\sin \\theta + \\cos
-                \\theta - 1} =
-                \\frac{1}{\\sec \\theta - \\tan \\theta}\\), using the identity \\(\\sec^2 \\theta = 1 + \\tan^2 \\theta\\).</div>
-            <div class="solution-header">Solution:</div>
-            <div class="step">Divide numerator and denominator of LHS by \\(\\cos \\theta\\):</div>
-            <div class="step">LHS = \\(\\frac{\\tan \\theta - 1 + \\sec \\theta}{\\tan \\theta + 1 - \\sec \\theta} = \\frac{(\\tan
-                \\theta +
-                \\sec \\theta) - 1}{(\\tan \\theta - \\sec \\theta) + 1}\\)</div>
-            <div class="step">Substitute \\(1 = \\sec^2 \\theta - \\tan^2 \\theta\\) in the numerator:</div>
-            <div class="step">Numerator = \\((\\tan \\theta + \\sec \\theta) - (\\sec^2 \\theta - \\tan^2 \\theta)\\)</div>
-            <div class="step">\\(= (\\sec \\theta + \\tan \\theta) - [(\\sec \\theta - \\tan \\theta)(\\sec \\theta + \\tan
-                \\theta)]\\)
-            </div>
-            <div class="step">\\(= (\\sec \\theta + \\tan \\theta)(1 - (\\sec \\theta - \\tan \\theta))\\)</div>
-            <div class="step">\\(= (\\sec \\theta + \\tan \\theta)(1 - \\sec \\theta + \\tan \\theta)\\)</div>
-            <div class="step">Denominator = \\(\\tan \\theta - \\sec \\theta + 1\\).</div>
-            <div class="step">So, LHS = \\(\\sec \\theta + \\tan \\theta\\).</div>
-            <div class="step">Now, converting to RHS form:</div>
-            <div class="step">Multiply and divide by \\((\\sec \\theta - \\tan \\theta)\\):</div>
-            <div class="step">\\(= \\frac{(\\sec \\theta + \\tan \\theta)(\\sec \\theta - \\tan \\theta)}{\\sec \\theta - \\tan
-                \\theta}\\)
-            </div>
-            <div class="step">\\(= \\frac{\\sec^2 \\theta - \\tan^2 \\theta}{\\sec \\theta - \\tan \\theta}\\)</div>
-            <div class="step">\\(= \\frac{1}{\\sec \\theta - \\tan \\theta}\\) = RHS.</div>
-            <div class="final-answer">Hence Proved.</div>
-        </div>
-
-</html>`
+  id: "ch8",
+  number: 8,
+  title: "Introduction to Trigonometry",
+  introduction: "Trigonometry is the branch of mathematics that investigates the precise quantitative relationships between the side lengths and angles of triangles. Rooted in the geometric properties of right-angled triangles, the six trigonometric ratios, special angle values, and fundamental Pythagorean identities provide an indispensable analytical foundation for celestial mechanics, modern architecture, optics, and advanced engineering.",
+  definitions: [
+    {
+      term: "Trigonometry",
+      description: "The mathematical study of relationships between the angles and lengths of triangles, derived from the Greek words 'tri' (three), 'gon' (sides), and 'metron' (measure)."
+    },
+    {
+      term: "Perpendicular (P)",
+      description: "The side of a right-angled triangle that lies directly opposite to the reference acute angle θ."
+    },
+    {
+      term: "Base (B)",
+      description: "The side of a right-angled triangle adjacent to the reference acute angle θ (between θ and the 90° right angle)."
+    },
+    {
+      term: "Hypotenuse (H)",
+      description: "The longest side of a right-angled triangle, situated directly opposite to the 90° right angle."
+    },
+    {
+      term: "Trigonometric Ratio",
+      description: "The ratio of lengths of any two sides of a right-angled triangle with respect to one of its acute angles."
+    },
+    {
+      term: "Trigonometric Identity",
+      description: "An equation involving trigonometric functions that remains universally true for every valid acute angle value θ for which the functions are defined."
     }
+  ],
+  keyPoints: [
+    "In a right triangle with acute angle A, sin A = Perpendicular/Hypotenuse, cos A = Base/Hypotenuse, and tan A = Perpendicular/Base.",
+    "The reciprocal trigonometric ratios are: cosec A = 1/sin A, sec A = 1/cos A, and cot A = 1/tan A.",
+    "Quotient relations: tan A = sin A / cos A and cot A = cos A / sin A.",
+    "The value of sin A or cos A never exceeds 1, because the perpendicular and base can never be longer than the hypotenuse.",
+    "Values of trigonometric ratios of 0°, 30°, 45°, 60°, and 90° can be deduced through pure geometric proofs in equilateral and isosceles right triangles.",
+    "Fundamental Pythagorean Identities: (i) sin² A + cos² A = 1, (ii) 1 + tan² A = sec² A, (iii) 1 + cot² A = cosec² A.",
+    "To prove an identity, convert all terms to sine and cosine or apply conjugate multiplication to simplify fractional terms."
+  ],
+  formulas: [
+    {
+      name: "Trigonometric Ratios",
+      formula: "sin θ = P/H,  cos θ = B/H,  tan θ = P/B"
+    },
+    {
+      name: "Reciprocal Relations",
+      formula: "cosec θ = H/P = 1/sin θ,  sec θ = H/B = 1/cos θ,  cot θ = B/P = 1/tan θ"
+    },
+    {
+      name: "Quotient Relations",
+      formula: "tan θ = sin θ / cos θ,  cot θ = cos θ / sin θ"
+    },
+    {
+      name: "Primary Pythagorean Identity",
+      formula: "sin² θ + cos² θ = 1  =>  sin² θ = 1 - cos² θ,  cos² θ = 1 - sin² θ"
+    },
+    {
+      name: "Secant-Tangent Identity",
+      formula: "sec² θ - tan² θ = 1  =>  sec² θ = 1 + tan² θ,  tan² θ = sec² θ - 1"
+    },
+    {
+      name: "Cosecant-Cotangent Identity",
+      formula: "cosec² θ - cot² θ = 1  =>  cosec² θ = 1 + cot² θ,  cot² θ = cosec² θ - 1"
+    },
+    {
+      name: "Conjugate Identity Shortcut",
+      formula: "sec θ - tan θ = 1 / (sec θ + tan θ),  cosec θ - cot θ = 1 / (cosec θ + cot θ)"
+    }
+  ],
+  crux: [
+    "Always check which acute angle is being referenced: for angle A, side BC is perpendicular; but for angle C, side AB becomes perpendicular!",
+    "Never treat 'sin A' as the product of 'sin' and 'A'. 'sin' separated from 'A' has no mathematical meaning.",
+    "When solving identity proofs, look for terms with (1 ± sin A) or (1 ± cos A) in denominators and multiply by the conjugate (1 ∓ sin A) or (1 ∓ cos A).",
+    "tan 45° = 1, sin 30° = cos 60° = 1/2, and sin 45° = cos 45° = 1/√2 are the most frequently used board exam values."
+  ],
+  summary: [
+    "Trigonometry connects side lengths and angles in right triangles via sine, cosine, tangent, cosecant, secant, and cotangent.",
+    "Master the trigonometric table for 0°, 30°, 45°, 60°, and 90° for lightning-fast numerical evaluation.",
+    "The three master Pythagorean identities (sin² A + cos² A = 1, 1 + tan² A = sec² A, 1 + cot² A = cosec² A) unlock rigorous algebraic proofs for trigonometric expressions."
+  ],
+  exercises: [
+    { id: "examples", name: "Examples", questions: [] },
+    { id: "exercise1", name: "Exercise 8.1", questions: [] },
+    { id: "exercise2", name: "Exercise 8.2", questions: [] },
+    { id: "exercise3", name: "Exercise 8.3", questions: [] }
+  ],
+  examples: [],
+  theorems: [],
+  mcqs: [
+  {
+    "id": "ch8-mcq-1",
+    "question": "The value of 9 sec² A &minus; 9 tan² A is:",
+    "options": [
+      "A):   1",
+      "B):   9",
+      "C):   8",
+      "D):   0"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Factoring out 9 gives 9(sec² A - tan² A). Using the standard identity sec² A - tan² A = 1, we get 9 × 1 = 9."
+  },
+  {
+    "id": "ch8-mcq-2",
+    "question": "The value of (1 + tan θ + sec θ)(1 + cot θ &minus; cosec θ) is equal to:",
+    "options": [
+      "A):   0",
+      "B):   1",
+      "C):   2",
+      "D):   -1"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Converting to sin θ and cos θ: ((cos θ + sin θ + 1)/cos θ) × ((sin θ + cos θ - 1)/sin θ) = ((sin θ + cos θ)² - 1) / (sin θ cos θ) = (1 + 2 sin θ cos θ - 1) / (sin θ cos θ) = 2."
+  },
+  {
+    "id": "ch8-mcq-3",
+    "question": "(sec A + tan A)(1 &minus; sin A) is identically equal to:",
+    "options": [
+      "A):   sec A",
+      "B):   sin A",
+      "C):   cosec A",
+      "D):   cos A"
+    ],
+    "correctAnswer": "D",
+    "explanation": "(sec A + tan A)(1 - sin A) = ((1 + sin A)/cos A)(1 - sin A) = (1 - sin² A)/cos A = cos² A / cos A = cos A."
+  },
+  {
+    "id": "ch8-mcq-4",
+    "question": "The value of (1 + tan² A) / (1 + cot² A) is:",
+    "options": [
+      "A):   sec² A",
+      "B):   cot² A",
+      "C):   -1",
+      "D):   tan² A"
+    ],
+    "correctAnswer": "D",
+    "explanation": "(1 + tan² A) / (1 + cot² A) = sec² A / cosec² A = (1/cos² A) / (1/sin² A) = sin² A / cos² A = tan² A."
+  },
+  {
+    "id": "ch8-mcq-5",
+    "question": "If sin A = 3/4, then cos A is equal to:",
+    "options": [
+      "A):   4/3",
+      "B):   √7/4",
+      "C):   3/√7",
+      "D):   √7/3"
+    ],
+    "correctAnswer": "B",
+    "explanation": "cos A = √(1 - sin² A) = √(1 - (3/4)²) = √(1 - 9/16) = √(7/16) = √7/4."
+  },
+  {
+    "id": "ch8-mcq-6",
+    "question": "If 4 tan θ = 3, then the value of (4 sin θ &minus; cos θ) / (4 sin θ + cos θ) is:",
+    "options": [
+      "A):   2/3",
+      "B):   1/3",
+      "C):   1/2",
+      "D):   3/4"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Divide numerator and denominator by cos θ: (4 tan θ - 1) / (4 tan θ + 1). Given 4 tan θ = 3, this becomes (3 - 1)/(3 + 1) = 2/4 = 1/2."
+  },
+  {
+    "id": "ch8-mcq-7",
+    "question": "The value of sin 60° cos 30° + sin 30° cos 60° is:",
+    "options": [
+      "A):   1",
+      "B):   0",
+      "C):   2",
+      "D):   √3"
+    ],
+    "correctAnswer": "A",
+    "explanation": "(√3/2)(√3/2) + (1/2)(1/2) = 3/4 + 1/4 = 4/4 = 1. (Also equals sin(60° + 30°) = sin 90° = 1)."
+  },
+  {
+    "id": "ch8-mcq-8",
+    "question": "If tan A = √3, then the value of sec A is:",
+    "options": [
+      "A):   1/2",
+      "B):   √3/2",
+      "C):   2",
+      "D):   1/√3"
+    ],
+    "correctAnswer": "C",
+    "explanation": "tan A = √3 ⇒ A = 60°. Therefore, sec A = sec 60° = 2."
+  },
+  {
+    "id": "ch8-mcq-9",
+    "question": "The value of (sin² 30° + cos² 30°) &minus; (sec² 45° &minus; tan² 45°) is:",
+    "options": [
+      "A):   0",
+      "B):   1",
+      "C):   -1",
+      "D):   2"
+    ],
+    "correctAnswer": "A",
+    "explanation": "By standard trigonometric identities, sin² θ + cos² θ = 1 and sec² θ - tan² θ = 1. Therefore, 1 - 1 = 0."
+  },
+  {
+    "id": "ch8-mcq-10",
+    "question": "If sin θ + sin² θ = 1, then the value of cos² θ + cos⁴ θ is:",
+    "options": [
+      "A):   -1",
+      "B):   1",
+      "C):   0",
+      "D):   2"
+    ],
+    "correctAnswer": "B",
+    "explanation": "sin θ = 1 - sin² θ = cos² θ. Squaring both sides: sin² θ = cos⁴ θ. Therefore, cos² θ + cos⁴ θ = sin θ + sin² θ = 1."
+  },
+  {
+    "id": "ch8-mcq-11",
+    "question": "If cos A = 4/5, then the value of tan A is:",
+    "options": [
+      "A):   3/5",
+      "B):   5/3",
+      "C):   3/4",
+      "D):   4/3"
+    ],
+    "correctAnswer": "C",
+    "explanation": "sin A = √(1 - cos² A) = √(1 - 16/25) = 3/5. Therefore, tan A = sin A / cos A = (3/5) / (4/5) = 3/4."
+  },
+  {
+    "id": "ch8-mcq-12",
+    "question": "The maximum value of 1/cosec θ (for 0° ≤ θ ≤ 90°) is:",
+    "options": [
+      "A):   1",
+      "B):   0",
+      "C):   1/2",
+      "D):   √3/2"
+    ],
+    "correctAnswer": "A",
+    "explanation": "1/cosec θ = sin θ. For acute angles 0° ≤ θ ≤ 90°, the maximum value of sin θ is 1 (attained at θ = 90°)."
+  },
+  {
+    "id": "ch8-mcq-13",
+    "question": "If triangle ABC is right-angled at C, then the value of cos (A + B) is:",
+    "options": [
+      "A):   0",
+      "B):   1",
+      "C):   1/2",
+      "D):   √3/2"
+    ],
+    "correctAnswer": "A",
+    "explanation": "In ∆ABC, ∠A + ∠B + ∠C = 180°. Since ∠C = 90°, ∠A + ∠B = 90°. Hence, cos(A + B) = cos 90° = 0."
+  },
+  {
+    "id": "ch8-mcq-14",
+    "question": "If sin θ &minus; cos θ = 0, then the value of (sin⁴ θ + cos⁴ θ) is:",
+    "options": [
+      "A):   1",
+      "B):   1/2",
+      "C):   3/4",
+      "D):   1/4"
+    ],
+    "correctAnswer": "B",
+    "explanation": "sin θ = cos θ ⇒ tan θ = 1 ⇒ θ = 45°. Therefore, sin⁴ 45° + cos⁴ 45° = (1/√2)⁴ + (1/√2)⁴ = 1/4 + 1/4 = 2/4 = 1/2."
+  },
+  {
+    "id": "ch8-mcq-15",
+    "question": "(1 + cot² θ) sin² θ is equal to:",
+    "options": [
+      "A):   1",
+      "B):   cos² θ",
+      "C):   tan² θ",
+      "D):   sec² θ"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Using identity 1 + cot² θ = cosec² θ: cosec² θ × sin² θ = (1/sin² θ) × sin² θ = 1."
+  },
+  {
+    "id": "ch8-mcq-16",
+    "question": "If sec θ + tan θ = x, then the value of sec θ &minus; tan θ is:",
+    "options": [
+      "A):   x²",
+      "B):   -x",
+      "C):   1/x",
+      "D):   1/x²"
+    ],
+    "correctAnswer": "C",
+    "explanation": "sec² θ - tan² θ = 1 ⇒ (sec θ + tan θ)(sec θ - tan θ) = 1. Since sec θ + tan θ = x, sec θ - tan θ = 1/x."
+  },
+  {
+    "id": "ch8-mcq-17",
+    "question": "If tan θ = a/b, then the value of (a sin θ &minus; b cos θ) / (a sin θ + b cos θ) is:",
+    "options": [
+      "A):   (a² - b²)/(a² + b²)",
+      "B):   (b² - a²)/(b² + a²)",
+      "C):   a²/(a² + b²)",
+      "D):   b²/(a² + b²)"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Dividing numerator and denominator by cos θ gives (a tan θ - b) / (a tan θ + b) = (a(a/b) - b) / (a(a/b) + b) = (a² - b²)/(a² + b²)."
+  },
+  {
+    "id": "ch8-mcq-18",
+    "question": "The value of (cosec² 45° &minus; cot² 45°) is:",
+    "options": [
+      "A):   2",
+      "B):   0",
+      "C):   √2",
+      "D):   1"
+    ],
+    "correctAnswer": "D",
+    "explanation": "cosec 45° = √2 and cot 45° = 1. (√2)² - 1² = 2 - 1 = 1 (or by identity cosec² θ - cot² θ = 1)."
+  },
+  {
+    "id": "ch8-mcq-19",
+    "question": "In right triangle ABC right-angled at B, if tan A = √3, then the value of cos A cos C &minus; sin A sin C is:",
+    "options": [
+      "A):   1",
+      "B):   0",
+      "C):   -1",
+      "D):   1/2"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Since ∠B = 90°, ∠A + ∠C = 90°. The expression cos A cos C - sin A sin C = cos(A + C) = cos 90° = 0."
+  },
+  {
+    "id": "ch8-mcq-20",
+    "question": "If x = a cos θ and y = b sin θ, then the value of b²x² + a²y² is:",
+    "options": [
+      "A):   a²b²",
+      "B):   a² + b²",
+      "C):   1",
+      "D):   ab"
+    ],
+    "correctAnswer": "A",
+    "explanation": "b²x² + a²y² = b²(a²cos²θ) + a²(b²sin²θ) = a²b²(cos²θ + sin²θ) = a²b²(1) = a²b²."
+  },
+  {
+    "id": "ch8-mcq-21",
+    "question": "The value of (sin 30° + cos 60°) is:",
+    "options": [
+      "A):   1/2",
+      "B):   1",
+      "C):   √3",
+      "D):   2"
+    ],
+    "correctAnswer": "B",
+    "explanation": "sin 30° = 1/2 and cos 60° = 1/2. Therefore, 1/2 + 1/2 = 1."
+  },
+  {
+    "id": "ch8-mcq-22",
+    "question": "If cosec A &minus; cot A = 1/5, then the value of cosec A + cot A is:",
+    "options": [
+      "A):   1/5",
+      "B):   -5",
+      "C):   25",
+      "D):   5"
+    ],
+    "correctAnswer": "D",
+    "explanation": "Using cosec² A - cot² A = 1 ⇒ (cosec A - cot A)(cosec A + cot A) = 1 ⇒ cosec A + cot A = 1/(1/5) = 5."
+  },
+  {
+    "id": "ch8-mcq-23",
+    "question": "If 2 sin 2θ = √3, then the value of θ is:",
+    "options": [
+      "A):   60°",
+      "B):   30°",
+      "C):   45°",
+      "D):   15°"
+    ],
+    "correctAnswer": "B",
+    "explanation": "2 sin 2θ = √3 ⇒ sin 2θ = √3/2. Since sin 60° = √3/2, 2θ = 60° ⇒ θ = 30°."
+  },
+  {
+    "id": "ch8-mcq-24",
+    "question": "The expression (sin θ / (1 + cos θ)) is identically equal to:",
+    "options": [
+      "A):   (1 &minus; cos θ) / sin θ",
+      "B):   (1 + cos θ) / sin θ",
+      "C):   (1 &minus; sin θ) / cos θ",
+      "D):   cos θ / (1 &minus; sin θ)"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply numerator and denominator by (1 - cos θ): sin θ(1 - cos θ) / (1 - cos² θ) = sin θ(1 - cos θ) / sin² θ = (1 - cos θ) / sin θ."
+  },
+  {
+    "id": "ch8-mcq-25",
+    "question": "If cos θ + sec θ = 2, then the value of cos² θ + sec² θ is:",
+    "options": [
+      "A):   4",
+      "B):   1",
+      "C):   0",
+      "D):   2"
+    ],
+    "correctAnswer": "D",
+    "explanation": "Squaring both sides: (cos θ + sec θ)² = 2² ⇒ cos² θ + 2 cos θ sec θ + sec² θ = 4. Since cos θ sec θ = 1, cos² θ + 2 + sec² θ = 4 ⇒ cos² θ + sec² θ = 2."
+  }
+],
+  isHtmlView: true,
+  htmlOverview: "\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; }\n  .frac .den { padding: 1px 4px; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(224, 64, 251, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #E040FB; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 14px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(224, 64, 251, 0.25); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #E040FB; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #EA80FC; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(224, 64, 251, 0.15); border: 1px solid #E040FB; color: #EA80FC; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 6px 0; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(224, 64, 251, 0.4); border-radius: 10px; padding: 14px; margin: 16px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #FFFFFF; border-radius: 8px; padding: 10px 8px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.25); }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 10px; font-weight: 500; }\n  .table-card { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 14px 0; border-radius: 8px; }\n  .table-card table { width: 100%; border-collapse: collapse; text-align: center; }\n  .table-card th { background: rgba(224, 64, 251, 0.25); color: #EA80FC; border: 1px solid rgba(224, 64, 251, 0.4); padding: 10px; font-weight: 700; }\n  .table-card td { border: 1px solid rgba(224, 64, 251, 0.25); padding: 9px; color: #E2E8F0; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Hero Header -->\n  <div style=\"background: linear-gradient(135deg, rgba(224, 64, 251, 0.25), rgba(170, 0, 255, 0.15)); border: 1.5px solid #E040FB; border-radius: 14px; padding: 18px; margin-bottom: 20px; text-align: center;\">\n    <div style=\"font-size: 22px; font-weight: 800; color: #EA80FC; margin-bottom: 6px;\">\n      📐 Chapter 8: Introduction to Trigonometry\n    </div>\n    <div style=\"color: #CBD5E1; font-size: 14.5px; line-height: 1.5;\">\n      Class 10 NCERT Mathematics &bull; Comprehensive Reference Guide &amp; Master Formula Cheat Sheet\n    </div>\n  </div>\n\n  <!-- 1. Trigonometric Ratios of an Acute Angle -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 1. Trigonometric Ratios of an Acute Angle in a Right Triangle</div>\n    <div class=\"q-text\">\n      The word <b>Trigonometry</b> is derived from the Greek words <i>'tri'</i> (three), <i>'gon'</i> (sides), and <i>'metron'</i> (measure). It is the study of relationships between the side lengths and angles of a triangle.\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-step\">\n        <div>In a right-angled triangle &Delta;ABC with right angle at B and acute angle &theta; = &ang;C:</div>\n        <div>&bull; <b style=\"color: #EA80FC;\">Side opposite to &theta;:</b> <b>Perpendicular (P)</b> = AB</div>\n        <div>&bull; <b style=\"color: #EA80FC;\">Side adjacent to &theta;:</b> <b>Base (B)</b> = BC</div>\n        <div>&bull; <b style=\"color: #EA80FC;\">Side opposite to 90&deg;:</b> <b>Hypotenuse (H)</b> = AC</div>\n        \n        <div style=\"margin-top: 10px;\"><b style=\"color: #EA80FC;\">The Six Fundamental Trigonometric Ratios:</b></div>\n        <div style=\"display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px; margin-top: 8px;\">\n          <div style=\"background: rgba(224, 64, 251, 0.1); border-left: 3px solid #E040FB; padding: 8px 12px; border-radius: 6px;\">\n            <b>sin &theta;</b> = <span class=\"frac\"><span class=\"num\">Perpendicular</span><span class=\"den\">Hypotenuse</span></span> = <span class=\"frac\"><span class=\"num\">P</span><span class=\"den\">H</span></span>\n          </div>\n          <div style=\"background: rgba(224, 64, 251, 0.1); border-left: 3px solid #E040FB; padding: 8px 12px; border-radius: 6px;\">\n            <b>cosec &theta;</b> = <span class=\"frac\"><span class=\"num\">Hypotenuse</span><span class=\"den\">Perpendicular</span></span> = <span class=\"frac\"><span class=\"num\">H</span><span class=\"den\">P</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">sin &theta;</span></span>\n          </div>\n          <div style=\"background: rgba(224, 64, 251, 0.1); border-left: 3px solid #E040FB; padding: 8px 12px; border-radius: 6px;\">\n            <b>cos &theta;</b> = <span class=\"frac\"><span class=\"num\">Base</span><span class=\"den\">Hypotenuse</span></span> = <span class=\"frac\"><span class=\"num\">B</span><span class=\"den\">H</span></span>\n          </div>\n          <div style=\"background: rgba(224, 64, 251, 0.1); border-left: 3px solid #E040FB; padding: 8px 12px; border-radius: 6px;\">\n            <b>sec &theta;</b> = <span class=\"frac\"><span class=\"num\">Hypotenuse</span><span class=\"den\">Base</span></span> = <span class=\"frac\"><span class=\"num\">H</span><span class=\"den\">B</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">cos &theta;</span></span>\n          </div>\n          <div style=\"background: rgba(224, 64, 251, 0.1); border-left: 3px solid #E040FB; padding: 8px 12px; border-radius: 6px;\">\n            <b>tan &theta;</b> = <span class=\"frac\"><span class=\"num\">Perpendicular</span><span class=\"den\">Base</span></span> = <span class=\"frac\"><span class=\"num\">P</span><span class=\"den\">B</span></span> = <span class=\"frac\"><span class=\"num\">sin &theta;</span><span class=\"den\">cos &theta;</span></span>\n          </div>\n          <div style=\"background: rgba(224, 64, 251, 0.1); border-left: 3px solid #E040FB; padding: 8px 12px; border-radius: 6px;\">\n            <b>cot &theta;</b> = <span class=\"frac\"><span class=\"num\">Base</span><span class=\"den\">Perpendicular</span></span> = <span class=\"frac\"><span class=\"num\">B</span><span class=\"den\">P</span></span> = <span class=\"frac\"><span class=\"num\">cos &theta;</span><span class=\"den\">sin &theta;</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">tan &theta;</span></span>\n          </div>\n        </div>\n\n        <div style=\"margin-top: 10px;\">💡 <b>Golden Mnemonic Rule:</b>\n          <div style=\"text-align: center; margin: 8px 0;\">\n            <span class=\"prop-chip\" style=\"font-size: 15px; padding: 6px 16px;\">\n              <b>\"Some People Have, Curly Brown Hair, Turned Permanent Black\"</b>\n              <br/><span style=\"font-size: 13px; color: #E2E8F0;\">(sin = P/H, &nbsp; cos = B/H, &nbsp; tan = P/B)</span>\n            </span>\n          </div>\n        </div>\n      </div>\n    </div>\n\n    <!-- Diagram: Trigonometric Ratios -->\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 205\" width=\"300\" height=\"205\" style=\"background-color:white; border:1px solid #ddd;\"><polygon points=\"50,20 50,140 210,140\" stroke=\"black\" stroke-width=\"2\" fill=\"none\"/><polyline points=\"50,125 65,125 65,140\" stroke=\"black\" fill=\"none\"/><text x=\"35\" y=\"30\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">A</text><text x=\"35\" y=\"140\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">B</text><text x=\"225\" y=\"140\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">C</text><text x=\"30\" y=\"80.0\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">Perpendicular (P)</text><text x=\"130.0\" y=\"160\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">Base (B)</text><text x=\"140.0\" y=\"70.0\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">Hypotenuse (H)</text><path d=\"M 180 140 A 30 30 0 0 0 185 125\" stroke=\"red\" fill=\"none\"/><text x=\"170\" y=\"130\" font-family=\"Arial\" font-size=\"12\" fill=\"red\" text-anchor=\"middle\">θ</text></svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Right-angled Triangle showing Perpendicular (P), Base (B), Hypotenuse (H) with respect to angle &theta;</div>\n    </div>\n  </div>\n\n  <!-- 2. Trigonometric Ratios of Specific Angles -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 2. Trigonometric Ratios of Specific Angles (0&deg;, 30&deg;, 45&deg;, 60&deg;, 90&deg;)</div>\n    <div class=\"q-text\">\n      The values of trigonometric ratios for specific standard angles can be deduced through pure geometric proofs:\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-step\">\n        <div>&bull; <b style=\"color: #EA80FC;\">Values for 45&deg; (Isosceles Right Triangle):</b></div>\n        <div>In &Delta;ABC with &ang;B = 90&deg; and &ang;A = 45&deg;, &ang;C = 45&deg;. Hence, AB = BC = <i>a</i>.</div>\n        <div>By Pythagoras: AC = &radic;<span style=\"border-top: 1px solid currentColor;\">a&sup2; + a&sup2;</span> = <i>a</i>&radic;2.</div>\n        <div>&rArr; <b>sin 45&deg; = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">&radic;2</span></span></b>, &nbsp; <b>cos 45&deg; = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">&radic;2</span></span></b>, &nbsp; <b>tan 45&deg; = 1</b>.</div>\n      </div>\n    </div>\n\n    <!-- Diagram: 45 Degree Angle -->\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 205\" width=\"300\" height=\"205\" style=\"background-color:white; border:1px solid #ddd;\"><polygon points=\"50,20 50,120 150,120\" stroke=\"black\" stroke-width=\"2\" fill=\"none\"/><polyline points=\"50,105 65,105 65,120\" stroke=\"black\" fill=\"none\"/><text x=\"35\" y=\"30\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">A</text><text x=\"35\" y=\"120\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">B</text><text x=\"165\" y=\"120\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">C</text><text x=\"30\" y=\"70.0\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">1</text><text x=\"100.0\" y=\"140\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">1</text><text x=\"110.0\" y=\"60.0\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">√2</text><path d=\"M 50 50 A 30 30 0 0 1 70 40\" stroke=\"red\" fill=\"none\"/><text x=\"60\" y=\"65\" font-family=\"Arial\" font-size=\"12\" fill=\"red\" text-anchor=\"middle\">45°</text><path d=\"M 120 120 A 30 30 0 0 0 125 105\" stroke=\"red\" fill=\"none\"/><text x=\"110\" y=\"110\" font-family=\"Arial\" font-size=\"12\" fill=\"red\" text-anchor=\"middle\">45°</text></svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Geometric Derivation of 45&deg; in an Isosceles Right Triangle</div>\n    </div>\n\n    <div class=\"sol-box\" style=\"margin-top: 16px;\">\n      <div class=\"sol-step\">\n        <div>&bull; <b style=\"color: #EA80FC;\">Values for 30&deg; and 60&deg; (Equilateral Triangle):</b></div>\n        <div>In an equilateral triangle &Delta;ABC of side 2<i>a</i>, draw altitude AD &perp; BC. Then BD = <i>a</i> and AD = <i>a</i>&radic;3.</div>\n        <div>In right &Delta;ABD with &ang;BAD = 30&deg; and &ang;B = 60&deg;:</div>\n        <div>&rArr; <b>sin 30&deg; = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></b>, &nbsp; <b>cos 30&deg; = <span class=\"frac\"><span class=\"num\">&radic;3</span><span class=\"den\">2</span></span></b>, &nbsp; <b>tan 30&deg; = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">&radic;3</span></span></b></div>\n        <div>&rArr; <b>sin 60&deg; = <span class=\"frac\"><span class=\"num\">&radic;3</span><span class=\"den\">2</span></span></b>, &nbsp; <b>cos 60&deg; = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></b>, &nbsp; <b>tan 60&deg; = &radic;3</b></div>\n      </div>\n    </div>\n\n    <!-- Diagram: 30 and 60 Degree Angles -->\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 205\" width=\"300\" height=\"205\" style=\"background-color:white; border:1px solid #ddd;\"><polygon points=\"50,20 50,170 136,170\" stroke=\"black\" stroke-width=\"2\" fill=\"none\"/><polyline points=\"50,155 65,155 65,170\" stroke=\"black\" fill=\"none\"/><text x=\"35\" y=\"30\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">A</text><text x=\"35\" y=\"170\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">B</text><text x=\"151\" y=\"170\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">C</text><text x=\"30\" y=\"95.0\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">1</text><text x=\"93.0\" y=\"190\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">√3</text><text x=\"103.0\" y=\"85.0\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">2</text><path d=\"M 50 50 A 30 30 0 0 1 70 40\" stroke=\"red\" fill=\"none\"/><text x=\"60\" y=\"65\" font-family=\"Arial\" font-size=\"12\" fill=\"red\" text-anchor=\"middle\">60°</text><path d=\"M 106 170 A 30 30 0 0 0 111 155\" stroke=\"red\" fill=\"none\"/><text x=\"96\" y=\"160\" font-family=\"Arial\" font-size=\"12\" fill=\"red\" text-anchor=\"middle\">30°</text></svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Geometric Derivation of 30&deg; and 60&deg; using an Equilateral Triangle</div>\n    </div>\n\n    <!-- Master Values Table -->\n    <div class=\"sol-box\" style=\"margin-top: 16px;\">\n      <div style=\"font-size: 15.5px; font-weight: 700; color: #EA80FC; margin-bottom: 8px;\">\n        ✦ Master Trigonometric Values Table:\n      </div>\n      <div class=\"table-card\">\n        <table>\n          <thead>\n            <tr>\n              <th>&ang;A</th>\n              <th>0&deg;</th>\n              <th>30&deg;</th>\n              <th>45&deg;</th>\n              <th>60&deg;</th>\n              <th>90&deg;</th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr>\n              <td><b>sin A</b></td>\n              <td>0</td>\n              <td><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></td>\n              <td><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">&radic;2</span></span></td>\n              <td><span class=\"frac\"><span class=\"num\">&radic;3</span><span class=\"den\">2</span></span></td>\n              <td>1</td>\n            </tr>\n            <tr>\n              <td><b>cos A</b></td>\n              <td>1</td>\n              <td><span class=\"frac\"><span class=\"num\">&radic;3</span><span class=\"den\">2</span></span></td>\n              <td><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">&radic;2</span></span></td>\n              <td><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></td>\n              <td>0</td>\n            </tr>\n            <tr>\n              <td><b>tan A</b></td>\n              <td>0</td>\n              <td><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">&radic;3</span></span></td>\n              <td>1</td>\n              <td>&radic;3</td>\n              <td>Not defined (&infin;)</td>\n            </tr>\n            <tr>\n              <td><b>cosec A</b></td>\n              <td>Not defined (&infin;)</td>\n              <td>2</td>\n              <td>&radic;2</td>\n              <td><span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">&radic;3</span></span></td>\n              <td>1</td>\n            </tr>\n            <tr>\n              <td><b>sec A</b></td>\n              <td>1</td>\n              <td><span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">&radic;3</span></span></td>\n              <td>&radic;2</td>\n              <td>2</td>\n              <td>Not defined (&infin;)</td>\n            </tr>\n            <tr>\n              <td><b>cot A</b></td>\n              <td>Not defined (&infin;)</td>\n              <td>&radic;3</td>\n              <td>1</td>\n              <td><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">&radic;3</span></span></td>\n              <td>0</td>\n            </tr>\n          </tbody>\n        </table>\n      </div>\n    </div>\n  </div>\n\n  <!-- 3. Fundamental Trigonometric Identities -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 3. Fundamental Trigonometric Identities &amp; Proofs</div>\n    <div class=\"q-text\">\n      An equation involving trigonometric ratios of an angle is called a <b>trigonometric identity</b> if it is true for all values of the angles involved.\n    </div>\n    <div class=\"sol-box\">\n      <div style=\"background: rgba(224, 64, 251, 0.12); border: 1.5px solid rgba(224, 64, 251, 0.4); border-radius: 8px; padding: 12px; margin-bottom: 12px;\">\n        <b style=\"color: #EA80FC; font-size: 15.5px;\">The Three Master Identities:</b><br/>\n        <div style=\"margin-top: 8px; line-height: 2.1;\">\n          1. <span class=\"prop-chip\" style=\"font-size: 16px; padding: 4px 14px;\"><b>sin&sup2; A + cos&sup2; A = 1</b></span> &nbsp; <span class=\"reason\">[0&deg; &le; A &le; 90&deg;]</span><br/>\n          2. <span class=\"prop-chip\" style=\"font-size: 16px; padding: 4px 14px;\"><b>1 + tan&sup2; A = sec&sup2; A</b></span> &nbsp; <span class=\"reason\">[0&deg; &le; A &lt; 90&deg;]</span> &rArr; sec&sup2; A &minus; tan&sup2; A = 1<br/>\n          3. <span class=\"prop-chip\" style=\"font-size: 16px; padding: 4px 14px;\"><b>1 + cot&sup2; A = cosec&sup2; A</b></span> &nbsp; <span class=\"reason\">[0&deg; &lt; A &le; 90&deg;]</span> &rArr; cosec&sup2; A &minus; cot&sup2; A = 1\n        </div>\n      </div>\n      <div class=\"sol-step\">\n        <div><b style=\"color: #EA80FC;\">Proof from the Pythagorean Theorem:</b></div>\n        <div>In right &Delta;ABC, right-angled at B:</div>\n        <div>&rArr; <b>AB&sup2; + BC&sup2; = AC&sup2;</b></div>\n        <div style=\"margin-top: 6px;\">&bull; Dividing by AC&sup2;: (<span class=\"frac\"><span class=\"num\">AB</span><span class=\"den\">AC</span></span>)&sup2; + (<span class=\"frac\"><span class=\"num\">BC</span><span class=\"den\">AC</span></span>)&sup2; = 1 &rArr; <b>cos&sup2; A + sin&sup2; A = 1</b></div>\n        <div style=\"margin-top: 6px;\">&bull; Dividing by AB&sup2;: 1 + (<span class=\"frac\"><span class=\"num\">BC</span><span class=\"den\">AB</span></span>)&sup2; = (<span class=\"frac\"><span class=\"num\">AC</span><span class=\"den\">AB</span></span>)&sup2; &rArr; <b>1 + tan&sup2; A = sec&sup2; A</b></div>\n        <div style=\"margin-top: 6px;\">&bull; Dividing by BC&sup2;: (<span class=\"frac\"><span class=\"num\">AB</span><span class=\"den\">BC</span></span>)&sup2; + 1 = (<span class=\"frac\"><span class=\"num\">AC</span><span class=\"den\">BC</span></span>)&sup2; &rArr; <b>cot&sup2; A + 1 = cosec&sup2; A</b></div>\n      </div>\n    </div>\n\n    <!-- Diagram: Identity Proof -->\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 205\" width=\"300\" height=\"205\" style=\"background-color:white; border:1px solid #ddd;\"><polygon points=\"50,20 50,120 183,120\" stroke=\"black\" stroke-width=\"2\" fill=\"none\"/><polyline points=\"50,105 65,105 65,120\" stroke=\"black\" fill=\"none\"/><text x=\"35\" y=\"30\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">A</text><text x=\"35\" y=\"120\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">B</text><text x=\"198\" y=\"120\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">C</text><text x=\"30\" y=\"70.0\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">AB</text><text x=\"116.5\" y=\"140\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">BC</text><text x=\"126.5\" y=\"60.0\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">AC</text><path d=\"M 153 120 A 30 30 0 0 0 158 105\" stroke=\"red\" fill=\"none\"/><text x=\"143\" y=\"110\" font-family=\"Arial\" font-size=\"12\" fill=\"red\" text-anchor=\"middle\">A</text></svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Right Triangle ABC illustrating the Geometric Proof of Trigonometric Identities</div>\n    </div>\n  </div>\n\n  <!-- 4. Master Strategy for Proving Identities -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 4. Master Strategy for Proving Trigonometric Identities</div>\n    <div class=\"sol-box\">\n      <div class=\"sol-step\">\n        <div><b style=\"color: #EA80FC;\">Golden Rules of Identity Proofs:</b></div>\n        <div style=\"margin-left: 14px; margin-top: 6px;\">\n          1. <b>Convert to Sine and Cosine:</b> Whenever stuck with tan, cot, sec, cosec, express everything in terms of sin and cos.<br/>\n          2. <b>Take LCM &amp; Combine Fractions:</b> Simplify multiple fractional terms by taking the common denominator.<br/>\n          3. <b>Rationalization / Conjugate Multiplication:</b> When terms like (1 &plusmn; sin A) or (1 &plusmn; cos A) appear in denominators, multiply numerator and denominator by their conjugate to produce 1 &minus; sin&sup2; A = cos&sup2; A or 1 &minus; cos&sup2; A = sin&sup2; A.<br/>\n          4. <b>Factorization:</b> Use difference of squares (a&sup2; &minus; b&sup2; = (a &minus; b)(a + b)) and cubic formulas (a&sup3; &minus; b&sup3; = (a &minus; b)(a&sup2; + ab + b&sup2;)).<br/>\n          5. <b>Work on Both Sides:</b> If starting from LHS doesn't directly reach RHS, simplify LHS to a clean expression, simplify RHS independently, and show LHS = RHS!\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <!-- 5. Master Revision Formula Cheat Sheet -->\n  <div class=\"q-card\" style=\"border-color: #E040FB;\">\n    <div class=\"q-title\">✦ 5. Master Revision Formula Cheat Sheet</div>\n    <div class=\"sol-box\">\n      <div class=\"table-card\">\n        <table>\n          <thead>\n            <tr>\n              <th>Relation / Identity</th>\n              <th>Mathematical Formulation</th>\n              <th>Alternative Forms</th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr>\n              <td><b>Primary Ratios</b></td>\n              <td>sin A = <span class=\"frac\"><span class=\"num\">P</span><span class=\"den\">H</span></span>, &nbsp; cos A = <span class=\"frac\"><span class=\"num\">B</span><span class=\"den\">H</span></span>, &nbsp; tan A = <span class=\"frac\"><span class=\"num\">P</span><span class=\"den\">B</span></span></td>\n              <td>cosec A = <span class=\"frac\"><span class=\"num\">H</span><span class=\"den\">P</span></span>, &nbsp; sec A = <span class=\"frac\"><span class=\"num\">H</span><span class=\"den\">B</span></span>, &nbsp; cot A = <span class=\"frac\"><span class=\"num\">B</span><span class=\"den\">P</span></span></td>\n            </tr>\n            <tr>\n              <td><b>Reciprocal Relations</b></td>\n              <td>sin A &times; cosec A = 1, &nbsp; cos A &times; sec A = 1, &nbsp; tan A &times; cot A = 1</td>\n              <td>cosec A = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">sin A</span></span>, &nbsp; sec A = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">cos A</span></span>, &nbsp; cot A = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">tan A</span></span></td>\n            </tr>\n            <tr>\n              <td><b>Quotient Relations</b></td>\n              <td>tan A = <span class=\"frac\"><span class=\"num\">sin A</span><span class=\"den\">cos A</span></span></td>\n              <td>cot A = <span class=\"frac\"><span class=\"num\">cos A</span><span class=\"den\">sin A</span></span></td>\n            </tr>\n            <tr>\n              <td><b>Identity 1</b></td>\n              <td><b>sin&sup2; A + cos&sup2; A = 1</b></td>\n              <td>sin&sup2; A = 1 &minus; cos&sup2; A, &nbsp; cos&sup2; A = 1 &minus; sin&sup2; A</td>\n            </tr>\n            <tr>\n              <td><b>Identity 2</b></td>\n              <td><b>sec&sup2; A &minus; tan&sup2; A = 1</b></td>\n              <td>sec&sup2; A = 1 + tan&sup2; A, &nbsp; tan&sup2; A = sec&sup2; A &minus; 1</td>\n            </tr>\n            <tr>\n              <td><b>Identity 3</b></td>\n              <td><b>cosec&sup2; A &minus; cot&sup2; A = 1</b></td>\n              <td>cosec&sup2; A = 1 + cot&sup2; A, &nbsp; cot&sup2; A = cosec&sup2; A &minus; 1</td>\n            </tr>\n            <tr>\n              <td><b>Conjugate Relations</b></td>\n              <td>sec A &minus; tan A = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">sec A + tan A</span></span></td>\n              <td>cosec A &minus; cot A = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">cosec A + cot A</span></span></td>\n            </tr>\n          </tbody>\n        </table>\n      </div>\n    </div>\n  </div>\n\n</div>\n",
+  htmlExercises: {
+    examples: "\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; }\n  .frac .den { padding: 1px 4px; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(224, 64, 251, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #E040FB; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 14px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(224, 64, 251, 0.25); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #E040FB; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #EA80FC; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(224, 64, 251, 0.15); border: 1px solid #E040FB; color: #EA80FC; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 6px 0; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(224, 64, 251, 0.4); border-radius: 10px; padding: 14px; margin: 16px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #FFFFFF; border-radius: 8px; padding: 10px 8px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.25); }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 10px; font-weight: 500; }\n  .table-card { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 14px 0; border-radius: 8px; }\n  .table-card table { width: 100%; border-collapse: collapse; text-align: center; }\n  .table-card th { background: rgba(224, 64, 251, 0.25); color: #EA80FC; border: 1px solid rgba(224, 64, 251, 0.4); padding: 10px; font-weight: 700; }\n  .table-card td { border: 1px solid rgba(224, 64, 251, 0.25); padding: 9px; color: #E2E8F0; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Example 1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 1</div>\n    <div class=\"q-text\">\n      Given tan A = <span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">3</span></span>, find the other trigonometric ratios of the angle A.\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 205\" width=\"300\" height=\"205\" style=\"background-color:white; border:1px solid #ddd;\"><polygon points=\"50,20 50,140 140,140\" stroke=\"black\" stroke-width=\"2\" fill=\"none\"/><polyline points=\"50,125 65,125 65,140\" stroke=\"black\" fill=\"none\"/><text x=\"35\" y=\"30\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">C</text><text x=\"35\" y=\"140\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">B</text><text x=\"155\" y=\"140\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">A</text><text x=\"30\" y=\"80.0\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">4k</text><text x=\"95.0\" y=\"160\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">3k</text><text x=\"105.0\" y=\"70.0\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">5k</text></svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Right Triangle ABC with sides proportional to tan A = 4/3</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>In right &Delta;ABC with right angle at B:</div>\n        <div>&rArr; tan A = <span class=\"frac\"><span class=\"num\">BC</span><span class=\"den\">AB</span></span> = <span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">3</span></span></div>\n        <div>Let BC = 4<i>k</i> and AB = 3<i>k</i>, where <i>k</i> is a positive integer.</div>\n        <div>By Pythagoras Theorem:</div>\n        <div>&rArr; AC&sup2; = AB&sup2; + BC&sup2; = (3k)&sup2; + (4k)&sup2; = 9k&sup2; + 16k&sup2; = 25k&sup2;</div>\n        <div>&rArr; <b>AC = 5k</b></div>\n        <div style=\"margin-top: 8px;\"><b style=\"color: #EA80FC;\">Other Trigonometric Ratios of &ang;A:</b></div>\n        <div>&rArr; <b>sin A</b> = <span class=\"frac\"><span class=\"num\">BC</span><span class=\"den\">AC</span></span> = <span class=\"frac\"><span class=\"num\">4k</span><span class=\"den\">5k</span></span> = <b><span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">5</span></span></b></div>\n        <div>&rArr; <b>cos A</b> = <span class=\"frac\"><span class=\"num\">AB</span><span class=\"den\">AC</span></span> = <span class=\"frac\"><span class=\"num\">3k</span><span class=\"den\">5k</span></span> = <b><span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">5</span></span></b></div>\n        <div>&rArr; <b>cot A</b> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">tan A</span></span> = <b><span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span></b></div>\n        <div>&rArr; <b>cosec A</b> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">sin A</span></span> = <b><span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">4</span></span></b></div>\n        <div>&rArr; <b>sec A</b> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">cos A</span></span> = <b><span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">3</span></span></b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Trigonometric Ratios: </span>\n        <span class=\"ans-val\">sin A = 4/5, cos A = 3/5, cot A = 3/4, cosec A = 5/4, sec A = 5/3</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Example 2 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 2</div>\n    <div class=\"q-text\">\n      If &ang;B and &ang;Q are acute angles such that sin B = sin Q, then prove that &ang;B = &ang;Q.\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 205\" width=\"300\" height=\"205\" style=\"background-color:white; border:1px solid #ddd;\"><polygon points=\"50,20 50,120 130,120\" stroke=\"black\" stroke-width=\"2\" fill=\"none\"/><polyline points=\"50,105 65,105 65,120\" stroke=\"black\" fill=\"none\"/><text x=\"35\" y=\"30\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">A</text><text x=\"35\" y=\"120\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">C</text><text x=\"145\" y=\"120\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">B</text><text x=\"30\" y=\"70.0\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">b</text><text x=\"90.0\" y=\"140\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">a</text><text x=\"100.0\" y=\"60.0\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">c</text><text x=\"240\" y=\"100\" font-family=\"Arial\" font-size=\"12\" fill=\"black\" text-anchor=\"middle\">Ref P-R-Q similar</text></svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Right Triangles ACB and PRQ with sin B = sin Q</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Consider two right triangles &Delta;ACB (right-angled at C) and &Delta;PRQ (right-angled at R).</div>\n        <div>From &Delta;ACB, <b>sin B = <span class=\"frac\"><span class=\"num\">AC</span><span class=\"den\">AB</span></span></b></div>\n        <div>From &Delta;PRQ, <b>sin Q = <span class=\"frac\"><span class=\"num\">PR</span><span class=\"den\">PQ</span></span></b></div>\n        <div>Given: sin B = sin Q:</div>\n        <div>&rArr; <span class=\"frac\"><span class=\"num\">AC</span><span class=\"den\">AB</span></span> = <span class=\"frac\"><span class=\"num\">PR</span><span class=\"den\">PQ</span></span> &rArr; <span class=\"frac\"><span class=\"num\">AC</span><span class=\"den\">PR</span></span> = <span class=\"frac\"><span class=\"num\">AB</span><span class=\"den\">PQ</span></span> = <i>k</i> &nbsp; &hellip; (1)</div>\n        <div>&rArr; AC = <i>k</i> &middot; PR &nbsp; and &nbsp; AB = <i>k</i> &middot; PQ</div>\n        <div style=\"margin-top: 8px;\">By Pythagoras Theorem on both triangles:</div>\n        <div>&rArr; BC = &radic;<span style=\"border-top: 1px solid currentColor;\">AB&sup2; &minus; AC&sup2;</span></div>\n        <div>&rArr; QR = &radic;<span style=\"border-top: 1px solid currentColor;\">PQ&sup2; &minus; PR&sup2;</span></div>\n        <div>Now find the ratio of the third pair of sides:</div>\n        <div>&rArr; <span class=\"frac\"><span class=\"num\">BC</span><span class=\"den\">QR</span></span> = <span class=\"frac\"><span class=\"num\">&radic;<span style=\"border-top: 1px solid currentColor;\">(k &middot; PQ)&sup2; &minus; (k &middot; PR)&sup2;</span></span><span class=\"den\">&radic;<span style=\"border-top: 1px solid currentColor;\">PQ&sup2; &minus; PR&sup2;</span></span></span> = <span class=\"frac\"><span class=\"num\">k &radic;<span style=\"border-top: 1px solid currentColor;\">PQ&sup2; &minus; PR&sup2;</span></span><span class=\"den\">&radic;<span style=\"border-top: 1px solid currentColor;\">PQ&sup2; &minus; PR&sup2;</span></span></span> = <b>k</b> &nbsp; &hellip; (2)</div>\n        <div style=\"margin-top: 8px;\">From (1) and (2):</div>\n        <div>&rArr; <span class=\"frac\"><span class=\"num\">AC</span><span class=\"den\">PR</span></span> = <span class=\"frac\"><span class=\"num\">AB</span><span class=\"den\">PQ</span></span> = <span class=\"frac\"><span class=\"num\">BC</span><span class=\"den\">QR</span></span> = <i>k</i></div>\n        <div>By SSS Similarity Criterion: <b>&Delta;ACB &sim; &Delta;PRQ</b>.</div>\n        <div>Therefore, their corresponding angles are equal:</div>\n        <div>&rArr; <b>&ang;B = &ang;Q</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Result: </span>\n        <span class=\"ans-val\">Hence Proved (&ang;B = &ang;Q).</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Example 3 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 3</div>\n    <div class=\"q-text\">\n      Consider &Delta;ACB, right-angled at C, in which AB = 29 units, BC = 21 units and &ang;ABC = &theta;. Determine the values of:\n      <br/>(i) cos&sup2; &theta; + sin&sup2; &theta;\n      <br/>(ii) cos&sup2; &theta; &minus; sin&sup2; &theta;\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 205\" width=\"300\" height=\"205\" style=\"background-color:white; border:1px solid #ddd;\"><polygon points=\"50,20 50,100 190,100\" stroke=\"black\" stroke-width=\"2\" fill=\"none\"/><polyline points=\"50,85 65,85 65,100\" stroke=\"black\" fill=\"none\"/><text x=\"35\" y=\"30\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">A</text><text x=\"35\" y=\"100\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">C</text><text x=\"205\" y=\"100\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">B</text><text x=\"30\" y=\"60.0\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">AC=20</text><text x=\"120.0\" y=\"120\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">BC=21</text><text x=\"130.0\" y=\"50.0\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">AB=29</text></svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: &Delta;ACB with Hypotenuse AB = 29, Base BC = 21</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>In right &Delta;ACB, by Pythagoras Theorem:</div>\n        <div>&rArr; AC = &radic;<span style=\"border-top: 1px solid currentColor;\">AB&sup2; &minus; BC&sup2;</span> = &radic;<span style=\"border-top: 1px solid currentColor;\">29&sup2; &minus; 21&sup2;</span></div>\n        <div>Using a&sup2; &minus; b&sup2; = (a &minus; b)(a + b):</div>\n        <div>&rArr; AC = &radic;<span style=\"border-top: 1px solid currentColor;\">(29 &minus; 21)(29 + 21)</span> = &radic;<span style=\"border-top: 1px solid currentColor;\">8 &times; 50</span> = &radic;400 = <b>20 units</b></div>\n        <div style=\"margin-top: 8px;\">Now find sin &theta; and cos &theta;:</div>\n        <div>&rArr; sin &theta; = <span class=\"frac\"><span class=\"num\">AC</span><span class=\"den\">AB</span></span> = <b><span class=\"frac\"><span class=\"num\">20</span><span class=\"den\">29</span></span></b></div>\n        <div>&rArr; cos &theta; = <span class=\"frac\"><span class=\"num\">BC</span><span class=\"den\">AB</span></span> = <b><span class=\"frac\"><span class=\"num\">21</span><span class=\"den\">29</span></span></b></div>\n        <div style=\"margin-top: 10px;\"><b style=\"color: #EA80FC;\">(i) Calculate cos&sup2; &theta; + sin&sup2; &theta;:</b></div>\n        <div>&rArr; (<span class=\"frac\"><span class=\"num\">21</span><span class=\"den\">29</span></span>)&sup2; + (<span class=\"frac\"><span class=\"num\">20</span><span class=\"den\">29</span></span>)&sup2; = <span class=\"frac\"><span class=\"num\">441</span><span class=\"den\">841</span></span> + <span class=\"frac\"><span class=\"num\">400</span><span class=\"den\">841</span></span> = <span class=\"frac\"><span class=\"num\">841</span><span class=\"den\">841</span></span> = <b>1</b></div>\n        <div style=\"margin-top: 10px;\"><b style=\"color: #EA80FC;\">(ii) Calculate cos&sup2; &theta; &minus; sin&sup2; &theta;:</b></div>\n        <div>&rArr; (<span class=\"frac\"><span class=\"num\">21</span><span class=\"den\">29</span></span>)&sup2; &minus; (<span class=\"frac\"><span class=\"num\">20</span><span class=\"den\">29</span></span>)&sup2; = <span class=\"frac\"><span class=\"num\">441 &minus; 400</span><span class=\"den\">841</span></span> = <b><span class=\"frac\"><span class=\"num\">41</span><span class=\"den\">841</span></span></b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Solutions: </span>\n        <span class=\"ans-val\">(i) 1 &bull; (ii) 41/841</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Example 4 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 4</div>\n    <div class=\"q-text\">\n      In a right triangle ABC, right-angled at B, if tan A = 1, then verify that 2 sin A cos A = 1.\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 205\" width=\"300\" height=\"205\" style=\"background-color:white; border:1px solid #ddd;\"><polygon points=\"50,20 50,100 130,100\" stroke=\"black\" stroke-width=\"2\" fill=\"none\"/><polyline points=\"50,85 65,85 65,100\" stroke=\"black\" fill=\"none\"/><text x=\"35\" y=\"30\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">C</text><text x=\"35\" y=\"100\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">B</text><text x=\"145\" y=\"100\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">A</text><text x=\"30\" y=\"60.0\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">1</text><text x=\"90.0\" y=\"120\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">1</text><text x=\"100.0\" y=\"50.0\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">√2</text></svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Right Triangle ABC with tan A = 1</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>In &Delta;ABC, right-angled at B:</div>\n        <div>&rArr; tan A = <span class=\"frac\"><span class=\"num\">BC</span><span class=\"den\">AB</span></span> = 1 &rArr; <b>BC = AB = k</b></div>\n        <div>By Pythagoras Theorem:</div>\n        <div>&rArr; AC = &radic;<span style=\"border-top: 1px solid currentColor;\">AB&sup2; + BC&sup2;</span> = &radic;<span style=\"border-top: 1px solid currentColor;\">k&sup2; + k&sup2;</span> = &radic;<span style=\"border-top: 1px solid currentColor;\">2k&sup2;</span> = <b>k&radic;2</b></div>\n        <div style=\"margin-top: 8px;\">Find sin A and cos A:</div>\n        <div>&rArr; sin A = <span class=\"frac\"><span class=\"num\">BC</span><span class=\"den\">AC</span></span> = <span class=\"frac\"><span class=\"num\">k</span><span class=\"den\">k&radic;2</span></span> = <b><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">&radic;2</span></span></b></div>\n        <div>&rArr; cos A = <span class=\"frac\"><span class=\"num\">AB</span><span class=\"den\">AC</span></span> = <span class=\"frac\"><span class=\"num\">k</span><span class=\"den\">k&radic;2</span></span> = <b><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">&radic;2</span></span></b></div>\n        <div style=\"margin-top: 8px;\">Now evaluate 2 sin A cos A:</div>\n        <div>&rArr; 2 sin A cos A = 2 &times; (<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">&radic;2</span></span>) &times; (<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">&radic;2</span></span>) = 2 &times; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> = <b>1</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Result: </span>\n        <span class=\"ans-val\">Hence Verified (2 sin A cos A = 1).</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Example 5 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 5</div>\n    <div class=\"q-text\">\n      In &Delta;OPQ, right-angled at P, OP = 7 cm and OQ &minus; PQ = 1 cm. Determine the values of sin Q and cos Q.\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 205\" width=\"300\" height=\"205\" style=\"background-color:white; border:1px solid #ddd;\"><polygon points=\"50,20 50,120 190,120\" stroke=\"black\" stroke-width=\"2\" fill=\"none\"/><polyline points=\"50,105 65,105 65,120\" stroke=\"black\" fill=\"none\"/><text x=\"35\" y=\"30\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">Q</text><text x=\"35\" y=\"120\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">P</text><text x=\"205\" y=\"120\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">O</text><text x=\"30\" y=\"70.0\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">x</text><text x=\"120.0\" y=\"140\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">7</text><text x=\"130.0\" y=\"60.0\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">1+x</text></svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: &Delta;OPQ with OP = 7 cm, OQ &minus; PQ = 1 cm</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Given: In &Delta;OPQ, &ang;P = 90&deg;, OP = 7 cm, and <b>OQ = 1 + PQ</b>.</div>\n        <div>By Pythagoras Theorem:</div>\n        <div>&rArr; OQ&sup2; = OP&sup2; + PQ&sup2;</div>\n        <div>Substitute OQ = 1 + PQ:</div>\n        <div>&rArr; (1 + PQ)&sup2; = 7&sup2; + PQ&sup2;</div>\n        <div>&rArr; 1 + 2PQ + PQ&sup2; = 49 + PQ&sup2;</div>\n        <div>Subtracting PQ&sup2; from both sides:</div>\n        <div>&rArr; 1 + 2PQ = 49</div>\n        <div>&rArr; 2PQ = 48 &rArr; <b>PQ = 24 cm</b></div>\n        <div>Therefore, OQ = 1 + 24 = <b>25 cm</b>.</div>\n        <div style=\"margin-top: 8px;\"><b style=\"color: #EA80FC;\">Values of sin Q and cos Q:</b></div>\n        <div>&rArr; <b>sin Q</b> = <span class=\"frac\"><span class=\"num\">OP</span><span class=\"den\">OQ</span></span> = <b><span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">25</span></span></b></div>\n        <div>&rArr; <b>cos Q</b> = <span class=\"frac\"><span class=\"num\">PQ</span><span class=\"den\">OQ</span></span> = <b><span class=\"frac\"><span class=\"num\">24</span><span class=\"den\">25</span></span></b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Solutions: </span>\n        <span class=\"ans-val\">sin Q = 7/25 &bull; cos Q = 24/25</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Example 6 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 6</div>\n    <div class=\"q-text\">\n      In &Delta;ABC, right-angled at B, AB = 5 cm and &ang;ACB = 30&deg;. Determine the lengths of the sides BC and AC.\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"300\" height=\"200\">\r\n  <!-- Triangle ABC, B is right angle. C is 30 deg. AB = 5cm. -->\r\n  <!-- Let 1 unit = 20px. AB = 100px. BC = 5*sqrt(3) ~ 8.66 = 173px -->\r\n  <defs>\r\n    <style>\r\n      .label { font-family: serif; font-size: 16px; font-weight: bold; }\r\n    </style>\r\n  </defs>\r\n  \r\n  <path d=\"M50,150 L50,50 L223,150 Z\" fill=\"none\" stroke=\"#000\" stroke-width=\"2\"/>\r\n  \r\n  <!-- Right angle at B(50,150) -->\r\n  <rect x=\"50\" y=\"140\" width=\"10\" height=\"10\" fill=\"none\" stroke=\"#000\" />\r\n  \r\n  <!-- Angle at C -->\r\n  <path d=\"M193,150 A30,30 0 0 0 198,135\" fill=\"none\" stroke=\"#000\" />\r\n  <text x=\"160\" y=\"145\" class=\"label\">30°</text>\r\n\r\n  <!-- Labels -->\r\n  <text x=\"35\" y=\"155\" class=\"label\">B</text>\r\n  <text x=\"35\" y=\"45\" class=\"label\">A</text>\r\n  <text x=\"230\" y=\"155\" class=\"label\">C</text>\r\n  \r\n  <text x=\"20\" y=\"100\" class=\"label\">5 cm</text>\r\n  \r\n</svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Right &Delta;ABC with AB = 5 cm, &ang;ACB = 30&deg;</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>To find BC, use tan 30&deg;:</div>\n        <div>&rArr; tan 30&deg; = <span class=\"frac\"><span class=\"num\">AB</span><span class=\"den\">BC</span></span></div>\n        <div>&rArr; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">&radic;3</span></span> = <span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">BC</span></span></div>\n        <div>&rArr; <b>BC = 5&radic;3 cm</b></div>\n        <div style=\"margin-top: 8px;\">To find AC, use sin 30&deg;:</div>\n        <div>&rArr; sin 30&deg; = <span class=\"frac\"><span class=\"num\">AB</span><span class=\"den\">AC</span></span></div>\n        <div>&rArr; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> = <span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">AC</span></span></div>\n        <div>&rArr; <b>AC = 10 cm</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Side Lengths: </span>\n        <span class=\"ans-val\">BC = 5&radic;3 cm &bull; AC = 10 cm</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Example 7 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 7</div>\n    <div class=\"q-text\">\n      In &Delta;PQR, right-angled at Q, PQ = 3 cm and PR = 6 cm. Determine &ang;QPR and &ang;PRQ.\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"300\" height=\"200\">\r\n  <!-- Triangle PQR, Q is right angle. PQ=3cm, PR=6cm. R will be 30 deg. -->\r\n  <!-- Scale 1 unit = 20px. PQ=60px. PR=120px. QR=sqrt(120^2 - 60^2) = 104px. -->\r\n  <defs>\r\n    <style>\r\n      .label { font-family: serif; font-size: 16px; font-weight: bold; }\r\n    </style>\r\n  </defs>\r\n  \r\n  <!-- Q at (50, 150) -->\r\n  <!-- P at (50, 90) -->\r\n  <!-- R at (154, 150) -->\r\n  \r\n  <path d=\"M50,150 L50,90 L154,150 Z\" fill=\"none\" stroke=\"#000\" stroke-width=\"2\"/>\r\n  \r\n  <!-- Right angle at Q -->\r\n  <rect x=\"50\" y=\"140\" width=\"10\" height=\"10\" fill=\"none\" stroke=\"#000\" />\r\n\r\n  <!-- Labels -->\r\n  <text x=\"35\" y=\"155\" class=\"label\">Q</text>\r\n  <text x=\"35\" y=\"85\" class=\"label\">P</text>\r\n  <text x=\"160\" y=\"155\" class=\"label\">R</text>\r\n  \r\n  <text x=\"15\" y=\"120\" class=\"label\">3 cm</text>\r\n  <text x=\"100\" y=\"110\" class=\"label\">6 cm</text>\r\n  \r\n</svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Right &Delta;PQR with PQ = 3 cm, PR = 6 cm</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>In right &Delta;PQR:</div>\n        <div>&rArr; sin R = <span class=\"frac\"><span class=\"num\">PQ</span><span class=\"den\">PR</span></span> = <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">6</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></div>\n        <div>Since sin 30&deg; = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>:</div>\n        <div>&rArr; <b>&ang;PRQ = 30&deg;</b></div>\n        <div style=\"margin-top: 8px;\">By Angle Sum Property of a triangle:</div>\n        <div>&rArr; &ang;QPR = 180&deg; &minus; (&ang;PQR + &ang;PRQ) = 180&deg; &minus; (90&deg; + 30&deg;) = 180&deg; &minus; 120&deg; = <b>60&deg;</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Angles: </span>\n        <span class=\"ans-val\">&ang;QPR = 60&deg; &bull; &ang;PRQ = 30&deg;</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Example 8 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 8</div>\n    <div class=\"q-text\">\n      If sin (A &minus; B) = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>, cos (A + B) = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>, 0&deg; &lt; A + B &le; 90&deg;, A &gt; B, find A and B.\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Given: sin (A &minus; B) = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></div>\n        <div>Since sin 30&deg; = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>:</div>\n        <div>&rArr; <b>A &minus; B = 30&deg;</b> &nbsp; &hellip; (1)</div>\n        <div style=\"margin-top: 6px;\">Also given: cos (A + B) = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></div>\n        <div>Since cos 60&deg; = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>:</div>\n        <div>&rArr; <b>A + B = 60&deg;</b> &nbsp; &hellip; (2)</div>\n        <div style=\"margin-top: 8px;\">Adding equations (1) and (2):</div>\n        <div>&rArr; (A &minus; B) + (A + B) = 30&deg; + 60&deg;</div>\n        <div>&rArr; 2A = 90&deg; &rArr; <b>A = 45&deg;</b></div>\n        <div style=\"margin-top: 6px;\">Substituting A = 45&deg; into equation (2):</div>\n        <div>&rArr; 45&deg; + B = 60&deg; &rArr; <b>B = 15&deg;</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Values: </span>\n        <span class=\"ans-val\">A = 45&deg;, B = 15&deg;</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Example 9 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 9</div>\n    <div class=\"q-text\">\n      Express the ratios cos A, tan A and sec A in terms of sin A.\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Using identity: cos&sup2; A + sin&sup2; A = 1</div>\n        <div>&rArr; cos&sup2; A = 1 &minus; sin&sup2; A</div>\n        <div>Since A is an acute angle, cos A > 0:</div>\n        <div>&rArr; <b>cos A = &radic;<span style=\"border-top: 1px solid currentColor;\">1 &minus; sin&sup2; A</span></b></div>\n        <div style=\"margin-top: 8px;\">Express tan A:</div>\n        <div>&rArr; tan A = <span class=\"frac\"><span class=\"num\">sin A</span><span class=\"den\">cos A</span></span> = <b><span class=\"frac\"><span class=\"num\">sin A</span><span class=\"den\">&radic;<span style=\"border-top: 1px solid currentColor;\">1 &minus; sin&sup2; A</span></span></span></b></div>\n        <div style=\"margin-top: 8px;\">Express sec A:</div>\n        <div>&rArr; sec A = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">cos A</span></span> = <b><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">&radic;<span style=\"border-top: 1px solid currentColor;\">1 &minus; sin&sup2; A</span></span></span></b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ In terms of sin A: </span>\n        <span class=\"ans-val\">cos A = &radic;(1 &minus; sin&sup2; A), tan A = sin A/&radic;(1 &minus; sin&sup2; A), sec A = 1/&radic;(1 &minus; sin&sup2; A)</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Example 10 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 10</div>\n    <div class=\"q-text\">\n      Prove that sec A (1 &minus; sin A)(sec A + tan A) = 1.\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div><b style=\"color: #EA80FC;\">LHS</b> = sec A (1 &minus; sin A)(sec A + tan A)</div>\n        <div>Express sec A and tan A in terms of sin A and cos A:</div>\n        <div>&rArr; LHS = (<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">cos A</span></span>) (1 &minus; sin A) (<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">cos A</span></span> + <span class=\"frac\"><span class=\"num\">sin A</span><span class=\"den\">cos A</span></span>)</div>\n        <div>&rArr; LHS = (<span class=\"frac\"><span class=\"num\">1 &minus; sin A</span><span class=\"den\">cos A</span></span>) (<span class=\"frac\"><span class=\"num\">1 + sin A</span><span class=\"den\">cos A</span></span>)</div>\n        <div>Multiply the numerators and denominators:</div>\n        <div>&rArr; LHS = <span class=\"frac\"><span class=\"num\">(1 &minus; sin A)(1 + sin A)</span><span class=\"den\">cos&sup2; A</span></span> = <span class=\"frac\"><span class=\"num\">1 &minus; sin&sup2; A</span><span class=\"den\">cos&sup2; A</span></span></div>\n        <div>Using identity 1 &minus; sin&sup2; A = cos&sup2; A:</div>\n        <div>&rArr; LHS = <span class=\"frac\"><span class=\"num\">cos&sup2; A</span><span class=\"den\">cos&sup2; A</span></span> = <b>1 = RHS</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Result: </span>\n        <span class=\"ans-val\">Hence Proved.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Example 11 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 11</div>\n    <div class=\"q-text\">\n      Prove that <span class=\"frac\"><span class=\"num\">cot A &minus; cos A</span><span class=\"den\">cot A + cos A</span></span> = <span class=\"frac\"><span class=\"num\">cosec A &minus; 1</span><span class=\"den\">cosec A + 1</span></span>.\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div><b style=\"color: #EA80FC;\">LHS</b> = <span class=\"frac\"><span class=\"num\">cot A &minus; cos A</span><span class=\"den\">cot A + cos A</span></span></div>\n        <div>Express cot A as <span class=\"frac\"><span class=\"num\">cos A</span><span class=\"den\">sin A</span></span>:</div>\n        <div>&rArr; LHS = <span class=\"frac\"><span class=\"num\">cos A / sin A &minus; cos A</span><span class=\"den\">cos A / sin A + cos A</span></span></div>\n        <div>Factoring out cos A from numerator and denominator:</div>\n        <div>&rArr; LHS = <span class=\"frac\"><span class=\"num\">cos A (1/sin A &minus; 1)</span><span class=\"den\">cos A (1/sin A + 1)</span></span></div>\n        <div>Cancelling cos A:</div>\n        <div>&rArr; LHS = <span class=\"frac\"><span class=\"num\">1/sin A &minus; 1</span><span class=\"den\">1/sin A + 1</span></span></div>\n        <div>Since <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">sin A</span></span> = cosec A:</div>\n        <div>&rArr; LHS = <b><span class=\"frac\"><span class=\"num\">cosec A &minus; 1</span><span class=\"den\">cosec A + 1</span></span> = RHS</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Result: </span>\n        <span class=\"ans-val\">Hence Proved.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Example 12 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 12</div>\n    <div class=\"q-text\">\n      Prove that <span class=\"frac\"><span class=\"num\">sin &theta; &minus; cos &theta; + 1</span><span class=\"den\">sin &theta; + cos &theta; &minus; 1</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">sec &theta; &minus; tan &theta;</span></span>, using the identity sec&sup2; &theta; = 1 + tan&sup2; &theta;.\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div><b style=\"color: #EA80FC;\">LHS</b> = <span class=\"frac\"><span class=\"num\">sin &theta; &minus; cos &theta; + 1</span><span class=\"den\">sin &theta; + cos &theta; &minus; 1</span></span></div>\n        <div>Dividing both numerator and denominator by cos &theta;:</div>\n        <div>&rArr; LHS = <span class=\"frac\"><span class=\"num\">tan &theta; &minus; 1 + sec &theta;</span><span class=\"den\">tan &theta; + 1 &minus; sec &theta;</span></span> = <span class=\"frac\"><span class=\"num\">(tan &theta; + sec &theta;) &minus; 1</span><span class=\"den\">(tan &theta; &minus; sec &theta;) + 1</span></span></div>\n        <div>Multiply numerator and denominator by (tan &theta; &minus; sec &theta;):</div>\n        <div>&rArr; LHS = <span class=\"frac\"><span class=\"num\">[(tan &theta; + sec &theta;) &minus; 1](tan &theta; &minus; sec &theta;)</span><span class=\"den\">[(tan &theta; &minus; sec &theta;) + 1](tan &theta; &minus; sec &theta;)</span></span></div>\n        <div>&rArr; Numerator = (tan&sup2; &theta; &minus; sec&sup2; &theta;) &minus; (tan &theta; &minus; sec &theta;)</div>\n        <div>Using identity sec&sup2; &theta; &minus; tan&sup2; &theta; = 1 &rArr; tan&sup2; &theta; &minus; sec&sup2; &theta; = &minus;1:</div>\n        <div>&rArr; Numerator = &minus;1 &minus; tan &theta; + sec &theta; = &minus;(tan &theta; &minus; sec &theta; + 1)</div>\n        <div>Notice this cancels the denominator bracket:</div>\n        <div>&rArr; LHS = <span class=\"frac\"><span class=\"num\">&minus;(tan &theta; &minus; sec &theta; + 1)</span><span class=\"den\">(tan &theta; &minus; sec &theta; + 1)(tan &theta; &minus; sec &theta;)</span></span> = <span class=\"frac\"><span class=\"num\">&minus;1</span><span class=\"den\">tan &theta; &minus; sec &theta;</span></span></div>\n        <div>Multiplying numerator and denominator by &minus;1:</div>\n        <div>&rArr; LHS = <b><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">sec &theta; &minus; tan &theta;</span></span> = RHS</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Result: </span>\n        <span class=\"ans-val\">Hence Proved.</span>\n      </div>\n    </div>\n  </div>\n\n</div>\n",
+    exercise1: "\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; }\n  .frac .den { padding: 1px 4px; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(224, 64, 251, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #E040FB; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 14px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(224, 64, 251, 0.25); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #E040FB; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #EA80FC; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(224, 64, 251, 0.15); border: 1px solid #E040FB; color: #EA80FC; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 6px 0; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(224, 64, 251, 0.4); border-radius: 10px; padding: 14px; margin: 16px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #FFFFFF; border-radius: 8px; padding: 10px 8px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.25); }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 10px; font-weight: 500; }\n  .table-card { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 14px 0; border-radius: 8px; }\n  .table-card table { width: 100%; border-collapse: collapse; text-align: center; }\n  .table-card th { background: rgba(224, 64, 251, 0.25); color: #EA80FC; border: 1px solid rgba(224, 64, 251, 0.4); padding: 10px; font-weight: 700; }\n  .table-card td { border: 1px solid rgba(224, 64, 251, 0.25); padding: 9px; color: #E2E8F0; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Question 1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 1</div>\n    <div class=\"q-text\">\n      In &Delta;ABC, right-angled at B, AB = 24 cm, BC = 7 cm. Determine:\n      <br/>(i) sin A, cos A\n      <br/>(ii) sin C, cos C\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 300\" width=\"300\" height=\"300\" style=\"background-color:white; border:1px solid #ddd;\">\r\n<line x1=\"80\" y1=\"50\" x2=\"80\" y2=\"250\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\r\n<line x1=\"80\" y1=\"250\" x2=\"200\" y2=\"250\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\r\n<line x1=\"80\" y1=\"50\" x2=\"200\" y2=\"250\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\r\n<polyline points=\"80,230 100,230 100,250\" stroke=\"#2E7D32\" fill=\"none\"/>\r\n<text x=\"70\" y=\"45\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">A</text>\r\n<text x=\"70\" y=\"270\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">B</text>\r\n<text x=\"210\" y=\"270\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">C</text>\r\n<text x=\"10\" y=\"150\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">24 cm</text>\r\n<text x=\"120\" y=\"280\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">7 cm</text>\r\n</svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Right-angled Triangle ABC with AB = 24 cm and BC = 7 cm</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>In right &Delta;ABC, by Pythagoras Theorem:</div>\n        <div>&rArr; AC = &radic;<span style=\"border-top: 1px solid currentColor;\">AB&sup2; + BC&sup2;</span> = &radic;<span style=\"border-top: 1px solid currentColor;\">24&sup2; + 7&sup2;</span> = &radic;<span style=\"border-top: 1px solid currentColor;\">576 + 49</span> = &radic;625 = <b>25 cm</b></div>\n        <div style=\"margin-top: 10px;\"><b style=\"color: #EA80FC;\">(i) For &ang;A:</b> Perpendicular = BC = 7 cm, Base = AB = 24 cm, Hypotenuse = AC = 25 cm</div>\n        <div>&rArr; <b>sin A</b> = <span class=\"frac\"><span class=\"num\">BC</span><span class=\"den\">AC</span></span> = <b><span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">25</span></span></b></div>\n        <div>&rArr; <b>cos A</b> = <span class=\"frac\"><span class=\"num\">AB</span><span class=\"den\">AC</span></span> = <b><span class=\"frac\"><span class=\"num\">24</span><span class=\"den\">25</span></span></b></div>\n        <div style=\"margin-top: 10px;\"><b style=\"color: #EA80FC;\">(ii) For &ang;C:</b> Perpendicular = AB = 24 cm, Base = BC = 7 cm, Hypotenuse = AC = 25 cm</div>\n        <div>&rArr; <b>sin C</b> = <span class=\"frac\"><span class=\"num\">AB</span><span class=\"den\">AC</span></span> = <b><span class=\"frac\"><span class=\"num\">24</span><span class=\"den\">25</span></span></b></div>\n        <div>&rArr; <b>cos C</b> = <span class=\"frac\"><span class=\"num\">BC</span><span class=\"den\">AC</span></span> = <b><span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">25</span></span></b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Solutions: </span>\n        <span class=\"ans-val\">(i) sin A = 7/25, cos A = 24/25 &bull; (ii) sin C = 24/25, cos C = 7/25</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 2 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 2</div>\n    <div class=\"q-text\">\n      In Fig., find tan P &minus; cot R.\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 300\" width=\"300\" height=\"300\" style=\"background-color:white; border:1px solid #ddd;\">\r\n<line x1=\"100\" y1=\"50\" x2=\"100\" y2=\"250\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\r\n<line x1=\"100\" y1=\"250\" x2=\"250\" y2=\"250\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\r\n<line x1=\"100\" y1=\"50\" x2=\"250\" y2=\"250\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\r\n<polyline points=\"100,230 120,230 120,250\" stroke=\"#2E7D32\" fill=\"none\"/>\r\n<text x=\"90\" y=\"45\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">P</text>\r\n<text x=\"90\" y=\"270\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">Q</text>\r\n<text x=\"260\" y=\"270\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">R</text>\r\n<text x=\"20\" y=\"150\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">12 cm</text>\r\n<text x=\"160\" y=\"280\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">7 cm</text>\r\n<text x=\"180\" y=\"140\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">13 cm</text>\r\n</svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Right &Delta;PQR with PQ = 12 cm, PR = 13 cm</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>In right &Delta;PQR, right-angled at Q, by Pythagoras Theorem:</div>\n        <div>&rArr; QR = &radic;<span style=\"border-top: 1px solid currentColor;\">PR&sup2; &minus; PQ&sup2;</span> = &radic;<span style=\"border-top: 1px solid currentColor;\">13&sup2; &minus; 12&sup2;</span> = &radic;<span style=\"border-top: 1px solid currentColor;\">169 &minus; 144</span> = &radic;25 = <b>5 cm</b></div>\n        <div style=\"margin-top: 8px;\">Now find tan P and cot R:</div>\n        <div>&rArr; For &ang;P: Perpendicular = QR = 5 cm, Base = PQ = 12 cm</div>\n        <div>&rArr; <b>tan P = <span class=\"frac\"><span class=\"num\">QR</span><span class=\"den\">PQ</span></span> = <span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">12</span></span></b></div>\n        <div style=\"margin-top: 6px;\">&rArr; For &ang;R: Base = QR = 5 cm, Perpendicular = PQ = 12 cm</div>\n        <div>&rArr; <b>cot R = <span class=\"frac\"><span class=\"num\">QR</span><span class=\"den\">PQ</span></span> = <span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">12</span></span></b></div>\n        <div style=\"margin-top: 8px;\">Therefore, evaluate tan P &minus; cot R:</div>\n        <div>&rArr; tan P &minus; cot R = <span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">12</span></span> &minus; <span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">12</span></span> = <b>0</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Value: </span>\n        <span class=\"ans-val\">tan P &minus; cot R = 0</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 3 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 3</div>\n    <div class=\"q-text\">\n      If sin A = <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span>, calculate cos A and tan A.\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 300\" width=\"300\" height=\"300\" style=\"background-color:white; border:1px solid #ddd;\">\r\n<line x1=\"80\" y1=\"50\" x2=\"80\" y2=\"250\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\r\n<line x1=\"80\" y1=\"250\" x2=\"220\" y2=\"250\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\r\n<line x1=\"80\" y1=\"50\" x2=\"220\" y2=\"250\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\r\n<polyline points=\"80,230 100,230 100,250\" stroke=\"#2E7D32\" fill=\"none\"/>\r\n<text x=\"70\" y=\"45\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">C</text>\r\n<text x=\"70\" y=\"270\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">B</text>\r\n<text x=\"230\" y=\"270\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">A</text>\r\n<text x=\"40\" y=\"150\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">3k</text>\r\n<text x=\"160\" y=\"140\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">4k</text>\r\n</svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Right Triangle ABC with sin A = 3/4</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Let &Delta;ABC be right-angled at B.</div>\n        <div>&rArr; sin A = <span class=\"frac\"><span class=\"num\">BC</span><span class=\"den\">AC</span></span> = <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span></div>\n        <div>Let BC = 3<i>k</i> and AC = 4<i>k</i>, where <i>k</i> > 0.</div>\n        <div>By Pythagoras Theorem:</div>\n        <div>&rArr; AB = &radic;<span style=\"border-top: 1px solid currentColor;\">AC&sup2; &minus; BC&sup2;</span> = &radic;<span style=\"border-top: 1px solid currentColor;\">(4k)&sup2; &minus; (3k)&sup2;</span> = &radic;<span style=\"border-top: 1px solid currentColor;\">16k&sup2; &minus; 9k&sup2;</span> = <b>&radic;7 k</b></div>\n        <div style=\"margin-top: 8px;\"><b style=\"color: #EA80FC;\">Values of cos A and tan A:</b></div>\n        <div>&rArr; <b>cos A</b> = <span class=\"frac\"><span class=\"num\">AB</span><span class=\"den\">AC</span></span> = <span class=\"frac\"><span class=\"num\">&radic;7 k</span><span class=\"den\">4k</span></span> = <b><span class=\"frac\"><span class=\"num\">&radic;7</span><span class=\"den\">4</span></span></b></div>\n        <div>&rArr; <b>tan A</b> = <span class=\"frac\"><span class=\"num\">BC</span><span class=\"den\">AB</span></span> = <span class=\"frac\"><span class=\"num\">3k</span><span class=\"den\">&radic;7 k</span></span> = <b><span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">&radic;7</span></span></b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Solutions: </span>\n        <span class=\"ans-val\">cos A = &radic;7 / 4 &bull; tan A = 3 / &radic;7</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 4 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 4</div>\n    <div class=\"q-text\">\n      Given 15 cot A = 8, find sin A and sec A.\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 300\" width=\"300\" height=\"300\" style=\"background-color:white; border:1px solid #ddd;\">\r\n<line x1=\"80\" y1=\"50\" x2=\"80\" y2=\"250\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\r\n<line x1=\"80\" y1=\"250\" x2=\"220\" y2=\"250\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\r\n<line x1=\"80\" y1=\"50\" x2=\"220\" y2=\"250\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\r\n<polyline points=\"80,230 100,230 100,250\" stroke=\"#2E7D32\" fill=\"none\"/>\r\n<text x=\"70\" y=\"45\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">C</text>\r\n<text x=\"70\" y=\"270\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">B</text>\r\n<text x=\"230\" y=\"270\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">A</text>\r\n<text x=\"20\" y=\"150\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">15k</text>\r\n<text x=\"140\" y=\"280\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">8k</text>\r\n</svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Right Triangle ABC with cot A = 8/15</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Given: 15 cot A = 8 &rArr; <b>cot A = <span class=\"frac\"><span class=\"num\">8</span><span class=\"den\">15</span></span></b></div>\n        <div>In right &Delta;ABC with right angle at B:</div>\n        <div>&rArr; cot A = <span class=\"frac\"><span class=\"num\">AB</span><span class=\"den\">BC</span></span> = <span class=\"frac\"><span class=\"num\">8</span><span class=\"den\">15</span></span></div>\n        <div>Let AB = 8<i>k</i> and BC = 15<i>k</i>.</div>\n        <div>By Pythagoras Theorem:</div>\n        <div>&rArr; AC = &radic;<span style=\"border-top: 1px solid currentColor;\">AB&sup2; + BC&sup2;</span> = &radic;<span style=\"border-top: 1px solid currentColor;\">(8k)&sup2; + (15k)&sup2;</span> = &radic;<span style=\"border-top: 1px solid currentColor;\">64k&sup2; + 225k&sup2;</span> = &radic;289k&sup2; = <b>17k</b></div>\n        <div style=\"margin-top: 8px;\"><b style=\"color: #EA80FC;\">Values of sin A and sec A:</b></div>\n        <div>&rArr; <b>sin A</b> = <span class=\"frac\"><span class=\"num\">BC</span><span class=\"den\">AC</span></span> = <span class=\"frac\"><span class=\"num\">15k</span><span class=\"den\">17k</span></span> = <b><span class=\"frac\"><span class=\"num\">15</span><span class=\"den\">17</span></span></b></div>\n        <div>&rArr; <b>sec A</b> = <span class=\"frac\"><span class=\"num\">AC</span><span class=\"den\">AB</span></span> = <span class=\"frac\"><span class=\"num\">17k</span><span class=\"den\">8k</span></span> = <b><span class=\"frac\"><span class=\"num\">17</span><span class=\"den\">8</span></span></b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Solutions: </span>\n        <span class=\"ans-val\">sin A = 15/17 &bull; sec A = 17/8</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 5 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 5</div>\n    <div class=\"q-text\">\n      Given sec &theta; = <span class=\"frac\"><span class=\"num\">13</span><span class=\"den\">12</span></span>, calculate all other trigonometric ratios.\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 300\" width=\"300\" height=\"300\" style=\"background-color:white; border:1px solid #ddd;\">\r\n<line x1=\"80\" y1=\"50\" x2=\"80\" y2=\"250\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\r\n<line x1=\"80\" y1=\"250\" x2=\"250\" y2=\"250\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\r\n<line x1=\"80\" y1=\"50\" x2=\"250\" y2=\"250\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\r\n<polyline points=\"80,230 100,230 100,250\" stroke=\"#2E7D32\" fill=\"none\"/>\r\n<text x=\"70\" y=\"45\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">A</text>\r\n<text x=\"60\" y=\"270\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">B</text>\r\n<text x=\"260\" y=\"270\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">C</text>\r\n<text x=\"160\" y=\"140\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">13k</text>\r\n<text x=\"140\" y=\"275\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">12k</text>\r\n<text x=\"210\" y=\"240\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">θ</text>\r\n</svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Right Triangle with sec &theta; = 13/12</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Given: sec &theta; = <span class=\"frac\"><span class=\"num\">Hypotenuse</span><span class=\"den\">Base</span></span> = <span class=\"frac\"><span class=\"num\">13</span><span class=\"den\">12</span></span></div>\n        <div>Let Hypotenuse (H) = 13<i>k</i> and Base (B) = 12<i>k</i>.</div>\n        <div>By Pythagoras Theorem:</div>\n        <div>&rArr; Perpendicular (P) = &radic;<span style=\"border-top: 1px solid currentColor;\">H&sup2; &minus; B&sup2;</span> = &radic;<span style=\"border-top: 1px solid currentColor;\">(13k)&sup2; &minus; (12k)&sup2;</span> = &radic;<span style=\"border-top: 1px solid currentColor;\">169k&sup2; &minus; 144k&sup2;</span> = &radic;25k&sup2; = <b>5k</b></div>\n        <div style=\"margin-top: 8px;\"><b style=\"color: #EA80FC;\">The Remaining Five Trigonometric Ratios:</b></div>\n        <div>&rArr; <b>sin &theta;</b> = <span class=\"frac\"><span class=\"num\">P</span><span class=\"den\">H</span></span> = <b><span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">13</span></span></b></div>\n        <div>&rArr; <b>cos &theta;</b> = <span class=\"frac\"><span class=\"num\">B</span><span class=\"den\">H</span></span> = <b><span class=\"frac\"><span class=\"num\">12</span><span class=\"den\">13</span></span></b></div>\n        <div>&rArr; <b>tan &theta;</b> = <span class=\"frac\"><span class=\"num\">P</span><span class=\"den\">B</span></span> = <b><span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">12</span></span></b></div>\n        <div>&rArr; <b>cosec &theta;</b> = <span class=\"frac\"><span class=\"num\">H</span><span class=\"den\">P</span></span> = <b><span class=\"frac\"><span class=\"num\">13</span><span class=\"den\">5</span></span></b></div>\n        <div>&rArr; <b>cot &theta;</b> = <span class=\"frac\"><span class=\"num\">B</span><span class=\"den\">P</span></span> = <b><span class=\"frac\"><span class=\"num\">12</span><span class=\"den\">5</span></span></b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Ratios: </span>\n        <span class=\"ans-val\">sin &theta; = 5/13, cos &theta; = 12/13, tan &theta; = 5/12, cosec &theta; = 13/5, cot &theta; = 12/5</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 6 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 6</div>\n    <div class=\"q-text\">\n      If &ang;A and &ang;B are acute angles such that cos A = cos B, then show that &ang;A = &ang;B.\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 205\" width=\"300\" height=\"205\" style=\"background-color:white; border:1px solid #ddd;\">\r\n<polygon points=\"50,20 50,120 150,120\" stroke=\"#2E7D32\" stroke-width=\"2\" fill=\"none\"/>\r\n<polyline points=\"50,105 65,105 65,120\" stroke=\"#2E7D32\" fill=\"none\"/>\r\n<text x=\"35\" y=\"30\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">B</text>\r\n<text x=\"35\" y=\"120\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">C</text>\r\n<text x=\"165\" y=\"120\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">A</text>\r\n<text x=\"30\" y=\"70.0\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">a</text>\r\n<text x=\"100.0\" y=\"140\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">b</text>\r\n<text x=\"110.0\" y=\"60.0\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">c</text>\r\n</svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Right &Delta;ABC with right angle at C</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Consider a right-angled triangle &Delta;ABC where &ang;C = 90&deg;, so that &ang;A and &ang;B are acute angles.</div>\n        <div>From the triangle:</div>\n        <div>&rArr; cos A = <span class=\"frac\"><span class=\"num\">Side adjacent to &ang;A</span><span class=\"den\">Hypotenuse</span></span> = <span class=\"frac\"><span class=\"num\">AC</span><span class=\"den\">AB</span></span></div>\n        <div>&rArr; cos B = <span class=\"frac\"><span class=\"num\">Side adjacent to &ang;B</span><span class=\"den\">Hypotenuse</span></span> = <span class=\"frac\"><span class=\"num\">BC</span><span class=\"den\">AB</span></span></div>\n        <div>Given that: <b>cos A = cos B</b>:</div>\n        <div>&rArr; <span class=\"frac\"><span class=\"num\">AC</span><span class=\"den\">AB</span></span> = <span class=\"frac\"><span class=\"num\">BC</span><span class=\"den\">AB</span></span></div>\n        <div>Multiplying both sides by AB:</div>\n        <div>&rArr; <b>AC = BC</b></div>\n        <div>In &Delta;ABC, angles opposite to equal sides are equal:</div>\n        <div>&rArr; <b>&ang;A = &ang;B</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Result: </span>\n        <span class=\"ans-val\">Hence Proved (&ang;A = &ang;B).</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 7 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 7</div>\n    <div class=\"q-text\">\n      If cot &theta; = <span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">8</span></span>, evaluate:\n      <br/>(i) <span class=\"frac\"><span class=\"num\">(1 + sin &theta;)(1 &minus; sin &theta;)</span><span class=\"den\">(1 + cos &theta;)(1 &minus; cos &theta;)</span></span>\n      <br/>(ii) cot&sup2; &theta;\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 300\" width=\"300\" height=\"300\" style=\"background-color:white; border:1px solid #ddd;\">\r\n<line x1=\"80\" y1=\"50\" x2=\"80\" y2=\"250\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\r\n<line x1=\"80\" y1=\"250\" x2=\"220\" y2=\"250\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\r\n<line x1=\"80\" y1=\"50\" x2=\"220\" y2=\"250\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\r\n<text x=\"70\" y=\"45\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">A</text>\r\n<text x=\"60\" y=\"270\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">B</text>\r\n<text x=\"230\" y=\"270\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">C</text>\r\n<text x=\"30\" y=\"150\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">8k</text>\r\n<text x=\"140\" y=\"275\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">7k</text>\r\n<text x=\"180\" y=\"240\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">θ</text>\r\n</svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Right Triangle with cot &theta; = 7/8</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div><b style=\"color: #EA80FC;\">(i) Evaluate <span class=\"frac\"><span class=\"num\">(1 + sin &theta;)(1 &minus; sin &theta;)</span><span class=\"den\">(1 + cos &theta;)(1 &minus; cos &theta;)</span></span>:</b></div>\n        <div>Using identity (a + b)(a &minus; b) = a&sup2; &minus; b&sup2;:</div>\n        <div>&rArr; Numerator = (1 + sin &theta;)(1 &minus; sin &theta;) = 1 &minus; sin&sup2; &theta;</div>\n        <div>&rArr; Denominator = (1 + cos &theta;)(1 &minus; cos &theta;) = 1 &minus; cos&sup2; &theta;</div>\n        <div>Using standard identities: 1 &minus; sin&sup2; &theta; = cos&sup2; &theta; and 1 &minus; cos&sup2; &theta; = sin&sup2; &theta;:</div>\n        <div>&rArr; <span class=\"frac\"><span class=\"num\">1 &minus; sin&sup2; &theta;</span><span class=\"den\">1 &minus; cos&sup2; &theta;</span></span> = <span class=\"frac\"><span class=\"num\">cos&sup2; &theta;</span><span class=\"den\">sin&sup2; &theta;</span></span> = (<span class=\"frac\"><span class=\"num\">cos &theta;</span><span class=\"den\">sin &theta;</span></span>)&sup2; = <b>cot&sup2; &theta;</b></div>\n        <div>Substitute cot &theta; = <span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">8</span></span>:</div>\n        <div>&rArr; cot&sup2; &theta; = (<span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">8</span></span>)&sup2; = <b><span class=\"frac\"><span class=\"num\">49</span><span class=\"den\">64</span></span></b></div>\n        <div style=\"margin-top: 10px;\"><b style=\"color: #EA80FC;\">(ii) Evaluate cot&sup2; &theta;:</b></div>\n        <div>&rArr; cot&sup2; &theta; = (<span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">8</span></span>)&sup2; = <b><span class=\"frac\"><span class=\"num\">49</span><span class=\"den\">64</span></span></b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Solutions: </span>\n        <span class=\"ans-val\">(i) 49/64 &bull; (ii) 49/64</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 8 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 8</div>\n    <div class=\"q-text\">\n      If 3 cot A = 4, check whether <span class=\"frac\"><span class=\"num\">1 &minus; tan&sup2; A</span><span class=\"den\">1 + tan&sup2; A</span></span> = cos&sup2; A &minus; sin&sup2; A or not.\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 300\" width=\"300\" height=\"300\" style=\"background-color:white; border:1px solid #ddd;\">\r\n<line x1=\"80\" y1=\"50\" x2=\"80\" y2=\"250\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\r\n<line x1=\"80\" y1=\"250\" x2=\"250\" y2=\"250\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\r\n<line x1=\"80\" y1=\"50\" x2=\"250\" y2=\"250\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\r\n<polyline points=\"80,230 100,230 100,250\" stroke=\"#2E7D32\" fill=\"none\"/>\r\n<text x=\"70\" y=\"45\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">C</text>\r\n<text x=\"60\" y=\"270\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">B</text>\r\n<text x=\"260\" y=\"270\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">A</text>\r\n<text x=\"40\" y=\"150\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">3x</text>\r\n<text x=\"160\" y=\"275\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">4x</text>\r\n<text x=\"180\" y=\"140\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">5x</text>\r\n</svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Right Triangle with cot A = 4/3</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Given: 3 cot A = 4 &rArr; cot A = <span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">3</span></span> &rArr; <b>tan A = <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span></b></div>\n        <div>In right &Delta;ABC with Base = 4<i>k</i> and Perpendicular = 3<i>k</i>:</div>\n        <div>By Pythagoras: Hypotenuse = &radic;<span style=\"border-top: 1px solid currentColor;\">(4k)&sup2; + (3k)&sup2;</span> = &radic;25k&sup2; = <b>5k</b></div>\n        <div>&rArr; <b>cos A = <span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">5</span></span></b>, &nbsp; <b>sin A = <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">5</span></span></b></div>\n        <div style=\"margin-top: 10px;\"><b style=\"color: #EA80FC;\">1. Evaluate LHS:</b></div>\n        <div>&rArr; LHS = <span class=\"frac\"><span class=\"num\">1 &minus; tan&sup2; A</span><span class=\"den\">1 + tan&sup2; A</span></span> = <span class=\"frac\"><span class=\"num\">1 &minus; (3/4)&sup2;</span><span class=\"den\">1 + (3/4)&sup2;</span></span> = <span class=\"frac\"><span class=\"num\">1 &minus; 9/16</span><span class=\"den\">1 + 9/16</span></span> = <span class=\"frac\"><span class=\"num\">7/16</span><span class=\"den\">25/16</span></span> = <b><span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">25</span></span></b></div>\n        <div style=\"margin-top: 10px;\"><b style=\"color: #EA80FC;\">2. Evaluate RHS:</b></div>\n        <div>&rArr; RHS = cos&sup2; A &minus; sin&sup2; A = (<span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">5</span></span>)&sup2; &minus; (<span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">5</span></span>)&sup2; = <span class=\"frac\"><span class=\"num\">16</span><span class=\"den\">25</span></span> &minus; <span class=\"frac\"><span class=\"num\">9</span><span class=\"den\">25</span></span> = <b><span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">25</span></span></b></div>\n        <div style=\"margin-top: 8px;\">Since <b>LHS = RHS = <span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">25</span></span></b>, the equality holds true.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Result: </span>\n        <span class=\"ans-val\">Yes, LHS = RHS (both equal 7/25).</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 9 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 9</div>\n    <div class=\"q-text\">\n      In &Delta;ABC right-angled at B, if tan A = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">&radic;3</span></span>, find the value of:\n      <br/>(i) sin A cos C + cos A sin C\n      <br/>(ii) cos A cos C &minus; sin A sin C\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 300\" width=\"300\" height=\"300\" style=\"background-color:white; border:1px solid #ddd;\">\r\n<line x1=\"80\" y1=\"50\" x2=\"80\" y2=\"250\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\r\n<line x1=\"80\" y1=\"250\" x2=\"250\" y2=\"250\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\r\n<line x1=\"80\" y1=\"50\" x2=\"250\" y2=\"250\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\r\n<polyline points=\"80,230 100,230 100,250\" stroke=\"#2E7D32\" fill=\"none\"/>\r\n<text x=\"70\" y=\"45\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">C</text>\r\n<text x=\"60\" y=\"270\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">B</text>\r\n<text x=\"260\" y=\"270\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">A</text>\r\n<text x=\"40\" y=\"150\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">1k</text>\r\n<text x=\"140\" y=\"275\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">√3 k</text>\r\n</svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Right &Delta;ABC with tan A = 1/&radic;3</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Given: tan A = <span class=\"frac\"><span class=\"num\">BC</span><span class=\"den\">AB</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">&radic;3</span></span></div>\n        <div>Let BC = 1<i>k</i> and AB = &radic;3 <i>k</i>.</div>\n        <div>By Pythagoras Theorem:</div>\n        <div>&rArr; AC = &radic;<span style=\"border-top: 1px solid currentColor;\">AB&sup2; + BC&sup2;</span> = &radic;<span style=\"border-top: 1px solid currentColor;\">(&radic;3 k)&sup2; + (1k)&sup2;</span> = &radic;<span style=\"border-top: 1px solid currentColor;\">3k&sup2; + 1k&sup2;</span> = &radic;4k&sup2; = <b>2k</b></div>\n        <div style=\"margin-top: 8px;\">Now find trigonometric ratios for angles A and C:</div>\n        <div>&rArr; <b>sin A</b> = <span class=\"frac\"><span class=\"num\">BC</span><span class=\"den\">AC</span></span> = <b><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></b>, &nbsp;&nbsp; <b>cos A</b> = <span class=\"frac\"><span class=\"num\">AB</span><span class=\"den\">AC</span></span> = <b><span class=\"frac\"><span class=\"num\">&radic;3</span><span class=\"den\">2</span></span></b></div>\n        <div>&rArr; <b>sin C</b> = <span class=\"frac\"><span class=\"num\">AB</span><span class=\"den\">AC</span></span> = <b><span class=\"frac\"><span class=\"num\">&radic;3</span><span class=\"den\">2</span></span></b>, &nbsp;&nbsp; <b>cos C</b> = <span class=\"frac\"><span class=\"num\">BC</span><span class=\"den\">AC</span></span> = <b><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></b></div>\n        <div style=\"margin-top: 10px;\"><b style=\"color: #EA80FC;\">(i) Evaluate sin A cos C + cos A sin C:</b></div>\n        <div>&rArr; (<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>)(<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>) + (<span class=\"frac\"><span class=\"num\">&radic;3</span><span class=\"den\">2</span></span>)(<span class=\"frac\"><span class=\"num\">&radic;3</span><span class=\"den\">2</span></span>) = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span> + <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span> = <span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">4</span></span> = <b>1</b></div>\n        <div style=\"margin-top: 10px;\"><b style=\"color: #EA80FC;\">(ii) Evaluate cos A cos C &minus; sin A sin C:</b></div>\n        <div>&rArr; (<span class=\"frac\"><span class=\"num\">&radic;3</span><span class=\"den\">2</span></span>)(<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>) &minus; (<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>)(<span class=\"frac\"><span class=\"num\">&radic;3</span><span class=\"den\">2</span></span>) = <span class=\"frac\"><span class=\"num\">&radic;3</span><span class=\"den\">4</span></span> &minus; <span class=\"frac\"><span class=\"num\">&radic;3</span><span class=\"den\">4</span></span> = <b>0</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Solutions: </span>\n        <span class=\"ans-val\">(i) 1 &bull; (ii) 0</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 10 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 10</div>\n    <div class=\"q-text\">\n      In &Delta;PQR, right-angled at Q, PR + QR = 25 cm and PQ = 5 cm. Determine the values of sin P, cos P and tan P.\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 300\" width=\"300\" height=\"300\" style=\"background-color:white; border:1px solid #ddd;\">\r\n<line x1=\"80\" y1=\"50\" x2=\"80\" y2=\"250\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\r\n<line x1=\"80\" y1=\"250\" x2=\"220\" y2=\"250\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\r\n<line x1=\"80\" y1=\"50\" x2=\"220\" y2=\"250\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\r\n<polyline points=\"80,230 100,230 100,250\" stroke=\"#2E7D32\" fill=\"none\"/>\r\n<text x=\"70\" y=\"45\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">P</text>\r\n<text x=\"60\" y=\"270\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">Q</text>\r\n<text x=\"230\" y=\"270\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">R</text>\r\n<text x=\"30\" y=\"150\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">5 cm</text>\r\n<text x=\"130\" y=\"280\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">x cm</text>\r\n</svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Right &Delta;PQR with PQ = 5 cm, PR + QR = 25 cm</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>In &Delta;PQR, &ang;Q = 90&deg;, PQ = 5 cm, and <b>PR = 25 &minus; QR</b>.</div>\n        <div>By Pythagoras Theorem:</div>\n        <div>&rArr; PR&sup2; = PQ&sup2; + QR&sup2;</div>\n        <div>&rArr; (25 &minus; QR)&sup2; = 5&sup2; + QR&sup2;</div>\n        <div>&rArr; 625 &minus; 50 QR + QR&sup2; = 25 + QR&sup2;</div>\n        <div>Cancelling QR&sup2; from both sides:</div>\n        <div>&rArr; 625 &minus; 25 = 50 QR</div>\n        <div>&rArr; 600 = 50 QR &rArr; <b>QR = 12 cm</b></div>\n        <div>Therefore, PR = 25 &minus; 12 = <b>13 cm</b>.</div>\n        <div style=\"margin-top: 8px;\"><b style=\"color: #EA80FC;\">Values of sin P, cos P, and tan P:</b></div>\n        <div>&rArr; <b>sin P</b> = <span class=\"frac\"><span class=\"num\">QR</span><span class=\"den\">PR</span></span> = <b><span class=\"frac\"><span class=\"num\">12</span><span class=\"den\">13</span></span></b></div>\n        <div>&rArr; <b>cos P</b> = <span class=\"frac\"><span class=\"num\">PQ</span><span class=\"den\">PR</span></span> = <b><span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">13</span></span></b></div>\n        <div>&rArr; <b>tan P</b> = <span class=\"frac\"><span class=\"num\">QR</span><span class=\"den\">PQ</span></span> = <b><span class=\"frac\"><span class=\"num\">12</span><span class=\"den\">5</span></span></b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Solutions: </span>\n        <span class=\"ans-val\">sin P = 12/13 &bull; cos P = 5/13 &bull; tan P = 12/5</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 11 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 11</div>\n    <div class=\"q-text\">\n      State whether the following are true or false. Justify your answer.\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 300\" width=\"300\" height=\"300\" style=\"background-color:white; border:1px solid #ddd;\">\r\n<line x1=\"80\" y1=\"50\" x2=\"80\" y2=\"250\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\r\n<line x1=\"80\" y1=\"250\" x2=\"220\" y2=\"250\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\r\n<line x1=\"80\" y1=\"50\" x2=\"220\" y2=\"250\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\r\n<polyline points=\"80,230 100,230 100,250\" stroke=\"#2E7D32\" fill=\"none\"/>\r\n<text x=\"70\" y=\"45\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">C</text>\r\n<text x=\"70\" y=\"275\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">B</text>\r\n<text x=\"230\" y=\"275\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">A</text>\r\n<text x=\"20\" y=\"150\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">12k</text>\r\n<text x=\"140\" y=\"275\" font-family=\"Arial\" font-size=\"16\" fill=\"black\">5k</text>\r\n</svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Trigonometric Ratios Concept Reference</div>\n    </div>\n\n    <!-- Sub-part (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #EA80FC;\">(i) The value of tan A is always less than 1.</b></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; <b>False.</b></div>\n          <div>tan A = (Perpendicular) / (Base). Since the perpendicular side in a right triangle can be greater than the base side (for example, in a triangle with sides 12, 5, 13, tan A = 12/5 = 2.4 > 1), tan A can take any positive real value from 0 to &infin;.</div>\n        </div>\n      </div>\n    </div>\n\n    <!-- Sub-part (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #EA80FC;\">(ii) sec A = 12/5 for some value of angle A.</b></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; <b>True.</b></div>\n          <div>sec A = (Hypotenuse) / (Base). Since the hypotenuse is always the longest side of a right triangle, sec A &ge; 1 is always satisfied. Here 12/5 = 2.4 &ge; 1, which is completely valid.</div>\n        </div>\n      </div>\n    </div>\n\n    <!-- Sub-part (iii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #EA80FC;\">(iii) cos A is the abbreviation used for the cosecant of angle A.</b></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; <b>False.</b></div>\n          <div><b>cos A</b> is the abbreviation for the <b>cosine</b> of angle A. The abbreviation used for the cosecant of angle A is <b>cosec A</b>.</div>\n        </div>\n      </div>\n    </div>\n\n    <!-- Sub-part (iv) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #EA80FC;\">(iv) cot A is the product of cot and A.</b></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; <b>False.</b></div>\n          <div><b>cot A</b> is not a multiplication of 'cot' and 'A'. It is a single mathematical symbol denoting the cotangent function of the angle A. Separated from 'A', the word 'cot' has no mathematical meaning.</div>\n        </div>\n      </div>\n    </div>\n\n    <!-- Sub-part (v) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #EA80FC;\">(v) sin &theta; = 4/3 for some angle &theta;.</b></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; <b>False.</b></div>\n          <div>sin &theta; = (Perpendicular) / (Hypotenuse). Since the hypotenuse is the longest side of a right triangle, the perpendicular is always less than or equal to the hypotenuse. Hence, sin &theta; can never exceed 1 (sin &theta; &le; 1). Here 4/3 = 1.33 > 1, which is impossible.</div>\n        </div>\n      </div>\n    </div>\n  </div>\n\n</div>\n",
+    exercise2: "\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; }\n  .frac .den { padding: 1px 4px; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(224, 64, 251, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #E040FB; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 14px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(224, 64, 251, 0.25); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #E040FB; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #EA80FC; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(224, 64, 251, 0.15); border: 1px solid #E040FB; color: #EA80FC; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 6px 0; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(224, 64, 251, 0.4); border-radius: 10px; padding: 14px; margin: 16px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #FFFFFF; border-radius: 8px; padding: 10px 8px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.25); }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 10px; font-weight: 500; }\n  .table-card { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 14px 0; border-radius: 8px; }\n  .table-card table { width: 100%; border-collapse: collapse; text-align: center; }\n  .table-card th { background: rgba(224, 64, 251, 0.25); color: #EA80FC; border: 1px solid rgba(224, 64, 251, 0.4); padding: 10px; font-weight: 700; }\n  .table-card td { border: 1px solid rgba(224, 64, 251, 0.25); padding: 9px; color: #E2E8F0; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Question 1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 1</div>\n    <div class=\"q-text\">\n      Evaluate the following:\n      <div style=\"margin-left: 14px; margin-top: 6px;\">\n        (i) sin 60&deg; cos 30&deg; + sin 30&deg; cos 60&deg;<br/>\n        (ii) 2 tan&sup2; 45&deg; + cos&sup2; 30&deg; &minus; sin&sup2; 60&deg;<br/>\n        (iii) <span class=\"frac\"><span class=\"num\">cos 45&deg;</span><span class=\"den\">sec 30&deg; + cosec 30&deg;</span></span><br/>\n        (iv) <span class=\"frac\"><span class=\"num\">sin 30&deg; + tan 45&deg; &minus; cosec 60&deg;</span><span class=\"den\">sec 30&deg; + cos 60&deg; + cot 45&deg;</span></span><br/>\n        (v) <span class=\"frac\"><span class=\"num\">5 cos&sup2; 60&deg; + 4 sec&sup2; 30&deg; &minus; tan&sup2; 45&deg;</span><span class=\"den\">sin&sup2; 30&deg; + cos&sup2; 30&deg;</span></span>\n      </div>\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 205\" width=\"300\" height=\"205\" style=\"background-color:white; border:1px solid #ddd;\"><polygon points=\"50,20 50,106 100,106\" stroke=\"black\" stroke-width=\"2\" fill=\"none\"/><polyline points=\"50,91 65,91 65,106\" stroke=\"black\" fill=\"none\"/><text x=\"35\" y=\"30\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">A</text><text x=\"35\" y=\"106\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">B</text><text x=\"115\" y=\"106\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">C</text><text x=\"30\" y=\"63.0\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">√3</text><text x=\"75.0\" y=\"126\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">1</text><text x=\"85.0\" y=\"53.0\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">2</text><path d=\"M 70 106 A 30 30 0 0 0 75 91\" stroke=\"red\" fill=\"none\"/><text x=\"60\" y=\"96\" font-family=\"Arial\" font-size=\"12\" fill=\"red\" text-anchor=\"middle\">30</text></svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Reference Triangle for 30&deg; Special Angle Evaluation</div>\n    </div>\n\n    <!-- Sub-part (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #EA80FC;\">(i) sin 60&deg; cos 30&deg; + sin 30&deg; cos 60&deg;:</b></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Substitute the standard values: sin 60&deg; = <span class=\"frac\"><span class=\"num\">&radic;3</span><span class=\"den\">2</span></span>, cos 30&deg; = <span class=\"frac\"><span class=\"num\">&radic;3</span><span class=\"den\">2</span></span>, sin 30&deg; = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>, cos 60&deg; = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span></div>\n          <div>&rArr; (<span class=\"frac\"><span class=\"num\">&radic;3</span><span class=\"den\">2</span></span>)(<span class=\"frac\"><span class=\"num\">&radic;3</span><span class=\"den\">2</span></span>) + (<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>)(<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>) = <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span> + <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span> = <span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">4</span></span> = <b>1</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Value: </span>\n          <span class=\"ans-val\">1</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- Sub-part (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #EA80FC;\">(ii) 2 tan&sup2; 45&deg; + cos&sup2; 30&deg; &minus; sin&sup2; 60&deg;:</b></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Substitute standard values: tan 45&deg; = 1, cos 30&deg; = <span class=\"frac\"><span class=\"num\">&radic;3</span><span class=\"den\">2</span></span>, sin 60&deg; = <span class=\"frac\"><span class=\"num\">&radic;3</span><span class=\"den\">2</span></span></div>\n          <div>&rArr; 2(1)&sup2; + (<span class=\"frac\"><span class=\"num\">&radic;3</span><span class=\"den\">2</span></span>)&sup2; &minus; (<span class=\"frac\"><span class=\"num\">&radic;3</span><span class=\"den\">2</span></span>)&sup2; = 2(1) + <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span> &minus; <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span> = <b>2</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Value: </span>\n          <span class=\"ans-val\">2</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- Sub-part (iii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #EA80FC;\">(iii) <span class=\"frac\"><span class=\"num\">cos 45&deg;</span><span class=\"den\">sec 30&deg; + cosec 30&deg;</span></span>:</b></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Substitute values: cos 45&deg; = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">&radic;2</span></span>, sec 30&deg; = <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">&radic;3</span></span>, cosec 30&deg; = 2</div>\n          <div>&rArr; <span class=\"frac\"><span class=\"num\">1/&radic;2</span><span class=\"den\">2/&radic;3 + 2</span></span> = <span class=\"frac\"><span class=\"num\">1/&radic;2</span><span class=\"den\">(2 + 2&radic;3)/&radic;3</span></span> = <span class=\"frac\"><span class=\"num\">&radic;3</span><span class=\"den\">&radic;2(2 + 2&radic;3)</span></span> = <span class=\"frac\"><span class=\"num\">&radic;3</span><span class=\"den\">2&radic;2(&radic;3 + 1)</span></span></div>\n          <div>Rationalizing with (&radic;3 &minus; 1):</div>\n          <div>&rArr; <span class=\"frac\"><span class=\"num\">&radic;3(&radic;3 &minus; 1)</span><span class=\"den\">2&radic;2(&radic;3 + 1)(&radic;3 &minus; 1)</span></span> = <span class=\"frac\"><span class=\"num\">3 &minus; &radic;3</span><span class=\"den\">2&radic;2(3 &minus; 1)</span></span> = <span class=\"frac\"><span class=\"num\">3 &minus; &radic;3</span><span class=\"den\">4&radic;2</span></span></div>\n          <div>Multiplying numerator and denominator by &radic;2:</div>\n          <div>&rArr; <span class=\"frac\"><span class=\"num\">(3 &minus; &radic;3)&radic;2</span><span class=\"den\">4 &times; 2</span></span> = <b><span class=\"frac\"><span class=\"num\">3&radic;2 &minus; &radic;6</span><span class=\"den\">8</span></span></b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Value: </span>\n          <span class=\"ans-val\"><span class=\"frac\"><span class=\"num\">3&radic;2 &minus; &radic;6</span><span class=\"den\">8</span></span></span>\n        </div>\n      </div>\n    </div>\n\n    <!-- Sub-part (iv) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #EA80FC;\">(iv) <span class=\"frac\"><span class=\"num\">sin 30&deg; + tan 45&deg; &minus; cosec 60&deg;</span><span class=\"den\">sec 30&deg; + cos 60&deg; + cot 45&deg;</span></span>:</b></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Substitute values: sin 30&deg; = 1/2, tan 45&deg; = 1, cosec 60&deg; = 2/&radic;3, sec 30&deg; = 2/&radic;3, cos 60&deg; = 1/2, cot 45&deg; = 1</div>\n          <div>&rArr; Numerator = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> + 1 &minus; <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">&radic;3</span></span> = <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">2</span></span> &minus; <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">&radic;3</span></span> = <span class=\"frac\"><span class=\"num\">3&radic;3 &minus; 4</span><span class=\"den\">2&radic;3</span></span></div>\n          <div>&rArr; Denominator = <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">&radic;3</span></span> + <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> + 1 = <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">&radic;3</span></span> + <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">2</span></span> = <span class=\"frac\"><span class=\"num\">4 + 3&radic;3</span><span class=\"den\">2&radic;3</span></span> = <span class=\"frac\"><span class=\"num\">3&radic;3 + 4</span><span class=\"den\">2&radic;3</span></span></div>\n          <div>&rArr; <span class=\"frac\"><span class=\"num\">3&radic;3 &minus; 4</span><span class=\"den\">3&radic;3 + 4</span></span></div>\n          <div>Rationalizing the denominator:</div>\n          <div>&rArr; <span class=\"frac\"><span class=\"num\">(3&radic;3 &minus; 4)(3&radic;3 &minus; 4)</span><span class=\"den\">(3&radic;3 + 4)(3&radic;3 &minus; 4)</span></span> = <span class=\"frac\"><span class=\"num\">(3&radic;3)&sup2; &minus; 2(3&radic;3)(4) + 4&sup2;</span><span class=\"den\">(3&radic;3)&sup2; &minus; 4&sup2;</span></span> = <span class=\"frac\"><span class=\"num\">27 &minus; 24&radic;3 + 16</span><span class=\"den\">27 &minus; 16</span></span> = <b><span class=\"frac\"><span class=\"num\">43 &minus; 24&radic;3</span><span class=\"den\">11</span></span></b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Value: </span>\n          <span class=\"ans-val\"><span class=\"frac\"><span class=\"num\">43 &minus; 24&radic;3</span><span class=\"den\">11</span></span></span>\n        </div>\n      </div>\n    </div>\n\n    <!-- Sub-part (v) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #EA80FC;\">(v) <span class=\"frac\"><span class=\"num\">5 cos&sup2; 60&deg; + 4 sec&sup2; 30&deg; &minus; tan&sup2; 45&deg;</span><span class=\"den\">sin&sup2; 30&deg; + cos&sup2; 30&deg;</span></span>:</b></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Denominator: sin&sup2; 30&deg; + cos&sup2; 30&deg; = 1 &nbsp; <span class=\"reason\">[By identity sin&sup2;&theta; + cos&sup2;&theta; = 1]</span></div>\n          <div>Numerator = 5(<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>)&sup2; + 4(<span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">&radic;3</span></span>)&sup2; &minus; (1)&sup2; = 5(<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span>) + 4(<span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">3</span></span>) &minus; 1 = <span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">4</span></span> + <span class=\"frac\"><span class=\"num\">16</span><span class=\"den\">3</span></span> &minus; 1</div>\n          <div>Taking LCM = 12:</div>\n          <div>&rArr; <span class=\"frac\"><span class=\"num\">15 + 64 &minus; 12</span><span class=\"den\">12</span></span> = <b><span class=\"frac\"><span class=\"num\">67</span><span class=\"den\">12</span></span></b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Value: </span>\n          <span class=\"ans-val\"><span class=\"frac\"><span class=\"num\">67</span><span class=\"den\">12</span></span></span>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 2 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 2</div>\n    <div class=\"q-text\">\n      Choose the correct option and justify your choice:\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 205\" width=\"300\" height=\"205\" style=\"background-color:white; border:1px solid #ddd;\"><polygon points=\"50,20 50,106 100,106\" stroke=\"black\" stroke-width=\"2\" fill=\"none\"/><polyline points=\"50,91 65,91 65,106\" stroke=\"black\" fill=\"none\"/><text x=\"35\" y=\"30\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">A</text><text x=\"35\" y=\"106\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">B</text><text x=\"115\" y=\"106\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">C</text><text x=\"30\" y=\"63.0\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">√3</text><text x=\"75.0\" y=\"126\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">1</text><text x=\"85.0\" y=\"53.0\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">2</text><path d=\"M 70 106 A 30 30 0 0 0 75 91\" stroke=\"red\" fill=\"none\"/><text x=\"60\" y=\"96\" font-family=\"Arial\" font-size=\"12\" fill=\"red\" text-anchor=\"middle\">30</text></svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Reference Triangle for Trigonometric Values</div>\n    </div>\n\n    <!-- Part (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #EA80FC;\">(i) <span class=\"frac\"><span class=\"num\">2 tan 30&deg;</span><span class=\"den\">1 + tan&sup2; 30&deg;</span></span> = </b></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Substitute tan 30&deg; = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">&radic;3</span></span>:</div>\n          <div>&rArr; <span class=\"frac\"><span class=\"num\">2(1/&radic;3)</span><span class=\"den\">1 + (1/&radic;3)&sup2;</span></span> = <span class=\"frac\"><span class=\"num\">2/&radic;3</span><span class=\"den\">1 + 1/3</span></span> = <span class=\"frac\"><span class=\"num\">2/&radic;3</span><span class=\"den\">4/3</span></span> = <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">&radic;3</span></span> &times; <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span> = <span class=\"frac\"><span class=\"num\">&radic;3</span><span class=\"den\">2</span></span> = <b>sin 60&deg;</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Correct Option: </span>\n          <span class=\"ans-val\">(A) sin 60&deg;</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- Part (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #EA80FC;\">(ii) <span class=\"frac\"><span class=\"num\">1 &minus; tan&sup2; 45&deg;</span><span class=\"den\">1 + tan&sup2; 45&deg;</span></span> = </b></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Substitute tan 45&deg; = 1:</div>\n          <div>&rArr; <span class=\"frac\"><span class=\"num\">1 &minus; 1&sup2;</span><span class=\"den\">1 + 1&sup2;</span></span> = <span class=\"frac\"><span class=\"num\">1 &minus; 1</span><span class=\"den\">1 + 1</span></span> = <span class=\"frac\"><span class=\"num\">0</span><span class=\"den\">2</span></span> = <b>0</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Correct Option: </span>\n          <span class=\"ans-val\">(D) 0</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- Part (iii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #EA80FC;\">(iii) sin 2A = 2 sin A is true when A = </b></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>For A = 0&deg;:</div>\n          <div>&rArr; LHS = sin (2 &times; 0&deg;) = sin 0&deg; = 0</div>\n          <div>&rArr; RHS = 2 sin 0&deg; = 2(0) = 0</div>\n          <div>Since LHS = RHS for A = 0&deg;, the statement is true when A = 0&deg;.</div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Correct Option: </span>\n          <span class=\"ans-val\">(A) 0&deg;</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- Part (iv) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #EA80FC;\">(iv) <span class=\"frac\"><span class=\"num\">2 tan 30&deg;</span><span class=\"den\">1 &minus; tan&sup2; 30&deg;</span></span> = </b></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Substitute tan 30&deg; = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">&radic;3</span></span>:</div>\n          <div>&rArr; <span class=\"frac\"><span class=\"num\">2(1/&radic;3)</span><span class=\"den\">1 &minus; (1/&radic;3)&sup2;</span></span> = <span class=\"frac\"><span class=\"num\">2/&radic;3</span><span class=\"den\">1 &minus; 1/3</span></span> = <span class=\"frac\"><span class=\"num\">2/&radic;3</span><span class=\"den\">2/3</span></span> = <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">&radic;3</span></span> &times; <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">2</span></span> = <b>&radic;3 = tan 60&deg;</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Correct Option: </span>\n          <span class=\"ans-val\">(C) tan 60&deg;</span>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 3 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 3</div>\n    <div class=\"q-text\">\n      If tan (A + B) = &radic;3 and tan (A &minus; B) = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">&radic;3</span></span>; 0&deg; &lt; A + B &le; 90&deg;; A &gt; B, find A and B.\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 205\" width=\"300\" height=\"205\" style=\"background-color:white; border:1px solid #ddd;\"><polygon points=\"50,20 50,140 120,140\" stroke=\"black\" stroke-width=\"2\" fill=\"none\"/><polyline points=\"50,125 65,125 65,140\" stroke=\"black\" fill=\"none\"/><text x=\"35\" y=\"30\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\"></text><text x=\"35\" y=\"140\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\"></text><text x=\"135\" y=\"140\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\"></text><text x=\"30\" y=\"80.0\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">Height</text><text x=\"85.0\" y=\"160\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">Base</text><path d=\"M 90 140 A 30 30 0 0 0 95 125\" stroke=\"red\" fill=\"none\"/><text x=\"80\" y=\"130\" font-family=\"Arial\" font-size=\"12\" fill=\"red\" text-anchor=\"middle\">60°</text><text x=\"150\" y=\"10\" font-family=\"Arial\" font-size=\"12\" fill=\"black\" text-anchor=\"middle\">A+B=60°</text></svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Reference Triangle with A + B = 60&deg;</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>Given: tan (A + B) = &radic;3</div>\n        <div>Since tan 60&deg; = &radic;3:</div>\n        <div>&rArr; <b>A + B = 60&deg;</b> &nbsp; &hellip; (1)</div>\n        <div style=\"margin-top: 6px;\">Given: tan (A &minus; B) = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">&radic;3</span></span></div>\n        <div>Since tan 30&deg; = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">&radic;3</span></span>:</div>\n        <div>&rArr; <b>A &minus; B = 30&deg;</b> &nbsp; &hellip; (2)</div>\n        <div style=\"margin-top: 8px;\">Adding equations (1) and (2):</div>\n        <div>&rArr; (A + B) + (A &minus; B) = 60&deg; + 30&deg;</div>\n        <div>&rArr; 2A = 90&deg; &rArr; <b>A = 45&deg;</b></div>\n        <div style=\"margin-top: 6px;\">Substituting A = 45&deg; into equation (1):</div>\n        <div>&rArr; 45&deg; + B = 60&deg; &rArr; <b>B = 15&deg;</b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Solutions: </span>\n        <span class=\"ans-val\">A = 45&deg;, B = 15&deg;</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 4 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 4</div>\n    <div class=\"q-text\">\n      State whether the following are true or false. Justify your answer.\n    </div>\n\n    <!-- Part (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #EA80FC;\">(i) sin (A + B) = sin A + sin B.</b></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; <b>False.</b></div>\n          <div>Let A = 30&deg; and B = 60&deg;.</div>\n          <div>&rArr; LHS = sin (30&deg; + 60&deg;) = sin 90&deg; = <b>1</b></div>\n          <div>&rArr; RHS = sin 30&deg; + sin 60&deg; = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> + <span class=\"frac\"><span class=\"num\">&radic;3</span><span class=\"den\">2</span></span> = <b><span class=\"frac\"><span class=\"num\">1 + &radic;3</span><span class=\"den\">2</span></span></b></div>\n          <div>Since 1 &ne; <span class=\"frac\"><span class=\"num\">1 + &radic;3</span><span class=\"den\">2</span></span>, LHS &ne; RHS.</div>\n        </div>\n      </div>\n    </div>\n\n    <!-- Part (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #EA80FC;\">(ii) The value of sin &theta; increases as &theta; increases.</b></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; <b>True.</b></div>\n          <div>For 0&deg; &le; &theta; &le; 90&deg;:</div>\n          <div>sin 0&deg; = 0, sin 30&deg; = 0.5, sin 45&deg; = 0.707, sin 60&deg; = 0.866, sin 90&deg; = 1.</div>\n          <div>The value of sin &theta; steadily increases from 0 to 1.</div>\n        </div>\n      </div>\n    </div>\n\n    <!-- Part (iii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #EA80FC;\">(iii) The value of cos &theta; increases as &theta; increases.</b></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; <b>False.</b></div>\n          <div>For 0&deg; &le; &theta; &le; 90&deg;:</div>\n          <div>cos 0&deg; = 1, cos 30&deg; = 0.866, cos 45&deg; = 0.707, cos 60&deg; = 0.5, cos 90&deg; = 0.</div>\n          <div>The value of cos &theta; decreases from 1 to 0.</div>\n        </div>\n      </div>\n    </div>\n\n    <!-- Part (iv) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #EA80FC;\">(iv) sin &theta; = cos &theta; for all values of &theta;.</b></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; <b>False.</b></div>\n          <div>sin &theta; = cos &theta; is strictly true only for &theta; = 45&deg; (where both equal 1/&radic;2). For any other angle, like &theta; = 30&deg;, sin 30&deg; = 1/2 while cos 30&deg; = &radic;3/2 &ne; 1/2.</div>\n        </div>\n      </div>\n    </div>\n\n    <!-- Part (v) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #EA80FC;\">(v) cot A is not defined for A = 0&deg;.</b></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>&rArr; <b>True.</b></div>\n          <div>cot A = <span class=\"frac\"><span class=\"num\">cos A</span><span class=\"den\">sin A</span></span>. At A = 0&deg;, cot 0&deg; = <span class=\"frac\"><span class=\"num\">cos 0&deg;</span><span class=\"den\">sin 0&deg;</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">0</span></span>, which is division by zero, hence not defined.</div>\n        </div>\n      </div>\n    </div>\n  </div>\n\n</div>\n",
+    exercise3: "\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; }\n  .frac .den { padding: 1px 4px; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(224, 64, 251, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #E040FB; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 14px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(224, 64, 251, 0.25); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #E040FB; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #EA80FC; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(224, 64, 251, 0.15); border: 1px solid #E040FB; color: #EA80FC; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 6px 0; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(224, 64, 251, 0.4); border-radius: 10px; padding: 14px; margin: 16px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #FFFFFF; border-radius: 8px; padding: 10px 8px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.25); }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 10px; font-weight: 500; }\n  .table-card { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 14px 0; border-radius: 8px; }\n  .table-card table { width: 100%; border-collapse: collapse; text-align: center; }\n  .table-card th { background: rgba(224, 64, 251, 0.25); color: #EA80FC; border: 1px solid rgba(224, 64, 251, 0.4); padding: 10px; font-weight: 700; }\n  .table-card td { border: 1px solid rgba(224, 64, 251, 0.25); padding: 9px; color: #E2E8F0; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Question 1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 1</div>\n    <div class=\"q-text\">\n      Express the trigonometric ratios sin A, sec A and tan A in terms of cot A.\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 205\" width=\"300\" height=\"205\" style=\"background-color:white; border:1px solid #ddd;\"><polygon points=\"50,20 50,80 150,80\" stroke=\"black\" stroke-width=\"2\" fill=\"none\"/><polyline points=\"50,65 65,65 65,80\" stroke=\"black\" fill=\"none\"/><text x=\"35\" y=\"30\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">C</text><text x=\"35\" y=\"80\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">B</text><text x=\"165\" y=\"80\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">A</text><text x=\"30\" y=\"50.0\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">1</text><text x=\"100.0\" y=\"100\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">cot A</text><text x=\"110.0\" y=\"40.0\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">√(1+cot²A)</text><path d=\"M 120 80 A 30 30 0 0 0 125 65\" stroke=\"red\" fill=\"none\"/><text x=\"110\" y=\"70\" font-family=\"Arial\" font-size=\"12\" fill=\"red\" text-anchor=\"middle\">A</text></svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Right Triangle ABC expressed in terms of cot A</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div><b style=\"color: #EA80FC;\">1. Expressing sin A:</b></div>\n        <div>Using identity: cosec&sup2; A = 1 + cot&sup2; A</div>\n        <div>&rArr; cosec A = &radic;<span style=\"border-top: 1px solid currentColor;\">1 + cot&sup2; A</span></div>\n        <div>Since sin A = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">cosec A</span></span>:</div>\n        <div>&rArr; <b>sin A = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">&radic;<span style=\"border-top: 1px solid currentColor;\">1 + cot&sup2; A</span></span></span></b></div>\n        <div style=\"margin-top: 8px;\"><b style=\"color: #EA80FC;\">2. Expressing tan A:</b></div>\n        <div>&rArr; <b>tan A = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">cot A</span></span></b></div>\n        <div style=\"margin-top: 8px;\"><b style=\"color: #EA80FC;\">3. Expressing sec A:</b></div>\n        <div>Using identity: sec&sup2; A = 1 + tan&sup2; A</div>\n        <div>&rArr; sec&sup2; A = 1 + (<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">cot A</span></span>)&sup2; = 1 + <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">cot&sup2; A</span></span> = <span class=\"frac\"><span class=\"num\">cot&sup2; A + 1</span><span class=\"den\">cot&sup2; A</span></span></div>\n        <div>Taking square root:</div>\n        <div>&rArr; <b>sec A = <span class=\"frac\"><span class=\"num\">&radic;<span style=\"border-top: 1px solid currentColor;\">1 + cot&sup2; A</span></span><span class=\"den\">cot A</span></span></b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ In terms of cot A: </span>\n        <span class=\"ans-val\">sin A = 1/&radic;(1+cot&sup2;A) &bull; tan A = 1/cot A &bull; sec A = &radic;(1+cot&sup2;A)/cot A</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 2 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 2</div>\n    <div class=\"q-text\">\n      Write all the other trigonometric ratios of &ang;A in terms of sec A.\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 205\" width=\"300\" height=\"205\" style=\"background-color:white; border:1px solid #ddd;\"><polygon points=\"50,20 50,100 130,100\" stroke=\"black\" stroke-width=\"2\" fill=\"none\"/><polyline points=\"50,85 65,85 65,100\" stroke=\"black\" fill=\"none\"/><text x=\"35\" y=\"30\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">C</text><text x=\"35\" y=\"100\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">B</text><text x=\"145\" y=\"100\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">A</text><text x=\"30\" y=\"60.0\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">√(sec²A-1)</text><text x=\"90.0\" y=\"120\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">1</text><text x=\"100.0\" y=\"50.0\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">sec A</text><path d=\"M 100 100 A 30 30 0 0 0 105 85\" stroke=\"red\" fill=\"none\"/><text x=\"90\" y=\"90\" font-family=\"Arial\" font-size=\"12\" fill=\"red\" text-anchor=\"middle\">A</text></svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Right Triangle ABC expressed in terms of sec A</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">Solution</div>\n      <div class=\"sol-step\">\n        <div>&bull; <b>cos A</b> = <b><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">sec A</span></span></b></div>\n        <div style=\"margin-top: 6px;\">&bull; <b>sin A</b>: Using sin&sup2; A = 1 &minus; cos&sup2; A = 1 &minus; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">sec&sup2; A</span></span> = <span class=\"frac\"><span class=\"num\">sec&sup2; A &minus; 1</span><span class=\"den\">sec&sup2; A</span></span></div>\n        <div>&rArr; <b>sin A = <span class=\"frac\"><span class=\"num\">&radic;<span style=\"border-top: 1px solid currentColor;\">sec&sup2; A &minus; 1</span></span><span class=\"den\">sec A</span></span></b></div>\n        <div style=\"margin-top: 6px;\">&bull; <b>tan A</b>: Using tan&sup2; A = sec&sup2; A &minus; 1</div>\n        <div>&rArr; <b>tan A = &radic;<span style=\"border-top: 1px solid currentColor;\">sec&sup2; A &minus; 1</span></b></div>\n        <div style=\"margin-top: 6px;\">&bull; <b>cosec A</b>: cosec A = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">sin A</span></span></div>\n        <div>&rArr; <b>cosec A = <span class=\"frac\"><span class=\"num\">sec A</span><span class=\"den\">&radic;<span style=\"border-top: 1px solid currentColor;\">sec&sup2; A &minus; 1</span></span></span></b></div>\n        <div style=\"margin-top: 6px;\">&bull; <b>cot A</b>: cot A = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">tan A</span></span></div>\n        <div>&rArr; <b>cot A = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">&radic;<span style=\"border-top: 1px solid currentColor;\">sec&sup2; A &minus; 1</span></span></span></b></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ In terms of sec A: </span>\n        <span class=\"ans-val\">cos A = 1/sec A &bull; sin A = &radic;(sec&sup2;A&minus;1)/sec A &bull; tan A = &radic;(sec&sup2;A&minus;1)</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 3 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 3</div>\n    <div class=\"q-text\">\n      Choose the correct option. Justify your choice:\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 205\" width=\"300\" height=\"205\" style=\"background-color:white; border:1px solid #ddd;\"><polygon points=\"50,20 50,120 150,120\" stroke=\"black\" stroke-width=\"2\" fill=\"none\"/><polyline points=\"50,105 65,105 65,120\" stroke=\"black\" fill=\"none\"/><text x=\"35\" y=\"30\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\"></text><text x=\"35\" y=\"120\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\"></text><text x=\"165\" y=\"120\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\"></text><text x=\"30\" y=\"70.0\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">1</text><text x=\"100.0\" y=\"140\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">1</text><text x=\"110.0\" y=\"60.0\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">√2</text></svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Reference Geometric Triangle for Identities</div>\n    </div>\n\n    <!-- Part (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #EA80FC;\">(i) 9 sec&sup2; A &minus; 9 tan&sup2; A = </b></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Factoring out 9:</div>\n          <div>&rArr; 9 (sec&sup2; A &minus; tan&sup2; A)</div>\n          <div>Using standard identity sec&sup2; A &minus; tan&sup2; A = 1:</div>\n          <div>&rArr; 9 &times; 1 = <b>9</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Correct Option: </span>\n          <span class=\"ans-val\">(B) 9</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- Part (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #EA80FC;\">(ii) (1 + tan &theta; + sec &theta;)(1 + cot &theta; &minus; cosec &theta;) = </b></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Convert everything to sin &theta; and cos &theta;:</div>\n          <div>&rArr; (1 + <span class=\"frac\"><span class=\"num\">sin &theta;</span><span class=\"den\">cos &theta;</span></span> + <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">cos &theta;</span></span>) (1 + <span class=\"frac\"><span class=\"num\">cos &theta;</span><span class=\"den\">sin &theta;</span></span> &minus; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">sin &theta;</span></span>)</div>\n          <div>&rArr; (<span class=\"frac\"><span class=\"num\">cos &theta; + sin &theta; + 1</span><span class=\"den\">cos &theta;</span></span>) (<span class=\"frac\"><span class=\"num\">sin &theta; + cos &theta; &minus; 1</span><span class=\"den\">sin &theta;</span></span>)</div>\n          <div>Let (sin &theta; + cos &theta;) = <i>a</i>. Then the numerator is (a + 1)(a &minus; 1) = a&sup2; &minus; 1:</div>\n          <div>&rArr; Numerator = (sin &theta; + cos &theta;)&sup2; &minus; 1&sup2; = sin&sup2; &theta; + cos&sup2; &theta; + 2 sin &theta; cos &theta; &minus; 1</div>\n          <div>Since sin&sup2; &theta; + cos&sup2; &theta; = 1:</div>\n          <div>&rArr; Numerator = 1 + 2 sin &theta; cos &theta; &minus; 1 = 2 sin &theta; cos &theta;</div>\n          <div>&rArr; Expression = <span class=\"frac\"><span class=\"num\">2 sin &theta; cos &theta;</span><span class=\"den\">cos &theta; sin &theta;</span></span> = <b>2</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Correct Option: </span>\n          <span class=\"ans-val\">(C) 2</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- Part (iii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #EA80FC;\">(iii) (sec A + tan A)(1 &minus; sin A) = </b></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Express in terms of sin A and cos A:</div>\n          <div>&rArr; (<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">cos A</span></span> + <span class=\"frac\"><span class=\"num\">sin A</span><span class=\"den\">cos A</span></span>) (1 &minus; sin A) = (<span class=\"frac\"><span class=\"num\">1 + sin A</span><span class=\"den\">cos A</span></span>) (1 &minus; sin A)</div>\n          <div>&rArr; <span class=\"frac\"><span class=\"num\">(1 + sin A)(1 &minus; sin A)</span><span class=\"den\">cos A</span></span> = <span class=\"frac\"><span class=\"num\">1 &minus; sin&sup2; A</span><span class=\"den\">cos A</span></span> = <span class=\"frac\"><span class=\"num\">cos&sup2; A</span><span class=\"den\">cos A</span></span> = <b>cos A</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Correct Option: </span>\n          <span class=\"ans-val\">(D) cos A</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- Part (iv) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #EA80FC;\">(iv) <span class=\"frac\"><span class=\"num\">1 + tan&sup2; A</span><span class=\"den\">1 + cot&sup2; A</span></span> = </b></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Using standard identities: 1 + tan&sup2; A = sec&sup2; A and 1 + cot&sup2; A = cosec&sup2; A:</div>\n          <div>&rArr; <span class=\"frac\"><span class=\"num\">sec&sup2; A</span><span class=\"den\">cosec&sup2; A</span></span> = <span class=\"frac\"><span class=\"num\">1/cos&sup2; A</span><span class=\"den\">1/sin&sup2; A</span></span> = <span class=\"frac\"><span class=\"num\">sin&sup2; A</span><span class=\"den\">cos&sup2; A</span></span> = <b>tan&sup2; A</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Correct Option: </span>\n          <span class=\"ans-val\">(D) tan&sup2; A</span>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <!-- Question 4 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 4</div>\n    <div class=\"q-text\">\n      Prove the following identities, where the angles involved are acute angles for which the expressions are defined:\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 205\" width=\"300\" height=\"205\" style=\"background-color:white; border:1px solid #ddd;\"><polygon points=\"50,20 50,120 130,120\" stroke=\"black\" stroke-width=\"2\" fill=\"none\"/><polyline points=\"50,105 65,105 65,120\" stroke=\"black\" fill=\"none\"/><text x=\"35\" y=\"30\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">P</text><text x=\"35\" y=\"120\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">M</text><text x=\"145\" y=\"120\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">O</text><text x=\"30\" y=\"70.0\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">y</text><text x=\"90.0\" y=\"140\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">x</text><text x=\"100.0\" y=\"60.0\" font-family=\"Arial\" font-size=\"14\" fill=\"black\" text-anchor=\"middle\">r</text><path d=\"M 100 120 A 30 30 0 0 0 105 105\" stroke=\"red\" fill=\"none\"/><text x=\"90\" y=\"110\" font-family=\"Arial\" font-size=\"12\" fill=\"red\" text-anchor=\"middle\">θ</text></svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Geometric Basis of Trigonometric Identities</div>\n    </div>\n\n    <!-- Identity (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #EA80FC;\">(i) (cosec &theta; &minus; cot &theta;)&sup2; = <span class=\"frac\"><span class=\"num\">1 &minus; cos &theta;</span><span class=\"den\">1 + cos &theta;</span></span></b></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div><b style=\"color: #EA80FC;\">LHS</b> = (cosec &theta; &minus; cot &theta;)&sup2; = (<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">sin &theta;</span></span> &minus; <span class=\"frac\"><span class=\"num\">cos &theta;</span><span class=\"den\">sin &theta;</span></span>)&sup2; = (<span class=\"frac\"><span class=\"num\">1 &minus; cos &theta;</span><span class=\"den\">sin &theta;</span></span>)&sup2;</div>\n          <div>&rArr; LHS = <span class=\"frac\"><span class=\"num\">(1 &minus; cos &theta;)&sup2;</span><span class=\"den\">sin&sup2; &theta;</span></span></div>\n          <div>Using sin&sup2; &theta; = 1 &minus; cos&sup2; &theta; = (1 &minus; cos &theta;)(1 + cos &theta;):</div>\n          <div>&rArr; LHS = <span class=\"frac\"><span class=\"num\">(1 &minus; cos &theta;)&sup2;</span><span class=\"den\">(1 &minus; cos &theta;)(1 + cos &theta;)</span></span> = <b><span class=\"frac\"><span class=\"num\">1 &minus; cos &theta;</span><span class=\"den\">1 + cos &theta;</span></span> = RHS</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Result: </span>\n          <span class=\"ans-val\">Hence Proved.</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- Identity (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #EA80FC;\">(ii) <span class=\"frac\"><span class=\"num\">cos A</span><span class=\"den\">1 + sin A</span></span> + <span class=\"frac\"><span class=\"num\">1 + sin A</span><span class=\"den\">cos A</span></span> = 2 sec A</b></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div><b style=\"color: #EA80FC;\">LHS</b> = <span class=\"frac\"><span class=\"num\">cos A</span><span class=\"den\">1 + sin A</span></span> + <span class=\"frac\"><span class=\"num\">1 + sin A</span><span class=\"den\">cos A</span></span></div>\n          <div>Taking LCM = (1 + sin A) cos A:</div>\n          <div>&rArr; LHS = <span class=\"frac\"><span class=\"num\">cos&sup2; A + (1 + sin A)&sup2;</span><span class=\"den\">(1 + sin A) cos A</span></span> = <span class=\"frac\"><span class=\"num\">cos&sup2; A + 1 + 2 sin A + sin&sup2; A</span><span class=\"den\">(1 + sin A) cos A</span></span></div>\n          <div>Using cos&sup2; A + sin&sup2; A = 1:</div>\n          <div>&rArr; LHS = <span class=\"frac\"><span class=\"num\">(cos&sup2; A + sin&sup2; A) + 1 + 2 sin A</span><span class=\"den\">(1 + sin A) cos A</span></span> = <span class=\"frac\"><span class=\"num\">1 + 1 + 2 sin A</span><span class=\"den\">(1 + sin A) cos A</span></span> = <span class=\"frac\"><span class=\"num\">2 + 2 sin A</span><span class=\"den\">(1 + sin A) cos A</span></span></div>\n          <div>&rArr; LHS = <span class=\"frac\"><span class=\"num\">2(1 + sin A)</span><span class=\"den\">(1 + sin A) cos A</span></span> = <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">cos A</span></span> = <b>2 sec A = RHS</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Result: </span>\n          <span class=\"ans-val\">Hence Proved.</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- Identity (iii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #EA80FC;\">(iii) <span class=\"frac\"><span class=\"num\">tan &theta;</span><span class=\"den\">1 &minus; cot &theta;</span></span> + <span class=\"frac\"><span class=\"num\">cot &theta;</span><span class=\"den\">1 &minus; tan &theta;</span></span> = 1 + sec &theta; cosec &theta;</b></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Convert to sin &theta; and cos &theta;:</div>\n          <div>&rArr; <span class=\"frac\"><span class=\"num\">sin &theta; / cos &theta;</span><span class=\"den\">1 &minus; cos &theta; / sin &theta;</span></span> + <span class=\"frac\"><span class=\"num\">cos &theta; / sin &theta;</span><span class=\"den\">1 &minus; sin &theta; / cos &theta;</span></span> = <span class=\"frac\"><span class=\"num\">sin &theta; / cos &theta;</span><span class=\"den\">(sin &theta; &minus; cos &theta;)/sin &theta;</span></span> + <span class=\"frac\"><span class=\"num\">cos &theta; / sin &theta;</span><span class=\"den\">(cos &theta; &minus; sin &theta;)/cos &theta;</span></span></div>\n          <div>&rArr; <span class=\"frac\"><span class=\"num\">sin&sup2; &theta;</span><span class=\"den\">cos &theta;(sin &theta; &minus; cos &theta;)</span></span> &minus; <span class=\"frac\"><span class=\"num\">cos&sup2; &theta;</span><span class=\"den\">sin &theta;(sin &theta; &minus; cos &theta;)</span></span></div>\n          <div>Taking common denominator sin &theta; cos &theta; (sin &theta; &minus; cos &theta;):</div>\n          <div>&rArr; <span class=\"frac\"><span class=\"num\">sin&sup3; &theta; &minus; cos&sup3; &theta;</span><span class=\"den\">sin &theta; cos &theta;(sin &theta; &minus; cos &theta;)</span></span></div>\n          <div>Using identity a&sup3; &minus; b&sup3; = (a &minus; b)(a&sup2; + ab + b&sup2;):</div>\n          <div>&rArr; <span class=\"frac\"><span class=\"num\">(sin &theta; &minus; cos &theta;)(sin&sup2; &theta; + sin &theta; cos &theta; + cos&sup2; &theta;)</span><span class=\"den\">sin &theta; cos &theta;(sin &theta; &minus; cos &theta;)</span></span> = <span class=\"frac\"><span class=\"num\">1 + sin &theta; cos &theta;</span><span class=\"den\">sin &theta; cos &theta;</span></span></div>\n          <div>&rArr; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">sin &theta; cos &theta;</span></span> + <span class=\"frac\"><span class=\"num\">sin &theta; cos &theta;</span><span class=\"den\">sin &theta; cos &theta;</span></span> = <b>cosec &theta; sec &theta; + 1 = 1 + sec &theta; cosec &theta; = RHS</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Result: </span>\n          <span class=\"ans-val\">Hence Proved.</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- Identity (iv) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #EA80FC;\">(iv) <span class=\"frac\"><span class=\"num\">1 + sec A</span><span class=\"den\">sec A</span></span> = <span class=\"frac\"><span class=\"num\">sin&sup2; A</span><span class=\"den\">1 &minus; cos A</span></span></b></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div><b style=\"color: #EA80FC;\">LHS</b> = <span class=\"frac\"><span class=\"num\">1 + sec A</span><span class=\"den\">sec A</span></span> = <span class=\"frac\"><span class=\"num\">1 + 1/cos A</span><span class=\"den\">1/cos A</span></span> = <span class=\"frac\"><span class=\"num\">(cos A + 1)/cos A</span><span class=\"den\">1/cos A</span></span> = <b>1 + cos A</b></div>\n          <div style=\"margin-top: 6px;\"><b style=\"color: #EA80FC;\">RHS</b> = <span class=\"frac\"><span class=\"num\">sin&sup2; A</span><span class=\"den\">1 &minus; cos A</span></span> = <span class=\"frac\"><span class=\"num\">1 &minus; cos&sup2; A</span><span class=\"den\">1 &minus; cos A</span></span> = <span class=\"frac\"><span class=\"num\">(1 &minus; cos A)(1 + cos A)</span><span class=\"den\">1 &minus; cos A</span></span> = <b>1 + cos A</b></div>\n          <div style=\"margin-top: 8px;\">Since <b>LHS = RHS = 1 + cos A</b>, the identity is proved.</div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Result: </span>\n          <span class=\"ans-val\">Hence Proved.</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- Identity (v) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #EA80FC;\">(v) <span class=\"frac\"><span class=\"num\">cos A &minus; sin A + 1</span><span class=\"den\">cos A + sin A &minus; 1</span></span> = cosec A + cot A, using cosec&sup2; A = 1 + cot&sup2; A</b></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Divide numerator and denominator by sin A:</div>\n          <div>&rArr; LHS = <span class=\"frac\"><span class=\"num\">cos A / sin A &minus; 1 + 1 / sin A</span><span class=\"den\">cos A / sin A + 1 &minus; 1 / sin A</span></span> = <span class=\"frac\"><span class=\"num\">cot A &minus; 1 + cosec A</span><span class=\"den\">cot A + 1 &minus; cosec A</span></span> = <span class=\"frac\"><span class=\"num\">(cosec A + cot A) &minus; 1</span><span class=\"den\">(cot A &minus; cosec A) + 1</span></span></div>\n          <div>Substitute 1 = cosec&sup2; A &minus; cot&sup2; A in the numerator:</div>\n          <div>&rArr; LHS = <span class=\"frac\"><span class=\"num\">(cosec A + cot A) &minus; (cosec&sup2; A &minus; cot&sup2; A)</span><span class=\"den\">cot A &minus; cosec A + 1</span></span></div>\n          <div>&rArr; LHS = <span class=\"frac\"><span class=\"num\">(cosec A + cot A) &minus; (cosec A &minus; cot A)(cosec A + cot A)</span><span class=\"den\">cot A &minus; cosec A + 1</span></span></div>\n          <div>Factoring out (cosec A + cot A):</div>\n          <div>&rArr; LHS = <span class=\"frac\"><span class=\"num\">(cosec A + cot A)[1 &minus; (cosec A &minus; cot A)]</span><span class=\"den\">cot A &minus; cosec A + 1</span></span> = <span class=\"frac\"><span class=\"num\">(cosec A + cot A)(1 &minus; cosec A + cot A)</span><span class=\"den\">cot A &minus; cosec A + 1</span></span></div>\n          <div>Cancelling the common factor (cot A &minus; cosec A + 1):</div>\n          <div>&rArr; LHS = <b>cosec A + cot A = RHS</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Result: </span>\n          <span class=\"ans-val\">Hence Proved.</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- Identity (vi) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #EA80FC;\">(vi) &radic;<span style=\"border-top: 1px solid currentColor;\"><span class=\"frac\"><span class=\"num\">1 + sin A</span><span class=\"den\">1 &minus; sin A</span></span></span> = sec A + tan A</b></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div><b style=\"color: #EA80FC;\">LHS</b> = &radic;<span style=\"border-top: 1px solid currentColor;\"><span class=\"frac\"><span class=\"num\">1 + sin A</span><span class=\"den\">1 &minus; sin A</span></span></span></div>\n          <div>Multiply numerator and denominator inside the root by (1 + sin A):</div>\n          <div>&rArr; LHS = &radic;<span style=\"border-top: 1px solid currentColor;\"><span class=\"frac\"><span class=\"num\">(1 + sin A)(1 + sin A)</span><span class=\"den\">(1 &minus; sin A)(1 + sin A)</span></span></span> = &radic;<span style=\"border-top: 1px solid currentColor;\"><span class=\"frac\"><span class=\"num\">(1 + sin A)&sup2;</span><span class=\"den\">1 &minus; sin&sup2; A</span></span></span> = &radic;<span style=\"border-top: 1px solid currentColor;\"><span class=\"frac\"><span class=\"num\">(1 + sin A)&sup2;</span><span class=\"den\">cos&sup2; A</span></span></span></div>\n          <div>Taking square root:</div>\n          <div>&rArr; LHS = <span class=\"frac\"><span class=\"num\">1 + sin A</span><span class=\"den\">cos A</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">cos A</span></span> + <span class=\"frac\"><span class=\"num\">sin A</span><span class=\"den\">cos A</span></span> = <b>sec A + tan A = RHS</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Result: </span>\n          <span class=\"ans-val\">Hence Proved.</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- Identity (vii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #EA80FC;\">(vii) <span class=\"frac\"><span class=\"num\">sin &theta; &minus; 2 sin&sup3; &theta;</span><span class=\"den\">2 cos&sup3; &theta; &minus; cos &theta;</span></span> = tan &theta;</b></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div><b style=\"color: #EA80FC;\">LHS</b> = <span class=\"frac\"><span class=\"num\">sin &theta;(1 &minus; 2 sin&sup2; &theta;)</span><span class=\"den\">cos &theta;(2 cos&sup2; &theta; &minus; 1)</span></span></div>\n          <div>Substitute sin&sup2; &theta; = 1 &minus; cos&sup2; &theta; in numerator:</div>\n          <div>&rArr; 1 &minus; 2 sin&sup2; &theta; = 1 &minus; 2(1 &minus; cos&sup2; &theta;) = 1 &minus; 2 + 2 cos&sup2; &theta; = 2 cos&sup2; &theta; &minus; 1</div>\n          <div>&rArr; LHS = (<span class=\"frac\"><span class=\"num\">sin &theta;</span><span class=\"den\">cos &theta;</span></span>) (<span class=\"frac\"><span class=\"num\">2 cos&sup2; &theta; &minus; 1</span><span class=\"den\">2 cos&sup2; &theta; &minus; 1</span></span>) = tan &theta; &times; 1 = <b>tan &theta; = RHS</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Result: </span>\n          <span class=\"ans-val\">Hence Proved.</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- Identity (viii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #EA80FC;\">(viii) (sin A + cosec A)&sup2; + (cos A + sec A)&sup2; = 7 + tan&sup2; A + cot&sup2; A</b></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div><b style=\"color: #EA80FC;\">LHS</b> = (sin A + cosec A)&sup2; + (cos A + sec A)&sup2;</div>\n          <div>Expanding using (a + b)&sup2; = a&sup2; + 2ab + b&sup2;:</div>\n          <div>&rArr; LHS = (sin&sup2; A + 2 sin A cosec A + cosec&sup2; A) + (cos&sup2; A + 2 cos A sec A + sec&sup2; A)</div>\n          <div>Substitute sin A cosec A = 1 and cos A sec A = 1:</div>\n          <div>&rArr; LHS = (sin&sup2; A + cos&sup2; A) + 2(1) + 2(1) + cosec&sup2; A + sec&sup2; A</div>\n          <div>Since sin&sup2; A + cos&sup2; A = 1:</div>\n          <div>&rArr; LHS = 1 + 2 + 2 + cosec&sup2; A + sec&sup2; A = 5 + cosec&sup2; A + sec&sup2; A</div>\n          <div>Using standard identities: cosec&sup2; A = 1 + cot&sup2; A and sec&sup2; A = 1 + tan&sup2; A:</div>\n          <div>&rArr; LHS = 5 + (1 + cot&sup2; A) + (1 + tan&sup2; A) = <b>7 + tan&sup2; A + cot&sup2; A = RHS</b></div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Result: </span>\n          <span class=\"ans-val\">Hence Proved.</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- Identity (ix) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #EA80FC;\">(ix) (cosec A &minus; sin A)(sec A &minus; cos A) = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">tan A + cot A</span></span></b></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div><b style=\"color: #EA80FC;\">LHS</b> = (<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">sin A</span></span> &minus; sin A) (<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">cos A</span></span> &minus; cos A) = (<span class=\"frac\"><span class=\"num\">1 &minus; sin&sup2; A</span><span class=\"den\">sin A</span></span>) (<span class=\"frac\"><span class=\"num\">1 &minus; cos&sup2; A</span><span class=\"den\">cos A</span></span>)</div>\n          <div>&rArr; LHS = (<span class=\"frac\"><span class=\"num\">cos&sup2; A</span><span class=\"den\">sin A</span></span>) (<span class=\"frac\"><span class=\"num\">sin&sup2; A</span><span class=\"den\">cos A</span></span>) = <b>sin A cos A</b></div>\n          <div style=\"margin-top: 8px;\"><b style=\"color: #EA80FC;\">RHS</b> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">tan A + cot A</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">sin A / cos A + cos A / sin A</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">(sin&sup2; A + cos&sup2; A)/(sin A cos A)</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">1 / (sin A cos A)</span></span> = <b>sin A cos A</b></div>\n          <div style=\"margin-top: 8px;\">Since <b>LHS = RHS = sin A cos A</b>, the identity is proved.</div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Result: </span>\n          <span class=\"ans-val\">Hence Proved.</span>\n        </div>\n      </div>\n    </div>\n\n    <!-- Identity (x) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #EA80FC;\">(x) (<span class=\"frac\"><span class=\"num\">1 + tan&sup2; A</span><span class=\"den\">1 + cot&sup2; A</span></span>) = (<span class=\"frac\"><span class=\"num\">1 &minus; tan A</span><span class=\"den\">1 &minus; cot A</span></span>)&sup2; = tan&sup2; A</b></div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div><b style=\"color: #EA80FC;\">Part 1:</b> <span class=\"frac\"><span class=\"num\">1 + tan&sup2; A</span><span class=\"den\">1 + cot&sup2; A</span></span> = <span class=\"frac\"><span class=\"num\">sec&sup2; A</span><span class=\"den\">cosec&sup2; A</span></span> = <span class=\"frac\"><span class=\"num\">1/cos&sup2; A</span><span class=\"den\">1/sin&sup2; A</span></span> = <span class=\"frac\"><span class=\"num\">sin&sup2; A</span><span class=\"den\">cos&sup2; A</span></span> = <b>tan&sup2; A</b></div>\n          <div style=\"margin-top: 8px;\"><b style=\"color: #EA80FC;\">Part 2:</b> (<span class=\"frac\"><span class=\"num\">1 &minus; tan A</span><span class=\"den\">1 &minus; cot A</span></span>)&sup2; = (<span class=\"frac\"><span class=\"num\">1 &minus; tan A</span><span class=\"den\">1 &minus; 1/tan A</span></span>)&sup2; = (<span class=\"frac\"><span class=\"num\">1 &minus; tan A</span><span class=\"den\">(tan A &minus; 1)/tan A</span></span>)&sup2;</div>\n          <div>&rArr; (&minus;tan A)&sup2; = <b>tan&sup2; A</b></div>\n          <div style=\"margin-top: 8px;\">Therefore, both expressions are equal to <b>tan&sup2; A</b>.</div>\n        </div>\n        <div class=\"ans-box\">\n          <span class=\"ans-label\">✓ Result: </span>\n          <span class=\"ans-val\">Hence Proved.</span>\n        </div>\n      </div>\n    </div>\n  </div>\n\n</div>\n"
+  }
 };

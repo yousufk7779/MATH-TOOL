@@ -1,844 +1,403 @@
-import { ChapterContent } from "../chapterContent";
+import { ChapterContent } from "../types";
 
 export const mathCh11: ChapterContent = {
-    id: "ch11",
-    number: 11,
-    title: "Areas Related to Circles",
-    introduction: "In this chapter, we explore the measurement of planar figures related to circles, including sectors and segments, using algebraic and geometric principles.",
-    definitions: [
-        { term: "Sector", description: "The region between two radii and the corresponding arc of a circle." },
-        { term: "Segment", description: "The region between a chord and the corresponding arc of a circle." },
-        { term: "Arc", description: "A part of the circumference of a circle." }
-    ],
-    keyPoints: [
-        "Area of a circle = πr²",
-        "Circumference of a circle = 2πr",
-        "Area of a sector of angle θ = (θ/360) × πr²",
-        "Length of an arc of a sector of angle θ = (θ/360) × 2πr"
-    ],
-    formulas: [
-        { name: "Area of Sector", formula: "<sup>θ</sup>&frasl;<sub>360</sub> × πr²" },
-        { name: "Arc Length", formula: "<sup>θ</sup>&frasl;<sub>360</sub> × 2πr" },
-        { name: "Area of Segment", formula: "Area of Sector - Area of Triangle" }
-    ],
-    crux: [
-        "Always identify the radius and the angle subtended at the center.",
-        "For segments, area of the triangle can often be found using (1/2)r² sin θ."
-    ],
-    exercises: [
-        { id: "examples", name: "Examples", questions: [] },
-        { id: "exercise1", name: "Exercise 11.1", questions: [] }
-    ],
-    examples: [],
-    theorems: [],
-    mcqs: [
-		{
-				"id": "mcq1",
-				"question": "<span style=\"font-weight: normal;\">Area of a sector of angle p (in degrees) of a circle with radius R is:</span>",
-				"options": [
-						"(p/180) × 2πR",
-						"(p/180) × πR²",
-						"(p/360) × 2πR",
-						"(p/720) × 2πR²"
-				],
-				"correctAnswer": "(p/720) × 2πR²"
-		},
-		{
-				"id": "mcq2",
-				"question": "<span style=\"font-weight: normal;\">If the sum of the circumferences of two circles with radii R₁ and R₂ is equal to the circumference of a circle of radius R, then:</span>",
-				"options": [
-						"R₁ + R₂ = R",
-						"R₁ + R₂ > R",
-						"R₁ + R₂ < R",
-						"None of these"
-				],
-				"correctAnswer": "R₁ + R₂ = R"
-		},
-		{
-				"id": "mcq3",
-				"question": "<span style=\"font-weight: normal;\">If the ratio of the areas of two circles is 4:9, then the ratio of their circumferences is:</span>",
-				"options": [
-						"2:3",
-						"4:9",
-						"3:2",
-						"16:81"
-				],
-				"correctAnswer": "2:3"
-		},
-		{
-				"id": "mcq4",
-				"question": "<span style=\"font-weight: normal;\">The area of a circle that can be inscribed in a square of side 6 cm is:</span>",
-				"options": [
-						"36π cm²",
-						"18π cm²",
-						"12π cm²",
-						"9π cm²"
-				],
-				"correctAnswer": "9π cm²"
-		},
-		{
-				"id": "mcq5",
-				"question": "<span style=\"font-weight: normal;\">The perimeter of a sector of a circle of radius 5.2 cm is 16.4 cm. The area of the sector is:</span>",
-				"options": [
-						"31.2 cm²",
-						"15.6 cm²",
-						"16.4 cm²",
-						"18.8 cm²"
-				],
-				"correctAnswer": "15.6 cm²"
-		},
-		{
-				"id": "mcq6",
-				"question": "<span style=\"font-weight: normal;\">If the area of a circle is 154 cm², then its perimeter is:</span>",
-				"options": [
-						"11 cm",
-						"22 cm",
-						"44 cm",
-						"55 cm"
-				],
-				"correctAnswer": "44 cm"
-		},
-		{
-				"id": "mcq7",
-				"question": "<span style=\"font-weight: normal;\">The area of a quadrant of a circle whose circumference is 22 cm is:</span>",
-				"options": [
-						"3.5 cm²",
-						"77/8 cm²",
-						"22 cm²",
-						"77/2 cm²"
-				],
-				"correctAnswer": "77/8 cm²"
-		},
-		{
-				"id": "mcq8",
-				"question": "<span style=\"font-weight: normal;\">Area of the largest triangle that can be inscribed in a semi-circle of radius r is:</span>",
-				"options": [
-						"r²",
-						"1/2 r²",
-						"2r²",
-						"√2r²"
-				],
-				"correctAnswer": "r²"
-		},
-		{
-				"id": "mcq9",
-				"question": "<span style=\"font-weight: normal;\">If the perimeter and the area of a circle are numerically equal, then the radius of the circle is:</span>",
-				"options": [
-						"2 units",
-						"π units",
-						"4 units",
-						"7 units"
-				],
-				"correctAnswer": "2 units"
-		},
-		{
-				"id": "mcq10",
-				"question": "<span style=\"font-weight: normal;\">A cow is tied with a rope of length 14m at the corner of a rectangular field of dimensions 20m x 16m. The area of the field in which the cow can graze is:</span>",
-				"options": [
-						"154 m²",
-						"200 m²",
-						"308 m²",
-						"None of these"
-				],
-				"correctAnswer": "154 m²"
-		}
-],
-    summary: [
-        "We learned to calculate area and perimeter of circles and their parts.",
-        "Applied these concepts to solve real-world problems like clock hands and brooch designs."
-    ],
-
-    isHtmlView: true,
-    htmlOverview: `<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Areas Related to Circles - Overview</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
-
-        body {
-            font-family: 'Kalam', cursive;
-            margin: 0;
-            padding: 15px;
-            background: #fff;
-            color: #333;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #6C63FF;
-            padding-bottom: 10px;
-            font-family: 'Nunito', sans-serif;
-        }
-
-        .logo {
-            color: #6C63FF;
-            font-size: 24px;
-            font-weight: 800;
-        }
-
-        .chapter-title {
-            text-align: center;
-            color: #333;
-            font-size: 20px;
-            font-weight: 700;
-            margin: 10px 0;
-            font-family: 'Kalam', cursive;
-        }
-
-        .content-box { background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px; padding: 15px; margin-bottom: 15px; display: flow-root; transition: transform 0.2s ease; }
-
-        .section-title {
-            color: #D32F2F;
-            font-weight: 700;
-            font-size: 1.2em;
-            margin-bottom: 10px;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 5px;
-        }
-
-        .formula-box {
-            background: #E8F5E9;
-            border-left: 4px solid #4CAF50;
-            padding: 10px;
-            margin: 10px 0;
-            font-family: 'Nunito', sans-serif;
-        }
-
-        .step {
-            margin-bottom: 8px;
-            font-size: 1.1em;
-            color: #000;
-            line-height: 1.5;
-        }
-
-        
-    
-
-
-img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; height: auto; border: 1px solid #ddd; border-radius: 6px; padding: 5px; background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-@media (max-width: 600px) { img { float: none; display: block; margin: 10px auto; max-width: 100%; } }
-</style>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    renderMathInElement(document.body, {
-      delimiters: [
-        {left: '\\\\(', right: '\\\\)', display: false},
-        {left: '\\\\[', right: '\\\\]', display: true}
-      ]
-    });
-  });
-</script>
-
-<style>
-  body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
-  .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #FF4081 !important; color: #fff !important; }
-  h1, h2, h3, h4, h5, h6 { color: #FF4081 !important; }
-  .question { color: #FF4081 !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
-  .formula { color: #4CAF50 !important; }
-  .true-text { color: #4CAF50 !important; }
-  .false-text { color: #F44336 !important; }
-  table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
-  .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
-  img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #FF4081 !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
-  * { font-family: 'Noto Sans', sans-serif !important; }
-
-  .question { font-size: 0.95em !important; }
-  .sub-question { font-size: 0.9em !important; }
-  .step { font-size: 0.9em !important; }
-  .final-answer { font-size: 0.95em !important; }
-</style>
-</head>
-
-<body>
-
-    
-
-    <div class="content-box">
-        <div class="section-title">1. Introduction</div>
-        <div class="step">We are familiar with the area and circumference of a circle. In this chapter, we explore areas
-            of two special parts of a circular region: Sector and Segment.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxjaXJjbGUgY3g9IjE1MCIgY3k9IjE1MCIgcj0iMTAwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNIDE1MCAxNTAgTCAxNDkuOTk5OTk5OTk5OTk5OTcgNTAuMCBBIDEwMCAxMDAgMCAwIDEgMjM2LjYwMjU0MDM3ODQ0Mzg1IDk5Ljk5OTk5OTk5OTk5OTk2IFoiIGZpbGw9IiNlMGY3ZmEiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIvPjxwYXRoIGQ9Ik0gMTAwLjAwMDAwMDAwMDAwMDAzIDIzNi42MDI1NDAzNzg0NDM4OCBBIDEwMCAxMDAgMCAwIDEgNjMuMzk3NDU5NjIxNTU2MTQgOTkuOTk5OTk5OTk5OTk5OTkgTCAxMDAuMDAwMDAwMDAwMDAwMDMgMjM2LjYwMjU0MDM3ODQ0Mzg4IFoiIGZpbGw9IiNmZmNjYmMiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIvPjx0ZXh0IHg9IjE4MCIgeT0iMTIwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5NaW5vciBTZWN0b3I8L3RleHQ+PHRleHQgeD0iOTAiIHk9IjIwMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+U2VnbWVudDwvdGV4dD48Y2lyY2xlIGN4PSIxNTAiIGN5PSIxNTAiIHI9IjMiIGZpbGw9ImJsYWNrIi8+PHRleHQgeD0iMTQwIiB5PSIxNTUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPk88L3RleHQ+PC9zdmc+" alt="Sector and Segment Visual">
-    </div>
-
-    <div class="content-box">
-        <div class="section-title">2. Sector of a Circle</div>
-        <div class="step">The portion (or part) of the circular region enclosed by two radii and the corresponding arc
-            is called a sector of the circle.</div>
-        <div class="formula-box">
-            Area of Sector = (θ/360) × πr²<br>
-            Length of Arc = (θ/360) × 2πr
-        </div>
-    </div>
-
-    <div class="content-box">
-        <div class="section-title">3. Segment of a Circle</div>
-        <div class="step">The portion (or part) of the circular region enclosed between a chord and the corresponding
-            arc is called a segment of the circle.</div>
-        <div class="formula-box">
-            Area of Segment = Area of Corresponding Sector - Area of Corresponding Triangle
-        </div>
-    </div>
-
-    <div class="content-box">
-        <div class="section-title">4. Key Values</div>
-        <div class="formula-box">
-            π ≈ <span class="fraction"><span class="numerator">22</span><span class="denominator">7</span></span> or 3.14<br>
-            Area of Circle = πr²<br>
-            Circumference = 2πr
-        </div>
-    </div>
-
-</body>
-
-</html>`,
-    htmlExercises: {
-        exercise1: `<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Areas Related to Circles - Exercise 11.1</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
-
-        body {
-            font-family: 'Kalam', cursive;
-            margin: 0;
-            padding: 15px;
-            background: #fff;
-            color: #333;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #6C63FF;
-            padding-bottom: 10px;
-            font-family: 'Nunito', sans-serif;
-        }
-
-        .logo {
-            color: #6C63FF;
-            font-size: 24px;
-            font-weight: 800;
-        }
-
-        .chapter-title {
-            text-align: center;
-            color: #333;
-            font-size: 20px;
-            font-weight: 700;
-            margin: 10px 0;
-            font-family: 'Kalam', cursive;
-        }
-
-        .content-box { background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px; padding: 15px; margin-bottom: 15px; display: flow-root; transition: transform 0.2s ease; }
-
-        .question {
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: #333;
-        }
-
-        .step {
-            margin-bottom: 8px;
-            font-size: 1.1em;
-            color: #000;
-            line-height: 1.5;
-        }
-
-        .final-answer {
-            color: #2E7D32;
-            font-weight: 700;
-            margin-top: 10px;
-            font-size: 1.2em;
-        }
-
-        
-
-        .solution-header {
-            color: #2E7D32;
-            font-weight: 700;
-            margin-bottom: 5px;
-        }
-
-        .fraction {
-            display: inline-block;
-            vertical-align: middle;
-            text-align: center;
-            font-size: 0.9em;
-            margin: 0 2px;
-        }
-
-        .numerator {
-            border-bottom: 1px solid #333;
-            display: block;
-            padding: 0 2px;
-        }
-
-        .denominator {
-            display: block;
-            padding: 0 2px;
-        }
-    
-
-
-img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; height: auto; border: 1px solid #ddd; border-radius: 6px; padding: 5px; background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-@media (max-width: 600px) { img { float: none; display: block; margin: 10px auto; max-width: 100%; } }
-</style>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    renderMathInElement(document.body, {
-      delimiters: [
-        {left: '\\\\(', right: '\\\\)', display: false},
-        {left: '\\\\[', right: '\\\\]', display: true}
-      ]
-    });
-  });
-</script>
-
-<style>
-  body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
-  .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #FF4081 !important; color: #fff !important; }
-  h1, h2, h3, h4, h5, h6 { color: #FF4081 !important; }
-  .question { color: #FF4081 !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
-  .formula { color: #4CAF50 !important; }
-  .true-text { color: #4CAF50 !important; }
-  .false-text { color: #F44336 !important; }
-  table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
-  .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
-  img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #FF4081 !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
-  * { font-family: 'Noto Sans', sans-serif !important; }
-
-  .question { font-size: 0.95em !important; }
-  .sub-question { font-size: 0.9em !important; }
-  .step { font-size: 0.9em !important; }
-  .final-answer { font-size: 0.95em !important; }
-</style>
-</head>
-
-<body>
-
-    
-
-    <div class="content-box">
-        <div class="question">1. Find the area of a sector of a circle with radius 6 cm if angle of the sector is 60°.
-        </div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxwYXRoIGQ9Ik0gMTUwIDE1MCBMIDIwMC4wIDYzLjM5NzQ1OTYyMTU1NjE0IEEgMTAwIDEwMCAwIDAgMSAyNTAuMCAxNDkuOTk5OTk5OTk5OTk5OTcgWiIgZmlsbD0ibGlnaHRncmVlbiIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIi8+PHRleHQgeD0iMTgwIiB5PSIxNTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjYwwrA8L3RleHQ+PHRleHQgeD0iMjEwIiB5PSIxMzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjZjbTwvdGV4dD48Y2lyY2xlIGN4PSIxNTAiIGN5PSIxNTAiIHI9IjMiIGZpbGw9ImJsYWNrIi8+PHRleHQgeD0iMTUwIiB5PSIyNzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPkFyZWEgb2YgU2VjdG9yPzwvdGV4dD48L3N2Zz4=" alt="Sector Area Calculation">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Radius r = 6 cm. Angle θ = 60°.</div>
-        <div class="step">Area of sector = (θ/360) × πr²</div>
-        <div class="step">= (<span class="fraction"><span class="numerator">60</span><span class="denominator">360</span></span>) × (<span class="fraction"><span class="numerator">22</span><span class="denominator">7</span></span>) × 6 × 6</div>
-        <div class="step">= (<span class="fraction"><span class="numerator">1</span><span class="denominator">6</span></span>) × (<span class="fraction"><span class="numerator">22</span><span class="denominator">7</span></span>) × 36</div>
-        <div class="step">= 1 × (<span class="fraction"><span class="numerator">22</span><span class="denominator">7</span></span>) × 6</div>
-        <div class="step">= <span class="fraction"><span class="numerator">132</span><span class="denominator">7</span></span> cm².</div>
-        <div class="final-answer">Area = <span class="fraction"><span class="numerator">132</span><span class="denominator">7</span></span> cm².</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">2. Find the area of a quadrant of a circle whose circumference is 22 cm.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxwYXRoIGQ9Ik0gMTUwIDE1MCBMIDE0OS45OTk5OTk5OTk5OTk5NyA1MC4wIEEgMTAwIDEwMCAwIDAgMSAyNTAuMCAxNDkuOTk5OTk5OTk5OTk5OTcgWiIgZmlsbD0ibGlnaHRibHVlIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiLz48dGV4dCB4PSIxODAiIHk9IjE0MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+OTDCsDwvdGV4dD48dGV4dCB4PSIxNjAiIHk9IjI2MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Q2lyY3VtZmVyZW5jZSA9IDIyY208L3RleHQ+PC9zdmc+" alt="Quadrant Area">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Circumference = 2πr = 22 cm.</div>
-        <div class="step">2 × (<span class="fraction"><span class="numerator">22</span><span class="denominator">7</span></span>) × r = 22</div>
-        <div class="step">r = <span class="fraction"><span class="numerator">7</span><span class="denominator">2</span></span> = 3.5 cm.</div>
-        <div class="step">Quadrant is <span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span> of a circle (θ = 90°).</div>
-        <div class="step">Area = (<span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span>)πr²</div>
-        <div class="step">= (<span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span>) × (<span class="fraction"><span class="numerator">22</span><span class="denominator">7</span></span>) × (<span class="fraction"><span class="numerator">7</span><span class="denominator">2</span></span>) × (<span class="fraction"><span class="numerator">7</span><span class="denominator">2</span></span>)</div>
-        <div class="step">= (<span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span>) × 22 × (<span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span>) × (<span class="fraction"><span class="numerator">7</span><span class="denominator">2</span></span>)</div>
-        <div class="step">= <span class="fraction"><span class="numerator">77</span><span class="denominator">8</span></span> cm².</div>
-        <div class="final-answer">Area = <span class="fraction"><span class="numerator">77</span><span class="denominator">8</span></span> cm².</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">3. The length of the minute hand of a clock is 14 cm. Find the area swept by the minute
-            hand in 5 minutes.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxjaXJjbGUgY3g9IjE1MCIgY3k9IjE1MCIgcj0iMTIwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNIDE1MCAxNTAgTCAxNDkuOTk5OTk5OTk5OTk5OTcgNDAuMCBBIDExMCAxMTAgMCAwIDEgMjA1LjAgNTQuNzM3MjA1NTgzNzExNzU2IFoiIGZpbGw9InBpbmsiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIvPjxsaW5lIHgxPSIxNTAiIHkxPSIxNTAiIHgyPSIxNTAiIHkyPSI0MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+PHRleHQgeD0iMTQwIiB5PSIxMDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjE0Y208L3RleHQ+PHRleHQgeD0iMTgwIiB5PSI4MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NSBtaW48L3RleHQ+PHRleHQgeD0iMTUwIiB5PSIyNSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MTI8L3RleHQ+PHRleHQgeD0iMjA1IiB5PSI0NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MTwvdGV4dD48dGV4dCB4PSIyNTAiIHk9IjkwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4yPC90ZXh0Pjx0ZXh0IHg9IjI3NSIgeT0iMTU1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4zPC90ZXh0Pjwvc3ZnPg==" alt="Clock Area">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Radius r = 14 cm.</div>
-        <div class="step">Angle in 60 mins = 360°. So in 5 mins = (<span class="fraction"><span class="numerator">360</span><span class="denominator">60</span></span>) × 5 = 30°.</div>
-        <div class="step">Area swept = Area of sector with θ = 30°.</div>
-        <div class="step">= (<span class="fraction"><span class="numerator">30</span><span class="denominator">360</span></span>) × (<span class="fraction"><span class="numerator">22</span><span class="denominator">7</span></span>) × 14 × 14</div>
-        <div class="step">= (<span class="fraction"><span class="numerator">1</span><span class="denominator">12</span></span>) × 22 × 2 × 14</div>
-        <div class="step">= (<span class="fraction"><span class="numerator">1</span><span class="denominator">6</span></span>) × 22 × 14</div>
-        <div class="step">= (<span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span>) × 11 × 14 = <span class="fraction"><span class="numerator">154</span><span class="denominator">3</span></span> cm².</div>
-        <div class="final-answer">Area = <span class="fraction"><span class="numerator">154</span><span class="denominator">3</span></span> cm².</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">4. A chord of a circle of radius 10 cm subtends a right angle at the centre. Find the area
-            of the corresponding: (i) minor segment (ii) major sector. (Use π = 3.14)</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxjaXJjbGUgY3g9IjE1MCIgY3k9IjE1MCIgcj0iMTAwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48bGluZSB4MT0iMTUwIiB5MT0iMTUwIiB4Mj0iMjUwIiB5Mj0iMTUwIiBzdHJva2U9ImdyYXkiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWRhc2hhcnJheT0iNCIgZmlsbD0ibm9uZSIvPjxsaW5lIHgxPSIxNTAiIHkxPSIxNTAiIHgyPSIxNTAiIHkyPSIyNTAiIHN0cm9rZT0iZ3JheSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtZGFzaGFycmF5PSI0IiBmaWxsPSJub25lIi8+PGxpbmUgeDE9IjI1MCIgeTE9IjE1MCIgeDI9IjE1MCIgeTI9IjI1MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+PHBhdGggZD0iTSAxNTAgMjUwIEEgMTAwIDEwMCAwIDAgMCAyNTAgMTUwIEwgMTUwIDI1MCBaIiBmaWxsPSJvcmFuZ2UiIG9wYWNpdHk9IjAuNSIvPjx0ZXh0IHg9IjE3MCIgeT0iMTcwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj45MMKwPC90ZXh0Pjx0ZXh0IHg9IjIwMCIgeT0iMTQwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xMGNtPC90ZXh0Pjx0ZXh0IHg9IjIwMCIgeT0iMjIwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5NaW5vciBTZWdtZW50PC90ZXh0Pjx0ZXh0IHg9IjEwMCIgeT0iMTAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5NYWpvciBTZWN0b3I8L3RleHQ+PC9zdmc+" alt="Chord 90 Degrees">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Radius r = 10 cm. θ = 90°.</div>
-        <div class="step">(i) Area of Minor Sector = (<span class="fraction"><span class="numerator">90</span><span class="denominator">360</span></span>) × 3.14 × 100 = (<span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span>) × 314 = 78.5 cm².</div>
-        <div class="step">Area of Triangle = (<span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span>) × base × height = (<span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span>) × 10 × 10 = 50 cm².</div>
-        <div class="step">Area of Minor Segment = Area Sector - Area Triangle = 78.5 - 50 = 28.5 cm².</div>
-        <div class="step">(ii) Area of Major Sector = Area of Circle - Area of Minor Sector</div>
-        <div class="step">= 314 - 78.5 = 235.5 cm². (Or use θ = 270°).</div>
-        <div class="final-answer">Minor Segment: 28.5 cm², Major Sector: 235.5 cm².</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">5. In a circle of radius 21 cm, an arc subtends an angle of 60° at the centre. Find:
-            (i) the length of the arc
-            (ii) area of the sector formed by the arc
-            (iii) area of the segment formed by the corresponding chord</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxwYXRoIGQ9Ik0gMTUwIDE1MCBMIDIwMC4wIDYzLjM5NzQ1OTYyMTU1NjE0IEEgMTAwIDEwMCAwIDAgMSAyNTAuMCAxNDkuOTk5OTk5OTk5OTk5OTcgWiIgZmlsbD0ibGlnaHRjeWFuIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiLz48cGF0aCBkPSJNIDIwMC4wIDYzLjM5NzQ1OTYyMTU1NjE0IEEgMTAwIDEwMCAwIDAgMSAyNTAuMCAxNDkuOTk5OTk5OTk5OTk5OTcgTCAyMDAuMCA2My4zOTc0NTk2MjE1NTYxNCBaIiBmaWxsPSJjeWFuIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiLz48dGV4dCB4PSIxODAiIHk9IjE1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NjDCsDwvdGV4dD48dGV4dCB4PSIyMTAiIHk9IjEzMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MjFjbTwvdGV4dD48L3N2Zz4=" alt="Circle 60 Degrees">
-        <div class="solution-header">Solution:</div>
-        <div class="step">r = 21 cm. θ = 60°.</div>
-        <div class="step">(i) Length of arc = (θ/360) × 2πr = (<span class="fraction"><span class="numerator">60</span><span class="denominator">360</span></span>) × 2 × (<span class="fraction"><span class="numerator">22</span><span class="denominator">7</span></span>) × 21</div>
-        <div class="step">= (<span class="fraction"><span class="numerator">1</span><span class="denominator">6</span></span>) × 2 × 22 × 3 = 22 cm.</div>
-        <div class="step">(ii) Area of sector = (θ/360) × πr² = (<span class="fraction"><span class="numerator">1</span><span class="denominator">6</span></span>) × (<span class="fraction"><span class="numerator">22</span><span class="denominator">7</span></span>) × 21 × 21</div>
-        <div class="step">= 11 × 21 = 231 cm².</div>
-        <div class="step">(iii) Area of segment = Area Sector - Area Triangle.</div>
-        <div class="step">For θ=60°, triangle is equilateral. Area = (√<span class="fraction"><span class="numerator">3</span><span class="denominator">4</span></span>)r² = (√<span class="fraction"><span class="numerator">3</span><span class="denominator">4</span></span>) × 441.</div>
-        <div class="step">= <span class="fraction"><span class="numerator">441√3</span><span class="denominator">4</span></span> cm².</div>
-        <div class="step">Area Segment = (231 - <span class="fraction"><span class="numerator">441√3</span><span class="denominator">4</span></span>) cm².</div>
-        <div class="final-answer">Length: 22 cm; Sector: 231 cm²; Segment: (231 - <span class="fraction"><span class="numerator">441√3</span><span class="denominator">4</span></span>) cm².</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">6. A chord of a circle of radius 15 cm subtends an angle of 60° at the centre. Find the
-            areas of the corresponding minor and major segments of the circle. (Use π = 3.14 and √3 = 1.73)</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxjaXJjbGUgY3g9IjE1MCIgY3k9IjE1MCIgcj0iMTAwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48bGluZSB4MT0iMTUwIiB5MT0iMTUwIiB4Mj0iMjM2LjYwMjU0MDM3ODQ0Mzg1IiB5Mj0iOTkuOTk5OTk5OTk5OTk5OTYiIHN0cm9rZT0iZ3JheSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtZGFzaGFycmF5PSI0IiBmaWxsPSJub25lIi8+PGxpbmUgeDE9IjE1MCIgeTE9IjE1MCIgeDI9IjIzNi42MDI1NDAzNzg0NDM4OCIgeTI9IjIwMC4wIiBzdHJva2U9ImdyYXkiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWRhc2hhcnJheT0iNCIgZmlsbD0ibm9uZSIvPjxsaW5lIHgxPSIyMzYuNjAyNTQwMzc4NDQzODUiIHkxPSI5OS45OTk5OTk5OTk5OTk5NiIgeDI9IjIzNi42MDI1NDAzNzg0NDM4OCIgeTI9IjIwMC4wIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNIDIzNi42MDI1NDAzNzg0NDM4NSA5OS45OTk5OTk5OTk5OTk5NiBBIDEwMCAxMDAgMCAwIDEgMjM2LjYwMjU0MDM3ODQ0Mzg4IDIwMC4wIEwgMjM2LjYwMjU0MDM3ODQ0Mzg1IDk5Ljk5OTk5OTk5OTk5OTk2IFoiIGZpbGw9ImdyYXkiIG9wYWNpdHk9IjAuNSIvPjx0ZXh0IHg9IjI0MCIgeT0iMTUwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xNWNtPC90ZXh0Pjx0ZXh0IHg9IjE4MCIgeT0iMTUwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj42MMKwPC90ZXh0Pjwvc3ZnPg==" alt="Chord 60 Segments">
-        <div class="solution-header">Solution:</div>
-        <div class="step">r = 15 cm. θ = 60°.</div>
-        <div class="step">Area of Minor Sector = (<span class="fraction"><span class="numerator">60</span><span class="denominator">360</span></span>) × 3.14 × 225 = (<span class="fraction"><span class="numerator">1</span><span class="denominator">6</span></span>) × 706.5 = 117.75 cm².</div>
-        <div class="step">Area of Triangle (Equilateral) = (√<span class="fraction"><span class="numerator">3</span><span class="denominator">4</span></span>) × 15² = (1.<span class="fraction"><span class="numerator">73</span><span class="denominator">4</span></span>) × 225 = 97.3125 cm².</div>
-        <div class="step">Area of Minor Segment = 117.75 - 97.3125 = 20.4375 cm².</div>
-        <div class="step">Area of Major Segment = Area Circle - Area Minor Segment</div>
-        <div class="step">= 706.5 - 20.4375 = 686.0625 cm².</div>
-        <div class="final-answer">Minor Segment: 20.4375 cm²; Major Segment: 686.0625 cm².</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">7. A chord of a circle of radius 12 cm subtends an angle of 120° at the centre. Find the
-            area of the corresponding segment of the circle. (Use π = 3.14 and √3 = 1.73)</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxjaXJjbGUgY3g9IjE1MCIgY3k9IjE1MCIgcj0iMTAwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48bGluZSB4MT0iNjMuMzk3NDU5NjIxNTU2MTQiIHkxPSI5OS45OTk5OTk5OTk5OTk5OSIgeDI9IjIzNi42MDI1NDAzNzg0NDM4NSIgeTI9Ijk5Ljk5OTk5OTk5OTk5OTk2IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNIDYzLjM5NzQ1OTYyMTU1NjE0IDk5Ljk5OTk5OTk5OTk5OTk5IEEgMTAwIDEwMCAwIDAgMCAyMzYuNjAyNTQwMzc4NDQzODUgOTkuOTk5OTk5OTk5OTk5OTYgTCA2My4zOTc0NTk2MjE1NTYxNCA5OS45OTk5OTk5OTk5OTk5OSBaIiBmaWxsPSJwdXJwbGUiIG9wYWNpdHk9IjAuMyIvPjxsaW5lIHgxPSIxNTAiIHkxPSIxNTAiIHgyPSI2My4zOTc0NTk2MjE1NTYxNCIgeTI9Ijk5Ljk5OTk5OTk5OTk5OTk5IiBzdHJva2U9ImdyYXkiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWRhc2hhcnJheT0iNCIgZmlsbD0ibm9uZSIvPjxsaW5lIHgxPSIxNTAiIHkxPSIxNTAiIHgyPSIyMzYuNjAyNTQwMzc4NDQzODUiIHkyPSI5OS45OTk5OTk5OTk5OTk5NiIgc3Ryb2tlPSJncmF5IiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1kYXNoYXJyYXk9IjQiIGZpbGw9Im5vbmUiLz48dGV4dCB4PSIxNTAiIHk9IjE4MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MTIwwrA8L3RleHQ+PHRleHQgeD0iMTUwIiB5PSIxMDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjEyY208L3RleHQ+PC9zdmc+" alt="Chord 120 Segments">
-        <div class="solution-header">Solution:</div>
-        <div class="step">r = 12 cm. θ = 120°.</div>
-        <div class="step">Area of Sector = (<span class="fraction"><span class="numerator">120</span><span class="denominator">360</span></span>) × 3.14 × 144 = (<span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span>) × 452.16 = 150.72 cm².</div>
-        <div class="step">Area of Triangle = r² sin(θ/2) cos(θ/2) = 144 sin 60° cos 60°.</div>
-        <div class="step">= 144 × (√<span class="fraction"><span class="numerator">3</span><span class="denominator">2</span></span>) × (<span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span>) = 36√3 = 36 × 1.73 = 62.28 cm².</div>
-        <div class="step">Area of Segment = 150.72 - 62.28 = 88.44 cm².</div>
-        <div class="final-answer">Area of Segment = 88.44 cm².</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">8. A horse is tied to a peg at one corner of a square shaped grass field of side 15 m by
-            means of a 5 m long rope. Find (i) the area of that part of the field in which the horse can graze. (ii) the
-            increase in the grazing area if the rope were 10 m long instead of 5 m. (Use π = 3.14)</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjIwIiB5PSIyMCIgd2lkdGg9IjIwMCIgaGVpZ2h0PSIyMDAiIGZpbGw9ImxpZ2h0Z3JlZW4iIHN0cm9rZT0iZ3JlZW4iLz48cGF0aCBkPSJNIDIwIDIwIEwgMjAgMTAwIEEgODAgODAgMCAwIDAgMTAwIDIwIFoiIGZpbGw9IndoaXRlIiBzdHJva2U9ImJsYWNrIi8+PGNpcmNsZSBjeD0iOTAiIGN5PSIzMCIgcj0iNSIgZmlsbD0iYnJvd24iLz48dGV4dCB4PSI1MCIgeT0iNTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPkdyYXppbmcgQXJlYTwvdGV4dD48dGV4dCB4PSIxMjAiIHk9IjEyMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+R3Jhc3MgRmllbGQ8L3RleHQ+PC9zdmc+" alt="Horse Grazing">
-        <div class="solution-header">Solution:</div>
-        <div class="step">(i) r = 5 m. θ = 90° (corner of square).</div>
-        <div class="step">Area = (<span class="fraction"><span class="numerator">90</span><span class="denominator">360</span></span>) × 3.14 × 25 = (<span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span>) × 78.5 = 19.625 m².</div>
-        <div class="step">(ii) r = 10 m.</div>
-        <div class="step">New Area = (<span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span>) × 3.14 × 100 = (<span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span>) × 314 = 78.5 m².</div>
-        <div class="step">Increase = 78.5 - 19.625 = 58.875 m².</div>
-        <div class="final-answer">Area: 19.625 m²; Increase: 58.875 m².</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">9. A brooch is made with silver wire in the form of a circle with diameter 35 mm. The wire
-            is also used in making 5 diameters which divide the circle into 10 equal sectors. Find: (i) the total length
-            of the silver wire required. (ii) the area of each sector of the brooch.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxjaXJjbGUgY3g9IjE1MCIgY3k9IjE1MCIgcj0iMTAwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48bGluZSB4MT0iMjUwLjAiIHkxPSIxNTAuMCIgeDI9IjUwLjAiIHkyPSIxNTAuMCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+PGxpbmUgeDE9IjIzMC45MDE2OTk0Mzc0OTQ3NiIgeTE9IjIwOC43Nzg1MjUyMjkyNDczMiIgeDI9IjY5LjA5ODMwMDU2MjUwNTI2IiB5Mj0iOTEuMjIxNDc0NzcwNzUyNjgiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjxsaW5lIHgxPSIxODAuOTAxNjk5NDM3NDk0NzYiIHkxPSIyNDUuMTA1NjUxNjI5NTE1MzYiIHgyPSIxMTkuMDk4MzAwNTYyNTA1MjYiIHkyPSI1NC44OTQzNDgzNzA0ODQ2NSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+PGxpbmUgeDE9IjExOS4wOTgzMDA1NjI1MDUyNyIgeTE9IjI0NS4xMDU2NTE2Mjk1MTUzNiIgeDI9IjE4MC45MDE2OTk0Mzc0OTQ3MyIgeTI9IjU0Ljg5NDM0ODM3MDQ4NDYzNiIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+PGxpbmUgeDE9IjY5LjA5ODMwMDU2MjUwNTI3IiB5MT0iMjA4Ljc3ODUyNTIyOTI0NzMyIiB4Mj0iMjMwLjkwMTY5OTQzNzQ5NDczIiB5Mj0iOTEuMjIxNDc0NzcwNzUyNjgiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjx0ZXh0IHg9IjE1MCIgeT0iMjcwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xMCBTZWN0b3JzPC90ZXh0Pjx0ZXh0IHg9IjE1MCIgeT0iMzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPmQgPSAzNW1tPC90ZXh0Pjwvc3ZnPg==" alt="Brooch Design">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Diameter d = 35 mm. r = <span class="fraction"><span class="numerator">35</span><span class="denominator">2</span></span> mm.</div>
-        <div class="step">(i) Length = Circumference + 5 × Diameter.</div>
-        <div class="step">= πd + 5d = (<span class="fraction"><span class="numerator">22</span><span class="denominator">7</span></span>) × 35 + 5 × 35 = 110 + 175 = 285 mm.</div>
-        <div class="step">(ii) Each sector angle θ = <span class="fraction"><span class="numerator">360</span><span class="denominator">10</span></span> = 36°.</div>
-        <div class="step">Area = (<span class="fraction"><span class="numerator">36</span><span class="denominator">360</span></span>) × (<span class="fraction"><span class="numerator">22</span><span class="denominator">7</span></span>) × (<span class="fraction"><span class="numerator">35</span><span class="denominator">2</span></span>) × (<span class="fraction"><span class="numerator">35</span><span class="denominator">2</span></span>)</div>
-        <div class="step">= (<span class="fraction"><span class="numerator">1</span><span class="denominator">10</span></span>) × 11 × 5 × (<span class="fraction"><span class="numerator">35</span><span class="denominator">2</span></span>)</div>
-        <div class="step">= (<span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span>) × 11 × (<span class="fraction"><span class="numerator">35</span><span class="denominator">2</span></span>) = <span class="fraction"><span class="numerator">385</span><span class="denominator">4</span></span> = 96.25 mm².</div>
-        <div class="final-answer">Length: 285 mm; Area: <span class="fraction"><span class="numerator">385</span><span class="denominator">4</span></span> mm².</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">10. An umbrella has 8 ribs which are equally spaced. Assuming umbrella to be a flat circle
-            of radius 45 cm, find the area between the two consecutive ribs of the umbrella.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxjaXJjbGUgY3g9IjE1MCIgY3k9IjE1MCIgcj0iMTAwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48bGluZSB4MT0iMjUwLjAiIHkxPSIxNTAuMCIgeDI9IjUwLjAiIHkyPSIxNTAuMCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+PGxpbmUgeDE9IjIyMC43MTA2NzgxMTg2NTQ3NiIgeTE9IjIyMC43MTA2NzgxMTg2NTQ3NiIgeDI9Ijc5LjI4OTMyMTg4MTM0NTI0IiB5Mj0iNzkuMjg5MzIxODgxMzQ1MjQiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjxsaW5lIHgxPSIxNTAuMCIgeTE9IjI1MC4wIiB4Mj0iMTUwLjAiIHkyPSI1MC4wIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48bGluZSB4MT0iNzkuMjg5MzIxODgxMzQ1MjYiIHkxPSIyMjAuNzEwNjc4MTE4NjU0NzYiIHgyPSIyMjAuNzEwNjc4MTE4NjU0NzYiIHkyPSI3OS4yODkzMjE4ODEzNDUyNCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+PHRleHQgeD0iMTUwIiB5PSIyNzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjggUmliczwvdGV4dD48dGV4dCB4PSIxNTAiIHk9IjMwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5yID0gNDVjbTwvdGV4dD48L3N2Zz4=" alt="Umbrella Ribs">
-        <div class="solution-header">Solution:</div>
-        <div class="step">r = 45 cm. 8 ribs form 8 sectors.</div>
-        <div class="step">Angle θ = <span class="fraction"><span class="numerator">360</span><span class="denominator">8</span></span> = 45°.</div>
-        <div class="step">Area = (<span class="fraction"><span class="numerator">45</span><span class="denominator">360</span></span>) × (<span class="fraction"><span class="numerator">22</span><span class="denominator">7</span></span>) × 45 × 45</div>
-        <div class="step">= (<span class="fraction"><span class="numerator">1</span><span class="denominator">8</span></span>) × (<span class="fraction"><span class="numerator">22</span><span class="denominator">7</span></span>) × 2025</div>
-        <div class="step">= <span class="fraction"><span class="numerator">22275</span><span class="denominator">28</span></span> cm².</div>
-        <div class="final-answer">Area = <span class="fraction"><span class="numerator">22275</span><span class="denominator">28</span></span> cm².</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">11. A car has two wipers which do not overlap. Each wiper has a blade of length 25 cm
-            sweeping through an angle of 115°. Find the total area cleaned at each sweep of the blades.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxwYXRoIGQ9Ik0gMTAwIDIwMCBMIDM4LjcxNjQ0NDU1MDQ4MTc2IDE0OC41NzY5OTEyMjUwNzY4NSBBIDgwIDgwIDAgMCAxIDE3Mi41MDQ2MjI5NjI5MzIgMTY2LjE5MDUzOTA2MDc0NDA3IFoiIGZpbGw9ImxpZ2h0Ymx1ZSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIi8+PHBhdGggZD0iTSAyMjAgMjAwIEwgMTQ3LjQ5NTM3NzAzNzA2OCAxNjYuMTkwNTM5MDYwNzQ0MDcgQSA4MCA4MCAwIDAgMSAyODEuMjgzNTU1NDQ5NTE4MjUgMTQ4LjU3Njk5MTIyNTA3NjgyIFoiIGZpbGw9ImxpZ2h0Ymx1ZSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIi8+PHRleHQgeD0iMTYwIiB5PSIyNTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPlR3byBXaXBlcnM8L3RleHQ+PHRleHQgeD0iMTAwIiB5PSIxODAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjExNcKwPC90ZXh0Pjx0ZXh0IHg9IjIyMCIgeT0iMTgwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xMTXCsDwvdGV4dD48L3N2Zz4=" alt="Wipers Problem">
-        <div class="solution-header">Solution:</div>
-        <div class="step">r = 25 cm. θ = 115°. Two wipers.</div>
-        <div class="step">Total Area = 2 × (<span class="fraction"><span class="numerator">115</span><span class="denominator">360</span></span>) × (<span class="fraction"><span class="numerator">22</span><span class="denominator">7</span></span>) × 25 × 25</div>
-        <div class="step">= 2 × (<span class="fraction"><span class="numerator">23</span><span class="denominator">72</span></span>) × (<span class="fraction"><span class="numerator">22</span><span class="denominator">7</span></span>) × 625</div>
-        <div class="step">= (<span class="fraction"><span class="numerator">23</span><span class="denominator">36</span></span>) × (<span class="fraction"><span class="numerator">22</span><span class="denominator">7</span></span>) × 625</div>
-        <div class="step">= (23 × 11 × 625) / (18 × 7)</div>
-        <div class="step">= <span class="fraction"><span class="numerator">158125</span><span class="denominator">126</span></span> cm².</div>
-        <div class="final-answer">Total Area = <span class="fraction"><span class="numerator">158125</span><span class="denominator">126</span></span> cm².</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">12. To warn ships for underwater rocks, a lighthouse spreads a red coloured light over a
-            sector of angle 80° to a distance of 16.5 km. Find the area of the sea over which the ships are warned. (Use
-            π = 3.14)</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjZTBmN2ZhIi8+PHBhdGggZD0iTSAxNTAgMjUwIEwgNTguMDc0NjY2ODI1NzIyNjQ1IDE3Mi44NjU0ODY4Mzc2MTUzIEEgMTIwIDEyMCAwIDAgMSAyMTAuMCAxNDYuMDc2OTUxNTQ1ODY3MzYgWiIgZmlsbD0icmVkIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMiIvPjxwYXRoIGQ9Ik0gMTUwIDI1MCBMIDU4LjA3NDY2NjgyNTcyMjY0NSAxNzIuODY1NDg2ODM3NjE1MyBBIDEyMCAxMjAgMCAwIDEgMjEwLjAgMTQ2LjA3Njk1MTU0NTg2NzM2IFoiIGZpbGw9InJlZCIgb3BhY2l0eT0iMC4zIi8+PHJlY3QgeD0iMTQwIiB5PSIyNDAiIHdpZHRoPSIyMCIgaGVpZ2h0PSI0MCIgZmlsbD0iZ3JheSIvPjx0ZXh0IHg9IjE1MCIgeT0iMTUwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj44MMKwIFNlY3RvcjwvdGV4dD48L3N2Zz4=" alt="Lighthouse Sector">
-        <div class="solution-header">Solution:</div>
-        <div class="step">r = 16.5 km. θ = 80°.</div>
-        <div class="step">Area = (<span class="fraction"><span class="numerator">80</span><span class="denominator">360</span></span>) × 3.14 × 16.5 × 16.5</div>
-        <div class="step">= (<span class="fraction"><span class="numerator">2</span><span class="denominator">9</span></span>) × 3.14 × 272.25</div>
-        <div class="step">= 189.97 km².</div>
-        <div class="final-answer">Area = 189.97 km².</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">13. A round table cover has six equal designs as shown in Fig. If the radius of the cover
-            is 28 cm, find the cost of making the designs at the rate of ₹ 0.35 per cm². (Use √3 = 1.7)</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxjaXJjbGUgY3g9IjE1MCIgY3k9IjE1MCIgcj0iMTAwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNIDI1MC4wIDE1MC4wIEEgMTAwIDEwMCAwIDAgMSAyMDAuMCAyMzYuNjAyNTQwMzc4NDQzODUgTCAyNTAuMCAxNTAuMCBaIiBmaWxsPSJicm93biIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjIiLz48cGF0aCBkPSJNIDIwMC4wIDIzNi42MDI1NDAzNzg0NDM4NSBBIDEwMCAxMDAgMCAwIDEgMTAwLjAwMDAwMDAwMDAwMDAzIDIzNi42MDI1NDAzNzg0NDM4OCBMIDIwMC4wIDIzNi42MDI1NDAzNzg0NDM4NSBaIiBmaWxsPSJicm93biIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjIiLz48cGF0aCBkPSJNIDEwMC4wMDAwMDAwMDAwMDAwMyAyMzYuNjAyNTQwMzc4NDQzODggQSAxMDAgMTAwIDAgMCAxIDUwLjAgMTUwLjAgTCAxMDAuMDAwMDAwMDAwMDAwMDMgMjM2LjYwMjU0MDM3ODQ0Mzg4IFoiIGZpbGw9ImJyb3duIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMiIvPjxwYXRoIGQ9Ik0gNTAuMCAxNTAuMCBBIDEwMCAxMDAgMCAwIDEgOTkuOTk5OTk5OTk5OTk5OTYgNjMuMzk3NDU5NjIxNTU2MTUgTCA1MC4wIDE1MC4wIFoiIGZpbGw9ImJyb3duIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMiIvPjxwYXRoIGQ9Ik0gOTkuOTk5OTk5OTk5OTk5OTYgNjMuMzk3NDU5NjIxNTU2MTUgQSAxMDAgMTAwIDAgMCAxIDIwMC4wIDYzLjM5NzQ1OTYyMTU1NjE0IEwgOTkuOTk5OTk5OTk5OTk5OTYgNjMuMzk3NDU5NjIxNTU2MTUgWiIgZmlsbD0iYnJvd24iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIyIi8+PHBhdGggZD0iTSAyMDAuMCA2My4zOTc0NTk2MjE1NTYxNCBBIDEwMCAxMDAgMCAwIDEgMjUwLjAgMTQ5Ljk5OTk5OTk5OTk5OTk3IEwgMjAwLjAgNjMuMzk3NDU5NjIxNTU2MTQgWiIgZmlsbD0iYnJvd24iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIyIi8+PHBvbHlnb24gcG9pbnRzPSIyNTAuMCwxNTAuMCAyMDAuMCwyMzYuNjAyNTQwMzc4NDQzODUgMTAwLjAwMDAwMDAwMDAwMDAzLDIzNi42MDI1NDAzNzg0NDM4OCA1MC4wLDE1MC4wIDk5Ljk5OTk5OTk5OTk5OTk2LDYzLjM5NzQ1OTYyMTU1NjE1IDIwMC4wLDYzLjM5NzQ1OTYyMTU1NjE0IiBmaWxsPSJub25lIiBzdHJva2U9ImJsYWNrIi8+PHRleHQgeD0iMTUwIiB5PSIxNTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkRlc2lnbiBBcmVhczwvdGV4dD48L3N2Zz4=" alt="Round Table Design">
-        <div class="solution-header">Solution:</div>
-        <div class="step">r = 28 cm. 6 segments. Each angle = <span class="fraction"><span class="numerator">360</span><span class="denominator">6</span></span> = 60°.</div>
-        <div class="step">Area of one segment = Area Sector - Area Triangle.</div>
-        <div class="step">Sector Area = (<span class="fraction"><span class="numerator">60</span><span class="denominator">360</span></span>) × (<span class="fraction"><span class="numerator">22</span><span class="denominator">7</span></span>) × 28 × 28 = (<span class="fraction"><span class="numerator">1</span><span class="denominator">6</span></span>) × 22 × 4 × 28 = <span class="fraction"><span class="numerator">1232</span><span class="denominator">3</span></span> = 410.67 cm².</div>
-        <div class="step">Triangle Area (Equilateral) = (√<span class="fraction"><span class="numerator">3</span><span class="denominator">4</span></span>) × 28² = (1.<span class="fraction"><span class="numerator">7</span><span class="denominator">4</span></span>) × 784 = 1.7 × 196 = 333.2 cm².</div>
-        <div class="step">Area of one design = 410.67 - 333.2 = 77.47 cm².</div>
-        <div class="step">Total Area = 6 × 77.47 = 464.82 cm².</div>
-        <div class="step">Cost = 464.82 × 0.35 = ₹ 162.68.</div>
-        <div class="final-answer">Cost = ₹ 162.68 approx.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">14. Tick the correct answer in the following: Area of a sector of angle p (in degrees) of
-            a circle with radius R is:</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxwYXRoIGQ9Ik0gMTUwIDE1MCBMIDIwMC4wIDYzLjM5NzQ1OTYyMTU1NjE0IEEgMTAwIDEwMCAwIDAgMSAyNTAuMCAxNDkuOTk5OTk5OTk5OTk5OTcgWiIgZmlsbD0ibGlnaHRncmV5IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiLz48dGV4dCB4PSIxNTAiIHk9IjI3MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QW5nbGUgcCwgUmFkaXVzIFI8L3RleHQ+PC9zdmc+" alt="Formula Check">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Formula is (<span class="fraction"><span class="numerator">p</span><span class="denominator">360</span></span>) × πR².</div>
-        <div class="step">Check options. (D) (<span class="fraction"><span class="numerator">p</span><span class="denominator">720</span></span>) × 2πR² = (<span class="fraction"><span class="numerator">p</span><span class="denominator">360</span></span>) × πR². This matches.</div>
-        <div class="final-answer">Option (D).</div>
-    </div>
-
-</body>
-
-</html>`,
-        examples: `<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Areas Related to Circles - Examples</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
-
-        body {
-            font-family: 'Kalam', cursive;
-            margin: 0;
-            padding: 15px;
-            background: #fff;
-            color: #333;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #6C63FF;
-            padding-bottom: 10px;
-            font-family: 'Nunito', sans-serif;
-        }
-
-        .logo {
-            color: #6C63FF;
-            font-size: 24px;
-            font-weight: 800;
-        }
-
-        .chapter-title {
-            text-align: center;
-            color: #333;
-            font-size: 20px;
-            font-weight: 700;
-            margin: 10px 0;
-            font-family: 'Kalam', cursive;
-        }
-
-        .content-box { background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px; padding: 15px; margin-bottom: 15px; display: flow-root; transition: transform 0.2s ease; }
-
-        .question {
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: #333;
-        }
-
-        .step {
-            margin-bottom: 8px;
-            font-size: 1.1em;
-            color: #000;
-            line-height: 1.5;
-        }
-
-        .final-answer {
-            color: #2E7D32;
-            font-weight: 700;
-            margin-top: 10px;
-            font-size: 1.2em;
-        }
-
-        
-
-        .fraction {
-            display: inline-block;
-            vertical-align: middle;
-            text-align: center;
-            font-size: 0.9em;
-            margin: 0 2px;
-        }
-
-        .numerator {
-            border-bottom: 1px solid #333;
-            display: block;
-            padding: 0 2px;
-        }
-
-        .denominator {
-            display: block;
-            padding: 0 2px;
-        }
-
-        .solution-header {
-            color: #2E7D32;
-            font-weight: 700;
-            margin-bottom: 5px;
-        }
-    
-
-
-img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; height: auto; border: 1px solid #ddd; border-radius: 6px; padding: 5px; background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-@media (max-width: 600px) { img { float: none; display: block; margin: 10px auto; max-width: 100%; } }
-</style>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    renderMathInElement(document.body, {
-      delimiters: [
-        {left: '\\\\(', right: '\\\\)', display: false},
-        {left: '\\\\[', right: '\\\\]', display: true}
-      ]
-    });
-  });
-</script>
-
-<style>
-  body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
-  .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #FF4081 !important; color: #fff !important; }
-  h1, h2, h3, h4, h5, h6 { color: #FF4081 !important; }
-  .question { color: #FF4081 !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
-  .formula { color: #4CAF50 !important; }
-  .true-text { color: #4CAF50 !important; }
-  .false-text { color: #F44336 !important; }
-  table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
-  .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
-  img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #FF4081 !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
-  * { font-family: 'Noto Sans', sans-serif !important; }
-
-  .question { font-size: 0.95em !important; }
-  .sub-question { font-size: 0.9em !important; }
-  .step { font-size: 0.9em !important; }
-  .final-answer { font-size: 0.95em !important; }
-</style>
-</head>
-
-<body>
-
-    
-
-    <div class="content-box">
-        <div class="question">Example 1. Find the area of the sector of a circle with radius 4 cm and of angle 30°.
-            Also, find the area of the corresponding major sector (Use π = 3.14).</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxjaXJjbGUgY3g9IjE1MCIgY3k9IjE1MCIgcj0iMTIwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNIDE1MCAxNTAgTCAxNDkuOTk5OTk5OTk5OTk5OTcgNDAuMCBBIDExMCAxMTAgMCAwIDEgMjA1LjAgNTQuNzM3MjA1NTgzNzExNzU2IFoiIGZpbGw9InBpbmsiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIvPjxsaW5lIHgxPSIxNTAiIHkxPSIxNTAiIHgyPSIxNTAiIHkyPSI0MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+PHRleHQgeD0iMTQwIiB5PSIxMDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjE0Y208L3RleHQ+PHRleHQgeD0iMTgwIiB5PSI4MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NSBtaW48L3RleHQ+PHRleHQgeD0iMTUwIiB5PSIyNSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MTI8L3RleHQ+PHRleHQgeD0iMjA1IiB5PSI0NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MTwvdGV4dD48dGV4dCB4PSIyNTAiIHk9IjkwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4yPC90ZXh0Pjx0ZXh0IHg9IjI3NSIgeT0iMTU1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4zPC90ZXh0Pjwvc3ZnPg==" alt="Sector Area Example">
-        <div class="solution-header">Solution:</div>
-        <div class="step">r = 4 cm. θ = 30°.</div>
-        <div class="step">Area of Sector = (θ/360) × πr²</div>
-        <div class="step">= (<span class="fraction"><span class="numerator">30</span><span class="denominator">360</span></span>) × 3.14 × 16</div>
-        <div class="step">= (<span class="fraction"><span class="numerator">1</span><span class="denominator">12</span></span>) × 3.14 × 16</div>
-        <div class="step">= 4.19 cm².</div>
-        <div class="step">Major Sector Area = Area Circle - Area Minor Sector</div>
-        <div class="step">= 3.14 × 16 - 4.19</div>
-        <div class="step">= 50.24 - 4.19 = 46.05 cm².</div>
-        <div class="final-answer">Sector: 4.19 cm²; Major Sector: 46.05 cm².</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">Example 2. Find the area of the segment AYB shown in Fig., if radius of the circle is 21
-            cm and ∠AOB = 120°. (Use π = <span class="fraction"><span class="numerator">22</span><span class="denominator">7</span></span>)</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxjaXJjbGUgY3g9IjE1MCIgY3k9IjE1MCIgcj0iMTAwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48bGluZSB4MT0iMTUwIiB5MT0iMTUwIiB4Mj0iMjUwIiB5Mj0iMTUwIiBzdHJva2U9ImdyYXkiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWRhc2hhcnJheT0iNCIgZmlsbD0ibm9uZSIvPjxsaW5lIHgxPSIxNTAiIHkxPSIxNTAiIHgyPSIxNTAiIHkyPSIyNTAiIHN0cm9rZT0iZ3JheSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtZGFzaGFycmF5PSI0IiBmaWxsPSJub25lIi8+PGxpbmUgeDE9IjI1MCIgeTE9IjE1MCIgeDI9IjE1MCIgeTI9IjI1MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+PHBhdGggZD0iTSAxNTAgMjUwIEEgMTAwIDEwMCAwIDAgMCAyNTAgMTUwIEwgMTUwIDI1MCBaIiBmaWxsPSJvcmFuZ2UiIG9wYWNpdHk9IjAuNSIvPjx0ZXh0IHg9IjE3MCIgeT0iMTcwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj45MMKwPC90ZXh0Pjx0ZXh0IHg9IjIwMCIgeT0iMTQwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xMGNtPC90ZXh0Pjx0ZXh0IHg9IjIwMCIgeT0iMjIwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5NaW5vciBTZWdtZW50PC90ZXh0Pjx0ZXh0IHg9IjEwMCIgeT0iMTAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5NYWpvciBTZWN0b3I8L3RleHQ+PC9zdmc+" alt="Segment Area Example">
-        <div class="solution-header">Solution:</div>
-        <div class="step">r = 21 cm. θ = 120°.</div>
-        <div class="step">Area of Sector OAYB = (<span class="fraction"><span class="numerator">120</span><span class="denominator">360</span></span>) × (<span class="fraction"><span class="numerator">22</span><span class="denominator">7</span></span>) × 21 × 21</div>
-        <div class="step">= (<span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span>) × 22 × 3 × 21 = 462 cm².</div>
-        <div class="step">Area of Triangle OAB. Draw OM perpendicular to AB.</div>
-        <div class="step">In right ∆ OMA, ∠AOM = 60°.</div>
-        <div class="step">OM = 21 cos 60 = <span class="fraction"><span class="numerator">21</span><span class="denominator">2</span></span>. AM = 21 sin 60 = <span class="fraction"><span class="numerator">21√3</span><span class="denominator">2</span></span>.</div>
-        <div class="step">Base AB = 2AM = 21√3.</div>
-        <div class="step">Area ∆ OAB = (<span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span>) × 21√3 × (<span class="fraction"><span class="numerator">21</span><span class="denominator">2</span></span>) = (<span class="fraction"><span class="numerator">441</span><span class="denominator">4</span></span>)√3 cm².</div>
-        <div class="step">Area of Segment = 462 - (<span class="fraction"><span class="numerator">441</span><span class="denominator">4</span></span>)√3 cm².</div>
-        <div class="step">Using √3 = 1.73, Area = 462 - 190.95 = 271.05 cm².</div>
-        <div class="final-answer">Area = 271.05 cm².</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">Example 3. Find the area of the shaded region in Fig., where ABCD is a square of side 14
-            cm and APD and BPC are semicircles.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxwYXRoIGQ9Ik0gMTUwIDE1MCBMIDIwMC4wIDYzLjM5NzQ1OTYyMTU1NjE0IEEgMTAwIDEwMCAwIDAgMSAyNTAuMCAxNDkuOTk5OTk5OTk5OTk5OTcgWiIgZmlsbD0ibGlnaHRjeWFuIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiLz48cGF0aCBkPSJNIDIwMC4wIDYzLjM5NzQ1OTYyMTU1NjE0IEEgMTAwIDEwMCAwIDAgMSAyNTAuMCAxNDkuOTk5OTk5OTk5OTk5OTcgTCAyMDAuMCA2My4zOTc0NTk2MjE1NTYxNCBaIiBmaWxsPSJjeWFuIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiLz48dGV4dCB4PSIxODAiIHk9IjE1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NjDCsDwvdGV4dD48dGV4dCB4PSIyMTAiIHk9IjEzMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MjFjbTwvdGV4dD48L3N2Zz4=" alt="Semicircles in Square">
-        <div class="solution-header">Solution:</div>
-        <div class="step">Side of square = 14 cm. Radius of semicircle = <span class="fraction"><span class="numerator">14</span><span class="denominator">2</span></span> = 7 cm.</div>
-        <div class="step">Area of Square = 14 × 14 = 196 cm².</div>
-        <div class="step">Area of 2 Semicircles = 2 × (<span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span>)πr² = πr².</div>
-        <div class="step">= (<span class="fraction"><span class="numerator">22</span><span class="denominator">7</span></span>) × 7 × 7 = 154 cm².</div>
-        <div class="step">Area of Shaded = Area Square - Area 2 Semicircles.</div>
-        <div class="step">= 196 - 154 = 42 cm².</div>
-        <div class="final-answer">Area = 42 cm².</div>
-    </div>
-
-</body>
-
-</html>`
+  id: "ch11",
+  number: 11,
+  title: "Areas Related to Circles",
+  introduction: "In this chapter, we explore geometric measurements of planar regions associated with circles, including the area of sectors, segments, lengths of circular arcs, and combination figures with squares, polygons, and clock mechanisms.",
+  definitions: [
+    {
+        "term": "Circumference",
+        "description": "The perimeter or boundary length of a circle, given by C = 2πr = πd."
+    },
+    {
+        "term": "Arc of a Circle",
+        "description": "A continuous portion of the circumference bounded between two distinct points."
+    },
+    {
+        "term": "Sector of a Circle",
+        "description": "The circular region enclosed between two radii and the corresponding arc connecting their endpoints."
+    },
+    {
+        "term": "Segment of a Circle",
+        "description": "The circular region enclosed between a chord and the corresponding arc."
+    },
+    {
+        "term": "Quadrant of a Circle",
+        "description": "A sector formed by two mutually perpendicular radii, representing exactly one-quarter of a circle (central angle 90°)."
+    },
+    {
+        "term": "Semicircle",
+        "description": "A sector or segment formed by a diameter, representing exactly one-half of a circle (central angle 180°)."
     }
+],
+  keyPoints: [
+    "Circumference of a circle = 2πr; Area of a circle = πr².",
+    "Length of an arc of a sector with central angle θ is l = (θ / 360°) × 2πr.",
+    "Area of a sector of a circle with central angle θ is Area = (θ / 360°) × πr².",
+    "Direct relation between arc length and sector area: Area = (1/2) × l × r.",
+    "Area of minor segment = Area of sector − Area of corresponding triangle.",
+    "Area of major segment = Area of circle − Area of minor segment.",
+    "Area of triangle ΔOAB with central angle θ: Area = (1/2)r² sin θ.",
+    "For an equilateral triangle (θ = 60°), Area = (√3 / 4) r².",
+    "The minute hand of a clock describes an angle of 6° in 1 minute (30° in 5 minutes)."
+],
+  formulas: [
+    {
+        "name": "Circumference of Circle",
+        "formula": "C = 2πr = πd"
+    },
+    {
+        "name": "Area of Circle",
+        "formula": "A = πr²"
+    },
+    {
+        "name": "Length of Arc (l)",
+        "formula": "l = (θ / 360°) × 2πr"
+    },
+    {
+        "name": "Area of Sector",
+        "formula": "Area = (θ / 360°) × πr² = (1/2) l r"
+    },
+    {
+        "name": "Area of Minor Segment",
+        "formula": "Area = Sector Area − (1/2)r² sin θ"
+    },
+    {
+        "name": "Area of Major Segment",
+        "formula": "Area = πr² − Area(Minor Segment)"
+    },
+    {
+        "name": "Area of Quadrant",
+        "formula": "Area = (1/4) πr²"
+    }
+],
+  crux: [
+    "Always identify radius r and central angle θ first before attempting any calculation.",
+    "For segments, draw altitude from centre to chord to partition triangle into two right triangles or use (1/2)r² sin θ.",
+    "Check whether the question instructs to use π = 22/7 or π = 3.14, and whether √3 is given as 1.73 or 1.732.",
+    "In combination figures, decompose the region into basic components (Square, Circles, Sectors, Equilateral Triangles) and subtract unshaded portions."
+],
+  exercises: [
+    {
+        "id": "examples",
+        "name": "Examples",
+        "questions": []
+    },
+    {
+        "id": "exercise1",
+        "name": "Exercise 11.1",
+        "questions": []
+    }
+],
+  examples: [],
+  theorems: [],
+  mcqs: [
+    {
+        "id": "ch11-mcq-1",
+        "question": "If the perimeter and the area of a circle are numerically equal, then the radius of the circle is:",
+        "options": [
+            "A):   π units",
+            "B):   2 units",
+            "C):   4 units",
+            "D):   7 units"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Given: 2πr = πr². Dividing both sides by πr (r ≠ 0) gives r = 2 units."
+    },
+    {
+        "id": "ch11-mcq-2",
+        "question": "Area of a sector of central angle p (in degrees) of a circle with radius R is:",
+        "options": [
+            "A):   (p/180) × 2πR",
+            "B):   (p/180) × πR²",
+            "C):   (p/360) × 2πR",
+            "D):   (p/720) × 2πR²"
+        ],
+        "correctAnswer": "D",
+        "explanation": "The standard sector formula is (p/360) × πR². Multiplying numerator and denominator by 2 gives (p/720) × 2πR²."
+    },
+    {
+        "id": "ch11-mcq-3",
+        "question": "If the ratio of the areas of two circles is 4 : 9, then the ratio of their circumferences is:",
+        "options": [
+            "A):   2 : 3",
+            "B):   4 : 9",
+            "C):   3 : 2",
+            "D):   16 : 81"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Ratio of areas = (r₁/r₂)² = 4/9 ⇒ r₁/r₂ = 2/3. Since circumference is proportional to radius, C₁/C₂ = r₁/r₂ = 2 : 3."
+    },
+    {
+        "id": "ch11-mcq-4",
+        "question": "The area of a circle that can be inscribed in a square of side 6 cm is:",
+        "options": [
+            "A):   36π cm²",
+            "B):   18π cm²",
+            "C):   9π cm²",
+            "D):   12π cm²"
+        ],
+        "correctAnswer": "C",
+        "explanation": "The diameter of the inscribed circle equals the side of the square: 2r = 6 cm ⇒ r = 3 cm. Thus, Area = πr² = π(3)² = 9π cm²."
+    },
+    {
+        "id": "ch11-mcq-5",
+        "question": "The perimeter of a sector of a circle of radius 5.2 cm is 16.4 cm. The area of the sector is:",
+        "options": [
+            "A):   15.6 cm²",
+            "B):   31.2 cm²",
+            "C):   16.4 cm²",
+            "D):   18.8 cm²"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Perimeter = l + 2r = 16.4 ⇒ l + 2(5.2) = 16.4 ⇒ l + 10.4 = 16.4 ⇒ l = 6 cm. Area = (1/2) × l × r = (1/2) × 6 × 5.2 = 15.6 cm²."
+    },
+    {
+        "id": "ch11-mcq-6",
+        "question": "The area of the largest triangle that can be inscribed in a semicircle of radius r is:",
+        "options": [
+            "A):   2r²",
+            "B):   (1/2) r²",
+            "C):   r²",
+            "D):   √2 r²"
+        ],
+        "correctAnswer": "C",
+        "explanation": "The largest triangle has the diameter as its base (2r) and the radius as its maximum altitude (r). Area = (1/2) × 2r × r = r²."
+    },
+    {
+        "id": "ch11-mcq-7",
+        "question": "If the area of a circle is 154 cm², then its perimeter (circumference) is (take π = 22/7):",
+        "options": [
+            "A):   22 cm",
+            "B):   44 cm",
+            "C):   33 cm",
+            "D):   88 cm"
+        ],
+        "correctAnswer": "B",
+        "explanation": "πr² = 154 ⇒ (22/7)r² = 154 ⇒ r² = (154 × 7) / 22 = 49 ⇒ r = 7 cm. Circumference = 2πr = 2 × (22/7) × 7 = 44 cm."
+    },
+    {
+        "id": "ch11-mcq-8",
+        "question": "The area of a quadrant of a circle whose circumference is 22 cm is:",
+        "options": [
+            "A):   3.5 cm²",
+            "B):   22 cm²",
+            "C):   77/4 cm²",
+            "D):   77/8 cm²"
+        ],
+        "correctAnswer": "D",
+        "explanation": "2πr = 22 ⇒ 2 × (22/7) × r = 22 ⇒ r = 7/2 cm. Area of quadrant = (1/4)πr² = (1/4) × (22/7) × (7/2)² = 77/8 cm² = 9.625 cm²."
+    },
+    {
+        "id": "ch11-mcq-9",
+        "question": "A cow is tied with a rope of length 14 m at one corner of a rectangular field. The area of the field the cow can graze is:",
+        "options": [
+            "A):   154 m²",
+            "B):   200 m²",
+            "C):   308 m²",
+            "D):   616 m²"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Corner angle is 90°, so grazing area is a quadrant of radius 14 m: Area = (1/4) × (22/7) × 14 × 14 = (1/4) × 616 = 154 m²."
+    },
+    {
+        "id": "ch11-mcq-10",
+        "question": "If the sum of circumferences of two circles of radii R₁ and R₂ is equal to the circumference of a circle of radius R, then:",
+        "options": [
+            "A):   R₁ + R₂ > R",
+            "B):   R₁ + R₂ = R",
+            "C):   R₁ + R₂ < R",
+            "D):   R₁² + R₂² = R²"
+        ],
+        "correctAnswer": "B",
+        "explanation": "2πR₁ + 2πR₂ = 2πR ⇒ 2π(R₁ + R₂) = 2πR ⇒ R₁ + R₂ = R."
+    },
+    {
+        "id": "ch11-mcq-11",
+        "question": "The angle described by the minute hand of a clock in 20 minutes is:",
+        "options": [
+            "A):   90°",
+            "B):   100°",
+            "C):   120°",
+            "D):   150°"
+        ],
+        "correctAnswer": "C",
+        "explanation": "The minute hand moves 360° in 60 minutes, which is 6° per minute. In 20 minutes, the angle swept is 20 × 6° = 120°."
+    },
+    {
+        "id": "ch11-mcq-12",
+        "question": "The area of a square inscribed in a circle of radius 8 cm is:",
+        "options": [
+            "A):   64 cm²",
+            "B):   100 cm²",
+            "C):   144 cm²",
+            "D):   128 cm²"
+        ],
+        "correctAnswer": "D",
+        "explanation": "The diagonal of the inscribed square equals the diameter: d = 2 × 8 = 16 cm. Area of square = d² / 2 = 16² / 2 = 256 / 2 = 128 cm²."
+    },
+    {
+        "id": "ch11-mcq-13",
+        "question": "If an arc of a circle of radius 14 cm subtends an angle of 60° at the centre, then the length of the arc is:",
+        "options": [
+            "A):   44/3 cm",
+            "B):   22 cm",
+            "C):   88/3 cm",
+            "D):   14 cm"
+        ],
+        "correctAnswer": "A",
+        "explanation": "l = (θ/360) × 2πr = (60/360) × 2 × (22/7) × 14 = (1/6) × 88 = 44/3 cm."
+    },
+    {
+        "id": "ch11-mcq-14",
+        "question": "If the sum of the areas of two circles with radii R₁ and R₂ is equal to the area of a circle of radius R, then:",
+        "options": [
+            "A):   R₁ + R₂ = R",
+            "B):   R₁² + R₂² = R²",
+            "C):   R₁ + R₂ < R",
+            "D):   R₁² + R₂² > R²"
+        ],
+        "correctAnswer": "B",
+        "explanation": "πR₁² + πR₂² = πR² ⇒ π(R₁² + R₂²) = πR² ⇒ R₁² + R₂² = R²."
+    },
+    {
+        "id": "ch11-mcq-15",
+        "question": "An umbrella has 8 ribs equally spaced. Assuming it to be a flat circle, the angle between two consecutive ribs is:",
+        "options": [
+            "A):   30°",
+            "B):   40°",
+            "C):   45°",
+            "D):   60°"
+        ],
+        "correctAnswer": "C",
+        "explanation": "The 8 ribs divide the complete angle of 360° into 8 equal parts: Angle = 360° / 8 = 45°."
+    },
+    {
+        "id": "ch11-mcq-16",
+        "question": "The area of a sector of radius 6 cm whose arc length is 10 cm is:",
+        "options": [
+            "A):   60 cm²",
+            "B):   45 cm²",
+            "C):   35 cm²",
+            "D):   30 cm²"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Using the direct relation Area = (1/2) × l × r = (1/2) × 10 × 6 = 30 cm²."
+    },
+    {
+        "id": "ch11-mcq-17",
+        "question": "If the circumference of a circle increases from 4π to 8π, its area becomes:",
+        "options": [
+            "A):   Doubled",
+            "B):   Halved",
+            "C):   4 times",
+            "D):   8 times"
+        ],
+        "correctAnswer": "C",
+        "explanation": "When circumference doubles, radius doubles (r' = 2r). Area is proportional to r², so new area = (2)² = 4 times the initial area."
+    },
+    {
+        "id": "ch11-mcq-18",
+        "question": "The area of a sector of central angle 90° in a circle of radius 10 cm is (take π = 3.14):",
+        "options": [
+            "A):   78.5 cm²",
+            "B):   50 cm²",
+            "C):   28.5 cm²",
+            "D):   157 cm²"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Area = (90/360) × πr² = (1/4) × 3.14 × 10² = (1/4) × 314 = 78.5 cm²."
+    },
+    {
+        "id": "ch11-mcq-19",
+        "question": "A steel wire when bent in the form of a square encloses an area of 121 cm². If the same wire is bent into a circle, the area of the circle is:",
+        "options": [
+            "A):   121 cm²",
+            "B):   154 cm²",
+            "C):   176 cm²",
+            "D):   144 cm²"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Side of square = √121 = 11 cm ⇒ Wire length = 4 × 11 = 44 cm. For the circle: 2πr = 44 ⇒ r = 7 cm. Area = πr² = (22/7) × 7² = 154 cm²."
+    },
+    {
+        "id": "ch11-mcq-20",
+        "question": "The diameter of a car wheel is 70 cm. The distance covered by the wheel in 100 complete revolutions is:",
+        "options": [
+            "A):   110 m",
+            "B):   154 m",
+            "C):   220 m",
+            "D):   440 m"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Circumference = πd = (22/7) × 70 cm = 220 cm = 2.2 m. In 100 revolutions: Distance = 100 × 2.2 m = 220 m."
+    },
+    {
+        "id": "ch11-mcq-21",
+        "question": "In a circle of radius 21 cm, the area of a sector of angle 60° is:",
+        "options": [
+            "A):   154 cm²",
+            "B):   220 cm²",
+            "C):   231 cm²",
+            "D):   462 cm²"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Area = (60/360) × (22/7) × 21² = (1/6) × 22 × 3 × 21 = 11 × 21 = 231 cm²."
+    },
+    {
+        "id": "ch11-mcq-22",
+        "question": "The perimeter of a semicircular protractor of radius r is:",
+        "options": [
+            "A):   πr",
+            "B):   πr + 2r",
+            "C):   2πr + r",
+            "D):   πr + r"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The perimeter of a closed semicircle consists of the curved semicircular arc (πr) plus the straight diameter base (2r), giving πr + 2r = r(π + 2)."
+    },
+    {
+        "id": "ch11-mcq-23",
+        "question": "A brooch has diameter 35 mm with 5 diameters dividing it into 10 equal sectors. The length of silver wire required is:",
+        "options": [
+            "A):   250 mm",
+            "B):   270 mm",
+            "C):   300 mm",
+            "D):   285 mm"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Wire length = Circumference + 5 diameters = πd + 5d = (22/7 × 35) + (5 × 35) = 110 + 175 = 285 mm."
+    },
+    {
+        "id": "ch11-mcq-24",
+        "question": "The area of a segment of a circle of radius 10 cm with central angle 90° is (take π = 3.14):",
+        "options": [
+            "A):   28.5 cm²",
+            "B):   50 cm²",
+            "C):   78.5 cm²",
+            "D):   25 cm²"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Area of sector = (1/4) × 3.14 × 100 = 78.5 cm². Triangle area = (1/2) × 10 × 10 = 50 cm². Segment = 78.5 − 50 = 28.5 cm²."
+    },
+    {
+        "id": "ch11-mcq-25",
+        "question": "If a round table cover has 6 equal designs outside a regular hexagon of radius 28 cm, the central angle of each design sector is:",
+        "options": [
+            "A):   45°",
+            "B):   60°",
+            "C):   72°",
+            "D):   90°"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Since the 6 designs are equally spaced around the 360° circle, each sector subtends an angle of 360° / 6 = 60° at the centre."
+    }
+],
+  isHtmlView: true,
+  htmlOverview: "\n\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; }\n  .frac .den { padding: 1px 4px; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(100, 221, 23, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #64DD17; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 14px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(100, 221, 23, 0.25); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #64DD17; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #CCFF90; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(100, 221, 23, 0.15); border: 1px solid #64DD17; color: #CCFF90; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 6px 0; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(100, 221, 23, 0.4); border-radius: 10px; padding: 14px; margin: 16px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #FFFFFF; border-radius: 8px; padding: 10px 8px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.25); }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 10px; font-weight: 500; }\n  .table-card { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 14px 0; border-radius: 8px; }\n  .table-card table { width: 100%; border-collapse: collapse; text-align: center; }\n  .table-card th { background: rgba(100, 221, 23, 0.2); color: #CCFF90; border: 1px solid rgba(100, 221, 23, 0.35); padding: 10px; font-weight: 700; }\n  .table-card td { border: 1px solid rgba(100, 221, 23, 0.2); padding: 9px; color: #E2E8F0; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Hero Header -->\n  <div style=\"background: linear-gradient(135deg, rgba(100, 221, 23, 0.22), rgba(67, 160, 71, 0.15)); border: 1.5px solid #64DD17; border-radius: 14px; padding: 18px; margin-bottom: 20px; text-align: center;\">\n    <div style=\"font-size: 22px; font-weight: 800; color: #64DD17; margin-bottom: 6px;\">\n      🍕 Chapter 11: Areas Related to Circles\n    </div>\n    <div style=\"color: #CBD5E1; font-size: 14.5px; line-height: 1.5;\">\n      Class 10 NCERT Mathematics &bull; Sectors, Segments, Arc Lengths, Triangle Decomposition &amp; Master Formula Cheat Sheet\n    </div>\n  </div>\n\n  <!-- 1. Circumference & Area of Circle -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 1. Perimeter (Circumference) &amp; Area of a Circle</div>\n    <div class=\"q-text\">\n      The perimeter of a circle is called its <b>circumference</b>. The ratio of the circumference of any circle to its diameter is always constant and represented by the Greek letter <b>&pi;</b> (pi):\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-step\">\n        <div>&bull; <b>Circumference:</b> <i>C</i> = 2 &pi; <i>r</i> = &pi; <i>d</i> &nbsp; <span class=\"reason\">[where r is radius, d is diameter]</span></div>\n        <div>&bull; <b>Area of Circle:</b> <i>A</i> = &pi; <i>r</i><sup>2</sup> = <span class=\"frac\"><span class=\"num\">&pi; <i>d</i><sup>2</sup></span><span class=\"den\">4</span></span></div>\n        <div>&bull; <b>Quadrant of a Circle:</b> <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span> of a circle &rArr; Area = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span> &pi; <i>r</i><sup>2</sup>, &nbsp; Arc length = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span> (2 &pi; <i>r</i>) = <span class=\"frac\"><span class=\"num\">&pi; <i>r</i></span><span class=\"den\">2</span></span></div>\n        <div>&bull; <b>Semicircle:</b> <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> of a circle &rArr; Area = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &pi; <i>r</i><sup>2</sup>, &nbsp; Perimeter = &pi; <i>r</i> + 2<i>r</i></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- 2. Sector of a Circle -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 2. Sector of a Circle &amp; Arc Length Formulations</div>\n    <div class=\"q-text\">\n      The portion (or part) of the circular region enclosed by two radii and the corresponding arc is called a <b>sector</b> of the circle:\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-step\">\n        <div>&bull; <b style=\"color: #CCFF90;\">Minor Sector:</b> Sector corresponding to an angle &theta; &lt; 180&deg;.</div>\n        <div>&bull; <b style=\"color: #CCFF90;\">Major Sector:</b> Unshaded larger remaining part corresponding to angle (360&deg; &minus; &theta;).</div>\n        <div style=\"margin-top: 10px; background: rgba(100, 221, 23, 0.1); padding: 10px; border-radius: 8px;\">\n          <b style=\"color: #64DD17;\">Master Sector Formulas (for central angle &theta; in degrees):</b>\n          <div style=\"margin: 8px 0;\">\n            1. <b>Area of Sector:</b> <span class=\"prop-chip\" style=\"font-size: 15.5px; padding: 4px 12px;\">Area = <span class=\"frac\"><span class=\"num\">&theta;</span><span class=\"den\">360&deg;</span></span> &times; &pi; <i>r</i><sup>2</sup></span>\n          </div>\n          <div style=\"margin: 8px 0;\">\n            2. <b>Length of an Arc:</b> <span class=\"prop-chip\" style=\"font-size: 15.5px; padding: 4px 12px;\"><i>l</i> = <span class=\"frac\"><span class=\"num\">&theta;</span><span class=\"den\">360&deg;</span></span> &times; 2 &pi; <i>r</i></span>\n          </div>\n          <div style=\"margin: 8px 0;\">\n            3. <b>Direct Arc-Area Relation:</b> <span class=\"prop-chip\" style=\"font-size: 15.5px; padding: 4px 12px;\">Area = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> <i>l</i> &times; <i>r</i></span>\n          </div>\n          <div style=\"margin: 8px 0;\">\n            4. <b>Perimeter of Sector:</b> Perimeter = <i>l</i> + 2<i>r</i> = <span class=\"frac\"><span class=\"num\">&theta;</span><span class=\"den\">360&deg;</span></span> (2 &pi; <i>r</i>) + 2<i>r</i>\n          </div>\n        </div>\n      </div>\n    </div>\n\n    <!-- Diagram: Sector -->\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 200\" width=\"380\" height=\"200\">\n          <circle cx=\"190\" cy=\"100\" r=\"70\" fill=\"#F8FAFC\" stroke=\"#94A3B8\" stroke-width=\"1.5\"/>\n          <!-- Minor Sector shaded -->\n          <!-- O at (190, 100), angle 60 deg: from -30 to +30 or 210 to 330 -->\n          <path d=\"M190,100 L250.62,65 A70,70 0 0,0 129.38,65 Z\" fill=\"rgba(100, 221, 23, 0.25)\" stroke=\"#64DD17\" stroke-width=\"2.5\"/>\n          <circle cx=\"190\" cy=\"100\" r=\"4\" fill=\"#334155\"/>\n          <text x=\"190\" y=\"118\" font-size=\"13\" font-weight=\"bold\" fill=\"#334155\" text-anchor=\"middle\">O</text>\n          <text x=\"190\" y=\"75\" font-size=\"12\" font-weight=\"bold\" fill=\"#64DD17\" text-anchor=\"middle\">&theta;</text>\n\n          <text x=\"120\" y=\"55\" font-size=\"13\" font-weight=\"bold\" fill=\"#0284C7\">A</text>\n          <text x=\"255\" y=\"55\" font-size=\"13\" font-weight=\"bold\" fill=\"#0284C7\">B</text>\n          <text x=\"190\" y=\"24\" font-size=\"12\" font-weight=\"bold\" fill=\"#64DD17\" text-anchor=\"middle\">Minor Arc APB</text>\n          <text x=\"190\" y=\"165\" font-size=\"13\" font-weight=\"bold\" fill=\"#64748B\" text-anchor=\"middle\">Major Sector (360&deg; &minus; &theta;)</text>\n        </svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Minor Sector OAPB (angle &theta;) and Major Sector of Circle</div>\n    </div>\n  </div>\n\n  <!-- 3. Segment of a Circle -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 3. Segment of a Circle &amp; Area Decomposition</div>\n    <div class=\"q-text\">\n      The portion of the circular region enclosed between a chord and its corresponding arc is called a <b>segment</b> of the circle:\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-step\">\n        <div>&bull; <b style=\"color: #CCFF90;\">Minor Segment:</b> The region bounded by chord AB and minor arc APB.</div>\n        <div>&bull; <b style=\"color: #CCFF90;\">Major Segment:</b> The region bounded by chord AB and major arc AQB.</div>\n        <div style=\"margin-top: 8px;\">\n          <b>Master Calculation Protocol:</b>\n          <div style=\"padding-left: 12px; margin-top: 4px;\">\n            1. <b>Area of Minor Segment:</b><br/>\n            <div style=\"text-align: center; margin: 8px 0;\">\n              <span class=\"prop-chip\" style=\"font-size: 15px; padding: 6px 14px;\">\n                <b>Area(Minor Segment) = Area(Sector OAPB) &minus; Area(&Delta;OAB)</b>\n              </span>\n            </div>\n            2. <b>Area of Major Segment:</b><br/>\n            <div style=\"text-align: center; margin: 8px 0;\">\n              <span class=\"prop-chip\" style=\"font-size: 15px; padding: 6px 14px;\">\n                <b>Area(Major Segment) = Area(Circle) &minus; Area(Minor Segment)</b>\n              </span>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <!-- 4. Area of Triangle in Circle Matrix -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 4. Master Triangle Area Formulations in Circles</div>\n    <div class=\"q-text\">\n      Calculating <b>Area(&Delta;OAB)</b> for a circle of radius <i>r</i> subtending central angle &theta;:\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"table-card\">\n        <table>\n          <thead>\n            <tr>\n              <th>Central Angle &theta;</th>\n              <th>Triangle Type</th>\n              <th>Area Formula</th>\n              <th>Key Geometric Property</th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr>\n              <td><b>&theta; = 60&deg;</b></td>\n              <td><b>Equilateral Triangle</b><br/>(OA = OB = AB = r)</td>\n              <td><b><span class=\"frac\"><span class=\"num\">&radic;3</span><span class=\"den\">4</span></span> <i>r</i><sup>2</sup></b></td>\n              <td>All three sides are equal to radius <i>r</i>; height <i>h</i> = <span class=\"frac\"><span class=\"num\">&radic;3</span><span class=\"den\">2</span></span> <i>r</i>.</td>\n            </tr>\n            <tr>\n              <td><b>&theta; = 90&deg;</b></td>\n              <td><b>Right-Angled Triangle</b><br/>(Base = r, Height = r)</td>\n              <td><b><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> <i>r</i><sup>2</sup></b></td>\n              <td>Perpendicular legs are both radii of length <i>r</i>.</td>\n            </tr>\n            <tr>\n              <td><b>&theta; = 120&deg;</b></td>\n              <td><b>Obtuse Isosceles Triangle</b></td>\n              <td><b><span class=\"frac\"><span class=\"num\">&radic;3</span><span class=\"den\">4</span></span> <i>r</i><sup>2</sup></b></td>\n              <td>Draw altitude from O to chord AB: height = <span class=\"frac\"><span class=\"num\"><i>r</i></span><span class=\"den\">2</span></span>, base = <i>r</i>&radic;3. Area = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>(<i>r</i>&radic;3)(<span class=\"frac\"><span class=\"num\"><i>r</i></span><span class=\"den\">2</span></span>) = <span class=\"frac\"><span class=\"num\">&radic;3</span><span class=\"den\">4</span></span> <i>r</i><sup>2</sup>.</td>\n            </tr>\n            <tr>\n              <td><b>Any Angle &theta;</b></td>\n              <td><b>Universal Trigonometric Formula</b></td>\n              <td><b><span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> <i>r</i><sup>2</sup> sin &theta;</b></td>\n              <td>Direct 1-line formula valid for all central angles &theta;!</td>\n            </tr>\n          </tbody>\n        </table>\n      </div>\n    </div>\n  </div>\n\n  <!-- 5. Master Revision Formula Cheat Sheet -->\n  <div class=\"q-card\" style=\"border-color: #64DD17;\">\n    <div class=\"q-title\">✦ 5. Master Revision Formula Cheat Sheet</div>\n    <div class=\"sol-box\">\n      <div class=\"table-card\">\n        <table>\n          <thead>\n            <tr>\n              <th>Concept / Quantity</th>\n              <th>Standard Formula</th>\n              <th>Key Note / Speed Shortcut</th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr>\n              <td><b>Circumference</b></td>\n              <td><b><i>C</i> = 2 &pi; <i>r</i> = &pi; <i>d</i></b></td>\n              <td>If <i>r</i> = 7 cm &rArr; <i>C</i> = 44 cm, Area = 154 cm<sup>2</sup>.</td>\n            </tr>\n            <tr>\n              <td><b>Area of Circle</b></td>\n              <td><b><i>A</i> = &pi; <i>r</i><sup>2</sup></b></td>\n              <td>Area ratio = (Radius ratio)<sup>2</sup>.</td>\n            </tr>\n            <tr>\n              <td><b>Arc Length (l)</b></td>\n              <td><b><i>l</i> = <span class=\"frac\"><span class=\"num\">&theta;</span><span class=\"den\">360&deg;</span></span> &times; 2 &pi; <i>r</i></b></td>\n              <td>Length of perimeter arc subtending angle &theta;.</td>\n            </tr>\n            <tr>\n              <td><b>Area of Sector</b></td>\n              <td><b><span class=\"frac\"><span class=\"num\">&theta;</span><span class=\"den\">360&deg;</span></span> &times; &pi; <i>r</i><sup>2</sup> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> <i>l</i> &times; <i>r</i></b></td>\n              <td>Fraction of total circular area.</td>\n            </tr>\n            <tr>\n              <td><b>Area of Minor Segment</b></td>\n              <td><b>Sector Area &minus; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> <i>r</i><sup>2</sup> sin &theta;</b></td>\n              <td>Subtract triangle area from sector.</td>\n            </tr>\n            <tr>\n              <td><b>Clock Minute Hand</b></td>\n              <td><b>Speed = 6&deg; per minute</b></td>\n              <td>In 5 min &rArr; &theta; = 30&deg;; In 15 min &rArr; &theta; = 90&deg;.</td>\n            </tr>\n            <tr>\n              <td><b>Inscribed Square in Circle</b></td>\n              <td><b>Side <i>a</i> = <i>r</i>&radic;2, Area = 2<i>r</i><sup>2</sup></b></td>\n              <td>Diagonal of square = diameter 2<i>r</i>.</td>\n            </tr>\n            <tr>\n              <td><b>Inscribed Circle in Square</b></td>\n              <td><b>Radius <i>r</i> = <span class=\"frac\"><span class=\"num\"><i>a</i></span><span class=\"den\">2</span></span>, Area = <span class=\"frac\"><span class=\"num\">&pi; <i>a</i><sup>2</sup></span><span class=\"den\">4</span></span></b></td>\n              <td>Diameter of circle = side of square <i>a</i>.</td>\n            </tr>\n          </tbody>\n        </table>\n      </div>\n    </div>\n  </div>\n\n</div>\n",
+  htmlExercises: {
+    examples: "\n\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; }\n  .frac .den { padding: 1px 4px; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(100, 221, 23, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #64DD17; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 14px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(100, 221, 23, 0.25); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #64DD17; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #CCFF90; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(100, 221, 23, 0.15); border: 1px solid #64DD17; color: #CCFF90; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 6px 0; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(100, 221, 23, 0.4); border-radius: 10px; padding: 14px; margin: 16px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #FFFFFF; border-radius: 8px; padding: 10px 8px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.25); }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 10px; font-weight: 500; }\n  .table-card { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 14px 0; border-radius: 8px; }\n  .table-card table { width: 100%; border-collapse: collapse; text-align: center; }\n  .table-card th { background: rgba(100, 221, 23, 0.2); color: #CCFF90; border: 1px solid rgba(100, 221, 23, 0.35); padding: 10px; font-weight: 700; }\n  .table-card td { border: 1px solid rgba(100, 221, 23, 0.2); padding: 9px; color: #E2E8F0; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Header Card -->\n  <div style=\"background: linear-gradient(135deg, rgba(100, 221, 23, 0.2), rgba(67, 160, 71, 0.1)); border: 1.5px solid #64DD17; border-radius: 12px; padding: 14px 18px; margin-bottom: 20px;\">\n    <div style=\"font-size: 19px; font-weight: 800; color: #64DD17; margin-bottom: 4px;\">\n      Areas Related to Circles &bull; Solved Examples\n    </div>\n    <div style=\"color: #FFFFFF; font-size: 15px; font-weight: 500;\">\n      Step-by-Step Textbook Solved Examples (Example 1 to Example 3)\n    </div>\n  </div>\n\n  <!-- EXAMPLE 1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 1:</div>\n    <div class=\"q-text\">\n      Find the area of the sector of a circle with radius 4 cm and of angle 30&deg;. Also, find the area of the corresponding major sector (Use &pi; = 3.14).\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 180\" width=\"340\" height=\"180\">\n          <circle cx=\"170\" cy=\"90\" r=\"60\" fill=\"#F8FAFC\" stroke=\"#94A3B8\" stroke-width=\"1.5\"/>\n          <path d=\"M170,90 L221.96,60 A60,60 0 0,0 221.96,120 Z\" fill=\"rgba(100, 221, 23, 0.3)\" stroke=\"#64DD17\" stroke-width=\"2\"/>\n          <circle cx=\"170\" cy=\"90\" r=\"3.5\" fill=\"#334155\"/>\n          <text x=\"155\" y=\"95\" font-size=\"12\" font-weight=\"bold\" fill=\"#334155\">O</text>\n          <text x=\"188\" y=\"94\" font-size=\"11\" font-weight=\"bold\" fill=\"#64DD17\">30&deg;</text>\n          <text x=\"235\" y=\"58\" font-size=\"12\" font-weight=\"bold\" fill=\"#0284C7\">A</text>\n          <text x=\"235\" y=\"128\" font-size=\"12\" font-weight=\"bold\" fill=\"#0284C7\">B</text>\n          <text x=\"195\" y=\"70\" font-size=\"11\" font-weight=\"bold\" fill=\"#64748B\">r = 4 cm</text>\n        </svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Sector OAPB with radius r = 4 cm and central angle &theta; = 30&deg;</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Easy Step-by-Step Solution:</div>\n      <div class=\"sol-step\">\n        <div>Given: Radius <i>r</i> = 4 cm, Angle of the sector &theta; = 30&deg;.</div>\n        <div style=\"margin-top: 6px;\"><b>1. Area of the Minor Sector:</b></div>\n        <div style=\"padding-left: 12px;\">Area = <span class=\"frac\"><span class=\"num\">&theta;</span><span class=\"den\">360&deg;</span></span> &times; &pi; <i>r</i><sup>2</sup></div>\n        <div style=\"padding-left: 12px;\">= <span class=\"frac\"><span class=\"num\">30&deg;</span><span class=\"den\">360&deg;</span></span> &times; 3.14 &times; 4<sup>2</sup></div>\n        <div style=\"padding-left: 12px;\">= <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">12</span></span> &times; 3.14 &times; 16 = <span class=\"frac\"><span class=\"num\">3.14 &times; 4</span><span class=\"den\">3</span></span> = <span class=\"frac\"><span class=\"num\">12.56</span><span class=\"den\">3</span></span> = <b>4.19 cm<sup>2</sup></b> (approx).</div>\n\n        <div style=\"margin-top: 8px;\"><b>2. Area of the Corresponding Major Sector:</b></div>\n        <div style=\"padding-left: 12px;\">Area of Major Sector = Area of Circle &minus; Area of Minor Sector</div>\n        <div style=\"padding-left: 12px;\">= &pi; <i>r</i><sup>2</sup> &minus; 4.19</div>\n        <div style=\"padding-left: 12px;\">= (3.14 &times; 16) &minus; 4.19 = 50.24 &minus; 4.19 = <b>46.05 cm<sup>2</sup></b> (approx).</div>\n        <div style=\"padding-left: 12px; margin-top: 4px;\"><span class=\"reason\">[Alternatively: <span class=\"frac\"><span class=\"num\">360&deg; &minus; 30&deg;</span><span class=\"den\">360&deg;</span></span> &times; &pi; r<sup>2</sup> = <span class=\"frac\"><span class=\"num\">330</span><span class=\"den\">360&deg;</span></span> &times; 3.14 &times; 16 = <span class=\"frac\"><span class=\"num\">11</span><span class=\"den\">12</span></span> &times; 50.24 = 46.05 cm<sup>2</sup>]</span></div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">Minor Sector = 4.19 cm<sup>2</sup>, &nbsp; Major Sector = 46.05 cm<sup>2</sup></span>\n      </div>\n    </div>\n  </div>\n\n  <!-- EXAMPLE 2 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 2:</div>\n    <div class=\"q-text\">\n      Find the area of the segment <i>AYB</i> shown in the figure, if radius of the circle is 21 cm and &ang;<i>AOB</i> = 120&deg; (Use &pi; = <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span>, &radic;3 = 1.732).\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 200\" width=\"360\" height=\"200\">\n          <circle cx=\"180\" cy=\"100\" r=\"70\" fill=\"#F8FAFC\" stroke=\"#94A3B8\" stroke-width=\"1.5\"/>\n          <!-- Minor Segment AYB -->\n          <!-- O at (180, 100), A at (119.38, 65), B at (240.62, 65) -->\n          <path d=\"M119.38,65 Q180,25 240.62,65 Z\" fill=\"rgba(100, 221, 23, 0.35)\" stroke=\"#64DD17\" stroke-width=\"2\"/>\n          <line x1=\"119.38\" y1=\"65\" x2=\"240.62\" y2=\"65\" stroke=\"#0284C7\" stroke-width=\"2\"/>\n          <line x1=\"180\" y1=\"100\" x2=\"119.38\" y2=\"65\" stroke=\"#DC2626\" stroke-width=\"2\"/>\n          <line x1=\"180\" y1=\"100\" x2=\"240.62\" y2=\"65\" stroke=\"#DC2626\" stroke-width=\"2\"/>\n          <line x1=\"180\" y1=\"100\" x2=\"180\" y2=\"65\" stroke=\"#64748B\" stroke-dasharray=\"3,3\" stroke-width=\"1.5\"/>\n\n          <circle cx=\"180\" cy=\"100\" r=\"3.5\" fill=\"#334155\"/>\n          <text x=\"180\" y=\"118\" font-size=\"12\" font-weight=\"bold\" fill=\"#334155\" text-anchor=\"middle\">O</text>\n          <text x=\"180\" y=\"85\" font-size=\"11\" font-weight=\"bold\" fill=\"#DC2626\" text-anchor=\"middle\">120&deg;</text>\n          <text x=\"105\" y=\"65\" font-size=\"13\" font-weight=\"bold\" fill=\"#0284C7\">A</text>\n          <text x=\"250\" y=\"65\" font-size=\"13\" font-weight=\"bold\" fill=\"#0284C7\">B</text>\n          <text x=\"180\" y=\"40\" font-size=\"12\" font-weight=\"bold\" fill=\"#64DD17\" text-anchor=\"middle\">Y</text>\n          <text x=\"135\" y=\"92\" font-size=\"11\" font-weight=\"bold\" fill=\"#DC2626\">21 cm</text>\n        </svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Segment AYB with radius r = 21 cm and &ang;AOB = 120&deg;</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Easy Step-by-Step Solution:</div>\n      <div class=\"sol-step\">\n        <div>Radius <i>r</i> = 21 cm, Central angle &theta; = 120&deg;.</div>\n        <div style=\"margin-top: 6px;\"><b>1. Area of the Sector OAYB:</b></div>\n        <div style=\"padding-left: 12px;\">Area = <span class=\"frac\"><span class=\"num\">&theta;</span><span class=\"den\">360&deg;</span></span> &times; &pi; <i>r</i><sup>2</sup></div>\n        <div style=\"padding-left: 12px;\">= <span class=\"frac\"><span class=\"num\">120&deg;</span><span class=\"den\">360&deg;</span></span> &times; <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; 21 &times; 21</div>\n        <div style=\"padding-left: 12px;\">= <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span> &times; 22 &times; 3 &times; 21 = 22 &times; 21 = <b>462 cm<sup>2</sup></b>.</div>\n\n        <div style=\"margin-top: 8px;\"><b>2. Area of &Delta;OAB:</b></div>\n        <div>Draw perpendicular <i>OM</i> &perp; <i>AB</i>.</div>\n        <div style=\"padding-left: 12px;\">Since &Delta;<i>OAB</i> is isosceles (<i>OA</i> = <i>OB</i> = 21 cm), <i>OM</i> bisects &ang;<i>AOB</i> &rArr; &ang;<i>AOM</i> = &ang;<i>BOM</i> = 60&deg;.</div>\n        <div style=\"padding-left: 12px;\">In right &Delta;<i>OMA</i>:</div>\n        <div style=\"padding-left: 18px;\">&bull; <span class=\"frac\"><span class=\"num\"><i>OM</i></span><span class=\"den\"><i>OA</i></span></span> = cos 60&deg; = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &rArr; <i>OM</i> = 21 &times; <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> = <span class=\"frac\"><span class=\"num\">21</span><span class=\"den\">2</span></span> cm.</div>\n        <div style=\"padding-left: 18px;\">&bull; <span class=\"frac\"><span class=\"num\"><i>AM</i></span><span class=\"den\"><i>OA</i></span></span> = sin 60&deg; = <span class=\"frac\"><span class=\"num\">&radic;3</span><span class=\"den\">2</span></span> &rArr; <i>AM</i> = <span class=\"frac\"><span class=\"num\">21&radic;3</span><span class=\"den\">2</span></span> cm.</div>\n        <div style=\"padding-left: 18px;\">&bull; <i>AB</i> = 2 &times; <i>AM</i> = 21&radic;3 cm.</div>\n        <div style=\"padding-left: 12px; margin-top: 6px;\">Area(&Delta;<i>OAB</i>) = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &times; Base &times; Height = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &times; 21&radic;3 &times; <span class=\"frac\"><span class=\"num\">21</span><span class=\"den\">2</span></span> = <b><span class=\"frac\"><span class=\"num\">441&radic;3</span><span class=\"den\">4</span></span> cm<sup>2</sup></b>.</div>\n\n        <div style=\"margin-top: 8px;\"><b>3. Area of Segment AYB:</b></div>\n        <div style=\"padding-left: 12px;\">Area = Area(Sector OAYB) &minus; Area(&Delta;<i>OAB</i>)</div>\n        <div style=\"padding-left: 12px;\">= <b>(462 &minus; <span class=\"frac\"><span class=\"num\">441&radic;3</span><span class=\"den\">4</span></span>) cm<sup>2</sup></b> &nbsp; or &nbsp; <span class=\"frac\"><span class=\"num\">21</span><span class=\"den\">4</span></span> (88 &minus; 21&radic;3) cm<sup>2</sup>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Area of Segment: </span>\n        <span class=\"ans-val\">(462 &minus; <span class=\"frac\"><span class=\"num\">441&radic;3</span><span class=\"den\">4</span></span>) cm<sup>2</sup></span>\n      </div>\n    </div>\n  </div>\n\n  <!-- EXAMPLE 3 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Example 3:</div>\n    <div class=\"q-text\">\n      Find the area of the shaded region in the figure, where <i>ABCD</i> is a square of side 14 cm.\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 240\" width=\"240\" height=\"240\">\n          <rect x=\"20\" y=\"20\" width=\"200\" height=\"200\" fill=\"rgba(100, 221, 23, 0.35)\" stroke=\"#64DD17\" stroke-width=\"2.5\"/>\n          <!-- 4 circular unshaded holes of diameter 100/2=50 px each -->\n          <circle cx=\"70\" cy=\"70\" r=\"45\" fill=\"#FFFFFF\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n          <circle cx=\"170\" cy=\"70\" r=\"45\" fill=\"#FFFFFF\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n          <circle cx=\"70\" cy=\"170\" r=\"45\" fill=\"#FFFFFF\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n          <circle cx=\"170\" cy=\"170\" r=\"45\" fill=\"#FFFFFF\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n\n          <text x=\"12\" y=\"20\" font-size=\"13\" font-weight=\"bold\" fill=\"#334155\">A</text>\n          <text x=\"225\" y=\"20\" font-size=\"13\" font-weight=\"bold\" fill=\"#334155\">B</text>\n          <text x=\"225\" y=\"230\" font-size=\"13\" font-weight=\"bold\" fill=\"#334155\">C</text>\n          <text x=\"12\" y=\"230\" font-size=\"13\" font-weight=\"bold\" fill=\"#334155\">D</text>\n        </svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Square ABCD of side 14 cm containing four congruent inscribed circles</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Easy Step-by-Step Solution:</div>\n      <div class=\"sol-step\">\n        <div>Side of square <i>ABCD</i> = 14 cm.</div>\n        <div style=\"padding-left: 12px;\">&rArr; Area of square = (Side)<sup>2</sup> = 14<sup>2</sup> = <b>196 cm<sup>2</sup></b>.</div>\n        <div style=\"margin-top: 6px;\">The square contains four congruent circles mutually touching each other:</div>\n        <div style=\"padding-left: 12px;\">Diameter of each circle = <span class=\"frac\"><span class=\"num\">14</span><span class=\"den\">2</span></span> = 7 cm.</div>\n        <div style=\"padding-left: 12px;\">Radius of each circle <i>r</i> = <span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">2</span></span> cm.</div>\n        <div style=\"margin-top: 6px;\">Area of 1 circle = &pi; <i>r</i><sup>2</sup> = <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; <span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">2</span></span> &times; <span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">2</span></span> = <span class=\"frac\"><span class=\"num\">77</span><span class=\"den\">2</span></span> cm<sup>2</sup> = 38.5 cm<sup>2</sup>.</div>\n        <div style=\"padding-left: 12px;\">Area of 4 circles = 4 &times; <span class=\"frac\"><span class=\"num\">77</span><span class=\"den\">2</span></span> = 2 &times; 77 = <b>154 cm<sup>2</sup></b>.</div>\n        <div style=\"margin-top: 8px;\"><b>Area of shaded region:</b></div>\n        <div style=\"padding-left: 12px;\">Area(Shaded) = Area(Square) &minus; Area(4 Circles)</div>\n        <div style=\"padding-left: 12px;\">= 196 &minus; 154 = <b>42 cm<sup>2</sup></b>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Shaded Area: </span>\n        <span class=\"ans-val\">42 cm<sup>2</sup></span>\n      </div>\n    </div>\n  </div>\n\n</div>\n",
+    exercise1: "\n\n<style>\n  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.95em; margin: 2px 6px; line-height: 1.25; }\n  .frac .num { border-bottom: 1.5px solid currentColor; padding: 1px 4px; }\n  .frac .den { padding: 1px 4px; }\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(100, 221, 23, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #64DD17; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 2.1; margin-bottom: 14px; font-weight: 500; }\n  .sub-item { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(100, 221, 23, 0.25); }\n  .sub-item:first-child { margin-top: 0; padding-top: 0; border-top: none; }\n  .sub-q { font-size: 15.5px; color: #FFFFFF; font-weight: 600; margin-bottom: 12px; line-height: 2.3; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #64DD17; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #CCFF90; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; }\n  .sol-step div { margin-top: 6px; margin-bottom: 6px; }\n  .reason { color: #94A3B8; font-size: 13.5px; font-style: italic; display: inline-block; margin-left: 8px; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 14px; display: inline-block; line-height: 1.8; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .prop-chip { background: rgba(100, 221, 23, 0.15); border: 1px solid #64DD17; color: #CCFF90; padding: 3px 8px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-block; margin: 6px 0; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(100, 221, 23, 0.4); border-radius: 10px; padding: 14px; margin: 16px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #FFFFFF; border-radius: 8px; padding: 10px 8px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.25); }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 10px; font-weight: 500; }\n  .table-card { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 14px 0; border-radius: 8px; }\n  .table-card table { width: 100%; border-collapse: collapse; text-align: center; }\n  .table-card th { background: rgba(100, 221, 23, 0.2); color: #CCFF90; border: 1px solid rgba(100, 221, 23, 0.35); padding: 10px; font-weight: 700; }\n  .table-card td { border: 1px solid rgba(100, 221, 23, 0.2); padding: 9px; color: #E2E8F0; }\n</style>\n\n<div style=\"padding: 4px 2px;\">\n\n  <!-- Header Card -->\n  <div style=\"background: linear-gradient(135deg, rgba(100, 221, 23, 0.2), rgba(67, 160, 71, 0.1)); border: 1.5px solid #64DD17; border-radius: 12px; padding: 14px 18px; margin-bottom: 20px;\">\n    <div style=\"font-size: 19px; font-weight: 800; color: #64DD17; margin-bottom: 4px;\">\n      Exercise 11.1\n    </div>\n    <div style=\"color: #FFFFFF; font-size: 15px; font-weight: 500;\">\n      Sectors, Segments, Arc Lengths &amp; Real-World Applications (Q1 to Q14)\n    </div>\n  </div>\n\n  <!-- QUESTION 1 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 1:</div>\n    <div class=\"q-text\">\n      Find the area of a sector of a circle with radius 6 cm if angle of the sector is 60&deg; (Use &pi; = <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span>).\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Easy Direct Solution:</div>\n      <div class=\"sol-step\">\n        <div>Given: Radius of circle <i>r</i> = 6 cm, Angle of sector &theta; = 60&deg;.</div>\n        <div style=\"margin-top: 6px;\">We know that: Area of sector = <span class=\"frac\"><span class=\"num\">&theta;</span><span class=\"den\">360&deg;</span></span> &times; &pi; <i>r</i><sup>2</sup></div>\n        <div style=\"padding-left: 12px; margin-top: 6px;\">= <span class=\"frac\"><span class=\"num\">60&deg;</span><span class=\"den\">360&deg;</span></span> &times; <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; 6 &times; 6</div>\n        <div style=\"padding-left: 12px;\">= <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">6</span></span> &times; <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; 36</div>\n        <div style=\"padding-left: 12px;\">= <span class=\"frac\"><span class=\"num\">22 &times; 6</span><span class=\"den\">7</span></span> = <b><span class=\"frac\"><span class=\"num\">132</span><span class=\"den\">7</span></span> cm<sup>2</sup></b> = <b>18<span class=\"frac\"><span class=\"num\">6</span><span class=\"den\">7</span></span> cm<sup>2</sup> &approx; 18.86 cm<sup>2</sup></b>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Area of Sector: </span>\n        <span class=\"ans-val\"><span class=\"frac\"><span class=\"num\">132</span><span class=\"den\">7</span></span> cm<sup>2</sup></span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 2 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 2:</div>\n    <div class=\"q-text\">\n      Find the area of a quadrant of a circle whose circumference is 22 cm (Use &pi; = <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span>).\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Easy Step-by-Step Solution:</div>\n      <div class=\"sol-step\">\n        <div>Let the radius of the circle be <i>r</i>.</div>\n        <div>Given: Circumference = 22 cm</div>\n        <div style=\"padding-left: 12px;\">2 &pi; <i>r</i> = 22</div>\n        <div style=\"padding-left: 12px;\">&rArr; 2 &times; <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; <i>r</i> = 22</div>\n        <div style=\"padding-left: 12px;\">&rArr; <i>r</i> = <span class=\"frac\"><span class=\"num\">22 &times; 7</span><span class=\"den\">2 &times; 22</span></span> = <b><span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">2</span></span> cm = 3.5 cm</b>.</div>\n        <div style=\"margin-top: 6px;\">A quadrant is <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span> of a circle (central angle &theta; = 90&deg;):</div>\n        <div style=\"padding-left: 12px;\">Area of quadrant = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span> &pi; <i>r</i><sup>2</sup></div>\n        <div style=\"padding-left: 12px;\">= <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span> &times; <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; <span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">2</span></span> &times; <span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">2</span></span></div>\n        <div style=\"padding-left: 12px;\">= <span class=\"frac\"><span class=\"num\">11 &times; 7</span><span class=\"den\">4 &times; 2</span></span> = <b><span class=\"frac\"><span class=\"num\">77</span><span class=\"den\">8</span></span> cm<sup>2</sup> = 9.625 cm<sup>2</sup></b>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Area of Quadrant: </span>\n        <span class=\"ans-val\"><span class=\"frac\"><span class=\"num\">77</span><span class=\"den\">8</span></span> cm<sup>2</sup> (or 9.625 cm<sup>2</sup>)</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 3 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 3:</div>\n    <div class=\"q-text\">\n      The length of the minute hand of a clock is 14 cm. Find the area swept by the minute hand in 5 minutes (Use &pi; = <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span>).\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 200\" width=\"280\" height=\"200\">\n          <circle cx=\"140\" cy=\"100\" r=\"70\" fill=\"#F8FAFC\" stroke=\"#334155\" stroke-width=\"2\"/>\n          <!-- Hour markers 12, 1, 2, 3 -->\n          <text x=\"140\" y=\"45\" font-size=\"12\" font-weight=\"bold\" fill=\"#334155\" text-anchor=\"middle\">12</text>\n          <text x=\"175\" y=\"55\" font-size=\"12\" font-weight=\"bold\" fill=\"#334155\" text-anchor=\"middle\">1</text>\n          <text x=\"200\" y=\"80\" font-size=\"12\" font-weight=\"bold\" fill=\"#334155\" text-anchor=\"middle\">2</text>\n          <text x=\"205\" y=\"105\" font-size=\"12\" font-weight=\"bold\" fill=\"#334155\" text-anchor=\"middle\">3</text>\n\n          <!-- Swept sector from 12 to 1 (30 deg) -->\n          <path d=\"M140,100 L140,40 A60,60 0 0,1 170,48.04 Z\" fill=\"rgba(100, 221, 23, 0.35)\" stroke=\"#64DD17\" stroke-width=\"2\"/>\n          <line x1=\"140\" y1=\"100\" x2=\"140\" y2=\"40\" stroke=\"#0284C7\" stroke-width=\"2.5\"/>\n          <line x1=\"140\" y1=\"100\" x2=\"170\" y2=\"48.04\" stroke=\"#DC2626\" stroke-width=\"2.5\"/>\n          <circle cx=\"140\" cy=\"100\" r=\"4\" fill=\"#334155\"/>\n          <text x=\"150\" y=\"75\" font-size=\"11\" font-weight=\"bold\" fill=\"#64DD17\">30&deg;</text>\n          <text x=\"110\" y=\"80\" font-size=\"11\" font-weight=\"bold\" fill=\"#0284C7\">14 cm</text>\n        </svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Minute hand sweeps 30&deg; sector between 12:00 and 12:05</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Easy Step-by-Step Solution:</div>\n      <div class=\"sol-step\">\n        <div>Radius <i>r</i> = length of minute hand = 14 cm.</div>\n        <div>In 60 minutes, the minute hand completes one full revolution (360&deg;).</div>\n        <div style=\"padding-left: 12px;\">&rArr; Angle swept in 1 minute = <span class=\"frac\"><span class=\"num\">360&deg;</span><span class=\"den\">60</span></span> = 6&deg;.</div>\n        <div style=\"padding-left: 12px;\">&rArr; Angle swept in 5 minutes &theta; = 5 &times; 6&deg; = <b>30&deg;</b>.</div>\n        <div style=\"margin-top: 6px;\">Area swept in 5 minutes = Area of sector of angle 30&deg;:</div>\n        <div style=\"padding-left: 12px;\">Area = <span class=\"frac\"><span class=\"num\">&theta;</span><span class=\"den\">360&deg;</span></span> &times; &pi; <i>r</i><sup>2</sup></div>\n        <div style=\"padding-left: 12px;\">= <span class=\"frac\"><span class=\"num\">30&deg;</span><span class=\"den\">360&deg;</span></span> &times; <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; 14 &times; 14</div>\n        <div style=\"padding-left: 12px;\">= <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">12</span></span> &times; 22 &times; 2 &times; 14</div>\n        <div style=\"padding-left: 12px;\">= <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">12</span></span> &times; 616 = <span class=\"frac\"><span class=\"num\">154</span><span class=\"den\">3</span></span> cm<sup>2</sup> = <b>51<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span> cm<sup>2</sup> &approx; 51.33 cm<sup>2</sup></b>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Area Swept: </span>\n        <span class=\"ans-val\"><span class=\"frac\"><span class=\"num\">154</span><span class=\"den\">3</span></span> cm<sup>2</sup></span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 4 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 4:</div>\n    <div class=\"q-text\">\n      A chord of a circle of radius 10 cm subtends a right angle at the centre. Find the area of the corresponding:\n      <br/><b>(i)</b> minor segment &nbsp;&nbsp;&nbsp; <b>(ii)</b> major sector (Use &pi; = 3.14).\n    </div>\n\n    <!-- Part (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #64DD17;\">(i)</b> Minor Segment</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Radius <i>r</i> = 10 cm, Central angle &theta; = 90&deg;.</div>\n          <div>Area of minor sector = <span class=\"frac\"><span class=\"num\">90&deg;</span><span class=\"den\">360&deg;</span></span> &times; &pi; <i>r</i><sup>2</sup> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span> &times; 3.14 &times; 10<sup>2</sup> = <span class=\"frac\"><span class=\"num\">314</span><span class=\"den\">4</span></span> = <b>78.5 cm<sup>2</sup></b>.</div>\n          <div>In right-angled &Delta;<i>OAB</i> (&ang;<i>AOB</i> = 90&deg;):</div>\n          <div style=\"padding-left: 12px;\">Area(&Delta;<i>OAB</i>) = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &times; Base &times; Height = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &times; 10 &times; 10 = <b>50 cm<sup>2</sup></b>.</div>\n          <div style=\"margin-top: 6px;\">Area of minor segment = Area of minor sector &minus; Area(&Delta;<i>OAB</i>)</div>\n          <div style=\"padding-left: 12px;\">= 78.5 &minus; 50 = <b>28.5 cm<sup>2</sup></b>.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Minor Segment Area: </span><span class=\"ans-val\">28.5 cm<sup>2</sup></span></div>\n      </div>\n    </div>\n\n    <!-- Part (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #64DD17;\">(ii)</b> Major Sector</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Central angle for major sector = 360&deg; &minus; 90&deg; = <b>270&deg;</b>.</div>\n          <div style=\"margin-top: 6px;\">Area of major sector = <span class=\"frac\"><span class=\"num\">270&deg;</span><span class=\"den\">360&deg;</span></span> &times; &pi; <i>r</i><sup>2</sup></div>\n          <div style=\"padding-left: 12px;\">= <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span> &times; 3.14 &times; 100 = <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span> &times; 314 = 3 &times; 78.5 = <b>235.5 cm<sup>2</sup></b>.</div>\n          <div style=\"margin-top: 4px;\"><span class=\"reason\">[Alternatively: Area of circle &minus; Area of minor sector = 314 &minus; 78.5 = 235.5 cm<sup>2</sup>]</span></div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Major Sector Area: </span><span class=\"ans-val\">235.5 cm<sup>2</sup></span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 5 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 5:</div>\n    <div class=\"q-text\">\n      In a circle of radius 21 cm, an arc subtends an angle of 60&deg; at the centre. Find:\n      <br/><b>(i)</b> the length of the arc &nbsp;&nbsp;&nbsp; <b>(ii)</b> area of the sector formed by the arc &nbsp;&nbsp;&nbsp; <b>(iii)</b> area of the segment formed by the corresponding chord (Use &pi; = <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span>, &radic;3 = 1.732).\n    </div>\n\n    <!-- Part (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #64DD17;\">(i)</b> Length of the Arc</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Radius <i>r</i> = 21 cm, Central angle &theta; = 60&deg;.</div>\n          <div style=\"padding-left: 12px;\"><i>l</i> = <span class=\"frac\"><span class=\"num\">&theta;</span><span class=\"den\">360&deg;</span></span> &times; 2 &pi; <i>r</i> = <span class=\"frac\"><span class=\"num\">60&deg;</span><span class=\"den\">360&deg;</span></span> &times; 2 &times; <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; 21 = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">6</span></span> &times; 2 &times; 22 &times; 3 = <b>22 cm</b>.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Arc Length: </span><span class=\"ans-val\">22 cm</span></div>\n      </div>\n    </div>\n\n    <!-- Part (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #64DD17;\">(ii)</b> Area of the Sector</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div style=\"padding-left: 12px;\">Area = <span class=\"frac\"><span class=\"num\">&theta;</span><span class=\"den\">360&deg;</span></span> &times; &pi; <i>r</i><sup>2</sup> = <span class=\"frac\"><span class=\"num\">60&deg;</span><span class=\"den\">360&deg;</span></span> &times; <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; 21 &times; 21 = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">6</span></span> &times; 22 &times; 3 &times; 21 = 11 &times; 21 = <b>231 cm<sup>2</sup></b>.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Sector Area: </span><span class=\"ans-val\">231 cm<sup>2</sup></span></div>\n      </div>\n    </div>\n\n    <!-- Part (iii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #64DD17;\">(iii)</b> Area of the Segment formed by the Chord</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>In &Delta;<i>OAB</i>, <i>OA</i> = <i>OB</i> = 21 cm and &ang;<i>AOB</i> = 60&deg;.</div>\n          <div>Since <i>OA</i> = <i>OB</i>, &ang;<i>OAB</i> = &ang;<i>OBA</i> = <span class=\"frac\"><span class=\"num\">180&deg; &minus; 60&deg;</span><span class=\"den\">2</span></span> = 60&deg;.</div>\n          <div>Thus, &Delta;<i>OAB</i> is an <b>equilateral triangle</b> with side <i>a</i> = 21 cm.</div>\n          <div style=\"padding-left: 12px; margin-top: 6px;\">Area(&Delta;<i>OAB</i>) = <span class=\"frac\"><span class=\"num\">&radic;3</span><span class=\"den\">4</span></span> &times; <i>a</i><sup>2</sup> = <span class=\"frac\"><span class=\"num\">&radic;3</span><span class=\"den\">4</span></span> &times; 21<sup>2</sup> = <b><span class=\"frac\"><span class=\"num\">441&radic;3</span><span class=\"den\">4</span></span> cm<sup>2</sup></b>.</div>\n          <div style=\"margin-top: 6px;\">Area of segment = Area of sector &minus; Area(&Delta;<i>OAB</i>):</div>\n          <div style=\"padding-left: 12px;\">= <b>(231 &minus; <span class=\"frac\"><span class=\"num\">441&radic;3</span><span class=\"den\">4</span></span>) cm<sup>2</sup> &approx; 231 &minus; 190.95 = 40.05 cm<sup>2</sup></b>.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Segment Area: </span><span class=\"ans-val\">(231 &minus; <span class=\"frac\"><span class=\"num\">441&radic;3</span><span class=\"den\">4</span></span>) cm<sup>2</sup></span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 6 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 6:</div>\n    <div class=\"q-text\">\n      A chord of a circle of radius 15 cm subtends an angle of 60&deg; at the centre. Find the areas of the corresponding minor and major segments of the circle (Use &pi; = 3.14 and &radic;3 = 1.732).\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Easy Step-by-Step Solution:</div>\n      <div class=\"sol-step\">\n        <div>Radius <i>r</i> = 15 cm, &theta; = 60&deg;.</div>\n        <div style=\"margin-top: 6px;\"><b>1. Area of Minor Sector:</b></div>\n        <div style=\"padding-left: 12px;\">Area = <span class=\"frac\"><span class=\"num\">60&deg;</span><span class=\"den\">360&deg;</span></span> &times; 3.14 &times; 15<sup>2</sup> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">6</span></span> &times; 3.14 &times; 225 = <span class=\"frac\"><span class=\"num\">706.5</span><span class=\"den\">6</span></span> = <b>117.75 cm<sup>2</sup></b>.</div>\n        <div style=\"margin-top: 6px;\"><b>2. Area of &Delta;OAB:</b></div>\n        <div>Since &theta; = 60&deg; and <i>OA</i> = <i>OB</i>, &Delta;<i>OAB</i> is an equilateral triangle:</div>\n        <div style=\"padding-left: 12px;\">Area(&Delta;<i>OAB</i>) = <span class=\"frac\"><span class=\"num\">&radic;3</span><span class=\"den\">4</span></span> &times; 15<sup>2</sup> = <span class=\"frac\"><span class=\"num\">1.732</span><span class=\"den\">4</span></span> &times; 225 = 0.433 &times; 225 = <b>97.3125 cm<sup>2</sup></b>.</div>\n        <div style=\"margin-top: 6px;\"><b>3. Area of Minor Segment:</b></div>\n        <div style=\"padding-left: 12px;\">Area = 117.75 &minus; 97.3125 = <b>20.4375 cm<sup>2</sup></b>.</div>\n        <div style=\"margin-top: 6px;\"><b>4. Area of Major Segment:</b></div>\n        <div style=\"padding-left: 12px;\">Area of circle = &pi; <i>r</i><sup>2</sup> = 3.14 &times; 225 = <b>706.5 cm<sup>2</sup></b>.</div>\n        <div style=\"padding-left: 12px;\">Area of major segment = Area of circle &minus; Area of minor segment</div>\n        <div style=\"padding-left: 12px;\">= 706.5 &minus; 20.4375 = <b>686.0625 cm<sup>2</sup></b>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Final Answer: </span>\n        <span class=\"ans-val\">Minor Segment = 20.4375 cm<sup>2</sup>, &nbsp; Major Segment = 686.0625 cm<sup>2</sup></span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 7 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 7:</div>\n    <div class=\"q-text\">\n      A chord of a circle of radius 12 cm subtends an angle of 120&deg; at the centre. Find the area of the corresponding segment of the circle (Use &pi; = 3.14 and &radic;3 = 1.73).\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Easy Step-by-Step Solution:</div>\n      <div class=\"sol-step\">\n        <div>Radius <i>r</i> = 12 cm, Central angle &theta; = 120&deg;.</div>\n        <div style=\"margin-top: 6px;\"><b>1. Area of the Sector:</b></div>\n        <div style=\"padding-left: 12px;\">Area = <span class=\"frac\"><span class=\"num\">120&deg;</span><span class=\"den\">360&deg;</span></span> &times; &pi; <i>r</i><sup>2</sup> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span> &times; 3.14 &times; 12<sup>2</sup> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span> &times; 3.14 &times; 144 = 3.14 &times; 48 = <b>150.72 cm<sup>2</sup></b>.</div>\n        <div style=\"margin-top: 6px;\"><b>2. Area of &Delta;OAB:</b></div>\n        <div>Using universal formula: Area(&Delta;<i>OAB</i>) = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> <i>r</i><sup>2</sup> sin &theta;:</div>\n        <div style=\"padding-left: 12px;\">= <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> &times; 12<sup>2</sup> &times; sin 120&deg; = 72 &times; <span class=\"frac\"><span class=\"num\">&radic;3</span><span class=\"den\">2</span></span> = 36 &times; &radic;3 = 36 &times; 1.73 = <b>62.28 cm<sup>2</sup></b>.</div>\n        <div style=\"margin-top: 6px;\"><b>3. Area of Corresponding Segment:</b></div>\n        <div style=\"padding-left: 12px;\">Area = Area of Sector &minus; Area(&Delta;<i>OAB</i>) = 150.72 &minus; 62.28 = <b>88.44 cm<sup>2</sup></b>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Segment Area: </span>\n        <span class=\"ans-val\">88.44 cm<sup>2</sup></span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 8 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 8:</div>\n    <div class=\"q-text\">\n      A horse is tied to a peg at one corner of a square shaped grass field of side 15 m by means of a 5 m long rope (see figure). Find:\n      <br/><b>(i)</b> the area of that part of the field in which the horse can graze.\n      <br/><b>(ii)</b> the increase in the grazing area if the rope were 10 m long instead of 5 m (Use &pi; = 3.14).\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 240\" width=\"240\" height=\"240\">\n          <rect x=\"30\" y=\"30\" width=\"180\" height=\"180\" fill=\"#F8FAFC\" stroke=\"#334155\" stroke-width=\"2\"/>\n          <!-- Corner at (30, 210) bottom left -->\n          <!-- Grazing quadrant 5m rope: radius 50px -->\n          <path d=\"M30,210 L30,150 A60,60 0 0,1 90,210 Z\" fill=\"rgba(100, 221, 23, 0.45)\" stroke=\"#64DD17\" stroke-width=\"2\"/>\n          <circle cx=\"30\" cy=\"210\" r=\"4\" fill=\"#DC2626\"/>\n          <text x=\"20\" y=\"225\" font-size=\"12\" font-weight=\"bold\" fill=\"#DC2626\">Peg</text>\n          <text x=\"45\" y=\"195\" font-size=\"11\" font-weight=\"bold\" fill=\"#16A34A\">5 m</text>\n          <text x=\"120\" y=\"225\" font-size=\"12\" font-weight=\"bold\" fill=\"#334155\" text-anchor=\"middle\">Side = 15 m</text>\n        </svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Horse grazes in a quadrant (90&deg;) of the square field</div>\n    </div>\n\n    <!-- Part (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #64DD17;\">(i)</b> Area Grazed with 5 m Rope</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Each corner of a square has an angle of 90&deg;. Thus, grazing area is a <b>quadrant</b> of radius <i>r</i> = 5 m.</div>\n          <div style=\"padding-left: 12px; margin-top: 4px;\">Area = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span> &pi; <i>r</i><sup>2</sup> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span> &times; 3.14 &times; 5<sup>2</sup> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span> &times; 3.14 &times; 25 = <span class=\"frac\"><span class=\"num\">78.5</span><span class=\"den\">4</span></span> = <b>19.625 m<sup>2</sup></b>.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Grazing Area (5m): </span><span class=\"ans-val\">19.625 m<sup>2</sup></span></div>\n      </div>\n    </div>\n\n    <!-- Part (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #64DD17;\">(ii)</b> Increase in Grazing Area with 10 m Rope</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>When rope length <i>R</i> = 10 m:</div>\n          <div style=\"padding-left: 12px;\">New grazing area = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span> &pi; <i>R</i><sup>2</sup> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span> &times; 3.14 &times; 10<sup>2</sup> = <span class=\"frac\"><span class=\"num\">314</span><span class=\"den\">4</span></span> = <b>78.5 m<sup>2</sup></b>.</div>\n          <div style=\"margin-top: 6px;\">Increase in grazing area = New area &minus; Original area</div>\n          <div style=\"padding-left: 12px;\">= 78.5 &minus; 19.625 = <b>58.875 m<sup>2</sup></b>.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Increase in Grazing Area: </span><span class=\"ans-val\">58.875 m<sup>2</sup></span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 9 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 9:</div>\n    <div class=\"q-text\">\n      A brooch is made with silver wire in the form of a circle with diameter 35 mm. The wire is also used in making 5 diameters which divide the circle into 10 equal sectors as shown in figure. Find:\n      <br/><b>(i)</b> the total length of the silver wire required.\n      <br/><b>(ii)</b> the area of each sector of the brooch (Use &pi; = <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span>).\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 200 200\" width=\"200\" height=\"200\">\n          <circle cx=\"100\" cy=\"100\" r=\"80\" fill=\"#FFFDF0\" stroke=\"#64DD17\" stroke-width=\"2.5\"/>\n          <!-- 5 diameters = 10 radii at 36 deg intervals -->\n          <line x1=\"100\" y1=\"20\" x2=\"100\" y2=\"180\" stroke=\"#64748B\" stroke-width=\"1.8\"/>\n          <line x1=\"23.92\" y1=\"75.28\" x2=\"176.08\" y2=\"124.72\" stroke=\"#64748B\" stroke-width=\"1.8\"/>\n          <line x1=\"52.98\" y1=\"164.72\" x2=\"147.02\" y2=\"35.28\" stroke=\"#64748B\" stroke-width=\"1.8\"/>\n          <line x1=\"147.02\" y1=\"164.72\" x2=\"52.98\" y2=\"35.28\" stroke=\"#64748B\" stroke-width=\"1.8\"/>\n          <line x1=\"176.08\" y1=\"75.28\" x2=\"23.92\" y2=\"124.72\" stroke=\"#64748B\" stroke-width=\"1.8\"/>\n          <circle cx=\"100\" cy=\"100\" r=\"3.5\" fill=\"#334155\"/>\n        </svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Circular brooch divided into 10 equal sectors by 5 silver diameters</div>\n    </div>\n\n    <!-- Part (i) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #64DD17;\">(i)</b> Total Length of Silver Wire</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>Diameter of circular brooch <i>d</i> = 35 mm &rArr; Radius <i>r</i> = <span class=\"frac\"><span class=\"num\">35</span><span class=\"den\">2</span></span> mm.</div>\n          <div>Wire is used for the outer circular circumference and 5 straight diameters:</div>\n          <div style=\"padding-left: 12px; margin-top: 4px;\">Circumference of circle = &pi; <i>d</i> = <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; 35 = 22 &times; 5 = <b>110 mm</b>.</div>\n          <div style=\"padding-left: 12px;\">Length of 5 diameters = 5 &times; 35 = <b>175 mm</b>.</div>\n          <div style=\"padding-left: 12px; margin-top: 4px;\">Total wire length = Circumference + 5 &times; Diameter = 110 + 175 = <b>285 mm</b>.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Total Wire Length: </span><span class=\"ans-val\">285 mm</span></div>\n      </div>\n    </div>\n\n    <!-- Part (ii) -->\n    <div class=\"sub-item\">\n      <div class=\"sub-q\"><b style=\"color: #64DD17;\">(ii)</b> Area of Each Sector</div>\n      <div class=\"sol-box\">\n        <div class=\"sol-step\">\n          <div>The 5 diameters divide the circle into 10 equal sectors:</div>\n          <div style=\"padding-left: 12px;\">Central angle of each sector &theta; = <span class=\"frac\"><span class=\"num\">360&deg;</span><span class=\"den\">10</span></span> = 36&deg;.</div>\n          <div style=\"margin-top: 6px;\">Area of each sector = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">10</span></span> &times; &pi; <i>r</i><sup>2</sup></div>\n          <div style=\"padding-left: 12px;\">= <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">10</span></span> &times; <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; <span class=\"frac\"><span class=\"num\">35</span><span class=\"den\">2</span></span> &times; <span class=\"frac\"><span class=\"num\">35</span><span class=\"den\">2</span></span></div>\n          <div style=\"padding-left: 12px;\">= <span class=\"frac\"><span class=\"num\">11 &times; 5 &times; 35</span><span class=\"den\">10 &times; 2</span></span> = <span class=\"frac\"><span class=\"num\">11 &times; 35</span><span class=\"den\">4</span></span> = <b><span class=\"frac\"><span class=\"num\">385</span><span class=\"den\">4</span></span> mm<sup>2</sup> = 96.25 mm<sup>2</sup></b>.</div>\n        </div>\n        <div class=\"ans-box\"><span class=\"ans-label\">✓ Sector Area: </span><span class=\"ans-val\"><span class=\"frac\"><span class=\"num\">385</span><span class=\"den\">4</span></span> mm<sup>2</sup> (or 96.25 mm<sup>2</sup>)</span></div>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 10 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 10:</div>\n    <div class=\"q-text\">\n      An umbrella has 8 ribs which are equally spaced (see figure). Assuming umbrella to be a flat circle of radius 45 cm, find the area between the two consecutive ribs of the umbrella (Use &pi; = <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span>).\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Easy Direct Solution:</div>\n      <div class=\"sol-step\">\n        <div>Radius of flat umbrella <i>r</i> = 45 cm.</div>\n        <div>The 8 equally spaced ribs divide the circle into 8 equal sectors:</div>\n        <div style=\"padding-left: 12px;\">Central angle between consecutive ribs &theta; = <span class=\"frac\"><span class=\"num\">360&deg;</span><span class=\"den\">8</span></span> = 45&deg;.</div>\n        <div style=\"margin-top: 6px;\">Area between two consecutive ribs = Area of 1 sector:</div>\n        <div style=\"padding-left: 12px;\">Area = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">8</span></span> &times; &pi; <i>r</i><sup>2</sup></div>\n        <div style=\"padding-left: 12px;\">= <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">8</span></span> &times; <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; 45 &times; 45</div>\n        <div style=\"padding-left: 12px;\">= <span class=\"frac\"><span class=\"num\">11 &times; 2025</span><span class=\"den\">4 &times; 7</span></span> = <b><span class=\"frac\"><span class=\"num\">22275</span><span class=\"den\">28</span></span> cm<sup>2</sup> &approx; 795.54 cm<sup>2</sup></b>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Area between Consecutive Ribs: </span>\n        <span class=\"ans-val\"><span class=\"frac\"><span class=\"num\">22275</span><span class=\"den\">28</span></span> cm<sup>2</sup></span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 11 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 11:</div>\n    <div class=\"q-text\">\n      A car has two wipers which do not overlap. Each wiper has a blade of length 25 cm sweeping through an angle of 115&deg;. Find the total area cleaned at each sweep of the blades (Use &pi; = <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span>).\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Easy Direct Solution:</div>\n      <div class=\"sol-step\">\n        <div>Radius <i>r</i> = length of blade = 25 cm, Swept angle &theta; = 115&deg;.</div>\n        <div>Area cleaned by 1 wiper blade = <span class=\"frac\"><span class=\"num\">&theta;</span><span class=\"den\">360&deg;</span></span> &times; &pi; <i>r</i><sup>2</sup>:</div>\n        <div style=\"padding-left: 12px;\">= <span class=\"frac\"><span class=\"num\">115&deg;</span><span class=\"den\">360&deg;</span></span> &times; <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; 25 &times; 25</div>\n        <div style=\"margin-top: 6px;\">Since there are two identical, non-overlapping wipers:</div>\n        <div style=\"padding-left: 12px;\">Total area cleaned = 2 &times; (<span class=\"frac\"><span class=\"num\">115</span><span class=\"den\">360</span></span> &times; <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; 625)</div>\n        <div style=\"padding-left: 12px;\">= <span class=\"frac\"><span class=\"num\">230</span><span class=\"den\">360</span></span> &times; <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; 625 = <span class=\"frac\"><span class=\"num\">23</span><span class=\"den\">36</span></span> &times; <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; 625 = <span class=\"frac\"><span class=\"num\">23 &times; 11 &times; 625</span><span class=\"den\">18 &times; 7</span></span> = <b><span class=\"frac\"><span class=\"num\">158125</span><span class=\"den\">126</span></span> cm<sup>2</sup> &approx; 1254.96 cm<sup>2</sup></b>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Total Cleaned Area: </span>\n        <span class=\"ans-val\"><span class=\"frac\"><span class=\"num\">158125</span><span class=\"den\">126</span></span> cm<sup>2</sup></span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 12 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 12:</div>\n    <div class=\"q-text\">\n      To warn ships for underwater rocks, a lighthouse spreads a red coloured light over a sector of angle 80&deg; to a distance of 16.5 km. Find the area of the sea over which the ships are warned (Use &pi; = 3.14).\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Easy Direct Solution:</div>\n      <div class=\"sol-step\">\n        <div>Radius <i>r</i> = distance reached by light = 16.5 km.</div>\n        <div>Sector angle &theta; = 80&deg;.</div>\n        <div style=\"margin-top: 6px;\">Area of the sea warned = Area of the sector:</div>\n        <div style=\"padding-left: 12px;\">Area = <span class=\"frac\"><span class=\"num\">&theta;</span><span class=\"den\">360&deg;</span></span> &times; &pi; <i>r</i><sup>2</sup></div>\n        <div style=\"padding-left: 12px;\">= <span class=\"frac\"><span class=\"num\">80&deg;</span><span class=\"den\">360&deg;</span></span> &times; 3.14 &times; (16.5)<sup>2</sup></div>\n        <div style=\"padding-left: 12px;\">= <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">9</span></span> &times; 3.14 &times; 272.25 = <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">9</span></span> &times; 854.865 = 2 &times; 94.985 = <b>189.97 km<sup>2</sup></b>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Warned Sea Area: </span>\n        <span class=\"ans-val\">189.97 km<sup>2</sup></span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 13 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 13:</div>\n    <div class=\"q-text\">\n      A round table cover has six equal designs as shown in figure. If the radius of the cover is 28 cm, find the cost of making the designs at the rate of ₹ 0.35 per cm<sup>2</sup> (Use &radic;3 = 1.7 and &pi; = <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span>).\n    </div>\n\n    <div class=\"diagram-card\">\n      <div class=\"diagram-wrapper\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 220\" width=\"220\" height=\"220\">\n          <circle cx=\"110\" cy=\"110\" r=\"85\" fill=\"#FFFDF0\" stroke=\"#334155\" stroke-width=\"2\"/>\n          <!-- Regular Hexagon inscribed -->\n          <polygon points=\"195,110 152.5,183.6 67.5,183.6 25,110 67.5,36.4 152.5,36.4\" fill=\"#F8FAFC\" stroke=\"#0284C7\" stroke-width=\"2\"/>\n          <!-- 6 circular segment designs shaded in lime green -->\n          <circle cx=\"110\" cy=\"110\" r=\"3\" fill=\"#334155\"/>\n          <text x=\"110\" y=\"115\" font-size=\"12\" font-weight=\"bold\" fill=\"#334155\" text-anchor=\"middle\">O</text>\n        </svg>\n      </div>\n      <div class=\"diagram-caption\">💡 Figure: Round table cover with 6 congruent circular segment designs outside a regular hexagon</div>\n    </div>\n\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Easy Step-by-Step Solution:</div>\n      <div class=\"sol-step\">\n        <div>Radius <i>r</i> = 28 cm. The 6 equal designs are <b>6 circular segments</b> outside a regular hexagon inscribed in the circle.</div>\n        <div style=\"padding-left: 12px;\">Central angle of each sector &theta; = <span class=\"frac\"><span class=\"num\">360&deg;</span><span class=\"den\">6</span></span> = <b>60&deg;</b>.</div>\n        <div style=\"margin-top: 8px;\"><b>Step 1: Calculate Area of 1 Sector (angle 60&deg;):</b></div>\n        <div style=\"padding-left: 12px;\">Area = <span class=\"frac\"><span class=\"num\">60&deg;</span><span class=\"den\">360&deg;</span></span> &times; <span class=\"frac\"><span class=\"num\">22</span><span class=\"den\">7</span></span> &times; 28 &times; 28 = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">6</span></span> &times; 22 &times; 4 &times; 28 = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span> &times; 11 &times; 112 = <b><span class=\"frac\"><span class=\"num\">1232</span><span class=\"den\">3</span></span> cm<sup>2</sup> &approx; 410.67 cm<sup>2</sup></b>.</div>\n\n        <div style=\"margin-top: 8px;\"><b>Step 2: Calculate Area of 1 Equilateral Triangle (&Delta;OAB):</b></div>\n        <div>Since &theta; = 60&deg; and <i>OA</i> = <i>OB</i> = 28 cm, each triangle is equilateral:</div>\n        <div style=\"padding-left: 12px;\">Area(&Delta;<i>OAB</i>) = <span class=\"frac\"><span class=\"num\">&radic;3</span><span class=\"den\">4</span></span> &times; 28<sup>2</sup> = <span class=\"frac\"><span class=\"num\">&radic;3</span><span class=\"den\">4</span></span> &times; 784 = 196 &times; &radic;3 = 196 &times; 1.7 = <b>333.2 cm<sup>2</sup></b>.</div>\n\n        <div style=\"margin-top: 8px;\"><b>Step 3: Total Area of 6 Designs:</b></div>\n        <div style=\"padding-left: 12px;\">Area of 1 design = Area of 1 sector &minus; Area of 1 triangle = <span class=\"frac\"><span class=\"num\">1232</span><span class=\"den\">3</span></span> &minus; 333.2</div>\n        <div style=\"padding-left: 12px;\">Total area of 6 designs = 6 &times; (<span class=\"frac\"><span class=\"num\">1232</span><span class=\"den\">3</span></span> &minus; 333.2) = (2 &times; 1232) &minus; (6 &times; 333.2)</div>\n        <div style=\"padding-left: 12px;\">= 2464 &minus; 1999.2 = <b>464.8 cm<sup>2</sup></b>.</div>\n\n        <div style=\"margin-top: 8px;\"><b>Step 4: Calculate Cost of Making Designs:</b></div>\n        <div style=\"padding-left: 12px;\">Cost = 464.8 &times; ₹ 0.35 = <b>₹ 162.68</b>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Total Cost: </span>\n        <span class=\"ans-val\">₹ 162.68</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- QUESTION 14 -->\n  <div class=\"q-card\">\n    <div class=\"q-title\">Question 14:</div>\n    <div class=\"q-text\">\n      Tick the correct answer in the following: Area of a sector of angle <i>p</i> (in degrees) of a circle with radius <i>R</i> is:\n      <div style=\"margin-top: 8px; font-weight: 600;\">\n        (A) <span class=\"frac\"><span class=\"num\"><i>p</i></span><span class=\"den\">180</span></span> &times; 2&pi;<i>R</i> &nbsp;&nbsp;&nbsp; \n        (B) <span class=\"frac\"><span class=\"num\"><i>p</i></span><span class=\"den\">180</span></span> &times; &pi;<i>R</i><sup>2</sup> &nbsp;&nbsp;&nbsp; \n        (C) <span class=\"frac\"><span class=\"num\"><i>p</i></span><span class=\"den\">360</span></span> &times; 2&pi;<i>R</i> &nbsp;&nbsp;&nbsp; \n        (D) <span class=\"frac\"><span class=\"num\"><i>p</i></span><span class=\"den\">720</span></span> &times; 2&pi;<i>R</i><sup>2</sup>\n      </div>\n    </div>\n    <div class=\"sol-box\">\n      <div class=\"sol-title\">💡 Easy Direct Solution:</div>\n      <div class=\"sol-step\">\n        <div>We know that the area of a sector of angle &theta; and radius <i>R</i> is given by:</div>\n        <div style=\"padding-left: 12px;\">Area = <span class=\"frac\"><span class=\"num\">&theta;</span><span class=\"den\">360&deg;</span></span> &times; &pi; <i>R</i><sup>2</sup></div>\n        <div>Given angle &theta; = <i>p</i>:</div>\n        <div style=\"padding-left: 12px;\">Area = <span class=\"frac\"><span class=\"num\"><i>p</i></span><span class=\"den\">360&deg;</span></span> &times; &pi; <i>R</i><sup>2</sup></div>\n        <div style=\"margin-top: 6px;\">Multiplying numerator and denominator by 2:</div>\n        <div style=\"padding-left: 12px;\">= <span class=\"frac\"><span class=\"num\"><i>p</i></span><span class=\"den\">360 &times; 2</span></span> &times; 2&pi; <i>R</i><sup>2</sup> = <b><span class=\"frac\"><span class=\"num\"><i>p</i></span><span class=\"den\">720</span></span> &times; 2&pi; <i>R</i><sup>2</sup></b>.</div>\n      </div>\n      <div class=\"ans-box\">\n        <span class=\"ans-label\">✓ Correct Option: </span>\n        <span class=\"ans-val\">(D) <span class=\"frac\"><span class=\"num\">p</span><span class=\"den\">720</span></span> &times; 2&pi;R<sup>2</sup></span>\n      </div>\n    </div>\n  </div>\n\n</div>\n"
+  }
 };
