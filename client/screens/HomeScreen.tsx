@@ -95,16 +95,6 @@ function HomeScreen() {
               onPress={() => navigation.navigate("Quiz")}
             />
           </View>
-
-          <View style={styles.buttonWrapper}>
-            <ColorButton
-              testID="button-notes"
-              title="MY NOTES"
-              icon="📝"
-              colors={JiguuColors.gradients.green}
-              onPress={() => navigation.navigate("QuickNotes")}
-            />
-          </View>
         </View>
       </ScrollView>
     </ScreenWrapper>

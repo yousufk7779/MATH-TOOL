@@ -105,18 +105,6 @@ function Class8Screen() {
               }
             />
           </View>
-
-          <View style={styles.buttonWrapper}>
-            <ColorButton
-              testID="button-notes"
-              title="MY NOTES"
-              icon="📝"
-              colors={JiguuColors.gradients.green}
-              onPress={() =>
-                navigation.navigate("QuickNotes", { className: "Class 8" })
-              }
-            />
-          </View>
         </View>
       </ScrollView>
     </ScreenWrapper>
