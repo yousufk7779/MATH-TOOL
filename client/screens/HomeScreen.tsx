@@ -23,77 +23,79 @@ function HomeScreen() {
     <ScreenWrapper showBackButton hideHomeButton>
       <ScrollView
         style={styles.scrollView}
-        contentContainerStyle={[styles.content, styles.centeredContent]}
+        contentContainerStyle={styles.content}
         showsVerticalScrollIndicator={false}
       >
-        <View style={styles.headerContainer}>
-          <View style={styles.titleRow}>
-            <ThemedText style={styles.titleWhite}>Select Your Subject</ThemedText>
+        <View style={styles.centerWrapper}>
+          <View style={styles.headerContainer}>
+            <View style={styles.titleRow}>
+              <ThemedText style={styles.titleWhite}>Select Your Subject</ThemedText>
+            </View>
+
+            <View style={styles.decorationContainer}>
+              <LinearGradient
+                colors={["#4FC3F7", "#A089CC"]}
+                start={{ x: 0, y: 0 }}
+                end={{ x: 1, y: 0 }}
+                style={styles.decLine}
+              />
+              <LinearGradient
+                colors={["#A089CC", "#C26CC1"]}
+                start={{ x: 0, y: 0 }}
+                end={{ x: 1, y: 0 }}
+                style={styles.decDot}
+              />
+              <LinearGradient
+                colors={["#C26CC1", "#FF4FA3"]}
+                start={{ x: 0, y: 0 }}
+                end={{ x: 1, y: 0 }}
+                style={styles.decLine}
+              />
+            </View>
           </View>
 
-          <View style={styles.decorationContainer}>
-            <LinearGradient
-              colors={["#4FC3F7", "#A089CC"]}
-              start={{ x: 0, y: 0 }}
-              end={{ x: 1, y: 0 }}
-              style={styles.decLine}
-            />
-            <LinearGradient
-              colors={["#A089CC", "#C26CC1"]}
-              start={{ x: 0, y: 0 }}
-              end={{ x: 1, y: 0 }}
-              style={styles.decDot}
-            />
-            <LinearGradient
-              colors={["#C26CC1", "#FF4FA3"]}
-              start={{ x: 0, y: 0 }}
-              end={{ x: 1, y: 0 }}
-              style={styles.decLine}
-            />
-          </View>
-        </View>
+          <View style={styles.buttonsContainer}>
+            <View style={styles.buttonWrapper}>
+              <ColorButton
+                testID="button-math"
+                title="MATHEMATICS"
+                icon="📘"
+                colors={JiguuColors.gradients.pink}
+                onPress={() =>
+                  navigation.navigate("ChapterList", { subject: "Mathematics" })
+                }
+              />
+            </View>
 
-        <View style={styles.buttonsContainer}>
-          <View style={styles.buttonWrapper}>
-            <ColorButton
-              testID="button-math"
-              title="MATHEMATICS"
-              icon="📘"
-              colors={JiguuColors.gradients.pink}
-              onPress={() =>
-                navigation.navigate("ChapterList", { subject: "Mathematics" })
-              }
-            />
-          </View>
+            <View style={styles.buttonWrapper}>
+              <ColorButton
+                testID="button-science"
+                title="SCIENCE"
+                icon="🔬"
+                colors={JiguuColors.gradients.purple}
+                onPress={() => navigation.navigate("ScienceTopics")}
+              />
+            </View>
 
-          <View style={styles.buttonWrapper}>
-            <ColorButton
-              testID="button-science"
-              title="SCIENCE"
-              icon="🔬"
-              colors={JiguuColors.gradients.purple}
-              onPress={() => navigation.navigate("ScienceTopics")}
-            />
-          </View>
+            <View style={styles.buttonWrapper}>
+              <ColorButton
+                testID="button-social-science"
+                title="SOCIAL SCIENCE"
+                icon="🌍"
+                colors={JiguuColors.gradients.deepOrange}
+                onPress={() => navigation.navigate("Class10SocialScience")}
+              />
+            </View>
 
-          <View style={styles.buttonWrapper}>
-            <ColorButton
-              testID="button-social-science"
-              title="SOCIAL SCIENCE"
-              icon="🌍"
-              colors={JiguuColors.gradients.deepOrange}
-              onPress={() => navigation.navigate("Class10SocialScience")}
-            />
-          </View>
-
-          <View style={styles.buttonWrapper}>
-            <ColorButton
-              testID="button-quiz"
-              title="START QUIZ"
-              icon="🎯"
-              colors={JiguuColors.gradients.brightBlue}
-              onPress={() => navigation.navigate("Quiz")}
-            />
+            <View style={styles.buttonWrapper}>
+              <ColorButton
+                testID="button-quiz"
+                title="START QUIZ"
+                icon="🎯"
+                colors={JiguuColors.gradients.brightBlue}
+                onPress={() => navigation.navigate("Quiz")}
+              />
+            </View>
           </View>
         </View>
       </ScrollView>
@@ -109,15 +111,17 @@ const styles = StyleSheet.create({
   },
   content: {
     paddingHorizontal: Spacing.xl,
-    paddingVertical: Spacing.xl, // Perfectly symmetric for true centering
+    paddingVertical: Spacing.lg,
     flexGrow: 1,
+    justifyContent: "center",
   },
-  centeredContent: {
+  centerWrapper: {
+    width: "100%",
     justifyContent: "center",
   },
   headerContainer: {
     alignItems: "center",
-    marginBottom: Spacing["3xl"],
+    marginBottom: Spacing.xl,
   },
   titleRow: {
     flexDirection: "row",
@@ -148,7 +152,7 @@ const styles = StyleSheet.create({
     borderRadius: 3,
   },
   buttonsContainer: {
-    gap: Spacing.xl,
+    gap: Spacing.lg,
   },
   buttonWrapper: {
     width: "100%",
