@@ -121,13 +121,15 @@ const styles = StyleSheet.create({
   },
   content: {
     paddingHorizontal: Spacing.xl,
-    paddingVertical: Spacing.lg,
+    paddingTop: 0,
+    paddingBottom: Spacing.xl,
     flexGrow: 1,
     justifyContent: "center",
   },
   centerWrapper: {
     width: "100%",
     justifyContent: "center",
+    marginTop: -56,
   },
   headerContainer: {
     alignItems: "center",
@@ -162,7 +164,7 @@ const styles = StyleSheet.create({
     borderRadius: 3,
   },
   buttonsContainer: {
-    gap: Spacing.lg,
+    gap: Spacing.xl,
   },
   buttonWrapper: {
     width: "100%",
