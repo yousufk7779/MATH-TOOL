@@ -32,16 +32,7 @@ function Class8SocialScienceScreen() {
     <ScreenWrapper showBackButton hideHomeButton homeRoute={homeRoute}>
       <ScrollView
         style={styles.scrollView}
-        contentContainerStyle={[
-          styles.content,
-          {
-            paddingTop: isLandscape ? Spacing.md : 0,
-            paddingBottom: isLandscape ? 100 : 100,
-            marginTop: isLandscape ? 0 : -20,
-            justifyContent: isLandscape ? "flex-start" : "center",
-            flexGrow: isLandscape ? 0 : 1,
-          },
-        ]}
+        contentContainerStyle={styles.content}
         showsVerticalScrollIndicator={false}
       >
         <View style={styles.buttonsContainer}>
@@ -105,10 +96,18 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   content: {
-    paddingHorizontal: Spacing["2xl"],
+    paddingHorizontal: Spacing.xl,
+    paddingTop: 0,
+    paddingBottom: Spacing.xl,
+    flexGrow: 1,
+    justifyContent: "center",
   },
   buttonsContainer: {
-    gap: Spacing.md,
+    gap: Spacing.xl,
+    justifyContent: "center",
+    alignItems: "center",
+    width: "100%",
+    marginTop: -56,
   },
   buttonWrapper: {
     width: "100%",
