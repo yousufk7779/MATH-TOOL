@@ -24,13 +24,15 @@ import { ErrorBoundary } from "@/components/ErrorBoundary";
 import { JiguuColors } from "@/constants/theme";
 
 // Global safeguard for font scaling across any raw Text components
-if ((Text as any).defaultProps == null) {
-  (Text as any).defaultProps = {};
-}
-(Text as any).defaultProps.maxFontSizeMultiplier = 1.25;
+try {
+  if ((Text as any).defaultProps == null) {
+    (Text as any).defaultProps = {};
+  }
+  (Text as any).defaultProps.maxFontSizeMultiplier = 1.25;
+} catch {}
 
-// Do NOT prevent auto hide so native splash never freezes if an error or delay occurs
-SplashScreen.hideAsync().catch(() => {});
+// Keep native splash visible until root component mounts and fonts/UI are ready
+SplashScreen.preventAutoHideAsync().catch(() => {});
 
 const navTheme = {
   ...DefaultTheme,
@@ -52,24 +54,28 @@ export default function App() {
     NotoSans_700Bold,
   });
 
-  React.useEffect(() => {
+  const hideSplash = React.useCallback(() => {
     SplashScreen.hideAsync().catch(() => {});
-  }, [fontsLoaded, fontError]);
+  }, []);
 
   React.useEffect(() => {
-    // Immediate and staggered safety calls to guarantee splash is dismissed
-    SplashScreen.hideAsync().catch(() => {});
-    const t1 = setTimeout(() => {
-      SplashScreen.hideAsync().catch(() => {});
-    }, 100);
-    const t2 = setTimeout(() => {
-      SplashScreen.hideAsync().catch(() => {});
-    }, 500);
+    if (fontsLoaded || fontError) {
+      hideSplash();
+    }
+  }, [fontsLoaded, fontError, hideSplash]);
+
+  React.useEffect(() => {
+    // Immediate and staggered safety calls to guarantee splash is always dismissed
+    hideSplash();
+    const t1 = setTimeout(hideSplash, 150);
+    const t2 = setTimeout(hideSplash, 600);
+    const t3 = setTimeout(hideSplash, 1200);
     return () => {
       clearTimeout(t1);
       clearTimeout(t2);
+      clearTimeout(t3);
     };
-  }, []);
+  }, [hideSplash]);
 
   return (
     <ErrorBoundary>
