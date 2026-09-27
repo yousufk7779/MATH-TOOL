@@ -20,7 +20,7 @@ function Class11BiologyScreen() {
     <ScreenWrapper showBackButton hideHomeButton homeRoute="Class11">
       <ScrollView
         style={styles.scrollView}
-        contentContainerStyle={[styles.content, styles.centeredContent]}
+        contentContainerStyle={styles.content}
         showsVerticalScrollIndicator={false}
       >
         <View style={styles.buttonsContainer}>
@@ -71,10 +71,9 @@ const styles = StyleSheet.create({
   },
   content: {
     paddingHorizontal: Spacing.xl,
-    paddingVertical: Spacing.xl,
+    paddingTop: 0,
+    paddingBottom: Spacing.xl,
     flexGrow: 1,
-  },
-  centeredContent: {
     justifyContent: "center",
   },
   buttonsContainer: {
@@ -82,6 +81,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     width: "100%",
+    marginTop: -56,
   },
   buttonWrapper: {
     width: "100%",
