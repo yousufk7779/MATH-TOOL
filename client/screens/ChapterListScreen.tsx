@@ -109,9 +109,7 @@ function ChapterListScreen() {
 
   const displayTopic =
     topic === "Civics" &&
-    (className === "Class 10" ||
-      className === "Class 9" ||
-      className === "Class 8")
+    (className === "Class 10" || className === "Class 9")
       ? "Political Science"
       : topic;
 

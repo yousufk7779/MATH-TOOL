@@ -526,28 +526,148 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
   },
   "Class 8 Social Science": {
     History: [
-      { id: "sst-his-c8-1", number: 1, name: "Chapter 1", color: "#FF8A65" },
-      { id: "sst-his-c8-2", number: 2, name: "Chapter 2", color: "#7986CB" },
-      { id: "sst-his-c8-3", number: 3, name: "Chapter 3", color: "#AB47BC" },
-      { id: "sst-his-c8-4", number: 4, name: "Chapter 4", color: "#FDC830" },
-      { id: "sst-his-c8-5", number: 5, name: "Chapter 5", color: "#26C6DA" },
-      { id: "sst-his-c8-6", number: 6, name: "Chapter 6", color: "#FF007F" },
+      {
+        id: "c8-hist-1",
+        number: 1,
+        name: "How, When and Where",
+        color: "#FF5722",
+      },
+      {
+        id: "c8-hist-2",
+        number: 2,
+        name: "From Trade to Territory: The Company Establishes Power",
+        color: "#2979FF",
+      },
+      {
+        id: "c8-hist-3",
+        number: 3,
+        name: "Ruling the Countryside",
+        color: "#11998E",
+      },
+      {
+        id: "c8-hist-4",
+        number: 4,
+        name: "Tribals, Dikus and the Vision of a Golden Age",
+        color: "#FDC830",
+      },
+      {
+        id: "c8-hist-5",
+        number: 5,
+        name: "When People Rebel: 1857 and After",
+        color: "#E53935",
+      },
+      {
+        id: "c8-hist-6",
+        number: 6,
+        name: "Civilising the “Native”, Educating the Nation",
+        color: "#00C6FF",
+      },
+      {
+        id: "c8-hist-7",
+        number: 7,
+        name: "Women, Caste and Reform",
+        color: "#8E2DE2",
+      },
+      {
+        id: "c8-hist-8",
+        number: 8,
+        name: "The Making of the National Movement: 1870s–1947",
+        color: "#FF007F",
+      },
     ],
     Geography: [
-      { id: "sst-geo-c8-1", number: 1, name: "Chapter 1", color: "#66BB6A" },
-      { id: "sst-geo-c8-2", number: 2, name: "Chapter 2", color: "#26C6DA" },
-      { id: "sst-geo-c8-3", number: 3, name: "Chapter 3", color: "#00C6FF" },
-      { id: "sst-geo-c8-4", number: 4, name: "Chapter 4", color: "#00FFAB" },
-      { id: "sst-geo-c8-5", number: 5, name: "Chapter 5", color: "#FDC830" },
-      { id: "sst-geo-c8-6", number: 6, name: "Chapter 6", color: "#00B4DB" },
+      {
+        id: "c8-geo-1",
+        number: 1,
+        name: "Resources",
+        color: "#43A047",
+      },
+      {
+        id: "c8-geo-2",
+        number: 2,
+        name: "Land, Soil, Water, Natural Vegetation and Wildlife Resources",
+        color: "#00C6FF",
+      },
+      {
+        id: "c8-geo-3",
+        number: 3,
+        name: "Agriculture",
+        color: "#FDC830",
+      },
+      {
+        id: "c8-geo-4",
+        number: 4,
+        name: "Industries",
+        color: "#9C27B0",
+      },
+      {
+        id: "c8-geo-5",
+        number: 5,
+        name: "Human Resources",
+        color: "#FF5722",
+      },
     ],
     Civics: [
-      { id: "sst-civ-c8-1", number: 1, name: "Chapter 1", color: "#AB47BC" },
-      { id: "sst-civ-c8-2", number: 2, name: "Chapter 2", color: "#7986CB" },
-      { id: "sst-civ-c8-3", number: 3, name: "Chapter 3", color: "#42A5F5" },
-      { id: "sst-civ-c8-4", number: 4, name: "Chapter 4", color: "#8E2DE2" },
-      { id: "sst-civ-c8-5", number: 5, name: "Chapter 5", color: "#FF00FF" },
-      { id: "sst-civ-c8-6", number: 6, name: "Chapter 6", color: "#00C6FF" },
+      {
+        id: "c8-civ-1",
+        number: 1,
+        name: "The Indian Constitution",
+        color: "#3949AB",
+      },
+      {
+        id: "c8-civ-2",
+        number: 2,
+        name: "Understanding Secularism",
+        color: "#00897B",
+      },
+      {
+        id: "c8-civ-3",
+        number: 3,
+        name: "Why Do We Need a Parliament",
+        color: "#7B1FA2",
+      },
+      {
+        id: "c8-civ-4",
+        number: 4,
+        name: "Understanding Laws",
+        color: "#0288D1",
+      },
+      {
+        id: "c8-civ-5",
+        number: 5,
+        name: "Judiciary",
+        color: "#C2185B",
+      },
+      {
+        id: "c8-civ-6",
+        number: 6,
+        name: "Understanding Our Criminal Justice System",
+        color: "#FB8C00",
+      },
+      {
+        id: "c8-civ-7",
+        number: 7,
+        name: "Understanding Marginalisation",
+        color: "#FF5252",
+      },
+      {
+        id: "c8-civ-8",
+        number: 8,
+        name: "Confronting Marginalisation",
+        color: "#2E7D32",
+      },
+      {
+        id: "c8-civ-9",
+        number: 9,
+        name: "Public Facilities",
+        color: "#00ACC1",
+      },
+      {
+        id: "c8-civ-10",
+        number: 10,
+        name: "Law and Social Justice",
+        color: "#E040FB",
+      },
     ],
   },
   Science: {
@@ -1232,6 +1352,35 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
   if (chapterId === "c8-math-12") return ["#00897B", "#004D40"]; // Deep Sea Teal (Direct and Inverse Proportions)
   if (chapterId === "c8-math-13") return ["#AB47BC", "#7B1FA2"]; // Amethyst Purple for Factorisation
   if (chapterId === "c8-math-14") return ["#2979FF", "#1565C0"]; // Cobalt Royal Blue (Introduction to Graphs)
+
+  // Class 8 Social Science - History (8 Chapters)
+  if (chapterId === "c8-hist-1") return ["#FF5722", "#D84315"]; // Sunset Coral
+  if (chapterId === "c8-hist-2") return ["#2979FF", "#1565C0"]; // Royal Blue
+  if (chapterId === "c8-hist-3") return ["#11998E", "#38EF7D"]; // Mint Emerald
+  if (chapterId === "c8-hist-4") return ["#FDC830", "#F37335"]; // Golden Amber
+  if (chapterId === "c8-hist-5") return ["#E53935", "#B71C1C"]; // Bold Crimson
+  if (chapterId === "c8-hist-6") return ["#00C6FF", "#0072FF"]; // Electric Cyan
+  if (chapterId === "c8-hist-7") return ["#8E2DE2", "#4A00E0"]; // Violet Purple
+  if (chapterId === "c8-hist-8") return ["#FF007F", "#C2185B"]; // Neon Rose
+
+  // Class 8 Social Science - Geography (5 Chapters)
+  if (chapterId === "c8-geo-1") return ["#43A047", "#1B5E20"]; // Emerald Green
+  if (chapterId === "c8-geo-2") return ["#00C6FF", "#0072FF"]; // Sky Cyan
+  if (chapterId === "c8-geo-3") return ["#FDC830", "#F57F17"]; // Golden Amber
+  if (chapterId === "c8-geo-4") return ["#9C27B0", "#6A1B9A"]; // Deep Royal Purple
+  if (chapterId === "c8-geo-5") return ["#FF5722", "#E64A19"]; // Sunset Flame
+
+  // Class 8 Social Science - Civics (10 Chapters)
+  if (chapterId === "c8-civ-1") return ["#3949AB", "#1A237E"]; // Royal Navy
+  if (chapterId === "c8-civ-2") return ["#00897B", "#004D40"]; // Deep Teal
+  if (chapterId === "c8-civ-3") return ["#7B1FA2", "#4A148C"]; // Royal Amethyst
+  if (chapterId === "c8-civ-4") return ["#0288D1", "#01579B"]; // Electric Azure
+  if (chapterId === "c8-civ-5") return ["#C2185B", "#880E4F"]; // Crimson Magenta
+  if (chapterId === "c8-civ-6") return ["#FB8C00", "#EF6C00"]; // Vibrant Tangerine
+  if (chapterId === "c8-civ-7") return ["#FF5252", "#D32F2F"]; // Coral Red
+  if (chapterId === "c8-civ-8") return ["#2E7D32", "#1B5E20"]; // Emerald Pine
+  if (chapterId === "c8-civ-9") return ["#00ACC1", "#006064"]; // Aqua Marine
+  if (chapterId === "c8-civ-10") return ["#E040FB", "#7B1FA2"]; // Neon Purple
 
   // Targeted theme color replacement for Class 7 Math Chapters 10-13
   if (chapterId === "c11-phy-1") return ["#FF512F", "#DD2476"];

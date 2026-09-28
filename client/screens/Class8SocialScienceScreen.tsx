@@ -71,7 +71,7 @@ function Class8SocialScienceScreen() {
           <View style={styles.buttonWrapper}>
             <ColorButton
               testID="button-civics"
-              title="POLITICAL SCIENCE"
+              title="CIVICS"
               icon="⚖️"
               colors={JiguuColors.gradients.purple}
               onPress={() =>

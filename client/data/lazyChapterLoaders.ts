@@ -3,6 +3,98 @@
 import type { ChapterContent } from "./types";
 
 export const lazyChapterLoaders: Record<string, () => any> = {
+  "c8-hist-1": () => {
+    const mod = require("./content/c8-hist-1");
+    return mod.c8Hist1;
+  },
+  "c8-hist-2": () => {
+    const mod = require("./content/c8-hist-2");
+    return mod.c8Hist2;
+  },
+  "c8-hist-3": () => {
+    const mod = require("./content/c8-hist-3");
+    return mod.c8Hist3;
+  },
+  "c8-hist-4": () => {
+    const mod = require("./content/c8-hist-4");
+    return mod.c8Hist4;
+  },
+  "c8-hist-5": () => {
+    const mod = require("./content/c8-hist-5");
+    return mod.c8Hist5;
+  },
+  "c8-hist-6": () => {
+    const mod = require("./content/c8-hist-6");
+    return mod.c8Hist6;
+  },
+  "c8-hist-7": () => {
+    const mod = require("./content/c8-hist-7");
+    return mod.c8Hist7;
+  },
+  "c8-hist-8": () => {
+    const mod = require("./content/c8-hist-8");
+    return mod.c8Hist8;
+  },
+  "c8-geo-1": () => {
+    const mod = require("./content/c8-geo-1");
+    return mod.c8Geo1;
+  },
+  "c8-geo-2": () => {
+    const mod = require("./content/c8-geo-2");
+    return mod.c8Geo2;
+  },
+  "c8-geo-3": () => {
+    const mod = require("./content/c8-geo-3");
+    return mod.c8Geo3;
+  },
+  "c8-geo-4": () => {
+    const mod = require("./content/c8-geo-4");
+    return mod.c8Geo4;
+  },
+  "c8-geo-5": () => {
+    const mod = require("./content/c8-geo-5");
+    return mod.c8Geo5;
+  },
+  "c8-civ-1": () => {
+    const mod = require("./content/c8-civ-1");
+    return mod.c8Civ1;
+  },
+  "c8-civ-2": () => {
+    const mod = require("./content/c8-civ-2");
+    return mod.c8Civ2;
+  },
+  "c8-civ-3": () => {
+    const mod = require("./content/c8-civ-3");
+    return mod.c8Civ3;
+  },
+  "c8-civ-4": () => {
+    const mod = require("./content/c8-civ-4");
+    return mod.c8Civ4;
+  },
+  "c8-civ-5": () => {
+    const mod = require("./content/c8-civ-5");
+    return mod.c8Civ5;
+  },
+  "c8-civ-6": () => {
+    const mod = require("./content/c8-civ-6");
+    return mod.c8Civ6;
+  },
+  "c8-civ-7": () => {
+    const mod = require("./content/c8-civ-7");
+    return mod.c8Civ7;
+  },
+  "c8-civ-8": () => {
+    const mod = require("./content/c8-civ-8");
+    return mod.c8Civ8;
+  },
+  "c8-civ-9": () => {
+    const mod = require("./content/c8-civ-9");
+    return mod.c8Civ9;
+  },
+  "c8-civ-10": () => {
+    const mod = require("./content/c8-civ-10");
+    return mod.c8Civ10;
+  },
   "c9-math-1": () => {
     const mod = require("./content/c9-math-1");
     return mod.c9Math1;
