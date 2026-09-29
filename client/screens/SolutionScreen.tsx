@@ -1044,7 +1044,10 @@ function SolutionScreen() {
   let tab2Title = "Q & A";
   const tab3Title = "MCQs";
 
-  if (isSeniorClass) {
+  if (chapterId.startsWith("c12-math-") || chapterId.startsWith("c11-math-") || chapterId.includes("-math-") || chapterId.startsWith("math-")) {
+    tab1Title = "Overview";
+    tab2Title = "Q & A";
+  } else if (isSeniorClass) {
     tab1Title = "Reference";
     tab2Title = "Q & A";
   } else if (chapterId.startsWith("sci-")) {
@@ -1081,7 +1084,7 @@ function SolutionScreen() {
             gradient={chapterGradient}
             textStyle={hwTitleStyle}
           />
-          {hasExercises && (
+          {(hasExercises || chapterId.startsWith("c12-math-") || chapterId.startsWith("c11-math-")) && (
             <TabButton
               title={tab2Title}
               isActive={activeSection === "exercises"}
@@ -1090,7 +1093,7 @@ function SolutionScreen() {
               textStyle={hwTitleStyle}
             />
           )}
-          {((chapterData?.mcqs && chapterData.mcqs.length > 0) || !isSeniorClass) && (
+          {((chapterData?.mcqs && chapterData.mcqs.length > 0) || !isSeniorClass || chapterId.startsWith("c12-math-") || chapterId.startsWith("c11-math-")) && (
             <TabButton
               title={tab3Title}
               isActive={activeSection === "mcq"}

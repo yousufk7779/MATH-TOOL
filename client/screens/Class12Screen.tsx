@@ -88,6 +88,23 @@ function Class12Screen() {
             />
           </View>
 
+          {/* 3. MATHEMATICS BUTTON */}
+          <View style={styles.buttonWrapper}>
+            <ColorButton
+              testID="button-mathematics"
+              title="MATHEMATICS"
+              icon="📐"
+              colors={["#2979FF", "#00B0FF"]}
+              onPress={() =>
+                navigation.navigate("ChapterList", {
+                  subject: "Class 12 Science",
+                  topic: "Mathematics",
+                  className: "Class 12",
+                })
+              }
+            />
+          </View>
+
           {/* 3. BIOLOGY BUTTON (EXACT ZOOLOGY COLOR, NAVIGATES TO CLASS 12 BIOLOGY SCREEN) */}
           <View style={styles.buttonWrapper}>
             <ColorButton

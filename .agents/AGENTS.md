@@ -214,7 +214,25 @@ Full authoritative rules, chapter list, and UI standards are permanently recorde
 4. **100% Web View Architecture (`isHtmlView: true`)**: Dark cards (`.q-card`), chapter `themeColor` borders, green answer boxes (`#4CAF50`), and coordinate tables.
 5. **Strict Stacked Fractions**: Use vertical `<span class="frac"><span class="num">a</span><span class="den">b</span></span>`, never raw `a/b`.
 6. **Sub-Tabs for Each Exercise & Solved Examples**: Clean sub-tab navigation (`examples`, `exercise1`, `exercise2`, etc.).
-7. **Resume Trigger**: When user says "bhai class 10 math continue karo" or "bhai class 10 math chapter X karo", immediately apply this blueprint.
+---
+
+## Class 12 Mathematics Master Blueprint & Gold Standards
+
+Full authoritative rules, JKBOSE 6 units & CBSE mapping (13 chapters), specialized matrix/determinants/calculus formatting, and UI standards are permanently recorded in:
+👉 `.agents/CLASS_12_MATH_BLUEPRINT.md`
+
+### Core Class 12 Math Directives:
+1. **100% Web View Architecture (`isHtmlView: true`)**: All chapters built using rich HTML/CSS Web View for dark-mode cards and custom math typography.
+2. **Zero Content Omission Guarantee**: Every single question, sub-part `(i), (ii), (iii)...`, and miscellaneous exercise from the NCERT / BYJU'S textbook included verbatim with complete problem statements.
+3. **Student-Friendly & Direct Mathematical Solutions (NO Bulky Step Headers)**: Eliminate verbose "Step 1:", "Step 2:" paragraph titles. Write clean line-by-line algebraic steps using `&rArr;` with concise reasons in brackets (e.g. `[Differentiating both sides w.r.t. x]`, `[Applying Integration by Parts]`, `[From Equation (1)]`).
+4. **Strict Stacked Fractions ("a over b" Format, Never "a/b")**: Raw `a/b` or `dy/dx` slashes strictly forbidden in solutions. All fractions vertically stacked (`<span class="frac"><span class="num">numerator</span><span class="den">denominator</span></span>`) with `.sol-step { line-height: 2.35; }`.
+5. **High-Definition Matrices, Determinants, Vectors & LPP**: Custom bracketed CSS tables for matrices (`[` `]`) and determinants (`|` `|`), unit vectors with hats (`<b>i&#770;</b>, <b>j&#770;</b>, <b>k&#770;</b>`), LPP corner-point tables, and probability distribution tables.
+6. **Theme Color & Question Hierarchy**: Question headers (`Question 1`) in `themeColor`, statement in pure `#FFFFFF`, sub-parts in `themeColor`, solution card with `themeColor` left border, and final answer in a crisp `#4CAF50` green box.
+7. **Dedicated Sub-Tab For Each Exercise**: Every exercise rendered in its own dedicated sub-tab via `chapterData.exercises` and `chapterData.htmlExercises`.
+8. **Tab 1 Overview Master Cheat Sheet**: End-of-overview full formula summary (20+ standard integrals, matrix properties, inverse trig principal value branches).
+9. **Tab 3 Interactive MCQs (25 Tiered Questions)**: Q1-Q10 Easy recall, Q11-Q18 Moderate, Q19-Q25 Advance with instant Green/Red feedback and gamified dashboard.
+10. **Resume Trigger**: When user says "class 12 math chapter X karo" or "class 12 maths continue karo", immediately apply this blueprint.
+
 
 
 

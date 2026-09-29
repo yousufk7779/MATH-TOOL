@@ -84,6 +84,21 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
       { id: "c12-zoo-3", number: 3, name: "Biology in Human Welfare", color: "#FF007F" },
       { id: "c12-zoo-4", number: 4, name: "Biotechnology and its Applications", color: "#00B0FF" },
     ],
+    Mathematics: [
+      { id: "c12-math-1", number: 1, name: "Relations and Functions", color: "#FF512F" },
+      { id: "c12-math-2", number: 2, name: "Inverse Trigonometric Functions", color: "#00C6FF" },
+      { id: "c12-math-3", number: 3, name: "Matrices", color: "#7C4DFF" },
+      { id: "c12-math-4", number: 4, name: "Determinants", color: "#FF9100" },
+      { id: "c12-math-5", number: 5, name: "Continuity and Differentiability", color: "#00E676" },
+      { id: "c12-math-6", number: 6, name: "Application of Derivatives", color: "#FF007F" },
+      { id: "c12-math-7", number: 7, name: "Integrals", color: "#2979FF" },
+      { id: "c12-math-8", number: 8, name: "Application of Integrals", color: "#FFD600" },
+      { id: "c12-math-9", number: 9, name: "Differential Equations", color: "#E040FB" },
+      { id: "c12-math-10", number: 10, name: "Vector Algebra", color: "#00E5FF" },
+      { id: "c12-math-11", number: 11, name: "Three Dimensional Geometry", color: "#FF3D00" },
+      { id: "c12-math-12", number: 12, name: "Linear Programming", color: "#00B0FF" },
+      { id: "c12-math-13", number: 13, name: "Probability", color: "#11998E" },
+    ],
   },
   "Class 11 Arts": {
     Education: [
@@ -1474,6 +1489,22 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
   if (chapterId === "c12-pol-13") return ["#D50000", "#B71C1C"]; // Bold Crimson
   if (chapterId === "c12-pol-14") return ["#7C4DFF", "#536DFE"]; // Deep Indigo
   if (chapterId === "c12-pol-15") return ["#00C853", "#64DD17"]; // Vibrant Green
+
+  // Class 12 Mathematics (13 Chapters - Curated High Contrast Two-Stop Gradients)
+  if (chapterId === "c12-math-1") return ["#FF512F", "#DD2476"]; // Relations and Functions
+  if (chapterId === "c12-math-2") return ["#00C6FF", "#0072FF"]; // Inverse Trigonometric Functions
+  if (chapterId === "c12-math-3") return ["#7C4DFF", "#536DFE"]; // Matrices
+  if (chapterId === "c12-math-4") return ["#FF9100", "#FF3D00"]; // Determinants
+  if (chapterId === "c12-math-5") return ["#00E676", "#00B0FF"]; // Continuity and Differentiability
+  if (chapterId === "c12-math-6") return ["#FF007F", "#E91E63"]; // Application of Derivatives
+  if (chapterId === "c12-math-7") return ["#2979FF", "#1565C0"]; // Integrals
+  if (chapterId === "c12-math-8") return ["#FDC830", "#F37335"]; // Application of Integrals
+  if (chapterId === "c12-math-9") return ["#E040FB", "#8E24AA"]; // Differential Equations
+  if (chapterId === "c12-math-10") return ["#00E5FF", "#00838F"]; // Vector Algebra
+  if (chapterId === "c12-math-11") return ["#FF3D00", "#DD2476"]; // Three Dimensional Geometry
+  if (chapterId === "c12-math-12") return ["#00B0FF", "#0072FF"]; // Linear Programming
+  if (chapterId === "c12-math-13") return ["#11998E", "#38EF7D"]; // Probability
+
 
   // Class 11 Political Science (18 Chapters - Vibrant Two-Stop Gradients)
   if (chapterId === "c11-pol-1") return ["#FF512F", "#DD2476"]; // Sunset Crimson

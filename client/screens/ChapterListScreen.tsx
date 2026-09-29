@@ -54,6 +54,7 @@ function ChapterListScreen() {
       const isPolScience11PartA = item.id === "c11-pol-1";
       const isPolScience11PartB = item.id === "c11-pol-11";
 
+
       return (
         <View>
           {(isPolScience12PartA || isPolScience11PartA) && (
