@@ -7,6 +7,10 @@ export const lazyChapterLoaders: Record<string, () => any> = {
     const mod = require("./content/c12-math-1");
     return mod.c12Math1;
   },
+  "c12-math-2": () => {
+    const mod = require("./content/c12-math-2");
+    return mod.c12Math2;
+  },
   "c8-hist-1": () => {
     const mod = require("./content/c8-hist-1");
     return mod.c8Hist1;
