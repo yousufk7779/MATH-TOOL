@@ -3,6 +3,10 @@
 import type { ChapterContent } from "./types";
 
 export const lazyChapterLoaders: Record<string, () => any> = {
+  "c12-math-1": () => {
+    const mod = require("./content/c12-math-1");
+    return mod.c12Math1;
+  },
   "c8-hist-1": () => {
     const mod = require("./content/c8-hist-1");
     return mod.c8Hist1;
