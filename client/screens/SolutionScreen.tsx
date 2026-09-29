@@ -1041,7 +1041,7 @@ function SolutionScreen() {
   ]);
 
   let tab1Title = "Overview";
-  let tab2Title = "Exercises";
+  let tab2Title = "Q & A";
   const tab3Title = "MCQs";
 
   if (isSeniorClass) {
@@ -1050,8 +1050,8 @@ function SolutionScreen() {
   } else if (chapterId.startsWith("sci-")) {
     tab1Title = "Quick Revision";
     tab2Title = "NCERT Solutions";
-  } else if (chapterId.startsWith("sst-")) {
-    tab1Title = "Key Concepts";
+  } else if (chapterId.startsWith("sst-") || chapterId.match(/^c\d+-(hist|geo|civ)-/)) {
+    tab1Title = "Overview";
     tab2Title = "Q & A";
   } else if (chapterId.startsWith("eng-gra-")) {
     tab1Title = "Rules & Formats";
@@ -1115,9 +1115,11 @@ function SolutionScreen() {
                     ? "Examples"
                     : sub === "theorems"
                       ? "Theorems"
-                      : chapterData?.exercises?.find(
-                          (ex: any) => ex.id === sub.trim(),
-                        )?.name ||
+                      : sub === "exercises"
+                        ? "Q & A"
+                        : chapterData?.exercises?.find(
+                            (ex: any) => ex.id === sub.trim(),
+                          )?.name ||
                         sub
                           .replace("sp3-it-", "In-Text-")
                           .replace("sp3-ex", "Exercise")
