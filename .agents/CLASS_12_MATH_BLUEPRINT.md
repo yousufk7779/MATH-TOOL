@@ -68,7 +68,7 @@ This document serves as the permanent, authoritative blueprint for **Class 12 Ma
      </div>
      ```
 
-9. **Dedicated Independent Sub-Tabs For Each Exercise**:
+9. **Dedicated Independent Sub-Tabs For Each Exercise & Per-Tab Style Prepending**:
    - Every NCERT exercise + Miscellaneous Exercise must be organized in its own sub-tab via `chapterData.exercises` and `chapterData.htmlExercises`:
      ```typescript
      exercises: [
@@ -77,11 +77,12 @@ This document serves as the permanent, authoritative blueprint for **Class 12 Ma
        { id: "misc", name: "Miscellaneous", questions: [] },
      ],
      htmlExercises: {
-       "ex1-1": ex1_1Html,
-       "ex1-2": ex1_2Html,
-       "misc": miscHtml,
+       "ex1-1": `${styleBlock}\n<div style="padding: 4px 2px;">...</div>`,
+       "ex1-2": `${styleBlock}\n<div style="padding: 4px 2px;">...</div>`,
+       "misc": `${styleBlock}\n<div style="padding: 4px 2px;">...</div>`,
      }
      ```
+   - **CRITICAL PER-TAB STYLING GUARANTEE:** Every individual exercise HTML string in `htmlExercises` (as well as `htmlOverview`) **MUST strictly prepend the full `<style>...</style>` block at the very top**. When students tap between sub-tabs in `SolutionScreen.tsx`, the web view swaps HTML strings. Prepending the style block ensures theme colors, stacked fractions, and dark-card borders NEVER collapse or glitch on tab switching.
 
 10. **Zero Raw LaTeX / Markdown Remnants in HTML View (`$`, `\frac`, `\int`, `\text`)**:
     - MathJax is not active in HTML Web View. Raw LaTeX like `$\frac{a}{b}$` or `\text{...}` is strictly forbidden.
@@ -121,22 +122,22 @@ This document serves as the permanent, authoritative blueprint for **Class 12 Ma
 
 ## 3. Class 12 Syllabus, JKBOSE 6 Units & Theme Colors
 
-| JKBOSE Unit | Marks | NCERT Chapter | Chapter Name | Theme Color | Accent Color |
-|---|:---:|:---:|---|:---:|:---:|
-| **Unit I: Relations & Functions** | **08 Marks** | **Ch 1** | **Relations and Functions** | `#FF512F` | `#FF8A65` |
-| | | **Ch 2** | **Inverse Trigonometric Functions** | `#00C6FF` | `#80D8FF` |
-| **Unit II: Algebra** | **10 Marks** | **Ch 3** | **Matrices** | `#7C4DFF` | `#B388FF` |
-| | | **Ch 4** | **Determinants** | `#FF9100` | `#FFB74D` |
-| **Unit III: Calculus** | **35 Marks** | **Ch 5** | **Continuity and Differentiability** | `#00E676` | `#69F0AE` |
-| *(Highest Weightage!)* | | **Ch 6** | **Application of Derivatives** | `#FF007F` | `#FF80AB` |
-| | | **Ch 7** | **Integrals** | `#2979FF` | `#82B1FF` |
-| | | **Ch 8** | **Application of Integrals** | `#FFD600` | `#FFE082` |
-| | | **Ch 9** | **Differential Equations** | `#E040FB` | `#EA80FC` |
-| **Unit IV: Vectors & 3D Geometry** | **14 Marks** | **Ch 10** | **Vector Algebra** | `#00E5FF` | `#18FFFF` |
-| | | **Ch 11** | **Three Dimensional Geometry** | `#FF3D00` | `#FF6E40` |
-| **Unit V: Linear Programming** | **05 Marks** | **Ch 12** | **Linear Programming** | `#00B0FF` | `#80D8FF` |
-| **Unit VI: Probability** | **08 Marks** | **Ch 13** | **Probability** | `#11998E` | `#38EF7D` |
-| **TOTAL THEORY** | **80 M** | | **All 13 Chapters** | | |
+| JKBOSE Unit | Marks | NCERT Chapter | Chapter Name | Theme Color | Accent Color | Current Status |
+|---|:---:|:---:|---|:---:|:---:|:---:|
+| **Unit I: Relations & Functions** | **08 Marks** | **Ch 1** | **Relations and Functions** | `#FF512F` | `#FF8A65` | ✅ Complete (Gold Standard) |
+| | | **Ch 2** | **Inverse Trigonometric Functions** | `#00C6FF` | `#80D8FF` | ✅ Complete (Gold Standard) |
+| **Unit II: Algebra** | **10 Marks** | **Ch 3** | **Matrices** | `#7C4DFF` | `#B388FF` | ✅ Complete (Gold Standard) |
+| | | **Ch 4** | **Determinants** | `#FF9100` | `#FFB74D` | ✅ Complete (Gold Standard) |
+| **Unit III: Calculus** | **35 Marks** | **Ch 5** | **Continuity and Differentiability** | `#00E676` | `#69F0AE` | ✅ Complete (Gold Standard) |
+| *(Highest Weightage!)* | | **Ch 6** | **Application of Derivatives** | `#FF007F` | `#FF80AB` | ✅ Complete (Gold Standard) |
+| | | **Ch 7** | **Integrals** | `#2979FF` | `#82B1FF` | ⏳ Up next tomorrow |
+| | | **Ch 8** | **Application of Integrals** | `#FFD600` | `#FFE082` | ⏳ Pending |
+| | | **Ch 9** | **Differential Equations** | `#E040FB` | `#EA80FC` | ⏳ Pending |
+| **Unit IV: Vectors & 3D Geometry** | **14 Marks** | **Ch 10** | **Vector Algebra** | `#00E5FF` | `#18FFFF` | ⏳ Pending |
+| | | **Ch 11** | **Three Dimensional Geometry** | `#FF3D00` | `#FF6E40` | ⏳ Pending |
+| **Unit V: Linear Programming** | **05 Marks** | **Ch 12** | **Linear Programming** | `#00B0FF` | `#80D8FF` | ⏳ Pending |
+| **Unit VI: Probability** | **08 Marks** | **Ch 13** | **Probability** | `#11998E` | `#38EF7D` | ⏳ Pending |
+| **TOTAL THEORY** | **80 M** | | **All 13 Chapters** | | | **6/13 Finished** |
 
 ---
 
