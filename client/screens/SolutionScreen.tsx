@@ -1522,14 +1522,201 @@ const MathWebView = memo(
         <style>
           body { 
             margin: 0; 
-            padding: 5px; 
-            color: white; 
+            padding: 8px 6px; 
+            color: #FFFFFF; 
             font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
-            font-size: 19px; 
+            font-size: 15.5px; 
             line-height: 1.6;
             background-color: transparent;
           }
           * { box-sizing: border-box; }
+
+          /* Stacked Fraction (Vertical a over b) */
+          .frac { 
+            display: inline-flex !important; 
+            flex-direction: column !important; 
+            vertical-align: middle !important; 
+            text-align: center !important; 
+            font-size: 0.95em !important; 
+            margin: 2px 6px !important; 
+            line-height: 1.25 !important; 
+          }
+          .frac .num { 
+            border-bottom: 1.5px solid currentColor !important; 
+            padding: 1px 4px !important; 
+            text-align: center !important; 
+          }
+          .frac .den { 
+            padding: 1px 4px !important; 
+            text-align: center !important; 
+          }
+
+          /* True Matrix with High-Definition Square Brackets [ ] */
+          .mat {
+            display: inline-flex !important;
+            position: relative !important;
+            vertical-align: middle !important;
+            margin: 4px 6px !important;
+            padding: 4px 10px !important;
+          }
+          .mat::before {
+            content: "" !important;
+            position: absolute !important;
+            left: 0 !important;
+            top: 0 !important;
+            bottom: 0 !important;
+            width: 7px !important;
+            border-left: 2.5px solid currentColor !important;
+            border-top: 2.5px solid currentColor !important;
+            border-bottom: 2.5px solid currentColor !important;
+            border-top-left-radius: 4px !important;
+            border-bottom-left-radius: 4px !important;
+          }
+          .mat::after {
+            content: "" !important;
+            position: absolute !important;
+            right: 0 !important;
+            top: 0 !important;
+            bottom: 0 !important;
+            width: 7px !important;
+            border-right: 2.5px solid currentColor !important;
+            border-top: 2.5px solid currentColor !important;
+            border-bottom: 2.5px solid currentColor !important;
+            border-top-right-radius: 4px !important;
+            border-bottom-right-radius: 4px !important;
+          }
+          .mat table, .mat-table {
+            width: auto !important;
+            max-width: none !important;
+            display: inline-table !important;
+            margin: 0 !important;
+            border-collapse: collapse !important;
+          }
+          .mat td, .mat-table td {
+            padding: 4px 8px !important;
+            text-align: center !important;
+            color: #FFFFFF !important;
+            font-weight: 600 !important;
+            font-size: 15px !important;
+            white-space: nowrap !important;
+            word-break: normal !important;
+            border: none !important;
+          }
+
+          /* True Determinant with Straight Vertical Bars | | */
+          .det {
+            display: inline-flex !important;
+            position: relative !important;
+            vertical-align: middle !important;
+            margin: 4px 6px !important;
+            padding: 4px 8px !important;
+            border-left: 2.5px solid currentColor !important;
+            border-right: 2.5px solid currentColor !important;
+          }
+          .det table, .det-table {
+            width: auto !important;
+            max-width: none !important;
+            display: inline-table !important;
+            margin: 0 !important;
+            border-collapse: collapse !important;
+          }
+          .det td, .det-table td {
+            padding: 4px 8px !important;
+            text-align: center !important;
+            color: #FFFFFF !important;
+            font-weight: 600 !important;
+            font-size: 15px !important;
+            white-space: nowrap !important;
+            word-break: normal !important;
+            border: none !important;
+          }
+
+          /* Universal Card Styling */
+          .q-card {
+            background: rgba(15, 23, 42, 0.8) !important;
+            border: 1.5px solid rgba(255, 255, 255, 0.18) !important;
+            border-radius: 12px !important;
+            padding: 16px !important;
+            margin-bottom: 22px !important;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.25) !important;
+          }
+          .q-title {
+            font-size: 17.5px !important;
+            font-weight: 800 !important;
+            margin-bottom: 10px !important;
+            display: flex !important;
+            align-items: center !important;
+            gap: 8px !important;
+          }
+          .q-text {
+            font-size: 15.5px !important;
+            color: #FFFFFF !important;
+            line-height: 2.1 !important;
+            margin-bottom: 14px !important;
+            font-weight: 500 !important;
+          }
+          .sub-item {
+            margin-top: 16px !important;
+            padding-top: 16px !important;
+            border-top: 1px dashed rgba(255, 255, 255, 0.18) !important;
+          }
+          .sub-q {
+            font-size: 15.5px !important;
+            color: #FFFFFF !important;
+            font-weight: 600 !important;
+            margin-bottom: 12px !important;
+            line-height: 2.1 !important;
+          }
+          .sol-box {
+            background: rgba(0, 0, 0, 0.35) !important;
+            border-left: 3.5px solid #FF512F;
+            border-radius: 8px !important;
+            padding: 14px 16px !important;
+            margin-top: 12px !important;
+          }
+          .sol-title {
+            font-size: 14.5px !important;
+            font-weight: 800 !important;
+            margin-bottom: 10px !important;
+            display: flex !important;
+            align-items: center !important;
+            gap: 6px !important;
+          }
+          .sol-step {
+            font-size: 15px !important;
+            color: #E2E8F0 !important;
+            line-height: 2.35 !important;
+          }
+          .sol-step div {
+            margin-top: 6px !important;
+            margin-bottom: 6px !important;
+          }
+          .reason {
+            color: #94A3B8 !important;
+            font-size: 13.5px !important;
+            font-style: italic !important;
+            display: inline-block !important;
+            margin-left: 8px !important;
+          }
+          .ans-box {
+            background: rgba(76, 175, 80, 0.15) !important;
+            border: 1.5px solid #4CAF50 !important;
+            border-radius: 8px !important;
+            padding: 8px 14px !important;
+            margin-top: 14px !important;
+            display: inline-block !important;
+            line-height: 1.8 !important;
+          }
+          .ans-label {
+            color: #A5D6A7 !important;
+            font-weight: 700 !important;
+            font-size: 14px !important;
+          }
+          .ans-val {
+            color: #FFFFFF !important;
+            font-weight: 700 !important;
+            font-size: 15px !important;
+          }
         </style>
       </head>
       <body>
@@ -1544,7 +1731,7 @@ const MathWebView = memo(
       * { box-sizing: border-box !important; }
       body { 
         margin: 0 !important; 
-        padding: 5px !important; 
+        padding: 8px 6px !important; 
         overflow-x: hidden !important; 
         width: 100% !important; 
         -webkit-user-select: none; 
@@ -1560,7 +1747,7 @@ const MathWebView = memo(
       .diagram-caption, .diagram-wrapper, .frac, .frac * {
         text-align: center !important;
       }
-      p, img, div:not(.table-container):not(.table-responsive):not(.prop-table), h1, h2, h3, h4, h5, h6, b, strong, span {
+      p, img, div:not(.table-container):not(.table-responsive):not(.prop-table):not(.mat):not(.det), h1, h2, h3, h4, h5, h6, b, strong, span {
         word-break: break-word !important;
         overflow-wrap: break-word !important;
         max-width: 100% !important;
@@ -1572,12 +1759,29 @@ const MathWebView = memo(
         margin: 15px auto !important; 
         border-radius: 8px !important;
       }
-      table:not(.prop-table):not(.data-table) { 
+      table:not(.prop-table):not(.data-table):not(.mat-table):not(.det-table):not(.inline-table) { 
         width: 100% !important; 
         max-width: 100% !important; 
         display: table !important; 
         margin: 15px auto !important; 
         border-collapse: collapse !important;
+      }
+      .mat table, .mat-table, .det table, .det-table {
+        width: auto !important;
+        max-width: none !important;
+        display: inline-table !important;
+        margin: 0 !important;
+        border-collapse: collapse !important;
+      }
+      .mat td, .mat-table td, .det td, .det-table td {
+        padding: 4px 8px !important;
+        text-align: center !important;
+        color: #FFFFFF !important;
+        font-weight: 600 !important;
+        font-size: 15px !important;
+        white-space: nowrap !important;
+        word-break: normal !important;
+        border: none !important;
       }
       .table-container, .table-responsive {
         width: 100% !important;
