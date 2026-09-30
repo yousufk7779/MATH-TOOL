@@ -27,6 +27,34 @@ export const lazyChapterLoaders: Record<string, () => any> = {
     const mod = require("./content/c12-math-6");
     return mod.c12Math6;
   },
+  "c12-math-7": () => {
+    const mod = require("./content/c12-math-7");
+    return mod.c12Math7;
+  },
+  "c12-math-8": () => {
+    const mod = require("./content/c12-math-8");
+    return mod.c12Math8;
+  },
+  "c12-math-9": () => {
+    const mod = require("./content/c12-math-9");
+    return mod.c12Math9;
+  },
+  "c12-math-10": () => {
+    const mod = require("./content/c12-math-10");
+    return mod.c12Math10;
+  },
+  "c12-math-11": () => {
+    const mod = require("./content/c12-math-11");
+    return mod.c12Math11;
+  },
+  "c12-math-12": () => {
+    const mod = require("./content/c12-math-12");
+    return mod.c12Math12;
+  },
+  "c12-math-13": () => {
+    const mod = require("./content/c12-math-13");
+    return mod.c12Math13;
+  },
   "c8-hist-1": () => {
     const mod = require("./content/c8-hist-1");
     return mod.c8Hist1;

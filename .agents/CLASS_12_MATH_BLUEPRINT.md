@@ -130,14 +130,14 @@ This document serves as the permanent, authoritative blueprint for **Class 12 Ma
 | | | **Ch 4** | **Determinants** | `#FF9100` | `#FFB74D` | ✅ Complete (Gold Standard) |
 | **Unit III: Calculus** | **35 Marks** | **Ch 5** | **Continuity and Differentiability** | `#00E676` | `#69F0AE` | ✅ Complete (Gold Standard) |
 | *(Highest Weightage!)* | | **Ch 6** | **Application of Derivatives** | `#FF007F` | `#FF80AB` | ✅ Complete (Gold Standard) |
-| | | **Ch 7** | **Integrals** | `#2979FF` | `#82B1FF` | ⏳ Up next tomorrow |
-| | | **Ch 8** | **Application of Integrals** | `#FFD600` | `#FFE082` | ⏳ Pending |
-| | | **Ch 9** | **Differential Equations** | `#E040FB` | `#EA80FC` | ⏳ Pending |
-| **Unit IV: Vectors & 3D Geometry** | **14 Marks** | **Ch 10** | **Vector Algebra** | `#00E5FF` | `#18FFFF` | ⏳ Pending |
-| | | **Ch 11** | **Three Dimensional Geometry** | `#FF3D00` | `#FF6E40` | ⏳ Pending |
-| **Unit V: Linear Programming** | **05 Marks** | **Ch 12** | **Linear Programming** | `#00B0FF` | `#80D8FF` | ⏳ Pending |
-| **Unit VI: Probability** | **08 Marks** | **Ch 13** | **Probability** | `#11998E` | `#38EF7D` | ⏳ Pending |
-| **TOTAL THEORY** | **80 M** | | **All 13 Chapters** | | | **6/13 Finished** |
+| | | **Ch 7** | **Integrals** | `#2979FF` | `#82B1FF` | ✅ Complete (Gold Standard) |
+| | | **Ch 8** | **Application of Integrals** | `#FFD600` | `#FFE082` | ✅ Complete (Gold Standard) |
+| | | **Ch 9** | **Differential Equations** | `#E040FB` | `#EA80FC` | ✅ Complete (Gold Standard) |
+| **Unit IV: Vectors & 3D Geometry** | **14 Marks** | **Ch 10** | **Vector Algebra** | `#00E5FF` | `#18FFFF` | ✅ Complete (Gold Standard) |
+| | | **Ch 11** | **Three Dimensional Geometry** | `#FF3D00` | `#FF6E40` | ✅ Complete (Gold Standard) |
+| **Unit V: Linear Programming** | **05 Marks** | **Ch 12** | **Linear Programming** | `#00B0FF` | `#80D8FF` | ✅ Complete (Gold Standard) |
+| **Unit VI: Probability** | **08 Marks** | **Ch 13** | **Probability** | `#11998E` | `#38EF7D` | ✅ Complete (Gold Standard) |
+| **TOTAL THEORY** | **80 M** | | **All 13 Chapters** | | | **13/13 Finished (100% COMPLETE!)** |
 
 ---
 
