@@ -40,7 +40,7 @@ export const c12Math12: ChapterContent = {
     },
     {
         "name": "General Linear Constraint",
-        "formula": "a₁x + b₁y &le; c₁ &nbsp; \text{or} &nbsp; a₂x + b₂y &ge; c₂"
+        "formula": "a₁x + b₁y &le; c₁ &nbsp; or &nbsp; a₂x + b₂y &ge; c₂"
     },
     {
         "name": "Non-negativity Restrictions",
@@ -48,11 +48,11 @@ export const c12Math12: ChapterContent = {
     },
     {
         "name": "Unbounded Minimum Test Condition",
-        "formula": "ax + by &lt; m &nbsp; \text{must have no points in common with feasible region}"
+        "formula": "ax + by &lt; m &nbsp; (no common points with feasible region)"
     },
     {
         "name": "Unbounded Maximum Test Condition",
-        "formula": "ax + by &gt; M &nbsp; \text{must have no points in common with feasible region}"
+        "formula": "ax + by &gt; M &nbsp; (no common points with feasible region)"
     }
 ],
   exercises: [

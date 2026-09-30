@@ -94,7 +94,7 @@ export const c12Math3: ChapterContent = {
         "C):   8",
         "D):   12"
       ],
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "explanation": "Factor pairs of 18 are (1,18), (2,9), (3,6), (6,3), (9,2), and (18,1). Thus, there are 6 possible orders."
     },
     {
@@ -106,7 +106,7 @@ export const c12Math3: ChapterContent = {
         "C):   m = n",
         "D):   m = 1"
       ],
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "explanation": "A matrix in which the number of rows equals the number of columns (m = n) is defined as a square matrix."
     },
     {
@@ -118,7 +118,7 @@ export const c12Math3: ChapterContent = {
         "C):   256",
         "D):   512"
       ],
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "explanation": "A 3 × 3 matrix has 9 elements. Each position has 2 choices (0 or 1). Total possible matrices = 2⁹ = 512."
     },
     {
@@ -130,7 +130,7 @@ export const c12Math3: ChapterContent = {
         "C):   -1",
         "D):   Any real number"
       ],
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "explanation": "For a skew-symmetric matrix, aᵢⱼ = -aⱼᵢ. For diagonal elements where i = j, aᵢᵢ = -aᵢᵢ ⇒ 2aᵢᵢ = 0 ⇒ aᵢᵢ = 0."
     },
     {
@@ -142,7 +142,7 @@ export const c12Math3: ChapterContent = {
         "C):   4 × 2",
         "D):   2 × 3"
       ],
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "explanation": "Multiplication (2 × 3) × (3 × 4) yields a matrix of order 2 × 4."
     },
     {
@@ -154,7 +154,7 @@ export const c12Math3: ChapterContent = {
         "C):   Symmetric matrix",
         "D):   Diagonal matrix"
       ],
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "explanation": "(A + A')' = A' + (A')' = A' + A = A + A'. Hence (A + A') is always symmetric."
     },
     {
@@ -166,7 +166,7 @@ export const c12Math3: ChapterContent = {
         "C):   (AB)' = AB",
         "D):   (AB)' = A' + B'"
       ],
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "explanation": "By the reversal law of transpose, (AB)' = B'A'."
     },
     {
@@ -178,7 +178,7 @@ export const c12Math3: ChapterContent = {
         "C):   Zero matrix",
         "D):   Skew-symmetric matrix"
       ],
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "explanation": "(AB - BA)' = (AB)' - (BA)' = B'A' - A'B' = BA - AB = -(AB - BA). Hence it is skew-symmetric."
     },
     {
@@ -190,7 +190,7 @@ export const c12Math3: ChapterContent = {
         "C):   Scalar matrix",
         "D):   Identity matrix"
       ],
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "explanation": "(A - A')' = A' - A = -(A - A'). Therefore, (A - A') is always skew-symmetric."
     },
     {
@@ -202,7 +202,7 @@ export const c12Math3: ChapterContent = {
         "C):   An identity matrix",
         "D):   A scalar matrix"
       ],
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "explanation": "A' = A and A' = -A ⇒ A = -A ⇒ 2A = O ⇒ A = O (zero matrix)."
     },
     {
@@ -214,7 +214,7 @@ export const c12Math3: ChapterContent = {
         "C):   π/3",
         "D):   π/2"
       ],
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "explanation": "A + A' = 2 cos α · I = I ⇒ 2 cos α = 1 ⇒ cos α = 1/2 ⇒ α = π/3."
     },
     {
@@ -226,7 +226,7 @@ export const c12Math3: ChapterContent = {
         "C):   5I",
         "D):   O"
       ],
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "explanation": "A² = [7 10; 15 22]. 5A = [5 10; 15 20]. A² - 5A = [2 0; 0 2] = 2I."
     },
     {
@@ -238,7 +238,7 @@ export const c12Math3: ChapterContent = {
         "C):   1 - α² - βγ = 0",
         "D):   α² + βγ + 1 = 0"
       ],
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "explanation": "A² = [α² + βγ  0; 0  α² + βγ] = [1 0; 0 1] ⇒ α² + βγ = 1 ⇒ 1 - α² - βγ = 0."
     },
     {
@@ -250,7 +250,7 @@ export const c12Math3: ChapterContent = {
         "C):   -1",
         "D):   3"
       ],
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "explanation": "A² = [1 -2; 4 -4]. kA - 2I = [3k-2  -2k; 4k  -2k-2]. Equating gives -2k = -2 ⇒ k = 1."
     },
     {
@@ -262,7 +262,7 @@ export const c12Math3: ChapterContent = {
         "C):   AB",
         "D):   BA"
       ],
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "explanation": "By the reversal law of matrix inverses, (AB)⁻¹ = B⁻¹A⁻¹."
     },
     {
@@ -274,7 +274,7 @@ export const c12Math3: ChapterContent = {
         "C):   I",
         "D):   3A"
       ],
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "explanation": "(I + A)³ = I + 3A + 3A² + A³ = I + 3A + 3A + A = I + 7A. Therefore, (I + A)³ - 7A = I."
     },
     {
@@ -286,7 +286,7 @@ export const c12Math3: ChapterContent = {
         "C):   [3  1; -2  1]",
         "D):   (1/5)[1  1; -2  3]"
       ],
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "explanation": "Using elementary row operations or formula: A⁻¹ = (1/5)[3 1; -2 1]."
     },
     {
@@ -298,7 +298,7 @@ export const c12Math3: ChapterContent = {
         "C):   Is equal to [1  3; 2  6]",
         "D):   Is a diagonal matrix"
       ],
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "explanation": "Determinant |A| = 6(1) - (-3)(-2) = 6 - 6 = 0 (singular matrix). Row operations produce a row of zeros, so A⁻¹ does not exist."
     },
     {
@@ -310,7 +310,7 @@ export const c12Math3: ChapterContent = {
         "C):   A",
         "D):   O"
       ],
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "explanation": "A² = A·A = A(BA) = (AB)A = A·A = A (or A² = A(BA) = (AB)A = A·A = A since AB = A)."
     },
     {
@@ -322,7 +322,7 @@ export const c12Math3: ChapterContent = {
         "C):   Zero matrix",
         "D):   Diagonal matrix"
       ],
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "explanation": "(Aⁿ)' = (A')ⁿ = Aⁿ. Hence Aⁿ is symmetric."
     },
     {
@@ -334,7 +334,7 @@ export const c12Math3: ChapterContent = {
         "C):   A",
         "D):   O"
       ],
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "explanation": "A² = [0 1; 0 0][0 1; 0 0] = [0 0; 0 0] = O (nilpotent matrix of index 2)."
     },
     {
@@ -346,7 +346,7 @@ export const c12Math3: ChapterContent = {
         "C):   -I",
         "D):   2I"
       ],
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "explanation": "Characteristic equation of A: λ² - trace(A)λ + det(A) = λ² - 4λ + 5 = 0. By Cayley-Hamilton theorem, A² - 4A + 5I = O."
     },
     {
@@ -358,7 +358,7 @@ export const c12Math3: ChapterContent = {
         "C):   [n  2n; 0  n]",
         "D):   [1  n²; 0  1]"
       ],
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "explanation": "By mathematical induction or matrix powers: A² = [1 4; 0 1], A³ = [1 6; 0 1] ⇒ Aⁿ = [1 2n; 0 1]."
     },
     {
@@ -370,7 +370,7 @@ export const c12Math3: ChapterContent = {
         "C):   0",
         "D):   3"
       ],
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "explanation": "For an odd-ordered skew-symmetric matrix: |A| = |A'| = |-A| = (-1)³|A| = -|A| ⇒ 2|A| = 0 ⇒ |A| = 0."
     },
     {
@@ -382,7 +382,7 @@ export const c12Math3: ChapterContent = {
         "C):   p = q = r = s",
         "D):   q = r and s = p"
       ],
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "explanation": "For AB and BA to both be defined and have the same order to be added, A and B must both be square matrices of the identical order (p = q = r = s)."
     }
   ]

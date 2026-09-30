@@ -81,7 +81,7 @@ export const c12Math2: ChapterContent = {
         "C):   (-π/2, π/2)",
         "D):   [0, π] - {π/2}"
       ],
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "explanation": "By standard definition, the principal value branch (range) of sin⁻¹(x) is [-π/2, π/2]."
     },
     {
@@ -93,7 +93,7 @@ export const c12Math2: ChapterContent = {
         "C):   2π/3",
         "D):   5π/6"
       ],
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "explanation": "cos⁻¹(-1/2) = π - cos⁻¹(1/2) = π - π/3 = 2π/3, which lies in [0, π]."
     },
     {
@@ -105,7 +105,7 @@ export const c12Math2: ChapterContent = {
         "C):   ℝ",
         "D):   ℝ - (-1, 1)"
       ],
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "explanation": "sec⁻¹(x) is defined for |x| ≥ 1, which represents the real line excluding the open interval (-1, 1), i.e., ℝ - (-1, 1)."
     },
     {
@@ -117,7 +117,7 @@ export const c12Math2: ChapterContent = {
         "C):   π/3",
         "D):   -π/6"
       ],
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "explanation": "tan⁻¹(-√3) = -tan⁻¹(√3) = -π/3, which belongs to the principal branch (-π/2, π/2)."
     },
     {
@@ -129,7 +129,7 @@ export const c12Math2: ChapterContent = {
         "C):   π/3",
         "D):   5π/6"
       ],
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "explanation": "cot⁻¹(-x) = π - cot⁻¹(x). Hence cot⁻¹(-1/√3) = π - π/3 = 2π/3, which lies in the range (0, π)."
     },
     {
@@ -141,7 +141,7 @@ export const c12Math2: ChapterContent = {
         "C):   2π/5",
         "D):   π/5"
       ],
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "explanation": "3π/5 ∉ [-π/2, π/2]. But sin(3π/5) = sin(π - 2π/5) = sin(2π/5). Since 2π/5 ∈ [-π/2, π/2], the value is 2π/5."
     },
     {
@@ -153,7 +153,7 @@ export const c12Math2: ChapterContent = {
         "C):   -π/3",
         "D):   7π/6"
       ],
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "explanation": "cosec⁻¹(-2) = -cosec⁻¹(2) = -π/6, which belongs to [-π/2, π/2] - {0}."
     },
     {
@@ -165,7 +165,7 @@ export const c12Math2: ChapterContent = {
         "C):   -π/6",
         "D):   5π/6"
       ],
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "explanation": "cos(7π/6) = cos(2π - 5π/6) = cos(5π/6). Since 5π/6 ∈ [0, π], cos⁻¹(cos(7π/6)) = 5π/6."
     },
     {
@@ -177,7 +177,7 @@ export const c12Math2: ChapterContent = {
         "C):   0",
         "D):   2π"
       ],
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "explanation": "It is a standard co-function identity: sin⁻¹(x) + cos⁻¹(x) = π/2 for all x ∈ [-1, 1]."
     },
     {
@@ -189,7 +189,7 @@ export const c12Math2: ChapterContent = {
         "C):   3π/4",
         "D):   0"
       ],
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "explanation": "tan⁻¹(1) = π/4. For tan⁻¹(2) + tan⁻¹(3), since 2·3 = 6 > 1, the sum is π + tan⁻¹((2+3)/(1-6)) = π + tan⁻¹(-1) = π - π/4. Adding tan⁻¹(1) gives π/4 + π - π/4 = π."
     },
     {
@@ -201,7 +201,7 @@ export const c12Math2: ChapterContent = {
         "C):   1",
         "D):   0"
       ],
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "explanation": "sin⁻¹(-1/2) = -π/6. So sin[π/3 - (-π/6)] = sin(π/3 + π/6) = sin(π/2) = 1."
     },
     {
@@ -213,7 +213,7 @@ export const c12Math2: ChapterContent = {
         "C):   2π/3",
         "D):   π"
       ],
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "explanation": "tan⁻¹(√3) = π/3 and sec⁻¹(-2) = π - sec⁻¹(2) = π - π/3 = 2π/3. Thus π/3 - 2π/3 = -π/3."
     },
     {
@@ -225,7 +225,7 @@ export const c12Math2: ChapterContent = {
         "C):   1",
         "D):   3"
       ],
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "explanation": "tan⁻¹(x) + cot⁻¹(x) = π/2. Here tan⁻¹(x) + tan⁻¹(1/3) = π/2 ⇒ tan⁻¹(1/3) = cot⁻¹(x) = tan⁻¹(1/x) ⇒ 1/x = 1/3 ⇒ x = 3."
     },
     {
@@ -237,7 +237,7 @@ export const c12Math2: ChapterContent = {
         "C):   x/2",
         "D):   π/2 - x"
       ],
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "explanation": "cos x / (1 - sin x) = sin(π/2 + x) / (1 - cos(π/2 + x)) = cot(π/4 - x/2) = tan(π/4 + x/2). Thus tan⁻¹(tan(π/4 + x/2)) = π/4 + x/2."
     },
     {
@@ -249,7 +249,7 @@ export const c12Math2: ChapterContent = {
         "C):   0",
         "D):   1"
       ],
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "explanation": "sin⁻¹(1/5) + cos⁻¹(x) = sin⁻¹(1) = π/2. Since sin⁻¹(t) + cos⁻¹(t) = π/2, we have x = 1/5."
     },
     {
@@ -261,7 +261,7 @@ export const c12Math2: ChapterContent = {
         "C):   2x",
         "D):   π - x"
       ],
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "explanation": "(1 - cos x)/(1 + cos x) = (2 sin²(x/2))/(2 cos²(x/2)) = tan²(x/2). Taking square root gives tan(x/2). Thus tan⁻¹(tan(x/2)) = x/2."
     },
     {
@@ -273,7 +273,7 @@ export const c12Math2: ChapterContent = {
         "C):   0",
         "D):   Not defined"
       ],
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "explanation": "Since tan⁻¹(a) + cot⁻¹(a) = π/2, cot(π/2) = 0."
     },
     {
@@ -285,7 +285,7 @@ export const c12Math2: ChapterContent = {
         "C):   π/2",
         "D):   π/4"
       ],
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "explanation": "2 cos x / (1 - cos² x) = 2 / sin x ⇒ 2 cos x / sin² x = 2 / sin x ⇒ cot x = 1 ⇒ x = π/4."
     },
     {
@@ -297,7 +297,7 @@ export const c12Math2: ChapterContent = {
         "C):   1 / √(1 + x²)",
         "D):   1 / √(1 - x²)"
       ],
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "explanation": "Let θ = tan⁻¹ x ⇒ tan θ = x/1. Then opposite = x, hypotenuse = √(1 + x²), so sin θ = x / √(1 + x²)."
     },
     {
@@ -309,7 +309,7 @@ export const c12Math2: ChapterContent = {
         "C):   {0}",
         "D):   {1, 1/2}"
       ],
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "explanation": "Putting x = 1/2 gives sin⁻¹(1/2) - 2 sin⁻¹(1/2) = -π/6 ≠ π/2. But x = 0 gives sin⁻¹(1) - 0 = π/2. Hence {0} is the only valid solution."
     },
     {
@@ -321,7 +321,7 @@ export const c12Math2: ChapterContent = {
         "C):   -π/4",
         "D):   3π/4"
       ],
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "explanation": "tan⁻¹((x - y)/(x + y)) = tan⁻¹(((x/y) - 1)/(1 + (x/y))) = tan⁻¹(x/y) - tan⁻¹(1). Subtracting this gives tan⁻¹(1) = π/4."
     },
     {
@@ -333,7 +333,7 @@ export const c12Math2: ChapterContent = {
         "C):   1/2",
         "D):   1"
       ],
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "explanation": "tan⁻¹((2x + 3x)/(1 - 6x²)) = π/4 ⇒ 5x / (1 - 6x²) = 1 ⇒ 6x² + 5x - 1 = 0 ⇒ (6x - 1)(x + 1) = 0. For positive x, x = 1/6."
     },
     {
@@ -345,7 +345,7 @@ export const c12Math2: ChapterContent = {
         "C):   0.64",
         "D):   0.36"
       ],
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "explanation": "cos(2θ) = 2 cos² θ - 1. Here cos θ = 0.8 ⇒ 2(0.8)² - 1 = 2(0.64) - 1 = 1.28 - 1 = 0.28."
     },
     {
@@ -357,7 +357,7 @@ export const c12Math2: ChapterContent = {
         "C):   1/√3",
         "D):   1/2"
       ],
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "explanation": "tan⁻¹(1) - tan⁻¹(x) = (1/2) tan⁻¹(x) ⇒ π/4 = (3/2) tan⁻¹(x) ⇒ tan⁻¹(x) = π/6 ⇒ x = 1/√3."
     },
     {
@@ -369,7 +369,7 @@ export const c12Math2: ChapterContent = {
         "C):   tan⁻¹(x)",
         "D):   cosec⁻¹(x)"
       ],
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "explanation": "The principal value branch range of cos⁻¹(x) is exactly [0, π]."
     }
   ]

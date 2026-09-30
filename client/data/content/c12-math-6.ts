@@ -111,7 +111,7 @@ export const c12Math6: ChapterContent = {
         "C):   25π cm²/cm",
         "D):   20π cm²/cm"
       ],
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "explanation": "Area of circle A = πr². Differentiating w.r.t. r gives dA/dr = 2πr. When r = 5 cm, dA/dr = 2π(5) = 10π cm²/cm."
     },
     {
@@ -123,7 +123,7 @@ export const c12Math6: ChapterContent = {
         "C):   Neither increasing nor decreasing",
         "D):   A constant function"
       ],
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "explanation": "f'(x) = 3x² - 6x + 3 = 3(x - 1)². Since (x - 1)² > 0 for all x ≠ 1 and equals 0 only at isolated point x = 1, f(x) is strictly increasing on ℝ."
     },
     {
@@ -135,7 +135,7 @@ export const c12Math6: ChapterContent = {
         "C):   11",
         "D):   12"
       ],
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "explanation": "dy/dx = 3x² - 1. At x = 2, slope m = 3(2)² - 1 = 12 - 1 = 11."
     },
     {
@@ -147,7 +147,7 @@ export const c12Math6: ChapterContent = {
         "C):   -3",
         "D):   -1/3"
       ],
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "explanation": "dy/dx = 4x + 3 cos x. At x = 0, slope of tangent m = 4(0) + 3 cos 0 = 3. Slope of normal m_N = -1/m = -1/3."
     },
     {
@@ -159,7 +159,7 @@ export const c12Math6: ChapterContent = {
         "C):   Point of Inflexion",
         "D):   Stationary Discontinuity"
       ],
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "explanation": "By the Second Derivative Test, when f'(c) = 0 and f''(c) < 0, the curve is concave downward, so x = c is a point of local maximum."
     },
     {
@@ -171,7 +171,7 @@ export const c12Math6: ChapterContent = {
         "C):   126",
         "D):   365"
       ],
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "explanation": "Marginal Revenue MR = dR/dx = 6x + 36. At x = 10, MR = 6(10) + 36 = 96."
     },
     {
@@ -183,7 +183,7 @@ export const c12Math6: ChapterContent = {
         "C):   (3, 1)",
         "D):   (4, 4)"
       ],
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "explanation": "Slope of chord = (4 - 0)/(4 - 2) = 2. Tangent slope dy/dx = 2(x - 2). Equating: 2(x - 2) = 2 ⇒ x - 2 = 1 ⇒ x = 3. When x = 3, y = (3 - 2)² = 1. Point is (3, 1)."
     },
     {
@@ -195,7 +195,7 @@ export const c12Math6: ChapterContent = {
         "C):   60π cm²/s",
         "D):   80π cm²/s"
       ],
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "explanation": "Surface area S = 4πr². Differentiating w.r.t. t: dS/dt = 8πr (dr/dt). When r = 5 cm and dr/dt = 2 cm/s, dS/dt = 8π(5)(2) = 80π cm²/s."
     },
     {
@@ -207,7 +207,7 @@ export const c12Math6: ChapterContent = {
         "C):   1",
         "D):   1/√2"
       ],
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "explanation": "sin x + cos x = √2 sin(x + π/4). Since the maximum value of sin θ is 1, the maximum value is √2(1) = √2."
     },
     {
@@ -219,7 +219,7 @@ export const c12Math6: ChapterContent = {
         "C):   (π/2, π)",
         "D):   (0, π)"
       ],
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "explanation": "f'(x) = (1/cos x)(-sin x) = -tan x. In the first quadrant (0, π/2), tan x > 0, so f'(x) = -tan x < 0. Hence f(x) is strictly decreasing on (0, π/2)."
     },
     {
@@ -231,7 +231,7 @@ export const c12Math6: ChapterContent = {
         "C):   5.02",
         "D):   5.05"
       ],
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "explanation": "Let y = √x with x = 25, Δx = 0.2. dy = [1/(2√x)] Δx = [1/(2 · 5)](0.2) = 0.2/10 = 0.02. Thus √25.2 ≈ 5 + 0.02 = 5.02."
     },
     {
@@ -243,7 +243,7 @@ export const c12Math6: ChapterContent = {
         "C):   5%",
         "D):   6%"
       ],
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "explanation": "V = x³. dV/dx = 3x² ⇒ ΔV/V ≈ (3x² Δx)/x³ = 3 (Δx/x). Since Δx/x = 2%, percentage increase in volume = 3 × 2% = 6%."
     },
     {
@@ -255,7 +255,7 @@ export const c12Math6: ChapterContent = {
         "C):   2k² = 1",
         "D):   k² = 8"
       ],
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "explanation": "Tangent slopes: m1 = 1/(2y), m2 = -y/x. Orthogonal condition m1 m2 = -1 ⇒ -1/(2x) = -1 ⇒ 2x = 1. Since x = y² and xy = k ⇒ y³ = k ⇒ x = k^(2/3). Thus 2k^(2/3) = 1 ⇒ 8k² = 1."
     },
     {
@@ -267,7 +267,7 @@ export const c12Math6: ChapterContent = {
         "C):   (-∞, -1)",
         "D):   ℝ"
       ],
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "explanation": "f'(x) = 1 - 1/x² = (x² - 1)/x². For f'(x) < 0: x² - 1 < 0 ⇒ x² < 1 ⇒ -1 < x < 1 (with x ≠ 0). Hence f is strictly decreasing on (-1, 1) \\ {0}."
     },
     {
@@ -279,7 +279,7 @@ export const c12Math6: ChapterContent = {
         "C):   (0, 0)",
         "D):   Does not exist"
       ],
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "explanation": "dy/dx = 3x², d²y/dx² = 6x. At x = 0, d²y/dx² = 0 and changes sign from negative (for x < 0) to positive (for x > 0). Hence (0, 0) is a point of inflexion."
     },
     {
@@ -291,7 +291,7 @@ export const c12Math6: ChapterContent = {
         "C):   (2, ∞)",
         "D):   (0, 2)"
       ],
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "explanation": "dy/dx = 2x e^(-x) - x² e^(-x) = x e^(-x)(2 - x). For dy/dx > 0, since e^(-x) > 0, we require x(2 - x) > 0 ⇒ 0 < x < 2."
     },
     {
@@ -303,7 +303,7 @@ export const c12Math6: ChapterContent = {
         "C):   15",
         "D):   0"
       ],
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "explanation": "Slope m(x) = dy/dx = -3x² + 6x + 9. dm/dx = -6x + 6 = 0 ⇒ x = 1. d²m/dx² = -6 < 0 (maximum). Maximum slope m(1) = -3(1) + 6(1) + 9 = 12."
     },
     {
@@ -315,7 +315,7 @@ export const c12Math6: ChapterContent = {
         "C):   0.6 m/s",
         "D):   1.6 m/s"
       ],
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "explanation": "x² + y² = 100. When x = 6 m, y = √(100 - 36) = 8 m. 2x(dx/dt) + 2y(dy/dt) = 0 ⇒ dy/dt = -(x/y)(dx/dt) = -(6/8)(1.2) = -0.9 m/s. Downward speed = 0.9 m/s."
     },
     {
@@ -327,7 +327,7 @@ export const c12Math6: ChapterContent = {
         "C):   2R/√3",
         "D):   √2 R"
       ],
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "explanation": "Volume V = π(R² - h²/4)h. dV/dh = π(R² - 3h²/4) = 0 ⇒ 3h²/4 = R² ⇒ h² = 4R²/3 ⇒ h = 2R/√3."
     },
     {
@@ -339,7 +339,7 @@ export const c12Math6: ChapterContent = {
         "C):   3",
         "D):   1/3"
       ],
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "explanation": "f'(x) = 2(x² - 1)/(1 + x + x²)² = 0 ⇒ x = ±1. At x = 1: f(1) = (1 - 1 + 1)/(1 + 1 + 1) = 1/3 (minimum). At x = -1: f(-1) = 3 (maximum)."
     },
     {
@@ -351,7 +351,7 @@ export const c12Math6: ChapterContent = {
         "C):   tan⁻¹(1/√2)",
         "D):   cos⁻¹(√2)"
       ],
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "explanation": "Volume V = (1/3)π(l sin θ)²(l cos θ) = (πl³/3) sin²θ cos θ. dV/dθ = 0 ⇒ 2 cos²θ - sin²θ = 0 ⇒ tan²θ = 2 ⇒ tan θ = √2 ⇒ θ = tan⁻¹(√2)."
     },
     {
@@ -363,7 +363,7 @@ export const c12Math6: ChapterContent = {
         "C):   (1, -2)",
         "D):   (-1, 2)"
       ],
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "explanation": "Slope m = 1. For y² = 4ax with a = 1, condition c = a/m = 1/1 = 1 is satisfied. Point of contact is (a/m², 2a/m) = (1/1², 2(1)/1) = (1, 2)."
     },
     {
@@ -375,7 +375,7 @@ export const c12Math6: ChapterContent = {
         "C):   x = 2/7",
         "D):   x = 7/2"
       ],
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "explanation": "f'(x) = (x - 2)³(x + 1)²(7x - 2). At x = 2/7, f'(x) changes sign from positive to negative, making x = 2/7 a point of local maximum."
     },
     {
@@ -387,7 +387,7 @@ export const c12Math6: ChapterContent = {
         "C):   π/4",
         "D):   π/2"
       ],
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "explanation": "At x = π/4: m1 = cos(π/4) = 1/√2, m2 = -sin(π/4) = -1/√2. tan θ = |(m1 - m2)/(1 + m1 m2)| = |(2/√2) / (1 - 1/2)| = |√2 / (1/2)| = 2√2 ⇒ θ = tan⁻¹(2√2)."
     },
     {
@@ -399,7 +399,7 @@ export const c12Math6: ChapterContent = {
         "C):   (3/4)^(1/3)",
         "D):   1"
       ],
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "explanation": "At critical point x = 1/2, value is (3/4)^(1/3) ≈ 0.908. At endpoints x = 0 and x = 1, value is (1)^(1/3) = 1. Hence maximum value on [0, 1] is 1."
     }
   ]

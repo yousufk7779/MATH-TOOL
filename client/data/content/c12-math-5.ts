@@ -124,7 +124,7 @@ export const c12Math5: ChapterContent = {
         "C):   lim(x→c⁺) f(x) = 0",
         "D):   f(c) = 0"
       ],
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "explanation": "By definition, a function f is continuous at x = c if the functional limit exists and equals the actual value of the function at that point: lim(x→c) f(x) = f(c)."
     },
     {
@@ -136,7 +136,7 @@ export const c12Math5: ChapterContent = {
         "C):   Both continuous and differentiable",
         "D):   Differentiable but not continuous"
       ],
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "explanation": "f(x) = |x| has LHL = RHL = f(0) = 0, so it is continuous everywhere. However, LHD = -1 while RHD = +1 at x = 0; because the left and right derivatives disagree (a sharp corner), it is not differentiable at x = 0."
     },
     {
@@ -148,7 +148,7 @@ export const c12Math5: ChapterContent = {
         "C):   All integral points x ∈ ℤ",
         "D):   No points (continuous everywhere)"
       ],
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "explanation": "At any integer n, LHL = lim(h→0) [n - h] = n - 1, whereas RHL = lim(h→0) [n + h] = n. Since LHL ≠ RHL, the limit does not exist at any integer. Hence [x] is discontinuous at all integral points."
     },
     {
@@ -160,7 +160,7 @@ export const c12Math5: ChapterContent = {
         "C):   sin x · e^(cos x)",
         "D):   cos x · e^(sin x)"
       ],
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "explanation": "By chain rule, d/dx[e^(sin x)] = e^(sin x) · d/dx(sin x) = cos x · e^(sin x)."
     },
     {
@@ -172,7 +172,7 @@ export const c12Math5: ChapterContent = {
         "C):   -cot x",
         "D):   sec x"
       ],
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "explanation": "By chain rule, d/dx[log(cos x)] = (1 / cos x) · d/dx(cos x) = (1 / cos x) · (-sin x) = -tan x."
     },
     {
@@ -184,7 +184,7 @@ export const c12Math5: ChapterContent = {
         "C):   (2x + 5) cos(x² + 5)",
         "D):   -2x cos(x² + 5)"
       ],
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "explanation": "Using the chain rule: dy/dx = cos(x² + 5) · d/dx(x² + 5) = 2x cos(x² + 5)."
     },
     {
@@ -196,7 +196,7 @@ export const c12Math5: ChapterContent = {
         "C):   3",
         "D):   0"
       ],
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "explanation": "For continuity at x = 0: k = f(0) = lim(x→0) (sin 3x)/x = lim(x→0) 3 · [(sin 3x)/(3x)] = 3(1) = 3."
     },
     {
@@ -208,7 +208,7 @@ export const c12Math5: ChapterContent = {
         "C):   3",
         "D):   0"
       ],
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "explanation": "The modulus expressions |x - 1| and |x - 2| have sharp corners where the inside vanishes, namely at x = 1 and x = 2. At both these points LHD ≠ RHD. Thus there are exactly 2 points of non-differentiability."
     },
     {
@@ -220,7 +220,7 @@ export const c12Math5: ChapterContent = {
         "C):   2^x",
         "D):   2^x log 2"
       ],
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "explanation": "For any positive constant a, d/dx(a^x) = a^x log a. For a = 2, d/dx(2^x) = 2^x log 2."
     },
     {
@@ -232,7 +232,7 @@ export const c12Math5: ChapterContent = {
         "C):   1 / √(1 - x²)",
         "D):   1 / (x √(x² - 1))"
       ],
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "explanation": "Standard derivative formula: d/dx[tan⁻¹ x] = 1 / (1 + x²) for all x ∈ ℝ."
     },
     {
@@ -244,7 +244,7 @@ export const c12Math5: ChapterContent = {
         "C):   -(b/a) cot θ",
         "D):   (b/a) cot θ"
       ],
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "explanation": "dx/dθ = -a sin θ, dy/dθ = b cos θ. Therefore, dy/dx = (dy/dθ) / (dx/dθ) = (b cos θ) / (-a sin θ) = -(b/a) cot θ."
     },
     {
@@ -256,7 +256,7 @@ export const c12Math5: ChapterContent = {
         "C):   1 / x²",
         "D):   1 / (x log x)"
       ],
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "explanation": "By chain rule: d/dx[log(log x)] = (1 / log x) · d/dx(log x) = (1 / log x) · (1/x) = 1 / (x log x)."
     },
     {
@@ -268,7 +268,7 @@ export const c12Math5: ChapterContent = {
         "C):   6",
         "D):   0"
       ],
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "explanation": "First derivative dy/dx = 3x². Second derivative d²y/dx² = d/dx(3x²) = 6x."
     },
     {
@@ -280,7 +280,7 @@ export const c12Math5: ChapterContent = {
         "C):   f'(c) = 1",
         "D):   f is discontinuous on (a, b)"
       ],
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "explanation": "Rolle's theorem requires three conditions: (1) f is continuous on [a, b], (2) f is differentiable on (a, b), and (3) f(a) = f(b)."
     },
     {
@@ -292,7 +292,7 @@ export const c12Math5: ChapterContent = {
         "C):   [f(b) - f(a)] / (b - a)",
         "D):   [f(a) + f(b)] / 2"
       ],
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "explanation": "LMVT states that the instantaneous slope at some c ∈ (a, b) equals the average rate of change (secant slope): f'(c) = [f(b) - f(a)] / (b - a)."
     },
     {
@@ -304,7 +304,7 @@ export const c12Math5: ChapterContent = {
         "C):   2 / √(1 - x²)",
         "D):   2 / (1 + x²)"
       ],
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "explanation": "Substituting x = tan θ gives 2x / (1 + x²) = sin 2θ. Hence y = sin⁻¹(sin 2θ) = 2θ = 2 tan⁻¹ x. Thus dy/dx = 2 / (1 + x²)."
     },
     {
@@ -316,7 +316,7 @@ export const c12Math5: ChapterContent = {
         "C):   -1 / (a t²)",
         "D):   1 / (2a t³)"
       ],
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "explanation": "dx/dt = 2at, dy/dt = 2a ⇒ dy/dx = (2a)/(2at) = 1/t. Then d²y/dx² = d/dt(1/t) · (dt/dx) = (-1/t²) · (1 / 2at) = -1 / (2a t³)."
     },
     {
@@ -328,7 +328,7 @@ export const c12Math5: ChapterContent = {
         "C):   π/2",
         "D):   -1"
       ],
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "explanation": "Taking log: log y = x log(sin x) ⇒ (1/y) dy/dx = log(sin x) + x cot x. At x = π/2: sin(π/2) = 1 ⇒ log 1 = 0, and cot(π/2) = 0. Since y = 1^(π/2) = 1, dy/dx = 1 · (0 + 0) = 0."
     },
     {
@@ -340,7 +340,7 @@ export const c12Math5: ChapterContent = {
         "C):   2 / (1 + x²)",
         "D):   2 / √(1 - x²)"
       ],
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "explanation": "Let x = tan θ. Then (1 - tan²θ)/(1 + tan²θ) = cos 2θ. So y = cos⁻¹(cos 2θ) = 2θ = 2 tan⁻¹ x. Thus dy/dx = 2 / (1 + x²)."
     },
     {
@@ -352,7 +352,7 @@ export const c12Math5: ChapterContent = {
         "C):   -cos x / (2y - 1)",
         "D):   cos x / (2y - 1)"
       ],
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "explanation": "Squaring both sides: y² = sin x + y. Differentiating w.r.t. x: 2y dy/dx = cos x + dy/dx ⇒ (2y - 1) dy/dx = cos x ⇒ dy/dx = cos x / (2y - 1)."
     },
     {
@@ -364,7 +364,7 @@ export const c12Math5: ChapterContent = {
         "C):   2",
         "D):   3"
       ],
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "explanation": "LHL = f(5) = 5k + 1. RHL = lim(x→5⁺)(3x - 5) = 3(5) - 5 = 10. For continuity: 5k + 1 = 10 ⇒ 5k = 9 ⇒ k = 9/5."
     },
     {
@@ -376,7 +376,7 @@ export const c12Math5: ChapterContent = {
         "C):   -1/√2",
         "D):   -1"
       ],
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "explanation": "Near x = π/4, cos x > 0, so f(x) = cos x. Therefore f'(x) = -sin x. At x = π/4: f'(π/4) = -sin(π/4) = -1/√2."
     },
     {
@@ -388,7 +388,7 @@ export const c12Math5: ChapterContent = {
         "C):   3",
         "D):   0"
       ],
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "explanation": "f(1) = 1 - 4 + 3 = 0, f(3) = 9 - 12 + 3 = 0 ⇒ f(1) = f(3). f'(x) = 2x - 4 = 0 ⇒ 2x = 4 ⇒ c = 2 ∈ (1, 3)."
     },
     {
@@ -400,7 +400,7 @@ export const c12Math5: ChapterContent = {
         "C):   (m - n) y",
         "D):   (m + n) e^(x)"
       ],
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "explanation": "dy/dx = m A e^(mx) + n B e^(nx), d²y/dx² = m² A e^(mx) + n² B e^(nx). Substituting into y'' - (m+n)y' + mny yields identical cancellation of all terms, resulting in 0."
     },
     {
@@ -412,7 +412,7 @@ export const c12Math5: ChapterContent = {
         "C):   log x / (1 - log x)²",
         "D):   log x / (1 + log x)²"
       ],
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "explanation": "Taking log: y log x = x - y ⇒ y(1 + log x) = x ⇒ y = x / (1 + log x). By quotient rule: dy/dx = [(1 + log x)(1) - x(1/x)] / (1 + log x)² = (1 + log x - 1) / (1 + log x)² = log x / (1 + log x)²."
     }
   ]

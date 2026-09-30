@@ -121,7 +121,7 @@ export const c12Math4: ChapterContent = {
         "C):   -1",
         "D):   cos 2θ"
       ],
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "explanation": "Determinant = (cos θ)(cos θ) - (-sin θ)(sin θ) = cos² θ + sin² θ = 1."
     },
     {
@@ -133,7 +133,7 @@ export const c12Math4: ChapterContent = {
         "C):   k³ |A|",
         "D):   3k |A|"
       ],
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "explanation": "For an n × n matrix, factoring scalar k from all n rows yields |kA| = kⁿ|A|. Here n = 3, so |kA| = k³|A|."
     },
     {
@@ -145,7 +145,7 @@ export const c12Math4: ChapterContent = {
         "C):   A determinant is a number associated to a square matrix",
         "D):   A determinant is defined for any m × n matrix"
       ],
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "explanation": "A determinant is a unique scalar number (real or complex) uniquely associated with a square matrix."
     },
     {
@@ -157,7 +157,7 @@ export const c12Math4: ChapterContent = {
         "C):   ±6",
         "D):   0"
       ],
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "explanation": "LHS = x² - 36. RHS = 36 - 36 = 0. Therefore, x² - 36 = 0 ⇒ x² = 36 ⇒ x = ±6."
     },
     {
@@ -169,7 +169,7 @@ export const c12Math4: ChapterContent = {
         "C):   0",
         "D):   Dependent on the elements"
       ],
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "explanation": "For skew-symmetric A of order n: |A| = |A'| = |-A| = (-1)ⁿ|A|. For odd n, |A| = -|A| ⇒ 2|A| = 0 ⇒ |A| = 0."
     },
     {
@@ -181,7 +181,7 @@ export const c12Math4: ChapterContent = {
         "C):   -12, -2",
         "D):   12, 2"
       ],
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "explanation": "1/2 |2(-6-0)...| ⇒ 25 - 5k = ±35 ⇒ 5 - k = ±7 ⇒ k = -2 or k = 12."
     },
     {
@@ -193,7 +193,7 @@ export const c12Math4: ChapterContent = {
         "C):   0",
         "D):   2"
       ],
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "explanation": "By the identical row/column property, interchanging identical rows gives Δ = -Δ ⇒ 2Δ = 0 ⇒ Δ = 0."
     },
     {
@@ -205,7 +205,7 @@ export const c12Math4: ChapterContent = {
         "C):   -3",
         "D):   -2"
       ],
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "explanation": "Deleting row 2 and column 1 leaves the single entry 3. Thus M₂₁ = 3."
     },
     {
@@ -217,7 +217,7 @@ export const c12Math4: ChapterContent = {
         "C):   0",
         "D):   1"
       ],
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "explanation": "Three points are collinear when the area of the triangle formed by them is zero, which means the determinant is 0."
     },
     {
@@ -229,7 +229,7 @@ export const c12Math4: ChapterContent = {
         "C):   A_ij = (-1)^(i+j) M_ij",
         "D):   A_ij = M_ij"
       ],
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "explanation": "Cofactor A_ij incorporates the checkerboard sign factor (-1)^(i+j) multiplied by the minor M_ij."
     },
     {
@@ -241,7 +241,7 @@ export const c12Math4: ChapterContent = {
         "C):   |A|³",
         "D):   3|A|"
       ],
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "explanation": "Since A(adj A) = |A|I, taking determinants gives |A||adj A| = |A|ⁿ ⇒ |adj A| = |A|ⁿ⁻¹. For n = 3, |adj A| = |A|²."
     },
     {
@@ -253,7 +253,7 @@ export const c12Math4: ChapterContent = {
         "C):   1",
         "D):   0"
       ],
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "explanation": "Since A · A⁻¹ = I, det(A) · det(A⁻¹) = det(I) = 1 ⇒ det(A⁻¹) = 1 / det(A)."
     },
     {
@@ -265,7 +265,7 @@ export const c12Math4: ChapterContent = {
         "C):   0",
         "D):   |A|²"
       ],
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "explanation": "By the Orthogonal Cofactor Theorem, the sum of products of elements of any row with cofactors of a different row is strictly 0."
     },
     {
@@ -277,7 +277,7 @@ export const c12Math4: ChapterContent = {
         "C):   (adj A)B = O",
         "D):   (adj A)B ≠ O"
       ],
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "explanation": "When |A| ≠ 0, A is non-singular and A⁻¹ exists uniquely. Thus X = A⁻¹B is the unique consistent solution."
     },
     {
@@ -289,7 +289,7 @@ export const c12Math4: ChapterContent = {
         "C):   (BA)⁻¹",
         "D):   B A"
       ],
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "explanation": "By the reversal law of matrix inverses, (AB)⁻¹ = B⁻¹A⁻¹."
     },
     {
@@ -301,7 +301,7 @@ export const c12Math4: ChapterContent = {
         "C):   15",
         "D):   125"
       ],
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "explanation": "Determinant is multiplicative across matrix multiplication: |AB| = |A| · |B| = 5 × 3 = 15."
     },
     {
@@ -313,7 +313,7 @@ export const c12Math4: ChapterContent = {
         "C):   (adj A) · A⁻¹",
         "D):   I"
       ],
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "explanation": "The fundamental adjoint identity states A(adj A) = (adj A)A = |A|Iₙ."
     },
     {
@@ -325,7 +325,7 @@ export const c12Math4: ChapterContent = {
         "C):   Inconsistent with no solution",
         "D):   Indeterminate"
       ],
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "explanation": "When |A| = 0 and (adj A)B ≠ O, the equations describe parallel/inconsistent hyperplanes with no common solution."
     },
     {
@@ -337,7 +337,7 @@ export const c12Math4: ChapterContent = {
         "C):   (2, 4)",
         "D):   [2, 4]"
       ],
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "explanation": "Expanding yields det(A) = 2 + 2 sin² θ. Since 0 ≤ sin² θ ≤ 1, 2 ≤ 2 + 2 sin² θ ≤ 4 ⇒ det(A) ∈ [2, 4]."
     },
     {
@@ -349,7 +349,7 @@ export const c12Math4: ChapterContent = {
         "C):   x",
         "D):   2x"
       ],
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "explanation": "Applying R₁ → R₁ + R₃ - 2R₂ yields row 1 = [0, 0, 2(a + c - 2b)]. Since a, b, c are in A.P., 2b = a + c ⇒ row 1 = [0, 0, 0] ⇒ Δ = 0."
     },
     {
@@ -361,7 +361,7 @@ export const c12Math4: ChapterContent = {
         "C):   (1/xyz) · A",
         "D):   diag(1/x², 1/y², 1/z²)"
       ],
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "explanation": "The inverse of a non-zero diagonal matrix is the diagonal matrix formed by the reciprocals of its diagonal elements."
     },
     {
@@ -373,7 +373,7 @@ export const c12Math4: ChapterContent = {
         "C):   (a² - b²)(b² - c²)(c² - a²)",
         "D):   0"
       ],
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "explanation": "This is the classic Vandermonde determinant of order 3, whose factored form is (a - b)(b - c)(c - a)."
     },
     {
@@ -385,7 +385,7 @@ export const c12Math4: ChapterContent = {
         "C):   1024",
         "D):   2048"
       ],
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "explanation": "|2A| = 2³|A| = 8 × 4 = 32. |adj(2A)| = |2A|² = 32² = 1024. Then |2 adj(2A)| = 2³ × 1024 = 8 × 1024 = 2048."
     },
     {
@@ -397,7 +397,7 @@ export const c12Math4: ChapterContent = {
         "C):   A - I",
         "D):   A + I"
       ],
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "explanation": "From A² - A + I = O, post-multiplying by A⁻¹ gives A - I + A⁻¹ = O ⇒ A⁻¹ = I - A."
     },
     {
@@ -409,7 +409,7 @@ export const c12Math4: ChapterContent = {
         "C):   ±5",
         "D):   ±16"
       ],
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "explanation": "Determinant = x² - 9 = 7 ⇒ x² = 16 ⇒ x = ±4."
     }
   ]

@@ -43,39 +43,39 @@ export const c12Math13: ChapterContent = {
   }
 ],
   formulas: [
-  {
-    "name": "Conditional Probability",
-    "formula": "P(A|B) = \\frac{P(A \\cap B)}{P(B)}, \\quad P(B) > 0"
-  },
-  {
-    "name": "Multiplication Rule",
-    "formula": "P(A \\cap B) = P(A) \\cdot P(B|A) = P(B) \\cdot P(A|B)"
-  },
-  {
-    "name": "Independent Events",
-    "formula": "P(A \\cap B) = P(A) \\cdot P(B)"
-  },
-  {
-    "name": "Total Probability Theorem",
-    "formula": "P(A) = \\sum_{i=1}^{n} P(E_i) \\cdot P(A|E_i)"
-  },
-  {
-    "name": "Bayes' Theorem",
-    "formula": "P(E_i|A) = \\frac{P(E_i) \\cdot P(A|E_i)}{\\sum_{j=1}^{n} P(E_j) \\cdot P(A|E_j)}"
-  },
-  {
-    "name": "Mathematical Expectation (Mean)",
-    "formula": "E(X) = \\mu = \\sum_{i=1}^{n} x_i \\cdot P(x_i)"
-  },
-  {
-    "name": "Variance of Random Variable",
-    "formula": "\\text{Var}(X) = \\sigma^2 = E(X^2) - [E(X)]^2 = \\sum_{i=1}^{n} x_i^2 \\cdot P(x_i) - \\mu^2"
-  },
-  {
-    "name": "Binomial Distribution",
-    "formula": "P(X = x) = {}^nC_x \\, q^{n-x} \\, p^x, \\quad x = 0, 1, \\dots, n"
-  }
-],
+    {
+      "name": "Conditional Probability",
+      "formula": "P(A|B) = <span class=\"frac\"><span class=\"num\">P(A &cap; B)</span><span class=\"den\">P(B)</span></span> &nbsp; (P(B) &gt; 0)"
+    },
+    {
+      "name": "Multiplication Rule",
+      "formula": "P(A &cap; B) = P(A) &sdot; P(B|A) = P(B) &sdot; P(A|B)"
+    },
+    {
+      "name": "Independent Events",
+      "formula": "P(A &cap; B) = P(A) &sdot; P(B)"
+    },
+    {
+      "name": "Total Probability Theorem",
+      "formula": "P(A) = &sum; P(E<sub>i</sub>) &sdot; P(A|E<sub>i</sub>)"
+    },
+    {
+      "name": "Bayes' Theorem",
+      "formula": "P(E<sub>i</sub>|A) = <span class=\"frac\"><span class=\"num\">P(E<sub>i</sub>) &sdot; P(A|E<sub>i</sub>)</span><span class=\"den\">&sum; P(E<sub>j</sub>) &sdot; P(A|E<sub>j</sub>)</span></span>"
+    },
+    {
+      "name": "Mathematical Expectation (Mean)",
+      "formula": "E(X) = &mu; = &sum; x<sub>i</sub> &sdot; P(x<sub>i</sub>)"
+    },
+    {
+      "name": "Variance of Random Variable",
+      "formula": "Var(X) = &sigma;² = E(X²) &minus; [E(X)]² = &sum; x<sub>i</sub>² &sdot; P(x<sub>i</sub>) &minus; &mu;²"
+    },
+    {
+      "name": "Binomial Distribution",
+      "formula": "P(X = x) = <sup>n</sup>C<sub>x</sub> &sdot; q<sup>n&minus;x</sup> p<sup>x</sup> &nbsp; (x = 0, 1, ..., n)"
+    }
+  ],
   exercises: [
   {
     "id": "ex13-1",
