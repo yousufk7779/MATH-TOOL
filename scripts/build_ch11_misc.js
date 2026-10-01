@@ -9,7 +9,7 @@ function buildMisc() {
     <div class="diagram-svg-container">
       <svg viewBox="0 0 420 220" style="width: 100%; max-width: 380px; height: auto; display: block;" xmlns="http://www.w3.org/2000/svg">
         <!-- Parallelogram ABCD -->
-        <polygon points="100,170 300,170 350,50 150,50" fill="rgba(105, 240, 174, 0.12)" stroke="#059669" stroke-width="2.2"/>
+        <polygon points="100,170 300,170 350,50 150,50" fill="rgba(255, 61, 0, 0.12)" stroke="#EA580C" stroke-width="2.2"/>
         <!-- Diagonals AC and BD -->
         <line x1="100" y1="170" x2="350" y2="50" stroke="#0284C7" stroke-width="1.8" stroke-dasharray="4,4"/>
         <line x1="300" y1="170" x2="150" y2="50" stroke="#0284C7" stroke-width="1.8" stroke-dasharray="4,4"/>
@@ -55,7 +55,7 @@ function buildMisc() {
     <div class="diagram-svg-container">
       <svg viewBox="0 0 420 220" style="width: 100%; max-width: 380px; height: auto; display: block;" xmlns="http://www.w3.org/2000/svg">
         <!-- Triangle ABC -->
-        <polygon points="210,30 70,180 350,180" fill="rgba(105, 240, 174, 0.12)" stroke="#16A34A" stroke-width="2.2"/>
+        <polygon points="210,30 70,180 350,180" fill="rgba(255, 61, 0, 0.12)" stroke="#EA580C" stroke-width="2.2"/>
         <!-- Midpoints D, E, F -->
         <!-- D on BC (210, 180) -->
         <!-- E on AC (280, 105) -->

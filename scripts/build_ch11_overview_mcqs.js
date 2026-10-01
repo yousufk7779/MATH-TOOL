@@ -124,17 +124,17 @@ function buildOverview() {
   .sol-title { font-size: 15.5px; font-weight: 800; color: #E2E8F0; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }
   .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; text-align: left !important; }
   .sol-step div { margin-top: 6px; margin-bottom: 6px; text-align: left !important; }
-  .diagram-wrapper { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(105, 240, 174, 0.4); border-radius: 10px; padding: 14px 16px; margin: 18px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.35); text-align: center; }
+  .diagram-wrapper { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 61, 0, 0.4); border-radius: 10px; padding: 14px 16px; margin: 18px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.35); text-align: center; }
   .diagram-svg-container { display: flex; justify-content: center; align-items: center; background: #FFFFFF; border-radius: 8px; padding: 8px; border: 1px solid rgba(255,255,255,0.1); margin: 0 auto; max-width: 480px; }
   .diagram-caption { color: #CBD5E1; font-size: 14px; text-align: center; margin-top: 10px; line-height: 1.5; font-weight: 500; }
   .octant-table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 14px; color: #FFFFFF; }
   .octant-table th, .octant-table td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 8px 6px; text-align: center; }
-  .octant-table th { background: rgba(105, 240, 174, 0.2); color: ${THEME_COLOR}; font-weight: 700; }
+  .octant-table th { background: rgba(255, 61, 0, 0.2); color: ${THEME_COLOR}; font-weight: 700; }
 </style>
 
 <div style="padding: 4px 2px;">
   <!-- Hero Banner -->
-  <div style="background: linear-gradient(135deg, rgba(105, 240, 174, 0.25), rgba(0, 0, 0, 0.4)); border: 1.5px solid ${THEME_COLOR}; border-radius: 14px; padding: 18px; margin-bottom: 20px; text-align: center;">
+  <div style="background: linear-gradient(135deg, rgba(255, 61, 0, 0.25), rgba(0, 0, 0, 0.4)); border: 1.5px solid ${THEME_COLOR}; border-radius: 14px; padding: 18px; margin-bottom: 20px; text-align: center;">
     <div style="font-size: 22px; font-weight: 800; color: ${THEME_COLOR}; margin-bottom: 6px;">
       ✦ Chapter 11: Introduction to Three Dimensional Geometry
     </div>

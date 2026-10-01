@@ -1,5 +1,5 @@
 // Common styling and helper functions for Class 11 Math Chapter 11: Introduction to Three Dimensional Geometry
-const THEME_COLOR = "#69F0AE";
+const THEME_COLOR = "#FF3D00";
 
 const STYLES = `
 <style>
@@ -104,7 +104,7 @@ const STYLES = `
   }
   .diagram-wrapper {
     background: rgba(15, 23, 42, 0.9);
-    border: 1.5px solid rgba(105, 240, 174, 0.4);
+    border: 1.5px solid rgba(255, 61, 0, 0.4);
     border-radius: 10px;
     padding: 14px 16px;
     margin: 18px 0;
@@ -143,7 +143,7 @@ const STYLES = `
     text-align: center;
   }
   .octant-table th {
-    background: rgba(105, 240, 174, 0.2);
+    background: rgba(255, 61, 0, 0.2);
     color: ${THEME_COLOR};
     font-weight: 700;
   }
@@ -178,7 +178,7 @@ function qCard(qNum, qText, stepsHtml, ansVal) {
 function exBanner(exTitle, exSubtitle) {
   return `
   <!-- Exercise Banner -->
-  <div style="background: linear-gradient(135deg, rgba(105, 240, 174, 0.18), rgba(0,0,0,0.3)); border: 1.5px solid ${THEME_COLOR}; border-radius: 12px; padding: 14px; margin-bottom: 20px; text-align: center;">
+  <div style="background: linear-gradient(135deg, rgba(255, 61, 0, 0.18), rgba(0,0,0,0.3)); border: 1.5px solid ${THEME_COLOR}; border-radius: 12px; padding: 14px; margin-bottom: 20px; text-align: center;">
     <div style="font-size: 18px; font-weight: 800; color: ${THEME_COLOR};">
       📘 3D Geometry &bull; ${exTitle}
     </div>

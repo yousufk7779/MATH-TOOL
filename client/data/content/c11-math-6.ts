@@ -110,7 +110,7 @@ export const c11Math6: ChapterContent = {
         "C):   Infinity",
         "D):   1"
       ],
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "explanation": "0! = 1 is established by the recursive property n! = n × (n - 1)!. For n = 1: 1! = 1 × 0! ⇒ 1 = 0!, and it reflects the single way to arrange an empty set."
     },
     {
@@ -122,7 +122,7 @@ export const c11Math6: ChapterContent = {
         "C):   120",
         "D):   243"
       ],
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "explanation": "Each of the hundreds, tens, and units places can be filled by any of the 5 digits: 5 × 5 × 5 = 125 numbers."
     },
     {
@@ -134,7 +134,7 @@ export const c11Math6: ChapterContent = {
         "C):   64",
         "D):   72"
       ],
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "explanation": "Multiplying by 8!: x = 8!/6! + 8!/7! = (8 × 7) + 8 = 56 + 8 = 64."
     },
     {
@@ -146,7 +146,7 @@ export const c11Math6: ChapterContent = {
         "C):   55",
         "D):   36"
       ],
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "explanation": "ⁿC₈ = ⁿC₂ ⇒ n = 8 + 2 = 10. Thus ⁿC₂ = ¹⁰C₂ = (10 × 9) / 2 = 45."
     },
     {
@@ -158,7 +158,7 @@ export const c11Math6: ChapterContent = {
         "C):   210",
         "D):   190"
       ],
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "explanation": "A chord requires joining any 2 distinct points on the circle: ²¹C₂ = (21 × 20) / 2 = 210 chords."
     },
     {
@@ -170,7 +170,7 @@ export const c11Math6: ChapterContent = {
         "C):   ⁿPᵣ = n! × ⁿCᵣ",
         "D):   ⁿPᵣ + ⁿCᵣ = r!"
       ],
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "explanation": "Permutation incorporates both selection and arrangement: ⁿPᵣ = r! × ⁿCᵣ."
     },
     {
@@ -182,7 +182,7 @@ export const c11Math6: ChapterContent = {
         "C):   3024",
         "D):   4032"
       ],
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "explanation": "Thousands place cannot be 0 (9 choices). Hundreds place has 9 choices, tens has 8 choices, units has 7 choices: 9 × 9 × 8 × 7 = 4536 numbers."
     },
     {
@@ -194,7 +194,7 @@ export const c11Math6: ChapterContent = {
         "C):   60",
         "D):   40"
       ],
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "explanation": "⁵C₃ × ⁴C₃ = 10 × 4 = 40 ways."
     },
     {
@@ -206,7 +206,7 @@ export const c11Math6: ChapterContent = {
         "C):   5",
         "D):   3"
       ],
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "explanation": "5! / (5 - r)! = 2 × 6! / (7 - r)! ⇒ (7 - r)(6 - r) = 12 ⇒ r² - 13r + 30 = 0 ⇒ (r - 3)(r - 10) = 0. Since r ≤ 5, r = 3."
     },
     {
@@ -218,7 +218,7 @@ export const c11Math6: ChapterContent = {
         "C):   40320",
         "D):   362880"
       ],
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "explanation": "EQUATION has 8 distinct letters. The number of arrangements is 8! = 40320."
     },
     {
@@ -230,7 +230,7 @@ export const c11Math6: ChapterContent = {
         "C):   840",
         "D):   32400"
       ],
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "explanation": "Total permutations = 11!/(4! 4! 2!) = 34650. Permutations with 4 I's together = 8!/(4! 2!) = 840. Permutations where I's are not together = 34650 - 840 = 33810."
     },
     {
@@ -242,7 +242,7 @@ export const c11Math6: ChapterContent = {
         "C):   ⁿ⁺¹Cᵣ₋₁",
         "D):   ²ⁿCᵣ"
       ],
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "explanation": "This is Pascal's Identity: ⁿCᵣ + ⁿCᵣ₋₁ = ⁿ⁺¹Cᵣ."
     },
     {
@@ -254,7 +254,7 @@ export const c11Math6: ChapterContent = {
         "C):   778320",
         "D):   649740"
       ],
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "explanation": "Choose 1 Ace from 4 and 4 Non-Aces from 48: ⁴C₁ × ⁴⁸C₄ = 4 × 194580 = 778320."
     },
     {
@@ -266,7 +266,7 @@ export const c11Math6: ChapterContent = {
         "C):   16",
         "D):   56"
       ],
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "explanation": "⁸P₂ = 8! / 6! = 8 × 7 = 56 ways."
     },
     {
@@ -278,7 +278,7 @@ export const c11Math6: ChapterContent = {
         "C):   720",
         "D):   1800"
       ],
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "explanation": "DAUGHTER has 3 vowels and 5 consonants. Selection = ³C₂ × ⁵C₃ = 3 × 10 = 30. Arrangement of 5 letters = 5! = 120. Total = 30 × 120 = 3600 words."
     },
     {
@@ -290,7 +290,7 @@ export const c11Math6: ChapterContent = {
         "C):   7",
         "D):   5"
       ],
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "explanation": "4(2n - 1) / (n - 2) = 12 ⇒ 2n - 1 = 3(n - 2) ⇒ 2n - 1 = 3n - 6 ⇒ n = 5."
     },
     {
@@ -302,7 +302,7 @@ export const c11Math6: ChapterContent = {
         "C):   2880",
         "D):   5040"
       ],
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "explanation": "2! (for the two blocks) × 5! (arranging vowels) × 3! (arranging consonants) = 2 × 120 × 6 = 1440 words."
     },
     {
@@ -314,7 +314,7 @@ export const c11Math6: ChapterContent = {
         "C):   1440",
         "D):   576"
       ],
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "explanation": "4 women in 4 even places (2, 4, 6, 8) = 4! = 24. 5 men in 5 odd places (1, 3, 5, 7, 9) = 5! = 120. Total = 24 × 120 = 2880."
     },
     {
@@ -326,7 +326,7 @@ export const c11Math6: ChapterContent = {
         "C):   35",
         "D):   40"
       ],
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "explanation": "Number of diagonals in an n-gon = ⁿC₂ - n = ¹⁰C₂ - 10 = 45 - 10 = 35."
     },
     {
@@ -338,7 +338,7 @@ export const c11Math6: ChapterContent = {
         "C):   1814400",
         "D):   362880"
       ],
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "explanation": "Words preceding E start with A. Fixing A in the first place, remaining 10 letters (with 2 I's and 2 N's) arrange in 10! / (2! 2!) = 3628800 / 4 = 907200 words."
     },
     {
@@ -350,7 +350,7 @@ export const c11Math6: ChapterContent = {
         "C):   151200",
         "D):   181440"
       ],
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "explanation": "Treat 4 S's as 1 unit. Units to arrange = 10 (with 3 A's, 2 I's, 2 N's). Number of arrangements = 10! / (3! 2! 2!) = 3628800 / 24 = 151200."
     },
     {
@@ -362,7 +362,7 @@ export const c11Math6: ChapterContent = {
         "C):   70",
         "D):   84"
       ],
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "explanation": "Student must choose (5 - 2) = 3 courses from (9 - 2) = 7 available elective courses: ⁷C₃ = (7 × 6 × 5) / 6 = 35."
     },
     {
@@ -374,7 +374,7 @@ export const c11Math6: ChapterContent = {
         "C):   240",
         "D):   120"
       ],
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "explanation": "Units place must be 0 (1 choice). The remaining 5 places can be filled by the remaining 5 non-zero digits in 5! = 120 ways."
     },
     {
@@ -386,7 +386,7 @@ export const c11Math6: ChapterContent = {
         "C):   3960",
         "D):   4200"
       ],
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "explanation": "Select 4 bowlers from 5 and 7 batsmen/fielders from 12: ⁵C₄ × ¹²C₇ = 5 × 792 = 3960 ways."
     },
     {
@@ -398,7 +398,7 @@ export const c11Math6: ChapterContent = {
         "C):   1814400",
         "D):   3628800"
       ],
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "explanation": "5 vowels grouped as 1 block + 7 consonants = 8 units (with 2 T's). Ways = (8! / 2!) × 5! = 20160 × 120 = 2419200."
     }
   ]

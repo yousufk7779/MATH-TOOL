@@ -93,11 +93,11 @@ export const c11Math14: ChapterContent = {
       "question": "When 3 fair coins are tossed simultaneously, the total number of sample points in the sample space is:",
       "options": [
         "A):   6",
-        "B):   8",
+        "B):   16",
         "C):   9",
-        "D):   16"
+        "D):   8"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "Each coin has 2 outcomes. For 3 coins, n(S) = 2³ = 8."
     },
     {
@@ -106,10 +106,10 @@ export const c11Math14: ChapterContent = {
       "options": [
         "A):   1",
         "B):   P(A) × P(B)",
-        "C):   0",
-        "D):   P(A) + P(B)"
+        "C):   P(A) + P(B)",
+        "D):   0"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanation": "Mutually exclusive events cannot occur simultaneously, meaning A ∩ B = ∅, hence P(A ∩ B) = 0."
     },
     {
@@ -165,11 +165,11 @@ export const c11Math14: ChapterContent = {
       "question": "If P(A) = 0.5, P(B) = 0.4 and P(A ∩ B) = 0.2, then P(A ∪ B) is:",
       "options": [
         "A):   0.9",
-        "B):   0.7",
+        "B):   0.6",
         "C):   0.8",
-        "D):   0.6"
+        "D):   0.7"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "P(A ∪ B) = P(A) + P(B) − P(A ∩ B) = 0.5 + 0.4 − 0.2 = 0.7."
     },
     {
@@ -189,11 +189,11 @@ export const c11Math14: ChapterContent = {
       "question": "Which of the following can never be the probability of an event?",
       "options": [
         "A):   0.001",
-        "B):   −0.5",
+        "B):   2/3",
         "C):   15%",
-        "D):   2/3"
+        "D):   −0.5"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "By the non-negativity axiom, probability must satisfy 0 ≤ P(E) ≤ 1. Negative probability is impossible."
     },
     {
@@ -201,11 +201,11 @@ export const c11Math14: ChapterContent = {
       "question": "If E₁ and E₂ are exhaustive events, then:",
       "options": [
         "A):   E₁ ∩ E₂ = ∅",
-        "B):   E₁ ∪ E₂ = S",
+        "B):   P(E₁ ∪ E₂) = 0",
         "C):   P(E₁) = P(E₂)",
-        "D):   P(E₁ ∪ E₂) = 0"
+        "D):   E₁ ∪ E₂ = S"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "Exhaustive events cover the entire sample space: E₁ ∪ E₂ = S."
     },
     {
@@ -213,23 +213,23 @@ export const c11Math14: ChapterContent = {
       "question": "In a single throw of a die, what is the probability of getting a number greater than or equal to 3?",
       "options": [
         "A):   1/2",
-        "B):   2/3",
+        "B):   5/6",
         "C):   1/3",
-        "D):   5/6"
+        "D):   2/3"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "Favourable outcomes are {3, 4, 5, 6} (4 outcomes). P = 4/6 = 2/3."
     },
     {
       "id": "c11-math-14-mcq-12",
       "question": "A letter is chosen at random from the word 'ASSASSINATION'. What is the probability that it is a vowel?",
       "options": [
-        "A):   7/13",
-        "B):   6/13",
+        "A):   6/13",
+        "B):   7/13",
         "C):   5/13",
         "D):   1/2"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "Total 13 letters. Vowels are A, A, A, I, I, O (6 vowels). P = 6/13."
     },
     {

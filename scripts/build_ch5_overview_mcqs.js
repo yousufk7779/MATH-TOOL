@@ -186,7 +186,7 @@ const chapter5MCQs = [
       "C):   Multiplying both sides by any positive real number",
       "D):   Multiplying or dividing both sides by a negative real number"
     ],
-    correctAnswer: "d",
+    correctAnswer: "D",
     explanation: "Multiplying or dividing both sides of an inequality by a negative quantity inverts the order relation (e.g., if 2 < 5, then -2 > -5)."
   },
   {
@@ -198,7 +198,7 @@ const chapter5MCQs = [
       "C):   {..., -2, -1, 0, 1, 2, 3, 4, 5, 6}",
       "D):   {1, 2, 3, 4, 5}"
     ],
-    correctAnswer: "a",
+    correctAnswer: "A",
     explanation: "30x < 200 ⇒ x < 200/30 = 20/3 ≈ 6.67. Since natural numbers are positive integers {1, 2, 3, ...}, the values are {1, 2, 3, 4, 5, 6}."
   },
   {
@@ -210,7 +210,7 @@ const chapter5MCQs = [
       "C):   {..., -5, -4, -3}",
       "D):   {-3, -4, -5, ...}"
     ],
-    correctAnswer: "c",
+    correctAnswer: "C",
     explanation: "Dividing by -4 reverses the inequality: x ≤ 12 / (-4) ⇒ x ≤ -3. As integers, the set is {..., -5, -4, -3}."
   },
   {
@@ -222,7 +222,7 @@ const chapter5MCQs = [
       "C):   x ∈ (-∞, -2]",
       "D):   x ∈ [0, 2]"
     ],
-    correctAnswer: "b",
+    correctAnswer: "B",
     explanation: "Multiplying by 15: 9(x - 2) ≤ 25(2 - x) ⇒ 9x - 18 ≤ 50 - 25x ⇒ 34x ≤ 68 ⇒ x ≤ 2. Hence x ∈ (-∞, 2]."
   },
   {
@@ -234,7 +234,7 @@ const chapter5MCQs = [
       "C):   The point 'a' is excluded from the solution set",
       "D):   The inequality must be slack (≤ or ≥)"
     ],
-    correctAnswer: "c",
+    correctAnswer: "C",
     explanation: "In standard mathematical graphics, a hollow circle represents a strict boundary (< or >) where the endpoint 'a' itself is not part of the solution set."
   },
   {
@@ -246,7 +246,7 @@ const chapter5MCQs = [
       "C):   [-2, ∞)",
       "D):   (-∞, 2)"
     ],
-    correctAnswer: "a",
+    correctAnswer: "A",
     explanation: "4x - 6x < 7 - 3 ⇒ -2x < 4 ⇒ x > 4/(-2) ⇒ x > -2. Thus x ∈ (-2, ∞)."
   },
   {
@@ -258,7 +258,7 @@ const chapter5MCQs = [
       "C):   A wavy line",
       "D):   A double parallel line"
     ],
-    correctAnswer: "b",
+    correctAnswer: "B",
     explanation: "For strict inequalities (< or >), the points on the boundary line do not satisfy the condition, so the line is drawn dotted or dashed."
   },
   {
@@ -270,7 +270,7 @@ const chapter5MCQs = [
       "C):   (1, 1)",
       "D):   (0, 0)"
     ],
-    correctAnswer: "d",
+    correctAnswer: "D",
     explanation: "The origin (0, 0) reduces all variable terms ax + by immediately to 0, making the truth check 0 < c or 0 ≥ c instantaneous."
   },
   {
@@ -282,7 +282,7 @@ const chapter5MCQs = [
       "C):   Only points with negative coordinates",
       "D):   Any point not lying on the line, such as (1, 0) or (0, 1)"
     ],
-    correctAnswer: "d",
+    correctAnswer: "D",
     explanation: "Since the boundary line already passes through (0,0), testing (0,0) gives 0 = 0 (on the boundary). Any point off the line, like (1, 0), unambiguously reveals which half-plane satisfies the inequality."
   },
   {
@@ -294,7 +294,7 @@ const chapter5MCQs = [
       "C):   The open half-plane lying strictly below the horizontal dashed line y = -2",
       "D):   The first quadrant only"
     ],
-    correctAnswer: "c",
+    correctAnswer: "C",
     explanation: "y = -2 is a horizontal line. Since the inequality is y < -2 (strict), it is represented by a dashed line and shaded strictly below it."
   },
   {
@@ -306,7 +306,7 @@ const chapter5MCQs = [
       "C):   [-5, 5]",
       "D):   (-11/3, 5]"
     ],
-    correctAnswer: "a",
+    correctAnswer: "A",
     explanation: "Multiplying by 2: -10 ≤ 5 - 3x ≤ 16 ⇒ subtracting 5: -15 ≤ -3x ≤ 11 ⇒ dividing by -3 (reverses sign): 5 ≥ x ≥ -11/3 ⇔ -11/3 ≤ x ≤ 5. Hence x ∈ [-11/3, 5]."
   },
   {
@@ -318,7 +318,7 @@ const chapter5MCQs = [
       "C):   (7, 9) and (9, 11)",
       "D):   (1, 3) and (3, 5)"
     ],
-    correctAnswer: "b",
+    correctAnswer: "B",
     explanation: "Let the integers be x and x + 2. Both < 10 ⇒ x + 2 < 10 ⇒ x < 8. Sum > 11 ⇒ 2x + 2 > 11 ⇒ x > 4.5. Odd integers in (4.5, 8) are 5 and 7, yielding pairs (5, 7) and (7, 9)."
   },
   {
@@ -330,7 +330,7 @@ const chapter5MCQs = [
       "C):   82",
       "D):   88"
     ],
-    correctAnswer: "c",
+    correctAnswer: "C",
     explanation: "(87 + 92 + 94 + 95 + x) / 5 ≥ 90 ⇒ (368 + x) / 5 ≥ 90 ⇒ 368 + x ≥ 450 ⇒ x ≥ 450 - 368 = 82."
   },
   {
@@ -342,7 +342,7 @@ const chapter5MCQs = [
       "C):   (4, ∞)",
       "D):   (-4, 4)"
     ],
-    correctAnswer: "d",
+    correctAnswer: "D",
     explanation: "By the modulus inequality property, |x| < a ⇔ -a < x < a. Therefore, |x| < 4 implies x ∈ (-4, 4)."
   },
   {
@@ -354,7 +354,7 @@ const chapter5MCQs = [
       "C):   (-∞, 5)",
       "D):   (-5, ∞)"
     ],
-    correctAnswer: "a",
+    correctAnswer: "A",
     explanation: "5x > -25 ⇒ x > -5; and 5x < 25 ⇒ x < 5. Combining gives -5 < x < 5, i.e., open interval (-5, 5)."
   },
   {
@@ -366,7 +366,7 @@ const chapter5MCQs = [
       "C):   a · c < b · c",
       "D):   a / c > b / c"
     ],
-    correctAnswer: "d",
+    correctAnswer: "D",
     explanation: "Dividing an inequality by a strictly negative number inverts the direction: a < b and c < 0 implies a/c > b/c."
   },
   {
@@ -378,7 +378,7 @@ const chapter5MCQs = [
       "C):   More than 300 litres",
       "D):   Less than 100 litres"
     ],
-    correctAnswer: "a",
+    correctAnswer: "A",
     explanation: "Let x litres be added. 15% of (600 + x) < 12% of 600 + 30% of x < 18% of (600 + x). Solving gives 120 < x < 300 litres."
   },
   {
@@ -390,7 +390,7 @@ const chapter5MCQs = [
       "C):   The 4th Quadrant",
       "D):   The whole coordinate plane"
     ],
-    correctAnswer: "b",
+    correctAnswer: "B",
     explanation: "Both coordinates x and y are greater than or equal to zero only in the first quadrant and along the positive axes."
   },
   {
@@ -402,7 +402,7 @@ const chapter5MCQs = [
       "C):   9 cm",
       "D):   10 cm"
     ],
-    correctAnswer: "c",
+    correctAnswer: "C",
     explanation: "Perimeter = x + 3x + (3x - 2) = 7x - 2 ≥ 61 ⇒ 7x ≥ 63 ⇒ x ≥ 9 cm. The minimum length is 9 cm."
   },
   {
@@ -414,7 +414,7 @@ const chapter5MCQs = [
       "C):   (-∞, -2]",
       "D):   [-2, 2]"
     ],
-    correctAnswer: "a",
+    correctAnswer: "A",
     explanation: "RHS = (15x - 10 - 8 + 4x) / 20 = (19x - 18) / 20. Cross multiplying: 20(2x - 1) ≥ 3(19x - 18) ⇒ 40x - 20 ≥ 57x - 54 ⇒ 34 ≥ 17x ⇒ x ≤ 2. Hence (-∞, 2]."
   },
   {
@@ -426,7 +426,7 @@ const chapter5MCQs = [
       "C):   The parallel strip bounded between the two lines x + y = 4 and x + y = 6",
       "D):   An empty set with no common points"
     ],
-    correctAnswer: "c",
+    correctAnswer: "C",
     explanation: "Since the lines have equal slope (-1), they are parallel. The region x + y ≥ 4 is above the lower line and x + y ≤ 6 is below the upper line, forming a closed parallel strip."
   },
   {
@@ -438,7 +438,7 @@ const chapter5MCQs = [
       "C):   10.0 ≤ MA ≤ 15.5",
       "D):   9.0 ≤ MA ≤ 18.0"
     ],
-    correctAnswer: "b",
+    correctAnswer: "B",
     explanation: "80 ≤ (MA / 12) × 100 ≤ 140 ⇒ 80 × 12 / 100 ≤ MA ≤ 140 × 12 / 100 ⇒ 9.6 ≤ MA ≤ 16.8 years."
   },
   {
@@ -450,7 +450,7 @@ const chapter5MCQs = [
       "C):   [1, 5]",
       "D):   [-1, 5]"
     ],
-    correctAnswer: "d",
+    correctAnswer: "D",
     explanation: "|x - 2| ≤ 3 ⇔ -3 ≤ x - 2 ≤ 3. Adding 2 gives -1 ≤ x ≤ 5, so x ∈ [-1, 5]."
   },
   {
@@ -462,7 +462,7 @@ const chapter5MCQs = [
       "C):   (2, 0.5)",
       "D):   (-2, 1)"
     ],
-    correctAnswer: "c",
+    correctAnswer: "C",
     explanation: "For (2, 0.5): 2(2) + 0.5 = 4.5 ≥ 4 (True); 2 + 0.5 = 2.5 ≤ 3 (True); 2(2) - 3(0.5) = 2.5 ≤ 6 (True). All three constraints hold."
   },
   {
@@ -474,7 +474,7 @@ const chapter5MCQs = [
       "C):   x ≥ 22 cm",
       "D):   x ≤ 8 cm"
     ],
-    correctAnswer: "a",
+    correctAnswer: "A",
     explanation: "x + (x + 3) + 2x ≤ 91 ⇒ 4x ≤ 88 ⇒ x ≤ 22. Also 2x ≥ (x + 3) + 5 ⇒ x ≥ 8. Combining both yields 8 ≤ x ≤ 22 cm."
   }
 ];

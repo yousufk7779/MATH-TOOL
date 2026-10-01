@@ -149,7 +149,7 @@ const chapter7MCQs = [
       "C):   n − 1",
       "D):   n + 1"
     ],
-    correctAnswer: "d",
+    correctAnswer: "D",
     explanation: "Since r ranges from 0 to n in the summation formula ∑ ⁿCᵣ aⁿ⁻ʳ bʳ, there are exactly (n + 1) terms."
   },
   {
@@ -161,7 +161,7 @@ const chapter7MCQs = [
       "C):   n²",
       "D):   2n"
     ],
-    correctAnswer: "a",
+    correctAnswer: "A",
     explanation: "Setting x = 1 in the expansion gives (1 + 1)ⁿ = ⁿC₀ + ⁿC₁ + ... + ⁿCₙ = 2ⁿ."
   },
   {
@@ -173,7 +173,7 @@ const chapter7MCQs = [
       "C):   (−1)ʳ ¹²Cᵣ x¹²⁻ʳ 2ʳ yʳ",
       "D):   ¹²Cᵣ xʳ (−2y)¹²⁻ʳ"
     ],
-    correctAnswer: "c",
+    correctAnswer: "C",
     explanation: "Tᵣ₊₁ = ¹²Cᵣ x¹²⁻ʳ (−2y)ʳ = (−1)ʳ ¹²Cᵣ 2ʳ x¹²⁻ʳ yʳ."
   },
   {
@@ -185,7 +185,7 @@ const chapter7MCQs = [
       "C):   0",
       "D):   Depends on the value of a and b"
     ],
-    correctAnswer: "b",
+    correctAnswer: "B",
     explanation: "When n is even, the total number of terms (n + 1) is odd, so there is exactly one central middle term at position (n/2 + 1)."
   },
   {
@@ -197,7 +197,7 @@ const chapter7MCQs = [
       "C):   1512",
       "D):   4032"
     ],
-    correctAnswer: "c",
+    correctAnswer: "C",
     explanation: "Tᵣ₊₁ = ⁸Cᵣ x⁸⁻ʳ 3ʳ. For x⁵, 8 - r = 5 ⇒ r = 3. Coefficient = ⁸C₃ × 3³ = 56 × 27 = 1512."
   },
   {
@@ -209,7 +209,7 @@ const chapter7MCQs = [
       "C):   Both are strictly equal",
       "D):   Cannot be determined without a calculator"
     ],
-    correctAnswer: "a",
+    correctAnswer: "A",
     explanation: "(1 + 0.1)¹⁰⁰⁰⁰ = 1 + 10000(0.1) + [positive terms] = 1 + 1000 + ... = 1001 + ... > 1000."
   },
   {
@@ -221,7 +221,7 @@ const chapter7MCQs = [
       "C):   80√6",
       "D):   40"
     ],
-    correctAnswer: "b",
+    correctAnswer: "B",
     explanation: "(a + b)⁴ − (a − b)⁴ = 8ab(a² + b²). For a = √3, b = √2: 8(√6)(3 + 2) = 40√6."
   },
   {
@@ -233,7 +233,7 @@ const chapter7MCQs = [
       "C):   1",
       "D):   20"
     ],
-    correctAnswer: "d",
+    correctAnswer: "D",
     explanation: "Tᵣ₊₁ = ⁶Cᵣ x⁶⁻ʳ (1/x)ʳ = ⁶Cᵣ x⁶⁻²ʳ. For constant term, 6 - 2r = 0 ⇒ r = 3. Term = ⁶C₃ = 20."
   },
   {
@@ -245,7 +245,7 @@ const chapter7MCQs = [
       "C):   128",
       "D):   64"
     ],
-    correctAnswer: "d",
+    correctAnswer: "D",
     explanation: "9ⁿ⁺¹ = (1 + 8)ⁿ⁺¹ = 1 + 8(n + 1) + 64k = 8n + 9 + 64k ⇒ 9ⁿ⁺¹ − 8n − 9 = 64k, which is divisible by 64."
   },
   {
@@ -257,7 +257,7 @@ const chapter7MCQs = [
       "C):   4ⁿ",
       "D):   3ⁿ⁺¹"
     ],
-    correctAnswer: "c",
+    correctAnswer: "C",
     explanation: "∑ᵣ₌₀ⁿ ⁿCᵣ 3ʳ = (1 + 3)ⁿ = 4ⁿ."
   },
   {
@@ -269,7 +269,7 @@ const chapter7MCQs = [
       "C):   30618 x⁵ y⁵",
       "D):   122472 x⁵ y⁵"
     ],
-    correctAnswer: "a",
+    correctAnswer: "A",
     explanation: "n = 10 (even). Middle term is 6th term (r = 5): T₆ = ¹⁰C₅ (x/3)⁵ (9y)⁵ = 252 × (x⁵/243) × 59049 y⁵ = 61236 x⁵ y⁵."
   },
   {
@@ -281,7 +281,7 @@ const chapter7MCQs = [
       "C):   5",
       "D):   6"
     ],
-    correctAnswer: "b",
+    correctAnswer: "B",
     explanation: "ᵐC₂ = 6 ⇒ m(m - 1)/2 = 6 ⇒ m² - m - 12 = 0 ⇒ (m - 4)(m + 3) = 0. Positive m = 4."
   },
   {
@@ -293,7 +293,7 @@ const chapter7MCQs = [
       "C):   Equal",
       "D):   Reciprocals of each other"
     ],
-    correctAnswer: "c",
+    correctAnswer: "C",
     explanation: "Coefficient of aᵐ is ᵐ⁺ⁿCₘ and coefficient of aⁿ is ᵐ⁺ⁿCₙ. By the complementary property ᵐ⁺ⁿCₘ = ᵐ⁺ⁿCₙ, they are equal."
   },
   {
@@ -305,7 +305,7 @@ const chapter7MCQs = [
       "C):   n = 7, r = 4",
       "D):   n = 7, r = 3"
     ],
-    correctAnswer: "d",
+    correctAnswer: "D",
     explanation: "ⁿCᵣ₋₂ : ⁿCᵣ₋₁ : ⁿCᵣ = 1 : 3 : 5 gives n - 4r + 5 = 0 and 3n - 8r + 3 = 0, solving to n = 7 and r = 3."
   },
   {
@@ -317,7 +317,7 @@ const chapter7MCQs = [
       "C):   884700",
       "D):   848736"
     ],
-    correctAnswer: "a",
+    correctAnswer: "A",
     explanation: "(100 - 4)³ = 1000000 - 3(10000)(4) + 3(100)(16) - 64 = 1000000 - 120000 + 4800 - 64 = 884736."
   },
   {
@@ -329,7 +329,7 @@ const chapter7MCQs = [
       "C):   14756",
       "D):   18564"
     ],
-    correctAnswer: "d",
+    correctAnswer: "D",
     explanation: "T₁₃ = ¹⁸C₁₂ (9x)⁶ (1/(3√x))¹² = ¹⁸C₆ × 3¹² x⁶ × (1/(3¹² x⁶)) = ¹⁸C₆ = 18564."
   },
   {
@@ -341,7 +341,7 @@ const chapter7MCQs = [
       "C):   −21",
       "D):   150"
     ],
-    correctAnswer: "a",
+    correctAnswer: "A",
     explanation: "Summing cross-terms gives -21 + 420 - 2100 + 3360 - 1680 + 192 = 171."
   },
   {
@@ -353,7 +353,7 @@ const chapter7MCQs = [
       "C):   Only when n is an even integer",
       "D):   Only when n is a prime number"
     ],
-    correctAnswer: "b",
+    correctAnswer: "B",
     explanation: "By expanding aⁿ = [(a - b) + b]ⁿ, all terms contain (a - b) except bⁿ, which cancels out: aⁿ - bⁿ = (a - b)k."
   },
   {
@@ -365,7 +365,7 @@ const chapter7MCQs = [
       "C):   198",
       "D):   256"
     ],
-    correctAnswer: "c",
+    correctAnswer: "C",
     explanation: "2 [x⁶ + 15x⁴ + 15x² + 1] with x = √2 gives 2 [8 + 60 + 30 + 1] = 2(99) = 198."
   },
   {
@@ -377,7 +377,7 @@ const chapter7MCQs = [
       "C):   7",
       "D):   8"
     ],
-    correctAnswer: "a",
+    correctAnswer: "A",
     explanation: "T₁ = aⁿ = 729, T₂ = n aⁿ⁻¹ b = 7290, T₃ = n(n-1)/2 aⁿ⁻² b² = 30375. Solving yields a = 3, b = 5, n = 6."
   },
   {
@@ -389,7 +389,7 @@ const chapter7MCQs = [
       "C):   −101376",
       "D):   −50688"
     ],
-    correctAnswer: "c",
+    correctAnswer: "C",
     explanation: "T₈ = ¹²C₇ a⁵ (−2b)⁷ = 792 × (−128) a⁵ b⁷ = −101376 a⁵ b⁷."
   },
   {
@@ -401,7 +401,7 @@ const chapter7MCQs = [
       "C):   0.950",
       "D):   0.960"
     ],
-    correctAnswer: "b",
+    correctAnswer: "B",
     explanation: "(1 - 0.01)⁵ ≈ 1 - 5(0.01) + 10(0.0001) = 1 - 0.05 + 0.001 = 0.951."
   },
   {
@@ -413,7 +413,7 @@ const chapter7MCQs = [
       "C):   6",
       "D):   10"
     ],
-    correctAnswer: "d",
+    correctAnswer: "D",
     explanation: "The ratio reduces to 6^{(n-8)/4} = 6^{1/2} ⇒ (n - 8)/4 = 1/2 ⇒ n - 8 = 2 ⇒ n = 10."
   },
   {
@@ -425,7 +425,7 @@ const chapter7MCQs = [
       "C):   9/7",
       "D):   1/3"
     ],
-    correctAnswer: "c",
+    correctAnswer: "C",
     explanation: "⁹C₂ 3⁷ a² = ⁹C₃ 3⁶ a³ ⇒ 36 × 3 = 84a ⇒ 108 = 84a ⇒ a = 9/7."
   },
   {
@@ -437,7 +437,7 @@ const chapter7MCQs = [
       "C):   Equal",
       "D):   Four times as large"
     ],
-    correctAnswer: "a",
+    correctAnswer: "A",
     explanation: "²ⁿCₙ = (2n)! / (n! n!) = 2 × (2n - 1)! / (n! (n - 1)!) = 2 × ²ⁿ⁻¹Cₙ."
   }
 ];

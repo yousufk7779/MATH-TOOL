@@ -100,12 +100,12 @@ export const c11Math13: ChapterContent = {
       "id": "c11-math-13-mcq-1",
       "question": "Which of the following is NOT a measure of dispersion?",
       "options": [
-        "A):   Range",
+        "A):   Mode",
         "B):   Mean Deviation",
-        "C):   Mode",
+        "C):   Range",
         "D):   Standard Deviation"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "Mode is a measure of central tendency, whereas Range, Mean Deviation, and Standard Deviation are measures of dispersion."
     },
     {
@@ -113,11 +113,11 @@ export const c11Math13: ChapterContent = {
       "question": "The variance of the first n natural numbers is given by:",
       "options": [
         "A):   (n² − 1) / 6",
-        "B):   (n² − 1) / 12",
+        "B):   (n + 1)² / 12",
         "C):   n(n + 1) / 12",
-        "D):   (n + 1)² / 12"
+        "D):   (n² − 1) / 12"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "Variance of first n natural numbers is σ² = (1/n)∑x² − (x̄)² = (n² − 1)/12."
     },
     {
@@ -126,10 +126,10 @@ export const c11Math13: ChapterContent = {
       "options": [
         "A):   4",
         "B):   2",
-        "C):   16",
-        "D):   8"
+        "C):   8",
+        "D):   16"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanation": "If yᵢ = a xᵢ, then Var(y) = a² Var(x). Here a = 4, so variance is multiplied by 4² = 16."
     },
     {
@@ -138,10 +138,10 @@ export const c11Math13: ChapterContent = {
       "options": [
         "A):   Increase by 10",
         "B):   Decrease by 10",
-        "C):   Remain unchanged",
-        "D):   Become 10 times"
+        "C):   Become 10 times",
+        "D):   Remain unchanged"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanation": "Standard deviation is completely independent of a change of origin (adding or subtracting a constant)."
     },
     {
@@ -149,11 +149,11 @@ export const c11Math13: ChapterContent = {
       "question": "The sum of the deviations of observations from their arithmetic mean is always:",
       "options": [
         "A):   Maximum",
-        "B):   Zero",
+        "B):   Negative",
         "C):   Positive",
-        "D):   Negative"
+        "D):   Zero"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "An algebraic property of arithmetic mean states that ∑(xᵢ − x̄) = 0."
     },
     {
@@ -161,23 +161,23 @@ export const c11Math13: ChapterContent = {
       "question": "Find the mean deviation about the mean for the observations: 3, 5, 7, 9, 11.",
       "options": [
         "A):   2.0",
-        "B):   2.4",
+        "B):   1.6",
         "C):   3.0",
-        "D):   1.6"
+        "D):   2.4"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "Mean x̄ = 35/5 = 7. Deviations |xᵢ − 7|: 4, 2, 0, 2, 4. Sum = 12. MD = 12/5 = 2.4."
     },
     {
       "id": "c11-math-13-mcq-7",
       "question": "The coefficient of variation (CV) is computed using the formula:",
       "options": [
-        "A):   (x̄ / σ) × 100",
-        "B):   (σ / x̄) × 100",
+        "A):   (σ / x̄) × 100",
+        "B):   (x̄ / σ) × 100",
         "C):   (σ² / x̄) × 100",
         "D):   (σ / N) × 100"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "Coefficient of variation is defined as CV = (σ / x̄) × 100."
     },
     {
@@ -220,12 +220,12 @@ export const c11Math13: ChapterContent = {
       "id": "c11-math-13-mcq-11",
       "question": "Find the variance of the observations: 2, 4, 6, 8, 10.",
       "options": [
-        "A):   6",
-        "B):   8",
+        "A):   8",
+        "B):   6",
         "C):   10",
         "D):   4"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "Mean = 30/5 = 6. Deviations (xᵢ − 6): −4, −2, 0, 2, 4. Squares: 16, 4, 0, 4, 16. Sum = 40. Variance = 40/5 = 8."
     },
     {

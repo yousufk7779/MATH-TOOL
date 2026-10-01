@@ -149,304 +149,304 @@ function buildOverview() {
 function buildMCQs() {
   return [
     {
-      id: "c11-math-13-mcq-1",
-      question: "Which of the following is NOT a measure of dispersion?",
-      options: [
-        "A):   Range",
+      "id": "c11-math-13-mcq-1",
+      "question": "Which of the following is NOT a measure of dispersion?",
+      "options": [
+        "A):   Mode",
         "B):   Mean Deviation",
-        "C):   Mode",
+        "C):   Range",
         "D):   Standard Deviation"
       ],
-      correctAnswer: "C",
-      explanation: "Mode is a measure of central tendency, whereas Range, Mean Deviation, and Standard Deviation are measures of dispersion."
+      "correctAnswer": "A",
+      "explanation": "Mode is a measure of central tendency, whereas Range, Mean Deviation, and Standard Deviation are measures of dispersion."
     },
     {
-      id: "c11-math-13-mcq-2",
-      question: "The variance of the first n natural numbers is given by:",
-      options: [
+      "id": "c11-math-13-mcq-2",
+      "question": "The variance of the first n natural numbers is given by:",
+      "options": [
         "A):   (n² − 1) / 6",
-        "B):   (n² − 1) / 12",
+        "B):   (n + 1)² / 12",
         "C):   n(n + 1) / 12",
-        "D):   (n + 1)² / 12"
+        "D):   (n² − 1) / 12"
       ],
-      correctAnswer: "B",
-      explanation: "Variance of first n natural numbers is σ² = (1/n)∑x² − (x̄)² = (n² − 1)/12."
+      "correctAnswer": "D",
+      "explanation": "Variance of first n natural numbers is σ² = (1/n)∑x² − (x̄)² = (n² − 1)/12."
     },
     {
-      id: "c11-math-13-mcq-3",
-      question: "If each observation in a data set is multiplied by 4, then the variance of the resulting observations is multiplied by:",
-      options: [
+      "id": "c11-math-13-mcq-3",
+      "question": "If each observation in a data set is multiplied by 4, then the variance of the resulting observations is multiplied by:",
+      "options": [
         "A):   4",
         "B):   2",
-        "C):   16",
-        "D):   8"
+        "C):   8",
+        "D):   16"
       ],
-      correctAnswer: "C",
-      explanation: "If yᵢ = a xᵢ, then Var(y) = a² Var(x). Here a = 4, so variance is multiplied by 4² = 16."
+      "correctAnswer": "D",
+      "explanation": "If yᵢ = a xᵢ, then Var(y) = a² Var(x). Here a = 4, so variance is multiplied by 4² = 16."
     },
     {
-      id: "c11-math-13-mcq-4",
-      question: "If each observation of a data set is increased by 10, the standard deviation will:",
-      options: [
+      "id": "c11-math-13-mcq-4",
+      "question": "If each observation of a data set is increased by 10, the standard deviation will:",
+      "options": [
         "A):   Increase by 10",
         "B):   Decrease by 10",
-        "C):   Remain unchanged",
-        "D):   Become 10 times"
+        "C):   Become 10 times",
+        "D):   Remain unchanged"
       ],
-      correctAnswer: "C",
-      explanation: "Standard deviation is completely independent of a change of origin (adding or subtracting a constant)."
+      "correctAnswer": "D",
+      "explanation": "Standard deviation is completely independent of a change of origin (adding or subtracting a constant)."
     },
     {
-      id: "c11-math-13-mcq-5",
-      question: "The sum of the deviations of observations from their arithmetic mean is always:",
-      options: [
+      "id": "c11-math-13-mcq-5",
+      "question": "The sum of the deviations of observations from their arithmetic mean is always:",
+      "options": [
         "A):   Maximum",
-        "B):   Zero",
+        "B):   Negative",
         "C):   Positive",
-        "D):   Negative"
+        "D):   Zero"
       ],
-      correctAnswer: "B",
-      explanation: "An algebraic property of arithmetic mean states that ∑(xᵢ − x̄) = 0."
+      "correctAnswer": "D",
+      "explanation": "An algebraic property of arithmetic mean states that ∑(xᵢ − x̄) = 0."
     },
     {
-      id: "c11-math-13-mcq-6",
-      question: "Find the mean deviation about the mean for the observations: 3, 5, 7, 9, 11.",
-      options: [
+      "id": "c11-math-13-mcq-6",
+      "question": "Find the mean deviation about the mean for the observations: 3, 5, 7, 9, 11.",
+      "options": [
         "A):   2.0",
-        "B):   2.4",
+        "B):   1.6",
         "C):   3.0",
-        "D):   1.6"
+        "D):   2.4"
       ],
-      correctAnswer: "B",
-      explanation: "Mean x̄ = 35/5 = 7. Deviations |xᵢ − 7|: 4, 2, 0, 2, 4. Sum = 12. MD = 12/5 = 2.4."
+      "correctAnswer": "D",
+      "explanation": "Mean x̄ = 35/5 = 7. Deviations |xᵢ − 7|: 4, 2, 0, 2, 4. Sum = 12. MD = 12/5 = 2.4."
     },
     {
-      id: "c11-math-13-mcq-7",
-      question: "The coefficient of variation (CV) is computed using the formula:",
-      options: [
-        "A):   (x̄ / σ) × 100",
-        "B):   (σ / x̄) × 100",
+      "id": "c11-math-13-mcq-7",
+      "question": "The coefficient of variation (CV) is computed using the formula:",
+      "options": [
+        "A):   (σ / x̄) × 100",
+        "B):   (x̄ / σ) × 100",
         "C):   (σ² / x̄) × 100",
         "D):   (σ / N) × 100"
       ],
-      correctAnswer: "B",
-      explanation: "Coefficient of variation is defined as CV = (σ / x̄) × 100."
+      "correctAnswer": "A",
+      "explanation": "Coefficient of variation is defined as CV = (σ / x̄) × 100."
     },
     {
-      id: "c11-math-13-mcq-8",
-      question: "Between two series with the same mean, the one having greater standard deviation is said to be:",
-      options: [
+      "id": "c11-math-13-mcq-8",
+      "question": "Between two series with the same mean, the one having greater standard deviation is said to be:",
+      "options": [
         "A):   More consistent",
         "B):   More stable",
         "C):   More variable",
         "D):   More symmetric"
       ],
-      correctAnswer: "C",
-      explanation: "A series with higher standard deviation (and hence higher CV) shows greater variability."
+      "correctAnswer": "C",
+      "explanation": "A series with higher standard deviation (and hence higher CV) shows greater variability."
     },
     {
-      id: "c11-math-13-mcq-9",
-      question: "The variance of 5, 5, 5, 5, 5 is:",
-      options: [
+      "id": "c11-math-13-mcq-9",
+      "question": "The variance of 5, 5, 5, 5, 5 is:",
+      "options": [
         "A):   5",
         "B):   25",
         "C):   0",
         "D):   1"
       ],
-      correctAnswer: "C",
-      explanation: "Since all observations are identical to the mean 5, all deviations are 0, so variance = 0."
+      "correctAnswer": "C",
+      "explanation": "Since all observations are identical to the mean 5, all deviations are 0, so variance = 0."
     },
     {
-      id: "c11-math-13-mcq-10",
-      question: "The mean of the first n natural numbers is:",
-      options: [
+      "id": "c11-math-13-mcq-10",
+      "question": "The mean of the first n natural numbers is:",
+      "options": [
         "A):   (n − 1) / 2",
         "B):   n / 2",
         "C):   (n + 1) / 2",
         "D):   (2n + 1) / 6"
       ],
-      correctAnswer: "C",
-      explanation: "Sum = n(n+1)/2. Mean = [n(n+1)/2] / n = (n+1)/2."
+      "correctAnswer": "C",
+      "explanation": "Sum = n(n+1)/2. Mean = [n(n+1)/2] / n = (n+1)/2."
     },
     {
-      id: "c11-math-13-mcq-11",
-      question: "Find the variance of the observations: 2, 4, 6, 8, 10.",
-      options: [
-        "A):   6",
-        "B):   8",
+      "id": "c11-math-13-mcq-11",
+      "question": "Find the variance of the observations: 2, 4, 6, 8, 10.",
+      "options": [
+        "A):   8",
+        "B):   6",
         "C):   10",
         "D):   4"
       ],
-      correctAnswer: "B",
-      explanation: "Mean = 30/5 = 6. Deviations (xᵢ − 6): −4, −2, 0, 2, 4. Squares: 16, 4, 0, 4, 16. Sum = 40. Variance = 40/5 = 8."
+      "correctAnswer": "A",
+      "explanation": "Mean = 30/5 = 6. Deviations (xᵢ − 6): −4, −2, 0, 2, 4. Squares: 16, 4, 0, 4, 16. Sum = 40. Variance = 40/5 = 8."
     },
     {
-      id: "c11-math-13-mcq-12",
-      question: "The sum of absolute deviations of observations is minimum when taken from the:",
-      options: [
+      "id": "c11-math-13-mcq-12",
+      "question": "The sum of absolute deviations of observations is minimum when taken from the:",
+      "options": [
         "A):   Mean",
         "B):   Median",
         "C):   Mode",
         "D):   Geometric Mean"
       ],
-      correctAnswer: "B",
-      explanation: "A well-known mathematical theorem states that ∑|xᵢ − A| is minimized when A is the Median."
+      "correctAnswer": "B",
+      "explanation": "A well-known mathematical theorem states that ∑|xᵢ − A| is minimized when A is the Median."
     },
     {
-      id: "c11-math-13-mcq-13",
-      question: "If standard deviation of a dataset is 5, what is the variance?",
-      options: [
+      "id": "c11-math-13-mcq-13",
+      "question": "If standard deviation of a dataset is 5, what is the variance?",
+      "options": [
         "A):   √5",
         "B):   10",
         "C):   25",
         "D):   125"
       ],
-      correctAnswer: "C",
-      explanation: "Variance = σ² = 5² = 25."
+      "correctAnswer": "C",
+      "explanation": "Variance = σ² = 5² = 25."
     },
     {
-      id: "c11-math-13-mcq-14",
-      question: "For a distribution, Mean = 50 and Standard Deviation = 10. The coefficient of variation is:",
-      options: [
+      "id": "c11-math-13-mcq-14",
+      "question": "For a distribution, Mean = 50 and Standard Deviation = 10. The coefficient of variation is:",
+      "options": [
         "A):   5%",
         "B):   10%",
         "C):   20%",
         "D):   50%"
       ],
-      correctAnswer: "C",
-      explanation: "CV = (σ / x̄) × 100 = (10 / 50) × 100 = 20%."
+      "correctAnswer": "C",
+      "explanation": "CV = (σ / x̄) × 100 = (10 / 50) × 100 = 20%."
     },
     {
-      id: "c11-math-13-mcq-15",
-      question: "If yᵢ = 2xᵢ + 3 and standard deviation of x is 4, then standard deviation of y is:",
-      options: [
+      "id": "c11-math-13-mcq-15",
+      "question": "If yᵢ = 2xᵢ + 3 and standard deviation of x is 4, then standard deviation of y is:",
+      "options": [
         "A):   11",
         "B):   8",
         "C):   16",
         "D):   7"
       ],
-      correctAnswer: "B",
-      explanation: "σ_y = |a| σ_x = |2| × 4 = 8 (the constant +3 does not affect SD)."
+      "correctAnswer": "B",
+      "explanation": "σ_y = |a| σ_x = |2| × 4 = 8 (the constant +3 does not affect SD)."
     },
     {
-      id: "c11-math-13-mcq-16",
-      question: "The mean deviation about median for observations 6, 7, 10, 12, 13, 4, 8, 12 is:",
-      options: [
+      "id": "c11-math-13-mcq-16",
+      "question": "The mean deviation about median for observations 6, 7, 10, 12, 13, 4, 8, 12 is:",
+      "options": [
         "A):   3.25",
         "B):   2.75",
         "C):   3.50",
         "D):   3.00"
       ],
-      correctAnswer: "B",
-      explanation: "Ordered: 4, 6, 7, 8, 10, 12, 12, 13 (n=8). Median = (8+10)/2 = 9. Absolute deviations from 9: 5, 3, 2, 1, 1, 3, 3, 4. Sum = 22. MD = 22/8 = 2.75."
+      "correctAnswer": "B",
+      "explanation": "Ordered: 4, 6, 7, 8, 10, 12, 12, 13 (n=8). Median = (8+10)/2 = 9. Absolute deviations from 9: 5, 3, 2, 1, 1, 3, 3, 4. Sum = 22. MD = 22/8 = 2.75."
     },
     {
-      id: "c11-math-13-mcq-17",
-      question: "If the variance of 10 observations is 16, what is the standard deviation?",
-      options: [
+      "id": "c11-math-13-mcq-17",
+      "question": "If the variance of 10 observations is 16, what is the standard deviation?",
+      "options": [
         "A):   4",
         "B):   256",
         "C):   8",
         "D):   1.6"
       ],
-      correctAnswer: "A",
-      explanation: "Standard deviation is the positive square root of variance: σ = √16 = 4."
+      "correctAnswer": "A",
+      "explanation": "Standard deviation is the positive square root of variance: σ = √16 = 4."
     },
     {
-      id: "c11-math-13-mcq-18",
-      question: "In short-cut method with step-deviation yᵢ = (xᵢ − A)/h, the variance formula is:",
-      options: [
+      "id": "c11-math-13-mcq-18",
+      "question": "In short-cut method with step-deviation yᵢ = (xᵢ − A)/h, the variance formula is:",
+      "options": [
         "A):   (h/N) [N∑fᵢyᵢ² − (∑fᵢyᵢ)²]",
         "B):   (h²/N²) [N∑fᵢyᵢ² − (∑fᵢyᵢ)²]",
         "C):   (h²/N) [∑fᵢyᵢ² − (∑fᵢyᵢ)²]",
         "D):   h² [∑fᵢyᵢ² − (∑fᵢyᵢ)²]"
       ],
-      correctAnswer: "B",
-      explanation: "The short-cut variance formula is σ² = (h² / N²) [N∑fᵢyᵢ² − (∑fᵢyᵢ)²]."
+      "correctAnswer": "B",
+      "explanation": "The short-cut variance formula is σ² = (h² / N²) [N∑fᵢyᵢ² − (∑fᵢyᵢ)²]."
     },
     {
-      id: "c11-math-13-mcq-19",
-      question: "The mean and variance of 7 observations are 8 and 16. If 5 observations are 2, 4, 10, 12, 14, the remaining two observations are:",
-      options: [
+      "id": "c11-math-13-mcq-19",
+      "question": "The mean and variance of 7 observations are 8 and 16. If 5 observations are 2, 4, 10, 12, 14, the remaining two observations are:",
+      "options": [
         "A):   5 and 9",
         "B):   4 and 10",
         "C):   6 and 8",
         "D):   7 and 7"
       ],
-      correctAnswer: "C",
-      explanation: "x + y = 56 − 42 = 14 and x² + y² = 100. Solving gives x = 6, y = 8."
+      "correctAnswer": "C",
+      "explanation": "x + y = 56 − 42 = 14 and x² + y² = 100. Solving gives x = 6, y = 8."
     },
     {
-      id: "c11-math-13-mcq-20",
-      question: "The mean and variance of 8 observations are 9 and 9.25. If 6 observations are 6, 7, 10, 12, 12, 13, the other two observations are:",
-      options: [
+      "id": "c11-math-13-mcq-20",
+      "question": "The mean and variance of 8 observations are 9 and 9.25. If 6 observations are 6, 7, 10, 12, 12, 13, the other two observations are:",
+      "options": [
         "A):   4 and 8",
         "B):   3 and 9",
         "C):   5 and 7",
         "D):   2 and 10"
       ],
-      correctAnswer: "A",
-      explanation: "x + y = 72 − 60 = 12 and x² + y² = 80. Solving gives x = 4, y = 8."
+      "correctAnswer": "A",
+      "explanation": "x + y = 72 − 60 = 12 and x² + y² = 80. Solving gives x = 4, y = 8."
     },
     {
-      id: "c11-math-13-mcq-21",
-      question: "If Mean of Group A is 42 with σ = 12, and Mean of Group B is 32 with σ = 15, then:",
-      options: [
+      "id": "c11-math-13-mcq-21",
+      "question": "If Mean of Group A is 42 with σ = 12, and Mean of Group B is 32 with σ = 15, then:",
+      "options": [
         "A):   Group A is more variable",
         "B):   Group B is more variable",
         "C):   Both are equally variable",
         "D):   Cannot be compared"
       ],
-      correctAnswer: "B",
-      explanation: "CV_A = (12/42) × 100 = 28.57%, while CV_B = (15/32) × 100 = 46.88%. Since CV_B > CV_A, Group B is more variable."
+      "correctAnswer": "B",
+      "explanation": "CV_A = (12/42) × 100 = 28.57%, while CV_B = (15/32) × 100 = 46.88%. Since CV_B > CV_A, Group B is more variable."
     },
     {
-      id: "c11-math-13-mcq-22",
-      question: "For n observations, if ∑(xᵢ − 5) = 10 and ∑(xᵢ − 5)² = 40 with n = 10, the variance is:",
-      options: [
+      "id": "c11-math-13-mcq-22",
+      "question": "For n observations, if ∑(xᵢ − 5) = 10 and ∑(xᵢ − 5)² = 40 with n = 10, the variance is:",
+      "options": [
         "A):   3",
         "B):   4",
         "C):   5",
         "D):   2"
       ],
-      correctAnswer: "A",
-      explanation: "Let dᵢ = xᵢ − 5. Var(x) = Var(d) = (1/n)∑dᵢ² − (d̄)² = (40/10) − (10/10)² = 4 − 1 = 3."
+      "correctAnswer": "A",
+      "explanation": "Let dᵢ = xᵢ − 5. Var(x) = Var(d) = (1/n)∑dᵢ² − (d̄)² = (40/10) − (10/10)² = 4 − 1 = 3."
     },
     {
-      id: "c11-math-13-mcq-23",
-      question: "If the mean of 20 observations is 10 and an incorrect observation 8 is replaced by 12, the new correct mean is:",
-      options: [
+      "id": "c11-math-13-mcq-23",
+      "question": "If the mean of 20 observations is 10 and an incorrect observation 8 is replaced by 12, the new correct mean is:",
+      "options": [
         "A):   10.4",
         "B):   10.2",
         "C):   10.1",
         "D):   10.0"
       ],
-      correctAnswer: "B",
-      explanation: "Correct sum = (20 × 10) − 8 + 12 = 204. Correct Mean = 204 / 20 = 10.2."
+      "correctAnswer": "B",
+      "explanation": "Correct sum = (20 × 10) − 8 + 12 = 204. Correct Mean = 204 / 20 = 10.2."
     },
     {
-      id: "c11-math-13-mcq-24",
-      question: "Which measure of dispersion is most suitable when comparing datasets with different units or vastly different means?",
-      options: [
+      "id": "c11-math-13-mcq-24",
+      "question": "Which measure of dispersion is most suitable when comparing datasets with different units or vastly different means?",
+      "options": [
         "A):   Mean Deviation",
         "B):   Variance",
         "C):   Standard Deviation",
         "D):   Coefficient of Variation"
       ],
-      correctAnswer: "D",
-      explanation: "Coefficient of variation is a unitless, percentage ratio (σ/x̄ × 100) designed specifically to compare datasets of different units or magnitudes."
+      "correctAnswer": "D",
+      "explanation": "Coefficient of variation is a unitless, percentage ratio (σ/x̄ × 100) designed specifically to compare datasets of different units or magnitudes."
     },
     {
-      id: "c11-math-13-mcq-25",
-      question: "The variance of the first 10 multiples of 3 is:",
-      options: [
+      "id": "c11-math-13-mcq-25",
+      "question": "The variance of the first 10 multiples of 3 is:",
+      "options": [
         "A):   64.25",
         "B):   74.25",
         "C):   84.25",
         "D):   54.25"
       ],
-      correctAnswer: "B",
-      explanation: "3, 6, ..., 30. x̄ = 16.5. σ² = (1/10)∑(xᵢ − 16.5)² = 742.5 / 10 = 74.25."
+      "correctAnswer": "B",
+      "explanation": "3, 6, ..., 30. x̄ = 16.5. σ² = (1/10)∑(xᵢ − 16.5)² = 742.5 / 10 = 74.25."
     }
   ];
 }

@@ -151,304 +151,304 @@ function buildOverview() {
 function buildMCQs() {
   return [
     {
-      id: "c11-math-14-mcq-1",
-      question: "When 3 fair coins are tossed simultaneously, the total number of sample points in the sample space is:",
-      options: [
+      "id": "c11-math-14-mcq-1",
+      "question": "When 3 fair coins are tossed simultaneously, the total number of sample points in the sample space is:",
+      "options": [
         "A):   6",
-        "B):   8",
+        "B):   16",
         "C):   9",
-        "D):   16"
+        "D):   8"
       ],
-      correctAnswer: "B",
-      explanation: "Each coin has 2 outcomes. For 3 coins, n(S) = 2³ = 8."
+      "correctAnswer": "D",
+      "explanation": "Each coin has 2 outcomes. For 3 coins, n(S) = 2³ = 8."
     },
     {
-      id: "c11-math-14-mcq-2",
-      question: "If two events A and B are mutually exclusive, then P(A ∩ B) equals:",
-      options: [
+      "id": "c11-math-14-mcq-2",
+      "question": "If two events A and B are mutually exclusive, then P(A ∩ B) equals:",
+      "options": [
         "A):   1",
         "B):   P(A) × P(B)",
-        "C):   0",
-        "D):   P(A) + P(B)"
+        "C):   P(A) + P(B)",
+        "D):   0"
       ],
-      correctAnswer: "C",
-      explanation: "Mutually exclusive events cannot occur simultaneously, meaning A ∩ B = ∅, hence P(A ∩ B) = 0."
+      "correctAnswer": "D",
+      "explanation": "Mutually exclusive events cannot occur simultaneously, meaning A ∩ B = ∅, hence P(A ∩ B) = 0."
     },
     {
-      id: "c11-math-14-mcq-3",
-      question: "If P(A) = 3/5, then the probability of the complement event P(not A) is:",
-      options: [
+      "id": "c11-math-14-mcq-3",
+      "question": "If P(A) = 3/5, then the probability of the complement event P(not A) is:",
+      "options": [
         "A):   2/5",
         "B):   3/5",
         "C):   1/5",
         "D):   5/3"
       ],
-      correctAnswer: "A",
-      explanation: "P(not A) = 1 − P(A) = 1 − 3/5 = 2/5."
+      "correctAnswer": "A",
+      "explanation": "P(not A) = 1 − P(A) = 1 − 3/5 = 2/5."
     },
     {
-      id: "c11-math-14-mcq-4",
-      question: "An event containing exactly one sample point of the sample space is called a:",
-      options: [
+      "id": "c11-math-14-mcq-4",
+      "question": "An event containing exactly one sample point of the sample space is called a:",
+      "options": [
         "A):   Sure event",
         "B):   Compound event",
         "C):   Simple (elementary) event",
         "D):   Impossible event"
       ],
-      correctAnswer: "C",
-      explanation: "An event with a single sample point is called a simple or elementary event."
+      "correctAnswer": "C",
+      "explanation": "An event with a single sample point is called a simple or elementary event."
     },
     {
-      id: "c11-math-14-mcq-5",
-      question: "When a pair of fair dice is rolled, what is the total number of outcomes in the sample space?",
-      options: [
+      "id": "c11-math-14-mcq-5",
+      "question": "When a pair of fair dice is rolled, what is the total number of outcomes in the sample space?",
+      "options": [
         "A):   12",
         "B):   18",
         "C):   36",
         "D):   24"
       ],
-      correctAnswer: "C",
-      explanation: "For two dice, total outcomes = 6 × 6 = 36."
+      "correctAnswer": "C",
+      "explanation": "For two dice, total outcomes = 6 × 6 = 36."
     },
     {
-      id: "c11-math-14-mcq-6",
-      question: "In tossing two coins, what is the probability of getting at least one head?",
-      options: [
+      "id": "c11-math-14-mcq-6",
+      "question": "In tossing two coins, what is the probability of getting at least one head?",
+      "options": [
         "A):   1/4",
         "B):   1/2",
         "C):   3/4",
         "D):   1"
       ],
-      correctAnswer: "C",
-      explanation: "S = {HH, HT, TH, TT}. Favourable: {HH, HT, TH} (3 outcomes). P = 3/4."
+      "correctAnswer": "C",
+      "explanation": "S = {HH, HT, TH, TT}. Favourable: {HH, HT, TH} (3 outcomes). P = 3/4."
     },
     {
-      id: "c11-math-14-mcq-7",
-      question: "If P(A) = 0.5, P(B) = 0.4 and P(A ∩ B) = 0.2, then P(A ∪ B) is:",
-      options: [
+      "id": "c11-math-14-mcq-7",
+      "question": "If P(A) = 0.5, P(B) = 0.4 and P(A ∩ B) = 0.2, then P(A ∪ B) is:",
+      "options": [
         "A):   0.9",
-        "B):   0.7",
+        "B):   0.6",
         "C):   0.8",
-        "D):   0.6"
+        "D):   0.7"
       ],
-      correctAnswer: "B",
-      explanation: "P(A ∪ B) = P(A) + P(B) − P(A ∩ B) = 0.5 + 0.4 − 0.2 = 0.7."
+      "correctAnswer": "D",
+      "explanation": "P(A ∪ B) = P(A) + P(B) − P(A ∩ B) = 0.5 + 0.4 − 0.2 = 0.7."
     },
     {
-      id: "c11-math-14-mcq-8",
-      question: "A card is drawn from a well-shuffled pack of 52 cards. The probability that it is an ace is:",
-      options: [
+      "id": "c11-math-14-mcq-8",
+      "question": "A card is drawn from a well-shuffled pack of 52 cards. The probability that it is an ace is:",
+      "options": [
         "A):   1/13",
         "B):   1/52",
         "C):   1/4",
         "D):   4/13"
       ],
-      correctAnswer: "A",
-      explanation: "There are 4 aces in 52 cards. P = 4/52 = 1/13."
+      "correctAnswer": "A",
+      "explanation": "There are 4 aces in 52 cards. P = 4/52 = 1/13."
     },
     {
-      id: "c11-math-14-mcq-9",
-      question: "Which of the following can never be the probability of an event?",
-      options: [
+      "id": "c11-math-14-mcq-9",
+      "question": "Which of the following can never be the probability of an event?",
+      "options": [
         "A):   0.001",
-        "B):   −0.5",
+        "B):   2/3",
         "C):   15%",
+        "D):   −0.5"
+      ],
+      "correctAnswer": "D",
+      "explanation": "By the non-negativity axiom, probability must satisfy 0 ≤ P(E) ≤ 1. Negative probability is impossible."
+    },
+    {
+      "id": "c11-math-14-mcq-10",
+      "question": "If E₁ and E₂ are exhaustive events, then:",
+      "options": [
+        "A):   E₁ ∩ E₂ = ∅",
+        "B):   P(E₁ ∪ E₂) = 0",
+        "C):   P(E₁) = P(E₂)",
+        "D):   E₁ ∪ E₂ = S"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Exhaustive events cover the entire sample space: E₁ ∪ E₂ = S."
+    },
+    {
+      "id": "c11-math-14-mcq-11",
+      "question": "In a single throw of a die, what is the probability of getting a number greater than or equal to 3?",
+      "options": [
+        "A):   1/2",
+        "B):   5/6",
+        "C):   1/3",
         "D):   2/3"
       ],
-      correctAnswer: "B",
-      explanation: "By the non-negativity axiom, probability must satisfy 0 ≤ P(E) ≤ 1. Negative probability is impossible."
+      "correctAnswer": "D",
+      "explanation": "Favourable outcomes are {3, 4, 5, 6} (4 outcomes). P = 4/6 = 2/3."
     },
     {
-      id: "c11-math-14-mcq-10",
-      question: "If E₁ and E₂ are exhaustive events, then:",
-      options: [
-        "A):   E₁ ∩ E₂ = ∅",
-        "B):   E₁ ∪ E₂ = S",
-        "C):   P(E₁) = P(E₂)",
-        "D):   P(E₁ ∪ E₂) = 0"
-      ],
-      correctAnswer: "B",
-      explanation: "Exhaustive events cover the entire sample space: E₁ ∪ E₂ = S."
-    },
-    {
-      id: "c11-math-14-mcq-11",
-      question: "In a single throw of a die, what is the probability of getting a number greater than or equal to 3?",
-      options: [
-        "A):   1/2",
-        "B):   2/3",
-        "C):   1/3",
-        "D):   5/6"
-      ],
-      correctAnswer: "B",
-      explanation: "Favourable outcomes are {3, 4, 5, 6} (4 outcomes). P = 4/6 = 2/3."
-    },
-    {
-      id: "c11-math-14-mcq-12",
-      question: "A letter is chosen at random from the word 'ASSASSINATION'. What is the probability that it is a vowel?",
-      options: [
-        "A):   7/13",
-        "B):   6/13",
+      "id": "c11-math-14-mcq-12",
+      "question": "A letter is chosen at random from the word 'ASSASSINATION'. What is the probability that it is a vowel?",
+      "options": [
+        "A):   6/13",
+        "B):   7/13",
         "C):   5/13",
         "D):   1/2"
       ],
-      correctAnswer: "B",
-      explanation: "Total 13 letters. Vowels are A, A, A, I, I, O (6 vowels). P = 6/13."
+      "correctAnswer": "A",
+      "explanation": "Total 13 letters. Vowels are A, A, A, I, I, O (6 vowels). P = 6/13."
     },
     {
-      id: "c11-math-14-mcq-13",
-      question: "If P(A ∪ B) = 0.88 and P(A ∩ B) = 0.35 with P(A) = 0.54, then P(B) is:",
-      options: [
+      "id": "c11-math-14-mcq-13",
+      "question": "If P(A ∪ B) = 0.88 and P(A ∩ B) = 0.35 with P(A) = 0.54, then P(B) is:",
+      "options": [
         "A):   0.69",
         "B):   0.45",
         "C):   0.59",
         "D):   0.72"
       ],
-      correctAnswer: "A",
-      explanation: "P(B) = P(A ∪ B) + P(A ∩ B) − P(A) = 0.88 + 0.35 − 0.54 = 0.69."
+      "correctAnswer": "A",
+      "explanation": "P(B) = P(A ∪ B) + P(A ∩ B) − P(A) = 0.88 + 0.35 − 0.54 = 0.69."
     },
     {
-      id: "c11-math-14-mcq-14",
-      question: "By De Morgan's Law, the probability P(A′ ∩ B′) of neither A nor B occurring is equal to:",
-      options: [
+      "id": "c11-math-14-mcq-14",
+      "question": "By De Morgan's Law, the probability P(A′ ∩ B′) of neither A nor B occurring is equal to:",
+      "options": [
         "A):   1 − P(A ∩ B)",
         "B):   1 − P(A ∪ B)",
         "C):   P(A′) × P(B′)",
         "D):   P(A) − P(B)"
       ],
-      correctAnswer: "B",
-      explanation: "A′ ∩ B′ = (A ∪ B)′. Therefore, P(A′ ∩ B′) = 1 − P(A ∪ B)."
+      "correctAnswer": "B",
+      "explanation": "A′ ∩ B′ = (A ∪ B)′. Therefore, P(A′ ∩ B′) = 1 − P(A ∪ B)."
     },
     {
-      id: "c11-math-14-mcq-15",
-      question: "If P(E) = 1/4, P(F) = 1/2 and P(E ∩ F) = 1/8, then P(E or F) is:",
-      options: [
+      "id": "c11-math-14-mcq-15",
+      "question": "If P(E) = 1/4, P(F) = 1/2 and P(E ∩ F) = 1/8, then P(E or F) is:",
+      "options": [
         "A):   3/8",
         "B):   5/8",
         "C):   7/8",
         "D):   1/2"
       ],
-      correctAnswer: "B",
-      explanation: "P(E ∪ F) = 1/4 + 1/2 − 1/8 = (2 + 4 − 1)/8 = 5/8."
+      "correctAnswer": "B",
+      "explanation": "P(E ∪ F) = 1/4 + 1/2 − 1/8 = (2 + 4 − 1)/8 = 5/8."
     },
     {
-      id: "c11-math-14-mcq-16",
-      question: "A fair die with faces {1, 1, 2, 2, 2, 3} is rolled. What is the probability of getting the number 2?",
-      options: [
+      "id": "c11-math-14-mcq-16",
+      "question": "A fair die with faces {1, 1, 2, 2, 2, 3} is rolled. What is the probability of getting the number 2?",
+      "options": [
         "A):   1/3",
         "B):   1/6",
         "C):   1/2",
         "D):   2/3"
       ],
-      correctAnswer: "C",
-      explanation: "Number '2' appears on 3 faces out of 6. P = 3/6 = 1/2."
+      "correctAnswer": "C",
+      "explanation": "Number '2' appears on 3 faces out of 6. P = 3/6 = 1/2."
     },
     {
-      id: "c11-math-14-mcq-17",
-      question: "If P(A) = 0.5, P(B) = 0.7, and P(A ∩ B) = 0.6, these probabilities are:",
-      options: [
+      "id": "c11-math-14-mcq-17",
+      "question": "If P(A) = 0.5, P(B) = 0.7, and P(A ∩ B) = 0.6, these probabilities are:",
+      "options": [
         "A):   Consistently defined",
         "B):   Inconsistently defined because P(A ∩ B) > P(A)",
         "C):   Equally likely",
         "D):   Exhaustive"
       ],
-      correctAnswer: "B",
-      explanation: "A ∩ B is a subset of A, so P(A ∩ B) can never exceed P(A). Since 0.6 > 0.5, the assignment is inconsistent."
+      "correctAnswer": "B",
+      "explanation": "A ∩ B is a subset of A, so P(A ∩ B) can never exceed P(A). Since 0.6 > 0.5, the assignment is inconsistent."
     },
     {
-      id: "c11-math-14-mcq-18",
-      question: "Three letters are put into three envelopes at random. What is the probability that at least one letter is in its proper envelope?",
-      options: [
+      "id": "c11-math-14-mcq-18",
+      "question": "Three letters are put into three envelopes at random. What is the probability that at least one letter is in its proper envelope?",
+      "options": [
         "A):   1/3",
         "B):   1/2",
         "C):   2/3",
         "D):   5/6"
       ],
-      correctAnswer: "C",
-      explanation: "Total permutations = 3! = 6. Derangements (0 correct) = 2. Favourable (at least 1 correct) = 6 − 2 = 4. P = 4/6 = 2/3."
+      "correctAnswer": "C",
+      "explanation": "Total permutations = 3! = 6. Derangements (0 correct) = 2. Favourable (at least 1 correct) = 6 − 2 = 4. P = 4/6 = 2/3."
     },
     {
-      id: "c11-math-14-mcq-19",
-      question: "In a class of 60 students, 30 opted for NCC, 32 for NSS, and 24 for both. What is the probability that a randomly chosen student opted for neither?",
-      options: [
+      "id": "c11-math-14-mcq-19",
+      "question": "In a class of 60 students, 30 opted for NCC, 32 for NSS, and 24 for both. What is the probability that a randomly chosen student opted for neither?",
+      "options": [
         "A):   19/30",
         "B):   11/30",
         "C):   1/5",
         "D):   2/15"
       ],
-      correctAnswer: "B",
-      explanation: "n(A ∪ B) = 30 + 32 − 24 = 38. Neither = 60 − 38 = 22. P = 22/60 = 11/30."
+      "correctAnswer": "B",
+      "explanation": "n(A ∪ B) = 30 + 32 − 24 = 38. Neither = 60 − 38 = 22. P = 22/60 = 11/30."
     },
     {
-      id: "c11-math-14-mcq-20",
-      question: "A box has 10 red, 20 blue, and 30 green marbles (total 60). What is the probability that 5 drawn marbles are all blue?",
-      options: [
+      "id": "c11-math-14-mcq-20",
+      "question": "A box has 10 red, 20 blue, and 30 green marbles (total 60). What is the probability that 5 drawn marbles are all blue?",
+      "options": [
         "A):   ²⁰C₅ / ⁶⁰C₅",
         "B):   ³⁰C₅ / ⁶⁰C₅",
         "C):   ¹⁰C₅ / ⁶⁰C₅",
         "D):   5 / 60"
       ],
-      correctAnswer: "A",
-      explanation: "Drawing 5 blue from 20 blue out of 60 total gives ²⁰C₅ / ⁶⁰C₅."
+      "correctAnswer": "A",
+      "explanation": "Drawing 5 blue from 20 blue out of 60 total gives ²⁰C₅ / ⁶⁰C₅."
     },
     {
-      id: "c11-math-14-mcq-21",
-      question: "In an entrance test, P(Pass 1st) = 0.8, P(Pass 2nd) = 0.7, and P(Pass at least one) = 0.95. The probability of passing both is:",
-      options: [
+      "id": "c11-math-14-mcq-21",
+      "question": "In an entrance test, P(Pass 1st) = 0.8, P(Pass 2nd) = 0.7, and P(Pass at least one) = 0.95. The probability of passing both is:",
+      "options": [
         "A):   0.50",
         "B):   0.55",
         "C):   0.60",
         "D):   0.65"
       ],
-      correctAnswer: "B",
-      explanation: "P(A ∩ B) = P(A) + P(B) − P(A ∪ B) = 0.8 + 0.7 − 0.95 = 0.55."
+      "correctAnswer": "B",
+      "explanation": "P(A ∩ B) = P(A) + P(B) − P(A ∪ B) = 0.8 + 0.7 − 0.95 = 0.55."
     },
     {
-      id: "c11-math-14-mcq-22",
-      question: "A 4-digit number lock on a suitcase opens with a code of 4 distinct digits from 0 to 9. The probability of getting the right sequence on first attempt is:",
-      options: [
+      "id": "c11-math-14-mcq-22",
+      "question": "A 4-digit number lock on a suitcase opens with a code of 4 distinct digits from 0 to 9. The probability of getting the right sequence on first attempt is:",
+      "options": [
         "A):   1 / 10000",
         "B):   1 / 5040",
         "C):   1 / 720",
         "D):   1 / 210"
       ],
-      correctAnswer: "B",
-      explanation: "Total permutations = ¹⁰P₄ = 10 × 9 × 8 × 7 = 5040. Probability = 1/5040."
+      "correctAnswer": "B",
+      "explanation": "Total permutations = ¹⁰P₄ = 10 × 9 × 8 × 7 = 5040. Probability = 1/5040."
     },
     {
-      id: "c11-math-14-mcq-23",
-      question: "Out of 100 students, two sections of 40 and 60 are formed. What is the probability that two friends enter the same section?",
-      options: [
+      "id": "c11-math-14-mcq-23",
+      "question": "Out of 100 students, two sections of 40 and 60 are formed. What is the probability that two friends enter the same section?",
+      "options": [
         "A):   16/33",
         "B):   17/33",
         "C):   1/2",
         "D):   2/5"
       ],
-      correctAnswer: "B",
-      explanation: "(⁴⁰C₂ + ⁶⁰C₂) / ¹⁰⁰C₂ = (780 + 1770) / 4950 = 2550 / 4950 = 17/33."
+      "correctAnswer": "B",
+      "explanation": "(⁴⁰C₂ + ⁶⁰C₂) / ¹⁰⁰C₂ = (780 + 1770) / 4950 = 2550 / 4950 = 17/33."
     },
     {
-      id: "c11-math-14-mcq-24",
-      question: "If P(not E or not F) = 0.25, what can be concluded about events E and F?",
-      options: [
+      "id": "c11-math-14-mcq-24",
+      "question": "If P(not E or not F) = 0.25, what can be concluded about events E and F?",
+      "options": [
         "A):   They are mutually exclusive",
         "B):   They are exhaustive",
         "C):   They are not mutually exclusive since P(E ∩ F) = 0.75 ≠ 0",
         "D):   P(E ∪ F) = 0.25"
       ],
-      correctAnswer: "C",
-      explanation: "P(E′ ∪ F′) = 1 − P(E ∩ F) = 0.25 ⇒ P(E ∩ F) = 0.75 ≠ 0, hence they are NOT mutually exclusive."
+      "correctAnswer": "C",
+      "explanation": "P(E′ ∪ F′) = 1 − P(E ∩ F) = 0.25 ⇒ P(E ∩ F) = 0.75 ≠ 0, hence they are NOT mutually exclusive."
     },
     {
-      id: "c11-math-14-mcq-25",
-      question: "In a lottery where 6 numbers are chosen from 1 to 20, the probability of matching all 6 numbers fixed by the committee is:",
-      options: [
+      "id": "c11-math-14-mcq-25",
+      "question": "In a lottery where 6 numbers are chosen from 1 to 20, the probability of matching all 6 numbers fixed by the committee is:",
+      "options": [
         "A):   1 / 38760",
         "B):   1 / 20000",
         "C):   1 / 116280",
         "D):   6 / 20"
       ],
-      correctAnswer: "A",
-      explanation: "Total combinations = ²⁰C₆ = (20 × 19 × 18 × 17 × 16 × 15) / 720 = 38760. Probability = 1/38760."
+      "correctAnswer": "A",
+      "explanation": "Total combinations = ²⁰C₆ = (20 × 19 × 18 × 17 × 16 × 15) / 720 = 38760. Probability = 1/38760."
     }
   ];
 }
