@@ -47,7 +47,7 @@ function Class11BiologyScreen() {
               testID="button-zoology"
               title="ZOOLOGY"
               icon="🦁"
-              colors={["#00b09b", "#96c93d"]}
+              colors={["#00C6FF", "#0072FF"]}
               onPress={() =>
                 navigation.navigate("ChapterList", {
                   subject: "Class 11 Science",
