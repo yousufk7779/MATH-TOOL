@@ -233,6 +233,26 @@ Full authoritative rules, JKBOSE 6 units & CBSE mapping (13 chapters), specializ
 9. **Tab 3 Interactive MCQs (25 Tiered Questions)**: Q1-Q10 Easy recall, Q11-Q18 Moderate, Q19-Q25 Advance with instant Green/Red feedback and gamified dashboard.
 10. **Resume Trigger**: When user says "class 12 math chapter X karo" or "class 12 maths continue karo", immediately apply this blueprint.
 
+---
+
+## Class 11 Mathematics Master Blueprint & Gold Standards
+
+Full authoritative rules, CBSE & JKBOSE 5 units mapping (14 chapters), specialized sets/combinatorics/conics/calculus formatting, and UI standards are permanently recorded in:
+👉 `.agents/CLASS_11_MATH_BLUEPRINT.md`
+
+### Core Class 11 Math Directives:
+1. **100% Web View Architecture (`isHtmlView: true`)**: All 14 chapters built using rich HTML/CSS Web View for dark-mode cards and custom math typography.
+2. **Zero Content Omission Guarantee**: Every single question, sub-part `(i), (ii), (iii)...`, and miscellaneous exercise from the NCERT / BYJU'S textbook included verbatim with complete problem statements.
+3. **Student-Friendly & Direct Mathematical Solutions (NO Bulky Step Headers)**: Eliminate verbose "Step 1:", "Step 2:" paragraph titles. Write clean line-by-line algebraic steps using `&rArr;` with concise reasons in brackets (e.g. `[Subtracting 5 from both sides]`, `[Using identity: sin(A + B)]`, `[By Fundamental Principle of Multiplication]`).
+4. **Strict Stacked Fractions ("a over b" Format, Never "a/b")**: Raw `a/b` slashes strictly forbidden in solutions. All fractions vertically stacked (`<span class="frac"><span class="num">numerator</span><span class="den">denominator</span></span>`) with `.sol-step { line-height: 2.35; }`.
+5. **Sets, Combinatorics, Conics & 3D Typography**: Custom semantic HTML for sets (`&isin;`, `&empty;`, `&cup;`, `&cap;`), permutations (`<sup>n</sup>P<sub>r</sub>`), combinations (`<sup>n</sup>C<sub>r</sub>`), binomial terms (`T<sub>r+1</sub>`), and 3D coordinate distances.
+6. **Theme Color & Question Hierarchy**: Question headers (`Question 1`) in `themeColor`, statement in pure `#FFFFFF`, sub-parts in `themeColor`, solution card with `themeColor` left border, and final answer in a crisp `#4CAF50` green box.
+7. **Dedicated Sub-Tab For Each Exercise**: Every exercise rendered in its own dedicated sub-tab via `chapterData.exercises` and `chapterData.htmlExercises`. Prepend full `<style>...</style>` block to every sub-tab string.
+8. **Tab 1 Overview Master Cheat Sheet**: End-of-overview full formula summary (De Morgan's laws, trig sum/product identities, conic parameters table, derivative rules).
+9. **Tab 3 Interactive MCQs (25 Tiered Questions)**: Q1-Q10 Easy recall, Q11-Q18 Moderate, Q19-Q25 Advance with instant Green/Red feedback and gamified dashboard.
+10. **Resume Trigger**: When user says "class 11 math chapter X karo" or "class 11 maths continue karo", immediately apply this blueprint.
+
+
 
 
 

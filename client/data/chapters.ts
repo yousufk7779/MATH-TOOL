@@ -266,6 +266,22 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
       { id: "c11-zoo-3", number: 3, name: "Cell Structure and Function", color: "#FF007F" },
       { id: "c11-zoo-4", number: 4, name: "Human Physiology", color: "#00B0FF" },
     ],
+    Mathematics: [
+      { id: "c11-math-1", number: 1, name: "Sets", color: "#FF512F" },
+      { id: "c11-math-2", number: 2, name: "Relations and Functions", color: "#00C6FF" },
+      { id: "c11-math-3", number: 3, name: "Trigonometric Functions", color: "#7C4DFF" },
+      { id: "c11-math-4", number: 4, name: "Complex Numbers and Quadratic Equations", color: "#FF9100" },
+      { id: "c11-math-5", number: 5, name: "Linear Inequalities", color: "#00E676" },
+      { id: "c11-math-6", number: 6, name: "Permutations and Combinations", color: "#FF007F" },
+      { id: "c11-math-7", number: 7, name: "Binomial Theorem", color: "#2979FF" },
+      { id: "c11-math-8", number: 8, name: "Sequences and Series", color: "#FDC830" },
+      { id: "c11-math-9", number: 9, name: "Straight Lines", color: "#E040FB" },
+      { id: "c11-math-10", number: 10, name: "Conic Sections", color: "#00E5FF" },
+      { id: "c11-math-11", number: 11, name: "Introduction to Three Dimensional Geometry", color: "#FF3D00" },
+      { id: "c11-math-12", number: 12, name: "Limits and Derivatives", color: "#00B0FF" },
+      { id: "c11-math-13", number: 13, name: "Statistics", color: "#11998E" },
+      { id: "c11-math-14", number: 14, name: "Probability", color: "#8E2DE2" },
+    ],
   },
   "Class 10 Social Science": {
     History: [
@@ -1504,6 +1520,22 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
   if (chapterId === "c12-math-11") return ["#FF3D00", "#DD2476"]; // Three Dimensional Geometry
   if (chapterId === "c12-math-12") return ["#00B0FF", "#0072FF"]; // Linear Programming
   if (chapterId === "c12-math-13") return ["#11998E", "#38EF7D"]; // Probability
+
+  // Class 11 Mathematics (14 Chapters - Curated High Contrast Two-Stop Gradients)
+  if (chapterId === "c11-math-1") return ["#FF512F", "#DD2476"]; // Sets
+  if (chapterId === "c11-math-2") return ["#00C6FF", "#0072FF"]; // Relations and Functions
+  if (chapterId === "c11-math-3") return ["#7C4DFF", "#536DFE"]; // Trigonometric Functions
+  if (chapterId === "c11-math-4") return ["#FF9100", "#FF3D00"]; // Complex Numbers and Quadratic Equations
+  if (chapterId === "c11-math-5") return ["#00E676", "#00B0FF"]; // Linear Inequalities
+  if (chapterId === "c11-math-6") return ["#FF007F", "#E91E63"]; // Permutations and Combinations
+  if (chapterId === "c11-math-7") return ["#2979FF", "#1565C0"]; // Binomial Theorem
+  if (chapterId === "c11-math-8") return ["#FDC830", "#F37335"]; // Sequences and Series
+  if (chapterId === "c11-math-9") return ["#E040FB", "#8E24AA"]; // Straight Lines
+  if (chapterId === "c11-math-10") return ["#00E5FF", "#00838F"]; // Conic Sections
+  if (chapterId === "c11-math-11") return ["#FF3D00", "#DD2476"]; // Introduction to Three Dimensional Geometry
+  if (chapterId === "c11-math-12") return ["#00B0FF", "#0072FF"]; // Limits and Derivatives
+  if (chapterId === "c11-math-13") return ["#11998E", "#38EF7D"]; // Statistics
+  if (chapterId === "c11-math-14") return ["#8E2DE2", "#4A00E0"]; // Probability
 
 
   // Class 11 Political Science (18 Chapters - Vibrant Two-Stop Gradients)

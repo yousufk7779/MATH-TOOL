@@ -3,6 +3,62 @@
 import type { ChapterContent } from "./types";
 
 export const lazyChapterLoaders: Record<string, () => any> = {
+  "c11-math-1": () => {
+    const mod = require("./content/c11-math-1");
+    return mod.c11Math1;
+  },
+  "c11-math-2": () => {
+    const mod = require("./content/c11-math-2");
+    return mod.c11Math2;
+  },
+  "c11-math-3": () => {
+    const mod = require("./content/c11-math-3");
+    return mod.c11Math3;
+  },
+  "c11-math-4": () => {
+    const mod = require("./content/c11-math-4");
+    return mod.c11Math4;
+  },
+  "c11-math-5": () => {
+    const mod = require("./content/c11-math-5");
+    return mod.c11Math5;
+  },
+  "c11-math-6": () => {
+    const mod = require("./content/c11-math-6");
+    return mod.c11Math6;
+  },
+  "c11-math-7": () => {
+    const mod = require("./content/c11-math-7");
+    return mod.c11Math7;
+  },
+  "c11-math-8": () => {
+    const mod = require("./content/c11-math-8");
+    return mod.c11Math8;
+  },
+  "c11-math-9": () => {
+    const mod = require("./content/c11-math-9");
+    return mod.c11Math9;
+  },
+  "c11-math-10": () => {
+    const mod = require("./content/c11-math-10");
+    return mod.c11Math10;
+  },
+  "c11-math-11": () => {
+    const mod = require("./content/c11-math-11");
+    return mod.c11Math11;
+  },
+  "c11-math-12": () => {
+    const mod = require("./content/c11-math-12");
+    return mod.c11Math12;
+  },
+  "c11-math-13": () => {
+    const mod = require("./content/c11-math-13");
+    return mod.c11Math13;
+  },
+  "c11-math-14": () => {
+    const mod = require("./content/c11-math-14");
+    return mod.c11Math14;
+  },
   "c12-math-1": () => {
     const mod = require("./content/c12-math-1");
     return mod.c12Math1;

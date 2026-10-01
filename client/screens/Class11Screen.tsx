@@ -88,7 +88,24 @@ function Class11Screen() {
             />
           </View>
 
-          {/* 3. BIOLOGY BUTTON (EXACT ZOOLOGY COLOR, NAVIGATES TO BIOLOGY SCREEN) */}
+          {/* 3. MATHEMATICS BUTTON */}
+          <View style={styles.buttonWrapper}>
+            <ColorButton
+              testID="button-mathematics"
+              title="MATHEMATICS"
+              icon="📐"
+              colors={["#2979FF", "#00B0FF"]}
+              onPress={() =>
+                navigation.navigate("ChapterList", {
+                  subject: "Class 11 Science",
+                  topic: "Mathematics",
+                  className: "Class 11",
+                })
+              }
+            />
+          </View>
+
+          {/* 4. BIOLOGY BUTTON (EXACT ZOOLOGY COLOR, NAVIGATES TO BIOLOGY SCREEN) */}
           <View style={styles.buttonWrapper}>
             <ColorButton
               testID="button-biology"
