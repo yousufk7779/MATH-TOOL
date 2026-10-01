@@ -140,12 +140,11 @@ const styles = StyleSheet.create({
   },
   content: {
     paddingHorizontal: Spacing.xl,
-    paddingTop: Spacing.xs,
-    paddingBottom: Spacing["3xl"],
+    paddingVertical: Spacing.lg,
     flexGrow: 1,
   },
   centeredContent: {
-    justifyContent: "flex-start",
+    justifyContent: "center",
   },
   headerContainer: {
     alignItems: "center",

@@ -27,7 +27,7 @@ function Class11ScienceScreen() {
       >
         <View style={styles.headerContainer}>
           <View style={styles.titleRow}>
-            <ThemedText style={styles.titleWhite}>Select Science Subject</ThemedText>
+            <ThemedText style={styles.titleWhite}>Select Your Science Subject</ThemedText>
           </View>
 
           <View style={styles.decorationContainer}>
@@ -134,12 +134,11 @@ const styles = StyleSheet.create({
   },
   content: {
     paddingHorizontal: Spacing.xl,
-    paddingTop: Spacing.xs,
-    paddingBottom: Spacing["3xl"],
+    paddingVertical: Spacing.lg,
     flexGrow: 1,
   },
   centeredContent: {
-    justifyContent: "flex-start",
+    justifyContent: "center",
   },
   headerContainer: {
     alignItems: "center",
