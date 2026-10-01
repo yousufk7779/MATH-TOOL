@@ -11,7 +11,7 @@ function buildOverview() {
           <circle cx="0" cy="0" r="3" fill="#00838F"/>
           <line x1="0" y1="0" x2="38" y2="0" stroke="#00838F" stroke-width="1.8"/>
           <text x="12" y="-6" font-size="11" font-weight="700" fill="#00838F">r</text>
-          <text x="-20" y="55" font-size="13" font-weight="800" fill="#006064">Circle (e = 0)</text>
+          <text x="0" y="55" text-anchor="middle" font-size="12.5" font-weight="800" fill="#006064">Circle (e = 0)</text>
         </g>
         <!-- Parabola -->
         <g transform="translate(185, 110)">
@@ -20,7 +20,7 @@ function buildOverview() {
           <path d="M 35 -38 Q -20 0 35 38" fill="none" stroke="#E11D48" stroke-width="2.5"/>
           <circle cx="0" cy="0" r="3" fill="#E11D48"/>
           <text x="-3" y="-6" font-size="10" font-weight="700" fill="#E11D48">F</text>
-          <text x="-25" y="55" font-size="13" font-weight="800" fill="#9F1239">Parabola (e = 1)</text>
+          <text x="0" y="55" text-anchor="middle" font-size="12.5" font-weight="800" fill="#9F1239">Parabola (e = 1)</text>
         </g>
         <!-- Ellipse -->
         <g transform="translate(315, 110)">
@@ -28,7 +28,7 @@ function buildOverview() {
           <circle cx="-22" cy="0" r="3" fill="#6B21A8"/>
           <circle cx="22" cy="0" r="3" fill="#6B21A8"/>
           <text x="-8" y="-7" font-size="10" font-weight="700" fill="#6B21A8">F₁   F₂</text>
-          <text x="-25" y="55" font-size="13" font-weight="800" fill="#581C87">Ellipse (e &lt; 1)</text>
+          <text x="0" y="55" text-anchor="middle" font-size="12.5" font-weight="800" fill="#581C87">Ellipse (e &lt; 1)</text>
         </g>
         <!-- Hyperbola -->
         <g transform="translate(440, 110)">
@@ -37,7 +37,7 @@ function buildOverview() {
           <path d="M 40 -35 Q 15 0 40 35" fill="none" stroke="#EA580C" stroke-width="2.5"/>
           <circle cx="-28" cy="0" r="3" fill="#C2410C"/>
           <circle cx="28" cy="0" r="3" fill="#C2410C"/>
-          <text x="-32" y="55" font-size="13" font-weight="800" fill="#7C2D12">Hyperbola (e &gt; 1)</text>
+          <text x="0" y="55" text-anchor="middle" font-size="12.5" font-weight="800" fill="#7C2D12">Hyperbola (e &gt; 1)</text>
         </g>
       </svg>
     </div>

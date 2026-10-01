@@ -27,7 +27,7 @@ function buildEx1() {
 
   // Q3 with full Octant Sign Table
   const octantTableHtml = `
-  <div style="overflow-x: auto; margin: 14px 0;">
+  <div style="overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 14px 0; border-radius: 8px; border: 1.5px solid rgba(255, 61, 0, 0.35); background: rgba(15, 23, 42, 0.85);">
     <table class="octant-table">
       <thead>
         <tr>

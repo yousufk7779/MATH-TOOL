@@ -10,7 +10,7 @@ function getChapter3Overview() {
       ⚡ CHAPTER 3: TRIGONOMETRIC FUNCTIONS
     </div>
     <div style="font-size: 15px; color: #B388FF; font-weight: 600; margin-top: 4px;">
-      त्रिकोणमितीय फलन &bull; Class 11 Mathematics Master Reference Guide
+      Trigonometric Functions &bull; Class 11 Mathematics Master Reference Guide
     </div>
     <div style="font-size: 13.5px; color: #CBD5E1; margin-top: 8px; line-height: 1.5;">
       Radian &amp; Degree Measures &bull; Unit Circle Definitions &bull; ASTC Quadrant Rules &bull; Compound &amp; Multiple Angle Identities &bull; Trigonometric Equations
@@ -105,73 +105,73 @@ function getChapter3Overview() {
     <h2 style="color: #7C4DFF; font-size: 19px; font-weight: 800; border-bottom: 2px solid rgba(124, 77, 255, 0.4); padding-bottom: 6px; margin-bottom: 12px;">
       3.2 Domain, Range &amp; Signs Across Quadrants
     </h2>
-    <div style="overflow-x: auto; -webkit-overflow-scrolling: touch; margin-bottom: 14px;">
-      <table style="width: 100%; border-collapse: collapse; font-size: 13.5px; text-align: center; color: #E2E8F0;">
+    <div style="overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 14px 0; border-radius: 8px; border: 1.5px solid rgba(124, 77, 255, 0.35); background: rgba(15, 23, 42, 0.85);">
+      <table style="width: 100%; border-collapse: collapse; min-width: 580px; font-size: 13.5px; text-align: center; color: #E2E8F0;">
         <thead>
           <tr style="background: rgba(124, 77, 255, 0.25); color: #B388FF; border-bottom: 2px solid #7C4DFF;">
-            <th style="padding: 8px; text-align: left;">Function</th>
-            <th style="padding: 8px;">Domain</th>
-            <th style="padding: 8px;">Range</th>
-            <th style="padding: 8px;">Quadrant I</th>
-            <th style="padding: 8px;">Quadrant II</th>
-            <th style="padding: 8px;">Quadrant III</th>
-            <th style="padding: 8px;">Quadrant IV</th>
+            <th style="padding: 9px 12px; text-align: left; font-weight: 700; white-space: nowrap; border: 1px solid rgba(124, 77, 255, 0.3);">Function</th>
+            <th style="padding: 9px 12px; font-weight: 700; white-space: nowrap; border: 1px solid rgba(124, 77, 255, 0.3);">Domain</th>
+            <th style="padding: 9px 12px; font-weight: 700; white-space: nowrap; border: 1px solid rgba(124, 77, 255, 0.3);">Range</th>
+            <th style="padding: 9px 12px; font-weight: 700; white-space: nowrap; border: 1px solid rgba(124, 77, 255, 0.3);">Quadrant I</th>
+            <th style="padding: 9px 12px; font-weight: 700; white-space: nowrap; border: 1px solid rgba(124, 77, 255, 0.3);">Quadrant II</th>
+            <th style="padding: 9px 12px; font-weight: 700; white-space: nowrap; border: 1px solid rgba(124, 77, 255, 0.3);">Quadrant III</th>
+            <th style="padding: 9px 12px; font-weight: 700; white-space: nowrap; border: 1px solid rgba(124, 77, 255, 0.3);">Quadrant IV</th>
           </tr>
         </thead>
         <tbody>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
-            <td style="padding: 8px; text-align: left; font-weight: 700; color: #B388FF;">sin <i>x</i></td>
-            <td style="padding: 8px;">&reals;</td>
-            <td style="padding: 8px;">[&minus;1, 1]</td>
-            <td style="padding: 8px; color: #4CAF50;">+ve (0 &rarr; 1)</td>
-            <td style="padding: 8px; color: #4CAF50;">+ve (1 &rarr; 0)</td>
-            <td style="padding: 8px; color: #F44336;">&minus;ve (0 &rarr; &minus;1)</td>
-            <td style="padding: 8px; color: #F44336;">&minus;ve (&minus;1 &rarr; 0)</td>
+            <td style="padding: 8px 12px; text-align: left; font-weight: 700; color: #B388FF; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">sin <i>x</i></td>
+            <td style="padding: 8px 12px; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">&reals;</td>
+            <td style="padding: 8px 12px; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">[&minus;1, 1]</td>
+            <td style="padding: 8px 12px; color: #4CAF50; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">+ve (0 &rarr; 1)</td>
+            <td style="padding: 8px 12px; color: #4CAF50; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">+ve (1 &rarr; 0)</td>
+            <td style="padding: 8px 12px; color: #F44336; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">&minus;ve (0 &rarr; &minus;1)</td>
+            <td style="padding: 8px 12px; color: #F44336; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">&minus;ve (&minus;1 &rarr; 0)</td>
           </tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.08); background: rgba(255,255,255,0.02);">
-            <td style="padding: 8px; text-align: left; font-weight: 700; color: #B388FF;">cos <i>x</i></td>
-            <td style="padding: 8px;">&reals;</td>
-            <td style="padding: 8px;">[&minus;1, 1]</td>
-            <td style="padding: 8px; color: #4CAF50;">+ve (1 &rarr; 0)</td>
-            <td style="padding: 8px; color: #F44336;">&minus;ve (0 &rarr; &minus;1)</td>
-            <td style="padding: 8px; color: #F44336;">&minus;ve (&minus;1 &rarr; 0)</td>
-            <td style="padding: 8px; color: #4CAF50;">+ve (0 &rarr; 1)</td>
+            <td style="padding: 8px 12px; text-align: left; font-weight: 700; color: #B388FF; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">cos <i>x</i></td>
+            <td style="padding: 8px 12px; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">&reals;</td>
+            <td style="padding: 8px 12px; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">[&minus;1, 1]</td>
+            <td style="padding: 8px 12px; color: #4CAF50; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">+ve (1 &rarr; 0)</td>
+            <td style="padding: 8px 12px; color: #F44336; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">&minus;ve (0 &rarr; &minus;1)</td>
+            <td style="padding: 8px 12px; color: #F44336; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">&minus;ve (&minus;1 &rarr; 0)</td>
+            <td style="padding: 8px 12px; color: #4CAF50; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">+ve (0 &rarr; 1)</td>
           </tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
-            <td style="padding: 8px; text-align: left; font-weight: 700; color: #B388FF;">tan <i>x</i></td>
-            <td style="padding: 8px;">&reals; &minus; {(2<i>n</i>+1)&pi;/2}</td>
-            <td style="padding: 8px;">&reals;</td>
-            <td style="padding: 8px; color: #4CAF50;">+ve (0 &rarr; &infin;)</td>
-            <td style="padding: 8px; color: #F44336;">&minus;ve (&minus;&infin; &rarr; 0)</td>
-            <td style="padding: 8px; color: #4CAF50;">+ve (0 &rarr; &infin;)</td>
-            <td style="padding: 8px; color: #F44336;">&minus;ve (&minus;&infin; &rarr; 0)</td>
+            <td style="padding: 8px 12px; text-align: left; font-weight: 700; color: #B388FF; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">tan <i>x</i></td>
+            <td style="padding: 8px 12px; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">&reals; &minus; {(2<i>n</i>+1)&pi;/2}</td>
+            <td style="padding: 8px 12px; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">&reals;</td>
+            <td style="padding: 8px 12px; color: #4CAF50; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">+ve (0 &rarr; &infin;)</td>
+            <td style="padding: 8px 12px; color: #F44336; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">&minus;ve (&minus;&infin; &rarr; 0)</td>
+            <td style="padding: 8px 12px; color: #4CAF50; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">+ve (0 &rarr; &infin;)</td>
+            <td style="padding: 8px 12px; color: #F44336; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">&minus;ve (&minus;&infin; &rarr; 0)</td>
           </tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.08); background: rgba(255,255,255,0.02);">
-            <td style="padding: 8px; text-align: left; font-weight: 700; color: #B388FF;">cot <i>x</i></td>
-            <td style="padding: 8px;">&reals; &minus; {<i>n&pi;</i>}</td>
-            <td style="padding: 8px;">&reals;</td>
-            <td style="padding: 8px; color: #4CAF50;">+ve (&infin; &rarr; 0)</td>
-            <td style="padding: 8px; color: #F44336;">&minus;ve (0 &rarr; &minus;&infin;)</td>
-            <td style="padding: 8px; color: #4CAF50;">+ve (&infin; &rarr; 0)</td>
-            <td style="padding: 8px; color: #F44336;">&minus;ve (0 &rarr; &minus;&infin;)</td>
+            <td style="padding: 8px 12px; text-align: left; font-weight: 700; color: #B388FF; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">cot <i>x</i></td>
+            <td style="padding: 8px 12px; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">&reals; &minus; {<i>n&pi;</i>}</td>
+            <td style="padding: 8px 12px; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">&reals;</td>
+            <td style="padding: 8px 12px; color: #4CAF50; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">+ve (&infin; &rarr; 0)</td>
+            <td style="padding: 8px 12px; color: #F44336; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">&minus;ve (0 &rarr; &minus;&infin;)</td>
+            <td style="padding: 8px 12px; color: #4CAF50; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">+ve (&infin; &rarr; 0)</td>
+            <td style="padding: 8px 12px; color: #F44336; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">&minus;ve (0 &rarr; &minus;&infin;)</td>
           </tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
-            <td style="padding: 8px; text-align: left; font-weight: 700; color: #B388FF;">sec <i>x</i></td>
-            <td style="padding: 8px;">&reals; &minus; {(2<i>n</i>+1)&pi;/2}</td>
-            <td style="padding: 8px;">(&minus;&infin;, &minus;1] &cup; [1, &infin;)</td>
-            <td style="padding: 8px; color: #4CAF50;">+ve (1 &rarr; &infin;)</td>
-            <td style="padding: 8px; color: #F44336;">&minus;ve (&minus;&infin; &rarr; &minus;1)</td>
-            <td style="padding: 8px; color: #F44336;">&minus;ve (&minus;1 &rarr; &minus;&infin;)</td>
-            <td style="padding: 8px; color: #4CAF50;">+ve (&infin; &rarr; 1)</td>
+            <td style="padding: 8px 12px; text-align: left; font-weight: 700; color: #B388FF; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">sec <i>x</i></td>
+            <td style="padding: 8px 12px; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">&reals; &minus; {(2<i>n</i>+1)&pi;/2}</td>
+            <td style="padding: 8px 12px; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">(&minus;&infin;, &minus;1] &cup; [1, &infin;)</td>
+            <td style="padding: 8px 12px; color: #4CAF50; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">+ve (1 &rarr; &infin;)</td>
+            <td style="padding: 8px 12px; color: #F44336; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">&minus;ve (&minus;&infin; &rarr; &minus;1)</td>
+            <td style="padding: 8px 12px; color: #F44336; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">&minus;ve (&minus;1 &rarr; &minus;&infin;)</td>
+            <td style="padding: 8px 12px; color: #4CAF50; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">+ve (&infin; &rarr; 1)</td>
           </tr>
           <tr>
-            <td style="padding: 8px; text-align: left; font-weight: 700; color: #B388FF;">cosec <i>x</i></td>
-            <td style="padding: 8px;">&reals; &minus; {<i>n&pi;</i>}</td>
-            <td style="padding: 8px;">(&minus;&infin;, &minus;1] &cup; [1, &infin;)</td>
-            <td style="padding: 8px; color: #4CAF50;">+ve (&infin; &rarr; 1)</td>
-            <td style="padding: 8px; color: #4CAF50;">+ve (1 &rarr; &infin;)</td>
-            <td style="padding: 8px; color: #F44336;">&minus;ve (&minus;&infin; &rarr; &minus;1)</td>
-            <td style="padding: 8px; color: #F44336;">&minus;ve (&minus;1 &rarr; &minus;&infin;)</td>
+            <td style="padding: 8px 12px; text-align: left; font-weight: 700; color: #B388FF; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">cosec <i>x</i></td>
+            <td style="padding: 8px 12px; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">&reals; &minus; {<i>n&pi;</i>}</td>
+            <td style="padding: 8px 12px; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">(&minus;&infin;, &minus;1] &cup; [1, &infin;)</td>
+            <td style="padding: 8px 12px; color: #4CAF50; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">+ve (&infin; &rarr; 1)</td>
+            <td style="padding: 8px 12px; color: #4CAF50; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">+ve (1 &rarr; &infin;)</td>
+            <td style="padding: 8px 12px; color: #F44336; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">&minus;ve (&minus;&infin; &rarr; &minus;1)</td>
+            <td style="padding: 8px 12px; color: #F44336; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">&minus;ve (&minus;1 &rarr; &minus;&infin;)</td>
           </tr>
         </tbody>
       </table>
@@ -183,26 +183,26 @@ function getChapter3Overview() {
     <div style="font-size: 20px; font-weight: 800; color: #B388FF; text-align: center; margin-bottom: 14px; letter-spacing: 0.5px;">
       🏆 MASTER REVISION FORMULA CHEAT SHEET
     </div>
-    <div style="overflow-x: auto; -webkit-overflow-scrolling: touch;">
-      <table style="width: 100%; border-collapse: collapse; font-size: 14px; text-align: left; color: #E2E8F0;">
+    <div style="overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 14px 0; border-radius: 8px; border: 1.5px solid rgba(124, 77, 255, 0.35); background: rgba(15, 23, 42, 0.85);">
+      <table style="width: 100%; border-collapse: collapse; min-width: 520px; font-size: 14px; text-align: left; color: #E2E8F0;">
         <thead>
           <tr style="background: rgba(124, 77, 255, 0.25); color: #B388FF; border-bottom: 2px solid #7C4DFF;">
-            <th style="padding: 10px 12px; font-weight: 700;">Formula Category</th>
-            <th style="padding: 10px 12px; font-weight: 700;">Mathematical Identities</th>
+            <th style="padding: 10px 14px; font-weight: 700; white-space: nowrap; border: 1px solid rgba(124, 77, 255, 0.3);">Formula Category</th>
+            <th style="padding: 10px 14px; font-weight: 700; white-space: nowrap; border: 1px solid rgba(124, 77, 255, 0.3);">Mathematical Identities</th>
           </tr>
         </thead>
         <tbody>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
-            <td style="padding: 10px 12px; font-weight: 700; color: #B388FF;">Pythagorean Identities</td>
-            <td style="padding: 10px 12px;">
+            <td style="padding: 10px 14px; font-weight: 700; color: #B388FF; white-space: nowrap; vertical-align: top; border: 1px solid rgba(255, 255, 255, 0.08);">Pythagorean Identities</td>
+            <td style="padding: 10px 14px; border: 1px solid rgba(255, 255, 255, 0.08);">
               • sin<sup>2</sup> <i>x</i> + cos<sup>2</sup> <i>x</i> = 1<br/>
               • 1 + tan<sup>2</sup> <i>x</i> = sec<sup>2</sup> <i>x</i><br/>
               • 1 + cot<sup>2</sup> <i>x</i> = cosec<sup>2</sup> <i>x</i>
             </td>
           </tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.08); background: rgba(255,255,255,0.02);">
-            <td style="padding: 10px 12px; font-weight: 700; color: #B388FF;">Compound Angles (Sum &amp; Difference)</td>
-            <td style="padding: 10px 12px;">
+            <td style="padding: 10px 14px; font-weight: 700; color: #B388FF; white-space: nowrap; vertical-align: top; border: 1px solid rgba(255, 255, 255, 0.08);">Compound Angles (Sum &amp; Difference)</td>
+            <td style="padding: 10px 14px; border: 1px solid rgba(255, 255, 255, 0.08);">
               • sin(A &plusmn; B) = sin A cos B &plusmn; cos A sin B<br/>
               • cos(A &plusmn; B) = cos A cos B &mp; sin A sin B<br/>
               • tan(A &plusmn; B) = <span class="frac"><span class="num">tan A &plusmn; tan B</span><span class="den">1 &mp; tan A tan B</span></span><br/>
@@ -210,8 +210,8 @@ function getChapter3Overview() {
             </td>
           </tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
-            <td style="padding: 10px 12px; font-weight: 700; color: #B388FF;">Sum-to-Product (CD Formulas)</td>
-            <td style="padding: 10px 12px;">
+            <td style="padding: 10px 14px; font-weight: 700; color: #B388FF; white-space: nowrap; vertical-align: top; border: 1px solid rgba(255, 255, 255, 0.08);">Sum-to-Product (CD Formulas)</td>
+            <td style="padding: 10px 14px; border: 1px solid rgba(255, 255, 255, 0.08);">
               • sin C + sin D = 2 sin(<span class="frac"><span class="num">C + D</span><span class="den">2</span></span>) cos(<span class="frac"><span class="num">C &minus; D</span><span class="den">2</span></span>)<br/>
               • sin C &minus; sin D = 2 cos(<span class="frac"><span class="num">C + D</span><span class="den">2</span></span>) sin(<span class="frac"><span class="num">C &minus; D</span><span class="den">2</span></span>)<br/>
               • cos C + cos D = 2 cos(<span class="frac"><span class="num">C + D</span><span class="den">2</span></span>) cos(<span class="frac"><span class="num">C &minus; D</span><span class="den">2</span></span>)<br/>
@@ -219,24 +219,24 @@ function getChapter3Overview() {
             </td>
           </tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.08); background: rgba(255,255,255,0.02);">
-            <td style="padding: 10px 12px; font-weight: 700; color: #B388FF;">Double Angle Formulas</td>
-            <td style="padding: 10px 12px;">
+            <td style="padding: 10px 14px; font-weight: 700; color: #B388FF; white-space: nowrap; vertical-align: top; border: 1px solid rgba(255, 255, 255, 0.08);">Double Angle Formulas</td>
+            <td style="padding: 10px 14px; border: 1px solid rgba(255, 255, 255, 0.08);">
               • sin 2<i>x</i> = 2 sin <i>x</i> cos <i>x</i> = <span class="frac"><span class="num">2 tan x</span><span class="den">1 + tan<sup>2</sup> x</span></span><br/>
               • cos 2<i>x</i> = cos<sup>2</sup> <i>x</i> &minus; sin<sup>2</sup> <i>x</i> = 2 cos<sup>2</sup> <i>x</i> &minus; 1 = 1 &minus; 2 sin<sup>2</sup> <i>x</i> = <span class="frac"><span class="num">1 &minus; tan<sup>2</sup> x</span><span class="den">1 + tan<sup>2</sup> x</span></span><br/>
               • tan 2<i>x</i> = <span class="frac"><span class="num">2 tan x</span><span class="den">1 &minus; tan<sup>2</sup> x</span></span>
             </td>
           </tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
-            <td style="padding: 10px 12px; font-weight: 700; color: #B388FF;">Triple Angle Formulas</td>
-            <td style="padding: 10px 12px;">
+            <td style="padding: 10px 14px; font-weight: 700; color: #B388FF; white-space: nowrap; vertical-align: top; border: 1px solid rgba(255, 255, 255, 0.08);">Triple Angle Formulas</td>
+            <td style="padding: 10px 14px; border: 1px solid rgba(255, 255, 255, 0.08);">
               • sin 3<i>x</i> = 3 sin <i>x</i> &minus; 4 sin<sup>3</sup> <i>x</i><br/>
               • cos 3<i>x</i> = 4 cos<sup>3</sup> <i>x</i> &minus; 3 cos <i>x</i><br/>
               • tan 3<i>x</i> = <span class="frac"><span class="num">3 tan x &minus; tan<sup>3</sup> x</span><span class="den">1 &minus; 3 tan<sup>2</sup> x</span></span>
             </td>
           </tr>
           <tr>
-            <td style="padding: 10px 12px; font-weight: 700; color: #B388FF;">General Solutions</td>
-            <td style="padding: 10px 12px;">
+            <td style="padding: 10px 14px; font-weight: 700; color: #B388FF; white-space: nowrap; vertical-align: top; border: 1px solid rgba(255, 255, 255, 0.08);">General Solutions</td>
+            <td style="padding: 10px 14px; border: 1px solid rgba(255, 255, 255, 0.08);">
               • sin &theta; = sin &alpha; &rArr; &theta; = <i>n&pi;</i> + (&minus;1)<sup><i>n</i></sup> &alpha;, &nbsp; <i>n</i> &isin; &integers;<br/>
               • cos &theta; = cos &alpha; &rArr; &theta; = 2<i>n&pi;</i> &plusmn; &alpha;, &nbsp; <i>n</i> &isin; &integers;<br/>
               • tan &theta; = tan &alpha; &rArr; &theta; = <i>n&pi;</i> + &alpha;, &nbsp; <i>n</i> &isin; &integers;

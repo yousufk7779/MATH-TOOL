@@ -77,6 +77,8 @@ function buildOverview() {
   .diagram-wrapper { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(17, 153, 142, 0.4); border-radius: 10px; padding: 14px 16px; margin: 18px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.35); text-align: center; }
   .diagram-svg-container { display: flex; justify-content: center; align-items: center; background: #FFFFFF; border-radius: 8px; padding: 8px; border: 1px solid rgba(255,255,255,0.1); margin: 0 auto; max-width: 480px; }
   .diagram-caption { color: #CBD5E1; font-size: 14px; text-align: center; margin-top: 10px; line-height: 1.5; font-weight: 500; }
+  .stat-table-wrapper { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 14px 0; border-radius: 8px; border: 1.5px solid rgba(17, 153, 142, 0.4); background: rgba(15, 23, 42, 0.85); }
+  .stat-table th, .stat-table td { padding: 8px 12px; white-space: nowrap; }
 </style>
 
 <div style="padding: 4px 2px;">

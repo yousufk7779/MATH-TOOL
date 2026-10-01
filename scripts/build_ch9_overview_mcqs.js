@@ -195,60 +195,60 @@ ${styleBlock}
     <div class="q-title" style="color: ${themeColor}; font-size: 20px;">
       ✦ 9.4 Master Revision Formula Cheat Sheet
     </div>
-    <div style="color: #FFFFFF; font-size: 15px; line-height: 2.3;">
-      <table style="width: 100%; border-collapse: collapse; text-align: left;">
+    <div style="overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 14px 0; border-radius: 8px; border: 1.5px solid rgba(224, 64, 251, 0.35); background: rgba(15, 23, 42, 0.85);">
+      <table style="width: 100%; border-collapse: collapse; min-width: 520px; font-size: 14px; text-align: left; color: #E2E8F0;">
         <thead>
           <tr style="border-bottom: 2px solid ${themeColor}; color: ${themeColor};">
-            <th style="padding: 8px 6px;">Geometry Concept</th>
-            <th style="padding: 8px 6px;">Standard Algebraic Formula</th>
-            <th style="padding: 8px 6px;">Special Conditions</th>
+            <th style="padding: 10px 12px; font-weight: 700; white-space: nowrap; border: 1px solid rgba(224, 64, 251, 0.3); background: rgba(224, 64, 251, 0.18); color: #E040FB;">Geometry Concept</th>
+            <th style="padding: 10px 12px; font-weight: 700; white-space: nowrap; border: 1px solid rgba(224, 64, 251, 0.3); background: rgba(224, 64, 251, 0.18); color: #E040FB;">Standard Algebraic Formula</th>
+            <th style="padding: 10px 12px; font-weight: 700; white-space: nowrap; border: 1px solid rgba(224, 64, 251, 0.3); background: rgba(224, 64, 251, 0.18); color: #E040FB;">Special Conditions</th>
           </tr>
         </thead>
         <tbody>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
-            <td style="padding: 8px 6px; font-weight: 700;">Slope of Line</td>
-            <td style="padding: 8px 6px;"><i>m</i> = ${frac('<i>y</i><sub>2</sub> &minus; <i>y</i><sub>1</sub>', '<i>x</i><sub>2</sub> &minus; <i>x</i><sub>1</sub>')} = tan &theta;</td>
-            <td style="padding: 8px 6px;">&theta; &ne; 90&deg;, <i>x</i><sub>1</sub> &ne; <i>x</i><sub>2</sub></td>
+            <td style="padding: 9px 12px; font-weight: 700; color: #EA80FC; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">Slope of Line</td>
+            <td style="padding: 9px 12px; border: 1px solid rgba(255, 255, 255, 0.08);"><i>m</i> = ${frac('<i>y</i><sub>2</sub> &minus; <i>y</i><sub>1</sub>', '<i>x</i><sub>2</sub> &minus; <i>x</i><sub>1</sub>')} = tan &theta;</td>
+            <td style="padding: 9px 12px; border: 1px solid rgba(255, 255, 255, 0.08);">&theta; &ne; 90&deg;, <i>x</i><sub>1</sub> &ne; <i>x</i><sub>2</sub></td>
           </tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
-            <td style="padding: 8px 6px; font-weight: 700;">Point-Slope Form</td>
-            <td style="padding: 8px 6px;"><i>y</i> &minus; <i>y</i><sub>1</sub> = <i>m</i>(<i>x</i> &minus; <i>x</i><sub>1</sub>)</td>
-            <td style="padding: 8px 6px;">Passes through (<i>x</i><sub>1</sub>, <i>y</i><sub>1</sub>)</td>
+            <td style="padding: 9px 12px; font-weight: 700; color: #EA80FC; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">Point-Slope Form</td>
+            <td style="padding: 9px 12px; border: 1px solid rgba(255, 255, 255, 0.08);"><i>y</i> &minus; <i>y</i><sub>1</sub> = <i>m</i>(<i>x</i> &minus; <i>x</i><sub>1</sub>)</td>
+            <td style="padding: 9px 12px; border: 1px solid rgba(255, 255, 255, 0.08);">Passes through (<i>x</i><sub>1</sub>, <i>y</i><sub>1</sub>)</td>
           </tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
-            <td style="padding: 8px 6px; font-weight: 700;">Slope-Intercept Form</td>
-            <td style="padding: 8px 6px;"><i>y</i> = <i>mx</i> + <i>c</i></td>
-            <td style="padding: 8px 6px;"><i>c</i> is <i>y</i>-intercept</td>
+            <td style="padding: 9px 12px; font-weight: 700; color: #EA80FC; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">Slope-Intercept Form</td>
+            <td style="padding: 9px 12px; border: 1px solid rgba(255, 255, 255, 0.08);"><i>y</i> = <i>mx</i> + <i>c</i></td>
+            <td style="padding: 9px 12px; border: 1px solid rgba(255, 255, 255, 0.08);"><i>c</i> is <i>y</i>-intercept</td>
           </tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
-            <td style="padding: 8px 6px; font-weight: 700;">Intercept Form</td>
-            <td style="padding: 8px 6px;">${frac('<i>x</i>', '<i>a</i>')} + ${frac('<i>y</i>', '<i>b</i>')} = 1</td>
-            <td style="padding: 8px 6px;"><i>a</i>, <i>b</i> non-zero intercepts</td>
+            <td style="padding: 9px 12px; font-weight: 700; color: #EA80FC; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">Intercept Form</td>
+            <td style="padding: 9px 12px; border: 1px solid rgba(255, 255, 255, 0.08);">${frac('<i>x</i>', '<i>a</i>')} + ${frac('<i>y</i>', '<i>b</i>')} = 1</td>
+            <td style="padding: 9px 12px; border: 1px solid rgba(255, 255, 255, 0.08);"><i>a</i>, <i>b</i> non-zero intercepts</td>
           </tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
-            <td style="padding: 8px 6px; font-weight: 700;">Normal Form</td>
-            <td style="padding: 8px 6px;"><i>x</i> cos &omega; + <i>y</i> sin &omega; = <i>p</i></td>
-            <td style="padding: 8px 6px;"><i>p</i> &ge; 0, 0 &le; &omega; &lt; 360&deg;</td>
+            <td style="padding: 9px 12px; font-weight: 700; color: #EA80FC; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">Normal Form</td>
+            <td style="padding: 9px 12px; border: 1px solid rgba(255, 255, 255, 0.08);"><i>x</i> cos &omega; + <i>y</i> sin &omega; = <i>p</i></td>
+            <td style="padding: 9px 12px; border: 1px solid rgba(255, 255, 255, 0.08);"><i>p</i> &ge; 0, 0 &le; &omega; &lt; 360&deg;</td>
           </tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
-            <td style="padding: 8px 6px; font-weight: 700;">Parallel / Perpendicular</td>
-            <td style="padding: 8px 6px;">Parallel: <i>m</i><sub>1</sub> = <i>m</i><sub>2</sub> &nbsp;|&nbsp; &perp;: <i>m</i><sub>1</sub> <i>m</i><sub>2</sub> = &minus;1</td>
-            <td style="padding: 8px 6px;">For non-vertical lines</td>
+            <td style="padding: 9px 12px; font-weight: 700; color: #EA80FC; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">Parallel / Perpendicular</td>
+            <td style="padding: 9px 12px; border: 1px solid rgba(255, 255, 255, 0.08);">Parallel: <i>m</i><sub>1</sub> = <i>m</i><sub>2</sub> &nbsp;|&nbsp; &perp;: <i>m</i><sub>1</sub> <i>m</i><sub>2</sub> = &minus;1</td>
+            <td style="padding: 9px 12px; border: 1px solid rgba(255, 255, 255, 0.08);">For non-vertical lines</td>
           </tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
-            <td style="padding: 8px 6px; font-weight: 700;">Angle Between Lines</td>
-            <td style="padding: 8px 6px;">tan &theta; = | ${frac('<i>m</i><sub>2</sub> &minus; <i>m</i><sub>1</sub>', '1 + <i>m</i><sub>1</sub><i>m</i><sub>2</sub>')} |</td>
-            <td style="padding: 8px 6px;">Acute angle &theta;</td>
+            <td style="padding: 9px 12px; font-weight: 700; color: #EA80FC; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">Angle Between Lines</td>
+            <td style="padding: 9px 12px; border: 1px solid rgba(255, 255, 255, 0.08);">tan &theta; = | ${frac('<i>m</i><sub>2</sub> &minus; <i>m</i><sub>1</sub>', '1 + <i>m</i><sub>1</sub><i>m</i><sub>2</sub>')} |</td>
+            <td style="padding: 9px 12px; border: 1px solid rgba(255, 255, 255, 0.08);">Acute angle &theta;</td>
           </tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
-            <td style="padding: 8px 6px; font-weight: 700;">Point-to-Line Distance</td>
-            <td style="padding: 8px 6px;"><i>d</i> = ${frac('|<i>Ax</i><sub>1</sub> + <i>By</i><sub>1</sub> + <i>C</i>|', '&radic;(<i>A</i><sup>2</sup> + <i>B</i><sup>2</sup>)')}</td>
-            <td style="padding: 8px 6px;">From (<i>x</i><sub>1</sub>, <i>y</i><sub>1</sub>) to <i>Ax</i>+<i>By</i>+<i>C</i>=0</td>
+            <td style="padding: 9px 12px; font-weight: 700; color: #EA80FC; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">Point-to-Line Distance</td>
+            <td style="padding: 9px 12px; border: 1px solid rgba(255, 255, 255, 0.08);"><i>d</i> = ${frac('|<i>Ax</i><sub>1</sub> + <i>By</i><sub>1</sub> + <i>C</i>|', '&radic;(<i>A</i><sup>2</sup> + <i>B</i><sup>2</sup>)')}</td>
+            <td style="padding: 9px 12px; border: 1px solid rgba(255, 255, 255, 0.08);">From (<i>x</i><sub>1</sub>, <i>y</i><sub>1</sub>) to <i>Ax</i>+<i>By</i>+<i>C</i>=0</td>
           </tr>
           <tr>
-            <td style="padding: 8px 6px; font-weight: 700;">Parallel Lines Distance</td>
-            <td style="padding: 8px 6px;"><i>d</i> = ${frac('|<i>C</i><sub>1</sub> &minus; <i>C</i><sub>2</sub>|', '&radic;(<i>A</i><sup>2</sup> + <i>B</i><sup>2</sup>)')}</td>
-            <td style="padding: 8px 6px;">Coefficients <i>A</i>, <i>B</i> equalized</td>
+            <td style="padding: 9px 12px; font-weight: 700; color: #EA80FC; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">Parallel Lines Distance</td>
+            <td style="padding: 9px 12px; border: 1px solid rgba(255, 255, 255, 0.08);"><i>d</i> = ${frac('|<i>C</i><sub>1</sub> &minus; <i>C</i><sub>2</sub>|', '&radic;(<i>A</i><sup>2</sup> + <i>B</i><sup>2</sup>)')}</td>
+            <td style="padding: 9px 12px; border: 1px solid rgba(255, 255, 255, 0.08);">Coefficients <i>A</i>, <i>B</i> equalized</td>
           </tr>
         </tbody>
       </table>

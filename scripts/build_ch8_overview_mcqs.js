@@ -240,52 +240,52 @@ ${styleBlock}
     <div class="q-title" style="color: ${themeColor}; font-size: 20px;">
       ✦ 8.5 Master Revision Formula Cheat Sheet
     </div>
-    <div style="color: #FFFFFF; font-size: 15px; line-height: 2.3;">
-      <table style="width: 100%; border-collapse: collapse; text-align: left;">
+    <div style="overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 14px 0; border-radius: 8px; border: 1.5px solid rgba(253, 200, 48, 0.35); background: rgba(15, 23, 42, 0.85);">
+      <table style="width: 100%; border-collapse: collapse; min-width: 520px; font-size: 14px; text-align: left; color: #E2E8F0;">
         <thead>
           <tr style="border-bottom: 2px solid ${themeColor}; color: ${themeColor};">
-            <th style="padding: 8px 6px;">Concept / Progression</th>
-            <th style="padding: 8px 6px;"><i>n</i><sup>th</sup> Term (<i>a<sub>n</sub></i>)</th>
-            <th style="padding: 8px 6px;">Sum to <i>n</i> Terms (<i>S<sub>n</sub></i>)</th>
-            <th style="padding: 8px 6px;">Mean Formula</th>
+            <th style="padding: 10px 12px; font-weight: 700; white-space: nowrap; border: 1px solid rgba(253, 200, 48, 0.3); background: rgba(253, 200, 48, 0.18); color: #FDC830;">Concept / Progression</th>
+            <th style="padding: 10px 12px; font-weight: 700; white-space: nowrap; border: 1px solid rgba(253, 200, 48, 0.3); background: rgba(253, 200, 48, 0.18); color: #FDC830;"><i>n</i><sup>th</sup> Term (<i>a<sub>n</sub></i>)</th>
+            <th style="padding: 10px 12px; font-weight: 700; white-space: nowrap; border: 1px solid rgba(253, 200, 48, 0.3); background: rgba(253, 200, 48, 0.18); color: #FDC830;">Sum to <i>n</i> Terms (<i>S<sub>n</sub></i>)</th>
+            <th style="padding: 10px 12px; font-weight: 700; white-space: nowrap; border: 1px solid rgba(253, 200, 48, 0.3); background: rgba(253, 200, 48, 0.18); color: #FDC830;">Mean Formula</th>
           </tr>
         </thead>
         <tbody>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
-            <td style="padding: 8px 6px; font-weight: 700;">Arithmetic Progression (A.P.)</td>
-            <td style="padding: 8px 6px;"><i>a</i> + (<i>n</i> &minus; 1)<i>d</i></td>
-            <td style="padding: 8px 6px;">${frac('<i>n</i>', '2')}[2<i>a</i> + (<i>n</i> &minus; 1)<i>d</i>]</td>
-            <td style="padding: 8px 6px;">A.M. = ${frac('<i>a</i> + <i>b</i>', '2')}</td>
+            <td style="padding: 9px 12px; font-weight: 700; color: #FFE082; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">Arithmetic Progression (A.P.)</td>
+            <td style="padding: 9px 12px; border: 1px solid rgba(255, 255, 255, 0.08);"><i>a</i> + (<i>n</i> &minus; 1)<i>d</i></td>
+            <td style="padding: 9px 12px; border: 1px solid rgba(255, 255, 255, 0.08);">${frac('<i>n</i>', '2')}[2<i>a</i> + (<i>n</i> &minus; 1)<i>d</i>]</td>
+            <td style="padding: 9px 12px; border: 1px solid rgba(255, 255, 255, 0.08);">A.M. = ${frac('<i>a</i> + <i>b</i>', '2')}</td>
           </tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
-            <td style="padding: 8px 6px; font-weight: 700;">Geometric Progression (G.P.)</td>
-            <td style="padding: 8px 6px;"><i>ar</i><sup><i>n</i>&minus;1</sup></td>
-            <td style="padding: 8px 6px;">${frac('<i>a</i>(<i>r<sup>n</sup></i> &minus; 1)', '<i>r</i> &minus; 1')} &nbsp; (|<i>r</i>| &ne; 1)</td>
-            <td style="padding: 8px 6px;">G.M. = &radic;(<i>ab</i>)</td>
+            <td style="padding: 9px 12px; font-weight: 700; color: #FFE082; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">Geometric Progression (G.P.)</td>
+            <td style="padding: 9px 12px; border: 1px solid rgba(255, 255, 255, 0.08);"><i>ar</i><sup><i>n</i>&minus;1</sup></td>
+            <td style="padding: 9px 12px; border: 1px solid rgba(255, 255, 255, 0.08);">${frac('<i>a</i>(<i>r<sup>n</sup></i> &minus; 1)', '<i>r</i> &minus; 1')} &nbsp; (|<i>r</i>| &ne; 1)</td>
+            <td style="padding: 9px 12px; border: 1px solid rgba(255, 255, 255, 0.08);">G.M. = &radic;(<i>ab</i>)</td>
           </tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
-            <td style="padding: 8px 6px; font-weight: 700;">Infinite G.P. (|<i>r</i>| &lt; 1)</td>
-            <td style="padding: 8px 6px;">&rarr; 0 as <i>n</i> &rarr; &infin;</td>
-            <td style="padding: 8px 6px;"><i>S</i><sub>&infin;</sub> = ${frac('<i>a</i>', '1 &minus; <i>r</i>')}</td>
-            <td style="padding: 8px 6px;">AM &ge; GM (for <i>a</i>, <i>b</i> &gt; 0)</td>
+            <td style="padding: 9px 12px; font-weight: 700; color: #FFE082; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">Infinite G.P. (|<i>r</i>| &lt; 1)</td>
+            <td style="padding: 9px 12px; border: 1px solid rgba(255, 255, 255, 0.08);">&rarr; 0 as <i>n</i> &rarr; &infin;</td>
+            <td style="padding: 9px 12px; border: 1px solid rgba(255, 255, 255, 0.08);"><i>S</i><sub>&infin;</sub> = ${frac('<i>a</i>', '1 &minus; <i>r</i>')}</td>
+            <td style="padding: 9px 12px; border: 1px solid rgba(255, 255, 255, 0.08);">AM &ge; GM (for <i>a</i>, <i>b</i> &gt; 0)</td>
           </tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
-            <td style="padding: 8px 6px; font-weight: 700;">Natural Numbers (&sum; <i>n</i>)</td>
-            <td style="padding: 8px 6px;"><i>n</i></td>
-            <td style="padding: 8px 6px;">${frac('<i>n</i>(<i>n</i> + 1)', '2')}</td>
-            <td style="padding: 8px 6px;">Mean = ${frac('<i>n</i> + 1', '2')}</td>
+            <td style="padding: 9px 12px; font-weight: 700; color: #FFE082; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">Natural Numbers (&sum; <i>n</i>)</td>
+            <td style="padding: 9px 12px; border: 1px solid rgba(255, 255, 255, 0.08);"><i>n</i></td>
+            <td style="padding: 9px 12px; border: 1px solid rgba(255, 255, 255, 0.08);">${frac('<i>n</i>(<i>n</i> + 1)', '2')}</td>
+            <td style="padding: 9px 12px; border: 1px solid rgba(255, 255, 255, 0.08);">Mean = ${frac('<i>n</i> + 1', '2')}</td>
           </tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
-            <td style="padding: 8px 6px; font-weight: 700;">Squares of Natural Numbers (&sum; <i>n</i><sup>2</sup>)</td>
-            <td style="padding: 8px 6px;"><i>n</i><sup>2</sup></td>
-            <td style="padding: 8px 6px;">${frac('<i>n</i>(<i>n</i> + 1)(2<i>n</i> + 1)', '6')}</td>
-            <td style="padding: 8px 6px;">9<i>S</i><sub>2</sub><sup>2</sup> = <i>S</i><sub>3</sub>(1 + 8<i>S</i><sub>1</sub>)</td>
+            <td style="padding: 9px 12px; font-weight: 700; color: #FFE082; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">Squares of Natural Numbers (&sum; <i>n</i><sup>2</sup>)</td>
+            <td style="padding: 9px 12px; border: 1px solid rgba(255, 255, 255, 0.08);"><i>n</i><sup>2</sup></td>
+            <td style="padding: 9px 12px; border: 1px solid rgba(255, 255, 255, 0.08);">${frac('<i>n</i>(<i>n</i> + 1)(2<i>n</i> + 1)', '6')}</td>
+            <td style="padding: 9px 12px; border: 1px solid rgba(255, 255, 255, 0.08);">9<i>S</i><sub>2</sub><sup>2</sup> = <i>S</i><sub>3</sub>(1 + 8<i>S</i><sub>1</sub>)</td>
           </tr>
           <tr>
-            <td style="padding: 8px 6px; font-weight: 700;">Cubes of Natural Numbers (&sum; <i>n</i><sup>3</sup>)</td>
-            <td style="padding: 8px 6px;"><i>n</i><sup>3</sup></td>
-            <td style="padding: 8px 6px;">[ ${frac('<i>n</i>(<i>n</i> + 1)', '2')} ]<sup>2</sup> = <i>S</i><sub>1</sub><sup>2</sup></td>
-            <td style="padding: 8px 6px;">&sum; <i>n</i><sup>3</sup> = (&sum; <i>n</i>)<sup>2</sup></td>
+            <td style="padding: 9px 12px; font-weight: 700; color: #FFE082; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">Cubes of Natural Numbers (&sum; <i>n</i><sup>3</sup>)</td>
+            <td style="padding: 9px 12px; border: 1px solid rgba(255, 255, 255, 0.08);"><i>n</i><sup>3</sup></td>
+            <td style="padding: 9px 12px; border: 1px solid rgba(255, 255, 255, 0.08);">[ ${frac('<i>n</i>(<i>n</i> + 1)', '2')} ]<sup>2</sup> = <i>S</i><sub>1</sub><sup>2</sup></td>
+            <td style="padding: 9px 12px; border: 1px solid rgba(255, 255, 255, 0.08);">&sum; <i>n</i><sup>3</sup> = (&sum; <i>n</i>)<sup>2</sup></td>
           </tr>
         </tbody>
       </table>

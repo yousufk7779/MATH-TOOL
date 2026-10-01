@@ -10,7 +10,7 @@ function getChapter2Overview() {
       ⚡ CHAPTER 2: RELATIONS AND FUNCTIONS
     </div>
     <div style="font-size: 15px; color: #80D8FF; font-weight: 600; margin-top: 4px;">
-      संबंध एवं फलन &bull; Class 11 Mathematics Master Reference Guide
+      Relations &amp; Functions &bull; Class 11 Mathematics Master Reference Guide
     </div>
     <div style="font-size: 13.5px; color: #CBD5E1; margin-top: 8px; line-height: 1.5;">
       Cartesian Products &bull; Binary Relations &bull; Domain &amp; Range &bull; Real Functions &amp; Standard Graphs &bull; Algebra of Functions
@@ -349,55 +349,55 @@ function getChapter2Overview() {
     <div style="font-size: 20px; font-weight: 800; color: #00C6FF; text-align: center; margin-bottom: 14px; letter-spacing: 0.5px;">
       🏆 MASTER REVISION FORMULA CHEAT SHEET
     </div>
-    <div style="overflow-x: auto; -webkit-overflow-scrolling: touch;">
-      <table style="width: 100%; border-collapse: collapse; font-size: 14px; text-align: left; color: #E2E8F0;">
+    <div style="overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 14px 0; border-radius: 8px; border: 1.5px solid rgba(0, 198, 255, 0.35); background: rgba(15, 23, 42, 0.85);">
+      <table style="width: 100%; border-collapse: collapse; min-width: 520px; font-size: 14px; text-align: left; color: #E2E8F0;">
         <thead>
           <tr style="background: rgba(0, 198, 255, 0.25); color: #00C6FF; border-bottom: 2px solid #00C6FF;">
-            <th style="padding: 10px 12px; font-weight: 700;">Concept / Operation</th>
-            <th style="padding: 10px 12px; font-weight: 700;">Standard Mathematical Formula / Law</th>
-            <th style="padding: 10px 12px; font-weight: 700;">Crucial Condition / Notes</th>
+            <th style="padding: 10px 14px; font-weight: 700; white-space: nowrap; border: 1px solid rgba(0, 198, 255, 0.25);">Concept / Operation</th>
+            <th style="padding: 10px 14px; font-weight: 700; white-space: nowrap; border: 1px solid rgba(0, 198, 255, 0.25);">Standard Mathematical Formula / Law</th>
+            <th style="padding: 10px 14px; font-weight: 700; white-space: nowrap; border: 1px solid rgba(0, 198, 255, 0.25);">Crucial Condition / Notes</th>
           </tr>
         </thead>
         <tbody>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
-            <td style="padding: 10px 12px; font-weight: 600; color: #80D8FF;">Ordered Pair Equality</td>
-            <td style="padding: 10px 12px;">(<i>a</i>, <i>b</i>) = (<i>c</i>, <i>d</i>) &hArr; <i>a</i> = <i>c</i> and <i>b</i> = <i>d</i></td>
-            <td style="padding: 10px 12px;">Order matters: (<i>a</i>, <i>b</i>) &ne; (<i>b</i>, <i>a</i>)</td>
+            <td style="padding: 10px 14px; font-weight: 700; color: #80D8FF; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">Ordered Pair Equality</td>
+            <td style="padding: 10px 14px; border: 1px solid rgba(255, 255, 255, 0.08);">(<i>a</i>, <i>b</i>) = (<i>c</i>, <i>d</i>) &hArr; <i>a</i> = <i>c</i> and <i>b</i> = <i>d</i></td>
+            <td style="padding: 10px 14px; border: 1px solid rgba(255, 255, 255, 0.08);">Order matters: (<i>a</i>, <i>b</i>) &ne; (<i>b</i>, <i>a</i>)</td>
           </tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.08); background: rgba(255,255,255,0.02);">
-            <td style="padding: 10px 12px; font-weight: 600; color: #80D8FF;">Cardinality of Product</td>
-            <td style="padding: 10px 12px;"><i>n</i>(A &times; B) = <i>n</i>(A) &times; <i>n</i>(B) = <i>p</i> &times; <i>q</i></td>
-            <td style="padding: 10px 12px;">If either is infinite, A &times; B is infinite</td>
+            <td style="padding: 10px 14px; font-weight: 700; color: #80D8FF; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">Cardinality of Product</td>
+            <td style="padding: 10px 14px; border: 1px solid rgba(255, 255, 255, 0.08);"><i>n</i>(A &times; B) = <i>n</i>(A) &times; <i>n</i>(B) = <i>p</i> &times; <i>q</i></td>
+            <td style="padding: 10px 14px; border: 1px solid rgba(255, 255, 255, 0.08);">If either is infinite, A &times; B is infinite</td>
           </tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
-            <td style="padding: 10px 12px; font-weight: 600; color: #80D8FF;">Total Relations</td>
-            <td style="padding: 10px 12px;">Total Relations = 2<sup><i>n</i>(A &times; B)</sup> = 2<sup><i>pq</i></sup></td>
-            <td style="padding: 10px 12px;">Includes empty relation &empty; and universal relation</td>
+            <td style="padding: 10px 14px; font-weight: 700; color: #80D8FF; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">Total Relations</td>
+            <td style="padding: 10px 14px; border: 1px solid rgba(255, 255, 255, 0.08);">Total Relations = 2<sup><i>n</i>(A &times; B)</sup> = 2<sup><i>pq</i></sup></td>
+            <td style="padding: 10px 14px; border: 1px solid rgba(255, 255, 255, 0.08);">Includes empty relation &empty; and universal relation</td>
           </tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.08); background: rgba(255,255,255,0.02);">
-            <td style="padding: 10px 12px; font-weight: 600; color: #80D8FF;">Domain &amp; Range Rule</td>
-            <td style="padding: 10px 12px;">Domain &sube; Set A, &nbsp; Range &sube; Set B</td>
-            <td style="padding: 10px 12px;">Range &sube; Codomain always</td>
+            <td style="padding: 10px 14px; font-weight: 700; color: #80D8FF; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">Domain &amp; Range Rule</td>
+            <td style="padding: 10px 14px; border: 1px solid rgba(255, 255, 255, 0.08);">Domain &sube; Set A, &nbsp; Range &sube; Set B</td>
+            <td style="padding: 10px 14px; border: 1px solid rgba(255, 255, 255, 0.08);">Range &sube; Codomain always</td>
           </tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
-            <td style="padding: 10px 12px; font-weight: 600; color: #80D8FF;">Modulus Function</td>
-            <td style="padding: 10px 12px;"><i>f</i>(<i>x</i>) = |<i>x</i>|, &nbsp; Domain: &reals;, &nbsp; Range: [0, &infin;)</td>
-            <td style="padding: 10px 12px;">|<i>x</i>| &ge; 0 for all <i>x</i> &isin; &reals;</td>
+            <td style="padding: 10px 14px; font-weight: 700; color: #80D8FF; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">Modulus Function</td>
+            <td style="padding: 10px 14px; border: 1px solid rgba(255, 255, 255, 0.08);"><i>f</i>(<i>x</i>) = |<i>x</i>|, &nbsp; Domain: &reals;, &nbsp; Range: [0, &infin;)</td>
+            <td style="padding: 10px 14px; border: 1px solid rgba(255, 255, 255, 0.08);">|<i>x</i>| &ge; 0 for all <i>x</i> &isin; &reals;</td>
           </tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.08); background: rgba(255,255,255,0.02);">
-            <td style="padding: 10px 12px; font-weight: 600; color: #80D8FF;">Signum Function</td>
-            <td style="padding: 10px 12px;">sgn(<i>x</i>) = <span class="frac"><span class="num">|<i>x</i>|</span><span class="den"><i>x</i></span></span> (<i>x</i> &ne; 0), &nbsp; Range: {&minus;1, 0, 1}</td>
-            <td style="padding: 10px 12px;">sgn(0) = 0</td>
+            <td style="padding: 10px 14px; font-weight: 700; color: #80D8FF; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">Signum Function</td>
+            <td style="padding: 10px 14px; border: 1px solid rgba(255, 255, 255, 0.08);">sgn(<i>x</i>) = <span class="frac"><span class="num">|<i>x</i>|</span><span class="den"><i>x</i></span></span> (<i>x</i> &ne; 0), &nbsp; Range: {&minus;1, 0, 1}</td>
+            <td style="padding: 10px 14px; border: 1px solid rgba(255, 255, 255, 0.08);">sgn(0) = 0</td>
           </tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
-            <td style="padding: 10px 12px; font-weight: 600; color: #80D8FF;">Greatest Integer Function</td>
-            <td style="padding: 10px 12px;"><i>f</i>(<i>x</i>) = [<i>x</i>], &nbsp; Domain: &reals;, &nbsp; Range: &integers;</td>
-            <td style="padding: 10px 12px;"><i>x</i> &minus; 1 &lt; [<i>x</i>] &le; <i>x</i></td>
+            <td style="padding: 10px 14px; font-weight: 700; color: #80D8FF; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">Greatest Integer Function</td>
+            <td style="padding: 10px 14px; border: 1px solid rgba(255, 255, 255, 0.08);"><i>f</i>(<i>x</i>) = [<i>x</i>], &nbsp; Domain: &reals;, &nbsp; Range: &integers;</td>
+            <td style="padding: 10px 14px; border: 1px solid rgba(255, 255, 255, 0.08);"><i>x</i> &minus; 1 &lt; [<i>x</i>] &le; <i>x</i></td>
           </tr>
           <tr>
-            <td style="padding: 10px 12px; font-weight: 600; color: #80D8FF;">Quotient Function</td>
-            <td style="padding: 10px 12px;">(<span class="frac"><span class="num"><i>f</i></span><span class="den"><i>g</i></span></span>)(<i>x</i>) = <span class="frac"><span class="num"><i>f</i>(<i>x</i>)</span><span class="den"><i>g</i>(<i>x</i>)</span></span></td>
-            <td style="padding: 10px 12px;">Must exclude all zeros of <i>g</i>(<i>x</i>)</td>
+            <td style="padding: 10px 14px; font-weight: 700; color: #80D8FF; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.08);">Quotient Function</td>
+            <td style="padding: 10px 14px; border: 1px solid rgba(255, 255, 255, 0.08);">(<span class="frac"><span class="num"><i>f</i></span><span class="den"><i>g</i></span></span>)(<i>x</i>) = <span class="frac"><span class="num"><i>f</i>(<i>x</i>)</span><span class="den"><i>g</i>(<i>x</i>)</span></span></td>
+            <td style="padding: 10px 14px; border: 1px solid rgba(255, 255, 255, 0.08);">Must exclude all zeros of <i>g</i>(<i>x</i>)</td>
           </tr>
         </tbody>
       </table>

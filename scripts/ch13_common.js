@@ -122,21 +122,24 @@ const STYLES = `
   .stat-table th {
     background: rgba(17, 153, 142, 0.28);
     color: #38EF7D;
-    padding: 9px 8px;
+    padding: 9px 12px;
     font-weight: 700;
+    white-space: nowrap;
     border: 1px solid rgba(255, 255, 255, 0.12);
   }
   .stat-table td {
-    padding: 7px 8px;
+    padding: 8px 12px;
+    white-space: nowrap;
     border: 1px solid rgba(255, 255, 255, 0.08);
   }
   .stat-table tr:nth-child(even) {
     background: rgba(255, 255, 255, 0.03);
   }
   .stat-table tr.total-row {
-    background: rgba(17, 153, 142, 0.22);
+    background: rgba(17, 153, 142, 0.25);
     font-weight: 700;
     color: #38EF7D;
+    white-space: nowrap;
   }
   .diagram-wrapper {
     background: rgba(15, 23, 42, 0.9);

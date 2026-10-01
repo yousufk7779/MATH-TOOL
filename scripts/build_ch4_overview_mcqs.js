@@ -10,7 +10,7 @@ function getChapter4Overview() {
       ⚡ CHAPTER 4: COMPLEX NUMBERS &amp; QUADRATIC EQUATIONS
     </div>
     <div style="font-size: 15px; color: #FFB74D; font-weight: 600; margin-top: 4px;">
-      सम्मिश्र संख्याएं एवं द्विघातीय समीकरण &bull; Class 11 Mathematics Master Reference Guide
+      Complex Numbers &amp; Quadratic Equations &bull; Class 11 Mathematics Master Reference Guide
     </div>
     <div style="font-size: 13.5px; color: #CBD5E1; margin-top: 8px; line-height: 1.5;">
       Imaginary Unit <i>i</i> &bull; Standard Form <i>a</i> + <i>ib</i> &bull; Modulus &amp; Conjugate &bull; Argand Plane &amp; Polar Form &bull; Complex Quadratic Roots
@@ -109,50 +109,50 @@ function getChapter4Overview() {
     <div style="font-size: 20px; font-weight: 800; color: #FFB74D; text-align: center; margin-bottom: 14px; letter-spacing: 0.5px;">
       🏆 MASTER REVISION FORMULA CHEAT SHEET
     </div>
-    <div style="overflow-x: auto; -webkit-overflow-scrolling: touch;">
-      <table style="width: 100%; border-collapse: collapse; font-size: 14px; text-align: left; color: #E2E8F0;">
+    <div style="overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 14px 0; border-radius: 8px; border: 1.5px solid rgba(255, 145, 0, 0.35); background: rgba(15, 23, 42, 0.85);">
+      <table style="width: 100%; border-collapse: collapse; min-width: 520px; font-size: 14px; text-align: left; color: #E2E8F0;">
         <thead>
           <tr style="background: rgba(255, 145, 0, 0.25); color: #FFB74D; border-bottom: 2px solid #FF9100;">
-            <th style="padding: 10px 12px; font-weight: 700;">Formula Category</th>
-            <th style="padding: 10px 12px; font-weight: 700;">Standard Mathematical Relation</th>
-            <th style="padding: 10px 12px; font-weight: 700;">Notes &amp; Properties</th>
+            <th style="padding: 10px 14px; font-weight: 700; white-space: nowrap; border: 1px solid rgba(255, 145, 0, 0.3);">Formula Category</th>
+            <th style="padding: 10px 14px; font-weight: 700; white-space: nowrap; border: 1px solid rgba(255, 145, 0, 0.3);">Standard Mathematical Relation</th>
+            <th style="padding: 10px 14px; font-weight: 700; white-space: nowrap; border: 1px solid rgba(255, 145, 0, 0.3);">Notes &amp; Properties</th>
           </tr>
         </thead>
         <tbody>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
-            <td style="padding: 10px 12px; font-weight: 700; color: #FFB74D;">Powers of Iota</td>
-            <td style="padding: 10px 12px;"><i>i</i><sup>4<i>n</i></sup> = 1, &nbsp; <i>i</i><sup>4<i>n</i>+1</sup> = <i>i</i>, &nbsp; <i>i</i><sup>4<i>n</i>+2</sup> = &minus;1, &nbsp; <i>i</i><sup>4<i>n</i>+3</sup> = &minus;<i>i</i></td>
-            <td style="padding: 10px 12px;">Sum of 4 consecutive powers: <i>i</i><sup><i>n</i></sup> + <i>i</i><sup><i>n</i>+1</sup> + <i>i</i><sup><i>n</i>+2</sup> + <i>i</i><sup><i>n</i>+3</sup> = 0</td>
+            <td style="padding: 10px 14px; font-weight: 700; color: #FFB74D; white-space: nowrap; vertical-align: top; border: 1px solid rgba(255, 255, 255, 0.08);">Powers of Iota</td>
+            <td style="padding: 10px 14px; border: 1px solid rgba(255, 255, 255, 0.08);"><i>i</i><sup>4<i>n</i></sup> = 1, &nbsp; <i>i</i><sup>4<i>n</i>+1</sup> = <i>i</i>, &nbsp; <i>i</i><sup>4<i>n</i>+2</sup> = &minus;1, &nbsp; <i>i</i><sup>4<i>n</i>+3</sup> = &minus;<i>i</i></td>
+            <td style="padding: 10px 14px; border: 1px solid rgba(255, 255, 255, 0.08);">Sum of 4 consecutive powers: <i>i</i><sup><i>n</i></sup> + <i>i</i><sup><i>n</i>+1</sup> + <i>i</i><sup><i>n</i>+2</sup> + <i>i</i><sup><i>n</i>+3</sup> = 0</td>
           </tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.08); background: rgba(255,255,255,0.02);">
-            <td style="padding: 10px 12px; font-weight: 700; color: #FFB74D;">Modulus &amp; Product</td>
-            <td style="padding: 10px 12px;">|<i>z</i>| = &radic;(<i>a</i><sup>2</sup> + <i>b</i><sup>2</sup>), &nbsp;&nbsp; <i>z</i> &times; <i>z&#772;</i> = |<i>z</i>|<sup>2</sup></td>
-            <td style="padding: 10px 12px;">|<i>z</i><sub>1</sub><i>z</i><sub>2</sub>| = |<i>z</i><sub>1</sub>||<i>z</i><sub>2</sub>|, &nbsp; |<span class="frac"><span class="num"><i>z</i><sub>1</sub></span><span class="den"><i>z</i><sub>2</sub></span></span>| = <span class="frac"><span class="num">|<i>z</i><sub>1</sub>|</span><span class="den">|<i>z</i><sub>2</sub>|</span></span></td>
+            <td style="padding: 10px 14px; font-weight: 700; color: #FFB74D; white-space: nowrap; vertical-align: top; border: 1px solid rgba(255, 255, 255, 0.08);">Modulus &amp; Product</td>
+            <td style="padding: 10px 14px; border: 1px solid rgba(255, 255, 255, 0.08);">|<i>z</i>| = &radic;(<i>a</i><sup>2</sup> + <i>b</i><sup>2</sup>), &nbsp;&nbsp; <i>z</i> &times; <i>z&#772;</i> = |<i>z</i>|<sup>2</sup></td>
+            <td style="padding: 10px 14px; border: 1px solid rgba(255, 255, 255, 0.08);">|<i>z</i><sub>1</sub><i>z</i><sub>2</sub>| = |<i>z</i><sub>1</sub>||<i>z</i><sub>2</sub>|, &nbsp; |<span class="frac"><span class="num"><i>z</i><sub>1</sub></span><span class="den"><i>z</i><sub>2</sub></span></span>| = <span class="frac"><span class="num">|<i>z</i><sub>1</sub>|</span><span class="den">|<i>z</i><sub>2</sub>|</span></span></td>
           </tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
-            <td style="padding: 10px 12px; font-weight: 700; color: #FFB74D;">Multiplicative Inverse</td>
-            <td style="padding: 10px 12px;"><i>z</i><sup>&minus;1</sup> = <span class="frac"><span class="num"><i>z&#772;</i></span><span class="den">|<i>z</i>|<sup>2</sup></span></span> = <span class="frac"><span class="num"><i>a</i> &minus; <i>ib</i></span><span class="den"><i>a</i><sup>2</sup> + <i>b</i><sup>2</sup></span></span></td>
-            <td style="padding: 10px 12px;">Defined for all non-zero <i>z</i> &ne; 0</td>
+            <td style="padding: 10px 14px; font-weight: 700; color: #FFB74D; white-space: nowrap; vertical-align: top; border: 1px solid rgba(255, 255, 255, 0.08);">Multiplicative Inverse</td>
+            <td style="padding: 10px 14px; border: 1px solid rgba(255, 255, 255, 0.08);"><i>z</i><sup>&minus;1</sup> = <span class="frac"><span class="num"><i>z&#772;</i></span><span class="den">|<i>z</i>|<sup>2</sup></span></span> = <span class="frac"><span class="num"><i>a</i> &minus; <i>ib</i></span><span class="den"><i>a</i><sup>2</sup> + <i>b</i><sup>2</sup></span></span></td>
+            <td style="padding: 10px 14px; border: 1px solid rgba(255, 255, 255, 0.08);">Defined for all non-zero <i>z</i> &ne; 0</td>
           </tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.08); background: rgba(255,255,255,0.02);">
-            <td style="padding: 10px 12px; font-weight: 700; color: #FFB74D;">Polar Representation</td>
-            <td style="padding: 10px 12px;"><i>z</i> = <i>r</i>(cos &theta; + <i>i</i> sin &theta;)</td>
-            <td style="padding: 10px 12px;"><i>r</i> = |<i>z</i>|, &nbsp; Principal Argument &minus;&pi; &lt; &theta; &le; &pi;</td>
+            <td style="padding: 10px 14px; font-weight: 700; color: #FFB74D; white-space: nowrap; vertical-align: top; border: 1px solid rgba(255, 255, 255, 0.08);">Polar Representation</td>
+            <td style="padding: 10px 14px; border: 1px solid rgba(255, 255, 255, 0.08);"><i>z</i> = <i>r</i>(cos &theta; + <i>i</i> sin &theta;)</td>
+            <td style="padding: 10px 14px; border: 1px solid rgba(255, 255, 255, 0.08);"><i>r</i> = |<i>z</i>|, &nbsp; Principal Argument &minus;&pi; &lt; &theta; &le; &pi;</td>
           </tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
-            <td style="padding: 10px 12px; font-weight: 700; color: #FFB74D;">Argument in Quadrants</td>
-            <td style="padding: 10px 12px;">
+            <td style="padding: 10px 14px; font-weight: 700; color: #FFB74D; white-space: nowrap; vertical-align: top; border: 1px solid rgba(255, 255, 255, 0.08);">Argument in Quadrants</td>
+            <td style="padding: 10px 14px; border: 1px solid rgba(255, 255, 255, 0.08);">
               Q I: &theta; = &alpha;<br/>
               Q II: &theta; = &pi; &minus; &alpha;<br/>
               Q III: &theta; = &minus;(&pi; &minus; &alpha;)<br/>
               Q IV: &theta; = &minus;&alpha;
             </td>
-            <td style="padding: 10px 12px;">Where acute angle &alpha; = tan<sup>&minus;1</sup>|<span class="frac"><span class="num"><i>b</i></span><span class="den"><i>a</i></span></span>|</td>
+            <td style="padding: 10px 14px; border: 1px solid rgba(255, 255, 255, 0.08);">Where acute angle &alpha; = tan<sup>&minus;1</sup>|<span class="frac"><span class="num"><i>b</i></span><span class="den"><i>a</i></span></span>|</td>
           </tr>
           <tr>
-            <td style="padding: 10px 12px; font-weight: 700; color: #FFB74D;">Quadratic Formula (D &lt; 0)</td>
-            <td style="padding: 10px 12px;"><i>x</i> = <span class="frac"><span class="num">&minus;<i>b</i> &plusmn; <i>i</i>&radic;(4<i>ac</i> &minus; <i>b</i><sup>2</sup>)</span><span class="den">2<i>a</i></span></span></td>
-            <td style="padding: 10px 12px;">Roots are complex conjugates of each other</td>
+            <td style="padding: 10px 14px; font-weight: 700; color: #FFB74D; white-space: nowrap; vertical-align: top; border: 1px solid rgba(255, 255, 255, 0.08);">Quadratic Formula (D &lt; 0)</td>
+            <td style="padding: 10px 14px; border: 1px solid rgba(255, 255, 255, 0.08);"><i>x</i> = <span class="frac"><span class="num">&minus;<i>b</i> &plusmn; <i>i</i>&radic;(4<i>ac</i> &minus; <i>b</i><sup>2</sup>)</span><span class="den">2<i>a</i></span></span></td>
+            <td style="padding: 10px 14px; border: 1px solid rgba(255, 255, 255, 0.08);">Roots are complex conjugates of each other</td>
           </tr>
         </tbody>
       </table>

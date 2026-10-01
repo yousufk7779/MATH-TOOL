@@ -59,7 +59,7 @@ function buildOverview() {
   </div>`;
 
   const octantTableHtml = `
-  <div style="overflow-x: auto; margin: 14px 0;">
+  <div style="overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 14px 0; border-radius: 8px; border: 1.5px solid rgba(255, 61, 0, 0.35); background: rgba(15, 23, 42, 0.85);">
     <table class="octant-table">
       <thead>
         <tr>
@@ -128,8 +128,8 @@ function buildOverview() {
   .diagram-svg-container { display: flex; justify-content: center; align-items: center; background: #FFFFFF; border-radius: 8px; padding: 8px; border: 1px solid rgba(255,255,255,0.1); margin: 0 auto; max-width: 480px; }
   .diagram-caption { color: #CBD5E1; font-size: 14px; text-align: center; margin-top: 10px; line-height: 1.5; font-weight: 500; }
   .octant-table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 14px; color: #FFFFFF; }
-  .octant-table th, .octant-table td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 8px 6px; text-align: center; }
-  .octant-table th { background: rgba(255, 61, 0, 0.2); color: ${THEME_COLOR}; font-weight: 700; }
+  .octant-table th, .octant-table td { border: 1px solid rgba(255, 255, 255, 0.18); padding: 9px 12px; text-align: center; white-space: nowrap; }
+  .octant-table th { background: rgba(255, 61, 0, 0.25); color: #FF6E40; font-weight: 700; white-space: nowrap; }
 </style>
 
 <div style="padding: 4px 2px;">
