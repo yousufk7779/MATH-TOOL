@@ -17,9 +17,11 @@ import QuizScreen from "@/screens/QuizScreen";
 
 import ClassSelectorScreen from "@/screens/ClassSelectorScreen";
 import Class12Screen from "@/screens/Class12Screen";
+import Class12ScienceScreen from "@/screens/Class12ScienceScreen";
 import Class12BiologyScreen from "@/screens/Class12BiologyScreen";
 import Class12EnglishScreen from "@/screens/Class12EnglishScreen";
 import Class11Screen from "@/screens/Class11Screen";
+import Class11ScienceScreen from "@/screens/Class11ScienceScreen";
 import Class11BiologyScreen from "@/screens/Class11BiologyScreen";
 import Class11EnglishScreen from "@/screens/Class11EnglishScreen";
 import Class9Screen from "@/screens/Class9Screen";
@@ -34,9 +36,11 @@ export type RootStackParamList = {
   ClassSelector: undefined;
   Home: undefined;
   Class12: undefined;
+  Class12Science: undefined;
   Class12Biology: undefined;
   Class12English: undefined;
   Class11: undefined;
+  Class11Science: undefined;
   Class11Biology: undefined;
   Class11English: undefined;
   Class9: undefined;
@@ -79,9 +83,11 @@ export default function RootStackNavigator() {
       <Stack.Screen name="ClassSelector" component={ClassSelectorScreen} />
       <Stack.Screen name="Home" component={HomeScreen} />
       <Stack.Screen name="Class12" component={Class12Screen} />
+      <Stack.Screen name="Class12Science" component={Class12ScienceScreen} />
       <Stack.Screen name="Class12Biology" component={Class12BiologyScreen} />
       <Stack.Screen name="Class12English" component={Class12EnglishScreen} />
       <Stack.Screen name="Class11" component={Class11Screen} />
+      <Stack.Screen name="Class11Science" component={Class11ScienceScreen} />
       <Stack.Screen name="Class11Biology" component={Class11BiologyScreen} />
       <Stack.Screen name="Class11English" component={Class11EnglishScreen} />
       <Stack.Screen name="Class9" component={Class9Screen} />

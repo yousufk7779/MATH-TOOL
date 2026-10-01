@@ -2,7 +2,6 @@ import React, { memo } from "react";
 import { StyleSheet, View, ScrollView } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
-
 import { LinearGradient } from "expo-linear-gradient";
 
 import { ScreenWrapper } from "@/components/ScreenWrapper";
@@ -11,16 +10,16 @@ import { ThemedText } from "@/components/ThemedText";
 import { Spacing } from "@/constants/theme";
 import { RootStackParamList } from "@/navigation/RootStackNavigator";
 
-type Class11ScreenNavigationProp = NativeStackNavigationProp<
+type Class11ScienceScreenNavigationProp = NativeStackNavigationProp<
   RootStackParamList,
-  "Class11"
+  "Class11Science"
 >;
 
-function Class11Screen() {
-  const navigation = useNavigation<Class11ScreenNavigationProp>();
+function Class11ScienceScreen() {
+  const navigation = useNavigation<Class11ScienceScreenNavigationProp>();
 
   return (
-    <ScreenWrapper showBackButton hideHomeButton homeRoute="ClassSelector">
+    <ScreenWrapper showBackButton hideHomeButton homeRoute="Class11">
       <ScrollView
         style={styles.scrollView}
         contentContainerStyle={[styles.content, styles.centeredContent]}
@@ -28,7 +27,7 @@ function Class11Screen() {
       >
         <View style={styles.headerContainer}>
           <View style={styles.titleRow}>
-            <ThemedText style={styles.titleWhite}>Select Your Subject</ThemedText>
+            <ThemedText style={styles.titleWhite}>Select Science Subject</ThemedText>
           </View>
 
           <View style={styles.decorationContainer}>
@@ -54,73 +53,68 @@ function Class11Screen() {
         </View>
 
         <View style={styles.buttonsContainer}>
-          {/* 1. ENGLISH BUTTON */}
+          {/* 1. PHYSICS BUTTON */}
           <View style={styles.buttonWrapper}>
             <ColorButton
-              testID="button-english"
-              title="ENGLISH"
-              icon="📖"
-              colors={["#ec008c", "#fc6767"]}
-              onPress={() => navigation.navigate("Class11English")}
-            />
-          </View>
-
-          {/* 2. MATHEMATICS BUTTON */}
-          <View style={styles.buttonWrapper}>
-            <ColorButton
-              testID="button-mathematics"
-              title="MATHEMATICS"
-              icon="📐"
-              colors={["#2979FF", "#00B0FF"]}
+              testID="button-physics"
+              title="PHYSICS"
+              icon="⚡"
+              colors={["#FF512F", "#DD2476"]}
               onPress={() =>
                 navigation.navigate("ChapterList", {
                   subject: "Class 11 Science",
-                  topic: "Mathematics",
+                  topic: "Physics",
                   className: "Class 11",
                 })
               }
             />
           </View>
 
-          {/* 3. SCIENCE BUTTON (LEADS TO PHYSICS, CHEMISTRY, BOTANY, ZOOLOGY) */}
+          {/* 2. CHEMISTRY BUTTON */}
           <View style={styles.buttonWrapper}>
             <ColorButton
-              testID="button-science"
-              title="SCIENCE"
-              icon="🔬"
+              testID="button-chemistry"
+              title="CHEMISTRY"
+              icon="🧪"
+              colors={["#8E2DE2", "#4A00E0"]}
+              onPress={() =>
+                navigation.navigate("ChapterList", {
+                  subject: "Class 11 Science",
+                  topic: "Chemistry",
+                  className: "Class 11",
+                })
+              }
+            />
+          </View>
+
+          {/* 3. BOTANY BUTTON */}
+          <View style={styles.buttonWrapper}>
+            <ColorButton
+              testID="button-botany"
+              title="BOTANY"
+              icon="🌿"
               colors={["#11998e", "#38ef7d"]}
-              onPress={() => navigation.navigate("Class11Science")}
-            />
-          </View>
-
-          {/* 4. EDUCATION BUTTON */}
-          <View style={styles.buttonWrapper}>
-            <ColorButton
-              testID="button-education"
-              title="EDUCATION"
-              icon="🎓"
-              colors={["#F39C12", "#D35400"]}
               onPress={() =>
                 navigation.navigate("ChapterList", {
-                  subject: "Class 11 Arts",
-                  topic: "Education",
+                  subject: "Class 11 Science",
+                  topic: "Botany",
                   className: "Class 11",
                 })
               }
             />
           </View>
 
-          {/* 5. POLITICAL SCIENCE BUTTON */}
+          {/* 4. ZOOLOGY BUTTON */}
           <View style={styles.buttonWrapper}>
             <ColorButton
-              testID="button-political-science"
-              title="POLITICAL SCIENCE"
-              icon="🏛️"
-              colors={["#0083B0", "#00B4DB"]}
+              testID="button-zoology"
+              title="ZOOLOGY"
+              icon="🦁"
+              colors={["#00b09b", "#96c93d"]}
               onPress={() =>
                 navigation.navigate("ChapterList", {
-                  subject: "Class 11 Arts",
-                  topic: "Political Science",
+                  subject: "Class 11 Science",
+                  topic: "Zoology",
                   className: "Class 11",
                 })
               }
@@ -132,7 +126,7 @@ function Class11Screen() {
   );
 }
 
-export default memo(Class11Screen);
+export default memo(Class11ScienceScreen);
 
 const styles = StyleSheet.create({
   scrollView: {

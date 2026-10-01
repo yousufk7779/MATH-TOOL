@@ -54,41 +54,18 @@ function Class12Screen() {
         </View>
 
         <View style={styles.buttonsContainer}>
-          {/* 1. PHYSICS BUTTON */}
+          {/* 1. ENGLISH BUTTON */}
           <View style={styles.buttonWrapper}>
             <ColorButton
-              testID="button-physics"
-              title="PHYSICS"
-              icon="⚡"
-              colors={["#FF512F", "#DD2476"]}
-              onPress={() =>
-                navigation.navigate("ChapterList", {
-                  subject: "Class 12 Science",
-                  topic: "Physics",
-                  className: "Class 12",
-                })
-              }
+              testID="button-english-12"
+              title="ENGLISH"
+              icon="📖"
+              colors={["#ec008c", "#fc6767"]}
+              onPress={() => navigation.navigate("Class12English")}
             />
           </View>
 
-          {/* 2. CHEMISTRY BUTTON */}
-          <View style={styles.buttonWrapper}>
-            <ColorButton
-              testID="button-chemistry"
-              title="CHEMISTRY"
-              icon="🧪"
-              colors={["#8E2DE2", "#4A00E0"]}
-              onPress={() =>
-                navigation.navigate("ChapterList", {
-                  subject: "Class 12 Science",
-                  topic: "Chemistry",
-                  className: "Class 12",
-                })
-              }
-            />
-          </View>
-
-          {/* 3. MATHEMATICS BUTTON */}
+          {/* 2. MATHEMATICS BUTTON */}
           <View style={styles.buttonWrapper}>
             <ColorButton
               testID="button-mathematics"
@@ -105,29 +82,18 @@ function Class12Screen() {
             />
           </View>
 
-          {/* 3. BIOLOGY BUTTON (EXACT ZOOLOGY COLOR, NAVIGATES TO CLASS 12 BIOLOGY SCREEN) */}
+          {/* 3. SCIENCE BUTTON (LEADS TO PHYSICS, CHEMISTRY, BOTANY, ZOOLOGY) */}
           <View style={styles.buttonWrapper}>
             <ColorButton
-              testID="button-biology"
-              title="BIOLOGY"
-              icon="🧬"
-              colors={["#00b09b", "#96c93d"]}
-              onPress={() => navigation.navigate("Class12Biology")}
+              testID="button-science-12"
+              title="SCIENCE"
+              icon="🔬"
+              colors={["#11998e", "#38ef7d"]}
+              onPress={() => navigation.navigate("Class12Science")}
             />
           </View>
 
-          {/* 4. ENGLISH BUTTON */}
-          <View style={styles.buttonWrapper}>
-            <ColorButton
-              testID="button-english-12"
-              title="ENGLISH"
-              icon="📖"
-              colors={["#ec008c", "#fc6767"]}
-              onPress={() => navigation.navigate("Class12English")}
-            />
-          </View>
-
-          {/* 5. EDUCATION BUTTON */}
+          {/* 4. EDUCATION BUTTON */}
           <View style={styles.buttonWrapper}>
             <ColorButton
               testID="button-education"
