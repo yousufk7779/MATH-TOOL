@@ -46,14 +46,14 @@ function buildOverview() {
         <!-- Curve y = f(x) -->
         <path d="M 90 170 Q 200 150 360 40" fill="none" stroke="#7C3AED" stroke-width="2.8"/>
         <!-- Tangent Line at P -->
-        <line x1="100" y1="180" x2="340" y2="50" stroke="#FF4081" stroke-width="2.2"/>
-        <text x="345" y="55" font-size="11" font-weight="700" fill="#FF4081">Tangent (Slope = f'(x))</text>
+        <line x1="100" y1="180" x2="340" y2="50" stroke="#00B0FF" stroke-width="2.2"/>
+        <text x="345" y="55" font-size="11" font-weight="700" fill="#00B0FF">Tangent (Slope = f'(x))</text>
         <!-- Secant Line PQ -->
         <line x1="150" y1="170" x2="360" y2="40" stroke="#0284C7" stroke-width="1.5" stroke-dasharray="4,4"/>
         <text x="270" y="115" font-size="11" font-weight="700" fill="#0284C7">Secant chord</text>
         <!-- Points P and Q -->
-        <circle cx="180" cy="140" r="4.5" fill="#FF4081"/>
-        <text x="145" y="135" font-size="11" font-weight="700" fill="#FF4081">P(x, f(x))</text>
+        <circle cx="180" cy="140" r="4.5" fill="#00B0FF"/>
+        <text x="145" y="135" font-size="11" font-weight="700" fill="#00B0FF">P(x, f(x))</text>
         <circle cx="310" cy="72" r="4.5" fill="#0284C7"/>
         <text x="295" y="62" font-size="11" font-weight="700" fill="#0284C7">Q(x+h, f(x+h))</text>
       </svg>
@@ -73,14 +73,14 @@ function buildOverview() {
   .sol-title { font-size: 15.5px; font-weight: 800; color: #E2E8F0; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }
   .sol-step { font-size: 15px; color: #E2E8F0; line-height: 2.35; text-align: left !important; }
   .sol-step div { margin-top: 6px; margin-bottom: 6px; text-align: left !important; }
-  .diagram-wrapper { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 64, 129, 0.4); border-radius: 10px; padding: 14px 16px; margin: 18px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.35); text-align: center; }
+  .diagram-wrapper { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(0, 176, 255, 0.4); border-radius: 10px; padding: 14px 16px; margin: 18px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.35); text-align: center; }
   .diagram-svg-container { display: flex; justify-content: center; align-items: center; background: #FFFFFF; border-radius: 8px; padding: 8px; border: 1px solid rgba(255,255,255,0.1); margin: 0 auto; max-width: 480px; }
   .diagram-caption { color: #CBD5E1; font-size: 14px; text-align: center; margin-top: 10px; line-height: 1.5; font-weight: 500; }
 </style>
 
 <div style="padding: 4px 2px;">
   <!-- Hero Banner -->
-  <div style="background: linear-gradient(135deg, rgba(255, 64, 129, 0.25), rgba(0, 0, 0, 0.4)); border: 1.5px solid ${THEME_COLOR}; border-radius: 14px; padding: 18px; margin-bottom: 20px; text-align: center;">
+  <div style="background: linear-gradient(135deg, rgba(0, 176, 255, 0.25), rgba(0, 0, 0, 0.4)); border: 1.5px solid ${THEME_COLOR}; border-radius: 14px; padding: 18px; margin-bottom: 20px; text-align: center;">
     <div style="font-size: 22px; font-weight: 800; color: ${THEME_COLOR}; margin-bottom: 6px;">
       ✦ Chapter 12: Limits and Derivatives
     </div>

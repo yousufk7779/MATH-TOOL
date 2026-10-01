@@ -1,5 +1,5 @@
 // Common styling and helper functions for Class 11 Math Chapter 12: Limits and Derivatives
-const THEME_COLOR = "#FF4081";
+const THEME_COLOR = "#00B0FF";
 
 const STYLES = `
 <style>
@@ -104,7 +104,7 @@ const STYLES = `
   }
   .diagram-wrapper {
     background: rgba(15, 23, 42, 0.9);
-    border: 1.5px solid rgba(255, 64, 129, 0.4);
+    border: 1.5px solid rgba(0, 176, 255, 0.4);
     border-radius: 10px;
     padding: 14px 16px;
     margin: 18px 0;
@@ -161,13 +161,12 @@ function qCard(qNum, qText, stepsHtml, ansVal) {
 function exBanner(exTitle, exSubtitle) {
   return `
   <!-- Exercise Banner -->
-  <div style="background: linear-gradient(135deg, rgba(255, 64, 129, 0.18), rgba(0,0,0,0.3)); border: 1.5px solid ${THEME_COLOR}; border-radius: 12px; padding: 14px; margin-bottom: 20px; text-align: center;">
+  <div style="background: linear-gradient(135deg, rgba(0, 176, 255, 0.18), rgba(0,0,0,0.3)); border: 1.5px solid ${THEME_COLOR}; border-radius: 12px; padding: 14px; margin-bottom: 20px; text-align: center;">
     <div style="font-size: 18px; font-weight: 800; color: ${THEME_COLOR};">
       📘 Limits &amp; Derivatives &bull; ${exTitle}
     </div>
     <div style="color: #CBD5E1; font-size: 13.5px; margin-top: 4px;">
       ${exSubtitle} &bull; Class 11 Mathematics
-    </div>
   </div>`;
 }
 
