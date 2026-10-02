@@ -19,6 +19,7 @@ import { ScreenWrapper } from "@/components/ScreenWrapper";
 import { ThemedText } from "@/components/ThemedText";
 import { EmptyState } from "@/components/EmptyState";
 import { ZoomableScrollView } from "@/components/ZoomableScrollView";
+import { HtmlImage } from "@/components/HtmlImage";
 
 import {
   JiguuColors,
@@ -97,6 +98,18 @@ const HtmlText = memo(
     };
 
     const renderers = {
+      img: ({ tnode }: any) => {
+        const src = tnode?.attributes?.src || "";
+        const alt = tnode?.attributes?.alt || "";
+        if (!src) return null;
+        return (
+          <HtmlImage
+            src={src}
+            alt={alt}
+            containerWidth={width - 48}
+          />
+        );
+      },
       webview: ({ tnode }: any) => {
         // Extract inner HTML from the custom tag
         const htmlContent = tnode.init.domNode.children[0]?.data || "";

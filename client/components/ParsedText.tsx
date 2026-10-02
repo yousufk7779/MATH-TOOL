@@ -2,6 +2,7 @@ import React, { memo } from "react";
 import { useWindowDimensions } from "react-native";
 import RenderHtml, { defaultSystemFonts } from "react-native-render-html";
 import { JiguuColors } from "@/constants/theme";
+import { HtmlImage } from "@/components/HtmlImage";
 
 interface ParsedTextProps {
   children: string;
@@ -104,6 +105,21 @@ export const ParsedText = memo(
       "NotoSans_400Regular",
     ];
 
+    const renderers = {
+      img: ({ tnode }: any) => {
+        const src = tnode?.attributes?.src || "";
+        const alt = tnode?.attributes?.alt || "";
+        if (!src) return null;
+        return (
+          <HtmlImage
+            src={src}
+            alt={alt}
+            containerWidth={width - 48}
+          />
+        );
+      },
+    };
+
     return (
       <RenderHtml
         contentWidth={width - 48}
@@ -113,6 +129,7 @@ export const ParsedText = memo(
         baseStyle={flattenedStyle as any}
         enableExperimentalMarginCollapsing={true}
         systemFonts={systemFonts}
+        renderers={renderers as any}
         defaultTextProps={{ maxFontSizeMultiplier: 1.25 }}
         {...rest}
       />
