@@ -255,17 +255,27 @@ Full authoritative rules, CBSE & JKBOSE 5 units mapping (14 chapters), specializ
 ---
 
 ## Class 10 Science Master Blueprint & Gold Standards
+*(Also serves as the Master Template for Class 9 Science Upgrade)*
 
-Full authoritative rules, JKBOSE & CBSE 3 branches mapping (13 chapters: Physics 4, Chemistry 4, Biology 5), exact 385 questions inventory, and UI standards are permanently recorded in:
+Full authoritative rules, JKBOSE & CBSE 3 branches mapping (13 chapters: Physics 4, Chemistry 4, Biology 5), exact 352 questions inventory, and UI standards are permanently recorded in:
 👉 `.agents/CLASS_10_SCIENCE_BLUEPRINT.md`
 
 ### Core Class 10 Science Directives:
-1. **Zero Content Omission Guarantee**: Every single question and sub-part (385 questions across all 13 chapters) already present in the app must be preserved verbatim.
-2. **Zero Extra Questions Guarantee**: Do not insert arbitrary extra questions; upgrade the quality and depth of the existing questions to Class 11 & 12 Gold Standard.
-3. **Strict Structure Preservation**: Preserve the chapter schema (`ChapterContent`: `introduction`, `definitions`, `keyPoints`, `formulas`, `crux`, `summary`, `exercises` [In-Text + Exercise], `mcqs`).
-4. **Strict Diagram Preservation (100 Diagrams)**: All 100 diagrams currently embedded in `client/data/content/` must remain 100% intact, rendered via `HtmlImage` inside `#FFFFFF` high-contrast cards.
-5. **Class 11 & 12 Gold Standard Scientific Rigor**:
-   - Physics: Step-by-step Cartesian sign conventions, vertically stacked fractions, formula substitution, and units.
-   - Chemistry: Balanced equations with physical state symbols `(s)`, `(l)`, `(g)`, `(aq)` and reaction conditions.
-   - Biology: Anatomical mechanisms, scientific terms, and responsive comparison tables.
-6. **Chapter-by-Chapter Execution**: Upgrade systematically chapter-by-chapter.
+1. **100% Rich Web View Architecture (`isHtmlView: true`)**: All chapters built using rich HTML/CSS Web View for dark-mode cards, theme-colored borders, and custom science typography.
+2. **Zero Content Omission Guarantee**: Every single question and sub-part (352 questions across all 13 chapters: Exercise + In-Text) already present in the app must be preserved verbatim.
+3. **Zero Extra Questions Guarantee**: Do not insert arbitrary extra questions; maintain exact NCERT textbook questions with Class 11 & 12 Gold Standard depth and rigor.
+4. **Tab 1 Quick Revision (`htmlOverview`)**:
+   - Single-frame **Quick Glossary & Basic Definitions** card with responsive definition grid and theme color left borders.
+   - Main section headings underlined in `themeColor` with Roman subtopics `(i), (ii)`.
+   - High-contrast Educational Boxes: `📌 DEFINITION` (theme border), `💡 REAL-WORLD INTUITION` (dashed cyan border), and `⚠️ EXAM TRAP & BOARD TIP` (amber border).
+   - Standalone Clean Diagram Cards (`#FFFDF8` white image background container, caption below, zero duplicate top titles).
+   - End-of-chapter **✦ Master Revision Formula Cheat Sheet** in stacked fraction format with zero carets.
+5. **Tab 2 NCERT Solutions (`htmlExercises`)**:
+   - Dedicated sub-tabs for `"exercise"` (NCERT Exercise) and `"in-text"` (In-Text Questions).
+   - Each question enclosed in a sleek dark card (`background: rgba(0,0,0,0.25); border: 1.2px solid rgba(${rgb}, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0;`).
+   - Question header `Q{num}: ...` in `themeColor`.
+   - Solution container with `border-left: 3.5px solid ${themeColor}`.
+   - Any embedded diagrams centered in `#FFFDF8` white rounded containers.
+   - Final answer in crisp `#4CAF50` green box (`✓ Final Answer: ...`).
+6. **Tab 3 Interactive MCQs**: Exactly 10 smart interactive questions with green/red option feedback and gamified result dashboard.
+7. **Class 9 Science Replication**: When upgrading Class 9 Science (Physics 5, Chemistry 4, Biology 3 chapters), strictly replicate this exact 3-tab HTML Web View architecture, theme color mapping, and dark card styling.
