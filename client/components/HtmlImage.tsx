@@ -10,13 +10,14 @@ import { BorderRadius, Spacing } from "@/constants/theme";
 export function getBase64ImageDimensions(
   src: string
 ): { width: number; height: number; aspectRatio: number } | null {
-  if (!src || typeof src !== "string" || !src.startsWith("data:image/")) return null;
-  const commaIdx = src.indexOf(",");
+  const cleanSrc = (src || "").trim();
+  if (!cleanSrc.startsWith("data:image/")) return null;
+  const commaIdx = cleanSrc.indexOf(",");
   if (commaIdx === -1) return null;
 
-  const header = src.substring(0, commaIdx).toLowerCase();
-  // Decode up to 4096 base64 characters (sufficient for PNG and JPEG headers)
-  const base64Chunk = src.substring(commaIdx + 1, commaIdx + 1 + 4096);
+  const header = cleanSrc.substring(0, commaIdx).toLowerCase();
+  // Decode up to 32768 characters to safely catch deep JPEG/WebP/PNG frames
+  const base64Chunk = cleanSrc.substring(commaIdx + 1, commaIdx + 1 + 32768);
 
   let bin: string;
   try {
@@ -43,6 +44,28 @@ export function getBase64ImageDimensions(
     const height = h >>> 0;
     if (width > 0 && height > 0 && width < 10000 && height < 10000) {
       return { width, height, aspectRatio: width / height };
+    }
+  }
+
+  // WebP: RIFF ... WEBP (VP8, VP8L, VP8X)
+  if (header.includes("webp") && bin.length >= 30) {
+    const chunk = bin.substring(12, 16);
+    if (chunk === "VP8 ") {
+      const width = (bin.charCodeAt(26) | (bin.charCodeAt(27) << 8)) & 0x3fff;
+      const height = (bin.charCodeAt(28) | (bin.charCodeAt(29) << 8)) & 0x3fff;
+      if (width > 0 && height > 0) return { width, height, aspectRatio: width / height };
+    } else if (chunk === "VP8L") {
+      const b1 = bin.charCodeAt(21);
+      const b2 = bin.charCodeAt(22);
+      const b3 = bin.charCodeAt(23);
+      const b4 = bin.charCodeAt(24);
+      const width = 1 + (((b2 & 0x3f) << 8) | b1);
+      const height = 1 + (((b4 & 0x0f) << 10) | (b3 << 2) | ((b2 & 0xc0) >> 6));
+      if (width > 0 && height > 0) return { width, height, aspectRatio: width / height };
+    } else if (chunk === "VP8X") {
+      const width = 1 + (bin.charCodeAt(24) | (bin.charCodeAt(25) << 8) | (bin.charCodeAt(26) << 16));
+      const height = 1 + (bin.charCodeAt(27) | (bin.charCodeAt(28) << 8) | (bin.charCodeAt(29) << 16));
+      if (width > 0 && height > 0) return { width, height, aspectRatio: width / height };
     }
   }
 
@@ -89,21 +112,22 @@ export const HtmlImage = memo(function HtmlImage({
 }: HtmlImageProps) {
   const { width: windowWidth } = useWindowDimensions();
   const safeContainerWidth = containerWidth ?? windowWidth - 48;
+  const cleanSrc = (src || "").trim();
 
   const [aspectRatio, setAspectRatio] = useState<number>(() => {
-    const dims = getBase64ImageDimensions(src);
+    const dims = getBase64ImageDimensions(cleanSrc);
     return dims ? dims.aspectRatio : 1.75;
   });
 
   useEffect(() => {
-    if (!src) return;
-    const dims = getBase64ImageDimensions(src);
+    if (!cleanSrc) return;
+    const dims = getBase64ImageDimensions(cleanSrc);
     if (dims) {
       setAspectRatio(dims.aspectRatio);
-    } else if (!src.startsWith("data:")) {
+    } else if (!cleanSrc.startsWith("data:")) {
       // Remote HTTP/HTTPS URL fallback
       Image.getSize(
-        src,
+        cleanSrc,
         (w, h) => {
           if (w > 0 && h > 0) {
             setAspectRatio(w / h);
@@ -112,7 +136,7 @@ export const HtmlImage = memo(function HtmlImage({
         () => {}
       );
     }
-  }, [src]);
+  }, [cleanSrc]);
 
   // Compute responsive dimensions
   const maxWidth = Math.max(safeContainerWidth, 240);
@@ -122,7 +146,7 @@ export const HtmlImage = memo(function HtmlImage({
     <View style={styles.outerWrapper}>
       <View style={[styles.card, { maxWidth }]}>
         <Image
-          source={{ uri: src }}
+          source={{ uri: cleanSrc }}
           style={[styles.image, { height: targetHeight }]}
           resizeMode="contain"
         />
