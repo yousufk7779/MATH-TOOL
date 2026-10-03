@@ -968,7 +968,7 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
         color: "#00C853",
       },
       { id: "c9-sci-phy-4", number: 4, name: "Gravitation", color: "#00E5FF" },
-      { id: "c9-sci-phy-5", number: 5, name: "Floatation", color: "#26C6DA" },
+      { id: "c9-sci-phy-5", number: 5, name: "Floatation", color: "#2979FF" },
       { id: "c9-sci-phy-6", number: 6, name: "Sound", color: "#BA68C8" },
     ],
     Chemistry: [
@@ -1374,7 +1374,7 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
   if (chapterId === "c9-sci-phy-2") return ["#FF9800", "#F57C00"]; // Warm Amber (Force and Laws of Motion)
   if (chapterId === "c9-sci-phy-3") return ["#00C853", "#009624"]; // Vibrant Emerald (Work, Energy and Power)
   if (chapterId === "c9-sci-phy-4") return ["#00E5FF", "#0097A7"]; // Electric Cyan (Gravitation)
-  if (chapterId === "c9-sci-phy-5") return ["#26C6DA", "#00838F"]; // Ocean Teal (Floatation)
+  if (chapterId === "c9-sci-phy-5") return ["#2979FF", "#1565C0"]; // Marine Royal Blue (Floatation)
   if (chapterId === "c9-sci-phy-6") return ["#BA68C8", "#8E24AA"]; // Acoustic Amethyst (Sound)
 
   // Chemistry (4 Chapters)
