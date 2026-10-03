@@ -2,7 +2,7 @@
   "expo": {
     "name": "NCERT SOLUTIONS",
     "slug": "jiguu-math-solutions",
-    "version": "1.0.17",
+    "version": "1.0.18",
     "orientation": "default",
     "icon": "./assets/images/icon.png",
     "scheme": "jiguu-solutions",
@@ -12,7 +12,7 @@
       "bundleIdentifier": "com.jiguu.mathtool"
     },
     "android": {
-      "versionCode": 9,
+      "versionCode": 10,
       "adaptiveIcon": {
         "backgroundColor": "#0B0F1A",
         "foregroundImage": "./assets/images/icon.png"
