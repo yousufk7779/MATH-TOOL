@@ -1004,12 +1004,12 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
         name: "The Fundamental Unit of Life",
         color: "#4CAF50",
       },
-      { id: "c9-sci-bio-2", number: 2, name: "Tissues", color: "#00E676" },
+      { id: "c9-sci-bio-2", number: 2, name: "Tissues", color: "#FFB300" },
       {
         id: "c9-sci-bio-3",
         number: 3,
         name: "Improvement in Food Resources",
-        color: "#8BC34A",
+        color: "#00BFA5",
       },
       {
         id: "c9-sci-bio-4",
@@ -1385,8 +1385,8 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
 
   // Biology (4 Chapters)
   if (chapterId === "c9-sci-bio-1") return ["#4CAF50", "#2E7D32"]; // Cell Leaf Green (The Fundamental Unit of Life)
-  if (chapterId === "c9-sci-bio-2") return ["#00E676", "#00A344"]; // Histology Spring Green (Tissues)
-  if (chapterId === "c9-sci-bio-3") return ["#8BC34A", "#558B2F"]; // Agri Lime Green (Improvement in Food Resources)
+  if (chapterId === "c9-sci-bio-2") return ["#FFB300", "#FF8F00"]; // Histology Amber Gold (Tissues)
+  if (chapterId === "c9-sci-bio-3") return ["#00BFA5", "#00796B"]; // Agri Aquatic Teal (Improvement in Food Resources)
   if (chapterId === "c9-sci-bio-4") return ["#FF4081", "#D81B60"]; // Health Rose Pink (Prevention of Drug Abuse and STDs)
 
   // Class 10 Mathematics (Full Blueprint & Content Theme Color Alignment)
