@@ -707,20 +707,20 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
         id: "sci-phy-1",
         number: 1,
         name: "Light - Reflection and Refraction",
-        color: "#E91E63",
+        color: "#FF5722",
       },
       {
         id: "sci-phy-2",
         number: 2,
         name: "The Human Eye and the Colourful World",
-        color: "#E91E63",
+        color: "#FF9800",
       },
-      { id: "sci-phy-3", number: 3, name: "Electricity", color: "#E91E63" },
+      { id: "sci-phy-3", number: 3, name: "Electricity", color: "#00E5FF" },
       {
         id: "sci-phy-4",
         number: 4,
         name: "Magnetic Effects of Electric Current",
-        color: "#E91E63",
+        color: "#BA68C8",
       },
     ],
     Chemistry: [
@@ -728,25 +728,25 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
         id: "sci-chem-1",
         number: 1,
         name: "Chemical Reactions and Equations",
-        color: "#9C27B0",
+        color: "#EC407A",
       },
       {
         id: "sci-chem-2",
         number: 2,
         name: "Acids, Bases and Salts",
-        color: "#9C27B0",
+        color: "#26C6DA",
       },
       {
         id: "sci-chem-3",
         number: 3,
         name: "Metals and Non-metals",
-        color: "#9C27B0",
+        color: "#FFB74D",
       },
       {
         id: "sci-chem-4",
         number: 4,
         name: "Carbon and its Compounds",
-        color: "#9C27B0",
+        color: "#7E57C2",
       },
     ],
     Biology: [
@@ -755,16 +755,16 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
         id: "sci-bio-2",
         number: 2,
         name: "Control and Coordination",
-        color: "#4CAF50",
+        color: "#00E676",
       },
       {
         id: "sci-bio-3",
         number: 3,
         name: "How do Organisms Reproduce?",
-        color: "#4CAF50",
+        color: "#FF4081",
       },
-      { id: "sci-bio-4", number: 4, name: "Heredity", color: "#4CAF50" },
-      { id: "sci-bio-5", number: 5, name: "Our Environment", color: "#4CAF50" },
+      { id: "sci-bio-4", number: 4, name: "Heredity", color: "#42A5F5" },
+      { id: "sci-bio-5", number: 5, name: "Our Environment", color: "#8BC34A" },
     ],
   },
   "Class 9": {
@@ -1293,7 +1293,6 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
 
   // Targeted theme color replacement for Chemistry Chapter 2 and Math Chapter 7
   const cyanTargetedIds = [
-    "sci-chem-2",
     "c9-sci-chem-2",
     "c8-sci-chem-2",
     "c7-sci-chem-2",
@@ -1317,7 +1316,6 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
 
   // Targeted theme color replacement for Chemistry Chapter 4 (Green-Cyan)
   const greenCyanTargetedIds = [
-    "sci-chem-4",
     "c9-sci-chem-4",
     "c8-sci-chem-4",
     "c7-sci-chem-4",
@@ -1329,7 +1327,6 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
 
   // Targeted theme color replacement for Biology Chapter 4 (Pink -> Orange Glossy)
   const pinkOrangeTargetedIds = [
-    "sci-bio-4",
     "c9-sci-bio-4",
     "c8-sci-bio-4",
     "c7-sci-bio-4",
@@ -1353,6 +1350,26 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
   if (redTargetedIds.includes(chapterId)) {
     return JiguuColors.gradients.premiumOrange as string[];
   }
+
+  // Class 10 Science (Physics, Chemistry, Biology - Full Blueprint & Content Theme Color Alignment)
+  // Physics (4 Chapters)
+  if (chapterId === "sci-phy-1") return ["#FF5722", "#E64A19"]; // Flame Orange (Light - Reflection and Refraction)
+  if (chapterId === "sci-phy-2") return ["#FF9800", "#F57C00"]; // Warm Amber (The Human Eye and the Colourful World)
+  if (chapterId === "sci-phy-3") return ["#00E5FF", "#0097A7"]; // Electric Cyan (Electricity)
+  if (chapterId === "sci-phy-4") return ["#BA68C8", "#8E24AA"]; // Magnetic Amethyst (Magnetic Effects of Electric Current)
+
+  // Chemistry (4 Chapters)
+  if (chapterId === "sci-chem-1") return ["#EC407A", "#C2185B"]; // Crimson Pink (Chemical Reactions and Equations)
+  if (chapterId === "sci-chem-2") return ["#26C6DA", "#00838F"]; // Ocean Teal (Acids, Bases and Salts)
+  if (chapterId === "sci-chem-3") return ["#FFB74D", "#FFA000"]; // Metallic Gold (Metals and Non-metals)
+  if (chapterId === "sci-chem-4") return ["#7E57C2", "#5E35B1"]; // Carbon Royal Violet (Carbon and its Compounds)
+
+  // Biology (5 Chapters)
+  if (chapterId === "sci-bio-1") return ["#4CAF50", "#2E7D32"]; // Vivid Leaf Green (Life Processes)
+  if (chapterId === "sci-bio-2") return ["#00E676", "#00A344"]; // Neural Spring Green (Control and Coordination)
+  if (chapterId === "sci-bio-3") return ["#FF4081", "#D81B60"]; // Floral Rose Pink (How do Organisms Reproduce?)
+  if (chapterId === "sci-bio-4") return ["#42A5F5", "#1976D2"]; // Genetics Azure Blue (Heredity)
+  if (chapterId === "sci-bio-5") return ["#8BC34A", "#558B2F"]; // Ecology Lime Green (Our Environment)
 
   // Class 10 Mathematics (Full Blueprint & Content Theme Color Alignment)
   if (chapterId === "ch1") return ["#E91E63", "#C2185B"]; // Rose Pink (Real Numbers)
