@@ -1,226 +1,210 @@
 import { ChapterContent } from "../types";
 
 export const c9SciPhy2: ChapterContent = {
-  id: "c9-sci-phy-2",
-  number: 2,
-  title: "Force and Laws of Motion",
-  introduction:
-    "<div style='text-align: justify;'>Force is a push or pull acting on an object. It can change the state of rest or motion of an object. In this chapter, we study force, inertia, momentum, and Newton’s three laws of motion which explain how objects move.</div>",
-  definitions: [
+  "id": "c9-sci-phy-2",
+  "number": 2,
+  "title": "Force and Laws of Motion",
+  "introduction": "<div style='text-align: justify;'>Force is a push or pull acting on an object. It can change the state of rest or motion of an object. In this chapter, we study force, inertia, momentum, and Newton’s three laws of motion which explain how objects move.</div>",
+  "definitions": [
     {
-      term: "Force",
-      description:
-        "<div style='text-align: justify;'>A push or pull acting on an object.</div>",
+      "term": "Force",
+      "description": "<div style='text-align: justify;'>A push or pull acting on an object.</div>"
     },
     {
-      term: "Inertia",
-      description:
-        "<div style='text-align: justify;'>The property of an object to resist any change in its state of rest or motion.</div>",
+      "term": "Inertia",
+      "description": "<div style='text-align: justify;'>The property of an object to resist any change in its state of rest or motion.</div>"
     },
     {
-      term: "Momentum",
-      description:
-        "<div style='text-align: justify;'>The quantity of motion of an object. It is given by mass × velocity.</div>",
+      "term": "Momentum",
+      "description": "<div style='text-align: justify;'>The quantity of motion of an object. It is given by mass × velocity.</div>"
     },
     {
-      term: "Balanced Forces",
-      description:
-        "<div style='text-align: justify;'>Forces that cancel each other and do not change the motion of an object.</div>",
+      "term": "Balanced Forces",
+      "description": "<div style='text-align: justify;'>Forces that cancel each other and do not change the motion of an object.</div>"
     },
     {
-      term: "Unbalanced Forces",
-      description:
-        "<div style='text-align: justify;'>Forces that change the motion of an object.</div>",
-    },
+      "term": "Unbalanced Forces",
+      "description": "<div style='text-align: justify;'>Forces that change the motion of an object.</div>"
+    }
   ],
-  keyPoints: [
+  "keyPoints": [
     "<div style='text-align: justify;'>Force can change speed, direction, or shape of an object.</div>",
     "<div style='text-align: justify;'>More mass means more inertia.</div>",
     "<div style='text-align: justify;'>Momentum depends on mass and velocity.</div>",
     "<div style='text-align: justify;'>Newton’s First Law explains inertia.</div>",
     "<div style='text-align: justify;'>Newton’s Second Law gives relation: Force = mass × acceleration.</div>",
-    "<div style='text-align: justify;'>Newton’s Third Law: Every action has an equal and opposite reaction.</div>",
+    "<div style='text-align: justify;'>Newton’s Third Law: Every action has an equal and opposite reaction.</div>"
   ],
-  formulas: [],
-  crux: [],
-  mcqs: [
+  "formulas": [],
+  "crux": [],
+  "mcqs": [
     {
-      id: "c9-phy-2-mcq-1",
-      question:
-        "<div style='text-align: justify;'>A push or pull on an object is called:</div>",
-      options: [
+      "id": "c9-phy-2-mcq-1",
+      "question": "<div style='text-align: justify;'>A push or pull on an object is called:</div>",
+      "options": [
         "<div style='text-align: justify;'>(a) Mass</div>",
         "<div style='text-align: justify;'>(b) Inertia</div>",
         "<div style='text-align: justify;'>(c) Force</div>",
-        "<div style='text-align: justify;'>(d) Momentum</div>",
+        "<div style='text-align: justify;'>(d) Momentum</div>"
       ],
-      correctAnswer: "c",
+      "correctAnswer": "c"
     },
     {
-      id: "c9-phy-2-mcq-2",
-      question:
-        "<div style='text-align: justify;'>What is the SI unit of force?</div>",
-      options: [
+      "id": "c9-phy-2-mcq-2",
+      "question": "<div style='text-align: justify;'>What is the SI unit of force?</div>",
+      "options": [
         "<div style='text-align: justify;'>(a) Newton</div>",
         "<div style='text-align: justify;'>(b) Joule</div>",
         "<div style='text-align: justify;'>(c) Pascal</div>",
-        "<div style='text-align: justify;'>(d) Watt</div>",
+        "<div style='text-align: justify;'>(d) Watt</div>"
       ],
-      correctAnswer: "a",
+      "correctAnswer": "a"
     },
     {
-      id: "c9-phy-2-mcq-3",
-      question:
-        "<div style='text-align: justify;'>The property of an object to resist a change in its state of rest or motion is:</div>",
-      options: [
+      "id": "c9-phy-2-mcq-3",
+      "question": "<div style='text-align: justify;'>The property of an object to resist a change in its state of rest or motion is:</div>",
+      "options": [
         "<div style='text-align: justify;'>(a) Velocity</div>",
         "<div style='text-align: justify;'>(b) Inertia</div>",
         "<div style='text-align: justify;'>(c) Speed</div>",
-        "<div style='text-align: justify;'>(d) Gravity</div>",
+        "<div style='text-align: justify;'>(d) Gravity</div>"
       ],
-      correctAnswer: "b",
+      "correctAnswer": "b"
     },
     {
-      id: "c9-phy-2-mcq-4",
-      question:
-        "<div style='text-align: justify;'>Which of the following has more inertia?</div>",
-      options: [
+      "id": "c9-phy-2-mcq-4",
+      "question": "<div style='text-align: justify;'>Which of the following has more inertia?</div>",
+      "options": [
         "<div style='text-align: justify;'>(a) A rubber ball</div>",
         "<div style='text-align: justify;'>(b) A heavy stone of the same size</div>",
         "<div style='text-align: justify;'>(c) A paper cup</div>",
-        "<div style='text-align: justify;'>(d) A plastic toy</div>",
+        "<div style='text-align: justify;'>(d) A plastic toy</div>"
       ],
-      correctAnswer: "b",
+      "correctAnswer": "b"
     },
     {
-      id: "c9-phy-2-mcq-5",
-      question:
-        "<div style='text-align: justify;'>Momentum is the product of mass and:</div>",
-      options: [
+      "id": "c9-phy-2-mcq-5",
+      "question": "<div style='text-align: justify;'>Momentum is the product of mass and:</div>",
+      "options": [
         "<div style='text-align: justify;'>(a) Distance</div>",
         "<div style='text-align: justify;'>(b) Velocity</div>",
         "<div style='text-align: justify;'>(c) Time</div>",
-        "<div style='text-align: justify;'>(d) Acceleration</div>",
+        "<div style='text-align: justify;'>(d) Acceleration</div>"
       ],
-      correctAnswer: "b",
+      "correctAnswer": "b"
     },
     {
-      id: "c9-phy-2-mcq-6",
-      question:
-        "<div style='text-align: justify;'>What is the SI unit of momentum?</div>",
-      options: [
+      "id": "c9-phy-2-mcq-6",
+      "question": "<div style='text-align: justify;'>What is the SI unit of momentum?</div>",
+      "options": [
         "<div style='text-align: justify;'>(a) kg m/s</div>",
         "<div style='text-align: justify;'>(b) kg m/s²</div>",
         "<div style='text-align: justify;'>(c) Newton</div>",
-        "<div style='text-align: justify;'>(d) Joule</div>",
+        "<div style='text-align: justify;'>(d) Joule</div>"
       ],
-      correctAnswer: "a",
+      "correctAnswer": "a"
     },
     {
-      id: "c9-phy-2-mcq-7",
-      question:
-        "<div style='text-align: justify;'>Newton’s first law of motion is also known as:</div>",
-      options: [
+      "id": "c9-phy-2-mcq-7",
+      "question": "<div style='text-align: justify;'>Newton’s first law of motion is also known as:</div>",
+      "options": [
         "<div style='text-align: justify;'>(a) Law of gravitation</div>",
         "<div style='text-align: justify;'>(b) Law of momentum</div>",
         "<div style='text-align: justify;'>(c) Law of inertia</div>",
-        "<div style='text-align: justify;'>(d) Law of conservation of energy</div>",
+        "<div style='text-align: justify;'>(d) Law of conservation of energy</div>"
       ],
-      correctAnswer: "c",
+      "correctAnswer": "c"
     },
     {
-      id: "c9-phy-2-mcq-8",
-      question:
-        "<div style='text-align: justify;'>\"For every action, there is an equal and opposite reaction.\" Which law is this?</div>",
-      options: [
+      "id": "c9-phy-2-mcq-8",
+      "question": "<div style='text-align: justify;'>\"For every action, there is an equal and opposite reaction.\" Which law is this?</div>",
+      "options": [
         "<div style='text-align: justify;'>(a) Newton’s First Law</div>",
         "<div style='text-align: justify;'>(b) Newton’s Second Law</div>",
         "<div style='text-align: justify;'>(c) Newton’s Third Law</div>",
-        "<div style='text-align: justify;'>(d) Law of Conservation of Mass</div>",
+        "<div style='text-align: justify;'>(d) Law of Conservation of Mass</div>"
       ],
-      correctAnswer: "c",
+      "correctAnswer": "c"
     },
     {
-      id: "c9-phy-2-mcq-9",
-      question:
-        "<div style='text-align: justify;'>If you push a wall, the wall pushes you back with:</div>",
-      options: [
+      "id": "c9-phy-2-mcq-9",
+      "question": "<div style='text-align: justify;'>If you push a wall, the wall pushes you back with:</div>",
+      "options": [
         "<div style='text-align: justify;'>(a) Greater force</div>",
         "<div style='text-align: justify;'>(b) Less force</div>",
         "<div style='text-align: justify;'>(c) Equal force</div>",
-        "<div style='text-align: justify;'>(d) Zero force</div>",
+        "<div style='text-align: justify;'>(d) Zero force</div>"
       ],
-      correctAnswer: "c",
+      "correctAnswer": "c"
     },
     {
-      id: "c9-phy-2-mcq-10",
-      question:
-        "<div style='text-align: justify;'>Unbalanced forces acting on an object will cause:</div>",
-      options: [
+      "id": "c9-phy-2-mcq-10",
+      "question": "<div style='text-align: justify;'>Unbalanced forces acting on an object will cause:</div>",
+      "options": [
         "<div style='text-align: justify;'>(a) The object to remain at rest forever</div>",
         "<div style='text-align: justify;'>(b) A change in the object's speed or direction</div>",
         "<div style='text-align: justify;'>(c) The object to disappear</div>",
-        "<div style='text-align: justify;'>(d) None of the above</div>",
+        "<div style='text-align: justify;'>(d) None of the above</div>"
       ],
-      correctAnswer: "b",
-    },
+      "correctAnswer": "b"
+    }
   ],
-  summary: [],
-  examples: [],
-  exercises: [
+  "summary": [],
+  "examples": [],
+  "exercises": [
     {
-      id: "exercise",
-      name: "Exercise Questions",
-      questions: [
+      "id": "exercise",
+      "name": "Exercise Questions",
+      "questions": [
         {
-          id: "c9-phy-2-ex-1",
-          number: "1",
-          question: "<div style='text-align: justify;'>An object experiences a net zero external unbalanced force. Is it possible for the object to be travelling with a non-zero velocity? If yes, state the conditions.</div>",
-          solution: [
+          "id": "c9-phy-2-ex-1",
+          "number": "1",
+          "question": "<div style='text-align: justify;'>An object experiences a net zero external unbalanced force. Is it possible for the object to be travelling with a non-zero velocity? If yes, state the conditions.</div>",
+          "solution": [
             "<div style='text-align: justify;'>Answer:</div>",
-            "<div style='text-align: justify;'>Yes, it is possible. If the net external force acting on an object is zero, the object will either remain at rest or continue to move with constant velocity. This is according to Newton’s First Law of Motion.</div>",
+            "<div style='text-align: justify;'>Yes, it is possible. If the net external force acting on an object is zero, the object will either remain at rest or continue to move with constant velocity. This is according to Newton’s First Law of Motion.</div>"
           ],
-          answer: "",
-          shortBoardPattern: true,
+          "answer": "",
+          "shortBoardPattern": true
         },
         {
-          id: "c9-phy-2-ex-2",
-          number: "2",
-          question: "<div style='text-align: justify;'>When a carpet is beaten with a stick, dust comes out of it. Explain.</div>",
-          solution: [
+          "id": "c9-phy-2-ex-2",
+          "number": "2",
+          "question": "<div style='text-align: justify;'>When a carpet is beaten with a stick, dust comes out of it. Explain.</div>",
+          "solution": [
             "<div style='text-align: justify;'>Answer:</div>",
-            "<div style='text-align: justify;'>When the carpet is beaten, it moves suddenly but the dust particles tend to remain at rest due to inertia. This causes the dust to separate and fall out.</div>",
+            "<div style='text-align: justify;'>When the carpet is beaten, it moves suddenly but the dust particles tend to remain at rest due to inertia. This causes the dust to separate and fall out.</div>"
           ],
-          answer: "",
-          shortBoardPattern: true,
+          "answer": "",
+          "shortBoardPattern": true
         },
         {
-          id: "c9-phy-2-ex-3",
-          number: "3",
-          question: "<div style='text-align: justify;'>Why is it advised to tie any luggage kept on the roof of a bus with a rope?</div>",
-          solution: [
+          "id": "c9-phy-2-ex-3",
+          "number": "3",
+          "question": "<div style='text-align: justify;'>Why is it advised to tie any luggage kept on the roof of a bus with a rope?</div>",
+          "solution": [
             "<div style='text-align: justify;'>Answer:</div>",
-            "<div style='text-align: justify;'>Due to sudden start or stop of the bus, luggage may move because of inertia. So it is tied with a rope to prevent it from falling.</div>",
+            "<div style='text-align: justify;'>Due to sudden start or stop of the bus, luggage may move because of inertia. So it is tied with a rope to prevent it from falling.</div>"
           ],
-          answer: "",
-          shortBoardPattern: true,
+          "answer": "",
+          "shortBoardPattern": true
         },
         {
-          id: "c9-phy-2-ex-4",
-          number: "4",
-          question: "<div style='text-align: justify;'>A batsman hits a cricket ball which then rolls on a level ground. After covering a short distance, the ball comes to rest. The ball slows down because<br><br>(a) the batsman did not hit the ball hard enough<br>(b) velocity is proportional to the force<br>(c) there is a force on the ball opposing the motion<br>(d) there is no unbalanced force on the ball</div>",
-          solution: [
+          "id": "c9-phy-2-ex-4",
+          "number": "4",
+          "question": "<div style='text-align: justify;'>A batsman hits a cricket ball which then rolls on a level ground. After covering a short distance, the ball comes to rest. The ball slows down because<br><br>(a) the batsman did not hit the ball hard enough<br>(b) velocity is proportional to the force<br>(c) there is a force on the ball opposing the motion<br>(d) there is no unbalanced force on the ball</div>",
+          "solution": [
             "<div style='text-align: justify;'>Answer:</div>",
-            "<div style='text-align: justify;'>(c) there is a force on the ball opposing the motion</div>",
+            "<div style='text-align: justify;'>(c) there is a force on the ball opposing the motion</div>"
           ],
-          answer: "",
-          shortBoardPattern: true,
+          "answer": "",
+          "shortBoardPattern": true
         },
         {
-          id: "c9-phy-2-ex-5",
-          number: "5",
-          question: "<div style='text-align: justify;'>A truck starts from rest and rolls down a hill with a constant acceleration. It travels 400 m in 20 s. Find its acceleration and the force acting on it if its mass is 7 tonnes.</div>",
-          solution: [
+          "id": "c9-phy-2-ex-5",
+          "number": "5",
+          "question": "<div style='text-align: justify;'>A truck starts from rest and rolls down a hill with a constant acceleration. It travels 400 m in 20 s. Find its acceleration and the force acting on it if its mass is 7 tonnes.</div>",
+          "solution": [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>u = 0, s = 400 m, t = 20 s</div>",
             "<br/>",
@@ -231,16 +215,16 @@ export const c9SciPhy2: ChapterContent = {
             "<br/>",
             "<div style='text-align: justify;'>Mass = 7 tonnes = 7000 kg</div>",
             "<br/>",
-            "<div style='text-align: justify;'>Force = ma = 7000 × 2 = 14000 N</div>",
+            "<div style='text-align: justify;'>Force = ma = 7000 × 2 = 14000 N</div>"
           ],
-          answer: "",
-          shortBoardPattern: true,
+          "answer": "",
+          "shortBoardPattern": true
         },
         {
-          id: "c9-phy-2-ex-6",
-          number: "6",
-          question: "<div style='text-align: justify;'>A stone of 1 kg is thrown with a velocity of 20 m s⁻¹ across the ice and stops after 50 m. Find the force of friction.</div>",
-          solution: [
+          "id": "c9-phy-2-ex-6",
+          "number": "6",
+          "question": "<div style='text-align: justify;'>A stone of 1 kg is thrown with a velocity of 20 m s⁻¹ across the ice and stops after 50 m. Find the force of friction.</div>",
+          "solution": [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>m = 1 kg, u = 20 m/s, v = 0, s = 50 m</div>",
             "<br/>",
@@ -251,16 +235,16 @@ export const c9SciPhy2: ChapterContent = {
             "<br/>",
             "<div style='text-align: justify;'>Force = ma = 1 × (−4) = −4 N</div>",
             "<br/>",
-            "<div style='text-align: justify;'>(Friction force = 4 N opposite to motion)</div>",
+            "<div style='text-align: justify;'>(Friction force = 4 N opposite to motion)</div>"
           ],
-          answer: "",
-          shortBoardPattern: true,
+          "answer": "",
+          "shortBoardPattern": true
         },
         {
-          id: "c9-phy-2-ex-7",
-          number: "7",
-          question: "<div style='text-align: justify;'>A 8000 kg engine pulls a train of 5 wagons, each of 2000 kg. The engine exerts a force of 40000 N and friction is 5000 N. Calculate:<br><br>(a) net force<br>(b) acceleration</div>",
-          solution: [
+          "id": "c9-phy-2-ex-7",
+          "number": "7",
+          "question": "<div style='text-align: justify;'>A 8000 kg engine pulls a train of 5 wagons, each of 2000 kg. The engine exerts a force of 40000 N and friction is 5000 N. Calculate:<br><br>(a) net force<br>(b) acceleration</div>",
+          "solution": [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>Total mass = 8000 + (5 × 2000) = 18000 kg</div>",
             "<br/>",
@@ -268,55 +252,55 @@ export const c9SciPhy2: ChapterContent = {
             "<br/>",
             "<div style='text-align: justify;'>Acceleration = F / m</div>",
             "<div style='text-align: justify;'>= 35000 / 18000</div>",
-            "<div style='text-align: justify;'>≈ 1.94 m/s²</div>",
+            "<div style='text-align: justify;'>≈ 1.94 m/s²</div>"
           ],
-          answer: "",
-          shortBoardPattern: true,
+          "answer": "",
+          "shortBoardPattern": true
         },
         {
-          id: "c9-phy-2-ex-8",
-          number: "8",
-          question: "<div style='text-align: justify;'>An automobile of mass 1500 kg is stopped with a deceleration of 1.7 m/s². Find the force.</div>",
-          solution: [
+          "id": "c9-phy-2-ex-8",
+          "number": "8",
+          "question": "<div style='text-align: justify;'>An automobile of mass 1500 kg is stopped with a deceleration of 1.7 m/s². Find the force.</div>",
+          "solution": [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>F = ma</div>",
             "<div style='text-align: justify;'>= 1500 × (−1.7)</div>",
             "<div style='text-align: justify;'>= −2550 N</div>",
             "<br/>",
-            "<div style='text-align: justify;'>(Force is opposite to motion)</div>",
+            "<div style='text-align: justify;'>(Force is opposite to motion)</div>"
           ],
-          answer: "",
-          shortBoardPattern: true,
+          "answer": "",
+          "shortBoardPattern": true
         },
         {
-          id: "c9-phy-2-ex-9",
-          number: "9",
-          question: "<div style='text-align: justify;'>What is the momentum of an object of mass m moving with velocity v?<br><br>(a) (mv)²<br>(b) mv²<br>(c) ½ mv²<br>(d) mv</div>",
-          solution: [
+          "id": "c9-phy-2-ex-9",
+          "number": "9",
+          "question": "<div style='text-align: justify;'>What is the momentum of an object of mass m moving with velocity v?<br><br>(a) (mv)²<br>(b) mv²<br>(c) ½ mv²<br>(d) mv</div>",
+          "solution": [
             "<div style='text-align: justify;'>Answer:</div>",
-            "<div style='text-align: justify;'>(d) mv</div>",
+            "<div style='text-align: justify;'>(d) mv</div>"
           ],
-          answer: "",
-          shortBoardPattern: true,
+          "answer": "",
+          "shortBoardPattern": true
         },
         {
-          id: "c9-phy-2-ex-10",
-          number: "10",
-          question: "<div style='text-align: justify;'>A force of 200 N moves a cabinet with constant velocity. Find friction force.</div>",
-          solution: [
+          "id": "c9-phy-2-ex-10",
+          "number": "10",
+          "question": "<div style='text-align: justify;'>A force of 200 N moves a cabinet with constant velocity. Find friction force.</div>",
+          "solution": [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>At constant velocity, net force = 0</div>",
             "<br/>",
-            "<div style='text-align: justify;'>Friction force = 200 N (opposite direction)</div>",
+            "<div style='text-align: justify;'>Friction force = 200 N (opposite direction)</div>"
           ],
-          answer: "",
-          shortBoardPattern: true,
+          "answer": "",
+          "shortBoardPattern": true
         },
         {
-          id: "c9-phy-2-ex-11",
-          number: "11",
-          question: "<div style='text-align: justify;'>Two objects of mass 1.5 kg move in opposite directions with velocity 2.5 m/s. They stick together after collision. Find final velocity.</div>",
-          solution: [
+          "id": "c9-phy-2-ex-11",
+          "number": "11",
+          "question": "<div style='text-align: justify;'>Two objects of mass 1.5 kg move in opposite directions with velocity 2.5 m/s. They stick together after collision. Find final velocity.</div>",
+          "solution": [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>m₁ = m₂ = 1.5 kg</div>",
             "<br/>",
@@ -324,27 +308,27 @@ export const c9SciPhy2: ChapterContent = {
             "<br/>",
             "<div style='text-align: justify;'>Initial momentum = (1.5×2.5) + (1.5×−2.5) = 0</div>",
             "<br/>",
-            "<div style='text-align: justify;'>Final velocity = 0 m/s</div>",
+            "<div style='text-align: justify;'>Final velocity = 0 m/s</div>"
           ],
-          answer: "",
-          shortBoardPattern: true,
+          "answer": "",
+          "shortBoardPattern": true
         },
         {
-          id: "c9-phy-2-ex-12",
-          number: "12",
-          question: "<div style='text-align: justify;'>According to the third law of motion, action and reaction are equal and opposite. A student says they cancel each other, so a massive truck will not move. Comment on this.</div>",
-          solution: [
+          "id": "c9-phy-2-ex-12",
+          "number": "12",
+          "question": "<div style='text-align: justify;'>According to the third law of motion, action and reaction are equal and opposite. A student says they cancel each other, so a massive truck will not move. Comment on this.</div>",
+          "solution": [
             "<div style='text-align: justify;'>Answer:</div>",
-            "<div style='text-align: justify;'>This statement is incorrect. Action and reaction act on different objects, so they do not cancel each other. The truck moves depending on the net force acting on it.</div>",
+            "<div style='text-align: justify;'>This statement is incorrect. Action and reaction act on different objects, so they do not cancel each other. The truck moves depending on the net force acting on it.</div>"
           ],
-          answer: "",
-          shortBoardPattern: true,
+          "answer": "",
+          "shortBoardPattern": true
         },
         {
-          id: "c9-phy-2-ex-13",
-          number: "13",
-          question: "<div style='text-align: justify;'>A hockey ball of mass 200 g moving at 10 m/s is hit and returns with 5 m/s. Find change in momentum.</div>",
-          solution: [
+          "id": "c9-phy-2-ex-13",
+          "number": "13",
+          "question": "<div style='text-align: justify;'>A hockey ball of mass 200 g moving at 10 m/s is hit and returns with 5 m/s. Find change in momentum.</div>",
+          "solution": [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>Mass = 0.2 kg</div>",
             "<br/>",
@@ -354,16 +338,16 @@ export const c9SciPhy2: ChapterContent = {
             "<div style='text-align: justify;'>Change = Final − Initial</div>",
             "<div style='text-align: justify;'>= −1 − 2 = −3 kg·m/s</div>",
             "<br/>",
-            "<div style='text-align: justify;'>Magnitude = 3 kg·m/s</div>",
+            "<div style='text-align: justify;'>Magnitude = 3 kg·m/s</div>"
           ],
-          answer: "",
-          shortBoardPattern: true,
+          "answer": "",
+          "shortBoardPattern": true
         },
         {
-          id: "c9-phy-2-ex-14",
-          number: "14",
-          question: "<div style='text-align: justify;'>A bullet of mass 10 g moving at 150 m/s stops in 0.03 s. Find distance and force.</div>",
-          solution: [
+          "id": "c9-phy-2-ex-14",
+          "number": "14",
+          "question": "<div style='text-align: justify;'>A bullet of mass 10 g moving at 150 m/s stops in 0.03 s. Find distance and force.</div>",
+          "solution": [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>Mass = 0.01 kg</div>",
             "<br/>",
@@ -378,16 +362,16 @@ export const c9SciPhy2: ChapterContent = {
             "<div style='text-align: justify;'>= 4.5 − 2.25 = 2.25 m</div>",
             "<br/>",
             "<div style='text-align: justify;'>Force:</div>",
-            "<div style='text-align: justify;'>F = ma = 0.01 × (−5000) = −50 N</div>",
+            "<div style='text-align: justify;'>F = ma = 0.01 × (−5000) = −50 N</div>"
           ],
-          answer: "",
-          shortBoardPattern: true,
+          "answer": "",
+          "shortBoardPattern": true
         },
         {
-          id: "c9-phy-2-ex-15",
-          number: "15",
-          question: "<div style='text-align: justify;'>An object of mass 1 kg moving at 10 m/s collides with a stationary block of 5 kg and they stick together. Find momentum before and after collision and final velocity.</div>",
-          solution: [
+          "id": "c9-phy-2-ex-15",
+          "number": "15",
+          "question": "<div style='text-align: justify;'>An object of mass 1 kg moving at 10 m/s collides with a stationary block of 5 kg and they stick together. Find momentum before and after collision and final velocity.</div>",
+          "solution": [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>Initial momentum = 1 × 10 = 10 kg·m/s</div>",
             "<br/>",
@@ -397,16 +381,16 @@ export const c9SciPhy2: ChapterContent = {
             "<div style='text-align: justify;'>Velocity = momentum / mass</div>",
             "<div style='text-align: justify;'>= 10 / 6 ≈ 1.67 m/s</div>",
             "<br/>",
-            "<div style='text-align: justify;'>Final momentum = 6 × 1.67 ≈ 10 kg·m/s</div>",
+            "<div style='text-align: justify;'>Final momentum = 6 × 1.67 ≈ 10 kg·m/s</div>"
           ],
-          answer: "",
-          shortBoardPattern: true,
+          "answer": "",
+          "shortBoardPattern": true
         },
         {
-          id: "c9-phy-2-ex-16",
-          number: "16",
-          question: "<div style='text-align: justify;'>An object of mass 100 kg is accelerated from 5 m/s to 8 m/s in 6 s. Find initial momentum, final momentum and force.</div>",
-          solution: [
+          "id": "c9-phy-2-ex-16",
+          "number": "16",
+          "question": "<div style='text-align: justify;'>An object of mass 100 kg is accelerated from 5 m/s to 8 m/s in 6 s. Find initial momentum, final momentum and force.</div>",
+          "solution": [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>Mass = 100 kg</div>",
             "<br/>",
@@ -415,27 +399,27 @@ export const c9SciPhy2: ChapterContent = {
             "<br/>",
             "<div style='text-align: justify;'>Acceleration = (8 − 5) / 6 = 0.5 m/s²</div>",
             "<br/>",
-            "<div style='text-align: justify;'>Force = ma = 100 × 0.5 = 50 N</div>",
+            "<div style='text-align: justify;'>Force = ma = 100 × 0.5 = 50 N</div>"
           ],
-          answer: "",
-          shortBoardPattern: true,
+          "answer": "",
+          "shortBoardPattern": true
         },
         {
-          id: "c9-phy-2-ex-17",
-          number: "17",
-          question: "<div style='text-align: justify;'>An insect hits a moving car and gets stuck. Different students give different explanations. Comment.</div>",
-          solution: [
+          "id": "c9-phy-2-ex-17",
+          "number": "17",
+          "question": "<div style='text-align: justify;'>An insect hits a moving car and gets stuck. Different students give different explanations. Comment.</div>",
+          "solution": [
             "<div style='text-align: justify;'>Answer:</div>",
-            "<div style='text-align: justify;'>According to Newton’s Third Law, both insect and car experience equal and opposite forces. However, due to the very small mass of the insect, it undergoes a large change in motion, while the car shows negligible change.</div>",
+            "<div style='text-align: justify;'>According to Newton’s Third Law, both insect and car experience equal and opposite forces. However, due to the very small mass of the insect, it undergoes a large change in motion, while the car shows negligible change.</div>"
           ],
-          answer: "",
-          shortBoardPattern: true,
+          "answer": "",
+          "shortBoardPattern": true
         },
         {
-          id: "c9-phy-2-ex-18",
-          number: "18",
-          question: "<div style='text-align: justify;'>A dumb-bell of mass 10 kg falls from height 80 cm. Find momentum just before hitting ground.</div>",
-          solution: [
+          "id": "c9-phy-2-ex-18",
+          "number": "18",
+          "question": "<div style='text-align: justify;'>A dumb-bell of mass 10 kg falls from height 80 cm. Find momentum just before hitting ground.</div>",
+          "solution": [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>Height = 0.8 m</div>",
             "<br/>",
@@ -443,96 +427,96 @@ export const c9SciPhy2: ChapterContent = {
             "<div style='text-align: justify;'>v² = 2 × 10 × 0.8 = 16</div>",
             "<div style='text-align: justify;'>v = 4 m/s</div>",
             "<br/>",
-            "<div style='text-align: justify;'>Momentum = m × v = 10 × 4 = 40 kg·m/s</div>",
+            "<div style='text-align: justify;'>Momentum = m × v = 10 × 4 = 40 kg·m/s</div>"
           ],
-          answer: "",
-          shortBoardPattern: true,
-        },
-      ],
+          "answer": "",
+          "shortBoardPattern": true
+        }
+      ]
     },
     {
-      id: "in-text",
-      name: "In-Text Questions",
-      questions: [
+      "id": "in-text",
+      "name": "In-Text Questions",
+      "questions": [
         {
-          id: "it-1-q1",
-          number: "",
-          question: "<div style=\"text-align: center; font-size: 22px; color: #FFB74D; font-family: 'NotoSans_700Bold'; margin-top: 15px; margin-bottom: 15px;\"><strong>In-Text - 1</strong></div><div style='text-align: justify;'>Q1. Which of the following has more inertia:<br/>(a) a rubber ball and a stone of the same size?<br/>(b) a bicycle and a train?<br/>(c) a five-rupees coin and a one-rupee coin?</div>",
-          solution: [
+          "id": "it-1-q1",
+          "number": "",
+          "question": "<div style=\"text-align: center; font-size: 22px; color: #FFB74D; font-family: 'NotoSans_700Bold'; margin-top: 15px; margin-bottom: 15px;\"><strong>In-Text - 1</strong></div><div style='text-align: justify;'>Q1. Which of the following has more inertia:<br/>(a) a rubber ball and a stone of the same size?<br/>(b) a bicycle and a train?<br/>(c) a five-rupees coin and a one-rupee coin?</div>",
+          "solution": [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>Inertia depends on mass. The object with greater mass has more inertia.</div>",
             "<div style='text-align: justify;'>(a) Stone has more inertia than rubber ball.</div>",
             "<div style='text-align: justify;'>(b) Train has more inertia than bicycle.</div>",
-            "<div style='text-align: justify;'>(c) Five-rupee coin has more inertia than one-rupee coin.</div>",
+            "<div style='text-align: justify;'>(c) Five-rupee coin has more inertia than one-rupee coin.</div>"
           ],
-          answer: "",
-          shortBoardPattern: true,
+          "answer": "",
+          "shortBoardPattern": true
         },
         {
-          id: "it-1-q2",
-          number: "2",
-          question: "<div style='text-align: justify;'>In the following example, identify the number of times the velocity of the ball changes:<br/>“A football player kicks a football to another player who kicks it towards the goal. The goalkeeper collects the football and kicks it towards a player of his own team.”<br/>Also identify the agent supplying the force in each case.</div>",
-          solution: [
+          "id": "it-1-q2",
+          "number": "2",
+          "question": "<div style='text-align: justify;'>In the following example, identify the number of times the velocity of the ball changes:<br/>“A football player kicks a football to another player who kicks it towards the goal. The goalkeeper collects the football and kicks it towards a player of his own team.”<br/>Also identify the agent supplying the force in each case.</div>",
+          "solution": [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>Velocity changes 3 times.</div>",
             "<br/>",
             "<div style='text-align: justify;'>1. First kick → Player applies force</div>",
             "<div style='text-align: justify;'>2. Second kick → Second player applies force</div>",
-            "<div style='text-align: justify;'>3. Goalkeeper kick → Goalkeeper applies force</div>",
+            "<div style='text-align: justify;'>3. Goalkeeper kick → Goalkeeper applies force</div>"
           ],
-          answer: "",
-          shortBoardPattern: true,
+          "answer": "",
+          "shortBoardPattern": true
         },
         {
-          id: "it-1-q3",
-          number: "3",
-          question: "<div style='text-align: justify;'>Explain why some of the leaves may get detached from a tree if we vigorously shake its branch.</div>",
-          solution: [
+          "id": "it-1-q3",
+          "number": "3",
+          "question": "<div style='text-align: justify;'>Explain why some of the leaves may get detached from a tree if we vigorously shake its branch.</div>",
+          "solution": [
             "<div style='text-align: justify;'>Answer:</div>",
-            "<div style='text-align: justify;'>When the branch is shaken, it moves suddenly but the leaves tend to remain at rest due to inertia. This causes the leaves to detach and fall down.</div>",
+            "<div style='text-align: justify;'>When the branch is shaken, it moves suddenly but the leaves tend to remain at rest due to inertia. This causes the leaves to detach and fall down.</div>"
           ],
-          answer: "",
-          shortBoardPattern: true,
+          "answer": "",
+          "shortBoardPattern": true
         },
         {
-          id: "it-1-q4",
-          number: "4",
-          question: "<div style='text-align: justify;'>Why do you fall in the forward direction when a moving bus brakes to a stop and fall backwards when it accelerates from rest?</div>",
-          solution: [
+          "id": "it-1-q4",
+          "number": "4",
+          "question": "<div style='text-align: justify;'>Why do you fall in the forward direction when a moving bus brakes to a stop and fall backwards when it accelerates from rest?</div>",
+          "solution": [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>When a moving bus stops suddenly, the lower part of the body stops but the upper part continues to move forward due to inertia, so we fall forward.</div>",
-            "<div style='text-align: justify;'>When the bus starts suddenly, the lower part moves forward but the upper part remains at rest, so we fall backward.</div>",
+            "<div style='text-align: justify;'>When the bus starts suddenly, the lower part moves forward but the upper part remains at rest, so we fall backward.</div>"
           ],
-          answer: "",
-          shortBoardPattern: true,
+          "answer": "",
+          "shortBoardPattern": true
         },
         {
-          id: "it-2-q1",
-          number: "",
-          question: "<div style=\"text-align: center; font-size: 22px; color: #FFB74D; font-family: 'NotoSans_700Bold'; margin-top: 15px; margin-bottom: 15px;\"><strong>In-Text - 2</strong></div><div style='text-align: justify;'>Q1. If action is always equal to the reaction, explain how a horse can pull a cart.</div>",
-          solution: [
+          "id": "it-2-q1",
+          "number": "",
+          "question": "<div style=\"text-align: center; font-size: 22px; color: #FFB74D; font-family: 'NotoSans_700Bold'; margin-top: 15px; margin-bottom: 15px;\"><strong>In-Text - 2</strong></div><div style='text-align: justify;'>Q1. If action is always equal to the reaction, explain how a horse can pull a cart.</div>",
+          "solution": [
             "<div style='text-align: justify;'>Answer:</div>",
-            "<div style='text-align: justify;'>When the horse pushes the ground backward, the ground exerts an equal and opposite force on the horse in the forward direction. This forward force helps the horse pull the cart.</div>",
+            "<div style='text-align: justify;'>When the horse pushes the ground backward, the ground exerts an equal and opposite force on the horse in the forward direction. This forward force helps the horse pull the cart.</div>"
           ],
-          answer: "",
-          shortBoardPattern: true,
+          "answer": "",
+          "shortBoardPattern": true
         },
         {
-          id: "it-2-q2",
-          number: "2",
-          question: "<div style='text-align: justify;'>Explain why it is difficult for a fireman to hold a hose, which ejects large amounts of water at a high velocity.</div>",
-          solution: [
+          "id": "it-2-q2",
+          "number": "2",
+          "question": "<div style='text-align: justify;'>Explain why it is difficult for a fireman to hold a hose, which ejects large amounts of water at a high velocity.</div>",
+          "solution": [
             "<div style='text-align: justify;'>Answer:</div>",
-            "<div style='text-align: justify;'>Water coming out at high speed exerts a large backward force (reaction) on the hose. Due to this strong reaction force, it becomes difficult for the fireman to hold the hose.</div>",
+            "<div style='text-align: justify;'>Water coming out at high speed exerts a large backward force (reaction) on the hose. Due to this strong reaction force, it becomes difficult for the fireman to hold the hose.</div>"
           ],
-          answer: "",
-          shortBoardPattern: true,
+          "answer": "",
+          "shortBoardPattern": true
         },
         {
-          id: "it-2-q3",
-          number: "3",
-          question: "<div style='text-align: justify;'>From a rifle of mass 4 kg, a bullet of mass 50 g is fired with an initial velocity of 35 m s⁻¹. Calculate the initial recoil velocity of the rifle.</div>",
-          solution: [
+          "id": "it-2-q3",
+          "number": "3",
+          "question": "<div style='text-align: justify;'>From a rifle of mass 4 kg, a bullet of mass 50 g is fired with an initial velocity of 35 m s⁻¹. Calculate the initial recoil velocity of the rifle.</div>",
+          "solution": [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>Mass of rifle = 4 kg</div>",
             "<div style='text-align: justify;'>Mass of bullet = 50 g = 0.05 kg</div>",
@@ -545,16 +529,16 @@ export const c9SciPhy2: ChapterContent = {
             "<div style='text-align: justify;'>v = −1.75 / 4</div>",
             "<div style='text-align: justify;'>v = −0.4375 m/s</div>",
             "<br/>",
-            "<div style='text-align: justify;'>(Recoil velocity is opposite in direction)</div>",
+            "<div style='text-align: justify;'>(Recoil velocity is opposite in direction)</div>"
           ],
-          answer: "",
-          shortBoardPattern: true,
+          "answer": "",
+          "shortBoardPattern": true
         },
         {
-          id: "it-2-q4",
-          number: "4",
-          question: "<div style='text-align: justify;'>Two objects of masses 100 g and 200 g are moving along the same line and direction with velocities of 2 m s⁻¹ and 1 m s⁻¹ respectively. After collision, the first object moves with a velocity of 1.67 m s⁻¹. Determine the velocity of the second object.</div>",
-          solution: [
+          "id": "it-2-q4",
+          "number": "4",
+          "question": "<div style='text-align: justify;'>Two objects of masses 100 g and 200 g are moving along the same line and direction with velocities of 2 m s⁻¹ and 1 m s⁻¹ respectively. After collision, the first object moves with a velocity of 1.67 m s⁻¹. Determine the velocity of the second object.</div>",
+          "solution": [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>Mass1 = 0.1 kg, Velocity1 = 2 m/s</div>",
             "<div style='text-align: justify;'>Mass2 = 0.2 kg, Velocity2 = 1 m/s</div>",
@@ -567,12 +551,18 @@ export const c9SciPhy2: ChapterContent = {
             "<br/>",
             "<div style='text-align: justify;'>0.4 = 0.167 + 0.2v</div>",
             "<div style='text-align: justify;'>0.2v = 0.233</div>",
-            "<div style='text-align: justify;'>v = 1.165 m/s</div>",
+            "<div style='text-align: justify;'>v = 1.165 m/s</div>"
           ],
-          answer: "",
-          shortBoardPattern: true,
-        },
-      ],
+          "answer": "",
+          "shortBoardPattern": true
+        }
+      ]
     }
   ],
+  "isHtmlView": true,
+  "htmlOverview": "\n<style>\n  p, li, div:not(.table-container):not(.table-responsive):not(.pt-scroll-wrapper):not(.mcq-option) {\n    text-align: justify !important;\n  }\n  h1, h2, h3, h4, h5, h6 { text-align: left; }\n  .text-center { text-align: center !important; }\n  .text-left { text-align: left !important; }\n  .frac { display: inline-flex !important; flex-direction: column !important; vertical-align: middle !important; text-align: center !important; font-size: 0.9em !important; margin: 0 4px !important; line-height: 1.15 !important; }\n  .frac .num { border-bottom: 1.2px solid currentColor !important; padding: 0 2px !important; text-align: center !important; }\n  .frac .den { padding: 0 2px !important; text-align: center !important; }\n</style>\n\n<div style=\"padding: 12px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.75; font-size: 16px;\">\n\n  <!-- QUICK GLOSSARY CARD -->\n  <div style=\"background: rgba(255, 152, 0, 0.05); border: 1.5px solid #FF9800; border-radius: 12px; padding: 18px; margin-bottom: 25px;\">\n    <h2 class=\"text-center\" style=\"color: #FF9800; margin: 0 0 6px 0; font-size: 20px; font-weight: bold; text-align: center !important;\">📖 Quick Glossary &amp; Basic Definitions</h2>\n    <p class=\"text-center\" style=\"color: #FF9800; margin: 0 0 16px 0; font-size: 14.5px; text-align: center !important;\">Essential Core Concepts &amp; Key Definitions &bull; Chapter 2: Force and Laws of Motion</p>\n    <div style=\"display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px;\">\n      <div style=\"background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid #FF9800; border-radius: 6px;\">\n        <b style='color: #FF9800; display: block; margin-bottom: 4px;'>1. Force:</b>\n        <span style=\"color: #FFFFFF;\">A push or pull exerted on an object that produces or tends to produce a change in its state of rest, motion, velocity, direction, or shape (Vector quantity; SI Unit: Newton, N).</span>\n      </div>\n      <div style=\"background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid #FF9800; border-radius: 6px;\">\n        <b style='color: #FF9800; display: block; margin-bottom: 4px;'>2. Balanced Forces:</b>\n        <span style=\"color: #FFFFFF;\">Forces acting simultaneously on an object whose resultant net force is zero; they do not alter the object's state of rest or uniform motion, though they may alter its shape.</span>\n      </div>\n      <div style=\"background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid #FF9800; border-radius: 6px;\">\n        <b style='color: #FF9800; display: block; margin-bottom: 4px;'>3. Unbalanced Forces:</b>\n        <span style=\"color: #FFFFFF;\">Forces acting on an object whose vector sum is non-zero (F_net &ne; 0), thereby producing acceleration or change in velocity.</span>\n      </div>\n      <div style=\"background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid #FF9800; border-radius: 6px;\">\n        <b style='color: #FF9800; display: block; margin-bottom: 4px;'>4. Inertia:</b>\n        <span style=\"color: #FFFFFF;\">The inherent resistance of any physical object to any change in its velocity or state of rest. Mass is the quantitative measure of inertia.</span>\n      </div>\n      <div style=\"background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid #FF9800; border-radius: 6px;\">\n        <b style='color: #FF9800; display: block; margin-bottom: 4px;'>5. Linear Momentum (p):</b>\n        <span style=\"color: #FFFFFF;\">The product of the mass (m) and velocity (v) of an object: p = mv (Vector quantity; SI Unit: kg m/s or kg m s⁻¹).</span>\n      </div>\n      <div style=\"background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid #FF9800; border-radius: 6px;\">\n        <b style='color: #FF9800; display: block; margin-bottom: 4px;'>6. Newton's First Law of Motion:</b>\n        <span style=\"color: #FFFFFF;\">Every object continues in its state of rest or uniform rectilinear motion unless compelled to change that state by an applied external unbalanced force (Law of Inertia).</span>\n      </div>\n      <div style=\"background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid #FF9800; border-radius: 6px;\">\n        <b style='color: #FF9800; display: block; margin-bottom: 4px;'>7. Newton's Second Law of Motion:</b>\n        <span style=\"color: #FFFFFF;\">The rate of change of linear momentum of an object is directly proportional to the applied unbalanced force and takes place in the direction of the force: F = ma.</span>\n      </div>\n      <div style=\"background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid #FF9800; border-radius: 6px;\">\n        <b style='color: #FF9800; display: block; margin-bottom: 4px;'>8. One Newton (1 N):</b>\n        <span style=\"color: #FFFFFF;\">The magnitude of force that produces an acceleration of 1 m/s² when acting on an object of mass 1 kilogram: 1 N = 1 kg × 1 m/s² = 1 kg m s⁻².</span>\n      </div>\n      <div style=\"background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid #FF9800; border-radius: 6px;\">\n        <b style='color: #FF9800; display: block; margin-bottom: 4px;'>9. Newton's Third Law of Motion:</b>\n        <span style=\"color: #FFFFFF;\">To every action, there is an equal and opposite reaction; the mutual forces of action and reaction always act simultaneously on two different bodies.</span>\n      </div>\n      <div style=\"background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid #FF9800; border-radius: 6px;\">\n        <b style='color: #FF9800; display: block; margin-bottom: 4px;'>10. Law of Conservation of Momentum:</b>\n        <span style=\"color: #FFFFFF;\">In an isolated system where no external unbalanced force acts, the total linear momentum of interacting bodies remains constant and conserved: m₁u₁ + m₂u₂ = m₁v₁ + m₂v₂.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- SECTION: CORE CHAPTER CONCEPTS -->\n  <h2 style=\"color: #FF9800; border-bottom: 2px solid #FF9800; padding-bottom: 6px; margin-top: 25px;\">1. Comprehensive Chapter Overview &amp; Fundamental Principles</h2>\n  <div style=\"background: rgba(15, 23, 42, 0.85); border: 1.2px solid rgba(255, 152, 0, 0.4); border-left: 5px solid #FF9800; border-radius: 8px; padding: 14px 18px; margin: 16px 0;\">\n    <div style=\"color: #FF9800; font-size: 16px; font-weight: bold; margin-bottom: 6px;\">📌 CORE THEME: Force and Laws of Motion</div>\n    <div style=\"color: #FFFFFF; font-size: 15px; line-height: 1.7;\"><p>Dynamics is the fundamental branch of classical mechanics investigating the underlying physical causes of motion and changes in velocity. The central concept governing all dynamics is <b>Force</b>. Building upon Galileo Galilei's pioneering thought experiments on frictionless inclined planes, Sir Isaac Newton formulated the <b>Three Universal Laws of Motion</b> that establish the exact quantitative bridge between force, mass, momentum, and acceleration.</p>\n<p style=\"margin-top: 10px;\">The first law defines the qualitative concept of <b>Inertia</b>—the natural stubbornness of matter to maintain its kinematic status quo. The second law provides the mathematical definition of force as the time rate of change of <b>Momentum (p = mv)</b>, yielding the legendary equation <b>F = ma</b>. The third law reveals that individual forces never exist in isolation; forces always occur in matched action-reaction pairs acting upon two separate interacting bodies. In the absence of external forces, the total momentum of any colliding system remains strictly invariant.</p></div>\n  </div>\n\n  <!-- KEY LAWS SECTION -->\n  <h2 style=\"color: #FF9800; border-bottom: 2px solid #FF9800; padding-bottom: 6px; margin-top: 30px;\">2. Cardinal Laws &amp; Conceptual Mechanisms</h2>\n  <div style=\"background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255, 255, 255, 0.1); border-left: 4px solid #FF9800; border-radius: 6px; padding: 12px 15px; margin: 12px 0;\">\n    <div style=\"color: #FFFFFF; font-size: 15px; line-height: 1.7;\"><b style=\"color: #FF9800; display: block; margin-bottom: 4px;\">Mass as the Measure of Inertia:</b>Inertia is an intrinsic property of matter directly proportional to mass. A heavy stone possesses far greater inertia than a lightweight tennis ball, requiring a proportionally larger unbalanced force to alter its velocity.</div>\n  </div>\n  <div style=\"background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255, 255, 255, 0.1); border-left: 4px solid #FF9800; border-radius: 6px; padding: 12px 15px; margin: 12px 0;\">\n    <div style=\"color: #FFFFFF; font-size: 15px; line-height: 1.7;\"><b style=\"color: #FF9800; display: block; margin-bottom: 4px;\">Mathematical Derivation of Newton's Second Law:</b>Initial momentum p₁ = mu, Final momentum p₂ = mv.<br/>Change in momentum &Delta;p = m(v &minus; u).<br/>Rate of change of momentum = <span class=\"frac\"><span class=\"num\">m(v &minus; u)</span><span class=\"den\">t</span></span> = ma.<br/>According to the law: F &prop; ma &rArr; <b>F = k &middot; ma</b>. In SI units, setting constant k = 1 defines: <b>F = ma</b>.</div>\n  </div>\n  <div style=\"background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255, 255, 255, 0.1); border-left: 4px solid #FF9800; border-radius: 6px; padding: 12px 15px; margin: 12px 0;\">\n    <div style=\"color: #FFFFFF; font-size: 15px; line-height: 1.7;\"><b style=\"color: #FF9800; display: block; margin-bottom: 4px;\">Action and Reaction Act on Different Bodies:</b>Action and reaction forces never cancel each other out because they act on <b>two completely different bodies</b>. For example, when walking, your foot pushes the ground backward (Action on ground); simultaneously, the ground exerts an equal forward normal frictional force on your foot (Reaction on person).</div>\n  </div>\n  <div style=\"background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255, 255, 255, 0.1); border-left: 4px solid #FF9800; border-radius: 6px; padding: 12px 15px; margin: 12px 0;\">\n    <div style=\"color: #FFFFFF; font-size: 15px; line-height: 1.7;\"><b style=\"color: #FF9800; display: block; margin-bottom: 4px;\">Recoil of Gun & Jet Propulsion:</b>When a bullet of mass m is fired forward with muzzle velocity v, the gun of mass M experiences an equal and opposite backward kick (recoil velocity V) such that total momentum remains zero: M V + m v = 0 &rArr; <b>V = &minus;<span class=\"frac\"><span class=\"num\">m v</span><span class=\"den\">M</span></span></b>.</div>\n  </div>\n\n  <!-- EXAM TIPS & CRUX -->\n  <h2 style=\"color: #FF9800; border-bottom: 2px solid #FF9800; padding-bottom: 6px; margin-top: 30px;\">3. Board Exam Golden Traps &amp; Crucial High-Yield Points</h2>\n  <div style=\"background: rgba(45, 25, 20, 0.75); border: 1.2px solid #FF9800; border-left: 5px solid #FF9800; border-radius: 8px; padding: 12px 16px; margin: 12px 0;\">\n    <div style=\"color: #FFE0B2; font-size: 14.5px; line-height: 1.6;\">💡 <b style=\"color: #FF9800;\">Why a Fielder Pulls Hands Backward:</b> By pulling his hands back while catching a fast cricket ball, the fielder increases the contact time (t). Since F = m(v - u) / t, increasing time drastically reduces the impact force F, preventing hand injury.</div>\n  </div>\n  <div style=\"background: rgba(45, 25, 20, 0.75); border: 1.2px solid #FF9800; border-left: 5px solid #FF9800; border-radius: 8px; padding: 12px 16px; margin: 12px 0;\">\n    <div style=\"color: #FFE0B2; font-size: 14.5px; line-height: 1.6;\">💡 <b style=\"color: #FF9800;\">Passengers Jerk Forward During Sudden Braking:</b> Due to inertia of motion! When brakes are applied, the lower body in contact with the vehicle decelerates to rest, while the upper body continues moving forward at original speed.</div>\n  </div>\n  <div style=\"background: rgba(45, 25, 20, 0.75); border: 1.2px solid #FF9800; border-left: 5px solid #FF9800; border-radius: 8px; padding: 12px 16px; margin: 12px 0;\">\n    <div style=\"color: #FFE0B2; font-size: 14.5px; line-height: 1.6;\">💡 <b style=\"color: #FF9800;\">Action-Reaction Cancellation Fallacy:</b> Never say action and reaction cancel out! Cancellation only occurs when two equal and opposite forces act on the EXACT SAME body (balanced forces). Action and reaction act on two DIFFERENT bodies.</div>\n  </div>\n\n  <!-- MASTER FORMULA SHEET -->\n  <div style=\"background: rgba(255, 152, 0, 0.05); border: 1.5px solid #FF9800; border-radius: 12px; padding: 18px; margin-top: 30px;\">\n    <h2 class=\"text-center\" style=\"color: #FF9800; margin: 0 0 6px 0; font-size: 20px; font-weight: bold; text-align: center !important;\">✦ Master Revision Formula Cheat Sheet</h2>\n    <p class=\"text-center\" style=\"color: #FF9800; margin: 0 0 16px 0; font-size: 14.5px; text-align: center !important;\">Essential Working Relations, Units &amp; Governing Equations</p>\n    <div style=\"display: flex; flex-direction: column; gap: 8px;\">\n      <div style=\"background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid #FF9800; border-radius: 6px; margin: 8px 0;\">\n        <b style='color: #FF9800; display: block; margin-bottom: 4px;'>Linear Momentum:</b>\n        <div style=\"color: #FFFFFF; font-size: 16px; margin-top: 4px;\">p = mv &nbsp; [Vector, SI Unit: kg m/s]</div>\n      </div>\n      <div style=\"background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid #FF9800; border-radius: 6px; margin: 8px 0;\">\n        <b style='color: #FF9800; display: block; margin-bottom: 4px;'>Newton's Second Law of Motion:</b>\n        <div style=\"color: #FFFFFF; font-size: 16px; margin-top: 4px;\">F = <span class=\"frac\"><span class=\"num\">&Delta;p</span><span class=\"den\">t</span></span> = <span class=\"frac\"><span class=\"num\">m(v &minus; u)</span><span class=\"den\">t</span></span> = ma &nbsp; [Unit: Newton (N) = kg m/s²]</div>\n      </div>\n      <div style=\"background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid #FF9800; border-radius: 6px; margin: 8px 0;\">\n        <b style='color: #FF9800; display: block; margin-bottom: 4px;'>Impulse of Force:</b>\n        <div style=\"color: #FFFFFF; font-size: 16px; margin-top: 4px;\">J = F &times; t = &Delta;p = m(v &minus; u) &nbsp; [Unit: N s = kg m/s]</div>\n      </div>\n      <div style=\"background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid #FF9800; border-radius: 6px; margin: 8px 0;\">\n        <b style='color: #FF9800; display: block; margin-bottom: 4px;'>Law of Conservation of Linear Momentum:</b>\n        <div style=\"color: #FFFFFF; font-size: 16px; margin-top: 4px;\">m₁u₁ + m₂u₂ = m₁v₁ + m₂v₂ &nbsp; [For isolated system with F_ext = 0]</div>\n      </div>\n      <div style=\"background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid #FF9800; border-radius: 6px; margin: 8px 0;\">\n        <b style='color: #FF9800; display: block; margin-bottom: 4px;'>Recoil Velocity of Firearm:</b>\n        <div style=\"color: #FFFFFF; font-size: 16px; margin-top: 4px;\">V<sub>recoil</sub> = &minus;<span class=\"frac\"><span class=\"num\">m<sub>bullet</sub> &times; v<sub>bullet</sub></span><span class=\"den\">M<sub>gun</sub></span></span></div>\n      </div>\n    </div>\n  </div>\n\n</div>\n",
+  "htmlExercises": {
+    "exercise": "\n<style>\n  p, li, div:not(.table-container):not(.table-responsive):not(.pt-scroll-wrapper) {\n    text-align: justify !important;\n  }\n  h1, h2, h3, h4, h5, h6 { text-align: left; }\n  .text-center { text-align: center !important; }\n  .text-left { text-align: left !important; }\n  .frac { display: inline-flex !important; flex-direction: column !important; vertical-align: middle !important; text-align: center !important; font-size: 0.9em !important; margin: 0 4px !important; line-height: 1.15 !important; }\n  .frac .num { border-bottom: 1.2px solid currentColor !important; padding: 0 2px !important; text-align: center !important; }\n  .frac .den { padding: 0 2px !important; text-align: center !important; }\n</style>\n\n<div style=\"padding: 12px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.75; font-size: 16px;\">\n  <div style=\"background: rgba(255, 152, 0, 0.08); border: 1.5px solid #FF9800; border-radius: 12px; padding: 16px; margin-bottom: 25px; text-align: center;\">\n    <h2 style=\"color: #FF9800; margin: 0 0 6px 0; font-size: 21px; font-weight: bold; text-align: center !important;\">\n      Force and Laws of Motion &mdash; Exercise Questions\n    </h2>\n    <p style=\"color: #FFD700; margin: 0; font-size: 15px; font-weight: 500; text-align: center !important;\">\n      Comprehensive Step-by-Step Board Solutions (18 Questions)\n    </p>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(255, 152, 0, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #FF9800; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q1: </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #FF9800; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #FF9800; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Answer:</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Yes, it is possible. If the net external force acting on an object is zero, the object will either remain at rest or continue to move with constant velocity. This is according to Newton’s First Law of Motion.</div></div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: Verified and calculated as per fundamental physical principles.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(255, 152, 0, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #FF9800; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q2: </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #FF9800; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #FF9800; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Answer:</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>When the carpet is beaten, it moves suddenly but the dust particles tend to remain at rest due to inertia. This causes the dust to separate and fall out.</div></div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: When the carpet is beaten, it moves suddenly but the dust particles tend to remain at rest due to inertia. This causes the dust to separate and fall out.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(255, 152, 0, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #FF9800; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q3: </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #FF9800; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #FF9800; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Answer:</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Due to sudden start or stop of the bus, luggage may move because of inertia. So it is tied with a rope to prevent it from falling.</div></div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: Due to sudden start or stop of the bus, luggage may move because of inertia. So it is tied with a rope to prevent it from falling.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(255, 152, 0, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #FF9800; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q4: </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #FF9800; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #FF9800; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Answer:</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>(c) there is a force on the ball opposing the motion</div></div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: (c) there is a force on the ball opposing the motion\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(255, 152, 0, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #FF9800; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q5: </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #FF9800; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #FF9800; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Answer:</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>u = 0, s = 400 m, t = 20 s</div></div><div style=\"margin-bottom: 8px;\"><br/></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>s = ut + ½at²</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>400 = ½a × (20)²</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>400 = 200a</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>a = 2 m/s²</div></div><div style=\"margin-bottom: 8px;\"><br/></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Mass = 7 tonnes = 7000 kg</div></div><div style=\"margin-bottom: 8px;\"><br/></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Force = ma = 7000 × 2 = 14000 N</div></div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: Force = ma = 7000 × 2 = 14000 N\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(255, 152, 0, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #FF9800; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q6: </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #FF9800; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #FF9800; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Answer:</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>m = 1 kg, u = 20 m/s, v = 0, s = 50 m</div></div><div style=\"margin-bottom: 8px;\"><br/></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>v² = u² + 2as</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>0 = 400 + 2a × 50</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>0 = 400 + 100a</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>a = −4 m/s²</div></div><div style=\"margin-bottom: 8px;\"><br/></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Force = ma = 1 × (−4) = −4 N</div></div><div style=\"margin-bottom: 8px;\"><br/></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>(Friction force = 4 N opposite to motion)</div></div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: (Friction force = 4 N opposite to motion)\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(255, 152, 0, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #FF9800; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q7: </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #FF9800; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #FF9800; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Answer:</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Total mass = 8000 + (5 × 2000) = 18000 kg</div></div><div style=\"margin-bottom: 8px;\"><br/></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Net force = 40000 − 5000 = 35000 N</div></div><div style=\"margin-bottom: 8px;\"><br/></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Acceleration = F / m</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>= 35000 / 18000</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>≈ 1.94 m/s²</div></div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: ≈ 1.94 m/s²\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(255, 152, 0, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #FF9800; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q8: </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #FF9800; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #FF9800; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Answer:</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>F = ma</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>= 1500 × (−1.7)</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>= −2550 N</div></div><div style=\"margin-bottom: 8px;\"><br/></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>(Force is opposite to motion)</div></div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: (Force is opposite to motion)\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(255, 152, 0, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #FF9800; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q9: </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #FF9800; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #FF9800; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Answer:</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>(d) mv</div></div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: (d) mv\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(255, 152, 0, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #FF9800; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q10: </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #FF9800; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #FF9800; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Answer:</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>At constant velocity, net force = 0</div></div><div style=\"margin-bottom: 8px;\"><br/></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Friction force = 200 N (opposite direction)</div></div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: Friction force = 200 N (opposite direction)\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(255, 152, 0, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #FF9800; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q11: </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #FF9800; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #FF9800; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Answer:</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>m₁ = m₂ = 1.5 kg</div></div><div style=\"margin-bottom: 8px;\"><br/></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Using momentum conservation:</div></div><div style=\"margin-bottom: 8px;\"><br/></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Initial momentum = (1.5×2.5) + (1.5×−2.5) = 0</div></div><div style=\"margin-bottom: 8px;\"><br/></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Final velocity = 0 m/s</div></div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: Final velocity = 0 m/s\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(255, 152, 0, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #FF9800; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q12: </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #FF9800; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #FF9800; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Answer:</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>This statement is incorrect. Action and reaction act on different objects, so they do not cancel each other. The truck moves depending on the net force acting on it.</div></div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: This statement is incorrect. Action and reaction act on different objects, so they do not cancel each other. The truck moves depending on the net force acting on it.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(255, 152, 0, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #FF9800; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q13: </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #FF9800; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #FF9800; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Answer:</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Mass = 0.2 kg</div></div><div style=\"margin-bottom: 8px;\"><br/></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Initial momentum = 0.2 × 10 = 2 kg·m/s</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Final momentum = 0.2 × (−5) = −1 kg·m/s</div></div><div style=\"margin-bottom: 8px;\"><br/></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Change = Final − Initial</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>= −1 − 2 = −3 kg·m/s</div></div><div style=\"margin-bottom: 8px;\"><br/></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Magnitude = 3 kg·m/s</div></div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: Magnitude = 3 kg·m/s\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(255, 152, 0, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #FF9800; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q14: </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #FF9800; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #FF9800; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Answer:</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Mass = 0.01 kg</div></div><div style=\"margin-bottom: 8px;\"><br/></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>v = 0, u = 150 m/s, t = 0.03 s</div></div><div style=\"margin-bottom: 8px;\"><br/></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Acceleration:</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>a = (v − u)/t = −150 / 0.03 = −5000 m/s²</div></div><div style=\"margin-bottom: 8px;\"><br/></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Distance:</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>s = ut + ½at²</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>= (150×0.03) + ½×(−5000)×(0.03)²</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>= 4.5 − 2.25 = 2.25 m</div></div><div style=\"margin-bottom: 8px;\"><br/></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Force:</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>F = ma = 0.01 × (−5000) = −50 N</div></div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: F = ma = 0.01 × (−5000) = −50 N\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(255, 152, 0, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #FF9800; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q15: </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #FF9800; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #FF9800; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Answer:</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Initial momentum = 1 × 10 = 10 kg·m/s</div></div><div style=\"margin-bottom: 8px;\"><br/></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>After collision:</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Total mass = 6 kg</div></div><div style=\"margin-bottom: 8px;\"><br/></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Velocity = momentum / mass</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>= 10 / 6 ≈ 1.67 m/s</div></div><div style=\"margin-bottom: 8px;\"><br/></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Final momentum = 6 × 1.67 ≈ 10 kg·m/s</div></div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: Final momentum = 6 × 1.67 ≈ 10 kg·m/s\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(255, 152, 0, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #FF9800; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q16: </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #FF9800; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #FF9800; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Answer:</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Mass = 100 kg</div></div><div style=\"margin-bottom: 8px;\"><br/></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Initial momentum = 100 × 5 = 500 kg·m/s</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Final momentum = 100 × 8 = 800 kg·m/s</div></div><div style=\"margin-bottom: 8px;\"><br/></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Acceleration = (8 − 5) / 6 = 0.5 m/s²</div></div><div style=\"margin-bottom: 8px;\"><br/></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Force = ma = 100 × 0.5 = 50 N</div></div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: Force = ma = 100 × 0.5 = 50 N\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(255, 152, 0, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #FF9800; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q17: </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #FF9800; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #FF9800; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Answer:</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>According to Newton’s Third Law, both insect and car experience equal and opposite forces. However, due to the very small mass of the insect, it undergoes a large change in motion, while the car shows negligible change.</div></div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: Verified and calculated as per fundamental physical principles.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(255, 152, 0, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #FF9800; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q18: </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #FF9800; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #FF9800; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Answer:</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Height = 0.8 m</div></div><div style=\"margin-bottom: 8px;\"><br/></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Using v² = 2gh</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>v² = 2 × 10 × 0.8 = 16</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>v = 4 m/s</div></div><div style=\"margin-bottom: 8px;\"><br/></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Momentum = m × v = 10 × 4 = 40 kg·m/s</div></div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: Momentum = m × v = 10 × 4 = 40 kg·m/s\n    </div>\n  </div>\n\n</div>\n",
+    "in-text": "\n<style>\n  p, li, div:not(.table-container):not(.table-responsive):not(.pt-scroll-wrapper) {\n    text-align: justify !important;\n  }\n  h1, h2, h3, h4, h5, h6 { text-align: left; }\n  .text-center { text-align: center !important; }\n  .text-left { text-align: left !important; }\n  .frac { display: inline-flex !important; flex-direction: column !important; vertical-align: middle !important; text-align: center !important; font-size: 0.9em !important; margin: 0 4px !important; line-height: 1.15 !important; }\n  .frac .num { border-bottom: 1.2px solid currentColor !important; padding: 0 2px !important; text-align: center !important; }\n  .frac .den { padding: 0 2px !important; text-align: center !important; }\n</style>\n\n<div style=\"padding: 12px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.75; font-size: 16px;\">\n  <div style=\"background: rgba(255, 152, 0, 0.08); border: 1.5px solid #FF9800; border-radius: 12px; padding: 16px; margin-bottom: 25px; text-align: center;\">\n    <h2 style=\"color: #FF9800; margin: 0 0 6px 0; font-size: 21px; font-weight: bold; text-align: center !important;\">\n      Force and Laws of Motion &mdash; In-Text Questions\n    </h2>\n    <p style=\"color: #FFD700; margin: 0; font-size: 15px; font-weight: 500; text-align: center !important;\">\n      Comprehensive Step-by-Step Board Solutions (8 Questions)\n    </p>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(255, 152, 0, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #FF9800; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q1: </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #FF9800; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #FF9800; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Answer:</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Inertia depends on mass. The object with greater mass has more inertia.</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>(a) Stone has more inertia than rubber ball.</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>(b) Train has more inertia than bicycle.</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>(c) Five-rupee coin has more inertia than one-rupee coin.</div></div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: (c) Five-rupee coin has more inertia than one-rupee coin.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(255, 152, 0, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #FF9800; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q2: </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #FF9800; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #FF9800; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Answer:</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Velocity changes 3 times.</div></div><div style=\"margin-bottom: 8px;\"><br/></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>1. First kick → Player applies force</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>2. Second kick → Second player applies force</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>3. Goalkeeper kick → Goalkeeper applies force</div></div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: 3. Goalkeeper kick → Goalkeeper applies force\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(255, 152, 0, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #FF9800; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q3: </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #FF9800; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #FF9800; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Answer:</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>When the branch is shaken, it moves suddenly but the leaves tend to remain at rest due to inertia. This causes the leaves to detach and fall down.</div></div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: When the branch is shaken, it moves suddenly but the leaves tend to remain at rest due to inertia. This causes the leaves to detach and fall down.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(255, 152, 0, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #FF9800; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q4: </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #FF9800; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #FF9800; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Answer:</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>When a moving bus stops suddenly, the lower part of the body stops but the upper part continues to move forward due to inertia, so we fall forward.</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>When the bus starts suddenly, the lower part moves forward but the upper part remains at rest, so we fall backward.</div></div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: When the bus starts suddenly, the lower part moves forward but the upper part remains at rest, so we fall backward.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(255, 152, 0, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #FF9800; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q5: </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #FF9800; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #FF9800; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Answer:</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>When the horse pushes the ground backward, the ground exerts an equal and opposite force on the horse in the forward direction. This forward force helps the horse pull the cart.</div></div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: When the horse pushes the ground backward, the ground exerts an equal and opposite force on the horse in the forward direction. This forward force helps the horse pull the cart.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(255, 152, 0, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #FF9800; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q6: </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #FF9800; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #FF9800; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Answer:</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Water coming out at high speed exerts a large backward force (reaction) on the hose. Due to this strong reaction force, it becomes difficult for the fireman to hold the hose.</div></div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: Water coming out at high speed exerts a large backward force (reaction) on the hose. Due to this strong reaction force, it becomes difficult for the fireman to hold the hose.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(255, 152, 0, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #FF9800; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q7: </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #FF9800; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #FF9800; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Answer:</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Mass of rifle = 4 kg</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Mass of bullet = 50 g = 0.05 kg</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Velocity of bullet = 35 m/s</div></div><div style=\"margin-bottom: 8px;\"><br/></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Using conservation of momentum:</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>0 = (0.05 × 35) + (4 × v)</div></div><div style=\"margin-bottom: 8px;\"><br/></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>1.75 + 4v = 0</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>v = −1.75 / 4</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>v = −0.4375 m/s</div></div><div style=\"margin-bottom: 8px;\"><br/></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>(Recoil velocity is opposite in direction)</div></div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: (Recoil velocity is opposite in direction)\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(255, 152, 0, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #FF9800; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q8: </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #FF9800; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #FF9800; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Answer:</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Mass1 = 0.1 kg, Velocity1 = 2 m/s</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Mass2 = 0.2 kg, Velocity2 = 1 m/s</div></div><div style=\"margin-bottom: 8px;\"><br/></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Using conservation of momentum:</div></div><div style=\"margin-bottom: 8px;\"><br/></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Initial momentum = (0.1×2) + (0.2×1) = 0.2 + 0.2 = 0.4</div></div><div style=\"margin-bottom: 8px;\"><br/></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>Final momentum = (0.1×1.67) + (0.2×v)</div></div><div style=\"margin-bottom: 8px;\"><br/></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>0.4 = 0.167 + 0.2v</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>0.2v = 0.233</div></div><div style=\"margin-bottom: 8px;\"><div style='text-align: justify;'>v = 1.165 m/s</div></div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: v = 1.165 m/s\n    </div>\n  </div>\n\n</div>\n"
+  }
 };

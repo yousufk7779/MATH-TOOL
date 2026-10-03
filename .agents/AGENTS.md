@@ -278,4 +278,20 @@ Full authoritative rules, JKBOSE & CBSE 3 branches mapping (13 chapters: Physics
    - Any embedded diagrams centered in `#FFFDF8` white rounded containers.
    - Final answer in crisp `#4CAF50` green box (`✓ Final Answer: ...`).
 6. **Tab 3 Interactive MCQs**: Exactly 10 smart interactive questions with green/red option feedback and gamified result dashboard.
-7. **Class 9 Science Replication**: When upgrading Class 9 Science (Physics 5, Chemistry 4, Biology 3 chapters), strictly replicate this exact 3-tab HTML Web View architecture, theme color mapping, and dark card styling.
+
+---
+
+## Class 9 Science Master Blueprint & Gold Standards
+
+Full authoritative rules, JKBOSE & CBSE 3 branches mapping (14 chapters: Physics 6, Chemistry 4, Biology 4), exact 399 questions inventory, and UI standards are permanently recorded in:
+👉 `.agents/CLASS_9_SCIENCE_BLUEPRINT.md`
+
+### Core Class 9 Science Directives:
+1. **100% Rich Web View Architecture (`isHtmlView: true`)**: All 14 chapters built using rich HTML/CSS Web View for dark-mode cards, theme-colored borders, and custom science typography.
+2. **Zero Content Omission Guarantee**: Every single question and sub-part (399 questions across all 14 chapters: 205 Exercise + 194 In-Text) preserved 100% verbatim. Zero questions skipped or summarized.
+3. **Zero Extra Questions Guarantee**: Exactly the official textbook curriculum questions; no extraneous unverified additions.
+4. **Theme Color & Gradient Synchronization**: Every chapter has its distinct authentic theme color applied in the TS content file, `otherSubjectsData["Class 9 Science"]`, and `getChapterGradient()` in `client/data/chapters.ts`.
+5. **Tab 1 Quick Revision (`htmlOverview`)**: Single-frame Quick Glossary card, prose-first explanatory theory, cardinal laws with theme left borders, exam trap warning boxes, and stacked fraction Master Revision Formula Cheat Sheet at end.
+6. **Tab 2 Solutions (`htmlExercises`)**: Sub-tabs for `"exercise"` and `"in-text"` (or `"exercise"` only for Ch 14). Dark solution cards, theme question titles, embedded diagrams inside `#FFFDF8` white rounded cards, and `#4CAF50` green `✓ Final Answer` boxes.
+7. **Tab 3 Interactive MCQs**: Exactly 10 interactive questions per chapter (140 total) with instant green/red feedback and tiered gamified result dashboard.
+

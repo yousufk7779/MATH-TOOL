@@ -954,47 +954,47 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
   },
   "Class 9 Science": {
     Physics: [
-      { id: "c9-sci-phy-1", number: 1, name: "Motion", color: "#E91E63" },
+      { id: "c9-sci-phy-1", number: 1, name: "Motion", color: "#FF5722" },
       {
         id: "c9-sci-phy-2",
         number: 2,
         name: "Force and Laws of Motion",
-        color: "#E91E63",
+        color: "#FF9800",
       },
       {
         id: "c9-sci-phy-3",
         number: 3,
         name: "Work, Energy and Power",
-        color: "#E91E63",
+        color: "#00C853",
       },
-      { id: "c9-sci-phy-4", number: 4, name: "Gravitation", color: "#E91E63" },
-      { id: "c9-sci-phy-5", number: 5, name: "Floatation", color: "#E91E63" },
-      { id: "c9-sci-phy-6", number: 6, name: "Sound", color: "#E91E63" },
+      { id: "c9-sci-phy-4", number: 4, name: "Gravitation", color: "#00E5FF" },
+      { id: "c9-sci-phy-5", number: 5, name: "Floatation", color: "#26C6DA" },
+      { id: "c9-sci-phy-6", number: 6, name: "Sound", color: "#BA68C8" },
     ],
     Chemistry: [
       {
         id: "c9-sci-chem-1",
         number: 1,
         name: "Matter in Our Surroundings",
-        color: "#9C27B0",
+        color: "#00BCD4",
       },
       {
         id: "c9-sci-chem-2",
         number: 2,
         name: "Is Matter Around Us Pure?",
-        color: "#9C27B0",
+        color: "#EC407A",
       },
       {
         id: "c9-sci-chem-3",
         number: 3,
         name: "Atoms and Molecules",
-        color: "#9C27B0",
+        color: "#7E57C2",
       },
       {
         id: "c9-sci-chem-4",
         number: 4,
         name: "Structure of the Atom",
-        color: "#9C27B0",
+        color: "#3F51B5",
       },
     ],
     Biology: [
@@ -1004,18 +1004,18 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
         name: "The Fundamental Unit of Life",
         color: "#4CAF50",
       },
-      { id: "c9-sci-bio-2", number: 2, name: "Tissues", color: "#4CAF50" },
+      { id: "c9-sci-bio-2", number: 2, name: "Tissues", color: "#00E676" },
       {
         id: "c9-sci-bio-3",
         number: 3,
         name: "Improvement in Food Resources",
-        color: "#4CAF50",
+        color: "#8BC34A",
       },
       {
         id: "c9-sci-bio-4",
         number: 4,
         name: "Prevention of Drug Abuse and Sexually Transmitted Diseases",
-        color: "#4CAF50",
+        color: "#FF4081",
       },
     ],
   },
@@ -1293,7 +1293,6 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
 
   // Targeted theme color replacement for Chemistry Chapter 2 and Math Chapter 7
   const cyanTargetedIds = [
-    "c9-sci-chem-2",
     "c8-sci-chem-2",
     "c7-sci-chem-2",
   ];
@@ -1316,7 +1315,6 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
 
   // Targeted theme color replacement for Chemistry Chapter 4 (Green-Cyan)
   const greenCyanTargetedIds = [
-    "c9-sci-chem-4",
     "c8-sci-chem-4",
     "c7-sci-chem-4",
   ];
@@ -1327,7 +1325,6 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
 
   // Targeted theme color replacement for Biology Chapter 4 (Pink -> Orange Glossy)
   const pinkOrangeTargetedIds = [
-    "c9-sci-bio-4",
     "c8-sci-bio-4",
     "c7-sci-bio-4",
     "c6-sci-bio-4",
@@ -1370,6 +1367,27 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
   if (chapterId === "sci-bio-3") return ["#FF4081", "#D81B60"]; // Floral Rose Pink (How do Organisms Reproduce?)
   if (chapterId === "sci-bio-4") return ["#42A5F5", "#1976D2"]; // Genetics Azure Blue (Heredity)
   if (chapterId === "sci-bio-5") return ["#8BC34A", "#558B2F"]; // Ecology Lime Green (Our Environment)
+
+  // Class 9 Science (Physics, Chemistry, Biology - Full Blueprint & Content Theme Color Alignment)
+  // Physics (6 Chapters)
+  if (chapterId === "c9-sci-phy-1") return ["#FF5722", "#E64A19"]; // Flame Orange (Motion)
+  if (chapterId === "c9-sci-phy-2") return ["#FF9800", "#F57C00"]; // Warm Amber (Force and Laws of Motion)
+  if (chapterId === "c9-sci-phy-3") return ["#00C853", "#009624"]; // Vibrant Emerald (Work, Energy and Power)
+  if (chapterId === "c9-sci-phy-4") return ["#00E5FF", "#0097A7"]; // Electric Cyan (Gravitation)
+  if (chapterId === "c9-sci-phy-5") return ["#26C6DA", "#00838F"]; // Ocean Teal (Floatation)
+  if (chapterId === "c9-sci-phy-6") return ["#BA68C8", "#8E24AA"]; // Acoustic Amethyst (Sound)
+
+  // Chemistry (4 Chapters)
+  if (chapterId === "c9-sci-chem-1") return ["#00BCD4", "#00838F"]; // States of Matter Cyan (Matter in Our Surroundings)
+  if (chapterId === "c9-sci-chem-2") return ["#EC407A", "#C2185B"]; // Mixtures Crimson Pink (Is Matter Around Us Pure?)
+  if (chapterId === "c9-sci-chem-3") return ["#7E57C2", "#5E35B1"]; // Molecules Royal Violet (Atoms and Molecules)
+  if (chapterId === "c9-sci-chem-4") return ["#3F51B5", "#283593"]; // Atomic Shells Indigo (Structure of the Atom)
+
+  // Biology (4 Chapters)
+  if (chapterId === "c9-sci-bio-1") return ["#4CAF50", "#2E7D32"]; // Cell Leaf Green (The Fundamental Unit of Life)
+  if (chapterId === "c9-sci-bio-2") return ["#00E676", "#00A344"]; // Histology Spring Green (Tissues)
+  if (chapterId === "c9-sci-bio-3") return ["#8BC34A", "#558B2F"]; // Agri Lime Green (Improvement in Food Resources)
+  if (chapterId === "c9-sci-bio-4") return ["#FF4081", "#D81B60"]; // Health Rose Pink (Prevention of Drug Abuse and STDs)
 
   // Class 10 Mathematics (Full Blueprint & Content Theme Color Alignment)
   if (chapterId === "ch1") return ["#E91E63", "#C2185B"]; // Rose Pink (Real Numbers)
