@@ -64,6 +64,7 @@ export interface ChapterContent {
   mcqs: MCQ[];
   summary?: string[];
   isHtmlView?: boolean;
+  themeColor?: string;
   htmlOverview?: string;
   htmlExercises?: Record<string, string>;
   htmlMcqs?: string;
