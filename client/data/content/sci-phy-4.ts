@@ -8,810 +8,811 @@ export const sciPhy4: ChapterContent = {
   "htmlOverview": "\n<style>\n  p, li, div:not(.table-container):not(.table-responsive):not(.pt-scroll-wrapper):not(.mcq-option) {\n    text-align: justify !important;\n  }\n  h1, h2, h3, h4, h5, h6 { text-align: left; }\n  .text-center { text-align: center !important; }\n  .text-left { text-align: left !important; }\n</style>\n\n<div style=\"padding: 12px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.75; font-size: 16px;\">\n  \n  <!-- QUICK GLOSSARY CARD -->\n  <div style=\"background: rgba(186, 104, 200, 0.05); border: 1.5px solid #BA68C8; border-radius: 12px; padding: 18px; margin-bottom: 25px;\">\n    <h2 class=\"text-center\" style=\"color: #BA68C8; margin: 0 0 6px 0; font-size: 20px; font-weight: bold; text-align: center !important;\">📖 Quick Glossary &amp; Basic Definitions</h2>\n    <p class=\"text-center\" style=\"color: #BA68C8; margin: 0 0 16px 0; font-size: 14.5px; text-align: center !important;\">Essential Core Concepts &amp; Key Definitions &bull; Chapter 4: Magnetic Effects of Electric Current</p>\n    <div style=\"display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px;\">\n      \n      <div style=\"background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid #BA68C8; border-radius: 6px;\">\n        <b style='color: #BA68C8; display: block; margin-bottom: 4px;'>1. Magnetic Field (B):</b>\n        <span style=\"color: #FFFFFF;\">The physical region surrounding a magnet or a current-carrying conductor within which its magnetic influence can be detected and experienced by other magnetic substances or moving charges. Its SI unit is the Tesla (T).</span>\n      </div>\n      <div style=\"background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid #BA68C8; border-radius: 6px;\">\n        <b style='color: #BA68C8; display: block; margin-bottom: 4px;'>2. Magnetic Field Lines:</b>\n        <span style=\"color: #FFFFFF;\">Continuous imaginary lines or curves drawn in a magnetic field such that the tangent drawn at any point gives the direction of the magnetic field vector at that point. Outside a magnet, they emerge from the North pole and enter the South pole.</span>\n      </div>\n      <div style=\"background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid #BA68C8; border-radius: 6px;\">\n        <b style='color: #BA68C8; display: block; margin-bottom: 4px;'>3. Right-Hand Thumb Rule:</b>\n        <span style=\"color: #FFFFFF;\">Imagine holding a current-carrying straight conductor in your right hand such that the outstretched thumb points in the direction of electric current; then the fingers curled around the conductor point in the direction of the magnetic field lines.</span>\n      </div>\n      <div style=\"background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid #BA68C8; border-radius: 6px;\">\n        <b style='color: #BA68C8; display: block; margin-bottom: 4px;'>4. Solenoid:</b>\n        <span style=\"color: #FFFFFF;\">A long cylindrical helical coil consisting of many closely wound turns of insulated copper wire. When electric current flows through it, it produces a uniform internal magnetic field remarkably identical to that of a bar magnet.</span>\n      </div>\n      <div style=\"background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid #BA68C8; border-radius: 6px;\">\n        <b style='color: #BA68C8; display: block; margin-bottom: 4px;'>5. Electromagnet:</b>\n        <span style=\"color: #FFFFFF;\">A temporary, powerful magnet created by placing a soft iron core inside a current-carrying solenoid; it remains magnetized only as long as electric current flows through the coil.</span>\n      </div>\n      <div style=\"background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid #BA68C8; border-radius: 6px;\">\n        <b style='color: #BA68C8; display: block; margin-bottom: 4px;'>6. Fleming's Left-Hand Rule (Motor Rule):</b>\n        <span style=\"color: #FFFFFF;\">Stretch the thumb, forefinger, and middle finger of your left hand mutually perpendicular to each other. If the Forefinger points along the magnetic Field and the Middle finger points along the Current, then the Thumb points in the direction of the mechanical Force (Motion) acting on the conductor.</span>\n      </div>\n      <div style=\"background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid #BA68C8; border-radius: 6px;\">\n        <b style='color: #BA68C8; display: block; margin-bottom: 4px;'>7. Electric Motor:</b>\n        <span style=\"color: #FFFFFF;\">A rotating electrical machine that converts electrical energy into mechanical rotational kinetic energy, operating on the principle that a current-carrying coil placed in a magnetic field experiences a deflecting torque.</span>\n      </div>\n      <div style=\"background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid #BA68C8; border-radius: 6px;\">\n        <b style='color: #BA68C8; display: block; margin-bottom: 4px;'>8. Split-Ring Commutator:</b>\n        <span style=\"color: #FFFFFF;\">A split cylindrical copper ring in a DC motor that reverses the direction of current flowing through the rotating armature coil every half rotation, ensuring continuous unidirectional rotation of the shaft.</span>\n      </div>\n      <div style=\"background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid #BA68C8; border-radius: 6px;\">\n        <b style='color: #BA68C8; display: block; margin-bottom: 4px;'>9. Electromagnetic Induction (EMI):</b>\n        <span style=\"color: #FFFFFF;\">The phenomenon of producing an induced electromotive force (EMF) and consequent electric current in a closed conductor loop whenever there is relative motion between the conductor and a magnetic field or when the magnetic flux linked with the loop changes.</span>\n      </div>\n      <div style=\"background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid #BA68C8; border-radius: 6px;\">\n        <b style='color: #BA68C8; display: block; margin-bottom: 4px;'>10. Fleming's Right-Hand Rule (Generator Rule):</b>\n        <span style=\"color: #FFFFFF;\">Stretch the thumb, forefinger, and middle finger of your right hand mutually perpendicular to each other. If the Forefinger points along the magnetic Field and the Thumb points along the Motion of the conductor, then the Middle finger indicates the direction of the Induced Current.</span>\n      </div>\n      <div style=\"background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid #BA68C8; border-radius: 6px;\">\n        <b style='color: #BA68C8; display: block; margin-bottom: 4px;'>11. Electric Generator (Dynamo):</b>\n        <span style=\"color: #FFFFFF;\">A machine that converts mechanical rotational energy into electrical energy based on the principle of electromagnetic induction by rotating a conductive coil within a magnetic field.</span>\n      </div>\n      <div style=\"background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid #BA68C8; border-radius: 6px;\">\n        <b style='color: #BA68C8; display: block; margin-bottom: 4px;'>12. Alternating Current (AC) vs Direct Current (DC):</b>\n        <span style=\"color: #FFFFFF;\">Direct Current (DC) flows unidirectionally with constant polarity. Alternating Current (AC) periodically reverses its direction and magnitude at regular intervals; in India, domestic AC has a frequency of 50 Hz.</span>\n      </div>\n      <div style=\"background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid #BA68C8; border-radius: 6px;\">\n        <b style='color: #BA68C8; display: block; margin-bottom: 4px;'>13. Overloading & Short-Circuit:</b>\n        <span style=\"color: #FFFFFF;\">Overloading occurs when too many high-power appliances are operated simultaneously drawing current beyond the safe rating of the circuit. A short-circuit occurs when the live and neutral wires come in direct physical contact, dropping resistance to near zero and causing a dangerous surge in current.</span>\n      </div>\n      <div style=\"background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid #BA68C8; border-radius: 6px;\">\n        <b style='color: #BA68C8; display: block; margin-bottom: 4px;'>14. Earth Wire & Earthing:</b>\n        <span style=\"color: #FFFFFF;\">A safety wire (with green/yellow insulation) connected to a metal plate buried deep in the ground that provides a near-zero resistance path for leakage currents from metallic appliance bodies to Earth, preventing fatal electrical shocks.</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- SECTION: CORE CHAPTER CONCEPTS -->\n  <h2 style=\"color: #BA68C8; border-bottom: 2px solid #BA68C8; padding-bottom: 6px; margin-top: 25px;\">1. Comprehensive Chapter Overview &amp; Fundamental Principles</h2>\n  <div style=\"background: rgba(15, 23, 42, 0.85); border: 1.2px solid rgba(186, 104, 200, 0.4); border-left: 5px solid #BA68C8; border-radius: 8px; padding: 14px 18px; margin: 16px 0;\">\n    <div style=\"color: #BA68C8; font-size: 16px; font-weight: bold; margin-bottom: 6px;\">📌 CORE THEME: Magnetic Effects of Electric Current</div>\n    <div style=\"color: #FFFFFF; font-size: 15px; line-height: 1.7;\">In 1820, Danish physicist Hans Christian Oersted made a serendipitous discovery that changed the course of physics: a compass needle placed near an electric current-carrying wire deflected instantly, demonstrating for the very first time that electricity and magnetism are inextricably linked manifestations of a single unified phenomenon &mdash; electromagnetism. Moving electric charges produce a magnetic field in their surrounding space, and conversely, changing magnetic fields can induce electric currents. In this chapter, we explore magnetic fields and their characteristic field lines, the magnetic fields produced by diverse conductor geometries (straight wires, circular loops, and solenoids), and the Right-Hand Thumb Rule. We investigate the mechanical force experienced by a current-carrying conductor in an external magnetic field, encapsulated by Fleming's Left-Hand Rule and engineered into practical DC electric motors. Furthermore, we examine Michael Faraday's monumental discovery of electromagnetic induction (EMI), Fleming's Right-Hand Rule, the working of electric generators, and the design and safety principles of domestic alternating current (AC) power distribution systems, including fuses, earthing, short-circuits, and overloading.</div>\n  </div>\n\n  <!-- KEY POINTS SECTION -->\n  <h2 style=\"color: #BA68C8; border-bottom: 2px solid #BA68C8; padding-bottom: 6px; margin-top: 30px;\">2. Cardinal Laws &amp; Conceptual Mechanisms</h2>\n  \n      <div style=\"background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255, 255, 255, 0.1); border-left: 4px solid #BA68C8; border-radius: 6px; padding: 12px 15px; margin: 10px 0;\">\n        <div style=\"color: #FFFFFF; font-size: 15px; line-height: 1.7;\">Oersted's discovery proved that an electric current always produces a magnetic field in its surrounding space.</div>\n      </div>\n      <div style=\"background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255, 255, 255, 0.1); border-left: 4px solid #BA68C8; border-radius: 6px; padding: 12px 15px; margin: 10px 0;\">\n        <div style=\"color: #FFFFFF; font-size: 15px; line-height: 1.7;\">Properties of magnetic field lines: (i) They form continuous, closed loops (North to South outside the magnet, South to North inside), (ii) Tangent at any point indicates field direction, (iii) Two field lines never intersect (which would imply two different field directions at a single point, physically impossible), (iv) Degree of crowding of lines indicates relative field strength.</div>\n      </div>\n      <div style=\"background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255, 255, 255, 0.1); border-left: 4px solid #BA68C8; border-radius: 6px; padding: 12px 15px; margin: 10px 0;\">\n        <div style=\"color: #FFFFFF; font-size: 15px; line-height: 1.7;\">For a straight current-carrying wire, magnetic field lines are concentric circles. Field strength B &prop; I and B &prop; 1 / r.</div>\n      </div>\n      <div style=\"background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255, 255, 255, 0.1); border-left: 4px solid #BA68C8; border-radius: 6px; padding: 12px 15px; margin: 10px 0;\">\n        <div style=\"color: #FFFFFF; font-size: 15px; line-height: 1.7;\">For a circular coil of n turns, the magnetic field at the center is n times stronger than that of a single turn: B &prop; n &middot; I / r.</div>\n      </div>\n      <div style=\"background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255, 255, 255, 0.1); border-left: 4px solid #BA68C8; border-radius: 6px; padding: 12px 15px; margin: 10px 0;\">\n        <div style=\"color: #FFFFFF; font-size: 15px; line-height: 1.7;\">Inside a current-carrying solenoid, magnetic field lines are parallel, straight, and equidistant, indicating that the magnetic field is completely uniform inside the solenoid.</div>\n      </div>\n      <div style=\"background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255, 255, 255, 0.1); border-left: 4px solid #BA68C8; border-radius: 6px; padding: 12px 15px; margin: 10px 0;\">\n        <div style=\"color: #FFFFFF; font-size: 15px; line-height: 1.7;\">Soft iron is used as the core of an electromagnet because it magnetizes rapidly and loses its magnetism immediately when current is switched off (high permeability, low retentivity).</div>\n      </div>\n      <div style=\"background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255, 255, 255, 0.1); border-left: 4px solid #BA68C8; border-radius: 6px; padding: 12px 15px; margin: 10px 0;\">\n        <div style=\"color: #FFFFFF; font-size: 15px; line-height: 1.7;\">A current-carrying conductor experiences maximum magnetic force when it is oriented perpendicular to the magnetic field (&theta; = 90&deg;). If placed parallel to the magnetic field (&theta; = 0&deg;), the force is zero.</div>\n      </div>\n      <div style=\"background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255, 255, 255, 0.1); border-left: 4px solid #BA68C8; border-radius: 6px; padding: 12px 15px; margin: 10px 0;\">\n        <div style=\"color: #FFFFFF; font-size: 15px; line-height: 1.7;\">Fleming's Left-Hand Rule determines the direction of mechanical force in an electric motor (FBI: Force, Field, Current).</div>\n      </div>\n      <div style=\"background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255, 255, 255, 0.1); border-left: 4px solid #BA68C8; border-radius: 6px; padding: 12px 15px; margin: 10px 0;\">\n        <div style=\"color: #FFFFFF; font-size: 15px; line-height: 1.7;\">Fleming's Right-Hand Rule determines the direction of induced current in an electric generator.</div>\n      </div>\n      <div style=\"background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255, 255, 255, 0.1); border-left: 4px solid #BA68C8; border-radius: 6px; padding: 12px 15px; margin: 10px 0;\">\n        <div style=\"color: #FFFFFF; font-size: 15px; line-height: 1.7;\">In India, domestic AC power is supplied at 220 V with a frequency of 50 Hz. The current reverses its direction every 1/100 second (100 reversals per second).</div>\n      </div>\n      <div style=\"background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255, 255, 255, 0.1); border-left: 4px solid #BA68C8; border-radius: 6px; padding: 12px 15px; margin: 10px 0;\">\n        <div style=\"color: #FFFFFF; font-size: 15px; line-height: 1.7;\">Domestic wiring uses three wires: Live wire (Red/Brown, 220 V), Neutral wire (Black/Blue, 0 V), and Earth wire (Green/Yellow, 0 V).</div>\n      </div>\n      <div style=\"background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255, 255, 255, 0.1); border-left: 4px solid #BA68C8; border-radius: 6px; padding: 12px 15px; margin: 10px 0;\">\n        <div style=\"color: #FFFFFF; font-size: 15px; line-height: 1.7;\">Safety devices: Electric fuses and MCBs protect circuits from overloading and short-circuits by melting or tripping to break the circuit.</div>\n      </div>\n\n  <!-- EXAM TIPS & CRUX -->\n  <h2 style=\"color: #BA68C8; border-bottom: 2px solid #BA68C8; padding-bottom: 6px; margin-top: 30px;\">3. Board Exam Golden Traps &amp; Crucial High-Yield Points</h2>\n  \n      <div style=\"background: rgba(45, 25, 20, 0.75); border: 1.2px solid #FF9800; border-left: 5px solid #FF9800; border-radius: 8px; padding: 12px 16px; margin: 10px 0;\">\n        <div style=\"color: #FFE0B2; font-size: 14.5px; line-height: 1.6;\">💡 Electromagnetism: Moving charges generate magnetic fields; changing magnetic fields induce voltages.</div>\n      </div>\n      <div style=\"background: rgba(45, 25, 20, 0.75); border: 1.2px solid #FF9800; border-left: 5px solid #FF9800; border-radius: 8px; padding: 12px 16px; margin: 10px 0;\">\n        <div style=\"color: #FFE0B2; font-size: 14.5px; line-height: 1.6;\">💡 Hand Rules: Right-Hand Thumb Rule for field direction; Fleming's Left-Hand Rule for motor force; Fleming's Right-Hand Rule for induced generator current.</div>\n      </div>\n      <div style=\"background: rgba(45, 25, 20, 0.75); border: 1.2px solid #FF9800; border-left: 5px solid #FF9800; border-radius: 8px; padding: 12px 16px; margin: 10px 0;\">\n        <div style=\"color: #FFE0B2; font-size: 14.5px; line-height: 1.6;\">💡 Solenoids & Electromagnets: Solenoids act as bar magnets; soft iron core creates powerful switchable electromagnets.</div>\n      </div>\n      <div style=\"background: rgba(45, 25, 20, 0.75); border: 1.2px solid #FF9800; border-left: 5px solid #FF9800; border-radius: 8px; padding: 12px 16px; margin: 10px 0;\">\n        <div style=\"color: #FFE0B2; font-size: 14.5px; line-height: 1.6;\">💡 Motor vs Generator: Motor turns electrical energy into mechanical rotation; Generator converts mechanical rotation into electricity via EMI.</div>\n      </div>\n      <div style=\"background: rgba(45, 25, 20, 0.75); border: 1.2px solid #FF9800; border-left: 5px solid #FF9800; border-radius: 8px; padding: 12px 16px; margin: 10px 0;\">\n        <div style=\"color: #FFE0B2; font-size: 14.5px; line-height: 1.6;\">💡 Domestic Safety: 220 V 50 Hz AC; Live (220 V), Neutral (0 V), Earth (safety); Fuse and earthing prevent fire and fatal shocks.</div>\n      </div>\n\n  <!-- MASTER FORMULA SHEET -->\n  \n  <div style=\"background: rgba(186, 104, 200, 0.05); border: 1.5px solid #BA68C8; border-radius: 12px; padding: 18px; margin-top: 30px;\">\n    <h2 class=\"text-center\" style=\"color: #BA68C8; margin: 0 0 6px 0; font-size: 20px; font-weight: bold; text-align: center !important;\">✦ Master Revision Formula Cheat Sheet</h2>\n    <p class=\"text-center\" style=\"color: #BA68C8; margin: 0 0 16px 0; font-size: 14.5px; text-align: center !important;\">Essential Working Relations &amp; Governing Equations</p>\n    <div style=\"display: flex; flex-direction: column; gap: 8px;\">\n      \n      <div style=\"background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid #BA68C8; border-radius: 6px; margin: 8px 0;\">\n        <b style='color: #BA68C8; display: block; margin-bottom: 4px;'>Field of a Straight Wire:</b>\n        <div style=\"color: #FFFFFF; font-size: 16px; margin-top: 4px;\">B = <span class=\"frac\"><span class=\"num\">&mu;<sub>0</sub> &middot; I</span><span class=\"den\">2&pi; r</span></span> implies B &prop; <span class=\"frac\"><span class=\"num\">I</span><span class=\"den\">r</span></span> \n(B in Tesla, I in Amperes, r in metres)</div>\n      </div>\n      <div style=\"background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid #BA68C8; border-radius: 6px; margin: 8px 0;\">\n        <b style='color: #BA68C8; display: block; margin-bottom: 4px;'>Field at Center of Circular Loop:</b>\n        <div style=\"color: #FFFFFF; font-size: 16px; margin-top: 4px;\">B = <span class=\"frac\"><span class=\"num\">&mu;<sub>0</sub> &middot; n &middot; I</span><span class=\"den\">2 r</span></span> implies B &prop; n quad \text{(n = number of turns)}</div>\n      </div>\n      <div style=\"background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid #BA68C8; border-radius: 6px; margin: 8px 0;\">\n        <b style='color: #BA68C8; display: block; margin-bottom: 4px;'>Field inside an Ideal Solenoid:</b>\n        <div style=\"color: #FFFFFF; font-size: 16px; margin-top: 4px;\">B = &mu;<sub>0</sub> &middot; n &middot; I = &mu;<sub>0</sub> <span class=\"frac\"><span class=\"num\">N</span><span class=\"den\">L</span></span> I \n(Uniform and axial inside)</div>\n      </div>\n      <div style=\"background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid #BA68C8; border-radius: 6px; margin: 8px 0;\">\n        <b style='color: #BA68C8; display: block; margin-bottom: 4px;'>Magnetic Force on Conductor:</b>\n        <div style=\"color: #FFFFFF; font-size: 16px; margin-top: 4px;\">F = I &middot; L &middot; B &middot; sin&theta; quad (F_{\text{max}} = I L B \text{ when } &theta; = 90&deg;; quad F = 0 \text{ when } &theta; = 0&deg;)</div>\n      </div>\n      <div style=\"background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid #BA68C8; border-radius: 6px; margin: 8px 0;\">\n        <b style='color: #BA68C8; display: block; margin-bottom: 4px;'>Magnetic Force on Moving Charge:</b>\n        <div style=\"color: #FFFFFF; font-size: 16px; margin-top: 4px;\">F = q &middot; v &middot; B &middot; sin&theta; quad (\text{Lorentz Magnetic Force})</div>\n      </div>\n      <div style=\"background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid #BA68C8; border-radius: 6px; margin: 8px 0;\">\n        <b style='color: #BA68C8; display: block; margin-bottom: 4px;'>Indian AC Frequency & Period:</b>\n        <div style=\"color: #FFFFFF; font-size: 16px; margin-top: 4px;\">f = 50\text{ Hz} implies T = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">f</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">50</span></span>\text{ s} = 0.02\text{ s} implies \text{Reversal every } <span class=\"frac\"><span class=\"num\">T</span><span class=\"den\">2</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">100</span></span>\text{ s}</div>\n      </div>\n    </div>\n  </div>\n\n  <!-- CHAPTER SUMMARY -->\n  \n  <h2 style=\"color: #BA68C8; border-bottom: 2px solid #BA68C8; padding-bottom: 6px; margin-top: 30px;\">4. Chapter Synthesis &amp; Key Takeaways</h2>\n  <ul style=\"padding-left: 20px; line-height: 1.8;\">\n    \n      <li style=\"margin-bottom: 8px; color: #FFFFFF;\"><b style=\"color: #BA68C8;\">1.</b> Moving charges and electric currents generate surrounding magnetic fields (Oersted's discovery).</li>\n    \n      <li style=\"margin-bottom: 8px; color: #FFFFFF;\"><b style=\"color: #BA68C8;\">2.</b> Magnetic field lines form continuous closed loops from North to South externally and South to North internally; they never intersect.</li>\n    \n      <li style=\"margin-bottom: 8px; color: #FFFFFF;\"><b style=\"color: #BA68C8;\">3.</b> Concentric circular magnetic fields around straight conductors are governed by the Right-Hand Thumb Rule; solenoids create uniform internal axial fields.</li>\n    \n      <li style=\"margin-bottom: 8px; color: #FFFFFF;\"><b style=\"color: #BA68C8;\">4.</b> A current-carrying conductor in a magnetic field experiences a force F = ILB sin&theta;, whose direction is governed by Fleming's Left-Hand Rule, forming the working principle of electric motors.</li>\n    \n      <li style=\"margin-bottom: 8px; color: #FFFFFF;\"><b style=\"color: #BA68C8;\">5.</b> Electromagnetic induction generates an induced current when a conductor experiences changing magnetic flux; direction is given by Fleming's Right-Hand Rule, powering AC/DC generators.</li>\n    \n      <li style=\"margin-bottom: 8px; color: #FFFFFF;\"><b style=\"color: #BA68C8;\">6.</b> Domestic wiring operates at 220 V, 50 Hz AC with Live, Neutral, and Earth wires; fuses and earthing safeguard human lives and domestic property.</li>\n    \n  </ul>\n\n</div>\n",
   "htmlExercises": {
     "exercise": "\n<style>\n  p, li, div:not(.table-container):not(.table-responsive):not(.pt-scroll-wrapper) {\n    text-align: justify !important;\n  }\n  h1, h2, h3, h4, h5, h6 { text-align: left; }\n  .text-center { text-align: center !important; }\n  .text-left { text-align: left !important; }\n</style>\n\n<div style=\"padding: 12px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.75; font-size: 16px;\">\n  <div style=\"background: rgba(186, 104, 200, 0.08); border: 1.5px solid #BA68C8; border-radius: 12px; padding: 16px; margin-bottom: 25px; text-align: center;\">\n    <h2 style=\"color: #BA68C8; margin: 0 0 6px 0; font-size: 21px; font-weight: bold; text-align: center !important;\">\n      Magnetic Effects of Electric Current &mdash; NCERT Exercise Solutions\n    </h2>\n    <p style=\"color: #FFD700; margin: 0; font-size: 15px; font-weight: 500; text-align: center !important;\">\n      Comprehensive Step-by-Step Board Solutions (18 Questions)\n    </p>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q1: Which of the following correctly describes the magnetic field near a long straight wire?<br/><br/>(a) The field consists of straight lines perpendicular to the wire.<br/>(b) The field consists of straight lines parallel to the wire.<br/>(c) The field consists of radial lines originating from the wire.<br/>(d) The field consists of concentric circles centred on the wire.</h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\">Answer: <b style=\"color: #BA68C8;\">(d) The field consists of concentric circles centred on the wire.</b></div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">Scientific Reason:</b></div><div style=\"margin-bottom: 8px;\">When electric current flows through a straight metallic wire, it creates a magnetic field whose lines of force form <b>concentric circles</b> lying in planes perpendicular to the wire, with their centers on the axis of the wire. The direction of these circular lines is given by the <b>Right-Hand Thumb Rule</b>.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: (d) The field consists of concentric circles centred on the wire.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q2: The phenomenon of electromagnetic induction is:<br/><br/>(a) the process of charging a body.<br/>(b) the process of generating magnetic field due to a current passing through a coil.<br/>(c) producing induced current in a coil due to relative motion between a magnet and the coil.<br/>(d) the process of rotating a coil of an electric motor.</h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\">Answer: <b style=\"color: #BA68C8;\">(c) producing induced current in a coil due to relative motion between a magnet and the coil.</b></div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">Scientific Reason:</b></div><div style=\"margin-bottom: 8px;\">Electromagnetic induction, discovered by Michael Faraday in 1831, is the generation of an induced electromotive force (EMF) and induced electric current in a closed conductive circuit caused by a change in magnetic flux linked with the circuit (such as by relative motion between a magnet and the coil).</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: (c) producing induced current in a coil due to relative motion between a magnet and the coil.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q3: The device used for producing electric current is called a:<br/><br/>(a) generator.<br/>(b) galvanometer.<br/>(c) ammeter.<br/>(d) motor.</h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\">Answer: <b style=\"color: #BA68C8;\">(a) generator.</b></div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">Scientific Reason:</b></div><div style=\"margin-bottom: 8px;\">&bull; An <b>electric generator</b> (or dynamo) converts mechanical rotational energy into electric current using electromagnetic induction.</div><div style=\"margin-bottom: 8px;\">&bull; A <i>galvanometer</i> detects the presence and direction of minute currents.</div><div style=\"margin-bottom: 8px;\">&bull; An <i>ammeter</i> measures current magnitude.</div><div style=\"margin-bottom: 8px;\">&bull; An <i>electric motor</i> consumes electric current to produce mechanical motion.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: (a) generator.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q4: The essential difference between an AC generator and a DC generator is that:<br/><br/>(a) AC generator has an electromagnet while a DC generator has permanent magnet.<br/>(b) DC generator will generate a higher voltage.<br/>(c) AC generator will generate a higher voltage.<br/>(d) AC generator has slip rings while the DC generator has a commutator.</h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\">Answer: <b style=\"color: #BA68C8;\">(d) AC generator has slip rings while the DC generator has a commutator.</b></div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">Scientific Reason:</b></div><div style=\"margin-bottom: 8px;\">&bull; In an <b>AC generator</b>, the ends of the rotating armature coil are connected to two continuous, full circular <b>slip rings</b>, allowing the induced alternating current to flow into the external circuit with periodic reversal of polarity.</div><div style=\"margin-bottom: 8px;\">&bull; In a <b>DC generator</b>, the ends of the armature coil are connected to a <b>split-ring commutator</b>, which automatically reverses the external contact connections every half rotation, ensuring that current in the external circuit flows in only one direction (unidirectional DC).</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: (d) AC generator has slip rings while the DC generator has a commutator.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q5: At the time of short circuit, the current in the circuit:<br/><br/>(a) reduces substantially.<br/>(b) does not change.<br/>(c) increases heavily.<br/>(d) vary continuously.</h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\">Answer: <b style=\"color: #BA68C8;\">(c) increases heavily.</b></div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">Scientific Reason:</b></div><div style=\"margin-bottom: 8px;\">A short-circuit occurs when the live wire and the neutral wire come into direct physical contact (due to faulty insulation or appliance damage). The electrical resistance of the circuit drops abruptly to nearly zero (R &approx; 0). By Ohm's Law (I = V / R), the electric current surges <b>enormously and heavily</b>, generating intense Joule heat that can cause sparks and electrical fires.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: (c) increases heavily.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q6: State whether the following statements are true or false:<br/>(a) An electric motor converts mechanical energy into electrical energy.<br/>(b) An electric generator works on the principle of electromagnetic induction.<br/>(c) The field at the centre of a long circular coil carrying current will be parallel straight lines.<br/>(d) A wire with a green insulation is usually the live wire of an electric supply.</h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">(a) False:</b> An electric motor converts <i>electrical energy into mechanical energy</i> (an electric generator converts mechanical energy into electrical energy).</div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">(b) True:</b> An electric generator works strictly on the principle of <i>electromagnetic induction</i> discovered by Faraday.</div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">(c) True:</b> At the center of a circular current-carrying coil, the magnetic field lines are uniform, parallel straight lines perpendicular to the plane of the coil.</div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">(d) False:</b> The wire with green insulation is the <b>earth wire</b> (safety grounding). The live wire has red or brown insulation.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: (a) False, (b) True, (c) True, (d) False.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q7: List two methods of producing magnetic fields.</h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">Methods of Producing Magnetic Fields:</b></div><div style=\"margin-bottom: 8px;\">1. <b style=\"color: #BA68C8;\">Using Permanent Magnets:</b> By using natural or artificial permanent magnets (such as a bar magnet, horseshoe magnet, or magnetic compass needle), which produce a persistent surrounding magnetic field.</div><div style=\"margin-bottom: 8px;\">2. <b style=\"color: #BA68C8;\">Using Electric Current:</b> By passing an electric current through a conductor &mdash; such as a straight wire, a circular coil, or a solenoid (electromagnet).</div><div style=\"margin-bottom: 8px;\">3. <b style=\"color: #BA68C8;\">Earth's Natural Magnetic Field:</b> The Earth itself behaves as a giant magnetic dipole due to convection currents of molten iron in its outer core.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: (1) By using permanent magnets (e.g. bar magnets). (2) By passing an electric current through a conductor or solenoid.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q8: How does a solenoid behave like a magnet? Can you determine the north and south poles of a current-carrying solenoid with the help of a bar magnet? Explain.</h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">Behavior of a Solenoid as a Magnet:</b></div><div style=\"margin-bottom: 8px;\">1. A solenoid is a long coil of many circular turns of insulated copper wire.</div><div style=\"margin-bottom: 8px;\">2. When an electric current passes through the solenoid, magnetic field lines are produced around each turn. These individual fields add up vectorially, creating a resultant magnetic field pattern that is <b>virtually identical to that of a bar magnet</b>.</div><div style=\"margin-bottom: 8px;\">3. One end of the solenoid acts as a <b>North magnetic pole</b> (where field lines emerge) and the other end acts as a <b>South magnetic pole</b> (where field lines enter). Inside the solenoid, the field lines are parallel straight lines, indicating a completely uniform magnetic field.</div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">Determining North and South Poles using a Bar Magnet:</b></div><div style=\"margin-bottom: 8px;\">&bull; Suspend the current-carrying solenoid freely so that it can rotate horizontally (or bring a known bar magnet near one end of the solenoid).</div><div style=\"margin-bottom: 8px;\">&bull; Bring the marked <b>North pole</b> of a bar magnet near one end of the solenoid:</div><div style=\"margin-bottom: 8px;\">&bull; If this end of the solenoid is <b>repelled</b> by the North pole of the bar magnet, then that end is the <b>North pole</b> (since like poles repel).</div><div style=\"margin-bottom: 8px;\">&bull; If this end is <b>attracted</b>, then it is the <b>South pole</b> (since unlike poles attract).</div><div style=\"margin-bottom: 8px;\"><br/><i>(Alternatively, by the Clock Face Rule: Looking at the end of the coil, if current flows anticlockwise, it is a North pole; if clockwise, it is a South pole).</i></div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: A solenoid produces a magnetic field identical to a bar magnet with N and S poles. By bringing the North pole of a bar magnet near its ends, repulsion identifies the North pole and attraction identifies the South pole.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q9: When is the force experienced by a current-carrying conductor placed in a magnetic field largest?</h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">Scientific Principle:</b></div><div style=\"margin-bottom: 8px;\">1. The mechanical force (F) acting on a conductor of length L carrying current I placed in a uniform magnetic field B is given by:</div><div style=\"margin-bottom: 8px;\">F = I &middot; L &middot; B &middot; sin&theta;</div><div style=\"margin-bottom: 8px;\">where &theta; is the angle between the direction of current and the direction of the magnetic field.</div><div style=\"margin-bottom: 8px;\"><br/>2. The value of sin&theta; reaches its maximum value of <b>1</b> when <b>&theta; = 90&deg;</b>.</div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">Conclusion:</b></div><div style=\"margin-bottom: 8px;\">The force experienced by the current-carrying conductor is <b>largest when the conductor is placed perpendicular (at 90&deg;) to the direction of the magnetic field</b>.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: The force is largest when the direction of current is perpendicular (at 90°) to the direction of the magnetic field.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q10: Imagine that you are sitting in a chamber with your back to one wall. An electron beam, moving horizontally from back wall towards the front wall, is deflected by a strong magnetic field to your right side. What is the direction of magnetic field?</h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">Step-by-Step Analysis using Fleming's Left-Hand Rule:</b></div><div style=\"margin-bottom: 8px;\">1. <b style=\"color: #BA68C8;\">Direction of Motion of Electrons:</b> From back wall to front wall.</div><div style=\"margin-bottom: 8px;\">2. <b style=\"color: #BA68C8;\">Direction of Conventional Current (I):</b> Conventional current flows in the direction <i>opposite</i> to the flow of negative electrons. Therefore, current flows <b>from front wall to back wall</b>.</div><div style=\"margin-bottom: 8px;\">3. <b style=\"color: #BA68C8;\">Direction of Deflecting Force (F):</b> Towards your <b>right side</b>.</div><div style=\"margin-bottom: 8px;\">4. <b style=\"color: #BA68C8;\">Applying Fleming's Left-Hand Rule:</b></div><div style=\"margin-bottom: 8px;\">&bull; Point your left-hand Thumb towards your right (Direction of Force).</div><div style=\"margin-bottom: 8px;\">&bull; Point your Middle finger towards the back wall (Direction of Current).</div><div style=\"margin-bottom: 8px;\">&bull; Your Forefinger will naturally point <b>vertically downwards</b>.</div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">Conclusion:</b> The direction of the magnetic field is <b>vertically downwards (towards the floor)</b>.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: The direction of the magnetic field is vertically downwards.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q11: Draw a labelled diagram of an electric motor. Explain its principle and working. What is the function of a split ring in an electric motor?</h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">1. Principle of Electric Motor:</b></div><div style=\"margin-bottom: 8px;\">An electric motor works on the <b>Magnetic Effect of Current (Motor Principle)</b>: When a rectangular current-carrying coil is placed in a magnetic field, it experiences equal and opposite mechanical forces on its parallel arms (according to <b>Fleming's Left-Hand Rule</b>), creating a torque that causes the coil to rotate continuously about its axis.</div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">2. Main Components:</b></div><div style=\"margin-bottom: 8px;\">&bull; <b style=\"color: #BA68C8;\">Armature Coil (ABCD):</b> A rectangular loop of insulated copper wire wound on a soft iron core.</div><div style=\"margin-bottom: 8px;\">&bull; <b style=\"color: #BA68C8;\">Strong Permanent Magnet:</b> Cylindrical concave poles (N and S) providing a radial magnetic field perpendicular to the coil arms.</div><div style=\"margin-bottom: 8px;\">&bull; <b style=\"color: #BA68C8;\">Split-Ring Commutator (P and Q):</b> Two halves of a metallic ring connected to the ends of the coil.</div><div style=\"margin-bottom: 8px;\">&bull; <b style=\"color: #BA68C8;\">Carbon Brushes (X and Y):</b> Stationary carbon blocks that press against the rotating split rings to supply current from the battery.</div><div style=\"margin-bottom: 8px;\">&bull; <b style=\"color: #BA68C8;\">DC Power Source:</b> A battery providing continuous direct current.</div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">3. Working Mechanism:</b></div><div style=\"margin-bottom: 8px;\">1. When current from the battery enters coil ABCD through brush X and split ring P, current flows from A to B in arm AB, and from C to D in arm CD.</div><div style=\"margin-bottom: 8px;\">2. By <b>Fleming's Left-Hand Rule</b>: Arm AB experiences a downward force, while arm CD experiences an upward force.</div><div style=\"margin-bottom: 8px;\">3. These forces form a couple that rotates the coil in an anticlockwise direction.</div><div style=\"margin-bottom: 8px;\">4. After half a rotation (180&deg;), split ring P comes into contact with brush Y and ring Q contacts brush X. This automatically reverses the direction of current in arms AB and CD.</div><div style=\"margin-bottom: 8px;\">5. Consequently, arm CD now experiences a downward force and arm AB experiences an upward force, keeping the coil rotating continuously in the same anticlockwise direction.</div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">4. Function of the Split Ring (Commutator):</b></div><div style=\"margin-bottom: 8px;\">The split ring acts as a <b>commutator</b>. Its vital function is to <b>reverse the direction of electric current</b> through the armature coil every half revolution (180&deg;), ensuring that the deflecting couple always acts in the same rotational sense and maintaining continuous unidirectional rotation.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: Principle: A current-carrying coil in a magnetic field experiences a rotational torque (Fleming's Left-Hand Rule). Function of split ring: It acts as a commutator, reversing current direction in the coil every half rotation to sustain continuous unidirectional rotation.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q12: Name some devices in which electric motors are used.</h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">Common Practical Applications of Electric Motors:</b></div><div style=\"margin-bottom: 8px;\">Electric motors are used in a vast variety of domestic, commercial, and industrial appliances, including:</div><div style=\"margin-bottom: 8px;\">1. <b style=\"color: #BA68C8;\">Domestic Appliances:</b> Electric ceiling/table fans, washing machines, refrigerators, mixer-grinders, blenders, juicers, microwave turntable motors, and hair dryers.</div><div style=\"margin-bottom: 8px;\">2. <b style=\"color: #BA68C8;\">Pumping Systems:</b> Water lifting pumps, submersible pumps, and agricultural tube wells.</div><div style=\"margin-bottom: 8px;\">3. <b style=\"color: #BA68C8;\">Computer & Audio Equipment:</b> Computer cooling fans, hard disk drive spindles, CD/DVD players, and tape recorders.</div><div style=\"margin-bottom: 8px;\">4. <b style=\"color: #BA68C8;\">Transportation & Power Tools:</b> Electric vehicles (EVs), electric trains, electric drills, saws, and elevators/escalators.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: Electric fans, refrigerators, washing machines, water pumps, mixer-grinders, electric drills, and electric vehicles.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q13: A coil of insulated copper wire is connected to a galvanometer. What will happen if a bar magnet is (i) pushed into the coil, (ii) withdrawn from inside the coil, (iii) held stationary inside the coil?</h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">(i) When the Bar Magnet is Pushed into the Coil:</b></div><div style=\"margin-bottom: 8px;\">&bull; <b style=\"color: #BA68C8;\">Observation:</b> The galvanometer needle shows an immediate momentary deflection in one direction (e.g. to the right) and returns to zero once motion stops.</div><div style=\"margin-bottom: 8px;\">&bull; <b style=\"color: #BA68C8;\">Reason:</b> Moving the magnet into the coil increases the magnetic flux linked with the coil, inducing an electric current by <b>electromagnetic induction</b>.</div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">(ii) When the Bar Magnet is Withdrawn from Inside the Coil:</b></div><div style=\"margin-bottom: 8px;\">&bull; <b style=\"color: #BA68C8;\">Observation:</b> The galvanometer needle shows a momentary deflection in the <b>opposite direction</b> (e.g. to the left) and returns to zero.</div><div style=\"margin-bottom: 8px;\">&bull; <b style=\"color: #BA68C8;\">Reason:</b> Withdrawing the magnet decreases the magnetic flux, inducing a current in the opposite direction.</div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">(iii) When the Bar Magnet is Held Stationary Inside the Coil:</b></div><div style=\"margin-bottom: 8px;\">&bull; <b style=\"color: #BA68C8;\">Observation:</b> The galvanometer needle shows <b>no deflection at all (remains strictly at zero)</b>.</div><div style=\"margin-bottom: 8px;\">&bull; <b style=\"color: #BA68C8;\">Reason:</b> Since the magnet is stationary, the magnetic flux linked with the coil is constant (rate of change of magnetic flux is zero: <span class=\"frac\"><span class=\"num\">d&Phi;</span><span class=\"den\">dt</span></span> = 0). No electromotive force or current is induced.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: (i) Momentary deflection in one direction. (ii) Momentary deflection in the opposite direction. (iii) Zero deflection (no induced current).\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q14: Two circular coils A and B are placed close to each other. If the current in the coil A is changed, will some current be induced in the coil B? Give reason.</h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">Answer:</b></div><div style=\"margin-bottom: 8px;\"><b>Yes, an electric current will be induced in coil B.</b></div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">Scientific Reason:</b></div><div style=\"margin-bottom: 8px;\">1. When electric current flows through coil A (primary coil), it sets up a magnetic field around itself, and some of these magnetic field lines pass through neighboring coil B (secondary coil).</div><div style=\"margin-bottom: 8px;\">2. When the current in coil A is changed (by adjusting a rheostat, or by switching the circuit ON or OFF), the strength of its magnetic field changes accordingly.</div><div style=\"margin-bottom: 8px;\">3. This causes a continuous change in the <b>magnetic flux linked with coil B</b>.</div><div style=\"margin-bottom: 8px;\">4. According to Faraday's law of <b>electromagnetic induction</b>, whenever magnetic flux linked with a closed coil changes, an induced electromotive force (EMF) and induced current are generated in coil B.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: Yes, because changing current in coil A changes the magnetic flux linked with neighboring coil B, inducing a current in coil B by electromagnetic induction.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q15: State the rule to determine the direction of a:<br/>(i) magnetic field produced around a straight conductor-carrying current,<br/>(ii) force experienced by a current-carrying straight conductor placed in a magnetic field which is perpendicular to it, and<br/>(iii) current induced in a coil due to its rotation in a magnetic field.</h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">(i) Direction of Magnetic Field Around a Straight Conductor:</b></div><div style=\"margin-bottom: 8px;\">Determined by the <b>Right-Hand Thumb Rule (Maxwell's Corkscrew Rule)</b>:</div><div style=\"margin-bottom: 8px;\">Imagine holding the current-carrying straight conductor in your right hand such that your outstretched thumb points in the direction of electric current. Then, the direction in which your fingers curl around the conductor gives the direction of the magnetic field lines.</div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">(ii) Direction of Force on a Current-Carrying Conductor in a Magnetic Field:</b></div><div style=\"margin-bottom: 8px;\">Determined by <b>Fleming's Left-Hand Rule</b>:</div><div style=\"margin-bottom: 8px;\">Stretch the thumb, forefinger, and middle finger of your left hand mutually perpendicular to each other. If the <b>Forefinger</b> points in the direction of the magnetic <b>Field</b> and the <b>Middle finger</b> points in the direction of the <b>Current</b>, then the <b>Thumb</b> points in the direction of the mechanical <b>Force (Motion)</b> acting on the conductor.</div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">(iii) Direction of Induced Current in a Rotating Coil:</b></div><div style=\"margin-bottom: 8px;\">Determined by <b>Fleming's Right-Hand Rule</b>:</div><div style=\"margin-bottom: 8px;\">Stretch the thumb, forefinger, and middle finger of your right hand mutually perpendicular to each other. If the <b>Forefinger</b> points along the magnetic <b>Field</b> and the <b>Thumb</b> points along the direction of <b>Motion</b> of the conductor, then the <b>Middle finger</b> indicates the direction of the <b>Induced Current</b>.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: (i) Right-Hand Thumb Rule. (ii) Fleming's Left-Hand Rule. (iii) Fleming's Right-Hand Rule.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q16: Explain the underlying principle and working of an electric generator by drawing a labelled diagram. What is the function of brushes?</h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">1. Principle of Electric Generator:</b></div><div style=\"margin-bottom: 8px;\">An electric generator works on the principle of <b>Electromagnetic Induction (Faraday's Law)</b>: When a closed rectangular coil of wire is rotated mechanically in a uniform magnetic field, the magnetic flux linked with the coil changes continuously, inducing an alternating electromotive force (EMF) and an electric current in the coil (direction given by <b>Fleming's Right-Hand Rule</b>).</div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">2. Main Components:</b></div><div style=\"margin-bottom: 8px;\">&bull; <b style=\"color: #BA68C8;\">Armature Coil (ABCD):</b> A rectangular loop of insulated copper wire wound on a soft iron core.</div><div style=\"margin-bottom: 8px;\">&bull; <b style=\"color: #BA68C8;\">Field Magnet:</b> Strong permanent magnet poles (N and S) providing a uniform magnetic field.</div><div style=\"margin-bottom: 8px;\">&bull; <b>Slip Rings (R<sub>1</sub> and R<sub>2</sub>):</b> Two complete circular bronze rings that rotate synchronously with the ends of the coil.</div><div style=\"margin-bottom: 8px;\">&bull; <b>Carbon Brushes (B<sub>1</sub> and B<sub>2</sub>):</b> Two stationary carbon blocks pressing lightly against the slip rings to collect current and feed it to the external load.</div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">3. Working Mechanism:</b></div><div style=\"margin-bottom: 8px;\">1. Suppose the armature coil ABCD is rotated clockwise in the magnetic field.</div><div style=\"margin-bottom: 8px;\">2. Arm AB moves upwards while arm CD moves downwards.</div><div style=\"margin-bottom: 8px;\">3. By <b>Fleming's Right-Hand Rule</b>, induced current flows along <b>A &rarr; B</b> in arm AB, and along <b>C &rarr; D</b> in arm CD. The current flows out into the external circuit via brush B<sub>2</sub> and returns through B<sub>1</sub>.</div><div style=\"margin-bottom: 8px;\">4. After half a rotation (180&deg;), arm CD moves upwards and arm AB moves downwards.</div><div style=\"margin-bottom: 8px;\">5. Applying Fleming's Right-Hand Rule again, the induced current in the coil reverses direction, flowing along <b>D &rarr; C &rarr; B &rarr; A</b>, leaving through brush B<sub>1</sub> and returning through B<sub>2</sub>.</div><div style=\"margin-bottom: 8px;\">6. Thus, after every half rotation, the direction of current in the external circuit alternates, producing an <b>Alternating Current (AC)</b>.</div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">4. Function of Brushes:</b></div><div style=\"margin-bottom: 8px;\">The stationary carbon brushes maintain a flexible sliding electrical contact with the rotating slip rings (or split rings in DC generators), smoothly conducting the generated electric current from the rotating armature into the external stationary circuit without tangling the connecting wires.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: Principle: Electromagnetic Induction (Fleming's Right-Hand Rule). Function of brushes: Stationary carbon brushes maintain sliding contact with rotating slip rings to draw induced current into the external circuit without twisting wires.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q17: When does an electric short circuit occur?</h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">Causes and Conditions for a Short Circuit:</b></div><div style=\"margin-bottom: 8px;\">An electric short circuit occurs when the <b>live wire and the neutral wire come in direct physical contact</b> with each other.</div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">This typically happens due to:</b></div><div style=\"margin-bottom: 8px;\">1. <b style=\"color: #BA68C8;\">Damaged Insulation:</b> Faulty, cracked, or worn-out insulation on electric cables due to wear and tear or aging.</div><div style=\"margin-bottom: 8px;\">2. <b style=\"color: #BA68C8;\">Defective Appliances:</b> Internal component failure within an appliance where the live terminal touches the neutral terminal or metallic frame.</div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">Consequences:</b></div><div style=\"margin-bottom: 8px;\">When direct contact occurs, the resistance of the circuit drops abruptly to nearly zero (R &approx; 0). By Ohm's Law (I = V / R), a massive current surges through the circuit, generating extreme Joule heat (H = I<sup>2</sup>Rt), leading to melting of wires, sparks, and electrical fires.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: A short circuit occurs when the live wire and neutral wire touch each other directly due to damaged insulation or appliance faults, causing resistance to drop to near zero and current to rise dangerously.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q18: What is the function of an earth wire? Why is it necessary to earth metallic appliances?</h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">1. Function of the Earth Wire:</b></div><div style=\"margin-bottom: 8px;\">The earth wire (covered with green or yellow insulation) is a low-resistance safety conductor connected to a copper plate buried deep in the moist earth near the building. Its function is to provide a <b>safe, near-zero resistance conduit for electric current</b> to flow directly into the ground in case of an insulation failure or electrical leakage.</div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">2. Why It is Necessary to Earth Metallic Appliances:</b></div><div style=\"margin-bottom: 8px;\">&bull; Metallic appliances (such as electric irons, refrigerators, toasters, washing machines, and geysers) have conductive metal outer casings.</div><div style=\"margin-bottom: 8px;\">&bull; If the internal live wire becomes loose and accidentally touches the metallic casing, the entire casing is energized to a dangerous potential of 220 V.</div><div style=\"margin-bottom: 8px;\">&bull; If an unearthed appliance is touched by a user, the current would flow through the user's body to the ground, causing a <b>fatal electric shock</b>.</div><div style=\"margin-bottom: 8px;\">&bull; <b style=\"color: #BA68C8;\">When the appliance is properly earthed:</b> The leakage current immediately flows through the low-resistance earth wire into the ground rather than through the high-resistance human body. This sudden surge of current also instantly blows the fuse or trips the MCB, completely disconnecting the faulty circuit and saving human life.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: The earth wire provides a safe, low-resistance path for leakage current to ground. Earthing metallic appliances ensures that any leakage current flows harmlessly to earth and trips the fuse/MCB, preventing fatal electric shocks.\n    </div>\n  </div>\n\n</div>",
-    "in-text": "\n<style>\n  p, li, div:not(.table-container):not(.table-responsive):not(.pt-scroll-wrapper) {\n    text-align: justify !important;\n  }\n  h1, h2, h3, h4, h5, h6 { text-align: left; }\n  .text-center { text-align: center !important; }\n  .text-left { text-align: left !important; }\n</style>\n\n<div style=\"padding: 12px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.75; font-size: 16px;\">\n  <div style=\"background: rgba(186, 104, 200, 0.08); border: 1.5px solid #BA68C8; border-radius: 12px; padding: 16px; margin-bottom: 25px; text-align: center;\">\n    <h2 style=\"color: #BA68C8; margin: 0 0 6px 0; font-size: 21px; font-weight: bold; text-align: center !important;\">\n      Magnetic Effects of Electric Current &mdash; In-Text Questions &amp; Solutions\n    </h2>\n    <p style=\"color: #FFD700; margin: 0; font-size: 15px; font-weight: 500; text-align: center !important;\">\n      All In-Text Questions (21 Questions) with Point-Wise Board Answers\n    </p>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q1: Why does a compass needle get deflected when brought near a bar magnet?</h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">Scientific Reason:</b></div><div style=\"margin-bottom: 8px;\">1. A compass needle is itself a <b>tiny, freely suspended permanent bar magnet</b> with a North pole and a South pole.</div><div style=\"margin-bottom: 8px;\">2. When the compass is brought near another bar magnet, it enters the surrounding magnetic field of that bar magnet.</div><div style=\"margin-bottom: 8px;\">3. The magnetic field of the bar magnet exerts equal and opposite mechanical magnetic forces (a magnetic torque) on the poles of the compass needle &mdash; attracting the unlike pole and repelling the like pole.</div><div style=\"margin-bottom: 8px;\">4. This magnetic torque rotates and deflects the compass needle until it aligns tangentially along the local magnetic field line of the bar magnet.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: Because a compass needle is a tiny magnet; the magnetic field of the bar magnet exerts a magnetic torque on its poles, deflecting it.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q1: Draw magnetic field lines around a bar magnet.</h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">Characteristics of Field Lines Around a Bar Magnet:</b></div><div style=\"margin-bottom: 8px;\">&bull; <b style=\"color: #BA68C8;\">Outside the magnet:</b> Continuous smooth curved lines emerge from the <b>North pole (N)</b> and curve around to enter the <b>South pole (S)</b>.</div><div style=\"margin-bottom: 8px;\">&bull; <b style=\"color: #BA68C8;\">Inside the magnet:</b> The lines continue from the <b>South pole (S) to the North pole (N)</b>, completing continuous closed loops.</div><div style=\"margin-bottom: 8px;\">&bull; <b style=\"color: #BA68C8;\">At the Poles:</b> Field lines are most closely crowded together near the poles, indicating that the magnetic field strength is strongest at the poles.</div><div style=\"margin-bottom: 8px;\">&bull; <b style=\"color: #BA68C8;\">Farther Away:</b> The lines spread out, showing that field strength decreases with distance.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: Magnetic field lines form continuous closed loops emerging from the North pole and entering the South pole outside, and travelling from South to North inside.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q2: List the properties of magnetic field lines.</h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">Fundamental Properties of Magnetic Field Lines:</b></div><div style=\"margin-bottom: 8px;\">1. <b style=\"color: #BA68C8;\">Continuous Closed Loops:</b> Magnetic field lines emerge from the North pole and enter the South pole outside the magnet, and run from South to North inside the magnet, forming continuous unbroken loops.</div><div style=\"margin-bottom: 8px;\">2. <b style=\"color: #BA68C8;\">Direction of Field:</b> The tangent drawn to a magnetic field line at any point indicates the precise direction of the magnetic field vector at that point.</div><div style=\"margin-bottom: 8px;\">3. <b style=\"color: #BA68C8;\">Never Intersect:</b> Two magnetic field lines <b>never cross or intersect each other</b>. If they did, it would mean two different directions of magnetic field at the point of intersection, which is physically impossible.</div><div style=\"margin-bottom: 8px;\">4. <b style=\"color: #BA68C8;\">Degree of Closeness Indicates Strength:</b> The relative density (closeness) of field lines represents the magnitude of the magnetic field. Where lines are crowded (near poles), the field is strong; where lines are widely separated, the field is weak.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: (1) Form closed continuous loops. (2) Tangent gives field direction. (3) Never intersect each other. (4) Crowded lines represent a stronger magnetic field.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q3: Why don't two magnetic field lines intersect each other?</h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">Scientific Proof:</b></div><div style=\"margin-bottom: 8px;\">1. The direction of the magnetic field at any point is given by the <b>tangent drawn to the magnetic field line</b> at that point (which is the direction in which a compass needle points).</div><div style=\"margin-bottom: 8px;\">2. If two magnetic field lines were to intersect at a common point, there would be <b>two different tangents</b> at that single point of intersection.</div><div style=\"margin-bottom: 8px;\">3. This would imply that at the point of intersection, the magnetic field has <b>two different directions simultaneously</b>, and a compass needle would have to point in two directions at the same time, which is <b>physically impossible</b>.</div><div style=\"margin-bottom: 8px;\">4. Therefore, two magnetic field lines can never intersect.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: Because if they intersected, the magnetic field at the point of intersection would have two different directions simultaneously, which is physically impossible.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q1: Consider a circular loop of wire lying in the plane of the table. Let the current pass through the loop clockwise. Apply the right-hand rule to find out the direction of the magnetic field inside and outside the loop.</h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">Analysis using the Right-Hand Thumb Rule:</b></div><div style=\"margin-bottom: 8px;\">1. The circular wire lies horizontally on the table with current circulating in a <b>clockwise</b> direction.</div><div style=\"margin-bottom: 8px;\"><br/>2. <b style=\"color: #BA68C8;\">For the Right Side of the Loop:</b></div><div style=\"margin-bottom: 8px;\">&bull; Current flows downwards towards you.</div><div style=\"margin-bottom: 8px;\">&bull; By pointing the right thumb in the direction of current, the curled fingers point <b>downwards into the table inside the loop</b> and curl upwards out of the table outside the loop.</div><div style=\"margin-bottom: 8px;\"><br/>3. <b style=\"color: #BA68C8;\">For the Left Side of the Loop:</b></div><div style=\"margin-bottom: 8px;\">&bull; Current flows upwards away from you.</div><div style=\"margin-bottom: 8px;\">&bull; Pointing the right thumb upwards, the curled fingers again point <b>downwards into the table inside the loop</b> and curl upwards out of the table outside the loop.</div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">Conclusion:</b></div><div style=\"margin-bottom: 8px;\">&bull; <b style=\"color: #BA68C8;\">Inside the loop:</b> The magnetic field lines are directed <b>perpendicularly downwards into the plane of the table</b>.</div><div style=\"margin-bottom: 8px;\">&bull; <b style=\"color: #BA68C8;\">Outside the loop:</b> The magnetic field lines are directed <b>perpendicularly upwards out of the plane of the table</b>.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: Inside the loop: Directed downwards into the table. Outside the loop: Directed upwards out of the table.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q2: The magnetic field in a given region is uniform. Draw a diagram to represent it.</h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">Representation of a Uniform Magnetic Field:</b></div><div style=\"margin-bottom: 8px;\">A uniform magnetic field is a region where the magnetic field has the exact same magnitude and the exact same direction at every single point.</div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">Graphical Representation:</b></div><div style=\"margin-bottom: 8px;\">It is represented by a set of <b>equidistant, parallel straight lines pointing in the same direction</b> with arrows indicating field orientation (such as inside a long current-carrying solenoid).</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: A uniform magnetic field is represented by a set of parallel, equidistant straight lines pointing in the same direction.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q3: Choose the correct option:<br/>The magnetic field inside a long straight solenoid-carrying current:<br/>(a) is zero.<br/>(b) decreases as we move towards its end.<br/>(c) increases as we move towards its end.<br/>(d) is the same at all points.</h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\">Answer: <b style=\"color: #BA68C8;\">(d) is the same at all points.</b></div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">Scientific Reason:</b></div><div style=\"margin-bottom: 8px;\">Inside a long straight current-carrying solenoid, the magnetic field lines are parallel, straight, and equally spaced along the axis. This indicates that the magnetic field is <b>uniform and has the exact same magnitude and direction at all points inside the solenoid</b> (B = &mu;<sub>0</sub>nI).</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: (d) is the same at all points.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q1: Which of the following property of a proton can change while it moves freely in a magnetic field? (There may be more than one correct answer)<br/>(a) mass<br/>(b) speed<br/>(c) velocity<br/>(d) momentum</h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\">Answer: <b style=\"color: #BA68C8;\">(c) velocity</b> and <b style=\"color: #BA68C8;\">(d) momentum</b></div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">Scientific Reason:</b></div><div style=\"margin-bottom: 8px;\">1. When a charged proton enters a magnetic field, the magnetic Lorentz force (F = q &middot; v &times; B) always acts <b>perpendicular to the direction of motion (velocity)</b> of the proton.</div><div style=\"margin-bottom: 8px;\">2. Because force is perpendicular to velocity, work done on the proton is zero (W = F &middot; d &middot; cos 90&deg; = 0).</div><div style=\"margin-bottom: 8px;\">3. Therefore, the <b>speed</b> (magnitude of velocity) and kinetic energy remain constant.</div><div style=\"margin-bottom: 8px;\">4. However, the perpendicular force continuously changes the <b>direction of motion</b> of the proton.</div><div style=\"margin-bottom: 8px;\">5. Since velocity and momentum (p = m &middot; v) are vector quantities depending on direction, both the <b>velocity and momentum of the proton change continuously</b>.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: (c) velocity and (d) momentum change (speed and mass remain constant).\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q2: In Activity 13.7, how do we think the displacement of rod AB will be affected if:<br/>(i) current in rod AB is increased;<br/>(ii) a stronger horse-shoe magnet is used; and<br/>(iii) length of the rod AB is increased?</h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">Formula for Magnetic Force:</b></div><div style=\"margin-bottom: 8px;\">The force experienced by a current-carrying rod in a magnetic field is given by: F = I &middot; L &middot; B &middot; sin&theta;.</div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">(i) If current (I) in rod AB is increased:</b></div><div style=\"margin-bottom: 8px;\">Since F &prop; I, the magnetic force on the rod increases, causing the <b>displacement of rod AB to increase</b>.</div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">(ii) If a stronger horse-shoe magnet (B) is used:</b></div><div style=\"margin-bottom: 8px;\">Since F &prop; B, the magnetic field strength increases, so the force increases and the <b>displacement of rod AB increases</b>.</div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">(iii) If length (L) of the rod AB is increased:</b></div><div style=\"margin-bottom: 8px;\">Since F &prop; L, a longer conductor experiences greater magnetic force, so the <b>displacement of rod AB increases</b>.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: In all three cases, the displacement of rod AB will increase (since F ∝ I, F ∝ B, and F ∝ L).\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q3: A positively-charged particle (alpha-particle) projected towards west is deflected towards north by a magnetic field. The direction of magnetic field is:<br/>(a) towards south<br/>(b) towards east<br/>(c) downward<br/>(d) upward</h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\">Answer: <b style=\"color: #BA68C8;\">(d) upward</b></div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">Step-by-Step Application of Fleming's Left-Hand Rule:</b></div><div style=\"margin-bottom: 8px;\">1. <b style=\"color: #BA68C8;\">Direction of Current (I):</b> An alpha particle is positively charged. Conventional current flows in the direction of motion of positive charge &rarr; <b>Towards West</b>.</div><div style=\"margin-bottom: 8px;\">2. <b style=\"color: #BA68C8;\">Direction of Force (F):</b> Deflection is towards North &rarr; <b>Towards North</b>.</div><div style=\"margin-bottom: 8px;\">3. <b style=\"color: #BA68C8;\">Applying Fleming's Left-Hand Rule:</b></div><div style=\"margin-bottom: 8px;\">&bull; Point the left-hand Thumb towards North (Force).</div><div style=\"margin-bottom: 8px;\">&bull; Point the Middle finger towards West (Current).</div><div style=\"margin-bottom: 8px;\">&bull; Your Forefinger will point <b>vertically upwards (out of the page)</b>.</div><div style=\"margin-bottom: 8px;\"><br/>Therefore, the magnetic field is directed <b>upward</b>.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: (d) upward\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q1: State Fleming's left-hand rule.</h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">Fleming's Left-Hand Rule (Motor Rule):</b></div><div style=\"margin-bottom: 8px;\">Stretch the <b>thumb, forefinger, and middle finger</b> of your left hand mutually perpendicular to one another such that:</div><div style=\"margin-bottom: 8px;\">&bull; The <b>Forefinger</b> points in the direction of the external magnetic <b>Field (B)</b>,</div><div style=\"margin-bottom: 8px;\">&bull; The <b>Middle finger</b> points in the direction of electric <b>Current (I)</b>,</div><div style=\"margin-bottom: 8px;\">&bull; Then the <b>Thumb</b> points in the direction of the mechanical <b>Force (F) or Motion</b> experienced by the conductor.</div><div style=\"margin-bottom: 8px;\"><br/><i>Mnemonic: <b>FBI</b> &mdash; Force (Thumb), B-Field (Forefinger), I-Current (Middle finger).</i></div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: Stretch thumb, forefinger, and middle finger of left hand mutually perpendicular. Forefinger along Field, Middle finger along Current, then Thumb points along mechanical Force (Motion).\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q2: What is the principle of an electric motor?</h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">Principle of an Electric Motor:</b></div><div style=\"margin-bottom: 8px;\">An electric motor works on the <b>Magnetic Effect of Electric Current</b>:</div><div style=\"margin-bottom: 8px;\">When a rectangular current-carrying coil is placed in a magnetic field, it experiences mechanical forces on its opposite parallel arms that are equal in magnitude and opposite in direction (governed by <b>Fleming's Left-Hand Rule</b>). These forces constitute a deflecting couple (torque) that rotates the coil continuously about its axis, converting electrical energy into mechanical rotational energy.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: An electric motor operates on the principle that a current-carrying coil placed in a magnetic field experiences a rotational torque (Fleming's Left-Hand Rule).\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q3: What is the role of the split ring in an electric motor?</h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">Role of Split Ring (Commutator):</b></div><div style=\"margin-bottom: 8px;\">1. The split ring acts as a <b>commutator</b> in a DC motor.</div><div style=\"margin-bottom: 8px;\">2. Its essential role is to <b>reverse the direction of electric current flowing through the armature coil after every half revolution (180&deg;)</b>.</div><div style=\"margin-bottom: 8px;\">3. Due to this periodic reversal of current, the downward force remains on the side moving downwards and the upward force remains on the side moving upwards.</div><div style=\"margin-bottom: 8px;\">4. This ensures that the deflecting torque acts in the <b>same rotational direction</b>, maintaining continuous, smooth unidirectional rotation of the motor.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: The split ring acts as a commutator, reversing the direction of current in the coil every half rotation to sustain continuous unidirectional rotation.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q1: Explain different ways to induce current in a coil.</h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">Methods to Induce Electric Current in a Coil:</b></div><div style=\"margin-bottom: 8px;\">By Faraday's law of electromagnetic induction, current is induced whenever the magnetic flux linked with a coil changes. This can be achieved by:</div><div style=\"margin-bottom: 8px;\">1. <b style=\"color: #BA68C8;\">Relative Motion Between Magnet and Coil:</b> Moving a bar magnet towards or away from a stationary coil, or moving the coil towards or away from a stationary magnet.</div><div style=\"margin-bottom: 8px;\">2. <b style=\"color: #BA68C8;\">Rotating a Coil in a Magnetic Field:</b> Rotating a conductive coil inside a uniform magnetic field (the fundamental principle of electric generators).</div><div style=\"margin-bottom: 8px;\">3. <b style=\"color: #BA68C8;\">Changing Current in a Neighboring Coil:</b> Placing a primary coil near a secondary coil and varying the current in the primary coil (by switching it ON/OFF or adjusting a rheostat).</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: (1) By moving a magnet relative to a coil. (2) By rotating a coil in a magnetic field. (3) By changing the current in a nearby primary coil.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q1: State the principle of an electric generator.</h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">Principle of an Electric Generator:</b></div><div style=\"margin-bottom: 8px;\">An electric generator works on the principle of <b>Electromagnetic Induction (Faraday's Law)</b>:</div><div style=\"margin-bottom: 8px;\">When a closed rectangular coil of wire is mechanically rotated inside a uniform magnetic field, the magnetic flux linked with the coil changes continuously. This induces an electromotive force (EMF) and an alternating electric current in the coil, converting mechanical rotational kinetic energy into electrical energy. The direction of induced current is determined by <b>Fleming's Right-Hand Rule</b>.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: An electric generator works on the principle of electromagnetic induction: rotating a coil in a magnetic field changes magnetic flux, inducing electric current (Fleming's Right-Hand Rule).\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q2: Name some sources of direct current.</h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">Common Sources of Direct Current (DC):</b></div><div style=\"margin-bottom: 8px;\">1. <b style=\"color: #BA68C8;\">Dry Cells & Electrochemical Batteries:</b> Alkaline batteries, car lead-acid batteries, lithium-ion rechargeable batteries in smartphones and laptops.</div><div style=\"margin-bottom: 8px;\">2. <b style=\"color: #BA68C8;\">Solar Photovoltaic (PV) Cells:</b> Solar panels convert solar radiation directly into DC electricity.</div><div style=\"margin-bottom: 8px;\">3. <b style=\"color: #BA68C8;\">DC Generators (Dynamos):</b> Generators equipped with split-ring commutators.</div><div style=\"margin-bottom: 8px;\">4. <b style=\"color: #BA68C8;\">AC to DC Rectifiers:</b> Power adapters and chargers that convert household AC into smooth DC.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: Dry cells, electrochemical batteries, solar cells, and DC generators (dynamos).\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q3: Which sources produce alternating current?</h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">Sources Producing Alternating Current (AC):</b></div><div style=\"margin-bottom: 8px;\">1. <b style=\"color: #BA68C8;\">AC Generators (Alternators):</b> Modern thermal, hydroelectric, and nuclear power plant generators.</div><div style=\"margin-bottom: 8px;\">2. <b style=\"color: #BA68C8;\">Bicycle Dynamos:</b> Small friction-driven alternators used to light bicycle headlamps.</div><div style=\"margin-bottom: 8px;\">3. <b style=\"color: #BA68C8;\">Wind Turbine Generators:</b> Rotational wind energy converted into AC electricity.</div><div style=\"margin-bottom: 8px;\">4. <b style=\"color: #BA68C8;\">Electronic Inverters:</b> Devices that convert battery DC into AC for domestic power backup.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: AC generators (power station alternators), hydroelectric plants, wind turbine alternators, and electronic inverters.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q4: Choose the correct option:<br/>A rectangular coil of copper wires is rotated in a magnetic field. The direction of the induced current changes once in each:<br/>(a) two revolutions<br/>(b) one revolution<br/>(c) half revolution<br/>(d) one-fourth revolution</h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\">Answer: <b style=\"color: #BA68C8;\">(c) half revolution</b></div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">Scientific Reason:</b></div><div style=\"margin-bottom: 8px;\">When a rectangular coil rotates in a magnetic field, one half of the coil moves upwards during the first 180&deg; and downwards during the next 180&deg;. By <b>Fleming's Right-Hand Rule</b>, the direction of the induced current reverses every time the relative motion of the coil arms reverses, which occurs exactly <b>once in every half revolution (180&deg;)</b>.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: (c) half revolution\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q1: Name two safety measures commonly used in electric circuits and appliances.</h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">Two Essential Safety Measures:</b></div><div style=\"margin-bottom: 8px;\">1. <b style=\"color: #BA68C8;\">Electric Fuse / Miniature Circuit Breaker (MCB):</b></div><div style=\"margin-bottom: 8px;\">&bull; Connected in series with the live wire.</div><div style=\"margin-bottom: 8px;\">&bull; Protects circuits and appliances from damage due to overloading or short-circuiting by melting or tripping to break the circuit when current exceeds the safe rating.</div><div style=\"margin-bottom: 8px;\"><br/>2. <b style=\"color: #BA68C8;\">Earthing (Earth Wire):</b></div><div style=\"margin-bottom: 8px;\">&bull; Connects the metallic outer body of high-power appliances (e.g. electric irons, refrigerators, geysers) directly to a metal plate buried deep in the ground.</div><div style=\"margin-bottom: 8px;\">&bull; Provides a low-resistance path to ground for any accidental electrical leakage, protecting users from fatal electric shocks.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: (1) Electric fuse (or MCB) to prevent overloading and short-circuits. (2) Earthing of metallic appliances to prevent electric shocks.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q2: An electric oven of 2 kW power rating is operated in a domestic electric circuit (220 V) that has a current rating of 5 A. What result do you expect? Explain.</h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">Given Data:</b></div><div style=\"margin-bottom: 8px;\">Power rating of electric oven, P = 2 kW = 2000 W</div><div style=\"margin-bottom: 8px;\">Domestic supply voltage, V = 220 V</div><div style=\"margin-bottom: 8px;\">Current rating of the circuit fuse, I<sub>safe</sub> = 5 A</div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">Calculation of Current Drawn by the Oven:</b></div><div style=\"margin-bottom: 8px;\">P = V &times; I &rArr; I = <span class=\"frac\"><span class=\"num\">P</span><span class=\"den\">V</span></span></div><div style=\"margin-bottom: 8px;\">I = <span class=\"frac\"><span class=\"num\">2000</span><span class=\"den\">220</span></span> = <span class=\"frac\"><span class=\"num\">100</span><span class=\"den\">11</span></span> &approx; <b style=\"color: #BA68C8;\">9.09 A</b></div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">Conclusion & Result:</b></div><div style=\"margin-bottom: 8px;\">1. The current drawn by the oven (9.09 A) is <b>significantly higher than the safe current rating of the circuit (5 A)</b>.</div><div style=\"margin-bottom: 8px;\">2. This condition constitutes <b>overloading</b>.</div><div style=\"margin-bottom: 8px;\">3. Due to the high current, excessive Joule heating will take place in the fuse wire.</div><div style=\"margin-bottom: 8px;\">4. The <b>electric fuse will melt and blow out (or MCB will trip)</b>, immediately breaking the circuit and disconnecting the power supply to prevent damage and fire hazard.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: The oven draws 9.09 A, which exceeds the 5 A circuit rating. This overloading will cause the fuse wire to melt and break the circuit, turning off the power.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">Q3: What precaution should be taken to avoid the overloading of domestic electric circuits?</h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">Essential Precautions to Avoid Overloading:</b></div><div style=\"margin-bottom: 8px;\">1. <b style=\"color: #BA68C8;\">Avoid Connecting Too Many Appliances to a Single Socket:</b> Never plug multiple high-power electrical appliances simultaneously into one multi-plug socket.</div><div style=\"margin-bottom: 8px;\">2. <b style=\"color: #BA68C8;\">Use Dedicated High-Current Circuits:</b> Operate high-power appliances (such as air conditioners, geysers, room heaters, electric ovens) on dedicated 15 A circuits rather than regular 5 A lighting circuits.</div><div style=\"margin-bottom: 8px;\">3. <b style=\"color: #BA68C8;\">Ensure Proper Fuse / MCB Ratings:</b> Always use standard fuses or Miniature Circuit Breakers with appropriate current ratings matched to the wiring capacity.</div><div style=\"margin-bottom: 8px;\">4. <b style=\"color: #BA68C8;\">Maintain Good Quality Insulation:</b> Periodically inspect electrical wires and replace old, damaged, or brittle insulation to avoid short-circuits.</div><div style=\"margin-bottom: 8px;\">5. <b style=\"color: #BA68C8;\">Avoid Simultaneous Operation:</b> Avoid running several heavy electrical appliances (heater, iron, geyser, microwave) at the exact same time.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: Precautions: (i) Do not connect too many appliances to a single socket. (ii) Do not operate multiple high-power appliances simultaneously. (iii) Use proper fuse/MCB ratings. (iv) Use wires with high-quality insulation.\n    </div>\n  </div>\n\n</div>"
+    "in-text": "\n<style>\n  p, li, div:not(.table-container):not(.table-responsive):not(.pt-scroll-wrapper) {\n    text-align: justify !important;\n  }\n  h1, h2, h3, h4, h5, h6 { text-align: left; }\n  .text-center { text-align: center !important; }\n  .text-left { text-align: left !important; }\n  .frac { display: inline-flex !important; flex-direction: column !important; vertical-align: middle !important; text-align: center !important; font-size: 0.9em !important; margin: 0 4px !important; line-height: 1.15 !important; }\n  .frac .num { border-bottom: 1.2px solid currentColor !important; padding: 0 2px !important; text-align: center !important; }\n  .frac .den { padding: 0 2px !important; text-align: center !important; }\n</style>\n\n<div style=\"padding: 12px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.75; font-size: 16px;\">\n  <div style=\"background: rgba(186, 104, 200, 0.08); border: 1.5px solid #BA68C8; border-radius: 12px; padding: 16px; margin-bottom: 25px; text-align: center;\">\n    <h2 style=\"color: #BA68C8; margin: 0 0 6px 0; font-size: 21px; font-weight: bold; text-align: center !important;\">\n      Magnetic Effects of Electric Current &mdash; In-Text Questions &amp; Solutions\n    </h2>\n    <p style=\"color: #FFD700; margin: 0; font-size: 15px; font-weight: 500; text-align: center !important;\">\n      All In-Text Questions (21 Questions) with Step-by-Step Board Answers\n    </p>\n  </div>\n\n  <div style=\"background: rgba(186, 104, 200, 0.12); border: 1.5px solid #BA68C8; border-radius: 8px; padding: 10px 16px; margin: 28px 0 16px 0; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.2);\">\n    <span style=\"color: #BA68C8; font-size: 16.5px; font-weight: bold; letter-spacing: 0.5px;\">📖 IN-TEXT QUESTIONS &mdash; SET 1</span>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">\n      Q1: <span style=\"color: #FFFFFF; font-weight: normal;\">Why does a compass needle get deflected when brought near a bar magnet?</span>\n    </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7; margin-top: 12px;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">Scientific Reason:</b></div><div style=\"margin-bottom: 8px;\">1. A compass needle is itself a <b>tiny, freely suspended permanent bar magnet</b> with a North pole and a South pole.</div><div style=\"margin-bottom: 8px;\">2. When the compass is brought near another bar magnet, it enters the surrounding magnetic field of that bar magnet.</div><div style=\"margin-bottom: 8px;\">3. The magnetic field of the bar magnet exerts equal and opposite mechanical magnetic forces (a magnetic torque) on the poles of the compass needle &mdash; attracting the unlike pole and repelling the like pole.</div><div style=\"margin-bottom: 8px;\">4. This magnetic torque rotates and deflects the compass needle until it aligns tangentially along the local magnetic field line of the bar magnet.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: Because a compass needle is a tiny magnet; the magnetic field of the bar magnet exerts a magnetic torque on its poles, deflecting it.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(186, 104, 200, 0.12); border: 1.5px solid #BA68C8; border-radius: 8px; padding: 10px 16px; margin: 28px 0 16px 0; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.2);\">\n    <span style=\"color: #BA68C8; font-size: 16.5px; font-weight: bold; letter-spacing: 0.5px;\">📖 IN-TEXT QUESTIONS &mdash; SET 2</span>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">\n      Q2: <span style=\"color: #FFFFFF; font-weight: normal;\">Draw magnetic field lines around a bar magnet.</span>\n    </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7; margin-top: 12px;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">Characteristics of Field Lines Around a Bar Magnet:</b></div><div style=\"margin-bottom: 8px;\">&bull; <b style=\"color: #BA68C8;\">Outside the magnet:</b> Continuous smooth curved lines emerge from the <b>North pole (N)</b> and curve around to enter the <b>South pole (S)</b>.</div><div style=\"margin-bottom: 8px;\">&bull; <b style=\"color: #BA68C8;\">Inside the magnet:</b> The lines continue from the <b>South pole (S) to the North pole (N)</b>, completing continuous closed loops.</div><div style=\"margin-bottom: 8px;\">&bull; <b style=\"color: #BA68C8;\">At the Poles:</b> Field lines are most closely crowded together near the poles, indicating that the magnetic field strength is strongest at the poles.</div><div style=\"margin-bottom: 8px;\">&bull; <b style=\"color: #BA68C8;\">Farther Away:</b> The lines spread out, showing that field strength decreases with distance.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: Magnetic field lines form continuous closed loops emerging from the North pole and entering the South pole outside, and travelling from South to North inside.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">\n      Q3: <span style=\"color: #FFFFFF; font-weight: normal;\">List the properties of magnetic field lines.</span>\n    </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7; margin-top: 12px;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">Fundamental Properties of Magnetic Field Lines:</b></div><div style=\"margin-bottom: 8px;\">1. <b style=\"color: #BA68C8;\">Continuous Closed Loops:</b> Magnetic field lines emerge from the North pole and enter the South pole outside the magnet, and run from South to North inside the magnet, forming continuous unbroken loops.</div><div style=\"margin-bottom: 8px;\">2. <b style=\"color: #BA68C8;\">Direction of Field:</b> The tangent drawn to a magnetic field line at any point indicates the precise direction of the magnetic field vector at that point.</div><div style=\"margin-bottom: 8px;\">3. <b style=\"color: #BA68C8;\">Never Intersect:</b> Two magnetic field lines <b>never cross or intersect each other</b>. If they did, it would mean two different directions of magnetic field at the point of intersection, which is physically impossible.</div><div style=\"margin-bottom: 8px;\">4. <b style=\"color: #BA68C8;\">Degree of Closeness Indicates Strength:</b> The relative density (closeness) of field lines represents the magnitude of the magnetic field. Where lines are crowded (near poles), the field is strong; where lines are widely separated, the field is weak.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: (1) Form closed continuous loops. (2) Tangent gives field direction. (3) Never intersect each other. (4) Crowded lines represent a stronger magnetic field.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">\n      Q4: <span style=\"color: #FFFFFF; font-weight: normal;\">Why don't two magnetic field lines intersect each other?</span>\n    </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7; margin-top: 12px;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">Scientific Proof:</b></div><div style=\"margin-bottom: 8px;\">1. The direction of the magnetic field at any point is given by the <b>tangent drawn to the magnetic field line</b> at that point (which is the direction in which a compass needle points).</div><div style=\"margin-bottom: 8px;\">2. If two magnetic field lines were to intersect at a common point, there would be <b>two different tangents</b> at that single point of intersection.</div><div style=\"margin-bottom: 8px;\">3. This would imply that at the point of intersection, the magnetic field has <b>two different directions simultaneously</b>, and a compass needle would have to point in two directions at the same time, which is <b>physically impossible</b>.</div><div style=\"margin-bottom: 8px;\">4. Therefore, two magnetic field lines can never intersect.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: Because if they intersected, the magnetic field at the point of intersection would have two different directions simultaneously, which is physically impossible.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(186, 104, 200, 0.12); border: 1.5px solid #BA68C8; border-radius: 8px; padding: 10px 16px; margin: 28px 0 16px 0; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.2);\">\n    <span style=\"color: #BA68C8; font-size: 16.5px; font-weight: bold; letter-spacing: 0.5px;\">📖 IN-TEXT QUESTIONS &mdash; SET 3</span>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">\n      Q5: <span style=\"color: #FFFFFF; font-weight: normal;\">Consider a circular loop of wire lying in the plane of the table. Let the current pass through the loop clockwise. Apply the right-hand rule to find out the direction of the magnetic field inside and outside the loop.</span>\n    </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7; margin-top: 12px;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">Analysis using the Right-Hand Thumb Rule:</b></div><div style=\"margin-bottom: 8px;\">1. The circular wire lies horizontally on the table with current circulating in a <b>clockwise</b> direction.</div><div style=\"margin-bottom: 8px;\"><br/>2. <b style=\"color: #BA68C8;\">For the Right Side of the Loop:</b></div><div style=\"margin-bottom: 8px;\">&bull; Current flows downwards towards you.</div><div style=\"margin-bottom: 8px;\">&bull; By pointing the right thumb in the direction of current, the curled fingers point <b>downwards into the table inside the loop</b> and curl upwards out of the table outside the loop.</div><div style=\"margin-bottom: 8px;\"><br/>3. <b style=\"color: #BA68C8;\">For the Left Side of the Loop:</b></div><div style=\"margin-bottom: 8px;\">&bull; Current flows upwards away from you.</div><div style=\"margin-bottom: 8px;\">&bull; Pointing the right thumb upwards, the curled fingers again point <b>downwards into the table inside the loop</b> and curl upwards out of the table outside the loop.</div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">Conclusion:</b></div><div style=\"margin-bottom: 8px;\">&bull; <b style=\"color: #BA68C8;\">Inside the loop:</b> The magnetic field lines are directed <b>perpendicularly downwards into the plane of the table</b>.</div><div style=\"margin-bottom: 8px;\">&bull; <b style=\"color: #BA68C8;\">Outside the loop:</b> The magnetic field lines are directed <b>perpendicularly upwards out of the plane of the table</b>.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: Inside the loop: Directed downwards into the table. Outside the loop: Directed upwards out of the table.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">\n      Q6: <span style=\"color: #FFFFFF; font-weight: normal;\">The magnetic field in a given region is uniform. Draw a diagram to represent it.</span>\n    </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7; margin-top: 12px;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">Representation of a Uniform Magnetic Field:</b></div><div style=\"margin-bottom: 8px;\">A uniform magnetic field is a region where the magnetic field has the exact same magnitude and the exact same direction at every single point.</div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">Graphical Representation:</b></div><div style=\"margin-bottom: 8px;\">It is represented by a set of <b>equidistant, parallel straight lines pointing in the same direction</b> with arrows indicating field orientation (such as inside a long current-carrying solenoid).</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: A uniform magnetic field is represented by a set of parallel, equidistant straight lines pointing in the same direction.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">\n      Q7: <span style=\"color: #FFFFFF; font-weight: normal;\">Choose the correct option:The magnetic field inside a long straight solenoid-carrying current:(a) is zero.(b) decreases as we move towards its end.(c) increases as we move towards its end.(d) is the same at all points.</span>\n    </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7; margin-top: 12px;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b>(d) is the same at all points.</b></div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">Scientific Reason:</b></div><div style=\"margin-bottom: 8px;\">Inside a long straight current-carrying solenoid, the magnetic field lines are parallel, straight, and equally spaced along the axis. This indicates that the magnetic field is <b>uniform and has the exact same magnitude and direction at all points inside the solenoid</b> (B = &mu;<sub>0</sub>nI).</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: (d) is the same at all points.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(186, 104, 200, 0.12); border: 1.5px solid #BA68C8; border-radius: 8px; padding: 10px 16px; margin: 28px 0 16px 0; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.2);\">\n    <span style=\"color: #BA68C8; font-size: 16.5px; font-weight: bold; letter-spacing: 0.5px;\">📖 IN-TEXT QUESTIONS &mdash; SET 4</span>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">\n      Q8: <span style=\"color: #FFFFFF; font-weight: normal;\">Which of the following property of a proton can change while it moves freely in a magnetic field? (There may be more than one correct answer)(a) mass(b) speed(c) velocity(d) momentum</span>\n    </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7; margin-top: 12px;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b>(c) velocity</b> and <b>(d) momentum</b></div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">Scientific Reason:</b></div><div style=\"margin-bottom: 8px;\">1. When a charged proton enters a magnetic field, the magnetic Lorentz force (F = q &middot; v &times; B) always acts <b>perpendicular to the direction of motion (velocity)</b> of the proton.</div><div style=\"margin-bottom: 8px;\">2. Because force is perpendicular to velocity, work done on the proton is zero (W = F &middot; d &middot; cos 90&deg; = 0).</div><div style=\"margin-bottom: 8px;\">3. Therefore, the <b>speed</b> (magnitude of velocity) and kinetic energy remain constant.</div><div style=\"margin-bottom: 8px;\">4. However, the perpendicular force continuously changes the <b>direction of motion</b> of the proton.</div><div style=\"margin-bottom: 8px;\">5. Since velocity and momentum (p = m &middot; v) are vector quantities depending on direction, both the <b>velocity and momentum of the proton change continuously</b>.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: (c) velocity and (d) momentum change (speed and mass remain constant).\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">\n      Q9: <span style=\"color: #FFFFFF; font-weight: normal;\">In Activity 13.7, how do we think the displacement of rod AB will be affected if:(i) current in rod AB is increased;(ii) a stronger horse-shoe magnet is used; and(iii) length of the rod AB is increased?</span>\n    </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7; margin-top: 12px;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">Formula for Magnetic Force:</b></div><div style=\"margin-bottom: 8px;\">The force experienced by a current-carrying rod in a magnetic field is given by: F = I &middot; L &middot; B &middot; sin&theta;.</div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">(i) If current (I) in rod AB is increased:</b></div><div style=\"margin-bottom: 8px;\">Since F &prop; I, the magnetic force on the rod increases, causing the <b>displacement of rod AB to increase</b>.</div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">(ii) If a stronger horse-shoe magnet (B) is used:</b></div><div style=\"margin-bottom: 8px;\">Since F &prop; B, the magnetic field strength increases, so the force increases and the <b>displacement of rod AB increases</b>.</div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">(iii) If length (L) of the rod AB is increased:</b></div><div style=\"margin-bottom: 8px;\">Since F &prop; L, a longer conductor experiences greater magnetic force, so the <b>displacement of rod AB increases</b>.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: In all three cases, the displacement of rod AB will increase (since F ∝ I, F ∝ B, and F ∝ L).\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">\n      Q10: <span style=\"color: #FFFFFF; font-weight: normal;\">A positively-charged particle (alpha-particle) projected towards west is deflected towards north by a magnetic field. The direction of magnetic field is:(a) towards south(b) towards east(c) downward(d) upward</span>\n    </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7; margin-top: 12px;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b>(d) upward</b></div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">Step-by-Step Application of Fleming's Left-Hand Rule:</b></div><div style=\"margin-bottom: 8px;\">1. <b style=\"color: #BA68C8;\">Direction of Current (I):</b> An alpha particle is positively charged. Conventional current flows in the direction of motion of positive charge &rarr; <b>Towards West</b>.</div><div style=\"margin-bottom: 8px;\">2. <b style=\"color: #BA68C8;\">Direction of Force (F):</b> Deflection is towards North &rarr; <b>Towards North</b>.</div><div style=\"margin-bottom: 8px;\">3. <b style=\"color: #BA68C8;\">Applying Fleming's Left-Hand Rule:</b></div><div style=\"margin-bottom: 8px;\">&bull; Point the left-hand Thumb towards North (Force).</div><div style=\"margin-bottom: 8px;\">&bull; Point the Middle finger towards West (Current).</div><div style=\"margin-bottom: 8px;\">&bull; Your Forefinger will point <b>vertically upwards (out of the page)</b>.</div><div style=\"margin-bottom: 8px;\"><br/>Therefore, the magnetic field is directed <b>upward</b>.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: (d) upward\n    </div>\n  </div>\n\n  <div style=\"background: rgba(186, 104, 200, 0.12); border: 1.5px solid #BA68C8; border-radius: 8px; padding: 10px 16px; margin: 28px 0 16px 0; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.2);\">\n    <span style=\"color: #BA68C8; font-size: 16.5px; font-weight: bold; letter-spacing: 0.5px;\">📖 IN-TEXT QUESTIONS &mdash; SET 5</span>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">\n      Q11: <span style=\"color: #FFFFFF; font-weight: normal;\">State Fleming's left-hand rule.</span>\n    </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7; margin-top: 12px;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">Fleming's Left-Hand Rule (Motor Rule):</b></div><div style=\"margin-bottom: 8px;\">Stretch the <b>thumb, forefinger, and middle finger</b> of your left hand mutually perpendicular to one another such that:</div><div style=\"margin-bottom: 8px;\">&bull; The <b>Forefinger</b> points in the direction of the external magnetic <b>Field (B)</b>,</div><div style=\"margin-bottom: 8px;\">&bull; The <b>Middle finger</b> points in the direction of electric <b>Current (I)</b>,</div><div style=\"margin-bottom: 8px;\">&bull; Then the <b>Thumb</b> points in the direction of the mechanical <b>Force (F) or Motion</b> experienced by the conductor.</div><div style=\"margin-bottom: 8px;\"><br/><i>Mnemonic: <b>FBI</b> &mdash; Force (Thumb), B-Field (Forefinger), I-Current (Middle finger).</i></div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: Stretch thumb, forefinger, and middle finger of left hand mutually perpendicular. Forefinger along Field, Middle finger along Current, then Thumb points along mechanical Force (Motion).\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">\n      Q12: <span style=\"color: #FFFFFF; font-weight: normal;\">What is the principle of an electric motor?</span>\n    </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7; margin-top: 12px;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">Principle of an Electric Motor:</b></div><div style=\"margin-bottom: 8px;\">An electric motor works on the <b>Magnetic Effect of Electric Current</b>:</div><div style=\"margin-bottom: 8px;\">When a rectangular current-carrying coil is placed in a magnetic field, it experiences mechanical forces on its opposite parallel arms that are equal in magnitude and opposite in direction (governed by <b>Fleming's Left-Hand Rule</b>). These forces constitute a deflecting couple (torque) that rotates the coil continuously about its axis, converting electrical energy into mechanical rotational energy.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: An electric motor operates on the principle that a current-carrying coil placed in a magnetic field experiences a rotational torque (Fleming's Left-Hand Rule).\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">\n      Q13: <span style=\"color: #FFFFFF; font-weight: normal;\">What is the role of the split ring in an electric motor?</span>\n    </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7; margin-top: 12px;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">Role of Split Ring (Commutator):</b></div><div style=\"margin-bottom: 8px;\">1. The split ring acts as a <b>commutator</b> in a DC motor.</div><div style=\"margin-bottom: 8px;\">2. Its essential role is to <b>reverse the direction of electric current flowing through the armature coil after every half revolution (180&deg;)</b>.</div><div style=\"margin-bottom: 8px;\">3. Due to this periodic reversal of current, the downward force remains on the side moving downwards and the upward force remains on the side moving upwards.</div><div style=\"margin-bottom: 8px;\">4. This ensures that the deflecting torque acts in the <b>same rotational direction</b>, maintaining continuous, smooth unidirectional rotation of the motor.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: The split ring acts as a commutator, reversing the direction of current in the coil every half rotation to sustain continuous unidirectional rotation.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(186, 104, 200, 0.12); border: 1.5px solid #BA68C8; border-radius: 8px; padding: 10px 16px; margin: 28px 0 16px 0; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.2);\">\n    <span style=\"color: #BA68C8; font-size: 16.5px; font-weight: bold; letter-spacing: 0.5px;\">📖 IN-TEXT QUESTIONS &mdash; SET 6</span>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">\n      Q14: <span style=\"color: #FFFFFF; font-weight: normal;\">Explain different ways to induce current in a coil.</span>\n    </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7; margin-top: 12px;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">Methods to Induce Electric Current in a Coil:</b></div><div style=\"margin-bottom: 8px;\">By Faraday's law of electromagnetic induction, current is induced whenever the magnetic flux linked with a coil changes. This can be achieved by:</div><div style=\"margin-bottom: 8px;\">1. <b style=\"color: #BA68C8;\">Relative Motion Between Magnet and Coil:</b> Moving a bar magnet towards or away from a stationary coil, or moving the coil towards or away from a stationary magnet.</div><div style=\"margin-bottom: 8px;\">2. <b style=\"color: #BA68C8;\">Rotating a Coil in a Magnetic Field:</b> Rotating a conductive coil inside a uniform magnetic field (the fundamental principle of electric generators).</div><div style=\"margin-bottom: 8px;\">3. <b style=\"color: #BA68C8;\">Changing Current in a Neighboring Coil:</b> Placing a primary coil near a secondary coil and varying the current in the primary coil (by switching it ON/OFF or adjusting a rheostat).</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: (1) By moving a magnet relative to a coil. (2) By rotating a coil in a magnetic field. (3) By changing the current in a nearby primary coil.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(186, 104, 200, 0.12); border: 1.5px solid #BA68C8; border-radius: 8px; padding: 10px 16px; margin: 28px 0 16px 0; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.2);\">\n    <span style=\"color: #BA68C8; font-size: 16.5px; font-weight: bold; letter-spacing: 0.5px;\">📖 IN-TEXT QUESTIONS &mdash; SET 7</span>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">\n      Q15: <span style=\"color: #FFFFFF; font-weight: normal;\">State the principle of an electric generator.</span>\n    </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7; margin-top: 12px;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">Principle of an Electric Generator:</b></div><div style=\"margin-bottom: 8px;\">An electric generator works on the principle of <b>Electromagnetic Induction (Faraday's Law)</b>:</div><div style=\"margin-bottom: 8px;\">When a closed rectangular coil of wire is mechanically rotated inside a uniform magnetic field, the magnetic flux linked with the coil changes continuously. This induces an electromotive force (EMF) and an alternating electric current in the coil, converting mechanical rotational kinetic energy into electrical energy. The direction of induced current is determined by <b>Fleming's Right-Hand Rule</b>.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: An electric generator works on the principle of electromagnetic induction: rotating a coil in a magnetic field changes magnetic flux, inducing electric current (Fleming's Right-Hand Rule).\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">\n      Q16: <span style=\"color: #FFFFFF; font-weight: normal;\">Name some sources of direct current.</span>\n    </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7; margin-top: 12px;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">Common Sources of Direct Current (DC):</b></div><div style=\"margin-bottom: 8px;\">1. <b style=\"color: #BA68C8;\">Dry Cells & Electrochemical Batteries:</b> Alkaline batteries, car lead-acid batteries, lithium-ion rechargeable batteries in smartphones and laptops.</div><div style=\"margin-bottom: 8px;\">2. <b style=\"color: #BA68C8;\">Solar Photovoltaic (PV) Cells:</b> Solar panels convert solar radiation directly into DC electricity.</div><div style=\"margin-bottom: 8px;\">3. <b style=\"color: #BA68C8;\">DC Generators (Dynamos):</b> Generators equipped with split-ring commutators.</div><div style=\"margin-bottom: 8px;\">4. <b style=\"color: #BA68C8;\">AC to DC Rectifiers:</b> Power adapters and chargers that convert household AC into smooth DC.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: Dry cells, electrochemical batteries, solar cells, and DC generators (dynamos).\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">\n      Q17: <span style=\"color: #FFFFFF; font-weight: normal;\">Which sources produce alternating current?</span>\n    </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7; margin-top: 12px;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">Sources Producing Alternating Current (AC):</b></div><div style=\"margin-bottom: 8px;\">1. <b style=\"color: #BA68C8;\">AC Generators (Alternators):</b> Modern thermal, hydroelectric, and nuclear power plant generators.</div><div style=\"margin-bottom: 8px;\">2. <b style=\"color: #BA68C8;\">Bicycle Dynamos:</b> Small friction-driven alternators used to light bicycle headlamps.</div><div style=\"margin-bottom: 8px;\">3. <b style=\"color: #BA68C8;\">Wind Turbine Generators:</b> Rotational wind energy converted into AC electricity.</div><div style=\"margin-bottom: 8px;\">4. <b style=\"color: #BA68C8;\">Electronic Inverters:</b> Devices that convert battery DC into AC for domestic power backup.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: AC generators (power station alternators), hydroelectric plants, wind turbine alternators, and electronic inverters.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">\n      Q18: <span style=\"color: #FFFFFF; font-weight: normal;\">Choose the correct option:A rectangular coil of copper wires is rotated in a magnetic field. The direction of the induced current changes once in each:(a) two revolutions(b) one revolution(c) half revolution(d) one-fourth revolution</span>\n    </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7; margin-top: 12px;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b>(c) half revolution</b></div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">Scientific Reason:</b></div><div style=\"margin-bottom: 8px;\">When a rectangular coil rotates in a magnetic field, one half of the coil moves upwards during the first 180&deg; and downwards during the next 180&deg;. By <b>Fleming's Right-Hand Rule</b>, the direction of the induced current reverses every time the relative motion of the coil arms reverses, which occurs exactly <b>once in every half revolution (180&deg;)</b>.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: (c) half revolution\n    </div>\n  </div>\n\n  <div style=\"background: rgba(186, 104, 200, 0.12); border: 1.5px solid #BA68C8; border-radius: 8px; padding: 10px 16px; margin: 28px 0 16px 0; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.2);\">\n    <span style=\"color: #BA68C8; font-size: 16.5px; font-weight: bold; letter-spacing: 0.5px;\">📖 IN-TEXT QUESTIONS &mdash; SET 8</span>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">\n      Q19: <span style=\"color: #FFFFFF; font-weight: normal;\">Name two safety measures commonly used in electric circuits and appliances.</span>\n    </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7; margin-top: 12px;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">Two Essential Safety Measures:</b></div><div style=\"margin-bottom: 8px;\">1. <b style=\"color: #BA68C8;\">Electric Fuse / Miniature Circuit Breaker (MCB):</b></div><div style=\"margin-bottom: 8px;\">&bull; Connected in series with the live wire.</div><div style=\"margin-bottom: 8px;\">&bull; Protects circuits and appliances from damage due to overloading or short-circuiting by melting or tripping to break the circuit when current exceeds the safe rating.</div><div style=\"margin-bottom: 8px;\"><br/>2. <b style=\"color: #BA68C8;\">Earthing (Earth Wire):</b></div><div style=\"margin-bottom: 8px;\">&bull; Connects the metallic outer body of high-power appliances (e.g. electric irons, refrigerators, geysers) directly to a metal plate buried deep in the ground.</div><div style=\"margin-bottom: 8px;\">&bull; Provides a low-resistance path to ground for any accidental electrical leakage, protecting users from fatal electric shocks.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: (1) Electric fuse (or MCB) to prevent overloading and short-circuits. (2) Earthing of metallic appliances to prevent electric shocks.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">\n      Q20: <span style=\"color: #FFFFFF; font-weight: normal;\">An electric oven of 2 kW power rating is operated in a domestic electric circuit (220 V) that has a current rating of 5 A. What result do you expect? Explain.</span>\n    </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7; margin-top: 12px;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">Given Data:</b></div><div style=\"margin-bottom: 8px;\">Power rating of electric oven, P = 2 kW = 2000 W</div><div style=\"margin-bottom: 8px;\">Domestic supply voltage, V = 220 V</div><div style=\"margin-bottom: 8px;\">Current rating of the circuit fuse, I<sub>safe</sub> = 5 A</div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">Calculation of Current Drawn by the Oven:</b></div><div style=\"margin-bottom: 8px;\">P = V &times; I &rArr; I = <span class=\"frac\"><span class=\"num\">P</span><span class=\"den\">V</span></span></div><div style=\"margin-bottom: 8px;\">I = <span class=\"frac\"><span class=\"num\">2000</span><span class=\"den\">220</span></span> = <span class=\"frac\"><span class=\"num\">100</span><span class=\"den\">11</span></span> &approx; <b>9.09 A</b></div><div style=\"margin-bottom: 8px;\"><br/><b style=\"color: #BA68C8;\">Conclusion & Result:</b></div><div style=\"margin-bottom: 8px;\">1. The current drawn by the oven (9.09 A) is <b>significantly higher than the safe current rating of the circuit (5 A)</b>.</div><div style=\"margin-bottom: 8px;\">2. This condition constitutes <b>overloading</b>.</div><div style=\"margin-bottom: 8px;\">3. Due to the high current, excessive Joule heating will take place in the fuse wire.</div><div style=\"margin-bottom: 8px;\">4. The <b>electric fuse will melt and blow out (or MCB will trip)</b>, immediately breaking the circuit and disconnecting the power supply to prevent damage and fire hazard.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: The oven draws 9.09 A, which exceeds the 5 A circuit rating. This overloading will cause the fuse wire to melt and break the circuit, turning off the power.\n    </div>\n  </div>\n\n  <div style=\"background: rgba(0,0,0,0.25); border: 1.2px solid rgba(186, 104, 200, 0.25); border-radius: 10px; padding: 16px; margin: 18px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.25);\">\n    <h3 style=\"color: #BA68C8; margin: 0 0 10px 0; font-size: 17px; font-weight: bold; line-height: 1.5;\">\n      Q21: <span style=\"color: #FFFFFF; font-weight: normal;\">What precaution should be taken to avoid the overloading of domestic electric circuits?</span>\n    </h3>\n    <div style=\"background: rgba(0,0,0,0.3); border-left: 3.5px solid #BA68C8; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15.5px; line-height: 1.7; margin-top: 12px;\">\n      <b style=\"color: #BA68C8; display: block; margin-bottom: 6px; font-size: 15px;\">💡 Solution &amp; Explanation:</b>\n      <div style=\"margin-bottom: 8px;\"><b style=\"color: #BA68C8;\">Essential Precautions to Avoid Overloading:</b></div><div style=\"margin-bottom: 8px;\">1. <b style=\"color: #BA68C8;\">Avoid Connecting Too Many Appliances to a Single Socket:</b> Never plug multiple high-power electrical appliances simultaneously into one multi-plug socket.</div><div style=\"margin-bottom: 8px;\">2. <b style=\"color: #BA68C8;\">Use Dedicated High-Current Circuits:</b> Operate high-power appliances (such as air conditioners, geysers, room heaters, electric ovens) on dedicated 15 A circuits rather than regular 5 A lighting circuits.</div><div style=\"margin-bottom: 8px;\">3. <b style=\"color: #BA68C8;\">Ensure Proper Fuse / MCB Ratings:</b> Always use standard fuses or Miniature Circuit Breakers with appropriate current ratings matched to the wiring capacity.</div><div style=\"margin-bottom: 8px;\">4. <b style=\"color: #BA68C8;\">Maintain Good Quality Insulation:</b> Periodically inspect electrical wires and replace old, damaged, or brittle insulation to avoid short-circuits.</div><div style=\"margin-bottom: 8px;\">5. <b style=\"color: #BA68C8;\">Avoid Simultaneous Operation:</b> Avoid running several heavy electrical appliances (heater, iron, geyser, microwave) at the exact same time.</div>\n    </div>\n    <div style=\"margin-top: 12px; background: rgba(76, 175, 80, 0.12); border-left: 3.5px solid #4CAF50; padding: 8px 12px; border-radius: 4px; color: #81C784; font-size: 14.5px; font-weight: bold;\">\n      &check; Final Answer: Precautions: (i) Do not connect too many appliances to a single socket. (ii) Do not operate multiple high-power appliances simultaneously. (iii) Use proper fuse/MCB ratings. (iv) Use wires with high-quality insulation.\n    </div>\n  </div>\n\n</div>\n"
   },
   "introduction": "In 1820, Danish physicist Hans Christian Oersted made a serendipitous discovery that changed the course of physics: a compass needle placed near an electric current-carrying wire deflected instantly, demonstrating for the very first time that electricity and magnetism are inextricably linked manifestations of a single unified phenomenon &mdash; electromagnetism. Moving electric charges produce a magnetic field in their surrounding space, and conversely, changing magnetic fields can induce electric currents. In this chapter, we explore magnetic fields and their characteristic field lines, the magnetic fields produced by diverse conductor geometries (straight wires, circular loops, and solenoids), and the Right-Hand Thumb Rule. We investigate the mechanical force experienced by a current-carrying conductor in an external magnetic field, encapsulated by Fleming's Left-Hand Rule and engineered into practical DC electric motors. Furthermore, we examine Michael Faraday's monumental discovery of electromagnetic induction (EMI), Fleming's Right-Hand Rule, the working of electric generators, and the design and safety principles of domestic alternating current (AC) power distribution systems, including fuses, earthing, short-circuits, and overloading.",
   "definitions": [
-  {
-    "term": "Magnetic Field (B)",
-    "description": "The physical region surrounding a magnet or a current-carrying conductor within which its magnetic influence can be detected and experienced by other magnetic substances or moving charges. Its SI unit is the Tesla (T)."
-  },
-  {
-    "term": "Magnetic Field Lines",
-    "description": "Continuous imaginary lines or curves drawn in a magnetic field such that the tangent drawn at any point gives the direction of the magnetic field vector at that point. Outside a magnet, they emerge from the North pole and enter the South pole."
-  },
-  {
-    "term": "Right-Hand Thumb Rule",
-    "description": "Imagine holding a current-carrying straight conductor in your right hand such that the outstretched thumb points in the direction of electric current; then the fingers curled around the conductor point in the direction of the magnetic field lines."
-  },
-  {
-    "term": "Solenoid",
-    "description": "A long cylindrical helical coil consisting of many closely wound turns of insulated copper wire. When electric current flows through it, it produces a uniform internal magnetic field remarkably identical to that of a bar magnet."
-  },
-  {
-    "term": "Electromagnet",
-    "description": "A temporary, powerful magnet created by placing a soft iron core inside a current-carrying solenoid; it remains magnetized only as long as electric current flows through the coil."
-  },
-  {
-    "term": "Fleming's Left-Hand Rule (Motor Rule)",
-    "description": "Stretch the thumb, forefinger, and middle finger of your left hand mutually perpendicular to each other. If the Forefinger points along the magnetic Field and the Middle finger points along the Current, then the Thumb points in the direction of the mechanical Force (Motion) acting on the conductor."
-  },
-  {
-    "term": "Electric Motor",
-    "description": "A rotating electrical machine that converts electrical energy into mechanical rotational kinetic energy, operating on the principle that a current-carrying coil placed in a magnetic field experiences a deflecting torque."
-  },
-  {
-    "term": "Split-Ring Commutator",
-    "description": "A split cylindrical copper ring in a DC motor that reverses the direction of current flowing through the rotating armature coil every half rotation, ensuring continuous unidirectional rotation of the shaft."
-  },
-  {
-    "term": "Electromagnetic Induction (EMI)",
-    "description": "The phenomenon of producing an induced electromotive force (EMF) and consequent electric current in a closed conductor loop whenever there is relative motion between the conductor and a magnetic field or when the magnetic flux linked with the loop changes."
-  },
-  {
-    "term": "Fleming's Right-Hand Rule (Generator Rule)",
-    "description": "Stretch the thumb, forefinger, and middle finger of your right hand mutually perpendicular to each other. If the Forefinger points along the magnetic Field and the Thumb points along the Motion of the conductor, then the Middle finger indicates the direction of the Induced Current."
-  },
-  {
-    "term": "Electric Generator (Dynamo)",
-    "description": "A machine that converts mechanical rotational energy into electrical energy based on the principle of electromagnetic induction by rotating a conductive coil within a magnetic field."
-  },
-  {
-    "term": "Alternating Current (AC) vs Direct Current (DC)",
-    "description": "Direct Current (DC) flows unidirectionally with constant polarity. Alternating Current (AC) periodically reverses its direction and magnitude at regular intervals; in India, domestic AC has a frequency of 50 Hz."
-  },
-  {
-    "term": "Overloading & Short-Circuit",
-    "description": "Overloading occurs when too many high-power appliances are operated simultaneously drawing current beyond the safe rating of the circuit. A short-circuit occurs when the live and neutral wires come in direct physical contact, dropping resistance to near zero and causing a dangerous surge in current."
-  },
-  {
-    "term": "Earth Wire & Earthing",
-    "description": "A safety wire (with green/yellow insulation) connected to a metal plate buried deep in the ground that provides a near-zero resistance path for leakage currents from metallic appliance bodies to Earth, preventing fatal electrical shocks."
-  }
-],
+    {
+      "term": "Magnetic Field (B)",
+      "description": "The physical region surrounding a magnet or a current-carrying conductor within which its magnetic influence can be detected and experienced by other magnetic substances or moving charges. Its SI unit is the Tesla (T)."
+    },
+    {
+      "term": "Magnetic Field Lines",
+      "description": "Continuous imaginary lines or curves drawn in a magnetic field such that the tangent drawn at any point gives the direction of the magnetic field vector at that point. Outside a magnet, they emerge from the North pole and enter the South pole."
+    },
+    {
+      "term": "Right-Hand Thumb Rule",
+      "description": "Imagine holding a current-carrying straight conductor in your right hand such that the outstretched thumb points in the direction of electric current; then the fingers curled around the conductor point in the direction of the magnetic field lines."
+    },
+    {
+      "term": "Solenoid",
+      "description": "A long cylindrical helical coil consisting of many closely wound turns of insulated copper wire. When electric current flows through it, it produces a uniform internal magnetic field remarkably identical to that of a bar magnet."
+    },
+    {
+      "term": "Electromagnet",
+      "description": "A temporary, powerful magnet created by placing a soft iron core inside a current-carrying solenoid; it remains magnetized only as long as electric current flows through the coil."
+    },
+    {
+      "term": "Fleming's Left-Hand Rule (Motor Rule)",
+      "description": "Stretch the thumb, forefinger, and middle finger of your left hand mutually perpendicular to each other. If the Forefinger points along the magnetic Field and the Middle finger points along the Current, then the Thumb points in the direction of the mechanical Force (Motion) acting on the conductor."
+    },
+    {
+      "term": "Electric Motor",
+      "description": "A rotating electrical machine that converts electrical energy into mechanical rotational kinetic energy, operating on the principle that a current-carrying coil placed in a magnetic field experiences a deflecting torque."
+    },
+    {
+      "term": "Split-Ring Commutator",
+      "description": "A split cylindrical copper ring in a DC motor that reverses the direction of current flowing through the rotating armature coil every half rotation, ensuring continuous unidirectional rotation of the shaft."
+    },
+    {
+      "term": "Electromagnetic Induction (EMI)",
+      "description": "The phenomenon of producing an induced electromotive force (EMF) and consequent electric current in a closed conductor loop whenever there is relative motion between the conductor and a magnetic field or when the magnetic flux linked with the loop changes."
+    },
+    {
+      "term": "Fleming's Right-Hand Rule (Generator Rule)",
+      "description": "Stretch the thumb, forefinger, and middle finger of your right hand mutually perpendicular to each other. If the Forefinger points along the magnetic Field and the Thumb points along the Motion of the conductor, then the Middle finger indicates the direction of the Induced Current."
+    },
+    {
+      "term": "Electric Generator (Dynamo)",
+      "description": "A machine that converts mechanical rotational energy into electrical energy based on the principle of electromagnetic induction by rotating a conductive coil within a magnetic field."
+    },
+    {
+      "term": "Alternating Current (AC) vs Direct Current (DC)",
+      "description": "Direct Current (DC) flows unidirectionally with constant polarity. Alternating Current (AC) periodically reverses its direction and magnitude at regular intervals; in India, domestic AC has a frequency of 50 Hz."
+    },
+    {
+      "term": "Overloading & Short-Circuit",
+      "description": "Overloading occurs when too many high-power appliances are operated simultaneously drawing current beyond the safe rating of the circuit. A short-circuit occurs when the live and neutral wires come in direct physical contact, dropping resistance to near zero and causing a dangerous surge in current."
+    },
+    {
+      "term": "Earth Wire & Earthing",
+      "description": "A safety wire (with green/yellow insulation) connected to a metal plate buried deep in the ground that provides a near-zero resistance path for leakage currents from metallic appliance bodies to Earth, preventing fatal electrical shocks."
+    }
+  ],
   "keyPoints": [
-  "Oersted's discovery proved that an electric current always produces a magnetic field in its surrounding space.",
-  "Properties of magnetic field lines: (i) They form continuous, closed loops (North to South outside the magnet, South to North inside), (ii) Tangent at any point indicates field direction, (iii) Two field lines never intersect (which would imply two different field directions at a single point, physically impossible), (iv) Degree of crowding of lines indicates relative field strength.",
-  "For a straight current-carrying wire, magnetic field lines are concentric circles. Field strength B &prop; I and B &prop; 1 / r.",
-  "For a circular coil of n turns, the magnetic field at the center is n times stronger than that of a single turn: B &prop; n &middot; I / r.",
-  "Inside a current-carrying solenoid, magnetic field lines are parallel, straight, and equidistant, indicating that the magnetic field is completely uniform inside the solenoid.",
-  "Soft iron is used as the core of an electromagnet because it magnetizes rapidly and loses its magnetism immediately when current is switched off (high permeability, low retentivity).",
-  "A current-carrying conductor experiences maximum magnetic force when it is oriented perpendicular to the magnetic field (&theta; = 90&deg;). If placed parallel to the magnetic field (&theta; = 0&deg;), the force is zero.",
-  "Fleming's Left-Hand Rule determines the direction of mechanical force in an electric motor (FBI: Force, Field, Current).",
-  "Fleming's Right-Hand Rule determines the direction of induced current in an electric generator.",
-  "In India, domestic AC power is supplied at 220 V with a frequency of 50 Hz. The current reverses its direction every 1/100 second (100 reversals per second).",
-  "Domestic wiring uses three wires: Live wire (Red/Brown, 220 V), Neutral wire (Black/Blue, 0 V), and Earth wire (Green/Yellow, 0 V).",
-  "Safety devices: Electric fuses and MCBs protect circuits from overloading and short-circuits by melting or tripping to break the circuit."
-],
+    "Oersted's discovery proved that an electric current always produces a magnetic field in its surrounding space.",
+    "Properties of magnetic field lines: (i) They form continuous, closed loops (North to South outside the magnet, South to North inside), (ii) Tangent at any point indicates field direction, (iii) Two field lines never intersect (which would imply two different field directions at a single point, physically impossible), (iv) Degree of crowding of lines indicates relative field strength.",
+    "For a straight current-carrying wire, magnetic field lines are concentric circles. Field strength B &prop; I and B &prop; 1 / r.",
+    "For a circular coil of n turns, the magnetic field at the center is n times stronger than that of a single turn: B &prop; n &middot; I / r.",
+    "Inside a current-carrying solenoid, magnetic field lines are parallel, straight, and equidistant, indicating that the magnetic field is completely uniform inside the solenoid.",
+    "Soft iron is used as the core of an electromagnet because it magnetizes rapidly and loses its magnetism immediately when current is switched off (high permeability, low retentivity).",
+    "A current-carrying conductor experiences maximum magnetic force when it is oriented perpendicular to the magnetic field (&theta; = 90&deg;). If placed parallel to the magnetic field (&theta; = 0&deg;), the force is zero.",
+    "Fleming's Left-Hand Rule determines the direction of mechanical force in an electric motor (FBI: Force, Field, Current).",
+    "Fleming's Right-Hand Rule determines the direction of induced current in an electric generator.",
+    "In India, domestic AC power is supplied at 220 V with a frequency of 50 Hz. The current reverses its direction every 1/100 second (100 reversals per second).",
+    "Domestic wiring uses three wires: Live wire (Red/Brown, 220 V), Neutral wire (Black/Blue, 0 V), and Earth wire (Green/Yellow, 0 V).",
+    "Safety devices: Electric fuses and MCBs protect circuits from overloading and short-circuits by melting or tripping to break the circuit."
+  ],
   "formulas": [
-  {
-    "name": "Field of a Straight Wire",
-    "formula": "B = <span class=\"frac\"><span class=\"num\">&mu;<sub>0</sub> &middot; I</span><span class=\"den\">2&pi; r</span></span> implies B &prop; <span class=\"frac\"><span class=\"num\">I</span><span class=\"den\">r</span></span> \n(B in Tesla, I in Amperes, r in metres)"
-  },
-  {
-    "name": "Field at Center of Circular Loop",
-    "formula": "B = <span class=\"frac\"><span class=\"num\">&mu;<sub>0</sub> &middot; n &middot; I</span><span class=\"den\">2 r</span></span> implies B &prop; n quad \text{(n = number of turns)}"
-  },
-  {
-    "name": "Field inside an Ideal Solenoid",
-    "formula": "B = &mu;<sub>0</sub> &middot; n &middot; I = &mu;<sub>0</sub> <span class=\"frac\"><span class=\"num\">N</span><span class=\"den\">L</span></span> I \n(Uniform and axial inside)"
-  },
-  {
-    "name": "Magnetic Force on Conductor",
-    "formula": "F = I &middot; L &middot; B &middot; sin&theta; quad (F_{\text{max}} = I L B \text{ when } &theta; = 90&deg;; quad F = 0 \text{ when } &theta; = 0&deg;)"
-  },
-  {
-    "name": "Magnetic Force on Moving Charge",
-    "formula": "F = q &middot; v &middot; B &middot; sin&theta; quad (\text{Lorentz Magnetic Force})"
-  },
-  {
-    "name": "Indian AC Frequency & Period",
-    "formula": "f = 50\text{ Hz} implies T = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">f</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">50</span></span>\text{ s} = 0.02\text{ s} implies \text{Reversal every } <span class=\"frac\"><span class=\"num\">T</span><span class=\"den\">2</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">100</span></span>\text{ s}"
-  }
-],
+    {
+      "name": "Field of a Straight Wire",
+      "formula": "B = <span class=\"frac\"><span class=\"num\">&mu;<sub>0</sub> &middot; I</span><span class=\"den\">2&pi; r</span></span> implies B &prop; <span class=\"frac\"><span class=\"num\">I</span><span class=\"den\">r</span></span> \n(B in Tesla, I in Amperes, r in metres)"
+    },
+    {
+      "name": "Field at Center of Circular Loop",
+      "formula": "B = <span class=\"frac\"><span class=\"num\">&mu;<sub>0</sub> &middot; n &middot; I</span><span class=\"den\">2 r</span></span> implies B &prop; n quad \text{(n = number of turns)}"
+    },
+    {
+      "name": "Field inside an Ideal Solenoid",
+      "formula": "B = &mu;<sub>0</sub> &middot; n &middot; I = &mu;<sub>0</sub> <span class=\"frac\"><span class=\"num\">N</span><span class=\"den\">L</span></span> I \n(Uniform and axial inside)"
+    },
+    {
+      "name": "Magnetic Force on Conductor",
+      "formula": "F = I &middot; L &middot; B &middot; sin&theta; quad (F_{\text{max}} = I L B \text{ when } &theta; = 90&deg;; quad F = 0 \text{ when } &theta; = 0&deg;)"
+    },
+    {
+      "name": "Magnetic Force on Moving Charge",
+      "formula": "F = q &middot; v &middot; B &middot; sin&theta; quad (\text{Lorentz Magnetic Force})"
+    },
+    {
+      "name": "Indian AC Frequency & Period",
+      "formula": "f = 50\text{ Hz} implies T = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">f</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">50</span></span>\text{ s} = 0.02\text{ s} implies \text{Reversal every } <span class=\"frac\"><span class=\"num\">T</span><span class=\"den\">2</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">100</span></span>\text{ s}"
+    }
+  ],
   "crux": [
-  "Electromagnetism: Moving charges generate magnetic fields; changing magnetic fields induce voltages.",
-  "Hand Rules: Right-Hand Thumb Rule for field direction; Fleming's Left-Hand Rule for motor force; Fleming's Right-Hand Rule for induced generator current.",
-  "Solenoids & Electromagnets: Solenoids act as bar magnets; soft iron core creates powerful switchable electromagnets.",
-  "Motor vs Generator: Motor turns electrical energy into mechanical rotation; Generator converts mechanical rotation into electricity via EMI.",
-  "Domestic Safety: 220 V 50 Hz AC; Live (220 V), Neutral (0 V), Earth (safety); Fuse and earthing prevent fire and fatal shocks."
-],
+    "Electromagnetism: Moving charges generate magnetic fields; changing magnetic fields induce voltages.",
+    "Hand Rules: Right-Hand Thumb Rule for field direction; Fleming's Left-Hand Rule for motor force; Fleming's Right-Hand Rule for induced generator current.",
+    "Solenoids & Electromagnets: Solenoids act as bar magnets; soft iron core creates powerful switchable electromagnets.",
+    "Motor vs Generator: Motor turns electrical energy into mechanical rotation; Generator converts mechanical rotation into electricity via EMI.",
+    "Domestic Safety: 220 V 50 Hz AC; Live (220 V), Neutral (0 V), Earth (safety); Fuse and earthing prevent fire and fatal shocks."
+  ],
   "summary": [
-  "Moving charges and electric currents generate surrounding magnetic fields (Oersted's discovery).",
-  "Magnetic field lines form continuous closed loops from North to South externally and South to North internally; they never intersect.",
-  "Concentric circular magnetic fields around straight conductors are governed by the Right-Hand Thumb Rule; solenoids create uniform internal axial fields.",
-  "A current-carrying conductor in a magnetic field experiences a force F = ILB sin&theta;, whose direction is governed by Fleming's Left-Hand Rule, forming the working principle of electric motors.",
-  "Electromagnetic induction generates an induced current when a conductor experiences changing magnetic flux; direction is given by Fleming's Right-Hand Rule, powering AC/DC generators.",
-  "Domestic wiring operates at 220 V, 50 Hz AC with Live, Neutral, and Earth wires; fuses and earthing safeguard human lives and domestic property."
-],
+    "Moving charges and electric currents generate surrounding magnetic fields (Oersted's discovery).",
+    "Magnetic field lines form continuous closed loops from North to South externally and South to North internally; they never intersect.",
+    "Concentric circular magnetic fields around straight conductors are governed by the Right-Hand Thumb Rule; solenoids create uniform internal axial fields.",
+    "A current-carrying conductor in a magnetic field experiences a force F = ILB sin&theta;, whose direction is governed by Fleming's Left-Hand Rule, forming the working principle of electric motors.",
+    "Electromagnetic induction generates an induced current when a conductor experiences changing magnetic flux; direction is given by Fleming's Right-Hand Rule, powering AC/DC generators.",
+    "Domestic wiring operates at 220 V, 50 Hz AC with Live, Neutral, and Earth wires; fuses and earthing safeguard human lives and domestic property."
+  ],
   "exercises": [
-  {
-    "id": "exercise",
-    "name": "Exercise Questions",
-    "questions": [
-      {
-        "id": "sp4-ex-q1",
-        "number": "1",
-        "question": "Which of the following correctly describes the magnetic field near a long straight wire?<br/><br/>(a) The field consists of straight lines perpendicular to the wire.<br/>(b) The field consists of straight lines parallel to the wire.<br/>(c) The field consists of radial lines originating from the wire.<br/>(d) The field consists of concentric circles centred on the wire.",
-        "solution": [
-          "Answer: <b>(d) The field consists of concentric circles centred on the wire.</b>",
-          "<br/><b>Scientific Reason:</b>",
-          "When electric current flows through a straight metallic wire, it creates a magnetic field whose lines of force form <b>concentric circles</b> lying in planes perpendicular to the wire, with their centers on the axis of the wire. The direction of these circular lines is given by the <b>Right-Hand Thumb Rule</b>."
-        ],
-        "answer": "(d) The field consists of concentric circles centred on the wire."
-      },
-      {
-        "id": "sp4-ex-q2",
-        "number": "2",
-        "question": "The phenomenon of electromagnetic induction is:<br/><br/>(a) the process of charging a body.<br/>(b) the process of generating magnetic field due to a current passing through a coil.<br/>(c) producing induced current in a coil due to relative motion between a magnet and the coil.<br/>(d) the process of rotating a coil of an electric motor.",
-        "solution": [
-          "Answer: <b>(c) producing induced current in a coil due to relative motion between a magnet and the coil.</b>",
-          "<br/><b>Scientific Reason:</b>",
-          "Electromagnetic induction, discovered by Michael Faraday in 1831, is the generation of an induced electromotive force (EMF) and induced electric current in a closed conductive circuit caused by a change in magnetic flux linked with the circuit (such as by relative motion between a magnet and the coil)."
-        ],
-        "answer": "(c) producing induced current in a coil due to relative motion between a magnet and the coil."
-      },
-      {
-        "id": "sp4-ex-q3",
-        "number": "3",
-        "question": "The device used for producing electric current is called a:<br/><br/>(a) generator.<br/>(b) galvanometer.<br/>(c) ammeter.<br/>(d) motor.",
-        "solution": [
-          "Answer: <b>(a) generator.</b>",
-          "<br/><b>Scientific Reason:</b>",
-          "&bull; An <b>electric generator</b> (or dynamo) converts mechanical rotational energy into electric current using electromagnetic induction.",
-          "&bull; A <i>galvanometer</i> detects the presence and direction of minute currents.",
-          "&bull; An <i>ammeter</i> measures current magnitude.",
-          "&bull; An <i>electric motor</i> consumes electric current to produce mechanical motion."
-        ],
-        "answer": "(a) generator."
-      },
-      {
-        "id": "sp4-ex-q4",
-        "number": "4",
-        "question": "The essential difference between an AC generator and a DC generator is that:<br/><br/>(a) AC generator has an electromagnet while a DC generator has permanent magnet.<br/>(b) DC generator will generate a higher voltage.<br/>(c) AC generator will generate a higher voltage.<br/>(d) AC generator has slip rings while the DC generator has a commutator.",
-        "solution": [
-          "Answer: <b>(d) AC generator has slip rings while the DC generator has a commutator.</b>",
-          "<br/><b>Scientific Reason:</b>",
-          "&bull; In an <b>AC generator</b>, the ends of the rotating armature coil are connected to two continuous, full circular <b>slip rings</b>, allowing the induced alternating current to flow into the external circuit with periodic reversal of polarity.",
-          "&bull; In a <b>DC generator</b>, the ends of the armature coil are connected to a <b>split-ring commutator</b>, which automatically reverses the external contact connections every half rotation, ensuring that current in the external circuit flows in only one direction (unidirectional DC)."
-        ],
-        "answer": "(d) AC generator has slip rings while the DC generator has a commutator."
-      },
-      {
-        "id": "sp4-ex-q5",
-        "number": "5",
-        "question": "At the time of short circuit, the current in the circuit:<br/><br/>(a) reduces substantially.<br/>(b) does not change.<br/>(c) increases heavily.<br/>(d) vary continuously.",
-        "solution": [
-          "Answer: <b>(c) increases heavily.</b>",
-          "<br/><b>Scientific Reason:</b>",
-          "A short-circuit occurs when the live wire and the neutral wire come into direct physical contact (due to faulty insulation or appliance damage). The electrical resistance of the circuit drops abruptly to nearly zero (R &approx; 0). By Ohm's Law (I = V / R), the electric current surges <b>enormously and heavily</b>, generating intense Joule heat that can cause sparks and electrical fires."
-        ],
-        "answer": "(c) increases heavily."
-      },
-      {
-        "id": "sp4-ex-q6",
-        "number": "6",
-        "question": "State whether the following statements are true or false:<br/>(a) An electric motor converts mechanical energy into electrical energy.<br/>(b) An electric generator works on the principle of electromagnetic induction.<br/>(c) The field at the centre of a long circular coil carrying current will be parallel straight lines.<br/>(d) A wire with a green insulation is usually the live wire of an electric supply.",
-        "solution": [
-          "<b>(a) False:</b> An electric motor converts <i>electrical energy into mechanical energy</i> (an electric generator converts mechanical energy into electrical energy).",
-          "<br/><b>(b) True:</b> An electric generator works strictly on the principle of <i>electromagnetic induction</i> discovered by Faraday.",
-          "<br/><b>(c) True:</b> At the center of a circular current-carrying coil, the magnetic field lines are uniform, parallel straight lines perpendicular to the plane of the coil.",
-          "<br/><b>(d) False:</b> The wire with green insulation is the <b>earth wire</b> (safety grounding). The live wire has red or brown insulation."
-        ],
-        "answer": "(a) False, (b) True, (c) True, (d) False."
-      },
-      {
-        "id": "sp4-ex-q7",
-        "number": "7",
-        "question": "List two methods of producing magnetic fields.",
-        "solution": [
-          "<b>Methods of Producing Magnetic Fields:</b>",
-          "1. <b>Using Permanent Magnets:</b> By using natural or artificial permanent magnets (such as a bar magnet, horseshoe magnet, or magnetic compass needle), which produce a persistent surrounding magnetic field.",
-          "2. <b>Using Electric Current:</b> By passing an electric current through a conductor &mdash; such as a straight wire, a circular coil, or a solenoid (electromagnet).",
-          "3. <b>Earth's Natural Magnetic Field:</b> The Earth itself behaves as a giant magnetic dipole due to convection currents of molten iron in its outer core."
-        ],
-        "answer": "(1) By using permanent magnets (e.g. bar magnets). (2) By passing an electric current through a conductor or solenoid."
-      },
-      {
-        "id": "sp4-ex-q8",
-        "number": "8",
-        "question": "How does a solenoid behave like a magnet? Can you determine the north and south poles of a current-carrying solenoid with the help of a bar magnet? Explain.",
-        "solution": [
-          "<b>Behavior of a Solenoid as a Magnet:</b>",
-          "1. A solenoid is a long coil of many circular turns of insulated copper wire.",
-          "2. When an electric current passes through the solenoid, magnetic field lines are produced around each turn. These individual fields add up vectorially, creating a resultant magnetic field pattern that is <b>virtually identical to that of a bar magnet</b>.",
-          "3. One end of the solenoid acts as a <b>North magnetic pole</b> (where field lines emerge) and the other end acts as a <b>South magnetic pole</b> (where field lines enter). Inside the solenoid, the field lines are parallel straight lines, indicating a completely uniform magnetic field.",
-          "<br/><b>Determining North and South Poles using a Bar Magnet:</b>",
-          "&bull; Suspend the current-carrying solenoid freely so that it can rotate horizontally (or bring a known bar magnet near one end of the solenoid).",
-          "&bull; Bring the marked <b>North pole</b> of a bar magnet near one end of the solenoid:",
-          "&bull; If this end of the solenoid is <b>repelled</b> by the North pole of the bar magnet, then that end is the <b>North pole</b> (since like poles repel).",
-          "&bull; If this end is <b>attracted</b>, then it is the <b>South pole</b> (since unlike poles attract).",
-          "<br/><i>(Alternatively, by the Clock Face Rule: Looking at the end of the coil, if current flows anticlockwise, it is a North pole; if clockwise, it is a South pole).</i>"
-        ],
-        "answer": "A solenoid produces a magnetic field identical to a bar magnet with N and S poles. By bringing the North pole of a bar magnet near its ends, repulsion identifies the North pole and attraction identifies the South pole."
-      },
-      {
-        "id": "sp4-ex-q9",
-        "number": "9",
-        "question": "When is the force experienced by a current-carrying conductor placed in a magnetic field largest?",
-        "solution": [
-          "<b>Scientific Principle:</b>",
-          "1. The mechanical force (F) acting on a conductor of length L carrying current I placed in a uniform magnetic field B is given by:",
-          "F = I &middot; L &middot; B &middot; sin&theta;",
-          "where &theta; is the angle between the direction of current and the direction of the magnetic field.",
-          "<br/>2. The value of sin&theta; reaches its maximum value of <b>1</b> when <b>&theta; = 90&deg;</b>.",
-          "<br/><b>Conclusion:</b>",
-          "The force experienced by the current-carrying conductor is <b>largest when the conductor is placed perpendicular (at 90&deg;) to the direction of the magnetic field</b>."
-        ],
-        "answer": "The force is largest when the direction of current is perpendicular (at 90°) to the direction of the magnetic field."
-      },
-      {
-        "id": "sp4-ex-q10",
-        "number": "10",
-        "question": "Imagine that you are sitting in a chamber with your back to one wall. An electron beam, moving horizontally from back wall towards the front wall, is deflected by a strong magnetic field to your right side. What is the direction of magnetic field?",
-        "solution": [
-          "<b>Step-by-Step Analysis using Fleming's Left-Hand Rule:</b>",
-          "1. <b>Direction of Motion of Electrons:</b> From back wall to front wall.",
-          "2. <b>Direction of Conventional Current (I):</b> Conventional current flows in the direction <i>opposite</i> to the flow of negative electrons. Therefore, current flows <b>from front wall to back wall</b>.",
-          "3. <b>Direction of Deflecting Force (F):</b> Towards your <b>right side</b>.",
-          "4. <b>Applying Fleming's Left-Hand Rule:</b>",
-          "&bull; Point your left-hand Thumb towards your right (Direction of Force).",
-          "&bull; Point your Middle finger towards the back wall (Direction of Current).",
-          "&bull; Your Forefinger will naturally point <b>vertically downwards</b>.",
-          "<br/><b>Conclusion:</b> The direction of the magnetic field is <b>vertically downwards (towards the floor)</b>."
-        ],
-        "answer": "The direction of the magnetic field is vertically downwards."
-      },
-      {
-        "id": "sp4-ex-q11",
-        "number": "11",
-        "question": "Draw a labelled diagram of an electric motor. Explain its principle and working. What is the function of a split ring in an electric motor?",
-        "solution": [
-          "<b>1. Principle of Electric Motor:</b>",
-          "An electric motor works on the <b>Magnetic Effect of Current (Motor Principle)</b>: When a rectangular current-carrying coil is placed in a magnetic field, it experiences equal and opposite mechanical forces on its parallel arms (according to <b>Fleming's Left-Hand Rule</b>), creating a torque that causes the coil to rotate continuously about its axis.",
-          "<br/><b>2. Main Components:</b>",
-          "&bull; <b>Armature Coil (ABCD):</b> A rectangular loop of insulated copper wire wound on a soft iron core.",
-          "&bull; <b>Strong Permanent Magnet:</b> Cylindrical concave poles (N and S) providing a radial magnetic field perpendicular to the coil arms.",
-          "&bull; <b>Split-Ring Commutator (P and Q):</b> Two halves of a metallic ring connected to the ends of the coil.",
-          "&bull; <b>Carbon Brushes (X and Y):</b> Stationary carbon blocks that press against the rotating split rings to supply current from the battery.",
-          "&bull; <b>DC Power Source:</b> A battery providing continuous direct current.",
-          "<br/><b>3. Working Mechanism:</b>",
-          "1. When current from the battery enters coil ABCD through brush X and split ring P, current flows from A to B in arm AB, and from C to D in arm CD.",
-          "2. By <b>Fleming's Left-Hand Rule</b>: Arm AB experiences a downward force, while arm CD experiences an upward force.",
-          "3. These forces form a couple that rotates the coil in an anticlockwise direction.",
-          "4. After half a rotation (180&deg;), split ring P comes into contact with brush Y and ring Q contacts brush X. This automatically reverses the direction of current in arms AB and CD.",
-          "5. Consequently, arm CD now experiences a downward force and arm AB experiences an upward force, keeping the coil rotating continuously in the same anticlockwise direction.",
-          "<br/><b>4. Function of the Split Ring (Commutator):</b>",
-          "The split ring acts as a <b>commutator</b>. Its vital function is to <b>reverse the direction of electric current</b> through the armature coil every half revolution (180&deg;), ensuring that the deflecting couple always acts in the same rotational sense and maintaining continuous unidirectional rotation."
-        ],
-        "answer": "Principle: A current-carrying coil in a magnetic field experiences a rotational torque (Fleming's Left-Hand Rule). Function of split ring: It acts as a commutator, reversing current direction in the coil every half rotation to sustain continuous unidirectional rotation."
-      },
-      {
-        "id": "sp4-ex-q12",
-        "number": "12",
-        "question": "Name some devices in which electric motors are used.",
-        "solution": [
-          "<b>Common Practical Applications of Electric Motors:</b>",
-          "Electric motors are used in a vast variety of domestic, commercial, and industrial appliances, including:",
-          "1. <b>Domestic Appliances:</b> Electric ceiling/table fans, washing machines, refrigerators, mixer-grinders, blenders, juicers, microwave turntable motors, and hair dryers.",
-          "2. <b>Pumping Systems:</b> Water lifting pumps, submersible pumps, and agricultural tube wells.",
-          "3. <b>Computer & Audio Equipment:</b> Computer cooling fans, hard disk drive spindles, CD/DVD players, and tape recorders.",
-          "4. <b>Transportation & Power Tools:</b> Electric vehicles (EVs), electric trains, electric drills, saws, and elevators/escalators."
-        ],
-        "answer": "Electric fans, refrigerators, washing machines, water pumps, mixer-grinders, electric drills, and electric vehicles."
-      },
-      {
-        "id": "sp4-ex-q13",
-        "number": "13",
-        "question": "A coil of insulated copper wire is connected to a galvanometer. What will happen if a bar magnet is (i) pushed into the coil, (ii) withdrawn from inside the coil, (iii) held stationary inside the coil?",
-        "solution": [
-          "<b>(i) When the Bar Magnet is Pushed into the Coil:</b>",
-          "&bull; <b>Observation:</b> The galvanometer needle shows an immediate momentary deflection in one direction (e.g. to the right) and returns to zero once motion stops.",
-          "&bull; <b>Reason:</b> Moving the magnet into the coil increases the magnetic flux linked with the coil, inducing an electric current by <b>electromagnetic induction</b>.",
-          "<br/><b>(ii) When the Bar Magnet is Withdrawn from Inside the Coil:</b>",
-          "&bull; <b>Observation:</b> The galvanometer needle shows a momentary deflection in the <b>opposite direction</b> (e.g. to the left) and returns to zero.",
-          "&bull; <b>Reason:</b> Withdrawing the magnet decreases the magnetic flux, inducing a current in the opposite direction.",
-          "<br/><b>(iii) When the Bar Magnet is Held Stationary Inside the Coil:</b>",
-          "&bull; <b>Observation:</b> The galvanometer needle shows <b>no deflection at all (remains strictly at zero)</b>.",
-          "&bull; <b>Reason:</b> Since the magnet is stationary, the magnetic flux linked with the coil is constant (rate of change of magnetic flux is zero: <span class=\"frac\"><span class=\"num\">d&Phi;</span><span class=\"den\">dt</span></span> = 0). No electromotive force or current is induced."
-        ],
-        "answer": "(i) Momentary deflection in one direction. (ii) Momentary deflection in the opposite direction. (iii) Zero deflection (no induced current)."
-      },
-      {
-        "id": "sp4-ex-q14",
-        "number": "14",
-        "question": "Two circular coils A and B are placed close to each other. If the current in the coil A is changed, will some current be induced in the coil B? Give reason.",
-        "solution": [
-          "<b>Answer:</b>",
-          "<b>Yes, an electric current will be induced in coil B.</b>",
-          "<br/><b>Scientific Reason:</b>",
-          "1. When electric current flows through coil A (primary coil), it sets up a magnetic field around itself, and some of these magnetic field lines pass through neighboring coil B (secondary coil).",
-          "2. When the current in coil A is changed (by adjusting a rheostat, or by switching the circuit ON or OFF), the strength of its magnetic field changes accordingly.",
-          "3. This causes a continuous change in the <b>magnetic flux linked with coil B</b>.",
-          "4. According to Faraday's law of <b>electromagnetic induction</b>, whenever magnetic flux linked with a closed coil changes, an induced electromotive force (EMF) and induced current are generated in coil B."
-        ],
-        "answer": "Yes, because changing current in coil A changes the magnetic flux linked with neighboring coil B, inducing a current in coil B by electromagnetic induction."
-      },
-      {
-        "id": "sp4-ex-q15",
-        "number": "15",
-        "question": "State the rule to determine the direction of a:<br/>(i) magnetic field produced around a straight conductor-carrying current,<br/>(ii) force experienced by a current-carrying straight conductor placed in a magnetic field which is perpendicular to it, and<br/>(iii) current induced in a coil due to its rotation in a magnetic field.",
-        "solution": [
-          "<b>(i) Direction of Magnetic Field Around a Straight Conductor:</b>",
-          "Determined by the <b>Right-Hand Thumb Rule (Maxwell's Corkscrew Rule)</b>:",
-          "Imagine holding the current-carrying straight conductor in your right hand such that your outstretched thumb points in the direction of electric current. Then, the direction in which your fingers curl around the conductor gives the direction of the magnetic field lines.",
-          "<br/><b>(ii) Direction of Force on a Current-Carrying Conductor in a Magnetic Field:</b>",
-          "Determined by <b>Fleming's Left-Hand Rule</b>:",
-          "Stretch the thumb, forefinger, and middle finger of your left hand mutually perpendicular to each other. If the <b>Forefinger</b> points in the direction of the magnetic <b>Field</b> and the <b>Middle finger</b> points in the direction of the <b>Current</b>, then the <b>Thumb</b> points in the direction of the mechanical <b>Force (Motion)</b> acting on the conductor.",
-          "<br/><b>(iii) Direction of Induced Current in a Rotating Coil:</b>",
-          "Determined by <b>Fleming's Right-Hand Rule</b>:",
-          "Stretch the thumb, forefinger, and middle finger of your right hand mutually perpendicular to each other. If the <b>Forefinger</b> points along the magnetic <b>Field</b> and the <b>Thumb</b> points along the direction of <b>Motion</b> of the conductor, then the <b>Middle finger</b> indicates the direction of the <b>Induced Current</b>."
-        ],
-        "answer": "(i) Right-Hand Thumb Rule. (ii) Fleming's Left-Hand Rule. (iii) Fleming's Right-Hand Rule."
-      },
-      {
-        "id": "sp4-ex-q16",
-        "number": "16",
-        "question": "Explain the underlying principle and working of an electric generator by drawing a labelled diagram. What is the function of brushes?",
-        "solution": [
-          "<b>1. Principle of Electric Generator:</b>",
-          "An electric generator works on the principle of <b>Electromagnetic Induction (Faraday's Law)</b>: When a closed rectangular coil of wire is rotated mechanically in a uniform magnetic field, the magnetic flux linked with the coil changes continuously, inducing an alternating electromotive force (EMF) and an electric current in the coil (direction given by <b>Fleming's Right-Hand Rule</b>).",
-          "<br/><b>2. Main Components:</b>",
-          "&bull; <b>Armature Coil (ABCD):</b> A rectangular loop of insulated copper wire wound on a soft iron core.",
-          "&bull; <b>Field Magnet:</b> Strong permanent magnet poles (N and S) providing a uniform magnetic field.",
-          "&bull; <b>Slip Rings (R<sub>1</sub> and R<sub>2</sub>):</b> Two complete circular bronze rings that rotate synchronously with the ends of the coil.",
-          "&bull; <b>Carbon Brushes (B<sub>1</sub> and B<sub>2</sub>):</b> Two stationary carbon blocks pressing lightly against the slip rings to collect current and feed it to the external load.",
-          "<br/><b>3. Working Mechanism:</b>",
-          "1. Suppose the armature coil ABCD is rotated clockwise in the magnetic field.",
-          "2. Arm AB moves upwards while arm CD moves downwards.",
-          "3. By <b>Fleming's Right-Hand Rule</b>, induced current flows along <b>A &rarr; B</b> in arm AB, and along <b>C &rarr; D</b> in arm CD. The current flows out into the external circuit via brush B<sub>2</sub> and returns through B<sub>1</sub>.",
-          "4. After half a rotation (180&deg;), arm CD moves upwards and arm AB moves downwards.",
-          "5. Applying Fleming's Right-Hand Rule again, the induced current in the coil reverses direction, flowing along <b>D &rarr; C &rarr; B &rarr; A</b>, leaving through brush B<sub>1</sub> and returning through B<sub>2</sub>.",
-          "6. Thus, after every half rotation, the direction of current in the external circuit alternates, producing an <b>Alternating Current (AC)</b>.",
-          "<br/><b>4. Function of Brushes:</b>",
-          "The stationary carbon brushes maintain a flexible sliding electrical contact with the rotating slip rings (or split rings in DC generators), smoothly conducting the generated electric current from the rotating armature into the external stationary circuit without tangling the connecting wires."
-        ],
-        "answer": "Principle: Electromagnetic Induction (Fleming's Right-Hand Rule). Function of brushes: Stationary carbon brushes maintain sliding contact with rotating slip rings to draw induced current into the external circuit without twisting wires."
-      },
-      {
-        "id": "sp4-ex-q17",
-        "number": "17",
-        "question": "When does an electric short circuit occur?",
-        "solution": [
-          "<b>Causes and Conditions for a Short Circuit:</b>",
-          "An electric short circuit occurs when the <b>live wire and the neutral wire come in direct physical contact</b> with each other.",
-          "<br/><b>This typically happens due to:</b>",
-          "1. <b>Damaged Insulation:</b> Faulty, cracked, or worn-out insulation on electric cables due to wear and tear or aging.",
-          "2. <b>Defective Appliances:</b> Internal component failure within an appliance where the live terminal touches the neutral terminal or metallic frame.",
-          "<br/><b>Consequences:</b>",
-          "When direct contact occurs, the resistance of the circuit drops abruptly to nearly zero (R &approx; 0). By Ohm's Law (I = V / R), a massive current surges through the circuit, generating extreme Joule heat (H = I<sup>2</sup>Rt), leading to melting of wires, sparks, and electrical fires."
-        ],
-        "answer": "A short circuit occurs when the live wire and neutral wire touch each other directly due to damaged insulation or appliance faults, causing resistance to drop to near zero and current to rise dangerously."
-      },
-      {
-        "id": "sp4-ex-q18",
-        "number": "18",
-        "question": "What is the function of an earth wire? Why is it necessary to earth metallic appliances?",
-        "solution": [
-          "<b>1. Function of the Earth Wire:</b>",
-          "The earth wire (covered with green or yellow insulation) is a low-resistance safety conductor connected to a copper plate buried deep in the moist earth near the building. Its function is to provide a <b>safe, near-zero resistance conduit for electric current</b> to flow directly into the ground in case of an insulation failure or electrical leakage.",
-          "<br/><b>2. Why It is Necessary to Earth Metallic Appliances:</b>",
-          "&bull; Metallic appliances (such as electric irons, refrigerators, toasters, washing machines, and geysers) have conductive metal outer casings.",
-          "&bull; If the internal live wire becomes loose and accidentally touches the metallic casing, the entire casing is energized to a dangerous potential of 220 V.",
-          "&bull; If an unearthed appliance is touched by a user, the current would flow through the user's body to the ground, causing a <b>fatal electric shock</b>.",
-          "&bull; <b>When the appliance is properly earthed:</b> The leakage current immediately flows through the low-resistance earth wire into the ground rather than through the high-resistance human body. This sudden surge of current also instantly blows the fuse or trips the MCB, completely disconnecting the faulty circuit and saving human life."
-        ],
-        "answer": "The earth wire provides a safe, low-resistance path for leakage current to ground. Earthing metallic appliances ensures that any leakage current flows harmlessly to earth and trips the fuse/MCB, preventing fatal electric shocks."
-      }
-    ]
-  },
-  {
-    "id": "in-text",
-    "name": "In-Text Questions",
-    "questions": [
-      {
-        "id": "it-1-q1",
-        "number": "1",
-        "question": "Why does a compass needle get deflected when brought near a bar magnet?",
-        "solution": [
-          "<b>Scientific Reason:</b>",
-          "1. A compass needle is itself a <b>tiny, freely suspended permanent bar magnet</b> with a North pole and a South pole.",
-          "2. When the compass is brought near another bar magnet, it enters the surrounding magnetic field of that bar magnet.",
-          "3. The magnetic field of the bar magnet exerts equal and opposite mechanical magnetic forces (a magnetic torque) on the poles of the compass needle &mdash; attracting the unlike pole and repelling the like pole.",
-          "4. This magnetic torque rotates and deflects the compass needle until it aligns tangentially along the local magnetic field line of the bar magnet."
-        ],
-        "answer": "Because a compass needle is a tiny magnet; the magnetic field of the bar magnet exerts a magnetic torque on its poles, deflecting it."
-      },
-      {
-        "id": "it-2-q1",
-        "number": "1",
-        "question": "Draw magnetic field lines around a bar magnet.",
-        "solution": [
-          "<b>Characteristics of Field Lines Around a Bar Magnet:</b>",
-          "&bull; <b>Outside the magnet:</b> Continuous smooth curved lines emerge from the <b>North pole (N)</b> and curve around to enter the <b>South pole (S)</b>.",
-          "&bull; <b>Inside the magnet:</b> The lines continue from the <b>South pole (S) to the North pole (N)</b>, completing continuous closed loops.",
-          "&bull; <b>At the Poles:</b> Field lines are most closely crowded together near the poles, indicating that the magnetic field strength is strongest at the poles.",
-          "&bull; <b>Farther Away:</b> The lines spread out, showing that field strength decreases with distance."
-        ],
-        "answer": "Magnetic field lines form continuous closed loops emerging from the North pole and entering the South pole outside, and travelling from South to North inside."
-      },
-      {
-        "id": "it-2-q2",
-        "number": "2",
-        "question": "List the properties of magnetic field lines.",
-        "solution": [
-          "<b>Fundamental Properties of Magnetic Field Lines:</b>",
-          "1. <b>Continuous Closed Loops:</b> Magnetic field lines emerge from the North pole and enter the South pole outside the magnet, and run from South to North inside the magnet, forming continuous unbroken loops.",
-          "2. <b>Direction of Field:</b> The tangent drawn to a magnetic field line at any point indicates the precise direction of the magnetic field vector at that point.",
-          "3. <b>Never Intersect:</b> Two magnetic field lines <b>never cross or intersect each other</b>. If they did, it would mean two different directions of magnetic field at the point of intersection, which is physically impossible.",
-          "4. <b>Degree of Closeness Indicates Strength:</b> The relative density (closeness) of field lines represents the magnitude of the magnetic field. Where lines are crowded (near poles), the field is strong; where lines are widely separated, the field is weak."
-        ],
-        "answer": "(1) Form closed continuous loops. (2) Tangent gives field direction. (3) Never intersect each other. (4) Crowded lines represent a stronger magnetic field."
-      },
-      {
-        "id": "it-2-q3",
-        "number": "3",
-        "question": "Why don't two magnetic field lines intersect each other?",
-        "solution": [
-          "<b>Scientific Proof:</b>",
-          "1. The direction of the magnetic field at any point is given by the <b>tangent drawn to the magnetic field line</b> at that point (which is the direction in which a compass needle points).",
-          "2. If two magnetic field lines were to intersect at a common point, there would be <b>two different tangents</b> at that single point of intersection.",
-          "3. This would imply that at the point of intersection, the magnetic field has <b>two different directions simultaneously</b>, and a compass needle would have to point in two directions at the same time, which is <b>physically impossible</b>.",
-          "4. Therefore, two magnetic field lines can never intersect."
-        ],
-        "answer": "Because if they intersected, the magnetic field at the point of intersection would have two different directions simultaneously, which is physically impossible."
-      },
-      {
-        "id": "it-3-q1",
-        "number": "1",
-        "question": "Consider a circular loop of wire lying in the plane of the table. Let the current pass through the loop clockwise. Apply the right-hand rule to find out the direction of the magnetic field inside and outside the loop.",
-        "solution": [
-          "<b>Analysis using the Right-Hand Thumb Rule:</b>",
-          "1. The circular wire lies horizontally on the table with current circulating in a <b>clockwise</b> direction.",
-          "<br/>2. <b>For the Right Side of the Loop:</b>",
-          "&bull; Current flows downwards towards you.",
-          "&bull; By pointing the right thumb in the direction of current, the curled fingers point <b>downwards into the table inside the loop</b> and curl upwards out of the table outside the loop.",
-          "<br/>3. <b>For the Left Side of the Loop:</b>",
-          "&bull; Current flows upwards away from you.",
-          "&bull; Pointing the right thumb upwards, the curled fingers again point <b>downwards into the table inside the loop</b> and curl upwards out of the table outside the loop.",
-          "<br/><b>Conclusion:</b>",
-          "&bull; <b>Inside the loop:</b> The magnetic field lines are directed <b>perpendicularly downwards into the plane of the table</b>.",
-          "&bull; <b>Outside the loop:</b> The magnetic field lines are directed <b>perpendicularly upwards out of the plane of the table</b>."
-        ],
-        "answer": "Inside the loop: Directed downwards into the table. Outside the loop: Directed upwards out of the table."
-      },
-      {
-        "id": "it-3-q2",
-        "number": "2",
-        "question": "The magnetic field in a given region is uniform. Draw a diagram to represent it.",
-        "solution": [
-          "<b>Representation of a Uniform Magnetic Field:</b>",
-          "A uniform magnetic field is a region where the magnetic field has the exact same magnitude and the exact same direction at every single point.",
-          "<br/><b>Graphical Representation:</b>",
-          "It is represented by a set of <b>equidistant, parallel straight lines pointing in the same direction</b> with arrows indicating field orientation (such as inside a long current-carrying solenoid)."
-        ],
-        "answer": "A uniform magnetic field is represented by a set of parallel, equidistant straight lines pointing in the same direction."
-      },
-      {
-        "id": "it-3-q3",
-        "number": "3",
-        "question": "Choose the correct option:<br/>The magnetic field inside a long straight solenoid-carrying current:<br/>(a) is zero.<br/>(b) decreases as we move towards its end.<br/>(c) increases as we move towards its end.<br/>(d) is the same at all points.",
-        "solution": [
-          "Answer: <b>(d) is the same at all points.</b>",
-          "<br/><b>Scientific Reason:</b>",
-          "Inside a long straight current-carrying solenoid, the magnetic field lines are parallel, straight, and equally spaced along the axis. This indicates that the magnetic field is <b>uniform and has the exact same magnitude and direction at all points inside the solenoid</b> (B = &mu;<sub>0</sub>nI)."
-        ],
-        "answer": "(d) is the same at all points."
-      },
-      {
-        "id": "it-4-q1",
-        "number": "1",
-        "question": "Which of the following property of a proton can change while it moves freely in a magnetic field? (There may be more than one correct answer)<br/>(a) mass<br/>(b) speed<br/>(c) velocity<br/>(d) momentum",
-        "solution": [
-          "Answer: <b>(c) velocity</b> and <b>(d) momentum</b>",
-          "<br/><b>Scientific Reason:</b>",
-          "1. When a charged proton enters a magnetic field, the magnetic Lorentz force (F = q &middot; v &times; B) always acts <b>perpendicular to the direction of motion (velocity)</b> of the proton.",
-          "2. Because force is perpendicular to velocity, work done on the proton is zero (W = F &middot; d &middot; cos 90&deg; = 0).",
-          "3. Therefore, the <b>speed</b> (magnitude of velocity) and kinetic energy remain constant.",
-          "4. However, the perpendicular force continuously changes the <b>direction of motion</b> of the proton.",
-          "5. Since velocity and momentum (p = m &middot; v) are vector quantities depending on direction, both the <b>velocity and momentum of the proton change continuously</b>."
-        ],
-        "answer": "(c) velocity and (d) momentum change (speed and mass remain constant)."
-      },
-      {
-        "id": "it-4-q2",
-        "number": "2",
-        "question": "In Activity 13.7, how do we think the displacement of rod AB will be affected if:<br/>(i) current in rod AB is increased;<br/>(ii) a stronger horse-shoe magnet is used; and<br/>(iii) length of the rod AB is increased?",
-        "solution": [
-          "<b>Formula for Magnetic Force:</b>",
-          "The force experienced by a current-carrying rod in a magnetic field is given by: F = I &middot; L &middot; B &middot; sin&theta;.",
-          "<br/><b>(i) If current (I) in rod AB is increased:</b>",
-          "Since F &prop; I, the magnetic force on the rod increases, causing the <b>displacement of rod AB to increase</b>.",
-          "<br/><b>(ii) If a stronger horse-shoe magnet (B) is used:</b>",
-          "Since F &prop; B, the magnetic field strength increases, so the force increases and the <b>displacement of rod AB increases</b>.",
-          "<br/><b>(iii) If length (L) of the rod AB is increased:</b>",
-          "Since F &prop; L, a longer conductor experiences greater magnetic force, so the <b>displacement of rod AB increases</b>."
-        ],
-        "answer": "In all three cases, the displacement of rod AB will increase (since F ∝ I, F ∝ B, and F ∝ L)."
-      },
-      {
-        "id": "it-4-q3",
-        "number": "3",
-        "question": "A positively-charged particle (alpha-particle) projected towards west is deflected towards north by a magnetic field. The direction of magnetic field is:<br/>(a) towards south<br/>(b) towards east<br/>(c) downward<br/>(d) upward",
-        "solution": [
-          "Answer: <b>(d) upward</b>",
-          "<br/><b>Step-by-Step Application of Fleming's Left-Hand Rule:</b>",
-          "1. <b>Direction of Current (I):</b> An alpha particle is positively charged. Conventional current flows in the direction of motion of positive charge &rarr; <b>Towards West</b>.",
-          "2. <b>Direction of Force (F):</b> Deflection is towards North &rarr; <b>Towards North</b>.",
-          "3. <b>Applying Fleming's Left-Hand Rule:</b>",
-          "&bull; Point the left-hand Thumb towards North (Force).",
-          "&bull; Point the Middle finger towards West (Current).",
-          "&bull; Your Forefinger will point <b>vertically upwards (out of the page)</b>.",
-          "<br/>Therefore, the magnetic field is directed <b>upward</b>."
-        ],
-        "answer": "(d) upward"
-      },
-      {
-        "id": "it-5-q1",
-        "number": "1",
-        "question": "State Fleming's left-hand rule.",
-        "solution": [
-          "<b>Fleming's Left-Hand Rule (Motor Rule):</b>",
-          "Stretch the <b>thumb, forefinger, and middle finger</b> of your left hand mutually perpendicular to one another such that:",
-          "&bull; The <b>Forefinger</b> points in the direction of the external magnetic <b>Field (B)</b>,",
-          "&bull; The <b>Middle finger</b> points in the direction of electric <b>Current (I)</b>,",
-          "&bull; Then the <b>Thumb</b> points in the direction of the mechanical <b>Force (F) or Motion</b> experienced by the conductor.",
-          "<br/><i>Mnemonic: <b>FBI</b> &mdash; Force (Thumb), B-Field (Forefinger), I-Current (Middle finger).</i>"
-        ],
-        "answer": "Stretch thumb, forefinger, and middle finger of left hand mutually perpendicular. Forefinger along Field, Middle finger along Current, then Thumb points along mechanical Force (Motion)."
-      },
-      {
-        "id": "it-5-q2",
-        "number": "2",
-        "question": "What is the principle of an electric motor?",
-        "solution": [
-          "<b>Principle of an Electric Motor:</b>",
-          "An electric motor works on the <b>Magnetic Effect of Electric Current</b>:",
-          "When a rectangular current-carrying coil is placed in a magnetic field, it experiences mechanical forces on its opposite parallel arms that are equal in magnitude and opposite in direction (governed by <b>Fleming's Left-Hand Rule</b>). These forces constitute a deflecting couple (torque) that rotates the coil continuously about its axis, converting electrical energy into mechanical rotational energy."
-        ],
-        "answer": "An electric motor operates on the principle that a current-carrying coil placed in a magnetic field experiences a rotational torque (Fleming's Left-Hand Rule)."
-      },
-      {
-        "id": "it-5-q3",
-        "number": "3",
-        "question": "What is the role of the split ring in an electric motor?",
-        "solution": [
-          "<b>Role of Split Ring (Commutator):</b>",
-          "1. The split ring acts as a <b>commutator</b> in a DC motor.",
-          "2. Its essential role is to <b>reverse the direction of electric current flowing through the armature coil after every half revolution (180&deg;)</b>.",
-          "3. Due to this periodic reversal of current, the downward force remains on the side moving downwards and the upward force remains on the side moving upwards.",
-          "4. This ensures that the deflecting torque acts in the <b>same rotational direction</b>, maintaining continuous, smooth unidirectional rotation of the motor."
-        ],
-        "answer": "The split ring acts as a commutator, reversing the direction of current in the coil every half rotation to sustain continuous unidirectional rotation."
-      },
-      {
-        "id": "it-6-q1",
-        "number": "1",
-        "question": "Explain different ways to induce current in a coil.",
-        "solution": [
-          "<b>Methods to Induce Electric Current in a Coil:</b>",
-          "By Faraday's law of electromagnetic induction, current is induced whenever the magnetic flux linked with a coil changes. This can be achieved by:",
-          "1. <b>Relative Motion Between Magnet and Coil:</b> Moving a bar magnet towards or away from a stationary coil, or moving the coil towards or away from a stationary magnet.",
-          "2. <b>Rotating a Coil in a Magnetic Field:</b> Rotating a conductive coil inside a uniform magnetic field (the fundamental principle of electric generators).",
-          "3. <b>Changing Current in a Neighboring Coil:</b> Placing a primary coil near a secondary coil and varying the current in the primary coil (by switching it ON/OFF or adjusting a rheostat)."
-        ],
-        "answer": "(1) By moving a magnet relative to a coil. (2) By rotating a coil in a magnetic field. (3) By changing the current in a nearby primary coil."
-      },
-      {
-        "id": "it-7-q1",
-        "number": "1",
-        "question": "State the principle of an electric generator.",
-        "solution": [
-          "<b>Principle of an Electric Generator:</b>",
-          "An electric generator works on the principle of <b>Electromagnetic Induction (Faraday's Law)</b>:",
-          "When a closed rectangular coil of wire is mechanically rotated inside a uniform magnetic field, the magnetic flux linked with the coil changes continuously. This induces an electromotive force (EMF) and an alternating electric current in the coil, converting mechanical rotational kinetic energy into electrical energy. The direction of induced current is determined by <b>Fleming's Right-Hand Rule</b>."
-        ],
-        "answer": "An electric generator works on the principle of electromagnetic induction: rotating a coil in a magnetic field changes magnetic flux, inducing electric current (Fleming's Right-Hand Rule)."
-      },
-      {
-        "id": "it-7-q2",
-        "number": "2",
-        "question": "Name some sources of direct current.",
-        "solution": [
-          "<b>Common Sources of Direct Current (DC):</b>",
-          "1. <b>Dry Cells & Electrochemical Batteries:</b> Alkaline batteries, car lead-acid batteries, lithium-ion rechargeable batteries in smartphones and laptops.",
-          "2. <b>Solar Photovoltaic (PV) Cells:</b> Solar panels convert solar radiation directly into DC electricity.",
-          "3. <b>DC Generators (Dynamos):</b> Generators equipped with split-ring commutators.",
-          "4. <b>AC to DC Rectifiers:</b> Power adapters and chargers that convert household AC into smooth DC."
-        ],
-        "answer": "Dry cells, electrochemical batteries, solar cells, and DC generators (dynamos)."
-      },
-      {
-        "id": "it-7-q3",
-        "number": "3",
-        "question": "Which sources produce alternating current?",
-        "solution": [
-          "<b>Sources Producing Alternating Current (AC):</b>",
-          "1. <b>AC Generators (Alternators):</b> Modern thermal, hydroelectric, and nuclear power plant generators.",
-          "2. <b>Bicycle Dynamos:</b> Small friction-driven alternators used to light bicycle headlamps.",
-          "3. <b>Wind Turbine Generators:</b> Rotational wind energy converted into AC electricity.",
-          "4. <b>Electronic Inverters:</b> Devices that convert battery DC into AC for domestic power backup."
-        ],
-        "answer": "AC generators (power station alternators), hydroelectric plants, wind turbine alternators, and electronic inverters."
-      },
-      {
-        "id": "it-7-q4",
-        "number": "4",
-        "question": "Choose the correct option:<br/>A rectangular coil of copper wires is rotated in a magnetic field. The direction of the induced current changes once in each:<br/>(a) two revolutions<br/>(b) one revolution<br/>(c) half revolution<br/>(d) one-fourth revolution",
-        "solution": [
-          "Answer: <b>(c) half revolution</b>",
-          "<br/><b>Scientific Reason:</b>",
-          "When a rectangular coil rotates in a magnetic field, one half of the coil moves upwards during the first 180&deg; and downwards during the next 180&deg;. By <b>Fleming's Right-Hand Rule</b>, the direction of the induced current reverses every time the relative motion of the coil arms reverses, which occurs exactly <b>once in every half revolution (180&deg;)</b>."
-        ],
-        "answer": "(c) half revolution"
-      },
-      {
-        "id": "it-8-q1",
-        "number": "1",
-        "question": "Name two safety measures commonly used in electric circuits and appliances.",
-        "solution": [
-          "<b>Two Essential Safety Measures:</b>",
-          "1. <b>Electric Fuse / Miniature Circuit Breaker (MCB):</b>",
-          "&bull; Connected in series with the live wire.",
-          "&bull; Protects circuits and appliances from damage due to overloading or short-circuiting by melting or tripping to break the circuit when current exceeds the safe rating.",
-          "<br/>2. <b>Earthing (Earth Wire):</b>",
-          "&bull; Connects the metallic outer body of high-power appliances (e.g. electric irons, refrigerators, geysers) directly to a metal plate buried deep in the ground.",
-          "&bull; Provides a low-resistance path to ground for any accidental electrical leakage, protecting users from fatal electric shocks."
-        ],
-        "answer": "(1) Electric fuse (or MCB) to prevent overloading and short-circuits. (2) Earthing of metallic appliances to prevent electric shocks."
-      },
-      {
-        "id": "it-8-q2",
-        "number": "2",
-        "question": "An electric oven of 2 kW power rating is operated in a domestic electric circuit (220 V) that has a current rating of 5 A. What result do you expect? Explain.",
-        "solution": [
-          "<b>Given Data:</b>",
-          "Power rating of electric oven, P = 2 kW = 2000 W",
-          "Domestic supply voltage, V = 220 V",
-          "Current rating of the circuit fuse, I<sub>safe</sub> = 5 A",
-          "<br/><b>Calculation of Current Drawn by the Oven:</b>",
-          "P = V &times; I &rArr; I = <span class=\"frac\"><span class=\"num\">P</span><span class=\"den\">V</span></span>",
-          "I = <span class=\"frac\"><span class=\"num\">2000</span><span class=\"den\">220</span></span> = <span class=\"frac\"><span class=\"num\">100</span><span class=\"den\">11</span></span> &approx; <b>9.09 A</b>",
-          "<br/><b>Conclusion & Result:</b>",
-          "1. The current drawn by the oven (9.09 A) is <b>significantly higher than the safe current rating of the circuit (5 A)</b>.",
-          "2. This condition constitutes <b>overloading</b>.",
-          "3. Due to the high current, excessive Joule heating will take place in the fuse wire.",
-          "4. The <b>electric fuse will melt and blow out (or MCB will trip)</b>, immediately breaking the circuit and disconnecting the power supply to prevent damage and fire hazard."
-        ],
-        "answer": "The oven draws 9.09 A, which exceeds the 5 A circuit rating. This overloading will cause the fuse wire to melt and break the circuit, turning off the power."
-      },
-      {
-        "id": "it-8-q3",
-        "number": "3",
-        "question": "What precaution should be taken to avoid the overloading of domestic electric circuits?",
-        "solution": [
-          "<b>Essential Precautions to Avoid Overloading:</b>",
-          "1. <b>Avoid Connecting Too Many Appliances to a Single Socket:</b> Never plug multiple high-power electrical appliances simultaneously into one multi-plug socket.",
-          "2. <b>Use Dedicated High-Current Circuits:</b> Operate high-power appliances (such as air conditioners, geysers, room heaters, electric ovens) on dedicated 15 A circuits rather than regular 5 A lighting circuits.",
-          "3. <b>Ensure Proper Fuse / MCB Ratings:</b> Always use standard fuses or Miniature Circuit Breakers with appropriate current ratings matched to the wiring capacity.",
-          "4. <b>Maintain Good Quality Insulation:</b> Periodically inspect electrical wires and replace old, damaged, or brittle insulation to avoid short-circuits.",
-          "5. <b>Avoid Simultaneous Operation:</b> Avoid running several heavy electrical appliances (heater, iron, geyser, microwave) at the exact same time."
-        ],
-        "answer": "Precautions: (i) Do not connect too many appliances to a single socket. (ii) Do not operate multiple high-power appliances simultaneously. (iii) Use proper fuse/MCB ratings. (iv) Use wires with high-quality insulation."
-      }
-    ]
-  }
-],
+    {
+      "id": "exercise",
+      "name": "Exercise Questions",
+      "questions": [
+        {
+          "id": "sp4-ex-q1",
+          "number": "1",
+          "question": "Which of the following correctly describes the magnetic field near a long straight wire?<br/><br/>(a) The field consists of straight lines perpendicular to the wire.<br/>(b) The field consists of straight lines parallel to the wire.<br/>(c) The field consists of radial lines originating from the wire.<br/>(d) The field consists of concentric circles centred on the wire.",
+          "solution": [
+            "Answer: <b>(d) The field consists of concentric circles centred on the wire.</b>",
+            "<br/><b>Scientific Reason:</b>",
+            "When electric current flows through a straight metallic wire, it creates a magnetic field whose lines of force form <b>concentric circles</b> lying in planes perpendicular to the wire, with their centers on the axis of the wire. The direction of these circular lines is given by the <b>Right-Hand Thumb Rule</b>."
+          ],
+          "answer": "(d) The field consists of concentric circles centred on the wire."
+        },
+        {
+          "id": "sp4-ex-q2",
+          "number": "2",
+          "question": "The phenomenon of electromagnetic induction is:<br/><br/>(a) the process of charging a body.<br/>(b) the process of generating magnetic field due to a current passing through a coil.<br/>(c) producing induced current in a coil due to relative motion between a magnet and the coil.<br/>(d) the process of rotating a coil of an electric motor.",
+          "solution": [
+            "Answer: <b>(c) producing induced current in a coil due to relative motion between a magnet and the coil.</b>",
+            "<br/><b>Scientific Reason:</b>",
+            "Electromagnetic induction, discovered by Michael Faraday in 1831, is the generation of an induced electromotive force (EMF) and induced electric current in a closed conductive circuit caused by a change in magnetic flux linked with the circuit (such as by relative motion between a magnet and the coil)."
+          ],
+          "answer": "(c) producing induced current in a coil due to relative motion between a magnet and the coil."
+        },
+        {
+          "id": "sp4-ex-q3",
+          "number": "3",
+          "question": "The device used for producing electric current is called a:<br/><br/>(a) generator.<br/>(b) galvanometer.<br/>(c) ammeter.<br/>(d) motor.",
+          "solution": [
+            "Answer: <b>(a) generator.</b>",
+            "<br/><b>Scientific Reason:</b>",
+            "&bull; An <b>electric generator</b> (or dynamo) converts mechanical rotational energy into electric current using electromagnetic induction.",
+            "&bull; A <i>galvanometer</i> detects the presence and direction of minute currents.",
+            "&bull; An <i>ammeter</i> measures current magnitude.",
+            "&bull; An <i>electric motor</i> consumes electric current to produce mechanical motion."
+          ],
+          "answer": "(a) generator."
+        },
+        {
+          "id": "sp4-ex-q4",
+          "number": "4",
+          "question": "The essential difference between an AC generator and a DC generator is that:<br/><br/>(a) AC generator has an electromagnet while a DC generator has permanent magnet.<br/>(b) DC generator will generate a higher voltage.<br/>(c) AC generator will generate a higher voltage.<br/>(d) AC generator has slip rings while the DC generator has a commutator.",
+          "solution": [
+            "Answer: <b>(d) AC generator has slip rings while the DC generator has a commutator.</b>",
+            "<br/><b>Scientific Reason:</b>",
+            "&bull; In an <b>AC generator</b>, the ends of the rotating armature coil are connected to two continuous, full circular <b>slip rings</b>, allowing the induced alternating current to flow into the external circuit with periodic reversal of polarity.",
+            "&bull; In a <b>DC generator</b>, the ends of the armature coil are connected to a <b>split-ring commutator</b>, which automatically reverses the external contact connections every half rotation, ensuring that current in the external circuit flows in only one direction (unidirectional DC)."
+          ],
+          "answer": "(d) AC generator has slip rings while the DC generator has a commutator."
+        },
+        {
+          "id": "sp4-ex-q5",
+          "number": "5",
+          "question": "At the time of short circuit, the current in the circuit:<br/><br/>(a) reduces substantially.<br/>(b) does not change.<br/>(c) increases heavily.<br/>(d) vary continuously.",
+          "solution": [
+            "Answer: <b>(c) increases heavily.</b>",
+            "<br/><b>Scientific Reason:</b>",
+            "A short-circuit occurs when the live wire and the neutral wire come into direct physical contact (due to faulty insulation or appliance damage). The electrical resistance of the circuit drops abruptly to nearly zero (R &approx; 0). By Ohm's Law (I = V / R), the electric current surges <b>enormously and heavily</b>, generating intense Joule heat that can cause sparks and electrical fires."
+          ],
+          "answer": "(c) increases heavily."
+        },
+        {
+          "id": "sp4-ex-q6",
+          "number": "6",
+          "question": "State whether the following statements are true or false:<br/>(a) An electric motor converts mechanical energy into electrical energy.<br/>(b) An electric generator works on the principle of electromagnetic induction.<br/>(c) The field at the centre of a long circular coil carrying current will be parallel straight lines.<br/>(d) A wire with a green insulation is usually the live wire of an electric supply.",
+          "solution": [
+            "<b>(a) False:</b> An electric motor converts <i>electrical energy into mechanical energy</i> (an electric generator converts mechanical energy into electrical energy).",
+            "<br/><b>(b) True:</b> An electric generator works strictly on the principle of <i>electromagnetic induction</i> discovered by Faraday.",
+            "<br/><b>(c) True:</b> At the center of a circular current-carrying coil, the magnetic field lines are uniform, parallel straight lines perpendicular to the plane of the coil.",
+            "<br/><b>(d) False:</b> The wire with green insulation is the <b>earth wire</b> (safety grounding). The live wire has red or brown insulation."
+          ],
+          "answer": "(a) False, (b) True, (c) True, (d) False."
+        },
+        {
+          "id": "sp4-ex-q7",
+          "number": "7",
+          "question": "List two methods of producing magnetic fields.",
+          "solution": [
+            "<b>Methods of Producing Magnetic Fields:</b>",
+            "1. <b>Using Permanent Magnets:</b> By using natural or artificial permanent magnets (such as a bar magnet, horseshoe magnet, or magnetic compass needle), which produce a persistent surrounding magnetic field.",
+            "2. <b>Using Electric Current:</b> By passing an electric current through a conductor &mdash; such as a straight wire, a circular coil, or a solenoid (electromagnet).",
+            "3. <b>Earth's Natural Magnetic Field:</b> The Earth itself behaves as a giant magnetic dipole due to convection currents of molten iron in its outer core."
+          ],
+          "answer": "(1) By using permanent magnets (e.g. bar magnets). (2) By passing an electric current through a conductor or solenoid."
+        },
+        {
+          "id": "sp4-ex-q8",
+          "number": "8",
+          "question": "How does a solenoid behave like a magnet? Can you determine the north and south poles of a current-carrying solenoid with the help of a bar magnet? Explain.",
+          "solution": [
+            "<b>Behavior of a Solenoid as a Magnet:</b>",
+            "1. A solenoid is a long coil of many circular turns of insulated copper wire.",
+            "2. When an electric current passes through the solenoid, magnetic field lines are produced around each turn. These individual fields add up vectorially, creating a resultant magnetic field pattern that is <b>virtually identical to that of a bar magnet</b>.",
+            "3. One end of the solenoid acts as a <b>North magnetic pole</b> (where field lines emerge) and the other end acts as a <b>South magnetic pole</b> (where field lines enter). Inside the solenoid, the field lines are parallel straight lines, indicating a completely uniform magnetic field.",
+            "<br/><b>Determining North and South Poles using a Bar Magnet:</b>",
+            "&bull; Suspend the current-carrying solenoid freely so that it can rotate horizontally (or bring a known bar magnet near one end of the solenoid).",
+            "&bull; Bring the marked <b>North pole</b> of a bar magnet near one end of the solenoid:",
+            "&bull; If this end of the solenoid is <b>repelled</b> by the North pole of the bar magnet, then that end is the <b>North pole</b> (since like poles repel).",
+            "&bull; If this end is <b>attracted</b>, then it is the <b>South pole</b> (since unlike poles attract).",
+            "<br/><i>(Alternatively, by the Clock Face Rule: Looking at the end of the coil, if current flows anticlockwise, it is a North pole; if clockwise, it is a South pole).</i>"
+          ],
+          "answer": "A solenoid produces a magnetic field identical to a bar magnet with N and S poles. By bringing the North pole of a bar magnet near its ends, repulsion identifies the North pole and attraction identifies the South pole."
+        },
+        {
+          "id": "sp4-ex-q9",
+          "number": "9",
+          "question": "When is the force experienced by a current-carrying conductor placed in a magnetic field largest?",
+          "solution": [
+            "<b>Scientific Principle:</b>",
+            "1. The mechanical force (F) acting on a conductor of length L carrying current I placed in a uniform magnetic field B is given by:",
+            "F = I &middot; L &middot; B &middot; sin&theta;",
+            "where &theta; is the angle between the direction of current and the direction of the magnetic field.",
+            "<br/>2. The value of sin&theta; reaches its maximum value of <b>1</b> when <b>&theta; = 90&deg;</b>.",
+            "<br/><b>Conclusion:</b>",
+            "The force experienced by the current-carrying conductor is <b>largest when the conductor is placed perpendicular (at 90&deg;) to the direction of the magnetic field</b>."
+          ],
+          "answer": "The force is largest when the direction of current is perpendicular (at 90°) to the direction of the magnetic field."
+        },
+        {
+          "id": "sp4-ex-q10",
+          "number": "10",
+          "question": "Imagine that you are sitting in a chamber with your back to one wall. An electron beam, moving horizontally from back wall towards the front wall, is deflected by a strong magnetic field to your right side. What is the direction of magnetic field?",
+          "solution": [
+            "<b>Step-by-Step Analysis using Fleming's Left-Hand Rule:</b>",
+            "1. <b>Direction of Motion of Electrons:</b> From back wall to front wall.",
+            "2. <b>Direction of Conventional Current (I):</b> Conventional current flows in the direction <i>opposite</i> to the flow of negative electrons. Therefore, current flows <b>from front wall to back wall</b>.",
+            "3. <b>Direction of Deflecting Force (F):</b> Towards your <b>right side</b>.",
+            "4. <b>Applying Fleming's Left-Hand Rule:</b>",
+            "&bull; Point your left-hand Thumb towards your right (Direction of Force).",
+            "&bull; Point your Middle finger towards the back wall (Direction of Current).",
+            "&bull; Your Forefinger will naturally point <b>vertically downwards</b>.",
+            "<br/><b>Conclusion:</b> The direction of the magnetic field is <b>vertically downwards (towards the floor)</b>."
+          ],
+          "answer": "The direction of the magnetic field is vertically downwards."
+        },
+        {
+          "id": "sp4-ex-q11",
+          "number": "11",
+          "question": "Draw a labelled diagram of an electric motor. Explain its principle and working. What is the function of a split ring in an electric motor?",
+          "solution": [
+            "<b>1. Principle of Electric Motor:</b>",
+            "An electric motor works on the <b>Magnetic Effect of Current (Motor Principle)</b>: When a rectangular current-carrying coil is placed in a magnetic field, it experiences equal and opposite mechanical forces on its parallel arms (according to <b>Fleming's Left-Hand Rule</b>), creating a torque that causes the coil to rotate continuously about its axis.",
+            "<br/><b>2. Main Components:</b>",
+            "&bull; <b>Armature Coil (ABCD):</b> A rectangular loop of insulated copper wire wound on a soft iron core.",
+            "&bull; <b>Strong Permanent Magnet:</b> Cylindrical concave poles (N and S) providing a radial magnetic field perpendicular to the coil arms.",
+            "&bull; <b>Split-Ring Commutator (P and Q):</b> Two halves of a metallic ring connected to the ends of the coil.",
+            "&bull; <b>Carbon Brushes (X and Y):</b> Stationary carbon blocks that press against the rotating split rings to supply current from the battery.",
+            "&bull; <b>DC Power Source:</b> A battery providing continuous direct current.",
+            "<br/><b>3. Working Mechanism:</b>",
+            "1. When current from the battery enters coil ABCD through brush X and split ring P, current flows from A to B in arm AB, and from C to D in arm CD.",
+            "2. By <b>Fleming's Left-Hand Rule</b>: Arm AB experiences a downward force, while arm CD experiences an upward force.",
+            "3. These forces form a couple that rotates the coil in an anticlockwise direction.",
+            "4. After half a rotation (180&deg;), split ring P comes into contact with brush Y and ring Q contacts brush X. This automatically reverses the direction of current in arms AB and CD.",
+            "5. Consequently, arm CD now experiences a downward force and arm AB experiences an upward force, keeping the coil rotating continuously in the same anticlockwise direction.",
+            "<br/><b>4. Function of the Split Ring (Commutator):</b>",
+            "The split ring acts as a <b>commutator</b>. Its vital function is to <b>reverse the direction of electric current</b> through the armature coil every half revolution (180&deg;), ensuring that the deflecting couple always acts in the same rotational sense and maintaining continuous unidirectional rotation."
+          ],
+          "answer": "Principle: A current-carrying coil in a magnetic field experiences a rotational torque (Fleming's Left-Hand Rule). Function of split ring: It acts as a commutator, reversing current direction in the coil every half rotation to sustain continuous unidirectional rotation."
+        },
+        {
+          "id": "sp4-ex-q12",
+          "number": "12",
+          "question": "Name some devices in which electric motors are used.",
+          "solution": [
+            "<b>Common Practical Applications of Electric Motors:</b>",
+            "Electric motors are used in a vast variety of domestic, commercial, and industrial appliances, including:",
+            "1. <b>Domestic Appliances:</b> Electric ceiling/table fans, washing machines, refrigerators, mixer-grinders, blenders, juicers, microwave turntable motors, and hair dryers.",
+            "2. <b>Pumping Systems:</b> Water lifting pumps, submersible pumps, and agricultural tube wells.",
+            "3. <b>Computer & Audio Equipment:</b> Computer cooling fans, hard disk drive spindles, CD/DVD players, and tape recorders.",
+            "4. <b>Transportation & Power Tools:</b> Electric vehicles (EVs), electric trains, electric drills, saws, and elevators/escalators."
+          ],
+          "answer": "Electric fans, refrigerators, washing machines, water pumps, mixer-grinders, electric drills, and electric vehicles."
+        },
+        {
+          "id": "sp4-ex-q13",
+          "number": "13",
+          "question": "A coil of insulated copper wire is connected to a galvanometer. What will happen if a bar magnet is (i) pushed into the coil, (ii) withdrawn from inside the coil, (iii) held stationary inside the coil?",
+          "solution": [
+            "<b>(i) When the Bar Magnet is Pushed into the Coil:</b>",
+            "&bull; <b>Observation:</b> The galvanometer needle shows an immediate momentary deflection in one direction (e.g. to the right) and returns to zero once motion stops.",
+            "&bull; <b>Reason:</b> Moving the magnet into the coil increases the magnetic flux linked with the coil, inducing an electric current by <b>electromagnetic induction</b>.",
+            "<br/><b>(ii) When the Bar Magnet is Withdrawn from Inside the Coil:</b>",
+            "&bull; <b>Observation:</b> The galvanometer needle shows a momentary deflection in the <b>opposite direction</b> (e.g. to the left) and returns to zero.",
+            "&bull; <b>Reason:</b> Withdrawing the magnet decreases the magnetic flux, inducing a current in the opposite direction.",
+            "<br/><b>(iii) When the Bar Magnet is Held Stationary Inside the Coil:</b>",
+            "&bull; <b>Observation:</b> The galvanometer needle shows <b>no deflection at all (remains strictly at zero)</b>.",
+            "&bull; <b>Reason:</b> Since the magnet is stationary, the magnetic flux linked with the coil is constant (rate of change of magnetic flux is zero: <span class=\"frac\"><span class=\"num\">d&Phi;</span><span class=\"den\">dt</span></span> = 0). No electromotive force or current is induced."
+          ],
+          "answer": "(i) Momentary deflection in one direction. (ii) Momentary deflection in the opposite direction. (iii) Zero deflection (no induced current)."
+        },
+        {
+          "id": "sp4-ex-q14",
+          "number": "14",
+          "question": "Two circular coils A and B are placed close to each other. If the current in the coil A is changed, will some current be induced in the coil B? Give reason.",
+          "solution": [
+            "<b>Answer:</b>",
+            "<b>Yes, an electric current will be induced in coil B.</b>",
+            "<br/><b>Scientific Reason:</b>",
+            "1. When electric current flows through coil A (primary coil), it sets up a magnetic field around itself, and some of these magnetic field lines pass through neighboring coil B (secondary coil).",
+            "2. When the current in coil A is changed (by adjusting a rheostat, or by switching the circuit ON or OFF), the strength of its magnetic field changes accordingly.",
+            "3. This causes a continuous change in the <b>magnetic flux linked with coil B</b>.",
+            "4. According to Faraday's law of <b>electromagnetic induction</b>, whenever magnetic flux linked with a closed coil changes, an induced electromotive force (EMF) and induced current are generated in coil B."
+          ],
+          "answer": "Yes, because changing current in coil A changes the magnetic flux linked with neighboring coil B, inducing a current in coil B by electromagnetic induction."
+        },
+        {
+          "id": "sp4-ex-q15",
+          "number": "15",
+          "question": "State the rule to determine the direction of a:<br/>(i) magnetic field produced around a straight conductor-carrying current,<br/>(ii) force experienced by a current-carrying straight conductor placed in a magnetic field which is perpendicular to it, and<br/>(iii) current induced in a coil due to its rotation in a magnetic field.",
+          "solution": [
+            "<b>(i) Direction of Magnetic Field Around a Straight Conductor:</b>",
+            "Determined by the <b>Right-Hand Thumb Rule (Maxwell's Corkscrew Rule)</b>:",
+            "Imagine holding the current-carrying straight conductor in your right hand such that your outstretched thumb points in the direction of electric current. Then, the direction in which your fingers curl around the conductor gives the direction of the magnetic field lines.",
+            "<br/><b>(ii) Direction of Force on a Current-Carrying Conductor in a Magnetic Field:</b>",
+            "Determined by <b>Fleming's Left-Hand Rule</b>:",
+            "Stretch the thumb, forefinger, and middle finger of your left hand mutually perpendicular to each other. If the <b>Forefinger</b> points in the direction of the magnetic <b>Field</b> and the <b>Middle finger</b> points in the direction of the <b>Current</b>, then the <b>Thumb</b> points in the direction of the mechanical <b>Force (Motion)</b> acting on the conductor.",
+            "<br/><b>(iii) Direction of Induced Current in a Rotating Coil:</b>",
+            "Determined by <b>Fleming's Right-Hand Rule</b>:",
+            "Stretch the thumb, forefinger, and middle finger of your right hand mutually perpendicular to each other. If the <b>Forefinger</b> points along the magnetic <b>Field</b> and the <b>Thumb</b> points along the direction of <b>Motion</b> of the conductor, then the <b>Middle finger</b> indicates the direction of the <b>Induced Current</b>."
+          ],
+          "answer": "(i) Right-Hand Thumb Rule. (ii) Fleming's Left-Hand Rule. (iii) Fleming's Right-Hand Rule."
+        },
+        {
+          "id": "sp4-ex-q16",
+          "number": "16",
+          "question": "Explain the underlying principle and working of an electric generator by drawing a labelled diagram. What is the function of brushes?",
+          "solution": [
+            "<b>1. Principle of Electric Generator:</b>",
+            "An electric generator works on the principle of <b>Electromagnetic Induction (Faraday's Law)</b>: When a closed rectangular coil of wire is rotated mechanically in a uniform magnetic field, the magnetic flux linked with the coil changes continuously, inducing an alternating electromotive force (EMF) and an electric current in the coil (direction given by <b>Fleming's Right-Hand Rule</b>).",
+            "<br/><b>2. Main Components:</b>",
+            "&bull; <b>Armature Coil (ABCD):</b> A rectangular loop of insulated copper wire wound on a soft iron core.",
+            "&bull; <b>Field Magnet:</b> Strong permanent magnet poles (N and S) providing a uniform magnetic field.",
+            "&bull; <b>Slip Rings (R<sub>1</sub> and R<sub>2</sub>):</b> Two complete circular bronze rings that rotate synchronously with the ends of the coil.",
+            "&bull; <b>Carbon Brushes (B<sub>1</sub> and B<sub>2</sub>):</b> Two stationary carbon blocks pressing lightly against the slip rings to collect current and feed it to the external load.",
+            "<br/><b>3. Working Mechanism:</b>",
+            "1. Suppose the armature coil ABCD is rotated clockwise in the magnetic field.",
+            "2. Arm AB moves upwards while arm CD moves downwards.",
+            "3. By <b>Fleming's Right-Hand Rule</b>, induced current flows along <b>A &rarr; B</b> in arm AB, and along <b>C &rarr; D</b> in arm CD. The current flows out into the external circuit via brush B<sub>2</sub> and returns through B<sub>1</sub>.",
+            "4. After half a rotation (180&deg;), arm CD moves upwards and arm AB moves downwards.",
+            "5. Applying Fleming's Right-Hand Rule again, the induced current in the coil reverses direction, flowing along <b>D &rarr; C &rarr; B &rarr; A</b>, leaving through brush B<sub>1</sub> and returning through B<sub>2</sub>.",
+            "6. Thus, after every half rotation, the direction of current in the external circuit alternates, producing an <b>Alternating Current (AC)</b>.",
+            "<br/><b>4. Function of Brushes:</b>",
+            "The stationary carbon brushes maintain a flexible sliding electrical contact with the rotating slip rings (or split rings in DC generators), smoothly conducting the generated electric current from the rotating armature into the external stationary circuit without tangling the connecting wires."
+          ],
+          "answer": "Principle: Electromagnetic Induction (Fleming's Right-Hand Rule). Function of brushes: Stationary carbon brushes maintain sliding contact with rotating slip rings to draw induced current into the external circuit without twisting wires."
+        },
+        {
+          "id": "sp4-ex-q17",
+          "number": "17",
+          "question": "When does an electric short circuit occur?",
+          "solution": [
+            "<b>Causes and Conditions for a Short Circuit:</b>",
+            "An electric short circuit occurs when the <b>live wire and the neutral wire come in direct physical contact</b> with each other.",
+            "<br/><b>This typically happens due to:</b>",
+            "1. <b>Damaged Insulation:</b> Faulty, cracked, or worn-out insulation on electric cables due to wear and tear or aging.",
+            "2. <b>Defective Appliances:</b> Internal component failure within an appliance where the live terminal touches the neutral terminal or metallic frame.",
+            "<br/><b>Consequences:</b>",
+            "When direct contact occurs, the resistance of the circuit drops abruptly to nearly zero (R &approx; 0). By Ohm's Law (I = V / R), a massive current surges through the circuit, generating extreme Joule heat (H = I<sup>2</sup>Rt), leading to melting of wires, sparks, and electrical fires."
+          ],
+          "answer": "A short circuit occurs when the live wire and neutral wire touch each other directly due to damaged insulation or appliance faults, causing resistance to drop to near zero and current to rise dangerously."
+        },
+        {
+          "id": "sp4-ex-q18",
+          "number": "18",
+          "question": "What is the function of an earth wire? Why is it necessary to earth metallic appliances?",
+          "solution": [
+            "<b>1. Function of the Earth Wire:</b>",
+            "The earth wire (covered with green or yellow insulation) is a low-resistance safety conductor connected to a copper plate buried deep in the moist earth near the building. Its function is to provide a <b>safe, near-zero resistance conduit for electric current</b> to flow directly into the ground in case of an insulation failure or electrical leakage.",
+            "<br/><b>2. Why It is Necessary to Earth Metallic Appliances:</b>",
+            "&bull; Metallic appliances (such as electric irons, refrigerators, toasters, washing machines, and geysers) have conductive metal outer casings.",
+            "&bull; If the internal live wire becomes loose and accidentally touches the metallic casing, the entire casing is energized to a dangerous potential of 220 V.",
+            "&bull; If an unearthed appliance is touched by a user, the current would flow through the user's body to the ground, causing a <b>fatal electric shock</b>.",
+            "&bull; <b>When the appliance is properly earthed:</b> The leakage current immediately flows through the low-resistance earth wire into the ground rather than through the high-resistance human body. This sudden surge of current also instantly blows the fuse or trips the MCB, completely disconnecting the faulty circuit and saving human life."
+          ],
+          "answer": "The earth wire provides a safe, low-resistance path for leakage current to ground. Earthing metallic appliances ensures that any leakage current flows harmlessly to earth and trips the fuse/MCB, preventing fatal electric shocks."
+        }
+      ]
+    },
+    {
+      "id": "in-text",
+      "name": "In-Text Questions",
+      "questions": [
+        {
+          "id": "it-1-q1",
+          "number": "1",
+          "question": "Why does a compass needle get deflected when brought near a bar magnet?",
+          "solution": [
+            "<b>Scientific Reason:</b>",
+            "1. A compass needle is itself a <b>tiny, freely suspended permanent bar magnet</b> with a North pole and a South pole.",
+            "2. When the compass is brought near another bar magnet, it enters the surrounding magnetic field of that bar magnet.",
+            "3. The magnetic field of the bar magnet exerts equal and opposite mechanical magnetic forces (a magnetic torque) on the poles of the compass needle &mdash; attracting the unlike pole and repelling the like pole.",
+            "4. This magnetic torque rotates and deflects the compass needle until it aligns tangentially along the local magnetic field line of the bar magnet."
+          ],
+          "answer": "Because a compass needle is a tiny magnet; the magnetic field of the bar magnet exerts a magnetic torque on its poles, deflecting it."
+        },
+        {
+          "id": "it-2-q1",
+          "number": "1",
+          "question": "Draw magnetic field lines around a bar magnet.",
+          "solution": [
+            "<b>Characteristics of Field Lines Around a Bar Magnet:</b>",
+            "&bull; <b>Outside the magnet:</b> Continuous smooth curved lines emerge from the <b>North pole (N)</b> and curve around to enter the <b>South pole (S)</b>.",
+            "&bull; <b>Inside the magnet:</b> The lines continue from the <b>South pole (S) to the North pole (N)</b>, completing continuous closed loops.",
+            "&bull; <b>At the Poles:</b> Field lines are most closely crowded together near the poles, indicating that the magnetic field strength is strongest at the poles.",
+            "&bull; <b>Farther Away:</b> The lines spread out, showing that field strength decreases with distance."
+          ],
+          "answer": "Magnetic field lines form continuous closed loops emerging from the North pole and entering the South pole outside, and travelling from South to North inside."
+        },
+        {
+          "id": "it-2-q2",
+          "number": "2",
+          "question": "List the properties of magnetic field lines.",
+          "solution": [
+            "<b>Fundamental Properties of Magnetic Field Lines:</b>",
+            "1. <b>Continuous Closed Loops:</b> Magnetic field lines emerge from the North pole and enter the South pole outside the magnet, and run from South to North inside the magnet, forming continuous unbroken loops.",
+            "2. <b>Direction of Field:</b> The tangent drawn to a magnetic field line at any point indicates the precise direction of the magnetic field vector at that point.",
+            "3. <b>Never Intersect:</b> Two magnetic field lines <b>never cross or intersect each other</b>. If they did, it would mean two different directions of magnetic field at the point of intersection, which is physically impossible.",
+            "4. <b>Degree of Closeness Indicates Strength:</b> The relative density (closeness) of field lines represents the magnitude of the magnetic field. Where lines are crowded (near poles), the field is strong; where lines are widely separated, the field is weak."
+          ],
+          "answer": "(1) Form closed continuous loops. (2) Tangent gives field direction. (3) Never intersect each other. (4) Crowded lines represent a stronger magnetic field."
+        },
+        {
+          "id": "it-2-q3",
+          "number": "3",
+          "question": "Why don't two magnetic field lines intersect each other?",
+          "solution": [
+            "<b>Scientific Proof:</b>",
+            "1. The direction of the magnetic field at any point is given by the <b>tangent drawn to the magnetic field line</b> at that point (which is the direction in which a compass needle points).",
+            "2. If two magnetic field lines were to intersect at a common point, there would be <b>two different tangents</b> at that single point of intersection.",
+            "3. This would imply that at the point of intersection, the magnetic field has <b>two different directions simultaneously</b>, and a compass needle would have to point in two directions at the same time, which is <b>physically impossible</b>.",
+            "4. Therefore, two magnetic field lines can never intersect."
+          ],
+          "answer": "Because if they intersected, the magnetic field at the point of intersection would have two different directions simultaneously, which is physically impossible."
+        },
+        {
+          "id": "it-3-q1",
+          "number": "1",
+          "question": "Consider a circular loop of wire lying in the plane of the table. Let the current pass through the loop clockwise. Apply the right-hand rule to find out the direction of the magnetic field inside and outside the loop.",
+          "solution": [
+            "<b>Analysis using the Right-Hand Thumb Rule:</b>",
+            "1. The circular wire lies horizontally on the table with current circulating in a <b>clockwise</b> direction.",
+            "<br/>2. <b>For the Right Side of the Loop:</b>",
+            "&bull; Current flows downwards towards you.",
+            "&bull; By pointing the right thumb in the direction of current, the curled fingers point <b>downwards into the table inside the loop</b> and curl upwards out of the table outside the loop.",
+            "<br/>3. <b>For the Left Side of the Loop:</b>",
+            "&bull; Current flows upwards away from you.",
+            "&bull; Pointing the right thumb upwards, the curled fingers again point <b>downwards into the table inside the loop</b> and curl upwards out of the table outside the loop.",
+            "<br/><b>Conclusion:</b>",
+            "&bull; <b>Inside the loop:</b> The magnetic field lines are directed <b>perpendicularly downwards into the plane of the table</b>.",
+            "&bull; <b>Outside the loop:</b> The magnetic field lines are directed <b>perpendicularly upwards out of the plane of the table</b>."
+          ],
+          "answer": "Inside the loop: Directed downwards into the table. Outside the loop: Directed upwards out of the table."
+        },
+        {
+          "id": "it-3-q2",
+          "number": "2",
+          "question": "The magnetic field in a given region is uniform. Draw a diagram to represent it.",
+          "solution": [
+            "<b>Representation of a Uniform Magnetic Field:</b>",
+            "A uniform magnetic field is a region where the magnetic field has the exact same magnitude and the exact same direction at every single point.",
+            "<br/><b>Graphical Representation:</b>",
+            "It is represented by a set of <b>equidistant, parallel straight lines pointing in the same direction</b> with arrows indicating field orientation (such as inside a long current-carrying solenoid)."
+          ],
+          "answer": "A uniform magnetic field is represented by a set of parallel, equidistant straight lines pointing in the same direction."
+        },
+        {
+          "id": "it-3-q3",
+          "number": "3",
+          "question": "Choose the correct option:<br/>The magnetic field inside a long straight solenoid-carrying current:<br/>(a) is zero.<br/>(b) decreases as we move towards its end.<br/>(c) increases as we move towards its end.<br/>(d) is the same at all points.",
+          "solution": [
+            "Answer: <b>(d) is the same at all points.</b>",
+            "<br/><b>Scientific Reason:</b>",
+            "Inside a long straight current-carrying solenoid, the magnetic field lines are parallel, straight, and equally spaced along the axis. This indicates that the magnetic field is <b>uniform and has the exact same magnitude and direction at all points inside the solenoid</b> (B = &mu;<sub>0</sub>nI)."
+          ],
+          "answer": "(d) is the same at all points."
+        },
+        {
+          "id": "it-4-q1",
+          "number": "1",
+          "question": "Which of the following property of a proton can change while it moves freely in a magnetic field? (There may be more than one correct answer)<br/>(a) mass<br/>(b) speed<br/>(c) velocity<br/>(d) momentum",
+          "solution": [
+            "Answer: <b>(c) velocity</b> and <b>(d) momentum</b>",
+            "<br/><b>Scientific Reason:</b>",
+            "1. When a charged proton enters a magnetic field, the magnetic Lorentz force (F = q &middot; v &times; B) always acts <b>perpendicular to the direction of motion (velocity)</b> of the proton.",
+            "2. Because force is perpendicular to velocity, work done on the proton is zero (W = F &middot; d &middot; cos 90&deg; = 0).",
+            "3. Therefore, the <b>speed</b> (magnitude of velocity) and kinetic energy remain constant.",
+            "4. However, the perpendicular force continuously changes the <b>direction of motion</b> of the proton.",
+            "5. Since velocity and momentum (p = m &middot; v) are vector quantities depending on direction, both the <b>velocity and momentum of the proton change continuously</b>."
+          ],
+          "answer": "(c) velocity and (d) momentum change (speed and mass remain constant)."
+        },
+        {
+          "id": "it-4-q2",
+          "number": "2",
+          "question": "In Activity 13.7, how do we think the displacement of rod AB will be affected if:<br/>(i) current in rod AB is increased;<br/>(ii) a stronger horse-shoe magnet is used; and<br/>(iii) length of the rod AB is increased?",
+          "solution": [
+            "<b>Formula for Magnetic Force:</b>",
+            "The force experienced by a current-carrying rod in a magnetic field is given by: F = I &middot; L &middot; B &middot; sin&theta;.",
+            "<br/><b>(i) If current (I) in rod AB is increased:</b>",
+            "Since F &prop; I, the magnetic force on the rod increases, causing the <b>displacement of rod AB to increase</b>.",
+            "<br/><b>(ii) If a stronger horse-shoe magnet (B) is used:</b>",
+            "Since F &prop; B, the magnetic field strength increases, so the force increases and the <b>displacement of rod AB increases</b>.",
+            "<br/><b>(iii) If length (L) of the rod AB is increased:</b>",
+            "Since F &prop; L, a longer conductor experiences greater magnetic force, so the <b>displacement of rod AB increases</b>."
+          ],
+          "answer": "In all three cases, the displacement of rod AB will increase (since F ∝ I, F ∝ B, and F ∝ L)."
+        },
+        {
+          "id": "it-4-q3",
+          "number": "3",
+          "question": "A positively-charged particle (alpha-particle) projected towards west is deflected towards north by a magnetic field. The direction of magnetic field is:<br/>(a) towards south<br/>(b) towards east<br/>(c) downward<br/>(d) upward",
+          "solution": [
+            "Answer: <b>(d) upward</b>",
+            "<br/><b>Step-by-Step Application of Fleming's Left-Hand Rule:</b>",
+            "1. <b>Direction of Current (I):</b> An alpha particle is positively charged. Conventional current flows in the direction of motion of positive charge &rarr; <b>Towards West</b>.",
+            "2. <b>Direction of Force (F):</b> Deflection is towards North &rarr; <b>Towards North</b>.",
+            "3. <b>Applying Fleming's Left-Hand Rule:</b>",
+            "&bull; Point the left-hand Thumb towards North (Force).",
+            "&bull; Point the Middle finger towards West (Current).",
+            "&bull; Your Forefinger will point <b>vertically upwards (out of the page)</b>.",
+            "<br/>Therefore, the magnetic field is directed <b>upward</b>."
+          ],
+          "answer": "(d) upward"
+        },
+        {
+          "id": "it-5-q1",
+          "number": "1",
+          "question": "State Fleming's left-hand rule.",
+          "solution": [
+            "<b>Fleming's Left-Hand Rule (Motor Rule):</b>",
+            "Stretch the <b>thumb, forefinger, and middle finger</b> of your left hand mutually perpendicular to one another such that:",
+            "&bull; The <b>Forefinger</b> points in the direction of the external magnetic <b>Field (B)</b>,",
+            "&bull; The <b>Middle finger</b> points in the direction of electric <b>Current (I)</b>,",
+            "&bull; Then the <b>Thumb</b> points in the direction of the mechanical <b>Force (F) or Motion</b> experienced by the conductor.",
+            "<br/><i>Mnemonic: <b>FBI</b> &mdash; Force (Thumb), B-Field (Forefinger), I-Current (Middle finger).</i>"
+          ],
+          "answer": "Stretch thumb, forefinger, and middle finger of left hand mutually perpendicular. Forefinger along Field, Middle finger along Current, then Thumb points along mechanical Force (Motion)."
+        },
+        {
+          "id": "it-5-q2",
+          "number": "2",
+          "question": "What is the principle of an electric motor?",
+          "solution": [
+            "<b>Principle of an Electric Motor:</b>",
+            "An electric motor works on the <b>Magnetic Effect of Electric Current</b>:",
+            "When a rectangular current-carrying coil is placed in a magnetic field, it experiences mechanical forces on its opposite parallel arms that are equal in magnitude and opposite in direction (governed by <b>Fleming's Left-Hand Rule</b>). These forces constitute a deflecting couple (torque) that rotates the coil continuously about its axis, converting electrical energy into mechanical rotational energy."
+          ],
+          "answer": "An electric motor operates on the principle that a current-carrying coil placed in a magnetic field experiences a rotational torque (Fleming's Left-Hand Rule)."
+        },
+        {
+          "id": "it-5-q3",
+          "number": "3",
+          "question": "What is the role of the split ring in an electric motor?",
+          "solution": [
+            "<b>Role of Split Ring (Commutator):</b>",
+            "1. The split ring acts as a <b>commutator</b> in a DC motor.",
+            "2. Its essential role is to <b>reverse the direction of electric current flowing through the armature coil after every half revolution (180&deg;)</b>.",
+            "3. Due to this periodic reversal of current, the downward force remains on the side moving downwards and the upward force remains on the side moving upwards.",
+            "4. This ensures that the deflecting torque acts in the <b>same rotational direction</b>, maintaining continuous, smooth unidirectional rotation of the motor."
+          ],
+          "answer": "The split ring acts as a commutator, reversing the direction of current in the coil every half rotation to sustain continuous unidirectional rotation."
+        },
+        {
+          "id": "it-6-q1",
+          "number": "1",
+          "question": "Explain different ways to induce current in a coil.",
+          "solution": [
+            "<b>Methods to Induce Electric Current in a Coil:</b>",
+            "By Faraday's law of electromagnetic induction, current is induced whenever the magnetic flux linked with a coil changes. This can be achieved by:",
+            "1. <b>Relative Motion Between Magnet and Coil:</b> Moving a bar magnet towards or away from a stationary coil, or moving the coil towards or away from a stationary magnet.",
+            "2. <b>Rotating a Coil in a Magnetic Field:</b> Rotating a conductive coil inside a uniform magnetic field (the fundamental principle of electric generators).",
+            "3. <b>Changing Current in a Neighboring Coil:</b> Placing a primary coil near a secondary coil and varying the current in the primary coil (by switching it ON/OFF or adjusting a rheostat)."
+          ],
+          "answer": "(1) By moving a magnet relative to a coil. (2) By rotating a coil in a magnetic field. (3) By changing the current in a nearby primary coil."
+        },
+        {
+          "id": "it-7-q1",
+          "number": "1",
+          "question": "State the principle of an electric generator.",
+          "solution": [
+            "<b>Principle of an Electric Generator:</b>",
+            "An electric generator works on the principle of <b>Electromagnetic Induction (Faraday's Law)</b>:",
+            "When a closed rectangular coil of wire is mechanically rotated inside a uniform magnetic field, the magnetic flux linked with the coil changes continuously. This induces an electromotive force (EMF) and an alternating electric current in the coil, converting mechanical rotational kinetic energy into electrical energy. The direction of induced current is determined by <b>Fleming's Right-Hand Rule</b>."
+          ],
+          "answer": "An electric generator works on the principle of electromagnetic induction: rotating a coil in a magnetic field changes magnetic flux, inducing electric current (Fleming's Right-Hand Rule)."
+        },
+        {
+          "id": "it-7-q2",
+          "number": "2",
+          "question": "Name some sources of direct current.",
+          "solution": [
+            "<b>Common Sources of Direct Current (DC):</b>",
+            "1. <b>Dry Cells & Electrochemical Batteries:</b> Alkaline batteries, car lead-acid batteries, lithium-ion rechargeable batteries in smartphones and laptops.",
+            "2. <b>Solar Photovoltaic (PV) Cells:</b> Solar panels convert solar radiation directly into DC electricity.",
+            "3. <b>DC Generators (Dynamos):</b> Generators equipped with split-ring commutators.",
+            "4. <b>AC to DC Rectifiers:</b> Power adapters and chargers that convert household AC into smooth DC."
+          ],
+          "answer": "Dry cells, electrochemical batteries, solar cells, and DC generators (dynamos)."
+        },
+        {
+          "id": "it-7-q3",
+          "number": "3",
+          "question": "Which sources produce alternating current?",
+          "solution": [
+            "<b>Sources Producing Alternating Current (AC):</b>",
+            "1. <b>AC Generators (Alternators):</b> Modern thermal, hydroelectric, and nuclear power plant generators.",
+            "2. <b>Bicycle Dynamos:</b> Small friction-driven alternators used to light bicycle headlamps.",
+            "3. <b>Wind Turbine Generators:</b> Rotational wind energy converted into AC electricity.",
+            "4. <b>Electronic Inverters:</b> Devices that convert battery DC into AC for domestic power backup."
+          ],
+          "answer": "AC generators (power station alternators), hydroelectric plants, wind turbine alternators, and electronic inverters."
+        },
+        {
+          "id": "it-7-q4",
+          "number": "4",
+          "question": "Choose the correct option:<br/>A rectangular coil of copper wires is rotated in a magnetic field. The direction of the induced current changes once in each:<br/>(a) two revolutions<br/>(b) one revolution<br/>(c) half revolution<br/>(d) one-fourth revolution",
+          "solution": [
+            "Answer: <b>(c) half revolution</b>",
+            "<br/><b>Scientific Reason:</b>",
+            "When a rectangular coil rotates in a magnetic field, one half of the coil moves upwards during the first 180&deg; and downwards during the next 180&deg;. By <b>Fleming's Right-Hand Rule</b>, the direction of the induced current reverses every time the relative motion of the coil arms reverses, which occurs exactly <b>once in every half revolution (180&deg;)</b>."
+          ],
+          "answer": "(c) half revolution"
+        },
+        {
+          "id": "it-8-q1",
+          "number": "1",
+          "question": "Name two safety measures commonly used in electric circuits and appliances.",
+          "solution": [
+            "<b>Two Essential Safety Measures:</b>",
+            "1. <b>Electric Fuse / Miniature Circuit Breaker (MCB):</b>",
+            "&bull; Connected in series with the live wire.",
+            "&bull; Protects circuits and appliances from damage due to overloading or short-circuiting by melting or tripping to break the circuit when current exceeds the safe rating.",
+            "<br/>2. <b>Earthing (Earth Wire):</b>",
+            "&bull; Connects the metallic outer body of high-power appliances (e.g. electric irons, refrigerators, geysers) directly to a metal plate buried deep in the ground.",
+            "&bull; Provides a low-resistance path to ground for any accidental electrical leakage, protecting users from fatal electric shocks."
+          ],
+          "answer": "(1) Electric fuse (or MCB) to prevent overloading and short-circuits. (2) Earthing of metallic appliances to prevent electric shocks."
+        },
+        {
+          "id": "it-8-q2",
+          "number": "2",
+          "question": "An electric oven of 2 kW power rating is operated in a domestic electric circuit (220 V) that has a current rating of 5 A. What result do you expect? Explain.",
+          "solution": [
+            "<b>Given Data:</b>",
+            "Power rating of electric oven, P = 2 kW = 2000 W",
+            "Domestic supply voltage, V = 220 V",
+            "Current rating of the circuit fuse, I<sub>safe</sub> = 5 A",
+            "<br/><b>Calculation of Current Drawn by the Oven:</b>",
+            "P = V &times; I &rArr; I = <span class=\"frac\"><span class=\"num\">P</span><span class=\"den\">V</span></span>",
+            "I = <span class=\"frac\"><span class=\"num\">2000</span><span class=\"den\">220</span></span> = <span class=\"frac\"><span class=\"num\">100</span><span class=\"den\">11</span></span> &approx; <b>9.09 A</b>",
+            "<br/><b>Conclusion & Result:</b>",
+            "1. The current drawn by the oven (9.09 A) is <b>significantly higher than the safe current rating of the circuit (5 A)</b>.",
+            "2. This condition constitutes <b>overloading</b>.",
+            "3. Due to the high current, excessive Joule heating will take place in the fuse wire.",
+            "4. The <b>electric fuse will melt and blow out (or MCB will trip)</b>, immediately breaking the circuit and disconnecting the power supply to prevent damage and fire hazard."
+          ],
+          "answer": "The oven draws 9.09 A, which exceeds the 5 A circuit rating. This overloading will cause the fuse wire to melt and break the circuit, turning off the power."
+        },
+        {
+          "id": "it-8-q3",
+          "number": "3",
+          "question": "What precaution should be taken to avoid the overloading of domestic electric circuits?",
+          "solution": [
+            "<b>Essential Precautions to Avoid Overloading:</b>",
+            "1. <b>Avoid Connecting Too Many Appliances to a Single Socket:</b> Never plug multiple high-power electrical appliances simultaneously into one multi-plug socket.",
+            "2. <b>Use Dedicated High-Current Circuits:</b> Operate high-power appliances (such as air conditioners, geysers, room heaters, electric ovens) on dedicated 15 A circuits rather than regular 5 A lighting circuits.",
+            "3. <b>Ensure Proper Fuse / MCB Ratings:</b> Always use standard fuses or Miniature Circuit Breakers with appropriate current ratings matched to the wiring capacity.",
+            "4. <b>Maintain Good Quality Insulation:</b> Periodically inspect electrical wires and replace old, damaged, or brittle insulation to avoid short-circuits.",
+            "5. <b>Avoid Simultaneous Operation:</b> Avoid running several heavy electrical appliances (heater, iron, geyser, microwave) at the exact same time."
+          ],
+          "answer": "Precautions: (i) Do not connect too many appliances to a single socket. (ii) Do not operate multiple high-power appliances simultaneously. (iii) Use proper fuse/MCB ratings. (iv) Use wires with high-quality insulation."
+        }
+      ]
+    }
+  ],
   "mcqs": [
-  {
-    "id": "sp4-mcq-1",
-    "question": "Which of the following correctly describes the magnetic field lines near a long straight current-carrying wire?",
-    "options": [
-      "(a) Radial straight lines originating from the wire",
-      "(b) Straight lines parallel to the wire",
-      "(c) Concentric circular field lines centered on the wire",
-      "(d) Parabolic field lines diverging outward"
-    ],
-    "correctAnswer": "c"
-  },
-  {
-    "id": "sp4-mcq-2",
-    "question": "The phenomenon of electromagnetic induction discovered by Michael Faraday is defined as:",
-    "options": [
-      "(a) The process of charging a body by friction",
-      "(b) The process of generating magnetic fields due to static charges",
-      "(c) Producing induced current in a coil due to relative motion between a magnet and the coil",
-      "(d) The process of rotating an electric motor armature"
-    ],
-    "correctAnswer": "c"
-  },
-  {
-    "id": "sp4-mcq-3",
-    "question": "The electrical device used for producing electric current using the principle of electromagnetic induction is called a:",
-    "options": [
-      "(a) Generator (Dynamo)",
-      "(b) Galvanometer",
-      "(c) Ammeter",
-      "(d) Electric Motor"
-    ],
-    "correctAnswer": "a"
-  },
-  {
-    "id": "sp4-mcq-4",
-    "question": "The essential structural difference between an AC generator and a DC generator is that:",
-    "options": [
-      "(a) AC generator has an electromagnet while a DC generator has a permanent magnet",
-      "(b) DC generator creates a much higher output voltage",
-      "(c) AC generator has slip rings while a DC generator has a split-ring commutator",
-      "(d) AC generator has no rotating armature"
-    ],
-    "correctAnswer": "c"
-  },
-  {
-    "id": "sp4-mcq-5",
-    "question": "At the moment when a short-circuit occurs in a domestic electrical circuit, the current flowing in the circuit:",
-    "options": [
-      "(a) Reduces substantially",
-      "(b) Does not change at all",
-      "(c) Increases enormously and dangerously",
-      "(d) Fluctuates continuously between positive and negative values"
-    ],
-    "correctAnswer": "c"
-  },
-  {
-    "id": "sp4-mcq-6",
-    "question": "The magnetic field inside a long straight current-carrying solenoid is:",
-    "options": [
-      "(a) Zero at all points",
-      "(b) Decreases as we move towards its ends",
-      "(c) Increases as we move towards its ends",
-      "(d) Is uniform and identical at all points inside"
-    ],
-    "correctAnswer": "d"
-  },
-  {
-    "id": "sp4-mcq-7",
-    "question": "A positively charged particle (alpha particle) projected towards the west is deflected towards the north by a magnetic field. The direction of the magnetic field is:",
-    "options": [
-      "(a) Towards south",
-      "(b) Towards east",
-      "(c) Downward",
-      "(d) Upward"
-    ],
-    "correctAnswer": "d"
-  },
-  {
-    "id": "sp4-mcq-8",
-    "question": "What is the frequency of the alternating current (AC) supplied to households in India?",
-    "options": [
-      "(a) 0 Hz (DC)",
-      "(b) 50 Hz",
-      "(c) 60 Hz",
-      "(d) 100 Hz"
-    ],
-    "correctAnswer": "b"
-  },
-  {
-    "id": "sp4-mcq-9",
-    "question": "Which rule is applied to determine the direction of the mechanical force experienced by a current-carrying conductor in a magnetic field?",
-    "options": [
-      "(a) Right-Hand Thumb Rule",
-      "(b) Fleming's Left-Hand Rule",
-      "(c) Fleming's Right-Hand Rule",
-      "(d) Clock Face Rule"
-    ],
-    "correctAnswer": "b"
-  },
-  {
-    "id": "sp4-mcq-10",
-    "question": "The function of the earth wire in domestic electrical installations is to:",
-    "options": [
-      "(a) Complete the return path for electric current",
-      "(b) Increase the voltage of the appliance",
-      "(c) Provide a low-resistance path to ground for leakage current to prevent electric shocks",
-      "(d) Protect against high voltage surges from lightning"
-    ],
-    "correctAnswer": "c"
-  }
-]
+    {
+      "id": "sp4-mcq-1",
+      "question": "Which of the following correctly describes the magnetic field lines near a long straight current-carrying wire?",
+      "options": [
+        "(a) Radial straight lines originating from the wire",
+        "(b) Straight lines parallel to the wire",
+        "(c) Concentric circular field lines centered on the wire",
+        "(d) Parabolic field lines diverging outward"
+      ],
+      "correctAnswer": "c"
+    },
+    {
+      "id": "sp4-mcq-2",
+      "question": "The phenomenon of electromagnetic induction discovered by Michael Faraday is defined as:",
+      "options": [
+        "(a) The process of charging a body by friction",
+        "(b) The process of generating magnetic fields due to static charges",
+        "(c) Producing induced current in a coil due to relative motion between a magnet and the coil",
+        "(d) The process of rotating an electric motor armature"
+      ],
+      "correctAnswer": "c"
+    },
+    {
+      "id": "sp4-mcq-3",
+      "question": "The electrical device used for producing electric current using the principle of electromagnetic induction is called a:",
+      "options": [
+        "(a) Generator (Dynamo)",
+        "(b) Galvanometer",
+        "(c) Ammeter",
+        "(d) Electric Motor"
+      ],
+      "correctAnswer": "a"
+    },
+    {
+      "id": "sp4-mcq-4",
+      "question": "The essential structural difference between an AC generator and a DC generator is that:",
+      "options": [
+        "(a) AC generator has an electromagnet while a DC generator has a permanent magnet",
+        "(b) DC generator creates a much higher output voltage",
+        "(c) AC generator has slip rings while a DC generator has a split-ring commutator",
+        "(d) AC generator has no rotating armature"
+      ],
+      "correctAnswer": "c"
+    },
+    {
+      "id": "sp4-mcq-5",
+      "question": "At the moment when a short-circuit occurs in a domestic electrical circuit, the current flowing in the circuit:",
+      "options": [
+        "(a) Reduces substantially",
+        "(b) Does not change at all",
+        "(c) Increases enormously and dangerously",
+        "(d) Fluctuates continuously between positive and negative values"
+      ],
+      "correctAnswer": "c"
+    },
+    {
+      "id": "sp4-mcq-6",
+      "question": "The magnetic field inside a long straight current-carrying solenoid is:",
+      "options": [
+        "(a) Zero at all points",
+        "(b) Decreases as we move towards its ends",
+        "(c) Increases as we move towards its ends",
+        "(d) Is uniform and identical at all points inside"
+      ],
+      "correctAnswer": "d"
+    },
+    {
+      "id": "sp4-mcq-7",
+      "question": "A positively charged particle (alpha particle) projected towards the west is deflected towards the north by a magnetic field. The direction of the magnetic field is:",
+      "options": [
+        "(a) Towards south",
+        "(b) Towards east",
+        "(c) Downward",
+        "(d) Upward"
+      ],
+      "correctAnswer": "d"
+    },
+    {
+      "id": "sp4-mcq-8",
+      "question": "What is the frequency of the alternating current (AC) supplied to households in India?",
+      "options": [
+        "(a) 0 Hz (DC)",
+        "(b) 50 Hz",
+        "(c) 60 Hz",
+        "(d) 100 Hz"
+      ],
+      "correctAnswer": "b"
+    },
+    {
+      "id": "sp4-mcq-9",
+      "question": "Which rule is applied to determine the direction of the mechanical force experienced by a current-carrying conductor in a magnetic field?",
+      "options": [
+        "(a) Right-Hand Thumb Rule",
+        "(b) Fleming's Left-Hand Rule",
+        "(c) Fleming's Right-Hand Rule",
+        "(d) Clock Face Rule"
+      ],
+      "correctAnswer": "b"
+    },
+    {
+      "id": "sp4-mcq-10",
+      "question": "The function of the earth wire in domestic electrical installations is to:",
+      "options": [
+        "(a) Complete the return path for electric current",
+        "(b) Increase the voltage of the appliance",
+        "(c) Provide a low-resistance path to ground for leakage current to prevent electric shocks",
+        "(d) Protect against high voltage surges from lightning"
+      ],
+      "correctAnswer": "c"
+    }
+  ],
+  "themeColor": "#BA68C8"
 };
