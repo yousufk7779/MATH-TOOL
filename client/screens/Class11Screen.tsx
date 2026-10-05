@@ -23,12 +23,13 @@ function Class11Screen() {
     <ScreenWrapper showBackButton hideHomeButton homeRoute="ClassSelector">
       <ScrollView
         style={styles.scrollView}
-        contentContainerStyle={[styles.content, styles.centeredContent]}
+        contentContainerStyle={styles.content}
         showsVerticalScrollIndicator={false}
       >
-        <View style={styles.headerContainer}>
-          <View style={styles.titleRow}>
-            <ThemedText style={styles.titleWhite}>Select Your Subject</ThemedText>
+        <View style={styles.centerWrapper}>
+          <View style={styles.headerContainer}>
+            <View style={styles.titleRow}>
+              <ThemedText style={styles.titleWhite}>Select Your Subject</ThemedText>
           </View>
 
           <View style={styles.decorationContainer}>
@@ -127,8 +128,9 @@ function Class11Screen() {
             />
           </View>
         </View>
-      </ScrollView>
-    </ScreenWrapper>
+      </View>
+    </ScrollView>
+  </ScreenWrapper>
   );
 }
 
@@ -140,11 +142,14 @@ const styles = StyleSheet.create({
   },
   content: {
     paddingHorizontal: Spacing.xl,
-    paddingVertical: Spacing.lg,
+    paddingVertical: Spacing.md,
     flexGrow: 1,
-  },
-  centeredContent: {
     justifyContent: "center",
+  },
+  centerWrapper: {
+    width: "100%",
+    justifyContent: "center",
+    marginTop: -20,
   },
   headerContainer: {
     alignItems: "center",

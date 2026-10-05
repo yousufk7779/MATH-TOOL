@@ -121,15 +121,14 @@ const styles = StyleSheet.create({
   },
   content: {
     paddingHorizontal: Spacing.xl,
-    paddingTop: 0,
-    paddingBottom: Spacing.xl,
+    paddingVertical: Spacing.md,
     flexGrow: 1,
     justifyContent: "center",
   },
   centerWrapper: {
     width: "100%",
     justifyContent: "center",
-    marginTop: -48,
+    marginTop: -20,
   },
   headerContainer: {
     alignItems: "center",

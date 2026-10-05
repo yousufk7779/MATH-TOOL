@@ -22,12 +22,13 @@ function Class11ScienceScreen() {
     <ScreenWrapper showBackButton hideHomeButton homeRoute="Class11">
       <ScrollView
         style={styles.scrollView}
-        contentContainerStyle={[styles.content, styles.centeredContent]}
+        contentContainerStyle={styles.content}
         showsVerticalScrollIndicator={false}
       >
-        <View style={styles.headerContainer}>
-          <View style={styles.titleRow}>
-            <ThemedText style={styles.titleWhite}>Select Your Science Subject</ThemedText>
+        <View style={styles.centerWrapper}>
+          <View style={styles.headerContainer}>
+            <View style={styles.titleRow}>
+              <ThemedText style={styles.titleWhite}>Select Your Science Subject</ThemedText>
           </View>
 
           <View style={styles.decorationContainer}>
@@ -121,8 +122,9 @@ function Class11ScienceScreen() {
             />
           </View>
         </View>
-      </ScrollView>
-    </ScreenWrapper>
+      </View>
+    </ScrollView>
+  </ScreenWrapper>
   );
 }
 
@@ -134,11 +136,14 @@ const styles = StyleSheet.create({
   },
   content: {
     paddingHorizontal: Spacing.xl,
-    paddingVertical: Spacing.lg,
+    paddingVertical: Spacing.md,
     flexGrow: 1,
-  },
-  centeredContent: {
     justifyContent: "center",
+  },
+  centerWrapper: {
+    width: "100%",
+    justifyContent: "center",
+    marginTop: -20,
   },
   headerContainer: {
     alignItems: "center",
