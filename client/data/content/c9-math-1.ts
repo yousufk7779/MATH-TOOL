@@ -73,7 +73,7 @@ export const c9Math1: ChapterContent = {
     },
     {
       id: "c9-m1-q5",
-      question: "The value of 125^(1/3) is:",
+      question: "The value of 125<sup>⅓</sup> is:",
       options: ["5", "25", "1", "15"],
       correctAnswer: "5",
     },
@@ -179,15 +179,15 @@ export const c9Math1: ChapterContent = {
 
     <div class="content-box">
         <div class="section-title">2. Classification of Numbers</div>
-        <div class="step"><strong>Natural Numbers (N):</strong> The counting numbers starting from 1, 2, 3 and so on. They are represented by the set \\(N = \\{1, 2, 3, \\dots\\}\\). Zero is <strong>not</strong> a natural number.</div>
+        <div class="step"><strong>Natural Numbers (N):</strong> The counting numbers starting from 1, 2, 3 and so on. They are represented by the set N = {1, 2, 3, …}. Zero is <strong>not</strong> a natural number.</div>
         
-        <div class="step"><strong>Whole Numbers (W):</strong> The collection of natural numbers along with zero. They are represented by \\(W = \\{0, 1, 2, 3, \\dots\\}\\). So every natural number is a whole number.</div>
+        <div class="step"><strong>Whole Numbers (W):</strong> The collection of natural numbers along with zero. They are represented by W = {0, 1, 2, 3, …}. So every natural number is a whole number.</div>
         
-        <div class="step"><strong>Integers (Z):</strong> The collection of all whole numbers and the negatives of natural numbers. It is denoted by \\(Z = \\{\\dots, -3, -2, -1, 0, 1, 2, 3, \\dots\\}\\). So every whole number is an integer, but −1, −2, −3, … are not whole numbers.</div>
+        <div class="step"><strong>Integers (Z):</strong> The collection of all whole numbers and the negatives of natural numbers. It is denoted by Z = {…, −3, −2, −1, 0, 1, 2, 3, …}. So every whole number is an integer, but −1, −2, −3, … are not whole numbers.</div>
         
-        <div class="step"><strong>Rational Numbers (Q):</strong> A number is called rational if it can be written in the form \\(\\frac{p}{q}\\), where \\(p\\) and \\(q\\) are integers and \\(q \\neq 0\\). For example, 3 = 3 ÷ 1, 0 = 0 ÷ 1 and 0.5 = 1 ÷ 2 are rational. Every integer is a rational number.</div>
+        <div class="step"><strong>Rational Numbers (Q):</strong> A number is called rational if it can be written in the form <span class='frac'><span class='num'>p</span><span class='den'>q</span></span>, where p and q are integers and q ≠ 0. For example, 3 = 3 ÷ 1, 0 = 0 ÷ 1 and 0.5 = 1 ÷ 2 are rational. Every integer is a rational number.</div>
         
-        <div class="step"><strong>Irrational Numbers:</strong> A number is called irrational if it <strong>cannot</strong> be written in the form \\(\\frac{p}{q}\\). Examples include \\(\\sqrt{2}, \\sqrt{3}, \\sqrt{5}\\), and \\(\\pi\\). Their decimals never end and never repeat (√2 = 1.41421…). The square root of a positive integer that is not a perfect square is irrational.</div>
+        <div class="step"><strong>Irrational Numbers:</strong> A number is called irrational if it <strong>cannot</strong> be written in the form <span class='frac'><span class='num'>p</span><span class='den'>q</span></span>. Examples include √2, √3, √5, and π. Their decimals never end and never repeat (√2 = 1.41421…). The square root of a positive integer that is not a perfect square is irrational.</div>
         
         <div class="step"><strong>Real Numbers (R):</strong> The collection of all rational and irrational numbers together forms the set of real numbers. Every real number is represented by a unique point on the number line.</div>
     </div>
@@ -195,23 +195,30 @@ export const c9Math1: ChapterContent = {
     <div class="content-box">
         <div class="section-title">3. Decimal Expansions</div>
         <div class="sub-header">For Rational Numbers:</div>
-        <div class="step">The decimal expansion is either <strong>Terminating</strong> (e.g., \\(0.5, 0.125\\)) or <strong>Non-terminating Recurring</strong> (e.g., \\(0.333\\dots, 0.142857\\dots\\)). A fraction in lowest terms terminates only if its denominator has no prime factor other than 2 and 5 (e.g. 3 ÷ 8, 7 ÷ 20); otherwise it repeats (e.g. 1 ÷ 3, 1 ÷ 7).</div>
+        <div class="step">The decimal expansion is either <strong>Terminating</strong> (e.g., 0.5, 0.125) or <strong>Non-terminating Recurring</strong> (e.g., 0.333…, 0.142857…). A fraction in lowest terms terminates only if its denominator has no prime factor other than 2 and 5 (e.g. 3 ÷ 8, 7 ÷ 20); otherwise it repeats (e.g. 1 ÷ 3, 1 ÷ 7).</div>
         
         <div class="sub-header">For Irrational Numbers:</div>
-        <div class="step">The decimal expansion is <strong>Non-terminating Non-recurring</strong> (e.g., \\(\\pi \\approx 3.14159\\dots\\)). Example: 0.101001000100001… (the number of 0s keeps increasing).</div>
+        <div class="step">The decimal expansion is <strong>Non-terminating Non-recurring</strong> (e.g., π ≈ 3.14159…). Example: 0.101001000100001… (the number of 0s keeps increasing).</div>
     </div>
 
     <div class="content-box">
         <div class="section-title">4. Key Operations & Formulas</div>
         <div class="sub-header">Rationalisation</div>
-        <div class="step">To rationalize the denominator of \\(\\frac{1}{\\sqrt{a}+b}\\), we multiply and divide it by its conjugate \\(\\sqrt{a}-b\\). This removes the root because (x + y)(x − y) = x² − y². Also, √a × √b = √(ab) and (√a)² = a.</div>
+        <div class="step">To rationalize the denominator of <span class='frac'><span class='num'>1</span><span class='den'>√a + b</span></span>, we multiply and divide it by its conjugate √a − b. This removes the root because (x + y)(x − y) = x² − y². Also, √a × √b = √(ab) and (√a)² = a.</div>
         
         <div class="sub-header">Laws of Exponents</div>
         <div class="formula-box">
-            1. \\(a^p \\cdot a^q = a^{p+q}\\)<br>
-            2. \\((a^p)^q = a^{pq}\\)<br>
-            3. \\(\\frac{a^p}{a^q} = a^{p-q}\\)<br>
-            4. \\(a^p \\cdot b^p = (ab)^p\\)
+            1. a<sup>p</sup> × a<sup>q</sup> = a<sup>p + q</sup><br>
+            2. (a<sup>p</sup>)<sup>q</sup> = a<sup>pq</sup><br>
+            3. <span class='frac'><span class='num'>a<sup>p</sup></span><span class='den'>a<sup>q</sup></span></span> = a<sup>p − q</sup><br>
+            4. a<sup>p</sup> × b<sup>p</sup> = (ab)<sup>p</sup><br>
+            5. a<sup>−n</sup> = <span class='frac'><span class='num'>1</span><span class='den'>a<sup>n</sup></span></span><br>
+            6. a<sup>1⁄n</sup> = <sup>n</sup>√a<br>
+            7. (<span class='frac'><span class='num'>a</span><span class='den'>b</span></span>)<sup>n</sup> = <span class='frac'><span class='num'>a<sup>n</sup></span><span class='den'>b<sup>n</sup></span></span><br>
+            8. √a × √b = √(ab)<br>
+            9. (√a + √b)(√a − √b) = a − b<br>
+            10. (a + √b)(a − √b) = a<sup>2</sup> − b<br>
+            11. (√a + √b)<sup>2</sup> = a + 2√(ab) + b
         </div>
     </div>
 
@@ -402,12 +409,12 @@ export const c9Math1: ChapterContent = {
               <text x="130" y="125" fill="white" font-size="13">2 (A)</text>
               <line x1="50" y1="80" x2="50" y2="100" stroke="white" />
               <line x1="150" y1="80" x2="150" y2="100" stroke="white" />
-              <line x1="150" y1="90" x2="150" y2="30" stroke="#FFB74D" stroke-width="3" />
+              <line x1="150" y1="90" x2="150" y2="40" stroke="#FFB74D" stroke-width="3" />
               <text x="155" y="55" fill="#FFB74D" font-size="13">1 (B)</text>
-              <line x1="50" y1="90" x2="150" y2="30" stroke="#FFB74D" stroke-width="2" stroke-dasharray="5" />
+              <line x1="50" y1="90" x2="150" y2="40" stroke="#FFB74D" stroke-width="2" stroke-dasharray="5" />
               <text x="85" y="55" fill="#FFB74D" font-size="14" font-weight="bold">√5</text>
-              <path d="M 150 30 A 116 116 0 0 1 165 90" stroke="#FFB74D" fill="none" stroke-dasharray="5" />
-              <text x="175" y="125" fill="#FFB74D" font-size="15" font-weight="bold">P</text>
+              <path d="M 150 40 A 111.8 111.8 0 0 1 161.8 90" stroke="#FFB74D" fill="none" stroke-dasharray="5" />
+              <text x="157" y="125" fill="#FFB74D" font-size="15" font-weight="bold">P</text>
             </svg>
           </div>
         </div>
@@ -418,6 +425,7 @@ export const c9Math1: ChapterContent = {
         .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
         .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
         .frac .den { padding: 0 2px; }
+        .overline { text-decoration: overline; }
         .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
@@ -626,6 +634,7 @@ export const c9Math1: ChapterContent = {
         .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
         .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
         .frac .den { padding: 0 2px; }
+        .overline { text-decoration: overline; }
         .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
@@ -822,14 +831,16 @@ export const c9Math1: ChapterContent = {
           <div class="svg-container">
             <svg width="280" height="150" style="background: #1E1E2E; border-radius: 12px; padding: 10px;">
               <line x1="20" y1="90" x2="260" y2="90" stroke="white" stroke-width="2" />
-              <circle cx="120" cy="90" r="100" fill="none" stroke="white" stroke-dasharray="3" clip-path="inset(0px 0px 50px 0px)" />
+              <circle cx="112.7" cy="90" r="92.7" fill="none" stroke="white" stroke-dasharray="3" clip-path="inset(0px 0px 92.7px 0px)" />
               <line x1="20" y1="85" x2="20" y2="95" stroke="white" />
               <text x="15" y="120" fill="white" font-size="13">A</text>
-              <line x1="220" y1="90" x2="220" y2="30" stroke="#FFB74D" stroke-width="3" />
-              <text x="215" y="120" fill="white" font-size="13">B</text>
-              <text x="225" y="55" fill="#FFB74D" font-size="14" font-weight="bold">√9.3 (D)</text>
-              <line x1="240" y1="85" x2="240" y2="95" stroke="white" />
-              <text x="235" y="120" fill="white" font-size="13">C</text>
+              <line x1="187.4" y1="90" x2="187.4" y2="35.1" stroke="#FFB74D" stroke-width="3" />
+              <text x="182.4" y="120" fill="white" font-size="13">B</text>
+              <text x="122" y="55" fill="#FFB74D" font-size="14" font-weight="bold">√9.3 (D)</text>
+              <line x1="205.4" y1="85" x2="205.4" y2="95" stroke="white" />
+              <text x="200.4" y="120" fill="white" font-size="13">C</text>
+              <path d="M 187.4 35.1 A 54.9 54.9 0 0 1 242.3 90" stroke="#FFB74D" fill="none" stroke-dasharray="5" />
+              <text x="237" y="120" fill="#FFB74D" font-size="15" font-weight="bold">P</text>
             </svg>
           </div>
         </div>
@@ -916,7 +927,7 @@ export const c9Math1: ChapterContent = {
 <div class="container">
         <div class="question">Q1. Find:</div>
         <div class="solution">
-          (i) 64<sup><span class='frac' style="padding:0; margin:0;"><span class='num'>1</span><span class='den'>2</span></span></sup><br/>
+          (i) 64<sup>½</sup><br/>
           <strong>Solution:</strong><br/>
           64<sup>½</sup> = (8<sup>2</sup>)<sup>½</sup><br/>
           Using (a<sup>m</sup>)<sup>n</sup> = a<sup>mn</sup>:<br/>
@@ -925,7 +936,7 @@ export const c9Math1: ChapterContent = {
           = 8<br/>
           <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val">8</span></div><br/>
           <br/>
-          (ii) 32<sup><span class='frac' style="padding:0; margin:0;"><span class='num'>1</span><span class='den'>5</span></span></sup><br/>
+          (ii) 32<sup>⅕</sup><br/>
           <strong>Solution:</strong><br/>
           32<sup>⅕</sup> = (2<sup>5</sup>)<sup>⅕</sup><br/>
           Using (a<sup>m</sup>)<sup>n</sup> = a<sup>mn</sup>:<br/>
@@ -934,7 +945,7 @@ export const c9Math1: ChapterContent = {
           = 2<br/>
           <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val">2</span></div><br/>
           <br/>
-          (iii) 125<sup><span class='frac' style="padding:0; margin:0;"><span class='num'>1</span><span class='den'>3</span></span></sup><br/>
+          (iii) 125<sup>⅓</sup><br/>
           <strong>Solution:</strong><br/>
           125<sup>⅓</sup> = (5<sup>3</sup>)<sup>⅓</sup><br/>
           Using (a<sup>m</sup>)<sup>n</sup> = a<sup>mn</sup>:<br/>
@@ -946,7 +957,7 @@ export const c9Math1: ChapterContent = {
 
         <div class="question">Q2. Find:</div>
         <div class="solution">
-          (i) 9<sup><span class='frac' style="padding:0; margin:0;"><span class='num'>3</span><span class='den'>2</span></span></sup><br/>
+          (i) 9<sup>3⁄2</sup><br/>
           <strong>Solution:</strong><br/>
           9<sup>3⁄2</sup> = (3<sup>2</sup>)<sup>3⁄2</sup><br/>
           Using (a<sup>m</sup>)<sup>n</sup> = a<sup>mn</sup>:<br/>
@@ -955,7 +966,7 @@ export const c9Math1: ChapterContent = {
           = 27<br/>
           <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val">27</span></div><br/>
           <br/>
-          (ii) 32<sup><span class='frac' style="padding:0; margin:0;"><span class='num'>2</span><span class='den'>5</span></span></sup><br/>
+          (ii) 32<sup>⅖</sup><br/>
           <strong>Solution:</strong><br/>
           32<sup>⅖</sup> = (2<sup>5</sup>)<sup>⅖</sup><br/>
           Using (a<sup>m</sup>)<sup>n</sup> = a<sup>mn</sup>:<br/>
@@ -964,7 +975,7 @@ export const c9Math1: ChapterContent = {
           = 4<br/>
           <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val">4</span></div><br/>
           <br/>
-          (iii) 16<sup><span class='frac' style="padding:0; margin:0;"><span class='num'>3</span><span>4</span></span></sup><br/>
+          (iii) 16<sup>¾</sup><br/>
           <strong>Solution:</strong><br/>
           16<sup>¾</sup> = (2<sup>4</sup>)<sup>¾</sup><br/>
           Using (a<sup>m</sup>)<sup>n</sup> = a<sup>mn</sup>:<br/>
@@ -973,7 +984,7 @@ export const c9Math1: ChapterContent = {
           = 8<br/>
           <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val">8</span></div><br/>
           <br/>
-          (iv) 125<sup><span class='frac' style="padding:0; margin:0;"><span class='num'>-1</span><span>3</span></span></sup><br/>
+          (iv) 125<sup>−⅓</sup><br/>
           <strong>Solution:</strong><br/>
           125<sup>−⅓</sup> = (5<sup>3</sup>)<sup>−⅓</sup><br/>
           Using (a<sup>m</sup>)<sup>n</sup> = a<sup>mn</sup>:<br/>
@@ -986,7 +997,7 @@ export const c9Math1: ChapterContent = {
 
         <div class="question">Q3. Simplify:</div>
         <div class="solution">
-          (i) 2<sup><span class='frac' style="padding:0; margin:0;"><span class='num'>2</span><span>3</span></span></sup> × 2<sup><span class='frac' style="padding:0; margin:0;"><span class='num'>1</span><span>5</span></span></sup><br/>
+          (i) 2<sup>⅔</sup> × 2<sup>⅕</sup><br/>
           <strong>Solution:</strong><br/>
           Using a<sup>m</sup> × a<sup>n</sup> = a<sup>m + n</sup>:<br/>
           2<sup>⅔</sup> × 2<sup>⅕</sup> = 2<sup>⅔ + ⅕</sup><br/>
@@ -1003,8 +1014,8 @@ export const c9Math1: ChapterContent = {
           <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val">3<sup>−21</sup></span></div><br/>
           <br/>
           (iii) <span class='frac' style="font-size: 1.1em; vertical-align: middle;">
-            <span class='num' style="padding: 10px 0; white-space: nowrap;">11<sup><span class='frac' style="padding:0; margin:0;"><span class='num'>1</span><span>2</span></span></sup></span>
-            <span style="padding: 10px 0; white-space: nowrap;">11<sup><span class='frac' style="padding:0; margin:0;"><span class='num'>1</span><span>4</span></span></sup></span>
+            <span class='num' style="padding: 10px 0; white-space: nowrap;">11<sup>½</sup></span>
+            <span style="padding: 10px 0; white-space: nowrap;">11<sup>¼</sup></span>
           </span><br/>
           <strong>Solution:</strong><br/>
           Using <span class='frac'><span class='num'>a<sup>m</sup></span><span class='den'>a<sup>n</sup></span></span> = a<sup>m − n</sup>:<br/>
@@ -1013,7 +1024,7 @@ export const c9Math1: ChapterContent = {
           = 11<sup>¼</sup><br/>
           <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val">11<sup>¼</sup></span></div><br/>
           <br/>
-          (iv) 7<sup><span class='frac' style="padding:0; margin:0;"><span class='num'>1</span><span>2</span></span></sup> × 8<sup><span class='frac' style="padding:0; margin:0;"><span class='num'>1</span><span>2</span></span></sup><br/>
+          (iv) 7<sup>½</sup> × 8<sup>½</sup><br/>
           <strong>Solution:</strong><br/>
           Using a<sup>m</sup> × b<sup>m</sup> = (ab)<sup>m</sup>:<br/>
           7<sup>½</sup> × 8<sup>½</sup> = (7 × 8)<sup>½</sup><br/>
