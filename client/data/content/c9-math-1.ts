@@ -414,7 +414,7 @@ export const c9Math1: ChapterContent = {
               <line x1="50" y1="90" x2="150" y2="40" stroke="#FFB74D" stroke-width="2" stroke-dasharray="5" />
               <text x="85" y="55" fill="#FFB74D" font-size="14" font-weight="bold">√5</text>
               <path d="M 150 40 A 111.8 111.8 0 0 1 161.8 90" stroke="#FFB74D" fill="none" stroke-dasharray="5" />
-              <text x="157" y="125" fill="#FFB74D" font-size="15" font-weight="bold">P</text>
+              <text x="164" y="109" fill="#FFB74D" font-size="15" font-weight="bold">P</text>
             </svg>
           </div>
         </div>
