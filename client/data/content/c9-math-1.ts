@@ -73,7 +73,7 @@ export const c9Math1: ChapterContent = {
     },
     {
       id: "c9-m1-q5",
-      question: "The value of 125<sup>⅓</sup> is:",
+      question: "The value of 125¹/³ is:",
       options: ["5", "25", "1", "15"],
       correctAnswer: "5",
     },
