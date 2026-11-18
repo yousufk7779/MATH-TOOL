@@ -512,51 +512,6 @@ export const c9Math2: ChapterContent = {
           = 2 ≠ 0<br/>
           <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val">No</span></div>
         </div>
-
-        <div class="question">Q4. Find the zero of the polynomial in each of the following cases:</div>
-        <div class="solution">
-          <span class="subpart">(i) p(x) = x + 5 :</span><br/>
-          <strong>Solution:</strong><br/>
-          x + 5 = 0<br/>
-          x = −5<br/>
-          <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val">−5</span></div><br/>
-          <br/>
-          <span class="subpart">(ii) p(x) = x - 5 :</span><br/>
-          <strong>Solution:</strong><br/>
-          x − 5 = 0<br/>
-          x = 5<br/>
-          <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val">5</span></div><br/>
-          <br/>
-          <span class="subpart">(iii) p(x) = 2x + 5 :</span><br/>
-          <strong>Solution:</strong><br/>
-          2x + 5 = 0<br/>
-          x = −<span class='frac'><span class='num'>5</span><span class='den'>2</span></span><br/>
-          <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val">−<span class='frac'><span class='num'>5</span><span class='den'>2</span></span></span></div><br/>
-          <br/>
-          <span class="subpart">(iv) p(x) = 3x - 2 :</span><br/>
-          <strong>Solution:</strong><br/>
-          3x − 2 = 0<br/>
-          x = <span class='frac'><span class='num'>2</span><span class='den'>3</span></span><br/>
-          <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val"><span class='frac'><span class='num'>2</span><span class='den'>3</span></span></span></div><br/>
-          <br/>
-          <span class="subpart">(v) p(x) = 3x :</span><br/>
-          <strong>Solution:</strong><br/>
-          3x = 0<br/>
-          x = 0<br/>
-          <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val">0</span></div><br/>
-          <br/>
-          <span class="subpart">(vi) p(x) = ax, a ≠ 0 :</span><br/>
-          <strong>Solution:</strong><br/>
-          ax = 0<br/>
-          x = 0 (a ≠ 0)<br/>
-          <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val">0</span></div><br/>
-          <br/>
-          <span class="subpart">(vii) p(x) = cx + d :</span><br/>
-          <strong>Solution:</strong><br/>
-          cx + d = 0<br/>
-          x = −<span class='frac'><span class='num'>d</span><span class='den'>c</span></span> (c ≠ 0)<br/>
-          <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val">−<span class='frac'><span class='num'>d</span><span class='den'>c</span></span></span></div>
-        </div>
       </div>
 `,
     "ex2-3": `
