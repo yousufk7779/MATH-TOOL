@@ -41,11 +41,10 @@ export const c9Math2: ChapterContent = {
     "Splitting the middle term is a key method for factorising quadratic polynomials.",
   ],
   exercises: [
-    { id: "ex2-1", name: "Exercise 2.1", questions: [] },
-    { id: "ex2-2", name: "Exercise 2.2", questions: [] },
-    { id: "ex2-3", name: "Exercise 2.3", questions: [] },
-    { id: "ex2-4", name: "Exercise 2.4", questions: [] },
-    { id: "ex2-5", name: "Exercise 2.5", questions: [] },
+    { id: "ex2-1", name: "Ex 2.1", questions: [] },
+    { id: "ex2-2", name: "Ex 2.2", questions: [] },
+    { id: "ex2-4", name: "Ex 2.3", questions: [] },
+    { id: "ex2-5", name: "Ex 2.4", questions: [] },
   ],
   examples: [],
   theorems: [],
@@ -511,112 +510,6 @@ export const c9Math2: ChapterContent = {
           p(<span class='frac'><span class='num'>1</span><span class='den'>2</span></span>) = 2(<span class='frac'><span class='num'>1</span><span class='den'>2</span></span>) + 1<br/>
           = 2 ≠ 0<br/>
           <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val">No</span></div>
-        </div>
-      </div>
-`,
-    "ex2-3": `
-      <style>
-        .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
-        .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
-        .frac .den { padding: 0 2px; }
-        .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        
-        .question { color: #FF4081; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
-        .solution { border-left: 3px solid #FF4081; padding-left: 15px; margin-top: 15px; background: rgba(255, 64, 129, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
-        .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
-        
-        /* Overview styles */
-        .section-title { color: #FF4081 !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
-        .sub-header { color: #FF4081 !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
-        .formula-box { background: rgba(255, 64, 129, 0.05) !important; border-left: 4px solid #FF4081 !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
-        h2 { color: #FF4081 !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
-        h3 { color: #FF4081 !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
-        .highlight { color: #FF4081 !important; font-weight: 700; }
-        strong { color: #FF4081 !important; font-weight: 600; }
-        
-        /* Utility classes for step-by-step */
-        .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
-        .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
-        .ans-highlight { color: #FF4081; font-weight: 700; }
-        .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
-        
-        /* Table styles */
-        table { width: 100%; border-collapse: collapse; margin: 15px auto; font-size: 15px; color: #e0e0e0; text-align: center; }
-        th { background: rgba(255, 64, 129, 0.05); color: #FF4081; font-weight: 600; padding: 10px 8px; border: 1px solid rgba(255, 255, 255, 0.15); text-align: center; }
-        td { padding: 8px; border: 1px solid rgba(255, 255, 255, 0.1); text-align: center; }
-        
-        /* Bar graph styles */
-        svg rect { stroke: rgba(255, 255, 255, 0.8); stroke-width: 0.5px; }
-      </style>
-<div class="container">
-        <div class="question">Q1. Find the remainder when x³ + 3x² + 3x + 1 is divided by:</div>
-        <div class="solution">
-          Let p(x) = x³ + 3x² + 3x + 1<br/>
-          <span class="subpart">(i) x + 1 :</span><br/>
-          <strong>Solution:</strong><br/>
-          Remainder = p(−1)<br/>
-          = (−1)³ + 3(−1)² + 3(−1) + 1<br/>
-          = −1 + 3 − 3 + 1<br/>
-          = 0<br/>
-          <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val">0</span></div><br/>
-          <br/>
-          <span class="subpart">(ii) x - 1/2 :</span><br/>
-          <strong>Solution:</strong><br/>
-          Remainder = p(<span class='frac'><span class='num'>1</span><span class='den'>2</span></span>)<br/>
-          = (<span class='frac'><span class='num'>1</span><span class='den'>2</span></span>)³ + 3(<span class='frac'><span class='num'>1</span><span class='den'>2</span></span>)² + 3(<span class='frac'><span class='num'>1</span><span class='den'>2</span></span>) + 1<br/>
-          = <span class='frac'><span class='num'>1</span><span class='den'>8</span></span> + <span class='frac'><span class='num'>3</span><span class='den'>4</span></span> + <span class='frac'><span class='num'>3</span><span class='den'>2</span></span> + 1<br/>
-          = <span class='frac'><span class='num'>1 + 6 + 12 + 8</span><span class='den'>8</span></span><br/>
-          = <span class='frac'><span class='num'>27</span><span class='den'>8</span></span><br/>
-          <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val"><span class='frac'><span class='num'>27</span><span class='den'>8</span></span></span></div><br/>
-          <br/>
-          <span class="subpart">(iii) x :</span><br/>
-          <strong>Solution:</strong><br/>
-          Remainder = p(0)<br/>
-          = 0 + 0 + 0 + 1<br/>
-          = 1<br/>
-          <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val">1</span></div><br/>
-          <br/>
-          <span class="subpart">(iv) x + π :</span><br/>
-          <strong>Solution:</strong><br/>
-          Remainder = p(−π)<br/>
-          = (−π)³ + 3(−π)² + 3(−π) + 1<br/>
-          = −π³ + 3π² − 3π + 1<br/>
-          <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val">−π³ + 3π² − 3π + 1</span></div><br/>
-          <br/>
-          <span class="subpart">(v) 5 + 2x :</span><br/>
-          <strong>Solution:</strong><br/>
-          5 + 2x = 0 ⇒ x = −<span class='frac'><span class='num'>5</span><span class='den'>2</span></span><br/>
-          Remainder = p(−<span class='frac'><span class='num'>5</span><span class='den'>2</span></span>)<br/>
-          = (−<span class='frac'><span class='num'>5</span><span class='den'>2</span></span>)³ + 3(−<span class='frac'><span class='num'>5</span><span class='den'>2</span></span>)² + 3(−<span class='frac'><span class='num'>5</span><span class='den'>2</span></span>) + 1<br/>
-          = −<span class='frac'><span class='num'>125</span><span class='den'>8</span></span> + <span class='frac'><span class='num'>75</span><span class='den'>4</span></span> − <span class='frac'><span class='num'>15</span><span class='den'>2</span></span> + 1<br/>
-          = <span class='frac'><span class='num'>−125 + 150 − 60 + 8</span><span class='den'>8</span></span><br/>
-          = −<span class='frac'><span class='num'>27</span><span class='den'>8</span></span><br/>
-          <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val">−<span class='frac'><span class='num'>27</span><span class='den'>8</span></span></span></div>
-        </div>
-
-        <div class="question">Q2. Find the remainder when x³ - ax² + 6x - a is divided by x - a.</div>
-        <div class="solution">
-          <strong>Solution:</strong><br/>
-          Let p(x) = x³ − ax² + 6x − a<br/>
-          Remainder = p(a)<br/>
-          = a³ − a(a)² + 6(a) − a<br/>
-          = a³ − a³ + 6a − a<br/>
-          = 5a<br/>
-          <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val">5a</span></div>
-        </div>
-
-        <div class="question">Q3. Check whether 7 + 3x is a factor of 3x³ + 7x.</div>
-        <div class="solution">
-          <strong>Solution:</strong><br/>
-          Let p(x) = 3x³ + 7x<br/>
-          7 + 3x = 0 ⇒ x = −<span class='frac'><span class='num'>7</span><span class='den'>3</span></span><br/>
-          p(−<span class='frac'><span class='num'>7</span><span class='den'>3</span></span>) = 3(−<span class='frac'><span class='num'>7</span><span class='den'>3</span></span>)³ + 7(−<span class='frac'><span class='num'>7</span><span class='den'>3</span></span>)<br/>
-          = 3(−<span class='frac'><span class='num'>343</span><span class='den'>27</span></span>) − <span class='frac'><span class='num'>49</span><span class='den'>3</span></span><br/>
-          = −<span class='frac'><span class='num'>343</span><span class='den'>9</span></span> − <span class='frac'><span class='num'>49</span><span class='den'>3</span></span><br/>
-          = −<span class='frac'><span class='num'>343</span><span class='den'>9</span></span> − <span class='frac'><span class='num'>147</span><span class='den'>9</span></span><br/>
-          = −<span class='frac'><span class='num'>490</span><span class='den'>9</span></span> ≠ 0<br/>
-          <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val">No, 7 + 3x is not a factor of 3x³ + 7x.</span></div>
         </div>
       </div>
 `,
