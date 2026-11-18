@@ -27,12 +27,11 @@ export const c9Math1: ChapterContent = {
   formulas: [],
   crux: [],
   exercises: [
-    { id: "ex1-1", name: "Exercise 1.1", questions: [] },
-    { id: "ex1-2", name: "Exercise 1.2", questions: [] },
-    { id: "ex1-3", name: "Exercise 1.3", questions: [] },
-    { id: "ex1-4", name: "Exercise 1.4", questions: [] },
-    { id: "ex1-5", name: "Exercise 1.5", questions: [] },
-    { id: "ex1-6", name: "Exercise 1.6", questions: [] },
+    { id: "ex1-1", name: "Ex 1.1", questions: [] },
+    { id: "ex1-2", name: "Ex 1.2", questions: [] },
+    { id: "ex1-3", name: "Ex 1.3", questions: [] },
+    { id: "ex1-5", name: "Ex 1.4", questions: [] },
+    { id: "ex1-6", name: "Ex 1.5", questions: [] },
   ],
   examples: [],
   mcqs: [
@@ -626,66 +625,6 @@ export const c9Math1: ChapterContent = {
           <strong>Solution:</strong><br/>
           1.101001000100001... is non-terminating non-recurring.<br/>
           <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val">Irrational</span></div>
-        </div>
-      </div>
-`,
-    "ex1-4": `
-      <style>
-        .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
-        .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
-        .frac .den { padding: 0 2px; }
-        .overline { text-decoration: overline; }
-        .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        
-        .question { color: #FFB74D; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
-        .solution { border-left: 3px solid #FFB74D; padding-left: 15px; margin-top: 15px; background: rgba(255, 183, 77, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
-        .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
-        
-        /* Overview styles */
-        .section-title { color: #FFB74D !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
-        .sub-header { color: #FFB74D !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
-        .formula-box { background: rgba(255, 183, 77, 0.05) !important; border-left: 4px solid #FFB74D !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
-        h2 { color: #FFB74D !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
-        h3 { color: #FFB74D !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
-        .highlight { color: #FFB74D !important; font-weight: 700; }
-        strong { color: #FFB74D !important; font-weight: 600; }
-        
-        /* Utility classes for step-by-step */
-        .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
-        .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
-        .ans-highlight { color: #FFB74D; font-weight: 700; }
-        .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
-        
-        /* Table styles */
-        table { width: 100%; border-collapse: collapse; margin: 15px auto; font-size: 15px; color: #e0e0e0; text-align: center; }
-        th { background: rgba(255, 183, 77, 0.05); color: #FFB74D; font-weight: 600; padding: 10px 8px; border: 1px solid rgba(255, 255, 255, 0.15); text-align: center; }
-        td { padding: 8px; border: 1px solid rgba(255, 255, 255, 0.1); text-align: center; }
-        
-        /* Bar graph styles */
-        svg rect { stroke: rgba(255, 255, 255, 0.8); stroke-width: 0.5px; }
-      </style>
-<div class="container">
-        <div class="question">Q1. Visualise 3.765 on the number line, using successive magnification.</div>
-        <div class="solution">
-          <strong>Solution:</strong><br/>
-          1. 3.765 lies between 3 and 4.<br/>
-          2. Divide [3, 4] into 10 parts. 3.765 lies between 3.7 and 3.8.<br/>
-          3. Divide [3.7, 3.8] into 10 parts. 3.765 lies between 3.76 and 3.77.<br/>
-          4. Divide [3.76, 3.77] into 10 parts. Mark 3.765.<br/>
-          <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val">3.765 marked between 3.76 and 3.77</span></div>
-        </div>
-
-        <div class="question">Q2. Visualise 4.<span class="overline">26</span> on the number line, up to 4 decimal places.</div>
-        <div class="solution">
-          <strong>Solution:</strong><br/>
-          4.262626... ≈ 4.2626 (up to 4 decimal places)<br/>
-          1. 4.2626 lies between 4 and 5.<br/>
-          2. Divide [4, 5] into 10 parts. 4.2626 lies between 4.2 and 4.3.<br/>
-          3. Divide [4.2, 4.3] into 10 parts. 4.2626 lies between 4.26 and 4.27.<br/>
-          4. Divide [4.26, 4.27] into 10 parts. 4.2626 lies between 4.262 and 4.263.<br/>
-          5. Divide [4.262, 4.263] into 10 parts. Mark 4.2626.<br/>
-          <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val">4.2626 marked between 4.262 and 4.263</span></div>
         </div>
       </div>
 `,
