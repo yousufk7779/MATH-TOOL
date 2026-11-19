@@ -34,9 +34,8 @@ export const c9Math5: ChapterContent = {
     "If two lines intersect each other, then the vertically opposite angles are equal.",
   ],
   exercises: [
-    { id: "ex5-1", name: "Exercise 5.1", questions: [] },
-    { id: "ex5-2", name: "Exercise 5.2", questions: [] },
-    { id: "ex5-3", name: "Exercise 5.3", questions: [] },
+    { id: "ex5-1", name: "Ex 5.1", questions: [] },
+    { id: "ex5-2", name: "Ex 5.2", questions: [] },
   ],
   examples: [],
   mcqs: [
@@ -168,7 +167,7 @@ export const c9Math5: ChapterContent = {
       </div>
       <div class="content-box">
         <div class="section-title">3. Intersecting and Non-intersecting Lines</div>
-        <p class="step">Lines which cross each other at a point are <strong>intersecting lines</strong>. Lines which never meet, even if extended indefinitely, are <strong>parallel lines</strong>.</p>
+        <p class="step">Lines which cross each other at a point are <strong>intersecting lines</strong>. Lines which never meet, even if extended indefinitely, are <strong>parallel lines</strong>. When two lines intersect, vertically opposite angles are equal and the two angles of a linear pair add up to 180°. When a transversal cuts two parallel lines, corresponding angles are equal, alternate interior angles are equal, and interior angles on the same side add up to 180°.</p>
       </div>
     </div>
 `,
@@ -222,38 +221,56 @@ export const c9Math5: ChapterContent = {
           <text x="95" y="75" fill="white" font-size="12">O</text>
         </svg>
         <div class="solution">
-          Given: &ang;AOC + &ang;BOE = 70&deg; and &ang;BOD = 40&deg;.<br/>
-          Since AB and CD intersect at O, &ang;AOC = &ang;BOD (Vertically opposite angles).<br/>
-          &there4; &ang;AOC = 40&deg;.<br/>
-          Now, 40&deg; + &ang;BOE = 70&deg; &rArr; <strong>&ang;BOE = 30&deg;</strong>.<br/>
-          Also, &ang;AOC + &ang;COE + &ang;BOE = 180&deg; (Angles on a straight line AB).<br/>
-          70&deg; + &ang;COE = 180&deg; &rArr; &ang;COE = 110&deg;.<br/>
-          Reflex &ang;COE = 360&deg; - 110&deg; = <strong>250&deg;</strong>.
+          <strong>Solution:</strong><br/>
+          ∠AOC + ∠BOE = 70° and ∠BOD = 40°<br/>
+          Vertically opposite angles are equal:<br/>
+          ∠AOC = ∠BOD = 40°<br/>
+          40° + ∠BOE = 70°<br/>
+          ∠BOE = 70° − 40° = 30°<br/>
+          Angles on the straight line AB add up to 180°:<br/>
+          ∠AOC + ∠COE + ∠BOE = 180°<br/>
+          40° + ∠COE + 30° = 180°<br/>
+          ∠COE = 180° − 70° = 110°<br/>
+          Reflex ∠COE = 360° − ∠COE<br/>
+          = 360° − 110° = 250°<br/>
+          <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val">∠BOE = 30°, reflex ∠COE = 250°</span></div>
         </div>
 
         <div class="question">2. In Fig. 5.24, lines XY and MN intersect at O. If &ang;POY = 90&deg; and a : b = 2 : 3, find c.</div>
         <svg viewBox="0 0 200 150" class="ex-img">
-          <line x1="20" y1="100" x2="180" y2="100" stroke="white" stroke-width="2" />
-          <line x1="50" y1="30" x2="150" y2="130" stroke="white" stroke-width="2" />
-          <line x1="100" y1="100" x2="100" y2="20" stroke="white" stroke-width="2" />
-          <text x="15" y="105" fill="white" font-size="12">X</text>
-          <text x="185" y="105" fill="white" font-size="12">Y</text>
-          <text x="40" y="30" fill="white" font-size="12">M</text>
-          <text x="150" y="145" fill="white" font-size="12">N</text>
-          <text x="95" y="15" fill="white" font-size="12">P</text>
-          <text x="95" y="115" fill="white" font-size="12">O</text>
-          <text x="90" y="60" fill="#66BB6A" font-size="12">a</text>
-          <text x="70" y="90" fill="#66BB6A" font-size="12">b</text>
-          <text x="90" y="140" fill="#66BB6A" font-size="12">c</text>
+          <line x1="20" y1="95" x2="180" y2="95" stroke="white" stroke-width="2" />
+          <line x1="55.92" y1="34.32" x2="132.33" y2="139.5" stroke="white" stroke-width="2" />
+          <line x1="100" y1="95" x2="100" y2="20" stroke="white" stroke-width="2" />
+          <rect x="100" y="85" width="10" height="10" fill="none" stroke="white" stroke-width="1" />
+          <text x="8" y="99" fill="white" font-size="12">X</text>
+          <text x="184" y="99" fill="white" font-size="12">Y</text>
+          <text x="43.92" y="34.32" fill="white" font-size="12">M</text>
+          <text x="136.33" y="149.5" fill="white" font-size="12">N</text>
+          <text x="96" y="16" fill="white" font-size="12">P</text>
+          <text x="114" y="111" fill="white" font-size="12">O</text>
+          <path d="M 100 73 A 22 22 0 0 0 87.07 77.2" stroke="#66BB6A" fill="none" stroke-width="1.5" />
+          <text x="86.11" y="68.57" fill="#66BB6A" font-size="12">a</text>
+          <path d="M 90.6 82.06 A 16 16 0 0 0 84 95" stroke="#66BB6A" fill="none" stroke-width="1.5" />
+          <text x="72.83" y="87.2" fill="#66BB6A" font-size="12">b</text>
+          <path d="M 88 95 A 12 12 0 0 0 107.05 104.71" stroke="#66BB6A" fill="none" stroke-width="1.5" />
+          <text x="85.1" y="120.38" fill="#66BB6A" font-size="12">c</text>
         </svg>
         <div class="solution">
-          Given: &ang;POY = 90&deg;. So, &ang;POX = 180&deg; - 90&deg; = 90&deg;.<br/>
-          &ang;POX = a + b = 90&deg;.<br/>
-          Let a = 2x and b = 3x.<br/>
-          2x + 3x = 90&deg; &rArr; 5x = 90&deg; &rArr; x = 18&deg;.<br/>
-          b = 3 &times; 18&deg; = 54&deg;.<br/>
-          Since MN is a line, b + c = 180&deg; (Linear pair).<br/>
-          54&deg; + c = 180&deg; &rArr; <strong>c = 126&deg;</strong>.
+          <strong>Solution:</strong><br/>
+          ∠POY = 90°<br/>
+          Angles on the straight line XY add up to 180°:<br/>
+          ∠POX = 180° − 90° = 90°<br/>
+          a + b = 90°<br/>
+          a : b = 2 : 3, so let a = 2k and b = 3k<br/>
+          2k + 3k = 90°<br/>
+          5k = 90°<br/>
+          k = 18°<br/>
+          a = 2 × 18° = 36°, b = 3 × 18° = 54°<br/>
+          b and c form a linear pair on line MN:<br/>
+          b + c = 180°<br/>
+          54° + c = 180°<br/>
+          c = 180° − 54° = 126°<br/>
+          <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val">c = 126°</span></div>
         </div>
 
         <div class="question">3. In Fig. 5.25, &ang;PQR = &ang;PRQ, then prove that &ang;PQS = &ang;PRT.</div>
@@ -268,34 +285,46 @@ export const c9Math5: ChapterContent = {
           <text x="180" y="115" fill="white" font-size="12">T</text>
         </svg>
         <div class="solution">
-          At point Q: &ang;PQS + &ang;PQR = 180&deg; (Linear pair) --- (1)<br/>
-          At point R: &ang;PRT + &ang;PRQ = 180&deg; (Linear pair) --- (2)<br/>
-          From (1) and (2): &ang;PQS + &ang;PQR = &ang;PRT + &ang;PRQ.<br/>
-          Since &ang;PQR = &ang;PRQ (Given),<br/>
-          <strong>&ang;PQS = &ang;PRT</strong>. Hence proved.
+          <strong>Solution:</strong><br/>
+          Given: ∠PQR = ∠PRQ<br/>
+          Linear pair at Q:<br/>
+          ∠PQS + ∠PQR = 180° ...(1)<br/>
+          Linear pair at R:<br/>
+          ∠PRT + ∠PRQ = 180° ...(2)<br/>
+          From (1) and (2):<br/>
+          ∠PQS + ∠PQR = ∠PRT + ∠PRQ<br/>
+          Since ∠PQR = ∠PRQ, remove them from both sides:<br/>
+          ∠PQS = ∠PRT<br/>
+          <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val">∠PQS = ∠PRT (Hence proved)</span></div>
         </div>
 
         <div class="question">4. In Fig. 5.26, if x + y = w + z, then prove that AOB is a line.</div>
         <svg viewBox="0 0 200 150" class="ex-img">
-          <line x1="40" y1="120" x2="160" y2="30" stroke="white" stroke-width="2" />
-          <line x1="50" y1="40" x2="150" y2="130" stroke="white" stroke-width="2" />
-          <text x="35" y="130" fill="white" font-size="12">A</text>
-          <text x="165" y="25" fill="white" font-size="12">B</text>
-          <text x="45" y="35" fill="white" font-size="12">C</text>
-          <text x="155" y="140" fill="white" font-size="12">D</text>
-          <text x="110" y="90" fill="white" font-size="12">O</text>
-          <text x="80" y="55" fill="#66BB6A" font-size="12">x</text>
-          <text x="70" y="80" fill="#66BB6A" font-size="12">y</text>
-          <text x="110" y="105" fill="#66BB6A" font-size="12">z</text>
-          <text x="120" y="85" fill="#66BB6A" font-size="12">w</text>
+          <line x1="100" y1="75" x2="20" y2="75" stroke="white" stroke-width="2" />
+          <line x1="100" y1="75" x2="180" y2="75" stroke="white" stroke-width="2" />
+          <line x1="100" y1="75" x2="79.48" y2="18.62" stroke="white" stroke-width="2" />
+          <line x1="100" y1="75" x2="79.48" y2="131.38" stroke="white" stroke-width="2" />
+          <text x="8" y="79" fill="white" font-size="12">A</text>
+          <text x="184" y="79" fill="white" font-size="12">B</text>
+          <text x="75.48" y="14.62" fill="white" font-size="12">C</text>
+          <text x="75.48" y="145.38" fill="white" font-size="12">D</text>
+          <text x="104" y="89" fill="white" font-size="12">O</text>
+          <text x="76.34" y="65.23" fill="#66BB6A" font-size="12">x</text>
+          <text x="109.77" y="59.34" fill="#66BB6A" font-size="12">y</text>
+          <text x="109.77" y="98.66" fill="#66BB6A" font-size="12">z</text>
+          <text x="76.34" y="92.77" fill="#66BB6A" font-size="12">w</text>
         </svg>
         <div class="solution">
-          We know that sum of all angles around a point is 360&deg;.<br/>
-          &there4; x + y + z + w = 360&deg;.<br/>
-          Given: x + y = w + z.<br/>
-          So, (x + y) + (x + y) = 360&deg; &rArr; 2(x + y) = 360&deg;.<br/>
-          x + y = 180&deg;.<br/>
-          Since the sum of adjacent angles x and y is 180&deg;, <strong>AOB is a straight line</strong>.
+          <strong>Solution:</strong><br/>
+          Angles around point O add up to 360°:<br/>
+          x + y + z + w = 360°<br/>
+          Given: x + y = w + z<br/>
+          (x + y) + (x + y) = 360°<br/>
+          2(x + y) = 360°<br/>
+          x + y = 180°<br/>
+          ∠AOC + ∠COB = 180°<br/>
+          Two adjacent angles adding up to 180° form a linear pair, so OA and OB are opposite rays.<br/>
+          <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val">AOB is a line (Hence proved)</span></div>
         </div>
 
         <div class="question">5. In Fig. 5.27, POQ is a line. Ray OR is perpendicular to line PQ. OS is another ray lying between rays OP and OR. Prove that &ang;ROS = 1/2 (&ang;QOS - &ang;POS).</div>
@@ -311,34 +340,47 @@ export const c9Math5: ChapterContent = {
           <rect x="100" y="90" width="10" height="10" fill="none" stroke="white" stroke-width="1" />
         </svg>
         <div class="solution">
-          Since OR &perp; PQ, &ang;ROQ = 90&deg; and &ang;ROP = 90&deg;.<br/>
-          &ang;QOS = &ang;ROQ + &ang;ROS = 90&deg; + &ang;ROS --- (1)<br/>
-          &ang;POS = &ang;ROP - &ang;ROS = 90&deg; - &ang;ROS --- (2)<br/>
+          <strong>Solution:</strong><br/>
+          OR ⊥ PQ, so ∠POR = 90° and ∠QOR = 90°<br/>
+          ∠QOS = ∠QOR + ∠ROS = 90° + ∠ROS ...(1)<br/>
+          ∠POS = ∠POR − ∠ROS = 90° − ∠ROS ...(2)<br/>
           Subtracting (2) from (1):<br/>
-          &ang;QOS - &ang;POS = (90&deg; + &ang;ROS) - (90&deg; - &ang;ROS)<br/>
-          &ang;QOS - &ang;POS = 2 &ang;ROS<br/>
-          <strong>&ang;ROS = 1/2 (&ang;QOS - &ang;POS)</strong>. Hence proved.
+          ∠QOS − ∠POS = (90° + ∠ROS) − (90° − ∠ROS)<br/>
+          ∠QOS − ∠POS = 2∠ROS<br/>
+          ∠ROS = <span class='frac'><span class='num'>1</span><span class='den'>2</span></span>(∠QOS − ∠POS)<br/>
+          <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val">∠ROS = <span class='frac'><span class='num'>1</span><span class='den'>2</span></span>(∠QOS − ∠POS) (Hence proved)</span></div>
         </div>
 
         <div class="question">6. It is given that &ang;XYZ = 64&deg; and XY is produced to point P. Draw a figure from the given information. If ray YQ bisects &ang;ZYP, find &ang;XYQ and reflex &ang;QYP.</div>
         <svg viewBox="0 0 200 120" class="ex-img">
           <line x1="20" y1="100" x2="180" y2="100" stroke="white" stroke-width="2" />
-          <line x1="100" y1="100" x2="160" y2="40" stroke="white" stroke-width="2" />
-          <line x1="100" y1="100" x2="40" y2="40" stroke="white" stroke-width="2" />
-          <text x="15" y="115" fill="white" font-size="12">P</text>
-          <text x="95" y="115" fill="white" font-size="12">Y</text>
-          <text x="185" y="115" fill="white" font-size="12">X</text>
-          <text x="165" y="35" fill="white" font-size="12">Z</text>
-          <text x="35" y="35" fill="white" font-size="12">Q</text>
-          <text x="140" y="90" fill="#66BB6A" font-size="12">64&deg;</text>
+          <line x1="100" y1="100" x2="132.88" y2="32.59" stroke="white" stroke-width="2" />
+          <line x1="100" y1="100" x2="60.26" y2="36.4" stroke="white" stroke-width="2" />
+          <text x="8" y="104" fill="white" font-size="12">P</text>
+          <text x="184" y="104" fill="white" font-size="12">X</text>
+          <text x="96" y="116" fill="white" font-size="12">Y</text>
+          <text x="134.88" y="30.59" fill="white" font-size="12">Z</text>
+          <text x="50.26" y="34.4" fill="white" font-size="12">Q</text>
+          <path d="M 118 100 A 18 18 0 0 0 107.89 83.82" stroke="#66BB6A" fill="none" stroke-width="1.5" />
+          <text x="121.44" y="88.1" fill="#66BB6A" font-size="12">64°</text>
+          <path d="M 105.26 89.21 A 12 12 0 0 0 93.64 89.82" stroke="#66BB6A" fill="none" stroke-width="1.5" />
+          <path d="M 93.64 89.82 A 12 12 0 0 0 88 100" stroke="#66BB6A" fill="none" stroke-width="1.5" />
         </svg>
         <div class="solution">
-          First, draw a line XY and produce it to P. Draw &ang;XYZ = 64&deg;. Bisect &ang;ZYP with ray YQ.<br/>
-          &ang;XYZ + &ang;ZYP = 180&deg; (Linear pair).<br/>
-          64&deg; + &ang;ZYP = 180&deg; &rArr; &ang;ZYP = 116&deg;.<br/>
-          Since YQ bisects &ang;ZYP, &ang;ZYQ = &ang;QYP = 116&deg;/2 = 58&deg;.<br/>
-          &ang;XYQ = &ang;XYZ + &ang;ZYQ = 64&deg; + 58&deg; = <strong>122&deg;</strong>.<br/>
-          Reflex &ang;QYP = 360&deg; - 58&deg; = <strong>302&deg;</strong>.
+          <strong>Solution:</strong><br/>
+          Figure: draw ∠XYZ = 64°, produce XY to P, and draw ray YQ bisecting ∠ZYP (see the figure).<br/>
+          XY is produced to P, so XYP is a straight line.<br/>
+          Linear pair:<br/>
+          ∠XYZ + ∠ZYP = 180°<br/>
+          64° + ∠ZYP = 180°<br/>
+          ∠ZYP = 116°<br/>
+          YQ bisects ∠ZYP:<br/>
+          ∠ZYQ = ∠QYP = <span class='frac'><span class='num'>116°</span><span class='den'>2</span></span> = 58°<br/>
+          ∠XYQ = ∠XYZ + ∠ZYQ<br/>
+          = 64° + 58° = 122°<br/>
+          Reflex ∠QYP = 360° − ∠QYP<br/>
+          = 360° − 58° = 302°<br/>
+          <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val">∠XYQ = 122°, reflex ∠QYP = 302°</span></div>
         </div>
       </div>
 `,
@@ -378,265 +420,209 @@ export const c9Math5: ChapterContent = {
         svg rect { stroke: rgba(255, 255, 255, 0.8); stroke-width: 0.5px; }
       </style>
 <div class="container">
-        <div class="question">1. In Fig. 5.38, find the values of x and y and then show that AB || CD.</div>
-        <svg viewBox="0 0 200 120" class="ex-img">
-          <line x1="20" y1="40" x2="180" y2="40" stroke="white" stroke-width="2" />
-          <line x1="20" y1="90" x2="180" y2="90" stroke="white" stroke-width="2" />
-          <line x1="60" y1="10" x2="140" y2="110" stroke="white" stroke-width="2" />
-          <text x="25" y="35" fill="white" font-size="12">A</text><text x="170" y="35" fill="white" font-size="12">B</text>
-          <text x="25" y="105" fill="white" font-size="12">C</text><text x="170" y="105" fill="white" font-size="12">D</text>
-          <text x="80" y="25" fill="#66BB6A" font-size="12">50&deg;</text>
-          <text x="95" y="55" fill="#66BB6A" font-size="12">x</text>
-          <text x="105" y="85" fill="#66BB6A" font-size="12">y</text>
-          <text x="135" y="105" fill="#66BB6A" font-size="12">130&deg;</text>
-        </svg>
-        <div class="solution">
-          On the transversal line: 50&deg; + x = 180&deg; (Linear pair) &rArr; <strong>x = 130&deg;</strong>.<br/>
-          Also, y = 130&deg; (Vertically opposite angles) &rArr; <strong>y = 130&deg;</strong>.<br/>
-          Since x = y = 130&deg; and they are alternate interior angles,<br/>
-          <strong>AB || CD</strong>.
-        </div>
-
-        <div class="question">2. In Fig. 5.39, if AB || CD, CD || EF and y : z = 3 : 7, find x.</div>
-        <svg viewBox="0 0 200 150" class="ex-img">
+        <div class="question">1. In Fig. 5.31, if AB ∥ CD, CD ∥ EF and y : z = 3 : 7, find x.</div>
+        <svg viewBox="0 0 200 140" class="ex-img">
           <line x1="20" y1="30" x2="180" y2="30" stroke="white" stroke-width="2" />
-          <line x1="20" y1="75" x2="180" y2="75" stroke="white" stroke-width="2" />
-          <line x1="20" y1="120" x2="180" y2="120" stroke="white" stroke-width="2" />
-          <line x1="140" y1="10" x2="60" y2="140" stroke="white" stroke-width="2" />
-          <text x="25" y="25" fill="white" font-size="12">A</text><text x="170" y="25" fill="white" font-size="12">B</text>
-          <text x="25" y="70" fill="white" font-size="12">C</text><text x="170" y="70" fill="white" font-size="12">D</text>
-          <text x="25" y="115" fill="white" font-size="12">E</text><text x="170" y="115" fill="white" font-size="12">F</text>
-          <text x="110" y="45" fill="#66BB6A" font-size="12">x</text>
-          <text x="85" y="90" fill="#66BB6A" font-size="12">y</text>
-          <text x="75" y="115" fill="#66BB6A" font-size="12">z</text>
+          <line x1="20" y1="70" x2="180" y2="70" stroke="white" stroke-width="2" />
+          <line x1="20" y1="110" x2="180" y2="110" stroke="white" stroke-width="2" />
+          <line x1="55.47" y1="10" x2="142.65" y2="130" stroke="white" stroke-width="2" />
+          <text x="8" y="34" fill="white" font-size="12">A</text>
+          <text x="184" y="34" fill="white" font-size="12">B</text>
+          <text x="8" y="74" fill="white" font-size="12">C</text>
+          <text x="184" y="74" fill="white" font-size="12">D</text>
+          <text x="8" y="114" fill="white" font-size="12">E</text>
+          <text x="184" y="114" fill="white" font-size="12">F</text>
+          <path d="M 58 30 A 12 12 0 0 0 77.05 39.71" stroke="#66BB6A" fill="none" stroke-width="1.5" />
+          <text x="56.01" y="53.6" fill="#66BB6A" font-size="12">x</text>
+          <path d="M 107.29 81.33 A 14 14 0 0 0 113.06 70" stroke="#66BB6A" fill="none" stroke-width="1.5" />
+          <text x="116.44" y="84.9" fill="#66BB6A" font-size="12">y</text>
+          <path d="M 140.12 110 A 12 12 0 0 0 121.07 100.29" stroke="#66BB6A" fill="none" stroke-width="1.5" />
+          <text x="134.11" y="94.4" fill="#66BB6A" font-size="12">z</text>
         </svg>
         <div class="solution">
-          Given: AB || CD and CD || EF, so AB || EF.<br/>
-          Thus, x = z (Alternate interior angles).<br/>
-          Also, x + y = 180&deg; (Co-interior angles) &rArr; z + y = 180&deg;.<br/>
-          Ratio y : z = 3 : 7. Let y = 3k and z = 7k.<br/>
-          3k + 7k = 180&deg; &rArr; 10k = 180&deg; &rArr; k = 18&deg;.<br/>
-          z = 7 &times; 18&deg; = 126&deg;.<br/>
-          &there4; <strong>x = 126&deg;</strong>.
+          <strong>Solution:</strong><br/>
+          AB ∥ CD and CD ∥ EF<br/>
+          Lines parallel to the same line are parallel to each other:<br/>
+          AB ∥ EF<br/>
+          y : z = 3 : 7, so let y = 3k and z = 7k<br/>
+          Interior angles on the same side of the transversal (CD ∥ EF) add up to 180°:<br/>
+          y + z = 180°<br/>
+          3k + 7k = 180°<br/>
+          10k = 180°<br/>
+          k = 18°<br/>
+          y = 3 × 18° = 54°<br/>
+          z = 7 × 18° = 126°<br/>
+          Alternate interior angles are equal (AB ∥ EF):<br/>
+          x = z<br/>
+          x = 126°<br/>
+          <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val">x = 126°</span></div>
         </div>
 
-        <div class="question">3. In Fig. 5.40, if AB || CD, EF &perp; CD and &ang;GED = 126&deg;, find &ang;AGE, &ang;GEF and &ang;FGE.</div>
-        <svg viewBox="0 0 200 120" class="ex-img">
+        <div class="question">2. In Fig. 5.32, if AB ∥ CD, EF ⊥ CD and ∠GED = 126°, find ∠AGE, ∠GEF and ∠FGE.</div>
+        <svg viewBox="0 0 200 140" class="ex-img">
           <line x1="20" y1="30" x2="180" y2="30" stroke="white" stroke-width="2" />
-          <line x1="20" y1="90" x2="180" y2="90" stroke="white" stroke-width="2" />
-          <line x1="120" y1="30" x2="80" y2="90" stroke="white" stroke-width="2" />
-          <line x1="120" y1="90" x2="120" y2="30" stroke="white" stroke-width="2" />
-          <text x="25" y="25" fill="white" font-size="12">A</text><text x="175" y="25" fill="white" font-size="12">B</text>
-          <text x="25" y="105" fill="white" font-size="12">C</text><text x="175" y="105" fill="white" font-size="12">D</text>
-          <text x="115" y="25" fill="white" font-size="12">F</text><text x="115" y="105" fill="white" font-size="12">E</text>
-          <text x="75" y="105" fill="white" font-size="12">G</text>
-          <rect x="120" y="80" width="10" height="10" fill="none" stroke="white" stroke-width="1" />
+          <line x1="20" y1="110" x2="180" y2="110" stroke="white" stroke-width="2" />
+          <line x1="120" y1="110" x2="120" y2="30" stroke="white" stroke-width="2" />
+          <line x1="61.88" y1="30" x2="120" y2="110" stroke="white" stroke-width="2" />
+          <rect x="120" y="100" width="10" height="10" fill="none" stroke="white" stroke-width="1" />
+          <text x="8" y="34" fill="white" font-size="12">A</text>
+          <text x="57.88" y="24" fill="white" font-size="12">G</text>
+          <text x="116" y="24" fill="white" font-size="12">F</text>
+          <text x="184" y="34" fill="white" font-size="12">B</text>
+          <text x="8" y="114" fill="white" font-size="12">C</text>
+          <text x="116" y="126" fill="white" font-size="12">E</text>
+          <text x="184" y="114" fill="white" font-size="12">D</text>
+          <path d="M 142 110 A 22 22 0 0 0 107.07 92.2" stroke="#66BB6A" fill="none" stroke-width="1.5" />
+          <text x="99.52" y="73.2" fill="#66BB6A" font-size="12">126°</text>
         </svg>
         <div class="solution">
-          Given: &ang;GED = 126&deg;.<br/>
-          1. &ang;AGE = &ang;GED (Alternate interior angles) &rArr; <strong>&ang;AGE = 126&deg;</strong>.<br/>
-          2. &ang;GEF = &ang;GED - &ang;FED = 126&deg; - 90&deg; = <strong>36&deg;</strong>.<br/>
-          3. &ang;FGE + &ang;AGE = 180&deg; (Linear pair) &rArr; &ang;FGE = 180&deg; - 126&deg; = <strong>54&deg;</strong>.
+          <strong>Solution:</strong><br/>
+          Alternate interior angles are equal (AB ∥ CD, transversal GE):<br/>
+          ∠AGE = ∠GED<br/>
+          ∠AGE = 126°<br/>
+          EF ⊥ CD, so ∠FED = 90°<br/>
+          ∠GEF = ∠GED − ∠FED<br/>
+          = 126° − 90°<br/>
+          = 36°<br/>
+          Linear pair on line AB:<br/>
+          ∠AGE + ∠FGE = 180°<br/>
+          126° + ∠FGE = 180°<br/>
+          ∠FGE = 180° − 126° = 54°<br/>
+          <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val">∠AGE = 126°, ∠GEF = 36°, ∠FGE = 54°</span></div>
         </div>
 
-        <div class="question">4. In Fig. 5.41, if PQ || ST, &ang;PQR = 110&deg; and &ang;RST = 130&deg;, find &ang;QRS.</div>
-        <svg viewBox="0 0 200 120" class="ex-img">
-          <line x1="20" y1="40" x2="80" y2="40" stroke="white" stroke-width="2" />
-          <line x1="120" y1="20" x2="180" y2="20" stroke="white" stroke-width="2" />
-          <line x1="80" y1="40" x2="100" y2="90" stroke="white" stroke-width="2" />
-          <line x1="100" y1="90" x2="120" y2="20" stroke="white" stroke-width="2" />
-          <text x="25" y="35" fill="white" font-size="12">P</text><text x="75" y="35" fill="white" font-size="12">Q</text>
-          <text x="125" y="15" fill="white" font-size="12">S</text><text x="175" y="15" fill="white" font-size="12">T</text>
-          <text x="95" y="105" fill="white" font-size="12">R</text>
+        <div class="question">3. In Fig. 5.33, if PQ ∥ ST, ∠PQR = 110° and ∠RST = 130°, find ∠QRS. [Hint : Draw a line parallel to ST through point R.]</div>
+        <svg viewBox="0 0 200 140" class="ex-img">
+          <line x1="30" y1="44.22" x2="76.06" y2="44.22" stroke="white" stroke-width="2" />
+          <line x1="157.85" y1="41.06" x2="190" y2="41.06" stroke="white" stroke-width="2" />
+          <line x1="76.06" y1="44.22" x2="100" y2="110" stroke="white" stroke-width="2" />
+          <line x1="100" y1="110" x2="157.85" y2="41.06" stroke="white" stroke-width="2" />
+          <line x1="30" y1="110" x2="180" y2="110" stroke="white" stroke-width="2" stroke-dasharray="4" />
+          <text x="18" y="48.22" fill="white" font-size="12">P</text>
+          <text x="74.06" y="38.22" fill="white" font-size="12">Q</text>
+          <text x="153.85" y="35.06" fill="white" font-size="12">S</text>
+          <text x="184" y="35.06" fill="white" font-size="12">T</text>
+          <text x="96" y="126" fill="white" font-size="12">R</text>
+          <text x="18" y="114" fill="white" font-size="12">X</text>
+          <text x="184" y="114" fill="white" font-size="12">Y</text>
+          <path d="M 64.06 44.22 A 12 12 0 0 0 80.16 55.5" stroke="#66BB6A" fill="none" stroke-width="1.5" />
+          <text x="58.29" y="67.88" fill="#66BB6A" font-size="12">110°</text>
+          <path d="M 150.14 50.25 A 12 12 0 0 0 169.85 41.06" stroke="#66BB6A" fill="none" stroke-width="1.5" />
+          <text x="166.85" y="67.58" fill="#66BB6A" font-size="12">130°</text>
         </svg>
         <div class="solution">
-          Draw a line EF || ST through R. Then EF || PQ.<br/>
-          &ang;PQR + &ang;QRE = 180&deg; (Co-interior angles) &rArr; 110&deg; + &ang;QRE = 180&deg; &rArr; &ang;QRE = 70&deg;.<br/>
-          &ang;RST + &ang;SRF = 180&deg; (Co-interior angles) &rArr; 130&deg; + &ang;SRF = 180&deg; &rArr; &ang;SRF = 50&deg;.<br/>
-          Since ERF is a straight line, &ang;QRE + &ang;QRS + &ang;SRF = 180&deg;.<br/>
-          70&deg; + &ang;QRS + 50&deg; = 180&deg; &rArr; <strong>&ang;QRS = 60&deg;</strong>.
+          <strong>Solution:</strong><br/>
+          Draw a line XY through R, parallel to ST (dotted line in the figure).<br/>
+          XY ∥ ST and PQ ∥ ST, so XY ∥ PQ<br/>
+          Interior angles on the same side add up to 180° (PQ ∥ XY, transversal QR):<br/>
+          ∠PQR + ∠QRX = 180°<br/>
+          110° + ∠QRX = 180°<br/>
+          ∠QRX = 70°<br/>
+          Interior angles on the same side add up to 180° (ST ∥ XY, transversal SR):<br/>
+          ∠RST + ∠SRY = 180°<br/>
+          130° + ∠SRY = 180°<br/>
+          ∠SRY = 50°<br/>
+          Angles on the straight line XY add up to 180°:<br/>
+          ∠QRX + ∠QRS + ∠SRY = 180°<br/>
+          70° + ∠QRS + 50° = 180°<br/>
+          ∠QRS = 180° − 120° = 60°<br/>
+          <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val">∠QRS = 60°</span></div>
         </div>
 
-        <div class="question">5. In Fig. 5.42, if AB || CD, &ang;APQ = 50&deg; and &ang;PRD = 127&deg;, find x and y.</div>
-        <svg viewBox="0 0 200 120" class="ex-img">
-          <line x1="20" y1="30" x2="180" y2="30" stroke="white" stroke-width="2" />
-          <line x1="20" y1="100" x2="180" y2="100" stroke="white" stroke-width="2" />
-          <line x1="100" y1="30" x2="60" y2="100" stroke="white" stroke-width="2" />
-          <line x1="100" y1="30" x2="140" y2="100" stroke="white" stroke-width="2" />
-          <text x="25" y="25" fill="white" font-size="12">A</text><text x="175" y="25" fill="white" font-size="12">B</text>
-          <text x="25" y="115" fill="white" font-size="12">C</text><text x="175" y="115" fill="white" font-size="12">D</text>
-          <text x="95" y="25" fill="white" font-size="12">P</text><text x="55" y="115" fill="white" font-size="12">Q</text><text x="135" y="115" fill="white" font-size="12">R</text>
-          <text x="85" y="45" fill="#66BB6A" font-size="12">50&deg;</text>
-          <text x="75" y="85" fill="#66BB6A" font-size="12">x</text>
-          <text x="100" y="55" fill="#66BB6A" font-size="12">y</text>
-          <text x="145" y="90" fill="#66BB6A" font-size="12">127&deg;</text>
+        <div class="question">4. In Fig. 5.34, if AB ∥ CD, ∠APQ = 50° and ∠PRD = 127°, find x and y.</div>
+        <svg viewBox="0 0 200 130" class="ex-img">
+          <line x1="10" y1="25" x2="190" y2="25" stroke="white" stroke-width="2" />
+          <line x1="10" y1="105" x2="190" y2="105" stroke="white" stroke-width="2" />
+          <line x1="100" y1="25" x2="32.87" y2="105" stroke="white" stroke-width="2" />
+          <line x1="100" y1="25" x2="160.28" y2="105" stroke="white" stroke-width="2" />
+          <text x="0" y="21" fill="white" font-size="12">A</text>
+          <text x="96" y="19" fill="white" font-size="12">P</text>
+          <text x="184" y="19" fill="white" font-size="12">B</text>
+          <text x="0" y="121" fill="white" font-size="12">C</text>
+          <text x="28.87" y="121" fill="white" font-size="12">Q</text>
+          <text x="156.28" y="121" fill="white" font-size="12">R</text>
+          <text x="184" y="121" fill="white" font-size="12">D</text>
+          <path d="M 86 25 A 14 14 0 0 0 91 35.72" stroke="#66BB6A" fill="none" stroke-width="1.5" />
+          <text x="59.47" y="39.47" fill="#66BB6A" font-size="12">50°</text>
+          <text x="95.23" y="50.99" fill="#66BB6A" font-size="12">y</text>
+          <path d="M 44.87 105 A 12 12 0 0 0 40.58 95.81" stroke="#66BB6A" fill="none" stroke-width="1.5" />
+          <text x="48.81" y="99.7" fill="#66BB6A" font-size="12">x</text>
+          <path d="M 172.28 105 A 12 12 0 0 0 153.06 95.42" stroke="#66BB6A" fill="none" stroke-width="1.5" />
+          <text x="169.28" y="86.48" fill="#66BB6A" font-size="12">127°</text>
         </svg>
         <div class="solution">
-          Given: AB || CD.<br/>
-          1. x = &ang;APQ (Alternate interior angles) &rArr; <strong>x = 50&deg;</strong>.<br/>
-          2. &ang;APR = &ang;PRD (Alternate interior angles).<br/>
-          50&deg; + y = 127&deg; &rArr; <strong>y = 77&deg;</strong>.
+          <strong>Solution:</strong><br/>
+          Alternate interior angles are equal (AB ∥ CD, transversal PQ):<br/>
+          x = ∠APQ<br/>
+          x = 50°<br/>
+          Alternate interior angles are equal (AB ∥ CD, transversal PR):<br/>
+          ∠APR = ∠PRD<br/>
+          ∠APR = 127°<br/>
+          ∠APR = ∠APQ + ∠QPR<br/>
+          127° = 50° + y<br/>
+          y = 127° − 50° = 77°<br/>
+          <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val">x = 50°, y = 77°</span></div>
         </div>
 
-        <div class="question">6. An incident ray AB strikes the mirror PQ at B, moves along BC and strikes RS at C. Prove AB || CD.</div>
-        <svg viewBox="0 0 200 120" class="ex-img">
-          <line x1="20" y1="30" x2="180" y2="30" stroke="white" stroke-width="2" stroke-dasharray="4,2" />
-          <line x1="20" y1="90" x2="180" y2="90" stroke="white" stroke-width="2" stroke-dasharray="4,2" />
-          <path d="M 40 60 L 80 30 L 120 90 L 160 60" stroke="#66BB6A" stroke-width="2" fill="none" />
-          <text x="20" y="25" fill="white" font-size="12">P</text><text x="180" y="25" fill="white" font-size="12">Q</text>
-          <text x="20" y="105" fill="white" font-size="12">R</text><text x="180" y="105" fill="white" font-size="12">S</text>
-          <text x="35" y="65" fill="white" font-size="12">A</text><text x="80" y="25" fill="white" font-size="12">B</text>
-          <text x="120" y="105" fill="white" font-size="12">C</text><text x="165" y="65" fill="white" font-size="12">D</text>
+        <div class="question">5. In Fig. 5.35, PQ and RS are two mirrors placed parallel to each other. An incident ray AB strikes the mirror PQ at B, the reflected ray moves along the path BC and strikes the mirror RS at C and again reflects back along CD. Prove that AB ∥ CD.</div>
+        <svg viewBox="0 0 200 140" class="ex-img">
+          <line x1="15" y1="25" x2="195" y2="25" stroke="white" stroke-width="2" />
+          <line x1="15" y1="115" x2="195" y2="115" stroke="white" stroke-width="2" />
+          <line x1="20" y1="25" x2="26" y2="19" stroke="white" stroke-width="1" />
+          <line x1="36" y1="25" x2="42" y2="19" stroke="white" stroke-width="1" />
+          <line x1="52" y1="25" x2="58" y2="19" stroke="white" stroke-width="1" />
+          <line x1="68" y1="25" x2="74" y2="19" stroke="white" stroke-width="1" />
+          <line x1="84" y1="25" x2="90" y2="19" stroke="white" stroke-width="1" />
+          <line x1="100" y1="25" x2="106" y2="19" stroke="white" stroke-width="1" />
+          <line x1="116" y1="25" x2="122" y2="19" stroke="white" stroke-width="1" />
+          <line x1="132" y1="25" x2="138" y2="19" stroke="white" stroke-width="1" />
+          <line x1="148" y1="25" x2="154" y2="19" stroke="white" stroke-width="1" />
+          <line x1="164" y1="25" x2="170" y2="19" stroke="white" stroke-width="1" />
+          <line x1="180" y1="25" x2="186" y2="19" stroke="white" stroke-width="1" />
+          <line x1="20" y1="115" x2="26" y2="121" stroke="white" stroke-width="1" />
+          <line x1="36" y1="115" x2="42" y2="121" stroke="white" stroke-width="1" />
+          <line x1="52" y1="115" x2="58" y2="121" stroke="white" stroke-width="1" />
+          <line x1="68" y1="115" x2="74" y2="121" stroke="white" stroke-width="1" />
+          <line x1="84" y1="115" x2="90" y2="121" stroke="white" stroke-width="1" />
+          <line x1="100" y1="115" x2="106" y2="121" stroke="white" stroke-width="1" />
+          <line x1="116" y1="115" x2="122" y2="121" stroke="white" stroke-width="1" />
+          <line x1="132" y1="115" x2="138" y2="121" stroke="white" stroke-width="1" />
+          <line x1="148" y1="115" x2="154" y2="121" stroke="white" stroke-width="1" />
+          <line x1="164" y1="115" x2="170" y2="121" stroke="white" stroke-width="1" />
+          <line x1="180" y1="115" x2="186" y2="121" stroke="white" stroke-width="1" />
+          <line x1="55.59" y1="74.15" x2="90" y2="25" stroke="white" stroke-width="2" />
+          <line x1="90" y1="25" x2="153.02" y2="115" stroke="white" stroke-width="2" />
+          <line x1="153.02" y1="115" x2="187.43" y2="65.85" stroke="white" stroke-width="2" />
+          <line x1="90" y1="25" x2="90" y2="70" stroke="white" stroke-width="2" stroke-dasharray="4" />
+          <line x1="153.02" y1="115" x2="153.02" y2="70" stroke="white" stroke-width="2" stroke-dasharray="4" />
+          <text x="5" y="41" fill="white" font-size="12">P</text>
+          <text x="86" y="16" fill="white" font-size="12">B</text>
+          <text x="187" y="41" fill="white" font-size="12">Q</text>
+          <text x="5" y="109" fill="white" font-size="12">R</text>
+          <text x="149.02" y="131" fill="white" font-size="12">C</text>
+          <text x="187" y="109" fill="white" font-size="12">S</text>
+          <text x="43.59" y="78.15" fill="white" font-size="12">A</text>
+          <text x="191.43" y="65.85" fill="white" font-size="12">D</text>
+          <text x="78" y="74" fill="white" font-size="12">M</text>
+          <text x="157.02" y="74" fill="white" font-size="12">N</text>
         </svg>
         <div class="solution">
-          Draw normals to the mirrors at B and C. Let them be BM and CN.<br/>
-          Since mirrors are parallel, normals are also parallel (BM || CN).<br/>
-          By law of reflection: &ang;i = &ang;r. Let &ang;1=&ang;2 and &ang;3=&ang;4.<br/>
-          Since BM || CN, &ang;2 = &ang;3 (Alternate interior angles).<br/>
-          Thus, 2 &ang;2 = 2 &ang;3 &rArr; &ang;ABC = &ang;BCD.<br/>
-          Since alternate interior angles are equal, <strong>AB || CD</strong>.
-        </div>
-      </div>
-`,
-    "ex5-3": `
-      <style>
-        .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
-        .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
-        .frac .den { padding: 0 2px; }
-        .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        
-        .question { color: #66BB6A; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
-        .solution { border-left: 3px solid #66BB6A; padding-left: 15px; margin-top: 15px; background: rgba(102, 187, 106, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
-        .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
-        
-        /* Overview styles */
-        .section-title { color: #66BB6A !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
-        .sub-header { color: #66BB6A !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
-        .formula-box { background: rgba(102, 187, 106, 0.05) !important; border-left: 4px solid #66BB6A !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
-        h2 { color: #66BB6A !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
-        h3 { color: #66BB6A !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
-        .highlight { color: #66BB6A !important; font-weight: 700; }
-        strong { color: #66BB6A !important; font-weight: 600; }
-        
-        /* Utility classes for step-by-step */
-        .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
-        .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
-        .ans-highlight { color: #66BB6A; font-weight: 700; }
-        .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
-        
-        /* Table styles */
-        table { width: 100%; border-collapse: collapse; margin: 15px auto; font-size: 15px; color: #e0e0e0; text-align: center; }
-        th { background: rgba(102, 187, 106, 0.05); color: #66BB6A; font-weight: 600; padding: 10px 8px; border: 1px solid rgba(255, 255, 255, 0.15); text-align: center; }
-        td { padding: 8px; border: 1px solid rgba(255, 255, 255, 0.1); text-align: center; }
-        
-        /* Bar graph styles */
-        svg rect { stroke: rgba(255, 255, 255, 0.8); stroke-width: 0.5px; }
-      </style>
-<div class="container">
-        <div class="question">1. In Fig. 5.49, sides QP and RQ of ∆ PQR are produced to points S and T respectively. If &ang;SPR = 135&deg; and &ang;PQT = 110&deg;, find &ang;PRQ.</div>
-        <svg viewBox="0 0 200 120" class="ex-img">
-          <line x1="50" y1="100" x2="150" y2="100" stroke="white" stroke-width="2" />
-          <line x1="150" y1="100" x2="80" y2="30" stroke="white" stroke-width="2" />
-          <line x1="80" y1="30" x2="80" y2="120" stroke="white" stroke-width="2" />
-          <line x1="50" y1="100" x2="20" y2="100" stroke="white" stroke-width="2" />
-          <text x="85" y="45" fill="white" font-size="12">P</text><text x="75" y="105" fill="white" font-size="12">Q</text><text x="155" y="105" fill="white" font-size="12">R</text>
-          <text x="85" y="25" fill="white" font-size="12">S</text><text x="15" y="105" fill="white" font-size="12">T</text>
-        </svg>
-        <div class="solution">
-          &ang;QPR + &ang;SPR = 180&deg; (Linear pair) &rArr; &ang;QPR = 180&deg; - 135&deg; = 45&deg;.<br/>
-          &ang;PQT + &ang;PQR = 180&deg; (Linear pair) &rArr; &ang;PQR = 180&deg; - 110&deg; = 70&deg;.<br/>
-          In ∆ PQR: &ang;QPR + &ang;PQR + &ang;PRQ = 180&deg;.<br/>
-          45&deg; + 70&deg; + &ang;PRQ = 180&deg; &rArr; <strong>&ang;PRQ = 65&deg;</strong>.
-        </div>
-
-        <div class="question">2. In Fig. 5.50, &ang;X = 62&deg;, &ang;XYZ = 54&deg;. If YO and ZO are bisectors of &ang;XYZ and &ang;XZY respectively of ∆ XYZ, find &ang;OZY and &ang;YOZ.</div>
-        <svg viewBox="0 0 200 120" class="ex-img">
-          <line x1="100" y1="20" x2="40" y2="100" stroke="white" stroke-width="2" />
-          <line x1="100" y1="20" x2="160" y2="100" stroke="white" stroke-width="2" />
-          <line x1="40" y1="100" x2="160" y2="100" stroke="white" stroke-width="2" />
-          <line x1="40" y1="100" x2="100" y2="70" stroke="white" stroke-width="2" />
-          <line x1="160" y1="100" x2="100" y2="70" stroke="white" stroke-width="2" />
-          <text x="95" y="15" fill="white" font-size="12">X</text><text x="35" y="115" fill="white" font-size="12">Y</text><text x="160" y="115" fill="white" font-size="12">Z</text><text x="95" y="65" fill="white" font-size="12">O</text>
-        </svg>
-        <div class="solution">
-          In ∆ XYZ: &ang;X + &ang;XYZ + &ang;XZY = 180&deg;.<br/>
-          62&deg; + 54&deg; + &ang;XZY = 180&deg; &rArr; &ang;XZY = 64&deg;.<br/>
-          Since YO bisects &ang;XYZ, &ang;OYZ = 54&deg;/2 = 27&deg;.<br/>
-          Since ZO bisects &ang;XZY, <strong>&ang;OZY = 64&deg;/2 = 32&deg;</strong>.<br/>
-          In ∆ OYZ: &ang;OYZ + &ang;OZY + &ang;YOZ = 180&deg;.<br/>
-          27&deg; + 32&deg; + &ang;YOZ = 180&deg; &rArr; <strong>&ang;YOZ = 121&deg;</strong>.
-        </div>
-
-        <div class="question">3. In Fig. 5.51, if AB || DE, &ang;BAC = 35&deg; and &ang;CDE = 53&deg;, find &ang;DCE.</div>
-        <svg viewBox="0 0 200 120" class="ex-img">
-          <line x1="20" y1="30" x2="100" y2="30" stroke="white" stroke-width="2" />
-          <line x1="50" y1="100" x2="180" y2="100" stroke="white" stroke-width="2" />
-          <line x1="100" y1="30" x2="50" y2="100" stroke="white" stroke-width="2" />
-          <text x="25" y="25" fill="white" font-size="12">A</text><text x="105" y="35" fill="white" font-size="12">B</text>
-          <text x="45" y="115" fill="white" font-size="12">D</text><text x="175" y="115" fill="white" font-size="12">E</text>
-          <text x="70" y="65" fill="white" font-size="12">C</text>
-        </svg>
-        <div class="solution">
-          Given: AB || DE.<br/>
-          &ang;CED = &ang;BAC (Alternate interior angles) &rArr; &ang;CED = 35&deg;.<br/>
-          In ∆ CDE: &ang;DCE + &ang;CDE + &ang;CED = 180&deg;.<br/>
-          &ang;DCE + 53&deg; + 35&deg; = 180&deg; &rArr; <strong>&ang;DCE = 92&deg;</strong>.
-        </div>
-
-        <div class="question">4. In Fig. 5.52, if lines PQ and RS intersect at point T, find &ang;SQT.</div>
-        <svg viewBox="0 0 200 120" class="ex-img">
-          <line x1="40" y1="20" x2="160" y2="100" stroke="white" stroke-width="2" />
-          <line x1="40" y1="100" x2="160" y2="20" stroke="white" stroke-width="2" />
-          <line x1="40" y1="20" x2="40" y2="100" stroke="white" stroke-width="2" />
-          <line x1="160" y1="20" x2="160" y2="100" stroke="white" stroke-width="2" />
-          <text x="35" y="15" fill="white" font-size="12">P</text><text x="165" y="15" fill="white" font-size="12">S</text>
-          <text x="35" y="115" fill="white" font-size="12">R</text><text x="165" y="115" fill="white" font-size="12">Q</text>
-          <text x="105" y="65" fill="white" font-size="12">T</text>
-        </svg>
-        <div class="solution">
-          In ∆ PRT: &ang;P + &ang;R + &ang;PTR = 180&deg;.<br/>
-          95&deg; + 40&deg; + &ang;PTR = 180&deg; &rArr; &ang;PTR = 45&deg;.<br/>
-          &ang;STQ = &ang;PTR = 45&deg; (Vertically opposite angles).<br/>
-          In ∆ TSQ: &ang;STQ + &ang;S + &ang;SQT = 180&deg;.<br/>
-          45&deg; + 75&deg; + &ang;SQT = 180&deg; &rArr; <strong>&ang;SQT = 60&deg;</strong>.
-        </div>
-
-        <div class="question">5. In Fig. 5.53, if PQ &perp; PS, PQ || SR, find x and y.</div>
-        <svg viewBox="0 0 200 120" class="ex-img">
-          <line x1="40" y1="30" x2="140" y2="30" stroke="white" stroke-width="2" />
-          <line x1="40" y1="30" x2="40" y2="90" stroke="white" stroke-width="2" />
-          <line x1="40" y1="90" x2="160" y2="90" stroke="white" stroke-width="2" />
-          <line x1="140" y1="30" x2="100" y2="90" stroke="white" stroke-width="2" />
-          <line x1="140" y1="30" x2="40" y2="90" stroke="white" stroke-width="2" />
-          <text x="35" y="25" fill="white" font-size="12">P</text><text x="145" y="25" fill="white" font-size="12">Q</text>
-          <text x="35" y="105" fill="white" font-size="12">S</text><text x="95" y="105" fill="white" font-size="12">R</text>
-          <text x="165" y="105" fill="white" font-size="12">T</text>
-        </svg>
-        <div class="solution">
-          &ang;QRT = &ang;PQR (Alternate interior angles).<br/>
-          65&deg; = x + 28&deg; &rArr; <strong>x = 37&deg;</strong>.<br/>
-          In ∆ PQS: &ang;P + x + y = 180&deg;.<br/>
-          90&deg; + 37&deg; + y = 180&deg; &rArr; <strong>y = 53&deg;</strong>.
-        </div>
-
-        <div class="question">6. Prove &ang;QTR = 1/2 &ang;QPR.</div>
-        <svg viewBox="0 0 200 120" class="ex-img">
-          <line x1="20" y1="100" x2="180" y2="100" stroke="white" stroke-width="2" />
-          <line x1="140" y1="100" x2="180" y2="30" stroke="white" stroke-width="2" />
-          <line x1="60" y1="100" x2="180" y2="30" stroke="white" stroke-width="2" />
-          <line x1="140" y1="100" x2="80" y2="30" stroke="white" stroke-width="2" />
-          <line x1="60" y1="100" x2="80" y2="30" stroke="white" stroke-width="2" />
-          <text x="75" y="25" fill="white" font-size="12">P</text><text x="55" y="115" fill="white" font-size="12">Q</text><text x="135" y="115" fill="white" font-size="12">R</text><text x="175" y="115" fill="white" font-size="12">S</text><text x="185" y="25" fill="white" font-size="12">T</text>
-        </svg>
-        <div class="solution">
-          In ∆ PQR: Exterior &ang;PRS = &ang;PQR + &ang;QPR --- (1)<br/>
-          In ∆ TQR: Exterior &ang;TRS = &ang;TQR + &ang;QTR --- (2)<br/>
-          Since QT and RT are bisectors: &ang;PQR = 2 &ang;TQR and &ang;PRS = 2 &ang;TRS.<br/>
-          From (1): 2 &ang;TRS = 2 &ang;TQR + &ang;QPR<br/>
-          &ang;TRS = &ang;TQR + 1/2 &ang;QPR<br/>
-          From (2): &ang;TRS = &ang;TQR + &ang;QTR<br/>
-          So, &ang;TQR + &ang;QTR = &ang;TQR + 1/2 &ang;QPR &rArr; <strong>&ang;QTR = 1/2 &ang;QPR</strong>.
+          <strong>Solution:</strong><br/>
+          Draw BM ⊥ PQ and CN ⊥ RS (the normals, dotted in the figure).<br/>
+          PQ ∥ RS, and lines perpendicular to parallel lines are parallel:<br/>
+          BM ∥ CN<br/>
+          Alternate interior angles are equal (BM ∥ CN, transversal BC):<br/>
+          ∠MBC = ∠BCN ...(1)<br/>
+          Angle of incidence = angle of reflection:<br/>
+          ∠ABM = ∠MBC ...(2)<br/>
+          ∠BCN = ∠NCD ...(3)<br/>
+          From (1), (2) and (3):<br/>
+          ∠ABM = ∠NCD ...(4)<br/>
+          Adding (1) and (4):<br/>
+          ∠ABM + ∠MBC = ∠BCN + ∠NCD<br/>
+          ∠ABC = ∠BCD<br/>
+          ∠ABC and ∠BCD are alternate interior angles for lines AB and CD with transversal BC, and they are equal.<br/>
+          <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val">AB ∥ CD (Hence proved)</span></div>
         </div>
       </div>
 `,
