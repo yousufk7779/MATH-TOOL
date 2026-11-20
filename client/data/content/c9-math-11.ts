@@ -7,10 +7,7 @@ export const c9Math11: ChapterContent = {
   introduction:
     "In this chapter, we explore the collection, presentation, analysis, and interpretation of numerical data.",
   exercises: [
-    { id: "ex11.1", name: "Exercise 11.1", questions: [] },
-    { id: "ex11.2", name: "Exercise 11.2", questions: [] },
-    { id: "ex11.3", name: "Exercise 11.3", questions: [] },
-    { id: "ex11.4", name: "Exercise 11.4", questions: [] },
+    { id: "ex11.1", name: "Ex 11.1", questions: [] },
   ],
   examples: [],
   theorems: [],
@@ -32,9 +29,9 @@ export const c9Math11: ChapterContent = {
     {
       id: "m3",
       question:
-        "The mean of five numbers is 30. If one number is excluded, their mean becomes 28. The excluded number is:",
-      options: ["28", "30", "35", "38"],
-      correctAnswer: "D",
+        "In a histogram with unequal class widths, the heights of the rectangles are taken as the:",
+      options: ["Class marks", "Class widths", "Adjusted frequencies", "Upper class limits"],
+      correctAnswer: "C",
     },
     {
       id: "m4",
@@ -57,21 +54,23 @@ export const c9Math11: ChapterContent = {
     },
     {
       id: "m7",
-      question: "Which of the following is NOT a measure of central tendency?",
-      options: ["Mean", "Median", "Mode", "Range"],
-      correctAnswer: "D",
+      question:
+        "In a bar graph, the bars:",
+      options: ["Must touch each other", "Have equal widths with equal gaps between them", "Have widths equal to the class size", "Are drawn only for continuous classes"],
+      correctAnswer: "B",
     },
     {
       id: "m8",
-      question: "The mode of the data: 2, 2, 3, 4, 4, 4, 5 is:",
-      options: ["2", "3", "4", "5"],
-      correctAnswer: "C",
+      question:
+        "In a histogram, the minimum class width is 2. The class 6 – 10 has frequency 16. The adjusted frequency (height of its rectangle) is:",
+      options: ["4", "8", "16", "32"],
+      correctAnswer: "B",
     },
     {
       id: "m9",
       question:
-        "The value of the observation which occurs most frequently is called:",
-      options: ["Mean", "Median", "Mode", "Range"],
+        "In a frequency polygon, the frequencies are plotted against the:",
+      options: ["Upper class limits", "Lower class limits", "Class marks", "Class widths"],
       correctAnswer: "C",
     },
     {
@@ -136,14 +135,7 @@ export const c9Math11: ChapterContent = {
         <div class="step"><b>1. Collection of Data:</b></div>
         <div class="step">Data collected by the investigator himself/herself with a definite objective in mind is called <b>Primary Data</b>. Data collected from a source which already had the information is called <b>Secondary Data</b>.</div>
 
-        <div class="step"><b>2. Measures of Central Tendency:</b></div>
-        <div class="formula-box">
-            <b>Mean:</b> Sum of observations / Number of observations<br/>
-            <b>Median:</b> Middle value of data when arranged in ascending/descending order.<br/>
-            <b>Mode:</b> The value that occurs most frequently.
-        </div>
-
-        <div class="step"><b>3. Graphical Representation:</b></div>
+        <div class="step"><b>2. Graphical Representation:</b></div>
         <div class="step">Data can be visualized using <b>Bar Graphs</b>, <b>Histograms</b> (for continuous classes), and <b>Frequency Polygons</b>.</div>
     </div>
 </body>
@@ -185,512 +177,554 @@ export const c9Math11: ChapterContent = {
         /* Bar graph styles */
         svg rect { stroke: rgba(255, 255, 255, 0.8); stroke-width: 0.5px; }
       </style>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    
-</head>
-<body>
-    <div class="content-box">
-        <div class="question">1. Give five examples of data that you can collect from your day-to-day life.</div>
-        <div class="solution-header">Solution:</div>
-        <div class="step">Five examples of data from daily life are:</div>
-        <div class="step">1. Number of students in our class.</div>
-        <div class="step">2. Number of fans in our school.</div>
-        <div class="step">3. Electricity bills of our house for last two years.</div>
-        <div class="step">4. Election results obtained from television or newspapers.</div>
-        <div class="step">5. Literacy rate figures obtained from educational survey.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">2. Classify the data in Q.1 above as primary or secondary data.</div>
-        <div class="solution-header">Solution:</div>
-        <div class="step">Based on the examples in Question 1:</div>
-        <div class="step"><b>Primary Data:</b> Examples 1, 2, and 3 (collected personally).</div>
-        <div class="step"><b>Secondary Data:</b> Examples 4 and 5 (obtained from an external source).</div>
-    </div>
-</body>
-</html>
-`,
-    "ex11.2": `
-      <style>
-        .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
-        .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
-        .frac .den { padding: 0 2px; }
-        .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        
-        .question { color: #FF4DA6; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
-        .solution { border-left: 3px solid #FF4DA6; padding-left: 15px; margin-top: 15px; background: rgba(255, 77, 166, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
-        .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
-        
-        /* Overview styles */
-        .section-title { color: #FF4DA6 !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
-        .sub-header { color: #FF4DA6 !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
-        .formula-box { background: rgba(255, 77, 166, 0.05) !important; border-left: 4px solid #FF4DA6 !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
-        h2 { color: #FF4DA6 !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
-        h3 { color: #FF4DA6 !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
-        .highlight { color: #FF4DA6 !important; font-weight: 700; }
-        strong { color: #FF4DA6 !important; font-weight: 600; }
-        
-        /* Utility classes for step-by-step */
-        .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
-        .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
-        .ans-highlight { color: #FF4DA6; font-weight: 700; }
-        .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
-        
-        /* Table styles */
-        table { width: 100%; border-collapse: collapse; margin: 15px auto; font-size: 15px; color: #e0e0e0; text-align: center; }
-        th { background: rgba(255, 77, 166, 0.05); color: #FF4DA6; font-weight: 600; padding: 10px 8px; border: 1px solid rgba(255, 255, 255, 0.15); text-align: center; }
-        td { padding: 8px; border: 1px solid rgba(255, 255, 255, 0.1); text-align: center; }
-        
-        /* Bar graph styles */
-        svg rect { stroke: rgba(255, 255, 255, 0.8); stroke-width: 0.5px; }
-      </style>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    
-</head>
-<body>
-    <div class="content-box">
-        <div class="question">1. The blood groups of 30 students of Class VIII are recorded as follows:<br/>A, B, O, O, AB, O, A, O, B, A, O, B, A, O, O,<br/>A, AB, O, A, A, O, O, AB, B, A, O, B, A, B, O.<br/>Represent this data in the form of a frequency distribution table. Which is the most common, and which is the rarest, blood group among these students?</div>
-        <div class="solution-header">Solution:</div>
-        <table align="center">
-            <tr><th>Blood Group</th><th>Frequency</th></tr>
-            <tr><td>A</td><td>9</td></tr>
-            <tr><td>B</td><td>6</td></tr>
-            <tr><td>O</td><td>12</td></tr>
-            <tr><td>AB</td><td>3</td></tr>
-            <tr><th>Total</th><th>30</th></tr>
-        </table>
-        <div class="step">The most common blood group is <b>O</b> (frequency 12).</div>
-        <div class="step">The rarest blood group is <b>AB</b> (frequency 3).</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">2. The distance (in km) of 40 engineers from their residence to their place of work were found as follows:<br/>5, 3, 10, 20, 25, 11, 13, 7, 12, 31, 19, 10, 12, 17, 18, 11, 32, 17, 16, 2, 7, 9, 7, 8, 3, 5, 12, 15, 18, 3, 12, 14, 2, 9, 6, 15, 15, 7, 6, 12.<br/>Construct a grouped frequency distribution table with class size 5.</div>
-        <div class="solution-header">Solution:</div>
-        <table align="center">
-            <tr><th>Distances (km)</th><th>Frequency</th></tr>
-            <tr><td>0 - 5</td><td>5</td></tr>
-            <tr><td>5 - 10</td><td>11</td></tr>
-            <tr><td>10 - 15</td><td>11</td></tr>
-            <tr><td>15 - 20</td><td>9</td></tr>
-            <tr><td>20 - 25</td><td>1</td></tr>
-            <tr><td>25 - 30</td><td>1</td></tr>
-            <tr><td>30 - 35</td><td>2</td></tr>
-            <tr><th>Total</th><th>40</th></tr>
-        </table>
-    </div>
-
-    <div class="content-box">
-        <div class="question">3. The relative humidity (in %) of a certain city for a month of 30 days was as follows:<br/>
-98.1 &nbsp; 98.6 &nbsp; 99.2 &nbsp; 90.3 &nbsp; 86.5 &nbsp; 95.3 &nbsp; 92.9 &nbsp; 96.3 &nbsp; 94.2 &nbsp; 95.1<br/>
-89.2 &nbsp; 92.3 &nbsp; 97.1 &nbsp; 93.5 &nbsp; 92.7 &nbsp; 95.1 &nbsp; 97.2 &nbsp; 93.3 &nbsp; 95.2 &nbsp; 97.3<br/>
-96.2 &nbsp; 92.1 &nbsp; 84.9 &nbsp; 90.2 &nbsp; 95.7 &nbsp; 98.3 &nbsp; 97.3 &nbsp; 96.1 &nbsp; 92.1 &nbsp; 89<br/><br/>
-(i) Construct a grouped frequency distribution table with classes 84 - 86, 86 - 88, etc.<br/>
-(ii) Which month or season do you think this data is about?<br/>
-(iii) What is the range of this data?</div>
-        <div class="solution-header">Solution:</div>
-        <table align="center">
-            <tr><th>Humidity (%)</th><th>Frequency</th></tr>
-            <tr><td>84 - 86</td><td>1</td></tr>
-            <tr><td>86 - 88</td><td>1</td></tr>
-            <tr><td>88 - 90</td><td>2</td></tr>
-            <tr><td>90 - 92</td><td>2</td></tr>
-            <tr><td>92 - 94</td><td>7</td></tr>
-            <tr><td>94 - 96</td><td>6</td></tr>
-            <tr><td>96 - 98</td><td>7</td></tr>
-            <tr><td>98 - 100</td><td>4</td></tr>
-            <tr><th>Total</th><th>30</th></tr>
-        </table>
-        <div class="step">(ii) Season: <b>Rainy Season</b>.</div>
-        <div class="step">(iii) Range = 99.2 - 84.9 = <b>14.3%</b>.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">4. The heights of 50 students, measured to the nearest centimetres, have been found to be as follows:<br/>
-161 &nbsp; 150 &nbsp; 154 &nbsp; 165 &nbsp; 168 &nbsp; 161 &nbsp; 154 &nbsp; 162 &nbsp; 150 &nbsp; 151<br/>
-162 &nbsp; 164 &nbsp; 171 &nbsp; 165 &nbsp; 158 &nbsp; 154 &nbsp; 156 &nbsp; 172 &nbsp; 160 &nbsp; 170<br/>
-153 &nbsp; 159 &nbsp; 161 &nbsp; 170 &nbsp; 162 &nbsp; 165 &nbsp; 166 &nbsp; 168 &nbsp; 165 &nbsp; 164<br/>
-154 &nbsp; 152 &nbsp; 153 &nbsp; 156 &nbsp; 158 &nbsp; 162 &nbsp; 160 &nbsp; 161 &nbsp; 173 &nbsp; 166<br/>
-161 &nbsp; 159 &nbsp; 162 &nbsp; 167 &nbsp; 168 &nbsp; 159 &nbsp; 158 &nbsp; 153 &nbsp; 154 &nbsp; 159<br/><br/>
-(i) Represent the data given above by a grouped frequency distribution table, taking the class intervals as 160 - 165, 165 - 170, etc.<br/>
-(ii) What can you conclude about their heights from the table?</div>
-        <div class="solution-header">Solution:</div>
-        <table align="center">
-            <tr><th>Height (cm)</th><th>Frequency</th></tr>
-            <tr><td>150 - 155</td><td>12</td></tr>
-            <tr><td>155 - 160</td><td>9</td></tr>
-            <tr><td>160 - 165</td><td>14</td></tr>
-            <tr><td>165 - 170</td><td>10</td></tr>
-            <tr><td>170 - 175</td><td>5</td></tr>
-            <tr><th>Total</th><th>50</th></tr>
-        </table>
-        <div class="step">(ii) <b>Conclusion:</b> More than 50% of students are shorter than 165 cm.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">5. A study was conducted to find out the concentration of sulphur dioxide in the air in parts per million (ppm) of a certain city. The data obtained for 30 days is as follows:<br/>
-0.03 &nbsp; 0.08 &nbsp; 0.08 &nbsp; 0.09 &nbsp; 0.04 &nbsp; 0.17 &nbsp; 0.16 &nbsp; 0.05 &nbsp; 0.02 &nbsp; 0.06<br/>
-0.18 &nbsp; 0.20 &nbsp; 0.11 &nbsp; 0.08 &nbsp; 0.12 &nbsp; 0.13 &nbsp; 0.22 &nbsp; 0.07 &nbsp; 0.08 &nbsp; 0.01<br/>
-0.10 &nbsp; 0.06 &nbsp; 0.09 &nbsp; 0.18 &nbsp; 0.11 &nbsp; 0.07 &nbsp; 0.05 &nbsp; 0.07 &nbsp; 0.01 &nbsp; 0.04<br/><br/>
-(i) Make a grouped frequency distribution table for this data with class intervals as 0.00 - 0.04, 0.04 - 0.08, and so on.<br/>
-(ii) For how many days, was the concentration of sulphur dioxide more than 0.11 ppm?</div>
-        <div class="solution-header">Solution:</div>
-        <table align="center">
-            <tr><th>Conc. of SO₂ (ppm)</th><th>Frequency</th></tr>
-            <tr><td>0.00 - 0.04</td><td>4</td></tr>
-            <tr><td>0.04 - 0.08</td><td>9</td></tr>
-            <tr><td>0.08 - 0.12</td><td>9</td></tr>
-            <tr><td>0.12 - 0.16</td><td>2</td></tr>
-            <tr><td>0.16 - 0.20</td><td>4</td></tr>
-            <tr><td>0.20 - 0.24</td><td>2</td></tr>
-            <tr><th>Total</th><th>30</th></tr>
-        </table>
-        <div class="step">Days with concentration > 0.11 ppm: 2+4+2 = <b>8 days</b>.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">6. Three coins were tossed 30 times simultaneously. Each time the number of heads occurring was noted down as follows:<br/>0, 1, 2, 2, 1, 2, 3, 1, 3, 0, 1, 3, 1, 1, 2, 2, 0, 1, 2, 1, 3, 0, 0, 1, 1, 2, 3, 2, 2, 0.<br/>Prepare a frequency distribution table.</div>
-        <div class="solution-header">Solution:</div>
-        <table align="center">
-            <tr><th>Number of Heads</th><th>Frequency</th></tr>
-            <tr><td>0</td><td>6</td></tr>
-            <tr><td>1</td><td>10</td></tr>
-            <tr><td>2</td><td>9</td></tr>
-            <tr><td>3</td><td>5</td></tr>
-            <tr><th>Total</th><th>30</th></tr>
-        </table>
-    </div>
-
-    <div class="content-box">
-        <div class="question">7. The value of π up to 50 decimal places is given below:<br/>3.14159265358979323846264338327950288419716939937510<br/>(i) Make a frequency distribution of digits from 0 to 9 after the decimal point.</div>
-        <div class="solution-header">Solution:</div>
-        <table align="center">
-            <tr><th>Digit</th><th>Frequency</th><th>Digit</th><th>Frequency</th></tr>
-            <tr><td>0</td><td>2</td><td>1</td><td>5</td></tr>
-            <tr><td>2</td><td>5</td><td>3</td><td>8</td></tr>
-            <tr><td>4</td><td>4</td><td>5</td><td>5</td></tr>
-            <tr><td>6</td><td>4</td><td>7</td><td>4</td></tr>
-            <tr><td>8</td><td>5</td><td>9</td><td>8</td></tr>
-        </table>
-        <div class="step">Most occurring digits: <b>3</b> and <b>9</b> (8 times each).</div>
-        <div class="step">Least occurring digit: <b>0</b> (2 times).</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">8. Thirty children were asked about the number of hours they watched TV programmes in the previous week. The results were found as follows:<br/>1, 6, 2, 3, 5, 12, 5, 8, 4, 8, 10, 3, 4, 12, 2, 8, 15, 1, 17, 6, 3, 2, 8, 5, 9, 6, 8, 7, 14, 12.</div>
-        <div class="solution-header">Solution:</div>
-        <table align="center">
-            <tr><th>Hours</th><th>Frequency</th></tr>
-            <tr><td>0 - 5</td><td>10</td></tr>
-            <tr><td>5 - 10</td><td>13</td></tr>
-            <tr><td>10 - 15</td><td>5</td></tr>
-            <tr><td>15 - 20</td><td>2</td></tr>
-            <tr><th>Total</th><th>30</th></tr>
-        </table>
-        <div class="step">How many children watched for 15 or more hours? <b>2 children</b>.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">9. A company manufactures car batteries of a particular type. The lives (in years) of 40 such batteries were recorded as follows:<br/>2.6, 3.0, 3.7, 3.2, 2.2, 4.1, 3.5, 4.5, 3.5, 2.3, 3.2, 3.4, 3.8, 3.2, 4.6, 3.7, 2.5, 4.4, 3.4, 3.3, 2.9, 3.0, 4.3, 2.8, 3.5, 3.2, 3.9, 3.2, 3.2, 3.1, 3.7, 3.4, 4.6, 3.8, 3.2, 2.6, 3.5, 4.2, 2.9, 3.6.</div>
-        <div class="solution-header">Solution:</div>
-        <table align="center">
-            <tr><th>Life (Years)</th><th>Frequency</th></tr>
-            <tr><td>2.0 - 2.5</td><td>2</td></tr>
-            <tr><td>2.5 - 3.0</td><td>6</td></tr>
-            <tr><td>3.0 - 3.5</td><td>14</td></tr>
-            <tr><td>3.5 - 4.0</td><td>11</td></tr>
-            <tr><td>4.0 - 4.5</td><td>4</td></tr>
-            <tr><td>4.5 - 5.0</td><td>3</td></tr>
-            <tr><th>Total</th><th>40</th></tr>
-        </table>
-    </div>
-</body>
-</html>
-`,
-    "ex11.3": `
-      <style>
-        .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
-        .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
-        .frac .den { padding: 0 2px; }
-        .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        
-        .question { color: #FF4DA6; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
-        .solution { border-left: 3px solid #FF4DA6; padding-left: 15px; margin-top: 15px; background: rgba(255, 77, 166, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
-        .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
-        
-        /* Overview styles */
-        .section-title { color: #FF4DA6 !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
-        .sub-header { color: #FF4DA6 !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
-        .formula-box { background: rgba(255, 77, 166, 0.05) !important; border-left: 4px solid #FF4DA6 !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
-        h2 { color: #FF4DA6 !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
-        h3 { color: #FF4DA6 !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
-        .highlight { color: #FF4DA6 !important; font-weight: 700; }
-        strong { color: #FF4DA6 !important; font-weight: 600; }
-        
-        /* Utility classes for step-by-step */
-        .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
-        .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
-        .ans-highlight { color: #FF4DA6; font-weight: 700; }
-        .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
-        
-        /* Table styles */
-        table { width: 100%; border-collapse: collapse; margin: 15px auto; font-size: 15px; color: #e0e0e0; text-align: center; }
-        th { background: rgba(255, 77, 166, 0.05); color: #FF4DA6; font-weight: 600; padding: 10px 8px; border: 1px solid rgba(255, 255, 255, 0.15); text-align: center; }
-        td { padding: 8px; border: 1px solid rgba(255, 255, 255, 0.1); text-align: center; }
-        
-        /* Bar graph styles */
-        svg rect { stroke: rgba(255, 255, 255, 0.8); stroke-width: 0.5px; }
-      </style>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    
-</head>
-<body>
-    <div class="content-box">
-        <div class="question">1. Women Fatality Rates (%) worldwide. Represent graphically.</div>
-        <div class="solution-header">Solution:</div>
-        <div class="chart-container">
-            <svg viewBox="0 0 350 180">
-                <rect x="100" y="20" width="159" height="15" fill="#FF4081"/>
-                <rect x="100" y="45" width="127" height="15" fill="#FF4081"/>
-                <rect x="100" y="70" width="62" height="15" fill="#FF4081"/>
-                <rect x="100" y="95" width="21" height="15" fill="#FF4081"/>
-                <rect x="100" y="120" width="20" height="15" fill="#FF4081"/>
-                <rect x="100" y="145" width="110" height="15" fill="#FF4081"/>
-                <text x="95" y="32" fill="white" font-size="8" text-anchor="end">Reproductive</text>
-                <text x="95" y="57" fill="white" font-size="8" text-anchor="end">Neuropsychiatric</text>
-                <text x="265" y="32" fill="#FF4081" font-size="8">31.8%</text>
-            </svg>
+<div class="ch-content">
+        <div class="question">1. A survey conducted by an organisation for the cause of illness and death among the women between the ages 15 - 44 (in years) worldwide, found the following figures (in %):</div>
+        <table style="font-size:14px"><tr><th>No.</th><th>Causes</th><th>Female fatality rate (%)</th></tr><tr><td>1.</td><td>Reproductive health conditions</td><td>31.8</td></tr><tr><td>2.</td><td>Neuropsychiatric conditions</td><td>25.4</td></tr><tr><td>3.</td><td>Injuries</td><td>12.4</td></tr><tr><td>4.</td><td>Cardiovascular conditions</td><td>4.3</td></tr><tr><td>5.</td><td>Respiratory Conditions</td><td>4.1</td></tr><tr><td>6.</td><td>Other causes</td><td>22.0</td></tr></table>
+        <div class="question" style="margin-top:6px">(i) Represent the information given above graphically.<br/>(ii) Which condition is the major cause of women's ill health and death worldwide?<br/>(iii) Try to find out, with the help of your teacher, any two factors which play a major role in the cause in (ii) above being the major cause.</div>
+        <div class="solution">
+          <strong>Solution:</strong><br/>
+          (i) Bar graph: one bar for each cause; bar length = female fatality rate (%).<br/>
+          <svg viewBox="0 0 320 212" class="ex-img">
+            <text x="198" y="12" font-size="10" fill="#FF4DA6" text-anchor="middle">Female fatality rate by cause</text>
+            <line x1="96" y1="18" x2="96" y2="178" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="96" y="191" font-size="9" fill="white" text-anchor="middle">0</text>
+            <line x1="125.14" y1="18" x2="125.14" y2="178" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="125.14" y="191" font-size="9" fill="white" text-anchor="middle">5</text>
+            <line x1="154.29" y1="18" x2="154.29" y2="178" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="154.29" y="191" font-size="9" fill="white" text-anchor="middle">10</text>
+            <line x1="183.43" y1="18" x2="183.43" y2="178" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="183.43" y="191" font-size="9" fill="white" text-anchor="middle">15</text>
+            <line x1="212.57" y1="18" x2="212.57" y2="178" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="212.57" y="191" font-size="9" fill="white" text-anchor="middle">20</text>
+            <line x1="241.71" y1="18" x2="241.71" y2="178" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="241.71" y="191" font-size="9" fill="white" text-anchor="middle">25</text>
+            <line x1="270.86" y1="18" x2="270.86" y2="178" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="270.86" y="191" font-size="9" fill="white" text-anchor="middle">30</text>
+            <line x1="300" y1="18" x2="300" y2="178" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="300" y="191" font-size="9" fill="white" text-anchor="middle">35</text>
+            <line x1="96" y1="16" x2="96" y2="178" stroke="white" stroke-width="1.2"/>
+            <line x1="96" y1="178" x2="306" y2="178" stroke="white" stroke-width="1.2"/>
+            <rect x="96" y="27" width="185.35" height="16" fill="#FF4DA6" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+            <text x="91" y="38.5" font-size="9.5" fill="white" text-anchor="end">Reproductive</text>
+            <text x="284.35" y="38.5" font-size="9" fill="#FF4DA6" text-anchor="start">31.8</text>
+            <rect x="96" y="53" width="148.05" height="16" fill="#FF4DA6" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+            <text x="91" y="64.5" font-size="9.5" fill="white" text-anchor="end">Neuropsychiatric</text>
+            <text x="247.05" y="64.5" font-size="9" fill="#FF4DA6" text-anchor="start">25.4</text>
+            <rect x="96" y="79" width="72.27" height="16" fill="#FF4DA6" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+            <text x="91" y="90.5" font-size="9.5" fill="white" text-anchor="end">Injuries</text>
+            <text x="171.27" y="90.5" font-size="9" fill="#FF4DA6" text-anchor="start">12.4</text>
+            <rect x="96" y="105" width="25.06" height="16" fill="#FF4DA6" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+            <text x="91" y="116.5" font-size="9.5" fill="white" text-anchor="end">Cardiovascular</text>
+            <text x="124.06" y="116.5" font-size="9" fill="#FF4DA6" text-anchor="start">4.3</text>
+            <rect x="96" y="131" width="23.9" height="16" fill="#FF4DA6" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+            <text x="91" y="142.5" font-size="9.5" fill="white" text-anchor="end">Respiratory</text>
+            <text x="122.9" y="142.5" font-size="9" fill="#FF4DA6" text-anchor="start">4.1</text>
+            <rect x="96" y="157" width="128.23" height="16" fill="#FF4DA6" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+            <text x="91" y="168.5" font-size="9.5" fill="white" text-anchor="end">Other causes</text>
+            <text x="227.23" y="168.5" font-size="9" fill="#FF4DA6" text-anchor="start">22.0</text>
+            <text x="198" y="205" font-size="9.5" fill="white" text-anchor="middle">Female fatality rate (%)</text>
+          </svg>
+          (ii) The longest bar is 31.8%: reproductive health conditions.<br/>
+          (iii) Two factors: (a) lack of proper medical care and facilities; (b) lack of awareness and education about women's health.<br/>
+          <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val">(ii) Reproductive health conditions (31.8%) (iii) Lack of medical facilities; lack of awareness and education</span></div>
         </div>
-        <div class="step">Major cause: <b>Reproductive health conditions</b>.</div>
-    </div>
 
-    <div class="content-box">
-        <div class="question">2. Number of girls per thousand boys in different sections of Indian society: SC: 940, ST: 970, Non SC/ST: 920, Backward: 950, Non-backward: 920, Rural: 930, Urban: 910.</div>
-        <div class="solution-header">Solution:</div>
-        <div class="chart-container">
-            <svg viewBox="0 0 300 150">
-                <line x1="40" y1="120" x2="280" y2="120" stroke="white"/>
-                <rect x="50" y="26" width="15" height="94" fill="#FF4081"/> <!-- 940 -->
-                <rect x="80" y="23" width="15" height="97" fill="#FF4081"/> <!-- 970 -->
-                <rect x="110" y="28" width="15" height="92" fill="#FF4081"/> <!-- 920 -->
-                <rect x="140" y="25" width="15" height="95" fill="#FF4081"/> <!-- 950 -->
-                <text x="57" y="135" fill="white" font-size="6" text-anchor="middle">SC</text>
-                <text x="87" y="135" fill="white" font-size="6" text-anchor="middle">ST</text>
-            </svg>
+        <div class="question">2. The following data on the number of girls (to the nearest ten) per thousand boys in different sections of Indian society is given below.</div>
+        <table style="font-size:14px"><tr><th>Section</th><th>Number of girls per thousand boys</th></tr><tr><td>Scheduled Caste (SC)</td><td>940</td></tr><tr><td>Scheduled Tribe (ST)</td><td>970</td></tr><tr><td>Non SC/ST</td><td>920</td></tr><tr><td>Backward districts</td><td>950</td></tr><tr><td>Non-backward districts</td><td>920</td></tr><tr><td>Rural</td><td>930</td></tr><tr><td>Urban</td><td>910</td></tr></table>
+        <div class="question" style="margin-top:6px">(i) Represent the information above by a bar graph.<br/>(ii) In the classroom discuss what conclusions can be arrived at from the graph.</div>
+        <div class="solution">
+          <strong>Solution:</strong><br/>
+          (i) Bar graph: one bar for each section. The scale starts at 880 (shown by the zig-zag) so that the differences are clear.<br/>
+          <svg viewBox="0 0 320 238" class="ex-img">
+            <text x="191" y="12" font-size="10" fill="#FF4DA6" text-anchor="middle">Girls per thousand boys</text>
+            <line x1="82" y1="18" x2="82" y2="204" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="82" y="217" font-size="9" fill="white" text-anchor="middle">880</text>
+            <line x1="125.6" y1="18" x2="125.6" y2="204" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="125.6" y="217" font-size="9" fill="white" text-anchor="middle">900</text>
+            <line x1="169.2" y1="18" x2="169.2" y2="204" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="169.2" y="217" font-size="9" fill="white" text-anchor="middle">920</text>
+            <line x1="212.8" y1="18" x2="212.8" y2="204" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="212.8" y="217" font-size="9" fill="white" text-anchor="middle">940</text>
+            <line x1="256.4" y1="18" x2="256.4" y2="204" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="256.4" y="217" font-size="9" fill="white" text-anchor="middle">960</text>
+            <line x1="300" y1="18" x2="300" y2="204" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="300" y="217" font-size="9" fill="white" text-anchor="middle">980</text>
+            <line x1="82" y1="16" x2="82" y2="204" stroke="white" stroke-width="1.2"/>
+            <line x1="82" y1="204" x2="306" y2="204" stroke="white" stroke-width="1.2"/>
+            <path d="M83,204 L86,200 L90,208 L93,204" fill="none" stroke="white" stroke-width="1.2"/>
+            <rect x="82" y="27" width="130.8" height="16" fill="#FF4DA6" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+            <text x="77" y="38.5" font-size="9.5" fill="white" text-anchor="end">SC</text>
+            <text x="215.8" y="38.5" font-size="9" fill="#FF4DA6" text-anchor="start">940</text>
+            <rect x="82" y="53" width="196.2" height="16" fill="#FF4DA6" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+            <text x="77" y="64.5" font-size="9.5" fill="white" text-anchor="end">ST</text>
+            <text x="281.2" y="64.5" font-size="9" fill="#FF4DA6" text-anchor="start">970</text>
+            <rect x="82" y="79" width="87.2" height="16" fill="#FF4DA6" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+            <text x="77" y="90.5" font-size="9.5" fill="white" text-anchor="end">Non SC/ST</text>
+            <text x="172.2" y="90.5" font-size="9" fill="#FF4DA6" text-anchor="start">920</text>
+            <rect x="82" y="105" width="152.6" height="16" fill="#FF4DA6" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+            <text x="77" y="116.5" font-size="9.5" fill="white" text-anchor="end">Backward</text>
+            <text x="237.6" y="116.5" font-size="9" fill="#FF4DA6" text-anchor="start">950</text>
+            <rect x="82" y="131" width="87.2" height="16" fill="#FF4DA6" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+            <text x="77" y="142.5" font-size="9.5" fill="white" text-anchor="end">Non-backward</text>
+            <text x="172.2" y="142.5" font-size="9" fill="#FF4DA6" text-anchor="start">920</text>
+            <rect x="82" y="157" width="109" height="16" fill="#FF4DA6" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+            <text x="77" y="168.5" font-size="9.5" fill="white" text-anchor="end">Rural</text>
+            <text x="194" y="168.5" font-size="9" fill="#FF4DA6" text-anchor="start">930</text>
+            <rect x="82" y="183" width="65.4" height="16" fill="#FF4DA6" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+            <text x="77" y="194.5" font-size="9.5" fill="white" text-anchor="end">Urban</text>
+            <text x="150.4" y="194.5" font-size="9" fill="#FF4DA6" text-anchor="start">910</text>
+            <text x="191" y="231" font-size="9.5" fill="white" text-anchor="middle">Number of girls per thousand boys</text>
+          </svg>
+          (ii) Conclusions:<br/>
+          • ST has the most girls (970) and Urban the fewest (910) per thousand boys.<br/>
+          • Backward districts (950) and Rural areas (930) have more girls than Non-backward districts (920) and Urban areas (910).<br/>
+          • Every section has fewer than 1000 girls per thousand boys.<br/>
+          <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val">(ii) Highest: ST (970); lowest: Urban (910); every section has fewer girls than boys</span></div>
         </div>
-    </div>
 
-    <div class="content-box">
-        <div class="question">3. Seats won by different political parties: A: 75, B: 55, C: 37, D: 29, E: 10, F: 37.</div>
-        <div class="solution-header">Solution:</div>
-        <div class="chart-container">
-            <svg viewBox="0 0 300 150">
-                <rect x="40" y="45" width="20" height="75" fill="#FF4081"/> <!-- 75 -->
-                <rect x="70" y="65" width="20" height="55" fill="#FF4081"/> <!-- 55 -->
-                <rect x="100" y="83" width="20" height="37" fill="#FF4081"/> <!-- 37 -->
-                <rect x="130" y="91" width="20" height="29" fill="#FF4081"/> <!-- 29 -->
-                <rect x="160" y="110" width="20" height="10" fill="#FF4081"/> <!-- 10 -->
-                <rect x="190" y="83" width="20" height="37" fill="#FF4081"/> <!-- 37 -->
-                <text x="50" y="135" fill="white" font-size="8" text-anchor="middle">A</text>
-                <text x="80" y="135" fill="white" font-size="8" text-anchor="middle">B</text>
-            </svg>
+        <div class="question">3. Given below are the seats won by different political parties in the polling outcome of a state assembly elections:</div>
+        <table style="font-size:14px"><tr><th>Political Party</th><th>Seats Won</th></tr><tr><td>A</td><td>75</td></tr><tr><td>B</td><td>55</td></tr><tr><td>C</td><td>37</td></tr><tr><td>D</td><td>29</td></tr><tr><td>E</td><td>10</td></tr><tr><td>F</td><td>37</td></tr></table>
+        <div class="question" style="margin-top:6px">(i) Draw a bar graph to represent the polling results.<br/>(ii) Which political party won the maximum number of seats?</div>
+        <div class="solution">
+          <strong>Solution:</strong><br/>
+          (i) Bar graph: parties on the x-axis, seats won on the y-axis (1 unit = 10 seats).<br/>
+          <svg viewBox="0 0 320 233" class="ex-img">
+            <text x="172.5" y="12" font-size="10" fill="#FF4DA6" text-anchor="middle">Seats won by political parties</text>
+            <line x1="40" y1="190" x2="305" y2="190" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="35" y="193.5" font-size="9" fill="white" text-anchor="end">0</text>
+            <line x1="40" y1="169" x2="305" y2="169" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="35" y="172.5" font-size="9" fill="white" text-anchor="end">10</text>
+            <line x1="40" y1="148" x2="305" y2="148" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="35" y="151.5" font-size="9" fill="white" text-anchor="end">20</text>
+            <line x1="40" y1="127" x2="305" y2="127" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="35" y="130.5" font-size="9" fill="white" text-anchor="end">30</text>
+            <line x1="40" y1="106" x2="305" y2="106" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="35" y="109.5" font-size="9" fill="white" text-anchor="end">40</text>
+            <line x1="40" y1="85" x2="305" y2="85" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="35" y="88.5" font-size="9" fill="white" text-anchor="end">50</text>
+            <line x1="40" y1="64" x2="305" y2="64" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="35" y="67.5" font-size="9" fill="white" text-anchor="end">60</text>
+            <line x1="40" y1="43" x2="305" y2="43" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="35" y="46.5" font-size="9" fill="white" text-anchor="end">70</text>
+            <line x1="40" y1="22" x2="305" y2="22" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="35" y="25.5" font-size="9" fill="white" text-anchor="end">80</text>
+            <line x1="40" y1="16" x2="40" y2="190" stroke="white" stroke-width="1.2"/>
+            <line x1="40" y1="190" x2="305" y2="190" stroke="white" stroke-width="1.2"/>
+            <rect x="49.94" y="32.5" width="24.29" height="157.5" fill="#FF4DA6" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+            <text x="62.08" y="203" font-size="10" fill="white" text-anchor="middle">A</text>
+            <text x="62.08" y="28.5" font-size="9" fill="#FF4DA6" text-anchor="middle">75</text>
+            <rect x="94.1" y="74.5" width="24.29" height="115.5" fill="#FF4DA6" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+            <text x="106.25" y="203" font-size="10" fill="white" text-anchor="middle">B</text>
+            <text x="106.25" y="70.5" font-size="9" fill="#FF4DA6" text-anchor="middle">55</text>
+            <rect x="138.27" y="112.3" width="24.29" height="77.7" fill="#FF4DA6" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+            <text x="150.42" y="203" font-size="10" fill="white" text-anchor="middle">C</text>
+            <text x="150.42" y="108.3" font-size="9" fill="#FF4DA6" text-anchor="middle">37</text>
+            <rect x="182.44" y="129.1" width="24.29" height="60.9" fill="#FF4DA6" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+            <text x="194.58" y="203" font-size="10" fill="white" text-anchor="middle">D</text>
+            <text x="194.58" y="125.1" font-size="9" fill="#FF4DA6" text-anchor="middle">29</text>
+            <rect x="226.6" y="169" width="24.29" height="21" fill="#FF4DA6" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+            <text x="238.75" y="203" font-size="10" fill="white" text-anchor="middle">E</text>
+            <text x="238.75" y="165" font-size="9" fill="#FF4DA6" text-anchor="middle">10</text>
+            <rect x="270.77" y="112.3" width="24.29" height="77.7" fill="#FF4DA6" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+            <text x="282.92" y="203" font-size="10" fill="white" text-anchor="middle">F</text>
+            <text x="282.92" y="108.3" font-size="9" fill="#FF4DA6" text-anchor="middle">37</text>
+            <text x="172.5" y="218" font-size="9.5" fill="white" text-anchor="middle">Political party</text>
+            <text x="11" y="106" font-size="9.5" fill="white" text-anchor="middle" transform="rotate(-90 11 106)">Seats won</text>
+          </svg>
+          (ii) The tallest bar is A, with 75 seats.<br/>
+          <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val">(ii) Party A won the maximum number of seats (75)</span></div>
         </div>
-    </div>
 
-    <div class="content-box">
-        <div class="question">4. The lengths of 40 leaves of a plant...</div>
-        <table align="center">
-            <tr><th>Length (mm)</th><th>No. of leaves</th></tr>
-            <tr><td>117.5 - 126.5</td><td>3</td></tr>
-            <tr><td>126.5 - 135.5</td><td>5</td></tr>
-            <tr><td>135.5 - 144.5</td><td>9</td></tr>
-            <tr><td>144.5 - 153.5</td><td>12</td></tr>
-            <tr><td>153.5 - 162.5</td><td>5</td></tr>
-            <tr><td>162.5 - 171.5</td><td>4</td></tr>
-            <tr><td>171.5 - 180.5</td><td>2</td></tr>
-        </table>
-        <div class="solution-header">Solution:</div>
-        <div class="step">To draw a histogram, we first make the classes continuous by subtracting 0.5 from the lower limit and adding 0.5 to the upper limit.</div>
-        <div class="chart-container">
-            <svg viewBox="0 0 300 150">
-                <line x1="30" y1="120" x2="280" y2="120" stroke="white"/>
-                <line x1="30" y1="120" x2="30" y2="10" stroke="white"/>
-                <rect x="35" y="90" width="30" height="30" fill="#FF4081" stroke="#fff" stroke-width="0.5"/>
-                <rect x="65" y="70" width="30" height="50" fill="#FF4081" stroke="#fff" stroke-width="0.5"/>
-                <rect x="95" y="30" width="30" height="90" fill="#FF4081" stroke="#fff" stroke-width="0.5"/>
-                <rect x="125" y="10" width="30" height="110" fill="#FF4081" stroke="#fff" stroke-width="0.5"/>
-                <text x="140" y="135" fill="white" font-size="8" text-anchor="middle">Histogram (Leaves)</text>
-            </svg>
+        <div class="question">4. The length of 40 leaves of a plant are measured correct to one millimetre, and the obtained data is represented in the following table:</div>
+        <table style="font-size:14px"><tr><th>Length (in mm)</th><th>Number of leaves</th></tr><tr><td>118 – 126</td><td>3</td></tr><tr><td>127 – 135</td><td>5</td></tr><tr><td>136 – 144</td><td>9</td></tr><tr><td>145 – 153</td><td>12</td></tr><tr><td>154 – 162</td><td>5</td></tr><tr><td>163 – 171</td><td>4</td></tr><tr><td>172 – 180</td><td>2</td></tr></table>
+        <div class="question" style="margin-top:6px">(i) Draw a histogram to represent the given data. [Hint: First make the class intervals continuous]<br/>(ii) Is there any other suitable graphical representation for the same data?<br/>(iii) Is it correct to conclude that the maximum number of leaves are 153 mm long? Why?</div>
+        <div class="solution">
+          <strong>Solution:</strong><br/>
+          (i) Gap between classes = 127 − 126 = 1, so subtract 0.5 from each lower limit and add 0.5 to each upper limit:<br/>
+          <table style="font-size:14px"><tr><th>Length (in mm)</th><th>Number of leaves</th></tr><tr><td>117.5 – 126.5</td><td>3</td></tr><tr><td>126.5 – 135.5</td><td>5</td></tr><tr><td>135.5 – 144.5</td><td>9</td></tr><tr><td>144.5 – 153.5</td><td>12</td></tr><tr><td>153.5 – 162.5</td><td>5</td></tr><tr><td>162.5 – 171.5</td><td>4</td></tr><tr><td>171.5 – 180.5</td><td>2</td></tr></table>
+          <svg viewBox="0 0 320 233" class="ex-img">
+            <text x="173.5" y="12" font-size="10" fill="#FF4DA6" text-anchor="middle">Length of 40 leaves</text>
+            <line x1="42" y1="190" x2="305" y2="190" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="193.5" font-size="9" fill="white" text-anchor="end">0</text>
+            <line x1="42" y1="166" x2="305" y2="166" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="169.5" font-size="9" fill="white" text-anchor="end">2</text>
+            <line x1="42" y1="142" x2="305" y2="142" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="145.5" font-size="9" fill="white" text-anchor="end">4</text>
+            <line x1="42" y1="118" x2="305" y2="118" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="121.5" font-size="9" fill="white" text-anchor="end">6</text>
+            <line x1="42" y1="94" x2="305" y2="94" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="97.5" font-size="9" fill="white" text-anchor="end">8</text>
+            <line x1="42" y1="70" x2="305" y2="70" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="73.5" font-size="9" fill="white" text-anchor="end">10</text>
+            <line x1="42" y1="46" x2="305" y2="46" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="49.5" font-size="9" fill="white" text-anchor="end">12</text>
+            <line x1="42" y1="22" x2="305" y2="22" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="25.5" font-size="9" fill="white" text-anchor="end">14</text>
+            <line x1="42" y1="16" x2="42" y2="190" stroke="white" stroke-width="1.2"/>
+            <line x1="42" y1="190" x2="305" y2="190" stroke="white" stroke-width="1.2"/>
+            <path d="M42,190 L45,186 L49,194 L52,190" fill="none" stroke="white" stroke-width="1.2"/>
+            <rect x="52" y="154" width="36.14" height="36" fill="#FF4DA6" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+            <text x="70.07" y="150" font-size="9" fill="#FF4DA6" text-anchor="middle">3</text>
+            <rect x="88.14" y="130" width="36.14" height="60" fill="#FF4DA6" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+            <text x="106.21" y="126" font-size="9" fill="#FF4DA6" text-anchor="middle">5</text>
+            <rect x="124.29" y="82" width="36.14" height="108" fill="#FF4DA6" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+            <text x="142.36" y="78" font-size="9" fill="#FF4DA6" text-anchor="middle">9</text>
+            <rect x="160.43" y="46" width="36.14" height="144" fill="#FF4DA6" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+            <text x="178.5" y="42" font-size="9" fill="#FF4DA6" text-anchor="middle">12</text>
+            <rect x="196.57" y="130" width="36.14" height="60" fill="#FF4DA6" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+            <text x="214.64" y="126" font-size="9" fill="#FF4DA6" text-anchor="middle">5</text>
+            <rect x="232.71" y="142" width="36.14" height="48" fill="#FF4DA6" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+            <text x="250.79" y="138" font-size="9" fill="#FF4DA6" text-anchor="middle">4</text>
+            <rect x="268.86" y="166" width="36.14" height="24" fill="#FF4DA6" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+            <text x="286.93" y="162" font-size="9" fill="#FF4DA6" text-anchor="middle">2</text>
+            <text x="52" y="202" font-size="8" fill="white" text-anchor="middle">117.5</text>
+            <text x="88.14" y="202" font-size="8" fill="white" text-anchor="middle">126.5</text>
+            <text x="124.29" y="202" font-size="8" fill="white" text-anchor="middle">135.5</text>
+            <text x="160.43" y="202" font-size="8" fill="white" text-anchor="middle">144.5</text>
+            <text x="196.57" y="202" font-size="8" fill="white" text-anchor="middle">153.5</text>
+            <text x="232.71" y="202" font-size="8" fill="white" text-anchor="middle">162.5</text>
+            <text x="268.86" y="202" font-size="8" fill="white" text-anchor="middle">171.5</text>
+            <text x="305" y="202" font-size="8" fill="white" text-anchor="middle">180.5</text>
+            <text x="173.5" y="229" font-size="9.5" fill="white" text-anchor="middle">Length (in mm)</text>
+            <text x="11" y="106" font-size="9.5" fill="white" text-anchor="middle" transform="rotate(-90 11 106)">Number of leaves</text>
+          </svg>
+          (ii) Yes, a frequency polygon.<br/>
+          (iii) No. The most leaves (12) are in the class 144.5 – 153.5 mm, so their lengths lie anywhere between 144.5 mm and 153.5 mm, not exactly 153 mm.<br/>
+          <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val">(ii) Yes, a frequency polygon (iii) No; the 12 leaves have lengths between 144.5 mm and 153.5 mm</span></div>
         </div>
-    </div>
 
-    <div class="content-box">
         <div class="question">5. The following table gives the life times of 400 neon lamps:</div>
-        <table align="center">
-            <tr><th>Life time (hrs)</th><th>No. of lamps</th></tr>
-            <tr><td>300 - 400</td><td>14</td></tr>
-            <tr><td>400 - 500</td><td>56</td></tr>
-            <tr><td>500 - 600</td><td>60</td></tr>
-            <tr><td>600 - 700</td><td>86</td></tr>
-            <tr><td>700 - 800</td><td>74</td></tr>
-            <tr><td>800 - 900</td><td>62</td></tr>
-            <tr><td>900 - 1000</td><td>48</td></tr>
-        </table>
-        <div class="solution-header">Solution:</div>
-        <div class="step">Lamps with life time more than 700 hours = 74 + 62 + 48 = <b>184 lamps</b>.</div>
-        <div class="chart-container">
-            <svg viewBox="0 0 300 150">
-                <rect x="30" y="106" width="30" height="14" fill="#FF4081"/>
-                <rect x="60" y="64" width="30" height="56" fill="#FF4081"/>
-                <rect x="90" y="60" width="30" height="60" fill="#FF4081"/>
-                <rect x="120" y="34" width="30" height="86" fill="#FF4081"/>
-                <text x="150" y="140" fill="white" font-size="8" text-anchor="middle">Histogram (Neon Lamps)</text>
-            </svg>
+        <table style="font-size:14px"><tr><th>Life time (in hours)</th><th>Number of lamps</th></tr><tr><td>300 – 400</td><td>14</td></tr><tr><td>400 – 500</td><td>56</td></tr><tr><td>500 – 600</td><td>60</td></tr><tr><td>600 – 700</td><td>86</td></tr><tr><td>700 – 800</td><td>74</td></tr><tr><td>800 – 900</td><td>62</td></tr><tr><td>900 – 1000</td><td>48</td></tr></table>
+        <div class="question" style="margin-top:6px">(i) Represent the given information with the help of a histogram.<br/>(ii) How many lamps have a life time of more than 700 hours?</div>
+        <div class="solution">
+          <strong>Solution:</strong><br/>
+          (i) The classes are continuous and of equal width (100), so bar heights = number of lamps.<br/>
+          <svg viewBox="0 0 320 233" class="ex-img">
+            <text x="173.5" y="12" font-size="10" fill="#FF4DA6" text-anchor="middle">Life times of 400 neon lamps</text>
+            <line x1="42" y1="190" x2="305" y2="190" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="193.5" font-size="9" fill="white" text-anchor="end">0</text>
+            <line x1="42" y1="171.33" x2="305" y2="171.33" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="174.83" font-size="9" fill="white" text-anchor="end">10</text>
+            <line x1="42" y1="152.67" x2="305" y2="152.67" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="156.17" font-size="9" fill="white" text-anchor="end">20</text>
+            <line x1="42" y1="134" x2="305" y2="134" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="137.5" font-size="9" fill="white" text-anchor="end">30</text>
+            <line x1="42" y1="115.33" x2="305" y2="115.33" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="118.83" font-size="9" fill="white" text-anchor="end">40</text>
+            <line x1="42" y1="96.67" x2="305" y2="96.67" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="100.17" font-size="9" fill="white" text-anchor="end">50</text>
+            <line x1="42" y1="78" x2="305" y2="78" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="81.5" font-size="9" fill="white" text-anchor="end">60</text>
+            <line x1="42" y1="59.33" x2="305" y2="59.33" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="62.83" font-size="9" fill="white" text-anchor="end">70</text>
+            <line x1="42" y1="40.67" x2="305" y2="40.67" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="44.17" font-size="9" fill="white" text-anchor="end">80</text>
+            <line x1="42" y1="22" x2="305" y2="22" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="25.5" font-size="9" fill="white" text-anchor="end">90</text>
+            <line x1="42" y1="16" x2="42" y2="190" stroke="white" stroke-width="1.2"/>
+            <line x1="42" y1="190" x2="305" y2="190" stroke="white" stroke-width="1.2"/>
+            <path d="M42,190 L45,186 L49,194 L52,190" fill="none" stroke="white" stroke-width="1.2"/>
+            <rect x="52" y="163.87" width="36.14" height="26.13" fill="#FF4DA6" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+            <text x="70.07" y="159.87" font-size="9" fill="#FF4DA6" text-anchor="middle">14</text>
+            <rect x="88.14" y="85.47" width="36.14" height="104.53" fill="#FF4DA6" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+            <text x="106.21" y="81.47" font-size="9" fill="#FF4DA6" text-anchor="middle">56</text>
+            <rect x="124.29" y="78" width="36.14" height="112" fill="#FF4DA6" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+            <text x="142.36" y="74" font-size="9" fill="#FF4DA6" text-anchor="middle">60</text>
+            <rect x="160.43" y="29.47" width="36.14" height="160.53" fill="#FF4DA6" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+            <text x="178.5" y="25.47" font-size="9" fill="#FF4DA6" text-anchor="middle">86</text>
+            <rect x="196.57" y="51.87" width="36.14" height="138.13" fill="#FF4DA6" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+            <text x="214.64" y="47.87" font-size="9" fill="#FF4DA6" text-anchor="middle">74</text>
+            <rect x="232.71" y="74.27" width="36.14" height="115.73" fill="#FF4DA6" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+            <text x="250.79" y="70.27" font-size="9" fill="#FF4DA6" text-anchor="middle">62</text>
+            <rect x="268.86" y="100.4" width="36.14" height="89.6" fill="#FF4DA6" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+            <text x="286.93" y="96.4" font-size="9" fill="#FF4DA6" text-anchor="middle">48</text>
+            <text x="52" y="202" font-size="8.5" fill="white" text-anchor="middle">300</text>
+            <text x="88.14" y="202" font-size="8.5" fill="white" text-anchor="middle">400</text>
+            <text x="124.29" y="202" font-size="8.5" fill="white" text-anchor="middle">500</text>
+            <text x="160.43" y="202" font-size="8.5" fill="white" text-anchor="middle">600</text>
+            <text x="196.57" y="202" font-size="8.5" fill="white" text-anchor="middle">700</text>
+            <text x="232.71" y="202" font-size="8.5" fill="white" text-anchor="middle">800</text>
+            <text x="268.86" y="202" font-size="8.5" fill="white" text-anchor="middle">900</text>
+            <text x="305" y="202" font-size="8.5" fill="white" text-anchor="middle">1000</text>
+            <text x="173.5" y="229" font-size="9.5" fill="white" text-anchor="middle">Life time (in hours)</text>
+            <text x="11" y="106" font-size="9.5" fill="white" text-anchor="middle" transform="rotate(-90 11 106)">Number of lamps</text>
+          </svg>
+          (ii) Lamps with life time more than 700 hours = 74 + 62 + 48 = 184<br/>
+          <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val">(ii) 184 lamps</span></div>
         </div>
-    </div>
 
-    <div class="content-box">
-        <div class="question">6. Marks of students...</div>
-        <div class="solution-header">Solution:</div>
-        <div class="chart-container">
-            <svg viewBox="0 0 300 150">
-                <polyline points="30,110 80,80 130,40 180,60 230,100" fill="none" stroke="#FF4081" stroke-width="2"/>
-                <polyline points="30,100 80,60 130,50 180,90 230,110" fill="none" stroke="#FF5252" stroke-width="2" stroke-dasharray="4,2"/>
-                <circle cx="80" cy="80" r="2" fill="#FF4081"/>
-                <circle cx="130" cy="40" r="2" fill="#FF4081"/>
-                <text x="250" y="20" fill="#FF4081" font-size="8">Section A</text>
-                <text x="250" y="35" fill="#FF5252" font-size="8">Section B</text>
-            </svg>
+        <div class="question">6. The following table gives the distribution of students of two sections according to the marks obtained by them:</div>
+        <table style="font-size:14px"><tr><th>Marks</th><th>Section A (Frequency)</th><th>Section B (Frequency)</th></tr><tr><td>0 – 10</td><td>3</td><td>5</td></tr><tr><td>10 – 20</td><td>9</td><td>19</td></tr><tr><td>20 – 30</td><td>17</td><td>15</td></tr><tr><td>30 – 40</td><td>12</td><td>10</td></tr><tr><td>40 – 50</td><td>9</td><td>1</td></tr></table>
+        <div class="question" style="margin-top:6px">Represent the marks of the students of both the sections on the same graph by two frequency polygons. From the two polygons compare the performance of the two sections.</div>
+        <div class="solution">
+          <strong>Solution:</strong><br/>
+          Class mark = <span class='frac'><span class='num'>Lower limit + Upper limit</span><span class='den'>2</span></span>: 5, 15, 25, 35, 45<br/>
+          Add one class before and after, with frequency 0: class marks −5 and 55.<br/>
+          Plot (class mark, frequency) for each section and join the points.<br/>
+          <svg viewBox="0 0 320 230" class="ex-img">
+            <text x="173.5" y="12" font-size="10" fill="#FF4DA6" text-anchor="middle">Marks of Sections A and B</text>
+            <line x1="42" y1="190" x2="305" y2="190" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="193.5" font-size="9" fill="white" text-anchor="end">0</text>
+            <line x1="42" y1="174.4" x2="305" y2="174.4" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="177.9" font-size="9" fill="white" text-anchor="end">2</text>
+            <line x1="42" y1="158.8" x2="305" y2="158.8" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="162.3" font-size="9" fill="white" text-anchor="end">4</text>
+            <line x1="42" y1="143.2" x2="305" y2="143.2" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="146.7" font-size="9" fill="white" text-anchor="end">6</text>
+            <line x1="42" y1="127.6" x2="305" y2="127.6" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="131.1" font-size="9" fill="white" text-anchor="end">8</text>
+            <line x1="42" y1="112" x2="305" y2="112" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="115.5" font-size="9" fill="white" text-anchor="end">10</text>
+            <line x1="42" y1="96.4" x2="305" y2="96.4" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="99.9" font-size="9" fill="white" text-anchor="end">12</text>
+            <line x1="42" y1="80.8" x2="305" y2="80.8" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="84.3" font-size="9" fill="white" text-anchor="end">14</text>
+            <line x1="42" y1="65.2" x2="305" y2="65.2" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="68.7" font-size="9" fill="white" text-anchor="end">16</text>
+            <line x1="42" y1="49.6" x2="305" y2="49.6" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="53.1" font-size="9" fill="white" text-anchor="end">18</text>
+            <line x1="42" y1="34" x2="305" y2="34" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="37.5" font-size="9" fill="white" text-anchor="end">20</text>
+            <line x1="42" y1="190" x2="42" y2="193" stroke="white" stroke-width="1.2"/>
+            <text x="42" y="203" font-size="8.5" fill="white" text-anchor="middle">−10</text>
+            <line x1="79.57" y1="190" x2="79.57" y2="193" stroke="white" stroke-width="1.2"/>
+            <text x="79.57" y="203" font-size="8.5" fill="white" text-anchor="middle">0</text>
+            <line x1="117.14" y1="190" x2="117.14" y2="193" stroke="white" stroke-width="1.2"/>
+            <text x="117.14" y="203" font-size="8.5" fill="white" text-anchor="middle">10</text>
+            <line x1="154.71" y1="190" x2="154.71" y2="193" stroke="white" stroke-width="1.2"/>
+            <text x="154.71" y="203" font-size="8.5" fill="white" text-anchor="middle">20</text>
+            <line x1="192.29" y1="190" x2="192.29" y2="193" stroke="white" stroke-width="1.2"/>
+            <text x="192.29" y="203" font-size="8.5" fill="white" text-anchor="middle">30</text>
+            <line x1="229.86" y1="190" x2="229.86" y2="193" stroke="white" stroke-width="1.2"/>
+            <text x="229.86" y="203" font-size="8.5" fill="white" text-anchor="middle">40</text>
+            <line x1="267.43" y1="190" x2="267.43" y2="193" stroke="white" stroke-width="1.2"/>
+            <text x="267.43" y="203" font-size="8.5" fill="white" text-anchor="middle">50</text>
+            <line x1="305" y1="190" x2="305" y2="193" stroke="white" stroke-width="1.2"/>
+            <text x="305" y="203" font-size="8.5" fill="white" text-anchor="middle">60</text>
+            <line x1="42" y1="28" x2="42" y2="190" stroke="white" stroke-width="1.2"/>
+            <line x1="42" y1="190" x2="305" y2="190" stroke="white" stroke-width="1.2"/>
+            <polyline points="60.79,190 98.36,166.6 135.93,119.8 173.5,57.4 211.07,96.4 248.64,119.8 286.21,190" fill="none" stroke="#FF4DA6" stroke-width="2"/>
+            <circle cx="60.79" cy="190" r="2.6" fill="#FF4DA6"/>
+            <circle cx="98.36" cy="166.6" r="2.6" fill="#FF4DA6"/>
+            <circle cx="135.93" cy="119.8" r="2.6" fill="#FF4DA6"/>
+            <circle cx="173.5" cy="57.4" r="2.6" fill="#FF4DA6"/>
+            <circle cx="211.07" cy="96.4" r="2.6" fill="#FF4DA6"/>
+            <circle cx="248.64" cy="119.8" r="2.6" fill="#FF4DA6"/>
+            <circle cx="286.21" cy="190" r="2.6" fill="#FF4DA6"/>
+            <line x1="50" y1="24" x2="66" y2="24" stroke="#FF4DA6" stroke-width="2.5"/>
+            <text x="70" y="27.5" font-size="9.5" fill="#FF4DA6" text-anchor="start">Section A</text>
+            <polyline points="60.79,190 98.36,151 135.93,41.8 173.5,73 211.07,112 248.64,182.2 286.21,190" fill="none" stroke="#4FC3F7" stroke-width="2"/>
+            <circle cx="60.79" cy="190" r="2.6" fill="#4FC3F7"/>
+            <circle cx="98.36" cy="151" r="2.6" fill="#4FC3F7"/>
+            <circle cx="135.93" cy="41.8" r="2.6" fill="#4FC3F7"/>
+            <circle cx="173.5" cy="73" r="2.6" fill="#4FC3F7"/>
+            <circle cx="211.07" cy="112" r="2.6" fill="#4FC3F7"/>
+            <circle cx="248.64" cy="182.2" r="2.6" fill="#4FC3F7"/>
+            <circle cx="286.21" cy="190" r="2.6" fill="#4FC3F7"/>
+            <line x1="170" y1="24" x2="186" y2="24" stroke="#4FC3F7" stroke-width="2.5"/>
+            <text x="190" y="27.5" font-size="9.5" fill="#4FC3F7" text-anchor="start">Section B</text>
+            <text x="173.5" y="218" font-size="9.5" fill="white" text-anchor="middle">Marks</text>
+            <text x="11" y="112" font-size="9.5" fill="white" text-anchor="middle" transform="rotate(-90 11 112)">Number of students</text>
+          </svg>
+          Students scoring 30–50: Section A = 12 + 9 = 21; Section B = 10 + 1 = 11<br/>
+          Section A's polygon is higher at the higher marks, so Section A has performed better.<br/>
+          <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val">Section A has performed better than Section B</span></div>
         </div>
-        <div class="step">Section A performed better in the higher marks range.</div>
-    </div>
 
-    <div class="content-box">
-        <div class="question">9. 100 surnames were randomly picked up from a local telephone directory. Draw a histogram.</div>
-        <table align="center">
-            <tr><th>Letters</th><th>Surnames</th></tr>
-            <tr><td>1 - 4</td><td>6</td></tr>
-            <tr><td>4 - 6</td><td>30</td></tr>
-            <tr><td>6 - 8</td><td>44</td></tr>
-            <tr><td>8 - 12</td><td>16</td></tr>
-            <tr><td>12 - 20</td><td>4</td></tr>
-        </table>
-        <div class="solution-header">Solution:</div>
-        <div class="step">Since class widths are unequal, we calculate adjusted frequencies.</div>
-        <div class="chart-container">
-            <svg viewBox="0 0 300 150">
-                <rect x="30" y="100" width="30" height="20" fill="#FF4081" stroke="#fff"/>
-                <rect x="60" y="30" width="20" height="90" fill="#FF4081" stroke="#fff"/>
-                <rect x="80" y="10" width="20" height="110" fill="#FF4081" stroke="#fff"/>
-                <text x="150" y="140" fill="white" font-size="8" text-anchor="middle">Histogram (Surnames)</text>
-            </svg>
+        <div class="question">7. The runs scored by two teams A and B on the first 60 balls in a cricket match are given below:</div>
+        <table style="font-size:14px"><tr><th>Number of balls</th><th>Team A</th><th>Team B</th></tr><tr><td>1 – 6</td><td>2</td><td>5</td></tr><tr><td>7 – 12</td><td>1</td><td>6</td></tr><tr><td>13 – 18</td><td>8</td><td>2</td></tr><tr><td>19 – 24</td><td>9</td><td>10</td></tr><tr><td>25 – 30</td><td>4</td><td>5</td></tr><tr><td>31 – 36</td><td>5</td><td>6</td></tr><tr><td>37 – 42</td><td>6</td><td>3</td></tr><tr><td>43 – 48</td><td>10</td><td>4</td></tr><tr><td>49 – 54</td><td>6</td><td>8</td></tr><tr><td>55 – 60</td><td>2</td><td>10</td></tr></table>
+        <div class="question" style="margin-top:6px">Represent the data of both the teams on the same graph by frequency polygons. [Hint : First make the class intervals continuous.]</div>
+        <div class="solution">
+          <strong>Solution:</strong><br/>
+          Gap between classes = 7 − 6 = 1, so make the classes continuous: 0.5 – 6.5, 6.5 – 12.5, …, 54.5 – 60.5<br/>
+          Class marks: 3.5, 9.5, 15.5, 21.5, 27.5, 33.5, 39.5, 45.5, 51.5, 57.5<br/>
+          Add one class before and after, with 0 runs: class marks −2.5 and 63.5.<br/>
+          Plot (class mark, runs) for each team and join the points.<br/>
+          <svg viewBox="0 0 320 230" class="ex-img">
+            <text x="173.5" y="12" font-size="10" fill="#FF4DA6" text-anchor="middle">Runs on the first 60 balls</text>
+            <line x1="42" y1="190" x2="305" y2="190" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="193.5" font-size="9" fill="white" text-anchor="end">0</text>
+            <line x1="42" y1="164" x2="305" y2="164" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="167.5" font-size="9" fill="white" text-anchor="end">2</text>
+            <line x1="42" y1="138" x2="305" y2="138" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="141.5" font-size="9" fill="white" text-anchor="end">4</text>
+            <line x1="42" y1="112" x2="305" y2="112" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="115.5" font-size="9" fill="white" text-anchor="end">6</text>
+            <line x1="42" y1="86" x2="305" y2="86" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="89.5" font-size="9" fill="white" text-anchor="end">8</text>
+            <line x1="42" y1="60" x2="305" y2="60" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="63.5" font-size="9" fill="white" text-anchor="end">10</text>
+            <line x1="42" y1="34" x2="305" y2="34" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="37.5" font-size="9" fill="white" text-anchor="end">12</text>
+            <line x1="63.92" y1="190" x2="63.92" y2="193" stroke="white" stroke-width="1.2"/>
+            <text x="63.92" y="203" font-size="8.5" fill="white" text-anchor="middle">0.5</text>
+            <line x1="107.75" y1="190" x2="107.75" y2="193" stroke="white" stroke-width="1.2"/>
+            <text x="107.75" y="203" font-size="8.5" fill="white" text-anchor="middle">12.5</text>
+            <line x1="151.58" y1="190" x2="151.58" y2="193" stroke="white" stroke-width="1.2"/>
+            <text x="151.58" y="203" font-size="8.5" fill="white" text-anchor="middle">24.5</text>
+            <line x1="195.42" y1="190" x2="195.42" y2="193" stroke="white" stroke-width="1.2"/>
+            <text x="195.42" y="203" font-size="8.5" fill="white" text-anchor="middle">36.5</text>
+            <line x1="239.25" y1="190" x2="239.25" y2="193" stroke="white" stroke-width="1.2"/>
+            <text x="239.25" y="203" font-size="8.5" fill="white" text-anchor="middle">48.5</text>
+            <line x1="283.08" y1="190" x2="283.08" y2="193" stroke="white" stroke-width="1.2"/>
+            <text x="283.08" y="203" font-size="8.5" fill="white" text-anchor="middle">60.5</text>
+            <line x1="42" y1="28" x2="42" y2="190" stroke="white" stroke-width="1.2"/>
+            <line x1="42" y1="190" x2="305" y2="190" stroke="white" stroke-width="1.2"/>
+            <polyline points="52.96,190 74.88,164 96.79,177 118.71,86 140.63,73 162.54,138 184.46,125 206.38,112 228.29,60 250.21,112 272.13,164 294.04,190" fill="none" stroke="#FF4DA6" stroke-width="2"/>
+            <circle cx="52.96" cy="190" r="2.6" fill="#FF4DA6"/>
+            <circle cx="74.88" cy="164" r="2.6" fill="#FF4DA6"/>
+            <circle cx="96.79" cy="177" r="2.6" fill="#FF4DA6"/>
+            <circle cx="118.71" cy="86" r="2.6" fill="#FF4DA6"/>
+            <circle cx="140.63" cy="73" r="2.6" fill="#FF4DA6"/>
+            <circle cx="162.54" cy="138" r="2.6" fill="#FF4DA6"/>
+            <circle cx="184.46" cy="125" r="2.6" fill="#FF4DA6"/>
+            <circle cx="206.38" cy="112" r="2.6" fill="#FF4DA6"/>
+            <circle cx="228.29" cy="60" r="2.6" fill="#FF4DA6"/>
+            <circle cx="250.21" cy="112" r="2.6" fill="#FF4DA6"/>
+            <circle cx="272.13" cy="164" r="2.6" fill="#FF4DA6"/>
+            <circle cx="294.04" cy="190" r="2.6" fill="#FF4DA6"/>
+            <line x1="50" y1="24" x2="66" y2="24" stroke="#FF4DA6" stroke-width="2.5"/>
+            <text x="70" y="27.5" font-size="9.5" fill="#FF4DA6" text-anchor="start">Team A</text>
+            <polyline points="52.96,190 74.88,125 96.79,112 118.71,164 140.63,60 162.54,125 184.46,112 206.38,151 228.29,138 250.21,86 272.13,60 294.04,190" fill="none" stroke="#4FC3F7" stroke-width="2"/>
+            <circle cx="52.96" cy="190" r="2.6" fill="#4FC3F7"/>
+            <circle cx="74.88" cy="125" r="2.6" fill="#4FC3F7"/>
+            <circle cx="96.79" cy="112" r="2.6" fill="#4FC3F7"/>
+            <circle cx="118.71" cy="164" r="2.6" fill="#4FC3F7"/>
+            <circle cx="140.63" cy="60" r="2.6" fill="#4FC3F7"/>
+            <circle cx="162.54" cy="125" r="2.6" fill="#4FC3F7"/>
+            <circle cx="184.46" cy="112" r="2.6" fill="#4FC3F7"/>
+            <circle cx="206.38" cy="151" r="2.6" fill="#4FC3F7"/>
+            <circle cx="228.29" cy="138" r="2.6" fill="#4FC3F7"/>
+            <circle cx="250.21" cy="86" r="2.6" fill="#4FC3F7"/>
+            <circle cx="272.13" cy="60" r="2.6" fill="#4FC3F7"/>
+            <circle cx="294.04" cy="190" r="2.6" fill="#4FC3F7"/>
+            <line x1="170" y1="24" x2="186" y2="24" stroke="#4FC3F7" stroke-width="2.5"/>
+            <text x="190" y="27.5" font-size="9.5" fill="#4FC3F7" text-anchor="start">Team B</text>
+            <text x="173.5" y="218" font-size="9.5" fill="white" text-anchor="middle">Number of balls (class boundaries)</text>
+            <text x="11" y="112" font-size="9.5" fill="white" text-anchor="middle" transform="rotate(-90 11 112)">Runs scored</text>
+          </svg>
+          <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val">Frequency polygons of Team A and Team B drawn on the same graph</span></div>
         </div>
-    </div>
-</body>
-</html>
-`,
-    "ex11.4": `
-      <style>
-        .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
-        .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
-        .frac .den { padding: 0 2px; }
-        .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        
-        .question { color: #FF4DA6; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
-        .solution { border-left: 3px solid #FF4DA6; padding-left: 15px; margin-top: 15px; background: rgba(255, 77, 166, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
-        .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
-        
-        /* Overview styles */
-        .section-title { color: #FF4DA6 !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
-        .sub-header { color: #FF4DA6 !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
-        .formula-box { background: rgba(255, 77, 166, 0.05) !important; border-left: 4px solid #FF4DA6 !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
-        h2 { color: #FF4DA6 !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
-        h3 { color: #FF4DA6 !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
-        .highlight { color: #FF4DA6 !important; font-weight: 700; }
-        strong { color: #FF4DA6 !important; font-weight: 600; }
-        
-        /* Utility classes for step-by-step */
-        .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
-        .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
-        .ans-highlight { color: #FF4DA6; font-weight: 700; }
-        .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
-        
-        /* Table styles */
-        table { width: 100%; border-collapse: collapse; margin: 15px auto; font-size: 15px; color: #e0e0e0; text-align: center; }
-        th { background: rgba(255, 77, 166, 0.05); color: #FF4DA6; font-weight: 600; padding: 10px 8px; border: 1px solid rgba(255, 255, 255, 0.15); text-align: center; }
-        td { padding: 8px; border: 1px solid rgba(255, 255, 255, 0.1); text-align: center; }
-        
-        /* Bar graph styles */
-        svg rect { stroke: rgba(255, 255, 255, 0.8); stroke-width: 0.5px; }
-      </style>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    
-</head>
-<body>
-    <div class="content-box">
-        <div class="question">1. Goals scored in 10 matches: 2, 3, 4, 5, 0, 1, 3, 3, 4, 3. Find Mean, Median, Mode.</div>
-        <div class="solution-header">Solution:</div>
-        <div class="step"><b>Mean:</b> Σx/n = 28/10 = <b>2.8</b>.</div>
-        <div class="step"><b>Median:</b> Sorted: 0, 1, 2, 3, 3, 3, 3, 4, 4, 5. n=10. Median = avg of 5th & 6th = (3+3)/2 = <b>3</b>.</div>
-        <div class="step"><b>Mode:</b> Most frequent is <b>3</b>.</div>
-    </div>
 
-    <div class="content-box">
-        <div class="question">2. In a mathematics test given to 15 students, the following marks (out of 100) are recorded:<br/>41, 39, 48, 52, 46, 62, 54, 40, 96, 52, 98, 40, 42, 52, 60.</div>
-        <div class="solution-header">Solution:</div>
-        <div class="step"><b>Mean:</b> Sum of marks / 15 = 822 / 15 = <b>54.8</b>.</div>
-        <div class="step"><b>Median:</b> Sorted: 39, 40, 40, 41, 42, 46, 48, 52, 52, 52, 54, 60, 62, 96, 98. n=15. Median = (n+1)/2 = 8th term = <b>52</b>.</div>
-        <div class="step"><b>Mode:</b> 52 occurs 3 times. Mode = <b>52</b>.</div>
-    </div>
+        <div class="question">8. A random survey of the number of children of various age groups playing in a park was found as follows:</div>
+        <table style="font-size:14px"><tr><th>Age (in years)</th><th>Number of children</th></tr><tr><td>1 – 2</td><td>5</td></tr><tr><td>2 – 3</td><td>3</td></tr><tr><td>3 – 5</td><td>6</td></tr><tr><td>5 – 7</td><td>12</td></tr><tr><td>7 – 10</td><td>9</td></tr><tr><td>10 – 15</td><td>10</td></tr><tr><td>15 – 17</td><td>4</td></tr></table>
+        <div class="question" style="margin-top:6px">Draw a histogram to represent the data above.</div>
+        <div class="solution">
+          <strong>Solution:</strong><br/>
+          The class widths are unequal, so the bar heights must be adjusted.<br/>
+          Minimum class width = 1<br/>
+          Adjusted frequency = <span class='frac'><span class='num'>Minimum class width</span><span class='den'>Class width</span></span> × Frequency<br/>
+          <table style="font-size:14px"><tr><th>Age</th><th>Width</th><th>Children</th><th>Adjusted</th></tr><tr><td>1 – 2</td><td>1</td><td>5</td><td>5</td></tr><tr><td>2 – 3</td><td>1</td><td>3</td><td>3</td></tr><tr><td>3 – 5</td><td>2</td><td>6</td><td>3</td></tr><tr><td>5 – 7</td><td>2</td><td>12</td><td>6</td></tr><tr><td>7 – 10</td><td>3</td><td>9</td><td>3</td></tr><tr><td>10 – 15</td><td>5</td><td>10</td><td>2</td></tr><tr><td>15 – 17</td><td>2</td><td>4</td><td>2</td></tr></table>
+          Draw bars of these adjusted heights.<br/>
+          <svg viewBox="0 0 320 233" class="ex-img">
+            <text x="173.5" y="12" font-size="10" fill="#FF4DA6" text-anchor="middle">Children playing in a park</text>
+            <line x1="42" y1="190" x2="305" y2="190" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="193.5" font-size="9" fill="white" text-anchor="end">0</text>
+            <line x1="42" y1="166" x2="305" y2="166" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="169.5" font-size="9" fill="white" text-anchor="end">1</text>
+            <line x1="42" y1="142" x2="305" y2="142" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="145.5" font-size="9" fill="white" text-anchor="end">2</text>
+            <line x1="42" y1="118" x2="305" y2="118" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="121.5" font-size="9" fill="white" text-anchor="end">3</text>
+            <line x1="42" y1="94" x2="305" y2="94" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="97.5" font-size="9" fill="white" text-anchor="end">4</text>
+            <line x1="42" y1="70" x2="305" y2="70" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="73.5" font-size="9" fill="white" text-anchor="end">5</text>
+            <line x1="42" y1="46" x2="305" y2="46" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="49.5" font-size="9" fill="white" text-anchor="end">6</text>
+            <line x1="42" y1="22" x2="305" y2="22" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="25.5" font-size="9" fill="white" text-anchor="end">7</text>
+            <line x1="42" y1="16" x2="42" y2="190" stroke="white" stroke-width="1.2"/>
+            <line x1="42" y1="190" x2="305" y2="190" stroke="white" stroke-width="1.2"/>
+            <path d="M42,190 L45,186 L49,194 L52,190" fill="none" stroke="white" stroke-width="1.2"/>
+            <rect x="52" y="70" width="15.81" height="120" fill="#FF4DA6" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+            <text x="59.91" y="66" font-size="9" fill="#FF4DA6" text-anchor="middle">5</text>
+            <rect x="67.81" y="118" width="15.81" height="72" fill="#FF4DA6" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+            <text x="75.72" y="114" font-size="9" fill="#FF4DA6" text-anchor="middle">3</text>
+            <rect x="83.63" y="118" width="31.63" height="72" fill="#FF4DA6" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+            <text x="99.44" y="114" font-size="9" fill="#FF4DA6" text-anchor="middle">3</text>
+            <rect x="115.25" y="46" width="31.63" height="144" fill="#FF4DA6" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+            <text x="131.06" y="42" font-size="9" fill="#FF4DA6" text-anchor="middle">6</text>
+            <rect x="146.88" y="118" width="47.44" height="72" fill="#FF4DA6" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+            <text x="170.59" y="114" font-size="9" fill="#FF4DA6" text-anchor="middle">3</text>
+            <rect x="194.31" y="142" width="79.06" height="48" fill="#FF4DA6" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+            <text x="233.84" y="138" font-size="9" fill="#FF4DA6" text-anchor="middle">2</text>
+            <rect x="273.38" y="142" width="31.63" height="48" fill="#FF4DA6" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+            <text x="289.19" y="138" font-size="9" fill="#FF4DA6" text-anchor="middle">2</text>
+            <text x="52" y="202" font-size="8.5" fill="white" text-anchor="middle">1</text>
+            <text x="67.81" y="202" font-size="8.5" fill="white" text-anchor="middle">2</text>
+            <text x="83.63" y="202" font-size="8.5" fill="white" text-anchor="middle">3</text>
+            <text x="115.25" y="202" font-size="8.5" fill="white" text-anchor="middle">5</text>
+            <text x="146.88" y="202" font-size="8.5" fill="white" text-anchor="middle">7</text>
+            <text x="194.31" y="202" font-size="8.5" fill="white" text-anchor="middle">10</text>
+            <text x="273.38" y="202" font-size="8.5" fill="white" text-anchor="middle">15</text>
+            <text x="305" y="202" font-size="8.5" fill="white" text-anchor="middle">17</text>
+            <text x="173.5" y="229" font-size="9.5" fill="white" text-anchor="middle">Age (in years)</text>
+            <text x="11" y="106" font-size="9.5" fill="white" text-anchor="middle" transform="rotate(-90 11 106)">Adjusted frequency</text>
+          </svg>
+          <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val">Histogram with adjusted heights 5, 3, 3, 6, 3, 2, 2</span></div>
+        </div>
 
-    <div class="content-box">
-        <div class="question">3. Median is 63. Find x for: 29, 32, 48, 50, x, x+2, 72, 78, 84, 95.</div>
-        <div class="solution-header">Solution:</div>
-        <div class="step">n = 10. Median = [(n/2)th + (n/2 + 1)th] / 2</div>
-        <div class="step">63 = [x + (x+2)] / 2 ⇒ 126 = 2x + 2 ⇒ 124 = 2x ⇒ <b>x = 62</b>.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">4. Find the mode of 14, 25, 14, 28, 18, 17, 18, 14, 23, 22, 14, 18.</div>
-        <div class="solution-header">Solution:</div>
-        <div class="step">Frequencies: 14: 4, 18: 3, others are 1.</div>
-        <div class="final-answer">Mode is <b>14</b>.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">5. Find mean salary of 60 workers:</div>
-        <table align="center">
-            <tr><th>Salary (x)</th><th>Workers (f)</th><th>f.x</th></tr>
-            <tr><td>3000</td><td>16</td><td>48000</td></tr>
-            <tr><td>4000</td><td>12</td><td>48000</td></tr>
-            <tr><td>5000</td><td>10</td><td>50000</td></tr>
-            <tr><td>6000</td><td>8</td><td>48000</td></tr>
-            <tr><td>7000</td><td>6</td><td>42000</td></tr>
-            <tr><td>8000</td><td>4</td><td>32000</td></tr>
-            <tr><td>9000</td><td>3</td><td>27000</td></tr>
-            <tr><td>10000</td><td>1</td><td>10000</td></tr>
-            <tr><th>Total</th><th>60</th><th>305000</th></tr>
-        </table>
-        <div class="step">Mean = 305000 / 60 = <b>5083.33</b>.</div>
-    </div>
-    <div class="content-box">
-        <div class="question">6. Give one example of a situation in which (i) mean is an appropriate measure (ii) median is appropriate but mean is not.</div>
-        <div class="solution-header">Solution:</div>
-        <div class="step">(i) <b>Mean is appropriate:</b> Marks obtained by students in a class where the data is not skewed.</div>
-        <div class="step">(ii) <b>Median is appropriate:</b> Salary of employees in a company where a few top executives earn very high salaries (outliers) which would skew the mean.</div>
-    </div>
-</body>
-</html>
+        <div class="question">9. 100 surnames were randomly picked up from a local telephone directory and a frequency distribution of the number of letters in the English alphabet in the surnames was found as follows:</div>
+        <table style="font-size:14px"><tr><th>Number of letters</th><th>Number of surnames</th></tr><tr><td>1 – 4</td><td>6</td></tr><tr><td>4 – 6</td><td>30</td></tr><tr><td>6 – 8</td><td>44</td></tr><tr><td>8 – 12</td><td>16</td></tr><tr><td>12 – 20</td><td>4</td></tr></table>
+        <div class="question" style="margin-top:6px">(i) Draw a histogram to represent the given information.<br/>(ii) Write the class interval in which the maximum number of surnames lie.</div>
+        <div class="solution">
+          <strong>Solution:</strong><br/>
+          (i) The class widths are unequal, so the bar heights must be adjusted.<br/>
+          Minimum class width = 2<br/>
+          Adjusted frequency = <span class='frac'><span class='num'>Minimum class width</span><span class='den'>Class width</span></span> × Frequency<br/>
+          <table style="font-size:14px"><tr><th>Letters</th><th>Width</th><th>Surnames</th><th>Adjusted</th></tr><tr><td>1 – 4</td><td>3</td><td>6</td><td>4</td></tr><tr><td>4 – 6</td><td>2</td><td>30</td><td>30</td></tr><tr><td>6 – 8</td><td>2</td><td>44</td><td>44</td></tr><tr><td>8 – 12</td><td>4</td><td>16</td><td>8</td></tr><tr><td>12 – 20</td><td>8</td><td>4</td><td>1</td></tr></table>
+          Draw bars of these adjusted heights.<br/>
+          <svg viewBox="0 0 320 233" class="ex-img">
+            <text x="173.5" y="12" font-size="10" fill="#FF4DA6" text-anchor="middle">Letters in 100 surnames</text>
+            <line x1="42" y1="190" x2="305" y2="190" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="193.5" font-size="9" fill="white" text-anchor="end">0</text>
+            <line x1="42" y1="173.2" x2="305" y2="173.2" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="176.7" font-size="9" fill="white" text-anchor="end">5</text>
+            <line x1="42" y1="156.4" x2="305" y2="156.4" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="159.9" font-size="9" fill="white" text-anchor="end">10</text>
+            <line x1="42" y1="139.6" x2="305" y2="139.6" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="143.1" font-size="9" fill="white" text-anchor="end">15</text>
+            <line x1="42" y1="122.8" x2="305" y2="122.8" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="126.3" font-size="9" fill="white" text-anchor="end">20</text>
+            <line x1="42" y1="106" x2="305" y2="106" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="109.5" font-size="9" fill="white" text-anchor="end">25</text>
+            <line x1="42" y1="89.2" x2="305" y2="89.2" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="92.7" font-size="9" fill="white" text-anchor="end">30</text>
+            <line x1="42" y1="72.4" x2="305" y2="72.4" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="75.9" font-size="9" fill="white" text-anchor="end">35</text>
+            <line x1="42" y1="55.6" x2="305" y2="55.6" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="59.1" font-size="9" fill="white" text-anchor="end">40</text>
+            <line x1="42" y1="38.8" x2="305" y2="38.8" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="42.3" font-size="9" fill="white" text-anchor="end">45</text>
+            <line x1="42" y1="22" x2="305" y2="22" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="37" y="25.5" font-size="9" fill="white" text-anchor="end">50</text>
+            <line x1="42" y1="16" x2="42" y2="190" stroke="white" stroke-width="1.2"/>
+            <line x1="42" y1="190" x2="305" y2="190" stroke="white" stroke-width="1.2"/>
+            <path d="M42,190 L45,186 L49,194 L52,190" fill="none" stroke="white" stroke-width="1.2"/>
+            <rect x="52" y="176.56" width="39.95" height="13.44" fill="#FF4DA6" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+            <text x="71.97" y="172.56" font-size="9" fill="#FF4DA6" text-anchor="middle">4</text>
+            <rect x="91.95" y="89.2" width="26.63" height="100.8" fill="#FF4DA6" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+            <text x="105.26" y="85.2" font-size="9" fill="#FF4DA6" text-anchor="middle">30</text>
+            <rect x="118.58" y="42.16" width="26.63" height="147.84" fill="#FF4DA6" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+            <text x="131.89" y="38.16" font-size="9" fill="#FF4DA6" text-anchor="middle">44</text>
+            <rect x="145.21" y="163.12" width="53.26" height="26.88" fill="#FF4DA6" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+            <text x="171.84" y="159.12" font-size="9" fill="#FF4DA6" text-anchor="middle">8</text>
+            <rect x="198.47" y="186.64" width="106.53" height="3.36" fill="#FF4DA6" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+            <text x="251.74" y="182.64" font-size="9" fill="#FF4DA6" text-anchor="middle">1</text>
+            <text x="52" y="202" font-size="8.5" fill="white" text-anchor="middle">1</text>
+            <text x="91.95" y="202" font-size="8.5" fill="white" text-anchor="middle">4</text>
+            <text x="118.58" y="202" font-size="8.5" fill="white" text-anchor="middle">6</text>
+            <text x="145.21" y="202" font-size="8.5" fill="white" text-anchor="middle">8</text>
+            <text x="198.47" y="202" font-size="8.5" fill="white" text-anchor="middle">12</text>
+            <text x="305" y="202" font-size="8.5" fill="white" text-anchor="middle">20</text>
+            <text x="173.5" y="229" font-size="9.5" fill="white" text-anchor="middle">Number of letters</text>
+            <text x="11" y="106" font-size="9.5" fill="white" text-anchor="middle" transform="rotate(-90 11 106)">Adjusted frequency</text>
+          </svg>
+          (ii) The tallest bar is 6 – 8, so the maximum number of surnames (44) lie in the class interval 6 – 8.<br/>
+          <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val">(i) Histogram with adjusted heights 4, 30, 44, 8, 1 (ii) 6 – 8</span></div>
+        </div>
+      </div>
 `,
   },
 };
