@@ -1,5 +1,13 @@
-import React, { memo } from "react";
-import { StyleSheet, View, ScrollView, Image } from "react-native";
+import React, { memo, useCallback } from "react";
+import {
+  StyleSheet,
+  View,
+  ScrollView,
+  Image,
+  Linking,
+  Alert,
+  Pressable,
+} from "react-native";
 import { ScreenWrapper } from "@/components/ScreenWrapper";
 import { ThemedText } from "@/components/ThemedText";
 import {
@@ -12,6 +20,33 @@ import {
 // @ts-ignore
 import sameerPhoto from "../../assets/images/sameer-photo.jpg";
 import { JiguuLogo } from "@/components/JiguuLogo";
+
+const OFFLINE_MESSAGE = "Connect to the internet to visit this link.";
+
+// Opens a website only when it can be reached; otherwise shows a clean alert instead of a blank error page.
+async function openWebsite(url: string) {
+  try {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 5000);
+    try {
+      await fetch(url, { method: "HEAD", signal: controller.signal });
+    } finally {
+      clearTimeout(timer);
+    }
+    await Linking.openURL(url);
+  } catch {
+    Alert.alert("You are offline", OFFLINE_MESSAGE);
+  }
+}
+
+// Opens the email app (works offline); shows an alert if no email app is available.
+async function openEmail(address: string) {
+  try {
+    await Linking.openURL(`mailto:${address}`);
+  } catch {
+    Alert.alert("Email", `No email app found. Please write to ${address}.`);
+  }
+}
 
 function AboutEducatorScreen() {
   return (
@@ -32,47 +67,117 @@ function AboutEducatorScreen() {
               />
             </View>
             <ThemedText style={styles.name}>Sameer Sir</ThemedText>
-            <ThemedText style={styles.role}>(MCA, B.Ed)</ThemedText>
+            <ThemedText style={styles.role}>
+              MCA, B.Ed • Founder & Lead Educator, JiGUU EdTech • International
+              Author
+            </ThemedText>
             <ThemedText style={styles.bodyText}>
-              Sameer Sir is a dedicated educator with a strong academic
-              background (MCA, B.Ed) and over a decade of teaching experience.
-              He focuses on simplifying complex concepts and helping students
-              build clarity, confidence, and strong fundamentals.
+              <ThemedText style={styles.bold}>Sameer Sir</ThemedText> is an
+              international author, technology educator, and mentor with{" "}
+              <ThemedText style={styles.bold}>over a decade</ThemedText> of
+              dedicated teaching and curriculum mentorship in Jammu & Kashmir's{" "}
+              <ThemedText style={styles.bold}>
+                School Education Department
+              </ThemedText>
+              . Known for his teaching philosophy of{" "}
+              <ThemedText style={styles.italic}>
+                "structural clarity and zero-fluff learning,"
+              </ThemedText>{" "}
+              he bridges classroom pedagogy with software engineering to make
+              complex concepts simple, visual, and exam-ready.
             </ThemedText>
             <ThemedText style={[styles.bodyText, { marginTop: Spacing.md }]}>
-              His approach is based on step-by-step learning, making even
-              difficult topics easy to understand and apply in exams.
+              Beyond the classroom, he has authored{" "}
+              <ThemedText style={styles.bold}>12 published books</ThemedText>
+              —ranging from{" "}
+              <ThemedText style={styles.bold}>
+                JKBOSE & CBSE Class 11 and 12 Computer Science with Python
+              </ThemedText>{" "}
+              textbooks to global guides on programming, competitive exams, and
+              AI—reaching readers across{" "}
+              <ThemedText style={styles.bold}>60+ countries</ThemedText>.
             </ThemedText>
           </View>
         </View>
 
         <View style={styles.section}>
-          <ThemedText style={styles.sectionHeader}>About Jiguu</ThemedText>
+          <ThemedText style={styles.sectionHeader}>About JiGUU</ThemedText>
           <View style={styles.card}>
             <View style={styles.logoCenter}>
               <JiguuLogo size="medium" showSubtitle={false} />
             </View>
+            <ThemedText style={styles.role}>
+              Learn Smart • Study Smarter
+            </ThemedText>
             <ThemedText style={styles.bodyText}>
-              JIGUU is a smart learning platform designed to simplify education
-              across multiple subjects. From Mathematics to Science and beyond,
-              it provides structured solutions, quick revision tools, and
-              practice support to help students learn effectively.
+              <ThemedText style={styles.bold}>JiGUU</ThemedText> is an
+              ultra-lightweight,{" "}
+              <ThemedText style={styles.bold}>100% offline</ThemedText>, and
+              completely{" "}
+              <ThemedText style={styles.bold}>free & ad-free</ThemedText>{" "}
+              Android learning platform designed for students of{" "}
+              <ThemedText style={styles.bold}>Classes 7 to 12</ThemedText>{" "}
+              (aligned with{" "}
+              <ThemedText style={styles.bold}>JKBOSE & NCERT</ThemedText>{" "}
+              curricula).
             </ThemedText>
             <ThemedText style={[styles.bodyText, { marginTop: Spacing.md }]}>
-              Built with a focus on clarity and consistency, JIGUU turns complex
-              concepts into simple, understandable learning.
+              Built with a focus on clarity and consistency, JiGUU works without
+              internet connectivity, sign-ups, or subscriptions—turning any
+              smartphone into a distraction-free digital library with concise
+              reference notes, step-by-step solved questions, crisp diagrams,
+              and chapter-wise MCQs.
             </ThemedText>
           </View>
         </View>
 
         <View style={styles.section}>
-          <ThemedText style={styles.sectionHeader}>Why Jiguu?</ThemedText>
+          <ThemedText style={styles.sectionHeader}>Why JiGUU?</ThemedText>
           <View style={styles.card}>
-            <FeatureItem text="Step-by-step NCERT Solutions" />
-            <FeatureItem text="Quick Revision Notes" />
-            <FeatureItem text="Interactive Practice & Quizzes" />
-            <FeatureItem text="Clean, Distraction-Free Learning" />
-            <FeatureItem text="Works Offline" />
+            <FeatureItem
+              label="Classes 7 to 12 Coverage:"
+              text="Comprehensive JKBOSE & NCERT-aligned subjects"
+            />
+            <FeatureItem
+              label="100% Offline & Ultra-Light:"
+              text="Works smoothly even in zero-connectivity areas"
+            />
+            <FeatureItem
+              label="Zero Ads, Zero Cost:"
+              text="No login walls, no paywalls, and no distractions"
+            />
+            <FeatureItem
+              label="Exam-Focused Content:"
+              text="Concise reference notes, step-by-step solutions, and chapter-wise MCQs"
+            />
+            <FeatureItem label="Global Learner Trust:">
+              Rated <ThemedText style={styles.bold}>5.0 ★</ThemedText> on Google
+              Play with active learners across India and abroad
+            </FeatureItem>
+          </View>
+        </View>
+
+        <View style={styles.section}>
+          <ThemedText style={styles.sectionHeader}>
+            Official Portals & Connect
+          </ThemedText>
+          <View style={styles.card}>
+            <PortalLink
+              label="Official EdTech & App Portal"
+              value="www.jiguuedtech.com"
+              onPress={() => openWebsite("https://www.jiguuedtech.com")}
+            />
+            <PortalLink
+              label="Author Profile & Books Library"
+              value="www.sameersir.com"
+              onPress={() => openWebsite("https://www.sameersir.com")}
+            />
+            <PortalLink
+              label="Support & Guidance"
+              value="support@jiguuedtech.com"
+              onPress={() => openEmail("support@jiguuedtech.com")}
+              last
+            />
           </View>
         </View>
 
@@ -80,12 +185,13 @@ function AboutEducatorScreen() {
           <ThemedText style={styles.sectionHeader}>Note of Thanks</ThemedText>
           <View style={styles.card}>
             <ThemedText style={styles.quoteText}>
-              "I am sincerely grateful to all my students for their trust and
-              dedication. This platform is created to support your journey
-              towards better understanding and academic success. Keep learning,
-              stay curious, and give your best every day."
+              "I am sincerely grateful to my students, fellow educators, and
+              readers worldwide for their trust and encouragement. JiGUU was
+              built with a simple belief: a student's location or internet
+              access should never limit their right to quality education. Keep
+              learning, stay curious, and give your best every day."
             </ThemedText>
-            <ThemedText style={styles.signature}>– Sameer Sir</ThemedText>
+            <ThemedText style={styles.signature}>— Sameer Sir</ThemedText>
           </View>
         </View>
       </ScrollView>
@@ -93,12 +199,44 @@ function AboutEducatorScreen() {
   );
 }
 
-const FeatureItem = ({ text }: { text: string }) => (
+const FeatureItem = ({
+  label,
+  text,
+  children,
+}: {
+  label: string;
+  text?: string;
+  children?: React.ReactNode;
+}) => (
   <View style={styles.featureItem}>
     <View style={styles.featureBullet} />
-    <ThemedText style={styles.featureText}>{text}</ThemedText>
+    <ThemedText style={styles.featureText}>
+      <ThemedText style={styles.bold}>{label}</ThemedText> {text ?? children}
+    </ThemedText>
   </View>
 );
+
+const PortalLink = ({
+  label,
+  value,
+  onPress,
+  last,
+}: {
+  label: string;
+  value: string;
+  onPress: () => void;
+  last?: boolean;
+}) => {
+  const handlePress = useCallback(() => onPress(), [onPress]);
+  return (
+    <View style={[styles.portalItem, last && { marginBottom: 0 }]}>
+      <ThemedText style={styles.portalLabel}>{label}</ThemedText>
+      <Pressable onPress={handlePress} accessibilityRole="link" hitSlop={8}>
+        <ThemedText style={styles.portalLink}>{value}</ThemedText>
+      </Pressable>
+    </View>
+  );
+};
 
 export default memo(AboutEducatorScreen);
 
@@ -177,9 +315,17 @@ const styles = StyleSheet.create({
     lineHeight: 26,
     fontFamily: "NotoSans_400Regular",
   },
+  // inline highlights inside the existing text styles (no change to the card design)
+  bold: {
+    fontFamily: "NotoSans_700Bold",
+    color: JiguuColors.textPrimary,
+  },
+  italic: {
+    fontStyle: "italic",
+  },
   featureItem: {
     flexDirection: "row",
-    alignItems: "center",
+    alignItems: "flex-start",
     marginBottom: Spacing.md,
   },
   featureBullet: {
@@ -188,11 +334,27 @@ const styles = StyleSheet.create({
     borderRadius: 3,
     backgroundColor: JiguuColors.accent1,
     marginRight: Spacing.md,
+    marginTop: 9,
   },
   featureText: {
     ...Typography.body,
     color: JiguuColors.textPrimary,
     fontFamily: "NotoSans_400Regular",
+    flex: 1,
+  },
+  portalItem: {
+    marginBottom: Spacing.lg,
+  },
+  portalLabel: {
+    ...Typography.body,
+    color: JiguuColors.textPrimary,
+    fontFamily: "NotoSans_700Bold",
+  },
+  portalLink: {
+    ...Typography.body,
+    color: JiguuColors.accent1,
+    fontFamily: "NotoSans_400Regular",
+    textDecorationLine: "underline",
   },
   quoteText: {
     ...Typography.body,
