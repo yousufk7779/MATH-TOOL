@@ -796,7 +796,7 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
       {
         id: "c9-math-10",
         number: 10,
-        name: "Surface Area and Volumes",
+        name: "Surface Areas and Volumes",
         color: "#FFA726",
       },
       { id: "c9-math-11", number: 11, name: "Statistics", color: "#FF4DA6" },
