@@ -106,7 +106,7 @@ function AboutEducatorScreen() {
             </View>
             <ThemedText style={styles.name}>Sameer Sir</ThemedText>
             <ThemedText style={styles.role}>
-              Founder & Lead Educator, JiGUU EdTech • International Author
+              {"Founder & Lead Educator, JiGUU EdTech\nInternational Author"}
             </ThemedText>
             <ThemedText style={styles.bodyText}>
               Sameer Sir (Sameer Khan / Sumeer Yousaf Khan) is an international
@@ -139,16 +139,9 @@ function AboutEducatorScreen() {
               />
             </View>
             <ThemedText style={styles.bodyText}>
-              <ThemedText style={styles.bold}>JiGUU</ThemedText> is an
-              ultra-lightweight,{" "}
-              <ThemedText style={styles.bold}>100% offline</ThemedText>, and
-              completely{" "}
-              <ThemedText style={styles.bold}>free & ad-free</ThemedText>{" "}
-              Android learning platform designed for students of{" "}
-              <ThemedText style={styles.bold}>Classes 7 to 12</ThemedText>{" "}
-              (aligned with{" "}
-              <ThemedText style={styles.bold}>JKBOSE & NCERT</ThemedText>{" "}
-              curricula).
+              JiGUU is an ultra-lightweight, 100% offline, and completely free &
+              ad-free Android learning platform designed for students of Classes
+              7 to 12 (aligned with JKBOSE & NCERT curricula).
             </ThemedText>
             <ThemedText style={[styles.bodyText, { marginTop: Spacing.md }]}>
               Built with a focus on clarity and consistency, JiGUU works without
