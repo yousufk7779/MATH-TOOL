@@ -1,4 +1,4 @@
-import React, { memo, useCallback } from "react";
+import React, { memo, useCallback, useState } from "react";
 import {
   StyleSheet,
   View,
@@ -7,6 +7,7 @@ import {
   Linking,
   Alert,
   Pressable,
+  Modal,
 } from "react-native";
 import { ScreenWrapper } from "@/components/ScreenWrapper";
 import { ThemedText } from "@/components/ThemedText";
@@ -21,36 +22,73 @@ import {
 import sameerPhoto from "../../assets/images/sameer-photo.jpg";
 import { JiguuLogo } from "@/components/JiguuLogo";
 
-const OFFLINE_MESSAGE = "Connect to the internet to visit this link.";
+const OFFLINE_TITLE = "You're Currently Offline";
+const OFFLINE_MESSAGE =
+  "JiGUU works 100% offline for studying, but visiting external websites or sending emails requires an internet connection. Please turn on mobile data or Wi-Fi and try again.";
 
-// Opens a website only when it can be reached; otherwise shows a clean alert instead of a blank error page.
-async function openWebsite(url: string) {
+// Lightweight connectivity check: a quick request to google.com with a short timeout.
+async function isOnline(): Promise<boolean> {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), 4000);
   try {
-    const controller = new AbortController();
-    const timer = setTimeout(() => controller.abort(), 5000);
-    try {
-      await fetch(url, { method: "HEAD", signal: controller.signal });
-    } finally {
-      clearTimeout(timer);
-    }
-    await Linking.openURL(url);
+    await fetch("https://www.google.com", {
+      method: "HEAD",
+      cache: "no-store",
+      signal: controller.signal,
+    });
+    return true;
   } catch {
-    Alert.alert("You are offline", OFFLINE_MESSAGE);
-  }
-}
-
-// Opens the email app (works offline); shows an alert if no email app is available.
-async function openEmail(address: string) {
-  try {
-    await Linking.openURL(`mailto:${address}`);
-  } catch {
-    Alert.alert("Email", `No email app found. Please write to ${address}.`);
+    return false;
+  } finally {
+    clearTimeout(timer);
   }
 }
 
 function AboutEducatorScreen() {
+  const [offlineVisible, setOfflineVisible] = useState(false);
+
+  // Checks the connection first; opens the website or email app only when online.
+  const openLink = useCallback(async (url: string) => {
+    if (!(await isOnline())) {
+      setOfflineVisible(true);
+      return;
+    }
+    try {
+      await Linking.openURL(url);
+    } catch {
+      Alert.alert(
+        "Unable to open",
+        url.startsWith("mailto:")
+          ? `No email app found. Please write to ${url.slice(7)}.`
+          : "This link could not be opened on your device.",
+      );
+    }
+  }, []);
+
   return (
     <ScreenWrapper showBackButton hideHomeButton>
+      <Modal
+        visible={offlineVisible}
+        transparent
+        animationType="fade"
+        onRequestClose={() => setOfflineVisible(false)}
+      >
+        <View style={styles.modalOverlay}>
+          <View style={[styles.card, styles.modalCard]}>
+            <ThemedText style={styles.modalTitle}>{OFFLINE_TITLE}</ThemedText>
+            <ThemedText style={styles.modalMessage}>
+              {OFFLINE_MESSAGE}
+            </ThemedText>
+            <Pressable
+              style={styles.modalButton}
+              onPress={() => setOfflineVisible(false)}
+              accessibilityRole="button"
+            >
+              <ThemedText style={styles.modalButtonText}>Got It</ThemedText>
+            </Pressable>
+          </View>
+        </View>
+      </Modal>
       <ScrollView
         style={styles.scrollView}
         contentContainerStyle={styles.content}
@@ -68,18 +106,13 @@ function AboutEducatorScreen() {
             </View>
             <ThemedText style={styles.name}>Sameer Sir</ThemedText>
             <ThemedText style={styles.role}>
-              MCA, B.Ed • Founder & Lead Educator, JiGUU EdTech • International
-              Author
+              Founder & Lead Educator, JiGUU EdTech • International Author
             </ThemedText>
             <ThemedText style={styles.bodyText}>
-              <ThemedText style={styles.bold}>Sameer Sir</ThemedText> is an
-              international author, technology educator, and mentor with{" "}
-              <ThemedText style={styles.bold}>over a decade</ThemedText> of
-              dedicated teaching and curriculum mentorship in Jammu & Kashmir's{" "}
-              <ThemedText style={styles.bold}>
-                School Education Department
-              </ThemedText>
-              . Known for his teaching philosophy of{" "}
+              Sameer Sir (Sameer Khan / Sumeer Yousaf Khan) is an international
+              author, technology educator, and mentor with over a decade of
+              dedicated teaching and curriculum mentorship in Jammu & Kashmir's
+              School Education Department. Known for his teaching philosophy of{" "}
               <ThemedText style={styles.italic}>
                 "structural clarity and zero-fluff learning,"
               </ThemedText>{" "}
@@ -87,15 +120,10 @@ function AboutEducatorScreen() {
               complex concepts simple, visual, and exam-ready.
             </ThemedText>
             <ThemedText style={[styles.bodyText, { marginTop: Spacing.md }]}>
-              Beyond the classroom, he has authored{" "}
-              <ThemedText style={styles.bold}>12 published books</ThemedText>
-              —ranging from{" "}
-              <ThemedText style={styles.bold}>
-                JKBOSE & CBSE Class 11 and 12 Computer Science with Python
-              </ThemedText>{" "}
+              Beyond the classroom, he has authored 12 published books—ranging
+              from JKBOSE & CBSE Class 11 and 12 Computer Science with Python
               textbooks to global guides on programming, competitive exams, and
-              AI—reaching readers across{" "}
-              <ThemedText style={styles.bold}>60+ countries</ThemedText>.
+              AI—reaching readers across 60+ countries.
             </ThemedText>
           </View>
         </View>
@@ -104,11 +132,12 @@ function AboutEducatorScreen() {
           <ThemedText style={styles.sectionHeader}>About JiGUU</ThemedText>
           <View style={styles.card}>
             <View style={styles.logoCenter}>
-              <JiguuLogo size="medium" showSubtitle={false} />
+              <JiguuLogo
+                size="medium"
+                showSubtitle
+                subtitleSuffix="Study Smarter"
+              />
             </View>
-            <ThemedText style={styles.role}>
-              Learn Smart • Study Smarter
-            </ThemedText>
             <ThemedText style={styles.bodyText}>
               <ThemedText style={styles.bold}>JiGUU</ThemedText> is an
               ultra-lightweight,{" "}
@@ -165,17 +194,17 @@ function AboutEducatorScreen() {
             <PortalLink
               label="Official EdTech & App Portal"
               value="www.jiguuedtech.com"
-              onPress={() => openWebsite("https://www.jiguuedtech.com")}
+              onPress={() => openLink("https://www.jiguuedtech.com")}
             />
             <PortalLink
               label="Author Profile & Books Library"
               value="www.sameersir.com"
-              onPress={() => openWebsite("https://www.sameersir.com")}
+              onPress={() => openLink("https://www.sameersir.com")}
             />
             <PortalLink
               label="Support & Guidance"
               value="support@jiguuedtech.com"
-              onPress={() => openEmail("support@jiguuedtech.com")}
+              onPress={() => openLink("mailto:support@jiguuedtech.com")}
               last
             />
           </View>
@@ -355,6 +384,44 @@ const styles = StyleSheet.create({
     color: JiguuColors.accent1,
     fontFamily: "NotoSans_400Regular",
     textDecorationLine: "underline",
+  },
+  // offline popup: same dark card + cyan left border, centred over a dimmed screen
+  modalOverlay: {
+    flex: 1,
+    backgroundColor: "rgba(0,0,0,0.65)",
+    alignItems: "center",
+    justifyContent: "center",
+    paddingHorizontal: Spacing.xl,
+  },
+  modalCard: {
+    width: "100%",
+    maxWidth: 420,
+  },
+  modalTitle: {
+    ...Typography.h4,
+    color: JiguuColors.textPrimary,
+    fontFamily: "NotoSans_700Bold",
+    marginBottom: Spacing.md,
+  },
+  modalMessage: {
+    ...Typography.body,
+    color: JiguuColors.textSecondary,
+    textAlign: "justify",
+    lineHeight: 26,
+    fontFamily: "NotoSans_400Regular",
+    marginBottom: Spacing.xl,
+  },
+  modalButton: {
+    alignSelf: "flex-end",
+    backgroundColor: JiguuColors.accent1,
+    paddingVertical: Spacing.sm,
+    paddingHorizontal: Spacing.xl,
+    borderRadius: BorderRadius.md,
+  },
+  modalButtonText: {
+    ...Typography.body,
+    color: "#0B0F1A",
+    fontFamily: "NotoSans_700Bold",
   },
   quoteText: {
     ...Typography.body,

@@ -9,13 +9,17 @@ const jiguuLogoImage = require("../../assets/images/jiguu-logo.png");
 interface JiguuLogoProps {
   showSubtitle?: boolean;
   size?: "small" | "medium" | "large";
+  /** Optional fixed pink subtitle text (e.g. "Study Smarter"); by default it follows the current class. */
+  subtitleSuffix?: string;
 }
 
 export const JiguuLogo = memo(function JiguuLogo({
   showSubtitle = false,
   size = "medium",
+  subtitleSuffix: fixedSuffix,
 }: JiguuLogoProps) {
   const isSmall = size === "small";
+  const isMedium = size === "medium";
   const route = useRoute();
 
   const { logoWidth, logoHeight } = useMemo(
@@ -80,6 +84,7 @@ export const JiguuLogo = memo(function JiguuLogo({
   else if (isClass8) subtitleSuffix = "Class 8";
   else if (isClass7) subtitleSuffix = "Class 7";
   else if (isClassSelector) subtitleSuffix = "Study Smarter";
+  if (fixedSuffix) subtitleSuffix = fixedSuffix;
 
   const subtitleTextStyle = useMemo(
     () => [styles.subtitleText, styles.subtitleTitleMatch],
@@ -102,6 +107,7 @@ export const JiguuLogo = memo(function JiguuLogo({
         <View
           style={[
             styles.subtitleWrapper,
+            isMedium && styles.subtitleWrapperMedium,
             isSmall && styles.subtitleWrapperSmall,
           ]}
         >
@@ -142,6 +148,10 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     marginTop: -18,
     paddingHorizontal: 20,
+  },
+  // medium logo has less transparent space below the artwork (15.6 px vs 19.6 px), so pull up proportionally
+  subtitleWrapperMedium: {
+    marginTop: -14,
   },
   subtitleWrapperSmall: {
     height: 18,
