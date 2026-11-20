@@ -259,20 +259,35 @@ interface SubTabButtonProps {
   onPress: () => void;
   gradient: string[];
   textStyle?: any;
+  /** Share the row width equally with the other tabs (used when there are 4 or fewer tabs). */
+  fill?: boolean;
+  /** Tighter padding and a slightly smaller label (used when 4 tabs share the row). */
+  compact?: boolean;
 }
 
 const SubTabButton = memo(
-  ({ title, isActive, onPress, gradient, textStyle }: SubTabButtonProps) => {
+  ({
+    title,
+    isActive,
+    onPress,
+    gradient,
+    textStyle,
+    fill,
+    compact,
+  }: SubTabButtonProps) => {
     const isGlossy =
       gradient[0] === "#FFA726" ||
       gradient[0] === "#7CFF00" ||
       gradient[0] === "#FF4DA6" ||
       gradient[0] === "#FF1744" ||
       gradient[0] === "#43A047";
+    const labelStyle = compact ? styles.tabTextCompact : null;
     return (
       <Pressable
         style={({ pressed }) => [
           styles.subTabButton,
+          fill && styles.subTabButtonFill,
+          compact && styles.subTabButtonCompact,
           pressed && { opacity: 0.8 },
         ]}
         onPress={onPress}
@@ -286,7 +301,12 @@ const SubTabButton = memo(
               style={styles.tabButtonGradient}
             >
               <ThemedText
-                style={[styles.tabText, styles.tabTextActive, textStyle]}
+                style={[
+                  styles.tabText,
+                  styles.tabTextActive,
+                  textStyle,
+                  labelStyle,
+                ]}
                 numberOfLines={1}
                 adjustsFontSizeToFit
                 minimumFontScale={0.78}
@@ -299,7 +319,7 @@ const SubTabButton = memo(
           </View>
         ) : (
           <ThemedText
-            style={[styles.tabText, textStyle]}
+            style={[styles.tabText, textStyle, labelStyle]}
             numberOfLines={1}
             adjustsFontSizeToFit
             minimumFontScale={0.78}
@@ -1117,15 +1137,12 @@ function SolutionScreen() {
           )}
         </View>
 
-        {activeSection === "exercises" && exerciseSubSections.length > 1 && (
-          <View style={{ height: 42, marginBottom: Spacing.sm }}>
-            <ScrollView
-              horizontal
-              showsHorizontalScrollIndicator={false}
-              style={styles.subTabScroll}
-              contentContainerStyle={styles.subTabContainer}
-            >
-              {exerciseSubSections.map((sub: string) => {
+        {activeSection === "exercises" && exerciseSubSections.length > 1 && (() => {
+          // Up to 4 tabs: one full-width row, tabs share the width equally (no scrolling).
+          // 5 or more tabs: horizontal scroll without a scrollbar.
+          const tabCount = exerciseSubSections.length;
+          const useRow = tabCount <= 4;
+          const tabs = exerciseSubSections.map((sub: string) => {
                 let title =
                   sub === "examples"
                     ? "Examples"
@@ -1160,12 +1177,28 @@ function SolutionScreen() {
                     onPress={() => handleSubSectionChange(sub)}
                     gradient={chapterGradient}
                     textStyle={hwTitleStyle}
+                    fill={useRow}
+                    compact={tabCount === 4}
                   />
                 );
-              })}
-            </ScrollView>
-          </View>
-        )}
+              });
+          return (
+            <View style={{ height: 42, marginBottom: Spacing.sm }}>
+              {useRow ? (
+                <View style={styles.subTabRow}>{tabs}</View>
+              ) : (
+                <ScrollView
+                  horizontal
+                  showsHorizontalScrollIndicator={false}
+                  style={styles.subTabScroll}
+                  contentContainerStyle={styles.subTabContainer}
+                >
+                  {tabs}
+                </ScrollView>
+              )}
+            </View>
+          );
+        })()}
 
         <ZoomableScrollView
           key={`${chapterId}-${quizId}`}
@@ -1953,6 +1986,23 @@ const styles = StyleSheet.create({
   },
   tabTextActive: { color: "#fff" },
   subTabScroll: { flex: 1 },
+  // up to 4 exercise tabs: one full-width row, each tab gets an equal share (50/50, 33/33/33, 25 × 4)
+  subTabRow: {
+    flex: 1,
+    width: "100%",
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 8,
+    paddingHorizontal: Spacing.md,
+  },
+  subTabButtonFill: {
+    flex: 1,
+    minWidth: 0,
+    paddingHorizontal: 8,
+    justifyContent: "center",
+  },
+  subTabButtonCompact: { paddingHorizontal: 4 },
+  tabTextCompact: { fontSize: 12 },
   subTabContainer: {
     paddingHorizontal: Spacing.md,
     gap: Spacing.xs,
