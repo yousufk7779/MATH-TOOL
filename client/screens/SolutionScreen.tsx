@@ -840,7 +840,12 @@ function SolutionScreen() {
                       <HtmlText
                         chapterId={chapterId}
                         html={`Q${idx + 1}. ${mcq.question}`}
-                        style={[scaledMcqQuestionTitle, { color: accentColor }]}
+                        style={[
+                          scaledMcqQuestionTitle,
+                          { color: accentColor },
+                          // Class 10 Science: justified MCQ statements
+                          chapterId.startsWith("sci-") ? { textAlign: "justify" } : null,
+                        ]}
                       />
                     </View>
                     {(shuffledOptions[mcq.id] || mcq.options || []).map(
@@ -1042,6 +1047,8 @@ function SolutionScreen() {
                                   fontFamily: "NotoSans_400Regular",
                                   fontSize: 14,
                                   lineHeight: 22,
+                                  // Class 10 Science: justified MCQ explanations
+                                  ...(chapterId.startsWith("sci-") ? { textAlign: "justify" as const } : {}),
                                 }}
                               />
                             </View>
