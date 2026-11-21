@@ -750,36 +750,52 @@ export const c9Math1: ChapterContent = {
         <div class="question">Q4. Represent √9.3 on the number line.</div>
         <div class="solution">
           <strong>Solution:</strong><br/>
-          1. Draw AB = 9.3 units and BC = 1 unit on a line.<br/>
+          1. Mark AB = 9.3 units and BC = 1 unit on a line.<br/>
           AC = 9.3 + 1 = 10.3<br/>
           2. Mark O, the midpoint of AC. Draw a semicircle with centre O and radius OA.<br/>
           OA = OD = <span class='frac'><span class='num'>10.3</span><span class='den'>2</span></span> = 5.15<br/>
-          OB = AB − OA = 9.3 − 5.15 = 4.15<br/>
-          3. Draw BD ⊥ AC at B, meeting the semicircle at D.<br/>
-          In right △OBD, by Pythagoras theorem:<br/>
+          OB = 9.3 − 5.15 = 4.15<br/>
+          3. Draw BD ⊥ AC, meeting the semicircle at D.<br/>
+          In right △OBD:<br/>
           BD² = OD² − OB²<br/>
           = (5.15)² − (4.15)²<br/>
-          Using a² − b² = (a − b)(a + b):<br/>
           = (5.15 − 4.15)(5.15 + 4.15)<br/>
-          = 1 × 9.3<br/>
-          = 9.3<br/>
+          = 1 × 9.3 = 9.3<br/>
           BD = √9.3<br/>
-          4. With centre B and radius BD, draw an arc cutting the number line at P.<br/>
+          4. Take B as 0. With centre B and radius BD, draw an arc cutting the line at P.<br/>
           BP = BD = √9.3<br/>
           <div class="ans-box"><span class="ans-label">✓ Final Answer: </span><span class="ans-val">P represents √9.3 on the number line.</span></div><br/>
           <div class="svg-container">
-            <svg width="280" height="150" style="background: #1E1E2E; border-radius: 12px; padding: 10px;">
-              <line x1="20" y1="90" x2="260" y2="90" stroke="white" stroke-width="2" />
-              <circle cx="112.7" cy="90" r="92.7" fill="none" stroke="white" stroke-dasharray="3" clip-path="inset(0px 0px 92.7px 0px)" />
-              <line x1="20" y1="85" x2="20" y2="95" stroke="white" />
-              <text x="15" y="120" fill="white" font-size="13">A</text>
-              <line x1="187.4" y1="90" x2="187.4" y2="35.1" stroke="#FFB74D" stroke-width="3" />
-              <text x="182.4" y="120" fill="white" font-size="13">B</text>
-              <text x="122" y="55" fill="#FFB74D" font-size="14" font-weight="bold">√9.3 (D)</text>
-              <line x1="205.4" y1="85" x2="205.4" y2="95" stroke="white" />
-              <text x="200.4" y="120" fill="white" font-size="13">C</text>
-              <path d="M 187.4 35.1 A 54.9 54.9 0 0 1 242.3 90" stroke="#FFB74D" fill="none" stroke-dasharray="5" />
-              <text x="237" y="120" fill="#FFB74D" font-size="15" font-weight="bold">P</text>
+            <svg viewBox="0 0 320 222" width="100%" style="max-width: 320px; background: #1E1E2E; border-radius: 12px;">
+              <path d="M 25 150 A 113.3 113.3 0 0 1 251.6 150" fill="none" stroke="#90CAF9" stroke-width="1.5" stroke-dasharray="4 3" />
+              <line x1="10" y1="150" x2="312" y2="150" stroke="white" stroke-width="2" />
+              <line x1="138.3" y1="150" x2="229.6" y2="82.9" stroke="#90CAF9" stroke-width="1.5" />
+              <line x1="229.6" y1="150" x2="229.6" y2="82.9" stroke="#FFB74D" stroke-width="3" />
+              <path d="M 221.6 150 L 221.6 142 L 229.6 142" fill="none" stroke="white" stroke-width="1" />
+              <path d="M 229.6 82.9 A 67.09 67.09 0 0 1 296.7 150" fill="none" stroke="#FFB74D" stroke-width="1.5" stroke-dasharray="5 3" />
+              <circle cx="25" cy="150" r="3" fill="white" />
+              <circle cx="138.3" cy="150" r="3" fill="white" />
+              <circle cx="229.6" cy="150" r="3" fill="white" />
+              <circle cx="251.6" cy="150" r="3" fill="white" />
+              <circle cx="296.7" cy="150" r="3.5" fill="#FFB74D" />
+              <circle cx="229.6" cy="82.9" r="3" fill="#FFB74D" />
+              <text x="25" y="168" fill="white" font-size="13" font-weight="bold" text-anchor="middle">A</text>
+              <text x="138.3" y="168" fill="white" font-size="13" font-weight="bold" text-anchor="middle">O</text>
+              <text x="229.6" y="168" fill="white" font-size="13" font-weight="bold" text-anchor="middle">B</text>
+              <text x="229.6" y="183" fill="white" font-size="12" text-anchor="middle">0</text>
+              <text x="251.6" y="168" fill="white" font-size="13" font-weight="bold" text-anchor="middle">C</text>
+              <text x="296.7" y="168" fill="#FFB74D" font-size="13" font-weight="bold" text-anchor="middle">P</text>
+              <text x="296.7" y="184" fill="#FFB74D" font-size="12" font-weight="bold" text-anchor="middle">√9.3</text>
+              <text x="229.6" y="76" fill="#FFB74D" font-size="13" font-weight="bold" text-anchor="middle">D</text>
+              <text x="221" y="133" fill="#FFB74D" font-size="12" font-weight="bold" text-anchor="end">√9.3</text>
+              <text x="178" y="110" fill="#90CAF9" font-size="11" text-anchor="end">5.15</text>
+              <line x1="25" y1="198" x2="229.6" y2="198" stroke="white" stroke-width="1" />
+              <line x1="25" y1="194" x2="25" y2="202" stroke="white" stroke-width="1" />
+              <line x1="229.6" y1="194" x2="229.6" y2="202" stroke="white" stroke-width="1" />
+              <text x="127.3" y="214" fill="white" font-size="12" text-anchor="middle">9.3</text>
+              <line x1="251.6" y1="194" x2="251.6" y2="202" stroke="white" stroke-width="1" />
+              <line x1="229.6" y1="198" x2="251.6" y2="198" stroke="white" stroke-width="1" />
+              <text x="240.6" y="214" fill="white" font-size="12" text-anchor="middle">1</text>
             </svg>
           </div>
         </div>
