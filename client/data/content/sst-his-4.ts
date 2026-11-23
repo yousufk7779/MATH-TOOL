@@ -1,301 +1,346 @@
 import { ChapterContent } from "../types";
 
-const themeColor = "#FDC830";
-
 export const sstHis4: ChapterContent = {
-  id: "sst-his-4",
-  number: 4,
-  title: "The Age of Industrialisation",
-  introduction:
-    "Before there were massive factories with loud machines, goods were still being produced for international markets, but inside people's homes. Then came the 'Industrial Revolution' – a time when machines took over, changing how people worked, lived, and traveled forever.",
-  definitions: [
-    {
-      term: "Proto-industrialisation",
-      description:
-        "The very early phase of industrialisation before factories existed. Merchants supplied money to peasants and artisans in villages to produce goods for the international market.",
-    },
-    {
-      term: "Guilds",
-      description:
-        "Associations of producers (craftsmen and merchants) that trained craftspeople, maintained control over production, and restricted the entry of new people into the trade.",
-    },
-    {
-      term: "Spinning Jenny",
-      description:
-        "A machine invented by James Hargreaves in 1764. It greatly speeded up the spinning process allowing one worker to spin many threads at the same time.",
-    },
-    {
-      term: "Fly Shuttle",
-      description:
-        "A mechanical device used for weaving, moved by means of ropes and pulleys. It allowed weavers to weave wider pieces of cloth faster.",
-    },
-    {
-      term: "Gomasthas",
-      description:
-        "Paid servants appointed by the British East India Company to supervise weavers, collect supplies, and examine the quality of cloth in India.",
-    },
-  ],
-  keyPoints: [
-    "The first factories came up in England by the 1730s. Cotton was the leading sector during the first phase of industrialisation.",
-    "The invention of the steam engine by James Watt was revolutionary, but industrialists were slow to accept new machines because they were expensive and broke down often.",
-    "In Victorian Britain, there was no shortage of human labour. Poor peasants moved to cities in large numbers. Because labour was cheap, many factory owners preferred human hands over expensive machines.",
-    "The introduction of the Spinning Jenny caused riots among female workers because the machine did the work of many women, making them fear unemployment.",
-    "Before British machines, Indian silk and cotton dominated the international market. The fine qualities came from India.",
-    "With industrialisation in Britain, Manchester-made cotton was imported into India at very cheap prices, heavily damaging the traditional Indian weaving industry.",
-    "During World War I, British factories were busy making war materials. This gave Indian industries a chance to bounce back and supply goods to the local market and the military.",
-  ],
-  formulas: [],
-  crux: [
-    "Before factories, goods were made in homes (Proto-industrialisation).",
-    "Cotton and Iron & Steel were the main early industries.",
-    "Workers hated machines because they feared losing their jobs.",
-    "Indian weavers suffered heavily because of cheap British machine-made cloth.",
-    "World War I accidentally helped Indian factories grow.",
-  ],
-  mcqs: [
-    {
-      id: "sh4-mcq-1",
-      question:
-        "Who invented the Steam Engine that revolutionized industrial production?",
-      options: [
-        "James Hargreaves",
-        "Richard Arkwright",
-        "James Watt",
-        "Matthew Boulton",
-      ],
-      correctAnswer: "c",
-    },
-    {
-      id: "sh4-mcq-2",
-      question:
-        "Which of the following industries was the most dynamic during the first phase of industrialization in Britain?",
-      options: ["Iron and Steel", "Cotton", "Coal", "Railways"],
-      correctAnswer: "b",
-    },
-    {
-      id: "sh4-mcq-3",
-      question: "Who were the Gomasthas?",
-      options: [
-        "Indian merchants",
-        "Weavers' union leaders",
-        "Paid servants of the East India Company",
-        "British factory owners",
-      ],
-      correctAnswer: "c",
-    },
-    {
-      id: "sh4-mcq-4",
-      question: "Why did female workers in England attack the Spinning Jenny?",
-      options: [
-        "It was too difficult to operate",
-        "It made too much noise",
-        "They feared unemployment because it sped up the spinning process",
-        "It ruined the quality of thread",
-      ],
-      correctAnswer: "c",
-    },
-    {
-      id: "sh4-mcq-5",
-      question:
-        "Which Indian port lost its importance during the colonial period?",
-      options: ["Mumbai", "Surat", "Chennai", "Kolkata"],
-      correctAnswer: "b",
-    },
-    {
-      id: "sh4-mcq-6",
-      question: "Who created the first steam engine (improved by James Watt)?",
-      options: [
-        "Newcomen",
-        "Richard Arkwright",
-        "James Hargreaves",
-        "John Kay",
-      ],
-      correctAnswer: "a",
-    },
-    {
-      id: "sh4-mcq-7",
-      question: "Who set up the first Indian Jute Mill in Calcutta in 1917?",
-      options: [
-        "Seth Hukumchand",
-        "Dwarkanath Tagore",
-        "Jamsetjee Jeejeebhoy",
-        "G.D. Birla",
-      ],
-      correctAnswer: "a",
-    },
-    {
-      id: "sh4-mcq-8",
-      question: "Why did women workers in Britain attack the Spinning Jenny?",
-      options: [
-        "It was too expensive",
-        "It was dangerous to operate",
-        "Fear of unemployment",
-        "They preferred hand weaving",
-      ],
-      correctAnswer: "c",
-    },
-    {
-      id: "sh4-mcq-9",
-      question: "Who were the gomasthas?",
-      options: [
-        "Paid servants appointed by East India Company to supervise weavers",
-        "Village chiefs",
-        "Cotton merchants",
-        "British military officers",
-      ],
-      correctAnswer: "a",
-    },
-    {
-      id: "sh4-mcq-10",
-      question:
-        "Which city was known as the 'Finishing Centre' for woollen cloth in England?",
-      options: ["Manchester", "London", "Liverpool", "Leeds"],
-      correctAnswer: "b",
-    },
-  ],
-  summary: [
-    "Industrialisation was a gradual process that started long before factories were built.",
-    "The transition to machine labor was slow because technology was expensive and human labor was abundantly cheap.",
-    "Industrialisation brought immense wealth to factory owners but extreme hardship and poor living conditions for the workers.",
-    "The rise of the British cotton industry devastated the rich, traditional handloom sector of India.",
-    "Indian industries revived and expanded significantly during the First World War when British imports declined.",
-  ],
-  exercises: [
-    {
-      id: "sh4-ex-write",
-      name: "Write in brief",
-      questions: [],
-    },
-    {
-      id: "sh4-ex-discuss",
-      name: "Discuss",
-      questions: [],
-    },
-  ],
-  examples: [],
-  isHtmlView: true,
-  htmlOverview: `
-        <div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">
-            <p style="line-height: 1.6; font-size: 17px;">Before there were massive factories with loud machines, goods were still being produced for international markets, but inside people's homes. Then came the 'Industrial Revolution' – a time when machines took over, changing how people worked, lived, and traveled forever.</p>
-            
-            <h3 style="color: ${themeColor}; text-align: left; margin-top: 20px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px;">Key Definitions</h3>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Proto-industrialisation:</b> The very early phase of industrialisation before factories existed. Merchants supplied money to peasants and artisans in villages to produce goods for the international market.</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Guilds:</b> Associations of producers (craftsmen and merchants) that trained craftspeople, maintained control over production, and restricted the entry of new people into the trade.</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Spinning Jenny:</b> A machine invented by James Hargreaves in 1764. It greatly speeded up the spinning process allowing one worker to spin many threads at the same time.</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Fly Shuttle:</b> A mechanical device used for weaving, moved by means of ropes and pulleys. It allowed weavers to weave wider pieces of cloth faster.</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Gomasthas:</b> Paid servants appointed by the British East India Company to supervise weavers, collect supplies, and examine the quality of cloth in India.</p>
-
-            <h3 style="color: ${themeColor}; text-align: left; margin-top: 25px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px;">Important Points</h3>
-            <ul style="text-align: left; padding-left: 20px; line-height: 1.6; font-size: 16px;">
-                <li style="margin-bottom: 8px;">The first factories came up in England by the 1730s. Cotton was the leading sector during the first phase of industrialisation.</li>
-                <li style="margin-bottom: 8px;">The invention of the steam engine by James Watt was revolutionary, but industrialists were slow to accept new machines because they were expensive and broke down often.</li>
-                <li style="margin-bottom: 8px;">In Victorian Britain, there was no shortage of human labour. Poor peasants moved to cities in large numbers. Because labour was cheap, many factory owners preferred human hands over expensive machines.</li>
-                <li style="margin-bottom: 8px;">The introduction of the Spinning Jenny caused riots among female workers because the machine did the work of many women, making them fear unemployment.</li>
-                <li style="margin-bottom: 8px;">Before British machines, Indian silk and cotton dominated the international market. The fine qualities came from India.</li>
-                <li style="margin-bottom: 8px;">With industrialisation in Britain, Manchester-made cotton was imported into India at very cheap prices, heavily damaging the traditional Indian weaving industry.</li>
-                <li style="margin-bottom: 8px;">During World War I, British factories were busy making war materials. This gave Indian industries a chance to bounce back and supply goods to the local market and the military.</li>
-            </ul>
-
-            <h3 style="color: ${themeColor}; text-align: left; margin-top: 25px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px;">Summary</h3>
-            <p style="line-height: 1.6; font-size: 16px;">Industrialisation was a gradual process that started long before factories were built. The transition to machine labor was slow because technology was expensive and human labor was abundantly cheap. Industrialisation brought immense wealth to factory owners but extreme hardship and poor living conditions for the workers. The rise of the British cotton industry devastated the rich, traditional handloom sector of India. Indian industries revived and expanded significantly during the First World War when British imports declined.</p>
-        </div>
-    `,
-  htmlExercises: {
-    "sh4-ex-write": `
-            <div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">
-                <div style="margin-bottom: 25px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 18px;">Q1. Explain the following:</p>
-                    
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 5px; font-size: 16px;">(a) Women workers in Britain attacked the Spinning Jenny</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 0;">The Spinning Jenny spun multiple threads at once, vastly speeding up work. Fearing this would destroy their traditional hand-spinning jobs and cause unemployment, women workers protested and attacked the machines.</p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 5px; font-size: 16px;">(b) In the seventeenth century merchants from towns in Europe began employing peasants and artisans within the villages</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 0;">Powerful urban guilds controlled production, prices, and monopolies in towns, restricting new merchants. Therefore, town merchants turned to villages where poor peasants and artisans gladly accepted work for extra income.</p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 5px; font-size: 16px;">(c) The port of Surat declined by the end of the eighteenth century</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 0;">European trading companies secured monopolies and local trade concessions. They shifted trade from old local ports like Surat to new colonial ports like Bombay and Calcutta, causing Surat's decline.</p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 5px; font-size: 16px;">(d) The East India Company appointed gomasthas to supervise weavers in India</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 0;">The Company wanted to establish a direct monopoly on textiles, eliminating local brokers. They appointed paid servants called <b>gomasthas</b> to supervise weavers, collect supplies, and inspect cloth quality.</p>
-                    </div>
-                </div>
-
-                <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 18px;">Q2. Write True or False against each statement:</p>
-                    <ul style="color: #E0E0E0; line-height: 1.6; padding-left: 20px; font-size: 15px;">
-                        <li style="margin-bottom: 8px;"><b>(a)</b> At the end of the nineteenth century, 80 per cent of the total workforce in Europe was employed in the technologically advanced industrial sector. <b style="color: ${themeColor};">-> False</b></li>
-                        <li style="margin-bottom: 8px;"><b>(b)</b> The international market for fine textiles was dominated by India till the eighteenth century. <b style="color: ${themeColor};">-> True</b></li>
-                        <li style="margin-bottom: 8px;"><b>(c)</b> The American Civil War resulted in the reduction of cotton exports from India. <b style="color: ${themeColor};">-> False</b></li>
-                        <li style="margin-bottom: 8px;"><b>(d)</b> The introduction of the fly shuttle enabled handloom workers to improve their productivity. <b style="color: ${themeColor};">-> True</b></li>
-                    </ul>
-                </div>
-
-                <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 17px;">Q3. Explain what is meant by proto-industrialisation.</p>
-                    <ul style="color: #E0E0E0; line-height: 1.6; padding-left: 20px; font-size: 15px;">
-                        <li style="margin-bottom: 5px;"><b>Definition:</b> The early phase of industrialization in Europe before the arrival of modern factories.</li>
-                        <li style="margin-bottom: 5px;"><b>Features:</b> Large-scale industrial production for international markets occurred within rural households. Merchants supplied capital to village peasants who produced goods by hand.</li>
-                    </ul>
-                </div>
-
-                <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 17px;">Q4. What were the efforts made by Dogra Maharaja Ranbir Singh to organise silk industry in Kashmir?</p>
-                    <ul style="color: #E0E0E0; line-height: 1.6; padding-left: 20px; font-size: 15px;">
-                        <li style="margin-bottom: 5px;"><b>Filature Establishment:</b> He set up the state's first organized silk filature (spinning factory) in Srinagar.</li>
-                        <li style="margin-bottom: 5px;"><b>Seed Distribution:</b> He imported high-quality silkworm seeds from China and Europe, distributing them to local rearers to boost production and organize the industry.</li>
-                    </ul>
-                </div>
-            </div>
-        `,
-    "sh4-ex-discuss": `
-            <div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">
-                <div style="margin-bottom: 25px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 17px;">Q1. Why did some industrialists in nineteenth-century Europe prefer hand labour over machines?</p>
-                    <ul style="color: #E0E0E0; line-height: 1.6; padding-left: 20px; font-size: 15px;">
-                        <li style="margin-bottom: 5px;"><b>Abundant Cheap Labour:</b> A large influx of poor migrants kept wages low, making manual labor cheaper than buying expensive machines.</li>
-                        <li style="margin-bottom: 5px;"><b>Seasonal Demand:</b> Many industries (breweries, gasworks) had seasonal workflows. Owners preferred hiring temporary hand labor over maintaining year-round machines.</li>
-                        <li style="margin-bottom: 5px;"><b>Intricate Work:</b> Machines only made standardized goods. The wealthy preferred uniquely designed, detailed handmade products.</li>
-                    </ul>
-                </div>
-
-                <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 17px;">Q2. How did the East India Company procure regular supplies of cotton and silk textiles from Indian weavers?</p>
-                    <ul style="color: #E0E0E0; line-height: 1.6; padding-left: 20px; font-size: 15px;">
-                        <li style="margin-bottom: 5px;"><b>Direct Supervision:</b> Appointed paid gomasthas to supervise weavers, collect goods, and examine quality, cutting out local middlemen.</li>
-                        <li style="margin-bottom: 5px;"><b>Advance Loans:</b> Provided loans for raw materials. Once a loan was accepted, weavers were bound to deliver finished cloth only to the Company, preventing sales to competitors.</li>
-                    </ul>
-                </div>
-
-                <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 17px;">Q3. Imagine that you have been asked to write an article for an encyclopaedia on Britain and the history of cotton. Write your piece using information from the entire chapter.</p>
-                    <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-bottom: 5px;">
-                        <b>History of Cotton in Britain:</b> Cotton was the driving force of early British industrialization. During the proto-industrial phase, spinning was done in rural homes. Arkwright's creation of the cotton mill centralized production under one roof. Cotton became the leading industrial sector by 1840. The growth of British cotton mills relied heavily on importing raw cotton from colonies (like India) and exporting cheap machine-made goods back, which crushed local handloom weavers globally.
-                    </p>
-                </div>
-
-                <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 17px;">Q4. Why did industrial production in India increase during the First World War?</p>
-                    <ul style="color: #E0E0E0; line-height: 1.6; padding-left: 20px; font-size: 15px;">
-                        <li style="margin-bottom: 5px;"><b>Fall in Imports:</b> British factories shifted to war production, stopping Manchester imports to India and opening up the local market.</li>
-                        <li style="margin-bottom: 5px;"><b>War Supplies:</b> Indian mills were ordered to produce jute bags, army uniforms, tents, and boots, boosting local industrial growth.</li>
-                    </ul>
-                </div>
-
-                <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 17px;">Q5. Discuss the development of shawl and carpet weaving industry in Kashmir.</p>
-                    <ul style="color: #E0E0E0; line-height: 1.6; padding-left: 20px; font-size: 15px;">
-                        <li style="margin-bottom: 5px;"><b>Kani Shawls:</b> Crafted with fine pashmina wool, Kashmir's Kani shawls gained immense fame globally, becoming a luxury fashion statement in Europe.</li>
-                        <li style="margin-bottom: 5px;"><b>Carpet Weaving:</b> State patronage under Dogra rulers organized carpet weaving. Large manufacturing workshops were set up in Srinagar, exporting high-quality Persian-style carpets worldwide.</li>
-                    </ul>
-                </div>
-            </div>
-        `,
+  "id": "sst-his-4",
+  "number": 4,
+  "title": "The Age of Industrialisation",
+  "isHtmlView": true,
+  "htmlOverview": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(253, 200, 48, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FDC830; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FDC830; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFF3C4; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFF3C4; font-weight: 700; }\n  .hl { color: #FDC830; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FDC830; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FDC830; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(253, 200, 48, 0.10); border: 1.5px dashed #FDC830; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FDC830; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(253, 200, 48, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(253, 200, 48, 0.18); border: 1px solid #FDC830; color: #FFF3C4; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(253, 200, 48, 0.2); color: #FFF3C4; }\n  .q-card .q-text, .q-card .sub-q { color: #FDC830 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ Chapter at a Glance</div><div class=\"sol-step\"><div class=\"rev\">When we think of industrialisation we think of factories, machines and steam power. But the story is not one of sudden change. Before factories came, there was large-scale production for international markets in the countryside; and even after them, <b>hand labour</b> and small workshops remained important. In India, colonial rule changed the fortunes of weavers, merchants and early industrialists.</div><div class=\"sec\">Two images of 1900</div><div class=\"pt\"><b>“Dawn of the Century”</b> (music book cover by E.T. Paull): a goddess-like angel of progress carrying the flag of the new century, seated on a winged wheel (time); behind her float the signs of progress — railway, camera, machines, printing press and factory.</div><div class=\"pt\"><b>“Two Magicians”</b> (cover of a trade magazine): Aladdin from the Orient, who built a palace by rubbing his lamp, versus the modern mechanic of the West, who weaves a new magic with tools — building bridges, ships, towers and high-rise buildings.</div><div class=\"pt\">Both glorify machines and technology as progress; the East is shown as the past and the West as the future.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 450\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"450\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"20\" font-size=\"11.5\" fill=\"#FDC830\" text-anchor=\"middle\" font-weight=\"700\">Age of Industrialisation: Timeline</text><line x1=\"76\" y1=\"34\" x2=\"76\" y2=\"439.7999999999999\" stroke=\"rgba(253, 200, 48,0.55)\" stroke-width=\"2\"/><circle cx=\"76\" cy=\"39.5\" r=\"4\" fill=\"#FDC830\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"43\" font-size=\"10\" fill=\"#FDC830\" text-anchor=\"end\" font-weight=\"700\">1730s</text><text x=\"88\" y=\"43.0\" font-size=\"9.5\" fill=\"#FFFFFF\">Earliest factories come up in England</text><circle cx=\"76\" cy=\"60.7\" r=\"4\" fill=\"#FDC830\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"64.2\" font-size=\"10\" fill=\"#FDC830\" text-anchor=\"end\" font-weight=\"700\">1764</text><text x=\"88\" y=\"64.2\" font-size=\"9.5\" fill=\"#FFFFFF\">James Hargreaves devises the Spinning</text><text x=\"88\" y=\"76.4\" font-size=\"9.5\" fill=\"#FFFFFF\">Jenny</text><circle cx=\"76\" cy=\"94.1\" r=\"4\" fill=\"#FDC830\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"97.6\" font-size=\"10\" fill=\"#FDC830\" text-anchor=\"end\" font-weight=\"700\">1781</text><text x=\"88\" y=\"97.6\" font-size=\"9.5\" fill=\"#FFFFFF\">James Watt patents his improved steam</text><text x=\"88\" y=\"109.8\" font-size=\"9.5\" fill=\"#FFFFFF\">engine</text><circle cx=\"76\" cy=\"127.5\" r=\"4\" fill=\"#FDC830\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"131\" font-size=\"10\" fill=\"#FDC830\" text-anchor=\"end\" font-weight=\"700\">1787</text><text x=\"88\" y=\"131.0\" font-size=\"9.5\" fill=\"#FFFFFF\">Britain's raw cotton imports reach 22</text><text x=\"88\" y=\"143.2\" font-size=\"9.5\" fill=\"#FFFFFF\">million pounds (2.5 million in 1760)</text><circle cx=\"76\" cy=\"160.9\" r=\"4\" fill=\"#FDC830\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"164.4\" font-size=\"10\" fill=\"#FDC830\" text-anchor=\"end\" font-weight=\"700\">1840s</text><text x=\"88\" y=\"164.4\" font-size=\"9.5\" fill=\"#FFFFFF\">Cotton leads industrialisation till now;</text><text x=\"88\" y=\"176.6\" font-size=\"9.5\" fill=\"#FFFFFF\">then iron and steel; building boom in</text><text x=\"88\" y=\"188.8\" font-size=\"9.5\" fill=\"#FFFFFF\">cities</text><circle cx=\"76\" cy=\"206.5\" r=\"4\" fill=\"#FDC830\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"210\" font-size=\"10\" fill=\"#FDC830\" text-anchor=\"end\" font-weight=\"700\">1854</text><text x=\"88\" y=\"210.0\" font-size=\"9.5\" fill=\"#FFFFFF\">First cotton mill in Bombay (production</text><text x=\"88\" y=\"222.2\" font-size=\"9.5\" fill=\"#FFFFFF\">from 1856)</text><circle cx=\"76\" cy=\"239.9\" r=\"4\" fill=\"#FDC830\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"243.4\" font-size=\"10\" fill=\"#FDC830\" text-anchor=\"end\" font-weight=\"700\">1855</text><text x=\"88\" y=\"243.4\" font-size=\"9.5\" fill=\"#FFFFFF\">First jute mill in Bengal</text><circle cx=\"76\" cy=\"261.1\" r=\"4\" fill=\"#FDC830\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"264.6\" font-size=\"10\" fill=\"#FDC830\" text-anchor=\"end\" font-weight=\"700\">1860s</text><text x=\"88\" y=\"264.6\" font-size=\"9.5\" fill=\"#FFFFFF\">American Civil War: Indian raw cotton</text><text x=\"88\" y=\"276.8\" font-size=\"9.5\" fill=\"#FFFFFF\">exports soar; Elgin Mill, Kanpur</text><circle cx=\"76\" cy=\"294.5\" r=\"4\" fill=\"#FDC830\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"298\" font-size=\"10\" fill=\"#FDC830\" text-anchor=\"end\" font-weight=\"700\">1874</text><text x=\"88\" y=\"298.0\" font-size=\"9.5\" fill=\"#FFFFFF\">First spinning and weaving mill of Madras</text><circle cx=\"76\" cy=\"315.7\" r=\"4\" fill=\"#FDC830\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"319.2\" font-size=\"10\" fill=\"#FDC830\" text-anchor=\"end\" font-weight=\"700\">1906</text><text x=\"88\" y=\"319.2\" font-size=\"9.5\" fill=\"#FFFFFF\">Indian yarn exports to China begin to</text><text x=\"88\" y=\"331.4\" font-size=\"9.5\" fill=\"#FFFFFF\">decline</text><circle cx=\"76\" cy=\"349.09999999999997\" r=\"4\" fill=\"#FDC830\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"352.59999999999997\" font-size=\"10\" fill=\"#FDC830\" text-anchor=\"end\" font-weight=\"700\">1912</text><text x=\"88\" y=\"352.6\" font-size=\"9.5\" fill=\"#FFFFFF\">Tata iron and steel works begin</text><text x=\"88\" y=\"364.8\" font-size=\"9.5\" fill=\"#FFFFFF\">production</text><circle cx=\"76\" cy=\"382.49999999999994\" r=\"4\" fill=\"#FDC830\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"385.99999999999994\" font-size=\"10\" fill=\"#FDC830\" text-anchor=\"end\" font-weight=\"700\">1914–18</text><text x=\"88\" y=\"386.0\" font-size=\"9.5\" fill=\"#FFFFFF\">First World War: Manchester imports fall,</text><text x=\"88\" y=\"398.2\" font-size=\"9.5\" fill=\"#FFFFFF\">Indian industry booms</text><circle cx=\"76\" cy=\"415.8999999999999\" r=\"4\" fill=\"#FDC830\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"419.3999999999999\" font-size=\"10\" fill=\"#FDC830\" text-anchor=\"end\" font-weight=\"700\">1917</text><text x=\"88\" y=\"419.4\" font-size=\"9.5\" fill=\"#FFFFFF\">Seth Hukumchand sets up the first Indian</text><text x=\"88\" y=\"431.6\" font-size=\"9.5\" fill=\"#FFFFFF\">jute mill in Calcutta</text></svg></div><div class=\"diagram-caption\">Key events in the age of industrialisation</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 1. Before the Industrial Revolution: Proto-industrialisation</div><div class=\"sol-step\"><div class=\"rev\"><span class=\"hl\">Proto-industrialisation</span> is the phase of industrialisation that existed in England and Europe <b>before the factory system</b>. In the 17th and 18th centuries there was large-scale industrial production for an international market, carried out not in factories but in rural households.</div><div class=\"sec\">Why merchants turned to the countryside</div><div class=\"pt\">Expansion of world trade and colonies increased the demand for goods.</div><div class=\"pt\">Merchants could not expand production in towns because of powerful <b>urban craft and trade guilds</b> — associations of producers that trained craftspeople, controlled production, regulated competition and prices, and restricted entry of new people. Rulers gave guilds monopoly rights.</div><div class=\"pt\">In the countryside, <b>open fields</b> were disappearing and <b>commons were being enclosed</b>; cottagers and poor peasants needed new sources of income.</div><div class=\"sec\">Benefits to peasant households</div><div class=\"pt\">They could stay in the countryside and continue cultivating their small plots.</div><div class=\"pt\">Income from proto-industry supplemented their shrinking income from cultivation.</div><div class=\"pt\">It allowed fuller use of <b>family labour</b>.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 276\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"276\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#FDC830\" text-anchor=\"middle\" font-weight=\"700\">Proto-industrial Chain (England)</text><text x=\"160\" y=\"36\" font-size=\"9.5\" fill=\"#CBD5E1\" text-anchor=\"middle\">Town merchants + rural producers, before factories</text><rect x=\"30\" y=\"44\" width=\"260\" height=\"39\" rx=\"6\" fill=\"rgba(253, 200, 48,0.16)\" stroke=\"#FDC830\" stroke-width=\"1.2\"/><text x=\"160\" y=\"60.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Wool stapler</text><text x=\"160\" y=\"72.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Sells wool to the merchant clothier</text><line x1=\"160\" y1=\"84\" x2=\"160\" y2=\"91\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 96 L163.5 90 L156.5 90 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"97\" width=\"260\" height=\"39\" rx=\"6\" fill=\"rgba(253, 200, 48,0.16)\" stroke=\"#FDC830\" stroke-width=\"1.2\"/><text x=\"160\" y=\"113.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Merchant clothier (town)</text><text x=\"160\" y=\"125.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Controls the network; gives work and advances</text><line x1=\"160\" y1=\"137\" x2=\"160\" y2=\"144\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 149 L163.5 143 L156.5 143 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"150\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(253, 200, 48,0.16)\" stroke=\"#FDC830\" stroke-width=\"1.2\"/><text x=\"160\" y=\"166.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Spinners → weavers → fullers → dyers</text><text x=\"160\" y=\"178.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Peasant households in the countryside work at</text><text x=\"160\" y=\"191.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">each stage</text><line x1=\"160\" y1=\"202\" x2=\"160\" y2=\"209\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 214 L163.5 208 L156.5 208 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"215\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"160\" y=\"231.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Finishing in London</text><text x=\"160\" y=\"243.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">London becomes the finishing centre before</text><text x=\"160\" y=\"256.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">export</text></svg></div><div class=\"diagram-caption\">A close relationship between town and countryside</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 2. The Coming Up of the Factory</div><div class=\"sol-step\"><div class=\"pt\">The earliest factories in England came up by the <b>1730s</b>; their number multiplied only in the late 18th century.</div><div class=\"pt\"><b>Cotton</b> was the first symbol of the new era: Britain's raw cotton imports rose from <b>2.5 million pounds in 1760 to 22 million pounds in 1787</b>.</div><div class=\"pt\">Inventions in the 18th century increased the efficiency of each step — <b>carding, twisting and spinning, and rolling</b>.</div><div class=\"pt\"><b>Richard Arkwright</b> created the cotton mill: costly machines were set up, all processes brought under one roof and management, allowing supervision, quality control and regulation of labour.</div><div class=\"sec\">The pace of industrial change</div><div class=\"pt\"><b>Cotton and metals</b> were the most dynamic industries. Cotton led till the 1840s; then <b>iron and steel</b> led, with railways expanding in England (1840s) and the colonies (1860s). By 1873 Britain exported iron and steel worth about <b>£77 million</b> — double its cotton exports.</div><div class=\"pt\">New industries could not easily displace traditional ones: even at the end of the 19th century, <b>less than 20%</b> of the workforce was in technologically advanced sectors.</div><div class=\"pt\">Traditional industries (food processing, building, pottery, glass, tanning, furniture) grew through small, ordinary innovations.</div><div class=\"pt\">Technological change was <b>slow</b>: machines were expensive, broke down often and were costly to repair.</div><div class=\"exam\"><span class=\"exam-t\">📌 Steam engine — remember</span><div>• <b>James Watt</b> improved Newcomen's steam engine and patented it in <b>1781</b>; <b>Matthew Boulton</b> manufactured it.</div><div>• Early 19th century: only <b>321</b> steam engines in all of England — 80 in cotton, 9 in wool, the rest in mining, canals and iron works.</div><div>• The typical worker in the mid-19th century was a traditional craftsperson or labourer, not a machine operator.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 3. Hand Labour and Steam Power</div><div class=\"sol-step\"><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 212\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"212\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#FDC830\" text-anchor=\"middle\" font-weight=\"700\">Why Hand Labour was Preferred in Victorian Britain</text><rect x=\"13\" y=\"30\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(253, 200, 48,0.16)\" stroke=\"#FDC830\" stroke-width=\"1.2\"/><text x=\"84\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Abundant labour</text><text x=\"84\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Poor peasants and</text><text x=\"84\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">vagrants flooded cities;</text><text x=\"84\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">wages were low</text><rect x=\"165\" y=\"30\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(253, 200, 48,0.16)\" stroke=\"#FDC830\" stroke-width=\"1.2\"/><text x=\"236\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Seasonal demand</text><text x=\"236\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Gasworks, breweries,</text><text x=\"236\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">book-binders and ports</text><text x=\"236\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">needed extra hands only</text><text x=\"236\" y=\"92.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">in some months</text><rect x=\"13\" y=\"111\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(253, 200, 48,0.16)\" stroke=\"#FDC830\" stroke-width=\"1.2\"/><text x=\"84\" y=\"127.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Variety of goods</text><text x=\"84\" y=\"138.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Intricate designs and</text><text x=\"84\" y=\"150.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">shapes; 500 kinds of</text><text x=\"84\" y=\"162.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">hammers and 45 kinds of</text><text x=\"84\" y=\"173.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">axes</text><rect x=\"165\" y=\"111\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(253, 200, 48,0.16)\" stroke=\"#FDC830\" stroke-width=\"1.2\"/><text x=\"236\" y=\"127.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Upper-class taste</text><text x=\"236\" y=\"138.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Handmade goods meant</text><text x=\"236\" y=\"150.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">refinement and class;</text><text x=\"236\" y=\"162.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">machine goods went to</text><text x=\"236\" y=\"173.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">colonies</text><text x=\"160\" y=\"198\" font-size=\"9.5\" fill=\"#FDC830\" text-anchor=\"middle\" font-weight=\"700\">Machines spread faster where labour was scarce, e.g. America</text></svg></div><div class=\"diagram-caption\">Four reasons industrialists did not rush to mechanise</div></div><div class=\"sec\">Life of the workers</div><div class=\"pt\">Hundreds tramped to the cities hearing of jobs; getting one depended on <b>networks of friends and kin</b>. Many waited weeks, sleeping under bridges or in night shelters (some run by Poor Law authorities).</div><div class=\"pt\"><b>Seasonality</b> of work meant long periods without work; odd jobs were hard to find till the mid-19th century.</div><div class=\"pt\">Wages rose a little in the early 19th century, but prices rose sharply during the Napoleonic War, so <b>real wages fell</b>. About <b>10%</b> of the urban population was extremely poor; in slumps (1830s) unemployment rose to <b>35–75%</b> in different regions.</div><div class=\"pt\">Fear of unemployment made workers hostile to new technology: when the <b>Spinning Jenny</b> was introduced in the woollen industry, women hand-spinners attacked the machines.</div><div class=\"pt\">After the 1840s, <b>building activity</b> in cities (roads, railway stations, tunnels, drains, sewers, embankments) created more jobs; workers in transport doubled in the 1840s and doubled again in the next 30 years.</div><div class=\"exam\"><span class=\"exam-t\">📌 Spinning Jenny (James Hargreaves, 1764)</span><div>• By turning one wheel, a worker could set many spindles in motion and spin several threads at once.</div><div>• It speeded up spinning and <b>reduced the demand for labour</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 4. Industrialisation in the Colonies: The Age of Indian Textiles</div><div class=\"sol-step\"><div class=\"rev\">Before machine industries, <b>silk and cotton goods from India dominated the international market</b> in textiles. Many countries produced coarser cotton, but the finer varieties came from India.</div><div class=\"sec\">Trade networks</div><div class=\"pt\"><b>Overland:</b> Armenian and Persian merchants carried goods from Punjab to Afghanistan, eastern Persia and Central Asia on camel-back.</div><div class=\"pt\"><b>Sea trade:</b> <b>Surat</b> (Gujarat) linked India to the Gulf and Red Sea ports; <b>Masulipatam</b> (Coromandel) and <b>Hoogly</b> (Bengal) traded with Southeast Asian ports.</div><div class=\"pt\"><b>Supply merchants</b> gave advances to weavers, procured cloth from weaving villages and carried it to the ports; brokers negotiated prices with export merchants.</div><div class=\"sec\">Breakdown of the network (from the 1750s)</div><div class=\"pt\">European companies secured concessions and then <b>monopoly rights</b> to trade.</div><div class=\"pt\">The old ports of <b>Surat and Hoogly declined</b>; credit dried up and local bankers went bankrupt. Trade through Surat fell from <b>Rs 16 million</b> (late 17th century) to <b>Rs 3 million</b> (1740s).</div><div class=\"pt\"><b>Bombay and Calcutta</b> grew — trade there was controlled by European companies and carried in European ships.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 5. What Happened to the Weavers?</div><div class=\"sol-step\"><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 351\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"351\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#FDC830\" text-anchor=\"middle\" font-weight=\"700\">How the East India Company Controlled Weavers</text><rect x=\"30\" y=\"30\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(253, 200, 48,0.16)\" stroke=\"#FDC830\" stroke-width=\"1.2\"/><text x=\"160\" y=\"46.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Before the 1760s</text><text x=\"160\" y=\"58.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">French, Dutch, Portuguese and local traders</text><text x=\"160\" y=\"71.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">compete; weavers can bargain</text><line x1=\"160\" y1=\"82\" x2=\"160\" y2=\"89\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 94 L163.5 88 L156.5 88 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"95\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(253, 200, 48,0.16)\" stroke=\"#FDC830\" stroke-width=\"1.2\"/><text x=\"160\" y=\"111.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Political power (1760s–70s)</text><text x=\"160\" y=\"123.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Company asserts a monopoly right to trade in</text><text x=\"160\" y=\"136.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Bengal and the Carnatic</text><line x1=\"160\" y1=\"147\" x2=\"160\" y2=\"154\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 159 L163.5 153 L156.5 153 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"160\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(253, 200, 48,0.16)\" stroke=\"#FDC830\" stroke-width=\"1.2\"/><text x=\"160\" y=\"176.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Gomasthas appointed</text><text x=\"160\" y=\"188.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Paid servants supervise weavers, collect cloth</text><text x=\"160\" y=\"201.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">and check quality; old brokers removed</text><line x1=\"160\" y1=\"212\" x2=\"160\" y2=\"219\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 224 L163.5 218 L156.5 218 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"225\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(253, 200, 48,0.16)\" stroke=\"#FDC830\" stroke-width=\"1.2\"/><text x=\"160\" y=\"241.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">System of advances</text><text x=\"160\" y=\"253.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Loans for raw material bind weavers to sell</text><text x=\"160\" y=\"266.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">only to the gomastha</text><line x1=\"160\" y1=\"277\" x2=\"160\" y2=\"284\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 289 L163.5 283 L156.5 283 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"290\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(239,83,80,0.16)\" stroke=\"#EF5350\" stroke-width=\"1.2\"/><text x=\"160\" y=\"306.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Result</text><text x=\"160\" y=\"318.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Low prices, beatings; weavers desert villages,</text><text x=\"160\" y=\"331.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">revolt or turn to farm labour</text></svg></div><div class=\"diagram-caption\">From free bargaining to dependence on the Company</div></div><div class=\"pt\">Weavers at first eagerly took advances, leased out their small plots and devoted the whole family to weaving.</div><div class=\"pt\">Earlier supply merchants lived in the villages and had close links with weavers; the new <b>gomasthas</b> were outsiders who came with sepoys and peons and punished weavers for delays.</div><div class=\"pt\">In the Carnatic and Bengal, weavers deserted their villages, revolted with village traders, refused loans, closed workshops or took to agricultural labour.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 6. Manchester Comes to India</div><div class=\"sol-step\"><div class=\"pt\">In <b>1772</b>, Company official <b>Henry Patullo</b> said demand for Indian textiles could never fall, since no other nation made goods of the same quality — yet decline began in the 19th century.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 185\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"185\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#FDC830\" text-anchor=\"middle\" font-weight=\"700\">Cotton Piece-goods: Exports Fall, Imports Rise</text><text x=\"12\" y=\"40\" font-size=\"10\" fill=\"#FFFFFF\" font-weight=\"700\">Share in India's EXPORTS</text><line x1=\"120\" y1=\"48\" x2=\"120\" y2=\"86\" stroke=\"#94A3B8\" stroke-width=\"1\"/><text x=\"114\" y=\"59\" font-size=\"9.5\" fill=\"#CBD5E1\" text-anchor=\"end\">1811–12</text><rect x=\"120\" y=\"50\" width=\"93.5\" height=\"13\" rx=\"2\" fill=\"#FDC830\"/><text x=\"218.5\" y=\"60\" font-size=\"9.5\" fill=\"#FDC830\" font-weight=\"700\">33%</text><text x=\"114\" y=\"78\" font-size=\"9.5\" fill=\"#CBD5E1\" text-anchor=\"end\">1850–51</text><rect x=\"120\" y=\"69\" width=\"8.5\" height=\"13\" rx=\"2\" fill=\"#FDC830\"/><text x=\"133.5\" y=\"79\" font-size=\"9.5\" fill=\"#FDC830\" font-weight=\"700\">3%</text><text x=\"12\" y=\"98\" font-size=\"10\" fill=\"#FFFFFF\" font-weight=\"700\">Share in India's IMPORTS</text><line x1=\"120\" y1=\"106\" x2=\"120\" y2=\"163\" stroke=\"#94A3B8\" stroke-width=\"1\"/><text x=\"114\" y=\"117\" font-size=\"9.5\" fill=\"#CBD5E1\" text-anchor=\"end\">End of 1700s</text><rect x=\"120\" y=\"108\" width=\"2.0\" height=\"13\" rx=\"2\" fill=\"#4FC3F7\"/><text x=\"127.0\" y=\"118\" font-size=\"9.5\" fill=\"#4FC3F7\" font-weight=\"700\">almost nil</text><text x=\"114\" y=\"136\" font-size=\"9.5\" fill=\"#CBD5E1\" text-anchor=\"end\">1850</text><rect x=\"120\" y=\"127\" width=\"87.8\" height=\"13\" rx=\"2\" fill=\"#4FC3F7\"/><text x=\"212.8\" y=\"137\" font-size=\"9.5\" fill=\"#4FC3F7\" font-weight=\"700\">over 31%</text><text x=\"114\" y=\"155\" font-size=\"9.5\" fill=\"#CBD5E1\" text-anchor=\"end\">1870s</text><rect x=\"120\" y=\"146\" width=\"141.7\" height=\"13\" rx=\"2\" fill=\"#4FC3F7\"/><text x=\"266.7\" y=\"156\" font-size=\"9.5\" fill=\"#4FC3F7\" font-weight=\"700\">over 50%</text><text x=\"160\" y=\"175\" font-size=\"9\" fill=\"#CBD5E1\" text-anchor=\"middle\">Bars drawn to scale (% of total value)</text></svg></div><div class=\"diagram-caption\">Piece-goods: 33% of exports (1811–12) to 3% (1850–51)</div></div><div class=\"sec\">Why Indian textiles declined</div><div class=\"pt\">British industrialists got <b>import duties</b> imposed on cotton textiles entering Britain.</div><div class=\"pt\">They persuaded the Company to sell <b>British manufactures in India</b>; machine-made cloth was so cheap that weavers could not compete.</div><div class=\"pt\">Weavers faced two problems at once: the <b>export market collapsed</b> and the <b>local market shrank</b>, glutted with Manchester imports.</div><div class=\"pt\">In the <b>1860s</b>, the <b>American Civil War</b> cut off US cotton; Britain bought Indian raw cotton, its price shot up and weavers were starved of supplies.</div><div class=\"pt\">By the late 19th century, Indian <b>factories</b> also began flooding the market with machine goods.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 7. Factories Come Up</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Year</th><th>Factory</th></tr><tr><td>1854</td><td>First cotton mill in Bombay (production from 1856)</td></tr><tr><td>1855, 1862</td><td>Jute mills in Bengal</td></tr><tr><td>1860s</td><td>Elgin Mill, Kanpur; a year later the first cotton mill of Ahmedabad</td></tr><tr><td>1874</td><td>First spinning and weaving mill of Madras</td></tr></table></div><div class=\"pt\">By <b>1862</b>, four mills were at work in Bombay with 94,000 spindles and 2,150 looms.</div><div class=\"sec\">Early entrepreneurs</div><div class=\"pt\"><b>Dwarkanath Tagore</b> (Bengal) made a fortune in the China trade and set up six joint-stock companies in the 1830s–40s; they sank in the business crises of the 1840s.</div><div class=\"pt\">In Bombay, Parsis like <b>Dinshaw Petit</b> and <b>Jamsetjee Nusserwanjee Tata</b> built huge industrial empires, with initial wealth from exports to China and raw cotton shipments to England.</div><div class=\"pt\"><b>Seth Hukumchand</b>, a Marwari, set up the first Indian jute mill in Calcutta in <b>1917</b>; the father and grandfather of <b>G.D. Birla</b> also traded with China.</div><div class=\"pt\"><b>European Managing Agencies</b> — Andrew Yule, Bird Heiglers & Co., Jardine Skinner & Co. — raised capital, set up joint-stock companies and made all investment and business decisions; Indian financiers only provided capital.</div><div class=\"pt\">As colonial control tightened, Indian merchants were barred from trading with Europe in manufactured goods and had to export mostly raw materials and food grains.</div><div class=\"sec\">Where did workers come from?</div><div class=\"pt\">From nearby districts: in <b>1911</b>, over <b>50%</b> of Bombay's cotton mill workers came from <b>Ratnagiri</b>; Kanpur mills drew workers from Kanpur district. Later, workers from the United Provinces went to Bombay and Calcutta.</div><div class=\"pt\">Millworkers moved between village and city, returning home for harvests and festivals.</div><div class=\"pt\">Industrialists employed a <b>jobber</b> — an old, trusted worker — to recruit workers from his village; he helped them settle, but gradually demanded money and gifts and controlled their lives.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 8. The Peculiarities of Industrial Growth</div><div class=\"sol-step\"><div class=\"pt\"><b>European managing agencies</b> invested in tea and coffee plantations, mining, indigo and jute — products mainly for <b>export</b>.</div><div class=\"pt\">Early Indian cotton mills avoided competing with Manchester: they produced <b>coarse yarn</b> (not fabric), used by Indian handloom weavers or exported to <b>China</b>.</div><div class=\"sec\">Changes in the early 20th century</div><div class=\"pt\">The <b>Swadeshi movement</b> mobilised people to boycott foreign cloth; industrial groups pressed for tariff protection.</div><div class=\"pt\">From <b>1906</b>, Indian yarn exports to China fell (Chinese and Japanese mills took over), so industrialists shifted from yarn to cloth; cotton piece-goods production <b>doubled between 1900 and 1912</b>.</div><div class=\"sec\">First World War — a turning point</div><div class=\"pt\">British mills were busy with war production, so Manchester imports into India declined; Indian mills got a vast home market.</div><div class=\"pt\">Indian factories supplied war needs — jute bags, cloth for army uniforms, tents, leather boots, horse and mule saddles; new factories came up and old ones ran multiple shifts.</div><div class=\"pt\">After the war, Manchester could never recapture its old position; local industrialists gradually captured the home market.</div><div class=\"sec\">Small-scale industries predominate</div><div class=\"pt\">About <b>67%</b> of large industries (1911) were in Bengal and Bombay; only <b>5% (1911)</b> and <b>10% (1931)</b> of industrial workers were in registered factories.</div><div class=\"pt\">Handloom cloth production <b>almost trebled between 1900 and 1940</b>; by 1941, over <b>35%</b> of handlooms had <b>fly shuttles</b> (70–80% in Travancore, Madras, Mysore, Cochin and Bengal).</div><div class=\"pt\">Weavers of <b>fine cloth</b> (Banarasi and Baluchari saris, Madras lungis) survived better than weavers of coarse cloth, whose poor buyers stopped buying in famines.</div><div class=\"pt\">Craftspeople worked long hours with the whole household; they were not remnants of the past but an integral part of industrialisation.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 9. Market for Goods: Advertisements</div><div class=\"sol-step\"><div class=\"pt\">Manchester cloth bundles carried labels — <b>“MADE IN MANCHESTER”</b> in bold — to assure buyers of quality.</div><div class=\"pt\">Labels showed <b>Indian gods and goddesses</b> (Krishna, Saraswati) to suggest divine approval, and emperors and nawabs to make products respected.</div><div class=\"pt\"><b>Calendars</b> spread the message even to people who could not read — hung in tea shops, homes and offices.</div><div class=\"pt\">Indian manufacturers advertised a <b>nationalist message</b>: “If you care for the nation then buy products that Indians produce” — advertising became a vehicle of swadeshi.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ Quick Glossary</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Term</th><th>Meaning</th></tr><tr><td>Proto-industrialisation</td><td>Large-scale production for international markets in rural households before factories</td></tr><tr><td>Guild</td><td>Association of producers controlling production, prices and entry into a trade</td></tr><tr><td>Stapler</td><td>A person who 'staples' or sorts wool according to its fibre</td></tr><tr><td>Fuller</td><td>A person who 'fulls' — gathers cloth by pleating</td></tr><tr><td>Carding</td><td>Process of preparing fibres (cotton, wool) for spinning</td></tr><tr><td>Spinning Jenny</td><td>Machine (Hargreaves, 1764) spinning several threads at once</td></tr><tr><td>Gomastha</td><td>Paid servant of the Company supervising weavers</td></tr><tr><td>Jobber</td><td>Recruiter of factory workers, usually an old trusted worker</td></tr><tr><td>Fly shuttle</td><td>Device moved by ropes and pulleys that places the weft into the warp, allowing wider cloth</td></tr><tr><td>Managing agency</td><td>European firm that managed joint-stock companies and took business decisions</td></tr></table></div></div>\n  </div>\n\n</div>",
+  "htmlExercises": {
+    "sh4-ex-intext": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(253, 200, 48, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FDC830; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FDC830; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFF3C4; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFF3C4; font-weight: 700; }\n  .hl { color: #FDC830; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FDC830; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FDC830; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(253, 200, 48, 0.10); border: 1.5px dashed #FDC830; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FDC830; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(253, 200, 48, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(253, 200, 48, 0.18); border: 1px solid #FDC830; color: #FFF3C4; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(253, 200, 48, 0.2); color: #FFF3C4; }\n  .q-card .q-text, .q-card .sub-q { color: #FDC830 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Look at the two images of 1900 — “Dawn of the Century” and “Two Magicians”. What image of industrialisation do they present?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Dawn of the Century:</b> an angel of progress with the flag of the new century; behind her, the railway, camera, machines, printing press and factory — signs of progress.</div><div class=\"pt\"><b>Two Magicians:</b> Aladdin (the East, the past) built a palace with a magic lamp; the Western mechanic (the modern) builds bridges, ships and towers with tools.</div><div class=\"pt\">Both celebrate machines and technology as progress and show the West as advanced and the East as backward.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Imagine that you are a merchant writing back to a salesman who has been trying to persuade you to buy new machines. Explain in your letter what you have heard and why you do not wish to invest in new technology.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">Dear Sir,<br/>Thank you for describing your new machines. However, I have heard that they are very expensive, often break down and cost a great deal to repair, and are not as efficient as their inventors claim. Labour in our town is plentiful and cheap; poor peasants come every day looking for work. Much of our trade is seasonal, so I prefer to hire hands only when orders are high rather than keep costly machines idle. Besides, my rich customers want goods of special designs, finely finished by hand, which no machine can make. I therefore do not wish to invest in new machinery at present.<br/>Yours faithfully,<br/>A merchant</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Project: Select any one industry in your region and find out its history. How has the technology changed? Where do the workers come from? How are the products advertised and marketed?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sec\">Model answer: Kashmir carpet weaving</div><div class=\"pt\"><span class=\"lbl\">History:</span> hand-knotted carpets with Persian designs, an old craft of Kashmir that grew with exports from the 19th century.</div><div class=\"pt\"><span class=\"lbl\">Technology:</span> still largely hand-knotted on looms using a coded pattern script (talim); dyes and yarn have changed from natural to synthetic in many units.</div><div class=\"pt\"><span class=\"lbl\">Workers:</span> mostly rural households and small workshops; family members work at different stages.</div><div class=\"pt\"><span class=\"lbl\">Marketing:</span> exporters, handicraft emporia, exhibitions and online sales; products advertised as authentic, handmade Kashmiri craft.</div></div></div>\n  </div>\n\n</div>",
+    "sh4-ex-write": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(253, 200, 48, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FDC830; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FDC830; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFF3C4; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFF3C4; font-weight: 700; }\n  .hl { color: #FDC830; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FDC830; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FDC830; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(253, 200, 48, 0.10); border: 1.5px dashed #FDC830; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FDC830; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(253, 200, 48, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(253, 200, 48, 0.18); border: 1px solid #FDC830; color: #FFF3C4; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(253, 200, 48, 0.2); color: #FFF3C4; }\n  .q-card .q-text, .q-card .sub-q { color: #FDC830 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Explain the following:<br/>(a) Women workers in Britain attacked the Spinning Jenny.<br/>(b) In the seventeenth century merchants from towns in Europe began employing peasants and artisans within the villages.<br/>(c) The port of Surat declined by the end of the eighteenth century.<br/>(d) The East India Company appointed gomasthas to supervise weavers in India.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">(a)</div><div class=\"pt\">The Spinning Jenny let one worker turn a wheel and spin several threads at once, reducing the demand for labour.</div><div class=\"pt\">Women who survived on hand spinning feared losing their livelihood, so they attacked the machines.</div><div class=\"sub-q\">(b)</div><div class=\"pt\">World trade and colonies increased the demand for goods, but powerful urban guilds restricted production and entry in towns.</div><div class=\"pt\">In the countryside, commons were enclosed and poor peasants needed extra income, so they eagerly accepted merchants' advances.</div><div class=\"sub-q\">(c)</div><div class=\"pt\">European companies gained concessions and monopoly rights over trade.</div><div class=\"pt\">Local merchants who operated through Surat lost business; credit dried up and bankers went bankrupt.</div><div class=\"pt\">Trade shifted to the new colonial ports of Bombay and Calcutta.</div><div class=\"sub-q\">(d)</div><div class=\"pt\">After gaining political power, the Company wanted to eliminate competition, control costs and ensure regular supplies.</div><div class=\"pt\">Gomasthas — paid servants — supervised weavers, collected supplies and examined the quality of cloth, replacing the old traders and brokers.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Write True or False against each statement:<br/>(a) At the end of the nineteenth century, 80 per cent of the total workforce in Europe was employed in the technologically advanced industrial sector.<br/>(b) The international market for fine textiles was dominated by India till the eighteenth century.<br/>(c) The American Civil War resulted in the reduction of cotton exports from India.<br/>(d) The introduction of the fly shuttle enabled handloom workers to improve their productivity.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">(a) <b>False</b> — less than 20% were in the advanced industrial sector.</div><div class=\"pt\">(b) <b>True</b>.</div><div class=\"pt\">(c) <b>False</b> — raw cotton exports from India increased as Britain turned to India.</div><div class=\"pt\">(d) <b>True</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Explain what is meant by proto-industrialisation.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">The phase of industrialisation in Europe <b>before the factory system</b> (17th–18th centuries).</div><div class=\"pt\">Large-scale production for international markets was carried out in <b>rural households</b>, not factories.</div><div class=\"pt\">Town merchants gave advances to peasants and artisans; the whole family worked at spinning, weaving and other stages.</div><div class=\"pt\">It created a close relationship between town and countryside; merchants controlled the network.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">What were the efforts made by Dogra Maharaja Ranbir Singh to organise silk industry in Kashmir?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">He brought sericulture under State organisation and patronage.</div><div class=\"pt\">He arranged good-quality silkworm seed (eggs) from outside and distributed it to rearers.</div><div class=\"pt\">He encouraged villagers to rear silkworms, with the State buying the cocoons.</div><div class=\"pt\">He set up arrangements for reeling silk in Srinagar and employed skilled workers, laying the base on which the industry was later modernised.</div></div></div>\n  </div>\n\n</div>",
+    "sh4-ex-discuss": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(253, 200, 48, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FDC830; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FDC830; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFF3C4; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFF3C4; font-weight: 700; }\n  .hl { color: #FDC830; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FDC830; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FDC830; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(253, 200, 48, 0.10); border: 1.5px dashed #FDC830; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FDC830; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(253, 200, 48, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(253, 200, 48, 0.18); border: 1px solid #FDC830; color: #FFF3C4; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(253, 200, 48, 0.2); color: #FFF3C4; }\n  .q-card .q-text, .q-card .sub-q { color: #FDC830 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Why did some industrialists in nineteenth-century Europe prefer hand labour over machines?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Plentiful labour:</span> poor peasants and vagrants moved to cities; labour was cheap, so there was no need for costly machines.</div><div class=\"pt\"><span class=\"lbl\">Seasonal demand:</span> gasworks, breweries, book-binders and printers needed more workers only in some seasons; hiring hands was better than keeping idle machines.</div><div class=\"pt\"><span class=\"lbl\">Variety:</span> machines made standardised goods, but demand was for intricate designs and shapes (500 kinds of hammers, 45 kinds of axes).</div><div class=\"pt\"><span class=\"lbl\">Taste:</span> aristocrats and the bourgeoisie preferred handmade goods as a sign of refinement and class.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">How did the East India Company procure regular supplies of cotton and silk textiles from Indian weavers?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">It used its political power to assert a <b>monopoly right</b> to trade and eliminate competition.</div><div class=\"pt\">It removed existing traders and brokers and established <b>direct control</b> over weavers.</div><div class=\"pt\">It appointed paid <b>gomasthas</b> to supervise weavers, collect supplies and examine quality.</div><div class=\"pt\">Through a <b>system of advances</b>, weavers who took loans had to hand over their cloth only to the gomastha.</div><div class=\"pt\">Company weavers were prevented from dealing with other buyers.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Imagine that you have been asked to write an article for an encyclopaedia on Britain and the history of cotton. Write your piece using information from the entire chapter.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\"><b>Britain and Cotton.</b> Before factories, cotton and wool were spun and woven in rural households under the proto-industrial system, with town merchants supplying advances. In the 18th century inventions such as the <b>Spinning Jenny (1764)</b> improved carding, spinning and rolling, and <b>Richard Arkwright</b> created the cotton mill, bringing all processes under one roof. Raw cotton imports rose from 2.5 million pounds in 1760 to 22 million pounds in 1787, and cotton was the leading sector of industrialisation till the 1840s.</div><div class=\"rev\">To protect its mills, Britain imposed duties on Indian textiles and pushed Manchester goods into India; India's share of piece-goods in exports fell from 33% (1811–12) to 3% (1850–51), while cotton goods became over half of India's imports by the 1870s. During the American Civil War, Britain turned to Indian raw cotton. After the First World War, Britain could not modernise and compete with the US, Germany and Japan; its cotton production collapsed and exports fell dramatically.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">Why did industrial production in India increase during the First World War?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">British mills were busy with war production, so <b>Manchester imports into India declined</b>; Indian mills got a large home market.</div><div class=\"pt\">Indian factories supplied <b>war needs</b> — jute bags, cloth for army uniforms, tents, leather boots, horse and mule saddles.</div><div class=\"pt\">New factories were set up and old ones ran multiple shifts; more workers were employed and hours lengthened.</div><div class=\"pt\">After the war, Manchester never regained its old position, and Indian industrialists consolidated their hold on the home market.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5.</div>\n    <div class=\"q-text\">Discuss the development of shawl and carpet weaving industry in Kashmir.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sec\">Shawls</div><div class=\"pt\">Made from fine <b>pashmina</b> wool obtained from goats of Ladakh and Tibet.</div><div class=\"pt\">Two main kinds: <b>kani</b> (loom-woven with small wooden spools) and <b>amli</b> (embroidered) shawls.</div><div class=\"pt\">Patronised by rulers and nobles; in the 18th–19th centuries Kashmir shawls became a fashion in Europe, especially France, and were a major export.</div><div class=\"pt\">From the 1870s demand fell (loss of the French market and cheaper machine imitations), causing distress among weavers.</div><div class=\"sec\">Carpets</div><div class=\"pt\">Hand-knotted carpets with Persian designs; the craft is traditionally linked with Persian and Central Asian influence brought in under Sultan Zain-ul-Abidin (15th century).</div><div class=\"pt\">Weavers follow a coded pattern script (talim); the industry grew with export demand in the 19th century and workshops in Srinagar.</div><div class=\"pt\">Both crafts gave employment to thousands of rural and urban households.</div></div></div>\n  </div>\n\n</div>",
+    "sh4-ex-board": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(253, 200, 48, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FDC830; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FDC830; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFF3C4; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFF3C4; font-weight: 700; }\n  .hl { color: #FDC830; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FDC830; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FDC830; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(253, 200, 48, 0.10); border: 1.5px dashed #FDC830; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FDC830; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(253, 200, 48, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(253, 200, 48, 0.18); border: 1px solid #FDC830; color: #FFF3C4; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(253, 200, 48, 0.2); color: #FFF3C4; }\n  .q-card .q-text, .q-card .sub-q { color: #FDC830 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\"><div class=\"q-title\">✦ Section A: Very Short Answer (1 Mark)</div></div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">What is meant by proto-industrialisation?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Large-scale production for international markets in rural households, before the factory system.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Who created the cotton mill?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Richard Arkwright</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Who devised the Spinning Jenny?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>James Hargreaves</b> (1764).</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Who was a gomastha?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">A paid servant of the East India Company who supervised weavers, collected supplies and checked the quality of cloth.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Which city came to be known as the finishing centre of cloth in England?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>London</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q6. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Name any two pre-colonial ports of India.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Surat</b> and <b>Hoogly</b> (also Masulipatam).</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q7. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">When and where was the first cotton mill set up in India?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">In <b>Bombay</b> in <b>1854</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q8. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Who was a jobber?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">An old, trusted worker employed by industrialists to recruit new workers.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q9. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">What is a fly shuttle?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">A mechanical device moved by ropes and pulleys that places the weft into the warp, raising weavers' productivity.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q10. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Who set up the first Indian jute mill in Calcutta in 1917?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Seth Hukumchand</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\"><div class=\"q-title\">✦ Section B: Short Answer (3 Marks)</div></div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q11. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">Why could merchants not expand production within towns in 17th-century Europe?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Urban craft and trade guilds were very powerful.</div><div class=\"pt\">Guilds controlled production, regulated competition and prices, and restricted the entry of new people.</div><div class=\"pt\">Rulers granted guilds monopoly rights to produce and trade in specific products.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q12. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">Why was the pace of technological change slow in 19th-century Britain?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">New technology was expensive; merchants and industrialists were cautious about using it.</div><div class=\"pt\">Machines often broke down and repairs were costly.</div><div class=\"pt\">They were not as effective as their inventors claimed — e.g. only 321 steam engines in England in the early 19th century.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q13. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">Why did weavers clash with gomasthas?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Gomasthas were outsiders with no long-term social link with the village.</div><div class=\"pt\">They acted arrogantly, came with sepoys and peons, and beat and flogged weavers for delays.</div><div class=\"pt\">Weavers lost the freedom to bargain; prices paid by the Company were miserably low and loans tied them to it.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q14. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">How did the American Civil War affect Indian weavers?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Cotton supplies from the USA to Britain were cut off.</div><div class=\"pt\">Britain turned to India; raw cotton exports from India increased and its price shot up.</div><div class=\"pt\">Indian weavers were starved of raw cotton and had to buy it at exorbitant prices.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q15. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">Why did early Indian cotton mills produce yarn rather than cloth?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Indian businessmen avoided competing with Manchester cloth in the Indian market.</div><div class=\"pt\">Yarn was not an important part of British imports into India.</div><div class=\"pt\">The coarse yarn was sold to Indian handloom weavers or exported to China.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q16. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">How did Manchester manufacturers use labels and calendars to market their goods in India?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Labels marked “MADE IN MANCHESTER” assured buyers of quality.</div><div class=\"pt\">Images of Indian gods and goddesses suggested divine approval; emperors and nawabs gave respectability.</div><div class=\"pt\">Calendars reached even people who could not read, hanging in tea shops, homes and offices.</div></div></div>\n  </div>\n\n  <div class=\"q-card\"><div class=\"q-title\">✦ Section C: Long Answer (5 Marks)</div></div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q17. <span class=\"badge\">5 Marks</span></div>\n    <div class=\"q-text\">Explain why the Indian textile industry declined in the 19th century.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">British industrialists got import duties imposed on Indian cotton textiles entering Britain.</div><div class=\"pt\">Cheap machine-made Manchester goods flooded India; cotton piece-goods rose to over 50% of India's imports by the 1870s.</div><div class=\"pt\">The export market collapsed: piece-goods fell from 33% of exports (1811–12) to 3% (1850–51).</div><div class=\"pt\">The local market shrank as weavers could not compete with cheap imports.</div><div class=\"pt\">During the American Civil War raw cotton became scarce and expensive; later Indian factories also flooded the market.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q18. <span class=\"badge\">5 Marks</span></div>\n    <div class=\"q-text\">Describe the role of early Indian entrepreneurs and the limits placed on them by colonial rule.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Dwarkanath Tagore made a fortune in the China trade and set up six joint-stock companies (1830s–40s).</div><div class=\"pt\">Parsis like Dinshaw Petit and Jamsetjee Nusserwanjee Tata built industrial empires from China trade and raw cotton exports.</div><div class=\"pt\">Seth Hukumchand set up the first Indian jute mill (1917); G.D. Birla's family also traded with China.</div><div class=\"pt\">European managing agencies (Andrew Yule, Bird Heiglers, Jardine Skinner) made the investment decisions; Indians only provided capital.</div><div class=\"pt\">Indian merchants were barred from trading with Europe in manufactured goods and confined to exporting raw materials and food grains.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q19. <span class=\"badge\">5 Marks</span></div>\n    <div class=\"q-text\">“Small-scale industries continued to predominate in India.” Explain.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Large industries were few, about 67% of them in Bengal and Bombay (1911).</div><div class=\"pt\">Only 5% (1911) and 10% (1931) of industrial workers were in registered factories.</div><div class=\"pt\">Handloom cloth production almost trebled between 1900 and 1940.</div><div class=\"pt\">Weavers adopted the fly shuttle (over 35% of handlooms by 1941), raising productivity.</div><div class=\"pt\">Specialised weaves (Banarasi, Baluchari saris, Madras lungis) could not be imitated by mills.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q20. <span class=\"badge\">5 Marks</span></div>\n    <div class=\"q-text\">Describe the life of workers in 19th-century Britain.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Abundant labour meant long waits for jobs; access depended on friends and kin; many slept under bridges or in night shelters.</div><div class=\"pt\">Work was seasonal; after the busy season workers were back on the streets.</div><div class=\"pt\">Real wages fell when prices rose during the Napoleonic War; about 10% of the urban population was extremely poor.</div><div class=\"pt\">In slumps, unemployment rose to 35–75%; fear of unemployment made workers hostile to machines like the Spinning Jenny.</div><div class=\"pt\">After the 1840s, building activity and transport created more jobs.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q21. <span class=\"badge\">4 Marks</span></div>\n    <div class=\"q-text\"><b>Source-based:</b> Read the source and answer the questions.<br/><i>“In 1772, Henry Patullo, a Company official, ventured to say that the demand for Indian textiles could never reduce, since no other nation produced goods of the same quality. Yet by the beginning of the nineteenth century we see the beginning of a long decline of textile exports from India. In 1811–12 piece-goods accounted for 33 per cent of India's exports; by 1850–51 it was no more than 3 per cent.”</i><br/>(i) Who was Henry Patullo? (1)<br/>(ii) By how much did the share of piece-goods in exports fall? (1)<br/>(iii) Give two reasons for this decline. (2)</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">(i)</div><div class=\"pt\">An official of the East India Company.</div><div class=\"sub-q\">(ii)</div><div class=\"pt\">From 33% (1811–12) to 3% (1850–51).</div><div class=\"sub-q\">(iii)</div><div class=\"pt\">Britain imposed import duties on Indian textiles to protect Manchester goods.</div><div class=\"pt\">Cheap machine-made British cloth flooded Indian and international markets.</div></div></div>\n  </div>\n\n</div>"
   },
+  "introduction": "Before there were massive factories with loud machines, goods were still being produced for international markets, but inside people's homes. Then came the 'Industrial Revolution' – a time when machines took over, changing how people worked, lived, and traveled forever.",
+  "definitions": [],
+  "keyPoints": [],
+  "formulas": [],
+  "crux": [],
+  "mcqs": [
+    {
+      "id": "sh4-mcq-1",
+      "question": "<div style='text-align: justify;'>Proto-industrialisation refers to production:</div>",
+      "options": [
+        "A):   In large factories",
+        "B):   By machines in towns",
+        "C):   In rural households for international markets before factories",
+        "D):   By guilds in cities"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Merchants gave advances to rural households.</div>"
+    },
+    {
+      "id": "sh4-mcq-2",
+      "question": "<div style='text-align: justify;'>Merchants could not expand production in towns because of:</div>",
+      "options": [
+        "A):   Powerful urban guilds",
+        "B):   Lack of raw material",
+        "C):   Shortage of money",
+        "D):   Absence of markets"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Guilds restricted entry and controlled production and prices.</div>"
+    },
+    {
+      "id": "sh4-mcq-3",
+      "question": "<div style='text-align: justify;'>Which city was the finishing centre for cloth in England?</div>",
+      "options": [
+        "A):   Manchester",
+        "B):   Leeds",
+        "C):   Liverpool",
+        "D):   London"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Cloth was finished in London before export.</div>"
+    },
+    {
+      "id": "sh4-mcq-4",
+      "question": "<div style='text-align: justify;'>Who created the cotton mill?</div>",
+      "options": [
+        "A):   James Watt",
+        "B):   Richard Arkwright",
+        "C):   James Hargreaves",
+        "D):   Matthew Boulton"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>All processes were brought under one roof.</div>"
+    },
+    {
+      "id": "sh4-mcq-5",
+      "question": "<div style='text-align: justify;'>The Spinning Jenny was devised by James Hargreaves in:</div>",
+      "options": [
+        "A):   1764",
+        "B):   1730",
+        "C):   1781",
+        "D):   1854"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>One wheel moved many spindles at once.</div>"
+    },
+    {
+      "id": "sh4-mcq-6",
+      "question": "<div style='text-align: justify;'>James Watt patented his improved steam engine in:</div>",
+      "options": [
+        "A):   1764",
+        "B):   1787",
+        "C):   1781",
+        "D):   1840"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Matthew Boulton manufactured the new model.</div>"
+    },
+    {
+      "id": "sh4-mcq-7",
+      "question": "<div style='text-align: justify;'>Up to the 1840s, the leading sector of British industrialisation was:</div>",
+      "options": [
+        "A):   Iron and steel",
+        "B):   Cotton",
+        "C):   Railways",
+        "D):   Shipbuilding"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>After the 1840s, iron and steel led the way.</div>"
+    },
+    {
+      "id": "sh4-mcq-8",
+      "question": "<div style='text-align: justify;'>At the end of the 19th century, the share of the workforce in technologically advanced sectors was:</div>",
+      "options": [
+        "A):   100%",
+        "B):   About 50%",
+        "C):   About 80%",
+        "D):   Less than 20%"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Traditional industries still employed most workers.</div>"
+    },
+    {
+      "id": "sh4-mcq-9",
+      "question": "<div style='text-align: justify;'>Which of these was NOT a reason for industrialists to prefer hand labour?</div>",
+      "options": [
+        "A):   Abundant cheap labour",
+        "B):   Seasonal demand",
+        "C):   Demand for intricate designs",
+        "D):   Shortage of workers"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Britain had a surplus, not a shortage, of labour.</div>"
+    },
+    {
+      "id": "sh4-mcq-10",
+      "question": "<div style='text-align: justify;'>The pre-colonial port of Surat linked India with:</div>",
+      "options": [
+        "A):   Southeast Asia",
+        "B):   The Gulf and Red Sea ports",
+        "C):   China",
+        "D):   America"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Masulipatam and Hoogly traded with Southeast Asia.</div>"
+    },
+    {
+      "id": "sh4-mcq-11",
+      "question": "<div style='text-align: justify;'>Gomasthas were:</div>",
+      "options": [
+        "A):   Indian merchants",
+        "B):   Bankers",
+        "C):   Paid servants of the Company supervising weavers",
+        "D):   Jobbers"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>They replaced old brokers and examined cloth quality.</div>"
+    },
+    {
+      "id": "sh4-mcq-12",
+      "question": "<div style='text-align: justify;'>In 1811–12, piece-goods formed 33% of India's exports; by 1850–51 this fell to:</div>",
+      "options": [
+        "A):   3%",
+        "B):   13%",
+        "C):   20%",
+        "D):   0%"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Manchester goods took over Indian and world markets.</div>"
+    },
+    {
+      "id": "sh4-mcq-13",
+      "question": "<div style='text-align: justify;'>By the 1870s, cotton piece-goods formed what share of the value of India's imports?</div>",
+      "options": [
+        "A):   About 10%",
+        "B):   About 31%",
+        "C):   About 90%",
+        "D):   Over 50%"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>It was over 31% in 1850.</div>"
+    },
+    {
+      "id": "sh4-mcq-14",
+      "question": "<div style='text-align: justify;'>The American Civil War affected Indian weavers because:</div>",
+      "options": [
+        "A):   Raw cotton became scarce and costly in India",
+        "B):   Cloth exports rose",
+        "C):   Mills closed",
+        "D):   Handlooms were banned"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Britain bought Indian raw cotton instead of American.</div>"
+    },
+    {
+      "id": "sh4-mcq-15",
+      "question": "<div style='text-align: justify;'>The first cotton mill in Bombay came up in:</div>",
+      "options": [
+        "A):   1900",
+        "B):   1874",
+        "C):   1854",
+        "D):   1917"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>It went into production two years later.</div>"
+    },
+    {
+      "id": "sh4-mcq-16",
+      "question": "<div style='text-align: justify;'>Which entrepreneur set up six joint-stock companies in Bengal in the 1830s–40s?</div>",
+      "options": [
+        "A):   Dinshaw Petit",
+        "B):   Dwarkanath Tagore",
+        "C):   G.D. Birla",
+        "D):   Seth Hukumchand"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>He made his fortune in the China trade.</div>"
+    },
+    {
+      "id": "sh4-mcq-17",
+      "question": "<div style='text-align: justify;'>Andrew Yule, Bird Heiglers and Jardine Skinner were:</div>",
+      "options": [
+        "A):   Indian banks",
+        "B):   European managing agencies",
+        "C):   Trade unions",
+        "D):   Cotton mills"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>They made all investment decisions.</div>"
+    },
+    {
+      "id": "sh4-mcq-18",
+      "question": "<div style='text-align: justify;'>In 1911, over half of Bombay's cotton mill workers came from:</div>",
+      "options": [
+        "A):   Kanpur",
+        "B):   Surat",
+        "C):   Nagpur",
+        "D):   Ratnagiri"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Workers mostly came from nearby districts.</div>"
+    },
+    {
+      "id": "sh4-mcq-19",
+      "question": "<div style='text-align: justify;'>Early Indian cotton mills mainly produced:</div>",
+      "options": [
+        "A):   Fine muslin",
+        "B):   Silk",
+        "C):   Coarse yarn",
+        "D):   Jute bags"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>They avoided competing with Manchester cloth.</div>"
+    },
+    {
+      "id": "sh4-mcq-20",
+      "question": "<div style='text-align: justify;'>By 1941, the share of handlooms in India fitted with fly shuttles was over:</div>",
+      "options": [
+        "A):   35%",
+        "B):   15%",
+        "C):   5%",
+        "D):   75%"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>In some regions it was 70–80%.</div>"
+    },
+    {
+      "id": "sh4-mcq-21",
+      "question": "<div style='text-align: justify;'>Which weavers were least affected by famines?</div>",
+      "options": [
+        "A):   Coarse cloth weavers",
+        "B):   Jute weavers",
+        "C):   Weavers of fine Banarasi and Baluchari saris",
+        "D):   Wool weavers"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>The rich kept buying fine cloth even in bad years.</div>"
+    },
+    {
+      "id": "sh4-mcq-22",
+      "question": "<div style='text-align: justify;'>Arrange in chronological order: (i) First cotton mill in Bombay (ii) Spinning Jenny (iii) Watt's steam engine patent (iv) First Indian jute mill in Calcutta</div>",
+      "options": [
+        "A):   (ii), (iii), (i), (iv)",
+        "B):   (iii), (ii), (i), (iv)",
+        "C):   (ii), (i), (iii), (iv)",
+        "D):   (i), (ii), (iii), (iv)"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>1764 → 1781 → 1854 → 1917.</div>"
+    },
+    {
+      "id": "sh4-mcq-23",
+      "question": "<div style='text-align: justify;'>Match: (P) Gomastha (Q) Jobber (R) Stapler (S) Fuller — with (1) Sorts wool (2) Supervises weavers (3) Gathers cloth by pleating (4) Recruits factory workers</div>",
+      "options": [
+        "A):   P-1, Q-4, R-3, S-2",
+        "B):   P-4, Q-2, R-3, S-1",
+        "C):   P-2, Q-1, R-4, S-3",
+        "D):   P-2, Q-4, R-1, S-3"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Each term matches its role in production.</div>"
+    },
+    {
+      "id": "sh4-mcq-24",
+      "question": "<div style='text-align: justify;'>Assertion (A): Industrial production in India increased during the First World War. Reason (R): Manchester imports declined and Indian mills supplied war needs.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>R explains the wartime boom of Indian industry.</div>"
+    },
+    {
+      "id": "sh4-mcq-25",
+      "question": "<div style='text-align: justify;'>Assertion (A): Women workers welcomed the Spinning Jenny. Reason (R): The Spinning Jenny reduced the demand for labour.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Fearing unemployment, women attacked the machines.</div>"
+    }
+  ],
+  "summary": [],
+  "exercises": [
+    {
+      "id": "sh4-ex-intext",
+      "name": "In-Text",
+      "questions": []
+    },
+    {
+      "id": "sh4-ex-write",
+      "name": "Write in Brief",
+      "questions": []
+    },
+    {
+      "id": "sh4-ex-discuss",
+      "name": "Discuss",
+      "questions": []
+    },
+    {
+      "id": "sh4-ex-board",
+      "name": "Board Qs",
+      "questions": []
+    }
+  ],
+  "examples": []
 };
