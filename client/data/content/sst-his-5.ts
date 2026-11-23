@@ -1,345 +1,346 @@
 import { ChapterContent } from "../types";
 
-const themeColor = "#26C6DA";
-
 export const sstHis5: ChapterContent = {
-  id: "sst-his-5",
-  number: 5,
-  title: "Print Culture and the Modern World",
-  introduction:
-    "Can you imagine a world without books, newspapers, or magazines? In ancient China, Japan, and Korea, the first books were printed by rubbing paper against inked woodblocks! Let's discover how the printing press revolutionized human thought, spread knowledge, and even caused rebellions.",
-  definitions: [
-    {
-      term: "Calligraphy",
-      description:
-        "The art of beautiful and stylized handwriting. It was used extensively in ancient manuscripts before printing was invented.",
-    },
-    {
-      term: "Vellum",
-      description:
-        "A high-quality parchment made from the skin of animals, used for writing very prestigious manuscripts.",
-    },
-    {
-      term: "Manuscript",
-      description:
-        "A highly fragile book or document written entirely by hand before the invention of the printing press.",
-    },
-    {
-      term: "Platen",
-      description:
-        "In a printing press, it is the flat board which is pressed onto the back of the paper to get the impression from the inked type.",
-    },
-    {
-      term: "Compositor",
-      description:
-        "The person who composes the text for printing by arranging individual metal letters (types).",
-    },
-    {
-      term: "Vernacular",
-      description:
-        "The normal, everyday language spoken by ordinary people in a particular region, as opposed to formal languages like Latin or Sanskrit.",
-    },
-    {
-      term: "Despotism",
-      description:
-        "A system of government where the ruler holds absolute, unchecked power, and acts cruelly. (Like a tyrant).",
-    },
-  ],
-  keyPoints: [
-    "The earliest kind of print technology (woodblock printing) was developed in China around 594 AD. The traditional Chinese 'accordion book' was folded and stitched at the side.",
-    "Buddhist missionaries from China introduced hand-printing technology into Japan in 768-770 AD. The oldest printed Japanese book is the Diamond Sutra.",
-    "Marco Polo, a great explorer, returned to Italy from China in 1295. He brought back the knowledge of woodblock printing with him to Europe.",
-    "Johannes Gutenberg invented the first known mechanical printing press in Germany in the 1430s. The first book he printed was the Bible (180 copies in 3 years).",
-    "Once the printing press arrived in Europe, book production exploded. This 'Print Revolution' changed how people read, absorbed information, and thought.",
-    "Print created a new culture of reading among the common people. Before this, only the elites read; others just heard stories.",
-    "Martin Luther, a religious reformer, used print to criticize the practices of the Catholic Church. His writings resulted in the Protestant Reformation, showing how print could start a revolution.",
-    "In India, print technology arrived in Goa with Portuguese missionaries in the mid-16th century. It later played a massive role in spreading nationalist ideas and fighting social evils.",
-    "Women in 19th-century India began reading and writing. Rashsundari Debi secretly learned to read and wrote her autobiography 'Amar Jiban'.",
-  ],
-  formulas: [],
-  crux: [
-    "Printing started in China (woodblocks).",
-    "Gutenberg made the mechanical printing press (Bible).",
-    "Books became cheap and spread revolutionary ideas quickly.",
-    "Print helped Indian nationalists unite people against British rule.",
-  ],
-  mcqs: [
-    {
-      id: "sh5-mcq-1",
-      question: "Which country developed the first printing technology?",
-      options: ["Japan", "India", "China", "Germany"],
-      correctAnswer: "c",
-    },
-    {
-      id: "sh5-mcq-2",
-      question: "Who developed the first known printing press in the 1430s?",
-      options: [
-        "Marco Polo",
-        "Johann Gutenberg",
-        "Martin Luther",
-        "Richard M. Hoe",
-      ],
-      correctAnswer: "b",
-    },
-    {
-      id: "sh5-mcq-3",
-      question: "What was the very first book printed by Gutenberg?",
-      options: [
-        "Diamond Sutra",
-        "The Bible",
-        "The Ramayana",
-        "Romeo and Juliet",
-      ],
-      correctAnswer: "b",
-    },
-    {
-      id: "sh5-mcq-4",
-      question:
-        "Which of the following refers to the art of beautiful and stylized handwriting?",
-      options: ["Calligraphy", "Typography", "Photography", "Lithography"],
-      correctAnswer: "a",
-    },
-    {
-      id: "sh5-mcq-5",
-      question:
-        "Who wrote 'Amar Jiban', the first full-length Indian autobiography in Bengali?",
-      options: [
-        "Tarabai Shinde",
-        "Rammohun Roy",
-        "Rashsundari Debi",
-        "Kailashbashini Debi",
-      ],
-      correctAnswer: "c",
-    },
-    {
-      id: "sh5-mcq-6",
-      question: "Who wrote 'Gulamgiri' in 1871?",
-      options: [
-        "Dr. B.R. Ambedkar",
-        "Jyotirao Phule",
-        "E.V. Ramaswamy Naicker",
-        "Mahatma Gandhi",
-      ],
-      correctAnswer: "b",
-    },
-    {
-      id: "sh5-mcq-7",
-      question:
-        "What was the name of Gutenberg's first printing press breakthrough?",
-      options: [
-        "Movable metal type",
-        "Woodblock printing",
-        "Lithography",
-        "Steam-powered press",
-      ],
-      correctAnswer: "a",
-    },
-    {
-      id: "sh5-mcq-8",
-      question:
-        "Which country was the major producer of printed material in early times?",
-      options: ["Japan", "China", "India", "Korea"],
-      correctAnswer: "b",
-    },
-    {
-      id: "sh5-mcq-9",
-      question: "Who started publishing the weekly 'Bengal Gazette' in 1780?",
-      options: [
-        "James Augustus Hickey",
-        "Raja Ram Mohan Roy",
-        "Gangadhar Bhattacharya",
-        "William Carey",
-      ],
-      correctAnswer: "a",
-    },
-    {
-      id: "sh5-mcq-10",
-      question: "What are 'chapbooks'?",
-      options: [
-        "Heavy textbooks",
-        "Pocket-size books sold by pedlars",
-        "Religious scriptures",
-        "Royal diaries",
-      ],
-      correctAnswer: "b",
-    },
-  ],
-  summary: [
-    "From hand-rubbed woodblocks in China to the mechanical press in Germany, printing revolutionized the world.",
-    "The new reading public absorbed ideas of reform, liberty, and reason through books and newspapers.",
-    "Print culture gave individuals, including women and children, a voice to challenge old, rigid traditions.",
-    "In India, print became a powerful tool in social reform movements and in the struggle for national independence.",
-  ],
-  exercises: [
-    {
-      id: "sh5-ex-write",
-      name: "Write in brief",
-      questions: [],
-    },
-    {
-      id: "sh5-ex-discuss",
-      name: "Discuss",
-      questions: [],
-    },
-  ],
-  examples: [],
-  isHtmlView: true,
-  htmlOverview: `
-    <div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">
-      <p style="line-height: 1.6; font-size: 17px;">Can you imagine a world without books, newspapers, or magazines? In ancient China, Japan, and Korea, the first books were printed by rubbing paper against inked woodblocks! Let's discover how the printing press revolutionized human thought, spread knowledge, and even caused rebellions.</p>
-      
-      <h3 style="color: ${themeColor}; text-align: left; margin-top: 20px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px;">Key Definitions</h3>
-      <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Calligraphy:</b> The art of beautiful and stylized handwriting. It was used extensively in ancient manuscripts before printing was invented.</p>
-      <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Vellum:</b> A high-quality parchment made from the skin of animals, used for writing very prestigious manuscripts.</p>
-      <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Manuscript:</b> A highly fragile book or document written entirely by hand before the invention of the printing press.</p>
-      <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Platen:</b> In a printing press, it is the flat board which is pressed onto the back of the paper to get the impression from the inked type.</p>
-      <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Compositor:</b> The person who composes the text for printing by arranging individual metal letters (types).</p>
-      <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Vernacular:</b> The normal, everyday language spoken by ordinary people in a particular region, as opposed to formal languages like Latin or Sanskrit.</p>
-      <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Despotism:</b> A system of government where the ruler holds absolute, unchecked power, and acts cruelly. (Like a tyrant).</p>
-      
-      <h3 style="color: ${themeColor}; text-align: left; margin-top: 25px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px;">Important Points</h3>
-      <ul style="text-align: left; padding-left: 20px; line-height: 1.6; font-size: 16px;">
-        <li style="margin-bottom: 8px;">The earliest kind of print technology (woodblock printing) was developed in China around 594 AD. The traditional Chinese 'accordion book' was folded and stitched at the side.</li>
-        <li style="margin-bottom: 8px;">Buddhist missionaries from China introduced hand-printing technology into Japan in 768-770 AD. The oldest printed Japanese book is the Diamond Sutra.</li>
-        <li style="margin-bottom: 8px;">Marco Polo, a great explorer, returned to Italy from China in 1295. He brought back the knowledge of woodblock printing with him to Europe.</li>
-        <li style="margin-bottom: 8px;">Johannes Gutenberg invented the first known mechanical printing press in Germany in the 1430s. The first book he printed was the Bible (180 copies in 3 years).</li>
-        <li style="margin-bottom: 8px;">Once the printing press arrived in Europe, book production exploded. This 'Print Revolution' changed how people read, absorbed information, and thought.</li>
-        <li style="margin-bottom: 8px;">Print created a new culture of reading among the common people. Before this, only the elites read; others just heard stories.</li>
-        <li style="margin-bottom: 8px;">Martin Luther, a religious reformer, used print to criticize the practices of the Catholic Church. His writings resulted in the Protestant Reformation, showing how print could start a revolution.</li>
-        <li style="margin-bottom: 8px;">In India, print technology arrived in Goa with Portuguese missionaries in the mid-16th century. It later played a massive role in spreading nationalist ideas and fighting social evils.</li>
-        <li style="margin-bottom: 8px;">Women in 19th-century India began reading and writing. Rashsundari Debi secretly learned to read and wrote her autobiography 'Amar Jiban'.</li>
-      </ul>
-      
-      <h3 style="color: ${themeColor}; text-align: left; margin-top: 25px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px;">Summary</h3>
-      <p style="line-height: 1.6; font-size: 16px;">From hand-rubbed woodblocks in China to the mechanical press in Germany, printing revolutionized the world. The new reading public absorbed ideas of reform, liberty, and reason through books and newspapers. Print culture gave individuals, including women and children, a voice to challenge old, rigid traditions. In India, print became a powerful tool in social reform movements and in the struggle for national independence.</p>
-    </div>
-  `,
-  htmlExercises: {
-    "sh5-ex-write": `
-      <div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">
-        <div style="margin-bottom: 25px;">
-          <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 18px;">Q1. Give reasons for the following:</p>
-          
-          <div style="margin-left: 10px; margin-bottom: 18px;">
-            <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 5px; font-size: 16px;">(a) Woodblock print only came to Europe after 1295</p>
-            <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 0;">Woodblock printing was invented in China. In 1295, explorer Marco Polo returned to Italy after years of travel in China and brought this technology back with him, leading to its spread across Europe.</p>
-          </div>
-
-          <div style="margin-left: 10px; margin-bottom: 18px;">
-            <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 5px; font-size: 16px;">(b) Martin Luther was in favour of print and spoke out in praise of it</p>
-            <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 0;">Luther criticized the Roman Catholic Church in his 'Ninety-Five Theses' (1517). Print allowed his writings to spread rapidly and spark the Protestant Reformation, leading him to call print "the ultimate gift of God."</p>
-          </div>
-
-          <div style="margin-left: 10px; margin-bottom: 18px;">
-            <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 5px; font-size: 16px;">(c) The Roman Catholic Church began keeping an Index of Prohibited books from the mid-sixteenth century</p>
-            <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 0;">Cheap printed books enabled common readers to form individual interpretations of the Bible (like Menocchio). Fearing heresy and challenges to their authority, the Church set up the Index in 1558 to ban dissent.</p>
-          </div>
-
-          <div style="margin-left: 10px; margin-bottom: 18px;">
-            <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 5px; font-size: 16px;">(d) Gandhi said the fight for Swaraj is a fight for liberty of speech, liberty of the press, and freedom of association</p>
-            <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 0;">Gandhi believed speech, press, and association were crucial to public opinion. Since the British colonial government was actively crushing these rights, he argued defending them was key to the fight for Swaraj.</p>
-          </div>
-        </div>
-
-        <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-          <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 18px;">Q2. Write short notes to show what you know about:</p>
-          
-          <div style="margin-left: 10px; margin-bottom: 18px;">
-            <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 5px; font-size: 16px;">(a) The Gutenberg Press</p>
-            <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 0;">Developed by Johannes Gutenberg in Germany in the 1430s, it was the first mechanical printing press. It used movable metal types and olive press mechanisms. Its first printed book was the Bible, producing 180 copies in 3 years.</p>
-          </div>
-
-          <div style="margin-left: 10px; margin-bottom: 18px;">
-            <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 5px; font-size: 16px;">(b) Erasmus’s idea of the printed book</p>
-            <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 0;">Erasmus, a Latin scholar, criticized the print boom. He argued that the flood of cheap, useless, and scandalous books diminished the value of good writing, distracted readers, and corrupted minds.</p>
-          </div>
-
-          <div style="margin-left: 10px; margin-bottom: 18px;">
-            <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 5px; font-size: 16px;">(c) The Vernacular Press Act</p>
-            <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 0;">Enacted by the British in 1878 to suppress anti-colonial voice, it gave the government powers to censor vernacular newspapers. If a paper ignored warnings about seditious content, its printing press could be confiscated.</p>
-          </div>
-        </div>
-
-        <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-          <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 18px;">Q3. What did the spread of print culture in nineteenth century India mean to:</p>
-          
-          <div style="margin-left: 10px; margin-bottom: 18px;">
-            <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 5px; font-size: 16px;">(a) Women</p>
-            <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 0;">Print brought education and writing opportunities. Women began reading at home or in schools. Notable authors like Rashsundari Debi (*Amar Jiban*) and Tarabai Shinde (*Stripurushtulna*) wrote about their domestic struggles and gender bias.</p>
-          </div>
-
-          <div style="margin-left: 10px; margin-bottom: 18px;">
-            <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 5px; font-size: 16px;">(b) The poor</p>
-            <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 0;">Cheap, small books sold at crossroads and public libraries gave them access to reading. Reformers used print to oppose caste bias (e.g., Phule's *Gulamgiri*), and workers like Kashibaba wrote about industrial exploitation.</p>
-          </div>
-
-          <div style="margin-left: 10px; margin-bottom: 18px;">
-            <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 5px; font-size: 16px;">(c) Reformers</p>
-            <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 0;">Reformers used printed tracts and newspapers (like Roy's *Sambad Kaumudi*) in local languages to lead campaigns against social evils (sati, child marriage) and debate orthodx practices, mobilizing public opinion.</p>
-          </div>
-        </div>
-      </div>
-    `,
-    "sh5-ex-discuss": `
-      <div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">
-        <div style="margin-bottom: 25px;">
-          <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 17px;">Q1. Why did some people in eighteenth century Europe think that print culture would bring enlightenment and end despotism?</p>
-          <ul style="color: #E0E0E0; line-height: 1.6; padding-left: 20px; font-size: 15px;">
-            <li style="margin-bottom: 5px;"><b>Spread of Reason:</b> Cheap books made works of Voltaire and Rousseau widely available, promoting critical thinking and questioning absolute power.</li>
-            <li style="margin-bottom: 5px;"><b>Public Debates:</b> Print culture fostered rational debates, eroding the traditional religious and royal authority.</li>
-            <li style="margin-bottom: 5px;"><b>Mercier's Proclamation:</b> Writer Mercier declared the press the most powerful engine of progress, predicting that public opinion would destroy tyranny.</li>
-          </ul>
-        </div>
-
-        <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-          <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 17px;">Q2. Why did some people fear the effect of easily available printed books? Choose one example from Europe and one from India.</p>
-          <ul style="color: #E0E0E0; line-height: 1.6; padding-left: 20px; font-size: 15px;">
-            <li style="margin-bottom: 5px;"><b>Fear of Dissent:</b> Elites and rulers worried that uncontrolled printing would spread rebellious and heretical thoughts, undermining social order.</li>
-            <li style="margin-bottom: 5px;"><b>Europe:</b> The Roman Catholic Church compiled the Index of Prohibited Books in 1558 to ban texts challenging orthodox scriptures.</li>
-            <li style="margin-bottom: 5px;"><b>India:</b> The British passed the Vernacular Press Act of 1878 to clamp down on local newspapers that criticized colonial rule.</li>
-          </ul>
-        </div>
-
-        <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-          <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 17px;">Q3. Discuss the different initiatives taken by Dogra Maharaja Ranbir Singh for reviving print culture in Jammu and Kashmir region.</p>
-          <ul style="color: #E0E0E0; line-height: 1.6; padding-left: 20px; font-size: 15px;">
-            <li style="margin-bottom: 5px;"><b>Vidya Vilas Press (1858):</b> Established the state's first printing press in Jammu for official printing.</li>
-            <li style="margin-bottom: 5px;"><b>Ranbir Press (1882):</b> Set up to publish the J&K Gazette, streamlining administration.</li>
-            <li style="margin-bottom: 5px;"><b>Translation Department:</b> Translated classical texts (Sanskrit, Persian, English) into Dogri and Hindi, providing free books to schools.</li>
-            <li style="margin-bottom: 5px;"><b>Script Reform:</b> Standardized the Dogra Akkhar script for administrative and printing use.</li>
-          </ul>
-        </div>
-
-        <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-          <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 17px;">Q4. Explain how print culture assisted the growth of nationalism in India.</p>
-          <ul style="color: #E0E0E0; line-height: 1.6; padding-left: 20px; font-size: 15px;">
-            <li style="margin-bottom: 5px;"><b>Exposing Rule:</b> Vernacular papers exposed British economic exploitation and high taxes, generating anti-colonial sentiments.</li>
-            <li style="margin-bottom: 5px;"><b>Mobilization:</b> Leaders used newspapers (like Tilak's *Kesari*) to critique administration policies and mobilize nationalist campaigns.</li>
-            <li style="margin-bottom: 5px;"><b>Regional Unity:</b> Printing news in regional languages connected people across provinces, fostering a shared national identity.</li>
-            <li style="margin-bottom: 5px;"><b>Patriotic Literature:</b> Mass printing of songs, poems, and stories (like *Vande Mataram*) built national pride.</li>
-          </ul>
-        </div>
-
-        <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-          <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 17px;">Q5. What were the effects of the spread of print culture for poor people in nineteenth century India?</p>
-          <ul style="color: #E0E0E0; line-height: 1.6; padding-left: 20px; font-size: 15px;">
-            <li style="margin-bottom: 5px;"><b>Cheap Booklets:</b> Very cheap small books sold at markets enabled poor workers to purchase them.</li>
-            <li style="margin-bottom: 5px;"><b>Public Libraries:</b> Wealthy patrons set up libraries in towns, offering free reading opportunities.</li>
-            <li style="margin-bottom: 5px;"><b>Caste Awareness:</b> Tracts by Phule (*Gulamgiri*), Ambedkar, and Periyar raised voices against caste bias and untouchability.</li>
-            <li style="margin-bottom: 5px;"><b>Worker Publications:</b> Mill workers wrote and published books (like Kashibaba's *Chhote Aur Bade Ka Sawal*) detailing class hardships.</li>
-          </ul>
-        </div>
-
-        <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-          <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 17px;">Q6. How did the liberal policies of Maharaja Hari Singh lead to the development of press in Jammu and Kashmir?</p>
-          <ul style="color: #E0E0E0; line-height: 1.6; padding-left: 20px; font-size: 15px;">
-            <li style="margin-bottom: 5px;"><b>Press Act of 1932:</b> Enacted following the Glancy Commission, it eased the licensing and publication of local newspapers.</li>
-            <li style="margin-bottom: 5px;"><b>Reduced Restrictions:</b> Relaxed autocratic censorship, encouraging editors to set up independent papers.</li>
-            <li style="margin-bottom: 5px;"><b>Newspaper Boom:</b> Fostered the growth of pioneering papers like Saraf's weekly *Ranbir*, alongside *Martand* and *Chand*.</li>
-            <li style="margin-bottom: 5px;"><b>Political Dialogue:</b> Allowed local publications to discuss civil rights and social reform, driving political consciousness in J&K.</li>
-          </ul>
-        </div>
-      </div>
-    `,
+  "id": "sst-his-5",
+  "number": 5,
+  "title": "Print Culture and the Modern World",
+  "isHtmlView": true,
+  "htmlOverview": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(38, 198, 218, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #26C6DA; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #26C6DA; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #B2EBF2; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #B2EBF2; font-weight: 700; }\n  .hl { color: #26C6DA; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #26C6DA; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #26C6DA; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(38, 198, 218, 0.10); border: 1.5px dashed #26C6DA; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #26C6DA; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(38, 198, 218, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(38, 198, 218, 0.18); border: 1px solid #26C6DA; color: #B2EBF2; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(38, 198, 218, 0.2); color: #B2EBF2; }\n  .q-card .q-text, .q-card .sub-q { color: #26C6DA !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ Chapter at a Glance</div><div class=\"sol-step\"><div class=\"rev\">It is difficult to imagine a world without printed matter. This chapter traces the development of print from its beginnings in <b>East Asia</b> to its expansion in <b>Europe</b> and in <b>India</b>, and how the spread of print technology changed social lives and cultures.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 443\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"443\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"20\" font-size=\"11.5\" fill=\"#26C6DA\" text-anchor=\"middle\" font-weight=\"700\">Print Culture: Timeline</text><line x1=\"76\" y1=\"34\" x2=\"76\" y2=\"433.3999999999999\" stroke=\"rgba(38, 198, 218,0.55)\" stroke-width=\"2\"/><circle cx=\"76\" cy=\"39.5\" r=\"4\" fill=\"#26C6DA\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"43\" font-size=\"10\" fill=\"#26C6DA\" text-anchor=\"end\" font-weight=\"700\">594</text><text x=\"88\" y=\"43.0\" font-size=\"9.5\" fill=\"#FFFFFF\">Books printed in China by rubbing paper</text><text x=\"88\" y=\"55.2\" font-size=\"9.5\" fill=\"#FFFFFF\">on inked woodblocks</text><circle cx=\"76\" cy=\"72.9\" r=\"4\" fill=\"#26C6DA\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"76.4\" font-size=\"10\" fill=\"#26C6DA\" text-anchor=\"end\" font-weight=\"700\">868</text><text x=\"88\" y=\"76.4\" font-size=\"9.5\" fill=\"#FFFFFF\">Diamond Sutra, the oldest Japanese</text><text x=\"88\" y=\"88.6\" font-size=\"9.5\" fill=\"#FFFFFF\">printed book</text><circle cx=\"76\" cy=\"106.30000000000001\" r=\"4\" fill=\"#26C6DA\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"109.80000000000001\" font-size=\"10\" fill=\"#26C6DA\" text-anchor=\"end\" font-weight=\"700\">1295</text><text x=\"88\" y=\"109.8\" font-size=\"9.5\" fill=\"#FFFFFF\">Marco Polo brings woodblock printing from</text><text x=\"88\" y=\"122.0\" font-size=\"9.5\" fill=\"#FFFFFF\">China to Italy</text><circle cx=\"76\" cy=\"139.70000000000002\" r=\"4\" fill=\"#26C6DA\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"143.20000000000002\" font-size=\"10\" fill=\"#26C6DA\" text-anchor=\"end\" font-weight=\"700\">1448</text><text x=\"88\" y=\"143.2\" font-size=\"9.5\" fill=\"#FFFFFF\">Gutenberg perfects the printing press;</text><text x=\"88\" y=\"155.4\" font-size=\"9.5\" fill=\"#FFFFFF\">first book: the Bible</text><circle cx=\"76\" cy=\"173.10000000000002\" r=\"4\" fill=\"#26C6DA\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"176.60000000000002\" font-size=\"10\" fill=\"#26C6DA\" text-anchor=\"end\" font-weight=\"700\">1517</text><text x=\"88\" y=\"176.6\" font-size=\"9.5\" fill=\"#FFFFFF\">Luther's Ninety-Five Theses; Protestant</text><text x=\"88\" y=\"188.8\" font-size=\"9.5\" fill=\"#FFFFFF\">Reformation</text><circle cx=\"76\" cy=\"206.50000000000003\" r=\"4\" fill=\"#26C6DA\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"210.00000000000003\" font-size=\"10\" fill=\"#26C6DA\" text-anchor=\"end\" font-weight=\"700\">1556</text><text x=\"88\" y=\"210.0\" font-size=\"9.5\" fill=\"#FFFFFF\">Portuguese missionaries bring the press</text><text x=\"88\" y=\"222.2\" font-size=\"9.5\" fill=\"#FFFFFF\">to Goa</text><circle cx=\"76\" cy=\"239.90000000000003\" r=\"4\" fill=\"#26C6DA\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"243.40000000000003\" font-size=\"10\" fill=\"#26C6DA\" text-anchor=\"end\" font-weight=\"700\">1558</text><text x=\"88\" y=\"243.4\" font-size=\"9.5\" fill=\"#FFFFFF\">Roman Church begins the Index of</text><text x=\"88\" y=\"255.6\" font-size=\"9.5\" fill=\"#FFFFFF\">Prohibited Books</text><circle cx=\"76\" cy=\"273.3\" r=\"4\" fill=\"#26C6DA\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"276.8\" font-size=\"10\" fill=\"#26C6DA\" text-anchor=\"end\" font-weight=\"700\">1579</text><text x=\"88\" y=\"276.8\" font-size=\"9.5\" fill=\"#FFFFFF\">First Tamil book printed at Cochin</text><circle cx=\"76\" cy=\"294.5\" r=\"4\" fill=\"#26C6DA\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"298\" font-size=\"10\" fill=\"#26C6DA\" text-anchor=\"end\" font-weight=\"700\">1780</text><text x=\"88\" y=\"298.0\" font-size=\"9.5\" fill=\"#FFFFFF\">James Augustus Hickey's Bengal Gazette</text><circle cx=\"76\" cy=\"315.7\" r=\"4\" fill=\"#26C6DA\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"319.2\" font-size=\"10\" fill=\"#26C6DA\" text-anchor=\"end\" font-weight=\"700\">1821</text><text x=\"88\" y=\"319.2\" font-size=\"9.5\" fill=\"#FFFFFF\">Rammohun Roy's Sambad Kaumudi</text><circle cx=\"76\" cy=\"336.9\" r=\"4\" fill=\"#26C6DA\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"340.4\" font-size=\"10\" fill=\"#26C6DA\" text-anchor=\"end\" font-weight=\"700\">1857</text><text x=\"88\" y=\"340.4\" font-size=\"9.5\" fill=\"#FFFFFF\">Children's press set up in France</text><circle cx=\"76\" cy=\"358.09999999999997\" r=\"4\" fill=\"#26C6DA\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"361.59999999999997\" font-size=\"10\" fill=\"#26C6DA\" text-anchor=\"end\" font-weight=\"700\">1871</text><text x=\"88\" y=\"361.6\" font-size=\"9.5\" fill=\"#FFFFFF\">Jyotiba Phule's Gulamgiri</text><circle cx=\"76\" cy=\"379.29999999999995\" r=\"4\" fill=\"#26C6DA\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"382.79999999999995\" font-size=\"10\" fill=\"#26C6DA\" text-anchor=\"end\" font-weight=\"700\">1876</text><text x=\"88\" y=\"382.8\" font-size=\"9.5\" fill=\"#FFFFFF\">Rashsundari Debi's Amar Jiban published</text><circle cx=\"76\" cy=\"400.49999999999994\" r=\"4\" fill=\"#26C6DA\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"403.99999999999994\" font-size=\"10\" fill=\"#26C6DA\" text-anchor=\"end\" font-weight=\"700\">1878</text><text x=\"88\" y=\"404.0\" font-size=\"9.5\" fill=\"#FFFFFF\">Vernacular Press Act</text><circle cx=\"76\" cy=\"421.69999999999993\" r=\"4\" fill=\"#26C6DA\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"425.19999999999993\" font-size=\"10\" fill=\"#26C6DA\" text-anchor=\"end\" font-weight=\"700\">1908</text><text x=\"88\" y=\"425.2\" font-size=\"9.5\" fill=\"#FFFFFF\">Tilak imprisoned for writing in Kesari</text></svg></div><div class=\"diagram-caption\">From woodblocks to nationalist newspapers</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 1. The First Printed Books: China and Japan</div><div class=\"sol-step\"><div class=\"sec\">China</div><div class=\"pt\">The earliest print technology developed in <b>China, Japan and Korea</b> — a system of hand printing.</div><div class=\"pt\">From <b>AD 594</b>, books in China were printed by rubbing paper against the inked surface of woodblocks. As both sides of the thin, porous sheet could not be printed, the traditional Chinese <b>“accordion book”</b> was folded and stitched at the side.</div><div class=\"pt\">The <b>imperial state</b> was for long the major producer of printed material; civil service examinations needed textbooks in vast numbers.</div><div class=\"pt\">In the 17th century, urban culture bloomed: merchants used print in trade; reading became a leisure activity (fiction, poetry, autobiographies, romantic plays); rich women and wives of scholar-officials began to publish.</div><div class=\"pt\">In the late 19th century Western mechanical presses were imported; <b>Shanghai</b> became the hub of the new print culture.</div><div class=\"sec\">Japan</div><div class=\"pt\">Buddhist missionaries from China introduced hand-printing around <b>AD 768–770</b>.</div><div class=\"pt\">The oldest Japanese book, printed in <b>AD 868</b>, is the Buddhist <b>Diamond Sutra</b> (six sheets of text with woodcut illustrations).</div><div class=\"pt\">In <b>Edo</b> (later Tokyo), libraries and bookstores were packed with hand-printed books on women, music, tea ceremony, flower arrangement, etiquette and cooking.</div><div class=\"pt\"><b>Kitagawa Utamaro</b> (born 1753) was known for <b>ukiyo</b> — “pictures of the floating world”, depicting ordinary urban life.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 363\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"363\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#26C6DA\" text-anchor=\"middle\" font-weight=\"700\">How Print Travelled</text><rect x=\"30\" y=\"30\" width=\"260\" height=\"63\" rx=\"6\" fill=\"rgba(38, 198, 218,0.16)\" stroke=\"#26C6DA\" stroke-width=\"1.2\"/><text x=\"160\" y=\"46.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">China (from AD 594)</text><text x=\"160\" y=\"58.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Hand printing with woodblocks; accordion</text><text x=\"160\" y=\"71.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">books; the imperial state is the biggest</text><text x=\"160\" y=\"83.5\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">producer</text><line x1=\"160\" y1=\"94\" x2=\"160\" y2=\"101\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 106 L163.5 100 L156.5 100 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"107\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(38, 198, 218,0.16)\" stroke=\"#26C6DA\" stroke-width=\"1.2\"/><text x=\"160\" y=\"123.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Japan (AD 768–770)</text><text x=\"160\" y=\"135.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Buddhist missionaries from China bring</text><text x=\"160\" y=\"148.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">hand-printing; Diamond Sutra printed in 868</text><line x1=\"160\" y1=\"159\" x2=\"160\" y2=\"166\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 171 L163.5 165 L156.5 165 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"172\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(38, 198, 218,0.16)\" stroke=\"#26C6DA\" stroke-width=\"1.2\"/><text x=\"160\" y=\"188.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Europe (1295)</text><text x=\"160\" y=\"200.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Marco Polo brings woodblock printing to Italy;</text><text x=\"160\" y=\"213.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">it spreads across Europe</text><line x1=\"160\" y1=\"224\" x2=\"160\" y2=\"231\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 236 L163.5 230 L156.5 230 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"237\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"160\" y=\"253.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Gutenberg (1430s–1448)</text><text x=\"160\" y=\"265.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Strasbourg/Mainz, Germany: the printing press</text><text x=\"160\" y=\"278.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">with movable metal type</text><line x1=\"160\" y1=\"289\" x2=\"160\" y2=\"296\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 301 L163.5 295 L156.5 295 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"302\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(38, 198, 218,0.16)\" stroke=\"#26C6DA\" stroke-width=\"1.2\"/><text x=\"160\" y=\"318.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">India (mid-16th century)</text><text x=\"160\" y=\"330.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Portuguese missionaries set up the first press</text><text x=\"160\" y=\"343.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">in Goa</text></svg></div><div class=\"diagram-caption\">The journey of print from East Asia to India</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 2. Print Comes to Europe</div><div class=\"sol-step\"><div class=\"pt\">In the 11th century, <b>Chinese paper</b> reached Europe via the silk route; it made the production of manuscripts by scribes possible.</div><div class=\"pt\">In <b>1295</b>, <b>Marco Polo</b> returned to Italy from China with the knowledge of woodblock printing; it soon spread across Europe.</div><div class=\"pt\">Luxury editions were still handwritten on expensive <b>vellum</b> for aristocrats and monastic libraries, who scoffed at printed books as cheap vulgarities; merchants and university students bought cheaper printed copies.</div><div class=\"pt\">Booksellers employed scribes — often more than <b>50</b> for one bookseller — but handwritten manuscripts could not meet the rising demand.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Problems with manuscripts</th><th>Advantages of print</th></tr><tr><td>Copying was expensive, laborious and time-consuming</td><td>Cost of books fell; less time and labour per book</td></tr><tr><td>Fragile and awkward to handle</td><td>Multiple copies produced with ease</td></tr><tr><td>Could not be carried around or read easily</td><td>Books flooded the market and reached a wider readership</td></tr></table></div><div class=\"pt\">By the early 15th century, woodblocks were widely used to print textiles, playing cards and religious pictures with brief texts.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 3. Gutenberg and the Printing Press</div><div class=\"sol-step\"><div class=\"rev\">The breakthrough came at <b>Strasbourg, Germany</b>, where <span class=\"hl\">Johann Gutenberg</span> developed the first known printing press in the <b>1430s</b>.</div><div class=\"pt\">Son of a merchant, he grew up on a large agricultural estate and had seen <b>wine and olive presses</b> since childhood.</div><div class=\"pt\">He became a master goldsmith and learnt to make <b>lead moulds</b> for trinkets.</div><div class=\"pt\">The <b>olive press</b> provided the model for the printing press; moulds were used to cast <b>metal types</b> for the letters of the alphabet.</div><div class=\"pt\">By <b>1448</b> he perfected the system. The first book he printed was the <b>Bible</b> — about <b>180 copies in three years</b>.</div><div class=\"pt\">Early printed books resembled manuscripts: metal letters imitated ornamental handwriting; borders were illuminated and illustrations painted by hand; spaces were left blank for buyers to choose decorations.</div><div class=\"exam\"><span class=\"exam-t\">📌 Print revolution — numbers to remember</span><div>• Between <b>1450 and 1550</b>, presses were set up in most countries of Europe.</div><div>• Second half of the 15th century: <b>20 million</b> copies of printed books in Europe.</div><div>• 16th century: about <b>200 million</b> copies.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 4. The Print Revolution and its Impact</div><div class=\"sol-step\"><div class=\"rev\">The print revolution was not just a new way of producing books; it transformed people's relationship to information and knowledge, institutions and authorities.</div><div class=\"sec\">4.1 A new reading public</div><div class=\"pt\">Earlier, reading was restricted to the elite; common people lived in an <b>oral culture</b> — they heard sacred texts, ballads and folk tales.</div><div class=\"pt\">Now a <b>reading public</b> came into being alongside the <b>hearing public</b>.</div><div class=\"pt\">As literacy was low, printers published popular ballads and folk tales with many pictures, which were sung and recited at village gatherings and taverns — the line between oral and reading cultures became blurred.</div><div class=\"sec\">4.2 Religious debates and the fear of print</div><div class=\"pt\">Print allowed wide circulation of ideas — even those who disagreed with authorities could print their views.</div><div class=\"pt\">Many feared that without control, <b>rebellious and irreligious thoughts</b> might spread and “valuable” literature would lose its authority.</div><div class=\"pt\"><b>Erasmus</b>, a Latin scholar and Catholic reformer, worried that printers filled the world with “stupid, slanderous, scandalous, raving, irreligious and seditious books”.</div><div class=\"pt\"><b>Martin Luther</b> wrote the <b>Ninety-Five Theses (1517)</b> criticising the practices of the Roman Catholic Church and posted a printed copy on a church door in <b>Wittenberg</b>. His writings were printed in vast numbers, leading to the <b>Protestant Reformation</b>. His translation of the New Testament sold <b>5,000 copies</b> within a few weeks; he called printing “the ultimate gift of God and the greatest one”.</div><div class=\"sec\">4.3 Print and dissent</div><div class=\"pt\"><b>Menocchio</b>, a 16th-century miller in Italy, reinterpreted the Bible from books he read; during the Inquisition he was hauled up twice and finally <b>executed</b>.</div><div class=\"pt\">The Roman Church imposed controls on publishers and booksellers and began the <b>Index of Prohibited Books from 1558</b>.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 5. The Reading Mania (17th–18th Centuries)</div><div class=\"sol-step\"><div class=\"pt\">Churches set up village schools; by the end of the 18th century literacy in parts of Europe reached <b>60 to 80%</b>.</div><div class=\"pt\">Pedlars carried almanacs, ballads, folktales and romances to villages.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Country</th><th>Cheap books</th></tr><tr><td>England</td><td><b>Penny chapbooks</b> sold by pedlars called <b>chapmen</b> for a penny</td></tr><tr><td>France</td><td><b>Bibliothèque Bleue</b> — low-priced books on poor paper bound in cheap blue covers</td></tr></table></div><div class=\"pt\"><b>Periodical press</b> from the early 18th century combined current affairs with entertainment.</div><div class=\"pt\">Ideas of scientists and philosophers became accessible: <b>Isaac Newton</b> published his discoveries; <b>Thomas Paine, Voltaire and Rousseau</b> were widely read.</div><div class=\"exam\"><span class=\"exam-t\">📌 “Tremble, therefore, tyrants of the world!”</span><div>• <b>Louis-Sébastien Mercier</b>, an 18th-century French novelist: “The printing press is the most powerful engine of progress and public opinion is the force that will sweep despotism away.”</div><div>• He believed books would bring enlightenment and destroy the basis of despotism.</div></div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 289\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"289\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#26C6DA\" text-anchor=\"middle\" font-weight=\"700\">Print Culture and the French Revolution</text><rect x=\"60\" y=\"30\" width=\"200\" height=\"51\" rx=\"6\" fill=\"rgba(38, 198, 218,0.16)\" stroke=\"#26C6DA\" stroke-width=\"1.2\"/><text x=\"160\" y=\"46.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Historians' three arguments</text><text x=\"160\" y=\"58.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Print created conditions for the</text><text x=\"160\" y=\"71.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Revolution</text><line x1=\"160\" y1=\"82\" x2=\"160\" y2=\"89\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 94 L163.5 88 L156.5 88 Z\" fill=\"#B0BEC5\"/><rect x=\"13\" y=\"96\" width=\"142\" height=\"84\" rx=\"6\" fill=\"rgba(38, 198, 218,0.16)\" stroke=\"#26C6DA\" stroke-width=\"1.2\"/><text x=\"84\" y=\"112.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">1. Ideas of</text><text x=\"84\" y=\"123.7\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Enlightenment</text><text x=\"84\" y=\"135.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Voltaire and Rousseau</text><text x=\"84\" y=\"147.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">attacked tradition, the</text><text x=\"84\" y=\"158.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Church and despotism;</text><text x=\"84\" y=\"170.5\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">asked for rule of reason</text><rect x=\"165\" y=\"96\" width=\"142\" height=\"84\" rx=\"6\" fill=\"rgba(38, 198, 218,0.16)\" stroke=\"#26C6DA\" stroke-width=\"1.2\"/><text x=\"236\" y=\"112.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">2. Culture of debate</text><text x=\"236\" y=\"123.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">A public aware of the</text><text x=\"236\" y=\"135.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">power of reason</text><text x=\"236\" y=\"147.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">re-evaluated all values,</text><text x=\"236\" y=\"158.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">norms and institutions</text><rect x=\"89\" y=\"188\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(239,83,80,0.16)\" stroke=\"#EF5350\" stroke-width=\"1.2\"/><text x=\"160\" y=\"204.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">3. Mocking the royalty</text><text x=\"160\" y=\"215.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">1780s cartoons and</text><text x=\"160\" y=\"227.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">literature showed kings</text><text x=\"160\" y=\"239.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">in luxury while people</text><text x=\"160\" y=\"250.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">suffered</text><text x=\"160\" y=\"275\" font-size=\"9.5\" fill=\"#26C6DA\" text-anchor=\"middle\" font-weight=\"700\">But print only opened the possibility of thinking differently</text></svg></div><div class=\"diagram-caption\">Did print cause the French Revolution?</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 6. The Nineteenth Century</div><div class=\"sol-step\"><div class=\"rev\">The 19th century saw a vast leap in <b>mass literacy</b> in Europe, bringing in new readers — children, women and workers.</div><div class=\"sec\">Children</div><div class=\"pt\">With compulsory primary education, school textbooks became critical; a <b>children's press</b> was set up in <b>France in 1857</b>.</div><div class=\"pt\">The <b>Grimm Brothers</b> compiled folk tales from peasants (published <b>1812</b>), leaving out anything unsuitable for children or vulgar to elites.</div><div class=\"sec\">Women</div><div class=\"pt\">Penny magazines and manuals on behaviour and housekeeping were meant for women.</div><div class=\"pt\">Best-known novelists were women — <b>Jane Austen, the Brontë sisters, George Eliot</b> — who defined a new type of woman with will, strength and the power to think.</div><div class=\"sec\">Workers</div><div class=\"pt\"><b>Lending libraries</b> (from the 17th century) educated white-collar workers, artisans and the lower-middle class in 19th-century England.</div><div class=\"pt\">With shorter working days from the mid-19th century, workers wrote political tracts and autobiographies.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 327\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"327\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#26C6DA\" text-anchor=\"middle\" font-weight=\"700\">Innovations in Printing Technology</text><rect x=\"30\" y=\"30\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(38, 198, 218,0.16)\" stroke=\"#26C6DA\" stroke-width=\"1.2\"/><text x=\"160\" y=\"46.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Gutenberg's hand press (1448)</text><text x=\"160\" y=\"58.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Wooden press modelled on the olive press;</text><text x=\"160\" y=\"71.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">metal types</text><line x1=\"160\" y1=\"82\" x2=\"160\" y2=\"89\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 94 L163.5 88 L156.5 88 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"95\" width=\"260\" height=\"39\" rx=\"6\" fill=\"rgba(38, 198, 218,0.16)\" stroke=\"#26C6DA\" stroke-width=\"1.2\"/><text x=\"160\" y=\"111.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Metal press (end of 18th century)</text><text x=\"160\" y=\"123.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Presses now made of metal</text><line x1=\"160\" y1=\"135\" x2=\"160\" y2=\"142\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 147 L163.5 141 L156.5 141 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"148\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(38, 198, 218,0.16)\" stroke=\"#26C6DA\" stroke-width=\"1.2\"/><text x=\"160\" y=\"164.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Cylindrical press (mid-19th century)</text><text x=\"160\" y=\"176.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Richard M. Hoe of New York: power-driven,</text><text x=\"160\" y=\"189.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">8,000 sheets per hour — ideal for newspapers</text><line x1=\"160\" y1=\"200\" x2=\"160\" y2=\"207\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 212 L163.5 206 L156.5 206 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"213\" width=\"260\" height=\"39\" rx=\"6\" fill=\"rgba(38, 198, 218,0.16)\" stroke=\"#26C6DA\" stroke-width=\"1.2\"/><text x=\"160\" y=\"229.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Offset press (late 19th century)</text><text x=\"160\" y=\"241.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Could print up to six colours at a time</text><line x1=\"160\" y1=\"253\" x2=\"160\" y2=\"260\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 265 L163.5 259 L156.5 259 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"266\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"160\" y=\"282.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Electric presses (20th century)</text><text x=\"160\" y=\"294.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Faster printing; better paper feeding, plates,</text><text x=\"160\" y=\"307.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">automatic reels and colour controls</text></svg></div><div class=\"diagram-caption\">Faster, cheaper, more colourful printing</div></div><div class=\"sec\">New selling strategies</div><div class=\"pt\">19th-century periodicals <b>serialised</b> novels.</div><div class=\"pt\">In the 1920s England sold popular works in the cheap <b>Shilling Series</b>; the <b>dust cover</b> (book jacket) was a 20th-century innovation.</div><div class=\"pt\">During the <b>Great Depression</b> of the 1930s, publishers brought out cheap <b>paperback</b> editions.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 7. India and the World of Print</div><div class=\"sol-step\"><div class=\"sec\">Manuscripts before print</div><div class=\"pt\">India had a rich tradition of handwritten manuscripts in Sanskrit, Arabic, Persian and vernacular languages, copied on <b>palm leaves</b> or handmade paper, sometimes beautifully illustrated, pressed between wooden covers.</div><div class=\"pt\">They were expensive, fragile and hard to read (different scripts), so not widely used in everyday life. In pre-colonial Bengal's village schools, students learnt to write from teachers' dictation without reading texts.</div><div class=\"sec\">Print comes to India</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Year</th><th>Event</th></tr><tr><td>Mid-16th c.</td><td>Portuguese missionaries bring the press to <b>Goa</b>; Jesuits print tracts in Konkani</td></tr><tr><td>1579</td><td>First <b>Tamil</b> book printed by Catholic priests at <b>Cochin</b></td></tr><tr><td>1674</td><td>About 50 books printed in Konkani and Kanara languages</td></tr><tr><td>1710</td><td>Dutch Protestant missionaries had printed 32 Tamil texts</td></tr><tr><td>1713</td><td>First <b>Malayalam</b> book</td></tr><tr><td>1780</td><td><b>James Augustus Hickey</b> edits the <b>Bengal Gazette</b> — 'a commercial paper open to all, but influenced by none'</td></tr></table></div><div class=\"pt\">Hickey published advertisements (even of slave sales) and gossip about Company officials; <b>Warren Hastings</b> persecuted him and encouraged officially sanctioned newspapers.</div><div class=\"pt\">The first Indian newspaper was the weekly <b>Bengal Gazette</b> of <b>Gangadhar Bhattacharya</b>, a close associate of Rammohun Roy.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 8. Religious Reform and Public Debates</div><div class=\"sol-step\"><div class=\"rev\">From the early 19th century, debates on <b>widow immolation, monotheism, Brahmanical priesthood and idolatry</b> were carried out in print. Ideas were printed in the everyday language of ordinary people, so a wider public could take part.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Year</th><th>Publication</th></tr><tr><td>1821</td><td>Rammohun Roy's <b>Sambad Kaumudi</b>; Hindu orthodoxy replies with <b>Samachar Chandrika</b></td></tr><tr><td>1822</td><td>Persian papers <b>Jam-i-Jahan Nama</b> and <b>Shamsul Akhbar</b>; Gujarati <b>Bombay Samachar</b></td></tr><tr><td>1810</td><td>First printed edition of Tulsidas's <b>Ramcharitmanas</b> (Calcutta)</td></tr><tr><td>1867</td><td><b>Deoband Seminary</b> founded — publishes thousands of fatwas</td></tr><tr><td>1880s</td><td><b>Naval Kishore Press</b> (Lucknow) and <b>Shri Venkateshwar Press</b> (Bombay) publish religious texts in vernaculars</td></tr></table></div><div class=\"pt\">The <b>ulama</b>, fearing changes to Muslim personal laws and conversion, used cheap <b>lithographic presses</b> to publish Persian and Urdu translations of scriptures and religious newspapers.</div><div class=\"pt\">Print <b>connected communities</b> across India; newspapers carried news from one place to another, creating pan-Indian identities.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 9. New Forms of Publication</div><div class=\"sol-step\"><div class=\"pt\">The <b>novel</b>, a European form, acquired Indian forms and styles; lyrics, short stories and essays on social and political matters followed.</div><div class=\"pt\"><b>Visual culture:</b> <b>Raja Ravi Varma</b> produced images for mass circulation; cheap prints and calendars decorated homes and workplaces, shaping ideas about modernity, tradition, religion and politics.</div><div class=\"pt\">By the <b>1870s</b>, caricatures and cartoons commented on social and political issues — some mocked the Western tastes of educated Indians, others were imperial or nationalist.</div><div class=\"sec\">Women and print</div><div class=\"pt\">Liberal families educated women at home and later in schools; journals explained why women should be educated.</div><div class=\"pt\">Conservative Hindus believed a literate girl would be widowed; Muslims feared educated women would be corrupted by Urdu romances.</div><div class=\"pt\"><b>Rashsundari Debi</b> learnt to read secretly in her kitchen; her autobiography <b>Amar Jiban (1876)</b> was the first full-length autobiography in Bengali.</div><div class=\"pt\"><b>Kailashbashini Debi</b> (from the 1860s) wrote about women imprisoned at home; <b>Tarabai Shinde</b> and <b>Pandita Ramabai</b> (1880s, Maharashtra) wrote about the miserable lives of upper-caste Hindu women, especially widows.</div><div class=\"pt\">Hindi printing began seriously from the <b>1870s</b>; in Punjab, <b>Ram Chaddha</b>'s <i>Istri Dharm Vichar</i> taught women to be obedient wives; <b>Battala</b> in central Calcutta printed cheap religious and popular books, which pedlars carried to women at home.</div><div class=\"sec\">Print and the poor</div><div class=\"pt\">Very cheap small books were sold at crossroads in Madras towns; <b>public libraries</b> spread from the early 20th century.</div><div class=\"pt\"><b>Jyotiba Phule</b> wrote about caste injustice in <b>Gulamgiri (1871)</b>; <b>B.R. Ambedkar</b> and <b>E.V. Ramaswamy Naicker (Periyar)</b> wrote powerfully on caste in the 20th century.</div><div class=\"pt\"><b>Kashibaba</b>, a Kanpur millworker, wrote <b>Chhote Aur Bade Ka Sawal (1938)</b> linking caste and class exploitation; another Kanpur worker, writing as <b>Sudarshan Chakr</b>, published <b>Sacchi Kavitayan</b>.</div><div class=\"pt\">By the 1930s, <b>Bangalore</b> cotton millworkers set up libraries, following Bombay workers.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 10. Print and Censorship</div><div class=\"sol-step\"><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 440\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"440\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#26C6DA\" text-anchor=\"middle\" font-weight=\"700\">Print and Censorship in Colonial India</text><rect x=\"30\" y=\"30\" width=\"260\" height=\"63\" rx=\"6\" fill=\"rgba(38, 198, 218,0.16)\" stroke=\"#26C6DA\" stroke-width=\"1.2\"/><text x=\"160\" y=\"46.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Before 1798</text><text x=\"160\" y=\"58.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Company not much concerned; early controls</text><text x=\"160\" y=\"71.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">aimed at Englishmen criticising Company</text><text x=\"160\" y=\"83.5\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">misrule</text><line x1=\"160\" y1=\"94\" x2=\"160\" y2=\"101\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 106 L163.5 100 L156.5 100 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"107\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(38, 198, 218,0.16)\" stroke=\"#26C6DA\" stroke-width=\"1.2\"/><text x=\"160\" y=\"123.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">1820s</text><text x=\"160\" y=\"135.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Calcutta Supreme Court regulations control</text><text x=\"160\" y=\"148.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">press freedom</text><line x1=\"160\" y1=\"159\" x2=\"160\" y2=\"166\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 171 L163.5 165 L156.5 165 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"172\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"160\" y=\"188.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">1835</text><text x=\"160\" y=\"200.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Bentinck revises press laws; Macaulay's rules</text><text x=\"160\" y=\"213.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">restore earlier freedoms</text><line x1=\"160\" y1=\"224\" x2=\"160\" y2=\"231\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 236 L163.5 230 L156.5 230 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"237\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(38, 198, 218,0.16)\" stroke=\"#26C6DA\" stroke-width=\"1.2\"/><text x=\"160\" y=\"253.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">After 1857</text><text x=\"160\" y=\"265.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Englishmen demand a clampdown on the 'native'</text><text x=\"160\" y=\"278.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">press</text><line x1=\"160\" y1=\"289\" x2=\"160\" y2=\"296\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 301 L163.5 295 L156.5 295 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"302\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(239,83,80,0.16)\" stroke=\"#EF5350\" stroke-width=\"1.2\"/><text x=\"160\" y=\"318.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">1878: Vernacular Press Act</text><text x=\"160\" y=\"330.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Modelled on the Irish Press Laws: seditious</text><text x=\"160\" y=\"343.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">papers warned; presses seized if ignored</text><line x1=\"160\" y1=\"354\" x2=\"160\" y2=\"361\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 366 L163.5 360 L156.5 360 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"367\" width=\"260\" height=\"63\" rx=\"6\" fill=\"rgba(38, 198, 218,0.16)\" stroke=\"#26C6DA\" stroke-width=\"1.2\"/><text x=\"160\" y=\"383.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">1907–08</text><text x=\"160\" y=\"395.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Tilak writes in Kesari for deported Punjab</text><text x=\"160\" y=\"408.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">revolutionaries; imprisoned in 1908 → protests</text><text x=\"160\" y=\"420.6\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">all over India</text></svg></div><div class=\"diagram-caption\">From relative freedom to the Vernacular Press Act</div></div><div class=\"exam\"><span class=\"exam-t\">📌 Gandhiji (1922)</span><div>• Liberty of speech, liberty of the press and freedom of association are the three powerful vehicles of expressing and cultivating public opinion.</div><div>• The fight for Swaraj is a fight for these threatened freedoms before all else.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ Quick Glossary</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Term</th><th>Meaning</th></tr><tr><td>Calligraphy</td><td>The art of beautiful and stylised writing</td></tr><tr><td>Vellum</td><td>A parchment made from the skin of animals</td></tr><tr><td>Platen</td><td>In letterpress printing, a board pressed onto the back of the paper to get the impression of the type</td></tr><tr><td>Compositor</td><td>The person who composes the text for printing</td></tr><tr><td>Galley</td><td>Metal frame in which types are laid and the text composed</td></tr><tr><td>Ballad</td><td>A historical account or folk tale in verse, usually sung or recited</td></tr><tr><td>Protestant Reformation</td><td>16th-century movement to reform the Catholic Church, started by Martin Luther</td></tr><tr><td>Inquisition</td><td>A former Roman Catholic court for identifying and punishing heretics</td></tr><tr><td>Seditious</td><td>Action, speech or writing seen as opposing the government</td></tr><tr><td>Ulama</td><td>Legal scholars of Islam and the sharia</td></tr><tr><td>Fatwa</td><td>A legal pronouncement on Islamic law, usually by a mufti, to clarify issues</td></tr><tr><td>Chapbook</td><td>A pocket-size book sold by travelling pedlars called chapmen</td></tr></table></div></div>\n  </div>\n\n</div>",
+  "htmlExercises": {
+    "sh5-ex-intext": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(38, 198, 218, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #26C6DA; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #26C6DA; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #B2EBF2; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #B2EBF2; font-weight: 700; }\n  .hl { color: #26C6DA; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #26C6DA; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #26C6DA; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(38, 198, 218, 0.10); border: 1.5px dashed #26C6DA; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #26C6DA; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(38, 198, 218, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(38, 198, 218, 0.18); border: 1px solid #26C6DA; color: #B2EBF2; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(38, 198, 218, 0.2); color: #B2EBF2; }\n  .q-card .q-text, .q-card .sub-q { color: #26C6DA !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Imagine that you are Marco Polo. Write a letter from China to describe the world of print which you have seen there.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\"><b>China, 1290</b><br/>Dear Father,<br/>Here in China I have seen a wonder unknown in Italy. Books are not copied by hand but printed by rubbing paper against wooden blocks on which the letters are carved and inked. Since only one side of the thin paper can be printed, the pages are folded and stitched at the side like an accordion. Skilled craftsmen copy beautiful calligraphy so exactly that one can hardly tell print from handwriting. The emperor's government prints books in great numbers for the examinations of its officials, and merchants and scholars also use printed matter. I shall bring this knowledge home so that our people too may enjoy cheap books.<br/>Your son,<br/>Marco</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Project: Find out more about the changes in print technology in the last 100 years. Write about the changes, why they have taken place, and their consequences.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sec\">Changes</div><div class=\"pt\">Electrically operated presses replaced manual ones; offset printing became common for colour work.</div><div class=\"pt\">Phototypesetting and then computer-based desktop publishing (DTP) replaced metal type and hand composition.</div><div class=\"pt\">Digital printing, laser and inkjet printers and print-on-demand appeared; today e-books and online publishing exist alongside print.</div><div class=\"sec\">Why</div><div class=\"pt\">Demand for faster, cheaper and better-quality printing, especially for newspapers and mass education; advances in electricity, electronics and computers.</div><div class=\"sec\">Consequences</div><div class=\"pt\">Books, newspapers and magazines became cheaper and more widely available; colour printing became common.</div><div class=\"pt\">Fewer workers are needed for typesetting; publishing has become easier for individuals and small groups, widening the spread of ideas.</div></div></div>\n  </div>\n\n</div>",
+    "sh5-ex-write": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(38, 198, 218, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #26C6DA; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #26C6DA; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #B2EBF2; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #B2EBF2; font-weight: 700; }\n  .hl { color: #26C6DA; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #26C6DA; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #26C6DA; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(38, 198, 218, 0.10); border: 1.5px dashed #26C6DA; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #26C6DA; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(38, 198, 218, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(38, 198, 218, 0.18); border: 1px solid #26C6DA; color: #B2EBF2; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(38, 198, 218, 0.2); color: #B2EBF2; }\n  .q-card .q-text, .q-card .sub-q { color: #26C6DA !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Give reasons for the following:<br/>(a) Woodblock print only came to Europe after 1295.<br/>(b) Martin Luther was in favour of print and spoke out in praise of it.<br/>(c) The Roman Catholic Church began keeping an Index of Prohibited books from the mid-sixteenth century.<br/>(d) Gandhi said the fight for Swaraj is a fight for liberty of speech, liberty of the press, and freedom of association.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">(a)</div><div class=\"pt\">Woodblock printing was developed in China.</div><div class=\"pt\">In 1295, Marco Polo returned to Italy after many years in China and brought this knowledge with him; from Italy it spread across Europe.</div><div class=\"sub-q\">(b)</div><div class=\"pt\">His Ninety-Five Theses (1517) criticising the Catholic Church were printed and read widely, starting the Protestant Reformation.</div><div class=\"pt\">His translation of the New Testament sold 5,000 copies in a few weeks; so he called print “the ultimate gift of God and the greatest one”.</div><div class=\"sub-q\">(c)</div><div class=\"pt\">Cheap printed books let ordinary people read and reinterpret religious texts in their own way (e.g. the miller Menocchio).</div><div class=\"pt\">Troubled by such questioning of faith, the Church controlled publishers and booksellers and began the Index of Prohibited Books in 1558.</div><div class=\"sub-q\">(d)</div><div class=\"pt\">Gandhiji saw speech, the press and association as the three powerful vehicles of expressing and cultivating public opinion.</div><div class=\"pt\">The colonial government was trying to crush them (e.g. censorship), so the fight for Swaraj had to be a fight for these freedoms first.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Write short notes to show what you know about:<br/>(a) The Gutenberg Press<br/>(b) Erasmus's idea of the printed book<br/>(c) The Vernacular Press Act</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">(a) The Gutenberg Press</div><div class=\"pt\">Developed by Johann Gutenberg at Strasbourg, Germany, in the 1430s; perfected by 1448.</div><div class=\"pt\">The olive press was the model for the press; lead moulds were used to cast metal types for letters.</div><div class=\"pt\">The first book printed was the Bible — about 180 copies in three years. It began the print revolution.</div><div class=\"sub-q\">(b) Erasmus's idea of the printed book</div><div class=\"pt\">Erasmus, a Latin scholar and Catholic reformer, was deeply anxious about printing.</div><div class=\"pt\">He felt printers filled the world with stupid, slanderous, scandalous, irreligious and seditious books, so that even valuable publications lost their value.</div><div class=\"sub-q\">(c) The Vernacular Press Act</div><div class=\"pt\">Passed in 1878, modelled on the Irish Press Laws, after vernacular papers became assertively nationalist.</div><div class=\"pt\">It gave the government extensive rights to censor reports and editorials in the vernacular press.</div><div class=\"pt\">A paper judged seditious was warned; if the warning was ignored, the press could be seized and machinery confiscated.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">What did the spread of print culture in nineteenth century India mean to:<br/>(a) Women<br/>(b) The poor<br/>(c) Reformers</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">(a) Women</div><div class=\"pt\">Women's reading increased in middle-class homes; journals explained why women should be educated.</div><div class=\"pt\">Women began to write about their lives — Rashsundari Debi (Amar Jiban), Kailashbashini Debi, Tarabai Shinde, Pandita Ramabai.</div><div class=\"sub-q\">(b) The poor</div><div class=\"pt\">Very cheap small books sold at crossroads and public libraries gave them access to reading.</div><div class=\"pt\">Writers like Phule (Gulamgiri), Ambedkar and Periyar wrote against caste; millworkers like Kashibaba wrote about caste and class exploitation.</div><div class=\"sub-q\">(c) Reformers</div><div class=\"pt\">Reformers used printed tracts and newspapers in everyday language to campaign against social evils such as widow immolation and idolatry.</div><div class=\"pt\">Print let a wider public join these debates (e.g. Rammohun Roy's Sambad Kaumudi).</div></div></div>\n  </div>\n\n</div>",
+    "sh5-ex-discuss": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(38, 198, 218, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #26C6DA; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #26C6DA; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #B2EBF2; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #B2EBF2; font-weight: 700; }\n  .hl { color: #26C6DA; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #26C6DA; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #26C6DA; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(38, 198, 218, 0.10); border: 1.5px dashed #26C6DA; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #26C6DA; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(38, 198, 218, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(38, 198, 218, 0.18); border: 1px solid #26C6DA; color: #B2EBF2; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(38, 198, 218, 0.2); color: #B2EBF2; }\n  .q-card .q-text, .q-card .sub-q { color: #26C6DA !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Why did some people in eighteenth century Europe think that print culture would bring enlightenment and end despotism?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Books were seen as a means of spreading progress and enlightenment; ideas of scientists and philosophers became accessible to common people.</div><div class=\"pt\">Writings of Voltaire, Rousseau and Thomas Paine attacked tradition, superstition and despotism and argued for the rule of reason.</div><div class=\"pt\">Print created a culture of dialogue and debate in which all values and institutions were questioned.</div><div class=\"pt\">Louis-Sébastien Mercier declared the printing press “the most powerful engine of progress” and public opinion “the force that will sweep despotism away”.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Why did some people fear the effect of easily available printed books? Choose one example from Europe and one from India.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">They feared that without control, rebellious and irreligious thoughts would spread and the authority of “valuable” literature would be destroyed.</div><div class=\"pt\"><span class=\"lbl\">Europe:</span> the Roman Catholic Church, troubled by readers like Menocchio questioning the faith, began the Index of Prohibited Books in 1558; Erasmus too criticised the flood of books.</div><div class=\"pt\"><span class=\"lbl\">India:</span> the colonial government feared nationalist criticism and passed the Vernacular Press Act (1878); conservative Hindus and Muslims also feared that reading would corrupt women.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Discuss the different initiatives taken by Dogra Maharaja Ranbir Singh for reviving print culture in Jammu and Kashmir region.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">He set up printing presses in the State, such as the <b>Vidya Vilas Press</b> at Jammu, for official and educational printing.</div><div class=\"pt\">He established a translation department that translated works from Sanskrit, Persian, Arabic and English into Hindi, Urdu and Dogri.</div><div class=\"pt\">He patronised scholars and the printing of books, including texts for schools.</div><div class=\"pt\">He promoted the <b>Dogra Akkhar</b> script for official use and printing.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">Explain how print culture assisted the growth of nationalism in India.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Newspapers conveyed news from one place to another, connecting people across India and creating pan-Indian identities.</div><div class=\"pt\">Vernacular newspapers reported colonial misrule and encouraged nationalist activities.</div><div class=\"pt\">Leaders like Tilak (Kesari) used the press to mobilise people; his imprisonment in 1908 provoked protests all over India.</div><div class=\"pt\">Attempts at censorship (Vernacular Press Act, 1878) led to militant protest and more nationalist writing.</div><div class=\"pt\">Printed images, cartoons and literature criticised imperial rule and built national pride.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5.</div>\n    <div class=\"q-text\">What were the effects of the spread of print culture for poor people in nineteenth century India?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Very cheap small books sold at crossroads in Madras towns could be bought by the poor.</div><div class=\"pt\">Public libraries (from the early 20th century) widened access to books.</div><div class=\"pt\">Writers on caste — Phule (Gulamgiri, 1871), Ambedkar, Periyar — gave voice to the oppressed.</div><div class=\"pt\">Workers like Kashibaba (Chhote Aur Bade Ka Sawal, 1938) and Sudarshan Chakr wrote about exploitation; Bangalore millworkers set up libraries.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q6.</div>\n    <div class=\"q-text\">How did the liberal policies of Maharaja Hari Singh lead to the development of press in Jammu and Kashmir?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Before this, publishing newspapers in the State was very restricted.</div><div class=\"pt\">Following the recommendations of the <b>Glancy Commission</b> (1931–32), the government allowed greater freedom to publish; a press law was framed in 1932.</div><div class=\"pt\">Several newspapers began to be published from Srinagar and Jammu (for example <i>Hamdard</i> and <i>Martand</i>), adding to the earlier weekly <i>Ranbir</i>.</div><div class=\"pt\">The press spread political awareness, discussed public grievances and reforms, and helped the growth of public opinion in the State.</div></div></div>\n  </div>\n\n</div>",
+    "sh5-ex-board": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(38, 198, 218, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #26C6DA; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #26C6DA; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #B2EBF2; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #B2EBF2; font-weight: 700; }\n  .hl { color: #26C6DA; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #26C6DA; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #26C6DA; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(38, 198, 218, 0.10); border: 1.5px dashed #26C6DA; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #26C6DA; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(38, 198, 218, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(38, 198, 218, 0.18); border: 1px solid #26C6DA; color: #B2EBF2; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(38, 198, 218, 0.2); color: #B2EBF2; }\n  .q-card .q-text, .q-card .sub-q { color: #26C6DA !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\"><div class=\"q-title\">✦ Section A: Very Short Answer (1 Mark)</div></div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Which was the oldest Japanese printed book?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">The Buddhist <b>Diamond Sutra</b> (AD 868).</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Who brought woodblock printing to Italy?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Marco Polo</b>, in 1295.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">What was the first book printed by Gutenberg?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">The <b>Bible</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">What is vellum?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">A parchment made from the skin of animals.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">What were the Ninety-Five Theses?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Martin Luther's criticisms (1517) of the practices and rituals of the Roman Catholic Church.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q6. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">What were chapbooks?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Pocket-size books sold for a penny by travelling pedlars called chapmen in England.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q7. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Who perfected the power-driven cylindrical press?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Richard M. Hoe</b> of New York.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q8. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Where did the printing press first come to India?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">To <b>Goa</b>, with Portuguese missionaries.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q9. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Who wrote Gulamgiri?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Jyotiba Phule</b> (1871).</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q10. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">When was the Vernacular Press Act passed?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">In <b>1878</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\"><div class=\"q-title\">✦ Section B: Short Answer (3 Marks)</div></div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q11. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">How did print culture blur the line between oral and reading cultures?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Literacy was low, so printers published popular ballads and folk tales with many pictures.</div><div class=\"pt\">These were sung and recited at village gatherings and in taverns.</div><div class=\"pt\">Oral culture entered print, and printed material was transmitted orally; the hearing and reading publics mingled.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q12. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">Describe the features of print culture in China.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">From AD 594 books were printed by rubbing paper on inked woodblocks; accordion books were folded and stitched at the side.</div><div class=\"pt\">The imperial state was the biggest producer, printing textbooks for civil service examinations.</div><div class=\"pt\">In the 17th century, merchants, rich women and scholars' wives read and published; Shanghai became the hub of mechanical printing in the late 19th century.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q13. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">How did the 19th century bring new readers among children, women and workers in Europe?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Children:</b> compulsory primary education; children's press in France (1857); Grimm Brothers' folk tales.</div><div class=\"pt\"><b>Women:</b> penny magazines, manuals and novels; women novelists like Jane Austen and the Brontë sisters.</div><div class=\"pt\"><b>Workers:</b> lending libraries; with shorter working days, workers wrote political tracts and autobiographies.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q14. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">How did Indian women use print to express themselves?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Rashsundari Debi learnt to read in secret and wrote Amar Jiban (1876), the first full-length autobiography in Bengali.</div><div class=\"pt\">Kailashbashini Debi wrote about women kept in ignorance and forced into hard domestic labour.</div><div class=\"pt\">Tarabai Shinde and Pandita Ramabai wrote with anger about the miserable lives of upper-caste Hindu women, especially widows.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q15. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">How did the ulama use print in the 19th century?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">They feared colonial rulers would encourage conversion and change Muslim personal laws.</div><div class=\"pt\">They used cheap lithographic presses to publish Persian and Urdu translations of scriptures and religious newspapers and tracts.</div><div class=\"pt\">The Deoband Seminary (1867) published thousands of fatwas guiding Muslims in everyday life.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q16. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">What new strategies did publishers adopt to sell books in the 19th and 20th centuries?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Periodicals serialised important novels.</div><div class=\"pt\">Cheap Shilling Series in 1920s England; dust covers (book jackets) introduced.</div><div class=\"pt\">Cheap paperback editions during the Great Depression of the 1930s.</div></div></div>\n  </div>\n\n  <div class=\"q-card\"><div class=\"q-title\">✦ Section C: Long Answer (5 Marks)</div></div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q17. <span class=\"badge\">5 Marks</span></div>\n    <div class=\"q-text\">Explain the impact of the print revolution in Europe.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>New reading public:</b> cheaper books reached wider sections; a reading public emerged alongside the hearing public.</div><div class=\"pt\"><b>Spread of ideas and debate:</b> even dissenters could print and circulate ideas.</div><div class=\"pt\"><b>Religious reform:</b> Luther's Ninety-Five Theses spread widely, leading to the Protestant Reformation.</div><div class=\"pt\"><b>Fear and control:</b> the Church punished Menocchio and began the Index of Prohibited Books (1558).</div><div class=\"pt\"><b>Enlightenment:</b> writings of Voltaire and Rousseau spread ideas of reason, contributing to the French Revolution.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q18. <span class=\"badge\">5 Marks</span></div>\n    <div class=\"q-text\">“Print culture created the conditions within which the French Revolution occurred.” Explain.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Print popularised Enlightenment ideas that criticised tradition, superstition and despotism and demanded the rule of reason.</div><div class=\"pt\">Voltaire and Rousseau attacked the sacred authority of the Church and the despotic power of the state.</div><div class=\"pt\">Print created a culture of dialogue and debate in which all values and institutions were questioned.</div><div class=\"pt\">In the 1780s, literature and cartoons mocked the royalty, showing them enjoying luxuries while people suffered.</div><div class=\"pt\">However, print did not directly shape minds — people read selectively — but it opened the possibility of thinking differently.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q19. <span class=\"badge\">5 Marks</span></div>\n    <div class=\"q-text\">Describe the measures taken by the colonial government to control the press in India.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Early controls were aimed at Englishmen who criticised Company misrule.</div><div class=\"pt\">In the 1820s the Calcutta Supreme Court passed regulations to control press freedom; the Company encouraged papers that praised British rule.</div><div class=\"pt\">After 1857, Englishmen demanded a clampdown on the native press.</div><div class=\"pt\">The Vernacular Press Act (1878) allowed censorship of vernacular papers and seizure of presses.</div><div class=\"pt\">Tilak was imprisoned in 1908 for his writings in Kesari, provoking protests all over India.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q20. <span class=\"badge\">5 Marks</span></div>\n    <div class=\"q-text\">How did print help religious reform and public debate in 19th-century India?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Debates on widow immolation, monotheism, Brahmanical priesthood and idolatry were carried out in print in everyday language.</div><div class=\"pt\">Rammohun Roy's Sambad Kaumudi (1821) was answered by the orthodox Samachar Chandrika.</div><div class=\"pt\">The ulama printed Urdu and Persian scriptures and Deoband issued thousands of fatwas.</div><div class=\"pt\">Cheap editions of Ramcharitmanas and other texts (Naval Kishore Press, Venkateshwar Press) could be read anywhere or read aloud to the illiterate.</div><div class=\"pt\">Print connected communities and created pan-Indian identities.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q21. <span class=\"badge\">4 Marks</span></div>\n    <div class=\"q-text\"><b>Source-based:</b> Read the source and answer the questions.<br/><i>“In 1517, the religious reformer Martin Luther wrote Ninety Five Theses criticising many of the practices and rituals of the Roman Catholic Church. A printed copy of this was posted on a church door in Wittenberg. Luther's writings were immediately reproduced in vast numbers and read widely. Deeply grateful to print, Luther said, ‘Printing is the ultimate gift of God and the greatest one’.”</i><br/>(i) What did the Ninety Five Theses criticise? (1)<br/>(ii) Where was a printed copy posted? (1)<br/>(iii) How did print help Luther's movement? (2)</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">(i)</div><div class=\"pt\">Many practices and rituals of the Roman Catholic Church.</div><div class=\"sub-q\">(ii)</div><div class=\"pt\">On a church door in <b>Wittenberg</b>.</div><div class=\"sub-q\">(iii)</div><div class=\"pt\">His writings were reproduced in vast numbers and read widely; his New Testament sold 5,000 copies in a few weeks.</div><div class=\"pt\">This led to a division within the Church and the beginning of the Protestant Reformation.</div></div></div>\n  </div>\n\n</div>"
   },
+  "introduction": "Can you imagine a world without books, newspapers, or magazines? In ancient China, Japan, and Korea, the first books were printed by rubbing paper against inked woodblocks! Let's discover how the printing press revolutionized human thought, spread knowledge, and even caused rebellions.",
+  "definitions": [],
+  "keyPoints": [],
+  "formulas": [],
+  "crux": [],
+  "mcqs": [
+    {
+      "id": "sh5-mcq-1",
+      "question": "<div style='text-align: justify;'>The earliest kind of print technology was developed in:</div>",
+      "options": [
+        "A):   Germany",
+        "B):   India",
+        "C):   China, Japan and Korea",
+        "D):   Italy"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>It was a system of hand printing with woodblocks.</div>"
+    },
+    {
+      "id": "sh5-mcq-2",
+      "question": "<div style='text-align: justify;'>The oldest Japanese printed book is the:</div>",
+      "options": [
+        "A):   Diamond Sutra",
+        "B):   Bible",
+        "C):   Ramcharitmanas",
+        "D):   Analects"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>It was printed in AD 868.</div>"
+    },
+    {
+      "id": "sh5-mcq-3",
+      "question": "<div style='text-align: justify;'>Kitagawa Utamaro is known for:</div>",
+      "options": [
+        "A):   Movable type",
+        "B):   The cylindrical press",
+        "C):   Calligraphy",
+        "D):   Ukiyo, pictures of the floating world"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>He depicted ordinary urban life in Edo.</div>"
+    },
+    {
+      "id": "sh5-mcq-4",
+      "question": "<div style='text-align: justify;'>Who brought woodblock printing to Europe in 1295?</div>",
+      "options": [
+        "A):   Vasco da Gama",
+        "B):   Marco Polo",
+        "C):   Columbus",
+        "D):   Gutenberg"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>He returned to Italy after many years in China.</div>"
+    },
+    {
+      "id": "sh5-mcq-5",
+      "question": "<div style='text-align: justify;'>Gutenberg's printing press was modelled on the:</div>",
+      "options": [
+        "A):   Olive press",
+        "B):   Wine press",
+        "C):   Sugar press",
+        "D):   Cotton gin"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Lead moulds were used to cast metal types.</div>"
+    },
+    {
+      "id": "sh5-mcq-6",
+      "question": "<div style='text-align: justify;'>Gutenberg printed about how many copies of the Bible in three years?</div>",
+      "options": [
+        "A):   50",
+        "B):   500",
+        "C):   180",
+        "D):   5,000"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>That was fast production for the time.</div>"
+    },
+    {
+      "id": "sh5-mcq-7",
+      "question": "<div style='text-align: justify;'>Between 1450 and 1550, printing presses were set up in:</div>",
+      "options": [
+        "A):   Only Germany",
+        "B):   Most countries of Europe",
+        "C):   Only England",
+        "D):   Asia"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>German printers travelled to start new presses.</div>"
+    },
+    {
+      "id": "sh5-mcq-8",
+      "question": "<div style='text-align: justify;'>Who called printing 'the ultimate gift of God and the greatest one'?</div>",
+      "options": [
+        "A):   Erasmus",
+        "B):   Voltaire",
+        "C):   Mercier",
+        "D):   Martin Luther"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Print spread his Ninety-Five Theses.</div>"
+    },
+    {
+      "id": "sh5-mcq-9",
+      "question": "<div style='text-align: justify;'>Menocchio was:</div>",
+      "options": [
+        "A):   A printer",
+        "B):   A bookseller",
+        "C):   A Pope",
+        "D):   An Italian miller executed for heresy"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>He reinterpreted the Bible from books he read.</div>"
+    },
+    {
+      "id": "sh5-mcq-10",
+      "question": "<div style='text-align: justify;'>The Roman Church began the Index of Prohibited Books in:</div>",
+      "options": [
+        "A):   1517",
+        "B):   1558",
+        "C):   1600",
+        "D):   1789"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>It controlled publishers and booksellers.</div>"
+    },
+    {
+      "id": "sh5-mcq-11",
+      "question": "<div style='text-align: justify;'>Low-priced books in France bound in cheap blue covers were called:</div>",
+      "options": [
+        "A):   Chapbooks",
+        "B):   Penny magazines",
+        "C):   Bibliothèque Bleue",
+        "D):   Almanacs"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Chapbooks were their English equivalent.</div>"
+    },
+    {
+      "id": "sh5-mcq-12",
+      "question": "<div style='text-align: justify;'>'Tremble, therefore, tyrants of the world!' was said by:</div>",
+      "options": [
+        "A):   Louis-Sébastien Mercier",
+        "B):   Rousseau",
+        "C):   Voltaire",
+        "D):   Thomas Paine"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>He believed print would sweep despotism away.</div>"
+    },
+    {
+      "id": "sh5-mcq-13",
+      "question": "<div style='text-align: justify;'>A children's press was set up in France in:</div>",
+      "options": [
+        "A):   1812",
+        "B):   1905",
+        "C):   1878",
+        "D):   1857"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>It published new works and old fairy tales.</div>"
+    },
+    {
+      "id": "sh5-mcq-14",
+      "question": "<div style='text-align: justify;'>Richard M. Hoe's cylindrical press could print:</div>",
+      "options": [
+        "A):   8,000 sheets per hour",
+        "B):   800 sheets per hour",
+        "C):   80 sheets per hour",
+        "D):   80,000 sheets per hour"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>It was very useful for newspapers.</div>"
+    },
+    {
+      "id": "sh5-mcq-15",
+      "question": "<div style='text-align: justify;'>The offset press developed in the late 19th century could print up to:</div>",
+      "options": [
+        "A):   Two colours",
+        "B):   Four colours",
+        "C):   Six colours",
+        "D):   Ten colours"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Electric presses later sped up printing.</div>"
+    },
+    {
+      "id": "sh5-mcq-16",
+      "question": "<div style='text-align: justify;'>The first Tamil book was printed in 1579 at:</div>",
+      "options": [
+        "A):   Goa",
+        "B):   Cochin",
+        "C):   Madras",
+        "D):   Calcutta"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>It was printed by Catholic priests.</div>"
+    },
+    {
+      "id": "sh5-mcq-17",
+      "question": "<div style='text-align: justify;'>The Bengal Gazette edited by James Augustus Hickey began in:</div>",
+      "options": [
+        "A):   1821",
+        "B):   1780",
+        "C):   1857",
+        "D):   1878"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>It called itself 'open to all, but influenced by none'.</div>"
+    },
+    {
+      "id": "sh5-mcq-18",
+      "question": "<div style='text-align: justify;'>Rammohun Roy published:</div>",
+      "options": [
+        "A):   Kesari",
+        "B):   Bombay Samachar",
+        "C):   Samachar Chandrika",
+        "D):   Sambad Kaumudi"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Samachar Chandrika was the orthodox reply.</div>"
+    },
+    {
+      "id": "sh5-mcq-19",
+      "question": "<div style='text-align: justify;'>The Deoband Seminary, founded in 1867, published:</div>",
+      "options": [
+        "A):   Novels",
+        "B):   Newspapers in English",
+        "C):   Thousands of fatwas",
+        "D):   Calendars"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Fatwas guided Muslims in everyday life.</div>"
+    },
+    {
+      "id": "sh5-mcq-20",
+      "question": "<div style='text-align: justify;'>Amar Jiban, the first full-length autobiography in Bengali, was written by:</div>",
+      "options": [
+        "A):   Rashsundari Debi",
+        "B):   Tarabai Shinde",
+        "C):   Pandita Ramabai",
+        "D):   Kailashbashini Debi"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>It was published in 1876.</div>"
+    },
+    {
+      "id": "sh5-mcq-21",
+      "question": "<div style='text-align: justify;'>Chhote Aur Bade Ka Sawal was written by:</div>",
+      "options": [
+        "A):   Jyotiba Phule",
+        "B):   Periyar",
+        "C):   Kashibaba",
+        "D):   Sudarshan Chakr"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>This Kanpur millworker linked caste and class exploitation.</div>"
+    },
+    {
+      "id": "sh5-mcq-22",
+      "question": "<div style='text-align: justify;'>Arrange in chronological order: (i) Vernacular Press Act (ii) Ninety-Five Theses (iii) Marco Polo returns to Italy (iv) Index of Prohibited Books</div>",
+      "options": [
+        "A):   (iii), (ii), (iv), (i)",
+        "B):   (ii), (iii), (iv), (i)",
+        "C):   (iii), (iv), (ii), (i)",
+        "D):   (iii), (ii), (i), (iv)"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>1295 → 1517 → 1558 → 1878.</div>"
+    },
+    {
+      "id": "sh5-mcq-23",
+      "question": "<div style='text-align: justify;'>Match: (P) Tilak (Q) Phule (R) Raja Ravi Varma (S) Hickey — with (1) Bengal Gazette (2) Kesari (3) Gulamgiri (4) Images for mass circulation</div>",
+      "options": [
+        "A):   P-1, Q-3, R-4, S-2",
+        "B):   P-3, Q-2, R-1, S-4",
+        "C):   P-2, Q-4, R-3, S-1",
+        "D):   P-2, Q-3, R-4, S-1"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Each person matches their publication or work.</div>"
+    },
+    {
+      "id": "sh5-mcq-24",
+      "question": "<div style='text-align: justify;'>Assertion (A): The colonial government passed the Vernacular Press Act in 1878. Reason (R): Vernacular newspapers had become assertively nationalist.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>The Act was aimed at controlling nationalist criticism.</div>"
+    },
+    {
+      "id": "sh5-mcq-25",
+      "question": "<div style='text-align: justify;'>Assertion (A): Erasmus welcomed the flood of new printed books. Reason (R): Erasmus was a Latin scholar and Catholic reformer.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Erasmus was deeply anxious about printing, so A is false.</div>"
+    }
+  ],
+  "summary": [],
+  "exercises": [
+    {
+      "id": "sh5-ex-intext",
+      "name": "In-Text",
+      "questions": []
+    },
+    {
+      "id": "sh5-ex-write",
+      "name": "Write in Brief",
+      "questions": []
+    },
+    {
+      "id": "sh5-ex-discuss",
+      "name": "Discuss",
+      "questions": []
+    },
+    {
+      "id": "sh5-ex-board",
+      "name": "Board Qs",
+      "questions": []
+    }
+  ],
+  "examples": []
 };
