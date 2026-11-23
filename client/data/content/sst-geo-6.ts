@@ -1,341 +1,334 @@
 import { ChapterContent } from "../types";
 
-const themeColor = "#00B4DB"; // Cyan color for Geography Chapter 6
-
 export const sstGeo6: ChapterContent = {
-  id: "sst-geo-6",
-  number: 6,
-  title: "Manufacturing Industries",
-  introduction:
-    "Production of goods in large quantities after processing from raw materials to more valuable products is called manufacturing. Whether it's paper made from wood or iron from iron ore, manufacturing sectors form the backbone of a developing economy. Let's study how industrial development is crucial for our nation and how we classify these industries.",
-  definitions: [
-    {
-      term: "Manufacturing",
-      description:
-        "The process of converting raw materials into more valuable goods in large quantities, e.g., paper from wood, sugar from sugarcane.",
-    },
-    {
-      term: "Basic Industries",
-      description:
-        "Industries which supply their products or raw materials to manufacture other goods, e.g., iron and steel, copper smelting.",
-    },
-    {
-      term: "Consumer Industries",
-      description:
-        "Industries that produce goods for direct use by consumers, e.g., sugar, toothpaste, paper, sewing machines.",
-    },
-    {
-      term: "Light Industries",
-      description:
-        "Industries that use light raw materials and produce light utility goods, e.g., electrical goods.",
-    },
-    {
-      term: "Heavy Industries",
-      description:
-        "Industries that use bulky and heavy raw materials and produce heavy goods, e.g., iron and steel, cement.",
-    },
-    {
-      term: "Agro-Based Industries",
-      description:
-        "Industries that obtain their raw materials from agriculture, e.g., cotton, jute, silk, woollen textiles, sugar, edible oil.",
-    },
-    {
-      term: "Mineral-Based Industries",
-      description:
-        "Industries that use minerals and metals as raw materials, e.g., iron and steel, cement, aluminium, machine tools.",
-    },
-    {
-      term: "Joint Sector Industries",
-      description:
-        "Industries jointly run by the state and individuals or a group of individuals, e.g., Oil India Ltd (OIL).",
-    },
-  ],
-  keyPoints: [
-    "Manufacturing is considered the backbone of economic development, as it modernizes agriculture and reduces people's dependence on land by providing service/industrial jobs.",
-    "Industrial location is determined by physical factors (raw material, power, water) and human factors (labor, capital, market, government policies).",
-    "Agro-based industries like Jute are concentrated in West Bengal along the Hugli river due to water availability, cheap transport, and dense population.",
-    "The iron and steel industry is a basic and heavy industry, heavily concentrated in the Chhotanagpur plateau region due to local availability of high-grade iron ore and cheap labor.",
-    "Aluminium smelting is the second most important metallurgical industry in India, requiring regular power supply and bauxite as a key raw material.",
-    "Industrial pollution degrades air (smoke, SO2, CO), water (chemical effluents), soil (solid waste), and generates high noise and thermal pollution.",
-    "Mitigating environmental degradation requires treating industrial effluents at primary, secondary, and tertiary stages, rain-water harvesting, and fitting smokestacks with particulate filters.",
-  ],
-  formulas: [],
-  crux: [
-    "Manufacturing modernizes agriculture and creates service/industrial jobs.",
-    "Industrial location depends on raw materials, power, labor, capital, and market.",
-    "Basic industries supply raw materials to other industries (e.g. Iron & Steel).",
-    "Jute is focused in Hugli basin; Iron & Steel in Chhotanagpur plateau.",
-    "Limestone is the core raw material for Cement; Bauxite for Aluminium smelting.",
-    "Minimizing pollution requires treating effluents, recycling water, and using particulate filters in smokestacks.",
-  ],
-  summary: [
-    "Manufacturing industries process raw materials into high-value products, driving economic growth, reducing agrarian dependence, and earning foreign exchange through exports.",
-    "Industries are classified based on raw materials (agro vs mineral), role (basic vs consumer), capital investment (large vs small scale), and ownership (public, private, joint, cooperative).",
-    "Rapid industrialization has caused severe air, water, land, and noise pollution. Sustainable development requires adopting eco-friendly technologies, treating industrial wastes, and conserving water through recycling.",
-  ],
-  isHtmlView: true,
-  htmlOverview: `
-        <div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">
-            <p style="line-height: 1.6; font-size: 17px;">Production of goods in large quantities after processing from raw materials to more valuable products is called manufacturing. Whether it's paper made from wood or iron from iron ore, manufacturing sectors form the backbone of a developing economy. Let's study how industrial development is crucial for our nation and how we classify these industries.</p>
-            
-            <h3 style="color: ${themeColor}; text-align: left; margin-top: 20px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px;">Key Definitions</h3>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Manufacturing:</b> The process of converting raw materials into more valuable goods in large quantities, e.g., paper from wood, sugar from sugarcane.</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Basic Industries:</b> Industries which supply their products or raw materials to manufacture other goods, e.g., iron and steel, copper smelting.</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Consumer Industries:</b> Industries that produce goods for direct use by consumers, e.g., sugar, toothpaste, paper, sewing machines.</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Light Industries:</b> Industries that use light raw materials and produce light utility goods, e.g., electrical goods.</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Heavy Industries:</b> Industries that use bulky and heavy raw materials and produce heavy goods, e.g., iron and steel, cement.</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Agro-Based Industries:</b> Industries that obtain their raw materials from agriculture, e.g., cotton, jute, silk, woollen textiles, sugar, edible oil.</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Mineral-Based Industries:</b> Industries that use minerals and metals as raw materials, e.g., iron and steel, cement, aluminium, machine tools.</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Joint Sector Industries:</b> Industries jointly run by the state and individuals or a group of individuals, e.g., Oil India Ltd (OIL).</p>
-
-            <h3 style="color: ${themeColor}; text-align: left; margin-top: 25px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px;">Important Points</h3>
-            <ul style="text-align: left; padding-left: 20px; line-height: 1.6; font-size: 16px;">
-                <li style="margin-bottom: 8px;">Manufacturing is considered the backbone of economic development, as it modernizes agriculture and reduces people's dependence on land by providing service/industrial jobs.</li>
-                <li style="margin-bottom: 8px;">Industrial location is determined by physical factors (raw material, power, water) and human factors (labor, capital, market, government policies).</li>
-                <li style="margin-bottom: 8px;">Agro-based industries like Jute are concentrated in West Bengal along the Hugli river due to water availability, cheap transport, and dense population.</li>
-                <li style="margin-bottom: 8px;">The iron and steel industry is a basic and heavy industry, heavily concentrated in the Chhotanagpur plateau region due to local availability of high-grade iron ore and cheap labor.</li>
-                <li style="margin-bottom: 8px;">Aluminium smelting is the second most important metallurgical industry in India, requiring regular power supply and bauxite as a key raw material.</li>
-                <li style="margin-bottom: 8px;">Industrial pollution degrades air (smoke, SO2, CO), water (chemical effluents), soil (solid waste), and generates high noise and thermal pollution.</li>
-                <li style="margin-bottom: 8px;">Mitigating environmental degradation requires treating industrial effluents at primary, secondary, and tertiary stages, rain-water harvesting, and fitting smokestacks with particulate filters.</li>
-            </ul>
-
-            <h3 style="color: ${themeColor}; text-align: left; margin-top: 25px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px;">Summary</h3>
-            <p style="line-height: 1.6; font-size: 16px;">Manufacturing industries process raw materials into high-value products, driving economic growth, reducing agrarian dependence, and earning foreign exchange through exports. Industries are classified based on raw materials (agro vs mineral), role (basic vs consumer), capital investment (large vs small scale), and ownership (public, private, joint, cooperative). Rapid industrialization has caused severe air, water, land, and noise pollution. Sustainable development requires adopting eco-friendly technologies, treating industrial wastes, and conserving water through recycling.</p>
-        </div>
-    `,
-  htmlExercises: {
-    "sg6-ex-all": `
-            <div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">
-                <!-- 1. Multiple Choice Questions -->
-                <div style="margin-bottom: 25px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 12px; font-size: 18px;">1. Multiple choice questions.</p>
-                    
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: #fff; font-weight: bold; font-size: 15px;">(i) Which one of the following industries uses limestone as a raw material.</p>
-                        <p style="color: #E0E0E0; font-size: 15px; margin: 4px 0 0 10px;">
-                            (a) Aluminium &nbsp;&nbsp; <b style="color: ${themeColor};">(b) Cement</b> &nbsp;&nbsp; (c) Plastic &nbsp;&nbsp; (d) Automobile
-                        </p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: #fff; font-weight: bold; font-size: 15px;">(ii) Which one of the following agencies markets steel for the public sector plants?</p>
-                        <p style="color: #E0E0E0; font-size: 15px; margin: 4px 0 0 10px;">
-                            (a) HAIL &nbsp;&nbsp; <b style="color: ${themeColor};">(b) SAIL</b> &nbsp;&nbsp; (c) TATA Steel &nbsp;&nbsp; (d) MNCC
-                        </p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: #fff; font-weight: bold; font-size: 15px;">(iii) Which one of the following industries uses bauxite as a raw material?</p>
-                        <p style="color: #E0E0E0; font-size: 15px; margin: 4px 0 0 10px;">
-                            <b style="color: ${themeColor};">(a) Aluminium Smelting</b> &nbsp;&nbsp; (b) Cement &nbsp;&nbsp; (c) Paper &nbsp;&nbsp; (d) Steel
-                        </p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: #fff; font-weight: bold; font-size: 15px;">(iv) Which one of the following industries manufactures telephones, computer, etc.</p>
-                        <p style="color: #E0E0E0; font-size: 15px; margin: 4px 0 0 10px;">
-                            (a) Steel &nbsp;&nbsp; <b style="color: ${themeColor};">(b) Electronic</b> &nbsp;&nbsp; (c) Aluminium Smelting &nbsp;&nbsp; (d) Information Technology
-                        </p>
-                    </div>
-                </div>
-
-                <!-- 2. Answer the following briefly in not more than 30 words -->
-                <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 12px; font-size: 18px;">2. Answer the following briefly in not more than 30 words.</p>
-                    
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: ${themeColor}; font-weight: bold; font-size: 16px;">(i) What is manufacturing?</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                            <b>Manufacturing</b> is the process of converting raw materials into more useful, valuable goods in large quantities (e.g., producing paper from wood or sugar from sugarcane).
-                        </p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: ${themeColor}; font-weight: bold; font-size: 16px;">(ii) Name any three physical factors for the location of the industry.</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                            The three physical factors are:
-                            <br/>1. Easy availability of cheap raw materials.
-                            <br/>2. Regular, uninterrupted supply of power (energy).
-                            <br/>3. Abundant supply of water for manufacturing and cooling processes.
-                        </p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: ${themeColor}; font-weight: bold; font-size: 16px;">(iii) Name any three human factors for the location of an industry.</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                            The three human factors are:
-                            <br/>1. Availability of cheap and skilled labor.
-                            <br/>2. Capital investment and credit facilities from banking systems.
-                            <br/>3. Proximity to market centers and efficient transport networks.
-                        </p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: ${themeColor}; font-weight: bold; font-size: 16px;">(iv) What are basic industries? Give an example.</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                            <b>Basic industries</b> are those which supply their finished products as raw materials to other industries to manufacture different goods. <i>Example:</i> The Iron and Steel industry (supplies steel to manufacture machines, tools, and automobiles).
-                        </p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: ${themeColor}; font-weight: bold; font-size: 16px;">(v) Name the important raw materials used in the manufacturing of cement?</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                            The key bulky and heavy raw materials used to manufacture cement are <b>limestone, silica, alumina, and gypsum</b>, along with coal and electric power.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- 3. Write the answers of the following questions in 120 words -->
-                <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 12px; font-size: 18px;">3. Write the answers of the following questions in 120 words.</p>
-                    
-                    <div style="margin-left: 10px; margin-bottom: 22px;">
-                        <p style="color: ${themeColor}; font-weight: bold; font-size: 16px;">(i) How are integrated steel plants different from mini steel plants? What problems does the industry face? What recent developments have led to a rise in the production capacity?</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                            <b>Difference:</b> 
-                            <br/>• <b>Integrated Steel Plants:</b> Large complex units that handle everything under one roof—from gathering raw materials (iron ore, coke, limestone) to smelting, refining, rolling, and shaping steel.
-                            <br/>• <b>Mini Steel Plants:</b> Smaller units that use electric arc furnaces, recycling steel scrap and sponge iron. They mainly produce mild and alloy steel of custom specifications.
-                            <br/><br/>
-                            <b>Problems Faced:</b>
-                            <br/>• High cost of coking coal and limited local availability.
-                            <br/>• Lower productivity of labor compared to global standards.
-                            <br/>• Irregular power supply and poor infrastructural support.
-                            <br/><br/>
-                            <b>Recent Developments:</b>
-                            <br/>• Government liberalization policies and <b>Foreign Direct Investment (FDI)</b> have brought capital and modern technology.
-                            <br/>• Technological advancements in steel-making by private entrepreneurs have significantly boosted productivity.
-                        </p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 22px;">
-                        <p style="color: ${themeColor}; font-weight: bold; font-size: 16px;">(ii) How do industries pollute the environment?</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                            Industries degrade and pollute the environment in four major ways:
-                            <br/>• <b>Air Pollution:</b> High emission of toxic gases (sulfur dioxide, carbon monoxide) and particulate matter (dust, smoke) from chemical units, refineries, and fossil fuel burning.
-                            <br/>• <b>Water Pollution:</b> Direct discharge of untreated organic and inorganic chemical effluents, heavy metals, and dyes into rivers and ponds.
-                            <br/>• <b>Thermal Pollution:</b> Draining hot water from power plants and factories into lakes and rivers before cooling, killing aquatic life.
-                            <br/>• <b>Noise Pollution:</b> High noise from machinery, generators, and drilling, causing hearing issues, stress, and anxiety in nearby residents.
-                            <br/>• <b>Land/Soil Pollution:</b> Dumping of solid wastes like fly ash, slag, and plastic, making the land barren and contaminating groundwater through leaching.
-                        </p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: ${themeColor}; font-weight: bold; font-size: 16px;">(iii) Discuss the steps to be taken to minimise environmental degradation by industry?</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                            To minimize industrial environmental degradation, the following steps must be taken:
-                            <br/>• <b>Water Conservation:</b> Reusing and recycling water in multiple successive industrial stages, and harvesting rainwater to fulfill water demands.
-                            <br/>• <b>Effluent Treatment:</b> Treating all industrial wastes before discharging them into water bodies:
-                            <br/>1. *Primary treatment* (screening, grinding, sedimentation).
-                            <br/>2. *Secondary treatment* (biological processes using microbes).
-                            <br/>3. *Tertiary treatment* (recycling water using physical and chemical methods).
-                            <br/>• <b>Air Protection:</b> Fitting smokestacks with particulate filters (electrostatic precipitators, fabric filters, scrubbers) and substituting coal with gas or oil.
-                            <br/>• <b>Noise Control:</b> Redesigning machinery to operate silently, putting silencers on generators, and providing ear protection to factory workers.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        `,
+  "id": "sst-geo-6",
+  "number": 6,
+  "title": "Manufacturing Industries",
+  "isHtmlView": true,
+  "htmlOverview": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(0, 180, 219, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #00B4DB; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #00B4DB; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #B3E5F2; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #B3E5F2; font-weight: 700; }\n  .hl { color: #00B4DB; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #00B4DB; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #00B4DB; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(0, 180, 219, 0.10); border: 1.5px dashed #00B4DB; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #00B4DB; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(0, 180, 219, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(0, 180, 219, 0.18); border: 1px solid #00B4DB; color: #B3E5F2; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(0, 180, 219, 0.2); color: #B3E5F2; }\n  .q-card .q-text, .q-card .sub-q { color: #00B4DB !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 1. Importance of Manufacturing</div><div class=\"sol-step\"><div class=\"rev\">Production of goods in large quantities after processing raw materials into more valuable products is called <span class=\"hl\">manufacturing</span> — e.g. paper from wood, sugar from sugarcane, iron and steel from iron ore, aluminium from bauxite. It belongs to the <b>secondary sector</b>.</div><div class=\"pt\">Manufacturing is considered the <b>backbone of development</b>.</div><div class=\"pt\">It modernises agriculture and reduces heavy dependence on agricultural income by providing jobs in the secondary and tertiary sectors.</div><div class=\"pt\">It helps eradicate unemployment and poverty, and brings down regional disparities when industries are set up in tribal and backward areas.</div><div class=\"pt\">Export of manufactured goods expands trade and brings in foreign exchange.</div><div class=\"pt\"><b>Agriculture and industry move hand in hand:</b> agro-industries raise farm productivity; industries depend on agriculture for raw materials and sell it irrigation pumps, fertilisers, pesticides, PVC pipes, machines and tools.</div><div class=\"exam\"><span class=\"exam-t\">📌 Contribution to the economy</span><div>• Manufacturing's share has stagnated at about <b>17% of GDP</b> (industry as a whole about 27%).</div><div>• The <b>National Manufacturing Competitiveness Council (NMCC)</b> was set up to improve productivity through policy interventions.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 2. Industrial Location and Classification</div><div class=\"sol-step\"><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 197\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"197\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#00B4DB\" text-anchor=\"middle\" font-weight=\"700\">Factors of Industrial Location</text><rect x=\"60\" y=\"30\" width=\"200\" height=\"51\" rx=\"6\" fill=\"rgba(0, 180, 219,0.16)\" stroke=\"#00B4DB\" stroke-width=\"1.2\"/><text x=\"160\" y=\"46.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Industrial location</text><text x=\"160\" y=\"58.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Where all factors are available or</text><text x=\"160\" y=\"71.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">can be arranged at lower cost</text><line x1=\"160\" y1=\"82\" x2=\"160\" y2=\"89\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 94 L163.5 88 L156.5 88 Z\" fill=\"#B0BEC5\"/><rect x=\"13\" y=\"96\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"84\" y=\"112.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Physical factors</text><text x=\"84\" y=\"123.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Raw material, power,</text><text x=\"84\" y=\"135.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">water, suitable climate</text><rect x=\"165\" y=\"96\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(255,183,77,0.16)\" stroke=\"#FFB74D\" stroke-width=\"1.2\"/><text x=\"236\" y=\"112.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Human factors</text><text x=\"236\" y=\"123.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Labour, capital, banking,</text><text x=\"236\" y=\"135.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">insurance, market,</text><text x=\"236\" y=\"147.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">transport, government</text><text x=\"236\" y=\"158.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">policy</text><text x=\"160\" y=\"183\" font-size=\"9.5\" fill=\"#00B4DB\" text-anchor=\"middle\" font-weight=\"700\">Cities attract many industries: agglomeration economies</text></svg></div><div class=\"diagram-caption\">Industries locate where costs are lowest</div></div><div class=\"pt\">Industrialisation and urbanisation go hand in hand; cities provide markets, banking, insurance, transport, labour and consultants.</div><div class=\"pt\">Before Independence most industries were located from the point of view of overseas trade — Mumbai, Kolkata, Chennai — leaving pockets of industrial centres amid large rural hinterlands.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 269\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"269\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#00B4DB\" text-anchor=\"middle\" font-weight=\"700\">Classification of Industries</text><rect x=\"13\" y=\"30\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(0, 180, 219,0.16)\" stroke=\"#00B4DB\" stroke-width=\"1.2\"/><text x=\"84\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Source of raw material</text><text x=\"84\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Agro-based (cotton, jute,</text><text x=\"84\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">sugar, tea) and</text><text x=\"84\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">mineral-based (iron and</text><text x=\"84\" y=\"92.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">steel, cement)</text><rect x=\"165\" y=\"30\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(0, 180, 219,0.16)\" stroke=\"#00B4DB\" stroke-width=\"1.2\"/><text x=\"236\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Main role</text><text x=\"236\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Basic or key (iron and</text><text x=\"236\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">steel, aluminium</text><text x=\"236\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">smelting) and consumer</text><text x=\"236\" y=\"92.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">(sugar, toothpaste, fans)</text><rect x=\"13\" y=\"111\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(0, 180, 219,0.16)\" stroke=\"#00B4DB\" stroke-width=\"1.2\"/><text x=\"84\" y=\"127.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Capital investment</text><text x=\"84\" y=\"138.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Small scale (up to the</text><text x=\"84\" y=\"150.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">investment limit, now one</text><text x=\"84\" y=\"162.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">crore rupees) and large</text><text x=\"84\" y=\"173.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">scale</text><rect x=\"165\" y=\"111\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"236\" y=\"127.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Ownership</text><text x=\"236\" y=\"138.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Public, private, joint</text><text x=\"236\" y=\"150.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">and cooperative sectors</text><rect x=\"89\" y=\"192\" width=\"142\" height=\"61\" rx=\"6\" fill=\"rgba(148,163,184,0.13)\" stroke=\"#94A3B8\" stroke-width=\"1.2\"/><text x=\"160\" y=\"208.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Bulk and weight</text><text x=\"160\" y=\"219.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Heavy (iron and steel)</text><text x=\"160\" y=\"231.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">and light (electrical</text><text x=\"160\" y=\"243.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">industries)</text></svg></div><div class=\"diagram-caption\">Five ways to classify industries</div></div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 188\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"188\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#00B4DB\" text-anchor=\"middle\" font-weight=\"700\">Industries by Ownership</text><rect x=\"13\" y=\"30\" width=\"142\" height=\"61\" rx=\"6\" fill=\"rgba(0, 180, 219,0.16)\" stroke=\"#00B4DB\" stroke-width=\"1.2\"/><text x=\"84\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Public sector</text><text x=\"84\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Owned and run by</text><text x=\"84\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">government agencies:</text><text x=\"84\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">BHEL, SAIL</text><rect x=\"165\" y=\"30\" width=\"142\" height=\"61\" rx=\"6\" fill=\"rgba(255,183,77,0.16)\" stroke=\"#FFB74D\" stroke-width=\"1.2\"/><text x=\"236\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Private sector</text><text x=\"236\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Owned by individuals or</text><text x=\"236\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">groups: TISCO, Bajaj</text><text x=\"236\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Auto, Dabur</text><rect x=\"13\" y=\"99\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(148,163,184,0.13)\" stroke=\"#94A3B8\" stroke-width=\"1.2\"/><text x=\"84\" y=\"115.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Joint sector</text><text x=\"84\" y=\"126.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Run jointly by the state</text><text x=\"84\" y=\"138.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">and private individuals:</text><text x=\"84\" y=\"150.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Oil India Ltd (OIL)</text><rect x=\"165\" y=\"99\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"236\" y=\"115.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Cooperative sector</text><text x=\"236\" y=\"126.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Owned by producers,</text><text x=\"236\" y=\"138.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">workers or both: sugar</text><text x=\"236\" y=\"150.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">(Maharashtra), coir</text><text x=\"236\" y=\"161.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">(Kerala)</text></svg></div><div class=\"diagram-caption\">Who owns the industry?</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 3. Agro-based Industries: Textiles</div><div class=\"sol-step\"><div class=\"rev\">The <span class=\"hl\">textile industry</span> occupies a unique position: it contributes significantly to industrial production, employment generation (second only to agriculture) and foreign exchange earnings. It is the only industry in the country that is <b>self-reliant and complete in the value chain</b> — from raw material to the highest value-added products.</div><div class=\"sec\">Cotton textiles</div><div class=\"pt\">Ancient India: hand spinning and handloom weaving. The first successful textile mill was set up in <b>Mumbai in 1854</b>.</div><div class=\"pt\">Early mills were in the cotton belt of <b>Maharashtra and Gujarat</b> — raw cotton, market, transport, port facilities, labour and moist climate.</div><div class=\"pt\"><b>Spinning</b> is centralised in Maharashtra, Gujarat and Tamil Nadu; <b>weaving</b> is decentralised to use traditional skills in cotton, silk, zari and embroidery.</div><div class=\"pt\">India has world-class spinning, but weaving supplies low-quality fabric and cannot use much of the high-quality yarn. India exports yarn to Japan and other countries.</div><div class=\"pt\"><b>Problems:</b> erratic power supply, outdated machinery in weaving and processing, low labour output and competition from synthetic fibres.</div><div class=\"sec\">Jute textiles</div><div class=\"pt\">India is the largest producer of raw jute and jute goods and the second largest exporter after <b>Bangladesh</b>.</div><div class=\"pt\">After Partition (1947), the jute mills stayed in India but three-fourths of the jute-producing area went to Bangladesh (then East Pakistan).</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 233\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"233\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#00B4DB\" text-anchor=\"middle\" font-weight=\"700\">Why Jute Mills are in the Hugli Basin</text><rect x=\"13\" y=\"30\" width=\"142\" height=\"61\" rx=\"6\" fill=\"rgba(0, 180, 219,0.16)\" stroke=\"#00B4DB\" stroke-width=\"1.2\"/><text x=\"84\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Raw material nearby</text><text x=\"84\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Close to jute-producing</text><text x=\"84\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">areas</text><rect x=\"165\" y=\"30\" width=\"142\" height=\"61\" rx=\"6\" fill=\"rgba(0, 180, 219,0.16)\" stroke=\"#00B4DB\" stroke-width=\"1.2\"/><text x=\"236\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Cheap transport</text><text x=\"236\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Inexpensive water</text><text x=\"236\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">transport plus railways</text><text x=\"236\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">and roads</text><rect x=\"13\" y=\"99\" width=\"142\" height=\"49\" rx=\"6\" fill=\"rgba(0, 180, 219,0.16)\" stroke=\"#00B4DB\" stroke-width=\"1.2\"/><text x=\"84\" y=\"115.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Water</text><text x=\"84\" y=\"126.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Abundant water for</text><text x=\"84\" y=\"138.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">processing raw jute</text><rect x=\"165\" y=\"99\" width=\"142\" height=\"49\" rx=\"6\" fill=\"rgba(0, 180, 219,0.16)\" stroke=\"#00B4DB\" stroke-width=\"1.2\"/><text x=\"236\" y=\"115.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Cheap labour</text><text x=\"236\" y=\"126.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">From West Bengal, Bihar,</text><text x=\"236\" y=\"138.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Odisha and UP</text><rect x=\"89\" y=\"156\" width=\"142\" height=\"49\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"160\" y=\"172.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Kolkata</text><text x=\"160\" y=\"183.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Banking, insurance and a</text><text x=\"160\" y=\"195.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">port for exports</text><text x=\"160\" y=\"219\" font-size=\"9.5\" fill=\"#00B4DB\" text-anchor=\"middle\" font-weight=\"700\">First jute mill: Rishra near Kolkata, 1855</text></svg></div><div class=\"diagram-caption\">Location factors of the jute industry</div></div><div class=\"pt\"><b>Challenges:</b> competition from synthetic substitutes and from Bangladesh, Brazil, the Philippines, Egypt and Thailand. The <b>National Jute Policy (2005)</b> aims at higher productivity, better quality and good prices for farmers. Growing concern for biodegradable materials has opened new opportunities.</div><div class=\"sec\">Sugar industry</div><div class=\"pt\">India is the <b>second largest producer of sugar</b> and first in gur and khandsari.</div><div class=\"pt\">Sugarcane is bulky and loses sucrose content on long haulage, so mills are close to cane fields. About <b>60%</b> of the mills are in <b>UP and Bihar</b>.</div><div class=\"pt\">Being seasonal, the industry suits the <b>cooperative sector</b>. Mills are shifting to southern and western states, especially <b>Maharashtra</b>: higher sucrose content, cooler climate giving a longer crushing season, and successful cooperatives.</div><div class=\"pt\"><b>Challenges:</b> seasonal nature, old and inefficient methods, transport delays, and the need to make better use of bagasse.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 4. Mineral-based Industries</div><div class=\"sol-step\"><div class=\"sec\">Iron and steel</div><div class=\"pt\">A <b>basic</b> industry (all others depend on it for machinery) and a <b>heavy</b> industry (bulky raw materials and products).</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 353\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"353\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#00B4DB\" text-anchor=\"middle\" font-weight=\"700\">How Steel is Made</text><text x=\"160\" y=\"36\" font-size=\"9.5\" fill=\"#CBD5E1\" text-anchor=\"middle\">Iron and steel is a basic, heavy industry</text><rect x=\"30\" y=\"44\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(0, 180, 219,0.16)\" stroke=\"#00B4DB\" stroke-width=\"1.2\"/><text x=\"160\" y=\"60.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Raw materials (about 4 : 2 : 1)</text><text x=\"160\" y=\"72.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Iron ore : coking coal : limestone, plus some</text><text x=\"160\" y=\"85.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">manganese to harden steel</text><line x1=\"160\" y1=\"96\" x2=\"160\" y2=\"103\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 108 L163.5 102 L156.5 102 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"109\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(0, 180, 219,0.16)\" stroke=\"#00B4DB\" stroke-width=\"1.2\"/><text x=\"160\" y=\"125.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Blast furnace</text><text x=\"160\" y=\"137.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Iron ore is smelted using coke; limestone</text><text x=\"160\" y=\"150.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">removes impurities as slag</text><line x1=\"160\" y1=\"161\" x2=\"160\" y2=\"168\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 173 L163.5 167 L156.5 167 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"174\" width=\"260\" height=\"39\" rx=\"6\" fill=\"rgba(0, 180, 219,0.16)\" stroke=\"#00B4DB\" stroke-width=\"1.2\"/><text x=\"160\" y=\"190.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Pig iron</text><text x=\"160\" y=\"202.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Molten iron is cast into pig iron</text><line x1=\"160\" y1=\"214\" x2=\"160\" y2=\"221\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 226 L163.5 220 L156.5 220 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"227\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"160\" y=\"243.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Steel making</text><text x=\"160\" y=\"255.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Pig iron is refined in a furnace; alloys are</text><text x=\"160\" y=\"268.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">added</text><line x1=\"160\" y1=\"279\" x2=\"160\" y2=\"286\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 291 L163.5 285 L156.5 285 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"292\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(0, 180, 219,0.16)\" stroke=\"#00B4DB\" stroke-width=\"1.2\"/><text x=\"160\" y=\"308.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Rolling and shaping</text><text x=\"160\" y=\"320.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Steel is rolled into sheets, bars, rods and</text><text x=\"160\" y=\"333.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">other shapes</text></svg></div><div class=\"diagram-caption\">From iron ore to finished steel</div></div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Integrated steel plant</th><th>Mini steel plant</th></tr><tr><td>Large; handles everything in one complex — from raw materials to steel making, rolling and shaping</td><td>Smaller; uses electric furnaces, steel scrap and sponge iron; has re-rollers using steel ingots</td></tr><tr><td>Mostly bulk steel</td><td>Mild and alloy steel of given specifications</td></tr></table></div><div class=\"pt\">India is the <b>second largest crude steel producer</b> in the world and the largest producer of sponge iron. <b>SAIL</b> markets steel of public sector plants; TISCO markets Tata Steel.</div><div class=\"pt\">The <b>Chotanagpur plateau</b> has the maximum concentration — low-cost iron ore, high-grade raw materials nearby, cheap labour and a large home market.</div><div class=\"pt\"><b>Problems:</b> high cost and limited availability of coking coal, lower labour productivity, irregular energy supply, poor infrastructure. <b>Liberalisation and FDI</b> with private entrepreneurs have boosted the industry; more research and development is needed.</div><div class=\"sec\">Aluminium smelting</div><div class=\"pt\">The second most important metallurgical industry. Aluminium is light, resists corrosion, conducts heat, is malleable and becomes strong when mixed with other metals — used for aircraft, utensils and wires.</div><div class=\"pt\">Plants in Odisha, West Bengal, Kerala, UP, Chhattisgarh, Maharashtra and Tamil Nadu. <b>Regular electricity</b> and an <b>assured source of raw material</b> (bauxite) at minimum cost are the prime location factors.</div><div class=\"sec\">Chemical industry</div><div class=\"pt\">Contributes about 3% of GDP; third largest in Asia and twelfth in the world.</div><div class=\"pt\"><b>Inorganic:</b> sulphuric acid (fertilisers, synthetic fibres, plastics, paints), nitric acid, alkalies, soda ash (glass, soaps, paper), caustic soda — widely spread.</div><div class=\"pt\"><b>Organic:</b> petrochemicals for synthetic fibres, rubber, plastics, dyes, drugs — located near oil refineries. The chemical industry is its <b>own largest consumer</b>.</div><div class=\"sec\">Fertiliser industry</div><div class=\"pt\">Produces nitrogenous fertilisers (mainly urea), phosphatic fertilisers, DAP and complex NPK fertilisers. <b>Potash is entirely imported</b>.</div><div class=\"pt\">Gujarat, Tamil Nadu, UP, Punjab and Kerala produce about half of India's fertilisers; the industry expanded after the Green Revolution.</div><div class=\"sec\">Cement industry</div><div class=\"pt\">Needs bulky raw materials — <b>limestone, silica and gypsum</b> — plus coal, electric power and rail transport.</div><div class=\"pt\">The first cement plant was set up in <b>Chennai in 1904</b>. Decontrol of price and distribution since <b>1989</b> led to rapid growth. Plants in Gujarat have access to markets in the Gulf countries.</div><div class=\"sec\">Automobile industry</div><div class=\"pt\">After liberalisation, new models and FDI stimulated healthy growth. Centres: Delhi, Gurugram, Mumbai, Pune, Chennai, Kolkata, Lucknow, Indore, Hyderabad, Jamshedpur and Bengaluru.</div><div class=\"sec\">Information technology and electronics</div><div class=\"pt\">Products range from transistor sets and televisions to telephones, radars and computers. <b>Bengaluru</b> is the electronic capital of India; other centres include Mumbai, Delhi, Hyderabad, Pune, Chennai, Kolkata, Lucknow and Coimbatore.</div><div class=\"pt\">A major source of employment (about 30% of its workers are women) and foreign exchange, especially through the <b>BPO</b> sector.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 5. Industrial Pollution and its Control</div><div class=\"sol-step\"><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 223\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"223\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#00B4DB\" text-anchor=\"middle\" font-weight=\"700\">Industrial Pollution</text><rect x=\"13\" y=\"30\" width=\"142\" height=\"84\" rx=\"6\" fill=\"rgba(239,83,80,0.16)\" stroke=\"#EF5350\" stroke-width=\"1.2\"/><text x=\"84\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Air</text><text x=\"84\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Sulphur dioxide, carbon</text><text x=\"84\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">monoxide, dust and smoke</text><text x=\"84\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">from chemical, paper,</text><text x=\"84\" y=\"92.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">refinery and smelting</text><text x=\"84\" y=\"104.5\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">units</text><rect x=\"165\" y=\"30\" width=\"142\" height=\"84\" rx=\"6\" fill=\"rgba(239,83,80,0.16)\" stroke=\"#EF5350\" stroke-width=\"1.2\"/><text x=\"236\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Water</text><text x=\"236\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Effluents with dyes,</text><text x=\"236\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">detergents, acids, heavy</text><text x=\"236\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">metals (lead, mercury);</text><text x=\"236\" y=\"92.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">fly ash, slag</text><rect x=\"13\" y=\"122\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(255,183,77,0.16)\" stroke=\"#FFB74D\" stroke-width=\"1.2\"/><text x=\"84\" y=\"138.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Thermal</text><text x=\"84\" y=\"149.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Hot water from factories</text><text x=\"84\" y=\"161.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">and power plants drained</text><text x=\"84\" y=\"173.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">before cooling; nuclear</text><text x=\"84\" y=\"184.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">wastes</text><rect x=\"165\" y=\"122\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(255,183,77,0.16)\" stroke=\"#FFB74D\" stroke-width=\"1.2\"/><text x=\"236\" y=\"138.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Noise</text><text x=\"236\" y=\"149.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Machines, generators,</text><text x=\"236\" y=\"161.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">saws, drills: irritation,</text><text x=\"236\" y=\"173.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">hearing damage, high</text><text x=\"236\" y=\"184.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">blood pressure</text><text x=\"160\" y=\"209\" font-size=\"9.5\" fill=\"#00B4DB\" text-anchor=\"middle\" font-weight=\"700\">1 litre of waste water pollutes ~8 litres of fresh water</text></svg></div><div class=\"diagram-caption\">Four types of industrial pollution</div></div><div class=\"pt\">Toxic gas leaks can be very hazardous with long-term effects. Dumping of wastes makes soil useless, and rainwater carries pollutants into the groundwater.</div><div class=\"sec\">Steps to control environmental degradation</div><div class=\"pt\">Minimise water use by <b>reusing and recycling</b> it in two or more successive stages; harvest rainwater.</div><div class=\"pt\">Treat hot water and effluents before releasing them into rivers and ponds.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 209\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"209\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#00B4DB\" text-anchor=\"middle\" font-weight=\"700\">Treatment of Industrial Effluents</text><rect x=\"30\" y=\"30\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(0, 180, 219,0.16)\" stroke=\"#00B4DB\" stroke-width=\"1.2\"/><text x=\"160\" y=\"46.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Primary treatment</text><text x=\"160\" y=\"58.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Mechanical: screening, grinding, flocculation</text><text x=\"160\" y=\"71.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">and sedimentation</text><line x1=\"160\" y1=\"82\" x2=\"160\" y2=\"89\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 94 L163.5 88 L156.5 88 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"95\" width=\"260\" height=\"39\" rx=\"6\" fill=\"rgba(0, 180, 219,0.16)\" stroke=\"#00B4DB\" stroke-width=\"1.2\"/><text x=\"160\" y=\"111.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Secondary treatment</text><text x=\"160\" y=\"123.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Biological process</text><line x1=\"160\" y1=\"135\" x2=\"160\" y2=\"142\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 147 L163.5 141 L156.5 141 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"148\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"160\" y=\"164.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Tertiary treatment</text><text x=\"160\" y=\"176.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Biological, chemical and physical processes;</text><text x=\"160\" y=\"189.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">waste water is recycled</text></svg></div><div class=\"diagram-caption\">Three stages of effluent treatment</div></div><div class=\"pt\">Regulate over-drawing of groundwater by industry through law.</div><div class=\"pt\">Reduce particulate matter by fitting smoke stacks with <b>electrostatic precipitators, fabric filters, scrubbers and inertial separators</b>; use oil or gas instead of coal.</div><div class=\"pt\">Fit generators with <b>silencers</b>, redesign machinery for energy efficiency and less noise, use noise-absorbing material, earplugs and earphones.</div><div class=\"exam\"><span class=\"exam-t\">📌 NTPC shows the way</span><div>• ISO 14001 certification for its Environment Management System.</div><div>• Optimum use of equipment and upgrading of existing equipment.</div><div>• Minimising waste by maximising ash utilisation; ash pond management and ash water recycling.</div><div>• Green belts for ecological balance; ecological monitoring and online databases for all power stations.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ Quick Glossary</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Term</th><th>Meaning</th></tr><tr><td>Manufacturing</td><td>Producing goods in large quantities by processing raw materials into more valuable products</td></tr><tr><td>Agglomeration economies</td><td>Advantages that industries get by coming together in urban centres</td></tr><tr><td>Basic industries</td><td>Industries whose products are used to make other goods, e.g. iron and steel</td></tr><tr><td>Consumer industries</td><td>Industries producing goods for direct use by consumers</td></tr><tr><td>Joint sector</td><td>Industries run jointly by the state and private individuals or groups</td></tr><tr><td>Integrated steel plant</td><td>Large plant handling everything from raw materials to finished steel</td></tr><tr><td>Mini steel plant</td><td>Smaller plant using electric furnaces, scrap and sponge iron</td></tr><tr><td>Bagasse</td><td>Fibrous residue left after crushing sugarcane</td></tr><tr><td>Effluent</td><td>Liquid waste discharged by industries</td></tr></table></div></div>\n  </div>\n\n</div>",
+  "htmlExercises": {
+    "sg6-ex-all": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(0, 180, 219, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #00B4DB; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #00B4DB; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #B3E5F2; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #B3E5F2; font-weight: 700; }\n  .hl { color: #00B4DB; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #00B4DB; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #00B4DB; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(0, 180, 219, 0.10); border: 1.5px dashed #00B4DB; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #00B4DB; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(0, 180, 219, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(0, 180, 219, 0.18); border: 1px solid #00B4DB; color: #B3E5F2; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(0, 180, 219, 0.2); color: #B3E5F2; }\n  .q-card .q-text, .q-card .sub-q { color: #00B4DB !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Multiple choice questions.<br/>(i) Which one of the following industries uses limestone as a raw material?<br/>(a) Aluminium&nbsp;&nbsp; (b) Cement&nbsp;&nbsp; (c) Plastic&nbsp;&nbsp; (d) Automobile<br/>(ii) Which one of the following agencies markets steel for the public sector plants?<br/>(a) HAIL&nbsp;&nbsp; (b) SAIL&nbsp;&nbsp; (c) TATA Steel&nbsp;&nbsp; (d) MNCC<br/>(iii) Which one of the following industries uses bauxite as a raw material?<br/>(a) Aluminium Smelting&nbsp;&nbsp; (b) Cement&nbsp;&nbsp; (c) Paper&nbsp;&nbsp; (d) Steel<br/>(iv) Which one of the following industries manufactures telephones, computer, etc.?<br/>(a) Steel&nbsp;&nbsp; (b) Electronic&nbsp;&nbsp; (c) Aluminium Smelting&nbsp;&nbsp; (d) Information Technology</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">(i) <b>(b) Cement</b></div><div class=\"pt\">(ii) <b>(b) SAIL</b></div><div class=\"pt\">(iii) <b>(a) Aluminium Smelting</b></div><div class=\"pt\">(iv) <b>(b) Electronic</b></div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Answer the following briefly in not more than 30 words.<br/>(i) What is manufacturing?<br/>(ii) Name any three physical factors for the location of the industry.<br/>(iii) Name any three human factors for the location of an industry.<br/>(iv) What are basic industries? Give an example.<br/>(v) Name the important raw materials used in the manufacturing of cement?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">(i)</div><div class=\"pt\">Production of goods in large quantities after processing raw materials into more valuable products, e.g. paper from wood, sugar from sugarcane.</div><div class=\"sub-q\">(ii)</div><div class=\"pt\">Availability of raw material, power and water (also suitable climate).</div><div class=\"sub-q\">(iii)</div><div class=\"pt\">Availability of labour, capital (banking and insurance) and market (also transport and government policy).</div><div class=\"sub-q\">(iv)</div><div class=\"pt\">Industries whose products or raw materials are used to manufacture other goods. Example: <b>iron and steel</b> (also copper and aluminium smelting).</div><div class=\"sub-q\">(v)</div><div class=\"pt\"><b>Limestone, silica and gypsum</b>, along with coal and electric power.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Write the answers of the following questions in 120 words.<br/>(i) How are integrated steel plants different from mini steel plants? What problems does the industry face? What recent developments have led to a rise in the production capacity?<br/>(ii) How do industries pollute the environment?<br/>(iii) Discuss the steps to be taken to minimise environmental degradation by industry?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">(i)</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Integrated steel plant</th><th>Mini steel plant</th></tr><tr><td>Large; handles everything in one complex — from putting together raw materials to steel making, rolling and shaping</td><td>Smaller; uses electric furnaces, steel scrap and sponge iron; has re-rollers using steel ingots</td></tr><tr><td>Produces steel in bulk</td><td>Produces mild and alloy steel of given specifications</td></tr></table></div><div class=\"sec\">Problems</div><div class=\"pt\">High costs and limited availability of coking coal.</div><div class=\"pt\">Lower productivity of labour.</div><div class=\"pt\">Irregular supply of energy and poor infrastructure.</div><div class=\"sec\">Recent developments</div><div class=\"pt\">Liberalisation and Foreign Direct Investment, together with the efforts of private entrepreneurs, have boosted production capacity.</div><div class=\"sub-q\">(ii)</div><div class=\"pt\"><span class=\"lbl\">Air pollution:</span> sulphur dioxide, carbon monoxide, dust and smoke from chemical and paper factories, brick kilns, refineries and smelting plants.</div><div class=\"pt\"><span class=\"lbl\">Water pollution:</span> organic and inorganic effluents — dyes, detergents, acids, salts and heavy metals like lead and mercury — from paper, chemical, textile, dyeing, refinery, tannery and electroplating units.</div><div class=\"pt\"><span class=\"lbl\">Thermal pollution:</span> hot water from factories and thermal plants drained into rivers and ponds before cooling.</div><div class=\"pt\"><span class=\"lbl\">Noise pollution:</span> machinery, generators, saws and drills cause irritation, hearing impairment and higher blood pressure.</div><div class=\"pt\"><span class=\"lbl\">Land pollution:</span> dumping of fly ash, slag, glass and chemicals makes soil useless and contaminates groundwater.</div><div class=\"sub-q\">(iii)</div><div class=\"pt\">Minimise the use of water by reusing and recycling it in two or more successive stages; harvest rainwater.</div><div class=\"pt\">Treat hot water and effluents before releasing them: <b>primary</b> (screening, grinding, flocculation, sedimentation), <b>secondary</b> (biological) and <b>tertiary</b> (biological, chemical and physical, with recycling).</div><div class=\"pt\">Regulate over-drawing of groundwater by industry.</div><div class=\"pt\">Reduce particulate matter with electrostatic precipitators, fabric filters, scrubbers and inertial separators; use oil or gas instead of coal.</div><div class=\"pt\">Fit generators with silencers, redesign machinery to cut noise, and provide earplugs to workers.</div></div></div>\n  </div>\n\n</div>",
+    "sg6-ex-board": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(0, 180, 219, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #00B4DB; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #00B4DB; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #B3E5F2; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #B3E5F2; font-weight: 700; }\n  .hl { color: #00B4DB; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #00B4DB; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #00B4DB; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(0, 180, 219, 0.10); border: 1.5px dashed #00B4DB; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #00B4DB; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(0, 180, 219, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(0, 180, 219, 0.18); border: 1px solid #00B4DB; color: #B3E5F2; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(0, 180, 219, 0.2); color: #B3E5F2; }\n  .q-card .q-text, .q-card .sub-q { color: #00B4DB !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\"><div class=\"q-title\">✦ Section A: Very Short Answer (1 Mark)</div></div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">What are agglomeration economies?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Advantages that many industries get by coming together near an urban centre (markets, banking, transport, labour).</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Give an example of a joint sector industry.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Oil India Ltd. (OIL)</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Where was the first successful cotton mill set up?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">In <b>Mumbai</b>, in 1854.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Where was the first jute mill set up?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">At <b>Rishra</b> near Kolkata, in 1855.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">When was the National Jute Policy formulated?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">In <b>2005</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q6. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">In what approximate ratio are iron ore, coking coal and limestone used in steel making?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">About <b>4 : 2 : 1</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q7. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Which region has the maximum concentration of iron and steel industries?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">The <b>Chotanagpur plateau</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q8. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Which fertiliser is entirely imported by India?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Potash</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q9. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Where was the first cement plant set up in India?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">In <b>Chennai</b>, in 1904.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q10. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Which city is called the electronic capital of India?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Bengaluru</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\"><div class=\"q-title\">✦ Section B: Short Answer (3 Marks)</div></div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q11. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">Why is the sugar industry shifting to southern and western states?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Sugarcane there has a higher sucrose content.</div><div class=\"pt\">The cooler climate ensures a longer crushing season.</div><div class=\"pt\">Cooperatives are more successful in these states, especially Maharashtra.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q12. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">Why is the iron and steel industry called a basic and heavy industry?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Basic:</b> all other industries — heavy, medium and light — depend on it for their machinery.</div><div class=\"pt\"><b>Heavy:</b> all raw materials (iron ore, coking coal, limestone) and finished goods are heavy and bulky.</div><div class=\"pt\">This means heavy transportation costs, so plants are located close to raw materials.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q13. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">What are the prime factors for the location of the aluminium smelting industry?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Regular supply of electricity, as smelting needs a lot of power.</div><div class=\"pt\">Assured source of raw material (bauxite) at minimum cost — bauxite is bulky.</div><div class=\"pt\">Plants are in Odisha, West Bengal, Kerala, UP, Chhattisgarh, Maharashtra and Tamil Nadu.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q14. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">How do agriculture and industry depend on each other?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Agro-industries have raised agricultural productivity.</div><div class=\"pt\">Industries depend on agriculture for raw materials such as cotton, jute and sugarcane.</div><div class=\"pt\">Industries sell irrigation pumps, fertilisers, pesticides, PVC pipes, machines and tools to farmers.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q15. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">Classify industries on the basis of ownership with examples.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Public sector</b> — owned by government agencies: BHEL, SAIL.</div><div class=\"pt\"><b>Private sector</b> — owned by individuals or groups: TISCO, Bajaj Auto; <b>Joint sector</b> — state and private: Oil India Ltd.</div><div class=\"pt\"><b>Cooperative sector</b> — owned by producers or workers: sugar industry in Maharashtra, coir industry in Kerala.</div></div></div>\n  </div>\n\n  <div class=\"q-card\"><div class=\"q-title\">✦ Section C: Long Answer (5 Marks)</div></div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q16. <span class=\"badge\">5 Marks</span></div>\n    <div class=\"q-text\">Why is the jute industry concentrated in the Hugli basin? What challenges does it face?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Proximity to jute-producing areas.</div><div class=\"pt\">Inexpensive water transport supported by railways, roads and waterways.</div><div class=\"pt\">Abundant water for processing and cheap labour from West Bengal, Bihar, Odisha and UP.</div><div class=\"pt\">Kolkata provides banking, insurance and port facilities for exports.</div><div class=\"pt\"><b>Challenges:</b> competition from synthetic substitutes and from Bangladesh, Brazil, the Philippines, Egypt and Thailand; the National Jute Policy (2005) aims to improve productivity, quality and prices.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q17. <span class=\"badge\">5 Marks</span></div>\n    <div class=\"q-text\">Explain the importance of manufacturing for the economic development of India.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">It is the backbone of development and modernises agriculture.</div><div class=\"pt\">It reduces dependence on agriculture by creating jobs in the secondary and tertiary sectors.</div><div class=\"pt\">It helps eradicate unemployment and poverty.</div><div class=\"pt\">Industries in tribal and backward areas reduce regional disparities.</div><div class=\"pt\">Exports of manufactured goods expand trade and earn foreign exchange.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q18. <span class=\"badge\">4 Marks</span></div>\n    <div class=\"q-text\"><b>Source-based:</b> Read the source and answer the questions.<br/><i>“Every litre of waste water discharged by our industry pollutes about eight times the quantity of freshwater. How can the industrial pollution of freshwater be reduced? Some suggestions are: minimising use of water for processing by reusing and recycling it in two or more successive stages; harvesting of rainwater to meet water requirements; treating hot water and effluents before releasing them in rivers and ponds.”</i><br/>(i) How much fresh water does one litre of industrial waste water pollute? (1)<br/>(ii) Give one way to reduce the use of water by industries. (1)<br/>(iii) Explain the three stages of effluent treatment. (2)</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">(i)</div><div class=\"pt\">About <b>eight times</b> its quantity.</div><div class=\"sub-q\">(ii)</div><div class=\"pt\">Reusing and recycling water in two or more successive stages (or rainwater harvesting).</div><div class=\"sub-q\">(iii)</div><div class=\"pt\">Primary: mechanical — screening, grinding, flocculation and sedimentation; secondary: biological process.</div><div class=\"pt\">Tertiary: biological, chemical and physical processes, including recycling of waste water.</div></div></div>\n  </div>\n\n</div>"
   },
-  exercises: [
+  "introduction": "Production of goods in large quantities after processing from raw materials to more valuable products is called manufacturing. Whether it's paper made from wood or iron from iron ore, manufacturing sectors form the backbone of a developing economy. Let's study how industrial development is crucial for our nation and how we classify these industries.",
+  "definitions": [],
+  "keyPoints": [],
+  "formulas": [],
+  "crux": [],
+  "mcqs": [
     {
-      id: "sg6-ex-all",
-      name: "Exercise Questions",
-      questions: [],
+      "id": "sg6-mcq-1",
+      "question": "<div style='text-align: justify;'>Which industry uses limestone as a raw material?</div>",
+      "options": [
+        "A):   Aluminium",
+        "B):   Plastic",
+        "C):   Cement",
+        "D):   Automobile"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Cement needs limestone, silica and gypsum.</div>"
     },
+    {
+      "id": "sg6-mcq-2",
+      "question": "<div style='text-align: justify;'>Which agency markets steel for the public sector plants?</div>",
+      "options": [
+        "A):   SAIL",
+        "B):   HAIL",
+        "C):   TATA Steel",
+        "D):   MNCC"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>SAIL is the Steel Authority of India Ltd.</div>"
+    },
+    {
+      "id": "sg6-mcq-3",
+      "question": "<div style='text-align: justify;'>Which industry uses bauxite as a raw material?</div>",
+      "options": [
+        "A):   Steel",
+        "B):   Cement",
+        "C):   Paper",
+        "D):   Aluminium smelting"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Aluminium is obtained from bauxite.</div>"
+    },
+    {
+      "id": "sg6-mcq-4",
+      "question": "<div style='text-align: justify;'>Which industry manufactures telephones and computers?</div>",
+      "options": [
+        "A):   Steel",
+        "B):   Electronic",
+        "C):   Aluminium smelting",
+        "D):   Cement"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Bengaluru is India's electronic capital.</div>"
+    },
+    {
+      "id": "sg6-mcq-5",
+      "question": "<div style='text-align: justify;'>Manufacturing belongs to which sector?</div>",
+      "options": [
+        "A):   Secondary",
+        "B):   Primary",
+        "C):   Tertiary",
+        "D):   Quaternary"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>It processes raw materials into goods.</div>"
+    },
+    {
+      "id": "sg6-mcq-6",
+      "question": "<div style='text-align: justify;'>The share of manufacturing in India's GDP has stagnated at about:</div>",
+      "options": [
+        "A):   7%",
+        "B):   27%",
+        "C):   17%",
+        "D):   47%"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Industry as a whole contributes about 27%.</div>"
+    },
+    {
+      "id": "sg6-mcq-7",
+      "question": "<div style='text-align: justify;'>The NMCC was set up to:</div>",
+      "options": [
+        "A):   Market steel",
+        "B):   Improve productivity in manufacturing",
+        "C):   Control pollution",
+        "D):   Export jute"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>It is the National Manufacturing Competitiveness Council.</div>"
+    },
+    {
+      "id": "sg6-mcq-8",
+      "question": "<div style='text-align: justify;'>Iron and steel is an example of a:</div>",
+      "options": [
+        "A):   Consumer industry",
+        "B):   Cooperative industry",
+        "C):   Light industry",
+        "D):   Basic industry"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Other industries depend on it for machinery.</div>"
+    },
+    {
+      "id": "sg6-mcq-9",
+      "question": "<div style='text-align: justify;'>Oil India Ltd. is an example of a:</div>",
+      "options": [
+        "A):   Public sector industry",
+        "B):   Private sector industry",
+        "C):   Cooperative sector industry",
+        "D):   Joint sector industry"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>It is jointly owned by public and private sectors.</div>"
+    },
+    {
+      "id": "sg6-mcq-10",
+      "question": "<div style='text-align: justify;'>The coir industry of Kerala is an example of the:</div>",
+      "options": [
+        "A):   Public sector",
+        "B):   Cooperative sector",
+        "C):   Joint sector",
+        "D):   Private sector"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>It is owned by producers and workers.</div>"
+    },
+    {
+      "id": "sg6-mcq-11",
+      "question": "<div style='text-align: justify;'>The first successful textile mill in India was set up in Mumbai in:</div>",
+      "options": [
+        "A):   1904",
+        "B):   1855",
+        "C):   1854",
+        "D):   1947"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Early mills were in the cotton belt of Maharashtra and Gujarat.</div>"
+    },
+    {
+      "id": "sg6-mcq-12",
+      "question": "<div style='text-align: justify;'>Spinning in the cotton textile industry is centralised in:</div>",
+      "options": [
+        "A):   Maharashtra, Gujarat, Tamil Nadu",
+        "B):   Bihar, UP, West Bengal",
+        "C):   Punjab, Haryana, Rajasthan",
+        "D):   Kerala, Karnataka, Goa"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Weaving is highly decentralised.</div>"
+    },
+    {
+      "id": "sg6-mcq-13",
+      "question": "<div style='text-align: justify;'>India is the second largest exporter of jute goods after:</div>",
+      "options": [
+        "A):   China",
+        "B):   Egypt",
+        "C):   Brazil",
+        "D):   Bangladesh"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>India is the largest producer of raw jute and jute goods.</div>"
+    },
+    {
+      "id": "sg6-mcq-14",
+      "question": "<div style='text-align: justify;'>The first jute mill was set up near Kolkata at:</div>",
+      "options": [
+        "A):   Rishra",
+        "B):   Howrah",
+        "C):   Serampore",
+        "D):   Hugli"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>It was set up in 1855.</div>"
+    },
+    {
+      "id": "sg6-mcq-15",
+      "question": "<div style='text-align: justify;'>About 60% of sugar mills are located in:</div>",
+      "options": [
+        "A):   Maharashtra and Karnataka",
+        "B):   Tamil Nadu and AP",
+        "C):   UP and Bihar",
+        "D):   Punjab and Haryana"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Mills are now shifting to the south and west.</div>"
+    },
+    {
+      "id": "sg6-mcq-16",
+      "question": "<div style='text-align: justify;'>Iron ore, coking coal and limestone are used in steel making in a ratio of about:</div>",
+      "options": [
+        "A):   1 : 2 : 4",
+        "B):   4 : 2 : 1",
+        "C):   2 : 2 : 1",
+        "D):   3 : 1 : 1"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Manganese is added to harden steel.</div>"
+    },
+    {
+      "id": "sg6-mcq-17",
+      "question": "<div style='text-align: justify;'>Mini steel plants use:</div>",
+      "options": [
+        "A):   Blast furnaces only",
+        "B):   Electric furnaces, steel scrap and sponge iron",
+        "C):   Only iron ore",
+        "D):   Only coal"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>They make mild and alloy steel of given specifications.</div>"
+    },
+    {
+      "id": "sg6-mcq-18",
+      "question": "<div style='text-align: justify;'>Which fertiliser is entirely imported by India?</div>",
+      "options": [
+        "A):   Urea",
+        "B):   Phosphate",
+        "C):   DAP",
+        "D):   Potash"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>India has no commercially usable potash reserves.</div>"
+    },
+    {
+      "id": "sg6-mcq-19",
+      "question": "<div style='text-align: justify;'>The first cement plant in India was set up in:</div>",
+      "options": [
+        "A):   Mumbai",
+        "B):   Kolkata",
+        "C):   Chennai",
+        "D):   Delhi"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>It was set up in 1904.</div>"
+    },
+    {
+      "id": "sg6-mcq-20",
+      "question": "<div style='text-align: justify;'>Which of these is NOT a raw material for cement?</div>",
+      "options": [
+        "A):   Bauxite",
+        "B):   Silica",
+        "C):   Gypsum",
+        "D):   Limestone"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Bauxite is used for aluminium.</div>"
+    },
+    {
+      "id": "sg6-mcq-21",
+      "question": "<div style='text-align: justify;'>Organic chemical plants are located near:</div>",
+      "options": [
+        "A):   Coal mines",
+        "B):   Ports",
+        "C):   Oil refineries",
+        "D):   Forests"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Petrochemicals are their raw material.</div>"
+    },
+    {
+      "id": "sg6-mcq-22",
+      "question": "<div style='text-align: justify;'>Arrange in chronological order: (i) First cement plant (ii) First jute mill (iii) National Jute Policy (iv) First successful cotton mill</div>",
+      "options": [
+        "A):   (iv), (ii), (i), (iii)",
+        "B):   (ii), (iv), (i), (iii)",
+        "C):   (iv), (i), (ii), (iii)",
+        "D):   (iv), (ii), (iii), (i)"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>1854 → 1855 → 1904 → 2005.</div>"
+    },
+    {
+      "id": "sg6-mcq-23",
+      "question": "<div style='text-align: justify;'>Match: (P) BHEL (Q) TISCO (R) Oil India Ltd (S) Sugar mills of Maharashtra — with (1) Joint sector (2) Public sector (3) Cooperative sector (4) Private sector</div>",
+      "options": [
+        "A):   P-1, Q-4, R-3, S-2",
+        "B):   P-4, Q-2, R-1, S-3",
+        "C):   P-2, Q-1, R-4, S-3",
+        "D):   P-2, Q-4, R-1, S-3"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Each industry matches its form of ownership.</div>"
+    },
+    {
+      "id": "sg6-mcq-24",
+      "question": "<div style='text-align: justify;'>Assertion (A): The sugar industry is suited to the cooperative sector. Reason (R): Sugar production is seasonal.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Its seasonal nature makes the cooperative sector suitable.</div>"
+    },
+    {
+      "id": "sg6-mcq-25",
+      "question": "<div style='text-align: justify;'>Assertion (A): Weaving in India uses most of the high-quality yarn produced. Reason (R): India has world-class production in spinning.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Weaving supplies low-quality fabric and cannot use much of the high-quality yarn.</div>"
+    }
   ],
-  examples: [],
-  mcqs: [
+  "summary": [],
+  "exercises": [
     {
-      id: "sg6-mcq-1",
-      question:
-        "Which one of the following industries uses limestone as a raw material.",
-      options: ["Aluminium", "Cement", "Plastic", "Automobile"],
-      correctAnswer: "b",
+      "id": "sg6-ex-all",
+      "name": "Exercise",
+      "questions": []
     },
     {
-      id: "sg6-mcq-2",
-      question:
-        "Which one of the following agencies markets steel for the public sector plants?",
-      options: ["HAIL", "SAIL", "TATA Steel", "MNCC"],
-      correctAnswer: "b",
-    },
-    {
-      id: "sg6-mcq-3",
-      question:
-        "Which one of the following industries uses bauxite as a raw material?",
-      options: ["Aluminium Smelting", "Cement", "Paper", "Steel"],
-      correctAnswer: "a",
-    },
-    {
-      id: "sg6-mcq-4",
-      question:
-        "Which one of the following industries manufactures telephones, computer, etc.",
-      options: [
-        "Steel",
-        "Electronic",
-        "Aluminium Smelting",
-        "Information Technology",
-      ],
-      correctAnswer: "b",
-    },
-    {
-      id: "sg6-mcq-5",
-      question:
-        "Which of the following is a completely agro-based industry?",
-      options: [
-        "Iron and Steel Industries",
-        "Petrochemical Industries",
-        "Cotton Textile Industries",
-        "Cement Industries",
-      ],
-      correctAnswer: "c",
-    },
-    {
-      id: "sg6-mcq-6",
-      question: "Why is the Jute industry mainly concentrated in West Bengal?",
-      options: [
-        "Abundant coal reserves",
-        "Proximity to iron ore",
-        "Banks of the Hugli river provide water for processing",
-        "Cold climate",
-      ],
-      correctAnswer: "c",
-    },
-    {
-      id: "sg6-mcq-7",
-      question: "Which city is known as the electronic capital of India?",
-      options: ["Mumbai", "Bengaluru", "Hyderabad", "Noida"],
-      correctAnswer: "b",
-    },
-    {
-      id: "sg6-mcq-8",
-      question:
-        "Which famous plateau region has the maximum concentration of iron and steel industries?",
-      options: [
-        "Deccan Plateau",
-        "Malwa Plateau",
-        "Chotanagpur Plateau",
-        "Meghalaya Plateau",
-      ],
-      correctAnswer: "c",
-    },
-    {
-      id: "sg6-mcq-9",
-      question: "Which city is known as the 'Manchester of India'?",
-      options: ["Mumbai", "Ahmedabad", "Coimbatore", "Kanpur"],
-      correctAnswer: "b",
-    },
-    {
-      id: "sg6-mcq-10",
-      question:
-        "What type of industry is owned and operated by a group of raw material producers?",
-      options: [
-        "Public sector",
-        "Joint sector",
-        "Cooperative sector",
-        "Private sector",
-      ],
-      correctAnswer: "c",
-    },
+      "id": "sg6-ex-board",
+      "name": "Board Qs",
+      "questions": []
+    }
   ],
+  "examples": []
 };
