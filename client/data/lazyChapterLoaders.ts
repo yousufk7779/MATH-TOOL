@@ -2656,6 +2656,7 @@ export const lazyChapterLoaders: Record<string, () => any> = {
   // finished Class 10 English chapters (override the placeholders above)
   "c10-eng-p1": () => require("./content/c10-eng-p1").c10EngP1,
   "c10-eng-p2": () => require("./content/c10-eng-p2").c10EngP2,
+  "c10-eng-p3": () => require("./content/c10-eng-p3").c10EngP3,
 };
 
 
