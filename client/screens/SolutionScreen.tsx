@@ -302,7 +302,7 @@ const SubTabButton = memo(
               colors={gradient as any}
               start={{ x: 0.5, y: 0 }}
               end={{ x: 0.5, y: 1 }}
-              style={styles.tabButtonGradient}
+              style={[styles.tabButtonGradient, compact && styles.tabButtonGradientCompact]}
             >
               <ThemedText
                 style={[
@@ -2034,7 +2034,9 @@ const styles = StyleSheet.create({
     paddingHorizontal: 8,
     justifyContent: "center",
   },
-  subTabButtonCompact: { paddingHorizontal: 4 },
+  // 4 tabs share the row: keep inner padding minimal so labels like "Short Answer" fit without shrinking
+  subTabButtonCompact: { paddingHorizontal: 2 },
+  tabButtonGradientCompact: { paddingHorizontal: 0 },
   tabTextCompact: { fontSize: 12 },
   // 5+ exercise tabs: scrolling row. Left-aligned on purpose — centring overflowing content
   // (justifyContent: "center" + flexGrow) pushes the first tab past the left edge where it cannot be scrolled to.
