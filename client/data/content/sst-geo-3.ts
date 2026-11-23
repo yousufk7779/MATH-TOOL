@@ -1,330 +1,334 @@
 import { ChapterContent } from "../types";
 
-const themeColor = "#00C6FF"; // Bright Blue color for Geography Chapter 3
-
 export const sstGeo3: ChapterContent = {
-  id: "sst-geo-3",
-  number: 3,
-  title: "Water Resources",
-  introduction:
-    "You probably know that 3/4th of the Earth's surface is covered with water. But did you know that most of it is salty ocean water? A very tiny fraction of it is fresh water that we can actually use. That's why water scarcity is becoming a massive problem for humanity across the globe. Let's explore how we manage water through dams and traditional conservation methods.",
-  definitions: [
-    {
-      term: "Water Scarcity",
-      description:
-        "The shortage of water resources to meet the standard water demands of a region or population, often caused by over-exploitation, growing population, and pollution.",
-    },
-    {
-      term: "Hydrological Cycle",
-      description:
-        "The continuous cycle of water movement on, above, and below the surface of the Earth through evaporation, condensation, and precipitation.",
-    },
-    {
-      term: "Multi-Purpose River Project",
-      description:
-        "A large-scale project involving the damming of a river to achieve multiple goals simultaneously, such as irrigation, flood control, electricity generation, fish breeding, and navigation.",
-    },
-    {
-      term: "Dams",
-      description:
-        "Barriers built across flowing water that obstruct, direct, or retard the flow, often creating a reservoir, lake, or impoundment.",
-    },
-    {
-      term: "Rooftop Rainwater Harvesting",
-      description:
-        "A technique to collect and store rainwater falling on rooftops for future use, commonly practiced in arid and semi-arid regions.",
-    },
-    {
-      term: "Palar Pani",
-      description:
-        "The local term used in Rajasthan to refer to pure rainwater collected from rooftops, considered the cleanest form of natural water.",
-    },
-    {
-      term: "Khadins & Johads",
-      description:
-        "Rain-fed agricultural storage structures constructed in arid regions of Rajasthan (Khadins in Jaisalmer, Johads in other areas) that collect water and allow it to moisten the soil.",
-    },
-    {
-      term: "Guls & Kuls",
-      description:
-        "Diversion channels built in mountainous regions like the Western Himalayas for agricultural irrigation.",
-    },
-  ],
-  keyPoints: [
-    "Water is a renewable resource, constantly replenished and recharged by the hydrological cycle.",
-    "Despite water covering 3/4th of the Earth, freshwater accounts for a tiny fraction, and its over-exploitation and pollution have led to severe water scarcity.",
-    "Multi-purpose projects were hailed by Jawaharlal Nehru as the 'temples of modern India' because they integrate agricultural progress with industrialization.",
-    "These river projects face strong opposition (e.g., Narmada Bachao Andolan, Tehri Dam Andolan) due to large-scale displacement of communities, ecological damage, and poor sediment flow.",
-    "Rooftop rainwater harvesting is a highly successful traditional method to conserve water, particularly in Rajasthan, where water is stored in underground tankas.",
-    "Tamil Nadu is the first state in India to make rooftop rainwater harvesting compulsory for all houses across the state.",
-  ],
-  formulas: [],
-  crux: [
-    "Freshwater is a tiny fraction of Earth's water, replenished by the water cycle.",
-    "Nehru called multi-purpose projects (dams) the 'temples of modern India'.",
-    "Dams face opposition due to ecological damage, community displacement, and river fragmentation.",
-    "Traditional conservation: Guls/Kuls in Himalayas, Khadins/Johads in Rajasthan, Tankas for Palar Pani.",
-    "Tamil Nadu is the first state to make rooftop rainwater harvesting compulsory.",
-  ],
-  summary: [
-    "Water is a vital renewable resource. Rapid population growth, industrialization, and urban lifestyles have led to over-exploitation and severe water scarcity in many parts of India.",
-    "Multi-purpose river projects act as key infrastructure for irrigation and electricity, but they come with heavy socio-economic and ecological costs, including displacement and habitat destruction.",
-    "Rainwater harvesting offers a highly sustainable, eco-friendly alternative to large dams. Modern adaptations of rooftop collection and groundwater recharge are essential to secure our water future.",
-  ],
-  isHtmlView: true,
-  htmlOverview: `
-        <div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">
-            <p style="line-height: 1.6; font-size: 17px;">You probably know that 3/4th of the Earth's surface is covered with water. But did you know that most of it is salty ocean water? A very tiny fraction of it is fresh water that we can actually use. That's why water scarcity is becoming a massive problem for humanity across the globe. Let's explore how we manage water through dams and traditional conservation methods.</p>
-            
-            <h3 style="color: ${themeColor}; text-align: left; margin-top: 20px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px;">Key Definitions</h3>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Water Scarcity:</b> The shortage of water resources to meet the standard water demands of a region or population, often caused by over-exploitation, growing population, and pollution.</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Hydrological Cycle:</b> The continuous cycle of water movement on, above, and below the surface of the Earth through evaporation, condensation, and precipitation.</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Multi-Purpose River Project:</b> A large-scale project involving the damming of a river to achieve multiple goals simultaneously, such as irrigation, flood control, electricity generation, fish breeding, and navigation.</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Dams:</b> Barriers built across flowing water that obstruct, direct, or retard the flow, often creating a reservoir, lake, or impoundment.</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Rooftop Rainwater Harvesting:</b> A technique to collect and store rainwater falling on rooftops for future use, commonly practiced in arid and semi-arid regions.</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Palar Pani:</b> The local term used in Rajasthan to refer to pure rainwater collected from rooftops, considered the cleanest form of natural water.</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Khadins & Johads:</b> Rain-fed agricultural storage structures constructed in arid regions of Rajasthan (Khadins in Jaisalmer, Johads in other areas) that collect water and allow it to moisten the soil.</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Guls & Kuls:</b> Diversion channels built in mountainous regions like the Western Himalayas for agricultural irrigation.</p>
-
-            <h3 style="color: ${themeColor}; text-align: left; margin-top: 25px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px;">Important Points</h3>
-            <ul style="text-align: left; padding-left: 20px; line-height: 1.6; font-size: 16px;">
-                <li style="margin-bottom: 8px;">Water is a renewable resource, constantly replenished and recharged by the hydrological cycle.</li>
-                <li style="margin-bottom: 8px;">Despite water covering 3/4th of the Earth, freshwater accounts for a tiny fraction, and its over-exploitation and pollution have led to severe water scarcity.</li>
-                <li style="margin-bottom: 8px;">Multi-purpose projects were hailed by Jawaharlal Nehru as the 'temples of modern India' because they integrate agricultural progress with industrialization.</li>
-                <li style="margin-bottom: 8px;">These river projects face strong opposition (e.g., Narmada Bachao Andolan, Tehri Dam Andolan) due to large-scale displacement of communities, ecological damage, and poor sediment flow.</li>
-                <li style="margin-bottom: 8px;">Rooftop rainwater harvesting is a highly successful traditional method to conserve water, particularly in Rajasthan, where water is stored in underground tankas.</li>
-                <li style="margin-bottom: 8px;">Tamil Nadu is the first state in India to make rooftop rainwater harvesting compulsory for all houses across the state.</li>
-            </ul>
-
-            <h3 style="color: ${themeColor}; text-align: left; margin-top: 25px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px;">Summary</h3>
-            <p style="line-height: 1.6; font-size: 16px;">Water is a vital renewable resource. Rapid population growth, industrialization, and urban lifestyles have led to over-exploitation and severe water scarcity in many parts of India. Multi-purpose river projects act as key infrastructure for irrigation and electricity, but they come with heavy socio-economic and ecological costs, including displacement and habitat destruction. Rainwater harvesting offers a highly sustainable, eco-friendly alternative to large dams. Modern adaptations of rooftop collection and groundwater recharge are essential to secure our water future.</p>
-        </div>
-    `,
-  htmlExercises: {
-    "sg3-ex-all": `
-            <div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">
-                <!-- 1. Multiple Choice Questions -->
-                <div style="margin-bottom: 25px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 12px; font-size: 18px;">1. Multiple choice questions.</p>
-                    
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: #fff; font-weight: bold; font-size: 15px;">(i) Based on the information given below classify each of the situations as 'suffering from water scarcity' or 'not suffering from water scarcity'.</p>
-                        <ul style="color: #E0E0E0; line-height: 1.6; padding-left: 20px; font-size: 15px; margin-top: 5px;">
-                            <li style="margin-bottom: 5px;">(a) Region with high annual rainfall. <b style="color: ${themeColor};">-> Not suffering from water scarcity</b></li>
-                            <li style="margin-bottom: 5px;">(b) Region having high annual rainfall and large population. <b style="color: ${themeColor};">-> Suffering from water scarcity</b> (due to high demand/over-exploitation)</li>
-                            <li style="margin-bottom: 5px;">(c) Region having high annual rainfall but water is highly polluted. <b style="color: ${themeColor};">-> Suffering from water scarcity</b> (water is unfit for domestic use)</li>
-                            <li style="margin-bottom: 5px;">(d) Region having low rainfall and low population. <b style="color: ${themeColor};">-> Not suffering from water scarcity</b></li>
-                        </ul>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: #fff; font-weight: bold; font-size: 15px;">(ii) Which one of the following statements is not an argument in favour of multi-purpose river projects?</p>
-                        <p style="color: #E0E0E0; font-size: 15px; margin: 4px 0 0 10px;">
-                            (a) Multi-purpose projects bring water to those areas which suffer from water scarcity.
-                            <br/>(b) Multi-purpose projects by regulating water flow helps to control floods.
-                            <br/><b style="color: ${themeColor};">(c) Multi-purpose projects lead to large scale displacements and loss of livelihood.</b>
-                            <br/>(d) Multi-purpose projects generate electricity for our industries and our homes.
-                        </p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: #fff; font-weight: bold; font-size: 15px;">(iii) Here are some false statements. Identify the mistakes and rewrite them correctly.</p>
-                        <div style="margin-left: 10px; font-size: 15px; line-height: 1.6; color: #E0E0E0;">
-                            <p style="margin-bottom: 8px;">
-                                <b>(a) False Statement:</b> Multiplying urban centres with large and dense populations and urban lifestyles have helped in proper utilisation of water resources.
-                                <br/><b style="color: ${themeColor};">Correction:</b> Multiplying urban centres with large and dense populations and urban lifestyles have led to the <b>over-exploitation and depletion</b> of water resources.
-                            </p>
-                            <p style="margin-bottom: 8px;">
-                                <b>(b) False Statement:</b> Regulating and damming of rivers does not affect the river's natural flow and its sediment flow.
-                                <br/><b style="color: ${themeColor};">Correction:</b> Regulating and damming of rivers <b>does affect</b> the natural flow of rivers, causing poor sediment flow and excessive sedimentation at the bottom of the reservoir.
-                            </p>
-                            <p style="margin-bottom: 8px;">
-                                <b>(c) False Statement:</b> In Gujarat, the Sabarmati basin farmers were not agitated when higher priority was given to water supply in urban areas, particularly during droughts.
-                                <br/><b style="color: ${themeColor};">Correction:</b> In Gujarat, the Sabarmati basin farmers <b>were agitated</b> and almost caused a riot when higher priority was given to water supply in urban areas, particularly during droughts.
-                            </p>
-                            <p style="margin-bottom: 8px;">
-                                <b>(d) False Statement:</b> Today in Rajasthan, the practice of rooftop rainwater harvesting has gained popularity despite high water availability due to the Indira Gandhi Canal.
-                                <br/><b style="color: ${themeColor};">Correction:</b> Today in Rajasthan, the practice of rooftop rainwater harvesting <b>is declining</b> due to the high water availability from the perennial Indira Gandhi Canal.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 2. Answer the following questions in about 30 words -->
-                <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 12px; font-size: 18px;">2. Answer the following questions in about 30 words.</p>
-                    
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: ${themeColor}; font-weight: bold; font-size: 16px;">(i) Explain how water becomes a renewable resource.</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                            Water becomes a renewable resource through the <b>hydrological cycle</b>. In this continuous process, water evaporates from oceans and lands, condenses into clouds, and falls back to Earth as precipitation (rain or snow), which recharges rivers, lakes, and groundwater tables.
-                        </p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: ${themeColor}; font-weight: bold; font-size: 16px;">(ii) What is water scarcity and what are its main causes?</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                            <b>Water Scarcity:</b> The lack of sufficient fresh water to meet the needs of the population in a region.
-                            <br/><b>Main Causes:</b> 
-                            <br/>• Over-exploitation of water for domestic and agricultural purposes.
-                            <br/>• Rapidly growing population increasing food and water demands.
-                            <br/>• Industrialization and urbanization consuming massive quantities of water and power.
-                            <br/>• Pollution of existing fresh water sources, making them unfit for use.
-                        </p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: ${themeColor}; font-weight: bold; font-size: 16px;">(iii) Compare the advantages and disadvantages of multi-purpose river projects.</p>
-                        <div style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                            <b>Advantages:</b> 
-                            Provide regular water supply for irrigation, control floods, generate eco-friendly hydroelectric power, support inland navigation, fish breeding, and tourism.
-                            <br/><br/>
-                            <b>Disadvantages:</b> 
-                            Cause large-scale displacement of local communities, destroy natural aquatic habitats by obstructing natural river flow, submerge surrounding fertile land and forests, and can cause earthquakes due to reservoir pressure.
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 3. Answer the following questions in about 120 words -->
-                <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 12px; font-size: 18px;">3. Answer the following questions in about 120 words.</p>
-                    
-                    <div style="margin-left: 10px; margin-bottom: 22px;">
-                        <p style="color: ${themeColor}; font-weight: bold; font-size: 16px;">(i) Discuss how rainwater harvesting in semi-arid regions of Rajasthan is carried out.</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                            In the semi-arid regions of Rajasthan (such as Bikaner, Phalodi, and Barmer), traditional rainwater harvesting is carried out using underground tanks called <b>tankas</b>:
-                            <br/>• <b>Rooftop System:</b> Sloping roofs of houses are connected to these underground tankas via PVC pipes. The rain falling on the roof flows through the pipes into the tankas.
-                            <br/>• <b>First Rain Spell:</b> The first shower of rain is not collected; it is used to wash and clean the roof and pipes. Subsequent rains are collected and stored.
-                            <br/>• <b>Palar Pani:</b> The collected water, locally known as Palar Pani, is highly valued as the purest form of natural water and is stored to serve during dry summers.
-                            <br/>• <b>Cooling Rooms:</b> Often, cool rooms are built adjacent to these tankas as the water's temperature helps lower the heat inside the house.
-                            <br/>• <b>Agricultural Fields:</b> In fields, structures like <b>Khadins</b> and <b>Johads</b> are built to store rainwater, which moistens the dry soils for farming.
-                        </p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: ${themeColor}; font-weight: bold; font-size: 16px;">(ii) Describe how modern adaptations of traditional rainwater harvesting methods are being carried out to conserve and store water.</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                            Modern adaptations of traditional rainwater harvesting methods are widely implemented in both rural and urban India:
-                            <br/>• <b>Rooftop Rainwater Harvesting:</b> The traditional concept is updated with modern filters. Rainwater from rooftops is routed through sand-and-gravel filters to remove impurities before storage in tanks or direct injection into borewells to recharge ground aquifers.
-                            <br/>• <b>Compulsory Rooftop Systems:</b> State governments are making rooftop rainwater harvesting structurally mandatory. For example, <b>Tamil Nadu</b> is the first state in India to make it legally compulsory for all buildings.
-                            <br/>• <b>Groundwater Recharge Wells:</b> Rainwater from roads, parks, and rooftops is directed into percolation pits, trenches, or recharge shafts to raise the falling groundwater table.
-                            <br/>• <b>Community Rejuvenation:</b> In rural areas, traditional check dams (johads or bandhas) are reconstructed using modern engineering to store surface runoff and prevent soil moisture loss.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        `,
+  "id": "sst-geo-3",
+  "number": 3,
+  "title": "Water Resources",
+  "isHtmlView": true,
+  "htmlOverview": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(0, 198, 255, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #00C6FF; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #00C6FF; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #B3ECFF; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #B3ECFF; font-weight: 700; }\n  .hl { color: #00C6FF; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #00C6FF; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #00C6FF; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(0, 198, 255, 0.10); border: 1.5px dashed #00C6FF; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #00C6FF; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(0, 198, 255, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(0, 198, 255, 0.18); border: 1px solid #00C6FF; color: #B3ECFF; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(0, 198, 255, 0.2); color: #B3ECFF; }\n  .q-card .q-text, .q-card .sub-q { color: #00C6FF !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 1. Water: A Renewable but Scarce Resource</div><div class=\"sol-step\"><div class=\"rev\">Three-fourths of the earth's surface is covered with water, but only a small proportion of it is fresh water that can be put to use. Fresh water is mainly obtained from surface run-off and groundwater, which is continually renewed and recharged through the <span class=\"hl\">hydrological cycle</span>.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 200\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"200\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#00C6FF\" text-anchor=\"middle\" font-weight=\"700\">Water on the Earth (to scale)</text><text x=\"14\" y=\"40\" font-size=\"10\" fill=\"#FFFFFF\" font-weight=\"700\">All water on the Earth</text><rect x=\"14.0\" y=\"46\" width=\"281.8\" height=\"18\" fill=\"#0277BD\"/><rect x=\"295.8\" y=\"46\" width=\"7.3\" height=\"18\" fill=\"#4FC3F7\"/><rect x=\"303.1\" y=\"46\" width=\"2.9\" height=\"18\" fill=\"#94A3B8\"/><rect x=\"14\" y=\"46\" width=\"292\" height=\"18\" fill=\"none\" stroke=\"#94A3B8\" stroke-width=\"0.8\"/><rect x=\"14\" y=\"72\" width=\"9\" height=\"9\" fill=\"#0277BD\"/><text x=\"28\" y=\"80\" font-size=\"9.5\" fill=\"#FFFFFF\">Oceans — 96.5%</text><rect x=\"14\" y=\"86\" width=\"9\" height=\"9\" fill=\"#4FC3F7\"/><text x=\"28\" y=\"94\" font-size=\"9.5\" fill=\"#FFFFFF\">Fresh water — 2.5%</text><rect x=\"14\" y=\"100\" width=\"9\" height=\"9\" fill=\"#94A3B8\"/><text x=\"28\" y=\"108\" font-size=\"9.5\" fill=\"#FFFFFF\">Other (saline groundwater, lakes) — about 1%</text><text x=\"14\" y=\"132\" font-size=\"10\" fill=\"#FFFFFF\" font-weight=\"700\">The 2.5% fresh water</text><rect x=\"14.0\" y=\"138\" width=\"204.4\" height=\"18\" fill=\"#E1F5FE\"/><rect x=\"218.4\" y=\"138\" width=\"87.6\" height=\"18\" fill=\"#26A69A\"/><rect x=\"14\" y=\"138\" width=\"292\" height=\"18\" fill=\"none\" stroke=\"#94A3B8\" stroke-width=\"0.8\"/><rect x=\"14\" y=\"164\" width=\"9\" height=\"9\" fill=\"#E1F5FE\"/><text x=\"28\" y=\"172\" font-size=\"9.5\" fill=\"#FFFFFF\">Ice sheets and glaciers — nearly 70%</text><rect x=\"14\" y=\"178\" width=\"9\" height=\"9\" fill=\"#26A69A\"/><text x=\"28\" y=\"186\" font-size=\"9.5\" fill=\"#FFFFFF\">Groundwater — a little less than 30%</text></svg></div><div class=\"diagram-caption\">Only a tiny share of the earth's water is usable fresh water</div></div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 262\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"262\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#00C6FF\" text-anchor=\"middle\" font-weight=\"700\">Why Water is Renewable: the Hydrological Cycle</text><rect x=\"30\" y=\"30\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(0, 198, 255,0.16)\" stroke=\"#00C6FF\" stroke-width=\"1.2\"/><text x=\"160\" y=\"46.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Evaporation</text><text x=\"160\" y=\"58.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Sun heats oceans, lakes and rivers; water</text><text x=\"160\" y=\"71.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">vapour rises</text><line x1=\"160\" y1=\"82\" x2=\"160\" y2=\"89\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 94 L163.5 88 L156.5 88 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"95\" width=\"260\" height=\"39\" rx=\"6\" fill=\"rgba(0, 198, 255,0.16)\" stroke=\"#00C6FF\" stroke-width=\"1.2\"/><text x=\"160\" y=\"111.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Condensation</text><text x=\"160\" y=\"123.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Vapour cools to form clouds</text><line x1=\"160\" y1=\"135\" x2=\"160\" y2=\"142\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 147 L163.5 141 L156.5 141 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"148\" width=\"260\" height=\"39\" rx=\"6\" fill=\"rgba(0, 198, 255,0.16)\" stroke=\"#00C6FF\" stroke-width=\"1.2\"/><text x=\"160\" y=\"164.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Precipitation</text><text x=\"160\" y=\"176.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Rain and snow fall on land and sea</text><line x1=\"160\" y1=\"188\" x2=\"160\" y2=\"195\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 200 L163.5 194 L156.5 194 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"201\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"160\" y=\"217.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Run-off and infiltration</text><text x=\"160\" y=\"229.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Water fills rivers and lakes and recharges</text><text x=\"160\" y=\"242.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">groundwater, returning to the sea</text></svg></div><div class=\"diagram-caption\">The water cycle makes water a renewable resource</div></div><div class=\"exam\"><span class=\"exam-t\">📌 India's share</span><div>• India receives nearly <b>4%</b> of the global precipitation.</div><div>• It ranks <b>133</b> in the world in water availability per person per annum.</div><div>• Total renewable water resources of India: about <b>1,897 cubic km</b> per annum (printed as “1,897 sq km” in the textbook).</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 2. Water Scarcity and the Need for Conservation</div><div class=\"sol-step\"><div class=\"rev\"><span class=\"hl\">Water scarcity</span> is a shortage of water in relation to the needs of the people. It may occur even in regions with ample water, due to over-exploitation, excessive use and unequal access among social groups.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 311\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"311\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#00C6FF\" text-anchor=\"middle\" font-weight=\"700\">Causes of Water Scarcity</text><rect x=\"60\" y=\"30\" width=\"200\" height=\"51\" rx=\"6\" fill=\"rgba(239,83,80,0.16)\" stroke=\"#EF5350\" stroke-width=\"1.2\"/><text x=\"160\" y=\"46.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Water scarcity</text><text x=\"160\" y=\"58.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Not enough water of good quality</text><text x=\"160\" y=\"71.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">for everyone's needs</text><line x1=\"160\" y1=\"82\" x2=\"160\" y2=\"89\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 94 L163.5 88 L156.5 88 Z\" fill=\"#B0BEC5\"/><rect x=\"13\" y=\"96\" width=\"142\" height=\"61\" rx=\"6\" fill=\"rgba(0, 198, 255,0.16)\" stroke=\"#00C6FF\" stroke-width=\"1.2\"/><text x=\"84\" y=\"112.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Large population</text><text x=\"84\" y=\"123.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">More water for domestic</text><text x=\"84\" y=\"135.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">use and to grow more food</text><rect x=\"165\" y=\"96\" width=\"142\" height=\"61\" rx=\"6\" fill=\"rgba(0, 198, 255,0.16)\" stroke=\"#00C6FF\" stroke-width=\"1.2\"/><text x=\"236\" y=\"112.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Irrigated agriculture</text><text x=\"236\" y=\"123.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Dry-season crops;</text><text x=\"236\" y=\"135.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">over-use of groundwater</text><text x=\"236\" y=\"147.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">by tube wells</text><rect x=\"13\" y=\"165\" width=\"142\" height=\"61\" rx=\"6\" fill=\"rgba(0, 198, 255,0.16)\" stroke=\"#00C6FF\" stroke-width=\"1.2\"/><text x=\"84\" y=\"181.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Industrialisation</text><text x=\"84\" y=\"192.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Industries use water and</text><text x=\"84\" y=\"204.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">need hydroelectric power</text><rect x=\"165\" y=\"165\" width=\"142\" height=\"61\" rx=\"6\" fill=\"rgba(0, 198, 255,0.16)\" stroke=\"#00C6FF\" stroke-width=\"1.2\"/><text x=\"236\" y=\"181.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Urbanisation</text><text x=\"236\" y=\"192.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Dense cities and urban</text><text x=\"236\" y=\"204.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">lifestyles; housing</text><text x=\"236\" y=\"216.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">societies with own wells</text><rect x=\"89\" y=\"234\" width=\"142\" height=\"61\" rx=\"6\" fill=\"rgba(255,183,77,0.16)\" stroke=\"#FFB74D\" stroke-width=\"1.2\"/><text x=\"160\" y=\"250.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Poor quality</text><text x=\"160\" y=\"261.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Domestic and industrial</text><text x=\"160\" y=\"273.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">wastes, chemicals and</text><text x=\"160\" y=\"285.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">fertilisers pollute water</text></svg></div><div class=\"diagram-caption\">Water scarcity is mostly caused by humans</div></div><div class=\"pt\">Scarcity also means <b>poor quality</b>: even with enough water, it may be polluted by domestic and industrial waste, chemicals, pesticides and fertilisers, making it unfit for use.</div><div class=\"sec\">Why conserve water?</div><div class=\"pt\">To safeguard ourselves from health hazards.</div><div class=\"pt\">To ensure food security and continue our livelihoods and productive activities.</div><div class=\"pt\">To prevent degradation of natural ecosystems — over-exploitation impoverishes this resource and causes ecological crisis.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 3. Multi-purpose River Projects and Integrated Water Resources Management</div><div class=\"sol-step\"><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 207\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"207\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"20\" font-size=\"11.5\" fill=\"#00C6FF\" text-anchor=\"middle\" font-weight=\"700\">Hydraulic Structures in Ancient India</text><line x1=\"76\" y1=\"34\" x2=\"76\" y2=\"197.00000000000003\" stroke=\"rgba(0, 198, 255,0.55)\" stroke-width=\"2\"/><circle cx=\"76\" cy=\"39.5\" r=\"4\" fill=\"#00C6FF\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"43\" font-size=\"10\" fill=\"#00C6FF\" text-anchor=\"end\" font-weight=\"700\">1st c. BC</text><text x=\"88\" y=\"43.0\" font-size=\"9.5\" fill=\"#FFFFFF\">Sringaverapura (near Prayagraj):</text><text x=\"88\" y=\"55.2\" font-size=\"9.5\" fill=\"#FFFFFF\">channelled the flood water of the Ganga</text><circle cx=\"76\" cy=\"72.9\" r=\"4\" fill=\"#00C6FF\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"76.4\" font-size=\"10\" fill=\"#00C6FF\" text-anchor=\"end\" font-weight=\"700\">Mauryas</text><text x=\"88\" y=\"76.4\" font-size=\"9.5\" fill=\"#FFFFFF\">Dams, lakes and irrigation systems built</text><text x=\"88\" y=\"88.6\" font-size=\"9.5\" fill=\"#FFFFFF\">extensively under Chandragupta Maurya</text><circle cx=\"76\" cy=\"106.30000000000001\" r=\"4\" fill=\"#00C6FF\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"109.80000000000001\" font-size=\"10\" fill=\"#00C6FF\" text-anchor=\"end\" font-weight=\"700\">Ancient</text><text x=\"88\" y=\"109.8\" font-size=\"9.5\" fill=\"#FFFFFF\">Irrigation works at Kalinga,</text><text x=\"88\" y=\"122.0\" font-size=\"9.5\" fill=\"#FFFFFF\">Nagarjunakonda, Bennur and Kolhapur</text><circle cx=\"76\" cy=\"139.70000000000002\" r=\"4\" fill=\"#00C6FF\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"143.20000000000002\" font-size=\"10\" fill=\"#00C6FF\" text-anchor=\"end\" font-weight=\"700\">1000s</text><text x=\"88\" y=\"143.2\" font-size=\"9.5\" fill=\"#FFFFFF\">Bhopal Lake, one of the largest</text><text x=\"88\" y=\"155.4\" font-size=\"9.5\" fill=\"#FFFFFF\">artificial lakes of its time</text><circle cx=\"76\" cy=\"173.10000000000002\" r=\"4\" fill=\"#00C6FF\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"176.60000000000002\" font-size=\"10\" fill=\"#00C6FF\" text-anchor=\"end\" font-weight=\"700\">1200s</text><text x=\"88\" y=\"176.6\" font-size=\"9.5\" fill=\"#FFFFFF\">Hauz Khas tank, Delhi, built by Iltutmish</text><text x=\"88\" y=\"188.8\" font-size=\"9.5\" fill=\"#FFFFFF\">for the Siri Fort area</text></svg></div><div class=\"diagram-caption\">India has a long tradition of hydraulic structures</div></div><div class=\"rev\">A <span class=\"hl\">dam</span> is a barrier across flowing water that obstructs, directs or retards the flow, often creating a reservoir, lake or impoundment. Today dams are built for many purposes — hence <b>multi-purpose projects</b>. Jawaharlal Nehru proudly called dams the <b>“temples of modern India”</b>.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Project</th><th>Purposes</th></tr><tr><td><b>Bhakra Nangal</b> (Sutlej)</td><td>Hydel power and irrigation</td></tr><tr><td><b>Hirakud</b> (Mahanadi)</td><td>Water conservation with flood control</td></tr><tr><td><b>Sardar Sarovar</b> (Narmada, Gujarat)</td><td>One of the largest water projects; covers Maharashtra, MP, Gujarat and Rajasthan</td></tr></table></div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 257\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"257\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#00C6FF\" text-anchor=\"middle\" font-weight=\"700\">Multi-purpose River Projects</text><rect x=\"13\" y=\"30\" width=\"142\" height=\"49\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"84\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Irrigation</text><text x=\"84\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Regular water for</text><text x=\"84\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">agriculture</text><rect x=\"165\" y=\"30\" width=\"142\" height=\"49\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"236\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Electricity</text><text x=\"236\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Hydel power for homes and</text><text x=\"236\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">industries</text><rect x=\"13\" y=\"87\" width=\"142\" height=\"61\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"84\" y=\"103.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Flood control, supply</text><text x=\"84\" y=\"114.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Regulate river flow;</text><text x=\"84\" y=\"126.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">water for homes and</text><text x=\"84\" y=\"138.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">industry</text><rect x=\"165\" y=\"87\" width=\"142\" height=\"61\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"236\" y=\"103.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Recreation, fish,</text><text x=\"236\" y=\"114.7\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">navigation</text><text x=\"236\" y=\"126.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Inland navigation, fish</text><text x=\"236\" y=\"138.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">breeding, tourism</text><rect x=\"13\" y=\"156\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(239,83,80,0.16)\" stroke=\"#EF5350\" stroke-width=\"1.2\"/><text x=\"84\" y=\"172.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Ecological costs</text><text x=\"84\" y=\"183.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Poor sediment flow;</text><text x=\"84\" y=\"195.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">fragmented rivers block</text><text x=\"84\" y=\"207.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">fish migration; submerged</text><text x=\"84\" y=\"218.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">vegetation</text><rect x=\"165\" y=\"156\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(239,83,80,0.16)\" stroke=\"#EF5350\" stroke-width=\"1.2\"/><text x=\"236\" y=\"172.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Social costs</text><text x=\"236\" y=\"183.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Displacement of local</text><text x=\"236\" y=\"195.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">communities; benefits go</text><text x=\"236\" y=\"207.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">mainly to big farmers;</text><text x=\"236\" y=\"218.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">disputes</text><text x=\"160\" y=\"243\" font-size=\"9.5\" fill=\"#00C6FF\" text-anchor=\"middle\" font-weight=\"700\">Green: benefits | Red: problems</text></svg></div><div class=\"diagram-caption\">Benefits and problems of big dams</div></div><div class=\"sec\">Movements and conflicts</div><div class=\"pt\"><b>Narmada Bachao Andolan</b>: an NGO mobilising tribal people, farmers, environmentalists and human rights activists against the Sardar Sarovar Dam; it now focuses on full rehabilitation of the oustees.</div><div class=\"pt\"><b>Tehri Dam Andolan</b> also opposed a big dam.</div><div class=\"pt\"><b>Inter-state disputes</b>, e.g. Karnataka and Andhra Pradesh objected to Maharashtra diverting more water at Koyna (Krishna-Godavari dispute).</div><div class=\"pt\">In Gujarat, <b>Sabarmati basin farmers</b> agitated and almost caused a riot when urban areas were given priority in water supply during drought.</div><div class=\"pt\">Dams built to control floods have sometimes triggered floods due to sedimentation; they have also caused soil erosion, earthquakes, water-borne diseases and pollution.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 4. Rainwater Harvesting</div><div class=\"sol-step\"><div class=\"rev\">Many thought that, given the problems of dams, <span class=\"hl\">rainwater harvesting</span> was a viable alternative — socio-economically and environmentally. In ancient India, people had in-depth knowledge of rainfall regimes and soil types and developed local techniques.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 257\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"257\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#00C6FF\" text-anchor=\"middle\" font-weight=\"700\">Traditional Rainwater Harvesting</text><rect x=\"13\" y=\"30\" width=\"142\" height=\"61\" rx=\"6\" fill=\"rgba(0, 198, 255,0.16)\" stroke=\"#00C6FF\" stroke-width=\"1.2\"/><text x=\"84\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Hills and mountains</text><text x=\"84\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Guls or kuls: diversion</text><text x=\"84\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">channels (Western</text><text x=\"84\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Himalayas)</text><rect x=\"165\" y=\"30\" width=\"142\" height=\"61\" rx=\"6\" fill=\"rgba(0, 198, 255,0.16)\" stroke=\"#00C6FF\" stroke-width=\"1.2\"/><text x=\"236\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Rajasthan houses</text><text x=\"236\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Rooftop harvesting into</text><text x=\"236\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">underground tankas for</text><text x=\"236\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">drinking water</text><rect x=\"13\" y=\"99\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(0, 198, 255,0.16)\" stroke=\"#00C6FF\" stroke-width=\"1.2\"/><text x=\"84\" y=\"115.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Floodplains of Bengal</text><text x=\"84\" y=\"126.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Inundation channels to</text><text x=\"84\" y=\"138.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">irrigate fields</text><rect x=\"165\" y=\"99\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(0, 198, 255,0.16)\" stroke=\"#00C6FF\" stroke-width=\"1.2\"/><text x=\"236\" y=\"115.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Arid and semi-arid</text><text x=\"236\" y=\"126.7\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">fields</text><text x=\"236\" y=\"138.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Khadins (Jaisalmer) and</text><text x=\"236\" y=\"150.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">johads: fields turned</text><text x=\"236\" y=\"161.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">into rain-fed storage</text><rect x=\"13\" y=\"180\" width=\"142\" height=\"61\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"84\" y=\"196.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Meghalaya</text><text x=\"84\" y=\"207.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">200-year-old bamboo drip</text><text x=\"84\" y=\"219.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">irrigation</text><rect x=\"165\" y=\"180\" width=\"142\" height=\"61\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"236\" y=\"196.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Modern</text><text x=\"236\" y=\"207.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Rooftop harvesting:</text><text x=\"236\" y=\"219.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">compulsory in Tamil Nadu;</text><text x=\"236\" y=\"231.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Gendathur, Shillong</text></svg></div><div class=\"diagram-caption\">Region-wise traditional methods</div></div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 339\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"339\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#00C6FF\" text-anchor=\"middle\" font-weight=\"700\">Tankas of Rajasthan (Bikaner, Phalodi, Barmer)</text><rect x=\"30\" y=\"30\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(0, 198, 255,0.16)\" stroke=\"#00C6FF\" stroke-width=\"1.2\"/><text x=\"160\" y=\"46.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Sloping roof</text><text x=\"160\" y=\"58.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Rain falling on the roof is led down through a</text><text x=\"160\" y=\"71.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">pipe</text><line x1=\"160\" y1=\"82\" x2=\"160\" y2=\"89\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 94 L163.5 88 L156.5 88 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"95\" width=\"260\" height=\"39\" rx=\"6\" fill=\"rgba(0, 198, 255,0.16)\" stroke=\"#00C6FF\" stroke-width=\"1.2\"/><text x=\"160\" y=\"111.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">First spell not collected</text><text x=\"160\" y=\"123.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">It cleans the roof and the pipes</text><line x1=\"160\" y1=\"135\" x2=\"160\" y2=\"142\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 147 L163.5 141 L156.5 141 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"148\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(0, 198, 255,0.16)\" stroke=\"#00C6FF\" stroke-width=\"1.2\"/><text x=\"160\" y=\"164.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Underground tanka</text><text x=\"160\" y=\"176.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Built in the main house or courtyard; could be</text><text x=\"160\" y=\"189.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">as large as a big room</text><line x1=\"160\" y1=\"200\" x2=\"160\" y2=\"207\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 212 L163.5 206 L156.5 206 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"213\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"160\" y=\"229.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Palar pani</text><text x=\"160\" y=\"241.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">The stored rainwater — the purest form of</text><text x=\"160\" y=\"254.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">natural water — used for drinking in summer</text><line x1=\"160\" y1=\"265\" x2=\"160\" y2=\"272\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 277 L163.5 271 L156.5 271 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"278\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(0, 198, 255,0.16)\" stroke=\"#00C6FF\" stroke-width=\"1.2\"/><text x=\"160\" y=\"294.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Cool rooms</text><text x=\"160\" y=\"306.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Underground rooms beside the tanka beat the</text><text x=\"160\" y=\"319.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">summer heat</text></svg></div><div class=\"diagram-caption\">How a tanka works</div></div><div class=\"pt\">Today, in western Rajasthan, rooftop rainwater harvesting is <b>declining</b> because of plenty of water from the perennial <b>Indira Gandhi Canal</b>, though some houses still keep tankas.</div><div class=\"sec\">Modern examples</div><div class=\"pt\"><b>Gendathur</b> (Mysuru, Karnataka): villagers installed rooftop rainwater harvesting in their households, becoming rich in rainwater.</div><div class=\"pt\"><b>Shillong</b> (Meghalaya): despite the very high rainfall of Cherrapunji and Mawsynram nearby, the city faces shortage; nearly every household has rooftop harvesting, meeting about 15–25% of its needs.</div><div class=\"pt\"><b>Tamil Nadu</b> is the first state to make rooftop rainwater harvesting <b>compulsory</b> for all houses, with legal provisions to punish defaulters.</div><div class=\"exam\"><span class=\"exam-t\">📌 Bamboo drip irrigation (Meghalaya)</span><div>• A 200-year-old system using bamboo pipes to carry water from streams and springs.</div><div>• About 18–20 litres per minute enter the pipes and reach the plants as 20–80 drops per minute.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ Quick Glossary</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Term</th><th>Meaning</th></tr><tr><td>Hydrological cycle</td><td>Continuous movement of water through evaporation, condensation and precipitation</td></tr><tr><td>Water scarcity</td><td>Shortage of water in relation to people's needs</td></tr><tr><td>Dam</td><td>A barrier across flowing water that obstructs or directs its flow, creating a reservoir</td></tr><tr><td>Multi-purpose project</td><td>Dam project serving irrigation, power, flood control, water supply, navigation, fishing</td></tr><tr><td>Rainwater harvesting</td><td>Collecting and storing rainwater for later use or groundwater recharge</td></tr><tr><td>Tanka</td><td>Underground tank in Rajasthan storing rooftop rainwater</td></tr><tr><td>Palar pani</td><td>Rainwater stored in tankas — the purest form of natural water</td></tr><tr><td>Guls / Kuls</td><td>Diversion channels in the Western Himalayas</td></tr><tr><td>Khadins / Johads</td><td>Rain-fed storage structures in agricultural fields of Rajasthan</td></tr></table></div></div>\n  </div>\n\n</div>",
+  "htmlExercises": {
+    "sg3-ex-all": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(0, 198, 255, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #00C6FF; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #00C6FF; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #B3ECFF; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #B3ECFF; font-weight: 700; }\n  .hl { color: #00C6FF; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #00C6FF; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #00C6FF; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(0, 198, 255, 0.10); border: 1.5px dashed #00C6FF; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #00C6FF; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(0, 198, 255, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(0, 198, 255, 0.18); border: 1px solid #00C6FF; color: #B3ECFF; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(0, 198, 255, 0.2); color: #B3ECFF; }\n  .q-card .q-text, .q-card .sub-q { color: #00C6FF !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Multiple choice questions.<br/>(i) Based on the information given below classify each of the situations as 'suffering from water scarcity' or 'not suffering from water scarcity'.<br/>(a) Region with high annual rainfall.<br/>(b) Region having high annual rainfall and large population.<br/>(c) Region having high annual rainfall but water is highly polluted.<br/>(d) Region having low rainfall and low population.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">(a) <b>Not suffering</b> from water scarcity.</div><div class=\"pt\">(b) <b>Suffering</b> — high demand from a large population leads to over-exploitation.</div><div class=\"pt\">(c) <b>Suffering</b> — polluted water is unfit for use.</div><div class=\"pt\">(d) <b>Not suffering</b> — demand is low as the population is small.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">(ii) Which one of the following statements is not an argument in favour of multi-purpose river projects?<br/>(a) Multi-purpose projects bring water to those areas which suffer from water scarcity.<br/>(b) Multi-purpose projects by regulating water flow helps to control floods.<br/>(c) Multi-purpose projects lead to large scale displacements and loss of livelihood.<br/>(d) Multi-purpose projects generate electricity for our industries and our homes.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>(c)</b> Multi-purpose projects lead to large-scale displacements and loss of livelihood — this is an argument <i>against</i> them.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">(iii) Here are some false statements. Identify the mistakes and rewrite them correctly.<br/>(a) Multiplying urban centres with large and dense populations and urban lifestyles have helped in proper utilisation of water resources.<br/>(b) Regulating and damming of rivers does not affect the river's natural flow and its sediment flow.<br/>(c) In Gujarat, the Sabarmati basin farmers were not agitated when higher priority was given to water supply in urban areas, particularly during droughts.<br/>(d) Today in Rajasthan, the practice of rooftop rainwater harvesting has gained popularity despite high water availability due to the Indira Gandhi Canal.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">(a) Multiplying urban centres with large and dense populations and urban lifestyles have led to <b>over-exploitation and depletion</b> of water resources.</div><div class=\"pt\">(b) Regulating and damming of rivers <b>affects</b> the river's natural flow and its sediment flow.</div><div class=\"pt\">(c) In Gujarat, the Sabarmati basin farmers <b>were agitated and almost caused a riot</b> when higher priority was given to water supply in urban areas during droughts.</div><div class=\"pt\">(d) Today in Rajasthan, the practice of rooftop rainwater harvesting is <b>on the decline</b> as plenty of water is available from the perennial Indira Gandhi Canal.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">Answer the following questions in about 30 words.<br/>(i) Explain how water becomes a renewable resource.<br/>(ii) What is water scarcity and what are its main causes?<br/>(iii) Compare the advantages and disadvantages of multi-purpose river projects.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">(i)</div><div class=\"pt\">Fresh water is continually renewed and recharged through the <b>hydrological cycle</b>: water evaporates, condenses into clouds and falls back as rain or snow, refilling rivers, lakes and groundwater.</div><div class=\"sub-q\">(ii)</div><div class=\"pt\"><b>Water scarcity</b> is a shortage of water in relation to people's needs.</div><div class=\"pt\"><b>Causes:</b> over-exploitation, excessive use and unequal access; growing population; irrigated agriculture; industrialisation and urbanisation; pollution of water.</div><div class=\"sub-q\">(iii)</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Advantages</th><th>Disadvantages</th></tr><tr><td>Irrigation, hydel power, water supply for homes and industries</td><td>Displacement of local communities; loss of livelihood</td></tr><tr><td>Flood control, inland navigation, fish breeding, tourism</td><td>Poor sediment flow, fragmented rivers, submerged vegetation; disputes and benefits to big farmers</td></tr></table></div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5.</div>\n    <div class=\"q-text\">Answer the following questions in about 120 words.<br/>(i) Discuss how rainwater harvesting in semi-arid regions of Rajasthan is carried out.<br/>(ii) Describe how modern adaptations of traditional rainwater harvesting methods are being carried out to conserve and store water.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">(i)</div><div class=\"pt\">In semi-arid and arid regions such as <b>Bikaner, Phalodi and Barmer</b>, almost every house traditionally had underground tanks or <b>tankas</b> for storing drinking water.</div><div class=\"pt\">The tankas were part of the well-developed rooftop rainwater harvesting system, built inside the main house or the courtyard and connected to the sloping roofs by a pipe.</div><div class=\"pt\">The <b>first spell of rain</b> was not collected, as it cleaned the roof and pipes; later rain was stored.</div><div class=\"pt\">The stored water, <b>palar pani</b>, is considered the purest form of natural water and is a reliable source of drinking water in summer.</div><div class=\"pt\">Many houses built <b>underground rooms</b> beside the tanka to beat the summer heat.</div><div class=\"pt\">In fields, <b>khadins</b> (Jaisalmer) and <b>johads</b> store rainwater and moisten the soil.</div><div class=\"sub-q\">(ii)</div><div class=\"pt\"><b>Rooftop rainwater harvesting</b> is used to store water and recharge groundwater, e.g. in Gendathur (Karnataka) and Shillong (Meghalaya).</div><div class=\"pt\"><b>Tamil Nadu</b> has made rooftop rainwater harvesting compulsory for all houses, with legal provisions to punish defaulters.</div><div class=\"pt\">Rainwater is directed into <b>recharge pits, wells and tube wells</b> to raise the groundwater table.</div><div class=\"pt\">Traditional structures like <b>johads, khadins and check dams</b> are being revived to conserve runoff.</div><div class=\"pt\"><b>Bamboo drip irrigation</b> in Meghalaya shows efficient use of water.</div></div></div>\n  </div>\n\n</div>",
+    "sg3-ex-board": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(0, 198, 255, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #00C6FF; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #00C6FF; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #B3ECFF; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #B3ECFF; font-weight: 700; }\n  .hl { color: #00C6FF; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #00C6FF; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #00C6FF; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(0, 198, 255, 0.10); border: 1.5px dashed #00C6FF; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #00C6FF; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(0, 198, 255, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(0, 198, 255, 0.18); border: 1px solid #00C6FF; color: #B3ECFF; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(0, 198, 255, 0.2); color: #B3ECFF; }\n  .q-card .q-text, .q-card .sub-q { color: #00C6FF !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\"><div class=\"q-title\">✦ Section A: Very Short Answer (1 Mark)</div></div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">What percentage of the world's water is fresh water?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">About <b>2.5%</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">What share of global precipitation does India receive?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Nearly <b>4%</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Who called dams the “temples of modern India”?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Jawaharlal Nehru</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">On which river is the Sardar Sarovar Dam built?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">The <b>Narmada</b> (Gujarat).</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Name a multi-purpose project that combines water conservation with flood control.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Hirakud</b> project in the Mahanadi basin.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q6. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">What are guls or kuls?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Diversion channels for irrigation in the Western Himalayas.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q7. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">What is palar pani?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Rainwater stored in tankas in Rajasthan — the purest form of natural water.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q8. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Which state first made rooftop rainwater harvesting compulsory for all houses?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Tamil Nadu</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q9. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Who built the tank at Hauz Khas, Delhi?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Iltutmish</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q10. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">What are khadins and johads?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Rain-fed storage structures in agricultural fields of Rajasthan.</div></div></div>\n  </div>\n\n  <div class=\"q-card\"><div class=\"q-title\">✦ Section B: Short Answer (3 Marks)</div></div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q11. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">Why is it necessary to conserve water resources?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">To safeguard ourselves from health hazards.</div><div class=\"pt\">To ensure food security and continue livelihoods and productive activities.</div><div class=\"pt\">To prevent degradation of natural ecosystems.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q12. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">How has industrialisation and urbanisation increased water scarcity?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Industries are heavy users of water and also need hydroelectric power.</div><div class=\"pt\">Multiplying urban centres with dense populations and urban lifestyles demand more water and energy.</div><div class=\"pt\">Housing societies and colonies have their own groundwater pumping devices, over-exploiting groundwater.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q13. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">Why have multi-purpose projects faced resistance?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">They cause large-scale displacement of local communities and loss of livelihood.</div><div class=\"pt\">They damage ecosystems: poor sediment flow, fragmented rivers, submerged forests.</div><div class=\"pt\">Benefits go mainly to landowners and big farmers; examples of protest are the Narmada Bachao Andolan and Tehri Dam Andolan.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q14. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">Describe rooftop rainwater harvesting in Shillong.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Shillong faces water shortage despite being close to Cherrapunji and Mawsynram, which get very high rainfall.</div><div class=\"pt\">Nearly every household has a rooftop rainwater harvesting structure.</div><div class=\"pt\">About 15–25% of the household water requirement is met from it.</div></div></div>\n  </div>\n\n  <div class=\"q-card\"><div class=\"q-title\">✦ Section C: Long Answer (5 Marks)</div></div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q15. <span class=\"badge\">5 Marks</span></div>\n    <div class=\"q-text\">Describe the ecological and social problems caused by multi-purpose projects.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Regulating and damming rivers affects natural flow, causing poor sediment flow and excessive sedimentation in reservoirs.</div><div class=\"pt\">Fragmented rivers make it difficult for aquatic fauna to migrate for spawning.</div><div class=\"pt\">Reservoirs submerge vegetation and soil, which decompose over time.</div><div class=\"pt\">Large-scale displacement of local communities; benefits go to big farmers; inter-state water disputes.</div><div class=\"pt\">Dams have sometimes triggered floods, earthquakes, water-borne diseases and pollution.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q16. <span class=\"badge\">5 Marks</span></div>\n    <div class=\"q-text\">Explain the traditional methods of rainwater harvesting in different parts of India.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Hilly areas:</b> guls or kuls diversion channels in the Western Himalayas.</div><div class=\"pt\"><b>Rajasthan:</b> rooftop harvesting into underground tankas for drinking water.</div><div class=\"pt\"><b>Floodplains of Bengal:</b> inundation channels to irrigate fields.</div><div class=\"pt\"><b>Arid and semi-arid regions:</b> khadins in Jaisalmer and johads in other parts of Rajasthan.</div><div class=\"pt\"><b>Meghalaya:</b> 200-year-old bamboo drip irrigation.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q17. <span class=\"badge\">4 Marks</span></div>\n    <div class=\"q-text\"><b>Source-based:</b> Read the source and answer the questions.<br/><i>“In the semi-arid and arid regions of Rajasthan, particularly in Bikaner, Phalodi and Barmer, almost all the houses traditionally had underground tanks or tankas for storing drinking water. The tankas were part of the well-developed rooftop rainwater harvesting system and were built inside the main house or the courtyard.”</i><br/>(i) Where were tankas built? (1)<br/>(ii) What was the stored water called? (1)<br/>(iii) Why is this practice declining today? (2)</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">(i)</div><div class=\"pt\">Inside the main house or the courtyard.</div><div class=\"sub-q\">(ii)</div><div class=\"pt\"><b>Palar pani</b>.</div><div class=\"sub-q\">(iii)</div><div class=\"pt\">The perennial Indira Gandhi Canal now supplies plenty of water to western Rajasthan.</div><div class=\"pt\">So people depend less on stored rainwater, though some still keep tankas.</div></div></div>\n  </div>\n\n</div>"
   },
-  exercises: [
+  "introduction": "You probably know that 3/4th of the Earth's surface is covered with water. But did you know that most of it is salty ocean water? A very tiny fraction of it is fresh water that we can actually use. That's why water scarcity is becoming a massive problem for humanity across the globe. Let's explore how we manage water through dams and traditional conservation methods.",
+  "definitions": [],
+  "keyPoints": [],
+  "formulas": [],
+  "crux": [],
+  "mcqs": [
     {
-      id: "sg3-ex-all",
-      name: "Exercise Questions",
-      questions: [],
+      "id": "sg3-mcq-1",
+      "question": "<div style='text-align: justify;'>Which of these is NOT an argument in favour of multi-purpose river projects?</div>",
+      "options": [
+        "A):   They bring water to water-scarce areas",
+        "B):   They control floods",
+        "C):   They cause large-scale displacement",
+        "D):   They generate electricity"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Displacement is an argument against such projects.</div>"
     },
+    {
+      "id": "sg3-mcq-2",
+      "question": "<div style='text-align: justify;'>About what percentage of the world's water is in the oceans?</div>",
+      "options": [
+        "A):   96.5%",
+        "B):   30%",
+        "C):   70%",
+        "D):   2.5%"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Only about 2.5% is fresh water.</div>"
+    },
+    {
+      "id": "sg3-mcq-3",
+      "question": "<div style='text-align: justify;'>Nearly 70% of the world's fresh water occurs as:</div>",
+      "options": [
+        "A):   Groundwater",
+        "B):   Lakes",
+        "C):   Rivers",
+        "D):   Ice sheets and glaciers"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>A little less than 30% is groundwater.</div>"
+    },
+    {
+      "id": "sg3-mcq-4",
+      "question": "<div style='text-align: justify;'>India receives nearly what percentage of the global precipitation?</div>",
+      "options": [
+        "A):   1%",
+        "B):   4%",
+        "C):   10%",
+        "D):   20%"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>India ranks 133 in water availability per person.</div>"
+    },
+    {
+      "id": "sg3-mcq-5",
+      "question": "<div style='text-align: justify;'>Water is a renewable resource because of the:</div>",
+      "options": [
+        "A):   Hydrological cycle",
+        "B):   Nitrogen cycle",
+        "C):   Carbon cycle",
+        "D):   Rock cycle"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Water is continually recharged through evaporation and precipitation.</div>"
+    },
+    {
+      "id": "sg3-mcq-6",
+      "question": "<div style='text-align: justify;'>Which of these is a cause of water scarcity?</div>",
+      "options": [
+        "A):   Low population",
+        "B):   Rainwater harvesting",
+        "C):   Over-exploitation of groundwater",
+        "D):   Afforestation"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Excessive use and unequal access cause scarcity.</div>"
+    },
+    {
+      "id": "sg3-mcq-7",
+      "question": "<div style='text-align: justify;'>Sringaverapura, with a water harvesting system of the 1st century BC, is near:</div>",
+      "options": [
+        "A):   Delhi",
+        "B):   Prayagraj",
+        "C):   Bhopal",
+        "D):   Mysuru"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>It channelled the flood water of the Ganga.</div>"
+    },
+    {
+      "id": "sg3-mcq-8",
+      "question": "<div style='text-align: justify;'>The tank at Hauz Khas, Delhi was built by:</div>",
+      "options": [
+        "A):   Alauddin Khalji",
+        "B):   Chandragupta Maurya",
+        "C):   Akbar",
+        "D):   Iltutmish"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>It supplied water to the Siri Fort area.</div>"
+    },
+    {
+      "id": "sg3-mcq-9",
+      "question": "<div style='text-align: justify;'>Bhopal Lake, built in the 11th century, was:</div>",
+      "options": [
+        "A):   A natural lake",
+        "B):   A canal",
+        "C):   A dam on the Narmada",
+        "D):   One of the largest artificial lakes of its time"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>It shows India's long tradition of hydraulic structures.</div>"
+    },
+    {
+      "id": "sg3-mcq-10",
+      "question": "<div style='text-align: justify;'>Who called dams the 'temples of modern India'?</div>",
+      "options": [
+        "A):   Mahatma Gandhi",
+        "B):   Jawaharlal Nehru",
+        "C):   Sardar Patel",
+        "D):   B.R. Ambedkar"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>He saw them as symbols of development.</div>"
+    },
+    {
+      "id": "sg3-mcq-11",
+      "question": "<div style='text-align: justify;'>The Bhakra Nangal project is used for:</div>",
+      "options": [
+        "A):   Only navigation",
+        "B):   Only flood control",
+        "C):   Hydel power and irrigation",
+        "D):   Only fishing"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>It is a multi-purpose project on the Sutlej.</div>"
+    },
+    {
+      "id": "sg3-mcq-12",
+      "question": "<div style='text-align: justify;'>The Hirakud project is in the basin of the:</div>",
+      "options": [
+        "A):   Mahanadi",
+        "B):   Narmada",
+        "C):   Krishna",
+        "D):   Sutlej"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>It integrates conservation with flood control.</div>"
+    },
+    {
+      "id": "sg3-mcq-13",
+      "question": "<div style='text-align: justify;'>The Narmada Bachao Andolan opposed the:</div>",
+      "options": [
+        "A):   Tehri Dam",
+        "B):   Hirakud Dam",
+        "C):   Bhakra Nangal Dam",
+        "D):   Sardar Sarovar Dam"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>It now focuses on rehabilitation of oustees.</div>"
+    },
+    {
+      "id": "sg3-mcq-14",
+      "question": "<div style='text-align: justify;'>The Krishna-Godavari dispute arose over diversion of water at:</div>",
+      "options": [
+        "A):   Koyna",
+        "B):   Tehri",
+        "C):   Hirakud",
+        "D):   Nagarjunasagar"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Karnataka and Andhra Pradesh objected to Maharashtra's plan.</div>"
+    },
+    {
+      "id": "sg3-mcq-15",
+      "question": "<div style='text-align: justify;'>Guls or kuls are found in the:</div>",
+      "options": [
+        "A):   Bengal floodplains",
+        "B):   Thar desert",
+        "C):   Western Himalayas",
+        "D):   Deccan plateau"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>They are diversion channels for irrigation.</div>"
+    },
+    {
+      "id": "sg3-mcq-16",
+      "question": "<div style='text-align: justify;'>Inundation channels for irrigation were developed in the:</div>",
+      "options": [
+        "A):   Western Himalayas",
+        "B):   Floodplains of Bengal",
+        "C):   Rajasthan",
+        "D):   Meghalaya"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Flood water was led into the fields.</div>"
+    },
+    {
+      "id": "sg3-mcq-17",
+      "question": "<div style='text-align: justify;'>Khadins are found in:</div>",
+      "options": [
+        "A):   Shillong",
+        "B):   Jaisalmer",
+        "C):   Mysuru",
+        "D):   Tehri"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Fields were converted into rain-fed storage structures.</div>"
+    },
+    {
+      "id": "sg3-mcq-18",
+      "question": "<div style='text-align: justify;'>Rooftop rainwater harvesting in Rajasthan is declining because of the:</div>",
+      "options": [
+        "A):   Bhakra Canal",
+        "B):   Ganga Canal",
+        "C):   Sardar Sarovar Dam",
+        "D):   Indira Gandhi Canal"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>The perennial canal supplies plenty of water.</div>"
+    },
+    {
+      "id": "sg3-mcq-19",
+      "question": "<div style='text-align: justify;'>Which state first made rooftop rainwater harvesting compulsory for all houses?</div>",
+      "options": [
+        "A):   Kerala",
+        "B):   Rajasthan",
+        "C):   Tamil Nadu",
+        "D):   Karnataka"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Defaulters can be punished by law.</div>"
+    },
+    {
+      "id": "sg3-mcq-20",
+      "question": "<div style='text-align: justify;'>The 200-year-old bamboo drip irrigation system is practised in:</div>",
+      "options": [
+        "A):   Meghalaya",
+        "B):   Assam",
+        "C):   Sikkim",
+        "D):   Kerala"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Water reaches plants as 20–80 drops per minute.</div>"
+    },
+    {
+      "id": "sg3-mcq-21",
+      "question": "<div style='text-align: justify;'>Gendathur, a village rich in rainwater through rooftop harvesting, is in:</div>",
+      "options": [
+        "A):   Rajasthan",
+        "B):   Gujarat",
+        "C):   Karnataka",
+        "D):   Meghalaya"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>It is in Mysuru district.</div>"
+    },
+    {
+      "id": "sg3-mcq-22",
+      "question": "<div style='text-align: justify;'>Arrange in chronological order: (i) Hauz Khas tank (ii) Sringaverapura water system (iii) Bhopal Lake (iv) Mauryan dams and irrigation</div>",
+      "options": [
+        "A):   (ii), (iv), (iii), (i)",
+        "B):   (iv), (ii), (iii), (i)",
+        "C):   (ii), (iii), (iv), (i)",
+        "D):   (ii), (iv), (i), (iii)"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>1st c. BC → Mauryas → 11th c. → 13th c.</div>"
+    },
+    {
+      "id": "sg3-mcq-23",
+      "question": "<div style='text-align: justify;'>Match: (P) Tanka (Q) Kul (R) Khadin (S) Bamboo drip — with (1) Western Himalayas (2) Rajasthan houses (3) Meghalaya (4) Jaisalmer fields</div>",
+      "options": [
+        "A):   P-3, Q-1, R-4, S-2",
+        "B):   P-1, Q-2, R-4, S-3",
+        "C):   P-2, Q-4, R-1, S-3",
+        "D):   P-2, Q-1, R-4, S-3"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Each technique matches its region.</div>"
+    },
+    {
+      "id": "sg3-mcq-24",
+      "question": "<div style='text-align: justify;'>Assertion (A): Shillong faces water shortage. Reason (R): Shillong receives no rainfall at all.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Shillong gets rain but still faces shortage; R is false.</div>"
+    },
+    {
+      "id": "sg3-mcq-25",
+      "question": "<div style='text-align: justify;'>Assertion (A): Regulating and damming of rivers affects their natural flow. Reason (R): Dams cause poor sediment flow and excessive sedimentation in reservoirs.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>R explains how dams alter river flow.</div>"
+    }
   ],
-  examples: [],
-  mcqs: [
+  "summary": [],
+  "exercises": [
     {
-      id: "sg3-mcq-1",
-      question:
-        "Based on rainfall and population, which of the following regions suffers from water scarcity?",
-      options: [
-        "Region with high annual rainfall and low population",
-        "Region with high annual rainfall and large population",
-        "Region with low annual rainfall and low population",
-        "None of these",
-      ],
-      correctAnswer: "b",
+      "id": "sg3-ex-all",
+      "name": "Exercise",
+      "questions": []
     },
     {
-      id: "sg3-mcq-2",
-      question:
-        "Which of the following is NOT an argument in favour of multi-purpose river projects?",
-      options: [
-        "They bring water to water-scarce areas",
-        "They regulate water flow to control floods",
-        "They lead to large-scale displacement and loss of livelihood",
-        "They generate electricity for industries and homes",
-      ],
-      correctAnswer: "c",
-    },
-    {
-      id: "sg3-mcq-3",
-      question:
-        "Multiplying urban centres with large and dense populations and urban lifestyles has led to:",
-      options: [
-        "Proper utilization of water resources",
-        "Over-exploitation and depletion of water resources",
-        "Conservation of water resources",
-        "Increase in rainwater harvesting",
-      ],
-      correctAnswer: "b",
-    },
-    {
-      id: "sg3-mcq-4",
-      question:
-        "Who proudly proclaimed the dams as the 'Temples of modern India'?",
-      options: [
-        "Mahatma Gandhi",
-        "Sardar Vallabhbhai Patel",
-        "Jawaharlal Nehru",
-        "Dr. B.R. Ambedkar",
-      ],
-      correctAnswer: "c",
-    },
-    {
-      id: "sg3-mcq-5",
-      question:
-        "The Narmada Bachao Andolan was a movement directed against which dam?",
-      options: [
-        "Bhakra Nangal Dam",
-        "Sardar Sarovar Dam",
-        "Hirakud Dam",
-        "Tehri Dam",
-      ],
-      correctAnswer: "b",
-    },
-    {
-      id: "sg3-mcq-6",
-      question:
-        "In the semi-arid regions of Rajasthan, agricultural fields were converted into rain-fed storage structures known as:",
-      options: ["Kuls", "Guls", "Baolis", "Khadins and Johads"],
-      correctAnswer: "d",
-    },
-    {
-      id: "sg3-mcq-7",
-      question:
-        "Which is the first state in India to make rooftop rainwater harvesting compulsory?",
-      options: ["Kerala", "Karnataka", "Tamil Nadu", "Rajasthan"],
-      correctAnswer: "c",
-    },
-    {
-      id: "sg3-mcq-8",
-      question: "Which state is famous for 'Guls' or 'Kuls' for irrigation?",
-      options: [
-        "Western Himalayas",
-        "Deccan Plateau",
-        "Thar Desert",
-        "Ganga Plains",
-      ],
-      correctAnswer: "a",
-    },
-    {
-      id: "sg3-mcq-9",
-      question: "In which basin is the Bhakra Nangal project built?",
-      options: [
-        "Satluj-Beas basin",
-        "Ganga-Brahmaputra basin",
-        "Mahanadi basin",
-        "Narmada basin",
-      ],
-      correctAnswer: "a",
-    },
-    {
-      id: "sg3-mcq-10",
-      question: "Hirakud dam is constructed on which river?",
-      options: ["Krishna", "Mahanadi", "Cauvery", "Godavari"],
-      correctAnswer: "b",
-    },
+      "id": "sg3-ex-board",
+      "name": "Board Qs",
+      "questions": []
+    }
   ],
+  "examples": []
 };
