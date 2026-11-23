@@ -1,381 +1,334 @@
 import { ChapterContent } from "../types";
 
-const themeColor = "#FF8A65"; // Mint color for Geography Chapter 7
-
 export const sstGeo7: ChapterContent = {
-  id: "sst-geo-7",
-  number: 7,
-  title: "Lifelines of National Economy",
-  introduction:
-    "A healthy human body needs veins and arteries to supply blood. Similarly, a healthy national economy needs a fast and robust network of transport and communication to supply goods, services, and information. These networks are truly the lifelines of the nation. Let's study how different modes of transport and communication systems drive India's economic growth and connectivity.",
-  definitions: [
-    {
-      term: "Golden Quadrilateral",
-      description:
-        "A major highway network in India connecting Delhi, Mumbai, Chennai, and Kolkata to reduce time and distance between mega cities.",
-    },
-    {
-      term: "National Highways",
-      description:
-        "Primary road systems linking extreme parts of the country, constructed and maintained by the Central Public Works Department (CPWD).",
-    },
-    {
-      term: "State Highways",
-      description:
-        "Roads linking a state capital with different district headquarters, constructed and maintained by the State Public Works Department (PWD).",
-    },
-    {
-      term: "Border Roads",
-      description:
-        "Strategically important roads in the bordering areas of the country, constructed and maintained by the Border Roads Organisation (BRO).",
-    },
-    {
-      term: "International Trade",
-      description:
-        "The exchange of goods, services, or information between two or more countries.",
-    },
-    {
-      term: "Balance of Trade",
-      description:
-        "The difference between the value of exports and the value of imports of a country.",
-    },
-    {
-      term: "Favourable Balance of Trade",
-      description:
-        "An economic situation where the value of a nation's exports exceeds the value of its imports.",
-    },
-    {
-      term: "Unfavourable Balance of Trade",
-      description:
-        "An economic situation where the value of a nation's imports exceeds the value of its exports.",
-    },
-  ],
-  keyPoints: [
-    "Transport, communication, and trade are complementary to each other and serve as the lifelines of the national economy.",
-    "Roadways have an edge over railways because of lower construction costs, ability to traverse mountainous terrains, and providing door-to-door loading and unloading services.",
-    "Railways are the principal mode of transportation for freight and passengers in India, especially for long distances.",
-    "Pipelines are used to transport liquid/slurry materials, crude oil, petroleum products, and natural gas directly from sources to refineries and fertilizer plants, minimizing trans-shipment losses.",
-    "Waterways are the cheapest means of transport, most suitable for carrying heavy and bulky goods, and are highly fuel-efficient and eco-friendly.",
-    "Airways are the fastest, most comfortable, and prestigious mode of transport, capable of crossing high mountains, deserts, and oceans easily.",
-    "Tourism in India has emerged as a key form of trade, promoting national integration and supporting local handicraft industries.",
-  ],
-  formulas: [],
-  crux: [
-    "Roadways vs. Railways: Roads are cheaper, handle steeper slopes, and offer door-to-door service.",
-    "Super Highways: Golden Quadrilateral (Delhi-Mumbai-Chennai-Kolkata), North-South Corridor (Srinagar-Kanyakumari), East-West Corridor (Silchar-Porbandar).",
-    "Pipelines minimize trans-shipment delays and losses.",
-    "Waterways: Inland (cheaper, eco-friendly) and Oceanic (ports for international trade).",
-    "Communication: Personal (letters, phone) and Mass (radio, TV, press, films).",
-    "Trade is the lifeline of economy; favourable balance means exports > imports.",
-  ],
-  summary: [
-    "Transport, communication, and trade form the lifelines of the national economy by facilitating the movement of people, goods, and ideas. India possesses a diverse transport system including roads, railways, pipelines, waterways, and airways.",
-    "International trade has changed significantly in the last 15 years, transitioning from commodity exchange to information, technology, and services exchange, with tourism emerging as a major economic contributor.",
-  ],
-  isHtmlView: true,
-  htmlOverview: `
-        <div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">
-            <p style="line-height: 1.6; font-size: 17px;">A healthy human body needs veins and arteries to supply blood. Similarly, a healthy national economy needs a fast and robust network of transport and communication to supply goods, services, and information. These networks are truly the lifelines of the nation. Let's study how different modes of transport and communication systems drive India's economic growth and connectivity.</p>
-            
-            <h3 style="color: ${themeColor}; text-align: left; margin-top: 20px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px;">Key Definitions</h3>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Golden Quadrilateral:</b> A major highway network in India connecting Delhi, Mumbai, Chennai, and Kolkata to reduce time and distance between mega cities.</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">National Highways:</b> Primary road systems linking extreme parts of the country, constructed and maintained by the Central Public Works Department (CPWD).</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">State Highways:</b> Roads linking a state capital with different district headquarters, constructed and maintained by the State Public Works Department (PWD).</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Border Roads:</b> Strategically important roads in the bordering areas of the country, constructed and maintained by the Border Roads Organisation (BRO).</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">International Trade:</b> The exchange of goods, services, or information between two or more countries.</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Balance of Trade:</b> The difference between the value of exports and the value of imports of a country.</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Favourable Balance of Trade:</b> An economic situation where the value of a nation's exports exceeds the value of its imports.</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Unfavourable Balance of Trade:</b> An economic situation where the value of a nation's imports exceeds the value of its exports.</p>
-
-            <h3 style="color: ${themeColor}; text-align: left; margin-top: 25px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px;">Important Points</h3>
-            <ul style="text-align: left; padding-left: 20px; line-height: 1.6; font-size: 16px;">
-                <li style="margin-bottom: 8px;">Transport, communication, and trade are complementary to each other and serve as the lifelines of the national economy.</li>
-                <li style="margin-bottom: 8px;">Roadways have an edge over railways because of lower construction costs, ability to traverse mountainous terrains, and providing door-to-door loading and unloading services.</li>
-                <li style="margin-bottom: 8px;">Railways are the principal mode of transportation for freight and passengers in India, especially for long distances.</li>
-                <li style="margin-bottom: 8px;">Pipelines are used to transport liquid/slurry materials, crude oil, petroleum products, and natural gas directly from sources to refineries and fertilizer plants, minimizing trans-shipment losses.</li>
-                <li style="margin-bottom: 8px;">Waterways are the cheapest means of transport, most suitable for carrying heavy and bulky goods, and are highly fuel-efficient and eco-friendly.</li>
-                <li style="margin-bottom: 8px;">Airways are the fastest, most comfortable, and prestigious mode of transport, capable of crossing high mountains, deserts, and oceans easily.</li>
-                <li style="margin-bottom: 8px;">Tourism in India has emerged as a key form of trade, promoting national integration and supporting local handicraft industries.</li>
-            </ul>
-
-            <h3 style="color: ${themeColor}; text-align: left; margin-top: 25px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px;">Summary</h3>
-            <p style="line-height: 1.6; font-size: 16px;">Transport, communication, and trade form the lifelines of the national economy by facilitating the movement of people, goods, and ideas. India possesses a diverse transport system including roads, railways, pipelines, waterways, and airways. International trade has changed significantly in the last 15 years, transitioning from commodity exchange to information, technology, and services exchange, with tourism emerging as a major economic contributor.</p>
-        </div>
-    `,
-  htmlExercises: {
-    "sg7-ex-all": `
-            <div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">
-                <!-- 1. Multiple Choice Questions -->
-                <div style="margin-bottom: 25px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 12px; font-size: 18px;">1. Multiple choice questions.</p>
-                    
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: #fff; font-weight: bold; font-size: 15px;">(i) Which two of the following extreme locations are connected by the east-west corridor?</p>
-                        <p style="color: #E0E0E0; font-size: 15px; margin: 4px 0 0 10px;">
-                            (a) Mumbai and Nagpur &nbsp;&nbsp; <b style="color: ${themeColor};">(b) Silchar and Porbandar</b> &nbsp;&nbsp; (c) Mumbai and Kolkata &nbsp;&nbsp; (d) Nagpur and Siligudi
-                        </p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: #fff; font-weight: bold; font-size: 15px;">(ii) Which mode of transportation reduces trans-shipment losses and delays?</p>
-                        <p style="color: #E0E0E0; font-size: 15px; margin: 4px 0 0 10px;">
-                            (a) Railways &nbsp;&nbsp; (b) Roadways &nbsp;&nbsp; <b style="color: ${themeColor};">(c) Pipeline</b> &nbsp;&nbsp; (d) Waterways
-                        </p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: #fff; font-weight: bold; font-size: 15px;">(iii) Which one of the following states is not connected with the H.V.J. pipeline?</p>
-                        <p style="color: #E0E0E0; font-size: 15px; margin: 4px 0 0 10px;">
-                            (a) Madhya Pradesh &nbsp;&nbsp; <b style="color: ${themeColor};">(b) Maharashtra</b> &nbsp;&nbsp; (c) Gujarat &nbsp;&nbsp; (d) Uttar Pradesh
-                        </p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: #fff; font-weight: bold; font-size: 15px;">(iv) Which one of the following ports is the deepest land-locked and well-protected port along the east coast?</p>
-                        <p style="color: #E0E0E0; font-size: 15px; margin: 4px 0 0 10px;">
-                            (a) Chennai &nbsp;&nbsp; (b) Paradwip &nbsp;&nbsp; (c) Tuticorin &nbsp;&nbsp; <b style="color: ${themeColor};">(d) Vishakhapatnam</b>
-                        </p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: #fff; font-weight: bold; font-size: 15px;">(v) Which one of the following is the most important modes of transportation in India?</p>
-                        <p style="color: #E0E0E0; font-size: 15px; margin: 4px 0 0 10px;">
-                            (a) Pipeline &nbsp;&nbsp; <b style="color: ${themeColor};">(b) Railways</b> &nbsp;&nbsp; (c) Roadways &nbsp;&nbsp; (d) Airways
-                        </p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: #fff; font-weight: bold; font-size: 15px;">(vi) Which one of the following terms is used to describe trade between two or more countries?</p>
-                        <p style="color: #E0E0E0; font-size: 15px; margin: 4px 0 0 10px;">
-                            (a) Internal trade &nbsp;&nbsp; <b style="color: ${themeColor};">(b) International trade</b> &nbsp;&nbsp; (c) External trade &nbsp;&nbsp; (d) Local trade
-                        </p>
-                    </div>
-                </div>
-
-                <!-- 2. Answer the following questions in about 30 words -->
-                <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 12px; font-size: 18px;">2. Answer the following questions in about 30 words.</p>
-                    
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: ${themeColor}; font-weight: bold; font-size: 16px;">(i) State any three merits of roadways.</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                            Three merits of roadways are:
-                            <br/>1. Lower construction cost compared to railways.
-                            <br/>2. Ability to traverse steep slopes and mountainous terrains easily.
-                            <br/>3. Provides door-to-door service, reducing loading/unloading costs.
-                        </p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: ${themeColor}; font-weight: bold; font-size: 16px;">(ii) Where and why is rail transport the most convenient means of transportation?</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                            Rail transport is most convenient in the <b>Northern Plains</b> due to vast level lands, high population density, and rich agricultural resources. It easily carries bulky goods over long distances cost-effectively.
-                        </p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: ${themeColor}; font-weight: bold; font-size: 16px;">(iii) What is the significance of the border roads?</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                            Border roads improve access to difficult terrains in border areas of the north and northeast. They are vital for national defense, military movement, and economic development of these remote border regions.
-                        </p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: ${themeColor}; font-weight: bold; font-size: 16px;">(iv) What is meant by trade? What is the difference between international and local trade?</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                            <b>Trade</b> is the exchange of goods and services between people, states, or countries.
-                            <br/>• <b>International Trade</b> takes place between two or more sovereign countries.
-                            <br/>• <b>Local Trade</b> is carried out within the boundaries of a single town, village, or state.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- 3. Answer the following questions in about 120 words -->
-                <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 12px; font-size: 18px;">3. Answer the following questions in about 120 words.</p>
-                    
-                    <div style="margin-left: 10px; margin-bottom: 22px;">
-                        <p style="color: ${themeColor}; font-weight: bold; font-size: 16px;">(i) Why are the means of transportation and communication called the lifelines of a nation and its economy?</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                            Transport and communication act as the circulatory system of a country. They are called lifelines because:
-                            <br/>• <b>Movement of Goods and People:</b> Fast transport enables raw materials to reach factories and finished products to reach markets instantly, driving industrial and agricultural growth.
-                            <br/>• <b>National Integration:</b> They physically connect diverse regions, fostering unity and national identity.
-                            <br/>• <b>Information and Ideation:</b> Modern communication systems (like internet, phones, and mass media) allow instant sharing of ideas and news, which is crucial for trade and governance.
-                            <br/>• <b>Support for Trade:</b> Trade relies entirely on logistics. An efficient transport and communication network directly boosts domestic and international trade, thereby driving economic prosperity and raising living standards.
-                        </p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: ${themeColor}; font-weight: bold; font-size: 16px;">(ii) Write a note on the changing nature of the international trade in the last fifteen years.</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                            The nature of India's international trade has undergone a dramatic shift in the last fifteen years:
-                            <br/>• <b>Transition from Goods to Services:</b> Trade has shifted from exchanging raw commodities to exporting high-value information technology, software services, financial services, and consultancy.
-                            <br/>• <b>Knowledge Economy:</b> India has emerged as a software giant globally, earning significant foreign exchange through IT exports.
-                            <br/>• <b>Diversified Exports:</b> Besides traditional commodities like agriculture and textiles, exports now include chemicals, engineering goods, petroleum products, and gems and jewelry.
-                            <br/>• <b>Rise of Tourism:</b> International tourism has grown rapidly, acting as an invisible export that supports local crafts, generates direct employment, and promotes cultural exchange.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Quiz Drive -->
-                <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 12px; font-size: 18px;">Quiz Drive</p>
-                    
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: ${themeColor}; font-weight: bold; font-size: 16px;">1. Northern terminal of the North-south corridor.</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                            <b>Answer:</b> Srinagar
-                        </p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: ${themeColor}; font-weight: bold; font-size: 16px;">2. The name of National Highway No.2.</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                            <b>Answer:</b> Grand Trunk Road
-                        </p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: ${themeColor}; font-weight: bold; font-size: 16px;">3. The headquarter of the southern railway zone.</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                            <b>Answer:</b> Chennai
-                        </p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: ${themeColor}; font-weight: bold; font-size: 16px;">4. The rail gauge with a track width of 1.676 m.</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                            <b>Answer:</b> Broad Gauge
-                        </p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: ${themeColor}; font-weight: bold; font-size: 16px;">5. The southern terminal of the National Highway No.7.</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                            <b>Answer:</b> Kanyakumari
-                        </p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: ${themeColor}; font-weight: bold; font-size: 16px;">6. A Riverine Port.</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                            <b>Answer:</b> Kolkata
-                        </p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: ${themeColor}; font-weight: bold; font-size: 16px;">7. Busiest railway junction in Northern India.</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                            <b>Answer:</b> Mughalsarai (now Pt. Deen Dayal Upadhyaya Junction)
-                        </p>
-                    </div>
-                </div>
-            </div>
-        `,
+  "id": "sst-geo-7",
+  "number": 7,
+  "title": "Lifelines of National Economy",
+  "isHtmlView": true,
+  "htmlOverview": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 138, 101, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FF8A65; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FF8A65; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFCCBC; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFCCBC; font-weight: 700; }\n  .hl { color: #FF8A65; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FF8A65; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FF8A65; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(255, 138, 101, 0.10); border: 1.5px dashed #FF8A65; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FF8A65; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 138, 101, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(255, 138, 101, 0.18); border: 1px solid #FF8A65; color: #FFCCBC; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(255, 138, 101, 0.2); color: #FFCCBC; }\n  .q-card .q-text, .q-card .sub-q { color: #FF8A65 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 1. Lifelines of the Economy</div><div class=\"sol-step\"><div class=\"rev\">The pace of development of a country depends on the production of goods and services as well as their movement over space. Efficient means of transport, communication and trade are prerequisites for fast development — they are the <span class=\"hl\">lifelines</span> of a nation and its economy. India is well linked with the rest of the world despite its vast size and diversity.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 176\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"176\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#FF8A65\" text-anchor=\"middle\" font-weight=\"700\">Means of Transport and Communication</text><rect x=\"13\" y=\"30\" width=\"142\" height=\"49\" rx=\"6\" fill=\"rgba(255, 138, 101,0.16)\" stroke=\"#FF8A65\" stroke-width=\"1.2\"/><text x=\"84\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Land</text><text x=\"84\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Roadways, railways and</text><text x=\"84\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">pipelines</text><rect x=\"165\" y=\"30\" width=\"142\" height=\"49\" rx=\"6\" fill=\"rgba(79,195,247,0.16)\" stroke=\"#4FC3F7\" stroke-width=\"1.2\"/><text x=\"236\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Water</text><text x=\"236\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Inland waterways and sea</text><text x=\"236\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">routes (ports)</text><rect x=\"13\" y=\"87\" width=\"142\" height=\"61\" rx=\"6\" fill=\"rgba(255,183,77,0.16)\" stroke=\"#FFB74D\" stroke-width=\"1.2\"/><text x=\"84\" y=\"103.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Air</text><text x=\"84\" y=\"114.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Airways: fastest, most</text><text x=\"84\" y=\"126.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">comfortable and</text><text x=\"84\" y=\"138.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">prestigious</text><rect x=\"165\" y=\"87\" width=\"142\" height=\"61\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"236\" y=\"103.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Communication</text><text x=\"236\" y=\"114.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Personal (post,</text><text x=\"236\" y=\"126.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">telephone) and mass</text><text x=\"236\" y=\"138.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">(radio, TV, press, films)</text><text x=\"160\" y=\"162\" font-size=\"9.5\" fill=\"#FF8A65\" text-anchor=\"middle\" font-weight=\"700\">Transport, communication and trade complement each other</text></svg></div><div class=\"diagram-caption\">Transport over land, water and air, plus communication</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 2. Roadways</div><div class=\"sol-step\"><div class=\"rev\">India has one of the largest road networks in the world.</div><div class=\"sec\">Advantages of roads over railways</div><div class=\"pt\">Construction cost of roads is much lower.</div><div class=\"pt\">Roads can traverse dissected and undulating topography and negotiate high gradients — even the Himalayas.</div><div class=\"pt\">Economical for a few persons and smaller amounts of goods over short distances.</div><div class=\"pt\">Provide <b>door-to-door service</b>, so loading and unloading costs are lower.</div><div class=\"pt\">Act as a <b>feeder</b> to other modes — linking railway stations, airports and seaports.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 281\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"281\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#FF8A65\" text-anchor=\"middle\" font-weight=\"700\">Classification of Roads</text><rect x=\"13\" y=\"30\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(255,183,77,0.16)\" stroke=\"#FFB74D\" stroke-width=\"1.2\"/><text x=\"84\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Golden Quadrilateral</text><text x=\"84\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">6-lane super highways:</text><text x=\"84\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Delhi– Kolkata– Chennai–</text><text x=\"84\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Mumbai– Delhi; built by</text><text x=\"84\" y=\"92.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">NHAI</text><rect x=\"165\" y=\"30\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(255, 138, 101,0.16)\" stroke=\"#FF8A65\" stroke-width=\"1.2\"/><text x=\"236\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">National Highways</text><text x=\"236\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Link extreme parts of the</text><text x=\"236\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">country; built by CPWD;</text><text x=\"236\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">NH-1 = Sher-Shah Suri</text><text x=\"236\" y=\"92.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Marg</text><rect x=\"13\" y=\"111\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(255, 138, 101,0.16)\" stroke=\"#FF8A65\" stroke-width=\"1.2\"/><text x=\"84\" y=\"127.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">State Highways</text><text x=\"84\" y=\"138.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Link the state capital</text><text x=\"84\" y=\"150.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">with district</text><text x=\"84\" y=\"162.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">headquarters; built by</text><text x=\"84\" y=\"173.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">State PWD</text><rect x=\"165\" y=\"111\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(255, 138, 101,0.16)\" stroke=\"#FF8A65\" stroke-width=\"1.2\"/><text x=\"236\" y=\"127.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">District Roads</text><text x=\"236\" y=\"138.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Link district</text><text x=\"236\" y=\"150.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">headquarters with other</text><text x=\"236\" y=\"162.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">places; maintained by</text><text x=\"236\" y=\"173.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Zila Parishad</text><rect x=\"13\" y=\"192\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"84\" y=\"208.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Other (rural) Roads</text><text x=\"84\" y=\"219.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Link villages with towns;</text><text x=\"84\" y=\"231.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">boosted by PM Gram Sadak</text><text x=\"84\" y=\"243.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Yojana</text><rect x=\"165\" y=\"192\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(79,195,247,0.16)\" stroke=\"#4FC3F7\" stroke-width=\"1.2\"/><text x=\"236\" y=\"208.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Border Roads</text><text x=\"236\" y=\"219.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Border Roads Organisation</text><text x=\"236\" y=\"231.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">(1960): strategic roads</text><text x=\"236\" y=\"243.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">in the north and</text><text x=\"236\" y=\"254.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">north-east</text></svg></div><div class=\"diagram-caption\">Six classes of roads by capacity</div></div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 360\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"360\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#FF8A65\" text-anchor=\"middle\" font-weight=\"700\">Golden Quadrilateral and Corridors</text><polygon points=\"107.0,104.0 219.0,164.0 138.0,259.0 64.0,199.0\" fill=\"none\" stroke=\"#FF8A65\" stroke-width=\"2.6\"/><polyline points=\"83.0,49.0 107.0,104.0 121.0,136.0 126.0,179.0 120.0,216.0 111.0,260.0 110.0,309.0\" fill=\"none\" stroke=\"#66BB6A\" stroke-width=\"2\" stroke-dasharray=\"6 3\"/><polyline points=\"31.0,174.0 93.0,138.0 121.0,136.0 144.0,122.0 189.0,129.0 219.0,123.0 252.0,129.0 263.0,142.0\" fill=\"none\" stroke=\"#4FC3F7\" stroke-width=\"2\" stroke-dasharray=\"6 3\"/><circle cx=\"83.0\" cy=\"49.0\" r=\"3.6\" fill=\"#FFFFFF\"/><text x=\"91.0\" y=\"53.0\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"start\" font-weight=\"700\">Srinagar</text><circle cx=\"107.0\" cy=\"104.0\" r=\"3.6\" fill=\"#FFFFFF\"/><text x=\"100.0\" y=\"100.0\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"end\" font-weight=\"700\">Delhi</text><circle cx=\"219.0\" cy=\"164.0\" r=\"3.6\" fill=\"#FFFFFF\"/><text x=\"226.0\" y=\"174.0\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"start\" font-weight=\"700\">Kolkata</text><circle cx=\"138.0\" cy=\"259.0\" r=\"3.6\" fill=\"#FFFFFF\"/><text x=\"145.0\" y=\"263.0\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"start\" font-weight=\"700\">Chennai</text><circle cx=\"64.0\" cy=\"199.0\" r=\"3.6\" fill=\"#FFFFFF\"/><text x=\"58.0\" y=\"214.0\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"end\" font-weight=\"700\">Mumbai</text><circle cx=\"110.0\" cy=\"309.0\" r=\"3.6\" fill=\"#FFFFFF\"/><text x=\"117.0\" y=\"313.0\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"start\" font-weight=\"700\">Kanyakumari</text><circle cx=\"263.0\" cy=\"142.0\" r=\"3.6\" fill=\"#FFFFFF\"/><text x=\"261.0\" y=\"158.0\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"end\" font-weight=\"700\">Silchar</text><circle cx=\"31.0\" cy=\"174.0\" r=\"3.6\" fill=\"#FFFFFF\"/><text x=\"31.0\" y=\"190.0\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"start\" font-weight=\"700\">Porbandar</text><line x1=\"14\" y1=\"324\" x2=\"36\" y2=\"324\" stroke=\"#FF8A65\" stroke-width=\"2.6\"/><text x=\"42\" y=\"327.5\" font-size=\"9.5\" fill=\"#FFFFFF\">Golden Quadrilateral (6-lane)</text><line x1=\"14\" y1=\"338\" x2=\"36\" y2=\"338\" stroke=\"#66BB6A\" stroke-width=\"2\" stroke-dasharray=\"6 3\"/><text x=\"42\" y=\"341.5\" font-size=\"9.5\" fill=\"#FFFFFF\">North–South corridor</text><line x1=\"180\" y1=\"338\" x2=\"202\" y2=\"338\" stroke=\"#4FC3F7\" stroke-width=\"2\" stroke-dasharray=\"6 3\"/><text x=\"208\" y=\"341.5\" font-size=\"9.5\" fill=\"#FFFFFF\">East–West</text><text x=\"310\" y=\"354\" font-size=\"8.5\" fill=\"#94A3B8\" text-anchor=\"end\">Cities placed by latitude/longitude; routes simplified</text></svg></div><div class=\"diagram-caption\">Golden Quadrilateral, North–South and East–West corridors</div></div><div class=\"pt\"><b>North–South corridor:</b> Srinagar (J&K) to Kanyakumari (Tamil Nadu). <b>East–West corridor:</b> Silchar (Assam) to Porbandar (Gujarat). The aim is to reduce time and distance between mega cities.</div><div class=\"pt\">Roads are also classified as <b>metalled</b> (cement, concrete or bitumen — all-weather) and <b>unmetalled</b> (go out of use in the rainy season).</div><div class=\"pt\"><b>Road density</b> = length of road per 100 sq km of area.</div><div class=\"sec\">Problems</div><div class=\"pt\">The road network is inadequate for the volume of traffic; about half the roads are unmetalled.</div><div class=\"pt\">National highways are inadequate; roads are congested in cities and many bridges and culverts are old and narrow.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 3. Railways</div><div class=\"sol-step\"><div class=\"rev\">Railways are the <b>principal mode of transportation for freight and passengers</b> in India. They also make it possible to conduct business, sightseeing and pilgrimage, and have been a great <b>integrating force</b> for more than 150 years. The first train ran in <b>1853 from Bombay to Thane</b>, covering 34 km.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 244\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"244\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#FF8A65\" text-anchor=\"middle\" font-weight=\"700\">Railway Gauges (drawn to scale)</text><text x=\"114\" y=\"49\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"end\" font-weight=\"700\">Broad gauge</text><text x=\"114\" y=\"61\" font-size=\"9\" fill=\"#CBD5E1\" text-anchor=\"end\">1.676 m</text><rect x=\"124.0\" y=\"40\" width=\"5\" height=\"24\" fill=\"#6D4C41\"/><rect x=\"168.9\" y=\"40\" width=\"5\" height=\"24\" fill=\"#6D4C41\"/><rect x=\"213.8\" y=\"40\" width=\"5\" height=\"24\" fill=\"#6D4C41\"/><rect x=\"258.7\" y=\"40\" width=\"5\" height=\"24\" fill=\"#6D4C41\"/><rect x=\"303.6\" y=\"40\" width=\"5\" height=\"24\" fill=\"#6D4C41\"/><line x1=\"122\" y1=\"46\" x2=\"305.6\" y2=\"46\" stroke=\"#B0BEC5\" stroke-width=\"3\"/><line x1=\"122\" y1=\"58\" x2=\"305.6\" y2=\"58\" stroke=\"#B0BEC5\" stroke-width=\"3\"/><line x1=\"130\" y1=\"70\" x2=\"297.6\" y2=\"70\" stroke=\"#FF8A65\" stroke-width=\"1.2\"/><line x1=\"130\" y1=\"67\" x2=\"130\" y2=\"73\" stroke=\"#FF8A65\"/><line x1=\"297.6\" y1=\"67\" x2=\"297.6\" y2=\"73\" stroke=\"#FF8A65\"/><text x=\"114\" y=\"97\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"end\" font-weight=\"700\">Metre gauge</text><text x=\"114\" y=\"109\" font-size=\"9\" fill=\"#CBD5E1\" text-anchor=\"end\">1.000 m</text><rect x=\"124.0\" y=\"88\" width=\"5\" height=\"24\" fill=\"#6D4C41\"/><rect x=\"152.0\" y=\"88\" width=\"5\" height=\"24\" fill=\"#6D4C41\"/><rect x=\"180.0\" y=\"88\" width=\"5\" height=\"24\" fill=\"#6D4C41\"/><rect x=\"208.0\" y=\"88\" width=\"5\" height=\"24\" fill=\"#6D4C41\"/><rect x=\"236.0\" y=\"88\" width=\"5\" height=\"24\" fill=\"#6D4C41\"/><line x1=\"122\" y1=\"94\" x2=\"238\" y2=\"94\" stroke=\"#B0BEC5\" stroke-width=\"3\"/><line x1=\"122\" y1=\"106\" x2=\"238\" y2=\"106\" stroke=\"#B0BEC5\" stroke-width=\"3\"/><line x1=\"130\" y1=\"118\" x2=\"230\" y2=\"118\" stroke=\"#FF8A65\" stroke-width=\"1.2\"/><line x1=\"130\" y1=\"115\" x2=\"130\" y2=\"121\" stroke=\"#FF8A65\"/><line x1=\"230.0\" y1=\"115\" x2=\"230.0\" y2=\"121\" stroke=\"#FF8A65\"/><text x=\"114\" y=\"145\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"end\" font-weight=\"700\">Narrow gauge</text><text x=\"114\" y=\"157\" font-size=\"9\" fill=\"#CBD5E1\" text-anchor=\"end\">0.762 m</text><rect x=\"124.0\" y=\"136\" width=\"5\" height=\"24\" fill=\"#6D4C41\"/><rect x=\"146.1\" y=\"136\" width=\"5\" height=\"24\" fill=\"#6D4C41\"/><rect x=\"168.1\" y=\"136\" width=\"5\" height=\"24\" fill=\"#6D4C41\"/><rect x=\"190.2\" y=\"136\" width=\"5\" height=\"24\" fill=\"#6D4C41\"/><rect x=\"212.2\" y=\"136\" width=\"5\" height=\"24\" fill=\"#6D4C41\"/><line x1=\"122\" y1=\"142\" x2=\"214.2\" y2=\"142\" stroke=\"#B0BEC5\" stroke-width=\"3\"/><line x1=\"122\" y1=\"154\" x2=\"214.2\" y2=\"154\" stroke=\"#B0BEC5\" stroke-width=\"3\"/><line x1=\"130\" y1=\"166\" x2=\"206.2\" y2=\"166\" stroke=\"#FF8A65\" stroke-width=\"1.2\"/><line x1=\"130\" y1=\"163\" x2=\"130\" y2=\"169\" stroke=\"#FF8A65\"/><line x1=\"206.2\" y1=\"163\" x2=\"206.2\" y2=\"169\" stroke=\"#FF8A65\"/><text x=\"114\" y=\"193\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"end\" font-weight=\"700\">Narrow gauge</text><text x=\"114\" y=\"205\" font-size=\"9\" fill=\"#CBD5E1\" text-anchor=\"end\">0.610 m</text><rect x=\"124.0\" y=\"184\" width=\"5\" height=\"24\" fill=\"#6D4C41\"/><rect x=\"142.3\" y=\"184\" width=\"5\" height=\"24\" fill=\"#6D4C41\"/><rect x=\"160.5\" y=\"184\" width=\"5\" height=\"24\" fill=\"#6D4C41\"/><rect x=\"178.8\" y=\"184\" width=\"5\" height=\"24\" fill=\"#6D4C41\"/><rect x=\"197.0\" y=\"184\" width=\"5\" height=\"24\" fill=\"#6D4C41\"/><line x1=\"122\" y1=\"190\" x2=\"199\" y2=\"190\" stroke=\"#B0BEC5\" stroke-width=\"3\"/><line x1=\"122\" y1=\"202\" x2=\"199\" y2=\"202\" stroke=\"#B0BEC5\" stroke-width=\"3\"/><line x1=\"130\" y1=\"214\" x2=\"191\" y2=\"214\" stroke=\"#FF8A65\" stroke-width=\"1.2\"/><line x1=\"130\" y1=\"211\" x2=\"130\" y2=\"217\" stroke=\"#FF8A65\"/><line x1=\"191.0\" y1=\"211\" x2=\"191.0\" y2=\"217\" stroke=\"#FF8A65\"/><text x=\"160\" y=\"234\" font-size=\"9\" fill=\"#CBD5E1\" text-anchor=\"middle\">Gauge = distance between the two rails (orange bar)</text></svg></div><div class=\"diagram-caption\">Broad, metre and narrow gauges</div></div><div class=\"sec\">Factors affecting distribution of railways</div><div class=\"pt\"><b>Northern plains:</b> vast level land, high population density and rich agriculture are most favourable; but many rivers need bridges across wide beds.</div><div class=\"pt\"><b>Peninsula:</b> tracks laid through low hills, gaps or tunnels; the Sahyadri crossed only through passes (ghats).</div><div class=\"pt\"><b>Himalayas:</b> unfavourable — high relief, sparse population, few economic opportunities.</div><div class=\"pt\">Difficult terrain: sandy plains of western Rajasthan, swamps of Gujarat, forests of MP, Chhattisgarh, Odisha and Jharkhand.</div><div class=\"pt\">The <b>Konkan Railway</b> along the west coast eased movement in an important economic region but faced sinking of track and landslides.</div><div class=\"sec\">Problems</div><div class=\"pt\">Ticketless travel, theft and damage to railway property, and unnecessary chain-pulling cause heavy losses.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 4. Pipelines</div><div class=\"sol-step\"><div class=\"rev\">Pipelines are a new arrival on India's transport map. Earlier used for water, they now carry <b>crude oil, petroleum products and natural gas</b> from fields to refineries, fertiliser factories and thermal power plants. Solids can also be carried as <b>slurry</b>.</div><div class=\"pt\">Inland refineries like <b>Barauni, Mathura and Panipat</b>, and gas-based fertiliser plants, became possible only because of pipelines.</div><div class=\"pt\">Initial cost of laying pipelines is high, but running costs are minimal; they <b>rule out trans-shipment losses and delays</b>.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 223\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"223\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#FF8A65\" text-anchor=\"middle\" font-weight=\"700\">Important Pipeline Networks</text><rect x=\"13\" y=\"30\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(255, 138, 101,0.16)\" stroke=\"#FF8A65\" stroke-width=\"1.2\"/><text x=\"84\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Upper Assam → Kanpur</text><text x=\"84\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Via Guwahati, Barauni,</text><text x=\"84\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Allahabad; branches to</text><text x=\"84\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Haldia, Maurigram,</text><text x=\"84\" y=\"92.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Siliguri</text><rect x=\"165\" y=\"30\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(255, 138, 101,0.16)\" stroke=\"#FF8A65\" stroke-width=\"1.2\"/><text x=\"236\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Salaya → Jalandhar</text><text x=\"236\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Gujarat to Punjab via</text><text x=\"236\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Viramgam, Mathura, Delhi,</text><text x=\"236\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Sonipat; branch to Koyali</text><rect x=\"89\" y=\"111\" width=\"142\" height=\"84\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"160\" y=\"127.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Hazira → Jagdishpur</text><text x=\"160\" y=\"138.7\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">(HVJ)</text><text x=\"160\" y=\"150.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Gas pipeline: Gujarat to</text><text x=\"160\" y=\"162.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">UP via Vijaipur (MP);</text><text x=\"160\" y=\"173.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">branches to Kota and UP</text><text x=\"160\" y=\"185.5\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">towns</text><text x=\"160\" y=\"209\" font-size=\"9.5\" fill=\"#FF8A65\" text-anchor=\"middle\" font-weight=\"700\">High laying cost, low running cost, no trans-shipment losses</text></svg></div><div class=\"diagram-caption\">Three important pipeline networks</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 5. Waterways</div><div class=\"sol-step\"><div class=\"rev\">Waterways are the <b>cheapest</b> means of transport, most suitable for heavy and bulky goods, and a fuel-efficient, environment-friendly mode. India has inland waterways of about <b>14,500 km</b>, of which about 5,685 km are navigable by mechanised vessels.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>National Waterway</th><th>Stretch</th></tr><tr><td>NW-1</td><td>Ganga: Allahabad (Prayagraj) to Haldia (1,620 km)</td></tr><tr><td>NW-2</td><td>Brahmaputra: Sadiya to Dhubri (891 km)</td></tr><tr><td>NW-3</td><td>West Coast Canal in Kerala: Kottapuram–Kollam, Udyogamandal and Champakkara canals (205 km)</td></tr><tr><td>NW-4</td><td>Stretches of the Godavari and Krishna with the Kakinada–Puducherry canals (1,078 km)</td></tr><tr><td>NW-5</td><td>Stretches of the Brahmani, Matai, Mahanadi–Brahmani delta channels and East Coast Canal (588 km)</td></tr></table></div><div class=\"pt\">Other inland waterways: Mandavi, Zuari and Cumberjua, Sunderbans, Barak and the backwaters of Kerala.</div><div class=\"sec\">Major sea ports</div><div class=\"rev\">India's coastline is about <b>7,516.6 km</b> long, with <b>12 major</b> and about 200 notified non-major ports. The major ports handle about <b>95%</b> of India's foreign trade.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Port</th><th>Key facts</th></tr><tr><td><b>Kandla</b> (Deendayal), Kachchh</td><td>First port developed after Independence (to replace Karachi and ease Mumbai); a tidal port serving the granary and industrial belt from J&K to Gujarat</td></tr><tr><td><b>Mumbai</b></td><td>Biggest port; spacious natural, well-sheltered harbour; <b>Jawaharlal Nehru port</b> built to decongest it</td></tr><tr><td><b>Marmagao</b>, Goa</td><td>Premier iron ore exporting port (about 50% of India's iron ore exports)</td></tr><tr><td><b>New Mangalore</b>, Karnataka</td><td>Exports iron ore concentrates from Kudremukh</td></tr><tr><td><b>Kochi</b></td><td>Extreme south-west; at the entrance of a lagoon with a natural harbour</td></tr><tr><td><b>Tuticorin</b>, Tamil Nadu</td><td>Extreme south-east; natural harbour, rich hinterland; trade with Sri Lanka and Maldives</td></tr><tr><td><b>Chennai</b></td><td>One of the oldest artificial ports; next to Mumbai in volume of trade</td></tr><tr><td><b>Visakhapatnam</b></td><td>Deepest land-locked, well-protected port; first an outlet for iron ore</td></tr><tr><td><b>Paradip</b>, Odisha</td><td>Specialises in iron ore exports</td></tr><tr><td><b>Kolkata</b></td><td>Inland riverine, tidal port; needs constant dredging of the Hoogly; <b>Haldia</b> built as a subsidiary port</td></tr></table></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 6. Airways</div><div class=\"sol-step\"><div class=\"pt\">The <b>fastest, most comfortable and prestigious</b> mode; can cover high mountains, deserts, dense forests and long ocean stretches with ease.</div><div class=\"pt\">It has eased access to the <b>north-east</b> — big rivers, dissected relief, dense forests, frequent floods and international frontiers.</div><div class=\"pt\">Air transport was <b>nationalised in 1953</b>. <b>Air India</b> provides domestic and international services.</div><div class=\"pt\"><b>Pawan Hans Helicopters Ltd.</b> serves ONGC's off-shore operations and inaccessible areas in the north-east and interior J&K, HP and Uttarakhand.</div><div class=\"pt\">Air travel is not within reach of common people; special provisions extend services to people in the north-eastern states.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 7. Communication</div><div class=\"sol-step\"><div class=\"sec\">Postal network</div><div class=\"pt\">The Indian postal network is the <b>largest in the world</b>.</div><div class=\"pt\"><b>First-class mail</b> (cards, envelopes) is airlifted; <b>second-class mail</b> (book packets, registered newspapers, periodicals) goes by surface mail.</div><div class=\"pt\">Six mail channels for quick delivery: <b>Rajdhani, Metro, Green, Business, Bulk Mail and Periodical</b> channels.</div><div class=\"sec\">Telecommunication</div><div class=\"pt\">India has one of the largest telecom networks in Asia; STD facility is being extended to every village, with uniform STD rates all over India.</div><div class=\"sec\">Mass communication</div><div class=\"pt\"><b>All India Radio (Akashvani)</b> broadcasts in national, regional and local languages; <b>Doordarshan</b> is one of the largest terrestrial networks in the world.</div><div class=\"pt\">The largest number of newspapers is published in <b>Hindi</b>, followed by English and Urdu.</div><div class=\"pt\">India is the <b>largest producer of feature films</b> in the world; the <b>Central Board of Film Certification</b> certifies Indian and foreign films.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 8. International Trade and Tourism</div><div class=\"sol-step\"><div class=\"rev\">Exchange of goods among people, states and countries is <span class=\"hl\">trade</span>; the market is where it takes place. Trade between two countries is <b>international trade</b>; trade within cities, towns and villages is <b>local trade</b>; trade between states is state-level trade.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 173\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"173\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#FF8A65\" text-anchor=\"middle\" font-weight=\"700\">Balance of Trade</text><rect x=\"60\" y=\"30\" width=\"200\" height=\"51\" rx=\"6\" fill=\"rgba(255, 138, 101,0.16)\" stroke=\"#FF8A65\" stroke-width=\"1.2\"/><text x=\"160\" y=\"46.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Balance of trade</text><text x=\"160\" y=\"58.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Difference between the value of</text><text x=\"160\" y=\"71.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">exports and imports</text><line x1=\"160\" y1=\"82\" x2=\"160\" y2=\"89\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 94 L163.5 88 L156.5 88 Z\" fill=\"#B0BEC5\"/><rect x=\"13\" y=\"96\" width=\"142\" height=\"49\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"84\" y=\"112.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Favourable</text><text x=\"84\" y=\"123.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Value of exports is MORE</text><text x=\"84\" y=\"135.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">than value of imports</text><rect x=\"165\" y=\"96\" width=\"142\" height=\"49\" rx=\"6\" fill=\"rgba(239,83,80,0.16)\" stroke=\"#EF5350\" stroke-width=\"1.2\"/><text x=\"236\" y=\"112.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Unfavourable</text><text x=\"236\" y=\"123.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Value of imports is MORE</text><text x=\"236\" y=\"135.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">than value of exports</text><text x=\"160\" y=\"159\" font-size=\"9.5\" fill=\"#FF8A65\" text-anchor=\"middle\" font-weight=\"700\">International trade is an economic barometer of a country</text></svg></div><div class=\"diagram-caption\">Exports versus imports</div></div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>India exports</th><th>India imports</th></tr><tr><td>Gems and jewellery, chemicals and related products, agriculture and allied products</td><td>Petroleum crude and products, gems and jewellery, chemicals, base metals, electronic items, machinery, agricultural products</td></tr></table></div><div class=\"pt\">India has emerged as a <b>software giant</b>, earning large foreign exchange through IT exports.</div><div class=\"sec\">Tourism as a trade</div><div class=\"pt\">Tourism promotes national integration, supports local handicrafts and cultural pursuits, and builds international understanding of our culture and heritage.</div><div class=\"pt\">Types: heritage, eco, adventure, cultural, medical and business tourism.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ Quick Glossary</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Term</th><th>Meaning</th></tr><tr><td>Golden Quadrilateral</td><td>6-lane super highways linking Delhi, Kolkata, Chennai and Mumbai</td></tr><tr><td>Road density</td><td>Length of road per 100 sq km of area</td></tr><tr><td>Metalled road</td><td>All-weather road of cement, concrete or bitumen</td></tr><tr><td>Gauge</td><td>Distance between the two rails of a railway track</td></tr><tr><td>Trans-shipment</td><td>Transferring goods from one mode of transport to another</td></tr><tr><td>Riverine port</td><td>A port on a river, e.g. Kolkata</td></tr><tr><td>Balance of trade</td><td>Difference between the value of exports and imports</td></tr><tr><td>Mass communication</td><td>Communication reaching large numbers at once: radio, TV, press, films</td></tr></table></div></div>\n  </div>\n\n</div>",
+  "htmlExercises": {
+    "sg7-ex-all": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 138, 101, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FF8A65; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FF8A65; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFCCBC; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFCCBC; font-weight: 700; }\n  .hl { color: #FF8A65; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FF8A65; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FF8A65; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(255, 138, 101, 0.10); border: 1.5px dashed #FF8A65; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FF8A65; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 138, 101, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(255, 138, 101, 0.18); border: 1px solid #FF8A65; color: #FFCCBC; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(255, 138, 101, 0.2); color: #FFCCBC; }\n  .q-card .q-text, .q-card .sub-q { color: #FF8A65 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Multiple choice questions.<br/>(i) Which two of the following extreme locations are connected by the east-west corridor?<br/>(a) Mumbai and Nagpur&nbsp;&nbsp; (b) Silchar and Porbandar&nbsp;&nbsp; (c) Mumbai and Kolkata&nbsp;&nbsp; (d) Nagpur and Siligudi<br/>(ii) Which mode of transportation reduces trans-shipment losses and delays?<br/>(a) Railways&nbsp;&nbsp; (b) Roadways&nbsp;&nbsp; (c) Pipeline&nbsp;&nbsp; (d) Waterways<br/>(iii) Which one of the following states is not connected with the H.V.J. pipeline?<br/>(a) Madhya Pradesh&nbsp;&nbsp; (b) Maharashtra&nbsp;&nbsp; (c) Gujarat&nbsp;&nbsp; (d) Uttar Pradesh<br/>(iv) Which one of the following ports is the deepest land-locked and well-protected port along the east coast?<br/>(a) Chennai&nbsp;&nbsp; (b) Paradwip&nbsp;&nbsp; (c) Tuticorin&nbsp;&nbsp; (d) Vishakhapatnam<br/>(v) Which one of the following is the most important modes of transportation in India?<br/>(a) Pipeline&nbsp;&nbsp; (b) Railways&nbsp;&nbsp; (c) Roadways&nbsp;&nbsp; (d) Airways<br/>(vi) Which one of the following terms is used to describe trade between two or more countries?<br/>(a) Internal trade&nbsp;&nbsp; (b) International trade&nbsp;&nbsp; (c) External trade&nbsp;&nbsp; (d) Local trade</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">(i) <b>(b) Silchar and Porbandar</b></div><div class=\"pt\">(ii) <b>(c) Pipeline</b></div><div class=\"pt\">(iii) <b>(b) Maharashtra</b> — HVJ runs from Hazira (Gujarat) via Vijaipur (MP) to Jagdishpur (UP).</div><div class=\"pt\">(iv) <b>(d) Vishakhapatnam</b></div><div class=\"pt\">(v) <b>(b) Railways</b> — the principal mode for freight and passengers.</div><div class=\"pt\">(vi) <b>(b) International trade</b></div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Answer the following questions in about 30 words.<br/>(i) State any three merits of roadways.<br/>(ii) Where and why is rail transport the most convenient means of transportation?<br/>(iii) What is the significance of the border roads?<br/>(iv) What is meant by trade? What is the difference between international and local trade?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">(i)</div><div class=\"pt\">Construction cost is much lower than railways.</div><div class=\"pt\">Roads can cross dissected, undulating and mountainous terrain.</div><div class=\"pt\">They provide door-to-door service, reducing loading and unloading costs (and act as feeders to other modes).</div><div class=\"sub-q\">(ii)</div><div class=\"pt\">In the <b>Northern Plains</b>, because of vast level land, high population density and rich agricultural resources.</div><div class=\"pt\">Railways carry bulky goods and large numbers of passengers over long distances cheaply.</div><div class=\"sub-q\">(iii)</div><div class=\"pt\">Built by the Border Roads Organisation (1960) in the northern and north-eastern border areas.</div><div class=\"pt\">They are of strategic importance for defence and have improved accessibility and economic development in difficult terrain.</div><div class=\"sub-q\">(iv)</div><div class=\"pt\"><b>Trade</b> is the exchange of goods among people, states and countries.</div><div class=\"pt\"><b>International trade</b> is between two or more countries; <b>local trade</b> takes place within cities, towns and villages.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Answer the following questions in about 120 words.<br/>(i) Why are the means of transportation and communication called the lifelines of a nation and its economy?<br/>(ii) Write a note on the changing nature of the international trade in the last fifteen years.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">(i)</div><div class=\"pt\">Development depends on producing goods and services and on moving them over space; transport and communication make this movement possible.</div><div class=\"pt\">Transport carries raw materials to factories and finished goods to markets, helping agriculture, industry and trade grow.</div><div class=\"pt\">Communication spreads information, news and ideas quickly, helping business, governance and awareness of national programmes.</div><div class=\"pt\">They link remote areas with the rest of the country and promote national integration.</div><div class=\"pt\">They connect India with the world, supporting international trade and tourism.</div><div class=\"pt\">Like lifelines in the body, they keep the economy running — hence they are called the lifelines of the nation.</div><div class=\"sub-q\">(ii)</div><div class=\"pt\">India now has trade relations with all major trading blocs and all regions of the world.</div><div class=\"pt\">The commodity composition has changed: exports include gems and jewellery, chemicals, engineering and agricultural products; imports include petroleum, gems, chemicals, base metals, electronic items and machinery.</div><div class=\"pt\">Trade has shifted from goods towards <b>services</b> — India has emerged as a <b>software giant</b>, earning large foreign exchange through IT exports.</div><div class=\"pt\"><b>Tourism</b> has grown as a trade, supporting handicrafts and earning foreign exchange.</div><div class=\"pt\">The volume and value of trade have increased, reflecting India's growing economic strength.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">Quiz Drive<br/>1. Northern terminal of the North-South corridor.<br/>2. The name of National Highway No. 2.<br/>3. The headquarters of the southern railway zone.<br/>4. The rail gauge with a track width of 1.676 m.<br/>5. The southern terminal of the National Highway No. 7.<br/>6. A riverine port.<br/>7. Busiest railway junction in Northern India.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">1. <b>Srinagar</b></div><div class=\"pt\">2. <b>Grand Trunk Road</b> (Delhi–Kolkata section, as per the old numbering)</div><div class=\"pt\">3. <b>Chennai</b></div><div class=\"pt\">4. <b>Broad gauge</b></div><div class=\"pt\">5. <b>Kanyakumari</b> (old numbering)</div><div class=\"pt\">6. <b>Kolkata</b></div><div class=\"pt\">7. <b>Mughalsarai</b> (now Pt. Deen Dayal Upadhyaya Junction)</div></div></div>\n  </div>\n\n</div>",
+    "sg7-ex-board": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 138, 101, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FF8A65; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FF8A65; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFCCBC; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFCCBC; font-weight: 700; }\n  .hl { color: #FF8A65; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FF8A65; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FF8A65; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(255, 138, 101, 0.10); border: 1.5px dashed #FF8A65; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FF8A65; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 138, 101, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(255, 138, 101, 0.18); border: 1px solid #FF8A65; color: #FFCCBC; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(255, 138, 101, 0.2); color: #FFCCBC; }\n  .q-card .q-text, .q-card .sub-q { color: #FF8A65 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\"><div class=\"q-title\">✦ Section A: Very Short Answer (1 Mark)</div></div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Which cities are linked by the Golden Quadrilateral?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Delhi, Kolkata, Chennai and Mumbai</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Which highway is called NH-1?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">The historical <b>Sher-Shah Suri Marg</b> (Delhi–Amritsar).</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Who maintains district roads?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">The <b>Zila Parishad</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">When was the Border Roads Organisation established?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">In <b>1960</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">When and between which places did the first train run in India?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">In <b>1853</b>, from Bombay to Thane (34 km).</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q6. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">What is the width of the metre gauge?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>1.000 m</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q7. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Which National Waterway is on the Brahmaputra?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>NW-2</b> (Sadiya to Dhubri).</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q8. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Which port was developed soon after Independence to replace Karachi?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Kandla</b> (Deendayal Port).</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q9. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">When was air transport nationalised in India?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">In <b>1953</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q10. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">What is a favourable balance of trade?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">When the value of exports is more than the value of imports.</div></div></div>\n  </div>\n\n  <div class=\"q-card\"><div class=\"q-title\">✦ Section B: Short Answer (3 Marks)</div></div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q11. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">Why are pipelines a useful means of transport?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">They carry crude oil, petroleum products, natural gas and even solids as slurry to refineries, fertiliser plants and power plants.</div><div class=\"pt\">Inland refineries like Barauni, Mathura and Panipat became possible because of them.</div><div class=\"pt\">Though laying cost is high, running cost is minimal and they rule out trans-shipment losses and delays.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q12. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">State any three problems faced by road transport in India.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">The road network is inadequate for the volume of traffic.</div><div class=\"pt\">About half the roads are unmetalled and unusable in the rainy season.</div><div class=\"pt\">Roads are congested in cities; many bridges and culverts are old and narrow.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q13. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">Why is waterways the cheapest means of transport?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">No cost of building a track — rivers and seas are natural routes.</div><div class=\"pt\">Ideal for heavy and bulky goods.</div><div class=\"pt\">Fuel-efficient and environment-friendly.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q14. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">How does tourism help the country?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Promotes national integration and international understanding of our culture and heritage.</div><div class=\"pt\">Supports local handicrafts and cultural pursuits and creates employment.</div><div class=\"pt\">Earns foreign exchange through heritage, eco, adventure, cultural, medical and business tourism.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q15. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">Distinguish between first-class and second-class mail.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>First-class mail</th><th>Second-class mail</th></tr><tr><td>Cards and envelopes</td><td>Book packets, registered newspapers and periodicals</td></tr><tr><td>Airlifted between stations (land and air)</td><td>Carried by surface mail (land and water)</td></tr></table></div></div></div>\n  </div>\n\n  <div class=\"q-card\"><div class=\"q-title\">✦ Section C: Long Answer (5 Marks)</div></div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q16. <span class=\"badge\">5 Marks</span></div>\n    <div class=\"q-text\">Explain the factors that influence the distribution of railways in India.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Northern plains:</b> level land, dense population and rich agriculture favour railways; wide rivers need bridges.</div><div class=\"pt\"><b>Peninsular region:</b> lines through low hills, gaps or tunnels; the Sahyadri crossed through ghats.</div><div class=\"pt\"><b>Himalayas:</b> high relief, sparse population and few economic opportunities make it unfavourable.</div><div class=\"pt\"><b>Difficult areas:</b> sandy plains of Rajasthan, swamps of Gujarat, forests of central and eastern India.</div><div class=\"pt\"><b>Konkan Railway</b> overcame the west coast barrier but faced track sinking and landslides.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q17. <span class=\"badge\">5 Marks</span></div>\n    <div class=\"q-text\">Describe the major ports on the east coast of India.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Tuticorin:</b> extreme south-east; natural harbour; trade with Sri Lanka and Maldives.</div><div class=\"pt\"><b>Chennai:</b> one of the oldest artificial ports; second to Mumbai in trade volume.</div><div class=\"pt\"><b>Visakhapatnam:</b> deepest land-locked, well-protected port; first an outlet for iron ore.</div><div class=\"pt\"><b>Paradip:</b> Odisha; specialises in iron ore exports.</div><div class=\"pt\"><b>Kolkata:</b> inland riverine tidal port needing dredging of the Hoogly; <b>Haldia</b> is its subsidiary port.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q18. <span class=\"badge\">4 Marks</span></div>\n    <div class=\"q-text\"><b>Source-based:</b> Read the source and answer the questions.<br/><i>“The Government of India has launched a major road development project linking Delhi-Kolkata-Chennai-Mumbai and Delhi by six-lane Super Highways. The North-South corridors linking Srinagar and Kanyakumari, and East-West Corridor connecting Silchar and Porbandar are a part of this project.”</i><br/>(i) What is this project called? (1)<br/>(ii) Which agency implements it? (1)<br/>(iii) What is the major objective of these super highways? (2)</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">(i)</div><div class=\"pt\">The <b>Golden Quadrilateral</b> Super Highways.</div><div class=\"sub-q\">(ii)</div><div class=\"pt\">The <b>National Highway Authority of India (NHAI)</b>.</div><div class=\"sub-q\">(iii)</div><div class=\"pt\">To reduce the time and distance between the mega cities of India.</div><div class=\"pt\">This speeds up movement of goods and people and boosts economic development.</div></div></div>\n  </div>\n\n</div>"
   },
-  exercises: [
+  "introduction": "A healthy human body needs veins and arteries to supply blood. Similarly, a healthy national economy needs a fast and robust network of transport and communication to supply goods, services, and information. These networks are truly the lifelines of the nation. Let's study how different modes of transport and communication systems drive India's economic growth and connectivity.",
+  "definitions": [],
+  "keyPoints": [],
+  "formulas": [],
+  "crux": [],
+  "mcqs": [
     {
-      id: "sg7-ex-all",
-      name: "Exercise Questions",
-      questions: [],
+      "id": "sg7-mcq-1",
+      "question": "<div style='text-align: justify;'>The East-West corridor connects:</div>",
+      "options": [
+        "A):   Mumbai and Nagpur",
+        "B):   Mumbai and Kolkata",
+        "C):   Silchar and Porbandar",
+        "D):   Nagpur and Siliguri"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>The North-South corridor links Srinagar and Kanyakumari.</div>"
     },
+    {
+      "id": "sg7-mcq-2",
+      "question": "<div style='text-align: justify;'>Which mode of transport reduces trans-shipment losses and delays?</div>",
+      "options": [
+        "A):   Pipeline",
+        "B):   Roadways",
+        "C):   Railways",
+        "D):   Waterways"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Goods move directly from source to destination.</div>"
+    },
+    {
+      "id": "sg7-mcq-3",
+      "question": "<div style='text-align: justify;'>Which state is NOT connected by the HVJ pipeline?</div>",
+      "options": [
+        "A):   Madhya Pradesh",
+        "B):   Uttar Pradesh",
+        "C):   Gujarat",
+        "D):   Maharashtra"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>It runs Hazira–Vijaipur–Jagdishpur.</div>"
+    },
+    {
+      "id": "sg7-mcq-4",
+      "question": "<div style='text-align: justify;'>The deepest land-locked and well-protected port on the east coast is:</div>",
+      "options": [
+        "A):   Chennai",
+        "B):   Visakhapatnam",
+        "C):   Tuticorin",
+        "D):   Paradip"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>It was first an outlet for iron ore.</div>"
+    },
+    {
+      "id": "sg7-mcq-5",
+      "question": "<div style='text-align: justify;'>The principal mode of transportation for freight and passengers in India is:</div>",
+      "options": [
+        "A):   Railways",
+        "B):   Pipeline",
+        "C):   Roadways",
+        "D):   Airways"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Railways are also a great integrating force.</div>"
+    },
+    {
+      "id": "sg7-mcq-6",
+      "question": "<div style='text-align: justify;'>Trade between two or more countries is called:</div>",
+      "options": [
+        "A):   Internal trade",
+        "B):   Local trade",
+        "C):   International trade",
+        "D):   State trade"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>It may take place by sea, air or land.</div>"
+    },
+    {
+      "id": "sg7-mcq-7",
+      "question": "<div style='text-align: justify;'>The Golden Quadrilateral super highways are implemented by:</div>",
+      "options": [
+        "A):   CPWD",
+        "B):   NHAI",
+        "C):   State PWD",
+        "D):   Zila Parishad"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>They are six-lane highways.</div>"
+    },
+    {
+      "id": "sg7-mcq-8",
+      "question": "<div style='text-align: justify;'>National Highways are laid and maintained by:</div>",
+      "options": [
+        "A):   NHAI only",
+        "B):   Border Roads Organisation",
+        "C):   Zila Parishad",
+        "D):   CPWD"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>State highways are built by State PWD.</div>"
+    },
+    {
+      "id": "sg7-mcq-9",
+      "question": "<div style='text-align: justify;'>The Sher-Shah Suri Marg is called:</div>",
+      "options": [
+        "A):   NH-44",
+        "B):   NH-2",
+        "C):   NH-7",
+        "D):   NH-1"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>It runs between Delhi and Amritsar.</div>"
+    },
+    {
+      "id": "sg7-mcq-10",
+      "question": "<div style='text-align: justify;'>Rural roads got a special impetus under:</div>",
+      "options": [
+        "A):   Golden Quadrilateral",
+        "B):   Pradhan Mantri Grameen Sadak Yojana",
+        "C):   Border Roads",
+        "D):   Sagarmala"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Every village is to be linked by an all-season road.</div>"
+    },
+    {
+      "id": "sg7-mcq-11",
+      "question": "<div style='text-align: justify;'>Road density is the length of road per:</div>",
+      "options": [
+        "A):   10 sq km",
+        "B):   1,000 sq km",
+        "C):   100 sq km",
+        "D):   1 sq km"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>It shows how well an area is served by roads.</div>"
+    },
+    {
+      "id": "sg7-mcq-12",
+      "question": "<div style='text-align: justify;'>The first train in India ran in 1853 between:</div>",
+      "options": [
+        "A):   Bombay and Thane",
+        "B):   Delhi and Agra",
+        "C):   Calcutta and Howrah",
+        "D):   Madras and Arcot"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>It covered 34 km.</div>"
+    },
+    {
+      "id": "sg7-mcq-13",
+      "question": "<div style='text-align: justify;'>The broad gauge has a width of:</div>",
+      "options": [
+        "A):   0.610 m",
+        "B):   0.762 m",
+        "C):   1.000 m",
+        "D):   1.676 m"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Metre gauge is 1 m wide.</div>"
+    },
+    {
+      "id": "sg7-mcq-14",
+      "question": "<div style='text-align: justify;'>Which of these refineries became possible because of pipelines?</div>",
+      "options": [
+        "A):   Barauni",
+        "B):   Mumbai",
+        "C):   Kochi",
+        "D):   Visakhapatnam"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Mathura and Panipat are other inland refineries.</div>"
+    },
+    {
+      "id": "sg7-mcq-15",
+      "question": "<div style='text-align: justify;'>National Waterway No. 1 is on the:</div>",
+      "options": [
+        "A):   Brahmaputra",
+        "B):   Godavari",
+        "C):   Ganga",
+        "D):   West Coast Canal"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>It runs from Allahabad to Haldia.</div>"
+    },
+    {
+      "id": "sg7-mcq-16",
+      "question": "<div style='text-align: justify;'>The major ports handle about what share of India's foreign trade?</div>",
+      "options": [
+        "A):   50%",
+        "B):   95%",
+        "C):   70%",
+        "D):   100%"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>India has 12 major ports.</div>"
+    },
+    {
+      "id": "sg7-mcq-17",
+      "question": "<div style='text-align: justify;'>Which port was developed to ease pressure on Mumbai after losing Karachi?</div>",
+      "options": [
+        "A):   Marmagao",
+        "B):   Kandla",
+        "C):   Kochi",
+        "D):   Paradip"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>It is a tidal port, also called Deendayal Port.</div>"
+    },
+    {
+      "id": "sg7-mcq-18",
+      "question": "<div style='text-align: justify;'>The premier iron ore exporting port of India is:</div>",
+      "options": [
+        "A):   Mumbai",
+        "B):   Haldia",
+        "C):   Kandla",
+        "D):   Marmagao"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>It handles about half of India's iron ore exports.</div>"
+    },
+    {
+      "id": "sg7-mcq-19",
+      "question": "<div style='text-align: justify;'>Which port is an inland riverine port?</div>",
+      "options": [
+        "A):   Chennai",
+        "B):   Tuticorin",
+        "C):   Kolkata",
+        "D):   Kochi"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>It needs constant dredging of the Hoogly.</div>"
+    },
+    {
+      "id": "sg7-mcq-20",
+      "question": "<div style='text-align: justify;'>Air transport in India was nationalised in:</div>",
+      "options": [
+        "A):   1953",
+        "B):   1947",
+        "C):   1960",
+        "D):   1991"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Air India gives domestic and international services.</div>"
+    },
+    {
+      "id": "sg7-mcq-21",
+      "question": "<div style='text-align: justify;'>Pawan Hans Helicopters Ltd. provides services to:</div>",
+      "options": [
+        "A):   Indian Railways",
+        "B):   Indian Navy only",
+        "C):   ONGC off-shore operations",
+        "D):   Postal department"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>It also serves inaccessible hill and north-eastern areas.</div>"
+    },
+    {
+      "id": "sg7-mcq-22",
+      "question": "<div style='text-align: justify;'>Arrange in chronological order: (i) Border Roads Organisation set up (ii) First train in India (iii) Air transport nationalised (iv) Kandla port developed after Independence</div>",
+      "options": [
+        "A):   (ii), (iv), (iii), (i)",
+        "B):   (ii), (iii), (iv), (i)",
+        "C):   (iv), (ii), (iii), (i)",
+        "D):   (ii), (iv), (i), (iii)"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>1853 → soon after 1947 → 1953 → 1960.</div>"
+    },
+    {
+      "id": "sg7-mcq-23",
+      "question": "<div style='text-align: justify;'>Match: (P) Marmagao (Q) Visakhapatnam (R) Kolkata (S) Kochi — with (1) Riverine port (2) Iron ore exports (3) Lagoon entrance (4) Deepest land-locked port</div>",
+      "options": [
+        "A):   P-1, Q-4, R-3, S-2",
+        "B):   P-4, Q-2, R-1, S-3",
+        "C):   P-2, Q-1, R-4, S-3",
+        "D):   P-2, Q-4, R-1, S-3"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Each port matches its feature.</div>"
+    },
+    {
+      "id": "sg7-mcq-24",
+      "question": "<div style='text-align: justify;'>Assertion (A): Roads are a feeder to other modes of transport. Reason (R): Roads link railway stations, airports and seaports.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Roads connect the other modes, so they act as feeders.</div>"
+    },
+    {
+      "id": "sg7-mcq-25",
+      "question": "<div style='text-align: justify;'>Assertion (A): Air travel is within the reach of common people throughout India. Reason (R): Airways are the fastest and most comfortable mode of transport.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Air travel is costly; special provisions exist only for the north-east.</div>"
+    }
   ],
-  examples: [],
-  mcqs: [
+  "summary": [],
+  "exercises": [
     {
-      id: "sg7-mcq-1",
-      question:
-        "Which two of the following extreme locations are connected by the east-west corridor?",
-      options: [
-        "Mumbai and Nagpur",
-        "Silchar and Porbandar",
-        "Mumbai and Kolkata",
-        "Nagpur and Siligudi",
-      ],
-      correctAnswer: "b",
+      "id": "sg7-ex-all",
+      "name": "Exercise",
+      "questions": []
     },
     {
-      id: "sg7-mcq-2",
-      question:
-        "Which mode of transportation reduces trans-shipment losses and delays?",
-      options: ["Railways", "Roadways", "Pipeline", "Waterways"],
-      correctAnswer: "c",
-    },
-    {
-      id: "sg7-mcq-3",
-      question:
-        "Which one of the following states is not connected with the H.V.J. pipeline?",
-      options: [
-        "Madhya Pradesh",
-        "Maharashtra",
-        "Gujarat",
-        "Uttar Pradesh",
-      ],
-      correctAnswer: "b",
-    },
-    {
-      id: "sg7-mcq-4",
-      question:
-        "Which one of the following ports is the deepest land-locked and well-protected port along the east coast?",
-      options: ["Chennai", "Paradwip", "Tuticorin", "Vishakhapatnam"],
-      correctAnswer: "d",
-    },
-    {
-      id: "sg7-mcq-5",
-      question:
-        "Which one of the following is the most important modes of transportation in India?",
-      options: ["Pipeline", "Railways", "Roadways", "Airways"],
-      correctAnswer: "b",
-    },
-    {
-      id: "sg7-mcq-6",
-      question:
-        "Which one of the following terms is used to describe trade between two or more countries?",
-      options: [
-        "Internal trade",
-        "International trade",
-        "External trade",
-        "Local trade",
-      ],
-      correctAnswer: "b",
-    },
-    {
-      id: "sg7-mcq-7",
-      question:
-        "Which cities does the Golden Quadrilateral Super Highway connect?",
-      options: [
-        "Delhi, Mumbai, Chennai, Kolkata",
-        "Delhi, Ahmedabad, Pune, Bengaluru",
-        "Srinagar, Kanyakumari, Porbandar, Silchar",
-        "Mumbai, Pune, Hyderabad, Chennai",
-      ],
-      correctAnswer: "a",
-    },
-    {
-      id: "sg7-mcq-8",
-      question:
-        "Which of the following is the cheapest mode of transport in India?",
-      options: ["Roadways", "Railways", "Waterways", "Airways"],
-      correctAnswer: "c",
-    },
-    {
-      id: "sg7-mcq-9",
-      question:
-        "Which organization constructs and meticulously maintains the National Highways in India?",
-      options: [
-        "NHAI (National Highways Authority of India)",
-        "CPWD (Central Public Works Department)",
-        "SPWD (State Public Works Department)",
-        "Border Roads Organisation",
-      ],
-      correctAnswer: "b",
-    },
-    {
-      id: "sg7-mcq-10",
-      question:
-        "Which very fast mode of transport helps easily cover difficult terrains like high mountains or dense forests?",
-      options: ["Pipelines", "Railways", "Airways", "Inland Waterways"],
-      correctAnswer: "c",
-    },
+      "id": "sg7-ex-board",
+      "name": "Board Qs",
+      "questions": []
+    }
   ],
+  "examples": []
 };
