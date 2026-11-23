@@ -1,327 +1,346 @@
 import { ChapterContent } from "../types";
 
-const themeColor = "#AB47BC";
-
 export const sstHis3: ChapterContent = {
-  id: "sst-his-3",
-  number: 3,
-  title: "The Making of a Global World",
-  introduction:
-    "You might think 'Globalization' is a modern concept with the internet and airplanes. But it's actually centuries old! Before modern transport, people, goods, money, and even diseases traveled across the world, connecting different continents. Let's see how the world became 'global'.",
-  definitions: [
-    {
-      term: "Globalization",
-      description:
-        "The process of rapid integration or interconnection between different countries through trade, capital, and migration of people.",
-    },
-    {
-      term: "Silk Routes",
-      description:
-        "Ancient network of trade routes connecting Asia with Europe and Northern Africa. They carried Chinese silk, Indian spices, and ideas across the world.",
-    },
-    {
-      term: "Indentured Labour",
-      description:
-        "A system of bonded labour under contract. A worker agrees to work for a specific employer for a specific time, usually to pay off a transport loan to a new country (like Indians going to Fiji or Caribbean).",
-    },
-    {
-      term: "Tariff",
-      description:
-        "A tax imposed strictly on imported goods entering a country, making them more expensive, usually to protect local industries.",
-    },
-    {
-      term: "Exchange Rates",
-      description:
-        "The price of one nation's currency in terms of another. They can be 'fixed' (set by the government) or 'floating' (changing based on market demand).",
-    },
-    {
-      term: "Veto",
-      description:
-        "A constitutional right to reject a decision or proposal made by a law-making body.",
-    },
-  ],
-  keyPoints: [
-    "Long before Columbus discovered America, the Silk Routes were vibrant connecting points for trade and culture. Even Buddhism traveled through these routes!",
-    "Food travelled too! Potatoes, tomatoes, chillies, and maize were introduced to Europe and Asia ONLY after Christopher Columbus discovered the Americas.",
-    "When the Spanish conquered America, their most powerful weapon was not guns, but a disease: Smallpox. Native Americans had no immunity to it, so it wiped out entire populations easily.",
-    "In the 19th Century, industrialization in Europe led to a massive demand for food and raw materials. Millions of Europeans migrated to America and Australia to set up farms.",
-    "Technology, especially the steamship, railway, and the telegraph, drastically accelerated globalization. For example, refrigerated ships allowed cheap meat from America/Australia to be sold in Europe.",
-    "The dark side of this trade was Colonialism in Africa. European powers drew arbitrary lines on the map of Africa and divided it among themselves.",
-    "Rinderpest (Cattle Plague) arrived in Africa in the late 1880s, destroying 90% of African cattle. This forced the native Africans, who previously survived on cattle, into European labour markets.",
-    "After World War II, the Bretton Woods conference set up the IMF (International Monetary Fund) and World Bank to help rebuild the global economy and provide financial stability.",
-  ],
-  formulas: [],
-  crux: [
-    "Globalization isn't new; silk and spices started it centuries ago.",
-    "Food (like potatoes) changed European history.",
-    "Diseases (Smallpox) helped Europeans conquer the Americas.",
-    "Railways and steamships made global trade super fast.",
-    "Colonialism was the dark side of this global setup.",
-  ],
-  mcqs: [
-    {
-      id: "sh3-mcq-1",
-      question:
-        "Which disease played a crucial role in the Spanish conquest of America?",
-      options: ["Malaria", "Cholera", "Smallpox", "Rinderpest"],
-      correctAnswer: "c",
-    },
-    {
-      id: "sh3-mcq-2",
-      question:
-        "The famous 'Silk Routes' historically connected which regions?",
-      options: [
-        "Asia with Europe and Northern Africa",
-        "South America with Africa",
-        "North America with Europe",
-        "Australia with Asia",
-      ],
-      correctAnswer: "a",
-    },
-    {
-      id: "sh3-mcq-3",
-      question: "What was Rinderpest?",
-      options: [
-        "A human disease",
-        "A devastating cattle disease in Africa",
-        "A new type of crops",
-        "A European weapon",
-      ],
-      correctAnswer: "b",
-    },
-    {
-      id: "sh3-mcq-4",
-      question:
-        "Which two institutions were established at the Bretton Woods Conference in 1944?",
-      options: [
-        "UN and WHO",
-        "IMF and World Bank",
-        "WTO and UNESCO",
-        "League of Nations and NATO",
-      ],
-      correctAnswer: "b",
-    },
-    {
-      id: "sh3-mcq-5",
-      question: "An indentured labourer was:",
-      options: [
-        "A wealthy landlord",
-        "A free merchant",
-        "A bonded labourer under a contract",
-        "A British official",
-      ],
-      correctAnswer: "c",
-    },
-    {
-      id: "sh3-mcq-6",
-      question: "Which disease killed 90% of cattle in Africa in the 1890s?",
-      options: ["Rinderpest", "Plague", "Cholera", "Smallpox"],
-      correctAnswer: "a",
-    },
-    {
-      id: "sh3-mcq-7",
-      question:
-        "What was the name of the system of hired labor under contracts for a specific period?",
-      options: [
-        "Free labor",
-        "Indentured labor",
-        "Slave labor",
-        "Forced labor",
-      ],
-      correctAnswer: "b",
-    },
-    {
-      id: "sh3-mcq-8",
-      question:
-        "In which continent was El Dorado, the fabled city of gold, believed to exist?",
-      options: ["Europe", "Africa", "North America", "South America"],
-      correctAnswer: "d",
-    },
-    {
-      id: "sh3-mcq-9",
-      question:
-        "What was the name of the ancient network of trade routes connecting Asia with Europe and Africa?",
-      options: ["Silk Route", "Cotton Route", "Spice Route", "Gold Route"],
-      correctAnswer: "a",
-    },
-    {
-      id: "sh3-mcq-10",
-      question: "What did the Group of 77 (G-77) countries demand?",
-      options: [
-        "A New International Economic Order",
-        "More aid from the West",
-        "Control over IMF",
-        "Free trade with Europe",
-      ],
-      correctAnswer: "a",
-    },
-  ],
-  summary: [
-    "The making of a global world is a long history of trade, migration, and the movement of capital and ideas.",
-    "Pre-modern worlds were connected through Silk Routes, allowing cultural and commercial exchange.",
-    "The discovery of the Americas transformed global diets (potatoes) and shifted world wealth, largely aided by biological warfare (smallpox).",
-    "The 19th century witnessed extreme changes driven by industrialization, technology (railways/steamships), and tragic colonial expansion in Africa and Asia.",
-    "The post-WWII era saw the establishment of international financial institutions (IMF/World Bank) to manage the modern global economy.",
-  ],
-  exercises: [
-    {
-      id: "sh3-ex-write",
-      name: "Write in brief",
-      questions: [],
-    },
-    {
-      id: "sh3-ex-discuss",
-      name: "Discuss",
-      questions: [],
-    },
-  ],
-  examples: [],
-  isHtmlView: true,
-  htmlOverview: `
-        <div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">
-            <p style="line-height: 1.6; font-size: 17px;">You might think 'Globalization' is a modern concept with the internet and airplanes. But it's actually centuries old! Before modern transport, people, goods, money, and even diseases traveled across the world, connecting different continents. Let's see how the world became 'global'.</p>
-            
-            <h3 style="color: ${themeColor}; text-align: left; margin-top: 20px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px;">Key Definitions</h3>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Globalization:</b> The process of rapid integration or interconnection between different countries through trade, capital, and migration of people.</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Silk Routes:</b> Ancient network of trade routes connecting Asia with Europe and Northern Africa. They carried Chinese silk, Indian spices, and ideas across the world.</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Indentured Labour:</b> A system of bonded labour under contract. A worker agrees to work for a specific employer for a specific time, usually to pay off a transport loan to a new country (like Indians going to Fiji or Caribbean).</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Tariff:</b> A tax imposed strictly on imported goods entering a country, making them more expensive, usually to protect local industries.</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Exchange Rates:</b> The price of one nation's currency in terms of another. They can be 'fixed' (set by the government) or 'floating' (changing based on market demand).</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Veto:</b> A constitutional right to reject a decision or proposal made by a law-making body.</p>
-
-            <h3 style="color: ${themeColor}; text-align: left; margin-top: 25px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px;">Important Points</h3>
-            <ul style="text-align: left; padding-left: 20px; line-height: 1.6; font-size: 16px;">
-                <li style="margin-bottom: 8px;">Long before Columbus discovered America, the Silk Routes were vibrant connecting points for trade and culture. Even Buddhism traveled through these routes!</li>
-                <li style="margin-bottom: 8px;">Food travelled too! Potatoes, tomatoes, chillies, and maize were introduced to Europe and Asia ONLY after Christopher Columbus discovered the Americas.</li>
-                <li style="margin-bottom: 8px;">When the Spanish conquered America, their most powerful weapon was not guns, but a disease: Smallpox. Native Americans had no immunity to it, so it wiped out entire populations easily.</li>
-                <li style="margin-bottom: 8px;">In the 19th Century, industrialization in Europe led to a massive demand for food and raw materials. Millions of Europeans migrated to America and Australia to set up farms.</li>
-                <li style="margin-bottom: 8px;">Technology, especially the steamship, railway, and the telegraph, drastically accelerated globalization. For example, refrigerated ships allowed cheap meat from America/Australia to be sold in Europe.</li>
-                <li style="margin-bottom: 8px;">The dark side of this trade was Colonialism in Africa. European powers drew arbitrary lines on the map of Africa and divided it among themselves.</li>
-                <li style="margin-bottom: 8px;">Rinderpest (Cattle Plague) arrived in Africa in the late 1880s, destroying 90% of African cattle. This forced the native Africans, who previously survived on cattle, into European labour markets.</li>
-                <li style="margin-bottom: 8px;">After World War II, the Bretton Woods conference set up the IMF (International Monetary Fund) and World Bank to help rebuild the global economy and provide financial stability.</li>
-            </ul>
-
-            <h3 style="color: ${themeColor}; text-align: left; margin-top: 25px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px;">Summary</h3>
-            <p style="line-height: 1.6; font-size: 16px;">The making of a global world is a long history of trade, migration, and the movement of capital and ideas. Pre-modern worlds were connected through Silk Routes, allowing cultural and commercial exchange. The discovery of the Americas transformed global diets (potatoes) and shifted world wealth, largely aided by biological warfare (smallpox). The 19th century witnessed extreme changes driven by industrialization, technology (railways/steamships), and tragic colonial expansion in Africa and Asia. The post-WWII era saw the establishment of international financial institutions (IMF/World Bank) to manage the modern global economy.</p>
-        </div>
-    `,
-  htmlExercises: {
-    "sh3-ex-write": `
-            <div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">
-                <div style="margin-bottom: 25px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 18px;">Q1. Give two examples of different types of global exchanges which took place before the seventeenth century, choosing one example from Asia and one from the Americas.</p>
-                    <ul style="color: #E0E0E0; line-height: 1.6; padding-left: 20px; font-size: 15px;">
-                        <li style="margin-bottom: 5px;"><b>Asia (Silk Route):</b> Chinese pottery, textiles, and spices were exchanged for European gold and silver.</li>
-                        <li style="margin-bottom: 5px;"><b>Americas (Food exchange):</b> Food items like potatoes, maize, tomatoes, and chillies were introduced to the rest of the world after Columbus reached America.</li>
-                    </ul>
-                </div>
-
-                <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 17px;">Q2. Explain how the global transfer of disease in the pre-modern world helped in the colonisation of the Americas.</p>
-                    <ul style="color: #E0E0E0; line-height: 1.6; padding-left: 20px; font-size: 15px;">
-                        <li style="margin-bottom: 5px;"><b>No Immunity:</b> Native Americans were isolated for centuries and had no immunity against European diseases.</li>
-                        <li style="margin-bottom: 5px;"><b>Smallpox as a Weapon:</b> Spanish conquerors carried smallpox. It killed large parts of the population before soldiers arrived, making conquest easy.</li>
-                    </ul>
-                </div>
-
-                <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 18px;">Q3. Write a note to explain the effects of the following:</p>
-                    
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 5px; font-size: 16px;">(a) The British government's decision to abolish the Corn Laws</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 0;">Food was imported into Britain cheaply. Local farmers couldn't compete, leading to agricultural collapse and forcing thousands to migrate to cities or abroad.</p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 5px; font-size: 16px;">(b) The coming of rinderpest to Africa</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 0;">It killed 90% of African cattle, destroying the native pastoral economy. This forced Africans into the European wage-labor market to work in mines and plantations.</p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 5px; font-size: 16px;">(c) The death of men of working-age in Europe because of the World War</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 0;">Millions of working-age men died in WW1, sharply reducing the European workforce and leading to a major drop in household incomes.</p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 5px; font-size: 16px;">(d) The Great Depression on the Indian economy</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 0;">India's trade halved and agricultural prices fell by 50%. Since the British refused to reduce land revenues, farmers fell into severe debt and poverty.</p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 5px; font-size: 16px;">(e) The decision of MNCs to relocate production to Asian countries</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 0;">Low wages in countries like China reduced manufacturing costs. This relocation stimulated trade, generated employment, and accelerated globalization in Asia.</p>
-                    </div>
-                </div>
-
-                <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 18px;">Q4. Give two examples from history to show the impact of technology on food availability.</p>
-                    <ul style="color: #E0E0E0; line-height: 1.6; padding-left: 20px; font-size: 15px;">
-                        <li style="margin-bottom: 5px;"><b>Refrigerated Ships:</b> Allowed fresh meat to be shipped long distances from America and Australia to Europe without spoiling, making it cheaper and accessible to the poor.</li>
-                        <li style="margin-bottom: 5px;"><b>Railways & Steamships:</b> Enabled fast, low-cost transport of crops from global farmlands directly to consumer markets.</li>
-                    </ul>
-                </div>
-
-                <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 17px;">Q5. Briefly describe the impact of economic depression on the economy of Jammu and Kashmir region.</p>
-                    <ul style="color: #E0E0E0; line-height: 1.6; padding-left: 20px; font-size: 15px;">
-                        <li style="margin-bottom: 5px;"><b>Silk Industry Collapse:</b> The export-based silk and carpet industries of J&K crashed due to a sudden drop in global demand.</li>
-                        <li style="margin-bottom: 5px;"><b>Peasant Distress:</b> Crop prices dropped, but the Dogra state continued heavy taxation, pushing farmers into deep debt and triggering widespread protests.</li>
-                    </ul>
-                </div>
-
-                <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 17px;">Q6. What is meant by the Bretton Woods Agreement?</p>
-                    <ul style="color: #E0E0E0; line-height: 1.6; padding-left: 20px; font-size: 15px;">
-                        <li style="margin-bottom: 5px;"><b>Definition:</b> An agreement signed in 1944 in the USA to secure economic stability and full employment in the post-war world.</li>
-                        <li style="margin-bottom: 5px;"><b>Institutions:</b> It created the <b>IMF</b> to monitor trade balance and the <b>World Bank</b> to fund reconstruction.</li>
-                    </ul>
-                </div>
-            </div>
-        `,
-    "sh3-ex-discuss": `
-            <div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">
-                <div style="margin-bottom: 25px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 17px;">Q1. Discuss how Kashmir's location on silk route shaped the economy and culture of this region.</p>
-                    <ul style="color: #E0E0E0; line-height: 1.6; padding-left: 20px; font-size: 15px;">
-                        <li style="margin-bottom: 5px;"><b>Economic Hub:</b> Kashmir lay on sub-routes connecting India and Central Asia. This allowed the region to export premium saffron, silk, and wool.</li>
-                        <li style="margin-bottom: 5px;"><b>Cultural Exchange:</b> Kashmir became a center where religions (like Buddhism, Islam, and Hinduism) and art forms (like Gandhara architecture) blended together.</li>
-                    </ul>
-                </div>
-
-                <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 17px;">Q2. Imagine that you are an indentured Indian labourer in the Caribbean. Drawing from the details in this chapter, write a letter to your family describing your life and feelings.</p>
-                    <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; padding-left: 10px; border-left: 2px solid ${themeColor}; font-style: italic; margin-bottom: 5px;">
-                        "Dearest Family,<br/>
-                        I was lured here to Trinidad by false promises of easy work. The reality is harsh—long hours, low pay, and no freedom. If I try to run away, I face brutal beatings. However, we have found joy in our unity, celebrating 'Hosay' and singing 'Chutney' songs together. Do not worry, I will survive and return home.<br/>
-                        With love, your son."
-                    </p>
-                </div>
-
-                <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 17px;">Q3. Explain the three types of movements or flows within international economic exchange. Find one example of each type of flow which involved India and Indians, and write a short account of it.</p>
-                    <ul style="color: #E0E0E0; line-height: 1.6; padding-left: 20px; font-size: 15px;">
-                        <li style="margin-bottom: 10px;"><b>1. Flow of Trade (Goods):</b> India exported raw cotton and textiles to Britain.</li>
-                        <li style="margin-bottom: 10px;"><b>2. Flow of Labour (People):</b> Millions of Indian indentured laborers migrated to Fiji and Trinidad to work on plantations under contracts.</li>
-                        <li style="margin-bottom: 10px;"><b>3. Flow of Capital (Money):</b> Indian bankers (like Shikaripuri Shroffs) financed agricultural exports to Central Asia using their own network.</li>
-                    </ul>
-                </div>
-
-                <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 17px;">Q4. Explain the causes of the Great Depression.</p>
-                    <ul style="color: #E0E0E0; line-height: 1.6; padding-left: 20px; font-size: 15px;">
-                        <li style="margin-bottom: 5px;"><b>Agricultural Overproduction:</b> Excess crop production crashed prices. To compensate, farmers produced even more, flooding the market and tanking prices further.</li>
-                        <li style="margin-bottom: 5px;"><b>Withdrawal of US Loans:</b> Europe was heavily dependent on US loans. When the US stock market crashed in 1929, investors panicked, withdrew their capital, and collapsed major banks and industries globally.</li>
-                    </ul>
-                </div>
-
-                <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 17px;">Q5. Explain what is referred to as the G-77 countries. In what ways can G-77 be seen as a reaction to the activities of the Bretton Woods twins?</p>
-                    <ul style="color: #E0E0E0; line-height: 1.6; padding-left: 20px; font-size: 15px;">
-                        <li style="margin-bottom: 5px;"><b>G-77:</b> A coalition of 77 developing countries that joined together in the 1960s. They demanded a New International Economic Order (NIEO).</li>
-                        <li style="margin-bottom: 5px;"><b>Reaction:</b> The Bretton Woods twins (IMF & World Bank) were dominated by Western nations and ignored the development needs of poor, newly independent colonies. G-77 reacted to this bias by demanding fair trade, better aid, and control over their own natural resources.</li>
-                    </ul>
-                </div>
-            </div>
-        `,
+  "id": "sst-his-3",
+  "number": 3,
+  "title": "The Making of a Global World",
+  "isHtmlView": true,
+  "htmlOverview": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(171, 71, 188, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #AB47BC; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #AB47BC; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #E1BEE7; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #E1BEE7; font-weight: 700; }\n  .hl { color: #AB47BC; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #AB47BC; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #AB47BC; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(171, 71, 188, 0.10); border: 1.5px dashed #AB47BC; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #AB47BC; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(171, 71, 188, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(171, 71, 188, 0.18); border: 1px solid #AB47BC; color: #E1BEE7; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(171, 71, 188, 0.2); color: #E1BEE7; }\n  .q-card .q-text, .q-card .sub-q { color: #AB47BC !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ Chapter at a Glance</div><div class=\"sol-step\"><div class=\"rev\"><span class=\"hl\">Globalisation</span> — an economic system that has emerged since the 1990s — has a long history. Through history, human societies have become steadily more interlinked: travellers, traders, priests and pilgrims carried goods, money, values, skills, ideas, inventions and even germs and diseases across vast distances.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 483\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"483\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"20\" font-size=\"11.5\" fill=\"#AB47BC\" text-anchor=\"middle\" font-weight=\"700\">A Global World: Timeline</text><line x1=\"76\" y1=\"34\" x2=\"76\" y2=\"473.1999999999999\" stroke=\"rgba(171, 71, 188,0.55)\" stroke-width=\"2\"/><circle cx=\"76\" cy=\"39.5\" r=\"4\" fill=\"#AB47BC\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"43\" font-size=\"10\" fill=\"#AB47BC\" text-anchor=\"end\" font-weight=\"700\">3000 BCE</text><text x=\"88\" y=\"43.0\" font-size=\"9.5\" fill=\"#FFFFFF\">Coastal trade links the Indus valley</text><text x=\"88\" y=\"55.2\" font-size=\"9.5\" fill=\"#FFFFFF\">civilisation with West Asia</text><circle cx=\"76\" cy=\"72.9\" r=\"4\" fill=\"#AB47BC\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"76.4\" font-size=\"10\" fill=\"#AB47BC\" text-anchor=\"end\" font-weight=\"700\">To 1400s</text><text x=\"88\" y=\"76.4\" font-size=\"9.5\" fill=\"#FFFFFF\">Silk Routes link Asia with Europe and</text><text x=\"88\" y=\"88.6\" font-size=\"9.5\" fill=\"#FFFFFF\">northern Africa</text><circle cx=\"76\" cy=\"106.30000000000001\" r=\"4\" fill=\"#AB47BC\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"109.80000000000001\" font-size=\"10\" fill=\"#AB47BC\" text-anchor=\"end\" font-weight=\"700\">1492</text><text x=\"88\" y=\"109.8\" font-size=\"9.5\" fill=\"#FFFFFF\">Columbus reaches the Americas; new crops</text><text x=\"88\" y=\"122.0\" font-size=\"9.5\" fill=\"#FFFFFF\">begin to travel</text><circle cx=\"76\" cy=\"139.70000000000002\" r=\"4\" fill=\"#AB47BC\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"143.20000000000002\" font-size=\"10\" fill=\"#AB47BC\" text-anchor=\"end\" font-weight=\"700\">1500s</text><text x=\"88\" y=\"143.2\" font-size=\"9.5\" fill=\"#FFFFFF\">Spanish and Portuguese conquest of</text><text x=\"88\" y=\"155.4\" font-size=\"9.5\" fill=\"#FFFFFF\">America; smallpox spreads</text><circle cx=\"76\" cy=\"173.10000000000002\" r=\"4\" fill=\"#AB47BC\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"176.60000000000002\" font-size=\"10\" fill=\"#AB47BC\" text-anchor=\"end\" font-weight=\"700\">1840s</text><text x=\"88\" y=\"176.6\" font-size=\"9.5\" fill=\"#FFFFFF\">Potato disease causes famine in Ireland;</text><text x=\"88\" y=\"188.8\" font-size=\"9.5\" fill=\"#FFFFFF\">Corn Laws abolished in Britain (1846)</text><circle cx=\"76\" cy=\"206.50000000000003\" r=\"4\" fill=\"#AB47BC\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"210.00000000000003\" font-size=\"10\" fill=\"#AB47BC\" text-anchor=\"end\" font-weight=\"700\">1885</text><text x=\"88\" y=\"210.0\" font-size=\"9.5\" fill=\"#FFFFFF\">Berlin Conference: European powers carve</text><text x=\"88\" y=\"222.2\" font-size=\"9.5\" fill=\"#FFFFFF\">up Africa</text><circle cx=\"76\" cy=\"239.90000000000003\" r=\"4\" fill=\"#AB47BC\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"243.40000000000003\" font-size=\"10\" fill=\"#AB47BC\" text-anchor=\"end\" font-weight=\"700\">1890s</text><text x=\"88\" y=\"243.4\" font-size=\"9.5\" fill=\"#FFFFFF\">Rinderpest kills 90% of Africa's cattle</text><text x=\"88\" y=\"255.6\" font-size=\"9.5\" fill=\"#FFFFFF\">(Atlantic coast 1892)</text><circle cx=\"76\" cy=\"273.3\" r=\"4\" fill=\"#AB47BC\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"276.8\" font-size=\"10\" fill=\"#AB47BC\" text-anchor=\"end\" font-weight=\"700\">1914–18</text><text x=\"88\" y=\"276.8\" font-size=\"9.5\" fill=\"#FFFFFF\">First World War</text><circle cx=\"76\" cy=\"294.5\" r=\"4\" fill=\"#AB47BC\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"298\" font-size=\"10\" fill=\"#AB47BC\" text-anchor=\"end\" font-weight=\"700\">1921</text><text x=\"88\" y=\"298.0\" font-size=\"9.5\" fill=\"#FFFFFF\">Indentured labour migration from India</text><text x=\"88\" y=\"310.2\" font-size=\"9.5\" fill=\"#FFFFFF\">abolished</text><circle cx=\"76\" cy=\"327.9\" r=\"4\" fill=\"#AB47BC\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"331.4\" font-size=\"10\" fill=\"#AB47BC\" text-anchor=\"end\" font-weight=\"700\">1929</text><text x=\"88\" y=\"331.4\" font-size=\"9.5\" fill=\"#FFFFFF\">Great Depression begins (lasts till the</text><text x=\"88\" y=\"343.6\" font-size=\"9.5\" fill=\"#FFFFFF\">mid-1930s)</text><circle cx=\"76\" cy=\"361.29999999999995\" r=\"4\" fill=\"#AB47BC\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"364.79999999999995\" font-size=\"10\" fill=\"#AB47BC\" text-anchor=\"end\" font-weight=\"700\">1939–45</text><text x=\"88\" y=\"364.8\" font-size=\"9.5\" fill=\"#FFFFFF\">Second World War</text><circle cx=\"76\" cy=\"382.49999999999994\" r=\"4\" fill=\"#AB47BC\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"385.99999999999994\" font-size=\"10\" fill=\"#AB47BC\" text-anchor=\"end\" font-weight=\"700\">1944</text><text x=\"88\" y=\"386.0\" font-size=\"9.5\" fill=\"#FFFFFF\">Bretton Woods conference sets up the IMF</text><text x=\"88\" y=\"398.2\" font-size=\"9.5\" fill=\"#FFFFFF\">and World Bank</text><circle cx=\"76\" cy=\"415.8999999999999\" r=\"4\" fill=\"#AB47BC\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"419.3999999999999\" font-size=\"10\" fill=\"#AB47BC\" text-anchor=\"end\" font-weight=\"700\">1960s</text><text x=\"88\" y=\"419.4\" font-size=\"9.5\" fill=\"#FFFFFF\">Developing countries form the G-77 and</text><text x=\"88\" y=\"431.6\" font-size=\"9.5\" fill=\"#FFFFFF\">demand an NIEO</text><circle cx=\"76\" cy=\"449.2999999999999\" r=\"4\" fill=\"#AB47BC\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"452.7999999999999\" font-size=\"10\" fill=\"#AB47BC\" text-anchor=\"end\" font-weight=\"700\">1970s</text><text x=\"88\" y=\"452.8\" font-size=\"9.5\" fill=\"#FFFFFF\">Fixed exchange rates collapse; MNCs shift</text><text x=\"88\" y=\"465.0\" font-size=\"9.5\" fill=\"#FFFFFF\">production to Asia</text></svg></div><div class=\"diagram-caption\">From the Silk Routes to globalisation</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 1. The Pre-modern World</div><div class=\"sol-step\"><div class=\"pt\">As early as <b>3000 BCE</b>, an active coastal trade linked the Indus valley civilisations with present-day West Asia.</div><div class=\"pt\">For more than a millennium, <b>cowries</b> (from the Maldives) were used as a form of currency in places as far as China and East Africa.</div><div class=\"sec\">1.1 Silk Routes</div><div class=\"pt\">A good example of vibrant pre-modern trade and cultural links between distant parts of the world — linking Asia with Europe and northern Africa, by land and sea.</div><div class=\"pt\">Existed since before the Christian Era and thrived almost till the <b>15th century</b>.</div><div class=\"pt\"><b>Goods:</b> Chinese pottery, textiles and spices from India and Southeast Asia went west; precious metals — gold and silver — flowed from Europe to Asia.</div><div class=\"pt\"><b>Culture:</b> Christian missionaries and later Muslim preachers travelled these routes; <b>Buddhism</b> emerged from eastern India and spread in several directions through them.</div><div class=\"sec\">1.2 Food travels</div><div class=\"pt\">Noodles may have travelled west from China to become spaghetti, or Arab traders took pasta to Sicily in the 5th century.</div><div class=\"pt\">Potatoes, soya, groundnuts, maize, tomatoes, chillies and sweet potatoes came to Europe and Asia only after <b>Columbus</b> accidentally discovered the Americas — about five centuries ago.</div><div class=\"pt\"><b>Ireland:</b> the poorest peasants became so dependent on potatoes that when disease destroyed the crop in the <b>mid-1840s</b>, hundreds of thousands died of starvation.</div><div class=\"sec\">1.3 Conquest, disease and trade</div><div class=\"pt\">In the 16th century, European sailors found a sea route to Asia and crossed the western ocean to America.</div><div class=\"pt\"><b>Silver</b> from mines in present-day Peru and Mexico enhanced Europe's wealth and financed its trade with Asia.</div><div class=\"pt\">The Portuguese and Spanish conquest of America was won not by firepower but by <b>germs such as smallpox</b>: America's long isolation meant its people had no immunity; the disease spread ahead of the Europeans and wiped out whole communities.</div><div class=\"pt\">Poverty, hunger, disease and religious persecution in Europe drove thousands to America; by the 18th century, plantations there were worked by <b>slaves captured in Africa</b> growing cotton and sugar.</div><div class=\"pt\">Till the 18th century, <b>China and India</b> were among the world's richest countries. From the 15th century China restricted overseas contacts; with the rising importance of the Americas, the centre of world trade shifted <b>westwards to Europe</b>.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 2. The Nineteenth Century (1815–1914)</div><div class=\"sol-step\"><div class=\"rev\">In the 19th century the world changed profoundly: economic, political, social, cultural and technological factors interacted to transform societies and reshape external relations.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 289\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"289\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#AB47BC\" text-anchor=\"middle\" font-weight=\"700\">Three Flows of International Exchange</text><rect x=\"60\" y=\"30\" width=\"200\" height=\"51\" rx=\"6\" fill=\"rgba(171, 71, 188,0.16)\" stroke=\"#AB47BC\" stroke-width=\"1.2\"/><text x=\"160\" y=\"46.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">19th-century world economy</text><text x=\"160\" y=\"58.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Economists identify three types of</text><text x=\"160\" y=\"71.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">flows</text><line x1=\"160\" y1=\"82\" x2=\"160\" y2=\"89\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 94 L163.5 88 L156.5 88 Z\" fill=\"#B0BEC5\"/><rect x=\"13\" y=\"96\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(171, 71, 188,0.16)\" stroke=\"#AB47BC\" stroke-width=\"1.2\"/><text x=\"84\" y=\"112.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">1. Trade (goods)</text><text x=\"84\" y=\"123.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Cloth, wheat, raw cotton;</text><text x=\"84\" y=\"135.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">e.g. India exported raw</text><text x=\"84\" y=\"147.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">cotton, indigo and opium</text><rect x=\"165\" y=\"96\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(171, 71, 188,0.16)\" stroke=\"#AB47BC\" stroke-width=\"1.2\"/><text x=\"236\" y=\"112.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">2. Labour (people)</text><text x=\"236\" y=\"123.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Migration for work; e.g.</text><text x=\"236\" y=\"135.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Indian indentured</text><text x=\"236\" y=\"147.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">labourers to Fiji,</text><text x=\"236\" y=\"158.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Trinidad, Mauritius</text><rect x=\"89\" y=\"177\" width=\"142\" height=\"84\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"160\" y=\"193.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">3. Capital (money)</text><text x=\"160\" y=\"204.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Short or long-term</text><text x=\"160\" y=\"216.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">investment; e.g.</text><text x=\"160\" y=\"228.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Chettiars and Shikaripuri</text><text x=\"160\" y=\"239.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">shroffs financed</text><text x=\"160\" y=\"251.5\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">agriculture abroad</text><text x=\"160\" y=\"275\" font-size=\"9.5\" fill=\"#AB47BC\" text-anchor=\"middle\" font-weight=\"700\">The three flows were closely interwoven</text></svg></div><div class=\"diagram-caption\">Trade, labour and capital: the three flows</div></div><div class=\"sec\">2.1 A world economy takes shape — the Corn Laws</div><div class=\"pt\">Population growth in Britain raised the demand for food grains; landed groups made the government restrict corn imports — the <b>Corn Laws</b>.</div><div class=\"pt\">Industrialists and urban dwellers, unhappy with high food prices, forced their <b>abolition</b>.</div><div class=\"pt\"><b>Effects:</b> food was imported more cheaply; British agriculture could not compete; vast areas left uncultivated; thousands thrown out of work flocked to cities or migrated overseas.</div><div class=\"pt\">Food prices fell and consumption rose. Lands were cleared in Eastern Europe, Russia, America and Australia; railways and harbours were built with capital from <b>London</b>.</div><div class=\"pt\">Nearly <b>50 million</b> people emigrated from Europe to America and Australia in the 19th century; worldwide some <b>150 million</b> left their homes.</div><div class=\"pt\">By <b>1890</b> a global agricultural economy had emerged. In India, the British built <b>canal colonies</b> in west Punjab to grow wheat and cotton for export.</div><div class=\"pt\">Between <b>1820 and 1914</b>, world trade multiplied <b>25 to 40 times</b>; nearly 60% of it was primary products (wheat, cotton, minerals).</div><div class=\"sec\">2.2 Role of technology</div><div class=\"pt\">Railways, steamships and the telegraph transformed the 19th-century world.</div><div class=\"pt\"><b>Meat trade:</b> till the 1870s animals were shipped live from America to Europe — they took up much space, many died or lost weight, so meat was a luxury.</div><div class=\"pt\"><b>Refrigerated ships</b> allowed animals to be slaughtered at the starting point (America, Australia, New Zealand) and carried as frozen meat. Shipping costs and meat prices fell; the European poor got a more varied diet — promoting social peace at home and support for imperialism abroad.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 3. Late 19th-Century Colonialism and Rinderpest</div><div class=\"sol-step\"><div class=\"pt\">At the <b>Berlin Conference (1885)</b> the big European powers met to complete the carving up of Africa.</div><div class=\"pt\">Britain and France made vast additions to their territories; Belgium and Germany became new colonial powers; the <b>USA</b> became a colonial power in the late 1890s by taking over some colonies of Spain.</div><div class=\"sec\">Europeans in Africa</div><div class=\"pt\">Africa had abundant land and a small population; Europeans wanted to set up plantations and mines but faced a <b>shortage of labour</b> willing to work for wages.</div><div class=\"pt\">Methods to recruit labour: <b>heavy taxes</b> payable only through wage work; <b>inheritance laws</b> changed so only one member of a family could inherit land; mineworkers confined in <b>compounds</b>.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 310\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"310\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#AB47BC\" text-anchor=\"middle\" font-weight=\"700\">Rinderpest in Africa (1890s)</text><rect x=\"30\" y=\"30\" width=\"260\" height=\"63\" rx=\"6\" fill=\"rgba(171, 71, 188,0.16)\" stroke=\"#AB47BC\" stroke-width=\"1.2\"/><text x=\"160\" y=\"46.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Infected cattle arrive</text><text x=\"160\" y=\"58.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Cattle from British Asia brought to feed</text><text x=\"160\" y=\"71.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Italian soldiers invading Eritrea (East</text><text x=\"160\" y=\"83.5\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Africa)</text><line x1=\"160\" y1=\"94\" x2=\"160\" y2=\"101\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 106 L163.5 100 L156.5 100 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"107\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(171, 71, 188,0.16)\" stroke=\"#AB47BC\" stroke-width=\"1.2\"/><text x=\"160\" y=\"123.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Spreads like forest fire</text><text x=\"160\" y=\"135.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Moves west; reaches the Atlantic coast in 1892</text><text x=\"160\" y=\"148.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">and the Cape five years later</text><line x1=\"160\" y1=\"159\" x2=\"160\" y2=\"166\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 171 L163.5 165 L156.5 165 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"172\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(239,83,80,0.16)\" stroke=\"#EF5350\" stroke-width=\"1.2\"/><text x=\"160\" y=\"188.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">90% of cattle die</text><text x=\"160\" y=\"200.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">African livelihoods based on land and</text><text x=\"160\" y=\"213.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">livestock destroyed</text><line x1=\"160\" y1=\"224\" x2=\"160\" y2=\"231\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 236 L163.5 230 L156.5 230 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"237\" width=\"260\" height=\"63\" rx=\"6\" fill=\"rgba(171, 71, 188,0.16)\" stroke=\"#AB47BC\" stroke-width=\"1.2\"/><text x=\"160\" y=\"253.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Forced into wage labour</text><text x=\"160\" y=\"265.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Planters, mine owners and colonial governments</text><text x=\"160\" y=\"278.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">control the scarce cattle and push Africans</text><text x=\"160\" y=\"290.6\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">into the labour market</text></svg></div><div class=\"diagram-caption\">How a cattle disease helped colonial rule in Africa</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 4. Indentured Labour Migration from India</div><div class=\"sol-step\"><div class=\"rev\"><span class=\"hl\">Indentured labour</span>: a bonded labourer under contract to work for an employer for a specific amount of time, to pay off his passage to a new country or home. Contracts promised return travel to India after <b>five years</b> of work.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Aspect</th><th>Details</th></tr><tr><td>Came from</td><td>Eastern UP, Bihar, central India and dry districts of Tamil Nadu</td></tr><tr><td>Why</td><td>Decline of cottage industries, rising land rents, land cleared for mines and plantations; poor peasants fell into debt</td></tr><tr><td>Went to</td><td>Caribbean (Trinidad, Guyana, Surinam), Mauritius, Fiji; Tamils to Ceylon and Malaya; also Assam tea gardens</td></tr><tr><td>Recruitment</td><td>Agents on commission gave false information about destination, travel, work and living conditions; some were abducted</td></tr><tr><td>Conditions</td><td>Harsh living and working conditions, few legal rights — a 'new system of slavery'</td></tr></table></div><div class=\"sec\">Ways of coping</div><div class=\"pt\">Some escaped into the wilds (with severe punishment if caught).</div><div class=\"pt\"><b>Hosay</b> (Trinidad): the Muharram procession became a carnival joined by workers of all races and religions.</div><div class=\"pt\"><b>Rastafarianism</b> (Bob Marley) and <b>chutney music</b> (Trinidad, Guyana) reflect links with Indian migrants.</div><div class=\"pt\">Descendants include writer <b>V.S. Naipaul</b> and cricketers <b>Shivnarine Chanderpaul</b> and <b>Ramnaresh Sarwan</b>.</div><div class=\"pt\">Nationalist leaders opposed the system from the 1900s as abusive; it was <b>abolished in 1921</b>.</div><div class=\"sec\">Indian entrepreneurs abroad</div><div class=\"pt\"><b>Shikaripuri shroffs</b> and <b>Nattukottai Chettiars</b> financed export agriculture in Central and Southeast Asia.</div><div class=\"pt\"><b>Hyderabadi Sindhi traders</b> set up emporia at busy ports worldwide by the 1860s, selling curios to tourists.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 5. Indian Trade, Colonialism and the Global System</div><div class=\"sol-step\"><div class=\"pt\">Fine Indian cottons were exported to Europe; British industrialists got <b>tariffs</b> imposed on cloth imports, and the inflow declined.</div><div class=\"pt\">Share of cotton textiles in India's exports fell from about <b>30% (1800)</b> to <b>15% (1815)</b> and below <b>3%</b> by the 1870s.</div><div class=\"pt\">Exports of raw cotton rose from <b>5% to 35%</b> between 1812 and 1871; indigo was important; <b>opium</b> shipped to China from the 1820s financed Britain's tea imports from China.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 286\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"286\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#AB47BC\" text-anchor=\"middle\" font-weight=\"700\">Multilateral Settlement System</text><rect x=\"30\" y=\"30\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(171, 71, 188,0.16)\" stroke=\"#AB47BC\" stroke-width=\"1.2\"/><text x=\"160\" y=\"46.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Britain → India</text><text x=\"160\" y=\"58.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">British manufactures flood India; Britain</text><text x=\"160\" y=\"71.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">sells far more to India than it buys</text><line x1=\"160\" y1=\"82\" x2=\"160\" y2=\"89\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 94 L163.5 88 L156.5 88 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"95\" width=\"260\" height=\"39\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"160\" y=\"111.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Trade surplus with India</text><text x=\"160\" y=\"123.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Britain earns more from India than it pays</text><line x1=\"160\" y1=\"135\" x2=\"160\" y2=\"142\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 147 L163.5 141 L156.5 141 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"148\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(171, 71, 188,0.16)\" stroke=\"#AB47BC\" stroke-width=\"1.2\"/><text x=\"160\" y=\"164.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Trade deficit with others</text><text x=\"160\" y=\"176.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Britain buys more than it sells to some other</text><text x=\"160\" y=\"189.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">countries</text><line x1=\"160\" y1=\"200\" x2=\"160\" y2=\"207\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 212 L163.5 206 L156.5 206 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"213\" width=\"260\" height=\"63\" rx=\"6\" fill=\"rgba(171, 71, 188,0.16)\" stroke=\"#AB47BC\" stroke-width=\"1.2\"/><text x=\"160\" y=\"229.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Settlement</text><text x=\"160\" y=\"241.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Surplus earned in India balances Britain's</text><text x=\"160\" y=\"254.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">deficits with third countries; also pays the</text><text x=\"160\" y=\"266.6\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">'home charges'</text></svg></div><div class=\"diagram-caption\">India helped Britain balance its deficits with other countries</div></div><div class=\"exam\"><span class=\"exam-t\">📌 Home charges</span><div>• Private remittances home by British officials and traders.</div><div>• Interest payments on India's external debt.</div><div>• Pensions of British officials in India.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 6. The Inter-war Economy</div><div class=\"sol-step\"><div class=\"sec\">First World War (1914–1918)</div><div class=\"pt\"><b>Allies</b> (Britain, France, Russia; later the US) vs <b>Central Powers</b> (Germany, Austria-Hungary, Ottoman Turkey).</div><div class=\"pt\">The first <b>modern industrial war</b>: machine guns, tanks, aircraft and chemical weapons; about <b>9 million dead and 20 million injured</b>.</div><div class=\"pt\">Most of the dead were men of working age → fewer workers and lower household incomes; women stepped into jobs.</div><div class=\"pt\">Britain borrowed heavily from US banks; the <b>US turned from debtor to international creditor</b>.</div><div class=\"sec\">Post-war recovery problems</div><div class=\"pt\">Britain lost its place in the Indian market (industries had grown in India and Japan) and had huge debts; by <b>1921 one in every five British workers was unemployed</b>.</div><div class=\"pt\">Wheat output expanded in Canada, America and Australia during the war; when Eastern Europe revived, a <b>glut</b> followed — grain prices and rural incomes fell, farmers sank into debt.</div><div class=\"sec\">Mass production and consumption (USA)</div><div class=\"pt\"><b>Henry Ford</b> adapted the assembly line of a Chicago slaughterhouse to his car plant in Detroit (T-model Ford).</div><div class=\"pt\">Workers repeated a single task; many quit, so in <b>January 1914</b> Ford doubled the daily wage to <b>$5</b> — and recovered it by speeding up the line.</div><div class=\"pt\">Car production rose from 2 million (1919) to over 5 million (1929); fridges, washing machines and radios were bought on <b>hire purchase</b>.</div><div class=\"pt\">In <b>1923</b> the US resumed exporting capital and became the largest overseas lender, boosting European recovery.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 7. The Great Depression</div><div class=\"sol-step\"><div class=\"rev\">The <span class=\"hl\">Great Depression</span> began around <b>1929</b> and lasted till the mid-1930s. The world experienced catastrophic declines in production, employment, incomes and trade.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 211\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"211\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#AB47BC\" text-anchor=\"middle\" font-weight=\"700\">The Great Depression (1929 – mid-1930s)</text><rect x=\"13\" y=\"30\" width=\"142\" height=\"84\" rx=\"6\" fill=\"rgba(171, 71, 188,0.16)\" stroke=\"#AB47BC\" stroke-width=\"1.2\"/><text x=\"84\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Agricultural</text><text x=\"84\" y=\"57.7\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">overproduction</text><text x=\"84\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Prices fell; farmers</text><text x=\"84\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">produced more to keep</text><text x=\"84\" y=\"92.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">incomes, worsening the</text><text x=\"84\" y=\"104.5\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">glut</text><rect x=\"165\" y=\"30\" width=\"142\" height=\"84\" rx=\"6\" fill=\"rgba(171, 71, 188,0.16)\" stroke=\"#AB47BC\" stroke-width=\"1.2\"/><text x=\"236\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Withdrawal of US loans</text><text x=\"236\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">US lenders panicked;</text><text x=\"236\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">banks failed and</text><text x=\"236\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">currencies like sterling</text><text x=\"236\" y=\"92.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">collapsed</text><rect x=\"13\" y=\"122\" width=\"142\" height=\"61\" rx=\"6\" fill=\"rgba(171, 71, 188,0.16)\" stroke=\"#AB47BC\" stroke-width=\"1.2\"/><text x=\"84\" y=\"138.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">US doubles import</text><text x=\"84\" y=\"149.7\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">duties</text><text x=\"84\" y=\"161.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Another severe blow to</text><text x=\"84\" y=\"173.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">world trade</text><rect x=\"165\" y=\"122\" width=\"142\" height=\"61\" rx=\"6\" fill=\"rgba(239,83,80,0.16)\" stroke=\"#EF5350\" stroke-width=\"1.2\"/><text x=\"236\" y=\"138.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">US economy collapses</text><text x=\"236\" y=\"149.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">By 1933 over 4,000 banks</text><text x=\"236\" y=\"161.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">closed; 110,000 companies</text><text x=\"236\" y=\"173.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">failed (1929–32)</text><text x=\"160\" y=\"197\" font-size=\"9.5\" fill=\"#AB47BC\" text-anchor=\"middle\" font-weight=\"700\">Agricultural regions were the worst hit</text></svg></div><div class=\"diagram-caption\">Causes and effects of the Great Depression</div></div><div class=\"sec\">India and the Great Depression</div><div class=\"pt\">India's exports and imports nearly <b>halved</b> between 1928 and 1934; wheat prices fell by <b>50%</b>.</div><div class=\"pt\">The colonial government <b>refused to reduce revenue demands</b>; peasants producing for the world market were worst hit.</div><div class=\"pt\"><b>Bengal jute</b>: as gunny bag exports collapsed, raw jute prices crashed by more than 60%; growers fell deeper into debt.</div><div class=\"pt\">Peasants used up savings, mortgaged land and sold jewellery — India became an exporter of <b>gold</b>, which Keynes thought promoted global (and Britain's) recovery.</div><div class=\"pt\">Rural unrest grew; Gandhiji launched Civil Disobedience at the height of the depression.</div><div class=\"pt\"><b>Urban India</b> suffered less: people with fixed incomes (landowners getting rents, salaried middle class) gained as prices fell; industrial investment grew under tariff protection.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 8. Rebuilding a World Economy: The Post-war Era</div><div class=\"sol-step\"><div class=\"pt\"><b>Second World War (1939–1945):</b> Axis (Germany, Japan, Italy) vs Allies (Britain, France, Soviet Union, USA). About <b>60 million</b> people (about 3% of the world's 1939 population) died — more civilians than soldiers.</div><div class=\"pt\">Reconstruction was shaped by the rise of the <b>USA</b> as the dominant Western power and of the <b>Soviet Union</b>.</div><div class=\"sec\">Lessons from the inter-war years</div><div class=\"pt\">Mass production needs mass consumption, which needs high, stable incomes and stable employment.</div><div class=\"pt\">Markets alone cannot guarantee full employment — <b>government intervention</b> is needed; governments must control flows of goods, capital and labour.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 428\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"428\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#AB47BC\" text-anchor=\"middle\" font-weight=\"700\">Bretton Woods to Globalisation</text><rect x=\"30\" y=\"30\" width=\"260\" height=\"39\" rx=\"6\" fill=\"rgba(171, 71, 188,0.16)\" stroke=\"#AB47BC\" stroke-width=\"1.2\"/><text x=\"160\" y=\"46.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">July 1944: Bretton Woods, USA</text><text x=\"160\" y=\"58.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">UN Monetary and Financial Conference</text><line x1=\"160\" y1=\"70\" x2=\"160\" y2=\"77\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 82 L163.5 76 L156.5 76 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"83\" width=\"260\" height=\"63\" rx=\"6\" fill=\"rgba(171, 71, 188,0.16)\" stroke=\"#AB47BC\" stroke-width=\"1.2\"/><text x=\"160\" y=\"99.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Bretton Woods twins</text><text x=\"160\" y=\"111.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">IMF (external surpluses and deficits) and</text><text x=\"160\" y=\"124.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">World Bank (reconstruction); operations from</text><text x=\"160\" y=\"136.5\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">1947</text><line x1=\"160\" y1=\"147\" x2=\"160\" y2=\"154\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 159 L163.5 153 L156.5 153 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"160\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(171, 71, 188,0.16)\" stroke=\"#AB47BC\" stroke-width=\"1.2\"/><text x=\"160\" y=\"176.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Fixed exchange rates</text><text x=\"160\" y=\"188.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Currencies pegged to the dollar; dollar</text><text x=\"160\" y=\"201.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">anchored to gold at $35 per ounce</text><line x1=\"160\" y1=\"212\" x2=\"160\" y2=\"219\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 224 L163.5 218 L156.5 218 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"225\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"160\" y=\"241.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Golden age, 1950–1970</text><text x=\"160\" y=\"253.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">World trade grew over 8% a year and incomes</text><text x=\"160\" y=\"266.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">nearly 5%</text><line x1=\"160\" y1=\"277\" x2=\"160\" y2=\"284\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 289 L163.5 283 L156.5 283 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"290\" width=\"260\" height=\"63\" rx=\"6\" fill=\"rgba(239,83,80,0.16)\" stroke=\"#EF5350\" stroke-width=\"1.2\"/><text x=\"160\" y=\"306.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Collapse from the 1960s–70s</text><text x=\"160\" y=\"318.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">US finances weaken; floating exchange rates;</text><text x=\"160\" y=\"331.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">developing countries borrow from commercial</text><text x=\"160\" y=\"343.6\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">banks</text><line x1=\"160\" y1=\"354\" x2=\"160\" y2=\"361\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 366 L163.5 360 L156.5 360 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"367\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(171, 71, 188,0.16)\" stroke=\"#AB47BC\" stroke-width=\"1.2\"/><text x=\"160\" y=\"383.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Globalisation</text><text x=\"160\" y=\"395.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">MNCs shift production to low-wage Asia; China,</text><text x=\"160\" y=\"408.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">India and Brazil transform</text></svg></div><div class=\"diagram-caption\">The Bretton Woods system and its end</div></div><div class=\"exam\"><span class=\"exam-t\">📌 Remember</span><div>• IMF and World Bank = <b>Bretton Woods twins</b>; decision-making controlled by Western powers; the <b>US has an effective veto</b>.</div><div>• <b>G-77</b>: developing countries demanding a <b>New International Economic Order (NIEO)</b> — real control over natural resources, more development aid, fairer prices for raw materials, better market access for their manufactures.</div><div>• From the 1970s developing countries borrowed from Western commercial banks → periodic <b>debt crises</b>, especially in Africa and Latin America.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ Quick Glossary</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Term</th><th>Meaning</th></tr><tr><td>Globalisation</td><td>Integration of economies through flows of goods, capital and labour</td></tr><tr><td>Silk Routes</td><td>Land and sea routes linking Asia with Europe and northern Africa</td></tr><tr><td>El Dorado</td><td>Fabled city of gold in South America</td></tr><tr><td>Corn Laws</td><td>British laws restricting the import of corn</td></tr><tr><td>Indentured labour</td><td>Bonded labour under contract for a fixed period</td></tr><tr><td>Rinderpest</td><td>Fatal cattle plague that hit Africa in the 1890s</td></tr><tr><td>Tariff</td><td>Tax on a country's imports</td></tr><tr><td>Exchange rate</td><td>Rate at which one currency is converted into another; fixed or floating</td></tr><tr><td>Hire purchase</td><td>Buying on credit repaid in weekly or monthly instalments</td></tr><tr><td>Veto</td><td>Right to reject a decision</td></tr><tr><td>MNC</td><td>Multinational corporation — a company operating in several countries</td></tr></table></div></div>\n  </div>\n\n</div>",
+  "htmlExercises": {
+    "sh3-ex-intext": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(171, 71, 188, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #AB47BC; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #AB47BC; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #E1BEE7; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #E1BEE7; font-weight: 700; }\n  .hl { color: #AB47BC; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #AB47BC; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #AB47BC; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(171, 71, 188, 0.10); border: 1.5px dashed #AB47BC; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #AB47BC; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(171, 71, 188, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(171, 71, 188, 0.18); border: 1px solid #AB47BC; color: #E1BEE7; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(171, 71, 188, 0.2); color: #E1BEE7; }\n  .q-card .q-text, .q-card .sub-q { color: #AB47BC !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Explain what we mean when we say that the world “shrank” in the 1500s.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">European sailors found a sea route to Asia and crossed the Atlantic to America, linking distant continents.</div><div class=\"pt\">Goods, crops (potatoes, maize, chillies), silver, people and diseases (smallpox) moved between continents.</div><div class=\"pt\">Distant parts of the world became connected through trade and conquest, so the world seemed smaller.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Imagine that you are an agricultural worker who has arrived in America from Ireland. Write a paragraph on why you chose to come and how you are earning your living.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">In the mid-1840s a disease destroyed the potato crop in Ireland. Like other poor peasants, my family depended almost entirely on potatoes, and hundreds of thousands starved. With no land and no work, I sailed to America. Here, vast forests and grasslands are being cleared for farms; I work as a labourer on a wheat farm, ploughing and harvesting for wages. The work is hard, but I can earn enough to eat and send a little money home.</div></div></div>\n  </div>\n\n</div>",
+    "sh3-ex-write": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(171, 71, 188, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #AB47BC; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #AB47BC; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #E1BEE7; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #E1BEE7; font-weight: 700; }\n  .hl { color: #AB47BC; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #AB47BC; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #AB47BC; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(171, 71, 188, 0.10); border: 1.5px dashed #AB47BC; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #AB47BC; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(171, 71, 188, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(171, 71, 188, 0.18); border: 1px solid #AB47BC; color: #E1BEE7; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(171, 71, 188, 0.2); color: #E1BEE7; }\n  .q-card .q-text, .q-card .sub-q { color: #AB47BC !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Give two examples of different types of global exchanges which took place before the seventeenth century, choosing one example from Asia and one from the Americas.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Asia — Silk Routes:</span> Chinese pottery, textiles and spices from India and Southeast Asia travelled west, while gold and silver flowed from Europe to Asia; Buddhism and other religions also spread along them.</div><div class=\"pt\"><span class=\"lbl\">Americas — food and silver:</span> after Columbus, potatoes, maize, tomatoes, chillies and groundnuts travelled from America to Europe and Asia; silver from Peru and Mexico enriched Europe.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Explain how the global transfer of disease in the pre-modern world helped in the colonisation of the Americas.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">The Spanish and Portuguese carried germs such as <b>smallpox</b> to America in the 16th century.</div><div class=\"pt\">America's long isolation meant the native people had <b>no immunity</b> against these diseases.</div><div class=\"pt\">Smallpox spread deep into the continent ahead of the Europeans and wiped out whole communities.</div><div class=\"pt\">So the conquest was won by germs more than by firepower.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Write a note to explain the effects of the following:<br/>(a) The British government's decision to abolish the Corn Laws.<br/>(b) The coming of rinderpest to Africa.<br/>(c) The death of men of working-age in Europe because of the World War.<br/>(d) The Great Depression on the Indian economy.<br/>(e) The decision of MNCs to relocate production to Asian countries.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">(a)</div><div class=\"pt\">Food was imported more cheaply than it could be produced in Britain.</div><div class=\"pt\">British agriculture could not compete; vast areas were left uncultivated; thousands lost work and migrated to cities or overseas.</div><div class=\"pt\">Food prices fell and consumption rose; land was cleared for food production in Russia, America and Australia.</div><div class=\"sub-q\">(b)</div><div class=\"pt\">Rinderpest killed about 90% of African cattle, destroying livelihoods.</div><div class=\"pt\">Planters, mine owners and colonial governments monopolised the scarce cattle and forced Africans into wage labour.</div><div class=\"sub-q\">(c)</div><div class=\"pt\">The able-bodied workforce in Europe fell sharply.</div><div class=\"pt\">With fewer earning members, household incomes declined; women had to take up jobs.</div><div class=\"sub-q\">(d)</div><div class=\"pt\">India's exports and imports nearly halved (1928–1934); wheat prices fell by 50%.</div><div class=\"pt\">The government did not reduce revenue, so peasants fell into debt; Bengal jute growers were badly hit.</div><div class=\"pt\">Peasants sold gold and jewellery; India exported gold. Urban fixed-income groups were better off.</div><div class=\"sub-q\">(e)</div><div class=\"pt\">Low wages in Asian countries like China cut production costs.</div><div class=\"pt\">It stimulated world trade and capital flows and created jobs in Asia; countries like China and India transformed rapidly.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">Give two examples from history to show the impact of technology on food availability.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Railways and steamships:</span> linked farmlands of America, Russia and Australia to ports; food could be moved quickly and cheaply to distant markets, lowering prices.</div><div class=\"pt\"><span class=\"lbl\">Refrigerated ships:</span> animals were slaughtered in America, Australia or New Zealand and carried to Europe as frozen meat; meat became cheaper and the European poor got a more varied diet.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5.</div>\n    <div class=\"q-text\">Briefly describe the impact of economic depression on the economy of Jammu and Kashmir region.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Demand for exports such as shawls, carpets and silk fell in world markets; artisans and weavers lost work.</div><div class=\"pt\">Prices of agricultural produce fell, but the revenue demand of the State remained high, so peasants fell into debt.</div><div class=\"pt\">Unemployment and distress among peasants, artisans and the educated youth increased.</div><div class=\"pt\">This economic discontent added to the political unrest of the early 1930s against the Dogra rule.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q6.</div>\n    <div class=\"q-text\">What is meant by the Bretton Woods Agreement?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Framework agreed at the <b>UN Monetary and Financial Conference, July 1944</b>, at Bretton Woods, New Hampshire (USA).</div><div class=\"pt\">Aim: to preserve economic stability and full employment in the industrial world after the war.</div><div class=\"pt\">It set up the <b>IMF</b> (to deal with external surpluses and deficits) and the <b>World Bank</b> (to finance post-war reconstruction).</div><div class=\"pt\">It created a system of <b>fixed exchange rates</b>: currencies pegged to the dollar, and the dollar to gold at $35 per ounce.</div></div></div>\n  </div>\n\n</div>",
+    "sh3-ex-discuss": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(171, 71, 188, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #AB47BC; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #AB47BC; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #E1BEE7; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #E1BEE7; font-weight: 700; }\n  .hl { color: #AB47BC; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #AB47BC; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #AB47BC; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(171, 71, 188, 0.10); border: 1.5px dashed #AB47BC; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #AB47BC; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(171, 71, 188, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(171, 71, 188, 0.18); border: 1px solid #AB47BC; color: #E1BEE7; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(171, 71, 188, 0.2); color: #E1BEE7; }\n  .q-card .q-text, .q-card .sub-q { color: #AB47BC !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Discuss how Kashmir's location on silk route shaped the economy and culture of this region.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sec\">Economy</div><div class=\"pt\">Routes through Kashmir and Ladakh linked the Indian plains with Central Asia (Yarkand, Kashgar) and Tibet.</div><div class=\"pt\">Kashmir traded shawls, saffron and other goods; fine shawl wool (pashm) came from Ladakh and Tibet, supporting the famous shawl industry.</div><div class=\"pt\">Trade gave work to merchants, carriers, artisans and craftsmen.</div><div class=\"sec\">Culture</div><div class=\"pt\">Kashmir was a great centre of Buddhist learning; scholars and monks carried Buddhism to Central Asia, Tibet and China.</div><div class=\"pt\">Islam and Persian and Central Asian influences came along these routes, enriching crafts such as shawl-weaving, carpets and papier-mâché.</div><div class=\"pt\">Kashmir became a meeting place of many cultures, languages and religions.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Imagine that you are an indentured Indian labourer in the Caribbean. Drawing from the details in this chapter, write a letter to your family describing your life and feelings.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\"><b>Trinidad, 1900</b><br/>Dear Mother,<br/>The agent at the village told us of easy work and good pay, but he did not say we would cross the sea for months. Here on the sugar plantation we work from dawn to dusk; the wages are low, we have few rights, and anyone who runs away and is caught is severely punished. I miss home every day.<br/>Still, we try to live with courage. During Muharram we join the Hosay procession, where people of all races and religions dance and sing together, and in the evenings we sing our own songs. My contract ends after five years, and then I hope to return to you.<br/>Your loving son.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Explain the three types of movements or flows within international economic exchange. Find one example of each type of flow which involved India and Indians, and write a short account of it.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Flow of trade:</span> movement of goods such as cloth or wheat. <i>India:</i> exports of raw cotton, indigo and opium; British manufactures flooded India, giving Britain a trade surplus.</div><div class=\"pt\"><span class=\"lbl\">Flow of labour:</span> migration of people in search of employment. <i>India:</i> lakhs of indentured labourers from Bihar, eastern UP and Tamil Nadu went to Fiji, Trinidad, Guyana and Mauritius on five-year contracts.</div><div class=\"pt\"><span class=\"lbl\">Flow of capital:</span> short- or long-term investment over long distances. <i>India:</i> Shikaripuri shroffs and Nattukottai Chettiars financed export agriculture in Central and Southeast Asia.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">Explain the causes of the Great Depression.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Agricultural overproduction:</span> as prices fell, farmers produced more to maintain incomes; the glut pushed prices lower and produce rotted.</div><div class=\"pt\"><span class=\"lbl\">Withdrawal of US loans:</span> many countries depended on US loans; when US lenders panicked and withdrew, banks failed in Europe and currencies such as sterling collapsed.</div><div class=\"pt\"><span class=\"lbl\">US import duties:</span> the US doubled import duties to protect itself, a severe blow to world trade.</div><div class=\"pt\"><span class=\"lbl\">Collapse in the US:</span> banks cut lending and recalled loans; households and businesses were ruined; by 1933 over 4,000 banks had closed.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5.</div>\n    <div class=\"q-text\">Explain what is referred to as the G-77 countries. In what ways can G-77 be seen as a reaction to the activities of the Bretton Woods twins?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">G-77:</span> a group of developing countries that organised themselves to demand a New International Economic Order (NIEO).</div><div class=\"sec\">Reaction to the Bretton Woods twins</div><div class=\"pt\">The IMF and World Bank were designed for the financial needs of industrial countries and were dominated by them (the US has a veto).</div><div class=\"pt\">They were not equipped to deal with the poverty and lack of development in former colonies.</div><div class=\"pt\">Developing countries did not benefit from the fast growth of Western economies in the 1950s–60s, and their resources were often controlled by former colonial powers and MNCs.</div><div class=\"pt\">So G-77 demanded real control over natural resources, more development aid, fairer prices for raw materials and better access to developed markets.</div></div></div>\n  </div>\n\n</div>",
+    "sh3-ex-board": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(171, 71, 188, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #AB47BC; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #AB47BC; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #E1BEE7; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #E1BEE7; font-weight: 700; }\n  .hl { color: #AB47BC; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #AB47BC; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #AB47BC; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(171, 71, 188, 0.10); border: 1.5px dashed #AB47BC; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #AB47BC; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(171, 71, 188, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(171, 71, 188, 0.18); border: 1px solid #AB47BC; color: #E1BEE7; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(171, 71, 188, 0.2); color: #E1BEE7; }\n  .q-card .q-text, .q-card .sub-q { color: #AB47BC !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\"><div class=\"q-title\">✦ Section A: Very Short Answer (1 Mark)</div></div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">What were the Silk Routes?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Land and sea routes that linked Asia with Europe and northern Africa for trade and cultural exchange.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Which disease helped the Spanish conquer America?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Smallpox</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">What were the Corn Laws?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">British laws that allowed the government to restrict the import of corn.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">What is meant by indentured labour?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Bonded labour under a contract to work for an employer for a fixed period, usually to pay off the passage to a new country.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">What is 'Hosay'?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">A riotous carnival in Trinidad that grew out of the Muharram procession, joined by workers of all races and religions.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q6. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">When was indentured labour migration from India abolished?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">In <b>1921</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q7. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">What is hire purchase?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Buying goods on credit repaid in weekly or monthly instalments.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q8. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Who adapted the assembly line to car production?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Henry Ford</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q9. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Which institutions are called the Bretton Woods twins?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">The <b>IMF</b> and the <b>World Bank</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q10. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">What does NIEO stand for?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">New International Economic Order.</div></div></div>\n  </div>\n\n  <div class=\"q-card\"><div class=\"q-title\">✦ Section B: Short Answer (3 Marks)</div></div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q11. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">Explain the multilateral settlement system.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Britain had a trade surplus with India because it sold far more to India than it bought.</div><div class=\"pt\">Britain had trade deficits with some other countries.</div><div class=\"pt\">The surplus with India was used to balance these deficits — one country's deficit settled by its surplus with a third.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q12. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">How did the Europeans recruit labour in Africa?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Heavy taxes were imposed that could be paid only by working for wages on plantations and mines.</div><div class=\"pt\">Inheritance laws were changed so that only one member of a family could inherit land; the rest were pushed into the labour market.</div><div class=\"pt\">Mineworkers were confined in compounds and not allowed to move freely.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q13. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">Describe the impact of refrigerated ships on food availability.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Animals were slaughtered at the starting point (America, Australia, New Zealand) and carried as frozen meat.</div><div class=\"pt\">Shipping costs and meat prices fell; the European poor could afford a more varied diet.</div><div class=\"pt\">Better living conditions promoted social peace at home and support for imperialism abroad.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q14. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">How did the First World War transform the USA's economic position?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Britain borrowed large sums from US banks and the US public to finance the war.</div><div class=\"pt\">The US changed from an international debtor to an international creditor.</div><div class=\"pt\">At the end of the war, the US and its citizens owned more overseas assets than foreigners owned in the US.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q15. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">Why did the Bretton Woods system come to an end?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">From the 1960s, the rising costs of US overseas involvements weakened its finances and competitive strength.</div><div class=\"pt\">The dollar lost confidence as the world's principal currency and could not maintain its value in relation to gold.</div><div class=\"pt\">Fixed exchange rates collapsed and floating exchange rates were introduced.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q16. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">Explain the role of Indian entrepreneurs and bankers abroad in the 19th century.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Shikaripuri shroffs and Nattukottai Chettiars financed export agriculture in Central and Southeast Asia, using their own funds or loans from European banks.</div><div class=\"pt\">Indian traders and moneylenders followed European colonisers into Africa.</div><div class=\"pt\">Hyderabadi Sindhi traders set up flourishing emporia at busy ports worldwide by the 1860s.</div></div></div>\n  </div>\n\n  <div class=\"q-card\"><div class=\"q-title\">✦ Section C: Long Answer (5 Marks)</div></div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q17. <span class=\"badge\">5 Marks</span></div>\n    <div class=\"q-text\">Describe the impact of the Great Depression on India.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">India's exports and imports nearly halved between 1928 and 1934.</div><div class=\"pt\">Agricultural prices crashed — wheat prices fell by 50%; raw jute prices fell by over 60%.</div><div class=\"pt\">The colonial government refused to reduce revenue demands; peasants used up savings, mortgaged land and sold jewellery — India exported gold.</div><div class=\"pt\">Rural unrest increased; Gandhiji launched Civil Disobedience at the height of the depression.</div><div class=\"pt\">Urban fixed-income groups gained as prices fell; industrial investment grew under tariff protection.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q18. <span class=\"badge\">5 Marks</span></div>\n    <div class=\"q-text\">Describe the conditions and experiences of Indian indentured labourers.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">They came mainly from eastern UP, Bihar, central India and Tamil Nadu, driven by the decline of cottage industries, rising rents and debt.</div><div class=\"pt\">Agents gave false information about destinations, work and living conditions; some were abducted.</div><div class=\"pt\">On plantations in the Caribbean, Mauritius and Fiji they faced harsh conditions and had few legal rights.</div><div class=\"pt\">They developed new cultural forms — Hosay, chutney music — blending old and new.</div><div class=\"pt\">Nationalist leaders opposed the system as cruel; it was abolished in 1921.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q19. <span class=\"badge\">5 Marks</span></div>\n    <div class=\"q-text\">What were the main features of the Bretton Woods system? How did it change after the 1970s?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Agreed at Bretton Woods (July 1944) to ensure economic stability and full employment.</div><div class=\"pt\">Set up the IMF and World Bank, controlled by Western powers with a US veto.</div><div class=\"pt\">Fixed exchange rates: currencies pegged to the dollar, the dollar to gold at $35 an ounce. World trade grew over 8% a year (1950–70).</div><div class=\"pt\">After the 1970s: floating exchange rates; developing countries borrowed from commercial banks and faced debt crises.</div><div class=\"pt\">MNCs shifted production to low-wage Asian countries, beginning the era of globalisation.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q20. <span class=\"badge\">5 Marks</span></div>\n    <div class=\"q-text\">“The nineteenth-century world economy was shaped by the three flows.” Explain with examples.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Trade:</span> world trade multiplied 25–40 times between 1820 and 1914; food and raw materials moved over long distances.</div><div class=\"pt\"><span class=\"lbl\">Labour:</span> about 50 million Europeans emigrated to America and Australia; 150 million people left their homes worldwide; Indian indentured labourers went abroad.</div><div class=\"pt\"><span class=\"lbl\">Capital:</span> London financed railways and harbours worldwide; Indian bankers financed agriculture in Asia.</div><div class=\"pt\">The three flows were closely interwoven and created a global agricultural economy by 1890.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q21. <span class=\"badge\">4 Marks</span></div>\n    <div class=\"q-text\"><b>Source-based:</b> Read the source and answer the questions.<br/><i>“Till the 1870s, animals were shipped live from America to Europe and then slaughtered on arrival. But live animals took up a lot of ship space. Many also died in the voyage, fell ill, lost weight, or became unfit to eat. Meat was therefore an expensive luxury beyond the reach of the European poor.”</i><br/>(i) Why was meat expensive in Europe before the 1870s? (1)<br/>(ii) Which invention changed this? (1)<br/>(iii) Explain two effects of this invention. (2)</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">(i)</div><div class=\"pt\">Live animals took up ship space and many died or became unfit to eat on the voyage.</div><div class=\"sub-q\">(ii)</div><div class=\"pt\"><b>Refrigerated ships.</b></div><div class=\"sub-q\">(iii)</div><div class=\"pt\">Animals were slaughtered at the starting point and carried as frozen meat, reducing shipping costs and meat prices.</div><div class=\"pt\">The European poor could afford a more varied diet, promoting social peace at home.</div></div></div>\n  </div>\n\n</div>"
   },
+  "introduction": "You might think 'Globalization' is a modern concept with the internet and airplanes. But it's actually centuries old! Before modern transport, people, goods, money, and even diseases traveled across the world, connecting different continents. Let's see how the world became 'global'.",
+  "definitions": [],
+  "keyPoints": [],
+  "formulas": [],
+  "crux": [],
+  "mcqs": [
+    {
+      "id": "sh3-mcq-1",
+      "question": "<div style='text-align: justify;'>Which of the following was used as a form of currency as far as China and East Africa?</div>",
+      "options": [
+        "A):   Silver coins",
+        "B):   Copper plates",
+        "C):   Cowries",
+        "D):   Salt"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Cowries from the Maldives served as money for more than a millennium.</div>"
+    },
+    {
+      "id": "sh3-mcq-2",
+      "question": "<div style='text-align: justify;'>The Silk Routes linked:</div>",
+      "options": [
+        "A):   Asia with Europe and northern Africa",
+        "B):   Europe with America",
+        "C):   Africa with America",
+        "D):   India with Australia"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>They carried silk, pottery, spices and religions.</div>"
+    },
+    {
+      "id": "sh3-mcq-3",
+      "question": "<div style='text-align: justify;'>Which of these food items came to Asia and Europe only after the discovery of America?</div>",
+      "options": [
+        "A):   Rice",
+        "B):   Wheat",
+        "C):   Barley",
+        "D):   Potatoes"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Potatoes, maize, tomatoes and chillies came from America.</div>"
+    },
+    {
+      "id": "sh3-mcq-4",
+      "question": "<div style='text-align: justify;'>Hundreds of thousands died in Ireland in the mid-1840s because of:</div>",
+      "options": [
+        "A):   War",
+        "B):   Potato crop failure",
+        "C):   Plague",
+        "D):   Earthquake"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>The poor depended heavily on potatoes.</div>"
+    },
+    {
+      "id": "sh3-mcq-5",
+      "question": "<div style='text-align: justify;'>The most powerful weapon of the Spanish conquerors of America was:</div>",
+      "options": [
+        "A):   Smallpox germs",
+        "B):   Horses",
+        "C):   Cannons",
+        "D):   Ships"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Native Americans had no immunity to the disease.</div>"
+    },
+    {
+      "id": "sh3-mcq-6",
+      "question": "<div style='text-align: justify;'>El Dorado was the fabled:</div>",
+      "options": [
+        "A):   River of silver",
+        "B):   Island of spices",
+        "C):   City of gold",
+        "D):   Mountain of silk"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Legends of El Dorado drew Europeans to South America.</div>"
+    },
+    {
+      "id": "sh3-mcq-7",
+      "question": "<div style='text-align: justify;'>The Corn Laws in Britain were abolished because of pressure from:</div>",
+      "options": [
+        "A):   Landed groups",
+        "B):   Industrialists and urban dwellers",
+        "C):   Farmers",
+        "D):   The Church"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>They were unhappy with high food prices.</div>"
+    },
+    {
+      "id": "sh3-mcq-8",
+      "question": "<div style='text-align: justify;'>Between 1820 and 1914, world trade multiplied about:</div>",
+      "options": [
+        "A):   2 to 3 times",
+        "B):   5 to 10 times",
+        "C):   100 times",
+        "D):   25 to 40 times"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Nearly 60% of this trade was in primary products.</div>"
+    },
+    {
+      "id": "sh3-mcq-9",
+      "question": "<div style='text-align: justify;'>Refrigerated ships made it possible to:</div>",
+      "options": [
+        "A):   Carry live animals",
+        "B):   Carry more passengers",
+        "C):   Travel faster",
+        "D):   Transport frozen meat over long distances"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Meat became cheaper for the European poor.</div>"
+    },
+    {
+      "id": "sh3-mcq-10",
+      "question": "<div style='text-align: justify;'>The Berlin Conference of 1885 was held to:</div>",
+      "options": [
+        "A):   End slavery",
+        "B):   Carve up Africa among European powers",
+        "C):   Stop the First World War",
+        "D):   Form the IMF"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Big European powers completed the division of Africa.</div>"
+    },
+    {
+      "id": "sh3-mcq-11",
+      "question": "<div style='text-align: justify;'>Rinderpest was a disease affecting:</div>",
+      "options": [
+        "A):   Wheat",
+        "B):   Humans",
+        "C):   Cattle",
+        "D):   Cotton"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>It killed about 90% of Africa's cattle in the 1890s.</div>"
+    },
+    {
+      "id": "sh3-mcq-12",
+      "question": "<div style='text-align: justify;'>Indentured labourers from India were mainly recruited from:</div>",
+      "options": [
+        "A):   Eastern UP, Bihar, central India and Tamil Nadu",
+        "B):   Punjab and Sindh",
+        "C):   Kerala and Goa",
+        "D):   Gujarat and Rajasthan"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>These regions faced decline of cottage industries and rising rents.</div>"
+    },
+    {
+      "id": "sh3-mcq-13",
+      "question": "<div style='text-align: justify;'>'Hosay' was a carnival in Trinidad derived from:</div>",
+      "options": [
+        "A):   Diwali",
+        "B):   Holi",
+        "C):   Christmas",
+        "D):   Muharram procession"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>It was named after Imam Hussain.</div>"
+    },
+    {
+      "id": "sh3-mcq-14",
+      "question": "<div style='text-align: justify;'>Which of these groups of bankers financed export agriculture in Central and Southeast Asia?</div>",
+      "options": [
+        "A):   Shikaripuri shroffs and Nattukottai Chettiars",
+        "B):   Marwaris and Parsis",
+        "C):   Gujarati Banias",
+        "D):   Sindhi traders"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>They used their own funds or loans from European banks.</div>"
+    },
+    {
+      "id": "sh3-mcq-15",
+      "question": "<div style='text-align: justify;'>Which was the single largest Indian export for a time in the 19th century, shipped to China?</div>",
+      "options": [
+        "A):   Cotton",
+        "B):   Indigo",
+        "C):   Opium",
+        "D):   Tea"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Britain used the earnings to pay for tea imports from China.</div>"
+    },
+    {
+      "id": "sh3-mcq-16",
+      "question": "<div style='text-align: justify;'>'Home charges' did NOT include:</div>",
+      "options": [
+        "A):   Pensions of British officials",
+        "B):   Wages of Indian peasants",
+        "C):   Private remittances of British officials",
+        "D):   Interest on India's external debt"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Home charges were payments flowing from India to Britain.</div>"
+    },
+    {
+      "id": "sh3-mcq-17",
+      "question": "<div style='text-align: justify;'>The First World War turned the USA into:</div>",
+      "options": [
+        "A):   An international debtor",
+        "B):   An international creditor",
+        "C):   A colony",
+        "D):   An Axis power"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Britain borrowed heavily from US banks.</div>"
+    },
+    {
+      "id": "sh3-mcq-18",
+      "question": "<div style='text-align: justify;'>Henry Ford doubled the daily wage of his workers in January 1914 to:</div>",
+      "options": [
+        "A):   $2",
+        "B):   $50",
+        "C):   $10",
+        "D):   $5"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Workers could not cope with the stress of the assembly line.</div>"
+    },
+    {
+      "id": "sh3-mcq-19",
+      "question": "<div style='text-align: justify;'>Between 1928 and 1934, wheat prices in India fell by:</div>",
+      "options": [
+        "A):   10%",
+        "B):   25%",
+        "C):   50%",
+        "D):   75%"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>India's exports and imports also nearly halved.</div>"
+    },
+    {
+      "id": "sh3-mcq-20",
+      "question": "<div style='text-align: justify;'>The Bretton Woods conference was held in:</div>",
+      "options": [
+        "A):   1944",
+        "B):   1939",
+        "C):   1929",
+        "D):   1971"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>It set up the IMF and the World Bank.</div>"
+    },
+    {
+      "id": "sh3-mcq-21",
+      "question": "<div style='text-align: justify;'>Under the Bretton Woods system, the dollar was anchored to gold at:</div>",
+      "options": [
+        "A):   $20 per ounce",
+        "B):   $50 per ounce",
+        "C):   $35 per ounce",
+        "D):   $100 per ounce"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>National currencies were pegged to the dollar at fixed rates.</div>"
+    },
+    {
+      "id": "sh3-mcq-22",
+      "question": "<div style='text-align: justify;'>Arrange in chronological order: (i) Great Depression begins (ii) Berlin Conference (iii) Bretton Woods conference (iv) Indentured labour abolished</div>",
+      "options": [
+        "A):   (ii), (iv), (i), (iii)",
+        "B):   (ii), (i), (iv), (iii)",
+        "C):   (iv), (ii), (i), (iii)",
+        "D):   (ii), (iv), (iii), (i)"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>1885 → 1921 → 1929 → 1944.</div>"
+    },
+    {
+      "id": "sh3-mcq-23",
+      "question": "<div style='text-align: justify;'>Match: (P) Henry Ford (Q) V.S. Naipaul (R) Keynes (S) G-77 — with (1) NIEO (2) Assembly line (3) Indian gold exports (4) Writer of indentured descent</div>",
+      "options": [
+        "A):   P-1, Q-4, R-3, S-2",
+        "B):   P-4, Q-2, R-1, S-3",
+        "C):   P-2, Q-3, R-4, S-1",
+        "D):   P-2, Q-4, R-3, S-1"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Ford–assembly line; Naipaul–writer; Keynes–gold exports; G-77–NIEO.</div>"
+    },
+    {
+      "id": "sh3-mcq-24",
+      "question": "<div style='text-align: justify;'>Assertion (A): Native Americans died in large numbers when the Spanish arrived. Reason (R): Their long isolation meant they had no immunity against diseases like smallpox.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Lack of immunity explains why smallpox wiped out whole communities.</div>"
+    },
+    {
+      "id": "sh3-mcq-25",
+      "question": "<div style='text-align: justify;'>Assertion (A): During the Great Depression, urban fixed-income groups in India were badly hit. Reason (R): The colonial government refused to reduce revenue demands on peasants.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Fixed-income groups gained as prices fell; R is true but A is false.</div>"
+    }
+  ],
+  "summary": [],
+  "exercises": [
+    {
+      "id": "sh3-ex-intext",
+      "name": "In-Text",
+      "questions": []
+    },
+    {
+      "id": "sh3-ex-write",
+      "name": "Write in Brief",
+      "questions": []
+    },
+    {
+      "id": "sh3-ex-discuss",
+      "name": "Discuss",
+      "questions": []
+    },
+    {
+      "id": "sh3-ex-board",
+      "name": "Board Qs",
+      "questions": []
+    }
+  ],
+  "examples": []
 };
