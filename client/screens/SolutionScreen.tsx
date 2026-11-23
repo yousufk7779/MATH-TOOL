@@ -263,6 +263,8 @@ interface SubTabButtonProps {
   fill?: boolean;
   /** Tighter padding and a slightly smaller label (used when 4 tabs share the row). */
   compact?: boolean;
+  /** Reports the tab's position inside the scrolling tab bar (5+ tabs), so the active tab can be scrolled into view. */
+  onLayout?: (e: any) => void;
 }
 
 const SubTabButton = memo(
@@ -274,6 +276,7 @@ const SubTabButton = memo(
     textStyle,
     fill,
     compact,
+    onLayout,
   }: SubTabButtonProps) => {
     const isGlossy =
       gradient[0] === "#FFA726" ||
@@ -291,6 +294,7 @@ const SubTabButton = memo(
           pressed && { opacity: 0.8 },
         ]}
         onPress={onPress}
+        onLayout={onLayout}
       >
         {isActive ? (
           <View style={styles.tabButtonWrapper}>
@@ -344,6 +348,10 @@ function SolutionScreen() {
   const { chapterId, className } = route.params;
   const scrollViewRef = useRef<any>(null);
   const shakeAnimRefs = useRef<Record<string, Animated.Value>>({});
+  // Scrolling exercise tab bar (5+ tabs): positions of each tab, used to bring the active tab into view.
+  const subTabScrollRef = useRef<any>(null);
+  const subTabLayoutsRef = useRef<Record<string, { x: number; width: number }>>({});
+  const { width: screenWidth } = useWindowDimensions();
 
   const [activeSection, setActiveSection] = useState<SectionType>("overview");
   const [mountedSections, setMountedSections] = useState<
@@ -528,6 +536,14 @@ function SolutionScreen() {
       scrollViewRef.current?.scrollTo({ y: 0, animated: false });
     });
   }, []);
+
+  // Keep the active exercise tab fully visible in the scrolling tab bar (centred where possible).
+  useEffect(() => {
+    const layout = subTabLayoutsRef.current[activeSubSection];
+    if (!layout || !subTabScrollRef.current) return;
+    const x = Math.max(0, layout.x - (screenWidth - layout.width) / 2);
+    subTabScrollRef.current.scrollTo({ x, animated: true });
+  }, [activeSubSection, screenWidth]);
 
   // Remove redundant effects and focus listeners that cause lag
   useEffect(() => {
@@ -1186,6 +1202,14 @@ function SolutionScreen() {
                     textStyle={hwTitleStyle}
                     fill={useRow}
                     compact={tabCount === 4}
+                    onLayout={
+                      useRow
+                        ? undefined
+                        : (e: any) => {
+                            const { x, width } = e.nativeEvent.layout;
+                            subTabLayoutsRef.current[sub] = { x, width };
+                          }
+                    }
                   />
                 );
               });
@@ -1195,8 +1219,10 @@ function SolutionScreen() {
                 <View style={styles.subTabRow}>{tabs}</View>
               ) : (
                 <ScrollView
+                  ref={subTabScrollRef}
                   horizontal
                   showsHorizontalScrollIndicator={false}
+                  nestedScrollEnabled
                   style={styles.subTabScroll}
                   contentContainerStyle={styles.subTabContainer}
                 >
@@ -2010,12 +2036,12 @@ const styles = StyleSheet.create({
   },
   subTabButtonCompact: { paddingHorizontal: 4 },
   tabTextCompact: { fontSize: 12 },
+  // 5+ exercise tabs: scrolling row. Left-aligned on purpose — centring overflowing content
+  // (justifyContent: "center" + flexGrow) pushes the first tab past the left edge where it cannot be scrolled to.
   subTabContainer: {
     paddingHorizontal: Spacing.md,
-    gap: Spacing.xs,
+    gap: 8,
     alignItems: "center",
-    justifyContent: "center",
-    flexGrow: 1,
   },
   subTabButton: {
     paddingVertical: 6,
