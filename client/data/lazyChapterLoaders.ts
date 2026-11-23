@@ -1,6 +1,7 @@
 // Auto-generated Lazy Chapter Loaders for Instant Startup Performance
 // Standardized for 100% Offline, Zero Startup Overhead
 import type { ChapterContent } from "./types";
+import { C10_ENGLISH } from "./c10English";
 
 export const lazyChapterLoaders: Record<string, () => any> = {
   "c11-math-1": () => {
@@ -2644,6 +2645,14 @@ export const lazyChapterLoaders: Record<string, () => any> = {
       isHtmlView: true,
     };
   },
+
+  // Class 10 English (JKBOSE Tulip Series Book-X): 22 chapters/modules, Step 1 placeholders
+  ...Object.fromEntries(
+    C10_ENGLISH.map((e) => [
+      e.id,
+      () => require("./content/c10-eng-placeholder").buildC10EnglishPlaceholder(e),
+    ]),
+  ),
 };
 
 

@@ -1,4 +1,5 @@
 import { JiguuColors } from "@/constants/theme";
+import { c10EnglishTopics, C10_ENGLISH_GRADIENTS } from "./c10English";
 
 export interface Chapter {
   id: string;
@@ -135,6 +136,8 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
       { id: "c11-pol-18", number: 18, name: "Secularism", color: "#E91E63", marks: "6 Marks", section: "Part B" },
     ],
   },
+  // Class 10 English (JKBOSE Tulip Series Book-X): Prose, Poetry, Short Stories, Play, Grammar & Writing Skills
+  "Class 10 English": c10EnglishTopics(),
   "Class 11 English": {
     Hornbill: [
       { id: "c11-eng-h1", number: 1, name: "The Portrait of a Lady", color: "#E91E63", marks: "Prose", section: "Prose" },
@@ -1290,6 +1293,9 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
 
 export function getChapterGradient(chapter: Chapter | string): string[] {
   const chapterId = typeof chapter === "string" ? chapter : chapter.id;
+
+  // Class 10 English: every chapter/module has its own bright two-stop gradient (Class Selector style)
+  if (C10_ENGLISH_GRADIENTS[chapterId]) return C10_ENGLISH_GRADIENTS[chapterId];
 
   // Targeted theme color replacement for Chemistry Chapter 2 and Math Chapter 7
   const cyanTargetedIds = [

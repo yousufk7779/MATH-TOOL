@@ -95,6 +95,16 @@ function HomeScreen() {
 
             <View style={styles.buttonWrapper}>
               <ColorButton
+                testID="button-english"
+                title="ENGLISH"
+                icon="📝"
+                colors={["#00B09B", "#96C93D"]}
+                onPress={() => navigation.navigate("Class10English")}
+              />
+            </View>
+
+            <View style={styles.buttonWrapper}>
+              <ColorButton
                 testID="button-quiz"
                 title="START QUIZ"
                 icon="🎯"
