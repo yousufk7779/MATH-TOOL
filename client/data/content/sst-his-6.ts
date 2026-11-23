@@ -1,344 +1,352 @@
 import { ChapterContent } from "../types";
 
-const themeColor = "#FF007F";
-
 export const sstHis6: ChapterContent = {
-  id: "sst-his-6",
-  number: 6,
-  title: "Post Independence Era: Jammu and Kashmir on the Path of Modernisation",
-  introduction:
-    "After the dramatic events of 1947 and accession to India, Jammu and Kashmir embarked on a journey of modernisation. From revolutionary land reforms under Sheikh Abdullah to infrastructure building under Bakshi Ghulam Mohammad, administrative reforms under G.M. Sadiq, and the historic Reorganisation of 2019, let's trace how J&K evolved in the post-independence era.",
-  definitions: [
-    {
-      term: "Sadr-i-Riyasat",
-      description:
-        "The elected constitutional head of the state of Jammu and Kashmir from 1952 to 1965, equivalent to the position of Governor.",
-    },
-    {
-      term: "Land to the Tiller",
-      description:
-        "The land reform policy under Sheikh Abdullah's government that abolished landlordism and transferred land ownership to peasants without compensation.",
-    },
-    {
-      term: "Kamraj Plan",
-      description:
-        "A political plan in 1963 proposing senior leaders resign from ministerial posts for party work, which led to Bakshi Ghulam Mohammad's resignation.",
-    },
-    {
-      term: "Indira-Sheikh Accord",
-      description:
-        "An agreement signed in 1975 between Prime Minister Indira Gandhi and Sheikh Abdullah, marking his return to state power as Chief Minister.",
-    },
-    {
-      term: "J&K Reorganisation Act (2019)",
-      description:
-        "An Act of the Parliament of India that reconstituted the state of Jammu and Kashmir into two Union Territories: Jammu & Kashmir, and Ladakh.",
-    },
-  ],
-  keyPoints: [
-    "Sheikh Abdullah's government introduced the Big Landed Estates Abolition Act in 1950, transferring land to the tillers without paying compensation to landlords.",
-    "Bakshi Ghulam Mohammad served as Prime Minister of J&K from 1953 to 1963, focusing on infrastructure, road building (including the Jawahar Tunnel), and tourism.",
-    "Under G.M. Sadiq's government (1964–1971), J&K adopted a policy of political liberalism and aligned local designations with the Indian Constitution.",
-    "In 1965, designations were changed: Sadr-i-Riyasat became Governor, and Prime Minister of J&K became Chief Minister.",
-    "The J&K Academy of Art, Culture and Languages and the Textbook Advisory Board were set up to preserve and promote regional languages like Kashmiri, Dogri, and Ladakhi.",
-    "On August 5, 2019, the Government of India revoked the special status of J&K under Article 370 and passed the J&K Reorganisation Act, dividing it into two Union Territories.",
-  ],
-  formulas: [],
-  crux: [
-    "Sheikh Abdullah's land reforms abolished landlordism and freed peasants from debt.",
-    "Bakshi Ghulam Mohammad modernized infrastructure and boosted tourism.",
-    "G.M. Sadiq aligned J&K's constitution with India and introduced political liberalism.",
-    "The 2019 Reorganisation Act transformed J&K into a Union Territory, applying all Indian central laws directly.",
-  ],
-  mcqs: [
-    {
-      id: "sh6-mcq-1",
-      question: "Who was the first Sadr-i-Riyasat of Jammu and Kashmir?",
-      options: [
-        "Maharaja Hari Singh",
-        "Sheikh Mohammad Abdullah",
-        "Dr. Karan Singh",
-        "Mehr Chand Mahajan",
-      ],
-      correctAnswer: "c",
-    },
-    {
-      id: "sh6-mcq-2",
-      question: "In which year was the Big Landed Estates Abolition Act passed?",
-      options: ["1947", "1950", "1953", "1965"],
-      correctAnswer: "b",
-    },
-    {
-      id: "sh6-mcq-3",
-      question: "Who was the Prime Minister of Jammu and Kashmir during the historic 'Land to the Tiller' reforms?",
-      options: [
-        "Mehr Chand Mahajan",
-        "Sheikh Mohammad Abdullah",
-        "Bakshi Ghulam Mohammad",
-        "G.M. Sadiq",
-      ],
-      correctAnswer: "b",
-    },
-    {
-      id: "sh6-mcq-4",
-      question: "The first Kashmiri opera, 'Bombur Yemberzal', was written by:",
-      options: [
-        "Dina Nath Nadim",
-        "Mahjoor",
-        "Rasool Mir",
-        "Lal Ded",
-      ],
-      correctAnswer: "a",
-    },
-    {
-      id: "sh6-mcq-5",
-      question: "Which Prime Minister of J&K resigned under the Kamraj Plan in 1963?",
-      options: [
-        "Sheikh Mohammad Abdullah",
-        "Bakshi Ghulam Mohammad",
-        "G.M. Sadiq",
-        "Mir Qasim",
-      ],
-      correctAnswer: "b",
-    },
-    {
-      id: "sh6-mcq-6",
-      question: "In which year was the J&K Reorganisation Act passed by the Indian Parliament?",
-      options: ["1947", "1975", "2019", "2024"],
-      correctAnswer: "c",
-    },
-    {
-      id: "sh6-mcq-7",
-      question: "What was the designation of the Head of State in J&K before 1965?",
-      options: ["Governor", "Maharaja", "Sadr-i-Riyasat", "Chief Minister"],
-      correctAnswer: "c",
-    },
-    {
-      id: "sh6-mcq-8",
-      question: "Who was the editor of the weekly newspaper 'Ranbir' and is known as the Father of Journalism in J&K?",
-      options: [
-        "Lala Mulk Raj Saraf",
-        "Sanaullah Bhat",
-        "G.M. Sadiq",
-        "Mehr Chand Mahajan",
-      ],
-      correctAnswer: "a",
-    },
-    {
-      id: "sh6-mcq-9",
-      question: "The Jawahar Tunnel, connecting Jammu and Srinagar, was constructed during the administration of:",
-      options: [
-        "Sheikh Mohammad Abdullah",
-        "Bakshi Ghulam Mohammad",
-        "G.M. Sadiq",
-        "Dr. Karan Singh",
-      ],
-      correctAnswer: "b",
-    },
-    {
-      id: "sh6-mcq-10",
-      question: "Which literary journal was published by the Cultural Congress?",
-      options: ["Nami Chetna", "Jaago Duggar", "Kong Posh", "Ranbir"],
-      correctAnswer: "c",
-    },
-  ],
-  summary: [
-    "Post-1947, Jammu and Kashmir underwent extensive modernization and administrative shifts.",
-    "Land reforms under Sheikh Abdullah's 'Land to the Tiller' policy abolished landlordism and provided debt relief to peasants.",
-    "Bakshi Ghulam Mohammad's decade in power brought economic stability, infrastructure growth (like Jawahar Tunnel), and tourism promotion.",
-    "G.M. Sadiq initiated administrative alignment with the Indian Constitution, changing state designations in 1965.",
-    "The 2019 Reorganisation Act transformed J&K into Union Territories, ensuring direct application of Indian central laws.",
-  ],
-  exercises: [
-    {
-      id: "sh6-ex-long",
-      name: "Answer the following questions",
-      questions: [],
-    },
-    {
-      id: "sh6-ex-short",
-      name: "Short Answer type questions",
-      questions: [],
-    },
-    {
-      id: "sh6-ex-blanks",
-      name: "Fill in the Blanks",
-      questions: [],
-    },
-    {
-      id: "sh6-ex-match",
-      name: "Match the column",
-      questions: [],
-    },
-  ],
-  examples: [],
-  isHtmlView: true,
-  htmlOverview: `
-    <div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">
-      <p style="line-height: 1.6; font-size: 17px;">After the dramatic events of 1947 and accession to India, Jammu and Kashmir embarked on a journey of modernisation. From revolutionary land reforms under Sheikh Abdullah to infrastructure building under Bakshi Ghulam Mohammad, administrative reforms under G.M. Sadiq, and the historic Reorganisation of 2019, let's trace how J&K evolved in the post-independence era.</p>
-      
-      <h3 style="color: ${themeColor}; text-align: left; margin-top: 20px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px;">Key Definitions</h3>
-      <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Sadr-i-Riyasat:</b> The elected constitutional head of the state of Jammu and Kashmir from 1952 to 1965, equivalent to the position of Governor.</p>
-      <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Land to the Tiller:</b> The land reform policy under Sheikh Abdullah's government that abolished landlordism and transferred land ownership to peasants without compensation.</p>
-      <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Kamraj Plan:</b> A political plan in 1963 proposing senior leaders resign from ministerial posts for party work, which led to Bakshi Ghulam Mohammad's resignation.</p>
-      <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Indira-Sheikh Accord:</b> An agreement signed in 1975 between Prime Minister Indira Gandhi and Sheikh Abdullah, marking his return to state power as Chief Minister.</p>
-      <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">J&K Reorganisation Act (2019):</b> An Act of the Parliament of India that reconstituted the state of Jammu and Kashmir into two Union Territories: Jammu & Kashmir, and Ladakh.</p>
-      
-      <h3 style="color: ${themeColor}; text-align: left; margin-top: 25px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px;">Important Points</h3>
-      <ul style="text-align: left; padding-left: 20px; line-height: 1.6; font-size: 16px;">
-        <li style="margin-bottom: 8px;">Sheikh Abdullah's government introduced the Big Landed Estates Abolition Act in 1950, transferring land to the tillers without paying compensation to landlords.</li>
-        <li style="margin-bottom: 8px;">Bakshi Ghulam Mohammad served as Prime Minister of J&K from 1953 to 1963, focusing on infrastructure, road building (including the Jawahar Tunnel), and tourism.</li>
-        <li style="margin-bottom: 8px;">Under G.M. Sadiq's government (1964–1971), J&K adopted a policy of political liberalism and aligned local designations with the Indian Constitution.</li>
-        <li style="margin-bottom: 8px;">In 1965, designations were changed: Sadr-i-Riyasat became Governor, and Prime Minister of J&K became Chief Minister.</li>
-        <li style="margin-bottom: 8px;">The J&K Academy of Art, Culture and Languages and the Textbook Advisory Board were set up to preserve and promote regional languages like Kashmiri, Dogri, and Ladakhi.</li>
-        <li style="margin-bottom: 8px;">On August 5, 2019, the Government of India revoked the special status of J&K under Article 370 and passed the J&K Reorganisation Act, dividing it into two Union Territories.</li>
-      </ul>
-      
-      <h3 style="color: ${themeColor}; text-align: left; margin-top: 25px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px;">Summary</h3>
-      <p style="line-height: 1.6; font-size: 16px;">Post-1947, Jammu and Kashmir underwent extensive modernization and administrative shifts. Land reforms under Sheikh Abdullah's 'Land to the Tiller' policy abolished landlordism and provided debt relief to peasants. Bakshi Ghulam Mohammad's decade in power brought economic stability, infrastructure growth (like Jawahar Tunnel), and tourism promotion. G.M. Sadiq initiated administrative alignment with the Indian Constitution, changing state designations in 1965. The 2019 Reorganisation Act transformed J&K into Union Territories, ensuring direct application of Indian central laws.</p>
-    </div>
-  `,
-  htmlExercises: {
-    "sh6-ex-long": `
-      <div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">
-        <div style="margin-bottom: 25px;">
-          <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 5px; font-size: 17px;">Q1. Discuss briefly the socio-economic impact of government's policy during the time of Sheikh Abdullah.</p>
-          <ul style="color: #E0E0E0; line-height: 1.6; padding-left: 20px; font-size: 15px;">
-            <li style="margin-bottom: 5px;"><b>Land Reforms:</b> Enacted the Big Landed Estates Abolition Act (1950) under the slogan 'Land to the Tiller'. It transferred agricultural land to poor peasants without paying compensation to landlords, ending feudal exploitation.</li>
-            <li style="margin-bottom: 5px;"><b>Debt Relief:</b> Established the Distressed Debtors Relief Act to write off heavy debts of poor peasants and protect them from moneylenders.</li>
-            <li style="margin-bottom: 5px;"><b>Social Upliftment:</b> Promoted primary education, set up local cooperative societies, and established basic healthcare systems to uplift rural masses.</li>
-          </ul>
-        </div>
-
-        <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-          <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 5px; font-size: 17px;">Q2. Discuss the major economic reforms that were introduced by Bakshi's government.</p>
-          <ul style="color: #E0E0E0; line-height: 1.6; padding-left: 20px; font-size: 15px;">
-            <li style="margin-bottom: 5px;"><b>Infrastructure:</b> Expanded transport networks, built major roads, and constructed the Jawahar Tunnel to provide all-weather road connectivity between Jammu and Srinagar.</li>
-            <li style="margin-bottom: 5px;"><b>Industrial Development:</b> Established industrial estates, revived state industries (sericulture, woollens), and gave subsidies to local businesses.</li>
-            <li style="margin-bottom: 5px;"><b>Tourism and Power:</b> Upgraded tourism infrastructure (guesthouses, reception centers) and launched major power projects to supply electricity.</li>
-          </ul>
-        </div>
-
-        <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-          <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 5px; font-size: 17px;">Q3. 'Sadiq's government followed a policy of liberalism'. Cite some examples from the text to support this statement.</p>
-          <ul style="color: #E0E0E0; line-height: 1.6; padding-left: 20px; font-size: 15px;">
-            <li style="margin-bottom: 5px;"><b>Political Freedom:</b> Allowed political opposition, released several political prisoners, and fostered freedom of speech.</li>
-            <li style="margin-bottom: 5px;"><b>Abolition of Toll Tax:</b> Abolished the age-old toll tax at Lakhanpur, easing regional trade and travel.</li>
-            <li style="margin-bottom: 5px;"><b>Constitutional Alignment:</b> Harmonized state laws with the Indian Constitution, strengthening democratic and transparent governance.</li>
-          </ul>
-        </div>
-
-        <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-          <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 5px; font-size: 17px;">Q4. What were the major steps taken up by Ghulam Mohammad Sadiq to boost up the Industrial sector in the region?</p>
-          <ul style="color: #E0E0E0; line-height: 1.6; padding-left: 20px; font-size: 15px;">
-            <li style="margin-bottom: 5px;"><b>Industrial Corporations:</b> Set up the J&K Industrial Development Corporation to finance and assist medium and small-scale industries.</li>
-            <li style="margin-bottom: 5px;"><b>Subsidies:</b> Provided state subsidies on raw materials, transportation, and electricity rates to local entrepreneurs.</li>
-            <li style="margin-bottom: 5px;"><b>Handicraft Focus:</b> Promoted cooperative societies for local shawl weavers, carpet makers, and paper-mâché artisans to secure their livelihoods.</li>
-          </ul>
-        </div>
-
-        <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-          <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 5px; font-size: 17px;">Q5. Briefly describe the cultural policy of the state under Bakshi Ghulam Mohammad's government?</p>
-          <ul style="color: #E0E0E0; line-height: 1.6; padding-left: 20px; font-size: 15px;">
-            <li style="margin-bottom: 5px;"><b>Cultural Academy:</b> Established the Jammu and Kashmir Academy of Art, Culture and Languages in 1958 to preserve and promote local art and music.</li>
-            <li style="margin-bottom: 5px;"><b>Local Languages:</b> Formed the Textbook Advisory Board to introduce mother-tongue education (Kashmiri, Dogri, Ladakhi) in schools.</li>
-            <li style="margin-bottom: 5px;"><b>Patronage:</b> Provided regular financial aid, stipends, and recognitions to local poets, writers, and cultural groups.</li>
-          </ul>
-        </div>
-
-        <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-          <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 5px; font-size: 17px;">Q6. What was Reorganization Act 2019? Enumerate the major benefits of this act?</p>
-          <ul style="color: #E0E0E0; line-height: 1.6; padding-left: 20px; font-size: 15px;">
-            <li style="margin-bottom: 5px;"><b>Reorganisation:</b> An Act of the Parliament of India that reconstituted the State of Jammu and Kashmir into two separate Union Territories: Jammu & Kashmir, and Ladakh.</li>
-            <li style="margin-bottom: 5px;"><b>Central Laws Extension:</b> Extended all central laws (RTI, Right to Education, minimum wage laws) directly to the region, ensuring better governance and rights.</li>
-            <li style="margin-bottom: 5px;"><b>Socio-Economic Benefits:</b> Boosted central development funding, promoted industrial investment, and provided reservations and benefits to marginalized sections (SC/ST, refugees, and women).</li>
-          </ul>
-        </div>
-      </div>
-    `,
-    "sh6-ex-short": `
-      <div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">
-        <div style="margin-bottom: 25px;">
-          <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 5px; font-size: 16px;">Q1. Define the term Sadr-i-Riyasat? Who was designated as the first Sadr-i-Riyasat of Jammu and Kashmir?</p>
-          <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 0;"><b>Sadr-i-Riyasat:</b> The elected constitutional head of J&K (equivalent to the post of Governor) under the state's initial constitution. <b>Dr. Karan Singh</b> was designated as the first Sadr-i-Riyasat of Jammu and Kashmir in <b>1952</b>.</p>
-        </div>
-
-        <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-          <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 5px; font-size: 16px;">Q2. What do you know about Kamraj Plan?</p>
-          <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 0;"><b>Kamraj Plan:</b> Proposed in 1963 by Congress leader K. Kamraj, suggesting that senior ministers resign to work for the party organization. Under this plan, J&K Prime Minister Bakshi Ghulam Mohammad resigned in 1963, leading to G.M. Sadiq's administration.</p>
-        </div>
-
-        <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-          <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 5px; font-size: 16px;">Q3. Write a short note on the development of cooperatives in Jammu and Kashmir</p>
-          <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 0;">Cooperatives were developed to protect farmers and weavers from moneylenders. The government set up cooperative banks, credit societies, and fair-price stores to supply seeds, fertilizers, and essential commodities at subsidized rates, ensuring fair earnings for producers.</p>
-        </div>
-
-        <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-          <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 5px; font-size: 16px;">Q4. What were the steps taken by the state to promote tourism?</p>
-          <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 0;">The government constructed tourist bungalows, established the Tourist Reception Centre in Srinagar, developed scenic spots like Gulmarg and Pahalgam, and promoted local handicrafts and hospitality to make tourism a primary source of livelihood.</p>
-        </div>
-
-        <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-          <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 5px; font-size: 16px;">Q5. Enlist any two important constitutional changes that were introduced by Ghulam Mohammad Sadiq?</p>
-          <ul style="color: #E0E0E0; line-height: 1.6; padding-left: 20px; font-size: 15px;">
-            <li style="margin-bottom: 5px;"><b>Designation Changes:</b> Changed the title of head of state from Sadr-i-Riyasat to Governor, and head of government from Prime Minister to Chief Minister in 1965.</li>
-            <li style="margin-bottom: 5px;"><b>Central Provisions:</b> Extended Articles 356 and 357 of the Indian Constitution to the state, enabling the imposition of President's Rule in J&K.</li>
-          </ul>
-        </div>
-
-        <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-          <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 5px; font-size: 16px;">Q6. Write a short note on "Indira Sheikh Accord".</p>
-          <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 0;">Signed in <b>1975</b> between PM Indira Gandhi and Sheikh Abdullah, it ended decades of political deadlock. It reaffirmed J&K's position as an integral part of India under Article 370 and allowed Sheikh Abdullah to return to power as the Chief Minister of J&K.</p>
-        </div>
-      </div>
-    `,
-    "sh6-ex-blanks": `
-      <div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">
-        <div style="margin-bottom: 20px;">
-          <ul style="color: #E0E0E0; line-height: 1.8; padding-left: 20px; font-size: 16px;">
-            <li style="margin-bottom: 10px;"><b>1.</b> <b style="color: ${themeColor};">Maharaja Hari Singh</b> was the Maharaja of Jammu and Kashmir at the time of accession.</li>
-            <li style="margin-bottom: 10px;"><b>2.</b> Dr. Karan Singh was made Sadr-i-Riyasat in the year <b style="color: ${themeColor};">1952</b>.</li>
-            <li style="margin-bottom: 10px;"><b>3.</b> <b style="color: ${themeColor};">Mehr Chand Mahajan</b> (or <b style="color: ${themeColor};">Sheikh Mohammad Abdullah</b>) was the first Prime Minister of the state of Jammu and Kashmir.</li>
-            <li style="margin-bottom: 10px;"><b>4.</b> <b style="color: ${themeColor};">Jaago Duggar</b> and <b style="color: ${themeColor};">Nami Chetna</b> were the two important publications of Dogri Sanstha that helped in the promotion of Dogri art, culture and language.</li>
-            <li style="margin-bottom: 10px;"><b>5.</b> An important literary journal of the Cultural Congress was <b style="color: ${themeColor};">Kong Posh</b> (or Kwang Posh).</li>
-            <li style="margin-bottom: 10px;"><b>6.</b> <b style="color: ${themeColor};">Dina Nath Nadim</b> was the most celebrated Kashmiri poet who wrote Bomber Te Yemberzal.</li>
-          </ul>
-        </div>
-      </div>
-    `,
-    "sh6-ex-match": `
-      <div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">
-        <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 12px; font-size: 17px;">Correctly Matched Column A and Column B:</p>
-        
-        <div style="margin-left: 10px;">
-          <table style="width: 100%; border-collapse: collapse; color: #E0E0E0; font-size: 15px; line-height: 1.8;">
-            <thead>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.1); color: ${themeColor}; font-weight: bold;">
-                <th style="text-align: left; padding: 8px;">Column A (Topic)</th>
-                <th style="text-align: left; padding: 8px;">Column B (Correct Year)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding: 8px;">1. Gajendragadkar Commission</td>
-                <td style="padding: 8px; color: ${themeColor}; font-weight: bold;">1967</td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding: 8px;">2. Distressed Debtors Relief Act</td>
-                <td style="padding: 8px; color: ${themeColor}; font-weight: bold;">1950</td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding: 8px;">3. Textbook Advisory Board</td>
-                <td style="padding: 8px; color: ${themeColor}; font-weight: bold;">1948</td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding: 8px;">4. J&K Re-Organization Act</td>
-                <td style="padding: 8px; color: ${themeColor}; font-weight: bold;">2019</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    `,
+  "id": "sst-his-6",
+  "number": 6,
+  "title": "Post Independence Era: Jammu and Kashmir on the Path of Modernisation",
+  "isHtmlView": true,
+  "htmlOverview": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 0, 127, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FF007F; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FF007F; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFC1DC; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFC1DC; font-weight: 700; }\n  .hl { color: #FF007F; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FF007F; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FF007F; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(255, 0, 127, 0.10); border: 1.5px dashed #FF007F; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FF007F; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 0, 127, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(255, 0, 127, 0.18); border: 1px solid #FF007F; color: #FFC1DC; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(255, 0, 127, 0.2); color: #FFC1DC; }\n  .q-card .q-text, .q-card .sub-q { color: #FF007F !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ Chapter at a Glance</div><div class=\"sol-step\"><div class=\"rev\">After the accession of Jammu and Kashmir to India in <b>October 1947</b>, the State set out on a path of <span class=\"hl\">modernisation</span>. Successive governments introduced land reforms, debt relief, education, industry, tourism and cultural institutions, and the State's political and constitutional set-up changed step by step — up to its reorganisation into two Union Territories in <b>2019</b>.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 541\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"541\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"20\" font-size=\"11.5\" fill=\"#FF007F\" text-anchor=\"middle\" font-weight=\"700\">J&amp;K after 1947: Timeline</text><line x1=\"76\" y1=\"34\" x2=\"76\" y2=\"530.9999999999999\" stroke=\"rgba(255, 0, 127,0.55)\" stroke-width=\"2\"/><circle cx=\"76\" cy=\"39.5\" r=\"4\" fill=\"#FF007F\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"43\" font-size=\"10\" fill=\"#FF007F\" text-anchor=\"end\" font-weight=\"700\">Oct 1947</text><text x=\"88\" y=\"43.0\" font-size=\"9.5\" fill=\"#FFFFFF\">Maharaja Hari Singh signs the Instrument</text><text x=\"88\" y=\"55.2\" font-size=\"9.5\" fill=\"#FFFFFF\">of Accession to India (26 October)</text><circle cx=\"76\" cy=\"72.9\" r=\"4\" fill=\"#FF007F\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"76.4\" font-size=\"10\" fill=\"#FF007F\" text-anchor=\"end\" font-weight=\"700\">Mar 1948</text><text x=\"88\" y=\"76.4\" font-size=\"9.5\" fill=\"#FFFFFF\">Sheikh Mohammad Abdullah becomes Prime</text><text x=\"88\" y=\"88.6\" font-size=\"9.5\" fill=\"#FFFFFF\">Minister of J&amp;K</text><circle cx=\"76\" cy=\"106.30000000000001\" r=\"4\" fill=\"#FF007F\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"109.80000000000001\" font-size=\"10\" fill=\"#FF007F\" text-anchor=\"end\" font-weight=\"700\">1950</text><text x=\"88\" y=\"109.8\" font-size=\"9.5\" fill=\"#FFFFFF\">Big Landed Estates Abolition Act ('Land</text><text x=\"88\" y=\"122.0\" font-size=\"9.5\" fill=\"#FFFFFF\">to the Tiller'); Distressed Debtors</text><text x=\"88\" y=\"134.2\" font-size=\"9.5\" fill=\"#FFFFFF\">Relief Act</text><circle cx=\"76\" cy=\"151.9\" r=\"4\" fill=\"#FF007F\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"155.4\" font-size=\"10\" fill=\"#FF007F\" text-anchor=\"end\" font-weight=\"700\">1951</text><text x=\"88\" y=\"155.4\" font-size=\"9.5\" fill=\"#FFFFFF\">J&amp;K Constituent Assembly elected; meets</text><text x=\"88\" y=\"167.6\" font-size=\"9.5\" fill=\"#FFFFFF\">on 31 October</text><circle cx=\"76\" cy=\"185.3\" r=\"4\" fill=\"#FF007F\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"188.8\" font-size=\"10\" fill=\"#FF007F\" text-anchor=\"end\" font-weight=\"700\">1952</text><text x=\"88\" y=\"188.8\" font-size=\"9.5\" fill=\"#FFFFFF\">Hereditary monarchy ends; Dr Karan Singh</text><text x=\"88\" y=\"201.0\" font-size=\"9.5\" fill=\"#FFFFFF\">elected Sadr-i-Riyasat</text><circle cx=\"76\" cy=\"218.70000000000002\" r=\"4\" fill=\"#FF007F\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"222.20000000000002\" font-size=\"10\" fill=\"#FF007F\" text-anchor=\"end\" font-weight=\"700\">1953</text><text x=\"88\" y=\"222.2\" font-size=\"9.5\" fill=\"#FFFFFF\">Bakshi Ghulam Mohammad becomes Prime</text><text x=\"88\" y=\"234.4\" font-size=\"9.5\" fill=\"#FFFFFF\">Minister (August)</text><circle cx=\"76\" cy=\"252.10000000000002\" r=\"4\" fill=\"#FF007F\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"255.60000000000002\" font-size=\"10\" fill=\"#FF007F\" text-anchor=\"end\" font-weight=\"700\">1956</text><text x=\"88\" y=\"255.6\" font-size=\"9.5\" fill=\"#FFFFFF\">Jawahar Tunnel opens; Constitution of J&amp;K</text><text x=\"88\" y=\"267.8\" font-size=\"9.5\" fill=\"#FFFFFF\">adopted (17 November)</text><circle cx=\"76\" cy=\"285.5\" r=\"4\" fill=\"#FF007F\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"289\" font-size=\"10\" fill=\"#FF007F\" text-anchor=\"end\" font-weight=\"700\">1957</text><text x=\"88\" y=\"289.0\" font-size=\"9.5\" fill=\"#FFFFFF\">Constitution of J&amp;K comes into force (26</text><text x=\"88\" y=\"301.2\" font-size=\"9.5\" fill=\"#FFFFFF\">January)</text><circle cx=\"76\" cy=\"318.9\" r=\"4\" fill=\"#FF007F\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"322.4\" font-size=\"10\" fill=\"#FF007F\" text-anchor=\"end\" font-weight=\"700\">1958</text><text x=\"88\" y=\"322.4\" font-size=\"9.5\" fill=\"#FFFFFF\">J&amp;K Academy of Art, Culture and Languages</text><text x=\"88\" y=\"334.6\" font-size=\"9.5\" fill=\"#FFFFFF\">set up</text><circle cx=\"76\" cy=\"352.29999999999995\" r=\"4\" fill=\"#FF007F\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"355.79999999999995\" font-size=\"10\" fill=\"#FF007F\" text-anchor=\"end\" font-weight=\"700\">1963</text><text x=\"88\" y=\"355.8\" font-size=\"9.5\" fill=\"#FFFFFF\">Bakshi resigns under the Kamraj Plan</text><circle cx=\"76\" cy=\"373.49999999999994\" r=\"4\" fill=\"#FF007F\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"376.99999999999994\" font-size=\"10\" fill=\"#FF007F\" text-anchor=\"end\" font-weight=\"700\">1964</text><text x=\"88\" y=\"377.0\" font-size=\"9.5\" fill=\"#FFFFFF\">G.M. Sadiq heads the government; Articles</text><text x=\"88\" y=\"389.2\" font-size=\"9.5\" fill=\"#FFFFFF\">356 and 357 extended</text><circle cx=\"76\" cy=\"406.8999999999999\" r=\"4\" fill=\"#FF007F\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"410.3999999999999\" font-size=\"10\" fill=\"#FF007F\" text-anchor=\"end\" font-weight=\"700\">1965</text><text x=\"88\" y=\"410.4\" font-size=\"9.5\" fill=\"#FFFFFF\">Sadr-i-Riyasat becomes Governor; Prime</text><text x=\"88\" y=\"422.6\" font-size=\"9.5\" fill=\"#FFFFFF\">Minister becomes Chief Minister</text><circle cx=\"76\" cy=\"440.2999999999999\" r=\"4\" fill=\"#FF007F\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"443.7999999999999\" font-size=\"10\" fill=\"#FF007F\" text-anchor=\"end\" font-weight=\"700\">1967</text><text x=\"88\" y=\"443.8\" font-size=\"9.5\" fill=\"#FFFFFF\">Gajendragadkar Commission on regional</text><text x=\"88\" y=\"456.0\" font-size=\"9.5\" fill=\"#FFFFFF\">grievances</text><circle cx=\"76\" cy=\"473.6999999999999\" r=\"4\" fill=\"#FF007F\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"477.1999999999999\" font-size=\"10\" fill=\"#FF007F\" text-anchor=\"end\" font-weight=\"700\">1975</text><text x=\"88\" y=\"477.2\" font-size=\"9.5\" fill=\"#FFFFFF\">Indira-Sheikh Accord: Sheikh Abdullah</text><text x=\"88\" y=\"489.4\" font-size=\"9.5\" fill=\"#FFFFFF\">becomes Chief Minister</text><circle cx=\"76\" cy=\"507.09999999999985\" r=\"4\" fill=\"#FF007F\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"510.59999999999985\" font-size=\"10\" fill=\"#FF007F\" text-anchor=\"end\" font-weight=\"700\">2019</text><text x=\"88\" y=\"510.6\" font-size=\"9.5\" fill=\"#FFFFFF\">J&amp;K Reorganisation Act: UTs of J&amp;K and</text><text x=\"88\" y=\"522.8\" font-size=\"9.5\" fill=\"#FFFFFF\">Ladakh (from 31 October)</text></svg></div><div class=\"diagram-caption\">Key events, 1947–2019</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 1. From Accession to a Popular Government</div><div class=\"sol-step\"><div class=\"pt\">On <b>26 October 1947</b>, <b>Maharaja Hari Singh</b> signed the <b>Instrument of Accession</b> with India.</div><div class=\"pt\"><b>Sheikh Mohammad Abdullah</b>, leader of the National Conference, was first made head of an Emergency Administration; <b>Mehr Chand Mahajan</b> was then the Prime Minister appointed by the Maharaja.</div><div class=\"pt\">In <b>March 1948</b>, Sheikh Abdullah became the <b>Prime Minister</b> of J&K, heading the first popular government.</div><div class=\"pt\">The government's programme was based on the National Conference's <b>“Naya Kashmir”</b> manifesto (1944), which promised land to the tiller and economic and social rights.</div><div class=\"exam\"><span class=\"exam-t\">📌 Constitutional milestones</span><div>• <b>1951:</b> J&K Constituent Assembly elected (first met on 31 October 1951).</div><div>• <b>1952:</b> hereditary rule of the Dogra dynasty ended; <b>Dr Karan Singh</b> elected <b>Sadr-i-Riyasat</b> (elected head of the State).</div><div>• <b>1956–57:</b> Constitution of J&K adopted on 17 November 1956; came into force on <b>26 January 1957</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 2. Sheikh Abdullah's Government (1948–1953)</div><div class=\"sol-step\"><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 375\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"375\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#FF007F\" text-anchor=\"middle\" font-weight=\"700\">'Land to the Tiller' (1950)</text><rect x=\"30\" y=\"30\" width=\"260\" height=\"63\" rx=\"6\" fill=\"rgba(239,83,80,0.16)\" stroke=\"#EF5350\" stroke-width=\"1.2\"/><text x=\"160\" y=\"46.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Problem</text><text x=\"160\" y=\"58.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Big landlords (jagirdars, chakdars) owned</text><text x=\"160\" y=\"71.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">large estates; tillers paid heavy shares of</text><text x=\"160\" y=\"83.5\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">the crop</text><line x1=\"160\" y1=\"94\" x2=\"160\" y2=\"101\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 106 L163.5 100 L156.5 100 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"107\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(255, 0, 127,0.16)\" stroke=\"#FF007F\" stroke-width=\"1.2\"/><text x=\"160\" y=\"123.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Big Landed Estates Abolition Act, 1950</text><text x=\"160\" y=\"135.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Ceiling fixed at 182.5 kanals of land per</text><text x=\"160\" y=\"148.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">owner (with some exemptions for orchards etc.)</text><line x1=\"160\" y1=\"159\" x2=\"160\" y2=\"166\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 171 L163.5 165 L156.5 165 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"172\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(255, 0, 127,0.16)\" stroke=\"#FF007F\" stroke-width=\"1.2\"/><text x=\"160\" y=\"188.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Surplus land taken over</text><text x=\"160\" y=\"200.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Land above the ceiling was taken without</text><text x=\"160\" y=\"213.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">compensation to the owners</text><line x1=\"160\" y1=\"224\" x2=\"160\" y2=\"231\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 236 L163.5 230 L156.5 230 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"237\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"160\" y=\"253.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Ownership to the tillers</text><text x=\"160\" y=\"265.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">The cultivators of the surplus land became its</text><text x=\"160\" y=\"278.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">owners</text><line x1=\"160\" y1=\"289\" x2=\"160\" y2=\"296\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 301 L163.5 295 L156.5 295 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"302\" width=\"260\" height=\"63\" rx=\"6\" fill=\"rgba(255, 0, 127,0.16)\" stroke=\"#FF007F\" stroke-width=\"1.2\"/><text x=\"160\" y=\"318.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Supporting steps</text><text x=\"160\" y=\"330.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Distressed Debtors Relief Act (1950), debt</text><text x=\"160\" y=\"343.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">conciliation boards and cooperatives freed</text><text x=\"160\" y=\"355.6\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">peasants from moneylenders</text></svg></div><div class=\"diagram-caption\">The 'Land to the Tiller' reform</div></div><div class=\"sec\">Socio-economic impact</div><div class=\"pt\">Ended the dominance of big landlords; lakhs of tillers became owners of the land they cultivated.</div><div class=\"pt\"><b>Debt relief</b> reduced the burden of old debts and the power of moneylenders.</div><div class=\"pt\"><b>Cooperative societies</b> supplied credit, seeds and essential goods to villagers.</div><div class=\"pt\">Spread of education, including the setting up of the <b>University of Jammu and Kashmir (1948)</b>.</div><div class=\"pt\">It gave the rural poor dignity and a share in the land, though landlords who lost land without compensation were unhappy.</div><div class=\"rev\">In <b>August 1953</b>, Sheikh Abdullah's government was dismissed and <b>Bakshi Ghulam Mohammad</b> became Prime Minister.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 3. Bakshi Ghulam Mohammad's Government (1953–1963)</div><div class=\"sol-step\"><div class=\"sec\">Economic reforms</div><div class=\"pt\"><b>Roads and transport:</b> roads expanded; the <b>Jawahar Tunnel</b> at Banihal (opened 1956) gave all-weather road link between Jammu and Srinagar.</div><div class=\"pt\"><b>Power and industry:</b> power projects started; State industries such as silk and woollens revived; industrial estates and help to small industries.</div><div class=\"pt\"><b>Food supply:</b> essential food grains supplied at subsidised rates.</div><div class=\"pt\"><b>Tourism:</b> tourist facilities such as reception centres, huts and bungalows developed at places like Gulmarg and Pahalgam.</div><div class=\"pt\"><b>Education:</b> free education, new schools and colleges; professional institutions such as a medical college and an engineering college at Srinagar.</div><div class=\"sec\">Cultural policy</div><div class=\"pt\"><b>J&K Academy of Art, Culture and Languages (1958)</b> promoted art, music, literature and the regional languages.</div><div class=\"pt\">Support to writers, poets, artists and cultural groups; Kashmiri, Dogri and other mother tongues encouraged in education and literature.</div><div class=\"rev\">In <b>1963</b>, Bakshi resigned under the <b>Kamraj Plan</b> of the Congress, which asked senior leaders to leave government posts to work for the party organisation.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 4. G.M. Sadiq's Government (1964–1971)</div><div class=\"sol-step\"><div class=\"sec\">Policy of liberalism</div><div class=\"pt\">Released political prisoners and allowed greater freedom of speech, press and political activity, including opposition parties.</div><div class=\"pt\">Brought the State's administration closer to the rest of India.</div><div class=\"sec\">Constitutional changes</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Before 1965</th><th>After 1965</th></tr><tr><td>Sadr-i-Riyasat (elected head of State)</td><td><b>Governor</b> (appointed by the President)</td></tr><tr><td>Prime Minister of J&K</td><td><b>Chief Minister</b></td></tr></table></div><div class=\"pt\">In <b>1964</b>, <b>Articles 356 and 357</b> of the Indian Constitution (President's Rule) were extended to the State.</div><div class=\"sec\">Industrial development</div><div class=\"pt\">A State <b>Industrial Development Corporation</b> was set up to finance and promote industries.</div><div class=\"pt\">Help to small-scale industries and handicrafts — shawls, carpets, papier-mâché — through loans, subsidies and cooperatives.</div><div class=\"exam\"><span class=\"exam-t\">📌 Gajendragadkar Commission (1967)</span><div>• Appointed to look into the grievances of the different regions of the State (Jammu, Kashmir and Ladakh) and regional imbalances in development.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 5. Cultural Renaissance</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Body / person</th><th>Contribution</th></tr><tr><td><b>Cultural Congress</b> (Kashmir)</td><td>Progressive writers and artists; literary journal <b>Kong Posh</b></td></tr><tr><td><b>Dogri Sanstha</b> (Jammu, 1944)</td><td>Promotion of Dogri language, art and culture; publications such as <b>Nami Chetna</b></td></tr><tr><td><b>Dina Nath Nadim</b></td><td>Celebrated Kashmiri poet; wrote <b>Bombur Te Yemberzal</b>, the first Kashmiri opera</td></tr><tr><td><b>Lala Mulk Raj Saraf</b></td><td>Founded the weekly <b>Ranbir</b> (1924); called the father of journalism in J&K</td></tr><tr><td><b>J&K Academy (1958)</b></td><td>Art, culture and languages of all regions</td></tr></table></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 6. From 1971 to 2019</div><div class=\"sol-step\"><div class=\"pt\"><b>Syed Mir Qasim</b> was Chief Minister from 1971 to 1975.</div><div class=\"pt\"><b>Indira-Sheikh Accord:</b> an agreement between the Government of India and Sheikh Abdullah (negotiated in 1974 and announced in February 1975). It reaffirmed that J&K was a constituent unit of the Union of India, governed by Article 370; Sheikh Abdullah returned as <b>Chief Minister</b> in February 1975.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 353\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"353\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#FF007F\" text-anchor=\"middle\" font-weight=\"700\">Heads of Government, 1948–1982</text><text x=\"160\" y=\"36\" font-size=\"9.5\" fill=\"#CBD5E1\" text-anchor=\"middle\">Shamsuddin briefly headed the government in 1963–64</text><rect x=\"30\" y=\"44\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(255, 0, 127,0.16)\" stroke=\"#FF007F\" stroke-width=\"1.2\"/><text x=\"160\" y=\"60.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Sheikh Mohammad Abdullah (1948–1953)</text><text x=\"160\" y=\"72.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Prime Minister; land reforms, debt relief,</text><text x=\"160\" y=\"85.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">'Naya Kashmir' programme</text><line x1=\"160\" y1=\"96\" x2=\"160\" y2=\"103\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 108 L163.5 102 L156.5 102 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"109\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(255, 0, 127,0.16)\" stroke=\"#FF007F\" stroke-width=\"1.2\"/><text x=\"160\" y=\"125.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Bakshi Ghulam Mohammad (1953–1963)</text><text x=\"160\" y=\"137.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Prime Minister; roads, Jawahar Tunnel,</text><text x=\"160\" y=\"150.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">tourism, education, culture</text><line x1=\"160\" y1=\"161\" x2=\"160\" y2=\"168\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 173 L163.5 167 L156.5 167 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"174\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"160\" y=\"190.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">G.M. Sadiq (1964–1971)</text><text x=\"160\" y=\"202.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Liberal policies; in 1965 became the first</text><text x=\"160\" y=\"215.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Chief Minister of J&amp;K</text><line x1=\"160\" y1=\"226\" x2=\"160\" y2=\"233\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 238 L163.5 232 L156.5 232 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"239\" width=\"260\" height=\"39\" rx=\"6\" fill=\"rgba(255, 0, 127,0.16)\" stroke=\"#FF007F\" stroke-width=\"1.2\"/><text x=\"160\" y=\"255.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Syed Mir Qasim (1971–1975)</text><text x=\"160\" y=\"267.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Chief Minister</text><line x1=\"160\" y1=\"279\" x2=\"160\" y2=\"286\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 291 L163.5 285 L156.5 285 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"292\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(255, 0, 127,0.16)\" stroke=\"#FF007F\" stroke-width=\"1.2\"/><text x=\"160\" y=\"308.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Sheikh Mohammad Abdullah (1975–1982)</text><text x=\"160\" y=\"320.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Returns as Chief Minister after the</text><text x=\"160\" y=\"333.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Indira-Sheikh Accord</text></svg></div><div class=\"diagram-caption\">Who headed the government, 1948–1982</div></div><div class=\"sec\">J&K Reorganisation Act, 2019</div><div class=\"pt\">On <b>5 August 2019</b>, the special provisions of Article 370 ceased to apply, and Parliament passed the <b>Jammu and Kashmir Reorganisation Act, 2019</b>.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 197\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"197\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#FF007F\" text-anchor=\"middle\" font-weight=\"700\">J&amp;K Reorganisation Act, 2019</text><rect x=\"60\" y=\"30\" width=\"200\" height=\"51\" rx=\"6\" fill=\"rgba(255, 0, 127,0.16)\" stroke=\"#FF007F\" stroke-width=\"1.2\"/><text x=\"160\" y=\"46.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">State of Jammu and Kashmir</text><text x=\"160\" y=\"58.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Reorganised into two Union</text><text x=\"160\" y=\"71.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Territories from 31 October 2019</text><line x1=\"160\" y1=\"82\" x2=\"160\" y2=\"89\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 94 L163.5 88 L156.5 88 Z\" fill=\"#B0BEC5\"/><rect x=\"13\" y=\"96\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"84\" y=\"112.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">UT of Jammu and</text><text x=\"84\" y=\"123.7\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Kashmir</text><text x=\"84\" y=\"135.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">With a Legislative</text><text x=\"84\" y=\"147.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Assembly; headed by a</text><text x=\"84\" y=\"158.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Lieutenant Governor</text><rect x=\"165\" y=\"96\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(255, 0, 127,0.16)\" stroke=\"#FF007F\" stroke-width=\"1.2\"/><text x=\"236\" y=\"112.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">UT of Ladakh</text><text x=\"236\" y=\"123.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Without a Legislative</text><text x=\"236\" y=\"135.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Assembly; Leh and Kargil</text><text x=\"236\" y=\"147.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">districts; headed by a</text><text x=\"236\" y=\"158.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Lieutenant Governor</text><text x=\"160\" y=\"183\" font-size=\"9.5\" fill=\"#FF007F\" text-anchor=\"middle\" font-weight=\"700\">Central laws now apply directly to both UTs</text></svg></div><div class=\"diagram-caption\">Two Union Territories in place of one State</div></div><div class=\"pt\"><b>Benefits stated by the Government:</b> all central laws (e.g. Right to Information, Right to Education) apply directly; reservations and welfare schemes extended to more sections; more central investment for development, industry and infrastructure.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ Quick Glossary</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Term</th><th>Meaning</th></tr><tr><td>Instrument of Accession</td><td>Legal document by which a princely state joined India or Pakistan in 1947</td></tr><tr><td>Naya Kashmir</td><td>National Conference manifesto of 1944 for political, economic and social rights</td></tr><tr><td>Land to the Tiller</td><td>Land reform giving ownership of surplus land to the cultivators</td></tr><tr><td>Sadr-i-Riyasat</td><td>Elected head of the State of J&K (1952–1965), replaced by the Governor</td></tr><tr><td>Kamraj Plan</td><td>1963 Congress plan asking senior leaders to leave office for party work</td></tr><tr><td>Cooperative society</td><td>Voluntary association of people working together for common economic benefit</td></tr><tr><td>Union Territory</td><td>Area governed directly by the Union Government through a Lieutenant Governor or Administrator</td></tr></table></div></div>\n  </div>\n\n</div>",
+  "htmlExercises": {
+    "sh6-ex-long": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 0, 127, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FF007F; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FF007F; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFC1DC; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFC1DC; font-weight: 700; }\n  .hl { color: #FF007F; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FF007F; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FF007F; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(255, 0, 127, 0.10); border: 1.5px dashed #FF007F; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FF007F; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 0, 127, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(255, 0, 127, 0.18); border: 1px solid #FF007F; color: #FFC1DC; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(255, 0, 127, 0.2); color: #FFC1DC; }\n  .q-card .q-text, .q-card .sub-q { color: #FF007F !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Discuss briefly the socio-economic impact of government's policy during the time of Sheikh Abdullah.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Land reforms:</span> the Big Landed Estates Abolition Act (1950) fixed a ceiling of 182.5 kanals; surplus land was taken without compensation and given to the tillers ('Land to the Tiller').</div><div class=\"pt\"><span class=\"lbl\">End of landlordism:</span> the power of big landlords ended; lakhs of peasants became owners of the land they tilled.</div><div class=\"pt\"><span class=\"lbl\">Debt relief:</span> the Distressed Debtors Relief Act (1950) and debt conciliation boards reduced peasants' debts and the hold of moneylenders.</div><div class=\"pt\"><span class=\"lbl\">Cooperatives:</span> cooperative societies provided credit, seeds and essential goods.</div><div class=\"pt\"><span class=\"lbl\">Education:</span> schools expanded and the University of J&K was set up (1948).</div><div class=\"pt\">Result: greater dignity and income for the rural poor and a more equal rural society.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Discuss the major economic reforms that were introduced by Bakshi's government.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Transport:</span> roads were expanded; the Jawahar Tunnel (1956) provided an all-weather road link between Jammu and Srinagar.</div><div class=\"pt\"><span class=\"lbl\">Industry and power:</span> power projects; revival of State industries such as silk and woollens; industrial estates and aid to small industries.</div><div class=\"pt\"><span class=\"lbl\">Food:</span> essential food grains were supplied at subsidised rates.</div><div class=\"pt\"><span class=\"lbl\">Tourism:</span> tourist facilities developed at Gulmarg, Pahalgam and other places.</div><div class=\"pt\"><span class=\"lbl\">Education:</span> free education and new schools, colleges and professional institutions.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">'Sadiq's government followed a policy of liberalism'. Cite some examples from the text to support this statement.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Political prisoners were released.</div><div class=\"pt\">Greater freedom of speech, of the press and of political activity was allowed, including to opposition parties.</div><div class=\"pt\">The administration was brought closer to the rest of India: Articles 356 and 357 were extended (1964), and in 1965 the Sadr-i-Riyasat became Governor and the Prime Minister became Chief Minister.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">What were the major steps taken up by Ghulam Mohammad Sadiq to boost up the Industrial sector in the region?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Set up a State Industrial Development Corporation to finance and promote industries.</div><div class=\"pt\">Gave loans and subsidies (on raw materials, power and transport) to entrepreneurs.</div><div class=\"pt\">Encouraged small-scale industries and handicrafts such as shawls, carpets and papier-mâché through cooperatives.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5.</div>\n    <div class=\"q-text\">Briefly describe the cultural policy of the state under Bakshi Ghulam Mohammad's government?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Set up the <b>J&K Academy of Art, Culture and Languages (1958)</b> to promote art, music, literature and languages of all regions.</div><div class=\"pt\">Encouraged education and literature in mother tongues such as Kashmiri and Dogri, including through a textbook advisory board.</div><div class=\"pt\">Gave patronage, awards and financial help to writers, poets, artists and cultural groups.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q6.</div>\n    <div class=\"q-text\">What was Reorganization Act 2019? Enumerate the major benefits of this act?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">An Act of the Parliament of India (2019) that reorganised the State of J&K into two Union Territories from <b>31 October 2019</b>: the UT of Jammu and Kashmir (with a legislature) and the UT of Ladakh (without a legislature).</div><div class=\"sec\">Benefits (as stated by the Government)</div><div class=\"pt\">All central laws, such as the Right to Information and Right to Education Acts, apply directly.</div><div class=\"pt\">Reservations and central welfare schemes extended to more sections of society.</div><div class=\"pt\">More central funds and investment for development, industry and infrastructure.</div></div></div>\n  </div>\n\n</div>",
+    "sh6-ex-short": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 0, 127, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FF007F; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FF007F; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFC1DC; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFC1DC; font-weight: 700; }\n  .hl { color: #FF007F; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FF007F; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FF007F; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(255, 0, 127, 0.10); border: 1.5px dashed #FF007F; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FF007F; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 0, 127, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(255, 0, 127, 0.18); border: 1px solid #FF007F; color: #FFC1DC; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(255, 0, 127, 0.2); color: #FFC1DC; }\n  .q-card .q-text, .q-card .sub-q { color: #FF007F !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Define the term Sadr-i-Riyasat? Who was designated as the first Sadr-i-Riyasat of Jammu and Kashmir?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Sadr-i-Riyasat:</b> the elected head of the State of J&K after hereditary monarchy ended in 1952; the post was replaced by the Governor in 1965.</div><div class=\"pt\"><b>Dr Karan Singh</b> was the first Sadr-i-Riyasat (1952).</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">What do you know about Kamraj Plan?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">A plan proposed in 1963 by Congress leader K. Kamraj, under which senior leaders resigned from government posts to strengthen the party organisation.</div><div class=\"pt\">Under it, Bakshi Ghulam Mohammad resigned as Prime Minister of J&K in 1963.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Write a short note on the development of cooperatives in Jammu and Kashmir.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Cooperatives were promoted after 1947 to free peasants and artisans from moneylenders and middlemen.</div><div class=\"pt\">Cooperative banks and credit societies gave cheap loans; cooperative stores supplied seeds, fertilisers and essential goods.</div><div class=\"pt\">Artisans' cooperatives helped weavers and craftsmen get raw materials and fair prices.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">What were the steps taken by the state to promote tourism?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Developed tourist spots such as Gulmarg and Pahalgam with huts, bungalows and other facilities.</div><div class=\"pt\">Set up tourist reception centres and improved roads and transport.</div><div class=\"pt\">Promoted local handicrafts and hospitality, making tourism a major source of income.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5.</div>\n    <div class=\"q-text\">Enlist any two important constitutional changes that were introduced by Ghulam Mohammad Sadiq?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">In 1965, the Sadr-i-Riyasat was renamed Governor and the Prime Minister of J&K was renamed Chief Minister.</div><div class=\"pt\">In 1964, Articles 356 and 357 of the Indian Constitution (President's Rule) were extended to the State.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q6.</div>\n    <div class=\"q-text\">Write a short note on \"Indira Sheikh Accord\".</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">An agreement between the Government of India (Prime Minister Indira Gandhi) and Sheikh Mohammad Abdullah, negotiated in 1974 and announced in February 1975.</div><div class=\"pt\">It reaffirmed that J&K was a constituent unit of the Union of India, governed by Article 370.</div><div class=\"pt\">Sheikh Abdullah returned to power as Chief Minister of J&K in February 1975.</div></div></div>\n  </div>\n\n</div>",
+    "sh6-ex-blanks": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 0, 127, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FF007F; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FF007F; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFC1DC; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFC1DC; font-weight: 700; }\n  .hl { color: #FF007F; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FF007F; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FF007F; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(255, 0, 127, 0.10); border: 1.5px dashed #FF007F; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FF007F; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 0, 127, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(255, 0, 127, 0.18); border: 1px solid #FF007F; color: #FFC1DC; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(255, 0, 127, 0.2); color: #FFC1DC; }\n  .q-card .q-text, .q-card .sub-q { color: #FF007F !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Fill in the blanks:<br/>1. ______ was the Maharaja of Jammu and Kashmir at the time of accession.<br/>2. Dr. Karan Singh was made Sadr-i-Riyasat in the year ______.<br/>3. ______ was the first Prime Minister of the state of Jammu and Kashmir.<br/>4. ______ and ______ were the two important publications of Dogri Sanstha that helped in the promotion of Dogri art, culture and language.<br/>5. An important literary journal of the Cultural Congress was ______.<br/>6. ______ was the most celebrated Kashmiri poet who wrote Bombur Te Yemberzal.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">1. <b>Maharaja Hari Singh</b></div><div class=\"pt\">2. <b>1952</b></div><div class=\"pt\">3. <b>Sheikh Mohammad Abdullah</b> (first Prime Minister of the popular government, 1948; Mehr Chand Mahajan was Prime Minister under the Maharaja before him)</div><div class=\"pt\">4. <b>Jaago Duggar</b> and <b>Nami Chetna</b></div><div class=\"pt\">5. <b>Kong Posh</b></div><div class=\"pt\">6. <b>Dina Nath Nadim</b></div></div></div>\n  </div>\n\n</div>",
+    "sh6-ex-match": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 0, 127, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FF007F; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FF007F; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFC1DC; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFC1DC; font-weight: 700; }\n  .hl { color: #FF007F; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FF007F; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FF007F; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(255, 0, 127, 0.10); border: 1.5px dashed #FF007F; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FF007F; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 0, 127, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(255, 0, 127, 0.18); border: 1px solid #FF007F; color: #FFC1DC; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(255, 0, 127, 0.2); color: #FFC1DC; }\n  .q-card .q-text, .q-card .sub-q { color: #FF007F !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Match Column A with Column B:<br/>1. Gajendragadkar Commission<br/>2. Distressed Debtors Relief Act<br/>3. Textbook Advisory Board<br/>4. J&K Re-Organization Act</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Column A</th><th>Column B</th></tr><tr><td>1. Gajendragadkar Commission</td><td><b>1967</b></td></tr><tr><td>2. Distressed Debtors Relief Act</td><td><b>1950</b></td></tr><tr><td>3. Textbook Advisory Board</td><td><b>1948</b></td></tr><tr><td>4. J&K Re-Organization Act</td><td><b>2019</b></td></tr></table></div></div></div>\n  </div>\n\n</div>",
+    "sh6-ex-board": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 0, 127, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FF007F; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FF007F; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFC1DC; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFC1DC; font-weight: 700; }\n  .hl { color: #FF007F; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FF007F; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FF007F; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(255, 0, 127, 0.10); border: 1.5px dashed #FF007F; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FF007F; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 0, 127, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(255, 0, 127, 0.18); border: 1px solid #FF007F; color: #FFC1DC; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(255, 0, 127, 0.2); color: #FFC1DC; }\n  .q-card .q-text, .q-card .sub-q { color: #FF007F !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\"><div class=\"q-title\">✦ Section A: Very Short Answer (1 Mark)</div></div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">When did Maharaja Hari Singh sign the Instrument of Accession?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">On <b>26 October 1947</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">What was the slogan of the land reforms of 1950?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>“Land to the Tiller”</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">What was the land ceiling under the Big Landed Estates Abolition Act?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>182.5 kanals</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Who was the first Sadr-i-Riyasat of J&K?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Dr Karan Singh</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Which tunnel gave an all-weather road link between Jammu and Srinagar?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">The <b>Jawahar Tunnel</b> (Banihal).</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q6. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">When was the J&K Academy of Art, Culture and Languages set up?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">In <b>1958</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q7. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Under which plan did Bakshi Ghulam Mohammad resign in 1963?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">The <b>Kamraj Plan</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q8. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Who became the first Chief Minister of J&K in 1965?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>G.M. Sadiq</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q9. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Who wrote Bombur Te Yemberzal?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Dina Nath Nadim</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q10. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Into which two Union Territories was J&K reorganised in 2019?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Jammu and Kashmir</b> and <b>Ladakh</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\"><div class=\"q-title\">✦ Section B: Short Answer (3 Marks)</div></div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q11. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">Explain the 'Land to the Tiller' reform.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">The Big Landed Estates Abolition Act (1950) fixed a ceiling of 182.5 kanals.</div><div class=\"pt\">Land above the ceiling was taken without compensation.</div><div class=\"pt\">The tillers of this surplus land were made its owners, ending landlordism.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q12. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">Describe the constitutional milestones of J&K between 1951 and 1957.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">1951: the J&K Constituent Assembly was elected.</div><div class=\"pt\">1952: hereditary monarchy ended; Dr Karan Singh was elected Sadr-i-Riyasat.</div><div class=\"pt\">The Constitution of J&K was adopted on 17 November 1956 and came into force on 26 January 1957.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q13. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">What was the importance of the Jawahar Tunnel?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">It was built at Banihal on the Jammu–Srinagar road and opened in 1956.</div><div class=\"pt\">It provided an all-weather road link between Jammu and the Kashmir valley.</div><div class=\"pt\">It helped trade, supply of goods, tourism and movement of people throughout the year.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q14. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">Write a note on the cultural renaissance in J&K after 1947.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">The Cultural Congress brought out the literary journal Kong Posh; Dina Nath Nadim wrote the first Kashmiri opera, Bombur Te Yemberzal.</div><div class=\"pt\">The Dogri Sanstha promoted Dogri language and culture through publications.</div><div class=\"pt\">The J&K Academy of Art, Culture and Languages (1958) supported artists and the languages of all regions.</div></div></div>\n  </div>\n\n  <div class=\"q-card\"><div class=\"q-title\">✦ Section C: Long Answer (5 Marks)</div></div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q15. <span class=\"badge\">5 Marks</span></div>\n    <div class=\"q-text\">Compare the contributions of Sheikh Abdullah, Bakshi Ghulam Mohammad and G.M. Sadiq to the modernisation of J&K.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Sheikh Abdullah (1948–53):</span> 'Land to the Tiller' reforms, debt relief, cooperatives, University of J&K.</div><div class=\"pt\"><span class=\"lbl\">Bakshi Ghulam Mohammad (1953–63):</span> roads and the Jawahar Tunnel, power and industries, subsidised food grains, tourism, free education, the Cultural Academy (1958).</div><div class=\"pt\"><span class=\"lbl\">G.M. Sadiq (1964–71):</span> liberal politics, release of political prisoners, constitutional changes of 1964–65, industrial development corporation and help to handicrafts.</div><div class=\"pt\">Together they changed J&K from a feudal, agrarian society towards a modern economy with wider education and democratic institutions.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q16. <span class=\"badge\">5 Marks</span></div>\n    <div class=\"q-text\">Describe the J&K Reorganisation Act, 2019 and its main provisions.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Passed by Parliament in August 2019 after the special provisions of Article 370 ceased to apply (5 August 2019).</div><div class=\"pt\">The State was reorganised into the UT of Jammu and Kashmir (with a Legislative Assembly) and the UT of Ladakh (without one), from 31 October 2019.</div><div class=\"pt\">Both UTs are headed by Lieutenant Governors.</div><div class=\"pt\">Central laws such as the RTI and RTE Acts apply directly.</div><div class=\"pt\">The Government stated that it would bring more investment, development and welfare benefits to the region.</div></div></div>\n  </div>\n\n</div>"
   },
+  "introduction": "After the dramatic events of 1947 and accession to India, Jammu and Kashmir embarked on a journey of modernisation. From revolutionary land reforms under Sheikh Abdullah to infrastructure building under Bakshi Ghulam Mohammad, administrative reforms under G.M. Sadiq, and the historic Reorganisation of 2019, let's trace how J&K evolved in the post-independence era.",
+  "definitions": [],
+  "keyPoints": [],
+  "formulas": [],
+  "crux": [],
+  "mcqs": [
+    {
+      "id": "sh6-mcq-1",
+      "question": "<div style='text-align: justify;'>Who was the ruler of Jammu and Kashmir at the time of accession in 1947?</div>",
+      "options": [
+        "A):   Maharaja Gulab Singh",
+        "B):   Maharaja Pratap Singh",
+        "C):   Maharaja Hari Singh",
+        "D):   Dr Karan Singh"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>He signed the Instrument of Accession on 26 October 1947.</div>"
+    },
+    {
+      "id": "sh6-mcq-2",
+      "question": "<div style='text-align: justify;'>Who was the first Sadr-i-Riyasat of Jammu and Kashmir?</div>",
+      "options": [
+        "A):   Dr Karan Singh",
+        "B):   Sheikh Mohammad Abdullah",
+        "C):   Maharaja Hari Singh",
+        "D):   Mehr Chand Mahajan"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>He was elected in 1952 after monarchy ended.</div>"
+    },
+    {
+      "id": "sh6-mcq-3",
+      "question": "<div style='text-align: justify;'>In which year was the Big Landed Estates Abolition Act passed?</div>",
+      "options": [
+        "A):   1947",
+        "B):   1965",
+        "C):   1953",
+        "D):   1950"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>It gave surplus land to the tillers.</div>"
+    },
+    {
+      "id": "sh6-mcq-4",
+      "question": "<div style='text-align: justify;'>The land ceiling fixed by the Big Landed Estates Abolition Act was:</div>",
+      "options": [
+        "A):   100 kanals",
+        "B):   182.5 kanals",
+        "C):   250 kanals",
+        "D):   500 kanals"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Land above this limit was taken without compensation.</div>"
+    },
+    {
+      "id": "sh6-mcq-5",
+      "question": "<div style='text-align: justify;'>Who was the Prime Minister of J&K during the 'Land to the Tiller' reforms?</div>",
+      "options": [
+        "A):   Sheikh Mohammad Abdullah",
+        "B):   Mehr Chand Mahajan",
+        "C):   Bakshi Ghulam Mohammad",
+        "D):   G.M. Sadiq"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>He headed the government from 1948 to 1953.</div>"
+    },
+    {
+      "id": "sh6-mcq-6",
+      "question": "<div style='text-align: justify;'>The 'Naya Kashmir' manifesto was adopted by the National Conference in:</div>",
+      "options": [
+        "A):   1931",
+        "B):   1939",
+        "C):   1944",
+        "D):   1952"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>It promised land to the tiller and social rights.</div>"
+    },
+    {
+      "id": "sh6-mcq-7",
+      "question": "<div style='text-align: justify;'>The Constitution of J&K came into force on:</div>",
+      "options": [
+        "A):   26 October 1947",
+        "B):   26 January 1957",
+        "C):   26 January 1950",
+        "D):   5 August 2019"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>It was adopted on 17 November 1956.</div>"
+    },
+    {
+      "id": "sh6-mcq-8",
+      "question": "<div style='text-align: justify;'>The Jawahar Tunnel was opened during the government of:</div>",
+      "options": [
+        "A):   Sheikh Mohammad Abdullah",
+        "B):   Mir Qasim",
+        "C):   G.M. Sadiq",
+        "D):   Bakshi Ghulam Mohammad"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>It opened in 1956 at Banihal.</div>"
+    },
+    {
+      "id": "sh6-mcq-9",
+      "question": "<div style='text-align: justify;'>The J&K Academy of Art, Culture and Languages was set up in:</div>",
+      "options": [
+        "A):   1948",
+        "B):   1953",
+        "C):   1967",
+        "D):   1958"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>It was part of Bakshi's cultural policy.</div>"
+    },
+    {
+      "id": "sh6-mcq-10",
+      "question": "<div style='text-align: justify;'>Which Prime Minister of J&K resigned under the Kamraj Plan in 1963?</div>",
+      "options": [
+        "A):   Sheikh Mohammad Abdullah",
+        "B):   Bakshi Ghulam Mohammad",
+        "C):   G.M. Sadiq",
+        "D):   Mir Qasim"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>The plan asked leaders to work for the party.</div>"
+    },
+    {
+      "id": "sh6-mcq-11",
+      "question": "<div style='text-align: justify;'>In 1965, the post of Sadr-i-Riyasat was replaced by:</div>",
+      "options": [
+        "A):   Chief Minister",
+        "B):   Lieutenant Governor",
+        "C):   Governor",
+        "D):   President"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>The Prime Minister was renamed Chief Minister.</div>"
+    },
+    {
+      "id": "sh6-mcq-12",
+      "question": "<div style='text-align: justify;'>Who became the first Chief Minister of J&K?</div>",
+      "options": [
+        "A):   G.M. Sadiq",
+        "B):   Sheikh Mohammad Abdullah",
+        "C):   Mir Qasim",
+        "D):   Bakshi Ghulam Mohammad"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>The title changed in 1965 during his tenure.</div>"
+    },
+    {
+      "id": "sh6-mcq-13",
+      "question": "<div style='text-align: justify;'>Which Articles of the Indian Constitution were extended to J&K in 1964?</div>",
+      "options": [
+        "A):   Articles 14 and 21",
+        "B):   Articles 32 and 226",
+        "C):   Articles 370 and 371",
+        "D):   Articles 356 and 357"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>They relate to President's Rule.</div>"
+    },
+    {
+      "id": "sh6-mcq-14",
+      "question": "<div style='text-align: justify;'>The Gajendragadkar Commission (1967) looked into:</div>",
+      "options": [
+        "A):   Regional grievances and imbalances",
+        "B):   Land reforms",
+        "C):   Elections",
+        "D):   Tourism"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>It examined grievances of Jammu, Kashmir and Ladakh.</div>"
+    },
+    {
+      "id": "sh6-mcq-15",
+      "question": "<div style='text-align: justify;'>The first Kashmiri opera, Bombur Te Yemberzal, was written by:</div>",
+      "options": [
+        "A):   Mahjoor",
+        "B):   Rasool Mir",
+        "C):   Dina Nath Nadim",
+        "D):   Lal Ded"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>He was a leading progressive Kashmiri poet.</div>"
+    },
+    {
+      "id": "sh6-mcq-16",
+      "question": "<div style='text-align: justify;'>Kong Posh was a literary journal of the:</div>",
+      "options": [
+        "A):   Dogri Sanstha",
+        "B):   Cultural Congress",
+        "C):   Jammu and Kashmir Academy",
+        "D):   National Conference"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>The Cultural Congress was a body of progressive writers.</div>"
+    },
+    {
+      "id": "sh6-mcq-17",
+      "question": "<div style='text-align: justify;'>Who is called the father of journalism in J&K?</div>",
+      "options": [
+        "A):   Prem Nath Bazaz",
+        "B):   Lala Mulk Raj Saraf",
+        "C):   G.M. Sadiq",
+        "D):   Mehr Chand Mahajan"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>He founded the weekly Ranbir in 1924.</div>"
+    },
+    {
+      "id": "sh6-mcq-18",
+      "question": "<div style='text-align: justify;'>The Indira-Sheikh Accord led to Sheikh Abdullah becoming Chief Minister in:</div>",
+      "options": [
+        "A):   1953",
+        "B):   1965",
+        "C):   1982",
+        "D):   1975"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>It was announced in February 1975.</div>"
+    },
+    {
+      "id": "sh6-mcq-19",
+      "question": "<div style='text-align: justify;'>Under the Reorganisation Act 2019, which UT has a Legislative Assembly?</div>",
+      "options": [
+        "A):   Ladakh",
+        "B):   Both",
+        "C):   Jammu and Kashmir",
+        "D):   Neither"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Ladakh is a UT without a legislature.</div>"
+    },
+    {
+      "id": "sh6-mcq-20",
+      "question": "<div style='text-align: justify;'>The J&K Reorganisation Act came into force on:</div>",
+      "options": [
+        "A):   31 October 2019",
+        "B):   15 August 2019",
+        "C):   5 August 2019",
+        "D):   26 January 2020"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Two UTs were formed from that date.</div>"
+    },
+    {
+      "id": "sh6-mcq-21",
+      "question": "<div style='text-align: justify;'>The Distressed Debtors Relief Act was passed in:</div>",
+      "options": [
+        "A):   1948",
+        "B):   1967",
+        "C):   1950",
+        "D):   1975"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>It reduced peasants' debts to moneylenders.</div>"
+    },
+    {
+      "id": "sh6-mcq-22",
+      "question": "<div style='text-align: justify;'>Arrange in chronological order: (i) Kamraj Plan resignation (ii) Instrument of Accession (iii) Jawahar Tunnel opens (iv) Sadr-i-Riyasat becomes Governor</div>",
+      "options": [
+        "A):   (ii), (iii), (i), (iv)",
+        "B):   (ii), (i), (iii), (iv)",
+        "C):   (iii), (ii), (i), (iv)",
+        "D):   (ii), (iii), (iv), (i)"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>1947 → 1956 → 1963 → 1965.</div>"
+    },
+    {
+      "id": "sh6-mcq-23",
+      "question": "<div style='text-align: justify;'>Match: (P) Sheikh Abdullah (Q) Bakshi Ghulam Mohammad (R) G.M. Sadiq (S) Dr Karan Singh — with (1) Sadr-i-Riyasat (2) Land to the Tiller (3) Jawahar Tunnel era (4) First Chief Minister</div>",
+      "options": [
+        "A):   P-1, Q-3, R-4, S-2",
+        "B):   P-3, Q-2, R-1, S-4",
+        "C):   P-2, Q-4, R-3, S-1",
+        "D):   P-2, Q-3, R-4, S-1"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Each leader matches his role or reform.</div>"
+    },
+    {
+      "id": "sh6-mcq-24",
+      "question": "<div style='text-align: justify;'>Assertion (A): Peasants of J&K became owners of the land they tilled after 1950. Reason (R): The Big Landed Estates Abolition Act transferred surplus land above the ceiling to the tillers.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>The Act directly made tillers the owners.</div>"
+    },
+    {
+      "id": "sh6-mcq-25",
+      "question": "<div style='text-align: justify;'>Assertion (A): Sheikh Abdullah was the first Chief Minister of J&K. Reason (R): The post of Prime Minister of J&K was renamed Chief Minister in 1965.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>G.M. Sadiq became the first Chief Minister in 1965.</div>"
+    }
+  ],
+  "summary": [],
+  "exercises": [
+    {
+      "id": "sh6-ex-long",
+      "name": "Long Answer",
+      "questions": []
+    },
+    {
+      "id": "sh6-ex-short",
+      "name": "Short Answer",
+      "questions": []
+    },
+    {
+      "id": "sh6-ex-blanks",
+      "name": "Fill in Blanks",
+      "questions": []
+    },
+    {
+      "id": "sh6-ex-match",
+      "name": "Match",
+      "questions": []
+    },
+    {
+      "id": "sh6-ex-board",
+      "name": "Board Qs",
+      "questions": []
+    }
+  ],
+  "examples": []
 };
