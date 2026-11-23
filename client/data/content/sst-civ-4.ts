@@ -1,350 +1,334 @@
 import { ChapterContent } from "../types";
 
-const themeColor = "#8E2DE2"; // Violet/Purple color for Civics Chapter 4
-
 export const sstCiv4: ChapterContent = {
-  id: "sst-civ-4",
-  number: 4,
-  title: "Political Parties",
-  introduction:
-    "In a democracy, we don't usually vote directly for the Prime Minister. We vote for a 'Party'. But what exactly is a political party? Why do we even need them? Let's explore the engines of our democracy: Political Parties.",
-  definitions: [
-    {
-      term: "Political Party",
-      description:
-        "A group of people who come together to contest elections and hold power in the government.",
-    },
-    {
-      term: "Partisan",
-      description:
-        "A person who is strongly committed to a party, group or faction. Partisanship is marked by a tendency to take a side.",
-    },
-    {
-      term: "Ruling Party",
-      description:
-        "The political party that runs the government because it won the majority in the elections.",
-    },
-    {
-      term: "Opposition Party",
-      description:
-        "The parties that lose the election and play the role of criticizing the government for its failures.",
-    },
-    {
-      term: "Defection",
-      description:
-        "Changing party allegiance from the party on which a person got elected to a different party.",
-    },
-  ],
-  keyPoints: [
-    "A political party has three components: The leaders, the active members, and the followers.",
-    "Functions of parties: contest elections, put forward policies, make laws, form and run governments, and play the role of opposition.",
-    "Party Systems: One-party system (China), Two-party system (USA, UK), and Multi-party system (India).",
-    "India has National Parties (presence in multiple states like BJP, INC) and State/Regional Parties (presence in one or two states like AAP, TMC).",
-    "Challenges to political parties: Lack of internal democracy, dynastic succession, money and muscle power, and lack of meaningful choices for voters.",
-  ],
-  formulas: [],
-  crux: [
-    "Parties are needed to form governments and make laws.",
-    "India has a multi-party system.",
-    "Major problems: Lack of internal democracy and use of money/muscle power.",
-  ],
-  mcqs: [
-    {
-      id: "sc4-mcq-1",
-      question: "Which of the following is a component of a political party?",
-      options: [
-        "The leaders",
-        "The active members",
-        "The followers",
-        "All of the above",
-      ],
-      correctAnswer: "d",
-    },
-    {
-      id: "sc4-mcq-2",
-      question: "Which party system does India follow?",
-      options: [
-        "One-party system",
-        "Two-party system",
-        "Multi-party system",
-        "No-party system",
-      ],
-      correctAnswer: "c",
-    },
-    {
-      id: "sc4-mcq-6",
-      question: "Which is the oldest political party in India?",
-      options: [
-        "Bharatiya Janata Party (BJP)",
-        "Indian National Congress (INC)",
-        "Communist Party of India (CPI)",
-        "Bahujan Samaj Party (BSP)",
-      ],
-      correctAnswer: "b",
-    },
-    {
-      id: "sc4-mcq-7",
-      question:
-        "What is a signed statement submitted to an officer where a person makes a sworn statement?",
-      options: ["Affidavit", "Manifesto", "Declaration", "Charter"],
-      correctAnswer: "a",
-    },
-    {
-      id: "sc4-mcq-8",
-      question:
-        "What is a political party that is present in only one of the federal units called?",
-      options: [
-        "National Party",
-        "State party",
-        "Coalition Party",
-        "Alliance Party",
-      ],
-      correctAnswer: "b",
-    },
-    {
-      id: "sc4-mcq-9",
-      question: "Who is the founder of the Bahujan Samaj Party (BSP)?",
-      options: ["Kanshi Ram", "Mayawati", "Jyotirao Phule", "B.R. Ambedkar"],
-      correctAnswer: "a",
-    },
-    {
-      id: "sc4-mcq-10",
-      question:
-        "What is the process of changing party allegiance from the party on which a person got elected?",
-      options: ["Defection", "Nomination", "Campaigning", "Alliance"],
-      correctAnswer: "a",
-    },
-  ],
-  summary: [
-    "Political parties are highly essential for democracy.",
-    "They face numerous challenges that must be addressed to ensure fair representation.",
-  ],
-  exercises: [
-    {
-      id: "sc4-ex-1",
-      name: "Exercise Questions",
-      questions: [],
-    },
-  ],
-  examples: [],
-  isHtmlView: true,
-  htmlOverview: `
-    <div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">
-        <p style="line-height: 1.6; font-size: 17px;">In a democracy, we don't usually vote directly for the Prime Minister. We vote for a 'Party'. But what exactly is a political party? Why do we even need them? Let's explore the engines of our democracy: Political Parties.</p>
-        
-        <h3 style="color: ${themeColor}; text-align: left; margin-top: 20px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px;">Key Definitions</h3>
-        <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Political Party:</b> A group of people who come together to contest elections and hold power in the government.</p>
-        <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Partisan:</b> A person who is strongly committed to a party, group or faction. Partisanship is marked by a tendency to take a side.</p>
-        <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Ruling Party:</b> The political party that runs the government because it won the majority in the elections.</p>
-        <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Opposition Party:</b> The parties that lose the election and play the role of criticizing the government for its failures.</p>
-        <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Defection:</b> Changing party allegiance from the party on which a person got elected to a different party.</p>
-        
-        <h3 style="color: ${themeColor}; text-align: left; margin-top: 25px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px;">Important Points</h3>
-        <ul style="text-align: left; padding-left: 20px; line-height: 1.6; font-size: 16px;">
-            <li style="margin-bottom: 8px;">A political party has three components: The leaders, the active members, and the followers.</li>
-            <li style="margin-bottom: 8px;">Functions of parties: contest elections, put forward policies, make laws, form and run governments, and play the role of opposition.</li>
-            <li style="margin-bottom: 8px;">Party Systems: One-party system (China), Two-party system (USA, UK), and Multi-party system (India).</li>
-            <li style="margin-bottom: 8px;">India has National Parties (presence in multiple states like BJP, INC) and State/Regional Parties (presence in one or two states like AAP, TMC).</li>
-            <li style="margin-bottom: 8px;">Challenges to political parties: Lack of internal democracy, dynastic succession, money and muscle power, and lack of meaningful choices for voters.</li>
-        </ul>
-        
-        <h3 style="color: ${themeColor}; text-align: left; margin-top: 25px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px;">Summary</h3>
-        <p style="line-height: 1.6; font-size: 16px;">Political parties are highly essential for democracy. They face numerous challenges that must be addressed to ensure fair representation.</p>
-    </div>
-  `,
-  htmlExercises: {
-    "sc4-ex-1": `
-            <div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">
-                <div style="margin-bottom: 25px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 17px;">1. State the various functions political parties perform in a democracy.</p>
-                    <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                        <b>Answer:</b> Political parties perform the following core functions:
-                        <br/>• <b>Contest Elections:</b> Field candidates to compete for public office.
-                        <br/>• <b>Formulate Policies:</b> Present diverse programs and policies for voters to choose.
-                        <br/>• <b>Make Laws:</b> Debate, vote on, and pass legislation in the parliament.
-                        <br/>• <b>Run Government:</b> The majority party forms the cabinet and runs the administration.
-                        <br/>• <b>Role of Opposition:</b> Criticize government failures, check ruling power, and highlight issues.
-                        <br/>• <b>Access to Welfare:</b> Provide citizens access to welfare schemes and government machinery.
-                    </p>
-                </div>
-
-                <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 17px;">2. What are the various challenges faced by political parties?</p>
-                    <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                        <b>Answer:</b> Political parties face these major challenges:
-                        <br/>• <b>Lack of Internal Democracy:</b> Power stays with a few top leaders; regular organizational elections are rarely held.
-                        <br/>• <b>Dynastic Succession:</b> Leaders favor family members, blocking ordinary workers from top spots.
-                        <br/>• <b>Money and Muscle Power:</b> Rich candidates and criminals get tickets to ensure wins, corrupting the democratic process.
-                        <br/>• <b>Lack of Meaningful Choice:</b> Parties offer very similar policies, giving voters limited alternatives.
-                    </p>
-                </div>
-
-                <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 17px;">3. Suggest some reforms to strengthen parties so that they perform their functions well?</p>
-                    <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                        <b>Answer:</b> Suggestions to reform political parties:
-                        <br/>• <b>Anti-Defection Regulation:</b> Strictly enforce laws preventing elected representatives from switching parties for personal gain.
-                        <br/>• <b>Affidavits on Wealth & Crime:</b> Mandatory public filing of candidate assets and criminal histories.
-                        <br/>• <b>State Funding:</b> Govt funding of elections to counter money power.
-                        <br/>• <b>Internal Regulation:</b> Make membership registers, dispute cells, and internal democracy legally mandatory.
-                        <br/>• <b>Women Reservation:</b> Guarantee 1/3rd of party tickets to female candidates.
-                    </p>
-                </div>
-
-                <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 17px;">4. What is a political party?</p>
-                    <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                        <b>Answer:</b> A political party is an organized group of citizens who share common political views and come together to contest elections, win public office, and run the government.
-                    </p>
-                </div>
-
-                <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 17px;">5. What are the characteristics of a political party?</p>
-                    <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                        <b>Answer:</b> Core characteristics of a political party:
-                        <br/>• <b>Shared Ideology:</b> A common agreement on policies and societal welfare.
-                        <br/>• <b>Constitutional Means:</b> A commitment to gain power through peaceful, democratic elections.
-                        <br/>• <b>Three Elements:</b> Leaders, active members, and followers.
-                        <br/>• <b>Partisanship:</b> Aligning with specific sides of public issues.
-                    </p>
-                </div>
-
-                <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 17px;">6. Fill in the blank:</p>
-                    <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                        A group of people who come together to contest elections and hold power in the government is called a <b>political party</b>.
-                    </p>
-                </div>
-
-                <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 17px;">7. Match List I (organisations and struggles) with List II and select the correct answer using the codes given below the lists:</p>
-                    <table style="width: 100%; border-collapse: collapse; margin-top: 10px; color: #E0E0E0; font-size: 14px; border: 1px solid rgba(255,255,255,0.15);">
-                        <thead>
-                            <tr style="border-bottom: 1px solid rgba(255,255,255,0.2); background-color: rgba(255,255,255,0.05);">
-                                <th style="text-align: left; padding: 8px 10px; width: 50%; border: 1px solid rgba(255,255,255,0.15);">List I</th>
-                                <th style="text-align: left; padding: 8px 10px; width: 50%; border: 1px solid rgba(255,255,255,0.15);">List II</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.1);">1. Congress Party</td>
-                                <td style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.1);">C. United Progressive Alliance</td>
-                            </tr>
-                            <tr>
-                                <td style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.1);">2. Bharatiya Janata Party</td>
-                                <td style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.1);">A. National Democratic Alliance</td>
-                            </tr>
-                            <tr>
-                                <td style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.1);">3. Communist Party of India (Marxist)</td>
-                                <td style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.1);">D. Left Front</td>
-                            </tr>
-                            <tr>
-                                <td style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.1);">4. Telugu Desam Party</td>
-                                <td style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.1);">B. State party</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    
-                    <table style="width: 100%; border-collapse: collapse; margin-top: 15px; color: #E0E0E0; font-size: 14px; border: 1px solid rgba(255,255,255,0.15); text-align: center;">
-                        <thead>
-                            <tr style="border-bottom: 1px solid rgba(255,255,255,0.2); background-color: rgba(255,255,255,0.05);">
-                                <th style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.15);">Option</th>
-                                <th style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.15);">1</th>
-                                <th style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.15);">2</th>
-                                <th style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.15);">3</th>
-                                <th style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.15);">4</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.1); font-weight: bold;">(a)</td>
-                                <td style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.1);">C</td>
-                                <td style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.1);">A</td>
-                                <td style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.1);">B</td>
-                                <td style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.1);">D</td>
-                            </tr>
-                            <tr>
-                                <td style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.1); font-weight: bold;">(b)</td>
-                                <td style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.1);">C</td>
-                                <td style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.1);">D</td>
-                                <td style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.1);">A</td>
-                                <td style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.1);">B</td>
-                            </tr>
-                            <tr>
-                                <td style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.1); font-weight: bold;">(c)</td>
-                                <td style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.1);">C</td>
-                                <td style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.1);">A</td>
-                                <td style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.1);">D</td>
-                                <td style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.1);">B</td>
-                            </tr>
-                            <tr>
-                                <td style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.1); font-weight: bold;">(d)</td>
-                                <td style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.1);">D</td>
-                                <td style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.1);">C</td>
-                                <td style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.1);">A</td>
-                                <td style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.1);">B</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 15px;">
-                        <b>Answer:</b> <b style="color: ${themeColor};">(c) 1-C, 2-A, 3-D, 4-B</b>
-                    </p>
-                </div>
-
-                <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 17px;">8. Who among the following is the founder of the Bahujan Samaj Party?</p>
-                    <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px; margin-left: 10px;">
-                        A. Kanshi Ram
-                        <br/>B. Sahu Maharaj
-                        <br/>C. B.R. Ambedkar
-                        <br/>D. Jotiba Phule
-                    </p>
-                    <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 10px;">
-                        <b>Answer:</b> <b style="color: ${themeColor};">A. Kanshi Ram</b>
-                    </p>
-                </div>
-
-                <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 17px;">9. What is the guiding philosophy of the Bharatiya Janata Party?</p>
-                    <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px; margin-left: 10px;">
-                        A. Bahujan Samaj
-                        <br/>B. Revolutionary democracy
-                        <br/>C. Integral humanism
-                        <br/>D. Modernity
-                    </p>
-                    <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 10px;">
-                        <b>Answer:</b> <b style="color: ${themeColor};">C. Integral humanism</b>
-                    </p>
-                </div>
-
-                <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 17px;">10. Consider the following statements on parties:</p>
-                    <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px; margin-left: 10px;">
-                        A. Political parties do not enjoy much trust among the people.
-                        <br/>B. Parties are often rocked by scandals involving top party leaders.
-                        <br/>C. Parties are not necessary to run governments.
-                    </p>
-                    <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 10px;">
-                        <b>Options:</b>
-                        <br/>(a) A, B, and C &nbsp;&nbsp; (b) A and B &nbsp;&nbsp; (c) B and C &nbsp;&nbsp; (d) A and C
-                        <br/><br/>
-                        <b>Answer:</b> <b style="color: ${themeColor};">(b) A and B</b> (Statement C is incorrect because large representative democracies cannot function without organized political parties to form governments and build consensus).
-                    </p>
-                </div>
-
-                <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 17px;">11. Read the following passage and answer the questions given below:</p>
-                    <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px; font-style: italic; margin-left: 10px;">
-                        "Muhammad Yunus is a famous economist of Bangladesh... He decided to launch a political party and contest in the parliamentary elections... His party, called Nagarik Shakti (Citizens' Power), has caused a stir among the Bangladeshis... But leaders of traditional political parties who dominated the country's politics for decades were apprehensive..."
-                    </p>
-                    <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 10px;">
-                        <b>Answer:</b>
-                        <br/>• <b>Yunus's Decision:</b> Yes, it was a positive and democratic step. Floating a new party offered a clean, grassroots alternative to traditional political groups.
-                        <br/>• <b>Agreement with Fears:</b> The traditional parties' fears were largely driven by the threat of losing political control. Concerns of foreign mentorship were likely political mudslinging rather than reality.
-                        <br/>• <b>Party Organization & Defense:</b> To stand apart, Nagarik Shakti should run on internal elections, complete financial transparency (such as audit publications), and volunteer participation instead of dynastic control. As Yunus, I would defend the party by arguing that democracy lives on healthy choice, and our mission is to empower citizens and check institutional corruption.
-                    </p>
-                </div>
-            </div>
-    `,
+  "id": "sst-civ-4",
+  "number": 4,
+  "title": "Political Parties",
+  "isHtmlView": true,
+  "htmlOverview": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(179, 136, 255, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #B388FF; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #B388FF; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #E1D4FF; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #E1D4FF; font-weight: 700; }\n  .hl { color: #B388FF; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #B388FF; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #B388FF; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(179, 136, 255, 0.10); border: 1.5px dashed #B388FF; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #B388FF; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(179, 136, 255, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(179, 136, 255, 0.18); border: 1px solid #B388FF; color: #E1D4FF; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(179, 136, 255, 0.2); color: #E1D4FF; }\n  .q-card .q-text, .q-card .sub-q { color: #B388FF !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 1. Why Do We Need Political Parties?</div><div class=\"sol-step\"><div class=\"rev\">Political parties are the most visible institutions in a democracy; for most ordinary citizens, democracy is equal to political parties. A <span class=\"hl\">political party</span> is a group of people who come together to contest elections and hold power in the government. They agree on some policies and programmes for society with a view to promote the collective good.</div><div class=\"pt\">Parties reflect fundamental political divisions in a society; a party is a <i>part</i> of society and thus involves <b>partisanship</b>.</div><div class=\"pt\">A party is known by which part it stands for, which policies it supports and whose interests it upholds.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 218\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"218\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#B388FF\" text-anchor=\"middle\" font-weight=\"700\">Components of a Political Party</text><rect x=\"60\" y=\"30\" width=\"200\" height=\"51\" rx=\"6\" fill=\"rgba(179, 136, 255,0.16)\" stroke=\"#B388FF\" stroke-width=\"1.2\"/><text x=\"160\" y=\"46.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Political party</text><text x=\"160\" y=\"58.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Contests elections and seeks to</text><text x=\"160\" y=\"71.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">hold power</text><line x1=\"160\" y1=\"82\" x2=\"160\" y2=\"89\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 94 L163.5 88 L156.5 88 Z\" fill=\"#B0BEC5\"/><rect x=\"13\" y=\"96\" width=\"142\" height=\"49\" rx=\"6\" fill=\"rgba(179, 136, 255,0.16)\" stroke=\"#B388FF\" stroke-width=\"1.2\"/><text x=\"84\" y=\"112.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Leaders</text><text x=\"84\" y=\"123.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Decide policies and lead</text><text x=\"84\" y=\"135.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">the party</text><rect x=\"165\" y=\"96\" width=\"142\" height=\"49\" rx=\"6\" fill=\"rgba(79,195,247,0.16)\" stroke=\"#4FC3F7\" stroke-width=\"1.2\"/><text x=\"236\" y=\"112.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Active members</text><text x=\"236\" y=\"123.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Work for the party and</text><text x=\"236\" y=\"135.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">its programmes</text><rect x=\"89\" y=\"153\" width=\"142\" height=\"49\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"160\" y=\"169.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Followers</text><text x=\"160\" y=\"180.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Support the party and</text><text x=\"160\" y=\"192.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">vote for it</text></svg></div><div class=\"diagram-caption\">Every party has three components</div></div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 350\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"350\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#B388FF\" text-anchor=\"middle\" font-weight=\"700\">Functions of Political Parties</text><rect x=\"13\" y=\"30\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(179, 136, 255,0.16)\" stroke=\"#B388FF\" stroke-width=\"1.2\"/><text x=\"84\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">1. Contest elections</text><text x=\"84\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Put up candidates (chosen</text><text x=\"84\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">by members in the USA, by</text><text x=\"84\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">top leaders in India)</text><rect x=\"165\" y=\"30\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(179, 136, 255,0.16)\" stroke=\"#B388FF\" stroke-width=\"1.2\"/><text x=\"236\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">2. Policies and</text><text x=\"236\" y=\"57.7\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">programmes</text><text x=\"236\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Reduce many opinions to a</text><text x=\"236\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">few basic positions for</text><text x=\"236\" y=\"92.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">voters to choose</text><rect x=\"13\" y=\"111\" width=\"142\" height=\"61\" rx=\"6\" fill=\"rgba(179, 136, 255,0.16)\" stroke=\"#B388FF\" stroke-width=\"1.2\"/><text x=\"84\" y=\"127.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">3. Make laws</text><text x=\"84\" y=\"138.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Members in the</text><text x=\"84\" y=\"150.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">legislature follow the</text><text x=\"84\" y=\"162.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">party's direction</text><rect x=\"165\" y=\"111\" width=\"142\" height=\"61\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"236\" y=\"127.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">4. Form and run</text><text x=\"236\" y=\"138.7\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">governments</text><text x=\"236\" y=\"150.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Recruit and train leaders</text><text x=\"236\" y=\"162.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">who become ministers</text><rect x=\"13\" y=\"180\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(255,183,77,0.16)\" stroke=\"#FFB74D\" stroke-width=\"1.2\"/><text x=\"84\" y=\"196.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">5. Play opposition</text><text x=\"84\" y=\"207.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Losing parties criticise</text><text x=\"84\" y=\"219.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">the government and voice</text><text x=\"84\" y=\"231.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">other views</text><rect x=\"165\" y=\"180\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(79,195,247,0.16)\" stroke=\"#4FC3F7\" stroke-width=\"1.2\"/><text x=\"236\" y=\"196.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">6. Shape public</text><text x=\"236\" y=\"207.7\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">opinion</text><text x=\"236\" y=\"219.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Raise issues and launch</text><text x=\"236\" y=\"231.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">movements on people's</text><text x=\"236\" y=\"242.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">problems</text><rect x=\"89\" y=\"261\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(79,195,247,0.16)\" stroke=\"#4FC3F7\" stroke-width=\"1.2\"/><text x=\"160\" y=\"277.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">7. Access to</text><text x=\"160\" y=\"288.7\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">government</text><text x=\"160\" y=\"300.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Help people reach</text><text x=\"160\" y=\"312.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">government machinery and</text><text x=\"160\" y=\"323.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">welfare schemes</text></svg></div><div class=\"diagram-caption\">Seven functions of political parties</div></div><div class=\"sec\">Necessity of political parties</div><div class=\"pt\">Without parties, every candidate would be independent; no one could promise major policy changes, and no one would be responsible for how the country is run.</div><div class=\"pt\">Even in non-party panchayat elections, villages split into factions.</div><div class=\"pt\">The rise of parties is linked to <b>representative democracy</b>: large societies need an agency to gather views, present them to the government, form a responsible government, and support or restrain it.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 2. How Many Parties Should We Have?</div><div class=\"sol-step\"><div class=\"rev\">In a democracy any group of citizens is free to form a political party. More than <b>750</b> parties are registered with the Election Commission of India.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 223\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"223\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#B388FF\" text-anchor=\"middle\" font-weight=\"700\">Party Systems</text><rect x=\"13\" y=\"30\" width=\"142\" height=\"84\" rx=\"6\" fill=\"rgba(239,83,80,0.16)\" stroke=\"#EF5350\" stroke-width=\"1.2\"/><text x=\"84\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">One-party system</text><text x=\"84\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Only one party allowed to</text><text x=\"84\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">control and run the</text><text x=\"84\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">government, e.g. China;</text><text x=\"84\" y=\"92.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">not a good democratic</text><text x=\"84\" y=\"104.5\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">option</text><rect x=\"165\" y=\"30\" width=\"142\" height=\"84\" rx=\"6\" fill=\"rgba(255,183,77,0.16)\" stroke=\"#FFB74D\" stroke-width=\"1.2\"/><text x=\"236\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Two-party system</text><text x=\"236\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Power usually changes</text><text x=\"236\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">between two main parties,</text><text x=\"236\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">e.g. USA, UK</text><rect x=\"89\" y=\"122\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"160\" y=\"138.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Multiparty system</text><text x=\"160\" y=\"149.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Several parties have a</text><text x=\"160\" y=\"161.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">real chance of power</text><text x=\"160\" y=\"173.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">alone or in alliance,</text><text x=\"160\" y=\"184.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">e.g. India</text><text x=\"160\" y=\"209\" font-size=\"9.5\" fill=\"#B388FF\" text-anchor=\"middle\" font-weight=\"700\">A party system evolves over time; it is not chosen</text></svg></div><div class=\"diagram-caption\">One-party, two-party and multiparty systems</div></div><div class=\"pt\">When several parties join hands to contest elections and win power, it is called an <b>alliance</b> or <b>front</b> — e.g. the National Democratic Alliance (NDA), United Progressive Alliance (UPA) and Left Front in 2004.</div><div class=\"pt\">A multiparty system often appears messy and may lead to political instability, but it allows a variety of interests and opinions to enjoy representation.</div><div class=\"pt\">India has a multiparty system because its social and geographical diversity cannot be absorbed by two or three parties.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 3. National Parties</div><div class=\"sol-step\"><div class=\"rev\">In a federal country there are parties present in only one federal unit and parties present in several or all units. Every party must register with the <b>Election Commission</b>, which treats all parties equally but gives some facilities to large, established parties.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 196\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"196\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#B388FF\" text-anchor=\"middle\" font-weight=\"700\">Recognition by the Election Commission</text><rect x=\"60\" y=\"30\" width=\"200\" height=\"51\" rx=\"6\" fill=\"rgba(179, 136, 255,0.16)\" stroke=\"#B388FF\" stroke-width=\"1.2\"/><text x=\"160\" y=\"46.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Recognised parties</text><text x=\"160\" y=\"58.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Get a unique symbol and other</text><text x=\"160\" y=\"71.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">special facilities</text><line x1=\"160\" y1=\"82\" x2=\"160\" y2=\"89\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 94 L163.5 88 L156.5 88 Z\" fill=\"#B0BEC5\"/><rect x=\"13\" y=\"96\" width=\"142\" height=\"84\" rx=\"6\" fill=\"rgba(79,195,247,0.16)\" stroke=\"#4FC3F7\" stroke-width=\"1.2\"/><text x=\"84\" y=\"112.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">State party</text><text x=\"84\" y=\"123.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">At least 6% of votes in a</text><text x=\"84\" y=\"135.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">State Assembly election</text><text x=\"84\" y=\"147.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">and at least 2 seats</text><rect x=\"165\" y=\"96\" width=\"142\" height=\"84\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"236\" y=\"112.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">National party</text><text x=\"236\" y=\"123.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">At least 6% of votes in</text><text x=\"236\" y=\"135.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Lok Sabha or Assembly</text><text x=\"236\" y=\"147.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">elections in 4 states,</text><text x=\"236\" y=\"158.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">and at least 4 Lok Sabha</text><text x=\"236\" y=\"170.5\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">seats</text></svg></div><div class=\"diagram-caption\">Criteria for recognition</div></div><div class=\"rev\">In <b>2023</b> there were <b>six</b> recognised national parties.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 216\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"216\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"20\" font-size=\"11.5\" fill=\"#B388FF\" text-anchor=\"middle\" font-weight=\"700\">National Parties: When Formed</text><line x1=\"76\" y1=\"34\" x2=\"76\" y2=\"206\" stroke=\"rgba(179, 136, 255,0.55)\" stroke-width=\"2\"/><circle cx=\"76\" cy=\"39.5\" r=\"4\" fill=\"#B388FF\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"43\" font-size=\"10\" fill=\"#B388FF\" text-anchor=\"end\" font-weight=\"700\">1885</text><text x=\"88\" y=\"43.0\" font-size=\"9.5\" fill=\"#FFFFFF\">Indian National Congress (INC)</text><circle cx=\"76\" cy=\"60.7\" r=\"4\" fill=\"#B388FF\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"64.2\" font-size=\"10\" fill=\"#B388FF\" text-anchor=\"end\" font-weight=\"700\">1964</text><text x=\"88\" y=\"64.2\" font-size=\"9.5\" fill=\"#FFFFFF\">Communist Party of India (Marxist) —</text><text x=\"88\" y=\"76.4\" font-size=\"9.5\" fill=\"#FFFFFF\">CPI(M)</text><circle cx=\"76\" cy=\"94.1\" r=\"4\" fill=\"#B388FF\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"97.6\" font-size=\"10\" fill=\"#B388FF\" text-anchor=\"end\" font-weight=\"700\">1980</text><text x=\"88\" y=\"97.6\" font-size=\"9.5\" fill=\"#FFFFFF\">Bharatiya Janata Party (BJP), reviving</text><text x=\"88\" y=\"109.8\" font-size=\"9.5\" fill=\"#FFFFFF\">the Bharatiya Jana Sangh (1951)</text><circle cx=\"76\" cy=\"127.5\" r=\"4\" fill=\"#B388FF\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"131\" font-size=\"10\" fill=\"#B388FF\" text-anchor=\"end\" font-weight=\"700\">1984</text><text x=\"88\" y=\"131.0\" font-size=\"9.5\" fill=\"#FFFFFF\">Bahujan Samaj Party (BSP), under Kanshi</text><text x=\"88\" y=\"143.2\" font-size=\"9.5\" fill=\"#FFFFFF\">Ram</text><circle cx=\"76\" cy=\"160.9\" r=\"4\" fill=\"#B388FF\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"164.4\" font-size=\"10\" fill=\"#B388FF\" text-anchor=\"end\" font-weight=\"700\">2012</text><text x=\"88\" y=\"164.4\" font-size=\"9.5\" fill=\"#FFFFFF\">Aam Aadmi Party (AAP)</text><circle cx=\"76\" cy=\"182.1\" r=\"4\" fill=\"#B388FF\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"185.6\" font-size=\"10\" fill=\"#B388FF\" text-anchor=\"end\" font-weight=\"700\">2013</text><text x=\"88\" y=\"185.6\" font-size=\"9.5\" fill=\"#FFFFFF\">National People's Party (NPP), under P.A.</text><text x=\"88\" y=\"197.8\" font-size=\"9.5\" fill=\"#FFFFFF\">Sangma</text></svg></div><div class=\"diagram-caption\">The six national parties</div></div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Party</th><th>Key points</th></tr><tr><td><b>AAP</b></td><td>Formed 26 November 2012; focuses on transparency, accountability and good governance; has formed governments in Delhi and Punjab; recognised as a national party in 2023</td></tr><tr><td><b>BSP</b></td><td>Formed 1984 under Kanshi Ram; represents the bahujan samaj — dalits, adivasis, OBCs and religious minorities; inspired by Sahu Maharaj, Phule, Periyar and Ambedkar; main base in Uttar Pradesh</td></tr><tr><td><b>BJP</b></td><td>Founded 1980 by reviving the Bharatiya Jana Sangh (formed by Syama Prasad Mukherjee in 1951); guided by Deendayal Upadhyaya's <b>integral humanism</b> and Antyodaya; cultural nationalism (Hindutva); leads the NDA government at the Centre (largest party in 2019 and 2024)</td></tr><tr><td><b>CPI(M)</b></td><td>Founded 1964; believes in Marxism-Leninism; supports socialism, secularism and democracy; strong in West Bengal, Kerala and Tripura; ruled West Bengal for 34 years without a break</td></tr><tr><td><b>INC</b></td><td>Founded 1885 — one of the oldest parties in the world; dominant for decades after Independence; ruled the Centre till 1977, from 1980 to 1989 and from 1991 to 1996; centrist; led the UPA government from 2004 to 2014</td></tr><tr><td><b>NPP</b></td><td>Formed July 2013 under P.A. Sangma; the first party from north-eastern India to get national party status</td></tr></table></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 4. State Parties</div><div class=\"sol-step\"><div class=\"pt\">Other major parties are classified by the Election Commission as <b>State parties</b> (regional parties); some have a pan-national presence.</div><div class=\"pt\">Over the last three decades their number and strength have grown, making Parliament more diverse.</div><div class=\"pt\">No national party won a majority on its own in the Lok Sabha from 1989 until 2014, so national parties had to form alliances with State parties.</div><div class=\"pt\">Since 1996, nearly every State party has been part of some national coalition government — this has strengthened <b>federalism and democracy</b>.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 5. Challenges to Political Parties</div><div class=\"sol-step\"><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 199\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"199\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#B388FF\" text-anchor=\"middle\" font-weight=\"700\">Challenges to Political Parties</text><rect x=\"13\" y=\"30\" width=\"142\" height=\"84\" rx=\"6\" fill=\"rgba(239,83,80,0.16)\" stroke=\"#EF5350\" stroke-width=\"1.2\"/><text x=\"84\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Lack of internal</text><text x=\"84\" y=\"57.7\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">democracy</text><text x=\"84\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Power with a few top</text><text x=\"84\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">leaders; no membership</text><text x=\"84\" y=\"92.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">registers, meetings or</text><text x=\"84\" y=\"104.5\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">internal elections</text><rect x=\"165\" y=\"30\" width=\"142\" height=\"84\" rx=\"6\" fill=\"rgba(239,83,80,0.16)\" stroke=\"#EF5350\" stroke-width=\"1.2\"/><text x=\"236\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Dynastic succession</text><text x=\"236\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Top posts controlled by</text><text x=\"236\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">one family; ordinary</text><text x=\"236\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">workers cannot rise</text><rect x=\"13\" y=\"122\" width=\"142\" height=\"61\" rx=\"6\" fill=\"rgba(239,83,80,0.16)\" stroke=\"#EF5350\" stroke-width=\"1.2\"/><text x=\"84\" y=\"138.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Money and muscle power</text><text x=\"84\" y=\"149.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Rich candidates and</text><text x=\"84\" y=\"161.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">criminals given tickets</text><text x=\"84\" y=\"173.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">to win elections</text><rect x=\"165\" y=\"122\" width=\"142\" height=\"61\" rx=\"6\" fill=\"rgba(239,83,80,0.16)\" stroke=\"#EF5350\" stroke-width=\"1.2\"/><text x=\"236\" y=\"138.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">No meaningful choice</text><text x=\"236\" y=\"149.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Ideological differences</text><text x=\"236\" y=\"161.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">have declined; leaders</text><text x=\"236\" y=\"173.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">keep switching parties</text></svg></div><div class=\"diagram-caption\">Four major challenges</div></div><div class=\"pt\">In Britain, the difference between the Labour and Conservative parties is now very little; in India too, differences on economic issues have reduced.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 6. How Can Parties Be Reformed?</div><div class=\"sol-step\"><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 316\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"316\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#B388FF\" text-anchor=\"middle\" font-weight=\"700\">Reforming Political Parties</text><rect x=\"13\" y=\"30\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"84\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Anti-defection law</text><text x=\"84\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">MPs and MLAs who change</text><text x=\"84\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">parties lose their seats</text><rect x=\"165\" y=\"30\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"236\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Affidavits (Supreme</text><text x=\"236\" y=\"57.7\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Court)</text><text x=\"236\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Candidates must declare</text><text x=\"236\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">property and pending</text><text x=\"236\" y=\"92.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">criminal cases</text><rect x=\"13\" y=\"111\" width=\"142\" height=\"96\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"84\" y=\"127.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Election Commission</text><text x=\"84\" y=\"138.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Parties must hold</text><text x=\"84\" y=\"150.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">organisational elections</text><text x=\"84\" y=\"162.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">and file income tax</text><text x=\"84\" y=\"173.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">returns</text><rect x=\"165\" y=\"111\" width=\"142\" height=\"96\" rx=\"6\" fill=\"rgba(255,183,77,0.16)\" stroke=\"#FFB74D\" stroke-width=\"1.2\"/><text x=\"236\" y=\"127.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Suggested: internal</text><text x=\"236\" y=\"138.7\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">democracy</text><text x=\"236\" y=\"150.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">A law to regulate</text><text x=\"236\" y=\"162.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">parties: member</text><text x=\"236\" y=\"173.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">registers, own</text><text x=\"236\" y=\"185.5\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">constitution, open</text><text x=\"236\" y=\"197.2\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">elections</text><rect x=\"13\" y=\"215\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(255,183,77,0.16)\" stroke=\"#FFB74D\" stroke-width=\"1.2\"/><text x=\"84\" y=\"231.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Suggested: tickets for</text><text x=\"84\" y=\"242.7\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">women</text><text x=\"84\" y=\"254.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">About one-third of</text><text x=\"84\" y=\"266.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">tickets and party posts</text><text x=\"84\" y=\"277.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">for women</text><rect x=\"165\" y=\"215\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(255,183,77,0.16)\" stroke=\"#FFB74D\" stroke-width=\"1.2\"/><text x=\"236\" y=\"231.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Suggested: state</text><text x=\"236\" y=\"242.7\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">funding</text><text x=\"236\" y=\"254.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Government to meet</text><text x=\"236\" y=\"266.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">election expenses, in</text><text x=\"236\" y=\"277.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">kind or cash</text><text x=\"160\" y=\"302\" font-size=\"9.5\" fill=\"#B388FF\" text-anchor=\"middle\" font-weight=\"700\">Green: steps already taken | Amber: suggestions</text></svg></div><div class=\"diagram-caption\">Steps taken and suggestions</div></div><div class=\"pt\">The anti-defection law has reduced defection but made dissent even more difficult — members must accept whatever party leaders decide.</div><div class=\"pt\">There is no system to check whether the information in candidates' affidavits is true; organisational elections are sometimes a mere formality.</div><div class=\"pt\">Other ways: people can pressurise parties through <b>petitions, publicity and agitations</b>, and good citizens can join parties to improve them.</div><div class=\"pt\"><b>Caution:</b> over-regulation of parties can be counter-productive, as parties may find ways to cheat the law.</div><div class=\"exam\"><span class=\"exam-t\">📌 Key Terms</span><div>• <b>Defection:</b> changing party allegiance from the party on which a person got elected to a different party.</div><div>• <b>Affidavit:</b> a signed document in which a person makes a sworn statement about herself.</div><div>• <b>Alliance / front:</b> parties joining hands to contest elections and win power.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ Quick Glossary</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Term</th><th>Meaning</th></tr><tr><td>Political party</td><td>Group of people who come together to contest elections and hold power</td></tr><tr><td>Partisanship</td><td>Being part of one side; supporting one party's position</td></tr><tr><td>Ruling party</td><td>Party that runs the government</td></tr><tr><td>Opposition</td><td>Parties that lose elections and criticise the government</td></tr><tr><td>Multiparty system</td><td>Several parties with a real chance of power, alone or in alliance</td></tr><tr><td>Recognised party</td><td>Party given a unique symbol and facilities by the Election Commission</td></tr><tr><td>Defection</td><td>Changing party after being elected on one party's ticket</td></tr><tr><td>Affidavit</td><td>Signed sworn statement, e.g. of a candidate's assets and criminal cases</td></tr></table></div></div>\n  </div>\n\n</div>",
+  "htmlExercises": {
+    "sc4-ex-1": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(179, 136, 255, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #B388FF; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #B388FF; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #E1D4FF; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #E1D4FF; font-weight: 700; }\n  .hl { color: #B388FF; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #B388FF; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #B388FF; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(179, 136, 255, 0.10); border: 1.5px dashed #B388FF; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #B388FF; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(179, 136, 255, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(179, 136, 255, 0.18); border: 1px solid #B388FF; color: #E1D4FF; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(179, 136, 255, 0.2); color: #E1D4FF; }\n  .q-card .q-text, .q-card .sub-q { color: #B388FF !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">State the various functions political parties perform in a democracy.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Contest elections:</span> parties put up candidates for elections.</div><div class=\"pt\"><span class=\"lbl\">Policies and programmes:</span> they put forward different policies for voters to choose from.</div><div class=\"pt\"><span class=\"lbl\">Make laws:</span> they play a decisive role in making laws in the legislature.</div><div class=\"pt\"><span class=\"lbl\">Form governments:</span> the winning party forms and runs the government.</div><div class=\"pt\"><span class=\"lbl\">Opposition:</span> losing parties criticise the government and mobilise opposition.</div><div class=\"pt\"><span class=\"lbl\">Public opinion:</span> they raise issues and launch movements on people's problems.</div><div class=\"pt\"><span class=\"lbl\">Access:</span> they give people access to government machinery and welfare schemes.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">What are the various challenges faced by political parties?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Lack of internal democracy:</span> power is concentrated in a few top leaders; parties do not keep membership registers or hold regular internal elections.</div><div class=\"pt\"><span class=\"lbl\">Dynastic succession:</span> top positions are controlled by members of one family; ordinary workers cannot rise.</div><div class=\"pt\"><span class=\"lbl\">Money and muscle power:</span> parties nominate rich candidates and those with criminal records who can win elections.</div><div class=\"pt\"><span class=\"lbl\">No meaningful choice:</span> ideological differences have declined; the same leaders keep shifting between parties.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Suggest some reforms to strengthen parties so that they perform their functions well.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">A law to regulate the internal affairs of parties — membership registers, following their own constitution, an independent authority to settle disputes and open elections to top posts.</div><div class=\"pt\">Making it mandatory to give about one-third of tickets to women, and a quota for women in party decision-making bodies.</div><div class=\"pt\"><b>State funding</b> of elections — in kind (petrol, paper, telephone) or cash based on votes secured.</div><div class=\"pt\">Strengthening existing steps: anti-defection law, affidavits on assets and criminal cases, organisational elections and income tax returns.</div><div class=\"pt\">Pressure from people through petitions, publicity and agitations; good citizens joining parties.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">What is a political party?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">A group of people who come together to contest elections and hold power in the government.</div><div class=\"pt\">They agree on some policies and programmes for society with a view to promote the collective good, and seek to implement them by winning popular support through elections.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5.</div>\n    <div class=\"q-text\">What are the characteristics of a political party?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">It agrees on certain policies and programmes for the collective good.</div><div class=\"pt\">It seeks to implement them by winning popular support through elections.</div><div class=\"pt\">It reflects fundamental political divisions in society and involves partisanship.</div><div class=\"pt\">It has three components: leaders, active members and followers.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q6.</div>\n    <div class=\"q-text\">Fill in the blank: A group of people who come together to contest elections and hold power in the government is called a ______.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>political party</b></div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q7.</div>\n    <div class=\"q-text\">Match List I (organisations and struggles) with List II and select the correct answer.<br/>List I: 1. Congress Party; 2. Bharatiya Janata Party; 3. Communist Party of India (Marxist); 4. Telugu Desam Party<br/>List II: A. National Democratic Alliance; B. State party; C. United Progressive Alliance; D. Left Front<br/>(a) C A B D &nbsp;&nbsp; (b) C D A B &nbsp;&nbsp; (c) C A D B &nbsp;&nbsp; (d) D C A B</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>(c) 1-C, 2-A, 3-D, 4-B</b></div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>List I</th><th>List II</th></tr><tr><td>1. Congress Party</td><td>C. United Progressive Alliance</td></tr><tr><td>2. Bharatiya Janata Party</td><td>A. National Democratic Alliance</td></tr><tr><td>3. CPI(M)</td><td>D. Left Front</td></tr><tr><td>4. Telugu Desam Party</td><td>B. State party</td></tr></table></div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q8.</div>\n    <div class=\"q-text\">Who among the following is the founder of the Bahujan Samaj Party?<br/>A. Kanshi Ram<br/>B. Sahu Maharaj<br/>C. B.R. Ambedkar<br/>D. Jotiba Phule</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>A. Kanshi Ram</b></div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q9.</div>\n    <div class=\"q-text\">What is the guiding philosophy of the Bharatiya Janata Party?<br/>A. Bahujan Samaj<br/>B. Revolutionary democracy<br/>C. Integral humanism<br/>D. Modernity</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>C. Integral humanism</b> (Deendayal Upadhyaya).</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q10.</div>\n    <div class=\"q-text\">Consider the following statements on parties.<br/>A. Political parties do not enjoy much trust among the people.<br/>B. Parties are often rocked by scandals involving top party leaders.<br/>C. Parties are not necessary to run governments.<br/>(a) A, B, and C &nbsp;&nbsp; (b) A and B &nbsp;&nbsp; (c) B and C &nbsp;&nbsp; (d) A and C</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>(b) A and B</b></div><div class=\"pt\">C is wrong: representative democracies cannot run governments without parties.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q11.</div>\n    <div class=\"q-text\">Read the passage (summarised) and answer the questions.<br/><i>Muhammad Yunus, a famous economist of Bangladesh, and the Grameen Bank he started jointly received the Nobel Peace Prize for 2006. In February 2007 he decided to launch a political party, Naagarik Shakti (Citizens' Power), to foster proper leadership and good governance, saying that only a party different from the traditional ones could bring a new political culture, democratic from the grassroots. Many welcomed it, hoping for a government that fights corruption; leaders of traditional parties were apprehensive, and some critics asked whether he was being planted in politics by mentors from outside the country.</i><br/>(i) Do you think Yunus made the right decision to float a new political party?<br/>(ii) Do you agree with the apprehensions and fears expressed by various people?<br/>(iii) How do you want this new party organised to make it different from other parties?<br/>(iv) If you were the one to begin this political party, how would you defend it?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">(i)</div><div class=\"pt\">Yes. In a democracy any citizen can form a party; a new party with a clean image offers voters a real choice and can raise issues like corruption and good governance.</div><div class=\"sub-q\">(ii)</div><div class=\"pt\">Partly. Traditional parties feared losing their hold, which is natural in competition. Fears of outside mentors need evidence; the party's actions and funding should be open so people can judge.</div><div class=\"sub-q\">(iii)</div><div class=\"pt\">Internal democracy with membership registers and regular, open elections to all posts.</div><div class=\"pt\">No dynastic succession; tickets on merit; about one-third of tickets to women.</div><div class=\"pt\">Transparent funding with published accounts; no candidates with criminal records.</div><div class=\"sub-q\">(iv)</div><div class=\"pt\">I would argue that democracy needs a meaningful choice; my party is democratic from the grassroots, transparent in funding and focused on fighting corruption and serving the poor. People can judge us by our work.</div></div></div>\n  </div>\n\n</div>",
+    "sc4-ex-board": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(179, 136, 255, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #B388FF; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #B388FF; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #E1D4FF; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #E1D4FF; font-weight: 700; }\n  .hl { color: #B388FF; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #B388FF; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #B388FF; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(179, 136, 255, 0.10); border: 1.5px dashed #B388FF; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #B388FF; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(179, 136, 255, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(179, 136, 255, 0.18); border: 1px solid #B388FF; color: #E1D4FF; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(179, 136, 255, 0.2); color: #E1D4FF; }\n  .q-card .q-text, .q-card .sub-q { color: #B388FF !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\"><div class=\"q-title\">✦ Section A: Very Short Answer (1 Mark)</div></div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">What are the three components of a political party?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Leaders, active members and followers.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">What is partisanship?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Being part of one side of society and supporting one party's position on issues.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Name a country with a one-party system.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>China</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Name two countries with a two-party system.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">The <b>USA</b> and the <b>UK</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">What is an alliance or front?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Several parties joining hands to contest elections and win power.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q6. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">What is the condition for a party to be recognised as a State party?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">At least 6% of votes in a State Assembly election and at least 2 seats.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q7. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">How many recognised national parties were there in 2023?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Six</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q8. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Who founded the Bahujan Samaj Party?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Kanshi Ram</b> (1984).</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q9. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">What is defection?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Changing party allegiance from the party on which a person got elected to a different party.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q10. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">What is an affidavit?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">A signed document in which a person makes a sworn statement about herself.</div></div></div>\n  </div>\n\n  <div class=\"q-card\"><div class=\"q-title\">✦ Section B: Short Answer (3 Marks)</div></div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q11. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">Why are political parties necessary in a democracy?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Without parties every candidate would be independent and no one could promise major policy changes.</div><div class=\"pt\">Parties gather different views and present them to the government; they help form a responsible government.</div><div class=\"pt\">They provide a mechanism to support or restrain the government, make policies and justify or oppose them.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q12. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">Distinguish between a two-party and a multiparty system.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Two-party system</th><th>Multiparty system</th></tr><tr><td>Power usually changes between two main parties</td><td>Several parties have a real chance of power</td></tr><tr><td>Other parties exist but rarely win a majority</td><td>Parties often form alliances or fronts</td></tr><tr><td>e.g. USA, UK</td><td>e.g. India</td></tr></table></div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q13. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">How have State parties strengthened federalism and democracy in India?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Their number and strength have grown, making Parliament more diverse.</div><div class=\"pt\">National parties had to form alliances with them when no party had a majority on its own.</div><div class=\"pt\">Since 1996 nearly every State party has shared power in a national coalition government.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q14. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">What steps have been taken to reform political parties in India?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Anti-defection law: MPs and MLAs who change parties lose their seats.</div><div class=\"pt\">Supreme Court order: candidates must file affidavits on property and pending criminal cases.</div><div class=\"pt\">Election Commission: parties must hold organisational elections and file income tax returns.</div></div></div>\n  </div>\n\n  <div class=\"q-card\"><div class=\"q-title\">✦ Section C: Long Answer (5 Marks)</div></div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q15. <span class=\"badge\">5 Marks</span></div>\n    <div class=\"q-text\">Describe the functions of political parties in a democracy.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Contest elections by putting up candidates.</div><div class=\"pt\">Put forward policies and programmes; make laws in the legislature.</div><div class=\"pt\">Form and run governments, recruiting and training leaders.</div><div class=\"pt\">Play the role of opposition and shape public opinion by raising issues and launching movements.</div><div class=\"pt\">Give people access to government machinery and welfare schemes.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q16. <span class=\"badge\">5 Marks</span></div>\n    <div class=\"q-text\">What are the major challenges faced by political parties? Suggest reforms.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Challenges:</b> lack of internal democracy; dynastic succession.</div><div class=\"pt\">Growing role of money and muscle power; lack of meaningful choice for voters.</div><div class=\"pt\"><b>Reforms:</b> a law to regulate the internal affairs of parties and ensure open elections.</div><div class=\"pt\">About one-third of tickets to women; state funding of elections.</div><div class=\"pt\">People's pressure through petitions, publicity and agitations; good citizens joining parties.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q17. <span class=\"badge\">4 Marks</span></div>\n    <div class=\"q-text\"><b>Source-based:</b> Read the source and answer the questions.<br/><i>“A party that secures at least six per cent of the total votes in Lok Sabha elections or Assembly elections in four States and wins at least four seats in the Lok Sabha is recognised as a national party.”</i><br/>(i) Who recognises political parties in India? (1)<br/>(ii) What benefit does a recognised party get? (1)<br/>(iii) Name any two national parties with their year of formation. (2)</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">(i)</div><div class=\"pt\">The <b>Election Commission of India</b>.</div><div class=\"sub-q\">(ii)</div><div class=\"pt\">A unique election symbol that only its official candidates can use (and other facilities).</div><div class=\"sub-q\">(iii)</div><div class=\"pt\">Indian National Congress — 1885.</div><div class=\"pt\">Bharatiya Janata Party — 1980.</div></div></div>\n  </div>\n\n</div>"
   },
+  "introduction": "In a democracy, we don't usually vote directly for the Prime Minister. We vote for a 'Party'. But what exactly is a political party? Why do we even need them? Let's explore the engines of our democracy: Political Parties.",
+  "definitions": [],
+  "keyPoints": [],
+  "formulas": [],
+  "crux": [],
+  "mcqs": [
+    {
+      "id": "sc4-mcq-1",
+      "question": "<div style='text-align: justify;'>A group of people who come together to contest elections and hold power is a:</div>",
+      "options": [
+        "A):   Pressure group",
+        "B):   Trade union",
+        "C):   Political party",
+        "D):   Movement"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Parties seek power through elections.</div>"
+    },
+    {
+      "id": "sc4-mcq-2",
+      "question": "<div style='text-align: justify;'>Who founded the Bahujan Samaj Party?</div>",
+      "options": [
+        "A):   Kanshi Ram",
+        "B):   Sahu Maharaj",
+        "C):   B.R. Ambedkar",
+        "D):   Jotiba Phule"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>The BSP was formed in 1984.</div>"
+    },
+    {
+      "id": "sc4-mcq-3",
+      "question": "<div style='text-align: justify;'>The guiding philosophy of the BJP is:</div>",
+      "options": [
+        "A):   Bahujan Samaj",
+        "B):   Revolutionary democracy",
+        "C):   Modernity",
+        "D):   Integral humanism"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>It comes from Deendayal Upadhyaya.</div>"
+    },
+    {
+      "id": "sc4-mcq-4",
+      "question": "<div style='text-align: justify;'>Which statement about parties is NOT correct?</div>",
+      "options": [
+        "A):   Parties do not enjoy much trust",
+        "B):   Parties are not necessary to run governments",
+        "C):   Parties are rocked by scandals",
+        "D):   Parties contest elections"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Representative democracy needs parties.</div>"
+    },
+    {
+      "id": "sc4-mcq-5",
+      "question": "<div style='text-align: justify;'>Which is NOT a component of a political party?</div>",
+      "options": [
+        "A):   Judges",
+        "B):   Active members",
+        "C):   Followers",
+        "D):   Leaders"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>A party has leaders, active members and followers.</div>"
+    },
+    {
+      "id": "sc4-mcq-6",
+      "question": "<div style='text-align: justify;'>In India, party candidates are mainly chosen by:</div>",
+      "options": [
+        "A):   All voters",
+        "B):   The Election Commission",
+        "C):   Top party leaders",
+        "D):   The courts"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>In the USA, members and supporters choose them.</div>"
+    },
+    {
+      "id": "sc4-mcq-7",
+      "question": "<div style='text-align: justify;'>Which country has a one-party system?</div>",
+      "options": [
+        "A):   India",
+        "B):   China",
+        "C):   USA",
+        "D):   UK"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Only the Communist Party is allowed to rule.</div>"
+    },
+    {
+      "id": "sc4-mcq-8",
+      "question": "<div style='text-align: justify;'>The USA and the UK have a:</div>",
+      "options": [
+        "A):   One-party system",
+        "B):   No-party system",
+        "C):   Multiparty system",
+        "D):   Two-party system"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Power alternates between two main parties.</div>"
+    },
+    {
+      "id": "sc4-mcq-9",
+      "question": "<div style='text-align: justify;'>India has a:</div>",
+      "options": [
+        "A):   One-party system",
+        "B):   Two-party system",
+        "C):   Military rule",
+        "D):   Multiparty system"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Its diversity needs many parties.</div>"
+    },
+    {
+      "id": "sc4-mcq-10",
+      "question": "<div style='text-align: justify;'>About how many parties are registered with the Election Commission of India?</div>",
+      "options": [
+        "A):   75",
+        "B):   Over 750",
+        "C):   175",
+        "D):   About 50"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Any group of citizens can form a party.</div>"
+    },
+    {
+      "id": "sc4-mcq-11",
+      "question": "<div style='text-align: justify;'>A recognised party gets from the Election Commission:</div>",
+      "options": [
+        "A):   Free airtime only",
+        "B):   Government funding",
+        "C):   A unique symbol",
+        "D):   Reserved seats"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Only its official candidates can use the symbol.</div>"
+    },
+    {
+      "id": "sc4-mcq-12",
+      "question": "<div style='text-align: justify;'>To be a State party, a party must win at least what share of votes in an Assembly election?</div>",
+      "options": [
+        "A):   6%",
+        "B):   4%",
+        "C):   2%",
+        "D):   10%"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>It must also win at least two seats.</div>"
+    },
+    {
+      "id": "sc4-mcq-13",
+      "question": "<div style='text-align: justify;'>A national party must win at least how many Lok Sabha seats?</div>",
+      "options": [
+        "A):   2",
+        "B):   10",
+        "C):   6",
+        "D):   4"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>It also needs 6% of votes in LS or 4 state assemblies.</div>"
+    },
+    {
+      "id": "sc4-mcq-14",
+      "question": "<div style='text-align: justify;'>How many recognised national parties were there in 2023?</div>",
+      "options": [
+        "A):   Six",
+        "B):   Four",
+        "C):   Eight",
+        "D):   Ten"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>AAP, BSP, BJP, CPI(M), INC and NPP.</div>"
+    },
+    {
+      "id": "sc4-mcq-15",
+      "question": "<div style='text-align: justify;'>The Indian National Congress was founded in:</div>",
+      "options": [
+        "A):   1857",
+        "B):   1947",
+        "C):   1885",
+        "D):   1964"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>It is one of the oldest parties in the world.</div>"
+    },
+    {
+      "id": "sc4-mcq-16",
+      "question": "<div style='text-align: justify;'>The CPI(M) was founded in:</div>",
+      "options": [
+        "A):   1925",
+        "B):   1964",
+        "C):   1980",
+        "D):   1984"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>It believes in Marxism-Leninism.</div>"
+    },
+    {
+      "id": "sc4-mcq-17",
+      "question": "<div style='text-align: justify;'>The first party from north-eastern India to get national party status is the:</div>",
+      "options": [
+        "A):   AAP",
+        "B):   NPP",
+        "C):   BSP",
+        "D):   CPI(M)"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>It was formed in 2013 under P.A. Sangma.</div>"
+    },
+    {
+      "id": "sc4-mcq-18",
+      "question": "<div style='text-align: justify;'>The Aam Aadmi Party was formed in:</div>",
+      "options": [
+        "A):   2004",
+        "B):   2019",
+        "C):   2014",
+        "D):   2012"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>It became a national party in 2023.</div>"
+    },
+    {
+      "id": "sc4-mcq-19",
+      "question": "<div style='text-align: justify;'>Concentration of power in a few top leaders is called:</div>",
+      "options": [
+        "A):   Dynastic succession",
+        "B):   Defection",
+        "C):   Lack of internal democracy",
+        "D):   Federalism"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Parties rarely hold internal elections.</div>"
+    },
+    {
+      "id": "sc4-mcq-20",
+      "question": "<div style='text-align: justify;'>The law that makes MPs and MLAs lose their seats if they change parties is the:</div>",
+      "options": [
+        "A):   Anti-defection law",
+        "B):   Representation of People Act",
+        "C):   RTI Act",
+        "D):   Election Commission order"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>It has reduced defection.</div>"
+    },
+    {
+      "id": "sc4-mcq-21",
+      "question": "<div style='text-align: justify;'>Candidates must file affidavits on property and criminal cases due to an order of the:</div>",
+      "options": [
+        "A):   Parliament",
+        "B):   President",
+        "C):   Supreme Court",
+        "D):   Prime Minister"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>It made information available to the public.</div>"
+    },
+    {
+      "id": "sc4-mcq-22",
+      "question": "<div style='text-align: justify;'>Arrange the national parties by year of formation: (i) BSP (ii) INC (iii) AAP (iv) CPI(M)</div>",
+      "options": [
+        "A):   (ii), (iv), (i), (iii)",
+        "B):   (iv), (ii), (i), (iii)",
+        "C):   (ii), (i), (iv), (iii)",
+        "D):   (ii), (iv), (iii), (i)"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>1885 → 1964 → 1984 → 2012.</div>"
+    },
+    {
+      "id": "sc4-mcq-23",
+      "question": "<div style='text-align: justify;'>Match: (P) Congress (Q) BJP (R) CPI(M) (S) Telugu Desam Party — with (1) National Democratic Alliance (2) United Progressive Alliance (3) State party (4) Left Front</div>",
+      "options": [
+        "A):   P-3, Q-1, R-4, S-2",
+        "B):   P-1, Q-2, R-4, S-3",
+        "C):   P-2, Q-4, R-1, S-3",
+        "D):   P-2, Q-1, R-4, S-3"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Each party matches its alliance or status.</div>"
+    },
+    {
+      "id": "sc4-mcq-24",
+      "question": "<div style='text-align: justify;'>Assertion (A): India has a multiparty system. Reason (R): India's social and geographical diversity cannot be absorbed by two or three parties.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Diversity explains the many parties.</div>"
+    },
+    {
+      "id": "sc4-mcq-25",
+      "question": "<div style='text-align: justify;'>Assertion (A): The anti-defection law has made dissent within parties easier. Reason (R): MPs and MLAs who change parties lose their seats.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>It has made dissent more difficult.</div>"
+    }
+  ],
+  "summary": [],
+  "exercises": [
+    {
+      "id": "sc4-ex-1",
+      "name": "Exercise",
+      "questions": []
+    },
+    {
+      "id": "sc4-ex-board",
+      "name": "Board Qs",
+      "questions": []
+    }
+  ],
+  "examples": []
 };
