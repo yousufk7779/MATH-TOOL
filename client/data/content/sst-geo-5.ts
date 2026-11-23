@@ -1,300 +1,334 @@
 import { ChapterContent } from "../types";
 
-const themeColor = "#FDC830"; // Blue color for Geography Chapter 5
-
 export const sstGeo5: ChapterContent = {
-  id: "sst-geo-5",
-  number: 5,
-  title: "Minerals and Energy Resources",
-  introduction:
-    "Think about the toothbrush you use, the bus you ride, and the electricity that powers your phone. All of these depend heavily on minerals extracted from the earth. Minerals are an indispensable part of our lives, and in this chapter, we will learn about their occurrence, classification, and conservation.",
-  definitions: [
-    {
-      term: "Mineral",
-      description:
-        "A homogeneous, naturally occurring inorganic substance with a definable internal crystalline structure, forming the building blocks of rocks.",
-    },
-    {
-      term: "Ore",
-      description:
-        "An accumulation of any mineral mixed with other elements, containing a high enough concentration to make its extraction economically viable.",
-    },
-    {
-      term: "Ferrous Minerals",
-      description:
-        "Metallic minerals that contain iron, accounting for about three-fourths of the total value of metallic mineral production in India, e.g., iron ore, manganese.",
-    },
-    {
-      term: "Non-Ferrous Minerals",
-      description:
-        "Metallic minerals that do not contain iron, playing a vital role in electrical, engineering, and metallurgical industries, e.g., copper, bauxite, lead, gold.",
-    },
-    {
-      term: "Non-Metallic Minerals",
-      description:
-        "Minerals that do not contain metals, such as mica, salt, potash, sulphur, granite, limestone, and marble.",
-    },
-    {
-      term: "Conventional Energy",
-      description:
-        "Traditional sources of energy that have been in use for a long time and are exhaustible, e.g., coal, petroleum, natural gas, firewood.",
-    },
-    {
-      term: "Non-Conventional Energy",
-      description:
-        "Modern, renewable sources of energy that are inexhaustible and eco-friendly, e.g., solar energy, wind energy, tidal energy, biogas.",
-    },
-    {
-      term: "Placer Deposits",
-      description:
-        "Certain minerals that occur as alluvial deposits in sands of valley floors and the base of hills, washed down by water, e.g., gold, silver, tin, platinum.",
-    },
-  ],
-  keyPoints: [
-    "Minerals are found in different types of rocks (igneous, metamorphic, sedimentary) and are formed through weathering, decomposition, or precipitation.",
-    "Ferrous minerals like iron ore are the backbone of industrial development, with major belts in Odisha-Jharkhand, Durg-Bastar-Chandrapur, Bellary-Chitradurga-Chikmagalur-Tumkur, and Maharashtra-Goa.",
-    "Copper is indispensable in electrical cables and electronics due to its high conductivity and ductility, with major mines in Khetri (Rajasthan) and Balaghat (Madhya Pradesh).",
-    "Bauxite decomposes into alumina, which is then processed into aluminium, valued for its strength, lightness, and conductivity.",
-    "Energy resources are classified into Conventional (coal, petroleum, natural gas) and Non-Conventional (solar, wind, biogas, tidal, geothermal).",
-    "Coal is the most abundantly available fossil fuel in India, classified into Peat, Lignite, Bituminous, and Anthracite, and found in Gondwana and Tertiary rock series.",
-    "India has massive potential for non-conventional energy, especially solar energy (abundant sunshine) and wind energy (with the largest cluster in Tamil Nadu from Nagarcoil to Madurai).",
-  ],
-  formulas: [],
-  crux: [
-    "Minerals occur in igneous/metamorphic cracks (veins/lodes), sedimentary beds, and placer deposits.",
-    "Ferrous minerals contain iron (iron ore, manganese); non-ferrous do not (copper, bauxite).",
-    "Mica is essential for electronics due to its insulating properties; Koderma is the leading producer.",
-    "Thorium is extracted from Monazite sands of Kerala.",
-    "Coal forms: Anthracite (highest quality), Bituminous (most popular), Lignite (brown coal), Peat (low carbon).",
-    "Solar and wind energy are critical non-conventional, renewable alternatives.",
-  ],
-  summary: [
-    "Minerals and energy are fundamental to industrial growth and daily life. They are unevenly distributed and exist in various rock types depending on geological conditions.",
-    "Fossil fuels are exhaustible and cause environmental damage, necessitating a transition toward clean, renewable, and non-conventional energy sources like solar and wind power.",
-    "Mineral conservation is crucial because they are finite, non-renewable, and take millions of years to form. Efficient extraction and recycling of metals are key practices.",
-  ],
-  isHtmlView: true,
-  htmlOverview: `
-        <div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">
-            <p style="line-height: 1.6; font-size: 17px;">Think about the toothbrush you use, the bus you ride, and the electricity that powers your phone. All of these depend heavily on minerals extracted from the earth. Minerals are an indispensable part of our lives, and in this chapter, we will learn about their occurrence, classification, and conservation.</p>
-            
-            <h3 style="color: ${themeColor}; text-align: left; margin-top: 20px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px;">Key Definitions</h3>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Mineral:</b> A homogeneous, naturally occurring inorganic substance with a definable internal crystalline structure, forming the building blocks of rocks.</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Ore:</b> An accumulation of any mineral mixed with other elements, containing a high enough concentration to make its extraction economically viable.</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Ferrous Minerals:</b> Metallic minerals that contain iron, accounting for about three-fourths of the total value of metallic mineral production in India, e.g., iron ore, manganese.</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Non-Ferrous Minerals:</b> Metallic minerals that do not contain iron, playing a vital role in electrical, engineering, and metallurgical industries, e.g., copper, bauxite, lead, gold.</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Non-Metallic Minerals:</b> Minerals that do not contain metals, such as mica, salt, potash, sulphur, granite, limestone, and marble.</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Conventional Energy:</b> Traditional sources of energy that have been in use for a long time and are exhaustible, e.g., coal, petroleum, natural gas, firewood.</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Non-Conventional Energy:</b> Modern, renewable sources of energy that are inexhaustible and eco-friendly, e.g., solar energy, wind energy, tidal energy, biogas.</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Placer Deposits:</b> Certain minerals that occur as alluvial deposits in sands of valley floors and the base of hills, washed down by water, e.g., gold, silver, tin, platinum.</p>
-
-            <h3 style="color: ${themeColor}; text-align: left; margin-top: 25px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px;">Important Points</h3>
-            <ul style="text-align: left; padding-left: 20px; line-height: 1.6; font-size: 16px;">
-                <li style="margin-bottom: 8px;">Minerals are found in different types of rocks (igneous, metamorphic, sedimentary) and are formed through weathering, decomposition, or precipitation.</li>
-                <li style="margin-bottom: 8px;">Ferrous minerals like iron ore are the backbone of industrial development, with major belts in Odisha-Jharkhand, Durg-Bastar-Chandrapur, Bellary-Chitradurga-Chikmagalur-Tumkur, and Maharashtra-Goa.</li>
-                <li style="margin-bottom: 8px;">Copper is indispensable in electrical cables and electronics due to its high conductivity and ductility, with major mines in Khetri (Rajasthan) and Balaghat (Madhya Pradesh).</li>
-                <li style="margin-bottom: 8px;">Bauxite decomposes into alumina, which is then processed into aluminium, valued for its strength, lightness, and conductivity.</li>
-                <li style="margin-bottom: 8px;">Energy resources are classified into Conventional (coal, petroleum, natural gas) and Non-Conventional (solar, wind, biogas, tidal, geothermal).</li>
-                <li style="margin-bottom: 8px;">Coal is the most abundantly available fossil fuel in India, classified into Peat, Lignite, Bituminous, and Anthracite, and found in Gondwana and Tertiary rock series.</li>
-                <li style="margin-bottom: 8px;">India has massive potential for non-conventional energy, especially solar energy (abundant sunshine) and wind energy (with the largest cluster in Tamil Nadu from Nagarcoil to Madurai).</li>
-            </ul>
-
-            <h3 style="color: ${themeColor}; text-align: left; margin-top: 25px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px;">Summary</h3>
-            <p style="line-height: 1.6; font-size: 16px;">Minerals and energy are fundamental to industrial growth and daily life. They are unevenly distributed and exist in various rock types depending on geological conditions. Fossil fuels are exhaustible and cause environmental damage, necessitating a transition toward clean, renewable, and non-conventional energy sources like solar and wind power. Mineral conservation is crucial because they are finite, non-renewable, and take millions of years to form. Efficient extraction and recycling of metals are key practices.</p>
-        </div>
-    `,
-  htmlExercises: {
-    "sg5-ex-all": `
-            <div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">
-                <!-- 1. Multiple Choice Questions -->
-                <div style="margin-bottom: 25px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 12px; font-size: 18px;">1. Multiple choice questions.</p>
-                    
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: #fff; font-weight: bold; font-size: 15px;">(i) Which one of the following minerals is formed by decomposition of rocks, leaving a residual mass of weathered material?</p>
-                        <p style="color: #E0E0E0; font-size: 15px; margin: 4px 0 0 10px;">
-                            (a) coal &nbsp;&nbsp; <b style="color: ${themeColor};">(b) bauxite</b> &nbsp;&nbsp; (c) gold &nbsp;&nbsp; (d) zinc
-                        </p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: #fff; font-weight: bold; font-size: 15px;">(ii) Koderma, in Jharkhand is the leading producer of which one of the following minerals?</p>
-                        <p style="color: #E0E0E0; font-size: 15px; margin: 4px 0 0 10px;">
-                            (a) bauxite &nbsp;&nbsp; <b style="color: ${themeColor};">(b) mica</b> &nbsp;&nbsp; (c) iron ore &nbsp;&nbsp; (d) copper
-                        </p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: #fff; font-weight: bold; font-size: 15px;">(iii) Minerals are deposited and accumulated in the stratas of which of the following rocks?</p>
-                        <p style="color: #E0E0E0; font-size: 15px; margin: 4px 0 0 10px;">
-                            <b style="color: ${themeColor};">(a) sedimentary rocks</b> &nbsp;&nbsp; (b) metamorphic rocks &nbsp;&nbsp; (c) igneous rocks &nbsp;&nbsp; (d) none of the above
-                        </p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: #fff; font-weight: bold; font-size: 15px;">(iv) Which one of the following minerals is contained in the Monazite sand?</p>
-                        <p style="color: #E0E0E0; font-size: 15px; margin: 4px 0 0 10px;">
-                            (a) oil &nbsp;&nbsp; (b) uranium &nbsp;&nbsp; <b style="color: ${themeColor};">(c) thorium</b> &nbsp;&nbsp; (d) coal
-                        </p>
-                    </div>
-                </div>
-
-                <!-- 2. Answer the following questions in about 30 words -->
-                <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 12px; font-size: 18px;">2. Answer the following questions in about 30 words.</p>
-                    
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: ${themeColor}; font-weight: bold; font-size: 16px;">(i) Distinguish between the following in not more than 30 words:</p>
-                        
-                        <div style="margin-left: 10px; margin-bottom: 12px; border-left: 2px solid ${themeColor}; padding-left: 10px;">
-                            <p style="color: ${themeColor}; font-weight: bold; font-size: 15px;">(a) Ferrous and non-ferrous minerals</p>
-                            <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                                <b>Ferrous minerals</b> contain iron (e.g., iron ore, manganese, nickel, cobalt), whereas <b>non-ferrous minerals</b> do not contain iron (e.g., copper, lead, tin, bauxite, gold).
-                            </p>
-                        </div>
-
-                        <div style="margin-left: 10px; margin-bottom: 12px; border-left: 2px solid ${themeColor}; padding-left: 10px;">
-                            <p style="color: ${themeColor}; font-weight: bold; font-size: 15px;">(b) Conventional and non-conventional sources of energy</p>
-                            <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                                <b>Conventional sources</b> are traditional, exhaustible sources of energy like coal, petroleum, and natural gas. <b>Non-conventional sources</b> are modern, renewable, and eco-friendly sources like solar, wind, and tidal energy.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: ${themeColor}; font-weight: bold; font-size: 16px;">(ii) What is a mineral?</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                            A <b>mineral</b> is a homogeneous, naturally occurring inorganic substance with a definable internal crystalline structure. Minerals are the basic building blocks of all rocks on the Earth.
-                        </p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: ${themeColor}; font-weight: bold; font-size: 16px;">(iii) How are minerals formed in igneous and metamorphic rocks?</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                            In igneous and metamorphic rocks, minerals occur in cracks, crevices, faults, or joints. Molten minerals are forced upward through cavities towards the surface. They cool and solidify as they rise, forming smaller deposits called <b>veins</b> and larger deposits called <b>lodes</b> (e.g., copper, zinc, lead).
-                        </p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: ${themeColor}; font-weight: bold; font-size: 16px;">(iv) Why do we need to conserve mineral resources?</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                            We need to conserve minerals because they are **finite, non-renewable**, and take millions of years of geological processes to form. The rate of replenishment is infinitesimally small compared to our rapid rate of consumption, posing a threat to future generations.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- 3. Answer the following questions in about 120 words -->
-                <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 12px; font-size: 18px;">3. Answer the following questions in about 120 words.</p>
-                    
-                    <div style="margin-left: 10px; margin-bottom: 22px;">
-                        <p style="color: ${themeColor}; font-weight: bold; font-size: 16px;">(i) Describe the distribution of coal in India.</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                            In India, coal reserves occur in rock series of two major geological ages:
-                            <br/><br/>
-                            1. <b>Gondwana Coal Deposits:</b> Over 200 million years old, these form the bulk of India's metallurgical coal. They are situated in the river valleys of the eastern and south-central regions:
-                            <br/>• **Damodar Valley (JH-WB):** Key fields are <b>Jharia, Raniganj, Bokaro</b>.
-                            <br/>• **Other River Basins:** Godavari, Mahanadi, Son, and Wardha valleys contain major deposits (e.g., Talcher in Odisha, Singrauli in MP, Korba in Chhattisgarh, and Singareni in Telangana).
-                            <br/><br/>
-                            2. <b>Tertiary Coal Deposits:</b> Much younger (around 15-60 million years old), these are found mainly in the north-eastern states:
-                            <br/>• **States:** Meghalaya, Assam, Arunachal Pradesh, and Nagaland. This coal has a higher sulphur content.
-                        </p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: ${themeColor}; font-weight: bold; font-size: 16px;">(ii) Why do you think that solar energy has a bright future in India?</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                            Solar energy holds a highly promising future in India due to several geographical and economic factors:
-                            <br/>• <b>Tropical Location:</b> Being a tropical nation, India receives abundant sunlight throughout the year, with nearly 300 clear, sunny days.
-                            <br/>• <b>Rural Applications:</b> It is highly suitable for remote rural areas without electricity grids. It can run agricultural tubewells and light up homes cleanly.
-                            <br/>• <b>Environmental Benefits:</b> Utilizing solar power reduces the rural reliance on firewood and dung cakes, preventing forest degradation and indoor air pollution. It also preserves dung to be used as agricultural manure.
-                            <br/>• <b>Energy Independence:</b> Reduces India's high economic dependence on importing expensive crude oil and coal.
-                            <br/>• <b>Government Support & Cost Reduction:</b> Advancements in solar photovoltaic cells and government subsidies make solar installations affordable for households and industries.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        `,
+  "id": "sst-geo-5",
+  "number": 5,
+  "title": "Minerals and Energy Resources",
+  "isHtmlView": true,
+  "htmlOverview": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(253, 200, 48, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FDC830; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FDC830; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFF3C4; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFF3C4; font-weight: 700; }\n  .hl { color: #FDC830; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FDC830; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FDC830; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(253, 200, 48, 0.10); border: 1.5px dashed #FDC830; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FDC830; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(253, 200, 48, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(253, 200, 48, 0.18); border: 1px solid #FDC830; color: #FFF3C4; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(253, 200, 48, 0.2); color: #FFF3C4; }\n  .q-card .q-text, .q-card .sub-q { color: #FDC830 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 1. What is a Mineral?</div><div class=\"sol-step\"><div class=\"rev\">Geologists define a <span class=\"hl\">mineral</span> as a “homogenous, naturally occurring substance with a definable internal structure”. Minerals occur in varied forms, from the hardest <b>diamond</b> to the softest <b>talc</b>. Rocks are combinations of minerals.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 280\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"280\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#FDC830\" text-anchor=\"middle\" font-weight=\"700\">Modes of Occurrence of Minerals</text><rect x=\"13\" y=\"30\" width=\"142\" height=\"84\" rx=\"6\" fill=\"rgba(253, 200, 48,0.16)\" stroke=\"#FDC830\" stroke-width=\"1.2\"/><text x=\"84\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Igneous and</text><text x=\"84\" y=\"57.7\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">metamorphic rocks</text><text x=\"84\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">In cracks, faults and</text><text x=\"84\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">joints: small veins,</text><text x=\"84\" y=\"92.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">large lodes — tin,</text><text x=\"84\" y=\"104.5\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">copper, zinc, lead</text><rect x=\"165\" y=\"30\" width=\"142\" height=\"84\" rx=\"6\" fill=\"rgba(253, 200, 48,0.16)\" stroke=\"#FDC830\" stroke-width=\"1.2\"/><text x=\"236\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Sedimentary rocks</text><text x=\"236\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">In beds or layers — coal,</text><text x=\"236\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">some iron ore; gypsum,</text><text x=\"236\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">potash and sodium salt by</text><text x=\"236\" y=\"92.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">evaporation</text><rect x=\"13\" y=\"122\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"84\" y=\"138.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Decomposition of</text><text x=\"84\" y=\"149.7\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">surface rocks</text><text x=\"84\" y=\"161.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Residual mass of</text><text x=\"84\" y=\"173.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">weathered material —</text><text x=\"84\" y=\"184.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">bauxite</text><rect x=\"165\" y=\"122\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(253, 200, 48,0.16)\" stroke=\"#FDC830\" stroke-width=\"1.2\"/><text x=\"236\" y=\"138.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Placer deposits</text><text x=\"236\" y=\"149.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Alluvial sands of valley</text><text x=\"236\" y=\"161.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">floors and hill bases —</text><text x=\"236\" y=\"173.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">gold, silver, tin,</text><text x=\"236\" y=\"184.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">platinum</text><rect x=\"89\" y=\"203\" width=\"142\" height=\"61\" rx=\"6\" fill=\"rgba(79,195,247,0.16)\" stroke=\"#4FC3F7\" stroke-width=\"1.2\"/><text x=\"160\" y=\"219.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Ocean waters and beds</text><text x=\"160\" y=\"230.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Common salt, magnesium,</text><text x=\"160\" y=\"242.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">bromine; manganese</text><text x=\"160\" y=\"254.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">nodules on ocean beds</text></svg></div><div class=\"diagram-caption\">Where and how minerals occur</div></div><div class=\"exam\"><span class=\"exam-t\">📌 Rat-hole mining</span><div>• In north-east India minerals are owned by individuals or communities.</div><div>• In Meghalaya, coal is mined at <b>Jowai and Cherrapunjee</b> by family members digging long, narrow tunnels — called <b>'rat-hole' mining</b>.</div></div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 233\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"233\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#FDC830\" text-anchor=\"middle\" font-weight=\"700\">Classification of Minerals</text><rect x=\"13\" y=\"30\" width=\"142\" height=\"49\" rx=\"6\" fill=\"rgba(253, 200, 48,0.16)\" stroke=\"#FDC830\" stroke-width=\"1.2\"/><text x=\"84\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Metallic: ferrous</text><text x=\"84\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Contain iron — iron ore,</text><text x=\"84\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">manganese, nickel, cobalt</text><rect x=\"165\" y=\"30\" width=\"142\" height=\"49\" rx=\"6\" fill=\"rgba(253, 200, 48,0.16)\" stroke=\"#FDC830\" stroke-width=\"1.2\"/><text x=\"236\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Metallic: non-ferrous</text><text x=\"236\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">No iron — copper, lead,</text><text x=\"236\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">tin, bauxite</text><rect x=\"13\" y=\"87\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(253, 200, 48,0.16)\" stroke=\"#FDC830\" stroke-width=\"1.2\"/><text x=\"84\" y=\"103.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Metallic: precious</text><text x=\"84\" y=\"114.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Gold, silver, platinum</text><rect x=\"165\" y=\"87\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(148,163,184,0.13)\" stroke=\"#94A3B8\" stroke-width=\"1.2\"/><text x=\"236\" y=\"103.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Non-metallic</text><text x=\"236\" y=\"114.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Mica, salt, potash,</text><text x=\"236\" y=\"126.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">sulphur, granite,</text><text x=\"236\" y=\"138.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">limestone, marble,</text><text x=\"236\" y=\"149.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">sandstone</text><rect x=\"89\" y=\"168\" width=\"142\" height=\"49\" rx=\"6\" fill=\"rgba(79,195,247,0.16)\" stroke=\"#4FC3F7\" stroke-width=\"1.2\"/><text x=\"160\" y=\"184.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Energy minerals</text><text x=\"160\" y=\"195.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Coal, petroleum, natural</text><text x=\"160\" y=\"207.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">gas</text></svg></div><div class=\"diagram-caption\">Minerals are classified by their composition and use</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 2. Ferrous Minerals</div><div class=\"sol-step\"><div class=\"rev\">Ferrous minerals account for about <b>three-fourths</b> of the total value of production of metallic minerals. They provide a strong base for metallurgical industries.</div><div class=\"sec\">Iron ore</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Type</th><th>Iron content</th><th>Use</th></tr><tr><td><b>Magnetite</b></td><td>Up to 70% — the finest ore</td><td>Excellent magnetic qualities; valuable in the electrical industry</td></tr><tr><td><b>Haematite</b></td><td>50–60%</td><td>Most important industrial iron ore by quantity used</td></tr></table></div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 234\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"234\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#FDC830\" text-anchor=\"middle\" font-weight=\"700\">Iron Ore Belts of India</text><rect x=\"13\" y=\"30\" width=\"142\" height=\"84\" rx=\"6\" fill=\"rgba(253, 200, 48,0.16)\" stroke=\"#FDC830\" stroke-width=\"1.2\"/><text x=\"84\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Odisha–Jharkhand</text><text x=\"84\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">High-grade haematite:</text><text x=\"84\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Badampahar (Mayurbhanj,</text><text x=\"84\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Kendujhar); Gua and</text><text x=\"84\" y=\"92.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Noamundi (Singhbhum)</text><rect x=\"165\" y=\"30\" width=\"142\" height=\"84\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"236\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Durg–Bastar–Chandrapur</text><text x=\"236\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Bailadila hills (Bastar):</text><text x=\"236\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">14 deposits of super</text><text x=\"236\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">high-grade haematite;</text><text x=\"236\" y=\"92.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">exported to Japan and S.</text><text x=\"236\" y=\"104.5\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Korea via Visakhapatnam</text><rect x=\"13\" y=\"122\" width=\"142\" height=\"96\" rx=\"6\" fill=\"rgba(253, 200, 48,0.16)\" stroke=\"#FDC830\" stroke-width=\"1.2\"/><text x=\"84\" y=\"138.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Ballari– Chitradurga–</text><text x=\"84\" y=\"149.7\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Chikkamagaluru–</text><text x=\"84\" y=\"161.4\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Tumakuru</text><text x=\"84\" y=\"173.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Kudremukh: 100% export</text><text x=\"84\" y=\"184.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">unit; ore sent as slurry</text><text x=\"84\" y=\"196.5\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">by pipeline to a port</text><text x=\"84\" y=\"208.2\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">near Mangaluru</text><rect x=\"165\" y=\"122\" width=\"142\" height=\"96\" rx=\"6\" fill=\"rgba(79,195,247,0.16)\" stroke=\"#4FC3F7\" stroke-width=\"1.2\"/><text x=\"236\" y=\"138.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Maharashtra–Goa</text><text x=\"236\" y=\"149.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Goa and Ratnagiri: ore</text><text x=\"236\" y=\"161.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">not of very high quality;</text><text x=\"236\" y=\"173.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">exported through Marmagao</text></svg></div><div class=\"diagram-caption\">Four iron ore belts</div></div><div class=\"sec\">Manganese</div><div class=\"pt\">Used mainly in making steel and ferro-manganese alloy — nearly <b>10 kg</b> of manganese is needed for one tonne of steel.</div><div class=\"pt\">Also used in bleaching powder, insecticides and paints. <b>Odisha</b> is the largest producer.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 3. Non-ferrous and Non-metallic Minerals</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Mineral</th><th>Uses / features</th><th>Main areas</th></tr><tr><td><b>Copper</b></td><td>Malleable, ductile, good conductor — electric cables, electronics, chemicals; India is critically deficient</td><td>Balaghat (MP), Khetri (Rajasthan), Singhbhum (Jharkhand)</td></tr><tr><td><b>Bauxite</b></td><td>Ore of aluminium — strong like iron, extremely light, good conductor, malleable; formed by decomposition of rocks rich in aluminium silicates</td><td>Amarkantak plateau, Maikal hills, Bilaspur-Katni; <b>Odisha</b> largest — Panchpatmali (Koraput)</td></tr><tr><td><b>Mica</b></td><td>Splits into thin sheets; excellent di-electric strength, insulating, resists high voltage — electric and electronic industries</td><td>Koderma-Gaya-Hazaribagh (Jharkhand), Ajmer (Rajasthan), Nellore (AP)</td></tr><tr><td><b>Limestone</b></td><td>Calcium carbonates; found in sedimentary rocks; raw material for cement; used in smelting iron ore</td><td>—</td></tr></table></div><div class=\"sec\">Hazards of mining</div><div class=\"pt\">Dust and noxious fumes cause <b>pulmonary diseases</b> among miners.</div><div class=\"pt\">Risk of collapsing mine roofs, flooding and fires in coal mines.</div><div class=\"pt\">Water sources get contaminated; dumping of waste and slurry degrades land and soil and pollutes streams.</div><div class=\"sec\">Conservation of minerals</div><div class=\"pt\">Workable mineral deposits are only about <b>1%</b> of the earth's crust; they are finite and non-renewable, and take millions of years to form.</div><div class=\"pt\">Continued extraction increases costs as minerals come from greater depths and quality decreases.</div><div class=\"pt\">Use them in a planned, sustainable way; use improved technology for low-grade ores; recycle metals, use scrap and substitutes.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 4. Conventional Sources of Energy</div><div class=\"sol-step\"><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 131\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"131\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#FDC830\" text-anchor=\"middle\" font-weight=\"700\">Sources of Energy</text><rect x=\"13\" y=\"30\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(148,163,184,0.13)\" stroke=\"#94A3B8\" stroke-width=\"1.2\"/><text x=\"84\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Conventional</text><text x=\"84\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Firewood, cattle dung</text><text x=\"84\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">cake, coal, petroleum,</text><text x=\"84\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">natural gas, electricity</text><text x=\"84\" y=\"92.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">(hydel and thermal)</text><rect x=\"165\" y=\"30\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"236\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Non-conventional</text><text x=\"236\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Solar, wind, tidal,</text><text x=\"236\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">geothermal, biogas,</text><text x=\"236\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">atomic (nuclear) energy</text><text x=\"160\" y=\"117\" font-size=\"9.5\" fill=\"#FDC830\" text-anchor=\"middle\" font-weight=\"700\">Rural homes: over 70% energy from firewood, dung cake</text></svg></div><div class=\"diagram-caption\">Conventional and non-conventional energy</div></div><div class=\"pt\">Using dung cake consumes the most valuable manure; firewood is harder to get as forests shrink.</div><div class=\"sec\">Coal</div><div class=\"pt\">The most abundant fossil fuel in India — used for power generation and to supply energy to industry and homes.</div><div class=\"pt\">Formed by compression of plant material over millions of years.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 286\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"286\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#FDC830\" text-anchor=\"middle\" font-weight=\"700\">Types of Coal (increasing quality)</text><rect x=\"30\" y=\"30\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(148,163,184,0.13)\" stroke=\"#94A3B8\" stroke-width=\"1.2\"/><text x=\"160\" y=\"46.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Peat</text><text x=\"160\" y=\"58.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Decaying plants in swamps; low carbon, high</text><text x=\"160\" y=\"71.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">moisture, low heating capacity</text><line x1=\"160\" y1=\"82\" x2=\"160\" y2=\"89\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 94 L163.5 88 L156.5 88 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"95\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(253, 200, 48,0.16)\" stroke=\"#FDC830\" stroke-width=\"1.2\"/><text x=\"160\" y=\"111.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Lignite</text><text x=\"160\" y=\"123.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Low-grade brown coal, soft, high moisture;</text><text x=\"160\" y=\"136.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">main reserves at Neyveli (Tamil Nadu)</text><line x1=\"160\" y1=\"147\" x2=\"160\" y2=\"154\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 159 L163.5 153 L156.5 153 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"160\" width=\"260\" height=\"63\" rx=\"6\" fill=\"rgba(253, 200, 48,0.16)\" stroke=\"#FDC830\" stroke-width=\"1.2\"/><text x=\"160\" y=\"176.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Bituminous</text><text x=\"160\" y=\"188.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Buried deep, higher temperature; most popular</text><text x=\"160\" y=\"201.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">commercial coal; metallurgical coal for blast</text><text x=\"160\" y=\"213.5\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">furnaces</text><line x1=\"160\" y1=\"224\" x2=\"160\" y2=\"231\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 236 L163.5 230 L156.5 230 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"237\" width=\"260\" height=\"39\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"160\" y=\"253.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Anthracite</text><text x=\"160\" y=\"265.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Highest quality hard coal</text></svg></div><div class=\"diagram-caption\">Peat to anthracite</div></div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Coal deposits</th><th>Age</th><th>Where</th></tr><tr><td><b>Gondwana</b> (metallurgical coal)</td><td>A little over 200 million years</td><td>Damodar valley (WB–Jharkhand): Jharia, Raniganj, Bokaro; also Godavari, Mahanadi, Son and Wardha valleys</td></tr><tr><td><b>Tertiary</b></td><td>About 55 million years</td><td>Meghalaya, Assam, Arunachal Pradesh, Nagaland</td></tr></table></div><div class=\"pt\">Coal is bulky and loses weight on use, so heavy industries and thermal power stations are located on or near coalfields.</div><div class=\"sec\">Petroleum</div><div class=\"pt\">Next major energy source after coal: fuel for heat and lighting, lubricants, and raw material for industries; refineries are a <b>'nodal industry'</b> for synthetic textiles, fertilisers and chemicals.</div><div class=\"pt\">Most occurrences are in <b>anticlines and fault traps</b> in rocks of the tertiary age.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 222\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"222\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#FDC830\" text-anchor=\"middle\" font-weight=\"700\">Petroleum in an Anticline (schematic)</text><path d=\"M10 100 Q160 20 310 100 L310 120 Q160 40 10 120 Z\" fill=\"#5D6D7E\" stroke=\"rgba(255,255,255,0.3)\" stroke-width=\"0.8\"/><path d=\"M10 120 Q160 40 310 120 L310 165 Q160 85 10 165 Z\" fill=\"#1E88E5\" stroke=\"rgba(255,255,255,0.3)\" stroke-width=\"0.8\"/><path d=\"M10 165 Q160 85 310 165 L310 185 Q160 105 10 185 Z\" fill=\"#5D6D7E\" stroke=\"rgba(255,255,255,0.3)\" stroke-width=\"0.8\"/><defs><clipPath id=\"res\"><path d=\"M10 120 Q160 40 310 120 L310 165 Q160 85 10 165 Z\"/></clipPath></defs><g clip-path=\"url(#res)\"><rect x=\"0\" y=\"78\" width=\"320\" height=\"14\" fill=\"#E1F5FE\"/><rect x=\"0\" y=\"92\" width=\"320\" height=\"14\" fill=\"#111111\"/></g><line x1=\"160\" y1=\"70\" x2=\"160\" y2=\"37\" stroke=\"#FFFFFF\" stroke-width=\"0.8\"/><circle cx=\"160\" cy=\"70\" r=\"1.8\" fill=\"#FFFFFF\"/><text x=\"160\" y=\"40\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Non-porous rock</text><line x1=\"178\" y1=\"87\" x2=\"250\" y2=\"63\" stroke=\"#FFFFFF\" stroke-width=\"0.8\"/><circle cx=\"178\" cy=\"87\" r=\"1.8\" fill=\"#FFFFFF\"/><text x=\"250\" y=\"66\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"start\" font-weight=\"700\">Gas</text><line x1=\"192\" y1=\"100\" x2=\"250\" y2=\"87\" stroke=\"#FFFFFF\" stroke-width=\"0.8\"/><circle cx=\"192\" cy=\"100\" r=\"1.8\" fill=\"#FFFFFF\"/><text x=\"250\" y=\"90\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"start\" font-weight=\"700\">Oil</text><line x1=\"70\" y1=\"125\" x2=\"26\" y2=\"197\" stroke=\"#FFFFFF\" stroke-width=\"0.8\"/><circle cx=\"70\" cy=\"125\" r=\"1.8\" fill=\"#FFFFFF\"/><text x=\"26\" y=\"200\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"start\" font-weight=\"700\">Water (porous rock)</text><text x=\"160\" y=\"216\" font-size=\"9\" fill=\"#CBD5E1\" text-anchor=\"middle\">Gas (lightest) lies above oil; non-porous rock traps both</text></svg></div><div class=\"diagram-caption\">Oil and gas trapped in the crest of an upfold</div></div><div class=\"pt\"><b>Mumbai High, Gujarat and Assam</b> are the major producing areas. <b>Ankleshwar</b> is the most important field of Gujarat. <b>Assam</b> is the oldest oil-producing state — Digboi, Naharkatiya, Moran-Hugrijan.</div><div class=\"sec\">Natural gas</div><div class=\"pt\">An environment-friendly fuel (low carbon dioxide emissions) — the fuel for the present century; also a raw material for petrochemicals.</div><div class=\"pt\">Reserves: <b>Krishna-Godavari basin</b>, Mumbai High and the Gulf of Cambay, Andaman and Nicobar Islands.</div><div class=\"pt\">The <b>Hazira-Vijaipur-Jagdishpur (HVJ)</b> pipeline links Mumbai High and Bassien with fertiliser, power and industrial complexes in western and northern India. CNG is used in vehicles.</div><div class=\"sec\">Electricity</div><div class=\"pt\"><b>Hydro electricity</b> — fast-flowing water; renewable (e.g. Bhakra Nangal, Damodar Valley Corporation, Kopili).</div><div class=\"pt\"><b>Thermal electricity</b> — burning coal, petroleum and natural gas; non-renewable.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 5. Non-conventional Sources of Energy</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Source</th><th>Key facts</th></tr><tr><td><b>Nuclear</b></td><td>Altering the structure of atoms releases heat; uranium and thorium from Jharkhand and the Aravalli ranges (Rajasthan); monazite sands of Kerala are rich in thorium</td></tr><tr><td><b>Solar</b></td><td>Tropical India has huge potential; photovoltaic technology converts sunlight directly into electricity; popular in rural and remote areas</td></tr><tr><td><b>Wind</b></td><td>Largest wind farm cluster from Nagarcoil to Madurai (Tamil Nadu); also AP, Karnataka, Gujarat, Kerala, Maharashtra, Lakshadweep; Nagarcoil and Jaisalmer well known</td></tr><tr><td><b>Biogas</b></td><td>Shrubs, farm, animal and human waste; higher thermal efficiency than kerosene, dung cake and charcoal; 'gobar gas plants' give energy and better manure</td></tr><tr><td><b>Tidal</b></td><td>Gulf of Khambhat, Gulf of Kachchh (Gujarat) and the Sunderbans (West Bengal)</td></tr><tr><td><b>Geothermal</b></td><td>Heat from the earth's interior; experimental projects in the Parvati valley near Manikarn (HP) and Puga valley (Ladakh)</td></tr></table></div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 288\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"288\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#FDC830\" text-anchor=\"middle\" font-weight=\"700\">How Tidal Energy is Produced</text><text x=\"160\" y=\"36\" font-size=\"9.5\" fill=\"#CBD5E1\" text-anchor=\"middle\">Sites: Gulf of Khambhat, Gulf of Kachchh, Sunderbans</text><rect x=\"30\" y=\"44\" width=\"260\" height=\"39\" rx=\"6\" fill=\"rgba(253, 200, 48,0.16)\" stroke=\"#FDC830\" stroke-width=\"1.2\"/><text x=\"160\" y=\"60.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Floodgate dam</text><text x=\"160\" y=\"72.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Built across an inlet of the sea</text><line x1=\"160\" y1=\"84\" x2=\"160\" y2=\"91\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 96 L163.5 90 L156.5 90 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"97\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(253, 200, 48,0.16)\" stroke=\"#FDC830\" stroke-width=\"1.2\"/><text x=\"160\" y=\"113.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">High tide</text><text x=\"160\" y=\"125.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Water flows into the inlet and is trapped when</text><text x=\"160\" y=\"138.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">the gate closes</text><line x1=\"160\" y1=\"149\" x2=\"160\" y2=\"156\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 161 L163.5 155 L156.5 155 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"162\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(253, 200, 48,0.16)\" stroke=\"#FDC830\" stroke-width=\"1.2\"/><text x=\"160\" y=\"178.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Tide falls outside</text><text x=\"160\" y=\"190.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Trapped water flows back to the sea through a</text><text x=\"160\" y=\"203.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">pipe</text><line x1=\"160\" y1=\"214\" x2=\"160\" y2=\"221\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 226 L163.5 220 L156.5 220 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"227\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"160\" y=\"243.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Turbine</text><text x=\"160\" y=\"255.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">The flowing water drives a power-generating</text><text x=\"160\" y=\"268.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">turbine</text></svg></div><div class=\"diagram-caption\">Using the tides to generate electricity</div></div><div class=\"sec\">Conservation of energy</div><div class=\"pt\">Twin approach: promote <b>energy conservation</b> and increase the use of <b>renewable</b> sources.</div><div class=\"pt\">Use public transport, switch off electricity when not in use, use power-saving devices and non-conventional sources — <b>“energy saved is energy produced”</b>.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ Quick Glossary</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Term</th><th>Meaning</th></tr><tr><td>Mineral</td><td>Homogenous, naturally occurring substance with a definable internal structure</td></tr><tr><td>Ore</td><td>Accumulation of a mineral mixed with other elements, worth mining</td></tr><tr><td>Veins / Lodes</td><td>Small / large occurrences of minerals in cracks and faults of rocks</td></tr><tr><td>Placer deposits</td><td>Minerals in alluvial sands of valleys and hill bases</td></tr><tr><td>Ferrous</td><td>Minerals containing iron</td></tr><tr><td>Metallurgical coal</td><td>High-grade bituminous coal used in blast furnaces</td></tr><tr><td>Anticline</td><td>An upfold in rock layers where oil and gas can be trapped</td></tr><tr><td>Nodal industry</td><td>An industry on which many other industries depend</td></tr><tr><td>Photovoltaic</td><td>Technology converting sunlight directly into electricity</td></tr><tr><td>Geothermal energy</td><td>Energy from the heat of the earth's interior</td></tr></table></div></div>\n  </div>\n\n</div>",
+  "htmlExercises": {
+    "sg5-ex-all": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(253, 200, 48, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FDC830; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FDC830; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFF3C4; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFF3C4; font-weight: 700; }\n  .hl { color: #FDC830; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FDC830; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FDC830; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(253, 200, 48, 0.10); border: 1.5px dashed #FDC830; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FDC830; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(253, 200, 48, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(253, 200, 48, 0.18); border: 1px solid #FDC830; color: #FFF3C4; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(253, 200, 48, 0.2); color: #FFF3C4; }\n  .q-card .q-text, .q-card .sub-q { color: #FDC830 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Multiple choice questions.<br/>(i) Which one of the following minerals is formed by decomposition of rocks, leaving a residual mass of weathered material?<br/>(a) coal&nbsp;&nbsp; (b) bauxite&nbsp;&nbsp; (c) gold&nbsp;&nbsp; (d) zinc<br/>(ii) Koderma, in Jharkhand is the leading producer of which one of the following minerals?<br/>(a) bauxite&nbsp;&nbsp; (b) mica&nbsp;&nbsp; (c) iron ore&nbsp;&nbsp; (d) copper<br/>(iii) Minerals are deposited and accumulated in the stratas of which of the following rocks?<br/>(a) sedimentary rocks&nbsp;&nbsp; (b) metamorphic rocks&nbsp;&nbsp; (c) igneous rocks&nbsp;&nbsp; (d) none of the above<br/>(iv) Which one of the following minerals is contained in the Monazite sand?<br/>(a) oil&nbsp;&nbsp; (b) uranium&nbsp;&nbsp; (c) thorium&nbsp;&nbsp; (d) coal</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">(i) <b>(b) bauxite</b></div><div class=\"pt\">(ii) <b>(b) mica</b></div><div class=\"pt\">(iii) <b>(a) sedimentary rocks</b></div><div class=\"pt\">(iv) <b>(c) thorium</b></div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Answer the following questions in about 30 words.<br/>(i) Distinguish between the following in not more than 30 words:<br/>(a) Ferrous and non-ferrous minerals<br/>(b) Conventional and non-conventional sources of energy<br/>(ii) What is a mineral?<br/>(iii) How are minerals formed in igneous and metamorphic rocks?<br/>(iv) Why do we need to conserve mineral resources?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">(i)(a)</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Ferrous</th><th>Non-ferrous</th></tr><tr><td>Contain iron</td><td>Do not contain iron</td></tr><tr><td>Iron ore, manganese, nickel, cobalt</td><td>Copper, lead, tin, bauxite</td></tr></table></div><div class=\"sub-q\">(i)(b)</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Conventional</th><th>Non-conventional</th></tr><tr><td>In use for a long time; mostly exhaustible and polluting</td><td>Newer; mostly renewable and eco-friendly</td></tr><tr><td>Firewood, dung cake, coal, petroleum, natural gas, electricity</td><td>Solar, wind, tidal, geothermal, biogas, atomic energy</td></tr></table></div><div class=\"sub-q\">(ii)</div><div class=\"pt\">A mineral is a homogenous, naturally occurring substance with a definable internal structure (e.g. diamond, talc). Rocks are made of minerals.</div><div class=\"sub-q\">(iii)</div><div class=\"pt\">Minerals occur in cracks, crevices, faults or joints.</div><div class=\"pt\">Molten and gaseous minerals are forced upward through cavities and cool and solidify as they rise, forming smaller <b>veins</b> and larger <b>lodes</b> — e.g. tin, copper, zinc and lead.</div><div class=\"sub-q\">(iv)</div><div class=\"pt\">Minerals are finite and non-renewable; they take millions of years to form.</div><div class=\"pt\">Their rate of replenishment is infinitely small compared with present consumption; extraction from greater depths raises costs and lowers quality.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Answer the following questions in about 120 words.<br/>(i) Describe the distribution of coal in India.<br/>(ii) Why do you think that solar energy has a bright future in India?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">(i)</div><div class=\"pt\">Coal in India occurs in rock series of two main geological ages.</div><div class=\"pt\"><b>Gondwana coal</b> — a little over 200 million years old; the major metallurgical coal.</div><div class=\"pt\">It is found in the <b>Damodar valley</b> (West Bengal–Jharkhand) — Jharia, Raniganj and Bokaro are important coalfields.</div><div class=\"pt\">The <b>Godavari, Mahanadi, Son and Wardha</b> valleys also contain coal (e.g. Singareni, Talcher, Singrauli, Korba).</div><div class=\"pt\"><b>Tertiary coal</b> — about 55 million years old — occurs in the north-eastern states of Meghalaya, Assam, Arunachal Pradesh and Nagaland.</div><div class=\"pt\"><b>Lignite</b> (brown coal) reserves are at Neyveli in Tamil Nadu.</div><div class=\"pt\">Being bulky, coal is used near the coalfields, where heavy industries and thermal power stations are located.</div><div class=\"sub-q\">(ii)</div><div class=\"pt\">India is a <b>tropical country</b> with abundant sunshine for most of the year.</div><div class=\"pt\"><b>Photovoltaic technology</b> converts sunlight directly into electricity; big solar plants are being set up.</div><div class=\"pt\">It is ideal for <b>rural and remote areas</b> not connected to the grid.</div><div class=\"pt\">It reduces dependence on <b>firewood and dung cakes</b>, helping conserve forests and leaving dung for use as manure.</div><div class=\"pt\">It is renewable and non-polluting, and reduces dependence on costly fossil fuels.</div></div></div>\n  </div>\n\n</div>",
+    "sg5-ex-board": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(253, 200, 48, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FDC830; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FDC830; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFF3C4; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFF3C4; font-weight: 700; }\n  .hl { color: #FDC830; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FDC830; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FDC830; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(253, 200, 48, 0.10); border: 1.5px dashed #FDC830; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FDC830; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(253, 200, 48, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(253, 200, 48, 0.18); border: 1px solid #FDC830; color: #FFF3C4; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(253, 200, 48, 0.2); color: #FFF3C4; }\n  .q-card .q-text, .q-card .sub-q { color: #FDC830 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\"><div class=\"q-title\">✦ Section A: Very Short Answer (1 Mark)</div></div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Which is the finest iron ore?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Magnetite</b> (up to 70% iron).</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">What is rat-hole mining?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Mining of coal through long, narrow tunnels by family members, as in Jowai and Cherrapunjee (Meghalaya).</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Name the iron ore mine that is a 100% export unit.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Kudremukh</b> (Karnataka).</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">How much manganese is needed to make one tonne of steel?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Nearly <b>10 kg</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Which state is the largest producer of bauxite?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Odisha</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q6. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Where are the main lignite reserves of India?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">At <b>Neyveli</b>, Tamil Nadu.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q7. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Which is the oldest oil-producing state of India?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Assam</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q8. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Why is natural gas called an environment-friendly fuel?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Because of its low carbon dioxide emissions.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q9. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Name the pipeline linking Mumbai High with northern India.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">The <b>Hazira-Vijaipur-Jagdishpur (HVJ)</b> pipeline.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q10. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Where are India's experimental geothermal projects?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Parvati valley near <b>Manikarn</b> (HP) and <b>Puga valley</b> (Ladakh).</div></div></div>\n  </div>\n\n  <div class=\"q-card\"><div class=\"q-title\">✦ Section B: Short Answer (3 Marks)</div></div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q11. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">Why is mica an indispensable mineral? Name its main producing areas.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">It has excellent di-electric strength, low power loss factor, insulating properties and resistance to high voltage.</div><div class=\"pt\">So it is used widely in electric and electronic industries.</div><div class=\"pt\">Areas: Koderma-Gaya-Hazaribagh belt (Jharkhand), Ajmer (Rajasthan), Nellore (Andhra Pradesh).</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q12. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">Describe any three hazards of mining.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Dust and noxious fumes cause pulmonary diseases among miners.</div><div class=\"pt\">Collapsing mine roofs, inundation and fires in coal mines are a constant threat.</div><div class=\"pt\">Contamination of water and dumping of waste and slurry degrade land and pollute rivers.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q13. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">Why is aluminium an important metal?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">It combines the strength of metals like iron with extreme lightness.</div><div class=\"pt\">It has good conductivity and great malleability.</div><div class=\"pt\">It is obtained from bauxite, found in the Amarkantak plateau, Maikal hills and Odisha (Panchpatmali).</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q14. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">How is biogas useful in rural areas?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Made from shrubs, farm waste and animal and human waste; it has higher thermal efficiency than kerosene, dung cake and charcoal.</div><div class=\"pt\">Gobar gas plants provide energy and improved quality of manure.</div><div class=\"pt\">They prevent the loss of trees and manure caused by burning firewood and dung cakes.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q15. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">How can we conserve energy resources?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Use public transport instead of individual vehicles.</div><div class=\"pt\">Switch off electricity when not in use and use power-saving devices.</div><div class=\"pt\">Use non-conventional sources of energy — energy saved is energy produced.</div></div></div>\n  </div>\n\n  <div class=\"q-card\"><div class=\"q-title\">✦ Section C: Long Answer (5 Marks)</div></div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q16. <span class=\"badge\">5 Marks</span></div>\n    <div class=\"q-text\">Describe the major iron ore belts of India.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Odisha–Jharkhand:</span> high-grade haematite at Badampahar (Mayurbhanj, Kendujhar) and Gua and Noamundi (Singhbhum).</div><div class=\"pt\"><span class=\"lbl\">Durg–Bastar–Chandrapur:</span> Bailadila hills with 14 deposits of super high-grade haematite; exported via Visakhapatnam to Japan and South Korea.</div><div class=\"pt\"><span class=\"lbl\">Ballari–Chitradurga–Chikkamagaluru–Tumakuru:</span> Kudremukh — a 100% export unit; ore sent as slurry by pipeline to a port near Mangaluru.</div><div class=\"pt\"><span class=\"lbl\">Maharashtra–Goa:</span> Goa and Ratnagiri; ore of lower quality, exported through Marmagao.</div><div class=\"pt\">Magnetite (up to 70% iron) and haematite (50–60%) are the main ores.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q17. <span class=\"badge\">5 Marks</span></div>\n    <div class=\"q-text\">Explain the occurrence and distribution of petroleum and natural gas in India.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Most petroleum occurs in anticlines and fault traps in rocks of the tertiary age, where oil is trapped in porous rock beneath non-porous layers; gas lies above the oil.</div><div class=\"pt\">Mumbai High, Gujarat (Ankleshwar) and Assam (Digboi, Naharkatiya, Moran-Hugrijan) are the major producing areas.</div><div class=\"pt\">Natural gas reserves are in the Krishna-Godavari basin, Mumbai High, the Gulf of Cambay and the Andaman and Nicobar Islands.</div><div class=\"pt\">The HVJ pipeline links Mumbai High and Bassien with industries in western and northern India.</div><div class=\"pt\">Natural gas is an environment-friendly fuel and an industrial raw material.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q18. <span class=\"badge\">4 Marks</span></div>\n    <div class=\"q-text\"><b>Source-based:</b> Read the source and answer the questions.<br/><i>“India is a tropical country. It has enormous possibilities of tapping solar energy. Photovoltaic technology converts sunlight directly into electricity. Solar energy is fast becoming popular in rural and remote areas.”</i><br/>(i) What is photovoltaic technology? (1)<br/>(ii) Why does India have great potential for solar energy? (1)<br/>(iii) How will solar energy help rural households and the environment? (2)</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">(i)</div><div class=\"pt\">Technology that converts sunlight directly into electricity.</div><div class=\"sub-q\">(ii)</div><div class=\"pt\">India is a tropical country with abundant sunshine.</div><div class=\"sub-q\">(iii)</div><div class=\"pt\">It will reduce dependence on firewood and dung cakes, conserving forests.</div><div class=\"pt\">Dung can then be used as manure, improving agriculture.</div></div></div>\n  </div>\n\n</div>"
   },
-  exercises: [
+  "introduction": "Think about the toothbrush you use, the bus you ride, and the electricity that powers your phone. All of these depend heavily on minerals extracted from the earth. Minerals are an indispensable part of our lives, and in this chapter, we will learn about their occurrence, classification, and conservation.",
+  "definitions": [],
+  "keyPoints": [],
+  "formulas": [],
+  "crux": [],
+  "mcqs": [
     {
-      id: "sg5-ex-all",
-      name: "Exercise Questions",
-      questions: [],
-    },
-  ],
-  examples: [],
-  mcqs: [
-    {
-      id: "sg5-mcq-1",
-      question:
-        "Which one of the following minerals is formed by decomposition of rocks, leaving a residual mass of weathered material?",
-      options: ["coal", "bauxite", "gold", "zinc"],
-      correctAnswer: "b",
-    },
-    {
-      id: "sg5-mcq-2",
-      question:
-        "Koderma, in Jharkhand is the leading producer of which one of the following minerals?",
-      options: ["bauxite", "mica", "iron ore", "copper"],
-      correctAnswer: "b",
-    },
-    {
-      id: "sg5-mcq-3",
-      question:
-        "Minerals are deposited and accumulated in the stratas of which of the following rocks?",
-      options: [
-        "sedimentary rocks",
-        "metamorphic rocks",
-        "igneous rocks",
-        "none of the above",
+      "id": "sg5-mcq-1",
+      "question": "<div style='text-align: justify;'>Which mineral is formed by decomposition of rocks, leaving a residual mass of weathered material?</div>",
+      "options": [
+        "A):   Coal",
+        "B):   Gold",
+        "C):   Bauxite",
+        "D):   Zinc"
       ],
-      correctAnswer: "a",
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Bauxite forms from rocks rich in aluminium silicates.</div>"
     },
     {
-      id: "sg5-mcq-4",
-      question:
-        "Which one of the following minerals is contained in the Monazite sand?",
-      options: ["oil", "uranium", "thorium", "coal"],
-      correctAnswer: "c",
+      "id": "sg5-mcq-2",
+      "question": "<div style='text-align: justify;'>Koderma in Jharkhand is the leading producer of:</div>",
+      "options": [
+        "A):   Mica",
+        "B):   Bauxite",
+        "C):   Iron ore",
+        "D):   Copper"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Koderma-Gaya-Hazaribagh is the mica belt.</div>"
     },
     {
-      id: "sg5-mcq-5",
-      question:
-        "Which of the following minerals is indispensable for electrical and electronic industries?",
-      options: ["Iron ore", "Manganese", "Bauxite", "Mica"],
-      correctAnswer: "d",
+      "id": "sg5-mcq-3",
+      "question": "<div style='text-align: justify;'>Minerals are deposited and accumulated in the strata of:</div>",
+      "options": [
+        "A):   None of these",
+        "B):   Metamorphic rocks",
+        "C):   Igneous rocks",
+        "D):   Sedimentary rocks"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Coal and some iron ore occur in beds or layers.</div>"
     },
     {
-      id: "sg5-mcq-6",
-      question: "Which state is the largest producer of Bauxite in India?",
-      options: ["Odisha", "Gujarat", "Jharkhand", "Chhattisgarh"],
-      correctAnswer: "a",
+      "id": "sg5-mcq-4",
+      "question": "<div style='text-align: justify;'>Monazite sand contains:</div>",
+      "options": [
+        "A):   Oil",
+        "B):   Thorium",
+        "C):   Uranium",
+        "D):   Coal"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Monazite sands of Kerala are rich in thorium.</div>"
     },
     {
-      id: "sg5-mcq-7",
-      question: "The highest quality hard coal is called:",
-      options: ["Peat", "Lignite", "Bituminous", "Anthracite"],
-      correctAnswer: "d",
+      "id": "sg5-mcq-5",
+      "question": "<div style='text-align: justify;'>Gold, silver, tin and platinum found in sands of valley floors are called:</div>",
+      "options": [
+        "A):   Placer deposits",
+        "B):   Lodes",
+        "C):   Veins",
+        "D):   Residual deposits"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>They are not corroded by water.</div>"
     },
     {
-      id: "sg5-mcq-8",
-      question:
-        "Which of the following is a non-conventional source of energy?",
-      options: ["Coal", "Petroleum", "Natural Gas", "Solar Energy"],
-      correctAnswer: "d",
+      "id": "sg5-mcq-6",
+      "question": "<div style='text-align: justify;'>Which of these is a ferrous mineral?</div>",
+      "options": [
+        "A):   Copper",
+        "B):   Bauxite",
+        "C):   Manganese",
+        "D):   Lead"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Ferrous minerals contain iron.</div>"
     },
     {
-      id: "sg5-mcq-9",
-      question: "Khetri mines in Rajasthan are famous for the production of:",
-      options: ["Copper", "Gold", "Iron ore", "Mica"],
-      correctAnswer: "a",
+      "id": "sg5-mcq-7",
+      "question": "<div style='text-align: justify;'>The finest iron ore with up to 70% iron is:</div>",
+      "options": [
+        "A):   Haematite",
+        "B):   Magnetite",
+        "C):   Limonite",
+        "D):   Siderite"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>It has excellent magnetic qualities.</div>"
     },
     {
-      id: "sg5-mcq-10",
-      question: "Which is the oldest oil-producing state in India?",
-      options: ["Gujarat", "Maharashtra", "Assam", "Tamil Nadu"],
-      correctAnswer: "c",
+      "id": "sg5-mcq-8",
+      "question": "<div style='text-align: justify;'>The Bailadila hills are known for:</div>",
+      "options": [
+        "A):   Coal",
+        "B):   Bauxite",
+        "C):   Mica",
+        "D):   Super high-grade haematite"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>They are in Bastar district, Chhattisgarh.</div>"
     },
+    {
+      "id": "sg5-mcq-9",
+      "question": "<div style='text-align: justify;'>Kudremukh iron ore is transported as slurry to a port near:</div>",
+      "options": [
+        "A):   Visakhapatnam",
+        "B):   Kandla",
+        "C):   Marmagao",
+        "D):   Mangaluru"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Kudremukh is a 100% export unit.</div>"
+    },
+    {
+      "id": "sg5-mcq-10",
+      "question": "<div style='text-align: justify;'>Nearly how much manganese is needed to make one tonne of steel?</div>",
+      "options": [
+        "A):   1 kg",
+        "B):   10 kg",
+        "C):   100 kg",
+        "D):   1 tonne"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Manganese is also used in paints and bleaching powder.</div>"
+    },
+    {
+      "id": "sg5-mcq-11",
+      "question": "<div style='text-align: justify;'>Khetri mines in Rajasthan are known for:</div>",
+      "options": [
+        "A):   Mica",
+        "B):   Bauxite",
+        "C):   Copper",
+        "D):   Iron ore"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Balaghat (MP) is another copper mine.</div>"
+    },
+    {
+      "id": "sg5-mcq-12",
+      "question": "<div style='text-align: justify;'>Panchpatmali deposits in Koraput (Odisha) are of:</div>",
+      "options": [
+        "A):   Bauxite",
+        "B):   Coal",
+        "C):   Manganese",
+        "D):   Mica"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Odisha is the largest bauxite producer.</div>"
+    },
+    {
+      "id": "sg5-mcq-13",
+      "question": "<div style='text-align: justify;'>Limestone is the basic raw material for the:</div>",
+      "options": [
+        "A):   Steel industry",
+        "B):   Paper industry",
+        "C):   Textile industry",
+        "D):   Cement industry"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>It is also used in smelting iron ore.</div>"
+    },
+    {
+      "id": "sg5-mcq-14",
+      "question": "<div style='text-align: justify;'>The highest quality hard coal is:</div>",
+      "options": [
+        "A):   Anthracite",
+        "B):   Lignite",
+        "C):   Bituminous",
+        "D):   Peat"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Peat has the lowest carbon content.</div>"
+    },
+    {
+      "id": "sg5-mcq-15",
+      "question": "<div style='text-align: justify;'>Main lignite reserves of India are at:</div>",
+      "options": [
+        "A):   Jharia",
+        "B):   Raniganj",
+        "C):   Neyveli",
+        "D):   Talcher"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Lignite is used to generate electricity.</div>"
+    },
+    {
+      "id": "sg5-mcq-16",
+      "question": "<div style='text-align: justify;'>Tertiary coal deposits are found mainly in:</div>",
+      "options": [
+        "A):   Damodar valley",
+        "B):   North-eastern states",
+        "C):   Godavari valley",
+        "D):   Son valley"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>They are about 55 million years old.</div>"
+    },
+    {
+      "id": "sg5-mcq-17",
+      "question": "<div style='text-align: justify;'>Digboi oil field is in:</div>",
+      "options": [
+        "A):   Gujarat",
+        "B):   Assam",
+        "C):   Maharashtra",
+        "D):   Rajasthan"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Assam is the oldest oil-producing state.</div>"
+    },
+    {
+      "id": "sg5-mcq-18",
+      "question": "<div style='text-align: justify;'>The most important oil field of Gujarat is:</div>",
+      "options": [
+        "A):   Mumbai High",
+        "B):   Naharkatiya",
+        "C):   Digboi",
+        "D):   Ankleshwar"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Mumbai High is offshore of Maharashtra.</div>"
+    },
+    {
+      "id": "sg5-mcq-19",
+      "question": "<div style='text-align: justify;'>Large reserves of natural gas have been found in the:</div>",
+      "options": [
+        "A):   Damodar basin",
+        "B):   Narmada basin",
+        "C):   Krishna-Godavari basin",
+        "D):   Ganga basin"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Gas is also found with Mumbai High oil.</div>"
+    },
+    {
+      "id": "sg5-mcq-20",
+      "question": "<div style='text-align: justify;'>The largest wind farm cluster in India is located in:</div>",
+      "options": [
+        "A):   Tamil Nadu",
+        "B):   Gujarat",
+        "C):   Rajasthan",
+        "D):   Kerala"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>It stretches from Nagarcoil to Madurai.</div>"
+    },
+    {
+      "id": "sg5-mcq-21",
+      "question": "<div style='text-align: justify;'>Puga valley in Ladakh is known for an experimental project of:</div>",
+      "options": [
+        "A):   Tidal energy",
+        "B):   Solar energy",
+        "C):   Geothermal energy",
+        "D):   Wind energy"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Another is in the Parvati valley near Manikarn.</div>"
+    },
+    {
+      "id": "sg5-mcq-22",
+      "question": "<div style='text-align: justify;'>Arrange types of coal in increasing order of quality: (i) Bituminous (ii) Peat (iii) Anthracite (iv) Lignite</div>",
+      "options": [
+        "A):   (ii), (iv), (i), (iii)",
+        "B):   (iv), (ii), (i), (iii)",
+        "C):   (ii), (i), (iv), (iii)",
+        "D):   (ii), (iv), (iii), (i)"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Peat → lignite → bituminous → anthracite.</div>"
+    },
+    {
+      "id": "sg5-mcq-23",
+      "question": "<div style='text-align: justify;'>Match: (P) Mica (Q) Copper (R) Bauxite (S) Lignite — with (1) Neyveli (2) Koderma (3) Khetri (4) Koraput</div>",
+      "options": [
+        "A):   P-1, Q-3, R-4, S-2",
+        "B):   P-3, Q-2, R-1, S-4",
+        "C):   P-2, Q-4, R-3, S-1",
+        "D):   P-2, Q-3, R-4, S-1"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Each mineral matches a leading area.</div>"
+    },
+    {
+      "id": "sg5-mcq-24",
+      "question": "<div style='text-align: justify;'>Assertion (A): Thermal power stations are located on or near coalfields. Reason (R): Coal is bulky and loses weight on use as it is reduced to ash.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Carrying bulky coal over long distances is costly.</div>"
+    },
+    {
+      "id": "sg5-mcq-25",
+      "question": "<div style='text-align: justify;'>Assertion (A): Haematite has a higher iron content than magnetite. Reason (R): Haematite is the most important industrial iron ore by quantity used.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Magnetite has up to 70% iron; haematite has 50–60%.</div>"
+    }
   ],
+  "summary": [],
+  "exercises": [
+    {
+      "id": "sg5-ex-all",
+      "name": "Exercise",
+      "questions": []
+    },
+    {
+      "id": "sg5-ex-board",
+      "name": "Board Qs",
+      "questions": []
+    }
+  ],
+  "examples": []
 };
