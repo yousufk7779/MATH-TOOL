@@ -1,309 +1,334 @@
 import { ChapterContent } from "../types";
 
-const themeColor = "#66BB6A"; // Green color for Geography Chapter 1
-
 export const sstGeo1: ChapterContent = {
-  id: "sst-geo-1",
-  number: 1,
-  title: "Resources and Development",
-  introduction:
-    "Everything available in our environment that can be used to satisfy our needs is a resource. But wait! Is a piece of rock a resource? Only if we have the technology to use it, the money to afford it, and society's permission to use it. Let's learn how we categorize resources and how important it is to plan their development.",
-  definitions: [
-    {
-      term: "Resource",
-      description:
-        "Everything available in our environment which can be used to satisfy our needs, provided it is technologically accessible, economically feasible, and culturally acceptable.",
-    },
-    {
-      term: "Renewable Resources",
-      description:
-        "Resources which can be renewed or reproduced by physical, chemical, or mechanical processes, such as solar and wind energy, water, forests, and wildlife.",
-    },
-    {
-      term: "Non-Renewable Resources",
-      description:
-        "Resources which occur over a very long geological time and take millions of years in their formation. Once exhausted, they cannot be easily replenished, such as coal and metals.",
-    },
-    {
-      term: "Sustainable Development",
-      description:
-        "Development that meets the needs of the present without compromising the ability of future generations to meet their own needs, without causing damage to the environment.",
-    },
-    {
-      term: "Gully Erosion",
-      description:
-        "The process where running water cuts through clayey soils, forming deep channels called gullies, making the land unfit for cultivation (referred to as badland).",
-    },
-    {
-      term: "Sheet Erosion",
-      description:
-        "When water flows as a sheet over large areas down a slope, washing away the topsoil over a wide area.",
-    },
-  ],
-  keyPoints: [
-    "Resources are classified on the basis of origin (biotic/abiotic), exhaustibility (renewable/non-renewable), ownership (individual/community/national/international), and status of development (potential/developed/stock/reserves).",
-    "Indiscriminate use of resources by humans has led to global ecological crises like global warming, ozone layer depletion, environmental pollution, and land degradation.",
-    "Resource planning is essential in a country like India which has enormous diversity in resource availability. Some regions are rich in certain resources but deficient in others.",
-    "The first International Earth Summit was held in Rio de Janeiro, Brazil in 1992, where world leaders signed Agenda 21 to achieve global sustainable development.",
-    "India has a variety of relief features: 43% plains (agriculture and industry), 30% mountains (tourism and perennial rivers), and 27% plateaus (rich reserves of minerals, fossil fuels, and forests).",
-    "Land degradation is caused by mining (Jharkhand, MP, Chhattisgarh), overgrazing (Gujarat, Rajasthan, Maharashtra), and over-irrigation (Punjab, Haryana, Western UP).",
-    "India has diverse soil types: Alluvial soil (most fertile and widespread), Black soil (ideal for cotton, also called Regur soil), Red and Yellow soil, Laterite soil, Arid soil, and Forest/Mountain soil.",
-  ],
-  formulas: [],
-  crux: [
-    "Resources must be technologically, economically, and culturally viable.",
-    "Rio Summit 1992 focused on Sustainable Development and Agenda 21.",
-    "India's land features: 43% plains, 30% mountains, 27% plateau.",
-    "Over-irrigation in Punjab and mining in Jharkhand cause land degradation.",
-    "Alluvial soil is most fertile; Black soil (Regur) is perfect for cotton.",
-    "Terrace farming and shelterbelts are key to stopping soil erosion in hills.",
-  ],
-  summary: [
-    "Resources are essential for human survival and economic development. Categorizing resources and planning their sustainable use is vital for ecological balance.",
-    "Land is a limited and highly valuable resource. Unplanned human actions have led to land degradation, which can be checked by reclaiming wastelands and planning land usage.",
-    "Soil is a vital renewable natural resource that takes millions of years to form. Diverse relief features, climate, and parent rocks have produced various soil types in India, which require dedicated soil conservation methods like contour plowing and terrace farming to prevent erosion.",
-  ],
-  isHtmlView: true,
-  htmlOverview: `
-        <div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">
-            <p style="line-height: 1.6; font-size: 17px;">Everything available in our environment that can be used to satisfy our needs is a resource. But wait! Is a piece of rock a resource? Only if we have the technology to use it, the money to afford it, and society's permission to use it. Let's learn how we categorize resources and how important it is to plan their development.</p>
-            
-            <h3 style="color: ${themeColor}; text-align: left; margin-top: 20px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px;">Key Definitions</h3>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Resource:</b> Everything available in our environment which can be used to satisfy our needs, provided it is technologically accessible, economically feasible, and culturally acceptable.</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Renewable Resources:</b> Resources which can be renewed or reproduced by physical, chemical, or mechanical processes, such as solar and wind energy, water, forests, and wildlife.</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Non-Renewable Resources:</b> Resources which occur over a very long geological time and take millions of years in their formation. Once exhausted, they cannot be easily replenished, such as coal and metals.</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Sustainable Development:</b> Development that meets the needs of the present without compromising the ability of future generations to meet their own needs, without causing damage to the environment.</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Gully Erosion:</b> The process where running water cuts through clayey soils, forming deep channels called gullies, making the land unfit for cultivation (referred to as badland).</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Sheet Erosion:</b> When water flows as a sheet over large areas down a slope, washing away the topsoil over a wide area.</p>
-
-            <h3 style="color: ${themeColor}; text-align: left; margin-top: 25px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px;">Important Points</h3>
-            <ul style="text-align: left; padding-left: 20px; line-height: 1.6; font-size: 16px;">
-                <li style="margin-bottom: 8px;">Resources are classified on the basis of origin (biotic/abiotic), exhaustibility (renewable/non-renewable), ownership (individual/community/national/international), and status of development (potential/developed/stock/reserves).</li>
-                <li style="margin-bottom: 8px;">Unplanned and indiscriminate use of resources has led to global ecological crises like global warming, ozone layer depletion, environmental pollution, and land degradation.</li>
-                <li style="margin-bottom: 8px;">Resource planning is essential in India due to enormous diversity in resource availability. Some regions are self-sufficient while others face acute shortage of vital resources.</li>
-                <li style="margin-bottom: 8px;">The first International Earth Summit was held in Rio de Janeiro, Brazil in 1992, where world leaders signed <b>Agenda 21</b> to achieve global sustainable development.</li>
-                <li style="margin-bottom: 8px;">India has a variety of relief features: 43% plains (agriculture and industry), 30% mountains (tourism and perennial rivers), and 27% plateaus (rich reserves of minerals, fossil fuels, and forests).</li>
-                <li style="margin-bottom: 8px;">Land degradation is caused by mining (Jharkhand, MP, Chhattisgarh), overgrazing (Gujarat, Rajasthan, Maharashtra), and over-irrigation (Punjab, Haryana, Western UP).</li>
-                <li style="margin-bottom: 8px;">India has diverse soil types: Alluvial soil (most fertile and widespread), Black soil (ideal for cotton, also called Regur soil), Red and Yellow soil, Laterite soil, Arid soil, and Forest/Mountain soil.</li>
-                <li style="margin-bottom: 8px;">Soil conservation methods in hilly areas include contour plowing, terrace farming, strip cropping, and planting shelterbelts.</li>
-            </ul>
-
-            <h3 style="color: ${themeColor}; text-align: left; margin-top: 25px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px;">Summary</h3>
-            <p style="line-height: 1.6; font-size: 16px;">Resources are the backbone of any nation's development. Proper resource planning is crucial to prevent over-exploitation and ensure sustainable development for future generations. India possesses diverse relief features and soil resources, but issues like land degradation and soil erosion require immediate conservation measures like terrace farming and contour plowing to preserve fertility.</p>
-        </div>
-    `,
-  htmlExercises: {
-    "sg1-ex-all": `
-            <div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">
-                <!-- 1. Multiple Choice Questions -->
-                <div style="margin-bottom: 25px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 12px; font-size: 18px;">1. Multiple choice questions.</p>
-                    
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: #fff; font-weight: bold; font-size: 15px;">(i) Which one of the following type of resource is iron ore?</p>
-                        <p style="color: #E0E0E0; font-size: 15px; margin: 4px 0 0 10px;">
-                            (a) Renewable &nbsp;&nbsp; (b) Biotic &nbsp;&nbsp; (c) Flow &nbsp;&nbsp; <b style="color: ${themeColor};">(d) Non-renewable</b>
-                        </p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: #fff; font-weight: bold; font-size: 15px;">(ii) Under which of the following type of resource tidal energy cannot be put?</p>
-                        <p style="color: #E0E0E0; font-size: 15px; margin: 4px 0 0 10px;">
-                            (a) Replenishable &nbsp;&nbsp; <b style="color: ${themeColor};">(b) Human-made</b> &nbsp;&nbsp; (c) Abiotic &nbsp;&nbsp; (d) Non-recyclable
-                        </p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: #fff; font-weight: bold; font-size: 15px;">(iii) Which one of the following is the main cause of land degradation in Punjab?</p>
-                        <p style="color: #E0E0E0; font-size: 15px; margin: 4px 0 0 10px;">
-                            (a) Intensive cultivation &nbsp;&nbsp; (b) Deforestation &nbsp;&nbsp; <b style="color: ${themeColor};">(c) Over irrigation</b> &nbsp;&nbsp; (d) Overgrazing
-                        </p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: #fff; font-weight: bold; font-size: 15px;">(iv) In which one of the following states is terrace cultivation practised?</p>
-                        <p style="color: #E0E0E0; font-size: 15px; margin: 4px 0 0 10px;">
-                            (a) Punjab &nbsp;&nbsp; (b) Plains of Uttar Pradesh &nbsp;&nbsp; (c) Haryana &nbsp;&nbsp; <b style="color: ${themeColor};">(d) Uttarakhand</b>
-                        </p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: #fff; font-weight: bold; font-size: 15px;">(v) In which of the following states black soil is predominantly found?</p>
-                        <p style="color: #E0E0E0; font-size: 15px; margin: 4px 0 0 10px;">
-                            (a) Haryana &nbsp;&nbsp; <b style="color: ${themeColor};">(b) Maharashtra</b> &nbsp;&nbsp; (c) Rajasthan &nbsp;&nbsp; (d) Jharkhand
-                        </p>
-                    </div>
-                </div>
-
-                <!-- 2. Answer the following questions in about 30 words -->
-                <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 12px; font-size: 18px;">2. Answer the following questions in about 30 words.</p>
-                    
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: ${themeColor}; font-weight: bold; font-size: 16px;">(i) Name three states having black soil and the crop which is mainly grown in it.</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                            Black soil (also known as <b>Regur soil</b>) is predominantly found in the states of <b>Maharashtra</b>, <b>Gujarat</b>, and <b>Madhya Pradesh</b>. The primary crop grown in this soil is <b>cotton</b>, which is why it is also famously known as black cotton soil.
-                        </p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: ${themeColor}; font-weight: bold; font-size: 16px;">(ii) What type of soil is found in the river deltas of the eastern coast? Give three main features of this type of soil.</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                            The river deltas of the eastern coast (Mahanadi, Godavari, Krishna, and Kaveri) contain highly fertile <b>Alluvial soil</b>. 
-                            <br/><b style="color: ${themeColor};">Key Features:</b>
-                            <br/>• <b>High Fertility:</b> Rich in potash, phosphoric acid, and lime, making it perfect for crops like paddy, wheat, and sugarcane.
-                            <br/>• <b>Composition:</b> Formed of varying proportions of sand, silt, and clay.
-                            <br/>• <b>Classification:</b> Classified as old alluvial (<b>Bangar</b>, coarser and containing Kankar nodules) and new alluvial (<b>Khadar</b>, finer and more fertile).
-                        </p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: ${themeColor}; font-weight: bold; font-size: 16px;">(iii) What steps can be taken to control soil erosion in the hilly areas?</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                            To control soil erosion in hilly areas, the following steps can be taken:
-                            <br/>• <b>Contour Ploughing:</b> Ploughing along contour lines creates natural barriers to the flow of water down the slope.
-                            <br/>• <b>Terrace Farming:</b> Cutting steps on slopes to form flat terraces reduces the speed of water runoff.
-                            <br/>• <b>Strip Cropping & Shelterbelts:</b> Planting strips of grass between crops to break wind force, and growing rows of trees (shelterbelts) to stabilize the soil.
-                        </p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: ${themeColor}; font-weight: bold; font-size: 16px;">(iv) What are the biotic and abiotic resources? Give some examples.</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                            • <b>Biotic Resources:</b> Resources obtained from the biosphere that possess life. <i>Examples:</i> Human beings, plants, animals, birds, and marine organisms.
-                            <br/>• <b>Abiotic Resources:</b> Resources that are composed of non-living, physical elements. <i>Examples:</i> Rocks, soil, metals, water, and sunlight.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- 3. Answer the following questions in about 120 words -->
-                <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 12px; font-size: 18px;">3. Answer the following questions in about 120 words.</p>
-                    
-                    <div style="margin-left: 10px; margin-bottom: 22px;">
-                        <p style="color: ${themeColor}; font-weight: bold; font-size: 16px;">(i) Explain land use pattern in India and why has the land under forest not increased much since 1960-61?</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                            <b>Land Use Pattern in India:</b> 
-                            India's geographical land usage is divided into forest cover, area for non-agricultural uses, wasteland, permanent pasture, and net sown area. Currently, about 54% of the reporting area is net sown area. However, pasture land has decreased, posing a threat to livestock.
-                            <br/><br/>
-                            <b>Reasons Forest Area has not increased much since 1960-61:</b>
-                            <br/>1. <b>Population & Agricultural Expansion:</b> The huge rise in population increased food demand, forcing the conversion of forests into agricultural fields.
-                            <br/>2. <b>Industrialization & Urbanization:</b> Forest lands were cleared to build houses, factories, highways, and smart cities.
-                            <br/>3. <b>Development Projects:</b> Large-scale projects like river dams have submerged thousands of hectares of forest lands.
-                            <br/>4. <b>Mining Activities:</b> Open-cast mining in states like Jharkhand, Odisha, and Chhattisgarh has cleared dense forests, leaving behind degraded, barren land.
-                        </p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: ${themeColor}; font-weight: bold; font-size: 16px;">(ii) How have technical and economic development led to more consumption of resources?</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                            Technical and economic progress have directly caused an exponential rise in resource consumption due to the following factors:
-                            <br/>• <b>Efficient Extraction:</b> Advanced technology allows deep mining and drilling to extract minerals and fossil fuels that were previously inaccessible.
-                            <br/>• <b>Mass Production:</b> Modern machines have replaced manual labor, allowing rapid, large-scale production. This requires huge quantities of raw materials and energy (coal, petroleum).
-                            <br/>• <b>Increased Purchasing Power:</b> Economic development raises per-capita incomes and improves lifestyles, which fuels high consumerism. People demand more electronics, vehicles, and luxury items, all requiring mineral resources.
-                            <br/>• <b>Urban Development:</b> Growth of cities and infrastructure (dams, concrete roads) consumes immense amounts of sand, wood, cement, and metal.
-                            <br/>• <b>Commercial Agriculture:</b> High-tech agricultural machinery and deep tubewells have led to over-utilization of groundwater and soil.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        `,
+  "id": "sst-geo-1",
+  "number": 1,
+  "title": "Resources and Development",
+  "isHtmlView": true,
+  "htmlOverview": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(102, 187, 106, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #66BB6A; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #66BB6A; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #C8E6C9; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #C8E6C9; font-weight: 700; }\n  .hl { color: #66BB6A; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #66BB6A; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #66BB6A; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(102, 187, 106, 0.10); border: 1.5px dashed #66BB6A; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #66BB6A; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(102, 187, 106, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(102, 187, 106, 0.18); border: 1px solid #66BB6A; color: #C8E6C9; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(102, 187, 106, 0.2); color: #C8E6C9; }\n  .q-card .q-text, .q-card .sub-q { color: #66BB6A !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 1. What is a Resource?</div><div class=\"sol-step\"><div class=\"rev\">Everything available in our environment which can be used to satisfy our needs, provided it is <b>technologically accessible, economically feasible and culturally acceptable</b>, can be termed a <span class=\"hl\">resource</span>.</div><div class=\"pt\">Resources are a function of human activities; humans transform materials in the environment into resources.</div><div class=\"pt\">There is an interdependent relationship between <b>nature, technology and institutions</b>.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 242\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"242\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#66BB6A\" text-anchor=\"middle\" font-weight=\"700\">Classification of Resources</text><rect x=\"60\" y=\"30\" width=\"200\" height=\"39\" rx=\"6\" fill=\"rgba(102, 187, 106,0.16)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"160\" y=\"46.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Resources</text><text x=\"160\" y=\"58.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Classified on four bases</text><line x1=\"160\" y1=\"70\" x2=\"160\" y2=\"77\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 82 L163.5 76 L156.5 76 Z\" fill=\"#B0BEC5\"/><rect x=\"13\" y=\"84\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(102, 187, 106,0.16)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"84\" y=\"100.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">1. On the basis of</text><text x=\"84\" y=\"111.7\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">origin</text><text x=\"84\" y=\"123.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Biotic (plants, animals,</text><text x=\"84\" y=\"135.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">humans) and abiotic</text><text x=\"84\" y=\"146.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">(rocks, metals)</text><rect x=\"165\" y=\"84\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(102, 187, 106,0.16)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"236\" y=\"100.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">2. Exhaustibility</text><text x=\"236\" y=\"111.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Renewable (solar, wind,</text><text x=\"236\" y=\"123.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">water, forests) and</text><text x=\"236\" y=\"135.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">non-renewable (minerals,</text><text x=\"236\" y=\"146.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">fossil fuels)</text><rect x=\"13\" y=\"165\" width=\"142\" height=\"61\" rx=\"6\" fill=\"rgba(79,195,247,0.16)\" stroke=\"#4FC3F7\" stroke-width=\"1.2\"/><text x=\"84\" y=\"181.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">3. Ownership</text><text x=\"84\" y=\"192.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Individual,</text><text x=\"84\" y=\"204.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">community-owned, national</text><text x=\"84\" y=\"216.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">and international</text><rect x=\"165\" y=\"165\" width=\"142\" height=\"61\" rx=\"6\" fill=\"rgba(79,195,247,0.16)\" stroke=\"#4FC3F7\" stroke-width=\"1.2\"/><text x=\"236\" y=\"181.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">4. Status of</text><text x=\"236\" y=\"192.7\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">development</text><text x=\"236\" y=\"204.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Potential, developed,</text><text x=\"236\" y=\"216.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">stock and reserves</text></svg></div><div class=\"diagram-caption\">Four ways of classifying resources</div></div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Basis</th><th>Types and examples</th></tr><tr><td>Origin</td><td><b>Biotic:</b> from the biosphere, have life — humans, flora, fauna, fisheries, livestock. <b>Abiotic:</b> non-living — rocks, metals</td></tr><tr><td>Exhaustibility</td><td><b>Renewable:</b> can be renewed by physical, chemical or mechanical processes — solar, wind, water (flow), forests and wildlife (biological). <b>Non-renewable:</b> develop over millions of years — minerals and fossil fuels; metals are recyclable, fossil fuels are not</td></tr><tr><td>Ownership</td><td><b>Individual:</b> plots, houses, wells. <b>Community:</b> grazing grounds, burial grounds, village ponds, parks. <b>National:</b> minerals, water, forests, wildlife, land within political boundaries and the ocean up to 12 nautical miles (territorial water). <b>International:</b> oceanic resources beyond 200 nautical miles (Exclusive Economic Zone)</td></tr></table></div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 223\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"223\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#66BB6A\" text-anchor=\"middle\" font-weight=\"700\">Resources by Status of Development</text><rect x=\"13\" y=\"30\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(255,183,77,0.16)\" stroke=\"#FFB74D\" stroke-width=\"1.2\"/><text x=\"84\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Potential</text><text x=\"84\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Found but not yet used,</text><text x=\"84\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">e.g. wind and solar</text><text x=\"84\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">energy in Rajasthan and</text><text x=\"84\" y=\"92.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Gujarat</text><rect x=\"165\" y=\"30\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(102, 187, 106,0.16)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"236\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Developed</text><text x=\"236\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Surveyed; quality and</text><text x=\"236\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">quantity known; being</text><text x=\"236\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">used with available</text><text x=\"236\" y=\"92.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">technology</text><rect x=\"13\" y=\"111\" width=\"142\" height=\"84\" rx=\"6\" fill=\"rgba(148,163,184,0.13)\" stroke=\"#94A3B8\" stroke-width=\"1.2\"/><text x=\"84\" y=\"127.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Stock</text><text x=\"84\" y=\"138.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Can satisfy needs but we</text><text x=\"84\" y=\"150.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">lack the technology, e.g.</text><text x=\"84\" y=\"162.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">hydrogen in water as</text><text x=\"84\" y=\"173.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">energy</text><rect x=\"165\" y=\"111\" width=\"142\" height=\"84\" rx=\"6\" fill=\"rgba(79,195,247,0.16)\" stroke=\"#4FC3F7\" stroke-width=\"1.2\"/><text x=\"236\" y=\"127.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Reserves</text><text x=\"236\" y=\"138.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Subset of stock usable</text><text x=\"236\" y=\"150.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">with existing technology</text><text x=\"236\" y=\"162.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">but kept for the future,</text><text x=\"236\" y=\"173.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">e.g. water in dams,</text><text x=\"236\" y=\"185.5\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">forests</text><text x=\"160\" y=\"209\" font-size=\"9.5\" fill=\"#66BB6A\" text-anchor=\"middle\" font-weight=\"700\">Every reserve is a part of the stock</text></svg></div><div class=\"diagram-caption\">Potential, developed, stock and reserves</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 2. Development of Resources and Sustainable Development</div><div class=\"sol-step\"><div class=\"sec\">Problems of indiscriminate use</div><div class=\"pt\">Depletion of resources to satisfy the greed of a few individuals.</div><div class=\"pt\">Accumulation of resources in a few hands, dividing society into <b>haves and have-nots</b>.</div><div class=\"pt\">Global ecological crises — <b>global warming, ozone layer depletion, environmental pollution and land degradation</b>.</div><div class=\"rev\"><span class=\"hl\">Sustainable development</span> means development should take place without damaging the environment, and development in the present should not compromise the needs of future generations.</div><div class=\"exam\"><span class=\"exam-t\">📌 Rio de Janeiro Earth Summit, 1992</span><div>• In <b>June 1992</b>, more than 100 heads of state met at the first International Earth Summit (UN Conference on Environment and Development).</div><div>• They signed the Declaration on Global Climatic Change and Biological Diversity.</div><div>• They adopted <b>Agenda 21</b> — to combat environmental damage, poverty and disease through global cooperation; every local government should draw its own local Agenda 21.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 3. Resource Planning</div><div class=\"sol-step\"><div class=\"rev\">Planning is widely accepted for the judicious use of resources. It is essential in India, which has enormous diversity in the availability of resources.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Region</th><th>Rich in</th><th>Deficient in</th></tr><tr><td>Jharkhand, MP, Chhattisgarh</td><td>Minerals and coal</td><td>Other infrastructure</td></tr><tr><td>Arunachal Pradesh</td><td>Water resources</td><td>Infrastructural development</td></tr><tr><td>Rajasthan</td><td>Solar and wind energy</td><td>Water resources</td></tr><tr><td>Ladakh (cold desert)</td><td>Rich cultural heritage</td><td>Water, infrastructure and some vital minerals</td></tr></table></div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 245\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"245\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#66BB6A\" text-anchor=\"middle\" font-weight=\"700\">Resource Planning in India</text><rect x=\"30\" y=\"30\" width=\"260\" height=\"63\" rx=\"6\" fill=\"rgba(102, 187, 106,0.16)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"160\" y=\"46.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">1. Identification and inventory</text><text x=\"160\" y=\"58.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Surveying, mapping, qualitative and</text><text x=\"160\" y=\"71.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">quantitative estimation of resources in all</text><text x=\"160\" y=\"83.5\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">regions</text><line x1=\"160\" y1=\"94\" x2=\"160\" y2=\"101\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 106 L163.5 100 L156.5 100 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"107\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(102, 187, 106,0.16)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"160\" y=\"123.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">2. Planning structure</text><text x=\"160\" y=\"135.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Appropriate technology, skill and</text><text x=\"160\" y=\"148.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">institutional set-up for implementing plans</text><line x1=\"160\" y1=\"159\" x2=\"160\" y2=\"166\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 171 L163.5 165 L156.5 165 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"172\" width=\"260\" height=\"63\" rx=\"6\" fill=\"rgba(79,195,247,0.16)\" stroke=\"#4FC3F7\" stroke-width=\"1.2\"/><text x=\"160\" y=\"188.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">3. Matching with national plans</text><text x=\"160\" y=\"200.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Resource development plans fitted into overall</text><text x=\"160\" y=\"213.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">national development plans (since the First</text><text x=\"160\" y=\"225.5\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Five Year Plan)</text></svg></div><div class=\"diagram-caption\">Three steps of resource planning</div></div><div class=\"pt\">Availability of resources alone is not enough: development needs <b>technology, quality of human resources and historical experiences</b>. Colonial powers used their technology to exploit the resources of colonies.</div><div class=\"sec\">Conservation of resources</div><div class=\"pt\"><b>Gandhiji:</b> “There is enough for everybody's need and not for anybody's greed.” He blamed mass production and greedy individuals for depletion, and favoured production by the masses.</div><div class=\"pt\"><b>Club of Rome (1968)</b> advocated conservation in a systematic way; <b>Schumacher's</b> <i>Small is Beautiful</i> (1974); <b>Brundtland Commission Report (1987)</b>, <i>Our Common Future</i>, introduced sustainable development.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 4. Land Resources and Land Utilisation</div><div class=\"sol-step\"><div class=\"rev\">Land is a natural resource of utmost importance; it supports natural vegetation, wildlife, human life, economic activities and transport. India has varied relief:</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Relief</th><th>Share of land</th><th>Importance</th></tr><tr><td>Plains</td><td>About 43%</td><td>Facilities for agriculture and industry</td></tr><tr><td>Mountains</td><td>About 30%</td><td>Perennial rivers, tourism, ecology</td></tr><tr><td>Plateau</td><td>About 27%</td><td>Rich reserves of minerals, fossil fuels and forests</td></tr></table></div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 291\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"291\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#66BB6A\" text-anchor=\"middle\" font-weight=\"700\">Land Utilisation Categories</text><rect x=\"13\" y=\"30\" width=\"142\" height=\"84\" rx=\"6\" fill=\"rgba(102, 187, 106,0.16)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"84\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">1. Forests</text><text x=\"84\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Area under forest cover</text><rect x=\"165\" y=\"30\" width=\"142\" height=\"84\" rx=\"6\" fill=\"rgba(148,163,184,0.13)\" stroke=\"#94A3B8\" stroke-width=\"1.2\"/><text x=\"236\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">2. Not available for</text><text x=\"236\" y=\"57.7\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">cultivation</text><text x=\"236\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">(a) Barren and waste land</text><text x=\"236\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">(b) Non-agricultural</text><text x=\"236\" y=\"92.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">uses: buildings, roads,</text><text x=\"236\" y=\"104.5\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">factories</text><rect x=\"13\" y=\"122\" width=\"142\" height=\"84\" rx=\"6\" fill=\"rgba(255,183,77,0.16)\" stroke=\"#FFB74D\" stroke-width=\"1.2\"/><text x=\"84\" y=\"138.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">3. Other uncultivated</text><text x=\"84\" y=\"149.7\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">land</text><text x=\"84\" y=\"161.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Permanent pastures;</text><text x=\"84\" y=\"173.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">miscellaneous tree crops;</text><text x=\"84\" y=\"184.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">culturable waste (unused</text><text x=\"84\" y=\"196.5\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">over 5 years)</text><rect x=\"165\" y=\"122\" width=\"142\" height=\"84\" rx=\"6\" fill=\"rgba(255,183,77,0.16)\" stroke=\"#FFB74D\" stroke-width=\"1.2\"/><text x=\"236\" y=\"138.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">4. Fallow lands</text><text x=\"236\" y=\"149.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Current fallow (1 year or</text><text x=\"236\" y=\"161.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">less); other fallow (1 to</text><text x=\"236\" y=\"173.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">5 years)</text><rect x=\"89\" y=\"214\" width=\"142\" height=\"61\" rx=\"6\" fill=\"rgba(79,195,247,0.16)\" stroke=\"#4FC3F7\" stroke-width=\"1.2\"/><text x=\"160\" y=\"230.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">5. Net sown area</text><text x=\"160\" y=\"241.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Area sown in a year; NSA</text><text x=\"160\" y=\"253.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">+ area sown more than</text><text x=\"160\" y=\"265.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">once = gross cropped area</text></svg></div><div class=\"diagram-caption\">How land is classified by use</div></div><div class=\"sec\">Land use pattern in India</div><div class=\"pt\">Total geographical area: <b>3.28 million sq km</b>; land use data is available for only about <b>93%</b> (reporting in most north-eastern states except Assam is incomplete, and some areas of J&K occupied by Pakistan and China have not been surveyed).</div><div class=\"pt\">Land under <b>permanent pasture has decreased</b> — a concern for feeding cattle.</div><div class=\"pt\">Net sown area is <b>less than half</b> of the reporting area and varies widely: over <b>80%</b> in Punjab and Haryana, less than <b>10%</b> in Arunachal Pradesh, Mizoram, Manipur and the Andaman and Nicobar Islands.</div><div class=\"pt\">Forest area is far below the desired <b>33%</b> of geographical area set by the <b>National Forest Policy (1952)</b>.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 5. Land Degradation and Conservation</div><div class=\"sol-step\"><div class=\"rev\">We use land for <b>95%</b> of our basic needs — food, shelter and clothing. Continuous use without conservation has caused land degradation.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 266\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"266\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#66BB6A\" text-anchor=\"middle\" font-weight=\"700\">Causes of Land Degradation</text><rect x=\"60\" y=\"30\" width=\"200\" height=\"51\" rx=\"6\" fill=\"rgba(239,83,80,0.16)\" stroke=\"#EF5350\" stroke-width=\"1.2\"/><text x=\"160\" y=\"46.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">About 130 million hectares</text><text x=\"160\" y=\"58.9\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">degraded</text><text x=\"160\" y=\"71.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Human activities are the main cause</text><line x1=\"160\" y1=\"82\" x2=\"160\" y2=\"89\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 94 L163.5 88 L156.5 88 Z\" fill=\"#B0BEC5\"/><rect x=\"13\" y=\"96\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(102, 187, 106,0.16)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"84\" y=\"112.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Mining</text><text x=\"84\" y=\"123.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Deforestation; deep scars</text><text x=\"84\" y=\"135.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">and overburden in</text><text x=\"84\" y=\"147.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Jharkhand, Chhattisgarh,</text><text x=\"84\" y=\"158.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">MP, Odisha</text><rect x=\"165\" y=\"96\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(102, 187, 106,0.16)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"236\" y=\"112.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Overgrazing</text><text x=\"236\" y=\"123.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Gujarat, Rajasthan,</text><text x=\"236\" y=\"135.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Madhya Pradesh,</text><text x=\"236\" y=\"147.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Maharashtra</text><rect x=\"13\" y=\"177\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(79,195,247,0.16)\" stroke=\"#4FC3F7\" stroke-width=\"1.2\"/><text x=\"84\" y=\"193.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Over-irrigation</text><text x=\"84\" y=\"204.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Waterlogging, salinity</text><text x=\"84\" y=\"216.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">and alkalinity in Punjab,</text><text x=\"84\" y=\"228.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Haryana, western UP</text><rect x=\"165\" y=\"177\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(148,163,184,0.13)\" stroke=\"#94A3B8\" stroke-width=\"1.2\"/><text x=\"236\" y=\"193.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Industry</text><text x=\"236\" y=\"204.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Dust from mineral</text><text x=\"236\" y=\"216.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">processing (cement,</text><text x=\"236\" y=\"228.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">ceramics); industrial</text><text x=\"236\" y=\"239.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">effluents</text></svg></div><div class=\"diagram-caption\">Main causes of land degradation in India</div></div><div class=\"pt\">Of the degraded land, about <b>28%</b> is degraded forest area, <b>56%</b> is water-eroded, and the rest is affected by saline and alkaline deposits.</div><div class=\"sec\">Measures to solve land degradation</div><div class=\"pt\">Afforestation and proper management of grazing.</div><div class=\"pt\">Planting shelter belts; stabilisation of sand dunes by growing thorny bushes.</div><div class=\"pt\">Proper management of wastelands and control of mining activities.</div><div class=\"pt\">Proper discharge and disposal of industrial effluents and wastes after treatment.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 6. Soil as a Resource</div><div class=\"sol-step\"><div class=\"rev\">Soil is the most important <b>renewable natural resource</b> — the medium of plant growth that supports living organisms. It takes <b>millions of years</b> to form soil up to a few centimetres in depth.</div><div class=\"pt\"><b>Factors of soil formation:</b> relief, parent rock or bed rock, climate, vegetation and other forms of life, and time.</div><div class=\"pt\"><b>Agents:</b> change in temperature, running water, wind, glaciers and decomposers.</div><div class=\"sec\">Classification of soils</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Soil</th><th>Where found</th><th>Key features / crops</th></tr><tr><td><b>Alluvial</b></td><td>Northern plains (Indus, Ganga, Brahmaputra); Rajasthan and Gujarat; deltas of Mahanadi, Godavari, Krishna, Kaveri</td><td>Most widespread; sand, silt, clay; old (<b>bangar</b>, more kankar) and new (<b>khadar</b>, finer, more fertile); rich in potash, phosphoric acid, lime; sugarcane, paddy, wheat, pulses</td></tr><tr><td><b>Black (regur)</b></td><td>Deccan trap: Maharashtra, Saurashtra, Malwa, MP, Chhattisgarh; Godavari and Krishna valleys</td><td>From lava (basalt); fine clay, holds moisture; rich in calcium carbonate, magnesium, potash, lime; poor in phosphoric content; cracks in summer; best for <b>cotton</b></td></tr><tr><td><b>Red and yellow</b></td><td>Low-rainfall parts of eastern and southern Deccan; Odisha, Chhattisgarh, middle Ganga plain, Western Ghats piedmont</td><td>Red due to iron in crystalline and metamorphic rocks; yellow when hydrated</td></tr><tr><td><b>Laterite</b></td><td>Southern states, Western Ghats of Maharashtra, Odisha, parts of West Bengal and North-east</td><td>From Latin <i>later</i> = brick; high temperature and heavy rain; intense leaching, acidic, low humus; with manures: tea, coffee (Karnataka, Kerala, TN), cashew</td></tr><tr><td><b>Arid</b></td><td>Western Rajasthan</td><td>Red to brown, sandy, saline; lacks humus and moisture; kankar in lower layers; cultivable after irrigation</td></tr><tr><td><b>Forest</b></td><td>Hilly and mountainous areas with enough rain forests</td><td>Loamy and silty in valleys, coarse on upper slopes; acidic with low humus in snow-covered Himalayas; fertile on river terraces and alluvial fans</td></tr></table></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 7. Soil Erosion and Soil Conservation</div><div class=\"sol-step\"><div class=\"rev\"><span class=\"hl\">Soil erosion</span> is the denudation of the soil cover and its subsequent washing down. Human activities (deforestation, overgrazing, construction, mining, defective farming such as ploughing up and down slopes) and natural forces (wind, glaciers, water) cause it.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 269\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"269\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#66BB6A\" text-anchor=\"middle\" font-weight=\"700\">Soil Erosion and its Control</text><rect x=\"13\" y=\"30\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(239,83,80,0.16)\" stroke=\"#EF5350\" stroke-width=\"1.2\"/><text x=\"84\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Gully erosion</text><text x=\"84\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Running water cuts deep</text><text x=\"84\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">channels in clayey soil;</text><text x=\"84\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">bad land, e.g. Chambal</text><text x=\"84\" y=\"92.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">ravines</text><rect x=\"165\" y=\"30\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(239,83,80,0.16)\" stroke=\"#EF5350\" stroke-width=\"1.2\"/><text x=\"236\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Sheet erosion</text><text x=\"236\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Water flows as a sheet</text><text x=\"236\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">over large areas and</text><text x=\"236\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">washes away the topsoil</text><rect x=\"13\" y=\"111\" width=\"142\" height=\"61\" rx=\"6\" fill=\"rgba(102, 187, 106,0.16)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"84\" y=\"127.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Contour ploughing</text><text x=\"84\" y=\"138.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Ploughing along contour</text><text x=\"84\" y=\"150.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">lines slows water flowing</text><text x=\"84\" y=\"162.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">down slopes</text><rect x=\"165\" y=\"111\" width=\"142\" height=\"61\" rx=\"6\" fill=\"rgba(102, 187, 106,0.16)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"236\" y=\"127.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Terrace cultivation</text><text x=\"236\" y=\"138.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Steps cut on slopes; well</text><text x=\"236\" y=\"150.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">developed in western and</text><text x=\"236\" y=\"162.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">central Himalayas</text><rect x=\"13\" y=\"180\" width=\"142\" height=\"61\" rx=\"6\" fill=\"rgba(102, 187, 106,0.16)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"84\" y=\"196.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Strip cropping</text><text x=\"84\" y=\"207.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Strips of grass left</text><text x=\"84\" y=\"219.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">between crops break the</text><text x=\"84\" y=\"231.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">force of wind</text><rect x=\"165\" y=\"180\" width=\"142\" height=\"61\" rx=\"6\" fill=\"rgba(102, 187, 106,0.16)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"236\" y=\"196.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Shelter belts</text><text x=\"236\" y=\"207.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Rows of trees; helped</text><text x=\"236\" y=\"219.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">stabilise sand dunes in</text><text x=\"236\" y=\"231.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">western India</text><text x=\"160\" y=\"255\" font-size=\"9.5\" fill=\"#66BB6A\" text-anchor=\"middle\" font-weight=\"700\">Top row: types of erosion | Below: conservation methods</text></svg></div><div class=\"diagram-caption\">Types of soil erosion and how farmers prevent it</div></div><div class=\"pt\"><b>Wind erosion:</b> wind blows loose soil off flat or sloping land.</div><div class=\"exam\"><span class=\"exam-t\">📌 Success story: Sukhomajri and Jhabua</span><div>• <b>Sukhomajri village</b> (Haryana) and <b>Jhabua district</b> (Madhya Pradesh) showed that land degradation can be reversed.</div><div>• Community participation in protecting hills, managing watersheds and regulating grazing helped forests and soil recover.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ Quick Glossary</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Term</th><th>Meaning</th></tr><tr><td>Resource</td><td>Anything in the environment that satisfies needs and is technologically accessible, economically feasible and culturally acceptable</td></tr><tr><td>Sustainable development</td><td>Development without damaging the environment or compromising future generations' needs</td></tr><tr><td>Agenda 21</td><td>Declaration of the 1992 Earth Summit for global cooperation on environment and development</td></tr><tr><td>Net sown area</td><td>Area sown with crops in a year</td></tr><tr><td>Gross cropped area</td><td>Net sown area plus area sown more than once in a year</td></tr><tr><td>Fallow land</td><td>Land left uncultivated to regain fertility</td></tr><tr><td>Culturable waste land</td><td>Land left uncultivated for more than 5 agricultural years</td></tr><tr><td>Bad land</td><td>Land made unfit for cultivation by gully erosion (ravines)</td></tr><tr><td>Bangar / Khadar</td><td>Old alluvium (with kankar) / new, finer and more fertile alluvium</td></tr><tr><td>Leaching</td><td>Washing away of nutrients from soil by heavy rain</td></tr></table></div></div>\n  </div>\n\n</div>",
+  "htmlExercises": {
+    "sg1-ex-all": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(102, 187, 106, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #66BB6A; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #66BB6A; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #C8E6C9; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #C8E6C9; font-weight: 700; }\n  .hl { color: #66BB6A; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #66BB6A; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #66BB6A; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(102, 187, 106, 0.10); border: 1.5px dashed #66BB6A; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #66BB6A; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(102, 187, 106, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(102, 187, 106, 0.18); border: 1px solid #66BB6A; color: #C8E6C9; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(102, 187, 106, 0.2); color: #C8E6C9; }\n  .q-card .q-text, .q-card .sub-q { color: #66BB6A !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Multiple choice questions.<br/>(i) Which one of the following type of resource is iron ore?<br/>(a) Renewable&nbsp;&nbsp; (b) Biotic&nbsp;&nbsp; (c) Flow&nbsp;&nbsp; (d) Non-renewable<br/>(ii) Under which of the following type of resource tidal energy cannot be put?<br/>(a) Replenishable&nbsp;&nbsp; (b) Human-made&nbsp;&nbsp; (c) Abiotic&nbsp;&nbsp; (d) Non-recyclable<br/>(iii) Which one of the following is the main cause of land degradation in Punjab?<br/>(a) Intensive cultivation&nbsp;&nbsp; (b) Deforestation&nbsp;&nbsp; (c) Over irrigation&nbsp;&nbsp; (d) Overgrazing<br/>(iv) In which one of the following states is terrace cultivation practised?<br/>(a) Punjab&nbsp;&nbsp; (b) Plains of Uttar Pradesh&nbsp;&nbsp; (c) Haryana&nbsp;&nbsp; (d) Uttarakhand<br/>(v) In which of the following states black soil is predominantly found?<br/>(a) Haryana&nbsp;&nbsp; (b) Maharashtra&nbsp;&nbsp; (c) Rajasthan&nbsp;&nbsp; (d) Jharkhand</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">(i) <b>(d) Non-renewable</b></div><div class=\"pt\">(ii) <b>(d) Non-recyclable</b> — tidal energy is renewable (a flow resource).</div><div class=\"pt\">(iii) <b>(c) Over irrigation</b> — it causes waterlogging, salinity and alkalinity.</div><div class=\"pt\">(iv) <b>(d) Uttarakhand</b> — a hilly state.</div><div class=\"pt\">(v) <b>(b) Maharashtra</b></div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Answer the following questions in about 30 words.<br/>(i) Name three states having black soil and the crop which is mainly grown in it.<br/>(ii) What type of soil is found in the river deltas of the eastern coast? Give three main features of this type of soil.<br/>(iii) What steps can be taken to control soil erosion in the hilly areas?<br/>(iv) What are the biotic and abiotic resources? Give some examples.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">(i)</div><div class=\"pt\">States: <b>Maharashtra, Madhya Pradesh and Gujarat (Saurashtra)</b> (also Chhattisgarh).</div><div class=\"pt\">Crop: <b>cotton</b> — hence it is called black cotton soil.</div><div class=\"sub-q\">(ii)</div><div class=\"pt\"><b>Alluvial soil</b> is found in the deltas of the Mahanadi, Godavari, Krishna and Kaveri.</div><div class=\"pt\">It consists of varying proportions of sand, silt and clay.</div><div class=\"pt\">It is very fertile, rich in potash, phosphoric acid and lime — ideal for paddy, sugarcane and wheat.</div><div class=\"pt\">It is classified as old alluvium (bangar, with kankar nodules) and new alluvium (khadar, finer and more fertile).</div><div class=\"sub-q\">(iii)</div><div class=\"pt\"><b>Contour ploughing</b> — ploughing along contour lines to slow the flow of water down the slopes.</div><div class=\"pt\"><b>Terrace farming</b> — cutting steps on slopes to restrict erosion.</div><div class=\"pt\"><b>Strip cropping</b> and planting trees (afforestation) to hold the soil.</div><div class=\"sub-q\">(iv)</div><div class=\"pt\"><b>Biotic resources</b> are obtained from the biosphere and have life — human beings, flora and fauna, fisheries, livestock.</div><div class=\"pt\"><b>Abiotic resources</b> are composed of non-living things — rocks, metals, soil, water.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Answer the following questions in about 120 words.<br/>(i) Explain land use pattern in India and why has the land under forest not increased much since 1960-61?<br/>(ii) How have technical and economic development led to more consumption of resources?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">(i) Land use pattern</div><div class=\"pt\">India's total geographical area is 3.28 million sq km; land use data is available for only about 93% of it.</div><div class=\"pt\">Land is used for forests, non-agricultural uses (buildings, roads, industries), barren and waste land, permanent pastures, tree crops, fallow land and net sown area.</div><div class=\"pt\">Net sown area is less than half of the reporting area; it is over 80% in Punjab and Haryana but less than 10% in Arunachal Pradesh, Mizoram, Manipur and the Andaman and Nicobar Islands.</div><div class=\"pt\">Permanent pasture land has decreased.</div><div class=\"sec\">Why forest area has not increased much</div><div class=\"pt\">Growing population needed more land for agriculture and housing.</div><div class=\"pt\">Expansion of industries, towns, roads and railways.</div><div class=\"pt\">Large development projects (dams) and mining cleared forests.</div><div class=\"pt\">Overgrazing and illegal felling; so forest cover remains far below the desired 33% (National Forest Policy, 1952).</div><div class=\"sub-q\">(ii)</div><div class=\"pt\"><b>Technology</b> made it possible to extract and use more resources (deep mining, machines, modern agriculture).</div><div class=\"pt\"><b>Industrialisation</b> and mass production increased the demand for raw materials and energy.</div><div class=\"pt\"><b>Economic development</b> raised incomes and consumption; people demand more goods, vehicles and electricity.</div><div class=\"pt\"><b>Colonialism:</b> higher technology helped colonial powers exploit the resources of colonies.</div><div class=\"pt\"><b>Greed of a few</b> led to over-exploitation, unequal distribution and ecological crises such as global warming and land degradation.</div></div></div>\n  </div>\n\n</div>",
+    "sg1-ex-board": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(102, 187, 106, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #66BB6A; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #66BB6A; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #C8E6C9; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #C8E6C9; font-weight: 700; }\n  .hl { color: #66BB6A; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #66BB6A; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #66BB6A; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(102, 187, 106, 0.10); border: 1.5px dashed #66BB6A; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #66BB6A; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(102, 187, 106, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(102, 187, 106, 0.18); border: 1px solid #66BB6A; color: #C8E6C9; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(102, 187, 106, 0.2); color: #C8E6C9; }\n  .q-card .q-text, .q-card .sub-q { color: #66BB6A !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\"><div class=\"q-title\">✦ Section A: Very Short Answer (1 Mark)</div></div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">What is a resource?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Anything in the environment that satisfies our needs and is technologically accessible, economically feasible and culturally acceptable.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Give one example of a potential resource in India.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Wind and solar energy in <b>Rajasthan and Gujarat</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">What are reserves?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">A subset of the stock that can be used with existing technology but is kept for future use, e.g. water in dams.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">What was Agenda 21?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">A declaration signed at the Rio Earth Summit (1992) to combat environmental damage, poverty and disease through global cooperation.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">What is gross cropped area?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Net sown area plus area sown more than once in an agricultural year.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q6. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Which soil is ideal for growing cotton?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Black (regur) soil</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q7. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">What is bangar?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Old alluvial soil with more kankar nodules.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q8. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Which soil is formed by intense leaching under high temperature and heavy rainfall?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Laterite soil</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q9. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">What is bad land?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Land made unfit for cultivation by gully erosion, e.g. the Chambal ravines.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q10. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">What percentage of geographical area should be under forest according to the National Forest Policy (1952)?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>33%</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\"><div class=\"q-title\">✦ Section B: Short Answer (3 Marks)</div></div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q11. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">Distinguish between stock and reserves.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Stock</th><th>Reserves</th></tr><tr><td>Materials that can satisfy needs but humans lack the technology to use them</td><td>A subset of stock that can be used with existing technology</td></tr><tr><td>e.g. hydrogen in water as a source of energy</td><td>e.g. water in dams, forests</td></tr><tr><td>Not usable at present</td><td>Kept for meeting future requirements</td></tr></table></div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q12. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">Why is resource planning essential in India?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">India has enormous diversity in the availability of resources.</div><div class=\"pt\">Some regions are rich in certain resources but deficient in others — e.g. Jharkhand has minerals, Rajasthan has solar and wind energy but lacks water, Arunachal Pradesh has water but lacks infrastructure.</div><div class=\"pt\">Planning at national, state, regional and local levels ensures balanced and judicious use.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q13. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">Describe any three features of black soil.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Made of extremely fine clayey material formed from lava (basalt) rocks of the Deccan trap.</div><div class=\"pt\">High capacity to hold moisture; rich in calcium carbonate, magnesium, potash and lime but poor in phosphoric content.</div><div class=\"pt\">Develops deep cracks in hot weather and becomes sticky when wet; ideal for cotton.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q14. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">Suggest any three measures to solve the problem of land degradation.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Afforestation and proper management of grazing.</div><div class=\"pt\">Planting shelter belts and stabilising sand dunes with thorny bushes.</div><div class=\"pt\">Control of mining and proper treatment and disposal of industrial effluents.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q15. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">Classify resources on the basis of ownership with examples.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Individual:</b> plots, houses, wells, orchards owned privately.</div><div class=\"pt\"><b>Community-owned:</b> grazing grounds, burial grounds, village ponds, public parks.</div><div class=\"pt\"><b>National:</b> minerals, forests, water within the country and ocean up to 12 nautical miles; <b>International:</b> ocean resources beyond 200 nautical miles.</div></div></div>\n  </div>\n\n  <div class=\"q-card\"><div class=\"q-title\">✦ Section C: Long Answer (5 Marks)</div></div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q16. <span class=\"badge\">5 Marks</span></div>\n    <div class=\"q-text\">Describe the main types of soils found in India.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Alluvial:</span> most widespread; northern plains and eastern deltas; very fertile; paddy, wheat, sugarcane.</div><div class=\"pt\"><span class=\"lbl\">Black:</span> Deccan trap; fine clay, holds moisture; cotton.</div><div class=\"pt\"><span class=\"lbl\">Red and yellow:</span> eastern and southern Deccan; red due to iron, yellow when hydrated.</div><div class=\"pt\"><span class=\"lbl\">Laterite:</span> heavy rain and high temperature; leached, acidic; tea, coffee and cashew with manures.</div><div class=\"pt\"><span class=\"lbl\">Arid:</span> western Rajasthan; sandy, saline; cultivable after irrigation.</div><div class=\"pt\"><span class=\"lbl\">Forest:</span> hilly areas; fertile in valleys and river terraces, acidic on upper slopes.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q17. <span class=\"badge\">5 Marks</span></div>\n    <div class=\"q-text\">What is soil erosion? Explain its types and methods of soil conservation.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Soil erosion is the denudation of the soil cover and its subsequent washing down, caused by humans (deforestation, overgrazing, mining) and nature (wind, water, glaciers).</div><div class=\"pt\"><b>Types:</b> gully erosion (deep channels, bad land), sheet erosion (topsoil washed over large areas), wind erosion.</div><div class=\"pt\"><b>Contour ploughing</b> slows the flow of water down slopes.</div><div class=\"pt\"><b>Terrace cultivation</b> and <b>strip cropping</b> restrict erosion and break the force of wind.</div><div class=\"pt\"><b>Shelter belts</b> of trees stabilise sand dunes and protect soil.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q18. <span class=\"badge\">5 Marks</span></div>\n    <div class=\"q-text\">Explain the process of resource planning and its need in India.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Identification and inventory</b> of resources through surveying, mapping and estimation.</div><div class=\"pt\"><b>Evolving a planning structure</b> with appropriate technology, skill and institutional set-up.</div><div class=\"pt\"><b>Matching</b> resource development plans with overall national development plans.</div><div class=\"pt\"><b>Need:</b> India has uneven distribution of resources; planning ensures judicious and balanced use.</div><div class=\"pt\">It also supports sustainable development so that future generations are not deprived.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q19. <span class=\"badge\">4 Marks</span></div>\n    <div class=\"q-text\"><b>Source-based:</b> Read the source and answer the questions.<br/><i>“In June 1992, more than 100 heads of states met in Rio de Janeiro in Brazil, for the first International Earth Summit. The Summit was convened for addressing urgent problems of environmental protection and socio-economic development at the global level.”</i><br/>(i) Where was the first International Earth Summit held? (1)<br/>(ii) What was adopted at the Summit? (1)<br/>(iii) Explain the concept of sustainable development. (2)</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">(i)</div><div class=\"pt\">At <b>Rio de Janeiro, Brazil</b>, in June 1992.</div><div class=\"sub-q\">(ii)</div><div class=\"pt\"><b>Agenda 21</b> (and the Declaration on Global Climatic Change and Biological Diversity).</div><div class=\"sub-q\">(iii)</div><div class=\"pt\">Development should take place without damaging the environment.</div><div class=\"pt\">Development in the present should not compromise the needs of future generations.</div></div></div>\n  </div>\n\n</div>"
   },
-  exercises: [
+  "introduction": "Everything available in our environment that can be used to satisfy our needs is a resource. But wait! Is a piece of rock a resource? Only if we have the technology to use it, the money to afford it, and society's permission to use it. Let's learn how we categorize resources and how important it is to plan their development.",
+  "definitions": [],
+  "keyPoints": [],
+  "formulas": [],
+  "crux": [],
+  "mcqs": [
     {
-      id: "sg1-ex-all",
-      name: "Exercise Questions",
-      questions: [],
+      "id": "sg1-mcq-1",
+      "question": "<div style='text-align: justify;'>Which one of the following types of resource is iron ore?</div>",
+      "options": [
+        "A):   Renewable",
+        "B):   Biotic",
+        "C):   Non-renewable",
+        "D):   Flow"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Minerals take millions of years to form.</div>"
     },
+    {
+      "id": "sg1-mcq-2",
+      "question": "<div style='text-align: justify;'>Tidal energy cannot be put under which type of resource?</div>",
+      "options": [
+        "A):   Non-recyclable",
+        "B):   Human-made",
+        "C):   Abiotic",
+        "D):   Replenishable"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Tidal energy is a renewable flow resource.</div>"
+    },
+    {
+      "id": "sg1-mcq-3",
+      "question": "<div style='text-align: justify;'>The main cause of land degradation in Punjab is:</div>",
+      "options": [
+        "A):   Intensive cultivation",
+        "B):   Deforestation",
+        "C):   Overgrazing",
+        "D):   Over-irrigation"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>It causes waterlogging, salinity and alkalinity.</div>"
+    },
+    {
+      "id": "sg1-mcq-4",
+      "question": "<div style='text-align: justify;'>Terrace cultivation is practised in:</div>",
+      "options": [
+        "A):   Punjab",
+        "B):   Uttarakhand",
+        "C):   Haryana",
+        "D):   Plains of Uttar Pradesh"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Steps are cut on hill slopes.</div>"
+    },
+    {
+      "id": "sg1-mcq-5",
+      "question": "<div style='text-align: justify;'>Black soil is predominantly found in:</div>",
+      "options": [
+        "A):   Maharashtra",
+        "B):   Haryana",
+        "C):   Rajasthan",
+        "D):   Jharkhand"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>It is formed from Deccan trap lava.</div>"
+    },
+    {
+      "id": "sg1-mcq-6",
+      "question": "<div style='text-align: justify;'>Which of these is a biotic resource?</div>",
+      "options": [
+        "A):   Rocks",
+        "B):   Metals",
+        "C):   Livestock",
+        "D):   Soil"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Biotic resources have life.</div>"
+    },
+    {
+      "id": "sg1-mcq-7",
+      "question": "<div style='text-align: justify;'>Wind and solar energy in Rajasthan are examples of:</div>",
+      "options": [
+        "A):   Developed resources",
+        "B):   Potential resources",
+        "C):   Stock",
+        "D):   Reserves"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>They are not yet fully used.</div>"
+    },
+    {
+      "id": "sg1-mcq-8",
+      "question": "<div style='text-align: justify;'>Hydrogen in water as a source of energy is an example of:</div>",
+      "options": [
+        "A):   Reserves",
+        "B):   Developed resource",
+        "C):   Potential resource",
+        "D):   Stock"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>We lack the technology to use it.</div>"
+    },
+    {
+      "id": "sg1-mcq-9",
+      "question": "<div style='text-align: justify;'>Oceanic resources beyond 200 nautical miles are:</div>",
+      "options": [
+        "A):   National",
+        "B):   Individual",
+        "C):   Community-owned",
+        "D):   International"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>They lie beyond the Exclusive Economic Zone.</div>"
+    },
+    {
+      "id": "sg1-mcq-10",
+      "question": "<div style='text-align: justify;'>The first International Earth Summit was held in 1992 at:</div>",
+      "options": [
+        "A):   Geneva",
+        "B):   Rio de Janeiro",
+        "C):   New York",
+        "D):   Stockholm"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>It adopted Agenda 21.</div>"
+    },
+    {
+      "id": "sg1-mcq-11",
+      "question": "<div style='text-align: justify;'>'There is enough for everybody's need and not for anybody's greed' was said by:</div>",
+      "options": [
+        "A):   Nehru",
+        "B):   Schumacher",
+        "C):   Mahatma Gandhi",
+        "D):   Brundtland"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Gandhiji favoured production by the masses.</div>"
+    },
+    {
+      "id": "sg1-mcq-12",
+      "question": "<div style='text-align: justify;'>The Brundtland Commission Report (1987) was titled:</div>",
+      "options": [
+        "A):   Our Common Future",
+        "B):   Small is Beautiful",
+        "C):   Agenda 21",
+        "D):   Limits to Growth"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>It introduced the concept of sustainable development.</div>"
+    },
+    {
+      "id": "sg1-mcq-13",
+      "question": "<div style='text-align: justify;'>About what share of India's land surface is plains?</div>",
+      "options": [
+        "A):   27%",
+        "B):   30%",
+        "C):   60%",
+        "D):   43%"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Mountains are about 30% and plateaus about 27%.</div>"
+    },
+    {
+      "id": "sg1-mcq-14",
+      "question": "<div style='text-align: justify;'>Land left uncultivated for more than five agricultural years is called:</div>",
+      "options": [
+        "A):   Culturable waste land",
+        "B):   Current fallow",
+        "C):   Barren land",
+        "D):   Net sown area"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Current fallow is left for one year or less.</div>"
+    },
+    {
+      "id": "sg1-mcq-15",
+      "question": "<div style='text-align: justify;'>Net sown area is over 80% of total area in:</div>",
+      "options": [
+        "A):   Arunachal Pradesh",
+        "B):   Mizoram",
+        "C):   Punjab and Haryana",
+        "D):   Manipur"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>It is less than 10% in some north-eastern states.</div>"
+    },
+    {
+      "id": "sg1-mcq-16",
+      "question": "<div style='text-align: justify;'>Overgrazing is the main cause of land degradation in:</div>",
+      "options": [
+        "A):   Punjab and Haryana",
+        "B):   Gujarat, Rajasthan, MP and Maharashtra",
+        "C):   Kerala",
+        "D):   West Bengal"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Mining is the main cause in Jharkhand and Odisha.</div>"
+    },
+    {
+      "id": "sg1-mcq-17",
+      "question": "<div style='text-align: justify;'>The most widely spread soil in India is:</div>",
+      "options": [
+        "A):   Black soil",
+        "B):   Alluvial soil",
+        "C):   Laterite soil",
+        "D):   Arid soil"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>It covers the entire northern plains.</div>"
+    },
+    {
+      "id": "sg1-mcq-18",
+      "question": "<div style='text-align: justify;'>New alluvial soil is called:</div>",
+      "options": [
+        "A):   Bangar",
+        "B):   Kankar",
+        "C):   Regur",
+        "D):   Khadar"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>It is finer and more fertile than bangar.</div>"
+    },
+    {
+      "id": "sg1-mcq-19",
+      "question": "<div style='text-align: justify;'>Red soil gets its colour from:</div>",
+      "options": [
+        "A):   Humus",
+        "B):   Calcium",
+        "C):   Diffusion of iron",
+        "D):   Salt"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>It looks yellow when hydrated.</div>"
+    },
+    {
+      "id": "sg1-mcq-20",
+      "question": "<div style='text-align: justify;'>Laterite soil is suitable for which crop with adequate manures?</div>",
+      "options": [
+        "A):   Cashew nut",
+        "B):   Cotton",
+        "C):   Wheat",
+        "D):   Bajra"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Tea and coffee are also grown in it.</div>"
+    },
+    {
+      "id": "sg1-mcq-21",
+      "question": "<div style='text-align: justify;'>Deep channels cut by running water in clayey soils are called:</div>",
+      "options": [
+        "A):   Sheet erosion",
+        "B):   Terraces",
+        "C):   Gullies",
+        "D):   Contours"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Such land is called bad land, e.g. Chambal ravines.</div>"
+    },
+    {
+      "id": "sg1-mcq-22",
+      "question": "<div style='text-align: justify;'>Arrange in chronological order: (i) Rio Earth Summit (ii) Club of Rome (iii) Brundtland Report (iv) Small is Beautiful</div>",
+      "options": [
+        "A):   (ii), (iv), (iii), (i)",
+        "B):   (ii), (iii), (iv), (i)",
+        "C):   (iv), (ii), (iii), (i)",
+        "D):   (ii), (iv), (i), (iii)"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>1968 → 1974 → 1987 → 1992.</div>"
+    },
+    {
+      "id": "sg1-mcq-23",
+      "question": "<div style='text-align: justify;'>Match: (P) Black soil (Q) Laterite soil (R) Arid soil (S) Alluvial soil — with (1) Western Rajasthan (2) Deccan trap (3) Northern plains (4) Heavy rainfall and leaching</div>",
+      "options": [
+        "A):   P-3, Q-4, R-1, S-2",
+        "B):   P-4, Q-2, R-1, S-3",
+        "C):   P-2, Q-1, R-4, S-3",
+        "D):   P-2, Q-4, R-1, S-3"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Each soil matches its region or origin.</div>"
+    },
+    {
+      "id": "sg1-mcq-24",
+      "question": "<div style='text-align: justify;'>Assertion (A): Black soil is ideal for growing cotton. Reason (R): Black soil has a high capacity to hold moisture.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Moisture retention makes it suitable for cotton.</div>"
+    },
+    {
+      "id": "sg1-mcq-25",
+      "question": "<div style='text-align: justify;'>Assertion (A): Laterite soil is rich in humus. Reason (R): Laterite soil develops under high temperature and heavy rainfall.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Bacteria destroy humus at high temperatures, so humus is low.</div>"
+    }
   ],
-  examples: [],
-  mcqs: [
+  "summary": [],
+  "exercises": [
     {
-      id: "sg1-mcq-1",
-      question: "Which one of the following type of resource is iron ore?",
-      options: ["Renewable", "Biotic", "Flow", "Non-renewable"],
-      correctAnswer: "d",
+      "id": "sg1-ex-all",
+      "name": "Exercise",
+      "questions": []
     },
     {
-      id: "sg1-mcq-2",
-      question:
-        "Under which of the following type of resource tidal energy cannot be put?",
-      options: ["Replenishable", "Human-made", "Abiotic", "Non-recyclable"],
-      correctAnswer: "b",
-    },
-    {
-      id: "sg1-mcq-3",
-      question:
-        "Which one of the following is the main cause of land degradation in Punjab?",
-      options: [
-        "Intensive cultivation",
-        "Deforestation",
-        "Over irrigation",
-        "Overgrazing",
-      ],
-      correctAnswer: "c",
-    },
-    {
-      id: "sg1-mcq-4",
-      question:
-        "In which one of the following states is terrace cultivation practised?",
-      options: ["Punjab", "Plains of Uttar Pradesh", "Haryana", "Uttarakhand"],
-      correctAnswer: "d",
-    },
-    {
-      id: "sg1-mcq-5",
-      question:
-        "In which of the following states black soil is predominantly found?",
-      options: ["Haryana", "Maharashtra", "Rajasthan", "Jharkhand"],
-      correctAnswer: "b",
-    },
-    {
-      id: "sg1-mcq-6",
-      question: "Which soil is also known as Regur soil?",
-      options: ["Alluvial soil", "Black soil", "Red soil", "Laterite soil"],
-      correctAnswer: "b",
-    },
-    {
-      id: "sg1-mcq-7",
-      question:
-        "Agenda 21, signed at the 1992 Earth Summit, aims to achieve:",
-      options: [
-        "Global free trade",
-        "Global sustainable development",
-        "Eradication of diseases",
-        "Arms reduction",
-      ],
-      correctAnswer: "b",
-    },
-    {
-      id: "sg1-mcq-8",
-      question: "What is the total geographical area of India?",
-      options: [
-        "3.28 million sq km",
-        "32.8 million sq km",
-        "2.4 million sq km",
-        "4.28 million sq km",
-      ],
-      correctAnswer: "a",
-    },
-    {
-      id: "sg1-mcq-9",
-      question:
-        "In which of the following states is mining the main cause of land degradation?",
-      options: ["Punjab", "Haryana", "Jharkhand", "Kerala"],
-      correctAnswer: "c",
-    },
-    {
-      id: "sg1-mcq-10",
-      question:
-        "Resources which are surveyed and their quantity and quality determined for utilization are:",
-      options: [
-        "Potential resources",
-        "Stock",
-        "Developed resources",
-        "Reserves",
-      ],
-      correctAnswer: "c",
-    },
+      "id": "sg1-ex-board",
+      "name": "Board Qs",
+      "questions": []
+    }
   ],
+  "examples": []
 };
