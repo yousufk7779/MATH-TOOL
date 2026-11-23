@@ -1,342 +1,334 @@
 import { ChapterContent } from "../types";
 
-const themeColor = "#26C6DA"; // Teal color for Geography Chapter 2
-
 export const sstGeo2: ChapterContent = {
-  id: "sst-geo-2",
-  number: 2,
-  title: "Forest and Wildlife Resources",
-  introduction:
-    "Did you know that India is one of the world's richest countries in terms of its vast array of biological diversity? Our planet shares life with millions of other living beings, from micro-organisms to elephants. But due to our greed, this beautiful web of life is under severe threat. Let's learn how we categorize species and what conservation efforts we can make.",
-  definitions: [
-    {
-      term: "Biodiversity",
-      description:
-        "The immense variety of life forms (flora, fauna, and micro-organisms) co-existing in a closely integrated web of life with mutual dependence.",
-    },
-    {
-      term: "Endangered Species",
-      description:
-        "Species which are in danger of extinction. Their survival is difficult if the negative factors causing their decline continue to operate, e.g., black buck, crocodile.",
-    },
-    {
-      term: "Vulnerable Species",
-      description:
-        "Species whose population has declined to levels from where they are likely to enter the endangered category if negative factors continue, e.g., blue sheep, Asiatic elephant.",
-    },
-    {
-      term: "Endemic Species",
-      description:
-        "Species which are only found in some particular areas usually isolated by natural or geographical barriers, e.g., Andaman teal, Andaman wild pig.",
-    },
-    {
-      term: "Extinct Species",
-      description:
-        "Species which are not found after searches of known or likely areas where they may occur, e.g., Asiatic cheetah, pink-headed duck.",
-    },
-    {
-      term: "Reserved Forests",
-      description:
-        "Forests regarded as the most valuable for the conservation of forest and wildlife resources. More than half of the total forest land has been declared reserved.",
-    },
-    {
-      term: "Protected Forests",
-      description:
-        "Forest lands declared by the Forest Department to be protected from any further depletion. Almost one-third of the total forest area is protected.",
-    },
-    {
-      term: "Unclassed Forests",
-      description:
-        "Other forests and wastelands belonging to both government and private individuals and communities, found mostly in Northeast India and parts of Gujarat.",
-    },
-  ],
-  keyPoints: [
-    "India has nearly 8% of the total number of species in the world, which is estimated to be 1.6 million.",
-    "The International Union for Conservation of Nature and Natural Resources (IUCN) classifies species into: Normal, Endangered, Vulnerable, Rare, Endemic, and Extinct.",
-    "Major causes of flora and fauna depletion include agricultural expansion, large-scale developmental projects, mining activities (like Buxa Tiger Reserve), and poaching.",
-    "Forests are classified by the government into Reserved Forests, Protected Forests, and Unclassed Forests to regulate conservation.",
-    "Community conservation in India is rooted in traditional beliefs, such as sacred groves, and organized movements like Chipko and Beej Bachao Andolan.",
-    "Joint Forest Management (JFM) is an excellent program that involves local communities in restoring degraded forests, launched first by Odisha in 1988.",
-  ],
-  formulas: [],
-  crux: [
-    "India has 8% of global species (approx 1.6 million).",
-    "IUCN categories: Normal, Endangered, Vulnerable, Rare, Endemic, Extinct.",
-    "Buxa Tiger Reserve is threatened by dolomite mining.",
-    "Forests division: Reserved (most valuable), Protected (no more depletion), Unclassed (shared/communal).",
-    "Community action: Chipko, Beej Bachao Andolan, Bhairodev Dakav sanctuary, JFM.",
-  ],
-  summary: [
-    "Biodiversity is essential for maintaining ecological balance and supporting human life. Unplanned developmental activities have threatened many species with extinction.",
-    "Forests are categorized into Reserved, Protected, and Unclassed, providing a framework for state and community protection. Legislation like the Wildlife (Protection) Act of 1972 provides legal backing.",
-    "Local communities are key to long-term conservation. Traditional nature worship, community-managed reserves, and collaborative programs like JFM show that humans and nature can coexist sustainably.",
-  ],
-  isHtmlView: true,
-  htmlOverview: `
-        <div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">
-            <p style="line-height: 1.6; font-size: 17px;">Did you know that India is one of the world's richest countries in terms of its vast array of biological diversity? Our planet shares life with millions of other living beings, from micro-organisms to elephants. But due to our greed, this beautiful web of life is under severe threat. Let's learn how we categorize species and what conservation efforts we can make.</p>
-            
-            <h3 style="color: ${themeColor}; text-align: left; margin-top: 20px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px;">Key Definitions</h3>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Biodiversity:</b> The immense variety of life forms (flora, fauna, and micro-organisms) co-existing in a closely integrated web of life with mutual dependence.</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Endangered Species:</b> Species which are in danger of extinction. Their survival is difficult if the negative factors causing their decline continue to operate, e.g., black buck, crocodile.</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Vulnerable Species:</b> Species whose population has declined to levels from where they are likely to enter the endangered category if negative factors continue, e.g., blue sheep, Asiatic elephant.</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Endemic Species:</b> Species which are only found in some particular areas usually isolated by natural or geographical barriers, e.g., Andaman teal, Andaman wild pig.</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Extinct Species:</b> Species which are not found after searches of known or likely areas where they may occur, e.g., Asiatic cheetah, pink-headed duck.</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Reserved Forests:</b> Forests regarded as the most valuable for the conservation of forest and wildlife resources. More than half of the total forest land has been declared reserved.</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Protected Forests:</b> Forest lands declared by the Forest Department to be protected from any further depletion. Almost one-third of the total forest area is protected.</p>
-            <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: ${themeColor};">Unclassed Forests:</b> Other forests and wastelands belonging to both government and private individuals and communities, found mostly in Northeast India and parts of Gujarat.</p>
-
-            <h3 style="color: ${themeColor}; text-align: left; margin-top: 25px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px;">Important Points</h3>
-            <ul style="text-align: left; padding-left: 20px; line-height: 1.6; font-size: 16px;">
-                <li style="margin-bottom: 8px;">India has nearly 8% of the total number of species in the world, which is estimated to be 1.6 million.</li>
-                <li style="margin-bottom: 8px;">The International Union for Conservation of Nature and Natural Resources (IUCN) classifies species into: Normal, Endangered, Vulnerable, Rare, Endemic, and Extinct.</li>
-                <li style="margin-bottom: 8px;">Major causes of flora and fauna depletion include agricultural expansion, large-scale developmental projects, mining activities (like Buxa Tiger Reserve), and poaching.</li>
-                <li style="margin-bottom: 8px;">Forests are classified by the government into Reserved Forests, Protected Forests, and Unclassed Forests to regulate conservation.</li>
-                <li style="margin-bottom: 8px;">Community conservation in India is rooted in traditional beliefs, such as sacred groves, and organized movements like Chipko and Beej Bachao Andolan.</li>
-                <li style="margin-bottom: 8px;">Joint Forest Management (JFM) is an excellent program that involves local communities in restoring degraded forests, launched first by Odisha in 1988.</li>
-            </ul>
-
-            <h3 style="color: ${themeColor}; text-align: left; margin-top: 25px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px;">Summary</h3>
-            <p style="line-height: 1.6; font-size: 16px;">Biodiversity is essential for maintaining ecological balance and supporting human life. Unplanned developmental activities have threatened many species with extinction. Forests are categorized into Reserved, Protected, and Unclassed, providing a framework for state and community protection. Legislation like the Wildlife (Protection) Act of 1972 provides legal backing. Local communities are key to long-term conservation. Traditional nature worship, community-managed reserves, and collaborative programs like JFM show that humans and nature can coexist sustainably.</p>
-        </div>
-    `,
-  htmlExercises: {
-    "sg2-ex-all": `
-            <div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">
-                <!-- 1. Multiple Choice Questions -->
-                <div style="margin-bottom: 25px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 12px; font-size: 18px;">1. Multiple choice questions.</p>
-                    
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: #fff; font-weight: bold; font-size: 15px;">(i) Which of these statements is not a valid reason for the depletion of flora and fauna?</p>
-                        <p style="color: #E0E0E0; font-size: 15px; margin: 4px 0 0 10px;">
-                            (a) Agricultural expansion.
-                            <br/>(b) Large scale developmental projects.
-                            <br/><b style="color: ${themeColor};">(c) Grazing and fuel wood collection.</b>
-                            <br/>(d) Rapid industrialisation and urbanisation.
-                        </p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: #fff; font-weight: bold; font-size: 15px;">(ii) Which of the following conservation strategies do not directly involve community participation?</p>
-                        <p style="color: #E0E0E0; font-size: 15px; margin: 4px 0 0 10px;">
-                            (a) Joint forest management &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (c) Chipko Movement
-                            <br/>(b) Beej Bachao Andolan &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b style="color: ${themeColor};">(d) Demarcation of Wildlife sanctuaries</b>
-                        </p>
-                    </div>
-                </div>
-
-                <!-- 2. Match the following animals with their category of existence -->
-                <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 12px; font-size: 18px;">2. Match the following animals with their category of existence.</p>
-                    <table style="width: 100%; border-collapse: collapse; color: #fff; margin-left: 5px;">
-                        <thead>
-                            <tr style="background-color: rgba(255,255,255,0.05);">
-                                <th style="padding: 10px; border: 1px solid #555; text-align: left; color: ${themeColor};">Animals/Plants</th>
-                                <th style="padding: 10px; border: 1px solid #555; text-align: left; color: ${themeColor};">Category of existence (Matched)</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td style="padding: 10px; border: 1px solid #555;">Black buck</td>
-                                <td style="padding: 10px; border: 1px solid #555; font-weight: bold;">Endangered</td>
-                            </tr>
-                            <tr>
-                                <td style="padding: 10px; border: 1px solid #555;">Asiatic elephant</td>
-                                <td style="padding: 10px; border: 1px solid #555; font-weight: bold;">Vulnerable</td>
-                            </tr>
-                            <tr>
-                                <td style="padding: 10px; border: 1px solid #555;">Andaman wild pig</td>
-                                <td style="padding: 10px; border: 1px solid #555; font-weight: bold;">Endemic</td>
-                            </tr>
-                            <tr>
-                                <td style="padding: 10px; border: 1px solid #555;">Himalayan brown bear</td>
-                                <td style="padding: 10px; border: 1px solid #555; font-weight: bold;">Rare</td>
-                            </tr>
-                            <tr>
-                                <td style="padding: 10px; border: 1px solid #555;">Pink head duck</td>
-                                <td style="padding: 10px; border: 1px solid #555; font-weight: bold;">Extinct</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <!-- 3. Match the following -->
-                <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 12px; font-size: 18px;">3. Match the following.</p>
-                    <table style="width: 100%; border-collapse: collapse; color: #fff; margin-left: 5px;">
-                        <thead>
-                            <tr style="background-color: rgba(255,255,255,0.05);">
-                                <th style="padding: 10px; border: 1px solid #555; text-align: left; color: ${themeColor};">Forest Type</th>
-                                <th style="padding: 10px; border: 1px solid #555; text-align: left; color: ${themeColor};">Definition / Matching Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td style="padding: 10px; border: 1px solid #555; font-weight: bold; width: 35%;">Reserved forests</td>
-                                <td style="padding: 10px; border: 1px solid #555;">forests are regarded as most valuable as far as the conservation of forest and wildlife resources</td>
-                            </tr>
-                            <tr>
-                                <td style="padding: 10px; border: 1px solid #555; font-weight: bold;">Protected forests</td>
-                                <td style="padding: 10px; border: 1px solid #555;">forest lands are protected from any further depletion</td>
-                            </tr>
-                            <tr>
-                                <td style="padding: 10px; border: 1px solid #555; font-weight: bold;">Unclassed forests</td>
-                                <td style="padding: 10px; border: 1px solid #555;">other forests and wastelands belonging to both government and private individuals and communities</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <!-- 4. Answer the following questions in about 30 words -->
-                <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 12px; font-size: 18px;">4. Answer the following questions in about 30 words.</p>
-                    
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: ${themeColor}; font-weight: bold; font-size: 16px;">(i) What is biodiversity? Why is biodiversity important for human lives?</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                            <b>Biodiversity:</b> The immense variety of life forms (flora, fauna, and micro-organisms) co-existing in a closely integrated web of life.
-                            <br/><b>Importance:</b> Humans are part of this ecosystem and depend on other living beings for survival. Biodiversity ensures resources like fresh air, clean water, and fertile soil are continuously replenished.
-                        </p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: ${themeColor}; font-weight: bold; font-size: 16px;">(ii) How have human activities affected the depletion of flora and fauna? Explain.</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                            Human activities have heavily depleted flora and fauna due to:
-                            <br/>• <b>Habitat Destruction:</b> Clearing forests for agriculture, railways, roads, and urbanization.
-                            <br/>• <b>Mining:</b> Large mining projects (e.g., dolomite mining in Buxa Tiger Reserve) submerge and damage forests.
-                            <br/>• <b>Poaching & Hunting:</b> Illegal trade in animal skin, horns, and bones.
-                            <br/>• <b>Pollution:</b> Chemical runoff and forest fires destroying natural ecosystems.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- 5. Answer the following questions in about 120 words -->
-                <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 12px; font-size: 18px;">5. Answer the following questions in about 120 words.</p>
-                    
-                    <div style="margin-left: 10px; margin-bottom: 22px;">
-                        <p style="color: ${themeColor}; font-weight: bold; font-size: 16px;">(i) Describe how communities have conserved and protected forests and wildlife in India?</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                            Indian local communities have always had a strong, traditional connection with nature conservation:
-                            <br/>• <b>Nature Worship:</b> Tribal groups worship sacred trees and groves (<i>Sarkas</i>). The Mundas and Santhals worship <i>mahua</i> and <i>kadamba</i> trees, protecting them from hacking.
-                            <br/>• <b>Chipko Movement:</b> Villagers in the Himalayas successfully resisted commercial logging by physically hugging trees, showing the strength of community action.
-                            <br/>• <b>Bhairodev Dakav 'Sonchuri':</b> In Alwar, Rajasthan, villagers declared 1,200 hectares of forest as their own protected sanctuary, banning hunting and regulating resource use with their own rules.
-                            <br/>• <b>Joint Forest Management (JFM):</b> Local village institutions work with the government to manage and restore degraded forests. Communities get non-timber forest products and a share in harvested timber.
-                            <br/>• <b>Bishnoi Communities:</b> In Rajasthan, blackbucks, nilgai, and peacocks are protected strictly by local Bishnois as family members.
-                        </p>
-                    </div>
-
-                    <div style="margin-left: 10px; margin-bottom: 18px;">
-                        <p style="color: ${themeColor}; font-weight: bold; font-size: 16px;">(ii) Write a note on good practices towards conserving forest and wildlife.</p>
-                        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                            Good practices for sustainable conservation of forest and wildlife include:
-                            <br/>• <b>Empowering Local Communities:</b> Making local villagers equal partners in forest planning and protection, as seen in Joint Forest Management (JFM).
-                            <br/>• <b>Sacred and Legal Protection:</b> Demarcating National Parks, Biosphere Reserves, and Wildlife Sanctuaries under legislative frameworks like the Wildlife (Protection) Act of 1972.
-                            <br/>• <b>Banning Poaching & Deforestation:</b> Implementing strict punishments for illegal hunting and trading of endangered species, and stopping commercial logging.
-                            <br/>• <b>Afforestation of Native Species:</b> Promoting the plantation of local, indigenous tree species (not monoculture plantations) to restore natural food chains.
-                            <br/>• <b>Spreading Public Awareness:</b> Launching campaigns like <i>Van Mahotsav</i> to educate school children and citizens on the value of biodiversity.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        `,
+  "id": "sst-geo-2",
+  "number": 2,
+  "title": "Forest and Wildlife Resources",
+  "isHtmlView": true,
+  "htmlOverview": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(38, 198, 218, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #26C6DA; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #26C6DA; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #B2EBF2; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #B2EBF2; font-weight: 700; }\n  .hl { color: #26C6DA; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #26C6DA; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #26C6DA; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(38, 198, 218, 0.10); border: 1.5px dashed #26C6DA; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #26C6DA; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(38, 198, 218, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(38, 198, 218, 0.18); border: 1px solid #26C6DA; color: #B2EBF2; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(38, 198, 218, 0.2); color: #B2EBF2; }\n  .q-card .q-text, .q-card .sub-q { color: #26C6DA !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 1. Biodiversity in India</div><div class=\"sol-step\"><div class=\"rev\">We share this planet with millions of other living beings — from micro-organisms and bacteria to banyan trees, elephants and blue whales. This entire habitat has immense <span class=\"hl\">biodiversity</span>. Humans and other living organisms form a complex web of ecological system in which we are only a part and very much dependent on it.</div><div class=\"pt\">India is one of the world's richest countries in biological diversity, with nearly <b>8%</b> of the world's total species (estimated 1.6 million).</div><div class=\"pt\">At least <b>10%</b> of India's recorded wild flora and <b>20%</b> of its mammals are on the threatened list.</div><div class=\"pt\">Many are 'critical' — on the verge of extinction: cheetah, pink-headed duck, mountain quail, forest spotted owlet; plants like <i>madhuca insignis</i> (wild mahua) and <i>hubbardia heptaneuron</i> (a grass).</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 249\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"249\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"20\" font-size=\"11.5\" fill=\"#26C6DA\" text-anchor=\"middle\" font-weight=\"700\">Conservation in India: Timeline</text><line x1=\"76\" y1=\"34\" x2=\"76\" y2=\"239.40000000000003\" stroke=\"rgba(38, 198, 218,0.55)\" stroke-width=\"2\"/><circle cx=\"76\" cy=\"39.5\" r=\"4\" fill=\"#26C6DA\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"43\" font-size=\"10\" fill=\"#26C6DA\" text-anchor=\"end\" font-weight=\"700\">1951–80</text><text x=\"88\" y=\"43.0\" font-size=\"9.5\" fill=\"#FFFFFF\">Over 26,200 sq km of forest converted</text><text x=\"88\" y=\"55.2\" font-size=\"9.5\" fill=\"#FFFFFF\">into farmland</text><circle cx=\"76\" cy=\"72.9\" r=\"4\" fill=\"#26C6DA\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"76.4\" font-size=\"10\" fill=\"#26C6DA\" text-anchor=\"end\" font-weight=\"700\">1952</text><text x=\"88\" y=\"76.4\" font-size=\"9.5\" fill=\"#FFFFFF\">Asiatic cheetah declared extinct in India</text><circle cx=\"76\" cy=\"94.10000000000001\" r=\"4\" fill=\"#26C6DA\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"97.60000000000001\" font-size=\"10\" fill=\"#26C6DA\" text-anchor=\"end\" font-weight=\"700\">1972</text><text x=\"88\" y=\"97.6\" font-size=\"9.5\" fill=\"#FFFFFF\">Indian Wildlife (Protection) Act</text><circle cx=\"76\" cy=\"115.30000000000001\" r=\"4\" fill=\"#26C6DA\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"118.80000000000001\" font-size=\"10\" fill=\"#26C6DA\" text-anchor=\"end\" font-weight=\"700\">1973</text><text x=\"88\" y=\"118.8\" font-size=\"9.5\" fill=\"#FFFFFF\">Project Tiger launched (tigers down to</text><text x=\"88\" y=\"131.0\" font-size=\"9.5\" fill=\"#FFFFFF\">1,827)</text><circle cx=\"76\" cy=\"148.70000000000002\" r=\"4\" fill=\"#26C6DA\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"152.20000000000002\" font-size=\"10\" fill=\"#26C6DA\" text-anchor=\"end\" font-weight=\"700\">1980, 1986</text><text x=\"88\" y=\"152.2\" font-size=\"9.5\" fill=\"#FFFFFF\">Butterflies, moths, beetles and a</text><text x=\"88\" y=\"164.4\" font-size=\"9.5\" fill=\"#FFFFFF\">dragonfly added to protected list</text><circle cx=\"76\" cy=\"182.10000000000002\" r=\"4\" fill=\"#26C6DA\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"185.60000000000002\" font-size=\"10\" fill=\"#26C6DA\" text-anchor=\"end\" font-weight=\"700\">1988</text><text x=\"88\" y=\"185.6\" font-size=\"9.5\" fill=\"#FFFFFF\">Odisha passes the first resolution for</text><text x=\"88\" y=\"197.8\" font-size=\"9.5\" fill=\"#FFFFFF\">Joint Forest Management</text><circle cx=\"76\" cy=\"215.50000000000003\" r=\"4\" fill=\"#26C6DA\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"219.00000000000003\" font-size=\"10\" fill=\"#26C6DA\" text-anchor=\"end\" font-weight=\"700\">1991</text><text x=\"88\" y=\"219.0\" font-size=\"9.5\" fill=\"#FFFFFF\">Plants added to the protected list for</text><text x=\"88\" y=\"231.2\" font-size=\"9.5\" fill=\"#FFFFFF\">the first time (six species)</text></svg></div><div class=\"diagram-caption\">Key steps in forest and wildlife conservation</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 2. Categories of Plants and Animals (IUCN)</div><div class=\"sol-step\"><div class=\"rev\">Based on the International Union for Conservation of Nature and Natural Resources (<b>IUCN</b>), species are classified as follows:</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 292\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"292\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#26C6DA\" text-anchor=\"middle\" font-weight=\"700\">IUCN Categories of Species</text><rect x=\"13\" y=\"30\" width=\"142\" height=\"84\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"84\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Normal</text><text x=\"84\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Population normal for</text><text x=\"84\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">survival: cattle, sal,</text><text x=\"84\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">pine, rodents</text><rect x=\"165\" y=\"30\" width=\"142\" height=\"84\" rx=\"6\" fill=\"rgba(239,83,80,0.16)\" stroke=\"#EF5350\" stroke-width=\"1.2\"/><text x=\"236\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Endangered</text><text x=\"236\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">In danger of extinction:</text><text x=\"236\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">black buck, crocodile,</text><text x=\"236\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Indian wild ass, Indian</text><text x=\"236\" y=\"92.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">rhino, lion-tailed</text><text x=\"236\" y=\"104.5\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">macaque, sangai</text><rect x=\"13\" y=\"122\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(255,183,77,0.16)\" stroke=\"#FFB74D\" stroke-width=\"1.2\"/><text x=\"84\" y=\"138.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Vulnerable</text><text x=\"84\" y=\"149.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Likely to become</text><text x=\"84\" y=\"161.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">endangered: blue sheep,</text><text x=\"84\" y=\"173.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Asiatic elephant,</text><text x=\"84\" y=\"184.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Gangetic dolphin</text><rect x=\"165\" y=\"122\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(255,183,77,0.16)\" stroke=\"#FFB74D\" stroke-width=\"1.2\"/><text x=\"236\" y=\"138.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Rare</text><text x=\"236\" y=\"149.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Small populations:</text><text x=\"236\" y=\"161.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Himalayan brown bear,</text><text x=\"236\" y=\"173.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">wild Asiatic buffalo,</text><text x=\"236\" y=\"184.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">desert fox, hornbill</text><rect x=\"13\" y=\"203\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(38, 198, 218,0.16)\" stroke=\"#26C6DA\" stroke-width=\"1.2\"/><text x=\"84\" y=\"219.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Endemic</text><text x=\"84\" y=\"230.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Only in particular</text><text x=\"84\" y=\"242.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">isolated areas: Andaman</text><text x=\"84\" y=\"254.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">teal, Nicobar pigeon,</text><text x=\"84\" y=\"265.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Andaman wild pig, mithun</text><rect x=\"165\" y=\"203\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(148,163,184,0.13)\" stroke=\"#94A3B8\" stroke-width=\"1.2\"/><text x=\"236\" y=\"219.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Extinct</text><text x=\"236\" y=\"230.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Not found after searches:</text><text x=\"236\" y=\"242.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Asiatic cheetah, pink</text><text x=\"236\" y=\"254.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">head duck</text></svg></div><div class=\"diagram-caption\">Six categories of existence</div></div><div class=\"exam\"><span class=\"exam-t\">📌 Asiatic cheetah</span><div>• The world's fastest land mammal; once widespread in Africa and Asia.</div><div>• Declared <b>extinct in India in 1952</b> due to loss of habitat and prey and hunting.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 3. Negative Factors that Cause Depletion</div><div class=\"sol-step\"><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 280\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"280\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#26C6DA\" text-anchor=\"middle\" font-weight=\"700\">Causes of Depletion of Flora and Fauna</text><rect x=\"13\" y=\"30\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(38, 198, 218,0.16)\" stroke=\"#26C6DA\" stroke-width=\"1.2\"/><text x=\"84\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Colonial period</text><text x=\"84\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Railways, agriculture,</text><text x=\"84\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">commercial and scientific</text><text x=\"84\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">forestry, mining</text><rect x=\"165\" y=\"30\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(38, 198, 218,0.16)\" stroke=\"#26C6DA\" stroke-width=\"1.2\"/><text x=\"236\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Agricultural expansion</text><text x=\"236\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">26,200 sq km forest to</text><text x=\"236\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">farmland (1951–80);</text><text x=\"236\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">shifting (jhum)</text><text x=\"236\" y=\"92.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">cultivation</text><rect x=\"13\" y=\"111\" width=\"142\" height=\"84\" rx=\"6\" fill=\"rgba(38, 198, 218,0.16)\" stroke=\"#26C6DA\" stroke-width=\"1.2\"/><text x=\"84\" y=\"127.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Enrichment plantations</text><text x=\"84\" y=\"138.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Monocultures: teak in</text><text x=\"84\" y=\"150.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">South India; chir pine</text><text x=\"84\" y=\"162.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">replacing oak and</text><text x=\"84\" y=\"173.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">rhododendron in the</text><text x=\"84\" y=\"185.5\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Himalayas</text><rect x=\"165\" y=\"111\" width=\"142\" height=\"84\" rx=\"6\" fill=\"rgba(38, 198, 218,0.16)\" stroke=\"#26C6DA\" stroke-width=\"1.2\"/><text x=\"236\" y=\"127.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Development projects</text><text x=\"236\" y=\"138.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Over 5,000 sq km cleared</text><text x=\"236\" y=\"150.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">for river valley projects</text><text x=\"236\" y=\"162.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">since 1951</text><rect x=\"13\" y=\"203\" width=\"142\" height=\"61\" rx=\"6\" fill=\"rgba(239,83,80,0.16)\" stroke=\"#EF5350\" stroke-width=\"1.2\"/><text x=\"84\" y=\"219.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Mining</text><text x=\"84\" y=\"230.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Dolomite mining threatens</text><text x=\"84\" y=\"242.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Buxa Tiger Reserve (West</text><text x=\"84\" y=\"254.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Bengal)</text><rect x=\"165\" y=\"203\" width=\"142\" height=\"61\" rx=\"6\" fill=\"rgba(239,83,80,0.16)\" stroke=\"#EF5350\" stroke-width=\"1.2\"/><text x=\"236\" y=\"219.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Other factors</text><text x=\"236\" y=\"230.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Habitat loss, hunting,</text><text x=\"236\" y=\"242.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">poaching, pollution,</text><text x=\"236\" y=\"254.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">poisoning, forest fires</text></svg></div><div class=\"diagram-caption\">How humans have depleted flora and fauna</div></div><div class=\"pt\">The <b>Narmada Sagar Project</b> in MP would inundate about <b>40,000 hectares</b> of forest.</div><div class=\"pt\">Buxa Tiger Reserve mining has disturbed habitats and blocked the migration route of several species, including the great Indian elephant.</div><div class=\"pt\">Many foresters blame grazing and fuel-wood collection, but a large part of the fuel-fodder demand is met by <b>lopping</b>, not by felling whole trees.</div><div class=\"sec\">Unequal consumption</div><div class=\"pt\">The average American consumes about <b>40 times</b> more resources than the average Somalian.</div><div class=\"pt\">The richest 5% of Indian society probably cause more ecological damage than the poorest 25%.</div><div class=\"sec\">Effects of depletion</div><div class=\"pt\">Loss of cultural diversity; forest-dependent communities lose their livelihood.</div><div class=\"pt\"><b>Women</b> bear the brunt — they walk longer distances for fuel, fodder and water.</div><div class=\"pt\">More droughts and floods hit the poor the hardest.</div><div class=\"exam\"><span class=\"exam-t\">📌 Himalayan Yew in trouble</span><div>• A medicinal plant found in Himachal Pradesh and Arunachal Pradesh.</div><div>• <b>Taxol</b>, extracted from its bark, needles, twigs and roots, is used to treat some cancers.</div><div>• Over-exploitation has killed thousands of yew trees.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 4. Conservation of Forest and Wildlife</div><div class=\"sol-step\"><div class=\"sec\">Why conserve?</div><div class=\"pt\">Preserves ecological diversity and life support systems — water, air and soil.</div><div class=\"pt\">Preserves the genetic diversity of plants and animals for better growth and breeding.</div><div class=\"pt\">Fisheries, for example, depend heavily on aquatic biodiversity.</div><div class=\"sec\">Indian Wildlife (Protection) Act, 1972</div><div class=\"pt\">An all-India list of protected species was published.</div><div class=\"pt\">Hunting was banned, habitats were given legal protection and trade in wildlife was restricted.</div><div class=\"pt\">National parks and wildlife sanctuaries were set up by central and state governments.</div><div class=\"pt\">Projects for specific animals: tiger, one-horned rhinoceros, Kashmir stag (<b>hangul</b>), three types of crocodiles (freshwater, saltwater and gharial), Asiatic lion and others. Recently the Indian elephant, black buck (chinkara), great Indian bustard (godawan) and snow leopard were given full or partial legal protection.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 351\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"351\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#26C6DA\" text-anchor=\"middle\" font-weight=\"700\">Project Tiger (1973)</text><rect x=\"30\" y=\"30\" width=\"260\" height=\"39\" rx=\"6\" fill=\"rgba(38, 198, 218,0.16)\" stroke=\"#26C6DA\" stroke-width=\"1.2\"/><text x=\"160\" y=\"46.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Turn of the 20th century</text><text x=\"160\" y=\"58.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">An estimated 55,000 tigers in India</text><line x1=\"160\" y1=\"70\" x2=\"160\" y2=\"77\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 82 L163.5 76 L156.5 76 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"83\" width=\"260\" height=\"39\" rx=\"6\" fill=\"rgba(239,83,80,0.16)\" stroke=\"#EF5350\" stroke-width=\"1.2\"/><text x=\"160\" y=\"99.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">1973</text><text x=\"160\" y=\"111.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Tiger population had dwindled to only 1,827</text><line x1=\"160\" y1=\"123\" x2=\"160\" y2=\"130\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 135 L163.5 129 L156.5 129 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"136\" width=\"260\" height=\"63\" rx=\"6\" fill=\"rgba(38, 198, 218,0.16)\" stroke=\"#26C6DA\" stroke-width=\"1.2\"/><text x=\"160\" y=\"152.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Threats</text><text x=\"160\" y=\"164.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Poaching for trade, shrinking habitat,</text><text x=\"160\" y=\"177.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">depleting prey, growing human population;</text><text x=\"160\" y=\"189.5\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">skins and bones traded</text><line x1=\"160\" y1=\"200\" x2=\"160\" y2=\"207\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 212 L163.5 206 L156.5 206 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"213\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"160\" y=\"229.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Project Tiger launched</text><text x=\"160\" y=\"241.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">One of the best-publicised wildlife campaigns</text><text x=\"160\" y=\"254.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">in the world</text><line x1=\"160\" y1=\"265\" x2=\"160\" y2=\"272\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 277 L163.5 271 L156.5 271 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"278\" width=\"260\" height=\"63\" rx=\"6\" fill=\"rgba(38, 198, 218,0.16)\" stroke=\"#26C6DA\" stroke-width=\"1.2\"/><text x=\"160\" y=\"294.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Tiger reserves (examples)</text><text x=\"160\" y=\"306.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Corbett (Uttarakhand), Sunderbans (West</text><text x=\"160\" y=\"319.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Bengal), Bandhavgarh (MP), Sariska</text><text x=\"160\" y=\"331.6\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">(Rajasthan), Manas (Assam), Periyar (Kerala)</text></svg></div><div class=\"diagram-caption\">Saving the tiger</div></div><div class=\"pt\">India and Nepal provide habitat to about <b>two-thirds</b> of the world's surviving tigers.</div><div class=\"pt\">The focus has shifted from a few species to biodiversity as a whole: insects were added to the protected list in 1980 and 1986, and plants (six species) in 1991.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 5. Types and Distribution of Forests</div><div class=\"sol-step\"><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 266\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"266\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#26C6DA\" text-anchor=\"middle\" font-weight=\"700\">Types of Forests (by Management)</text><rect x=\"60\" y=\"30\" width=\"200\" height=\"51\" rx=\"6\" fill=\"rgba(38, 198, 218,0.16)\" stroke=\"#26C6DA\" stroke-width=\"1.2\"/><text x=\"160\" y=\"46.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Classification of forests</text><text x=\"160\" y=\"58.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">As classified by the Forest</text><text x=\"160\" y=\"71.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Department</text><line x1=\"160\" y1=\"82\" x2=\"160\" y2=\"89\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 94 L163.5 88 L156.5 88 Z\" fill=\"#B0BEC5\"/><rect x=\"13\" y=\"96\" width=\"142\" height=\"61\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"84\" y=\"112.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Reserved forests</text><text x=\"84\" y=\"123.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">More than half of forest</text><text x=\"84\" y=\"135.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">land; most valuable for</text><text x=\"84\" y=\"147.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">conservation</text><rect x=\"165\" y=\"96\" width=\"142\" height=\"61\" rx=\"6\" fill=\"rgba(38, 198, 218,0.16)\" stroke=\"#26C6DA\" stroke-width=\"1.2\"/><text x=\"236\" y=\"112.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Protected forests</text><text x=\"236\" y=\"123.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">About one-third of forest</text><text x=\"236\" y=\"135.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">area; protected from</text><text x=\"236\" y=\"147.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">further depletion</text><rect x=\"89\" y=\"165\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(255,183,77,0.16)\" stroke=\"#FFB74D\" stroke-width=\"1.2\"/><text x=\"160\" y=\"181.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Unclassed forests</text><text x=\"160\" y=\"192.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Other forests and</text><text x=\"160\" y=\"204.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">wastelands of government,</text><text x=\"160\" y=\"216.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">private individuals and</text><text x=\"160\" y=\"227.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">communities</text><text x=\"160\" y=\"252\" font-size=\"9.5\" fill=\"#26C6DA\" text-anchor=\"middle\" font-weight=\"700\">Reserved + protected = permanent forest estates</text></svg></div><div class=\"diagram-caption\">Classification of forests by the Forest Department</div></div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Type</th><th>States with large share</th></tr><tr><td>Permanent forests</td><td><b>Madhya Pradesh</b> has the largest area — 75% of its forest area</td></tr><tr><td>Reserved forests</td><td>J&K, Andhra Pradesh, Uttarakhand, Kerala, Tamil Nadu, West Bengal, Maharashtra</td></tr><tr><td>Protected forests</td><td>Bihar, Haryana, Punjab, Himachal Pradesh, Odisha, Rajasthan</td></tr><tr><td>Unclassed forests</td><td>All north-eastern states and parts of Gujarat (managed by local communities)</td></tr></table></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 6. Community and Conservation</div><div class=\"sol-step\"><div class=\"rev\">Conservation strategies are not new in India. Forests are home to some traditional communities, and in many areas local people work with government officials to protect habitats — or protect them on their own.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 292\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"292\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#26C6DA\" text-anchor=\"middle\" font-weight=\"700\">Community and Conservation</text><rect x=\"13\" y=\"30\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(38, 198, 218,0.16)\" stroke=\"#26C6DA\" stroke-width=\"1.2\"/><text x=\"84\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Sacred groves</text><text x=\"84\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Virgin forests of gods</text><text x=\"84\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">and goddesses, left</text><text x=\"84\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">untouched by local people</text><rect x=\"165\" y=\"30\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(38, 198, 218,0.16)\" stroke=\"#26C6DA\" stroke-width=\"1.2\"/><text x=\"236\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Chipko Movement</text><text x=\"236\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Himalayas: resisted</text><text x=\"236\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">deforestation; community</text><text x=\"236\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">afforestation with native</text><text x=\"236\" y=\"92.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">species</text><rect x=\"13\" y=\"111\" width=\"142\" height=\"84\" rx=\"6\" fill=\"rgba(38, 198, 218,0.16)\" stroke=\"#26C6DA\" stroke-width=\"1.2\"/><text x=\"84\" y=\"127.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Beej Bachao Andolan,</text><text x=\"84\" y=\"138.7\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Navdanya</text><text x=\"84\" y=\"150.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Tehri: diverse crops</text><text x=\"84\" y=\"162.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">without synthetic</text><text x=\"84\" y=\"173.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">chemicals</text><rect x=\"165\" y=\"111\" width=\"142\" height=\"84\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"236\" y=\"127.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Joint Forest</text><text x=\"236\" y=\"138.7\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Management</text><text x=\"236\" y=\"150.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">From 1988 (Odisha):</text><text x=\"236\" y=\"162.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">villages protect degraded</text><text x=\"236\" y=\"173.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">forests and share</text><text x=\"236\" y=\"185.5\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">benefits</text><rect x=\"13\" y=\"203\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(38, 198, 218,0.16)\" stroke=\"#26C6DA\" stroke-width=\"1.2\"/><text x=\"84\" y=\"219.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Bhairodev Dakav</text><text x=\"84\" y=\"230.7\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">'Sonchuri'</text><text x=\"84\" y=\"242.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Alwar (Rajasthan): 5</text><text x=\"84\" y=\"254.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">villages protect 1,200 ha</text><text x=\"84\" y=\"265.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">with their own rules</text><rect x=\"165\" y=\"203\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(38, 198, 218,0.16)\" stroke=\"#26C6DA\" stroke-width=\"1.2\"/><text x=\"236\" y=\"219.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Bishnois</text><text x=\"236\" y=\"230.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Rajasthan: blackbuck,</text><text x=\"236\" y=\"242.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">nilgai and peacocks</text><text x=\"236\" y=\"254.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">protected as part of the</text><text x=\"236\" y=\"265.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">community</text></svg></div><div class=\"diagram-caption\">People's efforts to conserve forests and wildlife</div></div><div class=\"pt\">In <b>Sariska Tiger Reserve</b>, villagers fought against mining by citing the Wildlife Protection Act.</div><div class=\"pt\"><b>JFM:</b> village institutions protect degraded forest land managed by the forest department; in return they get non-timber forest produce and a share in the timber harvested through 'successful protection'.</div><div class=\"sec\">Nature worship</div><div class=\"pt\">The <b>Mundas and Santhals</b> of Chota Nagpur worship <b>mahua and kadamba</b> trees.</div><div class=\"pt\">Tribals of Odisha and Bihar worship <b>tamarind and mango</b> trees during weddings.</div><div class=\"pt\"><b>Peepal and banyan</b> are considered sacred; macaques and langurs are fed around temples.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ Quick Glossary</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Term</th><th>Meaning</th></tr><tr><td>Biodiversity</td><td>The variety of life forms — flora, fauna and micro-organisms — in a region</td></tr><tr><td>Flora / Fauna</td><td>Plants / animals of a particular region or period</td></tr><tr><td>Endemic species</td><td>Species found only in a particular area isolated by natural barriers</td></tr><tr><td>Shifting (jhum) cultivation</td><td>'Slash and burn' agriculture</td></tr><tr><td>Enrichment plantation</td><td>Planting a single commercially valuable species (monoculture)</td></tr><tr><td>Sacred groves</td><td>Forests left in virgin form as abodes of gods and goddesses</td></tr><tr><td>Permanent forest estates</td><td>Reserved and protected forests maintained for timber, forest produce and protection</td></tr><tr><td>JFM</td><td>Joint Forest Management — local communities and the forest department managing forests together</td></tr></table></div></div>\n  </div>\n\n</div>",
+  "htmlExercises": {
+    "sg2-ex-all": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(38, 198, 218, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #26C6DA; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #26C6DA; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #B2EBF2; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #B2EBF2; font-weight: 700; }\n  .hl { color: #26C6DA; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #26C6DA; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #26C6DA; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(38, 198, 218, 0.10); border: 1.5px dashed #26C6DA; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #26C6DA; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(38, 198, 218, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(38, 198, 218, 0.18); border: 1px solid #26C6DA; color: #B2EBF2; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(38, 198, 218, 0.2); color: #B2EBF2; }\n  .q-card .q-text, .q-card .sub-q { color: #26C6DA !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Multiple choice questions.<br/>(i) Which of these statements is not a valid reason for the depletion of flora and fauna?<br/>(a) Agricultural expansion.<br/>(b) Large scale developmental projects.<br/>(c) Grazing and fuel wood collection.<br/>(d) Rapid industrialisation and urbanisation.<br/>(ii) Which of the following conservation strategies do not directly involve community participation?<br/>(a) Joint forest management<br/>(b) Beej Bachao Andolan<br/>(c) Chipko Movement<br/>(d) Demarcation of Wildlife sanctuaries</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">(i) <b>(c) Grazing and fuel wood collection</b> — much of the fuel-fodder demand is met by lopping, not felling whole trees.</div><div class=\"pt\">(ii) <b>(d) Demarcation of Wildlife sanctuaries</b> — it is done by the government.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Match the following animals with their category of existence.<br/>Black buck, Asiatic elephant, Andaman wild pig, Himalayan brown bear, Pink head duck — Extinct, Rare, Endangered, Vulnerable, Endemic</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Animal</th><th>Category</th></tr><tr><td>Black buck</td><td><b>Endangered</b></td></tr><tr><td>Asiatic elephant</td><td><b>Vulnerable</b></td></tr><tr><td>Andaman wild pig</td><td><b>Endemic</b></td></tr><tr><td>Himalayan brown bear</td><td><b>Rare</b></td></tr><tr><td>Pink head duck</td><td><b>Extinct</b></td></tr></table></div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Match the following.<br/>Reserved forests, Protected forests, Unclassed forests — with: (a) other forests and wastelands belonging to both government and private individuals and communities; (b) forests are regarded as most valuable as far as the conservation of forest and wildlife resources; (c) forest lands are protected from any further depletion</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Forest</th><th>Description</th></tr><tr><td>Reserved forests</td><td>(b) Most valuable as far as the conservation of forest and wildlife resources</td></tr><tr><td>Protected forests</td><td>(c) Protected from any further depletion</td></tr><tr><td>Unclassed forests</td><td>(a) Other forests and wastelands belonging to government, private individuals and communities</td></tr></table></div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">Answer the following questions in about 30 words.<br/>(i) What is biodiversity? Why is biodiversity important for human lives?<br/>(ii) How have human activities affected the depletion of flora and fauna? Explain.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">(i)</div><div class=\"pt\"><b>Biodiversity</b> is the variety of life forms — plants, animals and micro-organisms — that are interdependent and form a complex web of life.</div><div class=\"pt\">Humans are part of this web and depend on it for water, air, soil, food, medicines and other resources; biodiversity keeps ecosystems stable.</div><div class=\"sub-q\">(ii)</div><div class=\"pt\">Clearing forests for agriculture, railways, industries, mining and large dams destroyed habitats.</div><div class=\"pt\">Monoculture plantations, shifting cultivation, hunting, poaching, pollution and forest fires further depleted flora and fauna.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5.</div>\n    <div class=\"q-text\">Answer the following questions in about 120 words.<br/>(i) Describe how communities have conserved and protected forests and wildlife in India?<br/>(ii) Write a note on good practices towards conserving forest and wildlife.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">(i)</div><div class=\"pt\"><b>Sariska Tiger Reserve:</b> villagers fought against mining using the Wildlife Protection Act.</div><div class=\"pt\"><b>Alwar (Rajasthan):</b> five villages declared 1,200 hectares as the Bhairodev Dakav 'Sonchuri', with their own rules banning hunting.</div><div class=\"pt\"><b>Chipko Movement:</b> resisted deforestation in the Himalayas and promoted community afforestation with native species.</div><div class=\"pt\"><b>Beej Bachao Andolan (Tehri) and Navdanya:</b> showed diversified farming without synthetic chemicals.</div><div class=\"pt\"><b>Joint Forest Management</b> (from 1988, Odisha): villages protect degraded forests and share the benefits.</div><div class=\"pt\"><b>Nature worship:</b> sacred groves; Mundas and Santhals worship mahua and kadamba; Bishnois protect blackbuck, nilgai and peacocks.</div><div class=\"sub-q\">(ii)</div><div class=\"pt\">Legal protection under the Wildlife (Protection) Act, 1972 — ban on hunting and trade; national parks and sanctuaries.</div><div class=\"pt\">Species projects such as Project Tiger (1973) and protection of the rhino, hangul, crocodiles and Asiatic lion.</div><div class=\"pt\">Protecting whole biodiversity — insects and plants added to the protected list.</div><div class=\"pt\">Involving local communities through JFM and respecting traditional practices like sacred groves.</div><div class=\"pt\">Afforestation with native species instead of monocultures, and sustainable use of forest produce.</div></div></div>\n  </div>\n\n</div>",
+    "sg2-ex-board": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(38, 198, 218, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #26C6DA; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #26C6DA; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #B2EBF2; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #B2EBF2; font-weight: 700; }\n  .hl { color: #26C6DA; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #26C6DA; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #26C6DA; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(38, 198, 218, 0.10); border: 1.5px dashed #26C6DA; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #26C6DA; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(38, 198, 218, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(38, 198, 218, 0.18); border: 1px solid #26C6DA; color: #B2EBF2; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(38, 198, 218, 0.2); color: #B2EBF2; }\n  .q-card .q-text, .q-card .sub-q { color: #26C6DA !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\"><div class=\"q-title\">✦ Section A: Very Short Answer (1 Mark)</div></div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">What percentage of the world's species does India have?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Nearly <b>8%</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Give one example of an endemic species.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Andaman wild pig</b> (also Nicobar pigeon, Andaman teal, mithun).</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">When was the Asiatic cheetah declared extinct in India?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">In <b>1952</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">When was the Indian Wildlife (Protection) Act implemented?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">In <b>1972</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">When was Project Tiger launched?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">In <b>1973</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q6. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Which state has the largest area under permanent forests?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Madhya Pradesh</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q7. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">What is taxol?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">A chemical extracted from the Himalayan yew, used to treat some cancers.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q8. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Which state passed the first resolution for Joint Forest Management?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Odisha</b>, in 1988.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q9. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Which tiger reserve is threatened by dolomite mining?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Buxa Tiger Reserve</b> (West Bengal).</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q10. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Name the community of Rajasthan that protects blackbuck and nilgai.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">The <b>Bishnois</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\"><div class=\"q-title\">✦ Section B: Short Answer (3 Marks)</div></div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q11. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">Distinguish between endangered and vulnerable species with examples.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Endangered</th><th>Vulnerable</th></tr><tr><td>Species in danger of extinction</td><td>Species likely to become endangered if negative factors continue</td></tr><tr><td>Survival is difficult if negative factors continue</td><td>Population has declined to levels from where it may move into the endangered category</td></tr><tr><td>e.g. black buck, crocodile, Indian rhino</td><td>e.g. blue sheep, Asiatic elephant, Gangetic dolphin</td></tr></table></div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q12. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">Why is conservation of forest and wildlife essential?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">It preserves ecological diversity and life support systems — water, air and soil.</div><div class=\"pt\">It preserves genetic diversity for better growth and breeding of species.</div><div class=\"pt\">Activities like fisheries and agriculture depend on biodiversity.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q13. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">What is Joint Forest Management (JFM)?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">A programme involving local communities in the management and restoration of degraded forests, formally begun in 1988 when Odisha passed the first resolution.</div><div class=\"pt\">Village institutions undertake protection activities on degraded forest land managed by the forest department.</div><div class=\"pt\">In return, members get non-timber forest produce and a share in the timber harvested by successful protection.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q14. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">How have enrichment plantations harmed biodiversity?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Large areas were planted with a single commercially valuable species (monoculture).</div><div class=\"pt\">Teak monoculture damaged natural forests in South India; chir pine plantations replaced Himalayan oak and rhododendron forests.</div><div class=\"pt\">Other species lost their habitat and food, reducing biodiversity.</div></div></div>\n  </div>\n\n  <div class=\"q-card\"><div class=\"q-title\">✦ Section C: Long Answer (5 Marks)</div></div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q15. <span class=\"badge\">5 Marks</span></div>\n    <div class=\"q-text\">Describe the negative factors that have caused the depletion of flora and fauna in India.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Colonial period:</b> expansion of railways, agriculture, commercial and scientific forestry and mining.</div><div class=\"pt\"><b>Agricultural expansion:</b> over 26,200 sq km of forest converted to farmland between 1951 and 1980; shifting cultivation in tribal areas.</div><div class=\"pt\"><b>Development projects:</b> over 5,000 sq km cleared for river valley projects; Narmada Sagar to submerge 40,000 hectares.</div><div class=\"pt\"><b>Mining:</b> dolomite mining in Buxa Tiger Reserve.</div><div class=\"pt\"><b>Others:</b> monoculture plantations, habitat destruction, hunting, poaching, pollution, forest fires and unequal consumption.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q16. <span class=\"badge\">5 Marks</span></div>\n    <div class=\"q-text\">Explain Project Tiger and its significance.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Tiger population fell from about 55,000 at the turn of the 20th century to 1,827 in 1973.</div><div class=\"pt\">Threats: poaching for skins and bones, shrinking habitat, depleting prey and growing human population.</div><div class=\"pt\">Project Tiger was launched in 1973 — one of the best-publicised wildlife campaigns in the world.</div><div class=\"pt\">Tiger reserves include Corbett, Sunderbans, Bandhavgarh, Sariska, Manas and Periyar.</div><div class=\"pt\">Saving the tiger protects whole ecosystems; India and Nepal hold about two-thirds of the world's tigers.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q17. <span class=\"badge\">4 Marks</span></div>\n    <div class=\"q-text\"><b>Source-based:</b> Read the source and answer the questions.<br/><i>“In 1973, the authorities realised that the tiger population had dwindled to 1,827 from an estimated 55,000 at the turn of the century. The major threats to tiger population are numerous, such as poaching for trade, shrinking habitat, depletion of prey base species, growing human population, etc.”</i><br/>(i) What was the tiger population in 1973? (1)<br/>(ii) Name any two threats to tigers. (1)<br/>(iii) Name any two tiger reserves of India with their states. (2)</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">(i)</div><div class=\"pt\"><b>1,827</b>.</div><div class=\"sub-q\">(ii)</div><div class=\"pt\">Poaching for trade and shrinking habitat.</div><div class=\"sub-q\">(iii)</div><div class=\"pt\">Corbett National Park — Uttarakhand.</div><div class=\"pt\">Sunderbans National Park — West Bengal.</div></div></div>\n  </div>\n\n</div>"
   },
-  exercises: [
+  "introduction": "Did you know that India is one of the world's richest countries in terms of its vast array of biological diversity? Our planet shares life with millions of other living beings, from micro-organisms to elephants. But due to our greed, this beautiful web of life is under severe threat. Let's learn how we categorize species and what conservation efforts we can make.",
+  "definitions": [],
+  "keyPoints": [],
+  "formulas": [],
+  "crux": [],
+  "mcqs": [
     {
-      id: "sg2-ex-all",
-      name: "Exercise Questions",
-      questions: [],
+      "id": "sg2-mcq-1",
+      "question": "<div style='text-align: justify;'>Which of these is NOT a valid reason for the depletion of flora and fauna?</div>",
+      "options": [
+        "A):   Agricultural expansion",
+        "B):   Large-scale development projects",
+        "C):   Grazing and fuel wood collection",
+        "D):   Rapid industrialisation and urbanisation"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Much of the fuel-fodder demand is met by lopping, not felling.</div>"
     },
+    {
+      "id": "sg2-mcq-2",
+      "question": "<div style='text-align: justify;'>Which conservation strategy does NOT directly involve community participation?</div>",
+      "options": [
+        "A):   Demarcation of wildlife sanctuaries",
+        "B):   Beej Bachao Andolan",
+        "C):   Chipko Movement",
+        "D):   Joint Forest Management"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Sanctuaries are demarcated by the government.</div>"
+    },
+    {
+      "id": "sg2-mcq-3",
+      "question": "<div style='text-align: justify;'>India has nearly what percentage of the world's species?</div>",
+      "options": [
+        "A):   2%",
+        "B):   20%",
+        "C):   15%",
+        "D):   8%"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>India is one of the richest countries in biodiversity.</div>"
+    },
+    {
+      "id": "sg2-mcq-4",
+      "question": "<div style='text-align: justify;'>The black buck belongs to which category?</div>",
+      "options": [
+        "A):   Normal",
+        "B):   Endangered",
+        "C):   Rare",
+        "D):   Extinct"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>It is in danger of extinction.</div>"
+    },
+    {
+      "id": "sg2-mcq-5",
+      "question": "<div style='text-align: justify;'>The Asiatic elephant is a:</div>",
+      "options": [
+        "A):   Vulnerable species",
+        "B):   Extinct species",
+        "C):   Endemic species",
+        "D):   Normal species"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>It may become endangered if threats continue.</div>"
+    },
+    {
+      "id": "sg2-mcq-6",
+      "question": "<div style='text-align: justify;'>The Andaman wild pig is an example of:</div>",
+      "options": [
+        "A):   Rare species",
+        "B):   Vulnerable species",
+        "C):   Endemic species",
+        "D):   Extinct species"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>It is found only in the Andaman Islands.</div>"
+    },
+    {
+      "id": "sg2-mcq-7",
+      "question": "<div style='text-align: justify;'>Which of these is an extinct species?</div>",
+      "options": [
+        "A):   Hornbill",
+        "B):   Pink head duck",
+        "C):   Gangetic dolphin",
+        "D):   Desert fox"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>The Asiatic cheetah is also extinct in India.</div>"
+    },
+    {
+      "id": "sg2-mcq-8",
+      "question": "<div style='text-align: justify;'>Mithun is an endemic species of:</div>",
+      "options": [
+        "A):   Assam",
+        "B):   Rajasthan",
+        "C):   Kerala",
+        "D):   Arunachal Pradesh"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Endemic species live in isolated areas.</div>"
+    },
+    {
+      "id": "sg2-mcq-9",
+      "question": "<div style='text-align: justify;'>Chir pine plantations in the Himalayas replaced forests of:</div>",
+      "options": [
+        "A):   Teak and sal",
+        "B):   Mangroves",
+        "C):   Bamboo",
+        "D):   Oak and rhododendron"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>This is an example of enrichment plantation.</div>"
+    },
+    {
+      "id": "sg2-mcq-10",
+      "question": "<div style='text-align: justify;'>Buxa Tiger Reserve is threatened by:</div>",
+      "options": [
+        "A):   Coal mining",
+        "B):   Dolomite mining",
+        "C):   Iron ore mining",
+        "D):   Mica mining"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>It also blocked the migration route of elephants.</div>"
+    },
+    {
+      "id": "sg2-mcq-11",
+      "question": "<div style='text-align: justify;'>Taxol, used for treating cancer, is obtained from:</div>",
+      "options": [
+        "A):   Neem",
+        "B):   Mahua",
+        "C):   Himalayan yew",
+        "D):   Sal"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Over-exploitation threatens the yew.</div>"
+    },
+    {
+      "id": "sg2-mcq-12",
+      "question": "<div style='text-align: justify;'>The Indian Wildlife (Protection) Act was implemented in:</div>",
+      "options": [
+        "A):   1972",
+        "B):   1952",
+        "C):   1980",
+        "D):   1991"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>It banned hunting and restricted trade in wildlife.</div>"
+    },
+    {
+      "id": "sg2-mcq-13",
+      "question": "<div style='text-align: justify;'>In 1973, India's tiger population had fallen to:</div>",
+      "options": [
+        "A):   55,000",
+        "B):   18,270",
+        "C):   5,000",
+        "D):   1,827"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>This led to Project Tiger.</div>"
+    },
+    {
+      "id": "sg2-mcq-14",
+      "question": "<div style='text-align: justify;'>Corbett National Park is located in:</div>",
+      "options": [
+        "A):   Uttarakhand",
+        "B):   Assam",
+        "C):   Kerala",
+        "D):   Madhya Pradesh"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>It is one of India's tiger reserves.</div>"
+    },
+    {
+      "id": "sg2-mcq-15",
+      "question": "<div style='text-align: justify;'>Hangul is the name of the:</div>",
+      "options": [
+        "A):   Indian bustard",
+        "B):   Snow leopard",
+        "C):   Kashmir stag",
+        "D):   Asiatic lion"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>It is protected under a special project.</div>"
+    },
+    {
+      "id": "sg2-mcq-16",
+      "question": "<div style='text-align: justify;'>Plants were added to the list of protected species for the first time in:</div>",
+      "options": [
+        "A):   1972",
+        "B):   1991",
+        "C):   1986",
+        "D):   1980"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Six species were added first.</div>"
+    },
+    {
+      "id": "sg2-mcq-17",
+      "question": "<div style='text-align: justify;'>More than half of India's forest land is:</div>",
+      "options": [
+        "A):   Protected forest",
+        "B):   Reserved forest",
+        "C):   Unclassed forest",
+        "D):   Community forest"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Reserved forests are most valuable for conservation.</div>"
+    },
+    {
+      "id": "sg2-mcq-18",
+      "question": "<div style='text-align: justify;'>Which state has the largest area under permanent forests?</div>",
+      "options": [
+        "A):   Odisha",
+        "B):   Kerala",
+        "C):   Assam",
+        "D):   Madhya Pradesh"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>It forms 75% of the state's forest area.</div>"
+    },
+    {
+      "id": "sg2-mcq-19",
+      "question": "<div style='text-align: justify;'>All north-eastern states have a high percentage of:</div>",
+      "options": [
+        "A):   Reserved forests",
+        "B):   Protected forests",
+        "C):   Unclassed forests",
+        "D):   Permanent forests"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>These are managed by local communities.</div>"
+    },
+    {
+      "id": "sg2-mcq-20",
+      "question": "<div style='text-align: justify;'>Bhairodev Dakav 'Sonchuri' is located in:</div>",
+      "options": [
+        "A):   Alwar, Rajasthan",
+        "B):   Tehri, Uttarakhand",
+        "C):   Sariska, MP",
+        "D):   Jhabua, MP"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Five villages protect 1,200 hectares of forest.</div>"
+    },
+    {
+      "id": "sg2-mcq-21",
+      "question": "<div style='text-align: justify;'>The Mundas and Santhals worship which trees?</div>",
+      "options": [
+        "A):   Peepal and banyan",
+        "B):   Tamarind and mango",
+        "C):   Mahua and kadamba",
+        "D):   Neem and sal"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Tribals of Odisha and Bihar worship tamarind and mango.</div>"
+    },
+    {
+      "id": "sg2-mcq-22",
+      "question": "<div style='text-align: justify;'>Arrange in chronological order: (i) Project Tiger (ii) Asiatic cheetah declared extinct (iii) Wildlife Protection Act (iv) First JFM resolution</div>",
+      "options": [
+        "A):   (ii), (iii), (i), (iv)",
+        "B):   (iii), (ii), (i), (iv)",
+        "C):   (ii), (i), (iii), (iv)",
+        "D):   (ii), (iii), (iv), (i)"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>1952 → 1972 → 1973 → 1988.</div>"
+    },
+    {
+      "id": "sg2-mcq-23",
+      "question": "<div style='text-align: justify;'>Match: (P) Sunderbans (Q) Periyar (R) Manas (S) Bandhavgarh — with (1) Assam (2) West Bengal (3) Madhya Pradesh (4) Kerala</div>",
+      "options": [
+        "A):   P-1, Q-4, R-3, S-2",
+        "B):   P-4, Q-2, R-1, S-3",
+        "C):   P-2, Q-1, R-4, S-3",
+        "D):   P-2, Q-4, R-1, S-3"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Each tiger reserve matches its state.</div>"
+    },
+    {
+      "id": "sg2-mcq-24",
+      "question": "<div style='text-align: justify;'>Assertion (A): Women bear the brunt of the depletion of forests. Reason (R): Women have to walk longer distances to collect fuel, fodder and water.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>R explains why women suffer most.</div>"
+    },
+    {
+      "id": "sg2-mcq-25",
+      "question": "<div style='text-align: justify;'>Assertion (A): Unclassed forests are owned only by the government. Reason (R): Most north-eastern states have a high percentage of unclassed forests.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Unclassed forests belong to government, individuals and communities.</div>"
+    }
   ],
-  examples: [],
-  mcqs: [
+  "summary": [],
+  "exercises": [
     {
-      id: "sg2-mcq-1",
-      question:
-        "Which of these statements is not a valid reason for the depletion of flora and fauna?",
-      options: [
-        "Agricultural expansion",
-        "Large scale developmental projects",
-        "Grazing and fuel wood collection",
-        "Rapid industrialisation and urbanisation",
-      ],
-      correctAnswer: "c",
+      "id": "sg2-ex-all",
+      "name": "Exercise",
+      "questions": []
     },
     {
-      id: "sg2-mcq-2",
-      question:
-        "Which of the following conservation strategies do not directly involve community participation?",
-      options: [
-        "Joint forest management",
-        "Beej Bachao Andolan",
-        "Chipko Movement",
-        "Demarcation of Wildlife sanctuaries",
-      ],
-      correctAnswer: "d",
-    },
-    {
-      id: "sg2-mcq-3",
-      question: "The Asiatic Cheetah was declared extinct in India in which year?",
-      options: ["1952", "1972", "1983", "1992"],
-      correctAnswer: "a",
-    },
-    {
-      id: "sg2-mcq-4",
-      question: "Which state has the largest area under permanent forests?",
-      options: ["Odisha", "Madhya Pradesh", "West Bengal", "Kerala"],
-      correctAnswer: "b",
-    },
-    {
-      id: "sg2-mcq-5",
-      question: "The famous Chipko Movement was launched in which region?",
-      options: ["Himalayas", "Deccan Plateau", "Western Ghats", "Thar Desert"],
-      correctAnswer: "a",
-    },
-    {
-      id: "sg2-mcq-6",
-      question:
-        "In which state was the Joint Forest Management (JFM) resolution first passed?",
-      options: ["Odisha", "Bihar", "Gujarat", "Assam"],
-      correctAnswer: "a",
-    },
-    {
-      id: "sg2-mcq-7",
-      question:
-        "Which Tiger Reserve in West Bengal is seriously threatened by dolomite mining?",
-      options: [
-        "Corbett National Park",
-        "Buxa Tiger Reserve",
-        "Sundarbans National Park",
-        "Bandhavgarh National Park",
-      ],
-      correctAnswer: "b",
-    },
-    {
-      id: "sg2-mcq-8",
-      question: "When was the Indian Wildlife (Protection) Act implemented?",
-      options: ["1952", "1972", "1983", "1992"],
-      correctAnswer: "b",
-    },
-    {
-      id: "sg2-mcq-9",
-      question:
-        "Forests belonging to both government and private individuals/communities are called:",
-      options: [
-        "Reserved Forests",
-        "Protected Forests",
-        "Unclassed Forests",
-        "Sacred Groves",
-      ],
-      correctAnswer: "c",
-    },
-    {
-      id: "sg2-mcq-10",
-      question:
-        "The Chota Nagpur region's Mundas and Santhals worship which of the following trees?",
-      options: ["Mahua and Kadamba", "Mango and Peepal", "Banyan and Neem", "Tamarind and Sal"],
-      correctAnswer: "a",
-    },
+      "id": "sg2-ex-board",
+      "name": "Board Qs",
+      "questions": []
+    }
   ],
+  "examples": []
 };
