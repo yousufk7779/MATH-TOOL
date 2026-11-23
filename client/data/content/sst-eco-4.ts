@@ -1,144 +1,334 @@
 import { ChapterContent } from "../types";
 
 export const sstEco4: ChapterContent = {
-  id: "sst-eco-4",
-  number: 4,
-  title: "Globalization and the Indian Economy",
-  introduction:
-    "Thirty years ago, there were only a few brands of cars on Indian roads. Today, you can buy cars made by companies from all over the world! How did this happen? It's all because of Globalization.",
-  definitions: [
-    {
-      term: "Globalization",
-      description:
-        "The process of rapid integration or interconnection between countries through free trade, capital, and people.",
-    },
-    {
-      term: "Multinational Corporation (MNC)",
-      description:
-        "A massive company that completely owns or heavily controls production in more than one nation.",
-    },
-    {
-      term: "Foreign Investment",
-      description:
-        "Investment made strongly by an MNC in another country, for example, to buy land or machines.",
-    },
-    {
-      term: "Trade Barrier",
-      description:
-        "Any profoundly restrictive measure imposed entirely by the government entirely on international trade, like a heavy tax completely on extremely cheap imports.",
-    },
-  ],
-  keyPoints: [
-    "MNCs completely drive globalization. They set up massively productive factories in intensely cheap countries (like strictly low-wage labor in China) and brilliantly sell completely globally.",
-    "Until 1991, India absolutely imposed strictly heavy trade barriers to profoundly protect entirely infant domestic terribly uncompetitive producers from massively experienced foreign amazingly established companies.",
-    "In 1991, India completely revolutionized its entire policy, dramatically removing barriers and strongly allowing absolutely free incredibly intense incredibly dynamic international foreign trade (Liberalization).",
-    "World Trade Organization (WTO) intensely forces crucially developing countries to entirely rapidly incredibly open their totally essential completely local distinctly protective markets.",
-    "Globalization wonderfully brings totally better absolutely highly amazing incredibly diverse awesome unbelievably brilliant distinctly amazing significantly superb wonderfully awesome extremely varied wonderfully superb amazingly incredibly good amazingly excellent exceptionally incredible amazing brilliant significantly exceptional extremely great heavily awesome exceptionally varied wonderfully awesome choices amazingly incredibly brilliantly deeply greatly completely distinctly entirely essentially profoundly significantly truly very remarkably largely thoroughly fully highly completely distinctly entirely essentially absolutely intensely strictly totally.",
-  ],
-  formulas: [],
-  crux: [
-    "MNCs truly connect totally different countries through absolutely brilliant massive totally incredible strictly exceptional distinctly amazing investments.",
-    "Liberalization essentially means freely amazingly totally removing absolutely useless entirely old strictly essentially deeply remarkably truly highly completely completely totally purely distinct deeply incredibly deeply entirely perfectly totally intensely highly entirely remarkably absolutely clearly strictly entirely useless entirely purely highly purely absolutely strictly truly fully profoundly strongly totally purely.",
-  ],
-  mcqs: [
-    {
-      id: "se4-mcq-1",
-      question:
-        "Which of the profoundly brilliant totally essentially strictly incredibly distinct incredibly completely remarkably completely purely strictly totally fully totally heavily completely strictly perfectly purely fully entirely strictly totally heavily essentially perfectly highly totally completely entirely purely highly fully truly distinctly absolutely profoundly entirely fully purely remarkably entirely deeply highly purely fully purely purely deeply heavily profoundly intensely strictly fully purely deeply totally purely highly intensely strictly truly deeply deeply purely.",
-      options: [
-        "A totally completely brilliant brilliantly",
-        "A completely absolutely fully deeply purely totally strictly clearly highly",
-        "A totally strictly absolutely distinctly totally",
-        "A profoundly remarkably absolutely strongly incredibly totally totally deeply totally thoroughly fully utterly",
-      ],
-      correctAnswer: "d",
-    },
-    {
-      id: "se4-mcq-6",
-      question:
-        "When did the Indian government start removing barriers on foreign trade and investment?",
-      options: ["1981", "1991", "2001", "2011"],
-      correctAnswer: "b",
-    },
-    {
-      id: "se4-mcq-7",
-      question:
-        "What is the money spent by MNCs to buy assets like land and buildings called?",
-      options: [
-        "Foreign investment",
-        "Domestic investment",
-        "Public investment",
-        "Private savings",
-      ],
-      correctAnswer: "a",
-    },
-    {
-      id: "se4-mcq-8",
-      question:
-        "What is the main objective of the World Trade Organization (WTO)?",
-      options: [
-        "To restrict foreign trade",
-        "To liberalize international trade",
-        "To set import tariffs",
-        "To finance poor countries",
-      ],
-      correctAnswer: "b",
-    },
-    {
-      id: "se4-mcq-9",
-      question:
-        "Removing barriers or restrictions set by the government is known as:",
-      options: [
-        "Privatization",
-        "Globalization",
-        "Liberalization",
-        "Socialism",
-      ],
-      correctAnswer: "c",
-    },
-    {
-      id: "se4-mcq-10",
-      question:
-        "Which sector has benefited the most from globalization in India?",
-      options: [
-        "Agriculture",
-        "Information Technology (IT) and Services",
-        "Mining",
-        "Cottage industry",
-      ],
-      correctAnswer: "b",
-    },
-  ],
-  summary: [
-    "Globalization heavily thoroughly deeply highly dramatically genuinely thoroughly utterly deeply thoroughly totally thoroughly dramatically strongly greatly strongly totally completely genuinely profoundly enormously extremely vastly absolutely totally highly completely genuinely effectively absolutely completely thoroughly completely effectively drastically highly totally deeply perfectly genuinely absolutely fully thoroughly radically remarkably thoroughly highly dramatically dramatically greatly immensely totally.",
-  ],
-  exercises: [
-    {
-      id: "se4-ex-1",
-      name: "Exercise 1: NCERT Questions",
-      questions: [
-        {
-          id: "se4-ex-q1",
-          number: "1",
-          question:
-            "Totally completely absolutely totally generally intensely fundamentally generally completely incredibly profoundly generally basically essentially widely simply effectively virtually deeply fundamentally actually largely simply generally normally primarily entirely substantially essentially fully highly genuinely really.",
-          solution: [
-            "1. Deeply importantly hugely seriously vastly significantly profoundly hugely seriously totally extremely essentially massively.",
-            "2. Highly genuinely fundamentally truly vitally particularly utterly actually really practically absolutely literally largely mostly certainly essentially purely truly fully substantially wholly exactly.",
-            "3. Strongly totally definitely profoundly immensely truly profoundly deeply incredibly enormously actually completely very immensely utterly vastly highly substantially actually genuinely fully naturally actually strictly.",
-          ],
-          answer:
-            "Deeply profoundly exceptionally intensely truly vitally hugely seriously really massively importantly enormously extremely totally totally basically totally absolutely truly totally definitely profoundly totally.",
-        },
-      ],
-    },
-  ],
-  examples: [],
-  isHtmlView: true,
-  htmlOverview:
-    '<div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">\n    <p style="line-height: 1.6; font-size: 17px;">Thirty years ago, there were only a few brands of cars on Indian roads. Today, you can buy cars made by companies from all over the world! How did this happen? It\'s all because of Globalization.</p>\n    <h3 style="color: #FF8A65; text-align: left; margin-top: 20px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px;">Key Definitions</h3>\n    <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: #FF8A65;">Globalization:</b> The process of rapid integration or interconnection between countries through free trade, capital, and people.</p>\n    <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: #FF8A65;">Multinational Corporation (MNC):</b> A massive company that completely owns or heavily controls production in more than one nation.</p>\n    <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: #FF8A65;">Foreign Investment:</b> Investment made strongly by an MNC in another country, for example, to buy land or machines.</p>\n    <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: #FF8A65;">Trade Barrier:</b> Any profoundly restrictive measure imposed entirely by the government entirely on international trade, like a heavy tax completely on extremely cheap imports.</p>\n    <h3 style="color: #FF8A65; text-align: left; margin-top: 25px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px;">Important Points</h3>\n    <ul style="text-align: left; padding-left: 20px; line-height: 1.6; font-size: 16px;">\n        <li style="margin-bottom: 8px;">MNCs completely drive globalization. They set up massively productive factories in intensely cheap countries (like strictly low-wage labor in China) and brilliantly sell completely globally.</li>\n        <li style="margin-bottom: 8px;">Until 1991, India absolutely imposed strictly heavy trade barriers to profoundly protect entirely infant domestic terribly uncompetitive producers from massively experienced foreign amazingly established companies.</li>\n        <li style="margin-bottom: 8px;">In 1991, India completely revolutionized its entire policy, dramatically removing barriers and strongly allowing absolutely free incredibly intense incredibly dynamic international foreign trade (Liberalization).</li>\n        <li style="margin-bottom: 8px;">World Trade Organization (WTO) intensely forces crucially developing countries to entirely rapidly incredibly open their totally essential completely local distinctly protective markets.</li>\n        <li style="margin-bottom: 8px;">Globalization wonderfully brings totally better absolutely highly amazing incredibly diverse awesome unbelievably brilliant distinctly amazing significantly superb wonderfully awesome extremely varied wonderfully superb amazingly incredibly good amazingly excellent exceptionally incredible amazing brilliant significantly exceptional extremely great heavily awesome exceptionally varied wonderfully awesome choices amazingly incredibly brilliantly deeply greatly completely distinctly entirely essentially profoundly significantly truly very remarkably largely thoroughly fully highly completely distinctly entirely essentially absolutely intensely strictly totally.</li>\n    </ul>\n    <h3 style="color: #FF8A65; text-align: left; margin-top: 25px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px;">Summary</h3>\n    <p style="line-height: 1.6; font-size: 16px;">Globalization heavily thoroughly deeply highly dramatically genuinely thoroughly utterly deeply thoroughly totally thoroughly dramatically strongly greatly strongly totally completely genuinely profoundly enormously extremely vastly absolutely totally highly completely genuinely effectively absolutely completely thoroughly completely effectively drastically highly totally deeply perfectly genuinely absolutely fully thoroughly radically remarkably thoroughly highly dramatically dramatically greatly immensely totally.</p>\n</div>',
-  htmlExercises: {
-    "se4-ex-1":
-      '<div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">\n    <div style="margin-bottom: 25px; ">\n        <p style="color: #FF8A65; font-weight: bold; margin-bottom: 8px; font-size: 17px;">Q1. Totally completely absolutely totally generally intensely fundamentally generally completely incredibly profoundly generally basically essentially widely simply effectively virtually deeply fundamentally actually largely simply generally normally primarily entirely substantially essentially fully highly genuinely really.</p>\n        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">1. Deeply importantly hugely seriously vastly significantly profoundly hugely seriously totally extremely essentially massively.</p>\n        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">2. Highly genuinely fundamentally truly vitally particularly utterly actually really practically absolutely literally largely mostly certainly essentially purely truly fully substantially wholly exactly.</p>\n        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">3. Strongly totally definitely profoundly immensely truly profoundly deeply incredibly enormously actually completely very immensely utterly vastly highly substantially actually genuinely fully naturally actually strictly.</p>\n    </div>\n</div>',
+  "id": "sst-eco-4",
+  "number": 4,
+  "title": "Globalization and the Indian Economy",
+  "isHtmlView": true,
+  "htmlOverview": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 138, 101, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FF8A65; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FF8A65; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFCCBC; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFCCBC; font-weight: 700; }\n  .hl { color: #FF8A65; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FF8A65; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FF8A65; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(255, 138, 101, 0.10); border: 1.5px dashed #FF8A65; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FF8A65; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 138, 101, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(255, 138, 101, 0.18); border: 1px solid #FF8A65; color: #FFCCBC; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(255, 138, 101, 0.2); color: #FFCCBC; }\n  .q-card .q-text, .q-card .sub-q { color: #FF8A65 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n  .q-card .sol-step > div.eq { color: #FFFFFF; font-weight: 600; text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 1. Production across Countries</div><div class=\"sol-step\"><div class=\"rev\">Until the middle of the twentieth century, production was largely organised within countries; what crossed borders was raw material, food and finished products. Then <span class=\"hl\">multinational corporations (MNCs)</span> began to play a major role. An MNC is a company that owns or controls production in more than one nation.</div><div class=\"pt\">MNCs set up offices and factories where they can get <b>cheap labour</b> and other resources, so that costs are low and profits high.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 288\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"288\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#FF8A65\" text-anchor=\"middle\" font-weight=\"700\">How an MNC Spreads Production</text><text x=\"160\" y=\"36\" font-size=\"9.5\" fill=\"#CBD5E1\" text-anchor=\"middle\">An MNC owns or controls production in more than one nation</text><rect x=\"30\" y=\"44\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(79,195,247,0.16)\" stroke=\"#4FC3F7\" stroke-width=\"1.2\"/><text x=\"160\" y=\"60.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Design</text><text x=\"160\" y=\"72.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Research centres in the USA design the</text><text x=\"160\" y=\"85.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">industrial equipment</text><line x1=\"160\" y1=\"96\" x2=\"160\" y2=\"103\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 108 L163.5 102 L156.5 102 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"109\" width=\"260\" height=\"39\" rx=\"6\" fill=\"rgba(255, 138, 101,0.16)\" stroke=\"#FF8A65\" stroke-width=\"1.2\"/><text x=\"160\" y=\"125.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Components</text><text x=\"160\" y=\"137.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Parts are manufactured in China</text><line x1=\"160\" y1=\"149\" x2=\"160\" y2=\"156\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 161 L163.5 155 L156.5 155 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"162\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(255, 138, 101,0.16)\" stroke=\"#FF8A65\" stroke-width=\"1.2\"/><text x=\"160\" y=\"178.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Assembly</text><text x=\"160\" y=\"190.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Shipped to Mexico and Eastern Europe to be</text><text x=\"160\" y=\"203.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">assembled</text><line x1=\"160\" y1=\"214\" x2=\"160\" y2=\"221\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 226 L163.5 220 L156.5 220 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"227\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"160\" y=\"243.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Sales and service</text><text x=\"160\" y=\"255.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Sold all over the world; customer care from</text><text x=\"160\" y=\"268.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">call centres in India</text></svg></div><div class=\"diagram-caption\">Production spread across continents</div></div><div class=\"pt\"><b>Investment</b> is money spent to buy assets such as land, buildings, machines and equipment; investment made by MNCs is <b>foreign investment</b>.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 222\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"222\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#FF8A65\" text-anchor=\"middle\" font-weight=\"700\">Ways MNCs Interlink Production</text><rect x=\"13\" y=\"30\" width=\"142\" height=\"84\" rx=\"6\" fill=\"rgba(79,195,247,0.16)\" stroke=\"#4FC3F7\" stroke-width=\"1.2\"/><text x=\"84\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Partnership with local</text><text x=\"84\" y=\"57.7\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">companies</text><text x=\"84\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">MNC gives money for new</text><text x=\"84\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">machines and brings the</text><text x=\"84\" y=\"92.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">latest technology</text><rect x=\"165\" y=\"30\" width=\"142\" height=\"84\" rx=\"6\" fill=\"rgba(255,183,77,0.16)\" stroke=\"#FFB74D\" stroke-width=\"1.2\"/><text x=\"236\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Buying local companies</text><text x=\"236\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">The most common route,</text><text x=\"236\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">e.g. Cargill Foods bought</text><text x=\"236\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Parakh Foods and became</text><text x=\"236\" y=\"92.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">India's largest</text><text x=\"236\" y=\"104.5\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">edible-oil producer</text><rect x=\"89\" y=\"122\" width=\"142\" height=\"84\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"160\" y=\"138.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Orders to small</text><text x=\"160\" y=\"149.7\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">producers</text><text x=\"160\" y=\"161.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Garments, footwear,</text><text x=\"160\" y=\"173.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">sports items made by</text><text x=\"160\" y=\"184.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">local firms and sold</text><text x=\"160\" y=\"196.5\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">under the MNC's brand</text></svg></div><div class=\"diagram-caption\">Three ways MNCs control production abroad</div></div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 174\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"174\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"20\" font-size=\"11.5\" fill=\"#FF8A65\" text-anchor=\"middle\" font-weight=\"700\">Globalisation and India: Timeline</text><line x1=\"76\" y1=\"34\" x2=\"76\" y2=\"163.60000000000002\" stroke=\"rgba(255, 138, 101,0.55)\" stroke-width=\"2\"/><circle cx=\"76\" cy=\"39.5\" r=\"4\" fill=\"#FF8A65\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"43\" font-size=\"10\" fill=\"#FF8A65\" text-anchor=\"end\" font-weight=\"700\">1950s–80s</text><text x=\"88\" y=\"43.0\" font-size=\"9.5\" fill=\"#FFFFFF\">Barriers on foreign trade and investment</text><text x=\"88\" y=\"55.2\" font-size=\"9.5\" fill=\"#FFFFFF\">protect new Indian industries</text><circle cx=\"76\" cy=\"72.9\" r=\"4\" fill=\"#FF8A65\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"76.4\" font-size=\"10\" fill=\"#FF8A65\" text-anchor=\"end\" font-weight=\"700\">1991</text><text x=\"88\" y=\"76.4\" font-size=\"9.5\" fill=\"#FFFFFF\">New economic policy: trade and investment</text><text x=\"88\" y=\"88.6\" font-size=\"9.5\" fill=\"#FFFFFF\">barriers largely removed (liberalisation)</text><circle cx=\"76\" cy=\"106.30000000000001\" r=\"4\" fill=\"#FF8A65\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"109.80000000000001\" font-size=\"10\" fill=\"#FF8A65\" text-anchor=\"end\" font-weight=\"700\">1995</text><text x=\"88\" y=\"109.8\" font-size=\"9.5\" fill=\"#FFFFFF\">World Trade Organisation (WTO) set up to</text><text x=\"88\" y=\"122.0\" font-size=\"9.5\" fill=\"#FFFFFF\">liberalise international trade</text><circle cx=\"76\" cy=\"139.70000000000002\" r=\"4\" fill=\"#FF8A65\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"143.20000000000002\" font-size=\"10\" fill=\"#FF8A65\" text-anchor=\"end\" font-weight=\"700\">2005</text><text x=\"88\" y=\"143.2\" font-size=\"9.5\" fill=\"#FFFFFF\">Law for Special Economic Zones (SEZs)</text><text x=\"88\" y=\"155.4\" font-size=\"9.5\" fill=\"#FFFFFF\">with world-class facilities</text></svg></div><div class=\"diagram-caption\">Key milestones</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 2. Foreign Trade and Integration of Markets</div><div class=\"sol-step\"><div class=\"rev\"><b>Foreign trade</b> creates an opportunity for producers to reach beyond domestic markets, and for buyers to choose from goods produced in other countries.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 262\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"262\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#FF8A65\" text-anchor=\"middle\" font-weight=\"700\">Foreign Trade Integrates Markets</text><rect x=\"30\" y=\"30\" width=\"260\" height=\"39\" rx=\"6\" fill=\"rgba(255, 138, 101,0.16)\" stroke=\"#FF8A65\" stroke-width=\"1.2\"/><text x=\"160\" y=\"46.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Chinese toy makers export to India</text><text x=\"160\" y=\"58.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">They reach buyers beyond their own country</text><line x1=\"160\" y1=\"70\" x2=\"160\" y2=\"77\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 82 L163.5 76 L156.5 76 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"83\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(79,195,247,0.16)\" stroke=\"#4FC3F7\" stroke-width=\"1.2\"/><text x=\"160\" y=\"99.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Indian buyers get more choice</text><text x=\"160\" y=\"111.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Cheaper Chinese toys with new designs are</text><text x=\"160\" y=\"124.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">available</text><line x1=\"160\" y1=\"135\" x2=\"160\" y2=\"142\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 147 L163.5 141 L156.5 141 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"148\" width=\"260\" height=\"39\" rx=\"6\" fill=\"rgba(255,183,77,0.16)\" stroke=\"#FFB74D\" stroke-width=\"1.2\"/><text x=\"160\" y=\"164.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Indian toy makers face competition</text><text x=\"160\" y=\"176.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">They must improve quality and lower prices</text><line x1=\"160\" y1=\"188\" x2=\"160\" y2=\"195\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 200 L163.5 194 L156.5 194 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"201\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"160\" y=\"217.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Markets get integrated</text><text x=\"160\" y=\"229.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Prices of similar goods in the two markets</text><text x=\"160\" y=\"242.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">tend to become equal</text></svg></div><div class=\"diagram-caption\">The example of Chinese toys in India</div></div><div class=\"pt\">Thus foreign trade results in the <b>connection of markets</b> in different countries; producers separated by thousands of miles compete closely.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 3. What is Globalisation?</div><div class=\"sol-step\"><div class=\"rev\"><span class=\"hl\">Globalisation</span> is the process of rapid integration or interconnection between countries. More and more goods and services, investments and technology are moving between countries. There is also some movement of people, but it is restricted.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 199\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"199\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#FF8A65\" text-anchor=\"middle\" font-weight=\"700\">Factors Enabling Globalisation</text><rect x=\"13\" y=\"30\" width=\"142\" height=\"84\" rx=\"6\" fill=\"rgba(79,195,247,0.16)\" stroke=\"#4FC3F7\" stroke-width=\"1.2\"/><text x=\"84\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Technology</text><text x=\"84\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Faster transport</text><text x=\"84\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">(containers, cheaper air</text><text x=\"84\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">travel); IT and telecom —</text><text x=\"84\" y=\"92.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">internet, email, phones</text><rect x=\"165\" y=\"30\" width=\"142\" height=\"84\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"236\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Liberalisation</text><text x=\"236\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Removal of barriers</text><text x=\"236\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">(taxes, quotas) on</text><text x=\"236\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">foreign trade and</text><text x=\"236\" y=\"92.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">investment; India from</text><text x=\"236\" y=\"104.5\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">1991</text><rect x=\"89\" y=\"122\" width=\"142\" height=\"61\" rx=\"6\" fill=\"rgba(255,183,77,0.16)\" stroke=\"#FFB74D\" stroke-width=\"1.2\"/><text x=\"160\" y=\"138.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">WTO</text><text x=\"160\" y=\"149.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Sets rules for</text><text x=\"160\" y=\"161.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">international trade and</text><text x=\"160\" y=\"173.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">sees that they are obeyed</text></svg></div><div class=\"diagram-caption\">What made globalisation possible</div></div><div class=\"sec\">Liberalisation in India</div><div class=\"pt\"><b>Trade barrier:</b> a restriction such as a tax on imports or a limit (quota) on their quantity.</div><div class=\"pt\">After Independence, India put barriers on foreign trade and investment to <b>protect producers</b> — industries were just coming up in the 1950s and 1960s and could not have survived competition from imports. Only essential items like machinery, fertilisers and petroleum were imported.</div><div class=\"pt\">In <b>1991</b>, the government decided that Indian producers were ready to compete globally; barriers were largely removed. Removing barriers set by the government is called <b>liberalisation</b>.</div><div class=\"exam\"><span class=\"exam-t\">📌 World Trade Organisation (WTO)</span><div>• Aims to <b>liberalise international trade</b>; started at the initiative of developed countries.</div><div>• Establishes rules for international trade and sees that they are obeyed; 164 countries are members.</div><div>• But developed countries have unfairly retained trade barriers — e.g. US farmers receive huge subsidies, making their crops cheap in world markets.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 4. Impact of Globalisation in India</div><div class=\"sol-step\"><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 281\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"281\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#FF8A65\" text-anchor=\"middle\" font-weight=\"700\">Impact of Globalisation on India</text><rect x=\"13\" y=\"30\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"84\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Well-off consumers</text><text x=\"84\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Greater choice, better</text><text x=\"84\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">quality and lower prices</text><rect x=\"165\" y=\"30\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"236\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">New jobs and MNC</text><text x=\"236\" y=\"57.7\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">investment</text><text x=\"236\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Cellphones, automobiles,</text><text x=\"236\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">electronics, soft drinks,</text><text x=\"236\" y=\"92.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">banking</text><rect x=\"13\" y=\"111\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"84\" y=\"127.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Indian MNCs</text><text x=\"84\" y=\"138.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Tata Motors, Infosys,</text><text x=\"84\" y=\"150.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Ranbaxy, Asian Paints,</text><text x=\"84\" y=\"162.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Sundaram Fasteners</text><rect x=\"165\" y=\"111\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(239,83,80,0.16)\" stroke=\"#EF5350\" stroke-width=\"1.2\"/><text x=\"236\" y=\"127.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Small producers hurt</text><text x=\"236\" y=\"138.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Batteries, capacitors,</text><text x=\"236\" y=\"150.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">plastics, toys, tyres,</text><text x=\"236\" y=\"162.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">dairy, vegetable oil</text><text x=\"236\" y=\"173.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">units shut down</text><rect x=\"89\" y=\"192\" width=\"142\" height=\"61\" rx=\"6\" fill=\"rgba(239,83,80,0.16)\" stroke=\"#EF5350\" stroke-width=\"1.2\"/><text x=\"160\" y=\"208.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Insecure workers</text><text x=\"160\" y=\"219.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Flexible labour laws:</text><text x=\"160\" y=\"231.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">short-term jobs, long</text><text x=\"160\" y=\"243.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">hours, low wages</text><text x=\"160\" y=\"267\" font-size=\"9.5\" fill=\"#FF8A65\" text-anchor=\"middle\" font-weight=\"700\">The impact has not been uniform</text></svg></div><div class=\"diagram-caption\">Winners and losers</div></div><div class=\"pt\">Globalisation has created new opportunities for <b>service companies</b>, especially in IT (call centres, software).</div><div class=\"pt\">Local companies supplying raw materials to MNCs have prospered.</div><div class=\"pt\"><b>Flexibility in labour laws:</b> employers hire workers 'flexibly' for short periods when work is heavy; jobs are not secure and workers often work long hours (e.g. garment exporters).</div><div class=\"sec\">Special Economic Zones (SEZs)</div><div class=\"pt\">Industrial zones with world-class facilities — electricity, water, roads, transport, storage, recreation and education — to attract foreign companies.</div><div class=\"pt\">Companies setting up units in SEZs do not have to pay taxes for an initial period of five years.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 5. The Struggle for a Fair Globalisation</div><div class=\"sol-step\"><div class=\"rev\">Not everyone has benefited from globalisation. <span class=\"hl\">Fair globalisation</span> would create opportunities for all and ensure that its benefits are better shared.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 200\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"200\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#FF8A65\" text-anchor=\"middle\" font-weight=\"700\">Struggle for Fair Globalisation</text><rect x=\"13\" y=\"30\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(255, 138, 101,0.16)\" stroke=\"#FF8A65\" stroke-width=\"1.2\"/><text x=\"84\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Protect workers</text><text x=\"84\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Implement labour laws</text><text x=\"84\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">properly so that workers</text><text x=\"84\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">get their rights</text><rect x=\"165\" y=\"30\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(255, 138, 101,0.16)\" stroke=\"#FF8A65\" stroke-width=\"1.2\"/><text x=\"236\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Support small</text><text x=\"236\" y=\"57.7\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">producers</text><text x=\"236\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Help them improve</text><text x=\"236\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">performance until they</text><text x=\"236\" y=\"92.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">can compete</text><rect x=\"13\" y=\"111\" width=\"142\" height=\"61\" rx=\"6\" fill=\"rgba(255,183,77,0.16)\" stroke=\"#FFB74D\" stroke-width=\"1.2\"/><text x=\"84\" y=\"127.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Use barriers if needed</text><text x=\"84\" y=\"138.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Trade and investment</text><text x=\"84\" y=\"150.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">barriers can protect the</text><text x=\"84\" y=\"162.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">economy</text><rect x=\"165\" y=\"111\" width=\"142\" height=\"61\" rx=\"6\" fill=\"rgba(79,195,247,0.16)\" stroke=\"#4FC3F7\" stroke-width=\"1.2\"/><text x=\"236\" y=\"127.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Negotiate at the WTO</text><text x=\"236\" y=\"138.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Join other developing</text><text x=\"236\" y=\"150.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">countries for fairer</text><text x=\"236\" y=\"162.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">rules</text><text x=\"160\" y=\"186\" font-size=\"9.5\" fill=\"#FF8A65\" text-anchor=\"middle\" font-weight=\"700\">Benefits of globalisation should be shared by all</text></svg></div><div class=\"diagram-caption\">What the government and people can do</div></div><div class=\"pt\">People's organisations and campaigns have also influenced important decisions on trade and investment at the WTO.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ Quick Glossary</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Term</th><th>Meaning</th></tr><tr><td>MNC</td><td>Company that owns or controls production in more than one nation</td></tr><tr><td>Investment</td><td>Money spent to buy assets such as land, buildings and machines</td></tr><tr><td>Foreign investment</td><td>Investment made by MNCs</td></tr><tr><td>Foreign trade</td><td>Trade in goods and services between countries</td></tr><tr><td>Globalisation</td><td>Rapid integration of countries through goods, services, investment and technology</td></tr><tr><td>Trade barrier</td><td>Restriction on foreign trade, e.g. tax on imports or quota</td></tr><tr><td>Liberalisation</td><td>Removing barriers or restrictions set by the government</td></tr><tr><td>WTO</td><td>World Trade Organisation — sets rules for international trade</td></tr><tr><td>SEZ</td><td>Special Economic Zone with world-class facilities and tax benefits</td></tr></table></div></div>\n  </div>\n\n</div>",
+  "htmlExercises": {
+    "se4-ex-1": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 138, 101, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FF8A65; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FF8A65; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFCCBC; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFCCBC; font-weight: 700; }\n  .hl { color: #FF8A65; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FF8A65; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FF8A65; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(255, 138, 101, 0.10); border: 1.5px dashed #FF8A65; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FF8A65; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 138, 101, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(255, 138, 101, 0.18); border: 1px solid #FF8A65; color: #FFCCBC; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(255, 138, 101, 0.2); color: #FFCCBC; }\n  .q-card .q-text, .q-card .sub-q { color: #FF8A65 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n  .q-card .sol-step > div.eq { color: #FFFFFF; font-weight: 600; text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">What do you understand by globalisation? Explain in your own words.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Globalisation is the process of rapid integration or interconnection between countries.</div><div class=\"pt\">It happens through the movement of goods, services, investments, technology and, to some extent, people across countries.</div><div class=\"pt\">MNCs play a major role by spreading production across countries; foreign trade connects markets.</div><div class=\"pt\">Example: a phone designed in one country, made from parts produced in others, and sold all over the world.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">What was the reason for putting barriers to foreign trade and foreign investment by the Indian government? Why did it wish to remove these barriers?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Reason for barriers:</span> after Independence, Indian industries were just coming up in the 1950s and 1960s; competition from imports would not have allowed them to grow, so the government protected them and allowed imports only of essential items.</div><div class=\"pt\"><span class=\"lbl\">Reason for removing them:</span> by 1991 the government felt Indian producers could compete with producers around the world; competition would improve their quality and efficiency, and attract foreign investment and technology.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">How would flexibility in labour laws help companies?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Companies can hire workers for short periods when work is heavy and remove them when it is not.</div><div class=\"pt\">This reduces their labour costs and makes them more competitive.</div><div class=\"pt\">They can respond quickly to changes in demand.</div><div class=\"pt\">However, it makes workers' jobs insecure.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">What are the various ways in which MNCs set up, or control, production in other countries?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Setting up their own factories and offices where labour and resources are cheap.</div><div class=\"pt\">Setting up partnerships with local companies — providing money for new machines and the latest technology.</div><div class=\"pt\">Buying up local companies and then expanding production — the most common route (e.g. Cargill Foods and Parakh Foods).</div><div class=\"pt\">Placing orders with small producers and selling the goods under their own brand names (garments, footwear, sports items).</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5.</div>\n    <div class=\"q-text\">Why do developed countries want developing countries to liberalise their trade and investment? What do you think should the developing countries demand in return?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sec\">Why developed countries want it</div><div class=\"pt\">Their MNCs get access to new markets to sell goods and services.</div><div class=\"pt\">They can invest where labour and raw materials are cheap and earn higher profits.</div><div class=\"sec\">What developing countries should demand</div><div class=\"pt\">Developed countries should also remove their trade barriers and farm subsidies.</div><div class=\"pt\">Fair rules at the WTO, transfer of technology, and protection for their small producers and workers.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q6.</div>\n    <div class=\"q-text\">“The impact of globalisation has not been uniform.” Explain this statement.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Benefited:</b> well-off consumers (more choice, better quality, lower prices); MNCs and large Indian companies; skilled workers in IT and services.</div><div class=\"pt\"><b>Hurt:</b> small producers of batteries, capacitors, plastics, toys, tyres, dairy products and vegetable oil — many units shut down and workers lost jobs.</div><div class=\"pt\"><b>Workers:</b> flexible labour laws made jobs insecure, with long hours and low wages.</div><div class=\"pt\">So the benefits have gone mostly to the better-off, not to all.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q7.</div>\n    <div class=\"q-text\">How has liberalisation of trade and investment policies helped the globalisation process?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Removal of taxes and quotas made imports and exports easier, increasing foreign trade.</div><div class=\"pt\">Easier rules let MNCs invest and set up production in more countries.</div><div class=\"pt\">Businesses could decide freely what to import and export, integrating markets across countries.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q8.</div>\n    <div class=\"q-text\">How does foreign trade lead to integration of markets across countries? Explain with an example other than those given here.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Foreign trade lets producers sell beyond domestic markets and lets buyers choose goods from other countries.</div><div class=\"pt\">Producers of different countries then compete in the same market, and prices of similar goods tend to become equal.</div><div class=\"pt\"><b>Example:</b> Korean and Chinese smartphones sold in India compete with Indian brands; Indian consumers get more choice, and Indian companies improve features and lower prices.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q9.</div>\n    <div class=\"q-text\">Globalisation will continue in the future. Can you imagine what the world would be like twenty years from now? Give reasons for your answer.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Goods, services and technology will move even faster; more people will work for global companies, often online.</div><div class=\"pt\">New technologies (AI, faster internet, cheaper transport) will connect markets further.</div><div class=\"pt\">Competition will increase; developing countries like India may become major producers and exporters.</div><div class=\"pt\">At the same time, there will be demands for fair globalisation, protection of workers and the environment.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q10.</div>\n    <div class=\"q-text\">Supposing you find two people arguing: one is saying globalisation has hurt our country's development. The other is telling, globalisation is helping India develop. How would you respond to these arguments?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Both are partly right.</div><div class=\"pt\">Globalisation has helped: more choice for consumers, foreign investment, new jobs in services and IT, and Indian companies becoming MNCs.</div><div class=\"pt\">It has also hurt: small producers lost out to competition, and many workers have insecure jobs.</div><div class=\"pt\">The answer is <b>fair globalisation</b> — policies that protect workers and small producers so that its benefits are shared by all.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q11.</div>\n    <div class=\"q-text\">Fill in the blanks:<br/>Indian buyers have a greater choice of goods than they did two decades back. This is closely associated with the process of ______. Markets in India are selling goods produced in many other countries. This means there is increasing ______ with other countries. Rising number of brands that we see in the markets might be produced by MNCs in India. MNCs are investing in India because ______. While consumers have more choices in the market, the effect of rising ______ and ______ has meant greater ______ among the producers.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>globalisation</b>; <b>trade</b>; <b>India has cheap labour, a large market and liberal government policies</b>; <b>foreign trade</b> and <b>foreign investment</b>; <b>competition</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q12.</div>\n    <div class=\"q-text\">Match the following.<br/>(i) MNCs buy at cheap rates from small producers<br/>(ii) Quotas and taxes on imports are used to regulate trade<br/>(iii) Indian companies who have invested abroad<br/>(iv) IT has helped in spreading of production of services<br/>(v) Several MNCs have invested in setting up factories in India for production<br/>(a) Automobiles (b) Garments, footwear, sports items (c) Call centres (d) Tata Motors, Infosys, Ranbaxy (e) Trade barriers</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Statement</th><th>Match</th></tr><tr><td>(i) MNCs buy cheaply from small producers</td><td>(b) Garments, footwear, sports items</td></tr><tr><td>(ii) Quotas and taxes on imports</td><td>(e) Trade barriers</td></tr><tr><td>(iii) Indian companies investing abroad</td><td>(d) Tata Motors, Infosys, Ranbaxy</td></tr><tr><td>(iv) IT spreading production of services</td><td>(c) Call centres</td></tr><tr><td>(v) MNCs setting up factories in India</td><td>(a) Automobiles</td></tr></table></div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q13.</div>\n    <div class=\"q-text\">Choose the most appropriate option.<br/>(i) The past two decades of globalisation has seen rapid movements in: (a) goods, services and people between countries (b) goods, services and investments between countries (c) goods, investments and people between countries<br/>(ii) The most common route for investments by MNCs in countries around the world is to: (a) set up new factories (b) buy existing local companies (c) form partnerships with local companies<br/>(iii) Globalisation has led to improvement in living conditions: (a) of all the people (b) of people in the developed countries (c) of workers in the developing countries (d) none of the above</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">(i) <b>(b)</b> goods, services and investments between countries</div><div class=\"pt\">(ii) <b>(b)</b> buy existing local companies</div><div class=\"pt\">(iii) <b>(d)</b> none of the above</div></div></div>\n  </div>\n\n</div>",
+    "se4-ex-board": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 138, 101, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FF8A65; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FF8A65; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFCCBC; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFCCBC; font-weight: 700; }\n  .hl { color: #FF8A65; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FF8A65; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FF8A65; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(255, 138, 101, 0.10); border: 1.5px dashed #FF8A65; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FF8A65; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 138, 101, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(255, 138, 101, 0.18); border: 1px solid #FF8A65; color: #FFCCBC; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(255, 138, 101, 0.2); color: #FFCCBC; }\n  .q-card .q-text, .q-card .sub-q { color: #FF8A65 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n  .q-card .sol-step > div.eq { color: #FFFFFF; font-weight: 600; text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\"><div class=\"q-title\">✦ Section A: Very Short Answer (1 Mark)</div></div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">What is an MNC?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">A company that owns or controls production in more than one nation.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">What is foreign investment?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Investment made by MNCs in other countries.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">What is a trade barrier?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">A restriction on foreign trade, such as a tax on imports or a quota.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">What is liberalisation?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Removing barriers or restrictions set by the government.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">In which year did India liberalise its trade and investment policies?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">In <b>1991</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q6. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">What is the aim of the WTO?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">To liberalise international trade.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q7. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Which American MNC bought Parakh Foods?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Cargill Foods</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q8. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Name two Indian companies that have become MNCs.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Tata Motors</b> and <b>Infosys</b> (also Ranbaxy, Asian Paints).</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q9. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">What are SEZs?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Special Economic Zones with world-class facilities to attract foreign companies.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q10. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">For how many years are companies in SEZs exempt from taxes initially?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Five</b> years.</div></div></div>\n  </div>\n\n  <div class=\"q-card\"><div class=\"q-title\">✦ Section B: Short Answer (3 Marks)</div></div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q11. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">How has technology helped globalisation?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Faster, cheaper transport (containers, air travel) moves goods quickly across the world.</div><div class=\"pt\">IT and telecommunications — internet, email, phones — connect people and companies instantly.</div><div class=\"pt\">Services like design, printing and customer care can now be done in different countries.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q12. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">How has globalisation benefited Indian consumers?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Greater choice of goods and brands.</div><div class=\"pt\">Better quality products.</div><div class=\"pt\">Lower prices due to competition.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q13. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">Why are developed countries accused of unfair practices at the WTO?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">They force developing countries to remove trade barriers.</div><div class=\"pt\">But they retain their own barriers unfairly.</div><div class=\"pt\">E.g. US farmers get huge subsidies, so their crops are cheap and hurt farmers in developing countries.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q14. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">How can the government ensure fair globalisation?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Implement labour laws properly so that workers get their rights.</div><div class=\"pt\">Support small producers until they become strong enough to compete; use trade barriers if necessary.</div><div class=\"pt\">Negotiate at the WTO for fairer rules, along with other developing countries.</div></div></div>\n  </div>\n\n  <div class=\"q-card\"><div class=\"q-title\">✦ Section C: Long Answer (5 Marks)</div></div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q15. <span class=\"badge\">5 Marks</span></div>\n    <div class=\"q-text\">Describe the impact of globalisation on India.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Well-off consumers got more choice, better quality and lower prices.</div><div class=\"pt\">MNCs increased investment in cellphones, automobiles, electronics, banking; new jobs were created.</div><div class=\"pt\">Indian companies like Tata Motors and Infosys became MNCs; IT services grew.</div><div class=\"pt\">Small producers of batteries, toys, tyres, dairy and vegetable oil were hurt; many shut down.</div><div class=\"pt\">Flexible labour laws made many jobs insecure — so the impact has not been uniform.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q16. <span class=\"badge\">5 Marks</span></div>\n    <div class=\"q-text\">What are the ways in which MNCs spread their production? Explain with examples.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">MNCs set up production where labour and resources are cheap and markets are near.</div><div class=\"pt\"><b>Partnerships</b> with local companies — giving money for new machines and the latest technology.</div><div class=\"pt\"><b>Buying local companies</b> — e.g. Cargill Foods bought Parakh Foods and became India's largest edible-oil producer.</div><div class=\"pt\"><b>Placing orders with small producers</b> — garments, footwear, sports items sold under MNC brands.</div><div class=\"pt\">Thus production in widely dispersed places gets interlinked.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q17. <span class=\"badge\">4 Marks</span></div>\n    <div class=\"q-text\"><b>Source-based:</b> Read the source and answer the questions.<br/><i>“Cargill Foods, a very large American MNC, has bought over smaller Indian companies such as Parakh Foods. Parakh Foods had built a large marketing network in various parts of India, where its brand was well-reputed. Also, Parakh Foods had four oil refineries, whose control has now shifted to Cargill. Cargill is now the largest producer of edible oil in India.”</i><br/>(i) What kind of company is Cargill Foods? (1)<br/>(ii) Which way of spreading production does this example show? (1)<br/>(iii) Why do MNCs prefer to buy local companies? (2)</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">(i)</div><div class=\"pt\">An American multinational corporation (MNC).</div><div class=\"sub-q\">(ii)</div><div class=\"pt\">Buying up local companies and then expanding production.</div><div class=\"sub-q\">(iii)</div><div class=\"pt\">They get ready marketing networks, well-known brands and production facilities.</div><div class=\"pt\">This lets them expand production quickly in the new country.</div></div></div>\n  </div>\n\n</div>"
   },
+  "introduction": "Thirty years ago, there were only a few brands of cars on Indian roads. Today, you can buy cars made by companies from all over the world! How did this happen? It's all because of Globalization.",
+  "definitions": [],
+  "keyPoints": [],
+  "formulas": [],
+  "crux": [],
+  "mcqs": [
+    {
+      "id": "se4-mcq-1",
+      "question": "<div style='text-align: justify;'>The past two decades of globalisation have seen rapid movements in:</div>",
+      "options": [
+        "A):   Goods, services and people",
+        "B):   Goods, investments and people",
+        "C):   Goods, services and investments",
+        "D):   Only people"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Movement of people is restricted.</div>"
+    },
+    {
+      "id": "se4-mcq-2",
+      "question": "<div style='text-align: justify;'>The most common route for MNC investment is to:</div>",
+      "options": [
+        "A):   Buy existing local companies",
+        "B):   Set up new factories",
+        "C):   Form partnerships",
+        "D):   Give loans"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>E.g. Cargill bought Parakh Foods.</div>"
+    },
+    {
+      "id": "se4-mcq-3",
+      "question": "<div style='text-align: justify;'>Globalisation has led to improvement in living conditions of:</div>",
+      "options": [
+        "A):   All the people",
+        "B):   People in developed countries",
+        "C):   Workers in developing countries",
+        "D):   None of the above"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Its impact has not been uniform.</div>"
+    },
+    {
+      "id": "se4-mcq-4",
+      "question": "<div style='text-align: justify;'>A company that owns or controls production in more than one nation is a:</div>",
+      "options": [
+        "A):   Cooperative",
+        "B):   MNC",
+        "C):   Public sector unit",
+        "D):   SHG"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>MNCs seek cheap labour and resources.</div>"
+    },
+    {
+      "id": "se4-mcq-5",
+      "question": "<div style='text-align: justify;'>MNCs set up production where:</div>",
+      "options": [
+        "A):   Cheap labour and resources are available",
+        "B):   Labour is costly",
+        "C):   There is no market",
+        "D):   Taxes are highest"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>This lowers costs and raises profits.</div>"
+    },
+    {
+      "id": "se4-mcq-6",
+      "question": "<div style='text-align: justify;'>Cargill Foods is:</div>",
+      "options": [
+        "A):   An Indian company",
+        "B):   A cooperative",
+        "C):   An American MNC",
+        "D):   A government company"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>It bought Parakh Foods.</div>"
+    },
+    {
+      "id": "se4-mcq-7",
+      "question": "<div style='text-align: justify;'>Garments, footwear and sports items made by small producers for MNCs show:</div>",
+      "options": [
+        "A):   Buying local companies",
+        "B):   Placing orders with small producers",
+        "C):   Setting up SEZs",
+        "D):   Trade barriers"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>MNCs sell them under their own brands.</div>"
+    },
+    {
+      "id": "se4-mcq-8",
+      "question": "<div style='text-align: justify;'>The example of Chinese toys in India shows:</div>",
+      "options": [
+        "A):   Trade barriers",
+        "B):   SEZs",
+        "C):   Liberalisation of labour laws",
+        "D):   Integration of markets through foreign trade"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Indian toy makers faced competition.</div>"
+    },
+    {
+      "id": "se4-mcq-9",
+      "question": "<div style='text-align: justify;'>A tax on imports is an example of:</div>",
+      "options": [
+        "A):   Liberalisation",
+        "B):   An MNC",
+        "C):   Foreign investment",
+        "D):   A trade barrier"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Quotas are also trade barriers.</div>"
+    },
+    {
+      "id": "se4-mcq-10",
+      "question": "<div style='text-align: justify;'>India removed many barriers on foreign trade and investment in:</div>",
+      "options": [
+        "A):   1947",
+        "B):   1991",
+        "C):   1975",
+        "D):   2005"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>This is called liberalisation.</div>"
+    },
+    {
+      "id": "se4-mcq-11",
+      "question": "<div style='text-align: justify;'>Removing barriers set by the government is called:</div>",
+      "options": [
+        "A):   Privatisation",
+        "B):   Nationalisation",
+        "C):   Liberalisation",
+        "D):   Globalisation"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>It made foreign trade easier.</div>"
+    },
+    {
+      "id": "se4-mcq-12",
+      "question": "<div style='text-align: justify;'>The WTO aims to:</div>",
+      "options": [
+        "A):   Liberalise international trade",
+        "B):   Protect domestic industry",
+        "C):   Give loans",
+        "D):   Fix exchange rates"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>It sets rules for international trade.</div>"
+    },
+    {
+      "id": "se4-mcq-13",
+      "question": "<div style='text-align: justify;'>How many countries were members of the WTO, as given in the textbook?</div>",
+      "options": [
+        "A):   64",
+        "B):   120",
+        "C):   195",
+        "D):   164"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>It was started by developed countries.</div>"
+    },
+    {
+      "id": "se4-mcq-14",
+      "question": "<div style='text-align: justify;'>Which developed-country practice is seen as unfair?</div>",
+      "options": [
+        "A):   Huge subsidies to their farmers",
+        "B):   Free trade",
+        "C):   Low tariffs",
+        "D):   Open borders"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Subsidies make their crops cheap.</div>"
+    },
+    {
+      "id": "se4-mcq-15",
+      "question": "<div style='text-align: justify;'>Which Indian company has become an MNC?</div>",
+      "options": [
+        "A):   Parakh Foods",
+        "B):   A local dairy",
+        "C):   Tata Motors",
+        "D):   A village bank"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Infosys and Ranbaxy are others.</div>"
+    },
+    {
+      "id": "se4-mcq-16",
+      "question": "<div style='text-align: justify;'>Which industry in India was hurt by globalisation?</div>",
+      "options": [
+        "A):   IT services",
+        "B):   Toys",
+        "C):   Banking",
+        "D):   Mobile phones"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Batteries, tyres and dairy were also hurt.</div>"
+    },
+    {
+      "id": "se4-mcq-17",
+      "question": "<div style='text-align: justify;'>Flexibility in labour laws means:</div>",
+      "options": [
+        "A):   Permanent jobs",
+        "B):   Workers hired for short periods as needed",
+        "C):   Higher wages",
+        "D):   Shorter hours"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>It makes jobs insecure.</div>"
+    },
+    {
+      "id": "se4-mcq-18",
+      "question": "<div style='text-align: justify;'>Companies in SEZs do not pay taxes for an initial period of:</div>",
+      "options": [
+        "A):   One year",
+        "B):   Three years",
+        "C):   Ten years",
+        "D):   Five years"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>SEZs have world-class facilities.</div>"
+    },
+    {
+      "id": "se4-mcq-19",
+      "question": "<div style='text-align: justify;'>Which factor has NOT enabled globalisation?</div>",
+      "options": [
+        "A):   Technology",
+        "B):   Liberalisation",
+        "C):   Trade barriers",
+        "D):   WTO rules"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Barriers restrict trade.</div>"
+    },
+    {
+      "id": "se4-mcq-20",
+      "question": "<div style='text-align: justify;'>Call centres in India are an example of:</div>",
+      "options": [
+        "A):   Spreading production of services through IT",
+        "B):   Trade barriers",
+        "C):   Agro-processing",
+        "D):   Cooperatives"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>IT made services tradable across countries.</div>"
+    },
+    {
+      "id": "se4-mcq-21",
+      "question": "<div style='text-align: justify;'>Fair globalisation means:</div>",
+      "options": [
+        "A):   Benefits only for MNCs",
+        "B):   No trade",
+        "C):   Opportunities and benefits for all",
+        "D):   Only imports"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Workers and small producers must be protected.</div>"
+    },
+    {
+      "id": "se4-mcq-22",
+      "question": "<div style='text-align: justify;'>Arrange in chronological order: (i) WTO set up (ii) India's new economic policy (iii) SEZ law (iv) Barriers to protect new industries</div>",
+      "options": [
+        "A):   (iv), (ii), (i), (iii)",
+        "B):   (ii), (iv), (i), (iii)",
+        "C):   (iv), (i), (ii), (iii)",
+        "D):   (iv), (ii), (iii), (i)"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>1950s → 1991 → 1995 → 2005.</div>"
+    },
+    {
+      "id": "se4-mcq-23",
+      "question": "<div style='text-align: justify;'>Match: (P) Quotas and taxes on imports (Q) Indian companies investing abroad (R) IT spreading services (S) MNC factories in India — with (1) Call centres (2) Trade barriers (3) Automobiles (4) Tata Motors, Infosys</div>",
+      "options": [
+        "A):   P-1, Q-4, R-3, S-2",
+        "B):   P-4, Q-2, R-1, S-3",
+        "C):   P-2, Q-1, R-4, S-3",
+        "D):   P-2, Q-4, R-1, S-3"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Each statement matches its example.</div>"
+    },
+    {
+      "id": "se4-mcq-24",
+      "question": "<div style='text-align: justify;'>Assertion (A): India put barriers on foreign trade after Independence. Reason (R): New Indian industries needed protection from foreign competition.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>R explains why barriers were set up.</div>"
+    },
+    {
+      "id": "se4-mcq-25",
+      "question": "<div style='text-align: justify;'>Assertion (A): Globalisation has benefited all sections of Indian society equally. Reason (R): Well-off consumers got more choice and lower prices.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Small producers and many workers were hurt.</div>"
+    }
+  ],
+  "summary": [],
+  "exercises": [
+    {
+      "id": "se4-ex-1",
+      "name": "Exercise",
+      "questions": []
+    },
+    {
+      "id": "se4-ex-board",
+      "name": "Board Qs",
+      "questions": []
+    }
+  ],
+  "examples": []
 };
