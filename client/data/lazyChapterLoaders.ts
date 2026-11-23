@@ -2661,6 +2661,7 @@ export const lazyChapterLoaders: Record<string, () => any> = {
   "c10-eng-p5": () => require("./content/c10-eng-p5").c10EngP5,
   "c10-eng-p6": () => require("./content/c10-eng-p6").c10EngP6,
   "c10-eng-p7": () => require("./content/c10-eng-p7").c10EngP7,
+  "c10-eng-po8": () => require("./content/c10-eng-po8").c10EngPo8,
   "c10-eng-po9": () => require("./content/c10-eng-po9").c10EngPo9,
 };
 
