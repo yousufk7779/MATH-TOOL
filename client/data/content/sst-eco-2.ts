@@ -1,181 +1,334 @@
 import { ChapterContent } from "../types";
 
 export const sstEco2: ChapterContent = {
-  id: "sst-eco-2",
-  number: 2,
-  title: "Sectors of the Indian Economy",
-  introduction:
-    "When you buy milk, take a bus, or get a haircut, you are participating in the economy. Economists classify these activities into different sectors to understand how the country is growing. Let's learn about the Primary, Secondary, and Tertiary sectors.",
-  definitions: [
-    {
-      term: "Primary Sector",
-      description:
-        "Activities undertaken by directly using natural resources. It forms the base for all other products. E.g., agriculture, mining, fishing, forestry.",
-    },
-    {
-      term: "Secondary Sector",
-      description:
-        "Activities in which natural products are changed into other forms through ways of manufacturing. It is also called the industrial sector. E.g., making sugar from sugarcane, cars from steel.",
-    },
-    {
-      term: "Tertiary Sector",
-      description:
-        "Activities that help in the development of the primary and secondary sectors. They don't produce goods, but provide services. E.g., transport, banking, teaching, doctors.",
-    },
-    {
-      term: "GDP (Gross Domestic Product)",
-      description:
-        "The value of all final goods and services produced within a country during a particular year. It shows how big the economy is.",
-    },
-    {
-      term: "Underemployment",
-      description:
-        "A situation where people are seemingly working but all of them are made to work less than their potential. Also called disguised unemployment.",
-    },
-  ],
-  keyPoints: [
-    "Historically, economies shift from Primary to Secondary, and then to the Tertiary sector as they develop.",
-    "In India, the Tertiary sector has grown massively and has replaced the Primary sector as the largest producing sector.",
-    "However, a very disturbing fact is that while the Tertiary sector produces the most money, the majority of the population (more than half) is still employed in the Primary sector (agriculture).",
-    "This means agricultural workers are underemployed (disguised unemployment). Even if you remove a few people from a field, production won't drop.",
-    "The economy is also divided into Organised (registered, rules followed, job security) and Unorganised (small, scattered, no job security) sectors.",
-    "NREGA 2005 (National Rural Employment Guarantee Act) guarantees 100 days of employment in a year to all those who are able to work in rural areas.",
-  ],
-  formulas: [],
-  crux: [
-    "Primary = Nature (Farming). Secondary = Factories (Manufacturing). Tertiary = Services (Teaching, Banking).",
-    "Tertiary makes the most money in India now.",
-    "But Primary employs the most people, leading to massive underemployment.",
-    "Organised sector is safe; Unorganised sector is risky and exploitative.",
-  ],
-  mcqs: [
-    {
-      id: "se2-mcq-1",
-      question:
-        "Which sector involves changing natural products into other forms through manufacturing?",
-      options: [
-        "Primary Sector",
-        "Secondary Sector",
-        "Tertiary Sector",
-        "Quaternary Sector",
-      ],
-      correctAnswer: "b",
-    },
-    {
-      id: "se2-mcq-2",
-      question:
-        "Underemployment is typically hidden in contrast to someone who does not have a job. Hence it is also called:",
-      options: [
-        "Seasonal unemployment",
-        "Frictional unemployment",
-        "Disguised unemployment",
-        "Structural unemployment",
-      ],
-      correctAnswer: "c",
-    },
-    {
-      id: "se2-mcq-3",
-      question:
-        "Which of the following acts guarantees 100 days of employment in rural areas?",
-      options: [
-        "Right to Information Act",
-        "NREGA 2005",
-        "Equal Remuneration Act",
-        "Minimum Wages Act",
-      ],
-      correctAnswer: "b",
-    },
-    {
-      id: "se2-mcq-6",
-      question:
-        "Which sector has grown the most in terms of share of GDP in recent years?",
-      options: [
-        "Primary sector",
-        "Secondary sector",
-        "Tertiary sector",
-        "Agricultural sector",
-      ],
-      correctAnswer: "c",
-    },
-    {
-      id: "se2-mcq-7",
-      question:
-        "What is the situation where more people are employed than required called?",
-      options: [
-        "Seasonal unemployment",
-        "Disguised unemployment",
-        "Structural unemployment",
-        "Frictional unemployment",
-      ],
-      correctAnswer: "b",
-    },
-    {
-      id: "se2-mcq-8",
-      question:
-        "Which sector is registered with the government and follows its rules?",
-      options: [
-        "Unorganized sector",
-        "Organized sector",
-        "Private sector",
-        "Informal sector",
-      ],
-      correctAnswer: "b",
-    },
-    {
-      id: "se2-mcq-9",
-      question: "The public sector is guided by the motive of:",
-      options: [
-        "Social welfare",
-        "Maximizing profit",
-        "Helping private companies",
-        "Foreign trade",
-      ],
-      correctAnswer: "a",
-    },
-    {
-      id: "se2-mcq-10",
-      question:
-        "What is the sum of production in the primary, secondary, and tertiary sectors called?",
-      options: [
-        "Gross National Product",
-        "Gross Domestic Product",
-        "Net National Product",
-        "Per Capita Product",
-      ],
-      correctAnswer: "b",
-    },
-  ],
-  summary: [
-    "Understanding the three sectors helps us see how India's economy functions.",
-    "The massive shift in production towards the tertiary sector is a sign of a developing nation, but the lack of an equivalent shift in employment remains a huge challenge.",
-  ],
-  exercises: [
-    {
-      id: "se2-ex-1",
-      name: "Exercise 1: NCERT Questions",
-      questions: [
-        {
-          id: "se2-ex-q1",
-          number: "1",
-          question:
-            "Explain the difference between primary, secondary and tertiary sectors using examples.",
-          solution: [
-            "1. Primary Sector: Produces goods by simply exploiting natural resources. Example: A farmer growing wheat.",
-            "2. Secondary Sector: Processes natural resources into highly manufactured goods. Example: A factory grinding wheat into flour and making biscuits.",
-            "3. Tertiary Sector: Provides incredibly vital services that deeply support the other two sectors. Example: A truck driver heavily transporting the biscuits to shops.",
-          ],
-          answer:
-            "Primary extracts from nature (farming). Secondary intensely manufactures goods (factories). Tertiary provides vital services (transport/banking).",
-        },
-      ],
-    },
-  ],
-  examples: [],
-  isHtmlView: true,
-  htmlOverview:
-    '<div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">\n    <p style="line-height: 1.6; font-size: 17px;">When you buy milk, take a bus, or get a haircut, you are participating in the economy. Economists classify these activities into different sectors to understand how the country is growing. Let\'s learn about the Primary, Secondary, and Tertiary sectors.</p>\n    <h3 style="color: #FF4DA6; text-align: left; margin-top: 20px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px;">Key Definitions</h3>\n    <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: #FF4DA6;">Primary Sector:</b> Activities undertaken by directly using natural resources. It forms the base for all other products. E.g., agriculture, mining, fishing, forestry.</p>\n    <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: #FF4DA6;">Secondary Sector:</b> Activities in which natural products are changed into other forms through ways of manufacturing. It is also called the industrial sector. E.g., making sugar from sugarcane, cars from steel.</p>\n    <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: #FF4DA6;">Tertiary Sector:</b> Activities that help in the development of the primary and secondary sectors. They don\'t produce goods, but provide services. E.g., transport, banking, teaching, doctors.</p>\n    <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: #FF4DA6;">GDP (Gross Domestic Product):</b> The value of all final goods and services produced within a country during a particular year. It shows how big the economy is.</p>\n    <p style="line-height: 1.5; margin-bottom: 10px;"><b style="color: #FF4DA6;">Underemployment:</b> A situation where people are seemingly working but all of them are made to work less than their potential. Also called disguised unemployment.</p>\n    <h3 style="color: #FF4DA6; text-align: left; margin-top: 25px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px;">Important Points</h3>\n    <ul style="text-align: left; padding-left: 20px; line-height: 1.6; font-size: 16px;">\n        <li style="margin-bottom: 8px;">Historically, economies shift from Primary to Secondary, and then to the Tertiary sector as they develop.</li>\n        <li style="margin-bottom: 8px;">In India, the Tertiary sector has grown massively and has replaced the Primary sector as the largest producing sector.</li>\n        <li style="margin-bottom: 8px;">However, a very disturbing fact is that while the Tertiary sector produces the most money, the majority of the population (more than half) is still employed in the Primary sector (agriculture).</li>\n        <li style="margin-bottom: 8px;">This means agricultural workers are underemployed (disguised unemployment). Even if you remove a few people from a field, production won\'t drop.</li>\n        <li style="margin-bottom: 8px;">The economy is also divided into Organised (registered, rules followed, job security) and Unorganised (small, scattered, no job security) sectors.</li>\n        <li style="margin-bottom: 8px;">NREGA 2005 (National Rural Employment Guarantee Act) guarantees 100 days of employment in a year to all those who are able to work in rural areas.</li>\n    </ul>\n    <h3 style="color: #FF4DA6; text-align: left; margin-top: 25px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px;">Summary</h3>\n    <p style="line-height: 1.6; font-size: 16px;">Understanding the three sectors helps us see how India\'s economy functions. The massive shift in production towards the tertiary sector is a sign of a developing nation, but the lack of an equivalent shift in employment remains a huge challenge.</p>\n</div>',
-  htmlExercises: {
-    "se2-ex-1":
-      '<div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">\n    <div style="margin-bottom: 25px; ">\n        <p style="color: #FF4DA6; font-weight: bold; margin-bottom: 8px; font-size: 17px;">Q1. Explain the difference between primary, secondary and tertiary sectors using examples.</p>\n        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">1. Primary Sector: Produces goods by simply exploiting natural resources. Example: A farmer growing wheat.</p>\n        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">2. Secondary Sector: Processes natural resources into highly manufactured goods. Example: A factory grinding wheat into flour and making biscuits.</p>\n        <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">3. Tertiary Sector: Provides incredibly vital services that deeply support the other two sectors. Example: A truck driver heavily transporting the biscuits to shops.</p>\n    </div>\n</div>',
+  "id": "sst-eco-2",
+  "number": 2,
+  "title": "Sectors of the Indian Economy",
+  "isHtmlView": true,
+  "htmlOverview": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 77, 166, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FF4DA6; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FF4DA6; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFC2DF; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFC2DF; font-weight: 700; }\n  .hl { color: #FF4DA6; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FF4DA6; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FF4DA6; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(255, 77, 166, 0.10); border: 1.5px dashed #FF4DA6; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FF4DA6; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 77, 166, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(255, 77, 166, 0.18); border: 1px solid #FF4DA6; color: #FFC2DF; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(255, 77, 166, 0.2); color: #FFC2DF; }\n  .q-card .q-text, .q-card .sub-q { color: #FF4DA6 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n  .q-card .sol-step > div.eq { color: #FFFFFF; font-weight: 600; text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 1. Sectors of Economic Activities</div><div class=\"sol-step\"><div class=\"rev\">Many activities in the economy produce goods and services. These activities are classified into three groups — <span class=\"hl\">sectors</span> — on the basis of the nature of the activity.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 212\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"212\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#FF4DA6\" text-anchor=\"middle\" font-weight=\"700\">Three Sectors of the Economy</text><rect x=\"13\" y=\"30\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"84\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Primary (agriculture</text><text x=\"84\" y=\"57.7\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">and related)</text><text x=\"84\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Uses natural resources</text><text x=\"84\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">directly: farming, dairy,</text><text x=\"84\" y=\"92.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">fishing, forestry, mining</text><rect x=\"165\" y=\"30\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(255,183,77,0.16)\" stroke=\"#FFB74D\" stroke-width=\"1.2\"/><text x=\"236\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Secondary (industrial)</text><text x=\"236\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Natural products changed</text><text x=\"236\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">into other forms by</text><text x=\"236\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">manufacturing: cloth,</text><text x=\"236\" y=\"92.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">sugar, bricks</text><rect x=\"89\" y=\"111\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(79,195,247,0.16)\" stroke=\"#4FC3F7\" stroke-width=\"1.2\"/><text x=\"160\" y=\"127.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Tertiary (service)</text><text x=\"160\" y=\"138.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Helps the other sectors;</text><text x=\"160\" y=\"150.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">provides services:</text><text x=\"160\" y=\"162.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">transport, banking,</text><text x=\"160\" y=\"173.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">trade, teaching, IT</text><text x=\"160\" y=\"198\" font-size=\"9.5\" fill=\"#FF4DA6\" text-anchor=\"middle\" font-weight=\"700\">The three sectors are interdependent</text></svg></div><div class=\"diagram-caption\">Primary, secondary and tertiary sectors</div></div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 197\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"197\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#FF4DA6\" text-anchor=\"middle\" font-weight=\"700\">Interdependence: from Cotton to Customer</text><rect x=\"30\" y=\"30\" width=\"260\" height=\"39\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"160\" y=\"46.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Primary: farmer grows cotton</text><text x=\"160\" y=\"58.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Natural product, grown with the help of nature</text><line x1=\"160\" y1=\"70\" x2=\"160\" y2=\"77\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 82 L163.5 76 L156.5 76 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"83\" width=\"260\" height=\"39\" rx=\"6\" fill=\"rgba(255,183,77,0.16)\" stroke=\"#FFB74D\" stroke-width=\"1.2\"/><text x=\"160\" y=\"99.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Secondary: mill makes cloth</text><text x=\"160\" y=\"111.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Manufactured product made from cotton</text><line x1=\"160\" y1=\"123\" x2=\"160\" y2=\"130\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 135 L163.5 129 L156.5 129 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"136\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(79,195,247,0.16)\" stroke=\"#4FC3F7\" stroke-width=\"1.2\"/><text x=\"160\" y=\"152.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Tertiary: transport, bank, shop</text><text x=\"160\" y=\"164.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Trucks carry the cloth, banks give loans,</text><text x=\"160\" y=\"177.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">shops sell to customers</text></svg></div><div class=\"diagram-caption\">The three sectors depend on one another</div></div><div class=\"pt\">Some tertiary services do not help produce goods directly — teachers, doctors, washermen, barbers, lawyers; and new services based on <b>information technology</b> (internet cafés, ATMs, call centres, software).</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 2. Comparing the Three Sectors: GDP</div><div class=\"sol-step\"><div class=\"rev\">The value of <b>final goods and services</b> produced in each sector during a particular year gives the total production of that sector; the sum of the three is the country's <span class=\"hl\">Gross Domestic Product (GDP)</span> — the value of all final goods and services produced within a country during a particular year.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 235\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"235\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#FF4DA6\" text-anchor=\"middle\" font-weight=\"700\">Counting GDP: Only Final Goods</text><text x=\"160\" y=\"36\" font-size=\"9.5\" fill=\"#CBD5E1\" text-anchor=\"middle\">Counting intermediate goods would mean double counting</text><rect x=\"30\" y=\"44\" width=\"260\" height=\"39\" rx=\"6\" fill=\"rgba(148,163,184,0.13)\" stroke=\"#94A3B8\" stroke-width=\"1.2\"/><text x=\"160\" y=\"60.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Farmer sells wheat to a flour mill</text><text x=\"160\" y=\"72.8\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Wheat is an intermediate good here</text><line x1=\"160\" y1=\"84\" x2=\"160\" y2=\"91\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 96 L163.5 90 L156.5 90 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"97\" width=\"260\" height=\"51\" rx=\"6\" fill=\"rgba(148,163,184,0.13)\" stroke=\"#94A3B8\" stroke-width=\"1.2\"/><text x=\"160\" y=\"113.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Flour mill sells flour to a biscuit</text><text x=\"160\" y=\"125.8\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">company</text><text x=\"160\" y=\"138.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Flour is also an intermediate good</text><line x1=\"160\" y1=\"149\" x2=\"160\" y2=\"156\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 161 L163.5 155 L156.5 155 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"162\" width=\"260\" height=\"63\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"160\" y=\"178.5\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Biscuit company sells biscuits to</text><text x=\"160\" y=\"190.8\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">consumers</text><text x=\"160\" y=\"203.2\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Biscuits are the final good — only their value</text><text x=\"160\" y=\"215.5\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">is counted</text></svg></div><div class=\"diagram-caption\">Why only final goods are counted</div></div><div class=\"pt\">In India, measuring GDP is the task of a <b>Central Government ministry</b>, which collects information with the help of various government departments of states and union territories.</div><div class=\"sec\">Historical change in sectors</div><div class=\"pt\">In the initial stages of development, the primary sector was the most important.</div><div class=\"pt\">With new methods of manufacturing, the secondary sector gradually became the most important.</div><div class=\"pt\">In the past 100 years, there has been a further shift to the <b>tertiary sector</b> in developed countries.</div><div class=\"sec\">Rising importance of the tertiary sector in India</div><div class=\"pt\">Over the past decades, the tertiary sector has emerged as the <b>largest producing sector</b> in India, replacing the primary sector.</div><div class=\"pt\"><b>Reasons:</b> basic services (hospitals, schools, post, police, courts, banks) are needed in every country; growth of agriculture and industry needs transport, trade and storage; rising incomes raise demand for services like tourism, shopping, private schools and hospitals; and new IT-based services have grown rapidly.</div><div class=\"pt\">But not all of the service sector is growing well: many people — small shopkeepers, repair persons, transport persons — barely earn a living.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 3. Where Are Most People Employed?</div><div class=\"sol-step\"><div class=\"pt\">Even though the primary sector's share of GDP has fallen, it <b>remains the largest employer</b>: more than half of India's workers are in the primary sector, mainly agriculture, producing only about a quarter of GDP.</div><div class=\"pt\">The secondary and tertiary sectors produce about three-fourths of GDP but employ less than half the workers.</div><div class=\"sec\">Disguised unemployment (underemployment)</div><div class=\"pt\">More people are working than needed; each does some work, but no one is fully employed. Even if some leave, production does not fall.</div><div class=\"pt\"><b>Rural example:</b> a small farm needing 3 people being worked by all 8 members of a family.</div><div class=\"pt\"><b>Urban example:</b> casual workers, painters, plumbers or repair persons who find work only for a few days.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 281\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"281\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#FF4DA6\" text-anchor=\"middle\" font-weight=\"700\">Creating More Employment</text><rect x=\"13\" y=\"30\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(255, 77, 166,0.16)\" stroke=\"#FF4DA6\" stroke-width=\"1.2\"/><text x=\"84\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Irrigation</text><text x=\"84\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Dams and canals let</text><text x=\"84\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">farmers grow more crops;</text><text x=\"84\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">more work on farms</text><rect x=\"165\" y=\"30\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(255, 77, 166,0.16)\" stroke=\"#FF4DA6\" stroke-width=\"1.2\"/><text x=\"236\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Roads, transport,</text><text x=\"236\" y=\"57.7\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">storage</text><text x=\"236\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Better links and cold</text><text x=\"236\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">storage help farmers sell</text><text x=\"236\" y=\"92.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">and create jobs</text><rect x=\"13\" y=\"111\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(79,195,247,0.16)\" stroke=\"#4FC3F7\" stroke-width=\"1.2\"/><text x=\"84\" y=\"127.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Cheap credit</text><text x=\"84\" y=\"138.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Bank loans at low</text><text x=\"84\" y=\"150.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">interest for seeds,</text><text x=\"84\" y=\"162.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">fertilisers and equipment</text><rect x=\"165\" y=\"111\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(255,183,77,0.16)\" stroke=\"#FFB74D\" stroke-width=\"1.2\"/><text x=\"236\" y=\"127.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Agro-processing</text><text x=\"236\" y=\"138.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Dal mills, cold storage,</text><text x=\"236\" y=\"150.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">honey, fruit and</text><text x=\"236\" y=\"162.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">vegetable processing in</text><text x=\"236\" y=\"173.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">semi-rural areas</text><rect x=\"13\" y=\"192\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"84\" y=\"208.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Tourism, crafts, IT</text><text x=\"84\" y=\"219.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Each can employ lakhs of</text><text x=\"84\" y=\"231.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">people; education alone</text><text x=\"84\" y=\"243.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">can create about 20 lakh</text><text x=\"84\" y=\"254.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">jobs</text><rect x=\"165\" y=\"192\" width=\"142\" height=\"73\" rx=\"6\" fill=\"rgba(102,187,106,0.18)\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"236\" y=\"208.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">MGNREGA 2005</text><text x=\"236\" y=\"219.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Guarantees 100 days of</text><text x=\"236\" y=\"231.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">work a year; else</text><text x=\"236\" y=\"243.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">unemployment allowance</text></svg></div><div class=\"diagram-caption\">Ways to create more employment</div></div><div class=\"exam\"><span class=\"exam-t\">📌 MGNREGA 2005</span><div>• The Mahatma Gandhi National Rural Employment Guarantee Act guarantees <b>100 days</b> of employment in a year to rural households who can and need to work.</div><div>• If the government fails to provide work, it gives <b>unemployment allowance</b>.</div><div>• One-third of the jobs are reserved for women; preference is given to work that increases production from land.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 4. Organised and Unorganised Sectors</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Organised sector</th><th>Unorganised sector</th></tr><tr><td>Registered with the government; follows laws like the Factories Act, Minimum Wages Act, Payment of Gratuity Act, Shops and Establishments Act</td><td>Small, scattered units largely outside government control; rules are not followed</td></tr><tr><td>Regular, secure jobs; fixed working hours; overtime pay</td><td>Low-paid, irregular jobs; no job security</td></tr><tr><td>Paid leave, provident fund, gratuity, medical benefits, pension</td><td>No paid leave, holidays or sick leave</td></tr><tr><td>e.g. government offices, large factories</td><td>e.g. street vendors, construction workers, small workshops</td></tr></table></div><div class=\"sec\">Protecting workers in the unorganised sector</div><div class=\"pt\"><b>Rural:</b> landless agricultural labourers, small and marginal farmers, sharecroppers and artisans (weavers, blacksmiths, carpenters, goldsmiths).</div><div class=\"pt\"><b>Urban:</b> workers in small-scale industry, casual workers in construction, trade and transport, street vendors, head-load workers, garment makers and rag pickers.</div><div class=\"pt\">A majority belong to <b>Scheduled Castes, Scheduled Tribes and backward communities</b>, who also face social discrimination.</div><div class=\"pt\">They need protection on <b>wages, safety and health</b>; small-scale industries need government help to get raw materials and market their output.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 5. Public and Private Sectors</div><div class=\"sol-step\"><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 154\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"154\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#FF4DA6\" text-anchor=\"middle\" font-weight=\"700\">Public and Private Sectors</text><rect x=\"13\" y=\"30\" width=\"142\" height=\"96\" rx=\"6\" fill=\"rgba(79,195,247,0.16)\" stroke=\"#4FC3F7\" stroke-width=\"1.2\"/><text x=\"84\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Public sector</text><text x=\"84\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Government owns most</text><text x=\"84\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">assets and provides</text><text x=\"84\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">services; aim is public</text><text x=\"84\" y=\"92.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">welfare, not only profit.</text><text x=\"84\" y=\"104.5\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">e.g. Indian Railways,</text><text x=\"84\" y=\"116.2\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Post Office</text><rect x=\"165\" y=\"30\" width=\"142\" height=\"96\" rx=\"6\" fill=\"rgba(255,183,77,0.16)\" stroke=\"#FFB74D\" stroke-width=\"1.2\"/><text x=\"236\" y=\"46.0\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Private sector</text><text x=\"236\" y=\"57.7\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Assets and services owned</text><text x=\"236\" y=\"69.4\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">by private individuals or</text><text x=\"236\" y=\"81.1\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">companies; aim is profit.</text><text x=\"236\" y=\"92.8\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">e.g. TISCO, Reliance</text><text x=\"236\" y=\"104.5\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Industries</text><text x=\"160\" y=\"140\" font-size=\"9.5\" fill=\"#FF4DA6\" text-anchor=\"middle\" font-weight=\"700\">Government raises money through taxes for public services</text></svg></div><div class=\"diagram-caption\">Classification by ownership of assets</div></div><div class=\"sec\">Why the government provides some services</div><div class=\"pt\"><b>Infrastructure</b> — roads, bridges, railways, harbours, electricity, irrigation through dams — needs huge spending that the private sector will not provide at a reasonable cost.</div><div class=\"pt\">Some activities need government support: e.g. electricity sold to small industries at low rates.</div><div class=\"pt\"><b>Food security:</b> the Food Corporation of India buys wheat and rice from farmers at a fair price, stores them and sells them at lower prices through ration shops.</div><div class=\"pt\"><b>Health and education:</b> running proper schools and hospitals, especially for the poor.</div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ Quick Glossary</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Term</th><th>Meaning</th></tr><tr><td>Primary sector</td><td>Activities directly using natural resources</td></tr><tr><td>Secondary sector</td><td>Manufacturing — changing natural products into other forms</td></tr><tr><td>Tertiary sector</td><td>Activities providing services that support the other sectors</td></tr><tr><td>GDP</td><td>Value of all final goods and services produced in a country in a year</td></tr><tr><td>Intermediate goods</td><td>Goods used up in producing final goods</td></tr><tr><td>Disguised unemployment</td><td>More people working than needed; no one fully employed</td></tr><tr><td>Organised sector</td><td>Registered enterprises with regular terms of employment</td></tr><tr><td>Unorganised sector</td><td>Small, scattered units outside government control</td></tr><tr><td>Public sector</td><td>Government owns most assets and provides services</td></tr></table></div></div>\n  </div>\n\n</div>",
+  "htmlExercises": {
+    "se2-ex-1": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 77, 166, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FF4DA6; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FF4DA6; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFC2DF; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFC2DF; font-weight: 700; }\n  .hl { color: #FF4DA6; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FF4DA6; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FF4DA6; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(255, 77, 166, 0.10); border: 1.5px dashed #FF4DA6; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FF4DA6; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 77, 166, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(255, 77, 166, 0.18); border: 1px solid #FF4DA6; color: #FFC2DF; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(255, 77, 166, 0.2); color: #FFC2DF; }\n  .q-card .q-text, .q-card .sub-q { color: #FF4DA6 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n  .q-card .sol-step > div.eq { color: #FFFFFF; font-weight: 600; text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Fill in the blanks using the correct option given in the bracket:<br/>(i) Employment in the service sector ______ increased to the same extent as production. (has / has not)<br/>(ii) Workers in the ______ sector do not produce goods. (tertiary / agricultural)<br/>(iii) Most of the workers in the ______ sector enjoy job security. (organised / unorganised)<br/>(iv) A ______ proportion of labourers in India are working in the unorganised sector. (large / small)<br/>(v) Cotton is a ______ product and cloth is a ______ product. (natural / manufactured)<br/>(vi) The activities in primary, secondary and tertiary sectors are ______. (independent / interdependent)</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">(i) <b>has not</b></div><div class=\"pt\">(ii) <b>tertiary</b></div><div class=\"pt\">(iii) <b>organised</b></div><div class=\"pt\">(iv) <b>large</b></div><div class=\"pt\">(v) <b>natural</b>; <b>manufactured</b></div><div class=\"pt\">(vi) <b>interdependent</b></div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Choose the most appropriate answer.<br/>(a) The sectors are classified into public and private sector on the basis of: (i) employment conditions (ii) the nature of economic activity (iii) ownership of enterprises (iv) number of workers employed in the enterprise<br/>(b) Production of a commodity, mostly through the natural process, is an activity in ______ sector. (i) primary (ii) secondary (iii) tertiary (iv) information technology<br/>(c) GDP is the total value of ______ produced during a particular year. (i) all goods and services (ii) all final goods and services (iii) all intermediate goods and services (iv) all intermediate and final goods and services<br/>(d) In terms of GDP the share of tertiary sector in 2013-14 is between ______ per cent. (i) 20 to 30 (ii) 30 to 40 (iii) 50 to 60 (iv) 60 to 70</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">(a) <b>(iii)</b> ownership of enterprises</div><div class=\"pt\">(b) <b>(i)</b> primary</div><div class=\"pt\">(c) <b>(ii)</b> all final goods and services</div><div class=\"pt\">(d) <b>(iii)</b> 50 to 60</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Match the following problems faced by the farming sector with some possible measures.<br/>1. Unirrigated land &nbsp; 2. Low prices for crops &nbsp; 3. Debt burden &nbsp; 4. No job in the off season &nbsp; 5. Compelled to sell their grains to the local traders soon after harvest<br/>(a) Setting up agro-based mills (b) Cooperative marketing societies (c) Procurement of food grains by government (d) Construction of canals by the government (e) Banks to provide credit with low interest</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Problem</th><th>Possible measure</th></tr><tr><td>1. Unirrigated land</td><td>(d) Construction of canals by the government</td></tr><tr><td>2. Low prices for crops</td><td>(c) Procurement of food grains by government</td></tr><tr><td>3. Debt burden</td><td>(e) Banks to provide credit with low interest</td></tr><tr><td>4. No job in the off season</td><td>(a) Setting up agro-based mills</td></tr><tr><td>5. Compelled to sell grains soon after harvest</td><td>(b) Cooperative marketing societies</td></tr></table></div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">Find the odd one out and say why.<br/>(i) Tourist guide, dhobi, tailor, potter<br/>(ii) Teacher, doctor, vegetable vendor, lawyer<br/>(iii) Postman, cobbler, soldier, police constable<br/>(iv) MTNL, Indian Railways, Air India, SAHARA Airlines, All India Radio</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">(i) <b>Potter</b> — makes goods (secondary sector); the others provide services.</div><div class=\"pt\">(ii) <b>Vegetable vendor</b> — a trader; the others are trained professionals.</div><div class=\"pt\">(iii) <b>Cobbler</b> — self-employed in the private sector; the others are government employees.</div><div class=\"pt\">(iv) <b>SAHARA Airlines</b> — a private company; the others are public sector enterprises.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5.</div>\n    <div class=\"q-text\">A research scholar looked at the working people in the city of Surat. Complete the table. What is the percentage of workers in the unorganised sector in this city?<br/>In offices and factories registered with the government — Organised — 15%; In their own shops, offices and clinics in marketplaces with a formal licence — ? — 15%; People working on the street, construction workers, domestic workers — ? — 20%; Working in small workshops usually not registered with the government — ? — ?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Place of work</th><th>Nature of employment</th><th>% of workers</th></tr><tr><td>Offices and factories registered with the government</td><td>Organised</td><td>15</td></tr><tr><td>Own shops, offices, clinics with a formal licence</td><td><b>Organised</b></td><td>15</td></tr><tr><td>Street, construction and domestic workers</td><td><b>Unorganised</b></td><td>20</td></tr><tr><td>Small unregistered workshops</td><td><b>Unorganised</b></td><td><b>50</b></td></tr></table></div><div class=\"eq\">Last row = 100 − (15 + 15 + 20) = 50%</div><div class=\"eq\">Unorganised sector = 20 + 50 = 70%</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q6.</div>\n    <div class=\"q-text\">Do you think the classification of economic activities into primary, secondary and tertiary is useful? Explain how.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Yes. It shows which sector contributes how much to production (GDP) and to employment.</div><div class=\"pt\">It helps identify problems, e.g. too many people in agriculture (disguised unemployment).</div><div class=\"pt\">It helps the government plan policies to develop each sector and create jobs.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q7.</div>\n    <div class=\"q-text\">For each of the sectors that we came across in this chapter why should one focus on employment and GDP? Could there be other issues which should be examined? Discuss.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">GDP shows how much each sector produces; employment shows how many people depend on it — together they show the health of the economy.</div><div class=\"pt\">Other issues: job security and working conditions, wages and income equality, balanced regional development, environment and sustainability, and quality of services like health and education.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q8.</div>\n    <div class=\"q-text\">Make a long list of all kinds of work that you find adults around you doing for a living. In what way can you classify them? Explain your choice.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Examples: farmer, dairy owner, fisherman (primary); factory worker, carpenter, tailor (secondary); teacher, doctor, shopkeeper, driver, bank clerk (tertiary).</div><div class=\"pt\">They can be classified by <b>nature of activity</b> (primary, secondary, tertiary), by <b>employment conditions</b> (organised, unorganised) and by <b>ownership</b> (public, private) — each classification answers a different question.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q9.</div>\n    <div class=\"q-text\">How is the tertiary sector different from other sectors? Illustrate with a few examples.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">The primary and secondary sectors produce goods; the tertiary sector does not produce goods but provides <b>services</b>.</div><div class=\"pt\">It supports the other sectors: transport, storage, banking, trade and communication.</div><div class=\"pt\">It also provides personal and professional services: teachers, doctors, lawyers, barbers, IT services.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q10.</div>\n    <div class=\"q-text\">What do you understand by disguised unemployment? Explain with an example each from the urban and rural areas.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">A situation where more people are working than needed; all seem employed but none is fully employed; removing some does not reduce output.</div><div class=\"pt\"><span class=\"lbl\">Rural:</span> a family of eight working on a small farm that needs only three people.</div><div class=\"pt\"><span class=\"lbl\">Urban:</span> casual workers such as painters or plumbers who get work only on some days, or many people running tiny shops with very little business.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q11.</div>\n    <div class=\"q-text\">Distinguish between open unemployment and disguised unemployment.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Open unemployment</th><th>Disguised unemployment</th></tr><tr><td>People willing to work cannot find any job</td><td>People appear to be employed, but are not fully employed</td></tr><tr><td>Visible; common in industry and cities</td><td>Hidden; common in agriculture</td></tr><tr><td>e.g. an educated youth with no job</td><td>e.g. extra family members on a small farm</td></tr></table></div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q12.</div>\n    <div class=\"q-text\">“Tertiary sector is not playing any significant role in the development of Indian economy.” Do you agree? Give reasons in support of your answer.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>No</b>, we do not agree.</div><div class=\"pt\">The tertiary sector has become the largest producing sector in India, contributing more than half of GDP.</div><div class=\"pt\">It supports agriculture and industry through transport, storage, banking and trade.</div><div class=\"pt\">IT-based services earn foreign exchange and create jobs; basic services like health and education improve human resources.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q13.</div>\n    <div class=\"q-text\">Service sector in India employs two different kinds of people. Who are these?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Highly skilled and educated</b> workers in services like banking, IT, communication — with good pay and security.</div><div class=\"pt\"><b>Large numbers of workers</b> such as small shopkeepers, repair persons, transport persons and street vendors — who barely manage to earn a living and have no job security.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q14.</div>\n    <div class=\"q-text\">Workers are exploited in the unorganised sector. Do you agree with this view? Give reasons in support of your answer.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Yes</b>.</div><div class=\"pt\">Jobs are low-paid and irregular; minimum wage and working-hour rules are not followed.</div><div class=\"pt\">No paid leave, holidays, sick leave, provident fund or medical benefits.</div><div class=\"pt\">No job security — workers can be asked to leave at any time; working conditions are often unsafe.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q15.</div>\n    <div class=\"q-text\">How are the activities in the economy classified on the basis of employment conditions?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Organised sector:</span> enterprises registered with the government, with regular terms of employment and benefits, following laws on wages, hours and safety.</div><div class=\"pt\"><span class=\"lbl\">Unorganised sector:</span> small and scattered units largely outside government control, where rules are not followed and jobs are irregular and low-paid.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q16.</div>\n    <div class=\"q-text\">Compare the employment conditions prevailing in the organised and unorganised sectors.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Organised</th><th>Unorganised</th></tr><tr><td>Job security; regular employment</td><td>No job security; irregular work</td></tr><tr><td>Fixed hours; overtime is paid</td><td>Long hours; no overtime pay</td></tr><tr><td>Paid leave, PF, gratuity, medical benefits, pension</td><td>No such benefits</td></tr><tr><td>Follows Factories Act, Minimum Wages Act etc.</td><td>Laws often not followed</td></tr></table></div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q17.</div>\n    <div class=\"q-text\">Explain the objective of implementing the NREGA 2005.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">To guarantee <b>100 days of employment</b> in a year to rural households who are able and in need of work.</div><div class=\"pt\">To provide unemployment allowance if work is not given.</div><div class=\"pt\">To create durable assets that increase production from land, and to reserve one-third of jobs for women — reducing poverty and disguised unemployment.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q18.</div>\n    <div class=\"q-text\">Using examples from your area compare and contrast the activities and functions of private and public sectors.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Public sector</th><th>Private sector</th></tr><tr><td>Owned and run by the government, e.g. government school, railways, post office</td><td>Owned by individuals or companies, e.g. private school, shops, private hospital</td></tr><tr><td>Aim: public welfare; services at low cost</td><td>Aim: profit</td></tr><tr><td>Money raised through taxes</td><td>Money raised by selling goods and services</td></tr></table></div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q19.</div>\n    <div class=\"q-text\">Discuss and fill the following table giving one example each from your area: well-managed and badly managed organisations in the public and private sectors.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th></th><th>Well-managed</th><th>Badly managed</th></tr><tr><td>Public sector</td><td>e.g. a well-run railway station or post office</td><td>e.g. a government hospital with long queues and poor hygiene</td></tr><tr><td>Private sector</td><td>e.g. a reputed private bank</td><td>e.g. a small private bus service that ignores safety</td></tr></table></div><div class=\"pt\">Answers will vary by area; examples should come from your locality.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q20.</div>\n    <div class=\"q-text\">Give a few examples of public sector activities and explain why the government has taken them up.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Examples:</b> railways, roads, bridges, harbours, electricity generation, irrigation dams, government schools and hospitals, ration shops.</div><div class=\"pt\">They need huge spending that private companies will not undertake at a reasonable cost.</div><div class=\"pt\">They are needed by all, including the poor, who cannot pay high prices — so the government provides them for public welfare.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q21.</div>\n    <div class=\"q-text\">Explain how public sector contributes to the economic development of a nation.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Builds infrastructure — roads, railways, power, irrigation — needed by all sectors.</div><div class=\"pt\">Creates employment and promotes balanced regional development.</div><div class=\"pt\">Ensures food security through procurement and the PDS (Food Corporation of India).</div><div class=\"pt\">Provides education and health services, improving human resources.</div><div class=\"pt\">Supports private industry, e.g. electricity at low rates for small industries.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q22.</div>\n    <div class=\"q-text\">The workers in the unorganised sector need protection on the following issues: wages, safety and health. Explain with examples.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Wages:</span> construction workers and farm labourers often get less than the minimum wage; laws must ensure fair wages.</div><div class=\"pt\"><span class=\"lbl\">Safety:</span> workers in fireworks units, mines and construction sites face accidents; safety equipment and rules are needed.</div><div class=\"pt\"><span class=\"lbl\">Health:</span> rag pickers and head-load workers suffer health problems; they need medical facilities and insurance.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q23.</div>\n    <div class=\"q-text\">A study in Ahmedabad found that out of 15,00,000 workers in the city, 11,00,000 worked in the unorganised sector. The total income of the city in this year (1997-1998) was Rs 60,000 million. Out of this Rs 32,000 million was generated in the organised sector. Present this data as a table. What kind of ways should be thought of for generating more employment in the city?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Sector</th><th>Workers</th><th>Income (Rs million)</th></tr><tr><td>Organised</td><td>4,00,000</td><td>32,000</td></tr><tr><td>Unorganised</td><td>11,00,000</td><td>28,000</td></tr><tr><td>Total</td><td>15,00,000</td><td>60,000</td></tr></table></div><div class=\"pt\">About 73% of workers in the unorganised sector earn less than half the income — they need better conditions.</div><div class=\"pt\"><b>Ways:</b> cheap credit and support for small industries; skill training; new industries and services; government help with raw materials and marketing; registering small units to give workers benefits.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q24.</div>\n    <div class=\"q-text\">The following table gives the GDP in Rupees (Crores) by the three sectors:<br/>2000 — Primary 52,000; Secondary 48,500; Tertiary 1,33,500<br/>2013 — Primary 8,00,500; Secondary 10,74,000; Tertiary 38,68,000<br/>(i) Calculate the share of the three sectors in GDP for 2000 and 2013.<br/>(ii) Show the data as a bar diagram.<br/>(iii) What conclusions can we draw from the bar-graph?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">(i)</div><div class=\"eq\">2000: total = 52,000 + 48,500 + 1,33,500 = 2,34,000</div><div class=\"eq\">Shares: Primary 22.2%, Secondary 20.7%, Tertiary 57.1%</div><div class=\"eq\">2013: total = 8,00,500 + 10,74,000 + 38,68,000 = 57,42,500</div><div class=\"eq\">Shares: Primary 13.9%, Secondary 18.7%, Tertiary 67.4%</div><div class=\"sub-q\">(ii)</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 142\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"142\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#FF4DA6\" text-anchor=\"middle\" font-weight=\"700\">Share of Sectors in GDP (to scale)</text><text x=\"14\" y=\"38\" font-size=\"10\" fill=\"#FFFFFF\" font-weight=\"700\">2000</text><rect x=\"14.0\" y=\"44\" width=\"64.9\" height=\"22\" fill=\"#66BB6A\"/><text x=\"46.4\" y=\"59\" font-size=\"9.5\" fill=\"#0B1220\" text-anchor=\"middle\" font-weight=\"700\">22.2%</text><rect x=\"78.9\" y=\"44\" width=\"60.5\" height=\"22\" fill=\"#FFB74D\"/><text x=\"109.1\" y=\"59\" font-size=\"9.5\" fill=\"#0B1220\" text-anchor=\"middle\" font-weight=\"700\">20.7%</text><rect x=\"139.4\" y=\"44\" width=\"166.6\" height=\"22\" fill=\"#4FC3F7\"/><text x=\"222.7\" y=\"59\" font-size=\"9.5\" fill=\"#0B1220\" text-anchor=\"middle\" font-weight=\"700\">57.1%</text><text x=\"14\" y=\"84\" font-size=\"10\" fill=\"#FFFFFF\" font-weight=\"700\">2013</text><rect x=\"14.0\" y=\"90\" width=\"40.7\" height=\"22\" fill=\"#66BB6A\"/><text x=\"34.4\" y=\"105\" font-size=\"9.5\" fill=\"#0B1220\" text-anchor=\"middle\" font-weight=\"700\">13.9%</text><rect x=\"54.7\" y=\"90\" width=\"54.6\" height=\"22\" fill=\"#FFB74D\"/><text x=\"82.0\" y=\"105\" font-size=\"9.5\" fill=\"#0B1220\" text-anchor=\"middle\" font-weight=\"700\">18.7%</text><rect x=\"109.3\" y=\"90\" width=\"196.7\" height=\"22\" fill=\"#4FC3F7\"/><text x=\"207.7\" y=\"105\" font-size=\"9.5\" fill=\"#0B1220\" text-anchor=\"middle\" font-weight=\"700\">67.4%</text><rect x=\"14\" y=\"122\" width=\"9\" height=\"9\" fill=\"#66BB6A\"/><text x=\"27\" y=\"130\" font-size=\"9.5\" fill=\"#FFFFFF\">Primary</text><rect x=\"106\" y=\"122\" width=\"9\" height=\"9\" fill=\"#FFB74D\"/><text x=\"119\" y=\"130\" font-size=\"9.5\" fill=\"#FFFFFF\">Secondary</text><rect x=\"198\" y=\"122\" width=\"9\" height=\"9\" fill=\"#4FC3F7\"/><text x=\"211\" y=\"130\" font-size=\"9.5\" fill=\"#FFFFFF\">Tertiary</text></svg></div><div class=\"diagram-caption\">Share of the three sectors in GDP, 2000 and 2013</div></div><div class=\"sub-q\">(iii)</div><div class=\"pt\">The tertiary sector's share rose from about 57% to about 67% — it is the largest sector.</div><div class=\"pt\">The primary sector's share fell sharply (about 22% to about 14%); the secondary sector's share fell slightly.</div></div></div>\n  </div>\n\n</div>",
+    "se2-ex-board": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 77, 166, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FF4DA6; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FF4DA6; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFC2DF; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFC2DF; font-weight: 700; }\n  .hl { color: #FF4DA6; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FF4DA6; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FF4DA6; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .exam { background: rgba(255, 77, 166, 0.10); border: 1.5px dashed #FF4DA6; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FF4DA6; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 77, 166, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(255, 77, 166, 0.18); border: 1px solid #FF4DA6; color: #FFC2DF; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(255, 77, 166, 0.2); color: #FFC2DF; }\n  .q-card .q-text, .q-card .sub-q { color: #FF4DA6 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n  .q-card .sol-step > div.eq { color: #FFFFFF; font-weight: 600; text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\"><div class=\"q-title\">✦ Section A: Very Short Answer (1 Mark)</div></div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Why is the primary sector also called the agriculture and related sector?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Because most natural products we get are from agriculture, dairy, fishing and forestry.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">What is GDP?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">The value of all final goods and services produced within a country during a particular year.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Why are intermediate goods not counted in GDP?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">To avoid double counting — their value is included in the final goods.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Which sector is the largest producer in India today?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">The <b>tertiary</b> sector.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Which sector is the largest employer in India?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">The <b>primary</b> sector.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q6. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">What is disguised unemployment?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">More people working than needed, so none is fully employed.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q7. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">How many days of work does MGNREGA guarantee?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>100 days</b> in a year.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q8. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Give one example of a public sector enterprise.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Indian Railways</b> (also the Post Office).</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q9. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Give one example of a private sector company.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>TISCO</b> (also Reliance Industries).</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q10. <span class=\"badge\">1 Mark</span></div>\n    <div class=\"q-text\">Which body buys wheat and rice from farmers for ration shops?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">The <b>Food Corporation of India</b>.</div></div></div>\n  </div>\n\n  <div class=\"q-card\"><div class=\"q-title\">✦ Section B: Short Answer (3 Marks)</div></div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q11. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">Why has the tertiary sector become important in India?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Basic services like hospitals, schools, banks, police and courts are needed everywhere.</div><div class=\"pt\">Growth of agriculture and industry needs transport, trade and storage.</div><div class=\"pt\">Rising incomes raise demand for services; new IT-based services have grown rapidly.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q12. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">How can employment be increased in rural areas?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Building dams and canals for irrigation; better roads, transport and storage.</div><div class=\"pt\">Cheap credit from banks; agro-processing industries in semi-rural areas.</div><div class=\"pt\">Schemes like MGNREGA guaranteeing 100 days of work.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q13. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">Why do workers in the unorganised sector need protection?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Jobs are low-paid, irregular and without security.</div><div class=\"pt\">They get no paid leave, PF or medical benefits; working conditions are unsafe.</div><div class=\"pt\">Most are from SC, ST and backward communities who also face social discrimination.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q14. <span class=\"badge\">3 Marks</span></div>\n    <div class=\"q-text\">Distinguish between the public and private sectors.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Public sector</th><th>Private sector</th></tr><tr><td>Government owns most assets</td><td>Individuals or companies own assets</td></tr><tr><td>Aim: public welfare</td><td>Aim: profit</td></tr><tr><td>e.g. Indian Railways</td><td>e.g. TISCO</td></tr></table></div></div></div>\n  </div>\n\n  <div class=\"q-card\"><div class=\"q-title\">✦ Section C: Long Answer (5 Marks)</div></div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q15. <span class=\"badge\">5 Marks</span></div>\n    <div class=\"q-text\">Explain the three sectors of the economy and their interdependence with examples.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Primary:</b> uses natural resources directly — farming, dairy, fishing, forestry.</div><div class=\"pt\"><b>Secondary:</b> manufacturing — natural products turned into other forms, e.g. cotton into cloth.</div><div class=\"pt\"><b>Tertiary:</b> services that support others — transport, banking, trade, communication.</div><div class=\"pt\"><b>Interdependence:</b> a cotton farmer depends on mills to buy cotton; mills depend on transport and banks; shops sell the cloth.</div><div class=\"pt\">A problem in one sector (e.g. crop failure) affects the others.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q16. <span class=\"badge\">5 Marks</span></div>\n    <div class=\"q-text\">Compare the organised and unorganised sectors and suggest ways to protect workers in the unorganised sector.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Organised:</b> registered, regular jobs, fixed hours, overtime, paid leave, PF, medical benefits.</div><div class=\"pt\"><b>Unorganised:</b> small scattered units, irregular low-paid jobs, no benefits or security.</div><div class=\"pt\"><b>Protection:</b> ensure minimum wages and safe working conditions.</div><div class=\"pt\">Provide health facilities and insurance; register small units.</div><div class=\"pt\">Help small industries with raw materials, credit and marketing.</div></div></div>\n  </div>\n\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q17. <span class=\"badge\">4 Marks</span></div>\n    <div class=\"q-text\"><b>Source-based:</b> Read the source and answer the questions.<br/><i>“The central government in India made a law, implementing the Right to Work in about 625 districts of India. It is called the Mahatma Gandhi National Rural Employment Guarantee Act 2005 (MGNREGA 2005). Under MGNREGA 2005, all those who are able to, and are in need of, work in rural areas are guaranteed 100 days of employment in a year by the government.”</i><br/>(i) What does MGNREGA guarantee? (1)<br/>(ii) What happens if work is not provided? (1)<br/>(iii) How does MGNREGA help rural people? (2)</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">(i)</div><div class=\"pt\">100 days of employment in a year to rural people who need work.</div><div class=\"sub-q\">(ii)</div><div class=\"pt\">The government gives an unemployment allowance.</div><div class=\"sub-q\">(iii)</div><div class=\"pt\">It gives income to the poor and reduces disguised unemployment.</div><div class=\"pt\">It creates assets that raise production from land; one-third of jobs go to women.</div></div></div>\n  </div>\n\n</div>"
   },
+  "introduction": "When you buy milk, take a bus, or get a haircut, you are participating in the economy. Economists classify these activities into different sectors to understand how the country is growing. Let's learn about the Primary, Secondary, and Tertiary sectors.",
+  "definitions": [],
+  "keyPoints": [],
+  "formulas": [],
+  "crux": [],
+  "mcqs": [
+    {
+      "id": "se2-mcq-1",
+      "question": "<div style='text-align: justify;'>Sectors are classified into public and private on the basis of:</div>",
+      "options": [
+        "A):   Employment conditions",
+        "B):   Nature of economic activity",
+        "C):   Ownership of enterprises",
+        "D):   Number of workers"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Who owns the assets decides the sector.</div>"
+    },
+    {
+      "id": "se2-mcq-2",
+      "question": "<div style='text-align: justify;'>Production of a commodity mostly through the natural process is an activity of the:</div>",
+      "options": [
+        "A):   Primary sector",
+        "B):   Secondary sector",
+        "C):   Tertiary sector",
+        "D):   IT sector"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Farming and fishing are examples.</div>"
+    },
+    {
+      "id": "se2-mcq-3",
+      "question": "<div style='text-align: justify;'>GDP is the total value of:</div>",
+      "options": [
+        "A):   All goods and services",
+        "B):   Intermediate and final goods",
+        "C):   All intermediate goods",
+        "D):   All final goods and services"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Counting intermediate goods causes double counting.</div>"
+    },
+    {
+      "id": "se2-mcq-4",
+      "question": "<div style='text-align: justify;'>In 2013-14, the share of the tertiary sector in GDP was between:</div>",
+      "options": [
+        "A):   20–30%",
+        "B):   50–60%",
+        "C):   30–40%",
+        "D):   60–70%"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>It became the largest producing sector.</div>"
+    },
+    {
+      "id": "se2-mcq-5",
+      "question": "<div style='text-align: justify;'>Workers in the ______ sector do not produce goods.</div>",
+      "options": [
+        "A):   Tertiary",
+        "B):   Agricultural",
+        "C):   Secondary",
+        "D):   Primary"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>They provide services.</div>"
+    },
+    {
+      "id": "se2-mcq-6",
+      "question": "<div style='text-align: justify;'>Cotton is a ______ product and cloth is a ______ product.</div>",
+      "options": [
+        "A):   Manufactured, natural",
+        "B):   Natural, natural",
+        "C):   Natural, manufactured",
+        "D):   Manufactured, manufactured"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Cloth is made from cotton.</div>"
+    },
+    {
+      "id": "se2-mcq-7",
+      "question": "<div style='text-align: justify;'>The activities of the three sectors are:</div>",
+      "options": [
+        "A):   Independent",
+        "B):   Interdependent",
+        "C):   Unrelated",
+        "D):   Opposite"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Each sector depends on the others.</div>"
+    },
+    {
+      "id": "se2-mcq-8",
+      "question": "<div style='text-align: justify;'>Which sector is the largest employer in India?</div>",
+      "options": [
+        "A):   Public",
+        "B):   Secondary",
+        "C):   Tertiary",
+        "D):   Primary"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>More than half the workers are in agriculture.</div>"
+    },
+    {
+      "id": "se2-mcq-9",
+      "question": "<div style='text-align: justify;'>A family of eight working on a farm that needs only three people shows:</div>",
+      "options": [
+        "A):   Open unemployment",
+        "B):   Full employment",
+        "C):   Seasonal employment",
+        "D):   Disguised unemployment"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Removing some workers would not reduce output.</div>"
+    },
+    {
+      "id": "se2-mcq-10",
+      "question": "<div style='text-align: justify;'>MGNREGA guarantees employment for:</div>",
+      "options": [
+        "A):   50 days",
+        "B):   100 days",
+        "C):   200 days",
+        "D):   365 days"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Otherwise an unemployment allowance is paid.</div>"
+    },
+    {
+      "id": "se2-mcq-11",
+      "question": "<div style='text-align: justify;'>Under MGNREGA, what share of jobs is reserved for women?</div>",
+      "options": [
+        "A):   One-fourth",
+        "B):   One-half",
+        "C):   One-third",
+        "D):   Two-thirds"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Preference is given to work on land.</div>"
+    },
+    {
+      "id": "se2-mcq-12",
+      "question": "<div style='text-align: justify;'>Which is a feature of the organised sector?</div>",
+      "options": [
+        "A):   Paid leave and provident fund",
+        "B):   No job security",
+        "C):   No fixed hours",
+        "D):   Not registered"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>It follows labour laws.</div>"
+    },
+    {
+      "id": "se2-mcq-13",
+      "question": "<div style='text-align: justify;'>A street vendor works in the:</div>",
+      "options": [
+        "A):   Organised sector",
+        "B):   Joint sector",
+        "C):   Public sector",
+        "D):   Unorganised sector"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Such jobs are irregular and low-paid.</div>"
+    },
+    {
+      "id": "se2-mcq-14",
+      "question": "<div style='text-align: justify;'>Which of these is a public sector enterprise?</div>",
+      "options": [
+        "A):   Indian Railways",
+        "B):   Reliance Industries",
+        "C):   TISCO",
+        "D):   SAHARA Airlines"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>It is owned and run by the government.</div>"
+    },
+    {
+      "id": "se2-mcq-15",
+      "question": "<div style='text-align: justify;'>The main aim of the private sector is:</div>",
+      "options": [
+        "A):   Public welfare",
+        "B):   Free services",
+        "C):   Profit",
+        "D):   Tax collection"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>The public sector aims at welfare.</div>"
+    },
+    {
+      "id": "se2-mcq-16",
+      "question": "<div style='text-align: justify;'>The Food Corporation of India:</div>",
+      "options": [
+        "A):   Runs restaurants",
+        "B):   Buys grains from farmers and supplies ration shops",
+        "C):   Makes fertilisers",
+        "D):   Builds roads"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>It provides food security.</div>"
+    },
+    {
+      "id": "se2-mcq-17",
+      "question": "<div style='text-align: justify;'>Odd one out: tourist guide, dhobi, tailor, potter</div>",
+      "options": [
+        "A):   Tourist guide",
+        "B):   Potter",
+        "C):   Tailor",
+        "D):   Dhobi"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>A potter makes goods; the others provide services.</div>"
+    },
+    {
+      "id": "se2-mcq-18",
+      "question": "<div style='text-align: justify;'>Odd one out: MTNL, Indian Railways, Air India, SAHARA Airlines</div>",
+      "options": [
+        "A):   MTNL",
+        "B):   Indian Railways",
+        "C):   Air India",
+        "D):   SAHARA Airlines"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>It was a private company.</div>"
+    },
+    {
+      "id": "se2-mcq-19",
+      "question": "<div style='text-align: justify;'>In Surat, if 15% + 15% are organised and 20% are street workers, the unorganised share is:</div>",
+      "options": [
+        "A):   20%",
+        "B):   50%",
+        "C):   70%",
+        "D):   85%"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>20% + 50% in small workshops = 70%.</div>"
+    },
+    {
+      "id": "se2-mcq-20",
+      "question": "<div style='text-align: justify;'>In Ahmedabad (1997-98), how many of 15 lakh workers were in the unorganised sector?</div>",
+      "options": [
+        "A):   11 lakh",
+        "B):   4 lakh",
+        "C):   15 lakh",
+        "D):   7 lakh"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>They earned less than half the income.</div>"
+    },
+    {
+      "id": "se2-mcq-21",
+      "question": "<div style='text-align: justify;'>Which helps solve the problem of unirrigated land?</div>",
+      "options": [
+        "A):   Cooperative marketing societies",
+        "B):   Agro-based mills",
+        "C):   Construction of canals",
+        "D):   Procurement of grains"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Canals provide irrigation.</div>"
+    },
+    {
+      "id": "se2-mcq-22",
+      "question": "<div style='text-align: justify;'>Arrange in the historical order of importance: (i) Tertiary (ii) Primary (iii) Secondary</div>",
+      "options": [
+        "A):   (ii), (iii), (i)",
+        "B):   (i), (ii), (iii)",
+        "C):   (iii), (ii), (i)",
+        "D):   (ii), (i), (iii)"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Primary → secondary → tertiary in developed countries.</div>"
+    },
+    {
+      "id": "se2-mcq-23",
+      "question": "<div style='text-align: justify;'>Match: (P) Farming (Q) Weaving cloth in a mill (R) Banking (S) MGNREGA — with (1) Primary sector (2) Secondary sector (3) Tertiary sector (4) Right to work</div>",
+      "options": [
+        "A):   P-4, Q-2, R-3, S-1",
+        "B):   P-2, Q-1, R-3, S-4",
+        "C):   P-1, Q-3, R-2, S-4",
+        "D):   P-1, Q-2, R-3, S-4"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Farming is primary, mills secondary, banking tertiary; MGNREGA guarantees work.</div>"
+    },
+    {
+      "id": "se2-mcq-24",
+      "question": "<div style='text-align: justify;'>Assertion (A): The government provides infrastructure like roads and dams. Reason (R): These need huge spending that private companies will not provide at a reasonable cost.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>R explains why the public sector provides them.</div>"
+    },
+    {
+      "id": "se2-mcq-25",
+      "question": "<div style='text-align: justify;'>Assertion (A): Employment in the tertiary sector has increased as much as its production. Reason (R): The tertiary sector is the largest producing sector in India.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Employment has not grown to the same extent.</div>"
+    }
+  ],
+  "summary": [],
+  "exercises": [
+    {
+      "id": "se2-ex-1",
+      "name": "Exercise",
+      "questions": []
+    },
+    {
+      "id": "se2-ex-board",
+      "name": "Board Qs",
+      "questions": []
+    }
+  ],
+  "examples": []
 };
