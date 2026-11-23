@@ -2646,13 +2646,15 @@ export const lazyChapterLoaders: Record<string, () => any> = {
     };
   },
 
-  // Class 10 English (JKBOSE Tulip Series Book-X): 22 chapters/modules, Step 1 placeholders
+  // Class 10 English (JKBOSE Tulip Series Book-X): 22 chapters/modules — placeholders until written
   ...Object.fromEntries(
     C10_ENGLISH.map((e) => [
       e.id,
       () => require("./content/c10-eng-placeholder").buildC10EnglishPlaceholder(e),
     ]),
   ),
+  // finished Class 10 English chapters (override the placeholders above)
+  "c10-eng-p1": () => require("./content/c10-eng-p1").c10EngP1,
 };
 
 
