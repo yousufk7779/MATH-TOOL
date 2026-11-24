@@ -63,6 +63,16 @@ function HomeScreen() {
           <View style={styles.buttonsContainer}>
             <View style={styles.buttonWrapper}>
               <ColorButton
+                testID="button-english"
+                title="ENGLISH"
+                icon="📝"
+                colors={["#00B09B", "#96C93D"]}
+                onPress={() => navigation.navigate("Class10English")}
+              />
+            </View>
+
+            <View style={styles.buttonWrapper}>
+              <ColorButton
                 testID="button-math"
                 title="MATHEMATICS"
                 icon="📘"
@@ -90,16 +100,6 @@ function HomeScreen() {
                 icon="🌍"
                 colors={JiguuColors.gradients.deepOrange}
                 onPress={() => navigation.navigate("Class10SocialScience")}
-              />
-            </View>
-
-            <View style={styles.buttonWrapper}>
-              <ColorButton
-                testID="button-english"
-                title="ENGLISH"
-                icon="📝"
-                colors={["#00B09B", "#96C93D"]}
-                onPress={() => navigation.navigate("Class10English")}
               />
             </View>
 
