@@ -1,261 +1,286 @@
 import { ChapterContent } from "../types";
 
-const themeColor = "#7986CB";
-
 export const sstHisC92: ChapterContent = {
-  id: "sst-his-c9-2",
-  number: 2,
-  title: "Socialism in Europe and the Russian Revolution",
-  isHtmlView: true,
-  htmlOverview: `
-    <div style="padding: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: transparent;">
-      <!-- Key Concepts Introduction -->
-      <div style="background-color: #1E1E2E; border: 1px solid rgba(255, 138, 101, 0.2); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 20px; font-weight: 700; margin-top: 0; margin-bottom: 12px; display: flex; align-items: center;">
-          <span style="margin-right: 8px; font-size: 22px;">🛠️</span> Introduction
-        </h3>
-        <p style="color: #E0E0E0; font-size: 15px; line-height: 1.6; text-align: justify; margin: 0; font-weight: 300;">
-          The Russian Revolution of 1917 was a watershed event in modern world history. Guided by the radical theories of Karl Marx, it overthrew the autocratic Tsarist monarchy and established the world's first socialist state under the leadership of Vladimir Lenin. It triggered political movements across the globe, challenging capitalism and absolute ruler power.
-        </p>
-      </div>
-
-      <!-- Key Milestones (Important Points) -->
-      <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 600; margin-top: 0; margin-bottom: 14px; display: flex; align-items: center;">
-          <span style="margin-right: 8px; font-size: 18px;">📌</span> Key Points
-        </h3>
-        <ul style="color: #B3B3C6; font-size: 14.5px; line-height: 1.7; margin: 0; padding-left: 20px; text-align: justify;">
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">Age of Social Change:</b> French Revolution ideas gave rise to three major political ideologies: <b>Liberals</b> (wanted representative government, tolerated all religions), <b>Radicals</b> (wanted a government based on population majority), and <b>Conservatives</b> (opposed sudden change).</li>
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">Bloody Sunday (1905):</b> A peaceful procession of workers led by Father Gapon was fired upon by the Tsar's guards. Over 100 workers died, triggering strikes and creating the first Duma (Parliament).</li>
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">February Revolution (1917):</b> Spontaneous protests against bread shortages in Petrograd led to the abdication of Tsar Nicholas II, ending Romanov rule.</li>
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">October Revolution (1917):</b> A meticulously planned armed uprising led by Vladimir Lenin and the Bolsheviks overthrew the Provisional Government and seized power.</li>
-          <li style="margin-bottom: 0;"><b style="color: ${themeColor};">Stalin's Collectivisation (1929):</b> Stalin forced peasants to pool their lands into collective farms (<i>Kolkhoz</i>) to counter grain shortages, eliminating wealthy peasants (<i>Kulaks</i>).</li>
-        </ul>
-      </div>
-      
-      <!-- Key Terms Glossy Box -->
-      <div style="background: rgba(255, 138, 101, 0.05); border: 1.5px solid rgba(255, 138, 101, 0.25); border-radius: 16px; padding: 20px; box-shadow: 0 4px 30px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 600; margin-top: 0; margin-bottom: 12px;">🔑 Key Terms to Remember</h3>
-        <div style="color: #E0E0E0; font-size: 14px; line-height: 1.6; text-align: justify;">
-          <p style="margin-top: 0; margin-bottom: 8px;"><b style="color: ${themeColor};">Bolsheviks:</b> The disciplined, revolutionary majority faction of Russian socialists led by Lenin.</p>
-          <p style="margin-bottom: 8px;"><b style="color: ${themeColor};">Mensheviks:</b> The minority faction that wanted a democratic party open to all, similar to Germany's model.</p>
-          <p style="margin-bottom: 8px;"><b style="color: ${themeColor};">Duma:</b> The elected national consultative parliament of Russia.</p>
-          <p style="margin-bottom: 0;"><b style="color: ${themeColor};">Kolkhoz:</b> Collective farms in the Soviet Union where land was pooled and worked jointly.</p>
-        </div>
-      </div>
-    </div>
-  `,
-  htmlExercises: {
-    "ex-sst-qa": `
-      <div style="padding: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: transparent;">
-        <!-- Q1 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q1. What were the social, economic and political conditions in Russia before 1905?</p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> The pre-1905 conditions in Russia were:
-            <ul style="margin: 6px 0 0 0; padding-left: 20px;">
-              <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Social Conditions:</b> Around 85% of the population were agriculturists. Peasants worked the land, but nobility and church owned most property. Workers in cities were divided by skill.</li>
-              <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Economic Conditions:</b> Industries were few, centered in St. Petersburg and Moscow. Workers were exploited with long hours (12-15 hours) and low wages. Inflation was high, reducing real wages by 20%.</li>
-              <li style="margin-bottom: 0;"><b style="color: ${themeColor};">Political Conditions:</b> Russia was an absolute autocracy ruled by Tsar Nicholas II. Political parties were illegal, and secret police crushed dissent.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q2 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q2. In what ways was the working population in Russia different from other countries in Europe, before 1917?</p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> Russian workers differed from European workers in key ways:
-            <ul style="margin: 6px 0 0 0; padding-left: 20px;">
-              <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">High Agricultural Dependence:</b> 85% of Russians worked in agriculture, compared to only 40-50% in Germany or France.</li>
-              <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Peasant Land Custom (Mir):</b> Russian peasants pooled their lands periodically (called <i>mir</i>) and distributed it based on family needs. They did not respect nobles.</li>
-              <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Late Industrial Concentration:</b> Workers were concentrated in large numbers in a few industrial cities, working in large factories funded by foreign investments.</li>
-              <li style="margin-bottom: 0;"><b style="color: ${themeColor};">Strong Solidarity:</b> Despite divisions, they united rapidly to stage massive strikes to protest conditions.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q3 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q3. Why did the Tsarist autocracy collapse in 1917?</p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> The Tsarist collapse was caused by:
-            <ul style="margin: 6px 0 0 0; padding-left: 20px;">
-              <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Impact of World War I:</b> Russia lost over 7 million soldiers. War expenses destroyed the economy and caused grain shortages in cities.</li>
-              <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Bad Leadership:</b> Tsar Nicholas II refused to cooperate with the Duma. Influence of unpopular figures like Rasputin alienated the elite.</li>
-              <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Subsistence Crisis:</b> Heavy winter and lack of flour led to massive riots at food queues in Petrograd.</li>
-              <li style="margin-bottom: 0;"><b style="color: ${themeColor};">Mutiny of the Army:</b> The Tsar ordered troops to fire on protesters. Instead, the soldiers revolted, joined the strikers, and forced the Tsar to abdicate.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q4 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q4. Make two lists: one with the main events and the effects of the February Revolution and the other with the main events and effects of the October Revolution. Write a paragraph on who was involved in each, who were the leaders and what was the impact of each on Soviet history.</p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <b style="color: ${themeColor}; font-weight: 600;">Answer:</b>
-            <p style="margin: 6px 0 4px 0;"><b style="color: ${themeColor};">1. February Revolution (Petrograd, 1917):</b></p>
-            <ul style="margin: 0; padding-left: 20px;">
-              <li><b>Events:</b> Food riots, worker strikes, army mutiny, and the Tsar's abdication on 2nd March.</li>
-              <li><b>Effects:</b> End of Monarchy; creation of the Provisional Government.</li>
-            </ul>
-            <p style="margin: 10px 0 4px 0;"><b style="color: ${themeColor};">2. October Revolution (Petrograd, 1917):</b></p>
-            <ul style="margin: 0; padding-left: 20px;">
-              <li><b>Events:</b> Conflict between the Provisional Government and Bolsheviks, armed coup on 24th October, takeover of government.</li>
-              <li><b>Effects:</b> Soviet power established; banks and lands nationalized.</li>
-            </ul>
-            <p style="margin: 10px 0 0 0;"><b>Involvement & Impact:</b> February was a spontaneous worker-soldier uprising with no specific leaders. October was a planned coup led by Vladimir Lenin and Leon Trotsky. Together, they laid the foundation of the USSR, converting Russia into a global socialist superpower.</p>
-          </div>
-        </div>
-
-        <!-- Q5 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q5. What were the main changes brought about by the Bolsheviks immediately after the October Revolution?</p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> Immediate changes brought about by the Bolsheviks:
-            <ul style="margin: 6px 0 0 0; padding-left: 20px;">
-              <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Nationalization:</b> All banks and industries were nationalized in November 1917.</li>
-              <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Land Redistribution:</b> Land was declared social property, and peasants were allowed to seize nobility lands.</li>
-              <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Abolition of Titles:</b> Use of old aristocratic titles of nobility was declared illegal.</li>
-              <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Peace Treaty:</b> Russia signed the Treaty of Brest-Litovsk with Germany, exiting World War I.</li>
-              <li style="margin-bottom: 0;"><b style="color: ${themeColor};">New Identity:</b> Soviet uniforms were designed for the army, including the special cap (<i>budeonovka</i>).</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q6 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q6. Write a few lines to show what you know about: kulaks, the Duma, women workers between 1900 and 1930, the Liberals, Stalin's collectivisation programme.</p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <b style="color: ${themeColor}; font-weight: 600;">Answer:</b>
-            <ul style="margin: 6px 0 0 0; padding-left: 20px;">
-              <li style="margin-bottom: 8px;"><b style="color: ${themeColor};">Kulaks:</b> Wealthy peasants in Russia. Accused of hoarding grain, they were targeted and systematically eliminated during Stalin's agricultural reforms.</li>
-              <li style="margin-bottom: 8px;"><b style="color: ${themeColor};">The Duma:</b> The elected consultative parliament of Russia. Created after the 1905 revolution, but Tsar Nicholas II dismissed them quickly to retain power.</li>
-              <li style="margin-bottom: 8px;"><b style="color: ${themeColor};">Women Workers (1900-1930):</b> Comprised 31% of industrial workforce by 1914 but were paid half to three-quarters of men's wages. They initiated protests on International Women's Day during the February Revolution.</li>
-              <li style="margin-bottom: 8px;"><b style="color: ${themeColor};">The Liberals:</b> Political faction advocating for representative government and individual freedom. They opposed monarchy but didn't support voting rights for women/poor.</li>
-              <li style="margin-bottom: 0;"><b style="color: ${themeColor};">Collectivisation Programme:</b> Stalin's 1929 reform forcing peasants to farm in state-owned collective farms (<i>Kolkhoz</i>) to solve food shortages, leading to severe opposition and famine.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q7 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q7. Briefly discuss the impact of Russian Revolution in Kashmir.</p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> The Russian Revolution of 1917 strongly influenced Jammu and Kashmir:
-            <ul style="margin: 6px 0 0 0; padding-left: 20px;">
-              <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Anti-Feudalism:</b> The collapse of the Tsarist empire inspired Kashmiri leaders to organize movements to end the autocratic Dogra dynasty rule.</li>
-              <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Peasant Movements:</b> Socialist ideals sparked calls for land reforms and workers' unionization to challenge landlord exploitation.</li>
-              <li style="margin-bottom: 0;"><b style="color: ${themeColor};">"Naya Kashmir" (1944):</b> The National Conference's progressive blueprint was heavily inspired by the Soviet system, promising land redistribution to the tiller and economic equality.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    `,
+  "id": "sst-his-c9-2",
+  "number": 2,
+  "title": "Socialism in Europe and the Russian Revolution",
+  "isHtmlView": true,
+  "htmlOverview": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(121, 134, 203, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #7986CB; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #7986CB; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #C5CAE9; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #C5CAE9; font-weight: 700; }\n  .hl { color: #7986CB; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #7986CB; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #7986CB; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(121, 134, 203, 0.10); border: 1.5px dashed #7986CB; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #7986CB; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(121, 134, 203, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(121, 134, 203, 0.18); border: 1px solid #7986CB; color: #C5CAE9; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(121, 134, 203, 0.2); color: #C5CAE9; }\n  .q-card .q-text, .q-card .sub-q { color: #7986CB !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ Chapter at a Glance</div><div class=\"sol-step\"><div class=\"rev\">After the French Revolution, new ideas about individual rights and social power spread across Europe. <span class=\"hl\">Socialism</span> became one of the most powerful ideas of the twentieth century. In <b>Russia</b>, socialists took over the government through the <b>October Revolution of 1917</b>. The fall of the monarchy in <b>February 1917</b> and the events of <b>October</b> are together called the <span class=\"hl\">Russian Revolution</span>.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 270\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"270\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"20\" font-size=\"11.5\" fill=\"#7986CB\" text-anchor=\"middle\" font-weight=\"700\">Russian Revolution: Important Dates</text><line x1=\"76\" y1=\"34\" x2=\"76\" y2=\"260\" stroke=\"rgba(121,134,203,0.55)\" stroke-width=\"2\"/><circle cx=\"76\" cy=\"39.5\" r=\"4\" fill=\"#7986CB\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"43\" font-size=\"10\" fill=\"#7986CB\" text-anchor=\"end\" font-weight=\"700\">1850s–1880s</text><text x=\"88\" y=\"43.0\" font-size=\"9.5\" fill=\"#FFFFFF\">Debates over socialism in Russia</text><circle cx=\"76\" cy=\"69.7\" r=\"4\" fill=\"#7986CB\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"73.2\" font-size=\"10\" fill=\"#7986CB\" text-anchor=\"end\" font-weight=\"700\">1898</text><text x=\"88\" y=\"73.2\" font-size=\"9.5\" fill=\"#FFFFFF\">Formation of the Russian Social</text><text x=\"88\" y=\"85.4\" font-size=\"9.5\" fill=\"#FFFFFF\">Democratic Workers Party</text><circle cx=\"76\" cy=\"112.1\" r=\"4\" fill=\"#7986CB\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"115.6\" font-size=\"10\" fill=\"#7986CB\" text-anchor=\"end\" font-weight=\"700\">1905</text><text x=\"88\" y=\"115.6\" font-size=\"9.5\" fill=\"#FFFFFF\">Bloody Sunday and the Revolution of</text><text x=\"88\" y=\"127.8\" font-size=\"9.5\" fill=\"#FFFFFF\">1905</text><circle cx=\"76\" cy=\"154.5\" r=\"4\" fill=\"#7986CB\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"158\" font-size=\"10\" fill=\"#7986CB\" text-anchor=\"end\" font-weight=\"700\">1917</text><text x=\"88\" y=\"158.0\" font-size=\"9.5\" fill=\"#FFFFFF\">2 March: abdication of the Tsar; 24</text><text x=\"88\" y=\"170.2\" font-size=\"9.5\" fill=\"#FFFFFF\">October: Bolshevik uprising in</text><text x=\"88\" y=\"182.4\" font-size=\"9.5\" fill=\"#FFFFFF\">Petrograd</text><circle cx=\"76\" cy=\"209.1\" r=\"4\" fill=\"#7986CB\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"212.6\" font-size=\"10\" fill=\"#7986CB\" text-anchor=\"end\" font-weight=\"700\">1918–20</text><text x=\"88\" y=\"212.6\" font-size=\"9.5\" fill=\"#FFFFFF\">The Civil War; formation of Comintern</text><circle cx=\"76\" cy=\"239.29999999999998\" r=\"4\" fill=\"#7986CB\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"242.79999999999998\" font-size=\"10\" fill=\"#7986CB\" text-anchor=\"end\" font-weight=\"700\">1929</text><text x=\"88\" y=\"242.8\" font-size=\"9.5\" fill=\"#FFFFFF\">Beginning of collectivisation</text></svg></div><div class=\"diagram-caption\">Fig. 1: Important dates (from the textbook)</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 1. Liberals, Radicals and Conservatives</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Group</th><th>Ideas</th></tr><tr><td>Liberals</td><td>A nation tolerating all religions; opposed uncontrolled power of dynastic rulers; wanted a representative, elected parliament and an independent judiciary. <b>Not democrats</b> — only men of property should vote; no vote for women.</td></tr><tr><td>Radicals</td><td>Government based on the majority of the population; supported women's suffragette movements; opposed privileges of great landowners and factory owners; not against private property but against its concentration in a few hands.</td></tr><tr><td>Conservatives</td><td>Opposed radicals and liberals; by the 19th century accepted some change was inevitable, but the past had to be respected and change had to be slow.</td></tr></table></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 2. Industrial Society and the Coming of Socialism</div><div class=\"sol-step\"><div class=\"rev\">Industrialisation brought men, women and children to factories — long hours, poor wages, unemployment and bad housing. Liberals and radicals, often property owners themselves, believed in individual effort, labour and enterprise. Some nationalists, liberals and radicals (e.g. <b>Giuseppe Mazzini</b> in Italy) worked for revolutions to end the governments set up in Europe in 1815.</div><div class=\"rev\"><span class=\"hl\">Socialists</span> were against private property: the propertied cared only for personal gain, so <b>society as a whole</b> should control property.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Thinker</th><th>Idea</th></tr><tr><td>Robert Owen (1771–1858)</td><td>English manufacturer; built a cooperative community, <b>New Harmony</b>, in Indiana (USA)</td></tr><tr><td>Louis Blanc (1813–1882)</td><td>Government should encourage cooperatives and replace capitalist enterprises</td></tr><tr><td>Karl Marx (1818–1883) and Friedrich Engels (1820–1895)</td><td>Profit of capitalists is produced by workers; workers must overthrow capitalism and build a <b>communist society</b> where all property is socially controlled</td></tr></table></div><div class=\"sec\">Support for socialism</div><div class=\"pt\">By the 1870s socialists formed the <b>Second International</b>.</div><div class=\"pt\">Workers' associations in England and Germany demanded shorter hours and the right to vote; in Germany they helped the <b>Social Democratic Party (SPD)</b>.</div><div class=\"pt\">By 1905 a <b>Labour Party</b> in Britain and a <b>Socialist Party</b> in France were formed; but till 1914 socialists never formed a government in Europe.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 3. Russia before the Revolution</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Empire (1914):</span> ruled by <b>Tsar Nicholas II</b>; included Finland, Latvia, Lithuania, Estonia, parts of Poland, Ukraine and Belarus, Central Asian states, Georgia, Armenia and Azerbaijan. Majority religion: Russian Orthodox Christianity.</div><div class=\"pt\"><span class=\"lbl\">Economy:</span> about <b>85 per cent</b> earned their living from agriculture (40–50 per cent in France and Germany); Russia was a major grain exporter. Industry was in pockets — <b>St Petersburg and Moscow</b>; many factories were set up in the 1890s with railways and foreign investment.</div><div class=\"pt\"><span class=\"lbl\">Workers:</span> working day up to 15 hours in small workshops (10–12 in factories); divided by village links and skill; women were <b>31 per cent</b> of factory labour by 1914 but earned half to three-quarters of a man's wage; strikes in textiles (1896–97) and metal industry (1902).</div><div class=\"pt\"><span class=\"lbl\">Peasants:</span> cultivated most land, but the nobility, crown and Orthodox Church owned large properties; peasants had no respect for the nobility, wanted their land, refused rent and even murdered landlords (1902, 1905); they pooled land in a <b>commune (mir)</b>.</div><div class=\"sec\">Socialism in Russia</div><div class=\"pt\"><span class=\"lbl\">1898:</span> <b>Russian Social Democratic Workers Party</b> founded (illegal; all parties were illegal before 1914).</div><div class=\"pt\"><span class=\"lbl\">1900:</span> <b>Socialist Revolutionary Party</b> — fought for peasants' rights and transfer of nobles' land.</div><div class=\"pt\"><span class=\"lbl\">Split:</span> <b>Lenin (Bolsheviks)</b> wanted a disciplined party with controlled membership; the <b>Mensheviks</b> wanted a party open to all.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 4. The 1905 Revolution</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">1904:</span> prices rose so fast that <b>real wages fell by 20 per cent</b>.</div><div class=\"pt\"><span class=\"lbl\">Strike:</span> after four members of the Assembly of Russian Workers were dismissed at the <b>Putilov Iron Works</b>, over 110,000 workers in St Petersburg struck for an eight-hour day, higher wages and better conditions.</div><div class=\"pt\"><span class=\"lbl\">Bloody Sunday:</span> a procession led by <b>Father Gapon</b> was attacked at the Winter Palace by police and Cossacks — over 100 killed, about 300 wounded.</div><div class=\"pt\"><span class=\"lbl\">Result:</span> strikes everywhere; the middle class formed the <b>Union of Unions</b>. The Tsar allowed an elected consultative parliament, the <b>Duma</b> — but dismissed the first Duma within 75 days and the second within three months, and packed the third with conservatives.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 5. The First World War and Russia</div><div class=\"sol-step\"><div class=\"rev\">War broke out in 1914 between the Central Powers (Germany, Austria, Turkey) and France, Britain and Russia. At first popular, it soon discredited the Tsar.</div><div class=\"pt\">The Tsar refused to consult the Duma; St Petersburg was renamed <b>Petrograd</b> (anti-German feeling); Tsarina Alexandra's German origin and the monk <b>Rasputin</b> made the autocracy unpopular.</div><div class=\"pt\">Over <b>7 million casualties</b> by 1917; the retreating army destroyed crops and buildings — over <b>3 million refugees</b>.</div><div class=\"pt\">German control of the Baltic cut off supplies; railways broke down by 1916; grain went to the army; by winter 1916 <b>riots at bread shops</b> were common.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 6. The February Revolution (1917)</div><div class=\"sol-step\"><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 306\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"306\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#7986CB\" text-anchor=\"middle\" font-weight=\"700\">February 1917 in Petrograd</text><rect x=\"30\" y=\"30\" width=\"260\" height=\"26.4\" rx=\"6\" fill=\"rgba(79,195,247,0.16)\" stroke=\"#4FC3F7\" stroke-width=\"1.2\"/><text x=\"160\" y=\"46.5\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">22 Feb: lockout at a factory on the right bank</text><line x1=\"160\" y1=\"57.4\" x2=\"160\" y2=\"64.4\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 69.4 L163.5 63.4 L156.5 63.4 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"70.4\" width=\"260\" height=\"38.8\" rx=\"6\" fill=\"rgba(255,183,77,0.16)\" stroke=\"#FFB74D\" stroke-width=\"1.2\"/><text x=\"160\" y=\"86.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">23 Feb: workers in 50 factories strike; women</text><text x=\"160\" y=\"99.3\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">lead (International Women's Day)</text><line x1=\"160\" y1=\"110.2\" x2=\"160\" y2=\"117.2\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 122.2 L163.5 116.2 L156.5 116.2 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"123.2\" width=\"260\" height=\"26.4\" rx=\"6\" fill=\"rgba(239,83,80,0.16)\" stroke=\"#EF5350\" stroke-width=\"1.2\"/><text x=\"160\" y=\"139.7\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">25 Feb: government suspends the Duma</text><line x1=\"160\" y1=\"150.6\" x2=\"160\" y2=\"157.6\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 162.6 L163.5 156.6 L156.5 156.6 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"163.6\" width=\"260\" height=\"38.8\" rx=\"6\" fill=\"rgba(244,143,177,0.16)\" stroke=\"#F48FB1\" stroke-width=\"1.2\"/><text x=\"160\" y=\"180.1\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">27 Feb: Police HQ ransacked; cavalry refuses</text><text x=\"160\" y=\"192.5\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">to fire; regiments mutiny</text><line x1=\"160\" y1=\"203.39999999999998\" x2=\"160\" y2=\"210.39999999999998\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 215.39999999999998 L163.5 209.39999999999998 L156.5 209.39999999999998 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"216.39999999999998\" width=\"260\" height=\"26.4\" rx=\"6\" fill=\"rgba(148,163,184,0.13)\" stroke=\"#94A3B8\" stroke-width=\"1.2\"/><text x=\"160\" y=\"232.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Soldiers and workers form the Petrograd Soviet</text><line x1=\"160\" y1=\"243.79999999999998\" x2=\"160\" y2=\"250.79999999999998\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 255.79999999999998 L163.5 249.79999999999998 L156.5 249.79999999999998 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"256.79999999999995\" width=\"260\" height=\"38.8\" rx=\"6\" fill=\"rgba(129,199,132,0.16)\" stroke=\"#81C784\" stroke-width=\"1.2\"/><text x=\"160\" y=\"273.3\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">2 March: Tsar abdicates; Provisional</text><text x=\"160\" y=\"285.7\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Government formed</text></svg></div><div class=\"diagram-caption\">Fig. 2: The February Revolution</div></div><div class=\"rev\">Army officials, landowners and industrialists were influential in the Provisional Government; restrictions on meetings were removed and soviets were set up everywhere.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 7. The October Revolution (1917)</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">April Theses:</span> Lenin returned in April 1917 and demanded: end the war, transfer land to peasants, nationalise banks; rename the party the Communist Party.</div><div class=\"pt\"><span class=\"lbl\">Summer:</span> factory committees, trade unions and soldiers' committees grew; Bolshevik demonstrations in <b>July 1917</b> were repressed; peasants seized land (July–September).</div><div class=\"pt\"><span class=\"lbl\">16 October:</span> Lenin persuaded the Petrograd Soviet and the Bolshevik Party to agree to seize power; a <b>Military Revolutionary Committee</b> under <b>Leon Trotskii</b> organised it.</div><div class=\"pt\"><span class=\"lbl\">24 October:</span> Prime Minister <b>Kerenskii</b> had left the city; the ship <b>Aurora</b> shelled the Winter Palace; by nightfall the ministers surrendered. The All Russian Congress of Soviets approved; by December the Bolsheviks controlled the Moscow–Petrograd area.</div><div class=\"pt\"><span class=\"lbl\">Calendar:</span> Russia followed the Julian calendar till 1 February 1918; by the Gregorian calendar the 'February' Revolution was on <b>12 March</b> and the 'October' Revolution on <b>7 November</b>.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 8. What Changed after October?</div><div class=\"sol-step\"><div class=\"pt\">Most industry and banks <b>nationalised</b> (November 1917); land declared social property; large houses partitioned; old aristocratic titles banned; new uniforms and the Soviet hat (<b>budeonovka</b>).</div><div class=\"pt\">Party renamed <b>Russian Communist Party (Bolshevik)</b>; Lenin dismissed the Constituent Assembly (January 1918); peace with Germany at <b>Brest Litovsk</b> (March 1918).</div><div class=\"pt\">Russia became a <b>one-party state</b>; trade unions under party control; the secret police (<b>Cheka</b>, later OGPU and NKVD) punished critics.</div><div class=\"sec\">The Civil War (1918–1920)</div><div class=\"rev\">'Greens' (Socialist Revolutionaries) and 'whites' (pro-Tsarists), backed by French, American, British and Japanese troops, fought the 'reds' (Bolsheviks). By January 1920 the Bolsheviks controlled most of the former empire. The <b>USSR</b> was created in December 1922; non-Russian nationalities got political autonomy.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 9. Making a Socialist Society</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Planning:</span> centralised planning and <b>Five Year Plans</b> (1927–1932 and 1933–1938); between 1929 and 1933 production of oil, coal and steel rose by 100 per cent; new factory cities like <b>Magnitogorsk</b>, but with harsh working conditions.</div><div class=\"pt\"><span class=\"lbl\">Welfare:</span> extended schooling; workers and peasants could enter universities; crèches in factories; cheap public health care; model living quarters.</div><div class=\"sec\">Stalinism and Collectivisation</div><div class=\"pt\">By 1927–28 towns faced acute grain shortages; <b>Stalin</b> raided <b>kulaks</b> (well-to-do peasants).</div><div class=\"pt\">From <b>1929</b> peasants were forced into collective farms (<b>kolkhoz</b>); resisting peasants destroyed livestock — cattle fell by one-third (1929–31); many were deported and exiled.</div><div class=\"pt\">Bad harvests of 1930–33 caused a famine in which <b>over 4 million died</b>; by 1939 over 2 million critics were in prisons or labour camps.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 10. Global Influence and Impact in Kashmir</div><div class=\"sol-step\"><div class=\"rev\">Communist parties formed in many countries; the Bolsheviks founded the <b>Comintern</b>. In India a Communist Party was formed by the mid-1920s; <b>Jawaharlal Nehru</b> and <b>Rabindranath Tagore</b> visited Russia. By the 1950s it was accepted that the USSR had become a great power but had denied essential freedoms.</div><div class=\"sec\">Impact of the Russian Revolution in Kashmir</div><div class=\"pt\"><span class=\"lbl\">1919:</span> the political resident asked the Maharaja to guard the northern borders against Bolshevik literature; yet socialist literature entered secretly through <b>Gilgit</b>.</div><div class=\"pt\"><span class=\"lbl\">Literature:</span> Kashmiri writers studied Russian works of Chekov, Tolstoy, Gogol, Gorky and Pushkin.</div><div class=\"pt\"><span class=\"lbl\">Politics:</span> Nehru's socialist ideas influenced <b>Sheikh Abdullah</b>; the <b>National Conference</b> adopted pro-peasant and pro-worker policies; groups like the Kashmir Youth League, Peasants Association, Mazdoor Sabha and Kissan Sabha emerged.</div><div class=\"pt\"><span class=\"lbl\">New Kashmir Manifesto (1944):</span> universal adult suffrage, equal rights, freedom of speech, press and assembly, free education in mother tongue, state ownership of key industries, <b>land to the tiller</b>, abolition of feudalism.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 11. Key Terms</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Term</th><th>Meaning</th></tr><tr><td>Suffragette movement</td><td>A movement to give women the right to vote</td></tr><tr><td>Jadidists</td><td>Muslim reformers within the Russian empire</td></tr><tr><td>Real wage</td><td>Reflects the quantities of goods which the wages will actually buy</td></tr><tr><td>Autonomy</td><td>The right to govern themselves</td></tr><tr><td>Nomadism</td><td>Lifestyle of those who move from area to area to earn their living</td></tr><tr><td>Deported</td><td>Forcibly removed from one's own country</td></tr><tr><td>Exiled</td><td>Forced to live away from one's own country</td></tr><tr><td>Kulaks</td><td>Well-to-do peasants</td></tr><tr><td>Kolkhoz</td><td>Collective farm</td></tr></table></div><div class=\"exam\"><span class=\"exam-t\">📌 Exam Focus</span><div>• Liberals, radicals, conservatives; ideas of Owen, Blanc, Marx</div><div>• Russia before 1905; the 1905 Revolution and the Duma</div><div>• Causes of the collapse of the Tsar; February and October 1917</div><div>• Changes after October; Civil War; Five Year Plans; collectivisation</div><div>• Impact of the Russian Revolution in Kashmir</div></div></div>\n  </div>\n\n</div>",
+  "htmlExercises": {
+    "sh9-2-ex-q": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(121, 134, 203, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #7986CB; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #7986CB; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #C5CAE9; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #C5CAE9; font-weight: 700; }\n  .hl { color: #7986CB; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #7986CB; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #7986CB; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(121, 134, 203, 0.10); border: 1.5px dashed #7986CB; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #7986CB; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(121, 134, 203, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(121, 134, 203, 0.18); border: 1px solid #7986CB; color: #C5CAE9; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(121, 134, 203, 0.2); color: #C5CAE9; }\n  .q-card .q-text, .q-card .sub-q { color: #7986CB !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">What were the social, economic and political conditions in Russia before 1905?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">Social</div><div class=\"pt\">About 85 per cent of people depended on agriculture. The nobility, the crown and the Orthodox Church owned large properties; peasants had no respect for nobles, wanted their land, refused rent and even murdered landlords (1902).</div><div class=\"pt\">Workers were divided by village links and skill; women earned less than men.</div><div class=\"sub-q\">Economic</div><div class=\"pt\">Industry existed only in pockets (St Petersburg, Moscow); factories grew in the 1890s with railways and foreign investment.</div><div class=\"pt\">Working days were long — up to 15 hours in small workshops; strikes took place in textiles (1896–97) and metal industry (1902).</div><div class=\"sub-q\">Political</div><div class=\"pt\">Russia was an <b>autocracy</b>; the Tsar was not subject to parliament.</div><div class=\"pt\">All political parties were illegal; the Social Democratic Workers Party (1898) and Socialist Revolutionary Party (1900) had to work secretly.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">In what ways was the working population in Russia different from other countries in Europe, before 1917?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Mostly agricultural:</span> about 85 per cent depended on agriculture, against 40–50 per cent in France and Germany.</div><div class=\"pt\"><span class=\"lbl\">Divided workers:</span> many kept strong links with their villages; skilled metalworkers saw themselves as 'aristocrats' among workers; women (31 per cent of factory labour by 1914) were paid less.</div><div class=\"pt\"><span class=\"lbl\">Peasants and nobles:</span> unlike French peasants in Brittany, Russian peasants did not respect the nobles; they wanted the nobles' land and even murdered landlords.</div><div class=\"pt\"><span class=\"lbl\">Commune (mir):</span> Russian peasants pooled their land periodically and the commune divided it according to family needs.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Why did the Tsarist autocracy collapse in 1917?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Autocracy:</span> the Tsar dismissed the first two Dumas and packed the third with conservatives; he refused to consult the Duma during the war.</div><div class=\"pt\"><span class=\"lbl\">War defeats:</span> over 7 million casualties by 1917 and over 3 million refugees discredited the Tsar; soldiers did not wish to fight.</div><div class=\"pt\"><span class=\"lbl\">Unpopular court:</span> Tsarina Alexandra's German origin and the monk Rasputin.</div><div class=\"pt\"><span class=\"lbl\">Economic collapse:</span> industries cut off by German control of the Baltic, railways broke down, labour shortages, grain sent to the army — bread became scarce and bread riots broke out by winter 1916.</div><div class=\"pt\"><span class=\"lbl\">February 1917:</span> strikes, women's demonstrations and the suspension of the Duma led to mutiny; the cavalry refused to fire, soldiers joined workers in the Petrograd Soviet, and on military advice the Tsar abdicated on 2 March 1917.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">Make two lists: one with the main events and the effects of the February Revolution and the other with the main events and effects of the October Revolution. Write a paragraph on who was involved in each, who were the leaders and what was the impact of each on Soviet history.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>February Revolution</th><th>October Revolution</th></tr><tr><td>22 Feb: lockout; next day strikes in 50 factories led by women</td><td>April Theses of Lenin; July 1917 Bolshevik demonstrations repressed</td></tr><tr><td>25 Feb: Duma suspended</td><td>16 Oct: Petrograd Soviet agrees to seize power</td></tr><tr><td>27 Feb: Police HQ ransacked; regiments mutiny; Petrograd Soviet formed</td><td>24 Oct: uprising; Aurora shells the Winter Palace; ministers surrender</td></tr><tr><td>2 March: Tsar abdicates</td><td>Congress of Soviets approves; by December Moscow–Petrograd area under Bolshevik control</td></tr><tr><td><b>Effect:</b> end of monarchy; Provisional Government; soviets set up everywhere</td><td><b>Effect:</b> Bolshevik (socialist) government; nationalisation; one-party state; civil war</td></tr></table></div><div class=\"sub-q\">Who was involved, leaders and impact</div><div class=\"rev\">The <b>February Revolution</b> was led by the workers, women and soldiers of Petrograd; no political party organised it. Duma and soviet leaders then formed the Provisional Government. It ended the monarchy.</div><div class=\"rev\">The <b>October Revolution</b> was led by the <b>Bolshevik Party under Lenin</b>, with the Military Revolutionary Committee under <b>Trotskii</b>, supported by soldiers, soviets and factory workers. It brought socialists to power and shaped Soviet history: nationalisation of industry and banks, land to peasants, a one-party state, the civil war and later planned economy.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5.</div>\n    <div class=\"q-text\">What were the main changes brought about by the Bolsheviks immediately after the October Revolution?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Most industry and banks were <b>nationalised</b> in November 1917.</div><div class=\"pt\">Land was declared social property; peasants could seize the land of the nobility.</div><div class=\"pt\">Large houses in cities were partitioned according to family needs; old aristocratic titles were banned.</div><div class=\"pt\">New uniforms for the army and officials; the Soviet hat (budeonovka).</div><div class=\"pt\">The party was renamed the Russian Communist Party (Bolshevik); the Constituent Assembly was dismissed in January 1918.</div><div class=\"pt\">Peace with Germany at Brest Litovsk (March 1918).</div><div class=\"pt\">Russia became a one-party state; trade unions were kept under party control; the Cheka punished critics.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q6.</div>\n    <div class=\"q-text\">Write a few lines to show what you know about: (a) kulaks (b) the Duma (c) women workers between 1900 and 1930 (d) the Liberals (e) Stalin's collectivisation programme.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">(a) Kulaks</div><div class=\"rev\">Well-to-do peasants. Stalin believed they were hoarding grain for higher prices; from 1928 they were raided and the government decided to 'eliminate kulaks' and collectivise farms.</div><div class=\"sub-q\">(b) The Duma</div><div class=\"rev\">An elected consultative parliament allowed by the Tsar during the 1905 Revolution. He dismissed the first Duma within 75 days and the second within three months, and packed the third with conservatives. It was suspended on 25 February 1917.</div><div class=\"sub-q\">(c) Women workers (1900–1930)</div><div class=\"rev\">Women formed 31 per cent of factory labour by 1914 but were paid half to three-quarters of a man's wage. In February 1917 they led strikes (International Women's Day); Marfa Vasileva called a strike at the Lorenz telephone factory. Later, crèches were set up in factories for the children of women workers, and peasant women worked on collective farms.</div><div class=\"sub-q\">(d) The Liberals</div><div class=\"rev\">They wanted religious toleration, an end to the uncontrolled power of rulers, a representative elected parliament and an independent judiciary — but only men of property should vote, and not women. In Russia they campaigned for a constitution in 1905.</div><div class=\"sub-q\">(e) Stalin's collectivisation programme</div><div class=\"rev\">From 1929 all peasants were forced to cultivate in collective farms (kolkhoz); land and implements went to the collective farms. Peasants resisted and destroyed livestock — cattle fell by one-third (1929–31); many were deported or exiled. Production did not rise at once, and the famine of 1930–33 killed over 4 million people.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q7.</div>\n    <div class=\"q-text\">Briefly discuss the impact of Russian Revolution in Kashmir.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">The Revolution showed that workers and peasants could unite to overthrow a mighty empire — an inspiration for people fighting British imperialism.</div><div class=\"pt\">In <b>1919</b> the political resident asked the Maharaja to guard the northern borders against Bolshevik literature, but socialist literature entered secretly through <b>Gilgit</b>.</div><div class=\"pt\">Kashmiri writers studied Russian literature — Chekov, Tolstoy, Gogol, Gorky, Pushkin — which spread socialist ideas.</div><div class=\"pt\">Nehru's socialist ideas influenced <b>Sheikh Abdullah</b>; the <b>National Conference</b> took up pro-peasant and pro-worker policies; the Kashmir Youth League, Peasants Association, Mazdoor Sabha and Kissan Sabha mobilised workers and peasants.</div><div class=\"pt\">The <b>New Kashmir Manifesto (1944)</b> demanded universal adult suffrage, equal rights, freedoms of speech, press and assembly, free education in the mother tongue, state ownership of key industries, land to the tiller and abolition of feudalism.</div></div></div>\n  </div>\n\n</div>",
+    "sh9-2-ex-src": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(121, 134, 203, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #7986CB; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #7986CB; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #C5CAE9; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #C5CAE9; font-weight: 700; }\n  .hl { color: #7986CB; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #7986CB; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #7986CB; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(121, 134, 203, 0.10); border: 1.5px dashed #7986CB; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #7986CB; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(121, 134, 203, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(121, 134, 203, 0.18); border: 1px solid #7986CB; color: #C5CAE9; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(121, 134, 203, 0.2); color: #C5CAE9; }\n  .q-card .q-text, .q-card .sub-q { color: #7986CB !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\"><div class=\"q-title\">✦ Source A (Shlyapnikov) and Box 1 (Women in the February Revolution)</div></div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Look again at Source A and Box 1. List five changes in the mood of the workers. Place yourself in the position of a woman who has seen both situations and write an account of what has changed.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">Five changes</div><div class=\"pt\"><span class=\"lbl\">1.</span> From <b>secret, illegal meetings</b> to an <b>open strike</b> in the factory.</div><div class=\"pt\"><span class=\"lbl\">2.</span> From fear of the police to <b>boldness</b> — Marfa Vasileva refused to go back to work.</div><div class=\"pt\"><span class=\"lbl\">3.</span> From small groups to <b>mass action</b> — all workers stopped work and rushed into the street.</div><div class=\"pt\"><span class=\"lbl\">4.</span> <b>Women took the lead</b> and inspired the men.</div><div class=\"pt\"><span class=\"lbl\">5.</span> Strong <b>solidarity</b> — 'I cannot be the only one who is satiated when others are hungry'.</div><div class=\"sub-q\">A woman's account (model)</div><div class=\"rev\">Earlier, we met only in secret — at lunch, on the stairs or near the exit — and an agitator spoke quickly before the police came. In February 1917 everything changed. On Women's Day we gave red bows to the men, and Marfa Vasileva stopped her machine and declared a strike. She refused even the loaf of bread the foreman sent her. We women gathered around her, then the men downed their tools too, and we all poured onto the street. We were no longer afraid; we were united, and we were the ones leading.</div></div></div>\n  </div>\n  <div class=\"q-card\"><div class=\"q-title\">✦ Box 3 — The October Revolution and the Russian countryside: two views</div></div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Read the two views on the revolution in the countryside. Imagine yourself to be a witness to the events. Write a short account from the standpoint of: an owner of an estate, a small peasant, a journalist.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">Owner of an estate</div><div class=\"rev\">The 'coup' came quietly. The committee chairman behaved politely, and we were left two cows and two horses. Our servants asked that we be treated humanely. Some villages even want to return the estate to us — I do not know if that will happen, but it is good to see conscience among our people.</div><div class=\"sub-q\">Small peasant</div><div class=\"rev\">When the news of 25 October reached our village, we were overjoyed — it meant free land and an end to the war. The landowner's manor was looted, his farms were requisitioned, his orchard was sold to us for wood, and his land was divided among us. Now we can live the new Soviet life.</div><div class=\"sub-q\">Journalist</div><div class=\"rev\">The October Revolution has reached the villages. In some places peasants seized manor houses and divided the land at once; in others the change was peaceful and the old owners were treated with respect. For the peasants it means land and peace; for the landowners, the end of an old way of life.</div></div></div>\n  </div>\n  <div class=\"q-card\"><div class=\"q-title\">✦ Source B — Central Asia and the October Revolution</div></div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Why did people in Central Asia respond to the Russian Revolution in different ways?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Welcomed it:</span> M.N. Roy saw the Kirgiz welcome the Revolution because it had overthrown the Tsar and driven away the generals who had conquered their homeland — they felt they were masters of their home again.</div><div class=\"pt\"><span class=\"lbl\">Feared it:</span> a Kazakh leader (1919) said the Kirghiz welcomed the February Revolution, which freed them from Tsarist oppression, but greeted the October Revolution with terror — it brought violence, pillage, taxes and dictatorial power.</div><div class=\"pt\"><span class=\"lbl\">Reasons:</span> the Bolsheviks cooperated with some nationalities and jadidists, but in places like <b>Khiva</b> Bolshevik colonists massacred local nationalists; and unpopular policies such as the harsh discouragement of <b>nomadism</b> made people unsure of what the Bolsheviks stood for.</div></div></div>\n  </div>\n  <div class=\"q-card\"><div class=\"q-title\">✦ Sources C to G — Soviet Russia seen from India</div></div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">Compare the passages written by Shaukat Usmani and Rabindranath Tagore. Read them in relation to Sources C, D and E. What did Indians find impressive about the USSR? What did the writers fail to notice?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">What impressed them</div><div class=\"pt\"><b>Equality</b> — Europeans and Asians mixing freely; no barriers of caste or religion (Usmani).</div><div class=\"pt\">The confidence and cheerfulness of the people; workers, peasants and soldiers speaking like orators.</div><div class=\"pt\">The masses coming forward; the city belonging to the workers (Tagore).</div><div class=\"pt\">Removal of ignorance and helplessness in a decade.</div><div class=\"sub-q\">What they failed to notice</div><div class=\"pt\"><span class=\"lbl\">Source C:</span> children forced to leave school and work in factories because of poverty and hunger.</div><div class=\"pt\"><span class=\"lbl\">Source D:</span> brutal repression of peasants who resisted collectivisation — 25,000 arrested and 656 executed in six weeks in Ukraine.</div><div class=\"pt\"><span class=\"lbl\">Source E:</span> heavy taxes and confiscation of the property of independent cultivators.</div><div class=\"pt\"><span class=\"lbl\">Overall:</span> the denial of essential freedoms and the repressive policies of the state.</div></div></div>\n  </div>\n\n</div>",
+    "sh9-2-ex-int": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(121, 134, 203, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #7986CB; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #7986CB; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #C5CAE9; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #C5CAE9; font-weight: 700; }\n  .hl { color: #7986CB; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #7986CB; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #7986CB; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(121, 134, 203, 0.10); border: 1.5px dashed #7986CB; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #7986CB; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(121, 134, 203, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(121, 134, 203, 0.18); border: 1px solid #7986CB; color: #C5CAE9; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(121, 134, 203, 0.2); color: #C5CAE9; }\n  .q-card .q-text, .q-card .sub-q { color: #7986CB !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">List two differences between the capitalist and socialist ideas of private property.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Capitalist idea</th><th>Socialist idea</th></tr><tr><td>Property is owned by individuals; owners keep the profit</td><td>Property should be controlled by <b>society as a whole</b></td></tr><tr><td>Owners of capital should operate without restraint for personal gain</td><td>The propertied care only for personal gain; social control would give attention to the welfare of those who make property productive</td></tr></table></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Imagine that a meeting has been called in your area to discuss the socialist idea of doing away with private property and introducing collective ownership. Write the speech you would make at the meeting if you were: a poor labourer working in the fields; a medium-level landowner; a house owner.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">A poor labourer working in the fields</div><div class=\"rev\">Friends, I work from dawn to dusk on land that is not mine, and the owner takes the harvest. If the land belongs to all of us, the fruits of our labour will feed our own families. I support collective ownership.</div><div class=\"sub-q\">A medium-level landowner</div><div class=\"rev\">Friends, I own a small piece of land, earned through the hard work of my family over generations. It is not fair to take it away. Let us help the poor, but let people keep what they have honestly earned.</div><div class=\"sub-q\">A house owner</div><div class=\"rev\">Friends, my house is my family's only shelter and security in old age. If all property becomes collective, who will care for it? I am ready to share with the needy, but I cannot agree to give up my home.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Why were there revolutionary disturbances in Russia in 1905? What were the demands of revolutionaries?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">Reasons</div><div class=\"pt\">Russia was an autocracy; the Tsar was not subject to parliament.</div><div class=\"pt\">In 1904 prices rose so fast that real wages fell by 20 per cent.</div><div class=\"pt\">Dismissal of four workers at the Putilov Iron Works led to a strike of over 110,000 workers.</div><div class=\"pt\">On <b>Bloody Sunday</b>, Father Gapon's procession was fired upon — over 100 killed.</div><div class=\"sub-q\">Demands</div><div class=\"pt\">An eight-hour working day, higher wages and better working conditions.</div><div class=\"pt\">A <b>constitution</b> and a constituent assembly; civil liberties (demanded by students and the Union of Unions).</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">The year is 1916. You are a general in the Tsar's army on the eastern front. You are writing a report for the government in Moscow. In your report suggest what you think the government should do to improve the situation.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\"><i>Model report.</i> Our armies have lost badly in Germany and Austria; casualties are huge and the men are demoralised. Our retreat has destroyed crops and created millions of refugees. Railways are breaking down and supplies are short. I suggest that the government: (1) consult the main parties in the Duma to regain public trust; (2) repair railways and arrange regular supplies of food, arms and clothing to the front; (3) ensure bread reaches the cities to stop the bread riots; (4) care for the refugees; and (5) consider seeking peace, as the soldiers no longer wish to fight.</div></div></div>\n  </div>\n\n</div>",
+    "sh9-2-ex-proj": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(121, 134, 203, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #7986CB; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #7986CB; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #C5CAE9; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #C5CAE9; font-weight: 700; }\n  .hl { color: #7986CB; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #7986CB; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #7986CB; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(121, 134, 203, 0.10); border: 1.5px dashed #7986CB; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #7986CB; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(121, 134, 203, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(121, 134, 203, 0.18); border: 1px solid #7986CB; color: #C5CAE9; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(121, 134, 203, 0.2); color: #C5CAE9; }\n  .q-card .q-text, .q-card .sub-q { color: #7986CB !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Imagine that you are a worker on strike in 1905, who is being tried in court for his act of rebellion. Draft the speech you would make in your defence. Act out your speech for your class.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\"><i>Model speech.</i> Your Honour, I am not a criminal. I work up to fifteen hours a day, yet my wages buy less every month — prices rose so fast last year that our real wages fell by a fifth. When our comrades were dismissed at the Putilov Iron Works, we stopped work to ask for an eight-hour day, fair wages and safe conditions. On Bloody Sunday we marched peacefully with Father Gapon to petition the Tsar, and over a hundred of us were shot. We have no parliament to speak for us. Asking to live with dignity is not rebellion; it is our right.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Write the headline and a short news item about the uprising of 24 October 1917 for each of the following newspapers: a Conservative paper in France; a Radical newspaper in Britain; a Bolshevik newspaper in Russia.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">Conservative paper, France</div><div class=\"rev\"><b>'BOLSHEVIK MOB SEIZES PETROGRAD'</b> — Armed revolutionaries have overthrown the lawful Provisional Government. The Winter Palace was shelled by the ship Aurora and ministers arrested. Order and property are in danger.</div><div class=\"sub-q\">Radical newspaper, Britain</div><div class=\"rev\"><b>'WORKERS AND SOLDIERS TAKE POWER IN RUSSIA'</b> — The Military Revolutionary Committee has taken control of Petrograd with little bloodshed. The Congress of Soviets has approved the action. The world watches to see whether the new government will bring peace and land to the people.</div><div class=\"sub-q\">Bolshevik newspaper, Russia</div><div class=\"rev\"><b>'ALL POWER TO THE SOVIETS!'</b> — The people of Petrograd have overthrown the government of landlords and capitalists. Peace, land to the peasants and power to the workers are now within reach. Long live the revolution!</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Imagine that you are a middle-level wheat farmer in Russia after collectivisation. You have decided to write a letter to Stalin explaining your objections to collectivisation. What would you write about the conditions of your life? What do you think would be Stalin's response to such a farmer?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">Letter (model)</div><div class=\"rev\">Comrade Stalin, I am a working peasant, not a kulak, and I am not against socialism. But I do not wish to work on the collective farm. My land, horse, cow and tools have been taken. Heavy taxes are levied, and what I could not pay was taken away and sold. Many of my neighbours killed their cattle rather than give them up. With bad harvests, hunger has come to our village. I ask you to allow farmers like me to cultivate our own land.</div><div class=\"sub-q\">Likely response</div><div class=\"rev\">Stalin's government would probably treat him unsympathetically — calling him a kulak or an enemy of socialism. He might face heavy taxes, loss of property, or even deportation and exile, as happened to many who resisted collectivisation.</div></div></div>\n  </div>\n\n</div>"
   },
-  introduction:
-    "The Russian Revolution of 1917 replaced autocracy with a socialist state.",
-  definitions: [],
-  keyPoints: [],
-  formulas: [],
-  crux: [],
-  mcqs: [
+  "introduction": "The Russian Revolution of 1917 replaced autocracy with a socialist state.",
+  "definitions": [],
+  "keyPoints": [],
+  "formulas": [],
+  "crux": [],
+  "mcqs": [
     {
-      id: "sst-his-c9-2-mcq-1",
-      question: "Who led the Bolsheviks during the Russian Revolution?",
-      options: [
-        "Vladimir Lenin",
-        "Tsar Nicholas II",
-        "Karl Marx",
-        "Joseph Stalin",
+      "id": "sst-his-c9-2-mcq-1",
+      "question": "<div style='text-align: justify;'>Who among the following did NOT believe in universal adult franchise?</div>",
+      "options": [
+        "A):   Radicals",
+        "B):   Liberals",
+        "C):   Socialists",
+        "D):   Bolsheviks"
       ],
-      correctAnswer: "a",
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Liberals felt men of property should mainly have the vote.</div>"
     },
     {
-      id: "sst-his-c9-2-mcq-2",
-      question: "In which year did the Russian Revolution take place?",
-      options: ["1905", "1914", "1917", "1929"],
-      correctAnswer: "c",
-    },
-    {
-      id: "sst-his-c9-2-mcq-3",
-      question:
-        "The Russian Parliament created after the 1905 Revolution is called:",
-      options: ["Reichstag", "Duma", "Congress", "Diet"],
-      correctAnswer: "b",
-    },
-    {
-      id: "sst-his-c9-2-mcq-4",
-      question: "The incident of 'Bloody Sunday' occurred in the year:",
-      options: ["1900", "1905", "1914", "1917"],
-      correctAnswer: "b",
-    },
-    {
-      id: "sst-his-c9-2-mcq-5",
-      question: "Karl Marx and Friedrich Engels wrote the famous work:",
-      options: [
-        "Mein Kampf",
-        "The Social Contract",
-        "The Communist Manifesto",
-        "War and Peace",
+      "id": "sst-his-c9-2-mcq-2",
+      "question": "<div style='text-align: justify;'>Who built a cooperative community called New Harmony in Indiana (USA)?</div>",
+      "options": [
+        "A):   Louis Blanc",
+        "B):   Karl Marx",
+        "C):   Lenin",
+        "D):   Robert Owen"
       ],
-      correctAnswer: "c",
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Owen was a leading English manufacturer.</div>"
     },
     {
-      id: "sst-his-c9-2-mcq-6",
-      question: "The name of the secret police set up by the Bolsheviks was:",
-      options: ["Gestapo", "Cheka", "KGB", "CBI"],
-      correctAnswer: "b",
-    },
-    {
-      id: "sst-his-c9-2-mcq-7",
-      question:
-        "Who introduced the Collectivisation Programme in the Soviet Union?",
-      options: [
-        "Vladimir Lenin",
-        "Joseph Stalin",
-        "Leon Trotsky",
-        "Nikita Khrushchev",
+      "id": "sst-his-c9-2-mcq-3",
+      "question": "<div style='text-align: justify;'>Socialists formed which international body by the 1870s?</div>",
+      "options": [
+        "A):   The Second International",
+        "B):   The Comintern",
+        "C):   The Duma",
+        "D):   The Union of Unions"
       ],
-      correctAnswer: "b",
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>It coordinated their efforts across Europe.</div>"
     },
     {
-      id: "sst-his-c9-2-mcq-8",
-      question: "What were collective farms in the Soviet Union called?",
-      options: ["Mir", "Duma", "Kolkhoz", "Kulaks"],
-      correctAnswer: "c",
-    },
-    {
-      id: "sst-his-c9-2-mcq-9",
-      question:
-        "In the context of the Russian Revolution, what does 'Kulak' mean?",
-      options: [
-        "Landless worker",
-        "Poor peasant",
-        "Wealthy peasant",
-        "Factory owner",
+      "id": "sst-his-c9-2-mcq-4",
+      "question": "<div style='text-align: justify;'>In 1914, about what share of Russia's population earned its living from agriculture?</div>",
+      "options": [
+        "A):   40 per cent",
+        "B):   50 per cent",
+        "C):   85 per cent",
+        "D):   31 per cent"
       ],
-      correctAnswer: "c",
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Higher than in most European countries.</div>"
     },
     {
-      id: "sst-his-c9-2-mcq-10",
-      question: "Which treaty marked Russia's withdrawal from World War I?",
-      options: [
-        "Treaty of Versailles",
-        "Treaty of Brest-Litovsk",
-        "Treaty of Paris",
-        "Treaty of Berlin",
+      "id": "sst-his-c9-2-mcq-5",
+      "question": "<div style='text-align: justify;'>What was the Russian peasant commune called?</div>",
+      "options": [
+        "A):   Kolkhoz",
+        "B):   Mir",
+        "C):   Duma",
+        "D):   Soviet"
       ],
-      correctAnswer: "b",
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>It divided land according to the needs of families.</div>"
     },
+    {
+      "id": "sst-his-c9-2-mcq-6",
+      "question": "<div style='text-align: justify;'>The Russian Social Democratic Workers Party was founded in —</div>",
+      "options": [
+        "A):   1900",
+        "B):   1905",
+        "C):   1917",
+        "D):   1898"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>It respected Marx's ideas and had to work illegally.</div>"
+    },
+    {
+      "id": "sst-his-c9-2-mcq-7",
+      "question": "<div style='text-align: justify;'>Who led the Bolshevik group?</div>",
+      "options": [
+        "A):   Vladimir Lenin",
+        "B):   Kerenskii",
+        "C):   Father Gapon",
+        "D):   Rasputin"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Lenin wanted a disciplined party.</div>"
+    },
+    {
+      "id": "sst-his-c9-2-mcq-8",
+      "question": "<div style='text-align: justify;'>The procession fired upon on Bloody Sunday (1905) was led by —</div>",
+      "options": [
+        "A):   Lenin",
+        "B):   Trotskii",
+        "C):   Father Gapon",
+        "D):   Stalin"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Over 100 workers were killed.</div>"
+    },
+    {
+      "id": "sst-his-c9-2-mcq-9",
+      "question": "<div style='text-align: justify;'>The elected consultative parliament allowed by the Tsar in 1905 was the —</div>",
+      "options": [
+        "A):   Soviet",
+        "B):   Duma",
+        "C):   Cheka",
+        "D):   Comintern"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>The Tsar dismissed the first Duma within 75 days.</div>"
+    },
+    {
+      "id": "sst-his-c9-2-mcq-10",
+      "question": "<div style='text-align: justify;'>Why was St Petersburg renamed Petrograd?</div>",
+      "options": [
+        "A):   To honour Lenin",
+        "B):   Because of the 1905 Revolution",
+        "C):   After the October Revolution",
+        "D):   Anti-German feelings during the war"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>St Petersburg was a German name.</div>"
+    },
+    {
+      "id": "sst-his-c9-2-mcq-11",
+      "question": "<div style='text-align: justify;'>The Tsar abdicated on —</div>",
+      "options": [
+        "A):   2 March 1917",
+        "B):   22 February 1917",
+        "C):   24 October 1917",
+        "D):   25 October 1917"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Military commanders advised him to abdicate.</div>"
+    },
+    {
+      "id": "sst-his-c9-2-mcq-12",
+      "question": "<div style='text-align: justify;'>Lenin's April Theses demanded all of the following EXCEPT —</div>",
+      "options": [
+        "A):   transfer of land to peasants",
+        "B):   nationalisation of banks",
+        "C):   continuing the war",
+        "D):   ending the war"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>He wanted the war brought to a close.</div>"
+    },
+    {
+      "id": "sst-his-c9-2-mcq-13",
+      "question": "<div style='text-align: justify;'>The Military Revolutionary Committee of October 1917 was headed by —</div>",
+      "options": [
+        "A):   Kerenskii",
+        "B):   Stalin",
+        "C):   Rasputin",
+        "D):   Leon Trotskii"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>It organised the seizure of power.</div>"
+    },
+    {
+      "id": "sst-his-c9-2-mcq-14",
+      "question": "<div style='text-align: justify;'>Which ship shelled the Winter Palace on 24 October 1917?</div>",
+      "options": [
+        "A):   Neva",
+        "B):   Aurora",
+        "C):   Potemkin",
+        "D):   Petrograd"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>By nightfall the ministers surrendered.</div>"
+    },
+    {
+      "id": "sst-his-c9-2-mcq-15",
+      "question": "<div style='text-align: justify;'>By the Gregorian calendar, the 'October' Revolution took place on —</div>",
+      "options": [
+        "A):   7 November",
+        "B):   12 March",
+        "C):   24 October",
+        "D):   1 February"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Gregorian dates are 13 days ahead of Julian dates.</div>"
+    },
+    {
+      "id": "sst-his-c9-2-mcq-16",
+      "question": "<div style='text-align: justify;'>Peace with Germany was made by the Bolsheviks at —</div>",
+      "options": [
+        "A):   Petrograd",
+        "B):   Moscow",
+        "C):   Brest Litovsk",
+        "D):   Magnitogorsk"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>In March 1918, despite opposition.</div>"
+    },
+    {
+      "id": "sst-his-c9-2-mcq-17",
+      "question": "<div style='text-align: justify;'>Collective farms in the USSR were called —</div>",
+      "options": [
+        "A):   mir",
+        "B):   kulak",
+        "C):   budeonovka",
+        "D):   kolkhoz"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Collectivisation began in 1929.</div>"
+    },
+    {
+      "id": "sst-his-c9-2-mcq-18",
+      "question": "<div style='text-align: justify;'>Socialist literature entered Kashmir secretly through —</div>",
+      "options": [
+        "A):   Jammu",
+        "B):   Gilgit",
+        "C):   Leh",
+        "D):   Kargil"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Through the northern border of the state.</div>"
+    },
+    {
+      "id": "sst-his-c9-2-mcq-19",
+      "question": "<div style='text-align: justify;'>Assertion (A): Support for the Tsar wore thin during the First World War. Reason (R): Russia suffered over 7 million casualties and severe shortages by 1917.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Defeats and shortages discredited the Tsar.</div>"
+    },
+    {
+      "id": "sst-his-c9-2-mcq-20",
+      "question": "<div style='text-align: justify;'>Assertion (A): The New Kashmir Manifesto was drawn up by the Muslim Conference. Reason (R): It recommended land to the tiller and abolition of feudalism.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>It was drawn up by the National Conference in 1944; R is true.</div>"
+    }
   ],
-  summary: [],
-  exercises: [
+  "summary": [],
+  "exercises": [
     {
-      id: "ex-sst-qa",
-      name: "Q & A",
-      questions: [],
+      "id": "sh9-2-ex-q",
+      "name": "Questions",
+      "questions": []
     },
+    {
+      "id": "sh9-2-ex-src",
+      "name": "Source Qs",
+      "questions": []
+    },
+    {
+      "id": "sh9-2-ex-int",
+      "name": "In-Text",
+      "questions": []
+    },
+    {
+      "id": "sh9-2-ex-proj",
+      "name": "Projects",
+      "questions": []
+    }
   ],
-  examples: [],
+  "examples": []
 };
