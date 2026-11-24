@@ -1,226 +1,286 @@
 import { ChapterContent } from "../types";
 
-const themeColor = "#FF8A65";
-
 export const sstHisC91: ChapterContent = {
-  id: "sst-his-c9-1",
-  number: 1,
-  title: "The French Revolution",
-  isHtmlView: true,
-  htmlOverview: `
-    <div style="padding: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: transparent;">
-      <!-- Key Concepts Introduction -->
-      <div style="background-color: #1E1E2E; border: 1px solid rgba(255, 138, 101, 0.2); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 20px; font-weight: 700; margin-top: 0; margin-bottom: 12px; display: flex; align-items: center;">
-          <span style="margin-right: 8px; font-size: 22px;">🇫🇷</span> Introduction
-        </h3>
-        <p style="color: #E0E0E0; font-size: 15px; line-height: 1.6; text-align: justify; margin: 0; font-weight: 300;">
-          The French Revolution of 1789 was a milestone in modern history. It put an end to the absolute monarchy in France, abolished feudal systems, and declared the natural rights of citizens. It laid the foundation for modern democracy with the powerful ideals of <b>Liberty, Equality, and Fraternity</b>, inspiring freedom movements worldwide.
-        </p>
-      </div>
-
-      <!-- Key Milestones (Important Points) -->
-      <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 600; margin-top: 0; margin-bottom: 14px; display: flex; align-items: center;">
-          <span style="margin-right: 8px; font-size: 18px;">📌</span> Key Points
-        </h3>
-        <ul style="color: #B3B3C6; font-size: 14.5px; line-height: 1.7; margin: 0; padding-left: 20px; text-align: justify;">
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">Division of Society:</b> French society was divided into three Estates. Only the Third Estate (peasants, artisans, businessmen) paid taxes. The Clergy (First Estate) and Nobility (Second Estate) enjoyed birth-right privileges.</li>
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">Subsistence Crisis:</b> A rapid rise in population and bad harvests led to food shortages, high bread prices, and widespread famine.</li>
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">Storming of the Bastille:</b> On <b>14 July 1789</b>, angry crowds stormed the Bastille prison, symbolizing the end of the King's despotic power. This day is celebrated as France's National Day.</li>
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">Constitutional Monarchy (1791):</b> The National Assembly drafted a constitution that limited the powers of King Louis XVI and divided powers among the Legislature, Executive, and Judiciary.</li>
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">The Reign of Terror (1793-1794):</b> Under Maximilien Robespierre, the Jacobin government followed a policy of severe control and punishment. Opponents were ruthlessly guillotined.</li>
-          <li style="margin-bottom: 0;"><b style="color: ${themeColor};">Rise of Napoleon:</b> The political instability of the Directory government cleared the way for the rise of military dictator Napoleon Bonaparte, who crowned himself Emperor of France in 1804.</li>
-        </ul>
-      </div>
-      
-      <!-- Key Terms Glossy Box -->
-      <div style="background: rgba(255, 138, 101, 0.05); border: 1.5px solid rgba(255, 138, 101, 0.25); border-radius: 16px; padding: 20px; box-shadow: 0 4px 30px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 600; margin-top: 0; margin-bottom: 12px;">🔑 Key Terms to Remember</h3>
-        <div style="color: #E0E0E0; font-size: 14px; line-height: 1.6; text-align: justify;">
-          <p style="margin-top: 0; margin-bottom: 8px;"><b style="color: ${themeColor};">Estates:</b> Social classes in pre-revolutionary France.</p>
-          <p style="margin-bottom: 8px;"><b style="color: ${themeColor};">Tithe:</b> A tax collected by the Church, equal to 1/10th of agricultural produce.</p>
-          <p style="margin-bottom: 8px;"><b style="color: ${themeColor};">Taille:</b> A direct tax paid by the Third Estate to the State.</p>
-          <p style="margin-bottom: 0;"><b style="color: ${themeColor};">Guillotine:</b> A machine used to execute people by beheading.</p>
-        </div>
-      </div>
-    </div>
-  `,
-  htmlExercises: {
-    "ex-sst-qa": `
-      <div style="padding: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: transparent;">
-        <!-- Q1 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q1. Describe the circumstances leading to the outbreak of revolutionary protest in France.</p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> The main circumstances leading to the revolution were:
-            <ul style="margin: 6px 0 0 0; padding-left: 20px;">
-              <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Social Inequality:</b> Society was divided into three estates. Only the Third Estate paid taxes, while the first two estates enjoyed birth privileges and paid nothing.</li>
-              <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Economic Crisis:</b> Long wars and royal luxury emptied the treasury. Financial help to American war of independence pushed France into deep debt.</li>
-              <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Subsistence Crisis:</b> Rapid population growth and bad harvests caused food shortage, soaring bread prices, and starvation among the poor.</li>
-              <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Philosophers' Influence:</b> Thinkers like Locke and Rousseau popularized ideas of freedom, equality, and rule by consent.</li>
-              <li style="margin-bottom: 0;"><b style="color: ${themeColor};">Taxes and Political Clash:</b> Louis XVI's proposal to increase taxes triggered immediate revolt.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q2 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q2. Which groups of French society benefited from the revolution? Which groups were forced to relinquish power? Which sections of society would have been disappointed with the outcome of the revolution?</p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <b style="color: ${themeColor}; font-weight: 600;">Answer:</b>
-            <ul style="margin: 6px 0 0 0; padding-left: 20px;">
-              <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Benefited:</b> The wealthy middle class of the Third Estate (merchants, lawyers, teachers, and richer peasants) gained political power, liberty, and equal rights.</li>
-              <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Relinquished Power:</b> The Clergy (First Estate) and Nobles (Second Estate) lost their feudal rights, land ownership, and tax exemptions.</li>
-              <li style="margin-bottom: 0;"><b style="color: ${themeColor};">Disappointed:</b> The poorest classes (landless workers, servants, daily wagers) and women were disappointed because they did not receive voting rights under the new Constitution.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q3 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q3. Describe the legacy of the French Revolution for the peoples of the world during the nineteenth and twentieth centuries.</p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> The global legacy of the revolution is defined by:
-            <ul style="margin: 6px 0 0 0; padding-left: 20px;">
-              <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Spread of Liberty & Equality:</b> These ideas spread across Europe, shaking absolute monarchies and putting an end to the feudal system.</li>
-              <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Birth of Nationalism:</b> It inspired people in occupied territories to overthrow foreign rulers and establish unified nation-states.</li>
-              <li style="margin-bottom: 0;"><b style="color: ${themeColor};">Anti-Colonial Movements:</b> Indian freedom fighters like Tipu Sultan and Raja Rammohan Roy drew deep inspiration from French revolutionary ideas to fight British rule.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q4 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q4. Draw up a list of democratic rights we enjoy today whose origins could be traced to the French Revolution.</p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> The democratic rights we enjoy today tracing back to the French Revolution are:
-            <ul style="margin: 8px 0 0 0; padding-left: 20px; list-style-type: disc;">
-              <li style="margin-bottom: 6px;">Right to Equality</li>
-              <li style="margin-bottom: 6px;">Freedom of Speech and Expression</li>
-              <li style="margin-bottom: 6px;">Freedom of Press</li>
-              <li style="margin-bottom: 6px;">Right to Personal Liberty</li>
-              <li style="margin-bottom: 6px;">Right to form Associations</li>
-              <li style="margin-bottom: 0;">Right to Property</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q5 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q5. Would you agree with the view that the message of universal rights was beset with contradictions? Explain.</p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> Yes, there were clear contradictions in the application of universal rights:
-            <ul style="margin: 6px 0 0 0; padding-left: 20px;">
-              <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Exclusion of the Poor:</b> Voting rights were restricted only to active citizens (wealthy tax-paying men). The poor had no political representation.</li>
-              <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Exclusion of Women:</b> Despite active involvement in the revolution, women were categorized as passive citizens and denied all political rights.</li>
-              <li style="margin-bottom: 0;"><b style="color: ${themeColor};">Slavery and Colonialism:</b> While preaching liberty, France retained slavery in its Caribbean colonies to protect economic interests.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q6 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q6. How would you explain the rise of Napoleon?</p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> Napoleon Bonaparte's rise to power was driven by:
-            <ul style="margin: 6px 0 0 0; padding-left: 20px;">
-              <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Political Instability:</b> The Directory government, which ruled after Robespierre's fall, was weak and corrupt, constantly clashing with legislative councils.</li>
-              <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Military Brilliance:</b> Napoleon won crucial victories for France, becoming a national hero and gaining absolute loyalty from the army.</li>
-              <li style="margin-bottom: 0;"><b style="color: ${themeColor};">Seizure of Power:</b> In 1799, he overthrew the Directory, declaring himself First Consul, and later crowned himself Emperor in 1804 to bring order and stability.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    `,
+  "id": "sst-his-c9-1",
+  "number": 1,
+  "title": "The French Revolution",
+  "isHtmlView": true,
+  "htmlOverview": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 138, 101, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FF8A65; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FF8A65; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFCCBC; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFCCBC; font-weight: 700; }\n  .hl { color: #FF8A65; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FF8A65; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FF8A65; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(255, 138, 101, 0.10); border: 1.5px dashed #FF8A65; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FF8A65; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 138, 101, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(255, 138, 101, 0.18); border: 1px solid #FF8A65; color: #FFCCBC; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(255, 138, 101, 0.2); color: #FFCCBC; }\n  .q-card .q-text, .q-card .sub-q { color: #FF8A65 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ Chapter at a Glance</div><div class=\"sol-step\"><div class=\"rev\">On <b>14 July 1789</b> the people of Paris stormed the <b>Bastille</b>, the hated fortress-prison that stood for the despotic power of the king. It began a chain of events that ended the <b>monarchy</b> in France. A society based on <b>privileges</b> gave way to a new system of governance, and the ideas of <span class=\"hl\">liberty, equality and fraternity</span> became the central ideas of a new age.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 349\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"349\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"20\" font-size=\"11.5\" fill=\"#FF8A65\" text-anchor=\"middle\" font-weight=\"700\">The French Revolution: Important Dates</text><line x1=\"76\" y1=\"34\" x2=\"76\" y2=\"339\" stroke=\"rgba(255,138,101,0.55)\" stroke-width=\"2\"/><circle cx=\"76\" cy=\"39.5\" r=\"4\" fill=\"#FF8A65\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"43\" font-size=\"10\" fill=\"#FF8A65\" text-anchor=\"end\" font-weight=\"700\">1774</text><text x=\"88\" y=\"43.0\" font-size=\"9.5\" fill=\"#FFFFFF\">Louis XVI becomes king; faces an empty</text><text x=\"88\" y=\"55.2\" font-size=\"9.5\" fill=\"#FFFFFF\">treasury and growing discontent in the</text><text x=\"88\" y=\"67.4\" font-size=\"9.5\" fill=\"#FFFFFF\">Old Regime</text><circle cx=\"76\" cy=\"94.1\" r=\"4\" fill=\"#FF8A65\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"97.6\" font-size=\"10\" fill=\"#FF8A65\" text-anchor=\"end\" font-weight=\"700\">1789</text><text x=\"88\" y=\"97.6\" font-size=\"9.5\" fill=\"#FFFFFF\">Estates General meets; Third Estate</text><text x=\"88\" y=\"109.8\" font-size=\"9.5\" fill=\"#FFFFFF\">forms National Assembly; Bastille</text><text x=\"88\" y=\"122.0\" font-size=\"9.5\" fill=\"#FFFFFF\">stormed; peasant revolts</text><circle cx=\"76\" cy=\"148.7\" r=\"4\" fill=\"#FF8A65\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"152.2\" font-size=\"10\" fill=\"#FF8A65\" text-anchor=\"end\" font-weight=\"700\">1791</text><text x=\"88\" y=\"152.2\" font-size=\"9.5\" fill=\"#FFFFFF\">Constitution limits the king's powers</text><text x=\"88\" y=\"164.4\" font-size=\"9.5\" fill=\"#FFFFFF\">and guarantees basic rights</text><circle cx=\"76\" cy=\"191.1\" r=\"4\" fill=\"#FF8A65\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"194.6\" font-size=\"10\" fill=\"#FF8A65\" text-anchor=\"end\" font-weight=\"700\">1792–93</text><text x=\"88\" y=\"194.6\" font-size=\"9.5\" fill=\"#FFFFFF\">France becomes a republic; the king is</text><text x=\"88\" y=\"206.8\" font-size=\"9.5\" fill=\"#FFFFFF\">beheaded</text><circle cx=\"76\" cy=\"233.5\" r=\"4\" fill=\"#FF8A65\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"237\" font-size=\"10\" fill=\"#FF8A65\" text-anchor=\"end\" font-weight=\"700\">1794</text><text x=\"88\" y=\"237.0\" font-size=\"9.5\" fill=\"#FFFFFF\">Fall of the Jacobin republic; a</text><text x=\"88\" y=\"249.2\" font-size=\"9.5\" fill=\"#FFFFFF\">Directory rules France</text><circle cx=\"76\" cy=\"275.9\" r=\"4\" fill=\"#FF8A65\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"279.4\" font-size=\"10\" fill=\"#FF8A65\" text-anchor=\"end\" font-weight=\"700\">1804</text><text x=\"88\" y=\"279.4\" font-size=\"9.5\" fill=\"#FFFFFF\">Napoleon becomes Emperor; annexes</text><text x=\"88\" y=\"291.6\" font-size=\"9.5\" fill=\"#FFFFFF\">large parts of Europe</text><circle cx=\"76\" cy=\"318.29999999999995\" r=\"4\" fill=\"#FF8A65\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"321.79999999999995\" font-size=\"10\" fill=\"#FF8A65\" text-anchor=\"end\" font-weight=\"700\">1815</text><text x=\"88\" y=\"321.8\" font-size=\"9.5\" fill=\"#FFFFFF\">Napoleon defeated at Waterloo</text></svg></div><div class=\"diagram-caption\">Fig. 1: Important dates (from the textbook's 'Some important dates')</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 1. French Society in the Late Eighteenth Century</div><div class=\"sol-step\"><div class=\"rev\">In <b>1774</b>, <b>Louis XVI</b> of the Bourbon family became king at the age of 20; he was married to the Austrian princess <b>Marie Antoinette</b>. He found an <b>empty treasury</b>.</div><div class=\"pt\"><span class=\"lbl\">Reasons:</span> long years of war; the cost of an extravagant court at the palace of <b>Versailles</b>; help to the thirteen American colonies against Britain, which added more than a billion livres to a debt already over 2 billion livres.</div><div class=\"pt\"><span class=\"lbl\">Interest:</span> lenders now charged <b>10 per cent</b> interest, so a growing part of the budget went on interest alone. The state was forced to <b>increase taxes</b>.</div><div class=\"rev\">French society was divided into <b>three estates</b> — part of the feudal system dating back to the Middle Ages. The term <span class=\"hl\">Old Regime</span> describes French society and institutions before 1789.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Estate</th><th>Who</th><th>Taxes</th></tr><tr><td>1st Estate</td><td>Clergy</td><td>Exempt by birth</td></tr><tr><td>2nd Estate</td><td>Nobility</td><td>Exempt by birth; also took feudal dues</td></tr><tr><td>3rd Estate</td><td>Big businessmen, merchants, court officials, lawyers; peasants and artisans; small peasants, landless labour, servants</td><td>Paid all taxes to the state</td></tr></table></div><div class=\"pt\"><span class=\"lbl\">Peasants:</span> about <b>90 per cent</b> of the population, but only a few owned land; about <b>60 per cent</b> of the land was owned by nobles, the Church and richer members of the third estate.</div><div class=\"pt\"><span class=\"lbl\">Burdens on peasants:</span> feudal dues and services to the lord; <b>tithes</b> to the Church; a direct tax <b>taille</b> and indirect taxes on salt, tobacco etc. to the state.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 2. The Struggle to Survive — Subsistence Crisis</div><div class=\"sol-step\"><div class=\"rev\">The population rose from about <b>23 million in 1715 to 28 million in 1789</b>. Grain production could not keep pace, so the price of <b>bread</b> — the staple diet — rose rapidly. Wages did not keep pace with prices, and the gap between rich and poor widened. Drought or hail made things worse, causing a <span class=\"hl\">subsistence crisis</span>.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 268\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"268\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#FF8A65\" text-anchor=\"middle\" font-weight=\"700\">How a Subsistence Crisis Happens</text><rect x=\"30\" y=\"30\" width=\"260\" height=\"26.4\" rx=\"6\" fill=\"rgba(79,195,247,0.16)\" stroke=\"#4FC3F7\" stroke-width=\"1.2\"/><text x=\"160\" y=\"46.5\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Bad harvest</text><line x1=\"160\" y1=\"57.4\" x2=\"160\" y2=\"64.4\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 69.4 L163.5 63.4 L156.5 63.4 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"70.4\" width=\"260\" height=\"26.4\" rx=\"6\" fill=\"rgba(255,183,77,0.16)\" stroke=\"#FFB74D\" stroke-width=\"1.2\"/><text x=\"160\" y=\"86.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Scarcity of grain</text><line x1=\"160\" y1=\"97.80000000000001\" x2=\"160\" y2=\"104.80000000000001\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 109.80000000000001 L163.5 103.80000000000001 L156.5 103.80000000000001 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"110.80000000000001\" width=\"260\" height=\"26.4\" rx=\"6\" fill=\"rgba(239,83,80,0.16)\" stroke=\"#EF5350\" stroke-width=\"1.2\"/><text x=\"160\" y=\"127.3\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Rising food prices</text><line x1=\"160\" y1=\"138.20000000000002\" x2=\"160\" y2=\"145.20000000000002\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 150.20000000000002 L163.5 144.20000000000002 L156.5 144.20000000000002 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"151.20000000000002\" width=\"260\" height=\"26.4\" rx=\"6\" fill=\"rgba(244,143,177,0.16)\" stroke=\"#F48FB1\" stroke-width=\"1.2\"/><text x=\"160\" y=\"167.7\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">The poorest can no longer buy bread</text><line x1=\"160\" y1=\"178.60000000000002\" x2=\"160\" y2=\"185.60000000000002\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 190.60000000000002 L163.5 184.60000000000002 L156.5 184.60000000000002 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"191.60000000000002\" width=\"260\" height=\"26.4\" rx=\"6\" fill=\"rgba(148,163,184,0.13)\" stroke=\"#94A3B8\" stroke-width=\"1.2\"/><text x=\"160\" y=\"208.1\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Weaker bodies → disease epidemics</text><line x1=\"160\" y1=\"219.00000000000003\" x2=\"160\" y2=\"226.00000000000003\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 231.00000000000003 L163.5 225.00000000000003 L156.5 225.00000000000003 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"232.00000000000003\" width=\"260\" height=\"26.4\" rx=\"6\" fill=\"rgba(129,199,132,0.16)\" stroke=\"#81C784\" stroke-width=\"1.2\"/><text x=\"160\" y=\"248.5\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Increased number of deaths; food riots</text></svg></div><div class=\"diagram-caption\">Fig. 2: The course of a subsistence crisis (Fig. 4 of the textbook)</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 3. A Growing Middle Class and New Ideas</div><div class=\"sol-step\"><div class=\"rev\">Peasants and workers had revolted before, but lacked the means and programmes for full-scale change. This was left to the <b>prosperous, educated groups of the third estate</b> — the new <span class=\"hl\">middle class</span> who earned wealth through overseas trade and the manufacture of goods like woollen and silk textiles, along with lawyers and administrative officials. They believed that <b>no group should be privileged by birth</b>; a person's position must depend on <b>merit</b>.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Philosopher</th><th>Idea</th></tr><tr><td>John Locke</td><td><i>Two Treatises of Government</i> — refuted the divine and absolute right of the monarch</td></tr><tr><td>Jean Jacques Rousseau</td><td>Government based on a <b>social contract</b> between people and their representatives (<i>The Social Contract</i>)</td></tr><tr><td>Montesquieu</td><td><i>The Spirit of the Laws</i> — division of power between legislature, executive and judiciary</td></tr></table></div><div class=\"rev\">These ideas were discussed in <b>salons and coffee-houses</b> and spread through books and newspapers, often read aloud to those who could not read. The American constitution and its guarantee of individual rights was an important example. The news that Louis XVI planned <b>further taxes</b> generated anger against the system of privileges.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 4. The Outbreak of the Revolution (1789)</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">5 May 1789:</span> Louis XVI called the <b>Estates General</b> (last called in 1614) to pass new taxes. The first two estates sent 300 representatives each (seated); the 600 members of the third estate stood at the back. Peasants, artisans and women were denied entry; their grievances came in some <b>40,000 letters</b>.</div><div class=\"pt\"><span class=\"lbl\">Voting dispute:</span> the king wanted <b>one vote per estate</b>; the third estate demanded <b>one vote per member</b> (a democratic principle of Rousseau). When the king refused, the third estate walked out.</div><div class=\"pt\"><span class=\"lbl\">20 June 1789:</span> in an indoor <b>tennis court</b> at Versailles they declared themselves the <b>National Assembly</b> and swore not to disperse till they had drafted a constitution limiting the monarch's powers. Leaders: <b>Mirabeau</b> (a noble against feudal privilege) and <b>Abbé Sieyès</b> (pamphlet 'What is the Third Estate?').</div><div class=\"pt\"><span class=\"lbl\">14 July 1789:</span> after a bad harvest, high bread prices and hoarding, and with troops moving into Paris, the crowd stormed the <b>Bastille</b>.</div><div class=\"pt\"><span class=\"lbl\">The Great Fear:</span> rumours that lords had hired brigands to destroy crops made peasants attack <b>chateaux</b>, loot hoarded grain and burn records of manorial dues; many nobles fled abroad.</div><div class=\"pt\"><span class=\"lbl\">4 August 1789:</span> the Assembly <b>abolished the feudal system</b> of obligations and taxes; clergy gave up privileges; <b>tithes abolished</b>; Church lands confiscated (assets worth at least 2 billion livres).</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 5. France Becomes a Constitutional Monarchy (1791)</div><div class=\"sol-step\"><div class=\"rev\">The <b>Constitution of 1791</b> limited the monarch's powers, which were separated between the <b>legislature, executive and judiciary</b> — making France a <span class=\"hl\">constitutional monarchy</span>.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Group</th><th>Position under the 1791 Constitution</th></tr><tr><td>National Assembly (745 members)</td><td>Made laws; <b>indirectly elected</b> (citizens chose electors, who chose the Assembly)</td></tr><tr><td>Active citizens (about 4 million of 28 million)</td><td>Men above 25 who paid taxes equal to at least 3 days of a labourer's wage — <b>could vote</b></td></tr><tr><td>Passive citizens (about 3 million men)</td><td>No voting rights</td></tr><tr><td>Women, children, youth below 25</td><td>No voting rights</td></tr></table></div><div class=\"rev\">The Constitution began with the <b>Declaration of the Rights of Man and Citizen</b>: the right to life, freedom of speech, freedom of opinion and equality before law were declared <b>'natural and inalienable'</b> rights — belonging to every human being by birth. The state had to protect them.</div><div class=\"sec\">Reading political symbols (Box 1)</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Symbol</th><th>Meaning</th></tr><tr><td>Broken chain</td><td>Becoming free</td></tr><tr><td>Bundle of rods (fasces)</td><td>Strength lies in unity</td></tr><tr><td>Eye within a triangle radiating light</td><td>Knowledge driving away ignorance</td></tr><tr><td>Sceptre</td><td>Royal power</td></tr><tr><td>Snake biting its tail</td><td>Eternity</td></tr><tr><td>Red Phrygian cap</td><td>Worn by a slave upon becoming free</td></tr><tr><td>Blue-white-red</td><td>National colours of France</td></tr><tr><td>Winged woman</td><td>Personification of the law</td></tr><tr><td>Law tablet</td><td>The law is the same for all</td></tr></table></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 6. France Becomes a Republic</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">April 1792:</span> the Assembly declared war on <b>Prussia and Austria</b>. Volunteers sang the <b>Marseillaise</b> by Roget de L'Isle — now France's national anthem.</div><div class=\"pt\"><span class=\"lbl\">Jacobins:</span> club named after the convent of St Jacob; members were small shopkeepers, artisans, servants and daily-wage workers; leader <b>Maximilian Robespierre</b>. They wore long striped trousers and came to be called <b>sans-culottes</b> ('those without knee breeches').</div><div class=\"pt\"><span class=\"lbl\">10 August 1792:</span> the Jacobins stormed the <b>Palace of the Tuileries</b>; the royal family was imprisoned. All men of <b>21 and above</b> got the vote.</div><div class=\"pt\"><span class=\"lbl\">21 September 1792:</span> the newly elected <b>Convention</b> abolished the monarchy and declared France a <b>republic</b>.</div><div class=\"pt\"><span class=\"lbl\">21 January 1793:</span> Louis XVI was executed for treason at the Place de la Concorde; Marie Antoinette soon after.</div><div class=\"sec\">The Reign of Terror (1793–1794)</div><div class=\"pt\">Robespierre arrested 'enemies' of the republic; those found guilty were <b>guillotined</b> (device named after Dr Guillotin).</div><div class=\"pt\">Maximum ceiling on wages and prices; meat and bread rationed; everyone ate the <b>equality bread</b> (pain d'égalité).</div><div class=\"pt\"><b>Citoyen</b> and <b>Citoyenne</b> replaced Monsieur and Madame; churches were shut down.</div><div class=\"pt\">Robespierre was convicted in <b>July 1794</b> and sent to the guillotine.</div><div class=\"sec\">A Directory Rules France</div><div class=\"rev\">The wealthier middle classes took power. A new constitution denied the vote to non-propertied people and set up two elected councils, which appointed a <b>Directory</b> of five members. Clashes between the Directors and the councils caused instability, paving the way for the military dictator <b>Napoleon Bonaparte</b>.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 7. Did Women have a Revolution?</div><div class=\"sol-step\"><div class=\"rev\">Women of the third estate worked as seamstresses, laundresses, sellers and domestic servants, earned less than men and had little education. They formed about <b>sixty clubs</b>; the most famous was the <b>Society of Revolutionary and Republican Women</b>. Their main demand: the same political rights as men — to vote, be elected and hold office.</div><div class=\"pt\"><span class=\"lbl\">Gains:</span> compulsory schooling for girls; no forced marriage; marriage a free contract under civil law; <b>divorce made legal</b>; women could train for jobs, become artists or run small businesses.</div><div class=\"pt\"><span class=\"lbl\">Setback:</span> during the Reign of Terror women's clubs were closed and political activities banned; many women were arrested or executed.</div><div class=\"pt\"><span class=\"lbl\">Olympe de Gouges (1748–1793):</span> wrote the <b>Declaration of the Rights of Woman and Citizen</b> (1791); executed after being charged with treason.</div><div class=\"pt\"><span class=\"lbl\">Result:</span> French women finally won the <b>right to vote in 1946</b>.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 8. The Abolition of Slavery</div><div class=\"sol-step\"><div class=\"rev\">French colonies in the Caribbean — <b>Martinique, Guadeloupe and San Domingo</b> — supplied tobacco, indigo, sugar and coffee. Labour came from the <b>triangular slave trade</b> between Europe, Africa and the Americas; ports like <b>Bordeaux and Nantes</b> grew rich on it.</div><div class=\"pt\"><span class=\"lbl\">1794:</span> the Convention freed all slaves in French overseas possessions.</div><div class=\"pt\"><span class=\"lbl\">Ten years later:</span> Napoleon reintroduced slavery.</div><div class=\"pt\"><span class=\"lbl\">1848:</span> slavery was finally abolished in French colonies.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 9. The Revolution and Everyday Life</div><div class=\"sol-step\"><div class=\"rev\">Soon after the storming of the Bastille, <b>censorship was abolished</b>. Freedom of speech and expression became a natural right; newspapers, pamphlets, books and printed pictures spread quickly, and opposing views could be expressed. Plays, songs and festive processions helped ordinary people understand ideas like liberty and justice.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 10. Conclusion — Napoleon and the Legacy</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">1804:</span> Napoleon crowned himself <b>Emperor</b>; conquered neighbouring countries and placed his family members on thrones.</div><div class=\"pt\"><span class=\"lbl\">Moderniser:</span> laws protecting private property; a uniform system of weights and measures (decimal system).</div><div class=\"pt\"><span class=\"lbl\">1815:</span> first seen as a liberator, later as an invader; defeated at <b>Waterloo</b>.</div><div class=\"pt\"><span class=\"lbl\">Legacy:</span> ideas of <b>liberty and democratic rights</b> spread across Europe, where feudal systems were abolished; colonised peoples used them in their freedom movements. <b>Tipu Sultan</b> and <b>Rammohan Roy</b> responded to these ideas.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 11. Key Terms (New Words)</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Term</th><th>Meaning</th></tr><tr><td>Livre</td><td>Unit of currency in France, discontinued in 1794</td></tr><tr><td>Clergy</td><td>Group of persons invested with special functions in the church</td></tr><tr><td>Tithe</td><td>Tax levied by the church — one-tenth of the agricultural produce</td></tr><tr><td>Taille</td><td>Tax paid directly to the state</td></tr><tr><td>Subsistence crisis</td><td>An extreme situation where the basic means of livelihood are endangered</td></tr><tr><td>Anonymous</td><td>One whose name remains unknown</td></tr><tr><td>Chateau</td><td>Castle or stately residence of a king or nobleman</td></tr><tr><td>Manor</td><td>An estate of the lord's lands and his mansion</td></tr><tr><td>Convent</td><td>Building of a community devoted to religious life</td></tr><tr><td>Treason</td><td>Betrayal of one's country or government</td></tr><tr><td>Emancipation</td><td>The act of freeing</td></tr></table></div><div class=\"exam\"><span class=\"exam-t\">📌 Exam Focus</span><div>• Causes of the Revolution: empty treasury, three estates, subsistence crisis, middle class and philosophers</div><div>• Events of 1789: Estates General, Tennis Court Oath, Bastille, 4 August decree</div><div>• Constitution of 1791: active and passive citizens; Declaration of Rights</div><div>• Republic, Reign of Terror, Directory, rise of Napoleon</div><div>• Women, abolition of slavery, legacy of the Revolution</div></div></div>\n  </div>\n\n</div>",
+  "htmlExercises": {
+    "sh9-1-ex-q": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 138, 101, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FF8A65; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FF8A65; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFCCBC; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFCCBC; font-weight: 700; }\n  .hl { color: #FF8A65; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FF8A65; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FF8A65; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(255, 138, 101, 0.10); border: 1.5px dashed #FF8A65; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FF8A65; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 138, 101, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(255, 138, 101, 0.18); border: 1px solid #FF8A65; color: #FFCCBC; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(255, 138, 101, 0.2); color: #FFCCBC; }\n  .q-card .q-text, .q-card .sub-q { color: #FF8A65 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Describe the circumstances leading to the outbreak of revolutionary protest in France.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Empty treasury:</span> long wars, the extravagant court at Versailles and help to the American colonies left France in debt of over 2 billion livres; lenders charged 10% interest.</div><div class=\"pt\"><span class=\"lbl\">Unfair tax system:</span> only the third estate paid taxes; the clergy and nobility were exempt by birth. Peasants also paid feudal dues and tithes.</div><div class=\"pt\"><span class=\"lbl\">Subsistence crisis:</span> population rose from 23 million (1715) to 28 million (1789); grain could not keep pace, bread prices rose, wages lagged behind and the poor could not buy bread.</div><div class=\"pt\"><span class=\"lbl\">Rise of the middle class:</span> educated merchants, manufacturers and lawyers believed no group should be privileged by birth; ideas of Locke, Rousseau and Montesquieu spread through salons, coffee-houses and newspapers.</div><div class=\"pt\"><span class=\"lbl\">Immediate cause:</span> Louis XVI's plan to impose further taxes. At the Estates General (5 May 1789) he refused one vote per member; the third estate walked out, formed the National Assembly (20 June) and the Bastille was stormed on 14 July 1789.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Which groups of French society benefited from the revolution? Which groups were forced to relinquish power? Which sections of society would have been disappointed with the outcome of the revolution?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Benefited:</span> the <b>richer, educated members of the third estate</b> — the middle class of merchants, manufacturers, lawyers and officials — who gained political power; peasants were freed from feudal dues and tithes.</div><div class=\"pt\"><span class=\"lbl\">Relinquished power:</span> the <b>king</b>, the <b>nobility</b> (lost feudal privileges and dues) and the <b>clergy</b> (lost privileges and tithes; Church lands were confiscated).</div><div class=\"pt\"><span class=\"lbl\">Disappointed:</span> the <b>poor and propertyless</b> — about 3 million men who became passive citizens without the vote — and <b>women</b>, who were also denied political rights; women's clubs were later closed.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Describe the legacy of the French Revolution for the peoples of the world during the nineteenth and twentieth centuries.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">The ideas of <b>liberty and democratic rights</b> were its most important legacy.</div><div class=\"pt\">They spread from France to the rest of Europe in the nineteenth century, where <b>feudal systems were abolished</b>.</div><div class=\"pt\">Colonised peoples reworked the idea of freedom from bondage into movements to create <b>sovereign nation states</b>.</div><div class=\"pt\">In India, <b>Tipu Sultan</b> and <b>Rammohan Roy</b> responded to ideas from revolutionary France.</div><div class=\"pt\">Ideals of freedom, equality before law and fraternity inspired political movements in France and Europe, and women's struggles for the vote and equal wages continued for the next two hundred years.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">Draw up a list of democratic rights we enjoy today whose origins could be traced to the French Revolution.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Right to life</div><div class=\"pt\">Freedom of speech and expression</div><div class=\"pt\">Freedom of opinion</div><div class=\"pt\">Equality before law</div><div class=\"pt\">Freedom of the press (abolition of censorship)</div><div class=\"pt\">Right to vote and to take part in making laws, personally or through representatives</div><div class=\"pt\">Protection from arrest or detention except as determined by law</div><div class=\"pt\">Right to property</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5.</div>\n    <div class=\"q-text\">Would you agree with the view that the message of universal rights was beset with contradictions? Explain.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">Yes. The Declaration of the Rights of Man said that men are born free and equal in rights, but in practice:</div><div class=\"pt\"><span class=\"lbl\">Poor men:</span> the Constitution of 1791 gave the vote only to <b>active citizens</b> — men over 25 who paid taxes; about 3 million poorer men were passive citizens.</div><div class=\"pt\"><span class=\"lbl\">Women:</span> all women were passive citizens; their clubs were closed during the Reign of Terror and women got the vote only in 1946. Olympe de Gouges protested that women were excluded.</div><div class=\"pt\"><span class=\"lbl\">Slaves:</span> the National Assembly did not extend rights to the colonies; slavery was abolished only in 1794, brought back by Napoleon and finally ended in 1848.</div><div class=\"rev\">So the rights were 'universal' in words but limited in practice.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q6.</div>\n    <div class=\"q-text\">How would you explain the rise of Napoleon?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">After the fall of the Jacobins, the wealthier middle class introduced a new constitution with two elected councils and a five-member <b>Directory</b>.</div><div class=\"pt\">The Directors often clashed with the councils, who tried to dismiss them — causing <b>political instability</b>.</div><div class=\"pt\">This instability paved the way for a military dictator, <b>Napoleon Bonaparte</b>.</div><div class=\"pt\">In <b>1804</b> he crowned himself Emperor; at first many saw him as a <b>liberator</b> and moderniser (protection of private property, decimal system of weights and measures).</div></div></div>\n  </div>\n\n</div>",
+    "sh9-1-ex-src": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 138, 101, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FF8A65; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FF8A65; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFCCBC; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFCCBC; font-weight: 700; }\n  .hl { color: #FF8A65; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FF8A65; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FF8A65; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(255, 138, 101, 0.10); border: 1.5px dashed #FF8A65; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FF8A65; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 138, 101, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(255, 138, 101, 0.18); border: 1px solid #FF8A65; color: #FFCCBC; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(255, 138, 101, 0.2); color: #FFCCBC; }\n  .q-card .q-text, .q-card .sub-q { color: #FF8A65 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\"><div class=\"q-title\">✦ Source A — Accounts of lived experiences in the Old Regime</div></div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">What message is Young trying to convey here? Whom does he mean when he speaks of 'slaves'? Who is he criticising? What dangers does he sense in the situation of 1787?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Message:</span> those who ill-treat the people who serve them put their own property and life in danger.</div><div class=\"pt\"><span class=\"lbl\">'Slaves':</span> the peasants and servants of the third estate, who served the privileged classes and were ill-treated.</div><div class=\"pt\"><span class=\"lbl\">Criticising:</span> the nobles and the privileged classes who lived in comfort on the labour of the poor.</div><div class=\"pt\"><span class=\"lbl\">Danger:</span> the oppressed might rise in revolt — in a riot, the oppressors' families and lives would be at risk.</div></div></div>\n  </div>\n  <div class=\"q-card\"><div class=\"q-title\">✦ Box 1, Source B (Marat) and Source C (Declaration of Rights)</div></div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">(1) Identify the symbols in Box 1 which stand for liberty, equality and fraternity. (2) Explain the meaning of the painting of the Declaration of Rights of Man and Citizen (Fig. 8) by reading only the symbols. (3) Compare the political rights which the Constitution of 1791 gave to the citizens with Articles 1 and 6 of the Declaration (Source C). Are the two documents consistent? Do the two documents convey the same idea? (4) Which groups of French society would have gained from the Constitution of 1791? Which groups would have had reason to be dissatisfied? What developments does Marat (Source B) anticipate in the future? (5) Imagine the impact of the events in France on neighbouring countries such as Prussia, Austria-Hungary or Spain, all of which were absolute monarchies. How would the kings, traders, peasants, nobles or members of the clergy here have reacted to the news of what was happening in France?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">(1) Symbols</div><div class=\"pt\"><span class=\"lbl\">Liberty:</span> the broken chain and the red Phrygian cap.</div><div class=\"pt\"><span class=\"lbl\">Equality:</span> the law tablet — the law is the same for all.</div><div class=\"pt\"><span class=\"lbl\">Fraternity:</span> the bundle of rods (fasces) — strength lies in unity.</div><div class=\"sub-q\">(2) Meaning of the painting</div><div class=\"rev\">France (the figure on the right) has broken her chains and become free. The winged figure of the law, with the all-seeing eye of knowledge, shows that the rights are now declared by law, equal for all, and will last for ever (snake biting its tail).</div><div class=\"sub-q\">(3) Comparison</div><div class=\"rev\">No, they are not consistent. Article 1 says men are born free and equal in rights, and Article 6 says all citizens may take part in making laws. But the Constitution of 1791 gave the vote only to active citizens — men over 25 paying taxes — and left out poorer men, women and youth.</div><div class=\"sub-q\">(4) Gainers, the dissatisfied and Marat's prediction</div><div class=\"pt\"><span class=\"lbl\">Gained:</span> the rich, propertied middle class of the third estate.</div><div class=\"pt\"><span class=\"lbl\">Dissatisfied:</span> the poor (passive citizens) and women.</div><div class=\"pt\"><span class=\"lbl\">Marat:</span> he foresees that the poor will not improve their lot by peaceful means; once the people throw off the aristocrats, they will do the same to the other owners of wealth — a further, more radical revolution.</div><div class=\"sub-q\">(5) Reactions in neighbouring monarchies</div><div class=\"pt\"><span class=\"lbl\">Kings and nobles:</span> alarmed and afraid of losing their power and privileges.</div><div class=\"pt\"><span class=\"lbl\">Clergy:</span> worried about losing tithes, privileges and Church lands.</div><div class=\"pt\"><span class=\"lbl\">Traders and peasants:</span> inspired and hopeful of ending privileges, feudal dues and unfair taxes.</div></div></div>\n  </div>\n  <div class=\"q-card\"><div class=\"q-title\">✦ Source D — What is liberty? Two conflicting views</div></div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Compare the views of Desmoulins and Robespierre. How does each one understand the use of state force? What does Robespierre mean by 'the war of liberty against tyranny'? How does Desmoulins perceive liberty? Refer once more to Source C. What did the constitutional laws on the rights of individuals lay down? Discuss your views on the subject in class.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Desmoulins:</span> liberty is happiness, reason, equality, justice — the Declaration of Rights itself. He is against state force; killing enemies by the guillotine only makes more enemies.</div><div class=\"pt\"><span class=\"lbl\">Robespierre:</span> in a revolution a democratic government may rely on <b>terror</b> — 'justice, swift, severe and inflexible' — to destroy the enemies of the republic.</div><div class=\"pt\"><span class=\"lbl\">'War of liberty against tyranny':</span> the fight to destroy all enemies of the republic at home and abroad before peaceful democracy can be established.</div><div class=\"pt\"><span class=\"lbl\">Source C:</span> no man may be accused, arrested or detained except in cases determined by the law (Article 7); every citizen may speak, write and print freely (Article 11). The Terror violated these rights.</div><div class=\"pt\"><span class=\"lbl\">View:</span> Desmoulins' idea of liberty is closer to the Declaration; terror cannot protect freedom.</div></div></div>\n  </div>\n  <div class=\"q-card\"><div class=\"q-title\">✦ Source F and Source G — Women's rights</div></div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">Compare the manifesto drafted by Olympe de Gouges (Source F) with the Declaration of the Rights of Man and Citizen (Source C).</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Declaration of Rights of Man (Source C)</th><th>Olympe de Gouges' Declaration (Source F)</th></tr><tr><td>Men are born free and equal in rights</td><td>Woman is born free and remains equal to man in rights</td></tr><tr><td>Natural rights of man: liberty, property, security, resistance to oppression</td><td>Natural rights of woman and man: the same rights</td></tr><tr><td>Sovereignty resides in the nation</td><td>The nation is the union of woman and man</td></tr><tr><td>All citizens take part in making laws</td><td>All female and male citizens should have a say; equally entitled to honours and public jobs</td></tr></table></div><div class=\"rev\">Olympe de Gouges used the same principles but extended them to <b>women</b>, showing that the original Declaration had excluded them.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5.</div>\n    <div class=\"q-text\">Imagine yourself to be one of the women in Fig. 13. Formulate a response to the arguments put forward by Chaumette (Source G).</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\"><i>Model response:</i> Citizen Chaumette, you say Nature gave women only household duties. But here we stand in this bread queue for hours, we work as seamstresses, laundresses and sellers, and we earn less than men — yet we also feed our families. If we can share the hardships of the Revolution, why can we not share its rights? The Declaration says all are born free and equal. We want the vote, a place in the Assembly and the right to hold office, so that our interests are heard. Closing our clubs does not make duties 'fair'; it only denies us our rights.</div></div></div>\n  </div>\n\n</div>",
+    "sh9-1-ex-pic": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 138, 101, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FF8A65; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FF8A65; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFCCBC; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFCCBC; font-weight: 700; }\n  .hl { color: #FF8A65; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FF8A65; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FF8A65; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(255, 138, 101, 0.10); border: 1.5px dashed #FF8A65; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FF8A65; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 138, 101, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(255, 138, 101, 0.18); border: 1px solid #FF8A65; color: #FFCCBC; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(255, 138, 101, 0.2); color: #FFCCBC; }\n  .q-card .q-text, .q-card .sub-q { color: #FF8A65 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Fig. 3 — The Spider and the Fly: Explain why the artist has portrayed the nobleman as the spider and the peasant as the fly.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">Just as a spider traps the fly and lives on it, the <b>nobleman lives on the labour of the peasant</b>. The peasant brings everything — grain, fruits, money, salad — and the 'fat lord' accepts it all without even looking at him. The picture shows the <b>exploitation</b> of peasants by the privileged nobility in the Old Regime.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Fig. 4 — Fill in the blank boxes in Fig. 4 with appropriate terms from among the following: Food riots, scarcity of grain, increased number of deaths, rising food prices, weaker bodies.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Stage</th><th>Term</th></tr><tr><td>After 'Bad harvest'</td><td>Scarcity of grain</td></tr><tr><td>Next</td><td>Rising food prices</td></tr><tr><td>Then</td><td>The poorest can no longer buy bread (given)</td></tr><tr><td>From 'poorest' (1)</td><td>Weaker bodies → Disease epidemics (given)</td></tr><tr><td>From 'poorest' (2)</td><td>Food riots</td></tr><tr><td>End</td><td>Increased number of deaths</td></tr></table></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Fig. 5 — The Tennis Court Oath: Do you think that during the actual event Bailly would have stood with his back to the assembled deputies? What could have been David's intention in placing Bailly the way he has done?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">No. In the actual event Bailly, as President of the Assembly, would have faced the deputies while they took the oath.</div><div class=\"rev\">David placed him at the <b>centre, standing on a table</b> and facing the viewer, so that he becomes the focus of the painting. Since the painting was meant to hang in the National Assembly, it shows the oath as a <b>heroic, united moment</b> of the nation, with all arms raised towards its leader.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">Fig. 10 — Liberty by Nanine Vallain: Identify the objects which are political symbols you saw in Box 1. The pyramid stands for equality. Use the symbols to interpret the painting. Describe your impressions of the female figure of liberty.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Symbols:</span> the <b>red cap</b> raised high on a staff (liberty), the <b>Charter of the Declaration of Rights</b> in her hand, and the <b>pyramid</b> behind her (equality); the activity also points to the broken chain and fasces.</div><div class=\"pt\"><span class=\"lbl\">Interpretation:</span> Liberty, based on the Declaration of Rights and resting on equality, has been won by the people.</div><div class=\"pt\"><span class=\"lbl\">Impression:</span> the woman looks calm, strong and confident — a dignified symbol of freedom, painted by one of the rare woman artists of the time.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5.</div>\n    <div class=\"q-text\">Fig. 11 — Describe the groups of people, their clothes, their roles and actions. What impression of a revolutionary festival does this image convey?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">Rows of <b>soldiers in uniform</b> march in formation around a raised platform; officials stand on the platform under a pavilion with classical columns; <b>citizens — men, women and children</b> in everyday clothes — watch in the foreground.</div><div class=\"rev\">The image gives the impression of a <b>grand, orderly and patriotic</b> celebration that mobilised the loyalty of the people, using symbols from ancient Greece and Rome to give the Republic the aura of a hallowed history.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q6.</div>\n    <div class=\"q-text\">Fig. 12 — Parisian women on their way to Versailles: Describe the persons represented, their actions, postures and objects. Do they come from the same social group? What symbols has the artist included? Do the actions reflect traditional ideas of how women were expected to behave? Does the artist sympathise with the women's activities or is he critical of them?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Persons and objects:</span> a crowd of women marching determinedly; they carry pikes, pitchforks and swords; one beats a drum and one rides a horse.</div><div class=\"pt\"><span class=\"lbl\">Social group:</span> most are working women of the third estate, but some are better dressed, so they come from different groups.</div><div class=\"pt\"><span class=\"lbl\">Symbols:</span> a pole topped by the <b>red cap (liberty)</b> with the <b>scales of justice/equality</b>.</div><div class=\"pt\"><span class=\"lbl\">Traditional ideas:</span> no — women marching with weapons challenged the traditional idea that women should stay in the home.</div><div class=\"pt\"><span class=\"lbl\">Artist's attitude:</span> the women are shown as brave and united, so the artist seems to <b>sympathise</b> with them. (Students may discuss other views in class.)</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q7.</div>\n    <div class=\"q-text\">Fig. 14 — The emancipation of slaves: Record your impressions of this print. Describe the objects lying on the ground. What do they symbolise? What attitude does the picture express towards non-European slaves?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Impression:</span> a celebration of freedom under the banner 'The rights of man'.</div><div class=\"pt\"><span class=\"lbl\">Objects on the ground:</span> the <b>broken chains</b> of the slaves — symbols of slavery that has ended.</div><div class=\"pt\"><span class=\"lbl\">Attitude:</span> a <b>patronising</b> one — the French woman prepares to 'civilise' the African and American Indian slaves by giving them European clothes, as if Europeans were superior.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q8.</div>\n    <div class=\"q-text\">Fig. 15 — The patriotic fat-reducing press: Describe the picture in your own words. What are the images that the artist has used to communicate the following ideas: greed, equality, justice, takeover by the state of the assets of the church?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">A fat clergyman is being squeezed in a press turned by revolutionaries; coins pour out of him into a box, while thin clergymen who have already been pressed walk away.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Idea</th><th>Image</th></tr><tr><td>Greed</td><td>The fat, richly dressed clergyman</td></tr><tr><td>Equality</td><td>Everyone pressed to the same size</td></tr><tr><td>Justice</td><td>The press squeezing out ill-gotten wealth</td></tr><tr><td>State takeover of Church assets</td><td>Coins falling into the state's box</td></tr></table></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q9.</div>\n    <div class=\"q-text\">Fig. 16 — Marat addressing the people: Recall what you have learnt about Marat. Describe the scene around him. Account for his great popularity. What kinds of reactions would a painting like this produce among viewers in the Salon?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Marat:</span> the revolutionary journalist of <i>L'Ami du peuple</i> (The friend of the people), who wrote that the rich controlled the law and the poor would not gain by peaceful means alone.</div><div class=\"pt\"><span class=\"lbl\">Scene:</span> Marat stands raised above an excited crowd of ordinary men and women who wave their hats and arms and listen eagerly.</div><div class=\"pt\"><span class=\"lbl\">Popularity:</span> he spoke for the <b>poor and oppressed</b> against the rich.</div><div class=\"pt\"><span class=\"lbl\">Reactions:</span> it would inspire supporters of the Revolution, while wealthier viewers might feel alarmed by the power of the crowd.</div></div></div>\n  </div>\n\n</div>",
+    "sh9-1-ex-proj": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 138, 101, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FF8A65; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FF8A65; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFCCBC; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFCCBC; font-weight: 700; }\n  .hl { color: #FF8A65; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FF8A65; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FF8A65; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(255, 138, 101, 0.10); border: 1.5px dashed #FF8A65; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FF8A65; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 138, 101, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(255, 138, 101, 0.18); border: 1px solid #FF8A65; color: #FFCCBC; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(255, 138, 101, 0.2); color: #FFCCBC; }\n  .q-card .q-text, .q-card .sub-q { color: #FF8A65 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Find out more about any one of the revolutionary figures you have read about in this chapter. Write a short biography of this person.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sec\">Model: Olympe de Gouges (1748–1793)</div><div class=\"rev\">Olympe de Gouges was one of the most important politically active women in revolutionary France. She protested that the Constitution and the Declaration of the Rights of Man and Citizen excluded women from basic rights. In <b>1791</b> she wrote the <b>Declaration of the Rights of Woman and Citizen</b>, addressed to the Queen and the National Assembly, declaring that woman is born free and equal to man in rights. In <b>1793</b> she criticised the Jacobin government for closing women's clubs. She was tried by the National Convention, charged with treason and soon executed. Her courage kept alive the memory of women's struggle for equal rights.</div><div class=\"rev\"><i>Students may also choose Mirabeau, Abbé Sieyès, Robespierre, Marat or Napoleon, using the facts in the chapter and further reading.</i></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">The French Revolution saw the rise of newspapers describing the events of each day and week. Collect information and pictures on any one event and write a newspaper article. You could also conduct an imaginary interview with important personages such as Mirabeau, Olympe de Gouges or Robespierre. Work in groups of two or three.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sec\">Model article: 'BASTILLE FALLS!'</div><div class=\"rev\"><b>Paris, 14 July 1789.</b> The city was in a state of alarm this morning as the king ordered troops into Paris. Some 7,000 men and women gathered before the town hall and formed a people's militia. Searching for arms, several hundred marched to the eastern part of the city and stormed the fortress-prison of the <b>Bastille</b>, hoping to find hoarded ammunition. The commander was killed and the prisoners — only seven — were released. The Bastille, hated as a symbol of the king's despotic power, is to be demolished. Citizens are protesting against the high price of bread, and riots continue in Paris and the countryside.</div></div></div>\n  </div>\n\n</div>"
   },
-  introduction:
-    "The French Revolution of 1789 was a milestone in modern history that ended the monarchy.",
-  definitions: [],
-  keyPoints: [],
-  formulas: [],
-  crux: [],
-  mcqs: [
+  "introduction": "The French Revolution of 1789 was a milestone in modern history that ended the monarchy.",
+  "definitions": [],
+  "keyPoints": [],
+  "formulas": [],
+  "crux": [],
+  "mcqs": [
     {
-      id: "sst-his-c9-1-mcq-1",
-      question: "In which year did the French Revolution break out?",
-      options: ["1774", "1789", "1804", "1815"],
-      correctAnswer: "b",
-    },
-    {
-      id: "sst-his-c9-1-mcq-2",
-      question: "Who was the ruler of France during the Revolution?",
-      options: ["Louis XIV", "Louis XV", "Louis XVI", "Napoleon Bonaparte"],
-      correctAnswer: "c",
-    },
-    {
-      id: "sst-his-c9-1-mcq-3",
-      question: "The tax called 'Tithe' was collected by the:",
-      options: ["State", "Nobles", "Church", "Royal Army"],
-      correctAnswer: "c",
-    },
-    {
-      id: "sst-his-c9-1-mcq-4",
-      question:
-        "The storming of which prison marked the beginning of the French Revolution?",
-      options: ["Bastille", "Versailles", "Tuileries", "Tower of London"],
-      correctAnswer: "a",
-    },
-    {
-      id: "sst-his-c9-1-mcq-5",
-      question: "What was the main food of the common people in France?",
-      options: ["Rice", "Meat", "Bread", "Potatoes"],
-      correctAnswer: "c",
-    },
-    {
-      id: "sst-his-c9-1-mcq-6",
-      question:
-        "The device used for beheading people during the Reign of Terror was the:",
-      options: ["Spear", "Sword", "Guillotine", "Axe"],
-      correctAnswer: "c",
-    },
-    {
-      id: "sst-his-c9-1-mcq-7",
-      question: "Who led the Jacobin club during the Reign of Terror?",
-      options: [
-        "Louis XVI",
-        "Maximilien Robespierre",
-        "John Locke",
-        "Montesquieu",
+      "id": "sst-his-c9-1-mcq-1",
+      "question": "<div style='text-align: justify;'>When did the people of Paris storm the Bastille?</div>",
+      "options": [
+        "A):   5 May 1789",
+        "B):   4 August 1789",
+        "C):   14 July 1789",
+        "D):   21 January 1793"
       ],
-      correctAnswer: "b",
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>The fortress-prison was stormed on 14 July 1789.</div>"
     },
     {
-      id: "sst-his-c9-1-mcq-8",
-      question: "Who wrote the famous book 'The Social Contract'?",
-      options: [
-        "John Locke",
-        "Jean-Jacques Rousseau",
-        "Montesquieu",
-        "Voltaire",
+      "id": "sst-his-c9-1-mcq-2",
+      "question": "<div style='text-align: justify;'>Louis XVI belonged to which family of kings?</div>",
+      "options": [
+        "A):   Bourbon",
+        "B):   Habsburg",
+        "C):   Romanov",
+        "D):   Tudor"
       ],
-      correctAnswer: "b",
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>He became king of France in 1774.</div>"
     },
     {
-      id: "sst-his-c9-1-mcq-9",
-      question: "Napoleon Bonaparte crowned himself Emperor of France in:",
-      options: ["1789", "1799", "1804", "1815"],
-      correctAnswer: "c",
+      "id": "sst-his-c9-1-mcq-3",
+      "question": "<div style='text-align: justify;'>Who among the following paid taxes to the state in Old Regime France?</div>",
+      "options": [
+        "A):   Only the clergy",
+        "B):   Only the nobility",
+        "C):   All three estates equally",
+        "D):   Only the third estate"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>The clergy and nobility were exempt by birth.</div>"
     },
     {
-      id: "sst-his-c9-1-mcq-10",
-      question: "Napoleon was finally defeated in the Battle of:",
-      options: ["Waterloo", "Leipzig", "Trafalgar", "Austerlitz"],
-      correctAnswer: "a",
+      "id": "sst-his-c9-1-mcq-4",
+      "question": "<div style='text-align: justify;'>'Tithe' was a tax levied by the —</div>",
+      "options": [
+        "A):   King",
+        "B):   Church",
+        "C):   Nobles",
+        "D):   National Assembly"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>It was one-tenth of the agricultural produce.</div>"
     },
+    {
+      "id": "sst-his-c9-1-mcq-5",
+      "question": "<div style='text-align: justify;'>The direct tax paid to the state was called —</div>",
+      "options": [
+        "A):   taille",
+        "B):   tithe",
+        "C):   livre",
+        "D):   corvée"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Taille was paid directly to the state.</div>"
+    },
+    {
+      "id": "sst-his-c9-1-mcq-6",
+      "question": "<div style='text-align: justify;'>Peasants made up about what part of the French population?</div>",
+      "options": [
+        "A):   60 per cent",
+        "B):   50 per cent",
+        "C):   90 per cent",
+        "D):   25 per cent"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>But only a few owned the land they cultivated.</div>"
+    },
+    {
+      "id": "sst-his-c9-1-mcq-7",
+      "question": "<div style='text-align: justify;'>Who wrote 'Two Treatises of Government'?</div>",
+      "options": [
+        "A):   Rousseau",
+        "B):   Montesquieu",
+        "C):   Abbé Sieyès",
+        "D):   John Locke"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Locke refuted the divine and absolute right of the monarch.</div>"
+    },
+    {
+      "id": "sst-his-c9-1-mcq-8",
+      "question": "<div style='text-align: justify;'>Who proposed a division of power in 'The Spirit of the Laws'?</div>",
+      "options": [
+        "A):   John Locke",
+        "B):   Montesquieu",
+        "C):   Mirabeau",
+        "D):   Marat"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Legislature, executive and judiciary.</div>"
+    },
+    {
+      "id": "sst-his-c9-1-mcq-9",
+      "question": "<div style='text-align: justify;'>When was the Estates General called before 1789?</div>",
+      "options": [
+        "A):   1614",
+        "B):   1714",
+        "C):   1774",
+        "D):   1689"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>The monarch alone decided when to call it.</div>"
+    },
+    {
+      "id": "sst-his-c9-1-mcq-10",
+      "question": "<div style='text-align: justify;'>Where did the third estate take the oath to draft a constitution?</div>",
+      "options": [
+        "A):   The Bastille",
+        "B):   The Tuileries",
+        "C):   An indoor tennis court at Versailles",
+        "D):   Notre Dame"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>On 20 June 1789 they declared themselves the National Assembly.</div>"
+    },
+    {
+      "id": "sst-his-c9-1-mcq-11",
+      "question": "<div style='text-align: justify;'>Who wrote the pamphlet 'What is the Third Estate'?</div>",
+      "options": [
+        "A):   Mirabeau",
+        "B):   Abbé Sieyès",
+        "C):   Robespierre",
+        "D):   Desmoulins"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Sieyès was originally a priest.</div>"
+    },
+    {
+      "id": "sst-his-c9-1-mcq-12",
+      "question": "<div style='text-align: justify;'>To be an 'active citizen' under the Constitution of 1791, a man had to be above —</div>",
+      "options": [
+        "A):   21 years",
+        "B):   18 years and own land",
+        "C):   30 years and be a noble",
+        "D):   25 years and pay taxes of at least 3 days' wages"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Active citizens could vote.</div>"
+    },
+    {
+      "id": "sst-his-c9-1-mcq-13",
+      "question": "<div style='text-align: justify;'>The Marseillaise was composed by —</div>",
+      "options": [
+        "A):   Roget de L'Isle",
+        "B):   Jacques-Louis David",
+        "C):   Olympe de Gouges",
+        "D):   Marat"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>It is now the national anthem of France.</div>"
+    },
+    {
+      "id": "sst-his-c9-1-mcq-14",
+      "question": "<div style='text-align: justify;'>'Sans-culottes' literally means —</div>",
+      "options": [
+        "A):   those without land",
+        "B):   people of the red cap",
+        "C):   those without knee breeches",
+        "D):   friends of the people"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Jacobins wore long striped trousers.</div>"
+    },
+    {
+      "id": "sst-his-c9-1-mcq-15",
+      "question": "<div style='text-align: justify;'>France was declared a republic on —</div>",
+      "options": [
+        "A):   14 July 1789",
+        "B):   21 September 1792",
+        "C):   10 August 1792",
+        "D):   21 January 1793"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>The Convention abolished the monarchy.</div>"
+    },
+    {
+      "id": "sst-his-c9-1-mcq-16",
+      "question": "<div style='text-align: justify;'>The period 1793–1794 is known as the —</div>",
+      "options": [
+        "A):   Great Fear",
+        "B):   Old Regime",
+        "C):   Directory",
+        "D):   Reign of Terror"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Robespierre followed a policy of severe control and punishment.</div>"
+    },
+    {
+      "id": "sst-his-c9-1-mcq-17",
+      "question": "<div style='text-align: justify;'>The Directory was an executive of —</div>",
+      "options": [
+        "A):   five members",
+        "B):   three members",
+        "C):   seven members",
+        "D):   one member"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>It was a safeguard against a one-man executive.</div>"
+    },
+    {
+      "id": "sst-his-c9-1-mcq-18",
+      "question": "<div style='text-align: justify;'>In which year did women in France win the right to vote?</div>",
+      "options": [
+        "A):   1791",
+        "B):   1848",
+        "C):   1946",
+        "D):   1804"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Their struggle continued for many years.</div>"
+    },
+    {
+      "id": "sst-his-c9-1-mcq-19",
+      "question": "<div style='text-align: justify;'>Assertion (A): Many people in France were disappointed with the Constitution of 1791. Reason (R): It gave the right to vote only to men above 25 who paid taxes.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Passive citizens and women were left without the vote.</div>"
+    },
+    {
+      "id": "sst-his-c9-1-mcq-20",
+      "question": "<div style='text-align: justify;'>Assertion (A): Slavery in French colonies ended for ever in 1794. Reason (R): The Convention in 1794 legislated to free all slaves in the French overseas possessions.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Napoleon reintroduced slavery ten years later; it was finally abolished in 1848.</div>"
+    }
   ],
-  summary: [],
-  exercises: [
+  "summary": [],
+  "exercises": [
     {
-      id: "ex-sst-qa",
-      name: "Q & A",
-      questions: [],
+      "id": "sh9-1-ex-q",
+      "name": "Questions",
+      "questions": []
     },
+    {
+      "id": "sh9-1-ex-src",
+      "name": "Source Qs",
+      "questions": []
+    },
+    {
+      "id": "sh9-1-ex-pic",
+      "name": "Picture Qs",
+      "questions": []
+    },
+    {
+      "id": "sh9-1-ex-proj",
+      "name": "Projects",
+      "questions": []
+    }
   ],
-  examples: [],
+  "examples": []
 };
