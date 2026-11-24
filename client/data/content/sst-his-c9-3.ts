@@ -1,243 +1,286 @@
 import { ChapterContent } from "../types";
 
-const themeColor = "#AB47BC";
-
 export const sstHisC93: ChapterContent = {
-  id: "sst-his-c9-3",
-  number: 3,
-  title: "Nazism and the Rise of Hitler",
-  isHtmlView: true,
-  htmlOverview: `
-    <div style="padding: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: transparent;">
-      <!-- Key Concepts Introduction -->
-      <div style="background-color: #1E1E2E; border: 1px solid rgba(255, 138, 101, 0.2); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 20px; font-weight: 700; margin-top: 0; margin-bottom: 12px; display: flex; align-items: center;">
-          <span style="margin-right: 8px; font-size: 22px;">🇩🇪</span> Introduction
-        </h3>
-        <p style="color: #E0E0E0; font-size: 15px; line-height: 1.6; text-align: justify; margin: 0; font-weight: 300;">
-          The rise of Adolf Hitler and the Nazi Party in Germany led to the collapse of democracy and the outbreak of World War II. Under Hitler's dictatorship, Germany became a totalitarian state governed by extreme nationalism, militarism, and racial discrimination, culminating in the horrific mass execution of minorities known as the Holocaust.
-        </p>
-      </div>
-
-      <!-- Key Milestones (Important Points) -->
-      <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 600; margin-top: 0; margin-bottom: 14px; display: flex; align-items: center;">
-          <span style="margin-right: 8px; font-size: 18px;">📌</span> Key Points
-        </h3>
-        <ul style="color: #B3B3C6; font-size: 14.5px; line-height: 1.7; margin: 0; padding-left: 20px; text-align: justify;">
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">Weimar Republic Weaknesses:</b> Born after Germany's WWI defeat, the Republic faced public anger for signing the humiliating Treaty of Versailles and failed to solve hyperinflation and Great Depression crises.</li>
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">Rise to Power:</b> Hitler, a powerful orator, capitalized on economic distress, promising jobs and the restoration of national pride. By 1932, the Nazi Party became the largest party in the Reichstag.</li>
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">Destruction of Democracy (1933):</b> Hitler was appointed Chancellor. The Fire Decree suspended civic rights, and the <b>Enabling Act</b> established his dictatorship, banning all other parties.</li>
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">Nazi Racial Ideology:</b> Based on pseudo-scientific theories of racial hierarchy, stating Nordic German Aryans were the superior race, while Jews were considered the anti-race and main enemies.</li>
-          <li style="margin-bottom: 0;"><b style="color: ${themeColor};">Establishment of Control:</b> Total control was enforced via specialized surveillance forces (Gestapo, SS), rigorous school brainwashing, youth organizations (Hitler Youth), and concentration camps.</li>
-        </ul>
-      </div>
-      
-      <!-- Key Terms Glossy Box -->
-      <div style="background: rgba(255, 138, 101, 0.05); border: 1.5px solid rgba(255, 138, 101, 0.25); border-radius: 16px; padding: 20px; box-shadow: 0 4px 30px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 600; margin-top: 0; margin-bottom: 12px;">🔑 Key Terms to Remember</h3>
-        <div style="color: #E0E0E0; font-size: 14px; line-height: 1.6; text-align: justify;">
-          <p style="margin-top: 0; margin-bottom: 8px;"><b style="color: ${themeColor};">Reichstag:</b> The building and name of the German Parliament.</p>
-          <p style="margin-bottom: 8px;"><b style="color: ${themeColor};">Gestapo:</b> The secret state police of the Nazi regime, notorious for brutal torture and arrests.</p>
-          <p style="margin-bottom: 8px;"><b style="color: ${themeColor};">Holocaust:</b> The systematic, state-sponsored persecution and murder of six million European Jews by Nazi Germany.</p>
-          <p style="margin-bottom: 0;"><b style="color: ${themeColor};">Lebensraum:</b> The Nazi concept of 'living space' through territorial expansion to settle German people.</p>
-        </div>
-      </div>
-    </div>
-  `,
-  htmlExercises: {
-    "ex-sst-qa": `
-      <div style="padding: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: transparent;">
-        <!-- Q1 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q1. Describe the problems faced by the Weimar Republic.</p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> The Weimar Republic faced major difficulties from its start:
-            <ul style="margin: 6px 0 0 0; padding-left: 20px;">
-              <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Humiliation at Versailles:</b> The Republic had to sign the harsh Treaty of Versailles, taking blame for WWI, losing colonies, and paying heavy war reparations.</li>
-              <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Hyperinflation (1923):</b> German currency lost all value as the government printed excess money to pay off debts. Basic food prices rose astronomically.</li>
-              <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Great Depression (1929):</b> US loans stopped, factories shut down, and unemployment reached 6 million, destroying public faith in democracy.</li>
-              <li style="margin-bottom: 0;"><b style="color: ${themeColor};">Constitutional Defects:</b> Proportional representation and Article 48 (presidential rule by decree) led to cabinet instability and political weakness.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q2 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q2. Discuss why Nazism became popular in Germany by 1930.</p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> Nazism grew popular due to the following factors:
-            <ul style="margin: 6px 0 0 0; padding-left: 20px;">
-              <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Economic Distress:</b> The Great Depression left workers jobless and middle classes ruined. Hitler promised employment and security.</li>
-              <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Appeal to National Pride:</b> Hitler promised to tear up the Versailles Treaty, restore Germany's honor, and build a strong nation.</li>
-              <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Hitler's Oratory:</b> His powerful speeches offered hope to a desperate, war-weary population.</li>
-              <li style="margin-bottom: 0;"><b style="color: ${themeColor};">Propaganda:</b> Joseph Goebbels used massive rallies, Swastika flags, and radio broadcasts to present Hitler as Germany's savior.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q3 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q3. What are the peculiar features of Nazi thinking?</p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> Nazi thinking had several specific ideological features:
-            <ul style="margin: 6px 0 0 0; padding-left: 20px;">
-              <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Racial Hierarchy:</b> There was no equality. Nordic German Aryans were the master race; Jews were at the bottom as the 'anti-race'.</li>
-              <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Social Darwinism:</b> Distorted the idea of 'survival of the fittest' to claim Aryans must expand and dominate.</li>
-              <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Lebensraum (Living Space):</b> The belief that Germany must acquire new territories to expand and strengthen the nation.</li>
-              <li style="margin-bottom: 0;"><b style="color: ${themeColor};">Anti-Democracy:</b> Belief in the absolute authority of the Führer (leader) and rejection of democratic institutions.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q4 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q4. Explain why Nazi propaganda was effective in creating a hatred for Jews.</p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> Nazi propaganda succeeded in spreading anti-Semitism by:
-            <ul style="margin: 6px 0 0 0; padding-left: 20px;">
-              <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Exploiting History:</b> Playing on traditional Christian prejudices that blamed Jews for the death of Christ.</li>
-              <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Dehumanization:</b> Using terms like 'vermin' or 'rats' in films and posters to describe Jewish people.</li>
-              <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Brainwashing Youth:</b> Teaching anti-Semitic 'racial science' in schools and rewriting textbooks.</li>
-              <li style="margin-bottom: 0;"><b style="color: ${themeColor};">Total Censorship:</b> Controlling all media and silencing alternative views.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q5 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q5. Explain what role women had in Nazi society. Return to Chapter 1 on the French Revolution. Write a paragraph comparing and contrasting the role of women in the two periods.</p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> In Nazi Germany, women were seen as mothers whose primary duty was to maintain Aryan racial purity and raise children. They were discouraged from public life and politics, and awarded medals based on the number of children they had.
-            <p style="margin: 8px 0 0 0; text-align: justify;"><b>Comparison with French Revolution:</b> During the French Revolution, women actively participated in political clubs, wrote newspapers, and fought for political equality and voting rights. In contrast, Nazi society actively discouraged women from public life, training them to submit to domestic roles. While French revolutionary women sought liberation, Nazi women were treated as instruments of state reproduction. However, both periods initially denied women full voting rights and representation.</p>
-          </div>
-        </div>
-
-        <!-- Q6 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q6. In what ways did the Nazi state seek to establish total control over its people?</p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> The Nazi state established absolute control over Germany by:
-            <ul style="margin: 6px 0 0 0; padding-left: 20px;">
-              <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Enabling Act (1933):</b> Gave Hitler powers to bypass Parliament and rule by decree, banning all other political parties and trade unions.</li>
-              <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Terror and Secret Police:</b> Deploying special security forces like the Gestapo and SS to arrest and imprison citizens without trial.</li>
-              <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Schooling and Youth Control:</b> Controlling all educational materials and forcing boys to join the Hitler Youth to instill military values.</li>
-              <li style="margin-bottom: 0;"><b style="color: ${themeColor};">Censorship:</b> Placing all media (radio, press, cinema) under complete state supervision.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    `,
+  "id": "sst-his-c9-3",
+  "number": 3,
+  "title": "Nazism and the Rise of Hitler",
+  "isHtmlView": true,
+  "htmlOverview": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(171, 71, 188, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #AB47BC; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #AB47BC; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #E1BEE7; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #E1BEE7; font-weight: 700; }\n  .hl { color: #AB47BC; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #AB47BC; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #AB47BC; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(171, 71, 188, 0.10); border: 1.5px dashed #AB47BC; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #AB47BC; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(171, 71, 188, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(171, 71, 188, 0.18); border: 1px solid #AB47BC; color: #E1BEE7; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(171, 71, 188, 0.2); color: #E1BEE7; }\n  .q-card .q-text, .q-card .sub-q { color: #AB47BC !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ Chapter at a Glance</div><div class=\"sol-step\"><div class=\"rev\"><span class=\"hl\">Nazism</span> was not one or two isolated acts — it was a <b>system</b>, a structure of ideas about the world and politics. Under Hitler, Germany waged a genocidal war that killed <b>6 million Jews</b>, 200,000 Gypsies, 1 million Polish civilians, 70,000 Germans considered mentally and physically disabled, and countless political opponents. At the end of the war an <b>International Military Tribunal at Nuremberg</b> tried Nazi war criminals for Crimes against Peace, War Crimes and Crimes Against Humanity.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 366\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"366\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"20\" font-size=\"11.5\" fill=\"#AB47BC\" text-anchor=\"middle\" font-weight=\"700\">Nazi Germany: Important Dates</text><line x1=\"76\" y1=\"34\" x2=\"76\" y2=\"356\" stroke=\"rgba(171,71,188,0.55)\" stroke-width=\"2\"/><circle cx=\"76\" cy=\"39.5\" r=\"4\" fill=\"#AB47BC\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"43\" font-size=\"10\" fill=\"#AB47BC\" text-anchor=\"end\" font-weight=\"700\">1 Aug 1914</text><text x=\"88\" y=\"43.0\" font-size=\"9.5\" fill=\"#FFFFFF\">First World War begins</text><circle cx=\"76\" cy=\"69.7\" r=\"4\" fill=\"#AB47BC\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"73.2\" font-size=\"10\" fill=\"#AB47BC\" text-anchor=\"end\" font-weight=\"700\">9 Nov 1918</text><text x=\"88\" y=\"73.2\" font-size=\"9.5\" fill=\"#FFFFFF\">Germany capitulates; Weimar Republic</text><text x=\"88\" y=\"85.4\" font-size=\"9.5\" fill=\"#FFFFFF\">proclaimed</text><circle cx=\"76\" cy=\"112.1\" r=\"4\" fill=\"#AB47BC\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"115.6\" font-size=\"10\" fill=\"#AB47BC\" text-anchor=\"end\" font-weight=\"700\">28 Jun 1919</text><text x=\"88\" y=\"115.6\" font-size=\"9.5\" fill=\"#FFFFFF\">Treaty of Versailles</text><circle cx=\"76\" cy=\"142.29999999999998\" r=\"4\" fill=\"#AB47BC\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"145.79999999999998\" font-size=\"10\" fill=\"#AB47BC\" text-anchor=\"end\" font-weight=\"700\">30 Jan 1933</text><text x=\"88\" y=\"145.8\" font-size=\"9.5\" fill=\"#FFFFFF\">Hitler becomes Chancellor of Germany</text><circle cx=\"76\" cy=\"172.49999999999997\" r=\"4\" fill=\"#AB47BC\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"175.99999999999997\" font-size=\"10\" fill=\"#AB47BC\" text-anchor=\"end\" font-weight=\"700\">1 Sep 1939</text><text x=\"88\" y=\"176.0\" font-size=\"9.5\" fill=\"#FFFFFF\">Germany invades Poland; Second World</text><text x=\"88\" y=\"188.2\" font-size=\"9.5\" fill=\"#FFFFFF\">War begins</text><circle cx=\"76\" cy=\"214.89999999999998\" r=\"4\" fill=\"#AB47BC\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"218.39999999999998\" font-size=\"10\" fill=\"#AB47BC\" text-anchor=\"end\" font-weight=\"700\">22 Jun 1941</text><text x=\"88\" y=\"218.4\" font-size=\"9.5\" fill=\"#FFFFFF\">Germany invades the USSR</text><circle cx=\"76\" cy=\"245.09999999999997\" r=\"4\" fill=\"#AB47BC\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"248.59999999999997\" font-size=\"10\" fill=\"#AB47BC\" text-anchor=\"end\" font-weight=\"700\">23 Jun 1941</text><text x=\"88\" y=\"248.6\" font-size=\"9.5\" fill=\"#FFFFFF\">Mass murder of the Jews begins</text><circle cx=\"76\" cy=\"275.29999999999995\" r=\"4\" fill=\"#AB47BC\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"278.79999999999995\" font-size=\"10\" fill=\"#AB47BC\" text-anchor=\"end\" font-weight=\"700\">8 Dec 1941</text><text x=\"88\" y=\"278.8\" font-size=\"9.5\" fill=\"#FFFFFF\">The United States joins the war</text><circle cx=\"76\" cy=\"305.49999999999994\" r=\"4\" fill=\"#AB47BC\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"308.99999999999994\" font-size=\"10\" fill=\"#AB47BC\" text-anchor=\"end\" font-weight=\"700\">27 Jan 1945</text><text x=\"88\" y=\"309.0\" font-size=\"9.5\" fill=\"#FFFFFF\">Soviet troops liberate Auschwitz</text><circle cx=\"76\" cy=\"335.69999999999993\" r=\"4\" fill=\"#AB47BC\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"339.19999999999993\" font-size=\"10\" fill=\"#AB47BC\" text-anchor=\"end\" font-weight=\"700\">8 May 1945</text><text x=\"88\" y=\"339.2\" font-size=\"9.5\" fill=\"#FFFFFF\">Allied victory in Europe</text></svg></div><div class=\"diagram-caption\">Fig. 1: Important dates (from the textbook)</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 1. Birth of the Weimar Republic</div><div class=\"sol-step\"><div class=\"rev\">Germany fought the First World War (1914–1918) alongside the Austrian empire against the Allies (England, France and Russia). The Allies, strengthened by the US entry in 1917, defeated Germany in <b>November 1918</b>. A National Assembly met at <b>Weimar</b> and set up a democratic, federal constitution; deputies to the <b>Reichstag</b> were elected by equal and universal votes of all adults, including women.</div><div class=\"sec\">The Treaty of Versailles — a harsh and humiliating peace</div><div class=\"pt\">Germany lost its overseas colonies, a tenth of its population, <b>13 per cent</b> of its territories, <b>75 per cent</b> of its iron and <b>26 per cent</b> of its coal.</div><div class=\"pt\">Germany was demilitarised; the <b>War Guilt Clause</b> held it responsible for the war; it had to pay compensation of <b>£6 billion</b>.</div><div class=\"pt\">Allied armies occupied the resource-rich <b>Rhineland</b> for most of the 1920s.</div><div class=\"rev\">Supporters of the Republic — Socialists, Catholics and Democrats — were mocked as the <span class=\"hl\">'November criminals'</span>.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 2. Effects of the War, Radicalism and Economic Crises</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Effects of war:</span> Europe turned from creditors into debtors; soldiers were placed above civilians; aggressive war propaganda grew; democracy was a young and fragile idea.</div><div class=\"pt\"><span class=\"lbl\">Spartacist League:</span> a Bolshevik-style uprising crushed by the Republic with the help of the <b>Free Corps</b>; the Spartacists founded the Communist Party of Germany. Communists and Socialists became irreconcilable enemies.</div><div class=\"pt\"><span class=\"lbl\">1923 crisis:</span> Germany refused to pay reparations; the French occupied the <b>Ruhr</b>. Germany printed money recklessly — one US dollar rose from 24,000 marks (April) to 98,860,000 marks (December): <b>hyperinflation</b>. The US <b>Dawes Plan</b> eased reparation terms.</div><div class=\"pt\"><span class=\"lbl\">Great Depression:</span> the <b>Wall Street Exchange crashed in 1929</b> (13 million shares sold on 24 October). By 1932 German industrial production fell to 40 per cent of the 1929 level and unemployment touched <b>6 million</b>.</div><div class=\"pt\"><span class=\"lbl\">Fear of proletarianisation:</span> the middle classes feared being reduced to the working class.</div><div class=\"sec\">Defects of the Weimar Constitution</div><div class=\"pt\"><b>Proportional representation</b> — no party could get a majority; rule by coalitions.</div><div class=\"pt\"><b>Article 48</b> — the President could impose emergency, suspend civil rights and rule by decree.</div><div class=\"pt\">Twenty cabinets lasting an average of 239 days; people lost confidence in democracy.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 3. Hitler's Rise to Power</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Background:</span> born in <b>1889</b> in Austria; a corporal and messenger in the First World War; furious at the Versailles Treaty.</div><div class=\"pt\"><span class=\"lbl\">Party:</span> in 1919 joined the German Workers' Party, later renamed the <b>National Socialist German Workers' Party</b> — the Nazi Party. A 1923 attempt to seize Bavaria failed.</div><div class=\"pt\"><span class=\"lbl\">Mass movement:</span> the Great Depression made Nazism popular: <b>2.6 per cent</b> of votes in 1928 → largest party with <b>37 per cent</b> in 1932.</div><div class=\"pt\"><span class=\"lbl\">Appeal:</span> a powerful speaker; promised a strong nation, to undo Versailles, jobs and a secure future for the youth; massive rallies, Red banners with the <b>Swastika</b>, the Nazi salute; propaganda projected him as a <b>messiah</b>.</div><div class=\"sec\">The Destruction of Democracy</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 290\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"290\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#AB47BC\" text-anchor=\"middle\" font-weight=\"700\">From Chancellor to Dictator (1933)</text><rect x=\"30\" y=\"30\" width=\"260\" height=\"38.8\" rx=\"6\" fill=\"rgba(79,195,247,0.16)\" stroke=\"#4FC3F7\" stroke-width=\"1.2\"/><text x=\"160\" y=\"46.5\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">30 Jan 1933: President Hindenburg makes Hitler</text><text x=\"160\" y=\"58.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Chancellor</text><line x1=\"160\" y1=\"69.8\" x2=\"160\" y2=\"76.8\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 81.8 L163.5 75.8 L156.5 75.8 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"82.8\" width=\"260\" height=\"38.8\" rx=\"6\" fill=\"rgba(255,183,77,0.16)\" stroke=\"#FFB74D\" stroke-width=\"1.2\"/><text x=\"160\" y=\"99.3\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Feb 1933: mysterious fire in the Parliament</text><text x=\"160\" y=\"111.7\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">building</text><line x1=\"160\" y1=\"122.6\" x2=\"160\" y2=\"129.6\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 134.6 L163.5 128.6 L156.5 128.6 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"135.6\" width=\"260\" height=\"38.8\" rx=\"6\" fill=\"rgba(239,83,80,0.16)\" stroke=\"#EF5350\" stroke-width=\"1.2\"/><text x=\"160\" y=\"152.1\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">28 Feb: Fire Decree suspends freedom of</text><text x=\"160\" y=\"164.5\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">speech, press and assembly</text><line x1=\"160\" y1=\"175.39999999999998\" x2=\"160\" y2=\"182.39999999999998\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 187.39999999999998 L163.5 181.39999999999998 L156.5 181.39999999999998 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"188.39999999999998\" width=\"260\" height=\"26.4\" rx=\"6\" fill=\"rgba(244,143,177,0.16)\" stroke=\"#F48FB1\" stroke-width=\"1.2\"/><text x=\"160\" y=\"204.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Communists sent to concentration camps</text><line x1=\"160\" y1=\"215.79999999999998\" x2=\"160\" y2=\"222.79999999999998\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 227.79999999999998 L163.5 221.79999999999998 L156.5 221.79999999999998 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"228.79999999999998\" width=\"260\" height=\"51.2\" rx=\"6\" fill=\"rgba(148,163,184,0.13)\" stroke=\"#94A3B8\" stroke-width=\"1.2\"/><text x=\"160\" y=\"245.3\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">3 March: Enabling Act — Hitler rules by</text><text x=\"160\" y=\"257.7\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">decree; all other parties and trade unions</text><text x=\"160\" y=\"270.1\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">banned</text></svg></div><div class=\"diagram-caption\">Fig. 2: How democracy was destroyed</div></div><div class=\"pt\"><span class=\"lbl\">Police state:</span> besides the regular police and the SA (Storm Troopers), the <b>Gestapo</b> (secret state police), the <b>SS</b> (protection squads), criminal police and the Security Service (SD) could detain, deport or arrest people without legal procedure.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 4. Reconstruction and the Second World War</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Economy:</span> economist <b>Hjalmar Schacht</b> aimed at full production and full employment — German superhighways and the people's car, the <b>Volkswagen</b>.</div><div class=\"pt\"><span class=\"lbl\">Foreign policy:</span> left the League of Nations (1933), reoccupied the Rhineland (1936), integrated Austria (1938) — 'One people, One empire, One leader' — took the Sudetenland and then all of Czechoslovakia.</div><div class=\"pt\"><span class=\"lbl\">War:</span> invaded Poland (<b>September 1939</b>); Tripartite Pact with Italy and Japan (September 1940); attacked the Soviet Union (<b>June 1941</b>) — a historic blunder; crushing defeat at <b>Stalingrad</b>.</div><div class=\"pt\"><span class=\"lbl\">USA:</span> entered the war after Japan bombed <b>Pearl Harbor</b>; the war ended in May 1945 with Hitler's defeat and the atom bomb on Hiroshima.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 5. The Nazi Worldview</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Racial hierarchy:</span> no equality between people; blond, blue-eyed <b>Nordic German Aryans</b> at the top, <b>Jews</b> at the lowest rung, other coloured people in between. Hitler borrowed from <b>Charles Darwin</b> (natural selection) and <b>Herbert Spencer</b> (survival of the fittest) — though Darwin never advocated human intervention.</div><div class=\"pt\"><span class=\"lbl\">Lebensraum:</span> 'living space' — new territories in the east for settlement and resources; Poland became the laboratory.</div><div class=\"pt\"><span class=\"lbl\">'Undesirables':</span> Germans seen as unfit (killed under the <b>Euthanasia Programme</b>), Gypsies, blacks, Russians and Poles — and above all the Jews.</div><div class=\"sec\">Steps to Death for the Jews</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Stage</th><th>What happened</th></tr><tr><td>Exclusion (1933–1939)</td><td><b>Nuremberg Laws</b> (September 1935): only Germans of German blood were citizens; marriages between Jews and Germans forbidden; boycott of Jewish businesses; expulsion from government services; 'the night of broken glass' (November 1938)</td></tr><tr><td>Ghettoisation (1940–1944)</td><td>From September 1941 Jews wore a yellow <b>Star of David</b>; kept in ghettos like Lodz and Warsaw amid hunger and disease</td></tr><tr><td>Annihilation (1941 onwards)</td><td>Mass killing in gas chambers at camps such as <b>Auschwitz</b> — the 'Final Solution'</td></tr></table></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 6. Youth, Women and Propaganda</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Schools:</span> Jewish and 'politically unreliable' teachers dismissed; 'undesirable' children expelled and later gassed; textbooks rewritten; racial science taught; boxing to make children iron-hearted.</div><div class=\"pt\"><span class=\"lbl\">Youth groups:</span> <b>Jungvolk</b> at 10; <b>Hitler Youth</b> at 14; Labour Service at 18; then the armed forces. The Youth League (1922) was renamed Hitler Youth four years later.</div><div class=\"pt\"><span class=\"lbl\">Women:</span> taught to be good mothers of pure-blooded Aryan children. 'In my state the mother is the most important citizen' (1933). <b>Honour Crosses</b>: bronze for four children, silver for six, gold for eight or more. Aryan women who mixed with Jews, Poles and Russians were publicly humiliated.</div><div class=\"pt\"><span class=\"lbl\">Propaganda:</span> never used 'kill' or 'murder' — said 'special treatment', 'final solution', 'euthanasia', 'selection', 'disinfection', 'evacuation'; gas chambers were called 'disinfection-areas'. Films like <b>'The Eternal Jew'</b> stereotyped Jews as vermin and rats.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 7. Ordinary People and the Holocaust</div><div class=\"sol-step\"><div class=\"rev\">Many Germans saw the world through Nazi eyes; some resisted bravely; but most were <b>passive onlookers</b>, too scared to protest. Pastor <b>Niemoeller</b> described this silence — 'Then when they came for me, there was no one left who could stand up for me.'</div><div class=\"rev\">Charlotte Beradt's <i>Third Reich of Dreams</i> shows that Jews began to believe the Nazi stereotypes about themselves. Ghetto and camp inmates kept diaries and archives (the Warsaw ghetto milk cans), while the Nazis tried to destroy evidence. The memory of the <b>Holocaust</b> lives on in memoirs, museums and memorials.</div><div class=\"pt\"><span class=\"lbl\">Gandhi:</span> wrote to Hitler in July 1939 and December 1940 appealing, in the name of humanity, to prevent and stop the war.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 8. Key Terms</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Term</th><th>Meaning</th></tr><tr><td>Allies</td><td>UK and France, joined in 1941 by USSR and USA, against the Axis Powers (Germany, Italy, Japan)</td></tr><tr><td>Genocidal</td><td>Killing on a large scale, destroying large sections of people</td></tr><tr><td>Reparation</td><td>Make up for a wrong done</td></tr><tr><td>Proletarianisation</td><td>To become impoverished to the level of the working classes</td></tr><tr><td>Propaganda</td><td>Messages aimed at influencing people's opinion through posters, films, speeches</td></tr><tr><td>Concentration camp</td><td>A camp where people were detained without due process of law</td></tr><tr><td>Persecution</td><td>Systematic, organised punishment of a group</td></tr><tr><td>Jungvolk</td><td>Nazi youth groups for children below 14</td></tr><tr><td>Synagogue</td><td>Place of worship for people of Jewish faith</td></tr></table></div><div class=\"exam\"><span class=\"exam-t\">📌 Exam Focus</span><div>• Problems of the Weimar Republic; Treaty of Versailles</div><div>• Why Nazism became popular by 1930</div><div>• Destruction of democracy: Fire Decree, Enabling Act</div><div>• Nazi worldview, racial state, Nuremberg Laws</div><div>• Youth, women and propaganda in Nazi Germany</div></div></div>\n  </div>\n\n</div>",
+  "htmlExercises": {
+    "sh9-3-ex-q": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(171, 71, 188, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #AB47BC; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #AB47BC; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #E1BEE7; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #E1BEE7; font-weight: 700; }\n  .hl { color: #AB47BC; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #AB47BC; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #AB47BC; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(171, 71, 188, 0.10); border: 1.5px dashed #AB47BC; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #AB47BC; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(171, 71, 188, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(171, 71, 188, 0.18); border: 1px solid #AB47BC; color: #E1BEE7; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(171, 71, 188, 0.2); color: #E1BEE7; }\n  .q-card .q-text, .q-card .sub-q { color: #AB47BC !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Describe the problems faced by the Weimar Republic.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Versailles Treaty:</span> a harsh and humiliating peace — loss of colonies, 13% of territory, 75% of iron and 26% of coal; demilitarisation; War Guilt Clause; £6 billion compensation. The Republic was blamed for the defeat and disgrace (supporters mocked as 'November criminals').</div><div class=\"pt\"><span class=\"lbl\">Political radicalism:</span> the Spartacist uprising; Communists and Socialists became bitter enemies; nationalists wanted radical solutions.</div><div class=\"pt\"><span class=\"lbl\">Economic crisis of 1923:</span> the French occupied the Ruhr; reckless printing of money caused hyperinflation.</div><div class=\"pt\"><span class=\"lbl\">Great Depression (1929):</span> US loans withdrawn; industrial production fell to 40% of 1929; 6 million unemployed; the middle class feared proletarianisation.</div><div class=\"pt\"><span class=\"lbl\">Weak constitution:</span> proportional representation led to coalitions; Article 48 allowed rule by decree; twenty cabinets in a short life — people lost confidence in democracy.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Discuss why Nazism became popular in Germany by 1930.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">The Great Depression (after 1929): banks collapsed, businesses shut, workers lost jobs and the middle class faced destitution — Nazi propaganda stirred hopes of a better future.</div><div class=\"pt\">Hitler was a powerful speaker; he promised a strong nation, to undo the injustice of Versailles, to restore German dignity, jobs for the unemployed and a secure future for the youth.</div><div class=\"pt\">He promised to weed out foreign influences and resist foreign 'conspiracies'.</div><div class=\"pt\">Massive rallies, Red banners with the Swastika, the Nazi salute and ritualised applause created a spectacle of power and unity.</div><div class=\"pt\">Propaganda projected Hitler as a <b>messiah</b> to people whose pride had been shattered.</div><div class=\"pt\"><span class=\"lbl\">Result:</span> Nazi votes rose from 2.6 per cent (1928) to 37 per cent (1932), making it the largest party.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">What are the peculiar features of Nazi thinking?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Racial hierarchy:</span> no equality between people; Nordic German Aryans at the top, Jews at the bottom as an 'anti-race'.</div><div class=\"pt\"><span class=\"lbl\">Survival of the fittest:</span> ideas of Darwin and Spencer were misused — the strongest race would survive; the Aryan race had to stay pure and dominate the world.</div><div class=\"pt\"><span class=\"lbl\">Lebensraum:</span> acquiring new territories ('living space') in the east for settlers and resources.</div><div class=\"pt\"><span class=\"lbl\">Racial state:</span> elimination of all 'undesirables' — Jews, Gypsies, blacks, Poles, Russians and disabled Germans.</div><div class=\"pt\"><span class=\"lbl\">Anti-democracy:</span> hatred of democracy, socialism and communism; worship of war, violence and the leader.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">Explain why Nazi propaganda was effective in creating a hatred for Jews.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">It built on the traditional Christian hostility towards Jews, who had been stereotyped as killers of Christ and usurers.</div><div class=\"pt\">Visual images, films, radio, posters, slogans and leaflets were used; the film <b>'The Eternal Jew'</b> showed Jews with flowing beards and kaftans.</div><div class=\"pt\">Jews were called vermin, rats and pests; their movements were compared to those of rodents.</div><div class=\"pt\">Hatred was taught in schools — racial science, rewritten textbooks, even maths classes — and in the Hitler Youth.</div><div class=\"pt\">Deceptive language ('special treatment', 'evacuation', 'disinfection') hid the killings.</div><div class=\"pt\">It worked on people's emotions and turned their anger and frustration against those marked as 'undesirable'.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5.</div>\n    <div class=\"q-text\">Explain what role women had in Nazi society. Return to Chapter I on the French Revolution. Write a paragraph comparing and contrasting the role of women in the two periods.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">Women in Nazi society</div><div class=\"rev\">Women were told they were radically different from men and that the fight for equal rights was wrong. Their duty was to be good mothers, rear pure-blooded Aryan children, look after the home and teach Nazi values. Mothers of racially desirable children were rewarded with Honour Crosses and concessions; those who mixed with Jews, Poles or Russians were publicly humiliated and punished.</div><div class=\"sub-q\">Comparison with the French Revolution</div><div class=\"rev\">In both periods women were denied equal political rights. But in revolutionary France women were <b>active participants</b>: they formed about sixty political clubs, demanded the right to vote and hold office, and won rights such as compulsory schooling for girls, marriage as a free contract and divorce. In Nazi Germany women were confined to the home and motherhood, and any demand for equal rights was condemned. The French Revolution opened a long struggle for women's rights; Nazism tried to reverse it.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q6.</div>\n    <div class=\"q-text\">In what ways did the Nazi state seek to establish total control over its people?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Laws:</span> the Fire Decree (28 February 1933) suspended freedom of speech, press and assembly; the Enabling Act (3 March 1933) let Hitler rule by decree.</div><div class=\"pt\"><span class=\"lbl\">One party:</span> all other parties and trade unions were banned; the state controlled the economy, media, army and judiciary.</div><div class=\"pt\"><span class=\"lbl\">Police terror:</span> the Gestapo, SS, SA, criminal police and SD could detain, torture, deport or send people to concentration camps without legal procedure.</div><div class=\"pt\"><span class=\"lbl\">Youth:</span> schools, the Jungvolk and Hitler Youth trained children in Nazi ideology; 'we don't let go of anyone' (Robert Lay).</div><div class=\"pt\"><span class=\"lbl\">Women and family:</span> motherhood made a duty to the race, with rewards and punishments.</div><div class=\"pt\"><span class=\"lbl\">Propaganda:</span> media, films, posters and rallies shaped people's minds and spread hatred of 'undesirables'.</div></div></div>\n  </div>\n\n</div>",
+    "sh9-3-ex-src": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(171, 71, 188, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #AB47BC; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #AB47BC; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #E1BEE7; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #E1BEE7; font-weight: 700; }\n  .hl { color: #AB47BC; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #AB47BC; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #AB47BC; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(171, 71, 188, 0.10); border: 1.5px dashed #AB47BC; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #AB47BC; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(171, 71, 188, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(171, 71, 188, 0.18); border: 1px solid #AB47BC; color: #E1BEE7; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(171, 71, 188, 0.2); color: #E1BEE7; }\n  .q-card .q-text, .q-card .sub-q { color: #AB47BC !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\"><div class=\"q-title\">✦ Sources A and B — Hitler's imperial ambition</div></div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Read Sources A and B. What do they tell you about Hitler's imperial ambition? What do you think Mahatma Gandhi would have said to Hitler about these ideas?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Ambition:</span> Hitler believed the earth belongs to those who have the courage to conquer it and the strength to keep it; a vigorous nation must enlarge its territory to suit its population. He felt Germany was too small to be a world power and must expand — the idea of <b>Lebensraum</b>.</div><div class=\"pt\"><span class=\"lbl\">Gandhi's view:</span> as in his letters to Hitler (1939 and 1940), Gandhi would have appealed to him in the name of humanity to give up war, which could reduce humanity to a savage state; he would have urged non-violence, saying a legacy of cruel deeds can never make a people proud.</div></div></div>\n  </div>\n  <div class=\"q-card\"><div class=\"q-title\">✦ Citizenship and the Nuremberg Laws</div></div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">What does citizenship mean to you? Look at Chapters 1 and 3 and write 200 words on how the French Revolution and Nazism defined citizenship. What did the Nuremberg Laws mean to the 'undesirables' in Nazi Germany? What other legal measures were taken against them to make them feel unwanted?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">Citizenship (model answer)</div><div class=\"rev\">To me, citizenship means equal membership of a nation, with rights protected by law and duties towards society. The French Revolution declared that men are born free and equal in rights; citizens could take part in making laws and were protected against arbitrary arrest. Yet in 1791 only active citizens could vote, and women and poor men were left out. Later, all men over 21 got the vote, and the ideals of liberty and equality spread across the world. Nazism defined citizenship in exactly the opposite way: by <b>blood and race</b>. Only persons of German or related blood could be citizens; Jews, Gypsies and others were declared 'undesirable' and stripped of rights, property and finally life. The French Revolution widened the idea of the citizen; Nazism narrowed it and turned it into a tool of exclusion and murder.</div><div class=\"sub-q\">Meaning of the Nuremberg Laws (1935)</div><div class=\"pt\">Only persons of German or related blood would be German citizens.</div><div class=\"pt\">Marriages and extramarital relations between Jews and Germans were forbidden.</div><div class=\"pt\">Jews could not fly the national flag. For the 'undesirables' it meant: 'You have no right to live among us as citizens.'</div><div class=\"sub-q\">Other measures</div><div class=\"pt\">Boycott of Jewish businesses; expulsion from government services; forced selling and confiscation of property.</div><div class=\"pt\">Properties looted, synagogues burnt in 'the night of broken glass' (November 1938).</div><div class=\"pt\">From September 1941, the yellow Star of David on clothes, passports and houses; confinement in ghettos.</div></div></div>\n  </div>\n  <div class=\"q-card\"><div class=\"q-title\">✦ Sources E and F — Hitler on women</div></div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">How would you have reacted to Hitler's ideas if you were: a Jewish woman; a non-Jewish German woman?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">A Jewish woman:</span> I would feel insulted and afraid. Hitler speaks of women only as mothers of the 'racial community' — a community from which I am excluded. My children are called 'undesirable'; my family faces the ghetto and death.</div><div class=\"pt\"><span class=\"lbl\">A non-Jewish German woman:</span> I might feel honoured to be called the 'most important citizen', but I would also feel trapped. I am told to stay out of the 'world of the man', to bear children like soldiers fight battles, and I would be punished if I stepped outside the code laid down for me.</div></div></div>\n  </div>\n  <div class=\"q-card\"><div class=\"q-title\">✦ Erna Kranz's view</div></div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">Why does Erna Kranz say, 'I could only say for myself'? How do you view her opinion?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">Erna Kranz, a German teenager in the 1930s, said that the period gave 'a glimmer of hope' — salaries rose and Germany seemed to regain its purpose. She says 'I could only say for myself' because she speaks only from her <b>own experience</b> as a member of the favoured German majority; she knows her view does not reflect what the Jews and other victims suffered.</div><div class=\"rev\">Her opinion is honest but limited. It shows how ordinary Germans, enjoying economic gains, looked away from the crimes committed against others. As Pastor Niemoeller warned, such silence allowed the persecution to continue.</div></div></div>\n  </div>\n\n</div>",
+    "sh9-3-ex-pic": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(171, 71, 188, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #AB47BC; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #AB47BC; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #E1BEE7; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #E1BEE7; font-weight: 700; }\n  .hl { color: #AB47BC; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #AB47BC; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #AB47BC; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(171, 71, 188, 0.10); border: 1.5px dashed #AB47BC; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #AB47BC; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(171, 71, 188, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(171, 71, 188, 0.18); border: 1px solid #AB47BC; color: #E1BEE7; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(171, 71, 188, 0.2); color: #E1BEE7; }\n  .q-card .q-text, .q-card .sub-q { color: #AB47BC !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Figs. 23 and 24 — If you were a student sitting in one of these classes, how would you have felt towards Jews? Have you ever thought of the stereotypes of other communities that people around you believe in? How have they acquired them?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">Fig. 23 shows a lesson mocking the 'Jewish nose'; Fig. 24 shows a Jewish teacher and pupils being expelled from school amid jeers. A child taught like this every day might begin to fear or hate Jews without knowing any of them. As a thinking student, I would feel uneasy, because my Jewish classmates were ordinary children like me.</div><div class=\"rev\">Stereotypes about other communities are often picked up from family talk, jokes, films, social media and lack of contact with people of that community. They are removed by knowing people personally and questioning what we hear.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Figs. 23, 24 and 27 — Imagine yourself to be a Jew or a Pole in Nazi Germany. It is September 1941, and the law forcing Jews to wear the Star of David has just been declared. Write an account of one day in your life.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\"><i>Model account (a Jewish girl).</i> This morning Mother sewed a yellow Star of David on my coat. On the way to the market people stared and some laughed. The park bench now says 'For Aryans only', and the shop where we bought bread for years has a sign that Jews are not welcome. I am no longer allowed in school since my teacher was dismissed. Father has lost his job, and we have heard that families are being sent to the ghetto, where there is hunger and disease. At night I hear trains passing and wonder where they go. I am afraid, but I am writing this so that one day the world will know.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Fig. 28 — What do you think this poster is trying to depict?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">The poster shows a Jew sitting on a big sack of money, with the caption that money is the God of Jews and that he commits the greatest crimes to become 'king of money'. It depicts Jews as <b>greedy, criminal moneylenders</b> — a stereotype meant to make Germans hate and fear them.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">Figs. 29 and 30 — What do they tell us about Nazi propaganda? How are the Nazis trying to mobilise different sections of the population?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Fig. 29 (leaflet, 1932):</span> tells the German farmer that he is caught between 'Big Capitalism' and Bolshevism, both said to be born of Jewish thought — and that only National Socialism can rescue him.</div><div class=\"pt\"><span class=\"lbl\">Fig. 30 (poster, 1920s):</span> asks workers to vote for Hitler, 'the frontline soldier'.</div><div class=\"pt\"><span class=\"lbl\">Propaganda:</span> it targeted each section with its own fears — farmers, workers and others — offered Hitler as the saviour, and blamed the Jews for every danger. The Nazis tried to win everyone by suggesting that they alone could solve all problems.</div></div></div>\n  </div>\n\n</div>",
+    "sh9-3-ex-proj": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(171, 71, 188, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #AB47BC; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #AB47BC; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #E1BEE7; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #E1BEE7; font-weight: 700; }\n  .hl { color: #AB47BC; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #AB47BC; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #AB47BC; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(171, 71, 188, 0.10); border: 1.5px dashed #AB47BC; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #AB47BC; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(171, 71, 188, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(171, 71, 188, 0.18); border: 1px solid #AB47BC; color: #E1BEE7; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(171, 71, 188, 0.2); color: #E1BEE7; }\n  .q-card .q-text, .q-card .sub-q { color: #AB47BC !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Write a one page history of Germany: (a) as a schoolchild in Nazi Germany; (b) as a Jewish survivor of a concentration camp; (c) as a political opponent of the Nazi regime.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">(a) A schoolchild in Nazi Germany</div><div class=\"rev\">After the war, Germany was humiliated at Versailles and money lost its value. Then Hitler became Chancellor, and our teachers told us he had saved Germany: there were jobs, superhighways and even plans for a people's car. At ten I joined the Jungvolk; we marched, sang and swore loyalty to the Führer. Our new textbooks taught us that Aryans were the finest race. Only later did I understand what had been hidden from us.</div><div class=\"sub-q\">(b) A Jewish survivor</div><div class=\"rev\">My history of Germany is a history of losing everything. In 1935 the Nuremberg Laws took away our citizenship. In 1938 our synagogue was burnt. In 1941 we wore the yellow star and were sent to the ghetto, then by freight car to the camp. My family was gassed. I survived to bear witness, so that the world never forgets the Holocaust.</div><div class=\"sub-q\">(c) A political opponent</div><div class=\"rev\">The Weimar Republic was weak, but it was a democracy. After the Reichstag fire, the Fire Decree took away freedom of speech and press, and the Enabling Act made Hitler a dictator. My Communist and Socialist friends were sent to concentration camps; the Gestapo watched everyone. Most people stayed silent. We resisted secretly, knowing it could cost our lives.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Imagine that you are Helmuth. You have had many Jewish friends in school and do not believe that Jews are bad. Write a paragraph on what you would say to your father.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">Father, you have always taught me to respect people and to heal the sick. Then how can it be right to hate the Jews? My Jewish friends at school share their lunch with me, help me with sums and play with me. They are not rats or pests — they are children like me. A doctor's duty is to save lives, not to judge who deserves to live. Please, Father, do not believe everything the posters say. Let us stand up for what is right, even if it is hard.</div></div></div>\n  </div>\n\n</div>"
   },
-  introduction:
-    "The rise of Adolf Hitler and Nazism transformed Germany into a totalitarian police state.",
-  definitions: [],
-  keyPoints: [],
-  formulas: [],
-  crux: [],
-  mcqs: [
+  "introduction": "The rise of Adolf Hitler and Nazism transformed Germany into a totalitarian police state.",
+  "definitions": [],
+  "keyPoints": [],
+  "formulas": [],
+  "crux": [],
+  "mcqs": [
     {
-      id: "sst-his-c9-3-mcq-1",
-      question: "Who was the founder of the Nazi Party?",
-      options: [
-        "Adolf Hitler",
-        "Joseph Goebbels",
-        "Benito Mussolini",
-        "Paul von Hindenburg",
+      "id": "sst-his-c9-3-mcq-1",
+      "question": "<div style='text-align: justify;'>Where was the International Military Tribunal for Nazi war criminals set up?</div>",
+      "options": [
+        "A):   Berlin",
+        "B):   Nuremberg",
+        "C):   Versailles",
+        "D):   Weimar"
       ],
-      correctAnswer: "a",
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>It tried Crimes against Peace, War Crimes and Crimes Against Humanity.</div>"
     },
     {
-      id: "sst-his-c9-3-mcq-2",
-      question:
-        "The Weimar Republic was established in Germany after which war?",
-      options: [
-        "World War I",
-        "World War II",
-        "Franco-Prussian War",
-        "Thirty Years War",
+      "id": "sst-his-c9-3-mcq-2",
+      "question": "<div style='text-align: justify;'>How many Jews were killed by the Nazis?</div>",
+      "options": [
+        "A):   1 million",
+        "B):   70,000",
+        "C):   2 million",
+        "D):   6 million"
       ],
-      correctAnswer: "a",
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Along with Gypsies, Poles, disabled Germans and political opponents.</div>"
     },
     {
-      id: "sst-his-c9-3-mcq-3",
-      question: "Which treaty signed in 1919 brought humiliation to Germany?",
-      options: [
-        "Treaty of Versailles",
-        "Treaty of Paris",
-        "Treaty of London",
-        "Treaty of Berlin",
+      "id": "sst-his-c9-3-mcq-3",
+      "question": "<div style='text-align: justify;'>Where did the National Assembly meet to frame a democratic constitution in 1919?</div>",
+      "options": [
+        "A):   Weimar",
+        "B):   Berlin",
+        "C):   Munich",
+        "D):   Nuremberg"
       ],
-      correctAnswer: "a",
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Hence the Weimar Republic.</div>"
     },
     {
-      id: "sst-his-c9-3-mcq-4",
-      question: "The German Parliament is known as the:",
-      options: ["Duma", "Reichstag", "Congress", "Diet"],
-      correctAnswer: "b",
-    },
-    {
-      id: "sst-his-c9-3-mcq-5",
-      question: "Which act passed in 1933 gave Hitler dictatorial powers?",
-      options: ["Enabling Act", "Rowlatt Act", "Munich Pact", "Nuremberg Laws"],
-      correctAnswer: "a",
-    },
-    {
-      id: "sst-his-c9-3-mcq-6",
-      question: "Who was the propaganda minister of Hitler?",
-      options: [
-        "Joseph Goebbels",
-        "Heinrich Himmler",
-        "Rudolf Hess",
-        "Hermann Göring",
+      "id": "sst-his-c9-3-mcq-4",
+      "question": "<div style='text-align: justify;'>Under the Treaty of Versailles, Germany lost what percentage of its iron?</div>",
+      "options": [
+        "A):   13 per cent",
+        "B):   26 per cent",
+        "C):   75 per cent",
+        "D):   10 per cent"
       ],
-      correctAnswer: "a",
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>And 26 per cent of its coal.</div>"
     },
     {
-      id: "sst-his-c9-3-mcq-7",
-      question: "What was the name of the German secret state police?",
-      options: ["Gestapo", "SS", "SA", "SD"],
-      correctAnswer: "a",
-    },
-    {
-      id: "sst-his-c9-3-mcq-8",
-      question:
-        "The Nazi youth organization for boys aged 14 and above was called:",
-      options: ["Jungvolk", "Hitler Youth", "Consulate", "Bolsheviks"],
-      correctAnswer: "b",
-    },
-    {
-      id: "sst-his-c9-3-mcq-9",
-      question:
-        "What was the book written by Adolf Hitler during his imprisonment?",
-      options: [
-        "Mein Kampf",
-        "The Social Contract",
-        "Das Kapital",
-        "The Communist Manifesto",
+      "id": "sst-his-c9-3-mcq-5",
+      "question": "<div style='text-align: justify;'>Supporters of the Weimar Republic were mockingly called —</div>",
+      "options": [
+        "A):   Spartacists",
+        "B):   November criminals",
+        "C):   Free Corps",
+        "D):   Storm Troopers"
       ],
-      correctAnswer: "a",
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Socialists, Catholics and Democrats.</div>"
     },
     {
-      id: "sst-his-c9-3-mcq-10",
-      question:
-        "In which battle was Germany finally defeated in 1945, ending WWII in Europe?",
-      options: [
-        "Battle of Waterloo",
-        "Battle of Berlin",
-        "Battle of Stalingrad",
-        "Battle of Midway",
+      "id": "sst-his-c9-3-mcq-6",
+      "question": "<div style='text-align: justify;'>In 1923 the French occupied which German industrial area?</div>",
+      "options": [
+        "A):   Rhineland",
+        "B):   Bavaria",
+        "C):   Sudetenland",
+        "D):   Ruhr"
       ],
-      correctAnswer: "b",
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>To claim their coal.</div>"
     },
+    {
+      "id": "sst-his-c9-3-mcq-7",
+      "question": "<div style='text-align: justify;'>Which American plan eased Germany's reparation burden?</div>",
+      "options": [
+        "A):   Dawes Plan",
+        "B):   Marshall Plan",
+        "C):   Versailles Plan",
+        "D):   Enabling Plan"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>It reworked the terms of reparation.</div>"
+    },
+    {
+      "id": "sst-his-c9-3-mcq-8",
+      "question": "<div style='text-align: justify;'>The Great Depression began with the crash of the Wall Street Exchange in —</div>",
+      "options": [
+        "A):   1923",
+        "B):   1933",
+        "C):   1929",
+        "D):   1919"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>On 24 October, 13 million shares were sold.</div>"
+    },
+    {
+      "id": "sst-his-c9-3-mcq-9",
+      "question": "<div style='text-align: justify;'>Which article of the Weimar Constitution allowed the President to rule by decree?</div>",
+      "options": [
+        "A):   Article 32",
+        "B):   Article 17",
+        "C):   Article 6",
+        "D):   Article 48"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>It permitted emergency and suspension of civil rights.</div>"
+    },
+    {
+      "id": "sst-his-c9-3-mcq-10",
+      "question": "<div style='text-align: justify;'>In 1932 the Nazi Party got what share of votes?</div>",
+      "options": [
+        "A):   2.6 per cent",
+        "B):   37 per cent",
+        "C):   26 per cent",
+        "D):   50 per cent"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>It became the largest party.</div>"
+    },
+    {
+      "id": "sst-his-c9-3-mcq-11",
+      "question": "<div style='text-align: justify;'>Hitler became Chancellor of Germany on —</div>",
+      "options": [
+        "A):   30 January 1933",
+        "B):   28 February 1933",
+        "C):   3 March 1933",
+        "D):   1 September 1939"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Offered by President Hindenburg.</div>"
+    },
+    {
+      "id": "sst-his-c9-3-mcq-12",
+      "question": "<div style='text-align: justify;'>Which Act of 3 March 1933 established dictatorship in Germany?</div>",
+      "options": [
+        "A):   Fire Decree",
+        "B):   Nuremberg Laws",
+        "C):   Enabling Act",
+        "D):   Dawes Act"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Hitler could sideline Parliament and rule by decree.</div>"
+    },
+    {
+      "id": "sst-his-c9-3-mcq-13",
+      "question": "<div style='text-align: justify;'>The secret state police in Nazi Germany was called the —</div>",
+      "options": [
+        "A):   SA",
+        "B):   SS",
+        "C):   SD",
+        "D):   Gestapo"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>It could detain people without legal procedure.</div>"
+    },
+    {
+      "id": "sst-his-c9-3-mcq-14",
+      "question": "<div style='text-align: justify;'>Which economist was given charge of economic recovery under Hitler?</div>",
+      "options": [
+        "A):   Goebbels",
+        "B):   Hjalmar Schacht",
+        "C):   Herbert Spencer",
+        "D):   Robert Lay"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>He aimed at full production and full employment.</div>"
+    },
+    {
+      "id": "sst-his-c9-3-mcq-15",
+      "question": "<div style='text-align: justify;'>Hitler's idea of 'living space' was called —</div>",
+      "options": [
+        "A):   Lebensraum",
+        "B):   Volkswagen",
+        "C):   Jungvolk",
+        "D):   Reichstag"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>New territories in the east for settlement.</div>"
+    },
+    {
+      "id": "sst-his-c9-3-mcq-16",
+      "question": "<div style='text-align: justify;'>The Nuremberg Laws of citizenship were passed in —</div>",
+      "options": [
+        "A):   November 1938",
+        "B):   September 1941",
+        "C):   September 1935",
+        "D):   January 1933"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Only persons of German blood could be citizens.</div>"
+    },
+    {
+      "id": "sst-his-c9-3-mcq-17",
+      "question": "<div style='text-align: justify;'>At what age did German boys have to join the Hitler Youth?</div>",
+      "options": [
+        "A):   10",
+        "B):   18",
+        "C):   6",
+        "D):   14"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Ten-year-olds entered the Jungvolk.</div>"
+    },
+    {
+      "id": "sst-his-c9-3-mcq-18",
+      "question": "<div style='text-align: justify;'>A gold Honour Cross was given to a mother of —</div>",
+      "options": [
+        "A):   four children",
+        "B):   eight or more children",
+        "C):   six children",
+        "D):   two children"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Bronze for four, silver for six.</div>"
+    },
+    {
+      "id": "sst-his-c9-3-mcq-19",
+      "question": "<div style='text-align: justify;'>Assertion (A): Nazism became a mass movement during the Great Depression. Reason (R): Banks collapsed, workers lost jobs and Nazi propaganda promised a better future.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>The crisis made people turn to Hitler's promises.</div>"
+    },
+    {
+      "id": "sst-his-c9-3-mcq-20",
+      "question": "<div style='text-align: justify;'>Assertion (A): In their official communications the Nazis openly used the words 'kill' and 'murder'. Reason (R): Nazi propaganda used deceptive terms like 'special treatment' and 'evacuation'.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>They never used those words; R is true.</div>"
+    }
   ],
-  summary: [],
-  exercises: [
+  "summary": [],
+  "exercises": [
     {
-      id: "ex-sst-qa",
-      name: "Q & A",
-      questions: [],
+      "id": "sh9-3-ex-q",
+      "name": "Questions",
+      "questions": []
     },
+    {
+      "id": "sh9-3-ex-src",
+      "name": "Source Qs",
+      "questions": []
+    },
+    {
+      "id": "sh9-3-ex-pic",
+      "name": "Picture Qs",
+      "questions": []
+    },
+    {
+      "id": "sh9-3-ex-proj",
+      "name": "Projects",
+      "questions": []
+    }
   ],
-  examples: [],
+  "examples": []
 };
