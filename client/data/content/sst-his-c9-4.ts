@@ -1,238 +1,286 @@
 import { ChapterContent } from "../types";
 
-const themeColor = "#FDC830";
-
 export const sstHisC94: ChapterContent = {
-  id: "sst-his-c9-4",
-  number: 4,
-  title: "Forest Society and Colonialism",
-  isHtmlView: true,
-  htmlOverview: `
-    <div style="padding: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: transparent;">
-      <!-- Key Concepts Introduction -->
-      <div style="background-color: #1E1E2E; border: 1px solid rgba(255, 138, 101, 0.2); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 20px; font-weight: 700; margin-top: 0; margin-bottom: 12px; display: flex; align-items: center;">
-          <span style="margin-right: 8px; font-size: 22px;">🌲</span> Introduction
-        </h3>
-        <p style="color: #E0E0E0; font-size: 15px; line-height: 1.6; text-align: justify; margin: 0; font-weight: 300;">
-          The expansion of empires and industries in the 19th and 20th centuries led to massive global deforestation. This chapter explores how colonial forest laws in India (specifically Bastar and Jammu & Kashmir) and Indonesia (Java) disrupted forest-dwelling societies, banned traditional livelihoods, and triggered historic tribal rebellions.
-        </p>
-      </div>
-
-      <!-- Key Milestones (Important Points) -->
-      <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 600; margin-top: 0; margin-bottom: 14px; display: flex; align-items: center;">
-          <span style="margin-right: 8px; font-size: 18px;">📌</span> Key Points
-        </h3>
-        <ul style="color: #B3B3C6; font-size: 14.5px; line-height: 1.7; margin: 0; padding-left: 20px; text-align: justify;">
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">Scientific Forestry:</b> Introduced by Dietrich Brandis, natural forests were replaced by single-species plantations in straight rows. The <b>Forest Act of 1878</b> split forests into Reserved, Protected, and Village forests.</li>
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">Displacement & Banning:</b> Shifting cultivation (podu/milpa), cattle grazing, and wood collection were banned, forcing communities into deep economic distress.</li>
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">Bastar Rebellion (1910):</b> Led by Gunda Dhur, locals protested against British reservation of two-thirds of Bastar's forests. The rebellion was crushed but forced the British to suspend reservations temporarily.</li>
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">Forestry in Java:</b> The Dutch controlled Java's forests using the <i>Blandongdiensten</i> system, forcing villagers to cut wood for free. Surontiko Samin led a peaceful land-lay protest around 1890.</li>
-          <li style="margin-bottom: 0;"><b style="color: ${themeColor};">War Impact:</b> During WWI and WWII, massive numbers of trees were cut down rapidly to meet military demands, while the Dutch used a "scorched earth" policy in Java to burn sawmills.</li>
-        </ul>
-      </div>
-      
-      <!-- Key Terms Glossy Box -->
-      <div style="background: rgba(255, 138, 101, 0.05); border: 1.5px solid rgba(255, 138, 101, 0.25); border-radius: 16px; padding: 20px; box-shadow: 0 4px 30px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 600; margin-top: 0; margin-bottom: 12px;">🔑 Key Terms to Remember</h3>
-        <div style="color: #E0E0E0; font-size: 14px; line-height: 1.6; text-align: justify;">
-          <p style="margin-top: 0; margin-bottom: 8px;"><b style="color: ${themeColor};">Scientific Forestry:</b> System of clearing diverse natural forests to plant single-species trees in neat grids.</p>
-          <p style="margin-bottom: 8px;"><b style="color: ${themeColor};">Blandongdiensten:</b> Dutch system in Java exempting villagers from land rents in exchange for free timber labor.</p>
-          <p style="margin-bottom: 8px;"><b style="color: ${themeColor};">Scorched Earth:</b> Military policy of destroying sawmills and burning forests to prevent enemies from using them.</p>
-          <p style="margin-bottom: 0;"><b style="color: ${themeColor};">Shifting Cultivation:</b> Farming where plots are cleared, burnt, cultivated, and left fallow for years to regenerate.</p>
-        </div>
-      </div>
-    </div>
-  `,
-  htmlExercises: {
-    "ex-sst-qa": `
-      <div style="padding: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: transparent;">
-        <!-- Q1 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q1. Discuss how the changes in forest management in the colonial period affected the following groups of people: Shifting cultivators, Nomadic and pastoralist communities, Firms trading in timber/forest produce, Plantation owners, Kings/British officials engaged in shikar (hunting).</p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <b style="color: ${themeColor}; font-weight: 600;">Answer:</b>
-            <ul style="margin: 6px 0 0 0; padding-left: 20px;">
-              <li style="margin-bottom: 6px;"><b>Shifting Cultivators:</b> Banned from shifting cultivation, displacing them from ancestral lands.</li>
-              <li style="margin-bottom: 6px;"><b>Nomadic & Pastoralists:</b> Prevented from grazing cattle and collecting forest products, destroying their livelihoods.</li>
-              <li style="margin-bottom: 6px;"><b>Trading Firms:</b> Granted exclusive monopolies to trade timber, earning huge profits.</li>
-              <li style="margin-bottom: 6px;"><b>Plantation Owners:</b> Given large forest tracts cheap to grow cash crops (tea, coffee, rubber).</li>
-              <li style="margin-bottom: 0;"><b>Hunters:</b> Local hunting banned, but British officials hunted on a massive scale as a sport.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q2 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q2. What are the similarities between colonial management of the forests in Bastar and in Java?</p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> Similarities in forest management:
-            <ul style="margin: 6px 0 0 0; padding-left: 20px;">
-              <li style="margin-bottom: 6px;"><b>State Control:</b> Both British and Dutch took control, restricting villagers' entry and grazing rights.</li>
-              <li style="margin-bottom: 6px;"><b>Cultivation Ban:</b> Both outlawed shifting cultivation.</li>
-              <li style="margin-bottom: 6px;"><b>Forced Labor:</b> Both forced locals to cut and transport timber (free labor/rent exemption systems).</li>
-              <li style="margin-bottom: 0;"><b>Rebellions:</b> Strict laws sparked major local uprisings (led by Gunda Dhur in Bastar, Samin in Java).</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q3 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q3. Discuss the role of the following factors in the decline of forest cover in the Indian subcontinent between 1880 and 1920: Railways, Shipbuilding, Agricultural expansion, Commercial farming, Tea/Coffee plantations, Adivasis and other peasant users.</p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> Role of factors in deforestation:
-            <ul style="margin: 6px 0 0 0; padding-left: 20px;">
-              <li style="margin-bottom: 6px;"><b>Railways:</b> High demand for timber for sleepers and fuel.</li>
-              <li style="margin-bottom: 6px;"><b>Shipbuilding:</b> Oaks and teaks cut for British Navy warships.</li>
-              <li style="margin-bottom: 6px;"><b>Agriculture:</b> Forests cleared for crop cultivation and revenue.</li>
-              <li style="margin-bottom: 6px;"><b>Commercial Farming:</b> Trees cleared to grow industrial raw materials.</li>
-              <li style="margin-bottom: 6px;"><b>Plantations:</b> Cleared for European tea and coffee estates.</li>
-              <li style="margin-bottom: 0;"><b>Adivasis:</b> Falsely blamed and restricted despite sustainable usage.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q4 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q4. Why are forests affected by wars?</p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <b style="color: ${themeColor}; font-weight: 600;">Answer:</b>
-            <ul style="margin: 6px 0 0 0; padding-left: 20px;">
-              <li style="margin-bottom: 6px;"><b>Scorched Earth:</b> Armies burn forests and sawmills to deny timber to the enemy.</li>
-              <li style="margin-bottom: 6px;"><b>War Demand:</b> Governments cut trees rapidly to meet wartime supply needs.</li>
-              <li style="margin-bottom: 0;"><b>Weak Control:</b> Locals clear forest land for farming during administrative breakdown.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q5 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q5. Write short note on: Development of commercial forestry in J&K and its impact.</p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <b style="color: ${themeColor}; font-weight: 600;">Answer:</b>
-            <ul style="margin: 6px 0 0 0; padding-left: 20px;">
-              <li style="margin-bottom: 6px;"><b>Development:</b> Dogra rulers started logging conifers (Deodar/Pine) in the late 19th century, floating logs down rivers for sale.</li>
-              <li style="margin-bottom: 0;"><b>Impact:</b> Increased state revenue but restricted traditional grazing of Gujjars and Bakarwals, causing disputes.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q6 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q6. Highlight the new developments that were introduced in the forestry of Jammu and Kashmir during the last decades of the 20th century.</p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <b style="color: ${themeColor}; font-weight: 600;">Answer:</b>
-            <ul style="margin: 6px 0 0 0; padding-left: 20px;">
-              <li style="margin-bottom: 6px;"><b>Joint Forest Management:</b> Partnering with local villagers to protect and conserve forests.</li>
-              <li style="margin-bottom: 6px;"><b>Social Forestry:</b> Planting trees on barren lands for local firewood/fodder needs.</li>
-              <li style="margin-bottom: 0;"><b>Felling Ban:</b> Restricting logging of green trees in high-altitude zones to prevent soil erosion.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    `,
+  "id": "sst-his-c9-4",
+  "number": 4,
+  "title": "Forest Society and Colonialism",
+  "isHtmlView": true,
+  "htmlOverview": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(253, 200, 48, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FDC830; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FDC830; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFF3C4; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFF3C4; font-weight: 700; }\n  .hl { color: #FDC830; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FDC830; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FDC830; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(253, 200, 48, 0.10); border: 1.5px dashed #FDC830; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FDC830; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(253, 200, 48, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(253, 200, 48, 0.18); border: 1px solid #FDC830; color: #FFF3C4; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(253, 200, 48, 0.2); color: #FFF3C4; }\n  .q-card .q-text, .q-card .sub-q { color: #FDC830 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ Chapter at a Glance</div><div class=\"sol-step\"><div class=\"rev\">Forests give us paper, wood, dyes, spices, gum, honey, coffee, tea, rubber, medicines and much more. Between 1700 and 1995, <b>13.9 million sq km</b> of forest (9.3 per cent of the world's area) was cleared. The disappearance of forests is called <span class=\"hl\">deforestation</span>. Under colonial rule it became more <b>systematic and extensive</b>. This chapter traces forest history in <b>India, Java (Indonesia)</b> and <b>Jammu and Kashmir</b>.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 409\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"409\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"20\" font-size=\"11.5\" fill=\"#FDC830\" text-anchor=\"middle\" font-weight=\"700\">Forests and Colonialism: Key Dates</text><line x1=\"76\" y1=\"34\" x2=\"76\" y2=\"399\" stroke=\"rgba(253,200,48,0.55)\" stroke-width=\"2\"/><circle cx=\"76\" cy=\"39.5\" r=\"4\" fill=\"#FDC830\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"43\" font-size=\"10\" fill=\"#FDC830\" text-anchor=\"end\" font-weight=\"700\">1850s</text><text x=\"88\" y=\"43.0\" font-size=\"9.5\" fill=\"#FFFFFF\">Railways spread; Madras Presidency</text><text x=\"88\" y=\"55.2\" font-size=\"9.5\" fill=\"#FFFFFF\">alone cuts 35,000 trees a year for</text><text x=\"88\" y=\"67.4\" font-size=\"9.5\" fill=\"#FFFFFF\">sleepers</text><circle cx=\"76\" cy=\"94.1\" r=\"4\" fill=\"#FDC830\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"97.6\" font-size=\"10\" fill=\"#FDC830\" text-anchor=\"end\" font-weight=\"700\">1864</text><text x=\"88\" y=\"97.6\" font-size=\"9.5\" fill=\"#FFFFFF\">Indian Forest Service set up by</text><text x=\"88\" y=\"109.8\" font-size=\"9.5\" fill=\"#FFFFFF\">Dietrich Brandis</text><circle cx=\"76\" cy=\"136.5\" r=\"4\" fill=\"#FDC830\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"140\" font-size=\"10\" fill=\"#FDC830\" text-anchor=\"end\" font-weight=\"700\">1865</text><text x=\"88\" y=\"140.0\" font-size=\"9.5\" fill=\"#FFFFFF\">Indian Forest Act (amended 1878 and</text><text x=\"88\" y=\"152.2\" font-size=\"9.5\" fill=\"#FFFFFF\">1927)</text><circle cx=\"76\" cy=\"178.9\" r=\"4\" fill=\"#FDC830\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"182.4\" font-size=\"10\" fill=\"#FDC830\" text-anchor=\"end\" font-weight=\"700\">1906</text><text x=\"88\" y=\"182.4\" font-size=\"9.5\" fill=\"#FFFFFF\">Imperial Forest Research Institute at</text><text x=\"88\" y=\"194.6\" font-size=\"9.5\" fill=\"#FFFFFF\">Dehradun</text><circle cx=\"76\" cy=\"221.3\" r=\"4\" fill=\"#FDC830\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"224.8\" font-size=\"10\" fill=\"#FDC830\" text-anchor=\"end\" font-weight=\"700\">1910</text><text x=\"88\" y=\"224.8\" font-size=\"9.5\" fill=\"#FFFFFF\">Bastar rebellion</text><circle cx=\"76\" cy=\"251.5\" r=\"4\" fill=\"#FDC830\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"255\" font-size=\"10\" fill=\"#FDC830\" text-anchor=\"end\" font-weight=\"700\">1968</text><text x=\"88\" y=\"255.0\" font-size=\"9.5\" fill=\"#FFFFFF\">Indian Forest Services created in J&amp;K</text><circle cx=\"76\" cy=\"281.7\" r=\"4\" fill=\"#FDC830\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"285.2\" font-size=\"10\" fill=\"#FDC830\" text-anchor=\"end\" font-weight=\"700\">1982</text><text x=\"88\" y=\"285.2\" font-size=\"9.5\" fill=\"#FFFFFF\">Social forestry scheme in J&amp;K (World</text><text x=\"88\" y=\"297.4\" font-size=\"9.5\" fill=\"#FFFFFF\">Bank aided)</text><circle cx=\"76\" cy=\"324.09999999999997\" r=\"4\" fill=\"#FDC830\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"327.59999999999997\" font-size=\"10\" fill=\"#FDC830\" text-anchor=\"end\" font-weight=\"700\">1992</text><text x=\"88\" y=\"327.6\" font-size=\"9.5\" fill=\"#FFFFFF\">Joint Forest Management introduced in</text><text x=\"88\" y=\"339.8\" font-size=\"9.5\" fill=\"#FFFFFF\">J&amp;K</text><circle cx=\"76\" cy=\"366.49999999999994\" r=\"4\" fill=\"#FDC830\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"67\" y=\"369.99999999999994\" font-size=\"10\" fill=\"#FDC830\" text-anchor=\"end\" font-weight=\"700\">2004</text><text x=\"88\" y=\"370.0\" font-size=\"9.5\" fill=\"#FFFFFF\">Department of Social Forestry created</text><text x=\"88\" y=\"382.2\" font-size=\"9.5\" fill=\"#FFFFFF\">in J&amp;K</text></svg></div><div class=\"diagram-caption\">Fig. 1: Key dates from the chapter</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 1. Why Deforestation?</div><div class=\"sol-step\"><div class=\"sec\">1.1 Land to be improved</div><div class=\"pt\">In 1600 about one-sixth of India was cultivated; now about half. Cultivation grew as population and food demand rose.</div><div class=\"pt\">The British encouraged <b>commercial crops</b> — jute, sugar, wheat and cotton — for Europe's growing towns and industries.</div><div class=\"pt\">The colonial state thought forests were <b>unproductive wilderness</b> to be cultivated for revenue. Between 1880 and 1920 cultivated area rose by <b>6.7 million hectares</b>.</div><div class=\"sec\">1.2 Sleepers on the tracks</div><div class=\"pt\">Oak forests in England were disappearing, so timber for the <b>Royal Navy</b> came from India from the 1820s.</div><div class=\"pt\">Railways (from the 1850s) needed wood as fuel and <b>sleepers</b> — 1,760 to 2,000 per mile of track. Track grew from about 25,500 km (1890) to over 765,000 km (1946). Contractors cut trees indiscriminately.</div><div class=\"sec\">1.3 Plantations</div><div class=\"rev\">Large natural forests were cleared for <b>tea, coffee and rubber</b> plantations; the government gave vast areas to European planters at cheap rates.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 2. The Case of Jammu and Kashmir</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Old tradition:</span> forests were abundant till the second half of the 19th century; rulers enriched them with Chinars, Maples, Willows, Robinias and other trees. The Sufi saints <b>Lal Ded</b> and <b>Sheikh Noor-ud-din</b> spread ecological awareness — 'An Poshi Teli Yeli Van Poshi' (Food is subservient to forests). Groves near temples, mosques and shrines show reverence for trees.</div><div class=\"pt\"><span class=\"lbl\">1857–58:</span> the State Revenue Department created a forest section, <b>Mahal Nawara</b>, to collect revenue from contractors.</div><div class=\"pt\"><span class=\"lbl\">1883:</span> first regulation to control forest working — <b>Ain-e-Janglat</b>.</div><div class=\"pt\"><span class=\"lbl\">1892:</span> Sir J.C. Macdonald of the Indian Forest Services engaged to manage forests on scientific lines.</div><div class=\"pt\"><span class=\"lbl\">1913:</span> forest regulations promulgated; all forests came under working plans for removal of trees.</div><div class=\"pt\"><span class=\"lbl\">World Wars:</span> huge demand for timber (including for railways in British India) led to extensive felling.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 3. The Rise of Commercial Forestry</div><div class=\"sol-step\"><div class=\"rev\">The British invited the German expert <b>Dietrich Brandis</b> and made him the first <b>Inspector General of Forests</b>. He set up the <b>Indian Forest Service (1864)</b> and helped frame the <b>Indian Forest Act (1865)</b>. The <b>Imperial Forest Research Institute</b> at Dehradun (1906) taught <span class=\"hl\">'scientific forestry'</span> — natural mixed forests were cut and one type of tree planted in straight rows (a <b>plantation</b>).</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Category (1878 Act)</th><th>Use by villagers</th></tr><tr><td>Reserved forests (best forests)</td><td>Nothing could be taken, even for own use</td></tr><tr><td>Protected forests</td><td>Wood for house building or fuel allowed</td></tr><tr><td>Village forests</td><td>Wood for house building or fuel allowed</td></tr></table></div><div class=\"sec\">How lives were affected</div><div class=\"pt\">Villagers wanted mixed forests for fuel, fodder and leaves; the department wanted hardwood like <b>teak and sal</b> for ships and railways.</div><div class=\"pt\">Everyday practices — cutting wood, grazing, collecting fruits and roots, hunting, fishing — became <b>illegal</b>; people had to steal wood and pay bribes to forest guards.</div><div class=\"sec\">Shifting cultivation banned</div><div class=\"rev\">In <b>shifting (swidden) cultivation</b> parts of the forest are cut and burnt in rotation, seeds are sown in the ashes, and plots are left fallow for 12 to 18 years. Local names include <i>jhum, podu, bewar, penda, kumri</i> (India), <i>lading</i> (SE Asia), <i>milpa</i> (Central America) and <i>chena</i> (Sri Lanka). Foresters saw it as harmful and it made taxes hard to calculate, so it was <b>banned</b>; many communities were displaced.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 4. Commercial Forestry in J&K and its Implications</div><div class=\"sol-step\"><div class=\"pt\">Earlier, people had free access to forests; nominal royalties were charged for commercial timber, without major ecological damage.</div><div class=\"pt\">Pressure rose between the two world wars and after partition — timber for construction, agriculture, wood-based industries (resin, joinery, basket making, wood carving) and export.</div><div class=\"pt\"><span class=\"lbl\">1968:</span> <b>Indian Forest Services</b> created in J&K; commercial forests came under organised extraction.</div><div class=\"pt\"><span class=\"lbl\">Scientific forestry:</span> European <b>silvicultural systems</b> applied to Deodar–Kail and Chir–Fir forests failed; felled areas did not regenerate or were degraded.</div><div class=\"pt\"><span class=\"lbl\">1980s:</span> rationing of firewood to cities, towns, religious places and crematoria, and unrestricted grazing (including by <b>Gujjars and Bakarwals</b>), damaged forests further.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 5. Who could Hunt?</div><div class=\"sol-step\"><div class=\"pt\">Forest laws turned customary hunting into <b>poaching</b>; but hunting big game became a sport for the British and kings.</div><div class=\"pt\">Over <b>80,000 tigers, 150,000 leopards and 200,000 wolves</b> were killed for reward (1875–1925). The Maharaja of <b>Sarguja</b> shot 1,157 tigers and 2,000 leopards; <b>George Yule</b> killed 400 tigers.</div><div class=\"sec\">Hunting — a threat to J&K's forest wealth</div><div class=\"pt\">J&K has globally significant species — snow leopard, <b>Markhor</b>, Himalayan ibex, blue sheep, musk deer, <b>Hangul</b>.</div><div class=\"pt\">British sportsmen with local <b>Shikaris</b> hunted as far as Baltistan, Ladakh, Gilgit and Hunza. The Markhor, prized for the medicinal properties of its horns, was hunted to extinction in the region.</div><div class=\"pt\">The folk theatre <b>Shikargah Panther</b> (Bhand theatre) mocked this cruelty and the neglect of rare species.</div><div class=\"pt\">Hunting records — notes and sketches by British officials — were used to plan further expeditions.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 6. New Trades, Employment and Services</div><div class=\"sol-step\"><div class=\"pt\">Some benefited from trade — e.g. the <b>Mundurucu</b> of the Brazilian Amazon collected latex for rubber traders and became dependent on them.</div><div class=\"pt\">The British gave large European firms the sole right to trade in forest products; communities like the <b>Korava, Karacha and Yerukula</b> of Madras Presidency lost livelihoods and some were called 'criminal tribes'.</div><div class=\"pt\">Santhals and Oraons from Jharkhand and Gonds from Chhattisgarh were recruited for Assam tea plantations at low wages and in bad conditions.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 7. Rebellion in the Forest — Bastar (1910)</div><div class=\"sol-step\"><div class=\"rev\">Bastar, in the south of Chhattisgarh, is home to Maria and Muria Gonds, Dhurwas, Bhatras and Halbas. Each village looks after its resources; outsiders pay a small fee — <b>devsari, dand or man</b>.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 368\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"368\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"19\" font-size=\"11.5\" fill=\"#FDC830\" text-anchor=\"middle\" font-weight=\"700\">The Bastar Rebellion</text><rect x=\"30\" y=\"30\" width=\"260\" height=\"51.2\" rx=\"6\" fill=\"rgba(79,195,247,0.16)\" stroke=\"#4FC3F7\" stroke-width=\"1.2\"/><text x=\"160\" y=\"46.5\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">1905: proposal to reserve two-thirds of the</text><text x=\"160\" y=\"58.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">forest; stop shifting cultivation, hunting,</text><text x=\"160\" y=\"71.3\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">collection</text><line x1=\"160\" y1=\"82.2\" x2=\"160\" y2=\"89.2\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 94.2 L163.5 88.2 L156.5 88.2 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"95.2\" width=\"260\" height=\"38.8\" rx=\"6\" fill=\"rgba(255,183,77,0.16)\" stroke=\"#FFB74D\" stroke-width=\"1.2\"/><text x=\"160\" y=\"111.7\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Forest villages must work free; others</text><text x=\"160\" y=\"124.1\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">displaced; famines in 1899–1900 and 1907–08</text><line x1=\"160\" y1=\"135\" x2=\"160\" y2=\"142\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 147 L163.5 141 L156.5 141 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"148\" width=\"260\" height=\"38.8\" rx=\"6\" fill=\"rgba(239,83,80,0.16)\" stroke=\"#EF5350\" stroke-width=\"1.2\"/><text x=\"160\" y=\"164.5\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Dhurwas of Kanger forest take the lead; Gunda</text><text x=\"160\" y=\"176.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Dhur of Nethanar an important figure</text><line x1=\"160\" y1=\"187.8\" x2=\"160\" y2=\"194.8\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 199.8 L163.5 193.8 L156.5 193.8 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"200.8\" width=\"260\" height=\"38.8\" rx=\"6\" fill=\"rgba(244,143,177,0.16)\" stroke=\"#F48FB1\" stroke-width=\"1.2\"/><text x=\"160\" y=\"217.3\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">1910: mango boughs, earth, chillies and arrows</text><text x=\"160\" y=\"229.7\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">circulate as messages</text><line x1=\"160\" y1=\"240.60000000000002\" x2=\"160\" y2=\"247.60000000000002\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 252.60000000000002 L163.5 246.60000000000002 L156.5 246.60000000000002 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"253.60000000000002\" width=\"260\" height=\"38.8\" rx=\"6\" fill=\"rgba(148,163,184,0.13)\" stroke=\"#94A3B8\" stroke-width=\"1.2\"/><text x=\"160\" y=\"270.1\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">Bazaars looted; officials' houses, schools,</text><text x=\"160\" y=\"282.5\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">police stations burnt</text><line x1=\"160\" y1=\"293.40000000000003\" x2=\"160\" y2=\"300.40000000000003\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><path d=\"M160 305.40000000000003 L163.5 299.40000000000003 L156.5 299.40000000000003 Z\" fill=\"#B0BEC5\"/><rect x=\"30\" y=\"306.40000000000003\" width=\"260\" height=\"51.2\" rx=\"6\" fill=\"rgba(129,199,132,0.16)\" stroke=\"#81C784\" stroke-width=\"1.2\"/><text x=\"160\" y=\"322.9\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">British troops crush the revolt (Feb–May);</text><text x=\"160\" y=\"335.3\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">reservation suspended and area reduced to</text><text x=\"160\" y=\"347.7\" font-size=\"9.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">about half</text></svg></div><div class=\"diagram-caption\">Fig. 2: The Bastar rebellion of 1910</div></div><div class=\"rev\">Gunda Dhur was never captured. In the 1970s a World Bank plan to replace 4,600 hectares of natural sal forest with tropical pine was stopped after protests.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 8. Forest Transformations in Java</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Kalangs:</span> skilled forest cutters; in 1755 their 6,000 families were divided between two kingdoms; in 1770 they attacked a Dutch fort at Joana.</div><div class=\"pt\"><span class=\"lbl\">Dutch scientific forestry:</span> forest laws restricted villagers' access; in 1882, 280,000 sleepers were exported from Java alone.</div><div class=\"pt\"><span class=\"lbl\">Blandongdiensten system:</span> villages exempted from rent if they gave free labour and buffaloes for cutting and transporting timber.</div><div class=\"pt\"><span class=\"lbl\">Samin's challenge (c. 1890):</span> Surontiko Samin of Randublatung argued the state had not created wind, water, earth and wood, so it could not own them; by 1907, 3,000 families followed him.</div><div class=\"pt\"><span class=\"lbl\">War and deforestation:</span> the Dutch followed a 'scorched earth' policy before the Japanese occupation; the Japanese then exploited the forests recklessly.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 9. New Developments in Forestry</div><div class=\"sol-step\"><div class=\"pt\">Since the 1980s, <b>conservation</b> rather than timber collection is the goal; local people must be involved. Sacred groves — <i>sarnas, devarakudu, kan, rai</i> — protected many forests.</div><div class=\"sec\">In Jammu and Kashmir</div><div class=\"pt\"><span class=\"lbl\">1982:</span> World Bank aided <b>social forestry</b> scheme (extended to 1990–91) shared fuelwood, fodder, small timber and minor forest produce with local people.</div><div class=\"pt\"><span class=\"lbl\">March 1992:</span> <b>Joint Forest Management (JFM)</b> under the National Forest Policy 1988; <b>Village Forest Committees</b> protect forests from damage, theft, encroachment and grazing.</div><div class=\"pt\"><span class=\"lbl\">2004:</span> <b>Department of Social Forestry</b> created — agro-forestry, medicinal plants, afforestation of degraded lands, roadsides and canal sides, with awareness camps.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 10. Key Terms</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Term</th><th>Meaning</th></tr><tr><td>Deforestation</td><td>Disappearance of forests</td></tr><tr><td>Sleepers</td><td>Wooden planks laid across railway tracks to hold them in position</td></tr><tr><td>Scientific forestry</td><td>A system controlled by the forest department in which old trees are cut and new ones planted</td></tr><tr><td>Shifting cultivation</td><td>Cutting and burning parts of the forest in rotation for cultivation</td></tr><tr><td>Mahal Nawara</td><td>J&K forest section (1857–58) to collect revenue from forest contractors</td></tr><tr><td>Ain-e-Janglat</td><td>J&K's first regulation to control forest working (1883)</td></tr><tr><td>Blandongdiensten</td><td>Dutch system of free labour for timber in exchange for rent exemption</td></tr><tr><td>JFM</td><td>Joint Forest Management — forests managed with local communities</td></tr></table></div><div class=\"exam\"><span class=\"exam-t\">📌 Exam Focus</span><div>• Causes of deforestation under colonial rule</div><div>• Scientific forestry and the Forest Act; effect on villagers and shifting cultivators</div><div>• Hunting, new trades; Bastar rebellion; Java and Samin</div><div>• J&K: forest history, commercial forestry, hunting, social forestry and JFM</div></div></div>\n  </div>\n\n</div>",
+  "htmlExercises": {
+    "sh9-4-ex-q": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(253, 200, 48, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FDC830; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FDC830; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFF3C4; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFF3C4; font-weight: 700; }\n  .hl { color: #FDC830; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FDC830; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FDC830; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(253, 200, 48, 0.10); border: 1.5px dashed #FDC830; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FDC830; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(253, 200, 48, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(253, 200, 48, 0.18); border: 1px solid #FDC830; color: #FFF3C4; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(253, 200, 48, 0.2); color: #FFF3C4; }\n  .q-card .q-text, .q-card .sub-q { color: #FDC830 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Discuss how the changes in forest management in the colonial period affected the following groups of people: Shifting cultivators; Nomadic and pastoralist communities; Firms trading in timber/forest produce; Plantation owners; Kings/British officials engaged in shikar (hunting).</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Shifting cultivators:</span> shifting cultivation was banned; many communities were forcibly displaced; some changed occupations and some rebelled.</div><div class=\"pt\"><span class=\"lbl\">Nomadic and pastoralist communities:</span> grazing and hunting were restricted; communities like the Korava, Karacha and Yerukula of Madras Presidency lost their livelihoods; some were labelled 'criminal tribes' and made to work in factories, mines and plantations.</div><div class=\"pt\"><span class=\"lbl\">Firms trading in timber/forest produce:</span> large European firms got the <b>sole right</b> to trade in the forest products of particular areas and profited greatly.</div><div class=\"pt\"><span class=\"lbl\">Plantation owners:</span> got vast forest areas from the government at cheap rates for tea, coffee and rubber; they hired forest people at low wages.</div><div class=\"pt\"><span class=\"lbl\">Kings/British officials (shikar):</span> big-game hunting became a sport; they killed tigers and leopards in huge numbers (Maharaja of Sarguja 1,157 tigers; George Yule 400 tigers), while ordinary people's hunting was punished as poaching.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">What are the similarities between colonial management of the forests in Bastar and in Java?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Both colonial governments (British in Bastar, Dutch in Java) took over forests mainly for <b>timber</b> for ships and railways.</div><div class=\"pt\">Both introduced <b>forest laws</b> that restricted villagers' access, grazing and wood-cutting.</div><div class=\"pt\">Both banned or restricted <b>shifting cultivation</b>.</div><div class=\"pt\">Both made forest villages give <b>free labour</b> — 'forest villages' in Bastar and the <b>blandongdiensten</b> system in Java.</div><div class=\"pt\">Both faced <b>resistance</b>: the Bastar rebellion (1910) under Gunda Dhur and Samin's movement in Java.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Between 1880 and 1920, forest cover in the Indian subcontinent declined by 9.7 million hectares, from 108.6 million hectares to 98.9 million hectares. Discuss the role of the following factors in this decline: Railways; Shipbuilding; Agricultural expansion; Commercial farming; Tea/Coffee plantations; Adivasis and other peasant users.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Railways:</span> wood for fuel and 1,760–2,000 sleepers per mile; contractors cut trees indiscriminately; forests around tracks disappeared.</div><div class=\"pt\"><span class=\"lbl\">Shipbuilding:</span> oak forests in England were vanishing, so timber for the Royal Navy was taken from India on a massive scale.</div><div class=\"pt\"><span class=\"lbl\">Agricultural expansion:</span> the state saw forests as unproductive; cultivated area rose by 6.7 million hectares between 1880 and 1920.</div><div class=\"pt\"><span class=\"lbl\">Commercial farming:</span> jute, sugar, wheat and cotton were grown for Europe, clearing more forest.</div><div class=\"pt\"><span class=\"lbl\">Tea/Coffee plantations:</span> large natural forests were cleared and given to European planters.</div><div class=\"pt\"><span class=\"lbl\">Adivasis and peasant users:</span> they used forests for their needs and shifting cultivation, but this was small compared with commercial felling; they were blamed and restricted by the forest laws.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">Why are forests affected by wars?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Working plans are abandoned and the forest department cuts trees freely to meet war needs (as in India during both World Wars).</div><div class=\"pt\">Armies use 'scorched earth' policies — the Dutch destroyed sawmills and burnt giant teak logs in Java so they would not fall into Japanese hands.</div><div class=\"pt\">Occupying powers exploit forests recklessly for war industries — the Japanese forced villagers to cut forests.</div><div class=\"pt\">Villagers use the disorder to expand cultivation into forests.</div><div class=\"pt\"><span class=\"lbl\">J&K:</span> large-scale demand for timber during the World Wars led to extensive felling in the region too.</div></div></div>\n  </div>\n\n</div>",
+    "sh9-4-ex-jk": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(253, 200, 48, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FDC830; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FDC830; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFF3C4; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFF3C4; font-weight: 700; }\n  .hl { color: #FDC830; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FDC830; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FDC830; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(253, 200, 48, 0.10); border: 1.5px dashed #FDC830; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FDC830; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(253, 200, 48, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(253, 200, 48, 0.18); border: 1px solid #FDC830; color: #FFF3C4; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(253, 200, 48, 0.2); color: #FFF3C4; }\n  .q-card .q-text, .q-card .sub-q { color: #FDC830 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\"><div class=\"q-title\">✦ Q6. Write short notes on:</div></div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Development of commercial forestry in J&K and its impact.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">Development</div><div class=\"pt\"><span class=\"lbl\">1857–58:</span> Mahal Nawara forest section to collect revenue; 1883: Ain-e-Janglat; 1892: Sir J.C. Macdonald engaged for scientific management; 1913: forest regulations and working plans.</div><div class=\"pt\">Demand for timber rose during the World Wars, between the wars and after partition — for construction, agriculture, wood-based industries (resin, joinery, basket making, wood carving) and export.</div><div class=\"pt\"><span class=\"lbl\">1968:</span> Indian Forest Services created in J&K; commercial forests came under organised extraction; European silvicultural systems applied to Deodar–Kail and Chir–Fir forests.</div><div class=\"sub-q\">Impact</div><div class=\"pt\">The European systems failed; felled areas either did not regenerate or became degraded.</div><div class=\"pt\">In the 1980s, firewood rationing to towns, religious places and crematoria, and unrestricted grazing by local and migratory herds (Gujjars and Bakarwals), further devastated the forests.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Highlight the new developments that were introduced in the forestry of Jammu and Kashmir during the last decades of the 20th century.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">1982 — Social forestry:</span> World Bank aided scheme, extended up to 1990–91, to involve local people; produce such as fuelwood, fodder, small timber and minor forest products was shared with them.</div><div class=\"pt\"><span class=\"lbl\">March 1992 — Joint Forest Management:</span> introduced following the National Forest Policy 1988; <b>Village Forest Committees</b> help protect forests from wilful damage, theft, trespass, encroachment and grazing.</div><div class=\"pt\"><span class=\"lbl\">Later (2004):</span> a full-fledged <b>Department of Social Forestry</b> took up agro-forestry, medicinal plants and afforestation of degraded forests, state land, common land, canal sides and roadsides, protected with public participation through awareness camps.</div></div></div>\n  </div>\n\n</div>",
+    "sh9-4-ex-int": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(253, 200, 48, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FDC830; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FDC830; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFF3C4; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFF3C4; font-weight: 700; }\n  .hl { color: #FDC830; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FDC830; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FDC830; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(253, 200, 48, 0.10); border: 1.5px dashed #FDC830; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FDC830; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(253, 200, 48, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(253, 200, 48, 0.18); border: 1px solid #FDC830; color: #FFF3C4; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(253, 200, 48, 0.2); color: #FFF3C4; }\n  .q-card .q-text, .q-card .sub-q { color: #FDC830 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Each mile of railway track required between 1,760 and 2,000 sleepers. If one average-sized tree yields 3 to 5 sleepers for a 3 metre wide broad gauge track, calculate approximately how many trees would have to be cut to lay one mile of track.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Case</th><th>Calculation</th><th>Trees</th></tr><tr><td>Fewest trees</td><td>1,760 ÷ 5</td><td>352</td></tr><tr><td>Most trees</td><td>2,000 ÷ 3</td><td>about 667</td></tr></table></div><div class=\"ans-box\"><span class=\"ans-label\">Answer: </span><span class=\"ans-val\">About 352 to 667 trees per mile of track</span></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">If you were the Government of India in 1862 and responsible for supplying the railways with sleepers and fuel on such a large scale, what were the steps you would have taken?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Survey the forests and prepare working plans so that only a fixed area is cut each year.</div><div class=\"pt\">Replant every area that is cut, so timber is available again.</div><div class=\"pt\">Stop indiscriminate cutting by contractors; issue contracts with strict limits.</div><div class=\"pt\">Set up a trained forest service and a forest law, as Brandis advised.</div><div class=\"pt\">Protect the needs of local people for fuel, fodder and house-building wood, and involve them in protecting forests.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Children living around forest areas can often identify hundreds of species of trees and plants. How many species of trees can you name?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\"><i>Model answer (trees named in this chapter):</i> sal, teak, mahua, tendu, semur (silk-cotton), siadi creeper, bamboo, oak, deodar, kail, chir, fir, poplar, chinar, maple, willow, robinia, tamarisk, rubber.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">Project/Activity: The teacher should sensitise students about the need for the conservation of wild life by holding a discussion on the Wild Life Protection Act, 1972, and ask them to make a project on it.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\"><i>Points for the project (based on the chapter):</i></div><div class=\"pt\">Why conservation is needed: over 80,000 tigers, 150,000 leopards and 200,000 wolves were killed for reward in 1875–1925; the Markhor was hunted to extinction in J&K.</div><div class=\"pt\">Rare species of J&K to protect: snow leopard, Markhor, Himalayan ibex, blue sheep, musk deer and Hangul (Kashmir stag).</div><div class=\"pt\">Role of local awareness — the Shikargah Panther theatre, sacred groves and village forest committees.</div><div class=\"pt\">Students may add the main provisions of the Wild Life Protection Act, 1972 from their teacher's discussion.</div></div></div>\n  </div>\n\n</div>",
+    "sh9-4-ex-proj": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(253, 200, 48, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FDC830; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FDC830; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFF3C4; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFF3C4; font-weight: 700; }\n  .hl { color: #FDC830; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FDC830; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FDC830; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(253, 200, 48, 0.10); border: 1.5px dashed #FDC830; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FDC830; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(253, 200, 48, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(253, 200, 48, 0.18); border: 1px solid #FDC830; color: #FFF3C4; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(253, 200, 48, 0.2); color: #FFF3C4; }\n  .q-card .q-text, .q-card .sub-q { color: #FDC830 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Have there been changes in forest areas where you live? Find out what these changes are and why they have happened.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\"><i>Guidance:</i> Ask elders and local forest staff and compare with what you read in this chapter. Possible changes and reasons:</div><div class=\"pt\">Forest cover has reduced — felling for timber, firewood, construction and expansion of farms and roads.</div><div class=\"pt\">Over-grazing by local and migratory herds.</div><div class=\"pt\">Some degraded lands, roadsides and canal sides have been replanted under social forestry; village forest committees under Joint Forest Management now help protect forests.</div><div class=\"pt\">Wild animals have become rarer because of hunting and loss of habitat.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Write a dialogue between a colonial forester and an adivasi discussing the issue of hunting in the forest.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\"><b>Forester:</b> You were seen with a bow near the reserved forest. Hunting deer is poaching now — it is against the law.</div><div class=\"rev\"><b>Adivasi:</b> Sahib, my people have hunted deer and partridges for generations. It is how we feed our children.</div><div class=\"rev\"><b>Forester:</b> The forest belongs to the government now. Your hunting harms the forest.</div><div class=\"rev\"><b>Adivasi:</b> Then why do your officers and the kings shoot hundreds of tigers and leopards for sport and get rewards?</div><div class=\"rev\"><b>Forester:</b> Those animals are dangerous to cultivators.</div><div class=\"rev\"><b>Adivasi:</b> We have lived with them for centuries. You punish the poor for a meal and reward the rich for sport. That is not justice.</div></div></div>\n  </div>\n\n</div>"
   },
-  introduction:
-    "Colonial logging and forest acts altered tribal life and triggered uprisings.",
-  definitions: [],
-  keyPoints: [],
-  formulas: [],
-  crux: [],
-  mcqs: [
+  "introduction": "Colonial logging and forest acts altered tribal life and triggered uprisings.",
+  "definitions": [],
+  "keyPoints": [],
+  "formulas": [],
+  "crux": [],
+  "mcqs": [
     {
-      id: "sst-his-c9-4-mcq-1",
-      question: "Who was the first Inspector General of Forests in India?",
-      options: [
-        "Dietrich Brandis",
-        "George Yule",
-        "Verrier Elwin",
-        "Lord Dalhousie",
+      "id": "sst-his-c9-4-mcq-1",
+      "question": "<div style='text-align: justify;'>The disappearance of forests is called —</div>",
+      "options": [
+        "A):   afforestation",
+        "B):   plantation",
+        "C):   deforestation",
+        "D):   silviculture"
       ],
-      correctAnswer: "a",
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Under colonial rule it became systematic and extensive.</div>"
     },
     {
-      id: "sst-his-c9-4-mcq-2",
-      question: "In which year was the first Indian Forest Act passed?",
-      options: ["1864", "1865", "1878", "1927"],
-      correctAnswer: "b",
-    },
-    {
-      id: "sst-his-c9-4-mcq-3",
-      question:
-        "According to the 1878 Act, which forests were considered the best?",
-      options: [
-        "Reserved Forests",
-        "Protected Forests",
-        "Village Forests",
-        "Open Forests",
+      "id": "sst-his-c9-4-mcq-2",
+      "question": "<div style='text-align: justify;'>Each mile of railway track required how many sleepers?</div>",
+      "options": [
+        "A):   1,760 to 2,000",
+        "B):   100 to 200",
+        "C):   500 to 700",
+        "D):   5,000 to 6,000"
       ],
-      correctAnswer: "a",
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Sleepers hold the tracks in position.</div>"
     },
     {
-      id: "sst-his-c9-4-mcq-4",
-      question: "The Imperial Forest Research Institute was set up in 1906 at:",
-      options: ["Dehradun", "Shimla", "Kolkata", "Delhi"],
-      correctAnswer: "a",
-    },
-    {
-      id: "sst-his-c9-4-mcq-5",
-      question: "Who led the forest rebellion in Bastar in 1910?",
-      options: ["Gunda Dhur", "Birsa Munda", "Sidhu Murmu", "Kanhu Murmu"],
-      correctAnswer: "a",
-    },
-    {
-      id: "sst-his-c9-4-mcq-6",
-      question:
-        "Which of these is a shifting cultivation term in Central America?",
-      options: ["Milpa", "Lading", "Chitemene", "Podu"],
-      correctAnswer: "a",
-    },
-    {
-      id: "sst-his-c9-4-mcq-7",
-      question:
-        "The Dutch system of forced labor for timber cutting in Java was called:",
-      options: ["Blandongdiensten", "Saminism", "Veth", "Tithe"],
-      correctAnswer: "a",
-    },
-    {
-      id: "sst-his-c9-4-mcq-8",
-      question:
-        "Who led the anti-Dutch forest protest movement in Java around 1890?",
-      options: [
-        "Surontiko Samin",
-        "Father Gapon",
-        "Leon Trotsky",
-        "Dietrich Brandis",
+      "id": "sst-his-c9-4-mcq-3",
+      "question": "<div style='text-align: justify;'>Who was the first Inspector General of Forests in India?</div>",
+      "options": [
+        "A):   George Yule",
+        "B):   J.C. Macdonald",
+        "C):   William Ward",
+        "D):   Dietrich Brandis"
       ],
-      correctAnswer: "a",
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>He was a German expert.</div>"
     },
     {
-      id: "sst-his-c9-4-mcq-9",
-      question: "Why did the British want to clear forests for agriculture?",
-      options: [
-        "To increase tax revenue",
-        "To build ships",
-        "To lay railway tracks",
-        "To preserve environment",
+      "id": "sst-his-c9-4-mcq-4",
+      "question": "<div style='text-align: justify;'>The Imperial Forest Research Institute was set up at Dehradun in —</div>",
+      "options": [
+        "A):   1864",
+        "B):   1906",
+        "C):   1865",
+        "D):   1878"
       ],
-      correctAnswer: "a",
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>It taught 'scientific forestry'.</div>"
     },
     {
-      id: "sst-his-c9-4-mcq-10",
-      question:
-        "Under the 1878 Forest Act, forests were divided into how many categories?",
-      options: ["Two", "Three", "Four", "Five"],
-      correctAnswer: "b",
+      "id": "sst-his-c9-4-mcq-5",
+      "question": "<div style='text-align: justify;'>Under the Forest Act of 1878, villagers could take nothing from —</div>",
+      "options": [
+        "A):   reserved forests",
+        "B):   protected forests",
+        "C):   village forests",
+        "D):   sacred groves"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Reserved forests were the best forests.</div>"
     },
+    {
+      "id": "sst-his-c9-4-mcq-6",
+      "question": "<div style='text-align: justify;'>Which of these is a name for shifting cultivation in India?</div>",
+      "options": [
+        "A):   Kolkhoz",
+        "B):   Taungya",
+        "C):   Jhum",
+        "D):   Blandongdiensten"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Others include podu, bewar and kumri.</div>"
+    },
+    {
+      "id": "sst-his-c9-4-mcq-7",
+      "question": "<div style='text-align: justify;'>The Maharaja of Sarguja shot how many tigers up to 1957?</div>",
+      "options": [
+        "A):   400",
+        "B):   80,000",
+        "C):   2,000",
+        "D):   1,157"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>He also shot 2,000 leopards.</div>"
+    },
+    {
+      "id": "sst-his-c9-4-mcq-8",
+      "question": "<div style='text-align: justify;'>Which Amazon people began collecting latex for rubber traders?</div>",
+      "options": [
+        "A):   Kalangs",
+        "B):   Mundurucu",
+        "C):   Baigas",
+        "D):   Huitotos"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>They became dependent on traders.</div>"
+    },
+    {
+      "id": "sst-his-c9-4-mcq-9",
+      "question": "<div style='text-align: justify;'>The Bastar rebellion took place in —</div>",
+      "options": [
+        "A):   1910",
+        "B):   1905",
+        "C):   1899",
+        "D):   1857"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>The initiative came from the Dhurwas of the Kanger forest.</div>"
+    },
+    {
+      "id": "sst-his-c9-4-mcq-10",
+      "question": "<div style='text-align: justify;'>Who is remembered as an important figure of the Bastar rebellion?</div>",
+      "options": [
+        "A):   Birsa Munda",
+        "B):   Samin",
+        "C):   Gunda Dhur",
+        "D):   Alluri Sitarama Raju"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>He was from village Nethanar and was never captured.</div>"
+    },
+    {
+      "id": "sst-his-c9-4-mcq-11",
+      "question": "<div style='text-align: justify;'>The skilled forest cutters of Java were the —</div>",
+      "options": [
+        "A):   Saminists",
+        "B):   Gonds",
+        "C):   Oraons",
+        "D):   Kalangs"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Their 6,000 families were divided between two kingdoms in 1755.</div>"
+    },
+    {
+      "id": "sst-his-c9-4-mcq-12",
+      "question": "<div style='text-align: justify;'>The Dutch system of free labour for timber in return for rent exemption was called —</div>",
+      "options": [
+        "A):   ain-e-janglat",
+        "B):   blandongdiensten",
+        "C):   mahal nawara",
+        "D):   taungya"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Later small wages were paid instead.</div>"
+    },
+    {
+      "id": "sst-his-c9-4-mcq-13",
+      "question": "<div style='text-align: justify;'>Surontiko Samin's movement in Java began around —</div>",
+      "options": [
+        "A):   1890",
+        "B):   1770",
+        "C):   1755",
+        "D):   1942"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>By 1907, 3,000 families followed his ideas.</div>"
+    },
+    {
+      "id": "sst-his-c9-4-mcq-14",
+      "question": "<div style='text-align: justify;'>In J&K, the forest section created in 1857–58 to collect revenue was —</div>",
+      "options": [
+        "A):   Ain-e-Janglat",
+        "B):   Shikargah",
+        "C):   Mahal Nawara",
+        "D):   Village Forest Committee"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>It was under the State Revenue Department.</div>"
+    },
+    {
+      "id": "sst-his-c9-4-mcq-15",
+      "question": "<div style='text-align: justify;'>The first regulation to control forest working in J&K (1883) was called —</div>",
+      "options": [
+        "A):   Mahal Nawara",
+        "B):   Indian Forest Act",
+        "C):   JFM",
+        "D):   Ain-e-Janglat"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Scientific management followed from 1892.</div>"
+    },
+    {
+      "id": "sst-his-c9-4-mcq-16",
+      "question": "<div style='text-align: justify;'>Indian Forest Services were created in J&K in —</div>",
+      "options": [
+        "A):   1913",
+        "B):   1968",
+        "C):   1883",
+        "D):   1992"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Commercial forests came under organised extraction.</div>"
+    },
+    {
+      "id": "sst-his-c9-4-mcq-17",
+      "question": "<div style='text-align: justify;'>Which goat endemic to J&K was hunted to extinction in the region?</div>",
+      "options": [
+        "A):   Markhor",
+        "B):   Hangul",
+        "C):   Ibex",
+        "D):   Blue sheep"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Its horns were prized for medicinal properties.</div>"
+    },
+    {
+      "id": "sst-his-c9-4-mcq-18",
+      "question": "<div style='text-align: justify;'>Joint Forest Management was introduced in J&K in —</div>",
+      "options": [
+        "A):   1982",
+        "B):   2004",
+        "C):   March 1992",
+        "D):   1968"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Following the National Forest Policy 1988.</div>"
+    },
+    {
+      "id": "sst-his-c9-4-mcq-19",
+      "question": "<div style='text-align: justify;'>Assertion (A): The colonial government banned shifting cultivation. Reason (R): Foresters felt such land could not grow trees for railway timber, and it made taxes harder to calculate.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Both reasons are given in the chapter.</div>"
+    },
+    {
+      "id": "sst-his-c9-4-mcq-20",
+      "question": "<div style='text-align: justify;'>Assertion (A): Villagers and foresters wanted the same kind of forest. Reason (R): Villagers wanted mixed forests for fuel, fodder and leaves.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Foresters wanted teak and sal for ships and railways; R is true.</div>"
+    }
   ],
-  summary: [],
-  exercises: [
+  "summary": [],
+  "exercises": [
     {
-      id: "ex-sst-qa",
-      name: "Q & A",
-      questions: [],
+      "id": "sh9-4-ex-q",
+      "name": "Questions",
+      "questions": []
     },
+    {
+      "id": "sh9-4-ex-jk",
+      "name": "J&K Qs",
+      "questions": []
+    },
+    {
+      "id": "sh9-4-ex-int",
+      "name": "In-Text",
+      "questions": []
+    },
+    {
+      "id": "sh9-4-ex-proj",
+      "name": "Projects",
+      "questions": []
+    }
   ],
-  examples: [],
+  "examples": []
 };
