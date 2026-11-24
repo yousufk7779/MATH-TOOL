@@ -20,8 +20,8 @@ export const c10EngPo14: ChapterContent = {
       "id": "c10-eng-po14-mcq-1",
       "question": "<div style='text-align: justify;'>Who wrote 'The Tale of Custard the Dragon'?</div>",
       "options": [
-        "A):   W. B. Yeats",
-        "B):   Ted Hughes",
+        "A):   Ted Hughes",
+        "B):   W. B. Yeats",
         "C):   Ogden Nash",
         "D):   Walt Whitman"
       ],
@@ -32,60 +32,60 @@ export const c10EngPo14: ChapterContent = {
       "id": "c10-eng-po14-mcq-2",
       "question": "<div style='text-align: justify;'>Where did Belinda live?</div>",
       "options": [
-        "A):   In a little white house",
-        "B):   In a castle",
-        "C):   On a farm",
-        "D):   In a red cottage"
+        "A):   In a red cottage",
+        "B):   On a farm",
+        "C):   In a castle",
+        "D):   In a little white house"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>'in a little white house'.</div>"
     },
     {
       "id": "c10-eng-po14-mcq-3",
       "question": "<div style='text-align: justify;'>What was the name of the little black kitten?</div>",
       "options": [
-        "A):   Custard",
-        "B):   Blink",
-        "C):   Mustard",
-        "D):   Ink"
+        "A):   Mustard",
+        "B):   Ink",
+        "C):   Custard",
+        "D):   Blink"
       ],
-      "correctAnswer": "D",
+      "correctAnswer": "B",
       "explanation": "<div style='text-align: justify;'>The kitten was called Ink.</div>"
     },
     {
       "id": "c10-eng-po14-mcq-4",
       "question": "<div style='text-align: justify;'>Blink was a little —</div>",
       "options": [
-        "A):   black kitten",
-        "B):   grey mouse",
-        "C):   yellow dog",
-        "D):   pet dragon"
+        "A):   pet dragon",
+        "B):   yellow dog",
+        "C):   black kitten",
+        "D):   grey mouse"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>Blink was a little grey mouse.</div>"
     },
     {
       "id": "c10-eng-po14-mcq-5",
       "question": "<div style='text-align: justify;'>Mustard was a little —</div>",
       "options": [
-        "A):   yellow dog",
-        "B):   grey mouse",
+        "A):   grey mouse",
+        "B):   yellow dog",
         "C):   black kitten",
         "D):   brown horse"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanation": "<div style='text-align: justify;'>Mustard was a little yellow dog.</div>"
     },
     {
       "id": "c10-eng-po14-mcq-6",
       "question": "<div style='text-align: justify;'>What did Custard cry for?</div>",
       "options": [
-        "A):   A new friend",
-        "B):   Food",
-        "C):   A nice safe cage",
+        "A):   A nice safe cage",
+        "B):   A new friend",
+        "C):   Food",
         "D):   A warm bed"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>He was thought to be timid.</div>"
     },
     {
@@ -93,20 +93,20 @@ export const c10EngPo14: ChapterContent = {
       "question": "<div style='text-align: justify;'>Belinda was as brave as a —</div>",
       "options": [
         "A):   tiger in a rage",
-        "B):   barrel full of bears",
-        "C):   lion",
-        "D):   robin"
+        "B):   robin",
+        "C):   barrel full of bears",
+        "D):   lion"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>A comic simile for bravery.</div>"
     },
     {
       "id": "c10-eng-po14-mcq-8",
       "question": "<div style='text-align: justify;'>Mustard was as brave as a —</div>",
       "options": [
-        "A):   dragon",
-        "B):   barrel full of bears",
-        "C):   robin at a worm",
+        "A):   robin at a worm",
+        "B):   dragon",
+        "C):   barrel full of bears",
         "D):   tiger in a rage"
       ],
       "correctAnswer": "D",
@@ -116,37 +116,37 @@ export const c10EngPo14: ChapterContent = {
       "id": "c10-eng-po14-mcq-9",
       "question": "<div style='text-align: justify;'>What did the others rudely call Custard?</div>",
       "options": [
-        "A):   Dragon-boy",
-        "B):   Coward",
-        "C):   Pirate",
-        "D):   Percival"
+        "A):   Coward",
+        "B):   Percival",
+        "C):   Dragon-boy",
+        "D):   Pirate"
       ],
-      "correctAnswer": "D",
+      "correctAnswer": "B",
       "explanation": "<div style='text-align: justify;'>They mockingly called him Percival.</div>"
     },
     {
       "id": "c10-eng-po14-mcq-10",
       "question": "<div style='text-align: justify;'>What did the pirate hold in his teeth?</div>",
       "options": [
-        "A):   A pistol",
-        "B):   A cutlass",
+        "A):   A pipe",
+        "B):   A pistol",
         "C):   A knife",
-        "D):   A pipe"
+        "D):   A cutlass"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>He had a pistol in each hand and a cutlass in his teeth.</div>"
     },
     {
       "id": "c10-eng-po14-mcq-11",
       "question": "<div style='text-align: justify;'>The pirate had one —</div>",
       "options": [
-        "A):   golden tooth",
-        "B):   glass eye",
-        "C):   wooden leg",
-        "D):   hooked hand"
+        "A):   hooked hand",
+        "B):   wooden leg",
+        "C):   golden tooth",
+        "D):   glass eye"
       ],
-      "correctAnswer": "C",
-      "explanation": "<div style='text-align: justify;'>'one leg wooden'.</div>"
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>'His beard was black, one leg was wood'.</div>"
     },
     {
       "id": "c10-eng-po14-mcq-12",
@@ -200,24 +200,24 @@ export const c10EngPo14: ChapterContent = {
       "id": "c10-eng-po14-mcq-16",
       "question": "<div style='text-align: justify;'>The rhyme scheme of the poem is —</div>",
       "options": [
-        "A):   abab",
-        "B):   aabb",
-        "C):   abba",
-        "D):   abcb"
+        "A):   aabb",
+        "B):   abcb",
+        "C):   abab",
+        "D):   abba"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>It is written in rhyming couplets.</div>"
     },
     {
       "id": "c10-eng-po14-mcq-17",
       "question": "<div style='text-align: justify;'>'Realio, trulio' are examples of —</div>",
       "options": [
-        "A):   similes",
-        "B):   coined (made-up) words",
-        "C):   metaphors",
-        "D):   refrains"
+        "A):   metaphors",
+        "B):   refrains",
+        "C):   coined (made-up) words",
+        "D):   similes"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>Nash invents playful words.</div>"
     },
     {
@@ -225,11 +225,11 @@ export const c10EngPo14: ChapterContent = {
       "question": "<div style='text-align: justify;'>The poem is mainly —</div>",
       "options": [
         "A):   patriotic",
-        "B):   tragic",
+        "B):   humorous",
         "C):   religious",
-        "D):   humorous"
+        "D):   tragic"
       ],
-      "correctAnswer": "D",
+      "correctAnswer": "B",
       "explanation": "<div style='text-align: justify;'>It is a light, comic ballad.</div>"
     },
     {
@@ -246,15 +246,15 @@ export const c10EngPo14: ChapterContent = {
     },
     {
       "id": "c10-eng-po14-mcq-20",
-      "question": "<div style='text-align: justify;'>Assertion (A): Belinda and the pets fought the pirate bravely. Reason (R): They often boasted of their bravery.</div>",
+      "question": "<div style='text-align: justify;'>Assertion (A): Mustard fled when the pirate came. Reason (R): Mustard was the only pet who fought the pirate.</div>",
       "options": [
         "A):   Both A and R are true and R is the correct explanation of A.",
         "B):   Both A and R are true but R is not the correct explanation of A.",
         "C):   A is true but R is false.",
         "D):   A is false but R is true."
       ],
-      "correctAnswer": "D",
-      "explanation": "<div style='text-align: justify;'>They ran away; R is true.</div>"
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>A is true; R is false — only Custard fought the pirate.</div>"
     }
   ],
   "summary": [],

@@ -2670,6 +2670,12 @@ export const lazyChapterLoaders: Record<string, () => any> = {
   "c10-eng-po14": () => require("./content/c10-eng-po14").c10EngPo14,
   "c10-eng-po15": () => require("./content/c10-eng-po15").c10EngPo15,
   "c10-eng-s16": () => require("./content/c10-eng-s16").c10EngS16,
+  "c10-eng-s17": () => require("./content/c10-eng-s17").c10EngS17,
+  "c10-eng-s18": () => require("./content/c10-eng-s18").c10EngS18,
+  "c10-eng-s19": () => require("./content/c10-eng-s19").c10EngS19,
+  "c10-eng-pl20": () => require("./content/c10-eng-pl20").c10EngPl20,
+  "c10-eng-g1": () => require("./content/c10-eng-g1").c10EngG1,
+  "c10-eng-g2": () => require("./content/c10-eng-g2").c10EngG2,
 };
 
 

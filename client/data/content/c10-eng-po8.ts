@@ -20,36 +20,36 @@ export const c10EngPo8: ChapterContent = {
       "id": "c10-eng-po8-mcq-1",
       "question": "<div style='text-align: justify;'>Who wrote the poem 'Prayer'?</div>",
       "options": [
-        "A):   Ved Pal Deep",
-        "B):   Walt Whitman",
-        "C):   G. A. Mehjoor",
-        "D):   Kamala Das"
+        "A):   Walt Whitman",
+        "B):   Kamala Das",
+        "C):   Ved Pal Deep",
+        "D):   G. A. Mehjoor"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>It was written in Kashmiri by Mehjoor.</div>"
     },
     {
       "id": "c10-eng-po8-mcq-2",
       "question": "<div style='text-align: justify;'>Who translated 'Prayer' into English?</div>",
       "options": [
-        "A):   Prof. G. R. Malik",
-        "B):   Shiv Nath",
-        "C):   Ravina Aggarwal",
-        "D):   Charles Lamb"
+        "A):   Charles Lamb",
+        "B):   Ravina Aggarwal",
+        "C):   Shiv Nath",
+        "D):   Prof. G. R. Malik"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>It was translated from Kashmiri by Prof. G. R. Malik.</div>"
     },
     {
       "id": "c10-eng-po8-mcq-3",
       "question": "<div style='text-align: justify;'>In which language was 'Prayer' originally written?</div>",
       "options": [
-        "A):   Persian",
-        "B):   Dogri",
-        "C):   Urdu",
-        "D):   Kashmiri"
+        "A):   Dogri",
+        "B):   Urdu",
+        "C):   Kashmiri",
+        "D):   Persian"
       ],
-      "correctAnswer": "D",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>Mehjoor wrote in Kashmiri.</div>"
     },
     {
@@ -58,8 +58,8 @@ export const c10EngPo8: ChapterContent = {
       "options": [
         "A):   Bulbul-e-Hind",
         "B):   Shair-e-Kashmir",
-        "C):   Shair-e-Mashriq",
-        "D):   Father of Free Verse"
+        "C):   Father of Free Verse",
+        "D):   Shair-e-Mashriq"
       ],
       "correctAnswer": "B",
       "explanation": "<div style='text-align: justify;'>He is honoured as the Poet of Kashmir.</div>"
@@ -68,45 +68,45 @@ export const c10EngPo8: ChapterContent = {
       "id": "c10-eng-po8-mcq-5",
       "question": "<div style='text-align: justify;'>The poet asks God to lead him to the way of —</div>",
       "options": [
-        "A):   truth",
-        "B):   wealth",
-        "C):   power",
-        "D):   fame"
+        "A):   power",
+        "B):   fame",
+        "C):   truth",
+        "D):   wealth"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>'lead me to the way of truth'.</div>"
     },
     {
       "id": "c10-eng-po8-mcq-6",
       "question": "<div style='text-align: justify;'>What does the poet ask God to pour into him?</div>",
       "options": [
-        "A):   Courage",
-        "B):   Wealth",
-        "C):   The nectar of knowledge",
+        "A):   The nectar of knowledge",
+        "B):   Courage",
+        "C):   Wealth",
         "D):   Rain"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>He is tired of ignorance.</div>"
     },
     {
       "id": "c10-eng-po8-mcq-7",
       "question": "<div style='text-align: justify;'>From which of these does the poet ask to be saved?</div>",
       "options": [
-        "A):   Love and hope",
-        "B):   Sloth, infirmity and doubt",
+        "A):   Sloth, infirmity and doubt",
+        "B):   Songs and dance",
         "C):   Truth and knowledge",
-        "D):   Songs and dance"
+        "D):   Love and hope"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>He asks for zest and hope instead.</div>"
     },
     {
       "id": "c10-eng-po8-mcq-8",
       "question": "<div style='text-align: justify;'>The poet does not want to chant —</div>",
       "options": [
-        "A):   songs of life",
-        "B):   songs of love",
-        "C):   prayers",
+        "A):   prayers",
+        "B):   songs of life",
+        "C):   songs of love",
         "D):   sleep-inducing tales"
       ],
       "correctAnswer": "D",
@@ -116,36 +116,36 @@ export const c10EngPo8: ChapterContent = {
       "id": "c10-eng-po8-mcq-9",
       "question": "<div style='text-align: justify;'>The poet wants to sing songs which —</div>",
       "options": [
-        "A):   spread fear",
+        "A):   praise kings",
         "B):   make people sleep",
-        "C):   praise kings",
-        "D):   infuse life into the dead"
+        "C):   infuse life into the dead",
+        "D):   spread fear"
       ],
-      "correctAnswer": "D",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>His songs should awaken inactive people.</div>"
     },
     {
       "id": "c10-eng-po8-mcq-10",
       "question": "<div style='text-align: justify;'>His songs should make —</div>",
       "options": [
-        "A):   people rich",
-        "B):   bitterness and hatred vanish",
-        "C):   rain fall",
+        "A):   rain fall",
+        "B):   people rich",
+        "C):   bitterness and hatred vanish",
         "D):   enemies fight"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>He wants to inspire love.</div>"
     },
     {
       "id": "c10-eng-po8-mcq-11",
       "question": "<div style='text-align: justify;'>'Vernal' means related to —</div>",
       "options": [
-        "A):   summer",
-        "B):   winter",
-        "C):   spring",
+        "A):   winter",
+        "B):   spring",
+        "C):   summer",
         "D):   autumn"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanation": "<div style='text-align: justify;'>'the earliest vernal breeze'.</div>"
     },
     {
@@ -153,9 +153,9 @@ export const c10EngPo8: ChapterContent = {
       "question": "<div style='text-align: justify;'>'Like dew, how long shall I wait…' is an example of —</div>",
       "options": [
         "A):   simile",
-        "B):   metaphor",
-        "C):   personification",
-        "D):   alliteration"
+        "B):   personification",
+        "C):   alliteration",
+        "D):   metaphor"
       ],
       "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>'Like' marks a simile.</div>"
@@ -164,24 +164,24 @@ export const c10EngPo8: ChapterContent = {
       "id": "c10-eng-po8-mcq-13",
       "question": "<div style='text-align: justify;'>'The nectar of knowledge' is an example of —</div>",
       "options": [
-        "A):   hyperbole",
-        "B):   simile",
-        "C):   onomatopoeia",
-        "D):   metaphor"
+        "A):   metaphor",
+        "B):   hyperbole",
+        "C):   simile",
+        "D):   onomatopoeia"
       ],
-      "correctAnswer": "D",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>Knowledge is directly called nectar.</div>"
     },
     {
       "id": "c10-eng-po8-mcq-14",
       "question": "<div style='text-align: justify;'>The 'burning heat of summer' stands for —</div>",
       "options": [
-        "A):   hardships and old age",
-        "B):   the sun",
-        "C):   a festival",
+        "A):   the sun",
+        "B):   a festival",
+        "C):   hardships and old age",
         "D):   anger"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>It may wither the poet grey.</div>"
     },
     {
@@ -190,20 +190,20 @@ export const c10EngPo8: ChapterContent = {
       "options": [
         "A):   a king",
         "B):   a saint",
-        "C):   far from humanity",
-        "D):   a scholar"
+        "C):   a scholar",
+        "D):   far from humanity"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>He admits his weaknesses humbly.</div>"
     },
     {
       "id": "c10-eng-po8-mcq-16",
       "question": "<div style='text-align: justify;'>'Subject me not to trials' means —</div>",
       "options": [
-        "A):   do not punish me in court",
+        "A):   do not make me travel",
         "B):   do not test me with hardships",
-        "C):   do not give me exams",
-        "D):   do not make me travel"
+        "C):   do not punish me in court",
+        "D):   do not give me exams"
       ],
       "correctAnswer": "B",
       "explanation": "<div style='text-align: justify;'>He fears he may fail God's tests.</div>"
@@ -212,24 +212,24 @@ export const c10EngPo8: ChapterContent = {
       "id": "c10-eng-po8-mcq-17",
       "question": "<div style='text-align: justify;'>'Mehjoor' means —</div>",
       "options": [
-        "A):   the beloved",
-        "B):   the forsaken one",
+        "A):   the forsaken one",
+        "B):   the brave one",
         "C):   the wise one",
-        "D):   the brave one"
+        "D):   the beloved"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>He plays on his pen name in the last couplet.</div>"
     },
     {
       "id": "c10-eng-po8-mcq-18",
       "question": "<div style='text-align: justify;'>Whom does the poet ask never to abandon him?</div>",
       "options": [
-        "A):   His family",
-        "B):   His friends",
-        "C):   His people",
-        "D):   The Lord"
+        "A):   His friends",
+        "B):   The Lord",
+        "C):   His family",
+        "D):   His people"
       ],
-      "correctAnswer": "D",
+      "correctAnswer": "B",
       "explanation": "<div style='text-align: justify;'>People have deserted him, but not God.</div>"
     },
     {
@@ -246,15 +246,15 @@ export const c10EngPo8: ChapterContent = {
     },
     {
       "id": "c10-eng-po8-mcq-20",
-      "question": "<div style='text-align: justify;'>Assertion (A): The poet wants to sing sleep-inducing tales. Reason (R): He wants his songs to inspire love.</div>",
+      "question": "<div style='text-align: justify;'>Assertion (A): The poet wants to sing songs that infuse life into the dead. Reason (R): He wants his songs to put people to sleep.</div>",
       "options": [
         "A):   Both A and R are true and R is the correct explanation of A.",
         "B):   Both A and R are true but R is not the correct explanation of A.",
         "C):   A is true but R is false.",
         "D):   A is false but R is true."
       ],
-      "correctAnswer": "D",
-      "explanation": "<div style='text-align: justify;'>He rejects such tales; R is true.</div>"
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>A is true; R is false — he rejects 'sleep-inducing tales'.</div>"
     }
   ],
   "summary": [],
