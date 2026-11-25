@@ -1,531 +1,280 @@
 import { ChapterContent } from "../types";
 
-const themeColor = "#FF00FF"; // Purple theme color for Civics/Political Science
-
 export const sstCivC95: ChapterContent = {
-  id: "sst-civ-c9-5",
-  number: 5,
-  title: "Democratic Rights",
-  introduction:
-    "This chapter explains the importance of rights in a democracy. It discusses the Fundamental Rights guaranteed by the Indian Constitution, how they are protected by the judiciary, and how their scope has expanded over time.",
-  definitions: [
-    {
-      term: "Rights",
-      description:
-        "Reasonable claims of persons recognized by society and sanctioned by law, necessary for lead a dignified life.",
-    },
-    {
-      term: "Fundamental Rights",
-      description:
-        "A set of basic human rights guaranteed by the Constitution of India to all its citizens, which are protected by the courts.",
-    },
-    {
-      term: "Covenant",
-      description:
-        "A formal, solemn, and legally binding agreement or treaty between countries or individuals.",
-    },
-    {
-      term: "Writ",
-      description:
-        "A formal written order issued by a court (Supreme Court or High Court) directing an authority to act or abstain from acting in a certain way, to safeguard fundamental rights.",
-    },
-    {
-      term: "Human Rights",
-      description:
-        "Universal moral rights that every human being is entitled to enjoy, regardless of nationality, race, gender, or religion.",
-    },
-  ],
-  keyPoints: [
-    "Why Do We Need Rights?: Rights protect citizens from the oppression of the government and the tyranny of the majority, ensuring dignity and equal opportunity.",
-    "Fundamental Rights in India: The Constitution guarantees 6 Fundamental Rights: Right to Equality, Right to Freedom, Right against Exploitation, Right to Freedom of Religion, Cultural & Educational Rights, and Right to Constitutional Remedies.",
-    "Right to Equality: Prohibits discrimination on grounds of religion, race, caste, sex, or birth. Establishes equality before the law and abolishes untouchability.",
-    "Right to Freedom: Guarantees speech, assembly, association, movement, residence, and profession. Protects life and personal liberty (Article 21).",
-    "Right against Exploitation: Bans trafficking in human beings, forced labor (begar), and employment of children under 14 in hazardous jobs.",
-    "Right to Freedom of Religion: Gives citizens the freedom to profess, practice, and propagate any religion. Establishes India as a secular state.",
-    "Cultural and Educational Rights: Allows minorities to conserve their unique language, script, and culture, and establish educational institutions of their choice.",
-    "Right to Constitutional Remedies: The 'heart and soul' of the Constitution (Article 32). Enables citizens to approach courts directly to enforce their rights.",
-  ],
-  formulas: [],
-  crux: [
-    "Rights are not absolute; they are subject to reasonable restrictions to protect public order, national security, and morality.",
-    "The Right to Constitutional Remedies is what makes all other fundamental rights justiciable and effective.",
-    "The scope of rights has expanded over time to include right to information, education, privacy, and clean environment.",
-  ],
-  mcqs: [
-    {
-      id: "sst-civ-c9-5-mcq-1",
-      question: "Which of the following is not an instance of the exercise of a fundamental right?",
-      options: [
-        "Workers from Bihar go to the Punjab to work on the farms",
-        "Christian missions set up a chain of missionary schools",
-        "Men and women government employees get the same salary",
-        "Parents' property is inherited by their children",
-      ],
-      correctAnswer: "d",
-    },
-    {
-      id: "sst-civ-c9-5-mcq-2",
-      question: "Which of the following freedoms is not available to an Indian citizen?",
-      options: [
-        "Freedom to criticise the government",
-        "Freedom to participate in armed revolution",
-        "Freedom to start a movement to change the government",
-        "Freedom to oppose the central values of the Constitution",
-      ],
-      correctAnswer: "b",
-    },
-    {
-      id: "sst-civ-c9-5-mcq-3",
-      question: "Which of the following rights is explicitly available under the Indian Constitution?",
-      options: [
-        "Right to work",
-        "Right to adequate livelihood",
-        "Right to protect one's culture",
-        "Right to privacy",
-      ],
-      correctAnswer: "c",
-    },
-    {
-      id: "sst-civ-c9-5-mcq-4",
-      question: "Which Fundamental Right bans forced labor (begar) and child labor in hazardous occupations?",
-      options: [
-        "Right to Equality",
-        "Right to Freedom",
-        "Right against Exploitation",
-        "Right to Freedom of Religion",
-      ],
-      correctAnswer: "c",
-    },
-    {
-      id: "sst-civ-c9-5-mcq-5",
-      question: "Dr. B.R. Ambedkar called which right the 'heart and soul' of the Indian Constitution?",
-      options: [
-        "Right to Equality",
-        "Right to Freedom",
-        "Right to Freedom of Religion",
-        "Right to Constitutional Remedies",
-      ],
-      correctAnswer: "d",
-    },
-    {
-      id: "sst-civ-c9-5-mcq-6",
-      question: "In India, untouchability is abolished and its practice is a punishable crime under the:",
-      options: [
-        "Right to Freedom",
-        "Right against Exploitation",
-        "Right to Equality",
-        "Cultural and Educational Rights",
-      ],
-      correctAnswer: "c",
-    },
-    {
-      id: "sst-civ-c9-5-mcq-7",
-      question: "Which independent body was set up by the Indian government in 1993 to protect human rights?",
-      options: [
-        "National Human Rights Commission",
-        "Election Commission",
-        "Planning Commission",
-        "Supreme Court Council",
-      ],
-      correctAnswer: "a",
-    },
-    {
-      id: "sst-civ-c9-5-mcq-8",
-      question: "Under the Right to Freedom, the government can impose reasonable restrictions on citizens in the interest of:",
-      options: [
-        "The ruling political party",
-        "National security and public order",
-        "Corporate businesses",
-        "Religious leaders",
-      ],
-      correctAnswer: "b",
-    },
-    {
-      id: "sst-civ-c9-5-mcq-9",
-      question: "A formal written order issued by a High Court or the Supreme Court to safeguard rights is called a:",
-      options: ["Statute", "Writ", "Memorandum", "Deed"],
-      correctAnswer: "b",
-    },
-    {
-      id: "sst-civ-c9-5-mcq-10",
-      question: "The Right to Education (RTE) makes free and compulsory education a fundamental right for children of age:",
-      options: ["0 to 6 years", "6 to 14 years", "14 to 18 years", "6 to 18 years"],
-      correctAnswer: "b",
-    },
-  ],
-  summary: [
-    "Rights are claims of citizens that allow them to live securely and respectfully without fear.",
-    "Fundamental Rights in Part III of the Constitution act as the bedrock of individual freedom in India.",
-    "Courts enforce fundamental rights using writs, making the Right to Constitutional Remedies the key protector.",
-    "Rights continue to expand through judicial interpretations and international covenants.",
-  ],
-  isHtmlView: true,
-  htmlOverview: `
-    <div style="padding: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: transparent;">
-      <!-- Key Concepts Introduction -->
-      <div style="background-color: #1E1E2E; border: 1px solid rgba(156, 39, 176, 0.25); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 20px; font-weight: 700; margin-top: 0; margin-bottom: 12px; display: flex; align-items: center;">
-          <span style="margin-right: 8px; font-size: 22px;">🛡️</span> Introduction
-        </h3>
-        <p style="color: #E0E0E0; font-size: 15px; line-height: 1.6; text-align: justify; margin: 0; font-weight: 300;">
-          Rights are essential claims that every citizen holds in a democracy. This chapter discusses what rights are, why they are needed, and explores the Fundamental Rights guaranteed by the Indian Constitution. We will also analyze how courts protect these rights and how their scope is constantly expanding to meet modern challenges.
-        </p>
-      </div>
-
-      <!-- Why Do We Need Rights? -->
-      <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 600; margin-top: 0; margin-bottom: 14px; display: flex; align-items: center;">
-          <span style="margin-right: 8px; font-size: 18px;">📌</span> The Six Fundamental Rights
-        </h3>
-        <ul style="color: #B3B3C6; font-size: 14.5px; line-height: 1.7; margin: 0; padding-left: 20px; text-align: justify;">
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">Right to Equality:</b> Equality before law, no discrimination, equal opportunities, and abolition of untouchability.</li>
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">Right to Freedom:</b> Speech, peaceful assembly, association, movement, residence, and profession. Protection of life and liberty.</li>
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">Right against Exploitation:</b> Prohibition of human trafficking, forced labor (begar), and hazardous child labor.</li>
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">Right to Freedom of Religion:</b> Freedom of conscience, and right to profess, practice, and propagate any religion.</li>
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">Cultural and Educational Rights:</b> Protection of minority languages, cultures, and their right to run educational institutions.</li>
-          <li style="margin-bottom: 0;"><b style="color: ${themeColor};">Right to Constitutional Remedies:</b> Direct access to Supreme/High Courts to protect other rights via writs.</li>
-        </ul>
-      </div>
-      
-      <!-- Key Terms Glossy Box -->
-      <div style="background: rgba(156, 39, 176, 0.05); border: 1.5px solid rgba(156, 39, 176, 0.25); border-radius: 16px; padding: 20px; box-shadow: 0 4px 30px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 600; margin-top: 0; margin-bottom: 12px;">🔑 Key Terms</h3>
-        <div style="color: #E0E0E0; font-size: 14px; line-height: 1.6; text-align: justify;">
-          <p style="margin-top: 0; margin-bottom: 8px;"><b style="color: ${themeColor};">Begar:</b> Forced labor without payment, where a worker is compelled to serve a master for free.</p>
-          <p style="margin-bottom: 8px;"><b style="color: ${themeColor};">PIL (Public Interest Litigation):</b> A legal petition filed in court by any citizen to safeguard rights of public interest or weaker sections.</p>
-          <p style="margin-bottom: 0;"><b style="color: ${themeColor};">NHRC:</b> National Human Rights Commission, an independent agency that monitors and investigates human rights violations.</p>
-        </div>
-      </div>
-    </div>
-  `,
-  htmlExercises: {
-    "ex-sst-qa": `
-      <div style="padding: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: transparent;">
-        
-        <!-- Q1 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
-            Q1. Which of the following is not an instance of an exercise of a fundamental right?
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            Answer: Option <b style="color: ${themeColor};">(d) Parents' property is inherited by their children.</b>
-            <p style="margin: 6px 0 0 0;">
-              <b>Reason:</b> Inheriting property is a legal/constitutional right (under Article 300A), but it is not a Fundamental Right. Options (a), (b), and (c) represent Right to Freedom, Cultural & Educational Rights, and Right to Equality, respectively.
-            </p>
-          </div>
-        </div>
-
-        <!-- Q2 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
-            Q2. Which of the following freedoms is not available to an Indian citizen?
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            Answer: Option <b style="color: ${themeColor};">(b) Freedom to participate in armed revolution.</b>
-            <p style="margin: 6px 0 0 0;">
-              <b>Reason:</b> The Constitution grants the right to assemble peacefully and without arms. Participating in an armed revolution threatens public order and national security, which is illegal.
-            </p>
-          </div>
-        </div>
-
-        <!-- Q3 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
-            Q3. Which of the following rights is available under the Indian Constitution?
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            Answer: Option <b style="color: ${themeColor};">(c) Right to protect one's culture.</b>
-            <p style="margin: 6px 0 0 0;">
-              <b>Reason:</b> This is explicitly guaranteed as a Fundamental Right under Cultural and Educational Rights (Article 29). Right to work and livelihood are under Directive Principles.
-            </p>
-          </div>
-        </div>
-
-        <!-- Q4 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
-            Q4. Name the Fundamental Right under which each of the following rights falls:
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
-              <li style="margin-bottom: 8px;"><b>(a) Freedom to propagate one's religion:</b> <span style="color: ${themeColor}; font-weight: 600;">Right to Freedom of Religion</span></li>
-              <li style="margin-bottom: 8px;"><b>(b) Right to life:</b> <span style="color: ${themeColor}; font-weight: 600;">Right to Freedom</span> (Article 21)</li>
-              <li style="margin-bottom: 8px;"><b>(c) Abolition of untouchability:</b> <span style="color: ${themeColor}; font-weight: 600;">Right to Equality</span> (Article 17)</li>
-              <li style="margin-bottom: 0;"><b>(d) Ban on bonded labour:</b> <span style="color: ${themeColor}; font-weight: 600;">Right against Exploitation</span> (Article 23)</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q5 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
-            Q5. Which of these statements about the relationship between democracy and rights is more valid? Give reasons for your preference.
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            Answer: Statement <b style="color: ${themeColor};">(a) Every country that is a democracy gives rights to its citizens.</b> is more valid.
-            <p style="margin: 6px 0 0 0;">
-              <b>Reason:</b> A democracy is based on elections, debate, and equality, which are impossible without rights like freedom of speech, voting, and assembly. While some non-democratic nations can grant civil rights, a democracy cannot exist without guaranteeing citizen rights.
-            </p>
-          </div>
-        </div>
-
-        <!-- Q6 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
-            Q6. Are these restrictions on the right to freedom justified? Give reasons for your answer.
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
-              <li style="margin-bottom: 10px;">
-                <b>(a) Indian citizens need permission to visit some border areas for reasons of security:</b><br/>
-                <span style="color: ${themeColor}; font-weight: 600;">Justified.</span> National security is supreme, and restricting entry prevents espionage, infiltration, and threats to civilian lives.
-              </li>
-              <li style="margin-bottom: 10px;">
-                <b>(b) Outsiders are not allowed to buy property in some areas to protect local communities:</b><br/>
-                <span style="color: ${themeColor}; font-weight: 600;">Justified.</span> It protects the land rights, culture, and economic interests of vulnerable indigenous/tribal groups.
-              </li>
-              <li style="margin-bottom: 0;">
-                <b>(c) The government bans a book that can go against the ruling party in the next elections:</b><br/>
-                <span style="color: #EF5350; font-weight: 600;">Not justified.</span> It violates the Right to Freedom of Speech and Expression. Criticism of the government is a key democratic value.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q7 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
-            Q7. Manoj went to a college to apply for admission into an MBA course. The clerk refused to take his application and said "You, the son of a sweeper, wish to be a manager! Has anyone done this job in your community? Go to the municipality office and apply for a sweeper’s position". Which of Manoj’s fundamental rights are being violated in this instance? Spell these out in a letter from Manoj to the district collector.
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <b style="color: #FFFFFF; font-size: 16px; display: block; margin-bottom: 8px;">Violated Fundamental Rights:</b>
-            <div style="background: rgba(156, 39, 176, 0.05); border-left: 3px solid ${themeColor}; padding: 10px 14px; margin-bottom: 16px; border-radius: 0 8px 8px 0;">
-              <p style="margin: 0 0 6px 0;"><span style="color: ${themeColor}; font-weight: bold;">1. Right to Equality (Article 15):</span> Refusing admission based on caste or parent's occupation is illegal discrimination.</p>
-              <p style="margin: 0 0 6px 0;"><span style="color: ${themeColor}; font-weight: bold;">2. Right to Freedom (Article 19(1)(g)):</span> Manoj has the freedom to choose any occupation, trade, or education he wishes.</p>
-              <p style="margin: 0;"><span style="color: ${themeColor}; font-weight: bold;">3. Abolition of Untouchability (Article 17):</span> The clerk's comment represents caste-based social exclusion, which is a punishable offense.</p>
-            </div>
-            
-            <b style="color: #FFFFFF; font-size: 16px; display: block; margin-bottom: 8px;">Complaint Letter to the District Collector:</b>
-            <div style="background-color: #151522; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 18px; font-family: monospace; font-size: 12px; color: #C5C5D2; line-height: 1.5; white-space: pre-wrap; box-shadow: inset 0 2px 8px rgba(0,0,0,0.3);">
-To,
-The District Collector,
-Hoshangabad, Madhya Pradesh.
-
-Subject: Complaint regarding caste discrimination and violation of fundamental rights.
-
-Respected Sir,
-
-I write to report a serious incident of discrimination at [College Name]. When applying for the MBA course, the admissions clerk refused to accept my application, declaring: "You, the son of a sweeper, wish to be a manager! Go and apply for a sweeper's position."
-
-This is a direct violation of my Right to Equality (Article 15) and Right to Freedom of Occupation (Article 19(1)(g)). It also constitutes caste-based discrimination under the Abolition of Untouchability (Article 17).
-
-I request you to intervene, register a case against the clerk, and ensure my application is processed fairly.
-
-Thanking you,
-Yours sincerely,
-Manoj
-            </div>
-          </div>
-        </div>
-
-        <!-- Q8 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
-            Q8. When Madhurima went to the property registration office, the registrar told her, "You can’t write your name as Madhurima Banerjee d/o A. K. Banerjee. You are married, so you must give your husband’s name. Your husband’s surname is Rao. So your name should be changed to Madhurima Rao." She did not agree. She said "If my husband’s name has not changed after marriage, why should mine?" In your opinion who is right in this dispute? And why?
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <b style="color: #4CAF50; font-size: 16px; display: block; margin-bottom: 10px;">Verdict: Madhurima is completely right in this dispute.</b>
-            
-            <!-- Comparison Columns -->
-            <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 16px;">
-              <div style="background: rgba(244, 67, 54, 0.08); border-left: 3px solid #F44336; padding: 10px 14px; border-radius: 4px;">
-                <span style="color: #EF5350; font-weight: bold; display: block; font-size: 13px; margin-bottom: 4px;">❌ Registrar's Stand (Wrong)</span>
-                Mandates that a married woman must use her husband's surname and father-in-law's name, treating women as dependent entities without independent legal identity.
-              </div>
-              <div style="background: rgba(76, 175, 80, 0.08); border-left: 3px solid #4CAF50; padding: 10px 14px; border-radius: 4px;">
-                <span style="color: #81C784; font-weight: bold; display: block; font-size: 13px; margin-bottom: 4px;">✅ Madhurima's Stand (Right)</span>
-                Asserts that since marriage does not change the husband's name, it shouldn't force a change in the wife's name. She chooses to keep her maiden identity.
-              </div>
-            </div>
-
-            <p style="margin: 0;">
-              <b>Why?</b> In India, no law obligates a woman to change her surname after marriage. The Registrar's demand violates the <b>Right to Equality (Article 14)</b> and <b>Article 15</b> (prohibition of gender discrimination). Forcing a surname change is a patriarchal practice that denies women equal status under the law.
-            </p>
-          </div>
-        </div>
-
-        <!-- Q9 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
-            Q9. Thousands of tribals and other forest dwellers gathered at Piparia in Hoshangabad district in Madhya Pradesh to protest against their proposed displacement from the Satpura National Park, Bori Wildlife Sanctuary and Panchmarhi Wildlife Sanctuary. They argue that such a displacement is an attack on their livelihood and beliefs. Government claims that their displacement is essential for the development of the area and for protection of wildlife. Write a petition on behalf of the forest dwellers to the NHRC, a response from the government and a report of the NHRC on this matter.
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify; display: flex; flex-direction: column; gap: 16px;">
-            
-            <!-- Petition Card -->
-            <div style="background-color: rgba(3, 169, 244, 0.04); border: 1px solid rgba(3, 169, 244, 0.2); border-radius: 12px; padding: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-              <span style="color: #03A9F4; font-weight: 700; display: flex; align-items: center; gap: 6px; font-size: 14.2px; margin-bottom: 6px;">
-                📝 1. Petition to NHRC (on behalf of Forest Dwellers)
-              </span>
-              <p style="margin: 0; font-size: 13.2px; color: #E0E0E0; line-height: 1.5;">
-                "We have inhabited these forests peacefully for generations. The eviction order violates our **Right to Livelihood (Article 21)** and **Cultural Rights (Article 29)**. Displacing us without consent robs us of our survival. We request the NHRC to stay the evictions and protect our human rights."
-              </p>
-            </div>
-
-            <!-- Government Response Card -->
-            <div style="background-color: rgba(255, 152, 0, 0.04); border: 1px solid rgba(255, 152, 0, 0.2); border-radius: 12px; padding: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-              <span style="color: #FF9800; font-weight: 700; display: flex; align-items: center; gap: 6px; font-size: 14.2px; margin-bottom: 6px;">
-                🏛️ 2. Government Response to NHRC
-              </span>
-              <p style="margin: 0; font-size: 13.2px; color: #E0E0E0; line-height: 1.5;">
-                "Conservation of Bori Wildlife Sanctuary and Satpura National Park is vital to protect endangered species and biodiversity. The displacement is necessary for environmental preservation. We assure a full rehabilitation package, including alternative agricultural land, housing, and financial aid."
-              </p>
-            </div>
-
-            <!-- NHRC Report Card -->
-            <div style="background-color: rgba(76, 175, 80, 0.04); border: 1px solid rgba(76, 175, 80, 0.2); border-radius: 12px; padding: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-              <span style="color: #4CAF50; font-weight: 700; display: flex; align-items: center; gap: 6px; font-size: 14.2px; margin-bottom: 6px;">
-                ⚖️ 3. NHRC Report & Directives
-              </span>
-              <p style="margin: 0; font-size: 13.2px; color: #E0E0E0; line-height: 1.5;">
-                "While environmental protection is key, the fundamental rights of forest dwellers cannot be ignored. The NHRC directs the government to suspend evictions immediately. No displacement shall take place until alternative lands are allotted, and schools, drinking water, and infrastructure are constructed at the new sites."
-              </p>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- Q10 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
-            Q10. Draw a web interconnecting different rights discussed in this chapter. For example right to freedom of movement is connected to the freedom of occupation. One reason for this is that freedom of movement enables a person to go to place of work within one’s village or city or another village, city or state. Similarly this right can be used for pilgrimage, connected with freedom to follow one’s religion. Draw a circle for each right and mark arrows that show connection between or among different rights. For each arrow, give an example that shows the linkage.
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <span style="display: block; margin-bottom: 10px; font-weight: 600;">Interconnection of Fundamental Rights (Linkage Web):</span>
-            
-            <!-- SVG Web Graphic -->
-            <div style="background: #181824; border: 1px solid rgba(156, 39, 176, 0.2); border-radius: 12px; padding: 12px; margin-bottom: 16px; box-shadow: inset 0 2px 8px rgba(0,0,0,0.3);">
-              <svg viewBox="0 0 500 420" style="width: 100%; height: auto; display: block; margin: 0 auto;">
-                <defs>
-                  <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-                    <feGaussianBlur stdDeviation="5" result="blur" />
-                    <feComposite in="SourceGraphic" in2="blur" operator="over" />
-                  </filter>
-                  <marker id="arrow" viewBox="0 0 10 10" refX="28" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-                    <path d="M 0 0 L 10 5 L 0 10 z" fill="#9C27B0" />
-                  </marker>
-                  <radialGradient id="nodeGrad" cx="50%" cy="50%" r="50%">
-                    <stop offset="0%" stop-color="#311B92" />
-                    <stop offset="100%" stop-color="#150A24" />
-                  </radialGradient>
-                  <radialGradient id="centerNodeGrad" cx="50%" cy="50%" r="50%">
-                    <stop offset="0%" stop-color="#880E4F" />
-                    <stop offset="100%" stop-color="#3B0018" />
-                  </radialGradient>
-                </defs>
-
-                <!-- Connections (Arrows) -->
-                <!-- A: Freedom -> Equality -->
-                <path d="M 370 140 Q 250 80 130 140" fill="none" stroke="#9C27B0" stroke-width="2.5" stroke-dasharray="2" marker-end="url(#arrow)" />
-                <rect x="235" y="80" width="30" height="20" rx="5" fill="#2E1C4E" stroke="#9C27B0" stroke-width="1" />
-                <text x="250" y="94" fill="#E0E0E0" font-size="12" font-family="sans-serif" font-weight="bold" text-anchor="middle">A</text>
-
-                <!-- B: Freedom of Movement -> Freedom of Occupation -->
-                <path d="M 370 170 Q 370 270 370 270" fill="none" stroke="#9C27B0" stroke-width="2.5" marker-end="url(#arrow)" />
-                <rect x="355" y="210" width="30" height="20" rx="5" fill="#2E1C4E" stroke="#9C27B0" stroke-width="1" />
-                <text x="370" y="224" fill="#E0E0E0" font-size="12" font-family="sans-serif" font-weight="bold" text-anchor="middle">B</text>
-
-                <!-- C: Freedom of Speech/Assembly -> Right against Exploitation -->
-                <path d="M 350 290 Q 250 320 150 290" fill="none" stroke="#9C27B0" stroke-width="2.5" marker-end="url(#arrow)" />
-                <rect x="235" y="295" width="30" height="20" rx="5" fill="#2E1C4E" stroke="#9C27B0" stroke-width="1" />
-                <text x="250" y="309" fill="#E0E0E0" font-size="12" font-family="sans-serif" font-weight="bold" text-anchor="middle">C</text>
-
-                <!-- D: Religion -> Cultural/Educational Rights -->
-                <path d="M 130 270 Q 130 170 130 170" fill="none" stroke="#9C27B0" stroke-width="2.5" marker-end="url(#arrow)" />
-                <rect x="115" y="210" width="30" height="20" rx="5" fill="#2E1C4E" stroke="#9C27B0" stroke-width="1" />
-                <text x="130" y="224" fill="#E0E0E0" font-size="12" font-family="sans-serif" font-weight="bold" text-anchor="middle">D</text>
-
-                <!-- E: Remedies -> All Rights -->
-                <line x1="250" y1="360" x2="250" y2="215" stroke="#E91E63" stroke-width="2" stroke-dasharray="4" marker-end="url(#arrow)" />
-                <rect x="235" y="275" width="30" height="20" rx="5" fill="#4A0D2D" stroke="#E91E63" stroke-width="1" />
-                <text x="250" y="289" fill="#E0E0E0" font-size="12" font-family="sans-serif" font-weight="bold" text-anchor="middle">E</text>
-
-                <!-- Nodes (Rights) -->
-                <!-- 1. Right to Equality -->
-                <g transform="translate(250, 50)" filter="url(#glow)">
-                  <circle r="40" fill="url(#nodeGrad)" stroke="#9C27B0" stroke-width="2" />
-                  <text fill="#FFFFFF" font-size="9" font-family="sans-serif" text-anchor="middle" y="-5">Right to</text>
-                  <text fill="#FFFFFF" font-size="9" font-family="sans-serif" font-weight="bold" text-anchor="middle" y="8">Equality</text>
-                </g>
-
-                <!-- 2. Right to Freedom -->
-                <g transform="translate(370, 150)" filter="url(#glow)">
-                  <circle r="40" fill="url(#nodeGrad)" stroke="#9C27B0" stroke-width="2" />
-                  <text fill="#FFFFFF" font-size="9" font-family="sans-serif" text-anchor="middle" y="-5">Right to</text>
-                  <text fill="#FFFFFF" font-size="9" font-family="sans-serif" font-weight="bold" text-anchor="middle" y="8">Freedom</text>
-                </g>
-
-                <!-- 3. Right against Exploitation -->
-                <g transform="translate(350, 280)" filter="url(#glow)">
-                  <circle r="40" fill="url(#nodeGrad)" stroke="#9C27B0" stroke-width="2" />
-                  <text fill="#FFFFFF" font-size="8" font-family="sans-serif" text-anchor="middle" y="-10">Right against</text>
-                  <text fill="#FFFFFF" font-size="8" font-family="sans-serif" font-weight="bold" text-anchor="middle" y="3">Exploi-</text>
-                  <text fill="#FFFFFF" font-size="8" font-family="sans-serif" font-weight="bold" text-anchor="middle" y="14">tation</text>
-                </g>
-
-                <!-- 4. Right to Freedom of Religion -->
-                <g transform="translate(130, 280)" filter="url(#glow)">
-                  <circle r="40" fill="url(#nodeGrad)" stroke="#9C27B0" stroke-width="2" />
-                  <text fill="#FFFFFF" font-size="9" font-family="sans-serif" text-anchor="middle" y="-8">Freedom of</text>
-                  <text fill="#FFFFFF" font-size="9" font-family="sans-serif" font-weight="bold" text-anchor="middle" y="6">Religion</text>
-                </g>
-
-                <!-- 5. Cultural & Educational Rights -->
-                <g transform="translate(130, 150)" filter="url(#glow)">
-                  <circle r="40" fill="url(#nodeGrad)" stroke="#9C27B0" stroke-width="2" />
-                  <text fill="#FFFFFF" font-size="8" font-family="sans-serif" text-anchor="middle" y="-10">Cultural &</text>
-                  <text fill="#FFFFFF" font-size="8" font-family="sans-serif" font-weight="bold" text-anchor="middle" y="3">Educa-</text>
-                  <text fill="#FFFFFF" font-size="8" font-family="sans-serif" font-weight="bold" text-anchor="middle" y="14">tional</text>
-                </g>
-
-                <!-- 6. Right to Constitutional Remedies -->
-                <g transform="translate(250, 200)" filter="url(#glow)">
-                  <circle r="42" fill="url(#centerNodeGrad)" stroke="#E91E63" stroke-width="2" />
-                  <text fill="#FFFFFF" font-size="9" font-family="sans-serif" text-anchor="middle" y="-10">Constitu-</text>
-                  <text fill="#FFFFFF" font-size="9" font-family="sans-serif" text-anchor="middle" y="2">tional</text>
-                  <text fill="#FFFFFF" font-size="9" font-family="sans-serif" font-weight="bold" text-anchor="middle" y="14">Remedies</text>
-                </g>
-              </svg>
-            </div>
-
-            <!-- Explanation Cards -->
-            <div style="display: flex; flex-direction: column; gap: 8px;">
-              <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 10px 14px;">
-                <b style="color: ${themeColor};">Link A (Freedom & Equality):</b> Freedom of expression is meaningless without equality of opportunity. Everyone must have equal access to platforms to raise voice.
-              </div>
-              <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 10px 14px;">
-                <b style="color: ${themeColor};">Link B (Movement & Occupation):</b> The right to travel and move freely across India enables a person to migrate to other cities and seek any job or occupation.
-              </div>
-              <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 10px 14px;">
-                <b style="color: ${themeColor};">Link C (Assembly & Exploitation):</b> The freedom to assemble and form unions allows workers to organize, hold protests, and raise voices against forced labor (begar).
-              </div>
-              <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 10px 14px;">
-                <b style="color: ${themeColor};">Link D (Religion & Cultural):</b> The freedom to follow any religion allows minority groups to establish their own educational institutions to preserve their culture and language.
-              </div>
-              <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 10px 14px;">
-                <b style="color: #E91E63;">Link E (Remedies & All Rights):</b> The Right to Constitutional Remedies connects all rights. It empowers citizens to approach courts directly via writs if any right is violated.
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    `,
+  "id": "sst-civ-c9-5",
+  "number": 5,
+  "title": "Democratic Rights",
+  "isHtmlView": true,
+  "htmlOverview": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 0, 255, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FF00FF; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FF00FF; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFC2FF; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFC2FF; font-weight: 700; }\n  .hl { color: #FF00FF; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FF00FF; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FF00FF; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(255, 0, 255, 0.10); border: 1.5px dashed #FF00FF; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FF00FF; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 0, 255, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(255, 0, 255, 0.18); border: 1px solid #FF00FF; color: #FFC2FF; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(255, 0, 255, 0.2); color: #FFC2FF; }\n  .q-card .q-text, .q-card .sub-q { color: #FF00FF !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ Chapter at a Glance</div><div class=\"sol-step\"><div class=\"rev\">Elections and institutions are necessary but not sufficient for democracy. A third element — <span class=\"hl\">enjoyment of rights</span> — sets limits that even properly elected rulers must not cross. This chapter looks at life without rights, what rights are, the Fundamental Rights in the Indian Constitution, how they are protected, and how the scope of rights is expanding.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 1. Life without Rights</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Case</th><th>What happened</th></tr><tr><td><b>Guantanamo Bay</b></td><td>About 600 people picked up secretly by US forces after 11 September 2001 and held in a prison near Cuba run by the American Navy; no trial, families and lawyers kept out; Amnesty International reported torture; even the UN Secretary General's call to close it was refused. Anas Jamil El-Banna, 9, wrote to Tony Blair asking why his father was there</td></tr><tr><td><b>Saudi Arabia</b></td><td>Hereditary king selects legislature and executive, appoints judges; no political parties; media cannot report what the king dislikes; no freedom of religion (non-Muslims only in private); one man's testimony equals two women's</td></tr><tr><td><b>Kosovo</b></td><td>Province of Yugoslavia with an Albanian majority; Serb nationalist <b>Milosevic</b>, elected, let the army massacre Albanians (April 1999 — Batisha Hoxha's story); he was later tried by the International Court of Justice for crimes against humanity</td></tr></table></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 2. Rights in a Democracy</div><div class=\"sol-step\"><div class=\"pt\">People want security, dignity and fair play guaranteed to everyone — this is the spirit behind rights.</div><div class=\"pt\"><b>Rights are reasonable claims of persons recognised by society and sanctioned by law.</b></div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Quality</th><th>Meaning</th></tr><tr><td>Reasonable</td><td>A claim must be available equally to others; a right brings an obligation to respect others' rights</td></tr><tr><td>Recognised by society</td><td>What society accepts as rightful; so rights change with time (women's vote)</td></tr><tr><td>Sanctioned by law</td><td>Then they become enforceable; otherwise they stay moral rights</td></tr></table></div><div class=\"sub-q\">Why rights are needed in a democracy</div><div class=\"pt\">Right to vote and to be elected; to express opinions, form parties and take part in politics — needed for democratic elections.</div><div class=\"pt\">Rights <b>protect minorities</b> from oppression by the majority.</div><div class=\"pt\">They are guarantees for when things go wrong; some rights are placed <b>above the government</b> and written in the constitution, because elected governments may attack citizens' rights.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 3. Rights in the Indian Constitution</div><div class=\"sol-step\"><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"300\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"20\" font-size=\"11.5\" fill=\"#FFC2FF\" text-anchor=\"middle\" font-weight=\"700\">Six Fundamental Rights</text><line x1=\"160\" y1=\"160\" x2=\"160.0\" y2=\"60.0\" stroke=\"#4FC3F7\" stroke-width=\"1.4\"/><rect x=\"108.0\" y=\"42.0\" width=\"104\" height=\"36\" rx=\"8\" fill=\"#1E1E2E\" stroke=\"#4FC3F7\" stroke-width=\"1.5\"/><text x=\"160.0\" y=\"57.0\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Right to</text><text x=\"160.0\" y=\"70.0\" font-size=\"9.5\" fill=\"#4FC3F7\" text-anchor=\"middle\" font-weight=\"700\">Equality</text><line x1=\"160\" y1=\"160\" x2=\"246.6\" y2=\"110.0\" stroke=\"#66BB6A\" stroke-width=\"1.4\"/><rect x=\"194.6\" y=\"92.0\" width=\"104\" height=\"36\" rx=\"8\" fill=\"#1E1E2E\" stroke=\"#66BB6A\" stroke-width=\"1.5\"/><text x=\"246.6\" y=\"107.0\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Right to</text><text x=\"246.6\" y=\"120.0\" font-size=\"9.5\" fill=\"#66BB6A\" text-anchor=\"middle\" font-weight=\"700\">Freedom</text><line x1=\"160\" y1=\"160\" x2=\"246.6\" y2=\"210.0\" stroke=\"#FDD835\" stroke-width=\"1.4\"/><rect x=\"194.6\" y=\"192.0\" width=\"104\" height=\"36\" rx=\"8\" fill=\"#1E1E2E\" stroke=\"#FDD835\" stroke-width=\"1.5\"/><text x=\"246.6\" y=\"207.0\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Right against</text><text x=\"246.6\" y=\"220.0\" font-size=\"9.5\" fill=\"#FDD835\" text-anchor=\"middle\" font-weight=\"700\">Exploitation</text><line x1=\"160\" y1=\"160\" x2=\"160.0\" y2=\"260.0\" stroke=\"#FFB74D\" stroke-width=\"1.4\"/><rect x=\"108.0\" y=\"242.0\" width=\"104\" height=\"36\" rx=\"8\" fill=\"#1E1E2E\" stroke=\"#FFB74D\" stroke-width=\"1.5\"/><text x=\"160.0\" y=\"257.0\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Freedom of</text><text x=\"160.0\" y=\"270.0\" font-size=\"9.5\" fill=\"#FFB74D\" text-anchor=\"middle\" font-weight=\"700\">Religion</text><line x1=\"160\" y1=\"160\" x2=\"73.4\" y2=\"210.0\" stroke=\"#FF8A65\" stroke-width=\"1.4\"/><rect x=\"21.4\" y=\"192.0\" width=\"104\" height=\"36\" rx=\"8\" fill=\"#1E1E2E\" stroke=\"#FF8A65\" stroke-width=\"1.5\"/><text x=\"73.4\" y=\"207.0\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Cultural and</text><text x=\"73.4\" y=\"220.0\" font-size=\"9.5\" fill=\"#FF8A65\" text-anchor=\"middle\" font-weight=\"700\">Educational</text><line x1=\"160\" y1=\"160\" x2=\"73.4\" y2=\"110.0\" stroke=\"#BA68C8\" stroke-width=\"1.4\"/><rect x=\"21.4\" y=\"92.0\" width=\"104\" height=\"36\" rx=\"8\" fill=\"#1E1E2E\" stroke=\"#BA68C8\" stroke-width=\"1.5\"/><text x=\"73.4\" y=\"107.0\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">Constitutional</text><text x=\"73.4\" y=\"120.0\" font-size=\"9.5\" fill=\"#BA68C8\" text-anchor=\"middle\" font-weight=\"700\">Remedies</text><circle cx=\"160\" cy=\"160\" r=\"34\" fill=\"rgba(255, 0, 255,0.25)\" stroke=\"#FF00FF\" stroke-width=\"1.6\"/><text x=\"160\" y=\"158\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">FUNDAMENTAL</text><text x=\"160\" y=\"170\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">RIGHTS</text></svg></div><div class=\"diagram-caption\">Fig. 1: The six Fundamental Rights</div></div><div class=\"sub-q\">Right to Equality</div><div class=\"pt\"><b>Equality before law / rule of law</b> — no one is above the law; a former PM had to face a cheating case like any citizen.</div><div class=\"pt\">No discrimination on grounds only of religion, race, caste, sex or place of birth; equal access to shops, hotels, cinemas, wells, tanks, ghats, roads.</div><div class=\"pt\"><b>Equality of opportunity</b> in public jobs; reservations for SC, ST, OBC are <b>not against equality</b> — special treatment is sometimes needed to give equal opportunity.</div><div class=\"pt\"><b>Untouchability</b> forbidden in any form and made a punishable offence (P. Sainath's 1999 reports in <i>The Hindu</i> showed it still practised — separate cups, barbers refusing Dalits, separate seating, etc.).</div><div class=\"sub-q\">Right to Freedom</div><div class=\"pt\">Freedom of speech and expression; assembly in a peaceful manner; forming associations and unions; moving freely throughout the country; residing in any part; practising any profession, occupation, trade or business.</div><div class=\"pt\">Freedom is not unlimited — reasonable restrictions for society; no inciting violence, rebellion or defamation; meetings must be peaceful, without weapons.</div><div class=\"pt\"><b>Life and personal liberty</b> only according to procedure established by law: arrested person must be told the reasons, produced before the nearest magistrate within <b>24 hours</b>, and may consult a lawyer.</div><div class=\"sub-q\">Right against Exploitation</div><div class=\"pt\">Prohibits <b>traffic in human beings</b>; <b>forced labour or begar</b> (bonded labour when life-long); <b>child labour</b> — no child below <b>14</b> in factories, mines or hazardous work (railways, ports); laws ban children in beedi, firecrackers, matches, printing, dyeing.</div><div class=\"sub-q\">Right to Freedom of Religion</div><div class=\"pt\">India is a <b>secular</b> state — no official religion; principled and equal distance from all religions.</div><div class=\"pt\">Right to <b>profess, practise and propagate</b> religion — but not to convert by force, fraud, inducement or allurement; no practices treating women as inferior or sacrifices.</div><div class=\"pt\">No tax to promote a religion; no religious instruction in government schools; none compelled in private schools.</div><div class=\"sub-q\">Cultural and Educational Rights</div><div class=\"pt\">Any section with a distinct language or culture can conserve it; admission to government-aided institutions cannot be denied on religion or language; all minorities can establish and administer their own educational institutions (minority can be linguistic too — Telugus in Karnataka, Sikhs in Rajasthan).</div><div class=\"sub-q\">Right to Constitutional Remedies</div><div class=\"pt\">The right to seek enforcement of rights — itself a Fundamental Right; Dr. Ambedkar called it <b>‘the heart and soul’</b> of the Constitution.</div><div class=\"pt\">One can go directly to the <b>Supreme Court or a High Court</b>; they issue directions, orders or <b>writs</b>, award compensation and punish violators. Rights apply against the legislature, executive, government bodies and private individuals.</div><div class=\"pt\"><b>Public Interest Litigation (PIL):</b> any citizen or group can approach the court in public interest — even by a postcard.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 4. National Human Rights Commission</div><div class=\"sol-step\"><div class=\"pt\">Independent commission set up by law in <b>1993</b>; appointed by the President; retired judges, officers, eminent citizens.</div><div class=\"pt\">Cannot punish — makes independent inquiries, presents findings to government, intervenes in court for victims; can summon witnesses, question officials, demand papers, visit prisons.</div><div class=\"pt\">Any citizen can complain by letter (no fee); State Human Rights Commissions in 26 states (as on 10 December 2018).</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 5. Expanding Scope of Rights</div><div class=\"sol-step\"><div class=\"pt\">Courts have widened rights: freedom of press, <b>right to information</b> (Act made under freedom of thought and expression), right to education — free and compulsory up to <b>14 years</b>, right to life including <b>right to food</b>.</div><div class=\"pt\">Other constitutional rights that are not Fundamental Rights: <b>right to property</b>, <b>right to vote</b>.</div><div class=\"pt\"><b>Human rights</b>: universal moral claims, not always recognised by law. The <b>International Covenant on Economic, Social and Cultural Rights</b> lists rights to work, safe working conditions and fair wages, adequate standard of living, social security, health, education.</div><div class=\"pt\">South Africa's Constitution gives rights to privacy, a healthy environment, adequate housing, health care, food and water.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 6. Key Terms (Glossary)</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Term</th><th>Meaning</th></tr><tr><td>Amnesty International</td><td>International organisation of volunteers campaigning for human rights</td></tr><tr><td>Claim</td><td>Demand for legal or moral entitlements</td></tr><tr><td>Covenant</td><td>Promise to uphold a rule or principle, binding on signatories</td></tr><tr><td>Dalit</td><td>Person from castes considered low and untouchable</td></tr><tr><td>Ethnic group</td><td>People sharing common ancestry, culture and memories</td></tr><tr><td>Traffic</td><td>Selling and buying of human beings for immoral purposes</td></tr><tr><td>Summon</td><td>Court order asking a person to appear</td></tr><tr><td>Writ</td><td>Formal order of the High Court or Supreme Court to the government</td></tr></table></div><div class=\"exam\"><span class=\"exam-t\">📌 Exam Focus</span><div>• Three cases of life without rights</div><div>• Definition of rights; why needed in a democracy</div><div>• Six Fundamental Rights with examples</div><div>• Right to Constitutional Remedies; PIL; NHRC</div><div>• Expanding scope of rights</div></div></div>\n  </div>\n</div>",
+  "htmlExercises": {
+    "sc9-5-ex-q": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 0, 255, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FF00FF; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FF00FF; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFC2FF; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFC2FF; font-weight: 700; }\n  .hl { color: #FF00FF; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FF00FF; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FF00FF; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(255, 0, 255, 0.10); border: 1.5px dashed #FF00FF; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FF00FF; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 0, 255, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(255, 0, 255, 0.18); border: 1px solid #FF00FF; color: #FFC2FF; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(255, 0, 255, 0.2); color: #FFC2FF; }\n  .q-card .q-text, .q-card .sub-q { color: #FF00FF !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Which of the following is not an instance of an exercise of a fundamental right?<br/>a. Workers from Bihar go to the Punjab to work on the farms<br/>b. Christian missions set up a chain of missionary schools<br/>c. Men and women government employees get the same salary<br/>d. Parents' property is inherited by their children</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">(d)</span></div><div class=\"rev\">Property is a constitutional/legal right, not a Fundamental Right. (a) freedom of movement, (b) minority educational right, (c) right to equality.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Which of the following freedoms is not available to an Indian citizen?<br/>a. Freedom to criticise the government<br/>b. Freedom to participate in armed revolution<br/>c. Freedom to start a movement to change the government<br/>d. Freedom to oppose the central values of the Constitution</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">(b)</span></div><div class=\"rev\">Freedom of expression cannot be used to incite violence or rebellion.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Which of the following rights is available under the Indian Constitution?<br/>a. Right to work b. Right to adequate livelihood c. Right to protect one's culture d. Right to privacy</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">(c)</span></div><div class=\"rev\">A Cultural and Educational Right. The others are demanded but not listed as Fundamental Rights in the textbook.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">Name the Fundamental Right under which each of the following rights falls:</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Right</th><th>Fundamental Right</th></tr><tr><td>a. Freedom to propagate one's religion</td><td>Right to Freedom of Religion</td></tr><tr><td>b. Right to life</td><td>Right to Freedom</td></tr><tr><td>c. Abolition of untouchability</td><td>Right to Equality</td></tr><tr><td>d. Ban on bonded labour</td><td>Right against Exploitation</td></tr></table></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5.</div>\n    <div class=\"q-text\">Which of these statements about the relationship between democracy and rights is more valid? Give reasons for your preference.<br/>a. Every country that is a democracy gives rights to its citizens.<br/>b. Every country that gives rights to its citizens is a democracy.<br/>c. Giving rights is good, but it is not necessary for a democracy.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"ans-box\"><span class=\"ans-label\">✓ </span><span class=\"ans-val\">(a)</span></div><div class=\"rev\">Rights are necessary for the very sustenance of democracy — to vote, to be elected, to express and to organise; without them there can be no democracy. But a country may give some rights without being democratic, so (b) is not always true; (c) is wrong.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q6.</div>\n    <div class=\"q-text\">Are these restrictions on the right to freedom justified? Give reasons for your answer.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">a. Indian citizens need permission to visit some border areas of the country for reasons of security.</div><div class=\"ans-box\"><span class=\"ans-label\">✓ </span><span class=\"ans-val\">Justified</span></div><div class=\"rev\">A reasonable restriction in the larger interest of national security.</div><div class=\"sub-q\">b. Outsiders are not allowed to buy property in some areas to protect the interest of the local population.</div><div class=\"ans-box\"><span class=\"ans-label\">✓ </span><span class=\"ans-val\">Justified</span></div><div class=\"rev\">Protects the land, culture and livelihood of local and tribal people.</div><div class=\"sub-q\">c. The government bans the publication of a book that can go against the ruling party in the next elections.</div><div class=\"ans-box\"><span class=\"ans-label\">✓ </span><span class=\"ans-val\">Not justified</span></div><div class=\"rev\">It violates freedom of speech and expression and is done only for party benefit, not public interest.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q7.</div>\n    <div class=\"q-text\">Manoj went to a college to apply for admission into an MBA course. The clerk refused to take his application and said “You, the son of a sweeper, wish to be a manager! Has anyone done this job in your community? Go to the municipality office and apply for a sweeper's position”. Which of Manoj's fundamental rights are being violated in this instance? Spell these out in a letter from Manoj to the district collector.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Right to Equality</b> — discrimination on grounds of caste; untouchability-like treatment; equality of opportunity.</div><div class=\"pt\"><b>Right to Freedom</b> — freedom to practise any profession or occupation.</div><div class=\"pt\"><b>Cultural and Educational Rights</b> — admission cannot be denied in a government-aided institution.</div><div class=\"sec\">Letter</div><div class=\"rev\">To the District Collector. Sir, I went to apply for the MBA course at … College. The clerk refused my application only because my father is a sweeper and told me to apply for a sweeper's job. This violates my Right to Equality, which forbids discrimination on the basis of caste and guarantees equal opportunity, and my Right to Freedom to choose any profession. I request you to ensure that my application is accepted and action is taken against the clerk. Yours faithfully, Manoj.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q8.</div>\n    <div class=\"q-text\">When Madhurima went to the property registration office, the Registrar told her, “You can't write your name as Madhurima Banerjee d/o A. K. Banerjee. You are married, so you must give your husband's name. Your husband's surname is Rao. So your name should be changed to Madhurima Rao.” She did not agree. She said “If my husband's name has not changed after marriage, why should mine?” In your opinion who is right in this dispute? And why?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"ans-box\"><span class=\"ans-label\">✓ </span><span class=\"ans-val\">Madhurima is right</span></div><div class=\"rev\">The Right to Equality forbids discrimination on the basis of sex. No law forces a woman to change her name after marriage; men and women must be treated equally.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q9.</div>\n    <div class=\"q-text\">Thousands of tribals and other forest dwellers gathered at Piparia in Hoshangabad district in Madhya Pradesh to protest against their proposed displacement from the Satpura National Park, Bori Wildlife Sanctuary and Panchmarhi Wildlife Sanctuary. They argue that such a displacement is an attack on their livelihood and beliefs. Government claims that their displacement is essential for the development of the area and for protection of wildlife. Write a petition on behalf of the forest dwellers to the NHRC, a response from the government and a report of the NHRC on this matter.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">Petition of the forest dwellers</div><div class=\"rev\">To the NHRC. We, the tribals and forest dwellers of Satpura, Bori and Panchmarhi, have lived here for generations. Our food, livelihood, festivals and sacred places are linked to these forests. Removing us violates our right to life and livelihood, our freedom of religion and our right to conserve our culture. We request you to stop the displacement or ensure fair rehabilitation with our consent.</div><div class=\"sub-q\">Response of the government</div><div class=\"rev\">The displacement is needed to protect endangered wildlife and develop the area. The government will provide land, houses, compensation and jobs to all affected families.</div><div class=\"sub-q\">Report of the NHRC</div><div class=\"rev\">The Commission finds that both wildlife protection and the rights of forest dwellers are important. No displacement should take place without the consent of the people, full compensation, suitable land, livelihood and protection of their culture. Where possible, communities should be allowed to stay and help protect the forest. The government should report the steps taken.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q10.</div>\n    <div class=\"q-text\">Draw a web interconnecting different rights discussed in this chapter. For example right to freedom of movement is connected to the freedom of occupation. Draw a circle for each right and mark arrows that show connection between or among different rights. For each arrow, give an example that shows the linkage.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 340\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"340\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"20\" font-size=\"11\" fill=\"#FFC2FF\" text-anchor=\"middle\" font-weight=\"700\">Web of Rights (examples)</text><line x1=\"160\" y1=\"180\" x2=\"104.0\" y2=\"83.0\" stroke=\"rgba(255, 0, 255,0.4)\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/><line x1=\"160\" y1=\"180\" x2=\"216.0\" y2=\"83.0\" stroke=\"rgba(255, 0, 255,0.4)\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/><line x1=\"160\" y1=\"180\" x2=\"272.0\" y2=\"180.0\" stroke=\"rgba(255, 0, 255,0.4)\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/><line x1=\"160\" y1=\"180\" x2=\"216.0\" y2=\"277.0\" stroke=\"rgba(255, 0, 255,0.4)\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/><line x1=\"160\" y1=\"180\" x2=\"104.0\" y2=\"277.0\" stroke=\"rgba(255, 0, 255,0.4)\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/><line x1=\"160\" y1=\"180\" x2=\"48.0\" y2=\"180.0\" stroke=\"rgba(255, 0, 255,0.4)\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/><line x1=\"104.0\" y1=\"83.0\" x2=\"216.0\" y2=\"83.0\" stroke=\"#B0BEC5\" stroke-width=\"1.2\"/><rect x=\"114.2\" y=\"54.0\" width=\"91.6\" height=\"13\" rx=\"3\" fill=\"#1E1E2E\"/><text x=\"160.0\" y=\"64.0\" font-size=\"7.8\" fill=\"#FFD54F\" text-anchor=\"middle\">go to work anywhere</text><line x1=\"216.0\" y1=\"83.0\" x2=\"272.0\" y2=\"180.0\" stroke=\"#B0BEC5\" stroke-width=\"1.2\"/><rect x=\"204.8\" y=\"124.5\" width=\"78.4\" height=\"13\" rx=\"3\" fill=\"#1E1E2E\"/><text x=\"244.0\" y=\"134.5\" font-size=\"7.8\" fill=\"#FFD54F\" text-anchor=\"middle\">equal job chance</text><line x1=\"272.0\" y1=\"180.0\" x2=\"216.0\" y2=\"277.0\" stroke=\"#B0BEC5\" stroke-width=\"1.2\"/><rect x=\"202.6\" y=\"221.5\" width=\"82.8\" height=\"13\" rx=\"3\" fill=\"#1E1E2E\"/><text x=\"244.0\" y=\"231.5\" font-size=\"7.8\" fill=\"#FFD54F\" text-anchor=\"middle\">equal say for all</text><line x1=\"216.0\" y1=\"277.0\" x2=\"104.0\" y2=\"277.0\" stroke=\"#B0BEC5\" stroke-width=\"1.2\"/><rect x=\"129.6\" y=\"294.0\" width=\"60.8\" height=\"13\" rx=\"3\" fill=\"#1E1E2E\"/><text x=\"160.0\" y=\"304.0\" font-size=\"7.8\" fill=\"#FFD54F\" text-anchor=\"middle\">hold rallies</text><line x1=\"104.0\" y1=\"277.0\" x2=\"48.0\" y2=\"180.0\" stroke=\"#B0BEC5\" stroke-width=\"1.2\"/><rect x=\"28.0\" y=\"221.5\" width=\"96.0\" height=\"13\" rx=\"3\" fill=\"#1E1E2E\"/><text x=\"76.0\" y=\"231.5\" font-size=\"7.8\" fill=\"#FFD54F\" text-anchor=\"middle\">religious gatherings</text><line x1=\"48.0\" y1=\"180.0\" x2=\"104.0\" y2=\"83.0\" stroke=\"#B0BEC5\" stroke-width=\"1.2\"/><rect x=\"50.0\" y=\"124.5\" width=\"52.0\" height=\"13\" rx=\"3\" fill=\"#1E1E2E\"/><text x=\"76.0\" y=\"134.5\" font-size=\"7.8\" fill=\"#FFD54F\" text-anchor=\"middle\">pilgrimage</text><ellipse cx=\"104.0\" cy=\"83.0\" rx=\"46\" ry=\"15\" fill=\"#1E1E2E\" stroke=\"#FF00FF\" stroke-width=\"1.4\"/><text x=\"104.0\" y=\"86.0\" font-size=\"8.6\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Movement</text><ellipse cx=\"216.0\" cy=\"83.0\" rx=\"46\" ry=\"15\" fill=\"#1E1E2E\" stroke=\"#FF00FF\" stroke-width=\"1.4\"/><text x=\"216.0\" y=\"86.0\" font-size=\"8.6\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Occupation</text><ellipse cx=\"272.0\" cy=\"180.0\" rx=\"46\" ry=\"15\" fill=\"#1E1E2E\" stroke=\"#FF00FF\" stroke-width=\"1.4\"/><text x=\"272.0\" y=\"183.0\" font-size=\"8.6\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Equality</text><ellipse cx=\"216.0\" cy=\"277.0\" rx=\"46\" ry=\"15\" fill=\"#1E1E2E\" stroke=\"#FF00FF\" stroke-width=\"1.4\"/><text x=\"216.0\" y=\"280.0\" font-size=\"7.4\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Speech &amp; Expression</text><ellipse cx=\"104.0\" cy=\"277.0\" rx=\"46\" ry=\"15\" fill=\"#1E1E2E\" stroke=\"#FF00FF\" stroke-width=\"1.4\"/><text x=\"104.0\" y=\"280.0\" font-size=\"8.6\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Assembly</text><ellipse cx=\"48.0\" cy=\"180.0\" rx=\"46\" ry=\"15\" fill=\"#1E1E2E\" stroke=\"#FF00FF\" stroke-width=\"1.4\"/><text x=\"48.0\" y=\"183.0\" font-size=\"8.6\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Religion</text><circle cx=\"160\" cy=\"180\" r=\"32\" fill=\"rgba(255, 0, 255,0.25)\" stroke=\"#FF00FF\" stroke-width=\"1.5\"/><text x=\"160\" y=\"178\" font-size=\"8.4\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Constitutional</text><text x=\"160\" y=\"189\" font-size=\"8.4\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Remedies</text><text x=\"160\" y=\"334\" font-size=\"7.8\" fill=\"#CBD5E1\" text-anchor=\"middle\">Dashed lines: courts protect every right</text></svg></div><div class=\"diagram-caption\">Fig. 2: A web of interconnected rights</div></div><div class=\"pt\"><b>Movement → Occupation:</b> a worker from Bihar can go to Punjab for work.</div><div class=\"pt\"><b>Movement → Religion:</b> one can travel for pilgrimage.</div><div class=\"pt\"><b>Speech → Assembly and association:</b> people express views through rallies and unions.</div><div class=\"pt\"><b>Assembly → Religion:</b> people gather for religious festivals and processions.</div><div class=\"pt\"><b>Occupation → Equality:</b> equal opportunity in public jobs.</div><div class=\"pt\"><b>Equality → Speech:</b> every citizen has an equal say.</div><div class=\"pt\"><b>Constitutional Remedies → all rights:</b> courts protect every right.</div></div></div>\n  </div>\n</div>",
+    "sc9-5-ex-cp": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 0, 255, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FF00FF; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FF00FF; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFC2FF; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFC2FF; font-weight: 700; }\n  .hl { color: #FF00FF; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FF00FF; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FF00FF; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(255, 0, 255, 0.10); border: 1.5px dashed #FF00FF; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FF00FF; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 0, 255, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(255, 0, 255, 0.18); border: 1px solid #FF00FF; color: #FFC2FF; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(255, 0, 255, 0.2); color: #FFC2FF; }\n  .q-card .q-text, .q-card .sub-q { color: #FF00FF !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Fill in the blanks by recalling the rights dimension in each chapter.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Chapter 1: A comprehensive definition of democracy includes <b>rule of law and respect for citizens' rights</b>.</div><div class=\"pt\">Chapter 2: Fundamental rights were central to the Constitution because <b>they limit the government and protect citizens</b>.</div><div class=\"pt\">Chapter 3: Every adult citizen has the right <b>to vote and to be elected</b>.</div><div class=\"pt\">Chapter 4: If a law is against the Constitution, every citizen has the right to approach <b>the Supreme Court or High Courts</b>.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">For each of the three cases of life without rights, mention an example from India (custodial violence, force-feeding of prisoners on hunger strike, ethnic massacre, unequal treatment of women). List the similarities and differences.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Case</th><th>Indian example</th><th>Similarity / Difference</th></tr><tr><td>Guantanamo Bay</td><td>Reports of custodial violence or force-feeding of hunger strikers</td><td>Similar: abuse in custody. Different: Indian courts and NHRC can be approached</td></tr><tr><td>Saudi Arabia</td><td>Reports of unequal treatment of women (dowry, unequal wages)</td><td>Similar: discrimination. Different: India's law guarantees equality; it is a social, not legal, problem</td></tr><tr><td>Kosovo</td><td>Ethnic or communal riots in some parts of the country</td><td>Similar: violence on group identity. Different: not ordered by the state; courts and NHRC intervene</td></tr></table></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Are these cases instances of violation of right to freedom? If yes, which constitutional provision does each of these violate?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Case</th><th>Answer</th></tr><tr><td>Ban on Salman Rushdie's <i>Satanic Verses</i> as hurtful to Muslims</td><td>Restriction on freedom of speech and expression — the government saw it as reasonable for public order; many argue it violated free expression</td></tr><tr><td>Censor Board approval for films but not for books</td><td>A restriction on freedom of expression; considered reasonable because films reach mass audiences</td></tr><tr><td>Zones where workers cannot form unions or strike</td><td>Yes — violates freedom to form associations and unions</td></tr><tr><td>Ban on microphones after 10 p.m. during exams</td><td>No — a reasonable restriction for students' interest and public peace</td></tr></table></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">On the basis of these news reports write a letter to the editor or a petition to a court highlighting the violation of right against exploitation (children sold at auctions in Thrissur; children in Karnataka iron-ore mines; growing number of female child labourers).</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sec\">Letter to the Editor</div><div class=\"rev\">Sir, Recent reports are shocking: children aged seven to twelve taken from Salem and sold at auctions in Kerala; children from the age of five forced to work in iron-ore mines of Hospet, Sandur and Ikal without safety; and the NSSO finding that female child labourers rose from 34 to 41 per thousand workers. These are clear violations of the Right against Exploitation, which bans traffic in human beings, forced labour and employment of children below 14 in hazardous work. The government must rescue these children, punish the guilty and ensure that every child is in school. Yours, A concerned student.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5.</div>\n    <div class=\"q-text\">Read these news reports and identify the right that is being debated in each of these cases.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Report</th><th>Right</th></tr><tr><td>SGPC rejects a separate body for Sikh shrines in Haryana</td><td>Right to Freedom of Religion (to manage religious affairs)</td></tr><tr><td>Allahabad HC quashes AMU's minority status and Muslim reservation</td><td>Cultural and Educational Rights (minority institutions)</td></tr><tr><td>Rajasthan anti-conversion law</td><td>Right to Freedom of Religion (to propagate religion)</td></tr></table></div></div></div>\n  </div>\n</div>",
+    "sc9-5-ex-act": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 0, 255, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FF00FF; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FF00FF; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFC2FF; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFC2FF; font-weight: 700; }\n  .hl { color: #FF00FF; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FF00FF; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FF00FF; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(255, 0, 255, 0.10); border: 1.5px dashed #FF00FF; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FF00FF; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 0, 255, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(255, 0, 255, 0.18); border: 1px solid #FF00FF; color: #FFC2FF; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(255, 0, 255, 0.2); color: #FFC2FF; }\n  .q-card .q-text, .q-card .sub-q { color: #FF00FF !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Activity: Write a letter to Anas Jamil in UK, describing your reactions after reading his letter to Tony Blair.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">Dear Anas, I read your letter and felt very sad. No child should be kept away from his father without a fair trial. Everyone, wherever he is, has the right to know the charges and to defend himself. I hope your father returns soon and you celebrate Eid together. Your friend in India.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Activity: Write a letter from Batisha in Kosovo to a woman who faced a similar situation in India.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">Dear sister, I lost my husband, my home and everything I owned because soldiers of my own country hated us for our ethnic identity. I hear you too suffered in riots. Our pain is the same. Let us speak out so that no government is allowed to attack its own people, and so that the guilty are punished. With love, Batisha.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Activity: Write a memorandum on behalf of women in Saudi Arabia to the Secretary General of the United Nations.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">To the Secretary General, UN. We, the women of Saudi Arabia, face many public restrictions and our testimony counts as half of a man's. We request the UN to urge our government to grant equal rights, equal value in law, freedom of movement and full participation in public life, as human rights demand.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">Activity: Watch a 400 metre race. Why are the competitors in the outer lane placed ahead of those in the inner lane? What would happen if all start from the same line? Which would be an equal and fair race? Apply this example to a competition for jobs.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">The outer lane is longer, so a staggered start makes every runner cover the same distance. A common start line would favour the inner lane — unfair. Similarly, people who start from a disadvantage need special help (reservations) for an equal and fair competition for jobs.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5.</div>\n    <div class=\"q-text\">Activity: Observe any big public building. Is there a ramp for the physically handicapped? Should these special facilities be provided even with extra expenditure? Do they go against equality?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">Ramps, lifts and special toilets let disabled persons use the building like everyone else. They should be provided even at extra cost; they do not go against equality — they make equality real.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q6.</div>\n    <div class=\"q-text\">Activity: Do you know the minimum wages in your state? Speak to five people doing different work and find out if they earn the minimum wages, and whether men and women get the same wages.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\"><i>Guidance:</i> Find your UT's notified minimum wage from the Labour Department. Make a table: occupation, wage, aware of minimum wage (yes/no), men vs women wages. Note any gap.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q7.</div>\n    <div class=\"q-text\">Activity: Is there a State Human Rights Commission in your state? Find out about its activities. Write a petition to the NHRC if you know any instances of human rights violation in your area.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\"><i>Guidance:</i> Note its address, members and recent cases. A petition should give the facts, the right violated and the relief sought; it can be a simple letter — there is no fee.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q8.</div>\n    <div class=\"q-text\">Let us read newspapers: Write a letter to the editor on a human rights violation, a press release by a human rights organisation, a headline and news item on a Supreme Court order on Fundamental Rights, and an editorial on custodial violence. Make a newspaper for your school notice board.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Item</th><th>Hint</th></tr><tr><td>Letter to the editor</td><td>Describe the case and the right violated; ask for action</td></tr><tr><td>Press release</td><td>Organisation name, date, facts found, demands</td></tr><tr><td>Headline + news item</td><td>e.g. “SC: Right to food is part of right to life”</td></tr><tr><td>Editorial</td><td>Causes of custodial violence; 24-hour rule; role of NHRC and courts</td></tr></table></div></div></div>\n  </div>\n<div class=\"sec\">Think About It (margin questions)</div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q9.</div>\n    <div class=\"q-text\">If you were a Serb, would you support what Milosevic did in Kosovo? Was his project of Serb dominance good for the Serbs?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">No. Killing people for their ethnicity is a crime; it brought war, foreign intervention and trial for Milosevic, and harmed Serbs too.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q10.</div>\n    <div class=\"q-text\">What are the examples of elected governments not protecting or even attacking the rights of their own citizens? Why do they do that?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">Kosovo under Milosevic; Zimbabwe under Mugabe (Chapter 1). They do it to stay in power or to favour the majority — which is why rights are placed above the government.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q11.</div>\n    <div class=\"q-text\">Everyone knows that the rich can have better lawyers in the courts. What is the point in talking about equality before law?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">Equality before law still means the same law applies to all and no one is above it. Free legal aid and PIL help reduce the advantage of the rich.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q12.</div>\n    <div class=\"q-text\">Should the freedom of expression be extended to those who are spreading wrong and narrow-minded ideas? Should they be allowed to confuse the public?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">Yes, as long as they do not incite violence or defame others; wrong ideas are best answered by debate. Reasonable restrictions apply only to violence, hatred and public disorder.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q13.</div>\n    <div class=\"q-text\">The Constitution does not give people their religion. Then how can it give people the right to practise their religion?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">The Constitution does not give religion; it guarantees freedom — it stops anyone, including the state, from interfering with a person's faith.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q14.</div>\n    <div class=\"q-text\">Can the President of India stop you from approaching the Supreme Court to secure your Fundamental Rights?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">No. The Right to Constitutional Remedies is itself a Fundamental Right.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q15.</div>\n    <div class=\"q-text\">Are these rights only for adults? Which of these rights are available to children?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">Most rights apply to children too: equality, freedom of religion, protection from child labour and trafficking, and the right to free and compulsory education up to 14 years.</div></div></div>\n  </div>\n</div>"
   },
-  exercises: [
+  "introduction": "This chapter explains the importance of rights in a democracy. It discusses the Fundamental Rights guaranteed by the Indian Constitution, how they are protected by the judiciary, and how their scope has expanded over time.",
+  "definitions": [],
+  "keyPoints": [],
+  "formulas": [],
+  "crux": [],
+  "mcqs": [
     {
-      id: "ex-sst-qa",
-      name: "Q & A",
-      questions: [],
+      "id": "sst-civ-c9-5-mcq-1",
+      "question": "<div style='text-align: justify;'>About how many people were secretly held by US forces in Guantanamo Bay?</div>",
+      "options": [
+        "A):   60",
+        "B):   600",
+        "C):   6,000",
+        "D):   200"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>They were linked by the US to the 11 September 2001 attacks.</div>"
     },
+    {
+      "id": "sst-civ-c9-5-mcq-2",
+      "question": "<div style='text-align: justify;'>The international organisation that reported torture in Guantanamo Bay was —</div>",
+      "options": [
+        "A):   NHRC",
+        "B):   UNICEF",
+        "C):   Amnesty International",
+        "D):   Red Cross"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>It campaigns for human rights all over the world.</div>"
+    },
+    {
+      "id": "sst-civ-c9-5-mcq-3",
+      "question": "<div style='text-align: justify;'>In Saudi Arabia, the testimony of one man is considered equal to that of —</div>",
+      "options": [
+        "A):   two women",
+        "B):   one woman",
+        "C):   three women",
+        "D):   four women"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Women face many public restrictions.</div>"
+    },
+    {
+      "id": "sst-civ-c9-5-mcq-4",
+      "question": "<div style='text-align: justify;'>The leader responsible for the massacre of Albanians in Kosovo was —</div>",
+      "options": [
+        "A):   Mugabe",
+        "B):   Musharraf",
+        "C):   Pinochet",
+        "D):   Milosevic"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>He was tried for crimes against humanity.</div>"
+    },
+    {
+      "id": "sst-civ-c9-5-mcq-5",
+      "question": "<div style='text-align: justify;'>Rights are reasonable claims of persons recognised by society and —</div>",
+      "options": [
+        "A):   granted by the king",
+        "B):   sanctioned by law",
+        "C):   decided by religion",
+        "D):   given by the majority"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Then they become enforceable.</div>"
+    },
+    {
+      "id": "sst-civ-c9-5-mcq-6",
+      "question": "<div style='text-align: justify;'>How many Fundamental Rights does the Indian Constitution provide (textbook)?</div>",
+      "options": [
+        "A):   Five",
+        "B):   Seven",
+        "C):   Six",
+        "D):   Ten"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Equality, Freedom, Exploitation, Religion, Cultural and Educational, Constitutional Remedies.</div>"
+    },
+    {
+      "id": "sst-civ-c9-5-mcq-7",
+      "question": "<div style='text-align: justify;'>‘Rule of law’ is part of the —</div>",
+      "options": [
+        "A):   Right to Equality",
+        "B):   Right to Freedom",
+        "C):   Right against Exploitation",
+        "D):   Cultural and Educational Rights"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>No person is above the law.</div>"
+    },
+    {
+      "id": "sst-civ-c9-5-mcq-8",
+      "question": "<div style='text-align: justify;'>An arrested person must be produced before the nearest magistrate within —</div>",
+      "options": [
+        "A):   48 hours",
+        "B):   12 hours",
+        "C):   7 days",
+        "D):   24 hours"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>He must also be told the reasons and may consult a lawyer.</div>"
+    },
+    {
+      "id": "sst-civ-c9-5-mcq-9",
+      "question": "<div style='text-align: justify;'>‘Begar’ means —</div>",
+      "options": [
+        "A):   buying and selling of humans",
+        "B):   forced labour free or at a nominal wage",
+        "C):   child labour",
+        "D):   a religious tax"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Life-long begar is bonded labour.</div>"
+    },
+    {
+      "id": "sst-civ-c9-5-mcq-10",
+      "question": "<div style='text-align: justify;'>No child below the age of — can be employed in factories, mines or hazardous work.</div>",
+      "options": [
+        "A):   12",
+        "B):   16",
+        "C):   14",
+        "D):   18"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>This is under the Right against Exploitation.</div>"
+    },
+    {
+      "id": "sst-civ-c9-5-mcq-11",
+      "question": "<div style='text-align: justify;'>A secular state is one that —</div>",
+      "options": [
+        "A):   does not establish any religion as official religion",
+        "B):   has no religion among its people",
+        "C):   favours the majority religion",
+        "D):   bans all religions"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>India keeps equal distance from all religions.</div>"
+    },
+    {
+      "id": "sst-civ-c9-5-mcq-12",
+      "question": "<div style='text-align: justify;'>Who called the Right to Constitutional Remedies ‘the heart and soul’ of the Constitution?</div>",
+      "options": [
+        "A):   Jawaharlal Nehru",
+        "B):   Mahatma Gandhi",
+        "C):   Rajendra Prasad",
+        "D):   Dr. B.R. Ambedkar"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>It makes other rights effective.</div>"
+    },
+    {
+      "id": "sst-civ-c9-5-mcq-13",
+      "question": "<div style='text-align: justify;'>A formal order of the High Court or Supreme Court to the government is called a —</div>",
+      "options": [
+        "A):   summon",
+        "B):   writ",
+        "C):   covenant",
+        "D):   ordinance"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Courts issue writs to enforce Fundamental Rights.</div>"
+    },
+    {
+      "id": "sst-civ-c9-5-mcq-14",
+      "question": "<div style='text-align: justify;'>Any citizen or group can approach the court for protection of public interest through —</div>",
+      "options": [
+        "A):   a referendum",
+        "B):   a no-confidence motion",
+        "C):   Public Interest Litigation",
+        "D):   an ordinance"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>One can even write a postcard to the judges.</div>"
+    },
+    {
+      "id": "sst-civ-c9-5-mcq-15",
+      "question": "<div style='text-align: justify;'>The National Human Rights Commission was set up in —</div>",
+      "options": [
+        "A):   1993",
+        "B):   1947",
+        "C):   1950",
+        "D):   2005"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>It is independent of the government.</div>"
+    },
+    {
+      "id": "sst-civ-c9-5-mcq-16",
+      "question": "<div style='text-align: justify;'>Which of these is a constitutional right but not a Fundamental Right?</div>",
+      "options": [
+        "A):   Right to equality",
+        "B):   Right to freedom of religion",
+        "C):   Right against exploitation",
+        "D):   Right to property"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Right to vote is another constitutional right.</div>"
+    },
+    {
+      "id": "sst-civ-c9-5-mcq-17",
+      "question": "<div style='text-align: justify;'>The Supreme Court has expanded the right to life to include the right to —</div>",
+      "options": [
+        "A):   property",
+        "B):   food",
+        "C):   vote",
+        "D):   privacy only for officials"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Courts have widened the scope of rights.</div>"
+    },
+    {
+      "id": "sst-civ-c9-5-mcq-18",
+      "question": "<div style='text-align: justify;'>P. Sainath's 1999 reports in <i>The Hindu</i> were about —</div>",
+      "options": [
+        "A):   child labour in mines",
+        "B):   Guantanamo Bay",
+        "C):   untouchability and caste discrimination",
+        "D):   elections"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Separate cups, barbers refusing Dalits, separate handpumps.</div>"
+    },
+    {
+      "id": "sst-civ-c9-5-mcq-19",
+      "question": "<div style='text-align: justify;'>Assertion (A): Job reservations for SC, ST and OBC are not against the Right to Equality. Reason (R): Equality means giving everyone an equal opportunity, which may need special treatment.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>The Constitution says such reservations do not violate equality.</div>"
+    },
+    {
+      "id": "sst-civ-c9-5-mcq-20",
+      "question": "<div style='text-align: justify;'>Assertion (A): Freedom of speech allows a person to incite violence against the government. Reason (R): The government can impose reasonable restrictions on freedoms in the interest of society.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Freedom cannot be used to incite violence; R is true.</div>"
+    }
   ],
+  "summary": [],
+  "exercises": [
+    {
+      "id": "sc9-5-ex-q",
+      "name": "Questions",
+      "questions": []
+    },
+    {
+      "id": "sc9-5-ex-cp",
+      "name": "Check Progress",
+      "questions": []
+    },
+    {
+      "id": "sc9-5-ex-act",
+      "name": "Activities",
+      "questions": []
+    }
+  ],
+  "examples": []
 };
