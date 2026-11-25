@@ -1,289 +1,286 @@
 import { ChapterContent } from "../types";
 
-const themeColor = "#00B4DB";
-
 export const sstGeoC96: ChapterContent = {
-  id: "sst-geo-c9-6",
-  number: 6,
-  title: "Population",
-  isHtmlView: true,
-  htmlOverview: `
-    <div style="padding: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: transparent;">
-      <!-- Key Concepts Introduction -->
-      <div style="background-color: #1E1E2E; border: 1px solid rgba(0, 255, 255, 0.25); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 20px; font-weight: 700; margin-top: 0; margin-bottom: 12px; display: flex; align-items: center;">
-          <span style="margin-right: 8px; font-size: 22px;">📊</span> Introduction
-        </h3>
-        <p style="color: #E0E0E0; font-size: 15px; line-height: 1.6; text-align: justify; margin: 0; font-weight: 300;">
-          Human beings are producers and consumers of Earth's resources. Therefore, it is important to know how many people are there in a country, where do they live, how and why their numbers are increasing, and what their characteristics are. The <b>Census of India</b> provides us with information regarding the population of our country. We study population under three major aspects: population size and distribution, population growth and processes of population change, and characteristics of the population.
-        </p>
-      </div>
-
-      <!-- Key Milestones (Important Points) -->
-      <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 600; margin-top: 0; margin-bottom: 14px; display: flex; align-items: center;">
-          <span style="margin-right: 8px; font-size: 18px;">📌</span> Key Points
-        </h3>
-        <ul style="color: #B3B3C6; font-size: 14.5px; line-height: 1.7; margin: 0; padding-left: 20px; text-align: justify;">
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">Size and Distribution:</b> According to the 2011 Census, India's population was 1,210.6 million, accounting for 17.5% of the world's population. Uttar Pradesh is the most populous state, while Lakshadweep is the least populous.</li>
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">Population Density:</b> India is one of the most densely populated countries in the world. Population density in 2011 was 382 persons per sq km, varying from 1,102 persons per sq km in Bihar to only 17 persons per sq km in Arunachal Pradesh.</li>
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">Processes of Population Change:</b> The three main factors of population change are <b>Birth Rate</b>, <b>Death Rate</b>, and <b>Migration</b>. Internal migration changes the population distribution, whereas international migration changes both size and composition.</li>
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">Age Structure:</b> Generally grouped into three categories: <b>Children</b> (below 15 years - dependent), <b>Working Age</b> (15–59 years - economically active and productive), and <b>Aged</b> (60 years and above - can be working but dependency increases).</li>
-          <li style="margin-bottom: 0;"><b style="color: ${themeColor};">National Population Policy (NPP 2000):</b> Formulated to provide a policy framework for improving health, promoting delayed marriages, achieving universal immunization, and addressing adolescent needs.</li>
-        </ul>
-      </div>
-      
-      <!-- Key Terms Glossy Box -->
-      <div style="background: rgba(0, 255, 255, 0.05); border: 1.5px solid rgba(0, 255, 255, 0.25); border-radius: 16px; padding: 20px; box-shadow: 0 4px 30px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 600; margin-top: 0; margin-bottom: 12px;">🔑 Key Terms to Remember</h3>
-        <div style="color: #E0E0E0; font-size: 14px; line-height: 1.6; text-align: justify;">
-          <p style="margin-top: 0; margin-bottom: 8px;"><b style="color: ${themeColor};">Census:</b> An official enumeration of population done periodically. In India, the first census was held in 1872, but the first complete census was taken in 1881.</p>
-          <p style="margin-bottom: 8px;"><b style="color: ${themeColor};">Population Growth:</b> The change in the number of inhabitants of a country/territory during a specific period of time.</p>
-          <p style="margin-bottom: 8px;"><b style="color: ${themeColor};">Sex Ratio:</b> The number of females per 1000 males in the population. It is an important social indicator.</p>
-          <p style="margin-bottom: 8px;"><b style="color: ${themeColor};">Literacy Rate:</b> According to the Census, a person aged 7 years and above who can both read and write any language with understanding is treated as literate.</p>
-          <p style="margin-bottom: 0;"><b style="color: ${themeColor};">Occupational Structure:</b> The distribution of the population according to different types of occupations (primary, secondary, and tertiary).</p>
-        </div>
-      </div>
-    </div>
-  `,
-  htmlExercises: {
-    "ex-sst-qa": `
-      <div style="padding: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: transparent;">
-        <!-- Q1 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q1. Choose the right answer from the four alternatives given below.</p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
-              <li style="margin-bottom: 10px;">
-                <b>(i) Migrations change the number, distribution and composition of the population in</b><br/>
-                <b style="color: ${themeColor};">Answer:</b> (c) both the area of departure and arrival
-              </li>
-              <li style="margin-bottom: 10px;">
-                <b>(ii) A large proportion of children in a population is a result of</b><br/>
-                <b style="color: ${themeColor};">Answer:</b> (a) high birth rates
-              </li>
-              <li style="margin-bottom: 10px;">
-                <b>(iii) The magnitude of population growth refers to</b><br/>
-                <b style="color: ${themeColor};">Answer:</b> (b) the number of persons added each year
-              </li>
-              <li style="margin-bottom: 0;">
-                <b>(iv) According to the Census, a "literate" person is one who</b><br/>
-                <b style="color: ${themeColor};">Answer:</b> (c) is 7 years old and can read and write any language with understanding
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q2 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q2. Answer the following questions briefly.</p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
-              <li style="margin-bottom: 10px;">
-                <b>(i) Why is the rate of population growth in India declining since 1981?</b><br/>
-                <b style="color: ${themeColor};">Answer:</b> The rate of population growth in India has been declining since 1981 primarily because of a rapid decline in birth rates. This decline is a result of successful family planning programmes, increased awareness, rise in literacy rates (especially among females), and overall socio-economic development.
-              </li>
-              <li style="margin-bottom: 10px;">
-                <b>(ii) Discuss the major components of population growth.</b><br/>
-                <b style="color: ${themeColor};">Answer:</b> The three major components of population growth are:
-                <ul style="margin-top: 5px; margin-bottom: 5px; padding-left: 20px;">
-                  <li><b>Birth Rate:</b> The number of live births per thousand persons in a year. Higher birth rates lead to population growth.</li>
-                  <li><b>Death Rate:</b> The number of deaths per thousand persons in a year. A decline in death rates (due to better medical facilities) leads to population increase.</li>
-                  <li><b>Migration:</b> The movement of people across regions and territories. It can be internal (within a country) or international (between countries).</li>
-                </ul>
-              </li>
-              <li style="margin-bottom: 10px;">
-                <b>(iii) Define age structure, death rate and birth rate.</b><br/>
-                <b style="color: ${themeColor};">Answer:</b> 
-                <ul style="margin-top: 5px; margin-bottom: 5px; padding-left: 20px;">
-                  <li><b>Age Structure:</b> The classification of a population into different age groups (usually children under 15, working age 15–59, and aged 60 and above) in a given population.</li>
-                  <li><b>Birth Rate:</b> The number of live births per thousand persons in a year.</li>
-                  <li><b>Death Rate:</b> The number of deaths per thousand persons in a year.</li>
-                </ul>
-              </li>
-              <li style="margin-bottom: 0;">
-                <b>(iv) How is migration a determinant factor of population change?</b><br/>
-                <b style="color: ${themeColor};">Answer:</b> Migration determines population change in the following ways:
-                <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
-                  <li>It alters the total size of the population (in case of international migration).</li>
-                  <li>It redistributes the population within a country (internal migration, e.g., rural-to-urban migration changes the urban-rural ratio).</li>
-                  <li>It changes the demographic composition (age and sex structures) of both the sending (departure) and receiving (arrival) regions, as it is usually the young, working-age population that migrates.</li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q3 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q3. Distinguish between population growth and population change.</p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> The differences are:
-            <table style="width: 100%; border-collapse: collapse; margin-top: 10px; margin-bottom: 10px; border: 1px solid rgba(255,255,255,0.1); background-color: rgba(255,255,255,0.02);">
-              <thead>
-                <tr style="border-bottom: 2px solid ${themeColor};">
-                  <th style="padding: 10px; text-align: left; border-right: 1px solid rgba(255,255,255,0.1);">Population Growth</th>
-                  <th style="padding: 10px; text-align: left;">Population Change</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
-                  <td style="padding: 10px; border-right: 1px solid rgba(255,255,255,0.1); text-align: justify;">It refers specifically to the increase or decrease in the number of inhabitants in a region over a specific time period.</td>
-                  <td style="padding: 10px; text-align: justify;">It is a broader term indicating changes in size, geographical distribution, and demographic composition.</td>
-                </tr>
-                <tr>
-                  <td style="padding: 10px; border-right: 1px solid rgba(255,255,255,0.1); text-align: justify;">It is mainly calculated using the difference between birth rate and death rate (natural growth).</td>
-                  <td style="padding: 10px; text-align: justify;">It is determined by three variables: birth rate, death rate, and migration pattern.</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <!-- Q4 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q4. What is the relation between occupational structure and development?</p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> There is a direct, positive correlation between the occupational structure of a country and its economic development:
-            <ul style="margin-top: 8px; margin-bottom: 0; padding-left: 20px;">
-              <li style="margin-bottom: 8px;"><b style="color: ${themeColor};">Developing/Underdeveloped Nations:</b> A high proportion of the population is engaged in <b>primary activities</b> (like agriculture, forestry, fishing, and mining). For instance, in India, about 64% of the population has been dependent on agriculture.</li>
-              <li style="margin-bottom: 8px;"><b style="color: ${themeColor};">Developed Nations:</b> A higher percentage of people work in <b>secondary activities</b> (manufacturing, construction) and <b>tertiary activities</b> (transport, communication, services, commerce). Developed nations like the US and Japan show a major dependency on secondary and tertiary sectors.</li>
-              <li style="margin-bottom: 0;">As economic development takes place, there is a progressive shift of labor from primary to secondary and tertiary activities.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q5 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q5. What are the advantages of having a healthy population?</p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> A healthy population is a nation's most valuable asset and resource. The main advantages are:
-            <ul style="margin-top: 8px; margin-bottom: 0; padding-left: 20px;">
-              <li style="margin-bottom: 8px;"><b style="color: ${themeColor};">Higher Productivity:</b> Healthy individuals are more energetic, focused, and efficient, which directly increases industrial and agricultural production.</li>
-              <li style="margin-bottom: 8px;"><b style="color: ${themeColor};">Reduced Healthcare Burden:</b> Good health minimizes the national and individual expenditure on medical treatments, enabling the country to divert resources to other productive sectors like education and infrastructure.</li>
-              <li style="margin-bottom: 8px;"><b style="color: ${themeColor};">Lower Absenteeism:</b> Health reduces the number of sick leaves taken by workers and students, ensuring consistent economic activity and educational progress.</li>
-              <li style="margin-bottom: 0;"><b style="color: ${themeColor};">Realization of Human Potential:</b> A healthy person can fully utilize their intellectual and physical capacities, contributing positively to community and societal growth.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q6 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q6. What are the significant features of the National Population Policy 2000?</p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> The National Population Policy (NPP) 2000 provides a policy framework for improving the overall quality of life. Its significant features include:
-            <ul style="margin-top: 8px; margin-bottom: 0; padding-left: 20px;">
-              <li style="margin-bottom: 8px;"><b>Free and Compulsory Education:</b> Providing free and compulsory school education up to 14 years of age.</li>
-              <li style="margin-bottom: 8px;"><b>Infant Mortality Rate (IMR):</b> Reducing the IMR to below 30 per 1000 live births.</li>
-              <li style="margin-bottom: 8px;"><b>Immunization:</b> Achieving universal immunization of children against all vaccine-preventable diseases.</li>
-              <li style="margin-bottom: 8px;"><b>Marriage Age:</b> Promoting delayed marriage for girls, preferably after 18 years of age.</li>
-              <li style="margin-bottom: 8px;"><b>Family Welfare:</b> Making family welfare a people-centric program with voluntary consent.</li>
-              <li style="margin-bottom: 0;"><b>Focus on Adolescents:</b> Encouraging nutritional requirements, educating against STDs and unwanted pregnancies, and providing counseling services.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    `,
+  "id": "sst-geo-c9-6",
+  "number": 6,
+  "title": "Population",
+  "isHtmlView": true,
+  "htmlOverview": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(0, 180, 219, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #00B4DB; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #00B4DB; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #B3E5F2; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #B3E5F2; font-weight: 700; }\n  .hl { color: #00B4DB; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #00B4DB; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #00B4DB; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(0, 180, 219, 0.10); border: 1.5px dashed #00B4DB; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #00B4DB; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(0, 180, 219, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(0, 180, 219, 0.18); border: 1px solid #00B4DB; color: #B3E5F2; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(0, 180, 219, 0.2); color: #B3E5F2; }\n  .q-card .q-text, .q-card .sub-q { color: #00B4DB !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ Chapter at a Glance</div><div class=\"sol-step\"><div class=\"rev\">People make and use resources and are themselves resources. Coal is just a rock until people make it a resource; a flood becomes a disaster only when it affects people. <span class=\"hl\">Population</span> is the pivotal element in social studies.</div><div class=\"rev\">Three major questions about population:</div><div class=\"pt\"><b>Size and distribution</b> — how many people and where?</div><div class=\"pt\"><b>Growth and processes of change</b> — how has it grown and changed?</div><div class=\"pt\"><b>Characteristics</b> — age, sex composition, literacy, occupational structure, health.</div><div class=\"pt\"><span class=\"lbl\">Census:</span> an official enumeration of population done periodically. First census in India — <b>1872</b>; first complete census — <b>1881</b>; held every tenth year since. It is the most comprehensive source of demographic, social and economic data.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 1. Population Size and Distribution</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Fact (Census 2011)</th><th>Figure</th></tr><tr><td>India's population (March 2011)</td><td>1,210.6 million — 17.5% of the world</td></tr><tr><td>India's area</td><td>3.28 million sq km — 2.4% of the world</td></tr><tr><td>Most populous state</td><td>Uttar Pradesh — 199 million (about 16%)</td></tr><tr><td>Small populations</td><td>Sikkim about 0.6 million; Lakshadweep 64,429</td></tr><tr><td>Half of India lives in</td><td>UP, Maharashtra, Bihar, West Bengal, Andhra Pradesh</td></tr><tr><td>Rajasthan (largest by area)</td><td>Only 5.5% of the population</td></tr></table></div><div class=\"sub-q\">Distribution by density</div><div class=\"pt\"><b>Population density</b> = number of persons per unit area. India's density in 2011: <b>382 persons per sq km</b> — from <b>1,102</b> in Bihar to only <b>17</b> in Arunachal Pradesh.</div><div class=\"pt\"><span class=\"lbl\">Do You Know?</span> The textbook notes that only Bangladesh and Japan have higher average densities than India.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Density</th><th>Areas</th><th>Reasons</th></tr><tr><td>Below 250</td><td>Rugged hilly and dry states</td><td>Rugged terrain, unfavourable climate</td></tr><tr><td>Moderate</td><td>Assam and most Peninsular states</td><td>Hilly, dissected, rocky terrain; moderate to low rain; shallow, less fertile soils</td></tr><tr><td>High to very high</td><td>Northern Plains and Kerala</td><td>Flat plains with fertile soils and abundant rainfall</td></tr></table></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 2. Population Growth</div><div class=\"sol-step\"><div class=\"pt\"><b>Population growth</b> — change in the number of inhabitants of a country during a specific period (say 10 years), in absolute numbers or as a percentage per year.</div><div class=\"pt\"><b>Absolute increase</b> — later population minus earlier population (e.g. 2011 − 2001). <b>Annual growth rate</b> — e.g. 2% means 2 persons added per 100 in a year.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Year</th><th>Population (million)</th><th>Absolute increase in decade (million)</th><th>Annual growth rate (%)</th></tr><tr><td>1951</td><td>361.0</td><td>42.43</td><td>1.25</td></tr><tr><td>1961</td><td>439.2</td><td>78.15</td><td>1.96</td></tr><tr><td>1971</td><td>548.2</td><td>108.92</td><td>2.20</td></tr><tr><td>1981</td><td>683.3</td><td>135.17</td><td>2.22</td></tr><tr><td>1991</td><td>846.4</td><td>163.09</td><td>2.16</td></tr><tr><td>2001</td><td>1028.7</td><td>182.32</td><td>1.97</td></tr><tr><td>2011</td><td>1210.6</td><td>181.46</td><td>1.64</td></tr></table></div><div class=\"rev\"><i>Table 6.1 — each decade's absolute increase equals the difference between the two census totals.</i></div><div class=\"pt\"><b>1951–1981:</b> annual growth rate rose steadily — population grew from 361 million to 683 million.</div><div class=\"pt\"><b>Since 1981:</b> the rate has declined as birth rates fell rapidly; still 182 million were added in the 1990s — because a low rate applied to a very large population gives a large absolute increase.</div><div class=\"pt\">India may overtake China in 2045 to become the most populous country (textbook projection).</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 210\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"210\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"20\" font-size=\"11.5\" fill=\"#00B4DB\" text-anchor=\"middle\" font-weight=\"700\">Decadal Growth Rate of India (%)</text><line x1=\"40\" y1=\"160.0\" x2=\"300\" y2=\"160.0\" stroke=\"rgba(255,255,255,0.12)\"/><text x=\"35\" y=\"163.0\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">14</text><line x1=\"40\" y1=\"142.9\" x2=\"300\" y2=\"142.9\" stroke=\"rgba(255,255,255,0.12)\"/><text x=\"35\" y=\"145.9\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">16</text><line x1=\"40\" y1=\"125.7\" x2=\"300\" y2=\"125.7\" stroke=\"rgba(255,255,255,0.12)\"/><text x=\"35\" y=\"128.7\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">18</text><line x1=\"40\" y1=\"108.6\" x2=\"300\" y2=\"108.6\" stroke=\"rgba(255,255,255,0.12)\"/><text x=\"35\" y=\"111.6\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">20</text><line x1=\"40\" y1=\"91.4\" x2=\"300\" y2=\"91.4\" stroke=\"rgba(255,255,255,0.12)\"/><text x=\"35\" y=\"94.4\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">22</text><line x1=\"40\" y1=\"74.3\" x2=\"300\" y2=\"74.3\" stroke=\"rgba(255,255,255,0.12)\"/><text x=\"35\" y=\"77.3\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">24</text><line x1=\"40\" y1=\"57.1\" x2=\"300\" y2=\"57.1\" stroke=\"rgba(255,255,255,0.12)\"/><text x=\"35\" y=\"60.1\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">26</text><line x1=\"40\" y1=\"40.0\" x2=\"300\" y2=\"40.0\" stroke=\"rgba(255,255,255,0.12)\"/><text x=\"35\" y=\"43.0\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">28</text><polyline points=\"61.7,94.5 105.0,67.4 148.3,68.6 191.7,75.4 235.0,95.4 278.3,128.8\" fill=\"none\" stroke=\"#00B4DB\" stroke-width=\"2.2\"/><circle cx=\"61.7\" cy=\"94.5\" r=\"3.5\" fill=\"#FFB74D\" stroke=\"#1E1E2E\"/><text x=\"61.7\" y=\"86.5\" font-size=\"9\" fill=\"#FFB74D\" text-anchor=\"middle\" font-weight=\"700\">21.64</text><text x=\"61.7\" y=\"174\" font-size=\"8.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">1951–61</text><circle cx=\"105.0\" cy=\"67.4\" r=\"3.5\" fill=\"#FFB74D\" stroke=\"#1E1E2E\"/><text x=\"105.0\" y=\"59.4\" font-size=\"9\" fill=\"#FFB74D\" text-anchor=\"middle\" font-weight=\"700\">24.8</text><text x=\"105.0\" y=\"174\" font-size=\"8.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">1961–71</text><circle cx=\"148.3\" cy=\"68.6\" r=\"3.5\" fill=\"#FFB74D\" stroke=\"#1E1E2E\"/><text x=\"148.3\" y=\"60.6\" font-size=\"9\" fill=\"#FFB74D\" text-anchor=\"middle\" font-weight=\"700\">24.66</text><text x=\"148.3\" y=\"174\" font-size=\"8.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">1971–81</text><circle cx=\"191.7\" cy=\"75.4\" r=\"3.5\" fill=\"#FFB74D\" stroke=\"#1E1E2E\"/><text x=\"191.7\" y=\"67.4\" font-size=\"9\" fill=\"#FFB74D\" text-anchor=\"middle\" font-weight=\"700\">23.87</text><text x=\"191.7\" y=\"174\" font-size=\"8.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">1981–91</text><circle cx=\"235.0\" cy=\"95.4\" r=\"3.5\" fill=\"#FFB74D\" stroke=\"#1E1E2E\"/><text x=\"235.0\" y=\"87.4\" font-size=\"9\" fill=\"#FFB74D\" text-anchor=\"middle\" font-weight=\"700\">21.54</text><text x=\"235.0\" y=\"174\" font-size=\"8.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">1991–01</text><circle cx=\"278.3\" cy=\"128.8\" r=\"3.5\" fill=\"#FFB74D\" stroke=\"#1E1E2E\"/><text x=\"278.3\" y=\"120.8\" font-size=\"9\" fill=\"#FFB74D\" text-anchor=\"middle\" font-weight=\"700\">17.64</text><text x=\"278.3\" y=\"174\" font-size=\"8.5\" fill=\"#FFFFFF\" text-anchor=\"middle\">2001–11</text><line x1=\"40\" y1=\"160\" x2=\"300\" y2=\"160\" stroke=\"#FFFFFF\"/><line x1=\"40\" y1=\"36\" x2=\"40\" y2=\"160\" stroke=\"#FFFFFF\"/><polyline points=\"35,154 45,150 35,146 45,142\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"1.2\"/><text x=\"160\" y=\"200\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"middle\">Axis starts at 14%; source: Census of India (Fig. 6.4 a)</text></svg></div><div class=\"diagram-caption\">Fig. 1: Decadal growth rate, 1951–2011</div></div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 240\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"240\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"20\" font-size=\"11.5\" fill=\"#00B4DB\" text-anchor=\"middle\" font-weight=\"700\">India's Population 1901–2011 (million)</text><line x1=\"40\" y1=\"190.0\" x2=\"312\" y2=\"190.0\" stroke=\"rgba(255,255,255,0.12)\"/><text x=\"35\" y=\"193.0\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">0</text><line x1=\"40\" y1=\"168.6\" x2=\"312\" y2=\"168.6\" stroke=\"rgba(255,255,255,0.12)\"/><text x=\"35\" y=\"171.6\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">200</text><line x1=\"40\" y1=\"147.1\" x2=\"312\" y2=\"147.1\" stroke=\"rgba(255,255,255,0.12)\"/><text x=\"35\" y=\"150.1\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">400</text><line x1=\"40\" y1=\"125.7\" x2=\"312\" y2=\"125.7\" stroke=\"rgba(255,255,255,0.12)\"/><text x=\"35\" y=\"128.7\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">600</text><line x1=\"40\" y1=\"104.3\" x2=\"312\" y2=\"104.3\" stroke=\"rgba(255,255,255,0.12)\"/><text x=\"35\" y=\"107.3\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">800</text><line x1=\"40\" y1=\"82.9\" x2=\"312\" y2=\"82.9\" stroke=\"rgba(255,255,255,0.12)\"/><text x=\"35\" y=\"85.9\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">1000</text><line x1=\"40\" y1=\"61.4\" x2=\"312\" y2=\"61.4\" stroke=\"rgba(255,255,255,0.12)\"/><text x=\"35\" y=\"64.4\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">1200</text><line x1=\"40\" y1=\"40.0\" x2=\"312\" y2=\"40.0\" stroke=\"rgba(255,255,255,0.12)\"/><text x=\"35\" y=\"43.0\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">1400</text><rect x=\"43.9\" y=\"164.5\" width=\"15.0\" height=\"25.5\" fill=\"#4FC3F7\" stroke=\"#FFFFFF\" stroke-width=\"0.6\"/><text x=\"51.3\" y=\"160.5\" font-size=\"7\" fill=\"#4FC3F7\" text-anchor=\"middle\" font-weight=\"700\">238</text><text x=\"51.3\" y=\"201\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"end\" transform=\"rotate(-45 51.3 201)\">1901</text><rect x=\"66.5\" y=\"163.0\" width=\"15.0\" height=\"27.0\" fill=\"#4FC3F7\" stroke=\"#FFFFFF\" stroke-width=\"0.6\"/><text x=\"74.0\" y=\"159.0\" font-size=\"7\" fill=\"#4FC3F7\" text-anchor=\"middle\" font-weight=\"700\">252</text><text x=\"74.0\" y=\"201\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"end\" transform=\"rotate(-45 74.0 201)\">1911</text><rect x=\"89.2\" y=\"163.1\" width=\"15.0\" height=\"26.9\" fill=\"#4FC3F7\" stroke=\"#FFFFFF\" stroke-width=\"0.6\"/><text x=\"96.7\" y=\"159.1\" font-size=\"7\" fill=\"#4FC3F7\" text-anchor=\"middle\" font-weight=\"700\">251</text><text x=\"96.7\" y=\"201\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"end\" transform=\"rotate(-45 96.7 201)\">1921</text><rect x=\"111.9\" y=\"160.1\" width=\"15.0\" height=\"29.9\" fill=\"#4FC3F7\" stroke=\"#FFFFFF\" stroke-width=\"0.6\"/><text x=\"119.3\" y=\"156.1\" font-size=\"7\" fill=\"#4FC3F7\" text-anchor=\"middle\" font-weight=\"700\">279</text><text x=\"119.3\" y=\"201\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"end\" transform=\"rotate(-45 119.3 201)\">1931</text><rect x=\"134.5\" y=\"155.9\" width=\"15.0\" height=\"34.1\" fill=\"#4FC3F7\" stroke=\"#FFFFFF\" stroke-width=\"0.6\"/><text x=\"142.0\" y=\"151.9\" font-size=\"7\" fill=\"#4FC3F7\" text-anchor=\"middle\" font-weight=\"700\">319</text><text x=\"142.0\" y=\"201\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"end\" transform=\"rotate(-45 142.0 201)\">1941</text><rect x=\"157.2\" y=\"151.3\" width=\"15.0\" height=\"38.7\" fill=\"#FFB74D\" stroke=\"#FFFFFF\" stroke-width=\"0.6\"/><text x=\"164.7\" y=\"147.3\" font-size=\"7\" fill=\"#FFB74D\" text-anchor=\"middle\" font-weight=\"700\">361</text><text x=\"164.7\" y=\"201\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"end\" transform=\"rotate(-45 164.7 201)\">1951</text><rect x=\"179.9\" y=\"142.9\" width=\"15.0\" height=\"47.1\" fill=\"#FFB74D\" stroke=\"#FFFFFF\" stroke-width=\"0.6\"/><text x=\"187.3\" y=\"138.9\" font-size=\"7\" fill=\"#FFB74D\" text-anchor=\"middle\" font-weight=\"700\">439</text><text x=\"187.3\" y=\"201\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"end\" transform=\"rotate(-45 187.3 201)\">1961</text><rect x=\"202.5\" y=\"131.3\" width=\"15.0\" height=\"58.7\" fill=\"#FFB74D\" stroke=\"#FFFFFF\" stroke-width=\"0.6\"/><text x=\"210.0\" y=\"127.3\" font-size=\"7\" fill=\"#FFB74D\" text-anchor=\"middle\" font-weight=\"700\">548</text><text x=\"210.0\" y=\"201\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"end\" transform=\"rotate(-45 210.0 201)\">1971</text><rect x=\"225.2\" y=\"116.8\" width=\"15.0\" height=\"73.2\" fill=\"#EF5350\" stroke=\"#FFFFFF\" stroke-width=\"0.6\"/><text x=\"232.7\" y=\"112.8\" font-size=\"7\" fill=\"#EF5350\" text-anchor=\"middle\" font-weight=\"700\">683</text><text x=\"232.7\" y=\"201\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"end\" transform=\"rotate(-45 232.7 201)\">1981</text><rect x=\"247.9\" y=\"99.3\" width=\"15.0\" height=\"90.7\" fill=\"#EF5350\" stroke=\"#FFFFFF\" stroke-width=\"0.6\"/><text x=\"255.3\" y=\"95.3\" font-size=\"7\" fill=\"#EF5350\" text-anchor=\"middle\" font-weight=\"700\">846</text><text x=\"255.3\" y=\"201\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"end\" transform=\"rotate(-45 255.3 201)\">1991</text><rect x=\"270.5\" y=\"79.8\" width=\"15.0\" height=\"110.2\" fill=\"#EF5350\" stroke=\"#FFFFFF\" stroke-width=\"0.6\"/><text x=\"278.0\" y=\"75.8\" font-size=\"7\" fill=\"#EF5350\" text-anchor=\"middle\" font-weight=\"700\">1029</text><text x=\"278.0\" y=\"201\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"end\" transform=\"rotate(-45 278.0 201)\">2001</text><rect x=\"293.2\" y=\"60.3\" width=\"15.0\" height=\"129.7\" fill=\"#EF5350\" stroke=\"#FFFFFF\" stroke-width=\"0.6\"/><text x=\"300.7\" y=\"56.3\" font-size=\"7\" fill=\"#EF5350\" text-anchor=\"middle\" font-weight=\"700\">1210</text><text x=\"300.7\" y=\"201\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"end\" transform=\"rotate(-45 300.7 201)\">2011</text><line x1=\"40\" y1=\"190\" x2=\"312\" y2=\"190\" stroke=\"#FFFFFF\"/><line x1=\"40\" y1=\"36\" x2=\"40\" y2=\"190\" stroke=\"#FFFFFF\"/><text x=\"160\" y=\"234\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"middle\">Source: Census of India (Fig. 6.4 b); values rounded</text></svg></div><div class=\"diagram-caption\">Fig. 2: India's population, 1901–2011</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 3. Processes of Population Change</div><div class=\"sol-step\"><div class=\"pt\"><b>Natural increase</b> = birth rate − death rate.</div><div class=\"pt\"><b>Birth rate:</b> live births per thousand persons in a year — always higher than the death rate in India.</div><div class=\"pt\"><b>Death rate:</b> deaths per thousand persons in a year. The rapid decline in death rates was the main cause of high growth; till 1980 the gap between the two was large. Since 1981 birth rates have also declined.</div><div class=\"pt\"><b>Migration:</b> movement of people across regions and territories — <b>internal</b> (within the country) or <b>international</b>. Internal migration changes distribution, not size.</div><div class=\"pt\">Most migration is <b>rural to urban</b> — \"push\" (poverty, unemployment in villages) and \"pull\" (jobs, better living in cities). Urban population rose from <b>17.29% (1951)</b> to <b>31.80% (2011)</b>; ‘million plus cities’ rose from <b>35 to 53</b> between 2001 and 2011.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 4. Characteristics of the Population</div><div class=\"sol-step\"><div class=\"sub-q\">Age composition</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Group</th><th>Description</th></tr><tr><td>Children (below 15)</td><td>Economically unproductive; need food, clothing, education, medical care</td></tr><tr><td>Working age (15–59)</td><td>Economically productive and biologically reproductive</td></tr><tr><td>Aged (above 59)</td><td>May work voluntarily but are not available for employment through recruitment</td></tr></table></div><div class=\"pt\">The percentage of children and the aged affects the <b>dependency ratio</b>.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 200\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"200\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"20\" font-size=\"11.5\" fill=\"#00B4DB\" text-anchor=\"middle\" font-weight=\"700\">India: Age Composition (%)</text><path d=\"M95.00,35.00 A70,70 0 1 1 58.61,164.80 L75.25,137.46 A38,38 0 1 0 95.00,67.00 Z\" fill=\"#FF8A65\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><rect x=\"190\" y=\"70\" width=\"12\" height=\"12\" fill=\"#FF8A65\"/><text x=\"208\" y=\"80\" font-size=\"9.5\" fill=\"#FFFFFF\">Adults (15–59)</text><text x=\"208\" y=\"92\" font-size=\"9\" fill=\"#FF8A65\" font-weight=\"700\">58.7%</text><path d=\"M58.61,164.80 A70,70 0 0 1 65.59,41.48 L79.04,70.52 A38,38 0 0 0 75.25,137.46 Z\" fill=\"#FDD835\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><rect x=\"190\" y=\"96\" width=\"12\" height=\"12\" fill=\"#FDD835\"/><text x=\"208\" y=\"106\" font-size=\"9.5\" fill=\"#FFFFFF\">Children (below 15)</text><text x=\"208\" y=\"118\" font-size=\"9\" fill=\"#FDD835\" font-weight=\"700\">34.4%</text><path d=\"M65.59,41.48 A70,70 0 0 1 95.00,35.00 L95.00,67.00 A38,38 0 0 0 79.04,70.52 Z\" fill=\"#4FC3F7\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><rect x=\"190\" y=\"122\" width=\"12\" height=\"12\" fill=\"#4FC3F7\"/><text x=\"208\" y=\"132\" font-size=\"9.5\" fill=\"#FFFFFF\">Aged (above 59)</text><text x=\"208\" y=\"144\" font-size=\"9\" fill=\"#4FC3F7\" font-weight=\"700\">6.9%</text><text x=\"95\" y=\"109\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">2011</text><text x=\"160\" y=\"194\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"middle\">Source: Fig. 6.5 of the textbook</text></svg></div><div class=\"diagram-caption\">Fig. 3: Age composition of India</div></div><div class=\"sub-q\">Sex ratio</div><div class=\"pt\"><b>Sex ratio</b> = number of females per 1,000 males — an indicator of equality between men and women; always unfavourable to females in India.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Census year</th><th>1951</th><th>1961</th><th>1971</th><th>1981</th><th>1991</th><th>2001</th><th>2011</th></tr><tr><td>Sex ratio</td><td>946</td><td>941</td><td>930</td><td>934</td><td>929</td><td>933</td><td>943</td></tr></table></div><div class=\"pt\"><span class=\"lbl\">Do You Know?</span> Kerala 1,084 and Puducherry 1,038 females per 1,000 males; Delhi only 866 and Haryana 877.</div><div class=\"sub-q\">Literacy</div><div class=\"pt\">A person aged <b>7 years and above</b> who can read and write with understanding in any language is <b>literate</b> (Census 2011).</div><div class=\"pt\">Literacy rate 2011: <b>73%</b> — males <b>80.9%</b>, females <b>64.6%</b>.</div><div class=\"sub-q\">Occupational structure</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Sector</th><th>Activities</th><th>Share of workforce (India)</th></tr><tr><td>Primary</td><td>Agriculture, animal husbandry, forestry, fishing, mining, quarrying</td><td>About 64% (agriculture)</td></tr><tr><td>Secondary</td><td>Manufacturing, building and construction</td><td>About 13%</td></tr><tr><td>Tertiary</td><td>Transport, communication, commerce, administration, services</td><td>About 20%</td></tr></table></div><div class=\"pt\">Developed nations have more people in secondary and tertiary activities; developing countries in primary. India shows a shift towards secondary and tertiary sectors with industrialisation and urbanisation.</div><div class=\"sub-q\">Health</div><div class=\"pt\">Death rate fell from <b>25 per 1,000 (1951) to 7.2 (2011)</b>; life expectancy rose from <b>36.7 years (1951) to 67.9 years (2012)</b> — due to public health, prevention of infectious diseases and modern medicine.</div><div class=\"pt\">Still a concern: low per capita calorie intake, malnutrition; safe drinking water and sanitation available to only one-third of the rural population.</div><div class=\"sub-q\">Adolescent population</div><div class=\"pt\">Age 10–19 years — <b>one-fifth</b> of the population; the most important resource for the future. Their diet is inadequate; many adolescent girls suffer from <b>anaemia</b>. Awareness through literacy and education.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 5. National Population Policy</div><div class=\"sol-step\"><div class=\"pt\">Comprehensive <b>Family Planning Programme</b> started in <b>1952</b>; the Family Welfare Programme promotes responsible and planned parenthood on a voluntary basis.</div><div class=\"pt\"><b>National Population Policy (NPP) 2000</b>: free and compulsory school education up to 14 years; infant mortality below 30 per 1,000 live births; universal immunisation; delayed marriage for girls; family welfare as a people-centred programme.</div><div class=\"pt\"><b>NPP 2000 and adolescents:</b> nutrition, protection from unwanted pregnancies and STDs, delayed marriage and child-bearing, education about risks of unprotected sex, accessible contraceptive services, food supplements, and legal measures to prevent child marriage.</div><div class=\"rev\">People are the nation's most valuable resource. A well-educated healthy population provides potential power.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 6. Key Terms</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Term</th><th>Meaning</th></tr><tr><td>Census</td><td>Official periodic enumeration of population</td></tr><tr><td>Population density</td><td>Number of persons per unit area</td></tr><tr><td>Absolute increase</td><td>Later population minus earlier population</td></tr><tr><td>Annual growth rate</td><td>Increase per 100 persons per year (%)</td></tr><tr><td>Birth / Death rate</td><td>Live births / deaths per 1,000 persons in a year</td></tr><tr><td>Migration</td><td>Movement of people across regions and territories</td></tr><tr><td>Sex ratio</td><td>Females per 1,000 males</td></tr><tr><td>Literate</td><td>Aged 7+ who can read and write with understanding in any language</td></tr><tr><td>Occupational structure</td><td>Distribution of population by type of occupation</td></tr></table></div><div class=\"exam\"><span class=\"exam-t\">📌 Exam Focus</span><div>• Size, distribution and density of population</div><div>• Growth: absolute increase vs growth rate; Table 6.1</div><div>• Birth rate, death rate, migration</div><div>• Age, sex ratio, literacy, occupation, health, adolescents</div><div>• NPP 2000</div></div></div>\n  </div>\n</div>",
+  "htmlExercises": {
+    "sg9-6-ex-q": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(0, 180, 219, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #00B4DB; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #00B4DB; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #B3E5F2; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #B3E5F2; font-weight: 700; }\n  .hl { color: #00B4DB; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #00B4DB; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #00B4DB; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(0, 180, 219, 0.10); border: 1.5px dashed #00B4DB; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #00B4DB; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(0, 180, 219, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(0, 180, 219, 0.18); border: 1px solid #00B4DB; color: #B3E5F2; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(0, 180, 219, 0.2); color: #B3E5F2; }\n  .q-card .q-text, .q-card .sub-q { color: #00B4DB !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Choose the right answer from the four alternatives given below.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">(i) Migrations change the number, distribution and composition of the population in</div><div>(a) the area of departure</div><div>(b) the area of arrival</div><div>(c) both the area of departure and arrival</div><div>(d) none of the above</div><div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">(c) both the area of departure and arrival</span></div><div class=\"sub-q\">(ii) A large proportion of children in a population is a result of</div><div>(a) high birth rates</div><div>(b) high life expectancies</div><div>(c) high death rates</div><div>(d) more married couples</div><div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">(a) high birth rates</span></div><div class=\"sub-q\">(iii) The magnitude of population growth refers to</div><div>(a) the total population of an area</div><div>(b) the number of persons added each year</div><div>(c) the rate at which the population increases</div><div>(d) the number of females per thousand males</div><div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">(b) the number of persons added each year</span></div><div class=\"sub-q\">(iv) According to the Census, a “literate” person is one who</div><div>(a) can read and write his/her name</div><div>(b) can read and write any language</div><div>(c) is 7 years old and can read and write any language with understanding</div><div>(d) knows the 3 ‘R’s (reading, writing, arithmetic)</div><div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">(c) is 7 years old and can read and write any language with understanding</span></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Answer the following questions briefly.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">(i) Why is the rate of population growth in India declining since 1981?</div><div class=\"pt\"><b>Birth rates</b> have declined rapidly since 1981, while death rates were already low — so the natural increase fell.</div><div class=\"pt\">This is the result of birth control efforts — the <b>Family Planning/Welfare Programme</b> (since 1952), spread of literacy and awareness.</div><div class=\"sub-q\">(ii) Discuss the major components of population growth.</div><div class=\"pt\"><b>Birth rate</b> — live births per 1,000 persons in a year; the major component in India.</div><div class=\"pt\"><b>Death rate</b> — deaths per 1,000 persons in a year; its rapid fall caused fast growth.</div><div class=\"pt\"><b>Migration</b> — movement of people; internal migration changes distribution, international migration changes size.</div><div class=\"sub-q\">(iii) Define age structure, death rate and birth rate.</div><div class=\"pt\"><b>Age structure:</b> the number of people in different age groups — children (below 15), working age (15–59), aged (above 59).</div><div class=\"pt\"><b>Death rate:</b> number of deaths per thousand persons in a year.</div><div class=\"pt\"><b>Birth rate:</b> number of live births per thousand persons in a year.</div><div class=\"sub-q\">(iv) How is migration a determinant factor of population change?</div><div class=\"pt\">It changes the <b>size</b> (international migration), the <b>distribution</b> (internal migration) and the <b>composition</b> (age and sex) of the population of both the areas of departure and arrival.</div><div class=\"pt\">Rural-urban migration raised India's urban population from 17.29% (1951) to 31.80% (2011) and million-plus cities from 35 to 53 (2001–2011).</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Distinguish between population growth and population change.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Population growth</th><th>Population change</th></tr><tr><td>Change in the <b>number of inhabitants</b> of a country/territory during a specific period</td><td>Change in the <b>size, distribution and composition</b> of population over time</td></tr><tr><td>Expressed in absolute numbers or as a percentage per year</td><td>Described through births, deaths and migration and their effects</td></tr><tr><td>A quantitative measure (e.g. 181.46 million added in 2001–11)</td><td>A wider process including where people live and their age and sex structure</td></tr></table></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">What is the relation between occupational structure and development?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Occupational structure</b> is the distribution of population according to primary, secondary and tertiary occupations; the share of economically active people is an index of development.</div><div class=\"pt\"><b>Developed</b> nations have a high proportion of people in <b>secondary and tertiary</b> activities.</div><div class=\"pt\"><b>Developing</b> countries have a higher proportion in <b>primary</b> activities. In India about 64% work in agriculture, about 13% in secondary and 20% in tertiary.</div><div class=\"pt\">As a country develops through industrialisation and urbanisation, workers shift from primary to secondary and tertiary sectors — as is happening in India.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5.</div>\n    <div class=\"q-text\">What are the advantages of having a healthy population?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Healthy people are more <b>productive</b> — they work more efficiently and add to national income.</div><div class=\"pt\">They live longer (life expectancy rose to 67.9 years) and contribute for longer.</div><div class=\"pt\">Less money is spent on medical care; more can be used for development.</div><div class=\"pt\">Healthy children learn better, so literacy and skills improve.</div><div class=\"pt\">A well-educated healthy population is the nation's most valuable resource and potential power.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q6.</div>\n    <div class=\"q-text\">What are the significant features of the National Population Policy 2000?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Free and compulsory school education up to <b>14 years</b> of age.</div><div class=\"pt\">Reducing infant mortality rate to <b>below 30 per 1,000</b> live births.</div><div class=\"pt\"><b>Universal immunisation</b> of children against all vaccine-preventable diseases.</div><div class=\"pt\">Promoting <b>delayed marriage</b> for girls.</div><div class=\"pt\">Making family welfare a <b>people-centred</b> programme.</div><div class=\"pt\"><b>Adolescents:</b> nutrition and food supplements; protection from unwanted pregnancies and STDs; delayed marriage and child-bearing; education about risks; accessible contraceptive services; stronger laws against child marriage.</div></div></div>\n  </div>\n</div>",
+    "sg9-6-ex-find": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(0, 180, 219, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #00B4DB; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #00B4DB; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #B3E5F2; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #B3E5F2; font-weight: 700; }\n  .hl { color: #00B4DB; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #00B4DB; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #00B4DB; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(0, 180, 219, 0.10); border: 1.5px dashed #00B4DB; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #00B4DB; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(0, 180, 219, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(0, 180, 219, 0.18); border: 1px solid #00B4DB; color: #B3E5F2; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(0, 180, 219, 0.2); color: #B3E5F2; }\n  .q-card .q-text, .q-card .sub-q { color: #00B4DB !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">What could be the reason of uneven distribution of population in India?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Relief:</b> flat plains attract people; rugged mountains and plateaus have few.</div><div class=\"pt\"><b>Climate and rainfall:</b> moderate climate and adequate rain support dense population; deserts and very cold areas do not.</div><div class=\"pt\"><b>Soil:</b> fertile alluvial soils of the Northern Plains support intensive farming.</div><div class=\"pt\"><b>Economic opportunities:</b> industries, cities and transport attract people.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Only Bangladesh and Japan have higher average population densities than India. Find out the population densities of Bangladesh and Japan.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Country</th><th>Approximate density (around 2011)</th></tr><tr><td>Bangladesh</td><td>About 1,000 persons per sq km</td></tr><tr><td>Japan</td><td>About 340 persons per sq km</td></tr><tr><td>India (Census 2011)</td><td>382 persons per sq km</td></tr></table></div><div class=\"rev\"><i>Note:</i> Bangladesh is far denser than India. By 2011 Japan's density had actually fallen below India's 382; the textbook's statement comes from an earlier period.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Which states have density below 250 persons per square km? (Figure 6.3)</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Jammu & Kashmir, Himachal Pradesh, Uttarakhand, Rajasthan, Madhya Pradesh, Chhattisgarh, Sikkim, Arunachal Pradesh, Nagaland, Manipur, Mizoram and Meghalaya (also Andaman and Nicobar Islands).</div><div class=\"rev\">Rugged terrain and unfavourable climate are mainly responsible.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">Identify the three states of the Northern Plains with high population densities.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Bihar</b> (1,102 per sq km — the highest), <b>West Bengal</b> and <b>Uttar Pradesh</b>.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5.</div>\n    <div class=\"q-text\">Table 6.1 reveals that despite the decline in growth rates, the number of people being added every decade is steadily increasing. Why?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Because the <b>base population</b> is very large. A lower rate applied to a much bigger population still gives a larger absolute increase.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Decade</th><th>Starting population</th><th>Annual growth rate</th><th>Added in decade</th></tr><tr><td>1981–91</td><td>683.3 million</td><td>2.16%</td><td>163.09 million</td></tr><tr><td>1991–2001</td><td>846.4 million</td><td>1.97%</td><td>182.32 million</td></tr></table></div><div class=\"rev\">The rate fell, but the base grew by 163 million, so more people were added.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q6.</div>\n    <div class=\"q-text\">Since 1981, birth rates have also started declining gradually. What are the reasons for this trend?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Family planning and family welfare programmes.</div><div class=\"pt\">Spread of literacy, especially among women.</div><div class=\"pt\">Later marriages and awareness of small families.</div><div class=\"pt\">Urbanisation and better health care (lower infant deaths, so fewer births are wanted).</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q7.</div>\n    <div class=\"q-text\">The sex ratio in the country has always remained unfavourable to females. Find out why this is so.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Preference for sons and neglect of girls' nutrition and health.</div><div class=\"pt\">Female foeticide and infanticide.</div><div class=\"pt\">High maternal mortality and poor health care for women.</div><div class=\"pt\">Low status of women in society.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q8.</div>\n    <div class=\"q-text\">Kerala has a sex ratio of 1084 and Puducherry 1038, while Delhi has only 866 and Haryana 877. What could be the reasons for such variations?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Kerala, Puducherry:</span> high literacy, better status and health care of women; many men migrate out for work.</div><div class=\"pt\"><span class=\"lbl\">Delhi:</span> large in-migration of men from other states for jobs.</div><div class=\"pt\"><span class=\"lbl\">Haryana:</span> strong son preference and female foeticide.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q9.</div>\n    <div class=\"q-text\">The literacy rate is 80.9 per cent for males and 64.6 per cent for females. Why do such differences exist?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Girls are often kept at home for household work or married early.</div><div class=\"pt\">Lower priority given to girls' education, especially in poor and rural families.</div><div class=\"pt\">Lack of nearby schools, toilets and safety for girls.</div><div class=\"pt\">Gap: 80.9 − 64.6 = <b>16.3 percentage points</b>.</div></div></div>\n  </div>\n</div>",
+    "sg9-6-ex-act": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(0, 180, 219, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #00B4DB; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #00B4DB; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #B3E5F2; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #B3E5F2; font-weight: 700; }\n  .hl { color: #00B4DB; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #00B4DB; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #00B4DB; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(0, 180, 219, 0.10); border: 1.5px dashed #00B4DB; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #00B4DB; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(0, 180, 219, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(0, 180, 219, 0.18); border: 1px solid #00B4DB; color: #B3E5F2; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(0, 180, 219, 0.2); color: #B3E5F2; }\n  .q-card .q-text, .q-card .sub-q { color: #00B4DB !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Study the Figure 6.3 and compare it with Figure 2.4 and Figure 4.7. Do you find any correlation between these maps?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Yes. <b>High density</b> areas — the Northern Plains and Kerala — are flat or low-lying, with fertile soils and good rainfall.</div><div class=\"pt\"><b>Low density</b> areas — the Himalayan states and Rajasthan — have rugged relief or very low rainfall.</div><div class=\"pt\">The north-east has heavy rain but low density, because the terrain is hilly — so relief matters as much as rainfall.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">On a map, trace the migration of each of your grandparents and parents since their birth. Try and analyse the reasons for each move.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\"><i>Guidance:</i> Mark the birthplace of each grandparent and parent, then each place they moved to, joining them with arrows. Write the reason beside each arrow — e.g. marriage, a job, education, business, displacement. Note which moves were <b>rural to urban</b> and whether they were \"push\" or \"pull\" factors.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Activity: (i) How many children do you know who are engaged as household helpers or labourers in your locality? (ii) How many adults do you know in your locality who are unemployed? (iii) What do you feel are the reasons for this?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\"><i>Guidance:</i> Count carefully and respectfully in your own locality for (i) and (ii).</div><div class=\"sub-q\">(iii) Possible reasons</div><div class=\"pt\">Poverty — families need the extra income of children.</div><div class=\"pt\">Illiteracy and lack of skills among adults.</div><div class=\"pt\">Too few jobs compared with the large working population.</div><div class=\"pt\">Lack of awareness of child-labour laws and of free education up to 14 years (NPP 2000).</div></div></div>\n  </div>\n</div>",
+    "sg9-6-ex-proj": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(0, 180, 219, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #00B4DB; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #00B4DB; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #B3E5F2; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #B3E5F2; font-weight: 700; }\n  .hl { color: #00B4DB; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #00B4DB; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #00B4DB; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(0, 180, 219, 0.10); border: 1.5px dashed #00B4DB; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #00B4DB; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(0, 180, 219, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(0, 180, 219, 0.18); border: 1px solid #00B4DB; color: #B3E5F2; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(0, 180, 219, 0.2); color: #B3E5F2; }\n  .q-card .q-text, .q-card .sub-q { color: #00B4DB !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Conduct a class census by preparing a questionnaire. The questionnaire should contain minimum five questions. Questions should relate to students, their family members, their class performance, their health, etc. Each student is required to fill in the questionnaire. Compile the information in numerical terms (in terms of percentage). Present the information through pie-chart, bar-diagram or in any other way.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">Sample questionnaire</div><div class=\"pt\">1. Name, age and sex.</div><div class=\"pt\">2. How many members are there in your family? How many are children (below 15), adults (15–59), aged (60+)?</div><div class=\"pt\">3. Main occupation of the earning members (agriculture / service / business / other).</div><div class=\"pt\">4. How do you come to school (walk / bus / other) and how far is it?</div><div class=\"pt\">5. Marks in the last examination (above 75% / 50–75% / below 50%).</div><div class=\"pt\">6. How many days were you ill in the last three months?</div><div class=\"sub-q\">Converting counts to percentages</div><div>Percentage = (number of students in a group ÷ total students) × 100</div><div><i>Example:</i> 12 of 40 students walk to school:</div><div>12 ÷ 40 × 100 = 30%</div><div class=\"sub-q\">Presenting</div><div class=\"pt\">Use a <b>pie-chart</b> for parts of a whole (e.g. mode of travel, family occupation) — angle of a sector = percentage × 3.6°.</div><div>30% × 3.6° = 108°</div><div class=\"pt\">Use a <b>bar-diagram</b> to compare groups (e.g. family size, marks).</div></div></div>\n  </div>\n</div>"
   },
-  introduction: "Human beings are the vital resource of a country. The census of India provides demographic details regarding the population.",
-  definitions: [],
-  keyPoints: [],
-  formulas: [],
-  crux: [],
-  mcqs: [
+  "introduction": "Human beings are the vital resource of a country. The census of India provides demographic details regarding the population.",
+  "definitions": [],
+  "keyPoints": [],
+  "formulas": [],
+  "crux": [],
+  "mcqs": [
     {
-      id: "sst-geo-c9-6-mcq-1",
-      question: "Migrations change the number, distribution and composition of the population in:",
-      options: [
-        "the area of departure",
-        "the area of arrival",
-        "both the area of departure and arrival",
-        "none of the above",
+      "id": "sst-geo-c9-6-mcq-1",
+      "question": "<div style='text-align: justify;'>The first complete census in India was taken in the year —</div>",
+      "options": [
+        "A):   1872",
+        "B):   1881",
+        "C):   1901",
+        "D):   1951"
       ],
-      correctAnswer: "c",
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>The first census was held in 1872.</div>"
     },
     {
-      id: "sst-geo-c9-6-mcq-2",
-      question: "A large proportion of children in a population is a result of:",
-      options: [
-        "high birth rates",
-        "high life expectancies",
-        "high death rates",
-        "more married couples",
+      "id": "sst-geo-c9-6-mcq-2",
+      "question": "<div style='text-align: justify;'>In March 2011, India's population was —</div>",
+      "options": [
+        "A):   1,028.7 million",
+        "B):   846.4 million",
+        "C):   1,210.6 million",
+        "D):   683.3 million"
       ],
-      correctAnswer: "a",
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>It is 17.5 per cent of the world's population.</div>"
     },
     {
-      id: "sst-geo-c9-6-mcq-3",
-      question: "The magnitude of population growth refers to:",
-      options: [
-        "the total population of an area",
-        "the number of persons added each year",
-        "the rate at which the population increases",
-        "the number of females per thousand males",
+      "id": "sst-geo-c9-6-mcq-3",
+      "question": "<div style='text-align: justify;'>India's share of the world's area is —</div>",
+      "options": [
+        "A):   2.4 per cent",
+        "B):   17.5 per cent",
+        "C):   5.5 per cent",
+        "D):   16 per cent"
       ],
-      correctAnswer: "b",
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Its share of world population is 17.5 per cent.</div>"
     },
     {
-      id: "sst-geo-c9-6-mcq-4",
-      question: "According to the Census, a 'literate' person is one who:",
-      options: [
-        "can read and write his/her name",
-        "can read and write any language",
-        "is 7 years old and can read and write any language with understanding",
-        "knows the 3 'R's (reading, writing, arithmetic)",
+      "id": "sst-geo-c9-6-mcq-4",
+      "question": "<div style='text-align: justify;'>The most populous state of India (Census 2011) is —</div>",
+      "options": [
+        "A):   Maharashtra",
+        "B):   Bihar",
+        "C):   West Bengal",
+        "D):   Uttar Pradesh"
       ],
-      correctAnswer: "c",
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>It has about 199 million people.</div>"
     },
     {
-      id: "sst-geo-c9-6-mcq-5",
-      question: "What is the sex ratio defined as?",
-      options: [
-        "Number of males per 1000 females",
-        "Number of females per 1000 males",
-        "Number of children per 1000 adults",
-        "Number of births per 1000 deaths",
+      "id": "sst-geo-c9-6-mcq-5",
+      "question": "<div style='text-align: justify;'>The population density of India in 2011 was —</div>",
+      "options": [
+        "A):   1,102 persons per sq km",
+        "B):   382 persons per sq km",
+        "C):   17 persons per sq km",
+        "D):   250 persons per sq km"
       ],
-      correctAnswer: "b",
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Bihar has 1,102 and Arunachal Pradesh 17.</div>"
     },
     {
-      id: "sst-geo-c9-6-mcq-6",
-      question: "What is the most populous state of India according to the Census 2011?",
-      options: ["Maharashtra", "Bihar", "Uttar Pradesh", "West Bengal"],
-      correctAnswer: "c",
+      "id": "sst-geo-c9-6-mcq-6",
+      "question": "<div style='text-align: justify;'>The state with the lowest population density in 2011 was —</div>",
+      "options": [
+        "A):   Sikkim",
+        "B):   Mizoram",
+        "C):   Arunachal Pradesh",
+        "D):   Rajasthan"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Only 17 persons per sq km.</div>"
     },
     {
-      id: "sst-geo-c9-6-mcq-7",
-      question: "Which state has the lowest population density in India according to Census 2011?",
-      options: ["Sikkim", "Arunachal Pradesh", "Mizoram", "Goa"],
-      correctAnswer: "b",
+      "id": "sst-geo-c9-6-mcq-7",
+      "question": "<div style='text-align: justify;'>The number of live births per thousand persons in a year is called the —</div>",
+      "options": [
+        "A):   birth rate",
+        "B):   death rate",
+        "C):   growth rate",
+        "D):   sex ratio"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>It is a major component of growth in India.</div>"
     },
     {
-      id: "sst-geo-c9-6-mcq-8",
-      question: "When was India's first complete census taken?",
-      options: ["1872", "1881", "1901", "1951"],
-      correctAnswer: "b",
+      "id": "sst-geo-c9-6-mcq-8",
+      "question": "<div style='text-align: justify;'>The decadal growth rate of India in 2001–2011 was —</div>",
+      "options": [
+        "A):   24.8 per cent",
+        "B):   21.54 per cent",
+        "C):   21.64 per cent",
+        "D):   17.64 per cent"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>It is the lowest since 1951.</div>"
     },
     {
-      id: "sst-geo-c9-6-mcq-9",
-      question: "Which of the following age groups is considered as the working population in India?",
-      options: ["Under 15 years", "15-59 years", "60 years and above", "None of these"],
-      correctAnswer: "b",
+      "id": "sst-geo-c9-6-mcq-9",
+      "question": "<div style='text-align: justify;'>The number of people added to India's population in 1991–2001 was about —</div>",
+      "options": [
+        "A):   42 million",
+        "B):   182 million",
+        "C):   78 million",
+        "D):   135 million"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>An annual addition larger than ever before.</div>"
     },
     {
-      id: "sst-geo-c9-6-mcq-10",
-      question: "Which policy did the government of India introduce in 2000 to improve health and family welfare?",
-      options: ["National Health Policy", "National Education Policy", "National Population Policy", "National Child Policy"],
-      correctAnswer: "c",
+      "id": "sst-geo-c9-6-mcq-10",
+      "question": "<div style='text-align: justify;'>India's urban population in 2011 was —</div>",
+      "options": [
+        "A):   17.29 per cent",
+        "B):   64 per cent",
+        "C):   31.80 per cent",
+        "D):   50 per cent"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>It was 17.29 per cent in 1951.</div>"
     },
+    {
+      "id": "sst-geo-c9-6-mcq-11",
+      "question": "<div style='text-align: justify;'>Between 2001 and 2011, the number of ‘million plus cities’ increased from 35 to —</div>",
+      "options": [
+        "A):   53",
+        "B):   45",
+        "C):   64",
+        "D):   100"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Due to rural-urban migration.</div>"
+    },
+    {
+      "id": "sst-geo-c9-6-mcq-12",
+      "question": "<div style='text-align: justify;'>People of the working age group are —</div>",
+      "options": [
+        "A):   below 15 years",
+        "B):   above 59 years",
+        "C):   10–19 years",
+        "D):   15–59 years"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>They are economically productive.</div>"
+    },
+    {
+      "id": "sst-geo-c9-6-mcq-13",
+      "question": "<div style='text-align: justify;'>India's sex ratio in 2011 was —</div>",
+      "options": [
+        "A):   933",
+        "B):   943",
+        "C):   946",
+        "D):   866"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Females per 1,000 males.</div>"
+    },
+    {
+      "id": "sst-geo-c9-6-mcq-14",
+      "question": "<div style='text-align: justify;'>The state with the highest sex ratio mentioned in the textbook is —</div>",
+      "options": [
+        "A):   Haryana",
+        "B):   Puducherry",
+        "C):   Kerala",
+        "D):   Delhi"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Kerala has 1,084 females per 1,000 males.</div>"
+    },
+    {
+      "id": "sst-geo-c9-6-mcq-15",
+      "question": "<div style='text-align: justify;'>The literacy rate of India as per Census 2011 is —</div>",
+      "options": [
+        "A):   73 per cent",
+        "B):   64.6 per cent",
+        "C):   80.9 per cent",
+        "D):   58.7 per cent"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Males 80.9 and females 64.6 per cent.</div>"
+    },
+    {
+      "id": "sst-geo-c9-6-mcq-16",
+      "question": "<div style='text-align: justify;'>About what share of India's population is engaged in agriculture?</div>",
+      "options": [
+        "A):   13 per cent",
+        "B):   20 per cent",
+        "C):   35 per cent",
+        "D):   64 per cent"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Secondary about 13 and tertiary about 20 per cent.</div>"
+    },
+    {
+      "id": "sst-geo-c9-6-mcq-17",
+      "question": "<div style='text-align: justify;'>Life expectancy at birth in India in 2012 was —</div>",
+      "options": [
+        "A):   36.7 years",
+        "B):   67.9 years",
+        "C):   58.7 years",
+        "D):   72 years"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>It was 36.7 years in 1951.</div>"
+    },
+    {
+      "id": "sst-geo-c9-6-mcq-18",
+      "question": "<div style='text-align: justify;'>The Family Planning Programme was initiated in India in —</div>",
+      "options": [
+        "A):   1947",
+        "B):   1981",
+        "C):   1952",
+        "D):   2000"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>NPP 2000 is a culmination of years of planned efforts.</div>"
+    },
+    {
+      "id": "sst-geo-c9-6-mcq-19",
+      "question": "<div style='text-align: justify;'>Assertion (A): The Northern Plains have high population densities. Reason (R): They are flat plains with fertile soils and abundant rainfall.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>These conditions favour farming and settlement.</div>"
+    },
+    {
+      "id": "sst-geo-c9-6-mcq-20",
+      "question": "<div style='text-align: justify;'>Assertion (A): Internal migration changes the size of India's population. Reason (R): Most migration in India is from rural to urban areas.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Internal migration changes distribution, not size; R is true.</div>"
+    }
   ],
-  summary: [],
-  exercises: [
+  "summary": [],
+  "exercises": [
     {
-      id: "ex-sst-qa",
-      name: "Q & A",
-      questions: [],
+      "id": "sg9-6-ex-q",
+      "name": "Questions",
+      "questions": []
     },
+    {
+      "id": "sg9-6-ex-find",
+      "name": "Find Out",
+      "questions": []
+    },
+    {
+      "id": "sg9-6-ex-act",
+      "name": "Activities",
+      "questions": []
+    },
+    {
+      "id": "sg9-6-ex-proj",
+      "name": "Projects",
+      "questions": []
+    }
   ],
-  examples: [],
+  "examples": []
 };
