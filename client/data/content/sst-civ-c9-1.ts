@@ -1,415 +1,286 @@
 import { ChapterContent } from "../types";
 
-const themeColor = "#AB47BC"; // Purple theme color for Civics/Political Science
-
 export const sstCivC91: ChapterContent = {
-  id: "sst-civ-c9-1",
-  number: 1,
-  title: "What is Democracy? Why Democracy?",
-  introduction:
-    "This chapter introduces the concept of democracy, its key features, and why it is considered the best form of government compared to other non-democratic alternatives.",
-  definitions: [
-    {
-      term: "Democracy",
-      description:
-        "A form of government in which the rulers are elected by the people.",
-    },
-    {
-      term: "Universal Adult Franchise",
-      description:
-        "The right of all adult citizens (18 years and above in India) to vote in elections, regardless of their wealth, gender, social status, or religion.",
-    },
-    {
-      term: "Rule of Law",
-      description:
-        "The principle that all citizens, including the rulers and government officials, are equal before the law and must abide by it.",
-    },
-    {
-      term: "Sovereignty",
-      description:
-        "The supreme power and authority of a country to govern itself without any external interference.",
-    },
-  ],
-  keyPoints: [
-    "Major Decisions by Elected Leaders: In a democracy, final decision-making power must rest with those elected by the people (unlike Pakistan under Musharraf).",
-    "Free and Fair Electoral Competition: A democracy must be based on a free and fair election where those currently in power have a fair chance of losing (unlike China or Mexico).",
-    "One Person, One Vote, One Value: In a democracy, each adult citizen must have one vote and each vote must have one value (unlike Estonia or Saudi Arabia).",
-    "Rule of Law and Respect for Rights: A democratic government rules within limits set by constitutional law and citizens' rights (unlike Zimbabwe under Mugabe).",
-    "Arguments Against Democracy: It leads to instability, political competition rather than morality, delays in decision-making, and bad decisions due to ignorance.",
-    "Arguments For Democracy: It is more accountable, improves the quality of decision-making, provides a method to deal with differences, and enhances citizens' dignity.",
-  ],
-  formulas: [],
-  crux: [
-    "Democracy is government of the people, by the people, for the people.",
-    "True democracy goes beyond just holding elections; the elections must be competitive, inclusive, and fair.",
-    "Major democratic values: Equality, Liberty, Accountability, and the Rule of Law.",
-  ],
-  mcqs: [
-    {
-      id: "sst-civ-c9-1-mcq-1",
-      question: "Which of the following is a key feature of democracy?",
-      options: [
-        "Rulers are not accountable to citizens",
-        "Final decision-making rests with elected representatives",
-        "Only rich people are allowed to vote",
-        "No opposition parties are allowed",
-      ],
-      correctAnswer: "b",
-    },
-    {
-      id: "sst-civ-c9-1-mcq-2",
-      question: "In which country did women not have the right to vote until 2015?",
-      options: ["Estonia", "Fiji", "Saudi Arabia", "Mexico"],
-      correctAnswer: "c",
-    },
-    {
-      id: "sst-civ-c9-1-mcq-3",
-      question: "In Mexico, PRI won almost every election because:",
-      options: [
-        "People genuinely preferred it",
-        "No other party contested the elections",
-        "It used dirty tricks and electoral malpractices",
-        "It was a military dictatorship",
-      ],
-      correctAnswer: "c",
-    },
-    {
-      id: "sst-civ-c9-1-mcq-4",
-      question: "A democratic government is better than other forms of government because:",
-      options: [
-        "It is more accountable to the people",
-        "It guarantees high economic growth immediately",
-        "It avoids all delays in making decisions",
-        "It is always free of corruption",
-      ],
-      correctAnswer: "a",
-    },
-    {
-      id: "sst-civ-c9-1-mcq-5",
-      question: "Which country's electoral system makes the vote of an indigenous citizen have more value than that of an immigrant?",
-      options: ["Fiji", "Estonia", "Saudi Arabia", "Zimbabwe"],
-      correctAnswer: "a",
-    },
-    {
-      id: "sst-civ-c9-1-mcq-6",
-      question: "Who led a military coup in Pakistan in October 1999?",
-      options: [
-        "General Pervez Musharraf",
-        "General Zia-ul-Haq",
-        "Nawaz Sharif",
-        "Benazir Bhutto",
-      ],
-      correctAnswer: "a",
-    },
-    {
-      id: "sst-civ-c9-1-mcq-7",
-      question: "Under which president did Zimbabwe gain independence from white minority rule?",
-      options: ["Robert Mugabe", "Nelson Mandela", "Kofi Annan", "Julius Nyerere"],
-      correctAnswer: "a",
-    },
-    {
-      id: "sst-civ-c9-1-mcq-8",
-      question: "Which of the following is an argument against democracy?",
-      options: [
-        "It improves the quality of decision-making",
-        "It leads to instability due to frequent leadership changes",
-        "It enhances the dignity of citizens",
-        "It provides a method to resolve conflicts peacefully",
-      ],
-      correctAnswer: "b",
-    },
-    {
-      id: "sst-civ-c9-1-mcq-9",
-      question: "A democracy must be based on a free and fair election where those currently in power have:",
-      options: [
-        "A guaranteed win",
-        "A fair chance of losing",
-        "No right to contest",
-        "The power to cancel voting",
-      ],
-      correctAnswer: "b",
-    },
-    {
-      id: "sst-civ-c9-1-mcq-10",
-      question: "Which body in China is responsible for appointing the President of the country?",
-      options: [
-        "National People's Congress",
-        "Military Council",
-        "Supreme Court",
-        "State Council",
-      ],
-      correctAnswer: "a",
-    },
-  ],
-  summary: [
-    "Democracy is a widely preferred form of government because it respects the dignity of citizens and corrects its own mistakes.",
-    "Holding elections is necessary but not sufficient; they must be free, fair, regular, and inclusive to be truly democratic.",
-    "Constitutional limitations and rule of law ensure that democratic leaders do not act as autocrats.",
-  ],
-  isHtmlView: true,
-  htmlOverview: `
-    <div style="padding: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: transparent;">
-      <!-- Key Concepts Introduction -->
-      <div style="background-color: #1E1E2E; border: 1px solid rgba(156, 39, 176, 0.25); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 20px; font-weight: 700; margin-top: 0; margin-bottom: 12px; display: flex; align-items: center;">
-          <span style="margin-right: 8px; font-size: 22px;">🗳️</span> Introduction
-        </h3>
-        <p style="color: #E0E0E0; font-size: 15px; line-height: 1.6; text-align: justify; margin: 0; font-weight: 300;">
-          Democracy is the most popular form of government in the modern world. This chapter breaks down what democracy means by defining its core features and exploring arguments for and against it. It helps us distinguish between a nominal democracy (a government that simply holds elections) and a real, functional democracy.
-        </p>
-      </div>
-
-      <!-- Key Features of Democracy -->
-      <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 600; margin-top: 0; margin-bottom: 14px; display: flex; align-items: center;">
-          <span style="margin-right: 8px; font-size: 18px;">📌</span> Key Features
-        </h3>
-        <ul style="color: #B3B3C6; font-size: 14.5px; line-height: 1.7; margin: 0; padding-left: 20px; text-align: justify;">
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">Elected Leaders:</b> The final decision-making power must rest with representatives elected by the people.</li>
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">Free and Fair Elections:</b> Elections must offer a real choice, and the ruling party must have a fair chance of losing.</li>
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">Equal Voting Rights:</b> Each adult citizen must have one vote, and every vote must carry the same value (Universal Adult Franchise).</li>
-          <li style="margin-bottom: 0;"><b style="color: ${themeColor};">Constitutional Limits:</b> The government must rule according to the laws set by the constitution and protect the basic rights of its citizens.</li>
-        </ul>
-      </div>
-      
-      <!-- Key Terms Glossy Box -->
-      <div style="background: rgba(156, 39, 176, 0.05); border: 1.5px solid rgba(156, 39, 176, 0.25); border-radius: 16px; padding: 20px; box-shadow: 0 4px 30px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 600; margin-top: 0; margin-bottom: 12px;">🔑 Key Terms</h3>
-        <div style="color: #E0E0E0; font-size: 14px; line-height: 1.6; text-align: justify;">
-          <p style="margin-top: 0; margin-bottom: 8px;"><b style="color: ${themeColor};">Censorship:</b> The suppression of speech, public communication, or other information by the government.</p>
-          <p style="margin-bottom: 8px;"><b style="color: ${themeColor};">Referendum:</b> A direct vote in which an entire electorate is invited to vote on a particular proposal.</p>
-          <p style="margin-bottom: 0;"><b style="color: ${themeColor};">Opposition Party:</b> The political party or parties that are not in power but keep a check on the ruling government.</p>
-        </div>
-      </div>
-    </div>
-  `,
-  htmlExercises: {
-    "ex-sst-qa": `
-      <div style="padding: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: transparent;">
-        
-        <!-- Q1 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
-            Q1. Here is some information about four countries. Based on this information, how would you classify each of these countries? Write 'democratic', 'undemocratic' or 'not sure' against each of these.
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
-              <li style="margin-bottom: 10px;">
-                <b>(a) Country A: People who do not accept the country's official religion do not have a right to vote.</b><br/>
-                Answer: <b style="color: ${themeColor};">Undemocratic</b>. A democracy must give equal voting rights to all citizens, regardless of their religion.
-              </li>
-              <li style="margin-bottom: 10px;">
-                <b>(b) Country B: The same party has been winning elections for the last twenty years.</b><br/>
-                Answer: <b style="color: ${themeColor};">Not sure</b>. It is democratic if the party wins fairly, but undemocratic if it uses cheating or force.
-              </li>
-              <li style="margin-bottom: 10px;">
-                <b>(c) Country C: Ruling party has lost in the last three elections.</b><br/>
-                Answer: <b style="color: ${themeColor};">Democratic</b>. This shows that elections are fair and voters have a real choice to change the government.
-              </li>
-              <li style="margin-bottom: 0;">
-                <b>(d) Country D: There is no independent election commission.</b><br/>
-                Answer: <b style="color: ${themeColor};">Undemocratic</b>. A fair election is not possible without an independent body to conduct it.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q2 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
-            Q2. Here is some information about four countries. Based on this information, how would you classify each of these countries? Write 'democratic', 'undemocratic' or 'not sure' against each of these.
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
-              <li style="margin-bottom: 10px;">
-                <b>(a) Country P: The parliament cannot pass a law about the army without the consent of the Chief of Army.</b><br/>
-                Answer: <b style="color: ${themeColor};">Undemocratic</b>. In a democracy, elected leaders (civilian government) must have supreme power over the military.
-              </li>
-              <li style="margin-bottom: 10px;">
-                <b>(b) Country Q: The parliament cannot pass a law reducing the powers of the judiciary.</b><br/>
-                Answer: <b style="color: ${themeColor};">Democratic</b>. Protecting the power of the courts ensures an independent judiciary, which protects citizens' rights.
-              </li>
-              <li style="margin-bottom: 10px;">
-                <b>(c) Country R: The country's leaders cannot sign any treaty with another country without taking permission from its neighbouring country.</b><br/>
-                Answer: <b style="color: ${themeColor};">Undemocratic</b>. A democratic country must be sovereign and free to make its own decisions without foreign control.
-              </li>
-              <li style="margin-bottom: 0;">
-                <b>(d) Country S: All the major economic decisions about the country are taken by officials of the central bank which the ministers cannot change.</b><br/>
-                Answer: <b style="color: ${themeColor};">Undemocratic</b>. Important decisions should be taken by elected ministers who are accountable to the people.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q3 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
-            Q3. Which of these is not a good argument in favour of democracy? Why?
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            Answer: Option <b style="color: ${themeColor};">(d) Democracies are more prosperous than others</b> is not a good argument.
-            <p style="margin: 6px 0 0 0;">
-              <b>Reason:</b> Economic prosperity depends on factors like resources, population, and policies, not just the form of government. Some dictatorial countries are rich, while some democratic countries are still poor.
-            </p>
-          </div>
-        </div>
-
-        <!-- Q4 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
-            Q4. Each of these statements contains a democratic and an undemocratic element. Write out the two separately for each statement.
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
-              <li style="margin-bottom: 12px;">
-                <b>(a) A minister said that some laws have to be passed by the parliament in order to conform to the regulations decided by the World Trade Organisation (WTO).</b><br/>
-                • <b style="color: ${themeColor};">Democratic:</b> The laws are being passed and debated by the elected parliament.<br/>
-                • <b style="color: ${themeColor};">Undemocratic:</b> The parliament is forced to pass laws under pressure from an external global body.
-              </li>
-              <li style="margin-bottom: 12px;">
-                <b>(b) The Election Commission ordered re-polling in a constituency where large-scale rigging was reported.</b><br/>
-                • <b style="color: ${themeColor};">Democratic:</b> The Election Commission is taking fair, independent action to protect the vote.<br/>
-                • <b style="color: ${themeColor};">Undemocratic:</b> Rigging and fraud were committed, which faked the people's choices.
-              </li>
-              <li style="margin-bottom: 0;">
-                <b>(c) Women's representation in the parliament has barely reached 10 per cent. This led women's organisations to demand one-third seats for women.</b><br/>
-                • <b style="color: ${themeColor};">Democratic:</b> Women's groups have the freedom to organize protests and demand more seats.<br/>
-                • <b style="color: ${themeColor};">Undemocratic:</b> Women's representation is very low (only 10%), showing gender inequality.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q5 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
-            Q5. Which of these is not a valid reason for arguing that there is a lesser possibility of famine in a democratic country?
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            Answer: Option <b style="color: ${themeColor};">(d) People are free to believe in and practise any religion</b> is not a valid reason.
-            <p style="margin: 6px 0 0 0;">
-              <b>Reason:</b> Religious freedom is a basic right, but it has no direct link to food supply. Famines are prevented by a free press, active opposition parties, and government accountability to voters.
-            </p>
-          </div>
-        </div>
-
-        <!-- Q6 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
-            Q6. There are 40 villages in a district where the government has made no provision for drinking water. These villagers met and considered many methods of forcing the government to respond to their need. Which of these is not a democratic method?
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            Answer: Option <b style="color: ${themeColor};">(d) Paying money to government officials to get water</b> is not a democratic method.
-            <p style="margin: 6px 0 0 0;">
-              <b>Reason:</b> Offering bribes is a corrupt, illegal act that violates the rule of law. Peaceful strikes, filing court cases, and holding public meetings are legal democratic methods.
-            </p>
-          </div>
-        </div>
-
-        <!-- Q7 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
-            Q7. Write a response to the following arguments against democracy:
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
-              <li style="margin-bottom: 10px;">
-                <b>(a) Army is the most disciplined and corruption-free organisation in the country. Therefore army should rule the country.</b><br/>
-                Answer: The army is meant for defense, not ruling. Military rule is undemocratic because leaders are not elected by the people and often suppress civil liberties and rights.
-              </li>
-              <li style="margin-bottom: 10px;">
-                <b>(b) Rule of the majority means the rule of ignorant people. What we need is the rule of the wise, even if they are in small numbers.</b><br/>
-                Answer: Rule by a self-declared 'wise' minority can lead to tyranny. Democracy ensures representation for all groups, and collective discussions help prevent bad decisions.
-              </li>
-              <li style="margin-bottom: 0;">
-                <b>(c) If we want religious leaders to guide us in spiritual matters, why not invite them to guide us in politics as well. The country should be ruled by religious leaders.</b><br/>
-                Answer: Mixing religion and politics can divide society. Religious rule often restricts personal freedoms and discriminates against minorities, which is against democratic values.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q8 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
-            Q8. Are the following statements in keeping with democracy as a value? Why?
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
-              <li style="margin-bottom: 10px;">
-                <b>(a) Father to daughter: I don't want to hear your opinion about your marriage. In our family children marry where the parents tell them to.</b><br/>
-                Answer: <b style="color: ${themeColor};">No</b>. Marriage is a major personal choice. Denying a voice to family members violates the democratic value of individual freedom and consent.
-              </li>
-              <li style="margin-bottom: 10px;">
-                <b>(b) Teacher to student: Don't disturb my concentration by asking me questions in the classroom.</b><br/>
-                Answer: <b style="color: ${themeColor};">No</b>. Classroom discussion and questioning are vital for free learning, which is a key democratic principle.
-              </li>
-              <li style="margin-bottom: 0;">
-                <b>(c) Employee to the officer: Our working hours must be reduced according to the law.</b><br/>
-                Answer: <b style="color: ${themeColor};">Yes</b>. Asking to respect labor laws upholds the rule of law and protects citizens' rights from exploitation.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q9 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
-            Q9. Consider the following facts about a country and decide if you would call it a democracy. Give reasons to support your decision.
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
-              <li style="margin-bottom: 10px;">
-                <b>(a) All the citizens of the country have right to vote. Elections are held regularly.</b><br/>
-                Answer: <b style="color: ${themeColor};">Democracy</b>. Regular, inclusive voting is the fundamental rule of any democratic country.
-              </li>
-              <li style="margin-bottom: 10px;">
-                <b>(b) The country took loan from international agencies. One of the conditions for giving loan was that the government would reduce its expenses on education and health.</b><br/>
-                Answer: <b style="color: ${themeColor};">Undemocratic element</b>. Welfare budgets should be decided based on public needs, not forced by external agencies.
-              </li>
-              <li style="margin-bottom: 10px;">
-                <b>(c) People speak more than seven languages but education is available only in one language, the language spoken by 52 percent people of that country.</b><br/>
-                Answer: <b style="color: ${themeColor};">Undemocratic element</b>. Educating only in the majority language ignores linguistic minorities. Democracy requires accommodating diversity.
-              </li>
-              <li style="margin-bottom: 10px;">
-                <b>(d) Several organisations have given a call for peaceful demonstrations and nation wide strikes in the country to oppose these policies. Government has arrested these leaders.</b><br/>
-                Answer: <b style="color: ${themeColor};">Undemocratic</b>. The right to peaceful protest is a core democratic freedom. Arresting peaceful protesters is authoritarian.
-              </li>
-              <li style="margin-bottom: 0;">
-                <b>(e) The government owns the radio and television in the country. All the newspapers have to get permission from the government to publish any news about government's policies and protests.</b><br/>
-                Answer: <b style="color: ${themeColor};">Undemocratic</b>. A free, uncensored press is necessary for citizens to get neutral news and hold the government accountable.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q10 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
-            Q10. Write an essay on 'Democracy and Poverty' using the information given in the US report but using examples from India.
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <b style="color: ${themeColor}; font-weight: 600;">Answer:</b>
-            <p style="margin: 6px 0 0 0;">
-              <b>Democracy and Poverty:</b> Democracy stands on the idea of political equality (one vote, equal value). However, economic inequality often weakens this. Wealthy groups can influence political parties and policies through massive funding, while the concerns of the poor are often ignored.
-            </p>
-            <p style="margin: 8px 0 0 0;">
-              In India, money plays a major role in elections, creating an unequal field. However, unlike the US report, the poor in India vote very actively. They use their votes to demand welfare support from political parties.
-            </p>
-            <p style="margin: 8px 0 0 0;">
-              This active participation has forced governments to run welfare schemes like subsidized food (ration cards), rural employment guarantees (MGNREGA), and free housing. Therefore, active political participation of the poor is the key to making democracy fight poverty.
-            </p>
-          </div>
-        </div>
-
-      </div>
-    `,
+  "id": "sst-civ-c9-1",
+  "number": 1,
+  "title": "What is Democracy? Why Democracy?",
+  "isHtmlView": true,
+  "htmlOverview": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(171, 71, 188, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #AB47BC; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #AB47BC; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #E1BEE7; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #E1BEE7; font-weight: 700; }\n  .hl { color: #AB47BC; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #AB47BC; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #AB47BC; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(171, 71, 188, 0.10); border: 1.5px dashed #AB47BC; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #AB47BC; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(171, 71, 188, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(171, 71, 188, 0.18); border: 1px solid #AB47BC; color: #E1BEE7; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(171, 71, 188, 0.2); color: #E1BEE7; }\n  .q-card .q-text, .q-card .sub-q { color: #AB47BC !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ Chapter at a Glance</div><div class=\"sol-step\"><div class=\"rev\"><span class=\"hl\">Democracy</span> is the most prevalent form of government in the world today, and it is expanding to more countries. This chapter builds a definition of democracy step by step — first <b>what</b> democracy is (its minimal features), then <b>why</b> it is considered better than other forms of government, and finally its <b>broader meanings</b>.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Section</th><th>Main idea</th></tr><tr><td>1.1 What is democracy?</td><td>A simple definition: rulers elected by the people</td></tr><tr><td>1.2 Features of democracy</td><td>Four features that make elections meaningful</td></tr><tr><td>1.3 Why democracy?</td><td>Arguments against and for democracy</td></tr><tr><td>1.4 Broader meanings</td><td>Democracy as a way of decision-making and as an ideal</td></tr></table></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 1. What is Democracy?</div><div class=\"sol-step\"><div class=\"pt\">Word origin: Greek <b>‘Demokratia’</b> — <i>demos</i> = people, <i>kratia</i> = rule. So democracy is <b>rule by the people</b>.</div><div class=\"pt\">Abraham Lincoln: “Democracy is government <b>of</b> the people, <b>by</b> the people and <b>for</b> the people.”</div><div class=\"pt\">We need a definition only when we must <b>distinguish</b> — because very different governments call themselves democracies. Words change meaning over time (like computers), so the origin alone is not enough.</div><div class=\"sub-q\">A simple definition</div><div class=\"rev\"><b>Democracy is a form of government in which the rulers are elected by the people.</b></div><div class=\"pt\">It separates democracies from governments that are clearly not democratic: the <b>army rulers of Myanmar</b>, dictators like <b>Pinochet (Chile)</b> and the <b>kings of Saudi Arabia</b> were not elected by the people.</div><div class=\"pt\">But used unthinkingly, it would call almost every government that holds an election a democracy — so each word in it needs to be spelt out.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 2. Features of Democracy</div><div class=\"sol-step\"><div class=\"sub-q\">(i) Major decisions by elected leaders</div><div class=\"pt\"><b>Pakistan:</b> General <b>Pervez Musharraf</b> led a military coup in <b>October 1999</b>, became ‘Chief Executive’, later President; a <b>2002 referendum</b> (alleged malpractice and fraud) gave him five more years. His <b>Legal Framework Order (August 2002)</b> let the President dismiss national and provincial assemblies; a <b>National Security Council</b> dominated by military officers supervised the cabinet.</div><div class=\"pt\">Elections were held, but final power rested with the army and Musharraf. → <b>In a democracy the final decision-making power must rest with those elected by the people.</b></div><div class=\"sub-q\">(ii) Free and fair electoral competition</div><div class=\"pt\"><b>China:</b> elections every five years for the <b>National People's Congress</b> (Quanguo Renmin Daibiao Dahui; nearly 3,000 members, some elected by the army), which appoints the President. Candidates need approval of the <b>Chinese Communist Party</b>; only its members or eight allied parties could contest (2002–03). Government is always formed by the Communist Party.</div><div class=\"pt\"><b>Mexico:</b> elections every six years since independence in <b>1930</b>, never a military rule, but until <b>2000</b> every election was won by the <b>PRI</b> (Institutional Revolutionary Party) using dirty tricks — forcing government employees to attend its meetings, teachers forcing parents to vote for it, media ignoring the opposition, shifting polling booths at the last minute, spending huge money.</div><div class=\"pt\">→ <b>A democracy must be based on a free and fair election where those currently in power have a fair chance of losing.</b></div><div class=\"sub-q\">(iii) One person, one vote, one value</div><div class=\"pt\">Until <b>2015</b>, women in <b>Saudi Arabia</b> could not vote; <b>Estonia</b>'s citizenship rules make it hard for the Russian minority to vote; in <b>Fiji</b> an indigenous Fijian's vote has more value than an Indian-Fijian's.</div><div class=\"pt\">→ <b>In a democracy, each adult citizen must have one vote and each vote must have one value</b> (political equality).</div><div class=\"sub-q\">(iv) Rule of law and respect for rights</div><div class=\"pt\"><b>Zimbabwe:</b> independent from White minority rule in <b>1980</b>; ruled by <b>ZANU-PF</b> under <b>Robert Mugabe</b>, who won regular elections using unfair practices, changed the constitution to increase presidential power, harassed opposition, banned protests, limited criticism of the President, controlled TV and radio, harassed journalists, ignored court judgments. He was forced out in <b>2017</b>.</div><div class=\"pt\">Popular approval is necessary but not sufficient. Citizens need freedom to think, express, associate and protest; equality before law protected by an <b>independent judiciary</b>; after elections, the government must respect minorities, consult, and stay accountable.</div><div class=\"pt\">→ <b>A democratic government rules within limits set by constitutional law and citizens' rights.</b></div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"260\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"20\" font-size=\"11.5\" fill=\"#AB47BC\" text-anchor=\"middle\" font-weight=\"700\">Four Features of Democracy</text><rect x=\"12\" y=\"34\" width=\"144\" height=\"100\" rx=\"8\" fill=\"#4FC3F726\" stroke=\"#4FC3F7\" stroke-width=\"1.4\"/><circle cx=\"28\" cy=\"50\" r=\"10\" fill=\"#4FC3F7\"/><text x=\"28\" y=\"54\" font-size=\"11\" fill=\"#1E1E2E\" text-anchor=\"middle\" font-weight=\"700\">1</text><text x=\"84\" y=\"78\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Major decisions by</text><text x=\"84\" y=\"91\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">elected leaders</text><text x=\"84\" y=\"111\" font-size=\"8\" fill=\"#4FC3F7\" text-anchor=\"middle\">Not: Pakistan under</text><text x=\"84\" y=\"122\" font-size=\"8\" fill=\"#4FC3F7\" text-anchor=\"middle\">Musharraf</text><rect x=\"164\" y=\"34\" width=\"144\" height=\"100\" rx=\"8\" fill=\"#66BB6A26\" stroke=\"#66BB6A\" stroke-width=\"1.4\"/><circle cx=\"180\" cy=\"50\" r=\"10\" fill=\"#66BB6A\"/><text x=\"180\" y=\"54\" font-size=\"11\" fill=\"#1E1E2E\" text-anchor=\"middle\" font-weight=\"700\">2</text><text x=\"236\" y=\"78\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Free and fair</text><text x=\"236\" y=\"91\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">electoral competition</text><text x=\"236\" y=\"111\" font-size=\"8\" fill=\"#66BB6A\" text-anchor=\"middle\">Not: China, Mexico (till</text><text x=\"236\" y=\"122\" font-size=\"8\" fill=\"#66BB6A\" text-anchor=\"middle\">2000)</text><rect x=\"12\" y=\"142\" width=\"144\" height=\"100\" rx=\"8\" fill=\"#FFB74D26\" stroke=\"#FFB74D\" stroke-width=\"1.4\"/><circle cx=\"28\" cy=\"158\" r=\"10\" fill=\"#FFB74D\"/><text x=\"28\" y=\"162\" font-size=\"11\" fill=\"#1E1E2E\" text-anchor=\"middle\" font-weight=\"700\">3</text><text x=\"84\" y=\"186\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">One person, one vote,</text><text x=\"84\" y=\"199\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">one value</text><text x=\"84\" y=\"219\" font-size=\"8\" fill=\"#FFB74D\" text-anchor=\"middle\">Not: Saudi Arabia (till</text><text x=\"84\" y=\"230\" font-size=\"8\" fill=\"#FFB74D\" text-anchor=\"middle\">2015), Estonia, Fiji</text><rect x=\"164\" y=\"142\" width=\"144\" height=\"100\" rx=\"8\" fill=\"#FF8A6526\" stroke=\"#FF8A65\" stroke-width=\"1.4\"/><circle cx=\"180\" cy=\"158\" r=\"10\" fill=\"#FF8A65\"/><text x=\"180\" y=\"162\" font-size=\"11\" fill=\"#1E1E2E\" text-anchor=\"middle\" font-weight=\"700\">4</text><text x=\"236\" y=\"186\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Rule of law and</text><text x=\"236\" y=\"199\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">respect for rights</text><text x=\"236\" y=\"219\" font-size=\"8\" fill=\"#FF8A65\" text-anchor=\"middle\">Not: Zimbabwe under Mugabe</text><text x=\"160\" y=\"254\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"middle\">Each feature with the textbook's example of its denial</text></svg></div><div class=\"diagram-caption\">Fig. 1: The four features of democracy</div></div><div class=\"sub-q\">Summary definition</div><div class=\"rev\">Democracy is a form of government in which: <b>rulers elected by the people take all the major decisions</b>; <b>elections offer a choice and fair opportunity</b> to change the current rulers; this choice and opportunity is available to <b>all the people on an equal basis</b>; and the exercise of this choice leads to a government <b>limited by basic rules of the constitution and citizens' rights</b>.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 3. Why Democracy?</div><div class=\"sol-step\"><div class=\"sub-q\">Arguments against democracy</div><div class=\"pt\">Leaders keep changing — instability.</div><div class=\"pt\">All about political competition and power play — no scope for morality.</div><div class=\"pt\">Consulting many people leads to delays.</div><div class=\"pt\">Elected leaders do not know the best interest of the people — bad decisions.</div><div class=\"pt\">Electoral competition leads to corruption.</div><div class=\"pt\">Ordinary people don't know what is good for them.</div><div class=\"rev\">Democracy is not a magical solution: it has not ended poverty; people can make mistakes; it may cause delays and frequent changes in leadership. The real question is whether it is <b>better than the other forms</b> we can choose from.</div><div class=\"sub-q\">Arguments for democracy</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Argument</th><th>Explanation</th></tr><tr><td><b>More accountable</b></td><td>Must attend to people's needs. China's famine of <b>1958–1961</b> killed nearly <b>three crore</b> people; India, no richer, had no such famine. No large-scale famine has occurred in an independent democratic country</td></tr><tr><td><b>Better decisions</b></td><td>Based on consultation and discussion; many minds spot mistakes; reduces rash or irresponsible decisions</td></tr><tr><td><b>Deals with differences and conflicts</b></td><td>Peaceful method in a diverse society; no permanent winner or loser; keeps a diverse country like India together</td></tr><tr><td><b>Enhances dignity of citizens</b></td><td>Political equality — the poorest and least educated have the same status as the rich; people are rulers, not subjects</td></tr><tr><td><b>Allows correction of mistakes</b></td><td>Mistakes cannot be hidden for long; public discussion; rulers change decisions or are changed</td></tr></table></div><div class=\"rev\">Democracy cannot get us everything, but it is <b>better than any other alternative we know</b> — that is why it is considered the best form of government.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 4. Broader Meanings of Democracy</div><div class=\"sol-step\"><div class=\"pt\">The most common form today is <b>representative democracy</b>: a majority, through elected representatives, decides for all — because modern democracies are too large for everyone to sit together, and citizens lack the time, desire or skills to take part in all decisions.</div><div class=\"pt\">The word is also used for families, classrooms or parties — a <b>method of decision-making</b> based on consultation with and consent of all those affected; the less powerful have the same say as the powerful.</div><div class=\"pt\">It is also used as an <b>ideal</b> standard (“True democracy will come when no one goes hungry to bed”). By ideals no country is a perfect democracy; the features studied give only <b>minimum conditions</b>.</div><div class=\"pt\">In a small community, people can decide directly — as a <b>Gram Sabha</b> should in a village.</div><div class=\"pt\">Democracy depends on <b>active political participation</b> by all citizens — what we do as citizens decides how democratic our country is.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 5. Key Terms</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Term</th><th>Meaning</th></tr><tr><td>Democracy</td><td>Form of government in which the rulers are elected by the people</td></tr><tr><td>Demokratia</td><td>Greek: demos (people) + kratia (rule)</td></tr><tr><td>Coup</td><td>Overthrow of a government by force, often by the army</td></tr><tr><td>Referendum</td><td>A direct vote by all citizens on a particular issue</td></tr><tr><td>Political equality</td><td>Each adult has one vote, each vote one value</td></tr><tr><td>Rule of law</td><td>Everyone equal before the law; government limited by the constitution</td></tr><tr><td>Representative democracy</td><td>Majority rules through elected representatives</td></tr></table></div><div class=\"exam\"><span class=\"exam-t\">📌 Exam Focus</span><div>• Simple definition and why it is not enough</div><div>• Four features with examples (Pakistan, China, Mexico, Saudi Arabia, Estonia, Fiji, Zimbabwe)</div><div>• Arguments against and for democracy</div><div>• Why representative democracy; democracy as an ideal</div></div></div>\n  </div>\n</div>",
+  "htmlExercises": {
+    "sc9-1-ex-q": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(171, 71, 188, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #AB47BC; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #AB47BC; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #E1BEE7; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #E1BEE7; font-weight: 700; }\n  .hl { color: #AB47BC; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #AB47BC; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #AB47BC; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(171, 71, 188, 0.10); border: 1.5px dashed #AB47BC; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #AB47BC; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(171, 71, 188, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(171, 71, 188, 0.18); border: 1px solid #AB47BC; color: #E1BEE7; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(171, 71, 188, 0.2); color: #E1BEE7; }\n  .q-card .q-text, .q-card .sub-q { color: #AB47BC !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Here is some information about four countries. Based on this information, how would you classify each of these countries? Write ‘democratic’, ‘undemocratic’ or ‘not sure’ against each of these.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">a. Country A: People who do not accept the country's official religion do not have a right to vote.</div><div class=\"ans-box\"><span class=\"ans-label\">✓ </span><span class=\"ans-val\">Undemocratic</span></div><div class=\"rev\">It denies equal voting rights — violates one person, one vote, one value.</div><div class=\"sub-q\">b. Country B: The same party has been winning elections for the last twenty years.</div><div class=\"ans-box\"><span class=\"ans-label\">✓ </span><span class=\"ans-val\">Not sure</span></div><div class=\"rev\">Winning repeatedly is not undemocratic in itself; we must know whether the elections were free and fair (unlike Mexico's PRI).</div><div class=\"sub-q\">c. Country C: Ruling party has lost in the last three elections.</div><div class=\"ans-box\"><span class=\"ans-label\">✓ </span><span class=\"ans-val\">Democratic</span></div><div class=\"rev\">Those in power have a real chance of losing — free and fair electoral competition.</div><div class=\"sub-q\">d. Country D: There is no independent election commission.</div><div class=\"ans-box\"><span class=\"ans-label\">✓ </span><span class=\"ans-val\">Not sure</span></div><div class=\"rev\">Without an independent body, elections may not be free and fair; we need more information about how elections are conducted.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Here is some information about four countries. Based on this information, how would you classify each of these countries? Write ‘democratic’, ‘undemocratic’ or ‘not sure’ against each of these.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">a. Country P: The parliament cannot pass a law about the army without the consent of the Chief of Army.</div><div class=\"ans-box\"><span class=\"ans-label\">✓ </span><span class=\"ans-val\">Undemocratic</span></div><div class=\"rev\">Final decision-making power is with an unelected army chief.</div><div class=\"sub-q\">b. Country Q: The parliament cannot pass a law reducing the powers of the judiciary.</div><div class=\"ans-box\"><span class=\"ans-label\">✓ </span><span class=\"ans-val\">Democratic</span></div><div class=\"rev\">It protects an independent judiciary — rule of law and limits on government.</div><div class=\"sub-q\">c. Country R: The country's leaders cannot sign any treaty with another country without taking permission from its neighbouring country.</div><div class=\"ans-box\"><span class=\"ans-label\">✓ </span><span class=\"ans-val\">Undemocratic</span></div><div class=\"rev\">Real power lies with an external power, not the elected leaders.</div><div class=\"sub-q\">d. Country S: All the major economic decisions about the country are taken by officials of the central bank which the ministers cannot change.</div><div class=\"ans-box\"><span class=\"ans-label\">✓ </span><span class=\"ans-val\">Undemocratic</span></div><div class=\"rev\">Major decisions are taken by unelected officials, not by elected leaders.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Which of these is <b>not</b> a good argument in favour of democracy? Why?<br/>a. People feel free and equal in a democracy.<br/>b. Democracies resolve conflict in a better way than others.<br/>c. Democratic government is more accountable to the people.<br/>d. Democracies are more prosperous than others.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">(d) Democracies are more prosperous than others.</span></div><div class=\"rev\">Democracy does not guarantee prosperity — it has not ended poverty in our country or elsewhere. The other three (dignity and equality, peaceful resolution of conflicts, accountability) are the textbook's arguments for democracy.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">Each of these statements contains a democratic and an undemocratic element. Write out the two separately for each statement.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Statement</th><th>Democratic element</th><th>Undemocratic element</th></tr><tr><td>a. Laws passed by parliament to conform to WTO regulations</td><td>Laws are passed by the elected parliament</td><td>Their content is dictated by an external body (WTO)</td></tr><tr><td>b. Election Commission ordered re-polling where large-scale rigging was reported</td><td>An independent EC ordered a re-poll to ensure fair elections</td><td>Large-scale rigging took place</td></tr><tr><td>c. Women's representation barely 10%; women's organisations demand one-third seats</td><td>Women's organisations freely demand fair representation</td><td>Women have only about 10% representation in parliament</td></tr></table></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5.</div>\n    <div class=\"q-text\">Which of these is <b>not</b> a valid reason for arguing that there is a lesser possibility of famine in a democratic country?<br/>a. Opposition parties can draw attention to hunger and starvation.<br/>b. Free press can report suffering from famine in different parts of the country.<br/>c. Government fears its defeat in the next elections.<br/>d. People are free to believe in and practise any religion.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">(d) People are free to believe in and practise any religion.</span></div><div class=\"rev\">Religious freedom is a democratic right but has nothing to do with preventing famine. Opposition, a free press and fear of electoral defeat make the government respond to food scarcity.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q6.</div>\n    <div class=\"q-text\">There are 40 villages in a district where the government has made no provision for drinking water. These villagers met and considered many methods of forcing the government to respond to their need. Which of these is <b>not</b> a democratic method?<br/>a. Filing a case in the courts claiming that water is part of right to life.<br/>b. Boycotting the next elections to give a message to all parties.<br/>c. Organising public meetings against government's policies.<br/>d. Paying money to government officials to get water.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">(d) Paying money to government officials to get water.</span></div><div class=\"rev\">Bribery is illegal and corrupt. Going to court, boycotting elections as a protest and holding public meetings are peaceful democratic methods.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q7.</div>\n    <div class=\"q-text\">Write a response to the following arguments against democracy:</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">a. Army is the most disciplined and corruption-free organisation in the country. Therefore army should rule the country.</div><div class=\"pt\">The army is not elected and cannot be removed by the people, so it is not accountable to them.</div><div class=\"pt\">Military rule (Pakistan under Musharraf, Myanmar) curbs rights and freedom; there is no guarantee it stays corruption-free once it has absolute power.</div><div class=\"pt\">The army's job is to defend the country, not to govern it.</div><div class=\"sub-q\">b. Rule of the majority means the rule of ignorant people. What we need is the rule of the wise, even if they are in small numbers.</div><div class=\"pt\">Who decides who is \"wise\"? Such rule would deny political equality and dignity to ordinary citizens.</div><div class=\"pt\">People may make mistakes, but democracy allows them to be corrected; a small group of rulers is not accountable to anyone.</div><div class=\"pt\">Wisdom grows through discussion and consultation among many people, which improves decisions.</div><div class=\"sub-q\">c. If we want religious leaders to guide us in spiritual matters, why not invite them to guide us in politics as well. The country should be ruled by religious leaders.</div><div class=\"pt\">Religious leaders are not elected and may favour their own religion, which is unfair to people of other faiths in a diverse country.</div><div class=\"pt\">Politics needs different skills — law, economy, administration.</div><div class=\"pt\">Religious leaders can guide people, but rulers must be chosen by and accountable to all citizens equally.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q8.</div>\n    <div class=\"q-text\">Are the following statements in keeping with democracy as a value? Why?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">a. Father to daughter: I don't want to hear your opinion about your marriage. In our family children marry where the parents tell them to.</div><div class=\"ans-box\"><span class=\"ans-label\">✓ </span><span class=\"ans-val\">Not in keeping with democracy</span></div><div class=\"rev\">A democratic decision involves consultation with and consent of the person affected; the daughter's opinion is ignored.</div><div class=\"sub-q\">b. Teacher to student: Don't disturb my concentration by asking me questions in the classroom.</div><div class=\"ans-box\"><span class=\"ans-label\">✓ </span><span class=\"ans-val\">Not in keeping with democracy</span></div><div class=\"rev\">It denies the student the freedom to express and ask — the textbook favours teachers with a democratic temperament.</div><div class=\"sub-q\">c. Employee to the officer: Our working hours must be reduced according to the law.</div><div class=\"ans-box\"><span class=\"ans-label\">✓ </span><span class=\"ans-val\">In keeping with democracy</span></div><div class=\"rev\">The employee is demanding his rights under the law — rule of law and respect for rights.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q9.</div>\n    <div class=\"q-text\">Consider the following facts about a country and decide if you would call it a democracy. Give reasons to support your decision.<br/>a. All the citizens of the country have right to vote. Elections are held regularly.<br/>b. The country took loan from international agencies. One of the conditions for giving loan was that the government would reduce its expenses on education and health.<br/>c. People speak more than seven languages but education is available only in one language, the language spoken by 52 percent people of that country.<br/>d. Several organisations have given a call for peaceful demonstrations and nation wide strikes in the country to oppose these policies. Government has arrested these leaders.<br/>e. The government owns the radio and television in the country. All the newspapers have to get permission from the government to publish any news about government's policies and protests.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"ans-box\"><span class=\"ans-label\">✓ </span><span class=\"ans-val\">Not a democracy</span></div><div class=\"pt\"><b>(a)</b> Universal adult franchise and regular elections are present, but elections alone are not enough.</div><div class=\"pt\"><b>(b)</b> Major decisions are dictated by external agencies, not by elected leaders.</div><div class=\"pt\"><b>(c)</b> Education only in the majority language denies equality to linguistic minorities.</div><div class=\"pt\"><b>(d)</b> Arresting leaders of peaceful protests violates the rights to protest and to form associations.</div><div class=\"pt\"><b>(e)</b> Government control of radio, TV and newspapers destroys freedom of expression and of the press.</div><div class=\"rev\">So it lacks rule of law and respect for rights, and its rulers are not really free to decide — like Zimbabwe under Mugabe, it holds elections but is not a democracy.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q10.</div>\n    <div class=\"q-text\">In 2004 a report published in USA pointed to the increasing inequalities in that country. Inequalities in income reflected in the participation of people in democracy. It also shaped their abilities to influence the decisions taken by the government. The report highlighted that: if an average Black family earns $100 then the income of average White family is $162, and a White family has twelve times more wealth; in a President's election nearly 9 out of 10 individuals in families with income over $75,000 (top 20%) voted, but only 5 out of 10 from families with income less than $15,000 (bottom 20%); about 95% contribution to political parties comes from the rich; as poor sections participate less, the government does not listen to their concerns. Write an essay on ‘Democracy and Poverty’ using the information given in this report but using examples from India.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sec\">Democracy and Poverty</div><div class=\"rev\">Democracy rests on political equality — one person, one vote, one value. Yet the American report shows that economic inequality can weaken this equality. Richer families vote more (9 out of 10 against 5 out of 10 among the poor), fund about 95% of party contributions and are heard more often by politicians, while the concerns of the poor — jobs, education, health and housing — are neglected.</div><div class=\"rev\">India shows both sides of this story. Unlike the USA, India's poor and rural voters turn out in large numbers, and their votes have changed governments many times. Democracy has also helped them: as the textbook notes, India has had no famine like China's famine of 1958–61, because a free press, opposition parties and elections force the government to respond.</div><div class=\"rev\">At the same time, inequality affects Indian democracy too. Elections have become very expensive, so rich candidates and big donors have more influence; the poor often lack information, education and time to take part in decisions beyond voting. Poverty, unemployment and lack of health care continue despite seven decades of democracy.</div><div class=\"rev\">Democracy is not a magical solution to poverty, but it gives the poor a voice and a way to correct mistakes. To make it meaningful, we need education for all, cleaner and cheaper elections, strong Gram Sabhas and active participation of every citizen — because the fate of a democracy depends mainly on what we, as citizens, do.</div></div></div>\n  </div>\n</div>",
+    "sc9-1-ex-cp": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(171, 71, 188, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #AB47BC; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #AB47BC; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #E1BEE7; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #E1BEE7; font-weight: 700; }\n  .hl { color: #AB47BC; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #AB47BC; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #AB47BC; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(171, 71, 188, 0.10); border: 1.5px dashed #AB47BC; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #AB47BC; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(171, 71, 188, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(171, 71, 188, 0.18); border: 1px solid #AB47BC; color: #E1BEE7; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(171, 71, 188, 0.2); color: #E1BEE7; }\n  .q-card .q-text, .q-card .sub-q { color: #AB47BC !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Ribiang collected some famous quotations on democracy. Read these and comment on how good or useful these thoughts are:<br/>• Democracy gives every man the right to be his own oppressor.<br/>• Democracy consists of choosing your dictators after they've told you what you think it is you want to hear.<br/>• Man's capacity for justice makes democracy possible, but man's inclination to injustice makes democracy necessary.<br/>• Democracy is a device that insures we shall be governed no better than we deserve.<br/>• All the ills of democracy can be cured by more democracy.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Quotation</th><th>Comment</th></tr><tr><td>Right to be his own oppressor</td><td>Witty but one-sided: if people choose badly they suffer — yet they can also change their choice, which no oppressor allows</td></tr><tr><td>Choosing your dictators</td><td>A warning against leaders who make empty promises; useful as a criticism, but in a democracy leaders can be removed</td></tr><tr><td>Capacity for justice … inclination to injustice</td><td>Very useful: people can govern themselves fairly, and democracy is needed to check misuse of power</td></tr><tr><td>Governed no better than we deserve</td><td>True and useful: the quality of democracy depends on active, informed citizens</td></tr><tr><td>Ills cured by more democracy</td><td>Useful: weaknesses are best removed by more participation, discussion and accountability</td></tr></table></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Read these five examples of working or denial of democracy. Match each of these with the relevant feature of democracy discussed above.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Example</th><th>Feature</th></tr><tr><td>King of Bhutan declared that in future he will be guided by the advice of elected representatives</td><td><b>Major decisions by elected leaders</b></td></tr><tr><td>Many Tamil workers who migrated from India were not given a right to vote in Sri Lanka</td><td><b>One person, one vote, one value</b></td></tr><tr><td>The king imposed a ban on political gatherings, demonstrations and rallies</td><td><b>Respect for rights</b></td></tr><tr><td>The Indian Supreme Court held that the dissolution of Bihar assembly was unconstitutional</td><td><b>Rule of law</b></td></tr><tr><td>Political parties in Bangladesh agreed that a neutral government should rule the country at the time of elections</td><td><b>Free and fair electoral competition</b></td></tr></table></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Rajesh and Muzaffar read an article which showed that no democracy has ever gone to war with another democracy; wars take place only when one of the two governments is non-democratic. Rajesh said this was just a matter of chance and democracies may have wars in future. Muzaffar said it could not be a matter of chance — democracies take decisions in a way that reduces the chances of war. Which of the two positions do you agree with and why?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"ans-box\"><span class=\"ans-label\">✓ </span><span class=\"ans-val\">Muzaffar's position</span></div><div class=\"pt\">Democratic decisions involve consultation and discussion, which reduce rash and irresponsible decisions like going to war.</div><div class=\"pt\">Democratic governments are accountable to the people, who bear the cost of war, and can be voted out.</div><div class=\"pt\">Democracies deal with differences peacefully, and they can correct their mistakes through public debate and a free press.</div></div></div>\n  </div>\n</div>",
+    "sc9-1-ex-cart": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(171, 71, 188, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #AB47BC; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #AB47BC; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #E1BEE7; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #E1BEE7; font-weight: 700; }\n  .hl { color: #AB47BC; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #AB47BC; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #AB47BC; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(171, 71, 188, 0.10); border: 1.5px dashed #AB47BC; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #AB47BC; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(171, 71, 188, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(171, 71, 188, 0.18); border: 1px solid #AB47BC; color: #E1BEE7; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(171, 71, 188, 0.2); color: #E1BEE7; }\n  .q-card .q-text, .q-card .sub-q { color: #AB47BC !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\"><div class=\"q-title\">✦ Read the Cartoon</div><div class=\"sol-step\"><div class=\"rev\"><i>Look at each cartoon in your textbook while reading these answers; they are based on the textbook captions.</i></div></div></div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">This cartoon was drawn when elections were held in Iraq with the presence of US and other foreign powers. What do you think this cartoon is saying? Why is ‘democracy’ written the way it is?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">It questions whether democracy can be brought in from outside. Elections held under foreign armies may not reflect the free choice of the people; real power may lie with external powers. Look at how the word is written in the picture: its unusual form suggests that this ‘democracy’ is not yet genuine people's rule.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Syria is a small west Asian country. The ruling Ba'ath Party and some of its small allies are the only parties allowed in that country. Do you think this cartoon could apply to China or Mexico? What does the crown of leaves on democracy signify?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">Yes. Like Syria, China allows only the Communist Party and its allies, and Mexico's PRI won every election till 2000 — elections without real choice. The crown of leaves (a victory wreath) signifies that the ruling party claims glory as a ‘democracy’ while the people have no real alternative.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">This cartoon was drawn in the context of Latin America. Do you think it applies to the Pakistani situation as well? Think of other countries where this could apply? Does this happen sometimes in our country as well?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">Yes. In Pakistan under Musharraf, elected representatives existed but final power was with the army. It could apply to Myanmar and other military-dominated countries. In India the army is under civilian control, but sometimes unelected people or money power influence decisions — something citizens must guard against.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">This cartoon was titled ‘Building Democracy’ and was first published in a Latin American publication. What do moneybags signify here? Could this cartoon be applied to India?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">The moneybags signify the role of money in elections and politics — the rich and powerful ‘build’ democracy to suit themselves (like the PRI spending large sums in Mexico). It can apply to India, where elections are expensive and money power can influence results.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5.</div>\n    <div class=\"q-text\">This cartoon is about the Iraqi election held after Saddam Hussein's regime was overthrown. He is shown behind the bars. What is the cartoonist saying here? Compare the message of this cartoon with the first cartoon in this chapter.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">The cartoonist suggests that removing a dictator and holding an election is a step towards democracy for the Iraqi people. The first cartoon doubted democracy brought under foreign presence; together they show that elections are necessary but must be free and lead to real people's rule.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q6.</div>\n    <div class=\"q-text\">Chinese government blocked free flow of information on the internet by placing restrictions on popular websites like ‘Google’ and ‘Yahoo’. The image of tanks and an unarmed student reminds the reader of another major event in recent Chinese history. Find out about that event.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">The event is the <b>Tiananmen Square protests of 1989</b> in Beijing, when students demanding democracy and freedom were crushed by the army; the image of an unarmed man standing before a line of tanks became world-famous. The cartoon links internet censorship to the same denial of the right to free expression.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q7.</div>\n    <div class=\"q-text\">This cartoon is from Brazil, a country that has long experience of dictatorship. It is entitled “The Hidden Side of Dictatorship”. Which hidden sides does this cartoon depict? Is it necessary for every dictatorship to have a hidden side? If possible, find this out about the dictators including Pinochet in Chile, Jaruzelski in Poland, Sani Abacha in Nigeria and Ferdinand Marcos in the Philippines.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">Dictatorships hide corruption, brutality, torture and violation of human rights behind a show of order and strength. Since dictators are not accountable and control the media, abuses are usually hidden. Pinochet (Chile) and Abacha (Nigeria) were known for repression and corruption, Marcos (Philippines) for huge corruption, and Jaruzelski (Poland) imposed martial law to crush the Solidarity movement.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q8.</div>\n    <div class=\"q-text\">This cartoon was published in Canada just before its parliamentary elections of 2004. Everyone, including the cartoonist, expected the Liberal party to win once again. When the results came, the Liberal Party lost the elections. Is this cartoon an argument against democracy or for democracy?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\"><b>For democracy.</b> Even a party expected to win can lose, because the final choice is with the voters. This shows free and fair electoral competition, where those in power have a fair chance of losing.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q9.</div>\n    <div class=\"q-text\">This famous cartoon by R K Laxman comments on the celebrations of the fifty years of independence. How many images on the wall do you recognize? Do many common people feel the way the common man in this cartoon does?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">The wall shows images and events from fifty years of Indian politics (identify them from the textbook picture). Laxman's Common Man usually stands as a silent observer; the caption suggests that ordinary people often feel left out of such celebrations and that democracy has not solved their problems. Many common people do feel so, which is why active participation is needed.</div></div></div>\n  </div>\n</div>",
+    "sc9-1-ex-act": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(171, 71, 188, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #AB47BC; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #AB47BC; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #E1BEE7; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #E1BEE7; font-weight: 700; }\n  .hl { color: #AB47BC; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #AB47BC; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #AB47BC; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(171, 71, 188, 0.10); border: 1.5px dashed #AB47BC; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #AB47BC; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(171, 71, 188, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(171, 71, 188, 0.18); border: 1px solid #AB47BC; color: #E1BEE7; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(171, 71, 188, 0.2); color: #E1BEE7; }\n  .q-card .q-text, .q-card .sub-q { color: #AB47BC !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">On the basis of your understanding of democracy so far, mentioning a few examples, write down some common features of: Democratic governments; Non-democratic governments.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Democratic governments</th><th>Non-democratic governments</th></tr><tr><td>Rulers elected by the people (India)</td><td>Rulers not elected — army (Myanmar), kings (Saudi Arabia)</td></tr><tr><td>Regular free and fair elections; ruling party can lose</td><td>No elections or elections without real choice (China)</td></tr><tr><td>Equal right to vote for all adults</td><td>Some groups denied the vote</td></tr><tr><td>Rights protected; independent judiciary; free press</td><td>Rights curbed; media controlled (Zimbabwe under Mugabe)</td></tr></table></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Activity: Write down the exact definition of some of the simple words that we use all the time: pen, rain and love. Is there a way of defining a pen that distinguishes it clearly from a pencil, a brush, a chalk or crayon? What have you learnt from this attempt? What does it teach us about understanding the meaning of democracy?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Pen:</b> a writing instrument that applies ink to a surface — unlike a pencil (graphite), brush (paint), chalk or crayon (wax).</div><div class=\"pt\"><b>Learning:</b> we use words easily, but exact definitions are hard; we need them only when we must distinguish one thing from another.</div><div class=\"pt\"><b>For democracy:</b> because very different governments call themselves democracies, we need a careful definition with clear features to tell a real democracy from one that only pretends to be one.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Activity: Find out the total number of eligible voters in your assembly constituency and your parliamentary constituency. Find out how many people can fit into the largest stadium in your area. Is it possible for all the voters in your parliamentary or assembly constituency to sit together and have a meaningful discussion?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\"><i>Guidance:</i> Get the voter figures from the Election Commission website or your local office. An assembly constituency usually has lakhs of voters and a parliamentary constituency many lakhs; even a big stadium holds only some thousands.</div><div class=\"rev\">So it is <b>not possible</b> for all voters to sit together and discuss meaningfully. This is why modern democracies are <b>representative democracies</b> — people rule through elected representatives.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">Project: Follow any one newspaper for one month and collect editorials, articles and letters on the editorial page that have anything to do with democracy. Classify these into: Constitutional and legal aspects of democracy; Citizens' rights; Electoral and party politics; Criticism of democracy.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Category</th><th>Examples of topics to look for</th></tr><tr><td>Constitutional and legal aspects</td><td>Court judgments, constitutional amendments, powers of Parliament and governors</td></tr><tr><td>Citizens' rights</td><td>Freedom of speech, right to information, protests, rights of women and minorities</td></tr><tr><td>Electoral and party politics</td><td>Elections, campaigns, alliances, election commission decisions</td></tr><tr><td>Criticism of democracy</td><td>Corruption, delays, money and muscle power, low participation</td></tr></table></div><div class=\"rev\">Paste the cuttings in a file under these four heads and write one line on each.</div></div></div>\n  </div>\n<div class=\"sec\">Think About It (margin questions)</div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5.</div>\n    <div class=\"q-text\">I have heard a different version. Democracy is off the people, far (from) the people and (where they) buy the people. Why don't we accept that?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">It is a joke that points to real weaknesses — leaders far from the people and money power. We cannot accept it as a definition because it describes the <b>misuse</b> of democracy, not its meaning; the right response is to correct these faults through more participation.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q6.</div>\n    <div class=\"q-text\">All this is so remote for me. Is democracy all about rulers and governments? Can we talk about a democratic classroom? Or a democratic family?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">Yes. Democracy is also a method of taking decisions through consultation and consent of all affected — it applies to a classroom, a family or any organisation (see section 1.4).</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q7.</div>\n    <div class=\"q-text\">Why talk about Zimbabwe? I read similar reports from many parts of our country. Why don't we discuss that?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">We should. Zimbabwe is a clear example, but wherever in India rights are violated, journalists harassed or court orders ignored, democracy is weakened. Discussing such cases helps citizens defend democracy at home.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q8.</div>\n    <div class=\"q-text\">What would have happened if India was not a democracy? Could we have stayed together as a single nation?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">Democracy gives a peaceful way to deal with India's great diversity — no group is a permanent winner or loser. Without it, conflicts between regions, languages and religions might have been settled by force, and the country might not have stayed united.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q9.</div>\n    <div class=\"q-text\">In my village the Gram Sabha never meets. Is that democratic?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">No. In a village all people can sit together and decide directly through the Gram Sabha. If it never meets, people are kept out of decisions that affect them, which is undemocratic.</div></div></div>\n  </div>\n</div>"
   },
-  exercises: [
+  "introduction": "This chapter introduces the concept of democracy, its key features, and why it is considered the best form of government compared to other non-democratic alternatives.",
+  "definitions": [],
+  "keyPoints": [],
+  "formulas": [],
+  "crux": [],
+  "mcqs": [
     {
-      id: "ex-sst-qa",
-      name: "Q & A",
-      questions: [],
+      "id": "sst-civ-c9-1-mcq-1",
+      "question": "<div style='text-align: justify;'>The word democracy comes from the Greek word —</div>",
+      "options": [
+        "A):   Demos-kratos",
+        "B):   Demokratia",
+        "C):   Democratus",
+        "D):   Polis"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Demos means people and kratia means rule.</div>"
     },
+    {
+      "id": "sst-civ-c9-1-mcq-2",
+      "question": "<div style='text-align: justify;'>“Democracy is government of the people, by the people and for the people” was said by —</div>",
+      "options": [
+        "A):   Mahatma Gandhi",
+        "B):   Jawaharlal Nehru",
+        "C):   Abraham Lincoln",
+        "D):   Nelson Mandela"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Ribiang quotes it in the discussion.</div>"
+    },
+    {
+      "id": "sst-civ-c9-1-mcq-3",
+      "question": "<div style='text-align: justify;'>General Pervez Musharraf led a military coup in Pakistan in —</div>",
+      "options": [
+        "A):   October 1999",
+        "B):   August 2002",
+        "C):   January 1990",
+        "D):   October 2007"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>He declared himself Chief Executive.</div>"
+    },
+    {
+      "id": "sst-civ-c9-1-mcq-4",
+      "question": "<div style='text-align: justify;'>Musharraf's Legal Framework Order of 2002 allowed the President to —</div>",
+      "options": [
+        "A):   abolish the army",
+        "B):   hold elections every year",
+        "C):   appoint judges of China",
+        "D):   dismiss the national and provincial assemblies"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Final power stayed with the army and Musharraf.</div>"
+    },
+    {
+      "id": "sst-civ-c9-1-mcq-5",
+      "question": "<div style='text-align: justify;'>China's parliament is called the —</div>",
+      "options": [
+        "A):   Diet",
+        "B):   National People's Congress",
+        "C):   Duma",
+        "D):   Majlis"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Quanguo Renmin Daibiao Dahui, with nearly 3,000 members.</div>"
+    },
+    {
+      "id": "sst-civ-c9-1-mcq-6",
+      "question": "<div style='text-align: justify;'>Until 2000, every election in Mexico was won by the —</div>",
+      "options": [
+        "A):   ZANU-PF",
+        "B):   Ba'ath Party",
+        "C):   PRI",
+        "D):   Communist Party"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>The Institutional Revolutionary Party used many dirty tricks.</div>"
+    },
+    {
+      "id": "sst-civ-c9-1-mcq-7",
+      "question": "<div style='text-align: justify;'>Women in Saudi Arabia did not have the right to vote until —</div>",
+      "options": [
+        "A):   1980",
+        "B):   2000",
+        "C):   2010",
+        "D):   2015"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>It denied one person, one vote, one value.</div>"
+    },
+    {
+      "id": "sst-civ-c9-1-mcq-8",
+      "question": "<div style='text-align: justify;'>In which country does the vote of an indigenous citizen have more value than that of an Indian-origin citizen?</div>",
+      "options": [
+        "A):   Fiji",
+        "B):   Estonia",
+        "C):   Mexico",
+        "D):   Zimbabwe"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>This violates political equality.</div>"
+    },
+    {
+      "id": "sst-civ-c9-1-mcq-9",
+      "question": "<div style='text-align: justify;'>Robert Mugabe ruled Zimbabwe until he was forced out in —</div>",
+      "options": [
+        "A):   1980",
+        "B):   2017",
+        "C):   2007",
+        "D):   2012"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>His party was ZANU-PF.</div>"
+    },
+    {
+      "id": "sst-civ-c9-1-mcq-10",
+      "question": "<div style='text-align: justify;'>Zimbabwe attained independence from White minority rule in —</div>",
+      "options": [
+        "A):   1947",
+        "B):   1960",
+        "C):   1980",
+        "D):   1994"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>ZANU-PF led the freedom struggle.</div>"
+    },
+    {
+      "id": "sst-civ-c9-1-mcq-11",
+      "question": "<div style='text-align: justify;'>The example of Zimbabwe shows that popular approval of rulers is —</div>",
+      "options": [
+        "A):   necessary but not sufficient",
+        "B):   sufficient for democracy",
+        "C):   not needed",
+        "D):   harmful"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Rule of law and respect for rights are also needed.</div>"
+    },
+    {
+      "id": "sst-civ-c9-1-mcq-12",
+      "question": "<div style='text-align: justify;'>China's famine of 1958–1961 killed nearly —</div>",
+      "options": [
+        "A):   three lakh people",
+        "B):   thirty crore people",
+        "C):   three thousand people",
+        "D):   three crore people"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>It was the worst recorded famine in world history.</div>"
+    },
+    {
+      "id": "sst-civ-c9-1-mcq-13",
+      "question": "<div style='text-align: justify;'>India did not have a famine like China's mainly because India was a —</div>",
+      "options": [
+        "A):   richer country",
+        "B):   democracy",
+        "C):   monarchy",
+        "D):   one-party state"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Democracy made the government respond to food scarcity.</div>"
+    },
+    {
+      "id": "sst-civ-c9-1-mcq-14",
+      "question": "<div style='text-align: justify;'>Which of these is an argument against democracy?</div>",
+      "options": [
+        "A):   It enhances the dignity of citizens",
+        "B):   It allows correction of mistakes",
+        "C):   Leaders keep changing, leading to instability",
+        "D):   It is more accountable"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>The other three are arguments for democracy.</div>"
+    },
+    {
+      "id": "sst-civ-c9-1-mcq-15",
+      "question": "<div style='text-align: justify;'>Democracy improves the quality of decision-making because it is based on —</div>",
+      "options": [
+        "A):   consultation and discussion",
+        "B):   the orders of one leader",
+        "C):   army rule",
+        "D):   secrecy"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>It reduces rash or irresponsible decisions.</div>"
+    },
+    {
+      "id": "sst-civ-c9-1-mcq-16",
+      "question": "<div style='text-align: justify;'>The most common form of democracy in our times is —</div>",
+      "options": [
+        "A):   direct democracy",
+        "B):   monarchy",
+        "C):   military rule",
+        "D):   representative democracy"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>The majority rules through elected representatives.</div>"
+    },
+    {
+      "id": "sst-civ-c9-1-mcq-17",
+      "question": "<div style='text-align: justify;'>In a village, the institution through which all people can decide directly is the —</div>",
+      "options": [
+        "A):   Lok Sabha",
+        "B):   Gram Sabha",
+        "C):   Rajya Sabha",
+        "D):   Vidhan Sabha"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>This is direct democracy in a small community.</div>"
+    },
+    {
+      "id": "sst-civ-c9-1-mcq-18",
+      "question": "<div style='text-align: justify;'>The dictator of Chile mentioned in the textbook is —</div>",
+      "options": [
+        "A):   Marcos",
+        "B):   Abacha",
+        "C):   Pinochet",
+        "D):   Jaruzelski"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>He was not elected by the people.</div>"
+    },
+    {
+      "id": "sst-civ-c9-1-mcq-19",
+      "question": "<div style='text-align: justify;'>Assertion (A): Pakistan under General Musharraf cannot be called a democracy. Reason (R): Elected representatives were there, but the final decision-making power rested with army officials and Musharraf.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Final power must rest with those elected by the people.</div>"
+    },
+    {
+      "id": "sst-civ-c9-1-mcq-20",
+      "question": "<div style='text-align: justify;'>Assertion (A): Holding regular elections is sufficient to make a country democratic. Reason (R): In China elections are held every five years.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Elections must offer a real choice; China's do not. R is true.</div>"
+    }
   ],
+  "summary": [],
+  "exercises": [
+    {
+      "id": "sc9-1-ex-q",
+      "name": "Questions",
+      "questions": []
+    },
+    {
+      "id": "sc9-1-ex-cp",
+      "name": "Check Progress",
+      "questions": []
+    },
+    {
+      "id": "sc9-1-ex-cart",
+      "name": "Cartoons",
+      "questions": []
+    },
+    {
+      "id": "sc9-1-ex-act",
+      "name": "Activities",
+      "questions": []
+    }
+  ],
+  "examples": []
 };
