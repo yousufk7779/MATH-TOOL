@@ -1,271 +1,286 @@
 import { ChapterContent } from "../types";
 
-const themeColor = "#FF007F";
-
 export const sstHisC96: ChapterContent = {
-  id: "sst-his-c9-6",
-  number: 6,
-  title:
-    "The Integration of Princely States: A case study of Jammu and Kashmir",
-  isHtmlView: true,
-  htmlOverview: `
-    <div style="padding: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: transparent;">
-      <!-- Key Concepts Introduction -->
-      <div style="background-color: #1E1E2E; border: 1px solid rgba(255, 138, 101, 0.2); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 20px; font-weight: 700; margin-top: 0; margin-bottom: 12px; display: flex; align-items: center;">
-          <span style="margin-right: 8px; font-size: 22px;">🏔️</span> Introduction
-        </h3>
-        <p style="color: #E0E0E0; font-size: 15px; line-height: 1.6; text-align: justify; margin: 0; font-weight: 300;">
-          After the partition of British India in 1947, princely states had the choice to join India, Pakistan, or remain independent. This chapter focuses on the dramatic integration of Jammu & Kashmir under Maharaja Hari Singh, the Pakistani tribal invasion, the historic signing of the Instrument of Accession, and the establishment of J&K's own Constituent Assembly.
-        </p>
-      </div>
-
-      <!-- Key Milestones (Important Points) -->
-      <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 600; margin-top: 0; margin-bottom: 14px; display: flex; align-items: center;">
-          <span style="margin-right: 8px; font-size: 18px;">📌</span> Key Points
-        </h3>
-        <ul style="color: #B3B3C6; font-size: 14.5px; line-height: 1.7; margin: 0; padding-left: 20px; text-align: justify;">
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">Stand Still Agreement:</b> Maharaja Hari Singh proposed a Stand Still Agreement on 12 August 1947 to maintain status quo. Pakistan accepted it, but India wanted further negotiations.</li>
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">Tribal Invasion:</b> On 22 October 1947, armed tribal invaders backed by Pakistan crossed the border, pillaging towns like Baramulla.</li>
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">Instrument of Accession:</b> With the enemy advancing, Maharaja Hari Singh signed the <b>Instrument of Accession</b> to India on <b>26 October 1947</b>, seeking immediate military aid.</li>
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">Indian Military Intervention:</b> Indian troops were airlifted on 27 October 1947. Key figures like Major Somnath Sharma (awarded Param Vir Chakra) and Brigadier Rajinder Singh fought heroically.</li>
-          <li style="margin-bottom: 0;"><b style="color: ${themeColor};">Constituent Assembly:</b> In October 1951, J&K's Constituent Assembly met for the first time to draft a state constitution, finalize relations with India, and abolish the monarchy.</li>
-        </ul>
-      </div>
-      
-      <!-- Key Terms Glossy Box -->
-      <div style="background: rgba(255, 138, 101, 0.05); border: 1.5px solid rgba(255, 138, 101, 0.25); border-radius: 16px; padding: 20px; box-shadow: 0 4px 30px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 600; margin-top: 0; margin-bottom: 12px;">🔑 Key Terms to Remember</h3>
-        <div style="color: #E0E0E0; font-size: 14px; line-height: 1.6; text-align: justify;">
-          <p style="margin-top: 0; margin-bottom: 8px;"><b style="color: ${themeColor};">Instrument of Accession:</b> A legal document signed by Maharaja Hari Singh to unite the state of Jammu & Kashmir with the Union of India.</p>
-          <p style="margin-bottom: 8px;"><b style="color: ${themeColor};">National Militia:</b> Local volunteer defense units formed by Kashmiri youth, including women, to resist the invaders.</p>
-          <p style="margin-bottom: 0;"><b style="color: ${themeColor};">Sadar-i-Riyasat:</b> The title given to the elected Head of State in J&K, first held by Yuvraj Karan Singh after the monarchy was abolished.</p>
-        </div>
-      </div>
-    </div>
-  `,
-  htmlExercises: {
-    "ex-sst-qa": `
-      <div style="padding: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: transparent;">
-        <!-- LET'S RECALL -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <h3 style="color: ${themeColor}; font-size: 17px; font-weight: 700; margin-top: 0; margin-bottom: 14px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 6px;">LET'S RECALL</h3>
-          
-          <!-- Match the Column -->
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 600; margin-bottom: 8px;">Match the Column:</p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; margin-bottom: 16px; padding-left: 10px;">
-            • <b>Lord Mountbatten:</b> Governor General of India<br/>
-            • <b>Yuvraj Karan Singh:</b> Regent of Jammu & Kashmir<br/>
-            • <b>Sheikh Abdullah:</b> National militia<br/>
-            • <b>Kushok Bakula Rinpochey:</b> Defence of Ladakh
-          </div>
-
-          <!-- Fill in the Blanks -->
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 600; margin-bottom: 8px;">Fill in the blanks:</p>
-          <ol style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; margin: 0; padding-left: 20px;">
-            <li style="margin-bottom: 6px;">The meeting of the Defence Committee was held in Delhi in the year <b style="color: ${themeColor};">1947</b>.</li>
-            <li style="margin-bottom: 6px;">A unique feat in Ladakh was that of <b style="color: ${themeColor};">Colonel Chewang Rinchen</b> who resisted the tribal attack at Zojila Pass.</li>
-            <li style="margin-bottom: 6px;">The two areas that fall in the territory of Pakistan Occupied Jammu & Kashmir are <b style="color: ${themeColor};">Muzaffarabad</b> and <b style="color: ${themeColor};">Mirpur</b>.</li>
-            <li style="margin-bottom: 6px;">The instrument of Accession was signed on <b style="color: ${themeColor};">26 October 1947</b>.</li>
-            <li style="margin-bottom: 0;">Gilgit Agency was formed in the year <b style="color: ${themeColor};">1889</b>.</li>
-          </ol>
-        </div>
-
-        <!-- True or False -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <h3 style="color: ${themeColor}; font-size: 17px; font-weight: 700; margin-top: 0; margin-bottom: 14px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 6px;">True or False</h3>
-          <ol style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; margin: 0; padding-left: 20px;">
-            <li style="margin-bottom: 8px;">Karan Singh was the regent of Jammu and Kashmir at the time of the signing of Instrument of Accession. <b style="color: #EF5350;">(False)</b></li>
-            <li style="margin-bottom: 8px;">V.P Menon advised the Defence Committee to provide military support to the state of Jammu and Kashmir. <b style="color: #66BB6A;">(True)</b></li>
-            <li style="margin-bottom: 8px;">Brigadier Rajinder Singh was killed in an operation launched against the Tribal invaders at Uri. <b style="color: #66BB6A;">(True)</b></li>
-            <li style="margin-bottom: 8px;">Maharaja offered to sign the Stand Still Agreement with both India and Pakistan. <b style="color: #66BB6A;">(True)</b></li>
-            <li style="margin-bottom: 0;">The Constituent Assembly of J&K met for the first time in October 1951. <b style="color: #66BB6A;">(True)</b></li>
-          </ol>
-        </div>
-
-        <!-- LET'S DISCUSS -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <h3 style="color: ${themeColor}; font-size: 17px; font-weight: 700; margin-top: 0; margin-bottom: 14px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 6px;">LET'S DISCUSS</h3>
-          
-          <!-- Qa -->
-          <div style="margin-bottom: 16px;">
-            <p style="color: ${themeColor}; font-size: 14.2px; font-weight: 700; margin: 0 0 6px 0;">a) Briefly explain the Stand Still Agreement.</p>
-            <p style="color: #D1D1E9; font-size: 14.2px; line-height: 1.5; text-align: justify; margin: 0; padding-left: 10px;">
-              Proposed by Maharaja Hari Singh on 12 August 1947, its purpose was to maintain status quo in trade, travel, and communication until a final decision on accession was reached. Pakistan signed it, while India sought further discussions.
-            </p>
-          </div>
-
-          <!-- Qb -->
-          <div style="margin-bottom: 16px;">
-            <p style="color: ${themeColor}; font-size: 14.2px; font-weight: 700; margin: 0 0 6px 0;">b) Discuss the role played by Indian army in pushing back the Pakistani raiders from the Kashmir valley.</p>
-            <p style="color: #D1D1E9; font-size: 14.2px; line-height: 1.5; text-align: justify; margin: 0; padding-left: 10px;">
-              Airlifted on 27 October 1947, the Indian Army secured Srinagar airport and won the decisive Battle of Shalateng. Led by officers like Major Somnath Sharma and Brigadier L.P. Sen, they cleared Baramulla and Uri, pushing the invaders back.
-            </p>
-          </div>
-
-          <!-- Qc -->
-          <div style="margin-bottom: 16px;">
-            <p style="color: ${themeColor}; font-size: 14.2px; font-weight: 700; margin: 0 0 6px 0;">c) Cite examples from the text to show that the local activists also played a vibrant role in thwarting Pakistani attack.</p>
-            <p style="color: #D1D1E9; font-size: 14.2px; line-height: 1.5; text-align: justify; margin: 0; padding-left: 10px;">
-              Local volunteers formed the National Militia to guard bridges and towns. A key example is Maqbool Sherwani, a Baramulla youth who misled the invaders to delay their advance, sacrificing his life when captured.
-            </p>
-          </div>
-
-          <!-- Qd -->
-          <div style="margin-bottom: 0;">
-            <p style="color: ${themeColor}; font-size: 14.2px; font-weight: 700; margin: 0 0 6px 0;">d) Write a brief note on the Formation of Jammu and Kashmir Constituent Assembly.</p>
-            <p style="color: #D1D1E9; font-size: 14.2px; line-height: 1.5; text-align: justify; margin: 0; padding-left: 10px;">
-              Elections were held in September 1951, and the assembly met on 31 October 1951. It was formed to frame J&K's state constitution, settle the monarchy's status (which was abolished), and ratify J&K's accession to India.
-            </p>
-          </div>
-        </div>
-
-        <!-- LET'S DO -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <h3 style="color: ${themeColor}; font-size: 17px; font-weight: 700; margin-top: 0; margin-bottom: 14px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 6px;">LET'S DO</h3>
-          
-          <!-- Qa -->
-          <div style="margin-bottom: 16px;">
-            <p style="color: ${themeColor}; font-size: 14.2px; font-weight: 700; margin: 0 0 6px 0;">a) Geo-political strategic importance of the Gilgit Agency.</p>
-            <p style="color: #D1D1E9; font-size: 14.2px; line-height: 1.5; text-align: justify; margin: 0; padding-left: 10px;">
-              Gilgit Agency shares borders with China, Afghanistan, and Pakistan. It serves as a vital gateway to Central Asia and was crucial during the "Great Game" to check Russian influence. Today, it remains highly strategic for regional corridors.
-            </p>
-          </div>
-
-          <!-- Qb -->
-          <div style="margin-bottom: 0;">
-            <p style="color: ${themeColor}; font-size: 14.2px; font-weight: 700; margin: 0 0 6px 0;">b) The Ill Effects of War.</p>
-            <p style="color: #D1D1E9; font-size: 14.2px; line-height: 1.5; text-align: justify; margin: 0; padding-left: 10px;">
-              Wars lead to massive loss of human lives, destruction of infrastructure, and severe economic collapse. They cause large-scale civilian displacement and leave long-lasting psychological trauma on families and children.
-            </p>
-          </div>
-        </div>
-      </div>
-    `,
+  "id": "sst-his-c9-6",
+  "number": 6,
+  "title": "The Integration of Princely States: A Case Study of Jammu and Kashmir",
+  "isHtmlView": true,
+  "htmlOverview": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 0, 127, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FF007F; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FF007F; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFC1DC; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFC1DC; font-weight: 700; }\n  .hl { color: #FF007F; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FF007F; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FF007F; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(255, 0, 127, 0.10); border: 1.5px dashed #FF007F; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FF007F; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 0, 127, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(255, 0, 127, 0.18); border: 1px solid #FF007F; color: #FFC1DC; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(255, 0, 127, 0.2); color: #FFC1DC; }\n  .q-card .q-text, .q-card .sub-q { color: #FF007F !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ Chapter at a Glance</div><div class=\"sol-step\"><div class=\"rev\">In 1947 British rule ended with the creation of two dominions — <span class=\"hl\">India and Pakistan</span>. The princely states had to choose one of them. This chapter is a case study of how the princely state of <b>Jammu and Kashmir</b> became part of India: the Standstill Agreement, the Pakistani tribal invasion, the <b>Instrument of Accession</b> (26 October 1947), the heroic defence of the state by the Indian Army and local people, and the formation of the <b>J&K Constituent Assembly</b>.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 351\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"351\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"20\" font-size=\"11.5\" fill=\"#FF007F\" text-anchor=\"middle\" font-weight=\"700\">Jammu and Kashmir, 1947</text><line x1=\"82\" y1=\"34\" x2=\"82\" y2=\"341\" stroke=\"rgba(255, 0, 127,0.55)\" stroke-width=\"2\"/><circle cx=\"82\" cy=\"39.5\" r=\"4\" fill=\"#FF007F\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"73\" y=\"43.0\" font-size=\"9.5\" fill=\"#FF007F\" text-anchor=\"end\" font-weight=\"700\">25 Jul 1947</text><text x=\"94\" y=\"43.0\" font-size=\"9.5\" fill=\"#FFFFFF\">Lord Mountbatten tells the Chamber of</text><text x=\"94\" y=\"55.2\" font-size=\"9.5\" fill=\"#FFFFFF\">Princes that rulers will decide</text><text x=\"94\" y=\"67.4\" font-size=\"9.5\" fill=\"#FFFFFF\">accession</text><circle cx=\"82\" cy=\"93.9\" r=\"4\" fill=\"#FF007F\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"73\" y=\"97.4\" font-size=\"9.5\" fill=\"#FF007F\" text-anchor=\"end\" font-weight=\"700\">12 Aug 1947</text><text x=\"94\" y=\"97.4\" font-size=\"9.5\" fill=\"#FFFFFF\">Maharaja Hari Singh offers a</text><text x=\"94\" y=\"109.6\" font-size=\"9.5\" fill=\"#FFFFFF\">Standstill Agreement to India and</text><text x=\"94\" y=\"121.8\" font-size=\"9.5\" fill=\"#FFFFFF\">Pakistan</text><circle cx=\"82\" cy=\"148.3\" r=\"4\" fill=\"#FF007F\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"73\" y=\"151.8\" font-size=\"9.5\" fill=\"#FF007F\" text-anchor=\"end\" font-weight=\"700\">22 Oct 1947</text><text x=\"94\" y=\"151.8\" font-size=\"9.5\" fill=\"#FFFFFF\">Pakistan-backed Pashtun tribal</text><text x=\"94\" y=\"164.0\" font-size=\"9.5\" fill=\"#FFFFFF\">raiders invade the state</text><circle cx=\"82\" cy=\"190.5\" r=\"4\" fill=\"#FF007F\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"73\" y=\"194.0\" font-size=\"9.5\" fill=\"#FF007F\" text-anchor=\"end\" font-weight=\"700\">25 Oct 1947</text><text x=\"94\" y=\"194.0\" font-size=\"9.5\" fill=\"#FFFFFF\">Defence Committee in Delhi accepts</text><text x=\"94\" y=\"206.2\" font-size=\"9.5\" fill=\"#FFFFFF\">the Maharaja's request for help</text><circle cx=\"82\" cy=\"232.7\" r=\"4\" fill=\"#FF007F\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"73\" y=\"236.2\" font-size=\"9.5\" fill=\"#FF007F\" text-anchor=\"end\" font-weight=\"700\">26 Oct 1947</text><text x=\"94\" y=\"236.2\" font-size=\"9.5\" fill=\"#FFFFFF\">Maharaja Hari Singh signs the</text><text x=\"94\" y=\"248.4\" font-size=\"9.5\" fill=\"#FFFFFF\">Instrument of Accession with India</text><circle cx=\"82\" cy=\"274.9\" r=\"4\" fill=\"#FF007F\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"73\" y=\"278.4\" font-size=\"9.5\" fill=\"#FF007F\" text-anchor=\"end\" font-weight=\"700\">27 Oct 1947</text><text x=\"94\" y=\"278.4\" font-size=\"9.5\" fill=\"#FFFFFF\">1 Sikh Battalion airlifted to</text><text x=\"94\" y=\"290.6\" font-size=\"9.5\" fill=\"#FFFFFF\">Srinagar</text><circle cx=\"82\" cy=\"317.1\" r=\"4\" fill=\"#FF007F\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"73\" y=\"320.6\" font-size=\"9.5\" fill=\"#FF007F\" text-anchor=\"end\" font-weight=\"700\">3 Nov 1947</text><text x=\"94\" y=\"320.6\" font-size=\"9.5\" fill=\"#FFFFFF\">Major Somnath Sharma martyred in the</text><text x=\"94\" y=\"332.8\" font-size=\"9.5\" fill=\"#FFFFFF\">Battle of Budgam</text></svg></div><div class=\"diagram-caption\">Fig. 1: Events of 1947</div></div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 326\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"326\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"20\" font-size=\"11.5\" fill=\"#FF007F\" text-anchor=\"middle\" font-weight=\"700\">From War to Constitution, 1948–1957</text><line x1=\"82\" y1=\"34\" x2=\"82\" y2=\"316\" stroke=\"rgba(255, 0, 127,0.55)\" stroke-width=\"2\"/><circle cx=\"82\" cy=\"39.5\" r=\"4\" fill=\"#FF007F\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"73\" y=\"43.0\" font-size=\"9.5\" fill=\"#FF007F\" text-anchor=\"end\" font-weight=\"700\">Jan 1948</text><text x=\"94\" y=\"43.0\" font-size=\"9.5\" fill=\"#FFFFFF\">India takes the issue of Pakistani</text><text x=\"94\" y=\"55.2\" font-size=\"9.5\" fill=\"#FFFFFF\">occupation to the U.N.</text><circle cx=\"82\" cy=\"81.7\" r=\"4\" fill=\"#FF007F\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"73\" y=\"85.2\" font-size=\"9.5\" fill=\"#FF007F\" text-anchor=\"end\" font-weight=\"700\">24 May 1948</text><text x=\"94\" y=\"85.2\" font-size=\"9.5\" fill=\"#FFFFFF\">IAF plane piloted by Mehar Singh</text><text x=\"94\" y=\"97.4\" font-size=\"9.5\" fill=\"#FFFFFF\">lands at Leh</text><circle cx=\"82\" cy=\"123.9\" r=\"4\" fill=\"#FF007F\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"73\" y=\"127.4\" font-size=\"9.5\" fill=\"#FF007F\" text-anchor=\"end\" font-weight=\"700\">Jul 1948</text><text x=\"94\" y=\"127.4\" font-size=\"9.5\" fill=\"#FFFFFF\">Brigadier Mohammad Usman martyred at</text><text x=\"94\" y=\"139.6\" font-size=\"9.5\" fill=\"#FFFFFF\">Jhangar</text><circle cx=\"82\" cy=\"166.1\" r=\"4\" fill=\"#FF007F\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"73\" y=\"169.6\" font-size=\"9.5\" fill=\"#FF007F\" text-anchor=\"end\" font-weight=\"700\">25 Nov 1949</text><text x=\"94\" y=\"169.6\" font-size=\"9.5\" fill=\"#FFFFFF\">Regent Yuvraj Karan Singh's</text><text x=\"94\" y=\"181.8\" font-size=\"9.5\" fill=\"#FFFFFF\">proclamation on the Indian</text><text x=\"94\" y=\"194.0\" font-size=\"9.5\" fill=\"#FFFFFF\">Constitution</text><circle cx=\"82\" cy=\"220.5\" r=\"4\" fill=\"#FF007F\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"73\" y=\"224.0\" font-size=\"9.5\" fill=\"#FF007F\" text-anchor=\"end\" font-weight=\"700\">31 Oct 1951</text><text x=\"94\" y=\"224.0\" font-size=\"9.5\" fill=\"#FFFFFF\">J&amp;K Constituent Assembly meets</text><circle cx=\"82\" cy=\"250.5\" r=\"4\" fill=\"#FF007F\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"73\" y=\"254.0\" font-size=\"9.5\" fill=\"#FF007F\" text-anchor=\"end\" font-weight=\"700\">6 Feb 1954</text><text x=\"94\" y=\"254.0\" font-size=\"9.5\" fill=\"#FFFFFF\">Assembly unanimously ratifies</text><text x=\"94\" y=\"266.2\" font-size=\"9.5\" fill=\"#FFFFFF\">accession to India</text><circle cx=\"82\" cy=\"292.7\" r=\"4\" fill=\"#FF007F\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"73\" y=\"296.2\" font-size=\"9.5\" fill=\"#FF007F\" text-anchor=\"end\" font-weight=\"700\">26 Jan 1957</text><text x=\"94\" y=\"296.2\" font-size=\"9.5\" fill=\"#FFFFFF\">Constitution of Jammu and Kashmir</text><text x=\"94\" y=\"308.4\" font-size=\"9.5\" fill=\"#FFFFFF\">comes into force</text></svg></div><div class=\"diagram-caption\">Fig. 2: Events of 1948–1957</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 1. Princely States and the Choice of Accession</div><div class=\"sol-step\"><div class=\"pt\">During British rule there were two set-ups: <b>British Indian Provinces</b> (direct British rule) and <b>Princely States</b> (ruled by Rajas, Maharajas and Nawabs under British <b>paramountcy</b>).</div><div class=\"pt\">Under the <b>Indian Independence Act 1947</b>, British paramountcy over the Indian States lapsed.</div><div class=\"pt\">States could accede to India or Pakistan under the <b>Government of India Act 1935</b> (as amended in 1947). The <b>ruler</b> was the final and only authority to decide and sign the instrument of accession.</div><div class=\"pt\"><b>Lord Mountbatten</b>, Governor General, endorsed this in a special session of the Chamber of Princes in Delhi on <b>25 July 1947</b>.</div><div class=\"pt\"><b>Geographical contiguity</b> with the dominions was of prime significance in choosing.</div><div class=\"pt\"><b>Cyril John Radcliffe</b> (1899–1977), a British lawyer, is best known for his role in the partition of British India.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 2. Jammu and Kashmir and the Standstill Agreement</div><div class=\"sol-step\"><div class=\"pt\">J&K was contiguous to <b>both</b> dominions and had vital economic and cultural links with both.</div><div class=\"pt\">On <b>12 August 1947</b> Maharaja <b>Hari Singh</b> offered to sign a <b>Standstill Agreement</b> with India and Pakistan — maintaining the <b>status quo</b> in all matters as it was with the British Government.</div><div class=\"pt\"><b>Pakistan</b> accepted and signed it; <b>India</b> needed some clarifications.</div><div class=\"pt\">The <b>Radcliffe Commission</b> awarded four tehsils of Gurdaspur — <i>Batala, Shakargarh, Pathankot</i> and <i>Gurdaspur</i> — to India. This aggrieved Pakistan.</div><div class=\"pt\">Pakistan <b>violated</b> the agreement and began the <b>strangulation</b> of essential supplies — food, salt and petrol — causing hardship to the people.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 3. The Pakistani Invasion (22 October 1947)</div><div class=\"sol-step\"><div class=\"pt\"><b>Pashtun</b> tribals of the North-Western Frontier Province, armed with modern weapons and travelling in motor trucks and lorries, invaded J&K — aided by Pakistan's government and armed forces.</div><div class=\"pt\">They used the <b>Manshera–Muzaffarabad road</b>, first in Poonch, then Sialkot and the area adjoining Hazara district on the Ramkote side, and advanced along the <b>Jhelum Valley road</b> towards Srinagar.</div><div class=\"pt\">They burnt the <b>Mahura Power House</b>, which supplied electricity to Srinagar; Pakistan radio spread rumours that their government had been set up in Kashmir.</div><div class=\"pt\">The Maharaja's state forces were too few. <b>Brigadier Rajinder Singh</b>, Chief of Staff of the state forces, was ordered to hold the enemy at <b>Uri</b> to the last man. With about <b>150 soldiers</b> he checked the advance and was martyred — severely wounded, he ordered his troops to leave him and push back the raiders. He is called the <b>Saviour of Kashmir</b> (Mahavir Chakra, posthumously).</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 4. The Instrument of Accession</div><div class=\"sol-step\"><div class=\"pt\">The Maharaja asked the Indian dominion for <b>military help</b>.</div><div class=\"pt\">The <b>Defence Committee</b>, chaired by Lord Mountbatten, met in Delhi on <b>25 October 1947</b> and agreed to send help immediately.</div><div class=\"pt\"><b>Maharaja Hari Singh signed the Instrument of Accession with India on 26 October 1947</b> — a standard document signed by all the princely states.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 5. Pakistani Invaders Pushed Back</div><div class=\"sol-step\"><div class=\"rev\">On information from <b>V.P. Menon</b>, Additional Union Home Secretary, military help was sent and the Indian Armed Forces were <b>airlifted to Srinagar</b>; a battalion was flown in as the <b>161 Infantry Brigade</b>.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Hero</th><th>Contribution</th><th>Award</th></tr><tr><td>Lt Col <b>Dewan Ranjit Rai</b> (1913–1947), CO 1 Sikh Battalion</td><td>Airlifted to Srinagar on 27 Oct 1947; headed for Baramulla and was martyred checking the raiders' advance towards the valley</td><td>Maha Vir Chakra (posthumous) — the 1st of the Indian Army</td></tr><tr><td>Major <b>Somnath Sharma</b> (1922–1947), 4th Battalion Kumaon Regiment</td><td>Laid down his life on 3 Nov 1947 in the <b>Battle of Budgam</b>, repulsing infiltrators near Srinagar Airport; memorial at Srinagar Airport</td><td><b>1st Param Vir Chakra</b> (posthumous)</td></tr><tr><td>Brigadier <b>Mohammad Usman</b> (1912–1948), 50th Parachute Brigade</td><td>Defended <b>Jhangar</b> (Nowshera), junction of roads from Mirpur Kotli; martyred in July 1948</td><td>Mahavir Chakra (posthumous)</td></tr></table></div><div class=\"rev\">V.P. Menon was the Constitutional Advisor and Political Reforms Commissioner to the last three Viceroys and played an important role in the integration of the princely states.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 6. Role of the Local People</div><div class=\"sol-step\"><div class=\"pt\">A popular armed force, the <b>National Militia</b>, was organised under <b>Sheikh Abdullah</b> to safeguard Srinagar; hundreds of young Kashmiris enrolled.</div><div class=\"pt\">An exclusive <b>women's militia</b> (self-defence corps) was trained to use rifles — it brought women into the public sphere. It was inspected by Pt. Jawaharlal Nehru. Later the women's section was disbanded and the men's militia was incorporated into the Indian Armed Forces.</div><div class=\"pt\"><b>Maqbool Sherwani</b>, a National Conference activist of Baramulla, misled the raiders on their way to the valley. He was publicly executed for protecting non-Muslims including Sikhs and Christians — a martyr for secularism and Hindu-Muslim unity. The play <i>Shaheed Sherwani</i> recounted his valour; the <i>Maqbool Sherwani</i> memorial hall was built in <b>2005</b>.</div><div class=\"pt\"><b>Sikh jathas</b> (groups) of Baramulla resisted the raiders; Sikh ladies disguised as males fought when the jatha reached Bulgam Chura. Bhai Kanhiya Singh, Bhai Ujagar Singh, Bhai Mohan Singh, S. Budha Singh Khadnayar and others gave their lives helping recapture Baramulla.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 7. The Defence of Ladakh and Zojila</div><div class=\"sol-step\"><div class=\"pt\"><b>Kushok Bakula Rinpochey</b>, a revered monk, formed the <b>Nubra Brigade</b> and turned land of the <b>Pethub monastery</b> into a makeshift landing strip.</div><div class=\"pt\">This let the plane piloted by IAF commander <b>Mehar Singh</b> land at <b>Leh on 24 May 1948</b>; the invaders were chased out.</div><div class=\"pt\"><b>Major General Thimayya</b>, commander of the <b>19th Infantry Division</b>, used tanks, artillery and air force to drive the raiders out of the valley. He took his tanks to the snow-covered <b>Zojila Pass</b> and destroyed <b>twenty-five bunkers</b> — a feat compared to Hannibal crossing the Alps (218 B.C.). He later served as Chief of Army Staff (1957–1961).</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 8. Gilgit Agency and Pakistan Occupied J&K</div><div class=\"sol-step\"><div class=\"pt\">The <b>Gilgit Agency</b> was set up in <b>1889</b> by the British over the subsidiary states on the northern periphery of J&K, to strengthen them against <b>Russian advancement</b>. It included Hunza, Nagar and states in present Gupis-Yasin, Khizer, Darel, Tangir, Puniyal, Chitral and Diamer, and was based in <b>Gilgit</b>, under the Maharaja's direct administration.</div><div class=\"pt\">The Maharaja had given it on <b>lease for sixty years</b> to the British. Pakistan grabbed it, though it legally became part of India after the Instrument of Accession.</div><div class=\"pt\"><span class=\"lbl\">POJK:</span> Rawalakot, Sudhanati, Neelam, Bhimber, Muzaffarabad, Mirpur-Kotli and Deva-Batala remained under Pakistani occupation.</div><div class=\"pt\">In <b>January 1948</b> India took the issue to the <b>U.N.</b> The UN Security Council resolutions of 1948 required Pakistan to remove its forces — Pakistan never did. Millions were forced to migrate from POJK.</div><div class=\"pt\">The first report of the <b>UNCIP</b> (UN Commission for India and Pakistan) recorded Pakistan's acceptance that three regular Pakistani brigades were fighting in Kashmir under the Pakistan Army's command.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 9. The J&K Constituent Assembly</div><div class=\"sol-step\"><div class=\"pt\">States that acceded to India were asked to form Constituent Assemblies to draft their own constitutions on state-list subjects; only a few — <b>Mysore, Travancore, Kochi, Saurashtra</b> — did so.</div><div class=\"pt\">J&K's assembly was formed later because the war to free the occupied territories was in progress.</div><div class=\"pt\"><b>25 Nov 1949:</b> Regent <b>Yuvraj Karan Singh</b> proclaimed that the Indian Constitution would supersede inconsistent provisions in force in J&K.</div><div class=\"pt\"><b>31 Oct 1951:</b> the Constituent Assembly met to draft the state's constitution.</div><div class=\"pt\"><b>6 Feb 1954:</b> members <b>unanimously ratified</b> the accession to India.</div><div class=\"pt\"><b>26 Jan 1957:</b> the J&K Constitution came into force. Part II, Section 3: <i>“the state of Jammu and Kashmir is and shall remain an integral part of the Union of India.”</i></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 10. Key Terms</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Term</th><th>Meaning</th></tr><tr><td>Paramountcy</td><td>Supreme power / authority</td></tr><tr><td>Strangulation</td><td>Cutting of commercial dealings</td></tr><tr><td>Status quo</td><td>The existing state of affairs, especially social or political</td></tr><tr><td>Posthumously</td><td>Following or occurring after death</td></tr><tr><td>Gallantly</td><td>In a brave or heroic manner</td></tr><tr><td>Commemorate</td><td>Recall and show respect for someone</td></tr><tr><td>Militia</td><td>A military force raised from the civil population to supplement a regular army in emergency</td></tr><tr><td>Monastery</td><td>An establishment for monks</td></tr><tr><td>Disguise</td><td>Give a different appearance to conceal one's identity</td></tr><tr><td>Lease</td><td>A legal agreement to use a building or land for a fixed period in return for rent</td></tr><tr><td>Regent</td><td>A person appointed to administer a state when the monarch is a minor, absent or incapacitated</td></tr><tr><td>Integral</td><td>Contained within something, not separate</td></tr></table></div><div class=\"exam\"><span class=\"exam-t\">📌 Exam Focus</span><div>• Standstill Agreement and why Pakistan violated it</div><div>• Tribal invasion and the Instrument of Accession (26 Oct 1947)</div><div>• Role of the Indian Army and its heroes</div><div>• Role of local people — National Militia, Maqbool Sherwani, Sikh jathas, Kushok Bakula</div><div>• Gilgit Agency and POJK</div><div>• Formation of the J&K Constituent Assembly — key dates</div></div></div>\n  </div>\n</div>",
+  "htmlExercises": {
+    "sh9-6-ex-q": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 0, 127, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FF007F; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FF007F; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFC1DC; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFC1DC; font-weight: 700; }\n  .hl { color: #FF007F; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FF007F; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FF007F; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(255, 0, 127, 0.10); border: 1.5px dashed #FF007F; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FF007F; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 0, 127, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(255, 0, 127, 0.18); border: 1px solid #FF007F; color: #FFC1DC; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(255, 0, 127, 0.2); color: #FFC1DC; }\n  .q-card .q-text, .q-card .sub-q { color: #FF007F !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Briefly explain the Stand Still Agreement.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Meaning:</b> an agreement to keep the <b>status quo</b> in all matters, just as it was with the British Government.</div><div class=\"pt\">J&K was contiguous to both dominions and had economic and cultural links with both. To decide its future course, <b>Maharaja Hari Singh</b> offered to sign the agreement with <b>India and Pakistan</b> on <b>12 August 1947</b>.</div><div class=\"pt\"><b>Pakistan</b> accepted and signed it; <b>India</b> needed some clarifications.</div><div class=\"pt\">The Radcliffe Commission awarded four tehsils of Gurdaspur (Batala, Shakargarh, Pathankot and Gurdaspur) to India, which aggrieved Pakistan.</div><div class=\"pt\">Pakistan then <b>violated</b> the agreement and cut off essential supplies like <b>food, salt and petrol</b>, creating problems for the people of the state.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Discuss the role played by Indian army in pushing back the Pakistani raiders from the Kashmir valley.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">After the accession (26 Oct 1947), on information from <b>V.P. Menon</b>, the Indian Armed Forces were <b>airlifted to Srinagar</b>; a battalion was flown in as the 161 Infantry Brigade.</div><div class=\"pt\"><span class=\"lbl\">Lt Col Dewan Ranjit Rai</span> (1 Sikh), airlifted on 27 Oct 1947, headed for Baramulla and was martyred checking the raiders' advance — 1st Maha Vir Chakra of the Indian Army (posthumous).</div><div class=\"pt\"><span class=\"lbl\">Major Somnath Sharma</span> (4th Kumaon) died on 3 Nov 1947 in the <b>Battle of Budgam</b>, repulsing infiltrators near Srinagar Airport — first <b>Param Vir Chakra</b>.</div><div class=\"pt\"><span class=\"lbl\">Brigadier Mohammad Usman</span> (50th Parachute Brigade) defended <b>Jhangar</b> (Nowshera) and was martyred in July 1948 — Mahavir Chakra.</div><div class=\"pt\"><span class=\"lbl\">Major General Thimayya</span> (19th Infantry Division) used tanks, artillery and air force to drive the raiders out of the valley; his tanks crossed the snow-covered <b>Zojila Pass</b> and destroyed 25 bunkers.</div><div class=\"pt\">In Ladakh, an IAF plane piloted by <b>Mehar Singh</b> landed at Leh on 24 May 1948 and the invaders were chased out.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Cite examples from the text to show that the local activists also played a vibrant role in thwarting Pakistani attack.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">National Militia:</span> organised under <b>Sheikh Abdullah</b> to save Srinagar; hundreds of young Kashmiris helped repulse the invasion. A <b>women's militia</b> was trained to use rifles.</div><div class=\"pt\"><span class=\"lbl\">Maqbool Sherwani:</span> a National Conference activist of Baramulla, misled the raiders on their way to the valley; he was publicly executed for protecting non-Muslims including Sikhs and Christians.</div><div class=\"pt\"><span class=\"lbl\">Sikh jathas:</span> Sikhs of Baramulla formed groups and resisted the raiders; Sikh ladies disguised as males fought at Bulgam Chura; Bhai Kanhiya Singh, Bhai Ujagar Singh, Bhai Mohan Singh, S. Budha Singh Khadnayar and others died helping recapture Baramulla.</div><div class=\"pt\"><span class=\"lbl\">Kushok Bakula Rinpochey:</span> formed the <b>Nubra Brigade</b> and turned Pethub monastery land into a landing strip, so an IAF plane could land at Leh.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">Write a brief note on the Formation of Jammu and Kashmir Constituent Assembly.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">States that acceded to India were asked to form Constituent Assemblies to frame their own constitutions on state-list subjects; only Mysore, Travancore, Kochi and Saurashtra did so.</div><div class=\"pt\">J&K's assembly was formed <b>later</b> because the war to free territories illegally occupied by Pakistan was in progress.</div><div class=\"pt\"><b>25 Nov 1949:</b> Regent Yuvraj Karan Singh proclaimed that the Indian Constitution would supersede all inconsistent provisions in force in J&K.</div><div class=\"pt\"><b>31 Oct 1951:</b> the Constituent Assembly met and its members were called upon to draft a constitution for the state.</div><div class=\"pt\"><b>6 Feb 1954:</b> the members <b>unanimously ratified</b> the accession of J&K to India.</div><div class=\"pt\"><b>26 Jan 1957:</b> the J&K Constitution came into force. Part II, Section 3 stated that the state <b>is and shall remain an integral part of the Union of India</b>.</div></div></div>\n  </div>\n</div>",
+    "sh9-6-ex-blanks": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 0, 127, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FF007F; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FF007F; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFC1DC; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFC1DC; font-weight: 700; }\n  .hl { color: #FF007F; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FF007F; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FF007F; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(255, 0, 127, 0.10); border: 1.5px dashed #FF007F; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FF007F; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 0, 127, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(255, 0, 127, 0.18); border: 1px solid #FF007F; color: #FFC1DC; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(255, 0, 127, 0.2); color: #FFC1DC; }\n  .q-card .q-text, .q-card .sub-q { color: #FF007F !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Match the Column:<div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Column A</th><th>Column B</th></tr><tr><td>a) Lord Mountbatten</td><td>Defence of Ladakh</td></tr><tr><td>b) Yuvraj Karan Singh</td><td>National militia</td></tr><tr><td>c) Sheikh Abdullah</td><td>Regent of Jammu & Kashmir</td></tr><tr><td>d) Kushok Bakula Rinpochey</td><td>Governor General of India</td></tr></table></div></div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Column A</th><th>Column B</th></tr><tr><td>a) Lord Mountbatten</td><td><b>Governor General of India</b></td></tr><tr><td>b) Yuvraj Karan Singh</td><td><b>Regent of Jammu & Kashmir</b></td></tr><tr><td>c) Sheikh Abdullah</td><td><b>National militia</b></td></tr><tr><td>d) Kushok Bakula Rinpochey</td><td><b>Defence of Ladakh</b></td></tr></table></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Fill in the blanks:<br/>1. The meeting of the Defence Committee was held in Delhi in the year ______.<br/>2. A unique feat in Ladakh was that of ______ who resisted the tribal attack at Zojila Pass.<br/>3. The two areas that fall in the territory of Pakistan Occupied Jammu & Kashmir are ______ and ______.<br/>4. The instrument of Accession was signed on ______.<br/>5. Gilgit Agency was formed in the year ______.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">1. <b>1947</b> (25 October 1947)</div><div class=\"pt\">2. <b>Major General Thimayya</b></div><div class=\"pt\">3. <b>Muzaffarabad</b> and <b>Mirpur-Kotli</b> (others: Rawalakot, Sudhanati, Neelam, Bhimber, Deva-Batala)</div><div class=\"pt\">4. <b>26 October 1947</b></div><div class=\"pt\">5. <b>1889</b></div></div></div>\n  </div>\n</div>",
+    "sh9-6-ex-tf": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 0, 127, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FF007F; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FF007F; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFC1DC; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFC1DC; font-weight: 700; }\n  .hl { color: #FF007F; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FF007F; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FF007F; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(255, 0, 127, 0.10); border: 1.5px dashed #FF007F; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FF007F; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 0, 127, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(255, 0, 127, 0.18); border: 1px solid #FF007F; color: #FFC1DC; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(255, 0, 127, 0.2); color: #FFC1DC; }\n  .q-card .q-text, .q-card .sub-q { color: #FF007F !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Karan Singh was the regent of Jammu and Kashmir at the time of the signing of Instrument of Accession.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"ans-box\"><span class=\"ans-label\">✗ </span><span class=\"ans-val\">False</span></div><div class=\"rev\">The Instrument was signed by <b>Maharaja Hari Singh</b> himself on 26 October 1947. Yuvraj Karan Singh appears as Regent later, in his proclamation of 25 November 1949.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">V.P Menon advised the Defence Committee to provide military support to the state of Jammu and Kashmir.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"ans-box\"><span class=\"ans-label\">✓ </span><span class=\"ans-val\">True</span></div><div class=\"rev\">Military help was provided on the basis of the information given by V.P. Menon, Additional Union Home Secretary.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Brigadier Rajinder Singh was killed in an operation launched against the Tribal invaders at Uri.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"ans-box\"><span class=\"ans-label\">✓ </span><span class=\"ans-val\">True</span></div><div class=\"rev\">He held the raiders at Uri with about 150 state soldiers and was martyred.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">Maharaja offered to sign the Stand Still Agreement with both India and Pakistan.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"ans-box\"><span class=\"ans-label\">✓ </span><span class=\"ans-val\">True</span></div><div class=\"rev\">He offered it to both dominions on 12 August 1947.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5.</div>\n    <div class=\"q-text\">The Constituent Assembly of J&K met for the first time in October 1951.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"ans-box\"><span class=\"ans-label\">✓ </span><span class=\"ans-val\">True</span></div><div class=\"rev\">It met on 31 October 1951.</div></div></div>\n  </div>\n</div>",
+    "sh9-6-ex-proj": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 0, 127, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FF007F; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FF007F; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFC1DC; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFC1DC; font-weight: 700; }\n  .hl { color: #FF007F; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FF007F; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FF007F; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(255, 0, 127, 0.10); border: 1.5px dashed #FF007F; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FF007F; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 0, 127, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(255, 0, 127, 0.18); border: 1px solid #FF007F; color: #FFC1DC; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(255, 0, 127, 0.2); color: #FFC1DC; }\n  .q-card .q-text, .q-card .sub-q { color: #FF007F !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">In this chapter we learnt that the 'Gilgit Agency' was given by Maharaja on lease to the British Government. With the help of your teacher, try to collect information about the geo-political strategic importance of the Gilgit Agency and make a project on it.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\"><i>Starting points from the chapter:</i></div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Point</th><th>Details</th></tr><tr><td>Formation</td><td>Set up in 1889 by the British over the subsidiary states on the northern periphery of J&K</td></tr><tr><td>Purpose</td><td>To strengthen these territories against Russian advancement</td></tr><tr><td>Area</td><td>Hunza, Nagar and states in present Gupis-Yasin, Khizer, Darel, Tangir, Puniyal, Chitral and Diamer</td></tr><tr><td>Centre</td><td>Town of Gilgit, under the Maharaja's direct administration</td></tr><tr><td>Lease</td><td>Given by Maharaja Hari Singh to the British for sixty years</td></tr><tr><td>After 1947</td><td>Legally part of India after the Instrument of Accession, but grabbed by Pakistan</td></tr></table></div><div class=\"sub-q\">Strategic importance</div><div class=\"pt\">It lies on the <b>northern frontier</b> of the old J&K state, where the borders of several countries meet — so whoever holds it can watch and control the routes into the region.</div><div class=\"pt\">This is why the British wanted it as a <b>guard against Russia</b> in the nineteenth century.</div><div class=\"pt\">Its mountain passes and roads give it great <b>military and trade</b> value even today.</div><div class=\"rev\">Collect maps, pictures and newspaper reports with your teacher and present them on a chart.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">After discussing with your teacher, parents and friends write a short note on “The Ill Effects of War”.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sec\">The Ill Effects of War</div><div class=\"rev\">War brings suffering to everyone. The events of 1947–48 in Jammu and Kashmir show this clearly.</div><div class=\"pt\"><b>Loss of life:</b> soldiers like Brigadier Rajinder Singh, Major Somnath Sharma and Brigadier Mohammad Usman, and civilians like Maqbool Sherwani, lost their lives.</div><div class=\"pt\"><b>Destruction of property:</b> the raiders looted towns and burnt the Mahura Power House, leaving Srinagar without electricity.</div><div class=\"pt\"><b>Shortage of essentials:</b> food, salt and petrol were cut off, causing hardship to common people.</div><div class=\"pt\"><b>Forced migration:</b> millions of people had to leave their homes in POJK and became refugees.</div><div class=\"pt\"><b>Fear and division:</b> rumours, violence and hatred break the trust between communities.</div><div class=\"rev\">Wars also waste money that could be spent on schools, hospitals and development. Peace, dialogue and unity are the best ways to solve disputes.</div></div></div>\n  </div>\n</div>"
   },
-  introduction:
-    "Jammu and Kashmir integrated with India when Maharaja Hari Singh signed the Instrument of Accession in October 1947.",
-  definitions: [],
-  keyPoints: [],
-  formulas: [],
-  crux: [],
-  mcqs: [
+  "introduction": "Jammu and Kashmir integrated with India when Maharaja Hari Singh signed the Instrument of Accession in October 1947.",
+  "definitions": [],
+  "keyPoints": [],
+  "formulas": [],
+  "crux": [],
+  "mcqs": [
     {
-      id: "sst-his-c9-6-mcq-1",
-      question: "Who was the Maharaja of Jammu and Kashmir in 1947?",
-      options: [
-        "Maharaja Hari Singh",
-        "Maharaja Gulab Singh",
-        "Maharaja Ranbir Singh",
-        "Maharaja Pratap Singh",
+      "id": "sst-his-c9-6-mcq-1",
+      "question": "<div style='text-align: justify;'>Under the Indian Independence Act 1947, what lapsed?</div>",
+      "options": [
+        "A):   The Government of India Act 1935",
+        "B):   British paramountcy over the Indian States",
+        "C):   The Chamber of Princes",
+        "D):   The office of Governor General"
       ],
-      correctAnswer: "a",
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Princely states could now choose India or Pakistan.</div>"
     },
     {
-      id: "sst-his-c9-6-mcq-2",
-      question: "On which date did Jammu and Kashmir formally accede to India?",
-      options: [
-        "15 August 1947",
-        "26 October 1947",
-        "26 January 1950",
-        "31 October 1951",
+      "id": "sst-his-c9-6-mcq-2",
+      "question": "<div style='text-align: justify;'>Lord Mountbatten addressed the Chamber of Princes in Delhi on —</div>",
+      "options": [
+        "A):   15 August 1947",
+        "B):   12 August 1947",
+        "C):   26 October 1947",
+        "D):   25 July 1947"
       ],
-      correctAnswer: "b",
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>He endorsed that rulers would decide accession.</div>"
     },
     {
-      id: "sst-his-c9-6-mcq-3",
-      question:
-        "Who was the leader of the National Conference during the integration of J&K?",
-      options: ["Sheikh Abdullah", "Karan Singh", "Hari Singh", "V.P. Menon"],
-      correctAnswer: "a",
-    },
-    {
-      id: "sst-his-c9-6-mcq-4",
-      question:
-        "The Stand Still Agreement was offered to both India and Pakistan on:",
-      options: [
-        "12 August 1947",
-        "15 August 1947",
-        "26 October 1947",
-        "26 January 1948",
+      "id": "sst-his-c9-6-mcq-3",
+      "question": "<div style='text-align: justify;'>Maharaja Hari Singh offered the Standstill Agreement to India and Pakistan on —</div>",
+      "options": [
+        "A):   12 August 1947",
+        "B):   25 July 1947",
+        "C):   22 October 1947",
+        "D):   25 October 1947"
       ],
-      correctAnswer: "a",
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Pakistan accepted it; India sought clarifications.</div>"
     },
     {
-      id: "sst-his-c9-6-mcq-5",
-      question:
-        "Who was the first Sadar-i-Riyasat (and former Regent) of Jammu and Kashmir?",
-      options: [
-        "Karan Singh",
-        "Hari Singh",
-        "Sheikh Abdullah",
-        "Jawaharlal Nehru",
+      "id": "sst-his-c9-6-mcq-4",
+      "question": "<div style='text-align: justify;'>The Constituent Assembly of Jammu and Kashmir met on —</div>",
+      "options": [
+        "A):   26 January 1950",
+        "B):   25 November 1949",
+        "C):   31 October 1951",
+        "D):   6 February 1954"
       ],
-      correctAnswer: "a",
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Members were asked to draft a constitution for the state.</div>"
     },
     {
-      id: "sst-his-c9-6-mcq-6",
-      question:
-        "Who was the Chief of Military Staff of J&K State Forces who sacrificed his life defending Uri?",
-      options: [
-        "Brigadier Rajinder Singh",
-        "Major Somnath Sharma",
-        "Maqbool Sherwani",
-        "Col. Chewang Rinchen",
+      "id": "sst-his-c9-6-mcq-5",
+      "question": "<div style='text-align: justify;'>The Pashtun tribal invasion of Jammu and Kashmir began on —</div>",
+      "options": [
+        "A):   26 October 1947",
+        "B):   22 October 1947",
+        "C):   27 October 1947",
+        "D):   3 November 1947"
       ],
-      correctAnswer: "a",
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>The raiders were aided by Pakistan.</div>"
     },
     {
-      id: "sst-his-c9-6-mcq-7",
-      question:
-        "The young local activist of Baramulla who delayed the invaders' advance and was martyred was:",
-      options: [
-        "Maqbool Sherwani",
-        "Sheikh Abdullah",
-        "Kushok Bakula",
-        "Chewang Rinchen",
+      "id": "sst-his-c9-6-mcq-6",
+      "question": "<div style='text-align: justify;'>The raiders burnt the ___ which supplied electricity to Srinagar.</div>",
+      "options": [
+        "A):   Uri Power House",
+        "B):   Baramulla Power House",
+        "C):   Mahura Power House",
+        "D):   Pethub Power House"
       ],
-      correctAnswer: "a",
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>They were advancing along the Jhelum Valley road.</div>"
     },
     {
-      id: "sst-his-c9-6-mcq-8",
-      question:
-        "The Gilgit Agency was leased by the Maharaja to the British Government in the year:",
-      options: ["1889", "1935", "1947", "1951"],
-      correctAnswer: "b",
-    },
-    {
-      id: "sst-his-c9-6-mcq-9",
-      question: "The J&K Constituent Assembly met for the first time in:",
-      options: [
-        "October 1947",
-        "October 1951",
-        "January 1950",
-        "November 1956",
+      "id": "sst-his-c9-6-mcq-7",
+      "question": "<div style='text-align: justify;'>Who is called the Saviour of Kashmir for holding the raiders at Uri?</div>",
+      "options": [
+        "A):   Major Somnath Sharma",
+        "B):   Brigadier Mohammad Usman",
+        "C):   Lt Col Dewan Ranjit Rai",
+        "D):   Brigadier Rajinder Singh"
       ],
-      correctAnswer: "b",
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>He was martyred at Uri with about 150 soldiers.</div>"
     },
     {
-      id: "sst-his-c9-6-mcq-10",
-      question:
-        "The first Indian soldier to be posthumously awarded the Param Vir Chakra was:",
-      options: [
-        "Major Somnath Sharma",
-        "Brigadier Rajinder Singh",
-        "Maqbool Sherwani",
-        "Brigadier L.P. Sen",
+      "id": "sst-his-c9-6-mcq-8",
+      "question": "<div style='text-align: justify;'>The Constitution of Jammu and Kashmir came into force on —</div>",
+      "options": [
+        "A):   26 January 1957",
+        "B):   26 January 1950",
+        "C):   31 October 1951",
+        "D):   6 February 1954"
       ],
-      correctAnswer: "a",
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>It declared J&K an integral part of the Union of India.</div>"
     },
+    {
+      "id": "sst-his-c9-6-mcq-9",
+      "question": "<div style='text-align: justify;'>Maharaja Hari Singh signed the Instrument of Accession with India on —</div>",
+      "options": [
+        "A):   25 October 1947",
+        "B):   15 August 1947",
+        "C):   26 October 1947",
+        "D):   27 October 1947"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>It was a standard document signed by all princely states.</div>"
+    },
+    {
+      "id": "sst-his-c9-6-mcq-10",
+      "question": "<div style='text-align: justify;'>Lt Col Dewan Ranjit Rai was the commanding officer of —</div>",
+      "options": [
+        "A):   4th Kumaon Regiment",
+        "B):   1 Sikh Battalion",
+        "C):   10th Baluch Regiment",
+        "D):   50th Parachute Brigade"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>He was airlifted to Srinagar on 27 October 1947.</div>"
+    },
+    {
+      "id": "sst-his-c9-6-mcq-11",
+      "question": "<div style='text-align: justify;'>Major Somnath Sharma laid down his life in the Battle of —</div>",
+      "options": [
+        "A):   Uri",
+        "B):   Jhangar",
+        "C):   Zojila",
+        "D):   Budgam"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>He was repulsing infiltrators near Srinagar Airport.</div>"
+    },
+    {
+      "id": "sst-his-c9-6-mcq-12",
+      "question": "<div style='text-align: justify;'>The first recipient of the Param Vir Chakra was —</div>",
+      "options": [
+        "A):   Major Somnath Sharma",
+        "B):   Brigadier Rajinder Singh",
+        "C):   Major General Thimayya",
+        "D):   Brigadier Mohammad Usman"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>A memorial stands at Srinagar Airport.</div>"
+    },
+    {
+      "id": "sst-his-c9-6-mcq-13",
+      "question": "<div style='text-align: justify;'>Brigadier Mohammad Usman commanded the 50th Parachute Brigade at —</div>",
+      "options": [
+        "A):   Budgam",
+        "B):   Uri",
+        "C):   Jhangar",
+        "D):   Leh"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Jhangar (Nowshera) lies at the junction of roads from Mirpur Kotli.</div>"
+    },
+    {
+      "id": "sst-his-c9-6-mcq-14",
+      "question": "<div style='text-align: justify;'>The National Militia was organised under the leadership of —</div>",
+      "options": [
+        "A):   Maqbool Sherwani",
+        "B):   Sheikh Abdullah",
+        "C):   V.P. Menon",
+        "D):   Yuvraj Karan Singh"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>It helped safeguard Srinagar.</div>"
+    },
+    {
+      "id": "sst-his-c9-6-mcq-15",
+      "question": "<div style='text-align: justify;'>The play Shaheed Sherwani recounted the valour of —</div>",
+      "options": [
+        "A):   Maqbool Sherwani",
+        "B):   Bhai Kanhiya Singh",
+        "C):   Kushok Bakula Rinpochey",
+        "D):   S. Budha Singh Khadnayar"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>A memorial hall in his name was built in 2005.</div>"
+    },
+    {
+      "id": "sst-his-c9-6-mcq-16",
+      "question": "<div style='text-align: justify;'>Kushok Bakula Rinpochey turned land of which monastery into a landing strip?</div>",
+      "options": [
+        "A):   Hemis",
+        "B):   Thiksey",
+        "C):   Alchi",
+        "D):   Pethub"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>An IAF plane landed at Leh on 24 May 1948.</div>"
+    },
+    {
+      "id": "sst-his-c9-6-mcq-17",
+      "question": "<div style='text-align: justify;'>Major General Thimayya surprised the raiders by taking his tanks to —</div>",
+      "options": [
+        "A):   Banihal Pass",
+        "B):   Pir Panjal Pass",
+        "C):   Zojila Pass",
+        "D):   Khardung La"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>His officers destroyed twenty-five bunkers.</div>"
+    },
+    {
+      "id": "sst-his-c9-6-mcq-18",
+      "question": "<div style='text-align: justify;'>The Gilgit Agency was established in —</div>",
+      "options": [
+        "A):   1947",
+        "B):   1889",
+        "C):   1935",
+        "D):   1857"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>To strengthen the northern periphery against Russian advancement.</div>"
+    },
+    {
+      "id": "sst-his-c9-6-mcq-19",
+      "question": "<div style='text-align: justify;'>Assertion (A): The Gilgit Agency legally became part of the Indian Union. Reason (R): It belonged to the princely state of J&K, whose Maharaja signed the Instrument of Accession on 26 October 1947.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Pakistan grabbed it, but legally it is part of India.</div>"
+    },
+    {
+      "id": "sst-his-c9-6-mcq-20",
+      "question": "<div style='text-align: justify;'>Assertion (A): Pakistan honoured the Standstill Agreement with Jammu and Kashmir. Reason (R): The Radcliffe award of four tehsils of Gurdaspur to India aggrieved Pakistan.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Pakistan violated the agreement and cut off supplies.</div>"
+    }
   ],
-  summary: [],
-  exercises: [
+  "summary": [],
+  "exercises": [
     {
-      id: "ex-sst-qa",
-      name: "Q & A",
-      questions: [],
+      "id": "sh9-6-ex-q",
+      "name": "Questions",
+      "questions": []
     },
+    {
+      "id": "sh9-6-ex-blanks",
+      "name": "Fill in Blanks",
+      "questions": []
+    },
+    {
+      "id": "sh9-6-ex-tf",
+      "name": "True / False",
+      "questions": []
+    },
+    {
+      "id": "sh9-6-ex-proj",
+      "name": "Projects",
+      "questions": []
+    }
   ],
-  examples: [],
+  "examples": []
 };
