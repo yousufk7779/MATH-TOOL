@@ -1,359 +1,286 @@
 import { ChapterContent } from "../types";
 
-const themeColor = "#8E2DE2"; // Purple theme color for Civics/Political Science
-
 export const sstCivC94: ChapterContent = {
-  id: "sst-civ-c9-4",
-  number: 4,
-  title: "Working of Institutions",
-  introduction:
-    "This chapter explores how major policy decisions are taken and implemented in India. It describes the roles and functions of the three key institutions of democracy: the Legislature (Parliament), the Executive (Prime Minister and Ministers), and the Judiciary (Courts).",
-  definitions: [
-    {
-      term: "Office Memorandum",
-      description:
-        "A written communication or order issued by an official authority of the government, stating its policy decisions.",
-    },
-    {
-      term: "Legislature",
-      description:
-        "The body of elected representatives that has the supreme authority to make and amend laws for the country (e.g., Parliament in India).",
-    },
-    {
-      term: "Executive",
-      description:
-        "The organ of government that is responsible for implementing and executing the laws and policies made by the legislature.",
-    },
-    {
-      term: "Judiciary",
-      description:
-        "An independent institution consisting of all the courts in the country (Supreme Court, High Courts, District Courts) that interprets laws and resolves disputes.",
-    },
-    {
-      term: "Coalition Government",
-      description:
-        "A government formed by an alliance of two or more political parties, usually when no single party wins a clear majority in the elections.",
-    },
-  ],
-  keyPoints: [
-    "How decisions are made: A major policy decision starts with a government order (Office Memorandum), which goes through debates, Cabinet approval, and Parliamentary scrutiny.",
-    "Need for Institutions: Democratic governments require institutions to formulate policies, execute decisions, protect citizens' rights, and resolve conflicts.",
-    "Parliament: The supreme law-making body in India. It consists of the President and two Houses: Lok Sabha (House of the People) and Rajya Sabha (Council of States).",
-    "Lok Sabha vs. Rajya Sabha: Lok Sabha exercises supreme power in money bills, control of the Council of Ministers, and joint sittings, making it more powerful than the Rajya Sabha.",
-    "Political vs. Permanent Executive: Political Executive consists of elected ministers who make key policies (short term). Permanent Executive consists of civil servants (IAS/IPS) who implement those policies (long term).",
-    "Prime Minister and Council of Ministers: The PM is the head of government, leading the Cabinet, coordinating ministries, and wielding supreme executive power.",
-    "The President: The head of state, representing the nation. The President holds nominal powers and acts on the advice of the Council of Ministers.",
-    "Independent Judiciary: The judiciary is independent of executive/legislative control. The Supreme Court of India is the highest court, exercising power of Judicial Review.",
-  ],
-  formulas: [],
-  crux: [
-    "Democracy works best when institutions perform their designated roles of law-making, implementation, and judicial check.",
-    "The executive is answerable to the legislature, and both are subject to the checks of the independent judiciary.",
-    "Judicial independence ensures that citizens' fundamental rights are protected against executive or legislative overreach.",
-  ],
-  mcqs: [
-    {
-      id: "sst-civ-c9-4-mcq-1",
-      question: "If you are elected as the President of India, which of the following decisions can you take on your own?",
-      options: [
-        "Select the person you like as Prime Minister",
-        "Dismiss a Prime Minister who has a majority in Lok Sabha",
-        "Ask for reconsideration of a bill passed by both the Houses",
-        "Nominate the leaders of your choice to the Council of Ministers",
-      ],
-      correctAnswer: "c",
-    },
-    {
-      id: "sst-civ-c9-4-mcq-2",
-      question: "Who among the following is a part of the political executive?",
-      options: [
-        "District Collector",
-        "Secretary of the Ministry of Home Affairs",
-        "Home Minister",
-        "Director General of Police",
-      ],
-      correctAnswer: "c",
-    },
-    {
-      id: "sst-civ-c9-4-mcq-3",
-      question: "Which of the following statements about the judiciary is false?",
-      options: [
-        "Every law passed by the Parliament needs approval of the Supreme Court",
-        "Judiciary can strike down a law if it goes against the spirit of the Constitution",
-        "Judiciary is independent of the Executive",
-        "Any citizen can approach the courts if their rights are violated",
-      ],
-      correctAnswer: "a",
-    },
-    {
-      id: "sst-civ-c9-4-mcq-4",
-      question: "Which of the following institutions can make changes to an existing law of the country?",
-      options: ["The Supreme Court", "The President", "The Prime Minister", "The Parliament"],
-      correctAnswer: "d",
-    },
-    {
-      id: "sst-civ-c9-4-mcq-5",
-      question: "Which house of the Indian Parliament controls the Council of Ministers?",
-      options: ["Rajya Sabha", "Lok Sabha", "Both Houses equally", "Neither House"],
-      correctAnswer: "b",
-    },
-    {
-      id: "sst-civ-c9-4-mcq-6",
-      question: "What is the maximum period for which Rajya Sabha can delay a Money Bill?",
-      options: ["10 days", "14 days", "30 days", "3 months"],
-      correctAnswer: "b",
-    },
-    {
-      id: "sst-civ-c9-4-mcq-7",
-      question: "Who is the head of state and the first citizen of India?",
-      options: ["The Prime Minister", "The Chief Justice of India", "The President", "The Speaker of Lok Sabha"],
-      correctAnswer: "c",
-    },
-    {
-      id: "sst-civ-c9-4-mcq-8",
-      question: "What is the term used for the permanent civil service officers who work under the ministries?",
-      options: ["Political Executive", "Permanent Executive", "Judicial Council", "Legislative Secretariat"],
-      correctAnswer: "b",
-    },
-    {
-      id: "sst-civ-c9-4-mcq-9",
-      question: "The power of the judiciary to check the constitutional validity of laws is known as:",
-      options: ["Judicial Review", "Public Interest Litigation", "Advisory Jurisdiction", "Writ Jurisdiction"],
-      correctAnswer: "a",
-    },
-    {
-      id: "sst-civ-c9-4-mcq-10",
-      question: "In 1979, the Government of India appointed the Second Backward Classes Commission, popularly known as the:",
-      options: ["Mandal Commission", "Sarkaria Commission", "Kothari Commission", "Radhakrishnan Commission"],
-      correctAnswer: "a",
-    },
-  ],
-  summary: [
-    "Indian democracy is run through key institutions: Legislature, Executive, and Judiciary.",
-    "Parliament has two houses, where Lok Sabha holds superior power regarding financial and executive control.",
-    "The Prime Minister leads the government, while the President is the nominal head of state.",
-    "Judiciary is independent and interprets the constitution, checking government actions via Judicial Review.",
-  ],
-  isHtmlView: true,
-  htmlOverview: `
-    <div style="padding: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: transparent;">
-      <!-- Key Concepts Introduction -->
-      <div style="background-color: #1E1E2E; border: 1px solid rgba(156, 39, 176, 0.25); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 20px; font-weight: 700; margin-top: 0; margin-bottom: 12px; display: flex; align-items: center;">
-          <span style="margin-right: 8px; font-size: 22px;">🏛️</span> Introduction
-        </h3>
-        <p style="color: #E0E0E0; font-size: 15px; line-height: 1.6; text-align: justify; margin: 0; font-weight: 300;">
-          A democracy is not just about people electing their rulers. The elected rulers must follow rules and work with and through institutions. This chapter details how the three pillars of democracy—the Parliament (Legislature), the Ministers and Civil Servants (Executive), and the Supreme Court/High Courts (Judiciary)—function and interact.
-        </p>
-      </div>
-
-      <!-- Why Do We Need Institutions? -->
-      <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 600; margin-top: 0; margin-bottom: 14px; display: flex; align-items: center;">
-          <span style="margin-right: 8px; font-size: 18px;">📌</span> Key Democratic Organs
-        </h3>
-        <ul style="color: #B3B3C6; font-size: 14.5px; line-height: 1.7; margin: 0; padding-left: 20px; text-align: justify;">
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">The Legislature (Parliament):</b> Formulates, debates, and amends laws. Consists of Lok Sabha (more powerful, directly elected) and Rajya Sabha (represents states).</li>
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">The Executive:</b> Executes laws. Includes the <i>Political Executive</i> (elected ministers, short-term) and the <i>Permanent Executive</i> (civil services/IAS, long-term).</li>
-          <li style="margin-bottom: 0;"><b style="color: ${themeColor};">The Judiciary:</b> Interprets laws, protects fundamental rights, and resolves disputes. It is completely independent of the executive and legislature.</li>
-        </ul>
-      </div>
-      
-      <!-- Key Terms Glossy Box -->
-      <div style="background: rgba(156, 39, 176, 0.05); border: 1.5px solid rgba(156, 39, 176, 0.25); border-radius: 16px; padding: 20px; box-shadow: 0 4px 30px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 600; margin-top: 0; margin-bottom: 12px;">🔑 Key Terms</h3>
-        <div style="color: #E0E0E0; font-size: 14px; line-height: 1.6; text-align: justify;">
-          <p style="margin-top: 0; margin-bottom: 8px;"><b style="color: ${themeColor};">Cabinet:</b> The inner circle of the Council of Ministers, consisting of senior leaders of the ruling party holding major portfolios.</p>
-          <p style="margin-bottom: 8px;"><b style="color: ${themeColor};">Judicial Review:</b> The power of the Supreme Court to declare any legislative or executive action invalid if it violates the Constitution.</p>
-          <p style="margin-bottom: 0;"><b style="color: ${themeColor};">No-Confidence Motion:</b> A vote in the Lok Sabha to test if the ruling government still has the support of the majority of MPs.</p>
-        </div>
-      </div>
-    </div>
-  `,
-  htmlExercises: {
-    "ex-sst-qa": `
-      <div style="padding: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: transparent;">
-        
-        <!-- Q1 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
-            Q1. If you are elected as the President of India which of the following decision can you take on your own?
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            Answer: Option <b style="color: ${themeColor};">(c) Ask for reconsideration of a bill passed by both the Houses.</b>
-            <p style="margin: 6px 0 0 0;">
-              <b>Reason:</b> The President is the nominal head of state and must act on the advice of the Prime Minister and Cabinet. However, the President can exercise independent judgment to send back a non-money bill to Parliament for reconsideration once.
-            </p>
-          </div>
-        </div>
-
-        <!-- Q2 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
-            Q2. Who among the following is a part of the political executive?
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            Answer: Option <b style="color: ${themeColor};">(c) Home Minister.</b>
-            <p style="margin: 6px 0 0 0;">
-              <b>Reason:</b> Ministers are elected representatives of the people who hold political portfolios, forming the political executive. District Collectors, secretaries, and police chiefs are permanent civil servants (permanent executive).
-            </p>
-          </div>
-        </div>
-
-        <!-- Q3 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
-            Q3. Which of the following statements about the judiciary is false?
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            Answer: Option <b style="color: ${themeColor};">(a) Every law passed by the Parliament needs approval of the Supreme Court.</b>
-            <p style="margin: 6px 0 0 0;">
-              <b>Reason:</b> Parliament is the supreme legislative organ and has the power to pass laws. The Supreme Court only intervenes if a law is challenged in court and found to violate the Constitution.
-            </p>
-          </div>
-        </div>
-
-        <!-- Q4 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
-            Q4. Which of the following institutions can make changes to an existing law of the country?
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            Answer: Option <b style="color: ${themeColor};">(d) The Parliament.</b>
-            <p style="margin: 6px 0 0 0;">
-              <b>Reason:</b> Under the Indian Constitution, the Parliament is the sole body authorized to make, modify, or repeal laws.
-            </p>
-          </div>
-        </div>
-
-        <!-- Q5 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
-            Q5. Match the ministry with the news that the ministry may have released:
-          </p>
-          <div style="width: 100%;">
-            <table style="width: 100%; table-layout: fixed; border-collapse: collapse; font-size: 13px; color: #D1D1E9; text-align: left;">
-              <thead>
-                <tr style="border-bottom: 2px solid rgba(156, 39, 176, 0.4); background-color: rgba(156, 39, 176, 0.15);">
-                  <th style="padding: 10px 8px; font-weight: 600; color: #E0E0E0; border: 1px solid rgba(255,255,255,0.08); width: 55%; word-wrap: break-word; white-space: normal;">News Released (Column A)</th>
-                  <th style="padding: 10px 8px; font-weight: 600; color: #E0E0E0; border: 1px solid rgba(255,255,255,0.08); width: 45%; word-wrap: break-word; white-space: normal;">Associated Ministry (Column B)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
-                  <td style="padding: 10px 8px; border: 1px solid rgba(255,255,255,0.08); line-height: 1.4; word-wrap: break-word; white-space: normal;">(a) A new policy is being made to increase jute exports from the country.</td>
-                  <td style="padding: 10px 8px; border: 1px solid rgba(255,255,255,0.08); color: ${themeColor}; font-weight: 600; line-height: 1.4; word-wrap: break-word; white-space: normal;">(iv) Ministry of Commerce and Industry</td>
-                </tr>
-                <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
-                  <td style="padding: 10px 8px; border: 1px solid rgba(255,255,255,0.08); line-height: 1.4; word-wrap: break-word; white-space: normal;">(b) Telephone services will be made more accessible to rural areas.</td>
-                  <td style="padding: 10px 8px; border: 1px solid rgba(255,255,255,0.08); color: ${themeColor}; font-weight: 600; line-height: 1.4; word-wrap: break-word; white-space: normal;">(v) Ministry of Communications and IT</td>
-                </tr>
-                <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
-                  <td style="padding: 10px 8px; border: 1px solid rgba(255,255,255,0.08); line-height: 1.4; word-wrap: break-word; white-space: normal;">(c) The price of rice and wheat sold under the PDS will go down.</td>
-                  <td style="padding: 10px 8px; border: 1px solid rgba(255,255,255,0.08); color: ${themeColor}; font-weight: 600; line-height: 1.4; word-wrap: break-word; white-space: normal;">(ii) Ministry of Agriculture, Food and Public Distribution</td>
-                </tr>
-                <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
-                  <td style="padding: 10px 8px; border: 1px solid rgba(255,255,255,0.08); line-height: 1.4; word-wrap: break-word; white-space: normal;">(d) A pulse polio campaign will be launched.</td>
-                  <td style="padding: 10px 8px; border: 1px solid rgba(255,255,255,0.08); color: ${themeColor}; font-weight: 600; line-height: 1.4; word-wrap: break-word; white-space: normal;">(iii) Ministry of Health</td>
-                </tr>
-                <tr>
-                  <td style="padding: 10px 8px; border: 1px solid rgba(255,255,255,0.08); line-height: 1.4; word-wrap: break-word; white-space: normal;">(e) The allowances of the soldiers posted on high altitudes will be increased.</td>
-                  <td style="padding: 10px 8px; border: 1px solid rgba(255,255,255,0.08); color: ${themeColor}; font-weight: 600; line-height: 1.4; word-wrap: break-word; white-space: normal;">(i) Ministry of Defence</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <!-- Q6 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
-            Q6. Name the institution that exercises powers on each of the following matters:
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
-              <li style="margin-bottom: 10px;">
-                <b>(a) Decision on allocation of money for developing infrastructure like roads, irrigation etc. and different welfare activities for the citizens:</b><br/>
-                Answer: <b style="color: ${themeColor};">The Cabinet / Prime Minister (Executive)</b>
-              </li>
-              <li style="margin-bottom: 10px;">
-                <b>(b) Considers the recommendation of a Committee on a law to regulate the stock exchange:</b><br/>
-                Answer: <b style="color: ${themeColor};">The Parliament (Legislature)</b>
-              </li>
-              <li style="margin-bottom: 10px;">
-                <b>(c) Decides on a legal dispute between two state governments:</b><br/>
-                Answer: <b style="color: ${themeColor};">The Supreme Court of India (Judiciary)</b>
-              </li>
-              <li style="margin-bottom: 0;">
-                <b>(d) Implements the decision to provide relief for the victims of an earthquake:</b><br/>
-                Answer: <b style="color: ${themeColor};">The Civil Servants / Permanent Executive</b>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q7 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
-            Q7. Why is the Prime Minister in India not directly elected by the people? Choose the most appropriate answer and give reasons for your choice.
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            Answer: Option <b style="color: ${themeColor};">(a) In a Parliamentary democracy only the leader of the majority party in the Lok Sabha can become the Prime Minister.</b>
-            <p style="margin: 6px 0 0 0;">
-              <b>Reason:</b> In a parliamentary system, the Prime Minister represents the majority coalition in the legislature. A directly elected Prime Minister without Lok Sabha majority would create a conflict of powers, making it impossible to pass bills or run the government effectively.
-            </p>
-          </div>
-        </div>
-
-        <!-- Q8 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
-            Q8. Reaction to a film showing a hero becoming Chief Minister for a day and making massive changes in the state:
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <b>Reaction:</b> Such films are works of fiction. In real life, a democracy functions based on constitutional procedures and rules, not personal decrees.
-            <ul style="margin: 6px 0 0 0; padding-left: 20px; list-style-type: disc;">
-              <li style="margin-bottom: 6px;"><b>Rizwan's view is correct:</b> Running a government without institutions leads to dictatorship, arbitrary decisions, and instability.</li>
-              <li style="margin-bottom: 0;"><b>Shankar's view is correct:</b> Ministers are policy-makers, but changes must be processed, reviewed, and executed by civil servants. One day is not enough to pass or implement permanent reforms legally.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q9 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
-            Q9. If you had the option to act as a leader in a mock Parliament with a majority in either the Lok Sabha or the Rajya Sabha, which house would you choose and why?
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            Answer: I would choose to have a majority in the <b style="color: ${themeColor};">Lok Sabha</b>.
-            <p style="margin: 6px 0 0 0;">
-              <b>Reasons:</b>
-              (1) The party having a majority in the Lok Sabha forms the government. (2) Lok Sabha holds supreme powers in financial matters (Money Bills). (3) The government can only be dismissed by a No-Confidence Motion passed in the Lok Sabha.
-            </p>
-          </div>
-        </div>
-
-        <!-- Q10 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
-            Q10. Which view is the correct reading of the role of judiciary regarding the reservation case?
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            Answer: <b style="color: ${themeColor};">Anjaiah's view (b) is the correct reading of the judiciary's role.</b>
-            <p style="margin: 6px 0 0 0;">
-              <b>Reason:</b> An independent judiciary is free to give verdicts against government policies. While the Supreme Court upheld the constitutional validity of the reservation order, it independently directed the government to modify it to exclude the creamy layer, showing it did not simply conform to the executive.
-            </p>
-          </div>
-        </div>
-
-      </div>
-    `,
+  "id": "sst-civ-c9-4",
+  "number": 4,
+  "title": "Working of Institutions",
+  "isHtmlView": true,
+  "htmlOverview": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(142, 45, 226, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #8E2DE2; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #8E2DE2; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #E1D4FF; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #E1D4FF; font-weight: 700; }\n  .hl { color: #8E2DE2; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #8E2DE2; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #8E2DE2; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(142, 45, 226, 0.10); border: 1.5px dashed #8E2DE2; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #8E2DE2; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(142, 45, 226, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(142, 45, 226, 0.18); border: 1px solid #8E2DE2; color: #E1D4FF; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(142, 45, 226, 0.2); color: #E1D4FF; }\n  .q-card .q-text, .q-card .sub-q { color: #8E2DE2 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ Chapter at a Glance</div><div class=\"sol-step\"><div class=\"rev\">Democracy is not just about electing rulers; rulers must follow rules and work through <span class=\"hl\">institutions</span>. This chapter studies how major decisions are taken and implemented, and how disputes are settled, through three institutions — the <b>legislature, executive and judiciary</b> — using the Union Government as the example.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 250\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"250\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"20\" font-size=\"11.5\" fill=\"#E1D4FF\" text-anchor=\"middle\" font-weight=\"700\">Three Organs of Government</text><rect x=\"90\" y=\"32\" width=\"140\" height=\"56\" rx=\"8\" fill=\"#4FC3F726\" stroke=\"#4FC3F7\" stroke-width=\"1.4\"/><text x=\"160\" y=\"51\" font-size=\"10.5\" fill=\"#4FC3F7\" text-anchor=\"middle\" font-weight=\"700\">LEGISLATURE</text><text x=\"160\" y=\"66\" font-size=\"8.6\" fill=\"#FFFFFF\" text-anchor=\"middle\">Parliament: President +</text><text x=\"160\" y=\"78\" font-size=\"8.6\" fill=\"#FFFFFF\" text-anchor=\"middle\">Lok Sabha + Rajya Sabha</text><rect x=\"8\" y=\"150\" width=\"148\" height=\"70\" rx=\"8\" fill=\"#FFB74D26\" stroke=\"#FFB74D\" stroke-width=\"1.4\"/><text x=\"82\" y=\"169\" font-size=\"10.5\" fill=\"#FFB74D\" text-anchor=\"middle\" font-weight=\"700\">EXECUTIVE</text><text x=\"82\" y=\"184\" font-size=\"8.6\" fill=\"#FFFFFF\" text-anchor=\"middle\">Political: President, PM,</text><text x=\"82\" y=\"196\" font-size=\"8.6\" fill=\"#FFFFFF\" text-anchor=\"middle\">Council of Ministers</text><text x=\"82\" y=\"210\" font-size=\"8.6\" fill=\"#FFFFFF\" text-anchor=\"middle\">Permanent: civil servants</text><rect x=\"164\" y=\"150\" width=\"148\" height=\"70\" rx=\"8\" fill=\"#66BB6A26\" stroke=\"#66BB6A\" stroke-width=\"1.4\"/><text x=\"238\" y=\"169\" font-size=\"10.5\" fill=\"#66BB6A\" text-anchor=\"middle\" font-weight=\"700\">JUDICIARY</text><text x=\"238\" y=\"184\" font-size=\"8.6\" fill=\"#FFFFFF\" text-anchor=\"middle\">Supreme Court, High Courts,</text><text x=\"238\" y=\"196\" font-size=\"8.6\" fill=\"#FFFFFF\" text-anchor=\"middle\">District and local courts</text><text x=\"238\" y=\"210\" font-size=\"8.6\" fill=\"#FFFFFF\" text-anchor=\"middle\">Independent; judicial review</text><line x1=\"125\" y1=\"90\" x2=\"82\" y2=\"148\" stroke=\"#B0BEC5\" stroke-width=\"1.3\"/><text x=\"96\" y=\"122\" font-size=\"8.2\" fill=\"#CBD5E1\" text-anchor=\"end\">PM needs LS majority</text><line x1=\"195\" y1=\"90\" x2=\"238\" y2=\"148\" stroke=\"#B0BEC5\" stroke-width=\"1.3\"/><text x=\"224\" y=\"122\" font-size=\"8.2\" fill=\"#CBD5E1\">reviews laws</text><line x1=\"156\" y1=\"185\" x2=\"164\" y2=\"185\" stroke=\"#B0BEC5\" stroke-width=\"1.3\"/><text x=\"160\" y=\"242\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"middle\">Make laws · Implement laws · Settle disputes</text></svg></div><div class=\"diagram-caption\">Fig. 1: Legislature, executive and judiciary</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 1. How is a Major Policy Decision Taken?</div><div class=\"sol-step\"><div class=\"pt\"><b>Office Memorandum O.M. No. 36012/31/90-Est (SCT), dated 13 August 1990</b> — signed by a Joint Secretary in the Department of Personnel and Training: <b>27 per cent</b> of vacancies in civil posts and services under the Government of India reserved for the <b>Socially and Educationally Backward Classes (SEBC)</b>. Till then reservation was only for SC and ST.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 414\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"414\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"20\" font-size=\"11.5\" fill=\"#E1D4FF\" text-anchor=\"middle\" font-weight=\"700\">Story of the Reservation Order</text><line x1=\"82\" y1=\"34\" x2=\"82\" y2=\"404\" stroke=\"rgba(142, 45, 226,0.7)\" stroke-width=\"2\"/><circle cx=\"82\" cy=\"39.5\" r=\"4\" fill=\"#E1D4FF\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"73\" y=\"43.0\" font-size=\"9\" fill=\"#E1D4FF\" text-anchor=\"end\" font-weight=\"700\">1979</text><text x=\"94\" y=\"43.0\" font-size=\"9.5\" fill=\"#FFFFFF\">Second Backward Classes Commission</text><text x=\"94\" y=\"55.2\" font-size=\"9.5\" fill=\"#FFFFFF\">appointed, headed by B.P. Mandal</text><text x=\"94\" y=\"67.4\" font-size=\"9.5\" fill=\"#FFFFFF\">(Mandal Commission)</text><circle cx=\"82\" cy=\"92.9\" r=\"4\" fill=\"#E1D4FF\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"73\" y=\"96.4\" font-size=\"9\" fill=\"#E1D4FF\" text-anchor=\"end\" font-weight=\"700\">1980</text><text x=\"94\" y=\"96.4\" font-size=\"9.5\" fill=\"#FFFFFF\">Report submitted; recommends 27%</text><text x=\"94\" y=\"108.6\" font-size=\"9.5\" fill=\"#FFFFFF\">government jobs for SEBC; discussed</text><text x=\"94\" y=\"120.8\" font-size=\"9.5\" fill=\"#FFFFFF\">in Parliament</text><circle cx=\"82\" cy=\"146.3\" r=\"4\" fill=\"#E1D4FF\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"73\" y=\"149.8\" font-size=\"9\" fill=\"#E1D4FF\" text-anchor=\"end\" font-weight=\"700\">1989</text><text x=\"94\" y=\"149.8\" font-size=\"9.5\" fill=\"#FFFFFF\">Janata Dal promises to implement it;</text><text x=\"94\" y=\"162.0\" font-size=\"9.5\" fill=\"#FFFFFF\">wins; V.P. Singh becomes PM</text><circle cx=\"82\" cy=\"187.5\" r=\"4\" fill=\"#E1D4FF\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"73\" y=\"191.0\" font-size=\"9\" fill=\"#E1D4FF\" text-anchor=\"end\" font-weight=\"700\">1990</text><text x=\"94\" y=\"191.0\" font-size=\"9.5\" fill=\"#FFFFFF\">President's address to Parliament</text><text x=\"94\" y=\"203.2\" font-size=\"9.5\" fill=\"#FFFFFF\">announces the intention</text><circle cx=\"82\" cy=\"228.7\" r=\"4\" fill=\"#E1D4FF\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"73\" y=\"232.2\" font-size=\"9\" fill=\"#E1D4FF\" text-anchor=\"end\" font-weight=\"700\">6 Aug 1990</text><text x=\"94\" y=\"232.2\" font-size=\"9.5\" fill=\"#FFFFFF\">Union Cabinet takes the formal</text><text x=\"94\" y=\"244.4\" font-size=\"9.5\" fill=\"#FFFFFF\">decision</text><circle cx=\"82\" cy=\"269.9\" r=\"4\" fill=\"#E1D4FF\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"73\" y=\"273.4\" font-size=\"9\" fill=\"#E1D4FF\" text-anchor=\"end\" font-weight=\"700\">7 Aug 1990</text><text x=\"94\" y=\"273.4\" font-size=\"9.5\" fill=\"#FFFFFF\">PM V.P. Singh informs both Houses</text><circle cx=\"82\" cy=\"298.9\" r=\"4\" fill=\"#E1D4FF\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"73\" y=\"302.4\" font-size=\"9\" fill=\"#E1D4FF\" text-anchor=\"end\" font-weight=\"700\">13 Aug 1990</text><text x=\"94\" y=\"302.4\" font-size=\"9.5\" fill=\"#FFFFFF\">Department of Personnel issues O.M.</text><text x=\"94\" y=\"314.6\" font-size=\"9.5\" fill=\"#FFFFFF\">36012/31/90</text><circle cx=\"82\" cy=\"340.1\" r=\"4\" fill=\"#E1D4FF\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"73\" y=\"343.6\" font-size=\"9\" fill=\"#E1D4FF\" text-anchor=\"end\" font-weight=\"700\">1992</text><text x=\"94\" y=\"343.6\" font-size=\"9.5\" fill=\"#FFFFFF\">Supreme Court (Indira Sawhney case,</text><text x=\"94\" y=\"355.8\" font-size=\"9.5\" fill=\"#FFFFFF\">11 judges) upholds it; asks to</text><text x=\"94\" y=\"368.0\" font-size=\"9.5\" fill=\"#FFFFFF\">exclude well-to-do (creamy layer)</text><circle cx=\"82\" cy=\"393.5\" r=\"4\" fill=\"#E1D4FF\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"73\" y=\"397.0\" font-size=\"9\" fill=\"#E1D4FF\" text-anchor=\"end\" font-weight=\"700\">8 Sep 1993</text><text x=\"94\" y=\"397.0\" font-size=\"9.5\" fill=\"#FFFFFF\">New O.M. issued; dispute ends</text></svg></div><div class=\"diagram-caption\">Fig. 2: From Mandal Commission to the 1993 order</div></div><div class=\"pt\">It was hotly debated: some felt it gave fair opportunity to communities under-represented in government jobs; others felt it denied equality of opportunity or would perpetuate caste feelings. Cases were filed; the Supreme Court bunched them as the <b>‘Indira Sawhney and others Vs Union of India’</b> case.</div><div class=\"sub-q\">Need for political institutions</div><div class=\"pt\">Governing involves security, education, health, taxes, welfare schemes. Some decide, others implement; someone settles disputes; work must continue even if persons change. Such arrangements are <b>institutions</b>.</div><div class=\"pt\"><b>PM and Cabinet</b> take policy decisions; <b>civil servants</b> implement them; the <b>Supreme Court</b> settles disputes.</div><div class=\"pt\">Institutions involve rules, meetings and delays — but they allow wider consultation and make it hard to rush through a bad decision.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 2. Parliament</div><div class=\"sol-step\"><div class=\"pt\">Parliamentary discussion of the Mandal Report shaped and pressured the government; without Parliament's support the government could not have gone ahead.</div><div class=\"sub-q\">Why do we need a Parliament?</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>No.</th><th>Function</th></tr><tr><td>1</td><td>Final authority for <b>making laws</b> — make, change or abolish laws (legislature)</td></tr><tr><td>2</td><td><b>Controls the government</b> — in India, government continues only with Parliament's support</td></tr><tr><td>3</td><td><b>Controls money</b> — public money spent only with its sanction</td></tr><tr><td>4</td><td>Highest forum of <b>discussion and debate</b>; can seek information on any matter</td></tr></table></div><div class=\"sub-q\">Two Houses of Parliament</div><div class=\"pt\">Parliament = <b>President + Council of States (Rajya Sabha) + House of the People (Lok Sabha)</b>. Laws come into force only after the President's assent. ‘Upper’ and ‘Lower’ Chamber is an old style of speaking — not in our Constitution.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>No.</th><th>Why the Lok Sabha is more powerful</th></tr><tr><td>1</td><td>In a difference on an ordinary law, a <b>joint session</b> decides — the larger Lok Sabha usually prevails</td></tr><tr><td>2</td><td><b>Money matters:</b> Rajya Sabha cannot reject the budget or a money bill — only delay it <b>14 days</b> or suggest changes</td></tr><tr><td>3</td><td><b>Controls the Council of Ministers</b> — a ‘no confidence’ vote removes all ministers including the PM; Rajya Sabha lacks this</td></tr></table></div><div class=\"pt\">Rajya Sabha has some special powers over the states.</div><div class=\"sub-q\">A day in the life of the Lok Sabha (7 December 2004)</div><div class=\"pt\">Written answers to about 250 questions; official documents laid; ministers' statements; members raising issues; two bills passed; a long debate on foreign policy — showing law-making, control over the executive and discussion.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 3. Political Executive</div><div class=\"sol-step\"><div class=\"pt\">Functionaries who take day-to-day decisions and execute policies = <b>executive</b>. When we say ‘government’ we usually mean the executive.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Political executive</th><th>Permanent executive</th></tr><tr><td>Elected by the people for a specific period</td><td>Appointed on a long-term basis (civil services)</td></tr><tr><td>Political leaders who take big decisions</td><td>Civil servants who assist in day-to-day administration</td></tr><tr><td>Changes with elections</td><td>Remain even when the ruling party changes</td></tr><tr><td>Final say — represents the will of the people</td><td>More educated, expert knowledge; give advice</td></tr></table></div><div class=\"pt\">The minister decides the overall framework; experts advise. “The experts can tell the route, but someone with a larger view decides the destination.”</div><div class=\"sub-q\">Prime Minister and Council of Ministers</div><div class=\"pt\">No direct election of the PM. The President appoints the <b>leader of the majority party or coalition</b> in the Lok Sabha. No fixed tenure — continues while leader of the majority.</div><div class=\"pt\">Other ministers are appointed on the PM's advice; a non-member must be elected to Parliament within <b>six months</b>. Council of Ministers: usually <b>60 to 80</b> ministers.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Rank</th><th>Role</th></tr><tr><td>Cabinet Ministers</td><td>Top leaders in charge of major ministries; about 25; the inner ring</td></tr><tr><td>Ministers of State (independent charge)</td><td>Smaller ministries; attend Cabinet only when invited</td></tr><tr><td>Ministers of State</td><td>Assist Cabinet Ministers</td></tr></table></div><div class=\"pt\">Decisions are taken in Cabinet meetings — the <b>Cabinet form of government</b>; ministers work as a team (collective responsibility). The <b>Cabinet Secretariat</b> coordinates ministries.</div><div class=\"sub-q\">Powers of the Prime Minister</div><div class=\"pt\">Chairs Cabinet meetings; coordinates departments; final say in disagreements; supervises ministries; distributes work; can dismiss ministers; when the PM quits, the whole ministry quits.</div><div class=\"pt\">PMs control Cabinet and Parliament through the party — sometimes called ‘Prime Ministerial form’ (Nehru, Indira Gandhi). <b>Coalition</b> politics limits the PM, who must accommodate partners.</div><div class=\"sub-q\">The President</div><div class=\"pt\">Head of the <b>State</b> — nominal executive like the Queen of Britain. Elected indirectly by MPs and MLAs, so no direct popular mandate.</div><div class=\"pt\">All laws, decisions, appointments (Chief Justice, judges, Governors, Election Commissioners, ambassadors) and treaties are in the President's name; <b>supreme commander</b> of the defence forces — but acts on the <b>advice of the Council of Ministers</b>; may ask for reconsideration once.</div><div class=\"pt\">Bills become law with assent; can return a bill once, but must sign if passed again.</div><div class=\"pt\"><b>Own discretion:</b> appointing the PM when no party or coalition has a majority — may ask the new PM to prove majority within a time.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Presidential system (USA)</th><th>Parliamentary system (India)</th></tr><tr><td>President is head of state and government</td><td>President is nominal; PM heads government</td></tr><tr><td>Directly elected; fixed four-year term</td><td>PM depends on Lok Sabha majority</td></tr><tr><td>Chooses all ministers; can veto laws</td><td>Parliament is supreme</td></tr></table></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 4. The Judiciary</div><div class=\"sol-step\"><div class=\"pt\">Indian judiciary: <b>Supreme Court</b> for the nation, <b>High Courts</b> in states, <b>District Courts</b> and local courts — an <b>integrated judiciary</b>; Supreme Court decisions bind all courts.</div><div class=\"pt\">It hears disputes between citizens; citizens and government; two or more state governments; Union and state governments. Highest court of appeal in civil and criminal cases.</div><div class=\"pt\"><b>Independence:</b> not under the legislature or executive. Judges of SC and HCs are appointed by the President on the PM's advice in consultation with the Chief Justice — in practice senior judges select new judges. Removal only by an <b>impeachment</b> motion passed by two-thirds of members in both Houses — never happened.</div><div class=\"pt\"><b>Powers:</b> interpret the Constitution; declare laws or executive actions invalid — <b>judicial review</b>; the core/basic principles of the Constitution cannot be changed by Parliament; guardian of Fundamental Rights; <b>public interest litigation</b>.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 5. Key Terms (Glossary)</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Term</th><th>Meaning</th></tr><tr><td>Coalition government</td><td>Government formed by an alliance of two or more parties</td></tr><tr><td>Executive</td><td>Persons with authority to initiate policies, decide and implement them</td></tr><tr><td>Government</td><td>Institutions that make, implement and interpret laws</td></tr><tr><td>Judiciary</td><td>All courts; institution that administers justice</td></tr><tr><td>Legislature</td><td>Assembly of representatives with power to make laws, raise taxes, adopt budget</td></tr><tr><td>Office Memorandum</td><td>Communication stating a policy or decision of government</td></tr><tr><td>Political institution</td><td>Procedures regulating the conduct of government and politics</td></tr><tr><td>Reservations</td><td>Positions in jobs and education reserved for disadvantaged communities</td></tr><tr><td>State</td><td>Political association with territory, organised government and sovereign power</td></tr></table></div><div class=\"exam\"><span class=\"exam-t\">📌 Exam Focus</span><div>• Story of the Mandal reservation order</div><div>• Functions of Parliament; why Lok Sabha is more powerful</div><div>• Political vs permanent executive; PM and Council of Ministers</div><div>• Powers of the President</div><div>• Independence and powers of the judiciary</div></div></div>\n  </div>\n</div>",
+  "htmlExercises": {
+    "sc9-4-ex-q": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(142, 45, 226, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #8E2DE2; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #8E2DE2; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #E1D4FF; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #E1D4FF; font-weight: 700; }\n  .hl { color: #8E2DE2; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #8E2DE2; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #8E2DE2; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(142, 45, 226, 0.10); border: 1.5px dashed #8E2DE2; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #8E2DE2; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(142, 45, 226, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(142, 45, 226, 0.18); border: 1px solid #8E2DE2; color: #E1D4FF; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(142, 45, 226, 0.2); color: #E1D4FF; }\n  .q-card .q-text, .q-card .sub-q { color: #8E2DE2 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">If you are elected as the President of India which of the following decision can you take on your own?<br/>a. Select the person you like as Prime Minister.<br/>b. Dismiss a Prime Minister who has a majority in Lok Sabha.<br/>c. Ask for reconsideration of a bill passed by both the Houses.<br/>d. Nominate the leaders of your choice to the Council of Ministers.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">(c)</span></div><div class=\"rev\">The President can send a bill back once for reconsideration. The other actions need the PM's advice or a Lok Sabha majority.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Who among the following is a part of the political executive?<br/>a. District Collector b. Secretary of the Ministry of Home Affairs c. Home Minister d. Director General of Police</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">(c) Home Minister</span></div><div class=\"rev\">The others are civil servants — the permanent executive.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Which of the following statements about the judiciary is false?<br/>a. Every law passed by the Parliament needs approval of the Supreme Court<br/>b. Judiciary can strike down a law if it goes against the spirit of the Constitution<br/>c. Judiciary is independent of the Executive<br/>d. Any citizen can approach the courts if her rights are violated</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">(a)</span></div><div class=\"rev\">Laws need the President's assent, not the Supreme Court's approval; the Court reviews a law only when it is challenged.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">Which of the following institutions can make changes to an existing law of the country?<br/>a. The Supreme Court b. The President c. The Prime Minister d. The Parliament</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">(d) The Parliament</span></div><div class=\"rev\">Parliament is the final authority for making, changing or abolishing laws.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5.</div>\n    <div class=\"q-text\">Match the ministry with the news that the ministry may have released:</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>News</th><th>Ministry</th></tr><tr><td>a. New policy to increase jute exports</td><td><b>iv.</b> Ministry of Commerce and Industry</td></tr><tr><td>b. Telephone services more accessible to rural areas</td><td><b>v.</b> Ministry of Communications and Information Technology</td></tr><tr><td>c. Price of rice and wheat under PDS will go down</td><td><b>ii.</b> Ministry of Agriculture, Food and Public Distribution</td></tr><tr><td>d. A pulse polio campaign will be launched</td><td><b>iii.</b> Ministry of Health</td></tr><tr><td>e. Allowances of soldiers at high altitudes increased</td><td><b>i.</b> Ministry of Defence</td></tr></table></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q6.</div>\n    <div class=\"q-text\">Of all the institutions that we have studied in this chapter, name the one that exercises the powers on each of the following matters.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Matter</th><th>Institution</th></tr><tr><td>a. Allocation of money for infrastructure and welfare</td><td><b>Parliament</b> (it controls public money and passes the budget)</td></tr><tr><td>b. Considers a committee's recommendation on a law to regulate the stock exchange</td><td><b>Parliament</b> (law-making)</td></tr><tr><td>c. Decides a legal dispute between two state governments</td><td><b>Supreme Court</b></td></tr><tr><td>d. Implements the decision to provide relief to earthquake victims</td><td><b>Permanent executive</b> (civil servants)</td></tr></table></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q7.</div>\n    <div class=\"q-text\">Why is the Prime Minister in India not directly elected by the people? Choose the most appropriate answer and give reasons for your choice.<br/>a. In a Parliamentary democracy only the leader of the majority party in the Lok Sabha can become the Prime Minister.<br/>b. Lok Sabha can remove the Prime Minister and the Council of Ministers even before the expiry of their term.<br/>c. Since the Prime Minister is appointed by the President there is no need for it.<br/>d. Direct election of the Prime Minister will involve lot of expenditure on election.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">(a)</span></div><div class=\"rev\">In a parliamentary system the PM must command a majority in the Lok Sabha, so the leader of the majority party or coalition is appointed. (b) is true but is a consequence, not the reason; (c) and (d) are not the real reasons.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q8.</div>\n    <div class=\"q-text\">Three friends went to watch a film that showed the hero becoming Chief Minister for a day and making big changes in the state. Imran said this is what the country needs. Rizwan said this kind of a personal rule without institutions is dangerous. Shankar said all this is a fantasy. No minister can do anything in one day. What would be your reaction to such a film?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">I would agree with <b>Rizwan</b> and partly with <b>Shankar</b>. Quick decisions by one person may look attractive, but without institutions there is no consultation, no checks and no correction — the same power can be misused. Real decisions go through the Cabinet, Parliament and civil servants, and can be reviewed by courts; this takes time, but it makes it hard to rush a bad decision. The film is entertaining, but it is a fantasy and not a model for democracy.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q9.</div>\n    <div class=\"q-text\">A teacher was making preparations for a mock parliament. She called two students to act as leaders of two political parties. She gave them an option: Each one could choose to have a majority either in the mock Lok Sabha or in the mock Rajya Sabha. If this choice was given to you, which one would you choose and why?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"ans-box\"><span class=\"ans-label\">✓ </span><span class=\"ans-val\">Majority in the Lok Sabha</span></div><div class=\"pt\">Only the leader with Lok Sabha majority can become Prime Minister and form the government.</div><div class=\"pt\">The Lok Sabha controls money bills — the Rajya Sabha can only delay them by 14 days.</div><div class=\"pt\">In a joint session, the larger Lok Sabha's view usually prevails; and only the Lok Sabha can pass a no-confidence motion.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q10.</div>\n    <div class=\"q-text\">After reading the example of the reservation order, three students had different reactions about the role of the judiciary. Which view, according to you, is a correct reading of the role of judiciary?<br/>a. Srinivas: since the Supreme Court agreed with the government, it is not independent.<br/>b. Anjaiah: judiciary is independent because it could have given a verdict against the government order. The Supreme Court did direct the government to modify it.<br/>c. Vijaya: the judiciary is neither independent nor conformist, but acts as a mediator between opposing parties.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"ans-box\"><span class=\"ans-label\">✓ </span><span class=\"ans-val\">Anjaiah's view (b)</span></div><div class=\"rev\">Agreeing with the government does not mean dependence. The Court examined the order independently, could have struck it down, and in fact directed the government to exclude the well-to-do (creamy layer) — which shows its independence.</div></div></div>\n  </div>\n</div>",
+    "sc9-4-ex-cp": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(142, 45, 226, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #8E2DE2; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #8E2DE2; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #E1D4FF; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #E1D4FF; font-weight: 700; }\n  .hl { color: #8E2DE2; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #8E2DE2; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #8E2DE2; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(142, 45, 226, 0.10); border: 1.5px dashed #8E2DE2; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #8E2DE2; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(142, 45, 226, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(142, 45, 226, 0.18); border: 1px solid #8E2DE2; color: #E1D4FF; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(142, 45, 226, 0.2); color: #E1D4FF; }\n  .q-card .q-text, .q-card .sub-q { color: #8E2DE2 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Who did what in this case of reservations for backward classes?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Institution</th><th>Role</th></tr><tr><td>Supreme Court</td><td>Upheld reservations as valid</td></tr><tr><td>Cabinet</td><td>Took the decision to give 27% job reservations</td></tr><tr><td>President</td><td>Made formal announcement about this decision</td></tr><tr><td>Government officials</td><td>Implemented the decision by issuing an order</td></tr></table></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Eliamma, Annakutti and Marymol read the section on the President. Help them answer their questions.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">Eliamma: What happens if the President and the Prime Minister disagree about some policy? Does the view of the PM always prevail?</div><div class=\"pt\">The President can ask the Council of Ministers to reconsider its advice once; if the same advice is given again, she must act on it. So, finally, the PM's (Cabinet's) view prevails.</div><div class=\"sub-q\">Annakutti: What is the point in making the President the Supreme Commander of the Armed Forces?</div><div class=\"pt\">It is a formal position: it keeps the armed forces under civilian, constitutional authority, above party politics. Real decisions are taken by the elected government.</div><div class=\"sub-q\">Marymol: What is the point in having a President at all if all the real powers are with the PM?</div><div class=\"pt\">The President is the head of the State who represents the whole nation, supervises institutions so they work in harmony, and acts on her own discretion when no party has a majority — a guardian of the Constitution.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Give one reason each to argue that Indian judiciary is independent with respect to:</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Aspect</th><th>Reason</th></tr><tr><td>Appointment of judges</td><td>In practice senior judges of the Supreme Court select new judges; little scope for political interference</td></tr><tr><td>Removal of judges</td><td>Only by impeachment passed separately by two-thirds of both Houses — has never happened</td></tr><tr><td>Powers of the judiciary</td><td>Can declare laws and executive actions invalid (judicial review)</td></tr></table></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">Recall: The Report of the Mandal Commission was discussed …; the President of India mentioned this in his …; the Prime Minister made a …</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">…discussed <b>in the Parliament</b>.</div><div class=\"pt\">…mentioned this in his <b>address to the Parliament</b>.</div><div class=\"pt\">…made a <b>statement in both the Houses of Parliament</b>.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5.</div>\n    <div class=\"q-text\">Recall the key differences between the Lok Sabha and the Rajya Sabha.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Question</th><th>Lok Sabha</th><th>Rajya Sabha</th></tr><tr><td>Total number of members</td><td>543 elected (Chapter 3)</td><td>Up to 250 (mostly elected by state assemblies; some nominated)</td></tr><tr><td>Who elects members</td><td>Directly by the people</td><td>Indirectly by elected MLAs</td></tr><tr><td>Term</td><td>5 years</td><td>Members serve 6 years</td></tr><tr><td>Dissolved or permanent</td><td>Can be dissolved</td><td>Permanent; one-third members retire every 2 years</td></tr></table></div><div class=\"rev\"><i>The Rajya Sabha figures are from general knowledge; the chapter asks you to recall them.</i></div></div></div>\n  </div>\n</div>",
+    "sc9-4-ex-cart": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(142, 45, 226, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #8E2DE2; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #8E2DE2; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #E1D4FF; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #E1D4FF; font-weight: 700; }\n  .hl { color: #8E2DE2; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #8E2DE2; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #8E2DE2; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(142, 45, 226, 0.10); border: 1.5px dashed #8E2DE2; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #8E2DE2; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(142, 45, 226, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(142, 45, 226, 0.18); border: 1px solid #8E2DE2; color: #E1D4FF; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(142, 45, 226, 0.2); color: #E1D4FF; }\n  .q-card .q-text, .q-card .sub-q { color: #8E2DE2 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\"><div class=\"q-title\">✦ Cartoons and Images</div><div class=\"sol-step\"><div class=\"rev\"><i>Look at each picture in your textbook; these answers are based on the textbook captions.</i></div></div></div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Read the image: Reservation debate was such an important issue during 1990-91 that advertisers used this theme to sell their products. Can you spot some references to political events and debates in these Amul Butter hoardings?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">Yes. “No reservation for this quota” and “Reserved for this Outstanding Butter Classic” play on the reservation (quota) debate; “The riot taste” refers to the protests and riots over it. Advertisers used the burning issue of the day to catch attention.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Read the cartoon: The race to become minister is not new. Here is a cartoon depicting ministerial aspirants waiting to get a berth in Nehru's Cabinet after the 1962 elections (titled ‘Addition and Subtraction’). Why do you think political leaders are so keen to become ministers?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">Ministers have real power to take decisions and control large budgets, enjoy status and publicity, and can help their supporters and constituency. That is why many leaders crowd around the PM — and the PM must ‘add and subtract’ names.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Read the cartoon: This cartoon depicts a cabinet meeting chaired by Prime Minister Indira Gandhi in early 1970s, at the peak of her popularity. Do you think similar cartoons could be drawn about other prime ministers who followed her?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">It shows one dominant leader with other ministers reduced to a silent role. Similar cartoons could be drawn about other popular PMs with strong majorities; in coalition governments the PM must accommodate partners, so such a picture fits less well.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">Read the cartoon: It is quite common in the US for judges to be nominated on the basis of well-known political opinions and affiliations. This fictitious advertisement appeared in the US in 2005 (“Wanted Supreme Court Justice … Must be able to say things like ‘The President is the most brilliant person I've ever met’…”). What does this cartoon say about the independence of the judiciary? Why do such cartoons not appear in our country? Does this demonstrate the independence of our judiciary?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">It mocks the idea that US judges may be chosen for loyalty to the President rather than ability, which weakens independence. Such cartoons are rare in India because judges are in practice selected by senior judges, with little political interference — this does show the independence of our judiciary.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5.</div>\n    <div class=\"q-text\">Read the image: The President, Shri Pranab Mukherjee administering the oath of office of the Prime Minister to Shri Narendra Modi at Rashtrapati Bhavan on 26 May 2014.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">It shows that the President formally appoints the PM — the leader who enjoys majority support in the Lok Sabha — and administers the oath of office.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q6.</div>\n    <div class=\"q-text\">Cartoon on Parliament (two people pointing to the Parliament building): Try to imagine what Parliament could have done if it did not approve of the Cabinet's decision.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">Parliament could have debated and opposed it, refused to pass related laws or money, and the Lok Sabha could even have passed a no-confidence motion to remove the government.</div></div></div>\n  </div>\n</div>",
+    "sc9-4-ex-act": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(142, 45, 226, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #8E2DE2; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #8E2DE2; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #E1D4FF; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #E1D4FF; font-weight: 700; }\n  .hl { color: #8E2DE2; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #8E2DE2; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #8E2DE2; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(142, 45, 226, 0.10); border: 1.5px dashed #8E2DE2; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #8E2DE2; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(142, 45, 226, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(142, 45, 226, 0.18); border: 1px solid #8E2DE2; color: #E1D4FF; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(142, 45, 226, 0.2); color: #E1D4FF; }\n  .q-card .q-text, .q-card .sub-q { color: #8E2DE2 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Activity: Which points, other than the ones mentioned, do you recall about these institutions from the previous class? Can you think of a major decision made by your state government? How were the Governor, the Council of Ministers, the state assembly and the courts involved in that decision?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\"><i>Guidance:</i> Pick a decision of your UT/state (e.g. a new scheme or law). Note: the <b>Council of Ministers</b> decided it; the <b>assembly</b> debated and passed the law or budget; the <b>Governor / Lieutenant Governor</b> gave assent; <b>courts</b> heard any challenge. (In the UT of J&K, the Lieutenant Governor plays the Governor's role.)</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Activity: When Parliament is in session, watch the proceedings on Doordarshan (Sansad TV) or read about them, and note: powers of the two Houses; role of the Speaker; role of the Opposition.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Note</th><th>What to look for</th></tr><tr><td>Powers of the two Houses</td><td>Bills passed, budget discussion, questions to ministers</td></tr><tr><td>Role of the Speaker</td><td>Conducts proceedings, keeps order, decides who speaks</td></tr><tr><td>Role of the Opposition</td><td>Asks questions, criticises policies, walkouts, debates</td></tr></table></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Activity: List the names of five Cabinet Ministers and their ministries each at the Union level and in your state. Meet the Mayor or Municipal Chairperson of your town or the President of Zilla Parishad of your district and ask about how the city, town or district is administered.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\"><i>Guidance:</i> Use the official websites (pmindia.gov.in, your state/UT portal) for the current list, as ministers change. Ask the local head about elected members, officials, funds and main problems.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">Activity: Follow the news about any major court case in a High Court or the Supreme Court. What was the original verdict? Did the High Court or the Supreme Court change it? What was the reason?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\"><i>Guidance:</i> Note the parties, the lower court's verdict, the appeal, the higher court's judgment and its reasons. This shows the integrated judiciary — appeals go up to the Supreme Court.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5.</div>\n    <div class=\"q-text\">Let us read newspapers: Collect newspapers for the last one week and classify the news related to the working of the institutions into four groups.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Group</th><th>Example of news</th></tr><tr><td>Legislatures</td><td>Bill passed, debate, question hour</td></tr><tr><td>Political executive</td><td>Cabinet decision, minister's announcement</td></tr><tr><td>Civil services</td><td>Collector's order, implementation of a scheme</td></tr><tr><td>Judiciary</td><td>Court judgment, public interest litigation</td></tr></table></div></div></div>\n  </div>\n<div class=\"sec\">Think About It (margin questions)</div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q6.</div>\n    <div class=\"q-text\">Is every Office Memorandum a major political decision? If not, what made this one different?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">No. The government issues hundreds of routine orders daily. This one announced a major policy — 27% reservation for backward classes — affecting thousands of jobs and the whole country.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q7.</div>\n    <div class=\"q-text\">Now I can see clearly! That is why they talk of Mandalisation of politics. Don't they?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">Yes. After the Mandal order, caste-based reservation and backward-class politics became central to Indian politics — popularly called ‘Mandalisation’.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q8.</div>\n    <div class=\"q-text\">Which institutions are at work in the running of your school? Would it be better if one person alone took all the decisions regarding management of your school?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">Principal, staff meetings, school management committee, parent–teacher association, student council. One person deciding alone may be quicker but would ignore others' views and could make mistakes; institutions allow consultation.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q9.</div>\n    <div class=\"q-text\">What is the point in having so much debate and discussion in the Parliament when we know that the view of the ruling party is going to prevail?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">Debate exposes mistakes, informs the public, brings the opposition's views into the record, and often makes the government modify its proposals. It keeps the government accountable.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q10.</div>\n    <div class=\"q-text\">Why does this book refer to the President as ‘she’? Have we ever had a woman President in our country? Did you protest when the book referred to the PM as ‘he’? Have we not had a woman PM? Why should we assume that all important positions are held by men?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">To show that any position can be held by a woman. India has had women Presidents — Pratibha Patil and Droupadi Murmu — and a woman Prime Minister, Indira Gandhi. We should not assume that only men hold high offices.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q11.</div>\n    <div class=\"q-text\">What is better for a democracy: A Prime Minister who can do whatever he wishes or a Prime Minister who needs to consult other leaders and parties?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">A PM who consults others. Consultation improves decisions, respects different views and prevents misuse of power — the spirit of democracy.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q12.</div>\n    <div class=\"q-text\">Why are people allowed to go to courts against the government's decisions?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">To protect their rights and ensure the government acts within the Constitution and law. Courts can stop misuse of power — that is why the judiciary enjoys people's confidence.</div></div></div>\n  </div>\n</div>"
   },
-  exercises: [
+  "introduction": "This chapter explores how major policy decisions are taken and implemented in India. It describes the roles and functions of the three key institutions of democracy: the Legislature (Parliament), the Executive (Prime Minister and Ministers), and the Judiciary (Courts).",
+  "definitions": [],
+  "keyPoints": [],
+  "formulas": [],
+  "crux": [],
+  "mcqs": [
     {
-      id: "ex-sst-qa",
-      name: "Q & A",
-      questions: [],
+      "id": "sst-civ-c9-4-mcq-1",
+      "question": "<div style='text-align: justify;'>The Office Memorandum on 27% reservation for SEBC was issued on —</div>",
+      "options": [
+        "A):   6 August 1990",
+        "B):   13 August 1990",
+        "C):   8 September 1993",
+        "D):   31 December 1980"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>O.M. No. 36012/31/90-Est (SCT).</div>"
     },
+    {
+      "id": "sst-civ-c9-4-mcq-2",
+      "question": "<div style='text-align: justify;'>The Second Backward Classes Commission was headed by —</div>",
+      "options": [
+        "A):   V.P. Singh",
+        "B):   Indira Sawhney",
+        "C):   B.P. Mandal",
+        "D):   B.R. Ambedkar"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Hence it was called the Mandal Commission.</div>"
+    },
+    {
+      "id": "sst-civ-c9-4-mcq-3",
+      "question": "<div style='text-align: justify;'>The Mandal Commission recommended that what share of government jobs be reserved for SEBC?</div>",
+      "options": [
+        "A):   27 per cent",
+        "B):   15 per cent",
+        "C):   50 per cent",
+        "D):   33 per cent"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>It gave its report in 1980.</div>"
+    },
+    {
+      "id": "sst-civ-c9-4-mcq-4",
+      "question": "<div style='text-align: justify;'>Who was the Prime Minister when the reservation order was issued in 1990?</div>",
+      "options": [
+        "A):   Rajiv Gandhi",
+        "B):   Indira Gandhi",
+        "C):   Narasimha Rao",
+        "D):   V.P. Singh"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>He led the Janata Dal government.</div>"
+    },
+    {
+      "id": "sst-civ-c9-4-mcq-5",
+      "question": "<div style='text-align: justify;'>The Supreme Court case on the reservation order was known as —</div>",
+      "options": [
+        "A):   Kesavananda Bharati case",
+        "B):   Indira Sawhney and others Vs Union of India",
+        "C):   Mandal Vs Union of India",
+        "D):   Golaknath case"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Eleven judges heard it.</div>"
+    },
+    {
+      "id": "sst-civ-c9-4-mcq-6",
+      "question": "<div style='text-align: justify;'>The Supreme Court upheld the reservation order in —</div>",
+      "options": [
+        "A):   1990",
+        "B):   1993",
+        "C):   1992",
+        "D):   1989"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>It asked to exclude the well-to-do among backward classes.</div>"
+    },
+    {
+      "id": "sst-civ-c9-4-mcq-7",
+      "question": "<div style='text-align: justify;'>The Rajya Sabha can delay a money bill for at most —</div>",
+      "options": [
+        "A):   14 days",
+        "B):   6 months",
+        "C):   30 days",
+        "D):   1 year"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>It cannot reject a money bill.</div>"
+    },
+    {
+      "id": "sst-civ-c9-4-mcq-8",
+      "question": "<div style='text-align: justify;'>If the two Houses differ on an ordinary law, the decision is taken in a —</div>",
+      "options": [
+        "A):   Supreme Court",
+        "B):   Cabinet meeting",
+        "C):   referendum",
+        "D):   joint session"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>The Lok Sabha's view is likely to prevail there.</div>"
+    },
+    {
+      "id": "sst-civ-c9-4-mcq-9",
+      "question": "<div style='text-align: justify;'>A no-confidence motion that removes the Council of Ministers can be passed by —</div>",
+      "options": [
+        "A):   the Rajya Sabha",
+        "B):   the Lok Sabha",
+        "C):   the President",
+        "D):   the Supreme Court"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>The Rajya Sabha does not have this power.</div>"
+    },
+    {
+      "id": "sst-civ-c9-4-mcq-10",
+      "question": "<div style='text-align: justify;'>Civil servants form the —</div>",
+      "options": [
+        "A):   political executive",
+        "B):   legislature",
+        "C):   permanent executive",
+        "D):   judiciary"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>They remain even when the ruling party changes.</div>"
+    },
+    {
+      "id": "sst-civ-c9-4-mcq-11",
+      "question": "<div style='text-align: justify;'>A non-member appointed minister must be elected to Parliament within —</div>",
+      "options": [
+        "A):   six months",
+        "B):   one year",
+        "C):   three months",
+        "D):   five years"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Otherwise he or she must quit.</div>"
+    },
+    {
+      "id": "sst-civ-c9-4-mcq-12",
+      "question": "<div style='text-align: justify;'>The Council of Ministers usually has —</div>",
+      "options": [
+        "A):   10 to 15 ministers",
+        "B):   25 ministers",
+        "C):   543 ministers",
+        "D):   60 to 80 ministers"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>The Cabinet is about 25 of them.</div>"
+    },
+    {
+      "id": "sst-civ-c9-4-mcq-13",
+      "question": "<div style='text-align: justify;'>The inner ring of the Council of Ministers is the —</div>",
+      "options": [
+        "A):   Ministers of State",
+        "B):   Cabinet",
+        "C):   Cabinet Secretariat",
+        "D):   Lok Sabha"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Cabinet Ministers head the major ministries.</div>"
+    },
+    {
+      "id": "sst-civ-c9-4-mcq-14",
+      "question": "<div style='text-align: justify;'>The President of India is elected by —</div>",
+      "options": [
+        "A):   all adult citizens",
+        "B):   the Lok Sabha only",
+        "C):   elected MPs and MLAs",
+        "D):   the Supreme Court judges"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>So she has no direct popular mandate.</div>"
+    },
+    {
+      "id": "sst-civ-c9-4-mcq-15",
+      "question": "<div style='text-align: justify;'>The President can act on her own discretion when —</div>",
+      "options": [
+        "A):   no party or coalition gets a majority in the Lok Sabha",
+        "B):   Parliament passes a bill twice",
+        "C):   the PM gives advice",
+        "D):   ministers disagree"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>She appoints the leader most likely to secure majority support.</div>"
+    },
+    {
+      "id": "sst-civ-c9-4-mcq-16",
+      "question": "<div style='text-align: justify;'>The country where the President is both head of state and head of government is —</div>",
+      "options": [
+        "A):   India",
+        "B):   Britain",
+        "C):   Pakistan",
+        "D):   the USA"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>It is called the presidential form of government.</div>"
+    },
+    {
+      "id": "sst-civ-c9-4-mcq-17",
+      "question": "<div style='text-align: justify;'>A judge of the Supreme Court can be removed only by —</div>",
+      "options": [
+        "A):   the Prime Minister",
+        "B):   an impeachment motion passed by two-thirds of both Houses",
+        "C):   the President on her own",
+        "D):   the Chief Justice"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>It has never happened in India.</div>"
+    },
+    {
+      "id": "sst-civ-c9-4-mcq-18",
+      "question": "<div style='text-align: justify;'>The power of courts to examine the constitutional validity of laws is called —</div>",
+      "options": [
+        "A):   impeachment",
+        "B):   public interest litigation",
+        "C):   judicial review",
+        "D):   no-confidence"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Courts can declare such laws invalid.</div>"
+    },
+    {
+      "id": "sst-civ-c9-4-mcq-19",
+      "question": "<div style='text-align: justify;'>Assertion (A): The minister, not the civil servant, has the final say in decisions. Reason (R): In a democracy the will of the people is supreme and the minister is the elected representative.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>The minister is answerable to the people.</div>"
+    },
+    {
+      "id": "sst-civ-c9-4-mcq-20",
+      "question": "<div style='text-align: justify;'>Assertion (A): The Rajya Sabha is more powerful than the Lok Sabha because it is called the Upper Chamber. Reason (R): The Lok Sabha controls the Council of Ministers.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>‘Upper Chamber’ is only an old style of speaking; the Lok Sabha is more powerful.</div>"
+    }
   ],
+  "summary": [],
+  "exercises": [
+    {
+      "id": "sc9-4-ex-q",
+      "name": "Questions",
+      "questions": []
+    },
+    {
+      "id": "sc9-4-ex-cp",
+      "name": "Check Progress",
+      "questions": []
+    },
+    {
+      "id": "sc9-4-ex-cart",
+      "name": "Cartoons",
+      "questions": []
+    },
+    {
+      "id": "sc9-4-ex-act",
+      "name": "Activities",
+      "questions": []
+    }
+  ],
+  "examples": []
 };
