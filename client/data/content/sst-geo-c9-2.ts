@@ -1,255 +1,286 @@
 import { ChapterContent } from "../types";
 
-const themeColor = "#26C6DA";
-
 export const sstGeoC92: ChapterContent = {
-  id: "sst-geo-c9-2",
-  number: 2,
-  title: "Physical Features of India",
-  isHtmlView: true,
-  htmlOverview: `
-    <div style="padding: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: transparent;">
-      <!-- Key Concepts Introduction -->
-      <div style="background-color: #1E1E2E; border: 1px solid rgba(38, 198, 218, 0.25); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 20px; font-weight: 700; margin-top: 0; margin-bottom: 12px; display: flex; align-items: center;">
-          <span style="margin-right: 8px; font-size: 22px;">⛰️</span> Introduction
-        </h3>
-        <p style="color: #E0E0E0; font-size: 15px; line-height: 1.6; text-align: justify; margin: 0; font-weight: 300;">
-          India is a vast country with varied landforms. Geologically, the Peninsular Plateau constitutes one of the ancient landmasses, whereas the Himalayas represent young, unstable fold mountain structures with high peaks and deep valleys. This chapter explores the six distinct physiographic divisions that define India's relief.
-        </p>
-      </div>
-
-      <!-- Key Milestones (Important Points) -->
-      <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 600; margin-top: 0; margin-bottom: 14px; display: flex; align-items: center;">
-          <span style="margin-right: 8px; font-size: 18px;">📌</span> Key Points
-        </h3>
-        <ul style="color: #B3B3C6; font-size: 14.5px; line-height: 1.7; margin: 0; padding-left: 20px; text-align: justify;">
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">The Himalayan Mountains:</b> West-east trending fold mountains divided into three parallel ranges: <b>Himadri</b> (highest/Inner), <b>Himachal</b> (Lesser), and <b>Shiwaliks</b> (outermost).</li>
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">The Northern Plains:</b> Formed by the Indus, Ganga, and Brahmaputra rivers. It features distinct soil zones: <b>Bhabar</b> (pebbles), <b>Terai</b> (swampy), <b>Bhangar</b> (old alluvium), and <b>Khadar</b> (new fertile alluvium).</li>
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">The Peninsular Plateau:</b> A tableland composed of old crystalline, igneous, and metamorphic rocks. It consists of the <b>Central Highlands</b> and the <b>Deccan Plateau</b>.</li>
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">Ghats Comparison:</b> The <b>Western Ghats</b> are continuous and higher (highest peak Anamudi), whereas the <b>Eastern Ghats</b> are broken, lower, and intersected by east-flowing rivers (highest peak Mahendragiri).</li>
-          <li style="margin-bottom: 0;"><b style="color: ${themeColor};">The Desert & Islands:</b> The Thar Desert features sand dunes (barchans) and low rainfall. India's islands include the coral-origin <b>Lakshadweep</b> and volcanic-origin <b>Andaman & Nicobar</b>.</li>
-        </ul>
-      </div>
-      
-      <!-- Key Terms Glossy Box -->
-      <div style="background: rgba(38, 198, 218, 0.05); border: 1.5px solid rgba(38, 198, 218, 0.25); border-radius: 16px; padding: 20px; box-shadow: 0 4px 30px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 600; margin-top: 0; margin-bottom: 12px;">🔑 Key Terms to Remember</h3>
-        <div style="color: #E0E0E0; font-size: 14px; line-height: 1.6; text-align: justify;">
-          <p style="margin-top: 0; margin-bottom: 8px;"><b style="color: ${themeColor};">Fold Mountains:</b> Mountains created by the folding of Earth's crust layers, such as the Himalayas.</p>
-          <p style="margin-bottom: 8px;"><b style="color: ${themeColor};">Duns:</b> Longitudinal valleys lying between the Lesser Himalayas and the Shiwalik ranges (e.g., Dehradun).</p>
-          <p style="margin-bottom: 8px;"><b style="color: ${themeColor};">Barchans:</b> Crescent-shaped sand dunes formed by wind action in desert areas.</p>
-          <p style="margin-bottom: 0;"><b style="color: ${themeColor};">Corals:</b> Microscopic organisms whose calcareous skeletons form massive reefs and islands in shallow waters.</p>
-        </div>
-      </div>
-    </div>
-  `,
-  htmlExercises: {
-    "ex-sst-qa": `
-      <div style="padding: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: transparent;">
-        <!-- Q1 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q1. Choose the right answer from the four alternatives given below.</p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
-              <li style="margin-bottom: 10px;">
-                <b>(i) A landmass bounded by sea on three sides is referred to as:</b><br/>
-                Answer: <b style="color: ${themeColor};">(c) Peninsula</b>
-              </li>
-              <li style="margin-bottom: 10px;">
-                <b>(ii) Mountain ranges in the eastern part of India forming its boundary with Myanmar are collectively called:</b><br/>
-                Answer: <b style="color: ${themeColor};">(c) Purvachal</b>
-              </li>
-              <li style="margin-bottom: 10px;">
-                <b>(iii) The western coastal strip, south of Goa is referred to as:</b><br/>
-                Answer: <b style="color: ${themeColor};">(c) Kannad</b>
-              </li>
-              <li style="margin-bottom: 0;">
-                <b>(iv) The highest peak in the Eastern Ghats is:</b><br/>
-                Answer: <b style="color: ${themeColor};">(c) Mahendragiri</b> (Anamudi is in Western Ghats, Kanchenjunga is in Himalayas).
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q2 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q2. Answer the following questions briefly.</p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
-              <li style="margin-bottom: 10px;">
-                <b>(i) What is the bhabar?</b><br/>
-                The <b style="color: ${themeColor};">Bhabar</b> is a narrow belt (8 to 16 km wide) covered with pebbles along the Shiwalik foothills. Streams often disappear underground in this zone.
-              </li>
-              <li style="margin-bottom: 10px;">
-                <b>(ii) Name the three major divisions of the Himalayas from north to south:</b><br/>
-                The divisions are: (1) <b style="color: ${themeColor};">Himadri</b> (Great/Inner Himalayas), (2) <b style="color: ${themeColor};">Himachal</b> (Lesser Himalayas), and (3) <b style="color: ${themeColor};">Shiwaliks</b> (Outer Himalayas).
-              </li>
-              <li style="margin-bottom: 10px;">
-                <b>(iii) Which plateau lies between the Aravali and the Vindhyan ranges?</b><br/>
-                The <b style="color: ${themeColor};">Malwa Plateau</b> lies between the Aravali and Vindhyan ranges.
-              </li>
-              <li style="margin-bottom: 0;">
-                <b>(iv) Name the island group of India having coral origin:</b><br/>
-                The <b style="color: ${themeColor};">Lakshadweep Islands</b> are of coral origin.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q3 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q3. Distinguish between: (i) Bhangar and Khadar, (ii) Western Ghats and Eastern Ghats.</p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <!-- Bhangar vs Khadar -->
-            <p style="color: ${themeColor}; font-weight: bold; margin: 0 0 6px 0;">(i) Bhangar vs Khadar:</p>
-            <ul style="margin: 0 0 14px 0; padding-left: 20px;">
-              <li style="margin-bottom: 4px;"><b>Bhangar:</b> Older alluvial soil, forms a terrace-like structure above flood levels, contains calcareous clay deposits (kankar), and is less fertile.</li>
-              <li style="margin-bottom: 0;"><b>Kadar:</b> Newer alluvial soil of floodplains, gets renewed annually during floods, is fine-textured, and is highly fertile for agriculture.</li>
-            </ul>
-
-            <!-- Western vs Eastern Ghats -->
-            <p style="color: ${themeColor}; font-weight: bold; margin: 0 0 6px 0;">(ii) Western Ghats vs Eastern Ghats:</p>
-            <ul style="margin: 0; padding-left: 20px;">
-              <li style="margin-bottom: 4px;"><b>Western Ghats:</b> Continuous ranges (can only be crossed via passes), higher altitude (900-1600m), cause heavy orographic rain, highest peak is Anamudi.</li>
-              <li style="margin-bottom: 0;"><b>Eastern Ghats:</b> Broken and irregular ranges dissected by rivers flowing to Bay of Bengal, lower altitude (600m), do not block monsoon winds, highest peak is Mahendragiri.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q4 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q4. Which are the major physiographic divisions of India? Contrast the relief of the Himalayan region with that of the Peninsular plateau.</p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <b style="color: ${themeColor};">Major Divisions:</b> (1) The Himalayas, (2) The Northern Plains, (3) The Peninsular Plateau, (4) The Indian Desert, (5) The Coastal Plains, and (6) The Islands.
-            
-            <p style="color: ${themeColor}; font-weight: bold; margin: 10px 0 6px 0;">Contrast of Relief:</p>
-            <ul style="margin: 0; padding-left: 20px;">
-              <li style="margin-bottom: 6px;"><b>Himalayan Region:</b> Composed of geologically young, unstable, folded structures. Characterized by high rugged peaks, deep valleys, and fast-flowing rivers.</li>
-              <li style="margin-bottom: 0;"><b>Peninsular Plateau:</b> Composed of geologically ancient, stable, crystalline and metamorphic rocks. Characterized by broad, shallow valleys, rounded hills, and flat tablelands.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q5 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q5. Give an account of the Northern Plains of India.</p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> Features of the Northern Plains:
-            <ul style="margin: 6px 0 0 0; padding-left: 20px;">
-              <li style="margin-bottom: 6px;"><b>Formation:</b> Deposited over millions of years by the Indus, Ganga, and Brahmaputra river systems and their tributaries.</li>
-              <li style="margin-bottom: 6px;"><b>Dimensions:</b> Spreads over 7 lakh sq. km, stretching 2400 km in length and 240 to 320 km in width.</li>
-              <li style="margin-bottom: 6px;"><b>Importance:</b> Highly fertile alluvium soil, abundant water, and favorable climate make it a densely populated, agriculturally productive region.</li>
-              <li style="margin-bottom: 0;"><b>Divisions:</b> Divided into three parts: the Punjab Plains (West), Ganga Plains (Middle), and Brahmaputra Valley (East).</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q6 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q6. Write short notes on the following: (i) The Indian Desert, (ii) The Central Highlands, (iii) The Island groups of India.</p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
-              <li style="margin-bottom: 10px;">
-                <b>(i) The Indian Desert:</b> Located west of the Aravali Hills. A dry, sandy plain covered with crescent sand dunes (barchans). Low rainfall (under 150 mm/yr) and arid climate, with <b>Luni</b> as its only major river.
-              </li>
-              <li style="margin-bottom: 10px;">
-                <b>(ii) The Central Highlands:</b> The Peninsular Plateau division lying north of the Narmada River, covering the Malwa Plateau. Wider in the west and narrow in the east, extending to Bundelkhand, Baghelkhand, and Chotanagpur.
-              </li>
-              <li style="margin-bottom: 0;">
-                <b>(iii) The Island groups of India:</b> Includes the <b>Lakshadweep Islands</b> in the Arabian Sea (coral origin, 32 sq km, Kavaratti HQ) and the <b>Andaman and Nicobar Islands</b> in the Bay of Bengal (volcanic/submarine mountains, larger and scattered).
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    `,
+  "id": "sst-geo-c9-2",
+  "number": 2,
+  "title": "Physical Features of India",
+  "isHtmlView": true,
+  "htmlOverview": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(38, 198, 218, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #26C6DA; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #26C6DA; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #B2EBF2; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #B2EBF2; font-weight: 700; }\n  .hl { color: #26C6DA; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #26C6DA; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #26C6DA; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(38, 198, 218, 0.10); border: 1.5px dashed #26C6DA; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #26C6DA; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(38, 198, 218, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(38, 198, 218, 0.18); border: 1px solid #26C6DA; color: #B2EBF2; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(38, 198, 218, 0.2); color: #B2EBF2; }\n  .q-card .q-text, .q-card .sub-q { color: #26C6DA !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ Chapter at a Glance</div><div class=\"sol-step\"><div class=\"rev\">India is a vast country with <span class=\"hl\">varied landforms</span> — mountains, plains, deserts, plateaus and islands. Geologically, the <b>Peninsular Plateau</b> is one of the most ancient and stable landmasses on earth, while the <b>Himalayas</b> and the <b>Northern Plains</b> are the most recent landforms. The Himalayas form an unstable zone with youthful topography — high peaks, deep valleys and fast-flowing rivers. The Northern Plains are formed of alluvial deposits; the plateau is made of igneous and metamorphic rocks with gently rising hills and wide valleys.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>No.</th><th>Major physiographic division</th></tr><tr><td>1</td><td>The Himalayan Mountains</td></tr><tr><td>2</td><td>The Northern Plains</td></tr><tr><td>3</td><td>The Peninsular Plateau</td></tr><tr><td>4</td><td>The Indian Desert</td></tr><tr><td>5</td><td>The Coastal Plains</td></tr><tr><td>6</td><td>The Islands</td></tr></table></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 1. The Himalayan Mountains</div><div class=\"sol-step\"><div class=\"pt\">Geologically <b>young</b>, structurally <b>fold mountains</b> along the northern borders, running west–east from the <b>Indus to the Brahmaputra</b>.</div><div class=\"pt\">They form an <b>arc of about 2,400 km</b>; width varies from <b>400 km in Kashmir</b> to <b>150 km in Arunachal Pradesh</b>. Altitudinal variations are greater in the eastern half.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Range</th><th>Main features</th></tr><tr><td><b>Himadri</b> (Great / Inner Himalayas)</td><td>Northernmost, most continuous; average height 6,000 m; all prominent peaks; folds asymmetrical; core of granite; perennially snow bound; glaciers descend from it</td></tr><tr><td><b>Himachal</b> (Lesser Himalaya)</td><td>Most rugged; highly compressed and altered rocks; 3,700–4,500 m, average width 50 km; Pir Panjal (longest, most important), Dhaula Dhar, Mahabharat; Kashmir, Kangra and Kullu valleys; hill stations</td></tr><tr><td><b>Shiwaliks</b> (outermost)</td><td>Width 10–50 km; 900–1,100 m; unconsolidated sediments brought by rivers; valleys covered with thick gravel and alluvium</td></tr></table></div><div class=\"pt\"><b>Duns:</b> longitudinal valleys between the Lesser Himalaya and the Shiwaliks — Dehra Dun, Kotli Dun, Patli Dun.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 270\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"270\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"20\" font-size=\"11.5\" fill=\"#26C6DA\" text-anchor=\"middle\" font-weight=\"700\">From the Himadri to the Plains (north → south)</text><line x1=\"34\" y1=\"215.0\" x2=\"312\" y2=\"215.0\" stroke=\"rgba(255,255,255,0.10)\"/><text x=\"30\" y=\"218.0\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">0</text><line x1=\"34\" y1=\"161.2\" x2=\"312\" y2=\"161.2\" stroke=\"rgba(255,255,255,0.10)\"/><text x=\"30\" y=\"164.2\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">2000</text><line x1=\"34\" y1=\"107.3\" x2=\"312\" y2=\"107.3\" stroke=\"rgba(255,255,255,0.10)\"/><text x=\"30\" y=\"110.3\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">4000</text><line x1=\"34\" y1=\"53.5\" x2=\"312\" y2=\"53.5\" stroke=\"rgba(255,255,255,0.10)\"/><text x=\"30\" y=\"56.5\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">6000</text><polygon points=\"40,215 40,101.9 54.6,53.5 72.8,75.0 91.1,48.1 111.1,128.8 127.6,104.6 145.8,115.4 164.1,96.5 180.5,155.8 195.1,185.4 209.7,190.8 222.4,186.7 235.2,204.2 255.3,208.3 275.3,211.0 310,212.3 310,215\" fill=\"rgba(38, 198, 218,0.22)\" stroke=\"#26C6DA\" stroke-width=\"1.5\"/><polygon points=\"47.3,77.7 54.6,53.5 63.7,64.2\" fill=\"#FFFFFF\"/><polygon points=\"82,72.3 91.1,48.1 100.2,83.1\" fill=\"#FFFFFF\"/><line x1=\"111.1\" y1=\"215\" x2=\"111.1\" y2=\"221\" stroke=\"#FFFFFF\"/><text x=\"75.55\" y=\"233\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">Himadri</text><text x=\"75.55\" y=\"245\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"middle\">avg 6,000 m</text><line x1=\"180.5\" y1=\"215\" x2=\"180.5\" y2=\"221\" stroke=\"#FFFFFF\"/><text x=\"145.8\" y=\"233\" font-size=\"9\" fill=\"#FFB74D\" text-anchor=\"middle\" font-weight=\"700\">Himachal</text><text x=\"145.8\" y=\"245\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"middle\">3,700–4,500 m</text><line x1=\"235.2\" y1=\"215\" x2=\"235.2\" y2=\"221\" stroke=\"#FFFFFF\"/><text x=\"207.85\" y=\"233\" font-size=\"9\" fill=\"#FDD835\" text-anchor=\"middle\" font-weight=\"700\">Shiwaliks</text><text x=\"207.85\" y=\"245\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"middle\">900–1,100 m</text><line x1=\"310\" y1=\"215\" x2=\"310\" y2=\"221\" stroke=\"#FFFFFF\"/><text x=\"272.6\" y=\"233\" font-size=\"9\" fill=\"#4FC3F7\" text-anchor=\"middle\" font-weight=\"700\">Northern Plains</text><text x=\"272.6\" y=\"245\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"middle\">alluvium</text><line x1=\"40\" y1=\"215\" x2=\"310\" y2=\"215\" stroke=\"#FFFFFF\"/><text x=\"209.7\" y=\"178.7\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\">Duns</text><text x=\"160\" y=\"264\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"middle\">Heights in metres (to scale); distances not to scale</text></svg></div><div class=\"diagram-caption\">Fig. 1: The three parallel ranges and the plains</div></div><div class=\"sub-q\">Divisions from west to east (marked by river valleys)</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Between rivers</th><th>Name</th></tr><tr><td>Indus – Satluj</td><td>Punjab Himalaya (regionally Kashmir and Himachal Himalaya)</td></tr><tr><td>Satluj – Kali</td><td>Kumaon Himalayas</td></tr><tr><td>Kali – Teesta</td><td>Nepal Himalayas</td></tr><tr><td>Teesta – Dihang</td><td>Assam Himalayas</td></tr></table></div><div class=\"pt\"><b>Purvachal</b> (Eastern hills): beyond the Dihang gorge the Himalayas bend south along the eastern boundary. Mostly strong <b>sandstones</b>, densely forested, parallel ranges and valleys — <b>Patkai hills, Naga hills, Manipur hills, Mizo hills</b>. The Brahmaputra marks the eastern-most boundary of the Himalayas.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"300\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"20\" font-size=\"11.5\" fill=\"#26C6DA\" text-anchor=\"middle\" font-weight=\"700\">Some Highest Peaks of the Himalayas (m)</text><line x1=\"44\" y1=\"210.0\" x2=\"312\" y2=\"210.0\" stroke=\"rgba(255,255,255,0.13)\"/><text x=\"39\" y=\"213.0\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">7000</text><line x1=\"44\" y1=\"168.5\" x2=\"312\" y2=\"168.5\" stroke=\"rgba(255,255,255,0.13)\"/><text x=\"39\" y=\"171.5\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">7500</text><line x1=\"44\" y1=\"127.0\" x2=\"312\" y2=\"127.0\" stroke=\"rgba(255,255,255,0.13)\"/><text x=\"39\" y=\"130.0\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">8000</text><line x1=\"44\" y1=\"85.5\" x2=\"312\" y2=\"85.5\" stroke=\"rgba(255,255,255,0.13)\"/><text x=\"39\" y=\"88.5\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">8500</text><line x1=\"44\" y1=\"44.0\" x2=\"312\" y2=\"44.0\" stroke=\"rgba(255,255,255,0.13)\"/><text x=\"39\" y=\"47.0\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">9000</text><rect x=\"48.6\" y=\"56.6\" width=\"17.7\" height=\"153.4\" fill=\"#EF5350\" stroke=\"#FFFFFF\" stroke-width=\"0.7\"/><text x=\"57.4\" y=\"52.6\" font-size=\"7.5\" fill=\"#EF5350\" text-anchor=\"middle\" font-weight=\"700\">8848</text><text x=\"57.4\" y=\"221\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"end\" transform=\"rotate(-50 57.4 221)\">Everest (N)</text><rect x=\"75.4\" y=\"77.4\" width=\"17.7\" height=\"132.6\" fill=\"#FFB74D\" stroke=\"#FFFFFF\" stroke-width=\"0.7\"/><text x=\"84.2\" y=\"73.4\" font-size=\"7.5\" fill=\"#FFB74D\" text-anchor=\"middle\" font-weight=\"700\">8598</text><text x=\"84.2\" y=\"221\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"end\" transform=\"rotate(-50 84.2 221)\">Kanchenjunga (I)</text><rect x=\"102.2\" y=\"87.1\" width=\"17.7\" height=\"122.9\" fill=\"#FDD835\" stroke=\"#FFFFFF\" stroke-width=\"0.7\"/><text x=\"111.0\" y=\"83.1\" font-size=\"7.5\" fill=\"#FDD835\" text-anchor=\"middle\" font-weight=\"700\">8481</text><text x=\"111.0\" y=\"221\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"end\" transform=\"rotate(-50 111.0 221)\">Makalu (N)</text><rect x=\"129.0\" y=\"112.7\" width=\"17.7\" height=\"97.3\" fill=\"#66BB6A\" stroke=\"#FFFFFF\" stroke-width=\"0.7\"/><text x=\"137.8\" y=\"108.7\" font-size=\"7.5\" fill=\"#66BB6A\" text-anchor=\"middle\" font-weight=\"700\">8172</text><text x=\"137.8\" y=\"221\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"end\" transform=\"rotate(-50 137.8 221)\">Dhaulagiri (N)</text><rect x=\"155.8\" y=\"116.5\" width=\"17.7\" height=\"93.5\" fill=\"#26C6DA\" stroke=\"#FFFFFF\" stroke-width=\"0.7\"/><text x=\"164.6\" y=\"112.5\" font-size=\"7.5\" fill=\"#26C6DA\" text-anchor=\"middle\" font-weight=\"700\">8126</text><text x=\"164.6\" y=\"221\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"end\" transform=\"rotate(-50 164.6 221)\">Nanga Parbat (I)</text><rect x=\"182.6\" y=\"120.5\" width=\"17.7\" height=\"89.5\" fill=\"#4FC3F7\" stroke=\"#FFFFFF\" stroke-width=\"0.7\"/><text x=\"191.4\" y=\"116.5\" font-size=\"7.5\" fill=\"#4FC3F7\" text-anchor=\"middle\" font-weight=\"700\">8078</text><text x=\"191.4\" y=\"221\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"end\" transform=\"rotate(-50 191.4 221)\">Annapurna (N)</text><rect x=\"209.4\" y=\"142.2\" width=\"17.7\" height=\"67.8\" fill=\"#7986CB\" stroke=\"#FFFFFF\" stroke-width=\"0.7\"/><text x=\"218.2\" y=\"138.2\" font-size=\"7.5\" fill=\"#7986CB\" text-anchor=\"middle\" font-weight=\"700\">7817</text><text x=\"218.2\" y=\"221\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"end\" transform=\"rotate(-50 218.2 221)\">Nanda Devi (I)</text><rect x=\"236.2\" y=\"147.3\" width=\"17.7\" height=\"62.7\" fill=\"#AB47BC\" stroke=\"#FFFFFF\" stroke-width=\"0.7\"/><text x=\"245.0\" y=\"143.3\" font-size=\"7.5\" fill=\"#AB47BC\" text-anchor=\"middle\" font-weight=\"700\">7756</text><text x=\"245.0\" y=\"221\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"end\" transform=\"rotate(-50 245.0 221)\">Kamet (I)</text><rect x=\"263.0\" y=\"147.3\" width=\"17.7\" height=\"62.7\" fill=\"#FF4DA6\" stroke=\"#FFFFFF\" stroke-width=\"0.7\"/><text x=\"271.8\" y=\"143.3\" font-size=\"7.5\" fill=\"#FF4DA6\" text-anchor=\"middle\" font-weight=\"700\">7756</text><text x=\"271.8\" y=\"221\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"end\" transform=\"rotate(-50 271.8 221)\">Namcha Barwa (I)</text><rect x=\"289.8\" y=\"149.6\" width=\"17.7\" height=\"60.4\" fill=\"#FF8A65\" stroke=\"#FFFFFF\" stroke-width=\"0.7\"/><text x=\"298.6\" y=\"145.6\" font-size=\"7.5\" fill=\"#FF8A65\" text-anchor=\"middle\" font-weight=\"700\">7728</text><text x=\"298.6\" y=\"221\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"end\" transform=\"rotate(-50 298.6 221)\">Gurla Mandhata (N)</text><line x1=\"44\" y1=\"210\" x2=\"312\" y2=\"210\" stroke=\"#FFFFFF\"/><line x1=\"44\" y1=\"40\" x2=\"44\" y2=\"210\" stroke=\"#FFFFFF\"/><polyline points=\"39,200 49,196 39,192 49,188\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"1.2\"/><text x=\"160\" y=\"294\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"middle\">(N) Nepal, (I) India as in the textbook; axis starts at 7,000 m</text></svg></div><div class=\"diagram-caption\">Fig. 2: Some highest peaks of the Himalayas</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 2. The Northern Plain</div><div class=\"sol-step\"><div class=\"pt\">Formed by the interplay of the <b>Indus, Ganga and Brahmaputra</b> and their tributaries — alluvium deposited in a vast basin at the Himalayan foothills over millions of years.</div><div class=\"pt\">Area about <b>7 lakh sq km</b>; about <b>2,400 km long</b> and <b>240–320 km broad</b>; densely populated and agriculturally productive (rich soil, water, favourable climate).</div><div class=\"pt\">In the lower course, slow rivers form <b>riverine islands</b> and split into channels called <b>distributaries</b>. <span class=\"lbl\">Do You Know?</span> <b>Majuli</b> in the Brahmaputra is the largest inhabited riverine island in the world.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Section</th><th>Details</th></tr><tr><td>Punjab Plains (west)</td><td>Formed by the Indus and its tributaries — Jhelum, Chenab, Ravi, Beas, Satluj; larger part in Pakistan; dominated by <i>doabs</i></td></tr><tr><td>Ganga Plain (middle)</td><td>Between the Ghaggar and Teesta; North India, Haryana, Delhi, U.P., Bihar, partly Jharkhand and West Bengal</td></tr><tr><td>Brahmaputra Plain (east)</td><td>Particularly in Assam</td></tr></table></div><div class=\"pt\"><span class=\"lbl\">Do You Know?</span> <b>Doab</b> = 'do' (two) + 'ab' (water); <b>Punjab</b> = 'punj' (five) + 'ab' (water).</div><div class=\"sub-q\">Four relief regions</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Region</th><th>Features</th></tr><tr><td><b>Bhabar</b></td><td>Narrow belt 8–16 km wide of pebbles parallel to the Shiwalik slopes; streams disappear</td></tr><tr><td><b>Terai</b></td><td>Streams re-emerge; wet, swampy, marshy; was thickly forested with wildlife; cleared for agriculture and to settle migrants from Pakistan (Dudhwa National Park)</td></tr><tr><td><b>Bhangar</b></td><td>Largest part; older alluvium above floodplains; terrace-like; calcareous deposits called <i>kankar</i></td></tr><tr><td><b>Khadar</b></td><td>Newer, younger floodplain deposits; renewed almost every year; fertile — ideal for intensive agriculture</td></tr></table></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 3. The Peninsular Plateau</div><div class=\"sol-step\"><div class=\"pt\">A <b>tableland</b> of old crystalline, igneous and metamorphic rocks, formed by the breaking and drifting of <b>Gondwana land</b>; broad, shallow valleys and rounded hills. Two divisions: <b>Central Highlands</b> and <b>Deccan Plateau</b>.</div><div class=\"sub-q\">Central Highlands</div><div class=\"pt\">North of the <b>Narmada</b>, covering most of the <b>Malwa plateau</b>; Vindhyan range bounded by the Satpura (south) and the Aravalis (north-west); merges westward with the Rajasthan desert.</div><div class=\"pt\">Rivers <b>Chambal, Sind, Betwa, Ken</b> flow south-west to north-east — showing the slope. Wider in the west, narrower in the east; eastern parts called <b>Bundelkhand</b> and <b>Baghelkhand</b>; <b>Chotanagpur plateau</b> further east, drained by the <b>Damodar</b>.</div><div class=\"sub-q\">Deccan Plateau</div><div class=\"pt\"><b>Triangular</b> landmass south of the Narmada; Satpura flanks its broad base in the north; Mahadev, Kaimur hills and Maikal range form its eastern extensions. Higher in the west, slopes gently eastwards.</div><div class=\"pt\">North-east extension: <b>Meghalaya, Karbi-Anglong plateau</b> and <b>North Cachar hills</b>, separated from Chotanagpur by a fault; Garo, Khasi and Jaintia hills (west to east).</div><div class=\"sub-q\">Western and Eastern Ghats</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Western Ghats</th><th>Eastern Ghats</th></tr><tr><td>Parallel to the western coast</td><td>From the Mahanadi valley to the Nilgiris</td></tr><tr><td>Continuous; crossed through passes only (Thal, Bhor, Pal Ghats)</td><td>Discontinuous, irregular; dissected by rivers draining into the Bay of Bengal</td></tr><tr><td>Higher: average 900–1,600 m</td><td>Lower: average 600 m</td></tr><tr><td>Height increases north to south; Anai Mudi (2,695 m), Doda Betta (2,637 m)</td><td>Highest peak Mahendragiri (1,501 m); Shevroy and Javadi hills to the south-east</td></tr><tr><td>Cause orographic rain</td><td>—</td></tr></table></div><div class=\"pt\">Hill stations <b>Udagamandalam (Ooty)</b> and <b>Kodaikanal</b>.</div><div class=\"pt\"><b>Deccan Trap:</b> black soil area of volcanic origin; igneous rocks denuded over time formed black soil.</div><div class=\"pt\"><b>Aravali Hills:</b> on the western and north-western margins; highly eroded, broken hills from Gujarat to Delhi (south-west to north-east).</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 4. The Indian Desert</div><div class=\"sol-step\"><div class=\"pt\">Lies west of the <b>Aravali Hills</b>; an undulating sandy plain covered with <b>sand dunes</b>.</div><div class=\"pt\">Very low rainfall — <b>below 150 mm</b> a year; arid climate, low vegetation. Streams appear in the rainy season and then disappear into the sand. <b>Luni</b> is the only large river.</div><div class=\"pt\"><b>Barchans</b> (crescent-shaped dunes) cover larger areas; <b>longitudinal dunes</b> are more prominent near the Indo-Pakistan boundary (barchans can be seen near Jaisalmer).</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 5. The Coastal Plains</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Western coast</th><th>Eastern coast</th></tr><tr><td>Between the Western Ghats and the Arabian Sea; narrow plain</td><td>Along the Bay of Bengal; wide and level</td></tr><tr><td>North: <b>Konkan</b> (Mumbai–Goa); centre: <b>Kannad Plain</b>; south: <b>Malabar coast</b></td><td>North: <b>Northern Circar</b>; south: <b>Coromandel Coast</b></td></tr><tr><td>—</td><td>Deltas of the Mahanadi, Godavari, Krishna and Kaveri; Lake Chilika</td></tr></table></div><div class=\"pt\"><span class=\"lbl\">Do You Know?</span> <b>Chilika Lake</b> is the largest salt water lake in India — in Odisha, south of the Mahanadi delta.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 6. The Islands</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Lakshadweep</th><th>Andaman and Nicobar</th></tr><tr><td>Close to the Malabar coast of Kerala (Arabian Sea)</td><td>Elongated chain in the Bay of Bengal, north to south</td></tr><tr><td>Small <b>coral</b> islands; earlier Laccadive, Minicoy and Amindive; named Lakshadweep in <b>1973</b></td><td>Bigger, more numerous, scattered; Andaman (north) and Nicobar (south); elevated portion of <b>submarine mountains</b></td></tr><tr><td>Area <b>32 sq km</b>; HQ <b>Kavaratti</b>; Pitti island (uninhabited) has a bird sanctuary</td><td>Great strategic importance; diverse flora and fauna; equatorial climate; thick forest</td></tr></table></div><div class=\"pt\"><span class=\"lbl\">Corals:</span> short-lived microscopic <b>coral polyps</b> live in colonies in shallow, mud-free, warm waters and secrete calcium carbonate. Reefs are of three kinds — <b>barrier reef, fringing reef</b> and <b>atolls</b>. The Great Barrier Reef of Australia is a barrier reef; atolls are circular or horse-shoe shaped.</div><div class=\"pt\"><span class=\"lbl\">Do You Know?</span> India's only active volcano is on <b>Barren island</b> (Andaman and Nicobar).</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 7. The Regions Complement Each Other</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Region</th><th>Contribution</th></tr><tr><td>Mountains</td><td>Major sources of water and forest wealth</td></tr><tr><td>Northern Plains</td><td>Granaries of the country; base for early civilisations</td></tr><tr><td>Plateau</td><td>Storehouse of minerals — crucial for industrialisation</td></tr><tr><td>Coasts and islands</td><td>Sites for fishing and port activities</td></tr></table></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 8. Key Terms</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Term</th><th>Meaning</th></tr><tr><td>Peninsula</td><td>A landmass bounded by sea on three sides</td></tr><tr><td>Fold mountains</td><td>Mountains formed by folding of rock layers, like the Himalayas</td></tr><tr><td>Duns</td><td>Longitudinal valleys between the Lesser Himalaya and the Shiwaliks</td></tr><tr><td>Doab</td><td>Land between two rivers (do = two, ab = water)</td></tr><tr><td>Distributaries</td><td>Channels into which a river splits in its lower course</td></tr><tr><td>Bhabar / Terai</td><td>Pebble belt at the foothills / swampy belt south of it</td></tr><tr><td>Bhangar / Khadar</td><td>Older alluvium with kankar / newer fertile floodplain alluvium</td></tr><tr><td>Barchans</td><td>Crescent-shaped sand dunes</td></tr><tr><td>Coral polyps</td><td>Microscopic organisms whose secretions form coral reefs</td></tr></table></div><div class=\"exam\"><span class=\"exam-t\">📌 Exam Focus</span><div>• Three ranges of the Himalayas and Purvachal</div><div>• Bhabar, Terai, Bhangar, Khadar</div><div>• Central Highlands and Deccan Plateau</div><div>• Western vs Eastern Ghats</div><div>• Indian Desert, Coastal Plains and Island groups</div></div></div>\n  </div>\n</div>",
+  "htmlExercises": {
+    "sg9-2-ex-q": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(38, 198, 218, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #26C6DA; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #26C6DA; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #B2EBF2; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #B2EBF2; font-weight: 700; }\n  .hl { color: #26C6DA; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #26C6DA; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #26C6DA; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(38, 198, 218, 0.10); border: 1.5px dashed #26C6DA; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #26C6DA; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(38, 198, 218, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(38, 198, 218, 0.18); border: 1px solid #26C6DA; color: #B2EBF2; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(38, 198, 218, 0.2); color: #B2EBF2; }\n  .q-card .q-text, .q-card .sub-q { color: #26C6DA !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Choose the right answer from the four alternatives given below.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">(i) A landmass bounded by sea on three sides is referred to as</div><div><span style=\"white-space: nowrap;\">(a) Coast</span> &nbsp; <span style=\"white-space: nowrap;\">(b) Island</span> &nbsp; <span style=\"white-space: nowrap;\">(c) Peninsula</span> &nbsp; <span style=\"white-space: nowrap;\">(d) None of the above</span></div><div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">(c) Peninsula</span></div><div class=\"sub-q\">(ii) Mountain ranges in the eastern part of India forming its boundary with Myanmar are collectively called</div><div><span style=\"white-space: nowrap;\">(a) Himachal</span> &nbsp; <span style=\"white-space: nowrap;\">(b) Uttarakhand</span> &nbsp; <span style=\"white-space: nowrap;\">(c) Purvachal</span> &nbsp; <span style=\"white-space: nowrap;\">(d) None of the above</span></div><div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">(c) Purvachal</span></div><div class=\"sub-q\">(iii) The western coastal strip, south of Goa is referred to as</div><div><span style=\"white-space: nowrap;\">(a) Coromandel</span> &nbsp; <span style=\"white-space: nowrap;\">(b) Konkan</span> &nbsp; <span style=\"white-space: nowrap;\">(c) Kannad</span> &nbsp; <span style=\"white-space: nowrap;\">(d) Northern Circar</span></div><div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">(c) Kannad</span></div><div class=\"sub-q\">(iv) The highest peak in the Eastern Ghats is</div><div><span style=\"white-space: nowrap;\">(a) Anai Mudi</span> &nbsp; <span style=\"white-space: nowrap;\">(b) Kanchenjunga</span> &nbsp; <span style=\"white-space: nowrap;\">(c) Mahendragiri</span> &nbsp; <span style=\"white-space: nowrap;\">(d) Khasi</span></div><div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">(c) Mahendragiri</span></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Answer the following questions briefly.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">(i) What is the <i>bhabar</i>?</div><div class=\"pt\">A narrow belt of <b>pebbles</b>, about <b>8–16 km</b> wide, parallel to the slopes of the Shiwaliks, deposited by rivers descending from the mountains. All the streams disappear in this belt.</div><div class=\"sub-q\">(ii) Name the three major divisions of the Himalayas from north to south.</div><div class=\"pt\"><b>Himadri</b> (Great/Inner Himalayas) → <b>Himachal</b> (Lesser Himalaya) → <b>Shiwaliks</b> (Outer Himalayas).</div><div class=\"sub-q\">(iii) Which plateau lies between the Aravali and the Vindhyan ranges?</div><div class=\"pt\">The <b>Malwa plateau</b>.</div><div class=\"sub-q\">(iv) Name the island group of India having coral origin.</div><div class=\"pt\"><b>Lakshadweep</b>.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Distinguish between (i) <i>Bhangar</i> and <i>Khadar</i> (ii) Western Ghats and Eastern Ghats</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">(i) Bhangar and Khadar</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Bhangar</th><th>Khadar</th></tr><tr><td>Older alluvium</td><td>Newer, younger alluvium</td></tr><tr><td>Lies above the floodplains; terrace-like</td><td>Found in the floodplains</td></tr><tr><td>Contains calcareous deposits — <i>kankar</i></td><td>Renewed almost every year by floods</td></tr><tr><td>Less fertile</td><td>Very fertile — ideal for intensive agriculture</td></tr></table></div><div class=\"sub-q\">(ii) Western Ghats and Eastern Ghats</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Western Ghats</th><th>Eastern Ghats</th></tr><tr><td>Parallel to the western coast</td><td>From the Mahanadi valley to the Nilgiris</td></tr><tr><td>Continuous; crossed through passes only</td><td>Discontinuous and irregular; dissected by rivers</td></tr><tr><td>Average height 900–1,600 m</td><td>Average height 600 m</td></tr><tr><td>Height increases from north to south</td><td>—</td></tr><tr><td>Highest peak Anai Mudi (2,695 m)</td><td>Highest peak Mahendragiri (1,501 m)</td></tr><tr><td>Cause orographic rain</td><td>Do not cause much rain</td></tr></table></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">Which are the major physiographic divisions of India? Contrast the relief of the Himalayan region with that of the Peninsular plateau.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">Major divisions</div><div class=\"pt\">(1) The Himalayan Mountains (2) The Northern Plains (3) The Peninsular Plateau (4) The Indian Desert (5) The Coastal Plains (6) The Islands</div><div class=\"sub-q\">Contrast</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Himalayan region</th><th>Peninsular plateau</th></tr><tr><td>Geologically young; unstable zone</td><td>One of the most ancient and stable landmasses</td></tr><tr><td>Fold mountains of sedimentary and highly altered rocks</td><td>Tableland of old crystalline, igneous and metamorphic rocks</td></tr><tr><td>Lofty peaks (Himadri average 6,000 m), deep valleys</td><td>Broad, shallow valleys and rounded hills</td></tr><tr><td>Fast-flowing rivers; youthful topography</td><td>Gently rising hills; old, worn-down relief</td></tr><tr><td>Three parallel ranges with longitudinal valleys (duns)</td><td>Two divisions — Central Highlands and Deccan Plateau</td></tr></table></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5.</div>\n    <div class=\"q-text\">Give an account of the Northern Plains of India.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Formation:</span> by the <b>Indus, Ganga and Brahmaputra</b> and their tributaries — alluvium deposited at the foothills of the Himalaya over millions of years.</div><div class=\"pt\"><span class=\"lbl\">Size:</span> about <b>7 lakh sq km</b>; about 2,400 km long and 240–320 km broad.</div><div class=\"pt\"><span class=\"lbl\">Importance:</span> rich soil, adequate water and favourable climate make it densely populated and agriculturally productive.</div><div class=\"pt\"><span class=\"lbl\">Sections:</span> <b>Punjab Plains</b> (west, doabs; larger part in Pakistan), <b>Ganga Plain</b> (between Ghaggar and Teesta), <b>Brahmaputra Plain</b> (Assam).</div><div class=\"pt\"><span class=\"lbl\">Relief regions:</span> <b>Bhabar</b> (pebble belt, 8–16 km), <b>Terai</b> (wet, swampy), <b>Bhangar</b> (older alluvium, kankar), <b>Khadar</b> (new fertile alluvium).</div><div class=\"pt\"><span class=\"lbl\">Other features:</span> riverine islands (Majuli) and distributaries in the lower course.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q6.</div>\n    <div class=\"q-text\">Write short notes on the following. (i) The Indian Desert (ii) The Central Highlands (iii) The Island groups of India</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">(i) The Indian Desert</div><div class=\"rev\">It lies west of the Aravali Hills — an undulating sandy plain covered with sand dunes. Rainfall is below 150 mm a year, so the climate is arid and vegetation is low. Streams appear in the rainy season but soon disappear into the sand; the <b>Luni</b> is the only large river. <b>Barchans</b> (crescent-shaped dunes) cover larger areas, while longitudinal dunes are more prominent near the Indo-Pakistan boundary.</div><div class=\"sub-q\">(ii) The Central Highlands</div><div class=\"rev\">The part of the Peninsular plateau north of the <b>Narmada</b>, covering a major area of the <b>Malwa plateau</b>. The Vindhyan range is bounded by the Satpura on the south and the Aravalis on the north-west; westward it merges with the Rajasthan desert. The Chambal, Sind, Betwa and Ken flow from south-west to north-east, showing the slope. It is wider in the west and narrower in the east; its eastern extensions are <b>Bundelkhand</b> and <b>Baghelkhand</b>, and the <b>Chotanagpur plateau</b>, drained by the Damodar, extends further east.</div><div class=\"sub-q\">(iii) The Island groups of India</div><div class=\"pt\"><span class=\"lbl\">Lakshadweep:</span> close to the Malabar coast in the Arabian Sea; small <b>coral</b> islands (earlier Laccadive, Minicoy, Amindive; renamed 1973); 32 sq km; HQ Kavaratti; Pitti island has a bird sanctuary.</div><div class=\"pt\"><span class=\"lbl\">Andaman and Nicobar:</span> in the Bay of Bengal; bigger, more numerous and scattered; elevated portion of <b>submarine mountains</b>; strategically important; equatorial climate and thick forests; Barren island has India's only active volcano.</div></div></div>\n  </div>\n</div>",
+    "sg9-2-ex-map": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(38, 198, 218, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #26C6DA; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #26C6DA; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #B2EBF2; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #B2EBF2; font-weight: 700; }\n  .hl { color: #26C6DA; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #26C6DA; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #26C6DA; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(38, 198, 218, 0.10); border: 1.5px dashed #26C6DA; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #26C6DA; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(38, 198, 218, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(38, 198, 218, 0.18); border: 1px solid #26C6DA; color: #B2EBF2; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(38, 198, 218, 0.2); color: #B2EBF2; }\n  .q-card .q-text, .q-card .sub-q { color: #26C6DA !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">On an outline map of India show the following.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">(i) Mountain and hill ranges</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Feature</th><th>Where to mark</th></tr><tr><td>Karakoram</td><td>Far north, in Ladakh, along the border with China</td></tr><tr><td>Zaskar</td><td>Ladakh, between the Great Himalayas and the Ladakh range</td></tr><tr><td>Patkai Bum</td><td>Arunachal Pradesh – Myanmar border (Purvachal)</td></tr><tr><td>Jaintia</td><td>Eastern Meghalaya (east of the Khasi hills)</td></tr><tr><td>Vindhya range</td><td>Central India, north of the Narmada</td></tr><tr><td>Aravali</td><td>From Gujarat to Delhi, south-west to north-east</td></tr><tr><td>Cardamom hills</td><td>Southern end of the Western Ghats (Kerala – Tamil Nadu)</td></tr></table></div><div class=\"sub-q\">(ii) Peaks</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Peak</th><th>Where to mark</th></tr><tr><td>K2</td><td>Karakoram range, northern Ladakh</td></tr><tr><td>Kanchenjunga</td><td>Sikkim (8,598 m)</td></tr><tr><td>Nanga Parbat</td><td>Western end of the Great Himalayas (8,126 m)</td></tr><tr><td>Anai Mudi</td><td>Western Ghats in Kerala (2,695 m)</td></tr></table></div><div class=\"sub-q\">(iii) Plateaus</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Plateau</th><th>Where to mark</th></tr><tr><td>Chotanagpur</td><td>Jharkhand (eastern Central Highlands), drained by the Damodar</td></tr><tr><td>Malwa</td><td>Madhya Pradesh, between the Aravali and Vindhya ranges</td></tr></table></div><div class=\"sub-q\">(iv) Others</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Feature</th><th>Where to mark</th></tr><tr><td>Indian Desert</td><td>West of the Aravalis, in Rajasthan</td></tr><tr><td>Western Ghats</td><td>Parallel to the west coast, from the Tapi southwards to Kanniyakumari</td></tr><tr><td>Lakshadweep Islands</td><td>Arabian Sea, off the Malabar coast of Kerala</td></tr></table></div><div class=\"rev\">Compare with Figure 2.2 (Relief) of the textbook while marking.</div></div></div>\n  </div>\n</div>",
+    "sg9-2-ex-int": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(38, 198, 218, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #26C6DA; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #26C6DA; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #B2EBF2; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #B2EBF2; font-weight: 700; }\n  .hl { color: #26C6DA; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #26C6DA; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #26C6DA; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(38, 198, 218, 0.10); border: 1.5px dashed #26C6DA; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #26C6DA; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(38, 198, 218, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(38, 198, 218, 0.18); border: 1px solid #26C6DA; color: #B2EBF2; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(38, 198, 218, 0.2); color: #B2EBF2; }\n  .q-card .q-text, .q-card .sub-q { color: #26C6DA !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Find out the names of the glaciers and passes that lie in the Great Himalayas.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Glaciers:</span> Gangotri, Yamunotri, Pindari, Milam, Zemu, Kolahoi.</div><div class=\"pt\"><span class=\"lbl\">Passes:</span> Zoji La, Bara Lacha La, Shipki La, Nathu La, Jelep La, Bum La.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Find out the name of the states where the highest peaks are located.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Peak (India)</th><th>State / UT</th></tr><tr><td>Kanchenjunga</td><td>Sikkim</td></tr><tr><td>Nanda Devi, Kamet</td><td>Uttarakhand</td></tr><tr><td>Nanga Parbat</td><td>Ladakh (Gilgit area, under Pakistani occupation)</td></tr><tr><td>Namcha Barwa</td><td>Listed under India in the textbook; at the eastern end, near Arunachal Pradesh</td></tr></table></div><div class=\"rev\">Everest, Makalu, Dhaulagiri, Annapurna and Gurla Mandhata are in Nepal.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Find out the location of Mussoorie, Nainital, Ranikhet from your atlas and also name the state where they are located.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">All three hill stations lie in the Himachal (Lesser Himalaya) range in <b>Uttarakhand</b> — Mussoorie near Dehra Dun; Nainital and Ranikhet in the Kumaon region.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">Find out some regional names of the Himalayas.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">By river valleys: <b>Punjab Himalaya</b> (also Kashmir and Himachal Himalaya), <b>Kumaon Himalayas</b>, <b>Nepal Himalayas</b>, <b>Assam Himalayas</b>.</div><div class=\"pt\">Ranges: Pir Panjal, Dhaula Dhar, Mahabharat (Lesser Himalaya); Jammu hills (Shiwaliks in J&K); Dafla, Miri, Abor and Mishmi hills (Arunachal Pradesh); Patkai, Naga, Manipur and Mizo hills (Purvachal).</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5.</div>\n    <div class=\"q-text\">Locate Dudhwa National Park in the terai region.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">In the <b>terai</b> of <b>Uttar Pradesh</b> (Lakhimpur Kheri district), along the border with Nepal.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q6.</div>\n    <div class=\"q-text\">Locate the following in the Physical map of India: Mahadev, Kaimur hills and Maikal range; Thal, Bhor and Pal Ghats; Udagamandalam (Ooty) and Kodaikanal.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Feature</th><th>Location</th></tr><tr><td>Mahadev hills</td><td>Madhya Pradesh — eastern extension of the Satpura</td></tr><tr><td>Kaimur hills</td><td>Madhya Pradesh – Uttar Pradesh – Bihar</td></tr><tr><td>Maikal range</td><td>Chhattisgarh – Madhya Pradesh (Amarkantak)</td></tr><tr><td>Thal Ghat</td><td>Western Ghats — Mumbai to Nashik</td></tr><tr><td>Bhor Ghat</td><td>Western Ghats — Mumbai to Pune</td></tr><tr><td>Pal Ghat</td><td>Western Ghats — Palakkad (Kerala – Tamil Nadu)</td></tr><tr><td>Udagamandalam (Ooty)</td><td>Nilgiri hills, Tamil Nadu</td></tr><tr><td>Kodaikanal</td><td>Palani hills, Tamil Nadu</td></tr></table></div></div></div>\n  </div>\n</div>",
+    "sg9-2-ex-proj": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(38, 198, 218, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #26C6DA; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #26C6DA; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #B2EBF2; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #B2EBF2; font-weight: 700; }\n  .hl { color: #26C6DA; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #26C6DA; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #26C6DA; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(38, 198, 218, 0.10); border: 1.5px dashed #26C6DA; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #26C6DA; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(38, 198, 218, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(38, 198, 218, 0.18); border: 1px solid #26C6DA; color: #B2EBF2; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(38, 198, 218, 0.2); color: #B2EBF2; }\n  .q-card .q-text, .q-card .sub-q { color: #26C6DA !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Locate the peaks, passes, ranges, plateaus, hills, and duns hidden in the puzzle. Try to find where these features are located. You may start your search horizontally, vertically or diagonally.<div class=\"tbl-wrap\"><table class=\"dt\" style=\"font-size: 10.5px; text-align: center;\"><tr><td style=\"padding: 2px 0; text-align: center;\">E</td><td style=\"padding: 2px 0; text-align: center;\">M</td><td style=\"padding: 2px 0; text-align: center;\">K</td><td style=\"padding: 2px 0; text-align: center;\">U</td><td style=\"padding: 2px 0; text-align: center;\">N</td><td style=\"padding: 2px 0; text-align: center;\">L</td><td style=\"padding: 2px 0; text-align: center;\">N</td><td style=\"padding: 2px 0; text-align: center;\">A</td><td style=\"padding: 2px 0; text-align: center;\">T</td><td style=\"padding: 2px 0; text-align: center;\">H</td><td style=\"padding: 2px 0; text-align: center;\">U</td><td style=\"padding: 2px 0; text-align: center;\">L</td><td style=\"padding: 2px 0; text-align: center;\">A</td><td style=\"padding: 2px 0; text-align: center;\">R</td><td style=\"padding: 2px 0; text-align: center;\">I</td><td style=\"padding: 2px 0; text-align: center;\">A</td><td style=\"padding: 2px 0; text-align: center;\">H</td><td style=\"padding: 2px 0; text-align: center;\">I</td><td style=\"padding: 2px 0; text-align: center;\">A</td><td style=\"padding: 2px 0; text-align: center;\">T</td></tr><tr><td style=\"padding: 2px 0; text-align: center;\">M</td><td style=\"padding: 2px 0; text-align: center;\">H</td><td style=\"padding: 2px 0; text-align: center;\">A</td><td style=\"padding: 2px 0; text-align: center;\">S</td><td style=\"padding: 2px 0; text-align: center;\">J</td><td style=\"padding: 2px 0; text-align: center;\">M</td><td style=\"padding: 2px 0; text-align: center;\">A</td><td style=\"padding: 2px 0; text-align: center;\">N</td><td style=\"padding: 2px 0; text-align: center;\">J</td><td style=\"padding: 2px 0; text-align: center;\">K</td><td style=\"padding: 2px 0; text-align: center;\">M</td><td style=\"padding: 2px 0; text-align: center;\">A</td><td style=\"padding: 2px 0; text-align: center;\">J</td><td style=\"padding: 2px 0; text-align: center;\">L</td><td style=\"padding: 2px 0; text-align: center;\">B</td><td style=\"padding: 2px 0; text-align: center;\">H</td><td style=\"padding: 2px 0; text-align: center;\">O</td><td style=\"padding: 2px 0; text-align: center;\">R</td><td style=\"padding: 2px 0; text-align: center;\">P</td><td style=\"padding: 2px 0; text-align: center;\">J</td></tr><tr><td style=\"padding: 2px 0; text-align: center;\">J</td><td style=\"padding: 2px 0; text-align: center;\">N</td><td style=\"padding: 2px 0; text-align: center;\">V</td><td style=\"padding: 2px 0; text-align: center;\">F</td><td style=\"padding: 2px 0; text-align: center;\">A</td><td style=\"padding: 2px 0; text-align: center;\">E</td><td style=\"padding: 2px 0; text-align: center;\">T</td><td style=\"padding: 2px 0; text-align: center;\">D</td><td style=\"padding: 2px 0; text-align: center;\">C</td><td style=\"padding: 2px 0; text-align: center;\">A</td><td style=\"padding: 2px 0; text-align: center;\">R</td><td style=\"padding: 2px 0; text-align: center;\">D</td><td style=\"padding: 2px 0; text-align: center;\">E</td><td style=\"padding: 2px 0; text-align: center;\">M</td><td style=\"padding: 2px 0; text-align: center;\">O</td><td style=\"padding: 2px 0; text-align: center;\">M</td><td style=\"padding: 2px 0; text-align: center;\">L</td><td style=\"padding: 2px 0; text-align: center;\">O</td><td style=\"padding: 2px 0; text-align: center;\">M</td><td style=\"padding: 2px 0; text-align: center;\">K</td></tr><tr><td style=\"padding: 2px 0; text-align: center;\">C</td><td style=\"padding: 2px 0; text-align: center;\">R</td><td style=\"padding: 2px 0; text-align: center;\">E</td><td style=\"padding: 2px 0; text-align: center;\">I</td><td style=\"padding: 2px 0; text-align: center;\">I</td><td style=\"padding: 2px 0; text-align: center;\">Q</td><td style=\"padding: 2px 0; text-align: center;\">H</td><td style=\"padding: 2px 0; text-align: center;\">M</td><td style=\"padding: 2px 0; text-align: center;\">O</td><td style=\"padding: 2px 0; text-align: center;\">I</td><td style=\"padding: 2px 0; text-align: center;\">F</td><td style=\"padding: 2px 0; text-align: center;\">T</td><td style=\"padding: 2px 0; text-align: center;\">N</td><td style=\"padding: 2px 0; text-align: center;\">X</td><td style=\"padding: 2px 0; text-align: center;\">M</td><td style=\"padding: 2px 0; text-align: center;\">A</td><td style=\"padding: 2px 0; text-align: center;\">X</td><td style=\"padding: 2px 0; text-align: center;\">F</td><td style=\"padding: 2px 0; text-align: center;\">C</td><td style=\"padding: 2px 0; text-align: center;\">T</td></tr><tr><td style=\"padding: 2px 0; text-align: center;\">N</td><td style=\"padding: 2px 0; text-align: center;\">M</td><td style=\"padding: 2px 0; text-align: center;\">T</td><td style=\"padding: 2px 0; text-align: center;\">S</td><td style=\"padding: 2px 0; text-align: center;\">N</td><td style=\"padding: 2px 0; text-align: center;\">A</td><td style=\"padding: 2px 0; text-align: center;\">U</td><td style=\"padding: 2px 0; text-align: center;\">Q</td><td style=\"padding: 2px 0; text-align: center;\">R</td><td style=\"padding: 2px 0; text-align: center;\">M</td><td style=\"padding: 2px 0; text-align: center;\">S</td><td style=\"padding: 2px 0; text-align: center;\">A</td><td style=\"padding: 2px 0; text-align: center;\">N</td><td style=\"padding: 2px 0; text-align: center;\">A</td><td style=\"padding: 2px 0; text-align: center;\">D</td><td style=\"padding: 2px 0; text-align: center;\">I</td><td style=\"padding: 2px 0; text-align: center;\">D</td><td style=\"padding: 2px 0; text-align: center;\">A</td><td style=\"padding: 2px 0; text-align: center;\">N</td><td style=\"padding: 2px 0; text-align: center;\">J</td></tr><tr><td style=\"padding: 2px 0; text-align: center;\">A</td><td style=\"padding: 2px 0; text-align: center;\">B</td><td style=\"padding: 2px 0; text-align: center;\">X</td><td style=\"padding: 2px 0; text-align: center;\">A</td><td style=\"padding: 2px 0; text-align: center;\">T</td><td style=\"padding: 2px 0; text-align: center;\">G</td><td style=\"padding: 2px 0; text-align: center;\">A</td><td style=\"padding: 2px 0; text-align: center;\">R</td><td style=\"padding: 2px 0; text-align: center;\">O</td><td style=\"padding: 2px 0; text-align: center;\">U</td><td style=\"padding: 2px 0; text-align: center;\">L</td><td style=\"padding: 2px 0; text-align: center;\">F</td><td style=\"padding: 2px 0; text-align: center;\">V</td><td style=\"padding: 2px 0; text-align: center;\">D</td><td style=\"padding: 2px 0; text-align: center;\">I</td><td style=\"padding: 2px 0; text-align: center;\">K</td><td style=\"padding: 2px 0; text-align: center;\">P</td><td style=\"padding: 2px 0; text-align: center;\">T</td><td style=\"padding: 2px 0; text-align: center;\">D</td><td style=\"padding: 2px 0; text-align: center;\">C</td></tr><tr><td style=\"padding: 2px 0; text-align: center;\">C</td><td style=\"padding: 2px 0; text-align: center;\">Y</td><td style=\"padding: 2px 0; text-align: center;\">C</td><td style=\"padding: 2px 0; text-align: center;\">H</td><td style=\"padding: 2px 0; text-align: center;\">I</td><td style=\"padding: 2px 0; text-align: center;\">G</td><td style=\"padding: 2px 0; text-align: center;\">A</td><td style=\"padding: 2px 0; text-align: center;\">M</td><td style=\"padding: 2px 0; text-align: center;\">M</td><td style=\"padding: 2px 0; text-align: center;\">R</td><td style=\"padding: 2px 0; text-align: center;\">D</td><td style=\"padding: 2px 0; text-align: center;\">T</td><td style=\"padding: 2px 0; text-align: center;\">I</td><td style=\"padding: 2px 0; text-align: center;\">Z</td><td style=\"padding: 2px 0; text-align: center;\">L</td><td style=\"padding: 2px 0; text-align: center;\">A</td><td style=\"padding: 2px 0; text-align: center;\">J</td><td style=\"padding: 2px 0; text-align: center;\">P</td><td style=\"padding: 2px 0; text-align: center;\">O</td><td style=\"padding: 2px 0; text-align: center;\">K</td></tr><tr><td style=\"padding: 2px 0; text-align: center;\">H</td><td style=\"padding: 2px 0; text-align: center;\">R</td><td style=\"padding: 2px 0; text-align: center;\">T</td><td style=\"padding: 2px 0; text-align: center;\">K</td><td style=\"padding: 2px 0; text-align: center;\">A</td><td style=\"padding: 2px 0; text-align: center;\">N</td><td style=\"padding: 2px 0; text-align: center;\">C</td><td style=\"padding: 2px 0; text-align: center;\">H</td><td style=\"padding: 2px 0; text-align: center;\">E</td><td style=\"padding: 2px 0; text-align: center;\">N</td><td style=\"padding: 2px 0; text-align: center;\">J</td><td style=\"padding: 2px 0; text-align: center;\">U</td><td style=\"padding: 2px 0; text-align: center;\">N</td><td style=\"padding: 2px 0; text-align: center;\">G</td><td style=\"padding: 2px 0; text-align: center;\">A</td><td style=\"padding: 2px 0; text-align: center;\">L</td><td style=\"padding: 2px 0; text-align: center;\">U</td><td style=\"padding: 2px 0; text-align: center;\">L</td><td style=\"padding: 2px 0; text-align: center;\">B</td><td style=\"padding: 2px 0; text-align: center;\">E</td></tr><tr><td style=\"padding: 2px 0; text-align: center;\">O</td><td style=\"padding: 2px 0; text-align: center;\">O</td><td style=\"padding: 2px 0; text-align: center;\">M</td><td style=\"padding: 2px 0; text-align: center;\">O</td><td style=\"padding: 2px 0; text-align: center;\">P</td><td style=\"padding: 2px 0; text-align: center;\">I</td><td style=\"padding: 2px 0; text-align: center;\">T</td><td style=\"padding: 2px 0; text-align: center;\">P</td><td style=\"padding: 2px 0; text-align: center;\">N</td><td style=\"padding: 2px 0; text-align: center;\">O</td><td style=\"padding: 2px 0; text-align: center;\">S</td><td style=\"padding: 2px 0; text-align: center;\">S</td><td style=\"padding: 2px 0; text-align: center;\">D</td><td style=\"padding: 2px 0; text-align: center;\">D</td><td style=\"padding: 2px 0; text-align: center;\">K</td><td style=\"padding: 2px 0; text-align: center;\">S</td><td style=\"padding: 2px 0; text-align: center;\">P</td><td style=\"padding: 2px 0; text-align: center;\">D</td><td style=\"padding: 2px 0; text-align: center;\">O</td><td style=\"padding: 2px 0; text-align: center;\">K</td></tr><tr><td style=\"padding: 2px 0; text-align: center;\">T</td><td style=\"padding: 2px 0; text-align: center;\">D</td><td style=\"padding: 2px 0; text-align: center;\">A</td><td style=\"padding: 2px 0; text-align: center;\">N</td><td style=\"padding: 2px 0; text-align: center;\">M</td><td style=\"padding: 2px 0; text-align: center;\">L</td><td style=\"padding: 2px 0; text-align: center;\">M</td><td style=\"padding: 2px 0; text-align: center;\">D</td><td style=\"padding: 2px 0; text-align: center;\">D</td><td style=\"padding: 2px 0; text-align: center;\">C</td><td style=\"padding: 2px 0; text-align: center;\">S</td><td style=\"padding: 2px 0; text-align: center;\">A</td><td style=\"padding: 2px 0; text-align: center;\">H</td><td style=\"padding: 2px 0; text-align: center;\">L</td><td style=\"padding: 2px 0; text-align: center;\">S</td><td style=\"padding: 2px 0; text-align: center;\">A</td><td style=\"padding: 2px 0; text-align: center;\">I</td><td style=\"padding: 2px 0; text-align: center;\">E</td><td style=\"padding: 2px 0; text-align: center;\">E</td><td style=\"padding: 2px 0; text-align: center;\">J</td></tr><tr><td style=\"padding: 2px 0; text-align: center;\">A</td><td style=\"padding: 2px 0; text-align: center;\">R</td><td style=\"padding: 2px 0; text-align: center;\">R</td><td style=\"padding: 2px 0; text-align: center;\">K</td><td style=\"padding: 2px 0; text-align: center;\">A</td><td style=\"padding: 2px 0; text-align: center;\">G</td><td style=\"padding: 2px 0; text-align: center;\">T</td><td style=\"padding: 2px 0; text-align: center;\">H</td><td style=\"padding: 2px 0; text-align: center;\">A</td><td style=\"padding: 2px 0; text-align: center;\">R</td><td style=\"padding: 2px 0; text-align: center;\">H</td><td style=\"padding: 2px 0; text-align: center;\">E</td><td style=\"padding: 2px 0; text-align: center;\">Y</td><td style=\"padding: 2px 0; text-align: center;\">D</td><td style=\"padding: 2px 0; text-align: center;\">H</td><td style=\"padding: 2px 0; text-align: center;\">H</td><td style=\"padding: 2px 0; text-align: center;\">A</td><td style=\"padding: 2px 0; text-align: center;\">I</td><td style=\"padding: 2px 0; text-align: center;\">A</td><td style=\"padding: 2px 0; text-align: center;\">R</td></tr><tr><td style=\"padding: 2px 0; text-align: center;\">N</td><td style=\"padding: 2px 0; text-align: center;\">S</td><td style=\"padding: 2px 0; text-align: center;\">A</td><td style=\"padding: 2px 0; text-align: center;\">A</td><td style=\"padding: 2px 0; text-align: center;\">L</td><td style=\"padding: 2px 0; text-align: center;\">I</td><td style=\"padding: 2px 0; text-align: center;\">A</td><td style=\"padding: 2px 0; text-align: center;\">T</td><td style=\"padding: 2px 0; text-align: center;\">L</td><td style=\"padding: 2px 0; text-align: center;\">E</td><td style=\"padding: 2px 0; text-align: center;\">I</td><td style=\"padding: 2px 0; text-align: center;\">Y</td><td style=\"padding: 2px 0; text-align: center;\">A</td><td style=\"padding: 2px 0; text-align: center;\">B</td><td style=\"padding: 2px 0; text-align: center;\">A</td><td style=\"padding: 2px 0; text-align: center;\">Y</td><td style=\"padding: 2px 0; text-align: center;\">T</td><td style=\"padding: 2px 0; text-align: center;\">H</td><td style=\"padding: 2px 0; text-align: center;\">R</td><td style=\"padding: 2px 0; text-align: center;\">L</td></tr><tr><td style=\"padding: 2px 0; text-align: center;\">A</td><td style=\"padding: 2px 0; text-align: center;\">Z</td><td style=\"padding: 2px 0; text-align: center;\">V</td><td style=\"padding: 2px 0; text-align: center;\">N</td><td style=\"padding: 2px 0; text-align: center;\">W</td><td style=\"padding: 2px 0; text-align: center;\">R</td><td style=\"padding: 2px 0; text-align: center;\">E</td><td style=\"padding: 2px 0; text-align: center;\">D</td><td style=\"padding: 2px 0; text-align: center;\">S</td><td style=\"padding: 2px 0; text-align: center;\">P</td><td style=\"padding: 2px 0; text-align: center;\">P</td><td style=\"padding: 2px 0; text-align: center;\">A</td><td style=\"padding: 2px 0; text-align: center;\">N</td><td style=\"padding: 2px 0; text-align: center;\">H</td><td style=\"padding: 2px 0; text-align: center;\">D</td><td style=\"padding: 2px 0; text-align: center;\">A</td><td style=\"padding: 2px 0; text-align: center;\">O</td><td style=\"padding: 2px 0; text-align: center;\">J</td><td style=\"padding: 2px 0; text-align: center;\">U</td><td style=\"padding: 2px 0; text-align: center;\">K</td></tr><tr><td style=\"padding: 2px 0; text-align: center;\">G</td><td style=\"padding: 2px 0; text-align: center;\">O</td><td style=\"padding: 2px 0; text-align: center;\">A</td><td style=\"padding: 2px 0; text-align: center;\">N</td><td style=\"padding: 2px 0; text-align: center;\">A</td><td style=\"padding: 2px 0; text-align: center;\">I</td><td style=\"padding: 2px 0; text-align: center;\">M</td><td style=\"padding: 2px 0; text-align: center;\">U</td><td style=\"padding: 2px 0; text-align: center;\">D</td><td style=\"padding: 2px 0; text-align: center;\">I</td><td style=\"padding: 2px 0; text-align: center;\">K</td><td style=\"padding: 2px 0; text-align: center;\">D</td><td style=\"padding: 2px 0; text-align: center;\">P</td><td style=\"padding: 2px 0; text-align: center;\">M</td><td style=\"padding: 2px 0; text-align: center;\">W</td><td style=\"padding: 2px 0; text-align: center;\">D</td><td style=\"padding: 2px 0; text-align: center;\">A</td><td style=\"padding: 2px 0; text-align: center;\">B</td><td style=\"padding: 2px 0; text-align: center;\">P</td><td style=\"padding: 2px 0; text-align: center;\">E</td></tr><tr><td style=\"padding: 2px 0; text-align: center;\">P</td><td style=\"padding: 2px 0; text-align: center;\">A</td><td style=\"padding: 2px 0; text-align: center;\">L</td><td style=\"padding: 2px 0; text-align: center;\">L</td><td style=\"padding: 2px 0; text-align: center;\">J</td><td style=\"padding: 2px 0; text-align: center;\">S</td><td style=\"padding: 2px 0; text-align: center;\">H</td><td style=\"padding: 2px 0; text-align: center;\">E</td><td style=\"padding: 2px 0; text-align: center;\">V</td><td style=\"padding: 2px 0; text-align: center;\">R</td><td style=\"padding: 2px 0; text-align: center;\">I</td><td style=\"padding: 2px 0; text-align: center;\">Y</td><td style=\"padding: 2px 0; text-align: center;\">E</td><td style=\"padding: 2px 0; text-align: center;\">V</td><td style=\"padding: 2px 0; text-align: center;\">E</td><td style=\"padding: 2px 0; text-align: center;\">R</td><td style=\"padding: 2px 0; text-align: center;\">E</td><td style=\"padding: 2px 0; text-align: center;\">S</td><td style=\"padding: 2px 0; text-align: center;\">T</td><td style=\"padding: 2px 0; text-align: center;\">M</td></tr><tr><td style=\"padding: 2px 0; text-align: center;\">U</td><td style=\"padding: 2px 0; text-align: center;\">O</td><td style=\"padding: 2px 0; text-align: center;\">I</td><td style=\"padding: 2px 0; text-align: center;\">M</td><td style=\"padding: 2px 0; text-align: center;\">Y</td><td style=\"padding: 2px 0; text-align: center;\">R</td><td style=\"padding: 2px 0; text-align: center;\">Y</td><td style=\"padding: 2px 0; text-align: center;\">P</td><td style=\"padding: 2px 0; text-align: center;\">A</td><td style=\"padding: 2px 0; text-align: center;\">T</td><td style=\"padding: 2px 0; text-align: center;\">L</td><td style=\"padding: 2px 0; text-align: center;\">I</td><td style=\"padding: 2px 0; text-align: center;\">G</td><td style=\"padding: 2px 0; text-align: center;\">J</td><td style=\"padding: 2px 0; text-align: center;\">E</td><td style=\"padding: 2px 0; text-align: center;\">I</td><td style=\"padding: 2px 0; text-align: center;\">T</td><td style=\"padding: 2px 0; text-align: center;\">H</td><td style=\"padding: 2px 0; text-align: center;\">A</td><td style=\"padding: 2px 0; text-align: center;\">R</td></tr><tr><td style=\"padding: 2px 0; text-align: center;\">R</td><td style=\"padding: 2px 0; text-align: center;\">K</td><td style=\"padding: 2px 0; text-align: center;\">I</td><td style=\"padding: 2px 0; text-align: center;\">Q</td><td style=\"padding: 2px 0; text-align: center;\">S</td><td style=\"padding: 2px 0; text-align: center;\">L</td><td style=\"padding: 2px 0; text-align: center;\">A</td><td style=\"padding: 2px 0; text-align: center;\">H</td><td style=\"padding: 2px 0; text-align: center;\">C</td><td style=\"padding: 2px 0; text-align: center;\">N</td><td style=\"padding: 2px 0; text-align: center;\">A</td><td style=\"padding: 2px 0; text-align: center;\">V</td><td style=\"padding: 2px 0; text-align: center;\">R</td><td style=\"padding: 2px 0; text-align: center;\">V</td><td style=\"padding: 2px 0; text-align: center;\">P</td><td style=\"padding: 2px 0; text-align: center;\">E</td><td style=\"padding: 2px 0; text-align: center;\">A</td><td style=\"padding: 2px 0; text-align: center;\">T</td><td style=\"padding: 2px 0; text-align: center;\">S</td><td style=\"padding: 2px 0; text-align: center;\">P</td></tr></table></div></div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\"><i>Position = row (R) and column (C) of the first letter; the arrow shows the reading direction.</i></div><div class=\"sub-q\">Peaks</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Word</th><th>Where</th><th>Located in</th></tr><tr><td><b>Kanchenjunga</b></td><td><span style=\"white-space: nowrap;\">R8, C4 →</span></td><td>Sikkim</td></tr><tr><td><b>Everest</b></td><td><span style=\"white-space: nowrap;\">R15, C13 →</span></td><td>Nepal</td></tr><tr><td><b>Anai Mudi</b></td><td><span style=\"white-space: nowrap;\">R14, C3 →</span></td><td>Western Ghats, Kerala</td></tr></table></div><div class=\"sub-q\">Passes</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Word</th><th>Where</th><th>Located in</th></tr><tr><td><b>Nathu La</b></td><td><span style=\"white-space: nowrap;\">R1, C7 →</span></td><td>Sikkim</td></tr><tr><td><b>Shipki La</b></td><td><span style=\"white-space: nowrap;\">R10, C11 ↓</span></td><td>Himachal Pradesh</td></tr><tr><td><b>Bomdi La</b></td><td><span style=\"white-space: nowrap;\">R2, C15 ↓</span></td><td>Arunachal Pradesh</td></tr><tr><td><b>Bhor (Ghat)</b></td><td><span style=\"white-space: nowrap;\">R2, C15 →</span></td><td>Western Ghats, Maharashtra</td></tr></table></div><div class=\"sub-q\">Ranges</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Word</th><th>Where</th><th>Located in</th></tr><tr><td><b>Vindhya</b></td><td><span style=\"white-space: nowrap;\">R6, C13 ↓</span></td><td>North of the Narmada</td></tr><tr><td><b>Satpura</b></td><td><span style=\"white-space: nowrap;\">R17, C19 ↑</span></td><td>South of the Narmada</td></tr><tr><td><b>Aravali</b></td><td><span style=\"white-space: nowrap;\">R10, C3 ↓</span></td><td>Gujarat to Delhi</td></tr><tr><td><b>Maikal</b></td><td><span style=\"white-space: nowrap;\">R3, C16 ↓</span></td><td>Eastern extension of the Deccan plateau</td></tr></table></div><div class=\"sub-q\">Hills</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Word</th><th>Where</th><th>Located in</th></tr><tr><td><b>Kaimur</b></td><td><span style=\"white-space: nowrap;\">R2, C10 ↓</span></td><td>Eastern extension of the Deccan plateau</td></tr><tr><td><b>Garo</b></td><td><span style=\"white-space: nowrap;\">R6, C6 →</span></td><td>Meghalaya</td></tr><tr><td><b>Khasi</b></td><td><span style=\"white-space: nowrap;\">R8, C4 ↑</span></td><td>Meghalaya</td></tr><tr><td><b>Jaintia</b></td><td><span style=\"white-space: nowrap;\">R2, C5 ↓</span></td><td>Meghalaya</td></tr><tr><td><b>Nilgiri</b></td><td><span style=\"white-space: nowrap;\">R8, C6 ↓</span></td><td>Tamil Nadu (where the Ghats meet)</td></tr></table></div><div class=\"sub-q\">Plateaus</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Word</th><th>Where</th><th>Located in</th></tr><tr><td><b>Chotanagpur</b></td><td><span style=\"white-space: nowrap;\">R7, C1 ↓</span></td><td>Jharkhand</td></tr><tr><td><b>Malwa</b></td><td><span style=\"white-space: nowrap;\">R10, C5 ↓</span></td><td>Madhya Pradesh</td></tr></table></div><div class=\"sub-q\">Dun</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Word</th><th>Where</th><th>Located in</th></tr><tr><td><b>Patli (Dun)</b></td><td><span style=\"white-space: nowrap;\">R16, C8 →</span></td><td>Between Lesser Himalaya and Shiwaliks</td></tr></table></div><div class=\"sub-q\">Deserts</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Word</th><th>Where</th><th>Located in</th></tr><tr><td><b>Thar</b></td><td><span style=\"white-space: nowrap;\">R11, C7 →</span></td><td>Rajasthan</td></tr></table></div><div class=\"sub-q\">Coasts</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Word</th><th>Where</th><th>Located in</th></tr><tr><td><b>Konkan</b></td><td><span style=\"white-space: nowrap;\">R8, C4 ↓</span></td><td>Mumbai – Goa</td></tr></table></div><div class=\"rev\"><i>Also hidden, but misprinted in the puzzle:</i> <b>Shevroy</b> hills (R15, C6 →, printed SHEVRIY) and <b>Purvanchal</b> (R17, C15 ←, printed PVRVANCHAL).</div></div></div>\n  </div>\n</div>"
   },
-  introduction:
-    "India is divided into six major physiographic divisions, ranging from young fold mountains to ancient plateaus.",
-  definitions: [],
-  keyPoints: [],
-  formulas: [],
-  crux: [],
-  mcqs: [
+  "introduction": "India is divided into six major physiographic divisions, ranging from young fold mountains to ancient plateaus.",
+  "definitions": [],
+  "keyPoints": [],
+  "formulas": [],
+  "crux": [],
+  "mcqs": [
     {
-      id: "sst-geo-c9-2-mcq-1",
-      question: "Which is the southernmost range of the Himalayas?",
-      options: ["Himadri", "Himachal", "Shiwalik", "Purvachal"],
-      correctAnswer: "c",
-    },
-    {
-      id: "sst-geo-c9-2-mcq-2",
-      question: "The highest peak in the Eastern Ghats is:",
-      options: ["Anamudi", "Mahendragiri", "Kanchenjunga", "Khasi"],
-      correctAnswer: "b",
-    },
-    {
-      id: "sst-geo-c9-2-mcq-3",
-      question: "A landmass bounded by sea on three sides is referred to as:",
-      options: ["Coast", "Island", "Peninsula", "Gulf"],
-      correctAnswer: "c",
-    },
-    {
-      id: "sst-geo-c9-2-mcq-4",
-      question:
-        "Which of the following is the older alluvium soil of the Northern Plains?",
-      options: ["Bhabar", "Terai", "Bhangar", "Khadar"],
-      correctAnswer: "c",
-    },
-    {
-      id: "sst-geo-c9-2-mcq-5",
-      question:
-        "The longitudinal valleys lying between the Lesser Himalayas and the Shiwaliks are known as:",
-      options: ["Duns", "Passes", "Ghats", "Barchans"],
-      correctAnswer: "a",
-    },
-    {
-      id: "sst-geo-c9-2-mcq-6",
-      question: "Which is the only large river flowing in the Thar Desert?",
-      options: ["Narmada", "Tapi", "Luni", "Sabarmati"],
-      correctAnswer: "c",
-    },
-    {
-      id: "sst-geo-c9-2-mcq-7",
-      question: "The Lakshadweep Islands are of which origin?",
-      options: ["Volcanic", "Glacial", "Coral", "Tectonic"],
-      correctAnswer: "c",
-    },
-    {
-      id: "sst-geo-c9-2-mcq-8",
-      question:
-        "What is the narrow belt of pebble deposits parallel to the Shiwalik slopes called?",
-      options: ["Bhabar", "Terai", "Khadar", "Bhangar"],
-      correctAnswer: "a",
-    },
-    {
-      id: "sst-geo-c9-2-mcq-9",
-      question:
-        "Which plateau lies north of the Narmada River, covering a major area of the Malwa Plateau?",
-      options: [
-        "Deccan Plateau",
-        "Chotanagpur Plateau",
-        "Central Highlands",
-        "Shillong Plateau",
+      "id": "sst-geo-c9-2-mcq-1",
+      "question": "<div style='text-align: justify;'>Geologically, which is one of the most ancient landmasses of the earth?</div>",
+      "options": [
+        "A):   Himalayas",
+        "B):   Peninsular Plateau",
+        "C):   Northern Plains",
+        "D):   Indian Desert"
       ],
-      correctAnswer: "c",
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>The Himalayas and Northern Plains are the most recent landforms.</div>"
     },
     {
-      id: "sst-geo-c9-2-mcq-10",
-      question: "Which is the highest peak in the Western Ghats?",
-      options: ["Mahendragiri", "Anamudi", "Doda Betta", "Guru Shikhar"],
-      correctAnswer: "b",
+      "id": "sst-geo-c9-2-mcq-2",
+      "question": "<div style='text-align: justify;'>The Himalayas form an arc covering a distance of about —</div>",
+      "options": [
+        "A):   1,500 km",
+        "B):   3,214 km",
+        "C):   7,500 km",
+        "D):   2,400 km"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>They run from the Indus to the Brahmaputra.</div>"
     },
-  ],
-  summary: [],
-  exercises: [
     {
-      id: "ex-sst-qa",
-      name: "Q & A",
-      questions: [],
+      "id": "sst-geo-c9-2-mcq-3",
+      "question": "<div style='text-align: justify;'>The average height of the Himadri is —</div>",
+      "options": [
+        "A):   6,000 metres",
+        "B):   1,000 metres",
+        "C):   3,700 metres",
+        "D):   8,848 metres"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>It contains all the prominent Himalayan peaks.</div>"
     },
+    {
+      "id": "sst-geo-c9-2-mcq-4",
+      "question": "<div style='text-align: justify;'>The longest and most important range of the Himachal (Lesser Himalaya) is —</div>",
+      "options": [
+        "A):   Dhaula Dhar",
+        "B):   Mahabharat",
+        "C):   Pir Panjal",
+        "D):   Zaskar"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>The famous valley of Kashmir lies in this range.</div>"
+    },
+    {
+      "id": "sst-geo-c9-2-mcq-5",
+      "question": "<div style='text-align: justify;'>The longitudinal valleys between the Lesser Himalaya and the Shiwaliks are called —</div>",
+      "options": [
+        "A):   Doabs",
+        "B):   Duns",
+        "C):   Ghats",
+        "D):   Bugyals"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Examples: Dehra Dun, Kotli Dun, Patli Dun.</div>"
+    },
+    {
+      "id": "sst-geo-c9-2-mcq-6",
+      "question": "<div style='text-align: justify;'>The part of the Himalayas between the Satluj and Kali rivers is known as —</div>",
+      "options": [
+        "A):   Punjab Himalaya",
+        "B):   Nepal Himalayas",
+        "C):   Assam Himalayas",
+        "D):   Kumaon Himalayas"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>The Kali and Teesta demarcate the Nepal Himalayas.</div>"
+    },
+    {
+      "id": "sst-geo-c9-2-mcq-7",
+      "question": "<div style='text-align: justify;'>Which of these is NOT a part of the Purvachal?</div>",
+      "options": [
+        "A):   Garo hills",
+        "B):   Patkai hills",
+        "C):   Naga hills",
+        "D):   Mizo hills"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Garo hills are part of the Meghalaya plateau.</div>"
+    },
+    {
+      "id": "sst-geo-c9-2-mcq-8",
+      "question": "<div style='text-align: justify;'>The Northern Plain spreads over an area of about —</div>",
+      "options": [
+        "A):   3.28 lakh sq km",
+        "B):   32 lakh sq km",
+        "C):   7 lakh sq km",
+        "D):   2.4 lakh sq km"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>It is about 2,400 km long and 240–320 km broad.</div>"
+    },
+    {
+      "id": "sst-geo-c9-2-mcq-9",
+      "question": "<div style='text-align: justify;'>The largest inhabited riverine island in the world is —</div>",
+      "options": [
+        "A):   Pitti",
+        "B):   Majuli",
+        "C):   Barren",
+        "D):   Minicoy"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>It lies in the Brahmaputra.</div>"
+    },
+    {
+      "id": "sst-geo-c9-2-mcq-10",
+      "question": "<div style='text-align: justify;'>The word 'doab' means —</div>",
+      "options": [
+        "A):   five waters",
+        "B):   river bank",
+        "C):   flood plain",
+        "D):   two waters"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>'Do' = two and 'ab' = water.</div>"
+    },
+    {
+      "id": "sst-geo-c9-2-mcq-11",
+      "question": "<div style='text-align: justify;'>The Ganga plain extends between which rivers?</div>",
+      "options": [
+        "A):   Ghaggar and Teesta",
+        "B):   Indus and Satluj",
+        "C):   Kali and Teesta",
+        "D):   Teesta and Dihang"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>The Brahmaputra plain lies further east in Assam.</div>"
+    },
+    {
+      "id": "sst-geo-c9-2-mcq-12",
+      "question": "<div style='text-align: justify;'>The calcareous deposits found in the bhangar are locally known as —</div>",
+      "options": [
+        "A):   khadar",
+        "B):   bhabar",
+        "C):   kankar",
+        "D):   terai"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Bhangar is the older alluvium.</div>"
+    },
+    {
+      "id": "sst-geo-c9-2-mcq-13",
+      "question": "<div style='text-align: justify;'>The Chotanagpur plateau is drained by the river —</div>",
+      "options": [
+        "A):   Narmada",
+        "B):   Chambal",
+        "C):   Damodar",
+        "D):   Betwa"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>It marks the eastward extension of the Central Highlands.</div>"
+    },
+    {
+      "id": "sst-geo-c9-2-mcq-14",
+      "question": "<div style='text-align: justify;'>Thal, Bhor and Pal are passes in the —</div>",
+      "options": [
+        "A):   Eastern Ghats",
+        "B):   Western Ghats",
+        "C):   Aravali Hills",
+        "D):   Satpura range"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>The Western Ghats can be crossed through passes only.</div>"
+    },
+    {
+      "id": "sst-geo-c9-2-mcq-15",
+      "question": "<div style='text-align: justify;'>The highest peak of the Western Ghats mentioned in the textbook is —</div>",
+      "options": [
+        "A):   Mahendragiri",
+        "B):   Anai Mudi",
+        "C):   Doda Betta",
+        "D):   Kanchenjunga"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>It is 2,695 m high; Doda Betta is 2,637 m.</div>"
+    },
+    {
+      "id": "sst-geo-c9-2-mcq-16",
+      "question": "<div style='text-align: justify;'>The only large river of the Indian Desert is —</div>",
+      "options": [
+        "A):   Chambal",
+        "B):   Ghaggar",
+        "C):   Mahi",
+        "D):   Luni"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Other streams disappear into the sand.</div>"
+    },
+    {
+      "id": "sst-geo-c9-2-mcq-17",
+      "question": "<div style='text-align: justify;'>The central stretch of the western coast is called the —</div>",
+      "options": [
+        "A):   Kannad Plain",
+        "B):   Konkan",
+        "C):   Malabar coast",
+        "D):   Northern Circar"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Konkan is the northern part, Malabar the southern.</div>"
+    },
+    {
+      "id": "sst-geo-c9-2-mcq-18",
+      "question": "<div style='text-align: justify;'>India's only active volcano is found on —</div>",
+      "options": [
+        "A):   Pitti island",
+        "B):   Kavaratti island",
+        "C):   Barren island",
+        "D):   Minicoy island"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>It lies in the Andaman and Nicobar group.</div>"
+    },
+    {
+      "id": "sst-geo-c9-2-mcq-19",
+      "question": "<div style='text-align: justify;'>Assertion (A): The Western Ghats cause orographic rain. Reason (R): They face the rain-bearing moist winds, which rise along their western slopes.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Rising moist air cools and gives rain on the western slopes.</div>"
+    },
+    {
+      "id": "sst-geo-c9-2-mcq-20",
+      "question": "<div style='text-align: justify;'>Assertion (A): The Lakshadweep islands are an elevated portion of submarine mountains. Reason (R): The Lakshadweep group is composed of small coral islands.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>It is the Andaman and Nicobar group that is an elevated portion of submarine mountains.</div>"
+    }
   ],
-  examples: [],
+  "summary": [],
+  "exercises": [
+    {
+      "id": "sg9-2-ex-q",
+      "name": "Questions",
+      "questions": []
+    },
+    {
+      "id": "sg9-2-ex-map",
+      "name": "Map Skills",
+      "questions": []
+    },
+    {
+      "id": "sg9-2-ex-int",
+      "name": "In-Text",
+      "questions": []
+    },
+    {
+      "id": "sg9-2-ex-proj",
+      "name": "Projects",
+      "questions": []
+    }
+  ],
+  "examples": []
 };
