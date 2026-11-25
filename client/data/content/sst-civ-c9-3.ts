@@ -1,464 +1,286 @@
 import { ChapterContent } from "../types";
 
-const themeColor = "#42A5F5"; // Purple theme color for Civics/Political Science
-
 export const sstCivC93: ChapterContent = {
-  id: "sst-civ-c9-3",
-  number: 3,
-  title: "Electoral Politics",
-  introduction:
-    "This chapter explains why elections are necessary and useful in a democracy. It describes the various stages of elections in India, from drawing constituencies to declaring results, and discusses what makes elections in India democratic.",
-  definitions: [
-    {
-      term: "Electoral Constituency",
-      description:
-        "A geographical area designated for the purpose of electing a representative to a legislative body like the Lok Sabha or Legislative Assembly.",
-    },
-    {
-      term: "Electoral Roll",
-      description:
-        "The official list of citizens who are registered and eligible to cast their vote in an election. Also known as the voters' list.",
-    },
-    {
-      term: "Voter Turnout",
-      description:
-        "The percentage of eligible voters who actually cast their ballots in an election, indicating the level of public participation.",
-    },
-    {
-      term: "Model Code of Conduct",
-      description:
-        "A set of guidelines and rules issued by the Election Commission that political parties and candidates must follow during election campaigns.",
-    },
-    {
-      term: "Incumbency",
-      description:
-        "The holding of an office or the period during which one is in office. In elections, it refers to the currently elected official or ruling party contesting again.",
-    },
-  ],
-  keyPoints: [
-    "Why Elections?: Elections are democratic mechanisms where voters choose who will make laws, form the government, and decide policies.",
-    "What Makes an Election Democratic?: Everyone should have one vote with equal value, choices must be available, elections should be regular, and they must be free and fair.",
-    "Is Political Competition Good?: While it creates division and factionalism, competition is necessary because it rewards politicians for serving the public and punishes them for failing.",
-    "System of Elections in India: Elections to Lok Sabha (Parliament) and Vidhan Sabha (Assemblies) are held every 5 years. The country is divided into single-member constituencies based on population.",
-    "Reserved Constituencies: To ensure fair representation of weaker sections, some constituencies are reserved for Scheduled Castes (SCs) and Scheduled Tribes (STs).",
-    "Stages of Elections: Voter list preparation, announcement of schedule, nomination of candidates, release of manifestos, election campaigns, polling day (voting), and counting of votes.",
-    "Independent Election Commission: The Election Commission of India (ECI) has supreme power to conduct and regulate elections, independent of the government.",
-    "Popular Participation: Voter turnout in India shows high participation of poor and illiterate sections, who value their votes as a tool to pressure governments.",
-  ],
-  formulas: [],
-  crux: [
-    "Electoral politics is about political competition, which is channelized to serve the public interest.",
-    "The strength of Indian democracy lies in its powerful, independent Election Commission and high voter turnout of ordinary citizens.",
-    "Acceptance of the electoral verdict by losing parties is the ultimate test of a free and fair election.",
-  ],
-  mcqs: [
-    {
-      id: "sst-civ-c9-3-mcq-1",
-      question: "Which of the following statements about the reasons for conducting elections is false?",
-      options: [
-        "Elections enable people to judge the performance of the government",
-        "People select the representative of their choice in an election",
-        "Elections enable people to evaluate the performance of the judiciary",
-        "People can indicate which policies they prefer",
-      ],
-      correctAnswer: "c",
-    },
-    {
-      id: "sst-civ-c9-3-mcq-2",
-      question: "Which of these is not a good reason to say that Indian elections are democratic?",
-      options: [
-        "India has the largest number of voters in the world",
-        "India's Election Commission is very powerful",
-        "In India, everyone above the age of 18 has a right to vote",
-        "In India, the losing parties accept the electoral verdict",
-      ],
-      correctAnswer: "a",
-    },
-    {
-      id: "sst-civ-c9-3-mcq-3",
-      question: "Who led the 'Nyaya Yudh' (Struggle for Justice) movement in Haryana in 1987?",
-      options: [
-        "Chaudhary Devi Lal",
-        "Bhajan Lal",
-        "Bansi Lal",
-        "Chaudhary Charan Singh",
-      ],
-      correctAnswer: "a",
-    },
-    {
-      id: "sst-civ-c9-3-mcq-4",
-      question: "How many constituencies are currently reserved for Scheduled Castes (SCs) in the Lok Sabha?",
-      options: ["84", "47", "79", "543"],
-      correctAnswer: "a",
-    },
-    {
-      id: "sst-civ-c9-3-mcq-5",
-      question: "What is the minimum age required for a citizen to contest elections in India?",
-      options: ["18 years", "21 years", "25 years", "30 years"],
-      correctAnswer: "c",
-    },
-    {
-      id: "sst-civ-c9-3-mcq-6",
-      question: "The voters' list is officially known as:",
-      options: ["Electoral Roll", "Citizen Directory", "Nomination Sheet", "Polling Registry"],
-      correctAnswer: "a",
-    },
-    {
-      id: "sst-civ-c9-3-mcq-7",
-      question: "Which of the following is prohibited for candidates under the Model Code of Conduct?",
-      options: [
-        "Holding public campaign rallies",
-        "Using government vehicles and officials for electioneering",
-        "Releasing election manifestos",
-        "Conducting door-to-door campaigning",
-      ],
-      correctAnswer: "b",
-    },
-    {
-      id: "sst-civ-c9-3-mcq-8",
-      question: "What is the term of office for the members of Lok Sabha and State Legislative Assemblies in India?",
-      options: ["4 years", "5 years", "6 years", "2 years"],
-      correctAnswer: "b",
-    },
-    {
-      id: "sst-civ-c9-3-mcq-9",
-      question: "Elections held to fill a vacancy caused by the death or resignation of a member are called:",
-      options: ["General Elections", "Mid-term Elections", "By-elections", "Referendums"],
-      correctAnswer: "c",
-    },
-    {
-      id: "sst-civ-c9-3-mcq-10",
-      question: "Who appoints the Chief Election Commissioner (CEC) of India?",
-      options: [
-        "The Prime Minister of India",
-        "The Chief Justice of India",
-        "The President of India",
-        "The Parliament of India",
-      ],
-      correctAnswer: "c",
-    },
-  ],
-  summary: [
-    "Elections are vital for representative democracies to choose governments and policies.",
-    "India's electoral system relies on universal adult franchise, reserved constituencies, and strict compliance with the Model Code of Conduct.",
-    "A completely independent and powerful Election Commission of India (ECI) acts as the watchdog to ensure free and fair elections.",
-  ],
-  isHtmlView: true,
-  htmlOverview: `
-    <div style="padding: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: transparent;">
-      <!-- Key Concepts Introduction -->
-      <div style="background-color: #1E1E2E; border: 1px solid rgba(156, 39, 176, 0.25); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 20px; font-weight: 700; margin-top: 0; margin-bottom: 12px; display: flex; align-items: center;">
-          <span style="margin-right: 8px; font-size: 22px;">🗳️</span> Introduction
-        </h3>
-        <p style="color: #E0E0E0; font-size: 15px; line-height: 1.6; text-align: justify; margin: 0; font-weight: 300;">
-          Elections are the core mechanism of any democracy. This chapter explores how democratic elections work, why political competition is necessary, and walks through the entire process of how elections are conducted in India. We will also learn about the role of the independent Election Commission and what makes the Indian electoral process democratic.
-        </p>
-      </div>
-
-      <!-- Why Do We Need Elections? -->
-      <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 600; margin-top: 0; margin-bottom: 14px; display: flex; align-items: center;">
-          <span style="margin-right: 8px; font-size: 18px;">📌</span> Key Features of Indian Elections
-        </h3>
-        <ul style="color: #B3B3C6; font-size: 14.5px; line-height: 1.7; margin: 0; padding-left: 20px; text-align: justify;">
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">Electoral Constituencies:</b> The country is divided into areas based on population. The voters in each constituency elect one representative. For Lok Sabha, there are 543 constituencies.</li>
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">Reserved Constituencies:</b> Seats are reserved for Scheduled Castes (SCs) and Scheduled Tribes (STs) to ensure they are represented in Parliament and assemblies.</li>
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">Universal Adult Franchise:</b> Every Indian citizen aged 18 years or above has the right to vote, and each vote has equal value.</li>
-          <li style="margin-bottom: 0;"><b style="color: ${themeColor};">Independent Election Commission:</b> ECI enjoys the same independence as the judiciary. It holds complete power over conducting and managing elections fairly.</li>
-        </ul>
-      </div>
-      
-      <!-- Key Terms Glossy Box -->
-      <div style="background: rgba(156, 39, 176, 0.05); border: 1.5px solid rgba(156, 39, 176, 0.25); border-radius: 16px; padding: 20px; box-shadow: 0 4px 30px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 600; margin-top: 0; margin-bottom: 12px;">🔑 Key Terms</h3>
-        <div style="color: #E0E0E0; font-size: 14px; line-height: 1.6; text-align: justify;">
-          <p style="margin-top: 0; margin-bottom: 8px;"><b style="color: ${themeColor};">EVM (Electronic Voting Machine):</b> An electronic device used to record votes during polling.</p>
-          <p style="margin-bottom: 8px;"><b style="color: ${themeColor};">VVPAT (Voter Verifiable Paper Audit Trail):</b> An independent printer system connected to EVMs that allows voters to verify their vote is cast correctly.</p>
-          <p style="margin-bottom: 0;"><b style="color: ${themeColor};">Election Manifesto:</b> A document published by a political party outlining its proposed policies and promises to the public if elected.</p>
-        </div>
-      </div>
-    </div>
-  `,
-  htmlExercises: {
-    "ex-sst-qa": `
-      <div style="padding: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: transparent;">
-        
-        <!-- Q1 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
-            Q1. Which of the following statements about the reasons for conducting elections are false?
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            Answer: Option <b style="color: ${themeColor};">(c) Elections enable people to evaluate the performance of the judiciary.</b>
-            <p style="margin: 6px 0 0 0;">
-              <b>Reason:</b> In India, the judiciary is independent of the government and is not subject to public evaluation or control via elections.
-            </p>
-          </div>
-        </div>
-
-        <!-- Q2 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
-            Q2. Which of these is not a good reason to say that Indian elections are democratic?
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            Answer: Option <b style="color: ${themeColor};">(a) India has the largest number of voters in the world.</b>
-            <p style="margin: 6px 0 0 0;">
-              <b>Reason:</b> The size of the electorate is a matter of population and does not guarantee that the elections are free, fair, or democratic.
-            </p>
-          </div>
-        </div>
-
-        <!-- Q3 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
-            Q3. Match the following:
-          </p>
-          <div style="width: 100%;">
-            <table style="width: 100%; table-layout: fixed; border-collapse: collapse; font-size: 13px; color: #D1D1E9; text-align: left;">
-              <thead>
-                <tr style="border-bottom: 2px solid rgba(156, 39, 176, 0.4); background-color: rgba(156, 39, 176, 0.15);">
-                  <th style="padding: 10px 8px; font-weight: 600; color: #E0E0E0; border: 1px solid rgba(255,255,255,0.08); width: 50%; word-wrap: break-word; white-space: normal;">Statement (Column A)</th>
-                  <th style="padding: 10px 8px; font-weight: 600; color: #E0E0E0; border: 1px solid rgba(255,255,255,0.08); width: 50%; word-wrap: break-word; white-space: normal;">Correct Match (Column B)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
-                  <td style="padding: 10px 8px; border: 1px solid rgba(255,255,255,0.08); line-height: 1.4; word-wrap: break-word; white-space: normal;">(a) It is necessary to keep the voters list up to date because:</td>
-                  <td style="padding: 10px 8px; border: 1px solid rgba(255,255,255,0.08); color: ${themeColor}; font-weight: 600; line-height: 1.4; word-wrap: break-word; white-space: normal;">(iv) some people may have moved away from the area where they voted last.</td>
-                </tr>
-                <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
-                  <td style="padding: 10px 8px; border: 1px solid rgba(255,255,255,0.08); line-height: 1.4; word-wrap: break-word; white-space: normal;">(b) Some constituencies are reserved for SCs and STs so that:</td>
-                  <td style="padding: 10px 8px; border: 1px solid rgba(255,255,255,0.08); color: ${themeColor}; font-weight: 600; line-height: 1.4; word-wrap: break-word; white-space: normal;">(i) there is a fair representation of all sections of our society.</td>
-                </tr>
-                <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
-                  <td style="padding: 10px 8px; border: 1px solid rgba(255,255,255,0.08); line-height: 1.4; word-wrap: break-word; white-space: normal;">(c) Everyone has one and only one vote so that:</td>
-                  <td style="padding: 10px 8px; border: 1px solid rgba(255,255,255,0.08); color: ${themeColor}; font-weight: 600; line-height: 1.4; word-wrap: break-word; white-space: normal;">(ii) everyone has equal opportunity to elect their representative.</td>
-                </tr>
-                <tr>
-                  <td style="padding: 10px 8px; border: 1px solid rgba(255,255,255,0.08); line-height: 1.4; word-wrap: break-word; white-space: normal;">(d) Party in power is not allowed to use government vehicles because:</td>
-                  <td style="padding: 10px 8px; border: 1px solid rgba(255,255,255,0.08); color: ${themeColor}; font-weight: 600; line-height: 1.4; word-wrap: break-word; white-space: normal;">(iii) all candidates must have a fair chance of competing in elections.</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <!-- Q4 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
-            Q4. List all the different election related activities mentioned in the chapter and arrange them in a time sequence, beginning with the first activity and ending with the last.
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <b style="color: ${themeColor}; font-weight: 600;">Correct Time Sequence:</b>
-            <ol style="margin: 6px 0 0 0; padding-left: 20px;">
-              <li style="margin-bottom: 6px;">Making of voters' list</li>
-              <li style="margin-bottom: 6px;">Announcing election schedule</li>
-              <li style="margin-bottom: 6px;">Filing nomination</li>
-              <li style="margin-bottom: 6px;">Releasing election manifestos</li>
-              <li style="margin-bottom: 6px;">Election campaign</li>
-              <li style="margin-bottom: 6px;">Casting of votes</li>
-              <li style="margin-bottom: 6px;">Counting of votes</li>
-              <li style="margin-bottom: 6px;">Declaration of election results</li>
-              <li style="margin-bottom: 0;">Ordering of re-poll (if rigging or malpractices occur)</li>
-            </ol>
-          </div>
-        </div>
-
-        <!-- Q5 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
-            Q5. Surekha is an officer in-charge of ensuring free and fair elections in an assembly constituency in a state. Describe what should she focus on for each of the following stages of election:
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
-              <li style="margin-bottom: 10px;">
-                <b>(a) Election campaign:</b> She should focus on preventing candidates from distributing money/gifts, using government vehicles, using religious symbols for votes, or exceeding spending limits.
-              </li>
-              <li style="margin-bottom: 10px;">
-                <b>(b) Polling day:</b> She must ensure that voting is peaceful, booths are not captured, voters are not threatened or bribed, and EVMs are sealed safely at the end of the day.
-              </li>
-              <li style="margin-bottom: 0;">
-                <b>(c) Counting day:</b> She needs to ensure that counting agents of all candidates are present, votes are counted accurately without manipulation, and security is maintained inside the counting center.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q6 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
-            Q6. Compare the proportion of communities in the US Congress with their population. Based on this, would you suggest a system of reservations?
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <b>Proportional Representation Comparison:</b>
-            <div style="width: 100%; margin: 10px 0 16px 0;">
-              <table style="width: 100%; table-layout: fixed; border-collapse: collapse; font-size: 12px; color: #D1D1E9; text-align: center;">
-                <thead>
-                  <tr style="border-bottom: 2px solid rgba(156, 39, 176, 0.4); background-color: rgba(156, 39, 176, 0.15);">
-                    <th style="padding: 8px 4px; font-weight: 600; color: #E0E0E0; border: 1px solid rgba(255,255,255,0.08); text-align: left; width: 28%; word-wrap: break-word; white-space: normal;">Community</th>
-                    <th style="padding: 8px 4px; font-weight: 600; color: #E0E0E0; border: 1px solid rgba(255,255,255,0.08); width: 24%; word-wrap: break-word; white-space: normal;">House of Reps</th>
-                    <th style="padding: 8px 4px; font-weight: 600; color: #E0E0E0; border: 1px solid rgba(255,255,255,0.08); width: 24%; word-wrap: break-word; white-space: normal;">US Pop (%)</th>
-                    <th style="padding: 8px 4px; font-weight: 600; color: #E0E0E0; border: 1px solid rgba(255,255,255,0.08); width: 24%; word-wrap: break-word; white-space: normal;">Status</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
-                    <td style="padding: 8px 4px; border: 1px solid rgba(255,255,255,0.08); text-align: left; font-weight: 600; word-wrap: break-word; white-space: normal;">Blacks</td>
-                    <td style="padding: 8px 4px; border: 1px solid rgba(255,255,255,0.08); word-wrap: break-word; white-space: normal;">8%</td>
-                    <td style="padding: 8px 4px; border: 1px solid rgba(255,255,255,0.08); word-wrap: break-word; white-space: normal;">13%</td>
-                    <td style="padding: 8px 4px; border: 1px solid rgba(255,255,255,0.08); color: #EF5350; font-weight: 600; word-wrap: break-word; white-space: normal;">Under-rep.</td>
-                  </tr>
-                  <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
-                    <td style="padding: 8px 4px; border: 1px solid rgba(255,255,255,0.08); text-align: left; font-weight: 600; word-wrap: break-word; white-space: normal;">Hispanics</td>
-                    <td style="padding: 8px 4px; border: 1px solid rgba(255,255,255,0.08); word-wrap: break-word; white-space: normal;">5%</td>
-                    <td style="padding: 8px 4px; border: 1px solid rgba(255,255,255,0.08); word-wrap: break-word; white-space: normal;">13%</td>
-                    <td style="padding: 8px 4px; border: 1px solid rgba(255,255,255,0.08); color: #EF5350; font-weight: 600; word-wrap: break-word; white-space: normal;">Highly Under-rep.</td>
-                  </tr>
-                  <tr>
-                    <td style="padding: 8px 4px; border: 1px solid rgba(255,255,255,0.08); text-align: left; font-weight: 600; word-wrap: break-word; white-space: normal;">Whites</td>
-                    <td style="padding: 8px 4px; border: 1px solid rgba(255,255,255,0.08); word-wrap: break-word; white-space: normal;">86%</td>
-                    <td style="padding: 8px 4px; border: 1px solid rgba(255,255,255,0.08); word-wrap: break-word; white-space: normal;">70%</td>
-                    <td style="padding: 8px 4px; border: 1px solid rgba(255,255,255,0.08); color: #66BB6A; font-weight: 600; word-wrap: break-word; white-space: normal;">Over-rep.</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <b>Suggestion:</b>
-            Yes, a system of reservation (similar to India's reserved constituencies) is recommended in the US Congress for Blacks and Hispanics. It would ensure that marginalized communities get representation proportional to their population, giving them a voice and preventing political isolation.
-          </div>
-        </div>
-
-        <!-- Q7 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
-            Q7. Can we draw the following conclusions from the information given in this chapter? Give two facts to support your position for each of these.
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
-              <li style="margin-bottom: 12px;">
-                <b>(a) Election Commission of India does not have enough powers to conduct free and fair elections.</b><br/>
-                • Position: <b style="color: ${themeColor};">Not Correct.</b><br/>
-                • Facts: (1) ECI acts independently of the government and the Chief Election Commissioner cannot be easily removed by the President. (2) During elections, government staff are placed under ECI control.
-              </li>
-              <li style="margin-bottom: 12px;">
-                <b>(b) There is a high level of popular participation in the elections in our country.</b><br/>
-                • Position: <b style="color: ${themeColor};">Correct.</b><br/>
-                • Facts: (1) Voter turnout in India has consistently remained stable or increased over decades. (2) In India, the poor, illiterate, and underprivileged sections vote in a larger proportion than the rich and privileged.
-              </li>
-              <li style="margin-bottom: 12px;">
-                <b>(c) It is very easy for the party in power to win an election.</b><br/>
-                • Position: <b style="color: ${themeColor};">Not Correct.</b><br/>
-                • Facts: (1) Ruling parties regularly lose elections in India (about half the time). (2) Candidates who spend huge amounts of money or have criminal records often lose elections.
-              </li>
-              <li style="margin-bottom: 0;">
-                <b>(d) Many reforms are needed to make our elections completely free and fair.</b><br/>
-                • Position: <b style="color: ${themeColor};">Correct.</b><br/>
-                • Facts: (1) Candidates with criminal backgrounds or links are often able to secure party tickets. (2) Rich candidates and parties enjoy an unfair advantage over smaller parties and independents.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q8 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
-            Q8. Chinappa was convicted for torturing his wife for dowry. Satbir was held guilty of practicing untouchability. The court did not allow either of them to contest elections. Does this decision go against the principles of democratic elections?
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            Answer: <b style="color: ${themeColor};">No, this decision does not go against democratic principles.</b>
-            <p style="margin: 6px 0 0 0;">
-              <b>Reason:</b> A democracy requires a legal and moral framework to protect itself. Banning criminals convicted of severe offenses or individuals guilty of social evils like untouchability keeps the legislative body clean, protects citizens, and maintains public faith in the electoral process.
-            </p>
-          </div>
-        </div>
-
-        <!-- Q9 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
-            Q9. Here are some reports of electoral malpractices from different parts of the world. Is there anything that these countries can learn from India to improve their elections? What would you suggest in each case?
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
-              <li style="margin-bottom: 12px;">
-                <b>(a) Nigeria: The officer in charge of counting votes deliberately increased the votes of one candidate and declared him elected.</b><br/>
-                • Suggestion: Nigeria should use Electronic Voting Machines (EVMs) / VVPATs and follow India's system of secure, centralized counting halls where candidates' representatives are physically present to witness the counting.
-              </li>
-              <li style="margin-bottom: 12px;">
-                <b>(b) Fiji: A pamphlet was distributed warning voters that a vote for Mahendra Chaudhry will lead to bloodshed.</b><br/>
-                • Suggestion: Fiji can adopt India's Model Code of Conduct, which prohibits hate speech, communal polarization, and threats of violence. The election authority should have powers to arrest and disqualify candidates violating this.
-              </li>
-              <li style="margin-bottom: 0;">
-                <b>(c) US: Florida authorities took many controversial decisions that favoured Mr. Bush in the 2000 elections, and no one could change them.</b><br/>
-                • Suggestion: The US can learn from India's centralized system. Instead of states having different rules, they should establish a single, central, highly independent, and supreme body like the Election Commission of India (ECI) to maintain uniform rules.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q10 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
-            Q10. Here are some reports of malpractices in Indian elections. Identify what the problem in each case is. What should be done to correct the situation?
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
-              <li style="margin-bottom: 12px;">
-                <b>(a) Following the announcement of elections, the minister promised to provide financial aid to reopen the closed sugar mill.</b><br/>
-                • Problem: Misuse of government authority to bribe/influence voters (violation of the Model Code of Conduct).<br/>
-                • Correction: The ECI must cancel the minister's announcement, issue a strict warning, and file a case against the minister.
-              </li>
-              <li style="margin-bottom: 12px;">
-                <b>(b) Opposition parties alleged that their statements and campaign was not given due attention in Doordarshan and All India Radio.</b><br/>
-                • Problem: Misuse of government-controlled public media by the ruling party.<br/>
-                • Correction: ECI should intervene and enforce equal airtime rules for all major political parties on public broadcasters.
-              </li>
-              <li style="margin-bottom: 12px;">
-                <b>(c) An inquiry by the Election Commission showed that electoral rolls of a state contain name of 20 lakh fake voters.</b><br/>
-                • Problem: Electoral list rigging/corruption.<br/>
-                • Correction: ECI should immediately purge all verified fake entries, issue fresh voter ID cards, and penalize officials responsible for the fraud.
-              </li>
-              <li style="margin-bottom: 0;">
-                <b>(d) The hoodlums of a political party were moving with guns, physically preventing supporters of other political parties to meet the voters and attacking meetings of other parties.</b><br/>
-                • Problem: Use of muscle power, voter intimidation, and electoral violence.<br/>
-                • Correction: ECI should deploy Central Armed Police Forces (CAPF) in the area, arrest the hoodlums, and order a re-poll if voter turnout was affected.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q11 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
-            Q11. Can you tell Ramesh what is wrong with these statements?
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
-              <li style="margin-bottom: 12px;">
-                <b>(a) Women always vote the way men tell them to. So what is the point of giving them the right to vote?</b><br/>
-                • Correction: Women are independent individuals with their own preferences. The secret ballot ensures they can vote without pressure. Denying them voting rights violates political equality.
-              </li>
-              <li style="margin-bottom: 12px;">
-                <b>(b) Party politics creates tension in society. Elections should be decided by consensus not by competition.</b><br/>
-                • Correction: While competition creates tension, it is necessary to force political parties to serve the people. A system based purely on consensus in a diverse society can suppress minority and dissenting viewpoints.
-              </li>
-              <li style="margin-bottom: 0;">
-                <b>(c) Only graduates should be allowed to stand as candidates for elections.</b><br/>
-                • Correction: Setting educational qualifications would disqualify over 80% of India's population from contesting, which violates democracy's core principle of equal opportunity. The wisdom of a candidate is best judged by the voters.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-    `,
+  "id": "sst-civ-c9-3",
+  "number": 3,
+  "title": "Electoral Politics",
+  "isHtmlView": true,
+  "htmlOverview": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(66, 165, 245, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #42A5F5; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #42A5F5; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #BBDEFB; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #BBDEFB; font-weight: 700; }\n  .hl { color: #42A5F5; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #42A5F5; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #42A5F5; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(66, 165, 245, 0.10); border: 1.5px dashed #42A5F5; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #42A5F5; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(66, 165, 245, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(66, 165, 245, 0.18); border: 1px solid #42A5F5; color: #BBDEFB; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(66, 165, 245, 0.2); color: #BBDEFB; }\n  .q-card .q-text, .q-card .sub-q { color: #42A5F5 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ Chapter at a Glance</div><div class=\"sol-step\"><div class=\"rev\">In a democracy people govern through <span class=\"hl\">representatives</span>. This chapter asks why elections are needed, what makes an election democratic, how elections are held in India stage by stage, and whether they are free and fair — including the role of the <b>Election Commission</b>.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 1. Why Elections?</div><div class=\"sol-step\"><div class=\"pt\"><b>Haryana, 1987:</b> the State had a Congress government since 1982. <b>Chaudhary Devi Lal</b> led the <b>‘Nyaya Yudh’</b> (Struggle for Justice), formed the <b>Lok Dal</b> and promised to waive loans of farmers and small businessmen. Lok Dal and partners won <b>76 of 90</b> seats (Lok Dal alone <b>60</b>; Congress only <b>5</b>). The Chief Minister resigned, the Governor invited Devi Lal, and his government waived the loans. In <b>1991</b> his party lost and the Congress returned.</div><div class=\"pt\"><b>Need for elections:</b> people cannot all sit together and decide; a mechanism is needed to choose representatives at regular intervals and change them — that is an <b>election</b>.</div><div class=\"pt\">Voters choose: who will <b>make laws</b>; who will <b>form the government</b>; which <b>party's policies</b> will guide government.</div><div class=\"sub-q\">What makes an election democratic?</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>No.</th><th>Minimum condition</th></tr><tr><td>1</td><td>Everyone can choose — one vote each, every vote equal value</td></tr><tr><td>2</td><td>Something to choose from — parties and candidates free to contest</td></tr><tr><td>3</td><td>Choice offered at regular intervals</td></tr><tr><td>4</td><td>The candidate preferred by the people gets elected</td></tr><tr><td>5</td><td>Elections held in a free and fair manner</td></tr></table></div><div class=\"sub-q\">Is political competition good?</div><div class=\"pt\"><b>Demerits:</b> disunity and ‘factionalism’, allegations, dirty tricks, short-term thinking; some good people stay away.</div><div class=\"pt\"><b>Merit:</b> leaders want power and careers; regular competition rewards them for serving people and punishes them for failing — like a shopkeeper who must serve customers. So competition finally forces parties and leaders to serve the people.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 2. Our System of Elections</div><div class=\"sol-step\"><div class=\"pt\">Lok Sabha and Vidhan Sabha elections every <b>five years</b>; then the House is ‘dissolved’. Elections in all constituencies at the same time = <b>general election</b>; election in one constituency to fill a vacancy (death/resignation) = <b>by-election</b>.</div><div class=\"sub-q\">Electoral constituencies</div><div class=\"pt\"><b>Area based</b> system. Lok Sabha: <b>543</b> constituencies, each electing an <b>MP</b>; each should have roughly <b>equal population</b>. States are divided into Assembly constituencies electing <b>MLAs</b>; each Parliamentary constituency contains several Assembly constituencies. Villages and towns are divided into <b>wards</b>. Constituencies are also called ‘seats’.</div><div class=\"sub-q\">Reserved constituencies</div><div class=\"pt\">Weaker sections may not win in open competition, so some seats are reserved for <b>SC</b> and <b>ST</b> — only SC (or ST) candidates can contest there. Lok Sabha (26 Jan 2019): <b>84 SC</b> and <b>47 ST</b> seats, in proportion to their population.</div><div class=\"pt\">Later extended to local bodies: seats for <b>OBCs</b> in many states, and <b>one-third</b> of seats in rural and urban local bodies for <b>women</b>.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Lok Sabha seats</th><th>Number</th></tr><tr><td>General</td><td>412</td></tr><tr><td>Reserved (SC)</td><td>84</td></tr><tr><td>Reserved (ST)</td><td>47</td></tr><tr><td><b>Total</b></td><td><b>543</b></td></tr></table></div><div class=\"sub-q\">Voters' list</div><div class=\"pt\">The <b>Electoral Roll</b> (Voters' List) is prepared well before elections. All citizens aged <b>18+</b> can vote, regardless of caste, religion or gender (some criminals and persons of unsound mind can be denied). It is fully revised every five years; names of new voters added, those who moved or died deleted.</div><div class=\"pt\"><b>Election Photo Identity Card (EPIC)</b> — not yet compulsory; ration card or driving licence also accepted.</div><div class=\"sub-q\">Nomination of candidates</div><div class=\"pt\">Anyone who can vote can contest; minimum age <b>25</b> (voter 18). Party nomination = <b>‘ticket’</b>. A <b>nomination form</b> and <b>security deposit</b> are needed.</div><div class=\"pt\">Supreme Court direction: a legal declaration of <b>serious criminal cases</b>, <b>assets and liabilities</b> (of self and family) and <b>educational qualifications</b> — made public.</div><div class=\"pt\"><b>No educational qualification</b>: the real qualification is ability to understand and represent people, judged by voters; it should be left to the people; and a degree rule (B.A./B.Com/B.Sc) would make more than <b>90 per cent</b> of citizens ineligible.</div><div class=\"sub-q\">Election campaign</div><div class=\"pt\">About <b>two weeks</b> between the final list of candidates and polling. Famous slogans:</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Slogan</th><th>Party / election</th></tr><tr><td>Garibi Hatao (Remove poverty)</td><td>Congress under Indira Gandhi, Lok Sabha 1971</td></tr><tr><td>Save Democracy</td><td>Janata Party under Jayaprakash Narayan, Lok Sabha 1977</td></tr><tr><td>Land to the Tiller</td><td>Left Front, West Bengal Assembly 1977</td></tr><tr><td>Protect the Self-Respect of the Telugus</td><td>N.T. Rama Rao, Telugu Desam, Andhra Pradesh 1983</td></tr></table></div><div class=\"pt\"><b>Election law</b> — no party or candidate can bribe or threaten voters, appeal in the name of caste or religion, use government resources, or spend more than <b>₹25 lakh</b> (Lok Sabha) or <b>₹10 lakh</b> (Assembly). Violation → election can be rejected by court.</div><div class=\"pt\"><b>Model Code of Conduct</b> — no use of places of worship for propaganda; no government vehicles, aircraft or officials; after elections are announced, ministers cannot lay foundation stones, take big policy decisions or promise public facilities.</div><div class=\"sub-q\">Polling and counting</div><div class=\"pt\">On election day voters go to a <b>polling booth</b>; officials identify them and mark a finger. Party agents sit inside. Earlier: <b>ballot paper</b> with stamp; now <b>EVMs</b>. EVMs are sealed; on a fixed day votes are counted before candidates' agents; the candidate with the <b>highest votes</b> wins.</div><div class=\"pt\"><b>Cost:</b> government spent about <b>₹3,500 crore</b> on the 2014 Lok Sabha elections (about ₹40 per voter); together with parties and candidates about <b>₹30,000 crore</b> (₹500 per voter).</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 314\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"314\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"20\" font-size=\"11.5\" fill=\"#42A5F5\" text-anchor=\"middle\" font-weight=\"700\">Stages of an Election</text><rect x=\"40\" y=\"32\" width=\"250\" height=\"26\" rx=\"6\" fill=\"rgba(66, 165, 245,0.16)\" stroke=\"#42A5F5\" stroke-width=\"1.1\"/><circle cx=\"26\" cy=\"45\" r=\"10\" fill=\"#42A5F5\"/><text x=\"26\" y=\"49\" font-size=\"10\" fill=\"#1E1E2E\" text-anchor=\"middle\" font-weight=\"700\">1</text><text x=\"165\" y=\"49\" font-size=\"9.8\" fill=\"#FFFFFF\" text-anchor=\"middle\">Voters' list (Electoral Roll)</text><path d=\"M165 59 L165 65\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><rect x=\"40\" y=\"67\" width=\"250\" height=\"26\" rx=\"6\" fill=\"rgba(66, 165, 245,0.16)\" stroke=\"#42A5F5\" stroke-width=\"1.1\"/><circle cx=\"26\" cy=\"80\" r=\"10\" fill=\"#42A5F5\"/><text x=\"26\" y=\"84\" font-size=\"10\" fill=\"#1E1E2E\" text-anchor=\"middle\" font-weight=\"700\">2</text><text x=\"165\" y=\"84\" font-size=\"9.8\" fill=\"#FFFFFF\" text-anchor=\"middle\">Announcing election schedule</text><path d=\"M165 94 L165 100\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><rect x=\"40\" y=\"102\" width=\"250\" height=\"26\" rx=\"6\" fill=\"rgba(66, 165, 245,0.16)\" stroke=\"#42A5F5\" stroke-width=\"1.1\"/><circle cx=\"26\" cy=\"115\" r=\"10\" fill=\"#42A5F5\"/><text x=\"26\" y=\"119\" font-size=\"10\" fill=\"#1E1E2E\" text-anchor=\"middle\" font-weight=\"700\">3</text><text x=\"165\" y=\"119\" font-size=\"9.8\" fill=\"#FFFFFF\" text-anchor=\"middle\">Filing nominations</text><path d=\"M165 129 L165 135\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><rect x=\"40\" y=\"137\" width=\"250\" height=\"26\" rx=\"6\" fill=\"rgba(66, 165, 245,0.16)\" stroke=\"#42A5F5\" stroke-width=\"1.1\"/><circle cx=\"26\" cy=\"150\" r=\"10\" fill=\"#42A5F5\"/><text x=\"26\" y=\"154\" font-size=\"10\" fill=\"#1E1E2E\" text-anchor=\"middle\" font-weight=\"700\">4</text><text x=\"165\" y=\"154\" font-size=\"9.8\" fill=\"#FFFFFF\" text-anchor=\"middle\">Manifestos and election campaign</text><path d=\"M165 164 L165 170\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><rect x=\"40\" y=\"172\" width=\"250\" height=\"26\" rx=\"6\" fill=\"rgba(66, 165, 245,0.16)\" stroke=\"#42A5F5\" stroke-width=\"1.1\"/><circle cx=\"26\" cy=\"185\" r=\"10\" fill=\"#42A5F5\"/><text x=\"26\" y=\"189\" font-size=\"10\" fill=\"#1E1E2E\" text-anchor=\"middle\" font-weight=\"700\">5</text><text x=\"165\" y=\"189\" font-size=\"9.8\" fill=\"#FFFFFF\" text-anchor=\"middle\">Polling (casting of votes)</text><path d=\"M165 199 L165 205\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><rect x=\"40\" y=\"207\" width=\"250\" height=\"26\" rx=\"6\" fill=\"rgba(66, 165, 245,0.16)\" stroke=\"#42A5F5\" stroke-width=\"1.1\"/><circle cx=\"26\" cy=\"220\" r=\"10\" fill=\"#42A5F5\"/><text x=\"26\" y=\"224\" font-size=\"10\" fill=\"#1E1E2E\" text-anchor=\"middle\" font-weight=\"700\">6</text><text x=\"165\" y=\"224\" font-size=\"9.8\" fill=\"#FFFFFF\" text-anchor=\"middle\">Re-poll, if ordered by EC</text><path d=\"M165 234 L165 240\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><rect x=\"40\" y=\"242\" width=\"250\" height=\"26\" rx=\"6\" fill=\"rgba(66, 165, 245,0.16)\" stroke=\"#42A5F5\" stroke-width=\"1.1\"/><circle cx=\"26\" cy=\"255\" r=\"10\" fill=\"#42A5F5\"/><text x=\"26\" y=\"259\" font-size=\"10\" fill=\"#1E1E2E\" text-anchor=\"middle\" font-weight=\"700\">7</text><text x=\"165\" y=\"259\" font-size=\"9.8\" fill=\"#FFFFFF\" text-anchor=\"middle\">Counting of votes</text><path d=\"M165 269 L165 275\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><rect x=\"40\" y=\"277\" width=\"250\" height=\"26\" rx=\"6\" fill=\"rgba(66, 165, 245,0.16)\" stroke=\"#42A5F5\" stroke-width=\"1.1\"/><circle cx=\"26\" cy=\"290\" r=\"10\" fill=\"#42A5F5\"/><text x=\"26\" y=\"294\" font-size=\"10\" fill=\"#1E1E2E\" text-anchor=\"middle\" font-weight=\"700\">8</text><text x=\"165\" y=\"294\" font-size=\"9.8\" fill=\"#FFFFFF\" text-anchor=\"middle\">Declaration of results</text></svg></div><div class=\"diagram-caption\">Fig. 1: Stages of an election in sequence</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 3. Election Result in Gulbarga (Lok Sabha, 2014)</div><div class=\"sol-step\"><div class=\"rev\">8 candidates; <b>17.21 lakh</b> eligible voters, <b>9.98 lakh</b> voted (turnout ≈ <b>58.0%</b>). Mallikarjun Kharge (INC) won with <b>50.82%</b> — more votes than anyone else.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Candidate</th><th>Party</th><th>Votes</th><th>%</th></tr><tr><td>D.G. Sagar</td><td>JD(S)</td><td>15,690</td><td>1.57</td></tr><tr><td>Mallikarjun Kharge</td><td>INC</td><td>5,07,193</td><td>50.82</td></tr><tr><td>Danni Mahadev B.</td><td>BSP</td><td>11,428</td><td>1.14</td></tr><tr><td>Revunaik Belamagi</td><td>BJP</td><td>4,32,460</td><td>43.33</td></tr><tr><td>B.T. Lalitha Naik</td><td>AAAP</td><td>9,074</td><td>0.91</td></tr><tr><td>S.M. Sharma</td><td>SUCI</td><td>4,943</td><td>0.50</td></tr><tr><td>Shankar Jadhav</td><td>BHPP</td><td>2,877</td><td>0.29</td></tr><tr><td>Ramu</td><td>IND</td><td>4,085</td><td>0.41</td></tr><tr><td>None of the Above</td><td>NOTA</td><td>9,888</td><td>0.99</td></tr></table></div><div class=\"rev\"><i>The percentages add up to 100 of 9,97,638 votes polled.</i></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 4. What Makes Elections in India Democratic?</div><div class=\"sol-step\"><div class=\"pt\"><b>Common complaints:</b> false names in or genuine names left out of voters' lists; misuse of government facilities; excessive use of money; intimidation and <b>rigging</b> on polling day. They exist, but not on a scale that defeats the purpose of elections.</div><div class=\"sub-q\">Independent Election Commission</div><div class=\"pt\">Elections are conducted by an independent and very powerful <b>Election Commission (EC)</b>, as independent as the judiciary. The <b>Chief Election Commissioner (CEC)</b> is appointed by the President but is not answerable to the President or government; it is virtually impossible to remove him.</div><div class=\"pt\">EC <b>decides every aspect</b> from announcement to results; <b>implements the Code of Conduct</b> and punishes violators; can order the government to follow <b>guidelines</b> and transfer officials; officers on election duty work under <b>EC control</b>; it orders <b>re-polls</b> and reprimands the government.</div><div class=\"sub-q\">Popular participation</div><div class=\"pt\">Turnout = percentage of eligible voters who vote. In Europe and North America it has declined; in India it is stable or rising.</div><div class=\"pt\">In India the <b>poor, illiterate and underprivileged</b> vote more than the rich — unlike the USA.</div><div class=\"pt\">Common people think their vote makes a difference; interest is rising — in 2004 more than one-third took part in campaign activities, more than half felt close to a party, and one in seven voters was a party member.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 240\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"240\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"20\" font-size=\"11\" fill=\"#42A5F5\" text-anchor=\"middle\" font-weight=\"700\">Voter Turnout by Social Groups, 2004 (%)</text><line x1=\"34\" y1=\"185.0\" x2=\"312\" y2=\"185.0\" stroke=\"rgba(255,255,255,0.12)\"/><text x=\"30\" y=\"188.0\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">0</text><line x1=\"34\" y1=\"164.9\" x2=\"312\" y2=\"164.9\" stroke=\"rgba(255,255,255,0.12)\"/><text x=\"30\" y=\"167.9\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">10</text><line x1=\"34\" y1=\"144.7\" x2=\"312\" y2=\"144.7\" stroke=\"rgba(255,255,255,0.12)\"/><text x=\"30\" y=\"147.7\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">20</text><line x1=\"34\" y1=\"124.6\" x2=\"312\" y2=\"124.6\" stroke=\"rgba(255,255,255,0.12)\"/><text x=\"30\" y=\"127.6\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">30</text><line x1=\"34\" y1=\"104.4\" x2=\"312\" y2=\"104.4\" stroke=\"rgba(255,255,255,0.12)\"/><text x=\"30\" y=\"107.4\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">40</text><line x1=\"34\" y1=\"84.3\" x2=\"312\" y2=\"84.3\" stroke=\"rgba(255,255,255,0.12)\"/><text x=\"30\" y=\"87.3\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">50</text><line x1=\"34\" y1=\"64.1\" x2=\"312\" y2=\"64.1\" stroke=\"rgba(255,255,255,0.12)\"/><text x=\"30\" y=\"67.1\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">60</text><line x1=\"34\" y1=\"44.0\" x2=\"312\" y2=\"44.0\" stroke=\"rgba(255,255,255,0.12)\"/><text x=\"30\" y=\"47.0\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">70</text><rect x=\"40.6\" y=\"72.2\" width=\"21.5\" height=\"112.8\" fill=\"#FFB74D\" stroke=\"#FFFFFF\" stroke-width=\"0.6\"/><text x=\"51.4\" y=\"68.2\" font-size=\"9\" fill=\"#FFB74D\" text-anchor=\"middle\" font-weight=\"700\">56</text><text x=\"51.4\" y=\"197\" font-size=\"7.8\" fill=\"#FFFFFF\" text-anchor=\"middle\">Upper Caste</text><rect x=\"75.4\" y=\"68.2\" width=\"21.5\" height=\"116.8\" fill=\"#FFB74D\" stroke=\"#FFFFFF\" stroke-width=\"0.6\"/><text x=\"86.1\" y=\"64.2\" font-size=\"9\" fill=\"#FFB74D\" text-anchor=\"middle\" font-weight=\"700\">58</text><text x=\"86.1\" y=\"197\" font-size=\"7.8\" fill=\"#FFFFFF\" text-anchor=\"middle\">OBC</text><rect x=\"110.1\" y=\"64.1\" width=\"21.5\" height=\"120.9\" fill=\"#FFB74D\" stroke=\"#FFFFFF\" stroke-width=\"0.6\"/><text x=\"120.9\" y=\"60.1\" font-size=\"9\" fill=\"#FFB74D\" text-anchor=\"middle\" font-weight=\"700\">60</text><text x=\"120.9\" y=\"197\" font-size=\"7.8\" fill=\"#FFFFFF\" text-anchor=\"middle\">SC</text><rect x=\"144.9\" y=\"62.1\" width=\"21.5\" height=\"122.9\" fill=\"#FFB74D\" stroke=\"#FFFFFF\" stroke-width=\"0.6\"/><text x=\"155.6\" y=\"58.1\" font-size=\"9\" fill=\"#FFB74D\" text-anchor=\"middle\" font-weight=\"700\">61</text><text x=\"155.6\" y=\"197\" font-size=\"7.8\" fill=\"#FFFFFF\" text-anchor=\"middle\">ST</text><rect x=\"214.4\" y=\"64.1\" width=\"21.5\" height=\"120.9\" fill=\"#5C6BC0\" stroke=\"#FFFFFF\" stroke-width=\"0.6\"/><text x=\"225.1\" y=\"60.1\" font-size=\"9\" fill=\"#5C6BC0\" text-anchor=\"middle\" font-weight=\"700\">60</text><text x=\"225.1\" y=\"197\" font-size=\"7.8\" fill=\"#FFFFFF\" text-anchor=\"middle\">White</text><rect x=\"249.1\" y=\"72.2\" width=\"21.5\" height=\"112.8\" fill=\"#5C6BC0\" stroke=\"#FFFFFF\" stroke-width=\"0.6\"/><text x=\"259.9\" y=\"68.2\" font-size=\"9\" fill=\"#5C6BC0\" text-anchor=\"middle\" font-weight=\"700\">56</text><text x=\"259.9\" y=\"197\" font-size=\"7.8\" fill=\"#FFFFFF\" text-anchor=\"middle\">Black</text><rect x=\"283.9\" y=\"128.6\" width=\"21.5\" height=\"56.4\" fill=\"#5C6BC0\" stroke=\"#FFFFFF\" stroke-width=\"0.6\"/><text x=\"294.6\" y=\"124.6\" font-size=\"9\" fill=\"#5C6BC0\" text-anchor=\"middle\" font-weight=\"700\">28</text><text x=\"294.6\" y=\"197\" font-size=\"7.8\" fill=\"#FFFFFF\" text-anchor=\"middle\">Hispanic</text><text x=\"103.5\" y=\"218\" font-size=\"9\" fill=\"#FFB74D\" text-anchor=\"middle\" font-weight=\"700\">INDIA</text><text x=\"259.9\" y=\"218\" font-size=\"9\" fill=\"#7986CB\" text-anchor=\"middle\" font-weight=\"700\">US</text><line x1=\"34\" y1=\"185\" x2=\"312\" y2=\"185\" stroke=\"#FFFFFF\"/><text x=\"160\" y=\"234\" font-size=\"7.8\" fill=\"#CBD5E1\" text-anchor=\"middle\">Source: National Election Study 2004 (CSDS; Univ. of Michigan)</text></svg></div><div class=\"diagram-caption\">Fig. 2: Turnout by social groups — India vs US, 2004</div></div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 200\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"200\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"20\" font-size=\"11\" fill=\"#42A5F5\" text-anchor=\"middle\" font-weight=\"700\">Took Part in Election-related Activity (%)</text><line x1=\"34\" y1=\"160.0\" x2=\"300\" y2=\"160.0\" stroke=\"rgba(255,255,255,0.12)\"/><text x=\"30\" y=\"163.0\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">0</text><line x1=\"34\" y1=\"130.0\" x2=\"300\" y2=\"130.0\" stroke=\"rgba(255,255,255,0.12)\"/><text x=\"30\" y=\"133.0\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">10</text><line x1=\"34\" y1=\"100.0\" x2=\"300\" y2=\"100.0\" stroke=\"rgba(255,255,255,0.12)\"/><text x=\"30\" y=\"103.0\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">20</text><line x1=\"34\" y1=\"70.0\" x2=\"300\" y2=\"70.0\" stroke=\"rgba(255,255,255,0.12)\"/><text x=\"30\" y=\"73.0\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">30</text><line x1=\"34\" y1=\"40.0\" x2=\"300\" y2=\"40.0\" stroke=\"rgba(255,255,255,0.12)\"/><text x=\"30\" y=\"43.0\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">40</text><rect x=\"49.0\" y=\"136.0\" width=\"36.6\" height=\"24.0\" fill=\"#4FC3F7\" stroke=\"#FFFFFF\" stroke-width=\"0.6\"/><text x=\"67.3\" y=\"132.0\" font-size=\"9.5\" fill=\"#4FC3F7\" text-anchor=\"middle\" font-weight=\"700\">8</text><text x=\"67.3\" y=\"173\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">1996</text><rect x=\"115.5\" y=\"121.0\" width=\"36.6\" height=\"39.0\" fill=\"#26C6DA\" stroke=\"#FFFFFF\" stroke-width=\"0.6\"/><text x=\"133.8\" y=\"117.0\" font-size=\"9.5\" fill=\"#26C6DA\" text-anchor=\"middle\" font-weight=\"700\">13</text><text x=\"133.8\" y=\"173\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">1998</text><rect x=\"182.0\" y=\"97.0\" width=\"36.6\" height=\"63.0\" fill=\"#66BB6A\" stroke=\"#FFFFFF\" stroke-width=\"0.6\"/><text x=\"200.3\" y=\"93.0\" font-size=\"9.5\" fill=\"#66BB6A\" text-anchor=\"middle\" font-weight=\"700\">21</text><text x=\"200.3\" y=\"173\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">1999</text><rect x=\"248.5\" y=\"64.0\" width=\"36.6\" height=\"96.0\" fill=\"#FDD835\" stroke=\"#FFFFFF\" stroke-width=\"0.6\"/><text x=\"266.8\" y=\"60.0\" font-size=\"9.5\" fill=\"#FDD835\" text-anchor=\"middle\" font-weight=\"700\">32</text><text x=\"266.8\" y=\"173\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">2004</text><line x1=\"34\" y1=\"160\" x2=\"300\" y2=\"160\" stroke=\"#FFFFFF\"/><text x=\"160\" y=\"194\" font-size=\"7.8\" fill=\"#CBD5E1\" text-anchor=\"middle\">Source: National Election Study 1996–2004, CSDS</text></svg></div><div class=\"diagram-caption\">Fig. 3: Rising participation in election activity in India</div></div><div class=\"sub-q\">Acceptance of election outcome</div><div class=\"pt\">Ruling parties routinely lose — in two out of three elections in the last 25 years. In the US an <b>incumbent</b> rarely loses; in India about <b>half</b> the sitting MPs/MLAs lose. Candidates who buy votes or have criminal links often lose. Outcomes are accepted as the ‘people's verdict’.</div><div class=\"sub-q\">Challenges to free and fair elections</div><div class=\"pt\">Rich candidates and parties enjoy a big, unfair advantage; candidates with criminal connections get tickets; some <b>families dominate</b> parties; little real choice when major parties are similar; smaller parties and independents are at a big disadvantage — hence demands for <b>electoral reforms</b>.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 5. Key Terms (Glossary)</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Term</th><th>Meaning</th></tr><tr><td>Code of Conduct</td><td>Norms and guidelines for parties and candidates during elections</td></tr><tr><td>Constituency</td><td>Voters in an area who elect a representative</td></tr><tr><td>Incumbent</td><td>The current holder of a political office</td></tr><tr><td>Level playing field</td><td>All parties and candidates have equal opportunities in an election</td></tr><tr><td>Rigging</td><td>Fraud and malpractice to increase votes — booth stuffing, multiple votes, bribing officials</td></tr><tr><td>Turnout</td><td>Percentage of eligible voters who cast their votes</td></tr><tr><td>General election / By-election</td><td>All constituencies at once / one constituency to fill a vacancy</td></tr></table></div><div class=\"exam\"><span class=\"exam-t\">📌 Exam Focus</span><div>• Why elections; five conditions of a democratic election</div><div>• Merits and demerits of political competition</div><div>• Constituencies, reserved seats, voters' list, nomination</div><div>• Campaign rules and Model Code of Conduct</div><div>• Powers of the Election Commission; participation; challenges</div></div></div>\n  </div>\n</div>",
+  "htmlExercises": {
+    "sc9-3-ex-q": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(66, 165, 245, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #42A5F5; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #42A5F5; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #BBDEFB; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #BBDEFB; font-weight: 700; }\n  .hl { color: #42A5F5; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #42A5F5; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #42A5F5; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(66, 165, 245, 0.10); border: 1.5px dashed #42A5F5; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #42A5F5; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(66, 165, 245, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(66, 165, 245, 0.18); border: 1px solid #42A5F5; color: #BBDEFB; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(66, 165, 245, 0.2); color: #BBDEFB; }\n  .q-card .q-text, .q-card .sub-q { color: #42A5F5 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Which of the following statements about the reasons for conducting elections are false?<br/>a. Elections enable people to judge the performance of the government.<br/>b. People select the representative of their choice in an election.<br/>c. Elections enable people to evaluate the performance of the judiciary.<br/>d. People can indicate which policies they prefer.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">(c)</span></div><div class=\"rev\">Judges are not elected, so elections do not evaluate the judiciary. The other three are true.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Which of these is <i>not</i> a good reason to say that Indian elections are democratic?<br/>a. India has the largest number of voters in the world.<br/>b. India's Election Commission is very powerful.<br/>c. In India, everyone above the age of 18 has a right to vote.<br/>d. In India, the losing parties accept the electoral verdict.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">(a)</span></div><div class=\"rev\">The size of the electorate says nothing about whether elections are free and fair.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Match the following:</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Statement</th><th>Reason</th></tr><tr><td>a. It is necessary to keep the voters list up to date because</td><td><b>iv.</b> some people may have moved away from the area where they voted last</td></tr><tr><td>b. Some constituencies are reserved for SCs and STs so that</td><td><b>i.</b> there is a fair representation of all sections of our society</td></tr><tr><td>c. Everyone has one and only one vote so that</td><td><b>ii.</b> everyone has equal opportunity to elect their representative</td></tr><tr><td>d. Party in power is not allowed to use government vehicles because</td><td><b>iii.</b> all candidates must have a fair chance of competing in elections</td></tr></table></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">List all the different election related activities mentioned in the chapter and arrange them in a time sequence, beginning with the first activity and ending with the last. Some of these activities are given below: releasing election manifestos; counting of votes; making of voters' list; election campaign; declaration of election results; casting of votes; ordering of re-poll; announcing election schedule; filing nomination.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Order</th><th>Activity</th></tr><tr><td>1</td><td>Making of voters' list</td></tr><tr><td>2</td><td>Announcing election schedule</td></tr><tr><td>3</td><td>Filing nomination</td></tr><tr><td>4</td><td>Releasing election manifestos</td></tr><tr><td>5</td><td>Election campaign</td></tr><tr><td>6</td><td>Casting of votes</td></tr><tr><td>7</td><td>Ordering of re-poll (where needed)</td></tr><tr><td>8</td><td>Counting of votes</td></tr><tr><td>9</td><td>Declaration of election results</td></tr></table></div><div class=\"rev\">The voters' list is prepared well before the election and revised regularly, so it comes first.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5.</div>\n    <div class=\"q-text\">Surekha is an officer in-charge of ensuring free and fair elections in an assembly constituency in a state. Describe what should she focus on for each of the following stages of election: a. Election campaign b. Polling day c. Counting day</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">a. Election campaign</div><div class=\"pt\">Enforce the <b>Model Code of Conduct</b>: no use of places of worship, government vehicles or officials; no new schemes or promises by ministers.</div><div class=\"pt\">Check spending limits (₹10 lakh for an Assembly seat); stop bribery, threats and appeals to caste or religion.</div><div class=\"sub-q\">b. Polling day</div><div class=\"pt\">Voters identified and fingers marked; no impersonation; secret voting; party agents present; no intimidation or booth capturing; working EVMs; report problems for re-poll.</div><div class=\"sub-q\">c. Counting day</div><div class=\"pt\">EVMs opened safely in front of all candidates' agents; correct counting; declare the candidate with the highest votes; report any irregularity.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q6.</div>\n    <div class=\"q-text\">The table below gives the proportion of different communities among the candidates who won elections to the US Congress. Compare these to the proportion of these communities in the population of the US. Based on this, would you suggest a system of reservations in the US Congress? If yes, why and for which communities? If no, why not?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Community</th><th>House of Representatives (%)</th><th>Population of US (%)</th><th>Gap</th></tr><tr><td>Blacks</td><td>8</td><td>13</td><td>−5</td></tr><tr><td>Hispanics</td><td>5</td><td>13</td><td>−8</td></tr><tr><td>Whites</td><td>86</td><td>70</td><td>+16</td></tr></table></div><div class=\"ans-box\"><span class=\"ans-label\">✓ </span><span class=\"ans-val\">Yes, for Blacks and Hispanics</span></div><div class=\"rev\">Blacks and Hispanics are under-represented compared with their share of the population, while Whites are over-represented. Reserved seats in proportion to their population — as India does for SCs and STs — would give these groups a fair voice. (Some may argue for other steps, like encouraging their participation, instead.)</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q7.</div>\n    <div class=\"q-text\">Can we draw the following conclusions from the information given in this chapter? Give two facts to support your position for each of these.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">a. Election Commission of India does not have enough powers to conduct free and fair elections in the country.</div><div class=\"ans-box\"><span class=\"ans-label\">✓ </span><span class=\"ans-val\">No</span></div><div class=\"pt\">The EC decides every aspect from announcement to results and can order re-polls.</div><div class=\"pt\">Government officers on election duty work under the EC; the CEC is virtually impossible to remove.</div><div class=\"sub-q\">b. There is a high level of popular participation in the elections in our country.</div><div class=\"ans-box\"><span class=\"ans-label\">✓ </span><span class=\"ans-val\">Yes</span></div><div class=\"pt\">Turnout in India has been stable or rising, while it fell in Europe and North America.</div><div class=\"pt\">In 2004 more than one-third of voters took part in campaign activities; the poor vote in larger proportion.</div><div class=\"sub-q\">c. It is very easy for the party in power to win an election.</div><div class=\"ans-box\"><span class=\"ans-label\">✓ </span><span class=\"ans-val\">No</span></div><div class=\"pt\">Ruling parties lost in two out of three elections in the last 25 years.</div><div class=\"pt\">About half of sitting MPs and MLAs lose elections.</div><div class=\"sub-q\">d. Many reforms are needed to make our elections completely free and fair.</div><div class=\"ans-box\"><span class=\"ans-label\">✓ </span><span class=\"ans-val\">Yes</span></div><div class=\"pt\">Rich candidates and parties have an unfair advantage; candidates with criminal connections get tickets.</div><div class=\"pt\">Families dominate parties; smaller parties and independents are at a disadvantage.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q8.</div>\n    <div class=\"q-text\">Chinappa was convicted for torturing his wife for dowry. Satbir was held guilty of practicing untouchability. The court did not allow either of them to contest elections. Does this decision go against the principles of democratic elections?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"ans-box\"><span class=\"ans-label\">✓ </span><span class=\"ans-val\">No</span></div><div class=\"rev\">Persons convicted of serious crimes can be barred from contesting. Dowry torture and untouchability violate the dignity and equality that democracy stands for; keeping such persons out protects voters and keeps elections fair. Such restrictions apply only in extreme cases.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q9.</div>\n    <div class=\"q-text\">Here are some reports of electoral malpractices from different parts of the world. Is there anything that these countries can learn from India to improve their elections? What would you suggest in each case?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">a. Nigeria: the officer in charge of counting deliberately increased the votes of one candidate; the court found more than five lakh votes counted in favour of another.</div><div class=\"pt\">Counting should be done in the presence of all candidates' agents, by officials under an independent Election Commission, with EVMs that record votes accurately.</div><div class=\"sub-q\">b. Fiji: a pamphlet warned that a vote for former PM Mahendra Chaudhry would lead to bloodshed — a threat to voters of Indian origin.</div><div class=\"pt\">Election law should ban threats and appeals on race; the EC should act against such candidates and protect voters, as India's law and Code of Conduct do.</div><div class=\"sub-q\">c. USA: each state has its own method and authority; Florida took controversial decisions favouring Mr. Bush in 2000, which could not be changed.</div><div class=\"pt\">A single, independent national Election Commission with uniform rules — like India's — and the power to review and correct decisions.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q10.</div>\n    <div class=\"q-text\">Here are some reports of malpractices in Indian elections. Identify what the problem in each case is. What should be done to correct the situation?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Report</th><th>Problem</th><th>Correction</th></tr><tr><td>a. After elections were announced, the minister promised financial aid to reopen the closed sugar mill</td><td>Violates the Model Code of Conduct</td><td>EC should stop the promise and act against the minister</td></tr><tr><td>b. Opposition campaign not given due attention on Doordarshan and AIR</td><td>Misuse of government media; no level playing field</td><td>EC should ensure fair and equal time for all parties</td></tr><tr><td>c. Electoral rolls of a state have 20 lakh fake voters</td><td>Faulty voters' list — risk of rigging</td><td>Revise and clean the rolls; use photo identity cards</td></tr><tr><td>d. Hoodlums of a party with guns stopping other parties and attacking meetings</td><td>Intimidation and violence</td><td>Deploy police and forces under EC; arrest offenders; disqualify the candidate</td></tr></table></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q11.</div>\n    <div class=\"q-text\">Ramesh was not in class when this chapter was being taught. He came the next day and repeated what he had heard from his father. Can you tell Ramesh what is wrong with these statements?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">a. Women always vote the way men tell them to. So what is the point of giving them the right to vote?</div><div class=\"pt\">Not true — women make their own choices; the vote is secret. Every adult has an equal right to vote (universal adult franchise); denying it would be undemocratic.</div><div class=\"sub-q\">b. Party politics creates tension in society. Elections should be decided by consensus not by competition.</div><div class=\"pt\">Competition may create tension, but it gives people a real choice and forces leaders to serve them; without it elections would be pointless.</div><div class=\"sub-q\">c. Only graduates should be allowed to stand as candidates for elections.</div><div class=\"pt\">The real qualification is the ability to represent people, judged by voters; such a rule would bar more than 90% of citizens from contesting.</div></div></div>\n  </div>\n</div>",
+    "sc9-3-ex-cp": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(66, 165, 245, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #42A5F5; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #42A5F5; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #BBDEFB; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #BBDEFB; font-weight: 700; }\n  .hl { color: #42A5F5; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #42A5F5; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #42A5F5; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(66, 165, 245, 0.10); border: 1.5px dashed #42A5F5; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #42A5F5; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(66, 165, 245, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(66, 165, 245, 0.18); border: 1px solid #42A5F5; color: #BBDEFB; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(66, 165, 245, 0.2); color: #BBDEFB; }\n  .q-card .q-text, .q-card .sub-q { color: #42A5F5 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Jagdeep and Navpreet read the Haryana story and drew these conclusions. Say which are right or wrong (or if the information is inadequate).</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Conclusion</th><th>Verdict</th></tr><tr><td>Elections can lead to changes in the policy of the government</td><td><b>Right</b> — Devi Lal's government waived the loans</td></tr><tr><td>The Governor invited Devi Lal because he was impressed with his speeches</td><td><b>Wrong</b> — he was invited because Lok Dal MLAs chose him as leader after winning a majority</td></tr><tr><td>People are unhappy with every ruling party and vote against it in the next election</td><td><b>Wrong / inadequate</b> — one example cannot prove it for every party</td></tr><tr><td>The party that wins the election forms the government</td><td><b>Right</b></td></tr><tr><td>This election led to a lot of economic development in Haryana</td><td><b>Inadequate information</b> — the story does not say so</td></tr><tr><td>The Congress Chief Minister need not have resigned after his party lost</td><td><b>Wrong</b> — a party that loses its majority must give way</td></tr></table></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Match the following features of our electoral system with the principles they reflect.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Principle</th><th>Feature</th></tr><tr><td>Universal adult franchise</td><td>Everyone who is 18 years of age or older has a right to vote</td></tr><tr><td>Representation of weaker sections</td><td>Reservation of seats for the SCs and the STs</td></tr><tr><td>Open political competition</td><td>Anyone can form a party or contest elections</td></tr><tr><td>One vote one value</td><td>Each constituency has roughly the same population</td></tr></table></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Election result in Gulbarga: What is the percentage of voters who had actually cast their votes? To win an election is it necessary for a person to secure more than half the votes polled?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div>Turnout = 9.98 lakh ÷ 17.21 lakh × 100</div><div>= 58.0%</div><div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">About 58.0% of voters cast their votes</span></div><div class=\"rev\"><b>No.</b> The candidate with the <b>highest number of votes</b> wins, even with less than half. Kharge got 50.82%, but would have won with less as long as he had more than anyone else.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">Identify the fair and the unfair electoral practices among the following.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Practice</th><th>Fair / Unfair</th></tr><tr><td>A minister flags off a new train in his constituency a week before polling day</td><td><b>Unfair</b> — violates Model Code of Conduct</td></tr><tr><td>A candidate promises a new train for her constituency if she is elected</td><td><b>Fair</b> — a campaign promise</td></tr><tr><td>Supporters take voters to a temple to take an oath to vote for him</td><td><b>Unfair</b> — use of religion/places of worship</td></tr><tr><td>Supporters distribute blankets in slums in return for a promise for vote</td><td><b>Unfair</b> — bribing voters</td></tr></table></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5.</div>\n    <div class=\"q-text\">Read these headlines carefully and identify which powers are used by the Election Commission in each instance to ensure free and fair elections.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Headline</th><th>Power of the EC</th></tr><tr><td>EC issues notification constituting 14th Lok Sabha</td><td>Declares results and conducts the whole election</td></tr><tr><td>Photo I-cards not mandatory in Bihar polls</td><td>Decides rules for identifying voters</td></tr><tr><td>EC tightens norms for poll expenses</td><td>Controls election expenditure</td></tr><tr><td>EC accepts new Haryana DGP</td><td>Controls transfer of officials during elections</td></tr><tr><td>EC to visit Gujarat again, review poll arrangements</td><td>Supervises arrangements for polling</td></tr><tr><td>EC will seek power to censure political ads</td><td>Regulates campaign under the Code of Conduct</td></tr><tr><td>HC asks EC to bar ‘criminal’ netas</td><td>Decides eligibility of candidates</td></tr><tr><td>EC says no immediate plan to ban Exit Polls</td><td>Regulates media during elections</td></tr><tr><td>EC shoots down HM advice on poll reforms</td><td>Independent of the government</td></tr><tr><td>EC orders repoll in 398 more booths</td><td>Orders re-poll where polling was unfair</td></tr><tr><td>EC to keep closer eye on hidden poll costs</td><td>Monitors spending by candidates</td></tr></table></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q6.</div>\n    <div class=\"q-text\">Here are some facts on Indian elections. Comment on each of these to say whether they reflect the strength or the weakness of our electoral system.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Fact</th><th>Strength / Weakness</th></tr><tr><td>The 16th Lok Sabha has 12 per cent women members</td><td><b>Weakness</b> — women are under-represented</td></tr><tr><td>The EC often refuses to accept the government's advice about when elections should be held</td><td><b>Strength</b> — an independent EC</td></tr><tr><td>The 16th Lok Sabha has more than 440 members whose assets are more than Rs. 1 crore</td><td><b>Weakness</b> — money power; no level playing field</td></tr><tr><td>After losing, the Chief Minister said: “I respect the people's verdict”</td><td><b>Strength</b> — acceptance of the outcome</td></tr></table></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q7.</div>\n    <div class=\"q-text\">See the Lok Sabha constituencies map and table and answer: What is the number of Lok Sabha constituencies in your UT and the neighbouring two states? Which states have more than 30 Lok Sabha constituencies? Why do some states have such a large number? Why are some constituencies small in area while others are very big? Are SC/ST reserved constituencies evenly spread?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Your UT (textbook table):</b> Jammu & Kashmir 5, Ladakh 1; neighbours Himachal Pradesh 4, Punjab 13.</div><div class=\"pt\"><b>More than 30:</b> Uttar Pradesh (80), Maharashtra (48), West Bengal (42), Bihar (40), Tamil Nadu (39).</div><div class=\"pt\"><b>Why many:</b> constituencies have roughly equal population, so populous states get more seats.</div><div class=\"pt\"><b>Size:</b> densely populated areas have small constituencies; thinly populated hills and deserts (e.g. Ladakh) have very large ones.</div><div class=\"pt\"><b>Not evenly spread:</b> they are more where SC or ST populations are concentrated — e.g. ST seats in the north-east and central tribal belt.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q8.</div>\n    <div class=\"q-text\">Why is the boundary of the Gulbarga Lok Sabha constituency not the same as the district boundary of Gulbarga (Kalaburagi)? How many Assembly constituencies are there in the Gulbarga Lok Sabha constituency?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Constituencies are drawn to have <b>roughly equal population</b>, not to follow district boundaries.</div><div class=\"pt\">The map shows <b>8</b> Assembly constituencies: Afzalpur, Jevargi, Gurmitkal, Chitapur (SC), Sedam, Gulbarga Rural (SC), Gulbarga Dakshin and Gulbarga Uttar.</div><div class=\"rev\">Compare with your own Lok Sabha constituency and draw its map.</div></div></div>\n  </div>\n</div>",
+    "sc9-3-ex-cart": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(66, 165, 245, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #42A5F5; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #42A5F5; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #BBDEFB; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #BBDEFB; font-weight: 700; }\n  .hl { color: #42A5F5; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #42A5F5; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #42A5F5; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(66, 165, 245, 0.10); border: 1.5px dashed #42A5F5; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #42A5F5; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(66, 165, 245, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(66, 165, 245, 0.18); border: 1px solid #42A5F5; color: #BBDEFB; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(66, 165, 245, 0.2); color: #BBDEFB; }\n  .q-card .q-text, .q-card .sub-q { color: #42A5F5 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\"><div class=\"q-title\">✦ Read the Cartoon</div><div class=\"sol-step\"><div class=\"rev\"><i>Look at each cartoon in your textbook; these answers are based on the textbook captions.</i></div></div></div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Read these two cartoons carefully. Write the message of each of them in your own words. Have a discussion in class on which of the two is closer to the reality in your own locality. Draw a cartoon to depict what elections do to the relationship between voters and political leaders.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">The two cartoons show the relationship between leaders and voters around elections — before elections leaders come humbly to voters, after elections they forget them. Discuss which picture matches your locality. A cartoon could show a leader bowing before a voter before the election and the voter waiting outside the leader's gate after it.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">The leader is coming out of a press conference: “What was the need to say that we have distributed tickets only amongst suitable and winnable family relations?” Do you think that family politics is confined to only a few states or parties?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">No. Family domination of parties is found in many states and parties across India — tickets often go to relatives of leaders. This is one of the challenges to free and fair elections mentioned in the chapter.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Titled ‘Electoral Campaigns’, this cartoon was drawn in the Latin American context. Does this apply to India and to other democracies in the world?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">Yes. Expensive campaigns, money power and promises to win votes are common in India and many other democracies; the Model Code of Conduct and spending limits try to control them.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">(R.K. Laxman) Is this an accurate picture of what happens to the voter before and after elections? Must this always happen in a democracy? Can you think of examples when this did not happen?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">It is often true that voters are courted before elections and ignored after. But it need not always happen: leaders who fail are voted out (about half of sitting MPs/MLAs lose), as in Haryana in 1991 when Devi Lal's party lost. Alert citizens can hold leaders accountable between elections too.</div></div></div>\n  </div>\n</div>",
+    "sc9-3-ex-act": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(66, 165, 245, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #42A5F5; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #42A5F5; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #BBDEFB; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #BBDEFB; font-weight: 700; }\n  .hl { color: #42A5F5; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #42A5F5; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #42A5F5; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(66, 165, 245, 0.10); border: 1.5px dashed #42A5F5; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #42A5F5; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(66, 165, 245, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(66, 165, 245, 0.18); border: 1px solid #42A5F5; color: #BBDEFB; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(66, 165, 245, 0.2); color: #BBDEFB; }\n  .q-card .q-text, .q-card .sub-q { color: #42A5F5 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Activity: Do you know when the last Assembly election was held in your state? Which other elections have taken place in your locality in the last five years? Write down the level of elections, when they were held and the name and designation of the persons who got elected from your area.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Level</th><th>When held</th><th>Elected (name, designation)</th></tr><tr><td>Lok Sabha</td><td>…</td><td>… (MP)</td></tr><tr><td>Assembly</td><td>…</td><td>… (MLA)</td></tr><tr><td>Panchayat / Municipality</td><td>…</td><td>… (Sarpanch / Councillor)</td></tr></table></div><div class=\"rev\"><i>Fill in for your own area.</i> For example, Jammu and Kashmir held Lok Sabha elections in 2024 and Assembly elections in 2024.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Activity: What was the election campaign like in your constituency in the last Lok Sabha elections? Prepare a list of what the candidates and parties said and did.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\"><i>Guidance:</i> List the main candidates and parties, their slogans and promises, rallies and door-to-door visits, posters and social-media campaigns, and any complaints of violating the Code of Conduct.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Activity: Draw a cartoon about the Model Code of Conduct for the guidance of political parties and candidates during elections.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\"><i>Idea:</i> A referee labelled ‘Election Commission’ blowing a whistle at a politician trying to use a government jeep and a place of worship for campaigning, with a board listing the Code of Conduct.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">Activity: Ask the eligible voters in your family whether they voted in the last election to the Lok Sabha or to the state assembly. If they did not, ask them why. If they did, ask which party and candidate they voted for and why. Also ask whether they participated in any other election-related activity.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\"><i>Guidance:</i> Make a small table — voted (yes/no), reason, basis of choice (party, candidate, issues), other activities (meeting, rally, canvassing). Remember the vote is secret; ask politely and do not force anyone to say whom they voted for.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5.</div>\n    <div class=\"q-text\">Project: Collect information about the Assembly elections held during this session and divide news items into three parts — before the election, on the day of election and counting, and post elections.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Part</th><th>What to collect</th></tr><tr><td>Before the election</td><td>Main agenda of parties, people's demands, role of the Election Commission</td></tr><tr><td>Election and counting day</td><td>Turnout, reports of malpractice, re-polls, predictions, final outcome</td></tr><tr><td>Post elections</td><td>Reasons given for winning or losing, media analysis, selection of the Chief Minister</td></tr></table></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q6.</div>\n    <div class=\"q-text\">How did your school celebrate the National Voters' Day on 25th January? Did you take the NVD Pledge? Is Electoral Literacy Club (ELC) functioning in your school?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">National Voters' Day is celebrated on <b>25 January</b>. The pledge: “We, the citizens of India, having abiding faith in democracy, hereby pledge to uphold the democratic traditions of our country and the dignity of free, fair and peaceful elections, and to vote in every election fearlessly and without being influenced by considerations of religion, race, caste, community, language or any inducement.” Electoral Literacy Clubs run under the EC's SVEEP programme.</div></div></div>\n  </div>\n<div class=\"sec\">Think About It (margin questions)</div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q7.</div>\n    <div class=\"q-text\">Do most leaders fulfil their election promises?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">Not always. Some do, like Devi Lal waiving loans; many do not. Regular elections let voters reward those who keep promises and remove those who do not.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q8.</div>\n    <div class=\"q-text\">We have seen why democracies need to have elections. But why do rulers in non-democratic countries need to hold elections?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">To appear legitimate and democratic before their people and the world, even when the elections offer no real choice.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q9.</div>\n    <div class=\"q-text\">Ah! So, elections are like exams where politicians and parties know if they have passed or failed. But who are the examiners?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">The <b>voters</b> — lakhs of them in every constituency, after every five years.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q10.</div>\n    <div class=\"q-text\">Like in Panchayats, should we not have at least one-third seats in the parliament and assemblies reserved for women?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">Many argue yes, to increase women's low representation. (In 2023 Parliament passed a law to reserve one-third seats for women, to take effect after the next census and delimitation.)</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q11.</div>\n    <div class=\"q-text\">Why are the candidates required to give a detailed statement of their property?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">So that voters know about their wealth and can check later whether they misused office to become rich; it brings transparency.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q12.</div>\n    <div class=\"q-text\">Why are party agents present in the polling booth and the counting centre?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">To watch that voting and counting are done fairly and no one is cheated.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q13.</div>\n    <div class=\"q-text\">Why does the Election Commission have so much powers? Is this good for democracy?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">Its powers are needed to keep elections free and fair even against a powerful ruling party. Yes, an independent and strong EC is good for democracy.</div></div></div>\n  </div>\n</div>"
   },
-  exercises: [
+  "introduction": "This chapter explains why elections are necessary and useful in a democracy. It describes the various stages of elections in India, from drawing constituencies to declaring results, and discusses what makes elections in India democratic.",
+  "definitions": [],
+  "keyPoints": [],
+  "formulas": [],
+  "crux": [],
+  "mcqs": [
     {
-      id: "ex-sst-qa",
-      name: "Q & A",
-      questions: [],
+      "id": "sst-civ-c9-3-mcq-1",
+      "question": "<div style='text-align: justify;'>Chaudhary Devi Lal led a movement called —</div>",
+      "options": [
+        "A):   Save Democracy",
+        "B):   Nyaya Yudh",
+        "C):   Garibi Hatao",
+        "D):   Land to the Tiller"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>It means Struggle for Justice.</div>"
     },
+    {
+      "id": "sst-civ-c9-3-mcq-2",
+      "question": "<div style='text-align: justify;'>In the 1987 Haryana election, Lok Dal and its partners won —</div>",
+      "options": [
+        "A):   60 out of 90 seats",
+        "B):   5 out of 90 seats",
+        "C):   76 out of 90 seats",
+        "D):   90 out of 90 seats"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Lok Dal alone won 60 seats.</div>"
+    },
+    {
+      "id": "sst-civ-c9-3-mcq-3",
+      "question": "<div style='text-align: justify;'>An election held in only one constituency to fill a vacancy is called a —</div>",
+      "options": [
+        "A):   by-election",
+        "B):   general election",
+        "C):   mid-term election",
+        "D):   re-poll"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>It may follow the death or resignation of a member.</div>"
+    },
+    {
+      "id": "sst-civ-c9-3-mcq-4",
+      "question": "<div style='text-align: justify;'>For Lok Sabha elections, India is divided into —</div>",
+      "options": [
+        "A):   545 constituencies",
+        "B):   412 constituencies",
+        "C):   250 constituencies",
+        "D):   543 constituencies"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Each elects one MP.</div>"
+    },
+    {
+      "id": "sst-civ-c9-3-mcq-5",
+      "question": "<div style='text-align: justify;'>The representative elected to the State Legislative Assembly is called an —</div>",
+      "options": [
+        "A):   MP",
+        "B):   MLA",
+        "C):   MLC",
+        "D):   CEC"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Member of Legislative Assembly.</div>"
+    },
+    {
+      "id": "sst-civ-c9-3-mcq-6",
+      "question": "<div style='text-align: justify;'>How many Lok Sabha seats are reserved for Scheduled Castes (as on 26 January 2019)?</div>",
+      "options": [
+        "A):   47",
+        "B):   33",
+        "C):   84",
+        "D):   131"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>47 are reserved for Scheduled Tribes.</div>"
+    },
+    {
+      "id": "sst-civ-c9-3-mcq-7",
+      "question": "<div style='text-align: justify;'>In rural and urban local bodies, what share of seats is reserved for women?</div>",
+      "options": [
+        "A):   One-third",
+        "B):   One-half",
+        "C):   One-fourth",
+        "D):   One-fifth"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>The same idea is debated for Parliament.</div>"
+    },
+    {
+      "id": "sst-civ-c9-3-mcq-8",
+      "question": "<div style='text-align: justify;'>The minimum age to contest an election in India is —</div>",
+      "options": [
+        "A):   18 years",
+        "B):   21 years",
+        "C):   30 years",
+        "D):   25 years"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>The voting age is 18.</div>"
+    },
+    {
+      "id": "sst-civ-c9-3-mcq-9",
+      "question": "<div style='text-align: justify;'>A party's nomination of a candidate is often called a party —</div>",
+      "options": [
+        "A):   symbol",
+        "B):   ticket",
+        "C):   manifesto",
+        "D):   whip"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>It gives the candidate the party symbol and support.</div>"
+    },
+    {
+      "id": "sst-civ-c9-3-mcq-10",
+      "question": "<div style='text-align: justify;'>The slogan ‘Garibi Hatao’ was given by —</div>",
+      "options": [
+        "A):   the Janata Party in 1977",
+        "B):   the Left Front in 1977",
+        "C):   the Congress under Indira Gandhi in 1971",
+        "D):   the Telugu Desam in 1983"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>It promised to remove poverty.</div>"
+    },
+    {
+      "id": "sst-civ-c9-3-mcq-11",
+      "question": "<div style='text-align: justify;'>‘Save Democracy’ was the slogan of the Janata Party under —</div>",
+      "options": [
+        "A):   Jayaprakash Narayan",
+        "B):   Indira Gandhi",
+        "C):   N.T. Rama Rao",
+        "D):   Devi Lal"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>In the 1977 Lok Sabha election, after the Emergency.</div>"
+    },
+    {
+      "id": "sst-civ-c9-3-mcq-12",
+      "question": "<div style='text-align: justify;'>The maximum a candidate can spend in a Lok Sabha constituency (textbook) is —</div>",
+      "options": [
+        "A):   ₹10 lakh",
+        "B):   ₹50 lakh",
+        "C):   ₹1 crore",
+        "D):   ₹25 lakh"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>The limit for an Assembly seat was ₹10 lakh.</div>"
+    },
+    {
+      "id": "sst-civ-c9-3-mcq-13",
+      "question": "<div style='text-align: justify;'>The Chief Election Commissioner is appointed by the —</div>",
+      "options": [
+        "A):   Prime Minister",
+        "B):   President of India",
+        "C):   Chief Justice",
+        "D):   Parliament"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>But once appointed, the CEC is not answerable to the President or government.</div>"
+    },
+    {
+      "id": "sst-civ-c9-3-mcq-14",
+      "question": "<div style='text-align: justify;'>Voter turnout means —</div>",
+      "options": [
+        "A):   the number of candidates contesting",
+        "B):   the number of seats won by a party",
+        "C):   the percentage of eligible voters who cast their votes",
+        "D):   the votes won by the winner"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>It measures people's participation.</div>"
+    },
+    {
+      "id": "sst-civ-c9-3-mcq-15",
+      "question": "<div style='text-align: justify;'>In India, compared with the rich, the poor and underprivileged vote —</div>",
+      "options": [
+        "A):   in larger proportion",
+        "B):   in smaller proportion",
+        "C):   not at all",
+        "D):   only in local elections"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>This is in contrast to western democracies like the USA.</div>"
+    },
+    {
+      "id": "sst-civ-c9-3-mcq-16",
+      "question": "<div style='text-align: justify;'>In the 2014 Gulbarga Lok Sabha election, the winner Mallikarjun Kharge got about —</div>",
+      "options": [
+        "A):   43.33% of the votes",
+        "B):   58% of the votes",
+        "C):   0.99% of the votes",
+        "D):   50.82% of the votes"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>He won because he got more votes than anyone else.</div>"
+    },
+    {
+      "id": "sst-civ-c9-3-mcq-17",
+      "question": "<div style='text-align: justify;'>The government spent about how much on conducting the 2014 Lok Sabha elections?</div>",
+      "options": [
+        "A):   ₹30,000 crore",
+        "B):   ₹3,500 crore",
+        "C):   ₹20,000 crore",
+        "D):   ₹500 crore"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>That is about ₹40 per voter.</div>"
+    },
+    {
+      "id": "sst-civ-c9-3-mcq-18",
+      "question": "<div style='text-align: justify;'>The National Voters' Day is celebrated on —</div>",
+      "options": [
+        "A):   26 January",
+        "B):   26 November",
+        "C):   25 January",
+        "D):   15 August"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Students take the NVD Pledge.</div>"
+    },
+    {
+      "id": "sst-civ-c9-3-mcq-19",
+      "question": "<div style='text-align: justify;'>Assertion (A): Some constituencies are reserved for SCs and STs. Reason (R): Weaker sections may not stand a good chance of getting elected in open electoral competition.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Reservation ensures their voice in Parliament and Assemblies.</div>"
+    },
+    {
+      "id": "sst-civ-c9-3-mcq-20",
+      "question": "<div style='text-align: justify;'>Assertion (A): A graduate degree is necessary to contest elections in India. Reason (R): The relevant qualification for an MP or MLA is the ability to understand and represent people's concerns.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>There is no educational qualification; R is true.</div>"
+    }
   ],
+  "summary": [],
+  "exercises": [
+    {
+      "id": "sc9-3-ex-q",
+      "name": "Questions",
+      "questions": []
+    },
+    {
+      "id": "sc9-3-ex-cp",
+      "name": "Check Progress",
+      "questions": []
+    },
+    {
+      "id": "sc9-3-ex-cart",
+      "name": "Cartoons",
+      "questions": []
+    },
+    {
+      "id": "sc9-3-ex-act",
+      "name": "Activities",
+      "questions": []
+    }
+  ],
+  "examples": []
 };
