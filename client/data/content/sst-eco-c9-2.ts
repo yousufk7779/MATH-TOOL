@@ -1,411 +1,286 @@
 import { ChapterContent } from "../types";
 
-const themeColor = "#FF4DA6"; // Pink/Orange theme for Economics
-
 export const sstEcoC92: ChapterContent = {
-  id: "sst-eco-c9-2",
-  number: 2,
-  title: "Understanding the Indian Economy",
-  introduction:
-    "This chapter examines the structure of the Indian economy, detailing its primary, secondary, and tertiary sectors. It highlights how population transforms into a productive resource (human capital) through investments in education and health, outlines forms of unemployment, and discusses critical economic challenges like poverty and food security.",
-  definitions: [
-    {
-      term: "Primary Sector",
-      description:
-        "The sector of the economy that produces goods by directly exploiting natural resources, such as agriculture, forestry, animal husbandry, and mining.",
-    },
-    {
-      term: "Secondary Sector",
-      description:
-        "The sector that transforms raw materials from the primary sector into finished goods through manufacturing, processing, and industrial activities.",
-    },
-    {
-      term: "Tertiary Sector",
-      description:
-        "Also known as the service sector, it provides support services to the primary and secondary sectors, such as banking, transport, health, and education.",
-    },
-    {
-      term: "Gross Domestic Product (GDP)",
-      description:
-        "The total market value of all final goods and services produced within a country's domestic borders in a single year.",
-    },
-    {
-      term: "Human Capital",
-      description:
-        "The stock of skills, knowledge, and health embodied in the population, which makes them productive resources.",
-    },
-    {
-      term: "Unemployment",
-      description:
-        "A situation where a person is willing and able to work at prevailing wage rates but cannot find a job.",
-    },
-    {
-      term: "Poverty Line",
-      description:
-        "A minimum level of income or consumption required to satisfy basic needs, used as a threshold to identify the poor.",
-    },
-    {
-      term: "Buffer Stock",
-      description:
-        "A stockpile of food grains (wheat and rice) procured by the government through FCI to distribute during emergencies or in food-deficit areas.",
-    },
-    {
-      term: "Food Security",
-      description:
-        "The availability, accessibility, and affordability of food to all people at all times.",
-    },
-  ],
-  keyPoints: [
-    "Sectors of Indian Economy: The economy is divided into Primary (agriculture), Secondary (manufacturing), and Tertiary (services) sectors.",
-    "People as a Resource: Human beings become productive assets (Human Capital) when investments are made in education, training, and healthcare.",
-    "Unemployment in India: Rural areas suffer from seasonal and disguised unemployment, while urban areas struggle with educated unemployment.",
-    "Poverty & Measurement: Poverty is a multidimensional issue. In India, it is measured using calorie requirements and per capita expenditure thresholds.",
-    "Government Welfare Initiatives: Anti-poverty schemes like MGNREGA, PMRY, and SGSY aim to generate employment and elevate the poor.",
-    "Food Security: To prevent hunger and malnutrition, the Indian government maintains Buffer Stock (FCI) and runs the Public Distribution System (PDS).",
-  ],
-  formulas: [],
-  crux: [
-    "Economic growth relies on the transition of resources from low-productivity primary tasks to high-value manufacturing and service sectors.",
-    "Human capital formation is the foundation of long-term economic development, turning a large population into a valuable national resource.",
-    "Poverty alleviation and food security are vital governmental tasks, accomplished via structured employment guarantees and food distribution programs.",
-  ],
-  mcqs: [
-    {
-      id: "sst-eco-c9-2-mcq-1",
-      question: "Which sector of the economy includes agriculture, forestry, and dairy farming?",
-      options: ["Primary Sector", "Secondary Sector", "Tertiary Sector", "Information Technology"],
-      correctAnswer: "a",
-    },
-    {
-      id: "sst-eco-c9-2-mcq-2",
-      question: "The secondary sector is also referred to as the:",
-      options: ["Service sector", "Industrial sector", "Agriculture sector", "Public sector"],
-      correctAnswer: "b",
-    },
-    {
-      id: "sst-eco-c9-2-mcq-3",
-      question: "GDP stands for:",
-      options: [
-        "Gross Domestic Product",
-        "Grand Development Plan",
-        "Government Deposit Pension",
-        "Gross Demand Price",
-      ],
-      correctAnswer: "a",
-    },
-    {
-      id: "sst-eco-c9-2-mcq-4",
-      question: "Which of the following sectors contributes the highest share to India's GDP?",
-      options: ["Primary sector", "Secondary sector", "Tertiary sector", "Quaternary sector"],
-      correctAnswer: "c",
-    },
-    {
-      id: "sst-eco-c9-2-mcq-5",
-      question: "Investment in education, training, and medical care yields a return in the form of:",
-      options: ["Physical assets", "Human capital formation", "Foreign exchange", "Land value appreciation"],
-      correctAnswer: "b",
-    },
-    {
-      id: "sst-eco-c9-2-mcq-6",
-      question: "What type of unemployment is found when more workers are engaged in agriculture than required?",
-      options: ["Educated unemployment", "Seasonal unemployment", "Disguised unemployment", "Frictional unemployment"],
-      correctAnswer: "c",
-    },
-    {
-      id: "sst-eco-c9-2-mcq-7",
-      question: "For estimating the poverty line in rural India, what is the accepted calorie requirement per person per day?",
-      options: ["2100 calories", "2400 calories", "2000 calories", "2500 calories"],
-      correctAnswer: "b",
-    },
-    {
-      id: "sst-eco-c9-2-mcq-8",
-      question: "Which welfare scheme guarantees 100 days of wage employment in a year to rural households?",
-      options: ["SGSY", "PMRY", "MGNREGA", "PMGY"],
-      correctAnswer: "c",
-    },
-    {
-      id: "sst-eco-c9-2-mcq-9",
-      question: "Buffer stock is the stockpile of food grains primarily procured by which government body?",
-      options: ["NITI Aayog", "Ministry of Agriculture", "Food Corporation of India (FCI)", "Reserve Bank of India"],
-      correctAnswer: "c",
-    },
-    {
-      id: "sst-eco-c9-2-mcq-10",
-      question: "Which of the following is not a dimension of food security?",
-      options: ["Availability of food", "Accessibility of food", "Affordability of food", "Advertisements of food"],
-      correctAnswer: "d",
-    },
-  ],
-  summary: [
-    "Indian economy's structure is defined by Primary, Secondary, and Tertiary sectors, where Tertiary contributes the most to GDP.",
-    "Human capital formation, employment generation, and poverty reduction are essential for sustainable economic development.",
-    "Buffer stocks and the Public Distribution System (PDS) ensure food security for all sections of society, especially the poor.",
-  ],
-  isHtmlView: true,
-  htmlOverview: `
-    <div style="padding: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: transparent;">
-      <!-- Key Concepts Introduction -->
-      <div style="background-color: #1E1E2E; border: 1px solid rgba(255, 193, 7, 0.25); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 20px; font-weight: 700; margin-top: 0; margin-bottom: 12px; display: flex; align-items: center;">
-          <span style="margin-right: 8px; font-size: 22px;">🪙</span> Overview
-        </h3>
-        <p style="color: #E0E0E0; font-size: 15px; line-height: 1.6; text-align: justify; margin: 0; font-weight: 300;">
-          The Indian economy is a complex structure driven by economic activities and human inputs. This chapter explores how these activities are categorized into three major sectors (Primary, Secondary, and Tertiary), how population acts as a resource (Human Capital) when empowered with education and healthcare, and analyzes critical socio-economic indicators and programs related to unemployment, poverty, and food security.
-        </p>
-      </div>
-
-      <!-- Economic Sectors -->
-      <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 600; margin-top: 0; margin-bottom: 14px; display: flex; align-items: center;">
-          <span style="margin-right: 8px; font-size: 18px;">🔄</span> The Three Economic Sectors
-        </h3>
-        <ul style="color: #B3B3C6; font-size: 14.5px; line-height: 1.7; margin: 0; padding-left: 20px; text-align: justify;">
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">Primary Sector:</b> Directly exploits natural resources. It includes farming, animal husbandry, fishing, mining, and forestry. It is the backbone of rural employment.</li>
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">Secondary Sector:</b> Processes natural products into manufactured goods. Also called the industrial sector, it includes factories, construction, and electricity generation.</li>
-          <li style="margin-bottom: 0;"><b style="color: ${themeColor};">Tertiary Sector:</b> Provides services that support primary and secondary production. Examples include banking, transportation, health, education, and IT. It contributes the largest share to GDP.</li>
-        </ul>
-      </div>
-
-      <!-- Human Capital Formation -->
-      <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 600; margin-top: 0; margin-bottom: 14px; display: flex; align-items: center;">
-          <span style="margin-right: 8px; font-size: 18px;">👥</span> People as a Resource
-        </h3>
-        <p style="color: #E0E0E0; font-size: 14.5px; line-height: 1.6; text-align: justify; margin-bottom: 12px;">
-          A country's population can transition from being a liability to a highly productive asset called **Human Capital** when strategic investments are made in:
-        </p>
-        <div style="display: flex; flex-direction: column; gap: 10px;">
-          <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 8px; padding: 12px; text-align: justify;">
-            <b style="color: ${themeColor};">1. Education & Training:</b> Imparts skill sets and expands mental horizons, enabling workers to handle advanced technology and manage enterprises.
-          </div>
-          <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 8px; padding: 12px; text-align: justify;">
-            <b style="color: ${themeColor};">2. Healthcare:</b> Ensures the physical well-being of the workforce. A healthy worker is more energetic, takes fewer sick leaves, and is more efficient.
-          </div>
-          <div style="background: rgba(255, 77, 166, 0.08); border: 1px solid rgba(255, 77, 166, 0.15); border-radius: 8px; padding: 12px; text-align: justify;">
-            <b style="color: ${themeColor};">3. Returns on Investment:</b> Similar to physical capital, human capital yields massive future dividends by increasing overall productivity and boosting the Gross National Product (GNP).
-          </div>
-        </div>
-      </div>
-      
-      <!-- Poverty & Food Security -->
-      <div style="background: rgba(255, 77, 166, 0.05); border: 1.5px solid rgba(255, 77, 166, 0.25); border-radius: 16px; padding: 20px; box-shadow: 0 4px 30px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 600; margin-top: 0; margin-bottom: 12px;">🔑 Policy Goals</h3>
-        <div style="color: #E0E0E0; font-size: 14px; line-height: 1.6; text-align: justify;">
-          <p style="margin-top: 0; margin-bottom: 8px;"><b style="color: ${themeColor};">Poverty Alleviation:</b> Measures like MGNREGA guarantee wage employment to poor households, ensuring minimum income safety nets.</p>
-          <p style="margin-bottom: 8px;"><b style="color: ${themeColor};">Buffer Stock:</b> Storing food grains purchased by the FCI at MSP. This helps support vulnerable populations during low-crop years and natural crises.</p>
-          <p style="margin-bottom: 0;"><b style="color: ${themeColor};">Food Security:</b> Ensured through three pillars—availability (sufficient production), accessibility (distribution systems like PDS), and affordability (subsidy on food grains).</p>
-        </div>
-      </div>
-    </div>
-  `,
-  htmlExercises: {
-    "ex-sst-qa": `
-      <div style="padding: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: transparent;">
-        
-        <!-- SECTION A: FILL IN THE BLANKS -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255, 77, 166, 0.2); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 16px; border-bottom: 1px solid rgba(255, 77, 166, 0.2); padding-bottom: 8px; display: flex; align-items: center;">
-            <span style="margin-right: 8px;">✏️</span> A. Fill in the blanks
-          </h3>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.7; display: flex; flex-direction: column; gap: 14px; text-align: justify;">
-            <div>
-              <b>1.</b> Actions that involve the production, distribution and consumption of goods and services at all levels within a society are called <span style="color: ${themeColor}; font-weight: bold;">economic activities</span>.
-            </div>
-            <div>
-              <b>2.</b> The <span style="color: ${themeColor}; font-weight: bold;">secondary sector</span> is also called as <b>industrial</b> sector.
-            </div>
-            <div>
-              <b>3.</b> The sum of <span style="color: ${themeColor}; font-weight: bold;">value of final goods and services</span> in the three sectors gives what is called the Gross Domestic Product (GDP) of a country.
-            </div>
-            <div>
-              <b>4.</b> <span style="color: ${themeColor}; font-weight: bold;">Globalization (or Multinational Corporations)</span> refers to in which activities of large number of business enterprises is carried out in many different locations across national boundaries.
-            </div>
-            <div>
-              <b>5.</b> The <span style="color: ${themeColor}; font-weight: bold;">education</span> and <span style="color: ${themeColor}; font-weight: bold;">health</span> of the people of a country can be considered as major factors determining quality of the population of a country.
-            </div>
-            <div>
-              <b>6.</b> NSSO defines <span style="color: ${themeColor}; font-weight: bold;">unemployment</span> as a situation in which all those who, owing to lack of work, are not working but seek work.
-            </div>
-            <div>
-              <b>7.</b> In the <span style="color: ${themeColor}; font-weight: bold;">public</span> sector, the government owns most of the assets and provides all the services.
-            </div>
-            <div>
-              <b>8.</b> <span style="color: ${themeColor}; font-weight: bold;">Poverty</span> is thus defined as a situation of lack of income to acquire minimum necessities of life.
-            </div>
-            <div>
-              <b>9.</b> The consumption levels as states to determine the poverty line are <span style="color: ${themeColor}; font-weight: bold;">2400</span> calories for rural areas and <span style="color: ${themeColor}; font-weight: bold;">2100</span> calories for urban area.
-            </div>
-            <div>
-              <b>10.</b> The rate at which the FCI purchases wheat and rice from the farmers in states where there is surplus production is called <span style="color: ${themeColor}; font-weight: bold;">Minimum Support Price (MSP)</span>.
-            </div>
-          </div>
-        </div>
-
-        <!-- SECTION B: ONE WORD ANSWERS -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255, 77, 166, 0.2); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 16px; border-bottom: 1px solid rgba(255, 77, 166, 0.2); padding-bottom: 8px; display: flex; align-items: center;">
-            <span style="margin-right: 8px;">💡</span> B. One word Answers
-          </h3>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.7; display: flex; flex-direction: column; gap: 14px; text-align: justify;">
-            <div>
-              <b>1. The Sector which generates employment and income in agriculture is called:</b><br/>
-              ➡️ <span style="color: ${themeColor}; font-weight: bold;">Primary Sector</span>
-            </div>
-            <div>
-              <b>2. Rearing of animals for milk and milk products is called:</b><br/>
-              ➡️ <span style="color: ${themeColor}; font-weight: bold;">Dairying (or Dairy farming)</span>
-            </div>
-            <div>
-              <b>3. Tertiary sector is also called:</b><br/>
-              ➡️ <span style="color: ${themeColor}; font-weight: bold;">Service Sector</span>
-            </div>
-            <div>
-              <b>4. A sector characterized by small and scattered units is called:</b><br/>
-              ➡️ <span style="color: ${themeColor}; font-weight: bold;">Unorganised Sector</span>
-            </div>
-            <div>
-              <b>5. A person living below the poverty line is:</b><br/>
-              ➡️ <span style="color: ${themeColor}; font-weight: bold;">Poor (or Below Poverty Line / BPL)</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- SECTION C: VERY SHORT / SHORT ANSWER TYPE QUESTIONS -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 16px; border-bottom: 1px solid rgba(255, 77, 166, 0.2); padding-bottom: 8px; display: flex; align-items: center;">
-            <span style="margin-right: 8px;">📝</span> C. Very short / short Answer Type Questions
-          </h3>
-          <div style="display: flex; flex-direction: column; gap: 20px;">
-            
-            <!-- C1 -->
-            <div>
-              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 6px 0; line-height: 1.5; text-align: justify;">1. What are the various activities undertaken in the primary sector, secondary sector and tertiary sector?</p>
-              <p style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
-                <b>Answer:</b> The various economic activities are classified into three sectors:
-                <br/>• <b>Primary Sector:</b> Exploits natural resources directly. Examples: Agriculture, forestry, fishing, and mining.
-                <br/>• <b>Secondary Sector:</b> Manufactures raw materials into finished products. Examples: Factory manufacturing and construction.
-                <br/>• <b>Tertiary Sector:</b> Provides services that support production. Examples: Transport, banking, education, and healthcare.
-              </p>
-            </div>
-
-            <!-- C2 -->
-            <div>
-              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 6px 0; line-height: 1.5; text-align: justify;">2. What do you understand by 'people as a resource'?</p>
-              <p style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
-                <b>Answer:</b> 'People as a resource' refers to a country's working population in terms of their existing productive skills and abilities. When investments are made in this population via education, specialized training, and healthcare, it becomes **Human Capital**, which increases national productivity and Gross National Product (GNP).
-              </p>
-            </div>
-
-            <!-- C3 -->
-            <div>
-              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 6px 0; line-height: 1.5; text-align: justify;">3. Explain the term poverty line.</p>
-              <p style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
-                <b>Answer:</b> The poverty line is a standard threshold or level of income or consumption required to satisfy basic human needs. In India, it is determined using a minimum monthly per capita expenditure or daily calorie intake (2400 kcal in rural areas and 2100 kcal in urban areas). Anyone falling below this line is considered poor.
-              </p>
-            </div>
-
-            <!-- C4 -->
-            <div>
-              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 6px 0; line-height: 1.5; text-align: justify;">4. What is Buffer Stock?</p>
-              <p style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
-                <b>Answer:</b> Buffer stock is the stock of food grains (wheat and rice) procured by the government through the Food Corporation of India (FCI) at a Minimum Support Price (MSP). It is stored in government granaries to distribute in food-deficit areas or to the poor during shortages, emergencies, or calamities.
-              </p>
-            </div>
-
-            <!-- C5 -->
-            <div>
-              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 6px 0; line-height: 1.5; text-align: justify;">5. What is meant by 'Food for Work' programme?</p>
-              <p style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
-                <b>Answer:</b> The National Food for Work Programme (NFWP) is a wage employment scheme launched in 2004 for the rural poor willing to perform manual labor. Under this scheme, workers are provided employment and are paid their wages partly in cash and partly in food grains (wheat/rice).
-              </p>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- SECTION D: LONG ANSWER TYPE QUESTIONS -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 16px; border-bottom: 1px solid rgba(255, 77, 166, 0.2); padding-bottom: 8px; display: flex; align-items: center;">
-            <span style="margin-right: 8px;">📚</span> D. Long Answer Type Questions
-          </h3>
-          <div style="display: flex; flex-direction: column; gap: 24px;">
-            
-            <!-- D1 -->
-            <div>
-              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 8px 0; line-height: 1.5; text-align: justify;">1. What is Gross Domestic product and how is it calculated? Describe the contribution of the three sectors to the GDP of the Indian Economy.</p>
-              <div style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
-                <b>Gross Domestic Product (GDP):</b> GDP is the total monetary value of all final goods and services produced within the domestic borders of a country during a particular year.
-                <br/><br/>
-                <b>How it is calculated:</b> It is calculated by adding the monetary values of the outputs of the three major sectors:
-                <br/><span style="color: ${themeColor}; font-family: monospace; display: block; margin: 6px 0; background: rgba(0,0,0,0.2); padding: 8px; border-radius: 4px;">GDP = Value of (Primary Sector + Secondary Sector + Tertiary Sector)</span>
-                To avoid double counting, only the value of <b>final</b> goods and services is added, while intermediate goods are excluded.
-                <br/><br/>
-                <b>Contribution of the three sectors to the GDP of India:</b>
-                <ul style="margin: 6px 0 0 0; padding-left: 20px;">
-                  <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Primary Sector:</b> Contributes around 15–18% to India's GDP, but it continues to be the largest source of employment, hiring roughly 45% of the total workforce.</li>
-                  <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Secondary Sector:</b> Contributes about 25–28% to India's GDP, playing a growing role in industrial development and urban job creation.</li>
-                  <li style="margin-bottom: 0;"><b style="color: ${themeColor};">Tertiary Sector:</b> Contributes the highest share (over 50–55% of GDP) through IT, banking, and trade, making it the primary engine of India's economic growth.</li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- D2 -->
-            <div>
-              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 8px 0; line-height: 1.5; text-align: justify;">2. What are the various forms of Unemployment?</p>
-              <div style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
-                Unemployment occurs when people who are willing and able to work at the prevailing wages cannot find suitable employment. The main forms are:
-                <ul style="margin: 6px 0 0 0; padding-left: 20px;">
-                  <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Seasonal Unemployment:</b> Prevalent in agriculture. It happens when workers cannot find jobs during off-season months (leaves them idle for 5–6 months a year).</li>
-                  <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Disguised Unemployment:</b> Occurs when more workers are employed on a farm or task than are actually needed. Removing the extra workers does not reduce total output.</li>
-                  <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Educated Unemployment:</b> Common in urban areas, where educated youths with degrees cannot find suitable employment due to lack of jobs or skill mismatch.</li>
-                  <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Structural Unemployment:</b> Caused by a mismatch between workers' skills and the requirements of available jobs in the market.</li>
-                  <li style="margin-bottom: 0;"><b style="color: ${themeColor};">Frictional Unemployment:</b> A temporary state where workers are voluntarily switching between jobs.</li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- D3 -->
-            <div>
-              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 8px 0; line-height: 1.5; text-align: justify;">3. Define poverty. Explain four important anti-poverty measures undertaken by the Government of India.</p>
-              <div style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
-                <b>Poverty:</b> A condition where a person or family lacks the financial resources to meet basic human needs, such as food, clean water, shelter, clothing, health, and primary education.
-                <br/><br/>
-                <b>Four Important Anti-Poverty Measures:</b>
-                <ul style="margin: 6px 0 0 0; padding-left: 20px;">
-                  <li style="margin-bottom: 8px;"><b style="color: ${themeColor};">1. MGNREGA (2005):</b> Guarantees 100 days of assured wage employment in a year to rural households. One-third of jobs are reserved for women.</li>
-                  <li style="margin-bottom: 8px;"><b style="color: ${themeColor};">2. PMRY (1993):</b> Assists educated unemployed youth in rural areas and small towns to set up small businesses and self-employment ventures.</li>
-                  <li style="margin-bottom: 8px;"><b style="color: ${themeColor};">3. SGSY (1999):</b> Organizes poor rural families into Self Help Groups (SHGs) and provides them bank credit and government subsidies.</li>
-                  <li style="margin-bottom: 0;"><b style="color: ${themeColor};">4. PMGY (2000):</b> Provides central aid to states for basic village services like health, education, shelter, clean water, and electricity.</li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- D4 -->
-            <div>
-              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 8px 0; line-height: 1.5; text-align: justify;">4. Define Food security. Describe the three dimensions of food security.</p>
-              <div style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
-                <b>Food Security:</b> Food security refers to the physical and economic availability, accessibility, and affordability of food to all people at all times, ensuring that no one goes hungry.
-                <br/><br/>
-                <b>Three Dimensions of Food Security:</b>
-                <ul style="margin: 6px 0 0 0; padding-left: 20px;">
-                  <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Availability of Food:</b> Having sufficient food production within the country, including imports and government buffer stocks stored in granaries.</li>
-                  <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Accessibility of Food:</b> Food must be within reach of every person, without physical or social barriers (facilitated by ration shops under PDS).</li>
-                  <li style="margin-bottom: 0;"><b style="color: ${themeColor};">Affordability of Food:</b> Individuals must have enough money to buy safe, nutritious food. The government helps by selling food grains at subsidized rates.</li>
-                </ul>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-
-      </div>
-    `,
+  "id": "sst-eco-c9-2",
+  "number": 2,
+  "title": "Understanding the Indian Economy",
+  "isHtmlView": true,
+  "htmlOverview": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 77, 166, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FF4DA6; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FF4DA6; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFC2DF; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFC2DF; font-weight: 700; }\n  .hl { color: #FF4DA6; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FF4DA6; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FF4DA6; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(255, 77, 166, 0.10); border: 1.5px dashed #FF4DA6; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FF4DA6; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 77, 166, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(255, 77, 166, 0.18); border: 1px solid #FF4DA6; color: #FFC2DF; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(255, 77, 166, 0.2); color: #FFC2DF; }\n  .q-card .q-text, .q-card .sub-q { color: #FF4DA6 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ Chapter at a Glance</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>No.</th><th>Learning objective</th></tr><tr><td>1</td><td>Concept of people as a resource</td></tr><tr><td>2</td><td>Factors determining quality of population</td></tr><tr><td>3</td><td>Meaning and types of unemployment</td></tr><tr><td>4</td><td>Meaning of poverty and poverty line</td></tr><tr><td>5</td><td>Causes of poverty and anti-poverty measures</td></tr><tr><td>6</td><td>Food security and Public Distribution System</td></tr><tr><td>7</td><td>Economic and non-economic activities</td></tr><tr><td>8</td><td>Primary, secondary and tertiary sectors</td></tr></table></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 1. Salient Features of the Indian Economy</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Feature</th><th>Textbook detail</th></tr><tr><td>Mixed economy</td><td>Public and private sectors work side by side</td></tr><tr><td>Low per capita income</td><td>Per capita net national income 2015-16 ≈ Rs 93,231 (per capita income = national income ÷ population)</td></tr><tr><td>Dominance of agriculture</td><td>About 14.2% of GDP from agriculture and allied sectors, but 53% of people depend on it</td></tr><tr><td>Over-population</td><td>Grows about 20% every decade; India has about 17.5% of world population</td></tr><tr><td>Unbalanced development</td><td>Growth much higher in some sectors than others</td></tr><tr><td>Low capital formation</td><td>Linked with low levels of income</td></tr><tr><td>Lack of infrastructure</td><td>About 25% of families without electricity; 97 million without safe drinking water; 840 million without sanitation</td></tr><tr><td>Poor economic organisations</td><td>Weak organisation of production and distribution</td></tr><tr><td>Vicious circle of poverty</td><td>Prof. Ragnar Nurkse: “a country is poor because it is poor”</td></tr></table></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 2. Economic Activities and Sectors</div><div class=\"sol-step\"><div class=\"pt\"><b>Economic activities</b> — production, distribution and consumption of goods and services (fishing, farming, mining).</div><div class=\"pt\"><b>Non-economic activities</b> — done for love, sympathy, religion, patriotism (a mother caring for children, donating blood).</div><div class=\"pt\">The same activity can be either: a nurse in a hospital (economic, for salary) vs. at home caring for her mother (non-economic). The <b>objective</b> decides it.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 170\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"170\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"20\" font-size=\"11.5\" fill=\"#FF4DA6\" text-anchor=\"middle\" font-weight=\"700\">Three Sectors of the Economy</text><rect x=\"20\" y=\"36\" width=\"86\" height=\"104\" rx=\"8\" fill=\"#66BB6A26\" stroke=\"#66BB6A\" stroke-width=\"1.4\"/><text x=\"63\" y=\"56\" font-size=\"10\" fill=\"#66BB6A\" text-anchor=\"middle\" font-weight=\"700\">PRIMARY</text><text x=\"63\" y=\"72\" font-size=\"8.6\" fill=\"#FFFFFF\" text-anchor=\"middle\">Natural resources</text><text x=\"63\" y=\"96\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"middle\">Agriculture, forestry,</text><text x=\"63\" y=\"108\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"middle\">mining, fishing, dairy</text><path d=\"M108 88 L116 88\" stroke=\"#FFFFFF\" stroke-width=\"1.4\"/><path d=\"M117 88 L112 85 L112 91 Z\" fill=\"#FFFFFF\"/><rect x=\"118\" y=\"36\" width=\"86\" height=\"104\" rx=\"8\" fill=\"#FFB74D26\" stroke=\"#FFB74D\" stroke-width=\"1.4\"/><text x=\"161\" y=\"56\" font-size=\"10\" fill=\"#FFB74D\" text-anchor=\"middle\" font-weight=\"700\">SECONDARY</text><text x=\"161\" y=\"72\" font-size=\"8.6\" fill=\"#FFFFFF\" text-anchor=\"middle\">Manufacturing</text><text x=\"161\" y=\"96\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"middle\">Factories, bricks,</text><text x=\"161\" y=\"108\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"middle\">cloth, steel</text><path d=\"M206 88 L214 88\" stroke=\"#FFFFFF\" stroke-width=\"1.4\"/><path d=\"M215 88 L210 85 L210 91 Z\" fill=\"#FFFFFF\"/><rect x=\"216\" y=\"36\" width=\"86\" height=\"104\" rx=\"8\" fill=\"#4FC3F726\" stroke=\"#4FC3F7\" stroke-width=\"1.4\"/><text x=\"259\" y=\"56\" font-size=\"10\" fill=\"#4FC3F7\" text-anchor=\"middle\" font-weight=\"700\">TERTIARY</text><text x=\"259\" y=\"72\" font-size=\"8.6\" fill=\"#FFFFFF\" text-anchor=\"middle\">Services</text><text x=\"259\" y=\"96\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"middle\">Transport, banking,</text><text x=\"259\" y=\"108\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"middle\">trade, teachers</text><text x=\"160\" y=\"160\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"middle\">Raw material → goods → services that support both</text></svg></div><div class=\"diagram-caption\">Fig. 1: Primary, secondary and tertiary sectors</div></div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Sector</th><th>Meaning</th><th>Also called</th></tr><tr><td>Primary</td><td>Activities based on exploitation of natural resources — agriculture, forestry, mining, livestock, fishery; base for all other products</td><td>Agriculture and related sector</td></tr><tr><td>Secondary</td><td>Manufacturing — natural products changed into other forms (silk fibre → cloth, earth → bricks)</td><td>Industrial sector</td></tr><tr><td>Tertiary</td><td>Intangible services that support production — transport, storage, communication, banking, trade; also teachers, doctors, barbers, lawyers</td><td>Service sector</td></tr></table></div><div class=\"sub-q\">Why is the tertiary sector growing in India?</div><div class=\"pt\">Basic services (hospitals, schools, police, courts, transport, banks) are needed and provided by government.</div><div class=\"pt\">Growth of primary and secondary sectors needs transport, trade and similar services.</div><div class=\"pt\">Rising incomes increase demand for services.</div><div class=\"pt\">New services based on information and communication technology.</div><div class=\"sub-q\">Evolution and interdependence</div><div class=\"pt\">Early civilisation — all activity in the primary sector; surplus food → crafts and trade; factories (industrial revolution, 19th century) → secondary sector; then services supporting industry.</div><div class=\"pt\"><b>Example — a cold drink:</b> needs sugarcane (primary), a sugar mill and plant (secondary), transport, administration and banking (tertiary).</div><div class=\"pt\">Between 1980 and 2010 production grew most in the tertiary sector; in <b>2010-11</b> it became the <b>largest producing sector</b> in India. Growth of one sector depends on the others — balanced growth is essential.</div><div class=\"pt\"><b>Story of sector linkages:</b> farmer Hari Singh of Rampur buys a diesel pump made by Ravi manufacturers in Karim Nagar from Pappu Hardware Store; a truck brings the pumps and returns with wheat and vegetables; payment is made by cheque — showing all three sectors linked.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 3. Gross Domestic Product</div><div class=\"sol-step\"><div class=\"pt\">Only <b>final goods and services</b> are counted (not intermediate goods) to avoid double counting.</div><div>Example: farmer → grain to flour mill (Rs 10/kg) → flour to biscuit company (Rs 15/kg) → biscuits to consumers</div><div>Biscuits are the final good: 10 packets sold for Rs 150 (Rs 10 per packet)</div><div>Only this final value is counted in GDP</div><div class=\"rev\"><i>The book says the farmer sells “rice” to the mill, which then grinds “wheat” — the grain is named differently in the two sentences.</i></div><div class=\"pt\"><b>GDP</b> = sum of the value of final goods and services produced in the three sectors in a year; it shows how big the economy is. Measured by a Central Government ministry with help from states and UTs.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Sector</th><th>Share in GDP 2018-19 (%)</th></tr><tr><td>Primary</td><td>16.1</td></tr><tr><td>Secondary</td><td>29.6</td></tr><tr><td>Tertiary</td><td>54.3</td></tr></table></div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 210\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"210\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"20\" font-size=\"11.5\" fill=\"#FF4DA6\" text-anchor=\"middle\" font-weight=\"700\">Share of Sectors in GDP, 2018-19 (%)</text><path d=\"M100.00,38.00 A72,72 0 0 1 161.03,71.80 L132.21,89.84 A38,38 0 0 0 100.00,72.00 Z\" fill=\"#66BB6A\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><rect x=\"198\" y=\"78\" width=\"12\" height=\"12\" fill=\"#66BB6A\"/><text x=\"216\" y=\"88\" font-size=\"10\" fill=\"#FFFFFF\">Primary</text><text x=\"300\" y=\"88\" font-size=\"10\" fill=\"#66BB6A\" text-anchor=\"end\" font-weight=\"700\">16.1</text><path d=\"M161.03,71.80 A72,72 0 0 1 119.22,179.39 L110.14,146.62 A38,38 0 0 0 132.21,89.84 Z\" fill=\"#FFB74D\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><rect x=\"198\" y=\"106\" width=\"12\" height=\"12\" fill=\"#FFB74D\"/><text x=\"216\" y=\"116\" font-size=\"10\" fill=\"#FFFFFF\">Secondary</text><text x=\"300\" y=\"116\" font-size=\"10\" fill=\"#FFB74D\" text-anchor=\"end\" font-weight=\"700\">29.6</text><path d=\"M119.22,179.39 A72,72 0 1 1 100.00,38.00 L100.00,72.00 A38,38 0 1 0 110.14,146.62 Z\" fill=\"#4FC3F7\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><rect x=\"198\" y=\"134\" width=\"12\" height=\"12\" fill=\"#4FC3F7\"/><text x=\"216\" y=\"144\" font-size=\"10\" fill=\"#FFFFFF\">Tertiary</text><text x=\"300\" y=\"144\" font-size=\"10\" fill=\"#4FC3F7\" text-anchor=\"end\" font-weight=\"700\">54.3</text><text x=\"100\" y=\"114\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">GDP</text><text x=\"160\" y=\"204\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"middle\">Source: Central Statistical Organisation (CSO)</text></svg></div><div class=\"diagram-caption\">Fig. 2: Sectoral share in GDP</div></div><div class=\"pt\">About <b>60%</b> of the population depends on the primary sector (70–80% of them on agriculture) but it gives only about 16–17% of GDP — more people than necessary work in agriculture.</div><div class=\"sub-q\">Agriculture and allied sector</div><div class=\"pt\">Dominant for employment (about 65% depend on it; 58.2% employed in 2001). Green revolution made India a food-surplus net exporter; white (milk) and yellow (oilseeds) revolutions. Share in GDP 16.1% (2018-19). Agricultural growth fell from 3.72% (1980s) to 2.35% (1990s); 11th Plan (2007-12) averaged 3.6% against a target of 4%.</div><div class=\"sub-q\">Industrial sector</div><div class=\"pt\">Manufacturing about 16% of GDP; India's share of world manufacturing only 1.8% (China: 34% of GDP, 13.7% of world). The <b>National Manufacturing Policy</b> aims to raise manufacturing to 25% of GDP within a decade and create 100 million jobs.</div><div class=\"sub-q\">Service sector</div><div class=\"pt\">Share in GDP rose from 50% (2001) to 54.3% (2011); growth in 2018 was 9.3%.</div><div class=\"sub-q\">Underemployment / disguised unemployment</div><div class=\"pt\">Small farmer <b>Barkat</b> has about 3 hectares of rain-fed land growing jowar and bajra; all six family members work on it because they have nowhere else to go — everyone works, but no one is fully employed.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 4. Organised, Unorganised, Public and Private Sectors</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Organised sector</th><th>Unorganised sector</th></tr><tr><td>Terms of employment regular and followed</td><td>Small, scattered units, largely outside government control</td></tr><tr><td>Paid leave, holidays, provident fund, gratuity, medical benefits, pension</td><td>Low-paid, irregular jobs; no overtime, paid leave or sick leave</td></tr><tr><td>Safe working environment under the law</td><td>No job security; people can be asked to leave without reason</td></tr></table></div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Public sector</th><th>Private sector</th></tr><tr><td>Government owns most assets and provides services</td><td>Private individuals or companies own assets</td></tr><tr><td>Railways, post office</td><td>TISCO, Reliance Industries Limited (RIL)</td></tr></table></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 5. People as a Resource</div><div class=\"sol-step\"><div class=\"pt\">Just as land is turned into physical capital, a population can be turned into <b>human capital</b> (engineers, doctors) through investment in <b>education, training and medical care</b>.</div><div class=\"pt\"><b>‘People as resource’</b> refers to a country's working people in terms of their productive skills and abilities — the positive side of a large population.</div><div class=\"pt\"><b>Human capital formation</b>: when the human resource becomes more educated and healthy, adding to productive power like physical capital formation.</div><div class=\"pt\"><b>Market activities</b> — performed for pay or profit (including government service); <b>non-market activities</b> — production for self-consumption.</div><div class=\"sub-q\">Quality of population</div><div class=\"pt\">Determined by <b>literacy rate</b>, <b>health</b> (life expectancy) and <b>skill formation</b>. Illiterate and unhealthy people are a liability; literate and healthy people are an asset. Government must intervene because many cannot afford education and health care.</div><div class=\"sub-q\">Health</div><div class=\"pt\">By 2009: life expectancy <b>69.89 years</b>, infant mortality <b>30.15 per 1,000</b> live births, birth rate 26.1, death rate 8.7. Pulse Polio is a flagship child-health programme.</div><div class=\"sub-q\">Education</div><div class=\"pt\">Literacy rose from <b>18% (1951)</b> to <b>74.04% (2011)</b>; male literacy nearly 50% higher than female and urban about 50% higher than rural; from 96% in some Kerala districts to below 30% in parts of Madhya Pradesh.</div><div class=\"pt\">Spending (1952–2010): 7.92% → 11.1% of government expenditure; 0.64% → 3.25% of GDP.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Scheme</th><th>Key facts</th></tr><tr><td>Sarva Shiksha Abhiyan</td><td>Since 2000-01; universal access, retention and quality in elementary education; focus on girls</td></tr><tr><td>RMSA</td><td>March 2009; access and quality of secondary education by 2017</td></tr><tr><td>Mid Day Meal</td><td>15 August 1995; at least 300 calories and 8–12 g protein a day for at least 200 days</td></tr><tr><td>Navodaya Vidyalayas</td><td>One in each district</td></tr><tr><td>Samagra Shiksha</td><td>2018-19; pre-school to class 12; subsumes SSA, RMSA and Teacher Education</td></tr></table></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 6. Unemployment</div><div class=\"sol-step\"><div class=\"pt\">Unemployment exists when people willing and able to work at going wages cannot find jobs (NSSO definition: not working for lack of work but seeking or available for work).</div><div class=\"pt\">A key reason: slow capital formation compared with growth of the labour force.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Type</th><th>Where</th><th>Meaning</th></tr><tr><td>Seasonal</td><td>Rural</td><td>No work in some months; farm labourers work only in sowing and harvesting seasons</td></tr><tr><td>Disguised</td><td>Rural</td><td>Hidden — work needs five people but eight are engaged; removing some does not reduce output</td></tr><tr><td>Educated</td><td>Urban</td><td>Matriculates, graduates and post-graduates unable to find jobs; rising faster among graduates</td></tr></table></div><div class=\"pt\"><b>Effects:</b> wastage of manpower, social waste, economic overload, more dependence on working people, poorer quality of life — people become a liability instead of a resource.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 7. Poverty</div><div class=\"sol-step\"><div class=\"pt\"><b>Poverty</b> is a situation of lack of income to acquire the minimum necessities of life — food, clothing, housing, education, health.</div><div class=\"pt\">Every fourth person in India is poor — about <b>26 crore</b> people; India has the largest concentration of poor in the world.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Year</th><th>Rural %</th><th>Urban %</th><th>Combined %</th><th>Poor (million)</th></tr><tr><td>1973-74</td><td>56.4</td><td>49</td><td>54.9</td><td>321</td></tr><tr><td>1993-94</td><td>50.1</td><td>31.8</td><td>45.3</td><td>403.7</td></tr><tr><td>2004-05</td><td>41.8</td><td>25.7</td><td>37.2</td><td>407.1</td></tr><tr><td>2009-10</td><td>33.8</td><td>20.9</td><td>29.8</td><td>354.7</td></tr></table></div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 230\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"230\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"20\" font-size=\"11.5\" fill=\"#FF4DA6\" text-anchor=\"middle\" font-weight=\"700\">Poverty Ratio in India (%)</text><line x1=\"36\" y1=\"175\" x2=\"308\" y2=\"175\" stroke=\"rgba(255,255,255,0.12)\"/><text x=\"32\" y=\"178\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">0</text><line x1=\"36\" y1=\"152.5\" x2=\"308\" y2=\"152.5\" stroke=\"rgba(255,255,255,0.12)\"/><text x=\"32\" y=\"155.5\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">10</text><line x1=\"36\" y1=\"130\" x2=\"308\" y2=\"130\" stroke=\"rgba(255,255,255,0.12)\"/><text x=\"32\" y=\"133\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">20</text><line x1=\"36\" y1=\"107.5\" x2=\"308\" y2=\"107.5\" stroke=\"rgba(255,255,255,0.12)\"/><text x=\"32\" y=\"110.5\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">30</text><line x1=\"36\" y1=\"85\" x2=\"308\" y2=\"85\" stroke=\"rgba(255,255,255,0.12)\"/><text x=\"32\" y=\"88\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">40</text><line x1=\"36\" y1=\"62.5\" x2=\"308\" y2=\"62.5\" stroke=\"rgba(255,255,255,0.12)\"/><text x=\"32\" y=\"65.5\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">50</text><line x1=\"36\" y1=\"40\" x2=\"308\" y2=\"40\" stroke=\"rgba(255,255,255,0.12)\"/><text x=\"32\" y=\"43\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">60</text><rect x=\"45.5\" y=\"48.1\" width=\"14.3\" height=\"126.9\" fill=\"#FFB74D\" stroke=\"#FFFFFF\" stroke-width=\"0.5\"/><text x=\"52.7\" y=\"45.1\" font-size=\"6.8\" fill=\"#FFB74D\" text-anchor=\"middle\">56.4</text><rect x=\"61.8\" y=\"64.8\" width=\"14.3\" height=\"110.3\" fill=\"#4FC3F7\" stroke=\"#FFFFFF\" stroke-width=\"0.5\"/><text x=\"69.0\" y=\"61.8\" font-size=\"6.8\" fill=\"#4FC3F7\" text-anchor=\"middle\">49</text><rect x=\"78.2\" y=\"51.5\" width=\"14.3\" height=\"123.5\" fill=\"#FF4DA6\" stroke=\"#FFFFFF\" stroke-width=\"0.5\"/><text x=\"85.3\" y=\"48.5\" font-size=\"6.8\" fill=\"#FF4DA6\" text-anchor=\"middle\">54.9</text><text x=\"70.0\" y=\"188\" font-size=\"8.6\" fill=\"#FFFFFF\" text-anchor=\"middle\">1973-74</text><rect x=\"113.5\" y=\"62.3\" width=\"14.3\" height=\"112.7\" fill=\"#FFB74D\" stroke=\"#FFFFFF\" stroke-width=\"0.5\"/><text x=\"120.7\" y=\"59.3\" font-size=\"6.8\" fill=\"#FFB74D\" text-anchor=\"middle\">50.1</text><rect x=\"129.8\" y=\"103.5\" width=\"14.3\" height=\"71.5\" fill=\"#4FC3F7\" stroke=\"#FFFFFF\" stroke-width=\"0.5\"/><text x=\"137.0\" y=\"100.5\" font-size=\"6.8\" fill=\"#4FC3F7\" text-anchor=\"middle\">31.8</text><rect x=\"146.2\" y=\"73.1\" width=\"14.3\" height=\"101.9\" fill=\"#FF4DA6\" stroke=\"#FFFFFF\" stroke-width=\"0.5\"/><text x=\"153.3\" y=\"70.1\" font-size=\"6.8\" fill=\"#FF4DA6\" text-anchor=\"middle\">45.3</text><text x=\"138.0\" y=\"188\" font-size=\"8.6\" fill=\"#FFFFFF\" text-anchor=\"middle\">1993-94</text><rect x=\"181.5\" y=\"81.0\" width=\"14.3\" height=\"94.0\" fill=\"#FFB74D\" stroke=\"#FFFFFF\" stroke-width=\"0.5\"/><text x=\"188.7\" y=\"78.0\" font-size=\"6.8\" fill=\"#FFB74D\" text-anchor=\"middle\">41.8</text><rect x=\"197.8\" y=\"117.2\" width=\"14.3\" height=\"57.8\" fill=\"#4FC3F7\" stroke=\"#FFFFFF\" stroke-width=\"0.5\"/><text x=\"205.0\" y=\"114.2\" font-size=\"6.8\" fill=\"#4FC3F7\" text-anchor=\"middle\">25.7</text><rect x=\"214.2\" y=\"91.3\" width=\"14.3\" height=\"83.7\" fill=\"#FF4DA6\" stroke=\"#FFFFFF\" stroke-width=\"0.5\"/><text x=\"221.3\" y=\"88.3\" font-size=\"6.8\" fill=\"#FF4DA6\" text-anchor=\"middle\">37.2</text><text x=\"206.0\" y=\"188\" font-size=\"8.6\" fill=\"#FFFFFF\" text-anchor=\"middle\">2004-05</text><rect x=\"249.5\" y=\"99.0\" width=\"14.3\" height=\"76.0\" fill=\"#FFB74D\" stroke=\"#FFFFFF\" stroke-width=\"0.5\"/><text x=\"256.7\" y=\"96.0\" font-size=\"6.8\" fill=\"#FFB74D\" text-anchor=\"middle\">33.8</text><rect x=\"265.8\" y=\"128.0\" width=\"14.3\" height=\"47.0\" fill=\"#4FC3F7\" stroke=\"#FFFFFF\" stroke-width=\"0.5\"/><text x=\"273.0\" y=\"125.0\" font-size=\"6.8\" fill=\"#4FC3F7\" text-anchor=\"middle\">20.9</text><rect x=\"282.2\" y=\"107.9\" width=\"14.3\" height=\"67.1\" fill=\"#FF4DA6\" stroke=\"#FFFFFF\" stroke-width=\"0.5\"/><text x=\"289.3\" y=\"104.9\" font-size=\"6.8\" fill=\"#FF4DA6\" text-anchor=\"middle\">29.8</text><text x=\"274.0\" y=\"188\" font-size=\"8.6\" fill=\"#FFFFFF\" text-anchor=\"middle\">2009-10</text><line x1=\"36\" y1=\"175\" x2=\"308\" y2=\"175\" stroke=\"#FFFFFF\"/><rect x=\"70\" y=\"208\" width=\"10\" height=\"10\" fill=\"#FFB74D\"/><text x=\"84\" y=\"217\" font-size=\"8.6\" fill=\"#FFFFFF\">Rural</text><rect x=\"150\" y=\"208\" width=\"10\" height=\"10\" fill=\"#4FC3F7\"/><text x=\"164\" y=\"217\" font-size=\"8.6\" fill=\"#FFFFFF\">Urban</text><rect x=\"230\" y=\"208\" width=\"10\" height=\"10\" fill=\"#FF4DA6\"/><text x=\"244\" y=\"217\" font-size=\"8.6\" fill=\"#FFFFFF\">Combined</text><text x=\"160\" y=\"228\" font-size=\"7.4\" fill=\"#CBD5E1\" text-anchor=\"middle\">Source: Economic Survey 2002-03 &amp; 2012-13</text></svg></div><div class=\"diagram-caption\">Fig. 3: Poverty ratio, 1973-74 to 2009-10</div></div><div class=\"rev\"><i>Checked: rural + urban numbers of poor equal the combined total in three rows; in 1993-94: 328.6 + 74.5 = 403.1, printed 403.7 — a small difference in the source data.</i></div><div class=\"sub-q\">Poverty line</div><div class=\"pt\">A line that separates the poor from the non-poor, in terms of income or consumption — <b>2,400 calories</b> per person per day in rural areas and <b>2,100 calories</b> in urban areas. Below it: <b>BPL</b>; above: <b>APL</b>.</div><div class=\"pt\">In J&amp;K, the government claims about <b>21.63%</b> of people are below the poverty line; the Planning Commission put it below 4%.</div><div class=\"sub-q\">Causes of poverty</div><div class=\"pt\">High population growth; rural economy and backward agriculture; underutilised resources; lack of infrastructure; huge income inequalities (unequal distribution of land); socio-cultural spending on ceremonies; high indebtedness (both cause and effect).</div><div class=\"pt\"><b>Arjun's story</b> (village near Jammu): landless family of eight; odd jobs on big farms, sometimes Rs 50 a day or paid in kind; kuchha hut; father died of TB for lack of medicine; started earning at 10 instead of going to school.</div><div class=\"sub-q\">Anti-poverty measures</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Programme</th><th>Key facts</th></tr><tr><td>MGNREGA (2005)</td><td>100 days of unskilled wage employment to one person in every rural household at minimum wage; unemployment allowance of 1/3 of wages if no work within 15 days</td></tr><tr><td>NFWP (2004)</td><td>National Food for Work — launched 14 Nov 2004 in 150 most backward districts; 100% centrally sponsored; food grains free to states; Collector is the nodal officer</td></tr><tr><td>PMRY (1993)</td><td>Self-employment for educated unemployed youth in rural areas and small towns</td></tr><tr><td>REGP (1995)</td><td>Self-employment in rural areas and small towns; implemented by Khadi and Village Industries Commission</td></tr><tr><td>SGSY (1999)</td><td>Self help groups through bank credit and government subsidy</td></tr><tr><td>AAY (Dec 2000)</td><td>One crore poorest BPL families; 25 kg (later 35 kg) grain at Rs 2/kg wheat, Rs 3/kg rice; expanded to 2 crore families</td></tr></table></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 8. Food Security</div><div class=\"sol-step\"><div class=\"pt\">1995 World Food Summit: food security exists “when all people, at all times, have physical and economic access to sufficient, safe and nutritious food…”.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Dimension</th><th>Meaning</th></tr><tr><td>Availability</td><td>Enough food produced or imported</td></tr><tr><td>Accessibility</td><td>Food within reach of every person</td></tr><tr><td>Affordability</td><td>Enough money to buy sufficient, safe and nutritious food</td></tr></table></div><div class=\"pt\"><b>Food insecure:</b> landless people, traditional artisans, petty self-employed, destitute; in cities, ill-paid casual workers; SCs, STs, some OBCs; disaster-affected migrants; women (malnutrition). Most in UP (east), Bihar, Jharkhand, Odisha, West Bengal, Chhattisgarh, parts of MP and Maharashtra.</div><div class=\"pt\"><b>During calamities</b> production falls, prices rise, people cannot afford food → starvation → famine. The <b>Bengal Famine of 1943</b> killed thirty lakh people.</div><div class=\"pt\">India's food security system has two parts: <b>buffer stock</b> and the <b>Public Distribution System</b>, along with poverty alleviation programmes, cooperatives and NGOs.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 9. Key Terms</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Term</th><th>Meaning</th></tr><tr><td>Economic activity</td><td>Production, distribution, consumption of goods and services</td></tr><tr><td>GDP</td><td>Value of final goods and services produced in a year in all three sectors</td></tr><tr><td>Human capital</td><td>Stock of skill and productive knowledge in people</td></tr><tr><td>Disguised unemployment</td><td>More people working than needed; hidden unemployment</td></tr><tr><td>Poverty line</td><td>Income/consumption level dividing poor and non-poor</td></tr><tr><td>BPL / APL</td><td>Below / above the poverty line</td></tr><tr><td>Food security</td><td>Availability, accessibility and affordability of food for all</td></tr></table></div><div class=\"exam\"><span class=\"exam-t\">📌 Exam Focus</span><div>• Economic vs non-economic activities; three sectors</div><div>• GDP and sectoral shares</div><div>• Organised/unorganised, public/private</div><div>• People as resource; education and health</div><div>• Unemployment types; poverty, causes, programmes; food security</div></div></div>\n  </div>\n</div>",
+  "htmlExercises": {
+    "se9-2-ex-obj": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 77, 166, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FF4DA6; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FF4DA6; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFC2DF; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFC2DF; font-weight: 700; }\n  .hl { color: #FF4DA6; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FF4DA6; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FF4DA6; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(255, 77, 166, 0.10); border: 1.5px dashed #FF4DA6; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FF4DA6; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 77, 166, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(255, 77, 166, 0.18); border: 1px solid #FF4DA6; color: #FFC2DF; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(255, 77, 166, 0.2); color: #FFC2DF; }\n  .q-card .q-text, .q-card .sub-q { color: #FF4DA6 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Fill in the blanks:</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">1. Actions that involve the production, distribution and consumption of goods and services are called <b>economic activities</b>.</div><div class=\"pt\">2. The <b>secondary sector</b> is also called the industrial sector.</div><div class=\"pt\">3. The sum of <b>production (value of final goods and services)</b> in the three sectors gives the GDP.</div><div class=\"pt\">4. <b>A Multinational Corporation (MNC)</b> carries out activities of business across national boundaries. <i>(The chapter mentions MNCs only in Fig. 9.)</i></div><div class=\"pt\">5. The <b>education</b> and <b>health</b> of the people determine the quality of the population.</div><div class=\"pt\">6. NSSO defines <b>unemployment</b> as a situation in which those who lack work are not working but seek work.</div><div class=\"pt\">7. In the <b>public</b> sector, the government owns most assets and provides all services.</div><div class=\"pt\">8. <b>Poverty</b> is defined as a situation of lack of income to acquire minimum necessities of life.</div><div class=\"pt\">9. The poverty line is <b>2400</b> k(calories) for rural areas and <b>2100</b> k(calories) for urban areas.</div><div class=\"pt\">10. The rate at which FCI purchases wheat and rice from farmers in surplus states is called the <b>Minimum Support Price (MSP)</b>. <i>(Not explained in this chapter.)</i></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">One word Answers:</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">1. <b>Primary sector</b> (agriculture and related sector)</div><div class=\"pt\">2. <b>Dairy farming</b></div><div class=\"pt\">3. <b>Service sector</b></div><div class=\"pt\">4. <b>Unorganised sector</b></div><div class=\"pt\">5. <b>BPL (Below Poverty Line) / poor</b></div></div></div>\n  </div>\n</div>",
+    "se9-2-ex-short": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 77, 166, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FF4DA6; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FF4DA6; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFC2DF; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFC2DF; font-weight: 700; }\n  .hl { color: #FF4DA6; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FF4DA6; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FF4DA6; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(255, 77, 166, 0.10); border: 1.5px dashed #FF4DA6; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FF4DA6; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 77, 166, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(255, 77, 166, 0.18); border: 1px solid #FF4DA6; color: #FFC2DF; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(255, 77, 166, 0.2); color: #FFC2DF; }\n  .q-card .q-text, .q-card .sub-q { color: #FF4DA6 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">What are the various activities undertaken in the primary sector, secondary sector and tertiary sector?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Sector</th><th>Activities</th></tr><tr><td>Primary</td><td>Agriculture, forestry, mining, livestock (poultry, dairy), fishery</td></tr><tr><td>Secondary</td><td>Manufacturing in factories, workshops, homes — cloth from yarn, bricks from earth, iron and steel, silk</td></tr><tr><td>Tertiary</td><td>Transport, storage, communication, banking, trade; teachers, doctors, barbers, lawyers, IT, administration</td></tr></table></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">What do you understand by ‘people as a resource’?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">It refers to a country's working people in terms of their productive skills and abilities. A population is an asset when it is educated, trained and healthy. Investment in education and health turns the human resource into <b>human capital</b>, which adds to production like physical capital.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Explain the term poverty line.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">The poverty line separates the poor from the non-poor in terms of income or consumption. In India it is based on <b>2,400 calories</b> per person per day in rural areas and <b>2,100 calories</b> in urban areas. People below it are BPL; those above are APL.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">What is Buffer Stock?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">Buffer stock is the stock of food grains (wheat and rice) kept by the government through the Food Corporation of India. It is used to supply grain to deficit areas and the poor through the PDS, and during calamities. <i>(The chapter names buffer stock as part of the food security system; this description is general knowledge.)</i></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5.</div>\n    <div class=\"q-text\">What is meant by ‘Food for Work’ programme?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">The <b>National Food for Work Programme</b> was launched on 14 November 2004 in the 150 most backward districts to generate supplementary wage employment. It is open to all rural poor ready to do manual unskilled work; it is 100% centrally sponsored, food grains are given free to states, and the Collector is the nodal officer.</div></div></div>\n  </div>\n</div>",
+    "se9-2-ex-long": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 77, 166, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FF4DA6; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FF4DA6; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFC2DF; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFC2DF; font-weight: 700; }\n  .hl { color: #FF4DA6; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FF4DA6; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FF4DA6; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(255, 77, 166, 0.10); border: 1.5px dashed #FF4DA6; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FF4DA6; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 77, 166, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(255, 77, 166, 0.18); border: 1px solid #FF4DA6; color: #FFC2DF; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(255, 77, 166, 0.2); color: #FFC2DF; }\n  .q-card .q-text, .q-card .sub-q { color: #FF4DA6 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">What is Gross Domestic Product and how is it calculated? Describe the contribution of the three sectors to the GDP of the Indian Economy.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>GDP</b> is the value of all <b>final</b> goods and services produced within a country during a year, in the three sectors together; it shows how big the economy is.</div><div class=\"pt\"><b>Calculation:</b> only final goods are counted, to avoid counting intermediate goods twice — e.g. only the Rs 150 value of the biscuits, not the wheat and flour that went into them. In India a Central Government ministry, with states and UTs, collects data on quantities and prices to estimate GDP.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Sector</th><th>Share 2018-19 (%)</th></tr><tr><td>Primary</td><td>16.1</td></tr><tr><td>Secondary</td><td>29.6</td></tr><tr><td>Tertiary</td><td>54.3</td></tr></table></div><div class=\"pt\">The tertiary sector is the largest (since 2010-11); the primary sector gives the smallest share but employs about 60% of people.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">What are the various forms of Unemployment?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Seasonal unemployment</b> (rural) — no work in some months; farm labourers find work only during sowing and harvesting.</div><div class=\"pt\"><b>Disguised unemployment</b> (rural) — more people engaged than needed; e.g. work needing five people done by eight family members; withdrawing some does not reduce output (Barkat's family).</div><div class=\"pt\"><b>Educated unemployment</b> (urban) — matriculates, graduates and post-graduates unable to find jobs; surplus in some categories with shortage of technical skills in others.</div><div class=\"pt\"><b>Underemployment</b> — a worker does not get work suited to his ability or enough work for a full day.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Define poverty. Explain four important anti poverty measures undertaken by the Government of India.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Poverty</b> is a situation of lack of income to acquire the minimum necessities of life — food, clothing, housing, education and health.</div><div class=\"pt\"><b>MGNREGA (2005):</b> 100 days of guaranteed unskilled wage employment to one person in every rural household at minimum wage; allowance if no work in 15 days.</div><div class=\"pt\"><b>National Food for Work Programme (2004):</b> wage employment in 150 most backward districts with free food grains.</div><div class=\"pt\"><b>PMRY (1993):</b> self-employment for educated unemployed youth in rural areas and small towns.</div><div class=\"pt\"><b>SGSY (1999):</b> self help groups with bank credit and subsidy to bring families above the poverty line.</div><div class=\"pt\"><b>AAY (2000):</b> subsidised grain to the poorest BPL families (Rs 2/kg wheat, Rs 3/kg rice).</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">Define Food security. Describe the three dimensions of food security.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Food security</b> (World Food Summit 1995) exists when all people at all times have physical and economic access to sufficient, safe and nutritious food for an active and healthy life.</div><div class=\"pt\"><b>Availability</b> — enough food produced in the country or imported.</div><div class=\"pt\"><b>Accessibility</b> — food within the reach of every person.</div><div class=\"pt\"><b>Affordability</b> — enough money to buy sufficient, safe and nutritious food.</div></div></div>\n  </div>\n</div>",
+    "se9-2-ex-proj": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 77, 166, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FF4DA6; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FF4DA6; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFC2DF; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFC2DF; font-weight: 700; }\n  .hl { color: #FF4DA6; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FF4DA6; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FF4DA6; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(255, 77, 166, 0.10); border: 1.5px dashed #FF4DA6; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FF4DA6; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 77, 166, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(255, 77, 166, 0.18); border: 1px solid #FF4DA6; color: #FFC2DF; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(255, 77, 166, 0.2); color: #FFC2DF; }\n  .q-card .q-text, .q-card .sub-q { color: #FF4DA6 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Project: Collect information and fill in a table with the money spent by four low income families on wheat/rice, vegetable oil, sugar, ghee, clothes, house rent and electricity/water. Find out which family is relatively poor. Also find out who are absolutely poor if the poverty line is fixed at an expenditure of Rs 500 per month per person.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\"><i>Method:</i> add each family's monthly spending; the family with the lowest total is <b>relatively poor</b>. Then:</div><div>Spending per person = total monthly spending ÷ number of members</div><div>If spending per person < Rs 500 → absolutely poor</div><div class=\"rev\"><i>Example:</i></div><div>Family of 5 spending Rs 2,200: 2200 ÷ 5 = Rs 440 → below Rs 500 → absolutely poor</div><div>Family of 4 spending Rs 2,400: 2400 ÷ 4 = Rs 600 → above the line</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Activity 1: Classify the occupations into primary, secondary and tertiary.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Primary</th><th>Secondary</th><th>Tertiary</th></tr><tr><td>Basmati rice producer, saffron cultivator, fishermen, bee-keeper</td><td>Basket weaver, workers in silk factory, potter</td><td>Cook in hotel, courier, milk vendor, banker, plumber, truck driver, call centre employee</td></tr></table></div><div class=\"rev\"><i>A milk vendor sells milk (trade) — tertiary; a dairy farmer would be primary.</i></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Activity 2: Classify into organised and unorganised sector.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Organised</th><th>Unorganised</th></tr><tr><td>Teacher in a school; doctor in a hospital; worker in a big factory</td><td>Farmer irrigating his field; daily wage labourer under a contractor; carpenter at a construction site</td></tr></table></div><div class=\"rev\"><i>A teacher in a small private school without regular terms may be unorganised.</i></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">Activity 3 &amp; 4: Collect logos of public sector companies (MTNL, Indian Railways, Air India, All India Radio, BSNL) and photographs of products of private companies (TATA, RIL, Britannia, Unilever, P&amp;G).</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">Paste them under two heads — public sector and private sector. Note that Air India has since been sold to the Tata group (2022), so it is now in the private sector.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5.</div>\n    <div class=\"q-text\">Activity 5: Visit a village or colony near your residence and note the activities of the people. Say whether these are market or non-market activities.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Activity</th><th>Type</th></tr><tr><td>Shopkeeping, tailoring, teaching in a school, driving a taxi</td><td>Market (for pay or profit)</td></tr><tr><td>Cooking for the family, growing vegetables for home use, caring for children</td><td>Non-market (self-consumption)</td></tr></table></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q6.</div>\n    <div class=\"q-text\">Activity 6: Find out whether domestic helps, dhobis, newspaper vendors and gardeners in your locality are above the poverty line.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">Ask about monthly income and family size and compare with the poverty line used in your project (e.g. Rs 500 per person per month) or the calorie norm (2,400 rural / 2,100 urban).</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q7.</div>\n    <div class=\"q-text\">Activity 7: Develop a list of three employment opportunities each that can be created in the most backward districts of J&amp;K under the National Food for Work Programme.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Building and repairing village roads and footpaths.</div><div class=\"pt\">Water conservation — ponds, kuhls (irrigation channels), check dams.</div><div class=\"pt\">Afforestation and soil conservation on hill slopes.</div><div class=\"rev\">These are manual, unskilled works suited to the programme.</div></div></div>\n  </div>\n</div>"
   },
-  exercises: [
+  "introduction": "This chapter examines the structure of the Indian economy, detailing its primary, secondary, and tertiary sectors. It highlights how population transforms into a productive resource (human capital) through investments in education and health, outlines forms of unemployment, and discusses critical economic challenges like poverty and food security.",
+  "definitions": [],
+  "keyPoints": [],
+  "formulas": [],
+  "crux": [],
+  "mcqs": [
     {
-      id: "ex-sst-qa",
-      name: "Q & A",
-      questions: [],
+      "id": "sst-eco-c9-2-mcq-1",
+      "question": "<div style='text-align: justify;'>India has a mixed economy, which means —</div>",
+      "options": [
+        "A):   only the government owns industries",
+        "B):   public and private sectors work side by side",
+        "C):   only private companies run the economy",
+        "D):   there is no agriculture"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>It mixes socialism and capitalism.</div>"
     },
+    {
+      "id": "sst-eco-c9-2-mcq-2",
+      "question": "<div style='text-align: justify;'>“A country is poor because it is poor” was said by —</div>",
+      "options": [
+        "A):   Amartya Sen",
+        "B):   Adam Smith",
+        "C):   Ragnar Nurkse",
+        "D):   Jawaharlal Nehru"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>It describes the vicious circle of poverty.</div>"
+    },
+    {
+      "id": "sst-eco-c9-2-mcq-3",
+      "question": "<div style='text-align: justify;'>A nurse looking after her sick mother at home is —</div>",
+      "options": [
+        "A):   a non-economic activity",
+        "B):   an economic activity",
+        "C):   a tertiary activity",
+        "D):   a market activity"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>The objective is not to earn money.</div>"
+    },
+    {
+      "id": "sst-eco-c9-2-mcq-4",
+      "question": "<div style='text-align: justify;'>The secondary sector is also called the —</div>",
+      "options": [
+        "A):   service sector",
+        "B):   agriculture sector",
+        "C):   public sector",
+        "D):   industrial sector"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>It involves manufacturing.</div>"
+    },
+    {
+      "id": "sst-eco-c9-2-mcq-5",
+      "question": "<div style='text-align: justify;'>Banking, transport and communication belong to the —</div>",
+      "options": [
+        "A):   primary sector",
+        "B):   tertiary sector",
+        "C):   secondary sector",
+        "D):   unorganised sector"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>They produce services, not goods.</div>"
+    },
+    {
+      "id": "sst-eco-c9-2-mcq-6",
+      "question": "<div style='text-align: justify;'>The tertiary sector emerged as the largest producing sector in India in —</div>",
+      "options": [
+        "A):   1980-81",
+        "B):   1950-51",
+        "C):   2010-11",
+        "D):   2000-01"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Production grew most in this sector.</div>"
+    },
+    {
+      "id": "sst-eco-c9-2-mcq-7",
+      "question": "<div style='text-align: justify;'>The share of the tertiary sector in GDP in 2018-19 was —</div>",
+      "options": [
+        "A):   54.3%",
+        "B):   16.1%",
+        "C):   29.6%",
+        "D):   62.5%"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Primary 16.1%, secondary 29.6%.</div>"
+    },
+    {
+      "id": "sst-eco-c9-2-mcq-8",
+      "question": "<div style='text-align: justify;'>In calculating GDP, we count only —</div>",
+      "options": [
+        "A):   intermediate goods",
+        "B):   raw materials",
+        "C):   exports",
+        "D):   final goods and services"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>This avoids double counting.</div>"
+    },
+    {
+      "id": "sst-eco-c9-2-mcq-9",
+      "question": "<div style='text-align: justify;'>Barkat's family, where all six members work on a small plot, is an example of —</div>",
+      "options": [
+        "A):   educated unemployment",
+        "B):   disguised unemployment",
+        "C):   seasonal unemployment",
+        "D):   full employment"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>No one is fully employed.</div>"
+    },
+    {
+      "id": "sst-eco-c9-2-mcq-10",
+      "question": "<div style='text-align: justify;'>Joblessness among graduates and post-graduates is —</div>",
+      "options": [
+        "A):   seasonal unemployment",
+        "B):   disguised unemployment",
+        "C):   educated unemployment",
+        "D):   frictional unemployment"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>It is mostly found in urban areas.</div>"
+    },
+    {
+      "id": "sst-eco-c9-2-mcq-11",
+      "question": "<div style='text-align: justify;'>Literacy in India rose from 18% in 1951 to — in 2011.</div>",
+      "options": [
+        "A):   74.04%",
+        "B):   64.6%",
+        "C):   50%",
+        "D):   90%"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Male literacy is much higher than female.</div>"
+    },
+    {
+      "id": "sst-eco-c9-2-mcq-12",
+      "question": "<div style='text-align: justify;'>The Mid Day Meal scheme was launched on —</div>",
+      "options": [
+        "A):   26 January 2000",
+        "B):   2 October 2009",
+        "C):   14 November 2004",
+        "D):   15 August 1995"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>At least 300 calories and 8–12 g protein a day.</div>"
+    },
+    {
+      "id": "sst-eco-c9-2-mcq-13",
+      "question": "<div style='text-align: justify;'>The calorie requirement for the poverty line in rural areas is —</div>",
+      "options": [
+        "A):   2,100 calories",
+        "B):   2,400 calories",
+        "C):   1,800 calories",
+        "D):   3,000 calories"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>It is 2,100 for urban areas.</div>"
+    },
+    {
+      "id": "sst-eco-c9-2-mcq-14",
+      "question": "<div style='text-align: justify;'>MGNREGA guarantees employment to one person in every rural household for —</div>",
+      "options": [
+        "A):   50 days",
+        "B):   200 days",
+        "C):   100 days",
+        "D):   365 days"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Launched in 2005.</div>"
+    },
+    {
+      "id": "sst-eco-c9-2-mcq-15",
+      "question": "<div style='text-align: justify;'>The National Food for Work Programme was launched in —</div>",
+      "options": [
+        "A):   150 most backward districts",
+        "B):   all districts",
+        "C):   50 districts",
+        "D):   only urban areas"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>On 14 November 2004.</div>"
+    },
+    {
+      "id": "sst-eco-c9-2-mcq-16",
+      "question": "<div style='text-align: justify;'>Antyodaya Anna Yojana provides wheat to the poorest families at —</div>",
+      "options": [
+        "A):   Rs 3 per kg",
+        "B):   Rs 5 per kg",
+        "C):   free of cost",
+        "D):   Rs 2 per kg"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Rice is given at Rs 3 per kg.</div>"
+    },
+    {
+      "id": "sst-eco-c9-2-mcq-17",
+      "question": "<div style='text-align: justify;'>The most devastating famine in India, which killed thirty lakh people, was the —</div>",
+      "options": [
+        "A):   Bihar Famine of 1966",
+        "B):   Bengal Famine of 1943",
+        "C):   Madras Famine of 1877",
+        "D):   Orissa Famine of 1866"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>It occurred in the province of Bengal.</div>"
+    },
+    {
+      "id": "sst-eco-c9-2-mcq-18",
+      "question": "<div style='text-align: justify;'>Which is NOT a dimension of food security?</div>",
+      "options": [
+        "A):   Availability",
+        "B):   Accessibility",
+        "C):   Exportability",
+        "D):   Affordability"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Food must be available, accessible and affordable.</div>"
+    },
+    {
+      "id": "sst-eco-c9-2-mcq-19",
+      "question": "<div style='text-align: justify;'>Assertion (A): Investment in education and health is called human capital formation. Reason (R): Educated and healthy people add to the productive power of the country.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Like physical capital formation.</div>"
+    },
+    {
+      "id": "sst-eco-c9-2-mcq-20",
+      "question": "<div style='text-align: justify;'>Assertion (A): The primary sector contributes the largest share to India's GDP. Reason (R): About 60% of the population depends on the primary sector.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>It contributes only about 16–17% of GDP; R is true.</div>"
+    }
   ],
+  "summary": [],
+  "exercises": [
+    {
+      "id": "se9-2-ex-obj",
+      "name": "Blanks & One Word",
+      "questions": []
+    },
+    {
+      "id": "se9-2-ex-short",
+      "name": "Short Answer",
+      "questions": []
+    },
+    {
+      "id": "se9-2-ex-long",
+      "name": "Long Answer",
+      "questions": []
+    },
+    {
+      "id": "se9-2-ex-proj",
+      "name": "Projects",
+      "questions": []
+    }
+  ],
+  "examples": []
 };
