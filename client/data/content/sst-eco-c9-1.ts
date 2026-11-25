@@ -1,484 +1,286 @@
 import { ChapterContent } from "../types";
 
-const themeColor = "#FDC830"; // Yellow/Gold theme for Economics
-
 export const sstEcoC91: ChapterContent = {
-  id: "sst-eco-c9-1",
-  number: 1,
-  title: "Money & Banking",
-  introduction:
-    "This chapter introduces the fundamental concepts of money and banking. It details the evolution of money from the barter system to modern paper notes, coins, cheques, and plastic money. It also explains how banks act as vital financial intermediaries between savers and borrowers.",
-  definitions: [
-    {
-      term: "Barter System",
-      description:
-        "A system of exchange where goods or services are directly exchanged for other goods or services without using money as a medium.",
-    },
-    {
-      term: "Double Coincidence of Wants",
-      description:
-        "A situation in the barter system where both parties have to agree to sell and buy each other's commodities.",
-    },
-    {
-      term: "Medium of Exchange",
-      description:
-        "An intermediary instrument (like money) used to facilitate the sale, purchase, or trade of goods and services between parties.",
-    },
-    {
-      term: "Demand Deposits",
-      description:
-        "Deposits in bank accounts that can be withdrawn by the depositor on demand, such as those in savings or current accounts.",
-    },
-    {
-      term: "Cheque",
-      description:
-        "A written document instructing a bank to pay a specific sum of money from the writer's account to the person named on the document.",
-    },
-    {
-      term: "Collateral",
-      description:
-        "An asset (such as land, building, vehicle, or livestock) owned by the borrower that is pledged to a lender as security until the loan is repaid.",
-    },
-    {
-      term: "Plastic Money",
-      description:
-        "A term used to refer to hard plastic cards (like debit cards, credit cards, or smart cards) used in daily transactions instead of cash.",
-    },
-  ],
-  keyPoints: [
-    "Evolution of Money: Money evolved from primitive barter exchanges to metallic coins (gold, silver, copper), paper currency, bank cheques, and modern digital/plastic money.",
-    "Medium of Exchange: Money simplifies trade by eliminating the double coincidence of wants, acting as a common measure of value.",
-    "Currency in India: The Reserve Bank of India (RBI) is authorized to issue currency notes on behalf of the Central Government. The Rupee is legally accepted for all transactions in India.",
-    "Role of Banks: Banks accept public deposits, offer safety and interest, and lend a major portion of these funds to borrowers, charging a higher interest rate on loans.",
-    "Loan & Credit Activities: Banks mediate between depositors (surplus funds) and borrowers (need funds), driving economic growth through credit creation.",
-    "Collateral & Security: Lenders require collateral as a guarantee. If the borrower fails to repay, the lender has the right to sell the collateral to recover the loan amount.",
-  ],
-  formulas: [],
-  crux: [
-    "Money acts as a universal medium of exchange that eliminates the inefficiency of barter trade.",
-    "Banks function as financial intermediaries, converting public savings into productive loans.",
-    "Modern banking relies on trust, legal backing by the government, and regulatory supervision by the Central Bank (RBI).",
-  ],
-  mcqs: [
-    {
-      id: "sst-eco-c9-1-mcq-1",
-      question: "Which system relies on the double coincidence of wants?",
-      options: [
-        "Monetary system",
-        "Barter system",
-        "Credit card system",
-        "Digital banking system",
-      ],
-      correctAnswer: "b",
-    },
-    {
-      id: "sst-eco-c9-1-mcq-2",
-      question: "In India, which institution is authorized to issue currency notes?",
-      options: [
-        "State Bank of India (SBI)",
-        "Reserve Bank of India (RBI)",
-        "Ministry of Finance",
-        "NITI Aayog",
-      ],
-      correctAnswer: "b",
-    },
-    {
-      id: "sst-eco-c9-1-mcq-3",
-      question: "What is the main source of income for commercial banks?",
-      options: [
-        "Fees charged for locker services",
-        "Interest rate spread between loans and deposits",
-        "Government subsidies",
-        "Income tax rebates",
-      ],
-      correctAnswer: "b",
-    },
-    {
-      id: "sst-eco-c9-1-mcq-4",
-      question: "Deposits in bank accounts that can be withdrawn at any time are called:",
-      options: [
-        "Fixed deposits",
-        "Recurring deposits",
-        "Demand deposits",
-        "Term deposits",
-      ],
-      correctAnswer: "c",
-    },
-    {
-      id: "sst-eco-c9-1-mcq-5",
-      question: "Which of the following is pledged as security against a loan?",
-      options: ["Cheque", "Collateral", "Demand deposit", "Credit card"],
-      correctAnswer: "b",
-    },
-    {
-      id: "sst-eco-c9-1-mcq-6",
-      question: "Which of these is a form of plastic money?",
-      options: ["Paper notes", "Coins", "Debit card", "Demand draft"],
-      correctAnswer: "c",
-    },
-    {
-      id: "sst-eco-c9-1-mcq-7",
-      question: "A cheque is a paper instructing the bank to pay a specific amount to:",
-      options: [
-        "The Central Government",
-        "The person named on it",
-        "The Reserve Bank Governor",
-        "Any bank clerk",
-      ],
-      correctAnswer: "b",
-    },
-    {
-      id: "sst-eco-c9-1-mcq-8",
-      question: "The rate of interest charged by banks on loans is always:",
-      options: [
-        "Lower than the rate offered on deposits",
-        "Equal to the rate offered on deposits",
-        "Higher than the rate offered on deposits",
-        "Decided solely by the borrower",
-      ],
-      correctAnswer: "c",
-    },
-    {
-      id: "sst-eco-c9-1-mcq-9",
-      question: "The central bank of India is the:",
-      options: [
-        "State Bank of India",
-        "Reserve Bank of India",
-        "National Bank of India",
-        "Union Bank of India",
-      ],
-      correctAnswer: "b",
-    },
-    {
-      id: "sst-eco-c9-1-mcq-10",
-      question: "What makes the Indian Rupee legally valid for all transactions in India?",
-      options: [
-        "Approval from local panchayats",
-        "No other currency exists",
-        "Authorization by the Central Government and law",
-        "It is made of metallic gold",
-      ],
-      correctAnswer: "c",
-    },
-  ],
-  summary: [
-    "Money acts as a crucial medium of exchange, solving barter trade inefficiencies.",
-    "Banks secure public deposits and fuel the economy by lending to businesses and individuals.",
-    "Formal finance operates under RBI rules, ensuring collateral-based safe lending.",
-  ],
-  isHtmlView: true,
-  htmlOverview: `
-    <div style="padding: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: transparent;">
-      <!-- Key Concepts Introduction -->
-      <div style="background-color: #1E1E2E; border: 1px solid rgba(255, 214, 0, 0.25); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 20px; font-weight: 700; margin-top: 0; margin-bottom: 12px; display: flex; align-items: center;">
-          <span style="margin-right: 8px; font-size: 22px;">🪙</span> Overview
-        </h3>
-        <p style="color: #E0E0E0; font-size: 15px; line-height: 1.6; text-align: justify; margin: 0; font-weight: 300;">
-          Money simplifies economic transactions by acting as a universal medium of exchange. In this chapter, we explore how humanity transitioned from exchanging cows and grains (Barter System) to modern cash, bank deposits, cheques, and card payments. We will also dive into the operational mechanics of banks—specifically how they manage public deposits and generate credit.
-        </p>
-      </div>
-
-      <!-- Money as a Medium of Exchange -->
-      <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 600; margin-top: 0; margin-bottom: 14px; display: flex; align-items: center;">
-          <span style="margin-right: 8px; font-size: 18px;">🔄</span> The Evolution of Exchange
-        </h3>
-        <ul style="color: #B3B3C6; font-size: 14.5px; line-height: 1.7; margin: 0; padding-left: 20px; text-align: justify;">
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">The Barter System:</b> Direct exchange of goods without money. It suffered from the bottleneck of the 'Double Coincidence of Wants'—both parties must want exactly what the other is offering.</li>
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">The Money System:</b> Money acts as an intermediary, eliminating search costs. Anyone can sell goods for money and buy what they need.</li>
-          <li style="margin-bottom: 0;"><b style="color: ${themeColor};">Modern Currency:</b> Unlike ancient currency, modern coins and paper notes have no intrinsic value of their own, but are valued because they carry government backing.</li>
-        </ul>
-      </div>
-
-      <!-- Banking Functions -->
-      <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 600; margin-top: 0; margin-bottom: 14px; display: flex; align-items: center;">
-          <span style="margin-right: 8px; font-size: 18px;">🏦</span> How Banks Operate
-        </h3>
-        <p style="color: #E0E0E0; font-size: 14.5px; line-height: 1.6; text-align: justify; margin-bottom: 12px;">
-          Banks act as intermediaries between people with surplus funds and people who need credit:
-        </p>
-        <div style="display: flex; flex-direction: column; gap: 10px;">
-          <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 8px; padding: 12px;">
-            <b style="color: ${themeColor};">1. Deposits:</b> Savers open savings/current bank accounts. The bank keeps their cash safe and pays a lower rate of interest (e.g., 3-4%).
-          </div>
-          <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 8px; padding: 12px;">
-            <b style="color: ${themeColor};">2. Loans:</b> Borrowers take loans for business or personal use. The bank charges a higher rate of interest (e.g., 8-12%).
-          </div>
-          <div style="background: rgba(255, 214, 0, 0.08); border: 1px solid rgba(255, 214, 0, 0.15); border-radius: 8px; padding: 12px;">
-            <b style="color: ${themeColor};">3. Spread (Bank's Income):</b> The difference between interest charged on loans and interest paid on deposits is the bank's main source of profit.
-          </div>
-        </div>
-      </div>
-      
-      <!-- Key Terms -->
-      <div style="background: rgba(255, 214, 0, 0.05); border: 1.5px solid rgba(255, 214, 0, 0.25); border-radius: 16px; padding: 20px; box-shadow: 0 4px 30px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 600; margin-top: 0; margin-bottom: 12px;">🔑 Quick Review</h3>
-        <div style="color: #E0E0E0; font-size: 14px; line-height: 1.6; text-align: justify;">
-          <p style="margin-top: 0; margin-bottom: 8px;"><b style="color: ${themeColor};">Demand Deposits:</b> Bank account balances that can be withdrawn at any time on demand. They are treated like cash.</p>
-          <p style="margin-bottom: 8px;"><b style="color: ${themeColor};">Cheque Account:</b> A facility that allows depositors to make direct payments to someone else without handling cash physically.</p>
-          <p style="margin-bottom: 0;"><b style="color: ${themeColor};">Collateral Security:</b> An asset (like land, deposits, or gold) pledged by the borrower. It secures the lender's capital in case of default.</p>
-        </div>
-      </div>
-    </div>
-  `,
-  htmlExercises: {
-    "ex-sst-qa": `
-      <div style="padding: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: transparent;">
-        
-        <!-- SECTION A: FILL IN THE BLANKS -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255, 214, 0, 0.2); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 16px; border-bottom: 1px solid rgba(255, 214, 0, 0.2); padding-bottom: 8px; display: flex; align-items: center;">
-            <span style="margin-right: 8px;">✏️</span> A. Fill in the blanks
-          </h3>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.7; display: flex; flex-direction: column; gap: 14px;">
-            <div>
-              <b>i.</b> <span style="color: ${themeColor}; font-weight: bold;">Reserve Bank of India (RBI)</span> issues currency notes on behalf of the Central Government.
-            </div>
-            <div>
-              <b>ii.</b> Banks charge a higher interest rate on loans than what they offer on <span style="color: ${themeColor}; font-weight: bold;">deposits</span>.
-            </div>
-            <div>
-              <b>iii.</b> <span style="color: ${themeColor}; font-weight: bold;">Collateral</span> is an asset that the borrower owns and uses as a guarantee until the loan is repaid to the lender.
-            </div>
-            <div>
-              <b>iv.</b> A <span style="color: ${themeColor}; font-weight: bold;">Savings bank account</span> is the simplest form of bank account which can be opened by any individual for encouraging savings.
-            </div>
-            <div>
-              <b>v.</b> The most common form of payments being made instead of cash is a bank instrument called a <span style="color: ${themeColor}; font-weight: bold;">cheque</span>.
-            </div>
-            <div>
-              <b>vi.</b> This is also called a "remotely created check", <span style="color: ${themeColor}; font-weight: bold;">Demand Draft</span>.
-            </div>
-          </div>
-        </div>
-
-        <!-- SECTION B: ONE WORD ANSWERS -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255, 214, 0, 0.2); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 16px; border-bottom: 1px solid rgba(255, 214, 0, 0.2); padding-bottom: 8px; display: flex; align-items: center;">
-            <span style="margin-right: 8px;">💡</span> B. One word Answers
-          </h3>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.7; display: flex; flex-direction: column; gap: 14px;">
-            <div>
-              <b>i. The central bank of India:</b><br/>
-              ➡️ <span style="color: ${themeColor}; font-weight: bold;">Reserve Bank of India (RBI)</span>
-            </div>
-            <div>
-              <b>ii. One nationalized Bank of India:</b><br/>
-              ➡️ <span style="color: ${themeColor}; font-weight: bold;">State Bank of India (SBI)</span> (or Punjab National Bank)
-            </div>
-            <div>
-              <b>iii. One privately owned bank in India:</b><br/>
-              ➡️ <span style="color: ${themeColor}; font-weight: bold;">HDFC Bank</span> (or ICICI Bank)
-            </div>
-            <div>
-              <b>iv. One post office savings scheme:</b><br/>
-              ➡️ <span style="color: ${themeColor}; font-weight: bold;">Post Office Savings Account</span> (or National Savings Certificate - NSC)
-            </div>
-            <div>
-              <b>v. One cooperative bank in rural India giving loans to farmers:</b><br/>
-              ➡️ <span style="color: ${themeColor}; font-weight: bold;">Primary Agricultural Credit Society (PACS)</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- SECTION C: VERY SHORT / SHORT ANSWER TYPE QUESTIONS -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 16px; border-bottom: 1px solid rgba(255, 214, 0, 0.2); padding-bottom: 8px; display: flex; align-items: center;">
-            <span style="margin-right: 8px;">📝</span> C. Very short / short Answer Type Questions
-          </h3>
-          <div style="display: flex; flex-direction: column; gap: 20px;">
-            
-            <!-- C1 -->
-            <div>
-              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 6px 0; line-height: 1.5; text-align: justify;">1. What is double coincidence of wants? Explain with an example of your own.</p>
-              <p style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
-                <b>Answer:</b> Under the barter system, double coincidence of wants is a situation where both parties have to agree to buy and sell each other's goods. 
-                <br/><i>Example:</i> If a farmer wants to exchange wheat for shoes, he must find a shoemaker who not only has shoes to sell but also wants to buy wheat in exchange.
-              </p>
-            </div>
-
-            <!-- C1 (2nd) -->
-            <div>
-              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 6px 0; line-height: 1.5; text-align: justify;">2. Can you think of some examples of goods/services being exchanged or wages being paid through barter?</p>
-              <p style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
-                <b>Answer:</b> Yes, examples include:
-                <br/>• <b>Goods:</b> Village traders exchanging grains (paddy) in return for vegetables or clay pots.
-                <br/>• <b>Wages/Services:</b> Agricultural laborers receiving a portion of the crop harvest (wheat/paddy) as their wages instead of cash, or a barber cutting hair in exchange for vegetables.
-              </p>
-            </div>
-
-            <!-- C2 -->
-            <div>
-              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 6px 0; line-height: 1.5; text-align: justify;">3. Why is money called a medium of exchange?</p>
-              <p style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
-                <b>Answer:</b> Money is called a medium of exchange because it acts as an intermediary instrument in transactions. It eliminates the double coincidence of wants by allowing individuals to easily sell their products for money and then use that money to purchase any other commodity.
-              </p>
-            </div>
-
-            <!-- C3 -->
-            <div>
-              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 6px 0; line-height: 1.5; text-align: justify;">4. What are the different forms of modern currency?</p>
-              <p style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
-                <b>Answer:</b> Modern currency consists of:
-                <br/>• <b>Paper currency</b> (currency notes) and <b>Coins</b>.
-                <br/>• <b>Demand Deposits</b> (money held in bank accounts).
-                <br/>• <b>Plastic Money</b> (debit cards and credit cards) and digital banking transfers.
-              </p>
-            </div>
-
-            <!-- C4 -->
-            <div>
-              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 6px 0; line-height: 1.5; text-align: justify;">5. Who is authorized to issue currency in India?</p>
-              <p style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
-                <b>Answer:</b> The <b>Reserve Bank of India (RBI)</b> is authorized to issue currency notes on behalf of the Central Government. The Ministry of Finance issues one-rupee notes and all coins.
-              </p>
-            </div>
-
-            <!-- C5 -->
-            <div>
-              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 6px 0; line-height: 1.5; text-align: justify;">6. Why can no one refuse to accept payment in rupees?</p>
-              <p style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
-                <b>Answer:</b> In India, the law legalizes the use of the Rupee as a medium of payment that cannot be refused in settling transactions. Thus, refusing the rupee is a legal offense, making it a universally accepted legal tender.
-              </p>
-            </div>
-
-            <!-- C6 -->
-            <div>
-              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 6px 0; line-height: 1.5; text-align: justify;">7. Why are the deposits in the bank account called deposits?</p>
-              <p style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
-                <b>Answer:</b> They are called deposits because depositors hand over (deposit) their surplus cash to the bank for safe keeping. Since these funds can be withdrawn at any time on the depositor's demand, they are specifically referred to as **demand deposits**.
-              </p>
-            </div>
-
-            <!-- C7 -->
-            <div>
-              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 6px 0; line-height: 1.5; text-align: justify;">8. How do banks mediate between those who have surplus money and those who need money?</p>
-              <p style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
-                <b>Answer:</b> Banks accept deposits from savers (who have surplus money) and pay them a lower interest rate. Banks then use a major portion of these deposited funds to extend loans to borrowers (who need money) at a higher interest rate. The difference between these rates is the bank's earnings.
-              </p>
-            </div>
-
-            <!-- C8 -->
-            <div>
-              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 6px 0; line-height: 1.5; text-align: justify;">9. Define a Cheque.</p>
-              <p style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
-                <b>Answer:</b> A cheque is a paper instrument instructing a bank to pay a specific amount of money from the account of the depositor (drawer) to the person or entity in whose name the cheque has been issued (payee).
-              </p>
-            </div>
-
-            <!-- C9 -->
-            <div>
-              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 6px 0; line-height: 1.5; text-align: justify;">10. Define a Loan.</p>
-              <p style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
-                <b>Answer:</b> A loan (or credit) is an agreement in which a lender supplies money, goods, or services to a borrower in return for a promise of future repayment along with a pre-agreed rate of interest.
-              </p>
-            </div>
-
-            <!-- C10 -->
-            <div>
-              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 6px 0; line-height: 1.5; text-align: justify;">11. Why do lenders ask for collateral while lending?</p>
-              <p style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
-                <b>Answer:</b> Lenders ask for collateral (security) to protect themselves against the risk of default. If the borrower fails to repay the loan, the lender has the legal right to sell the collateral asset to recover the outstanding balance.
-              </p>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- SECTION D: LONG ANSWER TYPE QUESTIONS -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 16px; border-bottom: 1px solid rgba(255, 214, 0, 0.2); padding-bottom: 8px; display: flex; align-items: center;">
-            <span style="margin-right: 8px;">📚</span> D. Long Answer Type Questions
-          </h3>
-          <div style="display: flex; flex-direction: column; gap: 24px;">
-            
-            <!-- D1 -->
-            <div>
-              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 8px 0; line-height: 1.5; text-align: justify;">1. What are the various forms of modern money?</p>
-              <div style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
-                Modern money does not have intrinsic value (unlike gold/silver coins). The main forms are:
-                <ul style="margin: 6px 0 0 0; padding-left: 20px;">
-                  <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Paper Currency & Coins:</b> Government-authorized banknotes and metal coins. In India, RBI prints notes and the government mints coins.</li>
-                  <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Demand Deposits:</b> Accounts held in commercial banks (Savings/Current) from which money can be withdrawn or transferred on demand.</li>
-                  <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Cheques:</b> Written papers facilitating direct transfer of bank deposits from one account to another without physical cash handling.</li>
-                  <li style="margin-bottom: 0;"><b style="color: ${themeColor};">Plastic Money:</b> Debit cards, credit cards, and digital wallets (UPI, Netbanking) that enable instant electronic transactions.</li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- D2 -->
-            <div>
-              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 8px 0; line-height: 1.5; text-align: justify;">2. What is the procedure of opening a Savings Bank account?</p>
-              <div style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
-                Opening a Savings Bank Account involves a systematic legal procedure:
-                <div style="background-color: #151522; border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 12px; margin-top: 6px; font-family: monospace; font-size: 12px; line-height: 1.5;">
-1. Choose a Bank: Select a commercial, cooperative, or public sector bank.
-2. Fill Account Opening Form (AOF): Obtain and fill the AOF with details (name, age, occupation, address).
-3. Attach KYC Documents: Provide copies of Identity Proof (Aadhaar, PAN card) and Address Proof (Utility bills).
-4. Provide Photos & References: Paste passport-size photos and get references from an existing account holder (if required).
-5. Deposit Minimum Balance: Submit the form and deposit the minimum initial balance required by the bank.
-6. Collect Account Kit: The bank issues an Account Number, Passbook, Chequebook, and Debit card.
-                </div>
-              </div>
-            </div>
-
-            <!-- D3 -->
-            <div>
-              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 8px 0; line-height: 1.5; text-align: justify;">3. How can you withdraw money from a Savings Bank account?</p>
-              <div style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
-                Money can be withdrawn from a savings bank account using several convenient methods:
-                <ul style="margin: 6px 0 0 0; padding-left: 20px;">
-                  <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Withdrawal Slip:</b> A depositor physically visits the bank branch, fills a withdrawal slip along with their bank passbook, and collects cash from the cashier.</li>
-                  <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Cheque:</b> Writing a self-cheque or issuing an bearer cheque to withdraw cash directly from the account.</li>
-                  <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">ATM (Debit Card):</b> Inserting the ATM card at any automated teller machine, entering the secure 4-digit PIN, and withdrawing cash instantly.</li>
-                  <li style="margin-bottom: 0;"><b style="color: ${themeColor};">Digital Banking:</b> Transferring funds using mobile apps or netbanking via UPI, NEFT, RTGS, or IMPS for cashless payments.</li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- D4 -->
-            <div>
-              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 8px 0; line-height: 1.5; text-align: justify;">4. What are the various forms of Plastic money?</p>
-              <div style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
-                Plastic money refers to physical credit cards, debit cards, and payment cards made of plastic. The main forms are:
-                <ul style="margin: 6px 0 0 0; padding-left: 20px;">
-                  <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Debit Cards:</b> Directly linked to the user's savings or current bank account. When a transaction is made, the money is instantly deducted from the account.</li>
-                  <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Credit Cards:</b> Issued by banks with a pre-approved credit limit. It allows the cardholder to borrow funds to make purchases on credit and repay it later within a billing cycle.</li>
-                  <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Smart/Prepaid Cards:</b> Cards pre-loaded with a specific amount of money (like metro cards or gift cards) that can be used for specified payments.</li>
-                  <li style="margin-bottom: 0;"><b style="color: ${themeColor};">Co-Branded Cards:</b> Retail cards issued by banks in partnership with brands (airlines, supermarkets) offering custom reward points.</li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- D5 -->
-            <div>
-              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 8px 0; line-height: 1.5; text-align: justify;">5. Explain the various credit and loan activities of Banks with an example?</p>
-              <div style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
-                Banks function as financial intermediaries using public deposits. Their operations are as follows:
-                <p style="margin: 6px 0 10px 0;">
-                  Banks keep only a small portion of deposits as cash (normally 15% in India) to meet daily withdrawals. They use the remaining 85% to extend loans to borrowers. The bank charges a higher interest rate on loans than the rate paid on deposits.
-                </p>
-                <div style="background-color: rgba(255, 214, 0, 0.04); border-left: 3px solid ${themeColor}; padding: 12px; border-radius: 0 8px 8px 0; font-size: 13px;">
-                  <b>Example Case:</b>
-                  <br/>• <b>Rohan</b> deposits ₹10,000 in his savings account. The bank offers him a <b>3% annual interest</b>.
-                  <br/>• <b>Amit</b> is a shopkeeper who needs ₹8,000 to buy stock. He takes a business loan from the bank at a <b>10% annual interest</b>.
-                  <br/>• At the end of the year, the bank collects ₹800 interest from Amit, pays ₹300 interest to Rohan, and earns <b>₹500 as net profit (spread)</b>.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    `,
+  "id": "sst-eco-c9-1",
+  "number": 1,
+  "title": "Money & Banking",
+  "isHtmlView": true,
+  "htmlOverview": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(253, 200, 48, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FDC830; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FDC830; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFF3C4; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFF3C4; font-weight: 700; }\n  .hl { color: #FDC830; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FDC830; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FDC830; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(253, 200, 48, 0.10); border: 1.5px dashed #FDC830; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FDC830; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(253, 200, 48, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(253, 200, 48, 0.18); border: 1px solid #FDC830; color: #FFF3C4; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(253, 200, 48, 0.2); color: #FFF3C4; }\n  .q-card .q-text, .q-card .sub-q { color: #FDC830 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ Chapter at a Glance</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>No.</th><th>Learning objective</th></tr><tr><td>1</td><td>Money as a medium of exchange</td></tr><tr><td>2</td><td>Modern forms of money</td></tr><tr><td>3</td><td>Concept of a bank and types of bank deposits</td></tr><tr><td>4</td><td>How to open and operate a savings bank account</td></tr><tr><td>5</td><td>Credit and loan facilities of a bank</td></tr><tr><td>6</td><td>Role of post office in savings</td></tr></table></div><div class=\"pt\"><span class=\"lbl\">Did you know?</span> The term “money” is derived from the Latin word <b>“moneta”</b>.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 1. Money as a Medium of Exchange</div><div class=\"sol-step\"><div class=\"pt\">We need money to buy goods and services; as buyers we pay money, as sellers we receive it.</div><div class=\"pt\"><b>Barter system:</b> goods exchanged for goods. Its problem is the <b>double coincidence of wants</b> — “what a person desires to sell is exactly what the other wishes to buy”. A cloth merchant wanting rice must find a rice farmer who wants cloth.</div><div class=\"pt\">Money removes this need: the merchant sells cloth for money and buys rice with money. Because it acts as an intermediate in exchange, money is a <b>medium of exchange</b>.</div><div class=\"pt\">“Anything which is widely accepted in payments for goods or in discharge of other kinds of obligations is money.” Money is <b>legal tender</b> — legally no one can refuse it.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 262\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"262\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"20\" font-size=\"11.5\" fill=\"#FDC830\" text-anchor=\"middle\" font-weight=\"700\">Evolution of Money</text><rect x=\"20\" y=\"32\" width=\"280\" height=\"30\" rx=\"6\" fill=\"#B0BEC529\" stroke=\"#B0BEC5\" stroke-width=\"1.2\"/><text x=\"32\" y=\"51\" font-size=\"10\" fill=\"#B0BEC5\" font-weight=\"700\">1. Barter</text><text x=\"290\" y=\"51\" font-size=\"8.6\" fill=\"#FFFFFF\" text-anchor=\"end\">goods for goods</text><path d=\"M160 63 L160 69\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><rect x=\"20\" y=\"70\" width=\"280\" height=\"30\" rx=\"6\" fill=\"#A1887F29\" stroke=\"#A1887F\" stroke-width=\"1.2\"/><text x=\"32\" y=\"89\" font-size=\"10\" fill=\"#A1887F\" font-weight=\"700\">2. Animal money</text><text x=\"290\" y=\"89\" font-size=\"8.6\" fill=\"#FFFFFF\" text-anchor=\"end\">cattle</text><path d=\"M160 101 L160 107\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><rect x=\"20\" y=\"108\" width=\"280\" height=\"30\" rx=\"6\" fill=\"#FFB74D29\" stroke=\"#FFB74D\" stroke-width=\"1.2\"/><text x=\"32\" y=\"127\" font-size=\"10\" fill=\"#FFB74D\" font-weight=\"700\">3. Commodity money</text><text x=\"290\" y=\"127\" font-size=\"8.6\" fill=\"#FFFFFF\" text-anchor=\"end\">ivory, grain, salt, tea</text><path d=\"M160 139 L160 145\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><rect x=\"20\" y=\"146\" width=\"280\" height=\"30\" rx=\"6\" fill=\"#FDD83529\" stroke=\"#FDD835\" stroke-width=\"1.2\"/><text x=\"32\" y=\"165\" font-size=\"10\" fill=\"#FDD835\" font-weight=\"700\">4. Metallic money</text><text x=\"290\" y=\"165\" font-size=\"8.6\" fill=\"#FFFFFF\" text-anchor=\"end\">gold, silver, copper coins</text><path d=\"M160 177 L160 183\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><rect x=\"20\" y=\"184\" width=\"280\" height=\"30\" rx=\"6\" fill=\"#66BB6A29\" stroke=\"#66BB6A\" stroke-width=\"1.2\"/><text x=\"32\" y=\"203\" font-size=\"10\" fill=\"#66BB6A\" font-weight=\"700\">5. Paper money</text><text x=\"290\" y=\"203\" font-size=\"8.6\" fill=\"#FFFFFF\" text-anchor=\"end\">China (7th c. AD); India 1861</text><path d=\"M160 215 L160 221\" stroke=\"#B0BEC5\" stroke-width=\"1.4\"/><rect x=\"20\" y=\"222\" width=\"280\" height=\"30\" rx=\"6\" fill=\"#4FC3F729\" stroke=\"#4FC3F7\" stroke-width=\"1.2\"/><text x=\"32\" y=\"241\" font-size=\"10\" fill=\"#4FC3F7\" font-weight=\"700\">6. Modern money</text><text x=\"290\" y=\"241\" font-size=\"8.6\" fill=\"#FFFFFF\" text-anchor=\"end\">deposits, plastic money, e-banking</text></svg></div><div class=\"diagram-caption\">Fig. 1: Stages in the evolution of money</div></div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Stage</th><th>Details (textbook)</th></tr><tr><td>Animal money</td><td>Primitive hunting stage; cattle had a place of pride (still precious in some tribes of Africa and Asia)</td></tr><tr><td>Commodity money</td><td>Axes to yarn; Africans used ivory and tiger jaws; precious stones, rice, tea, tobacco</td></tr><tr><td>Metallic money</td><td>Gold, silver, copper, bronze; minting of coins removed imperfections of size, shape and weight</td></tr><tr><td>Paper money</td><td>17th–18th centuries; first started in China (7th century AD); in India, notes in 1861 by the British colonial government</td></tr></table></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 2. Modern Forms of Money</div><div class=\"sol-step\"><div class=\"rev\">Modern forms of money include <b>currency</b>, <b>demand deposits</b> and <b>plastic money</b> (debit and credit cards).</div><div class=\"sub-q\">Currency</div><div class=\"pt\">In India currency notes and coins are issued by the <b>Reserve Bank of India</b> on behalf of the government; no one else may issue currency, and no one can legally refuse payment in rupees.</div><div class=\"pt\">Indian currency is valid only in India; abroad it must be exchanged — USA: Dollar ($); Europe: Euro (€); Russia: Ruble.</div><div class=\"sub-q\">Deposits with banks</div><div class=\"pt\">A <b>bank</b> is an institution that receives funds from the public and gives loans to those who need them. <b>Deposits are the life line of banks</b>; banks pay interest on them.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Type of deposit</th><th>Description</th></tr><tr><td>Saving account</td><td>Simplest account, opened by individuals; interest given</td></tr><tr><td>Current account</td><td>Businessmen, traders, firms; many transactions a day; no interest</td></tr><tr><td>Recurring deposit</td><td>Money deposited in monthly instalments for a fixed period</td></tr><tr><td>Fixed deposit</td><td>Time deposit; amount kept for a fixed period; highest rate of interest</td></tr></table></div><div class=\"sub-q\">Plastic money</div><div class=\"pt\">Paper money spoils easily, so plastic cards gained worldwide acceptance — cash cards, credit cards, debit cards, prepaid cash cards, store cards.</div><div class=\"pt\"><b>Debit card</b> (bank card): electronic access to one's bank account; used instead of cash and at ATMs.</div><div class=\"pt\"><b>Credit card</b>: pay now on the promise to pay later; the issuer sets a credit limit on a revolving account.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 3. Banking and the Common Man</div><div class=\"sol-step\"><div class=\"pt\">Deposits that can be withdrawn on demand are <b>demand deposits</b>; they share the essential features of money.</div><div class=\"pt\"><b>Cheque:</b> a paper instructing the bank to pay a specific amount from a person's account to the person named. <b>Drawer</b> — maker; <b>drawee</b> — the bank directed to pay; <b>payee</b> — person to be paid.</div><div class=\"pt\"><b>CTS-2010 cheque format:</b> branch address with IFSC code; date boxes (dd/mm/yyyy); printer's name with CTS-2010; pantograph showing VOID/COPY on photocopy; new rupee symbol; “Please sign above”.</div><div class=\"pt\"><b>Demand Draft:</b> a pre-paid negotiable instrument payable at a specified branch — also called a <b>“remotely created check”</b>.</div><div class=\"sub-q\">Types of banks</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Type</th><th>Role / examples</th></tr><tr><td>Commercial bank</td><td>Accepts deposits and gives loans; public sector — SBI, PNB, BOI, Indian Bank, Canara Bank, BOB; private — ICICI, HDFC</td></tr><tr><td>Central bank</td><td>Apex financial institution; issues notes and controls monetary policy — Reserve Bank of India</td></tr><tr><td>Cooperative bank</td><td>Run by cooperative societies under state laws; agricultural (rural) — farming, cattle, fishery; non-agricultural (urban) — self-employment, small industry, durables</td></tr><tr><td>Specialised bank</td><td>For a specific activity — SIDBI (small industries), NABARD (agriculture and rural development)</td></tr></table></div><div class=\"sub-q\">Transactions in a bank</div><div class=\"pt\"><b>Deposits and withdrawals</b> (pay-in-slip, withdrawal slip); <b>loans and advances</b> (no existing account needed, but formalities must be completed); <b>utility payments</b> (electricity, water, fees, cards at shops); <b>locker facility</b> for jewellery and documents.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 4. Loan and Credit Activities of a Bank</div><div class=\"sol-step\"><div class=\"pt\">Banks keep only a small part of deposits as cash (about <b>15 per cent</b> in India these days) and lend out the rest against approved security (collateral).</div><div class=\"pt\"><b>Credit creation</b> (money creation): banks keep a minimum reserve — the <b>Cash Reserve Ratio (CRR)</b> — and lend the rest.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Step</th><th>Deposit (Rs)</th><th>Cash kept 20% (Rs)</th><th>Can lend (Rs)</th><th>Total deposits (Rs)</th></tr><tr><td>1</td><td>100</td><td>20</td><td>80</td><td>100</td></tr><tr><td>2</td><td>80</td><td>16</td><td>64</td><td>180</td></tr><tr><td>3</td><td>64</td><td>12.8</td><td>51.2</td><td>244</td></tr></table></div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 250\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"250\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"20\" font-size=\"11\" fill=\"#FDC830\" text-anchor=\"middle\" font-weight=\"700\">Credit Creation with CRR 20% (textbook)</text><rect x=\"40\" y=\"60\" width=\"46\" height=\"104\" fill=\"#4FC3F7\" stroke=\"#FFFFFF\" stroke-width=\"0.6\"/><rect x=\"40\" y=\"164\" width=\"46\" height=\"26\" fill=\"#EF5350\" stroke=\"#FFFFFF\" stroke-width=\"0.6\"/><text x=\"63\" y=\"55\" font-size=\"9\" fill=\"#4FC3F7\" text-anchor=\"middle\" font-weight=\"700\">Rs 100</text><text x=\"63\" y=\"180\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\">20</text><text x=\"90\" y=\"115.0\" font-size=\"7.8\" fill=\"#FFFFFF\">loan 80</text><text x=\"63\" y=\"203\" font-size=\"8.6\" fill=\"#FFFFFF\" text-anchor=\"middle\">Step 1 (A deposits)</text><text x=\"63\" y=\"216\" font-size=\"8.6\" fill=\"#FDC830\" text-anchor=\"middle\" font-weight=\"700\">Total 100</text><rect x=\"132\" y=\"86\" width=\"46\" height=\"83.2\" fill=\"#66BB6A\" stroke=\"#FFFFFF\" stroke-width=\"0.6\"/><rect x=\"132\" y=\"169.2\" width=\"46\" height=\"20.8\" fill=\"#EF5350\" stroke=\"#FFFFFF\" stroke-width=\"0.6\"/><text x=\"155\" y=\"81\" font-size=\"9\" fill=\"#66BB6A\" text-anchor=\"middle\" font-weight=\"700\">Rs 80</text><text x=\"155\" y=\"182.6\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\">16</text><text x=\"182\" y=\"130.6\" font-size=\"7.8\" fill=\"#FFFFFF\">loan 64</text><text x=\"155\" y=\"203\" font-size=\"8.6\" fill=\"#FFFFFF\" text-anchor=\"middle\">Step 2 (Loan to B)</text><text x=\"155\" y=\"216\" font-size=\"8.6\" fill=\"#FDC830\" text-anchor=\"middle\" font-weight=\"700\">Total 180</text><rect x=\"224\" y=\"106.8\" width=\"46\" height=\"66.56\" fill=\"#FFB74D\" stroke=\"#FFFFFF\" stroke-width=\"0.6\"/><rect x=\"224\" y=\"173.36\" width=\"46\" height=\"16.64\" fill=\"#EF5350\" stroke=\"#FFFFFF\" stroke-width=\"0.6\"/><text x=\"247\" y=\"101.8\" font-size=\"9\" fill=\"#FFB74D\" text-anchor=\"middle\" font-weight=\"700\">Rs 64</text><text x=\"247\" y=\"184.68\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\">12.8</text><text x=\"274\" y=\"143.1\" font-size=\"7.8\" fill=\"#FFFFFF\">loan 51.2</text><text x=\"247\" y=\"203\" font-size=\"8.6\" fill=\"#FFFFFF\" text-anchor=\"middle\">Step 3 (Loan to C)</text><text x=\"247\" y=\"216\" font-size=\"8.6\" fill=\"#FDC830\" text-anchor=\"middle\" font-weight=\"700\">Total 244</text><line x1=\"30\" y1=\"190\" x2=\"310\" y2=\"190\" stroke=\"#FFFFFF\"/><rect x=\"40\" y=\"236\" width=\"9\" height=\"9\" fill=\"#EF5350\"/><text x=\"53\" y=\"244\" font-size=\"8\" fill=\"#CBD5E1\">Cash kept (20%)</text><text x=\"300\" y=\"244\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">Bar height = deposit</text></svg></div><div class=\"diagram-caption\">Fig. 2: Each loan creates a new deposit</div></div><div class=\"rev\"><i>Worked from the textbook: 100 + 80 + 64 = 244 after three steps. If the process continued, deposits would approach 100 ÷ 0.20 = Rs 500.</i></div><div class=\"pt\">Banks act as <b>intermediaries</b> between depositors and borrowers, and charge borrowers a higher interest than they pay depositors — the difference is the <b>bank's profit</b>.</div><div class=\"sub-q\">Aamir's dream house</div><div class=\"pt\">Loan of <b>Rs 5 lakh</b> at <b>12 per cent</b> a year, repaid in <b>10 years</b> by monthly instalments; employment and salary records submitted; house papers kept as <b>collateral</b> until full repayment.</div><div class=\"pt\"><b>Collateral:</b> an asset the borrower owns (land, business asset, house, vehicle, livestock, deposits) kept with the lender as a guarantee; the lender can sell it if the loan is not repaid.</div><div class=\"pt\"><b>Terms of credit:</b> interest rate, collateral, documentation and mode of repayment.</div><div class=\"pt\"><b>Debt trap:</b> when repayment becomes impossible and recovery is very painful for the borrower.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 5. Operating a Savings Bank Account</div><div class=\"sol-step\"><div class=\"sub-q\">Opening an account</div><div class=\"pt\">Choose a bank (the leading bank of our UT is <b>Jammu and Kashmir Bank Ltd.</b>) → fill the prescribed form → submit with documents (proof of identity and residence) → receive account number, <b>passbook</b> and possibly an ATM card.</div><div class=\"pt\">Procedure: fill application (name, parentage, residence) → sign → paste photograph → attach copies of Aadhaar, identity card, PAN → submit to the manager → get passbook.</div><div class=\"sub-q\">Depositing money</div><div class=\"pt\">Go to the bank → fill the <b>pay-in-slip</b> in duplicate (name, account number, date, amount in figures and words, signature; denominations on the back) → receipts counter (wait in the queue) → take the stamped receipt → keep it safely as documentary evidence.</div><div class=\"sub-q\">Withdrawing money</div><div class=\"pt\"><b>At the branch:</b> by withdrawal form (identified by passbook photograph and signature) or by cheque.</div><div class=\"pt\"><b>By ATM:</b> insert card → PIN → choose amount → collect cash and slip showing amount and balance.</div><div class=\"sub-q\">e-Banking and its safety</div><div class=\"pt\">Access to one's account over the internet with a username and password — transfers, bill payments, online purchases.</div><div class=\"pt\"><b>Safety:</b> never disclose username and password; prefer a personal computer to computers at public places.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 6. Role of Post Office in Savings</div><div class=\"sol-step\"><div class=\"pt\">The <b>Post Office savings bank</b> is the oldest and largest banking system in India, serving urban and rural people as an agency of the Ministry of Finance. India Post has over <b>1,55,015</b> branches — twice the outreach of all commercial banks together.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Various Post Office Schemes</th></tr><tr><td>Post Office Savings Account</td></tr><tr><td>5-Year Post Office Recurring Deposit</td></tr><tr><td>Post Office Monthly Income Scheme</td></tr><tr><td>Senior Citizen Savings Scheme</td></tr><tr><td>15 year Public Provident Fund Account</td></tr><tr><td>5 Years National Savings Certificate (VIII Issue)</td></tr><tr><td>10 Years National Savings Certificate (IX Issue)</td></tr></table></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 7. Key Terms</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Term</th><th>Meaning</th></tr><tr><td>Barter system</td><td>Direct exchange of goods for goods</td></tr><tr><td>Double coincidence of wants</td><td>What one wants to sell is exactly what the other wants to buy</td></tr><tr><td>Medium of exchange</td><td>Money as the intermediate in exchange</td></tr><tr><td>Demand deposit</td><td>Bank deposit withdrawable on demand</td></tr><tr><td>Cheque</td><td>Order to a bank to pay a sum from an account to a named person</td></tr><tr><td>Demand draft</td><td>Pre-paid negotiable instrument; “remotely created check”</td></tr><tr><td>CRR</td><td>Part of deposits banks must keep as cash reserve</td></tr><tr><td>Collateral</td><td>Asset kept with the lender as guarantee for a loan</td></tr><tr><td>Terms of credit</td><td>Interest, collateral, documents and mode of repayment</td></tr><tr><td>Debt trap</td><td>Situation when a borrower cannot repay and is worse off</td></tr></table></div><div class=\"exam\"><span class=\"exam-t\">📌 Exam Focus</span><div>• Barter, double coincidence of wants, money as medium of exchange</div><div>• Evolution and modern forms of money</div><div>• Types of deposits and banks</div><div>• Credit creation and terms of credit</div><div>• Opening, depositing, withdrawing; e-banking; post office schemes</div></div></div>\n  </div>\n</div>",
+  "htmlExercises": {
+    "se9-1-ex-obj": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(253, 200, 48, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FDC830; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FDC830; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFF3C4; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFF3C4; font-weight: 700; }\n  .hl { color: #FDC830; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FDC830; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FDC830; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(253, 200, 48, 0.10); border: 1.5px dashed #FDC830; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FDC830; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(253, 200, 48, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(253, 200, 48, 0.18); border: 1px solid #FDC830; color: #FFF3C4; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(253, 200, 48, 0.2); color: #FFF3C4; }\n  .q-card .q-text, .q-card .sub-q { color: #FDC830 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">A. Fill in the blanks:<br/>i. ______ issues currency notes on behalf of the Central Government.<br/>ii. Banks charge a higher interest rate on loans than what they offer on ______.<br/>iii. ______ is an asset that the borrower owns and uses as a guarantee until the loan is repaid to the lender.<br/>iv. A ______ is the simplest form of bank account which can be opened by any individual for encouraging savings.<br/>v. The most common form of payments being made instead of cash is a bank instrument called a ______.<br/>vi. This is also called a \"remotely created check\", ______.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">i. <b>The Reserve Bank of India</b></div><div class=\"pt\">ii. <b>deposits</b></div><div class=\"pt\">iii. <b>Collateral</b></div><div class=\"pt\">iv. <b>Saving account</b></div><div class=\"pt\">v. <b>Cheque</b></div><div class=\"pt\">vi. <b>Demand Draft</b></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">B. One word Answers:<br/>i. The central bank of India<br/>ii. One nationalized Bank of India<br/>iii. One privately owned bank in India<br/>iv. One post office saving scheme<br/>v. One cooperative bank in rural India giving loans to farmers</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">i. <b>Reserve Bank of India (RBI)</b></div><div class=\"pt\">ii. <b>State Bank of India</b> (also PNB, Bank of India, Canara Bank, Bank of Baroda)</div><div class=\"pt\">iii. <b>ICICI Bank</b> (or HDFC Bank)</div><div class=\"pt\">iv. <b>Public Provident Fund</b> (or National Savings Certificate, Monthly Income Scheme)</div><div class=\"pt\">v. <b>A Primary Agricultural Credit Society / District Central Co-operative Bank</b> — e.g. the J&amp;K State Co-operative Bank (the chapter names cooperative banks only by type)</div></div></div>\n  </div>\n</div>",
+    "se9-1-ex-short": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(253, 200, 48, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FDC830; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FDC830; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFF3C4; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFF3C4; font-weight: 700; }\n  .hl { color: #FDC830; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FDC830; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FDC830; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(253, 200, 48, 0.10); border: 1.5px dashed #FDC830; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FDC830; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(253, 200, 48, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(253, 200, 48, 0.18); border: 1px solid #FDC830; color: #FFF3C4; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(253, 200, 48, 0.2); color: #FFF3C4; }\n  .q-card .q-text, .q-card .sub-q { color: #FDC830 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">What is double coincidence of wants? Explain with an example of your own.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">When what one person desires to sell is exactly what the other wishes to buy, and vice versa.</div><div class=\"pt\"><b>Example:</b> a shoemaker wants wheat. Under barter he must find a farmer who has wheat and also wants shoes at the same time. Money removes this need.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Can you think of some examples of goods/services being exchanged or wages being paid through barter?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Farm workers paid in grain at harvest time.</div><div class=\"pt\">Exchanging milk or vegetables with neighbours for other goods.</div><div class=\"pt\">A carpenter repairing a farmer's plough in return for a share of the crop.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Why is money called a medium of exchange?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">Because it acts as an intermediate in the exchange process: a person sells goods for money and uses the money to buy other goods. It is widely accepted, so the double coincidence of wants is no longer needed.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">What are the different forms of modern currency?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Currency</b> — paper notes and coins.</div><div class=\"pt\"><b>Demand deposits</b> with banks, used through cheques.</div><div class=\"pt\"><b>Plastic money</b> — debit cards, credit cards, cash cards.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5.</div>\n    <div class=\"q-text\">Who is authorized to issue currency in India?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">The <b>Reserve Bank of India</b>, on behalf of the Central Government. No other person or organisation can issue currency.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q6.</div>\n    <div class=\"q-text\">Why can no one refuse to accept payment in rupees?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">The rupee is <b>legal tender</b> — authorised by the government — so no person in India can legally refuse a payment made in rupees.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q7.</div>\n    <div class=\"q-text\">Why are the deposits in the bank account called deposits? (demand deposits)</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">People place (deposit) their extra money with the bank for safety and interest. Since these deposits can be withdrawn whenever the depositor demands, they are called <b>demand deposits</b>.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q8.</div>\n    <div class=\"q-text\">How do banks mediate between those who have surplus money and those who need money?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">Banks accept deposits from people with surplus money and pay them interest. Keeping a small part as cash reserve, they lend the rest to borrowers at a higher interest rate. Thus banks act as intermediaries; the difference in rates is their profit.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q9.</div>\n    <div class=\"q-text\">Define a Cheque.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">A cheque is a paper instructing the bank to pay a specific amount from a person's account to the person in whose name the cheque has been issued. The maker is the <b>drawer</b>, the bank is the <b>drawee</b> and the person paid is the <b>payee</b>.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q10.</div>\n    <div class=\"q-text\">Define a Loan.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">A loan (credit) is an agreement in which the lender supplies the borrower with money, goods or services in return for the promise of future payment, with interest, on agreed terms.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q11.</div>\n    <div class=\"q-text\">Why do lenders ask for collateral while lending?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">Collateral is a guarantee. If the borrower fails to repay, the lender has the right to sell the collateral to recover the money, so it protects the lender against loss.</div></div></div>\n  </div>\n</div>",
+    "se9-1-ex-long": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(253, 200, 48, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FDC830; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FDC830; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFF3C4; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFF3C4; font-weight: 700; }\n  .hl { color: #FDC830; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FDC830; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FDC830; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(253, 200, 48, 0.10); border: 1.5px dashed #FDC830; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FDC830; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(253, 200, 48, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(253, 200, 48, 0.18); border: 1px solid #FDC830; color: #FFF3C4; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(253, 200, 48, 0.2); color: #FFF3C4; }\n  .q-card .q-text, .q-card .sub-q { color: #FDC830 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">What are the various forms of modern money?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">Currency</div><div class=\"pt\">Paper notes and coins issued by the RBI on behalf of the government; legal tender within India; every country has its own currency (Dollar, Euro, Ruble).</div><div class=\"sub-q\">Deposits with banks</div><div class=\"pt\">Savings, current, recurring and fixed deposits; demand deposits can be withdrawn any time and used through cheques and demand drafts — they share the features of money.</div><div class=\"sub-q\">Plastic money</div><div class=\"pt\">Debit cards (electronic access to the account, ATM use) and credit cards (buy now, pay later within a limit); also cash cards, prepaid and store cards.</div><div class=\"sub-q\">e-Banking</div><div class=\"pt\">Transfers, bill payments and online purchases through internet banking.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">What is the procedure of opening a Savings Bank account?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Choose a bank</b> — e.g. J&amp;K Bank, the leading bank of our UT.</div><div class=\"pt\"><b>Fill the application form</b> — name, parentage, residence and other details.</div><div class=\"pt\"><b>Sign</b> the form and <b>paste a photograph</b>.</div><div class=\"pt\"><b>Attach copies of documents</b> — Aadhaar card, identity card, PAN card (proof of identity and residence).</div><div class=\"pt\"><b>Submit</b> the form to the bank manager/officer for scrutiny.</div><div class=\"pt\"><b>Receive</b> the account number, a <b>passbook</b> (record of deposits and withdrawals) and possibly an ATM card.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">How can you withdraw money from a Savings Bank account?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">I. By visiting the branch</div><div class=\"pt\"><b>Withdrawal form:</b> fill it personally; the bank identifies you by passbook photograph and signature.</div><div class=\"pt\"><b>Cheque:</b> the account holder (or the person named) presents a signed cheque; cheques can also transfer money between accounts.</div><div class=\"sub-q\">II. By ATM</div><div class=\"pt\">Insert the card → enter PIN → choose the amount → collect cash and the slip showing amount withdrawn and balance.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">What are the various forms of Plastic money?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Debit card</b> (bank card) — electronic access to one's bank account; used for purchases and ATM withdrawals.</div><div class=\"pt\"><b>Credit card</b> — pay for goods and services on the promise to pay later; the issuer grants a credit limit on a revolving account.</div><div class=\"pt\"><b>Cash cards, prepaid cash cards and store cards</b>.</div><div class=\"rev\">Plastic money is durable and convenient, unlike paper money which spoils easily.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5.</div>\n    <div class=\"q-text\">Explain the various credit and loan activities of Banks with an example?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Banks keep a part of deposits as cash (CRR) and lend the rest — this creates credit.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Step</th><th>Deposit</th><th>Cash 20%</th><th>Loan</th><th>Total</th></tr><tr><td>1</td><td>100</td><td>20</td><td>80</td><td>100</td></tr><tr><td>2</td><td>80</td><td>16</td><td>64</td><td>180</td></tr><tr><td>3</td><td>64</td><td>12.8</td><td>51.2</td><td>244</td></tr></table></div><div class=\"pt\">Banks are intermediaries between depositors and borrowers and earn profit from the difference in interest rates.</div><div class=\"pt\">Loans usually need <b>collateral</b> and are given on <b>terms of credit</b> — interest, collateral, documents, repayment.</div><div class=\"sub-q\">Example: Aamir's dream house</div><div class=\"rev\">Aamir took a loan of Rs 5 lakh at 12% interest a year to buy a house, repayable in 10 years by monthly instalments. He submitted proof of employment and salary, and the bank kept the house papers as collateral until full repayment. Loans help people meet such needs, but if repayment becomes impossible the borrower may fall into a <b>debt trap</b>.</div></div></div>\n  </div>\n</div>",
+    "se9-1-ex-proj": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(253, 200, 48, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FDC830; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FDC830; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFF3C4; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFF3C4; font-weight: 700; }\n  .hl { color: #FDC830; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FDC830; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FDC830; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(253, 200, 48, 0.10); border: 1.5px dashed #FDC830; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FDC830; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(253, 200, 48, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(253, 200, 48, 0.18); border: 1px solid #FDC830; color: #FFF3C4; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(253, 200, 48, 0.2); color: #FFF3C4; }\n  .q-card .q-text, .q-card .sub-q { color: #FDC830 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Project: Go to the local bank and ask them to give a demo of how to operate an ATM.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\"><i>Note the steps:</i> insert card → choose language → enter PIN (never let anyone see it) → choose withdrawal → enter amount → collect cash, card and slip. Also note safety tips the bank officer gives.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Project: Go to the local post master and request them to deliver a lecture on various post office saving schemes in your school.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">Prepare questions on the schemes listed in the chapter — savings account, 5-year RD, Monthly Income Scheme, Senior Citizen Scheme, PPF, NSC — such as minimum deposit, period and who can open them.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Project: Collect the pictures/logos of any 2 commercial banks and our central bank and paste in your scrap book.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">For example: State Bank of India and J&amp;K Bank (commercial banks), and the Reserve Bank of India (central bank). Write one line about each under its logo.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">Activity box 1: Enact a role play in the class showing the ancient barter system of exchanging goods for goods.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\"><i>Idea:</i> a cloth merchant who wants rice meets a rice farmer who wants shoes — no exchange is possible. Then a shoemaker who wants cloth joins in. Show how difficult barter is and how money would solve it.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5.</div>\n    <div class=\"q-text\">Activity box 2: Make a list giving names of the currencies of France, Germany, China, Brazil.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Country</th><th>Currency</th></tr><tr><td>France</td><td>Euro (€)</td></tr><tr><td>Germany</td><td>Euro (€)</td></tr><tr><td>China</td><td>Yuan / Renminbi (¥)</td></tr><tr><td>Brazil</td><td>Real (R$)</td></tr></table></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q6.</div>\n    <div class=\"q-text\">Activity box 3: Paste a specimen of a form used to deposit and withdraw money from a bank in your scrap book.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">Collect a <b>pay-in-slip</b> and a <b>withdrawal slip</b> from a bank counter; label the parts — account number, amount in figures and words, denominations, signature.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q7.</div>\n    <div class=\"q-text\">Activity box 4: Paste pictures in your scrap book of some assets/collateral that can be kept by banks while lending a loan.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">Pictures of land, a house, a vehicle, livestock, gold jewellery and fixed-deposit receipts — the assets the chapter lists as collateral.</div></div></div>\n  </div>\n</div>"
   },
-  exercises: [
+  "introduction": "This chapter introduces the fundamental concepts of money and banking. It details the evolution of money from the barter system to modern paper notes, coins, cheques, and plastic money. It also explains how banks act as vital financial intermediaries between savers and borrowers.",
+  "definitions": [],
+  "keyPoints": [],
+  "formulas": [],
+  "crux": [],
+  "mcqs": [
     {
-      id: "ex-sst-qa",
-      name: "Q & A",
-      questions: [],
+      "id": "sst-eco-c9-1-mcq-1",
+      "question": "<div style='text-align: justify;'>The term “money” is derived from the Latin word —</div>",
+      "options": [
+        "A):   monetary",
+        "B):   moneta",
+        "C):   mone",
+        "D):   monos"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Money is a medium of exchange.</div>"
     },
+    {
+      "id": "sst-eco-c9-1-mcq-2",
+      "question": "<div style='text-align: justify;'>The main problem of the barter system is —</div>",
+      "options": [
+        "A):   inflation",
+        "B):   too much money",
+        "C):   double coincidence of wants",
+        "D):   high interest"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Both parties must want what the other has.</div>"
+    },
+    {
+      "id": "sst-eco-c9-1-mcq-3",
+      "question": "<div style='text-align: justify;'>African people used which of these as commodity money?</div>",
+      "options": [
+        "A):   Ivory and tiger jaws",
+        "B):   Paper notes",
+        "C):   Credit cards",
+        "D):   Silver coins"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Precious stones, rice, tea and tobacco were also used.</div>"
+    },
+    {
+      "id": "sst-eco-c9-1-mcq-4",
+      "question": "<div style='text-align: justify;'>Paper money was first started in —</div>",
+      "options": [
+        "A):   India",
+        "B):   Britain",
+        "C):   Africa",
+        "D):   China"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>In India notes were issued in 1861.</div>"
+    },
+    {
+      "id": "sst-eco-c9-1-mcq-5",
+      "question": "<div style='text-align: justify;'>In India, paper currency notes were introduced by the British colonial government in —</div>",
+      "options": [
+        "A):   1947",
+        "B):   1861",
+        "C):   1935",
+        "D):   1901"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Paper money is easy to carry.</div>"
+    },
+    {
+      "id": "sst-eco-c9-1-mcq-6",
+      "question": "<div style='text-align: justify;'>Currency notes in India are issued by the —</div>",
+      "options": [
+        "A):   State Bank of India",
+        "B):   Ministry of Finance directly",
+        "C):   Reserve Bank of India",
+        "D):   J&K Bank"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>On behalf of the Central Government.</div>"
+    },
+    {
+      "id": "sst-eco-c9-1-mcq-7",
+      "question": "<div style='text-align: justify;'>Which account gives the highest rate of interest?</div>",
+      "options": [
+        "A):   Fixed deposit",
+        "B):   Current account",
+        "C):   Saving account",
+        "D):   Recurring deposit"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Fixed deposits are time deposits.</div>"
+    },
+    {
+      "id": "sst-eco-c9-1-mcq-8",
+      "question": "<div style='text-align: justify;'>A current account is generally maintained by —</div>",
+      "options": [
+        "A):   students only",
+        "B):   senior citizens only",
+        "C):   farmers only",
+        "D):   businessmen and traders"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>No interest is given on it.</div>"
+    },
+    {
+      "id": "sst-eco-c9-1-mcq-9",
+      "question": "<div style='text-align: justify;'>The person who makes a cheque is called the —</div>",
+      "options": [
+        "A):   drawee",
+        "B):   drawer",
+        "C):   payee",
+        "D):   collateral"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>The drawee is the bank directed to pay.</div>"
+    },
+    {
+      "id": "sst-eco-c9-1-mcq-10",
+      "question": "<div style='text-align: justify;'>A demand draft is also called a —</div>",
+      "options": [
+        "A):   credit card",
+        "B):   pay-in-slip",
+        "C):   remotely created check",
+        "D):   passbook"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>It is a pre-paid negotiable instrument.</div>"
+    },
+    {
+      "id": "sst-eco-c9-1-mcq-11",
+      "question": "<div style='text-align: justify;'>NABARD is an example of a —</div>",
+      "options": [
+        "A):   specialised bank",
+        "B):   central bank",
+        "C):   private commercial bank",
+        "D):   post office"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>It serves agriculture and rural development.</div>"
+    },
+    {
+      "id": "sst-eco-c9-1-mcq-12",
+      "question": "<div style='text-align: justify;'>With CRR of 20%, how much can a bank lend out of a deposit of Rs 100?</div>",
+      "options": [
+        "A):   Rs 20",
+        "B):   Rs 100",
+        "C):   Rs 120",
+        "D):   Rs 80"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>It keeps Rs 20 as cash.</div>"
+    },
+    {
+      "id": "sst-eco-c9-1-mcq-13",
+      "question": "<div style='text-align: justify;'>After three steps in the textbook example, total deposits rise to —</div>",
+      "options": [
+        "A):   Rs 180",
+        "B):   Rs 244",
+        "C):   Rs 300",
+        "D):   Rs 500"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>100 + 80 + 64 = 244.</div>"
+    },
+    {
+      "id": "sst-eco-c9-1-mcq-14",
+      "question": "<div style='text-align: justify;'>In India these days banks hold about what share of deposits as cash?</div>",
+      "options": [
+        "A):   50 per cent",
+        "B):   1 per cent",
+        "C):   15 per cent",
+        "D):   80 per cent"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>The rest is used to give loans.</div>"
+    },
+    {
+      "id": "sst-eco-c9-1-mcq-15",
+      "question": "<div style='text-align: justify;'>An asset kept with the lender as a guarantee for a loan is called —</div>",
+      "options": [
+        "A):   collateral",
+        "B):   interest",
+        "C):   CRR",
+        "D):   passbook"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>The lender can sell it if the loan is not repaid.</div>"
+    },
+    {
+      "id": "sst-eco-c9-1-mcq-16",
+      "question": "<div style='text-align: justify;'>Aamir's home loan carried an annual interest rate of —</div>",
+      "options": [
+        "A):   10 per cent",
+        "B):   5 per cent",
+        "C):   20 per cent",
+        "D):   12 per cent"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>It was to be repaid in 10 years.</div>"
+    },
+    {
+      "id": "sst-eco-c9-1-mcq-17",
+      "question": "<div style='text-align: justify;'>The form used to deposit cash in a bank is the —</div>",
+      "options": [
+        "A):   withdrawal slip",
+        "B):   pay-in-slip",
+        "C):   cheque",
+        "D):   demand draft"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>It is filled in duplicate.</div>"
+    },
+    {
+      "id": "sst-eco-c9-1-mcq-18",
+      "question": "<div style='text-align: justify;'>The India Post network has over how many branches?</div>",
+      "options": [
+        "A):   15,501",
+        "B):   5,00,000",
+        "C):   1,55,015",
+        "D):   55,015"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Twice the outreach of all commercial banks.</div>"
+    },
+    {
+      "id": "sst-eco-c9-1-mcq-19",
+      "question": "<div style='text-align: justify;'>Assertion (A): Money is called a medium of exchange. Reason (R): It acts as an intermediate in the exchange process and removes the need for double coincidence of wants.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>This is the textbook's explanation.</div>"
+    },
+    {
+      "id": "sst-eco-c9-1-mcq-20",
+      "question": "<div style='text-align: justify;'>Assertion (A): Banks pay depositors a higher rate of interest than they charge on loans. Reason (R): Banks act as intermediaries between depositors and borrowers.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Banks charge borrowers more; the difference is their profit. R is true.</div>"
+    }
   ],
+  "summary": [],
+  "exercises": [
+    {
+      "id": "se9-1-ex-obj",
+      "name": "Blanks & One Word",
+      "questions": []
+    },
+    {
+      "id": "se9-1-ex-short",
+      "name": "Short Answer",
+      "questions": []
+    },
+    {
+      "id": "se9-1-ex-long",
+      "name": "Long Answer",
+      "questions": []
+    },
+    {
+      "id": "se9-1-ex-proj",
+      "name": "Projects",
+      "questions": []
+    }
+  ],
+  "examples": []
 };
