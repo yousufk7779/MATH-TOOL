@@ -1,216 +1,286 @@
 import { ChapterContent } from "../types";
 
-const themeColor = "#FDC830";
-
 export const sstGeoC95: ChapterContent = {
-  id: "sst-geo-c9-5",
-  number: 5,
-  title: "Natural Vegetation and Wildlife",
-  isHtmlView: true,
-  htmlOverview: `
-    <div style="padding: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: transparent;">
-      <!-- Key Concepts Introduction -->
-      <div style="background-color: #1E1E2E; border: 1px solid rgba(66, 165, 245, 0.25); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 20px; font-weight: 700; margin-top: 0; margin-bottom: 12px; display: flex; align-items: center;">
-          <span style="margin-right: 8px; font-size: 22px;">🌲</span> Introduction
-        </h3>
-        <p style="color: #E0E0E0; font-size: 15px; line-height: 1.6; text-align: justify; margin: 0; font-weight: 300;">
-          India is one of the twelve mega bio-diversity countries of the world. With about 47,000 plant species, India occupies tenth place in the world and fourth in Asia in plant diversity. It also has approximately 90,000 species of animals, as well as a rich variety of fish in its fresh and marine waters. <b>Natural vegetation</b> refers to a plant community which has grown naturally without human aid and has been left undisturbed by humans for a long time (virgin vegetation).
-        </p>
-      </div>
-
-      <!-- Key Milestones (Important Points) -->
-      <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 600; margin-top: 0; margin-bottom: 14px; display: flex; align-items: center;">
-          <span style="margin-right: 8px; font-size: 18px;">📌</span> Key Points
-        </h3>
-        <ul style="color: #B3B3C6; font-size: 14.5px; line-height: 1.7; margin: 0; padding-left: 20px; text-align: justify;">
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">Factors Affecting Flora and Fauna:</b> The distribution of plants and animals is primarily determined by <b>Relief</b> (Land and Soil) and <b>Climate</b> (Temperature, Photoperiod, and Precipitation).</li>
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">Ecosystem:</b> All the plants and animals in an area are interdependent and interrelated to each other in their physical environment, forming an ecosystem. Human beings are also an integral part of the ecosystem.</li>
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">Types of Vegetation:</b> The major types of vegetation in India include Tropical Evergreen Forests, Tropical Deciduous Forests, Tropical Thorn Forests and Scrubs, Montane Forests, and Mangrove Forests.</li>
-          <li style="margin-bottom: 0;"><b style="color: ${themeColor};">Wildlife Conservation:</b> To protect the flora and fauna of the country, the government has set up National Parks, Wildlife Sanctuaries, and Biosphere Reserves. Examples include the Nilgiri and Nanda Devi bio-reserves.</li>
-        </ul>
-      </div>
-      
-      <!-- Key Terms Glossy Box -->
-      <div style="background: rgba(66, 165, 245, 0.05); border: 1.5px solid rgba(66, 165, 245, 0.25); border-radius: 16px; padding: 20px; box-shadow: 0 4px 30px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 600; margin-top: 0; margin-bottom: 12px;">🔑 Key Terms to Remember</h3>
-        <div style="color: #E0E0E0; font-size: 14px; line-height: 1.6; text-align: justify;">
-          <p style="margin-top: 0; margin-bottom: 8px;"><b style="color: ${themeColor};">Flora:</b> The plant species of a particular region or period.</p>
-          <p style="margin-bottom: 8px;"><b style="color: ${themeColor};">Fauna:</b> The species of animals of a particular region or period.</p>
-          <p style="margin-bottom: 8px;"><b style="color: ${themeColor};">Biome:</b> A very large ecosystem on land having distinct types of vegetation and animal life.</p>
-          <p style="margin-bottom: 0;"><b style="color: ${themeColor};">Endemic Species:</b> The virgin vegetation which are purely Indian are known as endemic or indigenous species.</p>
-        </div>
-      </div>
-    </div>
-  `,
-  htmlExercises: {
-    "ex-sst-qa": `
-      <div style="padding: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: transparent;">
-        <!-- Q1 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q1. Choose the right answer from the four alternatives given below.</p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
-              <li style="margin-bottom: 10px;">
-                <b>(i) To which one of the following types of vegetation does rubber belong to?</b><br/>
-                <b style="color: ${themeColor};">Answer:</b> (d) Tropical Evergreen
-              </li>
-              <li style="margin-bottom: 10px;">
-                <b>(ii) Cinchona trees are found in the areas of rainfall more than</b><br/>
-                <b style="color: ${themeColor};">Answer:</b> (a) 100 cm
-              </li>
-              <li style="margin-bottom: 10px;">
-                <b>(iii) In which of the following state is the Simlipal bio-reserve located?</b><br/>
-                <b style="color: ${themeColor};">Answer:</b> (c) Odisha
-              </li>
-              <li style="margin-bottom: 0;">
-                <b>(iv) Which one of the following bio-reserves of India is not included in the world network of bioreserve?</b><br/>
-                <b style="color: ${themeColor};">Answer:</b> (a) Manas
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q2 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q2. Answer the following questions briefly.</p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
-              <li style="margin-bottom: 10px;">
-                <b>(i) What factors are responsible for the distribution of plants and animals in India?</b><br/>
-                <b style="color: ${themeColor};">Answer:</b> Relief (Land and Soil) and Climate (Temperature, Photoperiod, and Precipitation).
-              </li>
-              <li style="margin-bottom: 10px;">
-                <b>(ii) What is a bio-reserve? Give two examples.</b><br/>
-                <b style="color: ${themeColor};">Answer:</b> Bio-reserves are large areas of protected land for conservation of wildlife, plant and animal resources, and traditional life of the tribals living in the area. Examples: Nilgiri and Nanda Devi.
-              </li>
-              <li style="margin-bottom: 0;">
-                <b>(iii) Name two animals having habitat in tropical and montane type of vegetation.</b><br/>
-                <b style="color: ${themeColor};">Answer:</b> Tropical animals: Elephant, Monkey. Montane animals: Snow leopard, Yak.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q3 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q3. Distinguish between</p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
-              <li style="margin-bottom: 10px;">
-                <b>(i) Flora and Fauna</b><br/>
-                <b style="color: ${themeColor};">Answer:</b> Flora refers to the plant species of a particular region or period. Fauna refers to the animal species of a particular region or period.
-              </li>
-              <li style="margin-bottom: 0;">
-                <b>(ii) Tropical Evergreen and Deciduous forests</b><br/>
-                <b style="color: ${themeColor};">Answer:</b> Tropical Evergreen Forests are found in areas receiving more than 200 cm of rainfall. They remain green all year round. Tropical Deciduous Forests are found in areas receiving 70 cm to 200 cm of rainfall. Trees shed their leaves for about 6-8 weeks in dry summer.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q4 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q4. Name different types of Vegetation found in India and describe the vegetation of high altitudes.</p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> The major types of vegetation in India are: Tropical Evergreen Forests, Tropical Deciduous Forests, Tropical Thorn Forests and Scrubs, Montane Forests, and Mangrove Forests. <br/><br/>
-            <b>Vegetation of high altitudes (Montane Forests):</b> In mountainous areas, the decrease in temperature with increasing altitude leads to a corresponding change in natural vegetation. Between 1500-3000m, coniferous trees like pine, deodar, silver fir, spruce and cedar are found. At higher altitudes, alpine vegetation like silver fir, junipers, pines and birches are common. Near the snow line, they get stunted and merge into alpine grasslands.
-          </div>
-        </div>
-
-        <!-- Q5 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q5. Quite a few species of plants and animals are endangered in India. Why?</p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> Due to excessive exploitation of plants and animal resources by human beings. Causes include hunting by greedy hunters for commercial purposes, pollution due to chemical and industrial waste, acid deposits, introduction of alien species, and reckless cutting of forests to bring land under cultivation and habitation.
-          </div>
-        </div>
-
-        <!-- Q6 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q6. Why has India a rich heritage of flora and fauna?</p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> India has a rich heritage of flora and fauna because of its immense geographical and climatic diversity. It has varied relief features (mountains, plateaus, plains, coasts), different types of soils, and a wide range of climatic conditions (varying temperature and rainfall) which provide favourable habitats for different types of flora and fauna.
-          </div>
-        </div>
-      </div>
-    `,
+  "id": "sst-geo-c9-5",
+  "number": 5,
+  "title": "Natural Vegetation and Wildlife",
+  "isHtmlView": true,
+  "htmlOverview": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(253, 200, 48, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FDC830; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FDC830; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFF3C4; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFF3C4; font-weight: 700; }\n  .hl { color: #FDC830; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FDC830; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FDC830; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(253, 200, 48, 0.10); border: 1.5px dashed #FDC830; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FDC830; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(253, 200, 48, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(253, 200, 48, 0.18); border: 1px solid #FDC830; color: #FFF3C4; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(253, 200, 48, 0.2); color: #FFF3C4; }\n  .q-card .q-text, .q-card .sub-q { color: #FDC830 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ Chapter at a Glance</div><div class=\"sol-step\"><div class=\"rev\">India is one of the <span class=\"hl\">12 mega bio-diversity</span> countries of the world.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Fact</th><th>Figure (textbook)</th></tr><tr><td>Plant species</td><td>About 47,000 — 10th in the world, 4th in Asia</td></tr><tr><td>Flowering plants</td><td>About 15,000 — 6% of the world's total</td></tr><tr><td>Animal species</td><td>About 90,000</td></tr><tr><td>Bird species</td><td>About 2,000 — 13% of the world's total</td></tr><tr><td>Fish species</td><td>2,546 — nearly 12% of the world's stock</td></tr><tr><td>Amphibians, reptiles, mammals</td><td>5 to 8% of the world's</td></tr></table></div><div class=\"pt\"><b>Natural (virgin) vegetation:</b> a plant community that has grown naturally without human aid and been left undisturbed for a long time. Cultivated crops, fruits and orchards are vegetation, but not natural vegetation.</div><div class=\"pt\"><span class=\"lbl\">Do You Know?</span> Purely Indian plants are <b>endemic</b> (indigenous); those from outside India are <b>exotic</b> plants.</div><div class=\"pt\"><b>Flora</b> — plants of a region or period; <b>fauna</b> — its species of animals.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 1. Factors Affecting Flora and Fauna</div><div class=\"sol-step\"><div class=\"sub-q\">Relief</div><div class=\"pt\"><span class=\"lbl\">Land:</span> fertile land is used for agriculture; undulating and rough terrain has grassland and woodland that shelter wildlife.</div><div class=\"pt\"><span class=\"lbl\">Soil:</span> sandy desert soils — cactus and thorny bushes; wet, marshy deltaic soils — mangroves; hill slopes with deep soil — conical trees.</div><div class=\"sub-q\">Climate</div><div class=\"pt\"><span class=\"lbl\">Temperature:</span> with humidity, precipitation and soil, it decides the character of vegetation. Above <b>915 m</b> on the Himalayas and peninsular hills, falling temperature changes vegetation from tropical to subtropical, temperate and alpine.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Zone</th><th>Mean annual temp.</th><th>Mean Jan. temp.</th><th>Remarks</th></tr><tr><td>Tropical</td><td>Above 24°C</td><td>Above 18°C</td><td>No frost</td></tr><tr><td>Subtropical</td><td>17°C to 24°C</td><td>10°C to 18°C</td><td>Frost is rare</td></tr><tr><td>Temperate</td><td>7°C to 17°C</td><td>−1°C to −10°C</td><td>Frost, some snow</td></tr><tr><td>Alpine</td><td>Below 7°C</td><td>Below −1°C</td><td>Snow</td></tr></table></div><div class=\"rev\"><i>Table 5.1 — Source: Environment Atlas of India, June 2001, CPCB.</i></div><div class=\"pt\"><span class=\"lbl\">Photoperiod (sunlight):</span> varies with latitude, altitude, season and length of day; trees grow faster in summer because of longer sunlight.</div><div class=\"pt\"><span class=\"lbl\">Precipitation:</span> almost all rain comes from the south-west monsoon (June–September) and the retreating north-east monsoon; heavy-rain areas have denser vegetation.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 190\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"190\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"20\" font-size=\"11.5\" fill=\"#FDC830\" text-anchor=\"middle\" font-weight=\"700\">Annual Rainfall and Type of Forest</text><rect x=\"20.0\" y=\"40\" width=\"65.3\" height=\"70\" fill=\"#FFB74D\" fill-opacity=\"0.8\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"52.7\" y=\"72\" font-size=\"9\" fill=\"#1E1E2E\" text-anchor=\"middle\" font-weight=\"700\">Thorn forests</text><text x=\"52.7\" y=\"84\" font-size=\"9\" fill=\"#1E1E2E\" text-anchor=\"middle\" font-weight=\"700\">and scrubs</text><rect x=\"85.3\" y=\"40\" width=\"28.0\" height=\"70\" fill=\"#FDD835\" fill-opacity=\"0.8\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"99.3\" y=\"70\" font-size=\"8\" fill=\"#1E1E2E\" text-anchor=\"middle\" font-weight=\"700\">Dry</text><text x=\"99.3\" y=\"82\" font-size=\"8\" fill=\"#1E1E2E\" text-anchor=\"middle\" font-weight=\"700\">deciduous</text><rect x=\"113.3\" y=\"40\" width=\"93.3\" height=\"70\" fill=\"#9CCC65\" fill-opacity=\"0.8\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"160.0\" y=\"72\" font-size=\"9\" fill=\"#1E1E2E\" text-anchor=\"middle\" font-weight=\"700\">Moist deciduous</text><text x=\"160.0\" y=\"84\" font-size=\"9\" fill=\"#1E1E2E\" text-anchor=\"middle\" font-weight=\"700\">(monsoon forests)</text><rect x=\"206.7\" y=\"40\" width=\"93.3\" height=\"70\" fill=\"#43A047\" fill-opacity=\"0.8\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"253.3\" y=\"72\" font-size=\"9\" fill=\"#1E1E2E\" text-anchor=\"middle\" font-weight=\"700\">Tropical</text><text x=\"253.3\" y=\"84\" font-size=\"9\" fill=\"#1E1E2E\" text-anchor=\"middle\" font-weight=\"700\">evergreen</text><line x1=\"20.0\" y1=\"110\" x2=\"20.0\" y2=\"118\" stroke=\"#FFFFFF\"/><text x=\"20.0\" y=\"130\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">0</text><line x1=\"85.3\" y1=\"110\" x2=\"85.3\" y2=\"118\" stroke=\"#FFFFFF\"/><text x=\"85.3\" y=\"130\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">70</text><line x1=\"113.3\" y1=\"110\" x2=\"113.3\" y2=\"118\" stroke=\"#FFFFFF\"/><text x=\"113.3\" y=\"130\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">100</text><line x1=\"206.7\" y1=\"110\" x2=\"206.7\" y2=\"118\" stroke=\"#FFFFFF\"/><text x=\"206.7\" y=\"130\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\">200</text><text x=\"300.0\" y=\"130\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"end\">200+</text><line x1=\"20\" y1=\"110\" x2=\"300\" y2=\"110\" stroke=\"#FFFFFF\"/><text x=\"160\" y=\"148\" font-size=\"9\" fill=\"#CBD5E1\" text-anchor=\"middle\">Annual rainfall (cm) — scale drawn to the textbook limits</text><text x=\"160\" y=\"170\" font-size=\"9\" fill=\"#FDC830\" text-anchor=\"middle\">More rain → denser, taller, evergreen vegetation</text></svg></div><div class=\"diagram-caption\">Fig. 1: Rainfall decides the type of forest</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 2. Importance of Forests</div><div class=\"sol-step\"><div class=\"pt\">Renewable resources; enhance the quality of the environment; modify local climate; control soil erosion; regulate stream flow; support industries; provide livelihood; offer scenic views and recreation; control wind and temperature and cause rain; give humus to the soil and shelter to wildlife.</div><div class=\"pt\">Natural vegetation has changed due to demand for cultivated land, industries, mining, urbanisation and over-grazing. Except in inaccessible areas — the Himalayas, the hilly central India and the <i>marusthali</i> — it has been modified, replaced or degraded.</div><div class=\"pt\"><span class=\"lbl\">Do You Know?</span> According to the India State of Forest Report 2011, forest cover in India is <b>21.05 per cent</b>.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 3. Types of Vegetation</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Type</th><th>Where / rainfall</th><th>Main trees</th><th>Animals</th></tr><tr><td><b>Tropical Evergreen</b></td><td>Western Ghats, Lakshadweep, Andaman and Nicobar, upper Assam, Tamil Nadu coast; over 200 cm</td><td>Ebony, mahogany, rosewood, rubber, cinchona; up to 60 m, multilayered, green all year</td><td>Elephant, monkey, lemur, deer; one-horned rhino (Assam, West Bengal)</td></tr><tr><td><b>Tropical Deciduous</b> (monsoon) — moist</td><td>200–100 cm: north-east, Himalayan foothills, Jharkhand, West Odisha, Chhattisgarh, eastern slopes of the Western Ghats</td><td>Teak (dominant), bamboo, sal, shisham, sandalwood, khair, kusum, arjun, mulberry</td><td>Lion, tiger, pig, deer, elephant; birds, lizards, snakes, tortoises</td></tr><tr><td><b>Tropical Deciduous</b> — dry</td><td>100–70 cm: rainier parts of the peninsula, plains of Bihar and UP</td><td>Teak, sal, peepal, neem</td><td>(as above)</td></tr><tr><td><b>Thorn Forests and Scrubs</b></td><td>Below 70 cm: semi-arid Gujarat, Rajasthan, MP, Chhattisgarh, UP, Haryana</td><td>Acacias, palms, euphorbias, cacti; deep roots, succulent stems, small thick leaves</td><td>Rats, mice, rabbits, fox, wolf, tiger, lion, wild ass, horses, camels</td></tr><tr><td><b>Montane</b></td><td>Mountains — belts change with altitude</td><td>Oaks, chestnuts; pine, deodar, silver fir, spruce, cedar; junipers, birches</td><td>Kashmir stag, spotted deer, wild sheep, yak, snow leopard, red panda, ibex</td></tr><tr><td><b>Mangrove</b></td><td>Tidal coasts; deltas of the Ganga, Mahanadi, Krishna, Godavari, Kaveri</td><td>Sundari (Ganga-Brahmaputra delta), palm, coconut, keora, agar</td><td>Royal Bengal tiger, turtles, crocodiles, gharials, snakes</td></tr></table></div><div class=\"sub-q\">Montane forests in detail</div><div class=\"pt\"><b>1,000–2,000 m:</b> wet temperate forests — evergreen broad-leaf trees such as oaks and chestnuts.</div><div class=\"pt\"><b>1,500–3,000 m:</b> temperate coniferous forests — pine, deodar, silver fir, spruce, cedar (southern Himalayan slopes, high places of the south and north-east). Temperate grasslands at higher elevations.</div><div class=\"pt\"><b>Above 3,600 m:</b> temperate forests and grasslands give way to <b>alpine</b> vegetation — silver fir, junipers, pines, birches — becoming stunted near the snow-line and merging into <b>alpine grasslands</b>, grazed by nomadic tribes like the Gujjars and the Bakarwals. Higher still: mosses and lichens (<b>tundra</b>).</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"300\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"20\" font-size=\"11.5\" fill=\"#FDC830\" text-anchor=\"middle\" font-weight=\"700\">Montane Vegetation Belts (Himalayas)</text><polygon points=\"40,270 110,40 180,270\" fill=\"rgba(255,255,255,0.06)\" stroke=\"rgba(255,255,255,0.25)\"/><line x1=\"36\" y1=\"270.0\" x2=\"44\" y2=\"270.0\" stroke=\"#FFFFFF\"/><text x=\"33\" y=\"273.0\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">0</text><line x1=\"36\" y1=\"224.0\" x2=\"44\" y2=\"224.0\" stroke=\"#FFFFFF\"/><text x=\"33\" y=\"227.0\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">1000</text><line x1=\"36\" y1=\"178.0\" x2=\"44\" y2=\"178.0\" stroke=\"#FFFFFF\"/><text x=\"33\" y=\"181.0\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">2000</text><line x1=\"36\" y1=\"132.0\" x2=\"44\" y2=\"132.0\" stroke=\"#FFFFFF\"/><text x=\"33\" y=\"135.0\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">3000</text><line x1=\"36\" y1=\"86.0\" x2=\"44\" y2=\"86.0\" stroke=\"#FFFFFF\"/><text x=\"33\" y=\"89.0\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">4000</text><line x1=\"36\" y1=\"40.0\" x2=\"44\" y2=\"40.0\" stroke=\"#FFFFFF\"/><text x=\"33\" y=\"43.0\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"end\">5000</text><line x1=\"40\" y1=\"40\" x2=\"40\" y2=\"270\" stroke=\"#FFFFFF\"/><rect x=\"52\" y=\"178.0\" width=\"7\" height=\"46.0\" fill=\"#66BB6A\" stroke=\"#1E1E2E\"/><line x1=\"59\" y1=\"201\" x2=\"190\" y2=\"201\" stroke=\"#66BB6A\" stroke-dasharray=\"2 2\"/><text x=\"194\" y=\"199.0\" font-size=\"8.2\" fill=\"#FFFFFF\">Wet temperate: oaks,</text><text x=\"194\" y=\"209.0\" font-size=\"8.2\" fill=\"#FFFFFF\">chestnuts</text><rect x=\"61\" y=\"132.0\" width=\"7\" height=\"69.0\" fill=\"#2E7D32\" stroke=\"#1E1E2E\"/><line x1=\"68\" y1=\"166.5\" x2=\"190\" y2=\"166.5\" stroke=\"#2E7D32\" stroke-dasharray=\"2 2\"/><text x=\"194\" y=\"159.5\" font-size=\"8.2\" fill=\"#FFFFFF\">Temperate: pine, deodar,</text><text x=\"194\" y=\"169.5\" font-size=\"8.2\" fill=\"#FFFFFF\">silver fir, spruce,</text><text x=\"194\" y=\"179.5\" font-size=\"8.2\" fill=\"#FFFFFF\">cedar</text><rect x=\"70\" y=\"104.4\" width=\"7\" height=\"27.6\" fill=\"#C0CA33\" stroke=\"#1E1E2E\"/><line x1=\"77\" y1=\"118.2\" x2=\"190\" y2=\"118.2\" stroke=\"#C0CA33\" stroke-dasharray=\"2 2\"/><text x=\"194\" y=\"116.2\" font-size=\"8.2\" fill=\"#FFFFFF\">Temperate grasslands</text><text x=\"194\" y=\"126.2\" font-size=\"8.2\" fill=\"#FFFFFF\">(higher elevations)</text><rect x=\"79\" y=\"72.2\" width=\"7\" height=\"32.2\" fill=\"#8D6E63\" stroke=\"#1E1E2E\"/><line x1=\"86\" y1=\"88.30000000000001\" x2=\"190\" y2=\"88.30000000000001\" stroke=\"#8D6E63\" stroke-dasharray=\"2 2\"/><text x=\"194\" y=\"81.3\" font-size=\"8.2\" fill=\"#FFFFFF\">Alpine: silver fir,</text><text x=\"194\" y=\"91.3\" font-size=\"8.2\" fill=\"#FFFFFF\">junipers, pines, birches</text><text x=\"194\" y=\"101.3\" font-size=\"8.2\" fill=\"#FFFFFF\">→ alpine grasslands</text><rect x=\"88\" y=\"40.0\" width=\"7\" height=\"32.2\" fill=\"#B0BEC5\" stroke=\"#1E1E2E\"/><line x1=\"95\" y1=\"56.10000000000001\" x2=\"190\" y2=\"56.10000000000001\" stroke=\"#B0BEC5\" stroke-dasharray=\"2 2\"/><text x=\"194\" y=\"54.1\" font-size=\"8.2\" fill=\"#FFFFFF\">Tundra: mosses and</text><text x=\"194\" y=\"64.1\" font-size=\"8.2\" fill=\"#FFFFFF\">lichens</text><text x=\"160\" y=\"292\" font-size=\"8\" fill=\"#CBD5E1\" text-anchor=\"middle\">Altitudes in metres from the textbook; upper limits of the top two belts approximate</text></svg></div><div class=\"diagram-caption\">Fig. 2: Succession of vegetation belts with altitude</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 4. Medicinal Plants</div><div class=\"sol-step\"><div class=\"pt\">About 2,000 plants are described in Ayurveda; at least 500 are in regular use. The World Conservation Union's Red List names 352 medicinal plants — 52 critically threatened, 49 endangered.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Plant</th><th>Use</th></tr><tr><td>Sarpagandha</td><td>Treats blood pressure; found only in India</td></tr><tr><td>Jamun</td><td>Ripe-fruit juice for vinegar (carminative, diuretic, digestive); seed powder for diabetes</td></tr><tr><td>Arjun</td><td>Fresh leaf juice cures earache; regulates blood pressure</td></tr><tr><td>Babool</td><td>Leaves for eye sores; gum as a tonic</td></tr><tr><td>Neem</td><td>Antibiotic and antibacterial</td></tr><tr><td>Tulsi</td><td>Cough and cold</td></tr><tr><td>Kachnar</td><td>Asthma and ulcers; buds and roots for digestion</td></tr></table></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 5. Wildlife</div><div class=\"sol-step\"><div class=\"pt\"><b>Elephants</b> — hot wet forests of Assam, Karnataka, Kerala. <b>One-horned rhinoceros</b> — swampy lands of Assam and West Bengal.</div><div class=\"pt\"><b>Wild ass</b> — Rann of Kachchh; <b>camels</b> — Thar Desert. Indian bison, <i>nilgai</i> (blue bull), <i>chousingha</i> (four-horned antelope), gazel, deer and monkeys.</div><div class=\"pt\">India is the <b>only country with both tigers and lions</b>. Lions — <b>Gir forest</b> (Gujarat), the last habitat of the Asiatic lion. Tigers — forests of MP, the Sundarbans and the Himalayan region. Leopards too.</div><div class=\"pt\"><b>Ladakh:</b> yak (about one tonne), Tibetan antelope, <i>bharal</i> (blue sheep), wild sheep, <i>kiang</i> (Tibetan wild ass); also ibex, bear, snow leopard, red panda.</div><div class=\"pt\">Rivers, lakes, coasts: turtles, crocodiles and <b>gharials</b> (the only representative of a variety of crocodile in the world today). Birds: peacocks, pheasants, ducks, parakeets, cranes, pigeons.</div><div class=\"pt\"><span class=\"lbl\">Migratory birds:</span> wetlands attract birds like the Siberian Crane in winter; flamingoes nest in the salty mud of the Rann of Kachchh.</div><div class=\"pt\"><span class=\"lbl\">Do You Know?</span> The <b>Wildlife Protection Act</b> was implemented in <b>1972</b>.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 6. Threats and Conservation</div><div class=\"sol-step\"><div class=\"pt\">About <b>1,300 plant species</b> are endangered and <b>20</b> are extinct; quite a few animals are endangered or extinct.</div><div class=\"pt\"><span class=\"lbl\">Causes:</span> hunting by greedy hunters for commercial purposes; pollution (chemical and industrial waste, acid deposits); introduction of alien species; reckless cutting of forests for cultivation and habitation.</div><div class=\"sub-q\">Steps taken by the government</div><div class=\"pt\">(i) <b>Eighteen biosphere reserves</b>; ten are in the world network of biosphere reserves.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Eighteen bio-reserves</th><th></th></tr><tr><td>Sundarbans</td><td>Simlipal</td></tr><tr><td>Gulf of Mannar</td><td>Dihang-Dibang</td></tr><tr><td>Nilgiri</td><td>Dibru Saikhowa</td></tr><tr><td>Nanda Devi</td><td>Agasthyamalai</td></tr><tr><td>Nokrek</td><td>Kangchendzonga</td></tr><tr><td>Great Nicobar</td><td>Pachmarhi</td></tr><tr><td>Manas</td><td>Achanakmar-Amarkantak</td></tr><tr><td>Kachchh</td><td>Cold Desert</td></tr><tr><td>Seshachalam</td><td>Panna</td></tr></table></div><div class=\"pt\">(ii) Financial and technical help to many <b>botanical gardens</b> since 1992.</div><div class=\"pt\">(iii) <b>Project Tiger, Project Rhino, Project Great Indian Bustard</b> and other eco-developmental projects.</div><div class=\"pt\">(iv) <b>103 National Parks, 535 Wildlife sanctuaries</b> and Zoological gardens.</div><div class=\"rev\">All of us must realise the importance of the natural ecosystem for our own survival.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 7. Key Terms</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Term</th><th>Meaning</th></tr><tr><td>Virgin vegetation</td><td>Natural vegetation left undisturbed by humans for a long time</td></tr><tr><td>Endemic / Exotic</td><td>Purely Indian species / species from outside India</td></tr><tr><td>Flora / Fauna</td><td>Plants / animals of a region or period</td></tr><tr><td>Photoperiod</td><td>Duration of sunlight</td></tr><tr><td>Monsoon forests</td><td>Tropical deciduous forests</td></tr><tr><td>Mangroves</td><td>Tidal forests of coasts and deltas</td></tr><tr><td>Biosphere reserve</td><td>Protected area set up to conserve the flora and fauna of a region</td></tr></table></div><div class=\"exam\"><span class=\"exam-t\">📌 Exam Focus</span><div>• Factors affecting flora and fauna</div><div>• Five types of vegetation — location, trees, animals</div><div>• Montane belts with altitude</div><div>• Wildlife of India</div><div>• Why species are endangered; steps for conservation; biosphere reserves</div></div></div>\n  </div>\n</div>",
+  "htmlExercises": {
+    "sg9-5-ex-q": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(253, 200, 48, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FDC830; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FDC830; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFF3C4; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFF3C4; font-weight: 700; }\n  .hl { color: #FDC830; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FDC830; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FDC830; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(253, 200, 48, 0.10); border: 1.5px dashed #FDC830; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FDC830; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(253, 200, 48, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(253, 200, 48, 0.18); border: 1px solid #FDC830; color: #FFF3C4; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(253, 200, 48, 0.2); color: #FFF3C4; }\n  .q-card .q-text, .q-card .sub-q { color: #FDC830 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Choose the right answer from the four alternatives given below:</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">(i) To which one of the following types of vegetation does rubber belong to?</div><div><span style=\"white-space: nowrap;\">(a) Tundra</span> &nbsp; <span style=\"white-space: nowrap;\">(b) Tidal</span> &nbsp; <span style=\"white-space: nowrap;\">(c) Himalayan</span> &nbsp; <span style=\"white-space: nowrap;\">(d) Tropical Evergreen</span></div><div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">(d) Tropical Evergreen</span></div><div class=\"sub-q\">(ii) Cinchona trees are found in the areas of rainfall more than</div><div><span style=\"white-space: nowrap;\">(a) 100 cm</span> &nbsp; <span style=\"white-space: nowrap;\">(b) 50 cm</span> &nbsp; <span style=\"white-space: nowrap;\">(c) 70 cm</span> &nbsp; <span style=\"white-space: nowrap;\">(d) less than 50 cm</span></div><div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">(a) 100 cm</span></div><div class=\"rev\">Cinchona is a tree of the tropical evergreen forests, which need more than 200 cm — so of the options, “more than 100 cm” is correct.</div><div class=\"sub-q\">(iii) In which of the following state is the Simlipal bio-reserve located?</div><div><span style=\"white-space: nowrap;\">(a) Punjab</span> &nbsp; <span style=\"white-space: nowrap;\">(b) Delhi</span> &nbsp; <span style=\"white-space: nowrap;\">(c) Odisha</span> &nbsp; <span style=\"white-space: nowrap;\">(d) West Bengal</span></div><div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">(c) Odisha</span></div><div class=\"sub-q\">(iv) Which one of the following bio-reserves of India is not included in the world network of bioreserve?</div><div><span style=\"white-space: nowrap;\">(a) Manas</span> &nbsp; <span style=\"white-space: nowrap;\">(b) Nilgiri</span> &nbsp; <span style=\"white-space: nowrap;\">(c) Gulf of Mannar</span> &nbsp; <span style=\"white-space: nowrap;\">(d) Nanda Devi</span></div><div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">(a) Manas</span></div><div class=\"rev\">Manas is a World Heritage Site but is not in UNESCO's world network of biosphere reserves. (The textbook's list of ten on page 50 includes Manas by mistake.)</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Answer the following questions briefly.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">(i) What factors are responsible for the distribution of plants and animals in India?</div><div class=\"pt\"><span class=\"lbl\">Relief:</span> land (mountains, plateaus, plains) and soil (sandy, deltaic, hill soils).</div><div class=\"pt\"><span class=\"lbl\">Climate:</span> temperature, photoperiod (sunlight) and precipitation.</div><div class=\"sub-q\">(ii) What is a bio-reserve? Give two examples.</div><div class=\"pt\">A protected area set up to conserve the plants, animals and natural ecosystem of a region. <b>Examples:</b> Sundarbans (West Bengal), Nilgiri (Tamil Nadu–Kerala–Karnataka).</div><div class=\"sub-q\">(iii) Name two animals having habitat in tropical and montane type of vegetation.</div><div class=\"pt\"><span class=\"lbl\">Tropical:</span> elephant, one-horned rhinoceros.</div><div class=\"pt\"><span class=\"lbl\">Montane:</span> Kashmir stag, snow leopard.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Distinguish between (i) Flora and Fauna (ii) Tropical Evergreen and Deciduous forests</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">(i) Flora and Fauna</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Flora</th><th>Fauna</th></tr><tr><td>Plants of a particular region or period</td><td>Species of animals of a particular region or period</td></tr><tr><td>e.g. teak, sal, deodar</td><td>e.g. tiger, elephant, yak</td></tr></table></div><div class=\"sub-q\">(ii) Tropical Evergreen and Deciduous forests</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Tropical Evergreen</th><th>Tropical Deciduous</th></tr><tr><td>Rainfall more than 200 cm</td><td>Rainfall between 200 cm and 70 cm</td></tr><tr><td>No definite time for shedding leaves — green all year</td><td>Shed leaves for about six to eight weeks in dry summer</td></tr><tr><td>Western Ghats, islands, upper Assam, Tamil Nadu coast</td><td>Most widespread: north-east, Himalayan foothills, Jharkhand, Odisha, Chhattisgarh, peninsula, Bihar and UP plains</td></tr><tr><td>Trees up to 60 m; multilayered, luxuriant</td><td>Less dense; divided into moist and dry deciduous</td></tr><tr><td>Ebony, mahogany, rosewood, rubber, cinchona</td><td>Teak, sal, bamboo, shisham, sandalwood, khair, peepal, neem</td></tr></table></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">Name different types of Vegetation found in India and describe the vegetation of high altitudes.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">Types</div><div class=\"pt\">(i) Tropical Evergreen Forests (ii) Tropical Deciduous Forests (iii) Tropical Thorn Forests and Scrubs (iv) Montane Forests (v) Mangrove Forests</div><div class=\"sub-q\">Vegetation of high altitudes</div><div class=\"pt\">Temperature falls with height, so belts change as from the tropics to the tundra.</div><div class=\"pt\"><b>1,000–2,000 m:</b> wet temperate forests — oaks and chestnuts.</div><div class=\"pt\"><b>1,500–3,000 m:</b> temperate coniferous forests — pine, deodar, silver fir, spruce, cedar; temperate grasslands higher up.</div><div class=\"pt\"><b>Above 3,600 m:</b> alpine vegetation — silver fir, junipers, pines, birches; stunted near the snow-line; then alpine grasslands used by Gujjars and Bakarwals for grazing.</div><div class=\"pt\"><b>Higher still:</b> mosses and lichens — tundra vegetation.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5.</div>\n    <div class=\"q-text\">Quite a few species of plants and animals are endangered in India. Why?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Hunting</b> by greedy hunters for commercial purposes.</div><div class=\"pt\"><b>Pollution</b> from chemical and industrial waste and acid deposits.</div><div class=\"pt\"><b>Introduction of alien species</b>.</div><div class=\"pt\"><b>Reckless cutting of forests</b> to bring land under cultivation and habitation.</div><div class=\"rev\">Excessive exploitation of plant and animal resources has disturbed the ecosystem; about 1,300 plant species are endangered and 20 are extinct.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q6.</div>\n    <div class=\"q-text\">Why has India a rich heritage of flora and fauna?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">India is one of the <b>12 mega bio-diversity</b> countries: about 47,000 plant species (10th in the world), 15,000 flowering plants, 90,000 animal species, 2,000 bird species and 2,546 fish species.</div><div class=\"pt\"><span class=\"lbl\">Varied relief:</span> mountains, plateaus, plains, deserts and coasts give many habitats.</div><div class=\"pt\"><span class=\"lbl\">Varied soils:</span> sandy, deltaic and hill soils support different vegetation.</div><div class=\"pt\"><span class=\"lbl\">Varied climate:</span> from tropical to alpine temperatures, rainfall from over 200 cm to below 70 cm, and different photoperiods.</div></div></div>\n  </div>\n</div>",
+    "sg9-5-ex-map": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(253, 200, 48, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FDC830; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FDC830; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFF3C4; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFF3C4; font-weight: 700; }\n  .hl { color: #FDC830; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FDC830; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FDC830; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(253, 200, 48, 0.10); border: 1.5px dashed #FDC830; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FDC830; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(253, 200, 48, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(253, 200, 48, 0.18); border: 1px solid #FDC830; color: #FFF3C4; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(253, 200, 48, 0.2); color: #FFF3C4; }\n  .q-card .q-text, .q-card .sub-q { color: #FDC830 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">On an outline map of India, label the following.<br/>(i) Areas of Evergreen Forests<br/>(ii) Areas of Dry Deciduous Forests<br/>(iii) Two national parks each in Northern, Southern, Eastern and Western parts of the Country</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">(i) Evergreen forests (Fig. 5.3)</div><div class=\"pt\">Western slopes of the Western Ghats; Lakshadweep and Andaman and Nicobar Islands; upper Assam and the north-east; Tamil Nadu coast.</div><div class=\"sub-q\">(ii) Dry deciduous forests</div><div class=\"pt\">Rainier parts of the Peninsular plateau (rainfall 100–70 cm) and the plains of Bihar and Uttar Pradesh.</div><div class=\"sub-q\">(iii) National parks (Fig. 5.8)</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Part</th><th>National parks</th><th>State</th></tr><tr><td>Northern</td><td>Dachigam; Corbett</td><td>Jammu & Kashmir; Uttarakhand</td></tr><tr><td>Southern</td><td>Bandipur; Guindy</td><td>Karnataka; Tamil Nadu</td></tr><tr><td>Eastern</td><td>Simlipal; Kaziranga</td><td>Odisha; Assam</td></tr><tr><td>Western</td><td>Gir; Sanjay Gandhi</td><td>Gujarat; Maharashtra</td></tr></table></div></div></div>\n  </div>\n</div>",
+    "sg9-5-ex-int": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(253, 200, 48, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FDC830; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FDC830; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFF3C4; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFF3C4; font-weight: 700; }\n  .hl { color: #FDC830; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FDC830; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FDC830; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(253, 200, 48, 0.10); border: 1.5px dashed #FDC830; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FDC830; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(253, 200, 48, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(253, 200, 48, 0.18); border: 1px solid #FDC830; color: #FFF3C4; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(253, 200, 48, 0.2); color: #FFF3C4; }\n  .q-card .q-text, .q-card .sub-q { color: #FDC830 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Do you expect the same type of vegetation in mountainous, plateau and plain areas or in dry and wet regions?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">No. Fertile plains are cultivated; rough terrain has grassland and woodland; mountains have belts that change with height.</div><div class=\"pt\">Wet regions have dense evergreen forests; dry regions have thorny bushes and scrubs.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Find out: Why are the southern slopes in Himalayan region covered with thick vegetation cover as compared to northern slopes of the same hills?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Southern slopes face the sun and get more <b>sunlight and warmth</b>.</div><div class=\"pt\">They face the <b>monsoon winds</b> and get more rain; northern slopes lie in the rain-shadow and are colder and drier.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Find out: Why are the western slopes of the Western Ghats covered with thick forests and not the eastern slopes?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">The western slopes are on the <b>windward side</b> of the south-west monsoon and receive heavy rain (over 200 cm); the eastern slopes lie in the <b>rain-shadow</b>.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">Activity: Celebrate Van Mahotsav in your school/locality and plant a few saplings and notice their growth.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\"><i>Guidance:</i> Van Mahotsav is celebrated in the first week of July, at the start of the rainy season. Plant local species (e.g. chinar, willow, poplar or walnut in Kashmir; neem, shisham or mango in Jammu), water them regularly, protect them with a fence and record their height every month.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5.</div>\n    <div class=\"q-text\">Activity: Study the bar graph (Figure 5.1) and answer: (i) Name the state having maximum area under forest cover. (ii) Name the union territory having minimum area under forest cover and why?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">(i) <b>Mizoram</b> — about 90 per cent of its area.</div><div class=\"pt\">(ii) <b>Daman and Diu</b> — about 6 per cent. It is a very small, densely populated coastal area with towns and industries, leaving little land for forests.</div><div class=\"rev\"><i>Values read from the textbook bar graph (India State of Forest Report 2013–14).</i></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q6.</div>\n    <div class=\"q-text\">Study the given map (Fig. 5.3) for the forest cover and try to find the reasons as to why certain states have more forest area as compared to others.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">More forest:</span> north-eastern states, Andaman and Nicobar, Kerala, Goa — heavy rainfall, hilly terrain unsuitable for farming, lower population pressure.</div><div class=\"pt\"><span class=\"lbl\">Less forest:</span> Punjab, Haryana, Uttar Pradesh, Rajasthan — fertile plains cleared for agriculture, dense population, or very low rainfall.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q7.</div>\n    <div class=\"q-text\">Let us discuss: What will happen if plants and animals disappear from the earth's surface? Can the human beings survive under such a situation? Why is biodiversity necessary and why should it be conserved?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Without plants there would be no food, oxygen, medicines or timber; without animals there would be no pollination, milk, meat or draught power.</div><div class=\"pt\">Human beings could <b>not survive</b>, because every species has a role in the ecosystem.</div><div class=\"pt\">Biodiversity keeps the ecosystem in balance and gives us crops, medicines and raw materials — so it must be conserved.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q8.</div>\n    <div class=\"q-text\">Identify more medicinal plants in your area. Which plants are used as medicines by local people to cure some diseases?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Plant</th><th>Local use (J&K and Ladakh)</th></tr><tr><td>Kuth</td><td>Cough, asthma and joint pain</td></tr><tr><td>Kutki</td><td>Fever and liver problems</td></tr><tr><td>Banafsha (violet)</td><td>Cough and cold</td></tr><tr><td>Pushkarmula</td><td>Cough and breathing problems</td></tr><tr><td>Tulsi, neem</td><td>Cold, cough; skin and blood purification</td></tr></table></div><div class=\"rev\">The Gujjar-Bakkerwals are known for their knowledge of these herbs (History Chapter 5). Ask elders in your area for more.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q9.</div>\n    <div class=\"q-text\">Activity (picture): Can you identify the type of forest shown in this picture? Identify some trees in it. What type of similarity/dissimilarity you notice in this type of vegetation from the one found in your region?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">It is a <b>montane (temperate coniferous)</b> forest — tall conical trees such as <b>deodar, pine, fir</b> and spruce on a mountain slope.</div><div class=\"pt\">Similar to the forests of the Kashmir valley and Pir Panjal slopes; different from the broad-leaf and scrub vegetation of the Jammu plains and the cold desert of Ladakh.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q10.</div>\n    <div class=\"q-text\">Activity (newspaper items): (i) Find out the main concern highlighted in the given news items. (ii) Collect more information about various endangered species. (iii) Find out various steps taken by the Indian government to protect them. (iv) Describe how you can contribute to the protection of endangered animals and birds.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">(i) Main concern</div><div class=\"pt\">Wildlife is in danger — vultures dying (poisoning by drugs in cattle carcasses), tigers killed by poachers (Ranthambore, Sariska), a rhino killed for its horn (Kaziranga).</div><div class=\"sub-q\">(ii) Endangered species</div><div class=\"pt\">Tiger, one-horned rhinoceros, Asiatic lion, vultures, Great Indian Bustard, snow leopard, red panda, <b>hangul</b> (Kashmir stag, found in Dachigam).</div><div class=\"sub-q\">(iii) Government steps</div><div class=\"pt\">18 biosphere reserves; help to botanical gardens since 1992; Project Tiger, Project Rhino, Project Great Indian Bustard; 103 National Parks and 535 Wildlife Sanctuaries; Wildlife Protection Act, 1972.</div><div class=\"sub-q\">(iv) My contribution</div><div class=\"pt\">Never buy products made from animals; plant trees; avoid plastics and pollution; report poaching; spread awareness in school and locality.</div></div></div>\n  </div>\n</div>",
+    "sg9-5-ex-proj": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(253, 200, 48, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FDC830; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FDC830; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFF3C4; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFF3C4; font-weight: 700; }\n  .hl { color: #FDC830; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FDC830; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FDC830; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(253, 200, 48, 0.10); border: 1.5px dashed #FDC830; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FDC830; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(253, 200, 48, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(253, 200, 48, 0.18); border: 1px solid #FDC830; color: #FFF3C4; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(253, 200, 48, 0.2); color: #FFF3C4; }\n  .q-card .q-text, .q-card .sub-q { color: #FDC830 !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Find some trees in your neighbourhood having medicinal values.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Tree</th><th>Medicinal value</th></tr><tr><td>Neem</td><td>Antibiotic and antibacterial</td></tr><tr><td>Jamun</td><td>Seed powder for diabetes; fruit juice aids digestion</td></tr><tr><td>Arjun</td><td>Leaf juice for earache; regulates blood pressure</td></tr><tr><td>Babool</td><td>Leaves for eye sores; gum as a tonic</td></tr><tr><td>Walnut (Kashmir)</td><td>Nuts are nourishing; bark used to clean teeth</td></tr></table></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Find ten occupations getting raw material from forests and wildlife.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Occupation</th><th>Raw material</th></tr><tr><td>Furniture making / carpentry</td><td>Timber</td></tr><tr><td>Paper industry</td><td>Bamboo, softwood</td></tr><tr><td>Matchbox making</td><td>Soft wood</td></tr><tr><td>Medicine (Ayurveda)</td><td>Herbs</td></tr><tr><td>Honey collection</td><td>Bee hives</td></tr><tr><td>Lac and gum collection</td><td>Trees</td></tr><tr><td>Basket and mat weaving</td><td>Bamboo, cane, willow</td></tr><tr><td>Leather and wool trade</td><td>Animal skins, wool</td></tr><tr><td>Fishing</td><td>Rivers and lakes</td></tr><tr><td>Sports goods (cricket bats)</td><td>Willow (Kashmir)</td></tr></table></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Write a poem or paragraph showing the importance of wildlife.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sec\">Why Wildlife Matters</div><div class=\"rev\">Wildlife is the living treasure of our planet. Birds and insects pollinate our crops, animals keep the food chain in balance, and forests full of life give us clean air and water. The tiger in the Sundarbans, the hangul in Dachigam and the flamingo in the Rann of Kachchh are all part of one web of life. If one thread breaks, the whole web weakens. Protecting wildlife means protecting ourselves and the future of our children.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">Write the script of a street play giving the importance of tree plantation and try to enact it in your locality.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sec\">Street play: “Ek Ped, Ek Zindagi”</div><div class=\"rev\"><b>Narrator:</b> Friends, gather round! Look at this bare hill — once full of trees.</div><div class=\"rev\"><b>Villager 1:</b> We cut them for fuel and fields. Now the springs have dried and the soil washes away in rain.</div><div class=\"rev\"><b>Child:</b> My teacher says trees bring rain, hold the soil and give us oxygen.</div><div class=\"rev\"><b>Elder:</b> She is right. When the forest was here, the stream flowed all year.</div><div class=\"rev\"><b>All (with saplings):</b> Let us plant one tree for every person and care for it like a child!</div><div class=\"rev\"><b>Narrator:</b> Plant a tree today — for clean air, water and a green tomorrow!</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5.</div>\n    <div class=\"q-text\">Plant a tree either on your birthday or one of your family member's birthday. Note the growth of the tree and notice in which season it grows faster.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\"><i>Guidance:</i> Keep a record of height and number of leaves every month. Most trees grow fastest in <b>summer and the rainy season</b>, when sunlight is longer (photoperiod) and water is plentiful; growth slows in winter.</div></div></div>\n  </div>\n</div>"
   },
-  introduction: "India is one of the twelve mega bio-diversity countries of the world with rich variety of flora and fauna.",
-  definitions: [],
-  keyPoints: [],
-  formulas: [],
-  crux: [],
-  mcqs: [
+  "introduction": "India is one of the twelve mega bio-diversity countries of the world with rich variety of flora and fauna.",
+  "definitions": [],
+  "keyPoints": [],
+  "formulas": [],
+  "crux": [],
+  "mcqs": [
     {
-      id: "sst-geo-c9-5-mcq-1",
-      question: "To which one of the following types of vegetation does rubber belong to?",
-      options: ["Tundra", "Tidal", "Himalayan", "Tropical Evergreen"],
-      correctAnswer: "d",
+      "id": "sst-geo-c9-5-mcq-1",
+      "question": "<div style='text-align: justify;'>India is one of the — mega bio-diversity countries of the world.</div>",
+      "options": [
+        "A):   7",
+        "B):   12",
+        "C):   20",
+        "D):   47"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>It has about 47,000 plant species.</div>"
     },
     {
-      id: "sst-geo-c9-5-mcq-2",
-      question: "Cinchona trees are found in the areas of rainfall more than",
-      options: ["100 cm", "50 cm", "70 cm", "less than 50 cm"],
-      correctAnswer: "a",
+      "id": "sst-geo-c9-5-mcq-2",
+      "question": "<div style='text-align: justify;'>In plant diversity India occupies which place in the world?</div>",
+      "options": [
+        "A):   Fourth",
+        "B):   First",
+        "C):   Tenth",
+        "D):   Seventh"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>It is fourth in Asia.</div>"
     },
     {
-      id: "sst-geo-c9-5-mcq-3",
-      question: "In which of the following state is the Simlipal bio-reserve located?",
-      options: ["Punjab", "Delhi", "Odisha", "West Bengal"],
-      correctAnswer: "c",
+      "id": "sst-geo-c9-5-mcq-3",
+      "question": "<div style='text-align: justify;'>Plant species which have come to India from outside are called —</div>",
+      "options": [
+        "A):   exotic plants",
+        "B):   endemic plants",
+        "C):   virgin vegetation",
+        "D):   indigenous plants"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Purely Indian species are endemic.</div>"
     },
     {
-      id: "sst-geo-c9-5-mcq-4",
-      question: "Which one of the following bio-reserves of India is not included in the world network of bioreserve?",
-      options: ["Manas", "Nilgiri", "Gulf of Mannar", "Nanda Devi"],
-      correctAnswer: "a",
+      "id": "sst-geo-c9-5-mcq-4",
+      "question": "<div style='text-align: justify;'>Above which height does falling temperature change vegetation on the Himalayas and peninsular hills?</div>",
+      "options": [
+        "A):   300 metres",
+        "B):   1,500 metres",
+        "C):   3,600 metres",
+        "D):   915 metres"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>It changes from tropical to subtropical, temperate and alpine.</div>"
     },
     {
-      id: "sst-geo-c9-5-mcq-5",
-      question: "Which of the following describes the virgin vegetation which are purely Indian?",
-      options: ["Endemic species", "Exotic species", "Endangered species", "Extinct species"],
-      correctAnswer: "a",
+      "id": "sst-geo-c9-5-mcq-5",
+      "question": "<div style='text-align: justify;'>According to the India State of Forest Report 2011, forest cover in India is —</div>",
+      "options": [
+        "A):   33 per cent",
+        "B):   21.05 per cent",
+        "C):   12.5 per cent",
+        "D):   45 per cent"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Natural vegetation has been modified by human activities.</div>"
     },
     {
-      id: "sst-geo-c9-5-mcq-6",
-      question: "The most widespread vegetation in India is:",
-      options: ["Tropical Evergreen Forests", "Tropical Deciduous Forests", "Montane Forests", "Mangrove Forests"],
-      correctAnswer: "b",
+      "id": "sst-geo-c9-5-mcq-6",
+      "question": "<div style='text-align: justify;'>Tropical evergreen forests are at their best in areas having rainfall more than —</div>",
+      "options": [
+        "A):   100 cm",
+        "B):   70 cm",
+        "C):   200 cm",
+        "D):   150 cm"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Trees reach up to 60 metres.</div>"
     },
     {
-      id: "sst-geo-c9-5-mcq-7",
-      question: "Which type of forests shed their leaves for about six to eight weeks in dry summer?",
-      options: ["Tropical Evergreen", "Montane", "Tropical Deciduous", "Mangrove"],
-      correctAnswer: "c",
+      "id": "sst-geo-c9-5-mcq-7",
+      "question": "<div style='text-align: justify;'>The most widespread forests of India are the —</div>",
+      "options": [
+        "A):   tropical deciduous forests",
+        "B):   tropical evergreen forests",
+        "C):   thorn forests",
+        "D):   mangrove forests"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>They are also called monsoon forests.</div>"
     },
     {
-      id: "sst-geo-c9-5-mcq-8",
-      question: "In which regions are Thorn Forests and Scrubs found?",
-      options: ["Regions with more than 200 cm of rainfall", "Regions with less than 70 cm of rainfall", "High altitude mountainous regions", "Coastal regions with tides"],
-      correctAnswer: "b",
+      "id": "sst-geo-c9-5-mcq-8",
+      "question": "<div style='text-align: justify;'>The most dominant species of the tropical deciduous forests is —</div>",
+      "options": [
+        "A):   sal",
+        "B):   ebony",
+        "C):   deodar",
+        "D):   teak"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Bamboo, sal, shisham and sandalwood are also found.</div>"
     },
     {
-      id: "sst-geo-c9-5-mcq-9",
-      question: "Where are the Sundari trees found?",
-      options: ["Himalayas", "Western Ghats", "Mangrove Forests", "Thar Desert"],
-      correctAnswer: "c",
+      "id": "sst-geo-c9-5-mcq-9",
+      "question": "<div style='text-align: justify;'>Thorn forests and scrubs are found in regions with rainfall less than —</div>",
+      "options": [
+        "A):   100 cm",
+        "B):   70 cm",
+        "C):   50 cm",
+        "D):   200 cm"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Acacias, palms, euphorbias and cacti grow there.</div>"
     },
     {
-      id: "sst-geo-c9-5-mcq-10",
-      question: "Which animal is the most majestic animal among the mammals found in the hot wet forests of Assam, Karnataka and Kerala?",
-      options: ["Lion", "Tiger", "Elephant", "One-horned Rhinoceros"],
-      correctAnswer: "c",
+      "id": "sst-geo-c9-5-mcq-10",
+      "question": "<div style='text-align: justify;'>Temperate forests of pine, deodar and silver fir are found between —</div>",
+      "options": [
+        "A):   500 and 1,000 metres",
+        "B):   3,600 and 5,000 metres",
+        "C):   1,500 and 3,000 metres",
+        "D):   200 and 900 metres"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Wet temperate forests grow between 1,000 and 2,000 m.</div>"
     },
+    {
+      "id": "sst-geo-c9-5-mcq-11",
+      "question": "<div style='text-align: justify;'>Alpine grasslands are used extensively for grazing by —</div>",
+      "options": [
+        "A):   Gujjars and Bakarwals",
+        "B):   Gaddis and Dhangars",
+        "C):   Raikas and Banjaras",
+        "D):   Maasai"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>They lie above about 3,600 metres.</div>"
+    },
+    {
+      "id": "sst-geo-c9-5-mcq-12",
+      "question": "<div style='text-align: justify;'>Sundari trees are found in the mangrove forests of the —</div>",
+      "options": [
+        "A):   Krishna delta",
+        "B):   Mahanadi delta",
+        "C):   Kaveri delta",
+        "D):   Ganga-Brahmaputra delta"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>They provide durable hard timber.</div>"
+    },
+    {
+      "id": "sst-geo-c9-5-mcq-13",
+      "question": "<div style='text-align: justify;'>India has approximately how many animal species?</div>",
+      "options": [
+        "A):   47,000",
+        "B):   90,000",
+        "C):   15,000",
+        "D):   2,000"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>It also has about 2,000 species of birds.</div>"
+    },
+    {
+      "id": "sst-geo-c9-5-mcq-14",
+      "question": "<div style='text-align: justify;'>The last remaining habitat of the Asiatic lion is —</div>",
+      "options": [
+        "A):   Sundarbans",
+        "B):   Kanha",
+        "C):   Gir forest",
+        "D):   Corbett"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Gir is in Gujarat.</div>"
+    },
+    {
+      "id": "sst-geo-c9-5-mcq-15",
+      "question": "<div style='text-align: justify;'>The kiang found in Ladakh is a —</div>",
+      "options": [
+        "A):   Tibetan wild ass",
+        "B):   blue sheep",
+        "C):   wild ox",
+        "D):   snow leopard"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>The bharal is the blue sheep.</div>"
+    },
+    {
+      "id": "sst-geo-c9-5-mcq-16",
+      "question": "<div style='text-align: justify;'>The Wildlife Protection Act was implemented in India in —</div>",
+      "options": [
+        "A):   1947",
+        "B):   1992",
+        "C):   1985",
+        "D):   1972"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>It protects wild animals and birds.</div>"
+    },
+    {
+      "id": "sst-geo-c9-5-mcq-17",
+      "question": "<div style='text-align: justify;'>How many biosphere reserves have been set up in India (textbook)?</div>",
+      "options": [
+        "A):   Ten",
+        "B):   Twelve",
+        "C):   Eighteen",
+        "D):   Twenty"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Ten of them are in the world network.</div>"
+    },
+    {
+      "id": "sst-geo-c9-5-mcq-18",
+      "question": "<div style='text-align: justify;'>The only representative of a variety of crocodile found in the world today is the —</div>",
+      "options": [
+        "A):   alligator",
+        "B):   gharial",
+        "C):   turtle",
+        "D):   monitor lizard"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>It lives in rivers.</div>"
+    },
+    {
+      "id": "sst-geo-c9-5-mcq-19",
+      "question": "<div style='text-align: justify;'>Assertion (A): Tropical evergreen forests appear green all the year round. Reason (R): There is no definite time for trees to shed their leaves.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>R correctly explains A.</div>"
+    },
+    {
+      "id": "sst-geo-c9-5-mcq-20",
+      "question": "<div style='text-align: justify;'>Assertion (A): Thorn forest trees have broad, thin leaves. Reason (R): Their roots penetrate deep into the soil to get moisture.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Their leaves are thick and small to reduce evaporation; R is true.</div>"
+    }
   ],
-  summary: [],
-  exercises: [
+  "summary": [],
+  "exercises": [
     {
-      id: "ex-sst-qa",
-      name: "Q & A",
-      questions: [],
+      "id": "sg9-5-ex-q",
+      "name": "Questions",
+      "questions": []
     },
+    {
+      "id": "sg9-5-ex-map",
+      "name": "Map Skills",
+      "questions": []
+    },
+    {
+      "id": "sg9-5-ex-int",
+      "name": "In-Text",
+      "questions": []
+    },
+    {
+      "id": "sg9-5-ex-proj",
+      "name": "Projects",
+      "questions": []
+    }
   ],
-  examples: [],
+  "examples": []
 };
