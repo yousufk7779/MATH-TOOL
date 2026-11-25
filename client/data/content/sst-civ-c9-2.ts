@@ -1,370 +1,286 @@
 import { ChapterContent } from "../types";
 
-const themeColor = "#7986CB"; // Purple theme color for Civics/Political Science
-
 export const sstCivC92: ChapterContent = {
-  id: "sst-civ-c9-2",
-  number: 2,
-  title: "Constitutional Design",
-  introduction:
-    "This chapter explains why we need a constitution and how constitutions are designed. It explores this through the historical struggle against apartheid in South Africa and the drafting of the Indian Constitution.",
-  definitions: [
-    {
-      term: "Apartheid",
-      description:
-        "The official system of racial discrimination and segregation enforced by the white minority government in South Africa.",
-    },
-    {
-      term: "Constituent Assembly",
-      description:
-        "An assembly of elected representatives that drafted the constitution of a country.",
-    },
-    {
-      term: "Preamble",
-      description:
-        "An introductory statement in a constitution that explains its core values, philosophy, and objectives.",
-    },
-    {
-      term: "Constitutional Amendment",
-      description:
-        "A formal change made to the constitution by the supreme legislative body of a country to keep up with changing times.",
-    },
-  ],
-  keyPoints: [
-    "Democratic Constitution in South Africa: Led by Nelson Mandela, the struggle against the apartheid regime ended in 1994, resulting in a democratic nation built on equality and reconciliation.",
-    "Why Do We Need a Constitution?: It generates trust, specifies government power structure, limits those powers, and expresses the aspirations of citizens.",
-    "Making of the Indian Constitution: Crafted under difficult conditions of partition, the draft was prepared by the Constituent Assembly, led by Dr. B.R. Ambedkar as the Drafting Committee Chairman.",
-    "Guiding Values of the Indian Constitution: The philosophy is embedded in the Preamble, highlighting sovereignty, socialism, secularism, democracy, republic, justice, liberty, equality, and fraternity.",
-  ],
-  formulas: [],
-  crux: [
-    "A constitution is the supreme law of a country, defining rights and limiting state power.",
-    "South Africa showed how bitter enemies can agree on a peaceful democratic constitution.",
-    "India's Preamble outlines the moral and political framework of our nation.",
-  ],
-  mcqs: [
-    {
-      id: "sst-civ-c9-2-mcq-1",
-      question: "Which of the following leaders was tried for treason by the white South African government?",
-      options: [
-        "Nelson Mandela",
-        "Kofi Annan",
-        "Martin Luther King Jr.",
-        "Oliver Tambo",
-      ],
-      correctAnswer: "a",
-    },
-    {
-      id: "sst-civ-c9-2-mcq-2",
-      question: "When did South Africa become a democratic nation?",
-      options: [
-        "26 April 1994",
-        "15 August 1947",
-        "26 January 1950",
-        "10 May 1994",
-      ],
-      correctAnswer: "a",
-    },
-    {
-      id: "sst-civ-c9-2-mcq-3",
-      question: "Who was the Chairman of the Drafting Committee of the Indian Constitution?",
-      options: [
-        "Dr. Rajendra Prasad",
-        "Dr. B.R. Ambedkar",
-        "Jawaharlal Nehru",
-        "Motilal Nehru",
-      ],
-      correctAnswer: "b",
-    },
-    {
-      id: "sst-civ-c9-2-mcq-4",
-      question: "The assembly of elected representatives that drafted the Indian Constitution is called the:",
-      options: [
-        "Parliament",
-        "Constituent Assembly",
-        "Drafting Committee",
-        "Supreme Court",
-      ],
-      correctAnswer: "b",
-    },
-    {
-      id: "sst-civ-c9-2-mcq-5",
-      question: "Which of these is the introductory statement of a constitution outlining its core values?",
-      options: ["Draft", "Amendment", "Preamble", "Article"],
-      correctAnswer: "c",
-    },
-    {
-      id: "sst-civ-c9-2-mcq-6",
-      question: "In which year did Motilal Nehru and eight other Congress leaders draft a constitution for India?",
-      options: ["1928", "1931", "1942", "1947"],
-      correctAnswer: "a",
-    },
-    {
-      id: "sst-civ-c9-2-mcq-7",
-      question: "Which term in the Preamble means that citizens should behave as if they are members of the same family?",
-      options: ["Justice", "Secular", "Fraternity", "Equality"],
-      correctAnswer: "c",
-    },
-    {
-      id: "sst-civ-c9-2-mcq-8",
-      question: "A republic is a country where the head of the state is:",
-      options: [
-        "A hereditary king",
-        "An elected person",
-        "A military general",
-        "A foreign ruler",
-      ],
-      correctAnswer: "b",
-    },
-    {
-      id: "sst-civ-c9-2-mcq-9",
-      question: "What is the term used for formal changes made to the constitution?",
-      options: ["Clauses", "Amendments", "Resolutions", "Acts"],
-      correctAnswer: "b",
-    },
-    {
-      id: "sst-civ-c9-2-mcq-10",
-      question: "Which of the following values means that the government will not favor any particular religion?",
-      options: ["Sovereign", "Secular", "Socialist", "Democratic"],
-      correctAnswer: "b",
-    },
-  ],
-  summary: [
-    "A constitution is essential for building trust among citizens and defining rules for governance.",
-    "The South African constitution is admired globally for its commitment to human rights and reconciliation.",
-    "The Indian Constitution was drafted through intensive debates and continues to guide the country using key values in the Preamble.",
-  ],
-  isHtmlView: true,
-  htmlOverview: `
-    <div style="padding: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: transparent;">
-      <!-- Key Concepts Introduction -->
-      <div style="background-color: #1E1E2E; border: 1px solid rgba(156, 39, 176, 0.25); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 20px; font-weight: 700; margin-top: 0; margin-bottom: 12px; display: flex; align-items: center;">
-          <span style="margin-right: 8px; font-size: 22px;">📜</span> Introduction
-        </h3>
-        <p style="color: #E0E0E0; font-size: 15px; line-height: 1.6; text-align: justify; margin: 0; font-weight: 300;">
-          Constitutional design focuses on how rules are formulated to govern a nation. We analyze how South Africa overcame racial oppression (Apartheid) to write a model democratic constitution, and how India built its own constitutional framework to protect diverse groups and promote equality.
-        </p>
-      </div>
-
-      <!-- Why We Need a Constitution -->
-      <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 600; margin-top: 0; margin-bottom: 14px; display: flex; align-items: center;">
-          <span style="margin-right: 8px; font-size: 18px;">💡</span> Why a Constitution?
-        </h3>
-        <ul style="color: #B3B3C6; font-size: 14.5px; line-height: 1.7; margin: 0; padding-left: 20px; text-align: justify;">
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">Builds Trust:</b> It establishes mutual trust and coordination among diverse groups of people.</li>
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">Defines Power:</b> It specifies how the government will be formed and who will hold decision-making powers.</li>
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">Limits Authority:</b> It sets clear limits on government powers and details citizens' fundamental rights.</li>
-          <li style="margin-bottom: 0;"><b style="color: ${themeColor};">Aspirations:</b> It reflects the collective desires of the people to create a good society.</li>
-        </ul>
-      </div>
-      
-      <!-- Key Terms Glossy Box -->
-      <div style="background: rgba(156, 39, 176, 0.05); border: 1.5px solid rgba(156, 39, 176, 0.25); border-radius: 16px; padding: 20px; box-shadow: 0 4px 30px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 600; margin-top: 0; margin-bottom: 12px;">🔑 Key Terms</h3>
-        <div style="color: #E0E0E0; font-size: 14px; line-height: 1.6; text-align: justify;">
-          <p style="margin-top: 0; margin-bottom: 8px;"><b style="color: ${themeColor};">Draft:</b> A preliminary version of a legal document or constitution.</p>
-          <p style="margin-bottom: 8px;"><b style="color: ${themeColor};">Clause:</b> A distinct section or provision within a legal document.</p>
-          <p style="margin-bottom: 0;"><b style="color: ${themeColor};">Treason:</b> The crime of betraying one's country, particularly by attempting to overthrow the government.</p>
-        </div>
-      </div>
-    </div>
-  `,
-  htmlExercises: {
-    "ex-sst-qa": `
-      <div style="padding: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: transparent;">
-        
-        <!-- Q1 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
-            Q1. Here are some false statements. Identify the mistake in each case and rewrite these correctly based on what you have read in this chapter.
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
-              <li style="margin-bottom: 10px;">
-                <b>(a) Leaders of the freedom movement had an open mind about whether the country should be democratic or not after independence.</b><br/>
-                Correction: Leaders of the freedom movement were already committed to making India a democratic nation after independence.
-              </li>
-              <li style="margin-bottom: 10px;">
-                <b>(b) Members of the Constituent Assembly of India held the same views on all provisions of the Constitution.</b><br/>
-                Correction: Members had differences of opinion on many provisions, which they resolved through discussions.
-              </li>
-              <li style="margin-bottom: 10px;">
-                <b>(c) A country that has a constitution must be a democracy.</b><br/>
-                Correction: A country that has a constitution is not necessarily a democracy (e.g., China has a constitution but is not democratic).
-              </li>
-              <li style="margin-bottom: 0;">
-                <b>(d) Constitution cannot be amended because it is the supreme law of a country.</b><br/>
-                Correction: A constitution can be amended to keep up with changes in society and people's aspirations.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q2 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
-            Q2. Which of these was the most salient underlying conflict in the making of a democratic constitution in South Africa?
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            Answer: Option <b style="color: ${themeColor};">(c) Between the white minority and the black majority</b>.
-            <p style="margin: 6px 0 0 0;">
-              <b>Reason:</b> The ruling white minority wanted to protect their wealth and privileges, while the oppressed black majority demanded equal rights, land, and democratic power.
-            </p>
-          </div>
-        </div>
-
-        <!-- Q3 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
-            Q3. Which of these is a provision that a democratic constitution does not have?
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            Answer: Option <b style="color: ${themeColor};">(b) Name of the head of the state</b>.
-            <p style="margin: 6px 0 0 0;">
-              <b>Reason:</b> A constitution defines the powers, limits, and election process of the head of state, but not their specific personal name.
-            </p>
-          </div>
-        </div>
-
-        <!-- Q4 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
-            Q4. Match the following leaders with their roles in the making of the Constitution:
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
-              <li style="margin-bottom: 8px;"><b>(a) Motilal Nehru:</b> (iv) Prepared a Constitution for India in 1928.</li>
-              <li style="margin-bottom: 8px;"><b>(b) B.R. Ambedkar:</b> (iii) Chairman of the Drafting Committee.</li>
-              <li style="margin-bottom: 8px;"><b>(c) Rajendra Prasad:</b> (i) President of the Constituent Assembly.</li>
-              <li style="margin-bottom: 0;"><b>(d) Sarojini Naidu:</b> (ii) Member of the Constituent Assembly.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q5 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
-            Q5. Read again the extracts from Nehru’s speech ‘Tryst with Destiny’ and answer the following:
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
-              <li style="margin-bottom: 10px;">
-                <b>(a) Why did Nehru use the expression “not wholly or in full measure” in the first sentence?</b><br/>
-                Answer: Because at independence, India faced major challenges like extreme poverty, division, and states integration, so the dream of a fully successful nation was still in progress.
-              </li>
-              <li style="margin-bottom: 10px;">
-                <b>(b) What pledge did he want the makers of the Indian Constitution to take?</b><br/>
-                Answer: The pledge to dedicate their lives to the service of India, its citizens, and the larger cause of humanity.
-              </li>
-              <li style="margin-bottom: 0;">
-                <b>(c) “The ambition of the greatest man of our generation has been to wipe every tear from every eye”. Who was he referring to?</b><br/>
-                Answer: Mahatma Gandhi.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q6 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
-            Q6. guidding values of the Constitution match correctly:
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
-              <li style="margin-bottom: 8px;"><b>(a) Sovereign:</b> (ii) People have the supreme right to make decisions.</li>
-              <li style="margin-bottom: 8px;"><b>(b) Republic:</b> (iii) Head of the state is an elected person.</li>
-              <li style="margin-bottom: 8px;"><b>(c) Fraternity:</b> (iv) People should live like brothers and sisters.</li>
-              <li style="margin-bottom: 0;"><b>(d) Secular:</b> (i) Government will not favour any religion.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q7 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
-            Q7. How did your school celebrate the Constitution Day on November 26th? Prepare a brief report.
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <b style="color: ${themeColor}; font-weight: 600;">Constitution Day Report:</b>
-            <p style="margin: 4px 0 0 0;">
-              On 26th November, our school celebrated Constitution Day. During morning assembly, students and teachers read the Preamble together. We organized a quiz and poster competition on fundamental duties. The Principal gave a short speech explaining the values of our Constitution.
-            </p>
-          </div>
-        </div>
-
-        <!-- Q8 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
-            Q8. Here are different opinions about what made India a democracy. How much importance would you give to each of these factors?
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
-              <li style="margin-bottom: 10px;">
-                <b>(a) Democracy in India is a gift of the British rulers. We received training to work with representative legislative institutions under the British rule.</b><br/>
-                Answer: <b style="color: ${themeColor};">Low importance</b>. The British set up weak councils for their own gains and denied democratic rights to Indians.
-              </li>
-              <li style="margin-bottom: 10px;">
-                <b>(b) Freedom Struggle challenged the colonial exploitation and denial of different freedoms to Indians. Free India could not be anything but democratic.</b><br/>
-                Answer: <b style="color: ${themeColor};">High importance</b>. The freedom movement united the nation and built a strong foundation for equal rights and democracy.
-              </li>
-              <li style="margin-bottom: 0;">
-                <b>(c) We were lucky to have leaders who had democratic convictions. The denial of democracy in several other newly independent countries shows the important role of these leaders.</b><br/>
-                Answer: <b style="color: ${themeColor};">High importance</b>. Our leaders' commitment to democratic values prevented India from sliding into dictatorship.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Q9 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
-            Q9. Read the 1912 extract from a conduct book for 'married women'. Do you think the values expressed in this para reflected the values underlying our constitution? Or does this go against the constitutional values?
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            Answer: No, the extract goes completely <b style="color: ${themeColor};">against</b> our constitutional values.
-            <p style="margin: 6px 0 0 0;">
-              <b>Reason:</b> The extract describes women as weak and born to serve men. In contrast, the Indian Constitution treats both men and women as equals, completely rejecting gender discrimination.
-            </p>
-          </div>
-        </div>
-
-        <!-- Q10 -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
-            Q10. Read the following statements about a constitution. Give reasons why each of these is true or not true.
-          </p>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
-            <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
-              <li style="margin-bottom: 10px;">
-                <b>(a) The authority of the rules of the constitution is the same as that of any other law.</b><br/>
-                Answer: <b style="color: ${themeColor};">Not true</b>. The constitution is the supreme law. Regular laws must conform to it, or they are declared invalid.
-              </li>
-              <li style="margin-bottom: 10px;">
-                <b>(b) Constitution lays down how different organs of the government will be formed.</b><br/>
-                Answer: <b style="color: ${themeColor};">True</b>. It sets the framework for forming the Legislature, Executive, and Judiciary.
-              </li>
-              <li style="margin-bottom: 10px;">
-                <b>(c) Rights of citizens and limits on the power of the government are laid down in the constitution.</b><br/>
-                Answer: <b style="color: ${themeColor};">True</b>. It details citizens' fundamental rights and prevents the government from abusing its power.
-              </li>
-              <li style="margin-bottom: 0;">
-                <b>(d) A constitution is about institutions, not about values.</b><br/>
-                Answer: <b style="color: ${themeColor};">Not true</b>. The constitution is founded on core values like liberty, equality, and justice, which are stated in the Preamble.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-    `,
+  "id": "sst-civ-c9-2",
+  "number": 2,
+  "title": "Constitutional Design",
+  "isHtmlView": true,
+  "htmlOverview": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(121, 134, 203, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #7986CB; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #7986CB; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #C5CAE9; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #C5CAE9; font-weight: 700; }\n  .hl { color: #7986CB; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #7986CB; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #7986CB; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(121, 134, 203, 0.10); border: 1.5px dashed #7986CB; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #7986CB; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(121, 134, 203, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(121, 134, 203, 0.18); border: 1px solid #7986CB; color: #C5CAE9; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(121, 134, 203, 0.2); color: #C5CAE9; }\n  .q-card .q-text, .q-card .sub-q { color: #7986CB !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ Chapter at a Glance</div><div class=\"sol-step\"><div class=\"rev\">In a democracy the rulers are not free to do what they like. The basic rules that citizens and the government must follow together form the <span class=\"hl\">constitution</span> — the <b>supreme law</b> of the country, which decides the rights of citizens, the powers of the government and how it should function.</div><div class=\"rev\">The chapter first looks at how <b>South Africa</b> designed its democratic constitution, then at <b>why</b> we need a constitution, <b>how the Indian Constitution was made</b>, and its <b>guiding values</b>.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 1. Democratic Constitution in South Africa</div><div class=\"sol-step\"><div class=\"pt\"><b>Nelson Mandela</b> and seven other leaders were sentenced to life imprisonment in <b>1964</b> for opposing apartheid; he spent <b>28 years</b> in <b>Robben Island</b> prison. (“I have fought against white domination and I have fought against black domination … an ideal for which I am prepared to die.”)</div><div class=\"pt\"><b>Apartheid</b> — a system of racial discrimination unique to South Africa, imposed by White Europeans who settled there as local rulers. People were labelled by skin colour: <b>blacks</b> (about three-fourths, the natives), <b>‘coloured’</b> (mixed races) and people from <b>India</b>. Non-whites had no voting rights.</div><div class=\"pt\"><b>Segregation:</b> blacks could not live in white areas, needed permits to work there; trains, buses, hospitals, schools, beaches, toilets were separate; they could not visit white churches, form associations or protest.</div><div class=\"pt\"><b>Struggle:</b> since 1950 blacks, coloured and Indians fought apartheid; the <b>African National Congress (ANC)</b> led it, with workers' unions, the Communist Party and many sensitive whites. The white government detained, tortured and killed thousands.</div><div class=\"pt\"><b>Towards a new constitution:</b> discriminatory laws were repealed, bans lifted; Mandela walked free after 28 years. At midnight of <b>26 April 1994</b> the new national flag of the Republic of South Africa was unfurled. Mandela became the first president.</div><div class=\"pt\">Black leaders asked blacks to forgive the whites; both sides sat together and after <b>two years</b> of debate made one of the finest constitutions, with the most extensive rights. Nobody was excluded or treated as a demon. South Africans call themselves a <b>‘rainbow nation’</b>.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 249\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"249\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"20\" font-size=\"11.5\" fill=\"#7986CB\" text-anchor=\"middle\" font-weight=\"700\">South Africa: from Apartheid to Democracy</text><line x1=\"82\" y1=\"34\" x2=\"82\" y2=\"239\" stroke=\"rgba(121, 134, 203,0.55)\" stroke-width=\"2\"/><circle cx=\"82\" cy=\"39.5\" r=\"4\" fill=\"#7986CB\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"73\" y=\"43.0\" font-size=\"9\" fill=\"#7986CB\" text-anchor=\"end\" font-weight=\"700\">1948</text><text x=\"94\" y=\"43.0\" font-size=\"9.5\" fill=\"#FFFFFF\">Apartheid becomes official policy</text><text x=\"94\" y=\"55.2\" font-size=\"9.5\" fill=\"#FFFFFF\">(Glossary: 1948–1989)</text><circle cx=\"82\" cy=\"80.7\" r=\"4\" fill=\"#7986CB\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"73\" y=\"84.2\" font-size=\"9\" fill=\"#7986CB\" text-anchor=\"end\" font-weight=\"700\">1950</text><text x=\"94\" y=\"84.2\" font-size=\"9.5\" fill=\"#FFFFFF\">Blacks, coloured and Indians launch</text><text x=\"94\" y=\"96.4\" font-size=\"9.5\" fill=\"#FFFFFF\">the struggle; ANC leads</text><circle cx=\"82\" cy=\"121.9\" r=\"4\" fill=\"#7986CB\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"73\" y=\"125.4\" font-size=\"9\" fill=\"#7986CB\" text-anchor=\"end\" font-weight=\"700\">1964</text><text x=\"94\" y=\"125.4\" font-size=\"9.5\" fill=\"#FFFFFF\">Mandela sentenced to life</text><text x=\"94\" y=\"137.6\" font-size=\"9.5\" fill=\"#FFFFFF\">imprisonment; 28 years in Robben</text><text x=\"94\" y=\"149.8\" font-size=\"9.5\" fill=\"#FFFFFF\">Island</text><circle cx=\"82\" cy=\"175.3\" r=\"4\" fill=\"#7986CB\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"73\" y=\"178.8\" font-size=\"9\" fill=\"#7986CB\" text-anchor=\"end\" font-weight=\"700\">26 Apr 1994</text><text x=\"94\" y=\"178.8\" font-size=\"9.5\" fill=\"#FFFFFF\">New national flag at midnight;</text><text x=\"94\" y=\"191.0\" font-size=\"9.5\" fill=\"#FFFFFF\">multi-racial democracy born</text><circle cx=\"82\" cy=\"216.5\" r=\"4\" fill=\"#7986CB\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"73\" y=\"220.0\" font-size=\"9\" fill=\"#7986CB\" text-anchor=\"end\" font-weight=\"700\">+ 2 years</text><text x=\"94\" y=\"220.0\" font-size=\"9.5\" fill=\"#FFFFFF\">New constitution after two years of</text><text x=\"94\" y=\"232.2\" font-size=\"9.5\" fill=\"#FFFFFF\">discussion and debate</text></svg></div><div class=\"diagram-caption\">Fig. 1: South Africa's path to a democratic constitution</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 2. Why Do We Need a Constitution?</div><div class=\"sol-step\"><div class=\"pt\">In South Africa the black majority wanted majority rule and social and economic rights; the white minority wanted to protect its privileges and property. They compromised: whites accepted <b>majority rule and one person one vote</b> and basic rights for the poor; blacks agreed majority rule would not be absolute and would not take away white property.</div><div class=\"pt\">To build and keep trust, they wrote down <b>rules of the game</b> that are supreme and that the winner cannot change easily — a constitution. Every association (a club, a cooperative, a party) needs one too.</div><div class=\"rev\"><b>A constitution is a set of written rules accepted by all people living together in a country; it is the supreme law that decides relations among citizens and between people and government.</b></div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>No.</th><th>What a constitution does</th></tr><tr><td>1</td><td>Generates <b>trust and coordination</b> for different people to live together</td></tr><tr><td>2</td><td>Specifies <b>how the government will be constituted</b> — who has power to take which decisions</td></tr><tr><td>3</td><td>Lays down <b>limits on government</b> and tells the <b>rights of citizens</b></td></tr><tr><td>4</td><td>Expresses the <b>aspirations</b> of the people about a good society</td></tr></table></div><div class=\"pt\">All democratic countries have constitutions, but not all countries with constitutions are democratic. The Americans (after the War of Independence) and the French (after the Revolution) made written constitutions; since then all democracies have one.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 3. Making of the Indian Constitution</div><div class=\"sol-step\"><div class=\"pt\">Made in difficult circumstances: <b>partition</b> on religious lines (at least ten lakh people killed); the princely states were free to choose India, Pakistan or independence — their merger was uncertain.</div><div class=\"pt\"><b>Advantage:</b> a consensus on what a democratic India should look like had grown during the freedom struggle. <b>1928</b> — Motilal Nehru and eight Congress leaders drafted a constitution; <b>1931</b> — the <b>Karachi session</b> resolution. Both included universal adult franchise, right to freedom and equality, and protection of minorities.</div><div class=\"pt\">Familiarity with colonial institutions helped: elections to provincial legislatures in <b>1937</b>; many details came from the <b>Government of India Act, 1935</b>. Leaders were inspired by the French Revolution, British parliamentary democracy, the US Bill of Rights and the Russian socialist revolution — but adapted them to India.</div><div class=\"sub-q\">The Constituent Assembly</div><div class=\"pt\">Elections in <b>July 1946</b>; first meeting <b>December 1946</b>; after partition, the Assembly that wrote the Indian Constitution had <b>299 members</b>.</div><div class=\"pt\">Adopted on <b>26 November 1949</b>; came into effect on <b>26 January 1950</b> — celebrated as <b>Republic Day</b>.</div><div class=\"pt\"><b>Why accept it?</b> (1) It expresses a <b>broad consensus</b> — no large social group or party has questioned its legitimacy. (2) The Assembly <b>represented the people</b> — elected mainly by provincial legislators, with a fair share of all regions; dominated by the Congress, but with many non-Congress members and members of different languages, castes, classes, religions and occupations. (3) It worked in a <b>systematic, open and consensual</b> manner.</div><div class=\"pt\">A <b>Drafting Committee</b> chaired by <b>Dr. B.R. Ambedkar</b> prepared a draft; it was discussed clause by clause; more than <b>2,000 amendments</b> were considered; members deliberated for <b>114 days</b> over three years. The records — <b>‘Constituent Assembly Debates’</b> — fill <b>12 bulky volumes</b>.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 324\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"324\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"20\" font-size=\"11.5\" fill=\"#7986CB\" text-anchor=\"middle\" font-weight=\"700\">Making of the Indian Constitution</text><line x1=\"82\" y1=\"34\" x2=\"82\" y2=\"314\" stroke=\"rgba(121, 134, 203,0.55)\" stroke-width=\"2\"/><circle cx=\"82\" cy=\"39.5\" r=\"4\" fill=\"#7986CB\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"73\" y=\"43.0\" font-size=\"9\" fill=\"#7986CB\" text-anchor=\"end\" font-weight=\"700\">1928</text><text x=\"94\" y=\"43.0\" font-size=\"9.5\" fill=\"#FFFFFF\">Motilal Nehru and eight Congress</text><text x=\"94\" y=\"55.2\" font-size=\"9.5\" fill=\"#FFFFFF\">leaders draft a constitution</text><circle cx=\"82\" cy=\"80.7\" r=\"4\" fill=\"#7986CB\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"73\" y=\"84.2\" font-size=\"9\" fill=\"#7986CB\" text-anchor=\"end\" font-weight=\"700\">1931</text><text x=\"94\" y=\"84.2\" font-size=\"9.5\" fill=\"#FFFFFF\">Karachi session resolution of the</text><text x=\"94\" y=\"96.4\" font-size=\"9.5\" fill=\"#FFFFFF\">Congress</text><circle cx=\"82\" cy=\"121.9\" r=\"4\" fill=\"#7986CB\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"73\" y=\"125.4\" font-size=\"9\" fill=\"#7986CB\" text-anchor=\"end\" font-weight=\"700\">1935</text><text x=\"94\" y=\"125.4\" font-size=\"9.5\" fill=\"#FFFFFF\">Government of India Act</text><circle cx=\"82\" cy=\"150.9\" r=\"4\" fill=\"#7986CB\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"73\" y=\"154.4\" font-size=\"9\" fill=\"#7986CB\" text-anchor=\"end\" font-weight=\"700\">1937</text><text x=\"94\" y=\"154.4\" font-size=\"9.5\" fill=\"#FFFFFF\">Elections to Provincial Legislatures</text><circle cx=\"82\" cy=\"179.9\" r=\"4\" fill=\"#7986CB\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"73\" y=\"183.4\" font-size=\"9\" fill=\"#7986CB\" text-anchor=\"end\" font-weight=\"700\">Jul 1946</text><text x=\"94\" y=\"183.4\" font-size=\"9.5\" fill=\"#FFFFFF\">Elections to the Constituent Assembly</text><circle cx=\"82\" cy=\"208.9\" r=\"4\" fill=\"#7986CB\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"73\" y=\"212.4\" font-size=\"9\" fill=\"#7986CB\" text-anchor=\"end\" font-weight=\"700\">Dec 1946</text><text x=\"94\" y=\"212.4\" font-size=\"9.5\" fill=\"#FFFFFF\">First meeting of the Constituent</text><text x=\"94\" y=\"224.6\" font-size=\"9.5\" fill=\"#FFFFFF\">Assembly</text><circle cx=\"82\" cy=\"250.1\" r=\"4\" fill=\"#7986CB\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"73\" y=\"253.6\" font-size=\"9\" fill=\"#7986CB\" text-anchor=\"end\" font-weight=\"700\">26 Nov 1949</text><text x=\"94\" y=\"253.6\" font-size=\"9.5\" fill=\"#FFFFFF\">Constitution adopted (Constitution</text><text x=\"94\" y=\"265.8\" font-size=\"9.5\" fill=\"#FFFFFF\">Day)</text><circle cx=\"82\" cy=\"291.3\" r=\"4\" fill=\"#7986CB\" stroke=\"#1E1E2E\" stroke-width=\"1.5\"/><text x=\"73\" y=\"294.8\" font-size=\"9\" fill=\"#7986CB\" text-anchor=\"end\" font-weight=\"700\">26 Jan 1950</text><text x=\"94\" y=\"294.8\" font-size=\"9.5\" fill=\"#FFFFFF\">Constitution comes into effect</text><text x=\"94\" y=\"307.0\" font-size=\"9.5\" fill=\"#FFFFFF\">(Republic Day)</text></svg></div><div class=\"diagram-caption\">Fig. 2: The path to the Indian Constitution</div></div><div class=\"sub-q\">Some makers of the Constitution (textbook sketches)</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Leader</th><th>Role / note</th></tr><tr><td>Rajendra Prasad (1884–1963)</td><td>President of the Constituent Assembly; later first President of India</td></tr><tr><td>B.R. Ambedkar (1891–1956)</td><td>Chairman of the Drafting Committee; later Law Minister</td></tr><tr><td>H.C. Mookherjee (1887–1956)</td><td>Vice-Chairman of the Constituent Assembly; Christian leader</td></tr><tr><td>Jawaharlal Nehru (1889–1964)</td><td>PM of interim government; ‘Tryst with Destiny’ speech; first Prime Minister</td></tr><tr><td>Vallabhbhai Patel (1875–1950)</td><td>Home Minister; integration of princely states; Deputy PM</td></tr><tr><td>Abul Kalam Azad (1888–1958)</td><td>Educationist; opposed separatist politics; Education Minister</td></tr><tr><td>T.T. Krishnamachari (1899–1974)</td><td>Drafting Committee member; later Finance Minister</td></tr><tr><td>Jaipal Singh (1903–1970)</td><td>Captain of first national hockey team; Adivasi Maha Sabha</td></tr><tr><td>G. Durgabai Deshmukh (1909–1981)</td><td>Women's emancipation; Andhra Mahila Sabha</td></tr><tr><td>Baldev Singh (1901–1961)</td><td>Panthic Akali Party leader; Defence Minister</td></tr><tr><td>K.M. Munshi (1887–1971)</td><td>Gandhian; later founder of the Swatantra Party</td></tr><tr><td>Shyama Prasad Mukherjee (1901–1953)</td><td>Hindu Mahasabha; founder President of Bharatiya Jansangh</td></tr><tr><td>Sarojini Naidu (1879–1949)</td><td>Poet; Congress leader; Governor of Uttar Pradesh</td></tr><tr><td>Somnath Lahiri (1901–1984)</td><td>Communist Party of India leader</td></tr></table></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 4. Guiding Values of the Indian Constitution</div><div class=\"sol-step\"><div class=\"sub-q\">The dream and the promise</div><div class=\"pt\"><b>Mahatma Gandhi</b> (not a member of the Assembly) wrote in <i>Young India</i> (1931) of an India where the poorest have an effective voice, there is no high or low class, all communities live in harmony, no untouchability, no intoxicating drinks and drugs, and women have the same rights as men.</div><div class=\"pt\"><b>Dr. Ambedkar</b> shared the dream of ending inequality but warned in his concluding speech: from 26 January 1950 India would enter <b>“a life of contradictions”</b> — political equality but social and economic inequality, which would put political democracy in peril.</div><div class=\"pt\"><b>Jawaharlal Nehru</b>, at midnight on 15 August 1947 (<b>‘Tryst with Destiny’</b>): the pledge to serve India and the millions who suffer — ending poverty, ignorance, disease and inequality of opportunity; “to wipe every tear from every eye”.</div><div class=\"sub-q\">Philosophy of the Constitution — the Preamble</div><div class=\"pt\">The values of the freedom struggle are embedded in the <b>Preamble</b>, a short statement of basic values (an idea taken from the American model). It is the <b>soul of the Constitution</b> and a standard to judge every law and action of government.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Key word</th><th>Meaning</th></tr><tr><td>We, the people of India</td><td>Made by the people through representatives, not handed down by a king or outside power</td></tr><tr><td>Sovereign</td><td>People have supreme right to decide internal and external matters</td></tr><tr><td>Socialist</td><td>Wealth generated socially should be shared; government regulates land and industry to reduce inequality</td></tr><tr><td>Secular</td><td>Freedom to follow any religion; no official religion; equal respect for all</td></tr><tr><td>Democratic</td><td>Equal political rights; people elect and hold rulers accountable</td></tr><tr><td>Republic</td><td>Head of the state is elected, not hereditary</td></tr><tr><td>Justice</td><td>No discrimination by caste, religion, gender; reduce social inequalities</td></tr><tr><td>Liberty</td><td>No unreasonable restrictions on thought, expression and action</td></tr><tr><td>Equality</td><td>Equal before law; end traditional inequalities; equal opportunity</td></tr><tr><td>Fraternity</td><td>Behave as members of one family; no one treated as inferior</td></tr></table></div><div class=\"sub-q\">Institutional design</div><div class=\"pt\">The Constitution embodies these values in institutions: a procedure for choosing rulers, who has how much power, and rights that limit government. It is long and detailed, so it is <b>amended</b> regularly — its makers did not see it as sacred and unalterable.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 5. Key Terms (Glossary)</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Term</th><th>Meaning</th></tr><tr><td>Apartheid</td><td>Official policy of racial separation and ill-treatment of blacks in South Africa (1948–1989)</td></tr><tr><td>Clause</td><td>A distinct section of a document</td></tr><tr><td>Constituent Assembly</td><td>An assembly of people's representatives that writes a constitution</td></tr><tr><td>Constitution</td><td>Supreme law of a country containing fundamental rules</td></tr><tr><td>Constitutional amendment</td><td>A change in the constitution made by the supreme legislative body</td></tr><tr><td>Draft</td><td>A preliminary version of a legal document</td></tr><tr><td>Philosophy</td><td>The most fundamental principles underlying thoughts and actions</td></tr><tr><td>Preamble</td><td>Introductory statement stating the reasons and guiding values of the constitution</td></tr><tr><td>Treason</td><td>Offence of attempting to overthrow the government</td></tr><tr><td>Tryst</td><td>A meeting or meeting place that has been agreed upon</td></tr></table></div><div class=\"exam\"><span class=\"exam-t\">📌 Exam Focus</span><div>• Apartheid and the South African constitution</div><div>• Four functions of a constitution</div><div>• Making of the Indian Constitution; Constituent Assembly facts</div><div>• Gandhi, Ambedkar, Nehru on the guiding values</div><div>• Key words of the Preamble</div></div></div>\n  </div>\n</div>",
+  "htmlExercises": {
+    "sc9-2-ex-q": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(121, 134, 203, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #7986CB; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #7986CB; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #C5CAE9; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #C5CAE9; font-weight: 700; }\n  .hl { color: #7986CB; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #7986CB; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #7986CB; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(121, 134, 203, 0.10); border: 1.5px dashed #7986CB; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #7986CB; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(121, 134, 203, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(121, 134, 203, 0.18); border: 1px solid #7986CB; color: #C5CAE9; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(121, 134, 203, 0.2); color: #C5CAE9; }\n  .q-card .q-text, .q-card .sub-q { color: #7986CB !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Here are some false statements. Identify the mistake in each case and rewrite these correctly based on what you have read in this chapter.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">a. Leaders of the freedom movement had an open mind about whether the country should be democratic or not after independence.</div><div class=\"pt\"><b>Correct:</b> Leaders of the freedom movement were committed to a democratic India after independence (e.g. the 1928 draft and the 1931 Karachi resolution).</div><div class=\"sub-q\">b. Members of the Constituent Assembly of India held the same views on all provisions of the Constitution.</div><div class=\"pt\"><b>Correct:</b> Members held different views on many provisions; they discussed each clause and considered more than two thousand amendments.</div><div class=\"sub-q\">c. A country that has a constitution must be a democracy.</div><div class=\"pt\"><b>Correct:</b> All democracies have constitutions, but every country with a constitution is not necessarily a democracy.</div><div class=\"sub-q\">d. Constitution cannot be amended because it is the supreme law of a country.</div><div class=\"pt\"><b>Correct:</b> The constitution is the supreme law, but it can be amended to keep it in line with people's aspirations and changes in society.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Which of these was the most salient underlying conflict in the making of a democratic constitution in South Africa?<br/>a. Between South Africa and its neighbours<br/>b. Between men and women<br/>c. Between the white majority and the black minority<br/>d. Between the coloured minority and the black majority</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">(c)</span></div><div class=\"rev\">The conflict was between the <b>white minority</b> and the <b>black majority</b>. <i>Note:</i> option (c) is misprinted in this textbook — the chapter itself says the blacks made up about three-fourths of the population.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Which of these is a provision that a democratic constitution does not have?<br/>a. Powers of the head of the state<br/>b. Name of the head of the state<br/>c. Powers of the legislature<br/>d. Name of the country</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"ans-box\"><span class=\"ans-label\">✓ Answer: </span><span class=\"ans-val\">(b) Name of the head of the state</span></div><div class=\"rev\">A constitution lays down how the head of state is chosen and what powers he or she has; the name of the person changes with each election.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">Match the following leaders with their roles in the making of the Constitution.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Leader</th><th>Role</th></tr><tr><td>a. Motilal Nehru</td><td><b>iv.</b> Prepared a Constitution for India in 1928</td></tr><tr><td>b. B.R. Ambedkar</td><td><b>iii.</b> Chairman of the Drafting Committee</td></tr><tr><td>c. Rajendra Prasad</td><td><b>i.</b> President of the Constituent Assembly</td></tr><tr><td>d. Sarojini Naidu</td><td><b>ii.</b> Member of the Constituent Assembly</td></tr></table></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5.</div>\n    <div class=\"q-text\">Read again the extracts from Nehru's speech ‘Tryst with Destiny’ and answer the following:</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">a. Why did Nehru use the expression “not wholly or in full measure” in the first sentence?</div><div class=\"pt\">Because the pledge of freedom was fulfilled only partly: India was partitioned with violence and suffering, and poverty, ignorance, disease and inequality of opportunity still had to be ended.</div><div class=\"sub-q\">b. What pledge did he want the makers of the Indian Constitution to take?</div><div class=\"pt\">The pledge of <b>dedication to the service of India and her people and to the still larger cause of humanity</b> — serving the millions who suffer.</div><div class=\"sub-q\">c. “The ambition of the greatest man of our generation has been to wipe every tear from every eye”. Who was he referring to?</div><div class=\"pt\"><b>Mahatma Gandhi</b>.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q6.</div>\n    <div class=\"q-text\">Here are some of the guiding values of the Constitution and their meaning. Rewrite them by matching them correctly.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Value</th><th>Meaning</th></tr><tr><td>a. Sovereign</td><td><b>ii.</b> People have the supreme right to make decisions</td></tr><tr><td>b. Republic</td><td><b>iii.</b> Head of the state is an elected person</td></tr><tr><td>c. Fraternity</td><td><b>iv.</b> People should live like brothers and sisters</td></tr><tr><td>d. Secular</td><td><b>i.</b> Government will not favour any religion</td></tr></table></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q7.</div>\n    <div class=\"q-text\">How did your school celebrate the Constitution Day on November 26th? Prepare a brief report.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sec\">Report: Constitution Day Celebration</div><div class=\"rev\"><i>Model report (change details to match your school):</i> Our school celebrated Constitution Day on 26 November, the day in 1949 when the Constituent Assembly adopted the Constitution of India. The day began with the reading of the <b>Preamble</b> by all students in the morning assembly. A quiz on the making of the Constitution and a poster competition on its values — justice, liberty, equality and fraternity — were held. The Principal spoke about Dr. B.R. Ambedkar and the members of the Constituent Assembly, reminding us that the Constitution came into effect on 26 January 1950. The programme ended with a pledge to uphold the Constitution.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q8.</div>\n    <div class=\"q-text\">Here are different opinions about what made India a democracy. How much importance would you give to each of these factors?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">a. Democracy in India is a gift of the British rulers. We received training to work with representative legislative institutions under the British rule.</div><div class=\"pt\"><b>Some importance.</b> Experience of the 1937 provincial elections and the Government of India Act, 1935 helped in designing institutions — but the British gave votes only to a few and made weak legislatures; democracy was won, not gifted.</div><div class=\"sub-q\">b. Freedom Struggle challenged the colonial exploitation and denial of different freedoms to Indians. Free India could not be anything but democratic.</div><div class=\"pt\"><b>Great importance.</b> The freedom struggle created a consensus on universal adult franchise, freedom, equality and minority rights (1928 draft, 1931 Karachi resolution).</div><div class=\"sub-q\">c. We were lucky to have leaders who had democratic convictions. The denial of democracy in several other newly independent countries shows the important role of these leaders.</div><div class=\"pt\"><b>Great importance.</b> Leaders like Nehru, Ambedkar, Patel and Rajendra Prasad worked in an open, consensual way; in many other new nations, leaders turned to dictatorship.</div><div class=\"rev\">All three factors played a part, but the freedom struggle and its leaders were the most important.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q9.</div>\n    <div class=\"q-text\">Read the following extract from a conduct book for ‘married women’, published in 1912: ‘God has made the female species delicate and fragile both physically and emotionally, pitiably incapable of self-defence. They are destined thus by God to remain in male protection – of father, husband and son – all their lives. Women should, therefore, not despair, but feel obliged that they can dedicate themselves to the service of men’. Do you think the values expressed in this para reflected the values underlying our constitution? Or does this go against the constitutional values?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"ans-box\"><span class=\"ans-label\">✓ </span><span class=\"ans-val\">It goes against the constitutional values</span></div><div class=\"pt\"><b>Equality:</b> the Constitution treats men and women as equals; this text treats women as inferior.</div><div class=\"pt\"><b>Justice:</b> no discrimination on grounds of gender is allowed.</div><div class=\"pt\"><b>Liberty:</b> women are free to think and act; they need not live only to serve men.</div><div class=\"pt\"><b>Dignity and fraternity:</b> no citizen should be treated as inferior. Gandhi's dream also said “women will enjoy the same rights as men”.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q10.</div>\n    <div class=\"q-text\">Read the following statements about a constitution. Give reasons why each of these is true or not true.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">a. The authority of the rules of the constitution is the same as that of any other law.</div><div class=\"ans-box\"><span class=\"ans-label\">✓ </span><span class=\"ans-val\">Not true</span></div><div class=\"rev\">The constitution is the supreme law; every other law must agree with it.</div><div class=\"sub-q\">b. Constitution lays down how different organs of the government will be formed.</div><div class=\"ans-box\"><span class=\"ans-label\">✓ </span><span class=\"ans-val\">True</span></div><div class=\"rev\">It specifies how the government will be constituted and who has power to take which decisions.</div><div class=\"sub-q\">c. Rights of citizens and limits on the power of the government are laid down in the constitution.</div><div class=\"ans-box\"><span class=\"ans-label\">✓ </span><span class=\"ans-val\">True</span></div><div class=\"rev\">It lays down limits on the powers of government and tells us the rights of citizens.</div><div class=\"sub-q\">d. A constitution is about institutions, not about values.</div><div class=\"ans-box\"><span class=\"ans-label\">✓ </span><span class=\"ans-val\">Not true</span></div><div class=\"rev\">A constitution embodies values (as in the Preamble) and puts them into institutional arrangements.</div></div></div>\n  </div>\n</div>",
+    "sc9-2-ex-cp": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(121, 134, 203, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #7986CB; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #7986CB; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #C5CAE9; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #C5CAE9; font-weight: 700; }\n  .hl { color: #7986CB; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #7986CB; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #7986CB; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(121, 134, 203, 0.10); border: 1.5px dashed #7986CB; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #7986CB; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(121, 134, 203, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(121, 134, 203, 0.18); border: 1px solid #7986CB; color: #C5CAE9; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(121, 134, 203, 0.2); color: #C5CAE9; }\n  .q-card .q-text, .q-card .sub-q { color: #7986CB !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Does the story of South African struggle for freedom remind you of the Indian national movement? Make a list of similarities and dissimilarities between the two on the following points.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Point</th><th>South Africa</th><th>India</th></tr><tr><td>Nature of colonialism</td><td>European settlers stayed and ruled as a white minority; apartheid</td><td>British ruled from outside; few settled; no apartheid, but racial discrimination and exploitation</td></tr><tr><td>Relationship between communities</td><td>Blacks, coloured and Indians united against whites</td><td>Many communities joined, but differences grew and led to partition</td></tr><tr><td>Leadership</td><td>Nelson Mandela — 28 years in prison; reconciliation</td><td>Mahatma Gandhi — non-violence; mass movements</td></tr><tr><td>Party that led the struggle</td><td>African National Congress</td><td>Indian National Congress</td></tr><tr><td>Method of struggle</td><td>Protest marches, strikes; negotiation</td><td>Non-violent satyagraha, non-cooperation, civil disobedience</td></tr></table></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Read the information about all the makers of the Indian Constitution given in the side columns. Give examples from these to support the following statements:</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">1. The Assembly had many members who were not with the Congress.</div><div class=\"pt\">Shyama Prasad Mukherjee (Hindu Mahasabha), Somnath Lahiri (Communist Party of India), Jaipal Singh (Adivasi Maha Sabha), Baldev Singh (Panthic Akali Party).</div><div class=\"sub-q\">2. The Assembly represented members from different social groups.</div><div class=\"pt\">Women — Sarojini Naidu, G. Durgabai Deshmukh; Dalits — B.R. Ambedkar; Adivasis — Jaipal Singh; Christians — H.C. Mookherjee; Muslims — Abul Kalam Azad; Sikhs — Baldev Singh.</div><div class=\"sub-q\">3. Members of the Assembly believed in different ideologies.</div><div class=\"pt\">Socialism — Jawaharlal Nehru; Communism — Somnath Lahiri; Hindu nationalism — Shyama Prasad Mukherjee; Gandhian ideas — K.M. Munshi (later founded the Swatantra Party); anti-caste social reform — B.R. Ambedkar.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Read the three quotations (Gandhi, Ambedkar, Nehru) carefully. Can you identify one idea that is common to all these three? What are the differences in their ways of expressing that common idea?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><span class=\"lbl\">Common idea:</span> an India free from <b>inequality and suffering</b> — where the poorest have equal dignity and opportunity.</div><div class=\"pt\"><span class=\"lbl\">Gandhi:</span> as a personal resolve and dream (“I shall strive…”), listing the evils to remove.</div><div class=\"pt\"><span class=\"lbl\">Ambedkar:</span> as a warning — political equality without social and economic equality is a “life of contradictions” that endangers democracy.</div><div class=\"pt\"><span class=\"lbl\">Nehru:</span> as a solemn pledge and responsibility of the Assembly — “to wipe every tear from every eye”.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">Compare the Preambles to the constitutions of the United States of America, India and South Africa.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"sub-q\">Ideas common to all three</div><div class=\"pt\">Begin with <b>“We, the people”</b> — power comes from the people; aim at <b>justice</b>, <b>liberty</b> and the general welfare of all; a democratic government.</div><div class=\"sub-q\">A major difference</div><div class=\"pt\">South Africa's Preamble recognises past injustices and aims to heal divisions; India's stresses socialist, secular and fraternity ideals; the USA's mentions common defence and a “more perfect union”.</div><div class=\"sub-q\">Which refers to the past?</div><div class=\"pt\"><b>South Africa</b> (“Recognise the injustices of our past”).</div><div class=\"sub-q\">Which does not invoke God?</div><div class=\"pt\"><b>India</b> and the <b>USA</b>; only South Africa's ends with “May God protect our people”.</div></div></div>\n  </div>\n</div>",
+    "sc9-2-ex-act": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(121, 134, 203, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #7986CB; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #7986CB; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #C5CAE9; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #C5CAE9; font-weight: 700; }\n  .hl { color: #7986CB; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #7986CB; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #7986CB; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(121, 134, 203, 0.10); border: 1.5px dashed #7986CB; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #7986CB; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(121, 134, 203, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(121, 134, 203, 0.18); border: 1px solid #7986CB; color: #C5CAE9; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(121, 134, 203, 0.2); color: #C5CAE9; }\n  .q-card .q-text, .q-card .sub-q { color: #7986CB !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Activity: Make a poster on the life and struggle of Nelson Mandela. If available, read some portions of his autobiography, <i>The Long Walk to Freedom</i>, in the classroom.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\"><i>Poster points:</i> fought against white and black domination; sentenced to life imprisonment in 1964; 28 years in Robben Island; walked free and led peaceful negotiations; first President of democratic South Africa (1994); preached forgiveness and the ‘rainbow nation’.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">Activity: Approach a club or cooperative society or union or political party in your locality. Get a copy of their rule book (Rules of Association) and read it. Are these rules in accordance with principles of democracy? Do they give membership to any person without discrimination?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\"><i>Guidance:</i> Check whether office-bearers are <b>elected</b>, whether every member has an <b>equal vote</b>, whether elections are held <b>regularly</b>, whether accounts are open to members, and whether membership is open to all <b>without discrimination</b> of caste, religion or gender. If yes, the rules follow democratic principles.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Activity: Speak to your grandparents or some other elders in your locality. Ask them if they have any memory of partition or independence or the making of the constitution. What were their fears and hopes about the country at that time? Discuss these in the classroom.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\"><i>Guidance:</i> Ask: Where were you in 1947? What did you feel on 15 August? Did partition affect your family or village? What did people hope independence would bring? Note fears (violence, migration, uncertainty about princely states such as J&K) and hopes (freedom, equality, development).</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">Activity: Find out more about any member of the Constituent Assembly from your state or region who is not mentioned here. Write a short note in the same style: Name (birth–death), place of birth, political activities, role after the Constituent Assembly.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\"><i>Example from Jammu and Kashmir:</i></div><div class=\"pt\"><b>Sheikh Mohammad Abdullah</b> (1905–1982); born: Soura, Srinagar. Leader of the National Conference and the people's movement against autocratic rule; member of the Constituent Assembly of India (1949). Later: Prime Minister and then Chief Minister of Jammu and Kashmir.</div><div class=\"rev\">Other members from J&K included Mirza Mohammad Afzal Beg, Maulana Mohammad Saeed Masoodi and Moti Ram Baigra.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5.</div>\n    <div class=\"q-text\">Project: Follow the newspapers for any report on a discussion on any constitutional amendment or demand for any constitutional amendment (for example, reservation for women in legislatures). Was there a public debate? What reasons were put forward in favour? How did different parties react? Did the amendment take place?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\"><b>Example — women's reservation:</b> after a long public debate over many years, Parliament passed the <b>Constitution (106th Amendment) Act, 2023</b> (Nari Shakti Vandan Adhiniyam), reserving <b>one-third</b> of seats in the Lok Sabha and state assemblies for women.</div><div class=\"pt\"><b>Reasons in favour:</b> women's low representation, equality and better attention to women's issues.</div><div class=\"pt\"><b>Reactions:</b> it was passed with wide support; some parties demanded a quota within it for OBC women and quicker implementation.</div><div class=\"pt\"><b>Status:</b> it is to come into force after the next census and delimitation.</div><div class=\"rev\">Collect your own newspaper reports and arrange them under these four questions.</div></div></div>\n  </div>\n</div>",
+    "sc9-2-ex-think": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(121, 134, 203, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #7986CB; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #7986CB; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #C5CAE9; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #C5CAE9; font-weight: 700; }\n  .hl { color: #7986CB; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #7986CB; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #7986CB; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(121, 134, 203, 0.10); border: 1.5px dashed #7986CB; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #7986CB; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(121, 134, 203, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(121, 134, 203, 0.18); border: 1px solid #7986CB; color: #C5CAE9; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(121, 134, 203, 0.2); color: #C5CAE9; }\n  .q-card .q-text, .q-card .sub-q { color: #7986CB !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">What would have happened in South Africa if the black majority had decided to take revenge on the whites for all their oppression and exploitation?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">There would have been civil war and bloodshed; the whites would have fled or fought back, and the economy and society would have been destroyed. Mandela's path of forgiveness made a peaceful, united ‘rainbow nation’ possible.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">This image captures the spirit of South Africa today. South Africans call themselves a ‘rainbow nation’. Can you guess why?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">Like the many colours of a rainbow, people of different races — black, white, coloured and Indian — live together as equals in one nation.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">This is not fair! What was the point in having a Constituent Assembly in India if all the basics were already decided?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">Agreement on basic values (democracy, equality, minority rights) was not enough. The Assembly turned them into detailed rules and institutions after open debate — over 2,000 amendments and 114 days of discussion — which gave the Constitution legitimacy and the consent of all groups.</div></div></div>\n  </div>\n</div>"
   },
-  exercises: [
+  "introduction": "This chapter explains why we need a constitution and how constitutions are designed. It explores this through the historical struggle against apartheid in South Africa and the drafting of the Indian Constitution.",
+  "definitions": [],
+  "keyPoints": [],
+  "formulas": [],
+  "crux": [],
+  "mcqs": [
     {
-      id: "ex-sst-qa",
-      name: "Q & A",
-      questions: [],
+      "id": "sst-civ-c9-2-mcq-1",
+      "question": "<div style='text-align: justify;'>Nelson Mandela spent 28 years in which prison?</div>",
+      "options": [
+        "A):   Cellular Jail",
+        "B):   Robben Island",
+        "C):   Alcatraz",
+        "D):   Pretoria Central"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>He was sentenced to life imprisonment in 1964.</div>"
     },
+    {
+      "id": "sst-civ-c9-2-mcq-2",
+      "question": "<div style='text-align: justify;'>The party that led the struggle against apartheid in South Africa was the —</div>",
+      "options": [
+        "A):   Indian National Congress",
+        "B):   ZANU-PF",
+        "C):   African National Congress",
+        "D):   Communist Party"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Workers' unions and the Communist Party were part of it.</div>"
+    },
+    {
+      "id": "sst-civ-c9-2-mcq-3",
+      "question": "<div style='text-align: justify;'>The new national flag of the Republic of South Africa was unfurled at midnight of —</div>",
+      "options": [
+        "A):   26 April 1994",
+        "B):   26 January 1950",
+        "C):   15 August 1947",
+        "D):   26 November 1949"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>It marked the birth of a multi-racial democracy.</div>"
+    },
+    {
+      "id": "sst-civ-c9-2-mcq-4",
+      "question": "<div style='text-align: justify;'>The native blacks made up about what share of South Africa's population?</div>",
+      "options": [
+        "A):   One-fourth",
+        "B):   One-half",
+        "C):   One-tenth",
+        "D):   Three-fourth"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>The whites were a minority.</div>"
+    },
+    {
+      "id": "sst-civ-c9-2-mcq-5",
+      "question": "<div style='text-align: justify;'>South Africans call themselves a —</div>",
+      "options": [
+        "A):   union of states",
+        "B):   rainbow nation",
+        "C):   white republic",
+        "D):   people's republic"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>People of all races live together as equals.</div>"
+    },
+    {
+      "id": "sst-civ-c9-2-mcq-6",
+      "question": "<div style='text-align: justify;'>In 1928, a constitution for India was drafted by —</div>",
+      "options": [
+        "A):   B.R. Ambedkar",
+        "B):   the British Parliament",
+        "C):   Motilal Nehru and eight other Congress leaders",
+        "D):   Rajendra Prasad"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>The 1931 Karachi resolution followed.</div>"
+    },
+    {
+      "id": "sst-civ-c9-2-mcq-7",
+      "question": "<div style='text-align: justify;'>Elections to the Provincial Legislatures were held all over British India in —</div>",
+      "options": [
+        "A):   1937",
+        "B):   1919",
+        "C):   1946",
+        "D):   1950"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>They gave Indians experience of legislative institutions.</div>"
+    },
+    {
+      "id": "sst-civ-c9-2-mcq-8",
+      "question": "<div style='text-align: justify;'>Elections to the Constituent Assembly were held in —</div>",
+      "options": [
+        "A):   December 1946",
+        "B):   August 1947",
+        "C):   January 1950",
+        "D):   July 1946"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Its first meeting was held in December 1946.</div>"
+    },
+    {
+      "id": "sst-civ-c9-2-mcq-9",
+      "question": "<div style='text-align: justify;'>The Constituent Assembly that wrote the Indian Constitution had —</div>",
+      "options": [
+        "A):   389 members",
+        "B):   299 members",
+        "C):   545 members",
+        "D):   250 members"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>After partition it was divided between India and Pakistan.</div>"
+    },
+    {
+      "id": "sst-civ-c9-2-mcq-10",
+      "question": "<div style='text-align: justify;'>The Indian Constitution was adopted on —</div>",
+      "options": [
+        "A):   26 January 1950",
+        "B):   15 August 1947",
+        "C):   26 November 1949",
+        "D):   9 December 1946"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>It came into effect on 26 January 1950.</div>"
+    },
+    {
+      "id": "sst-civ-c9-2-mcq-11",
+      "question": "<div style='text-align: justify;'>The Drafting Committee of the Constitution was chaired by —</div>",
+      "options": [
+        "A):   Dr. B.R. Ambedkar",
+        "B):   Rajendra Prasad",
+        "C):   Jawaharlal Nehru",
+        "D):   Vallabhbhai Patel"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>It prepared the draft for discussion.</div>"
+    },
+    {
+      "id": "sst-civ-c9-2-mcq-12",
+      "question": "<div style='text-align: justify;'>The President of the Constituent Assembly was —</div>",
+      "options": [
+        "A):   H.C. Mookherjee",
+        "B):   Sarojini Naidu",
+        "C):   Abul Kalam Azad",
+        "D):   Rajendra Prasad"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>He later became the first President of India.</div>"
+    },
+    {
+      "id": "sst-civ-c9-2-mcq-13",
+      "question": "<div style='text-align: justify;'>The Constituent Assembly deliberated for —</div>",
+      "options": [
+        "A):   2 years only",
+        "B):   114 days spread over three years",
+        "C):   60 days",
+        "D):   299 days"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>More than 2,000 amendments were considered.</div>"
+    },
+    {
+      "id": "sst-civ-c9-2-mcq-14",
+      "question": "<div style='text-align: justify;'>The ‘Constituent Assembly Debates’ fill —</div>",
+      "options": [
+        "A):   2 volumes",
+        "B):   50 volumes",
+        "C):   12 bulky volumes",
+        "D):   114 volumes"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>They explain the reason behind every provision.</div>"
+    },
+    {
+      "id": "sst-civ-c9-2-mcq-15",
+      "question": "<div style='text-align: justify;'>Who wrote in <i>Young India</i> (1931) about the Constitution he wanted?</div>",
+      "options": [
+        "A):   Mahatma Gandhi",
+        "B):   Jawaharlal Nehru",
+        "C):   B.R. Ambedkar",
+        "D):   Motilal Nehru"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>He was not a member of the Constituent Assembly.</div>"
+    },
+    {
+      "id": "sst-civ-c9-2-mcq-16",
+      "question": "<div style='text-align: justify;'>“Tryst with Destiny” was a speech by —</div>",
+      "options": [
+        "A):   Mahatma Gandhi",
+        "B):   B.R. Ambedkar",
+        "C):   Vallabhbhai Patel",
+        "D):   Jawaharlal Nehru"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Given at midnight on 15 August 1947.</div>"
+    },
+    {
+      "id": "sst-civ-c9-2-mcq-17",
+      "question": "<div style='text-align: justify;'>Which word of the Preamble means that the head of the state is elected?</div>",
+      "options": [
+        "A):   Sovereign",
+        "B):   Republic",
+        "C):   Secular",
+        "D):   Socialist"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>The position is not hereditary.</div>"
+    },
+    {
+      "id": "sst-civ-c9-2-mcq-18",
+      "question": "<div style='text-align: justify;'>Which word of the Preamble means that all of us should behave as members of the same family?</div>",
+      "options": [
+        "A):   Liberty",
+        "B):   Equality",
+        "C):   Fraternity",
+        "D):   Justice"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>No one should treat a fellow citizen as inferior.</div>"
+    },
+    {
+      "id": "sst-civ-c9-2-mcq-19",
+      "question": "<div style='text-align: justify;'>Assertion (A): The Indian Constitution has never had its legitimacy questioned by any large social group or political party. Reason (R): It expresses a broad consensus of its time.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>This is the first reason the textbook gives for accepting it.</div>"
+    },
+    {
+      "id": "sst-civ-c9-2-mcq-20",
+      "question": "<div style='text-align: justify;'>Assertion (A): Every country that has a constitution is a democracy. Reason (R): All democratic countries have constitutions.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Non-democratic countries may also have constitutions; R is true.</div>"
+    }
   ],
+  "summary": [],
+  "exercises": [
+    {
+      "id": "sc9-2-ex-q",
+      "name": "Questions",
+      "questions": []
+    },
+    {
+      "id": "sc9-2-ex-cp",
+      "name": "Check Progress",
+      "questions": []
+    },
+    {
+      "id": "sc9-2-ex-act",
+      "name": "Activities",
+      "questions": []
+    },
+    {
+      "id": "sc9-2-ex-think",
+      "name": "Think & Discuss",
+      "questions": []
+    }
+  ],
+  "examples": []
 };
