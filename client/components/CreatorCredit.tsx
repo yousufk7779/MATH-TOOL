@@ -103,6 +103,8 @@ export const CreatorCredit = memo(function CreatorCredit() {
           <View style={styles.textContainer}>
             <ThemedText
               style={[styles.name, isLandscape && styles.nameLandscape]}
+              maxFontSizeMultiplier={1.1}
+              textBreakStrategy="simple"
             >
               Sameer Sir
             </ThemedText>
@@ -171,30 +173,36 @@ const styles = StyleSheet.create({
     marginRight: Spacing.md,
     alignItems: "center",
     justifyContent: "center",
+    // same light sky colour as the photo's own background, so the slightly zoomed-out photo blends at the edges
+    backgroundColor: "#ECFBFB",
   },
   photoWrapperLandscape: {
     width: 32,
     height: 32,
   },
+  // zoomed out (natural 1080 × 1337 proportions) and lowered so the shoulders and suit show with the face centred
   photo: {
-    width: 52,
-    height: 70,
-    marginTop: 14,
+    width: 46,
+    height: 57,
+    marginTop: 5,
   },
   photoLandscape: {
-    width: 32,
-    height: 44,
-    marginTop: 10,
+    width: 28,
+    height: 35,
+    marginTop: 3,
   },
   textContainer: {
     alignItems: "center",
   },
+  // flexShrink 0 + a small side buffer stop Android from dropping the last word ("Sir")
   name: {
     fontSize: 14,
     color: JiguuColors.textPrimary,
     lineHeight: 18,
     fontFamily: "NotoSans_400Regular",
     letterSpacing: 0.5,
+    flexShrink: 0,
+    paddingHorizontal: 3,
   },
   nameLandscape: {
     fontSize: 12,

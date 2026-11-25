@@ -29,7 +29,13 @@ function HomeScreen() {
         <View style={styles.centerWrapper}>
           <View style={styles.headerContainer}>
             <View style={styles.titleRow}>
-              <ThemedText style={styles.titleWhite}>Select Your Subject</ThemedText>
+              <ThemedText
+              style={styles.titleWhite}
+              maxFontSizeMultiplier={1.1}
+              textBreakStrategy="simple"
+            >
+              Select Your Subject
+            </ThemedText>
             </View>
 
             <View style={styles.decorationContainer}>
@@ -129,11 +135,14 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
+  // flexShrink 0 + a small side buffer stop Android from dropping the last word ("Class" / "Subject")
   titleWhite: {
     color: "#FFFFFF",
     fontSize: 15,
     fontFamily: "NotoSans_600SemiBold",
     letterSpacing: 0.5,
+    flexShrink: 0,
+    paddingHorizontal: 4,
   },
   decorationContainer: {
     flexDirection: "row",
