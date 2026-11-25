@@ -1,434 +1,286 @@
 import { ChapterContent } from "../types";
 
-const themeColor = "#FFB74D"; // Orange theme for Natural Disasters
-
 export const sstEcoC93: ChapterContent = {
-  id: "sst-eco-c9-3",
-  number: 3,
-  title: "Natural Disasters",
-  introduction:
-    "This chapter examines the concept of natural hazards and disasters, detailing their types, causes, and impacts. It covers critical events like earthquakes, landslides, snow avalanches, cloudbursts, and droughts, outlines seismic zoning in India (with special reference to Jammu & Kashmir), and discusses essential mitigation and safety measures.",
-  definitions: [
-    {
-      term: "Hazard",
-      description:
-        "A dangerous natural event, process, or phenomenon (such as an earthquake or cyclone) that has the potential to cause harm to life, property, or the environment.",
-    },
-    {
-      term: "Natural Disaster",
-      description:
-        "The actual occurrence of a natural hazard that causes widespread destruction, massive loss of life, and property damage, exceeding a community's capacity to cope.",
-    },
-    {
-      term: "Seismic Zones",
-      description:
-        "Regions classified on the basis of their susceptibility to earthquakes or seismic activity. India is divided into four seismic zones (Zone II to Zone V).",
-    },
-    {
-      term: "Landslide",
-      description:
-        "The rapid downward movement of a mass of rock, earth, debris, or soil along a mountain slope under the direct influence of gravity, often triggered by rain or earthquakes.",
-    },
-    {
-      term: "Snow Avalanche",
-      description:
-        "A rapid flow of a large mass of snow, ice, and debris sliding down a steep mountain slope, commonly triggered by heavy snow accumulation or vibrations.",
-    },
-    {
-      term: "Cloudburst",
-      description:
-        "A sudden, extremely heavy rainfall over a localized geographic area (usually exceeding 100 mm per hour) occurring over a very short duration.",
-    },
-    {
-      term: "Drought",
-      description:
-        "A prolonged period of abnormally low rainfall or dry weather, leading to a severe shortage of water for drinking, agriculture, and general usage.",
-    },
-    {
-      term: "Famine",
-      description:
-        "A widespread, extreme scarcity of food in a geographic area, leading to acute starvation, malnutrition, epidemics, and high mortality rates.",
-    },
-    {
-      term: "Rainwater Harvesting",
-      description:
-        "A technique used to collect, store, and conserve rainwater from rooftops or ground catchments to replenish groundwater levels or use for future needs.",
-    },
-    {
-      term: "Mitigation",
-      description:
-        "Proactive measures and strategies implemented before a disaster occurs to reduce its risks, severity, and potential impacts on life and property.",
-    },
-  ],
-  keyPoints: [
-    "Hazard vs. Disaster: A hazard is a potential threat, whereas a disaster is the actual event causing widespread destruction.",
-    "Earthquakes & Seismic Zoning: Earthquakes are caused by tectonic plate movements. India is divided into four seismic zones (Zones II, III, IV, and V), where Zone V is the most active and vulnerable.",
-    "Landslides & Avalanches: Landslides involve the movement of soil/rocks, while avalanches involve rapid snow flow down slopes. Both are major hazards in hilly and mountainous regions.",
-    "Cloudbursts & Flash Floods: Sudden intense rainfall in localized areas, common in hilly states, triggers flash floods, wiping out infrastructure and houses.",
-    "Droughts & Famines: Severe rain deficiency causes droughts, which can turn into famines (food scarcity) if not managed properly. Preventive steps include rainwater harvesting and water conservation.",
-    "Mitigation & Preparedness: Mitigation involves constructing disaster-resistant structures, executing early warning systems, and planning structural and non-structural safety measures.",
-  ],
-  formulas: [],
-  crux: [
-    "Disasters represent a breakdown in community functioning, requiring structural planning and mitigation to build resilience.",
-    "Hilly regions are highly susceptible to sudden disasters like landslides, avalanches, and cloudbursts, demanding robust emergency warning and response systems.",
-    "Mitigation, including rainwater harvesting and earthquake-safe building designs, is the key to minimizing the economic and human costs of natural disasters.",
-  ],
-  mcqs: [
-    {
-      id: "sst-eco-c9-3-mcq-1",
-      question: "Which of the following is a natural disaster?",
-      options: [
-        "Industrial chemical leak",
-        "Deforestation",
-        "Earthquake",
-        "Road accident",
-      ],
-      correctAnswer: "c",
-    },
-    {
-      id: "sst-eco-c9-3-mcq-2",
-      question: "The earthquake zoning map divides India into how many seismic zones?",
-      options: ["Two", "Three", "Four", "Five"],
-      correctAnswer: "c",
-    },
-    {
-      id: "sst-eco-c9-3-mcq-3",
-      question: "Jammu and Kashmir falls under which of the following seismic zones?",
-      options: ["Zone I and II", "Zone II and III", "Zone III and IV", "Zone IV and V"],
-      correctAnswer: "d",
-    },
-    {
-      id: "sst-eco-c9-3-mcq-4",
-      question: "A large mass of snow sliding down a mountain slope is called:",
-      options: ["Landslide", "Avalanche", "Cloudburst", "Cyclone"],
-      correctAnswer: "b",
-    },
-    {
-      id: "sst-eco-c9-3-mcq-5",
-      question: "A disaster hit the Muzaffarabad region in the year 2005. Which disaster was it?",
-      options: ["Landslide", "Cloudburst", "Earthquake", "Flood"],
-      correctAnswer: "c",
-    },
-    {
-      id: "sst-eco-c9-3-mcq-6",
-      question: "Which instrument is used to measure the magnitude of an earthquake?",
-      options: ["Barometer", "Thermometer", "Seismograph", "Anemometer"],
-      correctAnswer: "c",
-    },
-    {
-      id: "sst-eco-c9-3-mcq-7",
-      question: "A disastrous weather event in which heavy rainfall occurs suddenly over a localized area is known as:",
-      options: ["Drought", "Cloudburst", "Landslide", "Hailstorm"],
-      correctAnswer: "b",
-    },
-    {
-      id: "sst-eco-c9-3-mcq-8",
-      question: "Storing rainwater from rooftops for future use is called:",
-      options: ["Water logging", "Rainwater harvesting", "Drip irrigation", "Canal irrigation"],
-      correctAnswer: "b",
-    },
-    {
-      id: "sst-eco-c9-3-mcq-9",
-      question: "The sudden movement of a mass of soil, rock, or debris down a slope is called:",
-      options: ["Landslide", "Avalanche", "Earthquake", "Soil erosion"],
-      correctAnswer: "a",
-    },
-    {
-      id: "sst-eco-c9-3-mcq-10",
-      question: "What do we call actions taken before a disaster to reduce its risk and impact?",
-      options: ["Rescue", "Relief", "Mitigation", "Reconstruction"],
-      correctAnswer: "c",
-    },
-  ],
-  summary: [
-    "Natural disasters like earthquakes, landslides, cloudbursts, and droughts are major challenges causing massive loss of life and property.",
-    "Seismic zoning maps help identify high-risk zones, such as Zones IV and V which cover Jammu and Kashmir, guiding safe construction guidelines.",
-    "Proactive disaster management, public awareness, rainwater harvesting, and structural mitigation are critical for long-term disaster risk reduction.",
-  ],
-  isHtmlView: true,
-  htmlOverview: `
-    <div style="padding: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: transparent;">
-      <!-- Key Concepts Introduction -->
-      <div style="background-color: #1E1E2E; border: 1px solid rgba(255, 183, 77, 0.25); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 20px; font-weight: 700; margin-top: 0; margin-bottom: 12px; display: flex; align-items: center;">
-          <span style="margin-right: 8px; font-size: 22px;">🌋</span> Overview
-        </h3>
-        <p style="color: #E0E0E0; font-size: 15px; line-height: 1.6; text-align: justify; margin: 0; font-weight: 300;">
-          Earth is a dynamic planet where natural forces shape our landscapes. However, when these processes become extreme and intersect with human settlements, they trigger natural disasters. This chapter explains the nature of natural hazards and disasters, focusing on earthquakes, landslides, snow avalanches, cloudbursts, and droughts. It highlights risk zones, impacts on human lives and economy, and teaches essential mitigation and safety strategies.
-        </p>
-      </div>
-
-      <!-- Hazards vs Disasters -->
-      <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 600; margin-top: 0; margin-bottom: 14px; display: flex; align-items: center;">
-          <span style="margin-right: 8px; font-size: 18px;">⚠️</span> Hazards vs. Disasters
-        </h3>
-        <ul style="color: #B3B3C6; font-size: 14.5px; line-height: 1.7; margin: 0; padding-left: 20px; text-align: justify;">
-          <li style="margin-bottom: 10px;"><b style="color: ${themeColor};">Hazard:</b> A potential threat or dangerous natural process (e.g., active fault plates, cloud accumulation) that is capable of causing harm but has not yet hit a populated area.</li>
-          <li style="margin-bottom: 0;"><b style="color: ${themeColor};">Disaster:</b> The actual event that causes extreme loss of life, property damage, and environmental collapse. A hazard becomes a disaster only when it impacts vulnerable communities.</li>
-        </ul>
-      </div>
-
-      <!-- Major Disasters & Mitigation -->
-      <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 600; margin-top: 0; margin-bottom: 14px; display: flex; align-items: center;">
-          <span style="margin-right: 8px; font-size: 18px;">🌪️</span> Primary Natural Disasters
-        </h3>
-        <div style="display: flex; flex-direction: column; gap: 10px;">
-          <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 8px; padding: 12px; text-align: justify;">
-            <b style="color: ${themeColor};">1. Earthquakes:</b> Shaking of the Earth's surface caused by tectonic plate friction. Measured by a seismograph on the Richter scale. The zoning map divides India into four seismic zones (II to V). Jammu and Kashmir falls in the highly active Zone IV and Zone V.
-          </div>
-          <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 8px; padding: 12px; text-align: justify;">
-            <b style="color: ${themeColor};">2. Landslides & Snow Avalanches:</b> Gravity-induced downslope movement of debris/rock (landslide) or snow (avalanche) in hilly regions. Triggered by rainfall, heavy snow accumulation, deforestation, or earthquakes.
-          </div>
-          <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 8px; padding: 12px; text-align: justify;">
-            <b style="color: ${themeColor};">3. Cloudbursts:</b> High-intensity localized rainfall causing sudden, violent flash floods, destroying houses, roads, and bridges in a matter of minutes (e.g., Leh 2010, Uttarakhand 2013).
-          </div>
-          <div style="background: rgba(255, 183, 77, 0.08); border: 1px solid rgba(255, 183, 77, 0.15); border-radius: 8px; padding: 12px; text-align: justify;">
-            <b style="color: ${themeColor};">4. Droughts & Famines:</b> Long-term rain deficiency leading to water scarcity (drought) and widespread food shortage (famine). Preventive measures include rainwater harvesting, crop rotation, and water conservation.
-          </div>
-        </div>
-      </div>
-
-      <!-- Mitigation and Safety -->
-      <div style="background: rgba(255, 183, 77, 0.05); border: 1.5px solid rgba(255, 183, 77, 0.25); border-radius: 16px; padding: 20px; box-shadow: 0 4px 30px rgba(0,0,0,0.15);">
-        <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 600; margin-top: 0; margin-bottom: 12px; display: flex; align-items: center;">
-          <span style="margin-right: 8px;">🛡️</span> Mitigation & Safety
-        </h3>
-        <div style="color: #E0E0E0; font-size: 14px; line-height: 1.6; text-align: justify;">
-          <p style="margin-top: 0; margin-bottom: 8px;"><b style="color: ${themeColor};">What is Mitigation?</b> Proactive measures taken before a disaster occurs to minimize its impact. Examples include constructing earthquake-resistant structures, establishing warning systems, and afforestation.</p>
-          <p style="margin-bottom: 8px;"><b style="color: ${themeColor};">Earthquake Safety:</b> If inside, follow the "Drop, Cover, and Hold" rule under a sturdy table. Stay away from windows. If outside, move to open grounds away from buildings and overhead cables.</p>
-          <p style="margin-bottom: 0;"><b style="color: ${themeColor};">Post-Disaster Relief:</b> Rescue operations, setting up medical aid camps, clearing communication lines, and providing food and temporary shelters to victims.</p>
-        </div>
-      </div>
-    </div>
-  `,
-  htmlExercises: {
-    "ex-sst-qa": `
-      <div style="padding: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: transparent;">
-        
-        <!-- SECTION A: FILL IN THE BLANKS -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255, 183, 77, 0.2); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 16px; border-bottom: 1px solid rgba(255, 183, 77, 0.2); padding-bottom: 8px; display: flex; align-items: center;">
-            <span style="margin-right: 8px;">✏️</span> A. Fill in the blanks
-          </h3>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.7; display: flex; flex-direction: column; gap: 14px; text-align: justify;">
-            <div>
-              <b>1.</b> Disasters that are caused by nature are called as <span style="color: ${themeColor}; font-weight: bold;">natural disasters</span>.
-            </div>
-            <div>
-              <b>2.</b> The earthquake zoning map divides India into <span style="color: ${themeColor}; font-weight: bold;">four (4)</span> seismic zones.
-            </div>
-            <div>
-              <b>3.</b> The Jammu and Kashmir falls in seismic zone <span style="color: ${themeColor}; font-weight: bold;">IV (4)</span> and <span style="color: ${themeColor}; font-weight: bold;">V (5)</span>.
-            </div>
-            <div>
-              <b>4.</b> <span style="color: ${themeColor}; font-weight: bold;">Avalanche (or Snow avalanche)</span> is a large mass of snow that moves rapidly down a mountain slope.
-            </div>
-            <div>
-              <b>5.</b> <span style="color: ${themeColor}; font-weight: bold;">Drought</span> can be defined as a lack or shortage of water for an unusually long period.
-            </div>
-            <div>
-              <b>6.</b> A <span style="color: ${themeColor}; font-weight: bold;">famine</span> is a widespread scarcity of food in an area.
-            </div>
-            <div>
-              <b>7.</b> Storing rain water on the roofs of the houses is called as <span style="color: ${themeColor}; font-weight: bold;">rainwater harvesting</span>.
-            </div>
-            <div>
-              <b>8.</b> <span style="color: ${themeColor}; font-weight: bold;">Cloudburst</span> is a disastrous weather event in which, the heavy rainfall occurs over a localized area.
-            </div>
-            <div>
-              <b>9.</b> An <span style="color: ${themeColor}; font-weight: bold;">earthquake</span> is a natural disaster in which the sudden shaking of earth's surface is involved.
-            </div>
-            <div>
-              <b>10.</b> Instrument used to measure the magnitude of an earthquake is called as <span style="color: ${themeColor}; font-weight: bold;">seismograph (or Richter scale)</span>.
-            </div>
-          </div>
-        </div>
-
-        <!-- SECTION B: ONE WORD ANSWERS -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255, 183, 77, 0.2); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 16px; border-bottom: 1px solid rgba(255, 183, 77, 0.2); padding-bottom: 8px; display: flex; align-items: center;">
-            <span style="margin-right: 8px;">💡</span> B. One word Answers
-          </h3>
-          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.7; display: flex; flex-direction: column; gap: 14px; text-align: justify;">
-            <div>
-              <b>1. Which disaster hit Muzaffarabad region in year 2005?</b><br/>
-              ➡️ <span style="color: ${themeColor}; font-weight: bold;">Earthquake</span>
-            </div>
-            <div>
-              <b>2. Which disaster involves the movement of a mass of soil, rock or debris down the slope?</b><br/>
-              ➡️ <span style="color: ${themeColor}; font-weight: bold;">Landslide</span>
-            </div>
-            <div>
-              <b>3. Which disaster hit the famous Kedarnath Shrine area at Uttrakhand in June, 2013?</b><br/>
-              ➡️ <span style="color: ${themeColor}; font-weight: bold;">Cloudburst (resulting in Flash Floods)</span>
-            </div>
-            <div>
-              <b>4. Which disaster devastated the normal life in Leh on 6th August, 2010?</b><br/>
-              ➡️ <span style="color: ${themeColor}; font-weight: bold;">Cloudburst</span>
-            </div>
-            <div>
-              <b>5. Which disaster hit the Bhaderwah area in year 2013?</b><br/>
-              ➡️ <span style="color: ${themeColor}; font-weight: bold;">Earthquake (earthquake swarm)</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- SECTION C: VERY SHORT / SHORT ANSWER TYPE QUESTIONS -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 16px; border-bottom: 1px solid rgba(255, 183, 77, 0.2); padding-bottom: 8px; display: flex; align-items: center;">
-            <span style="margin-right: 8px;">📝</span> C. Very short / short answers
-          </h3>
-          <div style="display: flex; flex-direction: column; gap: 20px;">
-            
-            <!-- C1 -->
-            <div>
-              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 6px 0; line-height: 1.5; text-align: justify;">1. What is the difference between hazard and disaster?</p>
-              <p style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
-                <b>Answer:</b> A <b>hazard</b> is a natural event (like an earthquake or cyclone) that has the potential to cause harm. A <b>disaster</b> is the actual occurrence of that hazard which causes widespread destruction of life, property, and environment, exceeding the community's capacity to cope.
-              </p>
-            </div>
-
-            <!-- C2 -->
-            <div>
-              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 6px 0; line-height: 1.5; text-align: justify;">2. What do you understand by a natural disaster? Enlist few.</p>
-              <p style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
-                <b>Answer:</b> A <b>natural disaster</b> is a sudden catastrophic event caused by Earth's natural forces that results in extreme damage, fatalities, and economic loss.
-                <br/>• <b>Examples:</b> Earthquakes, landslides, snow avalanches, cloudbursts, floods, and droughts.
-              </p>
-            </div>
-
-            <!-- C3 -->
-            <div>
-              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 6px 0; line-height: 1.5; text-align: justify;">3. Write down some events of earthquakes in India?</p>
-              <p style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
-                <b>Answer:</b> Some major earthquakes that hit India are:
-                <br/>• <b>1993 Latur Earthquake:</b> Devastated Latur in Maharashtra.
-                <br/>• <b>2001 Bhuj Earthquake:</b> Caused massive destruction in Gujarat.
-                <br/>• <b>2005 Muzaffarabad Earthquake:</b> Severely affected border regions of Jammu & Kashmir.
-                <br/>• <b>2013 Bhaderwah Earthquake:</b> Struck the Doda-Kishtwar region of Jammu & Kashmir.
-              </p>
-            </div>
-
-            <!-- C4 -->
-            <div>
-              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 6px 0; line-height: 1.5; text-align: justify;">4. What is the difference between drought and famine?</p>
-              <p style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
-                <b>Answer:</b> 
-                <br/>• <b>Drought:</b> A prolonged period of abnormally low rainfall leading to acute water scarcity, crop failure, and soil dryness.
-                <br/>• <b>Famine:</b> A severe shortage of food across a large population, resulting in acute starvation, epidemics, and high mortality rates, often triggered by a drought.
-              </p>
-            </div>
-
-            <!-- C5 -->
-            <div>
-              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 6px 0; line-height: 1.5; text-align: justify;">5. Illustrate briefly how an earthquake occurs.</p>
-              <p style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
-                <b>Answer:</b> Earth's crust is made of tectonic plates that constantly move. Sometimes, these plates get locked at their edges due to friction, building up stress. When the stress overcomes friction, tectonic rocks suddenly break or slip along a fault line, releasing energy as seismic waves. These waves travel through the crust, shaking the ground.
-              </p>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- SECTION D: LONG ANSWERS -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 16px; border-bottom: 1px solid rgba(255, 183, 77, 0.2); padding-bottom: 8px; display: flex; align-items: center;">
-            <span style="margin-right: 8px;">📚</span> D. Long answers
-          </h3>
-          <div style="display: flex; flex-direction: column; gap: 24px;">
-            
-            <!-- D1 -->
-            <div>
-              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 8px 0; line-height: 1.5; text-align: justify;">1. What do we understand by Mitigation? Give some examples.</p>
-              <div style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
-                <b>Disaster Mitigation:</b> Mitigation refers to proactive planning, strategies, and actions implemented before a disaster strikes to reduce its overall severity, risk, and impact on life and property.
-                <br/><br/>
-                <b>Examples of Mitigation:</b>
-                <ul style="margin: 6px 0 0 0; padding-left: 20px;">
-                  <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Earthquake-safe buildings:</b> Constructing buildings using seismic-resistant guidelines so they do not collapse during tremors.</li>
-                  <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Afforestation:</b> Planting trees on mountain slopes to bind the soil and prevent landslides.</li>
-                  <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Flood embankments:</b> Building concrete walls and dams along rivers to regulate excess water flow.</li>
-                  <li style="margin-bottom: 0;"><b style="color: ${themeColor};">Early warning systems:</b> Setting up Doppler radars and weather stations to warn citizens about cyclones or cloudbursts in advance.</li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- D2 -->
-            <div>
-              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 8px 0; line-height: 1.5; text-align: justify;">2. List some of the major natural disasters that are likely to occur in hilly regions. Elaborate any one of them.</p>
-              <div style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
-                <b>Natural Disasters in Hilly Regions:</b> High altitude zones are highly vulnerable to disasters due to steep slopes and unstable rocks. These include:
-                <br/>• Landslides
-                <br/>• Snow Avalanches
-                <br/>• Cloudbursts
-                <br/>• Earthquakes
-                <br/><br/>
-                <b>Elaboration of Landslides:</b>
-                <br/>A landslide is the rapid downward movement of soil, rocks, and debris under gravity. 
-                <br/>• <b>Causes:</b> Usually triggered by heavy rainfall, cloudbursts, earthquakes, or human activities like deforestation, mining, and road cutting.
-                <br/>• <b>Impacts:</b> It blocks national highways, breaks transport links, buries homes, destroys lives, and blocks rivers to cause sudden flash floods downstream.
-              </div>
-            </div>
-
-            <!-- D3 -->
-            <div>
-              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 8px 0; line-height: 1.5; text-align: justify;">3. What is a drought? Describe how it can be prevented.</p>
-              <div style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
-                <b>Drought:</b> A prolonged period of months or years with deficient rainfall, causing severe water shortage, drying up of aquifers, and crop failure.
-                <br/><br/>
-                <b>Methods of Prevention and Management:</b>
-                <ul style="margin: 6px 0 0 0; padding-left: 20px;">
-                  <li style="margin-bottom: 8px;"><b style="color: ${themeColor};">1. Rainwater Harvesting:</b> Capturing and storing rooftop rainwater in underground tanks or pits. This recharges the water table and provides reserves.</li>
-                  <li style="margin-bottom: 8px;"><b style="color: ${themeColor};">2. Afforestation:</b> Planting trees to reduce soil moisture evaporation and help attract monsoon winds to bring rain.</li>
-                  <li style="margin-bottom: 8px;"><b style="color: ${themeColor};">3. Water Conservation:</b> Adopting efficient irrigation methods like drip and sprinkler irrigation to minimize water wastage.</li>
-                  <li style="margin-bottom: 0;"><b style="color: ${themeColor};">4. Drought-Resistant Crops:</b> Encouraging farmers to sow crops like millets and maize that require less water.</li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- D4 -->
-            <div>
-              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 8px 0; line-height: 1.5; text-align: justify;">4. What are the relief steps that need to be taken in the aftermath of landslides or snow avalanches?</p>
-              <div style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
-                <b>Aftermath Relief Steps:</b>
-                <ul style="margin: 6px 0 0 0; padding-left: 20px;">
-                  <li style="margin-bottom: 8px;"><b style="color: ${themeColor};">1. Search and Rescue:</b> Deploying special rescue teams (NDRF/SDRF, Army) equipped with heavy machinery, sniffer dogs, and sensors to find trapped victims.</li>
-                  <li style="margin-bottom: 8px;"><b style="color: ${themeColor};">2. Emergency Medical Camps:</b> Providing immediate first aid and trauma care to the injured, and shifting critical patients to nearby hospitals.</li>
-                  <li style="margin-bottom: 8px;"><b style="color: ${themeColor};">3. Clearing Debris:</b> Using bulldozers to remove rocks, soil, or snow from roads and highways to restore emergency transport.</li>
-                  <li style="margin-bottom: 8px;"><b style="color: ${themeColor};">4. Basic Necessities:</b> Distributing clean drinking water, dry food packets, medicines, and blankets to affected populations.</li>
-                  <li style="margin-bottom: 0;"><b style="color: ${themeColor};">5. Temporary Shelters:</b> Setting up emergency relief camps and tents in safe flat grounds for displaced families.</li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- D6 (Note: Question 5 is omitted in screenshot, jumping to 6) -->
-            <div>
-              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 8px 0; line-height: 1.5; text-align: justify;">6. Describe some of the safety measures that should be adopted during an earthquake.</p>
-              <div style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
-                <b>Safety Measures During an Earthquake:</b>
-                <ul style="margin: 6px 0 0 0; padding-left: 20px;">
-                  <li style="margin-bottom: 8px;"><b style="color: ${themeColor};">If Indoors:</b> Follow the <b>"Drop, Cover, and Hold"</b> method. Drop to the knees, crawl under a sturdy table, and hold its legs tightly. Stay away from windows, tall cabinets, and glass objects.</li>
-                  <li style="margin-bottom: 8px;"><b style="color: ${themeColor};">Safe Evacuation:</b> Leave the building quietly if a safe exit is close by. Never use elevators/lifts, as power cuts can trap you.</li>
-                  <li style="margin-bottom: 8px;"><b style="color: ${themeColor};">If Outdoors:</b> Move to a clear, open ground away from high-rise buildings, glass facades, heavy trees, and electric poles.</li>
-                  <li style="margin-bottom: 0;"><b style="color: ${themeColor};">If in a Vehicle:</b> Stop the vehicle in a safe open spot away from bridges, flyovers, and underpasses, and remain inside until the shaking stops completely.</li>
-                </ul>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-
-      </div>
-    `,
+  "id": "sst-eco-c9-3",
+  "number": 3,
+  "title": "Natural Disasters",
+  "isHtmlView": true,
+  "htmlOverview": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 183, 77, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FFB74D; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FFB74D; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFE0B2; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFE0B2; font-weight: 700; }\n  .hl { color: #FFB74D; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FFB74D; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FFB74D; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(255, 183, 77, 0.10); border: 1.5px dashed #FFB74D; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FFB74D; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 183, 77, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(255, 183, 77, 0.18); border: 1px solid #FFB74D; color: #FFE0B2; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(255, 183, 77, 0.2); color: #FFE0B2; }\n  .q-card .q-text, .q-card .sub-q { color: #FFB74D !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ Chapter at a Glance</div><div class=\"sol-step\"><div class=\"rev\">Disasters cause huge damage to life, property and livelihood, and their risk has increased. <span class=\"hl\">Jammu and Kashmir</span> is prone to natural and anthropogenic (man-made) disasters. The <b>7.6</b> magnitude earthquake of <b>8 October 2005</b> killed about <b>1,400</b> people in this part of J&amp;K and about <b>79,000</b> in Pakistan and Pakistan-administered J&amp;K.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Term</th><th>Meaning</th></tr><tr><td>Hazard</td><td>A situation that threatens life, health, property or environment; it becomes a disaster when it hits an area and affects normal life</td></tr><tr><td>Disaster</td><td>A natural, man-made or technological event causing significant damage, widespread loss of life or drastic change to the environment — occurs when hazards meet vulnerable situations</td></tr><tr><td>Mitigation</td><td>Efforts to reduce loss of life and property by reducing the impact of disasters — preventive action before the next disaster</td></tr></table></div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 230\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"230\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"18\" font-size=\"11\" fill=\"#FFB74D\" text-anchor=\"middle\" font-weight=\"700\">Hazard, Disaster and Mitigation</text><rect x=\"102\" y=\"32\" width=\"116\" height=\"36\" rx=\"8\" fill=\"#FFB74D29\" stroke=\"#FFB74D\" stroke-width=\"1.4\"/><text x=\"160\" y=\"48\" font-size=\"8.8\" fill=\"#FFB74D\" text-anchor=\"middle\" font-weight=\"700\">HAZARD</text><text x=\"160\" y=\"61\" font-size=\"7.8\" fill=\"#FFFFFF\" text-anchor=\"middle\">threat to life, property</text><rect x=\"197\" y=\"107\" width=\"116\" height=\"36\" rx=\"8\" fill=\"#FF8A6529\" stroke=\"#FF8A65\" stroke-width=\"1.4\"/><text x=\"255\" y=\"123\" font-size=\"8.8\" fill=\"#FF8A65\" text-anchor=\"middle\" font-weight=\"700\">VULNERABILITY</text><text x=\"255\" y=\"136\" font-size=\"7.8\" fill=\"#FFFFFF\" text-anchor=\"middle\">people, buildings at risk</text><rect x=\"102\" y=\"177\" width=\"116\" height=\"36\" rx=\"8\" fill=\"#EF535029\" stroke=\"#EF5350\" stroke-width=\"1.4\"/><text x=\"160\" y=\"193\" font-size=\"8.8\" fill=\"#EF5350\" text-anchor=\"middle\" font-weight=\"700\">DISASTER</text><text x=\"160\" y=\"206\" font-size=\"7.8\" fill=\"#FFFFFF\" text-anchor=\"middle\">hazard meets vulnerability</text><rect x=\"2\" y=\"107\" width=\"116\" height=\"36\" rx=\"8\" fill=\"#66BB6A29\" stroke=\"#66BB6A\" stroke-width=\"1.4\"/><text x=\"60\" y=\"123\" font-size=\"8.8\" fill=\"#66BB6A\" text-anchor=\"middle\" font-weight=\"700\">MITIGATION</text><text x=\"60\" y=\"136\" font-size=\"7.8\" fill=\"#FFFFFF\" text-anchor=\"middle\">reduce impact before</text><line x1=\"200\" y1=\"68\" x2=\"238\" y2=\"107\" stroke=\"#B0BEC5\" stroke-width=\"1.3\"/><line x1=\"238\" y1=\"143\" x2=\"200\" y2=\"177\" stroke=\"#B0BEC5\" stroke-width=\"1.3\"/><line x1=\"118\" y1=\"125\" x2=\"202\" y2=\"125\" stroke=\"#B0BEC5\" stroke-width=\"1.3\"/><text x=\"160\" y=\"120\" font-size=\"7.6\" fill=\"#66BB6A\" text-anchor=\"middle\">lowers the risk</text></svg></div><div class=\"diagram-caption\">Fig. 1: How a hazard becomes a disaster</div></div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Natural disasters</th><th>Man-made disasters</th></tr><tr><td>2004 Indian Ocean Tsunami, 2005 Muzaffarabad earthquake, 2005 Waltengoo snow avalanche, 2010 Leh cloudburst, landslides</td><td>1984 Bhopal Gas tragedy, Kumbakonam school fire, terrorist attacks, bomb blasts, road and rail accidents, global warming</td></tr></table></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 1. Earthquake</div><div class=\"sol-step\"><div class=\"pt\">A sudden shaking of the earth's surface due to release of energy when rock masses move suddenly along a <b>fault</b>. The most destructive natural hazard; occurs suddenly with little or no warning.</div><div class=\"pt\"><b>Seismic zones:</b> India is divided into four zones — II, III, IV and V. <b>J&amp;K falls in zones IV and V</b> (severe and very severe).</div><div class=\"pt\"><b>Measurement:</b> a <b>seismograph</b> records ground vibrations; the <b>Richter scale</b> (Charles Richter, 1935) measures magnitude.</div><div class=\"diagram-card\"><div class=\"diagram-wrapper\"><svg viewBox=\"0 0 320 200\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"320\" height=\"200\" fill=\"#1E1E2E\" rx=\"8\"/><text x=\"160\" y=\"20\" font-size=\"11\" fill=\"#FFB74D\" text-anchor=\"middle\" font-weight=\"700\">Richter Scale: one step up = 10× motion, ~30× energy</text><rect x=\"40\" y=\"132\" width=\"44\" height=\"18\" fill=\"#FFE082\" stroke=\"#FFFFFF\" stroke-width=\"0.6\"/><text x=\"62\" y=\"127\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">M 5</text><text x=\"62\" y=\"164\" font-size=\"8\" fill=\"#4FC3F7\" text-anchor=\"middle\">1× motion</text><text x=\"62\" y=\"176\" font-size=\"8\" fill=\"#FFB74D\" text-anchor=\"middle\">1× energy</text><rect x=\"110\" y=\"102\" width=\"44\" height=\"48\" fill=\"#FFB74D\" stroke=\"#FFFFFF\" stroke-width=\"0.6\"/><text x=\"132\" y=\"97\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">M 6</text><text x=\"132\" y=\"164\" font-size=\"8\" fill=\"#4FC3F7\" text-anchor=\"middle\">10× motion</text><text x=\"132\" y=\"176\" font-size=\"8\" fill=\"#FFB74D\" text-anchor=\"middle\">30× energy</text><rect x=\"180\" y=\"72\" width=\"44\" height=\"78\" fill=\"#FF8A65\" stroke=\"#FFFFFF\" stroke-width=\"0.6\"/><text x=\"202\" y=\"67\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">M 7</text><text x=\"202\" y=\"164\" font-size=\"8\" fill=\"#4FC3F7\" text-anchor=\"middle\">100× motion</text><text x=\"202\" y=\"176\" font-size=\"8\" fill=\"#FFB74D\" text-anchor=\"middle\">900× energy</text><rect x=\"250\" y=\"42\" width=\"44\" height=\"108\" fill=\"#EF5350\" stroke=\"#FFFFFF\" stroke-width=\"0.6\"/><text x=\"272\" y=\"37\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-weight=\"700\">M 8</text><text x=\"272\" y=\"164\" font-size=\"8\" fill=\"#4FC3F7\" text-anchor=\"middle\">1000× motion</text><text x=\"272\" y=\"176\" font-size=\"8\" fill=\"#FFB74D\" text-anchor=\"middle\">27,000× energy</text><line x1=\"30\" y1=\"150\" x2=\"310\" y2=\"150\" stroke=\"#FFFFFF\"/><text x=\"160\" y=\"194\" font-size=\"7.8\" fill=\"#CBD5E1\" text-anchor=\"middle\">Compared with M 5 (bar heights are not to scale)</text></svg></div><div class=\"diagram-caption\">Fig. 2: Each magnitude step on the Richter scale</div></div><div class=\"pt\"><b>Epicentre</b> — the point on the surface directly above the <b>focus</b> (where the earthquake originates). <b>Liquefaction</b> — saturated loose soils lose strength and behave like a liquid.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Earthquakes in J&amp;K</th><th>Year</th><th>Magnitude</th></tr><tr><td>Udhampur</td><td>1951</td><td>6</td></tr><tr><td>Udhampur</td><td>1962</td><td>6</td></tr><tr><td>Kathua</td><td>1947</td><td>6</td></tr><tr><td>Kathua</td><td>1950</td><td>6</td></tr><tr><td>Kathua</td><td>1951</td><td>6</td></tr><tr><td>Uri / Muzaffarabad</td><td>2005</td><td>7.6</td></tr></table></div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Earthquakes in India</th><th>Year</th><th>Magnitude</th></tr><tr><td>Rann of Kutch</td><td>1819</td><td>8</td></tr><tr><td>Assam</td><td>1897</td><td>8.7</td></tr><tr><td>Kangra</td><td>1905</td><td>8</td></tr><tr><td>Arunachal Pradesh</td><td>1950</td><td>8.5</td></tr><tr><td>Uttarkashi</td><td>1991</td><td>7</td></tr><tr><td>Kutch</td><td>2001</td><td>7.7</td></tr><tr><td>Indonesia (Indian Ocean Tsunami)</td><td>2004</td><td>9.3</td></tr><tr><td>Sikkim</td><td>2011</td><td>6.9</td></tr></table></div><div class=\"sub-q\">Effects</div><div class=\"pt\">Loss of life and property; landslides and avalanches; fires from damaged power plants and gas lines; floods from broken dams; trauma; disruption of water, sewerage, communication, power and transport; economic and social destabilisation.</div><div class=\"sub-q\">The 2005 earthquake (8 October, 9.20 a.m.)</div><div class=\"pt\">Magnitude 7.6, epicentre near Muzaffarabad; about 40,000 km² devastated; more than 80,000 killed and about one lakh injured; 5,00,000+ families affected; 3.5 million displaced (1.6 million children); 3,100+ schools damaged; about 2,50,000 farm animals died; 7,80,000+ buildings destroyed or damaged; property loss US $4 billion; 3 lakh people unemployed. In J&amp;K, <b>Karnah</b> and <b>Uri</b> tehsils and <b>Poonch</b> district were badly hit.</div><div class=\"sub-q\">Mitigation</div><div class=\"pt\">“Earthquake does not kill people but buildings do.” Earthquake-resistant design; test soil; no building on soft soil without design; keep buildings apart.</div><div class=\"pt\"><b>Building codes</b> of the Bureau of Indian Standards and NDMA; <b>verification</b> of plans by municipality; <b>retrofitting</b> old buildings (especially hospitals and schools); <b>public awareness</b> and mock drills.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Before</th><th>During</th><th>After</th></tr><tr><td>Fix gas and power appliances; heavy objects on low shelves; follow building codes; build on solid ground; retrofit; mock drills</td><td>Stay calm; get under a table away from windows, head covered; stay away from glass; walk (do not run) to open area; outside, avoid walls and poles; in a car, stop in an open place; no elevators</td><td>Check injuries (do not move the seriously injured unless in danger); check for fires and gas leaks — no matches or switches; wear shoes; check sewage lines; avoid open containers; no rumours; call 100/101 only for life-threatening emergencies; help civil defence</td></tr></table></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 2. Landslides</div><div class=\"sol-step\"><div class=\"pt\">Movement of a mass of soil, rock or debris down a slope, caused by heavy rainfall, snowfall or earthquakes — common on the <b>Jammu–Srinagar National Highway</b> in rainy seasons and near excavation.</div><div class=\"pt\">Prone areas: Eastern and Western Ghats, Nilgiris, Vindhyas, Himalayan and north-eastern mountains.</div><div class=\"pt\"><b>Effects:</b> blocked streams, overflowing lakes, disrupted traffic, risk to life and accidents, loss of vegetation, damage to roads and buildings.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Mitigation</th><th>How</th></tr><tr><td>Drainage management</td><td>Strengthen natural drains so water does not infiltrate the slope</td></tr><tr><td>Retaining walls</td><td>Concrete walls prevent slippage from slopes</td></tr><tr><td>Plantation</td><td>Roots bind the soil — the most effective and cheapest method</td></tr><tr><td>Mapping</td><td>Identify risk areas and avoid them for settlement</td></tr><tr><td>Awareness</td><td>Signs and caution boards in risk zones</td></tr></table></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 3. Snow Avalanches</div><div class=\"sol-step\"><div class=\"pt\">A large mass of snow that moves rapidly down a mountain slope, sweeping everything in its path.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Event</th><th>Details (textbook)</th></tr><tr><td>January 1995</td><td>About 200 killed; avalanches buried the Jammu–Srinagar highway; five buses plunged off near Jawahar Tunnel</td></tr><tr><td>19–20 February 2005</td><td>About 250 killed at Waltengoo, Kashmir</td></tr><tr><td>8 February 2008</td><td>About 29 killed and 500 rescued in the Kashmir Valley</td></tr></table></div><div class=\"pt\"><b>Causes:</b> excessive melting of the upper layer lubricating the base; heavy snow load and vibrations (people, animals, thunder, traffic); weakening of layers inside the snow mass.</div><div class=\"pt\">J&amp;K, Himachal Pradesh and Uttarakhand are most affected, especially on glaciated slopes without vegetation.</div><div class=\"pt\"><b>Effects:</b> blocked roads and streams, damaged buildings and power/communication lines, loss of life.</div><div class=\"pt\"><b>Mitigation:</b> shift people from prone areas; engineered sheds, walls, berms and deflectors; stop indiscriminate mining and quarrying; afforestation; modify slopes and remove unstable material.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 4. Floods</div><div class=\"sol-step\"><div class=\"pt\">Temporary inundation of large regions when rivers overflow due to heavy rain, high winds, cyclones, storm surges, tsunami, snowmelt or cloudburst. About <b>12%</b> of India's land is flood-prone.</div><div class=\"pt\"><b>Riverine floods</b> develop slowly (days); <b>flash floods</b> develop in minutes — a rapid, extreme flow of water into a dry area beginning within six hours of the cause (rainfall, dam failure).</div><div class=\"pt\"><b>Effects:</b> drowning; damage to property; contaminated water; water-borne diseases; unhygienic conditions; crop loss and food shortage; damaged topsoil; loss of vegetation; disrupted transport; economic loss; psychological trauma.</div><div class=\"pt\"><b>Mitigation:</b> embankments/flood walls; clean reservoirs and remove encroachments before monsoon; build on higher ground; retention basins and <b>ring bunds</b>; flood zonation mapping; land-use planning; awareness and warnings.</div><div class=\"pt\"><b>During a flood:</b> find a safe place; gather warm clothes, blankets, medicines, torch, food, phone and radio; switch off gas, electricity and water at the mains; move valuables upstairs; never walk or drive through flood water; wait for and follow emergency services; listen to local radio.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 5. Drought and Famine</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Drought</th><th>Famine</th></tr><tr><td>Lack or shortage of water for an unusually long period, due to consistently below-average rainfall</td><td>Widespread scarcity of food caused by crop failure, population imbalance or government policies</td></tr><tr><td>Builds over months or years; no well-defined start or end; small or wide area</td><td>Caused by fall in food availability and/or people's inability to get food</td></tr></table></div><div class=\"pt\"><b>Effects:</b> poor crops and grazing; dust storms; famine; habitat destruction; malnutrition and disease; mass migration; less hydroelectricity; water shortage for industry; more snake bites; social unrest and wars over resources; wildfires.</div><div class=\"pt\"><b>Mitigation:</b> identify risk areas from historical records and set priority zones; dams and check dams; watershed management; drought-resistant crops; soil conservation; less deforestation; awareness; revive traditional systems such as <b>Chappad</b> ponds in the <b>Kandi belt</b> of Jammu; <b>rainwater harvesting</b> (rooftop); dams; desalination; monitoring and early warning; <b>crop insurance</b>.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 6. Cloudburst</div><div class=\"sol-step\"><div class=\"pt\">A disastrous weather event with heavy rainfall over a localised area at a fast rate — about <b>100 mm per hour</b> — sometimes with hail and thunder; occurs in the monsoon in the Himalayas, the north-east and the Western Ghats. It causes flash floods, landslides, mudflows and debris slides; flood mitigation measures apply.</div><div class=\"pt\"><b>Leh, 6 August 2010</b> (around midnight): about <b>250 mm</b> of rain within an hour (the earlier record was 96.2 mm in 24 hours in 1933). Flash floods came down three routes; at least <b>255</b> people died; about <b>9,000</b> people were directly affected; buildings razed, highways to Srinagar and Manali washed away.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 7. Role of the Red Cross Society</div><div class=\"sol-step\"><div class=\"pt\">International humanitarian organisation founded in <b>1863</b> in Geneva, Switzerland; gives immediate relief to victims of calamities, armed conflict and health crises.</div><div class=\"pt\">J&amp;K chapter established in <b>1947</b>; during the <b>2014</b> Kashmir floods it distributed blankets, life jackets and solar lanterns; ran awareness drives during Covid-19.</div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">✦ 8. Key Terms</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Term</th><th>Meaning</th></tr><tr><td>Hazard</td><td>Threat to life, health, property or environment</td></tr><tr><td>Disaster</td><td>Hazard meeting a vulnerable situation, causing great damage</td></tr><tr><td>Mitigation</td><td>Reducing the impact of disasters in advance</td></tr><tr><td>Seismograph</td><td>Instrument recording earthquake vibrations</td></tr><tr><td>Epicentre / Focus</td><td>Surface point above / point where the earthquake starts</td></tr><tr><td>Retrofitting</td><td>Strengthening old buildings to resist earthquakes</td></tr><tr><td>Flash flood</td><td>Rapid flood beginning within six hours of its cause</td></tr><tr><td>Cloudburst</td><td>Very heavy localised rain (~100 mm per hour)</td></tr></table></div><div class=\"exam\"><span class=\"exam-t\">📌 Exam Focus</span><div>• Hazard vs disaster; natural vs man-made</div><div>• Earthquake: zones, Richter scale, 2005 quake, safety rules</div><div>• Landslides and avalanches — causes and mitigation</div><div>• Floods, drought vs famine, cloudburst (Leh 2010)</div><div>• Mitigation examples</div></div></div>\n  </div>\n</div>",
+  "htmlExercises": {
+    "se9-3-ex-obj": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 183, 77, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FFB74D; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FFB74D; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFE0B2; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFE0B2; font-weight: 700; }\n  .hl { color: #FFB74D; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FFB74D; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FFB74D; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(255, 183, 77, 0.10); border: 1.5px dashed #FFB74D; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FFB74D; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 183, 77, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(255, 183, 77, 0.18); border: 1px solid #FFB74D; color: #FFE0B2; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(255, 183, 77, 0.2); color: #FFE0B2; }\n  .q-card .q-text, .q-card .sub-q { color: #FFB74D !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Fill in the blanks:</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">1. Disasters caused by nature are called <b>natural disasters</b>.</div><div class=\"pt\">2. The earthquake zoning map divides India into <b>four</b> seismic zones.</div><div class=\"pt\">3. Jammu and Kashmir falls in seismic zone <b>IV</b> and <b>V</b>.</div><div class=\"pt\">4. A <b>snow avalanche</b> is a large mass of snow that moves rapidly down a mountain slope.</div><div class=\"pt\">5. <b>Drought</b> can be defined as a lack or shortage of water for an unusually long period.</div><div class=\"pt\">6. A <b>famine</b> is a widespread scarcity of food in an area.</div><div class=\"pt\">7. Storing rain water on the roofs of houses is called <b>rooftop rainwater harvesting</b>.</div><div class=\"pt\">8. <b>Cloudburst</b> is a disastrous weather event in which heavy rainfall occurs over a localised area.</div><div class=\"pt\">9. An <b>earthquake</b> is a natural disaster involving sudden shaking of the earth's surface.</div><div class=\"pt\">10. The instrument used to measure an earthquake is a <b>seismograph</b> (magnitude on the Richter scale).</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">One word Answers:</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">1. <b>Earthquake</b> (8 October 2005)</div><div class=\"pt\">2. <b>Landslide</b></div><div class=\"pt\">3. <b>Cloudburst / flash floods</b> <i>(the chapter shows flash flood devastation in Uttarakhand but does not describe the 2013 event)</i></div><div class=\"pt\">4. <b>Cloudburst</b></div><div class=\"pt\">5. <b>Earthquake</b> <i>(the 2013 Bhaderwah earthquake is not described in the chapter)</i></div></div></div>\n  </div>\n</div>",
+    "se9-3-ex-short": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 183, 77, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FFB74D; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FFB74D; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFE0B2; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFE0B2; font-weight: 700; }\n  .hl { color: #FFB74D; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FFB74D; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FFB74D; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(255, 183, 77, 0.10); border: 1.5px dashed #FFB74D; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FFB74D; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 183, 77, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(255, 183, 77, 0.18); border: 1px solid #FFB74D; color: #FFE0B2; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(255, 183, 77, 0.2); color: #FFE0B2; }\n  .q-card .q-text, .q-card .sub-q { color: #FFB74D !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">What is the difference between hazard and disaster?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Hazard</th><th>Disaster</th></tr><tr><td>A situation that poses a threat to life, health, property or environment</td><td>An event that causes significant damage, widespread loss of life or drastic change to the environment</td></tr><tr><td>Only a possibility of harm</td><td>Happens when a hazard hits a vulnerable area and affects normal life</td></tr><tr><td>e.g. an active fault, a steep snowy slope</td><td>e.g. the 2005 earthquake, the 2005 Waltengoo avalanche</td></tr></table></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">What do you understand by a natural disaster? Enlist few.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">An event caused by natural hazards that leads to loss of life and damage to infrastructure and environment.</div><div class=\"pt\">Earthquakes (2005 Muzaffarabad), tsunami (2004 Indian Ocean), snow avalanches (2005 Waltengoo), cloudbursts (2010 Leh), landslides, floods, droughts.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">Write down some events of earthquakes in India.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Area</th><th>Year</th><th>Magnitude</th></tr><tr><td>Rann of Kutch</td><td>1819</td><td>8</td></tr><tr><td>Assam</td><td>1897</td><td>8.7</td></tr><tr><td>Kangra</td><td>1905</td><td>8</td></tr><tr><td>Arunachal Pradesh</td><td>1950</td><td>8.5</td></tr><tr><td>Uttarkashi</td><td>1991</td><td>7</td></tr><tr><td>Kutch</td><td>2001</td><td>7.7</td></tr><tr><td>Sikkim</td><td>2011</td><td>6.9</td></tr><tr><td>Uri / Muzaffarabad (J&amp;K)</td><td>2005</td><td>7.6</td></tr></table></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">What is the difference between drought and famine?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Drought</th><th>Famine</th></tr><tr><td>Lack or shortage of water for an unusually long period</td><td>Widespread scarcity of food</td></tr><tr><td>Caused by below-average rainfall</td><td>Caused by crop failure (often from drought), population imbalance or government policies</td></tr><tr><td>A water shortage</td><td>A food shortage — drought can lead to famine</td></tr></table></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5.</div>\n    <div class=\"q-text\">Illustrate briefly how an earthquake occurs.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Energy builds up in the rocks of the earth's crust.</div><div class=\"pt\">Two parts of the rock mass suddenly move against each other along a <b>fault</b>.</div><div class=\"pt\">Energy is released at the <b>focus</b> as seismic waves.</div><div class=\"pt\">The waves reach the <b>epicentre</b> on the surface directly above and the ground shakes; a seismograph records them.</div></div></div>\n  </div>\n</div>",
+    "se9-3-ex-long": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 183, 77, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FFB74D; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FFB74D; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFE0B2; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFE0B2; font-weight: 700; }\n  .hl { color: #FFB74D; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FFB74D; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FFB74D; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(255, 183, 77, 0.10); border: 1.5px dashed #FFB74D; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FFB74D; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 183, 77, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(255, 183, 77, 0.18); border: 1px solid #FFB74D; color: #FFE0B2; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(255, 183, 77, 0.2); color: #FFE0B2; }\n  .q-card .q-text, .q-card .sub-q { color: #FFB74D !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">What do we understand by Mitigation? Give some examples.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\"><b>Mitigation</b> is an effort to reduce loss of life and property by reducing the impact of disasters — taking preventive action before the next disaster.</div><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Disaster</th><th>Mitigation examples</th></tr><tr><td>Earthquake</td><td>Building codes (BIS, NDMA), retrofitting, verification of building plans, mock drills</td></tr><tr><td>Landslide</td><td>Drainage management, retaining walls, plantation, mapping, caution boards</td></tr><tr><td>Avalanche</td><td>Shifting people, sheds and deflectors, afforestation, stopping quarrying</td></tr><tr><td>Flood</td><td>Embankments, ring bunds, building on high ground, flood zonation, warnings</td></tr><tr><td>Drought</td><td>Rainwater harvesting, check dams, Chappad ponds, drought-resistant crops, crop insurance</td></tr></table></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q2.</div>\n    <div class=\"q-text\">List some of the major natural disasters that are likely to occur in hilly regions. Elaborate any one of them.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Earthquakes, landslides, snow avalanches, cloudbursts and flash floods.</div><div class=\"sec\">Landslides</div><div class=\"pt\"><b>Meaning:</b> movement of a mass of soil, rock or debris down a slope, caused by heavy rainfall, snowfall or earthquakes — often on the Jammu–Srinagar highway.</div><div class=\"pt\"><b>Effects:</b> blocked streams and roads, overflowing lakes, risk to life and accidents, loss of vegetation, damage to infrastructure.</div><div class=\"pt\"><b>Mitigation:</b> drainage management, retaining walls, plantation (most effective and cheapest), mapping of risk areas, awareness boards.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q3.</div>\n    <div class=\"q-text\">What is a drought? Describe how it can be prevented?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"rev\">A <b>drought</b> is a lack or shortage of water for an unusually long period, when a region consistently receives below-average rainfall; it builds over months or years.</div><div class=\"pt\">Identify risk areas from historical records and set priority zones.</div><div class=\"pt\">Construct dams and check dams; watershed management.</div><div class=\"pt\">Grow drought-resistant crops; soil conservation; reduce deforestation.</div><div class=\"pt\">Revive traditional structures — e.g. desilting <b>Chappad</b> ponds in the Kandi belt of Jammu.</div><div class=\"pt\"><b>Rainwater harvesting</b>, especially rooftop harvesting; recharge of ground water.</div><div class=\"pt\">Desalination; continuous monitoring and early warning; awareness; crop insurance for farmers.</div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q4.</div>\n    <div class=\"q-text\">What are the relief steps that need to be taken in the aftermath of landslides or snow avalanches?</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Rescue trapped people quickly and give first aid; take the injured to hospital.</div><div class=\"pt\">Shift affected families to safe shelters with food, warm clothes and blankets (as the Red Cross did in the 2014 floods).</div><div class=\"pt\">Clear roads and restore power, water and communication.</div><div class=\"pt\">Keep people away from unstable slopes; watch for further slides.</div><div class=\"pt\">Do not spread rumours; cooperate with civil defence, police and rescue teams.</div><div class=\"pt\">Later: retaining walls, drainage, plantation and avalanche structures to reduce future risk.</div><div class=\"rev\"><i>The chapter describes mitigation for these disasters; these relief steps follow its general advice for the aftermath of disasters.</i></div></div></div>\n  </div>\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q5.</div>\n    <div class=\"q-text\">Describe some of the safety measures that should be adopted during an earthquake. <i>(numbered 6 in the book)</i></div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"pt\">Remain calm and reassure others.</div><div class=\"pt\">Watch for falling plaster, bricks, light fixtures and tall shelves; stay away from glass, windows, mirrors and chimneys.</div><div class=\"pt\">Get under a strong table, desk or bed in a corner, head covered with arms.</div><div class=\"pt\">Do not run out; walk calmly to an open area. Do not use elevators — use stairs.</div><div class=\"pt\">Outside, avoid high walls, power poles and falling objects; do not run through streets.</div><div class=\"pt\">In a vehicle, stop in a safe, open place.</div></div></div>\n  </div>\n</div>",
+    "se9-3-ex-proj": "<style>\n  .q-card { background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 183, 77, 0.35); border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); }\n  .q-title { font-size: 17.5px; font-weight: 700; color: #FFB74D; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }\n  .q-text { font-size: 15.5px; color: #FFFFFF; line-height: 1.9; margin-bottom: 12px; font-weight: 500; }\n  .sub-q { font-size: 15px; font-weight: 600; margin: 12px 0 4px; line-height: 1.8; }\n  .sol-box { background: rgba(0, 0, 0, 0.32); border-left: 3.5px solid #FFB74D; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }\n  .sol-title { font-size: 14.5px; font-weight: 700; color: #FFE0B2; margin-bottom: 8px; }\n  .sol-step { font-size: 15px; color: #E2E8F0; line-height: 1.9; }\n  .sol-step div { margin-top: 5px; margin-bottom: 5px; }\n  .lbl { color: #FFE0B2; font-weight: 700; }\n  .hl { color: #FFB74D; font-weight: 700; }\n  .rev { text-align: justify; }\n  .pt { text-align: left !important; padding-left: 16px; text-indent: -16px; }\n  .pt::before { content: \"•\"; color: #FFB74D; font-weight: 700; display: inline-block; width: 16px; text-indent: 0; }\n  .sec { color: #FFB74D; font-weight: 700; font-size: 15.5px; margin-top: 14px !important; text-align: left !important; }\n  .ans-box { background: rgba(76, 175, 80, 0.15); border: 1.5px solid #4CAF50; border-radius: 8px; padding: 8px 14px; margin-top: 12px; line-height: 1.8; text-align: left; }\n  .ans-label { color: #A5D6A7; font-weight: 700; font-size: 14px; }\n  .ans-val { color: #FFFFFF; font-weight: 700; font-size: 15px; }\n  .exam { background: rgba(255, 183, 77, 0.10); border: 1.5px dashed #FFB74D; border-radius: 8px; padding: 10px 12px; margin: 12px 0 4px; color: #FFFFFF; text-align: left; line-height: 1.8; }\n  .exam-t { color: #FFB74D; font-weight: 700; font-size: 14.5px; display: block; margin-bottom: 2px; }\n  .diagram-card { background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 183, 77, 0.4); border-radius: 10px; padding: 10px; margin: 14px 0; text-align: center; }\n  .diagram-wrapper { display: block; background: #1E1E2E; border-radius: 8px; padding: 4px; margin: 0 auto; width: 100%; box-sizing: border-box; overflow: hidden; }\n  .diagram-wrapper svg { display: block; width: 100%; height: auto; max-width: 100%; margin: 0 auto; }\n  .diagram-caption { color: #CBD5E1; font-size: 13.5px; text-align: center; margin-top: 8px; font-weight: 500; }\n  .badge { display: inline-block; background: rgba(255, 183, 77, 0.18); border: 1px solid #FFB74D; color: #FFE0B2; border-radius: 6px; padding: 0 8px; font-size: 12.5px; font-weight: 700; }\n  .tbl-wrap { width: 100%; overflow-x: auto; margin: 8px 0; }\n  .dt { width: 100%; border-collapse: collapse; font-size: 13px; }\n  .dt th, .dt td { border: 1px solid rgba(255, 255, 255, 0.2); padding: 6px 5px; color: #FFFFFF; line-height: 1.45; text-align: left; vertical-align: top; }\n  .dt th { background: rgba(255, 183, 77, 0.2); color: #FFE0B2; }\n  .q-card .q-text, .q-card .sub-q { color: #FFB74D !important; text-align: justify !important; }\n  .q-card .sol-step > div.rev { text-align: justify !important; }\n  .q-card .sol-step > div.pt, .q-card .sol-step > div.sec { text-align: left !important; }\n</style>\n<div style=\"padding: 4px 2px;\">\n  <div class=\"q-card\">\n    <div class=\"q-title\">Q1.</div>\n    <div class=\"q-text\">Conduct a small social survey in your locality/street/village/town using the Social Survey Form. Based on the data, assess how prepared the people are against different disasters, and write some suggestions to minimise the chances of any disaster.</div>\n    <div class=\"sol-box\"><div class=\"sol-title\">Answer:</div><div class=\"sol-step\"><div class=\"tbl-wrap\"><table class=\"dt\"><tr><th>Question</th><th>Disaster risk</th><th>Suggestion if risky</th></tr><tr><td>1. Do you live near the foot of a hill?</td><td>Landslide</td><td>Retaining walls, drainage, plantation; avoid building on unstable slopes</td></tr><tr><td>2. Is your house in a congested/overpopulated area?</td><td>Earthquake</td><td>Keep space between buildings; know open areas; mock drills</td></tr><tr><td>3. Have you adopted rainwater harvesting, canals, bunds?</td><td>Drought</td><td>Rooftop harvesting; desilt Chappad ponds; check dams</td></tr><tr><td>4. Have you seen retaining walls along hill roads?</td><td>Landslide / avalanche</td><td>Ask authorities for walls, sheds and caution boards</td></tr><tr><td>5. Is your locality low-lying or flood-prone?</td><td>Flood</td><td>Build on raised ground; ring bunds; keep an emergency kit; follow warnings</td></tr><tr><td>6. Did you follow building codes while constructing your house?</td><td>Earthquake</td><td>Follow BIS/NDMA codes; retrofit old buildings</td></tr></table></div><div class=\"rev\"><b>Assessment:</b> count “Yes” and “No” answers. Many “Yes” answers to Q1, Q2, Q5 and many “No” answers to Q3, Q4, Q6 show high risk and low preparedness. Present the results as a simple bar chart and share your suggestions in class.</div></div></div>\n  </div>\n</div>"
   },
-  exercises: [
+  "introduction": "This chapter examines the concept of natural hazards and disasters, detailing their types, causes, and impacts. It covers critical events like earthquakes, landslides, snow avalanches, cloudbursts, and droughts, outlines seismic zoning in India (with special reference to Jammu & Kashmir), and discusses essential mitigation and safety measures.",
+  "definitions": [],
+  "keyPoints": [],
+  "formulas": [],
+  "crux": [],
+  "mcqs": [
     {
-      id: "ex-sst-qa",
-      name: "Q & A",
-      questions: [],
+      "id": "sst-eco-c9-3-mcq-1",
+      "question": "<div style='text-align: justify;'>The earthquake of 8 October 2005 had a magnitude of —</div>",
+      "options": [
+        "A):   6.0",
+        "B):   7.6",
+        "C):   8.7",
+        "D):   9.3"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Its epicentre was near Muzaffarabad.</div>"
     },
+    {
+      "id": "sst-eco-c9-3-mcq-2",
+      "question": "<div style='text-align: justify;'>Which of these is a man-made disaster?</div>",
+      "options": [
+        "A):   Waltengoo avalanche, 2005",
+        "B):   Leh cloudburst, 2010",
+        "C):   Bhopal Gas tragedy, 1984",
+        "D):   Indian Ocean Tsunami, 2004"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>It was caused by human activity.</div>"
+    },
+    {
+      "id": "sst-eco-c9-3-mcq-3",
+      "question": "<div style='text-align: justify;'>A disaster occurs when —</div>",
+      "options": [
+        "A):   hazards meet vulnerable situations",
+        "B):   there is no hazard",
+        "C):   mitigation is done",
+        "D):   the weather is normal"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>A hazard alone is only a threat.</div>"
+    },
+    {
+      "id": "sst-eco-c9-3-mcq-4",
+      "question": "<div style='text-align: justify;'>India is divided into how many seismic zones?</div>",
+      "options": [
+        "A):   Two",
+        "B):   Three",
+        "C):   Five",
+        "D):   Four (II, III, IV, V)"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Zone V is the most severe.</div>"
+    },
+    {
+      "id": "sst-eco-c9-3-mcq-5",
+      "question": "<div style='text-align: justify;'>Jammu and Kashmir lies in seismic zones —</div>",
+      "options": [
+        "A):   II and III",
+        "B):   IV and V",
+        "C):   III only",
+        "D):   II only"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>It is prone to severe and very severe earthquakes.</div>"
+    },
+    {
+      "id": "sst-eco-c9-3-mcq-6",
+      "question": "<div style='text-align: justify;'>The Richter scale was developed by Charles Richter in —</div>",
+      "options": [
+        "A):   1905",
+        "B):   1950",
+        "C):   1935",
+        "D):   2005"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>It measures earthquake magnitude.</div>"
+    },
+    {
+      "id": "sst-eco-c9-3-mcq-7",
+      "question": "<div style='text-align: justify;'>An increase of one on the Richter scale means roughly how much more energy?</div>",
+      "options": [
+        "A):   30 times",
+        "B):   2 times",
+        "C):   10 times",
+        "D):   100 times"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Ground motion increases 10 times.</div>"
+    },
+    {
+      "id": "sst-eco-c9-3-mcq-8",
+      "question": "<div style='text-align: justify;'>The point on the earth's surface directly above the focus is the —</div>",
+      "options": [
+        "A):   fault",
+        "B):   seismograph",
+        "C):   liquefaction",
+        "D):   epicentre"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>The focus is where the earthquake originates.</div>"
+    },
+    {
+      "id": "sst-eco-c9-3-mcq-9",
+      "question": "<div style='text-align: justify;'>Strengthening old buildings to make them earthquake resistant is called —</div>",
+      "options": [
+        "A):   liquefaction",
+        "B):   retrofitting",
+        "C):   zonation",
+        "D):   desalination"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>Especially for hospitals and schools.</div>"
+    },
+    {
+      "id": "sst-eco-c9-3-mcq-10",
+      "question": "<div style='text-align: justify;'>The most effective and cheapest way of landslide mitigation is —</div>",
+      "options": [
+        "A):   retaining walls",
+        "B):   mapping",
+        "C):   plantation",
+        "D):   drainage"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Roots bind the topsoil.</div>"
+    },
+    {
+      "id": "sst-eco-c9-3-mcq-11",
+      "question": "<div style='text-align: justify;'>About 250 people were killed in avalanches at Waltengoo in —</div>",
+      "options": [
+        "A):   February 2005",
+        "B):   January 1995",
+        "C):   February 2008",
+        "D):   October 2005"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>After heavy snowfall in Kashmir.</div>"
+    },
+    {
+      "id": "sst-eco-c9-3-mcq-12",
+      "question": "<div style='text-align: justify;'>About what share of India's land area is prone to floods?</div>",
+      "options": [
+        "A):   50 per cent",
+        "B):   2 per cent",
+        "C):   30 per cent",
+        "D):   12 per cent"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>Floods are among the most common hazards.</div>"
+    },
+    {
+      "id": "sst-eco-c9-3-mcq-13",
+      "question": "<div style='text-align: justify;'>A flash flood begins within how many hours of its cause?</div>",
+      "options": [
+        "A):   One day",
+        "B):   Six hours",
+        "C):   One week",
+        "D):   Twelve hours"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>It can develop in a few minutes.</div>"
+    },
+    {
+      "id": "sst-eco-c9-3-mcq-14",
+      "question": "<div style='text-align: justify;'>A raised ring built around an area to protect it from floods is called a —</div>",
+      "options": [
+        "A):   retaining wall",
+        "B):   check dam",
+        "C):   ring bund",
+        "D):   deflector"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Retention basins also store water.</div>"
+    },
+    {
+      "id": "sst-eco-c9-3-mcq-15",
+      "question": "<div style='text-align: justify;'>Artificial ponds called Chappad are built in the —</div>",
+      "options": [
+        "A):   Kandi belt of Jammu",
+        "B):   Kashmir Valley",
+        "C):   Ladakh",
+        "D):   Thar desert"
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>They help fight drought.</div>"
+    },
+    {
+      "id": "sst-eco-c9-3-mcq-16",
+      "question": "<div style='text-align: justify;'>The rainfall rate in a cloudburst may be about —</div>",
+      "options": [
+        "A):   10 mm per day",
+        "B):   1 mm per hour",
+        "C):   1000 mm per hour",
+        "D):   100 mm per hour"
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>It falls over a localised area.</div>"
+    },
+    {
+      "id": "sst-eco-c9-3-mcq-17",
+      "question": "<div style='text-align: justify;'>In the Leh cloudburst of 6 August 2010, at least how many people died?</div>",
+      "options": [
+        "A):   25",
+        "B):   255",
+        "C):   2,550",
+        "D):   9,000"
+      ],
+      "correctAnswer": "B",
+      "explanation": "<div style='text-align: justify;'>About 9,000 people were directly affected.</div>"
+    },
+    {
+      "id": "sst-eco-c9-3-mcq-18",
+      "question": "<div style='text-align: justify;'>The Red Cross Society was founded in 1863 in —</div>",
+      "options": [
+        "A):   London",
+        "B):   New Delhi",
+        "C):   Geneva",
+        "D):   Paris"
+      ],
+      "correctAnswer": "C",
+      "explanation": "<div style='text-align: justify;'>Its J&K chapter was set up in 1947.</div>"
+    },
+    {
+      "id": "sst-eco-c9-3-mcq-19",
+      "question": "<div style='text-align: justify;'>Assertion (A): “Earthquake does not kill people but buildings do.” Reason (R): Most deaths in earthquakes are caused by collapse of poorly built structures.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "A",
+      "explanation": "<div style='text-align: justify;'>Hence earthquake-resistant design and building codes.</div>"
+    },
+    {
+      "id": "sst-eco-c9-3-mcq-20",
+      "question": "<div style='text-align: justify;'>Assertion (A): A drought has a well-defined start and end. Reason (R): Drought builds up over a period of months or years.</div>",
+      "options": [
+        "A):   Both A and R are true and R is the correct explanation of A.",
+        "B):   Both A and R are true but R is not the correct explanation of A.",
+        "C):   A is true but R is false.",
+        "D):   A is false but R is true."
+      ],
+      "correctAnswer": "D",
+      "explanation": "<div style='text-align: justify;'>It has no well-defined start or end; R is true.</div>"
+    }
   ],
+  "summary": [],
+  "exercises": [
+    {
+      "id": "se9-3-ex-obj",
+      "name": "Blanks & One Word",
+      "questions": []
+    },
+    {
+      "id": "se9-3-ex-short",
+      "name": "Short Answer",
+      "questions": []
+    },
+    {
+      "id": "se9-3-ex-long",
+      "name": "Long Answer",
+      "questions": []
+    },
+    {
+      "id": "se9-3-ex-proj",
+      "name": "Social Survey",
+      "questions": []
+    }
+  ],
+  "examples": []
 };
