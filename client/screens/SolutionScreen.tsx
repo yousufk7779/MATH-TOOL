@@ -1289,7 +1289,8 @@ function SolutionScreen() {
           // Up to 4 tabs: one full-width row, tabs share the width equally (no scrolling).
           // 5 or more tabs: horizontal scroll without a scrollbar.
           const tabCount = visibleSubSections.length;
-          const useRow = tabCount <= 4;
+          // Urdu chapters follow the book's own sections, so they scroll from 4 tabs (Nastaliq labels are wide)
+          const useRow = isUrdu ? tabCount <= 3 : tabCount <= 4;
           const tabs = visibleSubSections.map((sub: string) => {
                 let title =
                   sub === "examples"
@@ -1350,8 +1351,18 @@ function SolutionScreen() {
                   nestedScrollEnabled
                   style={styles.subTabScroll}
                   contentContainerStyle={styles.subTabContainer}
+                  onContentSizeChange={
+                    isUrdu
+                      ? () => {
+                          // right-to-left: the first tab sits at the right end, so start scrolled to it
+                          const l = subTabLayoutsRef.current[activeSubSection];
+                          if (l) subTabScrollRef.current?.scrollTo({ x: Math.max(0, l.x - (screenWidth - l.width) / 2), animated: false });
+                          else subTabScrollRef.current?.scrollToEnd({ animated: false });
+                        }
+                      : undefined
+                  }
                 >
-                  {tabs}
+                  {isUrdu ? [...tabs].reverse() : tabs}
                 </ScrollView>
               )}
             </View>
