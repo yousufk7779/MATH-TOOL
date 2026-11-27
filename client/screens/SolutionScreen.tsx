@@ -450,7 +450,8 @@ function SolutionScreen() {
     fontFamily: isUrdu ? URDU_FONT : "NotoSans_400Regular",
     color: "#fff",
     ...(isEnglishChapter || isUrdu ? { includeFontPadding: false, textAlignVertical: "center" as const } : {}),
-    ...(isUrdu ? { fontSize: 13, lineHeight: 26 } : {}),
+    // Nastaliq letters such as گ rise well above the line, so Urdu labels get extra line height (they were clipped at 26)
+    ...(isUrdu ? { fontSize: 13, lineHeight: 32 } : {}),
   };
 
   const scaledBody = {
