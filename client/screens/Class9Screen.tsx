@@ -73,16 +73,6 @@ function Class9Screen() {
 
             <View style={styles.buttonWrapper}>
               <ColorButton
-                testID="button-urdu"
-                title="URDU"
-                icon="📚"
-                colors={["#43CEA2", "#185A9D"]}
-                onPress={() => navigation.navigate("Class9Urdu")}
-              />
-            </View>
-
-            <View style={styles.buttonWrapper}>
-              <ColorButton
                 testID="button-math"
                 title="MATHEMATICS"
                 icon="📘"
@@ -93,6 +83,16 @@ function Class9Screen() {
                     topic: "Mathematics",
                   })
                 }
+              />
+            </View>
+
+            <View style={styles.buttonWrapper}>
+              <ColorButton
+                testID="button-urdu"
+                title="URDU"
+                icon="📚"
+                colors={["#43CEA2", "#185A9D"]}
+                onPress={() => navigation.navigate("Class9Urdu")}
               />
             </View>
 

@@ -20,7 +20,7 @@ interface C9UrduEntry {
 
 export const C9_URDU: C9UrduEntry[] = [
   // حصۂ نثر — مضامین، ڈراما، افسانہ، ناول، خطوط، خاکہ
-  { id: "c9-urdu-p1", number: 1, name: "اِنسانِ کامل ﷺ", category: "Prose", term: 1, gradient: ["#A770EF", "#6E48AA"] },
+  { id: "c9-urdu-p1", number: 1, name: "اِنسانِ کامل ﷺ", category: "Prose", term: 1, gradient: ["#2ECC8F", "#0B6E4F"] },
   { id: "c9-urdu-p2", number: 2, name: "انفارمیشن ٹیکنالوجی", category: "Prose", term: 1, gradient: ["#00C6FF", "#0072FF"] },
   { id: "c9-urdu-p3", number: 3, name: "اُردو کہاں پیدا ہوئی؟", category: "Prose", term: 1, gradient: ["#F39C12", "#D35400"] },
   { id: "c9-urdu-p4", number: 4, name: "دیوانِ مرحوم کی یاد میں", category: "Prose", term: 1, gradient: ["#EC008C", "#FC6767"] },
