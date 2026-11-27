@@ -177,14 +177,14 @@ const styles = StyleSheet.create({
   nameContainerCentered: { justifyContent: "center" },
   urduName: {
     fontFamily: URDU_FONT,
-    fontSize: 16,
-    lineHeight: 32,
+    fontSize: 15,
+    lineHeight: 34,
     textTransform: "none",
     textAlign: "right",
     writingDirection: "rtl",
   },
   // Titles with ﷺ: the ligature is very tall and wide in Nastaliq, so it is drawn smaller and the line given more room
-  urduNameHonorific: { fontSize: 15, lineHeight: 40 },
+  urduNameHonorific: { fontSize: 14, lineHeight: 42 },
   urduHonorific: { fontFamily: URDU_FONT, fontSize: 11, color: "#fff" },
   urduRow: { flexDirection: "row-reverse" },
   urduNumber: { marginRight: 0, marginLeft: Spacing.md },

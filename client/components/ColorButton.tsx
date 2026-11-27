@@ -161,8 +161,8 @@ const styles = StyleSheet.create({
   labelCentered: { includeFontPadding: false, textAlignVertical: "center" },
   urduLabel: {
     fontFamily: URDU_FONT_BOLD,
-    fontSize: 18,
-    lineHeight: 34,
+    fontSize: 17,
+    lineHeight: 36,
     textTransform: "none",
     writingDirection: "rtl",
     includeFontPadding: false,
