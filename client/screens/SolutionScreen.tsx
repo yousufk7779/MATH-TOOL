@@ -8,11 +8,21 @@ import {
   useWindowDimensions,
   Modal,
   Animated,
+  ActivityIndicator,
 } from "react-native";
 import { useRoute, RouteProp, useFocusEffect } from "@react-navigation/native";
 import { Feather } from "@expo/vector-icons";
 import RenderHtml, { defaultSystemFonts } from "react-native-render-html";
 import { WebView } from "react-native-webview";
+import {
+  URDU_FONT,
+  URDU_FONT_BOLD,
+  URDU_OPTION_LETTERS,
+  getUrduFontUris,
+  isUrduChapter,
+  toUrduDigits,
+  useUrduFonts,
+} from "@/utils/urduFont";
 import { LinearGradient } from "expo-linear-gradient";
 
 import { ScreenWrapper } from "@/components/ScreenWrapper";
@@ -60,39 +70,55 @@ const HtmlText = memo(
       !cid.startsWith("sst-") &&
       !cid.startsWith("eng-");
 
+    // Urdu chapters: Nastaliq font, right-to-left, and taller lines (Nastaliq needs about 2× the font size).
+    const isUrdu = isUrduChapter(cid);
+    const flat = StyleSheet.flatten(style) || {};
+    const urduSize = (flat as any).fontSize || 16;
+    const align = isUrdu ? "right" : isJustified ? "justify" : "left";
+
     const baseStyle = {
       ...Typography.body,
       lineHeight: isJustified ? 26 : 24, // 1.6x line-height for science/math
       color: JiguuColors.textPrimary,
       fontFamily: "NotoSans_400Regular",
       textAlign: isJustified ? ("justify" as const) : ("left" as const),
-      ...StyleSheet.flatten(style),
+      ...flat,
+      ...(isUrdu
+        ? {
+            fontFamily: URDU_FONT,
+            textAlign: "right" as const,
+            writingDirection: "rtl" as const,
+            lineHeight: Math.round(urduSize * 2.1),
+          }
+        : {}),
     };
 
-    const systemFonts = [...defaultSystemFonts, "NotoSans_400Regular"];
+    const systemFonts = [...defaultSystemFonts, "NotoSans_400Regular", URDU_FONT, URDU_FONT_BOLD];
+    const boldFont = isUrdu ? URDU_FONT_BOLD : "NotoSans_700Bold";
+    const textFont = isUrdu ? URDU_FONT : "NotoSans_400Regular";
 
     const tagsStyles: any = {
-      b: { fontFamily: "NotoSans_700Bold" },
-      strong: { fontFamily: "NotoSans_700Bold" },
+      b: { fontFamily: boldFont },
+      strong: { fontFamily: boldFont },
       p: {
-        textAlign: isJustified ? "justify" : "left",
+        textAlign: align,
         marginBottom: Spacing.sm,
       },
       div: {
-        textAlign: isJustified ? "justify" : "left",
+        textAlign: align,
         maxWidth: width - 32,
       },
-      li: { textAlign: isJustified ? "justify" : "left" },
+      li: { textAlign: align },
       span: {
-        fontFamily: "NotoSans_400Regular",
-        textAlign: isJustified ? "justify" : "left",
+        fontFamily: textFont,
+        textAlign: align,
       },
       sup: { fontSize: 12, lineHeight: 16 },
       sub: { fontSize: 12, lineHeight: 16 },
       View: { flexDirection: "column" },
       Text: {
         color: JiguuColors.textPrimary,
-        fontFamily: "NotoSans_400Regular",
+        fontFamily: textFont,
       },
       webview: { flex: 1, height: 250, marginVertical: 10 },
     };
@@ -405,14 +431,26 @@ function SolutionScreen() {
     // "Reference / Q & A / MCQs" tabs, MCQs tab only when MCQs exist, options kept in order.
     chapterId.startsWith("c10-eng-") ||
     // Class 9 English replicates Class 10 English exactly
-    chapterId.startsWith("c9-eng-");
+    chapterId.startsWith("c9-eng-") ||
+    // Urdu follows the same Reference / Q & A / MCQs layout (options kept in order)
+    isUrduChapter(chapterId);
 
   const isEnglishChapter = /^c(9|10|11|12)-eng-/.test(chapterId);
-  // English chapters: strip Android font padding so tab labels sit exactly in the vertical centre
+  // Urdu chapters: Nastaliq font (loaded on demand), right-to-left labels
+  const isUrdu = isUrduChapter(chapterId);
+  const urduReady = useUrduFonts(isUrdu);
+  const urduLabelStyle = {
+    fontFamily: URDU_FONT,
+    writingDirection: "rtl" as const,
+    textAlign: "right" as const,
+    lineHeight: 30,
+  };
+  // English and Urdu chapters: strip Android font padding so tab labels sit exactly in the vertical centre
   const hwTitleStyle = {
-    fontFamily: "NotoSans_400Regular",
+    fontFamily: isUrdu ? URDU_FONT : "NotoSans_400Regular",
     color: "#fff",
-    ...(isEnglishChapter ? { includeFontPadding: false, textAlignVertical: "center" as const } : {}),
+    ...(isEnglishChapter || isUrdu ? { includeFontPadding: false, textAlignVertical: "center" as const } : {}),
+    ...(isUrdu ? { fontSize: 13, lineHeight: 26 } : {}),
   };
 
   const scaledBody = {
@@ -901,7 +939,7 @@ function SolutionScreen() {
                     <View style={{ marginBottom: Spacing.md }}>
                       <HtmlText
                         chapterId={chapterId}
-                        html={`Q${idx + 1}. ${mcq.question}`}
+                        html={isUrdu ? `سوال ${toUrduDigits(idx + 1)}: ${mcq.question}` : `Q${idx + 1}. ${mcq.question}`}
                         style={[
                           scaledMcqQuestionTitle,
                           { color: accentColor },
@@ -998,7 +1036,7 @@ function SolutionScreen() {
                             style={{
                               padding: isTallMathChapter ? 14 : Spacing.sm,
                               minHeight: isTallMathChapter ? 62 : undefined,
-                              flexDirection: "row",
+                              flexDirection: isUrdu ? "row-reverse" : "row",
                               alignItems: "center",
                               justifyContent: "space-between",
                               borderWidth: 1.5,
@@ -1008,8 +1046,9 @@ function SolutionScreen() {
                               marginBottom: Spacing.xs,
                             }}
                           >
-                            <View style={{ flex: 1, paddingRight: 8 }}>
+                            <View style={isUrdu ? { flex: 1, paddingLeft: 8 } : { flex: 1, paddingRight: 8 }}>
                               <HtmlText
+                                chapterId={chapterId}
                                 html={opt}
                                 style={[
                                   scaledMcqOptionText,
@@ -1058,7 +1097,9 @@ function SolutionScreen() {
                             correctIdx < mcq.options.length
                           ) {
                             correctOptionText = mcq.options[correctIdx];
-                            correctLetter = `${String.fromCharCode(65 + correctIdx)})`;
+                            correctLetter = isUrdu
+                              ? `${URDU_OPTION_LETTERS[correctIdx]})`
+                              : `${String.fromCharCode(65 + correctIdx)})`;
                           }
                         }
                       } else {
@@ -1074,32 +1115,37 @@ function SolutionScreen() {
                             marginTop: Spacing.md,
                             padding: Spacing.md,
                             backgroundColor: "rgba(0, 0, 0, 0.35)",
-                            borderLeftWidth: 4,
-                            borderLeftColor: accentColor,
+                            ...(isUrdu
+                              ? { borderRightWidth: 4, borderRightColor: accentColor }
+                              : { borderLeftWidth: 4, borderLeftColor: accentColor }),
                             borderRadius: BorderRadius.sm,
                           }}
                         >
                           <ThemedText
                             style={{
                               color: accentColor,
-                              fontFamily: "NotoSans_700Bold",
+                              fontFamily: isUrdu ? URDU_FONT_BOLD : "NotoSans_700Bold",
                               fontSize: 15,
                               marginBottom: 6,
+                              ...(isUrdu ? urduLabelStyle : {}),
                             }}
                           >
-                            Correct Answer is {correctLetter.endsWith(")") ? correctLetter : `${correctLetter})`}
+                            {isUrdu
+                              ? `درست جواب: ${correctLetter}`
+                              : `Correct Answer is ${correctLetter.endsWith(")") ? correctLetter : `${correctLetter})`}`}
                           </ThemedText>
                           {mcq.explanation ? (
                             <View style={{ marginTop: 2 }}>
                               <ThemedText
                                 style={{
                                   color: "#FFFFFF",
-                                  fontFamily: "NotoSans_700Bold",
+                                  fontFamily: isUrdu ? URDU_FONT_BOLD : "NotoSans_700Bold",
                                   fontSize: 14,
                                   marginBottom: 3,
+                                  ...(isUrdu ? urduLabelStyle : {}),
                                 }}
                               >
-                                Explanation:
+                                {isUrdu ? "وضاحت:" : "Explanation:"}
                               </ThemedText>
                               <HtmlText
                                 chapterId={chapterId}
@@ -1144,9 +1190,13 @@ function SolutionScreen() {
 
   let tab1Title = "Overview";
   let tab2Title = "Q & A";
-  const tab3Title = "MCQs";
+  let tab3Title = "MCQs";
 
-  if (chapterId.startsWith("c12-math-") || chapterId.startsWith("c11-math-") || chapterId.includes("-math-") || chapterId.startsWith("math-")) {
+  if (isUrdu) {
+    tab1Title = "حوالہ";
+    tab2Title = "سوال و جواب";
+    tab3Title = "معروضی سوالات";
+  } else if (chapterId.startsWith("c12-math-") || chapterId.startsWith("c11-math-") || chapterId.includes("-math-") || chapterId.startsWith("math-")) {
     tab1Title = "Overview";
     tab2Title = "Q & A";
   } else if (isSeniorClass) {
@@ -1169,6 +1219,17 @@ function SolutionScreen() {
   }
 
   const homeRoute = getHomeRoute(className, chapterId);
+
+  // Urdu: wait (first time only, a moment) for the Nastaliq font, so text never flashes in the wrong font
+  if (isUrdu && !urduReady) {
+    return (
+      <ScreenWrapper showBackButton homeRoute={homeRoute}>
+        <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+          <ActivityIndicator size="large" color={accentColor} />
+        </View>
+      </ScreenWrapper>
+    );
+  }
 
   return (
     <ScreenWrapper
@@ -1650,6 +1711,32 @@ const MathWebView = memo(
   ({ chapterData, activeSection, activeSubSection, onScrollTop }: any) => {
     const [height, setHeight] = useState(500);
 
+    // Urdu pages: point the page at the bundled Nastaliq font files (loaded once, then cached)
+    const isUrduPage = isUrduChapter(chapterData?.id);
+    const [urduFonts, setUrduFonts] = useState<{ regular?: string; bold?: string } | null>(null);
+    useEffect(() => {
+      if (!isUrduPage) return;
+      let alive = true;
+      getUrduFontUris().then((u) => alive && setUrduFonts(u));
+      return () => {
+        alive = false;
+      };
+    }, [isUrduPage]);
+    const urduCss = isUrduPage
+      ? `
+          ${urduFonts?.regular ? `@font-face { font-family: 'UrduNastaliq'; src: url('${urduFonts.regular}') format('truetype'); font-weight: 400; font-style: normal; }` : ""}
+          ${urduFonts?.bold ? `@font-face { font-family: 'UrduNastaliq'; src: url('${urduFonts.bold}') format('truetype'); font-weight: 700; font-style: normal; }` : ""}
+          html, body { direction: rtl; }
+          body { font-family: 'UrduNastaliq', 'Noto Nastaliq Urdu', 'Noto Naskh Arabic', serif !important; font-size: 17px; line-height: 2.1; text-align: right; }
+          b, strong { font-weight: 700; }
+          .ltr { direction: ltr; unicode-bidi: isolate; display: inline-block; }
+        `
+      : "";
+    const urduBaseUrl =
+      isUrduPage && urduFonts?.regular?.startsWith("file://")
+        ? urduFonts.regular.slice(0, urduFonts.regular.lastIndexOf("/") + 1)
+        : "";
+
     let htmlContent = "";
     if (activeSection === "overview")
       htmlContent = chapterData.htmlOverview || "";
@@ -1861,8 +1948,9 @@ const MathWebView = memo(
             font-size: 15px !important;
           }
         </style>
+        ${urduCss ? `<style>${urduCss}</style>` : ""}
       </head>
-      <body>
+      <body${isUrduPage ? ' dir="rtl" lang="ur"' : ""}>
         ${htmlContent}
       </body>
     </html>
@@ -1976,6 +2064,14 @@ const MathWebView = memo(
         <EmptyState title="No Content" message="Coming soon..." icon="clock" />
       );
 
+    // Urdu: wait for the font files so the page is drawn once, in Nastaliq
+    if (isUrduPage && !urduFonts)
+      return (
+        <View style={{ height: 120, alignItems: "center", justifyContent: "center" }}>
+          <ActivityIndicator size="small" color="#FFFFFF" />
+        </View>
+      );
+
     return (
       <View
         style={{
@@ -1987,9 +2083,11 @@ const MathWebView = memo(
         <WebView
           originWhitelist={["*"]}
           allowFileAccess={true}
+          allowFileAccessFromFileURLs={isUrduPage}
+          allowUniversalAccessFromFileURLs={isUrduPage}
           allowingReadAccessToURL="*"
           mixedContentMode="always"
-          source={{ html: fullHtml, baseUrl: "" }}
+          source={{ html: fullHtml, baseUrl: isUrduPage ? urduBaseUrl : "" }}
           injectedJavaScript={injectedJS}
           onMessage={(event) => {
             if (event.nativeEvent.data) {

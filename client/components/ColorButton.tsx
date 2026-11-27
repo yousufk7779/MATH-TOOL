@@ -1,6 +1,7 @@
 import React, { memo, useCallback, useState } from "react";
 import { StyleSheet, Pressable, ViewStyle, View } from "react-native";
 import { lightImpact } from "@/utils/haptics";
+import { URDU_FONT_BOLD } from "@/utils/urduFont";
 import { LinearGradient } from "expo-linear-gradient";
 
 import { ThemedText } from "@/components/ThemedText";
@@ -22,6 +23,8 @@ interface ColorButtonProps {
   glow?: boolean;
   /** Strip Android font padding so the label and icon sit exactly in the vertical centre (English screens). */
   centerLabel?: boolean;
+  /** Urdu title: Nastaliq font, right-to-left, no upper-casing (font must be loaded by the screen). */
+  urdu?: boolean;
 }
 
 export const ColorButton = memo(function ColorButton({
@@ -34,6 +37,7 @@ export const ColorButton = memo(function ColorButton({
   testID,
   glow = true,
   centerLabel = false,
+  urdu = false,
 }: ColorButtonProps) {
   const [isPressed, setIsPressed] = useState(false);
 
@@ -108,7 +112,7 @@ export const ColorButton = memo(function ColorButton({
               </View>
             ) : null}
             <ThemedText
-              style={[styles.buttonText, icon ? { paddingHorizontal: 36 } : null, centerLabel && styles.labelCentered]}
+              style={[styles.buttonText, icon ? { paddingHorizontal: 36 } : null, centerLabel && styles.labelCentered, urdu && styles.urduLabel]}
               numberOfLines={1}
               adjustsFontSizeToFit
               minimumFontScale={0.72}
@@ -155,6 +159,15 @@ const styles = StyleSheet.create({
   },
   iconWrapperCentered: { top: 0, bottom: 0 },
   labelCentered: { includeFontPadding: false, textAlignVertical: "center" },
+  urduLabel: {
+    fontFamily: URDU_FONT_BOLD,
+    fontSize: 18,
+    lineHeight: 34,
+    textTransform: "none",
+    writingDirection: "rtl",
+    includeFontPadding: false,
+    textAlignVertical: "center",
+  },
   iconText: {
     fontSize: 22,
   },

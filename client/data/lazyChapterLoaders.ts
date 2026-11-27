@@ -3,6 +3,7 @@
 import type { ChapterContent } from "./types";
 import { C10_ENGLISH } from "./c10English";
 import { C9_ENGLISH } from "./c9English";
+import { C9_URDU } from "./c9Urdu";
 
 export const lazyChapterLoaders: Record<string, () => any> = {
   "c11-math-1": () => {
@@ -2646,6 +2647,14 @@ export const lazyChapterLoaders: Record<string, () => any> = {
       isHtmlView: true,
     };
   },
+
+  // Class 9 Urdu (JKBOSE بہارستانِ اردو): placeholders until each chapter is written
+  ...Object.fromEntries(
+    C9_URDU.map((e) => [
+      e.id,
+      () => require("./content/c9-urdu-placeholder").buildC9UrduPlaceholder(e),
+    ]),
+  ),
 
   // Class 9 English (JKBOSE Tulip Series Book-IX): structure only — placeholders until content is written
   ...Object.fromEntries(

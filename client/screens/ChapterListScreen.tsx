@@ -1,5 +1,5 @@
 import React, { memo, useCallback } from "react";
-import { StyleSheet, FlatList, View } from "react-native";
+import { StyleSheet, FlatList, View, ActivityIndicator } from "react-native";
 import { useNavigation, useRoute, RouteProp } from "@react-navigation/native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 
@@ -17,6 +17,7 @@ import {
   getChapterGradient,
 } from "@/data/chapters";
 import { getHomeRoute } from "@/utils/navigation-utils";
+import { isUrduSubject, useUrduFonts } from "@/utils/urduFont";
 
 type NavigationProp = NativeStackNavigationProp<RootStackParamList>;
 
@@ -27,6 +28,9 @@ function ChapterListScreen() {
   const route = useRoute<RouteProp<RootStackParamList, "ChapterList">>();
 
   const subject = route.params?.subject || "Mathematics";
+  // Urdu chapter lists: Nastaliq titles, right-to-left rows (font loaded on demand)
+  const isUrdu = isUrduSubject(subject);
+  const urduReady = useUrduFonts(isUrdu);
   const topic = route.params?.topic || "";
   const className =
     route.params?.className ||
@@ -92,7 +96,8 @@ function ChapterListScreen() {
             number={item.number}
             name={item.name}
             colors={chapterGradient}
-            centerLabel={subject.includes("English")}
+            centerLabel={subject.includes("English") || isUrdu}
+            urdu={isUrdu}
             isAvailable={available}
             onPress={() => {
               console.log("Chapter clicked:", item.id);
@@ -128,10 +133,15 @@ function ChapterListScreen() {
   const homeRoute = getHomeRoute(className);
   // English (and every subject built from now on): chapter buttons always sit in the true vertical
   // centre — equal top/bottom padding, centred whenever the list is shorter than the screen.
-  const centerChapters = subject.includes("English");
+  const centerChapters = subject.includes("English") || isUrdu;
 
   return (
     <ScreenWrapper showBackButton hideHomeButton homeRoute={homeRoute}>
+      {isUrdu && !urduReady ? (
+        <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+          <ActivityIndicator size="large" color="#FFFFFF" />
+        </View>
+      ) : (
       <FlatList
         data={displayChapters}
         renderItem={renderItem}
@@ -148,6 +158,7 @@ function ChapterListScreen() {
         ItemSeparatorComponent={Separator}
         ListEmptyComponent={renderEmptyState}
       />
+      )}
     </ScreenWrapper>
   );
 }

@@ -1,6 +1,7 @@
 import React, { memo, useState, useCallback } from "react";
 import { StyleSheet, Pressable, View } from "react-native";
 import { lightImpact } from "@/utils/haptics";
+import { URDU_FONT } from "@/utils/urduFont";
 import { Feather } from "@expo/vector-icons";
 import { LinearGradient } from "expo-linear-gradient";
 
@@ -22,6 +23,8 @@ interface ChapterCardProps {
   isAvailable?: boolean;
   /** Strip Android font padding so the number and title sit exactly in the vertical centre (English lists). */
   centerLabel?: boolean;
+  /** Urdu chapter: Nastaliq title, right-to-left row (number on the right). Font must be loaded by the screen. */
+  urdu?: boolean;
 }
 
 export const ChapterCard = memo(function ChapterCard({
@@ -33,6 +36,7 @@ export const ChapterCard = memo(function ChapterCard({
   testID,
   isAvailable = true,
   centerLabel = false,
+  urdu = false,
 }: ChapterCardProps) {
   const [isPressed, setIsPressed] = useState(false);
 
@@ -82,15 +86,15 @@ export const ChapterCard = memo(function ChapterCard({
           end={{ x: 0.5, y: 1 }}
           style={styles.card}
         >
-          <View style={styles.borderInner}>
-            <View style={styles.numberContainer}>
+          <View style={[styles.borderInner, urdu && styles.urduRow]}>
+            <View style={[styles.numberContainer, urdu && styles.urduNumber]}>
               <ThemedText style={[styles.number, centerLabel && styles.labelCentered]} maxFontSizeMultiplier={1.15}>
                 {number}
               </ThemedText>
             </View>
             <View style={[styles.nameContainer, centerLabel && styles.nameContainerCentered]}>
               <ThemedText
-                style={[styles.name, centerLabel && styles.labelCentered]}
+                style={[styles.name, centerLabel && styles.labelCentered, urdu && styles.urduName]}
                 numberOfLines={2}
                 maxFontSizeMultiplier={1.18}
               >
@@ -161,6 +165,16 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   nameContainerCentered: { justifyContent: "center" },
+  urduName: {
+    fontFamily: URDU_FONT,
+    fontSize: 16,
+    lineHeight: 32,
+    textTransform: "none",
+    textAlign: "right",
+    writingDirection: "rtl",
+  },
+  urduRow: { flexDirection: "row-reverse" },
+  urduNumber: { marginRight: 0, marginLeft: Spacing.md },
   labelCentered: { includeFontPadding: false, textAlignVertical: "center" },
   name: {
     ...Typography.body,
