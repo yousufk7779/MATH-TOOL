@@ -126,6 +126,9 @@ function ChapterListScreen() {
   );
 
   const homeRoute = getHomeRoute(className);
+  // English (and every subject built from now on): chapter buttons always sit in the true vertical
+  // centre — equal top/bottom padding, centred whenever the list is shorter than the screen.
+  const centerChapters = subject.includes("English");
 
   return (
     <ScreenWrapper showBackButton hideHomeButton homeRoute={homeRoute}>
@@ -136,9 +139,10 @@ function ChapterListScreen() {
         contentContainerStyle={[
           styles.listContent,
           displayChapters.length === 0 ? styles.emptyContent : null,
-          displayChapters.length > 0 && displayChapters.length < 7
+          displayChapters.length > 0 && (centerChapters || displayChapters.length < 7)
             ? styles.centeredContent
             : null,
+          centerChapters && displayChapters.length > 0 ? styles.centeredPadding : null,
         ]}
         showsVerticalScrollIndicator={false}
         ItemSeparatorComponent={Separator}
@@ -159,6 +163,11 @@ const styles = StyleSheet.create({
   },
   centeredContent: {
     justifyContent: "center",
+  },
+  // symmetric padding so a centred list is centred on screen, not pushed up by a deep bottom pad
+  centeredPadding: {
+    paddingTop: Spacing.xl,
+    paddingBottom: Spacing.xl,
   },
   emptyContent: {
     flex: 1,
