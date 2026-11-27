@@ -46,7 +46,7 @@ export const C9_ENGLISH: C9EnglishEntry[] = [
   { id: "c9-eng-s19", number: 19, name: "The Last Leaf", category: "Short Stories", gradient: ["#FF9966", "#FF5E62"] },
   { id: "c9-eng-s20", number: 20, name: "The Happy Prince", category: "Short Stories", gradient: ["#FF007F", "#7928CA"] },
   // Plays — 21 and 22
-  { id: "c9-eng-pl21", number: 21, name: "A Basketful of Sea Trouts", category: "Plays", gradient: ["#8E2DE2", "#4A00E0"] },
+  { id: "c9-eng-pl21", number: 21, name: "A Basketful of Sea Trouts", category: "Plays", gradient: ["#A855F7", "#6D28D9"] },
   { id: "c9-eng-pl22", number: 22, name: "If I were You", category: "Plays", gradient: ["#FF512F", "#DD2476"] },
   // Grammar & Writing Skills — 2 modules (built from the JKBOSE Class IX syllabus)
   { id: "c9-eng-g1", number: 1, name: "Grammar Rules & Exercises", category: "Grammar & Writing Skills", gradient: ["#56CCF2", "#2F80ED"] },
