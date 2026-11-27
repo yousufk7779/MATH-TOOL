@@ -37,6 +37,7 @@ function Class9EnglishScreen() {
           {CATEGORIES.map((c) => (
             <View key={c.topic} style={styles.buttonWrapper}>
               <ColorButton
+                centerLabel
                 testID={`button-c9-eng-${c.topic.toLowerCase().replace(/[^a-z]+/g, "-")}`}
                 title={c.title}
                 icon={c.icon}
@@ -65,8 +66,7 @@ const styles = StyleSheet.create({
   },
   content: {
     paddingHorizontal: Spacing.xl,
-    paddingTop: 0,
-    paddingBottom: Spacing.xl,
+    paddingVertical: Spacing.xl,
     flexGrow: 1,
     justifyContent: "center",
   },
@@ -75,7 +75,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     width: "100%",
-    marginTop: -56,
   },
   buttonWrapper: {
     width: "100%",

@@ -20,6 +20,8 @@ interface ChapterCardProps {
   onPress?: () => void;
   testID?: string;
   isAvailable?: boolean;
+  /** Strip Android font padding so the number and title sit exactly in the vertical centre (English lists). */
+  centerLabel?: boolean;
 }
 
 export const ChapterCard = memo(function ChapterCard({
@@ -30,6 +32,7 @@ export const ChapterCard = memo(function ChapterCard({
   onPress,
   testID,
   isAvailable = true,
+  centerLabel = false,
 }: ChapterCardProps) {
   const [isPressed, setIsPressed] = useState(false);
 
@@ -81,13 +84,13 @@ export const ChapterCard = memo(function ChapterCard({
         >
           <View style={styles.borderInner}>
             <View style={styles.numberContainer}>
-              <ThemedText style={styles.number} maxFontSizeMultiplier={1.15}>
+              <ThemedText style={[styles.number, centerLabel && styles.labelCentered]} maxFontSizeMultiplier={1.15}>
                 {number}
               </ThemedText>
             </View>
-            <View style={styles.nameContainer}>
+            <View style={[styles.nameContainer, centerLabel && styles.nameContainerCentered]}>
               <ThemedText
-                style={styles.name}
+                style={[styles.name, centerLabel && styles.labelCentered]}
                 numberOfLines={2}
                 maxFontSizeMultiplier={1.18}
               >
@@ -157,6 +160,8 @@ const styles = StyleSheet.create({
   nameContainer: {
     flex: 1,
   },
+  nameContainerCentered: { justifyContent: "center" },
+  labelCentered: { includeFontPadding: false, textAlignVertical: "center" },
   name: {
     ...Typography.body,
     color: "#fff",

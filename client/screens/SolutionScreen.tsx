@@ -407,7 +407,13 @@ function SolutionScreen() {
     // Class 9 English replicates Class 10 English exactly
     chapterId.startsWith("c9-eng-");
 
-  const hwTitleStyle = { fontFamily: "NotoSans_400Regular", color: "#fff" };
+  const isEnglishChapter = /^c(9|10|11|12)-eng-/.test(chapterId);
+  // English chapters: strip Android font padding so tab labels sit exactly in the vertical centre
+  const hwTitleStyle = {
+    fontFamily: "NotoSans_400Regular",
+    color: "#fff",
+    ...(isEnglishChapter ? { includeFontPadding: false, textAlignVertical: "center" as const } : {}),
+  };
 
   const scaledBody = {
     ...Typography.body,

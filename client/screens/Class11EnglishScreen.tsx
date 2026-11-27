@@ -27,6 +27,7 @@ function Class11EnglishScreen() {
           {/* 1. HORNBILL (MAIN TEXTBOOK) */}
           <View style={styles.buttonWrapper}>
             <ColorButton
+                centerLabel
               testID="button-hornbill"
               title="HORNBILL"
               icon="📖"
@@ -44,6 +45,7 @@ function Class11EnglishScreen() {
           {/* 2. SNAPSHOTS (SUPPLEMENTARY READER) */}
           <View style={styles.buttonWrapper}>
             <ColorButton
+                centerLabel
               testID="button-snapshots"
               title="SNAPSHOTS"
               icon="📚"
@@ -61,6 +63,7 @@ function Class11EnglishScreen() {
           {/* 3. WRITING SKILLS & GRAMMAR */}
           <View style={styles.buttonWrapper}>
             <ColorButton
+                centerLabel
               testID="button-writing-grammar"
               title="WRITING & GRAMMAR"
               icon="✍️"
@@ -88,8 +91,7 @@ const styles = StyleSheet.create({
   },
   content: {
     paddingHorizontal: Spacing.xl,
-    paddingTop: 0,
-    paddingBottom: Spacing.xl,
+    paddingVertical: Spacing.xl,
     flexGrow: 1,
     justifyContent: "center",
   },
@@ -98,7 +100,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     width: "100%",
-    marginTop: -56,
   },
   buttonWrapper: {
     width: "100%",

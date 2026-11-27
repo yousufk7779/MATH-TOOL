@@ -92,6 +92,7 @@ function ChapterListScreen() {
             number={item.number}
             name={item.name}
             colors={chapterGradient}
+            centerLabel={subject.includes("English")}
             isAvailable={available}
             onPress={() => {
               console.log("Chapter clicked:", item.id);

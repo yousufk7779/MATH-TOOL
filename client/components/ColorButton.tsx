@@ -20,6 +20,8 @@ interface ColorButtonProps {
   style?: ViewStyle;
   testID?: string;
   glow?: boolean;
+  /** Strip Android font padding so the label and icon sit exactly in the vertical centre (English screens). */
+  centerLabel?: boolean;
 }
 
 export const ColorButton = memo(function ColorButton({
@@ -31,6 +33,7 @@ export const ColorButton = memo(function ColorButton({
   style,
   testID,
   glow = true,
+  centerLabel = false,
 }: ColorButtonProps) {
   const [isPressed, setIsPressed] = useState(false);
 
@@ -98,14 +101,14 @@ export const ColorButton = memo(function ColorButton({
             ]}
           >
             {icon ? (
-              <View style={styles.iconWrapper}>
-                <ThemedText style={styles.iconText} maxFontSizeMultiplier={1.12}>
+              <View style={[styles.iconWrapper, centerLabel && styles.iconWrapperCentered]}>
+                <ThemedText style={[styles.iconText, centerLabel && styles.labelCentered]} maxFontSizeMultiplier={1.12}>
                   {icon}
                 </ThemedText>
               </View>
             ) : null}
             <ThemedText
-              style={[styles.buttonText, icon ? { paddingHorizontal: 36 } : null]}
+              style={[styles.buttonText, icon ? { paddingHorizontal: 36 } : null, centerLabel && styles.labelCentered]}
               numberOfLines={1}
               adjustsFontSizeToFit
               minimumFontScale={0.72}
@@ -150,6 +153,8 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     zIndex: 1,
   },
+  iconWrapperCentered: { top: 0, bottom: 0 },
+  labelCentered: { includeFontPadding: false, textAlignVertical: "center" },
   iconText: {
     fontSize: 22,
   },

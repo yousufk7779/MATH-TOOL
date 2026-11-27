@@ -27,6 +27,7 @@ function Class12EnglishScreen() {
           {/* 1. FLAMINGO (MAIN TEXTBOOK) */}
           <View style={styles.buttonWrapper}>
             <ColorButton
+                centerLabel
               testID="button-flamingo"
               title="FLAMINGO"
               icon="📖"
@@ -44,6 +45,7 @@ function Class12EnglishScreen() {
           {/* 2. VISTAS (SUPPLEMENTARY READER) */}
           <View style={styles.buttonWrapper}>
             <ColorButton
+                centerLabel
               testID="button-vistas"
               title="VISTAS"
               icon="📚"
@@ -61,6 +63,7 @@ function Class12EnglishScreen() {
           {/* 3. WRITING SKILLS & GRAMMAR */}
           <View style={styles.buttonWrapper}>
             <ColorButton
+                centerLabel
               testID="button-writing-grammar-12"
               title="WRITING & GRAMMAR"
               icon="✍️"
@@ -88,8 +91,7 @@ const styles = StyleSheet.create({
   },
   content: {
     paddingHorizontal: Spacing.xl,
-    paddingTop: 0,
-    paddingBottom: Spacing.xl,
+    paddingVertical: Spacing.xl,
     flexGrow: 1,
     justifyContent: "center",
   },
@@ -98,7 +100,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     width: "100%",
-    marginTop: -56,
   },
   buttonWrapper: {
     width: "100%",
