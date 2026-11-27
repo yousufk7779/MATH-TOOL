@@ -22,6 +22,11 @@ export interface Exercise {
   id: string;
   name: string;
   questions: Question[];
+  /**
+   * Multi-part chapters (e.g. "Part - I", "Part - II"): when two or more distinct parts are set,
+   * the Q & A section shows a full-width Part tab row and only that part's sub-tabs below it.
+   */
+  part?: string;
 }
 export interface MCQ {
   id: string;

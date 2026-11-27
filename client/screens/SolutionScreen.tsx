@@ -477,6 +477,31 @@ function SolutionScreen() {
     return Array.from(new Set(subs));
   }, [chapterData]);
 
+  // Multi-part chapters: exercises tagged with `part` ("Part - I", "Part - II", …) get a full-width
+  // Part tab row; the sub-tab row below it then lists only the active part's exercises.
+  const exerciseParts = React.useMemo(() => {
+    const parts: string[] = [];
+    chapterData?.exercises?.forEach((ex: any) => {
+      if (ex.part && !parts.includes(ex.part)) parts.push(ex.part);
+    });
+    return parts.length > 1 ? parts : [];
+  }, [chapterData]);
+  const [activePart, setActivePart] = useState<string>("");
+  const currentPart = exerciseParts.includes(activePart) ? activePart : exerciseParts[0] || "";
+  const subsForPart = useCallback(
+    (part: string) =>
+      exerciseParts.length === 0
+        ? exerciseSubSections
+        : exerciseSubSections.filter(
+            (sub) => chapterData?.exercises?.find((ex: any) => ex.id === sub)?.part === part,
+          ),
+    [exerciseParts, exerciseSubSections, chapterData],
+  );
+  const visibleSubSections = React.useMemo(
+    () => subsForPart(currentPart),
+    [subsForPart, currentPart],
+  );
+
   const generateShuffledOptions = useCallback(() => {
     if (!chapterData?.mcqs) return;
     const newShuffled: Record<string, string[]> = {};
@@ -512,8 +537,8 @@ function SolutionScreen() {
         prev[section] ? prev : { ...prev, [section]: true },
       );
 
-      if (section === "exercises" && exerciseSubSections.length > 0) {
-        const first = exerciseSubSections[0];
+      if (section === "exercises" && visibleSubSections.length > 0) {
+        const first = visibleSubSections[0];
         setActiveSubSection(first);
         setMountedSubSections((prev) =>
           prev[first] ? prev : { ...prev, [first]: true },
@@ -529,7 +554,7 @@ function SolutionScreen() {
         });
       }
     },
-    [resetMCQs, exerciseSubSections, activeSubSection],
+    [resetMCQs, visibleSubSections, activeSubSection],
   );
 
   const handleSubSectionChange = useCallback((sub: string) => {
@@ -541,6 +566,16 @@ function SolutionScreen() {
       scrollViewRef.current?.scrollTo({ y: 0, animated: false });
     });
   }, []);
+
+  // Switching Part opens that part's first sub-tab (e.g. Part - II → its own "Text Qs").
+  const handlePartChange = useCallback(
+    (part: string) => {
+      setActivePart(part);
+      const first = subsForPart(part)[0];
+      if (first) handleSubSectionChange(first);
+    },
+    [subsForPart, handleSubSectionChange],
+  );
 
   // Keep the active exercise tab fully visible in the scrolling tab bar (centred where possible).
   useEffect(() => {
@@ -1165,12 +1200,30 @@ function SolutionScreen() {
           )}
         </View>
 
-        {activeSection === "exercises" && exerciseSubSections.length > 1 && (() => {
+        {activeSection === "exercises" && exerciseParts.length > 1 && (
+          <View style={{ height: 42, marginBottom: Spacing.sm }}>
+            <View style={styles.subTabRow}>
+              {exerciseParts.map((part) => (
+                <SubTabButton
+                  key={part}
+                  title={part}
+                  isActive={currentPart === part}
+                  onPress={() => handlePartChange(part)}
+                  gradient={chapterGradient}
+                  textStyle={hwTitleStyle}
+                  fill
+                />
+              ))}
+            </View>
+          </View>
+        )}
+
+        {activeSection === "exercises" && visibleSubSections.length > 1 && (() => {
           // Up to 4 tabs: one full-width row, tabs share the width equally (no scrolling).
           // 5 or more tabs: horizontal scroll without a scrollbar.
-          const tabCount = exerciseSubSections.length;
+          const tabCount = visibleSubSections.length;
           const useRow = tabCount <= 4;
-          const tabs = exerciseSubSections.map((sub: string) => {
+          const tabs = visibleSubSections.map((sub: string) => {
                 let title =
                   sub === "examples"
                     ? "Examples"
