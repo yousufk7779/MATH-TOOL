@@ -291,6 +291,8 @@ interface SubTabButtonProps {
   compact?: boolean;
   /** Reports the tab's position inside the scrolling tab bar (5+ tabs), so the active tab can be scrolled into view. */
   onLayout?: (e: any) => void;
+  /** Urdu (Nastaliq) label: fixed size, no auto-shrinking, tab sized by its text. */
+  urdu?: boolean;
 }
 
 const SubTabButton = memo(
@@ -303,7 +305,41 @@ const SubTabButton = memo(
     fill,
     compact,
     onLayout,
+    urdu,
   }: SubTabButtonProps) => {
+    if (urdu) {
+      // Nastaliq is tall: auto-fit shrank these labels to a few pixels inside the 42px bar,
+      // and the percentage-sized gradient had no width to fill inside the scrolling row.
+      // Here the label keeps a fixed size and the gradient sits behind it as an absolute fill.
+      return (
+        <Pressable
+          style={({ pressed }) => [
+            styles.subTabButton,
+            styles.urduSubTab,
+            fill && styles.subTabButtonFill,
+            pressed && { opacity: 0.8 },
+          ]}
+          onPress={onPress}
+          onLayout={onLayout}
+        >
+          {isActive && (
+            <LinearGradient
+              colors={gradient as any}
+              start={{ x: 0.5, y: 0 }}
+              end={{ x: 0.5, y: 1 }}
+              style={StyleSheet.absoluteFill}
+            />
+          )}
+          <ThemedText
+            style={[styles.tabText, textStyle, styles.urduSubTabText, isActive && styles.tabTextActive]}
+            numberOfLines={1}
+            maxFontSizeMultiplier={1.1}
+          >
+            {title}
+          </ThemedText>
+        </Pressable>
+      );
+    }
     const isGlossy =
       gradient[0] === "#FFA726" ||
       gradient[0] === "#7CFF00" ||
@@ -450,8 +486,7 @@ function SolutionScreen() {
     fontFamily: isUrdu ? URDU_FONT : "NotoSans_400Regular",
     color: "#fff",
     ...(isEnglishChapter || isUrdu ? { includeFontPadding: false, textAlignVertical: "center" as const } : {}),
-    // Nastaliq letters such as گ rise well above the line, so Urdu labels get extra line height (they were clipped at 26)
-    ...(isUrdu ? { fontSize: 13, lineHeight: 32 } : {}),
+    ...(isUrdu ? { fontSize: 13, lineHeight: 26 } : {}),
   };
 
   const scaledBody = {
@@ -1280,6 +1315,7 @@ function SolutionScreen() {
                   gradient={chapterGradient}
                   textStyle={hwTitleStyle}
                   fill
+                  urdu={isUrdu}
                 />
               ))}
             </View>
@@ -1329,6 +1365,7 @@ function SolutionScreen() {
                     textStyle={hwTitleStyle}
                     fill={useRow}
                     compact={tabCount === 4}
+                    urdu={isUrdu}
                     onLayout={
                       useRow
                         ? undefined
@@ -2235,6 +2272,9 @@ const styles = StyleSheet.create({
     gap: 8,
     alignItems: "center",
   },
+  // Urdu sub-tabs: fixed height with room for tall Nastaliq letters (گ، ک), label never shrinks
+  urduSubTab: { height: 40, paddingVertical: 0, paddingHorizontal: 18, justifyContent: "center" },
+  urduSubTabText: { fontSize: 15, lineHeight: 30, includeFontPadding: false, textAlignVertical: "center" },
   subTabButton: {
     paddingVertical: 6,
     paddingHorizontal: 16,
