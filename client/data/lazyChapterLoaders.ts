@@ -2670,6 +2670,7 @@ export const lazyChapterLoaders: Record<string, () => any> = {
   "c9-eng-po13": () => require("./content/c9-eng-po13").c9EngPo13,
   "c9-eng-po14": () => require("./content/c9-eng-po14").c9EngPo14,
   "c9-eng-po15": () => require("./content/c9-eng-po15").c9EngPo15,
+  "c9-eng-po16": () => require("./content/c9-eng-po16").c9EngPo16,
 
   // Class 10 English (JKBOSE Tulip Series Book-X): 22 chapters/modules — placeholders until written
   ...Object.fromEntries(
