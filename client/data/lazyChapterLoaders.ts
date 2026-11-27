@@ -2677,6 +2677,7 @@ export const lazyChapterLoaders: Record<string, () => any> = {
   "c9-urdu-gz8": () => require("./content/c9-urdu-gz8").c9UrduGz8,
   "c9-urdu-nz1": () => require("./content/c9-urdu-nz1").c9UrduNz1,
   "c9-urdu-nz2": () => require("./content/c9-urdu-nz2").c9UrduNz2,
+  "c9-urdu-nz3": () => require("./content/c9-urdu-nz3").c9UrduNz3,
 
   // Class 9 English (JKBOSE Tulip Series Book-IX): structure only — placeholders until content is written
   ...Object.fromEntries(
