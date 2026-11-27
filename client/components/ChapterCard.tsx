@@ -1,6 +1,6 @@
 import React, { memo, useState, useCallback } from "react";
-import { StyleSheet, Pressable, View, Platform } from "react-native";
-import * as Haptics from "expo-haptics";
+import { StyleSheet, Pressable, View } from "react-native";
+import { lightImpact } from "@/utils/haptics";
 import { Feather } from "@expo/vector-icons";
 import { LinearGradient } from "expo-linear-gradient";
 
@@ -42,9 +42,7 @@ export const ChapterCard = memo(function ChapterCard({
   }, []);
 
   const handlePress = useCallback(() => {
-    if (Platform.OS !== "web") {
-      Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
-    }
+    lightImpact();
     onPress?.();
   }, [onPress]);
 

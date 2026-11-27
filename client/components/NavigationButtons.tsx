@@ -1,8 +1,8 @@
 import React, { memo, useCallback } from "react";
-import { StyleSheet, Pressable, Platform, View } from "react-native";
+import { StyleSheet, Pressable, View } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
-import * as Haptics from "expo-haptics";
+import { lightImpact } from "@/utils/haptics";
 import { Feather } from "@expo/vector-icons";
 import { LinearGradient } from "expo-linear-gradient";
 
@@ -28,16 +28,12 @@ export const NavigationButtons = memo(function NavigationButtons({
   const navigation = useNavigation<NavigationProp>();
 
   const handleBack = useCallback(() => {
-    if (Platform.OS !== "web") {
-      Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
-    }
+    lightImpact();
     navigation.goBack();
   }, [navigation]);
 
   const handleHome = useCallback(() => {
-    if (Platform.OS !== "web") {
-      Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
-    }
+    lightImpact();
     navigation.reset({
       index: 1,
       routes: [{ name: "ClassSelector" }, { name: homeRoute as any }],

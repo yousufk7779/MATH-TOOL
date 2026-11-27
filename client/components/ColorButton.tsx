@@ -1,6 +1,6 @@
 import React, { memo, useCallback, useState } from "react";
-import { StyleSheet, Pressable, ViewStyle, Platform, View } from "react-native";
-import * as Haptics from "expo-haptics";
+import { StyleSheet, Pressable, ViewStyle, View } from "react-native";
+import { lightImpact } from "@/utils/haptics";
 import { LinearGradient } from "expo-linear-gradient";
 
 import { ThemedText } from "@/components/ThemedText";
@@ -43,9 +43,7 @@ export const ColorButton = memo(function ColorButton({
   }, []);
 
   const handlePress = useCallback(() => {
-    if (Platform.OS !== "web") {
-      Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
-    }
+    lightImpact();
     onPress?.();
   }, [onPress]);
 
