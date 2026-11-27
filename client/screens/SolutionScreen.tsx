@@ -1269,7 +1269,7 @@ function SolutionScreen() {
 
         {activeSection === "exercises" && exerciseParts.length > 1 && (
           <View style={{ height: 42, marginBottom: Spacing.sm }}>
-            <View style={styles.subTabRow}>
+            <View style={[styles.subTabRow, isUrdu && styles.rtlRow]}>
               {exerciseParts.map((part) => (
                 <SubTabButton
                   key={part}
@@ -1341,7 +1341,7 @@ function SolutionScreen() {
           return (
             <View style={{ height: 42, marginBottom: Spacing.sm }}>
               {useRow ? (
-                <View style={styles.subTabRow}>{tabs}</View>
+                <View style={[styles.subTabRow, isUrdu && styles.rtlRow]}>{tabs}</View>
               ) : (
                 <ScrollView
                   ref={subTabScrollRef}
@@ -2181,6 +2181,8 @@ const styles = StyleSheet.create({
   },
   tabTextActive: { color: "#fff" },
   subTabScroll: { flex: 1 },
+  // Urdu chapters: tabs read right to left (first tab on the right)
+  rtlRow: { flexDirection: "row-reverse" },
   // up to 4 exercise tabs: one full-width row, each tab gets an equal share (50/50, 33/33/33, 25 × 4)
   subTabRow: {
     flex: 1,

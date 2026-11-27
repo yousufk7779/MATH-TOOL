@@ -27,6 +27,8 @@ interface ChapterCardProps {
   urdu?: boolean;
 }
 
+const HONORIFIC = "ﷺ";
+
 export const ChapterCard = memo(function ChapterCard({
   number,
   name,
@@ -39,6 +41,7 @@ export const ChapterCard = memo(function ChapterCard({
   urdu = false,
 }: ChapterCardProps) {
   const [isPressed, setIsPressed] = useState(false);
+  const hasHonorific = urdu && name.includes(HONORIFIC);
 
   const handlePressIn = useCallback(() => {
     setIsPressed(true);
@@ -94,11 +97,18 @@ export const ChapterCard = memo(function ChapterCard({
             </View>
             <View style={[styles.nameContainer, centerLabel && styles.nameContainerCentered]}>
               <ThemedText
-                style={[styles.name, centerLabel && styles.labelCentered, urdu && styles.urduName]}
+                style={[styles.name, centerLabel && styles.labelCentered, urdu && styles.urduName, urdu && hasHonorific && styles.urduNameHonorific]}
                 numberOfLines={2}
                 maxFontSizeMultiplier={1.18}
               >
-                {name}
+                {urdu && hasHonorific
+                  ? name.split(HONORIFIC).map((part, i) => (
+                      <React.Fragment key={i}>
+                        {i > 0 && <ThemedText style={styles.urduHonorific}>{HONORIFIC}</ThemedText>}
+                        {part}
+                      </React.Fragment>
+                    ))
+                  : name}
               </ThemedText>
             </View>
             {!isAvailable && (
@@ -173,6 +183,9 @@ const styles = StyleSheet.create({
     textAlign: "right",
     writingDirection: "rtl",
   },
+  // Titles with ﷺ: the ligature is very tall and wide in Nastaliq, so it is drawn smaller and the line given more room
+  urduNameHonorific: { fontSize: 15, lineHeight: 40 },
+  urduHonorific: { fontFamily: URDU_FONT, fontSize: 11, color: "#fff" },
   urduRow: { flexDirection: "row-reverse" },
   urduNumber: { marginRight: 0, marginLeft: Spacing.md },
   labelCentered: { includeFontPadding: false, textAlignVertical: "center" },

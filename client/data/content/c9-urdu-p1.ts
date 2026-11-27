@@ -25,7 +25,7 @@ export const c9UrduP1: ChapterContent = {
     },
     {
       "id": "c9u1-gram",
-      "name": "گرامر",
+      "name": "قواعد",
       "questions": []
     }
   ],
