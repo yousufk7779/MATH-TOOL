@@ -27,48 +27,48 @@ export const c9EngG1: ChapterContent = {
       "id": "c9-eng-g1-mcq-1",
       "question": "<div style='text-align: justify;'>Choose the correctly punctuated sentence:</div>",
       "options": [
-        "A):   He said, \"I am late.\"",
-        "B):   He said \"I am late\".",
+        "A):   He said \"I am late\".",
+        "B):   He said, \"I am late.\"",
         "C):   He said, I am late.",
         "D):   he said, \"I am late.\""
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanation": "<div style='text-align: justify;'>A comma before the inverted commas; the full stop goes inside.</div>"
     },
     {
       "id": "c9-eng-g1-mcq-2",
       "question": "<div style='text-align: justify;'>Which word needs an apostrophe? 'The dogs tail was wagging.'</div>",
       "options": [
-        "A):   The",
-        "B):   dogs",
+        "A):   dogs",
+        "B):   The",
         "C):   tail",
         "D):   wagging"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>It should be dog's (possession).</div>"
     },
     {
       "id": "c9-eng-g1-mcq-3",
       "question": "<div style='text-align: justify;'>'The dog wagged ___ tail.'</div>",
       "options": [
-        "A):   it's",
-        "B):   its",
+        "A):   its",
+        "B):   it's",
         "C):   its'",
         "D):   it"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>'its' shows possession; 'it's' means 'it is'.</div>"
     },
     {
       "id": "c9-eng-g1-mcq-4",
       "question": "<div style='text-align: justify;'>'I ___ here since 2015.'</div>",
       "options": [
-        "A):   live",
-        "B):   am living",
-        "C):   have been living",
+        "A):   have been living",
+        "B):   live",
+        "C):   am living",
         "D):   lived"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>'since' takes the present perfect (continuous).</div>"
     },
     {
@@ -88,11 +88,11 @@ export const c9EngG1: ChapterContent = {
       "question": "<div style='text-align: justify;'>'If it ___, we will stay home.'</div>",
       "options": [
         "A):   will rain",
-        "B):   rains",
-        "C):   rained",
-        "D):   is raining will"
+        "B):   rained",
+        "C):   is raining will",
+        "D):   rains"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>Use the present tense in the 'if' clause.</div>"
     },
     {
@@ -100,11 +100,11 @@ export const c9EngG1: ChapterContent = {
       "question": "<div style='text-align: justify;'>Indirect speech: He said, \"I am tired.\"</div>",
       "options": [
         "A):   He said that I am tired.",
-        "B):   He said that he was tired.",
-        "C):   He told that he is tired.",
+        "B):   He told that he is tired.",
+        "C):   He said that he was tired.",
         "D):   He said he is tired."
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>am → was; I → he.</div>"
     },
     {
@@ -112,11 +112,11 @@ export const c9EngG1: ChapterContent = {
       "question": "<div style='text-align: justify;'>Indirect speech: She said to me, \"Where do you live?\"</div>",
       "options": [
         "A):   She asked me where did I live.",
-        "B):   She asked me where I lived.",
-        "C):   She said where I lived?",
-        "D):   She asked where do you live."
+        "B):   She said where I lived?",
+        "C):   She asked where do you live.",
+        "D):   She asked me where I lived."
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>Wh- question → statement order, tense back.</div>"
     },
     {
@@ -124,11 +124,11 @@ export const c9EngG1: ChapterContent = {
       "question": "<div style='text-align: justify;'>Indirect speech: The teacher said, \"The earth is round.\"</div>",
       "options": [
         "A):   …that the earth was round.",
-        "B):   …that the earth is round.",
-        "C):   …that the earth had been round.",
-        "D):   …the earth were round."
+        "B):   …that the earth had been round.",
+        "C):   …the earth were round.",
+        "D):   …that the earth is round."
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>Universal truths do not change tense.</div>"
     },
     {
@@ -148,11 +148,11 @@ export const c9EngG1: ChapterContent = {
       "question": "<div style='text-align: justify;'>In 'Please light the lamp', 'light' is a —</div>",
       "options": [
         "A):   noun",
-        "B):   verb",
-        "C):   adjective",
+        "B):   adjective",
+        "C):   verb",
         "D):   adverb"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>It shows an action — a verb.</div>"
     },
     {
@@ -171,12 +171,12 @@ export const c9EngG1: ChapterContent = {
       "id": "c9-eng-g1-mcq-13",
       "question": "<div style='text-align: justify;'>'The match was ___ because of rain.' (postponed)</div>",
       "options": [
-        "A):   put off",
-        "B):   put on",
-        "C):   put up",
-        "D):   put out"
+        "A):   put on",
+        "B):   put up",
+        "C):   put out",
+        "D):   put off"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>'Put off' means postpone.</div>"
     },
     {
@@ -184,23 +184,23 @@ export const c9EngG1: ChapterContent = {
       "question": "<div style='text-align: justify;'>'Each of the girls ___ a prize.'</div>",
       "options": [
         "A):   have",
-        "B):   has",
-        "C):   are having",
+        "B):   are having",
+        "C):   has",
         "D):   were"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>'Each' takes a singular verb.</div>"
     },
     {
       "id": "c9-eng-g1-mcq-15",
       "question": "<div style='text-align: justify;'>'Neither Asif nor his friends ___ there.'</div>",
       "options": [
-        "A):   was",
-        "B):   were",
+        "A):   were",
+        "B):   was",
         "C):   is",
         "D):   has been"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>The verb agrees with the nearer subject 'friends'.</div>"
     },
     {
@@ -208,11 +208,11 @@ export const c9EngG1: ChapterContent = {
       "question": "<div style='text-align: justify;'>'The news ___ good.'</div>",
       "options": [
         "A):   are",
-        "B):   is",
-        "C):   were",
+        "B):   were",
+        "C):   is",
         "D):   have"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>'News' is singular.</div>"
     },
     {
@@ -232,23 +232,23 @@ export const c9EngG1: ChapterContent = {
       "question": "<div style='text-align: justify;'>Passive of 'Close the door':</div>",
       "options": [
         "A):   The door is closed.",
-        "B):   Let the door be closed.",
-        "C):   The door was closed.",
-        "D):   Door be closed."
+        "B):   The door was closed.",
+        "C):   Door be closed.",
+        "D):   Let the door be closed."
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>Commands use 'Let … be + V3'.</div>"
     },
     {
       "id": "c9-eng-g1-mcq-19",
       "question": "<div style='text-align: justify;'>Choose the correct article: '___ hour ago'</div>",
       "options": [
-        "A):   A",
-        "B):   An",
+        "A):   An",
+        "B):   A",
         "C):   The",
         "D):   No article"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>'hour' begins with a vowel sound (silent h).</div>"
     },
     {

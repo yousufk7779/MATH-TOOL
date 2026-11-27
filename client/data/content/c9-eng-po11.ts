@@ -22,11 +22,11 @@ export const c9EngPo11: ChapterContent = {
       "question": "<div style='text-align: justify;'>Who wrote 'I Cannot Remember My Mother'?</div>",
       "options": [
         "A):   Sarojini Naidu",
-        "B):   Rabindranath Tagore",
-        "C):   Muhammad Iqbal",
+        "B):   Muhammad Iqbal",
+        "C):   Rabindranath Tagore",
         "D):   Gieve Patel"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>The poem is by Rabindranath Tagore.</div>"
     },
     {
@@ -34,11 +34,11 @@ export const c9EngPo11: ChapterContent = {
       "question": "<div style='text-align: justify;'>Tagore won the Nobel Prize in Literature in —</div>",
       "options": [
         "A):   1901",
-        "B):   1913",
-        "C):   1919",
+        "B):   1919",
+        "C):   1913",
         "D):   1929"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>He won it in 1913 for <i>Gitanjali</i>.</div>"
     },
     {
@@ -46,11 +46,11 @@ export const c9EngPo11: ChapterContent = {
       "question": "<div style='text-align: justify;'>For which work did Tagore win the Nobel Prize?</div>",
       "options": [
         "A):   Gora",
-        "B):   Gitanjali",
-        "C):   Kabuliwala",
+        "B):   Kabuliwala",
+        "C):   Gitanjali",
         "D):   The Home and the World"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>He won it for <i>Gitanjali</i>.</div>"
     },
     {
@@ -82,11 +82,11 @@ export const c9EngPo11: ChapterContent = {
       "question": "<div style='text-align: justify;'>When does a tune seem to hover over the poet's playthings?</div>",
       "options": [
         "A):   While he sleeps",
-        "B):   In the midst of his play",
-        "C):   At night",
-        "D):   In school"
+        "B):   At night",
+        "C):   In school",
+        "D):   In the midst of his play"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>'Only sometimes in the midst of my play.'</div>"
     },
     {
@@ -105,36 +105,36 @@ export const c9EngPo11: ChapterContent = {
       "id": "c9-eng-po11-mcq-8",
       "question": "<div style='text-align: justify;'>A cradle song is called a —</div>",
       "options": [
-        "A):   ballad",
-        "B):   lullaby",
+        "A):   lullaby",
+        "B):   ballad",
         "C):   hymn",
         "D):   sonnet"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>A cradle song is a lullaby.</div>"
     },
     {
       "id": "c9-eng-po11-mcq-9",
       "question": "<div style='text-align: justify;'>In which season does the smell of shiuli flowers float in the air?</div>",
       "options": [
-        "A):   Summer",
-        "B):   Early autumn",
+        "A):   Early autumn",
+        "B):   Summer",
         "C):   Winter",
         "D):   Monsoon"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>'When in the early autumn morning…'</div>"
     },
     {
       "id": "c9-eng-po11-mcq-10",
       "question": "<div style='text-align: justify;'>The scent of the morning service in the temple comes to him as the scent of —</div>",
       "options": [
-        "A):   flowers",
-        "B):   his mother",
+        "A):   his mother",
+        "B):   flowers",
         "C):   incense",
         "D):   the sea"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>It comes to him as the scent of his mother.</div>"
     },
     {
@@ -154,11 +154,11 @@ export const c9EngPo11: ChapterContent = {
       "question": "<div style='text-align: justify;'>What does the poet feel has spread all over the sky?</div>",
       "options": [
         "A):   The clouds",
-        "B):   The stillness of his mother's gaze",
-        "C):   The sunlight",
-        "D):   The scent of flowers"
+        "B):   The sunlight",
+        "C):   The scent of flowers",
+        "D):   The stillness of his mother's gaze"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>His mother's calm gaze seems to spread over the sky.</div>"
     },
     {
@@ -166,11 +166,11 @@ export const c9EngPo11: ChapterContent = {
       "question": "<div style='text-align: justify;'>'Gaze' means —</div>",
       "options": [
         "A):   a quick glance",
-        "B):   a long, steady look",
-        "C):   a smile",
-        "D):   a frown"
+        "B):   a smile",
+        "C):   a frown",
+        "D):   a long, steady look"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>To gaze is to look at something for a long time.</div>"
     },
     {
@@ -178,23 +178,23 @@ export const c9EngPo11: ChapterContent = {
       "question": "<div style='text-align: justify;'>'Shiuli' is a flower used in puja in —</div>",
       "options": [
         "A):   Kashmir",
-        "B):   Bengal",
-        "C):   Punjab",
+        "B):   Punjab",
+        "C):   Bengal",
         "D):   Kerala"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>The glossary says it is used in puja in Bengal.</div>"
     },
     {
       "id": "c9-eng-po11-mcq-15",
       "question": "<div style='text-align: justify;'>The poet's mother is —</div>",
       "options": [
-        "A):   alive and far away",
-        "B):   dead",
+        "A):   dead",
+        "B):   alive and far away",
         "C):   with him at home",
         "D):   in the temple"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>He cannot remember her, showing she died when he was very young.</div>"
     },
     {
@@ -202,11 +202,11 @@ export const c9EngPo11: ChapterContent = {
       "question": "<div style='text-align: justify;'>The first stanza appeals mainly to the sense of —</div>",
       "options": [
         "A):   sight",
-        "B):   sound",
-        "C):   smell",
-        "D):   touch"
+        "B):   smell",
+        "C):   touch",
+        "D):   sound"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>It is about a tune — sound.</div>"
     },
     {
@@ -214,11 +214,11 @@ export const c9EngPo11: ChapterContent = {
       "question": "<div style='text-align: justify;'>The second stanza appeals mainly to the sense of —</div>",
       "options": [
         "A):   sight",
-        "B):   sound",
-        "C):   smell",
+        "B):   smell",
+        "C):   sound",
         "D):   taste"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanation": "<div style='text-align: justify;'>It is about the smell of shiuli and the temple service.</div>"
     },
     {
@@ -238,11 +238,11 @@ export const c9EngPo11: ChapterContent = {
       "question": "<div style='text-align: justify;'>The poem is written in —</div>",
       "options": [
         "A):   rhyming couplets",
-        "B):   free verse",
-        "C):   sonnet form",
-        "D):   ballad metre"
+        "B):   sonnet form",
+        "C):   ballad metre",
+        "D):   free verse"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>It has no rhyme scheme or fixed line length.</div>"
     },
     {
@@ -250,11 +250,11 @@ export const c9EngPo11: ChapterContent = {
       "question": "<div style='text-align: justify;'>The tone of the poem is —</div>",
       "options": [
         "A):   humorous",
-        "B):   tender and sad",
-        "C):   angry",
+        "B):   angry",
+        "C):   tender and sad",
         "D):   proud"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>It gently expresses a child's longing for his mother.</div>"
     }
   ],

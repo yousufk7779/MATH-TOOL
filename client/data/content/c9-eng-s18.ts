@@ -23,11 +23,11 @@ export const c9EngS18: ChapterContent = {
       "question": "<div style='text-align: justify;'>Who wrote 'Old Man at the Bridge'?</div>",
       "options": [
         "A):   Ruskin Bond",
-        "B):   Ernest Hemingway",
-        "C):   O. Henry",
-        "D):   Oscar Wilde"
+        "B):   O. Henry",
+        "C):   Oscar Wilde",
+        "D):   Ernest Hemingway"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>The story is by Ernest Hemingway.</div>"
     },
     {
@@ -47,11 +47,11 @@ export const c9EngS18: ChapterContent = {
       "question": "<div style='text-align: justify;'>During World War I, Hemingway served as a —</div>",
       "options": [
         "A):   pilot",
-        "B):   volunteer ambulance driver",
-        "C):   general",
+        "B):   general",
+        "C):   volunteer ambulance driver",
         "D):   doctor"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>He was a volunteer ambulance driver in Italy.</div>"
     },
     {
@@ -82,36 +82,36 @@ export const c9EngS18: ChapterContent = {
       "id": "c9-eng-s18-mcq-6",
       "question": "<div style='text-align: justify;'>Why was the old man sitting by the road?</div>",
       "options": [
-        "A):   He was waiting for a friend",
-        "B):   He was too tired to go any farther",
+        "A):   He was too tired to go any farther",
+        "B):   He was waiting for a friend",
         "C):   He was guarding the bridge",
         "D):   He was lost"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>He was too tired to go any farther.</div>"
     },
     {
       "id": "c9-eng-s18-mcq-7",
       "question": "<div style='text-align: justify;'>Where did the old man come from?</div>",
       "options": [
-        "A):   Barcelona",
-        "B):   San Carlos",
+        "A):   San Carlos",
+        "B):   Barcelona",
         "C):   Tortosa",
         "D):   Madrid"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>He came from San Carlos.</div>"
     },
     {
       "id": "c9-eng-s18-mcq-8",
       "question": "<div style='text-align: justify;'>What was the old man doing in his town?</div>",
       "options": [
-        "A):   Farming",
-        "B):   Taking care of animals",
+        "A):   Taking care of animals",
+        "B):   Farming",
         "C):   Fighting",
         "D):   Teaching"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>'I was taking care of animals.'</div>"
     },
     {
@@ -130,12 +130,12 @@ export const c9EngS18: ChapterContent = {
       "id": "c9-eng-s18-mcq-10",
       "question": "<div style='text-align: justify;'>Why did the old man leave his town?</div>",
       "options": [
-        "A):   He was bored",
-        "B):   Because of the artillery",
+        "A):   Because of the artillery",
+        "B):   He was bored",
         "C):   To find work",
         "D):   To visit family"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>The captain told him to go because of the artillery.</div>"
     },
     {
@@ -143,11 +143,11 @@ export const c9EngS18: ChapterContent = {
       "question": "<div style='text-align: justify;'>Which animal did the old man think would be all right?</div>",
       "options": [
         "A):   The goats",
-        "B):   The cat",
-        "C):   The pigeons",
+        "B):   The pigeons",
+        "C):   The cat",
         "D):   None"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>'The cat, of course, will be all right.'</div>"
     },
     {
@@ -155,11 +155,11 @@ export const c9EngS18: ChapterContent = {
       "question": "<div style='text-align: justify;'>How old was the old man?</div>",
       "options": [
         "A):   Sixty-six",
-        "B):   Seventy-six",
-        "C):   Eighty-six",
+        "B):   Eighty-six",
+        "C):   Seventy-six",
         "D):   Seventy"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>He was seventy-six years old.</div>"
     },
     {
@@ -179,11 +179,11 @@ export const c9EngS18: ChapterContent = {
       "question": "<div style='text-align: justify;'>What did the old man say about politics?</div>",
       "options": [
         "A):   He supported the Fascists",
-        "B):   He was without politics",
-        "C):   He was a soldier",
-        "D):   He hated politics"
+        "B):   He was a soldier",
+        "C):   He hated politics",
+        "D):   He was without politics"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>'I am without politics.'</div>"
     },
     {
@@ -191,23 +191,23 @@ export const c9EngS18: ChapterContent = {
       "question": "<div style='text-align: justify;'>Where were the trucks going?</div>",
       "options": [
         "A):   Towards San Carlos",
-        "B):   Towards Barcelona",
-        "C):   Towards the Ebro",
-        "D):   Towards Madrid"
+        "B):   Towards the Ebro",
+        "C):   Towards Madrid",
+        "D):   Towards Barcelona"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>The trucks were going towards Barcelona.</div>"
     },
     {
       "id": "c9-eng-s18-mcq-16",
       "question": "<div style='text-align: justify;'>Why would the pigeons be safe, according to the narrator?</div>",
       "options": [
-        "A):   Someone fed them",
-        "B):   The dove cage was left unlocked, so they would fly",
+        "A):   The dove cage was left unlocked, so they would fly",
+        "B):   Someone fed them",
         "C):   They were in a basement",
         "D):   The soldiers took them"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>The cage was unlocked, so they could fly away.</div>"
     },
     {
@@ -215,11 +215,11 @@ export const c9EngS18: ChapterContent = {
       "question": "<div style='text-align: justify;'>On which day did the story take place?</div>",
       "options": [
         "A):   Christmas Day",
-        "B):   Easter Sunday",
-        "C):   New Year's Day",
-        "D):   Good Friday"
+        "B):   New Year's Day",
+        "C):   Good Friday",
+        "D):   Easter Sunday"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>It was Easter Sunday.</div>"
     },
     {
@@ -227,11 +227,11 @@ export const c9EngS18: ChapterContent = {
       "question": "<div style='text-align: justify;'>Who were advancing towards the Ebro?</div>",
       "options": [
         "A):   The British",
-        "B):   The Fascists",
-        "C):   The Americans",
-        "D):   The refugees"
+        "B):   The Americans",
+        "C):   The refugees",
+        "D):   The Fascists"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>The Fascists were advancing towards the Ebro.</div>"
     },
     {
@@ -251,11 +251,11 @@ export const c9EngS18: ChapterContent = {
       "question": "<div style='text-align: justify;'>The old man is best described as —</div>",
       "options": [
         "A):   a brave soldier",
-        "B):   an innocent victim of war",
-        "C):   a spy",
+        "B):   a spy",
+        "C):   an innocent victim of war",
         "D):   a rich farmer"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>He is an innocent civilian hurt by a war he had no part in.</div>"
     }
   ],

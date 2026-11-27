@@ -27,11 +27,11 @@ export const c9EngG2: ChapterContent = {
       "question": "<div style='text-align: justify;'>In a dialogue, the speaker's name is followed by a —</div>",
       "options": [
         "A):   comma",
-        "B):   colon",
-        "C):   full stop",
-        "D):   question mark"
+        "B):   full stop",
+        "C):   question mark",
+        "D):   colon"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>Write the name, then a colon, then the words spoken.</div>"
     },
     {
@@ -62,12 +62,12 @@ export const c9EngG2: ChapterContent = {
       "id": "c9-eng-g2-mcq-4",
       "question": "<div style='text-align: justify;'>The word limit for an e-mail or message in Term I is about —</div>",
       "options": [
-        "A):   20 words",
-        "B):   50 words",
+        "A):   50 words",
+        "B):   20 words",
         "C):   150 words",
         "D):   300 words"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>The syllabus gives about 50 words.</div>"
     },
     {
@@ -86,36 +86,36 @@ export const c9EngG2: ChapterContent = {
       "id": "c9-eng-g2-mcq-6",
       "question": "<div style='text-align: justify;'>A message is usually written in the —</div>",
       "options": [
-        "A):   first person",
-        "B):   second person",
-        "C):   third person",
+        "A):   third person",
+        "B):   first person",
+        "C):   second person",
         "D):   passive voice only"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>It reports what someone else said.</div>"
     },
     {
       "id": "c9-eng-g2-mcq-7",
       "question": "<div style='text-align: justify;'>The correct closing for a letter to the Headmaster is —</div>",
       "options": [
-        "A):   Yours lovingly",
-        "B):   Yours obediently",
+        "A):   Yours obediently",
+        "B):   Yours lovingly",
         "C):   Your friend",
         "D):   Bye"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>Students write 'Yours obediently' to the Headmaster.</div>"
     },
     {
       "id": "c9-eng-g2-mcq-8",
       "question": "<div style='text-align: justify;'>Which closing suits a formal letter to the Editor?</div>",
       "options": [
-        "A):   Yours faithfully",
-        "B):   Yours lovingly",
-        "C):   Your dear friend",
-        "D):   With love"
+        "A):   Yours lovingly",
+        "B):   Your dear friend",
+        "C):   With love",
+        "D):   Yours faithfully"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>Use 'Yours faithfully' in formal letters.</div>"
     },
     {
@@ -123,23 +123,23 @@ export const c9EngG2: ChapterContent = {
       "question": "<div style='text-align: justify;'>An informal letter does NOT need a —</div>",
       "options": [
         "A):   date",
-        "B):   salutation",
-        "C):   subject line",
+        "B):   subject line",
+        "C):   salutation",
         "D):   closing"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanation": "<div style='text-align: justify;'>Subject lines are for formal letters.</div>"
     },
     {
       "id": "c9-eng-g2-mcq-10",
       "question": "<div style='text-align: justify;'>A paragraph begins with a —</div>",
       "options": [
-        "A):   concluding sentence",
-        "B):   topic sentence",
+        "A):   topic sentence",
+        "B):   concluding sentence",
         "C):   question",
         "D):   title only"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>The topic sentence introduces the idea.</div>"
     },
     {
@@ -147,11 +147,11 @@ export const c9EngG2: ChapterContent = {
       "question": "<div style='text-align: justify;'>A diary entry is written in the —</div>",
       "options": [
         "A):   third person",
-        "B):   first person",
-        "C):   passive voice",
-        "D):   future tense"
+        "B):   passive voice",
+        "C):   future tense",
+        "D):   first person"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>It records your own feelings — first person.</div>"
     },
     {
@@ -159,23 +159,23 @@ export const c9EngG2: ChapterContent = {
       "question": "<div style='text-align: justify;'>What is written at the top of a diary entry?</div>",
       "options": [
         "A):   Subject",
-        "B):   Date and day",
-        "C):   Receiver's address",
+        "B):   Receiver's address",
+        "C):   Date and day",
         "D):   Heading NOTICE"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>Date, day and time go at the top.</div>"
     },
     {
       "id": "c9-eng-g2-mcq-13",
       "question": "<div style='text-align: justify;'>A notice is written —</div>",
       "options": [
-        "A):   inside a box",
-        "B):   as a dialogue",
-        "C):   without a date",
-        "D):   without a heading"
+        "A):   as a dialogue",
+        "B):   without a date",
+        "C):   without a heading",
+        "D):   inside a box"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>A notice is enclosed in a box.</div>"
     },
     {
@@ -183,11 +183,11 @@ export const c9EngG2: ChapterContent = {
       "question": "<div style='text-align: justify;'>The word limit for a notice is about —</div>",
       "options": [
         "A):   20 words",
-        "B):   50 words",
-        "C):   150 words",
+        "B):   150 words",
+        "C):   50 words",
         "D):   250 words"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>Notices are about 50 words.</div>"
     },
     {
@@ -206,36 +206,36 @@ export const c9EngG2: ChapterContent = {
       "id": "c9-eng-g2-mcq-16",
       "question": "<div style='text-align: justify;'>A speech usually begins with —</div>",
       "options": [
-        "A):   a greeting to the audience",
-        "B):   a subject line",
+        "A):   a subject line",
+        "B):   a greeting to the audience",
         "C):   the date",
         "D):   the word NOTICE"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanation": "<div style='text-align: justify;'>'Respected Headmaster, teachers and my dear friends…'</div>"
     },
     {
       "id": "c9-eng-g2-mcq-17",
       "question": "<div style='text-align: justify;'>An article contains a title and a —</div>",
       "options": [
-        "A):   by-line",
-        "B):   salutation",
-        "C):   subject line",
+        "A):   salutation",
+        "B):   subject line",
+        "C):   by-line",
         "D):   receiver's address"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>The by-line gives the writer's name.</div>"
     },
     {
       "id": "c9-eng-g2-mcq-18",
       "question": "<div style='text-align: justify;'>A good slogan is —</div>",
       "options": [
-        "A):   long and detailed",
-        "B):   short and catchy",
+        "A):   short and catchy",
+        "B):   long and detailed",
         "C):   written as a letter",
         "D):   in the passive voice"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>Slogans are short, catchy lines.</div>"
     },
     {
@@ -255,11 +255,11 @@ export const c9EngG2: ChapterContent = {
       "question": "<div style='text-align: justify;'>'Speed thrills but kills' is a slogan on —</div>",
       "options": [
         "A):   water",
-        "B):   road safety",
-        "C):   trees",
-        "D):   education"
+        "B):   trees",
+        "C):   education",
+        "D):   road safety"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>It warns against over-speeding.</div>"
     }
   ],

@@ -22,11 +22,11 @@ export const c9EngPo10: ChapterContent = {
       "question": "<div style='text-align: justify;'>Who wrote 'The Road Not Taken'?</div>",
       "options": [
         "A):   John Masefield",
-        "B):   Robert Frost",
-        "C):   William Wordsworth",
+        "B):   William Wordsworth",
+        "C):   Robert Frost",
         "D):   Robert Herrick"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>The poem is by Robert Frost.</div>"
     },
     {
@@ -45,12 +45,12 @@ export const c9EngPo10: ChapterContent = {
       "id": "c9-eng-po10-mcq-3",
       "question": "<div style='text-align: justify;'>How many times did Frost win the Pulitzer Prize for poetry?</div>",
       "options": [
-        "A):   Two",
-        "B):   Three",
-        "C):   Four",
+        "A):   Four",
+        "B):   Two",
+        "C):   Three",
         "D):   Five"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>He won it four times — 1924, 1931, 1937 and 1943.</div>"
     },
     {
@@ -58,11 +58,11 @@ export const c9EngPo10: ChapterContent = {
       "question": "<div style='text-align: justify;'>Frost's first book of poems, published in England in 1913, was —</div>",
       "options": [
         "A):   North of Boston",
-        "B):   A Boy's Will",
-        "C):   Mountain Interval",
+        "B):   Mountain Interval",
+        "C):   A Boy's Will",
         "D):   New Hampshire"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'><i>A Boy's Will</i> was published in 1913.</div>"
     },
     {
@@ -70,35 +70,35 @@ export const c9EngPo10: ChapterContent = {
       "question": "<div style='text-align: justify;'>Where did the two roads diverge?</div>",
       "options": [
         "A):   In a green field",
-        "B):   In a yellow wood",
-        "C):   In a city",
-        "D):   Near a river"
+        "B):   In a city",
+        "C):   Near a river",
+        "D):   In a yellow wood"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>'Two roads diverged in a yellow wood.'</div>"
     },
     {
       "id": "c9-eng-po10-mcq-6",
       "question": "<div style='text-align: justify;'>'Yellow wood' suggests the season of —</div>",
       "options": [
-        "A):   spring",
-        "B):   summer",
-        "C):   autumn",
+        "A):   autumn",
+        "B):   spring",
+        "C):   summer",
         "D):   winter"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>Yellow leaves suggest autumn.</div>"
     },
     {
       "id": "c9-eng-po10-mcq-7",
       "question": "<div style='text-align: justify;'>Why was the traveller sorry?</div>",
       "options": [
-        "A):   He was lost",
-        "B):   He could not travel both roads",
+        "A):   He could not travel both roads",
+        "B):   He was lost",
         "C):   He was tired",
         "D):   It was getting dark"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>He was sorry he could not travel both.</div>"
     },
     {
@@ -130,23 +130,23 @@ export const c9EngPo10: ChapterContent = {
       "question": "<div style='text-align: justify;'>'Wanted wear' means —</div>",
       "options": [
         "A):   needed repair",
-        "B):   had not been used much",
-        "C):   was worn out",
-        "D):   was crowded"
+        "B):   was worn out",
+        "C):   was crowded",
+        "D):   had not been used much"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>It means the road had not been used much.</div>"
     },
     {
       "id": "c9-eng-po10-mcq-11",
       "question": "<div style='text-align: justify;'>How had the passing worn the two roads?</div>",
       "options": [
-        "A):   The first much more",
-        "B):   Really about the same",
+        "A):   Really about the same",
+        "B):   The first much more",
         "C):   The second more",
         "D):   Neither at all"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>'Had worn them really about the same.'</div>"
     },
     {
@@ -154,11 +154,11 @@ export const c9EngPo10: ChapterContent = {
       "question": "<div style='text-align: justify;'>The leaves on both roads had —</div>",
       "options": [
         "A):   been swept away",
-        "B):   not been trodden black",
-        "C):   turned green",
-        "D):   covered the road with snow"
+        "B):   turned green",
+        "C):   covered the road with snow",
+        "D):   not been trodden black"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>'In leaves no step had trodden black.'</div>"
     },
     {
@@ -178,11 +178,11 @@ export const c9EngPo10: ChapterContent = {
       "question": "<div style='text-align: justify;'>Why did he doubt he would ever come back?</div>",
       "options": [
         "A):   The road was dangerous",
-        "B):   One way leads on to another",
-        "C):   He was going abroad",
-        "D):   He forgot the place"
+        "B):   He was going abroad",
+        "C):   He forgot the place",
+        "D):   One way leads on to another"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>'Knowing how way leads on to way.'</div>"
     },
     {
@@ -190,11 +190,11 @@ export const c9EngPo10: ChapterContent = {
       "question": "<div style='text-align: justify;'>How will the poet tell this story in the future?</div>",
       "options": [
         "A):   With a laugh",
-        "B):   With a sigh",
-        "C):   With anger",
+        "B):   With anger",
+        "C):   With a sigh",
         "D):   With pride"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>'I shall be telling this with a sigh.'</div>"
     },
     {
@@ -202,11 +202,11 @@ export const c9EngPo10: ChapterContent = {
       "question": "<div style='text-align: justify;'>Which road did the poet take?</div>",
       "options": [
         "A):   The one more travelled",
-        "B):   The one less travelled by",
-        "C):   Both roads",
-        "D):   Neither road"
+        "B):   Both roads",
+        "C):   Neither road",
+        "D):   The one less travelled by"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>'I took the one less travelled by.'</div>"
     },
     {
@@ -214,11 +214,11 @@ export const c9EngPo10: ChapterContent = {
       "question": "<div style='text-align: justify;'>The rhyme scheme of each stanza is —</div>",
       "options": [
         "A):   abab b",
-        "B):   abaab",
-        "C):   aabba",
+        "B):   aabba",
+        "C):   abaab",
         "D):   abcab"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>Each stanza follows abaab.</div>"
     },
     {
@@ -226,23 +226,23 @@ export const c9EngPo10: ChapterContent = {
       "question": "<div style='text-align: justify;'>In the poem, 'roads' is a metaphor for —</div>",
       "options": [
         "A):   journeys",
-        "B):   choices in life",
-        "C):   forests",
+        "B):   forests",
+        "C):   choices in life",
         "D):   friendships"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>Roads stand for the choices we make in life.</div>"
     },
     {
       "id": "c9-eng-po10-mcq-19",
       "question": "<div style='text-align: justify;'>'Diverged' means —</div>",
       "options": [
-        "A):   joined",
-        "B):   separated in different directions",
+        "A):   separated in different directions",
+        "B):   joined",
         "C):   ended",
         "D):   climbed"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>Diverged means separated and went different ways.</div>"
     },
     {

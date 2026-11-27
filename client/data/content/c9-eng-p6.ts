@@ -35,11 +35,11 @@ export const c9EngP6: ChapterContent = {
       "question": "<div style='text-align: justify;'>Gandhiji was born in —</div>",
       "options": [
         "A):   Ahmedabad",
-        "B):   Porbandar",
-        "C):   Rajkot",
+        "B):   Rajkot",
+        "C):   Porbandar",
         "D):   Durban"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>He was born in Porbandar on 2 October 1869.</div>"
     },
     {
@@ -47,11 +47,11 @@ export const c9EngP6: ChapterContent = {
       "question": "<div style='text-align: justify;'>Gandhiji went to South Africa as legal adviser in the office of an Indian firm in —</div>",
       "options": [
         "A):   Cape Town",
-        "B):   Durban",
-        "C):   Johannesburg",
-        "D):   Pretoria"
+        "B):   Johannesburg",
+        "C):   Pretoria",
+        "D):   Durban"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>He was retained as legal adviser in its office in Durban.</div>"
     },
     {
@@ -59,23 +59,23 @@ export const c9EngP6: ChapterContent = {
       "question": "<div style='text-align: justify;'>Parsi Rustomji was Gandhiji's —</div>",
       "options": [
         "A):   brother",
-        "B):   client and co-worker",
-        "C):   teacher",
-        "D):   landlord"
+        "B):   teacher",
+        "C):   landlord",
+        "D):   client and co-worker"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>He first became a co-worker and then a client.</div>"
     },
     {
       "id": "c9-eng-p6-mcq-5",
       "question": "<div style='text-align: justify;'>Rustomji imported goods from —</div>",
       "options": [
-        "A):   London and Paris",
-        "B):   Bombay and Calcutta",
+        "A):   Bombay and Calcutta",
+        "B):   London and Paris",
         "C):   Delhi and Madras",
         "D):   Natal and Cape Town"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>He was a large importer of goods from Bombay and Calcutta.</div>"
     },
     {
@@ -83,11 +83,11 @@ export const c9EngP6: ChapterContent = {
       "question": "<div style='text-align: justify;'>Why did nobody suspect Rustomji?</div>",
       "options": [
         "A):   He was very poor",
-        "B):   He was on the best terms with the customs officials",
-        "C):   He was a lawyer",
-        "D):   He never imported goods"
+        "B):   He was a lawyer",
+        "C):   He never imported goods",
+        "D):   He was on the best terms with the customs officials"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>He was on the best terms with the customs officials.</div>"
     },
     {
@@ -95,23 +95,23 @@ export const c9EngP6: ChapterContent = {
       "question": "<div style='text-align: justify;'>The Gujarati poet Akho compared theft to —</div>",
       "options": [
         "A):   fire",
-        "B):   quicksilver",
-        "C):   smoke",
+        "B):   smoke",
+        "C):   quicksilver",
         "D):   water"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>Theft, like quicksilver, won't be suppressed.</div>"
     },
     {
       "id": "c9-eng-p6-mcq-8",
       "question": "<div style='text-align: justify;'>Rustomji addressed Gandhiji as —</div>",
       "options": [
-        "A):   Sir",
-        "B):   Bhai",
+        "A):   Bhai",
+        "B):   Sir",
         "C):   Bapu",
         "D):   Sahib"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>He said, 'Bhai. I have deceived you.'</div>"
     },
     {
@@ -130,12 +130,12 @@ export const c9EngP6: ChapterContent = {
       "id": "c9-eng-p6-mcq-10",
       "question": "<div style='text-align: justify;'>According to Gandhiji, Rustomji had wronged —</div>",
       "options": [
-        "A):   Gandhiji",
-        "B):   the government",
+        "A):   the government",
+        "B):   Gandhiji",
         "C):   his family",
         "D):   his counsel"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>'You have wronged not me but the government.'</div>"
     },
     {
@@ -143,11 +143,11 @@ export const c9EngP6: ChapterContent = {
       "question": "<div style='text-align: justify;'>The actual offence detected involved —</div>",
       "options": [
         "A):   a huge sum",
-        "B):   a trifling sum",
-        "C):   no money",
-        "D):   gold"
+        "B):   no money",
+        "C):   gold",
+        "D):   a trifling sum"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>The actual offence detected involved a trifling sum.</div>"
     },
     {
@@ -155,23 +155,23 @@ export const c9EngP6: ChapterContent = {
       "question": "<div style='text-align: justify;'>The counsel said the case would be tried by a —</div>",
       "options": [
         "A):   judge alone",
-        "B):   Natal jury",
-        "C):   British court",
+        "B):   British court",
+        "C):   Natal jury",
         "D):   panchayat"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>A Natal jury would be the last to acquit an Indian.</div>"
     },
     {
       "id": "c9-eng-p6-mcq-13",
       "question": "<div style='text-align: justify;'>According to Gandhiji, where does the shame lie?</div>",
       "options": [
-        "A):   In going to jail",
-        "B):   In committing the offence",
+        "A):   In committing the offence",
+        "B):   In going to jail",
         "C):   In paying a penalty",
         "D):   In confessing"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>The shame lies in committing the offence.</div>"
     },
     {
@@ -179,11 +179,11 @@ export const c9EngP6: ChapterContent = {
       "question": "<div style='text-align: justify;'>What did Gandhiji call the real penance?</div>",
       "options": [
         "A):   Going to jail",
-        "B):   Resolving never to smuggle again",
-        "C):   Paying a fine",
+        "B):   Paying a fine",
+        "C):   Resolving never to smuggle again",
         "D):   Leaving the country"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>The real penance lies in resolving never to smuggle again.</div>"
     },
     {
@@ -191,11 +191,11 @@ export const c9EngP6: ChapterContent = {
       "question": "<div style='text-align: justify;'>Whose guidance did the Customs Officer have to follow?</div>",
       "options": [
         "A):   The Governor",
-        "B):   The Attorney General",
-        "C):   The Judge",
-        "D):   The Mayor"
+        "B):   The Judge",
+        "C):   The Mayor",
+        "D):   The Attorney General"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>'I must be guided by the Attorney General.'</div>"
     },
     {
@@ -203,11 +203,11 @@ export const c9EngP6: ChapterContent = {
       "question": "<div style='text-align: justify;'>'I see you will never take a no for an answer' shows Gandhiji's —</div>",
       "options": [
         "A):   anger",
-        "B):   persistence",
-        "C):   pride",
+        "B):   pride",
+        "C):   persistence",
         "D):   fear"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>The remark was extorted by his persistence and frankness.</div>"
     },
     {
@@ -226,12 +226,12 @@ export const c9EngP6: ChapterContent = {
       "id": "c9-eng-p6-mcq-18",
       "question": "<div style='text-align: justify;'>Rustomji had to pay a penalty equal to —</div>",
       "options": [
-        "A):   the amount smuggled",
-        "B):   twice the amount smuggled",
+        "A):   twice the amount smuggled",
+        "B):   the amount smuggled",
         "C):   half the amount smuggled",
         "D):   ten times the amount"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>He paid a penalty equal to twice the amount confessed.</div>"
     },
     {

@@ -21,12 +21,12 @@ export const c9EngPo14: ChapterContent = {
       "id": "c9-eng-po14-mcq-1",
       "question": "<div style='text-align: justify;'>Who wrote 'To the Cuckoo'?</div>",
       "options": [
-        "A):   P. B. Shelley",
-        "B):   William Wordsworth",
+        "A):   William Wordsworth",
+        "B):   P. B. Shelley",
         "C):   John Keats",
         "D):   Robert Frost"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>The poem is by William Wordsworth.</div>"
     },
     {
@@ -34,11 +34,11 @@ export const c9EngPo14: ChapterContent = {
       "question": "<div style='text-align: justify;'>Wordsworth was born in —</div>",
       "options": [
         "A):   London",
-        "B):   Cockermouth, Cumberland",
-        "C):   Stratford-upon-Avon",
-        "D):   Dublin"
+        "B):   Stratford-upon-Avon",
+        "C):   Dublin",
+        "D):   Cockermouth, Cumberland"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>He was born in Cockermouth, Cumberland, on 7 April 1770.</div>"
     },
     {
@@ -58,47 +58,47 @@ export const c9EngPo14: ChapterContent = {
       "question": "<div style='text-align: justify;'>The poet calls the cuckoo a 'Blithe —'</div>",
       "options": [
         "A):   Singer",
-        "B):   New-comer",
-        "C):   Wanderer",
+        "B):   Wanderer",
+        "C):   New-comer",
         "D):   Stranger"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>'O Blithe New-comer!'</div>"
     },
     {
       "id": "c9-eng-po14-mcq-5",
       "question": "<div style='text-align: justify;'>'Blithe' means —</div>",
       "options": [
-        "A):   sad",
-        "B):   cheerful and carefree",
+        "A):   cheerful and carefree",
+        "B):   sad",
         "C):   shy",
         "D):   noisy"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>Blithe means cheerful and carefree.</div>"
     },
     {
       "id": "c9-eng-po14-mcq-6",
       "question": "<div style='text-align: justify;'>The poet wonders whether to call the cuckoo a bird or a —</div>",
       "options": [
-        "A):   spirit",
-        "B):   wandering Voice",
+        "A):   wandering Voice",
+        "B):   spirit",
         "C):   flower",
         "D):   child"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>'Or but a wandering Voice?'</div>"
     },
     {
       "id": "c9-eng-po14-mcq-7",
       "question": "<div style='text-align: justify;'>Where is the poet when he hears the cuckoo's 'twofold shout'?</div>",
       "options": [
-        "A):   In a boat",
-        "B):   Lying on the grass",
+        "A):   Lying on the grass",
+        "B):   In a boat",
         "C):   In school",
         "D):   On a hill top"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>'While I am lying on the grass.'</div>"
     },
     {
@@ -130,11 +130,11 @@ export const c9EngPo14: ChapterContent = {
       "question": "<div style='text-align: justify;'>The cuckoo is called the 'darling of the —'</div>",
       "options": [
         "A):   Summer",
-        "B):   Spring",
-        "C):   Autumn",
+        "B):   Autumn",
+        "C):   Spring",
         "D):   Winter"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>'Thrice welcome, darling of the Spring!'</div>"
     },
     {
@@ -142,11 +142,11 @@ export const c9EngPo14: ChapterContent = {
       "question": "<div style='text-align: justify;'>To the poet, the cuckoo is 'no bird, but an invisible thing, a voice, a —'</div>",
       "options": [
         "A):   song",
-        "B):   mystery",
-        "C):   dream",
+        "B):   dream",
+        "C):   mystery",
         "D):   shadow"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>'A voice, a mystery.'</div>"
     },
     {
@@ -154,11 +154,11 @@ export const c9EngPo14: ChapterContent = {
       "question": "<div style='text-align: justify;'>When did the poet first listen to the cuckoo?</div>",
       "options": [
         "A):   In old age",
-        "B):   In his schoolboy days",
-        "C):   In France",
-        "D):   At university"
+        "B):   In France",
+        "C):   At university",
+        "D):   In his schoolboy days"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>'The same whom in my schoolboy days I listened to.'</div>"
     },
     {
@@ -166,11 +166,11 @@ export const c9EngPo14: ChapterContent = {
       "question": "<div style='text-align: justify;'>Where did the poet look for the cuckoo as a boy?</div>",
       "options": [
         "A):   In houses",
-        "B):   In bush, and tree, and sky",
-        "C):   In the river",
-        "D):   In books"
+        "B):   In the river",
+        "C):   In books",
+        "D):   In bush, and tree, and sky"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>He looked 'in bush, and tree, and sky'.</div>"
     },
     {
@@ -178,11 +178,11 @@ export const c9EngPo14: ChapterContent = {
       "question": "<div style='text-align: justify;'>The cuckoo was 'still longed for, never —'</div>",
       "options": [
         "A):   heard",
-        "B):   seen",
-        "C):   loved",
-        "D):   forgotten"
+        "B):   loved",
+        "C):   forgotten",
+        "D):   seen"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>'Still longed for, never seen.'</div>"
     },
     {
@@ -202,11 +202,11 @@ export const c9EngPo14: ChapterContent = {
       "question": "<div style='text-align: justify;'>The cuckoo makes the earth seem —</div>",
       "options": [
         "A):   dull and dry",
-        "B):   an unsubstantial, faery place",
-        "C):   a battlefield",
+        "B):   a battlefield",
+        "C):   an unsubstantial, faery place",
         "D):   a desert"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>'An unsubstantial, faery place.'</div>"
     },
     {
@@ -214,11 +214,11 @@ export const c9EngPo14: ChapterContent = {
       "question": "<div style='text-align: justify;'>The poet calls the cuckoo a 'blessed —' at the end.</div>",
       "options": [
         "A):   Voice",
-        "B):   Bird",
-        "C):   Spirit",
-        "D):   Friend"
+        "B):   Spirit",
+        "C):   Friend",
+        "D):   Bird"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>'O blessed Bird!'</div>"
     },
     {
@@ -226,23 +226,23 @@ export const c9EngPo14: ChapterContent = {
       "question": "<div style='text-align: justify;'>The rhyme scheme of each stanza is —</div>",
       "options": [
         "A):   aabb",
-        "B):   abab",
-        "C):   abba",
+        "B):   abba",
+        "C):   abab",
         "D):   abcb"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>heard/rejoice/Bird/Voice — abab.</div>"
     },
     {
       "id": "c9-eng-po14-mcq-19",
       "question": "<div style='text-align: justify;'>Who is personified in the poem?</div>",
       "options": [
-        "A):   The sun",
-        "B):   The cuckoo",
+        "A):   The cuckoo",
+        "B):   The sun",
         "C):   The poet",
         "D):   The valley"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>The cuckoo is addressed and described like a person.</div>"
     },
     {

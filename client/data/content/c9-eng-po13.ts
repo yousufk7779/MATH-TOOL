@@ -21,12 +21,12 @@ export const c9EngPo13: ChapterContent = {
       "id": "c9-eng-po13-mcq-1",
       "question": "<div style='text-align: justify;'>Who wrote 'Cart Driver'?</div>",
       "options": [
-        "A):   Sarojini Naidu",
-        "B):   Padma Sachdev",
+        "A):   Padma Sachdev",
+        "B):   Sarojini Naidu",
         "C):   Gieve Patel",
         "D):   Mahjoor"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>The poem is by Padma Sachdev.</div>"
     },
     {
@@ -34,23 +34,23 @@ export const c9EngPo13: ChapterContent = {
       "question": "<div style='text-align: justify;'>In which language did Padma Sachdev write?</div>",
       "options": [
         "A):   Kashmiri",
-        "B):   Dogri",
-        "C):   Urdu",
+        "B):   Urdu",
+        "C):   Dogri",
         "D):   Punjabi"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>She was a leading Dogri poet.</div>"
     },
     {
       "id": "c9-eng-po13-mcq-3",
       "question": "<div style='text-align: justify;'>Who translated the poem into English?</div>",
       "options": [
-        "A):   Dr. Karan Singh",
-        "B):   R. N. Tagore",
-        "C):   Neerja Mattoo",
-        "D):   Ved Pal Deep"
+        "A):   R. N. Tagore",
+        "B):   Neerja Mattoo",
+        "C):   Ved Pal Deep",
+        "D):   Dr. Karan Singh"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>It was translated from Dogri by Dr. Karan Singh.</div>"
     },
     {
@@ -58,11 +58,11 @@ export const c9EngPo13: ChapterContent = {
       "question": "<div style='text-align: justify;'>Padma Sachdev received the Sahitya Akademi Award in —</div>",
       "options": [
         "A):   1961",
-        "B):   1971",
-        "C):   1981",
+        "B):   1981",
+        "C):   1971",
         "D):   1991"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>She received it in 1971.</div>"
     },
     {
@@ -70,11 +70,11 @@ export const c9EngPo13: ChapterContent = {
       "question": "<div style='text-align: justify;'>The poem opens in the —</div>",
       "options": [
         "A):   noisy market",
-        "B):   fearful silence of the forest",
-        "C):   village fair",
+        "B):   village fair",
+        "C):   fearful silence of the forest",
         "D):   river bank"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>'In the fearful silence of the forest…'</div>"
     },
     {
@@ -94,11 +94,11 @@ export const c9EngPo13: ChapterContent = {
       "question": "<div style='text-align: justify;'>Why is the bulbul out at night?</div>",
       "options": [
         "A):   To sing",
-        "B):   To find food for its little ones",
-        "C):   To escape a cat",
-        "D):   To build a nest"
+        "B):   To escape a cat",
+        "C):   To build a nest",
+        "D):   To find food for its little ones"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>It is finding food for its four little ones.</div>"
     },
     {
@@ -106,11 +106,11 @@ export const c9EngPo13: ChapterContent = {
       "question": "<div style='text-align: justify;'>How many little ones does the bulbul have?</div>",
       "options": [
         "A):   Two",
-        "B):   Three",
-        "C):   Four",
+        "B):   Four",
+        "C):   Three",
         "D):   Five"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanation": "<div style='text-align: justify;'>'To find food for its four little ones.'</div>"
     },
     {
@@ -118,11 +118,11 @@ export const c9EngPo13: ChapterContent = {
       "question": "<div style='text-align: justify;'>What does the bulbul carry in its beak?</div>",
       "options": [
         "A):   A worm",
-        "B):   A grain",
-        "C):   A twig",
-        "D):   A leaf"
+        "B):   A twig",
+        "C):   A leaf",
+        "D):   A grain"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>'With a grain in its beak.'</div>"
     },
     {
@@ -130,11 +130,11 @@ export const c9EngPo13: ChapterContent = {
       "question": "<div style='text-align: justify;'>'Fledglings' are —</div>",
       "options": [
         "A):   old birds",
-        "B):   young birds with new flight feathers",
-        "C):   eggs",
-        "D):   nests"
+        "B):   eggs",
+        "C):   nests",
+        "D):   young birds with new flight feathers"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>Fledglings are young birds just getting their feathers.</div>"
     },
     {
@@ -153,24 +153,24 @@ export const c9EngPo13: ChapterContent = {
       "id": "c9-eng-po13-mcq-12",
       "question": "<div style='text-align: justify;'>What sound makes the bulbul hide in the bushes?</div>",
       "options": [
-        "A):   Thunder",
-        "B):   Sound of wheels and crackling leaves",
+        "A):   Sound of wheels and crackling leaves",
+        "B):   Thunder",
         "C):   A gunshot",
         "D):   Footsteps"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>A sound of wheels and dry leaves crackling.</div>"
     },
     {
       "id": "c9-eng-po13-mcq-13",
       "question": "<div style='text-align: justify;'>What does the bulbul see?</div>",
       "options": [
-        "A):   A hunter",
-        "B):   A bullock cart laden with goods",
+        "A):   A bullock cart laden with goods",
+        "B):   A hunter",
         "C):   A fire",
         "D):   A tiger"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>It sees a bullock cart laden with goods.</div>"
     },
     {
@@ -178,11 +178,11 @@ export const c9EngPo13: ChapterContent = {
       "question": "<div style='text-align: justify;'>How are the bullocks moving?</div>",
       "options": [
         "A):   Fast",
-        "B):   By themselves, heads down",
-        "C):   Backwards",
+        "B):   Backwards",
+        "C):   By themselves, heads down",
         "D):   With the driver guiding them"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>The bullocks move by themselves, heads down.</div>"
     },
     {
@@ -190,11 +190,11 @@ export const c9EngPo13: ChapterContent = {
       "question": "<div style='text-align: justify;'>What is the cart driver doing?</div>",
       "options": [
         "A):   Singing",
-        "B):   Sleeping and snoring",
-        "C):   Smoking",
-        "D):   Driving carefully"
+        "B):   Smoking",
+        "C):   Driving carefully",
+        "D):   Sleeping and snoring"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>The driver is asleep, snoring.</div>"
     },
     {
@@ -202,23 +202,23 @@ export const c9EngPo13: ChapterContent = {
       "question": "<div style='text-align: justify;'>What covers the driver's eyes?</div>",
       "options": [
         "A):   His hands",
-        "B):   The end of his turban",
-        "C):   A blanket",
+        "B):   A blanket",
+        "C):   The end of his turban",
         "D):   His cap"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>His eyes are covered with the end of his turban.</div>"
     },
     {
       "id": "c9-eng-po13-mcq-17",
       "question": "<div style='text-align: justify;'>The bulbul fears that the driver's — may overturn.</div>",
       "options": [
-        "A):   cart",
-        "B):   hookah",
+        "A):   hookah",
+        "B):   cart",
         "C):   lantern",
         "D):   basket"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>'The cart drivers' hookah overturns!'</div>"
     },
     {
@@ -249,12 +249,12 @@ export const c9EngPo13: ChapterContent = {
       "id": "c9-eng-po13-mcq-20",
       "question": "<div style='text-align: justify;'>'In the throes of fear' means —</div>",
       "options": [
-        "A):   free from fear",
-        "B):   going through great fear",
+        "A):   going through great fear",
+        "B):   free from fear",
         "C):   laughing at fear",
         "D):   causing fear"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>In the throes of means experiencing something difficult or painful.</div>"
     }
   ],

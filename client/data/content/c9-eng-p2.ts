@@ -27,11 +27,11 @@ export const c9EngP2: ChapterContent = {
       "question": "<div style='text-align: justify;'>Who wrote <i>Gulliver's Travels</i>?</div>",
       "options": [
         "A):   Jerome K. Jerome",
-        "B):   Jonathan Swift",
-        "C):   William Shakespeare",
-        "D):   George Orwell"
+        "B):   William Shakespeare",
+        "C):   George Orwell",
+        "D):   Jonathan Swift"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'><i>Gulliver's Travels</i> (1726) is Jonathan Swift's masterpiece.</div>"
     },
     {
@@ -40,10 +40,10 @@ export const c9EngP2: ChapterContent = {
       "options": [
         "A):   London",
         "B):   Walsall",
-        "C):   Dublin",
-        "D):   Edinburgh"
+        "C):   Edinburgh",
+        "D):   Dublin"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>Swift was born in Dublin and educated at Trinity College there.</div>"
     },
     {
@@ -62,12 +62,12 @@ export const c9EngP2: ChapterContent = {
       "id": "c9-eng-p2-mcq-4",
       "question": "<div style='text-align: justify;'>How tall were the people of Lilliput?</div>",
       "options": [
-        "A):   Not more than six inches",
-        "B):   About one foot",
+        "A):   About one foot",
+        "B):   Not more than six inches",
         "C):   About two feet",
         "D):   As tall as Gulliver"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanation": "<div style='text-align: justify;'>Lilliput was inhabited by people not more than six inches tall.</div>"
     },
     {
@@ -75,11 +75,11 @@ export const c9EngP2: ChapterContent = {
       "question": "<div style='text-align: justify;'>Who was Reldresal?</div>",
       "options": [
         "A):   The Emperor of Blefuscu",
-        "B):   The Chief Secretary for Private Affairs",
-        "C):   A scout",
-        "D):   The young Prince"
+        "B):   A scout",
+        "C):   The young Prince",
+        "D):   The Chief Secretary for Private Affairs"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>Reldresal was the Chief Secretary for Private Affairs.</div>"
     },
     {
@@ -99,59 +99,59 @@ export const c9EngP2: ChapterContent = {
       "question": "<div style='text-align: justify;'>The two parties of Lilliput differed in —</div>",
       "options": [
         "A):   their religion",
-        "B):   the heels of their shoes",
-        "C):   their language",
-        "D):   their clothes"
+        "B):   their language",
+        "C):   their clothes",
+        "D):   the heels of their shoes"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>They were called High Heels and Low Heels after the heels of their shoes.</div>"
     },
     {
       "id": "c9-eng-p2-mcq-8",
       "question": "<div style='text-align: justify;'>Why did the young Prince walk with a limp?</div>",
       "options": [
-        "A):   He had hurt his leg",
-        "B):   One of his heels was higher than the other",
+        "A):   One of his heels was higher than the other",
+        "B):   He had hurt his leg",
         "C):   He was ill",
         "D):   He wore no shoes"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>One heel was higher than the other, showing sympathy for the High Heels.</div>"
     },
     {
       "id": "c9-eng-p2-mcq-9",
       "question": "<div style='text-align: justify;'>For how long had Lilliput and Blefuscu been at war?</div>",
       "options": [
-        "A):   Thirty-six moons",
-        "B):   Twelve moons",
-        "C):   Three years",
+        "A):   Twelve moons",
+        "B):   Three years",
+        "C):   Thirty-six moons",
         "D):   Fifty years"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>The war had lasted thirty-six 'moons'.</div>"
     },
     {
       "id": "c9-eng-p2-mcq-10",
       "question": "<div style='text-align: justify;'>A 'moon' in Lilliput was about —</div>",
       "options": [
-        "A):   one week",
-        "B):   28 days",
+        "A):   28 days",
+        "B):   one week",
         "C):   one year",
         "D):   one day"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>The book's footnote says a 'moon' is 28 days, about a twelfth of a year.</div>"
     },
     {
       "id": "c9-eng-p2-mcq-11",
       "question": "<div style='text-align: justify;'>Why was breaking eggs at the bigger end prohibited?</div>",
       "options": [
-        "A):   Eggs were costly",
-        "B):   The Emperor's grandfather cut his finger doing so",
+        "A):   The Emperor's grandfather cut his finger doing so",
+        "B):   Eggs were costly",
         "C):   Blefuscu ordered it",
         "D):   It was against science"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>As a boy, the grandfather cut his finger breaking an egg at the bigger end.</div>"
     },
     {
@@ -171,11 +171,11 @@ export const c9EngP2: ChapterContent = {
       "question": "<div style='text-align: justify;'>The holy book said believers shall break their egg at the —</div>",
       "options": [
         "A):   bigger end",
-        "B):   smaller end",
-        "C):   convenient end",
+        "B):   convenient end",
+        "C):   smaller end",
         "D):   middle"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanation": "<div style='text-align: justify;'>'All believers shall break their egg at the convenient end.'</div>"
     },
     {
@@ -183,11 +183,11 @@ export const c9EngP2: ChapterContent = {
       "question": "<div style='text-align: justify;'>Blefuscu was situated to the — of Lilliput.</div>",
       "options": [
         "A):   south-west",
-        "B):   north-east",
-        "C):   north-west",
+        "B):   north-west",
+        "C):   north-east",
         "D):   south-east"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>Blefuscu is an island to the north-east of Lilliput.</div>"
     },
     {
@@ -219,11 +219,11 @@ export const c9EngP2: ChapterContent = {
       "question": "<div style='text-align: justify;'>How did Gulliver protect his eyes from the arrows?</div>",
       "options": [
         "A):   He closed them",
-        "B):   He put on his eye-glasses",
-        "C):   He covered them with cloth",
-        "D):   He swam under water"
+        "B):   He covered them with cloth",
+        "C):   He swam under water",
+        "D):   He put on his eye-glasses"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>He quickly put on his eye-glasses.</div>"
     },
     {
@@ -231,35 +231,35 @@ export const c9EngP2: ChapterContent = {
       "question": "<div style='text-align: justify;'>Why did the ships not move at first?</div>",
       "options": [
         "A):   They were too heavy",
-        "B):   They were held fast by their anchors",
-        "C):   The cords broke",
+        "B):   The cords broke",
+        "C):   They were held fast by their anchors",
         "D):   The water was too shallow"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>The ships were held by their anchors until Gulliver cut the cables.</div>"
     },
     {
       "id": "c9-eng-p2-mcq-19",
       "question": "<div style='text-align: justify;'>Why did the Emperor's court think Gulliver had drowned?</div>",
       "options": [
-        "A):   He was up to his neck in water",
-        "B):   He was hidden by the ships' sails",
+        "A):   He was hidden by the ships' sails",
+        "B):   He was up to his neck in water",
         "C):   It was dark",
         "D):   He had swum to Blefuscu"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanation": "<div style='text-align: justify;'>They could not see him because he was up to his neck in water.</div>"
     },
     {
       "id": "c9-eng-p2-mcq-20",
       "question": "<div style='text-align: justify;'>How did the Emperor reward Gulliver?</div>",
       "options": [
-        "A):   Gave him gold",
-        "B):   Made him a Great Lord",
+        "A):   Made him a Great Lord",
+        "B):   Gave him gold",
         "C):   Set him free",
         "D):   Gave him a ship"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>The Emperor made him a Great Lord on the spot.</div>"
     }
   ],

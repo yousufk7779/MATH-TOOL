@@ -23,23 +23,23 @@ export const c9EngS19: ChapterContent = {
       "question": "<div style='text-align: justify;'>Who wrote 'The Last Leaf'?</div>",
       "options": [
         "A):   Saki",
-        "B):   O. Henry",
-        "C):   Oscar Wilde",
-        "D):   Hemingway"
+        "B):   Oscar Wilde",
+        "C):   Hemingway",
+        "D):   O. Henry"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>The story is by O. Henry.</div>"
     },
     {
       "id": "c9-eng-s19-mcq-2",
       "question": "<div style='text-align: justify;'>O. Henry's real name was —</div>",
       "options": [
-        "A):   William Sydney Porter",
-        "B):   Hector Hugh Munro",
+        "A):   Hector Hugh Munro",
+        "B):   William Sydney Porter",
         "C):   Samuel Clemens",
         "D):   Eric Blair"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanation": "<div style='text-align: justify;'>O. Henry was the pen name of William Sydney Porter.</div>"
     },
     {
@@ -72,10 +72,10 @@ export const c9EngS19: ChapterContent = {
       "options": [
         "A):   Ground floor",
         "B):   First",
-        "C):   Third",
-        "D):   Fifth"
+        "C):   Fifth",
+        "D):   Third"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>The flat was on the third storey of an old house.</div>"
     },
     {
@@ -83,23 +83,23 @@ export const c9EngS19: ChapterContent = {
       "question": "<div style='text-align: justify;'>What illness did Johnsy suffer from?</div>",
       "options": [
         "A):   Malaria",
-        "B):   Pneumonia",
-        "C):   Typhoid",
+        "B):   Typhoid",
+        "C):   Pneumonia",
         "D):   Fever"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>She had pneumonia.</div>"
     },
     {
       "id": "c9-eng-s19-mcq-7",
       "question": "<div style='text-align: justify;'>In which month did Johnsy fall ill?</div>",
       "options": [
-        "A):   October",
-        "B):   November",
+        "A):   November",
+        "B):   October",
         "C):   December",
         "D):   January"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>She fell ill in November.</div>"
     },
     {
@@ -118,12 +118,12 @@ export const c9EngS19: ChapterContent = {
       "id": "c9-eng-s19-mcq-9",
       "question": "<div style='text-align: justify;'>What was Johnsy counting?</div>",
       "options": [
-        "A):   Stars",
-        "B):   Leaves on an ivy creeper",
+        "A):   Leaves on an ivy creeper",
+        "B):   Stars",
         "C):   Days",
         "D):   Raindrops"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>She was counting the falling ivy leaves.</div>"
     },
     {
@@ -131,11 +131,11 @@ export const c9EngS19: ChapterContent = {
       "question": "<div style='text-align: justify;'>Johnsy believed she would die when —</div>",
       "options": [
         "A):   winter came",
-        "B):   the last leaf fell",
-        "C):   Sue left",
+        "B):   Sue left",
+        "C):   the last leaf fell",
         "D):   the doctor stopped coming"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>'When the last leaf falls, I will die.'</div>"
     },
     {
@@ -144,10 +144,10 @@ export const c9EngS19: ChapterContent = {
       "options": [
         "A):   Forty",
         "B):   Fifty",
-        "C):   Sixty",
-        "D):   Seventy"
+        "C):   Seventy",
+        "D):   Sixty"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>He was a sixty-year-old painter.</div>"
     },
     {
@@ -155,35 +155,35 @@ export const c9EngS19: ChapterContent = {
       "question": "<div style='text-align: justify;'>Where did Behrman live?</div>",
       "options": [
         "A):   On the top floor",
-        "B):   On the ground floor",
-        "C):   Next door",
+        "B):   Next door",
+        "C):   On the ground floor",
         "D):   Across the street"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>Behrman lived on the ground floor.</div>"
     },
     {
       "id": "c9-eng-s19-mcq-13",
       "question": "<div style='text-align: justify;'>What was Behrman's lifelong dream?</div>",
       "options": [
-        "A):   To become rich",
-        "B):   To paint a masterpiece",
+        "A):   To paint a masterpiece",
+        "B):   To become rich",
         "C):   To travel",
         "D):   To marry"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>His dream was to paint a masterpiece.</div>"
     },
     {
       "id": "c9-eng-s19-mcq-14",
       "question": "<div style='text-align: justify;'>Why did Sue want Behrman upstairs?</div>",
       "options": [
-        "A):   To repair the window",
-        "B):   To be her model for an old miner",
+        "A):   To be her model for an old miner",
+        "B):   To repair the window",
         "C):   To cook",
         "D):   To see the doctor"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>She needed him as a model for painting an old miner.</div>"
     },
     {
@@ -203,23 +203,23 @@ export const c9EngS19: ChapterContent = {
       "question": "<div style='text-align: justify;'>What did Sue give Johnsy after she regained hope?</div>",
       "options": [
         "A):   Flowers",
-        "B):   Hot soup and a mirror",
-        "C):   Paints",
+        "B):   Paints",
+        "C):   Hot soup and a mirror",
         "D):   A letter"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>She gave her hot soup and a mirror.</div>"
     },
     {
       "id": "c9-eng-s19-mcq-17",
       "question": "<div style='text-align: justify;'>What did Behrman die of?</div>",
       "options": [
-        "A):   Old age",
-        "B):   Pneumonia",
+        "A):   Pneumonia",
+        "B):   Old age",
         "C):   A fall",
         "D):   Heart attack"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>Behrman died of pneumonia.</div>"
     },
     {
@@ -227,11 +227,11 @@ export const c9EngS19: ChapterContent = {
       "question": "<div style='text-align: justify;'>What was found near Behrman's bed?</div>",
       "options": [
         "A):   A letter",
-        "B):   A ladder, a lantern and paints",
-        "C):   Medicines",
+        "B):   Medicines",
+        "C):   A ladder, a lantern and paints",
         "D):   Money"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>A ladder, a lighted lantern, brushes and green and yellow paints.</div>"
     },
     {
@@ -239,11 +239,11 @@ export const c9EngS19: ChapterContent = {
       "question": "<div style='text-align: justify;'>Why didn't the last leaf flutter in the wind?</div>",
       "options": [
         "A):   It was made of plastic",
-        "B):   It was painted on the wall",
-        "C):   It was tied with a thread",
-        "D):   There was no wind"
+        "B):   It was tied with a thread",
+        "C):   There was no wind",
+        "D):   It was painted on the wall"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>Behrman had painted it on the wall.</div>"
     },
     {
@@ -251,11 +251,11 @@ export const c9EngS19: ChapterContent = {
       "question": "<div style='text-align: justify;'>Behrman's masterpiece was —</div>",
       "options": [
         "A):   a portrait of Johnsy",
-        "B):   the painted last leaf",
-        "C):   a painting of an old miner",
-        "D):   a landscape"
+        "B):   a painting of an old miner",
+        "C):   a landscape",
+        "D):   the painted last leaf"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>The painted leaf that saved Johnsy was his masterpiece.</div>"
     }
   ],

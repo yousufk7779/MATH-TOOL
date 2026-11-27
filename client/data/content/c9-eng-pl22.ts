@@ -23,23 +23,23 @@ export const c9EngPl22: ChapterContent = {
       "question": "<div style='text-align: justify;'>Who wrote the play 'If I were You'?</div>",
       "options": [
         "A):   Neil Grant",
-        "B):   Douglas James",
-        "C):   Miles Malleson",
-        "D):   Saki"
+        "B):   Miles Malleson",
+        "C):   Saki",
+        "D):   Douglas James"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>The play is by Douglas James.</div>"
     },
     {
       "id": "c9-eng-pl22-mcq-2",
       "question": "<div style='text-align: justify;'>Where does Gerrard live?</div>",
       "options": [
-        "A):   In London",
-        "B):   In a lonely cottage in Essex",
+        "A):   In a lonely cottage in Essex",
+        "B):   In London",
         "C):   In Aylesbury",
         "D):   In a hotel"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>He lives in his lonely Essex cottage.</div>"
     },
     {
@@ -59,11 +59,11 @@ export const c9EngPl22: ChapterContent = {
       "question": "<div style='text-align: justify;'>The Intruder is armed with a —</div>",
       "options": [
         "A):   knife",
-        "B):   revolver",
-        "C):   stick",
-        "D):   sword"
+        "B):   stick",
+        "C):   sword",
+        "D):   revolver"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>He enters with a revolver in hand.</div>"
     },
     {
@@ -71,23 +71,23 @@ export const c9EngPl22: ChapterContent = {
       "question": "<div style='text-align: justify;'>How does Gerrard first react to the Intruder?</div>",
       "options": [
         "A):   He screams",
-        "B):   He calmly says, 'Why, this is a surprise'",
-        "C):   He runs away",
+        "B):   He runs away",
+        "C):   He calmly says, 'Why, this is a surprise'",
         "D):   He faints"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>He speaks pleasantly, as if greeting a visitor.</div>"
     },
     {
       "id": "c9-eng-pl22-mcq-6",
       "question": "<div style='text-align: justify;'>What are Gerrard's Christian names?</div>",
       "options": [
-        "A):   Vincent Charles",
-        "B):   Victor Charles",
-        "C):   Vincent Carl",
+        "A):   Victor Charles",
+        "B):   Vincent Carl",
+        "C):   Vincent Charles",
         "D):   Charles Henry"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>His Christian names are Vincent Charles.</div>"
     },
     {
@@ -107,11 +107,11 @@ export const c9EngPl22: ChapterContent = {
       "question": "<div style='text-align: justify;'>What crime has the Intruder already committed?</div>",
       "options": [
         "A):   He robbed a bank",
-        "B):   He killed a policeman",
-        "C):   He stole a car",
+        "B):   He stole a car",
+        "C):   He killed a policeman",
         "D):   He burnt a house"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>'Things went wrong and I killed a cop.'</div>"
     },
     {
@@ -142,12 +142,12 @@ export const c9EngPl22: ChapterContent = {
       "id": "c9-eng-pl22-mcq-11",
       "question": "<div style='text-align: justify;'>What does the Intruder plan to do?</div>",
       "options": [
-        "A):   Rob Gerrard",
-        "B):   Kill Gerrard and take on his identity",
+        "A):   Kill Gerrard and take on his identity",
+        "B):   Rob Gerrard",
         "C):   Kidnap Gerrard",
         "D):   Hide in the cottage for a night"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>He plans to become Vincent Charles Gerrard.</div>"
     },
     {
@@ -155,11 +155,11 @@ export const c9EngPl22: ChapterContent = {
       "question": "<div style='text-align: justify;'>What does the Intruder need to look like Gerrard?</div>",
       "options": [
         "A):   A wig",
-        "B):   Spectacles (and Gerrard's clothes)",
-        "C):   A beard",
-        "D):   A hat"
+        "B):   A beard",
+        "C):   A hat",
+        "D):   Spectacles (and Gerrard's clothes)"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>'I've only got to wear specs.'</div>"
     },
     {
@@ -167,11 +167,11 @@ export const c9EngPl22: ChapterContent = {
       "question": "<div style='text-align: justify;'>What does Gerrard claim to be, to save himself?</div>",
       "options": [
         "A):   A policeman",
-        "B):   A crook wanted by the police",
-        "C):   A doctor",
-        "D):   A detective"
+        "B):   A doctor",
+        "C):   A detective",
+        "D):   A crook wanted by the police"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>He pretends to be a criminal whose game is up.</div>"
     },
     {
@@ -191,23 +191,23 @@ export const c9EngPl22: ChapterContent = {
       "question": "<div style='text-align: justify;'>How does Gerrard trap the Intruder?</div>",
       "options": [
         "A):   He shoots him",
-        "B):   He pushes him into a cupboard and locks it",
-        "C):   He calls his neighbours",
+        "B):   He calls his neighbours",
+        "C):   He pushes him into a cupboard and locks it",
         "D):   He ties him up"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>He pushes him into the cupboard and locks the door.</div>"
     },
     {
       "id": "c9-eng-pl22-mcq-16",
       "question": "<div style='text-align: justify;'>What is Gerrard's real profession?</div>",
       "options": [
-        "A):   A crook",
-        "B):   A playwright",
+        "A):   A playwright",
+        "B):   A crook",
         "C):   A teacher",
         "D):   A jeweller"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>He talks of props, rehearsal and his next play.</div>"
     },
     {
@@ -215,23 +215,23 @@ export const c9EngPl22: ChapterContent = {
       "question": "<div style='text-align: justify;'>What does Gerrard say on the phone at the end?</div>",
       "options": [
         "A):   He is hurt",
-        "B):   He can't send the props in time for rehearsal",
-        "C):   He is leaving",
-        "D):   He has caught a thief and wants a reward"
+        "B):   He is leaving",
+        "C):   He has caught a thief and wants a reward",
+        "D):   He can't send the props in time for rehearsal"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>'Sorry I can't let you have the props in time for rehearsal.'</div>"
     },
     {
       "id": "c9-eng-pl22-mcq-18",
       "question": "<div style='text-align: justify;'>Whom does Gerrard ask to be sent up at the end?</div>",
       "options": [
-        "A):   A doctor",
-        "B):   The Sergeant",
+        "A):   The Sergeant",
+        "B):   A doctor",
         "C):   A lawyer",
         "D):   His friend"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>He asks for the Sergeant to come up at once.</div>"
     },
     {
@@ -239,23 +239,23 @@ export const c9EngPl22: ChapterContent = {
       "question": "<div style='text-align: justify;'>'At last a sympathetic audience!' is an example of —</div>",
       "options": [
         "A):   simile",
-        "B):   irony / sarcasm",
-        "C):   metaphor",
+        "B):   metaphor",
+        "C):   irony / sarcasm",
         "D):   alliteration"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>Gerrard says the opposite of what he means.</div>"
     },
     {
       "id": "c9-eng-pl22-mcq-20",
       "question": "<div style='text-align: justify;'>Which word best describes Gerrard in the play?</div>",
       "options": [
-        "A):   Nervous",
-        "B):   Nonchalant",
+        "A):   Nonchalant",
+        "B):   Nervous",
         "C):   Foolish",
         "D):   Flashy"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>He remains calm and unconcerned throughout.</div>"
     }
   ],

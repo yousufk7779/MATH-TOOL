@@ -35,11 +35,11 @@ export const c9EngS17: ChapterContent = {
       "question": "<div style='text-align: justify;'>Ruskin Bond was born in —</div>",
       "options": [
         "A):   Dehradun",
-        "B):   Kasauli",
-        "C):   Mussoorie",
+        "B):   Mussoorie",
+        "C):   Kasauli",
         "D):   Shimla"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>He was born in Kasauli, Himachal Pradesh.</div>"
     },
     {
@@ -47,11 +47,11 @@ export const c9EngS17: ChapterContent = {
       "question": "<div style='text-align: justify;'>Ruskin Bond's first novel was —</div>",
       "options": [
         "A):   The Blue Umbrella",
-        "B):   The Room on the Roof",
-        "C):   Rusty",
+        "B):   Rusty",
+        "C):   The Room on the Roof",
         "D):   The Night Train"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>His first novel was <i>The Room on the Roof</i>.</div>"
     },
     {
@@ -59,23 +59,23 @@ export const c9EngS17: ChapterContent = {
       "question": "<div style='text-align: justify;'>Grandfather bought Toto from a —</div>",
       "options": [
         "A):   zoo keeper",
-        "B):   tonga-driver",
-        "C):   hunter",
-        "D):   farmer"
+        "B):   hunter",
+        "C):   farmer",
+        "D):   tonga-driver"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>He bought Toto from a tonga-driver.</div>"
     },
     {
       "id": "c9-eng-s17-mcq-5",
       "question": "<div style='text-align: justify;'>How much did Grandfather pay for Toto?</div>",
       "options": [
-        "A):   Three rupees",
-        "B):   Five rupees",
+        "A):   Five rupees",
+        "B):   Three rupees",
         "C):   Ten rupees",
         "D):   Two rupees"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>He paid five rupees.</div>"
     },
     {
@@ -107,11 +107,11 @@ export const c9EngS17: ChapterContent = {
       "question": "<div style='text-align: justify;'>What did Toto tear in the closet?</div>",
       "options": [
         "A):   Grandmother's sari",
-        "B):   The wallpaper and the narrator's school blazer",
-        "C):   The curtains",
-        "D):   Books"
+        "B):   The curtains",
+        "C):   Books",
+        "D):   The wallpaper and the narrator's school blazer"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>The walls stood bare and the blazer was in shreds.</div>"
     },
     {
@@ -131,11 +131,11 @@ export const c9EngS17: ChapterContent = {
       "question": "<div style='text-align: justify;'>In what was Toto carried to Saharanpur?</div>",
       "options": [
         "A):   A cage",
-        "B):   A black canvas kitbag",
-        "C):   A basket",
+        "B):   A basket",
+        "C):   A black canvas kitbag",
         "D):   A box"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>He was carried in a big black canvas kitbag.</div>"
     },
     {
@@ -143,11 +143,11 @@ export const c9EngS17: ChapterContent = {
       "question": "<div style='text-align: justify;'>The ticket-collector classified Toto as a —</div>",
       "options": [
         "A):   cat",
-        "B):   dog",
-        "C):   monkey",
-        "D):   parcel"
+        "B):   monkey",
+        "C):   parcel",
+        "D):   dog"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>He said, 'Sir, you have a dog with you.'</div>"
     },
     {
@@ -155,47 +155,47 @@ export const c9EngS17: ChapterContent = {
       "question": "<div style='text-align: justify;'>How much fare did Grandfather pay for Toto?</div>",
       "options": [
         "A):   Nothing",
-        "B):   Three rupees",
-        "C):   Five rupees",
+        "B):   Five rupees",
+        "C):   Three rupees",
         "D):   One rupee"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>Three rupees was handed over as his fare.</div>"
     },
     {
       "id": "c9-eng-s17-mcq-13",
       "question": "<div style='text-align: justify;'>What pet did Grandfather show the ticket-collector to get his own back?</div>",
       "options": [
-        "A):   A parrot",
-        "B):   A tortoise",
+        "A):   A tortoise",
+        "B):   A parrot",
         "C):   A rabbit",
         "D):   A squirrel"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>He produced the pet tortoise.</div>"
     },
     {
       "id": "c9-eng-s17-mcq-14",
       "question": "<div style='text-align: justify;'>Who was Nana?</div>",
       "options": [
-        "A):   Grandmother",
-        "B):   The family donkey",
+        "A):   The family donkey",
+        "B):   Grandmother",
         "C):   A dog",
         "D):   The cook"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>Nana was the family donkey.</div>"
     },
     {
       "id": "c9-eng-s17-mcq-15",
       "question": "<div style='text-align: justify;'>What did Toto do to Nana on the first night?</div>",
       "options": [
-        "A):   Played with her",
-        "B):   Bit her long ear",
+        "A):   Bit her long ear",
+        "B):   Played with her",
         "C):   Shared her hay",
         "D):   Slept beside her"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>He had fastened on to her long ears with his teeth.</div>"
     },
     {
@@ -203,11 +203,11 @@ export const c9EngS17: ChapterContent = {
       "question": "<div style='text-align: justify;'>How did Toto learn to take a bath?</div>",
       "options": [
         "A):   From Grandfather",
-        "B):   By watching the narrator",
-        "C):   From Nana",
-        "D):   By instinct"
+        "B):   From Nana",
+        "C):   By instinct",
+        "D):   By watching the narrator"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>He had seen the narrator doing it.</div>"
     },
     {
@@ -215,23 +215,23 @@ export const c9EngS17: ChapterContent = {
       "question": "<div style='text-align: justify;'>Where did Toto almost boil himself alive?</div>",
       "options": [
         "A):   In a pot of rice",
-        "B):   In a kitchen kettle",
-        "C):   In the bath tub",
-        "D):   In a pond"
+        "B):   In the bath tub",
+        "C):   In a pond",
+        "D):   In a kitchen kettle"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>He got into a large kitchen kettle on the fire.</div>"
     },
     {
       "id": "c9-eng-s17-mcq-18",
       "question": "<div style='text-align: justify;'>Where did Toto take the dish of pullao?</div>",
       "options": [
-        "A):   Under the bed",
-        "B):   Up the jackfruit tree",
+        "A):   Up the jackfruit tree",
+        "B):   Under the bed",
         "C):   To the stable",
         "D):   To the roof"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>He was found in the jackfruit tree with the dish.</div>"
     },
     {
@@ -239,11 +239,11 @@ export const c9EngS17: ChapterContent = {
       "question": "<div style='text-align: justify;'>For how much was Toto sold back?</div>",
       "options": [
         "A):   Five rupees",
-        "B):   Three rupees",
-        "C):   Two rupees",
+        "B):   Two rupees",
+        "C):   Three rupees",
         "D):   Ten rupees"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>He was sold back for only three rupees.</div>"
     },
     {

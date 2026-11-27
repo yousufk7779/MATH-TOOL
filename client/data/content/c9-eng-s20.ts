@@ -59,11 +59,11 @@ export const c9EngS20: ChapterContent = {
       "question": "<div style='text-align: justify;'>The Prince's eyes were made of —</div>",
       "options": [
         "A):   rubies",
-        "B):   sapphires",
-        "C):   diamonds",
-        "D):   emeralds"
+        "B):   diamonds",
+        "C):   emeralds",
+        "D):   sapphires"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>For eyes he had two bright sapphires.</div>"
     },
     {
@@ -71,11 +71,11 @@ export const c9EngS20: ChapterContent = {
       "question": "<div style='text-align: justify;'>Where was the ruby?</div>",
       "options": [
         "A):   In his crown",
-        "B):   On his sword-hilt",
-        "C):   On his chest",
+        "B):   On his chest",
+        "C):   On his sword-hilt",
         "D):   In his ring"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>A large red ruby glowed on his sword-hilt.</div>"
     },
     {
@@ -95,11 +95,11 @@ export const c9EngS20: ChapterContent = {
       "question": "<div style='text-align: justify;'>What fell on the swallow as he prepared to sleep?</div>",
       "options": [
         "A):   Snow",
-        "B):   The Prince's tears",
-        "C):   Rain",
+        "B):   Rain",
+        "C):   The Prince's tears",
         "D):   A leaf"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>Tears were running down the Prince's cheeks.</div>"
     },
     {
@@ -119,11 +119,11 @@ export const c9EngS20: ChapterContent = {
       "question": "<div style='text-align: justify;'>The Prince's heart was made of —</div>",
       "options": [
         "A):   gold",
-        "B):   lead",
-        "C):   stone",
+        "B):   stone",
+        "C):   lead",
         "D):   iron"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>'Though my heart is made of lead…'</div>"
     },
     {
@@ -131,11 +131,11 @@ export const c9EngS20: ChapterContent = {
       "question": "<div style='text-align: justify;'>Who received the ruby?</div>",
       "options": [
         "A):   The playwright",
-        "B):   The poor seamstress",
-        "C):   The match girl",
+        "B):   The match girl",
+        "C):   The poor seamstress",
         "D):   The Mayor"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>It went to the poor seamstress whose son was ill.</div>"
     },
     {
@@ -143,59 +143,59 @@ export const c9EngS20: ChapterContent = {
       "question": "<div style='text-align: justify;'>What did the seamstress's sick son ask for?</div>",
       "options": [
         "A):   Milk",
-        "B):   Oranges",
-        "C):   Bread",
-        "D):   Medicine"
+        "B):   Bread",
+        "C):   Medicine",
+        "D):   Oranges"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>He was asking his mother for oranges.</div>"
     },
     {
       "id": "c9-eng-s20-mcq-12",
       "question": "<div style='text-align: justify;'>What did the swallow do to help the sick boy?</div>",
       "options": [
-        "A):   Sang to him",
-        "B):   Fanned his forehead with his wings",
+        "A):   Fanned his forehead with his wings",
+        "B):   Sang to him",
         "C):   Brought him food",
         "D):   Called a doctor"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>He fanned the boy's forehead with his wings.</div>"
     },
     {
       "id": "c9-eng-s20-mcq-13",
       "question": "<div style='text-align: justify;'>Who received the first sapphire?</div>",
       "options": [
-        "A):   The match girl",
-        "B):   A young playwright",
+        "A):   A young playwright",
+        "B):   The match girl",
         "C):   The seamstress",
         "D):   A beggar"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>It went to the young playwright in the garret.</div>"
     },
     {
       "id": "c9-eng-s20-mcq-14",
       "question": "<div style='text-align: justify;'>Why could the match girl's father beat her?</div>",
       "options": [
-        "A):   She was late",
-        "B):   Her matches fell in the gutter and she had no money",
+        "A):   Her matches fell in the gutter and she had no money",
+        "B):   She was late",
         "C):   She broke a dish",
         "D):   She lost her shoes"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>Her matches were spoilt and she had no money to bring home.</div>"
     },
     {
       "id": "c9-eng-s20-mcq-15",
       "question": "<div style='text-align: justify;'>Why did the swallow stay with the Prince always?</div>",
       "options": [
-        "A):   He liked the city",
-        "B):   The Prince was blind now",
+        "A):   The Prince was blind now",
+        "B):   He liked the city",
         "C):   He was too weak to fly",
         "D):   He was afraid of Egypt"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>'You are blind now, so I will stay with you always.'</div>"
     },
     {
@@ -203,11 +203,11 @@ export const c9EngS20: ChapterContent = {
       "question": "<div style='text-align: justify;'>What did the Prince ask the swallow to give the poor at last?</div>",
       "options": [
         "A):   His sword",
-        "B):   His gold leaves",
-        "C):   His crown",
-        "D):   His heart"
+        "B):   His crown",
+        "C):   His heart",
+        "D):   His gold leaves"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>He asked him to take off his gold, leaf by leaf.</div>"
     },
     {
@@ -215,11 +215,11 @@ export const c9EngS20: ChapterContent = {
       "question": "<div style='text-align: justify;'>What happened to the Prince's heart when the swallow died?</div>",
       "options": [
         "A):   It melted",
-        "B):   It snapped in two",
-        "C):   It turned to gold",
+        "B):   It turned to gold",
+        "C):   It snapped in two",
         "D):   It disappeared"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>The leaden heart snapped right in two.</div>"
     },
     {
@@ -227,11 +227,11 @@ export const c9EngS20: ChapterContent = {
       "question": "<div style='text-align: justify;'>What proclamation did the Mayor suggest?</div>",
       "options": [
         "A):   Statues must be cleaned",
-        "B):   Birds are not to be allowed to die here",
-        "C):   Beggars must leave the city",
-        "D):   A new statue must be built"
+        "B):   Beggars must leave the city",
+        "C):   A new statue must be built",
+        "D):   Birds are not to be allowed to die here"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>'Birds are not to be allowed to die here.'</div>"
     },
     {
@@ -239,23 +239,23 @@ export const c9EngS20: ChapterContent = {
       "question": "<div style='text-align: justify;'>What did not melt in the furnace?</div>",
       "options": [
         "A):   The sword",
-        "B):   The broken lead heart",
-        "C):   The pedestal",
-        "D):   The gold"
+        "B):   The pedestal",
+        "C):   The gold",
+        "D):   The broken lead heart"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>The broken lead heart would not melt.</div>"
     },
     {
       "id": "c9-eng-s20-mcq-20",
       "question": "<div style='text-align: justify;'>What were the two most precious things in the city?</div>",
       "options": [
-        "A):   The ruby and the sapphire",
-        "B):   The lead heart and the dead bird",
+        "A):   The lead heart and the dead bird",
+        "B):   The ruby and the sapphire",
         "C):   The gold and the statue",
         "D):   The palace and the cathedral"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>The Angel brought the leaden heart and the dead bird.</div>"
     }
   ],

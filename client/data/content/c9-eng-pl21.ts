@@ -21,12 +21,12 @@ export const c9EngPl21: ChapterContent = {
       "id": "c9-eng-pl21-mcq-1",
       "question": "<div style='text-align: justify;'>Who wrote 'A Basketful of Sea Trouts'?</div>",
       "options": [
-        "A):   Oscar Wilde",
-        "B):   Neil Grant",
+        "A):   Neil Grant",
+        "B):   Oscar Wilde",
         "C):   Douglas James",
         "D):   Conan Doyle"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>The play is by Neil Grant.</div>"
     },
     {
@@ -69,12 +69,12 @@ export const c9EngPl21: ChapterContent = {
       "id": "c9-eng-pl21-mcq-5",
       "question": "<div style='text-align: justify;'>What does the Judge offer Brodie as a cure for raw nerves?</div>",
       "options": [
-        "A):   Tea",
-        "B):   A glass of old port",
+        "A):   A glass of old port",
+        "B):   Tea",
         "C):   Coffee",
         "D):   Milk"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>He says old wine is a good cure for raw nerves.</div>"
     },
     {
@@ -94,11 +94,11 @@ export const c9EngPl21: ChapterContent = {
       "question": "<div style='text-align: justify;'>Where had Hector gone?</div>",
       "options": [
         "A):   To London",
-        "B):   To Canada",
-        "C):   To prison",
+        "B):   To prison",
+        "C):   To Canada",
         "D):   To the army"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>He left for Canada yesterday.</div>"
     },
     {
@@ -106,11 +106,11 @@ export const c9EngPl21: ChapterContent = {
       "question": "<div style='text-align: justify;'>Why did Mrs Lomond say she had come?</div>",
       "options": [
         "A):   To complain",
-        "B):   To thank the Judge for saving her son",
-        "C):   To ask for money",
-        "D):   To report a crime"
+        "B):   To ask for money",
+        "C):   To report a crime",
+        "D):   To thank the Judge for saving her son"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>She came to thank him for freeing her son from the gallows.</div>"
     },
     {
@@ -118,11 +118,11 @@ export const c9EngPl21: ChapterContent = {
       "question": "<div style='text-align: justify;'>What gift did Mrs Lomond bring?</div>",
       "options": [
         "A):   Flowers",
-        "B):   A basketful of sea-trout",
-        "C):   A bottle of wine",
-        "D):   A letter"
+        "B):   A bottle of wine",
+        "C):   A letter",
+        "D):   A basketful of sea-trout"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>She brought a basketful of sea-trout she had caught herself.</div>"
     },
     {
@@ -130,35 +130,35 @@ export const c9EngPl21: ChapterContent = {
       "question": "<div style='text-align: justify;'>Who actually found Hector not guilty?</div>",
       "options": [
         "A):   The Judge alone",
-        "B):   The jury",
-        "C):   The Colonel",
-        "D):   Brodie"
+        "B):   The Colonel",
+        "C):   Brodie",
+        "D):   The jury"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>'The jury found him not guilty.'</div>"
     },
     {
       "id": "c9-eng-pl21-mcq-11",
       "question": "<div style='text-align: justify;'>Who was murdered?</div>",
       "options": [
-        "A):   Mrs Lomond",
-        "B):   Nellie Salter",
+        "A):   Nellie Salter",
+        "B):   Mrs Lomond",
         "C):   Hector",
         "D):   The airman"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>Nellie Salter was murdered.</div>"
     },
     {
       "id": "c9-eng-pl21-mcq-12",
       "question": "<div style='text-align: justify;'>Which path did Nellie take, according to Mrs Lomond?</div>",
       "options": [
-        "A):   The loch path",
-        "B):   The Path of the Red Deer",
+        "A):   The Path of the Red Deer",
+        "B):   The loch path",
         "C):   The road to the Bay",
         "D):   The farm road"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>She went down the Path of the Red Deer.</div>"
     },
     {
@@ -166,11 +166,11 @@ export const c9EngPl21: ChapterContent = {
       "question": "<div style='text-align: justify;'>Who did Nellie go to meet that night?</div>",
       "options": [
         "A):   Hector",
-        "B):   The airman",
-        "C):   The farmer",
+        "B):   The farmer",
+        "C):   The airman",
         "D):   Mrs Lomond"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>She went to meet the airman.</div>"
     },
     {
@@ -178,23 +178,23 @@ export const c9EngPl21: ChapterContent = {
       "question": "<div style='text-align: justify;'>What alibi had Mrs Lomond given?</div>",
       "options": [
         "A):   She was at church",
-        "B):   She was on the sands all day",
-        "C):   She was with Hector",
+        "B):   She was with Hector",
+        "C):   She was on the sands all day",
         "D):   She was at Dykes Farm"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>She said she was on the sands, almost a desert, all day.</div>"
     },
     {
       "id": "c9-eng-pl21-mcq-15",
       "question": "<div style='text-align: justify;'>What news did Colonel Allardyce bring?</div>",
       "options": [
-        "A):   Hector was rearrested",
-        "B):   Mrs Lomond's body was washed up on the beach",
+        "A):   Mrs Lomond's body was washed up on the beach",
+        "B):   Hector was rearrested",
         "C):   Nellie was alive",
         "D):   The airman confessed"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>Mrs Lomond's body had been washed up early that afternoon.</div>"
     },
     {
@@ -202,11 +202,11 @@ export const c9EngPl21: ChapterContent = {
       "question": "<div style='text-align: justify;'>Who identified Mrs Lomond's body?</div>",
       "options": [
         "A):   The Colonel",
-        "B):   Inspector Soutar",
-        "C):   The Judge",
+        "B):   The Judge",
+        "C):   Inspector Soutar",
         "D):   Brodie"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>Inspector Soutar, who knew her well, identified the body.</div>"
     },
     {
@@ -214,11 +214,11 @@ export const c9EngPl21: ChapterContent = {
       "question": "<div style='text-align: justify;'>What did Mrs Lomond's letter confess?</div>",
       "options": [
         "A):   That Hector was guilty",
-        "B):   That she had murdered Nellie Salter",
-        "C):   That she was ill",
+        "B):   That she was ill",
+        "C):   That she had murdered Nellie Salter",
         "D):   That the airman was guilty"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>She definitely says in the letter that she murdered Nellie.</div>"
     },
     {
@@ -238,11 +238,11 @@ export const c9EngPl21: ChapterContent = {
       "question": "<div style='text-align: justify;'>What did the Colonel find under the arch at the end?</div>",
       "options": [
         "A):   A letter",
-        "B):   A basket full of sea-trout",
-        "C):   A lantern",
-        "D):   Mrs Lomond"
+        "B):   A lantern",
+        "C):   Mrs Lomond",
+        "D):   A basket full of sea-trout"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>'A basket full of sea-trout.'</div>"
     },
     {
@@ -250,11 +250,11 @@ export const c9EngPl21: ChapterContent = {
       "question": "<div style='text-align: justify;'>'Alibi' means —</div>",
       "options": [
         "A):   a crime",
-        "B):   a claim of having been elsewhere when a crime happened",
-        "C):   a punishment",
-        "D):   a witness"
+        "B):   a punishment",
+        "C):   a witness",
+        "D):   a claim of having been elsewhere when a crime happened"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>An alibi is the accused's claim of being elsewhere.</div>"
     }
   ],

@@ -21,48 +21,48 @@ export const c9EngPo9: ChapterContent = {
       "id": "c9-eng-po9-mcq-1",
       "question": "<div style='text-align: justify;'>Who wrote the poem 'Beauty'?</div>",
       "options": [
-        "A):   John Keats",
-        "B):   John Masefield",
+        "A):   John Masefield",
+        "B):   John Keats",
         "C):   Robert Herrick",
         "D):   William Wordsworth"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>The poem is by John Masefield.</div>"
     },
     {
       "id": "c9-eng-po9-mcq-2",
       "question": "<div style='text-align: justify;'>John Masefield was Poet Laureate from —</div>",
       "options": [
-        "A):   1900 to 1930",
-        "B):   1930 to 1967",
+        "A):   1930 to 1967",
+        "B):   1900 to 1930",
         "C):   1918 to 1940",
         "D):   1950 to 1970"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>He was Poet Laureate from 1930 until his death in 1967.</div>"
     },
     {
       "id": "c9-eng-po9-mcq-3",
       "question": "<div style='text-align: justify;'>Which is a famous children's novel by Masefield?</div>",
       "options": [
-        "A):   The Box of Delights",
-        "B):   Treasure Island",
+        "A):   Treasure Island",
+        "B):   The Box of Delights",
         "C):   Alice in Wonderland",
         "D):   The Jungle Book"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanation": "<div style='text-align: justify;'>He wrote <i>The Midnight Folk</i> and <i>The Box of Delights</i>.</div>"
     },
     {
       "id": "c9-eng-po9-mcq-4",
       "question": "<div style='text-align: justify;'>'Sea-Fever' is from Masefield's anthology —</div>",
       "options": [
-        "A):   Lyrical Ballads",
-        "B):   Saltwater Ballads",
+        "A):   Saltwater Ballads",
+        "B):   Lyrical Ballads",
         "C):   Hesperides",
         "D):   Gitanjali"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>'Sea-Fever' is from <i>Saltwater Ballads</i>.</div>"
     },
     {
@@ -70,11 +70,11 @@ export const c9EngPo9: ChapterContent = {
       "question": "<div style='text-align: justify;'>Where has the poet seen dawn and sunset?</div>",
       "options": [
         "A):   In cities",
-        "B):   On moors and windy hills",
-        "C):   In the desert",
-        "D):   At the seashore only"
+        "B):   In the desert",
+        "C):   At the seashore only",
+        "D):   On moors and windy hills"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>He has seen them on moors and windy hills.</div>"
     },
     {
@@ -82,11 +82,11 @@ export const c9EngPo9: ChapterContent = {
       "question": "<div style='text-align: justify;'>Dawn and sunset come in solemn beauty like —</div>",
       "options": [
         "A):   fast drum beats",
-        "B):   slow old tunes of Spain",
-        "C):   a mother's lullaby",
+        "B):   a mother's lullaby",
+        "C):   slow old tunes of Spain",
         "D):   church bells"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>'Like slow old tunes of Spain.'</div>"
     },
     {
@@ -94,23 +94,23 @@ export const c9EngPo9: ChapterContent = {
       "question": "<div style='text-align: justify;'>'Solemn' means —</div>",
       "options": [
         "A):   noisy",
-        "B):   serious and calm",
-        "C):   bright",
+        "B):   bright",
+        "C):   serious and calm",
         "D):   cheerful"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>Solemn means serious, without amusement.</div>"
     },
     {
       "id": "c9-eng-po9-mcq-8",
       "question": "<div style='text-align: justify;'>Who brings the daffodils in the poem?</div>",
       "options": [
-        "A):   The gardener",
-        "B):   The lady April",
+        "A):   The lady April",
+        "B):   The gardener",
         "C):   The beloved",
         "D):   The wind"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>The lady April brings the daffodils.</div>"
     },
     {
@@ -118,11 +118,11 @@ export const c9EngPo9: ChapterContent = {
       "question": "<div style='text-align: justify;'>'The lady April' is an example of —</div>",
       "options": [
         "A):   simile",
-        "B):   personification",
-        "C):   onomatopoeia",
+        "B):   onomatopoeia",
+        "C):   personification",
         "D):   irony"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>The month of April is presented as a lady.</div>"
     },
     {
@@ -142,11 +142,11 @@ export const c9EngPo9: ChapterContent = {
       "question": "<div style='text-align: justify;'>What has the poet heard?</div>",
       "options": [
         "A):   The roar of lions",
-        "B):   The song of the blossoms and chant of the sea",
-        "C):   Church bells",
-        "D):   Children's laughter"
+        "B):   Church bells",
+        "C):   Children's laughter",
+        "D):   The song of the blossoms and chant of the sea"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>He has heard the song of the blossoms and the chant of the sea.</div>"
     },
     {
@@ -154,11 +154,11 @@ export const c9EngPo9: ChapterContent = {
       "question": "<div style='text-align: justify;'>From where has the poet seen strange lands?</div>",
       "options": [
         "A):   From an aeroplane",
-        "B):   From under arched white sails of ships",
-        "C):   From a mountain top",
-        "D):   From a train"
+        "B):   From a mountain top",
+        "C):   From a train",
+        "D):   From under arched white sails of ships"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>He saw them from under the arched white sails of ships.</div>"
     },
     {
@@ -166,11 +166,11 @@ export const c9EngPo9: ChapterContent = {
       "question": "<div style='text-align: justify;'>'Chant' means —</div>",
       "options": [
         "A):   shout",
-        "B):   sing",
-        "C):   cry",
-        "D):   whisper"
+        "B):   cry",
+        "C):   whisper",
+        "D):   sing"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>The glossary gives 'chant' as 'sing'.</div>"
     },
     {
@@ -190,35 +190,35 @@ export const c9EngPo9: ChapterContent = {
       "question": "<div style='text-align: justify;'>Which of these is NOT mentioned as the beloved's feature?</div>",
       "options": [
         "A):   Voice",
-        "B):   Hair",
-        "C):   Hands",
+        "B):   Hands",
+        "C):   Hair",
         "D):   Eyes"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanation": "<div style='text-align: justify;'>He mentions her voice, hair, eyes and lips — not her hands.</div>"
     },
     {
       "id": "c9-eng-po9-mcq-16",
       "question": "<div style='text-align: justify;'>'Like slow old tunes of Spain' is an example of —</div>",
       "options": [
-        "A):   metaphor",
-        "B):   simile",
+        "A):   simile",
+        "B):   metaphor",
         "C):   alliteration",
         "D):   hyperbole"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>The word 'like' shows a simile.</div>"
     },
     {
       "id": "c9-eng-po9-mcq-17",
       "question": "<div style='text-align: justify;'>The repetition of 'I have seen' is called —</div>",
       "options": [
-        "A):   anaphora",
-        "B):   oxymoron",
-        "C):   pun",
+        "A):   oxymoron",
+        "B):   pun",
+        "C):   anaphora",
         "D):   irony"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>Repeating words at the start of lines is anaphora.</div>"
     },
     {
@@ -226,11 +226,11 @@ export const c9EngPo9: ChapterContent = {
       "question": "<div style='text-align: justify;'>The rhyme scheme of the poem is —</div>",
       "options": [
         "A):   aabb ccdd",
-        "B):   abab cdcd",
-        "C):   abba cddc",
-        "D):   free verse"
+        "B):   abba cddc",
+        "C):   free verse",
+        "D):   abab cdcd"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>hills/Spain/daffodils/rain; sea/ships/me/lips.</div>"
     },
     {
@@ -238,11 +238,11 @@ export const c9EngPo9: ChapterContent = {
       "question": "<div style='text-align: justify;'>The last line contrasts the beauty of nature with —</div>",
       "options": [
         "A):   the beauty of art",
-        "B):   the beauty of the beloved",
-        "C):   the beauty of cities",
+        "B):   the beauty of cities",
+        "C):   the beauty of the beloved",
         "D):   the beauty of music"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>Nature's beauty is contrasted with the beloved's.</div>"
     },
     {

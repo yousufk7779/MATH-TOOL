@@ -34,11 +34,11 @@ export const c9EngPo8: ChapterContent = {
       "question": "<div style='text-align: justify;'>Robert Herrick was born in —</div>",
       "options": [
         "A):   Stratford-upon-Avon",
-        "B):   Cheapside, London",
-        "C):   Durham",
-        "D):   Dublin"
+        "B):   Durham",
+        "C):   Dublin",
+        "D):   Cheapside, London"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>He was born in Cheapside, London.</div>"
     },
     {
@@ -46,11 +46,11 @@ export const c9EngPo8: ChapterContent = {
       "question": "<div style='text-align: justify;'>Herrick was apprenticed to his uncle, who was a —</div>",
       "options": [
         "A):   poet",
-        "B):   goldsmith and jeweller",
-        "C):   farmer",
+        "B):   farmer",
+        "C):   goldsmith and jeweller",
         "D):   priest"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>Sir William Herrick was a goldsmith and jeweller to the king.</div>"
     },
     {
@@ -70,35 +70,35 @@ export const c9EngPo8: ChapterContent = {
       "question": "<div style='text-align: justify;'>The blossoms are called 'fair pledges' of a —</div>",
       "options": [
         "A):   garden",
-        "B):   fruitful tree",
-        "C):   spring morning",
-        "D):   flower bed"
+        "B):   spring morning",
+        "C):   flower bed",
+        "D):   fruitful tree"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>'Fair pledges of a fruitful tree.'</div>"
     },
     {
       "id": "c9-eng-po8-mcq-6",
       "question": "<div style='text-align: justify;'>'Pledge' means —</div>",
       "options": [
-        "A):   a threat",
-        "B):   a promise",
+        "A):   a promise",
+        "B):   a threat",
         "C):   a flower",
         "D):   a fruit"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>A pledge is a serious promise.</div>"
     },
     {
       "id": "c9-eng-po8-mcq-7",
       "question": "<div style='text-align: justify;'>The poet asks the blossoms why they —</div>",
       "options": [
-        "A):   grow so slowly",
-        "B):   fall so fast",
+        "A):   fall so fast",
+        "B):   grow so slowly",
         "C):   smell so sweet",
         "D):   look so pale"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>'Why do ye fall so fast?'</div>"
     },
     {
@@ -106,11 +106,11 @@ export const c9EngPo8: ChapterContent = {
       "question": "<div style='text-align: justify;'>The poet wants the blossoms to stay a while to —</div>",
       "options": [
         "A):   bear fruit",
-        "B):   blush and gently smile",
-        "C):   attract bees",
+        "B):   attract bees",
+        "C):   blush and gently smile",
         "D):   decorate the garden"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>'To blush and gently smile.'</div>"
     },
     {
@@ -118,11 +118,11 @@ export const c9EngPo8: ChapterContent = {
       "question": "<div style='text-align: justify;'>According to the poet, the blossoms give delight for —</div>",
       "options": [
         "A):   a day",
-        "B):   an hour or half",
-        "C):   a month",
-        "D):   a season"
+        "B):   a month",
+        "C):   a season",
+        "D):   an hour or half"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>'An hour or half's delight.'</div>"
     },
     {
@@ -130,11 +130,11 @@ export const c9EngPo8: ChapterContent = {
       "question": "<div style='text-align: justify;'>Who 'brought forth' the blossoms?</div>",
       "options": [
         "A):   God",
-        "B):   Nature",
-        "C):   The gardener",
+        "B):   The gardener",
+        "C):   Nature",
         "D):   The sun"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>'Twas pity Nature brought ye forth.</div>"
     },
     {
@@ -142,23 +142,23 @@ export const c9EngPo8: ChapterContent = {
       "question": "<div style='text-align: justify;'>The word 'leaves' in the third stanza is a —</div>",
       "options": [
         "A):   simile",
-        "B):   pun",
-        "C):   hyperbole",
+        "B):   hyperbole",
+        "C):   pun",
         "D):   refrain"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>It means both plant leaves and pages of a book.</div>"
     },
     {
       "id": "c9-eng-po8-mcq-12",
       "question": "<div style='text-align: justify;'>What can we 'read' from the blossoms?</div>",
       "options": [
-        "A):   How to grow trees",
-        "B):   How soon things have their end",
+        "A):   How soon things have their end",
+        "B):   How to grow trees",
         "C):   The seasons",
         "D):   Our future"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>We may read how soon things have their end.</div>"
     },
     {
@@ -178,11 +178,11 @@ export const c9EngPo8: ChapterContent = {
       "question": "<div style='text-align: justify;'>In the poem, 'pride' means —</div>",
       "options": [
         "A):   arrogance",
-        "B):   youth",
-        "C):   honour",
+        "B):   honour",
+        "C):   youth",
         "D):   anger"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>Here 'pride' means youth, the best time of life.</div>"
     },
     {
@@ -190,11 +190,11 @@ export const c9EngPo8: ChapterContent = {
       "question": "<div style='text-align: justify;'>After showing their pride, things 'glide into the —'</div>",
       "options": [
         "A):   garden",
-        "B):   grave",
-        "C):   sky",
-        "D):   river"
+        "B):   sky",
+        "C):   river",
+        "D):   grave"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>'They glide / Into the grave.'</div>"
     },
     {
@@ -225,12 +225,12 @@ export const c9EngPo8: ChapterContent = {
       "id": "c9-eng-po8-mcq-18",
       "question": "<div style='text-align: justify;'>The poet compares the life of blossoms to —</div>",
       "options": [
-        "A):   the life of trees",
-        "B):   human life",
+        "A):   human life",
+        "B):   the life of trees",
         "C):   the seasons",
         "D):   the life of birds"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>Both are beautiful but short.</div>"
     },
     {
@@ -238,23 +238,23 @@ export const c9EngPo8: ChapterContent = {
       "question": "<div style='text-align: justify;'>The tone of the poem is —</div>",
       "options": [
         "A):   angry",
-        "B):   gentle and sad",
-        "C):   humorous",
-        "D):   proud"
+        "B):   humorous",
+        "C):   proud",
+        "D):   gentle and sad"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>The poem gently mourns the short life of beauty.</div>"
     },
     {
       "id": "c9-eng-po8-mcq-20",
       "question": "<div style='text-align: justify;'>'Ne'er' is a short form of —</div>",
       "options": [
-        "A):   near",
-        "B):   never",
+        "A):   never",
+        "B):   near",
         "C):   neither",
         "D):   nearer"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>'Ne'er' means never.</div>"
     }
   ],

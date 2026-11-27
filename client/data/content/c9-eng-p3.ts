@@ -34,12 +34,12 @@ export const c9EngP3: ChapterContent = {
       "id": "c9-eng-p3-mcq-2",
       "question": "<div style='text-align: justify;'>Mother Theresa's original name was —</div>",
       "options": [
-        "A):   Agnes Gonxha Bojaxhiu",
-        "B):   Drana Bojaxhiu",
-        "C):   Teresa Loreto",
+        "A):   Drana Bojaxhiu",
+        "B):   Teresa Loreto",
+        "C):   Agnes Gonxha Bojaxhiu",
         "D):   Agnes Theresa"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>She was named Agnes Gonxha Bojaxhiu.</div>"
     },
     {
@@ -48,10 +48,10 @@ export const c9EngP3: ChapterContent = {
       "options": [
         "A):   Kolkata",
         "B):   Dublin",
-        "C):   Skopje",
-        "D):   Rome"
+        "C):   Rome",
+        "D):   Skopje"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>She was born in Skopje.</div>"
     },
     {
@@ -71,23 +71,23 @@ export const c9EngP3: ChapterContent = {
       "question": "<div style='text-align: justify;'>How did Agnes's mother, Drana, support the family?</div>",
       "options": [
         "A):   By teaching",
-        "B):   By stitching and needlecraft",
-        "C):   By farming",
-        "D):   By running a shop"
+        "B):   By farming",
+        "C):   By running a shop",
+        "D):   By stitching and needlecraft"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>Her skill at stitching and needlecraft provided a livelihood.</div>"
     },
     {
       "id": "c9-eng-p3-mcq-6",
       "question": "<div style='text-align: justify;'>At what age did Agnes first feel the call 'Follow God and serve others'?</div>",
       "options": [
-        "A):   Ten",
-        "B):   Twelve",
-        "C):   Fifteen",
+        "A):   Fifteen",
+        "B):   Ten",
+        "C):   Twelve",
         "D):   Eighteen"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>It happened when she was fifteen, on a trip to the mountains.</div>"
     },
     {
@@ -95,11 +95,11 @@ export const c9EngP3: ChapterContent = {
       "question": "<div style='text-align: justify;'>Why did Agnes go to Ireland?</div>",
       "options": [
         "A):   To study medicine",
-        "B):   To join the Sisters of Loreto and learn English",
-        "C):   To meet the Pope",
+        "B):   To meet the Pope",
+        "C):   To join the Sisters of Loreto and learn English",
         "D):   To teach"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>She joined the convent of the Sisters of Loreto to learn English.</div>"
     },
     {
@@ -107,11 +107,11 @@ export const c9EngP3: ChapterContent = {
       "question": "<div style='text-align: justify;'>In which year did Agnes arrive in Kolkata?</div>",
       "options": [
         "A):   1910",
-        "B):   1929",
-        "C):   1937",
+        "B):   1937",
+        "C):   1929",
         "D):   1948"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>Agnes arrived in Kolkata in 1929.</div>"
     },
     {
@@ -131,11 +131,11 @@ export const c9EngP3: ChapterContent = {
       "question": "<div style='text-align: justify;'>Why did she learn Hindi and Bengali?</div>",
       "options": [
         "A):   To pass an exam",
-        "B):   To speak to the people she had come to serve",
-        "C):   To write books",
-        "D):   To teach languages"
+        "B):   To write books",
+        "C):   To teach languages",
+        "D):   To speak to the people she had come to serve"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>She wanted to speak to the people she had come to serve.</div>"
     },
     {
@@ -143,23 +143,23 @@ export const c9EngP3: ChapterContent = {
       "question": "<div style='text-align: justify;'>She took the name 'Theresa' because it was the name of —</div>",
       "options": [
         "A):   her mother",
-        "B):   the patron saint of missionaries",
-        "C):   her teacher",
+        "B):   her teacher",
+        "C):   the patron saint of missionaries",
         "D):   a famous queen"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>Theresa was the name of the patron saint of missionaries.</div>"
     },
     {
       "id": "c9-eng-p3-mcq-12",
       "question": "<div style='text-align: justify;'>She took her final vows as a nun in —</div>",
       "options": [
-        "A):   1929",
-        "B):   1937",
+        "A):   1937",
+        "B):   1929",
         "C):   1946",
         "D):   1948"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>She took her final vows in 1937.</div>"
     },
     {
@@ -167,35 +167,35 @@ export const c9EngP3: ChapterContent = {
       "question": "<div style='text-align: justify;'>At St. Mary's school, Kolkata, she taught girls from —</div>",
       "options": [
         "A):   poor families",
-        "B):   affluent backgrounds",
-        "C):   villages",
+        "B):   villages",
+        "C):   affluent backgrounds",
         "D):   orphanages"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>She taught Indian girls from affluent backgrounds.</div>"
     },
     {
       "id": "c9-eng-p3-mcq-14",
       "question": "<div style='text-align: justify;'>Where was she when she heard the second call in 1946?</div>",
       "options": [
-        "A):   In church",
-        "B):   On a train from Kolkata to Darjeeling",
+        "A):   On a train from Kolkata to Darjeeling",
+        "B):   In church",
         "C):   In her classroom",
         "D):   In Ireland"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>She heard it while travelling by train from Kolkata to Darjeeling.</div>"
     },
     {
       "id": "c9-eng-p3-mcq-15",
       "question": "<div style='text-align: justify;'>'To fail would be to break —'</div>",
       "options": [
-        "A):   a promise",
-        "B):   faith",
+        "A):   faith",
+        "B):   a promise",
         "C):   the law",
         "D):   her heart"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>She said, 'to fail would be to break faith'.</div>"
     },
     {
@@ -204,22 +204,22 @@ export const c9EngP3: ChapterContent = {
       "options": [
         "A):   1937",
         "B):   1946",
-        "C):   1948",
-        "D):   1979"
+        "C):   1979",
+        "D):   1948"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>The order was born in 1948, with her as its first Mother Superior.</div>"
     },
     {
       "id": "c9-eng-p3-mcq-17",
       "question": "<div style='text-align: justify;'>What did Mother Theresa wear after leaving the convent?</div>",
       "options": [
-        "A):   A black habit",
-        "B):   A cotton blue-bordered white sari",
+        "A):   A cotton blue-bordered white sari",
+        "B):   A black habit",
         "C):   A silk sari",
         "D):   A white gown"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>She dressed in a cotton blue-bordered white sari.</div>"
     },
     {
@@ -239,11 +239,11 @@ export const c9EngP3: ChapterContent = {
       "question": "<div style='text-align: justify;'>Malcolm Muggeridge's book and film on her was titled —</div>",
       "options": [
         "A):   The Saint of the Gutters",
-        "B):   Something Beautiful for God",
-        "C):   Mother of the Poor",
-        "D):   Love Till It Hurts"
+        "B):   Mother of the Poor",
+        "C):   Love Till It Hurts",
+        "D):   Something Beautiful for God"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>It was titled 'Something Beautiful for God'.</div>"
     },
     {

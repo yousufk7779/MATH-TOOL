@@ -22,11 +22,11 @@ export const c9EngPo12: ChapterContent = {
       "question": "<div style='text-align: justify;'>Who wrote 'On Killing a Tree'?</div>",
       "options": [
         "A):   Padma Sachdev",
-        "B):   Gieve Patel",
-        "C):   Sarojini Naidu",
-        "D):   James Kirkup"
+        "B):   Sarojini Naidu",
+        "C):   James Kirkup",
+        "D):   Gieve Patel"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>The poem is by Gieve Patel.</div>"
     },
     {
@@ -34,11 +34,11 @@ export const c9EngPo12: ChapterContent = {
       "question": "<div style='text-align: justify;'>Besides being a poet, Gieve Patel was a doctor, a playwright and a —</div>",
       "options": [
         "A):   singer",
-        "B):   painter",
-        "C):   teacher",
-        "D):   journalist"
+        "B):   teacher",
+        "C):   journalist",
+        "D):   painter"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>He was a poet, playwright, painter and doctor.</div>"
     },
     {
@@ -46,11 +46,11 @@ export const c9EngPo12: ChapterContent = {
       "question": "<div style='text-align: justify;'>According to the poet, it takes much time to —</div>",
       "options": [
         "A):   grow a tree",
-        "B):   kill a tree",
-        "C):   plant a tree",
+        "B):   plant a tree",
+        "C):   kill a tree",
         "D):   climb a tree"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>'It takes much time to kill a tree.'</div>"
     },
     {
@@ -58,35 +58,35 @@ export const c9EngPo12: ChapterContent = {
       "question": "<div style='text-align: justify;'>What will NOT kill a tree, according to the poem?</div>",
       "options": [
         "A):   Pulling out its root",
-        "B):   A simple jab of the knife",
-        "C):   Exposing its root",
+        "B):   Exposing its root",
+        "C):   A simple jab of the knife",
         "D):   Scorching its root"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>'Not a simple jab of the knife will do it.'</div>"
     },
     {
       "id": "c9-eng-po12-mcq-5",
       "question": "<div style='text-align: justify;'>The tree has grown by feeding upon the earth's —</div>",
       "options": [
-        "A):   water",
-        "B):   crust",
+        "A):   crust",
+        "B):   water",
         "C):   rocks",
         "D):   sand"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>It grew 'feeding upon its crust'.</div>"
     },
     {
       "id": "c9-eng-po12-mcq-6",
       "question": "<div style='text-align: justify;'>The tree absorbs years of —</div>",
       "options": [
-        "A):   sunlight, air, water",
-        "B):   rain and snow",
+        "A):   rain and snow",
+        "B):   sunlight, air, water",
         "C):   fire and smoke",
         "D):   dust and wind"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanation": "<div style='text-align: justify;'>It absorbs years of sunlight, air and water.</div>"
     },
     {
@@ -94,11 +94,11 @@ export const c9EngPo12: ChapterContent = {
       "question": "<div style='text-align: justify;'>'Leprous hide' refers to —</div>",
       "options": [
         "A):   the tree's leaves",
-        "B):   the rough, scaly bark",
-        "C):   the roots",
+        "B):   the roots",
+        "C):   the rough, scaly bark",
         "D):   the branches"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>It means bark rough and scaly like a leper's skin.</div>"
     },
     {
@@ -106,11 +106,11 @@ export const c9EngPo12: ChapterContent = {
       "question": "<div style='text-align: justify;'>What happens to the bleeding bark after hacking?</div>",
       "options": [
         "A):   It dies",
-        "B):   It heals",
-        "C):   It falls off",
-        "D):   It burns"
+        "B):   It falls off",
+        "C):   It burns",
+        "D):   It heals"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>'The bleeding bark will heal.'</div>"
     },
     {
@@ -118,11 +118,11 @@ export const c9EngPo12: ChapterContent = {
       "question": "<div style='text-align: justify;'>After the tree is cut, what rises from close to the ground?</div>",
       "options": [
         "A):   Flowers",
-        "B):   Curled green twigs",
-        "C):   Roots",
+        "B):   Roots",
+        "C):   Curled green twigs",
         "D):   Weeds"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>Curled green twigs and miniature boughs rise again.</div>"
     },
     {
@@ -141,24 +141,24 @@ export const c9EngPo12: ChapterContent = {
       "id": "c9-eng-po12-mcq-11",
       "question": "<div style='text-align: justify;'>What does 'No' at the start of stanza 3 signify?</div>",
       "options": [
-        "A):   Agreement",
-        "B):   Rejection of hacking as a method of killing",
+        "A):   Rejection of hacking as a method of killing",
+        "B):   Agreement",
         "C):   Fear",
         "D):   Joy"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>It rejects hacking and introduces uprooting.</div>"
     },
     {
       "id": "c9-eng-po12-mcq-12",
       "question": "<div style='text-align: justify;'>To kill a tree, the root must be pulled out of the —</div>",
       "options": [
-        "A):   anchoring earth",
-        "B):   river bed",
-        "C):   rock",
-        "D):   sky"
+        "A):   river bed",
+        "B):   rock",
+        "C):   sky",
+        "D):   anchoring earth"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>'Out of the anchoring earth.'</div>"
     },
     {
@@ -166,11 +166,11 @@ export const c9EngPo12: ChapterContent = {
       "question": "<div style='text-align: justify;'>The root is described as —</div>",
       "options": [
         "A):   brown and dry",
-        "B):   white and wet",
-        "C):   black and hard",
+        "B):   black and hard",
+        "C):   white and wet",
         "D):   green and soft"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>'The source, white and wet.'</div>"
     },
     {
@@ -189,24 +189,24 @@ export const c9EngPo12: ChapterContent = {
       "id": "c9-eng-po12-mcq-15",
       "question": "<div style='text-align: justify;'>The exposed root is left to scorch and choke in —</div>",
       "options": [
-        "A):   water and mud",
-        "B):   sun and air",
+        "A):   sun and air",
+        "B):   water and mud",
         "C):   snow and ice",
         "D):   fire and smoke"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>'Of scorching and choking in sun and air.'</div>"
     },
     {
       "id": "c9-eng-po12-mcq-16",
       "question": "<div style='text-align: justify;'>Which word does NOT describe the root's slow death?</div>",
       "options": [
-        "A):   Browning",
-        "B):   Hardening",
-        "C):   Sprouting",
+        "A):   Sprouting",
+        "B):   Browning",
+        "C):   Hardening",
         "D):   Withering"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>Sprouting shows life, not death.</div>"
     },
     {
@@ -250,11 +250,11 @@ export const c9EngPo12: ChapterContent = {
       "question": "<div style='text-align: justify;'>'Wither' means —</div>",
       "options": [
         "A):   grow tall",
-        "B):   become weak, dry and decay",
-        "C):   bloom",
-        "D):   shine"
+        "B):   bloom",
+        "C):   shine",
+        "D):   become weak, dry and decay"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>To wither is to dry up and decay.</div>"
     }
   ],

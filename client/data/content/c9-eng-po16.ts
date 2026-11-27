@@ -22,11 +22,11 @@ export const c9EngPo16: ChapterContent = {
       "question": "<div style='text-align: justify;'>Who wrote the original poem 'The Child's Prayer'?</div>",
       "options": [
         "A):   Rabindranath Tagore",
-        "B):   Muhammad Iqbal",
-        "C):   Sarojini Naidu",
+        "B):   Sarojini Naidu",
+        "C):   Muhammad Iqbal",
         "D):   Mahjoor"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>The poem is by Sir Muhammad Iqbal.</div>"
     },
     {
@@ -34,23 +34,23 @@ export const c9EngPo16: ChapterContent = {
       "question": "<div style='text-align: justify;'>Who translated the poem into English?</div>",
       "options": [
         "A):   Dr. Karan Singh",
-        "B):   Prof. G. R. Malik",
-        "C):   Prof. Neerja Mattoo",
-        "D):   R. N. Tagore"
+        "B):   Prof. Neerja Mattoo",
+        "C):   R. N. Tagore",
+        "D):   Prof. G. R. Malik"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>It was translated from Urdu by Prof. G. R. Malik.</div>"
     },
     {
       "id": "c9-eng-po16-mcq-3",
       "question": "<div style='text-align: justify;'>Iqbal was born in —</div>",
       "options": [
-        "A):   Lahore",
-        "B):   Sialkot",
+        "A):   Sialkot",
+        "B):   Lahore",
         "C):   Delhi",
         "D):   Srinagar"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>He was born in Sialkot.</div>"
     },
     {
@@ -69,24 +69,24 @@ export const c9EngPo16: ChapterContent = {
       "id": "c9-eng-po16-mcq-5",
       "question": "<div style='text-align: justify;'>Which famous song was written by Iqbal?</div>",
       "options": [
-        "A):   Vande Mataram",
-        "B):   Saare Jahan Se Achha",
+        "A):   Saare Jahan Se Achha",
+        "B):   Vande Mataram",
         "C):   Jana Gana Mana",
         "D):   Ae Mere Watan Ke Logo"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>Iqbal wrote 'Saare Jahan Se Achha'.</div>"
     },
     {
       "id": "c9-eng-po16-mcq-6",
       "question": "<div style='text-align: justify;'>Who is the speaker in the poem?</div>",
       "options": [
-        "A):   A teacher",
-        "B):   A child",
+        "A):   A child",
+        "B):   A teacher",
         "C):   A king",
         "D):   A soldier"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>The speaker is a child.</div>"
     },
     {
@@ -94,11 +94,11 @@ export const c9EngPo16: ChapterContent = {
       "question": "<div style='text-align: justify;'>To whom is the prayer addressed?</div>",
       "options": [
         "A):   The teacher",
-        "B):   God",
-        "C):   The mother",
+        "B):   The mother",
+        "C):   God",
         "D):   The nation"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>'Save me, my God…' — it is addressed to God.</div>"
     },
     {
@@ -118,11 +118,11 @@ export const c9EngPo16: ChapterContent = {
       "question": "<div style='text-align: justify;'>Through him the child wants the world's — to vanish.</div>",
       "options": [
         "A):   wealth",
-        "B):   darkness",
-        "C):   beauty",
-        "D):   noise"
+        "B):   beauty",
+        "C):   noise",
+        "D):   darkness"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>'May through me world's darkness vanish away.'</div>"
     },
     {
@@ -130,11 +130,11 @@ export const c9EngPo16: ChapterContent = {
       "question": "<div style='text-align: justify;'>The child wishes to adorn his land as —</div>",
       "options": [
         "A):   stars adorn the sky",
-        "B):   blossoms make the garden fair",
-        "C):   jewels adorn a queen",
-        "D):   rain adorns the earth"
+        "B):   jewels adorn a queen",
+        "C):   rain adorns the earth",
+        "D):   blossoms make the garden fair"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>'Even as the blossoms make the garden fair.'</div>"
     },
     {
@@ -142,11 +142,11 @@ export const c9EngPo16: ChapterContent = {
       "question": "<div style='text-align: justify;'>'Adorn' means —</div>",
       "options": [
         "A):   destroy",
-        "B):   decorate",
-        "C):   leave",
-        "D):   defend"
+        "B):   leave",
+        "C):   defend",
+        "D):   decorate"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>Adorn means to decorate or add beauty.</div>"
     },
     {
@@ -178,11 +178,11 @@ export const c9EngPo16: ChapterContent = {
       "question": "<div style='text-align: justify;'>'Zest' means —</div>",
       "options": [
         "A):   fear",
-        "B):   passion",
-        "C):   laziness",
+        "B):   laziness",
+        "C):   passion",
         "D):   anger"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>Zest means passion or great eagerness.</div>"
     },
     {
@@ -190,23 +190,23 @@ export const c9EngPo16: ChapterContent = {
       "question": "<div style='text-align: justify;'>The child's mission is to —</div>",
       "options": [
         "A):   become rich",
-        "B):   love and serve the poor",
-        "C):   travel the world",
+        "B):   travel the world",
+        "C):   love and serve the poor",
         "D):   become famous"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>'To love and serve the poor my mission be.'</div>"
     },
     {
       "id": "c9-eng-po16-mcq-16",
       "question": "<div style='text-align: justify;'>For whom does the child have sympathy?</div>",
       "options": [
-        "A):   The rich",
-        "B):   The weak and those in pain",
+        "A):   The weak and those in pain",
+        "B):   The rich",
         "C):   His friends only",
         "D):   Animals only"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>'For the weak and those in pain my sympathy!'</div>"
     },
     {
@@ -214,11 +214,11 @@ export const c9EngPo16: ChapterContent = {
       "question": "<div style='text-align: justify;'>The child asks God to save him from —</div>",
       "options": [
         "A):   poverty",
-        "B):   all snares of evil",
-        "C):   illness",
-        "D):   enemies"
+        "B):   illness",
+        "C):   enemies",
+        "D):   all snares of evil"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>'Save me, my God, from all snares of evil.'</div>"
     },
     {
@@ -226,11 +226,11 @@ export const c9EngPo16: ChapterContent = {
       "question": "<div style='text-align: justify;'>'Snares' means —</div>",
       "options": [
         "A):   songs",
-        "B):   traps",
-        "C):   rewards",
+        "B):   rewards",
+        "C):   traps",
         "D):   paths"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>Snares are traps.</div>"
     },
     {
@@ -249,12 +249,12 @@ export const c9EngPo16: ChapterContent = {
       "id": "c9-eng-po16-mcq-20",
       "question": "<div style='text-align: justify;'>'As the moth goes round the shining light… So let me love…' is an example of —</div>",
       "options": [
-        "A):   metaphor",
-        "B):   simile",
+        "A):   simile",
+        "B):   metaphor",
         "C):   irony",
         "D):   pun"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>'As… so' makes a direct comparison — a simile.</div>"
     }
   ],

@@ -22,11 +22,11 @@ export const c9EngPo7: ChapterContent = {
       "question": "<div style='text-align: justify;'>Who wrote 'No Men Are Foreign'?</div>",
       "options": [
         "A):   Robert Frost",
-        "B):   James Kirkup",
-        "C):   John Masefield",
+        "B):   John Masefield",
+        "C):   James Kirkup",
         "D):   Robert Herrick"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>The poem is by James Kirkup.</div>"
     },
     {
@@ -34,11 +34,11 @@ export const c9EngPo7: ChapterContent = {
       "question": "<div style='text-align: justify;'>James Kirkup was educated at —</div>",
       "options": [
         "A):   Oxford University",
-        "B):   Durham University",
-        "C):   Cambridge University",
-        "D):   London University"
+        "B):   Cambridge University",
+        "C):   London University",
+        "D):   Durham University"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>He was educated at Durham University.</div>"
     },
     {
@@ -58,11 +58,11 @@ export const c9EngPo7: ChapterContent = {
       "question": "<div style='text-align: justify;'>What breathes 'beneath all uniforms'?</div>",
       "options": [
         "A):   A soldier's gun",
-        "B):   A single body",
-        "C):   A foreign heart",
-        "D):   A strange spirit"
+        "B):   A foreign heart",
+        "C):   A strange spirit",
+        "D):   A single body"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>Beneath all uniforms a single body breathes like ours.</div>"
     },
     {
@@ -70,11 +70,11 @@ export const c9EngPo7: ChapterContent = {
       "question": "<div style='text-align: justify;'>'Uniforms' in the poem stands for —</div>",
       "options": [
         "A):   school dress",
-        "B):   outward differences such as nationality",
-        "C):   fashion",
+        "B):   fashion",
+        "C):   outward differences such as nationality",
         "D):   colours"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>Uniforms stand for outward differences that divide people.</div>"
     },
     {
@@ -82,11 +82,11 @@ export const c9EngPo7: ChapterContent = {
       "question": "<div style='text-align: justify;'>The land our brothers walk upon is —</div>",
       "options": [
         "A):   foreign land",
-        "B):   earth like ours",
-        "C):   enemy land",
-        "D):   holy land"
+        "B):   enemy land",
+        "C):   holy land",
+        "D):   earth like ours"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>The land our brothers walk upon is earth like ours.</div>"
     },
     {
@@ -94,35 +94,35 @@ export const c9EngPo7: ChapterContent = {
       "question": "<div style='text-align: justify;'>People everywhere are fed by —</div>",
       "options": [
         "A):   war",
-        "B):   peaceful harvests",
-        "C):   trade",
+        "B):   trade",
+        "C):   peaceful harvests",
         "D):   charity"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>They are fed by peaceful harvests.</div>"
     },
     {
       "id": "c9-eng-po7-mcq-8",
       "question": "<div style='text-align: justify;'>What starves people, according to the poem?</div>",
       "options": [
-        "A):   Drought",
-        "B):   War's long winter",
+        "A):   War's long winter",
+        "B):   Drought",
         "C):   Poverty",
         "D):   Floods"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>They are starved by war's long winter.</div>"
     },
     {
       "id": "c9-eng-po7-mcq-9",
       "question": "<div style='text-align: justify;'>'War's long winter' is an example of —</div>",
       "options": [
-        "A):   simile",
-        "B):   metaphor",
+        "A):   metaphor",
+        "B):   simile",
         "C):   alliteration",
         "D):   personification only"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>War is compared to a long, cruel winter without 'like' or 'as' — a metaphor.</div>"
     },
     {
@@ -141,12 +141,12 @@ export const c9EngPo7: ChapterContent = {
       "id": "c9-eng-po7-mcq-11",
       "question": "<div style='text-align: justify;'>Their strength can be won by —</div>",
       "options": [
-        "A):   force",
-        "B):   love",
+        "A):   love",
+        "B):   force",
         "C):   money",
         "D):   weapons"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>Strength that can be won by love.</div>"
     },
     {
@@ -154,11 +154,11 @@ export const c9EngPo7: ChapterContent = {
       "question": "<div style='text-align: justify;'>When we hate our brothers, whom do we dispossess, betray and condemn?</div>",
       "options": [
         "A):   Our enemies",
-        "B):   Ourselves",
-        "C):   Our leaders",
+        "B):   Our leaders",
+        "C):   Ourselves",
         "D):   Strangers"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>It is ourselves that we dispossess, betray, condemn.</div>"
     },
     {
@@ -178,11 +178,11 @@ export const c9EngPo7: ChapterContent = {
       "question": "<div style='text-align: justify;'>What does 'hells of fire and dust' refer to?</div>",
       "options": [
         "A):   Volcanoes",
-        "B):   War",
-        "C):   Deserts",
-        "D):   Factories"
+        "B):   Deserts",
+        "C):   Factories",
+        "D):   War"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>It refers to the destruction caused by war.</div>"
     },
     {
@@ -190,23 +190,23 @@ export const c9EngPo7: ChapterContent = {
       "question": "<div style='text-align: justify;'>War outrages the innocence of —</div>",
       "options": [
         "A):   water",
-        "B):   air",
-        "C):   children",
+        "B):   children",
+        "C):   air",
         "D):   forests"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>Our hells of fire and dust outrage the innocence of air.</div>"
     },
     {
       "id": "c9-eng-po7-mcq-16",
       "question": "<div style='text-align: justify;'>Which word is repeated most in the poem to drive home its message?</div>",
       "options": [
-        "A):   Brother",
-        "B):   Remember",
+        "A):   Remember",
+        "B):   Brother",
         "C):   Earth",
         "D):   Foreign"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>'Remember' is repeated as a refrain.</div>"
     },
     {
@@ -250,11 +250,11 @@ export const c9EngPo7: ChapterContent = {
       "question": "<div style='text-align: justify;'>'Dispossess' means —</div>",
       "options": [
         "A):   to give away",
-        "B):   to dislodge or deprive",
-        "C):   to own",
-        "D):   to attack"
+        "B):   to own",
+        "C):   to attack",
+        "D):   to dislodge or deprive"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>Dispossess means to dislodge or deprive.</div>"
     }
   ],

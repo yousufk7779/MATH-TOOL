@@ -23,11 +23,11 @@ export const c9EngP1: ChapterContent = {
       "question": "<div style='text-align: justify;'>Who is the author of 'Packing'?</div>",
       "options": [
         "A):   Mark Twain",
-        "B):   Jerome K. Jerome",
-        "C):   Jonathan Swift",
+        "B):   Jonathan Swift",
+        "C):   Jerome K. Jerome",
         "D):   O. Henry"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>The lesson is written by Jerome K. Jerome.</div>"
     },
     {
@@ -46,24 +46,24 @@ export const c9EngP1: ChapterContent = {
       "id": "c9-eng-p1-mcq-3",
       "question": "<div style='text-align: justify;'>Jerome K. Jerome was born in the borough of —</div>",
       "options": [
-        "A):   Walsall",
-        "B):   London",
-        "C):   Oxford",
-        "D):   Dublin"
+        "A):   London",
+        "B):   Oxford",
+        "C):   Dublin",
+        "D):   Walsall"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>The author's note says he was born in Walsall.</div>"
     },
     {
       "id": "c9-eng-p1-mcq-4",
       "question": "<div style='text-align: justify;'>From what age was Jerome supporting himself financially?</div>",
       "options": [
-        "A):   10",
-        "B):   12",
-        "C):   14",
+        "A):   14",
+        "B):   10",
+        "C):   12",
         "D):   18"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>His family had little money, so he supported himself from the age of 14.</div>"
     },
     {
@@ -72,22 +72,22 @@ export const c9EngP1: ChapterContent = {
       "options": [
         "A):   George",
         "B):   Harris",
-        "C):   Montmorency",
-        "D):   Jerome"
+        "C):   Jerome",
+        "D):   Montmorency"
       ],
-      "correctAnswer": "D",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>The story is told by Jerome, whom Harris calls 'J.'</div>"
     },
     {
       "id": "c9-eng-p1-mcq-6",
       "question": "<div style='text-align: justify;'>Why did Jerome offer to do the packing?</div>",
       "options": [
-        "A):   He was paid to do it",
-        "B):   He was proud of his packing skill",
+        "A):   He was proud of his packing skill",
+        "B):   He was paid to do it",
         "C):   The others were ill",
         "D):   He wanted to leave early"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>He prided himself on knowing more about packing than anyone living.</div>"
     },
     {
@@ -118,36 +118,36 @@ export const c9EngP1: ChapterContent = {
       "id": "c9-eng-p1-mcq-9",
       "question": "<div style='text-align: justify;'>What did Harris ask after the bag was shut and strapped?</div>",
       "options": [
-        "A):   Where is the soap?",
-        "B):   Aren't you going to put the boots in?",
+        "A):   Aren't you going to put the boots in?",
+        "B):   Where is the soap?",
         "C):   Have you packed the jam?",
         "D):   What time shall we start?"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>Harris asked about the boots just after Jerome had strapped the bag.</div>"
     },
     {
       "id": "c9-eng-p1-mcq-10",
       "question": "<div style='text-align: justify;'>Where did Jerome finally find his toothbrush?</div>",
       "options": [
-        "A):   In his pocket",
-        "B):   In the hamper",
-        "C):   Inside a boot",
+        "A):   Inside a boot",
+        "B):   In his pocket",
+        "C):   In the hamper",
         "D):   Under the bed"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>After turning out everything, he found it inside a boot.</div>"
     },
     {
       "id": "c9-eng-p1-mcq-11",
       "question": "<div style='text-align: justify;'>What did Jerome find he had packed by mistake after slamming the bag shut?</div>",
       "options": [
-        "A):   His tobacco-pouch",
-        "B):   His toothbrush",
+        "A):   His toothbrush",
+        "B):   His tobacco-pouch",
         "C):   The soap",
         "D):   George's boots"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanation": "<div style='text-align: justify;'>He had to reopen the bag to take out his tobacco-pouch.</div>"
     },
     {
@@ -155,11 +155,11 @@ export const c9EngP1: ChapterContent = {
       "question": "<div style='text-align: justify;'>At what time was the bag finally shut?</div>",
       "options": [
         "A):   9.30 p.m.",
-        "B):   10.05 p.m.",
-        "C):   11.00 p.m.",
-        "D):   12.50 a.m."
+        "B):   11.00 p.m.",
+        "C):   12.50 a.m.",
+        "D):   10.05 p.m."
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>The bag got shut up finally at 10.05 p.m.</div>"
     },
     {
@@ -167,23 +167,23 @@ export const c9EngP1: ChapterContent = {
       "question": "<div style='text-align: justify;'>What was the first thing George and Harris did while packing the hampers?</div>",
       "options": [
         "A):   Squashed a tomato",
-        "B):   Broke a cup",
-        "C):   Trod on the butter",
+        "B):   Trod on the butter",
+        "C):   Broke a cup",
         "D):   Upset the salt"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>They started with breaking a cup.</div>"
     },
     {
       "id": "c9-eng-p1-mcq-14",
       "question": "<div style='text-align: justify;'>Harris packed the strawberry jam on top of a —</div>",
       "options": [
-        "A):   pie",
-        "B):   lemon",
-        "C):   tomato",
+        "A):   tomato",
+        "B):   pie",
+        "C):   lemon",
         "D):   cake"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>He packed the jam on a tomato and squashed it.</div>"
     },
     {
@@ -216,10 +216,10 @@ export const c9EngP1: ChapterContent = {
       "options": [
         "A):   balls",
         "B):   cats",
-        "C):   rats",
-        "D):   bones"
+        "C):   bones",
+        "D):   rats"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>He pretended the lemons were rats and 'killed' three of them.</div>"
     },
     {
@@ -227,11 +227,11 @@ export const c9EngP1: ChapterContent = {
       "question": "<div style='text-align: justify;'>At what time was the packing done?</div>",
       "options": [
         "A):   10.05",
-        "B):   11.30",
-        "C):   12.50",
+        "B):   12.50",
+        "C):   11.30",
         "D):   6.30"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanation": "<div style='text-align: justify;'>The packing was done at 12.50.</div>"
     },
     {
@@ -239,11 +239,11 @@ export const c9EngP1: ChapterContent = {
       "question": "<div style='text-align: justify;'>What wake-up time did the friends finally agree on?</div>",
       "options": [
         "A):   Six",
-        "B):   Half-past six",
-        "C):   Seven",
-        "D):   Eight"
+        "B):   Seven",
+        "C):   Eight",
+        "D):   Half-past six"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>Harris said seven, Jerome said six, and they split the difference at 6.30.</div>"
     },
     {
@@ -251,11 +251,11 @@ export const c9EngP1: ChapterContent = {
       "question": "<div style='text-align: justify;'>The word 'chaos' means —</div>",
       "options": [
         "A):   silence",
-        "B):   complete confusion and disorder",
-        "C):   a quarrel",
-        "D):   hard work"
+        "B):   a quarrel",
+        "C):   hard work",
+        "D):   complete confusion and disorder"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>Chaos is a state of total confusion and lack of order.</div>"
     }
   ],

@@ -39,11 +39,11 @@ export const c9EngP5: ChapterContent = {
       "question": "<div style='text-align: justify;'>Shakespeare is often called —</div>",
       "options": [
         "A):   The Father of Comedy",
-        "B):   The Bard of Avon",
-        "C):   The Poet of Nature",
-        "D):   The Lake Poet"
+        "B):   The Poet of Nature",
+        "C):   The Lake Poet",
+        "D):   The Bard of Avon"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>He is called England's national poet and the 'Bard of Avon'.</div>"
     },
     {
@@ -62,12 +62,12 @@ export const c9EngP5: ChapterContent = {
       "id": "c9-eng-p5-mcq-4",
       "question": "<div style='text-align: justify;'>How long ago had Prospero and Miranda come to the island?</div>",
       "options": [
-        "A):   Five years",
-        "B):   Ten years",
-        "C):   Twelve years",
+        "A):   Twelve years",
+        "B):   Five years",
+        "C):   Ten years",
         "D):   Twenty years"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>They had come twelve years before.</div>"
     },
     {
@@ -75,23 +75,23 @@ export const c9EngP5: ChapterContent = {
       "question": "<div style='text-align: justify;'>Caliban looked more like a —</div>",
       "options": [
         "A):   bird",
-        "B):   fish",
-        "C):   monkey",
-        "D):   spirit"
+        "B):   monkey",
+        "C):   spirit",
+        "D):   fish"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>He looked more like a fish than a man.</div>"
     },
     {
       "id": "c9-eng-p5-mcq-6",
       "question": "<div style='text-align: justify;'>Who had imprisoned Ariel in a pine tree?</div>",
       "options": [
-        "A):   Prospero",
-        "B):   Caliban",
-        "C):   Sycorax",
+        "A):   Sycorax",
+        "B):   Prospero",
+        "C):   Caliban",
         "D):   Antonio"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>The witch Sycorax imprisoned him and died without releasing him.</div>"
     },
     {
@@ -99,11 +99,11 @@ export const c9EngP5: ChapterContent = {
       "question": "<div style='text-align: justify;'>What was Prospero before he came to the island?</div>",
       "options": [
         "A):   King of Naples",
-        "B):   Duke of Milan",
-        "C):   A sailor",
+        "B):   A sailor",
+        "C):   Duke of Milan",
         "D):   A magician of Naples"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>He was the Duke of Milan.</div>"
     },
     {
@@ -111,23 +111,23 @@ export const c9EngP5: ChapterContent = {
       "question": "<div style='text-align: justify;'>Prospero left the state affairs to —</div>",
       "options": [
         "A):   Gonzalo",
-        "B):   Antonio",
-        "C):   Ferdinand",
+        "B):   Ferdinand",
+        "C):   Antonio",
         "D):   the King of Naples"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>He left them to his brother Antonio.</div>"
     },
     {
       "id": "c9-eng-p5-mcq-9",
       "question": "<div style='text-align: justify;'>Who plotted with Antonio against Prospero?</div>",
       "options": [
-        "A):   Gonzalo",
-        "B):   The King of Naples",
+        "A):   The King of Naples",
+        "B):   Gonzalo",
         "C):   Caliban",
         "D):   Ferdinand"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>Antonio plotted with the King of Naples.</div>"
     },
     {
@@ -135,11 +135,11 @@ export const c9EngP5: ChapterContent = {
       "question": "<div style='text-align: justify;'>Who secretly stored the ship with food, water and books?</div>",
       "options": [
         "A):   Antonio",
-        "B):   Gonzalo",
-        "C):   Ariel",
+        "B):   Ariel",
+        "C):   Gonzalo",
         "D):   The King"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>Kind old Gonzalo helped Prospero secretly.</div>"
     },
     {
@@ -147,23 +147,23 @@ export const c9EngP5: ChapterContent = {
       "question": "<div style='text-align: justify;'>Why did Prospero raise the tempest?</div>",
       "options": [
         "A):   To destroy Naples",
-        "B):   To bring his enemies to the island",
-        "C):   To punish Caliban",
+        "B):   To punish Caliban",
+        "C):   To bring his enemies to the island",
         "D):   To test Ariel"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>The tempest brought all his enemies to the island.</div>"
     },
     {
       "id": "c9-eng-p5-mcq-12",
       "question": "<div style='text-align: justify;'>What did Ariel ask for when Prospero mentioned more work?</div>",
       "options": [
-        "A):   Food",
-        "B):   His freedom",
+        "A):   His freedom",
+        "B):   Food",
         "C):   A reward",
         "D):   Rest"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>He reminded Prospero of his promise of freedom.</div>"
     },
     {
@@ -171,11 +171,11 @@ export const c9EngP5: ChapterContent = {
       "question": "<div style='text-align: justify;'>Prospero promised to free Ariel after —</div>",
       "options": [
         "A):   one day",
-        "B):   two days",
-        "C):   a week",
-        "D):   a month"
+        "B):   a week",
+        "C):   a month",
+        "D):   two days"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>'After two days I will set you free.'</div>"
     },
     {
@@ -183,11 +183,11 @@ export const c9EngP5: ChapterContent = {
       "question": "<div style='text-align: justify;'>When Miranda first saw Ferdinand, she thought he was —</div>",
       "options": [
         "A):   a spy",
-        "B):   a spirit",
-        "C):   a sailor",
-        "D):   a king"
+        "B):   a sailor",
+        "C):   a king",
+        "D):   a spirit"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>She asked, 'Is it a spirit?'</div>"
     },
     {
@@ -195,11 +195,11 @@ export const c9EngP5: ChapterContent = {
       "question": "<div style='text-align: justify;'>Ferdinand thought Miranda was —</div>",
       "options": [
         "A):   a witch",
-        "B):   the goddess of the island",
-        "C):   a servant",
+        "B):   a servant",
+        "C):   the goddess of the island",
         "D):   a spirit"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>He thought she was the goddess of the island.</div>"
     },
     {
@@ -207,11 +207,11 @@ export const c9EngP5: ChapterContent = {
       "question": "<div style='text-align: justify;'>Prospero pretended that Ferdinand was a —</div>",
       "options": [
         "A):   thief",
-        "B):   spy",
-        "C):   pirate",
-        "D):   magician"
+        "B):   pirate",
+        "C):   magician",
+        "D):   spy"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>He pretended Ferdinand was a spy, to test his love.</div>"
     },
     {
@@ -254,12 +254,12 @@ export const c9EngP5: ChapterContent = {
       "id": "c9-eng-p5-mcq-20",
       "question": "<div style='text-align: justify;'>What was Ariel's last service to Prospero?</div>",
       "options": [
-        "A):   Raising a storm",
-        "B):   Giving favourable winds",
+        "A):   Giving favourable winds",
+        "B):   Raising a storm",
         "C):   Guarding the island",
         "D):   Singing a song"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>Ariel helped them with favourable winds to Naples.</div>"
     }
   ],

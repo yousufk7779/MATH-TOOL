@@ -22,11 +22,11 @@ export const c9EngPo15: ChapterContent = {
       "question": "<div style='text-align: justify;'>Who wrote 'Palanquin Bearers'?</div>",
       "options": [
         "A):   Rabindranath Tagore",
-        "B):   Sarojini Naidu",
-        "C):   Padma Sachdev",
-        "D):   Muhammad Iqbal"
+        "B):   Padma Sachdev",
+        "C):   Muhammad Iqbal",
+        "D):   Sarojini Naidu"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>The poem is by Sarojini Naidu.</div>"
     },
     {
@@ -46,11 +46,11 @@ export const c9EngPo15: ChapterContent = {
       "question": "<div style='text-align: justify;'>In 1925 Sarojini Naidu became —</div>",
       "options": [
         "A):   Governor of Bengal",
-        "B):   the first Indian woman President of the INC",
-        "C):   a Nobel laureate",
+        "B):   a Nobel laureate",
+        "C):   the first Indian woman President of the INC",
         "D):   Prime Minister"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>She became the first Indian woman President of the Indian National Congress.</div>"
     },
     {
@@ -70,11 +70,11 @@ export const c9EngPo15: ChapterContent = {
       "question": "<div style='text-align: justify;'>Who are the speakers in the poem?</div>",
       "options": [
         "A):   The bride's parents",
-        "B):   The palanquin bearers",
-        "C):   The bridegroom",
+        "B):   The bridegroom",
+        "C):   The palanquin bearers",
         "D):   The poet"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>The palanquin bearers sing the poem.</div>"
     },
     {
@@ -82,11 +82,11 @@ export const c9EngPo15: ChapterContent = {
       "question": "<div style='text-align: justify;'>Who is being carried in the palanquin?</div>",
       "options": [
         "A):   A queen",
-        "B):   A bride",
-        "C):   A child",
+        "B):   A child",
+        "C):   A bride",
         "D):   A priest"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>A bride is carried in the palanquin.</div>"
     },
     {
@@ -94,11 +94,11 @@ export const c9EngPo15: ChapterContent = {
       "question": "<div style='text-align: justify;'>The bride sways like a flower in the wind of —</div>",
       "options": [
         "A):   the forest",
-        "B):   our song",
-        "C):   the hills",
-        "D):   the night"
+        "B):   the hills",
+        "C):   the night",
+        "D):   our song"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>'She sways like a flower in the wind of our song.'</div>"
     },
     {
@@ -117,12 +117,12 @@ export const c9EngPo15: ChapterContent = {
       "id": "c9-eng-po15-mcq-9",
       "question": "<div style='text-align: justify;'>She floats like a laugh from the lips of —</div>",
       "options": [
-        "A):   a child",
-        "B):   a dream",
+        "A):   a dream",
+        "B):   a child",
         "C):   a friend",
         "D):   a bride"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>'From the lips of a dream.'</div>"
     },
     {
@@ -141,12 +141,12 @@ export const c9EngPo15: ChapterContent = {
       "id": "c9-eng-po15-mcq-11",
       "question": "<div style='text-align: justify;'>She hangs like a star in the —</div>",
       "options": [
-        "A):   night sky",
-        "B):   dew of our song",
+        "A):   dew of our song",
+        "B):   night sky",
         "C):   river",
         "D):   palace"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>'In the dew of our song.'</div>"
     },
     {
@@ -154,23 +154,23 @@ export const c9EngPo15: ChapterContent = {
       "question": "<div style='text-align: justify;'>She springs like a beam on the brow of the —</div>",
       "options": [
         "A):   hill",
-        "B):   tide",
-        "C):   moon",
+        "B):   moon",
+        "C):   tide",
         "D):   palace"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>'On the brow of the tide.'</div>"
     },
     {
       "id": "c9-eng-po15-mcq-13",
       "question": "<div style='text-align: justify;'>She falls like a tear from the eyes of a —</div>",
       "options": [
-        "A):   mother",
-        "B):   bride",
+        "A):   bride",
+        "B):   mother",
         "C):   child",
         "D):   dream"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>'From the eyes of a bride.'</div>"
     },
     {
@@ -190,23 +190,23 @@ export const c9EngPo15: ChapterContent = {
       "question": "<div style='text-align: justify;'>The main figure of speech in the poem is —</div>",
       "options": [
         "A):   metaphor",
-        "B):   simile",
-        "C):   pun",
-        "D):   irony"
+        "B):   pun",
+        "C):   irony",
+        "D):   simile"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>The poem is full of similes using 'like'.</div>"
     },
     {
       "id": "c9-eng-po15-mcq-16",
       "question": "<div style='text-align: justify;'>The rhyme scheme of each stanza is —</div>",
       "options": [
-        "A):   abab cc",
-        "B):   aabbcc",
+        "A):   aabbcc",
+        "B):   abab cc",
         "C):   abcabc",
         "D):   free verse"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>along/song, stream/dream, sing/string.</div>"
     },
     {
@@ -214,23 +214,23 @@ export const c9EngPo15: ChapterContent = {
       "question": "<div style='text-align: justify;'>Which line is the refrain of the poem?</div>",
       "options": [
         "A):   She skims like a bird",
-        "B):   We bear her along like a pearl on a string",
-        "C):   She hangs like a star",
-        "D):   She falls like a tear"
+        "B):   She hangs like a star",
+        "C):   She falls like a tear",
+        "D):   We bear her along like a pearl on a string"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>It ends both stanzas.</div>"
     },
     {
       "id": "c9-eng-po15-mcq-18",
       "question": "<div style='text-align: justify;'>'Skim' means —</div>",
       "options": [
-        "A):   sink",
-        "B):   glide smoothly over something",
+        "A):   glide smoothly over something",
+        "B):   sink",
         "C):   jump",
         "D):   stop"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "<div style='text-align: justify;'>To skim is to glide smoothly over a surface.</div>"
     },
     {
@@ -238,11 +238,11 @@ export const c9EngPo15: ChapterContent = {
       "question": "<div style='text-align: justify;'>'Brow of the tide' means —</div>",
       "options": [
         "A):   the bottom of the sea",
-        "B):   the crest of a wave",
-        "C):   the shore",
+        "B):   the shore",
+        "C):   the crest of a wave",
         "D):   the sky"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "<div style='text-align: justify;'>Brow is the top part — here, the crest of a wave.</div>"
     },
     {
@@ -250,11 +250,11 @@ export const c9EngPo15: ChapterContent = {
       "question": "<div style='text-align: justify;'>The bearers carry the bride —</div>",
       "options": [
         "A):   roughly and quickly",
-        "B):   lightly and softly",
-        "C):   angrily",
-        "D):   slowly and sadly"
+        "B):   angrily",
+        "C):   slowly and sadly",
+        "D):   lightly and softly"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "<div style='text-align: justify;'>'Lightly, O lightly… Softly, O softly.'</div>"
     }
   ],
