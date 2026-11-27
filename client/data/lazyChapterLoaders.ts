@@ -2658,6 +2658,7 @@ export const lazyChapterLoaders: Record<string, () => any> = {
 
   // finished Class 9 Urdu chapters (override the placeholders above)
   "c9-urdu-p1": () => require("./content/c9-urdu-p1").c9UrduP1,
+  "c9-urdu-p2": () => require("./content/c9-urdu-p2").c9UrduP2,
 
   // Class 9 English (JKBOSE Tulip Series Book-IX): structure only — placeholders until content is written
   ...Object.fromEntries(
