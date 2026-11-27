@@ -63,6 +63,16 @@ function Class9Screen() {
           <View style={styles.buttonsContainer}>
             <View style={styles.buttonWrapper}>
               <ColorButton
+                testID="button-english"
+                title="ENGLISH"
+                icon="📝"
+                colors={["#00B09B", "#96C93D"]}
+                onPress={() => navigation.navigate("Class9English")}
+              />
+            </View>
+
+            <View style={styles.buttonWrapper}>
+              <ColorButton
                 testID="button-math"
                 title="MATHEMATICS"
                 icon="📘"

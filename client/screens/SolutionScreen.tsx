@@ -403,7 +403,9 @@ function SolutionScreen() {
     chapterId.startsWith("c12-") ||
     // Class 10 English (JKBOSE Tulip Book-X) deliberately mirrors the Class 11 English chapter layout:
     // "Reference / Q & A / MCQs" tabs, MCQs tab only when MCQs exist, options kept in order.
-    chapterId.startsWith("c10-eng-");
+    chapterId.startsWith("c10-eng-") ||
+    // Class 9 English replicates Class 10 English exactly
+    chapterId.startsWith("c9-eng-");
 
   const hwTitleStyle = { fontFamily: "NotoSans_400Regular", color: "#fff" };
 
