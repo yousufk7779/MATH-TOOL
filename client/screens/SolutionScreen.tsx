@@ -1741,6 +1741,20 @@ const MathWebView = memo(
           body { font-family: 'UrduNastaliq', 'Noto Nastaliq Urdu', 'Noto Naskh Arabic', serif !important; font-size: 17px; line-height: 2.1; text-align: right; }
           b, strong { font-weight: 700; }
           .ltr { direction: ltr; unicode-bidi: isolate; display: inline-block; }
+          /* The shared card rules (and the injected script) force left alignment, white questions and a left border.
+             body[lang=ur] gives these rules higher specificity, so Urdu pages stay right-aligned and use the chapter's
+             theme colour (--ac / --ac-light / --ac-rgb come from each Urdu chapter's own style block). */
+          body[lang="ur"] .q-card, body[lang="ur"] .q-card *, body[lang="ur"] .sol-box, body[lang="ur"] .sol-box *,
+          body[lang="ur"] .sol-step, body[lang="ur"] .sol-step *, body[lang="ur"] .q-title, body[lang="ur"] .q-text { text-align: right !important; }
+          body[lang="ur"] .rev { text-align: justify !important; text-align-last: right !important; }
+          body[lang="ur"] .box-t { text-align: center !important; }
+          body[lang="ur"] .q-card { border-color: rgba(var(--ac-rgb, 255, 255, 255), 0.35) !important; padding: 14px 16px !important; }
+          body[lang="ur"] .q-title { font-size: 19px !important; color: var(--ac, #FFFFFF) !important; }
+          body[lang="ur"] .q-text { font-size: 17px !important; font-weight: 700 !important; line-height: 2.2 !important; color: var(--ac, #FFFFFF) !important; margin-bottom: 10px !important; }
+          body[lang="ur"] .sol-box { border-left: none !important; border-right: 3.5px solid var(--ac, #FFFFFF) !important; }
+          body[lang="ur"] .sol-title { font-size: 16px !important; color: var(--ac-light, #FFFFFF) !important; }
+          body[lang="ur"] .sol-step { font-size: 17px !important; line-height: 2.25 !important; }
+          body[lang="ur"] .sol-step div { margin-top: 4px !important; margin-bottom: 4px !important; }
         `
       : "";
     const urduBaseUrl =
